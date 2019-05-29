@@ -1,4 +1,5 @@
 import os, fnmatch
+from git import Repo
 
 def find(pattern, path):
     result = []
@@ -56,13 +57,22 @@ def ehSpring(caminhoDoProjeto):
 
 
 #Ler do arquivo os enderecos
+arquivoComOsEnderecos = retornaArquivo("../selecaoDos5MilProjetosMaisPopularesDoGithub/saida.csv")
     #para cada endereco:
+for linha in arquivoComOsEnderecos:
+    linha = linha.replace("\n", "")
+    nomeDoRepositorio = linha.split(" , ")[0]
+    git_url = "https://github.com/" + nomeDoRepositorio + ".git"
+    repo_dir = "repositorios/"
+    try:
         #baixar o repositorio
+        Repo.clone_from(git_url, repo_dir+nomeDoRepositorio)
         #Verificar se eh spring ou android
-            #se for android printa ('android', nomeDoRepositorio)
-if(ehSpring('repositorios/spring-data-examples')):
-    print("Eh Spring")
-else:
-    print("Nao eh spring")
-            #se for spring printa ('spring', nomeDoRepositorio)
-            #apagar projeto
+        #se for android printa ('android', nomeDoRepositorio)
+        if(ehAndroid(repo_dir+nomeDoRepositorio)):
+            print("android", ","nomeDoRepositorio)
+        elif(ehSpring(repo_dir+nomeDoRepositorio)):
+            print("spring", "," , nomeDoRepositorio)
+    except:
+        pass
+    
