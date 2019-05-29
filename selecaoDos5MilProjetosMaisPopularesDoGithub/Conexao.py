@@ -23,7 +23,7 @@ class Conexao:
 	def getRepositories(self):
 		
 		resposta = dict()
-		for i in range(1, 34):
+		for i in range(1, 35):
 			conexao = self.criaConexaoComServidor()
 			cabecalho = self.criaCabecalho()
 			corpoDaRequisicaoEmJSON = ""		
