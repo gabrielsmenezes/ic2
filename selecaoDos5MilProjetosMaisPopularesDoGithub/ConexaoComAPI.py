@@ -1,14 +1,12 @@
 import os
 import Conexao
-import time
 
 
-def executar(nomeDoArquivoTxt):
+def executar():
 	conexao = Conexao.Conexao()
 	repositorios = conexao.getRepositories()
-	print(repositorios)
+	for repositorio in repositorios:
+		print(repositorio, ',', repositorios[repositorio])
 
-def main():
-	executar('springsamples')
-
-main()
+if __name__ == "__main__":
+	executar()

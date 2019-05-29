@@ -1,5 +1,7 @@
 import http.client
 import json
+import time
+
 
 class Conexao:
 
@@ -10,21 +12,33 @@ class Conexao:
 		return http.client.HTTPSConnection('api.github.com', 443)
 
 
-	# def criaCabecalho(self):
-	# 	cabecalho = {
-	# 		'Content-type': 'application/json',
-	# 		'User-Agent': 'gabrielsmenezes',
-	# 		'Authorization': 'Bearer afe33 ba8f0aa66ce852c317ee637448c4daa59b4'
-	# 	}
-	# 	return cabecalho;
+	def criaCabecalho(self):
+		cabecalho = {
+			'Content-type': 'application/json',
+			'User-Agent': 'gabrielsmenezes',
+			'Authorization': 'Bearer a841e6494ac9c30f77eb214fd0d8bdea243e33d5'
+		}
+		return cabecalho
 	
 	def getRepositories(self):
-		conexao = self.criaConexaoComServidor()
-		cabecalho = self.criaCabecalho()
-		corpoDaRequisicaoEmJSON = ""
-		conexao.request('GET', "/search/repositories?q=language:java&sort=star&order=desc&page=0", corpoDaRequisicaoEmJSON, cabecalho)
+		
+		resposta = dict()
+		for i in range(1, 34):
+			conexao = self.criaConexaoComServidor()
+			cabecalho = self.criaCabecalho()
+			corpoDaRequisicaoEmJSON = ""		
+			time.sleep(60)
+			print(i)
+			conexao.request('GET', "/search/repositories?q=language:java&sort=stars&order=desc&page="+str(i), corpoDaRequisicaoEmJSON, cabecalho)
+			response = conexao.getresponse()
+			respostaEmJson = json.loads(response.read().decode())
+			try:
+				repositorios = respostaEmJson['items']
+				for i in range(0, 30):
+					full_name = repositorios[i]['full_name']
+					stargazers_count = repositorios[i]['stargazers_count']
+					resposta[full_name] = stargazers_count
+			except:
+				print(respostaEmJson)
 
-		response = conexao.getresponse()
-		respostaEmJson = json.loads(response.read().decode());
-
-		return respostaEmJson
+		return resposta
