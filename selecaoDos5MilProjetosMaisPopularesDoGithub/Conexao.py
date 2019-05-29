@@ -16,7 +16,7 @@ class Conexao:
 		cabecalho = {
 			'Content-type': 'application/json',
 			'User-Agent': 'gabrielsmenezes',
-			'Authorization': 'Bearer a841e6494ac9c30f77eb214fd0d8bdea243e33d5'
+			'Authorization': 'Bearer a98cb10f229115299a35d7e21ee137ba2bf8ec14'
 		}
 		return cabecalho
 	
