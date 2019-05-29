@@ -21,8 +21,6 @@ def retornaArquivo(nomeDoArquivo):
 def ehAndroid(caminhoDoProjeto):
     caminhoDosJava = find('*.java', caminhoDoProjeto)
     
-    numeroDeImportacoes = 0
-	
     for caminhoJava in caminhoDosJava:
         
         arquivoJava = retornaArquivo(caminhoJava)
@@ -37,14 +35,34 @@ def ehAndroid(caminhoDoProjeto):
                     return True
     return False
 
+#verificar se eh spring
+def ehSpring(caminhoDoProjeto):
+    caminhoDosJava = find('*.java', caminhoDoProjeto)
+    
+    for caminhoJava in caminhoDosJava:
+        
+        arquivoJava = retornaArquivo(caminhoJava)
+
+        for linhaJava in arquivoJava:
+            if linhaJava.split(' ')[0] == 'import' :
+                biblioteca = linhaJava.split(' ')[1]
+                biblioteca = biblioteca.split('.')
+                if biblioteca[0] == 'org' and biblioteca[1] == 'springframework' and biblioteca[2] == 'boot':
+                    return True
+    return False
+
+
+
+
+
 #Ler do arquivo os enderecos
     #para cada endereco:
         #baixar o repositorio
         #Verificar se eh spring ou android
             #se for android printa ('android', nomeDoRepositorio)
-if(ehAndroid('repositorios/android-testdpc')):
-    print("Eh Android")
+if(ehSpring('repositorios/spring-data-examples')):
+    print("Eh Spring")
 else:
-    print("Nao eh android")
+    print("Nao eh spring")
             #se for spring printa ('spring', nomeDoRepositorio)
             #apagar projeto
