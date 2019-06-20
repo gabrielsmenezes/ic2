@@ -1,5 +1,6 @@
 import os, fnmatch
 from git import Repo
+import shutil
 
 def find(pattern, path):
     result = []
@@ -57,22 +58,37 @@ def ehSpring(caminhoDoProjeto):
 
 
 #Ler do arquivo os enderecos
-arquivoComOsEnderecos = retornaArquivo("../selecaoDos5MilProjetosMaisPopularesDoGithub/saida.csv")
-    #para cada endereco:
-for linha in arquivoComOsEnderecos:
-    linha = linha.replace("\n", "")
-    nomeDoRepositorio = linha.split(" , ")[0]
-    git_url = "https://github.com/" + nomeDoRepositorio + ".git"
-    repo_dir = "repositorios/"
-    try:
-        #baixar o repositorio
-        Repo.clone_from(git_url, repo_dir+nomeDoRepositorio)
-        #Verificar se eh spring ou android
-        #se for android printa ('android', nomeDoRepositorio)
-        if(ehAndroid(repo_dir+nomeDoRepositorio)):
-            print("android", ","nomeDoRepositorio)
-        elif(ehSpring(repo_dir+nomeDoRepositorio)):
-            print("spring", "," , nomeDoRepositorio)
-    except:
-        pass
-    
+arquivoComOsEnderecos = retornaArquivo("/home/gabriel/Documentos/ic2/selecaoDos5MilProjetosMaisPopularesDoGithub/saida.csv")
+with open ('listaDeProjetos.csv', "w") as arquivo:
+#para cada endereco:
+    for linha in arquivoComOsEnderecos:
+        linha = linha.replace("\n", "")
+        nomeDoRepositorio = linha.split(",")[0]
+        git_url = "https://github.com/" + nomeDoRepositorio + ".git"
+        repo_dir = "/home/gabriel/Documentos/ic2/repositorios/"
+        try:
+            #baixar o repositorio
+            print("Baixando %s" % (nomeDoRepositorio))
+            Repo.clone_from(git_url, repo_dir+nomeDoRepositorio)
+            print("%s baixado com sucesso" % (nomeDoRepositorio))            
+            #Verificar se eh spring ou android
+            #se for android printa ('android', nomeDoRepositorio)
+            print("Verificando se %s eh android" % (nomeDoRepositorio))
+            if(ehAndroid(repo_dir+nomeDoRepositorio)):
+                print("%s eh android" % (nomeDoRepositorio))
+                arquivo.write("%s,%s" % ('Android', nomeDoRepositorio))
+            elif(ehSpring(repo_dir+nomeDoRepositorio)):
+                print("Verificando se %s eh spring" % (nomeDoRepositorio))            
+                print("%s eh spring" % (nomeDoRepositorio))
+                arquivo.write("%s,%s" % ('Spring', nomeDoRepositorio))
+            else:
+                print("Apagando %s" % (nomeDoRepositorio))
+                if (len(os.listdir(repo_dir+nomeDoRepositorio.split('/')[0])) > 1):
+                    shutil.rmtree(repo_dir+nomeDoRepositorio, ignore_errors=True)
+                else:
+                    shutil.rmtree(repo_dir+nomeDoRepositorio.split('/')[0], ignore_errors=True)
+                print("%s apagado com sucesso" % (nomeDoRepositorio))
+        except Exception as e:
+            print(e.__str__())
+            break
+        
