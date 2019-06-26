@@ -18,7 +18,7 @@ def retornaArquivo(nomeDoArquivo):
 	return arquivo
 
 
-arquivoComNomeDosProjetos = retornaArquivo('/home/gabriel/Documentos/ic2/selecaoDosProjetosAndroidSpring/listaDeProjetos.csv')
+arquivoComNomeDosProjetos = retornaArquivo('/home/gabriel/Documentos/ic2/selecaoDosProjetosAleatoriamente/projetosAleatorios.csv')
 
 print('framework,'+'project'+','+'java'+','+'properties'+','+'jar'+','+'build.gradle'+','+'pom.xml'+','+'manifest.xml'+','+'xml'+','+'bat'+','+'md'+','+'adoc'+','+'README'+','+'yaml'+','+'txt'+','+'sh'+','+'travis.yml'+','+'yml'+','+'cmd'+','+'kt'+','+'json'+','+'others'+','+'numberOfFiles')
 
@@ -31,7 +31,7 @@ for linha in arquivoComNomeDosProjetos:
 	#linha[0] == framework
 	#linha[1] == nome do repositorio
 	#linha[2] == numero de estrelas
-	repositorio = (linha[0], linha[1], linha[2])
+	repositorio = (linha[0], linha[1])
 
 	# print(repositorio)
 
