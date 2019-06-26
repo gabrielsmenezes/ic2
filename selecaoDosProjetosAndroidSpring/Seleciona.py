@@ -26,15 +26,17 @@ def ehAndroid(caminhoDoProjeto):
     for caminhoJava in caminhoDosJava:
         
         arquivoJava = retornaArquivo(caminhoJava)
-
-        for linhaJava in arquivoJava:
-		
-            if linhaJava.split(' ')[0] == 'import' :
-                biblioteca = linhaJava.split(' ')[1]
-                biblioteca = biblioteca.split('.')
-		
-                if biblioteca[0] == 'android':
-                    return True
+        try:
+            for linhaJava in arquivoJava:
+            
+                if linhaJava.split(' ')[0] == 'import' :
+                    biblioteca = linhaJava.split(' ')[1]
+                    biblioteca = biblioteca.split('.')
+            
+                    if biblioteca[0] == 'android':
+                        return True
+        except Exception as identifier:
+            continue
     return False
 
 #verificar se eh spring
@@ -58,8 +60,8 @@ def ehSpring(caminhoDoProjeto):
     return False
 
 
-android=0
-spring = 0
+# android=0
+# spring = 0
 
 
 #Ler do arquivo os enderecos
@@ -67,8 +69,8 @@ arquivoComOsEnderecos = retornaArquivo("/home/gabriel/Documentos/ic2/selecaoDos5
 with open ('listaDeProjetos2.csv', "a") as arquivo:
 #para cada endereco:
     for linha in arquivoComOsEnderecos:
-        if(android == 176 and spring == 57):
-            break
+        # if(android == 176 and spring == 57):
+        #     break
         
         if('#' in linha):
             continue
@@ -90,17 +92,19 @@ with open ('listaDeProjetos2.csv', "a") as arquivo:
             #Verificar se eh spring ou android
             #se for android printa ('android', nomeDoRepositorio)
             print("Verificando se %s eh android" % (nomeDoRepositorio))
-            if(android < 176 and ehAndroid(repo_dir+nomeDoRepositorio)):
+            # if(android < 176 and ehAndroid(repo_dir+nomeDoRepositorio)):
+            if(ehAndroid(repo_dir+nomeDoRepositorio)):
                 print("%s eh android" % (nomeDoRepositorio))
                 arquivo.write("%s,%s,%s\n" % ('Android', nomeDoRepositorio, numeroDeEstrelas))
-                android+=1
-                print("ANDROIDS===========" + str(android))
-            elif(spring < 57 and ehSpring(repo_dir+nomeDoRepositorio)):
+                #android+=1
+                #print("ANDROIDS===========" + str(android))
+            # elif(spring < 57 and ehSpring(repo_dir+nomeDoRepositorio)):
+            elif(ehSpring(repo_dir+nomeDoRepositorio)):                
                 print("Verificando se %s eh spring" % (nomeDoRepositorio))            
                 print("%s eh spring" % (nomeDoRepositorio))
                 arquivo.write("%s,%s,%s\n" % ('Spring', nomeDoRepositorio, numeroDeEstrelas))
-                spring+=1
-                print("SPRINGS===========" + str(spring))
+                #spring+=1
+                #print("SPRINGS===========" + str(spring))
 
             else:
                 print("Apagando %s" % (nomeDoRepositorio))
