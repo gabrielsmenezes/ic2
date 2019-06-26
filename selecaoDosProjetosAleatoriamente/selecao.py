@@ -9,15 +9,15 @@ numero_total_de_projetos_spring = 349
 
 
 while(len(projetos_android) < 176):
-    numero_gerado = random.randrange(1, numero_total_de_projetos_android+1)
+    numero_gerado = random.randrange(1, numero_total_de_projetos_android)
     while (numero_gerado in projetos_android):
-        numero_gerado = random.randrange(1, numero_total_de_projetos_android+1)
+        numero_gerado = random.randrange(1, numero_total_de_projetos_android)
     projetos_android.append(numero_gerado)
 
 while(len(projetos_spring) < 57):
-    numero_gerado = random.randrange(numero_total_de_projetos_android+1, numero_total_de_projetos_android+numero_total_de_projetos_spring+1)
+    numero_gerado = random.randrange(numero_total_de_projetos_android+1, numero_total_de_projetos_android+numero_total_de_projetos_spring)
     while (numero_gerado in projetos_spring):
-        numero_gerado = random.randrange(numero_total_de_projetos_android+1, numero_total_de_projetos_android+numero_total_de_projetos_spring+1)
+        numero_gerado = random.randrange(numero_total_de_projetos_android+1, numero_total_de_projetos_android+numero_total_de_projetos_spring)
     projetos_spring.append(numero_gerado)
 
 
