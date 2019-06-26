@@ -16,7 +16,7 @@ def retornaNomeDoRepo(line):
 
 conexao = Conexao.Conexao()
 
-projetos = open('/home/gabriel/Documentos/ic2/selecaoDosProjetosAndroidSpring/listaDeProjetos.csv', 'r')
+projetos = open('/home/gabriel/Documentos/ic2/selecaoDosProjetosAleatoriamente/projetosAleatorios.csv', 'r')
 cabecalho = 'framework,'+'repository,'+'forks,'+'diskUsage_KB,'+'stargazers,'+'watchers,'+'issues,'+'commits,'+'pullRequests,'+'updatedAt,'+'projects\n'
 print(cabecalho)
 with open ("/home/gabriel/Documentos/ic2/obtendoOsMetadadosDosRepositorios/listaDeMetadadosDosProjetos.csv", "a") as saida:
@@ -24,7 +24,7 @@ with open ("/home/gabriel/Documentos/ic2/obtendoOsMetadadosDosRepositorios/lista
 
 for line in projetos:
 	line = line.replace("\n", "").split(",")
-	repo = (line[0], line[1], line[2])
+	repo = (line[0], line[1])
 
 	repositorio = conexao.retornaRepositorio(retornaNomeDoOwner(repo[1]), retornaNomeDoRepo(repo[1]))
 	
