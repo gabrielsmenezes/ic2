@@ -1,0 +1,74 @@
+Kind,Name,AvgCyclomatic,AvgCyclomaticModified,AvgCyclomaticStrict,AvgEssential,AvgLine,AvgLineBlank,AvgLineCode,AvgLineComment,CountClassBase,CountClassCoupled,CountClassCoupledModified,CountClassDerived,CountDeclClass,CountDeclClassMethod,CountDeclClassVariable,CountDeclExecutableUnit,CountDeclFile,CountDeclFunction,CountDeclInstanceMethod,CountDeclInstanceVariable,CountDeclMethod,CountDeclMethodAll,CountDeclMethodDefault,CountDeclMethodPrivate,CountDeclMethodProtected,CountDeclMethodPublic,CountInput,CountLine,CountLineBlank,CountLineCode,CountLineCodeDecl,CountLineCodeExe,CountLineComment,CountOutput,CountPath,CountPathLog,CountSemicolon,CountStmt,CountStmtDecl,CountStmtExe,Cyclomatic,CyclomaticModified,CyclomaticStrict,Essential,Knots,MaxCyclomatic,MaxCyclomaticModified,MaxCyclomaticStrict,MaxEssential,MaxEssentialKnots,MaxInheritanceTree,MaxNesting,MinEssentialKnots,PercentLackOfCohesion,PercentLackOfCohesionModified,RatioCommentToCode,SumCyclomatic,SumCyclomaticModified,SumCyclomaticStrict,SumEssential
+Package,"(Unnamed_Package)",0,0,0,0,0,0,0,0,,,,,0,0,0,,1,,0,0,0,,0,0,0,0,,173,0,0,0,0,173,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"ARKit",2,2,2,1,13,1,11,1,,,,,3,0,3,,3,,22,31,22,,0,5,0,17,,401,50,312,105,155,47,,,,155,213,105,108,,,,,,12,12,12,3,,,5,,,,0,15,55,55,59,24
+Public Class,"ARKit.ARLayout",2,2,2,1,13,1,10,2,3,1,1,0,,0,0,,,,18,20,18,18,0,5,0,13,,287,37,214,54,125,38,,,,95,141,54,87,,,,,,12,12,12,3,,2,5,,92,90,0,18,45,45,48,20
+Public Constructor,"ARKit.ARLayout.ARLayout",,,,,,,,,,,,,,,,,,,,,,,,,,,11,12,2,10,1,7,0,8,1,0,7,8,1,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"ARKit.ARLayout.addARView",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"ARKit.ARLayout.calcXvalue",,,,,,,,,,,,,,,,,,,,,,,,,,,6,24,1,23,3,11,0,1,5,1,7,11,3,8,4,4,4,1,2,,,,,0,,2,0,,,0,00,4,4,4,1
+Private Method,"ARKit.ARLayout.calcYvalue",,,,,,,,,,,,,,,,,,,,,,,,,,,5,6,0,5,2,2,1,1,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,20,1,1,1,1
+Public Method,"ARKit.ARLayout.clearARViews",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"ARKit.ARLayout.close",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"ARKit.ARLayout.isVisibleX",,,,,,,,,,,,,,,,,,,,,,,,,,,0,16,1,4,1,1,11,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,75,1,1,1,1
+Private Method,"ARKit.ARLayout.isVisibleY",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,1,1,1,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,25,1,1,1,1
+Public Method,"ARKit.ARLayout.onAccuracyChanged",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"ARKit.ARLayout.onDraw",,,,,,,,,,,,,,,,,,,,,,,,,,,6,23,2,16,4,9,5,7,4,1,7,10,4,6,3,3,3,1,0,,,,,0,,1,0,,,0,31,3,3,3,1
+Public Method,"ARKit.ARLayout.onLocationChanged",,,,,,,,,,,,,,,,,,,,,,,,,,,2,17,1,16,1,11,0,6,3,0,7,10,1,9,3,3,4,1,2,,,,,0,,1,0,,,0,00,3,3,4,1
+Public Method,"ARKit.ARLayout.onProviderDisabled",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"ARKit.ARLayout.onProviderEnabled",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"ARKit.ARLayout.onSensorChanged",,,,,,,,,,,,,,,,,,,,,,,,,,,11,61,8,50,4,38,4,8,324,3,23,35,4,31,12,12,12,1,7,,,,,0,,2,0,,,0,08,12,12,12,1
+Public Method,"ARKit.ARLayout.onStatusChanged",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"ARKit.ARLayout.removeARView",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"ARKit.ARLayout.sortArViews",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,3,1,0,1,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,33,1,1,1,1
+Public Method,"ARKit.ARLayout.updateLayouts",,,,,,,,,,,,,,,,,,,,,,,,,,,11,60,8,39,7,25,13,19,33,2,15,25,7,18,10,10,12,3,3,,,,,2,,5,2,,,0,33,10,10,12,3
+Public Class,"ARKit.ARSphericalView",2,2,2,1,11,0,11,0,1,0,0,1,,0,2,,,,3,8,3,3,0,0,0,3,,52,5,46,16,19,4,,,,21,29,16,13,,,,,,5,5,6,1,,2,3,,90,90,0,09,7,7,8,3
+Public Constructor,"ARKit.ARSphericalView.ARSphericalView",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"ARKit.ARSphericalView.ARSphericalView",,,,,,,,,,,,,,,,,,,,,,,,,,,5,26,0,26,3,14,0,10,6,1,10,15,3,12,5,5,6,1,1,,,,,0,,3,0,,,0,00,5,5,6,1
+Public Method,"ARKit.ARSphericalView.draw",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,1,3,1,0,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"ARKit.SphericalPoint",3,3,3,1,19,0,18,1,1,0,0,0,,0,1,,,,1,3,1,1,0,0,0,1,,29,2,25,8,11,5,,,,12,16,8,8,,,,,,3,3,3,1,,1,1,,25,25,0,20,3,3,3,1
+Public Constructor,"ARKit.SphericalPoint.SphericalPoint",,,,,,,,,,,,,,,,,,,,,,,,,,,3,19,0,18,3,10,1,4,4,1,8,11,3,8,3,3,3,1,1,,,,,0,,1,0,,,0,06,3,3,3,1
+File,"ARLayout.java",2,2,2,1,13,1,10,2,,,,,1,0,0,18,,18,18,20,18,,0,5,0,13,,308,40,232,72,125,38,,,,113,159,72,87,,,,,,12,12,12,3,,,5,,,,0,16,45,45,48,20
+File,"ARSphericalView.java",2,2,2,1,11,0,11,0,,,,,1,0,2,3,,3,3,8,3,,0,0,0,3,,62,7,54,24,19,4,,,,29,37,24,13,,,,,,5,5,6,1,,,3,,,,0,07,7,7,8,3
+File,"CompassListener.java",0,0,0,0,0,0,0,0,,,,,0,0,0,0,,0,0,0,0,,0,0,0,0,,173,0,0,0,0,173,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+File,"CustomCameraView.java",1,1,1,1,7,0,5,1,,,,,2,0,0,8,,8,8,3,8,,0,0,1,7,,91,11,69,29,21,11,,,,36,47,31,16,,,,,,2,2,2,1,,,1,,,,0,16,10,10,10,8
+File,"FourSqareVenue.java",1,1,1,1,6,1,5,0,,,,,1,0,0,2,,2,2,2,2,,0,0,0,2,,26,5,21,10,5,0,,,,11,15,10,5,,,,,,2,2,2,1,,,1,,,,0,00,3,3,3,2
+File,"FourSquareClient.java",9,7,9,1,42,2,40,0,,,,,1,0,0,2,,2,2,1,2,,0,1,0,1,,104,9,95,28,60,1,,,,54,69,28,41,,,,,,16,12,16,1,,,6,,,,0,01,18,14,18,2
+File,"HoldMeUp.java",1,1,1,1,15,0,14,0,,,,,3,0,1,9,,9,9,4,9,,0,1,0,8,,161,17,138,41,94,6,,,,102,117,45,72,,,,,,4,4,5,1,,,3,,,,0,04,14,14,15,9
+File,"R.java",0,0,0,0,0,0,0,0,,,,,5,0,4,0,,0,0,0,0,,0,0,0,0,,23,2,15,10,4,6,,,,5,10,10,0,,,,,,0,0,0,0,,,0,,,,0,40,0,0,0,0
+File,"SphericalPoint.java",3,3,3,1,19,0,18,1,,,,,1,0,1,1,,1,1,3,1,,0,0,0,1,,31,3,26,9,11,5,,,,13,17,9,8,,,,,,3,3,3,1,,,1,,,,0,19,3,3,3,1
+Package,"haseman",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"haseman.project",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"haseman.project.fourSquareLibs",5,4,5,1,24,1,22,0,,,,,2,0,0,,2,,4,3,4,,0,1,0,3,,130,14,116,38,65,1,,,,65,84,38,46,,,,,,16,12,16,1,,,6,,,,0,01,21,17,21,4
+Public Class,"haseman.project.fourSquareLibs.FourSqareVenue",1,1,1,1,6,1,5,0,1,0,0,0,,0,0,,,,2,2,2,5,0,0,0,2,,19,3,16,5,5,0,,,,6,10,5,5,,,,,,2,2,2,1,,3,1,,75,75,0,00,3,3,3,2
+Public Constructor,"haseman.project.fourSquareLibs.FourSqareVenue.FourSqareVenue",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"haseman.project.fourSquareLibs.FourSqareVenue.draw",,,,,,,,,,,,,,,,,,,,,,,,,,,4,8,2,6,1,3,0,4,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"haseman.project.fourSquareLibs.FourSquareClient",9,7,9,1,42,2,40,0,1,3,3,0,,0,0,,,,2,1,2,2,0,1,0,1,,88,4,84,17,60,1,,,,43,58,17,41,,,,,,16,12,16,1,,1,6,,0,0,0,01,18,14,18,2
+Private Method,"haseman.project.fourSquareLibs.FourSquareClient.adjustAz",,,,,,,,,,,,,,,,,,,,,,,,,,,5,10,0,10,3,5,0,5,2,0,4,6,3,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"haseman.project.fourSquareLibs.FourSquareClient.getVenuList",,,,,,,,,,,,,,,,,,,,,,,,,,,12,74,4,70,12,54,1,30,15,1,38,50,12,38,16,12,16,1,11,,,,,0,,6,0,,,0,01,16,12,16,1
+Package,"haseman.project.where4",1,1,1,1,11,0,10,0,,,,,10,0,5,,3,,17,7,17,,0,1,1,15,,275,30,222,80,119,23,,,,143,174,86,88,,,,,,4,4,5,1,,,3,,,,0,10,24,24,25,17
+Public Class,"haseman.project.where4.CustomCameraView",1,1,1,1,6,0,5,1,1,0,0,0,,0,0,,,,5,3,5,5,0,0,1,4,,68,7,50,10,21,11,,,,17,28,12,16,,,,,,2,2,2,1,,2,1,,80,80,0,22,6,6,6,5
+Anonymous Class,"haseman.project.where4.CustomCameraView.(Anon_1)",1,1,1,1,8,1,6,1,1,1,1,0,,0,0,,,,3,0,3,3,0,0,0,3,,29,5,19,1,11,5,,,,5,9,3,6,,,,,,2,2,2,1,,2,1,,0,0,0,26,4,4,4,3
+Public Method,"haseman.project.where4.CustomCameraView.(Anon_1).surfaceChanged",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,4,0,2,4,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"haseman.project.where4.CustomCameraView.(Anon_1).surfaceCreated",,,,,,,,,,,,,,,,,,,,,,,,,,,2,11,2,9,0,5,0,3,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"haseman.project.where4.CustomCameraView.(Anon_1).surfaceDestroyed",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,1,5,0,3,1,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,20,1,1,1,1
+Public Constructor,"haseman.project.where4.CustomCameraView.CustomCameraView",,,,,,,,,,,,,,,,,,,,,,,,,,,5,9,1,8,1,5,0,6,1,0,5,6,1,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"haseman.project.where4.CustomCameraView.CustomCameraView",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"haseman.project.where4.CustomCameraView.closeCamera",,,,,,,,,,,,,,,,,,,,,,,,,,,2,5,0,5,1,2,0,1,2,0,1,3,1,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"haseman.project.where4.CustomCameraView.dispatchDraw",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,4,1,1,1,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,25,1,1,1,1
+Protected Method,"haseman.project.where4.CustomCameraView.onDraw",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,4,1,1,4,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Class,"haseman.project.where4.HoldMeUp",1,1,1,1,22,1,19,1,1,4,4,0,,0,1,,,,4,4,4,4,0,1,0,3,,138,13,119,23,94,6,,,,84,99,27,72,,,,,,2,2,2,1,,2,1,,65,65,0,05,5,5,5,4
+Anonymous Class,"haseman.project.where4.HoldMeUp.(Anon_1)",1,1,1,1,8,0,8,0,1,1,1,0,,0,0,,,,4,0,4,4,0,0,0,4,,38,4,34,6,27,0,,,,16,25,10,15,,,,,,2,2,2,1,,2,0,,0,0,0,00,5,5,5,4
+Public Method,"haseman.project.where4.HoldMeUp.(Anon_1).onLocationChanged",,,,,,,,,,,,,,,,,,,,,,,,,,,4,30,0,30,5,23,0,5,2,0,16,22,7,15,2,2,2,1,1,,,,,0,,0,0,,,0,00,2,2,2,1
+Anonymous Class,"haseman.project.where4.HoldMeUp.(Anon_1).onLocationChanged.(Anon_2)",4,4,5,1,19,0,19,0,1,5,5,0,,0,0,,,,1,0,1,1,0,0,0,1,,20,0,20,4,15,0,,,,10,14,5,9,,,,,,4,4,5,1,,2,3,,0,0,0,00,4,4,5,1
+Public Method,"haseman.project.where4.HoldMeUp.(Anon_1).onLocationChanged.(Anon_2).run",,,,,,,,,,,,,,,,,,,,,,,,,,,5,19,0,19,4,14,0,11,4,1,10,14,5,9,4,4,5,1,0,,,,,0,,3,0,,,0,00,4,4,5,1
+Public Method,"haseman.project.where4.HoldMeUp.(Anon_1).onProviderDisabled",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,0,1,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"haseman.project.where4.HoldMeUp.(Anon_1).onProviderEnabled",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,0,1,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"haseman.project.where4.HoldMeUp.(Anon_1).onStatusChanged",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,0,1,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"haseman.project.where4.HoldMeUp.addLoadingLayouts",,,,,,,,,,,,,,,,,,,,,,,,,,,2,39,0,39,2,36,0,7,1,0,36,37,2,35,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"haseman.project.where4.HoldMeUp.onCreate",,,,,,,,,,,,,,,,,,,,,,,,,,,10,38,5,30,7,26,3,24,2,0,23,25,7,18,2,2,2,1,1,,,,,0,,1,0,,,0,10,2,2,2,1
+Public Method,"haseman.project.where4.HoldMeUp.onDestroy",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,6,1,3,2,3,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,33,1,1,1,1
+Public Method,"haseman.project.where4.HoldMeUp.onStart",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"haseman.project.where4.R",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,14,0,14,9,4,0,,,,4,9,9,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Public Static Class,"haseman.project.where4.R.attr",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,2,0,2,1,0,0,,,,0,1,1,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Public Static Class,"haseman.project.where4.R.drawable",0,0,0,0,0,0,0,0,1,0,0,0,,0,1,,,,0,0,0,0,0,0,0,0,,3,0,3,2,1,0,,,,1,2,2,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Public Static Class,"haseman.project.where4.R.layout",0,0,0,0,0,0,0,0,1,0,0,0,,0,1,,,,0,0,0,0,0,0,0,0,,3,0,3,2,1,0,,,,1,2,2,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Public Static Class,"haseman.project.where4.R.string",0,0,0,0,0,0,0,0,1,0,0,0,,0,2,,,,0,0,0,0,0,0,0,0,,4,0,4,3,2,0,,,,2,3,3,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
