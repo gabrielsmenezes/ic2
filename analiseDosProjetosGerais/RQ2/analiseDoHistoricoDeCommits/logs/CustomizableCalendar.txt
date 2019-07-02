@@ -1,0 +1,380 @@
+39518c5;Remove allowBackup attribute on AndroidManifest
+M	library/src/main/AndroidManifest.xml
+
+cef882f;Update README.md
+M	README.md
+
+40441dc;code reformatted and optimized imports
+M	library/src/main/AndroidManifest.xml
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/WeekDaysView.java
+M	library/src/main/res/drawable/circle.xml
+M	library/src/main/res/drawable/empty_circle.xml
+M	library/src/main/res/drawable/left_rounded_rectangle.xml
+M	library/src/main/res/drawable/rectangle.xml
+M	library/src/main/res/drawable/right_rounded_rectangle.xml
+M	library/src/main/res/layout/calendar_cell.xml
+M	library/src/main/res/layout/calendar_view.xml
+M	library/src/main/res/layout/customizable_calendar.xml
+M	library/src/main/res/layout/sub_view.xml
+M	library/src/main/res/layout/week_day_view.xml
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/layout/c_calendar.xml
+M	sample/src/main/res/layout/calendar_header.xml
+
+210d56d;Update README.md
+M	README.md
+
+6a3b23c;Merge pull request #11 from bolein/patch-1
+eb8e2f2;fixed month calculation
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/WeekDaysViewAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/SubView.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/interactors/AUCalendar.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/model/Calendar.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/presenter/implementations/CustomizableCalendarPresenterImpl.java
+
+8a65554;refactored dependencies;
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/CustomizableCalendar.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/SubView.java
+M	sample/build.gradle
+
+7b2cec9;fixed typo
+M	README.md
+
+3cd3317;fixed issue #7
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/CalendarRecyclerView.java
+
+827ff5f;Updated README.md
+M	README.md
+
+1472631;Added the possibility to format the week days names
+M	library/src/main/java/com/molo17/customizablecalendar/library/interactors/ViewInteractor.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/presenter/implementations/CustomizableCalendarPresenterImpl.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/CalendarViewInteractor.java
+
+12cf20e;Updated README.md - added demo gif
+M	README.md
+A	static/CalendarDemo.gif
+D	static/CalendarPreview2.png
+
+43d2729;Update README.md
+M	README.md
+
+ed28107;Update README.md
+M	README.md
+
+dcb0776;Update README.md
+M	README.md
+
+c70a227;Update README.md
+M	README.md
+
+2813cac;- Images and logo added
+A	static/CalendarPreview1.png
+A	static/CalendarPreview2.png
+A	static/Logo.jpg
+
+a02b029;Fix butterknife binding
+M	library/build.gradle
+M	sample/build.gradle
+
+b115911;Update README.md
+M	README.md
+
+c5cb846;Merge pull request #2 from MOLO17/develop
+3372d70;clean .idea/ folder
+D	.idea/gradle.xml
+D	.idea/runConfigurations.xml
+
+3e82c99;Updated butterknife dependency; Made RxJava and Butterknife provided
+M	.gitignore
+M	library/build.gradle
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/CustomizableCalendar.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/SubView.java
+M	sample/build.gradle
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/MainActivity.java
+
+941a4cc;fixed day of months
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+
+0cc96d8;fixed MonthGridView subscribe/unsubscribe
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/CalendarRecyclerView.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/MonthGridView.java
+
+069f67c;fixed current month update
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/CalendarViewAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/CalendarRecyclerView.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/MonthGridView.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/presenter/implementations/CustomizableCalendarPresenterImpl.java
+
+9364426;moved WeekDays setup to presenter
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/WeekDaysView.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/presenter/implementations/CustomizableCalendarPresenterImpl.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/presenter/interfeaces/CustomizableCalendarPresenter.java
+
+ce18d46;Merge branch 'develop'
+5a2f1e6;fixed Calendar months and optimized imports
+M	library/src/androidTest/java/com/molo17/customizablecalendar/library/ExampleInstrumentedTest.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/model/Calendar.java
+M	library/src/test/java/com/molo17/customizablecalendar/library/ExampleUnitTest.java
+M	sample/src/androidTest/java/com/molo17/customizablecalendar/sample/ExampleInstrumentedTest.java
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/CalendarViewInteractor.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/MainActivity.java
+M	sample/src/test/java/com/molo17/customizablecalendar/sample/ExampleUnitTest.java
+
+8e10021;Merge branch 'develop'
+6b9dd91;Merge branch 'packages-refactor' into develop
+2065c45;refactored packages name
+M	.idea/gradle.xml
+R073	library/src/androidTest/java/com/francesco/furlan/customizablecalendar/library/ExampleInstrumentedTest.java	library/src/androidTest/java/com/molo17/customizablecalendar/library/ExampleInstrumentedTest.java
+M	library/src/main/AndroidManifest.xml
+D	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/ViewInjector.java
+D	library/src/main/java/com/francesco/furlan/customizablecalendar/library/presenter/interfeaces/CustomizableCalendarPresenter.java
+R083	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/CalendarViewAdapter.java	library/src/main/java/com/molo17/customizablecalendar/library/adapter/CalendarViewAdapter.java
+R093	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/MonthAdapter.java	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+R093	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/WeekDaysViewAdapter.java	library/src/main/java/com/molo17/customizablecalendar/library/adapter/WeekDaysViewAdapter.java
+R089	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/CalendarRecyclerView.java	library/src/main/java/com/molo17/customizablecalendar/library/components/CalendarRecyclerView.java
+R084	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/CustomizableCalendar.java	library/src/main/java/com/molo17/customizablecalendar/library/components/CustomizableCalendar.java
+R078	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/HeaderView.java	library/src/main/java/com/molo17/customizablecalendar/library/components/HeaderView.java
+R086	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/MonthGridView.java	library/src/main/java/com/molo17/customizablecalendar/library/components/MonthGridView.java
+R082	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/SubView.java	library/src/main/java/com/molo17/customizablecalendar/library/components/SubView.java
+R085	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/WeekDaysView.java	library/src/main/java/com/molo17/customizablecalendar/library/components/WeekDaysView.java
+R096	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/AUCalendar.java	library/src/main/java/com/molo17/customizablecalendar/library/interactors/AUCalendar.java
+R086	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/LayoutInteractor.java	library/src/main/java/com/molo17/customizablecalendar/library/interactors/LayoutInteractor.java
+A	library/src/main/java/com/molo17/customizablecalendar/library/interactors/ViewInjector.java
+R080	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/ViewInteractor.java	library/src/main/java/com/molo17/customizablecalendar/library/interactors/ViewInteractor.java
+R097	library/src/main/java/com/francesco/furlan/customizablecalendar/library/model/Calendar.java	library/src/main/java/com/molo17/customizablecalendar/library/model/Calendar.java
+R050	library/src/main/java/com/francesco/furlan/customizablecalendar/library/model/CalendarFields.java	library/src/main/java/com/molo17/customizablecalendar/library/model/CalendarFields.java
+R095	library/src/main/java/com/francesco/furlan/customizablecalendar/library/model/CalendarItem.java	library/src/main/java/com/molo17/customizablecalendar/library/model/CalendarItem.java
+R084	library/src/main/java/com/francesco/furlan/customizablecalendar/library/presenter/implementations/CustomizableCalendarPresenterImpl.java	library/src/main/java/com/molo17/customizablecalendar/library/presenter/implementations/CustomizableCalendarPresenterImpl.java
+R060	library/src/main/java/com/francesco/furlan/customizablecalendar/library/presenter/interfeaces/BasePresenter.java	library/src/main/java/com/molo17/customizablecalendar/library/presenter/interfeaces/BasePresenter.java
+A	library/src/main/java/com/molo17/customizablecalendar/library/presenter/interfeaces/CustomizableCalendarPresenter.java
+R092	library/src/main/java/com/francesco/furlan/customizablecalendar/library/utils/DateUtils.java	library/src/main/java/com/molo17/customizablecalendar/library/utils/DateUtils.java
+R056	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/BaseView.java	library/src/main/java/com/molo17/customizablecalendar/library/view/BaseView.java
+R080	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/CalendarView.java	library/src/main/java/com/molo17/customizablecalendar/library/view/CalendarView.java
+R071	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/CustomizableCalendarView.java	library/src/main/java/com/molo17/customizablecalendar/library/view/CustomizableCalendarView.java
+R061	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/HeaderView.java	library/src/main/java/com/molo17/customizablecalendar/library/view/HeaderView.java
+R078	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/MonthView.java	library/src/main/java/com/molo17/customizablecalendar/library/view/MonthView.java
+R068	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/SubView.java	library/src/main/java/com/molo17/customizablecalendar/library/view/SubView.java
+R070	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/WeekDaysView.java	library/src/main/java/com/molo17/customizablecalendar/library/view/WeekDaysView.java
+M	library/src/main/res/layout/customizable_calendar.xml
+R087	app/src/test/java/com/francesco/furlan/customizablecalendar/ExampleUnitTest.java	library/src/test/java/com/molo17/customizablecalendar/library/ExampleUnitTest.java
+A	sample/.gitignore
+R090	app/build.gradle	sample/build.gradle
+R100	app/proguard-rules.pro	sample/proguard-rules.pro
+R081	app/src/androidTest/java/com/francesco/furlan/customizablecalendar/ExampleInstrumentedTest.java	sample/src/androidTest/java/com/molo17/customizablecalendar/sample/ExampleInstrumentedTest.java
+R082	app/src/main/AndroidManifest.xml	sample/src/main/AndroidManifest.xml
+R088	app/src/main/java/com/francesco/furlan/customizablecalendar/CalendarViewInteractor.java	sample/src/main/java/com/molo17/customizablecalendar/sample/CalendarViewInteractor.java
+R088	app/src/main/java/com/francesco/furlan/customizablecalendar/MainActivity.java	sample/src/main/java/com/molo17/customizablecalendar/sample/MainActivity.java
+R081	app/src/main/res/layout/activity_main.xml	sample/src/main/res/layout/activity_main.xml
+R075	app/src/main/res/layout/c_calendar.xml	sample/src/main/res/layout/c_calendar.xml
+R100	app/src/main/res/layout/calendar_header.xml	sample/src/main/res/layout/calendar_header.xml
+R100	app/src/main/res/mipmap-hdpi/ic_launcher.png	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-hdpi/ic_launcher_round.png	sample/src/main/res/mipmap-hdpi/ic_launcher_round.png
+R100	app/src/main/res/mipmap-mdpi/ic_launcher.png	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-mdpi/ic_launcher_round.png	sample/src/main/res/mipmap-mdpi/ic_launcher_round.png
+R100	app/src/main/res/mipmap-xhdpi/ic_launcher.png	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-xhdpi/ic_launcher_round.png	sample/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+R100	app/src/main/res/mipmap-xxhdpi/ic_launcher.png	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png	sample/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+R100	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png	sample/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png	sample/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+R100	app/src/main/res/values/colors.xml	sample/src/main/res/values/colors.xml
+R100	app/src/main/res/values/strings.xml	sample/src/main/res/values/strings.xml
+R100	app/src/main/res/values/styles.xml	sample/src/main/res/values/styles.xml
+R076	library/src/test/java/com/francesco/furlan/customizablecalendar/library/ExampleUnitTest.java	sample/src/test/java/com/molo17/customizablecalendar/sample/ExampleUnitTest.java
+M	settings.gradle
+
+4578e67;Merge pull request #1 from MOLO17/develop
+b38e0e9;added getMonthGridView interaction for custom layouts
+M	app/src/main/java/com/francesco/furlan/customizablecalendar/CalendarViewInteractor.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/CalendarViewAdapter.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/ViewInteractor.java
+
+7486828;fixed layoutResId’s from xml
+M	app/src/main/java/com/francesco/furlan/customizablecalendar/CalendarViewInteractor.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/CalendarRecyclerView.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/MonthGridView.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/WeekDaysView.java
+M	library/src/main/res/values/attrs.xml
+
+beeebc9;disabled LayoutInteractor: should be implemented in the next version
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/presenter/implementations/CustomizableCalendarPresenterImpl.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/presenter/interfeaces/CustomizableCalendarPresenter.java
+
+c171a36;change and notify calendar changes only if the value actually changes
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/AUCalendar.java
+
+6ad05d1;fixed MonthGridView
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/MonthGridView.java
+
+83099bc;SubView layoutResId from xml
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/SubView.java
+
+a939bbd;fixed calendar cell binding
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/ViewInteractor.java
+
+ae03339;Reformatted code and optimized imports
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/WeekDaysViewAdapter.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/WeekDaysView.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/AUCalendar.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/model/Calendar.java
+M	library/src/main/res/layout/week_day_view.xml
+
+517d35a;implemented sample
+A	app/src/main/java/com/francesco/furlan/customizablecalendar/CalendarViewInteractor.java
+M	app/src/main/java/com/francesco/furlan/customizablecalendar/MainActivity.java
+A	app/src/main/res/layout/calendar_header.xml
+M	app/src/main/res/values/strings.xml
+
+fcbd029;updated layouts
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/c_calendar.xml
+A	app/src/main/res/values/styles.xml
+A	library/.gitignore
+
+6694aba;removed useless imports
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/CustomizableCalendar.java
+
+c985a5c;implemented CustomizableCalendar and CustomizableCalendarPresenter
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/CustomizableCalendar.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/presenter/implementations/CustomizableCalendarPresenterImpl.java
+
+0047309;added resources
+A	library/src/main/res/drawable/circle.xml
+A	library/src/main/res/drawable/left_rounded_rectangle.xml
+A	library/src/main/res/drawable/rectangle.xml
+A	library/src/main/res/drawable/right_rounded_rectangle.xml
+A	library/src/main/res/layout/customizable_calendar.xml
+A	library/src/main/res/values/colors.xml
+A	library/src/main/res/values/dimens.xml
+
+0a50309;made MonthAdapter customizable
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/MonthAdapter.java
+
+3111dfd;implemented CalendarRecyclerView and CalendarViewAdapter
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/CalendarViewAdapter.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/CalendarRecyclerView.java
+
+5368cf5;implemented MonthGridView and MonthAdapter
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/MonthGridView.java
+
+7420396;implemented SubView
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/SubView.java
+
+2c35ed8;implemented HeaderView
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/HeaderView.java
+
+dadac9e;implemented WeekDaysView
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/adapter/WeekDaysViewAdapter.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/WeekDaysView.java
+
+068ebbd;updated BaseView and BasePresenter with new injectors and created CustomizableCalendarPresenter
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/presenter/interfeaces/BasePresenter.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/presenter/interfeaces/CustomizableCalendarPresenter.java
+M	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/BaseView.java
+
+d9c6b96;created LayoutInteractor, ViewInjector and ViewInteractor interfaces
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/LayoutInteractor.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/ViewInjector.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/ViewInteractor.java
+
+6ff181e;added DateUtils
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/utils/DateUtils.java
+
+781e9a5;implemented AUCalendar -> Auto Updating Calendar
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/interactors/AUCalendar.java
+
+1cc5892;updated gradle dependencies
+M	library/build.gradle
+
+3a7fbd4;added basics views implementations
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/CalendarRecyclerView.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/CustomizableCalendar.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/HeaderView.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/MonthGridView.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/SubView.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/components/WeekDaysView.java
+
+a97423b;implemented Calendar and CalendarItem models and CalendarFields interface
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/model/Calendar.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/model/CalendarFields.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/model/CalendarItem.java
+
+a6019f6;implemented CustomizableCalendar stylable
+A	library/src/main/res/values/attrs.xml
+
+3c255b8;implemented weekDay, subView and calendar layouts
+A	library/src/main/res/drawable/empty_circle.xml
+A	library/src/main/res/layout/calendar_cell.xml
+A	library/src/main/res/layout/calendar_view.xml
+A	library/src/main/res/layout/sub_view.xml
+A	library/src/main/res/layout/week_day_view.xml
+
+b254214;created BasePresenter
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/presenter/interfeaces/BasePresenter.java
+
+3aac665;created base views interfaces structures
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/BaseView.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/CalendarView.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/CustomizableCalendarView.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/HeaderView.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/MonthView.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/SubView.java
+A	library/src/main/java/com/francesco/furlan/customizablecalendar/library/view/WeekDaysView.java
+
+a6c0a7f;added license and readme
+9bb464d;Initial commit
+A	.gitignore
+A	LICENSE
+A	README.md
+
+a4f5586;project init
+A	.gitignore
+A	.idea/gradle.xml
+A	.idea/runConfigurations.xml
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/com/francesco/furlan/customizablecalendar/ExampleInstrumentedTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/francesco/furlan/customizablecalendar/MainActivity.java
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/test/java/com/francesco/furlan/customizablecalendar/ExampleUnitTest.java
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	library/build.gradle
+A	library/proguard-rules.pro
+A	library/src/androidTest/java/com/francesco/furlan/customizablecalendar/library/ExampleInstrumentedTest.java
+A	library/src/main/AndroidManifest.xml
+A	library/src/main/res/values/strings.xml
+A	library/src/test/java/com/francesco/furlan/customizablecalendar/library/ExampleUnitTest.java
+A	settings.gradle

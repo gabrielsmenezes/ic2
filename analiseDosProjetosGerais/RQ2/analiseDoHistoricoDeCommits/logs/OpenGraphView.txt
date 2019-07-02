@@ -1,0 +1,336 @@
+b1c2400;Vup to 1.2.1
+M	gradle.properties
+
+37f19ae;Update kotlin version
+M	build.gradle
+
+e681c28;Update sdk and support library version
+M	build.gradle
+M	gradle.properties
+M	library/build.gradle
+M	sample/build.gradle
+
+32ece2c;Set theme jekyll-theme-minimal
+A	_config.yml
+
+a4580d6;Merge pull request #18 from kaelaela/develop
+cfb14b2;kotlinize samples:muscle:
+M	build.gradle
+M	sample/build.gradle
+D	sample/src/main/java/me/kaelaela/sample/LinkListActivity.java
+A	sample/src/main/java/me/kaelaela/sample/LinkListActivity.kt
+D	sample/src/main/java/me/kaelaela/sample/LinkListAdapter.java
+A	sample/src/main/java/me/kaelaela/sample/LinkListAdapter.kt
+D	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+A	sample/src/main/java/me/kaelaela/sample/MainActivity.kt
+D	sample/src/main/java/me/kaelaela/sample/custom/JSoupSampleParser.java
+A	sample/src/main/java/me/kaelaela/sample/custom/JSoupSampleParser.kt
+D	sample/src/main/java/me/kaelaela/sample/custom/XMLPullSampleParser.java
+A	sample/src/main/java/me/kaelaela/sample/custom/XMLPullSampleParser.kt
+R051	sample/src/main/java/me/kaelaela/sample/custom/jspoon/JSpoonOGData.java	sample/src/main/java/me/kaelaela/sample/custom/jspoon/JSpoonOGData.kt
+D	sample/src/main/java/me/kaelaela/sample/custom/jspoon/JSpoonSampleParser.java
+A	sample/src/main/java/me/kaelaela/sample/custom/jspoon/JSpoonSampleParser.kt
+
+447f952;Merge pull request #17 from kaelaela/develop
+6aa88fc;Add JSpoon sample
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+A	sample/src/main/java/me/kaelaela/sample/custom/jspoon/JSpoonOGData.java
+A	sample/src/main/java/me/kaelaela/sample/custom/jspoon/JSpoonSampleParser.java
+
+ba03a0e;Add jspoon
+M	sample/build.gradle
+
+04348f2;Merge pull request #16 from kaelaela/develop
+0233ac4;Add jsoup parser sample
+M	sample/build.gradle
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+A	sample/src/main/java/me/kaelaela/sample/custom/JSoupSampleParser.java
+
+dcc054e;Merge pull request #15 from kaelaela/develop
+6701408;Add custom XMLPullParser sample
+M	sample/src/main/java/me/kaelaela/sample/LinkListAdapter.java
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+A	sample/src/main/java/me/kaelaela/sample/custom/XMLPullSampleParser.java
+
+ff45410;Enable to handling error
+M	library/src/main/java/me/kaelaela/opengraphview/OnLoadListener.java
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+
+909f6b0;Merge pull request #14 from kaelaela/develop
+4d7bcd7;Refactor image crop logic
+M	library/src/main/java/me/kaelaela/opengraphview/RoundableImageView.java
+
+a3a2bb5;Merge pull request #13 from kaelaela/develop
+20279c2;Add default executor
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/DefaultTaskManager.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/tasks/BaseTask.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/tasks/FaviconCallable.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/tasks/FaviconTask.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/tasks/ImageCallable.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/tasks/ImageTask.java
+D	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadFaviconTask.java
+D	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadImageTask.java
+D	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadOGDataTask.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/tasks/OGDataCallable.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/tasks/OGDataTask.java
+
+da88222;Update gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+46fb808;Update bintray plugin
+M	build.gradle
+
+ff2ee5d;Merge pull request #12 from kaelaela/add-license-1
+ff95329;Add license
+A	LICENSE
+
+af225e4;Update version
+M	README.md
+M	gradle.properties
+M	library/build.gradle
+M	sample/build.gradle
+
+af9fed6;Merge pull request #11 from kaelaela/develop
+08b0aee;Merge remote-tracking branch 'remotes/origin/develop' into develop
+858ca2e;Fix StringIndexOutOfBoundsException
+M	library/src/main/java/me/kaelaela/opengraphview/OGParser.java
+
+25f76a1;Enable to load url when the header is one line
+M	library/src/main/java/me/kaelaela/opengraphview/OGParser.java
+M	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadOGDataTask.java
+M	sample/src/main/java/me/kaelaela/sample/LinkListAdapter.java
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+
+24b9798;Replace super class with AppCompat class
+M	library/src/main/java/me/kaelaela/opengraphview/RoundableImageView.java
+
+1827b7b;Fix error when the view cleared
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+
+c29d555;Update gradle
+M	build.gradle
+A	library/src/main/java/me/kaelaela/opengraphview/network/DefaultExecutor.java
+
+91608b4;Update gradles
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	sample/build.gradle
+
+0ba5346;Add Parser interface
+M	library/src/main/java/me/kaelaela/opengraphview/OGParser.java
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+A	library/src/main/java/me/kaelaela/opengraphview/Parser.java
+M	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadOGDataTask.java
+
+ef718df;Merge pull request #6 from kaelaela/develop
+78ca788;Update README
+M	README.md
+
+42f67a8;Update version
+M	gradle.properties
+
+b2bccab;Update gif
+M	art/ogview.gif
+A	art/ogview2.gif
+
+6d4ff1f;Add host empty check
+M	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadFaviconTask.java
+
+f581840;Add bitmap null check
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+M	library/src/main/java/me/kaelaela/opengraphview/RoundableImageView.java
+
+a58c33d;Fix url check
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+
+fa3abf7;Fix crash:scream_cat:
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+
+10e5f8e;Clear text from EditText after loading url
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+
+3778b6d;Tweak sample urls
+M	sample/src/main/java/me/kaelaela/sample/LinkListAdapter.java
+
+e06d9e1;Use THREAD_POOL_EXECUTOR on AsyncTask
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+
+7023916;Enable to load twitter card tags
+M	library/src/main/java/me/kaelaela/opengraphview/OGParser.java
+M	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadOGDataTask.java
+
+5e29861;Fix url check
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+
+2f5eca4;Merge branch 'develop' of github.com:kaelaela/OpenGraphView into develop
+e0310d5;Update gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+309d63e;Tweak link
+M	sample/src/main/java/me/kaelaela/sample/LinkListAdapter.java
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+
+e58d6fa;Delete stroke width attribute :sob:
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+M	library/src/main/java/me/kaelaela/opengraphview/RoundableImageView.java
+M	library/src/main/res/values/attr.xml
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/layout/item_link.xml
+
+a76dbd8;Update sample
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+
+8becaf2;Add corner radius attribute
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+M	library/src/main/res/values/attr.xml
+
+4985962;Add RoundableImageView
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+A	library/src/main/java/me/kaelaela/opengraphview/RoundableImageView.java
+M	library/src/main/res/layout/view_open_graph.xml
+M	library/src/main/res/values/dimen.xml
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+
+2d47682;Update build.gradle
+M	build.gradle
+M	gradle.properties
+
+1044f45;Add uri
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+
+ffbbcb6;Update gradle libraries
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+84ec88c;Merge pull request #3 from kaelaela/develop
+1733a6b;Update version
+M	gradle.properties
+
+4f97187;Update readme
+M	README.md
+
+d833c8c;bug fix
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+M	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadImageTask.java
+
+b3edaca;Add cache sample
+M	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/me/kaelaela/sample/LinkListActivity.java
+A	sample/src/main/java/me/kaelaela/sample/LinkListAdapter.java
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+A	sample/src/main/res/layout/activity_link_list.xml
+M	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/layout/item_link.xml
+
+cfd2d43;Update support library
+M	gradle.properties
+M	sample/build.gradle
+
+9630fd4;Add cache
+A	library/src/main/java/me/kaelaela/opengraphview/OGCache.java
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+
+739fdb1;Merge branch 'master' into develop
+b1ba067;Update build.gradle
+M	build.gradle
+
+bd391ae;Remove log
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+
+274adee;Update version to 1.0.2
+M	README.md
+M	build.gradle
+M	gradle.properties
+
+f690c9f;Merge pull request #1 from kaelaela/develop
+c8e89b1;Add image position attribute
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+M	library/src/main/res/layout/view_open_graph.xml
+M	library/src/main/res/values/attr.xml
+M	library/src/main/res/values/dimen.xml
+M	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+D	sample/src/test/java/me/kaelaela/opengraphview/ExampleUnitTest.java
+
+faf58ed;Update
+M	README.md
+
+a49f0aa;Update
+M	README.md
+M	gradle.properties
+
+1e75b07;Add custom attribute
+M	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+M	library/src/main/res/drawable-v21/open_graph_foreground.xml
+M	library/src/main/res/drawable/open_graph_foreground.xml
+D	library/src/main/res/drawable/shape_open_graph_background.xml
+M	library/src/main/res/layout/view_open_graph.xml
+A	library/src/main/res/values/attr.xml
+M	library/src/main/res/values/colors.xml
+A	library/src/main/res/values/dimen.xml
+D	library/src/test/java/me/kaelaela/opengraphview/ExampleUnitTest.java
+M	sample/src/main/res/layout/activity_main.xml
+
+a57990c;Upload bintray
+M	build.gradle
+M	gradle.properties
+M	library/build.gradle
+
+8d893d5;Update app compat version
+M	gradle.properties
+
+7df8c40;init
+A	.gitignore
+A	README.md
+A	art/ogview.gif
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	library/build.gradle
+A	library/proguard-rules.pro
+A	library/src/androidTest/java/me/kaelaela/opengraphview/ApplicationTest.java
+A	library/src/main/AndroidManifest.xml
+A	library/src/main/java/me/kaelaela/opengraphview/ImageAnimator.java
+A	library/src/main/java/me/kaelaela/opengraphview/OGParser.java
+A	library/src/main/java/me/kaelaela/opengraphview/OnLoadListener.java
+A	library/src/main/java/me/kaelaela/opengraphview/OpenGraphView.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/model/OGData.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadFaviconTask.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadImageTask.java
+A	library/src/main/java/me/kaelaela/opengraphview/network/tasks/LoadOGDataTask.java
+A	library/src/main/res/drawable-v21/open_graph_foreground.xml
+A	library/src/main/res/drawable/open_graph_foreground.xml
+A	library/src/main/res/drawable/shape_open_graph_background.xml
+A	library/src/main/res/layout/view_open_graph.xml
+A	library/src/main/res/values/colors.xml
+A	library/src/main/res/values/strings.xml
+A	library/src/test/java/me/kaelaela/opengraphview/ExampleUnitTest.java
+A	sample/.gitignore
+A	sample/build.gradle
+A	sample/proguard-rules.pro
+A	sample/src/androidTest/java/me/kaelaela/opengraphview/ApplicationTest.java
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/me/kaelaela/sample/MainActivity.java
+A	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	sample/src/main/res/values-w820dp/dimens.xml
+A	sample/src/main/res/values/colors.xml
+A	sample/src/main/res/values/dimens.xml
+A	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/values/styles.xml
+A	sample/src/test/java/me/kaelaela/opengraphview/ExampleUnitTest.java
+A	settings.gradle

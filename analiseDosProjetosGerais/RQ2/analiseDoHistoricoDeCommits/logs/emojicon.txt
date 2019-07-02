@@ -1,0 +1,2108 @@
+70bdd37;Merge pull request #41 from softotalss/master
+c9c590d;Added method for get the usable space
+M	lib/src/github/ankushsachdeva/emojicon/EmojiconsPopup.java
+
+f9a991e;indentation problem fixed
+M	example/src/com/example/emojiconsample/MainActivity.java
+
+7284b7d;Add emojicon in between text when required; fixes#19
+M	example/src/com/example/emojiconsample/MainActivity.java
+
+5854534;Added sample project
+M	.gitignore
+M	README.md
+A	example/AndroidManifest.xml
+A	example/ic_launcher-web.png
+R100	libs/android-support-v4.jar	example/libs/android-support-v4.jar
+A	example/proguard-project.txt
+A	example/project.properties
+A	example/res/drawable-hdpi/ic_action_keyboard.png
+A	example/res/drawable-hdpi/ic_action_send_now.png
+A	example/res/drawable-hdpi/ic_launcher.png
+A	example/res/drawable-hdpi/smiley.png
+A	example/res/drawable-mdpi/ic_action_keyboard.png
+A	example/res/drawable-mdpi/ic_action_send_now.png
+A	example/res/drawable-mdpi/ic_launcher.png
+A	example/res/drawable-mdpi/smiley.png
+A	example/res/drawable-xhdpi/ic_action_keyboard.png
+A	example/res/drawable-xhdpi/ic_action_send_now.png
+A	example/res/drawable-xhdpi/ic_launcher.png
+A	example/res/drawable-xhdpi/smiley.png
+A	example/res/drawable-xxhdpi/ic_action_keyboard.png
+A	example/res/drawable-xxhdpi/ic_action_send_now.png
+A	example/res/drawable-xxhdpi/ic_launcher.png
+A	example/res/drawable-xxhdpi/smiley.png
+A	example/res/layout/activity_main.xml
+A	example/res/layout/listview_row_layout.xml
+A	example/res/values-sw600dp/dimens.xml
+A	example/res/values-sw720dp-land/dimens.xml
+A	example/res/values-v11/styles.xml
+A	example/res/values-v14/styles.xml
+A	example/res/values/dimens.xml
+A	example/res/values/strings.xml
+A	example/res/values/styles.xml
+A	example/src/com/example/emojiconsample/MainActivity.java
+R100	AndroidManifest.xml	lib/AndroidManifest.xml
+A	lib/libs/android-support-v4.jar
+R100	lint.xml	lib/lint.xml
+R100	project.properties	lib/project.properties
+R100	res/drawable-hdpi/ic_emoji_nature_light_activated.png	lib/res/drawable-hdpi/ic_emoji_nature_light_activated.png
+R100	res/drawable-hdpi/ic_emoji_nature_light_normal.png	lib/res/drawable-hdpi/ic_emoji_nature_light_normal.png
+R100	res/drawable-hdpi/ic_emoji_objects_light_activated.png	lib/res/drawable-hdpi/ic_emoji_objects_light_activated.png
+R100	res/drawable-hdpi/ic_emoji_objects_light_normal.png	lib/res/drawable-hdpi/ic_emoji_objects_light_normal.png
+R100	res/drawable-hdpi/ic_emoji_people_light_activated.png	lib/res/drawable-hdpi/ic_emoji_people_light_activated.png
+R100	res/drawable-hdpi/ic_emoji_people_light_normal.png	lib/res/drawable-hdpi/ic_emoji_people_light_normal.png
+R100	res/drawable-hdpi/ic_emoji_places_light_activated.png	lib/res/drawable-hdpi/ic_emoji_places_light_activated.png
+R100	res/drawable-hdpi/ic_emoji_places_light_normal.png	lib/res/drawable-hdpi/ic_emoji_places_light_normal.png
+R100	res/drawable-hdpi/ic_emoji_recent_light_activated.png	lib/res/drawable-hdpi/ic_emoji_recent_light_activated.png
+R100	res/drawable-hdpi/ic_emoji_recent_light_normal.png	lib/res/drawable-hdpi/ic_emoji_recent_light_normal.png
+R100	res/drawable-hdpi/ic_emoji_symbols_light_activated.png	lib/res/drawable-hdpi/ic_emoji_symbols_light_activated.png
+R100	res/drawable-hdpi/ic_emoji_symbols_light_normal.png	lib/res/drawable-hdpi/ic_emoji_symbols_light_normal.png
+R100	res/drawable-hdpi/ic_launcher.png	lib/res/drawable-hdpi/ic_launcher.png
+R100	res/drawable-hdpi/keyboard_background_holo.9.png	lib/res/drawable-hdpi/keyboard_background_holo.9.png
+R100	res/drawable-hdpi/orca_attach_camera_normal.png	lib/res/drawable-hdpi/orca_attach_camera_normal.png
+R100	res/drawable-hdpi/orca_attach_camera_pressed.png	lib/res/drawable-hdpi/orca_attach_camera_pressed.png
+R100	res/drawable-hdpi/orca_attach_location_normal.png	lib/res/drawable-hdpi/orca_attach_location_normal.png
+R100	res/drawable-hdpi/orca_attach_location_pressed.png	lib/res/drawable-hdpi/orca_attach_location_pressed.png
+R100	res/drawable-hdpi/orca_attach_photo_normal.png	lib/res/drawable-hdpi/orca_attach_photo_normal.png
+R100	res/drawable-hdpi/orca_attach_photo_pressed.png	lib/res/drawable-hdpi/orca_attach_photo_pressed.png
+R100	res/drawable-hdpi/orca_attachments_arrow.png	lib/res/drawable-hdpi/orca_attachments_arrow.png
+R100	res/drawable-hdpi/orca_attachments_arrow_reversed.png	lib/res/drawable-hdpi/orca_attachments_arrow_reversed.png
+R100	res/drawable-hdpi/orca_composer_divider_horizontal.9.png	lib/res/drawable-hdpi/orca_composer_divider_horizontal.9.png
+R100	res/drawable-hdpi/orca_composer_divider_vertical.9.png	lib/res/drawable-hdpi/orca_composer_divider_vertical.9.png
+R100	res/drawable-hdpi/orca_composer_popup_active_normal.png	lib/res/drawable-hdpi/orca_composer_popup_active_normal.png
+R100	res/drawable-hdpi/orca_composer_popup_active_pressed.png	lib/res/drawable-hdpi/orca_composer_popup_active_pressed.png
+R100	res/drawable-hdpi/orca_composer_popup_normal.png	lib/res/drawable-hdpi/orca_composer_popup_normal.png
+R100	res/drawable-hdpi/orca_composer_popup_pressed.png	lib/res/drawable-hdpi/orca_composer_popup_pressed.png
+R100	res/drawable-hdpi/orca_composer_tab.9.png	lib/res/drawable-hdpi/orca_composer_tab.9.png
+R100	res/drawable-hdpi/orca_composer_tab_active.9.png	lib/res/drawable-hdpi/orca_composer_tab_active.9.png
+R100	res/drawable-hdpi/orca_composer_tab_dark.9.png	lib/res/drawable-hdpi/orca_composer_tab_dark.9.png
+R100	res/drawable-hdpi/orca_composer_tab_pressed.9.png	lib/res/drawable-hdpi/orca_composer_tab_pressed.9.png
+R100	res/drawable-hdpi/orca_composer_top_divider.9.png	lib/res/drawable-hdpi/orca_composer_top_divider.9.png
+R100	res/drawable-hdpi/orca_emoji_backspace_back_normal.png	lib/res/drawable-hdpi/orca_emoji_backspace_back_normal.png
+R100	res/drawable-hdpi/orca_emoji_backspace_front_normal.png	lib/res/drawable-hdpi/orca_emoji_backspace_front_normal.png
+R100	res/drawable-hdpi/orca_emoji_backspace_front_pressed.png	lib/res/drawable-hdpi/orca_emoji_backspace_front_pressed.png
+R100	res/drawable-hdpi/orca_emoji_category_cars.png	lib/res/drawable-hdpi/orca_emoji_category_cars.png
+R100	res/drawable-hdpi/orca_emoji_category_nature.png	lib/res/drawable-hdpi/orca_emoji_category_nature.png
+R100	res/drawable-hdpi/orca_emoji_category_objects.png	lib/res/drawable-hdpi/orca_emoji_category_objects.png
+R100	res/drawable-hdpi/orca_emoji_category_people.png	lib/res/drawable-hdpi/orca_emoji_category_people.png
+R100	res/drawable-hdpi/orca_emoji_category_punctuation.png	lib/res/drawable-hdpi/orca_emoji_category_punctuation.png
+R100	res/drawable-hdpi/orca_emoji_more_back_normal.png	lib/res/drawable-hdpi/orca_emoji_more_back_normal.png
+R100	res/drawable-hdpi/orca_emoji_more_front_normal.png	lib/res/drawable-hdpi/orca_emoji_more_front_normal.png
+R100	res/drawable-hdpi/orca_emoji_more_front_pressed.png	lib/res/drawable-hdpi/orca_emoji_more_front_pressed.png
+R100	res/drawable-hdpi/sym_keyboard_delete_holo_dark.png	lib/res/drawable-hdpi/sym_keyboard_delete_holo_dark.png
+R100	res/drawable-mdpi/ic_emoji_nature_light_activated.png	lib/res/drawable-mdpi/ic_emoji_nature_light_activated.png
+R100	res/drawable-mdpi/ic_emoji_nature_light_normal.png	lib/res/drawable-mdpi/ic_emoji_nature_light_normal.png
+R100	res/drawable-mdpi/ic_emoji_objects_light_activated.png	lib/res/drawable-mdpi/ic_emoji_objects_light_activated.png
+R100	res/drawable-mdpi/ic_emoji_objects_light_normal.png	lib/res/drawable-mdpi/ic_emoji_objects_light_normal.png
+R100	res/drawable-mdpi/ic_emoji_people_light_activated.png	lib/res/drawable-mdpi/ic_emoji_people_light_activated.png
+R100	res/drawable-mdpi/ic_emoji_people_light_normal.png	lib/res/drawable-mdpi/ic_emoji_people_light_normal.png
+R100	res/drawable-mdpi/ic_emoji_places_light_activated.png	lib/res/drawable-mdpi/ic_emoji_places_light_activated.png
+R100	res/drawable-mdpi/ic_emoji_places_light_normal.png	lib/res/drawable-mdpi/ic_emoji_places_light_normal.png
+R100	res/drawable-mdpi/ic_emoji_recent_light_activated.png	lib/res/drawable-mdpi/ic_emoji_recent_light_activated.png
+R100	res/drawable-mdpi/ic_emoji_recent_light_normal.png	lib/res/drawable-mdpi/ic_emoji_recent_light_normal.png
+R100	res/drawable-mdpi/ic_emoji_symbols_light_activated.png	lib/res/drawable-mdpi/ic_emoji_symbols_light_activated.png
+R100	res/drawable-mdpi/ic_emoji_symbols_light_normal.png	lib/res/drawable-mdpi/ic_emoji_symbols_light_normal.png
+R100	res/drawable-mdpi/ic_launcher.png	lib/res/drawable-mdpi/ic_launcher.png
+R100	res/drawable-mdpi/keyboard_background_holo.9.png	lib/res/drawable-mdpi/keyboard_background_holo.9.png
+R100	res/drawable-mdpi/orca_attach_camera_normal.png	lib/res/drawable-mdpi/orca_attach_camera_normal.png
+R100	res/drawable-mdpi/orca_attach_camera_pressed.png	lib/res/drawable-mdpi/orca_attach_camera_pressed.png
+R100	res/drawable-mdpi/orca_attach_location_normal.png	lib/res/drawable-mdpi/orca_attach_location_normal.png
+R100	res/drawable-mdpi/orca_attach_location_pressed.png	lib/res/drawable-mdpi/orca_attach_location_pressed.png
+R100	res/drawable-mdpi/orca_attach_photo_normal.png	lib/res/drawable-mdpi/orca_attach_photo_normal.png
+R100	res/drawable-mdpi/orca_attach_photo_pressed.png	lib/res/drawable-mdpi/orca_attach_photo_pressed.png
+R100	res/drawable-mdpi/orca_attachments_arrow.png	lib/res/drawable-mdpi/orca_attachments_arrow.png
+R100	res/drawable-mdpi/orca_attachments_arrow_reversed.png	lib/res/drawable-mdpi/orca_attachments_arrow_reversed.png
+R100	res/drawable-mdpi/orca_composer_divider_horizontal.9.png	lib/res/drawable-mdpi/orca_composer_divider_horizontal.9.png
+R100	res/drawable-mdpi/orca_composer_divider_vertical.9.png	lib/res/drawable-mdpi/orca_composer_divider_vertical.9.png
+R100	res/drawable-mdpi/orca_composer_popup_active_normal.png	lib/res/drawable-mdpi/orca_composer_popup_active_normal.png
+R100	res/drawable-mdpi/orca_composer_popup_active_pressed.png	lib/res/drawable-mdpi/orca_composer_popup_active_pressed.png
+R100	res/drawable-mdpi/orca_composer_popup_normal.png	lib/res/drawable-mdpi/orca_composer_popup_normal.png
+R100	res/drawable-mdpi/orca_composer_popup_pressed.png	lib/res/drawable-mdpi/orca_composer_popup_pressed.png
+R100	res/drawable-mdpi/orca_composer_tab.9.png	lib/res/drawable-mdpi/orca_composer_tab.9.png
+R100	res/drawable-mdpi/orca_composer_tab_active.9.png	lib/res/drawable-mdpi/orca_composer_tab_active.9.png
+R100	res/drawable-mdpi/orca_composer_tab_dark.9.png	lib/res/drawable-mdpi/orca_composer_tab_dark.9.png
+R100	res/drawable-mdpi/orca_composer_tab_pressed.9.png	lib/res/drawable-mdpi/orca_composer_tab_pressed.9.png
+R100	res/drawable-mdpi/orca_composer_top_divider.9.png	lib/res/drawable-mdpi/orca_composer_top_divider.9.png
+R100	res/drawable-mdpi/orca_emoji_backspace_back_normal.png	lib/res/drawable-mdpi/orca_emoji_backspace_back_normal.png
+R100	res/drawable-mdpi/orca_emoji_backspace_front_normal.png	lib/res/drawable-mdpi/orca_emoji_backspace_front_normal.png
+R100	res/drawable-mdpi/orca_emoji_backspace_front_pressed.png	lib/res/drawable-mdpi/orca_emoji_backspace_front_pressed.png
+R100	res/drawable-mdpi/orca_emoji_category_cars.png	lib/res/drawable-mdpi/orca_emoji_category_cars.png
+R100	res/drawable-mdpi/orca_emoji_category_nature.png	lib/res/drawable-mdpi/orca_emoji_category_nature.png
+R100	res/drawable-mdpi/orca_emoji_category_objects.png	lib/res/drawable-mdpi/orca_emoji_category_objects.png
+R100	res/drawable-mdpi/orca_emoji_category_people.png	lib/res/drawable-mdpi/orca_emoji_category_people.png
+R100	res/drawable-mdpi/orca_emoji_category_punctuation.png	lib/res/drawable-mdpi/orca_emoji_category_punctuation.png
+R100	res/drawable-mdpi/orca_emoji_more_back_normal.png	lib/res/drawable-mdpi/orca_emoji_more_back_normal.png
+R100	res/drawable-mdpi/orca_emoji_more_front_normal.png	lib/res/drawable-mdpi/orca_emoji_more_front_normal.png
+R100	res/drawable-mdpi/orca_emoji_more_front_pressed.png	lib/res/drawable-mdpi/orca_emoji_more_front_pressed.png
+R100	res/drawable-mdpi/sym_keyboard_delete_holo_dark.png	lib/res/drawable-mdpi/sym_keyboard_delete_holo_dark.png
+R100	res/drawable-nodpi/emoji_0023.png	lib/res/drawable-nodpi/emoji_0023.png
+R100	res/drawable-nodpi/emoji_0030.png	lib/res/drawable-nodpi/emoji_0030.png
+R100	res/drawable-nodpi/emoji_0031.png	lib/res/drawable-nodpi/emoji_0031.png
+R100	res/drawable-nodpi/emoji_0032.png	lib/res/drawable-nodpi/emoji_0032.png
+R100	res/drawable-nodpi/emoji_0033.png	lib/res/drawable-nodpi/emoji_0033.png
+R100	res/drawable-nodpi/emoji_0034.png	lib/res/drawable-nodpi/emoji_0034.png
+R100	res/drawable-nodpi/emoji_0035.png	lib/res/drawable-nodpi/emoji_0035.png
+R100	res/drawable-nodpi/emoji_0036.png	lib/res/drawable-nodpi/emoji_0036.png
+R100	res/drawable-nodpi/emoji_0037.png	lib/res/drawable-nodpi/emoji_0037.png
+R100	res/drawable-nodpi/emoji_0038.png	lib/res/drawable-nodpi/emoji_0038.png
+R100	res/drawable-nodpi/emoji_0039.png	lib/res/drawable-nodpi/emoji_0039.png
+R100	res/drawable-nodpi/emoji_00a9.png	lib/res/drawable-nodpi/emoji_00a9.png
+R100	res/drawable-nodpi/emoji_00ae.png	lib/res/drawable-nodpi/emoji_00ae.png
+R100	res/drawable-nodpi/emoji_1f004.png	lib/res/drawable-nodpi/emoji_1f004.png
+R100	res/drawable-nodpi/emoji_1f0cf.png	lib/res/drawable-nodpi/emoji_1f0cf.png
+R100	res/drawable-nodpi/emoji_1f170.png	lib/res/drawable-nodpi/emoji_1f170.png
+R100	res/drawable-nodpi/emoji_1f171.png	lib/res/drawable-nodpi/emoji_1f171.png
+R100	res/drawable-nodpi/emoji_1f17e.png	lib/res/drawable-nodpi/emoji_1f17e.png
+R100	res/drawable-nodpi/emoji_1f17f.png	lib/res/drawable-nodpi/emoji_1f17f.png
+R100	res/drawable-nodpi/emoji_1f18e.png	lib/res/drawable-nodpi/emoji_1f18e.png
+R100	res/drawable-nodpi/emoji_1f191.png	lib/res/drawable-nodpi/emoji_1f191.png
+R100	res/drawable-nodpi/emoji_1f192.png	lib/res/drawable-nodpi/emoji_1f192.png
+R100	res/drawable-nodpi/emoji_1f193.png	lib/res/drawable-nodpi/emoji_1f193.png
+R100	res/drawable-nodpi/emoji_1f194.png	lib/res/drawable-nodpi/emoji_1f194.png
+R100	res/drawable-nodpi/emoji_1f195.png	lib/res/drawable-nodpi/emoji_1f195.png
+R100	res/drawable-nodpi/emoji_1f196.png	lib/res/drawable-nodpi/emoji_1f196.png
+R100	res/drawable-nodpi/emoji_1f197.png	lib/res/drawable-nodpi/emoji_1f197.png
+R100	res/drawable-nodpi/emoji_1f198.png	lib/res/drawable-nodpi/emoji_1f198.png
+R100	res/drawable-nodpi/emoji_1f199.png	lib/res/drawable-nodpi/emoji_1f199.png
+R100	res/drawable-nodpi/emoji_1f19a.png	lib/res/drawable-nodpi/emoji_1f19a.png
+R100	res/drawable-nodpi/emoji_1f1e8_1f1f3.png	lib/res/drawable-nodpi/emoji_1f1e8_1f1f3.png
+R100	res/drawable-nodpi/emoji_1f1e9_1f1ea.png	lib/res/drawable-nodpi/emoji_1f1e9_1f1ea.png
+R100	res/drawable-nodpi/emoji_1f1ea_1f1f8.png	lib/res/drawable-nodpi/emoji_1f1ea_1f1f8.png
+R100	res/drawable-nodpi/emoji_1f1eb_1f1f7.png	lib/res/drawable-nodpi/emoji_1f1eb_1f1f7.png
+R100	res/drawable-nodpi/emoji_1f1ec_1f1e7.png	lib/res/drawable-nodpi/emoji_1f1ec_1f1e7.png
+R100	res/drawable-nodpi/emoji_1f1ee_1f1f9.png	lib/res/drawable-nodpi/emoji_1f1ee_1f1f9.png
+R100	res/drawable-nodpi/emoji_1f1ef_1f1f5.png	lib/res/drawable-nodpi/emoji_1f1ef_1f1f5.png
+R100	res/drawable-nodpi/emoji_1f1f0_1f1f7.png	lib/res/drawable-nodpi/emoji_1f1f0_1f1f7.png
+R100	res/drawable-nodpi/emoji_1f1f7_1f1fa.png	lib/res/drawable-nodpi/emoji_1f1f7_1f1fa.png
+R100	res/drawable-nodpi/emoji_1f1fa_1f1f8.png	lib/res/drawable-nodpi/emoji_1f1fa_1f1f8.png
+R100	res/drawable-nodpi/emoji_1f201.png	lib/res/drawable-nodpi/emoji_1f201.png
+R100	res/drawable-nodpi/emoji_1f202.png	lib/res/drawable-nodpi/emoji_1f202.png
+R100	res/drawable-nodpi/emoji_1f21a.png	lib/res/drawable-nodpi/emoji_1f21a.png
+R100	res/drawable-nodpi/emoji_1f22f.png	lib/res/drawable-nodpi/emoji_1f22f.png
+R100	res/drawable-nodpi/emoji_1f232.png	lib/res/drawable-nodpi/emoji_1f232.png
+R100	res/drawable-nodpi/emoji_1f233.png	lib/res/drawable-nodpi/emoji_1f233.png
+R100	res/drawable-nodpi/emoji_1f234.png	lib/res/drawable-nodpi/emoji_1f234.png
+R100	res/drawable-nodpi/emoji_1f235.png	lib/res/drawable-nodpi/emoji_1f235.png
+R100	res/drawable-nodpi/emoji_1f236.png	lib/res/drawable-nodpi/emoji_1f236.png
+R100	res/drawable-nodpi/emoji_1f237.png	lib/res/drawable-nodpi/emoji_1f237.png
+R100	res/drawable-nodpi/emoji_1f238.png	lib/res/drawable-nodpi/emoji_1f238.png
+R100	res/drawable-nodpi/emoji_1f239.png	lib/res/drawable-nodpi/emoji_1f239.png
+R100	res/drawable-nodpi/emoji_1f23a.png	lib/res/drawable-nodpi/emoji_1f23a.png
+R100	res/drawable-nodpi/emoji_1f250.png	lib/res/drawable-nodpi/emoji_1f250.png
+R100	res/drawable-nodpi/emoji_1f251.png	lib/res/drawable-nodpi/emoji_1f251.png
+R100	res/drawable-nodpi/emoji_1f300.png	lib/res/drawable-nodpi/emoji_1f300.png
+R100	res/drawable-nodpi/emoji_1f301.png	lib/res/drawable-nodpi/emoji_1f301.png
+R100	res/drawable-nodpi/emoji_1f302.png	lib/res/drawable-nodpi/emoji_1f302.png
+R100	res/drawable-nodpi/emoji_1f303.png	lib/res/drawable-nodpi/emoji_1f303.png
+R100	res/drawable-nodpi/emoji_1f304.png	lib/res/drawable-nodpi/emoji_1f304.png
+R100	res/drawable-nodpi/emoji_1f305.png	lib/res/drawable-nodpi/emoji_1f305.png
+R100	res/drawable-nodpi/emoji_1f306.png	lib/res/drawable-nodpi/emoji_1f306.png
+R100	res/drawable-nodpi/emoji_1f307.png	lib/res/drawable-nodpi/emoji_1f307.png
+R100	res/drawable-nodpi/emoji_1f308.png	lib/res/drawable-nodpi/emoji_1f308.png
+R100	res/drawable-nodpi/emoji_1f309.png	lib/res/drawable-nodpi/emoji_1f309.png
+R100	res/drawable-nodpi/emoji_1f30a.png	lib/res/drawable-nodpi/emoji_1f30a.png
+R100	res/drawable-nodpi/emoji_1f30b.png	lib/res/drawable-nodpi/emoji_1f30b.png
+R100	res/drawable-nodpi/emoji_1f30c.png	lib/res/drawable-nodpi/emoji_1f30c.png
+R100	res/drawable-nodpi/emoji_1f30d.png	lib/res/drawable-nodpi/emoji_1f30d.png
+R100	res/drawable-nodpi/emoji_1f30e.png	lib/res/drawable-nodpi/emoji_1f30e.png
+R100	res/drawable-nodpi/emoji_1f30f.png	lib/res/drawable-nodpi/emoji_1f30f.png
+R100	res/drawable-nodpi/emoji_1f310.png	lib/res/drawable-nodpi/emoji_1f310.png
+R100	res/drawable-nodpi/emoji_1f311.png	lib/res/drawable-nodpi/emoji_1f311.png
+R100	res/drawable-nodpi/emoji_1f312.png	lib/res/drawable-nodpi/emoji_1f312.png
+R100	res/drawable-nodpi/emoji_1f313.png	lib/res/drawable-nodpi/emoji_1f313.png
+R100	res/drawable-nodpi/emoji_1f314.png	lib/res/drawable-nodpi/emoji_1f314.png
+R100	res/drawable-nodpi/emoji_1f315.png	lib/res/drawable-nodpi/emoji_1f315.png
+R100	res/drawable-nodpi/emoji_1f316.png	lib/res/drawable-nodpi/emoji_1f316.png
+R100	res/drawable-nodpi/emoji_1f317.png	lib/res/drawable-nodpi/emoji_1f317.png
+R100	res/drawable-nodpi/emoji_1f318.png	lib/res/drawable-nodpi/emoji_1f318.png
+R100	res/drawable-nodpi/emoji_1f319.png	lib/res/drawable-nodpi/emoji_1f319.png
+R100	res/drawable-nodpi/emoji_1f31a.png	lib/res/drawable-nodpi/emoji_1f31a.png
+R100	res/drawable-nodpi/emoji_1f31b.png	lib/res/drawable-nodpi/emoji_1f31b.png
+R100	res/drawable-nodpi/emoji_1f31c.png	lib/res/drawable-nodpi/emoji_1f31c.png
+R100	res/drawable-nodpi/emoji_1f31d.png	lib/res/drawable-nodpi/emoji_1f31d.png
+R100	res/drawable-nodpi/emoji_1f31e.png	lib/res/drawable-nodpi/emoji_1f31e.png
+R100	res/drawable-nodpi/emoji_1f31f.png	lib/res/drawable-nodpi/emoji_1f31f.png
+R100	res/drawable-nodpi/emoji_1f330.png	lib/res/drawable-nodpi/emoji_1f330.png
+R100	res/drawable-nodpi/emoji_1f331.png	lib/res/drawable-nodpi/emoji_1f331.png
+R100	res/drawable-nodpi/emoji_1f332.png	lib/res/drawable-nodpi/emoji_1f332.png
+R100	res/drawable-nodpi/emoji_1f333.png	lib/res/drawable-nodpi/emoji_1f333.png
+R100	res/drawable-nodpi/emoji_1f334.png	lib/res/drawable-nodpi/emoji_1f334.png
+R100	res/drawable-nodpi/emoji_1f335.png	lib/res/drawable-nodpi/emoji_1f335.png
+R100	res/drawable-nodpi/emoji_1f337.png	lib/res/drawable-nodpi/emoji_1f337.png
+R100	res/drawable-nodpi/emoji_1f338.png	lib/res/drawable-nodpi/emoji_1f338.png
+R100	res/drawable-nodpi/emoji_1f339.png	lib/res/drawable-nodpi/emoji_1f339.png
+R100	res/drawable-nodpi/emoji_1f33a.png	lib/res/drawable-nodpi/emoji_1f33a.png
+R100	res/drawable-nodpi/emoji_1f33b.png	lib/res/drawable-nodpi/emoji_1f33b.png
+R100	res/drawable-nodpi/emoji_1f33c.png	lib/res/drawable-nodpi/emoji_1f33c.png
+R100	res/drawable-nodpi/emoji_1f33d.png	lib/res/drawable-nodpi/emoji_1f33d.png
+R100	res/drawable-nodpi/emoji_1f33e.png	lib/res/drawable-nodpi/emoji_1f33e.png
+R100	res/drawable-nodpi/emoji_1f33f.png	lib/res/drawable-nodpi/emoji_1f33f.png
+R100	res/drawable-nodpi/emoji_1f340.png	lib/res/drawable-nodpi/emoji_1f340.png
+R100	res/drawable-nodpi/emoji_1f341.png	lib/res/drawable-nodpi/emoji_1f341.png
+R100	res/drawable-nodpi/emoji_1f342.png	lib/res/drawable-nodpi/emoji_1f342.png
+R100	res/drawable-nodpi/emoji_1f343.png	lib/res/drawable-nodpi/emoji_1f343.png
+R100	res/drawable-nodpi/emoji_1f344.png	lib/res/drawable-nodpi/emoji_1f344.png
+R100	res/drawable-nodpi/emoji_1f345.png	lib/res/drawable-nodpi/emoji_1f345.png
+R100	res/drawable-nodpi/emoji_1f346.png	lib/res/drawable-nodpi/emoji_1f346.png
+R100	res/drawable-nodpi/emoji_1f347.png	lib/res/drawable-nodpi/emoji_1f347.png
+R100	res/drawable-nodpi/emoji_1f348.png	lib/res/drawable-nodpi/emoji_1f348.png
+R100	res/drawable-nodpi/emoji_1f349.png	lib/res/drawable-nodpi/emoji_1f349.png
+R100	res/drawable-nodpi/emoji_1f34a.png	lib/res/drawable-nodpi/emoji_1f34a.png
+R100	res/drawable-nodpi/emoji_1f34b.png	lib/res/drawable-nodpi/emoji_1f34b.png
+R100	res/drawable-nodpi/emoji_1f34c.png	lib/res/drawable-nodpi/emoji_1f34c.png
+R100	res/drawable-nodpi/emoji_1f34d.png	lib/res/drawable-nodpi/emoji_1f34d.png
+R100	res/drawable-nodpi/emoji_1f34e.png	lib/res/drawable-nodpi/emoji_1f34e.png
+R100	res/drawable-nodpi/emoji_1f34f.png	lib/res/drawable-nodpi/emoji_1f34f.png
+R100	res/drawable-nodpi/emoji_1f350.png	lib/res/drawable-nodpi/emoji_1f350.png
+R100	res/drawable-nodpi/emoji_1f351.png	lib/res/drawable-nodpi/emoji_1f351.png
+R100	res/drawable-nodpi/emoji_1f352.png	lib/res/drawable-nodpi/emoji_1f352.png
+R100	res/drawable-nodpi/emoji_1f353.png	lib/res/drawable-nodpi/emoji_1f353.png
+R100	res/drawable-nodpi/emoji_1f354.png	lib/res/drawable-nodpi/emoji_1f354.png
+R100	res/drawable-nodpi/emoji_1f355.png	lib/res/drawable-nodpi/emoji_1f355.png
+R100	res/drawable-nodpi/emoji_1f356.png	lib/res/drawable-nodpi/emoji_1f356.png
+R100	res/drawable-nodpi/emoji_1f357.png	lib/res/drawable-nodpi/emoji_1f357.png
+R100	res/drawable-nodpi/emoji_1f358.png	lib/res/drawable-nodpi/emoji_1f358.png
+R100	res/drawable-nodpi/emoji_1f359.png	lib/res/drawable-nodpi/emoji_1f359.png
+R100	res/drawable-nodpi/emoji_1f35a.png	lib/res/drawable-nodpi/emoji_1f35a.png
+R100	res/drawable-nodpi/emoji_1f35b.png	lib/res/drawable-nodpi/emoji_1f35b.png
+R100	res/drawable-nodpi/emoji_1f35c.png	lib/res/drawable-nodpi/emoji_1f35c.png
+R100	res/drawable-nodpi/emoji_1f35d.png	lib/res/drawable-nodpi/emoji_1f35d.png
+R100	res/drawable-nodpi/emoji_1f35e.png	lib/res/drawable-nodpi/emoji_1f35e.png
+R100	res/drawable-nodpi/emoji_1f35f.png	lib/res/drawable-nodpi/emoji_1f35f.png
+R100	res/drawable-nodpi/emoji_1f360.png	lib/res/drawable-nodpi/emoji_1f360.png
+R100	res/drawable-nodpi/emoji_1f361.png	lib/res/drawable-nodpi/emoji_1f361.png
+R100	res/drawable-nodpi/emoji_1f362.png	lib/res/drawable-nodpi/emoji_1f362.png
+R100	res/drawable-nodpi/emoji_1f363.png	lib/res/drawable-nodpi/emoji_1f363.png
+R100	res/drawable-nodpi/emoji_1f364.png	lib/res/drawable-nodpi/emoji_1f364.png
+R100	res/drawable-nodpi/emoji_1f365.png	lib/res/drawable-nodpi/emoji_1f365.png
+R100	res/drawable-nodpi/emoji_1f366.png	lib/res/drawable-nodpi/emoji_1f366.png
+R100	res/drawable-nodpi/emoji_1f367.png	lib/res/drawable-nodpi/emoji_1f367.png
+R100	res/drawable-nodpi/emoji_1f368.png	lib/res/drawable-nodpi/emoji_1f368.png
+R100	res/drawable-nodpi/emoji_1f369.png	lib/res/drawable-nodpi/emoji_1f369.png
+R100	res/drawable-nodpi/emoji_1f36a.png	lib/res/drawable-nodpi/emoji_1f36a.png
+R100	res/drawable-nodpi/emoji_1f36b.png	lib/res/drawable-nodpi/emoji_1f36b.png
+R100	res/drawable-nodpi/emoji_1f36c.png	lib/res/drawable-nodpi/emoji_1f36c.png
+R100	res/drawable-nodpi/emoji_1f36d.png	lib/res/drawable-nodpi/emoji_1f36d.png
+R100	res/drawable-nodpi/emoji_1f36e.png	lib/res/drawable-nodpi/emoji_1f36e.png
+R100	res/drawable-nodpi/emoji_1f36f.png	lib/res/drawable-nodpi/emoji_1f36f.png
+R100	res/drawable-nodpi/emoji_1f370.png	lib/res/drawable-nodpi/emoji_1f370.png
+R100	res/drawable-nodpi/emoji_1f371.png	lib/res/drawable-nodpi/emoji_1f371.png
+R100	res/drawable-nodpi/emoji_1f372.png	lib/res/drawable-nodpi/emoji_1f372.png
+R100	res/drawable-nodpi/emoji_1f373.png	lib/res/drawable-nodpi/emoji_1f373.png
+R100	res/drawable-nodpi/emoji_1f374.png	lib/res/drawable-nodpi/emoji_1f374.png
+R100	res/drawable-nodpi/emoji_1f375.png	lib/res/drawable-nodpi/emoji_1f375.png
+R100	res/drawable-nodpi/emoji_1f376.png	lib/res/drawable-nodpi/emoji_1f376.png
+R100	res/drawable-nodpi/emoji_1f377.png	lib/res/drawable-nodpi/emoji_1f377.png
+R100	res/drawable-nodpi/emoji_1f378.png	lib/res/drawable-nodpi/emoji_1f378.png
+R100	res/drawable-nodpi/emoji_1f379.png	lib/res/drawable-nodpi/emoji_1f379.png
+R100	res/drawable-nodpi/emoji_1f37a.png	lib/res/drawable-nodpi/emoji_1f37a.png
+R100	res/drawable-nodpi/emoji_1f37b.png	lib/res/drawable-nodpi/emoji_1f37b.png
+R100	res/drawable-nodpi/emoji_1f37c.png	lib/res/drawable-nodpi/emoji_1f37c.png
+R100	res/drawable-nodpi/emoji_1f380.png	lib/res/drawable-nodpi/emoji_1f380.png
+R100	res/drawable-nodpi/emoji_1f381.png	lib/res/drawable-nodpi/emoji_1f381.png
+R100	res/drawable-nodpi/emoji_1f382.png	lib/res/drawable-nodpi/emoji_1f382.png
+R100	res/drawable-nodpi/emoji_1f383.png	lib/res/drawable-nodpi/emoji_1f383.png
+R100	res/drawable-nodpi/emoji_1f384.png	lib/res/drawable-nodpi/emoji_1f384.png
+R100	res/drawable-nodpi/emoji_1f385.png	lib/res/drawable-nodpi/emoji_1f385.png
+R100	res/drawable-nodpi/emoji_1f386.png	lib/res/drawable-nodpi/emoji_1f386.png
+R100	res/drawable-nodpi/emoji_1f387.png	lib/res/drawable-nodpi/emoji_1f387.png
+R100	res/drawable-nodpi/emoji_1f388.png	lib/res/drawable-nodpi/emoji_1f388.png
+R100	res/drawable-nodpi/emoji_1f389.png	lib/res/drawable-nodpi/emoji_1f389.png
+R100	res/drawable-nodpi/emoji_1f38a.png	lib/res/drawable-nodpi/emoji_1f38a.png
+R100	res/drawable-nodpi/emoji_1f38b.png	lib/res/drawable-nodpi/emoji_1f38b.png
+R100	res/drawable-nodpi/emoji_1f38c.png	lib/res/drawable-nodpi/emoji_1f38c.png
+R100	res/drawable-nodpi/emoji_1f38d.png	lib/res/drawable-nodpi/emoji_1f38d.png
+R100	res/drawable-nodpi/emoji_1f38e.png	lib/res/drawable-nodpi/emoji_1f38e.png
+R100	res/drawable-nodpi/emoji_1f38f.png	lib/res/drawable-nodpi/emoji_1f38f.png
+R100	res/drawable-nodpi/emoji_1f390.png	lib/res/drawable-nodpi/emoji_1f390.png
+R100	res/drawable-nodpi/emoji_1f391.png	lib/res/drawable-nodpi/emoji_1f391.png
+R100	res/drawable-nodpi/emoji_1f392.png	lib/res/drawable-nodpi/emoji_1f392.png
+R100	res/drawable-nodpi/emoji_1f393.png	lib/res/drawable-nodpi/emoji_1f393.png
+R100	res/drawable-nodpi/emoji_1f3a0.png	lib/res/drawable-nodpi/emoji_1f3a0.png
+R100	res/drawable-nodpi/emoji_1f3a1.png	lib/res/drawable-nodpi/emoji_1f3a1.png
+R100	res/drawable-nodpi/emoji_1f3a2.png	lib/res/drawable-nodpi/emoji_1f3a2.png
+R100	res/drawable-nodpi/emoji_1f3a3.png	lib/res/drawable-nodpi/emoji_1f3a3.png
+R100	res/drawable-nodpi/emoji_1f3a4.png	lib/res/drawable-nodpi/emoji_1f3a4.png
+R100	res/drawable-nodpi/emoji_1f3a5.png	lib/res/drawable-nodpi/emoji_1f3a5.png
+R100	res/drawable-nodpi/emoji_1f3a6.png	lib/res/drawable-nodpi/emoji_1f3a6.png
+R100	res/drawable-nodpi/emoji_1f3a7.png	lib/res/drawable-nodpi/emoji_1f3a7.png
+R100	res/drawable-nodpi/emoji_1f3a8.png	lib/res/drawable-nodpi/emoji_1f3a8.png
+R100	res/drawable-nodpi/emoji_1f3a9.png	lib/res/drawable-nodpi/emoji_1f3a9.png
+R100	res/drawable-nodpi/emoji_1f3aa.png	lib/res/drawable-nodpi/emoji_1f3aa.png
+R100	res/drawable-nodpi/emoji_1f3ab.png	lib/res/drawable-nodpi/emoji_1f3ab.png
+R100	res/drawable-nodpi/emoji_1f3ac.png	lib/res/drawable-nodpi/emoji_1f3ac.png
+R100	res/drawable-nodpi/emoji_1f3ad.png	lib/res/drawable-nodpi/emoji_1f3ad.png
+R100	res/drawable-nodpi/emoji_1f3ae.png	lib/res/drawable-nodpi/emoji_1f3ae.png
+R100	res/drawable-nodpi/emoji_1f3af.png	lib/res/drawable-nodpi/emoji_1f3af.png
+R100	res/drawable-nodpi/emoji_1f3b0.png	lib/res/drawable-nodpi/emoji_1f3b0.png
+R100	res/drawable-nodpi/emoji_1f3b1.png	lib/res/drawable-nodpi/emoji_1f3b1.png
+R100	res/drawable-nodpi/emoji_1f3b2.png	lib/res/drawable-nodpi/emoji_1f3b2.png
+R100	res/drawable-nodpi/emoji_1f3b3.png	lib/res/drawable-nodpi/emoji_1f3b3.png
+R100	res/drawable-nodpi/emoji_1f3b4.png	lib/res/drawable-nodpi/emoji_1f3b4.png
+R100	res/drawable-nodpi/emoji_1f3b5.png	lib/res/drawable-nodpi/emoji_1f3b5.png
+R100	res/drawable-nodpi/emoji_1f3b6.png	lib/res/drawable-nodpi/emoji_1f3b6.png
+R100	res/drawable-nodpi/emoji_1f3b7.png	lib/res/drawable-nodpi/emoji_1f3b7.png
+R100	res/drawable-nodpi/emoji_1f3b8.png	lib/res/drawable-nodpi/emoji_1f3b8.png
+R100	res/drawable-nodpi/emoji_1f3b9.png	lib/res/drawable-nodpi/emoji_1f3b9.png
+R100	res/drawable-nodpi/emoji_1f3ba.png	lib/res/drawable-nodpi/emoji_1f3ba.png
+R100	res/drawable-nodpi/emoji_1f3bb.png	lib/res/drawable-nodpi/emoji_1f3bb.png
+R100	res/drawable-nodpi/emoji_1f3bc.png	lib/res/drawable-nodpi/emoji_1f3bc.png
+R100	res/drawable-nodpi/emoji_1f3bd.png	lib/res/drawable-nodpi/emoji_1f3bd.png
+R100	res/drawable-nodpi/emoji_1f3be.png	lib/res/drawable-nodpi/emoji_1f3be.png
+R100	res/drawable-nodpi/emoji_1f3bf.png	lib/res/drawable-nodpi/emoji_1f3bf.png
+R100	res/drawable-nodpi/emoji_1f3c0.png	lib/res/drawable-nodpi/emoji_1f3c0.png
+R100	res/drawable-nodpi/emoji_1f3c1.png	lib/res/drawable-nodpi/emoji_1f3c1.png
+R100	res/drawable-nodpi/emoji_1f3c2.png	lib/res/drawable-nodpi/emoji_1f3c2.png
+R100	res/drawable-nodpi/emoji_1f3c3.png	lib/res/drawable-nodpi/emoji_1f3c3.png
+R100	res/drawable-nodpi/emoji_1f3c4.png	lib/res/drawable-nodpi/emoji_1f3c4.png
+R100	res/drawable-nodpi/emoji_1f3c6.png	lib/res/drawable-nodpi/emoji_1f3c6.png
+R100	res/drawable-nodpi/emoji_1f3c7.png	lib/res/drawable-nodpi/emoji_1f3c7.png
+R100	res/drawable-nodpi/emoji_1f3c8.png	lib/res/drawable-nodpi/emoji_1f3c8.png
+R100	res/drawable-nodpi/emoji_1f3c9.png	lib/res/drawable-nodpi/emoji_1f3c9.png
+R100	res/drawable-nodpi/emoji_1f3ca.png	lib/res/drawable-nodpi/emoji_1f3ca.png
+R100	res/drawable-nodpi/emoji_1f3e0.png	lib/res/drawable-nodpi/emoji_1f3e0.png
+R100	res/drawable-nodpi/emoji_1f3e1.png	lib/res/drawable-nodpi/emoji_1f3e1.png
+R100	res/drawable-nodpi/emoji_1f3e2.png	lib/res/drawable-nodpi/emoji_1f3e2.png
+R100	res/drawable-nodpi/emoji_1f3e3.png	lib/res/drawable-nodpi/emoji_1f3e3.png
+R100	res/drawable-nodpi/emoji_1f3e4.png	lib/res/drawable-nodpi/emoji_1f3e4.png
+R100	res/drawable-nodpi/emoji_1f3e5.png	lib/res/drawable-nodpi/emoji_1f3e5.png
+R100	res/drawable-nodpi/emoji_1f3e6.png	lib/res/drawable-nodpi/emoji_1f3e6.png
+R100	res/drawable-nodpi/emoji_1f3e7.png	lib/res/drawable-nodpi/emoji_1f3e7.png
+R100	res/drawable-nodpi/emoji_1f3e8.png	lib/res/drawable-nodpi/emoji_1f3e8.png
+R100	res/drawable-nodpi/emoji_1f3e9.png	lib/res/drawable-nodpi/emoji_1f3e9.png
+R100	res/drawable-nodpi/emoji_1f3ea.png	lib/res/drawable-nodpi/emoji_1f3ea.png
+R100	res/drawable-nodpi/emoji_1f3eb.png	lib/res/drawable-nodpi/emoji_1f3eb.png
+R100	res/drawable-nodpi/emoji_1f3ec.png	lib/res/drawable-nodpi/emoji_1f3ec.png
+R100	res/drawable-nodpi/emoji_1f3ed.png	lib/res/drawable-nodpi/emoji_1f3ed.png
+R100	res/drawable-nodpi/emoji_1f3ee.png	lib/res/drawable-nodpi/emoji_1f3ee.png
+R100	res/drawable-nodpi/emoji_1f3ef.png	lib/res/drawable-nodpi/emoji_1f3ef.png
+R100	res/drawable-nodpi/emoji_1f3f0.png	lib/res/drawable-nodpi/emoji_1f3f0.png
+R100	res/drawable-nodpi/emoji_1f400.png	lib/res/drawable-nodpi/emoji_1f400.png
+R100	res/drawable-nodpi/emoji_1f401.png	lib/res/drawable-nodpi/emoji_1f401.png
+R100	res/drawable-nodpi/emoji_1f402.png	lib/res/drawable-nodpi/emoji_1f402.png
+R100	res/drawable-nodpi/emoji_1f403.png	lib/res/drawable-nodpi/emoji_1f403.png
+R100	res/drawable-nodpi/emoji_1f404.png	lib/res/drawable-nodpi/emoji_1f404.png
+R100	res/drawable-nodpi/emoji_1f405.png	lib/res/drawable-nodpi/emoji_1f405.png
+R100	res/drawable-nodpi/emoji_1f406.png	lib/res/drawable-nodpi/emoji_1f406.png
+R100	res/drawable-nodpi/emoji_1f407.png	lib/res/drawable-nodpi/emoji_1f407.png
+R100	res/drawable-nodpi/emoji_1f408.png	lib/res/drawable-nodpi/emoji_1f408.png
+R100	res/drawable-nodpi/emoji_1f409.png	lib/res/drawable-nodpi/emoji_1f409.png
+R100	res/drawable-nodpi/emoji_1f40a.png	lib/res/drawable-nodpi/emoji_1f40a.png
+R100	res/drawable-nodpi/emoji_1f40b.png	lib/res/drawable-nodpi/emoji_1f40b.png
+R100	res/drawable-nodpi/emoji_1f40c.png	lib/res/drawable-nodpi/emoji_1f40c.png
+R100	res/drawable-nodpi/emoji_1f40d.png	lib/res/drawable-nodpi/emoji_1f40d.png
+R100	res/drawable-nodpi/emoji_1f40e.png	lib/res/drawable-nodpi/emoji_1f40e.png
+R100	res/drawable-nodpi/emoji_1f40f.png	lib/res/drawable-nodpi/emoji_1f40f.png
+R100	res/drawable-nodpi/emoji_1f410.png	lib/res/drawable-nodpi/emoji_1f410.png
+R100	res/drawable-nodpi/emoji_1f411.png	lib/res/drawable-nodpi/emoji_1f411.png
+R100	res/drawable-nodpi/emoji_1f412.png	lib/res/drawable-nodpi/emoji_1f412.png
+R100	res/drawable-nodpi/emoji_1f413.png	lib/res/drawable-nodpi/emoji_1f413.png
+R100	res/drawable-nodpi/emoji_1f414.png	lib/res/drawable-nodpi/emoji_1f414.png
+R100	res/drawable-nodpi/emoji_1f415.png	lib/res/drawable-nodpi/emoji_1f415.png
+R100	res/drawable-nodpi/emoji_1f416.png	lib/res/drawable-nodpi/emoji_1f416.png
+R100	res/drawable-nodpi/emoji_1f417.png	lib/res/drawable-nodpi/emoji_1f417.png
+R100	res/drawable-nodpi/emoji_1f418.png	lib/res/drawable-nodpi/emoji_1f418.png
+R100	res/drawable-nodpi/emoji_1f419.png	lib/res/drawable-nodpi/emoji_1f419.png
+R100	res/drawable-nodpi/emoji_1f41a.png	lib/res/drawable-nodpi/emoji_1f41a.png
+R100	res/drawable-nodpi/emoji_1f41b.png	lib/res/drawable-nodpi/emoji_1f41b.png
+R100	res/drawable-nodpi/emoji_1f41c.png	lib/res/drawable-nodpi/emoji_1f41c.png
+R100	res/drawable-nodpi/emoji_1f41d.png	lib/res/drawable-nodpi/emoji_1f41d.png
+R100	res/drawable-nodpi/emoji_1f41e.png	lib/res/drawable-nodpi/emoji_1f41e.png
+R100	res/drawable-nodpi/emoji_1f41f.png	lib/res/drawable-nodpi/emoji_1f41f.png
+R100	res/drawable-nodpi/emoji_1f420.png	lib/res/drawable-nodpi/emoji_1f420.png
+R100	res/drawable-nodpi/emoji_1f421.png	lib/res/drawable-nodpi/emoji_1f421.png
+R100	res/drawable-nodpi/emoji_1f422.png	lib/res/drawable-nodpi/emoji_1f422.png
+R100	res/drawable-nodpi/emoji_1f423.png	lib/res/drawable-nodpi/emoji_1f423.png
+R100	res/drawable-nodpi/emoji_1f424.png	lib/res/drawable-nodpi/emoji_1f424.png
+R100	res/drawable-nodpi/emoji_1f425.png	lib/res/drawable-nodpi/emoji_1f425.png
+R100	res/drawable-nodpi/emoji_1f426.png	lib/res/drawable-nodpi/emoji_1f426.png
+R100	res/drawable-nodpi/emoji_1f427.png	lib/res/drawable-nodpi/emoji_1f427.png
+R100	res/drawable-nodpi/emoji_1f428.png	lib/res/drawable-nodpi/emoji_1f428.png
+R100	res/drawable-nodpi/emoji_1f429.png	lib/res/drawable-nodpi/emoji_1f429.png
+R100	res/drawable-nodpi/emoji_1f42a.png	lib/res/drawable-nodpi/emoji_1f42a.png
+R100	res/drawable-nodpi/emoji_1f42b.png	lib/res/drawable-nodpi/emoji_1f42b.png
+R100	res/drawable-nodpi/emoji_1f42c.png	lib/res/drawable-nodpi/emoji_1f42c.png
+R100	res/drawable-nodpi/emoji_1f42d.png	lib/res/drawable-nodpi/emoji_1f42d.png
+R100	res/drawable-nodpi/emoji_1f42e.png	lib/res/drawable-nodpi/emoji_1f42e.png
+R100	res/drawable-nodpi/emoji_1f42f.png	lib/res/drawable-nodpi/emoji_1f42f.png
+R100	res/drawable-nodpi/emoji_1f430.png	lib/res/drawable-nodpi/emoji_1f430.png
+R100	res/drawable-nodpi/emoji_1f431.png	lib/res/drawable-nodpi/emoji_1f431.png
+R100	res/drawable-nodpi/emoji_1f432.png	lib/res/drawable-nodpi/emoji_1f432.png
+R100	res/drawable-nodpi/emoji_1f433.png	lib/res/drawable-nodpi/emoji_1f433.png
+R100	res/drawable-nodpi/emoji_1f434.png	lib/res/drawable-nodpi/emoji_1f434.png
+R100	res/drawable-nodpi/emoji_1f435.png	lib/res/drawable-nodpi/emoji_1f435.png
+R100	res/drawable-nodpi/emoji_1f436.png	lib/res/drawable-nodpi/emoji_1f436.png
+R100	res/drawable-nodpi/emoji_1f437.png	lib/res/drawable-nodpi/emoji_1f437.png
+R100	res/drawable-nodpi/emoji_1f438.png	lib/res/drawable-nodpi/emoji_1f438.png
+R100	res/drawable-nodpi/emoji_1f439.png	lib/res/drawable-nodpi/emoji_1f439.png
+R100	res/drawable-nodpi/emoji_1f43a.png	lib/res/drawable-nodpi/emoji_1f43a.png
+R100	res/drawable-nodpi/emoji_1f43b.png	lib/res/drawable-nodpi/emoji_1f43b.png
+R100	res/drawable-nodpi/emoji_1f43c.png	lib/res/drawable-nodpi/emoji_1f43c.png
+R100	res/drawable-nodpi/emoji_1f43d.png	lib/res/drawable-nodpi/emoji_1f43d.png
+R100	res/drawable-nodpi/emoji_1f43e.png	lib/res/drawable-nodpi/emoji_1f43e.png
+R100	res/drawable-nodpi/emoji_1f440.png	lib/res/drawable-nodpi/emoji_1f440.png
+R100	res/drawable-nodpi/emoji_1f442.png	lib/res/drawable-nodpi/emoji_1f442.png
+R100	res/drawable-nodpi/emoji_1f443.png	lib/res/drawable-nodpi/emoji_1f443.png
+R100	res/drawable-nodpi/emoji_1f444.png	lib/res/drawable-nodpi/emoji_1f444.png
+R100	res/drawable-nodpi/emoji_1f445.png	lib/res/drawable-nodpi/emoji_1f445.png
+R100	res/drawable-nodpi/emoji_1f446.png	lib/res/drawable-nodpi/emoji_1f446.png
+R100	res/drawable-nodpi/emoji_1f447.png	lib/res/drawable-nodpi/emoji_1f447.png
+R100	res/drawable-nodpi/emoji_1f448.png	lib/res/drawable-nodpi/emoji_1f448.png
+R100	res/drawable-nodpi/emoji_1f449.png	lib/res/drawable-nodpi/emoji_1f449.png
+R100	res/drawable-nodpi/emoji_1f44a.png	lib/res/drawable-nodpi/emoji_1f44a.png
+R100	res/drawable-nodpi/emoji_1f44b.png	lib/res/drawable-nodpi/emoji_1f44b.png
+R100	res/drawable-nodpi/emoji_1f44c.png	lib/res/drawable-nodpi/emoji_1f44c.png
+R100	res/drawable-nodpi/emoji_1f44d.png	lib/res/drawable-nodpi/emoji_1f44d.png
+R100	res/drawable-nodpi/emoji_1f44e.png	lib/res/drawable-nodpi/emoji_1f44e.png
+R100	res/drawable-nodpi/emoji_1f44f.png	lib/res/drawable-nodpi/emoji_1f44f.png
+R100	res/drawable-nodpi/emoji_1f450.png	lib/res/drawable-nodpi/emoji_1f450.png
+R100	res/drawable-nodpi/emoji_1f451.png	lib/res/drawable-nodpi/emoji_1f451.png
+R100	res/drawable-nodpi/emoji_1f452.png	lib/res/drawable-nodpi/emoji_1f452.png
+R100	res/drawable-nodpi/emoji_1f453.png	lib/res/drawable-nodpi/emoji_1f453.png
+R100	res/drawable-nodpi/emoji_1f454.png	lib/res/drawable-nodpi/emoji_1f454.png
+R100	res/drawable-nodpi/emoji_1f455.png	lib/res/drawable-nodpi/emoji_1f455.png
+R100	res/drawable-nodpi/emoji_1f456.png	lib/res/drawable-nodpi/emoji_1f456.png
+R100	res/drawable-nodpi/emoji_1f457.png	lib/res/drawable-nodpi/emoji_1f457.png
+R100	res/drawable-nodpi/emoji_1f458.png	lib/res/drawable-nodpi/emoji_1f458.png
+R100	res/drawable-nodpi/emoji_1f459.png	lib/res/drawable-nodpi/emoji_1f459.png
+R100	res/drawable-nodpi/emoji_1f45a.png	lib/res/drawable-nodpi/emoji_1f45a.png
+R100	res/drawable-nodpi/emoji_1f45b.png	lib/res/drawable-nodpi/emoji_1f45b.png
+R100	res/drawable-nodpi/emoji_1f45c.png	lib/res/drawable-nodpi/emoji_1f45c.png
+R100	res/drawable-nodpi/emoji_1f45d.png	lib/res/drawable-nodpi/emoji_1f45d.png
+R100	res/drawable-nodpi/emoji_1f45e.png	lib/res/drawable-nodpi/emoji_1f45e.png
+R100	res/drawable-nodpi/emoji_1f45f.png	lib/res/drawable-nodpi/emoji_1f45f.png
+R100	res/drawable-nodpi/emoji_1f460.png	lib/res/drawable-nodpi/emoji_1f460.png
+R100	res/drawable-nodpi/emoji_1f461.png	lib/res/drawable-nodpi/emoji_1f461.png
+R100	res/drawable-nodpi/emoji_1f462.png	lib/res/drawable-nodpi/emoji_1f462.png
+R100	res/drawable-nodpi/emoji_1f463.png	lib/res/drawable-nodpi/emoji_1f463.png
+R100	res/drawable-nodpi/emoji_1f464.png	lib/res/drawable-nodpi/emoji_1f464.png
+R100	res/drawable-nodpi/emoji_1f465.png	lib/res/drawable-nodpi/emoji_1f465.png
+R100	res/drawable-nodpi/emoji_1f466.png	lib/res/drawable-nodpi/emoji_1f466.png
+R100	res/drawable-nodpi/emoji_1f467.png	lib/res/drawable-nodpi/emoji_1f467.png
+R100	res/drawable-nodpi/emoji_1f468.png	lib/res/drawable-nodpi/emoji_1f468.png
+R100	res/drawable-nodpi/emoji_1f469.png	lib/res/drawable-nodpi/emoji_1f469.png
+R100	res/drawable-nodpi/emoji_1f46a.png	lib/res/drawable-nodpi/emoji_1f46a.png
+R100	res/drawable-nodpi/emoji_1f46b.png	lib/res/drawable-nodpi/emoji_1f46b.png
+R100	res/drawable-nodpi/emoji_1f46c.png	lib/res/drawable-nodpi/emoji_1f46c.png
+R100	res/drawable-nodpi/emoji_1f46d.png	lib/res/drawable-nodpi/emoji_1f46d.png
+R100	res/drawable-nodpi/emoji_1f46e.png	lib/res/drawable-nodpi/emoji_1f46e.png
+R100	res/drawable-nodpi/emoji_1f46f.png	lib/res/drawable-nodpi/emoji_1f46f.png
+R100	res/drawable-nodpi/emoji_1f470.png	lib/res/drawable-nodpi/emoji_1f470.png
+R100	res/drawable-nodpi/emoji_1f471.png	lib/res/drawable-nodpi/emoji_1f471.png
+R100	res/drawable-nodpi/emoji_1f472.png	lib/res/drawable-nodpi/emoji_1f472.png
+R100	res/drawable-nodpi/emoji_1f473.png	lib/res/drawable-nodpi/emoji_1f473.png
+R100	res/drawable-nodpi/emoji_1f474.png	lib/res/drawable-nodpi/emoji_1f474.png
+R100	res/drawable-nodpi/emoji_1f475.png	lib/res/drawable-nodpi/emoji_1f475.png
+R100	res/drawable-nodpi/emoji_1f476.png	lib/res/drawable-nodpi/emoji_1f476.png
+R100	res/drawable-nodpi/emoji_1f477.png	lib/res/drawable-nodpi/emoji_1f477.png
+R100	res/drawable-nodpi/emoji_1f478.png	lib/res/drawable-nodpi/emoji_1f478.png
+R100	res/drawable-nodpi/emoji_1f479.png	lib/res/drawable-nodpi/emoji_1f479.png
+R100	res/drawable-nodpi/emoji_1f47a.png	lib/res/drawable-nodpi/emoji_1f47a.png
+R100	res/drawable-nodpi/emoji_1f47b.png	lib/res/drawable-nodpi/emoji_1f47b.png
+R100	res/drawable-nodpi/emoji_1f47c.png	lib/res/drawable-nodpi/emoji_1f47c.png
+R100	res/drawable-nodpi/emoji_1f47d.png	lib/res/drawable-nodpi/emoji_1f47d.png
+R100	res/drawable-nodpi/emoji_1f47e.png	lib/res/drawable-nodpi/emoji_1f47e.png
+R100	res/drawable-nodpi/emoji_1f47f.png	lib/res/drawable-nodpi/emoji_1f47f.png
+R100	res/drawable-nodpi/emoji_1f480.png	lib/res/drawable-nodpi/emoji_1f480.png
+R100	res/drawable-nodpi/emoji_1f481.png	lib/res/drawable-nodpi/emoji_1f481.png
+R100	res/drawable-nodpi/emoji_1f482.png	lib/res/drawable-nodpi/emoji_1f482.png
+R100	res/drawable-nodpi/emoji_1f483.png	lib/res/drawable-nodpi/emoji_1f483.png
+R100	res/drawable-nodpi/emoji_1f484.png	lib/res/drawable-nodpi/emoji_1f484.png
+R100	res/drawable-nodpi/emoji_1f485.png	lib/res/drawable-nodpi/emoji_1f485.png
+R100	res/drawable-nodpi/emoji_1f486.png	lib/res/drawable-nodpi/emoji_1f486.png
+R100	res/drawable-nodpi/emoji_1f487.png	lib/res/drawable-nodpi/emoji_1f487.png
+R100	res/drawable-nodpi/emoji_1f488.png	lib/res/drawable-nodpi/emoji_1f488.png
+R100	res/drawable-nodpi/emoji_1f489.png	lib/res/drawable-nodpi/emoji_1f489.png
+R100	res/drawable-nodpi/emoji_1f48a.png	lib/res/drawable-nodpi/emoji_1f48a.png
+R100	res/drawable-nodpi/emoji_1f48b.png	lib/res/drawable-nodpi/emoji_1f48b.png
+R100	res/drawable-nodpi/emoji_1f48c.png	lib/res/drawable-nodpi/emoji_1f48c.png
+R100	res/drawable-nodpi/emoji_1f48d.png	lib/res/drawable-nodpi/emoji_1f48d.png
+R100	res/drawable-nodpi/emoji_1f48e.png	lib/res/drawable-nodpi/emoji_1f48e.png
+R100	res/drawable-nodpi/emoji_1f48f.png	lib/res/drawable-nodpi/emoji_1f48f.png
+R100	res/drawable-nodpi/emoji_1f490.png	lib/res/drawable-nodpi/emoji_1f490.png
+R100	res/drawable-nodpi/emoji_1f491.png	lib/res/drawable-nodpi/emoji_1f491.png
+R100	res/drawable-nodpi/emoji_1f492.png	lib/res/drawable-nodpi/emoji_1f492.png
+R100	res/drawable-nodpi/emoji_1f493.png	lib/res/drawable-nodpi/emoji_1f493.png
+R100	res/drawable-nodpi/emoji_1f494.png	lib/res/drawable-nodpi/emoji_1f494.png
+R100	res/drawable-nodpi/emoji_1f495.png	lib/res/drawable-nodpi/emoji_1f495.png
+R100	res/drawable-nodpi/emoji_1f496.png	lib/res/drawable-nodpi/emoji_1f496.png
+R100	res/drawable-nodpi/emoji_1f497.png	lib/res/drawable-nodpi/emoji_1f497.png
+R100	res/drawable-nodpi/emoji_1f498.png	lib/res/drawable-nodpi/emoji_1f498.png
+R100	res/drawable-nodpi/emoji_1f499.png	lib/res/drawable-nodpi/emoji_1f499.png
+R100	res/drawable-nodpi/emoji_1f49a.png	lib/res/drawable-nodpi/emoji_1f49a.png
+R100	res/drawable-nodpi/emoji_1f49b.png	lib/res/drawable-nodpi/emoji_1f49b.png
+R100	res/drawable-nodpi/emoji_1f49c.png	lib/res/drawable-nodpi/emoji_1f49c.png
+R100	res/drawable-nodpi/emoji_1f49d.png	lib/res/drawable-nodpi/emoji_1f49d.png
+R100	res/drawable-nodpi/emoji_1f49e.png	lib/res/drawable-nodpi/emoji_1f49e.png
+R100	res/drawable-nodpi/emoji_1f49f.png	lib/res/drawable-nodpi/emoji_1f49f.png
+R100	res/drawable-nodpi/emoji_1f4a0.png	lib/res/drawable-nodpi/emoji_1f4a0.png
+R100	res/drawable-nodpi/emoji_1f4a1.png	lib/res/drawable-nodpi/emoji_1f4a1.png
+R100	res/drawable-nodpi/emoji_1f4a2.png	lib/res/drawable-nodpi/emoji_1f4a2.png
+R100	res/drawable-nodpi/emoji_1f4a3.png	lib/res/drawable-nodpi/emoji_1f4a3.png
+R100	res/drawable-nodpi/emoji_1f4a4.png	lib/res/drawable-nodpi/emoji_1f4a4.png
+R100	res/drawable-nodpi/emoji_1f4a5.png	lib/res/drawable-nodpi/emoji_1f4a5.png
+R100	res/drawable-nodpi/emoji_1f4a6.png	lib/res/drawable-nodpi/emoji_1f4a6.png
+R100	res/drawable-nodpi/emoji_1f4a7.png	lib/res/drawable-nodpi/emoji_1f4a7.png
+R100	res/drawable-nodpi/emoji_1f4a8.png	lib/res/drawable-nodpi/emoji_1f4a8.png
+R100	res/drawable-nodpi/emoji_1f4a9.png	lib/res/drawable-nodpi/emoji_1f4a9.png
+R100	res/drawable-nodpi/emoji_1f4aa.png	lib/res/drawable-nodpi/emoji_1f4aa.png
+R100	res/drawable-nodpi/emoji_1f4ab.png	lib/res/drawable-nodpi/emoji_1f4ab.png
+R100	res/drawable-nodpi/emoji_1f4ac.png	lib/res/drawable-nodpi/emoji_1f4ac.png
+R100	res/drawable-nodpi/emoji_1f4ad.png	lib/res/drawable-nodpi/emoji_1f4ad.png
+R100	res/drawable-nodpi/emoji_1f4ae.png	lib/res/drawable-nodpi/emoji_1f4ae.png
+R100	res/drawable-nodpi/emoji_1f4af.png	lib/res/drawable-nodpi/emoji_1f4af.png
+R100	res/drawable-nodpi/emoji_1f4b0.png	lib/res/drawable-nodpi/emoji_1f4b0.png
+R100	res/drawable-nodpi/emoji_1f4b1.png	lib/res/drawable-nodpi/emoji_1f4b1.png
+R100	res/drawable-nodpi/emoji_1f4b2.png	lib/res/drawable-nodpi/emoji_1f4b2.png
+R100	res/drawable-nodpi/emoji_1f4b3.png	lib/res/drawable-nodpi/emoji_1f4b3.png
+R100	res/drawable-nodpi/emoji_1f4b4.png	lib/res/drawable-nodpi/emoji_1f4b4.png
+R100	res/drawable-nodpi/emoji_1f4b5.png	lib/res/drawable-nodpi/emoji_1f4b5.png
+R100	res/drawable-nodpi/emoji_1f4b6.png	lib/res/drawable-nodpi/emoji_1f4b6.png
+R100	res/drawable-nodpi/emoji_1f4b7.png	lib/res/drawable-nodpi/emoji_1f4b7.png
+R100	res/drawable-nodpi/emoji_1f4b8.png	lib/res/drawable-nodpi/emoji_1f4b8.png
+R100	res/drawable-nodpi/emoji_1f4b9.png	lib/res/drawable-nodpi/emoji_1f4b9.png
+R100	res/drawable-nodpi/emoji_1f4ba.png	lib/res/drawable-nodpi/emoji_1f4ba.png
+R100	res/drawable-nodpi/emoji_1f4bb.png	lib/res/drawable-nodpi/emoji_1f4bb.png
+R100	res/drawable-nodpi/emoji_1f4bc.png	lib/res/drawable-nodpi/emoji_1f4bc.png
+R100	res/drawable-nodpi/emoji_1f4bd.png	lib/res/drawable-nodpi/emoji_1f4bd.png
+R100	res/drawable-nodpi/emoji_1f4be.png	lib/res/drawable-nodpi/emoji_1f4be.png
+R100	res/drawable-nodpi/emoji_1f4bf.png	lib/res/drawable-nodpi/emoji_1f4bf.png
+R100	res/drawable-nodpi/emoji_1f4c0.png	lib/res/drawable-nodpi/emoji_1f4c0.png
+R100	res/drawable-nodpi/emoji_1f4c1.png	lib/res/drawable-nodpi/emoji_1f4c1.png
+R100	res/drawable-nodpi/emoji_1f4c2.png	lib/res/drawable-nodpi/emoji_1f4c2.png
+R100	res/drawable-nodpi/emoji_1f4c3.png	lib/res/drawable-nodpi/emoji_1f4c3.png
+R100	res/drawable-nodpi/emoji_1f4c4.png	lib/res/drawable-nodpi/emoji_1f4c4.png
+R100	res/drawable-nodpi/emoji_1f4c5.png	lib/res/drawable-nodpi/emoji_1f4c5.png
+R100	res/drawable-nodpi/emoji_1f4c6.png	lib/res/drawable-nodpi/emoji_1f4c6.png
+R100	res/drawable-nodpi/emoji_1f4c7.png	lib/res/drawable-nodpi/emoji_1f4c7.png
+R100	res/drawable-nodpi/emoji_1f4c8.png	lib/res/drawable-nodpi/emoji_1f4c8.png
+R100	res/drawable-nodpi/emoji_1f4c9.png	lib/res/drawable-nodpi/emoji_1f4c9.png
+R100	res/drawable-nodpi/emoji_1f4ca.png	lib/res/drawable-nodpi/emoji_1f4ca.png
+R100	res/drawable-nodpi/emoji_1f4cb.png	lib/res/drawable-nodpi/emoji_1f4cb.png
+R100	res/drawable-nodpi/emoji_1f4cc.png	lib/res/drawable-nodpi/emoji_1f4cc.png
+R100	res/drawable-nodpi/emoji_1f4cd.png	lib/res/drawable-nodpi/emoji_1f4cd.png
+R100	res/drawable-nodpi/emoji_1f4ce.png	lib/res/drawable-nodpi/emoji_1f4ce.png
+R100	res/drawable-nodpi/emoji_1f4cf.png	lib/res/drawable-nodpi/emoji_1f4cf.png
+R100	res/drawable-nodpi/emoji_1f4d0.png	lib/res/drawable-nodpi/emoji_1f4d0.png
+R100	res/drawable-nodpi/emoji_1f4d1.png	lib/res/drawable-nodpi/emoji_1f4d1.png
+R100	res/drawable-nodpi/emoji_1f4d2.png	lib/res/drawable-nodpi/emoji_1f4d2.png
+R100	res/drawable-nodpi/emoji_1f4d3.png	lib/res/drawable-nodpi/emoji_1f4d3.png
+R100	res/drawable-nodpi/emoji_1f4d4.png	lib/res/drawable-nodpi/emoji_1f4d4.png
+R100	res/drawable-nodpi/emoji_1f4d5.png	lib/res/drawable-nodpi/emoji_1f4d5.png
+R100	res/drawable-nodpi/emoji_1f4d6.png	lib/res/drawable-nodpi/emoji_1f4d6.png
+R100	res/drawable-nodpi/emoji_1f4d7.png	lib/res/drawable-nodpi/emoji_1f4d7.png
+R100	res/drawable-nodpi/emoji_1f4d8.png	lib/res/drawable-nodpi/emoji_1f4d8.png
+R100	res/drawable-nodpi/emoji_1f4d9.png	lib/res/drawable-nodpi/emoji_1f4d9.png
+R100	res/drawable-nodpi/emoji_1f4da.png	lib/res/drawable-nodpi/emoji_1f4da.png
+R100	res/drawable-nodpi/emoji_1f4db.png	lib/res/drawable-nodpi/emoji_1f4db.png
+R100	res/drawable-nodpi/emoji_1f4dc.png	lib/res/drawable-nodpi/emoji_1f4dc.png
+R100	res/drawable-nodpi/emoji_1f4dd.png	lib/res/drawable-nodpi/emoji_1f4dd.png
+R100	res/drawable-nodpi/emoji_1f4de.png	lib/res/drawable-nodpi/emoji_1f4de.png
+R100	res/drawable-nodpi/emoji_1f4df.png	lib/res/drawable-nodpi/emoji_1f4df.png
+R100	res/drawable-nodpi/emoji_1f4e0.png	lib/res/drawable-nodpi/emoji_1f4e0.png
+R100	res/drawable-nodpi/emoji_1f4e1.png	lib/res/drawable-nodpi/emoji_1f4e1.png
+R100	res/drawable-nodpi/emoji_1f4e2.png	lib/res/drawable-nodpi/emoji_1f4e2.png
+R100	res/drawable-nodpi/emoji_1f4e3.png	lib/res/drawable-nodpi/emoji_1f4e3.png
+R100	res/drawable-nodpi/emoji_1f4e4.png	lib/res/drawable-nodpi/emoji_1f4e4.png
+R100	res/drawable-nodpi/emoji_1f4e5.png	lib/res/drawable-nodpi/emoji_1f4e5.png
+R100	res/drawable-nodpi/emoji_1f4e6.png	lib/res/drawable-nodpi/emoji_1f4e6.png
+R100	res/drawable-nodpi/emoji_1f4e7.png	lib/res/drawable-nodpi/emoji_1f4e7.png
+R100	res/drawable-nodpi/emoji_1f4e8.png	lib/res/drawable-nodpi/emoji_1f4e8.png
+R100	res/drawable-nodpi/emoji_1f4e9.png	lib/res/drawable-nodpi/emoji_1f4e9.png
+R100	res/drawable-nodpi/emoji_1f4ea.png	lib/res/drawable-nodpi/emoji_1f4ea.png
+R100	res/drawable-nodpi/emoji_1f4eb.png	lib/res/drawable-nodpi/emoji_1f4eb.png
+R100	res/drawable-nodpi/emoji_1f4ec.png	lib/res/drawable-nodpi/emoji_1f4ec.png
+R100	res/drawable-nodpi/emoji_1f4ed.png	lib/res/drawable-nodpi/emoji_1f4ed.png
+R100	res/drawable-nodpi/emoji_1f4ee.png	lib/res/drawable-nodpi/emoji_1f4ee.png
+R100	res/drawable-nodpi/emoji_1f4ef.png	lib/res/drawable-nodpi/emoji_1f4ef.png
+R100	res/drawable-nodpi/emoji_1f4f0.png	lib/res/drawable-nodpi/emoji_1f4f0.png
+R100	res/drawable-nodpi/emoji_1f4f1.png	lib/res/drawable-nodpi/emoji_1f4f1.png
+R100	res/drawable-nodpi/emoji_1f4f2.png	lib/res/drawable-nodpi/emoji_1f4f2.png
+R100	res/drawable-nodpi/emoji_1f4f3.png	lib/res/drawable-nodpi/emoji_1f4f3.png
+R100	res/drawable-nodpi/emoji_1f4f4.png	lib/res/drawable-nodpi/emoji_1f4f4.png
+R100	res/drawable-nodpi/emoji_1f4f5.png	lib/res/drawable-nodpi/emoji_1f4f5.png
+R100	res/drawable-nodpi/emoji_1f4f6.png	lib/res/drawable-nodpi/emoji_1f4f6.png
+R100	res/drawable-nodpi/emoji_1f4f7.png	lib/res/drawable-nodpi/emoji_1f4f7.png
+R100	res/drawable-nodpi/emoji_1f4f9.png	lib/res/drawable-nodpi/emoji_1f4f9.png
+R100	res/drawable-nodpi/emoji_1f4fa.png	lib/res/drawable-nodpi/emoji_1f4fa.png
+R100	res/drawable-nodpi/emoji_1f4fb.png	lib/res/drawable-nodpi/emoji_1f4fb.png
+R100	res/drawable-nodpi/emoji_1f4fc.png	lib/res/drawable-nodpi/emoji_1f4fc.png
+R100	res/drawable-nodpi/emoji_1f500.png	lib/res/drawable-nodpi/emoji_1f500.png
+R100	res/drawable-nodpi/emoji_1f501.png	lib/res/drawable-nodpi/emoji_1f501.png
+R100	res/drawable-nodpi/emoji_1f502.png	lib/res/drawable-nodpi/emoji_1f502.png
+R100	res/drawable-nodpi/emoji_1f503.png	lib/res/drawable-nodpi/emoji_1f503.png
+R100	res/drawable-nodpi/emoji_1f504.png	lib/res/drawable-nodpi/emoji_1f504.png
+R100	res/drawable-nodpi/emoji_1f505.png	lib/res/drawable-nodpi/emoji_1f505.png
+R100	res/drawable-nodpi/emoji_1f506.png	lib/res/drawable-nodpi/emoji_1f506.png
+R100	res/drawable-nodpi/emoji_1f507.png	lib/res/drawable-nodpi/emoji_1f507.png
+R100	res/drawable-nodpi/emoji_1f508.png	lib/res/drawable-nodpi/emoji_1f508.png
+R100	res/drawable-nodpi/emoji_1f509.png	lib/res/drawable-nodpi/emoji_1f509.png
+R100	res/drawable-nodpi/emoji_1f50a.png	lib/res/drawable-nodpi/emoji_1f50a.png
+R100	res/drawable-nodpi/emoji_1f50b.png	lib/res/drawable-nodpi/emoji_1f50b.png
+R100	res/drawable-nodpi/emoji_1f50c.png	lib/res/drawable-nodpi/emoji_1f50c.png
+R100	res/drawable-nodpi/emoji_1f50d.png	lib/res/drawable-nodpi/emoji_1f50d.png
+R100	res/drawable-nodpi/emoji_1f50e.png	lib/res/drawable-nodpi/emoji_1f50e.png
+R100	res/drawable-nodpi/emoji_1f50f.png	lib/res/drawable-nodpi/emoji_1f50f.png
+R100	res/drawable-nodpi/emoji_1f510.png	lib/res/drawable-nodpi/emoji_1f510.png
+R100	res/drawable-nodpi/emoji_1f511.png	lib/res/drawable-nodpi/emoji_1f511.png
+R100	res/drawable-nodpi/emoji_1f512.png	lib/res/drawable-nodpi/emoji_1f512.png
+R100	res/drawable-nodpi/emoji_1f513.png	lib/res/drawable-nodpi/emoji_1f513.png
+R100	res/drawable-nodpi/emoji_1f514.png	lib/res/drawable-nodpi/emoji_1f514.png
+R100	res/drawable-nodpi/emoji_1f515.png	lib/res/drawable-nodpi/emoji_1f515.png
+R100	res/drawable-nodpi/emoji_1f516.png	lib/res/drawable-nodpi/emoji_1f516.png
+R100	res/drawable-nodpi/emoji_1f517.png	lib/res/drawable-nodpi/emoji_1f517.png
+R100	res/drawable-nodpi/emoji_1f518.png	lib/res/drawable-nodpi/emoji_1f518.png
+R100	res/drawable-nodpi/emoji_1f519.png	lib/res/drawable-nodpi/emoji_1f519.png
+R100	res/drawable-nodpi/emoji_1f51a.png	lib/res/drawable-nodpi/emoji_1f51a.png
+R100	res/drawable-nodpi/emoji_1f51b.png	lib/res/drawable-nodpi/emoji_1f51b.png
+R100	res/drawable-nodpi/emoji_1f51c.png	lib/res/drawable-nodpi/emoji_1f51c.png
+R100	res/drawable-nodpi/emoji_1f51d.png	lib/res/drawable-nodpi/emoji_1f51d.png
+R100	res/drawable-nodpi/emoji_1f51e.png	lib/res/drawable-nodpi/emoji_1f51e.png
+R100	res/drawable-nodpi/emoji_1f51f.png	lib/res/drawable-nodpi/emoji_1f51f.png
+R100	res/drawable-nodpi/emoji_1f520.png	lib/res/drawable-nodpi/emoji_1f520.png
+R100	res/drawable-nodpi/emoji_1f521.png	lib/res/drawable-nodpi/emoji_1f521.png
+R100	res/drawable-nodpi/emoji_1f522.png	lib/res/drawable-nodpi/emoji_1f522.png
+R100	res/drawable-nodpi/emoji_1f523.png	lib/res/drawable-nodpi/emoji_1f523.png
+R100	res/drawable-nodpi/emoji_1f524.png	lib/res/drawable-nodpi/emoji_1f524.png
+R100	res/drawable-nodpi/emoji_1f525.png	lib/res/drawable-nodpi/emoji_1f525.png
+R100	res/drawable-nodpi/emoji_1f526.png	lib/res/drawable-nodpi/emoji_1f526.png
+R100	res/drawable-nodpi/emoji_1f527.png	lib/res/drawable-nodpi/emoji_1f527.png
+R100	res/drawable-nodpi/emoji_1f528.png	lib/res/drawable-nodpi/emoji_1f528.png
+R100	res/drawable-nodpi/emoji_1f529.png	lib/res/drawable-nodpi/emoji_1f529.png
+R100	res/drawable-nodpi/emoji_1f52a.png	lib/res/drawable-nodpi/emoji_1f52a.png
+R100	res/drawable-nodpi/emoji_1f52b.png	lib/res/drawable-nodpi/emoji_1f52b.png
+R100	res/drawable-nodpi/emoji_1f52c.png	lib/res/drawable-nodpi/emoji_1f52c.png
+R100	res/drawable-nodpi/emoji_1f52d.png	lib/res/drawable-nodpi/emoji_1f52d.png
+R100	res/drawable-nodpi/emoji_1f52e.png	lib/res/drawable-nodpi/emoji_1f52e.png
+R100	res/drawable-nodpi/emoji_1f52f.png	lib/res/drawable-nodpi/emoji_1f52f.png
+R100	res/drawable-nodpi/emoji_1f530.png	lib/res/drawable-nodpi/emoji_1f530.png
+R100	res/drawable-nodpi/emoji_1f531.png	lib/res/drawable-nodpi/emoji_1f531.png
+R100	res/drawable-nodpi/emoji_1f532.png	lib/res/drawable-nodpi/emoji_1f532.png
+R100	res/drawable-nodpi/emoji_1f533.png	lib/res/drawable-nodpi/emoji_1f533.png
+R100	res/drawable-nodpi/emoji_1f534.png	lib/res/drawable-nodpi/emoji_1f534.png
+R100	res/drawable-nodpi/emoji_1f535.png	lib/res/drawable-nodpi/emoji_1f535.png
+R100	res/drawable-nodpi/emoji_1f536.png	lib/res/drawable-nodpi/emoji_1f536.png
+R100	res/drawable-nodpi/emoji_1f537.png	lib/res/drawable-nodpi/emoji_1f537.png
+R100	res/drawable-nodpi/emoji_1f538.png	lib/res/drawable-nodpi/emoji_1f538.png
+R100	res/drawable-nodpi/emoji_1f539.png	lib/res/drawable-nodpi/emoji_1f539.png
+R100	res/drawable-nodpi/emoji_1f53a.png	lib/res/drawable-nodpi/emoji_1f53a.png
+R100	res/drawable-nodpi/emoji_1f53b.png	lib/res/drawable-nodpi/emoji_1f53b.png
+R100	res/drawable-nodpi/emoji_1f53c.png	lib/res/drawable-nodpi/emoji_1f53c.png
+R100	res/drawable-nodpi/emoji_1f53d.png	lib/res/drawable-nodpi/emoji_1f53d.png
+R100	res/drawable-nodpi/emoji_1f550.png	lib/res/drawable-nodpi/emoji_1f550.png
+R100	res/drawable-nodpi/emoji_1f551.png	lib/res/drawable-nodpi/emoji_1f551.png
+R100	res/drawable-nodpi/emoji_1f552.png	lib/res/drawable-nodpi/emoji_1f552.png
+R100	res/drawable-nodpi/emoji_1f553.png	lib/res/drawable-nodpi/emoji_1f553.png
+R100	res/drawable-nodpi/emoji_1f554.png	lib/res/drawable-nodpi/emoji_1f554.png
+R100	res/drawable-nodpi/emoji_1f555.png	lib/res/drawable-nodpi/emoji_1f555.png
+R100	res/drawable-nodpi/emoji_1f556.png	lib/res/drawable-nodpi/emoji_1f556.png
+R100	res/drawable-nodpi/emoji_1f557.png	lib/res/drawable-nodpi/emoji_1f557.png
+R100	res/drawable-nodpi/emoji_1f558.png	lib/res/drawable-nodpi/emoji_1f558.png
+R100	res/drawable-nodpi/emoji_1f559.png	lib/res/drawable-nodpi/emoji_1f559.png
+R100	res/drawable-nodpi/emoji_1f55a.png	lib/res/drawable-nodpi/emoji_1f55a.png
+R100	res/drawable-nodpi/emoji_1f55b.png	lib/res/drawable-nodpi/emoji_1f55b.png
+R100	res/drawable-nodpi/emoji_1f55c.png	lib/res/drawable-nodpi/emoji_1f55c.png
+R100	res/drawable-nodpi/emoji_1f55d.png	lib/res/drawable-nodpi/emoji_1f55d.png
+R100	res/drawable-nodpi/emoji_1f55e.png	lib/res/drawable-nodpi/emoji_1f55e.png
+R100	res/drawable-nodpi/emoji_1f55f.png	lib/res/drawable-nodpi/emoji_1f55f.png
+R100	res/drawable-nodpi/emoji_1f560.png	lib/res/drawable-nodpi/emoji_1f560.png
+R100	res/drawable-nodpi/emoji_1f561.png	lib/res/drawable-nodpi/emoji_1f561.png
+R100	res/drawable-nodpi/emoji_1f562.png	lib/res/drawable-nodpi/emoji_1f562.png
+R100	res/drawable-nodpi/emoji_1f563.png	lib/res/drawable-nodpi/emoji_1f563.png
+R100	res/drawable-nodpi/emoji_1f564.png	lib/res/drawable-nodpi/emoji_1f564.png
+R100	res/drawable-nodpi/emoji_1f565.png	lib/res/drawable-nodpi/emoji_1f565.png
+R100	res/drawable-nodpi/emoji_1f566.png	lib/res/drawable-nodpi/emoji_1f566.png
+R100	res/drawable-nodpi/emoji_1f567.png	lib/res/drawable-nodpi/emoji_1f567.png
+R100	res/drawable-nodpi/emoji_1f5fb.png	lib/res/drawable-nodpi/emoji_1f5fb.png
+R100	res/drawable-nodpi/emoji_1f5fc.png	lib/res/drawable-nodpi/emoji_1f5fc.png
+R100	res/drawable-nodpi/emoji_1f5fd.png	lib/res/drawable-nodpi/emoji_1f5fd.png
+R100	res/drawable-nodpi/emoji_1f5fe.png	lib/res/drawable-nodpi/emoji_1f5fe.png
+R100	res/drawable-nodpi/emoji_1f5ff.png	lib/res/drawable-nodpi/emoji_1f5ff.png
+R100	res/drawable-nodpi/emoji_1f600.png	lib/res/drawable-nodpi/emoji_1f600.png
+R100	res/drawable-nodpi/emoji_1f601.png	lib/res/drawable-nodpi/emoji_1f601.png
+R100	res/drawable-nodpi/emoji_1f602.png	lib/res/drawable-nodpi/emoji_1f602.png
+R100	res/drawable-nodpi/emoji_1f603.png	lib/res/drawable-nodpi/emoji_1f603.png
+R100	res/drawable-nodpi/emoji_1f604.png	lib/res/drawable-nodpi/emoji_1f604.png
+R100	res/drawable-nodpi/emoji_1f605.png	lib/res/drawable-nodpi/emoji_1f605.png
+R100	res/drawable-nodpi/emoji_1f606.png	lib/res/drawable-nodpi/emoji_1f606.png
+R100	res/drawable-nodpi/emoji_1f607.png	lib/res/drawable-nodpi/emoji_1f607.png
+R100	res/drawable-nodpi/emoji_1f608.png	lib/res/drawable-nodpi/emoji_1f608.png
+R100	res/drawable-nodpi/emoji_1f609.png	lib/res/drawable-nodpi/emoji_1f609.png
+R100	res/drawable-nodpi/emoji_1f60a.png	lib/res/drawable-nodpi/emoji_1f60a.png
+R100	res/drawable-nodpi/emoji_1f60b.png	lib/res/drawable-nodpi/emoji_1f60b.png
+R100	res/drawable-nodpi/emoji_1f60c.png	lib/res/drawable-nodpi/emoji_1f60c.png
+R100	res/drawable-nodpi/emoji_1f60d.png	lib/res/drawable-nodpi/emoji_1f60d.png
+R100	res/drawable-nodpi/emoji_1f60e.png	lib/res/drawable-nodpi/emoji_1f60e.png
+R100	res/drawable-nodpi/emoji_1f60f.png	lib/res/drawable-nodpi/emoji_1f60f.png
+R100	res/drawable-nodpi/emoji_1f610.png	lib/res/drawable-nodpi/emoji_1f610.png
+R100	res/drawable-nodpi/emoji_1f611.png	lib/res/drawable-nodpi/emoji_1f611.png
+R100	res/drawable-nodpi/emoji_1f612.png	lib/res/drawable-nodpi/emoji_1f612.png
+R100	res/drawable-nodpi/emoji_1f613.png	lib/res/drawable-nodpi/emoji_1f613.png
+R100	res/drawable-nodpi/emoji_1f614.png	lib/res/drawable-nodpi/emoji_1f614.png
+R100	res/drawable-nodpi/emoji_1f615.png	lib/res/drawable-nodpi/emoji_1f615.png
+R100	res/drawable-nodpi/emoji_1f616.png	lib/res/drawable-nodpi/emoji_1f616.png
+R100	res/drawable-nodpi/emoji_1f617.png	lib/res/drawable-nodpi/emoji_1f617.png
+R100	res/drawable-nodpi/emoji_1f618.png	lib/res/drawable-nodpi/emoji_1f618.png
+R100	res/drawable-nodpi/emoji_1f619.png	lib/res/drawable-nodpi/emoji_1f619.png
+R100	res/drawable-nodpi/emoji_1f61a.png	lib/res/drawable-nodpi/emoji_1f61a.png
+R100	res/drawable-nodpi/emoji_1f61b.png	lib/res/drawable-nodpi/emoji_1f61b.png
+R100	res/drawable-nodpi/emoji_1f61c.png	lib/res/drawable-nodpi/emoji_1f61c.png
+R100	res/drawable-nodpi/emoji_1f61d.png	lib/res/drawable-nodpi/emoji_1f61d.png
+R100	res/drawable-nodpi/emoji_1f61e.png	lib/res/drawable-nodpi/emoji_1f61e.png
+R100	res/drawable-nodpi/emoji_1f61f.png	lib/res/drawable-nodpi/emoji_1f61f.png
+R100	res/drawable-nodpi/emoji_1f620.png	lib/res/drawable-nodpi/emoji_1f620.png
+R100	res/drawable-nodpi/emoji_1f621.png	lib/res/drawable-nodpi/emoji_1f621.png
+R100	res/drawable-nodpi/emoji_1f622.png	lib/res/drawable-nodpi/emoji_1f622.png
+R100	res/drawable-nodpi/emoji_1f623.png	lib/res/drawable-nodpi/emoji_1f623.png
+R100	res/drawable-nodpi/emoji_1f624.png	lib/res/drawable-nodpi/emoji_1f624.png
+R100	res/drawable-nodpi/emoji_1f625.png	lib/res/drawable-nodpi/emoji_1f625.png
+R100	res/drawable-nodpi/emoji_1f626.png	lib/res/drawable-nodpi/emoji_1f626.png
+R100	res/drawable-nodpi/emoji_1f627.png	lib/res/drawable-nodpi/emoji_1f627.png
+R100	res/drawable-nodpi/emoji_1f628.png	lib/res/drawable-nodpi/emoji_1f628.png
+R100	res/drawable-nodpi/emoji_1f629.png	lib/res/drawable-nodpi/emoji_1f629.png
+R100	res/drawable-nodpi/emoji_1f62a.png	lib/res/drawable-nodpi/emoji_1f62a.png
+R100	res/drawable-nodpi/emoji_1f62b.png	lib/res/drawable-nodpi/emoji_1f62b.png
+R100	res/drawable-nodpi/emoji_1f62c.png	lib/res/drawable-nodpi/emoji_1f62c.png
+R100	res/drawable-nodpi/emoji_1f62d.png	lib/res/drawable-nodpi/emoji_1f62d.png
+R100	res/drawable-nodpi/emoji_1f62e.png	lib/res/drawable-nodpi/emoji_1f62e.png
+R100	res/drawable-nodpi/emoji_1f62f.png	lib/res/drawable-nodpi/emoji_1f62f.png
+R100	res/drawable-nodpi/emoji_1f630.png	lib/res/drawable-nodpi/emoji_1f630.png
+R100	res/drawable-nodpi/emoji_1f631.png	lib/res/drawable-nodpi/emoji_1f631.png
+R100	res/drawable-nodpi/emoji_1f632.png	lib/res/drawable-nodpi/emoji_1f632.png
+R100	res/drawable-nodpi/emoji_1f633.png	lib/res/drawable-nodpi/emoji_1f633.png
+R100	res/drawable-nodpi/emoji_1f634.png	lib/res/drawable-nodpi/emoji_1f634.png
+R100	res/drawable-nodpi/emoji_1f635.png	lib/res/drawable-nodpi/emoji_1f635.png
+R100	res/drawable-nodpi/emoji_1f636.png	lib/res/drawable-nodpi/emoji_1f636.png
+R100	res/drawable-nodpi/emoji_1f637.png	lib/res/drawable-nodpi/emoji_1f637.png
+R100	res/drawable-nodpi/emoji_1f638.png	lib/res/drawable-nodpi/emoji_1f638.png
+R100	res/drawable-nodpi/emoji_1f639.png	lib/res/drawable-nodpi/emoji_1f639.png
+R100	res/drawable-nodpi/emoji_1f63a.png	lib/res/drawable-nodpi/emoji_1f63a.png
+R100	res/drawable-nodpi/emoji_1f63b.png	lib/res/drawable-nodpi/emoji_1f63b.png
+R100	res/drawable-nodpi/emoji_1f63c.png	lib/res/drawable-nodpi/emoji_1f63c.png
+R100	res/drawable-nodpi/emoji_1f63d.png	lib/res/drawable-nodpi/emoji_1f63d.png
+R100	res/drawable-nodpi/emoji_1f63e.png	lib/res/drawable-nodpi/emoji_1f63e.png
+R100	res/drawable-nodpi/emoji_1f63f.png	lib/res/drawable-nodpi/emoji_1f63f.png
+R100	res/drawable-nodpi/emoji_1f640.png	lib/res/drawable-nodpi/emoji_1f640.png
+R100	res/drawable-nodpi/emoji_1f645.png	lib/res/drawable-nodpi/emoji_1f645.png
+R100	res/drawable-nodpi/emoji_1f646.png	lib/res/drawable-nodpi/emoji_1f646.png
+R100	res/drawable-nodpi/emoji_1f647.png	lib/res/drawable-nodpi/emoji_1f647.png
+R100	res/drawable-nodpi/emoji_1f648.png	lib/res/drawable-nodpi/emoji_1f648.png
+R100	res/drawable-nodpi/emoji_1f649.png	lib/res/drawable-nodpi/emoji_1f649.png
+R100	res/drawable-nodpi/emoji_1f64a.png	lib/res/drawable-nodpi/emoji_1f64a.png
+R100	res/drawable-nodpi/emoji_1f64b.png	lib/res/drawable-nodpi/emoji_1f64b.png
+R100	res/drawable-nodpi/emoji_1f64c.png	lib/res/drawable-nodpi/emoji_1f64c.png
+R100	res/drawable-nodpi/emoji_1f64d.png	lib/res/drawable-nodpi/emoji_1f64d.png
+R100	res/drawable-nodpi/emoji_1f64e.png	lib/res/drawable-nodpi/emoji_1f64e.png
+R100	res/drawable-nodpi/emoji_1f64f.png	lib/res/drawable-nodpi/emoji_1f64f.png
+R100	res/drawable-nodpi/emoji_1f680.png	lib/res/drawable-nodpi/emoji_1f680.png
+R100	res/drawable-nodpi/emoji_1f681.png	lib/res/drawable-nodpi/emoji_1f681.png
+R100	res/drawable-nodpi/emoji_1f682.png	lib/res/drawable-nodpi/emoji_1f682.png
+R100	res/drawable-nodpi/emoji_1f683.png	lib/res/drawable-nodpi/emoji_1f683.png
+R100	res/drawable-nodpi/emoji_1f684.png	lib/res/drawable-nodpi/emoji_1f684.png
+R100	res/drawable-nodpi/emoji_1f685.png	lib/res/drawable-nodpi/emoji_1f685.png
+R100	res/drawable-nodpi/emoji_1f686.png	lib/res/drawable-nodpi/emoji_1f686.png
+R100	res/drawable-nodpi/emoji_1f687.png	lib/res/drawable-nodpi/emoji_1f687.png
+R100	res/drawable-nodpi/emoji_1f688.png	lib/res/drawable-nodpi/emoji_1f688.png
+R100	res/drawable-nodpi/emoji_1f689.png	lib/res/drawable-nodpi/emoji_1f689.png
+R100	res/drawable-nodpi/emoji_1f68a.png	lib/res/drawable-nodpi/emoji_1f68a.png
+R100	res/drawable-nodpi/emoji_1f68b.png	lib/res/drawable-nodpi/emoji_1f68b.png
+R100	res/drawable-nodpi/emoji_1f68c.png	lib/res/drawable-nodpi/emoji_1f68c.png
+R100	res/drawable-nodpi/emoji_1f68d.png	lib/res/drawable-nodpi/emoji_1f68d.png
+R100	res/drawable-nodpi/emoji_1f68e.png	lib/res/drawable-nodpi/emoji_1f68e.png
+R100	res/drawable-nodpi/emoji_1f68f.png	lib/res/drawable-nodpi/emoji_1f68f.png
+R100	res/drawable-nodpi/emoji_1f690.png	lib/res/drawable-nodpi/emoji_1f690.png
+R100	res/drawable-nodpi/emoji_1f691.png	lib/res/drawable-nodpi/emoji_1f691.png
+R100	res/drawable-nodpi/emoji_1f692.png	lib/res/drawable-nodpi/emoji_1f692.png
+R100	res/drawable-nodpi/emoji_1f693.png	lib/res/drawable-nodpi/emoji_1f693.png
+R100	res/drawable-nodpi/emoji_1f694.png	lib/res/drawable-nodpi/emoji_1f694.png
+R100	res/drawable-nodpi/emoji_1f695.png	lib/res/drawable-nodpi/emoji_1f695.png
+R100	res/drawable-nodpi/emoji_1f696.png	lib/res/drawable-nodpi/emoji_1f696.png
+R100	res/drawable-nodpi/emoji_1f697.png	lib/res/drawable-nodpi/emoji_1f697.png
+R100	res/drawable-nodpi/emoji_1f698.png	lib/res/drawable-nodpi/emoji_1f698.png
+R100	res/drawable-nodpi/emoji_1f699.png	lib/res/drawable-nodpi/emoji_1f699.png
+R100	res/drawable-nodpi/emoji_1f69a.png	lib/res/drawable-nodpi/emoji_1f69a.png
+R100	res/drawable-nodpi/emoji_1f69b.png	lib/res/drawable-nodpi/emoji_1f69b.png
+R100	res/drawable-nodpi/emoji_1f69c.png	lib/res/drawable-nodpi/emoji_1f69c.png
+R100	res/drawable-nodpi/emoji_1f69d.png	lib/res/drawable-nodpi/emoji_1f69d.png
+R100	res/drawable-nodpi/emoji_1f69e.png	lib/res/drawable-nodpi/emoji_1f69e.png
+R100	res/drawable-nodpi/emoji_1f69f.png	lib/res/drawable-nodpi/emoji_1f69f.png
+R100	res/drawable-nodpi/emoji_1f6a0.png	lib/res/drawable-nodpi/emoji_1f6a0.png
+R100	res/drawable-nodpi/emoji_1f6a1.png	lib/res/drawable-nodpi/emoji_1f6a1.png
+R100	res/drawable-nodpi/emoji_1f6a2.png	lib/res/drawable-nodpi/emoji_1f6a2.png
+R100	res/drawable-nodpi/emoji_1f6a3.png	lib/res/drawable-nodpi/emoji_1f6a3.png
+R100	res/drawable-nodpi/emoji_1f6a4.png	lib/res/drawable-nodpi/emoji_1f6a4.png
+R100	res/drawable-nodpi/emoji_1f6a5.png	lib/res/drawable-nodpi/emoji_1f6a5.png
+R100	res/drawable-nodpi/emoji_1f6a6.png	lib/res/drawable-nodpi/emoji_1f6a6.png
+R100	res/drawable-nodpi/emoji_1f6a7.png	lib/res/drawable-nodpi/emoji_1f6a7.png
+R100	res/drawable-nodpi/emoji_1f6a8.png	lib/res/drawable-nodpi/emoji_1f6a8.png
+R100	res/drawable-nodpi/emoji_1f6a9.png	lib/res/drawable-nodpi/emoji_1f6a9.png
+R100	res/drawable-nodpi/emoji_1f6aa.png	lib/res/drawable-nodpi/emoji_1f6aa.png
+R100	res/drawable-nodpi/emoji_1f6ab.png	lib/res/drawable-nodpi/emoji_1f6ab.png
+R100	res/drawable-nodpi/emoji_1f6ac.png	lib/res/drawable-nodpi/emoji_1f6ac.png
+R100	res/drawable-nodpi/emoji_1f6ad.png	lib/res/drawable-nodpi/emoji_1f6ad.png
+R100	res/drawable-nodpi/emoji_1f6ae.png	lib/res/drawable-nodpi/emoji_1f6ae.png
+R100	res/drawable-nodpi/emoji_1f6af.png	lib/res/drawable-nodpi/emoji_1f6af.png
+R100	res/drawable-nodpi/emoji_1f6b0.png	lib/res/drawable-nodpi/emoji_1f6b0.png
+R100	res/drawable-nodpi/emoji_1f6b1.png	lib/res/drawable-nodpi/emoji_1f6b1.png
+R100	res/drawable-nodpi/emoji_1f6b2.png	lib/res/drawable-nodpi/emoji_1f6b2.png
+R100	res/drawable-nodpi/emoji_1f6b3.png	lib/res/drawable-nodpi/emoji_1f6b3.png
+R100	res/drawable-nodpi/emoji_1f6b4.png	lib/res/drawable-nodpi/emoji_1f6b4.png
+R100	res/drawable-nodpi/emoji_1f6b5.png	lib/res/drawable-nodpi/emoji_1f6b5.png
+R100	res/drawable-nodpi/emoji_1f6b6.png	lib/res/drawable-nodpi/emoji_1f6b6.png
+R100	res/drawable-nodpi/emoji_1f6b7.png	lib/res/drawable-nodpi/emoji_1f6b7.png
+R100	res/drawable-nodpi/emoji_1f6b8.png	lib/res/drawable-nodpi/emoji_1f6b8.png
+R100	res/drawable-nodpi/emoji_1f6b9.png	lib/res/drawable-nodpi/emoji_1f6b9.png
+R100	res/drawable-nodpi/emoji_1f6ba.png	lib/res/drawable-nodpi/emoji_1f6ba.png
+R100	res/drawable-nodpi/emoji_1f6bb.png	lib/res/drawable-nodpi/emoji_1f6bb.png
+R100	res/drawable-nodpi/emoji_1f6bc.png	lib/res/drawable-nodpi/emoji_1f6bc.png
+R100	res/drawable-nodpi/emoji_1f6bd.png	lib/res/drawable-nodpi/emoji_1f6bd.png
+R100	res/drawable-nodpi/emoji_1f6be.png	lib/res/drawable-nodpi/emoji_1f6be.png
+R100	res/drawable-nodpi/emoji_1f6bf.png	lib/res/drawable-nodpi/emoji_1f6bf.png
+R100	res/drawable-nodpi/emoji_1f6c0.png	lib/res/drawable-nodpi/emoji_1f6c0.png
+R100	res/drawable-nodpi/emoji_1f6c1.png	lib/res/drawable-nodpi/emoji_1f6c1.png
+R100	res/drawable-nodpi/emoji_1f6c2.png	lib/res/drawable-nodpi/emoji_1f6c2.png
+R100	res/drawable-nodpi/emoji_1f6c3.png	lib/res/drawable-nodpi/emoji_1f6c3.png
+R100	res/drawable-nodpi/emoji_1f6c4.png	lib/res/drawable-nodpi/emoji_1f6c4.png
+R100	res/drawable-nodpi/emoji_1f6c5.png	lib/res/drawable-nodpi/emoji_1f6c5.png
+R100	res/drawable-nodpi/emoji_203c.png	lib/res/drawable-nodpi/emoji_203c.png
+R100	res/drawable-nodpi/emoji_2049.png	lib/res/drawable-nodpi/emoji_2049.png
+R100	res/drawable-nodpi/emoji_2122.png	lib/res/drawable-nodpi/emoji_2122.png
+R100	res/drawable-nodpi/emoji_2139.png	lib/res/drawable-nodpi/emoji_2139.png
+R100	res/drawable-nodpi/emoji_2194.png	lib/res/drawable-nodpi/emoji_2194.png
+R100	res/drawable-nodpi/emoji_2195.png	lib/res/drawable-nodpi/emoji_2195.png
+R100	res/drawable-nodpi/emoji_2196.png	lib/res/drawable-nodpi/emoji_2196.png
+R100	res/drawable-nodpi/emoji_2197.png	lib/res/drawable-nodpi/emoji_2197.png
+R100	res/drawable-nodpi/emoji_2198.png	lib/res/drawable-nodpi/emoji_2198.png
+R100	res/drawable-nodpi/emoji_2199.png	lib/res/drawable-nodpi/emoji_2199.png
+R100	res/drawable-nodpi/emoji_21a9.png	lib/res/drawable-nodpi/emoji_21a9.png
+R100	res/drawable-nodpi/emoji_21aa.png	lib/res/drawable-nodpi/emoji_21aa.png
+R100	res/drawable-nodpi/emoji_231a.png	lib/res/drawable-nodpi/emoji_231a.png
+R100	res/drawable-nodpi/emoji_231b.png	lib/res/drawable-nodpi/emoji_231b.png
+R100	res/drawable-nodpi/emoji_23e9.png	lib/res/drawable-nodpi/emoji_23e9.png
+R100	res/drawable-nodpi/emoji_23ea.png	lib/res/drawable-nodpi/emoji_23ea.png
+R100	res/drawable-nodpi/emoji_23eb.png	lib/res/drawable-nodpi/emoji_23eb.png
+R100	res/drawable-nodpi/emoji_23ec.png	lib/res/drawable-nodpi/emoji_23ec.png
+R100	res/drawable-nodpi/emoji_23f0.png	lib/res/drawable-nodpi/emoji_23f0.png
+R100	res/drawable-nodpi/emoji_23f3.png	lib/res/drawable-nodpi/emoji_23f3.png
+R100	res/drawable-nodpi/emoji_24c2.png	lib/res/drawable-nodpi/emoji_24c2.png
+R100	res/drawable-nodpi/emoji_25aa.png	lib/res/drawable-nodpi/emoji_25aa.png
+R100	res/drawable-nodpi/emoji_25ab.png	lib/res/drawable-nodpi/emoji_25ab.png
+R100	res/drawable-nodpi/emoji_25b6.png	lib/res/drawable-nodpi/emoji_25b6.png
+R100	res/drawable-nodpi/emoji_25c0.png	lib/res/drawable-nodpi/emoji_25c0.png
+R100	res/drawable-nodpi/emoji_25fb.png	lib/res/drawable-nodpi/emoji_25fb.png
+R100	res/drawable-nodpi/emoji_25fc.png	lib/res/drawable-nodpi/emoji_25fc.png
+R100	res/drawable-nodpi/emoji_25fd.png	lib/res/drawable-nodpi/emoji_25fd.png
+R100	res/drawable-nodpi/emoji_25fe.png	lib/res/drawable-nodpi/emoji_25fe.png
+R100	res/drawable-nodpi/emoji_2600.png	lib/res/drawable-nodpi/emoji_2600.png
+R100	res/drawable-nodpi/emoji_2601.png	lib/res/drawable-nodpi/emoji_2601.png
+R100	res/drawable-nodpi/emoji_260e.png	lib/res/drawable-nodpi/emoji_260e.png
+R100	res/drawable-nodpi/emoji_2611.png	lib/res/drawable-nodpi/emoji_2611.png
+R100	res/drawable-nodpi/emoji_2614.png	lib/res/drawable-nodpi/emoji_2614.png
+R100	res/drawable-nodpi/emoji_2615.png	lib/res/drawable-nodpi/emoji_2615.png
+R100	res/drawable-nodpi/emoji_261d.png	lib/res/drawable-nodpi/emoji_261d.png
+R100	res/drawable-nodpi/emoji_263a.png	lib/res/drawable-nodpi/emoji_263a.png
+R100	res/drawable-nodpi/emoji_2648.png	lib/res/drawable-nodpi/emoji_2648.png
+R100	res/drawable-nodpi/emoji_2649.png	lib/res/drawable-nodpi/emoji_2649.png
+R100	res/drawable-nodpi/emoji_264a.png	lib/res/drawable-nodpi/emoji_264a.png
+R100	res/drawable-nodpi/emoji_264b.png	lib/res/drawable-nodpi/emoji_264b.png
+R100	res/drawable-nodpi/emoji_264c.png	lib/res/drawable-nodpi/emoji_264c.png
+R100	res/drawable-nodpi/emoji_264d.png	lib/res/drawable-nodpi/emoji_264d.png
+R100	res/drawable-nodpi/emoji_264e.png	lib/res/drawable-nodpi/emoji_264e.png
+R100	res/drawable-nodpi/emoji_264f.png	lib/res/drawable-nodpi/emoji_264f.png
+R100	res/drawable-nodpi/emoji_2650.png	lib/res/drawable-nodpi/emoji_2650.png
+R100	res/drawable-nodpi/emoji_2651.png	lib/res/drawable-nodpi/emoji_2651.png
+R100	res/drawable-nodpi/emoji_2652.png	lib/res/drawable-nodpi/emoji_2652.png
+R100	res/drawable-nodpi/emoji_2653.png	lib/res/drawable-nodpi/emoji_2653.png
+R100	res/drawable-nodpi/emoji_2660.png	lib/res/drawable-nodpi/emoji_2660.png
+R100	res/drawable-nodpi/emoji_2663.png	lib/res/drawable-nodpi/emoji_2663.png
+R100	res/drawable-nodpi/emoji_2665.png	lib/res/drawable-nodpi/emoji_2665.png
+R100	res/drawable-nodpi/emoji_2666.png	lib/res/drawable-nodpi/emoji_2666.png
+R100	res/drawable-nodpi/emoji_2668.png	lib/res/drawable-nodpi/emoji_2668.png
+R100	res/drawable-nodpi/emoji_267b.png	lib/res/drawable-nodpi/emoji_267b.png
+R100	res/drawable-nodpi/emoji_267f.png	lib/res/drawable-nodpi/emoji_267f.png
+R100	res/drawable-nodpi/emoji_2693.png	lib/res/drawable-nodpi/emoji_2693.png
+R100	res/drawable-nodpi/emoji_26a0.png	lib/res/drawable-nodpi/emoji_26a0.png
+R100	res/drawable-nodpi/emoji_26a1.png	lib/res/drawable-nodpi/emoji_26a1.png
+R100	res/drawable-nodpi/emoji_26aa.png	lib/res/drawable-nodpi/emoji_26aa.png
+R100	res/drawable-nodpi/emoji_26ab.png	lib/res/drawable-nodpi/emoji_26ab.png
+R100	res/drawable-nodpi/emoji_26bd.png	lib/res/drawable-nodpi/emoji_26bd.png
+R100	res/drawable-nodpi/emoji_26be.png	lib/res/drawable-nodpi/emoji_26be.png
+R100	res/drawable-nodpi/emoji_26c4.png	lib/res/drawable-nodpi/emoji_26c4.png
+R100	res/drawable-nodpi/emoji_26c5.png	lib/res/drawable-nodpi/emoji_26c5.png
+R100	res/drawable-nodpi/emoji_26ce.png	lib/res/drawable-nodpi/emoji_26ce.png
+R100	res/drawable-nodpi/emoji_26d4.png	lib/res/drawable-nodpi/emoji_26d4.png
+R100	res/drawable-nodpi/emoji_26ea.png	lib/res/drawable-nodpi/emoji_26ea.png
+R100	res/drawable-nodpi/emoji_26f2.png	lib/res/drawable-nodpi/emoji_26f2.png
+R100	res/drawable-nodpi/emoji_26f3.png	lib/res/drawable-nodpi/emoji_26f3.png
+R100	res/drawable-nodpi/emoji_26f5.png	lib/res/drawable-nodpi/emoji_26f5.png
+R100	res/drawable-nodpi/emoji_26fa.png	lib/res/drawable-nodpi/emoji_26fa.png
+R100	res/drawable-nodpi/emoji_26fd.png	lib/res/drawable-nodpi/emoji_26fd.png
+R100	res/drawable-nodpi/emoji_2702.png	lib/res/drawable-nodpi/emoji_2702.png
+R100	res/drawable-nodpi/emoji_2705.png	lib/res/drawable-nodpi/emoji_2705.png
+R100	res/drawable-nodpi/emoji_2708.png	lib/res/drawable-nodpi/emoji_2708.png
+R100	res/drawable-nodpi/emoji_2709.png	lib/res/drawable-nodpi/emoji_2709.png
+R100	res/drawable-nodpi/emoji_270a.png	lib/res/drawable-nodpi/emoji_270a.png
+R100	res/drawable-nodpi/emoji_270b.png	lib/res/drawable-nodpi/emoji_270b.png
+R100	res/drawable-nodpi/emoji_270c.png	lib/res/drawable-nodpi/emoji_270c.png
+R100	res/drawable-nodpi/emoji_270f.png	lib/res/drawable-nodpi/emoji_270f.png
+R100	res/drawable-nodpi/emoji_2712.png	lib/res/drawable-nodpi/emoji_2712.png
+R100	res/drawable-nodpi/emoji_2714.png	lib/res/drawable-nodpi/emoji_2714.png
+R100	res/drawable-nodpi/emoji_2716.png	lib/res/drawable-nodpi/emoji_2716.png
+R100	res/drawable-nodpi/emoji_2728.png	lib/res/drawable-nodpi/emoji_2728.png
+R100	res/drawable-nodpi/emoji_2733.png	lib/res/drawable-nodpi/emoji_2733.png
+R100	res/drawable-nodpi/emoji_2734.png	lib/res/drawable-nodpi/emoji_2734.png
+R100	res/drawable-nodpi/emoji_2744.png	lib/res/drawable-nodpi/emoji_2744.png
+R100	res/drawable-nodpi/emoji_2747.png	lib/res/drawable-nodpi/emoji_2747.png
+R100	res/drawable-nodpi/emoji_274c.png	lib/res/drawable-nodpi/emoji_274c.png
+R100	res/drawable-nodpi/emoji_274e.png	lib/res/drawable-nodpi/emoji_274e.png
+R100	res/drawable-nodpi/emoji_2753.png	lib/res/drawable-nodpi/emoji_2753.png
+R100	res/drawable-nodpi/emoji_2754.png	lib/res/drawable-nodpi/emoji_2754.png
+R100	res/drawable-nodpi/emoji_2755.png	lib/res/drawable-nodpi/emoji_2755.png
+R100	res/drawable-nodpi/emoji_2757.png	lib/res/drawable-nodpi/emoji_2757.png
+R100	res/drawable-nodpi/emoji_2764.png	lib/res/drawable-nodpi/emoji_2764.png
+R100	res/drawable-nodpi/emoji_2795.png	lib/res/drawable-nodpi/emoji_2795.png
+R100	res/drawable-nodpi/emoji_2796.png	lib/res/drawable-nodpi/emoji_2796.png
+R100	res/drawable-nodpi/emoji_2797.png	lib/res/drawable-nodpi/emoji_2797.png
+R100	res/drawable-nodpi/emoji_27a1.png	lib/res/drawable-nodpi/emoji_27a1.png
+R100	res/drawable-nodpi/emoji_27b0.png	lib/res/drawable-nodpi/emoji_27b0.png
+R100	res/drawable-nodpi/emoji_27bf.png	lib/res/drawable-nodpi/emoji_27bf.png
+R100	res/drawable-nodpi/emoji_2934.png	lib/res/drawable-nodpi/emoji_2934.png
+R100	res/drawable-nodpi/emoji_2935.png	lib/res/drawable-nodpi/emoji_2935.png
+R100	res/drawable-nodpi/emoji_2b05.png	lib/res/drawable-nodpi/emoji_2b05.png
+R100	res/drawable-nodpi/emoji_2b06.png	lib/res/drawable-nodpi/emoji_2b06.png
+R100	res/drawable-nodpi/emoji_2b07.png	lib/res/drawable-nodpi/emoji_2b07.png
+R100	res/drawable-nodpi/emoji_2b1b.png	lib/res/drawable-nodpi/emoji_2b1b.png
+R100	res/drawable-nodpi/emoji_2b1c.png	lib/res/drawable-nodpi/emoji_2b1c.png
+R100	res/drawable-nodpi/emoji_2b50.png	lib/res/drawable-nodpi/emoji_2b50.png
+R100	res/drawable-nodpi/emoji_2b55.png	lib/res/drawable-nodpi/emoji_2b55.png
+R100	res/drawable-nodpi/emoji_3030.png	lib/res/drawable-nodpi/emoji_3030.png
+R100	res/drawable-nodpi/emoji_303d.png	lib/res/drawable-nodpi/emoji_303d.png
+R100	res/drawable-nodpi/emoji_3297.png	lib/res/drawable-nodpi/emoji_3297.png
+R100	res/drawable-nodpi/emoji_3299.png	lib/res/drawable-nodpi/emoji_3299.png
+R100	res/drawable-xhdpi/ic_emoji_nature_light_activated.png	lib/res/drawable-xhdpi/ic_emoji_nature_light_activated.png
+R100	res/drawable-xhdpi/ic_emoji_nature_light_normal.png	lib/res/drawable-xhdpi/ic_emoji_nature_light_normal.png
+R100	res/drawable-xhdpi/ic_emoji_objects_light_activated.png	lib/res/drawable-xhdpi/ic_emoji_objects_light_activated.png
+R100	res/drawable-xhdpi/ic_emoji_objects_light_normal.png	lib/res/drawable-xhdpi/ic_emoji_objects_light_normal.png
+R100	res/drawable-xhdpi/ic_emoji_people_light_activated.png	lib/res/drawable-xhdpi/ic_emoji_people_light_activated.png
+R100	res/drawable-xhdpi/ic_emoji_people_light_normal.png	lib/res/drawable-xhdpi/ic_emoji_people_light_normal.png
+R100	res/drawable-xhdpi/ic_emoji_places_light_activated.png	lib/res/drawable-xhdpi/ic_emoji_places_light_activated.png
+R100	res/drawable-xhdpi/ic_emoji_places_light_normal.png	lib/res/drawable-xhdpi/ic_emoji_places_light_normal.png
+R100	res/drawable-xhdpi/ic_emoji_recent_light_activated.png	lib/res/drawable-xhdpi/ic_emoji_recent_light_activated.png
+R100	res/drawable-xhdpi/ic_emoji_recent_light_normal.png	lib/res/drawable-xhdpi/ic_emoji_recent_light_normal.png
+R100	res/drawable-xhdpi/ic_emoji_symbols_light_activated.png	lib/res/drawable-xhdpi/ic_emoji_symbols_light_activated.png
+R100	res/drawable-xhdpi/ic_emoji_symbols_light_normal.png	lib/res/drawable-xhdpi/ic_emoji_symbols_light_normal.png
+R100	res/drawable-xhdpi/ic_launcher.png	lib/res/drawable-xhdpi/ic_launcher.png
+R100	res/drawable-xhdpi/keyboard_background_holo.9.png	lib/res/drawable-xhdpi/keyboard_background_holo.9.png
+R100	res/drawable-xhdpi/orca_attach_camera_normal.png	lib/res/drawable-xhdpi/orca_attach_camera_normal.png
+R100	res/drawable-xhdpi/orca_attach_camera_pressed.png	lib/res/drawable-xhdpi/orca_attach_camera_pressed.png
+R100	res/drawable-xhdpi/orca_attach_location_normal.png	lib/res/drawable-xhdpi/orca_attach_location_normal.png
+R100	res/drawable-xhdpi/orca_attach_location_pressed.png	lib/res/drawable-xhdpi/orca_attach_location_pressed.png
+R100	res/drawable-xhdpi/orca_attach_photo_normal.png	lib/res/drawable-xhdpi/orca_attach_photo_normal.png
+R100	res/drawable-xhdpi/orca_attach_photo_pressed.png	lib/res/drawable-xhdpi/orca_attach_photo_pressed.png
+R100	res/drawable-xhdpi/orca_attachments_arrow.png	lib/res/drawable-xhdpi/orca_attachments_arrow.png
+R100	res/drawable-xhdpi/orca_attachments_arrow_reversed.png	lib/res/drawable-xhdpi/orca_attachments_arrow_reversed.png
+R100	res/drawable-xhdpi/orca_composer_divider_horizontal.9.png	lib/res/drawable-xhdpi/orca_composer_divider_horizontal.9.png
+R100	res/drawable-xhdpi/orca_composer_divider_vertical.9.png	lib/res/drawable-xhdpi/orca_composer_divider_vertical.9.png
+R100	res/drawable-xhdpi/orca_composer_popup_active_normal.png	lib/res/drawable-xhdpi/orca_composer_popup_active_normal.png
+R100	res/drawable-xhdpi/orca_composer_popup_active_pressed.png	lib/res/drawable-xhdpi/orca_composer_popup_active_pressed.png
+R100	res/drawable-xhdpi/orca_composer_popup_normal.png	lib/res/drawable-xhdpi/orca_composer_popup_normal.png
+R100	res/drawable-xhdpi/orca_composer_popup_pressed.png	lib/res/drawable-xhdpi/orca_composer_popup_pressed.png
+R100	res/drawable-xhdpi/orca_composer_tab.9.png	lib/res/drawable-xhdpi/orca_composer_tab.9.png
+R100	res/drawable-xhdpi/orca_composer_tab_active.9.png	lib/res/drawable-xhdpi/orca_composer_tab_active.9.png
+R100	res/drawable-xhdpi/orca_composer_tab_dark.9.png	lib/res/drawable-xhdpi/orca_composer_tab_dark.9.png
+R100	res/drawable-xhdpi/orca_composer_tab_pressed.9.png	lib/res/drawable-xhdpi/orca_composer_tab_pressed.9.png
+R100	res/drawable-xhdpi/orca_composer_top_divider.9.png	lib/res/drawable-xhdpi/orca_composer_top_divider.9.png
+R100	res/drawable-xhdpi/orca_emoji_backspace_back_normal.png	lib/res/drawable-xhdpi/orca_emoji_backspace_back_normal.png
+R100	res/drawable-xhdpi/orca_emoji_backspace_front_normal.png	lib/res/drawable-xhdpi/orca_emoji_backspace_front_normal.png
+R100	res/drawable-xhdpi/orca_emoji_backspace_front_pressed.png	lib/res/drawable-xhdpi/orca_emoji_backspace_front_pressed.png
+R100	res/drawable-xhdpi/orca_emoji_category_cars.png	lib/res/drawable-xhdpi/orca_emoji_category_cars.png
+R100	res/drawable-xhdpi/orca_emoji_category_nature.png	lib/res/drawable-xhdpi/orca_emoji_category_nature.png
+R100	res/drawable-xhdpi/orca_emoji_category_objects.png	lib/res/drawable-xhdpi/orca_emoji_category_objects.png
+R100	res/drawable-xhdpi/orca_emoji_category_people.png	lib/res/drawable-xhdpi/orca_emoji_category_people.png
+R100	res/drawable-xhdpi/orca_emoji_category_punctuation.png	lib/res/drawable-xhdpi/orca_emoji_category_punctuation.png
+R100	res/drawable-xhdpi/orca_emoji_more_back_normal.png	lib/res/drawable-xhdpi/orca_emoji_more_back_normal.png
+R100	res/drawable-xhdpi/orca_emoji_more_front_normal.png	lib/res/drawable-xhdpi/orca_emoji_more_front_normal.png
+R100	res/drawable-xhdpi/orca_emoji_more_front_pressed.png	lib/res/drawable-xhdpi/orca_emoji_more_front_pressed.png
+R100	res/drawable-xhdpi/sym_keyboard_delete_holo_dark.png	lib/res/drawable-xhdpi/sym_keyboard_delete_holo_dark.png
+R100	res/drawable/ic_emoji_nature_light.xml	lib/res/drawable/ic_emoji_nature_light.xml
+R100	res/drawable/ic_emoji_objects_light.xml	lib/res/drawable/ic_emoji_objects_light.xml
+R100	res/drawable/ic_emoji_people_light.xml	lib/res/drawable/ic_emoji_people_light.xml
+R100	res/drawable/ic_emoji_places_light.xml	lib/res/drawable/ic_emoji_places_light.xml
+R100	res/drawable/ic_emoji_recent_light.xml	lib/res/drawable/ic_emoji_recent_light.xml
+R100	res/drawable/ic_emoji_symbols_light.xml	lib/res/drawable/ic_emoji_symbols_light.xml
+R100	res/drawable/orca_composer_attach_camera_button.xml	lib/res/drawable/orca_composer_attach_camera_button.xml
+R100	res/drawable/orca_composer_attach_location_button.xml	lib/res/drawable/orca_composer_attach_location_button.xml
+R100	res/drawable/orca_composer_attach_photo_button.xml	lib/res/drawable/orca_composer_attach_photo_button.xml
+R100	res/drawable/orca_composer_popup_button.xml	lib/res/drawable/orca_composer_popup_button.xml
+R100	res/drawable/orca_composer_popup_button_active.xml	lib/res/drawable/orca_composer_popup_button_active.xml
+R100	res/drawable/orca_emoji_backspace_front_button.xml	lib/res/drawable/orca_emoji_backspace_front_button.xml
+R100	res/drawable/orca_emoji_more_front_button.xml	lib/res/drawable/orca_emoji_more_front_button.xml
+R100	res/drawable/orca_emoji_tab_background.xml	lib/res/drawable/orca_emoji_tab_background.xml
+R100	res/drawable/orca_emoji_tab_dark_background.xml	lib/res/drawable/orca_emoji_tab_dark_background.xml
+R100	res/layout/emojicon_grid.xml	lib/res/layout/emojicon_grid.xml
+R100	res/layout/emojicon_item.xml	lib/res/layout/emojicon_item.xml
+R100	res/layout/emojicons.xml	lib/res/layout/emojicons.xml
+R100	res/values/attrs.xml	lib/res/values/attrs.xml
+R100	res/values/strings.xml	lib/res/values/strings.xml
+R100	src/github/ankushsachdeva/emojicon/EmojiAdapter.java	lib/src/github/ankushsachdeva/emojicon/EmojiAdapter.java
+R100	src/github/ankushsachdeva/emojicon/EmojiconEditText.java	lib/src/github/ankushsachdeva/emojicon/EmojiconEditText.java
+R100	src/github/ankushsachdeva/emojicon/EmojiconGridView.java	lib/src/github/ankushsachdeva/emojicon/EmojiconGridView.java
+R100	src/github/ankushsachdeva/emojicon/EmojiconHandler.java	lib/src/github/ankushsachdeva/emojicon/EmojiconHandler.java
+R100	src/github/ankushsachdeva/emojicon/EmojiconRecents.java	lib/src/github/ankushsachdeva/emojicon/EmojiconRecents.java
+R100	src/github/ankushsachdeva/emojicon/EmojiconRecentsGridView.java	lib/src/github/ankushsachdeva/emojicon/EmojiconRecentsGridView.java
+R100	src/github/ankushsachdeva/emojicon/EmojiconRecentsManager.java	lib/src/github/ankushsachdeva/emojicon/EmojiconRecentsManager.java
+R100	src/github/ankushsachdeva/emojicon/EmojiconSpan.java	lib/src/github/ankushsachdeva/emojicon/EmojiconSpan.java
+R100	src/github/ankushsachdeva/emojicon/EmojiconTextView.java	lib/src/github/ankushsachdeva/emojicon/EmojiconTextView.java
+R100	src/github/ankushsachdeva/emojicon/EmojiconsPopup.java	lib/src/github/ankushsachdeva/emojicon/EmojiconsPopup.java
+R100	src/github/ankushsachdeva/emojicon/emoji/Emojicon.java	lib/src/github/ankushsachdeva/emojicon/emoji/Emojicon.java
+R100	src/github/ankushsachdeva/emojicon/emoji/Nature.java	lib/src/github/ankushsachdeva/emojicon/emoji/Nature.java
+R100	src/github/ankushsachdeva/emojicon/emoji/Objects.java	lib/src/github/ankushsachdeva/emojicon/emoji/Objects.java
+R100	src/github/ankushsachdeva/emojicon/emoji/People.java	lib/src/github/ankushsachdeva/emojicon/emoji/People.java
+R100	src/github/ankushsachdeva/emojicon/emoji/Places.java	lib/src/github/ankushsachdeva/emojicon/emoji/Places.java
+R100	src/github/ankushsachdeva/emojicon/emoji/Symbols.java	lib/src/github/ankushsachdeva/emojicon/emoji/Symbols.java
+D	res/drawable/popup_bg.xml
+
+0f5fefe;removed unnecessary background; Added new funciton showAtBottomPending()
+M	README.md
+M	res/values/attrs.xml
+M	src/github/ankushsachdeva/emojicon/EmojiconsPopup.java
+
+2fc6baf;updated readme
+M	README.md
+
+d4a98a3;added sample image
+M	README.md
+M	res/values/attrs.xml
+A	sample.png
+
+caf5dee;RecentEmojicon not stored correctly bug fixed
+M	src/github/ankushsachdeva/emojicon/EmojiconRecentsManager.java
+M	src/github/ankushsachdeva/emojicon/EmojiconsPopup.java
+M	src/github/ankushsachdeva/emojicon/emoji/Emojicon.java
+
+8d2bd8f;Added README
+A	README.md
+
+62ca083;inital commit
+A	.gitignore
+A	AndroidManifest.xml
+A	libs/android-support-v4.jar
+A	lint.xml
+A	project.properties
+A	res/drawable-hdpi/ic_emoji_nature_light_activated.png
+A	res/drawable-hdpi/ic_emoji_nature_light_normal.png
+A	res/drawable-hdpi/ic_emoji_objects_light_activated.png
+A	res/drawable-hdpi/ic_emoji_objects_light_normal.png
+A	res/drawable-hdpi/ic_emoji_people_light_activated.png
+A	res/drawable-hdpi/ic_emoji_people_light_normal.png
+A	res/drawable-hdpi/ic_emoji_places_light_activated.png
+A	res/drawable-hdpi/ic_emoji_places_light_normal.png
+A	res/drawable-hdpi/ic_emoji_recent_light_activated.png
+A	res/drawable-hdpi/ic_emoji_recent_light_normal.png
+A	res/drawable-hdpi/ic_emoji_symbols_light_activated.png
+A	res/drawable-hdpi/ic_emoji_symbols_light_normal.png
+A	res/drawable-hdpi/ic_launcher.png
+A	res/drawable-hdpi/keyboard_background_holo.9.png
+A	res/drawable-hdpi/orca_attach_camera_normal.png
+A	res/drawable-hdpi/orca_attach_camera_pressed.png
+A	res/drawable-hdpi/orca_attach_location_normal.png
+A	res/drawable-hdpi/orca_attach_location_pressed.png
+A	res/drawable-hdpi/orca_attach_photo_normal.png
+A	res/drawable-hdpi/orca_attach_photo_pressed.png
+A	res/drawable-hdpi/orca_attachments_arrow.png
+A	res/drawable-hdpi/orca_attachments_arrow_reversed.png
+A	res/drawable-hdpi/orca_composer_divider_horizontal.9.png
+A	res/drawable-hdpi/orca_composer_divider_vertical.9.png
+A	res/drawable-hdpi/orca_composer_popup_active_normal.png
+A	res/drawable-hdpi/orca_composer_popup_active_pressed.png
+A	res/drawable-hdpi/orca_composer_popup_normal.png
+A	res/drawable-hdpi/orca_composer_popup_pressed.png
+A	res/drawable-hdpi/orca_composer_tab.9.png
+A	res/drawable-hdpi/orca_composer_tab_active.9.png
+A	res/drawable-hdpi/orca_composer_tab_dark.9.png
+A	res/drawable-hdpi/orca_composer_tab_pressed.9.png
+A	res/drawable-hdpi/orca_composer_top_divider.9.png
+A	res/drawable-hdpi/orca_emoji_backspace_back_normal.png
+A	res/drawable-hdpi/orca_emoji_backspace_front_normal.png
+A	res/drawable-hdpi/orca_emoji_backspace_front_pressed.png
+A	res/drawable-hdpi/orca_emoji_category_cars.png
+A	res/drawable-hdpi/orca_emoji_category_nature.png
+A	res/drawable-hdpi/orca_emoji_category_objects.png
+A	res/drawable-hdpi/orca_emoji_category_people.png
+A	res/drawable-hdpi/orca_emoji_category_punctuation.png
+A	res/drawable-hdpi/orca_emoji_more_back_normal.png
+A	res/drawable-hdpi/orca_emoji_more_front_normal.png
+A	res/drawable-hdpi/orca_emoji_more_front_pressed.png
+A	res/drawable-hdpi/sym_keyboard_delete_holo_dark.png
+A	res/drawable-mdpi/ic_emoji_nature_light_activated.png
+A	res/drawable-mdpi/ic_emoji_nature_light_normal.png
+A	res/drawable-mdpi/ic_emoji_objects_light_activated.png
+A	res/drawable-mdpi/ic_emoji_objects_light_normal.png
+A	res/drawable-mdpi/ic_emoji_people_light_activated.png
+A	res/drawable-mdpi/ic_emoji_people_light_normal.png
+A	res/drawable-mdpi/ic_emoji_places_light_activated.png
+A	res/drawable-mdpi/ic_emoji_places_light_normal.png
+A	res/drawable-mdpi/ic_emoji_recent_light_activated.png
+A	res/drawable-mdpi/ic_emoji_recent_light_normal.png
+A	res/drawable-mdpi/ic_emoji_symbols_light_activated.png
+A	res/drawable-mdpi/ic_emoji_symbols_light_normal.png
+A	res/drawable-mdpi/ic_launcher.png
+A	res/drawable-mdpi/keyboard_background_holo.9.png
+A	res/drawable-mdpi/orca_attach_camera_normal.png
+A	res/drawable-mdpi/orca_attach_camera_pressed.png
+A	res/drawable-mdpi/orca_attach_location_normal.png
+A	res/drawable-mdpi/orca_attach_location_pressed.png
+A	res/drawable-mdpi/orca_attach_photo_normal.png
+A	res/drawable-mdpi/orca_attach_photo_pressed.png
+A	res/drawable-mdpi/orca_attachments_arrow.png
+A	res/drawable-mdpi/orca_attachments_arrow_reversed.png
+A	res/drawable-mdpi/orca_composer_divider_horizontal.9.png
+A	res/drawable-mdpi/orca_composer_divider_vertical.9.png
+A	res/drawable-mdpi/orca_composer_popup_active_normal.png
+A	res/drawable-mdpi/orca_composer_popup_active_pressed.png
+A	res/drawable-mdpi/orca_composer_popup_normal.png
+A	res/drawable-mdpi/orca_composer_popup_pressed.png
+A	res/drawable-mdpi/orca_composer_tab.9.png
+A	res/drawable-mdpi/orca_composer_tab_active.9.png
+A	res/drawable-mdpi/orca_composer_tab_dark.9.png
+A	res/drawable-mdpi/orca_composer_tab_pressed.9.png
+A	res/drawable-mdpi/orca_composer_top_divider.9.png
+A	res/drawable-mdpi/orca_emoji_backspace_back_normal.png
+A	res/drawable-mdpi/orca_emoji_backspace_front_normal.png
+A	res/drawable-mdpi/orca_emoji_backspace_front_pressed.png
+A	res/drawable-mdpi/orca_emoji_category_cars.png
+A	res/drawable-mdpi/orca_emoji_category_nature.png
+A	res/drawable-mdpi/orca_emoji_category_objects.png
+A	res/drawable-mdpi/orca_emoji_category_people.png
+A	res/drawable-mdpi/orca_emoji_category_punctuation.png
+A	res/drawable-mdpi/orca_emoji_more_back_normal.png
+A	res/drawable-mdpi/orca_emoji_more_front_normal.png
+A	res/drawable-mdpi/orca_emoji_more_front_pressed.png
+A	res/drawable-mdpi/sym_keyboard_delete_holo_dark.png
+A	res/drawable-nodpi/emoji_0023.png
+A	res/drawable-nodpi/emoji_0030.png
+A	res/drawable-nodpi/emoji_0031.png
+A	res/drawable-nodpi/emoji_0032.png
+A	res/drawable-nodpi/emoji_0033.png
+A	res/drawable-nodpi/emoji_0034.png
+A	res/drawable-nodpi/emoji_0035.png
+A	res/drawable-nodpi/emoji_0036.png
+A	res/drawable-nodpi/emoji_0037.png
+A	res/drawable-nodpi/emoji_0038.png
+A	res/drawable-nodpi/emoji_0039.png
+A	res/drawable-nodpi/emoji_00a9.png
+A	res/drawable-nodpi/emoji_00ae.png
+A	res/drawable-nodpi/emoji_1f004.png
+A	res/drawable-nodpi/emoji_1f0cf.png
+A	res/drawable-nodpi/emoji_1f170.png
+A	res/drawable-nodpi/emoji_1f171.png
+A	res/drawable-nodpi/emoji_1f17e.png
+A	res/drawable-nodpi/emoji_1f17f.png
+A	res/drawable-nodpi/emoji_1f18e.png
+A	res/drawable-nodpi/emoji_1f191.png
+A	res/drawable-nodpi/emoji_1f192.png
+A	res/drawable-nodpi/emoji_1f193.png
+A	res/drawable-nodpi/emoji_1f194.png
+A	res/drawable-nodpi/emoji_1f195.png
+A	res/drawable-nodpi/emoji_1f196.png
+A	res/drawable-nodpi/emoji_1f197.png
+A	res/drawable-nodpi/emoji_1f198.png
+A	res/drawable-nodpi/emoji_1f199.png
+A	res/drawable-nodpi/emoji_1f19a.png
+A	res/drawable-nodpi/emoji_1f1e8_1f1f3.png
+A	res/drawable-nodpi/emoji_1f1e9_1f1ea.png
+A	res/drawable-nodpi/emoji_1f1ea_1f1f8.png
+A	res/drawable-nodpi/emoji_1f1eb_1f1f7.png
+A	res/drawable-nodpi/emoji_1f1ec_1f1e7.png
+A	res/drawable-nodpi/emoji_1f1ee_1f1f9.png
+A	res/drawable-nodpi/emoji_1f1ef_1f1f5.png
+A	res/drawable-nodpi/emoji_1f1f0_1f1f7.png
+A	res/drawable-nodpi/emoji_1f1f7_1f1fa.png
+A	res/drawable-nodpi/emoji_1f1fa_1f1f8.png
+A	res/drawable-nodpi/emoji_1f201.png
+A	res/drawable-nodpi/emoji_1f202.png
+A	res/drawable-nodpi/emoji_1f21a.png
+A	res/drawable-nodpi/emoji_1f22f.png
+A	res/drawable-nodpi/emoji_1f232.png
+A	res/drawable-nodpi/emoji_1f233.png
+A	res/drawable-nodpi/emoji_1f234.png
+A	res/drawable-nodpi/emoji_1f235.png
+A	res/drawable-nodpi/emoji_1f236.png
+A	res/drawable-nodpi/emoji_1f237.png
+A	res/drawable-nodpi/emoji_1f238.png
+A	res/drawable-nodpi/emoji_1f239.png
+A	res/drawable-nodpi/emoji_1f23a.png
+A	res/drawable-nodpi/emoji_1f250.png
+A	res/drawable-nodpi/emoji_1f251.png
+A	res/drawable-nodpi/emoji_1f300.png
+A	res/drawable-nodpi/emoji_1f301.png
+A	res/drawable-nodpi/emoji_1f302.png
+A	res/drawable-nodpi/emoji_1f303.png
+A	res/drawable-nodpi/emoji_1f304.png
+A	res/drawable-nodpi/emoji_1f305.png
+A	res/drawable-nodpi/emoji_1f306.png
+A	res/drawable-nodpi/emoji_1f307.png
+A	res/drawable-nodpi/emoji_1f308.png
+A	res/drawable-nodpi/emoji_1f309.png
+A	res/drawable-nodpi/emoji_1f30a.png
+A	res/drawable-nodpi/emoji_1f30b.png
+A	res/drawable-nodpi/emoji_1f30c.png
+A	res/drawable-nodpi/emoji_1f30d.png
+A	res/drawable-nodpi/emoji_1f30e.png
+A	res/drawable-nodpi/emoji_1f30f.png
+A	res/drawable-nodpi/emoji_1f310.png
+A	res/drawable-nodpi/emoji_1f311.png
+A	res/drawable-nodpi/emoji_1f312.png
+A	res/drawable-nodpi/emoji_1f313.png
+A	res/drawable-nodpi/emoji_1f314.png
+A	res/drawable-nodpi/emoji_1f315.png
+A	res/drawable-nodpi/emoji_1f316.png
+A	res/drawable-nodpi/emoji_1f317.png
+A	res/drawable-nodpi/emoji_1f318.png
+A	res/drawable-nodpi/emoji_1f319.png
+A	res/drawable-nodpi/emoji_1f31a.png
+A	res/drawable-nodpi/emoji_1f31b.png
+A	res/drawable-nodpi/emoji_1f31c.png
+A	res/drawable-nodpi/emoji_1f31d.png
+A	res/drawable-nodpi/emoji_1f31e.png
+A	res/drawable-nodpi/emoji_1f31f.png
+A	res/drawable-nodpi/emoji_1f330.png
+A	res/drawable-nodpi/emoji_1f331.png
+A	res/drawable-nodpi/emoji_1f332.png
+A	res/drawable-nodpi/emoji_1f333.png
+A	res/drawable-nodpi/emoji_1f334.png
+A	res/drawable-nodpi/emoji_1f335.png
+A	res/drawable-nodpi/emoji_1f337.png
+A	res/drawable-nodpi/emoji_1f338.png
+A	res/drawable-nodpi/emoji_1f339.png
+A	res/drawable-nodpi/emoji_1f33a.png
+A	res/drawable-nodpi/emoji_1f33b.png
+A	res/drawable-nodpi/emoji_1f33c.png
+A	res/drawable-nodpi/emoji_1f33d.png
+A	res/drawable-nodpi/emoji_1f33e.png
+A	res/drawable-nodpi/emoji_1f33f.png
+A	res/drawable-nodpi/emoji_1f340.png
+A	res/drawable-nodpi/emoji_1f341.png
+A	res/drawable-nodpi/emoji_1f342.png
+A	res/drawable-nodpi/emoji_1f343.png
+A	res/drawable-nodpi/emoji_1f344.png
+A	res/drawable-nodpi/emoji_1f345.png
+A	res/drawable-nodpi/emoji_1f346.png
+A	res/drawable-nodpi/emoji_1f347.png
+A	res/drawable-nodpi/emoji_1f348.png
+A	res/drawable-nodpi/emoji_1f349.png
+A	res/drawable-nodpi/emoji_1f34a.png
+A	res/drawable-nodpi/emoji_1f34b.png
+A	res/drawable-nodpi/emoji_1f34c.png
+A	res/drawable-nodpi/emoji_1f34d.png
+A	res/drawable-nodpi/emoji_1f34e.png
+A	res/drawable-nodpi/emoji_1f34f.png
+A	res/drawable-nodpi/emoji_1f350.png
+A	res/drawable-nodpi/emoji_1f351.png
+A	res/drawable-nodpi/emoji_1f352.png
+A	res/drawable-nodpi/emoji_1f353.png
+A	res/drawable-nodpi/emoji_1f354.png
+A	res/drawable-nodpi/emoji_1f355.png
+A	res/drawable-nodpi/emoji_1f356.png
+A	res/drawable-nodpi/emoji_1f357.png
+A	res/drawable-nodpi/emoji_1f358.png
+A	res/drawable-nodpi/emoji_1f359.png
+A	res/drawable-nodpi/emoji_1f35a.png
+A	res/drawable-nodpi/emoji_1f35b.png
+A	res/drawable-nodpi/emoji_1f35c.png
+A	res/drawable-nodpi/emoji_1f35d.png
+A	res/drawable-nodpi/emoji_1f35e.png
+A	res/drawable-nodpi/emoji_1f35f.png
+A	res/drawable-nodpi/emoji_1f360.png
+A	res/drawable-nodpi/emoji_1f361.png
+A	res/drawable-nodpi/emoji_1f362.png
+A	res/drawable-nodpi/emoji_1f363.png
+A	res/drawable-nodpi/emoji_1f364.png
+A	res/drawable-nodpi/emoji_1f365.png
+A	res/drawable-nodpi/emoji_1f366.png
+A	res/drawable-nodpi/emoji_1f367.png
+A	res/drawable-nodpi/emoji_1f368.png
+A	res/drawable-nodpi/emoji_1f369.png
+A	res/drawable-nodpi/emoji_1f36a.png
+A	res/drawable-nodpi/emoji_1f36b.png
+A	res/drawable-nodpi/emoji_1f36c.png
+A	res/drawable-nodpi/emoji_1f36d.png
+A	res/drawable-nodpi/emoji_1f36e.png
+A	res/drawable-nodpi/emoji_1f36f.png
+A	res/drawable-nodpi/emoji_1f370.png
+A	res/drawable-nodpi/emoji_1f371.png
+A	res/drawable-nodpi/emoji_1f372.png
+A	res/drawable-nodpi/emoji_1f373.png
+A	res/drawable-nodpi/emoji_1f374.png
+A	res/drawable-nodpi/emoji_1f375.png
+A	res/drawable-nodpi/emoji_1f376.png
+A	res/drawable-nodpi/emoji_1f377.png
+A	res/drawable-nodpi/emoji_1f378.png
+A	res/drawable-nodpi/emoji_1f379.png
+A	res/drawable-nodpi/emoji_1f37a.png
+A	res/drawable-nodpi/emoji_1f37b.png
+A	res/drawable-nodpi/emoji_1f37c.png
+A	res/drawable-nodpi/emoji_1f380.png
+A	res/drawable-nodpi/emoji_1f381.png
+A	res/drawable-nodpi/emoji_1f382.png
+A	res/drawable-nodpi/emoji_1f383.png
+A	res/drawable-nodpi/emoji_1f384.png
+A	res/drawable-nodpi/emoji_1f385.png
+A	res/drawable-nodpi/emoji_1f386.png
+A	res/drawable-nodpi/emoji_1f387.png
+A	res/drawable-nodpi/emoji_1f388.png
+A	res/drawable-nodpi/emoji_1f389.png
+A	res/drawable-nodpi/emoji_1f38a.png
+A	res/drawable-nodpi/emoji_1f38b.png
+A	res/drawable-nodpi/emoji_1f38c.png
+A	res/drawable-nodpi/emoji_1f38d.png
+A	res/drawable-nodpi/emoji_1f38e.png
+A	res/drawable-nodpi/emoji_1f38f.png
+A	res/drawable-nodpi/emoji_1f390.png
+A	res/drawable-nodpi/emoji_1f391.png
+A	res/drawable-nodpi/emoji_1f392.png
+A	res/drawable-nodpi/emoji_1f393.png
+A	res/drawable-nodpi/emoji_1f3a0.png
+A	res/drawable-nodpi/emoji_1f3a1.png
+A	res/drawable-nodpi/emoji_1f3a2.png
+A	res/drawable-nodpi/emoji_1f3a3.png
+A	res/drawable-nodpi/emoji_1f3a4.png
+A	res/drawable-nodpi/emoji_1f3a5.png
+A	res/drawable-nodpi/emoji_1f3a6.png
+A	res/drawable-nodpi/emoji_1f3a7.png
+A	res/drawable-nodpi/emoji_1f3a8.png
+A	res/drawable-nodpi/emoji_1f3a9.png
+A	res/drawable-nodpi/emoji_1f3aa.png
+A	res/drawable-nodpi/emoji_1f3ab.png
+A	res/drawable-nodpi/emoji_1f3ac.png
+A	res/drawable-nodpi/emoji_1f3ad.png
+A	res/drawable-nodpi/emoji_1f3ae.png
+A	res/drawable-nodpi/emoji_1f3af.png
+A	res/drawable-nodpi/emoji_1f3b0.png
+A	res/drawable-nodpi/emoji_1f3b1.png
+A	res/drawable-nodpi/emoji_1f3b2.png
+A	res/drawable-nodpi/emoji_1f3b3.png
+A	res/drawable-nodpi/emoji_1f3b4.png
+A	res/drawable-nodpi/emoji_1f3b5.png
+A	res/drawable-nodpi/emoji_1f3b6.png
+A	res/drawable-nodpi/emoji_1f3b7.png
+A	res/drawable-nodpi/emoji_1f3b8.png
+A	res/drawable-nodpi/emoji_1f3b9.png
+A	res/drawable-nodpi/emoji_1f3ba.png
+A	res/drawable-nodpi/emoji_1f3bb.png
+A	res/drawable-nodpi/emoji_1f3bc.png
+A	res/drawable-nodpi/emoji_1f3bd.png
+A	res/drawable-nodpi/emoji_1f3be.png
+A	res/drawable-nodpi/emoji_1f3bf.png
+A	res/drawable-nodpi/emoji_1f3c0.png
+A	res/drawable-nodpi/emoji_1f3c1.png
+A	res/drawable-nodpi/emoji_1f3c2.png
+A	res/drawable-nodpi/emoji_1f3c3.png
+A	res/drawable-nodpi/emoji_1f3c4.png
+A	res/drawable-nodpi/emoji_1f3c6.png
+A	res/drawable-nodpi/emoji_1f3c7.png
+A	res/drawable-nodpi/emoji_1f3c8.png
+A	res/drawable-nodpi/emoji_1f3c9.png
+A	res/drawable-nodpi/emoji_1f3ca.png
+A	res/drawable-nodpi/emoji_1f3e0.png
+A	res/drawable-nodpi/emoji_1f3e1.png
+A	res/drawable-nodpi/emoji_1f3e2.png
+A	res/drawable-nodpi/emoji_1f3e3.png
+A	res/drawable-nodpi/emoji_1f3e4.png
+A	res/drawable-nodpi/emoji_1f3e5.png
+A	res/drawable-nodpi/emoji_1f3e6.png
+A	res/drawable-nodpi/emoji_1f3e7.png
+A	res/drawable-nodpi/emoji_1f3e8.png
+A	res/drawable-nodpi/emoji_1f3e9.png
+A	res/drawable-nodpi/emoji_1f3ea.png
+A	res/drawable-nodpi/emoji_1f3eb.png
+A	res/drawable-nodpi/emoji_1f3ec.png
+A	res/drawable-nodpi/emoji_1f3ed.png
+A	res/drawable-nodpi/emoji_1f3ee.png
+A	res/drawable-nodpi/emoji_1f3ef.png
+A	res/drawable-nodpi/emoji_1f3f0.png
+A	res/drawable-nodpi/emoji_1f400.png
+A	res/drawable-nodpi/emoji_1f401.png
+A	res/drawable-nodpi/emoji_1f402.png
+A	res/drawable-nodpi/emoji_1f403.png
+A	res/drawable-nodpi/emoji_1f404.png
+A	res/drawable-nodpi/emoji_1f405.png
+A	res/drawable-nodpi/emoji_1f406.png
+A	res/drawable-nodpi/emoji_1f407.png
+A	res/drawable-nodpi/emoji_1f408.png
+A	res/drawable-nodpi/emoji_1f409.png
+A	res/drawable-nodpi/emoji_1f40a.png
+A	res/drawable-nodpi/emoji_1f40b.png
+A	res/drawable-nodpi/emoji_1f40c.png
+A	res/drawable-nodpi/emoji_1f40d.png
+A	res/drawable-nodpi/emoji_1f40e.png
+A	res/drawable-nodpi/emoji_1f40f.png
+A	res/drawable-nodpi/emoji_1f410.png
+A	res/drawable-nodpi/emoji_1f411.png
+A	res/drawable-nodpi/emoji_1f412.png
+A	res/drawable-nodpi/emoji_1f413.png
+A	res/drawable-nodpi/emoji_1f414.png
+A	res/drawable-nodpi/emoji_1f415.png
+A	res/drawable-nodpi/emoji_1f416.png
+A	res/drawable-nodpi/emoji_1f417.png
+A	res/drawable-nodpi/emoji_1f418.png
+A	res/drawable-nodpi/emoji_1f419.png
+A	res/drawable-nodpi/emoji_1f41a.png
+A	res/drawable-nodpi/emoji_1f41b.png
+A	res/drawable-nodpi/emoji_1f41c.png
+A	res/drawable-nodpi/emoji_1f41d.png
+A	res/drawable-nodpi/emoji_1f41e.png
+A	res/drawable-nodpi/emoji_1f41f.png
+A	res/drawable-nodpi/emoji_1f420.png
+A	res/drawable-nodpi/emoji_1f421.png
+A	res/drawable-nodpi/emoji_1f422.png
+A	res/drawable-nodpi/emoji_1f423.png
+A	res/drawable-nodpi/emoji_1f424.png
+A	res/drawable-nodpi/emoji_1f425.png
+A	res/drawable-nodpi/emoji_1f426.png
+A	res/drawable-nodpi/emoji_1f427.png
+A	res/drawable-nodpi/emoji_1f428.png
+A	res/drawable-nodpi/emoji_1f429.png
+A	res/drawable-nodpi/emoji_1f42a.png
+A	res/drawable-nodpi/emoji_1f42b.png
+A	res/drawable-nodpi/emoji_1f42c.png
+A	res/drawable-nodpi/emoji_1f42d.png
+A	res/drawable-nodpi/emoji_1f42e.png
+A	res/drawable-nodpi/emoji_1f42f.png
+A	res/drawable-nodpi/emoji_1f430.png
+A	res/drawable-nodpi/emoji_1f431.png
+A	res/drawable-nodpi/emoji_1f432.png
+A	res/drawable-nodpi/emoji_1f433.png
+A	res/drawable-nodpi/emoji_1f434.png
+A	res/drawable-nodpi/emoji_1f435.png
+A	res/drawable-nodpi/emoji_1f436.png
+A	res/drawable-nodpi/emoji_1f437.png
+A	res/drawable-nodpi/emoji_1f438.png
+A	res/drawable-nodpi/emoji_1f439.png
+A	res/drawable-nodpi/emoji_1f43a.png
+A	res/drawable-nodpi/emoji_1f43b.png
+A	res/drawable-nodpi/emoji_1f43c.png
+A	res/drawable-nodpi/emoji_1f43d.png
+A	res/drawable-nodpi/emoji_1f43e.png
+A	res/drawable-nodpi/emoji_1f440.png
+A	res/drawable-nodpi/emoji_1f442.png
+A	res/drawable-nodpi/emoji_1f443.png
+A	res/drawable-nodpi/emoji_1f444.png
+A	res/drawable-nodpi/emoji_1f445.png
+A	res/drawable-nodpi/emoji_1f446.png
+A	res/drawable-nodpi/emoji_1f447.png
+A	res/drawable-nodpi/emoji_1f448.png
+A	res/drawable-nodpi/emoji_1f449.png
+A	res/drawable-nodpi/emoji_1f44a.png
+A	res/drawable-nodpi/emoji_1f44b.png
+A	res/drawable-nodpi/emoji_1f44c.png
+A	res/drawable-nodpi/emoji_1f44d.png
+A	res/drawable-nodpi/emoji_1f44e.png
+A	res/drawable-nodpi/emoji_1f44f.png
+A	res/drawable-nodpi/emoji_1f450.png
+A	res/drawable-nodpi/emoji_1f451.png
+A	res/drawable-nodpi/emoji_1f452.png
+A	res/drawable-nodpi/emoji_1f453.png
+A	res/drawable-nodpi/emoji_1f454.png
+A	res/drawable-nodpi/emoji_1f455.png
+A	res/drawable-nodpi/emoji_1f456.png
+A	res/drawable-nodpi/emoji_1f457.png
+A	res/drawable-nodpi/emoji_1f458.png
+A	res/drawable-nodpi/emoji_1f459.png
+A	res/drawable-nodpi/emoji_1f45a.png
+A	res/drawable-nodpi/emoji_1f45b.png
+A	res/drawable-nodpi/emoji_1f45c.png
+A	res/drawable-nodpi/emoji_1f45d.png
+A	res/drawable-nodpi/emoji_1f45e.png
+A	res/drawable-nodpi/emoji_1f45f.png
+A	res/drawable-nodpi/emoji_1f460.png
+A	res/drawable-nodpi/emoji_1f461.png
+A	res/drawable-nodpi/emoji_1f462.png
+A	res/drawable-nodpi/emoji_1f463.png
+A	res/drawable-nodpi/emoji_1f464.png
+A	res/drawable-nodpi/emoji_1f465.png
+A	res/drawable-nodpi/emoji_1f466.png
+A	res/drawable-nodpi/emoji_1f467.png
+A	res/drawable-nodpi/emoji_1f468.png
+A	res/drawable-nodpi/emoji_1f469.png
+A	res/drawable-nodpi/emoji_1f46a.png
+A	res/drawable-nodpi/emoji_1f46b.png
+A	res/drawable-nodpi/emoji_1f46c.png
+A	res/drawable-nodpi/emoji_1f46d.png
+A	res/drawable-nodpi/emoji_1f46e.png
+A	res/drawable-nodpi/emoji_1f46f.png
+A	res/drawable-nodpi/emoji_1f470.png
+A	res/drawable-nodpi/emoji_1f471.png
+A	res/drawable-nodpi/emoji_1f472.png
+A	res/drawable-nodpi/emoji_1f473.png
+A	res/drawable-nodpi/emoji_1f474.png
+A	res/drawable-nodpi/emoji_1f475.png
+A	res/drawable-nodpi/emoji_1f476.png
+A	res/drawable-nodpi/emoji_1f477.png
+A	res/drawable-nodpi/emoji_1f478.png
+A	res/drawable-nodpi/emoji_1f479.png
+A	res/drawable-nodpi/emoji_1f47a.png
+A	res/drawable-nodpi/emoji_1f47b.png
+A	res/drawable-nodpi/emoji_1f47c.png
+A	res/drawable-nodpi/emoji_1f47d.png
+A	res/drawable-nodpi/emoji_1f47e.png
+A	res/drawable-nodpi/emoji_1f47f.png
+A	res/drawable-nodpi/emoji_1f480.png
+A	res/drawable-nodpi/emoji_1f481.png
+A	res/drawable-nodpi/emoji_1f482.png
+A	res/drawable-nodpi/emoji_1f483.png
+A	res/drawable-nodpi/emoji_1f484.png
+A	res/drawable-nodpi/emoji_1f485.png
+A	res/drawable-nodpi/emoji_1f486.png
+A	res/drawable-nodpi/emoji_1f487.png
+A	res/drawable-nodpi/emoji_1f488.png
+A	res/drawable-nodpi/emoji_1f489.png
+A	res/drawable-nodpi/emoji_1f48a.png
+A	res/drawable-nodpi/emoji_1f48b.png
+A	res/drawable-nodpi/emoji_1f48c.png
+A	res/drawable-nodpi/emoji_1f48d.png
+A	res/drawable-nodpi/emoji_1f48e.png
+A	res/drawable-nodpi/emoji_1f48f.png
+A	res/drawable-nodpi/emoji_1f490.png
+A	res/drawable-nodpi/emoji_1f491.png
+A	res/drawable-nodpi/emoji_1f492.png
+A	res/drawable-nodpi/emoji_1f493.png
+A	res/drawable-nodpi/emoji_1f494.png
+A	res/drawable-nodpi/emoji_1f495.png
+A	res/drawable-nodpi/emoji_1f496.png
+A	res/drawable-nodpi/emoji_1f497.png
+A	res/drawable-nodpi/emoji_1f498.png
+A	res/drawable-nodpi/emoji_1f499.png
+A	res/drawable-nodpi/emoji_1f49a.png
+A	res/drawable-nodpi/emoji_1f49b.png
+A	res/drawable-nodpi/emoji_1f49c.png
+A	res/drawable-nodpi/emoji_1f49d.png
+A	res/drawable-nodpi/emoji_1f49e.png
+A	res/drawable-nodpi/emoji_1f49f.png
+A	res/drawable-nodpi/emoji_1f4a0.png
+A	res/drawable-nodpi/emoji_1f4a1.png
+A	res/drawable-nodpi/emoji_1f4a2.png
+A	res/drawable-nodpi/emoji_1f4a3.png
+A	res/drawable-nodpi/emoji_1f4a4.png
+A	res/drawable-nodpi/emoji_1f4a5.png
+A	res/drawable-nodpi/emoji_1f4a6.png
+A	res/drawable-nodpi/emoji_1f4a7.png
+A	res/drawable-nodpi/emoji_1f4a8.png
+A	res/drawable-nodpi/emoji_1f4a9.png
+A	res/drawable-nodpi/emoji_1f4aa.png
+A	res/drawable-nodpi/emoji_1f4ab.png
+A	res/drawable-nodpi/emoji_1f4ac.png
+A	res/drawable-nodpi/emoji_1f4ad.png
+A	res/drawable-nodpi/emoji_1f4ae.png
+A	res/drawable-nodpi/emoji_1f4af.png
+A	res/drawable-nodpi/emoji_1f4b0.png
+A	res/drawable-nodpi/emoji_1f4b1.png
+A	res/drawable-nodpi/emoji_1f4b2.png
+A	res/drawable-nodpi/emoji_1f4b3.png
+A	res/drawable-nodpi/emoji_1f4b4.png
+A	res/drawable-nodpi/emoji_1f4b5.png
+A	res/drawable-nodpi/emoji_1f4b6.png
+A	res/drawable-nodpi/emoji_1f4b7.png
+A	res/drawable-nodpi/emoji_1f4b8.png
+A	res/drawable-nodpi/emoji_1f4b9.png
+A	res/drawable-nodpi/emoji_1f4ba.png
+A	res/drawable-nodpi/emoji_1f4bb.png
+A	res/drawable-nodpi/emoji_1f4bc.png
+A	res/drawable-nodpi/emoji_1f4bd.png
+A	res/drawable-nodpi/emoji_1f4be.png
+A	res/drawable-nodpi/emoji_1f4bf.png
+A	res/drawable-nodpi/emoji_1f4c0.png
+A	res/drawable-nodpi/emoji_1f4c1.png
+A	res/drawable-nodpi/emoji_1f4c2.png
+A	res/drawable-nodpi/emoji_1f4c3.png
+A	res/drawable-nodpi/emoji_1f4c4.png
+A	res/drawable-nodpi/emoji_1f4c5.png
+A	res/drawable-nodpi/emoji_1f4c6.png
+A	res/drawable-nodpi/emoji_1f4c7.png
+A	res/drawable-nodpi/emoji_1f4c8.png
+A	res/drawable-nodpi/emoji_1f4c9.png
+A	res/drawable-nodpi/emoji_1f4ca.png
+A	res/drawable-nodpi/emoji_1f4cb.png
+A	res/drawable-nodpi/emoji_1f4cc.png
+A	res/drawable-nodpi/emoji_1f4cd.png
+A	res/drawable-nodpi/emoji_1f4ce.png
+A	res/drawable-nodpi/emoji_1f4cf.png
+A	res/drawable-nodpi/emoji_1f4d0.png
+A	res/drawable-nodpi/emoji_1f4d1.png
+A	res/drawable-nodpi/emoji_1f4d2.png
+A	res/drawable-nodpi/emoji_1f4d3.png
+A	res/drawable-nodpi/emoji_1f4d4.png
+A	res/drawable-nodpi/emoji_1f4d5.png
+A	res/drawable-nodpi/emoji_1f4d6.png
+A	res/drawable-nodpi/emoji_1f4d7.png
+A	res/drawable-nodpi/emoji_1f4d8.png
+A	res/drawable-nodpi/emoji_1f4d9.png
+A	res/drawable-nodpi/emoji_1f4da.png
+A	res/drawable-nodpi/emoji_1f4db.png
+A	res/drawable-nodpi/emoji_1f4dc.png
+A	res/drawable-nodpi/emoji_1f4dd.png
+A	res/drawable-nodpi/emoji_1f4de.png
+A	res/drawable-nodpi/emoji_1f4df.png
+A	res/drawable-nodpi/emoji_1f4e0.png
+A	res/drawable-nodpi/emoji_1f4e1.png
+A	res/drawable-nodpi/emoji_1f4e2.png
+A	res/drawable-nodpi/emoji_1f4e3.png
+A	res/drawable-nodpi/emoji_1f4e4.png
+A	res/drawable-nodpi/emoji_1f4e5.png
+A	res/drawable-nodpi/emoji_1f4e6.png
+A	res/drawable-nodpi/emoji_1f4e7.png
+A	res/drawable-nodpi/emoji_1f4e8.png
+A	res/drawable-nodpi/emoji_1f4e9.png
+A	res/drawable-nodpi/emoji_1f4ea.png
+A	res/drawable-nodpi/emoji_1f4eb.png
+A	res/drawable-nodpi/emoji_1f4ec.png
+A	res/drawable-nodpi/emoji_1f4ed.png
+A	res/drawable-nodpi/emoji_1f4ee.png
+A	res/drawable-nodpi/emoji_1f4ef.png
+A	res/drawable-nodpi/emoji_1f4f0.png
+A	res/drawable-nodpi/emoji_1f4f1.png
+A	res/drawable-nodpi/emoji_1f4f2.png
+A	res/drawable-nodpi/emoji_1f4f3.png
+A	res/drawable-nodpi/emoji_1f4f4.png
+A	res/drawable-nodpi/emoji_1f4f5.png
+A	res/drawable-nodpi/emoji_1f4f6.png
+A	res/drawable-nodpi/emoji_1f4f7.png
+A	res/drawable-nodpi/emoji_1f4f9.png
+A	res/drawable-nodpi/emoji_1f4fa.png
+A	res/drawable-nodpi/emoji_1f4fb.png
+A	res/drawable-nodpi/emoji_1f4fc.png
+A	res/drawable-nodpi/emoji_1f500.png
+A	res/drawable-nodpi/emoji_1f501.png
+A	res/drawable-nodpi/emoji_1f502.png
+A	res/drawable-nodpi/emoji_1f503.png
+A	res/drawable-nodpi/emoji_1f504.png
+A	res/drawable-nodpi/emoji_1f505.png
+A	res/drawable-nodpi/emoji_1f506.png
+A	res/drawable-nodpi/emoji_1f507.png
+A	res/drawable-nodpi/emoji_1f508.png
+A	res/drawable-nodpi/emoji_1f509.png
+A	res/drawable-nodpi/emoji_1f50a.png
+A	res/drawable-nodpi/emoji_1f50b.png
+A	res/drawable-nodpi/emoji_1f50c.png
+A	res/drawable-nodpi/emoji_1f50d.png
+A	res/drawable-nodpi/emoji_1f50e.png
+A	res/drawable-nodpi/emoji_1f50f.png
+A	res/drawable-nodpi/emoji_1f510.png
+A	res/drawable-nodpi/emoji_1f511.png
+A	res/drawable-nodpi/emoji_1f512.png
+A	res/drawable-nodpi/emoji_1f513.png
+A	res/drawable-nodpi/emoji_1f514.png
+A	res/drawable-nodpi/emoji_1f515.png
+A	res/drawable-nodpi/emoji_1f516.png
+A	res/drawable-nodpi/emoji_1f517.png
+A	res/drawable-nodpi/emoji_1f518.png
+A	res/drawable-nodpi/emoji_1f519.png
+A	res/drawable-nodpi/emoji_1f51a.png
+A	res/drawable-nodpi/emoji_1f51b.png
+A	res/drawable-nodpi/emoji_1f51c.png
+A	res/drawable-nodpi/emoji_1f51d.png
+A	res/drawable-nodpi/emoji_1f51e.png
+A	res/drawable-nodpi/emoji_1f51f.png
+A	res/drawable-nodpi/emoji_1f520.png
+A	res/drawable-nodpi/emoji_1f521.png
+A	res/drawable-nodpi/emoji_1f522.png
+A	res/drawable-nodpi/emoji_1f523.png
+A	res/drawable-nodpi/emoji_1f524.png
+A	res/drawable-nodpi/emoji_1f525.png
+A	res/drawable-nodpi/emoji_1f526.png
+A	res/drawable-nodpi/emoji_1f527.png
+A	res/drawable-nodpi/emoji_1f528.png
+A	res/drawable-nodpi/emoji_1f529.png
+A	res/drawable-nodpi/emoji_1f52a.png
+A	res/drawable-nodpi/emoji_1f52b.png
+A	res/drawable-nodpi/emoji_1f52c.png
+A	res/drawable-nodpi/emoji_1f52d.png
+A	res/drawable-nodpi/emoji_1f52e.png
+A	res/drawable-nodpi/emoji_1f52f.png
+A	res/drawable-nodpi/emoji_1f530.png
+A	res/drawable-nodpi/emoji_1f531.png
+A	res/drawable-nodpi/emoji_1f532.png
+A	res/drawable-nodpi/emoji_1f533.png
+A	res/drawable-nodpi/emoji_1f534.png
+A	res/drawable-nodpi/emoji_1f535.png
+A	res/drawable-nodpi/emoji_1f536.png
+A	res/drawable-nodpi/emoji_1f537.png
+A	res/drawable-nodpi/emoji_1f538.png
+A	res/drawable-nodpi/emoji_1f539.png
+A	res/drawable-nodpi/emoji_1f53a.png
+A	res/drawable-nodpi/emoji_1f53b.png
+A	res/drawable-nodpi/emoji_1f53c.png
+A	res/drawable-nodpi/emoji_1f53d.png
+A	res/drawable-nodpi/emoji_1f550.png
+A	res/drawable-nodpi/emoji_1f551.png
+A	res/drawable-nodpi/emoji_1f552.png
+A	res/drawable-nodpi/emoji_1f553.png
+A	res/drawable-nodpi/emoji_1f554.png
+A	res/drawable-nodpi/emoji_1f555.png
+A	res/drawable-nodpi/emoji_1f556.png
+A	res/drawable-nodpi/emoji_1f557.png
+A	res/drawable-nodpi/emoji_1f558.png
+A	res/drawable-nodpi/emoji_1f559.png
+A	res/drawable-nodpi/emoji_1f55a.png
+A	res/drawable-nodpi/emoji_1f55b.png
+A	res/drawable-nodpi/emoji_1f55c.png
+A	res/drawable-nodpi/emoji_1f55d.png
+A	res/drawable-nodpi/emoji_1f55e.png
+A	res/drawable-nodpi/emoji_1f55f.png
+A	res/drawable-nodpi/emoji_1f560.png
+A	res/drawable-nodpi/emoji_1f561.png
+A	res/drawable-nodpi/emoji_1f562.png
+A	res/drawable-nodpi/emoji_1f563.png
+A	res/drawable-nodpi/emoji_1f564.png
+A	res/drawable-nodpi/emoji_1f565.png
+A	res/drawable-nodpi/emoji_1f566.png
+A	res/drawable-nodpi/emoji_1f567.png
+A	res/drawable-nodpi/emoji_1f5fb.png
+A	res/drawable-nodpi/emoji_1f5fc.png
+A	res/drawable-nodpi/emoji_1f5fd.png
+A	res/drawable-nodpi/emoji_1f5fe.png
+A	res/drawable-nodpi/emoji_1f5ff.png
+A	res/drawable-nodpi/emoji_1f600.png
+A	res/drawable-nodpi/emoji_1f601.png
+A	res/drawable-nodpi/emoji_1f602.png
+A	res/drawable-nodpi/emoji_1f603.png
+A	res/drawable-nodpi/emoji_1f604.png
+A	res/drawable-nodpi/emoji_1f605.png
+A	res/drawable-nodpi/emoji_1f606.png
+A	res/drawable-nodpi/emoji_1f607.png
+A	res/drawable-nodpi/emoji_1f608.png
+A	res/drawable-nodpi/emoji_1f609.png
+A	res/drawable-nodpi/emoji_1f60a.png
+A	res/drawable-nodpi/emoji_1f60b.png
+A	res/drawable-nodpi/emoji_1f60c.png
+A	res/drawable-nodpi/emoji_1f60d.png
+A	res/drawable-nodpi/emoji_1f60e.png
+A	res/drawable-nodpi/emoji_1f60f.png
+A	res/drawable-nodpi/emoji_1f610.png
+A	res/drawable-nodpi/emoji_1f611.png
+A	res/drawable-nodpi/emoji_1f612.png
+A	res/drawable-nodpi/emoji_1f613.png
+A	res/drawable-nodpi/emoji_1f614.png
+A	res/drawable-nodpi/emoji_1f615.png
+A	res/drawable-nodpi/emoji_1f616.png
+A	res/drawable-nodpi/emoji_1f617.png
+A	res/drawable-nodpi/emoji_1f618.png
+A	res/drawable-nodpi/emoji_1f619.png
+A	res/drawable-nodpi/emoji_1f61a.png
+A	res/drawable-nodpi/emoji_1f61b.png
+A	res/drawable-nodpi/emoji_1f61c.png
+A	res/drawable-nodpi/emoji_1f61d.png
+A	res/drawable-nodpi/emoji_1f61e.png
+A	res/drawable-nodpi/emoji_1f61f.png
+A	res/drawable-nodpi/emoji_1f620.png
+A	res/drawable-nodpi/emoji_1f621.png
+A	res/drawable-nodpi/emoji_1f622.png
+A	res/drawable-nodpi/emoji_1f623.png
+A	res/drawable-nodpi/emoji_1f624.png
+A	res/drawable-nodpi/emoji_1f625.png
+A	res/drawable-nodpi/emoji_1f626.png
+A	res/drawable-nodpi/emoji_1f627.png
+A	res/drawable-nodpi/emoji_1f628.png
+A	res/drawable-nodpi/emoji_1f629.png
+A	res/drawable-nodpi/emoji_1f62a.png
+A	res/drawable-nodpi/emoji_1f62b.png
+A	res/drawable-nodpi/emoji_1f62c.png
+A	res/drawable-nodpi/emoji_1f62d.png
+A	res/drawable-nodpi/emoji_1f62e.png
+A	res/drawable-nodpi/emoji_1f62f.png
+A	res/drawable-nodpi/emoji_1f630.png
+A	res/drawable-nodpi/emoji_1f631.png
+A	res/drawable-nodpi/emoji_1f632.png
+A	res/drawable-nodpi/emoji_1f633.png
+A	res/drawable-nodpi/emoji_1f634.png
+A	res/drawable-nodpi/emoji_1f635.png
+A	res/drawable-nodpi/emoji_1f636.png
+A	res/drawable-nodpi/emoji_1f637.png
+A	res/drawable-nodpi/emoji_1f638.png
+A	res/drawable-nodpi/emoji_1f639.png
+A	res/drawable-nodpi/emoji_1f63a.png
+A	res/drawable-nodpi/emoji_1f63b.png
+A	res/drawable-nodpi/emoji_1f63c.png
+A	res/drawable-nodpi/emoji_1f63d.png
+A	res/drawable-nodpi/emoji_1f63e.png
+A	res/drawable-nodpi/emoji_1f63f.png
+A	res/drawable-nodpi/emoji_1f640.png
+A	res/drawable-nodpi/emoji_1f645.png
+A	res/drawable-nodpi/emoji_1f646.png
+A	res/drawable-nodpi/emoji_1f647.png
+A	res/drawable-nodpi/emoji_1f648.png
+A	res/drawable-nodpi/emoji_1f649.png
+A	res/drawable-nodpi/emoji_1f64a.png
+A	res/drawable-nodpi/emoji_1f64b.png
+A	res/drawable-nodpi/emoji_1f64c.png
+A	res/drawable-nodpi/emoji_1f64d.png
+A	res/drawable-nodpi/emoji_1f64e.png
+A	res/drawable-nodpi/emoji_1f64f.png
+A	res/drawable-nodpi/emoji_1f680.png
+A	res/drawable-nodpi/emoji_1f681.png
+A	res/drawable-nodpi/emoji_1f682.png
+A	res/drawable-nodpi/emoji_1f683.png
+A	res/drawable-nodpi/emoji_1f684.png
+A	res/drawable-nodpi/emoji_1f685.png
+A	res/drawable-nodpi/emoji_1f686.png
+A	res/drawable-nodpi/emoji_1f687.png
+A	res/drawable-nodpi/emoji_1f688.png
+A	res/drawable-nodpi/emoji_1f689.png
+A	res/drawable-nodpi/emoji_1f68a.png
+A	res/drawable-nodpi/emoji_1f68b.png
+A	res/drawable-nodpi/emoji_1f68c.png
+A	res/drawable-nodpi/emoji_1f68d.png
+A	res/drawable-nodpi/emoji_1f68e.png
+A	res/drawable-nodpi/emoji_1f68f.png
+A	res/drawable-nodpi/emoji_1f690.png
+A	res/drawable-nodpi/emoji_1f691.png
+A	res/drawable-nodpi/emoji_1f692.png
+A	res/drawable-nodpi/emoji_1f693.png
+A	res/drawable-nodpi/emoji_1f694.png
+A	res/drawable-nodpi/emoji_1f695.png
+A	res/drawable-nodpi/emoji_1f696.png
+A	res/drawable-nodpi/emoji_1f697.png
+A	res/drawable-nodpi/emoji_1f698.png
+A	res/drawable-nodpi/emoji_1f699.png
+A	res/drawable-nodpi/emoji_1f69a.png
+A	res/drawable-nodpi/emoji_1f69b.png
+A	res/drawable-nodpi/emoji_1f69c.png
+A	res/drawable-nodpi/emoji_1f69d.png
+A	res/drawable-nodpi/emoji_1f69e.png
+A	res/drawable-nodpi/emoji_1f69f.png
+A	res/drawable-nodpi/emoji_1f6a0.png
+A	res/drawable-nodpi/emoji_1f6a1.png
+A	res/drawable-nodpi/emoji_1f6a2.png
+A	res/drawable-nodpi/emoji_1f6a3.png
+A	res/drawable-nodpi/emoji_1f6a4.png
+A	res/drawable-nodpi/emoji_1f6a5.png
+A	res/drawable-nodpi/emoji_1f6a6.png
+A	res/drawable-nodpi/emoji_1f6a7.png
+A	res/drawable-nodpi/emoji_1f6a8.png
+A	res/drawable-nodpi/emoji_1f6a9.png
+A	res/drawable-nodpi/emoji_1f6aa.png
+A	res/drawable-nodpi/emoji_1f6ab.png
+A	res/drawable-nodpi/emoji_1f6ac.png
+A	res/drawable-nodpi/emoji_1f6ad.png
+A	res/drawable-nodpi/emoji_1f6ae.png
+A	res/drawable-nodpi/emoji_1f6af.png
+A	res/drawable-nodpi/emoji_1f6b0.png
+A	res/drawable-nodpi/emoji_1f6b1.png
+A	res/drawable-nodpi/emoji_1f6b2.png
+A	res/drawable-nodpi/emoji_1f6b3.png
+A	res/drawable-nodpi/emoji_1f6b4.png
+A	res/drawable-nodpi/emoji_1f6b5.png
+A	res/drawable-nodpi/emoji_1f6b6.png
+A	res/drawable-nodpi/emoji_1f6b7.png
+A	res/drawable-nodpi/emoji_1f6b8.png
+A	res/drawable-nodpi/emoji_1f6b9.png
+A	res/drawable-nodpi/emoji_1f6ba.png
+A	res/drawable-nodpi/emoji_1f6bb.png
+A	res/drawable-nodpi/emoji_1f6bc.png
+A	res/drawable-nodpi/emoji_1f6bd.png
+A	res/drawable-nodpi/emoji_1f6be.png
+A	res/drawable-nodpi/emoji_1f6bf.png
+A	res/drawable-nodpi/emoji_1f6c0.png
+A	res/drawable-nodpi/emoji_1f6c1.png
+A	res/drawable-nodpi/emoji_1f6c2.png
+A	res/drawable-nodpi/emoji_1f6c3.png
+A	res/drawable-nodpi/emoji_1f6c4.png
+A	res/drawable-nodpi/emoji_1f6c5.png
+A	res/drawable-nodpi/emoji_203c.png
+A	res/drawable-nodpi/emoji_2049.png
+A	res/drawable-nodpi/emoji_2122.png
+A	res/drawable-nodpi/emoji_2139.png
+A	res/drawable-nodpi/emoji_2194.png
+A	res/drawable-nodpi/emoji_2195.png
+A	res/drawable-nodpi/emoji_2196.png
+A	res/drawable-nodpi/emoji_2197.png
+A	res/drawable-nodpi/emoji_2198.png
+A	res/drawable-nodpi/emoji_2199.png
+A	res/drawable-nodpi/emoji_21a9.png
+A	res/drawable-nodpi/emoji_21aa.png
+A	res/drawable-nodpi/emoji_231a.png
+A	res/drawable-nodpi/emoji_231b.png
+A	res/drawable-nodpi/emoji_23e9.png
+A	res/drawable-nodpi/emoji_23ea.png
+A	res/drawable-nodpi/emoji_23eb.png
+A	res/drawable-nodpi/emoji_23ec.png
+A	res/drawable-nodpi/emoji_23f0.png
+A	res/drawable-nodpi/emoji_23f3.png
+A	res/drawable-nodpi/emoji_24c2.png
+A	res/drawable-nodpi/emoji_25aa.png
+A	res/drawable-nodpi/emoji_25ab.png
+A	res/drawable-nodpi/emoji_25b6.png
+A	res/drawable-nodpi/emoji_25c0.png
+A	res/drawable-nodpi/emoji_25fb.png
+A	res/drawable-nodpi/emoji_25fc.png
+A	res/drawable-nodpi/emoji_25fd.png
+A	res/drawable-nodpi/emoji_25fe.png
+A	res/drawable-nodpi/emoji_2600.png
+A	res/drawable-nodpi/emoji_2601.png
+A	res/drawable-nodpi/emoji_260e.png
+A	res/drawable-nodpi/emoji_2611.png
+A	res/drawable-nodpi/emoji_2614.png
+A	res/drawable-nodpi/emoji_2615.png
+A	res/drawable-nodpi/emoji_261d.png
+A	res/drawable-nodpi/emoji_263a.png
+A	res/drawable-nodpi/emoji_2648.png
+A	res/drawable-nodpi/emoji_2649.png
+A	res/drawable-nodpi/emoji_264a.png
+A	res/drawable-nodpi/emoji_264b.png
+A	res/drawable-nodpi/emoji_264c.png
+A	res/drawable-nodpi/emoji_264d.png
+A	res/drawable-nodpi/emoji_264e.png
+A	res/drawable-nodpi/emoji_264f.png
+A	res/drawable-nodpi/emoji_2650.png
+A	res/drawable-nodpi/emoji_2651.png
+A	res/drawable-nodpi/emoji_2652.png
+A	res/drawable-nodpi/emoji_2653.png
+A	res/drawable-nodpi/emoji_2660.png
+A	res/drawable-nodpi/emoji_2663.png
+A	res/drawable-nodpi/emoji_2665.png
+A	res/drawable-nodpi/emoji_2666.png
+A	res/drawable-nodpi/emoji_2668.png
+A	res/drawable-nodpi/emoji_267b.png
+A	res/drawable-nodpi/emoji_267f.png
+A	res/drawable-nodpi/emoji_2693.png
+A	res/drawable-nodpi/emoji_26a0.png
+A	res/drawable-nodpi/emoji_26a1.png
+A	res/drawable-nodpi/emoji_26aa.png
+A	res/drawable-nodpi/emoji_26ab.png
+A	res/drawable-nodpi/emoji_26bd.png
+A	res/drawable-nodpi/emoji_26be.png
+A	res/drawable-nodpi/emoji_26c4.png
+A	res/drawable-nodpi/emoji_26c5.png
+A	res/drawable-nodpi/emoji_26ce.png
+A	res/drawable-nodpi/emoji_26d4.png
+A	res/drawable-nodpi/emoji_26ea.png
+A	res/drawable-nodpi/emoji_26f2.png
+A	res/drawable-nodpi/emoji_26f3.png
+A	res/drawable-nodpi/emoji_26f5.png
+A	res/drawable-nodpi/emoji_26fa.png
+A	res/drawable-nodpi/emoji_26fd.png
+A	res/drawable-nodpi/emoji_2702.png
+A	res/drawable-nodpi/emoji_2705.png
+A	res/drawable-nodpi/emoji_2708.png
+A	res/drawable-nodpi/emoji_2709.png
+A	res/drawable-nodpi/emoji_270a.png
+A	res/drawable-nodpi/emoji_270b.png
+A	res/drawable-nodpi/emoji_270c.png
+A	res/drawable-nodpi/emoji_270f.png
+A	res/drawable-nodpi/emoji_2712.png
+A	res/drawable-nodpi/emoji_2714.png
+A	res/drawable-nodpi/emoji_2716.png
+A	res/drawable-nodpi/emoji_2728.png
+A	res/drawable-nodpi/emoji_2733.png
+A	res/drawable-nodpi/emoji_2734.png
+A	res/drawable-nodpi/emoji_2744.png
+A	res/drawable-nodpi/emoji_2747.png
+A	res/drawable-nodpi/emoji_274c.png
+A	res/drawable-nodpi/emoji_274e.png
+A	res/drawable-nodpi/emoji_2753.png
+A	res/drawable-nodpi/emoji_2754.png
+A	res/drawable-nodpi/emoji_2755.png
+A	res/drawable-nodpi/emoji_2757.png
+A	res/drawable-nodpi/emoji_2764.png
+A	res/drawable-nodpi/emoji_2795.png
+A	res/drawable-nodpi/emoji_2796.png
+A	res/drawable-nodpi/emoji_2797.png
+A	res/drawable-nodpi/emoji_27a1.png
+A	res/drawable-nodpi/emoji_27b0.png
+A	res/drawable-nodpi/emoji_27bf.png
+A	res/drawable-nodpi/emoji_2934.png
+A	res/drawable-nodpi/emoji_2935.png
+A	res/drawable-nodpi/emoji_2b05.png
+A	res/drawable-nodpi/emoji_2b06.png
+A	res/drawable-nodpi/emoji_2b07.png
+A	res/drawable-nodpi/emoji_2b1b.png
+A	res/drawable-nodpi/emoji_2b1c.png
+A	res/drawable-nodpi/emoji_2b50.png
+A	res/drawable-nodpi/emoji_2b55.png
+A	res/drawable-nodpi/emoji_3030.png
+A	res/drawable-nodpi/emoji_303d.png
+A	res/drawable-nodpi/emoji_3297.png
+A	res/drawable-nodpi/emoji_3299.png
+A	res/drawable-xhdpi/ic_emoji_nature_light_activated.png
+A	res/drawable-xhdpi/ic_emoji_nature_light_normal.png
+A	res/drawable-xhdpi/ic_emoji_objects_light_activated.png
+A	res/drawable-xhdpi/ic_emoji_objects_light_normal.png
+A	res/drawable-xhdpi/ic_emoji_people_light_activated.png
+A	res/drawable-xhdpi/ic_emoji_people_light_normal.png
+A	res/drawable-xhdpi/ic_emoji_places_light_activated.png
+A	res/drawable-xhdpi/ic_emoji_places_light_normal.png
+A	res/drawable-xhdpi/ic_emoji_recent_light_activated.png
+A	res/drawable-xhdpi/ic_emoji_recent_light_normal.png
+A	res/drawable-xhdpi/ic_emoji_symbols_light_activated.png
+A	res/drawable-xhdpi/ic_emoji_symbols_light_normal.png
+A	res/drawable-xhdpi/ic_launcher.png
+A	res/drawable-xhdpi/keyboard_background_holo.9.png
+A	res/drawable-xhdpi/orca_attach_camera_normal.png
+A	res/drawable-xhdpi/orca_attach_camera_pressed.png
+A	res/drawable-xhdpi/orca_attach_location_normal.png
+A	res/drawable-xhdpi/orca_attach_location_pressed.png
+A	res/drawable-xhdpi/orca_attach_photo_normal.png
+A	res/drawable-xhdpi/orca_attach_photo_pressed.png
+A	res/drawable-xhdpi/orca_attachments_arrow.png
+A	res/drawable-xhdpi/orca_attachments_arrow_reversed.png
+A	res/drawable-xhdpi/orca_composer_divider_horizontal.9.png
+A	res/drawable-xhdpi/orca_composer_divider_vertical.9.png
+A	res/drawable-xhdpi/orca_composer_popup_active_normal.png
+A	res/drawable-xhdpi/orca_composer_popup_active_pressed.png
+A	res/drawable-xhdpi/orca_composer_popup_normal.png
+A	res/drawable-xhdpi/orca_composer_popup_pressed.png
+A	res/drawable-xhdpi/orca_composer_tab.9.png
+A	res/drawable-xhdpi/orca_composer_tab_active.9.png
+A	res/drawable-xhdpi/orca_composer_tab_dark.9.png
+A	res/drawable-xhdpi/orca_composer_tab_pressed.9.png
+A	res/drawable-xhdpi/orca_composer_top_divider.9.png
+A	res/drawable-xhdpi/orca_emoji_backspace_back_normal.png
+A	res/drawable-xhdpi/orca_emoji_backspace_front_normal.png
+A	res/drawable-xhdpi/orca_emoji_backspace_front_pressed.png
+A	res/drawable-xhdpi/orca_emoji_category_cars.png
+A	res/drawable-xhdpi/orca_emoji_category_nature.png
+A	res/drawable-xhdpi/orca_emoji_category_objects.png
+A	res/drawable-xhdpi/orca_emoji_category_people.png
+A	res/drawable-xhdpi/orca_emoji_category_punctuation.png
+A	res/drawable-xhdpi/orca_emoji_more_back_normal.png
+A	res/drawable-xhdpi/orca_emoji_more_front_normal.png
+A	res/drawable-xhdpi/orca_emoji_more_front_pressed.png
+A	res/drawable-xhdpi/sym_keyboard_delete_holo_dark.png
+A	res/drawable/ic_emoji_nature_light.xml
+A	res/drawable/ic_emoji_objects_light.xml
+A	res/drawable/ic_emoji_people_light.xml
+A	res/drawable/ic_emoji_places_light.xml
+A	res/drawable/ic_emoji_recent_light.xml
+A	res/drawable/ic_emoji_symbols_light.xml
+A	res/drawable/orca_composer_attach_camera_button.xml
+A	res/drawable/orca_composer_attach_location_button.xml
+A	res/drawable/orca_composer_attach_photo_button.xml
+A	res/drawable/orca_composer_popup_button.xml
+A	res/drawable/orca_composer_popup_button_active.xml
+A	res/drawable/orca_emoji_backspace_front_button.xml
+A	res/drawable/orca_emoji_more_front_button.xml
+A	res/drawable/orca_emoji_tab_background.xml
+A	res/drawable/orca_emoji_tab_dark_background.xml
+A	res/drawable/popup_bg.xml
+A	res/layout/emojicon_grid.xml
+A	res/layout/emojicon_item.xml
+A	res/layout/emojicons.xml
+A	res/values/attrs.xml
+A	res/values/strings.xml
+A	src/github/ankushsachdeva/emojicon/EmojiAdapter.java
+A	src/github/ankushsachdeva/emojicon/EmojiconEditText.java
+A	src/github/ankushsachdeva/emojicon/EmojiconGridView.java
+A	src/github/ankushsachdeva/emojicon/EmojiconHandler.java
+A	src/github/ankushsachdeva/emojicon/EmojiconRecents.java
+A	src/github/ankushsachdeva/emojicon/EmojiconRecentsGridView.java
+A	src/github/ankushsachdeva/emojicon/EmojiconRecentsManager.java
+A	src/github/ankushsachdeva/emojicon/EmojiconSpan.java
+A	src/github/ankushsachdeva/emojicon/EmojiconTextView.java
+A	src/github/ankushsachdeva/emojicon/EmojiconsPopup.java
+A	src/github/ankushsachdeva/emojicon/emoji/Emojicon.java
+A	src/github/ankushsachdeva/emojicon/emoji/Nature.java
+A	src/github/ankushsachdeva/emojicon/emoji/Objects.java
+A	src/github/ankushsachdeva/emojicon/emoji/People.java
+A	src/github/ankushsachdeva/emojicon/emoji/Places.java
+A	src/github/ankushsachdeva/emojicon/emoji/Symbols.java

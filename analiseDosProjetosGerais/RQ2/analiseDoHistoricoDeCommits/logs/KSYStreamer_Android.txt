@@ -1,0 +1,3587 @@
+1300d67;Merge pull request #272 from ksvc/gradle_version_update
+d32bda1;fix built warning.
+M	demo/build.gradle
+
+84bccf7;fix built error.
+M	demo/build.gradle
+
+802c832;fix built error.
+M	demo/build.gradle
+D	demo/gradle.properties
+M	demo/gradle/wrapper/gradle-wrapper.properties
+D	demo/project.properties
+
+11c7c1d;Merge pull request #271 from ksvc/v5.0.1-29799
+5823b69;update to v5.0.1-29799
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/x86/libksylive.so
+M	demo/res/layout/base_camera_activity.xml
+M	demo/res/layout/float_camera_activity.xml
+M	demo/res/layout/float_view_activity.xml
+M	demo/res/layout/std_camera_activity.xml
+M	demo/src/com/ksyun/media/streamer/demo/AnimatedImageCapture.java
+M	demo/src/com/ksyun/media/streamer/demo/AudioDemoFragment.java
+M	demo/src/com/ksyun/media/streamer/demo/AudioFuncFragment.java
+M	demo/src/com/ksyun/media/streamer/demo/AudioStreamingActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/BaseCameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/BaseDemoFragment.java
+M	demo/src/com/ksyun/media/streamer/demo/FloatCameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/FloatView.java
+M	demo/src/com/ksyun/media/streamer/demo/FloatViewActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/StdCameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/StdDemoFragment.java
+M	demo/src/com/ksyun/media/streamer/demo/StreamFuncFragment.java
+M	demo/src/com/ksyun/media/streamer/demo/VideoFilterFragment.java
+M	demo/src/com/ksyun/media/streamer/demo/WaterMarkFragment.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.OnAudioCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.PlayRanges.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.OnCameraCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.Size.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImageCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ViewCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/WaterMarkCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/AudioRecordParams.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/IKSYAudioRecord.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.OnTouchListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/ICameraHintView.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVCodecAudioDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVCodecVideoDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVDecoderWrapper.OnDecoded.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVDecoderWrapper.html
+M	docs/reference/com/ksyun/media/streamer/decoder/Decoder.DecoderErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/decoder/Decoder.DecoderInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/decoder/Decoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/MediaCodecAudioDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/MediaCodecVideoDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/decoder/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.OnAudioPtsChangedListener.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.OnVideoPtsChangedListener.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerMultiCapture.OnMuxerFormatDetected.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerMultiCapture.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerWrapper.OnDemuxed.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerWrapper.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.ErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/filter/AVPtsFilter.PTSFilterSinkPin.html
+A	docs/reference/com/ksyun/media/streamer/filter/AVPtsFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/APMFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/APMWrapper.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AVFilterWrapper.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioAPMFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResample.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResampleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioReverbFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioSLPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioSpeedFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioTrackPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/KSYAudioEffectFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufBeautyFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindAdvanceFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySpecialEffectsFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyStylizeFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgEffectFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgShaderXSingleFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgShake70sFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgShakeColorFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgShakeIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgShakeShockWaveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgShakeZoomFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexBufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/filter/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/filter/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVConst.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVFrameBase.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVPacketBase.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioCodecFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioPacket.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgPacket.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/PinAdapter.html
+M	docs/reference/com/ksyun/media/streamer/framework/SinkPin.html
+M	docs/reference/com/ksyun/media/streamer/framework/SrcPin.html
+M	docs/reference/com/ksyun/media/streamer/framework/VideoCodecFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/framework/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/OnAudioRawDataListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/OnPreviewFrameListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/com/ksyun/media/streamer/kit/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/kit/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.OnLogEventListener.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.html
+M	docs/reference/com/ksyun/media/streamer/logstats/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/logstats/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.PubListener.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherMgt.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.OnPubEvent.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.BwEstConfig.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/BitmapLoader.html
+M	docs/reference/com/ksyun/media/streamer/util/ContextUtil.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/AudioUtil.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfo.html
+M	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfoTools.OnRequesetDeviceInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfoTools.html
+M	docs/reference/com/ksyun/media/streamer/util/device/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/device/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.GLRenderListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.OnDrawFrameListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.OnReadyListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.OnReleasedListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.OnSizeChangedListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.ScreenShotListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/YUVLoader.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/package-summary.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	docs/reference/package-list
+M	docs/reference/packages.html
+
+e7ec066;Update README.asciidoc
+M	README.asciidoc
+
+bee0f57;Merge pull request #269 from ksvc/v5.0.0-28654
+2bab58f;update to v5.0.0-28654
+A	demo/assets/KSYResource/16_lightning.png
+A	demo/assets/KSYResource/17_ktv.png
+M	demo/libs/arm64-v8a/libksyapm.so
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksyapm.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksyapm.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/x86/libksyapm.so
+M	demo/libs/x86/libksylive.so
+M	demo/res/layout/demo_activity.xml
+A	demo/src/com/ksyun/media/streamer/demo/ImgTexGPUImageFilter.java
+M	demo/src/com/ksyun/media/streamer/demo/StdCameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/VideoFilterFragment.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImage.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImage3x3ConvolutionFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImage3x3TextureSamplingFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageAddBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageAlphaBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageBilateralFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageBoxBlurFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageBrightnessFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageBulgeDistortionFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageCGAColorspaceFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageChromaKeyBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageColorBalanceFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageColorBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageColorBurnBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageColorDodgeBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageColorInvertFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageColorMatrixFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageContrastFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageCrosshatchFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageDarkenBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageDifferenceBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageDilationFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageDirectionalSobelEdgeDetectionFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageDissolveBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageDivideBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageEmbossFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageExclusionBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageExposureFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageFalseColorFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageFilterGroup.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageGammaFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageGaussianBlurFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageGlassSphereFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageGrayscaleFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageHalftoneFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageHardLightBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageHazeFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageHighlightShadowFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageHueBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageHueFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageKuwaharaFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageLaplacianFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageLevelsFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageLightenBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageLinearBurnBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageLookupFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageLuminosityBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageMixBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageMonochromeFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageMultiplyBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageNativeLibrary.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageNonMaximumSuppressionFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageNormalBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageOpacityFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageOverlayBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImagePixelationFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImagePosterizeFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageRGBDilationFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageRGBFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageRenderer.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSaturationBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSaturationFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageScreenBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSepiaFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSharpenFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSketchFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSmoothToonFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSobelEdgeDetection.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSobelThresholdFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSoftLightBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSourceOverBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSphereRefractionFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSubtractBlendFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageSwirlFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageThresholdEdgeDetection.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageToneCurveFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageToonFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageTransformFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageTwoInputFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageTwoPassFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageTwoPassTextureSamplingFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageView.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageVignetteFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageWeakPixelInclusionFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/GPUImageWhiteBalanceFilter.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/OpenGlUtils.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/PixelBuffer.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/Rotation.java
+A	demo/src/jp/co/cyberagent/android/gpuimage/util/TextureRotationUtil.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVCodecAudioDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVCodecVideoDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVDecoderWrapper.OnDecoded.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVDecoderWrapper.html
+M	docs/reference/com/ksyun/media/streamer/decoder/Decoder.DecoderErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/decoder/Decoder.DecoderInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/decoder/Decoder.html
+A	docs/reference/com/ksyun/media/streamer/decoder/MediaCodecAudioDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/MediaCodecVideoDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/decoder/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.OnAudioPtsChangedListener.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.OnVideoPtsChangedListener.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerMultiCapture.OnMuxerFormatDetected.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerMultiCapture.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerWrapper.OnDemuxed.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerWrapper.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.ErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioSpeedFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/KSYAudioEffectFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindAdvanceFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySpecialEffectsFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyStylizeFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgEffectFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgShakeColorFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgShakeShockWaveFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgShakeZoomFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexBufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVConst.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVFrameBase.html
+A	docs/reference/com/ksyun/media/streamer/framework/AVPacketBase.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFrame.html
+A	docs/reference/com/ksyun/media/streamer/framework/AudioCodecFormat.html
+A	docs/reference/com/ksyun/media/streamer/framework/AudioPacket.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFrame.html
+A	docs/reference/com/ksyun/media/streamer/framework/ImgPacket.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/PinAdapter.html
+M	docs/reference/com/ksyun/media/streamer/framework/SinkPin.html
+M	docs/reference/com/ksyun/media/streamer/framework/SrcPin.html
+A	docs/reference/com/ksyun/media/streamer/framework/VideoCodecFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/framework/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherMgt.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.GLRenderListener.html
+A	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.OnDrawFrameListener.html
+A	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.OnReadyListener.html
+A	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.OnReleasedListener.html
+A	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.OnSizeChangedListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.ScreenShotListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/YUVLoader.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-summary.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	src/KSYStreamer.java
+
+e4a7282;Merge pull request #268 from ksvc/update_v4.4.3
+29422e1;update to v4.4.3
+M	demo/libs/ksylive.jar
+
+5ce64b3;Merge pull request #261 from ksvc/v4.4.2-22966
+6816efd;update to v4.4.2-22966
+M	demo/AndroidManifest.xml
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/x86/libksylive.so
+A	demo/res/layout/audio_demo_fragment.xml
+A	demo/res/layout/audio_streaming_activity.xml
+M	demo/res/layout/video_filter_fragment.xml
+A	demo/src/com/ksyun/media/streamer/demo/AudioDemoFragment.java
+A	demo/src/com/ksyun/media/streamer/demo/AudioStreamingActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+M	docs/reference/com/ksyun/media/streamer/decoder/AVCodecAudioDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVCodecVideoDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVDecoderWrapper.html
+M	docs/reference/com/ksyun/media/streamer/decoder/Decoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/MediaCodecVideoDecoder.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerMultiCapture.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerWrapper.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindAdvanceFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyStylizeFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/current.xml
+M	src/KSYStreamer.java
+
+1b4ee42;Update README.asciidoc
+M	README.asciidoc
+
+043517d;Update README.asciidoc
+M	README.asciidoc
+
+8de6756;Merge pull request #259 from ksvc/v4.4.1-21459
+5ef0c0a;update to v4.4.1-21459
+M	demo/libs/arm64-v8a/libksyapm.so
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksyapm.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksyapm.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/x86/libksyapm.so
+M	demo/libs/x86/libksylive.so
+M	docs/reference/com/ksyun/media/streamer/decoder/MediaCodecVideoDecoder.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/current.xml
+
+5c1fa97;Update README.asciidoc
+M	README.asciidoc
+
+1d77ea0;Merge pull request #254 from ksvc/v4.4.0-20061
+a18fcc6;fix built error.
+M	demo/build.gradle
+
+18e40ca;update to v4.4.0-20061
+M	demo/AndroidManifest.xml
+M	demo/assets/KSYResource/0_pink.png
+M	demo/assets/KSYResource/0_ruddy2.png
+M	demo/assets/KSYResource/10_sunshine_night.png
+M	demo/assets/KSYResource/11_ruddy.png
+M	demo/assets/KSYResource/12_sunshine.png
+M	demo/assets/KSYResource/13_nature.png
+M	demo/assets/KSYResource/14_amatorka.png
+M	demo/assets/KSYResource/15_elegance_1.png
+M	demo/assets/KSYResource/1_freshy.png
+M	demo/assets/KSYResource/2_beauty.png
+M	demo/assets/KSYResource/3_sweety.png
+M	demo/assets/KSYResource/4_sepia.png
+M	demo/assets/KSYResource/5_blue.png
+M	demo/assets/KSYResource/6_nostalgia.png
+M	demo/assets/KSYResource/7_sakura.png
+M	demo/assets/KSYResource/8_sakura_night.png
+M	demo/assets/KSYResource/9_ruddy_night.png
+M	demo/assets/KSYResource/blackboard_1024.png
+M	demo/assets/KSYResource/blowout_1977.png
+M	demo/assets/KSYResource/brannan_blowout.png
+M	demo/assets/KSYResource/brannan_contrast.png
+M	demo/assets/KSYResource/earlybird_blowout.png
+M	demo/assets/KSYResource/edge_burn.png
+M	demo/assets/KSYResource/hefe_metal.png
+M	demo/assets/KSYResource/hefe_soft_light.png
+M	demo/assets/KSYResource/hudson_background.png
+M	demo/assets/KSYResource/overlay_map.png
+M	demo/assets/KSYResource/sierra_vignette.png
+M	demo/assets/KSYResource/soft_light.png
+M	demo/assets/KSYResource/sutro_edge_burn.png
+M	demo/assets/KSYResource/sutro_metal.png
+M	demo/assets/KSYResource/toaster_metal.png
+M	demo/assets/KSYResource/toaster_soft_light.png
+M	demo/assets/KSYResource/vignette_map.png
+M	demo/libs/arm64-v8a/libksyapm.so
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksyapm.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksyapm.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/x86/libksyapm.so
+M	demo/libs/x86/libksylive.so
+A	demo/res/drawable-xhdpi/camera_exposure_disable.png
+A	demo/res/drawable-xhdpi/camera_exposure_highlight.png
+A	demo/res/drawable-xhdpi/camera_exposure_normal.png
+R100	demo/res/drawable-xhdpi/record_flash_disable.png	demo/res/drawable-xhdpi/camera_flash_disable.png
+R100	demo/res/drawable-xhdpi/record_flash_highlighted.png	demo/res/drawable-xhdpi/camera_flash_highlight.png
+R100	demo/res/drawable-xhdpi/record_flash_normal.png	demo/res/drawable-xhdpi/camera_flash_normal.png
+R100	demo/res/drawable-xhdpi/record_switch_camera_disable.png	demo/res/drawable-xhdpi/camera_switch_disable.png
+R100	demo/res/drawable-xhdpi/record_switch_camera_highlighted.png	demo/res/drawable-xhdpi/camera_switch_highlight.png
+R100	demo/res/drawable-xhdpi/record_switch_camera_normal.png	demo/res/drawable-xhdpi/camera_switch_normal.png
+D	demo/res/drawable-xhdpi/exposure.png
+D	demo/res/drawable-xhdpi/record_exit_disable.png
+D	demo/res/drawable-xhdpi/record_exit_normal.png
+D	demo/res/drawable-xhdpi/record_exitsure_normal.png
+A	demo/res/drawable-xhdpi/screen_cap_disable.png
+A	demo/res/drawable-xhdpi/screen_cap_highlight.png
+A	demo/res/drawable-xhdpi/screen_cap_normal.png
+R100	demo/res/drawable-xhdpi/record_add_disable.png	demo/res/drawable-xhdpi/view_add_disable.png
+R100	demo/res/drawable-xhdpi/record_add_highlight.png	demo/res/drawable-xhdpi/view_add_highlight.png
+R100	demo/res/drawable-xhdpi/record_add_normal.png	demo/res/drawable-xhdpi/view_add_normal.png
+A	demo/res/drawable/camera_exposure_icon.xml
+R051	demo/res/drawable/recorder_flash_icon.xml	demo/res/drawable/camera_flash_icon.xml
+A	demo/res/drawable/camera_switch_icon.xml
+D	demo/res/drawable/recorder_delete_icon.xml
+D	demo/res/drawable/recorder_rotate_icon.xml
+R050	demo/res/drawable/recorder_add_icon.xml	demo/res/drawable/screen_cap_icon.xml
+A	demo/res/drawable/view_add_icon.xml
+A	demo/res/layout/audio_func_fragment.xml
+A	demo/res/layout/base_camera_actionbar.xml
+A	demo/res/layout/base_camera_activity.xml
+A	demo/res/layout/base_demo_fragment.xml
+D	demo/res/layout/camera_activity.xml
+D	demo/res/layout/camera_bottombar.xml
+A	demo/res/layout/camera_expose_layout.xml
+M	demo/res/layout/camera_titlebar.xml
+M	demo/res/layout/demo_activity.xml
+A	demo/res/layout/float_camera_actionbar.xml
+A	demo/res/layout/float_camera_activity.xml
+R100	demo/res/layout/goods_activity.xml	demo/res/layout/float_view_activity.xml
+A	demo/res/layout/std_camera_actionbar.xml
+A	demo/res/layout/std_camera_activity.xml
+A	demo/res/layout/std_demo_fragment.xml
+A	demo/res/layout/stream_func_fragment.xml
+R076	demo/res/layout/beauty_choose.xml	demo/res/layout/video_filter_fragment.xml
+A	demo/res/layout/watermark_fragment.xml
+M	demo/res/values/strings.xml
+M	demo/src/com/ksyun/media/streamer/demo/AnimatedImageCapture.java
+A	demo/src/com/ksyun/media/streamer/demo/AudioFuncFragment.java
+A	demo/src/com/ksyun/media/streamer/demo/BaseCameraActivity.java
+A	demo/src/com/ksyun/media/streamer/demo/BaseDemoFragment.java
+A	demo/src/com/ksyun/media/streamer/demo/BluetoothHeadsetUtils.java
+D	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+D	demo/src/com/ksyun/media/streamer/demo/DemoFilter2.java
+D	demo/src/com/ksyun/media/streamer/demo/DemoFilter3.java
+D	demo/src/com/ksyun/media/streamer/demo/DemoFilter4.java
+A	demo/src/com/ksyun/media/streamer/demo/DemoFragment.java
+A	demo/src/com/ksyun/media/streamer/demo/FloatCameraActivity.java
+A	demo/src/com/ksyun/media/streamer/demo/FloatDemoFragment.java
+M	demo/src/com/ksyun/media/streamer/demo/FloatViewActivity.java
+A	demo/src/com/ksyun/media/streamer/demo/StdCameraActivity.java
+A	demo/src/com/ksyun/media/streamer/demo/StdDemoFragment.java
+A	demo/src/com/ksyun/media/streamer/demo/StreamFuncFragment.java
+D	demo/src/com/ksyun/media/streamer/demo/VerticalSeekBar.java
+A	demo/src/com/ksyun/media/streamer/demo/VideoFilterFragment.java
+A	demo/src/com/ksyun/media/streamer/demo/WaterMarkFragment.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ViewCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/WaterMarkCapture.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVCodecAudioDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVCodecVideoDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVDecoderWrapper.OnDecoded.html
+M	docs/reference/com/ksyun/media/streamer/decoder/AVDecoderWrapper.html
+M	docs/reference/com/ksyun/media/streamer/decoder/Decoder.DecoderErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/decoder/Decoder.DecoderInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/decoder/Decoder.html
+A	docs/reference/com/ksyun/media/streamer/decoder/MediaCodecVideoDecoder.html
+M	docs/reference/com/ksyun/media/streamer/decoder/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/decoder/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.OnVideoPtsChangedListener.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.html
+R091	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.OnMuxerFormatDetected.html	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerMultiCapture.OnMuxerFormatDetected.html
+A	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerMultiCapture.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerWrapper.OnDemuxed.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerWrapper.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/demuxer/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/APMFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/APMWrapper.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/AVFilterWrapper.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioAPMFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResample.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResampleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioReverbFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioSLPlayer.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/AudioSpeedFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioTrackPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/KSYAudioEffectFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindAdvanceFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySpecialEffectsFilter.html
+R077	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgStyleBaseFilter.html	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyStylizeFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexBufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+A	docs/reference/com/ksyun/media/streamer/util/BitmapLoader.html
+M	docs/reference/com/ksyun/media/streamer/util/ContextUtil.html
+M	docs/reference/com/ksyun/media/streamer/util/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/package-summary.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	src/KSYStreamer.java
+
+7fcc360;Merge pull request #240 from ksvc/v4.3.5-16790
+54bd8fb;update to v4.3.5-16790
+M	demo/libs/ksylive.jar
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/current.xml
+
+1176394;Update README.asciidoc
+M	README.asciidoc
+
+6ae7b18;Merge pull request #239 from ksvc/v4.3.4-16342
+252f32c;update to v4.3.4-16342
+M	demo/libs/ksylive.jar
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/current.xml
+
+2020af1;Merge pull request #233 from ksvc/v4.3.3-15893
+4b29f32;update to v4.3.3-15893
+A	demo/assets/KSYResource/14_amatorka.png
+A	demo/assets/KSYResource/15_elegance_1.png
+A	demo/assets/KSYResource/amaro_map.png
+A	demo/assets/KSYResource/blackboard_1024.png
+A	demo/assets/KSYResource/blowout_1977.png
+A	demo/assets/KSYResource/brannan_blowout.png
+A	demo/assets/KSYResource/brannan_contrast.png
+A	demo/assets/KSYResource/brannan_luma.png
+A	demo/assets/KSYResource/brannan_process.png
+A	demo/assets/KSYResource/brannan_screen.png
+A	demo/assets/KSYResource/early_bird_curves.png
+A	demo/assets/KSYResource/earlybird_blowout.png
+A	demo/assets/KSYResource/earlybird_map.png
+A	demo/assets/KSYResource/earlybird_overlay_map.png
+A	demo/assets/KSYResource/edge_burn.png
+A	demo/assets/KSYResource/hefe_gradient_map.png
+A	demo/assets/KSYResource/hefe_map.png
+A	demo/assets/KSYResource/hefe_metal.png
+A	demo/assets/KSYResource/hefe_soft_light.png
+A	demo/assets/KSYResource/hudson_background.png
+A	demo/assets/KSYResource/hudson_map.png
+A	demo/assets/KSYResource/inkwell_map.png
+A	demo/assets/KSYResource/kelvin_map.png
+A	demo/assets/KSYResource/lomo_map.png
+A	demo/assets/KSYResource/map_1977.png
+A	demo/assets/KSYResource/nashville_map.png
+A	demo/assets/KSYResource/nashwi.png
+A	demo/assets/KSYResource/overlay_map.png
+A	demo/assets/KSYResource/rise_map.png
+A	demo/assets/KSYResource/sierra_map.png
+A	demo/assets/KSYResource/sierra_vignette.png
+A	demo/assets/KSYResource/soft_light.png
+A	demo/assets/KSYResource/sutro_curves.png
+A	demo/assets/KSYResource/sutro_edge_burn.png
+A	demo/assets/KSYResource/sutro_metal.png
+A	demo/assets/KSYResource/toaster_color_shift.png
+A	demo/assets/KSYResource/toaster_curves.png
+A	demo/assets/KSYResource/toaster_metal.png
+A	demo/assets/KSYResource/toaster_overlay_map_warm.png
+A	demo/assets/KSYResource/toaster_soft_light.png
+A	demo/assets/KSYResource/valencia_gradient_map.png
+A	demo/assets/KSYResource/valencia_map.png
+A	demo/assets/KSYResource/vignette_map.png
+A	demo/assets/KSYResource/walden_map.png
+A	demo/assets/KSYResource/xpro_map.png
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/x86/libksylive.so
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.OnAudioCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.PlayRanges.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.OnCameraCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.Size.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImageCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ViewCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/WaterMarkCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/AudioRecordParams.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/IKSYAudioRecord.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.OnTouchListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/ICameraHintView.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/decoder/AVCodecAudioDecoder.html
+A	docs/reference/com/ksyun/media/streamer/decoder/AVCodecVideoDecoder.html
+A	docs/reference/com/ksyun/media/streamer/decoder/AVDecoderWrapper.OnDecoded.html
+A	docs/reference/com/ksyun/media/streamer/decoder/AVDecoderWrapper.html
+A	docs/reference/com/ksyun/media/streamer/decoder/Decoder.DecoderErrorListener.html
+A	docs/reference/com/ksyun/media/streamer/decoder/Decoder.DecoderInfoListener.html
+A	docs/reference/com/ksyun/media/streamer/decoder/Decoder.html
+A	docs/reference/com/ksyun/media/streamer/decoder/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/decoder/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.OnMuxerFormatDetected.html
+A	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerCapture.html
+A	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerWrapper.OnDemuxed.html
+A	docs/reference/com/ksyun/media/streamer/demuxer/AVDemuxerWrapper.html
+A	docs/reference/com/ksyun/media/streamer/demuxer/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/demuxer/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.ErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/APMFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/APMWrapper.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioAPMFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResample.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResampleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioReverbFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioSLPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioTrackPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/KSYAudioEffectFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufBeautyFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindAdvanceFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySpecialEffectsFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgStyleBaseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexBufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVConst.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVFrameBase.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/PinAdapter.html
+M	docs/reference/com/ksyun/media/streamer/framework/SinkPin.html
+M	docs/reference/com/ksyun/media/streamer/framework/SrcPin.html
+M	docs/reference/com/ksyun/media/streamer/framework/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/framework/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/OnAudioRawDataListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/OnPreviewFrameListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/com/ksyun/media/streamer/kit/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/kit/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.OnLogEventListener.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.html
+M	docs/reference/com/ksyun/media/streamer/logstats/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/logstats/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.PubListener.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherMgt.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.OnPubEvent.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.BwEstConfig.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/ContextUtil.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/AudioUtil.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfo.html
+M	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfoTools.OnRequesetDeviceInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfoTools.html
+M	docs/reference/com/ksyun/media/streamer/util/device/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/device/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.GLRenderListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.ScreenShotListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+A	docs/reference/com/ksyun/media/streamer/util/gles/YUVLoader.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/package-summary.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	docs/reference/package-list
+M	docs/reference/packages.html
+M	src/KSYStreamer.java
+
+0a2cead;Update README.asciidoc
+M	README.asciidoc
+
+d0118b1;Update README.asciidoc
+M	README.asciidoc
+
+df1a076;Update README.asciidoc
+M	README.asciidoc
+
+919025d;Update README.asciidoc
+M	README.asciidoc
+
+4f3626a;Merge pull request #221 from ksvc/v4.3.2-14244
+694c7b0;update to v4.3.2-14244
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/x86/libksylive.so
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.html
+M	docs/reference/current.xml
+M	src/KSYStreamer.java
+
+4dac9ec;Update README.asciidoc
+M	README.asciidoc
+
+63294f6;Merge pull request #213 from ksvc/update_depends
+0b22494;fix built error.
+M	demo/build.gradle
+
+9ae0b6d;Merge pull request #212 from ksvc/v4.3.1-13346
+80b4383;update to v4.3.1-13346
+A	demo/assets/ksyun.webp
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/x86/libksylive.so
+A	demo/res/drawable-xhdpi/exposure.png
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/camera_titlebar.xml
+A	demo/src/com/ksyun/media/streamer/demo/AnimatedImageCapture.java
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoApplication.java
+A	demo/src/com/ksyun/media/streamer/demo/VerticalSeekBar.java
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/current.xml
+M	src/KSYStreamer.java
+
+6ed1621;Update README.asciidoc
+M	README.asciidoc
+
+20166b8;Update README.asciidoc
+M	README.asciidoc
+
+62d8d37;Update README.asciidoc
+M	README.asciidoc
+
+d3b7cea;Update README.asciidoc
+M	README.asciidoc
+
+a1bb462;Update README.asciidoc
+M	README.asciidoc
+
+75cc6a8;Update README.asciidoc
+M	README.asciidoc
+
+6c040ae;Merge pull request #200 from ksvc/v4.3.0-12372
+9244ad7;update to v4.3.0-12372
+A	demo/libs/arm64-v8a/libksyapm.so
+M	demo/libs/arm64-v8a/libksylive.so
+A	demo/libs/armeabi-v7a/libksyapm.so
+M	demo/libs/armeabi-v7a/libksylive.so
+A	demo/libs/armeabi/libksyapm.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+D	demo/libs/libksyplayer.jar
+D	demo/libs/libksystat.jar
+A	demo/libs/x86/libksyapm.so
+M	demo/libs/x86/libksylive.so
+M	demo/res/layout/camera_bottombar.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/APMFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/APMWrapper.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/AudioAPMFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResample.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResampleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioReverbFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioSLPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioTrackPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/KSYAudioEffectFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVConst.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	src/KSYStreamer.java
+
+e990276;Update README.asciidoc
+M	README.asciidoc
+
+82b073c;Update README.asciidoc
+M	README.asciidoc
+
+a56779f;Merge pull request #195 from ksvc/fix_built_error
+4143f82;fix built error.
+M	demo/build.gradle
+M	demo/gradle.properties
+M	demo/gradle/wrapper/gradle-wrapper.properties
+
+1c1fc4b;Update README.asciidoc
+M	README.asciidoc
+
+8990480;Merge pull request #194 from ksvc/v4.2.4-10883
+5c69a9b;update to v4.2.4-10883
+D	demo/assets/KSYResource/0_skinColor.png
+A	demo/assets/KSYResource/10_sunshine_night.png
+A	demo/assets/KSYResource/11_ruddy.png
+A	demo/assets/KSYResource/12_sunshine.png
+R100	demo/assets/KSYResource/0_whiten.png	demo/assets/KSYResource/13_nature.png
+A	demo/assets/KSYResource/7_sakura.png
+A	demo/assets/KSYResource/8_sakura_night.png
+A	demo/assets/KSYResource/9_ruddy_night.png
+A	demo/assets/bg.jpg
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/libksyplayer.jar
+M	demo/libs/x86/libksylive.so
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/camera_bottombar.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.OnAudioCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.html
+A	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.PlayRanges.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.OnCameraCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.Size.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+A	docs/reference/com/ksyun/media/streamer/capture/ImageCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+A	docs/reference/com/ksyun/media/streamer/capture/ViewCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/WaterMarkCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/KSYAudioEffectFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+R093	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindSimpleFilter.html	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindAdvanceFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySpecialEffectsFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexBufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	src/KSYStreamer.java
+
+d569850;Update README.asciidoc
+M	README.asciidoc
+
+5069056;Update README.asciidoc
+M	README.asciidoc
+
+37141c8;Update README.asciidoc
+M	README.asciidoc
+
+24c0f59;Update README.asciidoc
+M	README.asciidoc
+
+b6adc84;Update README.asciidoc
+M	README.asciidoc
+
+4d1e52b;Update README.asciidoc
+M	README.asciidoc
+
+dfa5764;Update README.asciidoc
+M	README.asciidoc
+
+3e96b51;Update README.asciidoc
+M	README.asciidoc
+
+7cdccd4;Update README.asciidoc
+M	README.asciidoc
+
+4e39d23;Update README.asciidoc
+M	README.asciidoc
+
+b27b395;Update README.asciidoc
+M	README.asciidoc
+
+373abd9;Update README.asciidoc
+M	README.asciidoc
+
+585e815;Update README.asciidoc
+M	README.asciidoc
+
+223d93e;Update README.asciidoc
+M	README.asciidoc
+
+2259690;Merge pull request #184 from ksvc/v4.2.3-8801
+af13539;update to v4.2.3-8801
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/libksyplayer.jar
+M	demo/libs/x86/libksylive.so
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/layout/demo_activity.xml
+M	demo/res/values/strings.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/IKSYAudioRecord.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioPreview.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResample.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResampleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioReverbFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioSLPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioTrackPlayer.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/KSYAudioEffectFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindSimpleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-summary.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	src/KSYStreamer.java
+
+c6a8851;Update README.asciidoc
+M	README.asciidoc
+
+ae4393b;Merge pull request #173 from ksvc/v4.2.2-7573
+98674f8;update to v4.2.2-7573
+M	demo/libs/arm64-v8a/libksylive.so
+M	demo/libs/armeabi-v7a/libksylive.so
+M	demo/libs/armeabi/libksylive.so
+M	demo/libs/ksylive.jar
+M	demo/libs/libksyplayer.jar
+M	demo/libs/x86/libksylive.so
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/FloatViewActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindSimpleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySpecialEffectsFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexBufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVFrameBase.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFrame.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherMgt.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	src/KSYStreamer.java
+
+b69bb6c;Update README.asciidoc
+M	README.asciidoc
+
+07f8589;Update README.asciidoc
+M	README.asciidoc
+
+6fac22f;Update README.asciidoc
+M	README.asciidoc
+
+b1c5c87;Merge pull request #170 from ksvc/v4.2.1
+780a5f3;update KSYStreamer.java
+M	src/KSYStreamer.java
+
+a756d4f;Update README.asciidoc
+M	README.asciidoc
+
+73758a0;Merge pull request #166 from ksvc/v4.2.1
+2e16351;update to v4.2.1
+M	src/KSYStreamer.java
+
+f08b85f;update to v4.2.1
+D	demo/libs
+R069	libs/arm64-v8a/libksylive.so	demo/libs/arm64-v8a/libksylive.so
+R068	libs/armeabi-v7a/libksylive.so	demo/libs/armeabi-v7a/libksylive.so
+R079	libs/armeabi/libksylive.so	demo/libs/armeabi/libksylive.so
+R052	libs/ksylive.jar	demo/libs/ksylive.jar
+R060	libs/libksyplayer.jar	demo/libs/libksyplayer.jar
+R100	libs/libksystat.jar	demo/libs/libksystat.jar
+R072	libs/x86/libksylive.so	demo/libs/x86/libksylive.so
+M	demo/res/layout/demo_activity.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/FloatViewActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.OnAudioCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.OnCameraCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.Size.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/WaterMarkCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/AudioRecordParams.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/IKSYAudioRecord.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.OnTouchListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/ICameraHintView.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.ErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResampleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioReverbFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioSLPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioTrackPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufBeautyFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindSimpleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySpecialEffectsFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexBufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVConst.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVFrameBase.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/PinAdapter.html
+M	docs/reference/com/ksyun/media/streamer/framework/SinkPin.html
+M	docs/reference/com/ksyun/media/streamer/framework/SrcPin.html
+M	docs/reference/com/ksyun/media/streamer/framework/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/framework/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/OnAudioRawDataListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/OnPreviewFrameListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/com/ksyun/media/streamer/kit/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/kit/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.OnLogEventListener.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.html
+M	docs/reference/com/ksyun/media/streamer/logstats/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/logstats/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.PubListener.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherMgt.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.OnPubEvent.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.BwEstConfig.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/util/ContextUtil.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/AudioUtil.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfo.html
+M	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfoTools.OnRequesetDeviceInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfoTools.html
+M	docs/reference/com/ksyun/media/streamer/util/device/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/device/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.GLRenderListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.ScreenShotListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/util/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/util/package-summary.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	docs/reference/package-list
+M	docs/reference/packages.html
+A	libs
+
+7ad23ee;Update README.asciidoc
+M	README.asciidoc
+
+204e161;Update README.asciidoc
+M	README.asciidoc
+
+50e90bf;Update README.asciidoc
+M	README.asciidoc
+
+6dc42c5;Update README.asciidoc
+M	README.asciidoc
+
+9ffaf8a;Update README.asciidoc
+M	README.asciidoc
+
+958ae35;Update README.asciidoc
+M	README.asciidoc
+
+9dde49f;Update README.asciidoc
+M	README.asciidoc
+
+ae29be3;Update README.asciidoc
+M	README.asciidoc
+
+59bd92c;Update README.asciidoc
+M	README.asciidoc
+
+3d16ec8;Merge pull request #162 from ksvc/v4.2.0
+4bf35eb;update to v4.2.0
+M	src/KSYStreamer.java
+
+24c5350;update to v4.2.0
+M	demo/AndroidManifest.xml
+A	demo/res/drawable-xhdpi/record_add_disable.png
+A	demo/res/drawable-xhdpi/record_add_highlight.png
+A	demo/res/drawable-xhdpi/record_add_normal.png
+D	demo/res/drawable-xhdpi/switch_camera_open.png
+D	demo/res/drawable-xxhdpi/ksy_logo.png
+A	demo/res/drawable/recorder_add_icon.xml
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/layout/camera_titlebar.xml
+M	demo/res/values/colors.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/FloatViewActivity.java
+D	demo/src/com/ksyun/media/streamer/demo/FloatViewActivity2.java
+M	demo/src/com/ksyun/media/streamer/demo/KSYGlobalStreamer.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.OnAudioCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.OnCameraCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.Size.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/WaterMarkCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/AudioRecordParams.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/IKSYAudioRecord.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResampleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioReverbFilter.html
+R062	docs/reference/com/ksyun/media/streamer/capture/audio/KSYAudioRecordES.html	docs/reference/com/ksyun/media/streamer/filter/audio/AudioSLPlayer.html
+R068	docs/reference/com/ksyun/media/streamer/capture/AudioDummyCapture.html	docs/reference/com/ksyun/media/streamer/filter/audio/AudioTrackPlayer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindSimpleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/PinAdapter.html
+M	docs/reference/com/ksyun/media/streamer/framework/SrcPin.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+D	docs/reference/com/ksyun/media/streamer/kit/KSYStreamerConfig.Builder.html
+D	docs/reference/com/ksyun/media/streamer/kit/KSYStreamerConfig.ENCODE_METHOD.html
+D	docs/reference/com/ksyun/media/streamer/kit/KSYStreamerConfig.html
+M	docs/reference/com/ksyun/media/streamer/kit/OnAudioRawDataListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/OnPreviewFrameListener.html
+D	docs/reference/com/ksyun/media/streamer/kit/RecorderConstants.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/com/ksyun/media/streamer/kit/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/kit/package-summary.html
+R061	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnBgmPlayerListener.html	docs/reference/com/ksyun/media/streamer/util/audio/AudioUtil.html
+D	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnCompletionListener.html
+D	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnErrorListener.html
+D	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnPcmAvailableListener.html
+D	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/armeabi/libksylive.so
+M	libs/ksylive.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksylive.so
+
+1f10ea2;Update README.asciidoc
+M	README.asciidoc
+
+5ed0138;Update README.asciidoc
+M	README.asciidoc
+
+ffa19a4;Update README.asciidoc
+M	README.asciidoc
+
+d214428;Update README.asciidoc
+M	README.asciidoc
+
+d38bde3;Update README.asciidoc
+M	README.asciidoc
+
+8755ab6;Update README.asciidoc
+M	README.asciidoc
+
+e28e8ef;Merge pull request #151 from ksvc/v4.1.5
+3d3a17d;update to v4.1.5
+A	demo/res/drawable-xhdpi/switch_camera_open.png
+A	demo/res/drawable/float_back.png
+A	demo/res/drawable/float_close.png
+A	demo/res/layout/float_preview.xml
+A	demo/res/layout/goods_activity.xml
+A	demo/src/com/ksyun/media/streamer/demo/FloatView.java
+A	demo/src/com/ksyun/media/streamer/demo/FloatViewActivity.java
+A	demo/src/com/ksyun/media/streamer/demo/FloatViewActivity2.java
+A	demo/src/com/ksyun/media/streamer/demo/KSYGlobalStreamer.java
+A	docs/reference/com/ksyun/media/streamer/publisher/RTPPublisher.html
+
+eea899d;Merge pull request #150 from ksvc/v4.1.5
+7e66af1;update to v4.1.5
+M	demo/AndroidManifest.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.PubListener.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherMgt.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.OnPubEvent.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.BwEstConfig.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/armeabi/libksylive.so
+M	libs/ksylive.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksylive.so
+M	src/KSYStreamer.java
+
+4af71ce;Update README.asciidoc
+M	README.asciidoc
+
+71137af;Merge pull request #144 from ksvc/v4.1.4.5
+3e81c27;update to 4.1.4.5
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/armeabi/libksylive.so
+M	libs/ksylive.jar
+M	libs/x86/libksylive.so
+
+7cbc022;Merge pull request #143 from ksvc/v4.1.4
+342a6c7;update to v4.1.4
+M	demo/AndroidManifest.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+A	demo/src/com/ksyun/media/streamer/demo/DemoApplication.java
+A	demo/src/com/ksyun/media/streamer/demo/ImgTexCustomFilter.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.OnAudioCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioDummyCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.OnCameraCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.Size.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/WaterMarkCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/AudioRecordParams.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/IKSYAudioRecord.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/KSYAudioRecordES.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.OnTouchListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/ICameraHintView.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncoderMgt.html
+A	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.ErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioPreview.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResampleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioReverbFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufBeautyFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindSimpleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySpecialEffectsFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexBufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVConst.html
+M	docs/reference/com/ksyun/media/streamer/framework/AVFrameBase.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgTexFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/PinAdapter.html
+M	docs/reference/com/ksyun/media/streamer/framework/SinkPin.html
+M	docs/reference/com/ksyun/media/streamer/framework/SrcPin.html
+M	docs/reference/com/ksyun/media/streamer/framework/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/framework/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnInfoListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamerConfig.Builder.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamerConfig.ENCODE_METHOD.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamerConfig.html
+M	docs/reference/com/ksyun/media/streamer/kit/OnAudioRawDataListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/OnPreviewFrameListener.html
+M	docs/reference/com/ksyun/media/streamer/kit/RecorderConstants.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/com/ksyun/media/streamer/kit/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/kit/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.OnLogEventListener.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.html
+M	docs/reference/com/ksyun/media/streamer/logstats/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/logstats/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.PubListener.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherMgt.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.OnPubEvent.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.BwEstConfig.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnBgmPlayerListener.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnCompletionListener.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnPcmAvailableListener.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/audio/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfo.html
+A	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfoTools.OnRequesetDeviceInfoListener.html
+A	docs/reference/com/ksyun/media/streamer/util/device/DeviceInfoTools.html
+A	docs/reference/com/ksyun/media/streamer/util/device/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/util/device/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.GLRenderListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.ScreenShotListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-summary.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	docs/reference/package-list
+M	docs/reference/packages.html
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+A	libs/armeabi/libksylive.so
+M	libs/ksylive.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksylive.so
+M	src/KSYStreamer.java
+
+374a5f5;Merge pull request #137 from ksvc/fixAndroid4Crash
+77eeb94;fix android 4.0 crash
+M	demo/build.gradle
+
+ea8ba74;Update README.asciidoc
+M	README.asciidoc
+
+cae4ef2;Merge pull request #135 from ksvc/v4.1.3
+dacffc0;update ksystreamer
+A	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.OnPubEvent.html
+A	docs/reference/com/ksyun/media/streamer/publisher/PublisherWrapper.html
+M	src/KSYStreamer.java
+
+c6c2581;change ver to 4.1.3
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindSimpleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+D	docs/reference/com/ksyun/media/streamer/publisher/FilePubWrapper.OnPubEvent.html
+D	docs/reference/com/ksyun/media/streamer/publisher/FilePubWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.PubListener.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/PublisherMgt.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.BwEstConfig.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-summary.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/ksylive.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksylive.so
+
+328afc3;Update README.asciidoc
+M	README.asciidoc
+
+f77f5cf;Merge pull request #128 from ksvc/v4.1.2
+3921530;update to v4.1.2
+A	demo/res/raw/fugu.acv
+A	demo/res/raw/jiaopian.acv
+A	demo/res/raw/tone_cuver_sample.acv
+A	demo/src/com/ksyun/media/streamer/demo/YUVI420BufDemoFilter.java
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyToneCurveFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexBufFilter.html
+A	libs/ksylive.jar
+
+83b1095;Merge pull request #125 from ksvc/v4.1.2
+aa869cd;update to v4.1.2
+M	demo/res/layout/demo_activity.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+D	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBitmap.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.ErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindSimpleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySpecialEffectsFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFormat.html
+M	docs/reference/com/ksyun/media/streamer/framework/SinkPin.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+D	libs/ksylive4.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksylive.so
+
+0c93979;Update README.asciidoc
+M	README.asciidoc
+
+ed7ef6d;Update README.asciidoc
+M	README.asciidoc
+
+e461e63;Update README.asciidoc
+M	README.asciidoc
+
+7c38b7a;Merge pull request #119 from ksvc/v4.1.1
+d65a8ab;change to 4.1.1
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.OnAudioCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.html
+A	docs/reference/com/ksyun/media/streamer/capture/AudioDummyCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.OnCameraCaptureListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.Size.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/WaterMarkCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/AudioRecordParams.html
+A	docs/reference/com/ksyun/media/streamer/capture/audio/IKSYAudioRecord.html
+A	docs/reference/com/ksyun/media/streamer/capture/audio/KSYAudioRecordES.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/audio/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.OnTouchListener.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/ICameraHintView.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/camera/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AudioEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+A	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBitmap.html
+A	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.ErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindSimpleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePubWrapper.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/ksylive4.0.jar
+M	libs/x86/libksylive.so
+
+35aceaa;Update README.asciidoc
+M	README.asciidoc
+
+f6615f6;Update README.asciidoc
+M	README.asciidoc
+
+af03b09;Update README.asciidoc
+M	README.asciidoc
+
+6e1d281;Merge pull request #112 from ksvc/v4.1.0
+424bf1c;fix built issue
+A	demo/assets/KSYResource/0_pink.png
+A	demo/assets/KSYResource/0_ruddy2.png
+A	demo/assets/KSYResource/0_skinColor.png
+A	demo/assets/KSYResource/0_whiten.png
+A	demo/assets/KSYResource/1_freshy.png
+A	demo/assets/KSYResource/2_beauty.png
+A	demo/assets/KSYResource/3_sweety.png
+A	demo/assets/KSYResource/4_sepia.png
+A	demo/assets/KSYResource/5_blue.png
+A	demo/assets/KSYResource/6_nostalgia.png
+M	demo/build.gradle
+
+e818df7;update to v4.1.0
+M	demo/AndroidManifest.xml
+A	demo/res/layout/beauty_choose.xml
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/layout/demo_activity.xml
+M	demo/res/values/styles.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyGrindSimpleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyProFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+R060	docs/reference/com/ksyun/media/streamer/filter/imgtex/IImgTexFilter.html	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySpecialEffectsFilter.html
+R088	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.OnErrorListener.html	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.OnErrorListener.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/framework/SrcPin.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/ksylive4.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksylive.so
+
+0ecaabe;Update README.asciidoc
+M	README.asciidoc
+
+055440c;Update README.asciidoc
+M	README.asciidoc
+
+94fbc74;Update README.asciidoc
+M	README.asciidoc
+
+6d17b53;Merge pull request #104 from ksvc/v4.0.8
+5f1d765;update to v4.0.8
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	libs/ksylive4.0.jar
+
+178d8b9;Merge pull request #103 from ksvc/v4.0.7
+7b66f01;update to v4.0.7
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncoderMgt.html
+M	docs/reference/com/ksyun/media/streamer/framework/SrcPin.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/current.xml
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/ksylive4.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksylive.so
+
+ba6b7cc;Merge pull request #99 from ksvc/v4.0.6
+c72c6af;update to v4.0.6
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/values/strings.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.GLRenderListener.html
+A	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.ScreenShotListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-summary.html
+M	docs/reference/current.xml
+M	docs/reference/lists.js
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/ksylive4.0.jar
+M	libs/x86/libksylive.so
+
+a87b00a;Update README.asciidoc
+M	README.asciidoc
+
+5db45b8;Update README.asciidoc
+M	README.asciidoc
+
+be5f20a;Update README.asciidoc
+M	README.asciidoc
+
+eba29b2;Merge pull request #97 from ksvc/v4.0.5
+5db4e50;update to v4.0.5
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/layout/demo_activity.xml
+M	demo/res/values/strings.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufBeautyFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/framework/AudioBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/framework/ImgBufFrame.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+A	docs/reference/com/ksyun/media/streamer/publisher/FilePubWrapper.OnPubEvent.html
+A	docs/reference/com/ksyun/media/streamer/publisher/FilePubWrapper.html
+A	docs/reference/com/ksyun/media/streamer/publisher/FilePublisher.html
+R090	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.RtmpPubListener.html	docs/reference/com/ksyun/media/streamer/publisher/Publisher.PubListener.html
+A	docs/reference/com/ksyun/media/streamer/publisher/Publisher.html
+A	docs/reference/com/ksyun/media/streamer/publisher/PublisherMgt.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.BwEstConfig.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/publisher/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.GLRenderListener.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/ksylive4.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksylive.so
+
+7e96af4;Update README.asciidoc
+M	README.asciidoc
+
+ab949e1;Update README.asciidoc
+M	README.asciidoc
+
+32fcd0a;Merge pull request #95 from ksvc/v4.0.4
+6e94c54;update to v4.0.4
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+A	demo/src/com/ksyun/media/streamer/demo/RGBABufDemoFilter.java
+M	docs/assets/navtree_data.js
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+M	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+M	docs/reference/com/ksyun/media/streamer/encoder/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/IImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.OnErrorListener.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/RGBABufFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.BwEstConfig.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/current.xml
+M	docs/reference/hierarchy.html
+M	docs/reference/lists.js
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/ksylive4.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksylive.so
+
+35fcb84;Merge pull request #93 from ksvc/v4.0.3
+d231838;Update README.asciidoc
+M	README.asciidoc
+
+56a3bfd;Update README.md
+M	src/README.md
+
+a1bff67;Update to v4.0.3
+A	src/KSYStreamer.java
+A	src/README.md
+
+2f2fa24;Merge pull request #92 from ksvc/v4.0.3
+1ed1c0a;Update to v4.0.3
+M	demo/res/layout/demo_activity.xml
+D	demo/res/values-w820dp/dimens.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoFilter.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoFilter2.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoFilter3.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoFilter4.java
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+M	docs/reference/com/ksyun/media/streamer/capture/package-summary.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+M	docs/reference/current.xml
+M	libs/arm64-v8a/libksylive.so
+M	libs/armeabi-v7a/libksylive.so
+M	libs/ksylive4.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksylive.so
+
+cb50a59;update oschina site
+M	README.asciidoc
+
+aefbce3;Update README.asciidoc
+M	README.asciidoc
+
+98f40ed;Update README.asciidoc
+M	README.asciidoc
+
+53c3983;Update README.asciidoc
+M	README.asciidoc
+
+4ae5d72;Merge pull request #83 from ksvc/v4.0.2
+7d15f49;update to v4.0.2
+M	.gitignore
+D	demo/.idea/compiler.xml
+D	demo/.idea/copyright/profiles_settings.xml
+D	demo/.idea/encodings.xml
+D	demo/.idea/gradle.xml
+D	demo/.idea/libraries/ksylive4_0.xml
+D	demo/.idea/libraries/libksystat.xml
+D	demo/.idea/libraries/support_annotations_24_1_1.xml
+D	demo/.idea/libraries/support_v4_24_1_1.xml
+D	demo/.idea/misc.xml
+D	demo/.idea/modules.xml
+D	demo/.idea/runConfigurations.xml
+D	demo/.idea/workspace.xml
+M	demo/AndroidManifest.xml
+M	demo/build.gradle
+D	demo/demo.iml
+M	demo/gradle/wrapper/gradle-wrapper.properties
+A	demo/libs
+D	demo/libs/armeabi-v7a/libDenoise_export.so
+D	demo/libs/armeabi-v7a/libksyyuv.so
+D	demo/libs/ksylive4.0.jar
+D	demo/libs/libksystat.jar
+D	demo/res/drawable-hdpi/ic_launcher.png
+D	demo/res/drawable-mdpi/ic_launcher.png
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufBeautyFilter.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufFilterBase.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufMixer.html
+M	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufScaleFilter.html
+M	docs/reference/com/ksyun/media/streamer/framework/PinAdapter.html
+M	docs/reference/current.xml
+D	libs/arm64-v8a/libDenoise_export.so
+R058	libs/arm64-v8a/libksystreamer.so	libs/arm64-v8a/libksylive.so
+D	libs/arm64-v8a/libksyyuv.so
+D	libs/armeabi-v7a/libDenoise_export.so
+R061	demo/libs/armeabi-v7a/libksystreamer.so	libs/armeabi-v7a/libksylive.so
+D	libs/armeabi-v7a/libksystreamer.so
+D	libs/armeabi-v7a/libksyyuv.so
+M	libs/ksylive4.0.jar
+A	libs/libksyplayer.jar
+D	libs/x86/libDenoise_export.so
+R054	libs/x86/libksystreamer.so	libs/x86/libksylive.so
+D	libs/x86/libksyyuv.so
+
+a538cc1;Update README.asciidoc
+M	README.asciidoc
+
+ac0eba4;Merge pull request #73 from ksvc/v4.0.1
+04363f2;Update README.asciidoc
+M	README.asciidoc
+
+733d9b9;update to v4.0.1
+M	demo/.idea/misc.xml
+M	demo/.idea/workspace.xml
+M	demo/demo.iml
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive4.0.jar
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	docs/reference/classes.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+M	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+M	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+M	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.GLRenderListener.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+M	docs/reference/com/ksyun/media/streamer/util/gles/package-summary.html
+M	docs/reference/current.xml
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive4.0.jar
+M	libs/x86/libksystreamer.so
+
+a8badbe;Update README.asciidoc
+M	README.asciidoc
+
+52eb07f;Update README.asciidoc
+M	README.asciidoc
+
+4fdcea1;Update README.asciidoc
+M	README.asciidoc
+
+9a46dd1;Update README.asciidoc
+M	README.asciidoc
+
+c2ea114;Update README.asciidoc
+M	README.asciidoc
+
+5e652d8;Update README.asciidoc
+M	README.asciidoc
+
+47fc8b3;Merge pull request #66 from ksvc/atlantis
+fcdffeb;fix conflicts
+79cbc09;Update README.asciidoc
+M	README.asciidoc
+
+a200646;Update README.asciidoc
+M	README.asciidoc
+
+f2bd3f4;Update README.asciidoc
+M	README.asciidoc
+
+e948bec;Update README.asciidoc
+M	README.asciidoc
+
+2842389;update to v4.0.0 official
+D	README.md
+D	demo/.idea/.name
+M	demo/.idea/gradle.xml
+M	demo/.idea/libraries/support_v4_24_1_1.xml
+M	demo/.idea/misc.xml
+M	demo/.idea/workspace.xml
+M	demo/demo.iml
+M	demo/libs/armeabi-v7a/libksystreamer.so
+D	demo/libs/armeabi-v7a/libreverb.so
+M	demo/libs/ksylive4.0.jar
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/values/strings.xml
+M	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoFilter.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoFilter2.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoFilter3.java
+M	demo/src/com/ksyun/media/streamer/demo/DemoFilter4.java
+M	libs/arm64-v8a/libksystreamer.so
+D	libs/arm64-v8a/libreverb.so
+M	libs/armeabi-v7a/libksystreamer.so
+D	libs/armeabi-v7a/libreverb.so
+M	libs/ksylive4.0.jar
+M	libs/x86/libksystreamer.so
+D	libs/x86/libreverb.so
+
+f5728a1;update to v4.0.0 official
+A	README.asciidoc
+A	demo/src/com/ksyun/media/streamer/demo/CameraHintView.java
+A	demo/src/com/ksyun/media/streamer/demo/DemoAudioFilter.java
+A	docs/assets/customizations.css
+A	docs/assets/customizations.js
+A	docs/assets/doclava-developer-core.css
+A	docs/assets/doclava-developer-docs.css
+A	docs/assets/doclava-developer-docs.js
+A	docs/assets/doclava-developer-reference.js
+A	docs/assets/images/bg_fade.jpg
+A	docs/assets/images/bg_logo.png
+A	docs/assets/images/body-gradient-tab.png
+A	docs/assets/images/body-gradient.png
+A	docs/assets/images/grad-rule-qv.png
+A	docs/assets/images/hr_gray_main.jpg
+A	docs/assets/images/hr_gray_side.jpg
+A	docs/assets/images/left_off.jpg
+A	docs/assets/images/left_on.jpg
+A	docs/assets/images/preliminary.png
+A	docs/assets/images/resizable-e.gif
+A	docs/assets/images/resizable-e2.gif
+A	docs/assets/images/resizable-eg.gif
+A	docs/assets/images/resizable-s.gif
+A	docs/assets/images/resizable-s2.gif
+A	docs/assets/images/resizable-sg.gif
+A	docs/assets/images/right_off.jpg
+A	docs/assets/images/right_on.jpg
+A	docs/assets/images/sidenav-rule.png
+A	docs/assets/images/spacer.gif
+A	docs/assets/images/triangle-closed-small.png
+A	docs/assets/images/triangle-closed.png
+A	docs/assets/images/triangle-opened-small.png
+A	docs/assets/images/triangle-opened.png
+A	docs/assets/jquery-history.js
+A	docs/assets/jquery-resizable.min.js
+A	docs/assets/navtree_data.js
+A	docs/assets/prettify.js
+A	docs/assets/search_autocomplete.js
+A	docs/assets/style.css
+A	docs/assets/triangle-none.gif
+A	docs/index.html
+A	docs/reference/classes.html
+A	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.OnAudioCaptureListener.html
+A	docs/reference/com/ksyun/media/streamer/capture/AudioCapture.html
+A	docs/reference/com/ksyun/media/streamer/capture/AudioPlayerCapture.html
+A	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.OnCameraCaptureListener.html
+A	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.Size.html
+A	docs/reference/com/ksyun/media/streamer/capture/CameraCapture.html
+A	docs/reference/com/ksyun/media/streamer/capture/ImgBufSrcPin.html
+A	docs/reference/com/ksyun/media/streamer/capture/ImgTexSrcPin.html
+A	docs/reference/com/ksyun/media/streamer/capture/WaterMarkCapture.html
+A	docs/reference/com/ksyun/media/streamer/capture/audio/AudioRecordParams.html
+A	docs/reference/com/ksyun/media/streamer/capture/audio/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/capture/audio/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/capture/camera/CameraTouchHelper.html
+A	docs/reference/com/ksyun/media/streamer/capture/camera/ICameraHintView.html
+A	docs/reference/com/ksyun/media/streamer/capture/camera/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/capture/camera/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/capture/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/capture/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/encoder/AVCodecAudioEncoder.html
+A	docs/reference/com/ksyun/media/streamer/encoder/AVCodecSurfaceEncoder.html
+A	docs/reference/com/ksyun/media/streamer/encoder/AVCodecVideoEncoder.html
+A	docs/reference/com/ksyun/media/streamer/encoder/AudioEncodeFormat.html
+A	docs/reference/com/ksyun/media/streamer/encoder/AudioEncoderMgt.html
+A	docs/reference/com/ksyun/media/streamer/encoder/Encoder.EncoderListener.html
+A	docs/reference/com/ksyun/media/streamer/encoder/Encoder.html
+A	docs/reference/com/ksyun/media/streamer/encoder/ImgTexToBuf.html
+A	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecAudioEncoder.html
+A	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecEncoderBase.html
+A	docs/reference/com/ksyun/media/streamer/encoder/MediaCodecSurfaceEncoder.html
+A	docs/reference/com/ksyun/media/streamer/encoder/VideoEncodeFormat.html
+A	docs/reference/com/ksyun/media/streamer/encoder/VideoEncoderMgt.html
+A	docs/reference/com/ksyun/media/streamer/encoder/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/encoder/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterBase.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/AudioFilterMgt.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/AudioMixer.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/AudioPreview.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/AudioResampleFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/AudioReverbFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/filter/audio/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufBeautyFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufFilterBase.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufMixer.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgbuf/ImgBufScaleFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgbuf/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgbuf/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyDenoiseFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautyIllusionFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySkinWhitenFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySmoothFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftExtFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgBeautySoftSharpenFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.OnErrorListener.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterBase.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexFilterMgt.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexMixer.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/ImgTexScaleFilter.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/filter/imgtex/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/framework/AVBufFrame.html
+A	docs/reference/com/ksyun/media/streamer/framework/AVConst.html
+A	docs/reference/com/ksyun/media/streamer/framework/AVFrameBase.html
+A	docs/reference/com/ksyun/media/streamer/framework/AudioBufFormat.html
+A	docs/reference/com/ksyun/media/streamer/framework/AudioBufFrame.html
+A	docs/reference/com/ksyun/media/streamer/framework/ImgBufFormat.html
+A	docs/reference/com/ksyun/media/streamer/framework/ImgBufFrame.html
+A	docs/reference/com/ksyun/media/streamer/framework/ImgTexFormat.html
+A	docs/reference/com/ksyun/media/streamer/framework/ImgTexFrame.html
+A	docs/reference/com/ksyun/media/streamer/framework/PinAdapter.html
+A	docs/reference/com/ksyun/media/streamer/framework/SinkPin.html
+A	docs/reference/com/ksyun/media/streamer/framework/SrcPin.html
+A	docs/reference/com/ksyun/media/streamer/framework/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/framework/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnErrorListener.html
+A	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.OnInfoListener.html
+A	docs/reference/com/ksyun/media/streamer/kit/KSYStreamer.html
+A	docs/reference/com/ksyun/media/streamer/kit/KSYStreamerConfig.Builder.html
+A	docs/reference/com/ksyun/media/streamer/kit/KSYStreamerConfig.ENCODE_METHOD.html
+A	docs/reference/com/ksyun/media/streamer/kit/KSYStreamerConfig.html
+A	docs/reference/com/ksyun/media/streamer/kit/OnAudioRawDataListener.html
+A	docs/reference/com/ksyun/media/streamer/kit/OnPreviewFrameListener.html
+A	docs/reference/com/ksyun/media/streamer/kit/RecorderConstants.html
+A	docs/reference/com/ksyun/media/streamer/kit/StreamerConstants.html
+A	docs/reference/com/ksyun/media/streamer/kit/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/kit/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.OnLogEventListener.html
+A	docs/reference/com/ksyun/media/streamer/logstats/StatsLogReport.html
+A	docs/reference/com/ksyun/media/streamer/logstats/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/logstats/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.BwEstConfig.html
+A	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.RtmpPubListener.html
+A	docs/reference/com/ksyun/media/streamer/publisher/RtmpPublisher.html
+A	docs/reference/com/ksyun/media/streamer/publisher/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/publisher/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnBgmPlayerListener.html
+A	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnCompletionListener.html
+A	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnErrorListener.html
+A	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.OnPcmAvailableListener.html
+A	docs/reference/com/ksyun/media/streamer/util/audio/KSYBgmPlayer.html
+A	docs/reference/com/ksyun/media/streamer/util/audio/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/util/audio/package-summary.html
+A	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.GLRenderListener.html
+A	docs/reference/com/ksyun/media/streamer/util/gles/GLRender.html
+A	docs/reference/com/ksyun/media/streamer/util/gles/package-descr.html
+A	docs/reference/com/ksyun/media/streamer/util/gles/package-summary.html
+A	docs/reference/current.xml
+A	docs/reference/hierarchy.html
+A	docs/reference/index.html
+A	docs/reference/lists.js
+A	docs/reference/package-list
+A	docs/reference/packages.html
+
+179586d;Update README.md
+M	README.md
+
+ac08f20;Update README.md
+M	README.md
+
+67e0596;Merge pull request #62 from buliaoyin/atlantis
+f9e5fc0;update to v4.0.0 beta
+M	README.md
+R050	demo/.idea/libraries/ksylive3_0.xml	demo/.idea/libraries/ksylive4_0.xml
+D	demo/.idea/libraries/libksyplayer.xml
+D	demo/.idea/libraries/mockable_android_21.xml
+D	demo/.idea/libraries/support_annotations_24_0_0.xml
+A	demo/.idea/libraries/support_annotations_24_1_1.xml
+R052	demo/.idea/libraries/support_v4_24_0_0.xml	demo/.idea/libraries/support_v4_24_1_1.xml
+M	demo/.idea/workspace.xml
+M	demo/AndroidManifest.xml
+M	demo/build.gradle
+M	demo/demo.iml
+M	demo/gradle/wrapper/gradle-wrapper.properties
+M	demo/libs/armeabi-v7a/libDenoise_export.so
+D	demo/libs/armeabi-v7a/libaudio_effect.so
+D	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/armeabi-v7a/libksyyuv.so
+M	demo/libs/armeabi-v7a/libreverb.so
+D	demo/libs/ksylive3.0.jar
+A	demo/libs/ksylive4.0.jar
+D	demo/libs/libksyplayer.jar
+M	demo/proguard-project.txt
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/layout/demo_activity.xml
+M	demo/res/values/strings.xml
+D	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+D	demo/src/com/ksy/recordlib/demo/DEMOFILTER3.java
+D	demo/src/com/ksy/recordlib/demo/DEMOFILTER4.java
+D	demo/src/com/ksy/recordlib/demo/DemoActivity.java
+D	demo/src/com/ksy/recordlib/demo/GroupFilterDemo.java
+A	demo/src/com/ksyun/media/streamer/demo/CameraActivity.java
+A	demo/src/com/ksyun/media/streamer/demo/DemoActivity.java
+A	demo/src/com/ksyun/media/streamer/demo/DemoFilter.java
+R050	demo/src/com/ksy/recordlib/demo/DEMOFILTER.java	demo/src/com/ksyun/media/streamer/demo/DemoFilter2.java
+R050	demo/src/com/ksy/recordlib/demo/DEMOFILTER2.java	demo/src/com/ksyun/media/streamer/demo/DemoFilter3.java
+A	demo/src/com/ksyun/media/streamer/demo/DemoFilter4.java
+M	libs/arm64-v8a/libDenoise_export.so
+D	libs/arm64-v8a/libaudio_effect.so
+D	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/arm64-v8a/libksyyuv.so
+M	libs/arm64-v8a/libreverb.so
+M	libs/armeabi-v7a/libDenoise_export.so
+D	libs/armeabi-v7a/libaudio_effect.so
+D	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/armeabi-v7a/libksyyuv.so
+M	libs/armeabi-v7a/libreverb.so
+D	libs/ksylive3.0.jar
+A	libs/ksylive4.0.jar
+D	libs/libksyplayer.jar
+M	libs/x86/libDenoise_export.so
+D	libs/x86/libaudio_effect.so
+D	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+M	libs/x86/libksyyuv.so
+M	libs/x86/libreverb.so
+D	release_note.txt
+
+8d97599;Merge pull request #60 from ksvc/v3.3.4.0
+ca4e983;update to 3.3.4.0
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+5bd25ca;Update README.md
+M	README.md
+
+ef80b4b;Merge pull request #54 from ksvc/3.3.3.0
+4882d79;add 3.3.3.0
+M	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/libksyplayer.jar
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+7153121;Merge pull request #48 from ksvc/3.3.2.0
+a4ceb74;add to 3.3.2.0
+M	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/libksyplayer.jar
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+7152149;Merge pull request #44 from ksvc/3.3.1.0
+f29ea7e;add to 3.3.1.0
+M	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/libksyplayer.jar
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/values/strings.xml
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+bcb4f19;Update README.md
+M	README.md
+
+dae764e;add 3.3.0.9
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+4cfbfa0;Update README.md
+M	README.md
+
+8f0b158;Update README.md
+M	README.md
+
+5e989f0;Update README.md
+M	README.md
+
+6d6352d;Merge pull request #33 from ksvc/3.3.0.8
+6dde2e6;add 3.3.0.8
+D	demo/README.md
+M	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/libksyplayer.jar
+M	demo/libs/libksystat.jar
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/libksyplayer.jar
+M	libs/libksystat.jar
+M	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+25e9264;Update README.md
+M	README.md
+
+564c93d;Update README.md
+M	README.md
+
+5369c64;Update README.md
+M	README.md
+
+6881b3b;update to version 3.3.0.7
+D	demo/.idea/inspectionProfiles/Project_Default.xml
+D	demo/.idea/inspectionProfiles/profiles_settings.xml
+M	demo/.idea/libraries/support_v4_24_0_0.xml
+M	demo/.idea/misc.xml
+M	demo/.idea/workspace.xml
+M	demo/build.gradle
+M	demo/demo.iml
+M	demo/gradle/wrapper/gradle-wrapper.properties
+M	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+
+4ab99f1;bump version to 3.3.0.6
+M	demo/.idea/gradle.xml
+M	demo/.idea/misc.xml
+M	demo/.idea/workspace.xml
+M	demo/build.gradle
+M	demo/demo.iml
+A	demo/libs/armeabi-v7a/libaudio_effect.so
+M	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/values/strings.xml
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+A	libs/arm64-v8a/libaudio_effect.so
+M	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+A	libs/armeabi-v7a/libaudio_effect.so
+M	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+A	libs/x86/libaudio_effect.so
+M	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+23f0f2e;bump version to 3.3.0.5
+M	demo/.idea/gradle.xml
+M	demo/.idea/libraries/support_v4_24_0_0.xml
+M	demo/.idea/workspace.xml
+M	demo/demo.iml
+M	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/libksyplayer.jar
+M	demo/libs/libksystat.jar
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/libksyplayer.jar
+M	libs/libksystat.jar
+M	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+36d13d0;Update README.md
+M	README.md
+
+cd2d641;Update README.md
+M	README.md
+
+1033c78;Update README.md
+M	README.md
+
+e56dee8;Update README.md
+M	README.md
+
+d343e26;Update README.md
+M	README.md
+
+fba6b64;Update README.md
+M	README.md
+
+2535096;Update README.md
+M	README.md
+
+cf28226;Update README.md
+M	README.md
+
+ee7385b;Update README.md
+M	README.md
+
+7987f83;Update README.md
+M	README.md
+
+3c2646f;bump version to 3.3.0.4
+M	demo/.idea/gradle.xml
+A	demo/.idea/inspectionProfiles/Project_Default.xml
+A	demo/.idea/inspectionProfiles/profiles_settings.xml
+M	demo/.idea/libraries/support_v4_24_0_0.xml
+M	demo/.idea/misc.xml
+M	demo/.idea/workspace.xml
+M	demo/build.gradle
+M	demo/demo.iml
+M	demo/gradle/wrapper/gradle-wrapper.properties
+M	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+525a41c;update to v3.3.0.3
+M	demo/.idea/libraries/support_v4_24_0_0.xml
+M	demo/.idea/misc.xml
+M	demo/.idea/workspace.xml
+M	demo/AndroidManifest.xml
+M	demo/build.gradle
+M	demo/demo.iml
+M	demo/gradle.properties
+M	demo/gradle/wrapper/gradle-wrapper.jar
+M	demo/gradle/wrapper/gradle-wrapper.properties
+M	demo/gradlew.bat
+M	demo/libs/armeabi-v7a/libDenoise_export.so
+M	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/armeabi-v7a/libksyyuv.so
+M	demo/libs/armeabi-v7a/libreverb.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/libksyplayer.jar
+M	demo/lint.xml
+M	demo/proguard-project.txt
+M	demo/project.properties
+D	demo/res/drawable-xhdpi/stream_exit_disable.png
+D	demo/res/drawable-xhdpi/stream_exit_normal.png
+D	demo/res/drawable-xhdpi/stream_exitsure_normal.png
+D	demo/res/drawable-xhdpi/stream_flash_disable.png
+D	demo/res/drawable-xhdpi/stream_flash_highlighted.png
+D	demo/res/drawable-xhdpi/stream_flash_normal.png
+D	demo/res/drawable-xhdpi/stream_switch_camera_disable.png
+D	demo/res/drawable-xhdpi/stream_switch_camera_highlighted.png
+D	demo/res/drawable-xhdpi/stream_switch_camera_normal.png
+D	demo/res/drawable/streamer_delete_icon.xml
+D	demo/res/drawable/streamer_flash_icon.xml
+D	demo/res/drawable/streamer_rotate_icon.xml
+D	demo/res/layout/activity_main.xml
+D	demo/res/layout/camera_activity2.xml
+D	demo/res/layout/demo_activity2.xml
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+D	demo/src/com/ksy/recordlib/demo/Constants.java
+M	libs/arm64-v8a/libDenoise_export.so
+M	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/arm64-v8a/libksyyuv.so
+M	libs/arm64-v8a/libreverb.so
+M	libs/armeabi-v7a/libDenoise_export.so
+M	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/armeabi-v7a/libksyyuv.so
+M	libs/armeabi-v7a/libreverb.so
+M	libs/ksylive3.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libDenoise_export.so
+M	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+M	libs/x86/libksyyuv.so
+M	libs/x86/libreverb.so
+M	release_note.txt
+
+2909426;update README
+M	README.md
+M	demo/README.md
+
+27510c4;bump version to 3.3.0.2
+A	demo/.idea/libraries/support_annotations_24_0_0.xml
+A	demo/.idea/libraries/support_v4_24_0_0.xml
+M	demo/.idea/misc.xml
+M	demo/.idea/workspace.xml
+M	demo/build.gradle
+M	demo/demo.iml
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+D	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK 3.1.0\346\226\207\346\241\243.pdf"
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+bfc7183;Update README.md
+M	README.md
+
+05b723d;Update README.md
+M	README.md
+
+3be9826;bump version to v3.3.0.0
+M	demo/libs/armeabi-v7a/libDenoise_export.so
+M	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/libksyplayer.jar
+M	libs/arm64-v8a/libDenoise_export.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libDenoise_export.so
+M	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/libksyplayer.jar
+M	libs/x86/libDenoise_export.so
+M	libs/x86/libksystreamer.so
+
+9d0c059;Update README.md
+M	README.md
+
+6a1bddd;Update README.md
+M	README.md
+
+21b19c3;Update README.md
+M	README.md
+
+6b781be;update release note
+M	release_note.txt
+
+34c2566;update so
+A	libs/arm64-v8a/libksyplayer.so
+M	libs/arm64-v8a/libksystreamer.so
+A	libs/x86/libksyplayer.so
+M	libs/x86/libksystreamer.so
+
+db6f4d3;bump version to 3.2.0.8
+A	demo/.idea/libraries/libksyplayer.xml
+M	demo/.idea/misc.xml
+M	demo/.idea/workspace.xml
+M	demo/demo.iml
+D	demo/libs/arm64-v8a/libDenoise_export.so
+D	demo/libs/arm64-v8a/libksystreamer.so
+D	demo/libs/arm64-v8a/libksyyuv.so
+D	demo/libs/arm64-v8a/libreverb.so
+A	demo/libs/armeabi-v7a/libksyplayer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+A	demo/libs/libksyplayer.jar
+D	demo/libs/x86/libDenoise_export.so
+D	demo/libs/x86/libksystreamer.so
+D	demo/libs/x86/libksyyuv.so
+D	demo/libs/x86/libreverb.so
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/layout/demo_activity.xml
+M	demo/res/values/colors.xml
+M	demo/res/values/strings.xml
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	demo/src/com/ksy/recordlib/demo/DemoActivity.java
+A	libs/armeabi-v7a/libksyplayer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+A	libs/libksyplayer.jar
+
+c801277;Update README.md
+M	README.md
+
+d880d44;Update README.md
+M	README.md
+
+a38e34c;Update README.md
+M	README.md
+
+e00f968;Update README.md
+M	README.md
+
+3af78cd;README.md
+M	README.md
+
+cede293;Update README.md
+M	README.md
+
+76d6036;Update README.md
+M	README.md
+
+5ee7d3e;Update README.md
+M	README.md
+
+b0999c9;Update README.md
+M	README.md
+
+0752f60;bump version to 3.1.0.8
+M	README.md
+A	demo/.idea/encodings.xml
+M	demo/.idea/gradle.xml
+A	demo/.idea/libraries/mockable_android_21.xml
+M	demo/.idea/misc.xml
+M	demo/.idea/workspace.xml
+M	demo/README.md
+M	demo/demo.iml
+M	demo/libs/arm64-v8a/libksystreamer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/x86/libksystreamer.so
+M	demo/proguard-project.txt
+M	demo/res/layout/demo_activity.xml
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+A	demo/src/com/ksy/recordlib/demo/DEMOFILTER3.java
+A	demo/src/com/ksy/recordlib/demo/DEMOFILTER4.java
+A	demo/src/com/ksy/recordlib/demo/GroupFilterDemo.java
+M	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK 3.1.0\346\226\207\346\241\243.pdf"
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+a7a78d2;Update README.md
+M	README.md
+
+ee82868;upgrade version to 3.1.0.6
+M	README.md
+M	demo/.idea/.name
+D	demo/.idea/encodings.xml
+M	demo/.idea/gradle.xml
+D	demo/.idea/libraries/mockable_android_21.xml
+M	demo/.idea/misc.xml
+M	demo/.idea/modules.xml
+M	demo/.idea/workspace.xml
+M	demo/libs/arm64-v8a/libDenoise_export.so
+M	demo/libs/arm64-v8a/libksystreamer.so
+M	demo/libs/arm64-v8a/libksyyuv.so
+M	demo/libs/arm64-v8a/libreverb.so
+M	demo/libs/armeabi-v7a/libDenoise_export.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/armeabi-v7a/libksyyuv.so
+M	demo/libs/armeabi-v7a/libreverb.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/libksystat.jar
+M	demo/libs/x86/libDenoise_export.so
+M	demo/libs/x86/libksystreamer.so
+M	demo/libs/x86/libksyyuv.so
+M	demo/libs/x86/libreverb.so
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+D	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK 3.0.8\346\226\207\346\241\243.pdf"
+R089	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK 3.0.9\346\226\207\346\241\243.pdf"	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK 3.1.0\346\226\207\346\241\243.pdf"
+M	libs/arm64-v8a/libDenoise_export.so
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/arm64-v8a/libksyyuv.so
+M	libs/arm64-v8a/libreverb.so
+M	libs/armeabi-v7a/libDenoise_export.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/armeabi-v7a/libksyyuv.so
+M	libs/armeabi-v7a/libreverb.so
+M	libs/ksylive3.0.jar
+M	libs/libksystat.jar
+M	libs/x86/libDenoise_export.so
+M	libs/x86/libksystreamer.so
+M	libs/x86/libksyyuv.so
+M	libs/x86/libreverb.so
+M	release_note.txt
+
+4a35b62;Update README.md
+M	README.md
+
+7db7d06;Update README.md
+M	README.md
+
+250a3c6;bump version to 3.1.0.5
+M	README.md
+M	demo/README.md
+M	demo/demo.iml
+M	demo/libs/arm64-v8a/libksystreamer.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/libksystat.jar
+M	demo/libs/x86/libksystreamer.so
+M	demo/proguard-project.txt
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	demo/src/com/ksy/recordlib/demo/DEMOFILTER.java
+A	demo/src/com/ksy/recordlib/demo/DEMOFILTER2.java
+M	libs/arm64-v8a/libksystreamer.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	libs/libksystat.jar
+M	libs/x86/libksystreamer.so
+M	release_note.txt
+
+76bd425;Update proguard-project.txt
+M	demo/proguard-project.txt
+
+f738a67;Update DEMOFILTER.java
+M	demo/src/com/ksy/recordlib/demo/DEMOFILTER.java
+
+b45317c;Update release_note.txt
+M	release_note.txt
+
+34d1d13;Update release_note.txt
+M	release_note.txt
+
+cd7e9b6;Update README.md
+M	README.md
+
+b3b845e;Update README.md
+a72024b;Update README.md
+M	README.md
+
+c68afd0;bump version to 3.1.0.2
+M	demo/demo.iml
+A	demo/libs/arm64-v8a/libDenoise_export.so
+A	demo/libs/arm64-v8a/libksystreamer.so
+A	demo/libs/arm64-v8a/libksyyuv.so
+A	demo/libs/arm64-v8a/libreverb.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+D	demo/libs/armeabi-v7a/liblame.so
+M	demo/libs/ksylive3.0.jar
+M	demo/libs/libksystat.jar
+A	demo/libs/x86/libDenoise_export.so
+A	demo/libs/x86/libksystreamer.so
+A	demo/libs/x86/libksyyuv.so
+A	demo/libs/x86/libreverb.so
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/layout/demo_activity.xml
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	demo/src/com/ksy/recordlib/demo/DemoActivity.java
+A	libs/arm64-v8a/libDenoise_export.so
+A	libs/arm64-v8a/libksystreamer.so
+A	libs/arm64-v8a/libksyyuv.so
+A	libs/arm64-v8a/libreverb.so
+M	libs/armeabi-v7a/libksystreamer.so
+D	libs/armeabi-v7a/liblame.so
+M	libs/ksylive3.0.jar
+M	libs/libksystat.jar
+A	libs/x86/libDenoise_export.so
+A	libs/x86/libksystreamer.so
+A	libs/x86/libksyyuv.so
+A	libs/x86/libreverb.so
+M	release_note.txt
+
+27f353f;Update README.md
+M	README.md
+
+b5804af;Merge branch 'master' of https://github.com/ksvc/KSYStreamer_Android
+f8efd8f;bump version to v3.0.9.5
+M	demo/demo.iml
+M	demo/libs/armeabi-v7a/libDenoise_export.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/armeabi-v7a/libksyyuv.so
+M	demo/libs/ksylive3.0.jar
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/demo_activity.xml
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+A	demo/src/com/ksy/recordlib/demo/DEMOFILTER.java
+M	demo/src/com/ksy/recordlib/demo/DemoActivity.java
+A	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK 3.0.9\346\226\207\346\241\243.pdf"
+M	libs/armeabi-v7a/libDenoise_export.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/armeabi-v7a/libksyyuv.so
+M	libs/ksylive3.0.jar
+M	release_note.txt
+
+915d911;Delete KSYImageFilter.java
+D	doc/KSYImageFilter.java
+
+91ca15a;Update README.md
+M	README.md
+
+9589b2a;Update README.md
+M	README.md
+
+8aa916a;Update README.md
+M	README.md
+
+56e1a51;bump version to 3.0.9.1
+M	demo/libs/armeabi-v7a/libDenoise_export.so
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/armeabi-v7a/libksyyuv.so
+M	demo/libs/ksylive3.0.jar
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	libs/armeabi-v7a/libDenoise_export.so
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/armeabi-v7a/libksyyuv.so
+M	libs/ksylive3.0.jar
+M	release_note.txt
+
+9c96197;Update README.md
+M	README.md
+
+6520c02;Update README.md
+M	README.md
+
+17abbf5;Update README.md
+M	README.md
+
+afb5781;Update README.md
+M	README.md
+
+378b29b;update 3.0.8.8 version
+M	demo/libs/armeabi-v7a/libksystreamer.so
+M	demo/libs/ksylive3.0.jar
+M	libs/armeabi-v7a/libksystreamer.so
+M	libs/ksylive3.0.jar
+M	release_note.txt
+
+4b9ef03;Update README.md
+M	README.md
+
+d4b3c63;Update README.md
+M	README.md
+
+561ce32;Create KSYImageFilter.java
+A	doc/KSYImageFilter.java
+
+13dd86e;Update README.md
+M	README.md
+
+91e31ce;Merge branch 'master' of https://github.com/ksvc/KSYStreamer_Android
+8e4b40f;update 3.0.8.6 version
+M	demo/.idea/.name
+M	demo/.idea/gradle.xml
+D	demo/.idea/libraries/android_support_v4.xml
+R050	demo/.idea/libraries/ksylive1_1.xml	demo/.idea/libraries/ksylive3_0.xml
+A	demo/.idea/libraries/libksystat.xml
+A	demo/.idea/libraries/mockable_android_21.xml
+M	demo/.idea/misc.xml
+M	demo/.idea/modules.xml
+M	demo/.idea/workspace.xml
+D	demo/ksystreamerandroid.iml
+M	demo/libs/armeabi-v7a/libksystreamer.so
+A	demo/libs/armeabi-v7a/liblame.so
+A	demo/libs/armeabi-v7a/libreverb.so
+M	demo/libs/ksylive3.0.jar
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/layout/demo_activity.xml
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	demo/src/com/ksy/recordlib/demo/DemoActivity.java
+M	libs/armeabi-v7a/libksystreamer.so
+A	libs/armeabi-v7a/liblame.so
+A	libs/armeabi-v7a/libreverb.so
+M	libs/ksylive3.0.jar
+M	release_note.txt
+
+01e8583;Merge pull request #4 from tian9246/patch-1
+c1afacf;更新"回掉"->"回调"
+M	README.md
+
+e68a425;更新初始化回掉文档
+M	README.md
+
+92852f4;Update README.md
+M	README.md
+
+9720d60;3.0.8 release
+M	demo/AndroidManifest.xml
+A	demo/README.md
+M	demo/build.gradle
+M	demo/demo.iml
+A	demo/gradle.properties
+M	demo/gradle/wrapper/gradle-wrapper.properties
+R074	demo/android_demo.iml	demo/ksystreamerandroid.iml
+D	demo/libs/android-support-v4.jar
+A	demo/libs/armeabi-v7a/libDenoise_export.so
+D	demo/libs/armeabi-v7a/libksypreview.so
+R057	libs/armeabi-v7a/libksyrecorder.so	demo/libs/armeabi-v7a/libksystreamer.so
+D	demo/libs/ksylive1.3.jar
+A	demo/libs/ksylive3.0.jar
+A	demo/libs/libksystat.jar
+M	demo/proguard-project.txt
+M	demo/project.properties
+M	demo/res/anim/slide_in_bottom.xml
+M	demo/res/anim/slide_in_top.xml
+M	demo/res/anim/slide_left_in.xml
+M	demo/res/anim/slide_left_out.xml
+M	demo/res/anim/slide_out_bottom.xml
+M	demo/res/anim/slide_out_top.xml
+M	demo/res/anim/slide_right_in.xml
+M	demo/res/anim/slide_right_out.xml
+M	demo/res/anim/slide_stand.xml
+A	demo/res/drawable-hdpi/ic_launcher.png
+A	demo/res/drawable-mdpi/ic_launcher.png
+A	demo/res/drawable-xhdpi/ic_launcher.png
+A	demo/res/drawable-xhdpi/stream_exit_disable.png
+A	demo/res/drawable-xhdpi/stream_exit_normal.png
+A	demo/res/drawable-xhdpi/stream_exitsure_normal.png
+A	demo/res/drawable-xhdpi/stream_flash_disable.png
+A	demo/res/drawable-xhdpi/stream_flash_highlighted.png
+A	demo/res/drawable-xhdpi/stream_flash_normal.png
+A	demo/res/drawable-xhdpi/stream_switch_camera_disable.png
+A	demo/res/drawable-xhdpi/stream_switch_camera_highlighted.png
+A	demo/res/drawable-xhdpi/stream_switch_camera_normal.png
+M	demo/res/drawable/recorder_delete_icon.xml
+M	demo/res/drawable/recorder_rotate_icon.xml
+A	demo/res/drawable/streamer_delete_icon.xml
+A	demo/res/drawable/streamer_flash_icon.xml
+A	demo/res/drawable/streamer_rotate_icon.xml
+A	demo/res/layout/activity_main.xml
+A	demo/res/layout/camera_activity2.xml
+M	demo/res/layout/camera_bottombar.xml
+M	demo/res/layout/camera_titlebar.xml
+M	demo/res/layout/demo_activity.xml
+A	demo/res/layout/demo_activity2.xml
+A	demo/res/mipmap-hdpi/ic_launcher.png
+A	demo/res/mipmap-mdpi/ic_launcher.png
+A	demo/res/mipmap-xhdpi/ic_launcher.png
+A	demo/res/mipmap-xxhdpi/ic_launcher.png
+A	demo/res/mipmap-xxxhdpi/ic_launcher.png
+A	demo/res/values-w820dp/dimens.xml
+M	demo/res/values/colors.xml
+M	demo/res/values/dimens.xml
+M	demo/res/values/strings.xml
+D	demo/settings.gradle
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+A	demo/src/com/ksy/recordlib/demo/Constants.java
+M	demo/src/com/ksy/recordlib/demo/DemoActivity.java
+R091	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK 1.3.2\346\226\207\346\241\243_20160216.pdf"	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK 3.0.8\346\226\207\346\241\243.pdf"
+A	libs/armeabi-v7a/libDenoise_export.so
+D	libs/armeabi-v7a/libksypreview.so
+R057	demo/libs/armeabi-v7a/libksyrecorder.so	libs/armeabi-v7a/libksystreamer.so
+D	libs/ksylive1.3.jar
+A	libs/ksylive3.0.jar
+A	libs/libksystat.jar
+M	release_note.txt
+
+a323b21;Update README.md
+M	README.md
+
+21849c0;Update README.md
+M	README.md
+
+a04f65d;Update README.md
+M	README.md
+
+0298a0e;bump version, 1.3.5 release
+M	demo/AndroidManifest.xml
+M	demo/demo.iml
+R099	demo/libs/armeabi-v7a/libpreview.so	demo/libs/armeabi-v7a/libksypreview.so
+R071	demo/libs/armeabi-v7a/librecorder.so	demo/libs/armeabi-v7a/libksyrecorder.so
+R099	libs/armeabi-v7a/libyuv.so	demo/libs/armeabi-v7a/libksyyuv.so
+D	demo/libs/ksylive1.1.jar
+A	demo/libs/ksylive1.3.jar
+M	demo/proguard-project.txt
+D	demo/res/drawable-hdpi/ic_launcher.png
+D	demo/res/drawable-mdpi/ic_launcher.png
+D	demo/res/drawable-xhdpi/ic_launcher.png
+A	demo/res/drawable-xxhdpi/ksy_logo.png
+M	demo/res/layout/camera_activity.xml
+M	demo/res/layout/camera_titlebar.xml
+M	demo/res/layout/demo_activity.xml
+M	demo/res/values/strings.xml
+M	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+M	demo/src/com/ksy/recordlib/demo/DemoActivity.java
+R091	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK1.1\346\226\207\346\241\243_20151216.pdf"	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK 1.3.2\346\226\207\346\241\243_20160216.pdf"
+R099	libs/armeabi-v7a/libpreview.so	libs/armeabi-v7a/libksypreview.so
+R071	libs/armeabi-v7a/librecorder.so	libs/armeabi-v7a/libksyrecorder.so
+R099	demo/libs/armeabi-v7a/libyuv.so	libs/armeabi-v7a/libksyyuv.so
+D	libs/ksylive1.1.jar
+A	libs/ksylive1.3.jar
+A	release_note.txt
+
+b71d4a0;Update README.md
+M	README.md
+
+a0842b2;Update README.md
+M	README.md
+
+4c6d9e1;Update README.md
+M	README.md
+
+055dda5;v1.1.0
+M	.gitignore
+A	demo/.idea/.name
+A	demo/.idea/compiler.xml
+A	demo/.idea/copyright/profiles_settings.xml
+A	demo/.idea/encodings.xml
+A	demo/.idea/gradle.xml
+A	demo/.idea/libraries/android_support_v4.xml
+A	demo/.idea/libraries/ksylive1_1.xml
+A	demo/.idea/misc.xml
+A	demo/.idea/modules.xml
+A	demo/.idea/runConfigurations.xml
+A	demo/.idea/workspace.xml
+A	demo/AndroidManifest.xml
+A	demo/android_demo.iml
+A	demo/build.gradle
+A	demo/demo.iml
+A	demo/gradle/wrapper/gradle-wrapper.jar
+A	demo/gradle/wrapper/gradle-wrapper.properties
+A	demo/gradlew
+A	demo/gradlew.bat
+A	demo/libs/android-support-v4.jar
+A	demo/libs/armeabi-v7a/libpreview.so
+A	demo/libs/armeabi-v7a/librecorder.so
+A	demo/libs/armeabi-v7a/libyuv.so
+A	demo/libs/ksylive1.1.jar
+A	demo/lint.xml
+A	demo/proguard-project.txt
+A	demo/project.properties
+A	demo/res/anim/slide_in_bottom.xml
+A	demo/res/anim/slide_in_top.xml
+A	demo/res/anim/slide_left_in.xml
+A	demo/res/anim/slide_left_out.xml
+A	demo/res/anim/slide_out_bottom.xml
+A	demo/res/anim/slide_out_top.xml
+A	demo/res/anim/slide_right_in.xml
+A	demo/res/anim/slide_right_out.xml
+A	demo/res/anim/slide_stand.xml
+A	demo/res/drawable-hdpi/ic_launcher.png
+A	demo/res/drawable-mdpi/ic_launcher.png
+A	demo/res/drawable-xhdpi/ic_launcher.png
+A	demo/res/drawable-xhdpi/record_exit_disable.png
+A	demo/res/drawable-xhdpi/record_exit_normal.png
+A	demo/res/drawable-xhdpi/record_exitsure_normal.png
+A	demo/res/drawable-xhdpi/record_flash_disable.png
+A	demo/res/drawable-xhdpi/record_flash_highlighted.png
+A	demo/res/drawable-xhdpi/record_flash_normal.png
+A	demo/res/drawable-xhdpi/record_switch_camera_disable.png
+A	demo/res/drawable-xhdpi/record_switch_camera_highlighted.png
+A	demo/res/drawable-xhdpi/record_switch_camera_normal.png
+A	demo/res/drawable/recorder_delete_icon.xml
+A	demo/res/drawable/recorder_flash_icon.xml
+A	demo/res/drawable/recorder_rotate_icon.xml
+A	demo/res/layout/camera_activity.xml
+A	demo/res/layout/camera_bottombar.xml
+A	demo/res/layout/camera_titlebar.xml
+A	demo/res/layout/demo_activity.xml
+A	demo/res/values/colors.xml
+A	demo/res/values/dimens.xml
+A	demo/res/values/strings.xml
+A	demo/res/values/styles.xml
+A	demo/settings.gradle
+A	demo/src/com/ksy/recordlib/demo/CameraActivity.java
+A	demo/src/com/ksy/recordlib/demo/DemoActivity.java
+A	"doc/\351\207\221\345\261\261\344\272\221Android\347\233\264\346\222\255\346\216\250\346\265\201SDK1.1\346\226\207\346\241\243_20151216.pdf"
+A	libs/armeabi-v7a/libpreview.so
+A	libs/armeabi-v7a/librecorder.so
+A	libs/armeabi-v7a/libyuv.so
+A	libs/ksylive1.1.jar
+
+084161b;add .gitignore
+A	.gitignore
+M	README.md
+
+6489958;Initial commit
+A	README.md

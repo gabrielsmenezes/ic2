@@ -1,0 +1,477 @@
+87a2fed;fix bugs
+M	README.md
+M	percent-support-extends/build.gradle
+M	percent-support-extends/percent-support-extends.iml
+M	percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLayoutHelper.java
+
+36cb70c;增加参考屏幕的宽度或者高度
+M	.idea/misc.xml
+M	README.md
+M	percent-support-extends-sample/build.gradle
+M	percent-support-extends-sample/percent-support-extends-sample.iml
+M	percent-support-extends-sample/src/main/java/com/imooc/android_percent_support/MainActivity.java
+A	percent-support-extends-sample/src/main/res/layout/percent_sc_sw.xml
+M	percent-support-extends-sample/src/main/res/layout/view5.xml
+A	percent-support-extends-sample/src/main/res/values/percent.xml
+M	percent-support-extends-sample/src/main/res/values/strings.xml
+M	percent-support-extends/build.gradle
+M	percent-support-extends/percent-support-extends.iml
+M	percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLayoutHelper.java
+M	percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLinearLayout.java
+A	percent_sw_sh.png
+A	percent_sw_sh_single.png
+
+e400e72;调整结构
+M	.gitignore
+A	.idea/.name
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/gradle.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/runConfigurations.xml
+A	.idea/vcs.xml
+A	PercentSupportExtend.iml
+R100	sample/android-percent-support/.gitignore	app/.gitignore
+A	app/app.iml
+A	app/build.gradle
+R100	sample/android-percent-support/proguard-rules.pro	app/proguard-rules.pro
+A	app/src/androidTest/java/com/zhy/percentsupportextend/ApplicationTest.java
+A	app/src/main/AndroidManifest.xml
+R100	sample/android-percent-support/src/main/res/mipmap-hdpi/ic_launcher.png	app/src/main/res/mipmap-hdpi/ic_launcher.png
+R100	sample/android-percent-support/src/main/res/mipmap-mdpi/ic_launcher.png	app/src/main/res/mipmap-mdpi/ic_launcher.png
+R100	sample/android-percent-support/src/main/res/mipmap-xhdpi/ic_launcher.png	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+R100	sample/android-percent-support/src/main/res/mipmap-xxhdpi/ic_launcher.png	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/values/strings.xml
+R100	sample/android-percent-support/src/main/res/values/styles.xml	app/src/main/res/values/styles.xml
+A	build.gradle
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/.classpath
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/.project
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/AndroidManifest.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/ic_launcher-web.png
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/libs/android-support-v4.jar
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/lint.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/project.properties
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/res/drawable-hdpi/ic_launcher.png
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/res/drawable-mdpi/ic_launcher.png
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/res/drawable-xhdpi/ic_launcher.png
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/res/drawable-xxhdpi/ic_launcher.png
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/res/values-v11/styles.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/res/values-v14/styles.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/res/values/attrs.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/res/values/strings.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/res/values/styles.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-lib/src/com/zhy/android/percent/support/PercentLayoutHelper.java
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/.classpath
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/.project
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/AndroidManifest.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/ic_launcher-web.png
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/proguard-project.txt
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/project.properties
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/drawable-hdpi/ic_launcher.png
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/drawable-mdpi/ic_launcher.png
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/drawable-xhdpi/ic_launcher.png
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/drawable-xxhdpi/ic_launcher.png
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/item_music_list.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/menu/main.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values-v11/styles.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values-v14/styles.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values-w820dp/dimens.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values/dimens.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values/strings.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values/styles.xml
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/src/com/example/android_percent_support_extend_sample/ItemActivity.java
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/src/com/example/android_percent_support_extend_sample/ListViewTestActivity.java
+D	eclipse_demo_and_sources/android-percent-support-extend-sample/src/com/example/android_percent_support_extend_sample/MainActivity.java
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+R100	sources/percent-support-extends/.gitignore	percent-support-extends-sample/.gitignore
+R100	sample/android-percent-support/build.gradle	percent-support-extends-sample/build.gradle
+A	percent-support-extends-sample/percent-support-extends-sample.iml
+R100	sources/percent-support-extends/proguard-rules.pro	percent-support-extends-sample/proguard-rules.pro
+A	percent-support-extends-sample/src/androidTest/androidTest.iml
+R100	sample/android-percent-support/src/androidTest/java/com/imooc/android_percent_support/ApplicationTest.java	percent-support-extends-sample/src/androidTest/java/com/imooc/android_percent_support/ApplicationTest.java
+R100	sample/android-percent-support/src/main/AndroidManifest.xml	percent-support-extends-sample/src/main/AndroidManifest.xml
+A	percent-support-extends-sample/src/main/gen/com/imooc/android_percent_support/BuildConfig.java
+A	percent-support-extends-sample/src/main/gen/com/imooc/android_percent_support/Manifest.java
+A	percent-support-extends-sample/src/main/gen/com/imooc/android_percent_support/R.java
+R100	sample/android-percent-support/src/main/java/com/imooc/android_percent_support/ItemActivity.java	percent-support-extends-sample/src/main/java/com/imooc/android_percent_support/ItemActivity.java
+R100	sample/android-percent-support/src/main/java/com/imooc/android_percent_support/ListViewTestActivity.java	percent-support-extends-sample/src/main/java/com/imooc/android_percent_support/ListViewTestActivity.java
+R100	sample/android-percent-support/src/main/java/com/imooc/android_percent_support/MainActivity.java	percent-support-extends-sample/src/main/java/com/imooc/android_percent_support/MainActivity.java
+A	percent-support-extends-sample/src/main/main.iml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/drawable-hdpi/tangyan.jpeg	percent-support-extends-sample/src/main/res/drawable-hdpi/tangyan.jpeg
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/activity_category.xml	percent-support-extends-sample/src/main/res/layout/activity_category.xml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/activity_item.xml	percent-support-extends-sample/src/main/res/layout/activity_item.xml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/activity_list_view_test.xml	percent-support-extends-sample/src/main/res/layout/activity_list_view_test.xml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/activity_main.xml	percent-support-extends-sample/src/main/res/layout/activity_main.xml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/item_category.xml	percent-support-extends-sample/src/main/res/layout/item_category.xml
+R100	sample/android-percent-support/src/main/res/layout/item_music_list.xml	percent-support-extends-sample/src/main/res/layout/item_music_list.xml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view1.xml	percent-support-extends-sample/src/main/res/layout/view1.xml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view2.xml	percent-support-extends-sample/src/main/res/layout/view2.xml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view3.xml	percent-support-extends-sample/src/main/res/layout/view3.xml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view4.xml	percent-support-extends-sample/src/main/res/layout/view4.xml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view5.xml	percent-support-extends-sample/src/main/res/layout/view5.xml
+R100	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view6.xml	percent-support-extends-sample/src/main/res/layout/view6.xml
+R100	sample/android-percent-support/src/main/res/layout/view7_padding.xml	percent-support-extends-sample/src/main/res/layout/view7_padding.xml
+R100	sample/android-percent-support/src/main/res/menu/menu_item.xml	percent-support-extends-sample/src/main/res/menu/menu_item.xml
+R100	sample/android-percent-support/src/main/res/menu/menu_list_view_test.xml	percent-support-extends-sample/src/main/res/menu/menu_list_view_test.xml
+R100	sample/android-percent-support/src/main/res/menu/menu_main.xml	percent-support-extends-sample/src/main/res/menu/menu_main.xml
+A	percent-support-extends-sample/src/main/res/mipmap-hdpi/ic_launcher.png
+A	percent-support-extends-sample/src/main/res/mipmap-mdpi/ic_launcher.png
+A	percent-support-extends-sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	percent-support-extends-sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+R100	sample/android-percent-support/src/main/res/values-w820dp/dimens.xml	percent-support-extends-sample/src/main/res/values-w820dp/dimens.xml
+R100	sample/android-percent-support/src/main/res/values/attrs.xml	percent-support-extends-sample/src/main/res/values/attrs.xml
+R100	sample/android-percent-support/src/main/res/values/dimens.xml	percent-support-extends-sample/src/main/res/values/dimens.xml
+R100	sample/android-percent-support/src/main/res/values/strings.xml	percent-support-extends-sample/src/main/res/values/strings.xml
+A	percent-support-extends-sample/src/main/res/values/styles.xml
+A	percent-support-extends/.gitignore
+R100	sources/percent-support-extends/build.gradle	percent-support-extends/build.gradle
+A	percent-support-extends/percent-support-extends.iml
+R062	eclipse_demo_and_sources/android-percent-support-extend-lib/proguard-project.txt	percent-support-extends/proguard-rules.pro
+A	percent-support-extends/src/androidTest/androidTest1.iml
+R100	sources/percent-support-extends/src/androidTest/java/com/zhy/android/percent/support/ApplicationTest.java	percent-support-extends/src/androidTest/java/com/zhy/android/percent/support/ApplicationTest.java
+R100	sources/percent-support-extends/src/main/AndroidManifest.xml	percent-support-extends/src/main/AndroidManifest.xml
+A	percent-support-extends/src/main/gen/com/zhy/android/percent/support/BuildConfig.java
+A	percent-support-extends/src/main/gen/com/zhy/android/percent/support/Manifest.java
+A	percent-support-extends/src/main/gen/com/zhy/android/percent/support/R.java
+R100	eclipse_demo_and_sources/android-percent-support-extend-lib/src/com/zhy/android/percent/support/PercentFrameLayout.java	percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentFrameLayout.java
+R100	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLayoutHelper.java	percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLayoutHelper.java
+R100	eclipse_demo_and_sources/android-percent-support-extend-lib/src/com/zhy/android/percent/support/PercentLinearLayout.java	percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLinearLayout.java
+R100	eclipse_demo_and_sources/android-percent-support-extend-lib/src/com/zhy/android/percent/support/PercentRelativeLayout.java	percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentRelativeLayout.java
+A	percent-support-extends/src/main/main1.iml
+R100	sources/percent-support-extends/src/main/res/values/attrs.xml	percent-support-extends/src/main/res/values/attrs.xml
+R100	sources/percent-support-extends/src/main/res/values/strings.xml	percent-support-extends/src/main/res/values/strings.xml
+D	sample/android-percent-support/src/main/res/drawable-hdpi/tangyan.jpeg
+D	sample/android-percent-support/src/main/res/layout/activity_category.xml
+D	sample/android-percent-support/src/main/res/layout/activity_item.xml
+D	sample/android-percent-support/src/main/res/layout/activity_list_view_test.xml
+D	sample/android-percent-support/src/main/res/layout/activity_main.xml
+D	sample/android-percent-support/src/main/res/layout/item_category.xml
+D	sample/android-percent-support/src/main/res/layout/view1.xml
+D	sample/android-percent-support/src/main/res/layout/view2.xml
+D	sample/android-percent-support/src/main/res/layout/view3.xml
+D	sample/android-percent-support/src/main/res/layout/view4.xml
+D	sample/android-percent-support/src/main/res/layout/view5.xml
+D	sample/android-percent-support/src/main/res/layout/view6.xml
+A	settings.gradle
+D	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentFrameLayout.java
+D	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLinearLayout.java
+D	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentRelativeLayout.java
+
+3ddc9fc;增加了padding百分比设置的支持
+M	README.md
+M	sample/android-percent-support/build.gradle
+M	sample/android-percent-support/src/main/java/com/imooc/android_percent_support/MainActivity.java
+M	sample/android-percent-support/src/main/res/layout/view5.xml
+M	sample/android-percent-support/src/main/res/layout/view6.xml
+A	sample/android-percent-support/src/main/res/layout/view7_padding.xml
+M	sources/percent-support-extends/build.gradle
+M	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLayoutHelper.java
+M	sources/percent-support-extends/src/main/res/values/attrs.xml
+
+4cabb03;增加eclipse的导入方式
+M	README.md
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/.classpath
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/.project
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/AndroidManifest.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/ic_launcher-web.png
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/libs/android-support-v4.jar
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/lint.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/proguard-project.txt
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/project.properties
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/res/drawable-hdpi/ic_launcher.png
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/res/drawable-mdpi/ic_launcher.png
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/res/drawable-xhdpi/ic_launcher.png
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/res/drawable-xxhdpi/ic_launcher.png
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/res/values-v11/styles.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/res/values-v14/styles.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/res/values/attrs.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/res/values/strings.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/res/values/styles.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/src/com/zhy/android/percent/support/PercentFrameLayout.java
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/src/com/zhy/android/percent/support/PercentLayoutHelper.java
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/src/com/zhy/android/percent/support/PercentLinearLayout.java
+A	eclipse_demo_and_sources/android-percent-support-extend-lib/src/com/zhy/android/percent/support/PercentRelativeLayout.java
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/.classpath
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/.project
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/AndroidManifest.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/ic_launcher-web.png
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/proguard-project.txt
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/project.properties
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/drawable-hdpi/ic_launcher.png
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/drawable-hdpi/tangyan.jpeg
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/drawable-mdpi/ic_launcher.png
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/drawable-xhdpi/ic_launcher.png
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/drawable-xxhdpi/ic_launcher.png
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/activity_category.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/activity_item.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/activity_list_view_test.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/activity_main.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/item_category.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/item_music_list.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view1.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view2.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view3.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view4.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view5.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/layout/view6.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/menu/main.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values-v11/styles.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values-v14/styles.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values-w820dp/dimens.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values/dimens.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values/strings.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/res/values/styles.xml
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/src/com/example/android_percent_support_extend_sample/ItemActivity.java
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/src/com/example/android_percent_support_extend_sample/ListViewTestActivity.java
+A	eclipse_demo_and_sources/android-percent-support-extend-sample/src/com/example/android_percent_support_extend_sample/MainActivity.java
+
+2df29e4;add listview demo
+M	sample/android-percent-support/src/main/AndroidManifest.xml
+A	sample/android-percent-support/src/main/java/com/imooc/android_percent_support/ListViewTestActivity.java
+M	sample/android-percent-support/src/main/java/com/imooc/android_percent_support/MainActivity.java
+A	sample/android-percent-support/src/main/res/layout/activity_list_view_test.xml
+A	sample/android-percent-support/src/main/res/layout/item_music_list.xml
+M	sample/android-percent-support/src/main/res/layout/view3.xml
+A	sample/android-percent-support/src/main/res/menu/menu_list_view_test.xml
+M	sample/android-percent-support/src/main/res/values/strings.xml
+
+2f4a4df;update md
+M	README.md
+A	sc_02_full.png
+M	sc_03.png
+A	sc_03_full.png
+
+321683b;add setMax/Min support
+M	sample/android-percent-support/build.gradle
+M	sample/android-percent-support/src/main/res/layout/view1.xml
+M	sample/android-percent-support/src/main/res/layout/view4.xml
+M	sources/percent-support-extends/build.gradle
+M	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLayoutHelper.java
+M	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLinearLayout.java
+M	sources/percent-support-extends/src/main/res/values/attrs.xml
+
+aaac494;update readme
+M	README.md
+
+6ed1fd5;update sources and sample
+M	README.md
+A	backup.md
+A	percent_04.gif
+A	sample/android-percent-support/.gitignore
+A	sample/android-percent-support/build.gradle
+A	sample/android-percent-support/proguard-rules.pro
+A	sample/android-percent-support/src/androidTest/java/com/imooc/android_percent_support/ApplicationTest.java
+A	sample/android-percent-support/src/main/AndroidManifest.xml
+A	sample/android-percent-support/src/main/java/com/imooc/android_percent_support/ItemActivity.java
+A	sample/android-percent-support/src/main/java/com/imooc/android_percent_support/MainActivity.java
+A	sample/android-percent-support/src/main/res/drawable-hdpi/tangyan.jpeg
+A	sample/android-percent-support/src/main/res/layout/activity_category.xml
+A	sample/android-percent-support/src/main/res/layout/activity_item.xml
+A	sample/android-percent-support/src/main/res/layout/activity_main.xml
+A	sample/android-percent-support/src/main/res/layout/item_category.xml
+A	sample/android-percent-support/src/main/res/layout/view1.xml
+A	sample/android-percent-support/src/main/res/layout/view2.xml
+A	sample/android-percent-support/src/main/res/layout/view3.xml
+A	sample/android-percent-support/src/main/res/layout/view4.xml
+A	sample/android-percent-support/src/main/res/layout/view5.xml
+A	sample/android-percent-support/src/main/res/layout/view6.xml
+A	sample/android-percent-support/src/main/res/menu/menu_item.xml
+A	sample/android-percent-support/src/main/res/menu/menu_main.xml
+A	sample/android-percent-support/src/main/res/mipmap-hdpi/ic_launcher.png
+A	sample/android-percent-support/src/main/res/mipmap-mdpi/ic_launcher.png
+A	sample/android-percent-support/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	sample/android-percent-support/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	sample/android-percent-support/src/main/res/values-w820dp/dimens.xml
+A	sample/android-percent-support/src/main/res/values/attrs.xml
+A	sample/android-percent-support/src/main/res/values/dimens.xml
+A	sample/android-percent-support/src/main/res/values/strings.xml
+A	sample/android-percent-support/src/main/res/values/styles.xml
+A	sources/percent-support-extends/.gitignore
+A	sources/percent-support-extends/build.gradle
+A	sources/percent-support-extends/proguard-rules.pro
+A	sources/percent-support-extends/src/androidTest/java/com/zhy/android/percent/support/ApplicationTest.java
+A	sources/percent-support-extends/src/main/AndroidManifest.xml
+A	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentFrameLayout.java
+A	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLayoutHelper.java
+A	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentLinearLayout.java
+A	sources/percent-support-extends/src/main/java/com/zhy/android/percent/support/PercentRelativeLayout.java
+A	sources/percent-support-extends/src/main/res/values/attrs.xml
+A	sources/percent-support-extends/src/main/res/values/strings.xml
+
+e71003e;delete origin
+D	sc_01.png
+
+8078539;delete origin
+D	eclipse/Android-support-screen-extends/.classpath
+D	eclipse/Android-support-screen-extends/.project
+D	eclipse/Android-support-screen-extends/AndroidManifest.xml
+D	eclipse/Android-support-screen-extends/ic_launcher-web.png
+D	eclipse/Android-support-screen-extends/proguard-project.txt
+D	eclipse/Android-support-screen-extends/project.properties
+D	eclipse/Android-support-screen-extends/res/drawable-hdpi/ic_launcher.png
+D	eclipse/Android-support-screen-extends/res/drawable-hdpi/tangyan.jpeg
+D	eclipse/Android-support-screen-extends/res/drawable-mdpi/ic_launcher.png
+D	eclipse/Android-support-screen-extends/res/drawable-xhdpi/ic_launcher.png
+D	eclipse/Android-support-screen-extends/res/drawable-xxhdpi/ic_launcher.png
+D	eclipse/Android-support-screen-extends/res/layout/activity_category.xml
+D	eclipse/Android-support-screen-extends/res/layout/activity_item.xml
+D	eclipse/Android-support-screen-extends/res/layout/activity_main.xml
+D	eclipse/Android-support-screen-extends/res/layout/item_category.xml
+D	eclipse/Android-support-screen-extends/res/layout/view1.xml
+D	eclipse/Android-support-screen-extends/res/layout/view2.xml
+D	eclipse/Android-support-screen-extends/res/layout/view3.xml
+D	eclipse/Android-support-screen-extends/res/layout/view4.xml
+D	eclipse/Android-support-screen-extends/res/layout/view5.xml
+D	eclipse/Android-support-screen-extends/res/menu/main.xml
+D	eclipse/Android-support-screen-extends/res/menu/menu_item.xml
+D	eclipse/Android-support-screen-extends/res/menu/menu_main.xml
+D	eclipse/Android-support-screen-extends/res/mipmap-hdpi/ic_launcher.png
+D	eclipse/Android-support-screen-extends/res/mipmap-mdpi/ic_launcher.png
+D	eclipse/Android-support-screen-extends/res/mipmap-xhdpi/ic_launcher.png
+D	eclipse/Android-support-screen-extends/res/mipmap-xxhdpi/ic_launcher.png
+D	eclipse/Android-support-screen-extends/res/values-v11/styles.xml
+D	eclipse/Android-support-screen-extends/res/values-v14/styles.xml
+D	eclipse/Android-support-screen-extends/res/values-w820dp/dimens.xml
+D	eclipse/Android-support-screen-extends/res/values/attrs.xml
+D	eclipse/Android-support-screen-extends/res/values/dimens.xml
+D	eclipse/Android-support-screen-extends/res/values/strings.xml
+D	eclipse/Android-support-screen-extends/res/values/styles.xml
+D	eclipse/Android-support-screen-extends/src/android/support/percent/PercentFrameLayout.java
+D	eclipse/Android-support-screen-extends/src/android/support/percent/PercentLayoutHelper.java
+D	eclipse/Android-support-screen-extends/src/android/support/percent/PercentLinearLayout.java
+D	eclipse/Android-support-screen-extends/src/android/support/percent/PercentRelativeLayout.java
+D	eclipse/Android-support-screen-extends/src/com/zhy/android_percent_support/ItemActivity.java
+D	eclipse/Android-support-screen-extends/src/com/zhy/android_percent_support/MainActivity.java
+D	studio/android-percent-support/.gitignore
+D	studio/android-percent-support/android-percent-support.iml
+D	studio/android-percent-support/build.gradle
+D	studio/android-percent-support/proguard-rules.pro
+D	studio/android-percent-support/src/androidTest/java/com/imooc/android_percent_support/ApplicationTest.java
+D	studio/android-percent-support/src/main/AndroidManifest.xml
+D	studio/android-percent-support/src/main/java/android/support/percent/PercentFrameLayout.java
+D	studio/android-percent-support/src/main/java/android/support/percent/PercentLayoutHelper.java
+D	studio/android-percent-support/src/main/java/android/support/percent/PercentLinearLayout.java
+D	studio/android-percent-support/src/main/java/android/support/percent/PercentRelativeLayout.java
+D	studio/android-percent-support/src/main/java/com/imooc/android_percent_support/ItemActivity.java
+D	studio/android-percent-support/src/main/java/com/imooc/android_percent_support/MainActivity.java
+D	studio/android-percent-support/src/main/res/drawable-hdpi/tangyan.jpeg
+D	studio/android-percent-support/src/main/res/layout/activity_category.xml
+D	studio/android-percent-support/src/main/res/layout/activity_item.xml
+D	studio/android-percent-support/src/main/res/layout/activity_main.xml
+D	studio/android-percent-support/src/main/res/layout/item_category.xml
+D	studio/android-percent-support/src/main/res/layout/view1.xml
+D	studio/android-percent-support/src/main/res/layout/view2.xml
+D	studio/android-percent-support/src/main/res/layout/view3.xml
+D	studio/android-percent-support/src/main/res/layout/view4.xml
+D	studio/android-percent-support/src/main/res/layout/view5.xml
+D	studio/android-percent-support/src/main/res/menu/menu_item.xml
+D	studio/android-percent-support/src/main/res/menu/menu_main.xml
+D	studio/android-percent-support/src/main/res/mipmap-hdpi/ic_launcher.png
+D	studio/android-percent-support/src/main/res/mipmap-mdpi/ic_launcher.png
+D	studio/android-percent-support/src/main/res/mipmap-xhdpi/ic_launcher.png
+D	studio/android-percent-support/src/main/res/mipmap-xxhdpi/ic_launcher.png
+D	studio/android-percent-support/src/main/res/values-w820dp/dimens.xml
+D	studio/android-percent-support/src/main/res/values/attrs.xml
+D	studio/android-percent-support/src/main/res/values/dimens.xml
+D	studio/android-percent-support/src/main/res/values/strings.xml
+D	studio/android-percent-support/src/main/res/values/styles.xml
+
+13fd5b3;upload to jcenter
+M	README.md
+
+42aad0b;add textSizePercent support
+M	README.md
+M	studio/android-percent-support/src/main/java/android/support/percent/PercentLayoutHelper.java
+M	studio/android-percent-support/src/main/res/layout/view2.xml
+M	studio/android-percent-support/src/main/res/layout/view5.xml
+M	studio/android-percent-support/src/main/res/values/attrs.xml
+
+2bce203;add android-percent-support-extends
+A	README-orgin.md
+M	README.md
+A	eclipse/Android-support-screen-extends/.classpath
+A	eclipse/Android-support-screen-extends/.project
+A	eclipse/Android-support-screen-extends/AndroidManifest.xml
+A	eclipse/Android-support-screen-extends/ic_launcher-web.png
+A	eclipse/Android-support-screen-extends/proguard-project.txt
+A	eclipse/Android-support-screen-extends/project.properties
+A	eclipse/Android-support-screen-extends/res/drawable-hdpi/ic_launcher.png
+A	eclipse/Android-support-screen-extends/res/drawable-hdpi/tangyan.jpeg
+A	eclipse/Android-support-screen-extends/res/drawable-mdpi/ic_launcher.png
+A	eclipse/Android-support-screen-extends/res/drawable-xhdpi/ic_launcher.png
+A	eclipse/Android-support-screen-extends/res/drawable-xxhdpi/ic_launcher.png
+A	eclipse/Android-support-screen-extends/res/layout/activity_category.xml
+A	eclipse/Android-support-screen-extends/res/layout/activity_item.xml
+A	eclipse/Android-support-screen-extends/res/layout/activity_main.xml
+A	eclipse/Android-support-screen-extends/res/layout/item_category.xml
+A	eclipse/Android-support-screen-extends/res/layout/view1.xml
+A	eclipse/Android-support-screen-extends/res/layout/view2.xml
+A	eclipse/Android-support-screen-extends/res/layout/view3.xml
+A	eclipse/Android-support-screen-extends/res/layout/view4.xml
+A	eclipse/Android-support-screen-extends/res/layout/view5.xml
+A	eclipse/Android-support-screen-extends/res/menu/main.xml
+A	eclipse/Android-support-screen-extends/res/menu/menu_item.xml
+A	eclipse/Android-support-screen-extends/res/menu/menu_main.xml
+A	eclipse/Android-support-screen-extends/res/mipmap-hdpi/ic_launcher.png
+A	eclipse/Android-support-screen-extends/res/mipmap-mdpi/ic_launcher.png
+A	eclipse/Android-support-screen-extends/res/mipmap-xhdpi/ic_launcher.png
+A	eclipse/Android-support-screen-extends/res/mipmap-xxhdpi/ic_launcher.png
+A	eclipse/Android-support-screen-extends/res/values-v11/styles.xml
+A	eclipse/Android-support-screen-extends/res/values-v14/styles.xml
+A	eclipse/Android-support-screen-extends/res/values-w820dp/dimens.xml
+A	eclipse/Android-support-screen-extends/res/values/attrs.xml
+A	eclipse/Android-support-screen-extends/res/values/dimens.xml
+A	eclipse/Android-support-screen-extends/res/values/strings.xml
+A	eclipse/Android-support-screen-extends/res/values/styles.xml
+A	eclipse/Android-support-screen-extends/src/android/support/percent/PercentFrameLayout.java
+A	eclipse/Android-support-screen-extends/src/android/support/percent/PercentLayoutHelper.java
+A	eclipse/Android-support-screen-extends/src/android/support/percent/PercentLinearLayout.java
+A	eclipse/Android-support-screen-extends/src/android/support/percent/PercentRelativeLayout.java
+A	eclipse/Android-support-screen-extends/src/com/zhy/android_percent_support/ItemActivity.java
+A	eclipse/Android-support-screen-extends/src/com/zhy/android_percent_support/MainActivity.java
+A	sc_01.png
+A	sc_02.png
+A	sc_03.png
+A	studio/android-percent-support/.gitignore
+A	studio/android-percent-support/android-percent-support.iml
+A	studio/android-percent-support/build.gradle
+A	studio/android-percent-support/proguard-rules.pro
+A	studio/android-percent-support/src/androidTest/java/com/imooc/android_percent_support/ApplicationTest.java
+A	studio/android-percent-support/src/main/AndroidManifest.xml
+A	studio/android-percent-support/src/main/java/android/support/percent/PercentFrameLayout.java
+A	studio/android-percent-support/src/main/java/android/support/percent/PercentLayoutHelper.java
+A	studio/android-percent-support/src/main/java/android/support/percent/PercentLinearLayout.java
+A	studio/android-percent-support/src/main/java/android/support/percent/PercentRelativeLayout.java
+A	studio/android-percent-support/src/main/java/com/imooc/android_percent_support/ItemActivity.java
+A	studio/android-percent-support/src/main/java/com/imooc/android_percent_support/MainActivity.java
+A	studio/android-percent-support/src/main/res/drawable-hdpi/tangyan.jpeg
+A	studio/android-percent-support/src/main/res/layout/activity_category.xml
+A	studio/android-percent-support/src/main/res/layout/activity_item.xml
+A	studio/android-percent-support/src/main/res/layout/activity_main.xml
+A	studio/android-percent-support/src/main/res/layout/item_category.xml
+A	studio/android-percent-support/src/main/res/layout/view1.xml
+A	studio/android-percent-support/src/main/res/layout/view2.xml
+A	studio/android-percent-support/src/main/res/layout/view3.xml
+A	studio/android-percent-support/src/main/res/layout/view4.xml
+A	studio/android-percent-support/src/main/res/layout/view5.xml
+A	studio/android-percent-support/src/main/res/menu/menu_item.xml
+A	studio/android-percent-support/src/main/res/menu/menu_main.xml
+A	studio/android-percent-support/src/main/res/mipmap-hdpi/ic_launcher.png
+A	studio/android-percent-support/src/main/res/mipmap-mdpi/ic_launcher.png
+A	studio/android-percent-support/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	studio/android-percent-support/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	studio/android-percent-support/src/main/res/values-w820dp/dimens.xml
+A	studio/android-percent-support/src/main/res/values/attrs.xml
+A	studio/android-percent-support/src/main/res/values/dimens.xml
+A	studio/android-percent-support/src/main/res/values/strings.xml
+A	studio/android-percent-support/src/main/res/values/styles.xml
+
+44efc71;Initial commit
+A	.gitignore
+A	LICENSE
+A	README.md

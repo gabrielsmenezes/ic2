@@ -1,0 +1,1135 @@
+dd9ad24;Merge pull request #55 from 47deg/fp-deprecate-project
+db17a89;Update README.md
+M	README.md
+
+c5b1f96;Merge pull request #52 from epaaj/patch-1
+a71a219;Disabling logging when not in debugging mode
+M	android-rest/src/main/java/ly/apps/android/rest/utils/Logger.java
+
+0b4a996;explicitly set content type on the StringEntity so its not ignored by the http client
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonBodyConverter.java
+
+5542c91;updated AsyncHttpClient, grade and Android SDK to latest
+M	.gitignore
+D	.gradle/1.9/taskArtifacts/cache.properties
+D	.gradle/1.9/taskArtifacts/fileHashes.bin
+D	.gradle/1.9/taskArtifacts/fileSnapshots.bin
+D	.gradle/1.9/taskArtifacts/outputFileStates.bin
+D	.gradle/1.9/taskArtifacts/taskArtifacts.bin
+M	android-rest-example/build.gradle
+M	android-rest/build.gradle
+M	android-rest/src/main/AndroidManifest.xml
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareCallback.java
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+
+3681ae5;Merge pull request #45 from JMPergar/master
+74ff6f3;Unnecesary dependency deleted
+M	android-rest/build.gradle
+
+6a914b5;Changes to allow compilation
+M	android-rest-example/build.gradle
+M	android-rest/src/androidTest/java/ly/apps/android/rest/tests/APIAsyncTest.java
+
+07ba89a;Added configuration to allow import project
+M	gradle.properties
+
+1912fc9;Removed manually setting headers as AsyncHttpClient duplicates them if previously set
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareHttpClient.java
+
+fb1c80e;Update README.md
+M	README.md
+
+634548c;Renamed DiskLruCache to DiskCache to avoid file system name conflict
+R097	android-rest/src/main/java/ly/apps/android/rest/cache/disklrucache/DiskLRUCache.java	android-rest/src/main/java/ly/apps/android/rest/cache/disklrucache/DiskCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ObjectCache.java
+
+7aea855;Upgraded gradle versions, fixed test locations and embedded LruDiskCache to include bug fixes that were only available in the most recent versions.
+M	.gradle/1.9/taskArtifacts/cache.properties
+M	.gradle/1.9/taskArtifacts/fileHashes.bin
+M	.gradle/1.9/taskArtifacts/fileSnapshots.bin
+M	.gradle/1.9/taskArtifacts/outputFileStates.bin
+M	.gradle/1.9/taskArtifacts/taskArtifacts.bin
+M	android-rest-example/build.gradle
+M	android-rest/build.gradle
+R100	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/APIAsyncTest.java	android-rest/src/androidTest/java/ly/apps/android/rest/tests/APIAsyncTest.java
+R100	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/APITests.java	android-rest/src/androidTest/java/ly/apps/android/rest/tests/APITests.java
+A	android-rest/src/androidTest/java/ly/apps/android/rest/tests/CacheTests.java
+R100	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/FormValuesConverterTest.java	android-rest/src/androidTest/java/ly/apps/android/rest/tests/FormValuesConverterTest.java
+R100	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/JsonBodyConverterTest.java	android-rest/src/androidTest/java/ly/apps/android/rest/tests/JsonBodyConverterTest.java
+R100	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/OpenWeatherAPI.java	android-rest/src/androidTest/java/ly/apps/android/rest/tests/OpenWeatherAPI.java
+R100	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/QueryParamsConverterTest.java	android-rest/src/androidTest/java/ly/apps/android/rest/tests/QueryParamsConverterTest.java
+R100	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/SampleBean.java	android-rest/src/androidTest/java/ly/apps/android/rest/tests/SampleBean.java
+R100	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/SampleNestedBean.java	android-rest/src/androidTest/java/ly/apps/android/rest/tests/SampleNestedBean.java
+R100	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/TestCallback.java	android-rest/src/androidTest/java/ly/apps/android/rest/tests/TestCallback.java
+R100	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/WeatherResponse.java	android-rest/src/androidTest/java/ly/apps/android/rest/tests/WeatherResponse.java
+D	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/CacheTests.java
+A	android-rest/src/main/java/ly/apps/android/rest/cache/disklrucache/DiskLRUCache.java
+A	android-rest/src/main/java/ly/apps/android/rest/cache/disklrucache/StrictLineReader.java
+A	android-rest/src/main/java/ly/apps/android/rest/cache/disklrucache/Util.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ObjectCache.java
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+751bf37;Remerged parallel asynctasks execution
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareHttpClient.java
+
+a4ebb97;Fixes for NETWORK_ENABLED cache
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareHttpClient.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheManager.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/ContextPersistentCacheManager.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ObjectCache.java
+
+20622c1;Updated gitignore
+M	.gitignore
+
+422ca85;Update README.md
+M	README.md
+
+e0dd3d7;Fixed deployment location
+M	android-rest/build.gradle
+
+4418d67;Update README.md
+M	README.md
+
+015ba76;Thread Pool Executor by default in AsyncTasks
+M	android-rest/build.gradle
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareCallback.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareHttpClient.java
+A	android-rest/src/main/java/ly/apps/android/rest/utils/ExecutionUtils.java
+
+73020ed;RESTrung app example
+A	.gradle/1.9/taskArtifacts/cache.properties
+A	.gradle/1.9/taskArtifacts/fileHashes.bin
+A	.gradle/1.9/taskArtifacts/fileSnapshots.bin
+A	.gradle/1.9/taskArtifacts/outputFileStates.bin
+A	.gradle/1.9/taskArtifacts/taskArtifacts.bin
+A	android-rest-example/build.gradle
+A	android-rest-example/proguard-rules.txt
+A	android-rest-example/src/main/AndroidManifest.xml
+A	android-rest-example/src/main/ic_launcher-web.png
+A	android-rest-example/src/main/java/ly/apps/android/rest/client/example/Responses/ForecastResponse.java
+A	android-rest-example/src/main/java/ly/apps/android/rest/client/example/Responses/MainResponse.java
+A	android-rest-example/src/main/java/ly/apps/android/rest/client/example/Responses/WeatherResponse.java
+A	android-rest-example/src/main/java/ly/apps/android/rest/client/example/Responses/WindResponse.java
+A	android-rest-example/src/main/java/ly/apps/android/rest/client/example/activities/MainActivity.java
+A	android-rest-example/src/main/java/ly/apps/android/rest/client/example/api/OpenWeatherAPI.java
+A	android-rest-example/src/main/java/ly/apps/android/rest/client/example/dialogs/AboutDialog.java
+A	android-rest-example/src/main/java/ly/apps/android/rest/client/example/utils/PreferencesManager.java
+A	android-rest-example/src/main/res/drawable-hdpi/broken_clouds.png
+A	android-rest-example/src/main/res/drawable-hdpi/cloud.png
+A	android-rest-example/src/main/res/drawable-hdpi/few_clouds_day.png
+A	android-rest-example/src/main/res/drawable-hdpi/few_clouds_night.png
+A	android-rest-example/src/main/res/drawable-hdpi/ic_launcher.png
+A	android-rest-example/src/main/res/drawable-hdpi/mist.png
+A	android-rest-example/src/main/res/drawable-hdpi/moon.png
+A	android-rest-example/src/main/res/drawable-hdpi/rain.png
+A	android-rest-example/src/main/res/drawable-hdpi/shower_rain.png
+A	android-rest-example/src/main/res/drawable-hdpi/snow.png
+A	android-rest-example/src/main/res/drawable-hdpi/sunny.png
+A	android-rest-example/src/main/res/drawable-hdpi/tem_white.png
+A	android-rest-example/src/main/res/drawable-hdpi/thunderstorm.png
+A	android-rest-example/src/main/res/drawable-mdpi/broken_clouds.png
+A	android-rest-example/src/main/res/drawable-mdpi/cloud.png
+A	android-rest-example/src/main/res/drawable-mdpi/few_clouds_day.png
+A	android-rest-example/src/main/res/drawable-mdpi/few_clouds_night.png
+A	android-rest-example/src/main/res/drawable-mdpi/ic_launcher.png
+A	android-rest-example/src/main/res/drawable-mdpi/mist.png
+A	android-rest-example/src/main/res/drawable-mdpi/moon.png
+A	android-rest-example/src/main/res/drawable-mdpi/rain.png
+A	android-rest-example/src/main/res/drawable-mdpi/shower_rain.png
+A	android-rest-example/src/main/res/drawable-mdpi/snow.png
+A	android-rest-example/src/main/res/drawable-mdpi/sunny.png
+A	android-rest-example/src/main/res/drawable-mdpi/tem_white.png
+A	android-rest-example/src/main/res/drawable-mdpi/thunderstorm.png
+A	android-rest-example/src/main/res/drawable-xhdpi/broken_clouds.png
+A	android-rest-example/src/main/res/drawable-xhdpi/cloud.png
+A	android-rest-example/src/main/res/drawable-xhdpi/few_clouds_day.png
+A	android-rest-example/src/main/res/drawable-xhdpi/few_clouds_night.png
+A	android-rest-example/src/main/res/drawable-xhdpi/ic_launcher.png
+A	android-rest-example/src/main/res/drawable-xhdpi/mist.png
+A	android-rest-example/src/main/res/drawable-xhdpi/moon.png
+A	android-rest-example/src/main/res/drawable-xhdpi/rain.png
+A	android-rest-example/src/main/res/drawable-xhdpi/shower_rain.png
+A	android-rest-example/src/main/res/drawable-xhdpi/snow.png
+A	android-rest-example/src/main/res/drawable-xhdpi/sunny.png
+A	android-rest-example/src/main/res/drawable-xhdpi/tem_white.png
+A	android-rest-example/src/main/res/drawable-xhdpi/thunderstorm.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/broken_clouds.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/cloud.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/few_clouds_day.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/few_clouds_night.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/ic_launcher.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/mist.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/moon.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/rain.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/shower_rain.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/snow.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/sunny.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/tem_white.png
+A	android-rest-example/src/main/res/drawable-xxhdpi/thunderstorm.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/broken_clouds.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/cloud.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/few_clouds_day.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/few_clouds_night.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/ic_launcher.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/mist.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/moon.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/rain.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/shower_rain.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/snow.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/sunny.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/tem_white.png
+A	android-rest-example/src/main/res/drawable-xxxhdpi/thunderstorm.png
+A	android-rest-example/src/main/res/layout/activity_main.xml
+A	android-rest-example/src/main/res/values-v16/style.xml
+A	android-rest-example/src/main/res/values-v19/style.xml
+A	android-rest-example/src/main/res/values/colors.xml
+A	android-rest-example/src/main/res/values/dimens.xml
+A	android-rest-example/src/main/res/values/strings.xml
+A	android-rest-example/src/main/res/values/styles.xml
+M	settings.gradle
+
+697d77a;Merge pull request #35 from danramirez/master
+2b0168b;Fixes #APP_ANDROID_REST-3 Bumped up to latest sdk tools 19.0.3
+M	android-rest/build.gradle
+
+a4239c8;Merge pull request #34 from justinelsberry/master
+d8849a7;Support for existing query params in path
+M	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/QueryParamsConverterTest.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonQueryParamsConverter.java
+
+f64df2b;Updated README version
+M	README.md
+
+6b8aaf7;Updated README version
+M	README.md
+
+687cb87;Attempt to fix wrong dep
+M	android-rest/build.gradle
+M	gradle.properties
+
+01071c0;Only use internal cache
+M	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/CacheTests.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ObjectCache.java
+
+a930f01;Only run cache tests if the cache is available
+M	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/CacheTests.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ObjectCache.java
+
+b05122a;Attempt to fix cache test and renamed test package
+R097	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/APIAsyncTest.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/APIAsyncTest.java
+R098	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/APITests.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/APITests.java
+R075	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/CacheTests.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/CacheTests.java
+R095	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/FormValuesConverterTest.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/FormValuesConverterTest.java
+R089	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/JsonBodyConverterTest.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/JsonBodyConverterTest.java
+R096	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/OpenWeatherAPI.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/OpenWeatherAPI.java
+R098	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/QueryParamsConverterTest.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/QueryParamsConverterTest.java
+R099	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/SampleBean.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/SampleBean.java
+R097	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/SampleNestedBean.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/SampleNestedBean.java
+R097	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/TestCallback.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/TestCallback.java
+R096	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/WeatherResponse.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/WeatherResponse.java
+
+3750c92;Merge pull request #33 from fjtorres/master
+c29dd62;Added Cache Test
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/CacheTests.java
+
+0cd3ff2;Changes to use version 1.2.1 of the library disklrucache
+M	android-rest/build.gradle
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ObjectCache.java
+
+3fd7f22;Update README.md
+M	README.md
+
+dc52c8a;Update README.md
+M	README.md
+
+416228d;Added Clinker build status image
+M	README.md
+
+a30fd87;Updated status build image name
+M	README.md
+
+4dcf54c;Update README.md
+M	README.md
+
+87c9415;Updated dependencies examples
+M	.travis.yml
+M	README.md
+M	android-rest/build.gradle
+
+0b66431;Fixed build to include aar dependencies and more pom info
+M	README.md
+M	android-rest/build.gradle
+M	gradle.properties
+
+67db0e1;Don't bail if the persistent cache can't be initialized
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ObjectCache.java
+
+0bb5c2a;Gradle 1.9
+M	.travis.yml
+
+1029837;Commented out maven stuff
+M	android-rest/build.gradle
+
+48234d1;Fixed so the boundary is included in the content type
+M	android-rest/build.gradle
+M	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/FormValuesConverterTest.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareHttpClient.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/DefaultRestClientImpl.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/FormField.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/impl/FileFormField.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonHttpFormValuesConverter.java
+
+f9aa5b6;Commented out maven deployment
+M	android-rest/build.gradle
+
+2f88833;Default content type to multipart if file is found and no request content type is provided in the Delegate Callback
+M	android-rest/build.gradle
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+
+9a8f028;Progress with multipart upload support
+M	android-rest/build.gradle
+M	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/FormValuesConverterTest.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/DefaultRestClientImpl.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonHttpFormValuesConverter.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/impl/MultipartEntity.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/HeaderUtils.java
+
+3dda9ae;Merge remote-tracking branch 'origin/master'
+bb3012b;Added fix for file uplaods not working due to overloaded method not being invoked
+M	android-rest/build.gradle
+M	android-rest/src/main/java/ly/apps/android/rest/client/DefaultRestClientImpl.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestClient.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+M	gradle/wrapper/gradle-wrapper.properties
+
+9db5699;Fixed some README Links, still some to go
+M	README.md
+
+0e0d53d;Fixed Build status image
+M	README.md
+
+93cc9bd;Added Clinker build status image
+M	README.md
+
+0cdaa1e;Removed integration tests that relies on internet permission for now. Ideally the actual remote service is mocked
+M	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/APITests.java
+
+d04dc26;Added -info gradle flag
+M	.travis.yml
+
+9e95266;Added wait for emulator script
+A	ci/wait_for_emulator.sh
+
+ca1569d;Changed goal
+M	.travis.yml
+
+01f61b0;Removed sample module
+D	android-rest-example/build.gradle
+D	android-rest-example/proguard-rules.txt
+D	android-rest-example/src/main/AndroidManifest.xml
+D	android-rest-example/src/main/java/ly/apps/android/rest/example/MainActivity.java
+D	android-rest-example/src/main/res/layout/activity_main.xml
+D	android-rest-example/src/main/res/layout/fragment_main.xml
+D	android-rest-example/src/main/res/menu/main.xml
+D	android-rest-example/src/main/res/values/dimens.xml
+D	android-rest-example/src/main/res/values/strings.xml
+D	android-rest-example/src/main/res/values/styles.xml
+M	settings.gradle
+
+12f96d7;Changed gradle goal
+M	.travis.yml
+
+eae46ba;commented out maven deployer stuff for now
+M	.travis.yml
+
+9a71671;commented out maven deployer stuff for now
+M	android-rest/build.gradle
+
+77053bd;Updated travis build
+M	.travis.yml
+
+2561b4d;Attempt to fix NPE in test emulator
+M	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/APITests.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ObjectCache.java
+
+8c31adf;Added FormValuesConverter Test
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/FormValuesConverterTest.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/FileUtils.java
+
+9da9dc7;Added JsonBodyConverter Test
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/JsonBodyConverterTest.java
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/SampleBean.java
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/SampleNestedBean.java
+
+d678c99;Added QueryParamsConverter Test
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/QueryParamsConverterTest.java
+
+c73fdf3;More README docs
+M	README.md
+
+889ad58;More README docs
+M	README.md
+
+c106c14;More README docs
+M	README.md
+
+8b2a6a7;More README docs
+M	README.md
+
+e1cea0f;Added some README changes and draft test framework
+M	README.md
+
+44714b3;Added some README changes and draft test framework
+M	README.md
+
+59f2091;Added some README changes and draft test framework
+M	README.md
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/APIAsyncTest.java
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/APITests.java
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/OpenWeatherAPI.java
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/TestCallback.java
+A	android-rest/src/instrumentTest/java/ly/apps/androdi/rest/tests/WeatherResponse.java
+D	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/models/request/TestEntity.java
+D	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/models/request/TestNestedEntity.java
+D	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/models/request/ThirdEntity.java
+D	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/models/response/TestResponse.java
+D	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/services/TestRestService.java
+D	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/tests/JSONSerializableTest.java
+D	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/tests/RestServiceFactoryTest.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/Callback.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ResponseTypeUtil.java
+
+13a2c3b;Some comments and code cleanup
+M	.gitignore
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareCallback.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareHttpClient.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheEntry.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheInfo.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheManager.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CachePolicy.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/ContextPersistentCacheManager.java
+D	android-rest/src/main/java/ly/apps/android/rest/cache/RequestCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/Callback.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/DefaultRestClientImpl.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RequestAwareContext.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/Response.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestClient.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestClientFactory.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestServiceFactory.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/Body.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/Cached.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/DELETE.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/FormData.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/FormField.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/GET.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/HEAD.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/Header.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/HttpMethod.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/PATCH.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/POST.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/PUT.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/Path.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/QueryParam.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/QueryParams.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/RestService.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/BodyConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/QueryParamsConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/DelegatingConverterService.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonBodyConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonDotNetDateDeserializer.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonDotNetDateSerializer.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonHttpFormValuesConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonQueryParamsConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/exceptions/SerializationException.java
+D	android-rest/src/main/java/ly/apps/android/rest/misc/FakeSocketFactory.java
+D	android-rest/src/main/java/ly/apps/android/rest/misc/FakeTrustManager.java
+D	android-rest/src/main/java/ly/apps/android/rest/misc/HttpClientFactory.java
+D	android-rest/src/main/java/ly/apps/android/rest/misc/HttpDeleteWithBody.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/Base64.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/Base64DecoderException.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/FileUtils.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/HeaderUtils.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/Logger.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ObjectCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/ResponseTypeUtil.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/StringUtils.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/Types.java
+
+37b9675;Respect the cache info if set on the delegate
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+
+67bf898;Fix to dotNet date serializers
+M	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/models/request/TestEntity.java
+M	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/tests/JSONSerializableTest.java
+M	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/tests/RestServiceFactoryTest.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonDotNetDateDeserializer.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonDotNetDateSerializer.java
+
+bacacce;Fix to support @FormField
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+
+b921255;Preliminary cache impl progress
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareCallback.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareHttpClient.java
+
+835e9be;Preliminary cache impl
+M	android-rest/build.gradle
+M	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/tests/JSONSerializableTest.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareCallback.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareHttpClient.java
+A	android-rest/src/main/java/ly/apps/android/rest/cache/CacheEntry.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheManager.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/ContextPersistentCacheManager.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/RequestCache.java
+R081	android-rest/src/main/java/ly/apps/android/rest/utils/IOUtils.java	android-rest/src/main/java/ly/apps/android/rest/utils/FileUtils.java
+A	android-rest/src/main/java/ly/apps/android/rest/utils/ObjectCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/StringUtils.java
+
+11f1c17;Preliminary cache impl
+M	android-rest/build.gradle
+A	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareCallback.java
+A	android-rest/src/main/java/ly/apps/android/rest/cache/CacheAwareHttpClient.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheInfo.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/CacheManager.java
+D	android-rest/src/main/java/ly/apps/android/rest/cache/CacheService.java
+R052	android-rest/src/main/java/ly/apps/android/rest/cache/ContextPersistenCacheManager.java	android-rest/src/main/java/ly/apps/android/rest/cache/ContextPersistentCacheManager.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/Callback.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/DefaultRestClientImpl.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/Response.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestClientFactory.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestServiceFactory.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/annotations/Cached.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/BodyConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/DelegatingConverterService.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonBodyConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonHttpFormValuesConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/IOUtils.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/Logger.java
+
+876a83a;URL Encoding fix and progress on cache impl
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestClientFactory.java
+
+2ad0a07;URL Encoding fix and progress on cache impl
+A	android-rest/src/main/java/ly/apps/android/rest/cache/CacheManager.java
+A	android-rest/src/main/java/ly/apps/android/rest/cache/CachePolicy.java
+A	android-rest/src/main/java/ly/apps/android/rest/cache/CacheService.java
+A	android-rest/src/main/java/ly/apps/android/rest/cache/ContextPersistenCacheManager.java
+M	android-rest/src/main/java/ly/apps/android/rest/cache/RequestCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/DefaultRestClientImpl.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestClientFactory.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/Cached.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonQueryParamsConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/StringUtils.java
+
+118a09f;Morphing to Appsly Android REST Mostly stable. ready for documentation and teat battery
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonHttpFormValuesConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/HeaderUtils.java
+
+53ec6d1;Morphing to Appsly Android REST Fixes part 3
+M	android-rest/src/main/java/ly/apps/android/rest/client/Callback.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/DefaultRestClientImpl.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/RequestAwareContext.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestClient.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonDotNetDateDeserializer.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonDotNetDateSerializer.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonQueryParamsConverter.java
+
+572e527;Morphing to Appsly Android REST Fixes part 2
+M	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/tests/JSONSerializableTest.java
+M	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/tests/RestServiceFactoryTest.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/Callback.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/DefaultRestClientImpl.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestClient.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestClientFactory.java
+M	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+M	android-rest/src/main/java/ly/apps/android/rest/converters/BodyConverter.java
+D	android-rest/src/main/java/ly/apps/android/rest/converters/GsonConverter.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/QueryParamsConverter.java
+R089	android-rest/src/main/java/ly/apps/android/rest/converters/DelegatingConverterService.java	android-rest/src/main/java/ly/apps/android/rest/converters/impl/DelegatingConverterService.java
+R053	android-rest/src/main/java/ly/apps/android/rest/converters/JacksonConverter.java	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonBodyConverter.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonHttpFormValuesConverter.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/impl/JacksonQueryParamsConverter.java
+M	android-rest/src/main/java/ly/apps/android/rest/utils/HeaderUtils.java
+A	android-rest/src/main/java/ly/apps/android/rest/utils/Logger.java
+
+c67e65a;Morphing to Appsly Android REST
+M	.gitignore
+A	android-rest-example/build.gradle
+A	android-rest-example/proguard-rules.txt
+A	android-rest-example/src/main/AndroidManifest.xml
+A	android-rest-example/src/main/java/ly/apps/android/rest/example/MainActivity.java
+A	android-rest-example/src/main/res/layout/activity_main.xml
+A	android-rest-example/src/main/res/layout/fragment_main.xml
+A	android-rest-example/src/main/res/menu/main.xml
+A	android-rest-example/src/main/res/values/dimens.xml
+A	android-rest-example/src/main/res/values/strings.xml
+A	android-rest-example/src/main/res/values/styles.xml
+A	android-rest/build.gradle
+R084	src/test/java/it/restrung/tests/models/request/TestEntity.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/models/request/TestEntity.java
+R089	src/test/java/it/restrung/tests/models/request/TestNestedEntity.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/models/request/TestNestedEntity.java
+R051	src/test/java/it/restrung/tests/models/request/ThirdEntity.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/models/request/ThirdEntity.java
+A	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/models/response/TestResponse.java
+A	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/services/TestRestService.java
+R064	src/test/java/it/restrung/tests/JSONSerializableTest.java	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/tests/JSONSerializableTest.java
+A	android-rest/src/instrumentTest/java/ly/apps/android/rest/tests/tests/RestServiceFactoryTest.java
+A	android-rest/src/main/AndroidManifest.xml
+R098	src/main/java/it/restrung/rest/cache/CacheInfo.java	android-rest/src/main/java/ly/apps/android/rest/cache/CacheInfo.java
+A	android-rest/src/main/java/ly/apps/android/rest/cache/RequestCache.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/Callback.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/DefaultRestClientImpl.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/Response.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/RestClient.java
+R067	src/main/java/it/restrung/rest/client/RestClientFactory.java	android-rest/src/main/java/ly/apps/android/rest/client/RestClientFactory.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/RestMethodCache.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/RestServiceFactory.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/Body.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/DELETE.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/FormData.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/FormField.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/GET.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/HEAD.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/Header.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/HttpMethod.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/PATCH.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/POST.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/PUT.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/Path.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/QueryParam.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/QueryParams.java
+A	android-rest/src/main/java/ly/apps/android/rest/client/annotations/RestService.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/BodyConverter.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/DelegatingConverterService.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/GsonConverter.java
+A	android-rest/src/main/java/ly/apps/android/rest/converters/JacksonConverter.java
+R086	src/main/java/it/restrung/rest/exceptions/SerializationException.java	android-rest/src/main/java/ly/apps/android/rest/exceptions/SerializationException.java
+R098	src/main/java/it/restrung/rest/misc/FakeSocketFactory.java	android-rest/src/main/java/ly/apps/android/rest/misc/FakeSocketFactory.java
+R097	src/main/java/it/restrung/rest/misc/FakeTrustManager.java	android-rest/src/main/java/ly/apps/android/rest/misc/FakeTrustManager.java
+R098	src/main/java/it/restrung/rest/misc/HttpClientFactory.java	android-rest/src/main/java/ly/apps/android/rest/misc/HttpClientFactory.java
+R093	src/main/java/it/restrung/rest/misc/HttpDeleteWithBody.java	android-rest/src/main/java/ly/apps/android/rest/misc/HttpDeleteWithBody.java
+R099	src/main/java/it/restrung/rest/utils/Base64.java	android-rest/src/main/java/ly/apps/android/rest/utils/Base64.java
+R096	src/main/java/it/restrung/rest/utils/Base64DecoderException.java	android-rest/src/main/java/ly/apps/android/rest/utils/Base64DecoderException.java
+A	android-rest/src/main/java/ly/apps/android/rest/utils/HeaderUtils.java
+R099	src/main/java/it/restrung/rest/utils/IOUtils.java	android-rest/src/main/java/ly/apps/android/rest/utils/IOUtils.java
+A	android-rest/src/main/java/ly/apps/android/rest/utils/ResponseTypeUtil.java
+A	android-rest/src/main/java/ly/apps/android/rest/utils/StringUtils.java
+A	android-rest/src/main/java/ly/apps/android/rest/utils/Types.java
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+D	pom.xml
+A	settings.gradle
+D	src/main/java/it/restrung/rest/annotations/JsonProperty.java
+D	src/main/java/it/restrung/rest/async/AsyncOperation.java
+D	src/main/java/it/restrung/rest/async/asynctasks/APIAsyncTask.java
+D	src/main/java/it/restrung/rest/async/asynctasks/APIDeleteAsyncTask.java
+D	src/main/java/it/restrung/rest/async/asynctasks/APIGetAsyncTask.java
+D	src/main/java/it/restrung/rest/async/asynctasks/APIPostAsyncTask.java
+D	src/main/java/it/restrung/rest/async/asynctasks/APIPutAsyncTask.java
+D	src/main/java/it/restrung/rest/async/loaders/APIDeleteLoader.java
+D	src/main/java/it/restrung/rest/async/loaders/APIGetLoader.java
+D	src/main/java/it/restrung/rest/async/loaders/APILoader.java
+D	src/main/java/it/restrung/rest/async/loaders/APIPostLoader.java
+D	src/main/java/it/restrung/rest/async/loaders/APIPutLoader.java
+D	src/main/java/it/restrung/rest/async/loaders/AsynchronousLoader.java
+D	src/main/java/it/restrung/rest/async/runnables/AbstractCacheAwareRunnable.java
+D	src/main/java/it/restrung/rest/async/runnables/DeleteRunnable.java
+D	src/main/java/it/restrung/rest/async/runnables/GetRunnable.java
+D	src/main/java/it/restrung/rest/async/runnables/PostRunnable.java
+D	src/main/java/it/restrung/rest/async/runnables/PutRunnable.java
+D	src/main/java/it/restrung/rest/cache/CacheRequestInfoProvider.java
+D	src/main/java/it/restrung/rest/cache/RequestCache.java
+D	src/main/java/it/restrung/rest/client/APICredentialsDelegate.java
+D	src/main/java/it/restrung/rest/client/APIDelegate.java
+D	src/main/java/it/restrung/rest/client/APIPostParams.java
+D	src/main/java/it/restrung/rest/client/ContextAwareAPIDelegate.java
+D	src/main/java/it/restrung/rest/client/ContextProvider.java
+D	src/main/java/it/restrung/rest/client/DefaultContextProvider.java
+D	src/main/java/it/restrung/rest/client/DefaultRestClientImpl.java
+D	src/main/java/it/restrung/rest/client/FragmentContextProvider.java
+D	src/main/java/it/restrung/rest/client/ResponseTypeFactory.java
+D	src/main/java/it/restrung/rest/client/RestClient.java
+D	src/main/java/it/restrung/rest/exceptions/APIException.java
+D	src/main/java/it/restrung/rest/exceptions/InvalidCredentialsException.java
+D	src/main/java/it/restrung/rest/marshalling/HeaderPair.java
+D	src/main/java/it/restrung/rest/marshalling/HeaderPairImpl.java
+D	src/main/java/it/restrung/rest/marshalling/request/AbstractJSONRequest.java
+D	src/main/java/it/restrung/rest/marshalling/request/HttpMessageRequestOperationImpl.java
+D	src/main/java/it/restrung/rest/marshalling/request/JSONSerializable.java
+D	src/main/java/it/restrung/rest/marshalling/request/RequestOperation.java
+D	src/main/java/it/restrung/rest/marshalling/response/AbstractJSONResponse.java
+D	src/main/java/it/restrung/rest/marshalling/response/EmptyResponse.java
+D	src/main/java/it/restrung/rest/marshalling/response/HttpMessageResponseOperationImpl.java
+D	src/main/java/it/restrung/rest/marshalling/response/JSONResponse.java
+D	src/main/java/it/restrung/rest/marshalling/response/ResponseOperation.java
+D	src/main/java/it/restrung/rest/misc/CountingEntity.java
+D	src/main/java/it/restrung/rest/misc/CountingMultipartEntity.java
+D	src/main/java/it/restrung/rest/misc/CountingOutputStream.java
+D	src/main/java/it/restrung/rest/utils/ClassUtils.java
+D	src/main/java/it/restrung/rest/utils/ContextUtils.java
+D	src/test/java/it/restrung/tests/models/response/TestResponse.java
+
+f88e4b1;Added instruction for public releases to README
+M	README.md
+
+a951ca7;Modified README to match latest 1.2.SNAPSHOT
+M	README.md
+
+8c95d75;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+13ad8c0;[maven-release-plugin] prepare release restrung-1.1
+M	pom.xml
+
+295f858;Changed distribution management to sonatype
+M	pom.xml
+
+903e8ac;Changed response serialization methods to protected so they may be overridden in subclasses
+M	src/main/java/it/restrung/rest/marshalling/response/AbstractJSONResponse.java
+
+c952c1a;Arrays deserialization and serialization
+M	src/main/java/it/restrung/rest/marshalling/request/AbstractJSONRequest.java
+M	src/test/java/it/restrung/tests/JSONSerializableTest.java
+M	src/test/java/it/restrung/tests/models/request/TestNestedEntity.java
+
+36ebeba;Added some tests and fixed deserialization and serialization based on @JsonProperty
+M	src/main/java/it/restrung/rest/marshalling/request/AbstractJSONRequest.java
+M	src/main/java/it/restrung/rest/marshalling/response/AbstractJSONResponse.java
+A	src/main/java/it/restrung/rest/utils/ClassUtils.java
+M	src/test/java/it/restrung/tests/JSONSerializableTest.java
+R077	src/test/java/it/restrung/tests/models/TestEntity.java	src/test/java/it/restrung/tests/models/request/TestEntity.java
+R096	src/test/java/it/restrung/tests/models/TestNestedEntity.java	src/test/java/it/restrung/tests/models/request/TestNestedEntity.java
+R087	src/test/java/it/restrung/tests/models/ThirdEntity.java	src/test/java/it/restrung/tests/models/request/ThirdEntity.java
+A	src/test/java/it/restrung/tests/models/response/TestResponse.java
+
+3b5ce75;Remove Gson and add Test
+M	pom.xml
+M	src/main/java/it/restrung/rest/marshalling/request/AbstractJSONRequest.java
+A	src/test/java/it/restrung/tests/JSONSerializableTest.java
+A	src/test/java/it/restrung/tests/models/TestEntity.java
+A	src/test/java/it/restrung/tests/models/TestNestedEntity.java
+A	src/test/java/it/restrung/tests/models/ThirdEntity.java
+
+35a32f0;Upgraded snapshot to Gson 2.2.4
+M	pom.xml
+
+cdc2245;Merge pull request #26 from bazyle/master
+464abac;Update AbstractJSONResponse.java
+M	src/main/java/it/restrung/rest/marshalling/response/AbstractJSONResponse.java
+
+534a1dc;Update AbstractJSONResponse.java
+M	src/main/java/it/restrung/rest/marshalling/response/AbstractJSONResponse.java
+
+3ab53e4;Changed repo ids
+M	pom.xml
+
+47e39ce;Initial support for file uploads not depending on multipart
+M	pom.xml
+M	src/main/java/it/restrung/rest/client/APIPostParams.java
+M	src/main/java/it/restrung/rest/client/DefaultRestClientImpl.java
+A	src/main/java/it/restrung/rest/misc/CountingEntity.java
+M	src/main/java/it/restrung/rest/misc/CountingMultipartEntity.java
+A	src/main/java/it/restrung/rest/misc/CountingOutputStream.java
+
+5f7b193;[maven-release-plugin] prepare release restrung-1.0
+M	pom.xml
+
+c41522d;[maven-release-plugin] prepare release restrung-1.0
+M	pom.xml
+
+b0fda02;[maven-release-plugin] prepare release restrung-1.0
+M	pom.xml
+
+c08c4cd;Prepare for release
+M	pom.xml
+
+0f45173;Prepare for release
+M	pom.xml
+
+9766eb1;Prepare for release
+M	pom.xml
+
+7086c22;Prepare for release
+M	pom.xml
+
+c069748;RejectedExecutionException failsafe check.
+M	src/main/java/it/restrung/rest/async/loaders/AsynchronousLoader.java
+
+64cf605;Added ResponseTypeFactory interface to optionally allow response delegates provide the runtime instance that will be used at the top level instance when serializing from JSON to Objects
+M	src/main/java/it/restrung/rest/client/ContextAwareAPIDelegate.java
+M	src/main/java/it/restrung/rest/client/DefaultRestClientImpl.java
+A	src/main/java/it/restrung/rest/client/ResponseTypeFactory.java
+A	src/main/java/it/restrung/rest/exceptions/SerializationException.java
+
+6cbcf94;Added EmptyResponse convenience container and Null Check in AbstractJSONResponse
+M	src/main/java/it/restrung/rest/marshalling/response/AbstractJSONResponse.java
+A	src/main/java/it/restrung/rest/marshalling/response/EmptyResponse.java
+
+20229bb;Merge pull request #22 from raulraja/master
+32cfd73;Merge remote-tracking branch 'upstream/master'
+dacd2c6;Changed serialization helpers to 'protected' to allow subclasses overriding the default serialization behaviour for the supported types
+132efa7;Update .travis.yml
+M	.travis.yml
+
+16f2311;Fixes for travis config file
+M	.travis.yml
+
+ce412eb;Update .travis.yml
+M	.travis.yml
+
+7cc9d21;Update .travis.yml
+M	.travis.yml
+
+cd59af2;Fixes for travis config file
+M	.travis.yml
+
+5278ad8;Merge pull request #21 from raulraja/master
+2b5cd93;Fixes for travis config file
+M	.travis.yml
+
+d7386ec;Merge pull request #20 from raulraja/master
+28a42b1;Added travis config file
+A	.travis.yml
+
+eebe708;Added Map<String, Object> and Map<String, ? extends JSONResponse> as valid serializable properties in JSONResponse implementers.
+M	src/main/java/it/restrung/rest/marshalling/response/AbstractJSONResponse.java
+
+410d89d;Merge pull request #19 from ignaciogs/master
+f14b23d;Annotation for properties that are mapped to json
+A	src/main/java/it/restrung/rest/annotations/JsonProperty.java
+M	src/main/java/it/restrung/rest/marshalling/response/AbstractJSONResponse.java
+
+db47873;Merge pull request #18 from raulraja/master
+bcf0517;Added License to README and TOC
+M	README.md
+
+5de173e;Merge pull request #17 from raulraja/master
+47ae411;Added License to README
+M	README.md
+
+7cf053b;Removed call to Looper.prepare() for now. We never update the UI on that thread so it should no be necessary to invoke that every time given the warning received.
+M	src/main/java/it/restrung/rest/async/loaders/APILoader.java
+
+912b610;Merge pull request #16 from raulraja/master
+22282e2;Fixed indentation
+M	README.md
+
+581ded5;Merge pull request #15 from raulraja/master
+903e379;Refactored to be bundle as JAR instead of APKLib
+D	AndroidManifest.xml
+M	README.md
+M	pom.xml
+D	res/drawable/_test_png_.png
+
+17f5299;Merge pull request #14 from javipacheco/master
+6590535;Add Constructors to ContextAwareAPIDelegate using ContextProvider
+M	src/main/java/it/restrung/rest/client/ContextAwareAPIDelegate.java
+
+ef6b349;Merge pull request #13 from javipacheco/master
+bee55ac;Changes in OperationId and application/json in Accept Headers by default
+M	pom.xml
+R100	src/main/resources/res/drawable/ic_contact_picture_2.png	res/drawable/_test_png_.png
+M	src/main/java/it/restrung/rest/client/ContextAwareAPIDelegate.java
+M	src/main/java/it/restrung/rest/client/DefaultRestClientImpl.java
+
+4fe24af;Merge pull request #12 from raulraja/master
+c23f7f7;Empty folder for maven plugin to properly compile and build apk
+D	src/main/resources/res/README.md
+A	src/main/resources/res/drawable/ic_contact_picture_2.png
+
+b857bef;Merge pull request #11 from raulraja/master
+aad23ac;Empty folder for maven plugin to properly compile and build apk
+M	pom.xml
+A	src/main/resources/res/README.md
+
+2736ac6;Merge pull request #10 from raulraja/master
+47c9731;Added optional body to http delete
+M	src/main/java/it/restrung/rest/async/asynctasks/APIDeleteAsyncTask.java
+M	src/main/java/it/restrung/rest/async/asynctasks/APIPutAsyncTask.java
+M	src/main/java/it/restrung/rest/async/loaders/APIDeleteLoader.java
+M	src/main/java/it/restrung/rest/async/runnables/DeleteRunnable.java
+M	src/main/java/it/restrung/rest/client/DefaultRestClientImpl.java
+M	src/main/java/it/restrung/rest/client/RestClient.java
+A	src/main/java/it/restrung/rest/misc/HttpDeleteWithBody.java
+
+f0381e5;Merge pull request #9 from raulraja/master
+17fd95e;Changed sdk platform and version
+M	pom.xml
+
+8d88b16;Merge pull request #8 from justinelsberry/master
+8b31bad;Language changes
+M	README.md
+
+f972af4;Merge pull request #7 from raulraja/master
+4e4231d;Fixed wrong reference where it should have been an asynctask
+M	src/main/java/it/restrung/rest/async/runnables/DeleteRunnable.java
+
+d321f94;Merge pull request #6 from raulraja/master
+6a87b67;Added pom changes for github downloads deployment
+M	pom.xml
+
+a47a634;Added updated README with instructions to fetch snapshots
+M	README.md
+
+56a8008;Added hard dependency to compatibility library. This may cause issues for those using the hack for the Google Maps compatibility library. Ideally the lib supporting maps would be available as a maven dependency in central so we could build 2 versions of restrung, one depending in the google's compat lib and another on Pete's doyle lib https://github.com/petedoyle/android-support-v4-googlemaps/issues/1
+M	pom.xml
+
+312f673;Merge pull request #5 from raulraja/master
+0069b55;Added fixes to obtain a loader manager properly out of fragments by providing overloaded constructors in the ContextAwareAPIDelegate and a ContextProvider abstraction so context are properly looked up on fragments and their loader manager too.
+M	pom.xml
+M	src/main/java/it/restrung/rest/async/loaders/APILoader.java
+M	src/main/java/it/restrung/rest/cache/CacheRequestInfoProvider.java
+M	src/main/java/it/restrung/rest/cache/RequestCache.java
+M	src/main/java/it/restrung/rest/client/ContextAwareAPIDelegate.java
+A	src/main/java/it/restrung/rest/client/ContextProvider.java
+A	src/main/java/it/restrung/rest/client/DefaultContextProvider.java
+A	src/main/java/it/restrung/rest/client/FragmentContextProvider.java
+M	src/main/java/it/restrung/rest/utils/ContextUtils.java
+
+9be506d;Merge pull request #4 from raulraja/master
+5ef78b8;fixed more README links
+M	README.md
+
+bde45e9;Merge pull request #3 from raulraja/master
+5af1a5d;Renamed to 'it' package and fixed lowercased degrees in README file
+M	AndroidManifest.xml
+M	README.md
+M	pom.xml
+R094	src/main/java/org/restrung/rest/async/AsyncOperation.java	src/main/java/it/restrung/rest/async/AsyncOperation.java
+R088	src/main/java/org/restrung/rest/async/asynctasks/APIAsyncTask.java	src/main/java/it/restrung/rest/async/asynctasks/APIAsyncTask.java
+R086	src/main/java/org/restrung/rest/async/asynctasks/APIDeleteAsyncTask.java	src/main/java/it/restrung/rest/async/asynctasks/APIDeleteAsyncTask.java
+R086	src/main/java/org/restrung/rest/async/asynctasks/APIGetAsyncTask.java	src/main/java/it/restrung/rest/async/asynctasks/APIGetAsyncTask.java
+R084	src/main/java/org/restrung/rest/async/asynctasks/APIPostAsyncTask.java	src/main/java/it/restrung/rest/async/asynctasks/APIPostAsyncTask.java
+R084	src/main/java/org/restrung/rest/async/asynctasks/APIPutAsyncTask.java	src/main/java/it/restrung/rest/async/asynctasks/APIPutAsyncTask.java
+R086	src/main/java/org/restrung/rest/async/loaders/APIDeleteLoader.java	src/main/java/it/restrung/rest/async/loaders/APIDeleteLoader.java
+R086	src/main/java/org/restrung/rest/async/loaders/APIGetLoader.java	src/main/java/it/restrung/rest/async/loaders/APIGetLoader.java
+R091	src/main/java/org/restrung/rest/async/loaders/APILoader.java	src/main/java/it/restrung/rest/async/loaders/APILoader.java
+R084	src/main/java/org/restrung/rest/async/loaders/APIPostLoader.java	src/main/java/it/restrung/rest/async/loaders/APIPostLoader.java
+R083	src/main/java/org/restrung/rest/async/loaders/APIPutLoader.java	src/main/java/it/restrung/rest/async/loaders/APIPutLoader.java
+R098	src/main/java/org/restrung/rest/async/loaders/AsynchronousLoader.java	src/main/java/it/restrung/rest/async/loaders/AsynchronousLoader.java
+R089	src/main/java/org/restrung/rest/async/runnables/AbstractCacheAwareRunnable.java	src/main/java/it/restrung/rest/async/runnables/AbstractCacheAwareRunnable.java
+R068	src/main/java/org/restrung/rest/async/runnables/DeleteRunnable.java	src/main/java/it/restrung/rest/async/runnables/DeleteRunnable.java
+R080	src/main/java/org/restrung/rest/async/runnables/GetRunnable.java	src/main/java/it/restrung/rest/async/runnables/GetRunnable.java
+R079	src/main/java/org/restrung/rest/async/runnables/PostRunnable.java	src/main/java/it/restrung/rest/async/runnables/PostRunnable.java
+R058	src/main/java/org/restrung/rest/async/runnables/PutRunnable.java	src/main/java/it/restrung/rest/async/runnables/PutRunnable.java
+R098	src/main/java/org/restrung/rest/cache/CacheInfo.java	src/main/java/it/restrung/rest/cache/CacheInfo.java
+R098	src/main/java/org/restrung/rest/cache/CacheRequestInfoProvider.java	src/main/java/it/restrung/rest/cache/CacheRequestInfoProvider.java
+R099	src/main/java/org/restrung/rest/cache/RequestCache.java	src/main/java/it/restrung/rest/cache/RequestCache.java
+R091	src/main/java/org/restrung/rest/client/APICredentialsDelegate.java	src/main/java/it/restrung/rest/client/APICredentialsDelegate.java
+R088	src/main/java/org/restrung/rest/client/APIDelegate.java	src/main/java/it/restrung/rest/client/APIDelegate.java
+R097	src/main/java/org/restrung/rest/client/APIPostParams.java	src/main/java/it/restrung/rest/client/APIPostParams.java
+R086	src/main/java/org/restrung/rest/client/ContextAwareAPIDelegate.java	src/main/java/it/restrung/rest/client/ContextAwareAPIDelegate.java
+R094	src/main/java/org/restrung/rest/client/DefaultRestClientImpl.java	src/main/java/it/restrung/rest/client/DefaultRestClientImpl.java
+R097	src/main/java/org/restrung/rest/client/RestClient.java	src/main/java/it/restrung/rest/client/RestClient.java
+R097	src/main/java/org/restrung/rest/client/RestClientFactory.java	src/main/java/it/restrung/rest/client/RestClientFactory.java
+R098	src/main/java/org/restrung/rest/exceptions/APIException.java	src/main/java/it/restrung/rest/exceptions/APIException.java
+R096	src/main/java/org/restrung/rest/exceptions/InvalidCredentialsException.java	src/main/java/it/restrung/rest/exceptions/InvalidCredentialsException.java
+R095	src/main/java/org/restrung/rest/marshalling/HeaderPair.java	src/main/java/it/restrung/rest/marshalling/HeaderPair.java
+R097	src/main/java/org/restrung/rest/marshalling/HeaderPairImpl.java	src/main/java/it/restrung/rest/marshalling/HeaderPairImpl.java
+R093	src/main/java/org/restrung/rest/marshalling/request/AbstractJSONRequest.java	src/main/java/it/restrung/rest/marshalling/request/AbstractJSONRequest.java
+R096	src/main/java/org/restrung/rest/marshalling/request/HttpMessageRequestOperationImpl.java	src/main/java/it/restrung/rest/marshalling/request/HttpMessageRequestOperationImpl.java
+R095	src/main/java/org/restrung/rest/marshalling/request/JSONSerializable.java	src/main/java/it/restrung/rest/marshalling/request/JSONSerializable.java
+R095	src/main/java/org/restrung/rest/marshalling/request/RequestOperation.java	src/main/java/it/restrung/rest/marshalling/request/RequestOperation.java
+R099	src/main/java/org/restrung/rest/marshalling/response/AbstractJSONResponse.java	src/main/java/it/restrung/rest/marshalling/response/AbstractJSONResponse.java
+R086	src/main/java/org/restrung/rest/marshalling/response/HttpMessageResponseOperationImpl.java	src/main/java/it/restrung/rest/marshalling/response/HttpMessageResponseOperationImpl.java
+R095	src/main/java/org/restrung/rest/marshalling/response/JSONResponse.java	src/main/java/it/restrung/rest/marshalling/response/JSONResponse.java
+R096	src/main/java/org/restrung/rest/marshalling/response/ResponseOperation.java	src/main/java/it/restrung/rest/marshalling/response/ResponseOperation.java
+R098	src/main/java/org/restrung/rest/misc/CountingMultipartEntity.java	src/main/java/it/restrung/rest/misc/CountingMultipartEntity.java
+R099	src/main/java/org/restrung/rest/misc/FakeSocketFactory.java	src/main/java/it/restrung/rest/misc/FakeSocketFactory.java
+R097	src/main/java/org/restrung/rest/misc/FakeTrustManager.java	src/main/java/it/restrung/rest/misc/FakeTrustManager.java
+R099	src/main/java/org/restrung/rest/misc/HttpClientFactory.java	src/main/java/it/restrung/rest/misc/HttpClientFactory.java
+R099	src/main/java/org/restrung/rest/utils/Base64.java	src/main/java/it/restrung/rest/utils/Base64.java
+R096	src/main/java/org/restrung/rest/utils/Base64DecoderException.java	src/main/java/it/restrung/rest/utils/Base64DecoderException.java
+R092	src/main/java/org/restrung/rest/utils/ContextUtils.java	src/main/java/it/restrung/rest/utils/ContextUtils.java
+R099	src/main/java/org/restrung/rest/utils/IOUtils.java	src/main/java/it/restrung/rest/utils/IOUtils.java
+
+b5b95d8;Merge pull request #2 from justinelsberry/master
+cb6c351;Language changes
+M	README.md
+
+6fd2c07;Merge pull request #1 from raulraja/master
+5e70913;Added artifact type to documentation regarding maven dependencies.
+M	README.md
+
+b02c362;Reformatted code to us spaces instead of tabs
+M	src/main/java/org/restrung/rest/async/AsyncOperation.java
+M	src/main/java/org/restrung/rest/async/asynctasks/APIAsyncTask.java
+M	src/main/java/org/restrung/rest/async/asynctasks/APIDeleteAsyncTask.java
+M	src/main/java/org/restrung/rest/async/asynctasks/APIGetAsyncTask.java
+M	src/main/java/org/restrung/rest/async/asynctasks/APIPostAsyncTask.java
+M	src/main/java/org/restrung/rest/async/asynctasks/APIPutAsyncTask.java
+M	src/main/java/org/restrung/rest/async/loaders/APIDeleteLoader.java
+M	src/main/java/org/restrung/rest/async/loaders/APIGetLoader.java
+M	src/main/java/org/restrung/rest/async/loaders/APILoader.java
+M	src/main/java/org/restrung/rest/async/loaders/APIPostLoader.java
+M	src/main/java/org/restrung/rest/async/loaders/APIPutLoader.java
+M	src/main/java/org/restrung/rest/async/loaders/AsynchronousLoader.java
+M	src/main/java/org/restrung/rest/async/runnables/AbstractCacheAwareRunnable.java
+M	src/main/java/org/restrung/rest/async/runnables/DeleteRunnable.java
+M	src/main/java/org/restrung/rest/async/runnables/GetRunnable.java
+M	src/main/java/org/restrung/rest/async/runnables/PostRunnable.java
+M	src/main/java/org/restrung/rest/async/runnables/PutRunnable.java
+M	src/main/java/org/restrung/rest/cache/CacheInfo.java
+M	src/main/java/org/restrung/rest/cache/CacheRequestInfoProvider.java
+M	src/main/java/org/restrung/rest/cache/RequestCache.java
+M	src/main/java/org/restrung/rest/client/APICredentialsDelegate.java
+M	src/main/java/org/restrung/rest/client/APIDelegate.java
+M	src/main/java/org/restrung/rest/client/APIPostParams.java
+M	src/main/java/org/restrung/rest/client/ContextAwareAPIDelegate.java
+M	src/main/java/org/restrung/rest/client/DefaultRestClientImpl.java
+M	src/main/java/org/restrung/rest/client/RestClient.java
+M	src/main/java/org/restrung/rest/client/RestClientFactory.java
+M	src/main/java/org/restrung/rest/exceptions/APIException.java
+M	src/main/java/org/restrung/rest/exceptions/InvalidCredentialsException.java
+M	src/main/java/org/restrung/rest/marshalling/HeaderPair.java
+M	src/main/java/org/restrung/rest/marshalling/HeaderPairImpl.java
+M	src/main/java/org/restrung/rest/marshalling/request/AbstractJSONRequest.java
+M	src/main/java/org/restrung/rest/marshalling/request/HttpMessageRequestOperationImpl.java
+M	src/main/java/org/restrung/rest/marshalling/request/JSONSerializable.java
+M	src/main/java/org/restrung/rest/marshalling/request/RequestOperation.java
+M	src/main/java/org/restrung/rest/marshalling/response/AbstractJSONResponse.java
+M	src/main/java/org/restrung/rest/marshalling/response/HttpMessageResponseOperationImpl.java
+M	src/main/java/org/restrung/rest/marshalling/response/JSONResponse.java
+M	src/main/java/org/restrung/rest/marshalling/response/ResponseOperation.java
+M	src/main/java/org/restrung/rest/misc/CountingMultipartEntity.java
+M	src/main/java/org/restrung/rest/misc/FakeSocketFactory.java
+M	src/main/java/org/restrung/rest/misc/FakeTrustManager.java
+M	src/main/java/org/restrung/rest/misc/HttpClientFactory.java
+M	src/main/java/org/restrung/rest/utils/Base64.java
+M	src/main/java/org/restrung/rest/utils/Base64DecoderException.java
+M	src/main/java/org/restrung/rest/utils/ContextUtils.java
+M	src/main/java/org/restrung/rest/utils/IOUtils.java
+
+9337602;Simplified sections
+M	README.md
+
+c768b74;Simplified sections
+M	README.md
+
+fce20ca;Fixed pointless whitespace
+M	README.md
+
+ca8b026;Fixed TOC
+M	README.md
+
+6d8d657;Simplified sections
+M	README.md
+
+5595b50;Improved docs
+M	README.md
+
+50632bc;fixed some docs to simplify description
+M	README.md
+
+6f89cc0;Added TOC
+M	README.md
+
+50d9052;fixed docs missing dots
+M	README.md
+
+42598fe;Fixed indentation and some pom values
+M	README.md
+M	pom.xml
+
+e45dc29;Fixed some docs
+M	README.md
+
+6ff395c;Added docs for interceptors
+M	README.md
+
+e58ca28;Attempt to fix section indentation in cache policies.
+M	README.md
+
+622bb26;Added cache docs
+M	README.md
+M	src/main/java/org/restrung/rest/cache/RequestCache.java
+
+9148a2c;Added runnable links
+M	README.md
+
+b702bd2;Added asynctasks links
+M	README.md
+
+fb89f23;Fixed loader docs links
+M	README.md
+
+52b9699;Testing github markdown to point docs to files in repo
+M	README.md
+
+3d743a6;REfactored loaders param orders and added some more docs for loaders
+M	README.md
+M	src/main/java/org/restrung/rest/async/loaders/APIDeleteLoader.java
+M	src/main/java/org/restrung/rest/async/loaders/APIGetLoader.java
+M	src/main/java/org/restrung/rest/async/loaders/APILoader.java
+M	src/main/java/org/restrung/rest/async/loaders/APIPostLoader.java
+M	src/main/java/org/restrung/rest/async/loaders/APIPutLoader.java
+M	src/main/java/org/restrung/rest/async/runnables/GetRunnable.java
+M	src/main/java/org/restrung/rest/async/runnables/PostRunnable.java
+M	src/main/java/org/restrung/rest/async/runnables/PutRunnable.java
+
+cebabc1;Initial commit with some sample docs unfinished
+A	.gitignore
+A	AndroidManifest.xml
+M	README.md
+A	pom.xml
+A	src/main/java/org/restrung/rest/async/AsyncOperation.java
+A	src/main/java/org/restrung/rest/async/asynctasks/APIAsyncTask.java
+A	src/main/java/org/restrung/rest/async/asynctasks/APIDeleteAsyncTask.java
+A	src/main/java/org/restrung/rest/async/asynctasks/APIGetAsyncTask.java
+A	src/main/java/org/restrung/rest/async/asynctasks/APIPostAsyncTask.java
+A	src/main/java/org/restrung/rest/async/asynctasks/APIPutAsyncTask.java
+A	src/main/java/org/restrung/rest/async/loaders/APIDeleteLoader.java
+A	src/main/java/org/restrung/rest/async/loaders/APIGetLoader.java
+A	src/main/java/org/restrung/rest/async/loaders/APILoader.java
+A	src/main/java/org/restrung/rest/async/loaders/APIPostLoader.java
+A	src/main/java/org/restrung/rest/async/loaders/APIPutLoader.java
+A	src/main/java/org/restrung/rest/async/loaders/AsynchronousLoader.java
+A	src/main/java/org/restrung/rest/async/runnables/AbstractCacheAwareRunnable.java
+A	src/main/java/org/restrung/rest/async/runnables/DeleteRunnable.java
+A	src/main/java/org/restrung/rest/async/runnables/GetRunnable.java
+A	src/main/java/org/restrung/rest/async/runnables/PostRunnable.java
+A	src/main/java/org/restrung/rest/async/runnables/PutRunnable.java
+A	src/main/java/org/restrung/rest/cache/CacheInfo.java
+A	src/main/java/org/restrung/rest/cache/CacheRequestInfoProvider.java
+A	src/main/java/org/restrung/rest/cache/RequestCache.java
+A	src/main/java/org/restrung/rest/client/APICredentialsDelegate.java
+A	src/main/java/org/restrung/rest/client/APIDelegate.java
+A	src/main/java/org/restrung/rest/client/APIPostParams.java
+A	src/main/java/org/restrung/rest/client/ContextAwareAPIDelegate.java
+A	src/main/java/org/restrung/rest/client/DefaultRestClientImpl.java
+A	src/main/java/org/restrung/rest/client/RestClient.java
+A	src/main/java/org/restrung/rest/client/RestClientFactory.java
+A	src/main/java/org/restrung/rest/exceptions/APIException.java
+A	src/main/java/org/restrung/rest/exceptions/InvalidCredentialsException.java
+A	src/main/java/org/restrung/rest/marshalling/HeaderPair.java
+A	src/main/java/org/restrung/rest/marshalling/HeaderPairImpl.java
+A	src/main/java/org/restrung/rest/marshalling/request/AbstractJSONRequest.java
+A	src/main/java/org/restrung/rest/marshalling/request/HttpMessageRequestOperationImpl.java
+A	src/main/java/org/restrung/rest/marshalling/request/JSONSerializable.java
+A	src/main/java/org/restrung/rest/marshalling/request/RequestOperation.java
+A	src/main/java/org/restrung/rest/marshalling/response/AbstractJSONResponse.java
+A	src/main/java/org/restrung/rest/marshalling/response/HttpMessageResponseOperationImpl.java
+A	src/main/java/org/restrung/rest/marshalling/response/JSONResponse.java
+A	src/main/java/org/restrung/rest/marshalling/response/ResponseOperation.java
+A	src/main/java/org/restrung/rest/misc/CountingMultipartEntity.java
+A	src/main/java/org/restrung/rest/misc/FakeSocketFactory.java
+A	src/main/java/org/restrung/rest/misc/FakeTrustManager.java
+A	src/main/java/org/restrung/rest/misc/HttpClientFactory.java
+A	src/main/java/org/restrung/rest/utils/Base64.java
+A	src/main/java/org/restrung/rest/utils/Base64DecoderException.java
+A	src/main/java/org/restrung/rest/utils/ContextUtils.java
+A	src/main/java/org/restrung/rest/utils/IOUtils.java
+
+b2d1f61;Initial commit
+A	README.md

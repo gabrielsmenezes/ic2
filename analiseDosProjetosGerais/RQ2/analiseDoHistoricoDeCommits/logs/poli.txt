@@ -1,0 +1,2953 @@
+204d4b9;Merge branch 'master' of https://github.com/shzlw/poli
+a9b6f01;Doc: add doc for Docker
+M	README.md
+M	docs/change-logs.md
+M	docs/index.html
+M	docs/installation.md
+
+784ba60;Dev: add jdbc-drivers folder to Dockerfile
+M	Dockerfile
+
+e1c8fc2;Dev: add Dockerfile
+A	Dockerfile
+A	config/poli.docker.properties
+A	db/poli.db
+M	start.sh
+
+dacdd39;Doc
+M	README.md
+D	docs/README.md
+M	docs/_sidebar.md
+M	docs/index.html
+
+8658133;Dev
+M	README.md
+M	config/poli.properties
+A	docs/_images/screenshots/canned_report.jpg
+A	docs/_images/screenshots/date_picker.jpg
+A	docs/_images/screenshots/slicer.jpg
+M	docs/change-logs.md
+M	docs/report-component.md
+M	docs/report.md
+M	web-app/package.json
+M	web-app/src/api/Constants.js
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/Table.css
+M	web-app/src/components/filters/DatePicker.css
+M	web-app/src/views/ReportEditView.js
+
+aed4031;Merge pull request #5 from shzlw/0.7.0
+0f19d71;Dev
+M	README.md
+A	db/schema-postgresql.sql
+M	docs/_sidebar.md
+A	docs/change-logs.md
+M	docs/report-component.md
+M	docs/report.md
+M	pom.xml
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/rest/CannedReportWs.java
+M	src/test/java/com/shzlw/poli/filter/AuthFilterTest.java
+A	src/test/java/com/shzlw/poli/rest/CannedReportWsTest.java
+M	src/test/resources/schema-sqlite.sql
+R100	upgrade/v0.7.0.txt	upgrade/poli_upgrade_v0.7.0.sql
+M	web-app/package-lock.json
+M	web-app/package.json
+M	web-app/src/components/GridItem.js
+M	web-app/src/views/ReportEditView.js
+
+1626972;Dev
+M	README.md
+M	config/poli.properties
+M	src/main/resources/application.properties
+M	web-app/src/components/filters/DatePicker.css
+M	web-app/src/views/Report.js
+M	web-app/src/views/ReportEditView.js
+
+de8512a;Dev
+M	README.md
+M	src/main/java/com/shzlw/poli/AppProperties.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/resources/application.properties
+M	web-app/src/api/Constants.js
+M	web-app/src/components/Checkbox.js
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/GridDraggable.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/Table.css
+M	web-app/src/components/filters/DatePicker.css
+M	web-app/src/components/filters/DatePicker.js
+M	web-app/src/components/filters/Slicer.js
+M	web-app/src/views/Report.js
+M	web-app/src/views/ReportEditView.js
+
+6da033a;Dev: add initial canned report implementation and update version to 0.7.0
+M	README.md
+M	db/schema-sqlite.sql
+M	docs/README.md
+M	pom.xml
+A	src/main/java/com/shzlw/poli/dao/CannedReportDao.java
+A	src/main/java/com/shzlw/poli/model/CannedReport.java
+A	src/main/java/com/shzlw/poli/rest/CannedReportWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	start.bat
+M	start.sh
+A	upgrade/v0.7.0.txt
+M	web-app/package.json
+M	web-app/src/App.js
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/Tabs.css
+M	web-app/src/components/filters/DatePicker.js
+M	web-app/src/views/Report.css
+M	web-app/src/views/Report.js
+M	web-app/src/views/ReportEditView.js
+M	web-app/src/views/UserManagement.js
+
+3cf7af7;Dev: fix the date picker
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/filters/DatePicker.css
+
+2eda12f;Dev: add new filter date picker
+M	src/main/java/com/shzlw/poli/rest/ComponentWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	web-app/src/App.css
+M	web-app/src/api/Constants.js
+M	web-app/src/api/Util.js
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/filters/DatePicker.css
+M	web-app/src/components/filters/DatePicker.js
+
+52c5882;Merge pull request #2 from shzlw/0.6.0
+f761900;Doc
+M	README.md
+A	docs/README.md
+M	docs/_coverpage.md
+D	docs/_images/poli_0.5.0.gif
+D	docs/_images/poli_0.6.0.jpg
+M	docs/_sidebar.md
+M	docs/index.html
+
+681d0ad;Merge pull request #1 from shzlw/0.6.0
+567d470;Dev: rework the multi-series logic
+M	README.md
+M	docs/_coverpage.md
+A	docs/_images/poli_0.6.0.jpg
+M	docs/_images/screenshots/drillthrough3.jpg
+A	docs/_images/screenshots/export_csv.jpg
+M	docs/report-component.md
+M	docs/report.md
+M	web-app/src/api/Constants.js
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/components/ComponentEditPanel.js
+
+f70405f;Dev: add color platte options for charts
+M	web-app/src/api/Constants.js
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/GridItem.js
+
+855d4f4;Dev: support multiple series bar chart
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/util/CommonUtil.java
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/GridItem.js
+
+cc2fe22;Dev: add download csv button
+M	README.md
+M	db/schema-sqlite.sql
+M	pom.xml
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/util/CommonUtil.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	start.bat
+M	start.sh
+M	web-app/package.json
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+
+316b795;Doc: update README
+M	README.md
+
+f37b371;Doc
+M	README.md
+D	docs/README.md
+M	docs/_coverpage.md
+M	docs/_images/screenshots/autorefresh.jpg
+M	docs/_images/screenshots/ds1.jpg
+A	docs/_images/screenshots/fullscreen1.jpg
+R100	docs/_images/screenshots/fullscreen.jpg	docs/_images/screenshots/fullscreen2.jpg
+A	docs/_images/screenshots/style1.jpg
+A	docs/_images/screenshots/style2.jpg
+M	docs/_sidebar.md
+M	docs/installation.md
+M	docs/quick-start.md
+M	docs/report-component.md
+M	docs/report.md
+M	docs/user-management.md
+
+bce38c6;Doc: add more documentation
+M	db/schema-sqlite.sql
+A	docs/_images/screenshots/apikey.jpg
+A	docs/_images/screenshots/apikey2.jpg
+A	docs/_images/screenshots/autorefresh.jpg
+A	docs/_images/screenshots/drillthrough1.jpg
+A	docs/_images/screenshots/drillthrough2.jpg
+A	docs/_images/screenshots/drillthrough3.jpg
+A	docs/_images/screenshots/drillthrough4.jpg
+A	docs/_images/screenshots/ds1.jpg
+A	docs/_images/screenshots/ds2.jpg
+A	docs/_images/screenshots/fullscreen.jpg
+A	docs/_images/screenshots/group1.jpg
+A	docs/_images/screenshots/group2.jpg
+A	docs/_images/screenshots/login.jpg
+A	docs/_images/screenshots/login2.jpg
+A	docs/_images/screenshots/login3.jpg
+A	docs/_images/screenshots/report1.jpg
+A	docs/_images/screenshots/report10.jpg
+A	docs/_images/screenshots/report11.jpg
+A	docs/_images/screenshots/report12.jpg
+A	docs/_images/screenshots/report13.jpg
+A	docs/_images/screenshots/report14.jpg
+A	docs/_images/screenshots/report2.jpg
+A	docs/_images/screenshots/report3.jpg
+A	docs/_images/screenshots/report4.jpg
+A	docs/_images/screenshots/report4_1.jpg
+A	docs/_images/screenshots/report5.jpg
+A	docs/_images/screenshots/report6.jpg
+A	docs/_images/screenshots/report7.jpg
+A	docs/_images/screenshots/report8.jpg
+A	docs/_images/screenshots/report9.jpg
+A	docs/_images/screenshots/user1.jpg
+A	docs/_images/screenshots/user2.jpg
+A	docs/_images/screenshots/user3.jpg
+A	docs/_images/screenshots/user4.jpg
+M	docs/quick-start.md
+M	docs/report-component.md
+M	docs/report.md
+
+f1b8dcf;Dev
+M	README.md
+M	docs/_coverpage.md
+D	docs/_images/poli_0.3.0.gif
+A	docs/_images/poli_0.5.0.gif
+M	docs/data-source.md
+M	docs/report-component.md
+M	docs/report.md
+M	pom.xml
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	start.bat
+M	start.sh
+M	web-app/package.json
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+
+205a5c4;Dev
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/views/User.js
+
+b761745;Dev
+M	web-app/src/App.css
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/components/ColorPicker.css
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.css
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/filters/InputRange.css
+M	web-app/src/components/filters/InputRange.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/Report.css
+M	web-app/src/views/ReportEditView.js
+M	web-app/src/views/User.js
+M	web-app/src/views/Workspace.css
+
+ed35b4d;Dev
+A	docs/README.md
+M	docs/_sidebar.md
+M	docs/build.md
+M	docs/data-source.md
+M	docs/installation.md
+A	docs/report-component.md
+M	docs/report.md
+M	docs/user-management.md
+M	web-app/src/App.css
+M	web-app/src/components/Checkbox.css
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.css
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/SearchInput.js
+M	web-app/src/components/Select.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/Login.js
+M	web-app/src/views/Report.css
+M	web-app/src/views/Report.js
+M	web-app/src/views/ReportEditView.js
+M	web-app/src/views/User.js
+M	web-app/src/views/Workspace.css
+
+3a58df5;Dev
+M	src/main/java/com/shzlw/poli/AppProperties.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/util/PasswordUtil.java
+M	src/test/java/com/shzlw/poli/util/PasswordUtilTest.java
+M	web-app/package-lock.json
+M	web-app/package.json
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/Checkbox.js
+M	web-app/src/components/ComponentEditPanel.css
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.css
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/views/Report.css
+M	web-app/src/views/ReportEditView.js
+
+570dcae;Dev: fix component query style
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/ComponentEditPanel.css
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/Modal.css
+M	web-app/src/components/SelectButtons.css
+M	web-app/src/views/Account.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/Report.js
+M	web-app/src/views/User.js
+
+f9b25cf;Dev: fix the show schema panel style
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	web-app/src/App.css
+M	web-app/src/components/ColorPicker.css
+M	web-app/src/components/ComponentEditPanel.css
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/SearchInput.css
+
+ec97c86;Dev: 0.4.0
+M	README.md
+M	docs/_coverpage.md
+M	pom.xml
+M	src/main/java/com/shzlw/poli/dao/ComponentDao.java
+M	src/main/java/com/shzlw/poli/dto/Column.java
+A	src/main/java/com/shzlw/poli/dto/Table.java
+M	src/main/java/com/shzlw/poli/rest/ComponentWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/test/java/com/shzlw/poli/rest/ComponentWsTest.java
+M	start.bat
+M	start.sh
+M	web-app/package.json
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/api/Constants.js
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.css
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/GridLayout.js
+M	web-app/src/views/Report.css
+
+4fa5e45;Dev
+M	docs/build.md
+M	docs/installation.md
+D	src/main/java/com/shzlw/poli/dto/ComponentQueryResult.java
+M	src/main/java/com/shzlw/poli/dto/QueryResult.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	start.bat
+M	start.sh
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/Table.js
+
+2b26a96;Dev: v0.3.0 more updates
+M	README.md
+A	docs/_images/poli_0.3.0.gif
+M	web-app/src/api/Util.js
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/GridDraggable.js
+M	web-app/src/components/Tabs.js
+M	web-app/src/components/filters/Slicer.js
+M	web-app/src/components/widgets/ImageBox.js
+M	web-app/src/views/ReportEditView.js
+M	web-app/src/views/ReportFullScreenView.js
+M	web-app/src/views/Workspace.js
+
+c3e5bb4;Dev
+M	src/main/java/com/shzlw/poli/dao/ComponentDao.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/test/java/com/shzlw/poli/rest/ComponentWsTest.java
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/widgets/TextBox.css
+
+fa77cab;Dev
+M	README.md
+D	db/test-data-sqlite.sql
+M	docs/_coverpage.md
+M	docs/_media/style.css
+M	docs/_sidebar.md
+M	docs/build.md
+M	docs/data-source.md
+M	docs/installation.md
+M	docs/quick-start.md
+M	docs/user-management.md
+M	src/main/java/com/shzlw/poli/rest/ComponentWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/java/com/shzlw/poli/util/PasswordUtil.java
+M	src/main/resources/application.properties
+M	start.bat
+M	start.sh
+M	web-app/src/App.css
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/filters/Slicer.css
+M	web-app/src/components/filters/Slicer.js
+M	web-app/src/components/widgets/TextBox.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/ReportEditView.js
+M	web-app/src/views/User.js
+M	web-app/src/views/UserManagement.js
+
+aba51c3;Dev
+M	docs/_media/style.css
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/Tabs.js
+M	web-app/src/views/ReportEditView.js
+
+ff3dbff;Dev: fix docs
+M	docs/_coverpage.md
+R100	docs/Installation.md	docs/installation.md
+
+5a6b2ac;Dev: v0.3.0
+M	README.md
+M	docs/_coverpage.md
+A	docs/_media/style.css
+M	docs/index.html
+M	pom.xml
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	start.bat
+M	start.sh
+D	web-app/README.md
+M	web-app/package.json
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/api/Constants.js
+M	web-app/src/api/EchartsApi.js
+D	web-app/src/api/WebApi.js
+M	web-app/src/components/ComponentEditPanel.js
+M	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/GridDraggable.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/Table.js
+M	web-app/src/components/widgets/ImageBox.js
+M	web-app/src/components/widgets/InnerHtml.js
+M	web-app/src/components/widgets/TextBox.css
+M	web-app/src/components/widgets/TextBox.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Report.css
+M	web-app/src/views/ReportEditView.js
+
+00df069;Dev: add docs
+M	README.md
+R100	docs/README.txt	docs/.nojekyll
+A	docs/Installation.md
+A	docs/_coverpage.md
+A	docs/_media/favicon.ico
+A	docs/_sidebar.md
+A	docs/build.md
+A	docs/data-source.md
+A	docs/index.html
+A	docs/quick-start.md
+A	docs/report.md
+A	docs/user-management.md
+
+6d4cbba;Dev
+M	db/schema-sqlite.sql
+A	src/main/java/com/shzlw/poli/dao/ComponentDao.java
+D	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+M	src/main/java/com/shzlw/poli/dao/GroupDao.java
+A	src/main/java/com/shzlw/poli/dao/ReportDao.java
+D	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+R054	src/main/java/com/shzlw/poli/dto/WidgetQueryResult.java	src/main/java/com/shzlw/poli/dto/ComponentQueryResult.java
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+R092	src/main/java/com/shzlw/poli/model/Widget.java	src/main/java/com/shzlw/poli/model/Component.java
+M	src/main/java/com/shzlw/poli/model/Group.java
+R078	src/main/java/com/shzlw/poli/model/Dashboard.java	src/main/java/com/shzlw/poli/model/Report.java
+R063	src/main/java/com/shzlw/poli/rest/WidgetWs.java	src/main/java/com/shzlw/poli/rest/ComponentWs.java
+M	src/main/java/com/shzlw/poli/rest/GroupWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+R060	src/main/java/com/shzlw/poli/rest/DashboardWs.java	src/main/java/com/shzlw/poli/rest/ReportWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+R064	src/main/java/com/shzlw/poli/service/DashboardService.java	src/main/java/com/shzlw/poli/service/ReportService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/test/java/com/shzlw/poli/filter/AuthFilterTest.java
+M	src/test/java/com/shzlw/poli/rest/AbstractWsTest.java
+R072	src/test/java/com/shzlw/poli/rest/WidgetWsTest.java	src/test/java/com/shzlw/poli/rest/ComponentWsTest.java
+M	src/test/java/com/shzlw/poli/rest/GroupWsTest.java
+M	src/test/java/com/shzlw/poli/rest/JdbcDataSourceWsTest.java
+R063	src/test/java/com/shzlw/poli/rest/DashboardWsTest.java	src/test/java/com/shzlw/poli/rest/ReportWsTest.java
+M	src/test/resources/schema-sqlite.sql
+M	web-app/src/App.js
+M	web-app/src/api/Constants.js
+R100	web-app/src/components/WidgetEditPanel.css	web-app/src/components/ComponentEditPanel.css
+R086	web-app/src/components/WidgetEditPanel.js	web-app/src/components/ComponentEditPanel.js
+R100	web-app/src/components/WidgetViewPanel.css	web-app/src/components/ComponentViewPanel.css
+A	web-app/src/components/ComponentViewPanel.js
+M	web-app/src/components/GridDraggable.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/GridResizable.js
+R100	web-app/src/components/TableWidget.css	web-app/src/components/Table.css
+R076	web-app/src/components/TableWidget.js	web-app/src/components/Table.js
+D	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/components/widgets/Iframe.js
+D	web-app/src/components/widgets/ImageBox.css
+M	web-app/src/components/widgets/ImageBox.js
+M	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/Group.js
+R069	web-app/src/views/Dashboard.css	web-app/src/views/Report.css
+R062	web-app/src/views/Dashboard.js	web-app/src/views/Report.js
+R065	web-app/src/views/DashboardEditView.js	web-app/src/views/ReportEditView.js
+R055	web-app/src/views/DashboardFullScreenView.js	web-app/src/views/ReportFullScreenView.js
+M	web-app/src/views/Workspace.js
+
+44300aa;Dev
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/test/java/com/shzlw/poli/rest/AbstractWsTest.java
+M	src/test/java/com/shzlw/poli/rest/WidgetWsTest.java
+M	src/test/resources/schema-sqlite.sql
+M	web-app/src/api/Constants.js
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/TableWidget.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/components/widgets/ImageBox.js
+M	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/Dashboard.js
+
+73e0030;Dev
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/api/Constants.js
+M	web-app/src/components/ColorPicker.css
+M	web-app/src/components/ColorPicker.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/Modal.css
+M	web-app/src/components/SearchInput.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/Login.js
+
+907f932;Dev
+M	README.md
+D	THIRD-PARTY-LICENSE
+D	docs/Embedded.md
+D	docs/Installation.md
+D	docs/Query.md
+A	third-party-license/license-HikariCP
+A	third-party-license/license-SQLite JDBC
+A	third-party-license/license-axios
+A	third-party-license/license-echarts
+A	third-party-license/license-echarts-for-react
+A	third-party-license/license-fontawesome
+A	third-party-license/license-guava
+A	third-party-license/license-react
+A	third-party-license/license-react-ace
+A	third-party-license/license-react-color
+A	third-party-license/license-react-router
+A	third-party-license/license-react-table
+A	third-party-license/license-spring boot
+D	web-app/THIRD-PARTY-LICENSE
+M	web-app/src/App.css
+M	web-app/src/components/SearchInput.css
+M	web-app/src/components/filters/InputRange.css
+M	web-app/src/components/filters/InputRange.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Login.js
+M	web-app/src/views/User.js
+M	web-app/src/views/Workspace.css
+
+da19134;Dev
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/Checkbox.css
+M	web-app/src/components/Checkbox.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/filters/InputRange.css
+M	web-app/src/views/Account.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/Login.js
+M	web-app/src/views/User.js
+
+3d17bd0;Dev: ignore generated files
+M	.gitignore
+D	src/main/resources/static/asset-manifest.json
+D	src/main/resources/static/index.html
+D	src/main/resources/static/manifest.json
+D	src/main/resources/static/precache-manifest.0c571ba055fba6e62644af32084ad082.js
+D	src/main/resources/static/service-worker.js
+D	src/main/resources/static/static/css/2.d86c0043.chunk.css
+D	src/main/resources/static/static/css/2.d86c0043.chunk.css.map
+D	src/main/resources/static/static/css/main.b85caec1.chunk.css
+D	src/main/resources/static/static/css/main.b85caec1.chunk.css.map
+D	src/main/resources/static/static/js/2.775fa603.chunk.js
+D	src/main/resources/static/static/js/2.775fa603.chunk.js.map
+D	src/main/resources/static/static/js/main.a33d49e3.chunk.js
+D	src/main/resources/static/static/js/main.a33d49e3.chunk.js.map
+D	src/main/resources/static/static/js/runtime~main.a8a9905a.js
+D	src/main/resources/static/static/js/runtime~main.a8a9905a.js.map
+
+1a91535;Dev
+M	README.md
+M	src/main/java/com/shzlw/poli/dao/GroupDao.java
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/java/com/shzlw/poli/service/UserService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.39f36c2a.chunk.css
+D	src/main/resources/static/static/css/main.39f36c2a.chunk.css.map
+A	src/main/resources/static/static/css/main.b85caec1.chunk.css
+A	src/main/resources/static/static/css/main.b85caec1.chunk.css.map
+R099	src/main/resources/static/static/js/2.abe704ac.chunk.js	src/main/resources/static/static/js/2.775fa603.chunk.js
+R050	src/main/resources/static/static/js/2.abe704ac.chunk.js.map	src/main/resources/static/static/js/2.775fa603.chunk.js.map
+A	src/main/resources/static/static/js/main.a33d49e3.chunk.js
+A	src/main/resources/static/static/js/main.a33d49e3.chunk.js.map
+D	src/main/resources/static/static/js/main.ff59c065.chunk.js
+D	src/main/resources/static/static/js/main.ff59c065.chunk.js.map
+M	src/test/java/com/shzlw/poli/filter/AuthFilterTest.java
+M	src/test/java/com/shzlw/poli/rest/AbstractWsTest.java
+M	src/test/java/com/shzlw/poli/rest/DashboardWsTest.java
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/Login.js
+M	web-app/src/views/User.js
+
+b2022bc;Dev
+M	config/poli.properties
+M	db/schema-sqlite.sql
+D	launch.sh
+A	src/main/java/com/shzlw/poli/rest/InfoWs.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.39f36c2a.chunk.css
+A	src/main/resources/static/static/css/main.39f36c2a.chunk.css.map
+D	src/main/resources/static/static/css/main.c0b1ff38.chunk.css
+D	src/main/resources/static/static/css/main.c0b1ff38.chunk.css.map
+D	src/main/resources/static/static/js/main.f9ddf19f.chunk.js
+D	src/main/resources/static/static/js/main.f9ddf19f.chunk.js.map
+A	src/main/resources/static/static/js/main.ff59c065.chunk.js
+A	src/main/resources/static/static/js/main.ff59c065.chunk.js.map
+A	src/test/java/com/shzlw/poli/rest/InfoWsTest.java
+M	web-app/src/App.css
+M	web-app/src/components/Checkbox.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/Login.css
+M	web-app/src/views/Login.js
+M	web-app/src/views/User.js
+
+7bf7561;Dev
+M	docs/Embedded.md
+M	src/main/java/com/shzlw/poli/dao/GroupDao.java
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/js/main.4a68a6dc.chunk.js.map
+R094	src/main/resources/static/static/js/main.4a68a6dc.chunk.js	src/main/resources/static/static/js/main.f9ddf19f.chunk.js
+A	src/main/resources/static/static/js/main.f9ddf19f.chunk.js.map
+M	src/test/java/com/shzlw/poli/rest/AuthWsTest.java
+M	web-app/src/App.js
+
+7aef864;Dev
+M	README.md
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.5e7e6039.chunk.css.map
+R050	src/main/resources/static/static/css/main.5e7e6039.chunk.css	src/main/resources/static/static/css/main.c0b1ff38.chunk.css
+A	src/main/resources/static/static/css/main.c0b1ff38.chunk.css.map
+A	src/main/resources/static/static/js/main.4a68a6dc.chunk.js
+A	src/main/resources/static/static/js/main.4a68a6dc.chunk.js.map
+D	src/main/resources/static/static/js/main.8f045589.chunk.js
+D	src/main/resources/static/static/js/main.8f045589.chunk.js.map
+M	web-app/src/components/Checkbox.css
+M	web-app/src/components/ColorPicker.css
+M	web-app/src/components/SelectButtons.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DashboardFullScreenView.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/Login.css
+M	web-app/src/views/User.js
+
+605f269;Dev
+A	src/main/java/com/shzlw/poli/AppStartUpListener.java
+D	src/main/java/com/shzlw/poli/StartUpListener.java
+M	src/main/java/com/shzlw/poli/dao/GroupDao.java
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/dto/FilterParameter.java
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/model/Group.java
+M	src/main/java/com/shzlw/poli/rest/GroupWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.0fd5e2f1.chunk.css.map
+R085	src/main/resources/static/static/css/main.0fd5e2f1.chunk.css	src/main/resources/static/static/css/main.5e7e6039.chunk.css
+A	src/main/resources/static/static/css/main.5e7e6039.chunk.css.map
+R063	src/main/resources/static/static/js/main.f69fa12b.chunk.js	src/main/resources/static/static/js/main.8f045589.chunk.js
+A	src/main/resources/static/static/js/main.8f045589.chunk.js.map
+D	src/main/resources/static/static/js/main.f69fa12b.chunk.js.map
+M	src/test/java/com/shzlw/poli/rest/AbstractWsTest.java
+M	src/test/java/com/shzlw/poli/rest/AuthWsTest.java
+M	src/test/java/com/shzlw/poli/rest/DashboardWsTest.java
+M	src/test/java/com/shzlw/poli/rest/GroupWsTest.java
+M	src/test/java/com/shzlw/poli/rest/JdbcDataSourceWsTest.java
+M	src/test/java/com/shzlw/poli/rest/UserWsTest.java
+M	src/test/java/com/shzlw/poli/rest/WidgetWsTest.java
+M	src/test/java/com/shzlw/poli/util/CommonUtilTest.java
+M	src/test/java/com/shzlw/poli/util/PasswordUtilTest.java
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/Group.js
+D	web-app/src/views/SingleTest.js
+M	web-app/src/views/User.js
+
+60e0a48;Dev
+R073	src/main/java/com/shzlw/poli/Application.java	src/main/java/com/shzlw/poli/App.java
+R089	src/main/java/com/shzlw/poli/SystemProperties.java	src/main/java/com/shzlw/poli/AppProperties.java
+M	src/main/java/com/shzlw/poli/dao/GroupDao.java
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+M	src/main/java/com/shzlw/poli/model/Dashboard.java
+M	src/main/java/com/shzlw/poli/model/JdbcDataSource.java
+M	src/main/java/com/shzlw/poli/rest/GroupWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/java/com/shzlw/poli/service/DashboardService.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/service/UserService.java
+M	src/test/java/com/shzlw/poli/rest/AbstractWsTest.java
+M	src/test/java/com/shzlw/poli/rest/DashboardWsTest.java
+A	src/test/java/com/shzlw/poli/rest/GroupWsTest.java
+M	src/test/java/com/shzlw/poli/rest/JdbcDataSourceWsTest.java
+M	src/test/java/com/shzlw/poli/rest/UserWsTest.java
+A	src/test/java/com/shzlw/poli/rest/WidgetWsTest.java
+M	src/test/resources/schema-sqlite.sql
+M	web-app/src/App.js
+
+116224c;Add more tests and remove unused imports
+M	src/main/java/com/shzlw/poli/AppConfig.java
+M	src/main/java/com/shzlw/poli/StartUpListener.java
+M	src/main/java/com/shzlw/poli/dao/GroupDao.java
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/model/Dashboard.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/rest/GroupWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/java/com/shzlw/poli/service/DashboardService.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/java/com/shzlw/poli/util/CommonUtil.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/main/java/com/shzlw/poli/util/PasswordUtil.java
+A	src/test/java/com/shzlw/poli/filter/AuthFilterTest.java
+M	src/test/java/com/shzlw/poli/rest/AbstractWsTest.java
+M	src/test/java/com/shzlw/poli/rest/DashboardWsTest.java
+M	src/test/java/com/shzlw/poli/rest/UserWsTest.java
+
+14bc6b1;Dev
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/model/Dashboard.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/service/DashboardService.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/service/UserService.java
+M	src/main/resources/static/index.html
+R051	src/main/resources/static/static/css/main.f7cf19e9.chunk.css	src/main/resources/static/static/css/main.0fd5e2f1.chunk.css
+A	src/main/resources/static/static/css/main.0fd5e2f1.chunk.css.map
+D	src/main/resources/static/static/css/main.f7cf19e9.chunk.css.map
+R099	src/main/resources/static/static/js/2.7709e803.chunk.js	src/main/resources/static/static/js/2.abe704ac.chunk.js
+R099	src/main/resources/static/static/js/2.7709e803.chunk.js.map	src/main/resources/static/static/js/2.abe704ac.chunk.js.map
+D	src/main/resources/static/static/js/main.74ce15b1.chunk.js
+D	src/main/resources/static/static/js/main.74ce15b1.chunk.js.map
+A	src/main/resources/static/static/js/main.f69fa12b.chunk.js
+A	src/main/resources/static/static/js/main.f69fa12b.chunk.js.map
+M	src/test/java/com/shzlw/poli/rest/AbstractWsTest.java
+M	src/test/java/com/shzlw/poli/rest/AuthWsTest.java
+M	src/test/java/com/shzlw/poli/rest/DashboardWsTest.java
+M	web-app/src/api/EchartsApi.js
+A	web-app/src/components/SelectButtons.css
+M	web-app/src/components/SelectButtons.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+A	web-app/src/components/filters/DatePicker.css
+A	web-app/src/components/filters/DatePicker.js
+M	web-app/src/components/filters/InputRange.css
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+
+ec136fb;Dev
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/java/com/shzlw/poli/service/DashboardService.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.5d1c455e.chunk.css.map
+R059	src/main/resources/static/static/css/main.5d1c455e.chunk.css	src/main/resources/static/static/css/main.f7cf19e9.chunk.css
+A	src/main/resources/static/static/css/main.f7cf19e9.chunk.css.map
+D	src/main/resources/static/static/js/main.4ec0ee51.chunk.js
+D	src/main/resources/static/static/js/main.4ec0ee51.chunk.js.map
+A	src/main/resources/static/static/js/main.74ce15b1.chunk.js
+A	src/main/resources/static/static/js/main.74ce15b1.chunk.js.map
+M	web-app/src/api/Constants.js
+M	web-app/src/components/ColorPicker.css
+M	web-app/src/components/ColorPicker.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+
+4d8a19d;Dev
+M	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+M	src/main/java/com/shzlw/poli/dto/QueryResult.java
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/model/Dashboard.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+A	src/main/java/com/shzlw/poli/service/DashboardService.java
+M	src/main/java/com/shzlw/poli/service/UserService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/main/resources/static/index.html
+R095	src/main/resources/static/static/js/2.0bb44ac3.chunk.js	src/main/resources/static/static/js/2.7709e803.chunk.js
+R050	src/main/resources/static/static/js/2.0bb44ac3.chunk.js.map	src/main/resources/static/static/js/2.7709e803.chunk.js.map
+D	src/main/resources/static/static/js/main.2ec816b6.chunk.js
+D	src/main/resources/static/static/js/main.2ec816b6.chunk.js.map
+A	src/main/resources/static/static/js/main.4ec0ee51.chunk.js
+A	src/main/resources/static/static/js/main.4ec0ee51.chunk.js.map
+M	web-app/src/api/WebApi.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+
+6a50f30;Dev
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/java/com/shzlw/poli/service/UserService.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.4b8e38f6.chunk.css
+D	src/main/resources/static/static/css/main.4b8e38f6.chunk.css.map
+A	src/main/resources/static/static/css/main.5d1c455e.chunk.css
+A	src/main/resources/static/static/css/main.5d1c455e.chunk.css.map
+R088	src/main/resources/static/static/js/2.73e8460e.chunk.js	src/main/resources/static/static/js/2.0bb44ac3.chunk.js
+R099	src/main/resources/static/static/js/2.73e8460e.chunk.js.map	src/main/resources/static/static/js/2.0bb44ac3.chunk.js.map
+D	src/main/resources/static/static/js/main.0dd48166.chunk.js
+D	src/main/resources/static/static/js/main.0dd48166.chunk.js.map
+A	src/main/resources/static/static/js/main.2ec816b6.chunk.js
+A	src/main/resources/static/static/js/main.2ec816b6.chunk.js.map
+M	src/test/java/com/shzlw/poli/rest/AbstractWsTest.java
+M	src/test/java/com/shzlw/poli/rest/DashboardWsTest.java
+A	src/test/java/com/shzlw/poli/rest/JdbcDataSourceWsTest.java
+M	web-app/src/App.css
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/api/Util.js
+A	web-app/src/components/ColorPicker.css
+M	web-app/src/components/ColorPicker.js
+M	web-app/src/components/GridDraggable.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/SearchInput.css
+M	web-app/src/components/SearchInput.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+D	web-app/src/views/Datasource.css
+M	web-app/src/views/Group.js
+M	web-app/src/views/Login.css
+M	web-app/src/views/Login.js
+M	web-app/src/views/User.js
+
+d6a4416;Dev
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.3e0ce345.chunk.css
+A	src/main/resources/static/static/css/main.4b8e38f6.chunk.css
+R062	src/main/resources/static/static/css/main.3e0ce345.chunk.css.map	src/main/resources/static/static/css/main.4b8e38f6.chunk.css.map
+A	src/main/resources/static/static/js/main.0dd48166.chunk.js
+A	src/main/resources/static/static/js/main.0dd48166.chunk.js.map
+D	src/main/resources/static/static/js/main.53768474.chunk.js
+D	src/main/resources/static/static/js/main.53768474.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DashboardFullScreenView.js
+D	web-app/src/views/ViewDashboard.js
+M	web-app/src/views/Workspace.js
+
+f5f619f;Dev
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.3e0ce345.chunk.css
+A	src/main/resources/static/static/css/main.3e0ce345.chunk.css.map
+D	src/main/resources/static/static/css/main.893d3051.chunk.css
+D	src/main/resources/static/static/css/main.893d3051.chunk.css.map
+A	src/main/resources/static/static/js/main.53768474.chunk.js
+A	src/main/resources/static/static/js/main.53768474.chunk.js.map
+D	src/main/resources/static/static/js/main.fbaa22fd.chunk.js
+D	src/main/resources/static/static/js/main.fbaa22fd.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/api/Util.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+
+cdda74e;Dev
+M	src/main/java/com/shzlw/poli/dto/LoginResponse.java
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/test/java/com/shzlw/poli/rest/AbstractWsTest.java
+M	src/test/java/com/shzlw/poli/rest/AuthWsTest.java
+M	src/test/java/com/shzlw/poli/rest/UserWsTest.java
+M	web-app/src/App.js
+
+322766d;Dev
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.109fa040.chunk.css
+D	src/main/resources/static/static/css/main.109fa040.chunk.css.map
+A	src/main/resources/static/static/css/main.893d3051.chunk.css
+A	src/main/resources/static/static/css/main.893d3051.chunk.css.map
+D	src/main/resources/static/static/js/main.08b43777.chunk.js.map
+R050	src/main/resources/static/static/js/main.08b43777.chunk.js	src/main/resources/static/static/js/main.fbaa22fd.chunk.js
+A	src/main/resources/static/static/js/main.fbaa22fd.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/TableWidget.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/User.js
+
+c516492;Dev
+M	README.md
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.109fa040.chunk.css
+A	src/main/resources/static/static/css/main.109fa040.chunk.css.map
+D	src/main/resources/static/static/css/main.fbb146c0.chunk.css
+D	src/main/resources/static/static/css/main.fbb146c0.chunk.css.map
+R099	src/main/resources/static/static/js/2.9fbfef7d.chunk.js	src/main/resources/static/static/js/2.73e8460e.chunk.js
+R099	src/main/resources/static/static/js/2.9fbfef7d.chunk.js.map	src/main/resources/static/static/js/2.73e8460e.chunk.js.map
+A	src/main/resources/static/static/js/main.08b43777.chunk.js
+A	src/main/resources/static/static/js/main.08b43777.chunk.js.map
+D	src/main/resources/static/static/js/main.fc8ea0e8.chunk.js
+D	src/main/resources/static/static/js/main.fc8ea0e8.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/TableWidget.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+
+cd91050;Dev
+D	.circleci/config.yml
+M	.travis.yml
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/js/main.707bcf88.chunk.js
+D	src/main/resources/static/static/js/main.707bcf88.chunk.js.map
+A	src/main/resources/static/static/js/main.fc8ea0e8.chunk.js
+A	src/main/resources/static/static/js/main.fc8ea0e8.chunk.js.map
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/TableWidget.js
+M	web-app/src/components/WidgetViewPanel.js
+R100	web-app/src/components/ImageBox.css	web-app/src/components/widgets/ImageBox.css
+R100	web-app/src/components/ImageBox.js	web-app/src/components/widgets/ImageBox.js
+R100	web-app/src/components/TextBox.css	web-app/src/components/widgets/TextBox.css
+R100	web-app/src/components/TextBox.js	web-app/src/components/widgets/TextBox.js
+M	web-app/src/views/DashboardEditView.js
+
+55c5ad6;Dev
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/service/UserService.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.02607376.chunk.css
+D	src/main/resources/static/static/css/main.02607376.chunk.css.map
+A	src/main/resources/static/static/css/main.fbb146c0.chunk.css
+A	src/main/resources/static/static/css/main.fbb146c0.chunk.css.map
+D	src/main/resources/static/static/js/main.3f35db61.chunk.js
+D	src/main/resources/static/static/js/main.3f35db61.chunk.js.map
+A	src/main/resources/static/static/js/main.707bcf88.chunk.js
+A	src/main/resources/static/static/js/main.707bcf88.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/TableWidget.css
+M	web-app/src/components/TableWidget.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+
+0bce207;Dev
+M	.circleci/config.yml
+M	pom.xml
+M	src/main/java/com/shzlw/poli/StartUpListener.java
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/dto/QueryResult.java
+A	src/main/java/com/shzlw/poli/dto/WidgetQueryResult.java
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/model/User.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/rest/GroupWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/java/com/shzlw/poli/service/UserService.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/js/main.3f35db61.chunk.js
+A	src/main/resources/static/static/js/main.3f35db61.chunk.js.map
+D	src/main/resources/static/static/js/main.9880631d.chunk.js
+D	src/main/resources/static/static/js/main.9880631d.chunk.js.map
+M	web-app/src/views/Account.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/User.js
+
+0e14d70;Dev
+M	.circleci/config.yml
+M	README.md
+M	src/main/java/com/shzlw/poli/SystemProperties.java
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/index.html
+R085	src/main/resources/static/static/css/main.c39fc1c1.chunk.css	src/main/resources/static/static/css/main.02607376.chunk.css
+A	src/main/resources/static/static/css/main.02607376.chunk.css.map
+D	src/main/resources/static/static/css/main.c39fc1c1.chunk.css.map
+D	src/main/resources/static/static/js/main.65a4feea.chunk.js
+D	src/main/resources/static/static/js/main.65a4feea.chunk.js.map
+A	src/main/resources/static/static/js/main.9880631d.chunk.js
+A	src/main/resources/static/static/js/main.9880631d.chunk.js.map
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/TableWidget.js
+M	web-app/src/components/Tabs.css
+M	web-app/src/views/Account.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/User.js
+
+91b091f;Dev
+M	src/main/java/com/shzlw/poli/util/CommonUtil.java
+
+8bb0322;Circle CI
+M	.circleci/config.yml
+
+25a0d5d;Dev
+M	.circleci/config.yml
+M	pom.xml
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+A	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/2.d86c0043.chunk.css
+A	src/main/resources/static/static/css/2.d86c0043.chunk.css.map
+A	src/main/resources/static/static/css/main.c39fc1c1.chunk.css
+A	src/main/resources/static/static/css/main.c39fc1c1.chunk.css.map
+A	src/main/resources/static/static/js/2.9fbfef7d.chunk.js
+A	src/main/resources/static/static/js/2.9fbfef7d.chunk.js.map
+A	src/main/resources/static/static/js/main.65a4feea.chunk.js
+A	src/main/resources/static/static/js/main.65a4feea.chunk.js.map
+A	src/main/resources/static/static/js/runtime~main.a8a9905a.js
+A	src/main/resources/static/static/js/runtime~main.a8a9905a.js.map
+M	web-app/src/App.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/TableWidget.js
+M	web-app/src/components/Toast.css
+M	web-app/src/components/Toast.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/User.js
+
+75e004a;Dev
+A	.circleci/config.yml
+M	pom.xml
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+D	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/2.d86c0043.chunk.css
+D	src/main/resources/static/static/css/2.d86c0043.chunk.css.map
+D	src/main/resources/static/static/css/main.32beb6e8.chunk.css
+D	src/main/resources/static/static/css/main.32beb6e8.chunk.css.map
+D	src/main/resources/static/static/js/2.8bbf16ad.chunk.js
+D	src/main/resources/static/static/js/2.8bbf16ad.chunk.js.map
+D	src/main/resources/static/static/js/main.da9ebb82.chunk.js
+D	src/main/resources/static/static/js/main.da9ebb82.chunk.js.map
+D	src/main/resources/static/static/js/runtime~main.a8a9905a.js
+D	src/main/resources/static/static/js/runtime~main.a8a9905a.js.map
+M	src/test/resources/schema-sqlite.sql
+M	web-app/src/App.css
+M	web-app/src/components/Modal.css
+M	web-app/src/components/Toast.css
+M	web-app/src/components/Toast.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/User.js
+
+74d653c;Dev
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.32beb6e8.chunk.css
+A	src/main/resources/static/static/css/main.32beb6e8.chunk.css.map
+D	src/main/resources/static/static/css/main.f2eb92c9.chunk.css
+D	src/main/resources/static/static/css/main.f2eb92c9.chunk.css.map
+D	src/main/resources/static/static/js/2.3fb36d84.chunk.js
+A	src/main/resources/static/static/js/2.8bbf16ad.chunk.js
+R050	src/main/resources/static/static/js/2.3fb36d84.chunk.js.map	src/main/resources/static/static/js/2.8bbf16ad.chunk.js.map
+D	src/main/resources/static/static/js/main.64f4f0e0.chunk.js
+D	src/main/resources/static/static/js/main.64f4f0e0.chunk.js.map
+A	src/main/resources/static/static/js/main.da9ebb82.chunk.js
+A	src/main/resources/static/static/js/main.da9ebb82.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/ColorPicker.js
+M	web-app/src/components/GridDraggable.js
+M	web-app/src/components/GridItem.js
+D	web-app/src/components/NumberRange.js
+A	web-app/src/components/SearchInput.css
+M	web-app/src/components/SearchInput.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/User.js
+
+5a93e64;Dev
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.1b61b584.chunk.css
+D	src/main/resources/static/static/css/main.1b61b584.chunk.css.map
+A	src/main/resources/static/static/css/main.f2eb92c9.chunk.css
+A	src/main/resources/static/static/css/main.f2eb92c9.chunk.css.map
+A	src/main/resources/static/static/js/main.64f4f0e0.chunk.js
+A	src/main/resources/static/static/js/main.64f4f0e0.chunk.js.map
+D	src/main/resources/static/static/js/main.d06a340f.chunk.js
+D	src/main/resources/static/static/js/main.d06a340f.chunk.js.map
+M	web-app/src/App.css
+D	web-app/src/api/AuthStore.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+D	web-app/src/components/Slicer.css
+D	web-app/src/components/Slicer.js
+M	web-app/src/components/TableWidget.css
+M	web-app/src/components/WidgetEditPanel.js
+A	web-app/src/components/filters/Slicer.css
+A	web-app/src/components/filters/Slicer.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/Workspace.css
+
+814bef5;Dev
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.1b61b584.chunk.css
+A	src/main/resources/static/static/css/main.1b61b584.chunk.css.map
+D	src/main/resources/static/static/css/main.f0b0d9f2.chunk.css
+D	src/main/resources/static/static/css/main.f0b0d9f2.chunk.css.map
+R099	src/main/resources/static/static/js/2.55e48722.chunk.js	src/main/resources/static/static/js/2.3fb36d84.chunk.js
+R050	src/main/resources/static/static/js/2.55e48722.chunk.js.map	src/main/resources/static/static/js/2.3fb36d84.chunk.js.map
+D	src/main/resources/static/static/js/main.bfc93c3d.chunk.js
+D	src/main/resources/static/static/js/main.bfc93c3d.chunk.js.map
+A	src/main/resources/static/static/js/main.d06a340f.chunk.js
+A	src/main/resources/static/static/js/main.d06a340f.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/User.js
+
+7457fd8;Dev
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/resources/static/favicon.ico
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.6f2a27a3.chunk.css
+D	src/main/resources/static/static/css/main.6f2a27a3.chunk.css.map
+A	src/main/resources/static/static/css/main.f0b0d9f2.chunk.css
+A	src/main/resources/static/static/css/main.f0b0d9f2.chunk.css.map
+R071	src/main/resources/static/static/js/2.5c581309.chunk.js	src/main/resources/static/static/js/2.55e48722.chunk.js
+R099	src/main/resources/static/static/js/2.5c581309.chunk.js.map	src/main/resources/static/static/js/2.55e48722.chunk.js.map
+D	src/main/resources/static/static/js/main.bb1e554e.chunk.js
+D	src/main/resources/static/static/js/main.bb1e554e.chunk.js.map
+A	src/main/resources/static/static/js/main.bfc93c3d.chunk.js
+A	src/main/resources/static/static/js/main.bfc93c3d.chunk.js.map
+M	web-app/public/favicon.ico
+M	web-app/src/App.css
+M	web-app/src/components/Modal.css
+A	web-app/src/components/SearchInput.js
+M	web-app/src/components/Tabs.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Login.css
+M	web-app/src/views/Login.js
+M	web-app/src/views/UserManagement.js
+M	web-app/src/views/Workspace.css
+M	web-app/src/views/Workspace.js
+
+bc347d3;Dev
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.6f2a27a3.chunk.css
+A	src/main/resources/static/static/css/main.6f2a27a3.chunk.css.map
+D	src/main/resources/static/static/css/main.c1109c5a.chunk.css
+D	src/main/resources/static/static/css/main.c1109c5a.chunk.css.map
+R062	src/main/resources/static/static/js/2.97f259dc.chunk.js	src/main/resources/static/static/js/2.5c581309.chunk.js
+R099	src/main/resources/static/static/js/2.97f259dc.chunk.js.map	src/main/resources/static/static/js/2.5c581309.chunk.js.map
+A	src/main/resources/static/static/js/main.bb1e554e.chunk.js
+A	src/main/resources/static/static/js/main.bb1e554e.chunk.js.map
+D	src/main/resources/static/static/js/main.d8d0064e.chunk.js
+D	src/main/resources/static/static/js/main.d8d0064e.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/Login.css
+M	web-app/src/views/Login.js
+M	web-app/src/views/Workspace.css
+M	web-app/src/views/Workspace.js
+
+ebf98e2;Dev
+A	docs/Embedded.md
+M	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+M	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/model/User.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+A	src/main/java/com/shzlw/poli/service/UserService.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.bf94a031.chunk.css
+D	src/main/resources/static/static/css/main.bf94a031.chunk.css.map
+A	src/main/resources/static/static/css/main.c1109c5a.chunk.css
+A	src/main/resources/static/static/css/main.c1109c5a.chunk.css.map
+D	src/main/resources/static/static/js/main.7c0bf406.chunk.js
+D	src/main/resources/static/static/js/main.7c0bf406.chunk.js.map
+A	src/main/resources/static/static/js/main.d8d0064e.chunk.js
+A	src/main/resources/static/static/js/main.d8d0064e.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/ColorPicker.js
+M	web-app/src/components/Select.js
+A	web-app/src/components/SelectButtons.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/User.js
+M	web-app/src/views/UserManagement.js
+M	web-app/src/views/Workspace.css
+M	web-app/src/views/Workspace.js
+
+1225726;Dev
+M	src/main/resources/static/index.html
+R098	src/main/resources/static/static/js/2.2341b4dc.chunk.js	src/main/resources/static/static/js/2.97f259dc.chunk.js
+R099	src/main/resources/static/static/js/2.2341b4dc.chunk.js.map	src/main/resources/static/static/js/2.97f259dc.chunk.js.map
+D	src/main/resources/static/static/js/main.05e07a41.chunk.js
+D	src/main/resources/static/static/js/main.05e07a41.chunk.js.map
+A	src/main/resources/static/static/js/main.7c0bf406.chunk.js
+A	src/main/resources/static/static/js/main.7c0bf406.chunk.js.map
+M	web-app/src/App.js
+D	web-app/src/components/FilterEditPanel.css
+D	web-app/src/components/FilterEditPanel.js
+D	web-app/src/components/FilterViewPanel.css
+D	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/TableWidget.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/Workspace.js
+
+a85e89b;Dev
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.1025297c.chunk.css.map
+R065	src/main/resources/static/static/css/main.1025297c.chunk.css	src/main/resources/static/static/css/main.bf94a031.chunk.css
+A	src/main/resources/static/static/css/main.bf94a031.chunk.css.map
+R098	src/main/resources/static/static/js/2.97f259dc.chunk.js	src/main/resources/static/static/js/2.2341b4dc.chunk.js
+R099	src/main/resources/static/static/js/2.97f259dc.chunk.js.map	src/main/resources/static/static/js/2.2341b4dc.chunk.js.map
+A	src/main/resources/static/static/js/main.05e07a41.chunk.js
+A	src/main/resources/static/static/js/main.05e07a41.chunk.js.map
+D	src/main/resources/static/static/js/main.82eaa55a.chunk.js
+D	src/main/resources/static/static/js/main.82eaa55a.chunk.js.map
+M	web-app/src/App.js
+M	web-app/src/components/TableWidget.css
+M	web-app/src/components/TableWidget.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/Login.js
+
+b789178;Dev
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/resources/static/index.html
+R065	src/main/resources/static/static/css/main.e407c9c6.chunk.css	src/main/resources/static/static/css/main.1025297c.chunk.css
+A	src/main/resources/static/static/css/main.1025297c.chunk.css.map
+D	src/main/resources/static/static/css/main.e407c9c6.chunk.css.map
+R098	src/main/resources/static/static/js/2.346638a4.chunk.js	src/main/resources/static/static/js/2.97f259dc.chunk.js
+R055	src/main/resources/static/static/js/2.346638a4.chunk.js.map	src/main/resources/static/static/js/2.97f259dc.chunk.js.map
+D	src/main/resources/static/static/js/main.216aea27.chunk.js
+D	src/main/resources/static/static/js/main.216aea27.chunk.js.map
+A	src/main/resources/static/static/js/main.82eaa55a.chunk.js
+A	src/main/resources/static/static/js/main.82eaa55a.chunk.js.map
+M	web-app/src/App.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/Slicer.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+A	web-app/src/components/filters/Paginator.css
+A	web-app/src/components/filters/Paginator.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DashboardFullScreenView.js
+M	web-app/src/views/Login.js
+M	web-app/src/views/Workspace.js
+
+29f1e79;Turn filter into widget and remove filter panel
+M	db/schema-sqlite.sql
+A	src/main/java/com/shzlw/poli/StartUpListener.java
+A	src/main/java/com/shzlw/poli/SystemProperties.java
+D	src/main/java/com/shzlw/poli/dao/FilterDao.java
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+D	src/main/java/com/shzlw/poli/model/Filter.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+D	src/main/java/com/shzlw/poli/rest/FilterWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.c5b5bf04.chunk.css
+D	src/main/resources/static/static/css/main.c5b5bf04.chunk.css.map
+A	src/main/resources/static/static/css/main.e407c9c6.chunk.css
+A	src/main/resources/static/static/css/main.e407c9c6.chunk.css.map
+A	src/main/resources/static/static/js/2.346638a4.chunk.js
+R050	src/main/resources/static/static/js/2.a110ac73.chunk.js.map	src/main/resources/static/static/js/2.346638a4.chunk.js.map
+D	src/main/resources/static/static/js/2.a110ac73.chunk.js
+A	src/main/resources/static/static/js/main.216aea27.chunk.js
+A	src/main/resources/static/static/js/main.216aea27.chunk.js.map
+D	src/main/resources/static/static/js/main.d16d0833.chunk.js
+D	src/main/resources/static/static/js/main.d16d0833.chunk.js.map
+M	start.bat
+M	start.sh
+M	web-app/src/App.css
+M	web-app/src/api/Constants.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/Tabs.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+A	web-app/src/components/filters/InputRange.css
+A	web-app/src/components/filters/InputRange.js
+A	web-app/src/components/widgets/Iframe.js
+A	web-app/src/components/widgets/InnerHtml.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+
+fef3bcf;Dev
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/util/PasswordUtil.java
+A	src/test/java/com/shzlw/poli/rest/AbstractWsTest.java
+A	src/test/java/com/shzlw/poli/rest/AuthWsTest.java
+M	src/test/java/com/shzlw/poli/rest/DashboardWsTest.java
+A	src/test/java/com/shzlw/poli/rest/UserWsTest.java
+M	src/test/resources/application-test.properties
+A	src/test/resources/logback-test.xml
+M	src/test/resources/schema-sqlite.sql
+
+54d7cb4;Dev
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/2.899858c3.chunk.css.map
+R099	src/main/resources/static/static/css/2.899858c3.chunk.css	src/main/resources/static/static/css/2.d86c0043.chunk.css
+A	src/main/resources/static/static/css/2.d86c0043.chunk.css.map
+D	src/main/resources/static/static/css/main.b94da02a.chunk.css.map
+R099	src/main/resources/static/static/css/main.b94da02a.chunk.css	src/main/resources/static/static/css/main.c5b5bf04.chunk.css
+A	src/main/resources/static/static/css/main.c5b5bf04.chunk.css.map
+D	src/main/resources/static/static/js/main.b49ba11f.chunk.js
+D	src/main/resources/static/static/js/main.b49ba11f.chunk.js.map
+A	src/main/resources/static/static/js/main.d16d0833.chunk.js
+A	src/main/resources/static/static/js/main.d16d0833.chunk.js.map
+M	web-app/src/components/Select.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DataSource.js
+D	web-app/src/views/Template.js
+M	web-app/src/views/User.js
+M	web-app/src/views/Workspace.js
+
+651f3bb;Dev
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/dto/LoginResponse.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/resources/static/asset-manifest.json
+M	src/main/resources/static/index.html
+A	src/main/resources/static/precache-manifest.0c571ba055fba6e62644af32084ad082.js
+D	src/main/resources/static/precache-manifest.d764be39280cf2331d1baeb373169743.js
+M	src/main/resources/static/service-worker.js
+R098	src/main/resources/static/static/js/2.653253fd.chunk.js	src/main/resources/static/static/js/2.a110ac73.chunk.js
+R050	src/main/resources/static/static/js/2.653253fd.chunk.js.map	src/main/resources/static/static/js/2.a110ac73.chunk.js.map
+D	src/main/resources/static/static/js/main.2ce37082.chunk.js
+D	src/main/resources/static/static/js/main.2ce37082.chunk.js.map
+A	src/main/resources/static/static/js/main.b49ba11f.chunk.js
+A	src/main/resources/static/static/js/main.b49ba11f.chunk.js.map
+M	web-app/src/App.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Login.js
+M	web-app/src/views/User.js
+M	web-app/src/views/Workspace.js
+
+1763ac5;Dev
+M	build.sh
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+A	src/main/java/com/shzlw/poli/dto/LoginResponse.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/asset-manifest.json
+M	src/main/resources/static/index.html
+D	src/main/resources/static/precache-manifest.4eeb49c94933e8e094ef79e98588aa37.js
+A	src/main/resources/static/precache-manifest.d764be39280cf2331d1baeb373169743.js
+M	src/main/resources/static/service-worker.js
+R099	src/main/resources/static/static/css/2.d86c0043.chunk.css	src/main/resources/static/static/css/2.899858c3.chunk.css
+A	src/main/resources/static/static/css/2.899858c3.chunk.css.map
+D	src/main/resources/static/static/css/2.d86c0043.chunk.css.map
+R099	src/main/resources/static/static/css/main.c5b5bf04.chunk.css	src/main/resources/static/static/css/main.b94da02a.chunk.css
+A	src/main/resources/static/static/css/main.b94da02a.chunk.css.map
+D	src/main/resources/static/static/css/main.c5b5bf04.chunk.css.map
+D	src/main/resources/static/static/js/2.3b004bf5.chunk.js
+D	src/main/resources/static/static/js/2.3b004bf5.chunk.js.map
+A	src/main/resources/static/static/js/2.653253fd.chunk.js
+A	src/main/resources/static/static/js/2.653253fd.chunk.js.map
+A	src/main/resources/static/static/js/main.2ce37082.chunk.js
+A	src/main/resources/static/static/js/main.2ce37082.chunk.js.map
+D	src/main/resources/static/static/js/main.d65d1561.chunk.js
+D	src/main/resources/static/static/js/main.d65d1561.chunk.js.map
+A	start.sh
+M	web-app/src/App.js
+R055	web-app/src/views/UpdateTempPassword.js	web-app/src/views/ChangeTempPassword.js
+M	web-app/src/views/Login.js
+M	web-app/src/views/Workspace.js
+
+5b6c4a7;Dev
+M	README.md
+M	db/schema-sqlite.sql
+A	docs/Installation.md
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.c5b5bf04.chunk.css
+A	src/main/resources/static/static/css/main.c5b5bf04.chunk.css.map
+D	src/main/resources/static/static/css/main.f913a748.chunk.css
+D	src/main/resources/static/static/css/main.f913a748.chunk.css.map
+R096	src/main/resources/static/static/js/2.c83380a0.chunk.js	src/main/resources/static/static/js/2.3b004bf5.chunk.js
+R050	src/main/resources/static/static/js/2.c83380a0.chunk.js.map	src/main/resources/static/static/js/2.3b004bf5.chunk.js.map
+D	src/main/resources/static/static/js/main.bba3d9c1.chunk.js
+D	src/main/resources/static/static/js/main.bba3d9c1.chunk.js.map
+A	src/main/resources/static/static/js/main.d65d1561.chunk.js
+A	src/main/resources/static/static/js/main.d65d1561.chunk.js.map
+M	src/test/java/com/shzlw/poli/util/PasswordUtilTest.java
+R100	web-app/LICENSE-THIRD-PARTY	web-app/THIRD-PARTY-LICENSE
+M	web-app/src/App.js
+M	web-app/src/api/AuthStore.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Login.js
+M	web-app/src/views/UserManagement.css
+M	web-app/src/views/UserManagement.js
+M	web-app/src/views/Workspace.js
+
+30b19b2;Dev
+M	web-app/package-lock.json
+M	web-app/src/App.css
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/Tabs.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/Login.js
+M	web-app/src/views/UpdateTempPassword.js
+M	web-app/src/views/User.js
+M	web-app/src/views/UserManagement.js
+M	web-app/src/views/Workspace.js
+
+c9d6d28;Create LICENSE
+A	LICENSE
+
+bd190b2;Dev
+D	LICENSE
+R100	LICENSE-THIRD-PARTY	THIRD-PARTY-LICENSE
+M	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+M	src/main/java/com/shzlw/poli/dao/FilterDao.java
+M	src/main/java/com/shzlw/poli/dao/GroupDao.java
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/dto/QueryResult.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/rest/FilterWs.java
+M	src/main/java/com/shzlw/poli/rest/GroupWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.e4b89195.chunk.css
+D	src/main/resources/static/static/css/main.e4b89195.chunk.css.map
+A	src/main/resources/static/static/css/main.f913a748.chunk.css
+A	src/main/resources/static/static/css/main.f913a748.chunk.css.map
+R099	src/main/resources/static/static/js/2.e25096e6.chunk.js	src/main/resources/static/static/js/2.c83380a0.chunk.js
+R050	src/main/resources/static/static/js/2.e25096e6.chunk.js.map	src/main/resources/static/static/js/2.c83380a0.chunk.js.map
+D	src/main/resources/static/static/js/main.665158f9.chunk.js
+D	src/main/resources/static/static/js/main.665158f9.chunk.js.map
+A	src/main/resources/static/static/js/main.bba3d9c1.chunk.js
+A	src/main/resources/static/static/js/main.bba3d9c1.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/components/Toast.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/Login.css
+M	web-app/src/views/Login.js
+M	web-app/src/views/User.js
+M	web-app/src/views/UserManagement.js
+
+232f72d;Dev
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/FilterDao.java
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/model/Filter.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.5d4151e4.chunk.css
+D	src/main/resources/static/static/css/main.5d4151e4.chunk.css.map
+A	src/main/resources/static/static/css/main.e4b89195.chunk.css
+A	src/main/resources/static/static/css/main.e4b89195.chunk.css.map
+D	src/main/resources/static/static/js/2.b90fcae3.chunk.js
+A	src/main/resources/static/static/js/2.e25096e6.chunk.js
+R051	src/main/resources/static/static/js/2.b90fcae3.chunk.js.map	src/main/resources/static/static/js/2.e25096e6.chunk.js.map
+D	src/main/resources/static/static/js/main.066187cb.chunk.js
+D	src/main/resources/static/static/js/main.066187cb.chunk.js.map
+A	src/main/resources/static/static/js/main.665158f9.chunk.js
+A	src/main/resources/static/static/js/main.665158f9.chunk.js.map
+M	web-app/src/App.js
+D	web-app/src/components/ConfirmDialog.css
+D	web-app/src/components/ConfirmDialog.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+
+3af3632;Dev
+M	src/main/resources/static/index.html
+R099	src/main/resources/static/static/js/2.4313b693.chunk.js	src/main/resources/static/static/js/2.b90fcae3.chunk.js
+R099	src/main/resources/static/static/js/2.4313b693.chunk.js.map	src/main/resources/static/static/js/2.b90fcae3.chunk.js.map
+A	src/main/resources/static/static/js/main.066187cb.chunk.js
+A	src/main/resources/static/static/js/main.066187cb.chunk.js.map
+D	src/main/resources/static/static/js/main.d5f655af.chunk.js
+D	src/main/resources/static/static/js/main.d5f655af.chunk.js.map
+M	web-app/src/App.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/Select.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Datasource.css
+
+20ea6a5;Dev
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.5d4151e4.chunk.css
+A	src/main/resources/static/static/css/main.5d4151e4.chunk.css.map
+D	src/main/resources/static/static/css/main.911bf9ad.chunk.css
+D	src/main/resources/static/static/css/main.911bf9ad.chunk.css.map
+R088	src/main/resources/static/static/js/2.b2bc9048.chunk.js	src/main/resources/static/static/js/2.4313b693.chunk.js
+R051	src/main/resources/static/static/js/2.b2bc9048.chunk.js.map	src/main/resources/static/static/js/2.4313b693.chunk.js.map
+D	src/main/resources/static/static/js/main.b0e1a00d.chunk.js
+D	src/main/resources/static/static/js/main.b0e1a00d.chunk.js.map
+A	src/main/resources/static/static/js/main.d5f655af.chunk.js
+A	src/main/resources/static/static/js/main.d5f655af.chunk.js.map
+M	web-app/src/App.css
+A	web-app/src/components/ConfirmDialog.css
+A	web-app/src/components/ConfirmDialog.js
+A	web-app/src/components/FilterEditPanel.css
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.css
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/Slicer.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Group.js
+M	web-app/src/views/Login.js
+M	web-app/src/views/UpdateTempPassword.js
+M	web-app/src/views/User.js
+
+89812a6;Dev
+A	docs/Query.md
+M	src/main/java/com/shzlw/poli/dto/QueryResult.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.2cf5c23d.chunk.css
+D	src/main/resources/static/static/css/main.2cf5c23d.chunk.css.map
+A	src/main/resources/static/static/css/main.911bf9ad.chunk.css
+A	src/main/resources/static/static/css/main.911bf9ad.chunk.css.map
+D	src/main/resources/static/static/js/2.3b78b04d.chunk.js
+A	src/main/resources/static/static/js/2.b2bc9048.chunk.js
+R051	src/main/resources/static/static/js/2.3b78b04d.chunk.js.map	src/main/resources/static/static/js/2.b2bc9048.chunk.js.map
+D	src/main/resources/static/static/js/main.84784b46.chunk.js
+D	src/main/resources/static/static/js/main.84784b46.chunk.js.map
+A	src/main/resources/static/static/js/main.b0e1a00d.chunk.js
+A	src/main/resources/static/static/js/main.b0e1a00d.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/api/Util.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/TableWidget.js
+M	web-app/src/components/Toast.css
+M	web-app/src/components/Toast.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DataSource.js
+
+a0af5fe;Dev
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.2cf5c23d.chunk.css
+A	src/main/resources/static/static/css/main.2cf5c23d.chunk.css.map
+D	src/main/resources/static/static/css/main.2d9f945d.chunk.css
+D	src/main/resources/static/static/css/main.2d9f945d.chunk.css.map
+A	src/main/resources/static/static/js/2.3b78b04d.chunk.js
+R051	src/main/resources/static/static/js/2.9d54d700.chunk.js.map	src/main/resources/static/static/js/2.3b78b04d.chunk.js.map
+D	src/main/resources/static/static/js/2.9d54d700.chunk.js
+A	src/main/resources/static/static/js/main.84784b46.chunk.js
+A	src/main/resources/static/static/js/main.84784b46.chunk.js.map
+D	src/main/resources/static/static/js/main.89d4d112.chunk.js
+D	src/main/resources/static/static/js/main.89d4d112.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+A	web-app/src/components/Slicer.css
+M	web-app/src/components/Slicer.js
+M	web-app/src/components/TableWidget.css
+M	web-app/src/components/TableWidget.js
+M	web-app/src/components/Toast.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+
+fda4e22;Dev
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/util/PasswordUtil.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.141f6490.chunk.css
+D	src/main/resources/static/static/css/main.141f6490.chunk.css.map
+A	src/main/resources/static/static/css/main.2d9f945d.chunk.css
+A	src/main/resources/static/static/css/main.2d9f945d.chunk.css.map
+R064	src/main/resources/static/static/js/2.525e9743.chunk.js	src/main/resources/static/static/js/2.9d54d700.chunk.js
+R050	src/main/resources/static/static/js/2.525e9743.chunk.js.map	src/main/resources/static/static/js/2.9d54d700.chunk.js.map
+D	src/main/resources/static/static/js/main.5cf7f5a0.chunk.js
+D	src/main/resources/static/static/js/main.5cf7f5a0.chunk.js.map
+A	src/main/resources/static/static/js/main.89d4d112.chunk.js
+A	src/main/resources/static/static/js/main.89d4d112.chunk.js.map
+M	src/test/java/com/shzlw/poli/util/PasswordUtilTest.java
+M	web-app/src/App.css
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/components/Modal.css
+M	web-app/src/components/Modal.js
+A	web-app/src/components/Toast.css
+M	web-app/src/components/Toast.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Datasource.css
+M	web-app/src/views/UserManagement.css
+M	web-app/src/views/Workspace.js
+
+0606409;Dev
+M	src/main/resources/application.properties
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.141f6490.chunk.css
+A	src/main/resources/static/static/css/main.141f6490.chunk.css.map
+D	src/main/resources/static/static/css/main.67521869.chunk.css
+D	src/main/resources/static/static/css/main.67521869.chunk.css.map
+R092	src/main/resources/static/static/js/2.bd980a5e.chunk.js	src/main/resources/static/static/js/2.525e9743.chunk.js
+R099	src/main/resources/static/static/js/2.bd980a5e.chunk.js.map	src/main/resources/static/static/js/2.525e9743.chunk.js.map
+D	src/main/resources/static/static/js/main.5768594c.chunk.js
+D	src/main/resources/static/static/js/main.5768594c.chunk.js.map
+A	src/main/resources/static/static/js/main.5cf7f5a0.chunk.js
+A	src/main/resources/static/static/js/main.5cf7f5a0.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/api/EchartsApi.js
+M	web-app/src/api/Util.js
+M	web-app/src/components/Checkbox.css
+M	web-app/src/components/Checkbox.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.js
+A	web-app/src/components/ImageBox.css
+M	web-app/src/components/Slicer.js
+A	web-app/src/components/TableWidget.css
+A	web-app/src/components/TableWidget.js
+A	web-app/src/components/TextBox.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DashboardFullScreenView.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Workspace.css
+M	web-app/src/views/Workspace.js
+
+1abb446;Dev
+M	db/schema-sqlite.sql
+M	pom.xml
+M	src/main/java/com/shzlw/poli/dao/GroupDao.java
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/model/Group.java
+M	src/main/java/com/shzlw/poli/model/JdbcDataSource.java
+M	src/main/java/com/shzlw/poli/model/User.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/rest/GroupWs.java
+M	src/main/java/com/shzlw/poli/rest/UserWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/resources/static/index.html
+R051	src/main/resources/static/static/css/main.e5b5fff5.chunk.css	src/main/resources/static/static/css/main.67521869.chunk.css
+A	src/main/resources/static/static/css/main.67521869.chunk.css.map
+D	src/main/resources/static/static/css/main.e5b5fff5.chunk.css.map
+R099	src/main/resources/static/static/js/2.bdc47e6f.chunk.js	src/main/resources/static/static/js/2.bd980a5e.chunk.js
+R050	src/main/resources/static/static/js/2.bdc47e6f.chunk.js.map	src/main/resources/static/static/js/2.bd980a5e.chunk.js.map
+D	src/main/resources/static/static/js/main.446894f2.chunk.js
+D	src/main/resources/static/static/js/main.446894f2.chunk.js.map
+A	src/main/resources/static/static/js/main.5768594c.chunk.js
+A	src/main/resources/static/static/js/main.5768594c.chunk.js.map
+M	web-app/src/components/Checkbox.css
+M	web-app/src/components/Checkbox.js
+A	web-app/src/components/Tabs.css
+A	web-app/src/components/Tabs.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+
+2df6f3f;Dev
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+M	src/main/java/com/shzlw/poli/model/Dashboard.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/util/RawStringDeserialzier.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.168d2dc2.chunk.css
+D	src/main/resources/static/static/css/main.168d2dc2.chunk.css.map
+A	src/main/resources/static/static/css/main.e5b5fff5.chunk.css
+A	src/main/resources/static/static/css/main.e5b5fff5.chunk.css.map
+D	src/main/resources/static/static/js/2.0b6f1576.chunk.js
+D	src/main/resources/static/static/js/2.0b6f1576.chunk.js.map
+A	src/main/resources/static/static/js/2.bdc47e6f.chunk.js
+A	src/main/resources/static/static/js/2.bdc47e6f.chunk.js.map
+A	src/main/resources/static/static/js/main.446894f2.chunk.js
+A	src/main/resources/static/static/js/main.446894f2.chunk.js.map
+D	src/main/resources/static/static/js/main.79544863.chunk.js
+D	src/main/resources/static/static/js/main.79544863.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/api/Constants.js
+A	web-app/src/components/Checkbox.css
+A	web-app/src/components/Checkbox.js
+M	web-app/src/components/ColorPicker.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.css
+M	web-app/src/components/GridDraggable.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/GridResizable.js
+M	web-app/src/components/Modal.css
+A	web-app/src/components/WidgetEditPanel.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+
+01163b2;Dev
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+M	src/main/java/com/shzlw/poli/model/JdbcDataSource.java
+A	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/2.d86c0043.chunk.css
+A	src/main/resources/static/static/css/2.d86c0043.chunk.css.map
+A	src/main/resources/static/static/css/main.168d2dc2.chunk.css
+A	src/main/resources/static/static/css/main.168d2dc2.chunk.css.map
+A	src/main/resources/static/static/js/2.0b6f1576.chunk.js
+A	src/main/resources/static/static/js/2.0b6f1576.chunk.js.map
+A	src/main/resources/static/static/js/main.79544863.chunk.js
+A	src/main/resources/static/static/js/main.79544863.chunk.js.map
+A	src/main/resources/static/static/js/runtime~main.a8a9905a.js
+A	src/main/resources/static/static/js/runtime~main.a8a9905a.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/ColorPicker.js
+A	web-app/src/components/FilterViewPanel.css
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+A	web-app/src/components/ImageBox.js
+A	web-app/src/components/TextBox.js
+A	web-app/src/components/WidgetViewPanel.css
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+M	web-app/src/views/Datasource.css
+M	web-app/src/views/User.js
+A	web-app/src/views/UserManagement.css
+M	web-app/src/views/UserManagement.js
+M	web-app/src/views/Workspace.css
+M	web-app/src/views/Workspace.js
+
+c809c1c;Dev
+M	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/model/User.java
+M	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+A	src/main/java/com/shzlw/poli/rest/GroupWs.java
+A	src/main/java/com/shzlw/poli/rest/UserWs.java
+A	src/main/java/com/shzlw/poli/util/CommonUtil.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+D	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/1.65c681f8.chunk.css
+D	src/main/resources/static/static/css/1.65c681f8.chunk.css.map
+D	src/main/resources/static/static/css/main.ea448f11.chunk.css
+D	src/main/resources/static/static/css/main.ea448f11.chunk.css.map
+D	src/main/resources/static/static/js/1.afcefe9f.chunk.js
+D	src/main/resources/static/static/js/1.afcefe9f.chunk.js.map
+D	src/main/resources/static/static/js/main.77449411.chunk.js
+D	src/main/resources/static/static/js/main.77449411.chunk.js.map
+D	src/main/resources/static/static/js/runtime~main.229c360f.js
+D	src/main/resources/static/static/js/runtime~main.229c360f.js.map
+A	src/test/java/com/shzlw/poli/util/CommonUtilTest.java
+M	web-app/LICENSE-THIRD-PARTY
+M	web-app/package-lock.json
+M	web-app/package.json
+M	web-app/public/index.html
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/api/WebApi.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/Modal.css
+M	web-app/src/components/Modal.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+A	web-app/src/views/Datasource.css
+M	web-app/src/views/Login.css
+M	web-app/src/views/Login.js
+M	web-app/src/views/UserManagement.js
+A	web-app/src/views/Workspace.css
+M	web-app/src/views/Workspace.js
+
+23c9674;Dev
+M	README.md
+
+94d5371;Create License
+A	LICENSE
+
+67ed568;Dev
+D	LICENSE
+A	LICENSE-THIRD-PARTY
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/AppConfig.java
+M	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+A	src/main/java/com/shzlw/poli/dao/GroupDao.java
+A	src/main/java/com/shzlw/poli/dao/UserDao.java
+A	src/main/java/com/shzlw/poli/filter/AuthFilter.java
+M	src/main/java/com/shzlw/poli/model/Dashboard.java
+A	src/main/java/com/shzlw/poli/model/Group.java
+A	src/main/java/com/shzlw/poli/model/User.java
+A	src/main/java/com/shzlw/poli/rest/AuthWs.java
+M	src/main/resources/static/index.html
+R099	src/main/resources/static/static/css/1.cef14cdd.chunk.css	src/main/resources/static/static/css/1.65c681f8.chunk.css
+R098	src/main/resources/static/static/css/1.cef14cdd.chunk.css.map	src/main/resources/static/static/css/1.65c681f8.chunk.css.map
+D	src/main/resources/static/static/css/main.e13d1dc8.chunk.css
+D	src/main/resources/static/static/css/main.e13d1dc8.chunk.css.map
+A	src/main/resources/static/static/css/main.ea448f11.chunk.css
+A	src/main/resources/static/static/css/main.ea448f11.chunk.css.map
+D	src/main/resources/static/static/js/1.afae03b3.chunk.js
+D	src/main/resources/static/static/js/1.afae03b3.chunk.js.map
+A	src/main/resources/static/static/js/1.afcefe9f.chunk.js
+A	src/main/resources/static/static/js/1.afcefe9f.chunk.js.map
+D	src/main/resources/static/static/js/main.4447fc61.chunk.js
+D	src/main/resources/static/static/js/main.4447fc61.chunk.js.map
+A	src/main/resources/static/static/js/main.77449411.chunk.js
+A	src/main/resources/static/static/js/main.77449411.chunk.js.map
+A	web-app/LICENSE-THIRD-PARTY
+M	web-app/package.json
+M	web-app/src/App.js
+D	web-app/src/api/Auth.js
+A	web-app/src/api/AuthStore.js
+M	web-app/src/api/Constants.js
+M	web-app/src/api/WebApi.js
+M	web-app/src/components/Modal.css
+M	web-app/src/views/Account.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+A	web-app/src/views/Login.css
+M	web-app/src/views/Login.js
+D	web-app/src/views/NotFound.js
+A	web-app/src/views/PageNotFound.js
+A	web-app/src/views/UpdateTempPassword.js
+M	web-app/src/views/UserManagement.js
+M	web-app/src/views/Workspace.js
+
+1c5f2e3;Dev
+M	web-app/src/App.js
+A	web-app/src/api/Auth.js
+A	web-app/src/components/Modal.css
+M	web-app/src/components/Modal.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+A	web-app/src/views/Group.js
+R053	web-app/src/views/Role.js	web-app/src/views/Login.js
+A	web-app/src/views/NotFound.js
+M	web-app/src/views/User.js
+M	web-app/src/views/UserManagement.js
+A	web-app/src/views/Workspace.js
+
+6a18247;Dev
+M	web-app/package-lock.json
+M	web-app/src/App.css
+M	web-app/src/App.js
+A	web-app/src/views/Account.js
+A	web-app/src/views/Role.js
+A	web-app/src/views/User.js
+A	web-app/src/views/UserManagement.js
+
+8a0edf2;Dev
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.1f47e6a1.chunk.css
+D	src/main/resources/static/static/css/main.1f47e6a1.chunk.css.map
+A	src/main/resources/static/static/css/main.e13d1dc8.chunk.css
+A	src/main/resources/static/static/css/main.e13d1dc8.chunk.css.map
+A	src/main/resources/static/static/js/1.afae03b3.chunk.js
+A	src/main/resources/static/static/js/1.afae03b3.chunk.js.map
+D	src/main/resources/static/static/js/1.daea7eb8.chunk.js
+D	src/main/resources/static/static/js/1.daea7eb8.chunk.js.map
+A	src/main/resources/static/static/js/main.4447fc61.chunk.js
+A	src/main/resources/static/static/js/main.4447fc61.chunk.js.map
+D	src/main/resources/static/static/js/main.9558dda1.chunk.js
+D	src/main/resources/static/static/js/main.9558dda1.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/DashboardEditView.js
+A	web-app/src/views/DashboardFullScreenView.js
+
+6f37d59;Dev
+M	README.md
+A	docs/README.txt
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/js/1.69fec782.chunk.js.map
+R099	src/main/resources/static/static/js/1.69fec782.chunk.js	src/main/resources/static/static/js/1.daea7eb8.chunk.js
+A	src/main/resources/static/static/js/1.daea7eb8.chunk.js.map
+D	src/main/resources/static/static/js/main.5502e3ee.chunk.js
+D	src/main/resources/static/static/js/main.5502e3ee.chunk.js.map
+A	src/main/resources/static/static/js/main.9558dda1.chunk.js
+A	src/main/resources/static/static/js/main.9558dda1.chunk.js.map
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/views/DashboardEditView.js
+
+90cf4af;Dev
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/resources/static/index.html
+R098	src/main/resources/static/static/js/1.bf8d523c.chunk.js	src/main/resources/static/static/js/1.69fec782.chunk.js
+A	src/main/resources/static/static/js/1.69fec782.chunk.js.map
+D	src/main/resources/static/static/js/1.bf8d523c.chunk.js.map
+D	src/main/resources/static/static/js/main.4fb1bbca.chunk.js
+D	src/main/resources/static/static/js/main.4fb1bbca.chunk.js.map
+A	src/main/resources/static/static/js/main.5502e3ee.chunk.js
+A	src/main/resources/static/static/js/main.5502e3ee.chunk.js.map
+M	web-app/src/components/WidgetEditPanel.js
+
+ae050d6;Dev
+M	src/main/resources/static/index.html
+R083	src/main/resources/static/static/css/main.6cdf28bc.chunk.css	src/main/resources/static/static/css/main.1f47e6a1.chunk.css
+A	src/main/resources/static/static/css/main.1f47e6a1.chunk.css.map
+D	src/main/resources/static/static/css/main.6cdf28bc.chunk.css.map
+D	src/main/resources/static/static/js/1.5d9b2366.chunk.js.map
+R099	src/main/resources/static/static/js/1.5d9b2366.chunk.js	src/main/resources/static/static/js/1.bf8d523c.chunk.js
+A	src/main/resources/static/static/js/1.bf8d523c.chunk.js.map
+D	src/main/resources/static/static/js/main.39e2bf87.chunk.js
+D	src/main/resources/static/static/js/main.39e2bf87.chunk.js.map
+A	src/main/resources/static/static/js/main.4fb1bbca.chunk.js
+A	src/main/resources/static/static/js/main.4fb1bbca.chunk.js.map
+M	web-app/src/api/Constants.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+
+1af3d62;Dev
+A	db/test-data-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/FilterDao.java
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/dto/FilterParameter.java
+M	src/main/java/com/shzlw/poli/rest/FilterWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/main/resources/static/index.html
+R099	src/main/resources/static/static/css/1.29f934db.chunk.css	src/main/resources/static/static/css/1.cef14cdd.chunk.css
+R097	src/main/resources/static/static/css/1.29f934db.chunk.css.map	src/main/resources/static/static/css/1.cef14cdd.chunk.css.map
+D	src/main/resources/static/static/css/main.5d04a4f2.chunk.css.map
+R061	src/main/resources/static/static/css/main.5d04a4f2.chunk.css	src/main/resources/static/static/css/main.6cdf28bc.chunk.css
+A	src/main/resources/static/static/css/main.6cdf28bc.chunk.css.map
+D	src/main/resources/static/static/js/1.21f732bf.chunk.js
+D	src/main/resources/static/static/js/1.21f732bf.chunk.js.map
+A	src/main/resources/static/static/js/1.5d9b2366.chunk.js
+A	src/main/resources/static/static/js/1.5d9b2366.chunk.js.map
+A	src/main/resources/static/static/js/main.39e2bf87.chunk.js
+A	src/main/resources/static/static/js/main.39e2bf87.chunk.js.map
+D	src/main/resources/static/static/js/main.653fac3a.chunk.js
+D	src/main/resources/static/static/js/main.653fac3a.chunk.js.map
+M	web-app/package-lock.json
+M	web-app/src/App.css
+A	web-app/src/components/ColorPicker.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSource.js
+
+fd9753d;Dev
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/main.5d04a4f2.chunk.css
+A	src/main/resources/static/static/css/main.5d04a4f2.chunk.css.map
+D	src/main/resources/static/static/css/main.b401787b.chunk.css
+D	src/main/resources/static/static/css/main.b401787b.chunk.css.map
+A	src/main/resources/static/static/js/main.653fac3a.chunk.js
+A	src/main/resources/static/static/js/main.653fac3a.chunk.js.map
+D	src/main/resources/static/static/js/main.ac221945.chunk.js
+D	src/main/resources/static/static/js/main.ac221945.chunk.js.map
+M	web-app/package-lock.json
+M	web-app/package.json
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridDraggable.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/GridResizable.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/Dashboard.js
+
+0c72777;Dev
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.1dae9c1c.chunk.css
+D	src/main/resources/static/static/css/main.1dae9c1c.chunk.css.map
+A	src/main/resources/static/static/css/main.b401787b.chunk.css
+A	src/main/resources/static/static/css/main.b401787b.chunk.css.map
+R095	src/main/resources/static/static/js/1.4cf3937d.chunk.js	src/main/resources/static/static/js/1.21f732bf.chunk.js
+A	src/main/resources/static/static/js/1.21f732bf.chunk.js.map
+D	src/main/resources/static/static/js/1.4cf3937d.chunk.js.map
+D	src/main/resources/static/static/js/main.14e24142.chunk.js
+D	src/main/resources/static/static/js/main.14e24142.chunk.js.map
+A	src/main/resources/static/static/js/main.ac221945.chunk.js
+A	src/main/resources/static/static/js/main.ac221945.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/GridDraggable.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/GridResizable.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+
+9ffed8b;Dev
+M	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/resources/static/index.html
+R089	src/main/resources/static/static/css/main.bfd1ec30.chunk.css	src/main/resources/static/static/css/main.1dae9c1c.chunk.css
+A	src/main/resources/static/static/css/main.1dae9c1c.chunk.css.map
+D	src/main/resources/static/static/css/main.bfd1ec30.chunk.css.map
+D	src/main/resources/static/static/js/1.05aa1a1a.chunk.js
+D	src/main/resources/static/static/js/1.05aa1a1a.chunk.js.map
+A	src/main/resources/static/static/js/1.4cf3937d.chunk.js
+A	src/main/resources/static/static/js/1.4cf3937d.chunk.js.map
+A	src/main/resources/static/static/js/main.14e24142.chunk.js
+A	src/main/resources/static/static/js/main.14e24142.chunk.js.map
+D	src/main/resources/static/static/js/main.64dbbe5c.chunk.js
+D	src/main/resources/static/static/js/main.64dbbe5c.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.css
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+
+ba88ee4;Dev
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/model/Dashboard.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.aacae26a.chunk.css
+D	src/main/resources/static/static/css/main.aacae26a.chunk.css.map
+A	src/main/resources/static/static/css/main.bfd1ec30.chunk.css
+A	src/main/resources/static/static/css/main.bfd1ec30.chunk.css.map
+R059	src/main/resources/static/static/js/1.e1c22081.chunk.js	src/main/resources/static/static/js/1.05aa1a1a.chunk.js
+A	src/main/resources/static/static/js/1.05aa1a1a.chunk.js.map
+D	src/main/resources/static/static/js/1.e1c22081.chunk.js.map
+A	src/main/resources/static/static/js/main.64dbbe5c.chunk.js
+A	src/main/resources/static/static/js/main.64dbbe5c.chunk.js.map
+D	src/main/resources/static/static/js/main.e2234ac9.chunk.js
+D	src/main/resources/static/static/js/main.e2234ac9.chunk.js.map
+M	web-app/src/api/WebApi.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/Dashboard.css
+M	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+
+d3a8282;Dev
+M	README.md
+A	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/1.29f934db.chunk.css
+A	src/main/resources/static/static/css/1.29f934db.chunk.css.map
+A	src/main/resources/static/static/css/main.aacae26a.chunk.css
+A	src/main/resources/static/static/css/main.aacae26a.chunk.css.map
+A	src/main/resources/static/static/js/1.e1c22081.chunk.js
+A	src/main/resources/static/static/js/1.e1c22081.chunk.js.map
+A	src/main/resources/static/static/js/main.e2234ac9.chunk.js
+A	src/main/resources/static/static/js/main.e2234ac9.chunk.js.map
+A	src/main/resources/static/static/js/runtime~main.229c360f.js
+A	src/main/resources/static/static/js/runtime~main.229c360f.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/WidgetViewPanel.js
+A	web-app/src/views/Dashboard.css
+R051	web-app/src/views/Dashboards.js	web-app/src/views/Dashboard.js
+M	web-app/src/views/DashboardEditView.js
+R092	web-app/src/views/DataSources.js	web-app/src/views/DataSource.js
+D	web-app/src/views/Overview.js
+M	web-app/src/views/SingleTest.js
+D	web-app/src/views/Test.js
+
+8003be4;Dev
+D	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/1.2b15bb5f.chunk.css
+D	src/main/resources/static/static/css/1.2b15bb5f.chunk.css.map
+D	src/main/resources/static/static/css/main.bb7e7b86.chunk.css
+D	src/main/resources/static/static/css/main.bb7e7b86.chunk.css.map
+D	src/main/resources/static/static/js/1.68bd9a99.chunk.js
+D	src/main/resources/static/static/js/1.68bd9a99.chunk.js.map
+D	src/main/resources/static/static/js/main.d553eea9.chunk.js
+D	src/main/resources/static/static/js/main.d553eea9.chunk.js.map
+D	src/main/resources/static/static/js/runtime~main.229c360f.js
+D	src/main/resources/static/static/js/runtime~main.229c360f.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+A	web-app/src/api/Constants.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/Modal.js
+R065	web-app/src/components/QuerySlicer.js	web-app/src/components/Slicer.js
+A	web-app/src/components/Toast.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSources.js
+D	web-app/src/views/EditDashboard.js
+D	web-app/src/views/EditFilter.js
+
+3dd3cf5;Dev
+A	LICENSE
+
+c2eca21;Dev
+D	LICENSE
+D	LICENSE-3RD-PARTY
+M	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+M	src/main/java/com/shzlw/poli/dao/FilterDao.java
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+D	src/main/java/com/shzlw/poli/dao/mapper/DashboardRowMapper.java
+D	src/main/java/com/shzlw/poli/dao/mapper/FilterRowMapper.java
+D	src/main/java/com/shzlw/poli/dao/mapper/WidgetRowMapper.java
+A	src/main/java/com/shzlw/poli/dto/Column.java
+R073	src/main/java/com/shzlw/poli/model/QueryParameter.java	src/main/java/com/shzlw/poli/dto/QueryParameter.java
+M	src/main/java/com/shzlw/poli/dto/QueryResult.java
+D	src/main/java/com/shzlw/poli/model/Column.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.90ed0743.chunk.css
+D	src/main/resources/static/static/css/main.90ed0743.chunk.css.map
+A	src/main/resources/static/static/css/main.bb7e7b86.chunk.css
+A	src/main/resources/static/static/css/main.bb7e7b86.chunk.css.map
+R098	src/main/resources/static/static/js/1.024efedc.chunk.js	src/main/resources/static/static/js/1.68bd9a99.chunk.js
+R094	src/main/resources/static/static/js/1.024efedc.chunk.js.map	src/main/resources/static/static/js/1.68bd9a99.chunk.js.map
+D	src/main/resources/static/static/js/main.5c10a898.chunk.js
+D	src/main/resources/static/static/js/main.5c10a898.chunk.js.map
+A	src/main/resources/static/static/js/main.d553eea9.chunk.js
+A	src/main/resources/static/static/js/main.d553eea9.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DataSources.js
+D	web-app/src/views/EditDataSource.js
+
+8844acc;Dev
+M	README.md
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/main.5ccdcee4.chunk.css
+D	src/main/resources/static/static/css/main.5ccdcee4.chunk.css.map
+A	src/main/resources/static/static/css/main.90ed0743.chunk.css
+A	src/main/resources/static/static/css/main.90ed0743.chunk.css.map
+D	src/main/resources/static/static/js/main.15554785.chunk.js.map
+R062	src/main/resources/static/static/js/main.15554785.chunk.js	src/main/resources/static/static/js/main.5c10a898.chunk.js
+A	src/main/resources/static/static/js/main.5c10a898.chunk.js.map
+M	web-app/package-lock.json
+M	web-app/package.json
+M	web-app/src/App.css
+M	web-app/src/components/FilterEditPanel.js
+A	web-app/src/components/Modal.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+
+932cb2f;Dev
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/dao/mapper/WidgetRowMapper.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/resources/static/index.html
+R099	src/main/resources/static/static/css/1.4c23cec1.chunk.css	src/main/resources/static/static/css/1.2b15bb5f.chunk.css
+R098	src/main/resources/static/static/css/1.4c23cec1.chunk.css.map	src/main/resources/static/static/css/1.2b15bb5f.chunk.css.map
+D	src/main/resources/static/static/css/main.4c13c29f.chunk.css
+D	src/main/resources/static/static/css/main.4c13c29f.chunk.css.map
+A	src/main/resources/static/static/css/main.5ccdcee4.chunk.css
+A	src/main/resources/static/static/css/main.5ccdcee4.chunk.css.map
+A	src/main/resources/static/static/js/1.024efedc.chunk.js
+A	src/main/resources/static/static/js/1.024efedc.chunk.js.map
+D	src/main/resources/static/static/js/1.b4d90d00.chunk.js
+D	src/main/resources/static/static/js/1.b4d90d00.chunk.js.map
+A	src/main/resources/static/static/js/main.15554785.chunk.js
+A	src/main/resources/static/static/js/main.15554785.chunk.js.map
+D	src/main/resources/static/static/js/main.e0c487a3.chunk.js
+D	src/main/resources/static/static/js/main.e0c487a3.chunk.js.map
+M	web-app/package-lock.json
+M	web-app/package.json
+M	web-app/src/App.css
+M	web-app/src/App.js
+A	web-app/src/api/EchartsApi.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/SingleTest.js
+
+59c23c0;Dev
+M	src/main/java/com/shzlw/poli/dao/FilterDao.java
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+D	src/main/java/com/shzlw/poli/dao/mapper/JdbcDataSourceRowMapper.java
+A	src/main/java/com/shzlw/poli/dto/FilterParameter.java
+M	src/main/java/com/shzlw/poli/model/JdbcDataSource.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/js/1.89d11b51.chunk.js.map
+R099	src/main/resources/static/static/js/1.89d11b51.chunk.js	src/main/resources/static/static/js/1.b4d90d00.chunk.js
+A	src/main/resources/static/static/js/1.b4d90d00.chunk.js.map
+D	src/main/resources/static/static/js/main.9292e513.chunk.js
+D	src/main/resources/static/static/js/main.9292e513.chunk.js.map
+A	src/main/resources/static/static/js/main.e0c487a3.chunk.js
+A	src/main/resources/static/static/js/main.e0c487a3.chunk.js.map
+M	src/test/java/com/shzlw/poli/service/JdbcQueryServiceTest.java
+A	web-app/src/api/Util.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+
+54e1e82;Dev
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/1.1292c167.chunk.css.map
+R099	src/main/resources/static/static/css/1.1292c167.chunk.css	src/main/resources/static/static/css/1.4c23cec1.chunk.css
+A	src/main/resources/static/static/css/1.4c23cec1.chunk.css.map
+D	src/main/resources/static/static/css/main.278337ec.chunk.css.map
+R098	src/main/resources/static/static/css/main.278337ec.chunk.css	src/main/resources/static/static/css/main.4c13c29f.chunk.css
+A	src/main/resources/static/static/css/main.4c13c29f.chunk.css.map
+D	src/main/resources/static/static/js/1.30af82e7.chunk.js.map
+R099	src/main/resources/static/static/js/1.30af82e7.chunk.js	src/main/resources/static/static/js/1.89d11b51.chunk.js
+A	src/main/resources/static/static/js/1.89d11b51.chunk.js.map
+D	src/main/resources/static/static/js/main.760055d0.chunk.js
+D	src/main/resources/static/static/js/main.760055d0.chunk.js.map
+A	src/main/resources/static/static/js/main.9292e513.chunk.js
+A	src/main/resources/static/static/js/main.9292e513.chunk.js.map
+A	src/test/java/com/shzlw/poli/service/JdbcQueryServiceTest.java
+M	web-app/src/api/WebApi.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+
+069a46a;Dev
+M	src/main/resources/static/asset-manifest.json
+M	src/main/resources/static/index.html
+A	src/main/resources/static/precache-manifest.4eeb49c94933e8e094ef79e98588aa37.js
+D	src/main/resources/static/precache-manifest.598be9f4227fd17a17c603ff8ef4cc84.js
+M	src/main/resources/static/service-worker.js
+D	src/main/resources/static/static/css/main.1bd8aeb4.chunk.css
+D	src/main/resources/static/static/css/main.1bd8aeb4.chunk.css.map
+A	src/main/resources/static/static/css/main.278337ec.chunk.css
+A	src/main/resources/static/static/css/main.278337ec.chunk.css.map
+D	src/main/resources/static/static/js/1.2246fead.chunk.js.map
+R093	src/main/resources/static/static/js/1.2246fead.chunk.js	src/main/resources/static/static/js/1.30af82e7.chunk.js
+A	src/main/resources/static/static/js/1.30af82e7.chunk.js.map
+A	src/main/resources/static/static/js/main.760055d0.chunk.js
+A	src/main/resources/static/static/js/main.760055d0.chunk.js.map
+D	src/main/resources/static/static/js/main.c0e88fa8.chunk.js
+D	src/main/resources/static/static/js/main.c0e88fa8.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/components/GridItem.js
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+
+ef94217;Dev
+M	build.sh
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/dao/mapper/WidgetRowMapper.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/resources/static/asset-manifest.json
+M	src/main/resources/static/index.html
+A	src/main/resources/static/precache-manifest.598be9f4227fd17a17c603ff8ef4cc84.js
+D	src/main/resources/static/precache-manifest.f77b8cad52321573ae9234e6545c96ae.js
+M	src/main/resources/static/service-worker.js
+A	src/main/resources/static/static/css/main.1bd8aeb4.chunk.css
+A	src/main/resources/static/static/css/main.1bd8aeb4.chunk.css.map
+D	src/main/resources/static/static/css/main.7b7aa886.chunk.css
+D	src/main/resources/static/static/css/main.7b7aa886.chunk.css.map
+R091	src/main/resources/static/static/js/1.a6034e44.chunk.js	src/main/resources/static/static/js/1.2246fead.chunk.js
+A	src/main/resources/static/static/js/1.2246fead.chunk.js.map
+D	src/main/resources/static/static/js/1.a6034e44.chunk.js.map
+D	src/main/resources/static/static/js/main.573c33e4.chunk.js
+D	src/main/resources/static/static/js/main.573c33e4.chunk.js.map
+A	src/main/resources/static/static/js/main.c0e88fa8.chunk.js
+A	src/main/resources/static/static/js/main.c0e88fa8.chunk.js.map
+A	src/test/java/com/shzlw/poli/rest/DashboardWsTest.java
+A	src/test/resources/application-test.properties
+A	src/test/resources/schema-sqlite.sql
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/GridDraggable.js
+M	web-app/src/components/GridItem.js
+A	web-app/src/components/GridLayout.css
+M	web-app/src/components/GridLayout.js
+M	web-app/src/components/GridResizable.js
+M	web-app/src/components/QuerySlicer.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/Test.js
+
+74826cc;Dev
+M	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/FilterDao.java
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+M	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/dao/mapper/FilterRowMapper.java
+M	src/main/java/com/shzlw/poli/dao/mapper/WidgetRowMapper.java
+M	src/main/java/com/shzlw/poli/dto/QueryRequest.java
+M	src/main/java/com/shzlw/poli/model/Filter.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+M	src/main/java/com/shzlw/poli/rest/FilterWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/resources/static/asset-manifest.json
+M	src/main/resources/static/index.html
+D	src/main/resources/static/precache-manifest.a26d37315c8c6043cd1e3c4d1f685763.js
+A	src/main/resources/static/precache-manifest.f77b8cad52321573ae9234e6545c96ae.js
+M	src/main/resources/static/service-worker.js
+D	src/main/resources/static/static/css/main.421d65f8.chunk.css.map
+R086	src/main/resources/static/static/css/main.421d65f8.chunk.css	src/main/resources/static/static/css/main.7b7aa886.chunk.css
+A	src/main/resources/static/static/css/main.7b7aa886.chunk.css.map
+D	src/main/resources/static/static/js/1.2a149966.chunk.js
+D	src/main/resources/static/static/js/1.2a149966.chunk.js.map
+A	src/main/resources/static/static/js/1.a6034e44.chunk.js
+A	src/main/resources/static/static/js/1.a6034e44.chunk.js.map
+D	src/main/resources/static/static/js/main.16c93ac4.chunk.js
+D	src/main/resources/static/static/js/main.16c93ac4.chunk.js.map
+A	src/main/resources/static/static/js/main.573c33e4.chunk.js
+A	src/main/resources/static/static/js/main.573c33e4.chunk.js.map
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/Dashboards.js
+
+7d06ea3;Dev
+M	LICENSE
+M	build.sh
+A	src/main/java/com/shzlw/poli/dto/QueryRequest.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+A	src/main/java/com/shzlw/poli/rest/JdbcQueryWs.java
+M	src/main/resources/application.properties
+A	src/main/resources/static/asset-manifest.json
+M	src/main/resources/static/index.html
+A	src/main/resources/static/manifest.json
+A	src/main/resources/static/precache-manifest.a26d37315c8c6043cd1e3c4d1f685763.js
+A	src/main/resources/static/service-worker.js
+R099	src/main/resources/static/static/css/1.fc40a2d9.chunk.css	src/main/resources/static/static/css/1.1292c167.chunk.css
+A	src/main/resources/static/static/css/1.1292c167.chunk.css.map
+D	src/main/resources/static/static/css/1.fc40a2d9.chunk.css.map
+A	src/main/resources/static/static/css/main.421d65f8.chunk.css
+A	src/main/resources/static/static/css/main.421d65f8.chunk.css.map
+D	src/main/resources/static/static/css/main.eb8c24ed.chunk.css
+D	src/main/resources/static/static/css/main.eb8c24ed.chunk.css.map
+A	src/main/resources/static/static/js/1.2a149966.chunk.js
+A	src/main/resources/static/static/js/1.2a149966.chunk.js.map
+D	src/main/resources/static/static/js/1.ded07558.chunk.js
+D	src/main/resources/static/static/js/1.ded07558.chunk.js.map
+A	src/main/resources/static/static/js/main.16c93ac4.chunk.js
+A	src/main/resources/static/static/js/main.16c93ac4.chunk.js.map
+D	src/main/resources/static/static/js/main.3173f967.chunk.js
+D	src/main/resources/static/static/js/main.3173f967.chunk.js.map
+M	web-app/package.json
+M	web-app/public/index.html
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/components/FilterEditPanel.js
+M	web-app/src/components/FilterViewPanel.js
+A	web-app/src/components/Select.js
+M	web-app/src/components/WidgetEditPanel.js
+M	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/Dashboards.js
+M	web-app/src/views/DataSources.js
+M	web-app/src/views/EditDashboard.js
+M	web-app/src/views/Overview.js
+M	web-app/src/views/Test.js
+
+81946dc;Dev
+M	config/poli.properties
+M	src/main/java/com/shzlw/poli/AppConfig.java
+D	src/main/java/com/shzlw/poli/dao/UserDao.java
+M	src/main/java/com/shzlw/poli/model/Dashboard.java
+D	src/main/java/com/shzlw/poli/model/Role.java
+D	src/main/java/com/shzlw/poli/model/User.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+D	src/main/java/com/shzlw/poli/service/UserService.java
+M	src/main/java/com/shzlw/poli/util/Constants.java
+M	src/main/java/com/shzlw/poli/util/PasswordUtil.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/favicon.ico
+M	src/main/resources/static/index.html
+D	src/main/resources/static/login.html
+R099	src/main/resources/static/static/css/1.92230ef6.chunk.css	src/main/resources/static/static/css/1.fc40a2d9.chunk.css
+R098	src/main/resources/static/static/css/1.92230ef6.chunk.css.map	src/main/resources/static/static/css/1.fc40a2d9.chunk.css.map
+D	src/main/resources/static/static/css/main.de5bab93.chunk.css
+D	src/main/resources/static/static/css/main.de5bab93.chunk.css.map
+A	src/main/resources/static/static/css/main.eb8c24ed.chunk.css
+A	src/main/resources/static/static/css/main.eb8c24ed.chunk.css.map
+A	src/main/resources/static/static/js/1.ded07558.chunk.js
+A	src/main/resources/static/static/js/1.ded07558.chunk.js.map
+D	src/main/resources/static/static/js/1.e50a8f0d.chunk.js
+D	src/main/resources/static/static/js/1.e50a8f0d.chunk.js.map
+A	src/main/resources/static/static/js/main.3173f967.chunk.js
+A	src/main/resources/static/static/js/main.3173f967.chunk.js.map
+D	src/main/resources/static/static/js/main.c67fa74d.chunk.js
+D	src/main/resources/static/static/js/main.c67fa74d.chunk.js.map
+M	src/test/java/com/shzlw/poli/util/PasswordUtilTest.java
+M	web-app/src/App.css
+M	web-app/src/App.js
+R100	web-app/src/views/Account.js	web-app/src/components/FilterEditPanel.js
+A	web-app/src/components/FilterViewPanel.js
+M	web-app/src/components/QuerySlicer.js
+R100	web-app/src/views/Users.js	web-app/src/components/WidgetEditPanel.js
+A	web-app/src/components/WidgetViewPanel.js
+M	web-app/src/index.js
+A	web-app/src/views/DashboardEditView.js
+M	web-app/src/views/DataSources.js
+M	web-app/src/views/EditDashboard.js
+M	web-app/src/views/EditFilter.js
+D	web-app/src/views/EditWidget.js
+A	web-app/src/views/SingleTest.js
+M	web-app/src/views/ViewDashboard.js
+
+13de94a;Dev
+M	web-app/src/views/DataSources.js
+M	web-app/src/views/EditDashboard.js
+M	web-app/src/views/EditFilter.js
+
+34139bf;Dev
+M	src/main/resources/static/index.html
+M	web-app/src/App.css
+M	web-app/src/App.js
+A	web-app/src/components/NumberRange.js
+A	web-app/src/components/QuerySlicer.js
+A	web-app/src/views/Account.js
+M	web-app/src/views/EditDashboard.js
+A	web-app/src/views/EditFilter.js
+A	web-app/src/views/EditWidget.js
+A	web-app/src/views/Template.js
+A	web-app/src/views/Users.js
+
+1abf159;Dev
+R096	db/poli.sql	db/schema-sqlite.sql
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+A	src/main/java/com/shzlw/poli/model/Role.java
+M	web-app/public/favicon.ico
+M	web-app/src/App.css
+A	web-app/src/components/GridDraggable.js
+A	web-app/src/components/GridItem.js
+A	web-app/src/components/GridLayout.js
+A	web-app/src/components/GridResizable.js
+M	web-app/src/views/EditDashboard.js
+M	web-app/src/views/Test.js
+
+264ca5e;Dev
+M	.gitignore
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+A	src/main/java/com/shzlw/poli/dto/QueryResult.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/resources/application.properties
+A	src/main/resources/loader.properties
+M	src/main/resources/static/index.html
+A	src/main/resources/static/static/css/1.92230ef6.chunk.css
+A	src/main/resources/static/static/css/1.92230ef6.chunk.css.map
+R089	src/main/resources/static/static/css/main.8bf5d01e.chunk.css	src/main/resources/static/static/css/main.de5bab93.chunk.css
+R090	src/main/resources/static/static/css/main.8bf5d01e.chunk.css.map	src/main/resources/static/static/css/main.de5bab93.chunk.css.map
+D	src/main/resources/static/static/js/1.552fda50.chunk.js
+D	src/main/resources/static/static/js/1.552fda50.chunk.js.map
+A	src/main/resources/static/static/js/1.e50a8f0d.chunk.js
+A	src/main/resources/static/static/js/1.e50a8f0d.chunk.js.map
+A	src/main/resources/static/static/js/main.c67fa74d.chunk.js
+A	src/main/resources/static/static/js/main.c67fa74d.chunk.js.map
+D	src/main/resources/static/static/js/main.c8b75501.chunk.js
+D	src/main/resources/static/static/js/main.c8b75501.chunk.js.map
+M	web-app/package-lock.json
+M	web-app/package.json
+M	web-app/src/views/EditDashboard.js
+M	web-app/src/views/Test.js
+
+be43e2f;Dev
+M	db/poli.sql
+M	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+M	src/main/java/com/shzlw/poli/dao/FilterDao.java
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+A	src/main/java/com/shzlw/poli/dao/WidgetDao.java
+M	src/main/java/com/shzlw/poli/dao/mapper/DashboardRowMapper.java
+M	src/main/java/com/shzlw/poli/dao/mapper/FilterRowMapper.java
+A	src/main/java/com/shzlw/poli/dao/mapper/WidgetRowMapper.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+D	src/main/java/com/shzlw/poli/model/filter/DatePicker.java
+D	src/main/java/com/shzlw/poli/model/filter/Slicer.java
+D	src/main/java/com/shzlw/poli/model/widget/Kpi.java
+D	src/main/java/com/shzlw/poli/model/widget/Table.java
+M	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/resources/static/index.html
+D	src/main/resources/static/static/css/1.ba14f617.chunk.css
+D	src/main/resources/static/static/css/1.ba14f617.chunk.css.map
+D	src/main/resources/static/static/css/main.056c7645.chunk.css.map
+R050	src/main/resources/static/static/css/main.056c7645.chunk.css	src/main/resources/static/static/css/main.8bf5d01e.chunk.css
+A	src/main/resources/static/static/css/main.8bf5d01e.chunk.css.map
+D	src/main/resources/static/static/js/1.15555e0a.chunk.js
+D	src/main/resources/static/static/js/1.15555e0a.chunk.js.map
+A	src/main/resources/static/static/js/1.552fda50.chunk.js
+A	src/main/resources/static/static/js/1.552fda50.chunk.js.map
+D	src/main/resources/static/static/js/main.22034364.chunk.js
+D	src/main/resources/static/static/js/main.22034364.chunk.js.map
+A	src/main/resources/static/static/js/main.c8b75501.chunk.js
+A	src/main/resources/static/static/js/main.c8b75501.chunk.js.map
+M	web-app/src/api/WebApi.js
+M	web-app/src/views/Dashboards.js
+M	web-app/src/views/DataSources.js
+M	web-app/src/views/EditDashboard.js
+
+01a17d2;Dev
+M	db/poli.sql
+R057	src/main/java/com/shzlw/poli/dao/BoardDao.java	src/main/java/com/shzlw/poli/dao/DashboardDao.java
+M	src/main/java/com/shzlw/poli/dao/FilterDao.java
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+D	src/main/java/com/shzlw/poli/dao/mapper/BoardMapper.java
+A	src/main/java/com/shzlw/poli/dao/mapper/DashboardRowMapper.java
+R081	src/main/java/com/shzlw/poli/dao/mapper/FilterMapper.java	src/main/java/com/shzlw/poli/dao/mapper/FilterRowMapper.java
+R090	src/main/java/com/shzlw/poli/dao/mapper/JdbcDataSourceMapper.java	src/main/java/com/shzlw/poli/dao/mapper/JdbcDataSourceRowMapper.java
+D	src/main/java/com/shzlw/poli/model/Card.java
+R064	src/main/java/com/shzlw/poli/model/Board.java	src/main/java/com/shzlw/poli/model/Dashboard.java
+M	src/main/java/com/shzlw/poli/model/Filter.java
+M	src/main/java/com/shzlw/poli/model/Widget.java
+R062	src/main/java/com/shzlw/poli/rest/BoardWs.java	src/main/java/com/shzlw/poli/rest/DashboardWs.java
+M	src/main/java/com/shzlw/poli/rest/FilterWs.java
+M	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+R089	src/main/java/com/shzlw/poli/rest/CardWs.java	src/main/java/com/shzlw/poli/rest/WidgetWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	web-app/src/App.js
+A	web-app/src/api/WebApi.js
+D	web-app/src/views/Boards.js
+A	web-app/src/views/Dashboards.js
+M	web-app/src/views/DataSources.js
+D	web-app/src/views/EditBoard.js
+A	web-app/src/views/EditDashboard.js
+D	web-app/src/views/ViewBoard.js
+R100	web-app/src/api/DataSourceService.js	web-app/src/views/ViewDashboard.js
+
+e3e81d3;Dev
+D	build-start.bat
+M	build.bat
+M	config/poli.properties
+A	db/poli.sql
+M	pom.xml
+D	run
+M	src/main/java/com/shzlw/poli/AppConfig.java
+A	src/main/java/com/shzlw/poli/dao/BoardDao.java
+A	src/main/java/com/shzlw/poli/dao/FilterDao.java
+M	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+A	src/main/java/com/shzlw/poli/dao/mapper/BoardMapper.java
+A	src/main/java/com/shzlw/poli/dao/mapper/FilterMapper.java
+A	src/main/java/com/shzlw/poli/dao/mapper/JdbcDataSourceMapper.java
+A	src/main/java/com/shzlw/poli/model/Board.java
+A	src/main/java/com/shzlw/poli/model/Card.java
+D	src/main/java/com/shzlw/poli/model/Dashboard.java
+A	src/main/java/com/shzlw/poli/model/Filter.java
+M	src/main/java/com/shzlw/poli/model/JdbcDataSource.java
+M	src/main/java/com/shzlw/poli/model/filter/DatePicker.java
+A	src/main/java/com/shzlw/poli/model/filter/Slicer.java
+D	src/main/java/com/shzlw/poli/model/widget/Card.java
+A	src/main/java/com/shzlw/poli/model/widget/Kpi.java
+M	src/main/java/com/shzlw/poli/model/widget/Table.java
+A	src/main/java/com/shzlw/poli/rest/BoardWs.java
+A	src/main/java/com/shzlw/poli/rest/CardWs.java
+A	src/main/java/com/shzlw/poli/rest/FilterWs.java
+A	src/main/java/com/shzlw/poli/rest/JdbcDataSourceWs.java
+M	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+A	src/main/java/com/shzlw/poli/service/JdbcQueryService.java
+M	src/main/java/com/shzlw/poli/service/UserService.java
+A	src/main/java/com/shzlw/poli/util/Constants.java
+A	src/main/java/com/shzlw/poli/util/PasswordUtil.java
+A	src/main/java/com/shzlw/poli/util/RawStringDeserialzier.java
+M	src/main/resources/application.properties
+A	src/main/resources/static/index.html
+M	src/main/resources/static/login.html
+A	src/main/resources/static/static/css/1.ba14f617.chunk.css
+A	src/main/resources/static/static/css/1.ba14f617.chunk.css.map
+A	src/main/resources/static/static/css/main.056c7645.chunk.css
+A	src/main/resources/static/static/css/main.056c7645.chunk.css.map
+A	src/main/resources/static/static/js/1.15555e0a.chunk.js
+A	src/main/resources/static/static/js/1.15555e0a.chunk.js.map
+A	src/main/resources/static/static/js/main.22034364.chunk.js
+A	src/main/resources/static/static/js/main.22034364.chunk.js.map
+A	src/main/resources/static/static/js/runtime~main.229c360f.js
+A	src/main/resources/static/static/js/runtime~main.229c360f.js.map
+A	src/test/java/com/shzlw/poli/util/PasswordUtilTest.java
+M	start.bat
+M	web-app/package-lock.json
+M	web-app/package.json
+M	web-app/public/favicon.ico
+M	web-app/public/index.html
+M	web-app/public/manifest.json
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/index.js
+D	web-app/src/pages/Dashboards.js
+D	web-app/src/pages/DataSources.js
+D	web-app/src/pages/EditDataSource.js
+D	web-app/src/pages/Test.js
+D	web-app/src/pages/Users.js
+A	web-app/src/views/Boards.js
+A	web-app/src/views/DataSources.js
+A	web-app/src/views/EditBoard.js
+A	web-app/src/views/EditDataSource.js
+A	web-app/src/views/Overview.js
+A	web-app/src/views/Test.js
+A	web-app/src/views/ViewBoard.js
+
+229a4b5;Dev
+M	web-app/package-lock.json
+M	web-app/package.json
+M	web-app/src/App.css
+M	web-app/src/App.js
+M	web-app/src/pages/EditDataSource.js
+A	web-app/src/pages/Test.js
+M	web-app/src/pages/Users.js
+
+40ac755;Dev
+M	pom.xml
+A	src/main/java/com/shzlw/poli/dao/UserDao.java
+A	src/main/java/com/shzlw/poli/model/Column.java
+A	src/main/java/com/shzlw/poli/model/Dashboard.java
+A	src/main/java/com/shzlw/poli/model/QueryParameter.java
+A	src/main/java/com/shzlw/poli/model/User.java
+A	src/main/java/com/shzlw/poli/model/Widget.java
+A	src/main/java/com/shzlw/poli/model/filter/DatePicker.java
+A	src/main/java/com/shzlw/poli/model/widget/Card.java
+A	src/main/java/com/shzlw/poli/model/widget/Table.java
+A	src/main/java/com/shzlw/poli/service/UserService.java
+M	src/main/resources/logback-spring.xml
+M	web-app/package-lock.json
+M	web-app/package.json
+M	web-app/public/index.html
+M	web-app/src/App.js
+A	web-app/src/api/DataSourceService.js
+A	web-app/src/pages/Dashboards.js
+M	web-app/src/pages/DataSources.js
+M	web-app/src/pages/EditDataSource.js
+R071	web-app/src/pages/Workbooks.js	web-app/src/pages/Users.js
+
+0ab89eb;Dev
+A	src/main/java/com/shzlw/poli/dao/JdbcDataSourceDao.java
+A	src/main/java/com/shzlw/poli/model/JdbcDataSource.java
+A	src/main/java/com/shzlw/poli/service/JdbcDataSourceService.java
+M	src/main/resources/application.properties
+D	src/main/resources/static/css/app.cec64c23.css
+D	src/main/resources/static/css/chunk-vendors.695a8160.css
+D	src/main/resources/static/index.html
+D	src/main/resources/static/js/app.8b1c78f1.js
+D	src/main/resources/static/js/app.8b1c78f1.js.map
+D	src/main/resources/static/js/chunk-vendors.5fed8bb9.js
+D	src/main/resources/static/js/chunk-vendors.5fed8bb9.js.map
+A	web-app/.gitignore
+A	web-app/README.md
+A	web-app/package-lock.json
+A	web-app/package.json
+A	web-app/public/favicon.ico
+A	web-app/public/index.html
+A	web-app/public/manifest.json
+A	web-app/src/App.css
+A	web-app/src/App.js
+A	web-app/src/App.test.js
+A	web-app/src/index.js
+A	web-app/src/pages/DataSources.js
+A	web-app/src/pages/EditDataSource.js
+A	web-app/src/pages/Workbooks.js
+D	web/.env.production
+D	web/README.md
+D	web/babel.config.js
+D	web/package.json
+D	web/public/favicon.ico
+D	web/public/index.html
+
+7db1a85;Init
+A	.gitattributes
+A	.gitignore
+A	.travis.yml
+A	LICENSE-3RD-PARTY
+M	README.md
+A	build-start.bat
+A	build.bat
+A	build.sh
+A	config/poli.properties
+A	launch.sh
+A	pom.xml
+A	run
+A	src/main/java/com/shzlw/poli/AppConfig.java
+A	src/main/java/com/shzlw/poli/Application.java
+A	src/main/resources/application.properties
+A	src/main/resources/logback-spring.xml
+A	src/main/resources/static/css/app.cec64c23.css
+A	src/main/resources/static/css/chunk-vendors.695a8160.css
+A	src/main/resources/static/favicon.ico
+A	src/main/resources/static/index.html
+A	src/main/resources/static/js/app.8b1c78f1.js
+A	src/main/resources/static/js/app.8b1c78f1.js.map
+A	src/main/resources/static/js/chunk-vendors.5fed8bb9.js
+A	src/main/resources/static/js/chunk-vendors.5fed8bb9.js.map
+A	src/main/resources/static/login.html
+A	start.bat
+A	web/.env.production
+A	web/README.md
+A	web/babel.config.js
+A	web/package.json
+A	web/public/favicon.ico
+A	web/public/index.html
+
+5230a7f;Initial commit
+A	LICENSE
+A	README.md

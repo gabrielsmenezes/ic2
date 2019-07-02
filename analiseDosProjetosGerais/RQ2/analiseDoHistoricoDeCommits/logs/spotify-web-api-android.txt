@@ -1,0 +1,863 @@
+cdf0cd4;Bump version to 0.4.1
+M	README.md
+M	gradle.properties
+
+ac9b499;Merge pull request #120 from mattiamaestrini/getTopTracks_fix
+45bdf10;Fix getTopTracks endpoint
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+c56187e;Bump version in README
+M	README.md
+
+7141716;Bump version to 0.4.0
+M	gradle.properties
+
+c74172b;Merge pull request #118 from novemberfiveco/master
+1dde297;Merge pull request #119 from kaaes/new_endpoints
+9b29bdc;Tests for new endpoints
+M	spotify-api/src/androidTest/java/kaaes/spotify/webapi/android/SpotifyServiceAndroidTest.java
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Followers.java
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Recommendations.java
+
+ce19216;Add new endpoints
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/AudioFeaturesTrack.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/AudioFeaturesTracks.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Recommendations.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Seed.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/SeedsGenres.java
+M	spotify-api/src/test/java/kaaes/spotify/webapi/android/ModelPopulator.java
+M	spotify-api/src/test/java/kaaes/spotify/webapi/android/ParcelableModelsTest.java
+
+4e007ae;fixed replaceTracksInPlaylist
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+cd4b14d;Bump version to 0.3.0
+M	README.md
+M	gradle.properties
+
+170bc4d;Merge pull request #114 from kaaes/fix_109
+d064e1b;Fixes #109
+R070	spotify-api/src/androidTest/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java	spotify-api/src/androidTest/java/kaaes/spotify/webapi/android/SpotifyServiceAndroidTest.java
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+d3e3634;Merge pull request #108 from kaaes/parcelables_utils
+02c6b1b;Merge pull request #111 from mattiamaestrini/fix_spotify_error
+fdae614;Prevent crash when response is malformed
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyError.java
+
+2925eb2;Test all models populated with random data
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Album.java
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Playlist.java
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistSimple.java
+A	spotify-api/src/test/java/kaaes/spotify/webapi/android/ModelAssert.java
+A	spotify-api/src/test/java/kaaes/spotify/webapi/android/ModelPopulator.java
+M	spotify-api/src/test/java/kaaes/spotify/webapi/android/ParcelableModelsTest.java
+
+3e9bd9c;Merge pull request #107 from hammar83/Playlist-parcel
+50b7533;Merge pull request #103 from kaaes/end_to_end_tests
+a05c896;Parcelable improvements.
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistBase.java
+
+d3471fa;Null check
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistBase.java
+
+39c8429;Implemented missing Parcelable methods to the abstract PlaylistBase class. With this implemented the derived classes can be written and restored from a Parcel.
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Playlist.java
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistBase.java
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistSimple.java
+
+8b952fd;Add support for end-to-end tests
+M	spotify-api/build.gradle
+A	spotify-api/src/androidTest/AndroidManifest.xml
+A	spotify-api/src/androidTest/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+fcf92ee;Merge pull request #102 from kaaes/me_playlists
+4902b4a;Add support for /me/playlists endpoint
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	spotify-api/src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+256636d;Fix version number in dependencies
+M	README.md
+
+92ed683;Merge pull request #101 from kaaes/0.2_bump
+1428be2;Update README with maven repo info
+M	README.md
+
+8e7838c;Bump the version to 2.0, cleanup
+M	build.gradle
+M	gradle.properties
+M	release.gradle
+M	sample-search/build.gradle
+M	spotify-api/build.gradle
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+D	spotify-api/src/test/resources/org.robolectric.Config.properties
+A	spotify-api/src/test/resources/robolectric.properties
+
+a08e0b7;Merge pull request #100 from kaaes/demo_app
+187a418;Bunch of tweaks
+M	sample-search/build.gradle
+D	sample-search/proguard-rules.pro
+D	sample-search/src/androidTest/java/com/spotify/sdk/android/ApplicationTest.java
+M	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/CredentialsHandler.java
+M	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/LoginActivity.java
+M	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/SearchPager.java
+M	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/SearchResultsAdapter.java
+D	sample-search/src/main/res/drawable/item_selector.xml
+M	sample-search/src/main/res/mipmap-hdpi/ic_launcher.png
+M	sample-search/src/main/res/mipmap-mdpi/ic_launcher.png
+M	sample-search/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	sample-search/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	sample-search/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	sample-search/src/main/res/values/strings.xml
+D	sample-search/src/test/java/com/spotify/sdk/android/ExampleUnitTest.java
+
+78370f1;Merge pull request #50 from jitpack-io/master
+837a501;Replaced tab with spaces
+M	build.gradle
+
+858a77a;Added maven plugin
+M	build.gradle
+M	spotify-api/build.gradle
+
+d8acf71;Tweaks and build fixes
+M	.travis.yml
+M	sample-search/build.gradle
+M	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/MainActivity.java
+M	spotify-api/build.gradle
+
+4da6d9e;Rename the module and the package
+D	app/libs/spotify-auth-1.0.0-beta11.aar
+R100	app/.gitignore	sample-search/.gitignore
+R076	app/build.gradle	sample-search/build.gradle
+A	sample-search/libs/spotify-auth-1.0.0-beta12.aar
+R100	app/proguard-rules.pro	sample-search/proguard-rules.pro
+R100	app/src/androidTest/java/com/spotify/sdk/android/ApplicationTest.java	sample-search/src/androidTest/java/com/spotify/sdk/android/ApplicationTest.java
+R095	app/src/main/AndroidManifest.xml	sample-search/src/main/AndroidManifest.xml
+R097	app/src/main/java/com/spotify/sdk/android/CredentialsHandler.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/CredentialsHandler.java
+R098	app/src/main/java/com/spotify/sdk/android/LoginActivity.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/LoginActivity.java
+R098	app/src/main/java/com/spotify/sdk/android/MainActivity.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/MainActivity.java
+R084	app/src/main/java/com/spotify/sdk/android/Player.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/Player.java
+R094	app/src/main/java/com/spotify/sdk/android/PlayerService.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/PlayerService.java
+R098	app/src/main/java/com/spotify/sdk/android/PreviewPlayer.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/PreviewPlayer.java
+R097	app/src/main/java/com/spotify/sdk/android/ResultListScrollListener.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/ResultListScrollListener.java
+R092	app/src/main/java/com/spotify/sdk/android/Search.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/Search.java
+R097	app/src/main/java/com/spotify/sdk/android/SearchPager.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/SearchPager.java
+R098	app/src/main/java/com/spotify/sdk/android/SearchPresenter.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/SearchPresenter.java
+R098	app/src/main/java/com/spotify/sdk/android/SearchResultsAdapter.java	sample-search/src/main/java/kaaes/spotify/webapi/samplesearch/SearchResultsAdapter.java
+R100	app/src/main/res/drawable/item_selector.xml	sample-search/src/main/res/drawable/item_selector.xml
+R093	app/src/main/res/layout/activity_login.xml	sample-search/src/main/res/layout/activity_login.xml
+R094	app/src/main/res/layout/activity_main.xml	sample-search/src/main/res/layout/activity_main.xml
+R100	app/src/main/res/layout/list_item.xml	sample-search/src/main/res/layout/list_item.xml
+R100	app/src/main/res/mipmap-hdpi/ic_launcher.png	sample-search/src/main/res/mipmap-hdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-mdpi/ic_launcher.png	sample-search/src/main/res/mipmap-mdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-xhdpi/ic_launcher.png	sample-search/src/main/res/mipmap-xhdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-xxhdpi/ic_launcher.png	sample-search/src/main/res/mipmap-xxhdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png	sample-search/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+R100	app/src/main/res/values-w820dp/dimens.xml	sample-search/src/main/res/values-w820dp/dimens.xml
+R100	app/src/main/res/values/colors.xml	sample-search/src/main/res/values/colors.xml
+R100	app/src/main/res/values/dimens.xml	sample-search/src/main/res/values/dimens.xml
+R087	app/src/main/res/values/strings.xml	sample-search/src/main/res/values/strings.xml
+R100	app/src/main/res/values/styles.xml	sample-search/src/main/res/values/styles.xml
+R100	app/src/test/java/com/spotify/sdk/android/ExampleUnitTest.java	sample-search/src/test/java/com/spotify/sdk/android/ExampleUnitTest.java
+M	settings.gradle
+
+a98154e;Clear focus after search & add loading buffer
+M	app/src/main/java/com/spotify/sdk/android/MainActivity.java
+M	app/src/main/java/com/spotify/sdk/android/ResultListScrollListener.java
+M	app/src/main/java/com/spotify/sdk/android/SearchPresenter.java
+
+39204cf;Use MVP
+M	app/src/main/java/com/spotify/sdk/android/MainActivity.java
+A	app/src/main/java/com/spotify/sdk/android/Search.java
+A	app/src/main/java/com/spotify/sdk/android/SearchPager.java
+A	app/src/main/java/com/spotify/sdk/android/SearchPresenter.java
+M	app/src/main/java/com/spotify/sdk/android/SearchResultsAdapter.java
+
+26f95bf;Load more tracks when scrolling
+M	app/src/main/java/com/spotify/sdk/android/MainActivity.java
+A	app/src/main/java/com/spotify/sdk/android/ResultListScrollListener.java
+M	app/src/main/java/com/spotify/sdk/android/SearchResultsAdapter.java
+
+0037d41;Fix the version in the documentation
+M	README.md
+
+9df5689;Merge pull request #99 from mattiamaestrini/saved_albums
+d7f4f75;Extract player from the Service
+M	app/src/main/java/com/spotify/sdk/android/MainActivity.java
+A	app/src/main/java/com/spotify/sdk/android/Player.java
+M	app/src/main/java/com/spotify/sdk/android/PlayerService.java
+A	app/src/main/java/com/spotify/sdk/android/PreviewPlayer.java
+
+5085c13;Add demo app
+A	app/.gitignore
+A	app/build.gradle
+A	app/libs/spotify-auth-1.0.0-beta11.aar
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/com/spotify/sdk/android/ApplicationTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/spotify/sdk/android/CredentialsHandler.java
+A	app/src/main/java/com/spotify/sdk/android/LoginActivity.java
+A	app/src/main/java/com/spotify/sdk/android/MainActivity.java
+A	app/src/main/java/com/spotify/sdk/android/PlayerService.java
+A	app/src/main/java/com/spotify/sdk/android/SearchResultsAdapter.java
+A	app/src/main/res/drawable/item_selector.xml
+A	app/src/main/res/layout/activity_login.xml
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/list_item.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/test/java/com/spotify/sdk/android/ExampleUnitTest.java
+M	settings.gradle
+
+55376d1;Add support for User's Saved Albums
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/SavedAlbum.java
+
+95c5ef0;Merge pull request #91 from kaaes/jperez/add-get-followed-artists
+2ed106e;Merge pull request #92 from kaaes/travis_container_arch
+809750a;Merge pull request #97 from mattiamaestrini/fixtures
+c25730e;Fix error-cannot-add-tracks.json syntax
+M	spotify-api/src/test/resources/fixtures/error-cannot-add-tracks.json
+
+d579e7f;Merge pull request #86 from mattiamaestrini/spotifyservice_cleanup
+2b5433d;Move to container-based infra on Travis
+M	.travis.yml
+
+9105caf;Add support for Get User's Followed Artists endpoint
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/ArtistsCursorPager.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Cursor.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/CursorPager.java
+M	spotify-api/src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+A	spotify-api/src/test/resources/fixtures/followed-artists.json
+
+e904b34;Merge pull request #90 from mattiamaestrini/tracksimple_parcelable_fix
+e4ec369;Fixed TrackSimple parcelable
+M	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/TrackSimple.java
+
+4b8a983;Merge branch 'master' into spotifyservice_cleanup
+9f3d21c;Merge branch 'mattiamaestrini-tracksimple_explicit'
+82b759b;Merge branch 'tracksimple_explicit' of https://github.com/mattiamaestrini/spotify-web-api-android into mattiamaestrini-tracksimple_explicit
+d6b0ef9;Merge branch 'mattiamaestrini-get_artist_top_track'
+1a0db60;Merge branch 'get_artist_top_track' of https://github.com/mattiamaestrini/spotify-web-api-android into mattiamaestrini-get_artist_top_track
+9cc1425;Merge pull request #88 from d-kunin/master
+c2f016a;Separate module for library. Parcelable models
+M	.utility/publish-javadoc.sh
+M	README.md
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+A	release.gradle
+A	settings.gradle
+A	spotify-api/build.gradle
+R100	src/main/AndroidManifest.xml	spotify-api/src/main/AndroidManifest.xml
+R100	src/main/java/kaaes/spotify/webapi/android/SpotifyApi.java	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyApi.java
+R100	src/main/java/kaaes/spotify/webapi/android/SpotifyCallback.java	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyCallback.java
+R100	src/main/java/kaaes/spotify/webapi/android/SpotifyError.java	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyError.java
+R100	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java	spotify-api/src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+R100	src/main/java/kaaes/spotify/webapi/android/annotations/DELETEWITHBODY.java	spotify-api/src/main/java/kaaes/spotify/webapi/android/annotations/DELETEWITHBODY.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Album.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/AlbumSimple.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Albums.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/AlbumsPager.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Artist.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/ArtistSimple.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Artists.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/ArtistsPager.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/CategoriesPager.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Category.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Copyright.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/ErrorDetails.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/ErrorResponse.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/FeaturedPlaylists.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Followers.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Image.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/LinkedTrack.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/NewReleases.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Pager.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Playlist.java
+R087	src/main/java/kaaes/spotify/webapi/android/models/PlaylistBase.java	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistBase.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistFollowPrivacy.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistSimple.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistTrack.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistTracksInformation.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/PlaylistsPager.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Result.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/SavedTrack.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/SnapshotId.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Track.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/TrackSimple.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/TrackToRemove.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/TrackToRemoveWithPosition.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/Tracks.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/TracksPager.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/TracksToRemove.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/TracksToRemoveWithPosition.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/UserPrivate.java
+A	spotify-api/src/main/java/kaaes/spotify/webapi/android/models/UserPublic.java
+A	spotify-api/src/test/java/kaaes/spotify/webapi/android/ParcelableModelsTest.java
+R099	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java	spotify-api/src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+R085	src/test/java/kaaes/spotify/webapi/android/TestUtils.java	spotify-api/src/test/java/kaaes/spotify/webapi/android/TestUtils.java
+R100	src/test/fixtures/album.json	spotify-api/src/test/resources/fixtures/album.json
+R100	src/test/fixtures/albums-none-found.json	spotify-api/src/test/resources/fixtures/albums-none-found.json
+R100	src/test/fixtures/albums.json	spotify-api/src/test/resources/fixtures/albums.json
+R100	src/test/fixtures/application-authentication-token.json	spotify-api/src/test/resources/fixtures/application-authentication-token.json
+R100	src/test/fixtures/artist-album.json	spotify-api/src/test/resources/fixtures/artist-album.json
+R100	src/test/fixtures/artist-related-artists.json	spotify-api/src/test/resources/fixtures/artist-related-artists.json
+R100	src/test/fixtures/artist.json	spotify-api/src/test/resources/fixtures/artist.json
+R100	src/test/fixtures/artists.json	spotify-api/src/test/resources/fixtures/artists.json
+R100	src/test/fixtures/auth-invalid-client.json	spotify-api/src/test/resources/fixtures/auth-invalid-client.json
+R100	src/test/fixtures/auth-refreshtoken.json	spotify-api/src/test/resources/fixtures/auth-refreshtoken.json
+R100	src/test/fixtures/auth-tokens.json	spotify-api/src/test/resources/fixtures/auth-tokens.json
+R100	src/test/fixtures/category-playlist.json	spotify-api/src/test/resources/fixtures/category-playlist.json
+R100	src/test/fixtures/category.json	spotify-api/src/test/resources/fixtures/category.json
+R100	src/test/fixtures/created-playlist.json	spotify-api/src/test/resources/fixtures/created-playlist.json
+R100	src/test/fixtures/current-user.json	spotify-api/src/test/resources/fixtures/current-user.json
+R100	src/test/fixtures/error-cannot-add-tracks.json	spotify-api/src/test/resources/fixtures/error-cannot-add-tracks.json
+R100	src/test/fixtures/error-unauthorized.json	spotify-api/src/test/resources/fixtures/error-unauthorized.json
+R100	src/test/fixtures/error_bad-field.json	spotify-api/src/test/resources/fixtures/error_bad-field.json
+R100	src/test/fixtures/error_id-not-found.json	spotify-api/src/test/resources/fixtures/error_id-not-found.json
+R100	src/test/fixtures/featured-playlists.json	spotify-api/src/test/resources/fixtures/featured-playlists.json
+R100	src/test/fixtures/follow_is_following_artists.json	spotify-api/src/test/resources/fixtures/follow_is_following_artists.json
+R100	src/test/fixtures/follow_is_following_users.json	spotify-api/src/test/resources/fixtures/follow_is_following_users.json
+R100	src/test/fixtures/get-categories.json	spotify-api/src/test/resources/fixtures/get-categories.json
+R100	src/test/fixtures/new-releases.json	spotify-api/src/test/resources/fixtures/new-releases.json
+R100	src/test/fixtures/playlist-followers-contains.json	spotify-api/src/test/resources/fixtures/playlist-followers-contains.json
+R100	src/test/fixtures/playlist-response.json	spotify-api/src/test/resources/fixtures/playlist-response.json
+R100	src/test/fixtures/playlist-tracks.json	spotify-api/src/test/resources/fixtures/playlist-tracks.json
+R100	src/test/fixtures/search-album.json	spotify-api/src/test/resources/fixtures/search-album.json
+R100	src/test/fixtures/search-artist.json	spotify-api/src/test/resources/fixtures/search-artist.json
+R100	src/test/fixtures/search-playlist.json	spotify-api/src/test/resources/fixtures/search-playlist.json
+R100	src/test/fixtures/search-track.json	spotify-api/src/test/resources/fixtures/search-track.json
+R100	src/test/fixtures/snapshot-response.json	spotify-api/src/test/resources/fixtures/snapshot-response.json
+R100	src/test/fixtures/track.json	spotify-api/src/test/resources/fixtures/track.json
+R100	src/test/fixtures/tracks-for-artist.json	spotify-api/src/test/resources/fixtures/tracks-for-artist.json
+R100	src/test/fixtures/tracks.json	spotify-api/src/test/resources/fixtures/tracks.json
+R100	src/test/fixtures/user-playlists.json	spotify-api/src/test/resources/fixtures/user-playlists.json
+R100	src/test/fixtures/user.json	spotify-api/src/test/resources/fixtures/user.json
+A	spotify-api/src/test/resources/org.robolectric.Config.properties
+D	src/main/java/kaaes/spotify/webapi/android/models/Album.java
+D	src/main/java/kaaes/spotify/webapi/android/models/AlbumSimple.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Albums.java
+D	src/main/java/kaaes/spotify/webapi/android/models/AlbumsPager.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Artist.java
+D	src/main/java/kaaes/spotify/webapi/android/models/ArtistSimple.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Artists.java
+D	src/main/java/kaaes/spotify/webapi/android/models/ArtistsPager.java
+D	src/main/java/kaaes/spotify/webapi/android/models/CategoriesPager.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Category.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Copyright.java
+D	src/main/java/kaaes/spotify/webapi/android/models/ErrorDetails.java
+D	src/main/java/kaaes/spotify/webapi/android/models/ErrorResponse.java
+D	src/main/java/kaaes/spotify/webapi/android/models/FeaturedPlaylists.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Followers.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Image.java
+D	src/main/java/kaaes/spotify/webapi/android/models/LinkedTrack.java
+D	src/main/java/kaaes/spotify/webapi/android/models/NewReleases.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Pager.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Playlist.java
+D	src/main/java/kaaes/spotify/webapi/android/models/PlaylistFollowPrivacy.java
+D	src/main/java/kaaes/spotify/webapi/android/models/PlaylistSimple.java
+D	src/main/java/kaaes/spotify/webapi/android/models/PlaylistTrack.java
+D	src/main/java/kaaes/spotify/webapi/android/models/PlaylistTracksInformation.java
+D	src/main/java/kaaes/spotify/webapi/android/models/PlaylistsPager.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Result.java
+D	src/main/java/kaaes/spotify/webapi/android/models/SavedTrack.java
+D	src/main/java/kaaes/spotify/webapi/android/models/SnapshotId.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Track.java
+D	src/main/java/kaaes/spotify/webapi/android/models/TrackSimple.java
+D	src/main/java/kaaes/spotify/webapi/android/models/TrackToRemove.java
+D	src/main/java/kaaes/spotify/webapi/android/models/TrackToRemoveWithPosition.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Tracks.java
+D	src/main/java/kaaes/spotify/webapi/android/models/TracksPager.java
+D	src/main/java/kaaes/spotify/webapi/android/models/TracksToRemove.java
+D	src/main/java/kaaes/spotify/webapi/android/models/TracksToRemoveWithPosition.java
+D	src/main/java/kaaes/spotify/webapi/android/models/UserPrivate.java
+D	src/main/java/kaaes/spotify/webapi/android/models/UserPublic.java
+
+625c345;Merge pull request #84 from itsHarryEng/patch-1
+0d0cfd3;SpotifyService cleanup
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+aae971e;Added missing interface fields 'FIELDS' and 'TIMESTAMP'
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+a145496;Remove redundant modifier 'public' from interface methods
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+c026fa6;Removed redundant modifier 'public static final' from interface fields
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+b847c3b;Changed explicit in TrackSimple from boolean to Boolean for empty response
+M	src/main/java/kaaes/spotify/webapi/android/models/TrackSimple.java
+
+6ebc2dd;Update README.md
+M	README.md
+
+5eeabfb;Fixed getArtistTopTrack endpoint
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+4990447;Merge pull request #75 from kaaes/main_thread_executor
+cac0005;Merge pull request #71 from mattiamaestrini/user
+763830f;Updated User models to reflect the naming convention in the Web API  - Unified UserPublic and UserSimple  - Renamed User to UserPrivate
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/main/java/kaaes/spotify/webapi/android/models/PlaylistBase.java
+M	src/main/java/kaaes/spotify/webapi/android/models/PlaylistTrack.java
+R053	src/main/java/kaaes/spotify/webapi/android/models/User.java	src/main/java/kaaes/spotify/webapi/android/models/UserPrivate.java
+M	src/main/java/kaaes/spotify/webapi/android/models/UserPublic.java
+D	src/main/java/kaaes/spotify/webapi/android/models/UserSimple.java
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+ebe185e;Use main thread executor for callbacks by default
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyApi.java
+
+1b42b99;Merge pull request #73 from mattiamaestrini/jacoco_fix
+35b915c;Reverted Jacoco configuration only to be executed for debug builds
+M	build.gradle
+
+b30d70e;Fixed getUser  - fixed incorrect endpoint  - changed return model from User to UserPublic
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+4a54831;Created UserPublic model
+A	src/main/java/kaaes/spotify/webapi/android/models/UserPublic.java
+
+c20dfaf;Added birthdate to User
+M	src/main/java/kaaes/spotify/webapi/android/models/User.java
+
+825acdc;Merge pull request #70 from mattiamaestrini/playlist_snapshot_id
+a6e71bf;Moved snapshot_id from Playlist to PlaylistBase
+M	src/main/java/kaaes/spotify/webapi/android/models/Playlist.java
+M	src/main/java/kaaes/spotify/webapi/android/models/PlaylistBase.java
+
+b0a4c2d;Merge pull request #68 from kaaes/documentation_fix
+1e91f5e;Merge pull request #62 from mattiamaestrini/playlist-track-is-local
+b583932;Change the documentation to better describe the process for aar
+M	README.md
+
+76502cf;Merge pull request #65 from d-kunin/migrate-to-android-project
+1cc1630;update README.MD
+M	README.md
+
+29656fc;Merge pull request #63 from d-kunin/migrate-to-android-project
+9115699;Fixed generateJavadoc task
+M	.travis.yml
+M	build.gradle
+
+ac6c92b;Change travis lang to android
+M	.travis.yml
+
+175bbd8;Turn of doc publishing
+M	.travis.yml
+
+4e395de;Add sdk-manager-plugin
+M	build.gradle
+
+27ec3a9;Fixed jacoco reports
+M	build.gradle
+
+33a33fc;Migration to andoid library project
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+A	src/main/AndroidManifest.xml
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+3243955;Added is_local to PlaylistTrack
+M	src/main/java/kaaes/spotify/webapi/android/models/PlaylistTrack.java
+
+17d5491;Merge pull request #59 from kaaes/executor_for_callabacks
+8564ac3;Use caller thread executor for callbacks by default
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyApi.java
+
+5ffb6a6;Merge pull request #57 from d-kunin/master
+f39a435;Declare versioning policy in README.md
+M	README.md
+
+a8d155c;Merge branch 'mattiamaestrini-master'
+8838de9;Merge branch 'master' of https://github.com/mattiamaestrini/spotify-web-api-android into mattiamaestrini-master
+fad93bc;Merge pull request #56 from mattiamaestrini/add_options_getPlaylist
+f4d51ae;Merge pull request #54 from d-kunin/master
+d2bd634;Added optional parameters to getPlaylist
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+8e541f5;Removed setClient in RestAdapter's initialization
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyApi.java
+
+4269d09;improvement: add possibility to use custom Executors for http and callbacks.
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyApi.java
+
+b6bab8c;Add info about obtaining access tokens to README
+M	README.md
+
+3870677;Merge pull request #49 from kaaes/kasia/fix_44
+8a163ae;Fixes #44
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+fd2557f;Merge branch 'sregg-fix_artist_toptracks_related'
+7be4378;Merge branch 'fix_artist_toptracks_related' of https://github.com/sregg/spotify-web-api-android into sregg-fix_artist_toptracks_related
+319b133;removed starred endpoint
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+D	src/test/fixtures/starred-tracks.json
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+4644a29;Fixes #43
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+c64b4f2;Fix javadoc errors
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyCallback.java
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyError.java
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Pager.java
+
+6841c4f;Merge pull request #41 from kaaes/add_spotify_error
+2f26bb8;Fix typos in docs
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyCallback.java
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyError.java
+
+3a8ae09;Add info about errors to README
+M	README.md
+
+2a2cf15;Pass original error as a cause and make properties final
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyError.java
+
+667e7ba;Add more descriptive error objects
+A	src/main/java/kaaes/spotify/webapi/android/SpotifyCallback.java
+A	src/main/java/kaaes/spotify/webapi/android/SpotifyError.java
+A	src/main/java/kaaes/spotify/webapi/android/models/ErrorDetails.java
+A	src/main/java/kaaes/spotify/webapi/android/models/ErrorResponse.java
+A	src/test/fixtures/error-unauthorized.json
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+M	src/test/java/kaaes/spotify/webapi/android/TestUtils.java
+
+375ea81;Added test case for getRelatedArtists
+A	src/test/fixtures/artist-related-artists.json
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+dbc8475;Fixed getRelatedArtists (return type is Artists not Pager<Artist>
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+3101909;Reverted tracks-for-artist.json for real...
+M	src/test/fixtures/tracks-for-artist.json
+
+dc84e34;Reverted tracks-for-artist.json
+M	src/test/fixtures/tracks-for-artist.json
+
+b7e5b21;Fixed getArtistTopTrack + added test for getArtistTopTrack and getStarredTracks
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/test/fixtures/starred-tracks.json
+M	src/test/fixtures/tracks-for-artist.json
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+d1c6c1f;Starred Tracks
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+d1a885e;MERGE from upstream
+2994aa0;Merge pull request #34 from JohnnyCrazy/reorder-patch
+c72af4d;Fixed wrong method-name inside tests
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+f1b4c19;Updated documention
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+153697c;Added functionality for track reordering in playlists
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+2a3866e;Add more tests
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+7bb1c92;Merge pull request #31 from kaaes/add-track-relinking
+3e5026c;Add support for linked tracks
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/main/java/kaaes/spotify/webapi/android/models/LinkedTrack.java
+M	src/main/java/kaaes/spotify/webapi/android/models/TrackSimple.java
+
+a240d7f;Add missing documentation
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+e7faa4a;Make publish script executable
+M	.utility/publish-javadoc.sh
+
+1ffc0a5;Merge pull request #28 from kaaes/javadoc
+5a42292;Merge pull request #29 from kaaes/refactor-change-playlist-details
+b033db6;Merge pull request #30 from kaaes/update-documentation-help
+5d7cc15;Add Help section in documentation
+M	README.md
+
+8ea4c15;Refactor Change Playlist Details endpoint
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Result.java
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+d212a31;Use encrypted Github token to push Javadoc to GH Pages on merge to master branch
+M	.gitignore
+M	.travis.yml
+A	.utility/publish-javadoc.sh
+M	build.gradle
+
+dc46206;Merge pull request #27 from kaaes/query_map_params
+ca906a2;Replace optional parameters with @QueryMap
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+8415c38;Merge pull request #26 from kaaes/add-body-maps
+7054d5a;Add Javadoc generation
+M	.gitignore
+M	build.gradle
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+4a1858f;Fix Add to Playlist endpoint
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/test/fixtures/snapshot-response.json
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+d0c0da0;Merge pull request #25 from kaaes/playlist-create-fix
+bdce411;Playlist Create method accepts body parameter
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+2d7f2b5;Merge pull request #24 from kaaes/add-categories-bindings
+9bde7d2;Add language bindings for category endpoints
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/main/java/kaaes/spotify/webapi/android/models/CategoriesPager.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Category.java
+A	src/test/fixtures/category-playlist.json
+A	src/test/fixtures/category.json
+A	src/test/fixtures/get-categories.json
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+d94eb96;Box collaborative boolean since it can be null
+M	src/main/java/kaaes/spotify/webapi/android/models/PlaylistBase.java
+
+f1ea1a2;Vertical formatting
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+27afd00;Merge pull request #23 from kaaes/add-playlist-followers-contains
+c495de9;Add bindings for Playlist Followers Contains endpoint
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/test/fixtures/playlist-followers-contains.json
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+51a6e14;Starred Playlist
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+a9f1b8a;Update README with dependency info
+M	README.md
+
+112980b;Update build file with new dependencies
+M	build.gradle
+
+94f45b8;Merge pull request #19 from JMPerez/remove-todo-return-result
+57b2db4;Define default Return class and use it
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Result.java
+
+54e18f0;Merge pull request #18 from JMPerez/add-follow-unfollow-playlists
+1fc1af2;Add functions to follow and unfollow playlists
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/main/java/kaaes/spotify/webapi/android/models/PlaylistFollowPrivacy.java
+
+6493a14;Allow passing album_type and market params to getArtistAlbums
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+da8535d;Change AlbumsPager to use SimpleAlbum, fixes #12
+M	src/main/java/kaaes/spotify/webapi/android/models/AlbumsPager.java
+
+93cd463;Cleanup
+M	build.gradle
+M	src/main/java/kaaes/spotify/webapi/android/models/Artist.java
+M	src/main/java/kaaes/spotify/webapi/android/models/FeaturedPlaylists.java
+D	src/main/java/kaaes/spotify/webapi/android/models/Playlists.java
+M	src/main/java/kaaes/spotify/webapi/android/models/SnapshotId.java
+M	src/main/java/kaaes/spotify/webapi/android/models/TrackToRemove.java
+M	src/main/java/kaaes/spotify/webapi/android/models/User.java
+M	src/test/java/kaaes/spotify/webapi/android/TestUtils.java
+
+355b168;Make PlaylistPager use PlaylistSimple + tests
+M	src/main/java/kaaes/spotify/webapi/android/models/PlaylistsPager.java
+A	src/test/fixtures/search-playlist.json
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+2b6d8b2;Add test coverage plugin
+M	build.gradle
+
+2136927;Merge pull request #11 from kaaes/track_search_fix
+93ae9cb;Fixes #10
+M	src/main/java/kaaes/spotify/webapi/android/models/Album.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Track.java
+M	src/main/java/kaaes/spotify/webapi/android/models/TracksPager.java
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+aeb5b43;Merge pull request #9 from kaaes/more_tests
+b32c1f7;Pass model class/type when parsing JSON in tests
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+M	src/test/java/kaaes/spotify/webapi/android/TestUtils.java
+
+6079ffa;Add base class for Playlist and PlaylistSimple
+M	build.gradle
+M	src/main/java/kaaes/spotify/webapi/android/models/Playlist.java
+A	src/main/java/kaaes/spotify/webapi/android/models/PlaylistBase.java
+M	src/main/java/kaaes/spotify/webapi/android/models/PlaylistSimple.java
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+6841f33;Merge pull request #8 from kaaes/add_travis
+4cbc540;Add status badge to readme
+M	README.md
+
+fbf9dc7;Add travis.yml file
+A	.travis.yml
+
+1cfd06e;Merge pull request #7 from JMPerez/add-follow-unfollow
+f52d739;Use Object instead of Boolean for empty responses
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+e8a93ee;Add method to follow, unfollow and check following state
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/test/fixtures/follow_is_following_artists.json
+A	src/test/fixtures/follow_is_following_users.json
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+
+541007d;Merge pull request #6 from JMPerez/add-playlist-missing-endpoints
+0852aea;Add Playlist missing endpoints
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/main/java/kaaes/spotify/webapi/android/annotations/DELETEWITHBODY.java
+A	src/main/java/kaaes/spotify/webapi/android/models/SnapshotId.java
+A	src/main/java/kaaes/spotify/webapi/android/models/TrackToRemove.java
+A	src/main/java/kaaes/spotify/webapi/android/models/TrackToRemoveWithPosition.java
+A	src/main/java/kaaes/spotify/webapi/android/models/TracksToRemove.java
+A	src/main/java/kaaes/spotify/webapi/android/models/TracksToRemoveWithPosition.java
+
+ba30de7;Merge pull request #5 from JMPerez/more-endpoints-tests
+eb44463;Add more endpoints and tests
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Album.java
+A	src/main/java/kaaes/spotify/webapi/android/models/AlbumsPager.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Artist.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Artists.java
+A	src/main/java/kaaes/spotify/webapi/android/models/ArtistsPager.java
+M	src/main/java/kaaes/spotify/webapi/android/models/FeaturedPlaylists.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Image.java
+M	src/main/java/kaaes/spotify/webapi/android/models/NewReleases.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Playlist.java
+A	src/main/java/kaaes/spotify/webapi/android/models/PlaylistSimple.java
+M	src/main/java/kaaes/spotify/webapi/android/models/PlaylistTrack.java
+A	src/main/java/kaaes/spotify/webapi/android/models/PlaylistTracksInformation.java
+A	src/main/java/kaaes/spotify/webapi/android/models/PlaylistsPager.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Track.java
+A	src/main/java/kaaes/spotify/webapi/android/models/TracksPager.java
+M	src/main/java/kaaes/spotify/webapi/android/models/User.java
+A	src/main/java/kaaes/spotify/webapi/android/models/UserSimple.java
+A	src/test/fixtures/albums-none-found.json
+A	src/test/fixtures/albums.json
+A	src/test/fixtures/application-authentication-token.json
+A	src/test/fixtures/artist-album.json
+A	src/test/fixtures/artist.json
+A	src/test/fixtures/artists.json
+A	src/test/fixtures/auth-invalid-client.json
+A	src/test/fixtures/auth-refreshtoken.json
+A	src/test/fixtures/auth-tokens.json
+A	src/test/fixtures/created-playlist.json
+A	src/test/fixtures/current-user.json
+A	src/test/fixtures/error-cannot-add-tracks.json
+A	src/test/fixtures/error_bad-field.json
+A	src/test/fixtures/error_id-not-found.json
+A	src/test/fixtures/featured-playlists.json
+A	src/test/fixtures/new-releases.json
+A	src/test/fixtures/playlist-response.json
+A	src/test/fixtures/playlist-tracks.json
+A	src/test/fixtures/search-album.json
+A	src/test/fixtures/search-artist.json
+A	src/test/fixtures/search-track.json
+M	src/test/fixtures/track.json
+A	src/test/fixtures/tracks-for-artist.json
+M	src/test/fixtures/tracks.json
+A	src/test/fixtures/user-playlists.json
+A	src/test/fixtures/user.json
+M	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+M	src/test/java/kaaes/spotify/webapi/android/TestUtils.java
+
+4d318a5;Merge pull request #4 from Beeo4/master
+7946840;Fix #1
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+
+940e2ca;Remove link to old version of jar from README
+M	README.md
+
+5d87c10;Add new models and a few tests
+M	build.gradle
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Album.java
+A	src/main/java/kaaes/spotify/webapi/android/models/AlbumSimple.java
+A	src/main/java/kaaes/spotify/webapi/android/models/ArtistSimple.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Track.java
+A	src/main/java/kaaes/spotify/webapi/android/models/TrackSimple.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Tracks.java
+A	src/test/fixtures/album.json
+A	src/test/fixtures/track.json
+A	src/test/fixtures/tracks.json
+A	src/test/java/kaaes/spotify/webapi/android/SpotifyServiceTest.java
+A	src/test/java/kaaes/spotify/webapi/android/TestUtils.java
+
+cd2d6eb;Add MIT license
+A	LICENSE
+
+ccc274b;Merge pull request #3 from JMPerez/add-browse-and-your-music
+161b523;Add wrapper functions for browse and your music - library
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/main/java/kaaes/spotify/webapi/android/models/FeaturedPlaylists.java
+A	src/main/java/kaaes/spotify/webapi/android/models/NewReleases.java
+A	src/main/java/kaaes/spotify/webapi/android/models/SavedTrack.java
+
+d9e2174;Merge pull request #2 from JMPerez/master
+75efeaf;Fixes #1
+M	src/main/java/kaaes/spotify/webapi/android/models/Playlist.java
+A	src/main/java/kaaes/spotify/webapi/android/models/PlaylistTrack.java
+
+09264bb;Fix indentation
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Album.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Artist.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Image.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Pager.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Playlist.java
+M	src/main/java/kaaes/spotify/webapi/android/models/Track.java
+M	src/main/java/kaaes/spotify/webapi/android/models/User.java
+
+536b4c0;Add README file
+M	README.md
+M	src/main/java/kaaes/spotify/webapi/android/SpotifyApi.java
+
+efb7487;Add project files
+A	.gitignore
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	src/main/java/kaaes/spotify/webapi/android/SpotifyApi.java
+A	src/main/java/kaaes/spotify/webapi/android/SpotifyService.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Album.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Albums.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Artist.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Copyright.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Followers.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Image.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Pager.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Playlist.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Playlists.java
+A	src/main/java/kaaes/spotify/webapi/android/models/Track.java
+A	src/main/java/kaaes/spotify/webapi/android/models/User.java
+
+ce6d039;Initial commit
+A	README.md

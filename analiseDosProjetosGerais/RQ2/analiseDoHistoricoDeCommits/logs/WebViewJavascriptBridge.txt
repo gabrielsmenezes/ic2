@@ -1,0 +1,116 @@
+151bac9;fix CustomWebChromeClient
+M	app/src/main/java/com/gzsll/webviewjavascriptbridge/MainActivity.java
+
+68df6e7;release 1.1.0
+M	.gitignore
+M	.idea/compiler.xml
+M	.idea/gradle.xml
+M	.idea/misc.xml
+M	.idea/modules.xml
+M	.idea/vcs.xml
+M	README.md
+M	app/build.gradle
+M	app/src/main/java/com/gzsll/webviewjavascriptbridge/MainActivity.java
+M	gradle.properties
+M	library/build.gradle
+A	library/src/main/java/com/gzsll/jsbridge/Logger.java
+D	library/src/main/java/com/gzsll/jsbridge/WVJBChromeClient.java
+M	library/src/main/java/com/gzsll/jsbridge/WVJBConstants.java
+M	library/src/main/java/com/gzsll/jsbridge/WVJBWebView.java
+M	library/src/main/java/com/gzsll/jsbridge/WVJBWebViewClient.java
+
+2afb2d3;update to release 1.0.1
+M	README.md
+M	build.gradle
+M	library/build.gradle
+
+03731ca;fix pattern error #2
+M	library/src/main/java/com/gzsll/jsbridge/WVJBWebView.java
+
+b7ac6a9;release 1.0.0 and upload to maven center
+M	.gitignore
+M	README.md
+M	app/src/main/java/com/gzsll/webviewjavascriptbridge/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	build.gradle
+M	library/build.gradle
+R091	library/src/androidTest/java/com/gzsll/bridge/ApplicationTest.java	library/src/androidTest/java/com/gzsll/jsbridge/ApplicationTest.java
+A	library/src/main/java/com/gzsll/jsbridge/WVJBChromeClient.java
+A	library/src/main/java/com/gzsll/jsbridge/WVJBConstants.java
+A	library/src/main/java/com/gzsll/jsbridge/WVJBMessage.java
+R078	library/src/main/java/com/gzsll/bridge/WVJBWebViewClient.java	library/src/main/java/com/gzsll/jsbridge/WVJBWebView.java
+A	library/src/main/java/com/gzsll/jsbridge/WVJBWebViewClient.java
+R090	library/src/test/java/com/gzsll/bridge/ExampleUnitTest.java	library/src/test/java/com/gzsll/jsbridge/ExampleUnitTest.java
+
+e5f9eda;fix unicode parse error
+M	build.gradle
+M	library/src/main/java/com/gzsll/bridge/WVJBWebViewClient.java
+
+9d15067;update gradle version
+M	build.gradle
+
+ab34028;fix loadurl not call on ui thread
+M	library/src/main/java/com/gzsll/bridge/WVJBWebViewClient.java
+
+bbe0cc6;add library module
+M	.idea/gradle.xml
+M	.idea/modules.xml
+M	app/build.gradle
+M	app/src/main/java/com/gzsll/webviewjavascriptbridge/MainActivity.java
+A	library/.gitignore
+A	library/build.gradle
+A	library/proguard-rules.pro
+A	library/src/androidTest/java/com/gzsll/bridge/ApplicationTest.java
+A	library/src/main/AndroidManifest.xml
+R100	app/src/main/assets/WebViewJavascriptBridge.js	library/src/main/assets/WebViewJavascriptBridge.js
+R099	app/src/main/java/com/gzsll/webviewjavascriptbridge/WVJBWebViewClient.java	library/src/main/java/com/gzsll/bridge/WVJBWebViewClient.java
+A	library/src/main/res/values/strings.xml
+A	library/src/test/java/com/gzsll/bridge/ExampleUnitTest.java
+M	settings.gradle
+
+ea4e76e;escape string for javascript input
+M	app/src/main/java/com/gzsll/webviewjavascriptbridge/WVJBWebViewClient.java
+
+7ad6d47;update readme
+M	README.md
+
+be7d0e8;init
+A	.gitignore
+A	.idea/.name
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/encodings.xml
+A	.idea/gradle.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/runConfigurations.xml
+A	.idea/vcs.xml
+A	README.md
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/com/gzsll/webviewjavascriptbridge/ApplicationTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/assets/ExampleApp.html
+A	app/src/main/assets/WebViewJavascriptBridge.js
+A	app/src/main/java/com/gzsll/webviewjavascriptbridge/MainActivity.java
+A	app/src/main/java/com/gzsll/webviewjavascriptbridge/WVJBWebViewClient.java
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/test/java/com/gzsll/webviewjavascriptbridge/ExampleUnitTest.java
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle

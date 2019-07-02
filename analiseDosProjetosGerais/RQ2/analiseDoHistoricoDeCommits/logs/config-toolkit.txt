@@ -1,0 +1,1330 @@
+f99984e;去掉主动exclude的guava依赖，让curator自动传递依赖
+M	README.md
+M	config-toolkit-demo/pom.xml
+M	config-toolkit/pom.xml
+
+add51a6;update doc
+M	README.md
+
+cd08c39;Fix for issue https://github.com/dangdangdotcom/config-toolkit/issues/29
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/simple/LocalCacheCase.java
+M	config-toolkit/pom.xml
+D	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ConfigNodeEventListener.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+
+fd5f0af;extract zk address to const
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/Const.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/InitialScript.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/FileConfigGroupTest.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/RefreshableBoxUseCase.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/annotation/ConfigCenter.java
+
+670b563;downgrade spring boot to 1.5.9
+M	config-toolkit-demo/pom.xml
+
+0da8db4;update doc to add docker image of config-face
+M	README.md
+
+9deb0fc;update doc
+M	README.md
+M	config-toolkit/pom.xml
+
+32986aa;release 3.3.0
+M	README.md
+M	config-toolkit-demo/pom.xml
+M	config-toolkit/pom.xml
+
+31792f2;remove dependency guava/apache commons
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/resources/property-group1.properties
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/FileConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/FileLocation.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/ContentTypes.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/PropertiesContentType.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/XmlContentType.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/ClasspathProtocol.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/HttpProtocol.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/Protocols.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/observer/AbstractSubject.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/proxy/RefreshableProxy.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/sugar/RefreshableBox.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ConfigGroupSourceFactory.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/util/Tuple.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ConfigLocalCache.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ConfigNodeEventListener.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigProfile.java
+
+474b263;simplify the structure
+D	config-common/.gitignore
+D	config-common/pom.xml
+D	config-common/src/main/java/com/dangdang/config/service/observer/AbstractSubject.java
+D	config-common/src/main/java/com/dangdang/config/service/observer/IObserver.java
+D	config-common/src/main/java/com/dangdang/config/service/observer/ISubject.java
+D	config-common/src/main/java/com/dangdang/config/service/proxy/RefreshableProxy.java
+D	config-common/src/test/java/com/dangdang/config/service/proxy/test/RefreshableProxyTest.java
+D	config-toolkit-parent/pom.xml
+D	config-zk-web/.gitignore
+D	config-zk-web/pom.xml
+D	config-zk-web/src/main/java/com/dangdang/config/business/INodeBusiness.java
+D	config-zk-web/src/main/java/com/dangdang/config/business/NodeBusiness.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/AuthService.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/IAuthService.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/INodeService.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/IRootNodeRecorder.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/NodeService.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/RootNodeRecorder.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/entity/PropertyItem.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/entity/PropertyItemVO.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/NodeAuthManagedBean.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/VersionManagedBean.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/AuthDao.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/BaseDao.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/IAuthDao.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/INodeDao.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/IPropertyDao.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/NodeDao.java
+D	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/PropertyDao.java
+D	config-zk-web/src/main/resources/applicationContext.xml
+D	config-zk-web/src/main/resources/config-zkdao.xml
+D	config-zk-web/src/main/resources/logback.xml
+D	config-zk-web/src/main/resources/zk.properties
+D	config-zk-web/src/main/webapp/WEB-INF/faces-config.xml
+D	config-zk-web/src/main/webapp/WEB-INF/web.xml
+D	config-zk-web/src/main/webapp/main.xhtml
+
+e595485;simplify the structure
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/FileConfigGroupTest.java
+M	config-toolkit-demo/src/main/resources/property-group1.properties
+M	config-toolkit-parent/pom.xml
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/observer/AbstractSubject.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/proxy/RefreshableProxy.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+M	pom.xml
+
+9a482f8;simplify the structure
+A	config-toolkit/src/main/java/com/dangdang/config/service/observer/AbstractSubject.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/observer/IObserver.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/observer/ISubject.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/proxy/RefreshableProxy.java
+
+61f4a00;upgrade spring boot to 2.0.0
+M	config-face/pom.xml
+
+47a5aeb;trim input
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+
+170c86a;update doc
+M	README.md
+
+6037702;comment for pull request #23
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/simple/ExampleBean.java
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/ConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ConfigGroupSourceFactory.java
+
+7f3d22f;Merge pull request #23 from shiqingshun/feature/springboot
+6f77e54;update doc
+M	README.md
+
+296cffe;update doc
+M	README.md
+
+90810f6;update doc
+M	README.md
+
+bab88af;update doc
+M	README.md
+
+0416556;update doc
+M	README.md
+
+6c4a989;update doc
+M	README.md
+
+67d252e;update doc
+M	README.md
+
+7425375;change log path
+M	config-face/src/main/resources/logback.xml
+
+a5840d0;fix issue null pointer before the first version created
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+
+90ca5c8;update jar name
+M	config-face/pom.xml
+
+1aab953;change log path
+M	config-face/src/main/resources/logback.xml
+
+8af7e19;hack for session timeout
+M	config-face/src/main/java/com/dangdang/config/face/config/WebSecurityConfig.java
+M	config-face/src/main/java/com/dangdang/config/face/controller/LoginController.java
+M	config-face/src/main/java/com/dangdang/config/face/service/INodeService.java
+M	config-face/src/main/java/com/dangdang/config/face/service/NodeService.java
+M	config-face/src/main/resources/static/js/index.js
+M	config-face/src/main/resources/templates/login.ftl
+
+8de1ff1;hide group remove button
+M	config-face/src/main/resources/static/js/index.js
+M	config-face/src/main/resources/templates/index.ftl
+
+5430ca1;prevent parent event of remove group button
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+M	config-face/src/main/java/com/dangdang/config/face/controller/LoginController.java
+M	config-face/src/main/resources/static/js/index.js
+
+c107dd1;adjust style
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+M	config-face/src/main/resources/static/css/index.css
+M	config-face/src/main/resources/static/js/index.js
+M	config-face/src/main/resources/templates/index.ftl
+
+d00df90;config server port
+M	config-face/src/main/resources/application.yml
+
+26e3f13;break-all
+M	config-face/src/main/resources/static/css/floating-labels.css
+M	config-face/src/main/resources/static/css/index.css
+M	config-face/src/main/resources/templates/data.ftl
+M	config-face/src/main/resources/templates/index.ftl
+M	config-face/src/main/resources/templates/login.ftl
+
+7b9230f;add scroll to groups
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+M	config-face/src/main/resources/static/css/index.css
+M	config-face/src/main/resources/static/js/index.js
+M	config-face/src/main/resources/templates/data.ftl
+M	config-face/src/main/resources/templates/index.ftl
+
+f5c9686;import
+M	config-face/pom.xml
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+M	config-face/src/main/resources/templates/index.ftl
+M	pom.xml
+
+779ab0d;export
+M	config-face/pom.xml
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+M	config-face/src/main/resources/static/css/index.css
+M	config-face/src/main/resources/static/js/index.js
+M	config-face/src/main/resources/templates/index.ftl
+
+fc7bbcf;refactor
+M	config-face/src/main/java/com/dangdang/config/face/config/WebSecurityConfig.java
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+M	config-face/src/main/java/com/dangdang/config/face/controller/LoginController.java
+R091	config-face/src/main/java/com/dangdang/config/face/dao/INodeService.java	config-face/src/main/java/com/dangdang/config/face/service/INodeService.java
+R090	config-face/src/main/java/com/dangdang/config/face/dao/NodeService.java	config-face/src/main/java/com/dangdang/config/face/service/NodeService.java
+A	config-face/src/main/java/com/dangdang/config/face/util/PathEncodeUtils.java
+M	config-face/src/main/resources/static/js/index.js
+M	config-face/src/main/resources/templates/index.ftl
+M	config-face/src/main/resources/templates/login.ftl
+
+11009ef;manage property
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+M	config-face/src/main/resources/static/css/index.css
+A	config-face/src/main/resources/static/image/account-logout.svg
+A	config-face/src/main/resources/static/image/pencil.png
+A	config-face/src/main/resources/static/image/trash.png
+M	config-face/src/main/resources/static/js/index.js
+M	config-face/src/main/resources/templates/data.ftl
+M	config-face/src/main/resources/templates/index.ftl
+
+271a450;add property
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+M	config-face/src/main/resources/static/js/index.js
+M	config-face/src/main/resources/templates/data.ftl
+M	config-face/src/main/resources/templates/index.ftl
+M	config-face/src/main/resources/templates/login.ftl
+
+068f653;create group function
+M	config-face/pom.xml
+M	config-face/src/main/java/com/dangdang/config/face/config/WebSecurityConfig.java
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+D	config-face/src/main/java/com/dangdang/config/face/dao/AuthDao.java
+D	config-face/src/main/java/com/dangdang/config/face/dao/BaseDao.java
+D	config-face/src/main/java/com/dangdang/config/face/dao/IAuthDao.java
+R073	config-face/src/main/java/com/dangdang/config/face/dao/INodeDao.java	config-face/src/main/java/com/dangdang/config/face/dao/INodeService.java
+D	config-face/src/main/java/com/dangdang/config/face/dao/IPropertyDao.java
+D	config-face/src/main/java/com/dangdang/config/face/dao/NodeDao.java
+A	config-face/src/main/java/com/dangdang/config/face/dao/NodeService.java
+D	config-face/src/main/java/com/dangdang/config/face/dao/PropertyDao.java
+A	config-face/src/main/java/com/dangdang/config/face/entity/CommonResponse.java
+M	config-face/src/main/resources/static/css/index.css
+M	config-face/src/main/resources/static/js/index.js
+M	config-face/src/main/resources/templates/index.ftl
+
+ef46a75;custom sort
+M	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+M	config-face/src/main/resources/templates/index.ftl
+
+c0bb98e;init config face
+A	config-face/pom.xml
+A	config-face/src/main/java/com/dangdang/config/face/ConfigFaceApplication.java
+A	config-face/src/main/java/com/dangdang/config/face/config/WebSecurityConfig.java
+A	config-face/src/main/java/com/dangdang/config/face/controller/IndexController.java
+A	config-face/src/main/java/com/dangdang/config/face/controller/LoginController.java
+A	config-face/src/main/java/com/dangdang/config/face/dao/AuthDao.java
+A	config-face/src/main/java/com/dangdang/config/face/dao/BaseDao.java
+A	config-face/src/main/java/com/dangdang/config/face/dao/IAuthDao.java
+A	config-face/src/main/java/com/dangdang/config/face/dao/INodeDao.java
+A	config-face/src/main/java/com/dangdang/config/face/dao/IPropertyDao.java
+A	config-face/src/main/java/com/dangdang/config/face/dao/NodeDao.java
+A	config-face/src/main/java/com/dangdang/config/face/dao/PropertyDao.java
+A	config-face/src/main/java/com/dangdang/config/face/entity/PropertyItem.java
+A	config-face/src/main/java/com/dangdang/config/face/entity/PropertyItemVO.java
+A	config-face/src/main/resources/application.yml
+A	config-face/src/main/resources/logback.xml
+A	config-face/src/main/resources/static/css/bootstrap.min.css
+A	config-face/src/main/resources/static/css/floating-labels.css
+A	config-face/src/main/resources/static/css/index.css
+A	config-face/src/main/resources/static/image/c.png
+A	config-face/src/main/resources/static/js/bootstrap.min.js
+A	config-face/src/main/resources/static/js/index.js
+A	config-face/src/main/resources/static/js/jquery-3.2.1.min.js
+A	config-face/src/main/resources/static/js/popper.min.js
+A	config-face/src/main/resources/templates/common.ftl
+A	config-face/src/main/resources/templates/data.ftl
+A	config-face/src/main/resources/templates/index.ftl
+A	config-face/src/main/resources/templates/login.ftl
+M	config-zk-web/src/main/resources/zk.properties
+
+33b5791;mark node values can be empty
+M	config-zk-web/src/main/webapp/main.xhtml
+
+70e478f;创建Yahoo Group
+M	README.md
+
+e410839;修改Classpath解析方式，使其支持打包成单个jar的spring boot应用
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/ClasspathProtocol.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/LocalFileProtocol.java
+
+c34c46a;增加ConfigGroup配置参数 enumerable，使其支持spring boot的配置方式： spring.application.name
+M	config-toolkit/src/main/java/com/dangdang/config/service/ConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/FileConfigGroup.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ConfigGroupEnumerableResource.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ConfigGroupSourceFactory.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+
+9646323;修复上传配置值为空时默认值为IP的问题
+M	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/PropertyDao.java
+
+e229ad3;修复本地配置缓存的问题
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/simple/LocalCacheCase.java
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigProfile.java
+
+ab93818;trim the value
+M	README.md
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/FileConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+
+acfbe2f;删除主动的一致性检查
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigProfile.java
+
+3b00df8;添加RefreshableBox的例子
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/RefreshableBoxUseCase.java
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/SimpleRefreshableBean.java
+
+47d07c2;Build For JDK1.7
+M	README.md
+M	config-toolkit-parent/pom.xml
+M	config-toolkit/pom.xml
+
+92a1a24;Remove zk-sync
+M	README.md
+D	zk-sync/.gitignore
+D	zk-sync/assembly.xml
+D	zk-sync/desc/README.txt
+D	zk-sync/pom.xml
+D	zk-sync/src/main/java/com/jiuxian/zksync/MainEntrance.java
+
+503214f;add class diagram
+A	config-toolkit.ucls
+
+e79735f;update version
+M	README.md
+
+1852e82;add xsd support of <config:placeholder/>
+M	README.md
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-placeholder-support.xml
+M	config-toolkit-demo/src/main/resources/logback.xml
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ConfigToolkitNamespaceHandlerSupport.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/PropertySourcesPlaceholderConfigurerConfigBean.java
+M	config-toolkit/src/main/resources/META-INF/config.xsd
+
+7343538;update doc
+M	README.md
+
+032b5fc;update demo
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-placeholder-support.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-spel-support.xml
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigProfile.java
+M	config-toolkit/src/main/resources/META-INF/config.xsd
+
+fbfa74d;Merge pull request #20 from lzhwyg/master
+8645e5b;config spring integration
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit.properties
+M	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ConfigToolkitNamespaceHandlerSupport.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ZookeeperConfigGroupConfigBean.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ZookeeperConfigProfileConfigBean.java
+M	config-toolkit/src/main/resources/META-INF/config.xsd
+M	config-toolkit/src/main/resources/META-INF/spring.handlers
+
+fb906ca;add config xsd
+M	config-toolkit-demo/pom.xml
+M	config-toolkit/pom.xml
+A	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ConfigToolkitNamespaceHandlerSupport.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ZookeeperConfigProfileConfigBean.java
+A	config-toolkit/src/main/resources/META-INF/config.xsd
+A	config-toolkit/src/main/resources/META-INF/spring.handlers
+A	config-toolkit/src/main/resources/META-INF/spring.schemas
+
+4a84b9f;Add link to Config Toolkit implementation of language Go
+M	README.md
+
+5091839;Update README.md
+M	README.md
+
+af061dd;Update README.md
+M	README.md
+
+9aa5961;update SPEL example
+M	config-toolkit-demo/src/main/resources/config-toolkit-spel-support.xml
+
+715e77b;add demo for @RefreshScope
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/simple/ExampleBeanWithSpel.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/SpelSupportTest.java
+M	config-toolkit-demo/src/main/resources/config-toolkit.properties
+M	config-toolkit-parent/pom.xml
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/ConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+
+47ac68f;解决删除组内最后一个值时无法刷新的问题
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/FileConfigGroupTest.java
+M	config-toolkit-demo/src/main/resources/property-group1.properties
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/FileConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+
+91b0949;修复读本地相对路径文件的问题
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/FileConfigGroupTest.java
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/LocalFileProtocol.java
+
+7fe1b76;change properties file check: isReadable to exists
+M	config-toolkit-demo/pom.xml
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/LocalFileProtocol.java
+
+24d1ebd;GeneralConfigGroup添加最后加载时间
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+
+282989f;Merge pull request #17 from archlevel/patch-1
+9b6e60a;add lastmodify property
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+
+ebb58a5;Save property when press enter key
+M	config-zk-web/src/main/webapp/main.xhtml
+
+db26f18;添加注释
+M	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+M	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+M	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+M	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/IAuthDao.java
+M	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/INodeDao.java
+
+b566884;修正注释
+M	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+
+7ad0bd0;Merge pull request #14 from jart/patch-1
+f31a0ca;replace InputStreamReader with jdk internal class
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/PropertiesContentType.java
+
+ed7610a;升級的Apache Commons Collections中到V4.1
+M	config-toolkit-parent/pom.xml
+
+c604ec7;Change tip
+M	config-zk-web/src/main/webapp/main.xhtml
+
+f5df277;fix overwrite mark
+M	zk-sync/src/main/java/com/jiuxian/zksync/MainEntrance.java
+
+1d8cf21;Merge pull request #13 from yuyunyao/master
+a344815;Update ZookeeperConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+
+7885088;Update ZookeeperConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+
+d81fdbe;update zk address
+M	config-zk-web/src/main/resources/zk.properties
+
+f05b44f;Fix bug: exception while remove sub node
+M	config-toolkit-demo/pom.xml
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+
+ca071e5;Merge pull request #12 from jacklcz/patch-4
+8007848;fix bug
+M	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+
+af151ad;update README
+M	zk-sync/desc/README.txt
+
+c531182;update javadoc
+M	zk-sync/src/main/java/com/jiuxian/zksync/MainEntrance.java
+
+3f60882;add param
+M	zk-sync/src/main/java/com/jiuxian/zksync/MainEntrance.java
+
+989a2a6;update javadoc
+M	zk-sync/src/main/java/com/jiuxian/zksync/MainEntrance.java
+
+dbc6135;update demo
+M	config-toolkit-demo/src/main/resources/config-toolkit-placeholder-support.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-spel-support.xml
+A	config-toolkit-demo/src/main/resources/config-toolkit.properties
+
+bd9df97;Zookeeper Sync
+A	zk-sync/.gitignore
+A	zk-sync/assembly.xml
+A	zk-sync/desc/README.txt
+A	zk-sync/pom.xml
+A	zk-sync/src/main/java/com/jiuxian/zksync/MainEntrance.java
+
+ff3ab8c;move en doc to wiki
+D	README_en.md
+
+8467af4;添加初始化脚本
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/InitialScript.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/FileConfigGroupTest.java
+
+057234e;update README
+M	README.md
+
+93fbc4d;refactor DOC
+M	README.md
+
+014eac4;fix local cache demo
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/simple/LocalCacheCase.java
+
+a9f6cba;fix demos
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/FileConfigGroupTest.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/RefreshableBoxUseCase.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/override/LocalOverrideTest.java
+R096	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBean.java	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/simple/ExampleBean.java
+R087	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBeanWithConfigNode.java	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/simple/ExampleBeanWithConfigNode.java
+R090	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBeanWithSpel.java	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/simple/ExampleBeanWithSpel.java
+R091	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/LocalCacheCase.java	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/simple/LocalCacheCase.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/MainEntrance.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/PlaceHodlerSupport.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/SpelSupportTest.java
+M	config-toolkit-demo/src/main/resources/config-toolkit-java-config.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-placeholder-support.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-spel-support.xml
+M	config-toolkit-demo/src/main/resources/property-group1.properties
+
+0742823;Update README.md
+M	README.md
+
+4f65c52;update README
+M	README.md
+
+f7d6f55;update README
+M	README.md
+
+ad17445;TRIM key&value when uploading
+M	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+
+b373ac1;update create node command
+M	README.md
+
+bfa797e;remove local cache configs in zookeeper config profile
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigProfile.java
+
+6d158c6;update zk address
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/RefreshableBoxUseCase.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/override/LocalOverrideTest.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/annotation/ConfigCenter.java
+M	config-toolkit-demo/src/main/resources/config-toolkit-placeholder-support.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-spel-support.xml
+
+8c8d9fc;Add Playground for config web
+M	README.md
+
+d26d5a1;Merge pull request #10 from jacklcz/patch-2
+084b2ae;update log path
+M	config-zk-web/src/main/resources/logback.xml
+
+f41406b;Update .gitignore
+M	.gitignore
+
+45db23d;upgrade version
+M	config-toolkit/pom.xml
+
+14e2c2d;update version
+M	README.md
+
+c522d04;add contributors
+M	README.md
+
+6301c5f;end ul
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/FileConfigGroup.java
+
+0a1cbdb;upgrade version
+M	config-toolkit-demo/pom.xml
+M	config-toolkit/pom.xml
+
+163b68a;Merge pull request #9 from jacklcz/patch-1
+012d90c;修复BUG
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+
+e34147c;Update README.md
+M	README.md
+
+ca60215;Update README.md
+M	README.md
+
+cc9866c;add english document
+A	README_en.md
+
+e34fa1d;update doc
+M	README.md
+
+ec1eb5d;change config group to meet SPEL
+M	README.md
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/FileConfigGroupTest.java
+M	config-toolkit-parent/pom.xml
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+
+2d15afc;update version
+M	README.md
+
+35596ad;Merge branch 'master' of https://github.com/dangdangdotcom/config-toolkit.git
+b77fd1c;fix issue to support load from jar
+M	README.md
+M	config-toolkit-demo/pom.xml
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/ContentTypes.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/Protocols.java
+
+e569805;fix issue to support load from jar
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/Protocols.java
+
+81771ad;update doc
+M	README.md
+
+51d6c5d;update version
+M	README.md
+
+2572fa2;update config group to extends ConcurrentHashMap
+M	config-toolkit-demo/pom.xml
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+
+42e76d7;update version
+M	README.md
+
+597e75c;fix concurrent issue
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-placeholder-support.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-toolkit/pom.xml
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+
+733d572;fix issue
+M	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/NodeAuthManagedBean.java
+
+98c2a42;remove duplicate guava dependency
+M	config-toolkit/pom.xml
+
+a284146;Merge pull request #7 from crnlmchina/master
+05e2350;update doc
+M	README.md
+
+9c49d5b;Merge pull request #6 from crnlmchina/master
+904cbec;add doc
+M	README.md
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/FileConfigGroupTest.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/ConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/ProtocolNames.java
+
+fa13ebd;refactor
+R070	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/ClasspathPropConfigGroupTest.java	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/FileConfigGroupTest.java
+R055	config-toolkit/src/main/java/com/dangdang/config/service/exception/InvalidFileException.java	config-toolkit/src/main/java/com/dangdang/config/service/exception/InvalidPathException.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/FileConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/ContentType.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/PropertiesContentType.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/XmlContentType.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/ClasspathProtocol.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/FileProtocol.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/HttpProtocol.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/LocalFileProtocol.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/Protocol.java
+M	config-toolkit/src/main/resources/META-INF/toolkit/com.dangdang.config.service.file.protocol.Protocol
+
+4a814fb;refactor
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/ClasspathPropConfigGroupTest.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit-demo/src/main/resources/property-group1.properties
+M	config-toolkit/src/main/java/com/dangdang/config/service/ConfigGroup.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/exception/ConfigToolkitException.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/exception/InvalidFileException.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/FileChangeEventListener.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/FileConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/FileConfigProfile.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/file/FileLocation.java
+D	config-toolkit/src/main/java/com/dangdang/config/service/file/PropFileConfigGroup.java
+D	config-toolkit/src/main/java/com/dangdang/config/service/file/URIConfigGroup.java
+D	config-toolkit/src/main/java/com/dangdang/config/service/file/XmlFileConfigGroup.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/ContentType.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/ContentTypeNames.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/ContentTypes.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/PropertiesContentType.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/contenttype/XmlContentType.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/ClasspathProtocol.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/FileProtocol.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/LocalFileProtocol.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/Protocol.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/ProtocolNames.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/protocol/Protocols.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ConfigGroupResource.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+A	config-toolkit/src/main/resources/META-INF/toolkit/com.dangdang.config.service.file.contenttype.ContentType
+A	config-toolkit/src/main/resources/META-INF/toolkit/com.dangdang.config.service.file.protocol.Protocol
+
+84dfc19;refactor URI
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/ClasspathPropConfigGroupTest.java
+M	config-toolkit-demo/src/main/resources/property-group1.properties
+R088	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/FileChangeEventListener.java	config-toolkit/src/main/java/com/dangdang/config/service/file/FileChangeEventListener.java
+R059	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/ClasspathFileConfigProfile.java	config-toolkit/src/main/java/com/dangdang/config/service/file/FileConfigProfile.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/file/FileLocation.java
+R061	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/ClasspathPropConfigGroup.java	config-toolkit/src/main/java/com/dangdang/config/service/file/PropFileConfigGroup.java
+R060	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/ClasspathFileConfigGroup.java	config-toolkit/src/main/java/com/dangdang/config/service/file/URIConfigGroup.java
+R059	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/ClasspathXmlConfigGroup.java	config-toolkit/src/main/java/com/dangdang/config/service/file/XmlFileConfigGroup.java
+
+8db1e8a;add classpath file config group
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/ClasspathPropConfigGroupTest.java
+M	config-toolkit-demo/src/main/resources/property-group1.properties
+M	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/ClasspathFileConfigGroup.java
+M	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/FileChangeEventListener.java
+
+b73ac89;refactor
+D	config-toolkit-demo/src/main/resources/local-override.xml
+
+8b11eb8;refactor
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/LocalCacheCase.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/RefreshableBoxUseCase.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/override/LocalOverrideTest.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/annotation/ConfigCenter.java
+M	config-toolkit-demo/src/main/resources/config-toolkit-placeholder-support.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-spel-support.xml
+M	config-toolkit-parent/pom.xml
+D	config-toolkit/local-override.xsd
+M	config-toolkit/pom.xml
+A	config-toolkit/src/main/java/com/dangdang/config/service/ConfigGroup.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/ConfigProfile.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/GeneralConfigGroup.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/ClasspathFileConfigGroup.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/ClasspathFileConfigProfile.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/ClasspathPropConfigGroup.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/ClasspathXmlConfigGroup.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/classpathfile/FileChangeEventListener.java
+D	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/ConfigFactory.java
+D	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+D	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/DefaultConfigs.java
+D	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/LocalOverrideFileLoader.java
+D	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/OverridedConfigNode.java
+R085	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/sugar/RefreshableBox.java	config-toolkit/src/main/java/com/dangdang/config/service/sugar/RefreshableBox.java
+R075	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/support/spring/ZookeeperResource.java	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ConfigGroupResource.java
+R052	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/support/spring/ZookeeperSourceFactory.java	config-toolkit/src/main/java/com/dangdang/config/service/support/spring/ConfigGroupSourceFactory.java
+R096	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/ConfigLocalCache.java	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ConfigLocalCache.java
+R090	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/ConfigNodeEventListener.java	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ConfigNodeEventListener.java
+A	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigGroup.java
+R084	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/ConfigProfile.java	config-toolkit/src/main/java/com/dangdang/config/service/zookeeper/ZookeeperConfigProfile.java
+
+e7ee1d4;rename project
+M	config-common/pom.xml
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-parent/pom.xml
+R100	config-toolkit-easyzk/.gitignore	config-toolkit/.gitignore
+R100	config-toolkit-easyzk/local-override.xsd	config-toolkit/local-override.xsd
+R094	config-toolkit-easyzk/pom.xml	config-toolkit/pom.xml
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigFactory.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/ConfigFactory.java
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigLocalCache.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/ConfigLocalCache.java
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNodeEventListener.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/ConfigNodeEventListener.java
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigProfile.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/ConfigProfile.java
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/sugar/RefreshableBox.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/sugar/RefreshableBox.java
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/DefaultConfigs.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/DefaultConfigs.java
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/LocalOverrideFileLoader.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/LocalOverrideFileLoader.java
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/OverridedConfigNode.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/OverridedConfigNode.java
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/spring/ZookeeperResource.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/support/spring/ZookeeperResource.java
+R100	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/spring/ZookeeperSourceFactory.java	config-toolkit/src/main/java/com/dangdang/config/service/easyzk/support/spring/ZookeeperSourceFactory.java
+R100	config-web/.gitignore	config-zk-web/.gitignore
+R096	config-web/pom.xml	config-zk-web/pom.xml
+R100	config-web/src/main/java/com/dangdang/config/business/INodeBusiness.java	config-zk-web/src/main/java/com/dangdang/config/business/INodeBusiness.java
+R100	config-web/src/main/java/com/dangdang/config/business/NodeBusiness.java	config-zk-web/src/main/java/com/dangdang/config/business/NodeBusiness.java
+R100	config-web/src/main/java/com/dangdang/config/service/AuthService.java	config-zk-web/src/main/java/com/dangdang/config/service/AuthService.java
+R100	config-web/src/main/java/com/dangdang/config/service/IAuthService.java	config-zk-web/src/main/java/com/dangdang/config/service/IAuthService.java
+R100	config-web/src/main/java/com/dangdang/config/service/INodeService.java	config-zk-web/src/main/java/com/dangdang/config/service/INodeService.java
+R100	config-web/src/main/java/com/dangdang/config/service/IRootNodeRecorder.java	config-zk-web/src/main/java/com/dangdang/config/service/IRootNodeRecorder.java
+R100	config-web/src/main/java/com/dangdang/config/service/NodeService.java	config-zk-web/src/main/java/com/dangdang/config/service/NodeService.java
+R100	config-web/src/main/java/com/dangdang/config/service/RootNodeRecorder.java	config-zk-web/src/main/java/com/dangdang/config/service/RootNodeRecorder.java
+R100	config-web/src/main/java/com/dangdang/config/service/entity/PropertyItem.java	config-zk-web/src/main/java/com/dangdang/config/service/entity/PropertyItem.java
+R100	config-web/src/main/java/com/dangdang/config/service/entity/PropertyItemVO.java	config-zk-web/src/main/java/com/dangdang/config/service/entity/PropertyItemVO.java
+R100	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeAuthManagedBean.java	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/NodeAuthManagedBean.java
+R100	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+R100	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+R100	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+R100	config-web/src/main/java/com/dangdang/config/service/web/mb/VersionManagedBean.java	config-zk-web/src/main/java/com/dangdang/config/service/web/mb/VersionManagedBean.java
+R100	config-web/src/main/java/com/dangdang/config/service/zkdao/AuthDao.java	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/AuthDao.java
+R100	config-web/src/main/java/com/dangdang/config/service/zkdao/BaseDao.java	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/BaseDao.java
+R100	config-web/src/main/java/com/dangdang/config/service/zkdao/IAuthDao.java	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/IAuthDao.java
+R100	config-web/src/main/java/com/dangdang/config/service/zkdao/INodeDao.java	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/INodeDao.java
+R100	config-web/src/main/java/com/dangdang/config/service/zkdao/IPropertyDao.java	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/IPropertyDao.java
+R100	config-web/src/main/java/com/dangdang/config/service/zkdao/NodeDao.java	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/NodeDao.java
+R100	config-web/src/main/java/com/dangdang/config/service/zkdao/PropertyDao.java	config-zk-web/src/main/java/com/dangdang/config/service/zkdao/PropertyDao.java
+R100	config-web/src/main/resources/applicationContext.xml	config-zk-web/src/main/resources/applicationContext.xml
+R100	config-web/src/main/resources/config-zkdao.xml	config-zk-web/src/main/resources/config-zkdao.xml
+R100	config-web/src/main/resources/logback.xml	config-zk-web/src/main/resources/logback.xml
+R100	config-web/src/main/resources/zk.properties	config-zk-web/src/main/resources/zk.properties
+R100	config-web/src/main/webapp/WEB-INF/faces-config.xml	config-zk-web/src/main/webapp/WEB-INF/faces-config.xml
+R100	config-web/src/main/webapp/WEB-INF/web.xml	config-zk-web/src/main/webapp/WEB-INF/web.xml
+R100	config-web/src/main/webapp/main.xhtml	config-zk-web/src/main/webapp/main.xhtml
+M	pom.xml
+
+2cf339f;low the consistence check log level to trace
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+
+b0f7e69;update doc
+M	README.md
+
+6091ee6;revert
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBeanWithConfigNode.java
+
+d8c3186;map
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBeanWithConfigNode.java
+
+5572c2c;add demo for local cache
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/LocalCacheCase.java
+
+b385d51;update version
+M	README.md
+
+28d9f18;Unique zookeeper property source
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/spring/ZookeeperResource.java
+
+5ce9038;update version
+M	README.md
+
+c488de7;update version
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-easyzk/pom.xml
+
+b868bc8;override get method from Map to support SPEL
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/override/LocalOverrideTest.java
+M	config-toolkit-demo/src/main/resources/local-override.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/OverridedConfigNode.java
+
+ccc5edf;add comment @threadsafe
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/OverridedConfigNode.java
+
+788d615;add helper class RefreshableBox
+M	config-toolkit-demo/pom.xml
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/RefreshableBoxUseCase.java
+M	config-toolkit-easyzk/pom.xml
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/sugar/RefreshableBox.java
+
+559f4ad;layout
+M	config-web/src/main/webapp/main.xhtml
+
+da61e47;fix update after add property
+M	config-web/src/main/webapp/main.xhtml
+
+8b2ead5;update README
+M	README.md
+
+117ca16;release 2.0.0
+M	config-common/pom.xml
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-parent/pom.xml
+M	config-web/pom.xml
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+M	config-web/src/main/webapp/main.xhtml
+
+515d6fa;fix upload zip
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+M	config-web/src/main/webapp/main.xhtml
+
+3e1684d;export and import file with comments
+A	config-web/src/main/java/com/dangdang/config/business/INodeBusiness.java
+A	config-web/src/main/java/com/dangdang/config/business/NodeBusiness.java
+M	config-web/src/main/java/com/dangdang/config/service/entity/PropertyItemVO.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/VersionManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/PropertyDao.java
+M	config-web/src/main/resources/applicationContext.xml
+
+f6e7d2e;close unsupported operation to ConfigNode
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+
+6b515f2;new feature: save comment
+M	config-web/src/main/java/com/dangdang/config/service/entity/PropertyItem.java
+A	config-web/src/main/java/com/dangdang/config/service/entity/PropertyItemVO.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/VersionManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/NodeDao.java
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/PropertyDao.java
+M	config-web/src/main/webapp/main.xhtml
+
+61e2749;add feature: clone node
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBeanWithConfigNode.java
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeAuthManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/VersionManagedBean.java
+M	config-web/src/main/webapp/main.xhtml
+
+8d0bd11;version 2.0.0-SNAPSHOT package 1
+M	config-common/pom.xml
+M	config-common/src/main/java/com/dangdang/config/service/observer/AbstractSubject.java
+M	config-common/src/main/java/com/dangdang/config/service/observer/IObserver.java
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/override/LocalOverrideTest.java
+M	config-toolkit-demo/src/main/resources/config-toolkit-placeholder-support.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-spel-support.xml
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigFactory.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigLocalCache.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigProfile.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/OverridedConfigNode.java
+D	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/spring/ConfigNodeIndexer.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/spring/ZookeeperResource.java
+M	config-toolkit-parent/pom.xml
+M	config-web/pom.xml
+M	config-web/src/main/java/com/dangdang/config/service/NodeService.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeAuthManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+A	config-web/src/main/java/com/dangdang/config/service/web/mb/VersionManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/AuthDao.java
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/NodeDao.java
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/PropertyDao.java
+M	config-web/src/main/webapp/main.xhtml
+
+18429ff;add demo
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/override/LocalOverrideTest.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/MainEntrance.java
+
+c584c8d;update version
+M	README.md
+
+d9b4a47;add demo
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+
+1adaa34;add demo
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBeanWithConfigNode.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/MainEntrance.java
+M	config-toolkit-demo/src/main/resources/local-override.xml
+
+44784b1;fix issue of local override file
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/LocalOverrideFileLoader.java
+
+eb648c3;add demo
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBean.java
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/PlaceHodlerSupport.java
+R079	config-toolkit-demo/src/main/resources/config-toolkit-placehodler-support.xml	config-toolkit-demo/src/main/resources/config-toolkit-placeholder-support.xml
+A	config-toolkit-demo/src/main/resources/property-group2.properties
+
+3b60fca;fix ui
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+M	config-web/src/main/webapp/main.xhtml
+
+3b17f59;manual close timer
+M	config-toolkit-demo/pom.xml
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/SpelSupportTest.java
+M	config-toolkit-demo/src/main/resources/config-toolkit-spel-support.xml
+M	config-toolkit-demo/src/main/resources/property-group1.properties
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+
+e5886e6;fix bug
+M	config-toolkit-demo/pom.xml
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBeanWithSpel.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/override/LocalOverrideTest.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/annotation/ConfigCenter.java
+R061	config-toolkit-demo/src/main/resources/config-toolkit-easyzk.xml	config-toolkit-demo/src/main/resources/config-toolkit-placehodler-support.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+A	config-toolkit-demo/src/main/resources/config-toolkit-spel-support.xml
+A	config-toolkit-demo/src/main/resources/property-group1.properties
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigFactory.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+
+2c0d9b3;add read write lock move zk client to ConfigFactory
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+
+55351ab;add read write lock move zk client to ConfigFactory
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/override/LocalOverrideTest.java
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigFactory.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNodeEventListener.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/OverridedConfigNode.java
+
+fad9895;refresh node list when switch root node
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+
+71e9abf;fix doc
+M	README.md
+
+c6e9dde;add comment
+M	README.md
+
+e0b239a;add support for spring spel
+M	config-toolkit-easyzk/pom.xml
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/spring/ConfigNodeIndexer.java
+
+2218e94;降低日志打印级别
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigFactory.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigLocalCache.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNodeEventListener.java
+
+add44f2;tips
+M	README.md
+
+44fd8ea;tips
+M	README.md
+
+2c393bf;add auto complete
+A	config-web/src/main/java/com/dangdang/config/service/IRootNodeRecorder.java
+A	config-web/src/main/java/com/dangdang/config/service/RootNodeRecorder.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeAuthManagedBean.java
+M	config-web/src/main/webapp/main.xhtml
+
+0ac27ce;update version
+M	README.md
+
+ea79a89;add config web snapshot
+M	README.md
+
+1e70f67;添加Config Web鉴权说明
+M	README.md
+
+81213fb;Remove grant auth
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeAuthManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/AuthDao.java
+M	config-web/src/main/webapp/main.xhtml
+
+0f07d7e;add friendly tip
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeAuthManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/AuthDao.java
+M	config-web/src/main/webapp/main.xhtml
+
+48797c5;throw out exception
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/AuthDao.java
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/NodeDao.java
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/PropertyDao.java
+
+5ed4914;remove debug info
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+
+51eda81;1. Do scheduled consistency check; 2. Fix thread run bug.
+M	config-common/pom.xml
+M	config-common/src/main/java/com/dangdang/config/service/observer/AbstractSubject.java
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigFactory.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNodeEventListener.java
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigProfile.java
+D	config-toolkit-parent/target/config-toolkit-parent-1.1.0-RELEASE.pom
+
+7ff5736;Update local-override.xml
+M	config-toolkit-demo/src/main/resources/local-override.xml
+
+19d3eeb;Mark link readable
+M	config-web/src/main/webapp/main.xhtml
+
+07fc29b;Fix zip format
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+
+dc2a3e0;UPDATE README
+M	README.md
+
+97c6a0e;update xsd
+M	config-toolkit-demo/src/main/resources/local-override.xml
+
+d1660f3;Update README.md
+M	README.md
+
+5810fc2;Update README.md
+M	README.md
+
+f778657;Update README.md
+M	README.md
+
+111be61;Update README.md
+M	README.md
+
+2c57318;Add munaul for local configs override
+M	README.md
+
+7acbf1f;Fix xsd location
+M	config-toolkit-demo/src/main/resources/local-override.xml
+
+f974c66;New feature: Allow local configs to override zookeeper configs
+M	config-common/pom.xml
+M	config-toolkit-demo/pom.xml
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/override/LocalOverrideTest.java
+A	config-toolkit-demo/src/main/resources/local-override.xml
+R100	config-toolkit-easyzk/src/main/resources/local-override.xsd	config-toolkit-easyzk/local-override.xsd
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigFactory.java
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/DefaultConfigs.java
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/LocalOverrideFileLoader.java
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/localoverride/OverridedConfigNode.java
+M	config-toolkit-parent/pom.xml
+M	config-web/pom.xml
+
+a43c99a;add xsd
+A	config-toolkit-easyzk/src/main/resources/local-override.xsd
+
+41c91a0;Fix bug: ConfigNode not updated when children node deleted.
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+
+2684246;Update README.md
+M	README.md
+
+4cd935b;deploy to oss
+A	config-toolkit-parent/target/config-toolkit-parent-1.1.0-RELEASE.pom
+
+e5edb45;deploy to oss
+M	config-toolkit-parent/pom.xml
+
+4f35aa4;Update README.md
+M	README.md
+
+fcd5f48;Update README.md
+M	README.md
+
+d5a661b;降级最低JAVA版本要求到JAVA6
+M	config-common/pom.xml
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/MainEntrance.java
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigLocalCache.java
+M	config-toolkit-parent/pom.xml
+M	config-web/pom.xml
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+M	config-web/src/main/resources/zk.properties
+
+473410d;Merge branch 'master' of https://github.com/dangdangdotcom/config-toolkit
+3108757;Change notifications to async invoke
+M	config-common/src/main/java/com/dangdang/config/service/observer/AbstractSubject.java
+
+cf4c738;Update README.md
+M	README.md
+
+f12c72e;Update README.md
+M	README.md
+
+8e1a1a3;Update README.md
+M	README.md
+
+0bb98cb;Open standard output
+M	config-web/src/main/resources/logback.xml
+
+71e6a10;Update README.md
+M	README.md
+
+bbfab9c;Update README.md
+M	README.md
+
+bc94c04;调整样式及提示文字
+M	config-web/src/main/webapp/main.xhtml
+
+a82c2f2;Merge pull request #1 from kangfoo/master
+e72b43b;Avoid NullPointer
+M	config-web/src/main/java/com/dangdang/config/service/zkdao/AuthDao.java
+
+a4856f5;添加demo示例 pom 配置
+M	pom.xml
+
+f77ef31;修改页面部分表述
+M	config-web/src/main/webapp/main.xhtml
+
+6a0ec9d;修改spring版本为spring3_x_与_dubbox_使用spring版本一致
+M	config-toolkit-demo/src/main/resources/config-toolkit-easyzk.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-toolkit-easyzk/pom.xml
+M	config-toolkit-parent/pom.xml
+M	config-web/pom.xml
+
+66e12f3;修改_zk_连接为本地_localhost_地址
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+M	config-toolkit-demo/src/main/resources/config-toolkit-easyzk.xml
+M	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+M	config-web/src/main/resources/zk.properties
+
+8cd902d;Loose the regex
+M	config-web/src/main/webapp/main.xhtml
+
+3995c34;Add batch export and import
+A	.gitignore
+A	config-common/.gitignore
+A	config-toolkit-demo/.gitignore
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBeanWithConfigNode.java
+A	config-toolkit-demo/src/main/resources/config-toolkit-simple.xml
+A	config-toolkit-demo/src/main/resources/logback.xml
+A	config-toolkit-easyzk/.gitignore
+A	config-web/.gitignore
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+M	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+M	config-web/src/main/webapp/main.xhtml
+
+7cd812d;add some example
+M	config-toolkit-demo/pom.xml
+M	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/annotation/ConfigCenter.java
+M	config-toolkit-demo/src/main/resources/config-toolkit-easyzk.xml
+
+6205682;Add some validation
+M	config-web/src/main/webapp/main.xhtml
+
+4ee9d55;add javadoc plugin
+M	config-toolkit-parent/pom.xml
+
+bad1fa8;remove hosts
+M	config-toolkit-parent/pom.xml
+
+10f0819;添加wiki链接
+M	README.md
+
+06b1981;Initialize
+A	config-common/pom.xml
+A	config-common/src/main/java/com/dangdang/config/service/observer/AbstractSubject.java
+A	config-common/src/main/java/com/dangdang/config/service/observer/IObserver.java
+A	config-common/src/main/java/com/dangdang/config/service/observer/ISubject.java
+A	config-common/src/main/java/com/dangdang/config/service/proxy/RefreshableProxy.java
+A	config-common/src/test/java/com/dangdang/config/service/proxy/test/RefreshableProxyTest.java
+A	config-toolkit-demo/pom.xml
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/ExampleBean.java
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/normal/WithoutSpring.java
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/MainEntrance.java
+A	config-toolkit-demo/src/main/java/com/dangdang/config/service/easyzk/demo/spring/annotation/ConfigCenter.java
+A	config-toolkit-demo/src/main/resources/config-toolkit-easyzk.xml
+A	config-toolkit-easyzk/pom.xml
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigFactory.java
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigLocalCache.java
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNode.java
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigNodeEventListener.java
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/ConfigProfile.java
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/spring/ZookeeperResource.java
+A	config-toolkit-easyzk/src/main/java/com/dangdang/config/service/easyzk/support/spring/ZookeeperSourceFactory.java
+A	config-toolkit-parent/pom.xml
+A	config-web/pom.xml
+A	config-web/src/main/java/com/dangdang/config/service/AuthService.java
+A	config-web/src/main/java/com/dangdang/config/service/IAuthService.java
+A	config-web/src/main/java/com/dangdang/config/service/INodeService.java
+A	config-web/src/main/java/com/dangdang/config/service/NodeService.java
+A	config-web/src/main/java/com/dangdang/config/service/entity/PropertyItem.java
+A	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeAuthManagedBean.java
+A	config-web/src/main/java/com/dangdang/config/service/web/mb/NodeDataManagedBean.java
+A	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyExportManagedBean.java
+A	config-web/src/main/java/com/dangdang/config/service/web/mb/PropertyGroupManagedBean.java
+A	config-web/src/main/java/com/dangdang/config/service/zkdao/AuthDao.java
+A	config-web/src/main/java/com/dangdang/config/service/zkdao/BaseDao.java
+A	config-web/src/main/java/com/dangdang/config/service/zkdao/IAuthDao.java
+A	config-web/src/main/java/com/dangdang/config/service/zkdao/INodeDao.java
+A	config-web/src/main/java/com/dangdang/config/service/zkdao/IPropertyDao.java
+A	config-web/src/main/java/com/dangdang/config/service/zkdao/NodeDao.java
+A	config-web/src/main/java/com/dangdang/config/service/zkdao/PropertyDao.java
+A	config-web/src/main/resources/applicationContext.xml
+A	config-web/src/main/resources/config-zkdao.xml
+A	config-web/src/main/resources/logback.xml
+A	config-web/src/main/resources/zk.properties
+A	config-web/src/main/webapp/WEB-INF/faces-config.xml
+A	config-web/src/main/webapp/WEB-INF/web.xml
+A	config-web/src/main/webapp/main.xhtml
+A	pom.xml
+
+096d80d;Initial commit
+A	LICENSE
+A	README.md

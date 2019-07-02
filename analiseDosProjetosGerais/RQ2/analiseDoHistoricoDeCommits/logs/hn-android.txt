@@ -1,0 +1,2598 @@
+0482e21;releasing version 1.9.15 (25)
+M	app/app.iml
+M	app/build.gradle
+
+3bd8c80;manuall merging pr #172 from @austinoneil
+M	app/app.iml
+M	app/src/main/java/com/manuelmaly/hn/CommentsActivity.java
+
+962623b;Merge pull request #178 from vafada/177-blank-comments
+da49f8b;updating gradle files
+M	app/app.iml
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+480c1e3;177 rename variable to mainCommentDiv
+M	app/src/main/java/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+bac18e8;177 change span to div
+M	app/src/main/java/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+a415119;bumping version code and name
+M	app/build.gradle
+
+98170f3;Merge branch 'fix/parsing'
+525f83e;fixing an issue with the parsing of &nbsp; characters
+M	app/src/main/java/com/manuelmaly/hn/parser/BaseHTMLParser.java
+M	app/src/main/java/com/manuelmaly/hn/parser/HNFeedParser.java
+
+c79b2cc;restructuring project to match convention
+R100	hn-android/.factorypath	app/.factorypath
+R064	hn-android/hn-android-hn-android.iml	app/app.iml
+R085	hn-android/build.gradle	app/build.gradle
+R100	hn-android/code_style/eclipse/hn_eclipse_cleanup_profile.xml	app/code_style/eclipse/hn_eclipse_cleanup_profile.xml
+R100	hn-android/code_style/eclipse/hn_eclipse_formatter.xml	app/code_style/eclipse/hn_eclipse_formatter.xml
+R100	hn-android/design/appstore_feature.png	app/design/appstore_feature.png
+R100	hn-android/design/appstore_feature.psd	app/design/appstore_feature.psd
+R100	hn-android/design/appstore_icon.png	app/design/appstore_icon.png
+R100	hn-android/design/appstore_icon.psd	app/design/appstore_icon.psd
+R100	hn-android/design/appstore_icon_114.png	app/design/appstore_icon_114.png
+R100	hn-android/design/comments.psd	app/design/comments.psd
+R100	hn-android/design/commentsbubble-mdpi.psd	app/design/commentsbubble-mdpi.psd
+R100	hn-android/design/expand.psd	app/design/expand.psd
+R100	hn-android/design/hn.psd	app/design/hn.psd
+R100	hn-android/design/icon_hdpi.psd	app/design/icon_hdpi.psd
+R100	hn-android/design/icon_mdpi.psd	app/design/icon_mdpi.psd
+R100	hn-android/design/icons.psd	app/design/icons.psd
+R100	hn-android/design/points_roundedrect.psd	app/design/points_roundedrect.psd
+R100	hn-android/design/refresh.psd	app/design/refresh.psd
+R100	hn-android/design/refresh2.psd	app/design/refresh2.psd
+R100	hn-android/design/rounded_button.psd	app/design/rounded_button.psd
+R100	hn-android/features/startup_validation.feature	app/features/startup_validation.feature
+R100	hn-android/features/step_definitions/calabash_steps.rb	app/features/step_definitions/calabash_steps.rb
+R100	hn-android/features/support/app_installation_hooks.rb	app/features/support/app_installation_hooks.rb
+R100	hn-android/features/support/app_life_cycle_hooks.rb	app/features/support/app_life_cycle_hooks.rb
+R100	hn-android/features/support/env.rb	app/features/support/env.rb
+R100	hn-android/features/support/hooks.rb	app/features/support/hooks.rb
+R100	hn-android/features/sync.feature	app/features/sync.feature
+R100	hn-android/gradlew	app/gradlew
+R096	hn-android/gradlew.bat	app/gradlew.bat
+R100	hn-android/libs/jsoup-1.7.2.jar	app/libs/jsoup-1.7.2.jar
+R100	hn-android/libs/libGoogleAnalytics.jar	app/libs/libGoogleAnalytics.jar
+R100	hn-android/lint.xml	app/lint.xml
+R100	hn-android/proguard.cfg	app/proguard.cfg
+R100	hn-android/project.properties	app/project.properties
+R100	hn-android/AndroidManifest.xml	app/src/main/AndroidManifest.xml
+R100	hn-android/assets/Comfortaa-Bold.ttf	app/src/main/assets/Comfortaa-Bold.ttf
+R100	hn-android/assets/Comfortaa-Regular.ttf	app/src/main/assets/Comfortaa-Regular.ttf
+R100	hn-android/src/com/manuelmaly/hn/AboutActivity.java	app/src/main/java/com/manuelmaly/hn/AboutActivity.java
+R100	hn-android/src/com/manuelmaly/hn/App.java	app/src/main/java/com/manuelmaly/hn/App.java
+R100	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java	app/src/main/java/com/manuelmaly/hn/ArticleReaderActivity.java
+R100	hn-android/src/com/manuelmaly/hn/BaseListActivity.java	app/src/main/java/com/manuelmaly/hn/BaseListActivity.java
+R100	hn-android/src/com/manuelmaly/hn/BasePostActivity.java	app/src/main/java/com/manuelmaly/hn/BasePostActivity.java
+R100	hn-android/src/com/manuelmaly/hn/CommentsActivity.java	app/src/main/java/com/manuelmaly/hn/CommentsActivity.java
+R100	hn-android/src/com/manuelmaly/hn/ExternalIntentActivity.java	app/src/main/java/com/manuelmaly/hn/ExternalIntentActivity.java
+R100	hn-android/src/com/manuelmaly/hn/MainActivity.java	app/src/main/java/com/manuelmaly/hn/MainActivity.java
+R100	hn-android/src/com/manuelmaly/hn/Settings.java	app/src/main/java/com/manuelmaly/hn/Settings.java
+R100	hn-android/src/com/manuelmaly/hn/SettingsActivity.java	app/src/main/java/com/manuelmaly/hn/SettingsActivity.java
+R100	hn-android/src/com/manuelmaly/hn/UserPreference.java	app/src/main/java/com/manuelmaly/hn/UserPreference.java
+R100	hn-android/src/com/manuelmaly/hn/login/LoginActivity.java	app/src/main/java/com/manuelmaly/hn/login/LoginActivity.java
+R100	hn-android/src/com/manuelmaly/hn/model/HNComment.java	app/src/main/java/com/manuelmaly/hn/model/HNComment.java
+R100	hn-android/src/com/manuelmaly/hn/model/HNCommentTreeNode.java	app/src/main/java/com/manuelmaly/hn/model/HNCommentTreeNode.java
+R100	hn-android/src/com/manuelmaly/hn/model/HNFeed.java	app/src/main/java/com/manuelmaly/hn/model/HNFeed.java
+R100	hn-android/src/com/manuelmaly/hn/model/HNPost.java	app/src/main/java/com/manuelmaly/hn/model/HNPost.java
+R100	hn-android/src/com/manuelmaly/hn/model/HNPostComments.java	app/src/main/java/com/manuelmaly/hn/model/HNPostComments.java
+R100	hn-android/src/com/manuelmaly/hn/parser/BaseHTMLParser.java	app/src/main/java/com/manuelmaly/hn/parser/BaseHTMLParser.java
+R100	hn-android/src/com/manuelmaly/hn/parser/HNCommentsParser.java	app/src/main/java/com/manuelmaly/hn/parser/HNCommentsParser.java
+R100	hn-android/src/com/manuelmaly/hn/parser/HNFeedParser.java	app/src/main/java/com/manuelmaly/hn/parser/HNFeedParser.java
+R100	hn-android/src/com/manuelmaly/hn/parser/HNNewsLoginParser.java	app/src/main/java/com/manuelmaly/hn/parser/HNNewsLoginParser.java
+R100	hn-android/src/com/manuelmaly/hn/parser/HeaderParser.java	app/src/main/java/com/manuelmaly/hn/parser/HeaderParser.java
+R100	hn-android/src/com/manuelmaly/hn/reuse/CancelableRunnable.java	app/src/main/java/com/manuelmaly/hn/reuse/CancelableRunnable.java
+R100	hn-android/src/com/manuelmaly/hn/reuse/ImageViewFader.java	app/src/main/java/com/manuelmaly/hn/reuse/ImageViewFader.java
+R100	hn-android/src/com/manuelmaly/hn/reuse/LinkifiedTextView.java	app/src/main/java/com/manuelmaly/hn/reuse/LinkifiedTextView.java
+R100	hn-android/src/com/manuelmaly/hn/reuse/ViewRotator.java	app/src/main/java/com/manuelmaly/hn/reuse/ViewRotator.java
+R100	hn-android/src/com/manuelmaly/hn/server/BaseHTTPCommand.java	app/src/main/java/com/manuelmaly/hn/server/BaseHTTPCommand.java
+R100	hn-android/src/com/manuelmaly/hn/server/ConnectivityUtils.java	app/src/main/java/com/manuelmaly/hn/server/ConnectivityUtils.java
+R100	hn-android/src/com/manuelmaly/hn/server/GetHNUserTokenHTTPCommand.java	app/src/main/java/com/manuelmaly/hn/server/GetHNUserTokenHTTPCommand.java
+R100	hn-android/src/com/manuelmaly/hn/server/GetHNUserTokenResponseHandler.java	app/src/main/java/com/manuelmaly/hn/server/GetHNUserTokenResponseHandler.java
+R100	hn-android/src/com/manuelmaly/hn/server/HNCredentials.java	app/src/main/java/com/manuelmaly/hn/server/HNCredentials.java
+R100	hn-android/src/com/manuelmaly/hn/server/HNVoteCommand.java	app/src/main/java/com/manuelmaly/hn/server/HNVoteCommand.java
+R100	hn-android/src/com/manuelmaly/hn/server/HTMLResponseHandler.java	app/src/main/java/com/manuelmaly/hn/server/HTMLResponseHandler.java
+R100	hn-android/src/com/manuelmaly/hn/server/IAPICommand.java	app/src/main/java/com/manuelmaly/hn/server/IAPICommand.java
+R100	hn-android/src/com/manuelmaly/hn/server/NoResponseCommand.java	app/src/main/java/com/manuelmaly/hn/server/NoResponseCommand.java
+R100	hn-android/src/com/manuelmaly/hn/server/StringDownloadCommand.java	app/src/main/java/com/manuelmaly/hn/server/StringDownloadCommand.java
+R100	hn-android/src/com/manuelmaly/hn/server/VoteHTTPCommand.java	app/src/main/java/com/manuelmaly/hn/server/VoteHTTPCommand.java
+R100	hn-android/src/com/manuelmaly/hn/task/BaseTask.java	app/src/main/java/com/manuelmaly/hn/task/BaseTask.java
+R100	hn-android/src/com/manuelmaly/hn/task/HNFeedTaskBase.java	app/src/main/java/com/manuelmaly/hn/task/HNFeedTaskBase.java
+R100	hn-android/src/com/manuelmaly/hn/task/HNFeedTaskLoadMore.java	app/src/main/java/com/manuelmaly/hn/task/HNFeedTaskLoadMore.java
+R100	hn-android/src/com/manuelmaly/hn/task/HNFeedTaskMainFeed.java	app/src/main/java/com/manuelmaly/hn/task/HNFeedTaskMainFeed.java
+R100	hn-android/src/com/manuelmaly/hn/task/HNLoginTask.java	app/src/main/java/com/manuelmaly/hn/task/HNLoginTask.java
+R100	hn-android/src/com/manuelmaly/hn/task/HNPostCommentsTask.java	app/src/main/java/com/manuelmaly/hn/task/HNPostCommentsTask.java
+R100	hn-android/src/com/manuelmaly/hn/task/HNVoteTask.java	app/src/main/java/com/manuelmaly/hn/task/HNVoteTask.java
+R100	hn-android/src/com/manuelmaly/hn/task/ITaskFinishedHandler.java	app/src/main/java/com/manuelmaly/hn/task/ITaskFinishedHandler.java
+R100	hn-android/src/com/manuelmaly/hn/util/Const.java	app/src/main/java/com/manuelmaly/hn/util/Const.java
+R100	hn-android/src/com/manuelmaly/hn/util/DisplayHelper.java	app/src/main/java/com/manuelmaly/hn/util/DisplayHelper.java
+R100	hn-android/src/com/manuelmaly/hn/util/ExceptionUtil.java	app/src/main/java/com/manuelmaly/hn/util/ExceptionUtil.java
+R100	hn-android/src/com/manuelmaly/hn/util/FileUtil.java	app/src/main/java/com/manuelmaly/hn/util/FileUtil.java
+R100	hn-android/src/com/manuelmaly/hn/util/FontHelper.java	app/src/main/java/com/manuelmaly/hn/util/FontHelper.java
+R100	hn-android/src/com/manuelmaly/hn/util/HNHelper.java	app/src/main/java/com/manuelmaly/hn/util/HNHelper.java
+R100	hn-android/src/com/manuelmaly/hn/util/Run.java	app/src/main/java/com/manuelmaly/hn/util/Run.java
+R100	hn-android/src/com/manuelmaly/hn/util/SpotlightActivity.java	app/src/main/java/com/manuelmaly/hn/util/SpotlightActivity.java
+R100	hn-android/src/com/manuelmaly/hn/util/ViewedUtils.java	app/src/main/java/com/manuelmaly/hn/util/ViewedUtils.java
+R100	hn-android/src/com/manuelmaly/hn/view/SpotlightView.java	app/src/main/java/com/manuelmaly/hn/view/SpotlightView.java
+R100	hn-android/res/drawable-hdpi/back.png	app/src/main/res/drawable-hdpi/back.png
+R100	hn-android/res/drawable-hdpi/expand.png	app/src/main/res/drawable-hdpi/expand.png
+R100	hn-android/res/drawable-hdpi/ic_launcher.png	app/src/main/res/drawable-hdpi/ic_launcher.png
+R100	hn-android/res/drawable-hdpi/loadmore.png	app/src/main/res/drawable-hdpi/loadmore.png
+R100	hn-android/res/drawable-hdpi/more_normal.png	app/src/main/res/drawable-hdpi/more_normal.png
+R100	hn-android/res/drawable-hdpi/more_selected.png	app/src/main/res/drawable-hdpi/more_selected.png
+R100	hn-android/res/drawable-hdpi/refresh.png	app/src/main/res/drawable-hdpi/refresh.png
+R100	hn-android/res/drawable-hdpi/refresh_ok.png	app/src/main/res/drawable-hdpi/refresh_ok.png
+R100	hn-android/res/drawable-hdpi/share.png	app/src/main/res/drawable-hdpi/share.png
+R100	hn-android/res/drawable-ldpi/ic_launcher.png	app/src/main/res/drawable-ldpi/ic_launcher.png
+R100	hn-android/res/drawable-mdpi/back.png	app/src/main/res/drawable-mdpi/back.png
+R100	hn-android/res/drawable-mdpi/bubble_patch.9.png	app/src/main/res/drawable-mdpi/bubble_patch.9.png
+R100	hn-android/res/drawable-mdpi/bubble_patch_pressed.9.png	app/src/main/res/drawable-mdpi/bubble_patch_pressed.9.png
+R100	hn-android/res/drawable-mdpi/expand.png	app/src/main/res/drawable-mdpi/expand.png
+R100	hn-android/res/drawable-mdpi/hn.png	app/src/main/res/drawable-mdpi/hn.png
+R100	hn-android/res/drawable-mdpi/ic_launcher.png	app/src/main/res/drawable-mdpi/ic_launcher.png
+R100	hn-android/res/drawable-mdpi/loadmore.png	app/src/main/res/drawable-mdpi/loadmore.png
+R100	hn-android/res/drawable-mdpi/more_normal.png	app/src/main/res/drawable-mdpi/more_normal.png
+R100	hn-android/res/drawable-mdpi/more_selected.png	app/src/main/res/drawable-mdpi/more_selected.png
+R100	hn-android/res/drawable-mdpi/points_roundedrect.9.png	app/src/main/res/drawable-mdpi/points_roundedrect.9.png
+R100	hn-android/res/drawable-mdpi/refresh.png	app/src/main/res/drawable-mdpi/refresh.png
+R100	hn-android/res/drawable-mdpi/refresh_ok.png	app/src/main/res/drawable-mdpi/refresh_ok.png
+R100	hn-android/res/drawable-mdpi/settings.png	app/src/main/res/drawable-mdpi/settings.png
+R100	hn-android/res/drawable-mdpi/share.png	app/src/main/res/drawable-mdpi/share.png
+R100	hn-android/res/drawable-nodpi/rounded_button_normal.9.png	app/src/main/res/drawable-nodpi/rounded_button_normal.9.png
+R100	hn-android/res/drawable-nodpi/rounded_button_pressed.9.png	app/src/main/res/drawable-nodpi/rounded_button_pressed.9.png
+R100	hn-android/res/drawable-nodpi/transparent_noise.png	app/src/main/res/drawable-nodpi/transparent_noise.png
+R100	hn-android/res/drawable-xhdpi/back.png	app/src/main/res/drawable-xhdpi/back.png
+R100	hn-android/res/drawable-xhdpi/bubble_patch.9.png	app/src/main/res/drawable-xhdpi/bubble_patch.9.png
+R100	hn-android/res/drawable-xhdpi/bubble_patch_pressed.9.png	app/src/main/res/drawable-xhdpi/bubble_patch_pressed.9.png
+R100	hn-android/res/drawable-xhdpi/expand.png	app/src/main/res/drawable-xhdpi/expand.png
+R100	hn-android/res/drawable-xhdpi/hn.png	app/src/main/res/drawable-xhdpi/hn.png
+R100	hn-android/res/drawable-xhdpi/ic_launcher.png	app/src/main/res/drawable-xhdpi/ic_launcher.png
+R100	hn-android/res/drawable-xhdpi/loadmore.png	app/src/main/res/drawable-xhdpi/loadmore.png
+R100	hn-android/res/drawable-xhdpi/more_normal.png	app/src/main/res/drawable-xhdpi/more_normal.png
+R100	hn-android/res/drawable-xhdpi/more_selected.png	app/src/main/res/drawable-xhdpi/more_selected.png
+R100	hn-android/res/drawable-xhdpi/points_roundedrect.9.png	app/src/main/res/drawable-xhdpi/points_roundedrect.9.png
+R100	hn-android/res/drawable-xhdpi/refresh.png	app/src/main/res/drawable-xhdpi/refresh.png
+R100	hn-android/res/drawable-xhdpi/refresh_ok.png	app/src/main/res/drawable-xhdpi/refresh_ok.png
+R100	hn-android/res/drawable-xhdpi/rounded_button_normal.9.png	app/src/main/res/drawable-xhdpi/rounded_button_normal.9.png
+R100	hn-android/res/drawable-xhdpi/rounded_button_pressed.9.png	app/src/main/res/drawable-xhdpi/rounded_button_pressed.9.png
+R100	hn-android/res/drawable-xhdpi/settings.png	app/src/main/res/drawable-xhdpi/settings.png
+R100	hn-android/res/drawable-xhdpi/share.png	app/src/main/res/drawable-xhdpi/share.png
+R100	hn-android/res/drawable/actionbar_bg_bright.xml	app/src/main/res/drawable/actionbar_bg_bright.xml
+R100	hn-android/res/drawable/actionbar_bg_orange.xml	app/src/main/res/drawable/actionbar_bg_orange.xml
+R100	hn-android/res/drawable/actionbar_button_bg.xml	app/src/main/res/drawable/actionbar_button_bg.xml
+R100	hn-android/res/drawable/actionbar_button_bg_gray.xml	app/src/main/res/drawable/actionbar_button_bg_gray.xml
+R100	hn-android/res/drawable/bubble.xml	app/src/main/res/drawable/bubble.xml
+R100	hn-android/res/drawable/invisible_icon.xml	app/src/main/res/drawable/invisible_icon.xml
+R100	hn-android/res/drawable/main_list_selector.xml	app/src/main/res/drawable/main_list_selector.xml
+R100	hn-android/res/drawable/more.xml	app/src/main/res/drawable/more.xml
+R100	hn-android/res/drawable/rounded_button.xml	app/src/main/res/drawable/rounded_button.xml
+R100	hn-android/res/layout-v15/refresh_icon.xml	app/src/main/res/layout-v15/refresh_icon.xml
+R100	hn-android/res/layout/about.xml	app/src/main/res/layout/about.xml
+R100	hn-android/res/layout/action_bar_center_title_gray.xml	app/src/main/res/layout/action_bar_center_title_gray.xml
+R100	hn-android/res/layout/actionbar_center_title.xml	app/src/main/res/layout/actionbar_center_title.xml
+R100	hn-android/res/layout/article_activity.xml	app/src/main/res/layout/article_activity.xml
+R100	hn-android/res/layout/comments_activity.xml	app/src/main/res/layout/comments_activity.xml
+R100	hn-android/res/layout/comments_list_item.xml	app/src/main/res/layout/comments_list_item.xml
+R100	hn-android/res/layout/login_dialog.xml	app/src/main/res/layout/login_dialog.xml
+R100	hn-android/res/layout/main.xml	app/src/main/res/layout/main.xml
+R100	hn-android/res/layout/main_list_item.xml	app/src/main/res/layout/main_list_item.xml
+R100	hn-android/res/layout/main_list_item_loadmore.xml	app/src/main/res/layout/main_list_item_loadmore.xml
+R100	hn-android/res/layout/main_more_content.xml	app/src/main/res/layout/main_more_content.xml
+R100	hn-android/res/layout/panel_loading.xml	app/src/main/res/layout/panel_loading.xml
+R100	hn-android/res/layout/refresh_icon.xml	app/src/main/res/layout/refresh_icon.xml
+R100	hn-android/res/layout/settings.xml	app/src/main/res/layout/settings.xml
+R100	hn-android/res/layout/user_settings.xml	app/src/main/res/layout/user_settings.xml
+R100	hn-android/res/menu/main.xml	app/src/main/res/menu/main.xml
+R100	hn-android/res/menu/menu_share_refresh.xml	app/src/main/res/menu/menu_share_refresh.xml
+R100	hn-android/res/values-hdpi/res-dependent-style.xml	app/src/main/res/values-hdpi/res-dependent-style.xml
+R100	hn-android/res/values-xhdpi/res-dependent-style.xml	app/src/main/res/values-xhdpi/res-dependent-style.xml
+R100	hn-android/res/values/colors.xml	app/src/main/res/values/colors.xml
+R100	hn-android/res/values/dimens.xml	app/src/main/res/values/dimens.xml
+R100	hn-android/res/values/preference_values.xml	app/src/main/res/values/preference_values.xml
+R100	hn-android/res/values/strings.xml	app/src/main/res/values/strings.xml
+R100	hn-android/res/values/styles.xml	app/src/main/res/values/styles.xml
+R100	hn-android/res/values/themes.xml	app/src/main/res/values/themes.xml
+R100	hn-android/res/xml/preferences.xml	app/src/main/res/xml/preferences.xml
+M	build.gradle
+A	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+D	hn-android/gradle/wrapper/gradle-wrapper.jar
+D	hn-android/gradle/wrapper/gradle-wrapper.properties
+D	hn-android/hn-android.iml
+D	hn-android/test/strangehtml.html
+M	settings.gradle
+
+5027823;bumping version number and updating gradle plugin
+M	build.gradle
+M	hn-android/AndroidManifest.xml
+M	hn-android/build.gradle
+M	hn-android/hn-android-hn-android.iml
+
+21bb149;Merge pull request #165 from vrischmann/master
+8f73608;Merge pull request #164 from tbroadley/pull-down-refresh
+bcd1cb1;always compile in UTF-8
+M	hn-android/build.gradle
+
+96254a9;set the text color based on the comment class.
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+M	hn-android/src/com/manuelmaly/hn/model/HNComment.java
+M	hn-android/src/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+56be368;disable refreshing animation when pull-down refresh is disabled
+M	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+a2970c1;refactor the refresh logic in ArticleViewerActivity
+M	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+713adff;Disable refresh menu button animation when pull-down refresh is on
+M	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+53eb2f0;added pull-down refresh to ArticleReaderActivity
+M	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+19520f8;do not disable the menu refresh button
+M	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+fe55d4a;implement pull-down refresh in CommentsActivity
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+
+2331173;add method to toggle both refreshing animations
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+1e5080d;renamed the refresh menu item toggle method in the other classes
+M	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+
+9253e8d;disable pull-down refresh by default
+M	hn-android/res/values/preference_values.xml
+M	hn-android/src/com/manuelmaly/hn/Settings.java
+
+66f56a4;implement pull-to-refresh in MainActivity
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+b1967ac;rename method that toggles the menu refresh item
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+5486b88;added support-v4 and SwipeRefreshLayout elements
+M	hn-android/build.gradle
+M	hn-android/res/layout/article_activity.xml
+M	hn-android/res/layout/comments_activity.xml
+M	hn-android/res/layout/main.xml
+
+ddce83d;extend the last commit to ArticleReaderActivity
+M	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+16c3812;if pull-down refresh is active, disable action bar refresh
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+5e03595;added a getter method to Settings
+M	hn-android/src/com/manuelmaly/hn/Settings.java
+
+57b4d58;added 'Pull Down to Refresh' to settings menu
+M	hn-android/res/values/preference_values.xml
+M	hn-android/res/xml/preferences.xml
+
+b20e244;Merge pull request #162 from tbroadley/space-after-comments
+0644ed5;removed trailing space in multi-paragraph comments
+M	hn-android/src/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+2736c06;bumping version code 22
+M	hn-android/build.gradle
+
+ce022f4;Merge pull request #161 from manmal/fix/comments
+1079276;fixing the issue with the empty comments
+M	hn-android/src/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+ae2c32c;removing crashlytics
+M	hn-android/build.gradle
+M	hn-android/hn-android-hn-android.iml
+M	hn-android/res/xml/preferences.xml
+M	hn-android/src/com/manuelmaly/hn/ExternalIntentActivity.java
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+M	hn-android/src/com/manuelmaly/hn/Settings.java
+
+fd49bfc;fixing android studio
+M	hn-android.iml
+M	hn-android/hn-android-hn-android.iml
+
+1476f46;bumping version and build number (21)
+M	hn-android/build.gradle
+
+77f8bf0;Merge pull request #155 from manmal/fix/many-comments-cache
+63077fd;caching comments for articles where the total count is less than 150
+M	hn-android/src/com/manuelmaly/hn/util/FileUtil.java
+
+71f61aa;Merge pull request #154 from manmal/feature/crashlytics
+53efdfd;starting crashlytics on launch
+M	hn-android/src/com/manuelmaly/hn/ExternalIntentActivity.java
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+9796292;adding crashlytics library
+M	.gitignore
+M	hn-android/AndroidManifest.xml
+M	hn-android/build.gradle
+M	hn-android/hn-android-hn-android.iml
+
+ab5ccb8;adding crashlytics preference (default off)
+M	hn-android/res/values/strings.xml
+M	hn-android/res/xml/preferences.xml
+M	hn-android/src/com/manuelmaly/hn/Settings.java
+
+2e3badc;Merge pull request #153 from manmal/refactor/gradle-build
+af8d35f;refactoring build.gradle
+M	.gitignore
+M	README.md
+M	hn-android/AndroidManifest.xml
+M	hn-android/build.gradle
+M	hn-android/hn-android-hn-android.iml
+
+07acf88;Merge pull request #151 from danieldisu/master
+afeccb3;Merge pull request #152 from danieldisu/collapse_thread
+434c352;Added menu option to collapse comment thread.
+M	hn-android/res/values/strings.xml
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+M	hn-android/src/com/manuelmaly/hn/model/HNCommentTreeNode.java
+
+74d3621;Handle external intent to open comment activity
+M	hn-android/src/com/manuelmaly/hn/ExternalIntentActivity.java
+
+6add01b;Changed app name in open intent menu
+M	hn-android/AndroidManifest.xml
+
+adbfd9b;bumping version number
+M	hn-android/AndroidManifest.xml
+
+3bc4718;Merge pull request #150 from manmal/feature/load-more-endless
+a0473cc;Merge pull request #149 from manmal/fix/comment_upvote
+60f6113;loading more until the end of time
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+M	hn-android/src/com/manuelmaly/hn/model/HNFeed.java
+M	hn-android/src/com/manuelmaly/hn/server/BaseHTTPCommand.java
+
+4a9f5a4;duck taping the comments upvote
+M	hn-android/src/com/manuelmaly/hn/model/HNComment.java
+M	hn-android/src/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+c2d01b5;bumping version number to 1.9.9
+M	hn-android/AndroidManifest.xml
+
+3781b8d;Merge pull request #144 from manmal/fix/login
+e49c317;fixing login issue
+M	hn-android.iml
+M	hn-android/hn-android-hn-android.iml
+M	hn-android/src/com/manuelmaly/hn/server/BaseHTTPCommand.java
+M	hn-android/src/com/manuelmaly/hn/server/GetHNUserTokenHTTPCommand.java
+M	hn-android/src/com/manuelmaly/hn/server/GetHNUserTokenResponseHandler.java
+M	hn-android/src/com/manuelmaly/hn/server/NoResponseCommand.java
+M	hn-android/src/com/manuelmaly/hn/server/StringDownloadCommand.java
+M	hn-android/src/com/manuelmaly/hn/server/VoteHTTPCommand.java
+M	hn-android/src/com/manuelmaly/hn/task/HNLoginTask.java
+
+559d2ce;Merge pull request #141 from manmal/fix/comments-and-upvote
+43e27fd;Merge pull request #138 from OneKorg/share_current_page
+d046a6a;bumping version number
+M	hn-android/AndroidManifest.xml
+
+08fbedb;fixing comments parsing
+M	hn-android/src/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+dc30ffd;fixing upvoting
+M	hn-android/src/com/manuelmaly/hn/model/HNPost.java
+M	hn-android/src/com/manuelmaly/hn/parser/HNFeedParser.java
+
+22db184;fixing the issue with the comments
+M	hn-android/src/com/manuelmaly/hn/parser/HNFeedParser.java
+
+ba4e0dc;Merge pull request #136 from OneKorg/comment_only_posts_start_in_comment_activity
+515e49f;share now sends the current page being displayed in the WebView
+M	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+aec0e80;added news.ycombinator as a class property named HACKERNEWS_URLDOMAIN
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+7f00b55;fixed .imls a second time
+M	hn-android/hn-android-hn-android.iml
+M	hn-android/hn-android.iml
+
+ea70387;fixed .imi s being differentw
+M	hn-android.iml
+M	hn-android/hn-android.iml
+
+df1a6bc;refactored starting commentActivity to a separate method so it can be reused
+M	hn-android.iml
+M	hn-android/hn-android-hn-android.iml
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+57dcde8;manually merging pr 72
+7b3bfee;Merge pull request #127 from clancychilds/android-studio-1.0-compat
+b0b5de1;Merge pull request #131 from mparramont/patch-1
+298f358;Style fix
+M	README.md
+
+31e84c3;Changes required for Android Studio 1.0
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	hn-android.iml
+M	hn-android/build.gradle
+M	hn-android/hn-android-hn-android.iml
+
+c12f659;Update README.md
+M	README.md
+
+090a669;Adding play store feature graphic.
+M	hn-android/AndroidManifest.xml
+A	hn-android/design/appstore_feature.png
+A	hn-android/design/appstore_feature.psd
+
+356fa89;Removing exclude of outputs and source in .iml.
+M	hn-android/hn-android-hn-android.iml
+
+6ad252f;Merge branch 'master' into pr/119
+dd5d326;Fixing SDK paths.
+M	hn-android.iml
+M	hn-android/hn-android-hn-android.iml
+
+3e8bbc6;fixing vote validator
+M	hn-android/hn-android-hn-android.iml
+M	hn-android/src/com/manuelmaly/hn/server/HNVoteCommand.java
+
+b9cb3af;adding logout option
+M	hn-android/AndroidManifest.xml
+M	hn-android/res/values/strings.xml
+M	hn-android/src/com/manuelmaly/hn/SettingsActivity.java
+
+e72f45f;fixing login
+M	hn-android/src/com/manuelmaly/hn/Settings.java
+M	hn-android/src/com/manuelmaly/hn/task/HNLoginTask.java
+
+f14e48b;Merge pull request #116 from manmal/gradle_update
+2609f0c;Updating to Android Studio 0.8.
+M	build.gradle
+A	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	gradlew.bat
+M	hn-android.iml
+A	hn-android/hn-android.iml
+
+bbcb654;Merge pull request #108 from peshkira/gradle_update_fix
+08380d0;Merge pull request #109 from maltzj/maltz-comments-caching
+e371beb;fixed comments caching
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+
+3e4a98c;big bang gradle fix :collision:
+D	appcompat/AndroidManifest.xml
+D	appcompat/README.txt
+D	appcompat/libs/android-support-v4.jar
+D	appcompat/libs/android-support-v7-appcompat.jar
+D	appcompat/project.properties
+D	appcompat/res/anim/abc_fade_in.xml
+D	appcompat/res/anim/abc_fade_out.xml
+D	appcompat/res/anim/abc_slide_in_bottom.xml
+D	appcompat/res/anim/abc_slide_in_top.xml
+D	appcompat/res/anim/abc_slide_out_bottom.xml
+D	appcompat/res/anim/abc_slide_out_top.xml
+D	appcompat/res/color/abc_search_url_text_holo.xml
+D	appcompat/res/drawable-hdpi/abc_ab_bottom_solid_dark_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_bottom_solid_light_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_bottom_transparent_dark_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_bottom_transparent_light_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_solid_dark_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_solid_light_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_stacked_solid_dark_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_stacked_solid_light_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_stacked_transparent_dark_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_stacked_transparent_light_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_transparent_dark_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_ab_transparent_light_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_cab_background_bottom_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_cab_background_bottom_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_cab_background_top_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_cab_background_top_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_ic_ab_back_holo_dark.png
+D	appcompat/res/drawable-hdpi/abc_ic_ab_back_holo_light.png
+D	appcompat/res/drawable-hdpi/abc_ic_cab_done_holo_dark.png
+D	appcompat/res/drawable-hdpi/abc_ic_cab_done_holo_light.png
+D	appcompat/res/drawable-hdpi/abc_ic_clear_disabled.png
+D	appcompat/res/drawable-hdpi/abc_ic_clear_normal.png
+D	appcompat/res/drawable-hdpi/abc_ic_clear_search_api_disabled_holo_light.png
+D	appcompat/res/drawable-hdpi/abc_ic_clear_search_api_holo_light.png
+D	appcompat/res/drawable-hdpi/abc_ic_commit_search_api_holo_dark.png
+D	appcompat/res/drawable-hdpi/abc_ic_commit_search_api_holo_light.png
+D	appcompat/res/drawable-hdpi/abc_ic_go.png
+D	appcompat/res/drawable-hdpi/abc_ic_go_search_api_holo_light.png
+D	appcompat/res/drawable-hdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png
+D	appcompat/res/drawable-hdpi/abc_ic_menu_moreoverflow_normal_holo_light.png
+D	appcompat/res/drawable-hdpi/abc_ic_menu_share_holo_dark.png
+D	appcompat/res/drawable-hdpi/abc_ic_menu_share_holo_light.png
+D	appcompat/res/drawable-hdpi/abc_ic_search.png
+D	appcompat/res/drawable-hdpi/abc_ic_search_api_holo_light.png
+D	appcompat/res/drawable-hdpi/abc_ic_voice_search.png
+D	appcompat/res/drawable-hdpi/abc_ic_voice_search_api_holo_light.png
+D	appcompat/res/drawable-hdpi/abc_list_divider_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_list_divider_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_list_focused_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_list_longpressed_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_list_pressed_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_list_pressed_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_list_selector_disabled_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_list_selector_disabled_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_menu_dropdown_panel_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_menu_dropdown_panel_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_menu_hardkey_panel_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_menu_hardkey_panel_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_spinner_ab_default_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_spinner_ab_default_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_spinner_ab_disabled_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_spinner_ab_disabled_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_spinner_ab_focused_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_spinner_ab_focused_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_spinner_ab_pressed_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_spinner_ab_pressed_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_tab_selected_focused_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_tab_selected_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_tab_selected_pressed_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_tab_unselected_pressed_holo.9.png
+D	appcompat/res/drawable-hdpi/abc_textfield_search_default_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_textfield_search_default_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_textfield_search_right_default_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_textfield_search_right_default_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_textfield_search_right_selected_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_textfield_search_right_selected_holo_light.9.png
+D	appcompat/res/drawable-hdpi/abc_textfield_search_selected_holo_dark.9.png
+D	appcompat/res/drawable-hdpi/abc_textfield_search_selected_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_bottom_solid_dark_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_bottom_solid_light_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_bottom_transparent_dark_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_bottom_transparent_light_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_share_pack_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_solid_dark_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_solid_light_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_stacked_solid_dark_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_stacked_solid_light_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_stacked_transparent_dark_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_stacked_transparent_light_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_transparent_dark_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_ab_transparent_light_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_cab_background_bottom_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_cab_background_bottom_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_cab_background_top_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_cab_background_top_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_ic_ab_back_holo_dark.png
+D	appcompat/res/drawable-mdpi/abc_ic_ab_back_holo_light.png
+D	appcompat/res/drawable-mdpi/abc_ic_cab_done_holo_dark.png
+D	appcompat/res/drawable-mdpi/abc_ic_cab_done_holo_light.png
+D	appcompat/res/drawable-mdpi/abc_ic_clear_disabled.png
+D	appcompat/res/drawable-mdpi/abc_ic_clear_normal.png
+D	appcompat/res/drawable-mdpi/abc_ic_clear_search_api_disabled_holo_light.png
+D	appcompat/res/drawable-mdpi/abc_ic_clear_search_api_holo_light.png
+D	appcompat/res/drawable-mdpi/abc_ic_commit_search_api_holo_dark.png
+D	appcompat/res/drawable-mdpi/abc_ic_commit_search_api_holo_light.png
+D	appcompat/res/drawable-mdpi/abc_ic_go.png
+D	appcompat/res/drawable-mdpi/abc_ic_go_search_api_holo_light.png
+D	appcompat/res/drawable-mdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png
+D	appcompat/res/drawable-mdpi/abc_ic_menu_moreoverflow_normal_holo_light.png
+D	appcompat/res/drawable-mdpi/abc_ic_menu_share_holo_dark.png
+D	appcompat/res/drawable-mdpi/abc_ic_menu_share_holo_light.png
+D	appcompat/res/drawable-mdpi/abc_ic_search.png
+D	appcompat/res/drawable-mdpi/abc_ic_search_api_holo_light.png
+D	appcompat/res/drawable-mdpi/abc_ic_voice_search.png
+D	appcompat/res/drawable-mdpi/abc_ic_voice_search_api_holo_light.png
+D	appcompat/res/drawable-mdpi/abc_list_divider_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_list_divider_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_list_focused_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_list_longpressed_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_list_pressed_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_list_pressed_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_menu_dropdown_panel_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_menu_dropdown_panel_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_menu_hardkey_panel_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_menu_hardkey_panel_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_spinner_ab_default_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_spinner_ab_default_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_spinner_ab_disabled_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_spinner_ab_disabled_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_spinner_ab_focused_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_spinner_ab_focused_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_spinner_ab_pressed_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_spinner_ab_pressed_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_tab_selected_focused_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_tab_selected_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_tab_selected_pressed_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_tab_unselected_pressed_holo.9.png
+D	appcompat/res/drawable-mdpi/abc_textfield_search_default_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_textfield_search_default_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_textfield_search_right_default_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_textfield_search_right_default_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_textfield_search_right_selected_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_textfield_search_right_selected_holo_light.9.png
+D	appcompat/res/drawable-mdpi/abc_textfield_search_selected_holo_dark.9.png
+D	appcompat/res/drawable-mdpi/abc_textfield_search_selected_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_bottom_solid_dark_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_bottom_solid_light_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_bottom_transparent_dark_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_bottom_transparent_light_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_solid_dark_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_solid_light_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_stacked_solid_dark_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_stacked_solid_light_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_stacked_transparent_dark_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_stacked_transparent_light_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_transparent_dark_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_ab_transparent_light_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_cab_background_bottom_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_cab_background_bottom_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_cab_background_top_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_cab_background_top_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_ic_ab_back_holo_dark.png
+D	appcompat/res/drawable-xhdpi/abc_ic_ab_back_holo_light.png
+D	appcompat/res/drawable-xhdpi/abc_ic_cab_done_holo_dark.png
+D	appcompat/res/drawable-xhdpi/abc_ic_cab_done_holo_light.png
+D	appcompat/res/drawable-xhdpi/abc_ic_clear_disabled.png
+D	appcompat/res/drawable-xhdpi/abc_ic_clear_search_api_disabled_holo_light.png
+D	appcompat/res/drawable-xhdpi/abc_ic_clear_search_api_holo_light.png
+D	appcompat/res/drawable-xhdpi/abc_ic_commit_search_api_holo_dark.png
+D	appcompat/res/drawable-xhdpi/abc_ic_commit_search_api_holo_light.png
+D	appcompat/res/drawable-xhdpi/abc_ic_go.png
+D	appcompat/res/drawable-xhdpi/abc_ic_go_search_api_holo_light.png
+D	appcompat/res/drawable-xhdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png
+D	appcompat/res/drawable-xhdpi/abc_ic_menu_moreoverflow_normal_holo_light.png
+D	appcompat/res/drawable-xhdpi/abc_ic_menu_share_holo_dark.png
+D	appcompat/res/drawable-xhdpi/abc_ic_menu_share_holo_light.png
+D	appcompat/res/drawable-xhdpi/abc_ic_search.png
+D	appcompat/res/drawable-xhdpi/abc_ic_search_api_holo_light.png
+D	appcompat/res/drawable-xhdpi/abc_ic_voice_search.png
+D	appcompat/res/drawable-xhdpi/abc_ic_voice_search_api_holo_light.png
+D	appcompat/res/drawable-xhdpi/abc_list_divider_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_list_divider_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_list_focused_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_list_longpressed_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_list_pressed_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_list_pressed_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_list_selector_disabled_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_menu_dropdown_panel_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_menu_dropdown_panel_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_menu_hardkey_panel_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_menu_hardkey_panel_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_spinner_ab_default_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_spinner_ab_default_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_spinner_ab_disabled_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_spinner_ab_disabled_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_spinner_ab_focused_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_spinner_ab_focused_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_spinner_ab_pressed_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_spinner_ab_pressed_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_tab_selected_focused_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_tab_selected_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_tab_selected_pressed_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_tab_unselected_pressed_holo.9.png
+D	appcompat/res/drawable-xhdpi/abc_textfield_search_default_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_textfield_search_default_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_textfield_search_right_default_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_textfield_search_right_default_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_textfield_search_right_selected_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_textfield_search_right_selected_holo_light.9.png
+D	appcompat/res/drawable-xhdpi/abc_textfield_search_selected_holo_dark.9.png
+D	appcompat/res/drawable-xhdpi/abc_textfield_search_selected_holo_light.9.png
+D	appcompat/res/drawable/abc_ic_clear.xml
+D	appcompat/res/drawable/abc_ic_clear_holo_light.xml
+D	appcompat/res/drawable/abc_item_background_holo_dark.xml
+D	appcompat/res/drawable/abc_item_background_holo_light.xml
+D	appcompat/res/drawable/abc_list_selector_background_transition_holo_dark.xml
+D	appcompat/res/drawable/abc_list_selector_background_transition_holo_light.xml
+D	appcompat/res/drawable/abc_list_selector_holo_dark.xml
+D	appcompat/res/drawable/abc_list_selector_holo_light.xml
+D	appcompat/res/drawable/abc_search_dropdown_dark.xml
+D	appcompat/res/drawable/abc_search_dropdown_light.xml
+D	appcompat/res/drawable/abc_spinner_ab_holo_dark.xml
+D	appcompat/res/drawable/abc_spinner_ab_holo_light.xml
+D	appcompat/res/drawable/abc_tab_indicator_ab_holo.xml
+D	appcompat/res/drawable/abc_textfield_searchview_holo_dark.xml
+D	appcompat/res/drawable/abc_textfield_searchview_holo_light.xml
+D	appcompat/res/drawable/abc_textfield_searchview_right_holo_dark.xml
+D	appcompat/res/drawable/abc_textfield_searchview_right_holo_light.xml
+D	appcompat/res/layout-v11/abc_action_bar_decor.xml
+D	appcompat/res/layout-v14/abc_activity_chooser_view.xml
+D	appcompat/res/layout/abc_action_bar_decor.xml
+D	appcompat/res/layout/abc_action_bar_decor_include.xml
+D	appcompat/res/layout/abc_action_bar_decor_overlay.xml
+D	appcompat/res/layout/abc_action_bar_home.xml
+D	appcompat/res/layout/abc_action_bar_tab.xml
+D	appcompat/res/layout/abc_action_bar_tabbar.xml
+D	appcompat/res/layout/abc_action_bar_title_item.xml
+D	appcompat/res/layout/abc_action_bar_view_list_nav_layout.xml
+D	appcompat/res/layout/abc_action_menu_item_layout.xml
+D	appcompat/res/layout/abc_action_menu_layout.xml
+D	appcompat/res/layout/abc_action_mode_bar.xml
+D	appcompat/res/layout/abc_action_mode_close_item.xml
+D	appcompat/res/layout/abc_activity_chooser_view.xml
+D	appcompat/res/layout/abc_activity_chooser_view_include.xml
+D	appcompat/res/layout/abc_activity_chooser_view_list_item.xml
+D	appcompat/res/layout/abc_expanded_menu_layout.xml
+D	appcompat/res/layout/abc_list_menu_item_checkbox.xml
+D	appcompat/res/layout/abc_list_menu_item_icon.xml
+D	appcompat/res/layout/abc_list_menu_item_layout.xml
+D	appcompat/res/layout/abc_list_menu_item_radio.xml
+D	appcompat/res/layout/abc_popup_menu_item_layout.xml
+D	appcompat/res/layout/abc_search_dropdown_item_icons_2line.xml
+D	appcompat/res/layout/abc_search_view.xml
+D	appcompat/res/layout/support_simple_spinner_dropdown_item.xml
+D	appcompat/res/values-af/strings.xml
+D	appcompat/res/values-am/strings.xml
+D	appcompat/res/values-ar/strings.xml
+D	appcompat/res/values-bg/strings.xml
+D	appcompat/res/values-ca/strings.xml
+D	appcompat/res/values-cs/strings.xml
+D	appcompat/res/values-da/strings.xml
+D	appcompat/res/values-de/strings.xml
+D	appcompat/res/values-el/strings.xml
+D	appcompat/res/values-en-rGB/strings.xml
+D	appcompat/res/values-en-rIN/strings.xml
+D	appcompat/res/values-es-rUS/strings.xml
+D	appcompat/res/values-es/strings.xml
+D	appcompat/res/values-et-rEE/strings.xml
+D	appcompat/res/values-fa/strings.xml
+D	appcompat/res/values-fi/strings.xml
+D	appcompat/res/values-fr-rCA/strings.xml
+D	appcompat/res/values-fr/strings.xml
+D	appcompat/res/values-hi/strings.xml
+D	appcompat/res/values-hr/strings.xml
+D	appcompat/res/values-hu/strings.xml
+D	appcompat/res/values-hy-rAM/strings.xml
+D	appcompat/res/values-in/strings.xml
+D	appcompat/res/values-it/strings.xml
+D	appcompat/res/values-iw/strings.xml
+D	appcompat/res/values-ja/strings.xml
+D	appcompat/res/values-ka-rGE/strings.xml
+D	appcompat/res/values-km-rKH/strings.xml
+D	appcompat/res/values-ko/strings.xml
+D	appcompat/res/values-land/bools.xml
+D	appcompat/res/values-land/config.xml
+D	appcompat/res/values-land/dimens.xml
+D	appcompat/res/values-large/bools.xml
+D	appcompat/res/values-large/config.xml
+D	appcompat/res/values-large/dimens.xml
+D	appcompat/res/values-lo-rLA/strings.xml
+D	appcompat/res/values-lt/strings.xml
+D	appcompat/res/values-lv/strings.xml
+D	appcompat/res/values-mn-rMN/strings.xml
+D	appcompat/res/values-ms-rMY/strings.xml
+D	appcompat/res/values-nb/strings.xml
+D	appcompat/res/values-nl/strings.xml
+D	appcompat/res/values-pl/strings.xml
+D	appcompat/res/values-pt-rPT/strings.xml
+D	appcompat/res/values-pt/strings.xml
+D	appcompat/res/values-ro/strings.xml
+D	appcompat/res/values-ru/strings.xml
+D	appcompat/res/values-sk/strings.xml
+D	appcompat/res/values-sl/strings.xml
+D	appcompat/res/values-sr/strings.xml
+D	appcompat/res/values-sv/strings.xml
+D	appcompat/res/values-sw/strings.xml
+D	appcompat/res/values-sw600dp/config.xml
+D	appcompat/res/values-sw600dp/dimens.xml
+D	appcompat/res/values-th/strings.xml
+D	appcompat/res/values-tl/strings.xml
+D	appcompat/res/values-tr/strings.xml
+D	appcompat/res/values-uk/strings.xml
+D	appcompat/res/values-v11/styles_base.xml
+D	appcompat/res/values-v11/themes_base.xml
+D	appcompat/res/values-v14/styles_base.xml
+D	appcompat/res/values-v14/themes_base.xml
+D	appcompat/res/values-vi/strings.xml
+D	appcompat/res/values-w360dp/dimens.xml
+D	appcompat/res/values-w480dp/bools.xml
+D	appcompat/res/values-w480dp/config.xml
+D	appcompat/res/values-w500dp/dimens.xml
+D	appcompat/res/values-w600dp/dimens.xml
+D	appcompat/res/values-w720dp/bools.xml
+D	appcompat/res/values-xlarge/bools.xml
+D	appcompat/res/values-xlarge/dimens.xml
+D	appcompat/res/values-zh-rCN/strings.xml
+D	appcompat/res/values-zh-rHK/strings.xml
+D	appcompat/res/values-zh-rTW/strings.xml
+D	appcompat/res/values-zu/strings.xml
+D	appcompat/res/values/attrs.xml
+D	appcompat/res/values/bools.xml
+D	appcompat/res/values/colors.xml
+D	appcompat/res/values/config.xml
+D	appcompat/res/values/dimens.xml
+D	appcompat/res/values/ids.xml
+D	appcompat/res/values/strings.xml
+D	appcompat/res/values/styles.xml
+D	appcompat/res/values/styles_base.xml
+D	appcompat/res/values/themes.xml
+D	appcompat/res/values/themes_base.xml
+D	appcompat/src/.readme
+A	build.gradle
+A	gradle.properties
+A	gradlew
+A	gradlew.bat
+A	hn-android.iml
+D	hn-android/androidannotations-2.5.jar
+M	hn-android/build.gradle
+R091	hn-android/hn-android.iml	hn-android/hn-android-hn-android.iml
+D	hn-android/libs/android-support-v4.jar
+D	hn-android/libs/android-support-v7-appcompat.jar
+D	hn-android/libs/androidannotations-3.0.1.jar
+D	hn-android/libs/androidannotations-api-3.0.1.jar
+M	hn-android/project.properties
+M	hn-android/src/com/manuelmaly/hn/AboutActivity.java
+M	hn-android/src/com/manuelmaly/hn/App.java
+M	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+M	hn-android/src/com/manuelmaly/hn/login/LoginActivity.java
+M	hn-android/src/com/manuelmaly/hn/parser/BaseHTMLParser.java
+M	hn-android/src/com/manuelmaly/hn/parser/HNCommentsParser.java
+M	hn-android/src/com/manuelmaly/hn/parser/HNFeedParser.java
+M	hn-android/src/com/manuelmaly/hn/server/BaseHTTPCommand.java
+M	hn-android/src/com/manuelmaly/hn/server/GetHNUserTokenHTTPCommand.java
+M	hn-android/src/com/manuelmaly/hn/server/GetHNUserTokenResponseHandler.java
+M	hn-android/src/com/manuelmaly/hn/server/HNCredentials.java
+M	hn-android/src/com/manuelmaly/hn/server/HNVoteCommand.java
+M	hn-android/src/com/manuelmaly/hn/server/HTMLResponseHandler.java
+M	hn-android/src/com/manuelmaly/hn/server/NoResponseCommand.java
+M	hn-android/src/com/manuelmaly/hn/server/StringDownloadCommand.java
+M	hn-android/src/com/manuelmaly/hn/server/VoteHTTPCommand.java
+M	hn-android/src/com/manuelmaly/hn/task/BaseTask.java
+M	hn-android/src/com/manuelmaly/hn/task/HNFeedTaskBase.java
+M	hn-android/src/com/manuelmaly/hn/task/HNLoginTask.java
+M	hn-android/src/com/manuelmaly/hn/task/HNPostCommentsTask.java
+M	hn-android/src/com/manuelmaly/hn/util/DisplayHelper.java
+M	hn-android/src/com/manuelmaly/hn/util/FileUtil.java
+M	hn-android/src/com/manuelmaly/hn/util/Run.java
+A	settings.gradle
+
+5510bb3;Updating to latest gradle and AnroidAnnotations, not compiling currently.
+M	appcompat/project.properties
+M	hn-android/build.gradle
+M	hn-android/gradle/wrapper/gradle-wrapper.properties
+M	hn-android/hn-android.iml
+D	hn-android/libs/androidannotations-2.5-api.jar
+A	hn-android/libs/androidannotations-3.0.1.jar
+A	hn-android/libs/androidannotations-api-3.0.1.jar
+
+b33ced7;Changing scheme to https.
+M	hn-android/AndroidManifest.xml
+
+6d485b3;useless log statements were removed
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+
+4e9bf21;formatted MainActivity.java because apparently it wasn't properly formatted before?
+M	hn-android/src/com/manuelmaly/hn/MainActivity.java
+
+bd96cf9;made refresh icons work pre-holo
+A	hn-android/res/layout-v15/refresh_icon.xml
+M	hn-android/res/layout/refresh_icon.xml
+
+b61744d;fixed up that bug where the text in ask hn comments wasn't getting displayed
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+
+6b598f2;cleaned up the README to reflect changes made to the project structure
+R093	hn-android/README.md	README.md
+
+1b15598;forgot to bring .factorypath along with the reorganization of files
+A	hn-android/.factorypath
+
+6ab1272;Merge pull request #103 from maltzj/add-action-bar
+34a3baa;a couple of last minute touchups before sending this out for review
+M	hn-android/res/layout/settings.xml
+M	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+
+1c374ee;project migration so that it has a better layout
+D	.classpath
+D	.factorypath
+D	.project
+D	.settings/org.eclipse.jdt.apt.core.prefs
+D	.settings/org.eclipse.jdt.core.prefs
+A	appcompat/AndroidManifest.xml
+A	appcompat/README.txt
+R100	libs/android-support-v4.jar	appcompat/libs/android-support-v4.jar
+R100	libs/android-support-v7-appcompat.jar	appcompat/libs/android-support-v7-appcompat.jar
+A	appcompat/project.properties
+A	appcompat/res/anim/abc_fade_in.xml
+A	appcompat/res/anim/abc_fade_out.xml
+A	appcompat/res/anim/abc_slide_in_bottom.xml
+A	appcompat/res/anim/abc_slide_in_top.xml
+A	appcompat/res/anim/abc_slide_out_bottom.xml
+A	appcompat/res/anim/abc_slide_out_top.xml
+A	appcompat/res/color/abc_search_url_text_holo.xml
+A	appcompat/res/drawable-hdpi/abc_ab_bottom_solid_dark_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_bottom_solid_light_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_bottom_transparent_dark_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_bottom_transparent_light_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_solid_dark_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_solid_light_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_stacked_solid_dark_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_stacked_solid_light_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_stacked_transparent_dark_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_stacked_transparent_light_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_transparent_dark_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_ab_transparent_light_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_cab_background_bottom_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_cab_background_bottom_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_cab_background_top_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_cab_background_top_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_ic_ab_back_holo_dark.png
+A	appcompat/res/drawable-hdpi/abc_ic_ab_back_holo_light.png
+A	appcompat/res/drawable-hdpi/abc_ic_cab_done_holo_dark.png
+A	appcompat/res/drawable-hdpi/abc_ic_cab_done_holo_light.png
+A	appcompat/res/drawable-hdpi/abc_ic_clear_disabled.png
+A	appcompat/res/drawable-hdpi/abc_ic_clear_normal.png
+A	appcompat/res/drawable-hdpi/abc_ic_clear_search_api_disabled_holo_light.png
+A	appcompat/res/drawable-hdpi/abc_ic_clear_search_api_holo_light.png
+A	appcompat/res/drawable-hdpi/abc_ic_commit_search_api_holo_dark.png
+A	appcompat/res/drawable-hdpi/abc_ic_commit_search_api_holo_light.png
+A	appcompat/res/drawable-hdpi/abc_ic_go.png
+A	appcompat/res/drawable-hdpi/abc_ic_go_search_api_holo_light.png
+A	appcompat/res/drawable-hdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png
+A	appcompat/res/drawable-hdpi/abc_ic_menu_moreoverflow_normal_holo_light.png
+A	appcompat/res/drawable-hdpi/abc_ic_menu_share_holo_dark.png
+A	appcompat/res/drawable-hdpi/abc_ic_menu_share_holo_light.png
+A	appcompat/res/drawable-hdpi/abc_ic_search.png
+A	appcompat/res/drawable-hdpi/abc_ic_search_api_holo_light.png
+A	appcompat/res/drawable-hdpi/abc_ic_voice_search.png
+A	appcompat/res/drawable-hdpi/abc_ic_voice_search_api_holo_light.png
+A	appcompat/res/drawable-hdpi/abc_list_divider_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_list_divider_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_list_focused_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_list_longpressed_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_list_pressed_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_list_pressed_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_list_selector_disabled_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_list_selector_disabled_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_menu_dropdown_panel_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_menu_dropdown_panel_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_menu_hardkey_panel_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_menu_hardkey_panel_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_spinner_ab_default_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_spinner_ab_default_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_spinner_ab_disabled_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_spinner_ab_disabled_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_spinner_ab_focused_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_spinner_ab_focused_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_spinner_ab_pressed_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_spinner_ab_pressed_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_tab_selected_focused_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_tab_selected_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_tab_selected_pressed_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_tab_unselected_pressed_holo.9.png
+A	appcompat/res/drawable-hdpi/abc_textfield_search_default_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_textfield_search_default_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_textfield_search_right_default_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_textfield_search_right_default_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_textfield_search_right_selected_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_textfield_search_right_selected_holo_light.9.png
+A	appcompat/res/drawable-hdpi/abc_textfield_search_selected_holo_dark.9.png
+A	appcompat/res/drawable-hdpi/abc_textfield_search_selected_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_bottom_solid_dark_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_bottom_solid_light_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_bottom_transparent_dark_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_bottom_transparent_light_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_share_pack_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_solid_dark_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_solid_light_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_stacked_solid_dark_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_stacked_solid_light_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_stacked_transparent_dark_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_stacked_transparent_light_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_transparent_dark_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_ab_transparent_light_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_cab_background_bottom_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_cab_background_bottom_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_cab_background_top_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_cab_background_top_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_ic_ab_back_holo_dark.png
+A	appcompat/res/drawable-mdpi/abc_ic_ab_back_holo_light.png
+A	appcompat/res/drawable-mdpi/abc_ic_cab_done_holo_dark.png
+A	appcompat/res/drawable-mdpi/abc_ic_cab_done_holo_light.png
+A	appcompat/res/drawable-mdpi/abc_ic_clear_disabled.png
+A	appcompat/res/drawable-mdpi/abc_ic_clear_normal.png
+A	appcompat/res/drawable-mdpi/abc_ic_clear_search_api_disabled_holo_light.png
+A	appcompat/res/drawable-mdpi/abc_ic_clear_search_api_holo_light.png
+A	appcompat/res/drawable-mdpi/abc_ic_commit_search_api_holo_dark.png
+A	appcompat/res/drawable-mdpi/abc_ic_commit_search_api_holo_light.png
+A	appcompat/res/drawable-mdpi/abc_ic_go.png
+A	appcompat/res/drawable-mdpi/abc_ic_go_search_api_holo_light.png
+A	appcompat/res/drawable-mdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png
+A	appcompat/res/drawable-mdpi/abc_ic_menu_moreoverflow_normal_holo_light.png
+A	appcompat/res/drawable-mdpi/abc_ic_menu_share_holo_dark.png
+A	appcompat/res/drawable-mdpi/abc_ic_menu_share_holo_light.png
+A	appcompat/res/drawable-mdpi/abc_ic_search.png
+A	appcompat/res/drawable-mdpi/abc_ic_search_api_holo_light.png
+A	appcompat/res/drawable-mdpi/abc_ic_voice_search.png
+A	appcompat/res/drawable-mdpi/abc_ic_voice_search_api_holo_light.png
+A	appcompat/res/drawable-mdpi/abc_list_divider_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_list_divider_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_list_focused_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_list_longpressed_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_list_pressed_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_list_pressed_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_menu_dropdown_panel_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_menu_dropdown_panel_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_menu_hardkey_panel_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_menu_hardkey_panel_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_spinner_ab_default_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_spinner_ab_default_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_spinner_ab_disabled_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_spinner_ab_disabled_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_spinner_ab_focused_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_spinner_ab_focused_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_spinner_ab_pressed_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_spinner_ab_pressed_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_tab_selected_focused_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_tab_selected_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_tab_selected_pressed_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_tab_unselected_pressed_holo.9.png
+A	appcompat/res/drawable-mdpi/abc_textfield_search_default_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_textfield_search_default_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_textfield_search_right_default_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_textfield_search_right_default_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_textfield_search_right_selected_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_textfield_search_right_selected_holo_light.9.png
+A	appcompat/res/drawable-mdpi/abc_textfield_search_selected_holo_dark.9.png
+A	appcompat/res/drawable-mdpi/abc_textfield_search_selected_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_bottom_solid_dark_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_bottom_solid_light_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_bottom_transparent_dark_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_bottom_transparent_light_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_solid_dark_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_solid_light_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_stacked_solid_dark_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_stacked_solid_light_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_stacked_transparent_dark_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_stacked_transparent_light_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_transparent_dark_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_ab_transparent_light_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_cab_background_bottom_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_cab_background_bottom_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_cab_background_top_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_cab_background_top_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_ic_ab_back_holo_dark.png
+A	appcompat/res/drawable-xhdpi/abc_ic_ab_back_holo_light.png
+A	appcompat/res/drawable-xhdpi/abc_ic_cab_done_holo_dark.png
+A	appcompat/res/drawable-xhdpi/abc_ic_cab_done_holo_light.png
+A	appcompat/res/drawable-xhdpi/abc_ic_clear_disabled.png
+A	appcompat/res/drawable-xhdpi/abc_ic_clear_search_api_disabled_holo_light.png
+A	appcompat/res/drawable-xhdpi/abc_ic_clear_search_api_holo_light.png
+A	appcompat/res/drawable-xhdpi/abc_ic_commit_search_api_holo_dark.png
+A	appcompat/res/drawable-xhdpi/abc_ic_commit_search_api_holo_light.png
+A	appcompat/res/drawable-xhdpi/abc_ic_go.png
+A	appcompat/res/drawable-xhdpi/abc_ic_go_search_api_holo_light.png
+A	appcompat/res/drawable-xhdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png
+A	appcompat/res/drawable-xhdpi/abc_ic_menu_moreoverflow_normal_holo_light.png
+A	appcompat/res/drawable-xhdpi/abc_ic_menu_share_holo_dark.png
+A	appcompat/res/drawable-xhdpi/abc_ic_menu_share_holo_light.png
+A	appcompat/res/drawable-xhdpi/abc_ic_search.png
+A	appcompat/res/drawable-xhdpi/abc_ic_search_api_holo_light.png
+A	appcompat/res/drawable-xhdpi/abc_ic_voice_search.png
+A	appcompat/res/drawable-xhdpi/abc_ic_voice_search_api_holo_light.png
+A	appcompat/res/drawable-xhdpi/abc_list_divider_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_list_divider_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_list_focused_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_list_longpressed_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_list_pressed_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_list_pressed_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_list_selector_disabled_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_menu_dropdown_panel_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_menu_dropdown_panel_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_menu_hardkey_panel_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_menu_hardkey_panel_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_spinner_ab_default_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_spinner_ab_default_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_spinner_ab_disabled_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_spinner_ab_disabled_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_spinner_ab_focused_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_spinner_ab_focused_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_spinner_ab_pressed_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_spinner_ab_pressed_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_tab_selected_focused_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_tab_selected_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_tab_selected_pressed_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_tab_unselected_pressed_holo.9.png
+A	appcompat/res/drawable-xhdpi/abc_textfield_search_default_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_textfield_search_default_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_textfield_search_right_default_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_textfield_search_right_default_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_textfield_search_right_selected_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_textfield_search_right_selected_holo_light.9.png
+A	appcompat/res/drawable-xhdpi/abc_textfield_search_selected_holo_dark.9.png
+A	appcompat/res/drawable-xhdpi/abc_textfield_search_selected_holo_light.9.png
+A	appcompat/res/drawable/abc_ic_clear.xml
+A	appcompat/res/drawable/abc_ic_clear_holo_light.xml
+A	appcompat/res/drawable/abc_item_background_holo_dark.xml
+A	appcompat/res/drawable/abc_item_background_holo_light.xml
+A	appcompat/res/drawable/abc_list_selector_background_transition_holo_dark.xml
+A	appcompat/res/drawable/abc_list_selector_background_transition_holo_light.xml
+A	appcompat/res/drawable/abc_list_selector_holo_dark.xml
+A	appcompat/res/drawable/abc_list_selector_holo_light.xml
+A	appcompat/res/drawable/abc_search_dropdown_dark.xml
+A	appcompat/res/drawable/abc_search_dropdown_light.xml
+A	appcompat/res/drawable/abc_spinner_ab_holo_dark.xml
+A	appcompat/res/drawable/abc_spinner_ab_holo_light.xml
+A	appcompat/res/drawable/abc_tab_indicator_ab_holo.xml
+A	appcompat/res/drawable/abc_textfield_searchview_holo_dark.xml
+A	appcompat/res/drawable/abc_textfield_searchview_holo_light.xml
+A	appcompat/res/drawable/abc_textfield_searchview_right_holo_dark.xml
+A	appcompat/res/drawable/abc_textfield_searchview_right_holo_light.xml
+A	appcompat/res/layout-v11/abc_action_bar_decor.xml
+A	appcompat/res/layout-v14/abc_activity_chooser_view.xml
+A	appcompat/res/layout/abc_action_bar_decor.xml
+A	appcompat/res/layout/abc_action_bar_decor_include.xml
+A	appcompat/res/layout/abc_action_bar_decor_overlay.xml
+A	appcompat/res/layout/abc_action_bar_home.xml
+A	appcompat/res/layout/abc_action_bar_tab.xml
+A	appcompat/res/layout/abc_action_bar_tabbar.xml
+A	appcompat/res/layout/abc_action_bar_title_item.xml
+A	appcompat/res/layout/abc_action_bar_view_list_nav_layout.xml
+A	appcompat/res/layout/abc_action_menu_item_layout.xml
+A	appcompat/res/layout/abc_action_menu_layout.xml
+A	appcompat/res/layout/abc_action_mode_bar.xml
+A	appcompat/res/layout/abc_action_mode_close_item.xml
+A	appcompat/res/layout/abc_activity_chooser_view.xml
+A	appcompat/res/layout/abc_activity_chooser_view_include.xml
+A	appcompat/res/layout/abc_activity_chooser_view_list_item.xml
+A	appcompat/res/layout/abc_expanded_menu_layout.xml
+A	appcompat/res/layout/abc_list_menu_item_checkbox.xml
+A	appcompat/res/layout/abc_list_menu_item_icon.xml
+A	appcompat/res/layout/abc_list_menu_item_layout.xml
+A	appcompat/res/layout/abc_list_menu_item_radio.xml
+A	appcompat/res/layout/abc_popup_menu_item_layout.xml
+A	appcompat/res/layout/abc_search_dropdown_item_icons_2line.xml
+A	appcompat/res/layout/abc_search_view.xml
+A	appcompat/res/layout/support_simple_spinner_dropdown_item.xml
+A	appcompat/res/values-af/strings.xml
+A	appcompat/res/values-am/strings.xml
+A	appcompat/res/values-ar/strings.xml
+A	appcompat/res/values-bg/strings.xml
+A	appcompat/res/values-ca/strings.xml
+A	appcompat/res/values-cs/strings.xml
+A	appcompat/res/values-da/strings.xml
+A	appcompat/res/values-de/strings.xml
+A	appcompat/res/values-el/strings.xml
+A	appcompat/res/values-en-rGB/strings.xml
+A	appcompat/res/values-en-rIN/strings.xml
+A	appcompat/res/values-es-rUS/strings.xml
+A	appcompat/res/values-es/strings.xml
+A	appcompat/res/values-et-rEE/strings.xml
+A	appcompat/res/values-fa/strings.xml
+A	appcompat/res/values-fi/strings.xml
+A	appcompat/res/values-fr-rCA/strings.xml
+A	appcompat/res/values-fr/strings.xml
+A	appcompat/res/values-hi/strings.xml
+A	appcompat/res/values-hr/strings.xml
+A	appcompat/res/values-hu/strings.xml
+A	appcompat/res/values-hy-rAM/strings.xml
+A	appcompat/res/values-in/strings.xml
+A	appcompat/res/values-it/strings.xml
+A	appcompat/res/values-iw/strings.xml
+A	appcompat/res/values-ja/strings.xml
+A	appcompat/res/values-ka-rGE/strings.xml
+A	appcompat/res/values-km-rKH/strings.xml
+A	appcompat/res/values-ko/strings.xml
+A	appcompat/res/values-land/bools.xml
+A	appcompat/res/values-land/config.xml
+A	appcompat/res/values-land/dimens.xml
+A	appcompat/res/values-large/bools.xml
+A	appcompat/res/values-large/config.xml
+A	appcompat/res/values-large/dimens.xml
+A	appcompat/res/values-lo-rLA/strings.xml
+A	appcompat/res/values-lt/strings.xml
+A	appcompat/res/values-lv/strings.xml
+A	appcompat/res/values-mn-rMN/strings.xml
+A	appcompat/res/values-ms-rMY/strings.xml
+A	appcompat/res/values-nb/strings.xml
+A	appcompat/res/values-nl/strings.xml
+A	appcompat/res/values-pl/strings.xml
+A	appcompat/res/values-pt-rPT/strings.xml
+A	appcompat/res/values-pt/strings.xml
+A	appcompat/res/values-ro/strings.xml
+A	appcompat/res/values-ru/strings.xml
+A	appcompat/res/values-sk/strings.xml
+A	appcompat/res/values-sl/strings.xml
+A	appcompat/res/values-sr/strings.xml
+A	appcompat/res/values-sv/strings.xml
+A	appcompat/res/values-sw/strings.xml
+A	appcompat/res/values-sw600dp/config.xml
+A	appcompat/res/values-sw600dp/dimens.xml
+A	appcompat/res/values-th/strings.xml
+A	appcompat/res/values-tl/strings.xml
+A	appcompat/res/values-tr/strings.xml
+A	appcompat/res/values-uk/strings.xml
+A	appcompat/res/values-v11/styles_base.xml
+A	appcompat/res/values-v11/themes_base.xml
+A	appcompat/res/values-v14/styles_base.xml
+A	appcompat/res/values-v14/themes_base.xml
+A	appcompat/res/values-vi/strings.xml
+A	appcompat/res/values-w360dp/dimens.xml
+A	appcompat/res/values-w480dp/bools.xml
+A	appcompat/res/values-w480dp/config.xml
+A	appcompat/res/values-w500dp/dimens.xml
+A	appcompat/res/values-w600dp/dimens.xml
+A	appcompat/res/values-w720dp/bools.xml
+A	appcompat/res/values-xlarge/bools.xml
+A	appcompat/res/values-xlarge/dimens.xml
+A	appcompat/res/values-zh-rCN/strings.xml
+A	appcompat/res/values-zh-rHK/strings.xml
+A	appcompat/res/values-zh-rTW/strings.xml
+A	appcompat/res/values-zu/strings.xml
+A	appcompat/res/values/attrs.xml
+A	appcompat/res/values/bools.xml
+A	appcompat/res/values/colors.xml
+A	appcompat/res/values/config.xml
+A	appcompat/res/values/dimens.xml
+A	appcompat/res/values/ids.xml
+A	appcompat/res/values/strings.xml
+A	appcompat/res/values/styles.xml
+A	appcompat/res/values/styles_base.xml
+A	appcompat/res/values/themes.xml
+A	appcompat/res/values/themes_base.xml
+A	appcompat/src/.readme
+R100	AndroidManifest.xml	hn-android/AndroidManifest.xml
+R100	README.md	hn-android/README.md
+R100	androidannotations-2.5.jar	hn-android/androidannotations-2.5.jar
+R100	assets/Comfortaa-Bold.ttf	hn-android/assets/Comfortaa-Bold.ttf
+R100	assets/Comfortaa-Regular.ttf	hn-android/assets/Comfortaa-Regular.ttf
+R100	build.gradle	hn-android/build.gradle
+R100	code_style/eclipse/hn_eclipse_cleanup_profile.xml	hn-android/code_style/eclipse/hn_eclipse_cleanup_profile.xml
+R100	code_style/eclipse/hn_eclipse_formatter.xml	hn-android/code_style/eclipse/hn_eclipse_formatter.xml
+R100	design/appstore_icon.png	hn-android/design/appstore_icon.png
+R100	design/appstore_icon.psd	hn-android/design/appstore_icon.psd
+R100	design/appstore_icon_114.png	hn-android/design/appstore_icon_114.png
+R100	design/comments.psd	hn-android/design/comments.psd
+R100	design/commentsbubble-mdpi.psd	hn-android/design/commentsbubble-mdpi.psd
+R100	design/expand.psd	hn-android/design/expand.psd
+R100	design/hn.psd	hn-android/design/hn.psd
+R100	design/icon_hdpi.psd	hn-android/design/icon_hdpi.psd
+R100	design/icon_mdpi.psd	hn-android/design/icon_mdpi.psd
+R100	design/icons.psd	hn-android/design/icons.psd
+R100	design/points_roundedrect.psd	hn-android/design/points_roundedrect.psd
+R100	design/refresh.psd	hn-android/design/refresh.psd
+R100	design/refresh2.psd	hn-android/design/refresh2.psd
+R100	design/rounded_button.psd	hn-android/design/rounded_button.psd
+R100	features/startup_validation.feature	hn-android/features/startup_validation.feature
+R100	features/step_definitions/calabash_steps.rb	hn-android/features/step_definitions/calabash_steps.rb
+R100	features/support/app_installation_hooks.rb	hn-android/features/support/app_installation_hooks.rb
+R100	features/support/app_life_cycle_hooks.rb	hn-android/features/support/app_life_cycle_hooks.rb
+R100	features/support/env.rb	hn-android/features/support/env.rb
+R100	features/support/hooks.rb	hn-android/features/support/hooks.rb
+R100	features/sync.feature	hn-android/features/sync.feature
+R100	gradle/wrapper/gradle-wrapper.jar	hn-android/gradle/wrapper/gradle-wrapper.jar
+R100	gradle/wrapper/gradle-wrapper.properties	hn-android/gradle/wrapper/gradle-wrapper.properties
+R100	gradlew	hn-android/gradlew
+R100	gradlew.bat	hn-android/gradlew.bat
+R100	hn-android.iml	hn-android/hn-android.iml
+A	hn-android/libs/android-support-v4.jar
+A	hn-android/libs/android-support-v7-appcompat.jar
+R100	libs/androidannotations-2.5-api.jar	hn-android/libs/androidannotations-2.5-api.jar
+R100	libs/jsoup-1.7.2.jar	hn-android/libs/jsoup-1.7.2.jar
+R100	libs/libGoogleAnalytics.jar	hn-android/libs/libGoogleAnalytics.jar
+R100	lint.xml	hn-android/lint.xml
+R100	proguard.cfg	hn-android/proguard.cfg
+R077	project.properties	hn-android/project.properties
+R100	res/drawable-hdpi/back.png	hn-android/res/drawable-hdpi/back.png
+R100	res/drawable-hdpi/expand.png	hn-android/res/drawable-hdpi/expand.png
+R100	res/drawable-hdpi/ic_launcher.png	hn-android/res/drawable-hdpi/ic_launcher.png
+R100	res/drawable-hdpi/loadmore.png	hn-android/res/drawable-hdpi/loadmore.png
+R100	res/drawable-hdpi/more_normal.png	hn-android/res/drawable-hdpi/more_normal.png
+R100	res/drawable-hdpi/more_selected.png	hn-android/res/drawable-hdpi/more_selected.png
+R100	res/drawable-hdpi/refresh.png	hn-android/res/drawable-hdpi/refresh.png
+R100	res/drawable-hdpi/refresh_ok.png	hn-android/res/drawable-hdpi/refresh_ok.png
+R100	res/drawable-hdpi/share.png	hn-android/res/drawable-hdpi/share.png
+R100	res/drawable-ldpi/ic_launcher.png	hn-android/res/drawable-ldpi/ic_launcher.png
+R100	res/drawable-mdpi/back.png	hn-android/res/drawable-mdpi/back.png
+R100	res/drawable-mdpi/bubble_patch.9.png	hn-android/res/drawable-mdpi/bubble_patch.9.png
+R100	res/drawable-mdpi/bubble_patch_pressed.9.png	hn-android/res/drawable-mdpi/bubble_patch_pressed.9.png
+R100	res/drawable-mdpi/expand.png	hn-android/res/drawable-mdpi/expand.png
+R100	res/drawable-mdpi/hn.png	hn-android/res/drawable-mdpi/hn.png
+R100	res/drawable-mdpi/ic_launcher.png	hn-android/res/drawable-mdpi/ic_launcher.png
+R100	res/drawable-mdpi/loadmore.png	hn-android/res/drawable-mdpi/loadmore.png
+R100	res/drawable-mdpi/more_normal.png	hn-android/res/drawable-mdpi/more_normal.png
+R100	res/drawable-mdpi/more_selected.png	hn-android/res/drawable-mdpi/more_selected.png
+R100	res/drawable-mdpi/points_roundedrect.9.png	hn-android/res/drawable-mdpi/points_roundedrect.9.png
+R100	res/drawable-mdpi/refresh.png	hn-android/res/drawable-mdpi/refresh.png
+R100	res/drawable-mdpi/refresh_ok.png	hn-android/res/drawable-mdpi/refresh_ok.png
+R100	res/drawable-mdpi/settings.png	hn-android/res/drawable-mdpi/settings.png
+R100	res/drawable-mdpi/share.png	hn-android/res/drawable-mdpi/share.png
+R100	res/drawable-nodpi/rounded_button_normal.9.png	hn-android/res/drawable-nodpi/rounded_button_normal.9.png
+R100	res/drawable-nodpi/rounded_button_pressed.9.png	hn-android/res/drawable-nodpi/rounded_button_pressed.9.png
+R100	res/drawable-nodpi/transparent_noise.png	hn-android/res/drawable-nodpi/transparent_noise.png
+R100	res/drawable-xhdpi/back.png	hn-android/res/drawable-xhdpi/back.png
+R100	res/drawable-xhdpi/bubble_patch.9.png	hn-android/res/drawable-xhdpi/bubble_patch.9.png
+R100	res/drawable-xhdpi/bubble_patch_pressed.9.png	hn-android/res/drawable-xhdpi/bubble_patch_pressed.9.png
+R100	res/drawable-xhdpi/expand.png	hn-android/res/drawable-xhdpi/expand.png
+R100	res/drawable-xhdpi/hn.png	hn-android/res/drawable-xhdpi/hn.png
+R100	res/drawable-xhdpi/ic_launcher.png	hn-android/res/drawable-xhdpi/ic_launcher.png
+R100	res/drawable-xhdpi/loadmore.png	hn-android/res/drawable-xhdpi/loadmore.png
+R100	res/drawable-xhdpi/more_normal.png	hn-android/res/drawable-xhdpi/more_normal.png
+R100	res/drawable-xhdpi/more_selected.png	hn-android/res/drawable-xhdpi/more_selected.png
+R100	res/drawable-xhdpi/points_roundedrect.9.png	hn-android/res/drawable-xhdpi/points_roundedrect.9.png
+R100	res/drawable-xhdpi/refresh.png	hn-android/res/drawable-xhdpi/refresh.png
+R100	res/drawable-xhdpi/refresh_ok.png	hn-android/res/drawable-xhdpi/refresh_ok.png
+R100	res/drawable-xhdpi/rounded_button_normal.9.png	hn-android/res/drawable-xhdpi/rounded_button_normal.9.png
+R100	res/drawable-xhdpi/rounded_button_pressed.9.png	hn-android/res/drawable-xhdpi/rounded_button_pressed.9.png
+R100	res/drawable-xhdpi/settings.png	hn-android/res/drawable-xhdpi/settings.png
+R100	res/drawable-xhdpi/share.png	hn-android/res/drawable-xhdpi/share.png
+R100	res/drawable/actionbar_bg_bright.xml	hn-android/res/drawable/actionbar_bg_bright.xml
+R100	res/drawable/actionbar_bg_orange.xml	hn-android/res/drawable/actionbar_bg_orange.xml
+R100	res/drawable/actionbar_button_bg.xml	hn-android/res/drawable/actionbar_button_bg.xml
+R100	res/drawable/actionbar_button_bg_gray.xml	hn-android/res/drawable/actionbar_button_bg_gray.xml
+R100	res/drawable/bubble.xml	hn-android/res/drawable/bubble.xml
+R100	res/drawable/invisible_icon.xml	hn-android/res/drawable/invisible_icon.xml
+R100	res/drawable/main_list_selector.xml	hn-android/res/drawable/main_list_selector.xml
+R100	res/drawable/more.xml	hn-android/res/drawable/more.xml
+R100	res/drawable/rounded_button.xml	hn-android/res/drawable/rounded_button.xml
+R100	res/layout/about.xml	hn-android/res/layout/about.xml
+R100	res/layout/action_bar_center_title_gray.xml	hn-android/res/layout/action_bar_center_title_gray.xml
+R100	res/layout/actionbar_center_title.xml	hn-android/res/layout/actionbar_center_title.xml
+R100	res/layout/article_activity.xml	hn-android/res/layout/article_activity.xml
+R100	res/layout/comments_activity.xml	hn-android/res/layout/comments_activity.xml
+R100	res/layout/comments_list_item.xml	hn-android/res/layout/comments_list_item.xml
+R100	res/layout/login_dialog.xml	hn-android/res/layout/login_dialog.xml
+R100	res/layout/main.xml	hn-android/res/layout/main.xml
+R100	res/layout/main_list_item.xml	hn-android/res/layout/main_list_item.xml
+R100	res/layout/main_list_item_loadmore.xml	hn-android/res/layout/main_list_item_loadmore.xml
+R100	res/layout/main_more_content.xml	hn-android/res/layout/main_more_content.xml
+R100	res/layout/panel_loading.xml	hn-android/res/layout/panel_loading.xml
+R100	res/layout/refresh_icon.xml	hn-android/res/layout/refresh_icon.xml
+R100	res/layout/settings.xml	hn-android/res/layout/settings.xml
+R100	res/layout/user_settings.xml	hn-android/res/layout/user_settings.xml
+R100	res/menu/main.xml	hn-android/res/menu/main.xml
+R100	res/menu/menu_share_refresh.xml	hn-android/res/menu/menu_share_refresh.xml
+R100	res/values-hdpi/res-dependent-style.xml	hn-android/res/values-hdpi/res-dependent-style.xml
+R100	res/values-xhdpi/res-dependent-style.xml	hn-android/res/values-xhdpi/res-dependent-style.xml
+R100	res/values/colors.xml	hn-android/res/values/colors.xml
+R100	res/values/dimens.xml	hn-android/res/values/dimens.xml
+R100	res/values/preference_values.xml	hn-android/res/values/preference_values.xml
+R100	res/values/strings.xml	hn-android/res/values/strings.xml
+R100	res/values/styles.xml	hn-android/res/values/styles.xml
+R100	res/values/themes.xml	hn-android/res/values/themes.xml
+R100	res/xml/preferences.xml	hn-android/res/xml/preferences.xml
+R100	src/com/manuelmaly/hn/AboutActivity.java	hn-android/src/com/manuelmaly/hn/AboutActivity.java
+R100	src/com/manuelmaly/hn/App.java	hn-android/src/com/manuelmaly/hn/App.java
+R100	src/com/manuelmaly/hn/ArticleReaderActivity.java	hn-android/src/com/manuelmaly/hn/ArticleReaderActivity.java
+R100	src/com/manuelmaly/hn/BaseListActivity.java	hn-android/src/com/manuelmaly/hn/BaseListActivity.java
+R100	src/com/manuelmaly/hn/BasePostActivity.java	hn-android/src/com/manuelmaly/hn/BasePostActivity.java
+A	hn-android/src/com/manuelmaly/hn/CommentsActivity.java
+R100	src/com/manuelmaly/hn/ExternalIntentActivity.java	hn-android/src/com/manuelmaly/hn/ExternalIntentActivity.java
+R100	src/com/manuelmaly/hn/MainActivity.java	hn-android/src/com/manuelmaly/hn/MainActivity.java
+R100	src/com/manuelmaly/hn/Settings.java	hn-android/src/com/manuelmaly/hn/Settings.java
+R100	src/com/manuelmaly/hn/SettingsActivity.java	hn-android/src/com/manuelmaly/hn/SettingsActivity.java
+R100	src/com/manuelmaly/hn/UserPreference.java	hn-android/src/com/manuelmaly/hn/UserPreference.java
+R100	src/com/manuelmaly/hn/login/LoginActivity.java	hn-android/src/com/manuelmaly/hn/login/LoginActivity.java
+R100	src/com/manuelmaly/hn/model/HNComment.java	hn-android/src/com/manuelmaly/hn/model/HNComment.java
+R100	src/com/manuelmaly/hn/model/HNCommentTreeNode.java	hn-android/src/com/manuelmaly/hn/model/HNCommentTreeNode.java
+R100	src/com/manuelmaly/hn/model/HNFeed.java	hn-android/src/com/manuelmaly/hn/model/HNFeed.java
+R100	src/com/manuelmaly/hn/model/HNPost.java	hn-android/src/com/manuelmaly/hn/model/HNPost.java
+R100	src/com/manuelmaly/hn/model/HNPostComments.java	hn-android/src/com/manuelmaly/hn/model/HNPostComments.java
+R100	src/com/manuelmaly/hn/parser/BaseHTMLParser.java	hn-android/src/com/manuelmaly/hn/parser/BaseHTMLParser.java
+R100	src/com/manuelmaly/hn/parser/HNCommentsParser.java	hn-android/src/com/manuelmaly/hn/parser/HNCommentsParser.java
+R100	src/com/manuelmaly/hn/parser/HNFeedParser.java	hn-android/src/com/manuelmaly/hn/parser/HNFeedParser.java
+R100	src/com/manuelmaly/hn/parser/HNNewsLoginParser.java	hn-android/src/com/manuelmaly/hn/parser/HNNewsLoginParser.java
+R100	src/com/manuelmaly/hn/parser/HeaderParser.java	hn-android/src/com/manuelmaly/hn/parser/HeaderParser.java
+R100	src/com/manuelmaly/hn/reuse/CancelableRunnable.java	hn-android/src/com/manuelmaly/hn/reuse/CancelableRunnable.java
+R100	src/com/manuelmaly/hn/reuse/ImageViewFader.java	hn-android/src/com/manuelmaly/hn/reuse/ImageViewFader.java
+R100	src/com/manuelmaly/hn/reuse/LinkifiedTextView.java	hn-android/src/com/manuelmaly/hn/reuse/LinkifiedTextView.java
+R100	src/com/manuelmaly/hn/reuse/ViewRotator.java	hn-android/src/com/manuelmaly/hn/reuse/ViewRotator.java
+R100	src/com/manuelmaly/hn/server/BaseHTTPCommand.java	hn-android/src/com/manuelmaly/hn/server/BaseHTTPCommand.java
+R100	src/com/manuelmaly/hn/server/ConnectivityUtils.java	hn-android/src/com/manuelmaly/hn/server/ConnectivityUtils.java
+R100	src/com/manuelmaly/hn/server/GetHNUserTokenHTTPCommand.java	hn-android/src/com/manuelmaly/hn/server/GetHNUserTokenHTTPCommand.java
+R100	src/com/manuelmaly/hn/server/GetHNUserTokenResponseHandler.java	hn-android/src/com/manuelmaly/hn/server/GetHNUserTokenResponseHandler.java
+R100	src/com/manuelmaly/hn/server/HNCredentials.java	hn-android/src/com/manuelmaly/hn/server/HNCredentials.java
+R100	src/com/manuelmaly/hn/server/HNVoteCommand.java	hn-android/src/com/manuelmaly/hn/server/HNVoteCommand.java
+R100	src/com/manuelmaly/hn/server/HTMLResponseHandler.java	hn-android/src/com/manuelmaly/hn/server/HTMLResponseHandler.java
+R100	src/com/manuelmaly/hn/server/IAPICommand.java	hn-android/src/com/manuelmaly/hn/server/IAPICommand.java
+R100	src/com/manuelmaly/hn/server/NoResponseCommand.java	hn-android/src/com/manuelmaly/hn/server/NoResponseCommand.java
+R100	src/com/manuelmaly/hn/server/StringDownloadCommand.java	hn-android/src/com/manuelmaly/hn/server/StringDownloadCommand.java
+R100	src/com/manuelmaly/hn/server/VoteHTTPCommand.java	hn-android/src/com/manuelmaly/hn/server/VoteHTTPCommand.java
+R100	src/com/manuelmaly/hn/task/BaseTask.java	hn-android/src/com/manuelmaly/hn/task/BaseTask.java
+R100	src/com/manuelmaly/hn/task/HNFeedTaskBase.java	hn-android/src/com/manuelmaly/hn/task/HNFeedTaskBase.java
+R100	src/com/manuelmaly/hn/task/HNFeedTaskLoadMore.java	hn-android/src/com/manuelmaly/hn/task/HNFeedTaskLoadMore.java
+R100	src/com/manuelmaly/hn/task/HNFeedTaskMainFeed.java	hn-android/src/com/manuelmaly/hn/task/HNFeedTaskMainFeed.java
+R100	src/com/manuelmaly/hn/task/HNLoginTask.java	hn-android/src/com/manuelmaly/hn/task/HNLoginTask.java
+R100	src/com/manuelmaly/hn/task/HNPostCommentsTask.java	hn-android/src/com/manuelmaly/hn/task/HNPostCommentsTask.java
+R100	src/com/manuelmaly/hn/task/HNVoteTask.java	hn-android/src/com/manuelmaly/hn/task/HNVoteTask.java
+R100	src/com/manuelmaly/hn/task/ITaskFinishedHandler.java	hn-android/src/com/manuelmaly/hn/task/ITaskFinishedHandler.java
+R100	src/com/manuelmaly/hn/util/Const.java	hn-android/src/com/manuelmaly/hn/util/Const.java
+R100	src/com/manuelmaly/hn/util/DisplayHelper.java	hn-android/src/com/manuelmaly/hn/util/DisplayHelper.java
+R100	src/com/manuelmaly/hn/util/ExceptionUtil.java	hn-android/src/com/manuelmaly/hn/util/ExceptionUtil.java
+R100	src/com/manuelmaly/hn/util/FileUtil.java	hn-android/src/com/manuelmaly/hn/util/FileUtil.java
+R100	src/com/manuelmaly/hn/util/FontHelper.java	hn-android/src/com/manuelmaly/hn/util/FontHelper.java
+R100	src/com/manuelmaly/hn/util/HNHelper.java	hn-android/src/com/manuelmaly/hn/util/HNHelper.java
+R100	src/com/manuelmaly/hn/util/Run.java	hn-android/src/com/manuelmaly/hn/util/Run.java
+R100	src/com/manuelmaly/hn/util/SpotlightActivity.java	hn-android/src/com/manuelmaly/hn/util/SpotlightActivity.java
+R100	src/com/manuelmaly/hn/util/ViewedUtils.java	hn-android/src/com/manuelmaly/hn/util/ViewedUtils.java
+R100	src/com/manuelmaly/hn/view/SpotlightView.java	hn-android/src/com/manuelmaly/hn/view/SpotlightView.java
+R100	test/strangehtml.html	hn-android/test/strangehtml.html
+D	src/com/manuelmaly/hn/CommentsActivity.java
+
+df7a8ab;added a necessary import statement
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+072d33f;alright, so I think that means everything is working
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+c71ac67;still trying to remove that flicker, lets push to a real phone and see what happens
+A	res/layout/action_bar_center_title_gray.xml
+M	res/layout/actionbar_center_title.xml
+A	res/values/dimens.xml
+M	res/values/styles.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/util/SpotlightActivity.java
+
+df17ff4;removed some crufty stuff from CommentsActivity
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/view/SpotlightView.java
+
+7a863eb;stringified the text that the spotlight view shows
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/util/SpotlightActivity.java
+M	src/com/manuelmaly/hn/view/SpotlightView.java
+
+78d41c6;put the strings describing header actions into strings.xml
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+867a621;Got the spotlight properly being automatically displayed
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/util/SpotlightActivity.java
+A	src/com/manuelmaly/hn/util/ViewedUtils.java
+
+6961e75;cleaned up the way that SpotlightActivity is started
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/util/SpotlightActivity.java
+M	src/com/manuelmaly/hn/view/SpotlightView.java
+
+698bf27;cleaned up spotlight view a bit
+M	src/com/manuelmaly/hn/view/SpotlightView.java
+
+bb3d34f;made the background on gray action buttons look decent
+A	res/drawable/actionbar_button_bg_gray.xml
+M	res/values/colors.xml
+M	res/values/themes.xml
+
+cd09cff;boom\! They call the spotlight with text working\!
+M	src/com/manuelmaly/hn/util/SpotlightActivity.java
+M	src/com/manuelmaly/hn/view/SpotlightView.java
+
+6136ca6;made the transparent effect better
+M	src/com/manuelmaly/hn/view/SpotlightView.java
+
+5edcd17;spotlight effect is working\!
+M	AndroidManifest.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+A	src/com/manuelmaly/hn/util/SpotlightActivity.java
+A	src/com/manuelmaly/hn/view/SpotlightView.java
+
+88b2d82;added an android library project.  This should probably live in the same dir so that it can be a relative path
+M	project.properties
+
+290bc11;updated build.gradle for the latest version
+M	build.gradle
+
+b85c648;fixed a bug where the background of a pressed action button would show a system specific color instead of a specified one
+M	res/drawable/actionbar_button_bg.xml
+R100	res/values/style.xml	res/values/styles.xml
+M	res/values/themes.xml
+
+0b881af;fixed up issues with buttons in the main activity
+M	res/layout/main_list_item.xml
+M	res/values/themes.xml
+
+158e017;cleanup warnings
+M	src/com/manuelmaly/hn/AboutActivity.java
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+359ee3f;welp, it looks like all the jars need to be in hns classpath for everything to work
+M	.classpath
+A	libs/android-support-v7-appcompat.jar
+
+622b78d;forgot to commit my changes about having removed a particular style
+M	libs/android-support-v4.jar
+M	res/values/themes.xml
+
+728adc7;alright, got displaying the share icons working
+M	res/menu/menu_share_refresh.xml
+M	res/values/themes.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+25c96bd;refreshing is waaay better nowgit s
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+9ff2f66;got actionbar working on ArticleReaderActivity
+M	res/layout/article_activity.xml
+R100	res/menu/menu_comments.xml	res/menu/menu_share_refresh.xml
+M	res/values/colors.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+3b57509;got basic action bar with articlereaderactivity working
+M	AndroidManifest.xml
+A	res/drawable/invisible_icon.xml
+M	res/values/style.xml
+M	res/values/themes.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+b622ee9;comments activity is almost back to its previous state.  We still need to get scrolling up working and figure out how to get around that damn logo issue
+M	res/layout/comments_activity.xml
+M	res/values/themes.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+5197b7f;refresh icon is working at a basic level
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+c6525c2;got the share provider looking proper
+M	res/menu/menu_comments.xml
+M	res/values/themes.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+b40c47d;basic comments menu, still needs work
+A	res/menu/menu_comments.xml
+M	src/com/manuelmaly/hn/AboutActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+790722f;locking this shit down while it is working
+M	res/layout/actionbar_center_title.xml
+M	res/values/style.xml
+M	src/com/manuelmaly/hn/AboutActivity.java
+
+11459b5;why didn't I freeze the code when it was perfect
+M	AndroidManifest.xml
+M	res/layout/about.xml
+M	res/values/style.xml
+M	res/values/themes.xml
+M	src/com/manuelmaly/hn/AboutActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+212a061;removed all that commented code
+M	res/layout/main.xml
+
+be60a2c;I think that means everything is working...
+M	src/com/manuelmaly/hn/MainActivity.java
+
+73684c0;got refresh working, I feel like the bossiest of bosses right now
+A	res/layout/refresh_icon.xml
+M	src/com/manuelmaly/hn/MainActivity.java
+
+d4d55df;alright, got all the basics done, refresh is next on my list
+M	res/values/style.xml
+M	res/values/themes.xml
+M	src/com/manuelmaly/hn/MainActivity.java
+
+d30f616;got the title working nicely
+M	AndroidManifest.xml
+A	res/layout/actionbar_center_title.xml
+M	res/values/style.xml
+M	src/com/manuelmaly/hn/MainActivity.java
+
+312b1e1;got a basic action bar showing up
+M	AndroidManifest.xml
+A	res/menu/main.xml
+M	res/values/style.xml
+M	src/com/manuelmaly/hn/MainActivity.java
+
+c570103;Welp, that was a lot of work for nothing
+M	hn-android.iml
+D	hn-android/hn-android-hn-android.iml
+
+81103a3;alright, all the content in here works
+M	AndroidManifest.xml
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	hn-android.iml
+A	hn-android/hn-android-hn-android.iml
+M	res/layout/comments_activity.xml
+M	res/layout/main.xml
+M	res/values/style.xml
+M	src/com/manuelmaly/hn/BaseListActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+d9a6932;added themes
+A	res/values/themes.xml
+
+8cb17a8;fixed gradle build and intellij so that AndroidAnnotations plays nice
+M	build.gradle
+M	hn-android.iml
+
+91fd671;Merge pull request #98 from vikas0380/master
+d4577b4;Merge pull request #96 from peshkira/eclipse/code_styles
+f833de4;mark as read for long press menu list
+M	src/com/manuelmaly/hn/MainActivity.java
+
+7491423;adding eclipse code styles
+M	README.md
+A	code_style/eclipse/hn_eclipse_cleanup_profile.xml
+A	code_style/eclipse/hn_eclipse_formatter.xml
+
+7df38e6;Bumping build number.
+M	AndroidManifest.xml
+
+e997880;Fixing another regression introduced by a PR causing crashes.
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+ac1ea46;Bumping build number.
+M	AndroidManifest.xml
+
+946f350;Fixing login for seemingly new session cookie structure in HN.
+M	src/com/manuelmaly/hn/server/GetHNUserTokenResponseHandler.java
+M	src/com/manuelmaly/hn/task/BaseTask.java
+
+4cbe426;Merge pull request #89 from maltzj/gradle-migrate
+e2fa10b;Merge pull request #88 from peshkira/feature/mark_as_read
+0edb811;adding mark as read feature.
+M	res/layout/main_list_item.xml
+M	res/values/colors.xml
+M	src/com/manuelmaly/hn/MainActivity.java
+
+f329a31;added config files for intellij and gitignore to ignore the useless stuff
+M	.gitignore
+M	hn-android.iml
+
+545d543;Fixing recently introduced crash that occurs when no user is logged in initially.
+M	src/com/manuelmaly/hn/MainActivity.java
+
+863aeab;Fixing build issue related to AndroidAnnotations and Activities in sub-packages.
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+fcb5a7f;Merge pull request #82 from vikas0380/menuclick
+9b8d65b;use physical button to open menu
+M	src/com/manuelmaly/hn/MainActivity.java
+
+3f6b029;removed all of the .idea and .gradle stuff for now
+D	.gradle/1.8/taskArtifacts/cache.properties
+D	.gradle/1.8/taskArtifacts/cache.properties.lock
+D	.gradle/1.8/taskArtifacts/fileHashes.bin
+D	.gradle/1.8/taskArtifacts/outputFileStates.bin
+D	.gradle/1.8/taskArtifacts/taskArtifacts.bin
+D	.idea/.name
+D	.idea/compiler.xml
+D	.idea/copyright/profiles_settings.xml
+D	.idea/encodings.xml
+D	.idea/gradle.xml
+D	.idea/libraries/android_support_v4.xml
+D	.idea/libraries/androidannotations_2_5_api.xml
+D	.idea/libraries/jsoup_1_7_2.xml
+D	.idea/libraries/libGoogleAnalytics.xml
+D	.idea/misc.xml
+D	.idea/modules.xml
+D	.idea/scopes/scope_settings.xml
+D	.idea/vcs.xml
+D	.idea/workspace.xml
+
+5e7643b;updated gitignore to deal with new gradle build stuff
+M	.gitignore
+
+a812162;gradle stuff
+A	.gradle/1.8/taskArtifacts/cache.properties
+A	.gradle/1.8/taskArtifacts/cache.properties.lock
+A	.gradle/1.8/taskArtifacts/fileHashes.bin
+A	.gradle/1.8/taskArtifacts/outputFileStates.bin
+A	.gradle/1.8/taskArtifacts/taskArtifacts.bin
+A	.idea/.name
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/encodings.xml
+A	.idea/gradle.xml
+A	.idea/libraries/android_support_v4.xml
+A	.idea/libraries/androidannotations_2_5_api.xml
+A	.idea/libraries/jsoup_1_7_2.xml
+A	.idea/libraries/libGoogleAnalytics.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/scopes/scope_settings.xml
+A	.idea/vcs.xml
+A	.idea/workspace.xml
+A	build.gradle
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	hn-android.iml
+
+83ded88;Merge pull request #80 from noloman/develop
+a8d1e5b;added ProgressDialog when loading inttermediate feeds from the store
+M	src/com/manuelmaly/hn/MainActivity.java
+
+c27e177;resetting file to previous commit in order to undo code format changes
+M	src/com/manuelmaly/hn/MainActivity.java
+
+cd1f41e;Merge pull request #79 from maltzj/fix-no-error-messages
+a3aa197;Merge pull request #76 from maltzj/fix-linkification
+5d9a7c4;Merge pull request #75 from maltzj/no-poll-comments
+a508a55;added ProgressDialog when loading inttermediate feeds from the store
+M	src/com/manuelmaly/hn/MainActivity.java
+
+4f10615;alright, screw it, matching URLs is really fricking hard, I'm delegating to the people who are smarter than me
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+7764c34;Handle errors in connectivity better
+M	src/com/manuelmaly/hn/BaseListActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+76b02f4;new strings which were added and moved around
+M	res/values/strings.xml
+
+e9d1510;made linkification with GET parameters work properly
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+18524a7;fixed a bug where poll comments wouldn't properly render
+M	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+4a914f0;Add a menu option on long press click on the article list view to share the post url with an external app
+M	AndroidManifest.xml
+M	src/com/manuelmaly/hn/MainActivity.java
+
+698eb90;Merge pull request #68 from maltzj/refresh-on-new-login
+9d9bb05;some cleanup
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/model/HNFeed.java
+M	src/com/manuelmaly/hn/model/HNPostComments.java
+
+cda361e;Changing a string.  I'm still not sure if I love it, but I think the string is better this way
+M	res/values/strings.xml
+
+79337eb;Force reloading when we have information for an old user
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+d350c9e;now tagging posts and comments by the user they were acquired for.  This should allow for much better integration of login features
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/model/HNFeed.java
+M	src/com/manuelmaly/hn/model/HNPostComments.java
+M	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+
+d111fb5;Bumping build number.
+M	AndroidManifest.xml
+
+ab4a9bd;Fixing instapaper/external browser menu item confusion.
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/util/DisplayHelper.java
+
+c8d85af;Improving refresh icon size on hdpi devices (not testing mdpi devices).
+A	res/values-hdpi/res-dependent-style.xml
+A	res/values-xhdpi/res-dependent-style.xml
+M	res/values/style.xml
+
+716c235;Fixing refresh indicator state for "cancelled by user".
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+8a6b035;Fixing warnings.
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/SettingsActivity.java
+M	src/com/manuelmaly/hn/reuse/ViewRotator.java
+M	src/com/manuelmaly/hn/util/DisplayHelper.java
+M	src/com/manuelmaly/hn/util/FileUtil.java
+
+07e4074;Merge pull request #62 from davewongillies/master
+fb5ef8f;Merge branch 'pr/58'
+abf32bb;Merge pull request #59 from maltzj/update-jsoup
+7c8b07b;Cleaning up last merge, removing some imports.
+M	AndroidManifest.xml
+M	project.properties
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+98ff85e;Completing adaption of menu bar refresh icon rewrite.
+M	res/layout/article_activity.xml
+M	res/layout/comments_activity.xml
+M	res/layout/main.xml
+M	res/values/style.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+6337525;Allowing backups in manifest.
+M	AndroidManifest.xml
+
+6d1da82;Exchanging refresh indicator in MainActivity with indeterminate ProgressBar (to avoid strange rendering bug in 4.3).
+M	res/layout/main.xml
+M	src/com/manuelmaly/hn/MainActivity.java
+
+a7922ba;Correcting classpath for newer ADT.
+A	lint.xml
+
+8668848;Synchronizing credentials, fixing Google Analytics key.
+M	src/com/manuelmaly/hn/server/HNCredentials.java
+M	src/com/manuelmaly/hn/util/Const.java
+
+7ef1d99;Fixing broken "more" link parsing, bumping build number.
+M	AndroidManifest.xml
+
+81b9d49;Merge pull request #47 from maltzj/add-downvote
+3488ccd;Merge pull request #65 from maltzj/fix-more-link
+120f12e;removed a useless import
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+
+5f2ad72;fuck you and the horse you rode in on, parser bug
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+
+82db0ad;style cleanups
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/SettingsActivity.java
+
+8f7d154;typo
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+67cde15;Added Instapaper Text for article viewing
+M	res/values/preference_values.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/SettingsActivity.java
+
+26fa279;fixed a bug where 0 comments articles would continually show the loading view on the comments page
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+77d3155;made it so everything which is using gray_comments_information as a color actually uses the reference
+M	res/layout/comments_list_item.xml
+
+43db2b0;lost an import somewhere in the merge
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+71778a5;remove more useless imports and move initialization code where it belongs
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+82a755a;it's alive! Ask HN stuff is being displayed properly
+M	res/layout/comments_activity.xml
+M	res/values/colors.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+8e7fcf0;removed useless log statement
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+
+bf76890;woops, forgot the loading panel.  That's awkward
+A	res/layout/panel_loading.xml
+
+c247e75;alright, so the text of comments is displaying, need to do some fine tuning
+M	res/layout/comments_activity.xml
+M	res/layout/comments_list_item.xml
+M	res/values/colors.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/model/HNPostComments.java
+M	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+
+f710a9b;fuck you and the horse you rode in on, parser bug
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+
+b52811e;made loading panels work in a more extensible way for the main activity
+M	res/layout/main.xml
+A	src/com/manuelmaly/hn/BaseListActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+07f00f7;added a header parser
+M	src/com/manuelmaly/hn/parser/BaseHTMLParser.java
+M	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+M	src/com/manuelmaly/hn/parser/HNNewsLoginParser.java
+A	src/com/manuelmaly/hn/parser/HeaderParser.java
+
+c54e155;added a log statement, but I have nothing to test it on atm :(
+M	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+ff1d28c;temporaryily adding this stuff
+M	src/com/manuelmaly/hn/model/HNPostComments.java
+M	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+4d0ce1b;upgraded jsoup
+M	.classpath
+D	libs/jsoup-1.6.3.jar
+A	libs/jsoup-1.7.2.jar
+
+9d15f45;more merge fixing
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+4cc9ba7;screwed up a merge
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+afec0c5;fixed up a bug about downvoting getting displayed.  Thanks to @dgilman for finding the bug
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+de81950;screwed up strings file, fixing it for realz
+M	res/values/strings.xml
+
+2705333;screwed up strings file, fixing it
+M	res/values/strings.xml
+
+bcab850;Added downvoting to the list of options a user has on a post if the user has the ability to downvote posts
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/model/HNComment.java
+M	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+d480a07;fixing up merge conflicts
+e1303d1;Merge pull request #54 from jmaltz/fix-parsing
+92888ba;Merge pull request #53 from jmaltz/fix-deleted-post
+357dc8f;Merge pull request #51 from jmaltz/better-login
+620aaea;Merge pull request #49 from averageapps/master
+e11a19d;fixed a bug in the comments parser bug where the word reply would cause the comment not to be displayed
+M	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+
+c33b434;made deleted comments render properly
+M	res/layout/comments_list_item.xml
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+f3515f8;Refactored login logic out into its own activity so that it can be dropped anywhere.  Also forced users to login before upvoting posts.
+M	AndroidManifest.xml
+A	res/layout/login_dialog.xml
+D	res/layout/user_settings_dialog.xml
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/SettingsActivity.java
+M	src/com/manuelmaly/hn/UserPreference.java
+A	src/com/manuelmaly/hn/login/LoginActivity.java
+
+6e114a1;Added screenSize to configChanges in the manifest. Fixes issue #42 (Orientation changes lead to activity restarting on API 13+)
+M	AndroidManifest.xml
+
+96f009a;Updated target sdk to 18. The different targets in AndroidManifest.xml and project.properties were causing some problems when adding code from newer APIs, so they are now set to the same value.
+M	AndroidManifest.xml
+M	project.properties
+
+ba5dc95;Fixed classpath errors at runtime (NoClassDefFoundError). They should now be really fixed without manual changes after cloning the repo. The .classpath from #45 did not work for me. Hope this one does for all.
+M	.classpath
+
+f2b5f8f;Merge pull request #45 from jmaltz/fix-classpath
+ead1ad6;Merge pull request #44 from cotsog/master
+62e870a;moved around jars in the build path
+M	.classpath
+
+396af3c;moved around jars in the build path
+M	.classpath
+
+5e978bd;- Saving vertical scrolling position when navigating from posts list to comments list or from comments list to another web view. - Refresh list only if font size actually changed.
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+d35f39f;Build version bump.
+M	AndroidManifest.xml
+
+0542255;Adding comment upvoting and necessary popup menu (long press).
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/model/HNComment.java
+M	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+A	src/com/manuelmaly/hn/util/HNHelper.java
+
+1097134;fixing broken "more" functionality when there is another link with "more" in its text
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+
+d7b8c2b;Issue https://github.com/manmal/hn-android/issues/15 Changed WebView.destroy to loading an empty page due to bugs mentioned here: http://stackoverflow.com/questions/6201615/how-do-i-stop-flash-after-leaving-a-webview?rq=1
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+c271780;Merge pull request #30 from asafh/master
+6b2f886;Fixing issue #15: https://github.com/manmal/hn-android/issues/15 Destroying WebView instance to kill any playings running such as YouTube and Soundcloud
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+2a9d6bd;removed strict mode again and reset to android 2.2
+M	AndroidManifest.xml
+M	project.properties
+M	src/com/manuelmaly/hn/App.java
+
+2610abb;making calls to disk and network asynchronous where necessary/possible
+M	src/com/manuelmaly/hn/App.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/task/BaseTask.java
+M	src/com/manuelmaly/hn/util/FileUtil.java
+
+2a7f8e1;reformatting
+M	src/com/manuelmaly/hn/util/FileUtil.java
+
+579708d;switched to android 2.3.3 min target temporarily to enable strict mode for debugging
+M	AndroidManifest.xml
+M	project.properties
+M	src/com/manuelmaly/hn/App.java
+
+0b737f3;added two tests
+M	.gitignore
+D	features/my_first.feature
+A	features/startup_validation.feature
+A	features/sync.feature
+
+050e68a;added calabash (cucumber) tests skeleton
+A	features/my_first.feature
+A	features/step_definitions/calabash_steps.rb
+A	features/support/app_installation_hooks.rb
+A	features/support/app_life_cycle_hooks.rb
+A	features/support/env.rb
+A	features/support/hooks.rb
+
+a110d45;fixed bug that crashed the app when trying to upvote, bumped version
+M	AndroidManifest.xml
+M	src/com/manuelmaly/hn/SettingsActivity.java
+M	src/com/manuelmaly/hn/server/BaseHTTPCommand.java
+
+d4cf5a7;updated about text
+M	src/com/manuelmaly/hn/AboutActivity.java
+
+30193ef;Correct several accessibility warnings
+M	res/layout/about.xml
+M	res/layout/article_activity.xml
+M	res/layout/comments_activity.xml
+M	res/layout/main.xml
+M	res/values/strings.xml
+
+1730e4d;renamed legacy project name in eclipse project file
+M	.project
+
+b7a5752;fixing more LINT warnings and restored abstract classes to normal where LINT was wrong
+D	res/drawable-hdpi/hn.png
+D	res/drawable-hdpi/settings.png
+D	res/drawable-nodpi/dark_stripes.png
+D	res/drawable/shadow.xml
+M	res/layout/about.xml
+M	res/layout/comments_list_item.xml
+M	res/layout/main_list_item.xml
+M	res/layout/user_settings.xml
+M	res/layout/user_settings_dialog.xml
+M	res/values/colors.xml
+M	res/values/strings.xml
+M	res/values/style.xml
+M	src/com/manuelmaly/hn/AboutActivity.java
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/BasePostActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+2d131f4;Create additional string resources
+M	res/layout/about.xml
+M	res/layout/article_activity.xml
+M	res/layout/comments_activity.xml
+M	res/layout/comments_list_item.xml
+M	res/layout/main.xml
+M	res/layout/main_list_item.xml
+M	res/layout/main_more_content.xml
+M	res/layout/settings.xml
+M	res/values/strings.xml
+
+3c0496b;Configure activities as internal
+M	AndroidManifest.xml
+
+dc1a161;Disallow backup
+M	AndroidManifest.xml
+
+37ba4eb;Make parent activites abstract
+M	src/com/manuelmaly/hn/AboutActivity.java
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+246cacd;Replace ... with &#8230;
+M	res/values/preference_values.xml
+M	res/values/strings.xml
+
+5d9f87f;Close handles in finally() in FileUtil
+M	src/com/manuelmaly/hn/util/FileUtil.java
+
+512998c;got rid of warnings by removing unused imports and unnecessary vars
+M	src/com/manuelmaly/hn/BasePostActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/SettingsActivity.java
+M	src/com/manuelmaly/hn/model/HNComment.java
+M	src/com/manuelmaly/hn/model/HNPostComments.java
+M	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+M	src/com/manuelmaly/hn/parser/HNNewsLoginParser.java
+M	src/com/manuelmaly/hn/server/GetHNUserTokenResponseHandler.java
+M	src/com/manuelmaly/hn/server/HNCredentials.java
+M	src/com/manuelmaly/hn/server/HTMLResponseHandler.java
+M	src/com/manuelmaly/hn/task/BaseTask.java
+M	src/com/manuelmaly/hn/task/HNFeedTaskBase.java
+M	src/com/manuelmaly/hn/task/HNLoginTask.java
+M	src/com/manuelmaly/hn/task/HNPostCommentsTask.java
+M	src/com/manuelmaly/hn/task/HNVoteTask.java
+M	src/com/manuelmaly/hn/util/Run.java
+
+d26ce73;Update README.md
+M	README.md
+
+313f0c4;fixed really stupid url handling (shame on me!), fixes #24
+M	AndroidManifest.xml
+M	src/com/manuelmaly/hn/server/BaseHTTPCommand.java
+M	src/com/manuelmaly/hn/server/GetHNUserTokenHTTPCommand.java
+M	src/com/manuelmaly/hn/server/HNVoteCommand.java
+M	src/com/manuelmaly/hn/server/NoResponseCommand.java
+M	src/com/manuelmaly/hn/server/StringDownloadCommand.java
+M	src/com/manuelmaly/hn/server/VoteHTTPCommand.java
+M	src/com/manuelmaly/hn/task/HNFeedTaskBase.java
+M	src/com/manuelmaly/hn/task/HNLoginTask.java
+M	src/com/manuelmaly/hn/task/HNPostCommentsTask.java
+
+2ebd81f;Merge pull request #28 from ceggert/master
+0307fba;Fixes authentication issues by using https.
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+M	src/com/manuelmaly/hn/task/HNFeedTaskMainFeed.java
+M	src/com/manuelmaly/hn/task/HNLoginTask.java
+M	src/com/manuelmaly/hn/task/HNPostCommentsTask.java
+M	src/com/manuelmaly/hn/task/HNVoteTask.java
+
+6218a48;Merge pull request #27 from asafh/master
+d31bac5;Fixing indentation
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+189d583;Fixing issue https://github.com/manmal/hn-android/issues/26
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+e60ee9a;Merge pull request #25 from canozmen/share_intent_fix
+3491bef;fixed filepath separator issue, added kindle store picture
+A	design/appstore_icon_114.png
+M	src/com/manuelmaly/hn/util/FileUtil.java
+
+477c2a1;Sharing from comments activity sends post URL on HN instead of article URL
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+
+60f5fa8;Share intent sent with article title as subject
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+
+82abd65;build version bump and minor cookie fix
+M	AndroidManifest.xml
+M	src/com/manuelmaly/hn/server/HNCredentials.java
+
+5a06434;stabilized login and upvoting UI states
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/Settings.java
+M	src/com/manuelmaly/hn/SettingsActivity.java
+M	src/com/manuelmaly/hn/server/HNCredentials.java
+
+db26b72;added upvoting support in long-press menu on main view
+M	res/values/strings.xml
+A	src/com/manuelmaly/hn/BasePostActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/Settings.java
+M	src/com/manuelmaly/hn/UserPreference.java
+M	src/com/manuelmaly/hn/model/HNPost.java
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+M	src/com/manuelmaly/hn/server/BaseHTTPCommand.java
+M	src/com/manuelmaly/hn/server/GetHNUserTokenHTTPCommand.java
+M	src/com/manuelmaly/hn/server/GetHNUserTokenResponseHandler.java
+M	src/com/manuelmaly/hn/server/HNCredentials.java
+A	src/com/manuelmaly/hn/server/HNVoteCommand.java
+M	src/com/manuelmaly/hn/server/HTMLResponseHandler.java
+A	src/com/manuelmaly/hn/server/NoResponseCommand.java
+M	src/com/manuelmaly/hn/server/StringDownloadCommand.java
+A	src/com/manuelmaly/hn/server/VoteHTTPCommand.java
+M	src/com/manuelmaly/hn/task/BaseTask.java
+M	src/com/manuelmaly/hn/task/HNFeedTaskBase.java
+M	src/com/manuelmaly/hn/task/HNLoginTask.java
+M	src/com/manuelmaly/hn/task/HNPostCommentsTask.java
+A	src/com/manuelmaly/hn/task/HNVoteTask.java
+M	src/com/manuelmaly/hn/task/ITaskFinishedHandler.java
+
+ff2e132;Added user login to settings screen and behind-the-scenes code for logging in etc
+A	res/layout/user_settings.xml
+A	res/layout/user_settings_dialog.xml
+M	res/values/strings.xml
+M	res/xml/preferences.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+A	src/com/manuelmaly/hn/Settings.java
+M	src/com/manuelmaly/hn/SettingsActivity.java
+A	src/com/manuelmaly/hn/UserPreference.java
+A	src/com/manuelmaly/hn/parser/HNNewsLoginParser.java
+M	src/com/manuelmaly/hn/server/BaseHTTPCommand.java
+A	src/com/manuelmaly/hn/server/GetHNUserTokenHTTPCommand.java
+A	src/com/manuelmaly/hn/server/GetHNUserTokenResponseHandler.java
+A	src/com/manuelmaly/hn/server/HNCredentials.java
+R068	src/com/manuelmaly/hn/server/HTMLDownloadCommand.java	src/com/manuelmaly/hn/server/StringDownloadCommand.java
+M	src/com/manuelmaly/hn/task/HNFeedTaskBase.java
+A	src/com/manuelmaly/hn/task/HNLoginTask.java
+M	src/com/manuelmaly/hn/task/HNPostCommentsTask.java
+
+7b4049c;Added rudimentary external URL handling (let user choose to open a news.ycombinator.com link in every browser)
+M	AndroidManifest.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+A	src/com/manuelmaly/hn/ExternalIntentActivity.java
+M	src/com/manuelmaly/hn/model/HNPostComments.java
+
+e12b300;Introducing new textview for prevention of collapsing of comments when clicking a link, fixes #3
+M	res/layout/comments_list_item.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+A	src/com/manuelmaly/hn/reuse/LinkifiedTextView.java
+
+5472fd0;Fixed missing external browser and content provider usage, fixes #8
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+ec54730;Fixed overlapping share icon and comments/article button, fixes #10
+M	res/layout/article_activity.xml
+M	res/layout/comments_activity.xml
+
+cc3867c;Should fix #5
+M	src/com/manuelmaly/hn/model/HNFeed.java
+M	src/com/manuelmaly/hn/model/HNPost.java
+
+036662f;Added open-with and open-in features and some minor code cleanups, upped version numbers, closes #2
+M	AndroidManifest.xml
+M	res/values/preference_values.xml
+M	res/values/strings.xml
+M	res/xml/preferences.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/SettingsActivity.java
+
+0a99b19;Refactoring: Renamings and repositionings
+M	src/com/manuelmaly/hn/AboutActivity.java
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+8bd8059;Big bang commit (sorry!) - fixes stability issues, adds settings menu, more & buttons in main view, comments expanding
+M	AndroidManifest.xml
+A	design/expand.psd
+A	res/drawable-hdpi/more_normal.png
+A	res/drawable-hdpi/more_selected.png
+A	res/drawable-hdpi/settings.png
+A	res/drawable-mdpi/more_normal.png
+A	res/drawable-mdpi/more_selected.png
+A	res/drawable-mdpi/settings.png
+A	res/drawable-xhdpi/more_normal.png
+A	res/drawable-xhdpi/more_selected.png
+A	res/drawable-xhdpi/settings.png
+A	res/drawable/actionbar_button_bg.xml
+A	res/drawable/more.xml
+A	res/layout/about.xml
+M	res/layout/article_activity.xml
+M	res/layout/comments_activity.xml
+M	res/layout/main.xml
+A	res/layout/main_more_content.xml
+A	res/layout/settings.xml
+M	res/values/colors.xml
+A	res/values/preference_values.xml
+A	res/values/style.xml
+A	res/xml/preferences.xml
+A	src/com/manuelmaly/hn/AboutActivity.java
+M	src/com/manuelmaly/hn/App.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+A	src/com/manuelmaly/hn/SettingsActivity.java
+M	src/com/manuelmaly/hn/model/HNFeed.java
+M	src/com/manuelmaly/hn/util/Const.java
+
+8e840bc;added collapsible comments feature
+M	AndroidManifest.xml
+A	res/drawable-hdpi/expand.png
+A	res/drawable-mdpi/expand.png
+A	res/drawable-xhdpi/expand.png
+M	res/layout/comments_list_item.xml
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/model/HNComment.java
+A	src/com/manuelmaly/hn/model/HNCommentTreeNode.java
+M	src/com/manuelmaly/hn/model/HNPostComments.java
+
+869bf04;added "more" feature
+M	AndroidManifest.xml
+M	design/comments.psd
+R054	design/rounded_button_mdpi.psd	design/refresh2.psd
+M	design/rounded_button.psd
+M	res/drawable-hdpi/back.png
+A	res/drawable-hdpi/loadmore.png
+M	res/drawable-mdpi/back.png
+A	res/drawable-mdpi/loadmore.png
+M	res/drawable-nodpi/rounded_button_normal.9.png
+M	res/drawable-nodpi/rounded_button_pressed.9.png
+M	res/drawable-xhdpi/back.png
+A	res/drawable-xhdpi/loadmore.png
+M	res/drawable-xhdpi/rounded_button_normal.9.png
+M	res/drawable-xhdpi/rounded_button_pressed.9.png
+M	res/drawable/actionbar_bg_bright.xml
+M	res/drawable/actionbar_bg_orange.xml
+M	res/layout/article_activity.xml
+M	res/layout/comments_activity.xml
+M	res/layout/main.xml
+A	res/layout/main_list_item_loadmore.xml
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+M	src/com/manuelmaly/hn/model/HNFeed.java
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+M	src/com/manuelmaly/hn/server/BaseHTTPCommand.java
+M	src/com/manuelmaly/hn/task/BaseTask.java
+R059	src/com/manuelmaly/hn/task/HNFeedTask.java	src/com/manuelmaly/hn/task/HNFeedTaskBase.java
+A	src/com/manuelmaly/hn/task/HNFeedTaskLoadMore.java
+A	src/com/manuelmaly/hn/task/HNFeedTaskMainFeed.java
+M	src/com/manuelmaly/hn/task/HNPostCommentsTask.java
+M	src/com/manuelmaly/hn/task/ITaskFinishedHandler.java
+
+c1a5914;Merge branch 'master' of github.com:manmal/hn-android
+cf97590;added share article url icons, added switcher between comments and article, added grey topbar to article
+M	AndroidManifest.xml
+A	design/appstore_icon.png
+A	design/appstore_icon.psd
+M	design/comments.psd
+A	design/rounded_button.psd
+A	design/rounded_button_mdpi.psd
+M	proguard.cfg
+A	res/drawable-hdpi/back.png
+A	res/drawable-hdpi/share.png
+A	res/drawable-mdpi/back.png
+A	res/drawable-mdpi/share.png
+A	res/drawable-nodpi/rounded_button_normal.9.png
+A	res/drawable-nodpi/rounded_button_pressed.9.png
+A	res/drawable-xhdpi/back.png
+A	res/drawable-xhdpi/rounded_button_normal.9.png
+A	res/drawable-xhdpi/rounded_button_pressed.9.png
+A	res/drawable-xhdpi/share.png
+A	res/drawable/actionbar_bg_bright.xml
+R100	res/drawable/actionbar_bg.xml	res/drawable/actionbar_bg_orange.xml
+A	res/drawable/rounded_button.xml
+A	res/drawable/shadow.xml
+M	res/layout/article_activity.xml
+M	res/layout/comments_activity.xml
+M	res/layout/main.xml
+M	res/values/strings.xml
+M	src/com/manuelmaly/hn/ArticleReaderActivity.java
+M	src/com/manuelmaly/hn/CommentsActivity.java
+M	src/com/manuelmaly/hn/MainActivity.java
+
+1f2217b;Update README.md
+M	README.md
+
+7379a12;Update README.md
+M	README.md
+
+0ca5c88;Update README.md
+M	README.md
+
+38dec0a;Update README.md
+M	README.md
+
+e7518f2;Update README.md
+M	README.md
+
+5f078ae;method renames for better understanding #2
+M	src/com/manuelmaly/hn/parser/BaseHTMLParser.java
+M	src/com/manuelmaly/hn/parser/HNFeedParser.java
+
+8b2c134;method renames for better understanding
+M	src/com/manuelmaly/hn/task/BaseTask.java
+M	src/com/manuelmaly/hn/task/HNFeedTask.java
+M	src/com/manuelmaly/hn/task/HNPostCommentsTask.java
+
+4fae132;renamed main package and main activity
+M	.factorypath
+M	AndroidManifest.xml
+R091	src/com/manuelmaly/hnreader/App.java	src/com/manuelmaly/hn/App.java
+R094	src/com/manuelmaly/hnreader/ArticleReaderActivity.java	src/com/manuelmaly/hn/ArticleReaderActivity.java
+R093	src/com/manuelmaly/hnreader/CommentsActivity.java	src/com/manuelmaly/hn/CommentsActivity.java
+R088	src/com/manuelmaly/hnreader/HNReaderActivity.java	src/com/manuelmaly/hn/MainActivity.java
+R097	src/com/manuelmaly/hnreader/model/HNComment.java	src/com/manuelmaly/hn/model/HNComment.java
+R094	src/com/manuelmaly/hnreader/model/HNFeed.java	src/com/manuelmaly/hn/model/HNFeed.java
+R096	src/com/manuelmaly/hnreader/model/HNPost.java	src/com/manuelmaly/hn/model/HNPost.java
+R094	src/com/manuelmaly/hnreader/model/HNPostComments.java	src/com/manuelmaly/hn/model/HNPostComments.java
+R098	src/com/manuelmaly/hnreader/parser/BaseHTMLParser.java	src/com/manuelmaly/hn/parser/BaseHTMLParser.java
+R090	src/com/manuelmaly/hnreader/parser/HNCommentsParser.java	src/com/manuelmaly/hn/parser/HNCommentsParser.java
+R095	src/com/manuelmaly/hnreader/parser/HNFeedParser.java	src/com/manuelmaly/hn/parser/HNFeedParser.java
+R085	src/com/manuelmaly/hnreader/reuse/CancelableRunnable.java	src/com/manuelmaly/hn/reuse/CancelableRunnable.java
+R096	src/com/manuelmaly/hnreader/reuse/ImageViewFader.java	src/com/manuelmaly/hn/reuse/ImageViewFader.java
+R096	src/com/manuelmaly/hnreader/reuse/ViewRotator.java	src/com/manuelmaly/hn/reuse/ViewRotator.java
+R099	src/com/manuelmaly/hnreader/server/BaseHTTPCommand.java	src/com/manuelmaly/hn/server/BaseHTTPCommand.java
+R095	src/com/manuelmaly/hnreader/server/ConnectivityUtils.java	src/com/manuelmaly/hn/server/ConnectivityUtils.java
+R095	src/com/manuelmaly/hnreader/server/HTMLDownloadCommand.java	src/com/manuelmaly/hn/server/HTMLDownloadCommand.java
+R096	src/com/manuelmaly/hnreader/server/HTMLResponseHandler.java	src/com/manuelmaly/hn/server/HTMLResponseHandler.java
+R097	src/com/manuelmaly/hnreader/server/IAPICommand.java	src/com/manuelmaly/hn/server/IAPICommand.java
+R094	src/com/manuelmaly/hnreader/task/BaseTask.java	src/com/manuelmaly/hn/task/BaseTask.java
+R082	src/com/manuelmaly/hnreader/task/HNFeedTask.java	src/com/manuelmaly/hn/task/HNFeedTask.java
+R084	src/com/manuelmaly/hnreader/task/HNPostCommentsTask.java	src/com/manuelmaly/hn/task/HNPostCommentsTask.java
+R089	src/com/manuelmaly/hnreader/task/ITaskFinishedHandler.java	src/com/manuelmaly/hn/task/ITaskFinishedHandler.java
+R085	src/com/manuelmaly/hnreader/util/Const.java	src/com/manuelmaly/hn/util/Const.java
+R098	src/com/manuelmaly/hnreader/util/DisplayHelper.java	src/com/manuelmaly/hn/util/DisplayHelper.java
+R089	src/com/manuelmaly/hnreader/util/ExceptionUtil.java	src/com/manuelmaly/hn/util/ExceptionUtil.java
+R094	src/com/manuelmaly/hnreader/util/FileUtil.java	src/com/manuelmaly/hn/util/FileUtil.java
+R095	src/com/manuelmaly/hnreader/util/FontHelper.java	src/com/manuelmaly/hn/util/FontHelper.java
+R094	src/com/manuelmaly/hnreader/util/Run.java	src/com/manuelmaly/hn/util/Run.java
+
+ff18a65;prevented view recreation of article webview on orientation change
+M	AndroidManifest.xml
+M	design/commentsbubble-mdpi.psd
+
+8533905;added article item pressed state
+A	res/drawable/main_list_selector.xml
+M	res/layout/main.xml
+M	res/layout/main_list_item.xml
+M	res/values/colors.xml
+
+d1cc940;removed superfluous files, added image for comment button pressed state
+D	.apt_generated/com/manuelmaly/hnreader/App_.java
+D	.apt_generated/com/manuelmaly/hnreader/ArticleReaderActivity_.java
+D	.apt_generated/com/manuelmaly/hnreader/CommentsActivity_.java
+D	.apt_generated/com/manuelmaly/hnreader/HNReaderActivity_.java
+M	design/commentsbubble-mdpi.psd
+R100	res/drawable-mdpi/bubble.9.png	res/drawable-mdpi/bubble_patch.9.png
+A	res/drawable-mdpi/bubble_patch_pressed.9.png
+R100	res/drawable-xhdpi/bubble.9.png	res/drawable-xhdpi/bubble_patch.9.png
+A	res/drawable-xhdpi/bubble_patch_pressed.9.png
+A	res/drawable/bubble.xml
+
+84e3e2e;prevented view recreation on orientation change
+M	AndroidManifest.xml
+D	src/com/manuelmaly/hnreader/parser/BaseHTMLIntListParser.java
+D	src/com/manuelmaly/hnreader/parser/BaseHTMLStringListParser.java
+D	src/com/manuelmaly/hnreader/parser/OldHNFeedParser.java
+
+0942914;fixed parser problem when time ago is not provided in a comment
+M	.gitignore
+M	src/com/manuelmaly/hnreader/parser/HNCommentsParser.java
+
+751d0ec;minor changes
+M	src/com/manuelmaly/hnreader/CommentsActivity.java
+M	src/com/manuelmaly/hnreader/parser/BaseHTMLParser.java
+M	src/com/manuelmaly/hnreader/parser/HNCommentsParser.java
+M	src/com/manuelmaly/hnreader/task/HNPostCommentsTask.java
+
+0857b89;fixed empty feed when post special cases are found
+M	.apt_generated/com/manuelmaly/hnreader/HNReaderActivity_.java
+M	src/com/manuelmaly/hnreader/HNReaderActivity.java
+M	src/com/manuelmaly/hnreader/parser/BaseHTMLParser.java
+M	src/com/manuelmaly/hnreader/parser/HNFeedParser.java
+
+a0eff50;BIG BANG: switched back to jsoup for parsing, added comments activity, added many design elements
+A	.apt_generated/com/manuelmaly/hnreader/ArticleReaderActivity_.java
+A	.apt_generated/com/manuelmaly/hnreader/CommentsActivity_.java
+M	.apt_generated/com/manuelmaly/hnreader/HNReaderActivity_.java
+M	.classpath
+M	.factorypath
+M	AndroidManifest.xml
+R100	lib/androidannotations-2.5.jar	androidannotations-2.5.jar
+A	assets/Comfortaa-Bold.ttf
+A	assets/Comfortaa-Regular.ttf
+A	design/comments.psd
+A	design/commentsbubble-mdpi.psd
+A	design/hn.psd
+A	design/icon_hdpi.psd
+A	design/icon_mdpi.psd
+A	design/icons.psd
+A	design/points_roundedrect.psd
+A	design/refresh.psd
+D	lib/jtidy-r938.jar
+R100	lib/android-support-v4.jar	libs/android-support-v4.jar
+R100	lib/androidannotations-2.5-api.jar	libs/androidannotations-2.5-api.jar
+A	libs/jsoup-1.6.3.jar
+A	libs/libGoogleAnalytics.jar
+A	res/drawable-hdpi/hn.png
+M	res/drawable-hdpi/ic_launcher.png
+A	res/drawable-hdpi/refresh.png
+A	res/drawable-hdpi/refresh_ok.png
+M	res/drawable-ldpi/ic_launcher.png
+A	res/drawable-mdpi/bubble.9.png
+A	res/drawable-mdpi/hn.png
+M	res/drawable-mdpi/ic_launcher.png
+A	res/drawable-mdpi/points_roundedrect.9.png
+A	res/drawable-mdpi/refresh.png
+A	res/drawable-mdpi/refresh_ok.png
+A	res/drawable-nodpi/dark_stripes.png
+A	res/drawable-nodpi/transparent_noise.png
+A	res/drawable-xhdpi/bubble.9.png
+A	res/drawable-xhdpi/hn.png
+A	res/drawable-xhdpi/ic_launcher.png
+A	res/drawable-xhdpi/points_roundedrect.9.png
+A	res/drawable-xhdpi/refresh.png
+A	res/drawable-xhdpi/refresh_ok.png
+A	res/drawable/actionbar_bg.xml
+A	res/layout/article_activity.xml
+A	res/layout/comments_activity.xml
+A	res/layout/comments_list_item.xml
+M	res/layout/main.xml
+M	res/layout/main_list_item.xml
+A	res/values/colors.xml
+M	res/values/strings.xml
+M	src/com/manuelmaly/hnreader/App.java
+A	src/com/manuelmaly/hnreader/ArticleReaderActivity.java
+A	src/com/manuelmaly/hnreader/CommentsActivity.java
+M	src/com/manuelmaly/hnreader/HNReaderActivity.java
+M	src/com/manuelmaly/hnreader/model/HNComment.java
+M	src/com/manuelmaly/hnreader/model/HNFeed.java
+M	src/com/manuelmaly/hnreader/model/HNPost.java
+A	src/com/manuelmaly/hnreader/model/HNPostComments.java
+A	src/com/manuelmaly/hnreader/parser/BaseHTMLIntListParser.java
+A	src/com/manuelmaly/hnreader/parser/BaseHTMLParser.java
+A	src/com/manuelmaly/hnreader/parser/BaseHTMLStringListParser.java
+A	src/com/manuelmaly/hnreader/parser/HNCommentsParser.java
+A	src/com/manuelmaly/hnreader/parser/HNFeedParser.java
+A	src/com/manuelmaly/hnreader/parser/OldHNFeedParser.java
+A	src/com/manuelmaly/hnreader/reuse/CancelableRunnable.java
+A	src/com/manuelmaly/hnreader/reuse/ImageViewFader.java
+A	src/com/manuelmaly/hnreader/reuse/ViewRotator.java
+M	src/com/manuelmaly/hnreader/server/BaseHTTPCommand.java
+M	src/com/manuelmaly/hnreader/server/HTMLDownloadCommand.java
+M	src/com/manuelmaly/hnreader/server/IAPICommand.java
+A	src/com/manuelmaly/hnreader/task/BaseTask.java
+A	src/com/manuelmaly/hnreader/task/HNFeedTask.java
+A	src/com/manuelmaly/hnreader/task/HNPostCommentsTask.java
+A	src/com/manuelmaly/hnreader/task/ITaskFinishedHandler.java
+A	src/com/manuelmaly/hnreader/util/Const.java
+A	src/com/manuelmaly/hnreader/util/ExceptionUtil.java
+A	src/com/manuelmaly/hnreader/util/FileUtil.java
+A	src/com/manuelmaly/hnreader/util/FontHelper.java
+M	src/com/manuelmaly/hnreader/util/Run.java
+A	test/strangehtml.html
+
+7a49973;initial commit
+A	.apt_generated/com/manuelmaly/hnreader/App_.java
+A	.apt_generated/com/manuelmaly/hnreader/HNReaderActivity_.java
+A	.classpath
+A	.factorypath
+A	.gitignore
+A	.project
+A	.settings/org.eclipse.jdt.apt.core.prefs
+A	.settings/org.eclipse.jdt.core.prefs
+A	AndroidManifest.xml
+A	lib/android-support-v4.jar
+A	lib/androidannotations-2.5-api.jar
+A	lib/androidannotations-2.5.jar
+A	lib/jtidy-r938.jar
+A	proguard.cfg
+A	project.properties
+A	res/drawable-hdpi/ic_launcher.png
+A	res/drawable-ldpi/ic_launcher.png
+A	res/drawable-mdpi/ic_launcher.png
+A	res/layout/main.xml
+A	res/layout/main_list_item.xml
+A	res/values/strings.xml
+A	src/com/manuelmaly/hnreader/App.java
+A	src/com/manuelmaly/hnreader/HNReaderActivity.java
+A	src/com/manuelmaly/hnreader/model/HNComment.java
+A	src/com/manuelmaly/hnreader/model/HNFeed.java
+A	src/com/manuelmaly/hnreader/model/HNPost.java
+A	src/com/manuelmaly/hnreader/server/BaseHTTPCommand.java
+A	src/com/manuelmaly/hnreader/server/ConnectivityUtils.java
+A	src/com/manuelmaly/hnreader/server/HTMLDownloadCommand.java
+A	src/com/manuelmaly/hnreader/server/HTMLResponseHandler.java
+A	src/com/manuelmaly/hnreader/server/IAPICommand.java
+A	src/com/manuelmaly/hnreader/util/DisplayHelper.java
+A	src/com/manuelmaly/hnreader/util/Run.java
+
+1913d90;Initial commit
+A	README.md

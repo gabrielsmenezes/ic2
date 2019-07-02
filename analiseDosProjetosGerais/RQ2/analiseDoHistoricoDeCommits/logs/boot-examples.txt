@@ -1,0 +1,307 @@
+4b14c16;1.0.1
+M	pom.xml
+
+c4e6866;Revised to not be an auto configuration class so much as a regular @Configuration class that uses Spring Boot annotations.
+M	velocity/src/main/java/demo/Application.java
+
+da5307e;Revised to not be an auto configuration class so much as a regular @Configuration class that uses Spring Boot annotations.
+M	velocity/src/main/java/demo/Application.java
+
+4fbaaea;Revised to not be an auto configuration class so much as a regular @Configuration class that uses Spring Boot annotations.
+D	velocity/src/main/java/autoconfigure/velocity/VelocityAutoConfiguration.java
+M	velocity/src/main/java/demo/Application.java
+D	velocity/src/main/resources/META-INF/spring.factories
+
+04a5b97;Improved the Velocity example
+M	pom.xml
+M	vaadin/src/main/java/demo/Application.java
+M	velocity/pom.xml
+A	velocity/src/main/java/autoconfigure/velocity/VelocityAutoConfiguration.java
+M	velocity/src/main/java/demo/Application.java
+A	velocity/src/main/resources/META-INF/spring.factories
+A	velocity/src/main/resources/data.sql
+M	velocity/src/main/resources/templates/bookings.vm
+M	websockets/src/main/resources/data.sql
+
+a43453f;websocket example now works on safari, ff, and chrome
+M	jersey/pom.xml
+M	jersey/src/main/java/demo/GreetingEndpoint.java
+M	pom.xml
+M	rest-and-mvc/pom.xml
+M	vaadin/pom.xml
+M	velocity/pom.xml
+M	websockets/pom.xml
+M	x-auth-security/pom.xml
+
+c6a4546;websocket example now works on safari, ff, and chrome
+M	websockets/pom.xml
+M	websockets/src/main/java/demo/Application.java
+M	websockets/src/main/resources/public/js/app.js
+M	websockets/src/main/resources/templates/bookings.html
+M	websockets/src/main/resources/templates/layouts/standard.html
+
+68a5e32;reworking the weboskcets code a bit.
+M	pom.xml
+A	websockets/pom.xml
+A	websockets/src/main/java/demo/Application.java
+A	websockets/src/main/resources/application.properties
+A	websockets/src/main/resources/data.sql
+A	websockets/src/main/resources/public/js/app.js
+A	websockets/src/main/resources/templates/bookings.html
+A	websockets/src/main/resources/templates/layouts/standard.html
+A	websockets/src/test/java/demo/ApplicationTests.java
+
+501d5c0;restructured the build so that - even if the projects themselves dont share a standard example pom in order to make every build reusable, i created a parent one to simplify global builds.
+M	vaadin/pom.xml
+M	vaadin/src/main/java/demo/Application.java
+D	vaadin/src/main/java/demo/Customer.java
+D	vaadin/src/main/java/demo/CustomerRepository.java
+D	vaadin/src/main/java/demo/CustomerRestController.java
+D	vaadin/src/main/java/demo/RootUI.java
+M	vaadin/src/test/java/demo/ApplicationTests.java
+
+65ef80c;restructured the build so that - even if the projects themselves dont share a standard example pom in order to make every build reusable, i created a parent one to simplify global builds.
+M	jersey/pom.xml
+M	jersey/src/main/java/demo/Application.java
+D	jersey/src/main/java/demo/Endpoint.java
+A	jersey/src/main/java/demo/GreetingEndpoint.java
+
+00c610a;restructured the build so that - even if the projects themselves dont share a standard example pom in order to make every build reusable, i created a parent one to simplify global builds.
+M	jersey/pom.xml
+M	jersey/src/main/java/demo/Application.java
+M	pom.xml
+M	rest-and-mvc/pom.xml
+M	rest-and-mvc/src/main/java/demo/Application.java
+M	vaadin/pom.xml
+M	vaadin/src/main/java/demo/Customer.java
+M	velocity/pom.xml
+M	x-auth-security/README.md
+M	x-auth-security/pom.xml
+R099	x-auth-security/src/main/java/example/Application.java	x-auth-security/src/main/java/demo/Application.java
+R098	x-auth-security/src/main/java/example/xauth/TokenUtils.java	x-auth-security/src/main/java/demo/xauth/TokenUtils.java
+R099	x-auth-security/src/main/java/example/xauth/UserXAuthTokenController.java	x-auth-security/src/main/java/demo/xauth/UserXAuthTokenController.java
+R097	x-auth-security/src/main/java/example/xauth/XAuthTokenConfigurer.java	x-auth-security/src/main/java/demo/xauth/XAuthTokenConfigurer.java
+R098	x-auth-security/src/main/java/example/xauth/XAuthTokenFilter.java	x-auth-security/src/main/java/demo/xauth/XAuthTokenFilter.java
+
+938d216;restructured the build so that - even if the projects themselves dont share a standard example pom in order to make every build reusable, i created a parent one to simplify global builds.
+M	jersey/src/main/java/demo/Application.java
+M	pom.xml
+M	rest-and-mvc/pom.xml
+M	rest-and-mvc/src/main/java/demo/Application.java
+M	vaadin/pom.xml
+M	vaadin/src/main/java/demo/Application.java
+M	velocity/pom.xml
+M	velocity/src/main/java/demo/Application.java
+M	x-auth-security/pom.xml
+M	x-auth-security/src/main/java/example/Application.java
+
+e30058e;adding child poms
+M	jersey/pom.xml
+A	pom.xml
+M	rest-and-mvc/pom.xml
+M	vaadin/pom.xml
+M	velocity/pom.xml
+M	x-auth-security/pom.xml
+
+d26b233;Merge pull request #3 from mraible/master
+55a143d;Upgrades to Spring Boot, Spring Security, Bootstrap, AngularJS and jQuery
+M	x-auth-security/pom.xml
+M	x-auth-security/src/main/resources/public/index.html
+
+e3e688d;Fixed REST endpoints for delete, create and update.
+M	x-auth-security/src/main/java/example/Application.java
+
+b120c58;Fixed role name.
+M	x-auth-security/src/main/resources/public/partials/index.html
+
+c19d261;Removed tabs and unnecessary commas.
+M	x-auth-security/src/main/resources/public/js/app.js
+
+965143c;updated to RC1, removed extraneous deps
+M	rest-and-mvc/pom.xml
+M	rest-and-mvc/src/main/java/demo/Application.java
+
+03927c3;moved code out to separate code pages.
+A	vaadin/src/main/java/demo/Customer.java
+A	vaadin/src/main/java/demo/CustomerRepository.java
+A	vaadin/src/main/java/demo/CustomerRestController.java
+A	vaadin/src/main/java/demo/RootUI.java
+A	vaadin/src/main/resources/application.properties
+
+8fa7fce;updated Vaadin demo
+M	vaadin/pom.xml
+M	vaadin/src/main/java/demo/Application.java
+D	vaadin/src/main/resources/VAADIN/themes/sample/sample.scss
+D	vaadin/src/main/resources/VAADIN/themes/sample/styles.scss
+M	vaadin/src/main/resources/data.sql
+D	vaadin/src/main/resources/logback.xml
+
+d2c5f67;vaadin themed data instead :)
+M	vaadin/src/main/resources/data.sql
+
+b873c73;adding a vaadin example.
+A	vaadin/pom.xml
+A	vaadin/src/main/java/demo/Application.java
+A	vaadin/src/main/resources/VAADIN/themes/sample/sample.scss
+A	vaadin/src/main/resources/VAADIN/themes/sample/styles.scss
+A	vaadin/src/main/resources/data.sql
+A	vaadin/src/main/resources/logback.xml
+A	vaadin/src/test/java/demo/ApplicationTests.java
+
+a875ee0;Clarified that one section of the HTML is server-generated and the other is generated dynamically after an Ajax request
+M	rest-and-mvc/src/main/resources/templates/bookings.html
+
+cc18bcc;updated attributions
+M	x-auth-security/src/main/java/example/xauth/TokenUtils.java
+M	x-auth-security/src/main/java/example/xauth/UserXAuthTokenController.java
+M	x-auth-security/src/main/java/example/xauth/XAuthTokenConfigurer.java
+M	x-auth-security/src/main/java/example/xauth/XAuthTokenFilter.java
+
+5d9bb77;simplification of the code.
+M	x-auth-security/README.md
+M	x-auth-security/src/main/java/example/Application.java
+
+eccecfe;simplification of the code.
+M	x-auth-security/src/main/java/example/Application.java
+
+fee9d2c;this is a more complete example now, and features a Thymeleaf page, REST APIs, jQuery-powered Ajax, JPA repositories, and more.
+M	rest-and-mvc/pom.xml
+M	rest-and-mvc/src/main/java/demo/Application.java
+M	rest-and-mvc/src/main/resources/data.sql
+M	rest-and-mvc/src/main/resources/templates/bookings.html
+
+1f932a0;updated template.
+M	rest-and-mvc/pom.xml
+M	rest-and-mvc/src/main/resources/templates/bookings.html
+
+fc42cc2;updated the code to work with the latest snapshots, which in turn depend on Spring 4.
+M	rest-and-mvc/pom.xml
+M	rest-and-mvc/src/main/java/demo/Application.java
+M	rest-and-mvc/src/main/resources/data.sql
+M	rest-and-mvc/src/main/resources/templates/bookings.html
+D	rest-and-mvc/src/test/java/demo/ApplicationTests.java
+
+7b86922;fixed fake user details service a bit.
+M	x-auth-security/src/main/java/example/Application.java
+
+b36d1aa;make it work as a standalone jar. u can easily switch this to a .war by changing maven packaging element.
+M	x-auth-security/pom.xml
+
+a32baf4;fixing broken build.
+M	x-auth-security/pom.xml
+
+55676dd;fixing broken build.
+M	x-auth-security/src/main/java/example/xauth/XAuthTokenFilter.java
+D	x-auth-security/src/test/java/example/PasswordEncoderTest.java
+
+6961c29;cleanup .
+M	x-auth-security/src/main/java/example/Application.java
+
+50ceebf;the end-to-end works now.
+M	x-auth-security/src/main/java/example/Application.java
+M	x-auth-security/src/main/java/example/xauth/UserXAuthTokenController.java
+M	x-auth-security/src/main/resources/public/js/app.js
+
+e1e4319;adding XAuthConfigurer.
+M	x-auth-security/src/main/java/example/Application.java
+M	x-auth-security/src/main/java/example/xauth/TokenUtils.java
+D	x-auth-security/src/main/java/example/xauth/XAuthConfigurer.java
+A	x-auth-security/src/main/java/example/xauth/XAuthTokenConfigurer.java
+
+d112db1;adding XAuthConfigurer.
+A	x-auth-security/src/main/java/example/xauth/XAuthConfigurer.java
+
+2166c50;adding x-auth bits.
+M	x-auth-security/src/main/java/example/Application.java
+
+0fb9835;adding x-auth bits.
+M	x-auth-security/src/main/java/example/Application.java
+A	x-auth-security/src/main/java/example/xauth/TokenUtils.java
+A	x-auth-security/src/main/java/example/xauth/UserXAuthTokenController.java
+A	x-auth-security/src/main/java/example/xauth/XAuthTokenFilter.java
+
+f905d67;adding x-auth-token example.
+M	x-auth-security/src/main/java/example/Application.java
+
+9a50f28;end-to-end x-auth implementation.
+M	x-auth-security/src/main/java/example/Application.java
+
+bba6f69;introducing the user transfer part of the service.
+M	x-auth-security/src/main/java/example/Application.java
+
+c7584a4;revised security layer.
+M	x-auth-security/src/main/java/example/Application.java
+
+0c59aef;removing irrelevant code to example.
+M	x-auth-security/src/main/java/example/Application.java
+D	x-auth-security/src/main/java/example/DataBaseInitializer.java
+D	x-auth-security/src/main/java/example/ExampleUserDetailsService.java
+D	x-auth-security/src/main/java/example/JsonViews.java
+D	x-auth-security/src/main/java/example/NewsEntry.java
+D	x-auth-security/src/main/java/example/NewsEntryRepository.java
+D	x-auth-security/src/main/java/example/NewsEntryResource.java
+D	x-auth-security/src/main/java/example/SaltedSHA256PasswordEncoder.java
+D	x-auth-security/src/main/java/example/TokenUtils.java
+D	x-auth-security/src/main/java/example/User.java
+D	x-auth-security/src/main/java/example/UserRepository.java
+D	x-auth-security/src/main/java/example/UserResource.java
+D	x-auth-security/src/main/java/example/UserTransfer.java
+
+89f947e;slightly different configs restoring session statelessness.
+M	x-auth-security/pom.xml
+M	x-auth-security/src/main/java/example/Application.java
+
+466e500;adding x-auth-security example.
+A	x-auth-security/README.md
+A	x-auth-security/pom.xml
+A	x-auth-security/src/main/java/example/Application.java
+A	x-auth-security/src/main/java/example/DataBaseInitializer.java
+A	x-auth-security/src/main/java/example/ExampleUserDetailsService.java
+A	x-auth-security/src/main/java/example/JsonViews.java
+A	x-auth-security/src/main/java/example/NewsEntry.java
+A	x-auth-security/src/main/java/example/NewsEntryRepository.java
+A	x-auth-security/src/main/java/example/NewsEntryResource.java
+A	x-auth-security/src/main/java/example/SaltedSHA256PasswordEncoder.java
+A	x-auth-security/src/main/java/example/TokenUtils.java
+A	x-auth-security/src/main/java/example/User.java
+A	x-auth-security/src/main/java/example/UserRepository.java
+A	x-auth-security/src/main/java/example/UserResource.java
+A	x-auth-security/src/main/java/example/UserTransfer.java
+A	x-auth-security/src/main/resources/application.properties
+A	x-auth-security/src/main/resources/public/index.html
+A	x-auth-security/src/main/resources/public/js/app.js
+A	x-auth-security/src/main/resources/public/partials/create.html
+A	x-auth-security/src/main/resources/public/partials/edit.html
+A	x-auth-security/src/main/resources/public/partials/index.html
+A	x-auth-security/src/main/resources/public/partials/login.html
+A	x-auth-security/src/test/java/example/PasswordEncoderTest.java
+
+e373f14;updated Jersey example.
+M	jersey/pom.xml
+M	jersey/src/main/java/demo/Application.java
+
+5017cbf;adding a Boot velocity example.
+M	.gitignore
+M	jersey/src/main/java/demo/Application.java
+M	rest-and-mvc/pom.xml
+A	velocity/pom.xml
+A	velocity/src/main/java/demo/Application.java
+A	velocity/src/main/resources/templates/bookings.vm
+
+2f075eb;adding an example on how to run a Jersey based REST service inside of Spring Boot. useful if you want to know how to run a third party Servlet inside.
+A	jersey/pom.xml
+A	jersey/src/main/java/demo/Application.java
+A	jersey/src/main/java/demo/Endpoint.java
+A	jersey/src/test/java/demo/ApplicationTests.java
+
+19374ae;adding a simple Spring MVC / RThymeleaf and REST example all in one code page. I often live-code this for people on stage.
+A	rest-and-mvc/pom.xml
+A	rest-and-mvc/src/main/java/demo/Application.java
+A	rest-and-mvc/src/main/resources/data.sql
+A	rest-and-mvc/src/main/resources/templates/bookings.html
+A	rest-and-mvc/src/test/java/demo/ApplicationTests.java
+
+3bfb690;Initial commit
+A	.gitignore
+A	LICENSE
+A	README.md

@@ -1,0 +1,597 @@
+c28d039;Merge pull request #46 from BlakeWilliams/bmw-android-state-listener
+2cc0bb8;Listen for Android state change events
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+4771440;Merge pull request #45 from bryant1410/master
+dd096e1;Fix broken Markdown headings
+M	README.md
+
+1fa0af4;1.0.8
+M	package.json
+
+4b9a307;Merge pull request #36 from connected-swu/master
+2e9f70c;Merge pull request #32 from gilesvangruisen/gvg-fix-reload
+360240f;SW/HZ - updating library search path and imports to work with react-native 0.40
+M	RCTCONVERT+CBUUID.h
+M	RNBLE.h
+M	RNBLE.m
+M	RNBLE.xcodeproj/project.pbxproj
+
+2419991;Drop all connections on access to sharedManager
+M	RNBLE.m
+
+f029e03;Make RNBLE a singleton
+M	RNBLE.m
+
+da381b1;Merge pull request #20 from rabbitom/master
+0491960;write descriptor when enable/disable notify on Android
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	bindings.android.js
+
+9aab370;implemented "notify" on Android
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	bindings.android.js
+
+a15c41e;update readme for android
+M	README.md
+
+df6cfc8;advertisement_discovery: use 1.0.7 react-native-ble dep for android fix
+M	examples/advertisement_discovery/package.json
+
+53d954b;1.0.7
+M	package.json
+
+a10a78b;android bindings: startscanning send uuid array
+M	bindings.android.js
+
+02d2846;advertisement_discovery: use 1.0.6 react-native-ble dep for android support
+M	examples/advertisement_discovery/package.json
+
+af85ccb;1.0.6
+M	package.json
+
+fe87e92;startscanning takes array of uuid strings
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+9db3a08;request permissions
+M	android/src/main/AndroidManifest.xml
+
+4a9ac37;for some reason rnpm link isnt enough, need to edit MainApplication.java
+M	examples/advertisement_discovery/android/app/src/main/java/com/advertisement_discovery/MainApplication.java
+
+ac9113d;add index.android.js
+M	examples/advertisement_discovery/index.android.js
+
+922a1ff;move up minsdkversion to react-native-ble deps minsdkversion
+M	examples/advertisement_discovery/android/app/build.gradle
+
+9a060ad;rnpm link
+M	examples/advertisement_discovery/android/app/build.gradle
+M	examples/advertisement_discovery/android/app/src/main/java/com/advertisement_discovery/MainActivity.java
+M	examples/advertisement_discovery/android/app/src/main/res/values/strings.xml
+M	examples/advertisement_discovery/android/settings.gradle
+
+c514452;convert noble uuids to native uuids
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	bindings.android.js
+
+c2e0f8a;convert all uuids to noble style on the way out
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+aabdbcb;start scanning API modified to be similar with iOS implementation
+M	bindings.android.js
+
+7a2afc2;bug fix to stopScan() should not be called with null scanCallBack --> causes NPE crash in some devices (e.g. Samngsung)
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+9a75d24;Bug fix to stopScanning() method
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+1192548;Duplicate scan result filtering added (based on BLE MAC address)
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+ec474e3;bug fix, discovered devices should not be cleared on disconnect
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+0f3c89e;serviceUuid used in scanning instead of the ble mac address
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	bindings.android.js
+
+6d74ebc;implementation for chracteristic write operation + bug fig to characteristics filtering
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	bindings.android.js
+
+4736f26;unnecessary debug logs removed
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+3fa8204;android bindings modified
+M	bindings.android.js
+
+8de4216;onPause, onResume and onDestroy life cycle events added to RNBLEModule
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+e75cb9a;Data read implemented + bug fixes to connection tear down + case ignored in uuid comparisons
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+1fe78ec;Implementation for discover characteristics and for discover descriptors
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	bindings.android.js
+
+cb9281c;Service discovery implementation
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	bindings.android.js
+
+9d74f62;Connect and Disconnect implementation added
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	bindings.android.js
+
+22d5b45;added NPE check to scan start. Scanning not started if blueToothScanner is null
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+58c26fe;added possibility to filter by device address (temp) solution
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+6c98d4b;Reimplemented scanning using Android API level 21
+M	android/build.gradle
+D	android/src/main/java/com/geniem/rnble/BluetoothUuid.java
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+D	android/src/main/java/com/geniem/rnble/ScanRecord.java
+
+c2e1d83;bug fix (NPE check added)
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+
+dd79617;bug fix to manufacture data handling
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	bindings.android.js
+
+dea7b55;.gitignore modified
+M	android/.gitignore
+
+97e621b;gitignore added for android
+A	android/.gitignore
+
+c551e84;BLE scan and scan record parsing added
+M	android/build.gradle
+A	android/src/main/java/com/geniem/rnble/BluetoothUuid.java
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	android/src/main/java/com/geniem/rnble/RNBLEPackage.java
+A	android/src/main/java/com/geniem/rnble/ScanRecord.java
+M	bindings.android.js
+
+63c715e;Android BluetoothManager and adapter initialization. BT adapter state check (getState)
+M	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+M	bindings.android.js
+
+c1c6f84;stub android module added to the repo (no functionality yet)
+A	android/build.gradle
+A	android/src/main/AndroidManifest.xml
+A	android/src/main/java/com/geniem/rnble/RNBLEModule.java
+A	android/src/main/java/com/geniem/rnble/RNBLEPackage.java
+A	bindings.android.js
+
+539d108;add react-native-ble example and link
+M	examples/advertisement_discovery/index.ios.js
+M	examples/advertisement_discovery/ios/advertisement_discovery.xcodeproj/project.pbxproj
+M	examples/advertisement_discovery/ios/advertisement_discovery/Info.plist
+M	examples/advertisement_discovery/package.json
+
+e07a85f;generate new example
+A	examples/advertisement_discovery/.buckconfig
+A	examples/advertisement_discovery/.flowconfig
+A	examples/advertisement_discovery/.gitignore
+A	examples/advertisement_discovery/.watchmanconfig
+A	examples/advertisement_discovery/android/app/BUCK
+A	examples/advertisement_discovery/android/app/build.gradle
+A	examples/advertisement_discovery/android/app/proguard-rules.pro
+A	examples/advertisement_discovery/android/app/src/main/AndroidManifest.xml
+A	examples/advertisement_discovery/android/app/src/main/java/com/advertisement_discovery/MainActivity.java
+A	examples/advertisement_discovery/android/app/src/main/java/com/advertisement_discovery/MainApplication.java
+A	examples/advertisement_discovery/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	examples/advertisement_discovery/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	examples/advertisement_discovery/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	examples/advertisement_discovery/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	examples/advertisement_discovery/android/app/src/main/res/values/strings.xml
+A	examples/advertisement_discovery/android/app/src/main/res/values/styles.xml
+A	examples/advertisement_discovery/android/build.gradle
+A	examples/advertisement_discovery/android/gradle.properties
+A	examples/advertisement_discovery/android/gradle/wrapper/gradle-wrapper.jar
+A	examples/advertisement_discovery/android/gradle/wrapper/gradle-wrapper.properties
+A	examples/advertisement_discovery/android/gradlew
+A	examples/advertisement_discovery/android/gradlew.bat
+A	examples/advertisement_discovery/android/keystores/BUCK
+A	examples/advertisement_discovery/android/keystores/debug.keystore.properties
+A	examples/advertisement_discovery/android/settings.gradle
+A	examples/advertisement_discovery/index.android.js
+A	examples/advertisement_discovery/index.ios.js
+A	examples/advertisement_discovery/ios/advertisement_discovery.xcodeproj/project.pbxproj
+A	examples/advertisement_discovery/ios/advertisement_discovery.xcodeproj/xcshareddata/xcschemes/advertisement_discovery.xcscheme
+A	examples/advertisement_discovery/ios/advertisement_discovery/AppDelegate.h
+A	examples/advertisement_discovery/ios/advertisement_discovery/AppDelegate.m
+A	examples/advertisement_discovery/ios/advertisement_discovery/Base.lproj/LaunchScreen.xib
+A	examples/advertisement_discovery/ios/advertisement_discovery/Images.xcassets/AppIcon.appiconset/Contents.json
+A	examples/advertisement_discovery/ios/advertisement_discovery/Info.plist
+A	examples/advertisement_discovery/ios/advertisement_discovery/main.m
+A	examples/advertisement_discovery/ios/advertisement_discoveryTests/Info.plist
+A	examples/advertisement_discovery/ios/advertisement_discoveryTests/advertisement_discoveryTests.m
+A	examples/advertisement_discovery/package.json
+
+c732ce9;readme
+M	README.md
+
+e4f9878;remove old example
+D	examples/BabelES6/.flowconfig
+D	examples/BabelES6/.gitignore
+D	examples/BabelES6/.watchmanconfig
+D	examples/BabelES6/README.md
+D	examples/BabelES6/android/app/build.gradle
+D	examples/BabelES6/android/app/proguard-rules.pro
+D	examples/BabelES6/android/app/react.gradle
+D	examples/BabelES6/android/app/src/main/java/com/babeles6/MainActivity.java
+D	examples/BabelES6/android/build.gradle
+D	examples/BabelES6/android/gradle.properties
+D	examples/BabelES6/android/settings.gradle
+D	examples/BabelES6/index.ios.js
+D	examples/BabelES6/ios/BabelES6.xcodeproj/project.pbxproj
+D	examples/BabelES6/ios/BabelES6.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+D	examples/BabelES6/ios/BabelES6.xcodeproj/xcshareddata/xcschemes/BabelES6.xcscheme
+D	examples/BabelES6/ios/BabelES6/AppDelegate.h
+D	examples/BabelES6/ios/BabelES6/AppDelegate.m
+D	examples/BabelES6/ios/BabelES6/Base.lproj/LaunchScreen.xib
+D	examples/BabelES6/ios/BabelES6/Images.xcassets/AppIcon.appiconset/Contents.json
+D	examples/BabelES6/ios/BabelES6/Info.plist
+D	examples/BabelES6/ios/BabelES6/main.m
+D	examples/BabelES6/ios/BabelES6Tests/BabelES6Tests.m
+D	examples/BabelES6/ios/BabelES6Tests/Info.plist
+D	examples/BabelES6/ios/Base.lproj/LaunchScreen.xib
+D	examples/BabelES6/ios/Images.xcassets/AppIcon.appiconset/Contents.json
+D	examples/BabelES6/ios/Info.plist
+D	examples/BabelES6/ios/main.jsbundle
+D	examples/BabelES6/ios/main.m
+D	examples/BabelES6/package.json
+
+4798ce0;readme
+M	README.md
+
+cc98882;add react-native-ble rn-nodeify and eddystone-beacon-scanner
+M	examples/eddystone_beacon_scanner/index.ios.js
+M	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scanner.xcodeproj/project.pbxproj
+M	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scanner/Info.plist
+M	examples/eddystone_beacon_scanner/package.json
+A	examples/eddystone_beacon_scanner/shim.js
+
+e8a80fa;generate new example
+A	examples/eddystone_beacon_scanner/.buckconfig
+A	examples/eddystone_beacon_scanner/.flowconfig
+A	examples/eddystone_beacon_scanner/.gitignore
+A	examples/eddystone_beacon_scanner/.watchmanconfig
+A	examples/eddystone_beacon_scanner/android/app/BUCK
+A	examples/eddystone_beacon_scanner/android/app/build.gradle
+A	examples/eddystone_beacon_scanner/android/app/proguard-rules.pro
+A	examples/eddystone_beacon_scanner/android/app/src/main/AndroidManifest.xml
+A	examples/eddystone_beacon_scanner/android/app/src/main/java/com/eddystone_beacon_scanner/MainActivity.java
+A	examples/eddystone_beacon_scanner/android/app/src/main/java/com/eddystone_beacon_scanner/MainApplication.java
+A	examples/eddystone_beacon_scanner/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	examples/eddystone_beacon_scanner/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	examples/eddystone_beacon_scanner/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	examples/eddystone_beacon_scanner/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	examples/eddystone_beacon_scanner/android/app/src/main/res/values/strings.xml
+A	examples/eddystone_beacon_scanner/android/app/src/main/res/values/styles.xml
+A	examples/eddystone_beacon_scanner/android/build.gradle
+A	examples/eddystone_beacon_scanner/android/gradle.properties
+A	examples/eddystone_beacon_scanner/android/gradle/wrapper/gradle-wrapper.jar
+A	examples/eddystone_beacon_scanner/android/gradle/wrapper/gradle-wrapper.properties
+A	examples/eddystone_beacon_scanner/android/gradlew
+A	examples/eddystone_beacon_scanner/android/gradlew.bat
+A	examples/eddystone_beacon_scanner/android/keystores/BUCK
+A	examples/eddystone_beacon_scanner/android/keystores/debug.keystore.properties
+A	examples/eddystone_beacon_scanner/android/settings.gradle
+A	examples/eddystone_beacon_scanner/index.android.js
+A	examples/eddystone_beacon_scanner/index.ios.js
+A	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scanner.xcodeproj/project.pbxproj
+A	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scanner.xcodeproj/xcshareddata/xcschemes/eddystone_beacon_scanner.xcscheme
+A	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scanner/AppDelegate.h
+A	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scanner/AppDelegate.m
+A	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scanner/Base.lproj/LaunchScreen.xib
+A	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scanner/Images.xcassets/AppIcon.appiconset/Contents.json
+A	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scanner/Info.plist
+A	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scanner/main.m
+A	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scannerTests/Info.plist
+A	examples/eddystone_beacon_scanner/ios/eddystone_beacon_scannerTests/eddystone_beacon_scannerTests.m
+A	examples/eddystone_beacon_scanner/package.json
+
+5415b7c;1.0.5
+M	package.json
+
+19adaa2;missing comma
+M	RNBLE.m
+
+4b37bac;1.0.4
+M	package.json
+
+96dbc50;add path to release
+M	RNBLE.xcodeproj/project.pbxproj
+
+bb7f191;update readme
+M	README.md
+
+0488db0;Merge pull request #18 from kristojorg/remove-ios-powered-off-alert
+7e77a0f;remove standard ios alert
+M	RNBLE.m
+
+eef6f74;cleanup descriptor write/read half tested
+M	RNBLE.m
+M	bindings.ios.js
+
+91a08bf;remove descriptor and characteristic overload
+M	index.js
+
+2533edc;add descriptor write/read untested
+M	RNBLE.m
+M	bindings.ios.js
+
+158cbf5;example: remove extraneous appdelegate
+D	examples/BabelES6/ios/AppDelegate.h
+D	examples/BabelES6/ios/AppDelegate.m
+
+46f7c09;fix discoverCharacteristics not utilising characteristic list
+M	RNBLE.m
+M	bindings.ios.js
+
+994ea33;convert to apple uuids before sending to native
+M	bindings.ios.js
+
+96d1bd5;cleanup for tests
+M	bindings.ios.js
+
+7af5b04;example: start scanning after peripheral disconnect
+M	examples/BabelES6/index.ios.js
+
+9bffe3b;convert all uuids to noble style on the way out
+M	RNBLE.m
+
+cdd185f;whitespace
+M	RNBLE.m
+
+8d9d832;add preliminary background support
+M	RNBLE.m
+
+595ee6e;example: add backgrounding
+M	examples/BabelES6/ios/BabelES6.xcodeproj/project.pbxproj
+M	examples/BabelES6/ios/BabelES6/Info.plist
+
+e0053df;example: unsubscribe from characteristic on disconnect
+M	examples/BabelES6/index.ios.js
+
+4c18956;README.md
+M	README.md
+
+4467be7;1.0.3
+M	package.json
+
+50be5e9;update example
+M	examples/BabelES6/README.md
+M	examples/BabelES6/index.ios.js
+M	examples/BabelES6/package.json
+
+e96a34f;terrible hack in order to receive initial statechange
+M	bindings.ios.js
+
+2d69da0;remove peripheral code
+M	RNBLE.m
+M	bindings.ios.js
+
+d153e13;Moved setup code to init
+M	RNBLE.m
+M	bindings.ios.js
+
+03768ef;Upgrade buffer to 4.6.0
+M	package.json
+
+d2002c9;Upgrade events to 1.1.0
+M	package.json
+
+bb29312;Overwrite Descriptor write prototype
+M	index.js
+
+744aec5;Overwrite Characteristics write prototype
+M	index.js
+
+2c407f5;Depend directly on noble
+D	RNBLE.android.js
+D	RNBLE.js
+D	characteristic.js
+D	characteristics.json
+D	descriptor.js
+D	descriptors.json
+M	index.js
+M	package.json
+D	peripheral.js
+D	service.js
+D	services.json
+
+b3da905;Add basic peripheral functionality
+M	RNBLE.js
+M	RNBLE.m
+M	bindings.ios.js
+
+e47adde;Add more iOS functionality
+R089	RNBLE.ios.js	RNBLE.js
+M	RNBLE.m
+A	bindings.ios.js
+A	characteristic.js
+A	characteristics.json
+A	descriptor.js
+A	descriptors.json
+M	index.js
+D	iosbindings.js
+A	service.js
+A	services.json
+
+d546587;Remove React Native peer dependency
+M	package.json
+
+d35b292;utilize browser field in package.json
+M	README.md
+M	examples/BabelES6/index.ios.js
+M	examples/BabelES6/package.json
+
+7dacfb3;fix case sensitive folder name collision in git
+R100	examples/BabelES6/iOS/AppDelegate.h	examples/BabelES6/ios/AppDelegate.h
+R100	examples/BabelES6/iOS/AppDelegate.m	examples/BabelES6/ios/AppDelegate.m
+R100	examples/BabelES6/iOS/Base.lproj/LaunchScreen.xib	examples/BabelES6/ios/Base.lproj/LaunchScreen.xib
+R100	examples/BabelES6/iOS/Images.xcassets/AppIcon.appiconset/Contents.json	examples/BabelES6/ios/Images.xcassets/AppIcon.appiconset/Contents.json
+R100	examples/BabelES6/iOS/Info.plist	examples/BabelES6/ios/Info.plist
+R100	examples/BabelES6/iOS/main.jsbundle	examples/BabelES6/ios/main.jsbundle
+R100	examples/BabelES6/iOS/main.m	examples/BabelES6/ios/main.m
+
+99e046d;0.0.7
+M	package.json
+
+42fe356;react-native 0.19.0
+M	README.md
+A	examples/BabelES6/.flowconfig
+A	examples/BabelES6/.gitignore
+A	examples/BabelES6/.watchmanconfig
+M	examples/BabelES6/README.md
+A	examples/BabelES6/android/app/build.gradle
+A	examples/BabelES6/android/app/proguard-rules.pro
+A	examples/BabelES6/android/app/react.gradle
+A	examples/BabelES6/android/app/src/main/java/com/babeles6/MainActivity.java
+A	examples/BabelES6/android/build.gradle
+A	examples/BabelES6/android/gradle.properties
+A	examples/BabelES6/android/settings.gradle
+R089	examples/BabelES6/src/main.js	examples/BabelES6/index.ios.js
+R068	examples/BabelES6/BabelES6.xcodeproj/project.pbxproj	examples/BabelES6/ios/BabelES6.xcodeproj/project.pbxproj
+R100	examples/BabelES6/BabelES6.xcodeproj/project.xcworkspace/contents.xcworkspacedata	examples/BabelES6/ios/BabelES6.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+R075	examples/BabelES6/BabelES6.xcodeproj/xcshareddata/xcschemes/BabelES6.xcscheme	examples/BabelES6/ios/BabelES6.xcodeproj/xcshareddata/xcschemes/BabelES6.xcscheme
+A	examples/BabelES6/ios/BabelES6/AppDelegate.h
+A	examples/BabelES6/ios/BabelES6/AppDelegate.m
+A	examples/BabelES6/ios/BabelES6/Base.lproj/LaunchScreen.xib
+A	examples/BabelES6/ios/BabelES6/Images.xcassets/AppIcon.appiconset/Contents.json
+A	examples/BabelES6/ios/BabelES6/Info.plist
+A	examples/BabelES6/ios/BabelES6/main.m
+A	examples/BabelES6/ios/BabelES6Tests/BabelES6Tests.m
+A	examples/BabelES6/ios/BabelES6Tests/Info.plist
+M	examples/BabelES6/package.json
+D	examples/BabelES6/webpack.config.js
+M	package.json
+
+44e5d42;0.0.6
+M	package.json
+
+f05f485;Merge pull request #5 from rclai/patch-1
+7eb161e;Put peripheral-specific case in the right switch
+M	RNBLE.m
+
+cfee51b;move RCTWebSocket into Libraries
+M	examples/BabelES6/BabelES6.xcodeproj/project.pbxproj
+
+99e7d15;0.0.5
+M	package.json
+
+ea41041;bump example version
+M	examples/BabelES6/package.json
+
+ff34689;put corebluetooht.framework back in readme
+M	README.md
+
+e161338;refactor to catch initial stateChange
+M	RNBLE.ios.js
+M	RNBLE.m
+M	examples/BabelES6/src/main.js
+M	iosbindings.js
+
+b47f3bb;add corebluetooth
+M	examples/BabelES6/BabelES6.xcodeproj/project.pbxproj
+
+93c0242;cleanup comments
+M	examples/BabelES6/src/main.js
+
+52b4752;spelling
+M	README.md
+
+5344b10;license and update package.json
+A	LICENSE.md
+M	package.json
+
+7224890;added example
+M	.gitignore
+M	README.md
+A	examples/BabelES6/BabelES6.xcodeproj/project.pbxproj
+A	examples/BabelES6/BabelES6.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+A	examples/BabelES6/BabelES6.xcodeproj/xcshareddata/xcschemes/BabelES6.xcscheme
+A	examples/BabelES6/README.md
+A	examples/BabelES6/iOS/AppDelegate.h
+A	examples/BabelES6/iOS/AppDelegate.m
+A	examples/BabelES6/iOS/Base.lproj/LaunchScreen.xib
+A	examples/BabelES6/iOS/Images.xcassets/AppIcon.appiconset/Contents.json
+A	examples/BabelES6/iOS/Info.plist
+A	examples/BabelES6/iOS/main.jsbundle
+A	examples/BabelES6/iOS/main.m
+A	examples/BabelES6/package.json
+A	examples/BabelES6/src/main.js
+A	examples/BabelES6/webpack.config.js
+
+69a9939;0.0.4
+M	package.json
+
+e94f156;resupport ios sdk 8
+M	RNBLE.m
+
+ac635e7;0.0.3
+M	package.json
+
+80b82a0;update for xcode 7 and new sdk
+M	RNBLE.m
+
+24c31c2;0.0.2
+M	package.json
+
+6d39109;add _discoveredPeripheralUUids to the contstructor this context
+M	RNBLE.ios.js
+
+247ec0b;react 11 support
+M	iosbindings.js
+M	package.json
+
+af77017;README.md
+M	README.md
+
+0e0e3ac;README.md
+M	README.md
+
+4c61225;0.0.1
+M	package.json
+
+a862b84;need the buffer module at least until we figure out packaging
+M	package.json
+
+f474a21;refactor to a bindings file, bring in a bunch of noble as close to upstream as possible
+M	RNBLE.ios.js
+A	iosbindings.js
+
+1107e17;actually emit a peripheral, more noble parity
+M	RNBLE.ios.js
+M	RNBLE.m
+A	peripheral.js
+
+0b00d4a;advertisement support
+A	.gitignore
+A	RCTCONVERT+CBUUID.h
+A	RCTCONVERT+CBUUID.m
+A	README.md
+M	RNBLE.h
+M	RNBLE.ios.js
+M	RNBLE.m
+M	RNBLE.xcodeproj/project.pbxproj
+A	RNBLE.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+A	index.js
+M	package.json
+
+16c4a85;generated by react-native 0.6.0
+A	RNBLE.android.js
+A	RNBLE.h
+A	RNBLE.ios.js
+A	RNBLE.m
+A	RNBLE.xcodeproj/project.pbxproj
+A	package.json

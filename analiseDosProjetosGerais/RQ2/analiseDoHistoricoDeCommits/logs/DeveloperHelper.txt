@@ -1,0 +1,1022 @@
+6c678ff;version1.0.4
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/HierarchyGraphView.kt
+
+63e0d08;添加viewtree点击
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyDetailView.kt
+D	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/HierarchyGraphAdapter.kt
+D	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/HierarchyGraphNode.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/HierarchyGraphView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoViewPagerAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/OnNodeChangedListener.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewTreeGraphAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewTreeGraphNode.kt
+
+73d239f;添加view树
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/HierarchyGraphAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/HierarchyGraphNode.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/HierarchyGraphView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoViewPagerAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ObserableNode.kt
+A	app/src/main/res/layout/item_tree_node_view.xml
+A	app/src/main/res/layout/layout_hierarchy_tree.xml
+
+3686420;添加布局移动查看
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyDetailView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+
+94f4b85;添加adb wifi
+M	app/src/main/java/com/wrbug/developerhelper/constant/ReceiverConstant.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+A	app/src/main/res/drawable-xxhdpi/ic_launcher_notify_gray.png
+A	app/src/main/res/drawable/ic_wifi_gray.xml
+A	app/src/main/res/drawable/ic_wifi_primary.xml
+A	app/src/main/res/layout/view_float_custom.xml
+M	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/shell/ShellManager.kt
+
+6be766f;Merge pull request #10 from WrBug/master
+a5a5f67;添加应用更新，修复闪退
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/wrbug/developerhelper/model/entity/VersionInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/AccessibilityManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/viewmodel/MainViewModel.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/UpdateUtils.kt
+M	commonutil/build.gradle
+A	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/HttpUtil.kt
+A	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/OkhttpUtils.kt
+M	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/shell/Callback.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/DeviceUtils.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/processshare/ProcessDataInvocationHandler.kt
+
+dbc923c;version 1.0.3
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/settingitemview/SettingItemView.kt
+M	app/src/main/res/layout/activity_xposed_setting.xml
+M	app/src/main/res/values/strings.xml
+M	readme.md
+M	xposedmodule/build.gradle
+
+b5bbc18;添加移除按钮
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/xposed/shellmanager/ShellAppListAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/xposed/shellmanager/ShellAppManagerActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/bottommenu/BottomMenu.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/bottommenu/BottomMenuItemAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/bottommenu/OnItemClickListener.kt
+M	app/src/main/res/layout/activity_xposed_setting.xml
+A	app/src/main/res/layout/dialog_bottom_menu.xml
+M	app/src/main/res/values/strings.xml
+M	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/AppInfoManager.kt
+M	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/AppManagerUtils.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Native.kt
+
+96ee3fe;添加脱壳应用列表显示
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/xposed/shellmanager/ShellAppListAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/xposed/shellmanager/ShellAppManagerActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/xposed/xposedsetting/XposedSettingActivity.kt
+M	app/src/main/res/layout/activity_shell_app_manager.xml
+A	app/src/main/res/layout/item_shell_app_info.xml
+
+2dd01a4;添加xposed设置
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/xposed/shellmanager/ShellAppManagerActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/xposed/xposedsetting/XposedSettingActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/emptyview/EmptyView.kt
+A	app/src/main/res/drawable/ic_ic_empty_666666.xml
+A	app/src/main/res/drawable/ic_shield_666666.xml
+A	app/src/main/res/drawable/ic_xposed_custom_666666.xml
+A	app/src/main/res/layout/activity_shell_app_manager.xml
+A	app/src/main/res/layout/activity_xposed_setting.xml
+M	app/src/main/res/values/strings.xml
+
+1923b9b;体验优化
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/settingitemview/SettingItemView.kt
+M	app/src/main/res/layout/view_setting_item.xml
+M	app/src/main/res/values/strings.xml
+
+7870416;添加 android pie支持
+M	xposedmodule/build.gradle
+D	xposedmodule/src/main/assets/nativeDump.so
+D	xposedmodule/src/main/assets/nativeDumpV7a.so
+D	xposedmodule/src/main/assets/nativeDumpV8a.so
+M	xposedmodule/src/main/cpp/util/deviceutils.cpp
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/developerhelper/DeveloperHelper.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/DeviceUtils.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Dump.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/LowSdkDump.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Native.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/OreoDump.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/PackerInfo.kt
+
+77cd887;update readme
+M	readme.md
+
+7824b8c;version v1.0.2
+M	app/build.gradle
+
+eefd26f;添加关闭脱壳
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/DeveloperApplication.kt
+M	app/src/main/java/com/wrbug/developerhelper/constant/ReceiverConstant.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appsettingview/AppSettingView.kt
+M	app/src/main/res/layout/view_app_setting.xml
+M	app/src/main/res/values/strings.xml
+M	basecommon/build.gradle
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/ToastExts.kt
+A	commonwidget/.gitignore
+A	commonwidget/build.gradle
+A	commonwidget/proguard-rules.pro
+A	commonwidget/src/androidTest/java/com/wrbug/developerhelper/commonwidget/ExampleInstrumentedTest.java
+A	commonwidget/src/main/AndroidManifest.xml
+R097	app/src/main/java/com/wrbug/developerhelper/ui/widget/flexibletoast/FlexibleToast.kt	commonwidget/src/main/java/com/wrbug/developerhelper/commonwidget/flexibletoast/FlexibleToast.kt
+R100	app/src/main/res/drawable/toast_bg_circle_cornor_rect.xml	commonwidget/src/main/res/drawable/toast_bg_circle_cornor_rect.xml
+R100	app/src/main/res/layout/layout_toast_flexible.xml	commonwidget/src/main/res/layout/layout_toast_flexible.xml
+A	commonwidget/src/main/res/values/strings.xml
+A	commonwidget/src/test/java/com/wrbug/developerhelper/commonwidget/ExampleUnitTest.java
+M	settings.gradle
+M	xposedmodule/build.gradle
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/developerhelper/EnforceMod.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Dump.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/LowSdkDump.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Native.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/OreoDump.kt
+
+f82d68b;添加脱壳按钮
+M	app/src/main/java/com/wrbug/developerhelper/DeveloperApplication.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/entity/SharedPreferenceItemInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/viewmodel/MainViewModel.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoViewPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/infopage/InfoAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/OutSharedPreferenceManager.kt
+M	app/src/main/res/layout/activity_main.xml
+M	commonutil/build.gradle
+R074	app/src/main/java/com/wrbug/developerhelper/util/StringConvertUtils.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/StringConvertUtils.kt
+M	mmkv/build.gradle
+M	mmkv/src/main/java/com/wrbug/developerhelper/mmkv/ConfigKv.kt
+M	xposedmodule/build.gradle
+M	xposedmodule/src/main/assets/nativeDump.so
+M	xposedmodule/src/main/assets/nativeDumpV7a.so
+M	xposedmodule/src/main/assets/nativeDumpV8a.so
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/XposedInit.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/developerhelper/DeveloperHelper.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/developerhelper/EnforceMod.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Dump.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/LowSdkDump.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/processshare/DefaultValue.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/processshare/DumpDexListProcessData.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/processshare/GlobalConfigProcessData.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/processshare/ProcessDataInvocationHandler.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/processshare/ProcessDataManager.kt
+
+746f8dd;添加跨进程数据共享
+M	app/src/main/java/com/wrbug/developerhelper/DeveloperApplication.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/FileUtils.kt
+A	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/Base64.kt
+M	xposedmodule/build.gradle
+M	xposedmodule/src/main/cpp/inlineHook.c
+M	xposedmodule/src/main/cpp/native.cpp
+M	xposedmodule/src/main/cpp/util/deviceutils.cpp
+M	xposedmodule/src/main/cpp/util/fileutils.cpp
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/Exts.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/developerhelper/DeveloperHelper.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Dump.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/LowSdkDump.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Native.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/OreoDump.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/processshare/DumpDexListProcessData.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/processshare/ProcessData.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/processshare/ProcessDataInvocationHandler.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/processshare/ProcessDataManager.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/util/FileUtils.kt
+
+4370092;修复dump闪退
+M	app/build.gradle
+M	xposedmodule/build.gradle
+A	xposedmodule/script/so.sh
+M	xposedmodule/src/main/assets/nativeDump.so
+M	xposedmodule/src/main/assets/nativeDumpV7a.so
+M	xposedmodule/src/main/assets/nativeDumpV8a.so
+M	xposedmodule/src/main/cpp/inlineHook.c
+M	xposedmodule/src/main/cpp/native.cpp
+M	xposedmodule/src/main/cpp/util/deviceutils.cpp
+M	xposedmodule/src/main/cpp/util/fileutils.cpp
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Dump.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/LowSdkDump.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Native.kt
+M	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/OreoDump.kt
+
+158ac00;add xposed
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/viewmodel/MainViewModel.kt
+M	app/src/main/res/drawable/bg_primary_button.xml
+M	settings.gradle
+A	xposedmodule/.gitignore
+A	xposedmodule/CMakeLists.txt
+A	xposedmodule/build.gradle
+A	xposedmodule/proguard-rules.pro
+A	xposedmodule/src/androidTest/java/com/wrbug/developerhelper/xposed/ExampleInstrumentedTest.java
+A	xposedmodule/src/main/AndroidManifest.xml
+A	xposedmodule/src/main/assets/nativeDump.so
+A	xposedmodule/src/main/assets/nativeDumpV7a.so
+A	xposedmodule/src/main/assets/nativeDumpV8a.so
+A	xposedmodule/src/main/assets/xposed_init
+A	xposedmodule/src/main/cpp/And64InlineHook.cpp
+A	xposedmodule/src/main/cpp/And64InlineHook.hpp
+A	xposedmodule/src/main/cpp/dlopen.c
+A	xposedmodule/src/main/cpp/dlopen.h
+A	xposedmodule/src/main/cpp/inlineHook.c
+A	xposedmodule/src/main/cpp/inlineHook.h
+A	xposedmodule/src/main/cpp/native.cpp
+A	xposedmodule/src/main/cpp/native.h
+A	xposedmodule/src/main/cpp/readme.md
+A	xposedmodule/src/main/cpp/relocate.c
+A	xposedmodule/src/main/cpp/relocate.h
+A	xposedmodule/src/main/cpp/util/deviceutils.cpp
+A	xposedmodule/src/main/cpp/util/deviceutils.h
+A	xposedmodule/src/main/cpp/util/fileutils.cpp
+A	xposedmodule/src/main/cpp/util/fileutils.h
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/Exts.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/XposedInit.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/developerhelper/DeveloperHelper.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/DeviceUtils.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Dump.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/LowSdkDump.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/Native.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/OreoDump.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/dumpdex/PackerInfo.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/util/FileUtils.kt
+A	xposedmodule/src/main/java/com/wrbug/developerhelper/xposed/util/ProcessShareDataHelper.kt
+A	xposedmodule/src/main/res/values/strings.xml
+A	xposedmodule/src/test/java/com/wrbug/developerhelper/xposed/ExampleUnitTest.java
+
+16dd053;fix 部分手机备份data提示失败
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appsettingview/AppSettingView.kt
+M	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/shell/ShellManager.kt
+
+4d2b5eb;添加data备份
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appsettingview/AppSettingView.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/BackupUtils.kt
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/filepaths.xml
+A	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/ZipUtils.kt
+M	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/shell/ShellManager.kt
+
+ab18499;添加 apk备份 添加 重启应用 添加 停止应用 添加 清理应用数据 添加 卸载应用
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/viewmodel/MainViewModel.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appsettingview/AppSettingView.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/BackupUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/FileUtils.kt
+A	app/src/main/res/drawable/bg_primary_button.xml
+M	app/src/main/res/layout/view_app_setting.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/AppCompatActivityExt.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseApp.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/ToastExts.kt
+A	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/AppManagerUtils.kt
+M	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/ShellUtils.kt
+M	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/shell/ShellManager.kt
+M	mmkv/src/main/java/com/wrbug/developerhelper/mmkv/ConfigKv.kt
+M	mmkv/src/main/java/com/wrbug/developerhelper/mmkv/manager/MMKVInvocationHandler.kt
+
+97a06a9;组件拆分
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/DeveloperApplication.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/entity/HierarchyNode.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/entity/SharedPreferenceItemInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/AccessibilityManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/databaseedit/DatabaseEditActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/viewmodel/MainViewModel.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/sharedpreferencesedit/SharedPreferenceEditActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appdatainfoview/AppDataInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/boundsinfoview/BoundsInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/flexibletoast/FlexibleToast.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyDetailView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/infopage/InfoAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/DeviceUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/EnforceUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/ResourceUtilsExt.kt
+D	app/src/main/java/com/wrbug/developerhelper/util/Runnable.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/StringConvertUtils.kt
+A	commonutil/.gitignore
+A	commonutil/build.gradle
+A	commonutil/proguard-rules.pro
+A	commonutil/src/androidTest/java/com/wrbug/developerhelper/commonutil/ExampleInstrumentedTest.java
+A	commonutil/src/main/AndroidManifest.xml
+R082	app/src/main/java/com/wrbug/developerhelper/util/ApkUtils.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/ApkUtils.kt
+R080	app/src/main/java/com/wrbug/developerhelper/util/AppInfoManager.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/AppInfoManager.kt
+R095	app/src/main/java/com/wrbug/developerhelper/util/ClipboardUtils.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/ClipboardUtils.kt
+A	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/CommonUtils.kt
+R092	app/src/main/java/com/wrbug/developerhelper/util/JsonHelper.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/JsonHelper.kt
+R073	app/src/main/java/com/wrbug/developerhelper/util/LogUtilsExt.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/LogUtilsExt.kt
+R086	app/src/main/java/com/wrbug/developerhelper/util/ShaUtils.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/ShaUtils.kt
+R085	app/src/main/java/com/wrbug/developerhelper/util/ShellUtils.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/ShellUtils.kt
+R071	app/src/main/java/com/wrbug/developerhelper/util/UiUtils.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/UiUtils.kt
+R079	app/src/main/java/com/wrbug/developerhelper/model/entity/ApkInfo.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/entity/ApkInfo.kt
+R051	app/src/main/java/com/wrbug/developerhelper/model/entity/ApkSignInfo.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/entity/ApkSignInfo.kt
+R097	app/src/main/java/com/wrbug/developerhelper/model/entity/FragmentInfo.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/entity/FragmentInfo.kt
+R065	app/src/main/java/com/wrbug/developerhelper/model/entity/LsFileInfo.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/entity/LsFileInfo.kt
+R094	app/src/main/java/com/wrbug/developerhelper/model/entity/TopActivityInfo.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/entity/TopActivityInfo.kt
+R062	app/src/main/java/com/wrbug/developerhelper/shell/Callback.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/shell/Callback.kt
+R094	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt	commonutil/src/main/java/com/wrbug/developerhelper/commonutil/shell/ShellManager.kt
+A	commonutil/src/main/res/values/strings.xml
+A	commonutil/src/test/java/com/wrbug/developerhelper/commonutil/ExampleUnitTest.java
+A	mmkv/.gitignore
+A	mmkv/build.gradle
+A	mmkv/proguard-rules.pro
+A	mmkv/src/androidTest/java/com/wrbug/developerhelper/mmkv/ExampleInstrumentedTest.java
+A	mmkv/src/main/AndroidManifest.xml
+R078	app/src/main/java/com/wrbug/developerhelper/model/mmkv/ConfigKv.kt	mmkv/src/main/java/com/wrbug/developerhelper/mmkv/ConfigKv.kt
+R086	app/src/main/java/com/wrbug/developerhelper/model/mmkv/manager/MMKVInvocationHandler.kt	mmkv/src/main/java/com/wrbug/developerhelper/mmkv/manager/MMKVInvocationHandler.kt
+R050	app/src/main/java/com/wrbug/developerhelper/model/mmkv/manager/MMKVManager.kt	mmkv/src/main/java/com/wrbug/developerhelper/mmkv/manager/MMKVManager.kt
+A	mmkv/src/main/res/values/strings.xml
+A	mmkv/src/test/java/com/wrbug/developerhelper/mmkv/ExampleUnitTest.java
+M	settings.gradle
+
+ede1c12;添加应用设置页面
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoPagerAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/appsettingview/AppSettingView.kt
+A	app/src/main/res/layout/view_app_setting.xml
+M	app/src/main/res/values/strings.xml
+A	app/src/main/res/xml/filepaths.xml
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseActivity.kt
+
+1ad9f13;修复db目录权限问题
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/databaseedit/DatabaseEditActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appdatainfoview/AppDataInfoView.kt
+M	app/src/main/res/layout/view_app_data_info.xml
+M	app/src/main/res/values/strings.xml
+
+3871f6c;自动清理db目录
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/databaseedit/DatabaseEditActivity.kt
+M	app/src/main/res/values/strings.xml
+M	readme.md
+
+62be7d1;添加数据库查看
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/wrbug/developerhelper/model/entity/DatabaseTableInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/databaseedit/DatabaseEditActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/databaseedit/DatabaseTableAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appdatainfoview/AppDataInfoView.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/DatabaseUtils.kt
+A	app/src/main/res/drawable/ic_down.xml
+A	app/src/main/res/layout/activity_database_edit.xml
+A	app/src/main/res/layout/table_view_cell_layout.xml
+A	app/src/main/res/layout/table_view_column_header_layout.xml
+A	app/src/main/res/layout/table_view_corner_layout.xml
+A	app/src/main/res/layout/table_view_row_header_layout.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/ToastExts.kt
+
+5d3e1a2;添加toast
+M	app/src/main/java/com/wrbug/developerhelper/DeveloperApplication.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/AccessibilityManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/res/values/strings.xml
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseApp.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/ToastExts.kt
+
+dda7295;添加全局toast
+M	app/src/main/java/com/wrbug/developerhelper/DeveloperApplication.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/flexibletoast/FlexibleToast.kt
+A	app/src/main/res/drawable/toast_bg_circle_cornor_rect.xml
+A	app/src/main/res/layout/layout_toast_flexible.xml
+M	app/src/main/res/values/strings.xml
+
+4e42555;node 获取优化
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/SelectedNodeInfo.kt
+
+24ef6fd;node 获取优化
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+M	app/src/main/res/xml/accessibility.xml
+
+4a75eb0;fix sql获取
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+
+9bd4f15;fix #6
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+A	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/ToastExts.kt
+
+913d30f;添加数据库显示
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appdatainfoview/AppDataInfoView.kt
+M	app/src/main/res/layout/view_app_data_info.xml
+
+c16ef36;优化
+M	app/src/main/java/com/wrbug/developerhelper/service/AccessibilityManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/Callback.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/DeviceUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/ShellUtils.kt
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+08c2737;Merge remote-tracking branch 'origin/master'
+7bb396b;修复闪退
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/LogUtilsExt.kt
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+1e9eb57;Update readme.md
+M	readme.md
+
+601124c;Update readme.md
+M	readme.md
+
+9cda599;修复未root手机无法使用
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+
+a4509f8;release 1.0.0.0
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/sharedpreferencesedit/SharedPreferenceEditActivity.kt
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/item_view_info.xml
+M	app/src/main/res/layout/layout_toolbar.xml
+M	app/src/main/res/menu/menu_main.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+f499f08;Update readme.md
+M	readme.md
+
+2e0d733;update readme
+M	readme.md
+
+fc4cb64;修复部分手机闪退
+M	app/src/main/java/com/wrbug/developerhelper/util/ApkUtils.kt
+
+63aa4c2;样式调整
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoView.kt
+M	app/src/main/res/layout/dialog_apk_info.xml
+M	app/src/main/res/layout/view_layout_info.xml
+M	app/src/main/res/values/styles.xml
+
+ed62c5f;修复 sharedPreference修改后的权限
+A	app/src/main/java/com/wrbug/developerhelper/model/entity/LsFileInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/entity/SharedPreferenceItemInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/sharedpreferencesedit/SharedPreferenceEditActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/FileUtils.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/OutSharedPreferenceManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/XmlUtil.kt
+M	app/src/main/res/values/strings.xml
+
+b8697bb;添加sharedPreference修改
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/sharedpreferencesedit/SharedPreferenceEditActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/sharedpreferencesedit/SharedPreferenceListAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/FileUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/StringConvertUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/XmlUtil.kt
+M	app/src/main/res/layout/item_shared_preference_info.xml
+M	app/src/main/res/values/strings.xml
+
+d8c3d6c;添加sharedPreference显示
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/wrbug/developerhelper/model/entity/SharedPreferenceItemInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/sharedpreferencesedit/SharedPreferenceEditActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/sharedpreferencesedit/SharedPreferenceListAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appdatainfoview/AppDataInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/JsonHelper.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/StringConvertUtils.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/XmlUtil.kt
+A	app/src/main/res/drawable/bg_shared_preference_edit.xml
+A	app/src/main/res/drawable/ic_navigation_back.xml
+A	app/src/main/res/drawable/ic_search_white_24dp.xml
+A	app/src/main/res/layout/activity_shared_preference_edit.xml
+A	app/src/main/res/layout/item_shared_preference_info.xml
+M	app/src/main/res/layout/layout_toolbar.xml
+A	app/src/main/res/menu/menu_shared_preference_edit.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/AppCompatActivityExt.kt
+
+d2ec1c6;pid获取优化
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+
+0eb4f50;添加spref获取
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appdatainfoview/AppDataInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/AppInfoManager.kt
+M	app/src/main/res/layout/view_app_data_info.xml
+
+886ffc1;添加md5获取
+R096	app/src/main/java/com/wrbug/developerhelper/model/entry/ApkInfo.kt	app/src/main/java/com/wrbug/developerhelper/model/entity/ApkInfo.kt
+A	app/src/main/java/com/wrbug/developerhelper/model/entity/ApkSignInfo.kt
+R097	app/src/main/java/com/wrbug/developerhelper/model/entry/FragmentInfo.kt	app/src/main/java/com/wrbug/developerhelper/model/entity/FragmentInfo.kt
+R098	app/src/main/java/com/wrbug/developerhelper/model/entry/HierarchyNode.kt	app/src/main/java/com/wrbug/developerhelper/model/entity/HierarchyNode.kt
+R094	app/src/main/java/com/wrbug/developerhelper/model/entry/TopActivityInfo.kt	app/src/main/java/com/wrbug/developerhelper/model/entity/TopActivityInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/decoration/SpaceItemDecoration.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/appdatainfoview/AppDataInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyDetailView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/SelectedNodeInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoViewPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/ApkUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/AppInfoManager.kt
+M	app/src/main/res/layout/dialog_apk_info.xml
+M	app/src/main/res/layout/view_app_data_info.xml
+M	app/src/main/res/layout/view_layout_info.xml
+
+7fc300b;添加数据显示页面
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoPagerAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/appdatainfoview/AppDataInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoView.kt
+R098	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewPagerAdapter.kt	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoViewPagerAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/ApkUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/ResourceUtilsExt.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/ShaUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/UiUtils.kt
+M	app/src/main/res/layout/dialog_apk_info.xml
+A	app/src/main/res/layout/view_app_data_info.xml
+M	app/src/main/res/layout/view_layout_info.xml
+
+af64a16;添加加固检测
+M	app/build.gradle
+A	app/src/main/assets/zip.dex
+M	app/src/main/java/com/wrbug/developerhelper/DeveloperApplication.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/infopage/InfoAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/EnforceUtils.kt
+
+dc298d9;fragment获取优化
+M	app/src/main/java/com/wrbug/developerhelper/model/entry/FragmentInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+
+7cd811e;无障碍启动优化
+M	app/src/main/java/com/wrbug/developerhelper/service/AccessibilityManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/Callback.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/boundsinfoview/BoundsInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/DateUtilsExt.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/ResourceUtilsExt.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/UiUtils.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseActivity.kt
+
+6ea781b;service改为Foreground
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/wrbug/developerhelper/model/entry/HierarchyNode.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewPagerAdapter.kt
+
+218859a;添加通知
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewPagerAdapter.kt
+A	app/src/main/res/drawable-xxhdpi/ic_launcher_notify.png
+M	app/src/main/res/values/strings.xml
+
+92a0e58;添加fragment检测
+M	app/build.gradle
+A	app/src/main/java/com/wrbug/developerhelper/model/entry/FragmentInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/entry/HierarchyNode.kt
+A	app/src/main/java/com/wrbug/developerhelper/model/entry/TopActivityInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+A	app/src/main/java/com/wrbug/developerhelper/shell/Callback.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/ShellUtils.kt
+
+f90be45;添加无障碍自启动
+M	app/src/main/java/com/wrbug/developerhelper/constant/ReceiverConstant.kt
+A	app/src/main/java/com/wrbug/developerhelper/service/AccessibilityManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/guide/GuideStepAccessibilityFragment.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+R100	app/src/main/java/com/wrbug/developerhelper/util/DateUtils.kt	app/src/main/java/com/wrbug/developerhelper/util/DateUtilsExt.kt
+R100	app/src/main/java/com/wrbug/developerhelper/util/LogUtils.kt	app/src/main/java/com/wrbug/developerhelper/util/LogUtilsExt.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/ResourceUtilsExt.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/ShellUtils.kt
+M	app/src/main/res/values/strings.xml
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseActivity.kt
+M	build.gradle
+
+78e83b6;add get pid
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+
+4c74196;Merge remote-tracking branch 'origin/master'
+2317d57;修改版本号
+M	app/build.gradle
+M	readme.md
+
+0b2e946;add readme.md
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/res/layout/layout_toolbar.xml
+A	app/src/main/res/menu/menu_main.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+A	readme.md
+
+9f72dd3;Merge pull request #1 from WrBug/add-license-1
+e565082;Create LICENSE
+A	LICENSE
+
+b769fc1;添加证书
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/res/layout/item_view_info.xml
+M	app/src/main/res/values/strings.xml
+
+403b230;添加topActivity
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+A	app/src/main/java/com/wrbug/developerhelper/shell/ShellManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/infopage/ItemInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/DeviceUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/ShellUtils.kt
+M	app/src/main/res/layout/dialog_apk_info.xml
+
+6986632;appinfo 获取优化
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/infopage/InfoAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/LogUtils.kt
+
+3ca30d7;添加属性
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialogEventListener.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/infopage/InfoAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/infopage/ItemInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/AppInfoManager.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/DateUtils.kt
+M	app/src/main/res/layout/dialog_apk_info.xml
+M	app/src/main/res/values/styles.xml
+
+f22daad;add  apk info dialog
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/wrbug/developerhelper/DeveloperApplication.kt
+M	app/src/main/java/com/wrbug/developerhelper/constant/ReceiverConstant.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/entry/ApkInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/AppInfoDialog.kt
+R060	app/src/main/java/com/wrbug/developerhelper/ui/activity/HierarchyActivity.kt	app/src/main/java/com/wrbug/developerhelper/ui/activity/hierachy/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/AppInfoManager.kt
+M	app/src/main/res/layout/activity_hierarchy.xml
+A	app/src/main/res/layout/dialog_apk_info.xml
+
+efcbf00;add get apk info
+A	app/src/main/java/com/wrbug/developerhelper/model/entry/ApkInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/entry/HierarchyNode.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/daggerinject/MainActivityComponent.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewPagerAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/AppInfoManager.kt
+
+5626d89;架构调整
+M	app/src/main/java/com/wrbug/developerhelper/model/mmkv/ConfigKv.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/mmkv/manager/MMKVInvocationHandler.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/mmkv/manager/MMKVManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/viewmodel/MainViewModel.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/ShellUtils.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/UiUtils.kt
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/accessibility.xml
+M	basecommon/build.gradle
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/AppCompatActivityExt.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseActivity.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseApp.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseVMActivity.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseViewModel.kt
+
+d92731a;androidx 适配
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/model/mmkv/manager/MMKVManager.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/guide/GuideActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/guide/SectionsPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/viewmodel/MainViewModel.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/infopage/InfoAdapter.kt
+M	app/src/main/res/layout/activity_guide.xml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/fragment_guide.xml
+M	app/src/main/res/layout/item_view_info.xml
+M	app/src/main/res/layout/layout_toolbar.xml
+M	app/src/main/res/layout/view_layout_info.xml
+M	app/src/main/res/layout/view_setting_item.xml
+M	basecommon/build.gradle
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/AppCompatActivityExt.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseActivity.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseFragment.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseViewModel.kt
+M	build.gradle
+M	gradle.properties
+
+6f4b218;架构优化
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/wrbug/developerhelper/model/mmkv/ConfigKv.kt
+A	app/src/main/java/com/wrbug/developerhelper/model/mmkv/manager/MMKVInvocationHandler.kt
+A	app/src/main/java/com/wrbug/developerhelper/model/mmkv/manager/MMKVManager.kt
+D	app/src/main/java/com/wrbug/developerhelper/ui/activity/MainActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/MainActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/daggerinject/MainActivityComponent.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/main/viewmodel/MainViewModel.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/settingitemview/SettingItemView.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/DeviceUtils.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/Runnable.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/ShellUtils.kt
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/attrs.xml
+M	app/src/main/res/xml/accessibility.xml
+M	basecommon/build.gradle
+A	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/AppCompatActivityExt.kt
+M	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseActivity.kt
+A	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseVMActivity.kt
+A	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseViewModel.kt
+M	build.gradle
+M	gradle.properties
+
+d5c833d;首页ui修改
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/MainActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/settingitemview/SettingItemView.kt
+A	app/src/main/res/drawable-v21/ripple_with_color_mask.xml
+A	app/src/main/res/drawable/ic_accessibility_666666.xml
+A	app/src/main/res/drawable/ic_float_air_bubble_666666.xml
+A	app/src/main/res/drawable/ic_root_666666.xml
+A	app/src/main/res/drawable/ic_xposed_666666.xml
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/layout_toolbar.xml
+A	app/src/main/res/layout/view_setting_item.xml
+A	app/src/main/res/values/attrs.xml
+M	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/colors_material.xml
+M	app/src/main/res/values/styles.xml
+
+33724dc;view 过滤
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/constant/ReceiverConstant.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/entry/HierarchyNode.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/SelectedNodeInfo.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewPagerAdapter.kt
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/xml/accessibility.xml
+
+a2fb198;fix treemap 部分机型不适用
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/MainActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/guide/GuideStepFloatWindowFragment.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/boundsinfoview/BoundsInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/helper/CanvasHelper.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyDetailView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewPagerAdapter.kt
+
+7204ed2;add BoundsInfoView
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/boundsinfoview/BoundsInfoView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/util/UiUtils.kt
+
+875526e;add info tab
+M	app/src/main/java/com/wrbug/developerhelper/model/entry/HierarchyNode.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/helper/CanvasHelper.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyDetailView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoView.kt
+D	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/NavigatorAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/ViewPagerAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/infopage/InfoAdapter.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/infopage/ItemInfo.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/ClipboardUtils.kt
+A	app/src/main/res/layout/item_view_info.xml
+M	app/src/main/res/layout/view_layout_info.xml
+M	app/src/main/res/values/colors.xml
+
+e6d2cda;添加线
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyDetailView.kt
+
+9b70947;fix treemap
+M	app/src/main/java/com/wrbug/developerhelper/DeveloperApplication.kt
+M	app/src/main/java/com/wrbug/developerhelper/model/entry/HierarchyNode.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyDetailView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/UiUtils.kt
+M	app/src/main/res/layout/layout_float_window_button.xml
+M	app/src/main/res/values/colors.xml
+A	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseApp.kt
+
+c1507f1;添加引导页，图标替换
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/wrbug/developerhelper/DeveloperApplication.kt
+R098	app/src/main/java/com/wrbug/developerhelper/HierarchyNode.kt	app/src/main/java/com/wrbug/developerhelper/model/entry/HierarchyNode.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/MainActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/guide/GuideActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/guide/GuideStepAccessibilityFragment.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/guide/GuideStepFloatWindowFragment.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/guide/GuideStepFragment.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/guide/SectionsPagerAdapter.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyDetailView.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/DeviceUtils.kt
+A	app/src/main/res/drawable/ic_accessibility_black.xml
+A	app/src/main/res/drawable/ic_chevron_left_white_24dp.xml
+A	app/src/main/res/drawable/ic_chevron_right_white_24dp.xml
+A	app/src/main/res/drawable/ic_float_air_bubble.xml
+A	app/src/main/res/drawable/onboarding_indicator_selected.xml
+A	app/src/main/res/drawable/onboarding_indicator_unselected.xml
+A	app/src/main/res/layout/activity_guide.xml
+A	app/src/main/res/layout/fragment_guide.xml
+A	app/src/main/res/menu/menu_guide.xml
+D	app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+D	app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+D	app/src/main/res/mipmap-hdpi/ic_launcher.png
+D	app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+D	app/src/main/res/mipmap-mdpi/ic_launcher.png
+D	app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+D	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+D	app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+A	app/src/main/res/values-w820dp/dimens.xml
+M	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+A	basecommon/.gitignore
+A	basecommon/build.gradle
+A	basecommon/proguard-rules.pro
+A	basecommon/src/androidTest/java/com/wrbug/developerhelper/basecommon/ExampleInstrumentedTest.java
+A	basecommon/src/main/AndroidManifest.xml
+A	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseActivity.kt
+A	basecommon/src/main/java/com/wrbug/developerhelper/basecommon/BaseFragment.kt
+A	basecommon/src/main/res/values/strings.xml
+A	basecommon/src/test/java/com/wrbug/developerhelper/basecommon/ExampleUnitTest.java
+M	gradle.properties
+M	settings.gradle
+
+ae8de28;添加HierarchyDetailView
+M	app/build.gradle
+M	app/src/main/java/com/wrbug/developerhelper/HierarchyNode.kt
+M	app/src/main/java/com/wrbug/developerhelper/constant/ReceiverConstant.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/HierarchyActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyDetailView.kt
+R075	app/src/main/java/com/wrbug/developerhelper/ui/widget/HierarchyView.kt	app/src/main/java/com/wrbug/developerhelper/ui/widget/hierarchyView/HierarchyView.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/LayoutInfoView.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/layoutinfoview/NavigatorAdapter.kt
+M	app/src/main/res/layout/activity_hierarchy.xml
+A	app/src/main/res/layout/view_layout_info.xml
+M	build.gradle
+
+ba94d8f;添加悬浮按钮显隐
+M	app/src/main/java/com/wrbug/developerhelper/HierarchyNode.kt
+M	app/src/main/java/com/wrbug/developerhelper/constant/ReceiverConstant.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+M	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/HierarchyActivity.kt
+M	app/src/main/java/com/wrbug/developerhelper/ui/activity/MainActivity.kt
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/layout_float_window_button.xml
+M	app/src/main/res/xml/accessibility.xml
+
+b127c1b;init
+A	.gitignore
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/com/wrbug/developerhelper/ExampleInstrumentedTest.kt
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/wrbug/developerhelper/HierarchyNode.kt
+A	app/src/main/java/com/wrbug/developerhelper/constant/ReceiverConstant.kt
+A	app/src/main/java/com/wrbug/developerhelper/service/DeveloperHelperAccessibilityService.kt
+A	app/src/main/java/com/wrbug/developerhelper/service/FloatWindowService.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/HierarchyActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/activity/MainActivity.kt
+A	app/src/main/java/com/wrbug/developerhelper/ui/widget/HierarchyView.kt
+A	app/src/main/java/com/wrbug/developerhelper/util/JsonHelper.kt
+A	app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+A	app/src/main/res/drawable/ic_launcher_background.xml
+A	app/src/main/res/layout/activity_hierarchy.xml
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/layout_float_window_button.xml
+A	app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+A	app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/main/res/xml/accessibility.xml
+A	app/src/test/java/com/wrbug/developerhelper/ExampleUnitTest.kt
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle

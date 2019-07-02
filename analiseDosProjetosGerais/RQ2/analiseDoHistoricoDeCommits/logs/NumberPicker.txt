@@ -1,0 +1,538 @@
+3d256e2;Merge pull request #143 from r4jiv007/feature/languageSupport
+612202a;initialising the locale in constructor
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+1d9e5d9;code formatting
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+
+f25df87;added setter call to set Locale in sample activity
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+
+8fc70e4;added setter to set locale and force the picker to use the provided locale
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+3f36da4;Merge pull request #142 from bernaferrari/patch-1
+d76ae65;Update compile to implementation in README
+M	README.md
+
+0981ea3;:bookmark: Bump v2.4.8
+M	README.md
+M	gradle.properties
+
+02e3753;Merge pull request #139 from ShawnLin013/feature/Support-smooth-scrolling
+7c3f9b5;:sparkles: Support smooth scrolling (#133)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+
+f940f09;Merge pull request #138 from ShawnLin013/feature/Rename-np_max_fling_velocity_coefficient
+8406afd;Merge pull request #136 from ShawnLin013/feature/Support-the-min-wrapping-count-to-3
+ce05e14;Merge pull request #137 from ShawnLin013/feature/Update-circle-ci-config
+37b6702;:arrow_up: Upgrade android api image to 28 of CircleCI
+M	.circleci/config.yml
+
+919bbdd;:bug: Rename np_max_fling_velocity_coefficient to np_maxFlingVelocityCoefficient
+M	README.md
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+
+d3e120b;:sparkles: Support the min wrapping count to 3
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+f3769a4;:arrow_up: Upgrade gradle
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/build.gradle
+
+ecaa17d;Merge pull request #128 from ShawnLin013/feature/Refactor-to-the-latest
+66d72e9;:memo: Update README.md
+M	README.md
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+
+29f791c;:hammer: Refactor Scroller
+M	library/src/main/java/com/shawnlin/numberpicker/Scroller.java
+
+a56ffee;:bug: Blocking text updates during fling to reduce number of events
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+6494592;:bug: Cancel pending selection before filtering input
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+2051adf;:bug: Fix NumberPicker.setWrapSelectorWheel(boolean) not respecting user choice
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+82678c1;:bug: Fix missing drawable maintenance methods
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+D	library/src/main/res/drawable-hdpi/np_numberpicker_divider.9.png
+D	library/src/main/res/drawable-mdpi/np_numberpicker_divider.9.png
+D	library/src/main/res/drawable-xhdpi/np_numberpicker_divider.9.png
+A	library/src/main/res/layout/number_picker_material.xml
+D	library/src/main/res/layout/number_picker_with_selector_wheel.xml
+M	library/src/main/res/values/attrs.xml
+
+3302a31;:sparkles: Add theme attribute 'hideWheelUntilFocused'
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+
+1c5e953;:sparkles: Add additional languages to be accepted by the NumberPicker input filter
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+79c73c5;:bug: Fix scroll computation
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+28b4a3d;Add ScrollState typedef
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+324baac;:bug: Fix a typo in NumberPicker javadoc
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+dad0806;:bug: Avoid multiple-"0" to exceed the length of upper bound
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+12789a1;Merge pull request #126 from ShawnLin013/feature/Support-fling-velocity-adjusment
+11b5de1;:sparkles: Support fading edge strength
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+
+fbe6c35;:sparkles: Support max fling velocity coefficient (#106)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+
+8411b6d;:hammer: Refactor divider
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+R100	library/src/main/res/drawable-hdpi/np_numberpicker_selection_divider.9.png	library/src/main/res/drawable-hdpi/np_numberpicker_divider.9.png
+R100	library/src/main/res/drawable-mdpi/np_numberpicker_selection_divider.9.png	library/src/main/res/drawable-mdpi/np_numberpicker_divider.9.png
+R100	library/src/main/res/drawable-xhdpi/np_numberpicker_selection_divider.9.png	library/src/main/res/drawable-xhdpi/np_numberpicker_divider.9.png
+M	sample/src/main/res/values/dimens.xml
+
+78bcdd2;Merge pull request #125 from ShawnLin013/feature/Fix-sample-app-icon
+e2baf37;:sparkles: Add adaptive icon
+A	sample/src/main/res/drawable/ic_launcher_background.xml
+A	sample/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+A	sample/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+M	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-hdpi/ic_launcher_foreground.png
+M	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-mdpi/ic_launcher_foreground.png
+M	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png
+M	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png
+M	sample/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png
+
+c53feda;:bug: Fix the status bar color
+M	sample/src/main/res/values-v21/styles.xml
+
+c777bdc;Merge pull request #124 from ShawnLin013/feature/Fix-the-order-of-multiple-lines
+1de1777;:bug: Fix the order of multiple lines
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+2775fce;Merge pull request #123 from ShawnLin013/feature/Add-Circle-CI
+dd5cb4f;Fix Circle CI permissions
+M	.circleci/config.yml
+
+c2fd154;Fix Circle CI config
+M	.circleci/config.yml
+
+ec8d2d9;Add Circle CI
+A	.circleci/config.yml
+M	README.md
+
+7c16bac;Merge pull request #122 from ShawnLin013/feature/Add-ko-fi-button
+b498904;Add ko-fi button
+M	README.md
+
+a205aa1;Merge pull request #121 from ShawnLin013/feature/Change-the-plugin-of-bintray-release
+2fe484f;Change the plugin of bintray release
+M	build.gradle
+M	gradle.properties
+M	library/build.gradle
+
+06396f6;Merge pull request #120 from ShawnLin013/feature/Bump-v2.4.7
+5f50bcd;:bookmark: Bump v2.4.7
+M	README.md
+M	gradle.properties
+M	screenshot/number-picker-theme.png
+
+1b1966b;Merge pull request #119 from ShawnLin013/feature/Support-Text-Styles
+2ad3f66;:sparkles: Support text align (#114)
+M	README.md
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+
+67b9942;:sparkles: Support strikethrough and underline text (#115)
+M	README.md
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+
+3621ba1;Merge pull request #118 from ShawnLin013/feature/Support-Multiple-Lines
+2a223d4;:sparkles: Support multiple lines
+M	README.md
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/layout/number_picker_with_selector_wheel.xml
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+
+bc168e5;:arrow_up: Upgrade com.novoda:bintray-release to 0.9
+M	build.gradle
+
+9dfe1a9;:arrow_up: Upgrade androidx.appcompat:appcompat to 1.0.2
+M	library/build.gradle
+M	sample/build.gradle
+
+2b8577d;Merge pull request #117 from kstanislav/master
+4305259;Merge pull request #116 from mariotaku/master
+86408d1;Merge pull request #105 from mgj/master
+28d5a91;added androidX support, sdk version updated
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	sample/build.gradle
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+
+fc0bec7;Enable TalkBack accessibility by reading aloud the selected value of the NumberPicker (instead of TalkBack saying e.g. "Disabled edittext, 03" for the first value, and then is unable to say anything for the NumberPicker afterwards)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/layout/number_picker_with_selector_wheel.xml
+
+a80cbb9;make sure String.format not used when no formatter specified
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+004480d;improved measuring performance when using custom formatter
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+c7c5b55;Merge pull request #97 from tibbi/patch-1
+4e31314;Correcting the LICENSE url
+M	README.md
+
+bc79d94;:bookmark: Bump v2.4.6
+M	README.md
+M	gradle.properties
+
+a98e443;Merge pull request #96 from ShawnLin013/feature/Support-set-wheel-item-count-to-1
+df84712;Support set wheel item count to 1 (#57)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+a527085;Merge pull request #95 from ShawnLin013/feature/Fix-font-size
+0e2fa75;Update layout
+M	sample/src/main/res/layout/content_main.xml
+
+548691d;Fix text position when increasing text size (#72)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+d77c329;Merge pull request #91 from ShawnLin013/feature/Bump-v2.4.5
+b4ddad1;:bookmark: v2.4.5
+M	README.md
+M	gradle.properties
+M	library/build.gradle
+
+5cd451a;Update License
+A	LICENSE
+M	README.md
+M	gradle.properties
+
+7f5bc98;Merge pull request #90 from ShawnLin013/feature/Disable-scroller
+e5b46e8;Support scroller enabled (#84)
+M	README.md
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+M	sample/src/main/res/layout/content_main.xml
+
+a06e23a;Support fading edge (#82)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+M	sample/src/main/res/layout/content_main.xml
+
+b1daa87;Merge pull request #64 from absimas/master
+b4d4770;Merge pull request #89 from ShawnLin013/feature/Update-samples
+91cfdb1;Update README
+M	README.md
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+
+0b644a9;Merge pull request #87 from ShawnLin013/feature/Fix-setOnClickListener
+8ef4e0f;Add click listener on current value
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+
+aa25712;Update gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/src/main/AndroidManifest.xml
+D	library/src/main/res/values/strings.xml
+M	sample/build.gradle
+
+abb87f5;When measuring width different text sizes of regular and selected text need to be taken into account. Otherwise, if selected text is bigger, it will get cut off.
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+572c6e9;Invalidation in computeScroll() needs to be delayed. Otherwise parent sometimes fails to recompute the scrolls which results in a seemingly stuck state until another scroll is invoked or the whole view is reinvalidated.
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+c619afc;Merge pull request #63 from ShawnLin013/feature/Order-setting
+98526bb;:bookmark: v2.4.4
+M	gradle.properties
+
+08ace60;:sparkles: Add ascending and descending order (#60)
+M	README.md
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+M	sample/src/main/res/layout/content_main.xml
+
+b0562d3;Merge pull request #61 from TonyHaddad91/master
+0410a0c;remove empty lines
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	sample/src/main/res/values/dimens.xml
+
+53356a2;Adding ability to change selected text size
+M	README.md
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+M	sample/src/main/res/layout/content_main.xml
+M	sample/src/main/res/values/dimens.xml
+
+49ef5a2;Merge pull request #54 from ShawnLin013/feature/Style-of-the-selected-item
+97d34f3;:bookmark: v2.4.3
+M	gradle.properties
+M	library/build.gradle
+D	library/proguard-rules.pro
+
+1a22e78;:bug: Remove AndroidManifest allowBackup=true (#53)
+M	library/src/main/AndroidManifest.xml
+
+d7570df;:memo: Update README.md
+M	README.md
+
+883c018;:sparkles: Add setSelectedTextColor (#49)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+M	sample/src/main/res/layout/content_main.xml
+M	sample/src/main/res/values/colors.xml
+
+25ddf04;:memo: Update badge
+M	README.md
+
+4f05f2b;Merge pull request #45 from ShawnLin013/feature/Fix-failed-to-find-style
+38315a6;:bookmark: v2.4.2
+M	README.md
+M	gradle.properties
+
+d89e67f;:bug: Fix ailed to find style 'numberPickerStyle' (#42)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+81f8784;Merge pull request #43 from ShawnLin013/feature/Fix-scrolling-is-tripping
+344f3fc;:bug: Fix scrolling is tripping (#37、#38)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+51d450d;Merge pull request #41 from ShawnLin013/feature/Set-default-value-in-xml
+b4c0129;:sparkles: Set default value in xml (#35)
+M	README.md
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/res/layout/content_main.xml
+
+ac40ac0;Merge pull request #40 from ShawnLin013/feature/Fix-the-first-value-is-not-formatted
+62ffe7c;:bug: Fix the first value is not formatted (#36)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+074e11d;Merge pull request #39 from ShawnLin013/feature/Downgrade-min-sdk-version
+bcee9e2;:arrow_down: Downgrade minSdkVersion to 15 (#34)
+M	README.md
+M	build.gradle
+M	library/build.gradle
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	sample/build.gradle
+
+50c81c0;Merge pull request #33 from ShawnLin013/feature/Fix-scrolling-stop-in-middle-positions
+7ded8aa;:bookmark: v2.4.1
+M	README.md
+M	gradle.properties
+
+a7f6079;:bug: Fix scrolling stop in middle-positions (#28)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+e99c5a7;:bookmark: v2.4.0
+M	README.md
+M	gradle.properties
+
+afefd41;Merge pull request #32 from ShawnLin013/feature/Fix-Horizontal-number-picker-scrolls-when-disabled
+8eb7f25;:bug: Fix horizontal number picker scrolls when disabled (#29)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+
+b13cd9d;Merge pull request #31 from ShawnLin013/feature/Getters
+1321328;:sparkles: Add getters (#30)
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+7c7b98f;Merge pull request #25 from ShawnLin013/feature/Add-setWrapSelectorWheel-in-xml
+a0b021e;Update version
+M	gradle.properties
+
+e90bd05;Fix issue #23 : Show negative number
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+980f2d0;Update README.md
+M	README.md
+
+2572cfe;Add setWrapSelectorWheel in xml
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+
+0cb7e70;Rename np_wheel_item_count to np_wheelItemCount
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+
+f818626;Merge pull request #21 from ShawnLin013/feature/Add-SetDividerThickness
+4e1c91b;Add features: > setDividerDistance > setDividerThickness > setOrientation
+M	README.md
+M	build.gradle
+M	gradle.properties
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+1263db7;Merge pull request #19 from ShawnLin013/feature/Wheel-item-count
+d5d9fe6;Add the feature of wheel item count setting
+M	README.md
+M	gradle.properties
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+
+b97a83d;Merge pull request #13 from ShawnLin013/feature/Update-theme-image
+61e8d9e;Update theme image
+M	README.md
+D	screenshot/NumberPicker-Screenshot.png
+A	screenshot/number-picker-theme.png
+
+a3dbc27;Merge pull request #12 from ShawnLin013/feature/Support-negative-values
+8452eaa;Update README.md
+M	README.md
+
+e609c6a;Merge pull request #11 from ShawnLin013/feature/Support-negative-values
+b30c906;Update version
+M	gradle.properties
+
+f4eb331;Fix issue #8 : Add support for negative values
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+
+dd578ac;Merge pull request #10 from ShawnLin013/feature/Horizontal-mode
+6511baf;Remove @hide annotation
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/java/com/shawnlin/numberpicker/Scroller.java
+
+06efb07;Merge pull request #9 from ShawnLin013/feature/Horizontal-mode
+c19bd3c;Update the screenshot
+M	screenshot/NumberPicker-Screenshot.png
+
+89f6bbc;Update ic_launcher and colorPrimary
+M	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+M	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+M	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	sample/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	sample/src/main/res/values/colors.xml
+
+e418c77;Update the screenshot
+M	screenshot/NumberPicker-Screenshot.png
+
+c43c6a2;Add the feature of text formatter setting
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	sample/src/main/res/layout/content_main.xml
+
+9efbfd9;Fix text size issue
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/layout/number_picker_with_selector_wheel.xml
+M	sample/src/main/res/layout/content_main.xml
+
+e2fbf32;Update README.md
+M	README.md
+
+759ce6c;Update the version code and name
+M	gradle.properties
+
+8b05d85;Refactor code
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/res/layout/content_main.xml
+
+261a3ff;Refactor by android.widget.NumberPicker
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+A	library/src/main/java/com/shawnlin/numberpicker/Scroller.java
+A	library/src/main/res/drawable-hdpi/np_numberpicker_selection_divider.9.png
+A	library/src/main/res/drawable-mdpi/np_numberpicker_selection_divider.9.png
+A	library/src/main/res/drawable-xhdpi/np_numberpicker_selection_divider.9.png
+A	library/src/main/res/layout/number_picker_with_selector_wheel.xml
+M	library/src/main/res/values/attrs.xml
+M	library/src/main/res/values/strings.xml
+M	sample/build.gradle
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/res/layout/content_main.xml
+
+cccc263;Merge pull request #6 from ShawnLin013/feature/Set-size
+013f8f7;Add the feature of width and height setting
+M	README.md
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/res/layout/content_main.xml
+
+b1fcfb0;Merge pull request #4 from ShawnLin013/feature/Set-by-res-id
+413a5aa;Simplify the parameter of the function
+M	README.md
+M	gradle.properties
+M	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+M	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+
+e48311f;Update the README.md
+M	README.md
+
+2221072;Update the screenshot
+M	screenshot/NumberPicker-Screenshot.png
+
+210b685;Initial commit
+A	.gitignore
+A	README.md
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	library/.gitignore
+A	library/build.gradle
+A	library/proguard-rules.pro
+A	library/src/main/AndroidManifest.xml
+A	library/src/main/java/com/shawnlin/numberpicker/NumberPicker.java
+A	library/src/main/res/values/attrs.xml
+A	library/src/main/res/values/strings.xml
+A	sample/.gitignore
+A	sample/build.gradle
+A	sample/proguard-rules.pro
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/com/shawnlin/numberpicker/sample/MainActivity.java
+A	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/layout/content_main.xml
+A	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	sample/src/main/res/values-v21/styles.xml
+A	sample/src/main/res/values-w820dp/dimens.xml
+A	sample/src/main/res/values/colors.xml
+A	sample/src/main/res/values/dimens.xml
+A	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/values/styles.xml
+A	screenshot/NumberPicker-Screenshot.png
+A	settings.gradle

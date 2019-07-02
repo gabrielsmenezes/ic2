@@ -1,0 +1,419 @@
+bcb68e6;Code cleanup
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/AccordionFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/HorizontalFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/ManualFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/SimpleFragment.java
+
+7e578cb;Remember expanded items in recycler view
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+
+444ab92;Update build tools
+M	build.gradle
+M	demo/build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	lib/build.gradle
+
+721ae6f;Merge pull request #48 from DanChaltiel/master
+e8b5e6c;Update RecyclerViewFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+
+6d7db92;Update RecyclerViewFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+
+568cb49;Update RecyclerViewFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+
+138447c;v2.9.2
+M	lib/build.gradle
+
+32dd3a1;Update build tools
+M	build.gradle
+M	demo/build.gradle
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/SimpleFragment.java
+M	lib/build.gradle
+
+621ffdd;Fix state not being set correctly when animation == false
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+bbb99c7;Merge pull request #43 from cachapa/revert-40-master
+2890bfd;Revert "fixed state not updated when animation is set false."
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+21f0f2d;Merge pull request #40 from KiBa1215/master
+2e4ec46;fixed state not updated when animation is set false.
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+0cc1817;Merge pull request #38 from fiona0419/master
+ffb76c4;Remove deprecated attribute in xml
+M	demo/src/main/res/layout/accordion_fragment.xml
+M	demo/src/main/res/layout/horizontal_fragment.xml
+
+243c0c6;Remove deprecated attribute
+M	lib/src/main/res/values/attrs.xml
+
+9055170;v2.9.1
+M	demo/build.gradle
+M	lib/build.gradle
+
+80385d3;Fix state restoration
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+65bac72;Bump demo versionCode
+M	demo/build.gradle
+
+3d0cb99;v2.9
+M	demo/build.gradle
+M	lib/build.gradle
+
+ddf8464;Add example of manual expansion to demo
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/MainActivity.java
+A	demo/src/main/java/net/cachapa/expandablelayoutdemo/ManualFragment.java
+A	demo/src/main/res/layout/manual_fragment.xml
+
+4ea8aef;Better state handling
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/AccordionFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/HorizontalFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/SimpleFragment.java
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+0ae3b06;Remove deprecated attribute translateChildren
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+M	lib/src/main/res/values/attrs.xml
+
+653253f;Ensure expanded items are always visible in RecyclerView demo
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+
+c214263;Update dependencies
+M	build.gradle
+M	demo/build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+2678264;v2.8
+M	lib/build.gradle
+
+08a5ed9;Make setExpanded public for use with DataBinding
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+14d358e;Update support lib
+M	demo/build.gradle
+
+54e9c14;Remove deprecated ExpandableLinearLayout
+M	README.md
+D	legacy_demo/.gitignore
+D	legacy_demo/build.gradle
+D	legacy_demo/src/main/AndroidManifest.xml
+D	legacy_demo/src/main/java/net/cachapa/expandablelayoutdemo/AccordionFragment.java
+D	legacy_demo/src/main/java/net/cachapa/expandablelayoutdemo/HorizontalFragment.java
+D	legacy_demo/src/main/java/net/cachapa/expandablelayoutdemo/MainActivity.java
+D	legacy_demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+D	legacy_demo/src/main/java/net/cachapa/expandablelayoutdemo/SimpleFragment.java
+D	legacy_demo/src/main/res/drawable/list_item_background.xml
+D	legacy_demo/src/main/res/layout/accordion_fragment.xml
+D	legacy_demo/src/main/res/layout/horizontal_fragment.xml
+D	legacy_demo/src/main/res/layout/main_activity.xml
+D	legacy_demo/src/main/res/layout/recycler_item.xml
+D	legacy_demo/src/main/res/layout/recycler_view_fragment.xml
+D	legacy_demo/src/main/res/layout/simple_fragment.xml
+D	legacy_demo/src/main/res/mipmap-hdpi/ic_launcher.png
+D	legacy_demo/src/main/res/mipmap-mdpi/ic_launcher.png
+D	legacy_demo/src/main/res/mipmap-xhdpi/ic_launcher.png
+D	legacy_demo/src/main/res/mipmap-xxhdpi/ic_launcher.png
+D	legacy_demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+D	legacy_demo/src/main/res/values/colors.xml
+D	legacy_demo/src/main/res/values/strings.xml
+D	legacy_demo/src/main/res/values/styles.xml
+D	legacy_demo/src/main/res/web.png
+D	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+M	settings.gradle
+
+999018c;v2.7
+M	lib/build.gradle
+
+f60bea8;Fix expanded detection on BounceInterpolator
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+49686a8;v2.6
+M	lib/build.gradle
+
+9884dcd;Improve horizontal layout demo
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/HorizontalFragment.java
+A	demo/src/main/res/drawable-xxxhdpi/ic_chevron_right_black_48dp.png
+M	demo/src/main/res/layout/horizontal_fragment.xml
+
+6d26b52;Fix expansion animation on RTL layouts
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+9ee610a;Update build tools
+M	demo/build.gradle
+M	legacy_demo/build.gradle
+M	lib/build.gradle
+
+0316f16;Bump demo versionCode
+M	demo/build.gradle
+
+5acc4c1;v2.5
+M	lib/build.gradle
+
+a6bc455;Update documentation
+M	README.md
+
+00fdb2d;Allow setting interpolator
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+M	demo/src/main/res/layout/recycler_item.xml
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+3c5a6fe;Add parallax property
+M	demo/src/main/res/layout/simple_fragment.xml
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+M	lib/src/main/res/values/attrs.xml
+
+c6fa55b;Mark ExpandableLinearLayout as deprecated
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+
+3972c2b;Update readme
+M	README.md
+
+acd86c2;Ignore keystore
+M	.gitignore
+
+35a88cd;v2.4
+M	lib/build.gradle
+
+a2265ab;Add setters and getters to match XML attributes
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+51a40f2;Update build tools
+M	build.gradle
+M	demo/build.gradle
+M	legacy_demo/build.gradle
+M	lib/build.gradle
+
+621b239;Version 2.3
+M	README.md
+M	lib/build.gradle
+
+6c41639;Allow manually setting expansion progress
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+b378385;Added el_translate_children boolean flag
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+M	lib/src/main/res/values/attrs.xml
+
+ab569d7;Update build tools
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+5f99358;Version 2.2
+M	lib/build.gradle
+
+d6aa441;Fix incorrect sizing during animation
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+bc9c7eb;Fix expansion failing in some cases
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+
+bf832c1;Version 2.1
+M	.gitignore
+M	lib/build.gradle
+
+285778c;Properly reference Android's orientation tag
+M	demo/src/main/res/layout/horizontal_fragment.xml
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+M	lib/src/main/res/values/attrs.xml
+
+64c0bc1;Update documentation
+M	README.md
+
+385bd2d;Add sample project for old ExpandableLinearLayout
+A	legacy_demo/.gitignore
+A	legacy_demo/build.gradle
+A	legacy_demo/src/main/AndroidManifest.xml
+A	legacy_demo/src/main/java/net/cachapa/expandablelayoutdemo/AccordionFragment.java
+A	legacy_demo/src/main/java/net/cachapa/expandablelayoutdemo/HorizontalFragment.java
+A	legacy_demo/src/main/java/net/cachapa/expandablelayoutdemo/MainActivity.java
+A	legacy_demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+A	legacy_demo/src/main/java/net/cachapa/expandablelayoutdemo/SimpleFragment.java
+A	legacy_demo/src/main/res/drawable/list_item_background.xml
+A	legacy_demo/src/main/res/layout/accordion_fragment.xml
+A	legacy_demo/src/main/res/layout/horizontal_fragment.xml
+A	legacy_demo/src/main/res/layout/main_activity.xml
+A	legacy_demo/src/main/res/layout/recycler_item.xml
+A	legacy_demo/src/main/res/layout/recycler_view_fragment.xml
+A	legacy_demo/src/main/res/layout/simple_fragment.xml
+A	legacy_demo/src/main/res/mipmap-hdpi/ic_launcher.png
+A	legacy_demo/src/main/res/mipmap-mdpi/ic_launcher.png
+A	legacy_demo/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	legacy_demo/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	legacy_demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	legacy_demo/src/main/res/values/colors.xml
+A	legacy_demo/src/main/res/values/strings.xml
+A	legacy_demo/src/main/res/values/styles.xml
+A	legacy_demo/src/main/res/web.png
+M	settings.gradle
+
+fee37bb;Update build settings
+M	demo/build.gradle
+D	demo/proguard-rules.pro
+M	lib/build.gradle
+D	lib/proguard-rules.pro
+
+40db6a1;Revert changes to ExpandableLinearLayout
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+
+7d73873;Update documentation
+M	README.md
+A	images/accordion.gif
+D	images/expandable_accordion.gif
+D	images/expandable_fill.gif
+D	images/expandable_fixed.gif
+D	images/expandable_parallel.gif
+D	images/expandable_recycler.gif
+A	images/horizontal.gif
+A	images/recycler.gif
+A	images/simple.gif
+
+d8feb2a;Fix RecyclerView demo
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+M	demo/src/main/res/drawable/list_item_background.xml
+M	demo/src/main/res/layout/accordion_fragment.xml
+M	demo/src/main/res/layout/recycler_item.xml
+M	demo/src/main/res/layout/simple_fragment.xml
+
+8a91a31;Better and more efficient expansion method
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/AccordionFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/HorizontalFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/MainActivity.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/SimpleFragment.java
+M	demo/src/main/res/layout/accordion_fragment.xml
+M	demo/src/main/res/layout/horizontal_fragment.xml
+M	demo/src/main/res/layout/recycler_item.xml
+M	demo/src/main/res/layout/simple_fragment.xml
+A	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLayout.java
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+M	lib/src/main/res/values/attrs.xml
+
+0304664;v 1.4
+M	lib/build.gradle
+
+ed38c88;Add horizontal expansion
+A	demo/src/main/java/net/cachapa/expandablelayoutdemo/HorizontalFragment.java
+M	demo/src/main/java/net/cachapa/expandablelayoutdemo/MainActivity.java
+A	demo/src/main/res/layout/horizontal_fragment.xml
+M	demo/src/main/res/layout/main_activity.xml
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+
+e4dadda;Switch accordion starting position
+M	demo/src/main/res/layout/accordion_fragment.xml
+
+1afb2cf;Update demo dependency version
+M	demo/build.gradle
+
+1eaffcf;Bump version
+M	lib/build.gradle
+
+eef8f60;Remove Android Support Lib dependency
+M	lib/build.gradle
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+A	lib/src/main/java/net/cachapa/expandablelayout/util/FastOutSlowInInterpolator.java
+A	lib/src/main/java/net/cachapa/expandablelayout/util/LookupTableInterpolator.java
+
+e47b1a4;Replace jitpack instructions with jcenter
+M	README.md
+
+0c039fb;Add jcenter publish task
+M	build.gradle
+M	demo/build.gradle
+M	lib/build.gradle
+
+3815982;Add icon
+A	demo/src/main/res/mipmap-hdpi/ic_launcher.png
+A	demo/src/main/res/mipmap-mdpi/ic_launcher.png
+A	demo/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	demo/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	demo/src/main/res/web.png
+
+4ee7231;Update build tools
+M	demo/build.gradle
+M	lib/build.gradle
+
+c3ccf3a;Update README.md
+M	README.md
+
+86191ff;Bump version to 1.2
+M	lib/build.gradle
+
+5d14ba8;Update build tools
+M	demo/build.gradle
+M	lib/build.gradle
+
+83d769b;Separate animated and non-animated code paths
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+
+65b1a82;Merge pull request #3 from sd6352051/master
+b98b46a;modify code style
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+
+ae906ca;Set whether this view animated to extend
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+
+c134d0c;Merge pull request #1 from radarhere/patch-1
+bc57af6;Fixed typos
+M	README.md
+
+712ef0a;Version 1.1
+M	README.md
+M	lib/build.gradle
+
+27f0171;Add method to check if expanded
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+
+f66f494;Remove collapsed views from hierarchy
+M	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+
+7f2d7b7;Update README.md
+M	README.md
+
+4fa7a3d;Boring initial commit message
+A	.gitignore
+A	LICENSE.txt
+A	README.md
+A	build.gradle
+A	demo/.gitignore
+A	demo/build.gradle
+A	demo/proguard-rules.pro
+A	demo/src/main/AndroidManifest.xml
+A	demo/src/main/java/net/cachapa/expandablelayoutdemo/AccordionFragment.java
+A	demo/src/main/java/net/cachapa/expandablelayoutdemo/MainActivity.java
+A	demo/src/main/java/net/cachapa/expandablelayoutdemo/RecyclerViewFragment.java
+A	demo/src/main/java/net/cachapa/expandablelayoutdemo/SimpleFragment.java
+A	demo/src/main/res/drawable/list_item_background.xml
+A	demo/src/main/res/layout/accordion_fragment.xml
+A	demo/src/main/res/layout/main_activity.xml
+A	demo/src/main/res/layout/recycler_item.xml
+A	demo/src/main/res/layout/recycler_view_fragment.xml
+A	demo/src/main/res/layout/simple_fragment.xml
+A	demo/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	demo/src/main/res/values/colors.xml
+A	demo/src/main/res/values/strings.xml
+A	demo/src/main/res/values/styles.xml
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	images/expandable_accordion.gif
+A	images/expandable_fill.gif
+A	images/expandable_fixed.gif
+A	images/expandable_parallel.gif
+A	images/expandable_recycler.gif
+A	lib/.gitignore
+A	lib/build.gradle
+A	lib/proguard-rules.pro
+A	lib/src/main/AndroidManifest.xml
+A	lib/src/main/java/net/cachapa/expandablelayout/ExpandableLinearLayout.java
+A	lib/src/main/res/values/attrs.xml
+A	settings.gradle

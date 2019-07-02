@@ -1,0 +1,1341 @@
+f125925;Fix typo in README.md (#455)
+M	README.md
+
+a8da5f5;Update link to custom tabs documentation
+M	README.md
+
+7386114;Fix spelling mistake
+M	README.md
+
+07495ab;Issue #402: fixes NPE in case input stream is null (#414)
+M	library/java/net/openid/appauth/Utils.java
+M	library/javatests/net/openid/appauth/UtilsTest.java
+
+bfe9047;Use CustomTabsService.ACTION_CUSTOM_TABS_CONNECTION in BrowserSelector. (#411)
+M	library/java/net/openid/appauth/browser/BrowserSelector.java
+
+390a6c9;Update CONTRIBUTORS with email (#397)
+M	CONTRIBUTORS
+
+35a08c6;Add Øyvind to the contributors list
+M	CONTRIBUTORS
+
+1a47f74;Implement ID Token validation according to OIDC spec (#385)
+M	build.gradle
+M	library/java/net/openid/appauth/AuthorizationException.java
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+A	library/java/net/openid/appauth/IdToken.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceDiscoveryTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+A	library/javatests/net/openid/appauth/IdTokenTest.java
+M	library/javatests/net/openid/appauth/TestValues.java
+
+5a58643;Android gradle plugin version bump
+M	build.gradle
+
+3e46b9f;add getBrowserDescriptor() (#388)
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+aa8c507;Custom Tabs was first added in Samsung Internet 4.0 (#383)
+M	library/java/net/openid/appauth/browser/Browsers.java
+M	library/java/net/openid/appauth/browser/VersionedBrowserMatcher.java
+M	library/javatests/net/openid/appauth/browser/AnyBrowserMatcherTest.java
+M	library/javatests/net/openid/appauth/browser/BrowserWhitelistTest.java
+
+a42f28a;Respect default browser of the user (#379)
+M	library/java/net/openid/appauth/browser/BrowserSelector.java
+M	library/javatests/net/openid/appauth/browser/BrowserSelectorTest.java
+
+e1671e7;Firefox customtabs (#378)
+M	CONTRIBUTORS
+M	library/java/net/openid/appauth/browser/BrowserBlacklist.java
+M	library/java/net/openid/appauth/browser/Browsers.java
+M	library/java/net/openid/appauth/browser/VersionedBrowserMatcher.java
+M	library/javatests/net/openid/appauth/browser/BrowserWhitelistTest.java
+
+51c5b26;Do not override tab title setting
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+d14353e;Do not automatically pass scope on token exchange request
+M	config/testdeps.gradle
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/javatests/net/openid/appauth/AuthorizationResponseTest.java
+
+9e878c0;Enable Java 8 language features
+M	config/android-common.gradle
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+4b5e44c;Handle CustomTabsSession.newSession failures
+M	library/java/net/openid/appauth/browser/CustomTabManager.java
+M	library/javatests/net/openid/appauth/browser/CustomTabManagerTest.java
+
+fb5e7a8;Dependency version bump
+M	app/build.gradle
+M	build.gradle
+M	config/style.gradle
+M	config/testdeps.gradle
+M	library/build.gradle
+
+a352ef5;Add WeWork to AUTHORS
+M	AUTHORS
+
+f1dbeb5;Minor README fixes (#351)
+M	README.md
+
+83be396;Fix encoding of client ids and secrets for auth (#345)
+M	library/java/net/openid/appauth/ClientSecretBasic.java
+M	library/java/net/openid/appauth/internal/UriUtil.java
+M	library/javatests/net/openid/appauth/ClientSecretBasicTest.java
+
+e9c1138;Fix compilation errors in AuthState(Test) (#344)
+M	library/java/net/openid/appauth/AuthState.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+
+f8dabb3;Fix manifest placeholder processing (#341)
+M	library/build.gradle
+
+efe1a9f;Add myself to the AUTHORS file (#343)
+M	AUTHORS
+
+3358831;Bump dependency versions (#342)
+M	.travis.yml
+M	app/build.gradle
+M	build.gradle
+M	config/android-common.gradle
+M	config/coverage.gradle
+M	config/style.gradle
+M	config/testdeps.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/java/net/openid/appauth/AuthState.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/AuthorizationManagementActivityTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceConfigurationTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+M	library/javatests/net/openid/appauth/ClientSecretBasicTest.java
+M	library/javatests/net/openid/appauth/JsonUtilTest.java
+M	library/javatests/net/openid/appauth/browser/BrowserDescriptorTest.java
+M	library/javatests/net/openid/appauth/browser/BrowserSelectorTest.java
+M	library/javatests/net/openid/appauth/browser/CustomTabManagerTest.java
+M	library/javatests/net/openid/appauth/internal/LoggerTest.java
+
+4f87493;Make handling of non-standard expires_at more tolerant (#336)
+M	library/java/net/openid/appauth/JsonUtil.java
+M	library/java/net/openid/appauth/TokenResponse.java
+
+2e664e9;Synchronizes multiple actions when requiring token refresh (#332)
+M	library/java/net/openid/appauth/AuthState.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+
+fddab98;Restructure description of specifying config
+M	README.md
+
+76b7241;Minor grammar correction
+M	README.md
+
+81a9a9e;Fixed code style error
+M	app/java/net/openid/appauthdemo/TokenActivity.java
+
+c996ea7;Configurable user info endpoint location
+M	app/java/net/openid/appauthdemo/Configuration.java
+M	app/java/net/openid/appauthdemo/TokenActivity.java
+M	app/res/raw/auth_config.json
+
+619e9b0;Mark intent methods with @TargetApi(21)
+M	library/java/net/openid/appauth/AuthorizationService.java
+
+d2b2aad;Add Gluu to the IDP-specific readme list.
+M	app/README.md
+
+0153346;Create README-Gluu.md
+A	app/README-Gluu.md
+
+f4ca7c4;Merge pull request #281 from WilliamDenniss/master
+849e408;Updated references to the OAuth 2.0 for Native Apps BCP.
+M	README.md
+M	library/java/net/openid/appauth/package-info.java
+
+8f0d899;Fix lint error in demo app
+M	app/java/net/openid/appauthdemo/TokenActivity.java
+
+b9f5c82;Replace build status badge with Travis
+M	README.md
+
+7b71011;Add Travis build configuration
+A	.travis.yml
+
+03ad1dd;Update gradle plugin and support lib versions
+M	build.gradle
+
+c640288;Dependency version bump
+M	app/build.gradle
+R067	library/javatests/org/robolectric/shadows/package-info.java	app/java/net/openid/appauthdemo/AppAuthGlideModule.java
+M	app/java/net/openid/appauthdemo/TokenActivity.java
+M	app/res/drawable/unknown_user_48dp.xml
+M	build.gradle
+M	config/testdeps.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthorizationManagementActivityTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+M	library/javatests/net/openid/appauth/RedirectUriReceiverActivityTest.java
+M	library/javatests/net/openid/appauth/browser/BrowserSelectorTest.java
+D	library/javatests/org/robolectric/shadows/ShadowIntentFilterFixed.java
+
+4499631;Upgrade jacoco version
+M	config/coverage.gradle
+
+26671e2;Add link to Javadoc
+M	README.md
+
+aa1f83f;Dependency version bump and maven pom configuration tweak
+M	build.gradle
+M	library/build.gradle
+
+7089089;Return exception on cancelation, update README
+M	README.md
+M	library/java/net/openid/appauth/AuthorizationManagementActivity.java
+M	library/javatests/net/openid/appauth/AuthorizationManagementActivityTest.java
+
+3c99074;Stricter null checks for authorization service parameters (#258)
+M	library/java/net/openid/appauth/AuthorizationService.java
+
+a130b92;Ensure that the auth request is re-created after switching browser (#257)
+M	app/java/net/openid/appauthdemo/LoginActivity.java
+
+e38702c;Implement startActivityForResult based auth flow. (#260)
+M	app/java/net/openid/appauthdemo/LoginActivity.java
+M	app/res/layout/activity_login.xml
+M	app/res/values/strings.xml
+M	library/java/net/openid/appauth/AuthorizationManagementActivity.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthorizationManagementActivityTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+be44a6b;Fix minor gradle typo
+M	build.gradle
+
+01050ca;Actually write new AuthState to SharedPreferences (#243)
+M	app/java/net/openid/appauthdemo/AuthStateManager.java
+
+4477a73;added the Okta howto (#239)
+A	app/README-Okta.md
+M	app/README.md
+
+efe47d0;Typo correction in readme
+M	README.md
+
+c363e2f;Small correctness fixes to examples
+M	README.md
+
+09c4b02;Add link to the Google README for demo app
+M	app/README.md
+
+4b7420c;Correct appAuthRedirectScheme instructions
+M	app/README-Google.md
+
+e4bfe38;Ignore grgit failures
+M	build.gradle
+
+b339135;Add simpler AuthorizationServiceConfiguration constructor
+M	library/java/net/openid/appauth/AuthorizationServiceConfiguration.java
+
+47c1618;use Google maven repo, remove old Android sdk workarounds
+M	README.md
+M	build.gradle
+D	config/localprops.gradle
+
+8d7305f;Add links to external resources on AppAuth
+M	README.md
+
+5422c68;Add description to POM (required for Maven Central)
+M	library/build.gradle
+
+bf33daf;Unit tests for failure cases of CodeVerifierUtil
+M	library/java/net/openid/appauth/CodeVerifierUtil.java
+A	library/javatests/net/openid/appauth/CodeVerifierUtilTest.java
+
+23c8ed7;README overhaul
+M	README.md
+
+9c2f9b9;Throw JSONException if token_type field is missing from token response
+M	library/java/net/openid/appauth/TokenResponse.java
+M	library/javatests/net/openid/appauth/TokenResponseTest.java
+
+b38c048;Fix JSON deserialization
+M	library/java/net/openid/appauth/RegistrationResponse.java
+M	library/java/net/openid/appauth/TokenResponse.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+M	library/javatests/net/openid/appauth/TokenResponseTest.java
+
+0c1799f;Replace YOUR_CLIENT with PREFIX
+M	app/README-Google.md
+
+ae6106d;Maven central sync settings
+M	library/build.gradle
+
+8aafde9;Dependency version bumps
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+
+de0ed1a;Greater control over custom tab session creation
+M	app/java/net/openid/appauthdemo/LoginActivity.java
+M	library/java/net/openid/appauth/AuthState.java
+M	library/java/net/openid/appauth/AuthorizationManagementActivity.java
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/AuthorizationServiceConfiguration.java
+M	library/java/net/openid/appauth/CodeVerifierUtil.java
+R055	library/java/net/openid/appauth/CustomTabManager.java	library/java/net/openid/appauth/browser/CustomTabManager.java
+R096	library/java/net/openid/appauth/Logger.java	library/java/net/openid/appauth/internal/Logger.java
+R080	library/java/net/openid/appauth/UriUtil.java	library/java/net/openid/appauth/internal/UriUtil.java
+A	library/java/net/openid/appauth/internal/package-info.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+A	library/javatests/net/openid/appauth/browser/CustomTabManagerTest.java
+R098	library/javatests/net/openid/appauth/LoggerTest.java	library/javatests/net/openid/appauth/internal/LoggerTest.java
+R055	library/javatests/net/openid/appauth/UriUtilTest.java	library/javatests/net/openid/appauth/internal/UriUtilTest.java
+
+b84992c;Formatting fixes
+M	README.md
+
+8693cb4;Minor Readme clarifications
+M	app/README.md
+
+2931df5;Minor tweaks to Readme.
+M	app/README-Google.md
+
+ca1a625;Do not add client_id by default on all token requests
+M	library/java/net/openid/appauth/ClientAuthentication.java
+M	library/java/net/openid/appauth/ClientSecretBasic.java
+M	library/java/net/openid/appauth/ClientSecretPost.java
+M	library/java/net/openid/appauth/NoClientAuthentication.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/java/net/openid/appauth/UriUtil.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+M	library/javatests/net/openid/appauth/NoClientAuthenticationTest.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+
+acdbbeb;Allow explicit client authentication for fresh tokens
+M	library/java/net/openid/appauth/AuthState.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+
+7cc20cd;Disable Jack compiler
+M	app/AndroidManifest.xml
+M	app/build.gradle
+M	app/res/values/strings.xml
+
+cf7fa35;Replace your-custom-scheme by "reverse domain name notation" (#191)
+M	README.md
+
+9558408;Demo app documentation cleanup
+M	app/java/net/openid/appauthdemo/LoginActivity.java
+M	app/java/net/openid/appauthdemo/TokenActivity.java
+M	app/java/net/openid/appauthdemo/package-info.java
+
+40726cb;Add .editorconfig
+A	.editorconfig
+
+29329dc;Demo app revamp (#185)
+M	README.md
+M	app/AndroidManifest.xml
+A	app/README-Google.md
+M	app/README.md
+M	app/build.gradle
+M	app/java/net/openid/appauthdemo/Application.java
+A	app/java/net/openid/appauthdemo/AuthStateManager.java
+M	app/java/net/openid/appauthdemo/BrowserSelectionAdapter.java
+A	app/java/net/openid/appauthdemo/Configuration.java
+A	app/java/net/openid/appauthdemo/ConnectionBuilderForTesting.java
+D	app/java/net/openid/appauthdemo/IdentityProvider.java
+A	app/java/net/openid/appauthdemo/LoginActivity.java
+D	app/java/net/openid/appauthdemo/MainActivity.java
+M	app/java/net/openid/appauthdemo/TokenActivity.java
+D	app/res/drawable-hdpi/btn_google_signin_dark_focus.9.png
+D	app/res/drawable-hdpi/btn_google_signin_dark_normal.9.png
+D	app/res/drawable-hdpi/btn_google_signin_dark_pressed.9.png
+D	app/res/drawable-mdpi/btn_google_signin_dark_focus.9.png
+D	app/res/drawable-mdpi/btn_google_signin_dark_normal.9.png
+D	app/res/drawable-mdpi/btn_google_signin_dark_pressed.9.png
+D	app/res/drawable-v21/btn_google.xml
+D	app/res/drawable-xhdpi/btn_google_signin_dark_focus.9.png
+D	app/res/drawable-xhdpi/btn_google_signin_dark_normal.9.png
+D	app/res/drawable-xhdpi/btn_google_signin_dark_pressed.9.png
+D	app/res/drawable-xxhdpi/btn_google_signin_dark_focus.9.png
+D	app/res/drawable-xxhdpi/btn_google_signin_dark_normal.9.png
+D	app/res/drawable-xxhdpi/btn_google_signin_dark_pressed.9.png
+D	app/res/drawable-xxxhdpi/btn_google_signin_dark_focus.9.png
+D	app/res/drawable-xxxhdpi/btn_google_signin_dark_normal.9.png
+D	app/res/drawable-xxxhdpi/btn_google_signin_dark_pressed.9.png
+D	app/res/drawable/btn_google.xml
+A	app/res/layout/activity_login.xml
+D	app/res/layout/activity_main.xml
+M	app/res/layout/activity_token.xml
+A	app/res/raw/auth_config.json
+D	app/res/values-v21/styles.xml
+M	app/res/values/colors.xml
+D	app/res/values/idp_configs.xml
+D	app/res/values/idp_configs_optional.xml
+M	app/res/values/strings.xml
+M	app/res/values/styles.xml
+M	build.gradle
+M	library/java/net/openid/appauth/AuthState.java
+M	library/java/net/openid/appauth/AuthorizationManagementActivity.java
+
+f29e3df;Add "Accept: application/json" to token requests
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+de4c5a9;Use markdown for Javadoc
+M	app/java/net/openid/appauthdemo/MainActivity.java
+M	build.gradle
+M	config/android-common.gradle
+M	config/checkstyle/checkstyle.xml
+M	config/javadoc.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/java/net/openid/appauth/AsciiStringListUtil.java
+M	library/java/net/openid/appauth/AuthState.java
+M	library/java/net/openid/appauth/AuthorizationException.java
+M	library/java/net/openid/appauth/AuthorizationManagementActivity.java
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/AuthorizationServiceConfiguration.java
+M	library/java/net/openid/appauth/AuthorizationServiceDiscovery.java
+M	library/java/net/openid/appauth/ClientSecretBasic.java
+M	library/java/net/openid/appauth/ClientSecretPost.java
+M	library/java/net/openid/appauth/CodeVerifierUtil.java
+M	library/java/net/openid/appauth/GrantTypeValues.java
+M	library/java/net/openid/appauth/NoClientAuthentication.java
+M	library/java/net/openid/appauth/Preconditions.java
+M	library/java/net/openid/appauth/RedirectUriReceiverActivity.java
+M	library/java/net/openid/appauth/RegistrationRequest.java
+M	library/java/net/openid/appauth/RegistrationResponse.java
+M	library/java/net/openid/appauth/ResponseTypeValues.java
+M	library/java/net/openid/appauth/SystemClock.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/java/net/openid/appauth/TokenResponse.java
+M	library/java/net/openid/appauth/browser/BrowserBlacklist.java
+M	library/java/net/openid/appauth/browser/BrowserSelector.java
+M	library/java/net/openid/appauth/browser/BrowserWhitelist.java
+M	library/java/net/openid/appauth/browser/Browsers.java
+M	library/java/net/openid/appauth/package-info.java
+M	library/javatests/org/robolectric/shadows/ShadowIntentFilterFixed.java
+
+ed55be0;set content-type for dynamic registration request
+M	library/java/net/openid/appauth/AuthorizationService.java
+
+e7e29b2;Fix IdentityProvider declaration error (#169)
+M	app/README.md
+
+c1e7b86;Correctly annotate XML code blocks in README.md
+M	README.md
+
+a4de998;Update README to be version agnostic
+M	README.md
+
+781ddc0;Merge pull request #156 from mattinger/master
+ee38ea1;Allow proper error parsing with no error_description is given.
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+022471d;Update version numbers in README.md
+M	README.md
+
+8732d79;Merge pull request #150 from iainmcgin/intentflags
+efb55c3;Merge pull request #151 from iainmcgin/noconstruct
+67e3e56;Merge pull request #152 from iainmcgin/exacttest
+47df635;Tests for ExactBrowserMatcher
+A	library/javatests/net/openid/appauth/browser/ExactBrowserMatcherTest.java
+
+d104286;Explicitly reject construction of non-constructable types
+M	library/java/net/openid/appauth/AsciiStringListUtil.java
+M	library/java/net/openid/appauth/CodeVerifierUtil.java
+M	library/java/net/openid/appauth/GrantTypeValues.java
+M	library/java/net/openid/appauth/JsonUtil.java
+M	library/java/net/openid/appauth/NoClientAuthentication.java
+M	library/java/net/openid/appauth/Preconditions.java
+M	library/java/net/openid/appauth/ResponseTypeValues.java
+M	library/java/net/openid/appauth/UriUtil.java
+M	library/java/net/openid/appauth/Utils.java
+
+fd562ed;Allow custom tab to remain in back stack
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+51829c1;Fix logo rendering in README.md on github
+M	README.md
+
+c496d19;Use new AppAuth branding in demo app and README (#149)
+M	README.md
+M	app/java/net/openid/appauthdemo/BrowserSelectionAdapter.java
+A	app/res/drawable/appauth_96dp.xml
+D	app/res/drawable/openid_96dp.xml
+M	app/res/layout/activity_main.xml
+M	app/res/layout/activity_token.xml
+M	app/res/mipmap-hdpi/ic_launcher.png
+M	app/res/mipmap-mdpi/ic_launcher.png
+M	app/res/mipmap-xhdpi/ic_launcher.png
+M	app/res/mipmap-xxhdpi/ic_launcher.png
+M	app/res/mipmap-xxxhdpi/ic_launcher.png
+M	app/res/values/colors.xml
+A	appauth_lockup.svg
+
+505f050;Merge pull request #144 from mattinger/master
+ea04fef;Use locally generated keystore
+M	app/build.gradle
+M	build.gradle
+M	config/keystore.gradle
+
+e36e330;Tool version updates, corrected properties for JavaDoc and keystore (#147)
+M	build.gradle
+M	config/javadoc.gradle
+M	config/keystore.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	gradlew.bat
+
+e8c6a32;Check Response Code before using conn.getInputStream
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+2a10fb5;Spelling mistake (#126)
+M	app/README.md
+
+c8f0073;Provide response URI on completion (#133)
+M	README.md
+M	library/java/net/openid/appauth/AuthorizationManagementActivity.java
+M	library/javatests/net/openid/appauth/AuthorizationManagementActivityTest.java
+
+5ffad67;Added scope parsing to TokenResponse (#131)
+M	library/java/net/openid/appauth/TokenResponse.java
+M	library/javatests/net/openid/appauth/TokenResponseTest.java
+
+393ce14;Version update in readme for new release
+M	README.md
+
+0619e0b;Extra flag required to retrieve all browsers on M+
+M	library/java/net/openid/appauth/browser/BrowserSelector.java
+
+fbcba7b;Readme update for 0.4.0 release
+M	README.md
+
+2e68034;Fixes and manual test capability for browser selection
+A	app/java/net/openid/appauthdemo/BrowserSelectionAdapter.java
+M	app/java/net/openid/appauthdemo/MainActivity.java
+M	app/res/layout/activity_main.xml
+A	app/res/layout/browser_selector_layout.xml
+M	app/res/values/strings.xml
+M	library/AndroidManifest.xml
+M	library/java/net/openid/appauth/AuthorizationManagementActivity.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/browser/BrowserDescriptor.java
+M	library/java/net/openid/appauth/browser/BrowserSelector.java
+A	library/java/net/openid/appauth/browser/ExactBrowserMatcher.java
+A	library/javatests/net/openid/appauth/browser/BrowserDescriptorTest.java
+
+f2634bd;Introduce ability to control creation of HttpUrlConnection instances
+M	library/java/net/openid/appauth/AppAuthConfiguration.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/AuthorizationServiceConfiguration.java
+A	library/java/net/openid/appauth/connectivity/ConnectionBuilder.java
+A	library/java/net/openid/appauth/connectivity/DefaultConnectionBuilder.java
+A	library/java/net/openid/appauth/connectivity/package-info.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceConfigurationTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+b536755;Implementation of browser filtering for authorization requests
+A	library/java/net/openid/appauth/AppAuthConfiguration.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+R083	library/java/net/openid/appauth/BrowserHandler.java	library/java/net/openid/appauth/CustomTabManager.java
+M	library/java/net/openid/appauth/Preconditions.java
+A	library/java/net/openid/appauth/browser/AnyBrowserMatcher.java
+A	library/java/net/openid/appauth/browser/BrowserBlacklist.java
+A	library/java/net/openid/appauth/browser/BrowserDescriptor.java
+A	library/java/net/openid/appauth/browser/BrowserMatcher.java
+R064	library/java/net/openid/appauth/BrowserPackageHelper.java	library/java/net/openid/appauth/browser/BrowserSelector.java
+A	library/java/net/openid/appauth/browser/BrowserWhitelist.java
+A	library/java/net/openid/appauth/browser/Browsers.java
+A	library/java/net/openid/appauth/browser/DelimitedVersion.java
+A	library/java/net/openid/appauth/browser/VersionRange.java
+A	library/java/net/openid/appauth/browser/VersionedBrowserMatcher.java
+A	library/java/net/openid/appauth/browser/package-info.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+D	library/javatests/net/openid/appauth/BrowserPackageHelperTest.java
+A	library/javatests/net/openid/appauth/browser/AnyBrowserMatcherTest.java
+A	library/javatests/net/openid/appauth/browser/BrowserBlacklistTest.java
+A	library/javatests/net/openid/appauth/browser/BrowserSelectorTest.java
+A	library/javatests/net/openid/appauth/browser/BrowserWhitelistTest.java
+A	library/javatests/net/openid/appauth/browser/DelimitedVersionTest.java
+A	library/javatests/net/openid/appauth/browser/VersionRangeTest.java
+A	library/javatests/net/openid/appauth/browser/VersionedBrowserMatcherTest.java
+
+f61867c;Remove duplicate scope constants (moved to AuthorizationRequest)
+M	library/java/net/openid/appauth/AuthorizationService.java
+
+c3510aa;Ensure state param in response matches request
+M	library/java/net/openid/appauth/AuthorizationException.java
+M	library/java/net/openid/appauth/AuthorizationManagementActivity.java
+M	library/javatests/net/openid/appauth/AuthorizationManagementActivityTest.java
+
+0bd51e3;Merge pull request #109 from iainmcgin/backstack2
+c3982f5;Merge pull request #108 from iainmcgin/loginhint
+c9d9ea2;Use an intermediary activity to manage the authorization flow
+M	README.md
+M	app/AndroidManifest.xml
+M	app/README.md
+M	app/build.gradle
+M	app/res/values/idp_configs.xml
+M	library/AndroidManifest.xml
+M	library/build.gradle
+M	library/java/net/openid/appauth/AuthorizationException.java
+A	library/java/net/openid/appauth/AuthorizationManagementActivity.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+D	library/java/net/openid/appauth/PendingIntentStore.java
+M	library/java/net/openid/appauth/RedirectUriReceiverActivity.java
+A	library/javatests/net/openid/appauth/AuthorizationManagementActivityTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+D	library/javatests/net/openid/appauth/PendingIntentStoreTest.java
+M	library/javatests/net/openid/appauth/RedirectUriReceiverActivityTest.java
+
+9e9d70a;Support for login_hint parameter
+M	app/java/net/openid/appauthdemo/MainActivity.java
+M	app/res/layout/activity_main.xml
+M	app/res/values/strings.xml
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/TestValues.java
+
+59fdc91;Fix robolectric tests
+M	config/testdeps.gradle
+M	library/javatests/net/openid/appauth/AsciiStringListUtilTest.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/AuthorizationResponseTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceConfigurationTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceDiscoveryTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+M	library/javatests/net/openid/appauth/BrowserPackageHelperTest.java
+M	library/javatests/net/openid/appauth/ClientSecretBasicTest.java
+M	library/javatests/net/openid/appauth/ClientSecretPostTest.java
+M	library/javatests/net/openid/appauth/JsonUtilTest.java
+M	library/javatests/net/openid/appauth/LoggerTest.java
+M	library/javatests/net/openid/appauth/PendingIntentStoreTest.java
+M	library/javatests/net/openid/appauth/PreconditionsTest.java
+M	library/javatests/net/openid/appauth/RedirectUriReceiverActivityTest.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+M	library/javatests/net/openid/appauth/TokenResponseTest.java
+M	library/javatests/net/openid/appauth/UtilsTest.java
+
+c9bf491;Version bumps for Gradle and project dependencies
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	gradlew.bat
+
+ac8cfce;Point README.md to new release
+M	README.md
+M	build.gradle
+
+14ef58e;Merge pull request #97 from iainmcgin/fixbuild
+8e916da;Disable old library version checks; we periodically update these manually.
+D	app/lint.xml
+M	config/android-common.gradle
+
+8accf0b;Merge pull request #93 from rebeckag/refresh_tokens-fix
+6b59135;Merge pull request #95 from iainmcgin/depupdate
+9ea9a47;Dependency updates, gradle file cleanup and vector drawables
+M	app/AndroidManifest.xml
+M	app/build.gradle
+A	app/java/net/openid/appauthdemo/Application.java
+R100	app/src/net/openid/appauthdemo/IdentityProvider.java	app/java/net/openid/appauthdemo/IdentityProvider.java
+R100	app/src/net/openid/appauthdemo/MainActivity.java	app/java/net/openid/appauthdemo/MainActivity.java
+R090	app/src/net/openid/appauthdemo/TokenActivity.java	app/java/net/openid/appauthdemo/TokenActivity.java
+R100	app/src/net/openid/appauthdemo/package-info.java	app/java/net/openid/appauthdemo/package-info.java
+D	app/res/drawable-hdpi/openid_96dp.png
+D	app/res/drawable-hdpi/unknown_user_48dp.png
+D	app/res/drawable-mdpi/openid_96dp.png
+D	app/res/drawable-mdpi/unknown_user_48dp.png
+D	app/res/drawable-xhdpi/openid_96dp.png
+D	app/res/drawable-xhdpi/unknown_user_48dp.png
+D	app/res/drawable-xxhdpi/openid_96dp.png
+D	app/res/drawable-xxhdpi/unknown_user_48dp.png
+D	app/res/drawable-xxxhdpi/openid_96dp.png
+D	app/res/drawable-xxxhdpi/unknown_user_48dp.png
+A	app/res/drawable/openid_96dp.xml
+A	app/res/drawable/unknown_user_48dp.xml
+M	app/res/layout/activity_main.xml
+M	app/res/layout/activity_token.xml
+M	app/res/values/dimens.xml
+M	app/res/values/strings.xml
+M	build.gradle
+A	config/android-common.gradle
+A	config/coverage.gradle
+A	config/javadoc.gradle
+A	config/keystore.gradle
+A	config/localprops.gradle
+A	config/style.gradle
+A	config/testdeps.gradle
+A	gradle.properties
+M	library/build.gradle
+M	library/javatests/net/openid/appauth/AsciiStringListUtilTest.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/AuthorizationResponseTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceConfigurationTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceDiscoveryTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+M	library/javatests/net/openid/appauth/BrowserPackageHelperTest.java
+M	library/javatests/net/openid/appauth/ClientSecretBasicTest.java
+M	library/javatests/net/openid/appauth/ClientSecretPostTest.java
+M	library/javatests/net/openid/appauth/JsonUtilTest.java
+M	library/javatests/net/openid/appauth/LoggerTest.java
+M	library/javatests/net/openid/appauth/NoClientAuthenticationTest.java
+M	library/javatests/net/openid/appauth/PendingIntentStoreTest.java
+M	library/javatests/net/openid/appauth/PreconditionsTest.java
+M	library/javatests/net/openid/appauth/RedirectUriReceiverActivityTest.java
+M	library/javatests/net/openid/appauth/RegistrationRequestTest.java
+M	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+M	library/javatests/net/openid/appauth/TokenResponseTest.java
+M	library/javatests/net/openid/appauth/UriUtilTest.java
+M	library/javatests/net/openid/appauth/UtilsTest.java
+
+aef00ba;Merge pull request #92 from rebeckag/issue-88
+627d0bb;Disregard refresh token when deciding if access token is still fresh.
+M	library/java/net/openid/appauth/AuthState.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+
+11a2332;Handle missing registration endpoint in AuthorizationServiceConfiguration.fromJson().
+M	library/java/net/openid/appauth/AuthorizationServiceConfiguration.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceConfigurationTest.java
+
+4598c6a;Merge pull request #70 from DevFactory/release/multiple-quality-improvements-fix-1
+9cae353;Multiple quality improvements
+M	library/java/net/openid/appauth/JsonUtil.java
+
+010dedf;Merge pull request #84 from rebeckag/contrib-docs
+d82f2ed;Add note about gradle check target in contribution guidelines.
+M	CONTRIBUTING.md
+
+c167aaf;Merge pull request #81 from WilliamDenniss/master
+63c6159;Updated CONTRIBUTING now that electronic signing is available.
+M	CONTRIBUTING.md
+
+6073709;Merge pull request #39 from iainmcgin/roboversion
+103dcb6;Merge pull request #78 from rebeckag/client-auth_doc
+c83bd56;Add example of client auth in token request.
+M	README.md
+
+48aaa35;Merge pull request #73 from iainmcgin/configurl
+c310748;Merge pull request #77 from openid/sso-video
+34b4cab;Add link to enterprise SSO video
+M	README.md
+
+ac69efd;Merge pull request #74 from WilliamDenniss/master
+7cfdd0a;Adding Rahul to the CONTRIBUTORS list.
+M	CONTRIBUTORS
+
+4030b3f;Merge pull request #65 from rebeckag/README-fix
+32ca1b6;Merge pull request #61 from rebeckag/regresp-in-authstate
+8478576;Store RegistrationResponse in AuthState.
+M	app/src/net/openid/appauthdemo/IdentityProvider.java
+M	app/src/net/openid/appauthdemo/MainActivity.java
+M	app/src/net/openid/appauthdemo/TokenActivity.java
+M	library/java/net/openid/appauth/AuthState.java
+M	library/java/net/openid/appauth/ClientAuthentication.java
+M	library/java/net/openid/appauth/RegistrationResponse.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+M	library/javatests/net/openid/appauth/TestValues.java
+
+00dbf5e;Update Robolectric version
+M	build.gradle
+M	library/build.gradle
+M	library/javatests/net/openid/appauth/AsciiStringListUtilTest.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/AuthorizationResponseTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceConfigurationTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceDiscoveryTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+M	library/javatests/net/openid/appauth/BrowserPackageHelperTest.java
+M	library/javatests/net/openid/appauth/JsonUtilTest.java
+M	library/javatests/net/openid/appauth/LoggerTest.java
+M	library/javatests/net/openid/appauth/PendingIntentStoreTest.java
+M	library/javatests/net/openid/appauth/PreconditionsTest.java
+M	library/javatests/net/openid/appauth/RedirectUriReceiverActivityTest.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+M	library/javatests/net/openid/appauth/TokenResponseTest.java
+M	library/javatests/net/openid/appauth/UtilsTest.java
+
+273f6b7;Fix #72 - avoid path encoding in config URIs
+M	library/java/net/openid/appauth/AuthorizationServiceConfiguration.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceConfigurationTest.java
+
+a7ed0de;Merge pull request #66 from rebeckag/dynreg-ex
+ef116d9;Update Configuration example in README.
+M	README.md
+
+d16a801;Add example of dynamic client registration in README.
+M	README.md
+
+714b0ba;Merge pull request #67 from rebeckag/authz-ex_fix
+f00c39e;Merge pull request #69 from rebeckag/authz-ex_pending-intent
+81764be;Merge pull request #64 from iainmcgin/rmode
+dbfd166;Move response mode values to inner class
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+
+c93449d;Pass PendingIntent to performAuthorizationRequest.
+M	README.md
+
+4111c7e;Update Authorization example in README.
+M	README.md
+
+f827e9d;Merge pull request #63 from iainmcgin/values
+984d3ed;Move scope values to inner class
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/TestValues.java
+
+fcb3b07;Merge pull request #60 from iainmcgin/gradle
+bf1212a;Merge pull request #59 from iainmcgin/prompt
+97e584d;Upgrade to gradle 2.13
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	gradlew.bat
+
+b326907;Split AuthorizationRequest tests into smaller units
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/Preconditions.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/PreconditionsTest.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+
+8ef441d;Merge pull request #55 from rebeckag/authstate-test-fix
+f4e3fa1;Merge pull request #57 from rebeckag/tokenrefresh-without-clientauth
+8deaf57;Merge pull request #56 from rebeckag/authstate-errormsg_fix
+698a6c7;Merge pull request #54 from iainmcgin/buildclean
+53a4146;Merge pull request #53 from iainmcgin/serialize
+e22c766;Handle token refresh request without client auth.
+M	app/src/net/openid/appauthdemo/TokenActivity.java
+
+ff8e7cb;Improve error message in AuthState.update.
+M	library/java/net/openid/appauth/AuthState.java
+
+44c4d55;Compare restored state against original state.
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+
+160f7b5;Remove build version hack required for older android gradle plugin
+M	build.gradle
+
+a568ad1;Normalize names and documentation of JSON serialization methods
+M	app/src/net/openid/appauthdemo/TokenActivity.java
+M	library/java/net/openid/appauth/AuthState.java
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/java/net/openid/appauth/RegistrationRequest.java
+M	library/java/net/openid/appauth/RegistrationResponse.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/java/net/openid/appauth/TokenResponse.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/AuthorizationResponseTest.java
+M	library/javatests/net/openid/appauth/RegistrationRequestTest.java
+M	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+
+bca7bc8;Merge pull request #52 from iainmcgin/version
+8f6535d;Upgrade Android gradle plugin version
+M	build.gradle
+M	library/java/net/openid/appauth/RedirectUriReceiverActivity.java
+
+8b61718;Merge pull request #41 from rebeckag/client-auth
+3359802;Add support for client authentication at the Token Endpoint.
+M	app/src/net/openid/appauthdemo/MainActivity.java
+M	app/src/net/openid/appauthdemo/TokenActivity.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+A	library/java/net/openid/appauth/ClientAuthentication.java
+A	library/java/net/openid/appauth/ClientSecretBasic.java
+A	library/java/net/openid/appauth/ClientSecretPost.java
+M	library/java/net/openid/appauth/GrantTypeValues.java
+A	library/java/net/openid/appauth/NoClientAuthentication.java
+M	library/java/net/openid/appauth/RegistrationRequest.java
+M	library/java/net/openid/appauth/RegistrationResponse.java
+M	library/java/net/openid/appauth/ResponseTypeValues.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/java/net/openid/appauth/UriUtil.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+A	library/javatests/net/openid/appauth/ClientSecretBasicTest.java
+A	library/javatests/net/openid/appauth/ClientSecretPostTest.java
+A	library/javatests/net/openid/appauth/NoClientAuthenticationTest.java
+M	library/javatests/net/openid/appauth/RegistrationRequestTest.java
+M	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+M	library/javatests/net/openid/appauth/TokenResponseTest.java
+A	library/javatests/net/openid/appauth/UriUtilTest.java
+
+b202ebb;Merge pull request #48 from iainmcgin/copyright2
+b9bc245;Permit 2016 as a copyright year
+M	config/checkstyle/checkstyle.xml
+M	config/checkstyle/java.header
+A	config/checkstyle/java.header.noregex
+
+bc0c2ee;Merge pull request #47 from iainmcgin/copyright
+c876619;Amend copyright headers to reflect plurality of authors
+M	app/AndroidManifest.xml
+M	app/src/net/openid/appauthdemo/IdentityProvider.java
+M	app/src/net/openid/appauthdemo/MainActivity.java
+M	app/src/net/openid/appauthdemo/TokenActivity.java
+M	app/src/net/openid/appauthdemo/package-info.java
+M	config/checkstyle/java.header
+M	library/AndroidManifest.xml
+M	library/java/net/openid/appauth/AdditionalParamsProcessor.java
+M	library/java/net/openid/appauth/AsciiStringListUtil.java
+M	library/java/net/openid/appauth/AuthState.java
+M	library/java/net/openid/appauth/AuthorizationException.java
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/AuthorizationServiceConfiguration.java
+M	library/java/net/openid/appauth/AuthorizationServiceDiscovery.java
+M	library/java/net/openid/appauth/BrowserHandler.java
+M	library/java/net/openid/appauth/BrowserPackageHelper.java
+M	library/java/net/openid/appauth/Clock.java
+M	library/java/net/openid/appauth/CodeVerifierUtil.java
+M	library/java/net/openid/appauth/GrantTypeValues.java
+M	library/java/net/openid/appauth/JsonUtil.java
+M	library/java/net/openid/appauth/Logger.java
+M	library/java/net/openid/appauth/PendingIntentStore.java
+M	library/java/net/openid/appauth/Preconditions.java
+M	library/java/net/openid/appauth/RedirectUriReceiverActivity.java
+M	library/java/net/openid/appauth/RegistrationRequest.java
+M	library/java/net/openid/appauth/RegistrationResponse.java
+M	library/java/net/openid/appauth/ResponseTypeValues.java
+M	library/java/net/openid/appauth/SystemClock.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/java/net/openid/appauth/TokenResponse.java
+M	library/java/net/openid/appauth/UriUtil.java
+M	library/java/net/openid/appauth/Utils.java
+M	library/java/net/openid/appauth/package-info.java
+M	library/javatests/net/openid/appauth/AsciiStringListUtilTest.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/AuthorizationResponseTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceConfigurationTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceDiscoveryTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+M	library/javatests/net/openid/appauth/BrowserPackageHelperTest.java
+M	library/javatests/net/openid/appauth/JsonUtilTest.java
+M	library/javatests/net/openid/appauth/LoggerTest.java
+M	library/javatests/net/openid/appauth/PendingIntentStoreTest.java
+M	library/javatests/net/openid/appauth/PreconditionsTest.java
+M	library/javatests/net/openid/appauth/RedirectUriReceiverActivityTest.java
+M	library/javatests/net/openid/appauth/RegistrationRequestTest.java
+M	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+M	library/javatests/net/openid/appauth/TestClock.java
+M	library/javatests/net/openid/appauth/TestValues.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+M	library/javatests/net/openid/appauth/TokenResponseTest.java
+M	library/javatests/net/openid/appauth/UtilsTest.java
+M	library/javatests/net/openid/appauth/package-info.java
+M	library/javatests/org/robolectric/shadows/ShadowIntentFilterFixed.java
+M	library/javatests/org/robolectric/shadows/package-info.java
+
+d0f716e;Merge pull request #40 from rebeckag/oidc-dynreg
+46d1aeb;Add javadoc placeholders.
+M	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+
+187b2e0;Add missing copyright header.
+M	library/java/net/openid/appauth/GrantTypeValues.java
+M	library/java/net/openid/appauth/RegistrationRequest.java
+M	library/java/net/openid/appauth/RegistrationResponse.java
+M	library/java/net/openid/appauth/ResponseTypeValues.java
+M	library/javatests/net/openid/appauth/RegistrationRequestTest.java
+M	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+
+f2bd6db;Merge pull request #42 from rebeckag/authstate_refresh
+ccf6fb9;Cleanup: remove unnecessary conditional and unused imports.
+M	library/java/net/openid/appauth/RegistrationResponse.java
+
+841f44c;Remove unnecessary property of URL connection for registration request.
+M	library/java/net/openid/appauth/AuthorizationService.java
+
+61fadc9;Add missing Javadoc.
+M	library/java/net/openid/appauth/GrantTypeValues.java
+M	library/java/net/openid/appauth/ResponseTypeValues.java
+
+27d0274;Remove fully qualified references.
+M	library/java/net/openid/appauth/AuthorizationService.java
+
+ac75630;Remove client_secret from IdentityProvider constructor.
+M	app/src/net/openid/appauthdemo/IdentityProvider.java
+
+4dbe4ee;Consistent error reporting in performActionWithFreshTokens.
+M	library/java/net/openid/appauth/AuthState.java
+
+7a5d103;Merge pull request #43 from rebeckag/authzresp_typo
+0b7136b;Merge pull request #45 from rebeckag/rebecka-contrib
+1b38f5f;Update AUTHORS and CONTRIBUTORS
+M	AUTHORS
+M	CONTRIBUTORS
+
+5a2bc32;Fix review comments: simplify code.
+M	library/java/net/openid/appauth/RegistrationResponse.java
+
+b49588c;Fix review comments: typo.
+M	library/java/net/openid/appauth/RegistrationRequest.java
+
+8478257;Fix review comments: Remove unused method and fix variable name.
+M	library/java/net/openid/appauth/JsonUtil.java
+
+3e45abb;Fix review comments: simplify import and remove unnecessary code.
+M	library/java/net/openid/appauth/AuthorizationService.java
+
+afa6f41;Fix conflict between registration errors and resource server errors.
+M	library/java/net/openid/appauth/AuthorizationException.java
+
+339d2f9;Style fixes: imports, javadoc, etc.
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/Preconditions.java
+M	library/java/net/openid/appauth/RegistrationRequest.java
+M	library/java/net/openid/appauth/RegistrationResponse.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+M	library/javatests/net/openid/appauth/PreconditionsTest.java
+M	library/javatests/net/openid/appauth/RegistrationRequestTest.java
+M	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+M	library/javatests/net/openid/appauth/TestValues.java
+
+394e1b2;Merge pull request #44 from WilliamDenniss/master
+1e48288;Added contributing instructions.
+A	CONTRIBUTING.md
+
+f30f315;Fix typo: 'token'->'authorization'.
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+
+ca33877;Check first if refresh_token is necessary before throwing exception.
+M	library/java/net/openid/appauth/AuthState.java
+
+3862e0d;Add support for dynamic client registration to demo app.
+M	app/src/net/openid/appauthdemo/IdentityProvider.java
+M	app/src/net/openid/appauthdemo/MainActivity.java
+
+758b082;Add support for serializing RegistrationRequest and RegistrationResponse.
+M	library/java/net/openid/appauth/RegistrationRequest.java
+M	library/java/net/openid/appauth/RegistrationResponse.java
+M	library/javatests/net/openid/appauth/RegistrationRequestTest.java
+M	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+M	library/javatests/net/openid/appauth/TestValues.java
+
+cc5e704;Add JSON util convinience methods.
+M	library/java/net/openid/appauth/JsonUtil.java
+
+09c87c3;Add Precondition for Collections.
+M	library/java/net/openid/appauth/Preconditions.java
+M	library/javatests/net/openid/appauth/PreconditionsTest.java
+
+28fe47c;Be less clever about redirect URI's, only accept List<String>.
+M	library/java/net/openid/appauth/RegistrationRequest.java
+
+19fb357;Add AsyncTask for dynamic client registration request.
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+513784e;Add error handling for dynamic client registration.
+M	library/java/net/openid/appauth/AuthorizationException.java
+
+a8da88c;Add Registration Response for OpenID Connect dynamic client registration.
+A	library/java/net/openid/appauth/RegistrationResponse.java
+A	library/javatests/net/openid/appauth/RegistrationResponseTest.java
+M	library/javatests/net/openid/appauth/TestValues.java
+
+11210ac;Add RegistrationRequest for OpenID Connect dynamic client registration.
+M	app/src/net/openid/appauthdemo/IdentityProvider.java
+M	app/src/net/openid/appauthdemo/MainActivity.java
+M	library/java/net/openid/appauth/AuthState.java
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/java/net/openid/appauth/AuthorizationServiceConfiguration.java
+A	library/java/net/openid/appauth/GrantTypeValues.java
+M	library/java/net/openid/appauth/JsonUtil.java
+A	library/java/net/openid/appauth/RegistrationRequest.java
+A	library/java/net/openid/appauth/ResponseTypeValues.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceConfigurationTest.java
+A	library/javatests/net/openid/appauth/RegistrationRequestTest.java
+M	library/javatests/net/openid/appauth/TestValues.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+
+59dc59c;Version 0.2.0 release
+M	README.md
+
+047ccce;Merge pull request #38 from iainmcgin/autherror
+c1a8f77;Merge pull request #37 from iainmcgin/tokenuri
+7abf54e;Store OAuth related authorization exceptions on updates
+M	library/java/net/openid/appauth/AuthState.java
+M	library/javatests/net/openid/appauth/AuthStateTest.java
+
+6040057;Be less opinionated about the token request URI
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+
+cd10002;Merge pull request #33 from iainmcgin/display
+6d857cd;Merge pull request #35 from iainmcgin/authstate
+976db20;Add support for OpenID Connect 1.0 display param
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+
+9cd5be0;Test coverage and fixes for AuthState
+M	library/java/net/openid/appauth/AuthState.java
+A	library/javatests/net/openid/appauth/AuthStateTest.java
+M	library/javatests/net/openid/appauth/TestValues.java
+
+8577e2d;Merge pull request #31 from iainmcgin/prompt
+1083e90;Add CodeCov badge for line coverage
+M	README.md
+
+4ced780;Add support for OpenID Connect 1.0 prompt param
+R052	library/java/net/openid/appauth/ScopeUtil.java	library/java/net/openid/appauth/AsciiStringListUtil.java
+M	library/java/net/openid/appauth/AuthState.java
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/java/net/openid/appauth/TokenResponse.java
+R086	library/javatests/net/openid/appauth/ScopeUtilTest.java	library/javatests/net/openid/appauth/AsciiStringListUtilTest.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+
+042a17c;Merge pull request #30 from WilliamDenniss/master
+19341c0;Added documentation for adding intents to the AndroidManifest.xml.
+M	README.md
+M	app/README.md
+
+0be6bf2;Clarification of Google Sign-in configuration
+M	app/README.md
+
+0b49637;Minor corrections to README.md
+M	README.md
+
+89a9ea9;Merge pull request #11 from iainmcgin/checkparams
+e8827c2;Check additional parameters
+A	library/java/net/openid/appauth/AdditionalParamsProcessor.java
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/java/net/openid/appauth/JsonUtil.java
+M	library/java/net/openid/appauth/Preconditions.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/java/net/openid/appauth/TokenResponse.java
+M	library/java/net/openid/appauth/UriUtil.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+M	library/javatests/net/openid/appauth/AuthorizationResponseTest.java
+M	library/javatests/net/openid/appauth/PreconditionsTest.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+A	library/javatests/net/openid/appauth/TokenResponseTest.java
+
+34cea5f;Merge pull request #9 from iainmcgin/preconditions
+64148d4;Merge pull request #10 from iainmcgin/servicecleanup
+8969555;Remove old constants from AuthorizationService, clean up tests
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+
+8885875;Consistently use static imports for Precondition checks
+M	library/java/net/openid/appauth/AuthState.java
+M	library/java/net/openid/appauth/AuthorizationException.java
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/java/net/openid/appauth/TokenRequest.java
+
+496f1ef;Merge pull request #8 from iainmcgin/codacy
+e703e83;More codacy issue fixes
+M	library/java/net/openid/appauth/AuthorizationException.java
+M	library/java/net/openid/appauth/AuthorizationResponse.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/TokenResponse.java
+
+07a1614;Merge pull request #7 from iainmcgin/errorprone
+e8a683a;Merge pull request #6 from iainmcgin/instructions
+177d796;Codacy errorprone report warning fixes
+M	library/java/net/openid/appauth/AuthorizationException.java
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/AuthorizationServiceDiscovery.java
+M	library/java/net/openid/appauth/BrowserPackageHelper.java
+M	library/java/net/openid/appauth/JsonUtil.java
+M	library/java/net/openid/appauth/Logger.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/java/net/openid/appauth/TokenResponse.java
+
+4899b7d;Add download instructions for the AAR
+M	README.md
+
+593a847;0.1.1 release
+M	app/build.gradle
+M	build.gradle
+M	library/build.gradle
+
+b0511b5;Remove unused imports
+M	library/java/net/openid/appauth/BrowserPackageHelper.java
+M	library/javatests/net/openid/appauth/BrowserPackageHelperTest.java
+
+8f7a72d;Ignore all Android studio project files
+M	.gitignore
+
+1fb9e5e;Merge pull request #4 from iainmcgin/browsermatchfix
+a96eed2;Merge pull request #5 from iainmcgin/nogit
+fe5cf8b;Don't try and directly invoke git in builds
+M	build.gradle
+
+b3a32a8;Fix browser package scanning
+M	library/java/net/openid/appauth/BrowserPackageHelper.java
+M	library/javatests/net/openid/appauth/BrowserPackageHelperTest.java
+
+f02da65;Merge pull request #2 from iainmcgin/tokenuri
+a81e03e;Move token request URI generation into TokenRequest
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/TokenRequest.java
+M	library/java/net/openid/appauth/UriUtil.java
+M	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+M	library/javatests/net/openid/appauth/TokenRequestTest.java
+
+584aed9;Merge pull request #1 from iainmcgin/additionalparams
+6be4018;Move request URI generation into AuthorizationRequest
+M	library/build.gradle
+M	library/java/net/openid/appauth/AuthorizationRequest.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/UriUtil.java
+M	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+
+5119106;Codacy badge for code quality reports
+M	README.md
+
+c70a73d;Bintray configuration for pushing builds
+M	build.gradle
+M	library/build.gradle
+
+00e1a67;Add Bitrise build status indicator
+M	README.md
+
+c75b8f1;Initial release of AppAuth for Android
+A	.gitignore
+A	AUTHORS
+A	CONTRIBUTORS
+A	LICENSE
+A	README.md
+A	app/AndroidManifest.xml
+A	app/README.md
+A	app/build.gradle
+A	app/lint.xml
+A	app/res/drawable-hdpi/btn_google_signin_dark_focus.9.png
+A	app/res/drawable-hdpi/btn_google_signin_dark_normal.9.png
+A	app/res/drawable-hdpi/btn_google_signin_dark_pressed.9.png
+A	app/res/drawable-hdpi/openid_96dp.png
+A	app/res/drawable-hdpi/unknown_user_48dp.png
+A	app/res/drawable-mdpi/btn_google_signin_dark_focus.9.png
+A	app/res/drawable-mdpi/btn_google_signin_dark_normal.9.png
+A	app/res/drawable-mdpi/btn_google_signin_dark_pressed.9.png
+A	app/res/drawable-mdpi/openid_96dp.png
+A	app/res/drawable-mdpi/unknown_user_48dp.png
+A	app/res/drawable-v21/btn_google.xml
+A	app/res/drawable-xhdpi/btn_google_signin_dark_focus.9.png
+A	app/res/drawable-xhdpi/btn_google_signin_dark_normal.9.png
+A	app/res/drawable-xhdpi/btn_google_signin_dark_pressed.9.png
+A	app/res/drawable-xhdpi/openid_96dp.png
+A	app/res/drawable-xhdpi/unknown_user_48dp.png
+A	app/res/drawable-xxhdpi/btn_google_signin_dark_focus.9.png
+A	app/res/drawable-xxhdpi/btn_google_signin_dark_normal.9.png
+A	app/res/drawable-xxhdpi/btn_google_signin_dark_pressed.9.png
+A	app/res/drawable-xxhdpi/openid_96dp.png
+A	app/res/drawable-xxhdpi/unknown_user_48dp.png
+A	app/res/drawable-xxxhdpi/btn_google_signin_dark_focus.9.png
+A	app/res/drawable-xxxhdpi/btn_google_signin_dark_normal.9.png
+A	app/res/drawable-xxxhdpi/btn_google_signin_dark_pressed.9.png
+A	app/res/drawable-xxxhdpi/openid_96dp.png
+A	app/res/drawable-xxxhdpi/unknown_user_48dp.png
+A	app/res/drawable/btn_google.xml
+A	app/res/layout/activity_main.xml
+A	app/res/layout/activity_token.xml
+A	app/res/mipmap-hdpi/ic_launcher.png
+A	app/res/mipmap-mdpi/ic_launcher.png
+A	app/res/mipmap-xhdpi/ic_launcher.png
+A	app/res/mipmap-xxhdpi/ic_launcher.png
+A	app/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/res/values-v21/styles.xml
+A	app/res/values/colors.xml
+A	app/res/values/dimens.xml
+A	app/res/values/idp_configs.xml
+A	app/res/values/idp_configs_optional.xml
+A	app/res/values/strings.xml
+A	app/res/values/styles.xml
+A	app/src/net/openid/appauthdemo/IdentityProvider.java
+A	app/src/net/openid/appauthdemo/MainActivity.java
+A	app/src/net/openid/appauthdemo/TokenActivity.java
+A	app/src/net/openid/appauthdemo/package-info.java
+A	build.gradle
+A	config/checkstyle/checkstyle.xml
+A	config/checkstyle/java.header
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	library/AndroidManifest.xml
+A	library/build.gradle
+A	library/java/net/openid/appauth/AuthState.java
+A	library/java/net/openid/appauth/AuthorizationException.java
+A	library/java/net/openid/appauth/AuthorizationRequest.java
+A	library/java/net/openid/appauth/AuthorizationResponse.java
+A	library/java/net/openid/appauth/AuthorizationService.java
+A	library/java/net/openid/appauth/AuthorizationServiceConfiguration.java
+A	library/java/net/openid/appauth/AuthorizationServiceDiscovery.java
+A	library/java/net/openid/appauth/BrowserHandler.java
+A	library/java/net/openid/appauth/BrowserPackageHelper.java
+A	library/java/net/openid/appauth/Clock.java
+A	library/java/net/openid/appauth/CodeVerifierUtil.java
+A	library/java/net/openid/appauth/JsonUtil.java
+A	library/java/net/openid/appauth/Logger.java
+A	library/java/net/openid/appauth/PendingIntentStore.java
+A	library/java/net/openid/appauth/Preconditions.java
+A	library/java/net/openid/appauth/RedirectUriReceiverActivity.java
+A	library/java/net/openid/appauth/ScopeUtil.java
+A	library/java/net/openid/appauth/SystemClock.java
+A	library/java/net/openid/appauth/TokenRequest.java
+A	library/java/net/openid/appauth/TokenResponse.java
+A	library/java/net/openid/appauth/UriUtil.java
+A	library/java/net/openid/appauth/Utils.java
+A	library/java/net/openid/appauth/package-info.java
+A	library/javatests/net/openid/appauth/AuthorizationRequestTest.java
+A	library/javatests/net/openid/appauth/AuthorizationResponseTest.java
+A	library/javatests/net/openid/appauth/AuthorizationServiceConfigurationTest.java
+A	library/javatests/net/openid/appauth/AuthorizationServiceDiscoveryTest.java
+A	library/javatests/net/openid/appauth/AuthorizationServiceTest.java
+A	library/javatests/net/openid/appauth/BrowserPackageHelperTest.java
+A	library/javatests/net/openid/appauth/JsonUtilTest.java
+A	library/javatests/net/openid/appauth/LoggerTest.java
+A	library/javatests/net/openid/appauth/PendingIntentStoreTest.java
+A	library/javatests/net/openid/appauth/PreconditionsTest.java
+A	library/javatests/net/openid/appauth/RedirectUriReceiverActivityTest.java
+A	library/javatests/net/openid/appauth/ScopeUtilTest.java
+A	library/javatests/net/openid/appauth/TestClock.java
+A	library/javatests/net/openid/appauth/TestValues.java
+A	library/javatests/net/openid/appauth/TokenRequestTest.java
+A	library/javatests/net/openid/appauth/UtilsTest.java
+A	library/javatests/net/openid/appauth/package-info.java
+A	library/javatests/org/robolectric/shadows/ShadowIntentFilterFixed.java
+A	library/javatests/org/robolectric/shadows/package-info.java
+A	settings.gradle

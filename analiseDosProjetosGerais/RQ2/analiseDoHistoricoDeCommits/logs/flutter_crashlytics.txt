@@ -1,0 +1,369 @@
+115c55c;bump version
+M	CHANGELOG.md
+
+ff37ebb;bump version
+M	pubspec.yaml
+
+afa4aee;Merge pull request #81 from long1eu/master
+832b77b;fix wrong line numbers
+M	.gitignore
+M	example/ios/Podfile
+M	ios/Classes/FlutterCrashlyticsPlugin.m
+
+e521cd3;Merge pull request #74 from charafau/androidx
+81759f9;added androidX support
+M	android/build.gradle
+M	example/android/app/build.gradle
+M	example/android/build.gradle
+M	example/android/gradle.properties
+
+8cac793;Merge pull request #68 from eggenstein/master
+1627d85;Tried to clean up the text a bit.
+M	README.md
+
+e14aa46;bump to 0.3.0
+M	CHANGELOG.md
+M	pubspec.yaml
+
+dd963da;Merge pull request #64 from GreenAppers/master
+49b8265;Merge master
+ec26c79;Merge pull request #67 from charafau/change_kotlin_to_java
+2a1bf22;changed ifs to switch statement fixed regression - added putting stack trace to flutter exception added else statements to if make FlutterException to extends RuntimeException
+M	android/src/main/java/com/kiwi/fluttercrashlytics/CrashActivity.java
+M	android/src/main/java/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.java
+M	android/src/main/java/com/kiwi/fluttercrashlytics/FlutterException.java
+M	android/src/main/java/com/kiwi/fluttercrashlytics/Utils.java
+
+fd09423;changed map to argument method
+M	android/src/main/java/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.java
+
+89ddd54;- Moved kotlin code to java for avoiding strange errors - Added settings user in example
+M	android/build.gradle
+A	android/src/main/java/com/kiwi/fluttercrashlytics/CrashActivity.java
+A	android/src/main/java/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.java
+A	android/src/main/java/com/kiwi/fluttercrashlytics/FlutterException.java
+A	android/src/main/java/com/kiwi/fluttercrashlytics/Utils.java
+D	android/src/main/kotlin/com/kiwi/fluttercrashlytics/CrashActivity.kt
+D	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+D	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterException.kt
+D	android/src/main/kotlin/com/kiwi/fluttercrashlytics/Utils.kt
+M	example/android/app/build.gradle
+A	example/android/app/src/main/java/com/kiwi/fluttercrashlyticsexample/MainActivity.java
+D	example/android/app/src/main/kotlin/com/kiwi/fluttercrashlyticsexample/MainActivity.kt
+M	example/android/build.gradle
+M	example/lib/main.dart
+
+56f798a;Document symbolicating native Android crashes
+M	README.md
+
+230a5a1;Add CrashlyticsNdk
+M	android/build.gradle
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+
+3827dda;Merge pull request #56 from ened/ios-warnings
+912f02e;Merge pull request #55 from ened/patch-1
+b0b1346;Reduce iOS compiler warnings (auto-synthesized properties etc..)
+M	CHANGELOG.md
+M	example/ios/Podfile.lock
+M	example/ios/Runner.xcodeproj/project.pbxproj
+M	ios/Classes/FlutterCrashlyticsPlugin.h
+M	ios/Classes/FlutterCrashlyticsPlugin.m
+M	pubspec.yaml
+
+7e7cf52;Add pub badge to README
+M	README.md
+
+5300e5f;Merge pull request #39 from ened/dep-updates-20181221
+ca88f98;Merge https://github.com/kiwi-bop/flutter_crashlytics into dep-updates-20181221
+c749a82;Fix #47 log stacktrace as one log for iOS force crash reports
+M	README.md
+M	example/ios/Runner.xcodeproj/project.pbxproj
+M	example/lib/main.dart
+M	ios/Classes/FlutterCrashlyticsPlugin.m
+
+e16201c;Merge pull request #50 from long1eu/master
+23d0996;Merge remote-tracking branch 'origin/master'
+56e9069;set dwarf-with-dsym for debug
+M	example/ios/Runner.xcodeproj/project.pbxproj
+
+363f1c9;set dwarf-with-dsym for debug
+M	example/ios/Runner.xcodeproj/project.pbxproj
+
+22fc3ee;Merge pull request #46 from long1eu/master
+2887867;fix null handling
+M	ios/Classes/FlutterCrashlyticsPlugin.m
+
+1322223;add build script and correct typo
+M	ios/Classes/FlutterCrashlyticsPlugin.m
+
+fa5d9f6;add build script and correct typo
+M	example/ios/Runner.xcodeproj/project.pbxproj
+
+ed0535a;fix commit issue
+A	example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+A	example/ios/Runner/AppDelegate.h
+A	example/ios/Runner/AppDelegate.m
+A	example/ios/Runner/main.m
+
+003a9ae;Merge remote-tracking branch 'origin/master'
+cc8fca6;fix pod version
+M	example/ios/Podfile.lock
+M	example/ios/Runner.xcodeproj/project.pbxproj
+M	lib/flutter_crashlytics.dart
+
+5afbc69;Fix #48
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+M	example/lib/main.dart
+
+e834286;https://github.com/flutter/flutter/issues/14161#issuecomment-413443322
+M	ios/flutter_crashlytics.podspec
+
+f15d3f2;fix typo
+M	CHANGELOG.md
+
+cbb06ae;move from swift to obj-c
+M	example/ios/Podfile.lock
+
+ef498c2;move from swift to obj-c
+M	CHANGELOG.md
+M	android/build.gradle
+M	android/src/main/AndroidManifest.xml
+M	example/android/app/build.gradle
+M	example/android/app/src/main/AndroidManifest.xml
+M	example/android/app/src/main/kotlin/com/kiwi/fluttercrashlyticsexample/MainActivity.kt
+M	example/android/build.gradle
+M	example/ios/Podfile
+M	example/ios/Runner.xcodeproj/project.pbxproj
+M	example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+D	example/ios/Runner/AppDelegate.swift
+D	example/ios/Runner/Runner-Bridging-Header.h
+M	example/lib/main.dart
+M	ios/Classes/FlutterCrashlyticsPlugin.h
+M	ios/Classes/FlutterCrashlyticsPlugin.m
+D	ios/Classes/SwiftFlutterCrashlyticsPlugin.swift
+M	ios/flutter_crashlytics.podspec
+M	pubspec.yaml
+
+b9a2427;bump version to 0.1.3
+M	CHANGELOG.md
+M	pubspec.yaml
+
+3bfae06;Merge pull request #41 from kiwi-bop/hotfix/androidBG
+fd0d9ed;android: fix background usage
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+
+c558c9f;Bump gradle/kotlin/crashlytics deps
+M	CHANGELOG.md
+M	android/build.gradle
+M	example/android/build.gradle
+M	pubspec.yaml
+
+bc18f42;iOS: fix additional logs
+M	example/ios/Podfile.lock
+M	example/ios/Runner.xcodeproj/project.pbxproj
+M	example/ios/Runner/Info.plist
+M	example/lib/main.dart
+M	ios/Classes/SwiftFlutterCrashlyticsPlugin.swift
+M	pubspec.yaml
+
+8be1af9;Merge pull request #34 from ko2ic/set_info_crash
+e795e55;Fixed crash bug when calling ```setInfo``` on ios.
+M	ios/Classes/SwiftFlutterCrashlyticsPlugin.swift
+
+6db657b;update kotlin/gradle
+M	android/build.gradle
+M	example/android/build.gradle
+M	example/android/gradle/wrapper/gradle-wrapper.properties
+M	pubspec.yaml
+
+a9a305b;Merge pull request #15 from yy1300326388/master
+33ff6c5;Merge pull request #20 from kiwi-bop/feature/optOut
+ed5fa84;Implemented the initialize() call to handle opt-in/out for ios fix #13 fix #16
+M	CHANGELOG.md
+M	README.md
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+M	example/lib/main.dart
+M	ios/Classes/SwiftFlutterCrashlyticsPlugin.swift
+M	lib/flutter_crashlytics.dart
+M	pubspec.yaml
+
+0aaa7a4;Merge pull request #19 from jaggernod/feature/handle-opt-out
+0f9e28c;Implemented the initialise() call to handle opt-in/out
+M	README.md
+M	android/src/main/AndroidManifest.xml
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+M	example/lib/main.dart
+M	lib/flutter_crashlytics.dart
+
+6e7aa35;1、remove build.gradle 2、update example gradle
+M	android/build.gradle
+D	build.gradle
+M	example/android/app/build.gradle
+M	example/android/build.gradle
+M	example/android/gradle/wrapper/gradle-wrapper.properties
+
+66278a1;1、update_kotlin_version 2、update compileSdkVersion 28
+M	android/build.gradle
+M	build.gradle
+
+75bb80d;Merge pull request #12 from holyspidoo/patch-1
+373d877;Using profile() to set debug mode to true
+M	example/lib/main.dart
+
+8b9b2e9;Merge pull request #10 from holyspidoo/firebase-readme
+f29f9bd;Changed Readme to include Firebase Crashlytics instructions
+M	README.md
+
+db089ce;Merge pull request #8 from kiwi-bop/feature/manual_log
+e52bb0f;rename logCrash to logException
+M	README.md
+M	example/lib/main.dart
+M	lib/flutter_crashlytics.dart
+
+b347642;support manual log support dart Zone handler bump to 0.0.6
+M	CHANGELOG.md
+M	README.md
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+M	example/ios/Runner.xcodeproj/project.pbxproj
+M	example/lib/main.dart
+M	ios/Classes/SwiftFlutterCrashlyticsPlugin.swift
+M	lib/flutter_crashlytics.dart
+M	pubspec.yaml
+
+076b4f9;Merge pull request #7 from jaggernod/feature/log-exception
+36709ea;Added back the 'cause' for iOS
+M	lib/flutter_crashlytics.dart
+
+12560ed;Merge branch 'master' into feature/log-exception
+026b2cc;Fixed a typo
+M	lib/flutter_crashlytics.dart
+
+0517228;Switched to more safe way of processing stack traces
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/CrashActivity.kt
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/Utils.kt
+M	lib/flutter_crashlytics.dart
+
+5f77155;Manually log exceptions
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/Utils.kt
+M	lib/flutter_crashlytics.dart
+M	pubspec.yaml
+
+87ba074;bump to 0.0.5
+M	CHANGELOG.md
+M	pubspec.yaml
+
+5195c5c;Merge pull request #6 from jaggernod/fix/regex-for-release
+76be5ee;Fixed the regex for the release builds
+M	lib/flutter_crashlytics.dart
+
+92deff4;add forceCrash parameter
+M	CHANGELOG.md
+M	README.md
+M	android/build.gradle
+M	android/src/main/AndroidManifest.xml
+A	android/src/main/kotlin/com/kiwi/fluttercrashlytics/CrashActivity.kt
+M	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+A	android/src/main/kotlin/com/kiwi/fluttercrashlytics/Utils.kt
+A	build.gradle
+M	example/ios/Runner.xcodeproj/project.pbxproj
+M	example/lib/main.dart
+M	ios/Classes/SwiftFlutterCrashlyticsPlugin.swift
+M	lib/flutter_crashlytics.dart
+M	pubspec.yaml
+
+af12dd0;publish to pub
+M	CHANGELOG.md
+D	example/test/widget_test.dart
+M	lib/flutter_crashlytics.dart
+M	pubspec.yaml
+
+b1a9dd2;update doc
+M	README.md
+
+8e0c622;update doc
+M	README.md
+A	iosScript.jpg
+
+83824a8;initial commit
+A	.gitignore
+A	CHANGELOG.md
+A	LICENSE
+A	README.md
+A	android/.gitignore
+A	android/build.gradle
+A	android/gradle.properties
+A	android/settings.gradle
+A	android/src/main/AndroidManifest.xml
+A	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterCrashlyticsPlugin.kt
+A	android/src/main/kotlin/com/kiwi/fluttercrashlytics/FlutterException.kt
+A	example/.gitignore
+A	example/.metadata
+A	example/README.md
+A	example/android/.gitignore
+A	example/android/app/build.gradle
+A	example/android/app/src/main/AndroidManifest.xml
+A	example/android/app/src/main/kotlin/com/kiwi/fluttercrashlyticsexample/MainActivity.kt
+A	example/android/app/src/main/res/drawable/launch_background.xml
+A	example/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	example/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	example/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	example/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	example/android/app/src/main/res/values/styles.xml
+A	example/android/build.gradle
+A	example/android/gradle.properties
+A	example/android/gradle/wrapper/gradle-wrapper.jar
+A	example/android/gradle/wrapper/gradle-wrapper.properties
+A	example/android/gradlew
+A	example/android/gradlew.bat
+A	example/android/settings.gradle
+A	example/ios/.gitignore
+A	example/ios/Flutter/AppFrameworkInfo.plist
+A	example/ios/Flutter/Debug.xcconfig
+A	example/ios/Flutter/Release.xcconfig
+A	example/ios/Podfile
+A	example/ios/Podfile.lock
+A	example/ios/Runner.xcodeproj/project.pbxproj
+A	example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+A	example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+A	example/ios/Runner.xcworkspace/contents.xcworkspacedata
+A	example/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+A	example/ios/Runner/AppDelegate.swift
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png
+A	example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+A	example/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json
+A	example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png
+A	example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png
+A	example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png
+A	example/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md
+A	example/ios/Runner/Base.lproj/LaunchScreen.storyboard
+A	example/ios/Runner/Base.lproj/Main.storyboard
+A	example/ios/Runner/Info.plist
+A	example/ios/Runner/Runner-Bridging-Header.h
+A	example/lib/main.dart
+A	example/pubspec.yaml
+A	example/test/widget_test.dart
+A	ios/.gitignore
+A	ios/Assets/.gitkeep
+A	ios/Classes/FlutterCrashlyticsPlugin.h
+A	ios/Classes/FlutterCrashlyticsPlugin.m
+A	ios/Classes/SwiftFlutterCrashlyticsPlugin.swift
+A	ios/flutter_crashlytics.podspec
+A	lib/flutter_crashlytics.dart
+A	pubspec.yaml

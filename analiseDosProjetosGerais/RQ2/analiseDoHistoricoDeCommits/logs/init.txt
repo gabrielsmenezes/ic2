@@ -1,0 +1,159 @@
+e45c5e7;Merge pull request #3 from twolight/master
+3a4aea6;Add a implement to release the thread pool.
+M	init/src/main/java/cn/zhaiyifan/init/Init.java
+
+f26011d;Merge pull request #2 from twolight/master
+32f1f82;Avoid to create thread pool many times.
+M	init/src/main/java/cn/zhaiyifan/init/Init.java
+
+0f7810b;replace abstract method with empty implement
+M	demo/src/main/java/cn/zhaiyifan/demo/DemoApplication.java
+M	init/src/main/java/cn/zhaiyifan/init/Task.java
+
+ea068ce;Add message switch
+M	init/src/main/java/cn/zhaiyifan/init/Task.java
+
+bceba32;add a onResult method for task. onResult is invoked in the ui thread after the task finish
+M	demo/src/main/java/cn/zhaiyifan/demo/DemoApplication.java
+M	init/src/main/java/cn/zhaiyifan/init/Task.java
+
+d5e5f9b;Merge pull request #1 from twolight/master
+5ad1ab1;fix the bug:child task should not wait after the parent task has done
+M	init/src/main/java/cn/zhaiyifan/init/Task.java
+
+b896355;Add api to clear flow.
+M	init/src/main/java/cn/zhaiyifan/init/Init.java
+
+f170193;Add wiki part in README.md
+M	README.md
+M	demo/src/main/java/cn/zhaiyifan/demo/DemoApplication.java
+
+6c8905a;Update README
+M	README.md
+M	README_CN.md
+
+1d0c661;Update README_CN.md
+M	README_CN.md
+
+bf0480c;Update README.md
+M	README.md
+
+b85e817;Add an pure-java version
+M	README.md
+M	README_CN.md
+M	demo/src/main/java/cn/zhaiyifan/demo/DemoApplication.java
+A	init-java/.gitignore
+A	init-java/build.gradle
+A	init-java/src/main/java/cn/zhaiyifan/init/Flow.java
+R096	init/src/main/java/cn/zhaiyifan/appinit/ILog.java	init-java/src/main/java/cn/zhaiyifan/init/ILog.java
+A	init-java/src/main/java/cn/zhaiyifan/init/Init.java
+A	init-java/src/main/java/cn/zhaiyifan/init/LogImpl.java
+A	init-java/src/main/java/cn/zhaiyifan/init/ProcessUtils.java
+R088	init/src/main/java/cn/zhaiyifan/appinit/Status.java	init-java/src/main/java/cn/zhaiyifan/init/Status.java
+R095	init/src/main/java/cn/zhaiyifan/appinit/Task.java	init-java/src/main/java/cn/zhaiyifan/init/Task.java
+R095	init/src/main/java/cn/zhaiyifan/appinit/Wave.java	init-java/src/main/java/cn/zhaiyifan/init/Wave.java
+R088	init/src/androidTest/java/cn/zhaiyifan/appinit/ApplicationTest.java	init/src/androidTest/java/cn/zhaiyifan/init/ApplicationTest.java
+R094	init/src/main/java/cn/zhaiyifan/appinit/Flow.java	init/src/main/java/cn/zhaiyifan/init/Flow.java
+A	init/src/main/java/cn/zhaiyifan/init/ILog.java
+R095	init/src/main/java/cn/zhaiyifan/appinit/Init.java	init/src/main/java/cn/zhaiyifan/init/Init.java
+R096	init/src/main/java/cn/zhaiyifan/appinit/LogImpl.java	init/src/main/java/cn/zhaiyifan/init/LogImpl.java
+R098	init/src/main/java/cn/zhaiyifan/appinit/ProcessUtils.java	init/src/main/java/cn/zhaiyifan/init/ProcessUtils.java
+A	init/src/main/java/cn/zhaiyifan/init/Status.java
+A	init/src/main/java/cn/zhaiyifan/init/Task.java
+A	init/src/main/java/cn/zhaiyifan/init/Wave.java
+M	settings.gradle
+
+d0521b4;Update README
+M	README.md
+M	README_CN.md
+
+4fbcb3d;Update README.md, add javadoc, upgrade library version
+M	README.md
+M	README_CN.md
+M	init/gradle.properties
+M	init/src/main/java/cn/zhaiyifan/appinit/ILog.java
+M	init/src/main/java/cn/zhaiyifan/appinit/Init.java
+M	init/src/main/java/cn/zhaiyifan/appinit/Status.java
+
+e05ff54;Update README.md
+M	README.md
+M	README_CN.md
+
+f723900;Update README.md
+M	README.md
+M	README_CN.md
+
+66ed270;update maven properties, fix thread pool size
+M	init/gradle.properties
+M	init/src/main/java/cn/zhaiyifan/appinit/Flow.java
+M	init/src/main/java/cn/zhaiyifan/appinit/Init.java
+M	init/src/main/java/cn/zhaiyifan/appinit/Wave.java
+
+be40dc7;﻿Just some comment
+M	init/src/main/java/cn/zhaiyifan/appinit/Task.java
+
+3b1236e;﻿Implement asynchronous single-task-chain.
+M	README.md
+M	demo/src/main/java/cn/zhaiyifan/demo/DemoApplication.java
+M	init/src/main/java/cn/zhaiyifan/appinit/Task.java
+
+137f9c8;﻿Add flow cancel operation.
+M	init/src/main/java/cn/zhaiyifan/appinit/Flow.java
+M	init/src/main/java/cn/zhaiyifan/appinit/Init.java
+
+05e9031;﻿Add status track
+M	README.md
+M	init/src/main/java/cn/zhaiyifan/appinit/Flow.java
+M	init/src/main/java/cn/zhaiyifan/appinit/ProcessUtils.java
+M	init/src/main/java/cn/zhaiyifan/appinit/Task.java
+M	init/src/main/java/cn/zhaiyifan/appinit/Wave.java
+
+5d55dd9;﻿Update README, add Chinese README
+M	README.md
+A	README_CN.md
+M	demo/src/main/java/cn/zhaiyifan/demo/DemoApplication.java
+
+c26bbd3;Update README.md, change a bit api
+M	README.md
+M	demo/src/main/java/cn/zhaiyifan/demo/DemoApplication.java
+M	init/src/main/java/cn/zhaiyifan/appinit/Init.java
+
+725c247;Initial commit
+A	.gitignore
+A	LICENSE
+A	README.md
+A	art/flow.png
+A	build.gradle
+A	demo/.gitignore
+A	demo/build.gradle
+A	demo/proguard-rules.pro
+A	demo/src/main/AndroidManifest.xml
+A	demo/src/main/java/cn/zhaiyifan/demo/DemoApplication.java
+A	demo/src/main/java/cn/zhaiyifan/demo/MainActivity.java
+A	demo/src/main/res/layout/activity_main.xml
+A	demo/src/main/res/menu/menu_main.xml
+A	demo/src/main/res/mipmap-hdpi/ic_launcher.png
+A	demo/src/main/res/mipmap-mdpi/ic_launcher.png
+A	demo/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	demo/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	demo/src/main/res/values-w820dp/dimens.xml
+A	demo/src/main/res/values/dimens.xml
+A	demo/src/main/res/values/strings.xml
+A	demo/src/main/res/values/styles.xml
+A	gradle.properties
+A	init/.gitignore
+A	init/build.gradle
+A	init/gradle-mvn-push.gradle
+A	init/gradle.properties
+A	init/proguard-rules.pro
+A	init/src/androidTest/java/cn/zhaiyifan/appinit/ApplicationTest.java
+A	init/src/main/AndroidManifest.xml
+A	init/src/main/java/cn/zhaiyifan/appinit/Flow.java
+A	init/src/main/java/cn/zhaiyifan/appinit/ILog.java
+A	init/src/main/java/cn/zhaiyifan/appinit/Init.java
+A	init/src/main/java/cn/zhaiyifan/appinit/LogImpl.java
+A	init/src/main/java/cn/zhaiyifan/appinit/ProcessUtils.java
+A	init/src/main/java/cn/zhaiyifan/appinit/Status.java
+A	init/src/main/java/cn/zhaiyifan/appinit/Task.java
+A	init/src/main/java/cn/zhaiyifan/appinit/Wave.java
+A	settings.gradle

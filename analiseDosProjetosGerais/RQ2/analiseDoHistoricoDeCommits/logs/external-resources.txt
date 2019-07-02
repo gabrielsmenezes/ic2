@@ -1,0 +1,300 @@
+639b097;Merge branch 'release/2.0.1'
+5f8c807;Update README.md & CHANGELOG.md for release version.
+M	CHANGELOG.md
+M	README.md
+
+96d152f;Fix Maven dependency.
+M	build.gradle
+M	gradle.properties
+M	gradle/publish.gradle
+M	library/src/main/java/fr/prcaen/externalresources/ExternalResources.java
+M	library/src/main/java/fr/prcaen/externalresources/listener/OnExternalResourcesChangeListener.java
+M	library/src/test/java/fr/prcaen/externalresources/DownloaderTest.java
+
+7326525;Fix tests
+M	.travis.yml
+
+5216214;Update README with How to download it.
+M	README.md
+
+719ec4a;JCenter & Maven distribution.
+M	build.gradle
+M	gradle.properties
+A	gradle/publish.gradle
+M	library/build.gradle
+M	sample-app/build.gradle
+M	settings.gradle
+
+fd6b6d3;Update README with How to download it.
+M	README.md
+
+8e93a14;Merge branch 'release/2.0.0'
+21996f8;Documentation of the library, start JavaDoc and prepare deployment on JCenter.
+M	.gitignore
+A	.idea/codeStyleSettings.xml
+A	LICENSE.txt
+M	README.md
+M	build.gradle
+M	library/build.gradle
+M	library/src/main/AndroidManifest.xml
+M	library/src/main/java/fr/prcaen/externalresources/Cache.java
+M	library/src/main/java/fr/prcaen/externalresources/Dispatcher.java
+M	library/src/main/java/fr/prcaen/externalresources/Downloader.java
+M	library/src/main/java/fr/prcaen/externalresources/ExternalResources.java
+M	library/src/main/java/fr/prcaen/externalresources/Logger.java
+M	library/src/main/java/fr/prcaen/externalresources/NetworkBroadcastReceiver.java
+M	library/src/main/java/fr/prcaen/externalresources/Options.java
+M	library/src/main/java/fr/prcaen/externalresources/ResourcesRunnable.java
+M	library/src/main/java/fr/prcaen/externalresources/Utils.java
+M	library/src/main/java/fr/prcaen/externalresources/converter/Converter.java
+M	library/src/main/java/fr/prcaen/externalresources/converter/JsonConverter.java
+M	library/src/main/java/fr/prcaen/externalresources/converter/XmlConverter.java
+M	library/src/main/java/fr/prcaen/externalresources/exception/ExternalResourceException.java
+M	library/src/main/java/fr/prcaen/externalresources/exception/NotFoundException.java
+M	library/src/main/java/fr/prcaen/externalresources/exception/ResponseException.java
+M	library/src/main/java/fr/prcaen/externalresources/listener/OnExternalResourcesChangeListener.java
+R067	library/src/main/java/fr/prcaen/externalresources/listener/OnExternalResourcesLoadListener.java	library/src/main/java/fr/prcaen/externalresources/listener/OnExternalResourcesLoadFailedListener.java
+M	library/src/main/java/fr/prcaen/externalresources/model/DimensionResource.java
+M	library/src/main/java/fr/prcaen/externalresources/model/Resource.java
+M	library/src/main/java/fr/prcaen/externalresources/model/Resources.java
+M	library/src/main/java/fr/prcaen/externalresources/url/DefaultUrl.java
+M	library/src/test/java/fr/prcaen/externalresources/CacheTest.java
+M	library/src/test/java/fr/prcaen/externalresources/DownloaderTest.java
+M	library/src/test/java/fr/prcaen/externalresources/ExternalResourcesTest.java
+M	library/src/test/java/fr/prcaen/externalresources/converter/JsonConverterTest.java
+M	library/src/test/java/fr/prcaen/externalresources/converter/XmlConverterTest.java
+M	library/src/test/java/fr/prcaen/externalresources/model/DimensionResourceTest.java
+M	library/src/test/java/fr/prcaen/externalresources/model/ResourceTest.java
+M	library/src/test/java/fr/prcaen/externalresources/model/ResourcesTest.java
+M	library/src/test/java/fr/prcaen/externalresources/url/DefaultUrlTest.java
+M	sample-app/build.gradle
+
+5b965c1;Use application resources + update build config + proguard config + Yoda.
+M	build.gradle
+M	library/build.gradle
+M	library/lint.xml
+M	library/proguard-rules.pro
+M	library/src/main/java/fr/prcaen/externalresources/Dispatcher.java
+M	library/src/main/java/fr/prcaen/externalresources/Downloader.java
+M	library/src/main/java/fr/prcaen/externalresources/ExternalResources.java
+M	library/src/main/java/fr/prcaen/externalresources/NetworkBroadcastReceiver.java
+M	library/src/main/java/fr/prcaen/externalresources/ResourcesRunnable.java
+M	library/src/main/java/fr/prcaen/externalresources/Utils.java
+M	library/src/main/java/fr/prcaen/externalresources/converter/JsonConverter.java
+M	library/src/main/java/fr/prcaen/externalresources/converter/XmlConverter.java
+M	library/src/main/java/fr/prcaen/externalresources/exception/ExternalResourceException.java
+M	library/src/main/java/fr/prcaen/externalresources/exception/NotFoundException.java
+M	library/src/main/java/fr/prcaen/externalresources/model/Resource.java
+A	library/src/main/res/values/resources.xml
+M	library/src/test/java/fr/prcaen/externalresources/DownloaderTest.java
+M	library/src/test/java/fr/prcaen/externalresources/ExternalResourcesTest.java
+M	library/src/test/java/fr/prcaen/externalresources/converter/JsonConverterTest.java
+M	library/src/test/java/fr/prcaen/externalresources/url/DefaultUrlTest.java
+M	sample-app/build.gradle
+A	sample-app/lint.xml
+M	sample-app/proguard-rules.pro
+A	sample-app/release.jks
+M	sample-app/src/main/AndroidManifest.xml
+M	sample-app/src/main/java/fr/prcaen/externalresources/sample/ExternalResourceSampleApplication.java
+D	sample-app/src/main/java/fr/prcaen/externalresources/sample/LocalizedStringResources.java
+M	sample-app/src/main/java/fr/prcaen/externalresources/sample/MainSampleActivity.java
+
+e7d0f6a;Merge via putAll instead of loop.
+M	library/src/main/java/fr/prcaen/externalresources/model/Resources.java
+
+da12f81;Update build tools for Travis
+M	.travis.yml
+
+affcdac;Update dependencies + Change HashMap to ConcurrentHashMap.
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/src/main/java/fr/prcaen/externalresources/model/Resources.java
+M	library/src/test/java/fr/prcaen/externalresources/model/ResourcesTest.java
+M	sample-app/build.gradle
+M	settings.gradle
+
+af47032;Update README.md
+M	README.md
+
+bae0929;Travis CI integration + fix tests
+A	.travis.yml
+M	README.md
+A	library/lint.xml
+M	library/src/test/java/fr/prcaen/externalresources/DownloaderTest.java
+
+ca717bd;Merge pull request #1 from jaredrummler/patch-1
+2d6bf50;remove spaces to correctly format code
+M	README.md
+
+6fd5d5b;Merge branch 'release/1.0.1'
+a89be4e;Add default resources.
+M	README.md
+M	library/src/main/java/fr/prcaen/externalresources/ExternalResources.java
+
+ec2dc4e;Improve readme
+M	README.md
+
+837285e;Fix app to sample-app
+M	settings.gradle
+
+29695d7;Fix tests.
+M	library/src/test/java/fr/prcaen/externalresources/DownloaderTest.java
+M	library/src/test/java/fr/prcaen/externalresources/ExternalResourcesTest.java
+
+a311d45;Move app to sample-app.
+R100	app/.gitignore	sample-app/.gitignore
+R100	app/build.gradle	sample-app/build.gradle
+R100	app/proguard-rules.pro	sample-app/proguard-rules.pro
+R100	app/src/main/AndroidManifest.xml	sample-app/src/main/AndroidManifest.xml
+R100	app/src/main/assets/defaults.json	sample-app/src/main/assets/defaults.json
+R100	app/src/main/java/fr/prcaen/externalresources/sample/ExternalResourceSampleApplication.java	sample-app/src/main/java/fr/prcaen/externalresources/sample/ExternalResourceSampleApplication.java
+R100	app/src/main/java/fr/prcaen/externalresources/sample/LocalizedStringResources.java	sample-app/src/main/java/fr/prcaen/externalresources/sample/LocalizedStringResources.java
+R100	app/src/main/java/fr/prcaen/externalresources/sample/MainSampleActivity.java	sample-app/src/main/java/fr/prcaen/externalresources/sample/MainSampleActivity.java
+R100	app/src/main/res/layout/main.xml	sample-app/src/main/res/layout/main.xml
+R100	app/src/main/res/mipmap-hdpi/ic_launcher.png	sample-app/src/main/res/mipmap-hdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-mdpi/ic_launcher.png	sample-app/src/main/res/mipmap-mdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-xhdpi/ic_launcher.png	sample-app/src/main/res/mipmap-xhdpi/ic_launcher.png
+R100	app/src/main/res/mipmap-xxhdpi/ic_launcher.png	sample-app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+R100	app/src/main/res/values/strings.xml	sample-app/src/main/res/values/strings.xml
+R100	app/src/main/res/values/styles.xml	sample-app/src/main/res/values/styles.xml
+
+4843ad4;Add README and CHANGELOG file.
+A	CHANGELOG.md
+A	README.md
+
+10ec4e1;Update dependencies.
+M	app/build.gradle
+M	build.gradle
+M	library/build.gradle
+
+ac3339e;Airplane mode detection + network state detection.
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/fr/prcaen/externalresources/sample/LocalizedStringResources.java
+M	library/src/main/java/fr/prcaen/externalresources/Dispatcher.java
+M	library/src/main/java/fr/prcaen/externalresources/Downloader.java
+M	library/src/main/java/fr/prcaen/externalresources/ExternalResources.java
+A	library/src/main/java/fr/prcaen/externalresources/NetworkBroadcastReceiver.java
+M	library/src/main/java/fr/prcaen/externalresources/ResourcesRunnable.java
+A	library/src/main/java/fr/prcaen/externalresources/Utils.java
+A	library/src/main/java/fr/prcaen/externalresources/exception/ExternalResourceException.java
+A	library/src/main/java/fr/prcaen/externalresources/exception/NotFoundException.java
+A	library/src/main/java/fr/prcaen/externalresources/exception/ResponseException.java
+M	library/src/main/java/fr/prcaen/externalresources/listener/OnExternalResourcesLoadListener.java
+
+637bb9a;Dispatcher + handle retry.
+A	app/src/main/assets/defaults.json
+M	app/src/main/java/fr/prcaen/externalresources/sample/LocalizedStringResources.java
+M	app/src/main/java/fr/prcaen/externalresources/sample/MainSampleActivity.java
+A	app/src/main/res/layout/main.xml
+A	library/src/main/java/fr/prcaen/externalresources/Dispatcher.java
+M	library/src/main/java/fr/prcaen/externalresources/Downloader.java
+M	library/src/main/java/fr/prcaen/externalresources/ExternalResources.java
+M	library/src/main/java/fr/prcaen/externalresources/ResourcesRunnable.java
+
+997fb51;Thread name suffix to const.
+M	library/src/main/java/fr/prcaen/externalresources/ResourcesRunnable.java
+
+f2334c4;Fix sample application.
+M	app/src/main/java/fr/prcaen/externalresources/sample/LocalizedStringResources.java
+
+226eddf;Unit test downloader and external resources.
+M	library/build.gradle
+M	library/src/main/java/fr/prcaen/externalresources/Downloader.java
+M	library/src/main/java/fr/prcaen/externalresources/ExternalResources.java
+M	library/src/main/java/fr/prcaen/externalresources/Logger.java
+M	library/src/main/java/fr/prcaen/externalresources/ResourcesRunnable.java
+A	library/src/test/java/fr/prcaen/externalresources/DownloaderTest.java
+A	library/src/test/java/fr/prcaen/externalresources/ExternalResourcesTest.java
+M	library/src/test/resources/test.json
+
+630d45f;Unit test cache.
+M	library/src/main/java/fr/prcaen/externalresources/Cache.java
+A	library/src/test/java/fr/prcaen/externalresources/CacheTest.java
+
+e2aedc9;Unit test dimension resource.
+M	library/src/main/java/fr/prcaen/externalresources/model/DimensionResource.java
+A	library/src/test/java/fr/prcaen/externalresources/model/DimensionResourceTest.java
+
+1fcb295;Unit test resources
+M	library/src/test/java/fr/prcaen/externalresources/model/ResourcesTest.java
+
+b5315b9;Unit tests library
+M	library/build.gradle
+M	library/src/main/java/fr/prcaen/externalresources/converter/JsonConverter.java
+M	library/src/main/java/fr/prcaen/externalresources/converter/XmlConverter.java
+M	library/src/main/java/fr/prcaen/externalresources/model/Resource.java
+M	library/src/main/java/fr/prcaen/externalresources/model/Resources.java
+D	library/src/main/java/fr/prcaen/externalresources/url/LocalizedUrl.java
+M	library/src/test/java/fr/prcaen/externalresources/converter/JsonConverterTest.java
+M	library/src/test/java/fr/prcaen/externalresources/converter/XmlConverterTest.java
+A	library/src/test/java/fr/prcaen/externalresources/model/ResourceTest.java
+A	library/src/test/java/fr/prcaen/externalresources/model/ResourcesTest.java
+A	library/src/test/java/fr/prcaen/externalresources/url/DefaultUrlTest.java
+
+53e0574;XMLConverter.
+M	library/src/main/java/fr/prcaen/externalresources/converter/JsonConverter.java
+A	library/src/main/java/fr/prcaen/externalresources/converter/XmlConverter.java
+A	library/src/test/java/fr/prcaen/externalresources/converter/XmlConverterTest.java
+A	library/src/test/resources/test.xml
+
+48910d2;Converter with just one method mandatory + use JUnit 4 for testing + use real file to test.
+M	library/src/main/java/fr/prcaen/externalresources/converter/Converter.java
+M	library/src/main/java/fr/prcaen/externalresources/converter/JsonConverter.java
+M	library/src/main/java/fr/prcaen/externalresources/model/Resources.java
+M	library/src/test/java/fr/prcaen/externalresources/converter/JsonConverterTest.java
+A	library/src/test/resources/test.json
+
+0aa17ee;First unit tests on JsonConverter.
+M	library/build.gradle
+M	library/src/main/java/fr/prcaen/externalresources/converter/JsonConverter.java
+A	library/src/test/java/fr/prcaen/externalresources/converter/JsonConverterTest.java
+
+6284b81;Converter and logger.
+M	app/src/main/java/fr/prcaen/externalresources/sample/LocalizedStringResources.java
+M	library/src/main/java/fr/prcaen/externalresources/Downloader.java
+M	library/src/main/java/fr/prcaen/externalresources/ExternalResources.java
+A	library/src/main/java/fr/prcaen/externalresources/Logger.java
+A	library/src/main/java/fr/prcaen/externalresources/converter/Converter.java
+A	library/src/main/java/fr/prcaen/externalresources/converter/JsonConverter.java
+A	library/src/main/java/fr/prcaen/externalresources/model/Resource.java
+M	library/src/main/java/fr/prcaen/externalresources/model/Resources.java
+
+9b2f373;Initial commit.
+A	.gitignore
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/fr/prcaen/externalresources/sample/ExternalResourceSampleApplication.java
+A	app/src/main/java/fr/prcaen/externalresources/sample/LocalizedStringResources.java
+A	app/src/main/java/fr/prcaen/externalresources/sample/MainSampleActivity.java
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	library/.gitignore
+A	library/build.gradle
+A	library/proguard-rules.pro
+A	library/src/main/AndroidManifest.xml
+A	library/src/main/java/fr/prcaen/externalresources/Cache.java
+A	library/src/main/java/fr/prcaen/externalresources/Downloader.java
+A	library/src/main/java/fr/prcaen/externalresources/ExternalResources.java
+A	library/src/main/java/fr/prcaen/externalresources/Options.java
+A	library/src/main/java/fr/prcaen/externalresources/ResourcesRunnable.java
+A	library/src/main/java/fr/prcaen/externalresources/listener/OnExternalResourcesChangeListener.java
+A	library/src/main/java/fr/prcaen/externalresources/listener/OnExternalResourcesLoadListener.java
+A	library/src/main/java/fr/prcaen/externalresources/model/DimensionResource.java
+A	library/src/main/java/fr/prcaen/externalresources/model/Resources.java
+A	library/src/main/java/fr/prcaen/externalresources/url/DefaultUrl.java
+A	library/src/main/java/fr/prcaen/externalresources/url/LocalizedUrl.java
+A	library/src/main/java/fr/prcaen/externalresources/url/Url.java
+A	settings.gradle

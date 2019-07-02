@@ -1,0 +1,253 @@
+ebb201b;Merge pull request #4 from sunnyden/master
+44dba05;add permission for logger
+M	loggerlibrary/src/main/AndroidManifest.xml
+
+a9c42b9;add log to file
+M	app/build.gradle
+M	app/src/main/java/com/github/fakegps/DbUtils.java
+M	app/src/main/java/com/github/fakegps/FakeGpsApp.java
+M	app/src/main/java/com/github/fakegps/FakeGpsUtils.java
+M	app/src/main/java/com/github/fakegps/JoyStickManager.java
+M	app/src/main/java/com/github/fakegps/LocationThread.java
+M	app/src/main/java/com/github/fakegps/model/LocBookmark.java
+M	app/src/main/java/com/github/fakegps/ui/BookmarkActivity.java
+M	app/src/main/java/com/github/fakegps/ui/BookmarkAdapter.java
+M	app/src/main/java/com/github/fakegps/ui/FlyToActivity.java
+M	app/src/main/java/com/github/fakegps/ui/JoyStickButton.java
+M	app/src/main/java/com/github/fakegps/ui/JoyStickView.java
+M	app/src/main/java/com/github/fakegps/ui/MainActivity.java
+A	loggerlibrary/.gitignore
+A	loggerlibrary/build.gradle
+A	loggerlibrary/proguard-rules.pro
+A	loggerlibrary/src/androidTest/java/tiger/radio/loggerlibrary/ApplicationTest.java
+A	loggerlibrary/src/main/AndroidManifest.xml
+A	loggerlibrary/src/main/java/tiger/radio/loggerlibrary/CustomFormatter.java
+A	loggerlibrary/src/main/java/tiger/radio/loggerlibrary/IOUtils.java
+A	loggerlibrary/src/main/java/tiger/radio/loggerlibrary/LogFile.java
+A	loggerlibrary/src/main/java/tiger/radio/loggerlibrary/Logger.java
+A	loggerlibrary/src/main/res/values/strings.xml
+A	loggerlibrary/src/test/java/tiger/radio/loggerlibrary/ExampleUnitTest.java
+M	settings.gradle
+
+4cdb620;Add Android:persistent
+M	app/src/main/AndroidManifest.xml
+
+975f155;update read
+M	README.md
+
+b9a6ec3;add English Readme
+M	README.md
+A	README_CN.md
+
+58199d7;update readme
+M	README.md
+
+d07cffe;update readme
+M	README.md
+M	screenshot/Screenshot_3.png
+
+ecc7b84;change package name
+M	app/build.gradle
+D	app/src/androidTest/java/com/tencent/fakegps/ApplicationTest.java
+M	app/src/main/AndroidManifest.xml
+R087	app/src/main/java/com/tencent/fakegps/BroadcastEvent.java	app/src/main/java/com/github/fakegps/BroadcastEvent.java
+R094	app/src/main/java/com/tencent/fakegps/DbUtils.java	app/src/main/java/com/github/fakegps/DbUtils.java
+R097	app/src/main/java/com/tencent/fakegps/FakeGpsApp.java	app/src/main/java/com/github/fakegps/FakeGpsApp.java
+R096	app/src/main/java/com/tencent/fakegps/FakeGpsUtils.java	app/src/main/java/com/github/fakegps/FakeGpsUtils.java
+R091	app/src/main/java/com/tencent/fakegps/IJoyStickPresenter.java	app/src/main/java/com/github/fakegps/IJoyStickPresenter.java
+R095	app/src/main/java/com/tencent/fakegps/JoyStickManager.java	app/src/main/java/com/github/fakegps/JoyStickManager.java
+R098	app/src/main/java/com/tencent/fakegps/LocationThread.java	app/src/main/java/com/github/fakegps/LocationThread.java
+R098	app/src/main/java/com/tencent/fakegps/ScreenUtils.java	app/src/main/java/com/github/fakegps/ScreenUtils.java
+R097	app/src/main/java/com/tencent/fakegps/model/LocBookmark.java	app/src/main/java/com/github/fakegps/model/LocBookmark.java
+R096	app/src/main/java/com/tencent/fakegps/model/LocPoint.java	app/src/main/java/com/github/fakegps/model/LocPoint.java
+R093	app/src/main/java/com/tencent/fakegps/ui/BookmarkActivity.java	app/src/main/java/com/github/fakegps/ui/BookmarkActivity.java
+R096	app/src/main/java/com/tencent/fakegps/ui/BookmarkAdapter.java	app/src/main/java/com/github/fakegps/ui/BookmarkAdapter.java
+R095	app/src/main/java/com/tencent/fakegps/ui/FlyToActivity.java	app/src/main/java/com/github/fakegps/ui/FlyToActivity.java
+R097	app/src/main/java/com/tencent/fakegps/ui/JoyStickButton.java	app/src/main/java/com/github/fakegps/ui/JoyStickButton.java
+R097	app/src/main/java/com/tencent/fakegps/ui/JoyStickView.java	app/src/main/java/com/github/fakegps/ui/JoyStickView.java
+R096	app/src/main/java/com/tencent/fakegps/ui/MainActivity.java	app/src/main/java/com/github/fakegps/ui/MainActivity.java
+M	app/src/main/res/layout/activity_fly.xml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/joystick_arrow.xml
+D	app/src/test/java/com/tencent/fakegps/ExampleUnitTest.java
+
+649c3d4;update release
+M	README.md
+D	release/FakeGPS.apk
+
+1747888;update readme
+M	README.md
+
+80b38fb;update release pack
+M	release/FakeGPS.apk
+
+b92f397;refresh list when bookmark update
+M	README.md
+A	app/src/main/java/com/tencent/fakegps/BroadcastEvent.java
+M	app/src/main/java/com/tencent/fakegps/DbUtils.java
+M	app/src/main/java/com/tencent/fakegps/FakeGpsApp.java
+M	app/src/main/java/com/tencent/fakegps/ui/FlyToActivity.java
+M	app/src/main/java/com/tencent/fakegps/ui/MainActivity.java
+M	screenshot/Screenshot_1.png
+M	screenshot/Screenshot_2.png
+M	screenshot/Screenshot_3.png
+
+bf1b359;support Pokemon Go finally!!
+M	README.md
+R100	screenshot/Screenshot_2016-07-24-08-45-53.png	screenshot/Screenshot_1.png
+A	screenshot/Screenshot_2.png
+D	screenshot/Screenshot_2016-07-24-08-45-42.png
+A	screenshot/Screenshot_3.png
+
+09b73fc;For incompatible with Pokemon Go, don't use mock location, use reflect instead.
+A	app/src/main/aidl/android/location/ILocationManager.aidl
+M	app/src/main/java/com/tencent/fakegps/LocationThread.java
+M	app/src/main/java/com/tencent/fakegps/ui/MainActivity.java
+M	release/FakeGPS.apk
+
+7af4cf0;udpate readme
+M	README.md
+
+c65e3a0;auto save last location
+M	app/src/main/java/com/tencent/fakegps/DbUtils.java
+M	app/src/main/java/com/tencent/fakegps/model/LocBookmark.java
+M	app/src/main/java/com/tencent/fakegps/model/LocPoint.java
+M	app/src/main/java/com/tencent/fakegps/ui/MainActivity.java
+M	release/FakeGPS.apk
+
+8fc1d2c;update readme
+M	README.md
+
+0c09d38;add prebuild apk
+M	README.md
+A	release/FakeGPS.apk
+
+7e0b979;Update README.md
+M	README.md
+
+f97b6e5;add readme
+A	README.md
+
+adb7bac;add screenshot
+D	Screenshot_2016-07-24-08-46-05.png
+M	app/src/main/res/layout/activity_bookmark.xml
+M	app/src/main/res/layout/activity_fly.xml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/strings.xml
+R100	Screenshot_2016-07-24-08-45-42.png	screenshot/Screenshot_2016-07-24-08-45-42.png
+R100	Screenshot_2016-07-24-08-45-53.png	screenshot/Screenshot_2016-07-24-08-45-53.png
+
+7df0b41;res modify
+A	Screenshot_2016-07-24-08-45-42.png
+A	Screenshot_2016-07-24-08-45-53.png
+A	Screenshot_2016-07-24-08-46-05.png
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/tencent/fakegps/ui/BookmarkActivity.java
+A	app/src/main/res/drawable-xhdpi/icon_app.png
+A	app/src/main/res/drawable/icon_app.png
+D	app/src/main/res/mipmap-hdpi/ic_launcher.png
+D	app/src/main/res/mipmap-mdpi/ic_launcher.png
+D	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+D	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+D	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	app/src/main/res/values/strings.xml
+
+cf84702;fly mode
+M	app/src/main/java/com/tencent/fakegps/JoyStickManager.java
+
+71ccd96;add fly funciont
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/tencent/fakegps/FakeGpsUtils.java
+M	app/src/main/java/com/tencent/fakegps/IJoyStickPresenter.java
+M	app/src/main/java/com/tencent/fakegps/JoyStickManager.java
+M	app/src/main/java/com/tencent/fakegps/LocationThread.java
+A	app/src/main/java/com/tencent/fakegps/ui/FlyToActivity.java
+M	app/src/main/java/com/tencent/fakegps/ui/JoyStickView.java
+M	app/src/main/java/com/tencent/fakegps/ui/MainActivity.java
+R100	app/src/main/res/drawable/ic_copy_loc.xml	app/src/main/res/drawable/ic_bookmark.xml
+A	app/src/main/res/layout/activity_fly.xml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/joystick_layout.xml
+M	app/src/main/res/values/strings.xml
+
+0155faa;refactor
+M	app/build.gradle
+A	app/libs/lite-orm-1.9.2.jar
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/tencent/fakegps/DbUtils.java
+M	app/src/main/java/com/tencent/fakegps/FakeGpsApp.java
+A	app/src/main/java/com/tencent/fakegps/FakeGpsUtils.java
+M	app/src/main/java/com/tencent/fakegps/IJoyStickPresenter.java
+M	app/src/main/java/com/tencent/fakegps/JoyStickManager.java
+M	app/src/main/java/com/tencent/fakegps/LocationThread.java
+D	app/src/main/java/com/tencent/fakegps/MainActivity.java
+M	app/src/main/java/com/tencent/fakegps/ScreenUtils.java
+A	app/src/main/java/com/tencent/fakegps/model/LocBookmark.java
+R068	app/src/main/java/com/tencent/fakegps/LocPoint.java	app/src/main/java/com/tencent/fakegps/model/LocPoint.java
+A	app/src/main/java/com/tencent/fakegps/ui/BookmarkActivity.java
+A	app/src/main/java/com/tencent/fakegps/ui/BookmarkAdapter.java
+R097	app/src/main/java/com/tencent/fakegps/JoyStickButton.java	app/src/main/java/com/tencent/fakegps/ui/JoyStickButton.java
+R083	app/src/main/java/com/tencent/fakegps/JoyStickView.java	app/src/main/java/com/tencent/fakegps/ui/JoyStickView.java
+A	app/src/main/java/com/tencent/fakegps/ui/MainActivity.java
+A	app/src/main/res/drawable/ic_copy_loc.xml
+A	app/src/main/res/drawable/ic_flight_land.xml
+A	app/src/main/res/drawable/ic_flight_takeoff.xml
+A	app/src/main/res/drawable/ic_set_loc.xml
+A	app/src/main/res/layout/activity_bookmark.xml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/joystick_arrow.xml
+A	app/src/main/res/layout/joystick_layout.xml
+A	app/src/main/res/layout/list_item_bookmark_layout.xml
+A	app/src/main/res/values/attrs.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+7e21aa4;use custom button for long press
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/tencent/fakegps/FakeGpsApp.java
+A	app/src/main/java/com/tencent/fakegps/JoyStickButton.java
+M	app/src/main/java/com/tencent/fakegps/JoyStickView.java
+M	app/src/main/res/layout/joystick_arrow.xml
+M	app/src/main/res/values/dimens.xml
+
+c48943b;init commit
+A	.gitignore
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/com/tencent/fakegps/ApplicationTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/tencent/fakegps/IJoyStickPresenter.java
+A	app/src/main/java/com/tencent/fakegps/JoyStickManager.java
+A	app/src/main/java/com/tencent/fakegps/JoyStickView.java
+A	app/src/main/java/com/tencent/fakegps/LocPoint.java
+A	app/src/main/java/com/tencent/fakegps/LocationThread.java
+A	app/src/main/java/com/tencent/fakegps/MainActivity.java
+A	app/src/main/java/com/tencent/fakegps/ScreenUtils.java
+A	app/src/main/res/drawable-xhdpi/ic_keyboard_arrow_down_black_24dp.png
+A	app/src/main/res/drawable-xhdpi/ic_keyboard_arrow_left_black_24dp.png
+A	app/src/main/res/drawable-xhdpi/ic_keyboard_arrow_right_black_24dp.png
+A	app/src/main/res/drawable-xhdpi/ic_keyboard_arrow_up_black_24dp.png
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/joystick_arrow.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/test/java/com/tencent/fakegps/ExampleUnitTest.java
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	keystore.debug.jks
+A	settings.gradle

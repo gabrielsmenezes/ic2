@@ -1,0 +1,4956 @@
+eac9702;Update changelog for 1.2.16
+M	CHANGELOG.md
+
+fe99a6d;Fix api level badge
+M	README.md
+
+a68901c;Merge pull request #615 from koral--/dev
+af10289;Release 1.2.16
+M	README.md
+M	android-gif-drawable/gradle.properties
+
+f4e703b;Update changelog and readme. Fix badges. Closes #611.
+M	CHANGELOG.md
+M	README.md
+
+3fceb10;Update changelog.
+M	CHANGELOG.md
+
+da243e1;Remove unneeded macros. Fix Android test runner dependency.
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/gif.h
+
+948b747;Change (f)stat calls to (f)stat64.
+M	android-gif-drawable/src/main/c/gif.c
+
+49f662f;Add close-on-exec flags.
+M	android-gif-drawable/src/main/c/gif.c
+
+182039b;Fix native out of memory errors handling.
+M	android-gif-drawable/src/main/c/gif.c
+
+ffeecd8;Unify Java exception checks in native code.
+M	android-gif-drawable/src/main/c/dispose.c
+M	android-gif-drawable/src/main/c/gif.c
+
+c57b374;Remove extraneous file descriptor close, fixes #600.
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+d02a22b;Fix test dependencies.
+M	android-gif-drawable/build.gradle
+
+885fce5;Migrate Android support to AndroidX.
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/AllocationByteCountTest.java
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/ErrnoMessageTest.java
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/GifDrawableExceptionTest.java
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/GifViewDescriptorTest.java
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/InputStreamTest.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDecoder.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawableInit.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifError.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifIOException.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifOptions.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/InputSource.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/MultiCallback.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java
+M	build.gradle
+M	sample/build.gradle
+M	sample/gradle.properties
+M	sample/proguard-rules.pro
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorDrawableGenerator.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimationControlFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/BaseFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifDecoderFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifDownloader.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifSelectorDrawable.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifSurfaceTextureDrawer.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/LiveWallpaperFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainActivity.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourceItemHolder.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesAdapter.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesResolver.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/GifWallpaperService.kt
+M	sample/src/main/res/layout/activity_main.xml
+
+947556b;Fix GifTextView attributes test
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/GifViewDescriptorTest.java
+
+ceb8565;Add check for resource type when setting from java code. Fixes #606.
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+
+57e5887;Add missing free of info buffer, fixes #595
+M	CHANGELOG.md
+M	android-gif-drawable/src/main/c/init.c
+
+e46c42d;Missing null check for NewGlobalRef, fixes #594
+M	CHANGELOG.md
+M	android-gif-drawable/src/main/c/gif.c
+
+b38c3d4;Bump dependencies versions: Android Gradle Plugin: 3.2.1 Code cleanup Update changelog
+M	CHANGELOG.md
+M	build.gradle
+M	sample/build.gradle
+
+8b83cef;Bump dependencies versions: (#593)
+D	android-gif-drawable-native-armeabi/build.gradle
+D	android-gif-drawable-native-armeabi/src/main/AndroidManifest.xml
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/drawing.c
+M	android-gif-drawable/src/main/c/gif.h
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifDecoderFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifSurfaceTextureDrawer.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/LiveWallpaperFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/TextureViewFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/GifWallpaperService.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/OffscreenEGLConnection.kt
+M	sample/src/main/res/layout/compound_drawables.xml
+M	settings.gradle
+
+2355113;Merge pull request #580 from koral--/deps_bump
+bffc55f;Update changelog
+M	CHANGELOG.md
+
+f643232;Change Gradle configuration from compile to implementation in Readme. Fixes #587.
+M	README.md
+
+94a997a;Update Gradle to 4.10
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+e5d214d;Merge remote-tracking branch 'origin/master' into dev
+55e2b02;Update Android Gradle Plugin 1.2.60. Update test and sample dependencies.
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	build.gradle
+
+891ded5;Prepare for 1.2.16 development iteration
+M	android-gif-drawable/gradle.properties
+
+8dd0b88;Release 1.2.15
+M	README.md
+M	android-gif-drawable/gradle.properties
+
+8e35bd4;Update changelog
+M	CHANGELOG.md
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+f966d8c;Update Gradle version to 4.9
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+2dd04d7;Update coroutines version to 0.23.4
+M	build.gradle
+
+c89f0b0;Fix GifInfoHandle VerifyError on KitKat and lower, closes #570
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+1baf550;Prepare for 1.2.15 development iteration
+M	android-gif-drawable/gradle.properties
+
+e28d643;Merge branch 'master' into dev
+36f3c06;Release 1.2.15
+M	README.md
+M	android-gif-drawable/gradle.properties
+
+c119c14;Update changelog
+M	CHANGELOG.md
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+e54d987;Update Gradle version to 4.9
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+6ff1007;Update coroutines version to 0.23.4
+M	build.gradle
+
+221ff06;Fix GifInfoHandle VerifyError on KitKat and lower, closes #570
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+bb89cbf;Prepare for 1.2.15 development iteration
+M	android-gif-drawable/gradle.properties
+
+f7be320;Uodate readme and changelog
+M	CHANGELOG.md
+M	README.md
+
+1dce006;Fix invalid android-gif-drawable-native-armeabi dependency scope
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/gradle.properties
+
+1973589;Uodate readme and changelog
+M	CHANGELOG.md
+M	README.md
+
+8f22ffb;Fix invalid android-gif-drawable-native-armeabi dependency scope
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/gradle.properties
+
+0fc026b;Release 1.2.13
+M	CHANGELOG.md
+M	LICENSE
+M	README.md
+M	android-gif-drawable/gradle.properties
+
+09269dd;Remove Beta annotations from GifOptions, GifTexImage2D and GifTextureView
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifOptions.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+2a44c50;Replace check for Android P preview with P
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+ff6cee9;Wrap opengl eventfd poll with TEMP_FAILURE_RETRY
+M	android-gif-drawable/src/main/c/opengl.c
+
+d97398f;GifTexImage2D and GifSurfaceTexture samples code cleanup
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifSurfaceTextureDrawer.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.kt
+R082	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/Renderer.kt	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/GifTexImage2DRenderer.kt
+
+3c9eab3;Simplify GifTexImage2D event handling
+M	android-gif-drawable/src/main/c/opengl.c
+
+7746f36;Fix errno messages in OpenGL slurp
+M	android-gif-drawable/src/main/c/opengl.c
+
+9f8e757;Refactor live wallpaper scaling
+M	build.gradle
+M	sample/build.gradle
+M	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/GifTexImage2DProgram.kt
+
+80b5bc7;Code cleanup
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+D	android-gif-drawable/src/test/resources/pl/droidsonroids/gif/robolectric.properties
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorDrawableGenerator.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifDownloader.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.kt
+
+dcaa342;Update kotlin to 1.2.51
+M	CHANGELOG.md
+M	build.gradle
+
+2a17914;Update mockito to 2.19.0 Update Robolectric to 3.7.1
+M	android-gif-drawable/build.gradle
+
+8311d7b;Buildscript cleanup
+M	android-gif-drawable-native-armeabi/build.gradle
+M	build.gradle
+M	sample/build.gradle
+
+c290a70;Fix errno checking when throwing exceptions
+M	android-gif-drawable/src/main/c/exception.c
+
+264bff4;GifTextureView code cleanup
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+4181cfe;Update Gradle wrapper to 4.8.1
+M	CHANGELOG.md
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+8b8f807;Fix seek to frame index out of bounds error message in GifInfoHandle
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+265951d;Fix race condition in GifDecoder sample
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifDecoderFragment.kt
+
+ddf4767;Fix live wallpaper rendering
+M	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/GifTexImage2DProgram.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/GifWallpaperService.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/OffscreenEGLConnection.kt
+
+5aa0862;Fix memory leaks in sample Fix wallpaper drawing
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifDecoderFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifDownloader.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/GifTexImage2DProgram.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/GifWallpaperService.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/OffscreenEGLConnection.kt
+
+9ff3e4f;Update Gradle to 4.8 Update Kotlin to 1.2.50 Update target and compile sdk version to 28 Update Android support test library to 1.0.2
+M	CHANGELOG.md
+M	android-gif-drawable-native-armeabi/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+
+3ab2942;Add support for armeabi building
+A	android-gif-drawable-native-armeabi/build.gradle
+A	android-gif-drawable-native-armeabi/src/main/AndroidManifest.xml
+M	android-gif-drawable/build.gradle
+M	settings.gradle
+
+3e97174;Add GifSurfaceTextureDrawer cleanup
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifSurfaceTextureDrawer.kt
+
+50b66ac;Add animation to offscreen TextureView
+M	sample/src/main/java/pl/droidsonroids/gif/sample/TextureViewFragment.kt
+M	sample/src/main/res/values/arrays.xml
+
+fa8f3e2;Add offscreen TextureView
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifSurfaceTextureDrawer.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.kt
+A	sample/src/main/java/pl/droidsonroids/gif/sample/TextureViewFragment.kt
+R095	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/GifTexImage2DDrawer.kt	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/GifTexImage2DProgram.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/Renderer.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/GifWallpaperService.kt
+R088	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/EGL14Drawer.kt	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/OffscreenEGLConnection.kt
+M	sample/src/main/res/values/arrays.xml
+
+75ebc98;Dependencies update: - kotlin to 1.2.50 - Gradle to 4.8 - Android Gradle Plugin to 3.1.3
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+196b326;Rewrite HttpFragment using coroutines
+M	sample/build.gradle
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifDownloader.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifLoadTask.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.kt
+
+aa3223e;Increase EGL14 drawer compatibility
+M	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/EGL14Drawer.kt
+
+fedb2a6;Fix import in LiveWallpaperFragment
+M	sample/src/main/java/pl/droidsonroids/gif/sample/LiveWallpaperFragment.kt
+
+71ebf9e;Add Live Wallpaper sample, fixes #298
+M	sample/build.gradle
+A	sample/gradle.properties
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.kt
+A	sample/src/main/java/pl/droidsonroids/gif/sample/LiveWallpaperFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.kt
+A	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/GifTexImage2DDrawer.kt
+A	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/Renderer.kt
+A	sample/src/main/java/pl/droidsonroids/gif/sample/opengl/Utils.kt
+A	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/EGL14Drawer.kt
+A	sample/src/main/java/pl/droidsonroids/gif/sample/wallpaper/GifWallpaperService.kt
+A	sample/src/main/res/layout/live_wallpaper.xml
+M	sample/src/main/res/values/arrays.xml
+M	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/xml/wallpaper.xml
+
+d304754;Merge pull request #546 from koral--/ndk-r17
+1c1ca21;Add support for NDK r17 (without armeabi) and older (with armeabi)
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+
+16e3ac5;Remove bintray plugin
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/gradle.properties
+
+2c769db;Merge pull request #545 from koral--/generic-fixes
+cd8152a;Code cleanup. Add explicit FileDescriptor closing.
+M	CHANGELOG.md
+M	android-gif-drawable/gradle-mvn-push.gradle
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+M	android-gif-drawable/src/test/resources/pl/droidsonroids/gif/robolectric.properties
+
+608022b;Improve compatibility with P preview.
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifIOException.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	build.gradle
+M	sample/build.gradle
+
+d482610;Merge pull request #540 from koral--/deps_bump
+3b023cc;Dependencies version bump: - Gradle 4.7 - Kotlin 1.2.41 - Android Gradle plugin 3.1.2
+M	CHANGELOG.md
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+5013255;Merge pull request #536 from koral--/deps_bump
+55bb0ef;Merge branch 'dev' into deps_bump
+be94d14;update changelog
+M	CHANGELOG.md
+
+437612d;Dependencies version bump:
+M	build.gradle
+
+274aee5;Prepare for 1.2.13 development
+M	android-gif-drawable/gradle.properties
+
+d97e928;Merge pull request #529 from koral--/deps-bump
+29d7819;Dependencies versions bump: Android Gradle plugin 3.1.0 Kotlin 1.2.31 Mockito 2.17.0 mockwebserver 3.10.0
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	build.gradle
+
+bc8ad1e;Prepare for next development iteration. 1.2.13
+M	android-gif-drawable/gradle.properties
+
+ac25a5b;Merge pull request #526 from koral--/dev
+5bdd910;Release 1.2.12
+M	CHANGELOG.md
+M	android-gif-drawable/gradle.properties
+
+0f0b49b;Merge pull request #524 from koral--/chagelog-update
+ef665d5;Update readme and changelog for 1.2.12
+M	CHANGELOG.md
+M	README.md
+
+a5a1a94;Merge pull request #523 from koral--/fix-memset
+f3b4f4d;Remove memset32_neon section from license file.
+M	LICENSE
+
+d675ccc;Remove neon-specific memset. Fixes #522.
+M	android-gif-drawable/src/main/c/CMakeLists.txt
+M	android-gif-drawable/src/main/c/drawing.c
+D	android-gif-drawable/src/main/c/memset32_neon.S
+
+ca6e233;Merge pull request #521 from koral--/glteximage2d-speed
+b296a99;Add speed adjustment to `GifTexImage2D` - closes #520.
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+
+342896d;Dependencies versions bump: Gradle 4.6 Kotlin 1.2.30
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+f6853ed;Merge pull request #517 from koral--/generic-fixes
+255e221;Fix `GifTexImage2D` documentation.
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+
+d957172;Fix library version number in readme.
+M	README.md
+
+611769f;Merge pull request #515 from koral--/generic-fixes
+be572d4;Fix `GifDrawable` invalidation. Rework of #511. Fixes #510. Update changelog.
+M	CHANGELOG.md
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+5bea6c7;Fix custom drawable sample.
+M	sample/proguard-rules.pro
+
+eff24a0;Fix GifDecoder sample.
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifDecoderFragment.kt
+
+c320b00;Prepare for 1.2.12 development iteration.
+M	android-gif-drawable/gradle.properties
+
+a944d31;Merge pull request #514 from koral--/dev
+e3d9e6a;Merge pull request #513 from koral--/gradle-update
+9898b52;Release 1.2.11.
+M	CHANGELOG.md
+M	android-gif-drawable/gradle.properties
+
+ea77b17;Update changelog.
+M	CHANGELOG.md
+
+2b41354;Update Gradle to 4.5.1.
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+f02dc39;Merge pull request #509 from koral--/gradle-update
+986254d;Update changelog.
+M	CHANGELOG.md
+
+ccfdf0d;Update Gradle wrapper to 4.5.
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+4553ee8;Merge pull request #508 from koral--/kotlin-update
+7af161e;Add `GifTexImage2D#getCurrentFrameIndex()`. Closes #506.
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+
+17758f3;Update kotlin to 1.2.21
+M	build.gradle
+
+d8e030d;Prepare for next development iteration
+M	android-gif-drawable/gradle.properties
+
+55ab8a3;Release 1.2.10
+M	CHANGELOG.md
+M	README.md
+M	android-gif-drawable/gradle.properties
+
+f283297;Merge pull request #500 from koral--/deps_bump
+75d463c;Dependencies version bump: - Gradle wrapper 4.4.1 - Leakcanary 1.5.4 - Mockito 2.13
+M	android-gif-drawable/build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/build.gradle
+
+10d4aea;Merge pull request #495 from koral--/abi_targets
+57a3e69;Specify all CMake targets explicitly. Fixes #494.
+M	android-gif-drawable/build.gradle
+
+11bd9bd;Merge pull request #492 from koral--/snapshot_1_2_10
+1aacb20;Prepare for next development iteration
+M	android-gif-drawable/gradle.properties
+
+907ff0d;Merge branch 'master' into dev
+276a70e;Update changelog
+M	CHANGELOG.md
+M	android-gif-drawable/gradle.properties
+
+ff15887;Merge remote-tracking branch 'origin/dev'
+1963270;Update changelog
+M	CHANGELOG.md
+
+639a9a9;Release 1.2.9
+M	README.md
+M	android-gif-drawable/gradle.properties
+
+f43a94d;Fix codestyle in `GifSelectorDrawable`
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifSelectorDrawable.kt
+
+8462cfb;Update kotlin to 1.2.10 Update build tools to 27.0.2 Update changelog
+M	CHANGELOG.md
+M	build.gradle
+
+367f7f0;Add reference to #480 in readme.
+M	README.md
+
+a45fd51;Fix readme. Add information for #480.
+M	README.md
+
+d11ac66;Update kotlin to 1.2.0 Update Gradle wrapper to 4.4 Update Android support to 27.0.2 Update target SDK version to 27
+M	android-gif-drawable/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/build.gradle
+
+b928e88;Update kotlin to 1.1.60 Update Android Gradle plugin to 3.0.1
+M	CHANGELOG.md
+M	build.gradle
+
+921dc83;Update bintray plugin to 1.8.0
+M	android-gif-drawable/build.gradle
+
+665b1da;buildscript cleanup Android support updated to 27.0.1 Changelog updated to reflect #474 Gradle wrapper regenerated with 4.3.1
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+9ac24ce;Add compound drawables animation start when `GifTextView` attached to window. Fixes #474.
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextView.java
+
+5283e1e;minSdkVersion configuration fixed
+M	build.gradle
+M	sample/build.gradle
+
+fe1e50d;Minimum SDK version increased to 14
+M	CHANGELOG.md
+M	LICENSE
+M	README.md
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/PlaceholderDrawingSurfaceTextureListener.java
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifLoadTask.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.kt
+
+4201f45;Support annotations dependency fixed
+M	android-gif-drawable/build.gradle
+
+c851fda;GifDecoder sample added Dependencies version bump: - Android Gradle plugin 3.0.0 - Android Support 27.0.0 - Build tools 27.0.0 - compile SDK version 27
+M	android-gif-drawable/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/build.gradle
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimationControlFragment.kt
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifDecoderFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextureFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/ImageSpanFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/TexturePlaceholderFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesFragment.kt
+A	sample/src/main/res/drawable-nodpi/anim_flag_ok_large.gif
+A	sample/src/main/res/layout/decoder.xml
+M	sample/src/main/res/values/arrays.xml
+M	sample/src/main/res/values/strings.xml
+
+b74ceb5;Improved bound passing to transforms - #450
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/transforms/Transform.java
+
+11a3a2a;Dependencies version bump: - kotlin 1.1.4-3 - Android support 26.0.2
+M	android-gif-drawable/build.gradle
+M	build.gradle
+M	sample/build.gradle
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimationControlFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifLoadTask.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextureFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/ImageSpanFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/TexturePlaceholderFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourceItemHolder.kt
+D	sample/src/main/res/layout-v14/texture.xml
+R100	sample/src/main/res/layout-v14/http.xml	sample/src/main/res/layout/http.xml
+M	sample/src/main/res/layout/texture.xml
+M	sample/src/main/res/values/strings.xml
+
+1e531b8;kotlin version updated to 1.1.4-2
+M	build.gradle
+
+5210f77;Readme updated Prepared for next development iteration
+M	CHANGELOG.md
+M	README.md
+M	android-gif-drawable/gradle.properties
+
+0c9cb6f;Readme updated Prepared for next development iteration
+M	CHANGELOG.md
+M	README.md
+M	android-gif-drawable/gradle.properties
+
+03937f9;Release 1.2.8
+M	CHANGELOG.md
+M	android-gif-drawable/gradle.properties
+
+861bb66;Release 1.2.8
+M	CHANGELOG.md
+M	android-gif-drawable/gradle.properties
+
+fc2e29f;kotlin version updated to 1.1.4 changelog updated
+M	CHANGELOG.md
+M	build.gradle
+
+6b102c7;support test library version updated to 1.0.0
+M	android-gif-drawable/build.gradle
+
+8817246;InputStream test fixed for API<=23
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/InputStreamTest.java
+M	build.gradle
+
+65d2730;Input stream reading fixed
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/gif.c
+
+e2f32ba;ui test plugin added
+M	build.gradle
+
+02e181c;changelog updated and reformated support version bump to 26.0.0 gradle version bump to 4.1 travis.yml removed
+D	.travis.yml
+M	CHANGELOG.md
+M	README.md
+M	android-gif-drawable/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+6db4064;changelog updated and reformated code cleaning build tools version bump to 26.0.1 support version bump to 26.0.0
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/gif.h
+M	android-gif-drawable/src/main/c/jni.c
+M	android-gif-drawable/src/main/c/time.c
+M	build.gradle
+M	sample/build.gradle
+
+98a3cb6;#429 fixed  code cleaning
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/opengl.c
+M	android-gif-drawable/src/main/c/surface.c
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimationControlFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesAdapter.kt
+M	sample/src/main/res/layout-v14/texture.xml
+
+37a434f;changelog fixes and update for #434
+M	CHANGELOG.md
+
+da8587f;Direct byte buffer global reference added, fixes #434
+M	android-gif-drawable/src/main/c/dispose.c
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/c/gif.h
+
+c32c899;Changelog entries for #430 and #433 added
+M	CHANGELOG.md
+
+91fdbb9;dependencies versions bump code cleaning
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/exception.c
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/c/gif.h
+M	android-gif-drawable/src/main/c/giflib/dgif_lib.c
+M	android-gif-drawable/src/main/c/giflib/gifalloc.c
+M	android-gif-drawable/src/main/c/init.c
+M	android-gif-drawable/src/main/c/time.c
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+8f525f1;`GifTexImage2D` javadoc updated fixes #413
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+
+1232ba2;gradle wrapper regenerated with 4.0 kotlin version bumped to 1.1.2-5
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+
+938a7eb;travis config update
+M	.travis.yml
+
+4779f9d;travis config update
+M	.travis.yml
+
+f9116c1;dependencies versions bump travis config update
+M	.travis.yml
+M	build.gradle
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainActivity.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourceItemHolder.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesAdapter.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesResolver.kt
+
+492b940;sample transformed from java to kotlin
+M	build.gradle
+M	sample/build.gradle
+D	sample/src/main/java/pl/droidsonroids/gif/sample/AboutFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AboutFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorDrawableGenerator.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorDrawableGenerator.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/AnimationControlFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AnimationControlFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/BaseFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/BaseFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifLoadTask.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifLoadTask.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifSelectorDrawable.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifSelectorDrawable.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextViewFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextViewFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextureFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextureFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/ImageSpanFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/ImageSpanFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/MainActivity.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/MainActivity.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/TexturePlaceholderFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/TexturePlaceholderFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourceItemHolder.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourceItemHolder.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesAdapter.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesAdapter.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesResolver.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesResolver.kt
+M	sample/src/main/res/layout-v14/texture.xml
+M	sample/src/main/res/layout/animated_selector.xml
+M	sample/src/main/res/layout/animation_control.xml
+
+e649cb5;changelog updated
+M	CHANGELOG.md
+
+17e1c31;dependencies versions bump
+M	android-gif-drawable/build.gradle
+
+c8ea208;loop count attribute added, fixes #176
+M	android-gif-drawable/src/androidTest/AndroidManifest.xml
+A	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/GifDrawableAssert.java
+A	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/GifViewDescriptorTest.java
+A	android-gif-drawable/src/androidTest/res/layout/attrributes.xml
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	android-gif-drawable/src/main/res/values/attrs.xml
+D	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+85989c2;prepared for next development iteration
+M	android-gif-drawable/gradle.properties
+
+900bc03;archiveSymbols task updated to match cmake
+M	android-gif-drawable/build.gradle
+
+279dd7c;dependencies version bump Android Gradle plugin to 2.3.2 Assertj to 3.7.0
+M	android-gif-drawable/build.gradle
+M	build.gradle
+
+661b123;build tools version bump to 25.0.3
+M	.travis.yml
+M	build.gradle
+
+2ea9c0e;kotlin version updated to 1.1.4 changelog updated
+M	CHANGELOG.md
+M	build.gradle
+
+80b5cd8;support test library version updated to 1.0.0
+M	android-gif-drawable/build.gradle
+
+b5a6623;InputStream test fixed for API<=23
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/InputStreamTest.java
+M	build.gradle
+
+19b6839;Input stream reading fixed
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/gif.c
+
+c8ad4a6;ui test plugin added
+M	build.gradle
+
+4f04707;changelog updated and reformated support version bump to 26.0.0 gradle version bump to 4.1 travis.yml removed
+D	.travis.yml
+M	CHANGELOG.md
+M	README.md
+M	android-gif-drawable/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+b5a7f59;changelog updated and reformated code cleaning build tools version bump to 26.0.1 support version bump to 26.0.0
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/gif.h
+M	android-gif-drawable/src/main/c/jni.c
+M	android-gif-drawable/src/main/c/time.c
+M	build.gradle
+M	sample/build.gradle
+
+ae1eabe;#429 fixed  code cleaning
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/opengl.c
+M	android-gif-drawable/src/main/c/surface.c
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimationControlFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesAdapter.kt
+M	sample/src/main/res/layout-v14/texture.xml
+
+bacdb1d;changelog fixes and update for #434
+M	CHANGELOG.md
+
+f56916b;Direct byte buffer global reference added, fixes #434
+M	android-gif-drawable/src/main/c/dispose.c
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/c/gif.h
+
+876b093;Changelog entries for #430 and #433 added
+M	CHANGELOG.md
+
+878caaa;Fixed SIGSEGV for some broken GIFs
+M	android-gif-drawable/src/main/c/decoding.c
+
+5fedadf;fix loopCount
+M	android-gif-drawable/src/main/c/decoding.c
+
+6c7aa23;Fixed SIGSEGV for some broken GIFs
+M	android-gif-drawable/src/main/c/decoding.c
+
+77f3122;fix loopCount
+M	android-gif-drawable/src/main/c/decoding.c
+
+09cd12b;Merge pull request #425 from koral--/cleaning
+5ed2f72;dependencies versions bump code cleaning
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/exception.c
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/c/gif.h
+M	android-gif-drawable/src/main/c/giflib/dgif_lib.c
+M	android-gif-drawable/src/main/c/giflib/gifalloc.c
+M	android-gif-drawable/src/main/c/init.c
+M	android-gif-drawable/src/main/c/time.c
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+dd4addf;Merge remote-tracking branch 'origin/dev' into dev
+1a2d4ce;`GifTexImage2D` javadoc updated fixes #413
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+
+5ecf4f3;gradle wrapper regenerated with 4.0 kotlin version bumped to 1.1.2-5
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+
+af6fd09;Merge pull request #420 from koral--/deps-bump
+461ce64;travis config update
+M	.travis.yml
+
+44e3205;travis config update
+M	.travis.yml
+
+4f76f5e;dependencies versions bump travis config update
+M	.travis.yml
+M	build.gradle
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorFragment.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainActivity.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourceItemHolder.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesAdapter.kt
+M	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesResolver.kt
+
+f502003;Merge pull request #415 from koral--/loop_count
+14de22e;sample transformed from java to kotlin
+M	build.gradle
+M	sample/build.gradle
+D	sample/src/main/java/pl/droidsonroids/gif/sample/AboutFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AboutFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorDrawableGenerator.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorDrawableGenerator.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/AnimationControlFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AnimationControlFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/BaseFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/BaseFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifLoadTask.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifLoadTask.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifSelectorDrawable.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifSelectorDrawable.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextViewFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextViewFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextureFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextureFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/ImageSpanFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/ImageSpanFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/MainActivity.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/MainActivity.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/TexturePlaceholderFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/TexturePlaceholderFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourceItemHolder.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourceItemHolder.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesAdapter.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesAdapter.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesFragment.kt
+D	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesResolver.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesResolver.kt
+M	sample/src/main/res/layout-v14/texture.xml
+M	sample/src/main/res/layout/animated_selector.xml
+M	sample/src/main/res/layout/animation_control.xml
+
+6221bd6;changelog updated
+M	CHANGELOG.md
+
+3efda1d;dependencies versions bump
+M	android-gif-drawable/build.gradle
+
+82984eb;loop count attribute added, fixes #176
+M	android-gif-drawable/src/androidTest/AndroidManifest.xml
+A	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/GifDrawableAssert.java
+A	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/GifViewDescriptorTest.java
+A	android-gif-drawable/src/androidTest/res/layout/attrributes.xml
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	android-gif-drawable/src/main/res/values/attrs.xml
+D	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+6fdbfa0;prepared for next development iteration
+M	android-gif-drawable/gradle.properties
+
+a031d31;archiveSymbols task updated to match cmake
+M	android-gif-drawable/build.gradle
+
+4e82b89;dependencies version bump Android Gradle plugin to 2.3.2 Assertj to 3.7.0
+M	android-gif-drawable/build.gradle
+M	build.gradle
+
+ec0970a;build tools version bump to 25.0.3
+M	.travis.yml
+M	build.gradle
+
+5ab4385;Merge pull request #408 from koral--/dev
+f19fb03;Merge pull request #407 from koral--/release_1_2_7
+4628d51;Merge pull request #406 from koral--/392_fix
+c8bbf7c;version number updated
+M	android-gif-drawable/gradle.properties
+
+661eae0;release 1.2.7
+M	CHANGELOG.md
+M	README.md
+
+8de0578;#392 fixed
+M	CHANGELOG.md
+M	android-gif-drawable/src/main/c/surface.c
+
+a5205d3;Merge pull request #405 from koral--/buildscript_refactor
+64e0ab1;travis config updated
+M	.travis.yml
+
+164e05e;Android Support Library version extracted to constant
+M	android-gif-drawable/build.gradle
+M	build.gradle
+M	sample/build.gradle
+
+a21ae26;gradle build scan added
+M	build.gradle
+
+1280b4e;Merge pull request #403 from koral--/frame_verbosity
+0eb5e41;Frame index out of bounds verbosity changed
+A	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/GifDrawableExceptionTest.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+018b12f;Malformed input support improved, fixes #394
+M	CHANGELOG.md
+M	android-gif-drawable/src/main/c/decoding.c
+
+703d8a2;dependencies version bump, `-g` cFlag added to debug build
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+c8a203d;changelog updated
+M	CHANGELOG.md
+M	android-gif-drawable/gradle.properties
+
+a54b9b2;dependencies versions updated: Android gradle plugin to 2.3.0 Android support to 25.3.1
+M	android-gif-drawable/build.gradle
+D	android-gif-drawable/src/main/c/Android.mk
+D	android-gif-drawable/src/main/c/Application.mk
+D	buddybuild_prebuild.sh
+M	build.gradle
+M	sample/build.gradle
+
+587ca0d;Merge pull request #399 from storix/feature/gifdrawable-easysubclass
+622471f;Add createHandlerWith helper method
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/InputSource.java
+
+455c845;Add GIfDrawable new protected constructor
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+fffde9b;Remove unused imports
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+
+2ba1c12;Add getters for the builder private fields
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawableInit.java
+
+a559201;Refactor GifDrawableBuilder to allow subclassing
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+A	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawableInit.java
+
+ac86d1c;Merge pull request #397 from burnoo/patch-1
+ed136e7;Update README formatting
+M	README.md
+
+e2fead1;Merge pull request #396 from koral--/koral---patch-1
+e818e5f;Readme labels fixed
+M	README.md
+
+ccdd8c5;gradle properties updated for version 1.2.6
+M	android-gif-drawable/gradle.properties
+
+9f34226;release 1.2.6
+M	CHANGELOG.md
+M	README.md
+
+858ce13;travis config updated
+M	.travis.yml
+
+2425a6f;InputStream source initialization edge cases fixed
+M	android-gif-drawable/src/main/c/dispose.c
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/c/gif.h
+
+e49d647;Robolectric updated to 3.3.1 Mockito updated to 2.7.15 Gradle wrapper regenerated with 3.4.1 Changelog updated
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+e8aa713;Added `GifTexImage2D#getDuration()`
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+
+16bb3c1;JNI method ids obtaining fixed - #391 input stream closing fixed
+M	android-gif-drawable/src/main/c/dispose.c
+M	android-gif-drawable/src/main/c/gif.c
+
+a5eb1b0;assertj version bump
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/CallbackWeakReferenceTest.java
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifDrawableBuilderTest.java
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifOptionsTest.java
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+19b7370;changelog updated, dependencies version bump
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+
+ce478a6;buddybuild prebuild script fixed
+M	buddybuild_prebuild.sh
+
+c3543fb;buddybuild prebuilt script added
+A	buddybuild_prebuild.sh
+
+34d4e76;native build system switched to cmake
+M	.travis.yml
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/CMakeLists.txt
+M	android-gif-drawable/src/main/c/drawing.c
+A	gradle.properties
+
+5d833f5;NDK version updated to 14
+M	.travis.yml
+
+3d089e0;possible fix for #389
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/CMakeLists.txt
+M	android-gif-drawable/src/main/c/drawing.c
+M	android-gif-drawable/src/main/c/memset.arm.S
+M	android-gif-drawable/src/main/c/memset32_neon.S
+
+01f6438;ndk-build replaced with cmake
+M	android-gif-drawable/.gitignore
+M	android-gif-drawable/build.gradle
+A	android-gif-drawable/src/main/c/CMakeLists.txt
+
+cca1802;dependencies versions bump
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	sample/build.gradle
+
+412c637;gradle updated to 3.4
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+43081d5;sample app version name fixed
+M	sample/build.gradle
+
+0da18b6;test build type configuration fixed
+M	android-gif-drawable/build.gradle
+
+b28d332;testBuildType set to release to be recognizable by IDE mockito version bump
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/ErrnoMessageTest.java
+
+cf51992;archive symbols task added prepared for next development iteration
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/gradle.properties
+
+6379365;library version number updated in readme
+M	README.md
+
+fea38de;release 1.2.5
+M	CHANGELOG.md
+M	android-gif-drawable/gradle.properties
+
+ed351fb;- Mockito updated to 2.7.0 - Support library dependency version updated to 25.1.1
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	sample/build.gradle
+
+4505104;mockito updated to 2.6.8 buildscript cleaning
+M	android-gif-drawable/build.gradle
+M	sample/build.gradle
+
+dbb1080;Unneeded debugging symbols removed, #383 fixed
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/main/c/Android.mk
+
+56e5af9;Merge branch 'master' into dev
+725305e;#380 fixed
+M	LICENSE
+
+5788730;code cleaning
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorFragment.java
+
+5b998cc;- Robolectric version updated to 3.2.2 - Mockito updated to 2.6.2 - Gradle wrapper regenerated with 3.3 - Changelog updated
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+R100	android-gif-drawable/src/test/resources/robolectric.properties	android-gif-drawable/src/test/resources/pl/droidsonroids/gif/robolectric.properties
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+44afef8;#379 fixed
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/ReLinker.java
+
+3a81020;prepared for next development iteration
+M	CHANGELOG.md
+M	android-gif-drawable/gradle.properties
+
+96a7276;release 1.2.4
+M	CHANGELOG.md
+M	README.md
+M	android-gif-drawable/gradle.properties
+
+c024e8b;native code cleaning
+M	android-gif-drawable/src/main/c/drawing.c
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/c/gif.h
+M	android-gif-drawable/src/main/c/jni.c
+M	android-gif-drawable/src/main/c/opengl.c
+M	android-gif-drawable/src/main/c/surface.c
+
+d7d545a;fixed clearing canvas with background color
+M	CHANGELOG.md
+M	android-gif-drawable/src/main/c/drawing.c
+
+44f1b6f;travis verbosity decreased
+M	.travis.yml
+
+135dd11;robolectric downgraded to 3.1.4
+M	android-gif-drawable/build.gradle
+
+371fe79;dependencies version bump jack enabled in sample project
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/build.gradle
+
+a9dba98;Merge branch 'master' into dev
+8b61a26;Merge pull request #374 from searchy2/master
+e42ed8b;Update README.md
+M	README.md
+
+bbca761;Update ReadMe description for URI
+M	README.md
+
+521fea1;bintray api key placeholder added
+M	android-gif-drawable/gradle.properties
+
+8f08a2a;bintray plugin added builscrupt cleaning
+M	android-gif-drawable/build.gradle
+M	build.gradle
+M	sample/build.gradle
+
+13c35e4;texture placeholder input stream fixed
+M	sample/src/main/java/pl/droidsonroids/gif/sample/TexturePlaceholderFragment.java
+
+9c49dcc;mockito version updated
+M	android-gif-drawable/build.gradle
+
+20fcfb7;travis config updated
+M	.travis.yml
+
+36ceeb1;dependencies version bump
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/CallbackWeakReferenceTest.java
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java
+M	build.gradle
+M	sample/build.gradle
+
+94dc9dd;mockito updated to 2.2.27 leakcanary updated to 1.5
+M	android-gif-drawable/build.gradle
+M	sample/build.gradle
+
+dd2bcba;native code cleaning
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/c/gif.h
+
+2a4edb3;sample pages adapter refactor
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.java
+
+f94f6a2;sample code cleaning
+M	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorFragment.java
+
+50d9219;Example for #364 added
+M	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorDrawableGenerator.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AnimatedSelectorFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifSelectorDrawable.java
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.java
+A	sample/src/main/res/drawable-v24/selector.xml
+A	sample/src/main/res/drawable/selector.xml
+A	sample/src/main/res/layout/animated_selector.xml
+M	sample/src/main/res/values/arrays.xml
+M	sample/src/main/res/values/strings.xml
+
+8e0f7ef;native code reformat
+M	android-gif-drawable/src/main/c/bitmap.c
+M	android-gif-drawable/src/main/c/control.c
+M	android-gif-drawable/src/main/c/decoding.c
+M	android-gif-drawable/src/main/c/dispose.c
+M	android-gif-drawable/src/main/c/exception.c
+M	android-gif-drawable/src/main/c/gif.h
+M	android-gif-drawable/src/main/c/jni.c
+M	android-gif-drawable/src/main/c/metadata.c
+M	android-gif-drawable/src/main/c/opengl.c
+M	android-gif-drawable/src/main/c/surface.c
+M	android-gif-drawable/src/main/c/time.c
+
+f2b8798;#352 - Input stream buffer extended to 8K
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/c/gif.h
+
+be9c435;build tools updated to 25.0.1 travis config updated
+M	.travis.yml
+M	CHANGELOG.md
+M	build.gradle
+
+07b8738;dependencies version bumped changelog updated
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	sample/build.gradle
+
+8d1f640;stream read function refactor
+M	android-gif-drawable/src/main/c/gif.c
+
+05c4d3c;native code reformat
+M	android-gif-drawable/src/main/c/dispose.c
+M	android-gif-drawable/src/main/c/gif.c
+
+92c382d;Note about proguard config change added to readme Robolectric config moved to properties file
+M	README.md
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/MultiCallbackTest.java
+A	android-gif-drawable/src/test/resources/robolectric.properties
+
+299be11;Merge branch 'master' into dev
+05b0460;Added errno text to GifIOException messages, fixes #340 Added missing file descriptor closing in case of open fail
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/consumer-proguard-rules.pro
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/AllocationByteCountTest.java
+A	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/ErrnoMessageTest.java
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/InputStreamTest.java
+M	android-gif-drawable/src/main/c/exception.c
+M	android-gif-drawable/src/main/c/gif.c
+M	android-gif-drawable/src/main/c/gif.h
+M	android-gif-drawable/src/main/c/init.c
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifIOException.java
+
+0d047a3;jni directory name changed to c
+M	android-gif-drawable/Doxyfile
+M	android-gif-drawable/build.gradle
+R084	android-gif-drawable/src/main/jni/Android.mk	android-gif-drawable/src/main/c/Android.mk
+R100	android-gif-drawable/src/main/jni/Application.mk	android-gif-drawable/src/main/c/Application.mk
+R100	android-gif-drawable/src/main/jni/bitmap.c	android-gif-drawable/src/main/c/bitmap.c
+R100	android-gif-drawable/src/main/jni/control.c	android-gif-drawable/src/main/c/control.c
+R100	android-gif-drawable/src/main/jni/decoding.c	android-gif-drawable/src/main/c/decoding.c
+A	android-gif-drawable/src/main/c/dispose.c
+R100	android-gif-drawable/src/main/jni/drawing.c	android-gif-drawable/src/main/c/drawing.c
+R100	android-gif-drawable/src/main/jni/exception.c	android-gif-drawable/src/main/c/exception.c
+R068	android-gif-drawable/src/main/jni/gif.c	android-gif-drawable/src/main/c/gif.c
+R096	android-gif-drawable/src/main/jni/gif.h	android-gif-drawable/src/main/c/gif.h
+R100	android-gif-drawable/src/main/jni/giflib/dgif_lib.c	android-gif-drawable/src/main/c/giflib/dgif_lib.c
+R100	android-gif-drawable/src/main/jni/giflib/gif_lib.h	android-gif-drawable/src/main/c/giflib/gif_lib.h
+R100	android-gif-drawable/src/main/jni/giflib/gif_lib_private.h	android-gif-drawable/src/main/c/giflib/gif_lib_private.h
+R100	android-gif-drawable/src/main/jni/giflib/gifalloc.c	android-gif-drawable/src/main/c/giflib/gifalloc.c
+R100	android-gif-drawable/src/main/jni/giflib/openbsd-reallocarray.c	android-gif-drawable/src/main/c/giflib/openbsd-reallocarray.c
+R072	android-gif-drawable/src/main/jni/open_close.c	android-gif-drawable/src/main/c/init.c
+A	android-gif-drawable/src/main/c/jni.c
+R100	android-gif-drawable/src/main/jni/memset.arm.S	android-gif-drawable/src/main/c/memset.arm.S
+R100	android-gif-drawable/src/main/jni/memset32_neon.S	android-gif-drawable/src/main/c/memset32_neon.S
+R100	android-gif-drawable/src/main/jni/metadata.c	android-gif-drawable/src/main/c/metadata.c
+R100	android-gif-drawable/src/main/jni/opengl.c	android-gif-drawable/src/main/c/opengl.c
+R100	android-gif-drawable/src/main/jni/surface.c	android-gif-drawable/src/main/c/surface.c
+R100	android-gif-drawable/src/main/jni/time.c	android-gif-drawable/src/main/c/time.c
+
+5eb335d;latest version number in changelog corrected
+M	CHANGELOG.md
+
+6ad329a;mockito updated to 2.2.15
+M	android-gif-drawable/build.gradle
+
+a82670e;native code cleaning
+M	android-gif-drawable/src/main/jni/gif.c
+M	android-gif-drawable/src/main/jni/gif.h
+M	android-gif-drawable/src/main/jni/metadata.c
+
+3ff7d5d;prepared for next development iteration
+M	android-gif-drawable/gradle.properties
+
+ed61c40;Merge branch 'dev'
+a320b21;release 1.2.3
+M	README.md
+M	android-gif-drawable/gradle.properties
+
+7a40872;travis config updated
+M	.travis.yml
+
+0325606;travis config updated
+M	.travis.yml
+
+e9213f4;travis config updated
+M	.travis.yml
+
+053d8f5;travis config updated
+M	.travis.yml
+
+d30da2d;travis config updated
+M	.travis.yml
+
+1fb3d16;Missing @Beta annotation added package-info.java added travis config updated
+M	.travis.yml
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+A	android-gif-drawable/src/main/java/pl/droidsonroids/gif/package-info.java
+A	android-gif-drawable/src/main/java/pl/droidsonroids/gif/transforms/package-info.java
+
+4bb4d4b;javadoc links corrected
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+
+cd59ba2;`GifAnimationMetadata#getDrawableAllocationByteCount()` parameter changed to `GifDrawable`
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/AllocationByteCountTest.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+
+7fb974e;`GifAnimationMetadata#getDrawableAllocationByteCount()` corrected
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+
+6388864;`GifAnimationMetadata#getDrawableAllocationByteCount()` added
+M	CHANGELOG.md
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/AllocationByteCountTest.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+
+2f78a2b;`GifAnimationMetadata#getAllocationByteCount()` javadoc extended
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+
+0718a3c;`GifAnimationMetadata#getAllocationByteCount()` added to changelog and test
+M	CHANGELOG.md
+A	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/AllocationByteCountTest.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+
+c68663c;Sketch added to README
+M	README.md
+
+34464c1;Merge branch 'master' into dev
+0f39057;Sketch added to README
+M	README.md
+
+ffc68e6;robolectric version updated
+M	android-gif-drawable/build.gradle
+
+0b8f8de;javadoc corrected
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+aa0938b;`GifTextureView` placeholder added, #350 done
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+A	android-gif-drawable/src/main/java/pl/droidsonroids/gif/PlaceholderDrawingSurfaceTextureListener.java
+M	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/TexturePlaceholderFragment.java
+M	sample/src/main/res/values/arrays.xml
+
+b907f6a;ndk updated to r13b
+M	.travis.yml
+
+10c33c8;mockito version updated `InputStreamTest` code cleaning `SurfaceTexture` releasing added in `GifTextureView`
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/InputStreamTest.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+71aab58;assertj version corrected unit tests adapted to mockito 2
+M	android-gif-drawable/build.gradle
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java
+M	build.gradle
+
+9063377;#353 fixed dependencies updated fixed possible segmentation fault whdrawing with no raster allocated
+M	android-gif-drawable/build.gradle
+A	android-gif-drawable/src/androidTest/AndroidManifest.xml
+A	android-gif-drawable/src/androidTest/java/pl/droidsonroids/gif/InputStreamTest.java
+A	android-gif-drawable/src/androidTest/res/raw/test.gif
+M	android-gif-drawable/src/main/jni/drawing.c
+M	android-gif-drawable/src/main/jni/gif.c
+
+ef740d8;License added to travis config
+M	.travis.yml
+
+3856a25;- Support library dependency version updated to 25.0.0 - Android gradle plugin updated to 2.2.2 - Build tools version updated to 25 - compile and target SDK versions bumped to 25
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	build.gradle
+M	sample/build.gradle
+
+9d8066c;return value added to `GifDrawableBuilder#sampleSize` error #1004 message corrected
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifError.java
+
+022967b;`GifAnimationMetadata#getAllocationByteCount()` javadocs corrected
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+
+e616a4f;javadocs corrected
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+eeaeb59;gradle plugin updated to 2.2.1
+M	CHANGELOG.md
+M	build.gradle
+
+fedb39d;byte counters added to `GifAnimationMetadata`
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	android-gif-drawable/src/main/jni/metadata.c
+
+491b8b4;fixed `GifDrawable#getAllocationByteCount()` to return value consistent with docs (taking optional dispose to previous into account) added `GifDrawable#getMetadataByteCount()`, fixes #348
+M	CHANGELOG.md
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDecoder.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	android-gif-drawable/src/main/jni/metadata.c
+
+81117e4;code cleaning and reformat
+M	CHANGELOG.md
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/InputSource.java
+M	android-gif-drawable/src/main/jni/gif.c
+M	android-gif-drawable/src/main/jni/gif.h
+M	android-gif-drawable/src/main/jni/open_close.c
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/MultiCallbackTest.java
+M	sample/src/main/res/layout-v14/texture.xml
+M	sample/src/main/res/layout/about.xml
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/layout/compound_drawables.xml
+M	sample/src/main/res/layout/opengl.xml
+M	sample/src/main/res/layout/source_item.xml
+M	sample/src/main/res/layout/texture.xml
+
+190baf5;ndk updated to 13
+M	.travis.yml
+
+576d43c;travis config updated
+M	.travis.yml
+
+e6b58d9;Build tools version updated to 24.0.3
+M	CHANGELOG.md
+M	android-gif-drawable/build.gradle
+M	sample/build.gradle
+
+74357f2;NonNull annotations added to MultiCallback
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/MultiCallback.java
+
+eaaed78;Resource validation annotations corrected, .gitignore cleanup.
+M	.gitignore
+M	android-gif-drawable/.gitignore
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/InputSource.java
+
+3d38bdc;native memory allocation optimizations
+M	android-gif-drawable/src/main/jni/decoding.c
+M	android-gif-drawable/src/main/jni/gif.h
+M	android-gif-drawable/src/main/jni/open_close.c
+
+fd883c2;support annotations cleaning
+M	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.java
+
+af378e8;support annotations corrected in sample
+M	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.java
+
+0665f04;support annotations corrected
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/ReLinker.java
+
+fdc77a0;support annotations cleaning
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	android-gif-drawable/src/main/java/pl/droidsonroids/gif/ReLinker.java
+M	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java
+M	sample/src/main/java/pl/droidsonroids/gif/sample/GifLoadTask.java
+M	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.java
+M	sample/src/main/java/pl/droidsonroids/gif/sample/ImageSpanFragment.java
+
+2324964;api level in readme corrected (cherry picked from commit ae7b8ec)
+M	README.md
+
+3c42b51;version in readme updated
+M	README.md
+
+a796c35;Update README.md
+M	README.md
+
+ae7b8ec;api level in readme corrected
+M	README.md
+
+f684f5d;missing drawable restored
+A	sample/src/main/res/drawable-nodpi/led7.gif
+
+b4fa019;travis config updated
+R085	android-gif-drawable/.travis.yml	.travis.yml
+
+c4f615b;#342 done
+M	.gitignore
+M	README.md
+A	android-gif-drawable/.gitignore
+R100	.travis.yml	android-gif-drawable/.travis.yml
+R100	Doxyfile	android-gif-drawable/Doxyfile
+A	android-gif-drawable/build.gradle
+R100	consumer-proguard-rules.pro	android-gif-drawable/consumer-proguard-rules.pro
+R100	gradle-mvn-push.gradle	android-gif-drawable/gradle-mvn-push.gradle
+R100	gradle.properties	android-gif-drawable/gradle.properties
+R100	src/main/AndroidManifest.xml	android-gif-drawable/src/main/AndroidManifest.xml
+R100	src/main/java/pl/droidsonroids/gif/AnimationListener.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/AnimationListener.java
+R100	src/main/java/pl/droidsonroids/gif/ConditionVariable.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/ConditionVariable.java
+R100	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+R100	src/main/java/pl/droidsonroids/gif/GifDecoder.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDecoder.java
+R100	src/main/java/pl/droidsonroids/gif/GifDrawable.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+R100	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+R100	src/main/java/pl/droidsonroids/gif/GifError.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifError.java
+R100	src/main/java/pl/droidsonroids/gif/GifIOException.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifIOException.java
+R100	src/main/java/pl/droidsonroids/gif/GifImageButton.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifImageButton.java
+R100	src/main/java/pl/droidsonroids/gif/GifImageView.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifImageView.java
+R100	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+R100	src/main/java/pl/droidsonroids/gif/GifOptions.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifOptions.java
+R100	src/main/java/pl/droidsonroids/gif/GifRenderingExecutor.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifRenderingExecutor.java
+R100	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+R100	src/main/java/pl/droidsonroids/gif/GifTextView.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextView.java
+R100	src/main/java/pl/droidsonroids/gif/GifTextureView.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifTextureView.java
+R100	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+R100	src/main/java/pl/droidsonroids/gif/GifViewUtils.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+R100	src/main/java/pl/droidsonroids/gif/InputSource.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/InputSource.java
+R100	src/main/java/pl/droidsonroids/gif/InvalidationHandler.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/InvalidationHandler.java
+R100	src/main/java/pl/droidsonroids/gif/LibraryLoader.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+R100	src/main/java/pl/droidsonroids/gif/MultiCallback.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/MultiCallback.java
+R100	src/main/java/pl/droidsonroids/gif/ReLinker.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/ReLinker.java
+R100	src/main/java/pl/droidsonroids/gif/RenderTask.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/RenderTask.java
+R100	src/main/java/pl/droidsonroids/gif/SafeRunnable.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/SafeRunnable.java
+R100	src/main/java/pl/droidsonroids/gif/annotations/Beta.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/annotations/Beta.java
+R100	src/main/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java
+R100	src/main/java/pl/droidsonroids/gif/transforms/Transform.java	android-gif-drawable/src/main/java/pl/droidsonroids/gif/transforms/Transform.java
+R100	src/main/jni/Android.mk	android-gif-drawable/src/main/jni/Android.mk
+R100	src/main/jni/Application.mk	android-gif-drawable/src/main/jni/Application.mk
+R100	src/main/jni/bitmap.c	android-gif-drawable/src/main/jni/bitmap.c
+R100	src/main/jni/control.c	android-gif-drawable/src/main/jni/control.c
+R100	src/main/jni/decoding.c	android-gif-drawable/src/main/jni/decoding.c
+R100	src/main/jni/drawing.c	android-gif-drawable/src/main/jni/drawing.c
+R100	src/main/jni/exception.c	android-gif-drawable/src/main/jni/exception.c
+R100	src/main/jni/gif.c	android-gif-drawable/src/main/jni/gif.c
+R100	src/main/jni/gif.h	android-gif-drawable/src/main/jni/gif.h
+R100	src/main/jni/giflib/dgif_lib.c	android-gif-drawable/src/main/jni/giflib/dgif_lib.c
+R100	src/main/jni/giflib/gif_lib.h	android-gif-drawable/src/main/jni/giflib/gif_lib.h
+R100	src/main/jni/giflib/gif_lib_private.h	android-gif-drawable/src/main/jni/giflib/gif_lib_private.h
+R100	src/main/jni/giflib/gifalloc.c	android-gif-drawable/src/main/jni/giflib/gifalloc.c
+R100	src/main/jni/giflib/openbsd-reallocarray.c	android-gif-drawable/src/main/jni/giflib/openbsd-reallocarray.c
+R100	src/main/jni/memset.arm.S	android-gif-drawable/src/main/jni/memset.arm.S
+R100	src/main/jni/memset32_neon.S	android-gif-drawable/src/main/jni/memset32_neon.S
+R100	src/main/jni/metadata.c	android-gif-drawable/src/main/jni/metadata.c
+R100	src/main/jni/open_close.c	android-gif-drawable/src/main/jni/open_close.c
+R100	src/main/jni/opengl.c	android-gif-drawable/src/main/jni/opengl.c
+R100	src/main/jni/surface.c	android-gif-drawable/src/main/jni/surface.c
+R100	src/main/jni/time.c	android-gif-drawable/src/main/jni/time.c
+R100	src/main/res/values/attrs.xml	android-gif-drawable/src/main/res/values/attrs.xml
+R100	src/test/java/pl/droidsonroids/gif/CallbackWeakReferenceTest.java	android-gif-drawable/src/test/java/pl/droidsonroids/gif/CallbackWeakReferenceTest.java
+R100	src/test/java/pl/droidsonroids/gif/ConditionVariableTest.java	android-gif-drawable/src/test/java/pl/droidsonroids/gif/ConditionVariableTest.java
+R100	src/test/java/pl/droidsonroids/gif/GifDrawableBuilderTest.java	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifDrawableBuilderTest.java
+R100	src/test/java/pl/droidsonroids/gif/GifOptionsTest.java	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifOptionsTest.java
+R100	src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java
+R100	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java	android-gif-drawable/src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+R100	src/test/java/pl/droidsonroids/gif/MultiCallbackTest.java	android-gif-drawable/src/test/java/pl/droidsonroids/gif/MultiCallbackTest.java
+M	build.gradle
+M	gradlew.bat
+A	sample/.gitignore
+A	sample/README.md
+A	sample/build.gradle
+A	sample/proguard-rules.pro
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/assets/Animated-Flag-Delaware.gif
+A	sample/src/main/assets/Animated-Flag-Estonia.gif
+A	sample/src/main/assets/Animated-Flag-Finland.gif
+A	sample/src/main/assets/Animated-Flag-France.gif
+A	sample/src/main/assets/Animated-Flag-Georgia.gif
+A	sample/src/main/assets/Animated-Flag-Greece.gif
+A	sample/src/main/assets/Animated-Flag-Hungary.gif
+A	sample/src/main/assets/Animated-Flag-Uruguay.gif
+A	sample/src/main/assets/Animated-Flag-Virgin_Islands.gif
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AboutFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/AnimationControlFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/BaseFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifLoadTask.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifTexImage2DFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextViewFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/GifTextureFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/HttpFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/ImageSpanFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/MainActivity.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/MainPagerAdapter.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourceItemHolder.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesAdapter.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesFragment.java
+A	sample/src/main/java/pl/droidsonroids/gif/sample/sources/GifSourcesResolver.java
+A	sample/src/main/res/drawable-hdpi/ic_launcher.png
+A	sample/src/main/res/drawable-mdpi/ic_launcher.png
+A	sample/src/main/res/drawable-nodpi/anim_flag_chile.gif
+A	sample/src/main/res/drawable-nodpi/anim_flag_england.gif
+A	sample/src/main/res/drawable-nodpi/anim_flag_greenland.gif
+A	sample/src/main/res/drawable-nodpi/anim_flag_iceland.gif
+A	sample/src/main/res/drawable-xhdpi/ic_launcher.png
+A	sample/src/main/res/drawable-xxhdpi/ic_launcher.png
+A	sample/src/main/res/layout-v14/http.xml
+A	sample/src/main/res/layout-v14/texture.xml
+A	sample/src/main/res/layout/about.xml
+A	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/layout/animation_control.xml
+A	sample/src/main/res/layout/compound_drawables.xml
+A	sample/src/main/res/layout/opengl.xml
+A	sample/src/main/res/layout/source_item.xml
+A	sample/src/main/res/layout/texture.xml
+A	sample/src/main/res/raw/anim_flag_hungary.gif
+A	sample/src/main/res/values/arrays.xml
+A	sample/src/main/res/values/strings.xml
+A	settings.gradle
+
+6f3d87e;workaround for lint bug https://code.google.com/p/android/issues/detail?id=222921 added
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/InputSource.java
+
+79d0f12;android gradle plugin updated to 2.2.0 externalNativeBuild enabled gradle updated to 3.1 gradle wrapper regenerated
+M	.gitignore
+M	CHANGELOG.md
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	gradlew.bat
+D	ndk.gradle
+
+3955672;Added NDK location check to buildscript with user friendly message for #341 Support library dependency version updated to 24.2.1
+M	CHANGELOG.md
+M	build.gradle
+M	ndk.gradle
+
+96f37dc;prepared for next development iteration
+M	gradle.properties
+
+9fcefa8;native code cleaning and reformat
+M	src/main/jni/gif.c
+
+6cd379e;release 1.2.2
+M	gradle.properties
+
+bcd4d21;native code cleaning
+M	CHANGELOG.md
+M	src/main/jni/control.c
+
+e3f3f94;GifLib error code propagation fix reworked
+M	src/main/jni/gif.c
+
+21f5e6d;Revert "GifLib error code propagation fixed"
+M	CHANGELOG.md
+M	src/main/jni/gif.c
+
+069d14a;GifLib error code propagation fixed
+M	CHANGELOG.md
+M	src/main/jni/gif.c
+
+9c9c011;Fixed NPE in GifTexImage2D.release() when constructor threw an exception
+M	gradle.properties
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+
+e122daa;release 1.2.1
+M	CHANGELOG.md
+M	README.md
+M	gradle.properties
+
+b4db8a8;`GifTexImage2D` releasing race condition fixed
+M	CHANGELOG.md
+M	gradle.properties
+M	src/main/jni/opengl.c
+
+357c97a;- build tools version bump - support library dependency version bump
+M	.travis.yml
+M	build.gradle
+
+0595387;README updated
+M	README.md
+
+e418a0b;release 1.2.0
+M	CHANGELOG.md
+M	gradle.properties
+
+7a33498;Android gradle plugin updated to 2.1.3
+M	CHANGELOG.md
+M	build.gradle
+
+86e496c;#333 fixed
+M	CHANGELOG.md
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+
+06224d2;changelog cleaning
+M	CHANGELOG.md
+
+db163ac;native libraries squashed to one file
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/opengl.c
+M	src/main/jni/surface.c
+
+dc282d1;android support library updated to 24.1.0 build tools updated to 24.0.1 gradle wrapper updated to 2.14.1
+M	CHANGELOG.md
+
+3f84f6e;robolectric updated to 3.1.1
+M	CHANGELOG.md
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+f03bbec;Code cleaning, GifTexImage2D params javadoc added
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+f965747;GifViewUtilsTest updated to Robolectric 3.1.2, native compile task inputs and outputs added
+M	ndk.gradle
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+91a92b6;Surface native library cleanup added
+M	ndk.gradle
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+
+f0e8f74;native code cleaning
+M	src/main/jni/gif.h
+M	src/main/jni/opengl.c
+M	src/main/jni/surface.c
+
+21bb873;common surface and tex image code unified
+M	src/main/jni/gif.h
+M	src/main/jni/opengl.c
+M	src/main/jni/surface.c
+
+d71dffb;#330 fixed
+M	CHANGELOG.md
+M	src/main/jni/drawing.c
+
+08abac7;code cleaning, #287 continuation
+M	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/opengl.c
+
+ba5a050;Update .travis.yml
+M	.travis.yml
+
+4bc50a7;robolectric version bump, unit tests corrected
+M	build.gradle
+M	src/test/java/pl/droidsonroids/gif/GifDrawableBuilderTest.java
+M	src/test/java/pl/droidsonroids/gif/GifOptionsTest.java
+
+994f3a3;code cleaning, clang warning level increased, #287 begin
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifOptions.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/Android.mk
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/opengl.c
+M	src/main/jni/surface.c
+
+37a0949;native opengl code cleaning opengl-api dependency scope changed to provided
+M	build.gradle
+M	src/main/jni/opengl.c
+
+1d7fddd;unit test code cleaning
+M	build.gradle
+D	src/test/java/javax/microedition/khronos/opengles/GL.java
+M	src/test/java/pl/droidsonroids/gif/ConditionVariableTest.java
+M	src/test/java/pl/droidsonroids/gif/GifDrawableBuilderTest.java
+M	src/test/java/pl/droidsonroids/gif/GifOptionsTest.java
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+190836a;native libraries squashed to one file
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+M	src/main/jni/Android.mk
+M	src/main/jni/Application.mk
+M	src/main/jni/gif.h
+M	src/test/java/pl/droidsonroids/gif/MultiCallbackTest.java
+
+4dd0aa4;android support library updated to 24.1.0 build tools updated to 24.0.1 gradle wrapper updated to 2.14.1
+M	CHANGELOG.md
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+52382bc;robolectric updated to 3.1.1
+M	CHANGELOG.md
+M	build.gradle
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+b680465;typos in readme fixed
+M	README.md
+
+af09c06;readme update
+M	README.md
+
+bab9ca4;prepared for next development iteration
+M	CHANGELOG.md
+M	gradle.properties
+
+37caec4;release 1.1.17
+M	gradle.properties
+
+2ea64dd;changelog updated, code cleaning
+M	CHANGELOG.md
+M	src/main/jni/giflib/openbsd-reallocarray.c
+
+5943e57;ndk version bumped to r12b, app_platform lowered to 23, to avoid LIBC_N
+M	.travis.yml
+M	src/main/jni/Application.mk
+
+25c4255;gl mutex destroying fixed, code cleaning
+M	src/main/jni/opengl.c
+M	src/main/jni/surface.c
+
+58777bf;app_platform updated to 24
+M	src/main/jni/Application.mk
+
+49be012;glTexSubImage2D call wrapped with mutex
+M	src/main/jni/opengl.c
+
+ee7a208;changelog updated
+M	CHANGELOG.md
+
+495ae24;GifViewUtilsTest updated
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+0e7eecd;travis cache enabled
+M	.travis.yml
+
+80b0c52;render mutex added to GifTexImage2D, mutex code cleaning
+M	src/main/jni/opengl.c
+M	src/main/jni/surface.c
+
+506ab54;ndk version in travis config updated
+M	.travis.yml
+
+c70c6d4;travis config update
+M	.travis.yml
+
+123c856;compileSdkVersion corrected
+M	build.gradle
+
+a09b39f;unit tests updated
+M	build.gradle
+A	src/test/java/javax/microedition/khronos/opengles/GL.java
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+M	src/test/java/pl/droidsonroids/gif/MultiCallbackTest.java
+
+f8b1cc6;robolectric updated
+M	build.gradle
+
+222f23a;travis config updated
+M	.travis.yml
+
+ec25146;travis config updated
+M	.travis.yml
+
+e51287b;Compile, target sdks and support library version updated to 24
+M	.travis.yml
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/InputSource.java
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java
+
+37353cd;Gradle wrapper updated to 2.14
+M	CHANGELOG.md
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+a6e75d0;GCB reading code cleaning
+M	src/main/jni/decoding.c
+
+2d375e9;Assign default GCB if GCE not present for given frame, fixes #309
+M	src/main/jni/decoding.c
+
+f0b19ac;Android gradle plugin updated to 2.1.2
+M	CHANGELOG.md
+M	build.gradle
+
+e029053;GCB initializing unified, license notes cleanup
+M	CHANGELOG.md
+M	LICENSE
+M	src/main/jni/decoding.c
+M	src/main/jni/gif.h
+M	src/main/jni/memset.arm.S
+M	src/main/jni/open_close.c
+
+5077341;use more reasonable default GCB - fixes #305 fixed dirty surface region bounds javadoc badge added to readme
+M	README.md
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+9eff185;- Fixed erroneous `GifDrawableBuilder#options()` argument modification after calling `GifDrawableBuilder#sampleSize()` - Javadoc improvements - Added passing opacity hint from `GifOptions` to `Bitmap` (framebuffer) in `GifDrawable`
+M	CHANGELOG.md
+M	src/main/java/pl/droidsonroids/gif/GifDecoder.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifOptions.java
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+A	src/test/java/pl/droidsonroids/gif/GifDrawableBuilderTest.java
+A	src/test/java/pl/droidsonroids/gif/GifOptionsTest.java
+
+0a7a7ba;prepared for next development iteration
+M	CHANGELOG.md
+M	gradle.properties
+
+6aa0f51;readme updated
+M	README.md
+
+f5ff5fa;release 1.1.16
+M	gradle.properties
+
+b3d0f34;changelog updated
+M	CHANGELOG.md
+
+ed881b9;GifOptions added to GifDecoder Allowed saved state which are not instance of GifViewSavedState - #303
+M	src/main/java/pl/droidsonroids/gif/GifDecoder.java
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+ec2891f;changelog updated
+M	CHANGELOG.md
+
+9f721f0;Opacity added to javadocs, minor opacity related code cleaning
+M	gradle.properties
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifOptions.java
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+551a841;GifOptions added
+M	README.md
+M	gradle.properties
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+A	src/main/java/pl/droidsonroids/gif/GifOptions.java
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/InputSource.java
+M	src/main/jni/gif.c
+M	src/main/jni/surface.c
+
+f3da507;java code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/test/java/pl/droidsonroids/gif/ConditionVariableTest.java
+
+b02934c;java code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifRenderingExecutor.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+
+c9923c0;code cleaning, gradle wrapper regenerated with version 2.13
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	gradlew.bat
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+
+031cb5a;lseek changed to lseek64 in openFd
+M	src/main/jni/gif.c
+
+6f9fd57;native code cleanup, fixes #300
+M	src/main/jni/gif.c
+
+c6c457a;minor native code optimizations
+M	src/main/jni/gif.c
+
+72b2ea7;Support library dependency version updated to 23.4.0
+M	CHANGELOG.md
+M	build.gradle
+
+131c9bc;changelog updated
+M	CHANGELOG.md
+
+45b0064;#297 fixed
+M	src/main/jni/decoding.c
+
+650c0cc;snapshot version bump
+M	gradle.properties
+
+4ae174d;native window dirty region redraws for #287 done
+M	src/main/jni/surface.c
+
+5860d2a;#272 done, native code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	src/main/jni/drawing.c
+M	src/main/jni/opengl.c
+
+b8e5414;Merge branch 'master' into dev
+cd7a0f1;changelog update
+M	CHANGELOG.md
+
+a7dc3ac;#290 fixed
+M	README.md
+
+abaa88d;gradle version bump
+M	gradle/wrapper/gradle-wrapper.properties
+
+c32a99c;GifTexImage2D optimizations
+M	src/main/jni/opengl.c
+
+5357c9f;GifTexImage2D optimizations
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	src/main/jni/gif.c
+M	src/main/jni/opengl.c
+
+b35aaf7;gradle plugin version bump
+M	CHANGELOG.md
+M	build.gradle
+
+1d353d5;Merge branch 'master' into dev
+2211725;snapshot repo instructions added
+M	README.md
+
+47fae37;Merge pull request #288 from frmz/dev
+1aa6fbb;Implemented glTexSubImage2D(), this call might be optimized when #287 is implemented
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	src/main/jni/opengl.c
+
+5022cef;GifTexImage2D refactor
+M	gradle.properties
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	src/main/jni/opengl.c
+
+42036e2;#262 done, GCB reading fixed, minor native code cleanups
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/decoding.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+M	src/main/jni/opengl.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+e84970b;#276 fixed
+M	src/main/jni/opengl.c
+
+ef21f9a;Merge branch 'master' into dev
+5c9b0e4;Merge pull request #281 from bradmartin/patch-1
+f2dadca;Add NativeScript Plugin Link
+M	README.md
+
+a527450;#277 fixed
+M	src/main/jni/control.c
+M	src/main/jni/gif.h
+M	src/main/jni/opengl.c
+
+c3731a1;`GifTexImage2D` javadoc reformat
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+
+f1d2a92;#275 fixed, native code cleaning
+M	src/main/jni/Android.mk
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+M	src/main/jni/opengl.c
+M	src/main/jni/surface.c
+D	src/main/jni/surface_common.c
+
+c1708e4;APP_PLATFORM version bump
+M	src/main/jni/Application.mk
+M	src/main/jni/gif.h
+
+1a62295;`GifTexImage2D#renderFrame()` added
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+M	src/main/jni/opengl.c
+
+95d8d8f;android gradle plugin version bump
+M	CHANGELOG.md
+M	build.gradle
+
+327bb9d;build tools version bump support library version bump
+M	.travis.yml
+M	CHANGELOG.md
+M	build.gradle
+
+7ddf2da;travis config updated
+M	.travis.yml
+
+c0fb56c;changelog updated
+M	CHANGELOG.md
+
+9ff789a;`View#invalidate()` support added to `MultiCallback`
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/MultiCallback.java
+M	src/main/java/pl/droidsonroids/gif/transforms/Transform.java
+A	src/test/java/pl/droidsonroids/gif/CallbackWeakReferenceTest.java
+A	src/test/java/pl/droidsonroids/gif/MultiCallbackTest.java
+
+4c019a1;prepared for next development iteration
+M	gradle.properties
+
+76a1be6;release 1.1.15
+M	gradle.properties
+
+9e6874b;native code cleaning
+M	src/main/jni/giflib/openbsd-reallocarray.c
+M	src/main/jni/opengl.c
+M	src/main/jni/surface.c
+
+77b608b;minor code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/InputSource.java
+
+26c8578;changelog updated
+M	CHANGELOG.md
+
+750aec9;upstream changes from GIFLib integrated, version bump to 5.1.3
+M	README.md
+M	src/main/jni/giflib/dgif_lib.c
+
+4464971;travis config update, remainder accounting in `getCurrentPosition()` fixed
+M	.travis.yml
+M	src/main/jni/metadata.c
+
+24ecd38;gradle wrapper version updated, support library version updated, javadoc corrections for #259
+M	CHANGELOG.md
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	src/main/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java
+M	src/test/java/pl/droidsonroids/gif/ConditionVariableTest.java
+
+fa29b3c;javadoc updated, travis.yml updated
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java
+
+00bfd38;Added info about #259 to changelog
+M	CHANGELOG.md
+
+1089dd3;Reformat and minor fixes for #259
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java
+A	src/main/java/pl/droidsonroids/gif/transforms/Transform.java
+
+70ab70b;Merge branch 'mbrubin56-mrubin/add_custom_transformation_support' into dev, closes #259
+ac83411;CornerRadiusTransform now takes a float; preserve old cornerRadius API
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java
+
+23dbd72;Add ability to specify a custom transformation to apply to the current Bitmap.
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+A	src/main/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java
+
+70c56b6;travis.yml update
+M	.travis.yml
+
+d960396;getEnv() visibility fixed
+M	src/main/jni/gif.h
+
+6b98f59;Beta OpenGL binding added
+M	CHANGELOG.md
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+A	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java
+A	src/main/java/pl/droidsonroids/gif/annotations/Beta.java
+M	src/main/jni/Android.mk
+M	src/main/jni/gif.h
+A	src/main/jni/opengl.c
+M	src/main/jni/surface.c
+
+f6ae34a;eventfd bare read and write changed to eventfd_read and eventfd_write
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+
+f720072;prepared for next development iteration
+M	gradle.properties
+
+f0c2c1e;release 1.1.14
+M	gradle.properties
+
+9f919df;Support library dependency version updated to 23.2.0
+M	CHANGELOG.md
+M	build.gradle
+
+a6ac500;code cleaning
+M	src/main/jni/gif.h
+
+9e1ecfd;native code cleaning
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+
+7c13350;surface releasing fixed, GifDecoder#release() added
+M	src/main/java/pl/droidsonroids/gif/GifDecoder.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+M	src/main/jni/surface_common.c
+
+7379329;Line folding unified to tabs
+M	build.gradle
+M	gradle-mvn-push.gradle
+M	src/main/java/pl/droidsonroids/gif/AnimationListener.java
+M	src/main/java/pl/droidsonroids/gif/ConditionVariable.java
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDecoder.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifIOException.java
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifRenderingExecutor.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/java/pl/droidsonroids/gif/InputSource.java
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+M	src/main/java/pl/droidsonroids/gif/SafeRunnable.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/decoding.c
+M	src/main/jni/drawing.c
+M	src/main/jni/exception.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/giflib/gif_lib_private.h
+M	src/main/jni/giflib/gifalloc.c
+M	src/main/jni/giflib/openbsd-reallocarray.c
+M	src/main/jni/memset.arm.S
+M	src/main/jni/memset32_neon.S
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+M	src/main/jni/surface_common.c
+M	src/main/jni/time.c
+M	src/test/java/pl/droidsonroids/gif/ConditionVariableTest.java
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+72dcd3c;readme updated
+M	README.md
+
+00df722;missing javadoc for sample size added
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+
+afad6f3;GifinfoHandle#getNumberOfFrames signature fixed, minor native code cleanups
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/jni/decoding.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+b47b2ac;GifDecoder javadoc fixes
+M	src/main/java/pl/droidsonroids/gif/GifDecoder.java
+
+c2a5ce0;Update README.md
+M	README.md
+
+e134e1d;subsampling option added for #239, native code cleaning, gradle version bump
+M	CHANGELOG.md
+M	consumer-proguard-rules.pro
+M	gradle/wrapper/gradle-wrapper.properties
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDecoder.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/InputSource.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/jni/decoding.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+
+f6e4455;ConditionVariable tests added
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/ConditionVariable.java
+A	src/test/java/pl/droidsonroids/gif/ConditionVariableTest.java
+
+aed9d6e;freezesAnimation test added, assertions ported to assertj
+M	build.gradle
+A	src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+49cff64;Merge branch 'codecov' into dev
+7247245;jacoco configuration cleaning
+M	build.gradle
+
+a98d71b;prepared for next development iteration
+M	gradle.properties
+
+2c8c9ce;release 1.1.13
+M	gradle.properties
+
+8ed007d;changelog updated
+M	CHANGELOG.md
+
+c09f224;#250 fixed
+M	src/main/jni/decoding.c
+
+e570fc0;codecov integration added
+M	.travis.yml
+M	build.gradle
+
+24bbd5f;missing unit test branch added
+M	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+54c003b;buildscript cleaning
+M	ndk.gradle
+
+0493348;Merge branch 'master' into dev
+ff2223a;License badge removed from readme
+M	README.md
+
+ec2e225;Prepared for next development iteration
+M	gradle.properties
+
+7f22d06;Release 1.1.12
+M	gradle.properties
+
+d7e4227;changelog updated
+M	CHANGELOG.md
+
+1d0f9c8;Native code cleanup and optimizations
+M	src/main/jni/decoding.c
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/giflib/gifalloc.c
+
+b8cf49d;Debug comments removed
+M	src/main/jni/decoding.c
+
+20f4b0c;Image offset adjusting fixed
+M	src/main/jni/decoding.c
+
+a6fee4d;Image confining fixes
+M	src/main/jni/decoding.c
+M	src/main/jni/open_close.c
+
+08767bf;Upstream GIFLib changes integrated, APP_OPTIM setting improved
+M	src/main/jni/Android.mk
+M	src/main/jni/Application.mk
+M	src/main/jni/decoding.c
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/giflib/gifalloc.c
+A	src/main/jni/giflib/openbsd-reallocarray.c
+
+4dd8acd;oversized frames handling rewirked (#243)
+M	src/main/jni/decoding.c
+
+c83a43c;Merged changes from master, changelog update
+M	CHANGELOG.md
+
+4218090;Merge branch 'master' into dev
+1c92941;Merge pull request #244 from shifujun/master
+67ab931;Should not use closeSilently() on ZipFile.Because ZipFile DO NOT implement Closeable when API < 19.Otherwise, app will crash!! http://bugs.java.com/view_bug.do?bug_id=6389768
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+
+8e771c0;Update LICENSE
+M	LICENSE
+
+5804145;Upstream changes from GIFLib 5.1.2 integrated, license fix
+M	CHANGELOG.md
+M	LICENSE
+M	README.md
+M	src/main/jni/giflib/dgif_lib.c
+
+8aded2d;GifDecoder added, javadoc cleanup
+M	CHANGELOG.md
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+A	src/main/java/pl/droidsonroids/gif/GifDecoder.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+e7cedfa;Changelog updated
+M	CHANGELOG.md
+
+bf7b97d;fixes for #240
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+M	src/main/jni/surface_common.c
+
+a832928;javadoc typofixes
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+d2117d7;javadocs updated, drawable reusing added to sample project
+M	build.gradle
+M	gradle-mvn-push.gradle
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+b73f2b1;code cleaning
+M	ndk.gradle
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+1201388;Gradle wrapper version updated to 2.10
+M	CHANGELOG.md
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+59f526b;Changelog updated
+M	CHANGELOG.md
+
+5bdd705;ReLinker code cleaning, @TargetApi annotations cleaning
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+
+4e2e52e;ReLinker and sample disabled on API level 8
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+
+1fea09a;native code cleaning
+M	src/main/jni/gif.h
+
+a6bf328;Update CHANGELOG.md
+M	CHANGELOG.md
+
+f8734c8;Mipmap resource type support added for xml attributes
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+
+b04f075;minor code cleaning
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+
+605d79f;ndk.gradle cleanup
+M	ndk.gradle
+
+a861f0b;JNI_OnLoad cleanup
+M	src/main/jni/gif.c
+
+d9e979a;system_header pragmas added to unistd.h inclusion
+M	src/main/jni/Android.mk
+M	src/main/jni/gif.h
+
+83ef5f6;travis.yml update
+M	.travis.yml
+
+b66f8b6;travis.yml update
+M	.travis.yml
+
+3ea94a9;prepared for next development iteration
+M	gradle.properties
+
+5e793a3;release 1.1.11
+M	gradle.properties
+
+0a742ca;code cleaning
+M	gradle.properties
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+
+f5dcc3b;LibraryLoader javadoc for #51 added
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+
+e317d66;readme and changelog updated
+M	README.md
+
+83af92e;readme and changelog updated
+M	CHANGELOG.md
+M	README.md
+
+6edc437;code cleaning
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+
+1bf67c4;exception message corrected
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+
+2b1caea;library version bump
+M	gradle.properties
+
+e396153;#51 fixed
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+A	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+R054	src/main/java/com/getkeepsafe/relinker/ReLinker.java	src/main/java/pl/droidsonroids/gif/ReLinker.java
+D	src/main/java/pl/droidsonroids/gif/WorkaroundLibraryLoader.java
+
+a651b60;possible workaround for https://github.com/koral--/android-gif-drawable/issues/51#issuecomment-157193898
+M	src/main/java/com/getkeepsafe/relinker/ReLinker.java
+
+2fd1b49;workaround for https://github.com/koral--/android-gif-drawable/issues/51#issuecomment-155693235
+M	LICENSE
+A	src/main/java/com/getkeepsafe/relinker/ReLinker.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+A	src/main/java/pl/droidsonroids/gif/WorkaroundLibraryLoader.java
+
+2b7731d;code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+9520953;gradle wrapper version updated to 2.9
+M	CHANGELOG.md
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+523fdc9;travis.yml update
+M	.travis.yml
+
+5dfb714;travis.yml update
+M	.travis.yml
+
+76d76d3;travis.yml update
+M	.travis.yml
+
+e21ddb7;Support library dependency version updated to 23.1.1 Android gradle plugin updated to 1.5.0
+M	CHANGELOG.md
+M	build.gradle
+
+1109555;Merge branch 'master' of github.com:koral--/android-gif-drawable into dev
+0d3c5ce;Update README.md
+M	README.md
+
+c1627a0;travis config updated
+M	.travis.yml
+
+846b440;travis config updated
+M	.travis.yml
+
+fbe5ff4;Build tools version updated to 23.0.2
+M	.travis.yml
+M	CHANGELOG.md
+M	build.gradle
+
+610ce70;Gradle version updated to 2.8
+M	CHANGELOG.md
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+
+274691a;Support library dependency version updated to 23.1.0
+M	CHANGELOG.md
+M	build.gradle
+
+fde561e;Changelog updated
+M	CHANGELOG.md
+
+e8719ad;#215 done
+M	.travis.yml
+M	src/main/java/pl/droidsonroids/gif/MultiCallback.java
+
+947561d;travis cache enabled
+M	.travis.yml
+
+2534a46;travis cache enabled
+M	.travis.yml
+
+804ca43;DEBUG flag propagation fixed errno number in exceptions messages changed to textual representation IllegalStateExceptions thrown from native code changed to RuntimeExceptions Minor Java code cleanups
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/jni/Android.mk
+M	src/main/jni/bitmap.c
+M	src/main/jni/exception.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/surface.c
+M	src/main/jni/surface_common.c
+
+9e6cbcd;buildscript cleaning
+M	ndk.gradle
+
+e25bcd9;prepared for next development iteration
+M	gradle.properties
+
+f4ddaf8;readme updated
+M	README.md
+
+d0f1337;Merge branch 'master' of github.com:koral--/android-gif-drawable
+3036be3;release 1.1.10
+M	gradle.properties
+
+b6a9b0e;license badge added to README
+M	README.md
+
+f829cef;Rounded corners support added - #202
+M	CHANGELOG.md
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+ff3a4bf;#204 fixed, AnimationListener extended
+M	CHANGELOG.md
+M	src/main/java/pl/droidsonroids/gif/AnimationListener.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/InvalidationHandler.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+
+02292ec;start/stop synchronization added
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+cf2ad6c;animation restarting fixed #208, #209 `GifTextureView` memory usage optimizations native code size cleaning
+M	CHANGELOG.md
+M	ndk.gradle
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/Android.mk
+M	src/main/jni/gif.h
+
+357e105;GifDrawable#getLoopCount() upper bound fixed (#204) GifDrawable#reset() fix (#208)
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+c787881;gradle version bump
+M	CHANGELOG.md
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+
+448061c;code cleaning, unit tests begin, travis.yml update
+M	.travis.yml
+M	build.gradle
+A	ndk.gradle
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+A	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+
+33fcba2;Link to sample eclipse project added to README
+M	README.md
+
+bbf125e;travis.yml update
+M	.travis.yml
+
+44d000c;#181 done
+M	CHANGELOG.md
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+
+a806f83;dependencies and tools version bumps
+M	CHANGELOG.md
+M	build.gradle
+
+cca3f79;dependecies version bump, travis config updated
+M	.travis.yml
+M	build.gradle
+
+8c59a3b;dependecies and api level version bumps, code cleaning
+M	.travis.yml
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/MultiCallback.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+
+be695dc;gradle version updated to 2.6
+M	CHANGELOG.md
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+ab925ed;prepared for next development iteration
+M	gradle.properties
+
+0880a73;release 1.1.9
+M	README.md
+M	gradle.properties
+
+df4f773;code cleaning, native code compiler warning level increased
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/jni/Android.mk
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/exception.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/memset.arm.S
+M	src/main/jni/memset32_neon.S
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+M	src/main/jni/surface_common.c
+M	src/main/jni/time.c
+
+1dad879;#195 fixed
+M	CHANGELOG.md
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+bd1dea9;android gradle plugin version bumped to 1.3.0, #194 fixed, #196 fixed
+M	CHANGELOG.md
+M	build.gradle
+M	src/main/jni/decoding.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+ff3fbf0;changelog updated
+M	CHANGELOG.md
+
+c1f38d7;Merge branch 'master' into dev
+b60e3a1;Update README.md
+M	README.md
+
+944fa8d;Merge branch 'master' into dev
+7c525ef;Merge pull request #193 from MichaelEvans/proguard
+e7c8843;Bundle proguard rules inside the library
+M	README.md
+M	build.gradle
+A	consumer-proguard-rules.pro
+
+f5c9222;prepared for next development iteration
+M	CHANGELOG.md
+M	gradle.properties
+
+fdd392e;release 1.1.8
+M	gradle.properties
+
+230edcc;support annotations version updated to 22.2.1, gradle wrapper refreshed
+M	CHANGELOG.md
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+c72f51d;#186 fixed
+M	src/main/jni/decoding.c
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+
+b075a36;changelog reformatted
+M	CHANGELOG.md
+
+7eeac80;gradle version updated to 2.5
+M	CHANGELOG.md
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+ff1f767;changelog typofixes
+M	CHANGELOG.md
+
+910edde;input stream reading optimized, readme and changelog updated
+M	CHANGELOG.md
+M	README.md
+M	src/main/jni/gif.c
+
+f37f5ce;#180 fixed
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/java/pl/droidsonroids/gif/SafeRunnable.java
+
+0a13103;gitignore updated, #180 fixing begin
+M	.gitignore
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+23ae9cf;buildscripts cleanup
+M	build.gradle
+M	src/main/jni/Android.mk
+
+66116f9;#173 fixed
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/Android.mk
+M	src/main/jni/Application.mk
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+A	src/main/jni/surface_common.c
+M	src/main/jni/time.c
+
+5edbb89;splitted modules for #173 begin
+M	build.gradle
+A	src/main/jni/Android.mk
+A	src/main/jni/Application.mk
+
+9a75db3;setter range annotations added
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+b82789c;support library and annotations updated
+M	build.gradle
+
+038f118;prepared for next development iteration
+M	gradle.properties
+
+bad4f36;release 1.1.7
+M	gradle.properties
+
+9541a37;AnimationListener firing fixed, cahngelog updated
+M	CHANGELOG.md
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/MultiCallback.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+
+a2acfb1;changelog updated
+M	CHANGELOG.md
+
+52f99bc;.travis.yml updated
+M	.travis.yml
+
+1966768;#167 fixed
+M	.travis.yml
+M	src/main/jni/drawing.c
+
+a4dc65d;Thread-safe MultiCallback for #135
+M	src/main/java/pl/droidsonroids/gif/MultiCallback.java
+
+4235089;MultiCallback for #135 added
+A	src/main/java/pl/droidsonroids/gif/MultiCallback.java
+
+cbceab1;code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/InputSource.java
+
+5763a6d;GifDrawable#setLoopCount added for #164
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/jni/decoding.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+
+f2fd5b4;GifTextureView#init() fixed
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+2926174;gradle plugin updated
+M	CHANGELOG.md
+M	build.gradle
+
+60815ac;fixed NPE when `GifTextureView` is constructed without attributes
+M	CHANGELOG.md
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+ad0aee3;gradle plugin version updated
+M	build.gradle
+
+0eba5f3;- Fixed warning about attaching nameless thread on ART - Support annotations version updated to 22.1.1 - Android gradle plugin updated to 1.2.0
+A	CHANGELOG.md
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.c
+
+23e8ba3;prepared for next development iteration, gradle wrapper updated
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+d512f56;release 1.1.6
+M	gradle.properties
+
+dee4e6b;support library updated to 22.1.0
+M	build.gradle
+
+f5cc3b3;#154 fixed
+M	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+
+aaa29bb;#151 fixed
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+
+790f9c7;Fixes #152
+M	src/main/jni/control.c
+M	src/main/jni/metadata.c
+
+f1bed87;#150 finished
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/control.c
+M	src/main/jni/surface.c
+
+3468553;fixes and new methods added for #150
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/jni/control.c
+M	src/main/jni/decoding.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+
+0cbd7d7;native code cleaning
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+5478888;thread attach cleanup
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+
+611d214;opacity changing fixed
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/surface.c
+
+4e438af;surface rendering optimizations
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+84ba5cb;surface rendering fixed, native code cleaning
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/surface.c
+
+c39dd6c;native code cleaning and optimizations
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+c1121f8;native code cleaning
+M	src/main/jni/exception.c
+M	src/main/jni/gif.h
+
+ead239f;threads in giftextureview finished
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+84eea55;texture pthreads continuation
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+8b92d3b;initial threading in GifTextureView
+M	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/surface.c
+
+b61da4a;opacity support for gifTextureView added
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/InputSource.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+e0d9b27;prepared for next development iteration
+M	gradle.properties
+
+35a2b38;release 1.1.5
+M	gradle.properties
+
+eb653b9;input stream rewinding bug fixed
+M	src/main/jni/gif.c
+
+6768b0a;prepared for next development iteration
+M	gradle.properties
+
+1bd2a8f;1.1.4 release
+M	gradle.properties
+
+f474938;GifDrawable#isAnimationCompleted() javadoc added
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+b0fe289;code cleaning, javadocs update, exception handling during file opening improved
+M	README.md
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/ConditionVariable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/InputSource.java
+M	src/main/jni/gif.c
+
+be6f8a7;check for InputStream#mark() exception added
+M	src/main/jni/control.c
+M	src/main/jni/gif.c
+
+4bd1393;don't throw execption from native code if another exception is pending
+M	src/main/jni/exception.c
+
+727905c;state saving refactored
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+e49d8dd;typo corrected
+M	src/main/jni/time.c
+
+761d8b8;minor optimizations and code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/metadata.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+a89908b;timing code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/time.c
+
+ade3f1e;lastFrameRemaninder flow cleaning
+M	src/main/jni/control.c
+M	src/main/jni/metadata.c
+M	src/main/jni/surface.c
+
+8493414;native code optimizations
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/decoding.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/giflib/gif_lib_private.h
+M	src/main/jni/giflib/gifalloc.c
+M	src/main/jni/memset32_neon.S
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+f8058ec;native code optimizations
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+983e394;eventPollFd initialization fix
+M	src/main/jni/surface.c
+
+2f64e3a;native code optimizations, #146 done
+M	build.gradle
+M	gradle.properties
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/decoding.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+M	src/main/res/values/attrs.xml
+
+59f89e5;code cleaning
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib_private.h
+M	src/main/jni/time.c
+
+f023ed7;decoding optimizations
+M	src/main/jni/control.c
+M	src/main/jni/decoding.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/giflib/gif_lib_private.h
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+faedc43;code cleaning
+M	src/main/jni/drawing.c
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+
+4f7ff86;memset arm source files added
+A	src/main/jni/memset.arm.S
+A	src/main/jni/memset32_neon.S
+
+41cf565;memset optimizations
+M	src/main/jni/drawing.c
+
+8e2a390;#144 fixed, code reformat
+M	src/main/java/pl/droidsonroids/gif/InputSource.java
+M	src/main/jni/drawing.c
+
+250aeb8;drawing performance tweaks, minor bugfixes
+M	src/main/jni/control.c
+M	src/main/jni/decoding.c
+M	src/main/jni/drawing.c
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+59fa8eb;gradle-mvn-push.gradle included
+A	gradle-mvn-push.gradle
+
+351b713;code and buildscript cleaning
+M	build.gradle
+M	gradle.properties
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+
+5997f4e;performance tweaks, minor bugfixes
+M	src/main/jni/decoding.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/giflib/gif_lib_private.h
+M	src/main/jni/giflib/gifalloc.c
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+088ba3c;code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/drawing.c
+
+3b3e6e7;decoding performance improving started
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/decoding.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+
+193990c;saving and restoring animation state fixed
+M	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+M	src/main/jni/control.c
+M	src/main/jni/time.c
+
+4111b17;bound checking in seek fixed
+M	src/main/jni/control.c
+
+09a3e0e;initial support for finite animations on surface
+M	src/main/jni/surface.c
+
+e3f1b11;seekToTime fixed, switch to OOME thrown in all no-memory cases, minor bugfixes and optimizations
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+457553d;surface state saving begin
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/decoding.c
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+53c40a7;#136 fixed, #140 and #122 workaround changed, GifTextureView unbind fix
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+
+b8979e3;#137 fixed
+M	src/main/jni/exception.c
+
+984bc00;GifTextureView updated
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/drawing.c
+M	src/main/jni/exception.c
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+61365ae;GifTextureView bugs fixed
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+
+c151b77;Code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+06c2cae;surface unbind optimized
+M	build.gradle
+M	src/main/jni/drawing.c
+M	src/main/jni/surface.c
+
+600bf66;surface lifecycle optimizations
+M	gradle.properties
+A	src/main/java/pl/droidsonroids/gif/ConditionVariable.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+3bd00ee;Merge branch 'master' into dev
+0bb06cd;Update README.md
+M	README.md
+
+548ad42;prepared for next development iteration
+M	gradle.properties
+
+a1fae83;release v1.1.3
+M	gradle.properties
+
+1e9cc98;Code reformat and cleaning, javadocs corrections
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifIOException.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+A	src/main/java/pl/droidsonroids/gif/InputSource.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/surface.c
+
+13fd6cd;GifTextureView updated
+M	gradle.properties
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+
+1e12adb;GifTextureView updated
+M	build.gradle
+M	gradle.properties
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifIOException.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/surface.c
+
+af97922;GifTextureView updates
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/surface.c
+
+6d1fb5d;surface optimization
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.h
+M	src/main/jni/metadata.c
+M	src/main/jni/open_close.c
+M	src/main/jni/surface.c
+
+ace3b7d;GifDrawable initialization corrected, native code reformat
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/gif.c
+
+191b6b2;code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+f42aca8;GifTextureView documentation updated, code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+
+d30a767;#132 fixed, #131 cleanup, GifTextureView scale types corrected
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/jni/drawing.c
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/open_close.c
+
+4aa1484;#131 fixed, code reformat
+M	src/main/AndroidManifest.xml
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifIOException.java
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+A	src/main/java/pl/droidsonroids/gif/InvalidationHandler.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/res/values/attrs.xml
+
+cdff4fd;GifTextureView init updated, code cleaning, raw background resource support added
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/jni/surface.c
+M	src/main/res/values/attrs.xml
+
+f606b45;GifTextureView init updated
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+0b8b46f;travis config updated
+M	.travis.yml
+
+4ad9195;build tools version bump, setFreezesAnimation added
+M	.travis.yml
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+b4167a6;API level badge added
+M	README.md
+
+14f4a49;readme and travis config updated
+M	.travis.yml
+M	README.md
+
+e2d6769;readme updated
+M	README.md
+
+0a8c194;minor code cleaning
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+1dcbeb5;GifTextureView scaleTypes added
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/giflib/gifalloc.c
+
+0dc7444;Support annotations integration begin
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifIOException.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/res/values/attrs.xml
+
+e373710;GifTextureView updated, centerCrop scaletype added, native code optimizations
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/decoding.c
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/metadata.c
+M	src/main/jni/surface.c
+M	src/main/jni/time.c
+M	src/main/res/values/attrs.xml
+
+88d8d30;native nullchecks corrected
+M	src/main/jni/metadata.c
+
+d7444b9;fixed: #130, #112; #122 reworked; code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/bitmap.c
+M	src/main/jni/control.c
+M	src/main/jni/gif.h
+M	src/main/jni/open_close.c
+
+3844b74;GifTextureView updated
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.c
+M	src/main/jni/surface.c
+
+2e1b6e1;GifTextureView exception getter added, code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gifalloc.c
+
+88ad2fd;GifDrawable#canSeekBackward() implemented
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+dec891d;code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+
+fe7aeab;GifTextureView basic saving added, code cleaning
+M	src/main/AndroidManifest.xml
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/surface.c
+
+038bcbc;Merge branch 'dev' of github.com:koral--/android-gif-drawable into dev
+8455e8f; #129 fixed, native code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/jni/bitmap.c
+A	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+A	src/main/jni/metadata.c
+A	src/main/jni/open_close.c
+A	src/main/jni/surface.c
+
+6499445;#128 fixed, native code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/jni/bitmap.c
+A	src/main/jni/control.c
+M	src/main/jni/drawing.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+A	src/main/jni/metadata.c
+A	src/main/jni/open_close.c
+A	src/main/jni/surface.c
+
+368180d;bitmap.c added
+A	src/main/jni/bitmap.c
+
+562bb27;native code reorganization
+M	build.gradle
+A	src/main/jni/decoding.c
+A	src/main/jni/drawing.c
+A	src/main/jni/exception.c
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+A	src/main/jni/time.c
+
+1e3d469;#128 code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+4c8ef33;#128 fixed
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+a04236d;code cleaning
+M	src/main/jni/gif.c
+
+2a70d0a;#128 fix begin
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+89b23b9;GifTextureView native peer updated and optimized
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+b558b7d;GifTextureView updates
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+775c24a;native code cleaning
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+ed0bf1b;GifTextureView updates, background color setting fixed, native code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+e5ca522;GifTextureView optimizations
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.c
+
+b699849;GifTextureView updated, code cleaning
+M	src/main/AndroidManifest.xml
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+D	src/main/java/pl/droidsonroids/gif/GifSurfaceView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/res/values/attrs.xml
+
+26b0002;surface buffer added
+M	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+0edf77e;GifTextureView added
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+A	src/main/java/pl/droidsonroids/gif/GifTextureView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/res/values/attrs.xml
+
+fc64b42;GifTextureView added, code cleaning
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifSurfaceView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+a4711fa;general code cleaning and reformat
+M	.gitignore
+M	src/main/AndroidManifest.xml
+M	src/main/java/pl/droidsonroids/gif/AnimationListener.java
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/java/pl/droidsonroids/gif/GifSurfaceView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+A	src/main/java/pl/droidsonroids/gif/GifViewUtils.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+M	src/main/res/values/attrs.xml
+
+73e0123;Saved instance state added
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+D	src/main/java/pl/droidsonroids/gif/GifImageViewSavedState.java
+M	src/main/java/pl/droidsonroids/gif/GifSurfaceView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+A	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java
+
+762c0b6;instance stated added to GifImageView and GifImageButton
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+A	src/main/java/pl/droidsonroids/gif/GifImageViewSavedState.java
+
+39a822e;travis.yml updated, GifTextView#getGifOrDefaultDrawable() cleanup
+M	.travis.yml
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+
+4612ddb;travis.yml updated
+M	.travis.yml
+
+dca2535;travis.yml updated
+M	.travis.yml
+
+9aa7564;travis.yml updated
+M	.travis.yml
+
+5448148;travis.yml updated
+M	.travis.yml
+
+51af613;travis.yml updated
+M	.travis.yml
+
+58016a7;drawable getting in GifTextView updated, build tools version bump
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+
+34c4af9;target api updated to 22
+M	.travis.yml
+M	build.gradle
+
+ed6eeb0;#122 fixing continuation
+M	src/main/jni/gif.c
+
+4dd6025;GifSurfaceView stub added
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+A	src/main/java/pl/droidsonroids/gif/GifSurfaceView.java
+A	src/main/res/values/attrs.xml
+
+7c6050d;#117 refactored and javadoc added
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+
+b31862e;gradle plugin version bump
+M	build.gradle
+
+d938679;Setter for #117 added
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+
+96f34da;#123 fixed
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+
+5aece1a;#125 fixed, extensions reading fixed, native code cleaning
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+33aee00;gradle plugin version bump
+M	build.gradle
+
+05c7c32;potential fix for #122
+M	src/main/jni/gif.c
+
+3d632ce;#114 fixed
+M	src/main/jni/gif.c
+
+a10e91d;gradle wrapper and plugin versions bump, javadoc typos fixed
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+1339101;javadoc update for #118
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+d62e981;seeking backwards added for #118, check added for #117
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/gif.c
+
+830fbab;Fixes and condition for #117 added
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+
+b645a79;Merge pull request #117 from Aniways/dev
+5153f26;workaround for #115 added
+M	build.gradle
+
+225ca81;GifDrawable#seekTo javadoc corrected
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+9d25e9e;Changed use of System.currentTimeMillis() to SystemClock.elapsedRealtime() as proposed
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+
+ac0e5b0;Performance and Battery saving improvements in GifDrawable
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/RenderTask.java
+
+c3f8040;Merge remote-tracking branch 'origin/dev' into dev
+f565a66;GifDrawable class refactored
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+A	src/main/java/pl/droidsonroids/gif/RenderTask.java
+A	src/main/java/pl/droidsonroids/gif/SafeRunnable.java
+
+a8e2718;badges added to readme
+M	README.md
+
+18f3bd4;uploadArchives task fix for #115
+M	build.gradle
+
+6ff84ae;Merge pull request #115 from DmitriyZaitsev/dev
+cb3cd56;onBoundsChange optimized
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+5fccc66;fix(build.gradle) add some architecture flavors with ndk.abiFilter(s)
+M	build.gradle
+
+44fbf52;prepare to next development iteration, build tools version bump
+M	build.gradle
+M	gradle.properties
+
+dbf90f9;release v 1.1.2
+M	gradle.properties
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+
+8c4879d;executor optimizations
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifRenderingExecutor.java
+
+34ef067;Solution for #108
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+A	src/main/java/pl/droidsonroids/gif/GifRenderingExecutor.java
+
+7960bf7;#105: GifLib version bump to 5.1.1, native code optimizations
+M	README.md
+M	src/main/jni/gif.c
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/giflib/gifalloc.c
+
+963114c;optimization for #105, code reformatted
+M	src/main/jni/giflib/dgif_lib.c
+
+c0da2df;#105 corrected
+M	src/main/jni/giflib/dgif_lib.c
+
+43d569e;readme update, #105 fixed
+735b093;readme update, #105 fixed
+M	README.md
+M	src/main/jni/gif.c
+M	src/main/jni/giflib/dgif_lib.c
+
+14b5c76;travis config update (cherry picked from commit faf6471)
+M	.travis.yml
+
+faf6471;travis config update
+M	.travis.yml
+
+6394db3;prepare for next development iteration
+M	gradle.properties
+
+0fd2191;Merge remote-tracking branch 'origin/master'
+3822805;release 1.1.1
+M	gradle.properties
+
+946fe04;missing @TargetApi added
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+
+18964c2;uncaught exceptions handling for #103
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+46771a8;hiding compound drawables added
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+
+d885f98;travis config corrected
+M	.travis.yml
+
+8f515f7;javadoc formatting fixed
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+7098382;#104 fixed
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+a8ef2fb;Readme overview updated
+M	README.md
+
+3c05e1a;build tools version bump
+M	build.gradle
+
+2bce67e;prepare for next development iteration
+M	gradle.properties
+
+c3e80cb;release 1.1.0
+M	README.md
+M	gradle.properties
+
+3a81a89;readme update, gitignore cleaning
+M	.gitignore
+M	README.md
+
+eefe384;gradle plugin version bump, readme update
+M	README.md
+M	build.gradle
+
+2b1984d;library version bump, readme update
+M	README.md
+M	gradle.properties
+
+7477252;ndk version bump in travis config
+M	.travis.yml
+M	src/main/jni/giflib/gifalloc.c
+
+cbff429;native code cleaning gradle plugin version bump android arsenal badge added
+M	README.md
+M	build.gradle
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gifalloc.c
+
+3df1504;tint support added
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+6355035;#101 fixed
+M	build.gradle
+M	src/main/jni/giflib/dgif_lib.c
+
+74159de;gradle version bump
+M	gradle/wrapper/gradle-wrapper.properties
+
+b02be1f;finalize moved to gifinfohandle, minor javadoc correction
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+8d2e2d0;#98 fixed, minor other optimizations
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/jni/gif.c
+
+9317191;Merge of #96 into dev
+cd776a9;Merge pull request #96 from mmin18/master
+d965b3f;fix invalidate schedule issue, avoid draw() before next frame.
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+2d0b284;gradle plugin version bump
+M	build.gradle
+
+b864168;travis.yml updated
+M	.travis.yml
+
+33816d7;Readnme updated, GifImageButton method visibility cleaning
+M	README.md
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+
+c885a52;recycling synchronization added, native opening code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/gif.c
+
+9504faa;Builder documentation added, executor related code cleaning
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/jni/gif.c
+
+ceb1972;build tools version bump, minor fixes
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/gif.c
+
+3a7dc53;decoding in background thread implemented for #57
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+117103a;build tools version bump, builder for #30 implemented
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+
+8fcc310;first frame visiblity on stop fixed, running flag philosophy changed
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/gif.c
+
+94327ea;reusing extended
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+
+822ec97;native methods moved to GifInfoHandle, builder added, minor optimizations, #90 done
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+A	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+M	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/jni/gif.c
+
+40295d5;missing TargetApi annotation added
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+987485e;#88 finished, minor native optimizations and nullchecks added
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+A	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+eacdb32;framebuffer type changed to bitmap
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+f9ba4b8;some native source documentation added
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+
+6bfda5c;clocksource changed to MONOTONIC_RAW, AttachCurrentThread checks added
+M	src/main/jni/gif.c
+
+bd2cb14;prepared for next development iteration
+M	gradle.properties
+
+c9d3763;release 1.0.12
+M	gradle.properties
+
+c4b467e;build tools version updated to 21.0.2, giflib version updated to 5.1.0
+M	.travis.yml
+M	README.md
+M	build.gradle
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+
+9235261;unneeded native code removed
+M	build.gradle
+M	src/main/jni/gif.c
+D	src/main/jni/giflib/config.h
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/giflib/gif_lib_private.h
+M	src/main/jni/giflib/gifalloc.c
+
+f95d295;Merge branch 'dev' of github.com:koral--/android-gif-drawable into dev travis.yml updated
+c86ffec;unneeded native code removed
+M	src/main/jni/gif.c
+M	src/main/jni/gif.h
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/giflib/gif_lib_private.h
+
+b5cd080;Methods and constructors added in Lollipop overriden
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+
+eb3d217;travis.yml config update according to travis-ci/travis-ci#1409
+M	.travis.yml
+
+abd4721;travis.yml config update
+M	.travis.yml
+
+693e401;travis.yml config update
+M	.travis.yml
+
+e97525a;travis.yml ndk unpacking fixed
+M	.travis.yml
+
+f51b294;travis config updated
+M	.travis.yml
+
+a64bddb;native code documentation updated
+M	Doxyfile
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/jni/gif.c
+
+0164d2e;build tools and SDK version bump, progurard config updated, native code cleaning
+M	README.md
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifIOException.java
+M	src/main/jni/gif.c
+A	src/main/jni/gif.h
+
+94b6bf3;native code cleaning
+M	src/main/jni/gif.c
+
+27dea5f;switched to Giflib's reading GCB
+M	src/main/jni/gif.c
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+
+e2aab0b;native code cleaning, Giflib 5.10 introduced
+M	src/main/jni/gif.c
+M	src/main/jni/giflib/dgif_lib.c
+M	src/main/jni/giflib/gif_lib.h
+M	src/main/jni/giflib/gif_lib_private.h
+M	src/main/jni/giflib/gifalloc.c
+
+4417f04;code cleaning, unnecessary native sources removed
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifIOException.java
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+M	src/main/jni/giflib/config.h
+D	src/main/jni/giflib/gif_hash.c
+D	src/main/jni/giflib/gif_hash.h
+M	src/main/jni/giflib/gif_lib_private.h
+
+70d50a8;gradle.properties cleaning
+M	gradle.properties
+
+e5ecdcb;prepared for next development iteration
+M	gradle.properties
+
+12fd16a;release 1.0.11
+M	gradle.properties
+
+307fc60;Doxyfile cleanup
+A	Doxyfile
+D	src/main/jni/Doxyfile
+M	src/main/jni/gif.c
+
+a76a444;#71 done, code cleaning, Parcelable implemented in GifAnimationMetaData. gradle plugin version bump
+M	.gitignore
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/jni/gif.c
+
+244c795;prepare for next development iteration
+M	gradle.properties
+
+ba76d26;Merge branch 'master' of github.com:koral--/android-gif-drawable
+5aa9e1c;code cleaning, typos in javadocs fixed
+M	.gitignore
+M	build.gradle
+M	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+M	src/main/java/pl/droidsonroids/gif/GifImageView.java
+M	src/main/java/pl/droidsonroids/gif/GifTextView.java
+
+f94363a;gradle and plugins version bump
+M	.travis.yml
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+349d3e2;#81 fixed
+M	src/main/jni/gif.c
+
+832ca2a;REWIND_FAILED error added, #80 fixed
+M	src/main/java/pl/droidsonroids/gif/GifError.java
+M	src/main/jni/gif.c
+
+c6d69cf;maven central badge added
+M	README.md
+
+3493f7f;#80 partially fixed
+M	src/main/jni/gif.c
+
+bc63129;#66 done
+A	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/gif.c
+
+ecd0cae;dev added to travis build
+M	.travis.yml
+
+4c7a137;Javadocs corrected, code cleaning
+M	src/main/java/pl/droidsonroids/gif/AnimationListener.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+D	src/main/java/pl/droidsonroids/gif/OnAnimationCompleteListener.java
+
+c352569;Fixed: #72, #76
+A	src/main/java/pl/droidsonroids/gif/AnimationListener.java
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+A	src/main/java/pl/droidsonroids/gif/OnAnimationCompleteListener.java
+M	src/main/jni/gif.c
+
+1bc60c2;code cleaning for #77
+M	src/main/jni/gif.c
+
+fc2059d;Merge branch 'master' into dev
+069754c;prepare for next development iteration
+M	gradle.properties
+
+b3036fb;release 1.0.9
+M	gradle.properties
+
+1f4e9ca;GetIntArrayElements NULLchecks added for #68
+M	src/main/jni/gif.c
+
+0024f0e;realloc result checking added, missing nullifying added for #70
+M	src/main/jni/gif.c
+
+505eea7;native free fixed, unused dstPad, srcPad removed
+M	src/main/jni/gif.c
+
+60949d8;Update .travis.yml
+M	.travis.yml
+
+1efc7b7;abiFilter added, pointer passing between java and native level cleaned
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	src/main/jni/gif.c
+
+b2cd31a;Update .travis.yml
+M	.travis.yml
+
+e8d03ac;Update .travis.yml
+M	.travis.yml
+
+8df64fc;plugin version in build.gradle updated, array indexing change for #68
+M	build.gradle
+M	src/main/jni/gif.c
+
+14fa012;unused reset method return value removed
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+87cd2b5;gradle plugin version bump
+M	build.gradle
+
+6efa186;unused imports removed
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+
+0386bba;prepare for next development iteration
+M	gradle.properties
+
+011c861;release v1.0.8
+M	gradle.properties
+M	src/main/AndroidManifest.xml
+
+791c494;gradle wrapper files added
+M	.gitignore
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+
+946ff55;#60 fixed, travis config migrated to new plugin
+M	.travis.yml
+M	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+M	src/main/jni/gif.c
+
+a10a0ab;build.gradle cleaning, transparent index fix for #56
+M	build.gradle
+M	src/main/jni/gif.c
+
+1f0ccee;Merge remote-tracking branch 'origin/dev' into dev
+69a0d23;Merge branch 'master' of github.com:koral--/android-gif-drawable into experimental
+4006eb6;travis.ym corrected
+M	.travis.yml
+
+ead3cdb;travis.yml corrected
+M	.travis.yml
+
+177c571;travis.yml corrected
+M	.travis.yml
+
+e6a49ea;build tools version bump, travis.yml update
+M	.travis.yml
+M	build.gradle
+
+bcd9612;typo in comment fixed
+M	jni/gif.c
+
+0100c05;Merge pull request #58 from gqjjqg/master
+3a16e6b;folder structure changed, #56 fixed
+M	build.gradle
+D	jni/Android.mk
+D	jni/Application.mk
+D	libs/armeabi-v7a/libgif.so
+D	libs/armeabi/libgif.so
+D	libs/mips/libgif.so
+D	libs/x86/libgif.so
+D	pom.xml
+D	project.properties
+D	res/.gitignore
+R100	AndroidManifest.xml	src/main/AndroidManifest.xml
+R099	src/pl/droidsonroids/gif/GifDrawable.java	src/main/java/pl/droidsonroids/gif/GifDrawable.java
+R100	src/pl/droidsonroids/gif/GifError.java	src/main/java/pl/droidsonroids/gif/GifError.java
+R100	src/pl/droidsonroids/gif/GifIOException.java	src/main/java/pl/droidsonroids/gif/GifIOException.java
+R100	src/pl/droidsonroids/gif/GifImageButton.java	src/main/java/pl/droidsonroids/gif/GifImageButton.java
+R100	src/pl/droidsonroids/gif/GifImageView.java	src/main/java/pl/droidsonroids/gif/GifImageView.java
+R100	src/pl/droidsonroids/gif/GifTextView.java	src/main/java/pl/droidsonroids/gif/GifTextView.java
+A	src/main/jni/Doxyfile
+R099	jni/gif.c	src/main/jni/gif.c
+R100	jni/giflib/config.h	src/main/jni/giflib/config.h
+R100	jni/giflib/dgif_lib.c	src/main/jni/giflib/dgif_lib.c
+R100	jni/giflib/gif_hash.c	src/main/jni/giflib/gif_hash.c
+R100	jni/giflib/gif_hash.h	src/main/jni/giflib/gif_hash.h
+R100	jni/giflib/gif_lib.h	src/main/jni/giflib/gif_lib.h
+R100	jni/giflib/gif_lib_private.h	src/main/jni/giflib/gif_lib_private.h
+R100	jni/giflib/gifalloc.c	src/main/jni/giflib/gifalloc.c
+
+a983c5c;Signed-off-by: qijiang.guo <qijiang.guo@gmail.com>
+M	jni/gif.c
+
+8ca775e;gif file support.
+M	jni/gif.c
+
+aac336a;Link to sample project added
+M	README.md
+
+b37272a;javadocs typos fixed, Uri input source refactored
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifImageButton.java
+M	src/pl/droidsonroids/gif/GifImageView.java
+
+b970900;build.gradle reformated
+M	build.gradle
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+
+6097dfc;setImageURI added for GifImageView (#54)
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifImageButton.java
+M	src/pl/droidsonroids/gif/GifImageView.java
+
+af78fd4;typo fixed
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+07ce33a;Merge branch 'master' of github.com:koral--/android-gif-drawable
+641a32d;#46 fixed, code reformat
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifIOException.java
+M	src/pl/droidsonroids/gif/GifImageButton.java
+M	src/pl/droidsonroids/gif/GifImageView.java
+M	src/pl/droidsonroids/gif/GifTextView.java
+
+f0097fd; #52 fixed, code reformat
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifIOException.java
+M	src/pl/droidsonroids/gif/GifImageButton.java
+M	src/pl/droidsonroids/gif/GifImageView.java
+M	src/pl/droidsonroids/gif/GifTextView.java
+
+d1a2a5c;#52 fixed
+M	README.md
+
+1608539;build.gradle fix for broken aars
+M	build.gradle
+
+d13b649; #50 fixed
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+
+3c99f4d; #47 fixed, gif.c formatting, travis config updated
+M	.travis.yml
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+M	pom.xml
+
+ce769a0;prepare for next development iteration
+M	build.gradle
+M	gradle.properties
+
+ae66a97;.travis.yml update
+M	.travis.yml
+
+99c38c5;.travis.yml update
+M	.travis.yml
+
+f62c260;.travis.yml update
+M	.travis.yml
+
+d2dc7df;versions bump in .travis.yml
+M	.travis.yml
+
+40e4a49;Extension parsing bug (#42) fixed, comments cleaning
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+2282dfe;gradle.properties added, #40 fixed
+M	AndroidManifest.xml
+M	build.gradle
+A	gradle.properties
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+
+55a2275;typo in Readme fixed
+M	README.md
+
+200ffaf;Update README.md
+M	README.md
+
+8cdeaea;gradle plugin version updated
+M	build.gradle
+
+bace0d8;Update README.md
+M	README.md
+
+eb3882a;.travis.yml updated
+M	.travis.yml
+
+f3cf3e1;Update build.gradle
+M	build.gradle
+
+7191b1a;travis.yml updated
+M	.travis.yml
+
+4bd3fc5;travis.yml update
+M	.travis.yml
+
+5dc79a3;travis.yml added
+A	.travis.yml
+
+fb3d1b9;pom.xml packaging update, maven and gradle code cleaning
+M	README.md
+M	build.gradle
+M	pom.xml
+
+2dcc900;Merge branch 'master' of github.com:koral--/android-gif-drawable
+360425c;Basic gradle config
+M	.gitignore
+A	build.gradle
+
+29b26e7;Gradle dependency example added
+M	README.md
+
+5c7b63d;Merge branch 'master' of git@github.com:koral--/android-gif-drawable.git
+M	library/src/main/jni/gif.c
+
+a6a0fef;sample build.gradle updated
+M	sample/build.gradle
+
+0fb64ca;version bump
+M	pom.xml
+
+cd0e4e6;#38 fixed
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+
+91c8858;Prepare for next development iteration
+M	gradle.properties
+
+fd62a13;gradle-mvn-push configured
+M	build.gradle
+M	gradle.properties
+M	library/build.gradle
+A	library/gradle.properties
+M	sample/build.gradle
+
+384349c;Merge branch 'master' into dev
+62c4c46;Shader support added More Drawable methods overriden
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+8628533;#35 fixed
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+410018b;Merge branch 'master' into dev Android.mk ported to build.gradle
+62237df;speedFactor respecting added in seekToFrame
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+
+086534f;seekTo() split and bug fix getPixel(s)() added unused native source removed
+M	jni/gif.c
+D	jni/giflib/gif_err.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+0d5efb5;Manifest corrected
+M	library/src/main/AndroidManifest.xml
+
+c9c7c5f;Switched to Android Studio and gradle
+M	.gitignore
+A	build.gradle
+A	gradle.properties
+A	library/build.gradle
+R100	AndroidManifest.xml	library/src/main/AndroidManifest.xml
+R100	src/pl/droidsonroids/gif/GifDrawable.java	library/src/main/java/pl/droidsonroids/gif/GifDrawable.java
+R100	src/pl/droidsonroids/gif/GifError.java	library/src/main/java/pl/droidsonroids/gif/GifError.java
+R100	src/pl/droidsonroids/gif/GifIOException.java	library/src/main/java/pl/droidsonroids/gif/GifIOException.java
+R100	src/pl/droidsonroids/gif/GifImageButton.java	library/src/main/java/pl/droidsonroids/gif/GifImageButton.java
+R100	src/pl/droidsonroids/gif/GifImageView.java	library/src/main/java/pl/droidsonroids/gif/GifImageView.java
+R100	src/pl/droidsonroids/gif/GifTextView.java	library/src/main/java/pl/droidsonroids/gif/GifTextView.java
+R100	jni/Android.mk	library/src/main/jni/Android.mk
+R100	jni/Application.mk	library/src/main/jni/Application.mk
+R100	jni/gif.c	library/src/main/jni/gif.c
+R100	jni/giflib/config.h	library/src/main/jni/giflib/config.h
+R100	jni/giflib/dgif_lib.c	library/src/main/jni/giflib/dgif_lib.c
+R100	jni/giflib/gif_err.c	library/src/main/jni/giflib/gif_err.c
+R100	jni/giflib/gif_hash.c	library/src/main/jni/giflib/gif_hash.c
+R100	jni/giflib/gif_hash.h	library/src/main/jni/giflib/gif_hash.h
+R100	jni/giflib/gif_lib.h	library/src/main/jni/giflib/gif_lib.h
+R100	jni/giflib/gif_lib_private.h	library/src/main/jni/giflib/gif_lib_private.h
+R100	jni/giflib/gifalloc.c	library/src/main/jni/giflib/gifalloc.c
+R100	res/.gitignore	library/src/main/res/.gitignore
+D	libs/armeabi-v7a/libgif.so
+D	libs/armeabi/libgif.so
+D	libs/mips/libgif.so
+D	libs/x86/libgif.so
+D	pom.xml
+D	project.properties
+A	sample/.gitignore
+A	sample/build.gradle
+A	sample/proguard-rules.txt
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/pl/droidsonroids/gif/sample/MainGifActivity.java
+A	sample/src/main/res/drawable-hdpi/cradle.gif
+A	sample/src/main/res/drawable-hdpi/ic_launcher.png
+A	sample/src/main/res/drawable-mdpi/ic_launcher.png
+A	sample/src/main/res/drawable-xhdpi/ic_launcher.png
+A	sample/src/main/res/drawable-xxhdpi/ic_launcher.png
+A	sample/src/main/res/layout/activity_main_gif.xml
+A	sample/src/main/res/values/strings.xml
+A	settings.gradle
+
+bd42131;Prepare for next development iteration
+M	pom.xml
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+0f576b6;Merge branch 'master' of git@github.com:koral--/android-gif-drawable.git
+1c6c7fa;#31 fixed
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+abbeaed;Update README.md
+M	README.md
+
+d4a2a81;getInputSourceByteCount() added
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+5e05c14;getAllocationByteCount() added getByteCount() renamed to getFrameByteCount() minor frame buffer allocation optimization for dispose to previous disposal method
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifImageButton.java
+M	src/pl/droidsonroids/gif/GifImageView.java
+M	src/pl/droidsonroids/gif/GifTextView.java
+
+909ec38;getNumBytes() added condition for previous frame backup added minor native code optimizations
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+a9fb3d4;isInEditMode() checking added
+M	src/pl/droidsonroids/gif/GifImageButton.java
+M	src/pl/droidsonroids/gif/GifImageView.java
+M	src/pl/droidsonroids/gif/GifTextView.java
+
+659fff0;README and javadocs updated
+M	README.md
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+c3e27c3;forward seeking support added frame time counting on start/stop fixed spelling and formatting fixes
+M	AndroidManifest.xml
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+M	pom.xml
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+537fbf0;color index computing fixes, including https://code.google.com/p/skia/source/detail?r=12786 throwing exceptions for errors during initializing moved to native code input stream closing moved to native code screen size checking changed to handle overflows minor performance improvements in native code
+M	jni/Android.mk
+M	jni/gif.c
+M	libs/armeabi-v7a/libgif.so
+M	libs/armeabi/libgif.so
+M	libs/mips/libgif.so
+M	libs/x86/libgif.so
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifIOException.java
+
+249434d;Merge branch 'master' of github.com:koral--/android-gif-drawable
+fe93d22;prebuilt .so files added, .gitignore changed, pom.xml minor improvements, getCurrentPosition minor fix
+M	.gitignore
+M	jni/gif.c
+A	libs/armeabi-v7a/libgif.so
+A	libs/armeabi/libgif.so
+A	libs/mips/libgif.so
+A	libs/x86/libgif.so
+M	pom.xml
+
+c97ab59;Update README.md
+M	README.md
+
+f0f7cfb;Javadocs updated
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+2f8e82e;Merge branch 'master' of git@github.com:koral--/android-gif-drawable.git
+2243290;initial mediaplayer control implementation
+M	README.md
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+9b8baf1;Update README.md
+M	README.md
+
+54f229a;setSpeed added to README.md, prepare for next development iteration
+M	README.md
+M	pom.xml
+
+cd55227;Merge branch 'master' of git@github.com:koral--/android-gif-drawable.git
+f46fef7;speed changing added
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+d8cd99d;Download section changed
+M	README.md
+
+97bd207;typo in free() fixed, pom.xml improvements
+M	jni/gif.c
+M	pom.xml
+
+abc3832;ByteBuffer freeing fix, javadocs update
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+c84a123;Update README.md
+M	README.md
+
+189f60c;Reset animation added
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+1b13ee0;direct ByteBuffer example added
+M	README.md
+
+84fbd1f;typo corrected
+M	README.md
+
+f1834e0;packaging changed to apklib
+M	pom.xml
+
+d46e405;Release links updated to 1.0.3
+M	README.md
+
+d5d3a31;Merge branch 'master' of github.com:koral--/android-gif-drawable
+aa302f1;Memory freeing fix, ByteBuffer source added, GifIOException added
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+A	src/pl/droidsonroids/gif/GifIOException.java
+
+544124c;Release links updated to 1.0.2
+M	README.md
+
+b893b27;Merge branch 'master' of github.com:koral--/android-gif-drawable
+d58f78d;pom.xml update, code cleaning, missing javadocs added
+M	pom.xml
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifError.java
+M	src/pl/droidsonroids/gif/GifImageButton.java
+M	src/pl/droidsonroids/gif/GifImageView.java
+M	src/pl/droidsonroids/gif/GifTextView.java
+
+df49fef;Update README.md
+M	README.md
+
+d089dbe;InputStream buffer optimization, manifest cleanup
+M	AndroidManifest.xml
+M	jni/gif.c
+
+f1ca293;byte array input source, JNI_OnUnload cleanup, null source checking, minor strings fixes
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifError.java
+
+f167d05;Null attrs fix for GifImageButton and GifTextView
+M	src/pl/droidsonroids/gif/GifImageButton.java
+M	src/pl/droidsonroids/gif/GifTextView.java
+
+f8c5a8e;artifact version changed
+M	pom.xml
+
+722d7b7;Merge pull request #15 from Wavesonics/master
+db094ee;Fixed crash in GifImageView
+M	src/pl/droidsonroids/gif/GifImageView.java
+
+3cfd3fa;Merge pull request #14 from Wavesonics/master
+3cdf2a9;Merge branch 'perf_opt'
+02745ad;Optimized streamReadFun() to cache it's read buff
+M	jni/gif.c
+
+982fe0d;Release link updated to 1.0.1
+M	README.md
+
+033b4f9;Ininitial pom.xml added, target updated to 19
+M	.gitignore
+M	jni/Application.mk
+A	pom.xml
+M	project.properties
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+7e19856;Merge pull request #11 from Wavesonics/master
+e3a8440;Fixed crash for InputStreams in multithreaded env
+M	jni/gif.c
+
+4df41ec;Fixed GifDrawable's toString() method
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+40854b0;Merge pull request #9 from Wavesonics/master
+c440901;Made GifDrawable class public
+M	src/pl/droidsonroids/gif/GifDrawable.java
+
+aeb1c79;Update README.md
+M	README.md
+
+a5b2570;code formatting
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifError.java
+
+545a5be;minor image loading fixes javadoc updates
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifError.java
+M	src/pl/droidsonroids/gif/GifImageButton.java
+M	src/pl/droidsonroids/gif/GifImageView.java
+
+4a48e53;memory allocation issue #6 fix
+M	jni/gif.c
+
+20d6a77;background, drawableStart and drawableEnd support added in GifTextView NotFoundException fix manifest cleanup
+M	AndroidManifest.xml
+M	src/pl/droidsonroids/gif/GifImageButton.java
+M	src/pl/droidsonroids/gif/GifImageView.java
+M	src/pl/droidsonroids/gif/GifTextView.java
+
+f4b4a73;Update README.md
+M	README.md
+
+5527dd3;Update README.md
+M	README.md
+
+2f418e3;Update README.md
+M	README.md
+
+f22de11;Update README.md
+M	README.md
+
+8429490;res folder added
+A	res/.gitignore
+
+83d4a40;unnecesary files removed
+D	.cproject
+
+68b04bd;Merge branch 'master' of github.com:koral--/android-gif-drawable
+342b1f4;gitignore updated
+M	.gitignore
+
+82a62ec;Update README.md
+M	README.md
+
+e08bfb6;Merge branch 'master' of git@github.com:koral--/android-gif-drawable.git
+8148ed0;GifTextView added
+M	src/pl/droidsonroids/gif/GifImageView.java
+A	src/pl/droidsonroids/gif/GifTextView.java
+
+e17a7c0;Update README.md
+M	README.md
+
+99c28c1;Update README.md
+M	README.md
+
+a14ccdf;Update README.md
+M	README.md
+
+3116930;Update README.md
+M	README.md
+
+4a15a97;Update README.md
+M	README.md
+
+aef56c1;ImageView and ImageButton subclasses added Code cleaning documentation updated
+M	AndroidManifest.xml
+M	jni/Android.mk
+M	jni/Application.mk
+M	jni/gif.c
+M	project.properties
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/GifError.java
+A	src/pl/droidsonroids/gif/GifImageButton.java
+A	src/pl/droidsonroids/gif/GifImageView.java
+D	src/pl/droidsonroids/gif/TestActivity.java
+
+c3bf140;Merge branch 'master' of git@github.com:koral--/android-gif-drawable.git
+eed4dc4;Improved resoueces and assets reading fixed native memory allocation issue
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/TestActivity.java
+
+eef8471;Update README.md
+M	README.md
+
+f7542f9;Merge branch 'master' of git@github.com:koral--/android-gif-drawable.git
+10ea300;InputStream reading fixed
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+M	src/pl/droidsonroids/gif/TestActivity.java
+
+b68d37c;Update README.md
+M	README.md
+
+09412fb;error handling imporved, inputstream support begin
+M	.cproject
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/GifDrawable.java
+A	src/pl/droidsonroids/gif/GifError.java
+M	src/pl/droidsonroids/gif/TestActivity.java
+
+40dd405;code cleaning, error handling fixed
+M	.cproject
+D	.settings/org.eclipse.jdt.core.prefs
+M	AndroidManifest.xml
+M	jni/Android.mk
+M	jni/Application.mk
+M	jni/gif.c
+M	jni/giflib/gif_lib.h
+A	src/pl/droidsonroids/gif/GifDrawable.java
+D	src/pl/droidsonroids/gif/Test.java
+A	src/pl/droidsonroids/gif/TestActivity.java
+
+f6b34a6;GIFLib updated to 5.0.5 fixed some memory allocation issuses code cleanup
+M	.cproject
+M	AndroidManifest.xml
+M	README.md
+M	jni/Android.mk
+M	jni/Application.mk
+M	jni/gif.c
+M	jni/giflib/dgif_lib.c
+M	jni/giflib/gif_lib.h
+M	jni/giflib/gifalloc.c
+M	project.properties
+M	src/pl/droidsonroids/gif/Test.java
+
+933819b;description updated
+M	README.md
+
+c2467ca;clean
+M	.cproject
+A	.settings/org.eclipse.jdt.core.prefs
+M	jni/Application.mk
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/Test.java
+
+39486b6;decoding improvements, javadocs added
+M	AndroidManifest.xml
+M	jni/Application.mk
+M	jni/gif.c
+M	jni/giflib/dgif_lib.c
+M	jni/giflib/gif_lib.h
+M	src/pl/droidsonroids/gif/Test.java
+
+be7d599;performance tweaks, better extension handling and many other improvements
+M	jni/gif.c
+M	src/pl/droidsonroids/gif/Test.java
+
+a6d0474;Merge branch 'master' of github.com:koral--/android-gif-drawable
+b2a8e61;major fixes
+M	.cproject
+M	AndroidManifest.xml
+M	LICENSE
+M	jni/Application.mk
+M	jni/gif.c
+M	jni/giflib/dgif_lib.c
+M	src/pl/droidsonroids/gif/Test.java
+
+671cfbe;Update README.md
+M	README.md
+
+6377e38;cleaning
+A	LICENSE
+M	README.md
+
+8ea4cc2;Merge branch 'master' of github.com:koral--/android-gif-drawable
+516b4d3;Initial, very experimental. Support files only.
+A	.cproject
+A	.gitignore
+A	AndroidManifest.xml
+A	jni/Android.mk
+A	jni/Application.mk
+A	jni/gif.c
+A	jni/giflib/config.h
+A	jni/giflib/dgif_lib.c
+A	jni/giflib/gif_err.c
+A	jni/giflib/gif_hash.c
+A	jni/giflib/gif_hash.h
+A	jni/giflib/gif_lib.h
+A	jni/giflib/gif_lib_private.h
+A	jni/giflib/gifalloc.c
+A	project.properties
+A	src/pl/droidsonroids/gif/Test.java
+
+e51d48f;Initial commit
+A	README.md

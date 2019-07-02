@@ -1,0 +1,1168 @@
+ffdf8e2;Support Google TV.
+A	res/values-large-notouch/config.xml
+
+bec7639;v1.2.3
+M	AndroidManifest.xml
+
+560d3ad;Don't hide the nav bar pre-KitKat.
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+151ff4a;Merge branch 'fix-immersive-3'
+9753497;Bump to v1.2.2
+M	AndroidManifest.xml
+
+4a3695b;Don't use the SYSTEM_UI_FLAGs on pre-JB devices.
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+4876f92;Explicitly adapt to system decor.
+M	AndroidManifest.xml
+M	res/layout-xlarge/main.xml
+M	res/layout/main.xml
+A	src/com/google/android/apps/markers/DecorTracker.java
+A	src/com/google/android/apps/markers/LogoView.java
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+ea7a64a;Ant target to start the default activity
+M	build.xml
+
+9fc4586;Trivially fix IDE layout rendering
+M	src/com/google/android/apps/markers/ToolButton.java
+
+10c71fd;Fix use of post-Eclair API on Eclair devices.
+M	src/com/google/android/apps/markers/Slate.java
+
+128aeff;Fix use of GB SharedPreferences API on Froyo.
+M	src/com/google/android/apps/markers/ToolButton.java
+
+f9fa822;Another pre-HC fix (setSystemUiVisibility calls).
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/ZoomTouchView.java
+
+8fb636c;Bump version to 1.2.1
+M	AndroidManifest.xml
+
+a3e482a;Fix startup crash on pre-Honeycomb devices.
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/ZoomTouchView.java
+
+20cda81;Let's just call it 1.2 and be done with it.
+M	AndroidManifest.xml
+
+5e1a98e;Not sure where 1.2 went. I want to go to there.
+M	AndroidManifest.xml
+
+509b18b;More fitsSystemWindows mischief
+M	res/layout-xlarge/main.xml
+M	res/values-large/dimens.xml
+M	res/values-xlarge-v16/dimens.xml
+M	res/values-xlarge/dimens.xml
+M	res/values/dimens.xml
+
+52c9c63;bump version
+M	AndroidManifest.xml
+
+920cada;Hack and slash: fixing fitSystemWindows on phones
+M	res/layout-xlarge/main.xml
+M	res/layout/colors_horizontal.xml
+M	res/layout/main.xml
+M	res/values/dimens.xml
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+d9ba87c;Dial the density back down for release.
+M	AndroidManifest.xml
+M	src/com/google/android/apps/markers/Slate.java
+
+a40adae;Hideybars (er, IMMERSIVE) support.
+M	AndroidManifest.xml
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/Slate.java
+
+d1f1069;Update to KK API.
+M	project.properties
+
+453ce72;Set workspace overlay color to something unique.
+M	src/com/google/android/apps/markers/Slate.java
+
+51f20fc;Confine scale to 0.1x--20x.
+M	src/com/google/android/apps/markers/ZoomTouchView.java
+
+ce59f21;Clean up buggy/unnecessary layer management.
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+f35562e;If you pick a color in zoom mode, switch back to the pen.
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+aa1398f;Double-click fatbits not ready yet.
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/ZoomTouchView.java
+
+58917f5;Fix top margin of tools on small tablets
+M	res/values-large/dimens.xml
+M	res/values/dimens.xml
+
+b5987f3;This is still beta, yo.
+M	AndroidManifest.xml
+
+25de5d9;Fix longpress-to-reset-zoom
+M	src/com/google/android/apps/markers/Slate.java
+
+056ea4d;Merge branch 'scaling'
+f5c6f1f;Fix OOM on large devices by actually checking the memclass.
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/TiledBitmapCanvas.java
+
+086af81;Fix unnecessary bitmap copy introduced by tiles.
+M	AndroidManifest.xml
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/TiledBitmapCanvas.java
+
+b87410a;Save brush widths.
+M	src/com/google/android/apps/markers/ToolButton.java
+
+73adfa9;Add a dialog for editing pen widths.
+A	res/drawable/pentool_bg.xml
+A	res/layout/pen_editor.xml
+A	src/com/google/android/apps/markers/PenWidthEditorView.java
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/ToolButton.java
+
+dd31cdd;Missing copyright header
+M	src/com/google/android/apps/markers/ZoomTouchView.java
+
+a54246b;double-tap with zoom tool now toggles 1x and 4x
+M	src/com/google/android/apps/markers/ZoomTouchView.java
+
+c83f694;Cleaning up obsolete longpress behavior.
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/ToolButton.java
+
+0462935;Bugfix: NPE when pausing and there's no bitmap
+M	AndroidManifest.xml
+M	project.properties
+M	src/com/google/android/apps/markers/Slate.java
+
+916570d;Turn off bitmap filtering at large sizes.
+M	AndroidManifest.xml
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/ZoomTouchView.java
+
+ec36995;Double tap to reset zoom
+M	AndroidManifest.xml
+M	res/layout/tools.xml
+M	src/com/google/android/apps/markers/ZoomTouchView.java
+
+bcd3cc3;bump versionCode
+M	AndroidManifest.xml
+
+276700e;Fix toolbar alignment issue on v16 tablets
+M	res/layout/tools.xml
+M	res/values-xlarge-v16/dimens.xml
+
+842225d;I seem to have fixed scaling and panning and everything.
+A	res/drawable-nodpi/grabber.png
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/ToolButton.java
+M	src/com/google/android/apps/markers/ZoomTouchView.java
+
+7d7b58d;Zoom attempt using canvas matrix
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/Slate.java
+A	src/com/google/android/apps/markers/ZoomTouchView.java
+
+1a3f6f0;Experimental: API 11+ scaling support
+M	res/layout/tools.xml
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/Slate.java
+
+f3bbe95;Experimental: hiding status bar with HUD
+M	AndroidManifest.xml
+M	res/layout-xlarge/main.xml
+M	res/layout/main.xml
+A	res/values-xlarge-v16/dimens.xml
+M	res/values-xlarge/dimens.xml
+M	res/values/dimens.xml
+
+678230b;target api 17 in eclipse
+M	project.properties
+
+7ba9b6a;v1.1.1: Fix crashing bug pre-Honeycomb.
+M	AndroidManifest.xml
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+5bef0ee;1.1 release candidate
+M	AndroidManifest.xml
+
+158ed70;Performance: use software layers for HUDs at all times
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+707725d;Long-standing gripe: tools don't retain state if process exits
+M	res/layout/tools.xml
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/Slate.java
+
+080153a;Fixing too-many-undo's in tiles.
+M	src/com/google/android/apps/markers/TiledBitmapCanvas.java
+
+daeccc4;v1.1-beta
+M	AndroidManifest.xml
+
+7e6f440;Mollify lint tools; pick a better (more stable) overflow menu animation.
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+4aca9a4;Loading drawings works again.
+M	src/com/google/android/apps/markers/CanvasLite.java
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/TiledBitmapCanvas.java
+
+f77c3f1;Versions working with multi-undo. (!)
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/TiledBitmapCanvas.java
+
+6ed193a;Checkpoint: versioned tiles
+M	src/com/google/android/apps/markers/TiledBitmapCanvas.java
+
+46abc3b;Texture support in TiledBitmapCanvas.
+M	src/com/google/android/apps/markers/CanvasLite.java
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/TiledBitmapCanvas.java
+
+da88516;Initial tiling render implementation.
+A	src/com/google/android/apps/markers/CanvasLite.java
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/Slate.java
+A	src/com/google/android/apps/markers/TiledBitmapCanvas.java
+
+1f9e2a4;Fix issue #10: DIRECTORY_PICTURES on Eclair
+M	project.properties
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+4265407;Fix issue 7: using future features of LinkedList
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+6ee885f;Working on setting background color.
+M	AndroidManifest.xml
+M	res/layout/tools.xml
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/ToolButton.java
+
+d43adac;A little more room for the pen shapes
+M	res/layout/tools.xml
+
+3d5d51b;Adjust the spacing formula to try to draw fewer circles.
+M	src/com/google/android/apps/markers/Slate.java
+
+eeabdbe;Bump versionCode
+M	AndroidManifest.xml
+
+9a75051;Rework how we talk to MediaScanner.
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+b80c3d3;New chisel tip pen shape.
+A	res/drawable-nodpi/fountainpen.png
+M	res/layout/tools.xml
+M	res/values/attrs.xml
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/ToolButton.java
+
+c90e7e8;Repair version 1.0.2 to no longer require faketouch
+M	AndroidManifest.xml
+
+5b02570;We don't need such a high-quality airbrush anyway.
+M	src/com/google/android/apps/markers/Slate.java
+
+fb539ac;Suppress circle bitmap brush for now.
+M	src/com/google/android/apps/markers/Slate.java
+
+89142ee;Now support faketouch devices. Also fix bugs:
+M	AndroidManifest.xml
+M	src/com/google/android/apps/markers/QrCode.java
+M	src/com/google/android/apps/markers/Slate.java
+
+0d5b0a9;Fix NPEs drawing bitmaps.
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/ToolButton.java
+
+68ab86f;Fix resource NPEs on HC devices.
+M	AndroidManifest.xml
+M	src/com/google/android/apps/markers/ToolButton.java
+
+13b5057;Removed
+D	misc/market.txt
+
+e616e42;Final tweaks for launch
+M	AndroidManifest.xml
+M	build.properties
+M	build.xml
+M	misc/market.txt
+
+c069d92;Clean up some junk.
+D	index.html
+R100	gen-circle.sh	misc/gen-circle.sh
+R100	market.txt	misc/market.txt
+
+1066f8e;Tweak pen widths.
+M	AndroidManifest.xml
+M	res/layout/tools.xml
+
+cf34a0a;ICS target
+M	project.properties
+
+e811891;Market description
+M	market.txt
+
+fef2462;Fix some text size issues
+M	res/values-xlarge/dimens.xml
+M	res/values/styles.xml
+
+23a3dca;Finally got it to compile under org.dsandler.
+M	res/layout-xlarge/main.xml
+M	res/layout/colors_horizontal.xml
+M	res/layout/colors_vertical.xml
+M	res/layout/main.xml
+M	res/layout/tools.xml
+M	src/com/google/android/apps/markers/ToolButton.java
+
+8f05d99;Notes for Play Store
+A	market.txt
+
+9c0f221;Target API 16
+M	AndroidManifest.xml
+
+cd95bce;Bump version number up (down).
+M	AndroidManifest.xml
+
+2ad0614;Moved to org.dsandler package.
+M	AndroidManifest.xml
+M	res/layout-xlarge/main.xml
+M	res/layout/colors_horizontal.xml
+M	res/layout/colors_vertical.xml
+M	res/layout/main.xml
+M	res/layout/tools.xml
+M	src/com/google/android/apps/markers/About.java
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/QrCode.java
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/ToolButton.java
+
+fe1d6cf;Working on about box etc
+M	assets/about.html
+D	assets/large_launcher_icon.png
+M	res/drawable-mdpi/qr.png
+M	res/layout/about_box.xml
+M	res/values/strings.xml
+M	res/values/styles.xml
+M	src/com/google/android/apps/markers/About.java
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+ba1a438;More about box work
+A	res/drawable-xhdpi/large_launcher_icon.png
+A	res/layout/about_box.xml
+M	res/layout/overflow_menu.xml
+M	src/com/google/android/apps/markers/About.java
+M	src/com/google/android/apps/markers/QrCode.java
+
+aa30363;Use Holo/default theme without title bar.
+M	AndroidManifest.xml
+M	src/com/google/android/apps/markers/MarkersActivity.java
+
+8c47d6b;About box, QR code box
+A	assets/about.html
+A	assets/large_launcher_icon.png
+A	assets/license.html
+A	res/drawable-mdpi/qr.png
+M	res/layout/overflow_menu.xml
+M	res/values/strings.xml
+M	src/com/google/android/apps/markers/About.java
+M	src/com/google/android/apps/markers/MarkersActivity.java
+A	src/com/google/android/apps/markers/QrCode.java
+
+f27bef8;Package name refactoring, finished.
+M	AndroidManifest.xml
+M	res/layout-xlarge/main.xml
+M	res/layout/colors_horizontal.xml
+M	res/layout/colors_vertical.xml
+M	res/layout/main.xml
+M	res/layout/overflow_menu.xml
+M	res/layout/tools.xml
+M	res/values/strings.xml
+M	src/com/google/android/apps/markers/MarkersActivity.java
+M	src/com/google/android/apps/markers/PressureCooker.java
+M	src/com/google/android/apps/markers/Slate.java
+M	src/com/google/android/apps/markers/Spot.java
+M	src/com/google/android/apps/markers/SpotFilter.java
+M	src/com/google/android/apps/markers/ToolButton.java
+
+0e14578;Refactoring part 1
+A	src/com/google/android/apps/markers/About.java
+R100	src/com/example/markers/MarkersActivity.java	src/com/google/android/apps/markers/MarkersActivity.java
+R100	src/com/android/slate/PressureCooker.java	src/com/google/android/apps/markers/PressureCooker.java
+R100	src/com/android/slate/Slate.java	src/com/google/android/apps/markers/Slate.java
+R100	src/com/android/slate/Spot.java	src/com/google/android/apps/markers/Spot.java
+R100	src/com/android/slate/SpotFilter.java	src/com/google/android/apps/markers/SpotFilter.java
+R100	src/com/example/markers/ToolButton.java	src/com/google/android/apps/markers/ToolButton.java
+
+e03e071;More UI tweakery (fonts)
+M	res/values-large/dimens.xml
+M	res/values/dimens.xml
+M	res/values/styles.xml
+M	src/com/example/markers/MarkersActivity.java
+
+ec226c7;More work in the direction of opening the code:
+M	res/layout/actionbar.xml
+A	res/layout/overflow_menu.xml
+M	res/values/styles.xml
+A	src/com/example/markers/MarkersActivity.java
+A	src/com/example/markers/ToolButton.java
+
+897cf02;API guard
+M	src/com/android/slate/Slate.java
+
+f9b5706;Tablet fixes
+M	res/layout-xlarge/main.xml
+M	res/values-xlarge/dimens.xml
+
+cc6ed51;new art
+D	res/drawable-hdpi/bigx.png
+D	res/drawable-hdpi/bug.png
+D	res/drawable-hdpi/divider.png
+D	res/drawable-hdpi/doodlebug.png
+D	res/drawable-hdpi/gallery.png
+D	res/drawable-hdpi/icon.png
+D	res/drawable-hdpi/lightning.png
+D	res/drawable-hdpi/load.png
+D	res/drawable-hdpi/newpage.png
+D	res/drawable-hdpi/newpage2.png
+D	res/drawable-hdpi/newpage3.png
+D	res/drawable-hdpi/scribble.png
+D	res/drawable-hdpi/share.png
+D	res/drawable-hdpi/undo.png
+D	res/drawable-ldpi/icon.png
+D	res/drawable-mdpi/bigx.png
+D	res/drawable-mdpi/bug.png
+D	res/drawable-mdpi/divider.png
+D	res/drawable-mdpi/doodlebug.png
+D	res/drawable-mdpi/gallery.png
+D	res/drawable-mdpi/lightning.png
+D	res/drawable-mdpi/load.png
+D	res/drawable-mdpi/newpage.png
+D	res/drawable-mdpi/newpage2.png
+D	res/drawable-mdpi/newpage3.png
+D	res/drawable-mdpi/scribble.png
+D	res/drawable-mdpi/share.png
+D	res/drawable-mdpi/undo.png
+D	res/drawable-xhdpi/bigx.png
+D	res/drawable-xhdpi/bug.png
+A	res/drawable-xhdpi/check.png
+D	res/drawable-xhdpi/lightning.png
+M	res/drawable-xhdpi/load.png
+M	res/drawable-xhdpi/newpage.png
+D	res/drawable-xhdpi/newpage2.png
+D	res/drawable-xhdpi/newpage3.png
+A	res/drawable-xhdpi/overflow.png
+M	res/drawable-xhdpi/scribble.png
+M	res/drawable-xhdpi/share.png
+M	res/drawable-xhdpi/undo.png
+M	res/layout/actionbar.xml
+M	res/layout/main.xml
+M	res/values-large/dimens.xml
+M	res/values-xlarge/dimens.xml
+M	res/values/dimens.xml
+
+916adc4;AOSP licenses
+M	AndroidManifest.xml
+A	COPYING
+M	res/color/pentool_bg.xml
+M	res/color/pentool_fg.xml
+M	res/drawable/action_button_bg.xml
+M	res/drawable/transparent.xml
+M	res/drawable/transparent_tool.xml
+M	res/layout-xlarge/main.xml
+M	res/layout/actionbar.xml
+M	res/layout/colors_horizontal.xml
+M	res/layout/colors_vertical.xml
+M	res/layout/tools.xml
+M	res/values-large/config.xml
+M	res/values-large/dimens.xml
+M	res/values-xlarge/config.xml
+M	res/values-xlarge/dimens.xml
+M	res/values/attrs.xml
+M	res/values/colors.xml
+M	res/values/config.xml
+M	res/values/dimens.xml
+M	res/values/strings.xml
+M	res/values/styles.xml
+M	src/com/android/slate/PressureCooker.java
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/Spot.java
+M	src/com/android/slate/SpotFilter.java
+
+cfd6cbd;Move main app to com.example.markers.
+M	AndroidManifest.xml
+M	res/layout-xlarge/main.xml
+M	res/layout/colors_horizontal.xml
+M	res/layout/colors_vertical.xml
+M	res/layout/main.xml
+M	res/layout/tools.xml
+D	src/com/google/android/markersbeta/MarkersActivity.java
+D	src/com/google/android/markersbeta/ToolButton.java
+
+82d215a;Remove more unused stuff
+M	src/com/google/android/markersbeta/MarkersActivity.java
+M	src/com/google/android/markersbeta/ToolButton.java
+
+b9c31fc;Remove more unused stuff
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+9dd564a;Remove unused accelerometer code.
+M	src/com/google/android/markersbeta/MarkersActivity.java
+D	src/com/google/android/markersbeta/MrShaky.java
+
+6273fd6;New launcher icon.
+M	AndroidManifest.xml
+A	art/icon3/markers.psd
+A	art/icon3/markers_green.psd
+A	art/icon3/markers_green_rr.png
+A	art/icon3/markers_green_rr.psd
+A	res/drawable-mdpi/launcher_icon.png
+A	res/drawable-mdpi/markers.png
+A	res/drawable-xhdpi/launcher_icon.png
+A	res/drawable-xhdpi/markers.png
+M	res/layout-xlarge/main.xml
+M	res/layout/main.xml
+
+e9679c6;Bump to 0.11
+M	AndroidManifest.xml
+
+fdbf42a;Add pen type selector.
+M	gen-circle.sh
+D	res/drawable-nodpi/airbrush.png
+A	res/drawable-nodpi/airbrush_dark.png
+A	res/drawable-nodpi/airbrush_light.png
+M	res/layout/actionbar.xml
+M	res/layout/main.xml
+M	res/layout/tools.xml
+M	res/values/attrs.xml
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+M	src/com/google/android/markersbeta/ToolButton.java
+
+b679b2c;Tuning animations, making them work on tablets too.
+M	res/layout-xlarge/main.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+56296b1;Broke up HUD again.
+M	res/layout-xlarge/main.xml
+M	res/layout/main.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+9c45966;bump
+M	AndroidManifest.xml
+
+376aba1;Butter up the HUD animation.
+M	res/layout/main.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+34f019c;Fix bugs / cleanup around image load
+M	res/layout/actionbar.xml
+M	res/values-large/dimens.xml
+M	res/values-xlarge/dimens.xml
+M	res/values/dimens.xml
+M	res/values/styles.xml
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+4a49189;Initial move to portrait on smaller screens.
+M	AndroidManifest.xml
+R100	res/layout-large/main.xml	res/layout-xlarge/main.xml
+M	res/layout/main.xml
+M	res/layout/tools.xml
+A	res/values-large/config.xml
+M	res/values-large/dimens.xml
+A	res/values-xlarge/config.xml
+A	res/values-xlarge/dimens.xml
+A	res/values/config.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+8cf411e;Fix drawing save bug, for real.
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+a4cf45c;Still playing with brush composition
+M	src/com/android/slate/Slate.java
+
+5c1e484;Bump version
+M	AndroidManifest.xml
+
+f81abca;More experiments with new brush types
+M	res/drawable-nodpi/airbrush.png
+M	src/com/android/slate/Slate.java
+
+042fe23;Reduce double-drawing at each touch point along the stroke.
+M	src/com/android/slate/Slate.java
+
+de57197;Experimenting with other brush shapes.
+A	gen-circle.sh
+A	res/drawable-nodpi/airbrush.png
+A	res/drawable-nodpi/circle.png
+A	res/drawable-nodpi/circle_1bpp.png
+M	src/com/android/slate/Slate.java
+
+63cdc33;WIP: performance testing
+M	src/com/android/slate/Slate.java
+
+b7295e4;Performance: stop using PathMeasure to draw strokes
+M	src/com/android/slate/Slate.java
+
+0c9bf47;Separate smoothing parameters for position & size/pressure.
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SpotFilter.java
+
+5d51d46;missing
+A	res/drawable-nodpi/uncledan.png
+A	res/drawable-nodpi/uncledan_save.png
+
+173f88d;missing
+A	project.properties
+
+6573156;WIP: Edit intent support
+M	AndroidManifest.xml
+D	TODO
+M	res/layout/actionbar.xml
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+dbb195f;Assume stylus is calibrated.
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SpotFilter.java
+
+2aee5fc;Precise stylus input.
+M	src/com/android/slate/SpotFilter.java
+
+416e808;Detect styli on ICS, plus a hack for the Flyer.
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/Spot.java
+
+7c25bb7;Further improvements to new color palette.
+M	res/layout-large/main.xml
+A	res/layout/colors_horizontal.xml
+R100	res/layout/colors.xml	res/layout/colors_vertical.xml
+M	res/layout/main.xml
+M	src/com/google/android/markersbeta/ToolButton.java
+
+2189a49;New color layout. Untested on phone.
+M	AndroidManifest.xml
+M	TODO
+M	res/layout-large/main.xml
+M	res/layout/colors.xml
+M	res/layout/tools.xml
+M	res/values/attrs.xml
+M	res/values/dimens.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+M	src/com/google/android/markersbeta/ToolButton.java
+
+dcc1f7a;probably should be in Buganizer but whatever
+A	TODO
+
+b5d7b01;Save temporary in onPause instead of onStop.
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+07d3366;fix annoying clear-on-share bug
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+69526e2;only create .nomedia in temp directory
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+99a94f7;fix colorlist orientation bug
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+65393a3;Work on revised HUD layout.
+M	AndroidManifest.xml
+M	build.xml
+M	proguard.cfg
+M	res/layout-large/main.xml
+D	res/layout-large/tools.xml
+M	res/layout/actionbar.xml
+M	res/layout/colors.xml
+M	res/layout/main.xml
+M	res/layout/tools.xml
+M	res/values/colors.xml
+M	res/values/styles.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+M	src/com/google/android/markersbeta/ToolButton.java
+
+907cf01;Bump version to 0.8.
+M	AndroidManifest.xml
+
+48cbc26;Adjust UI for tablet.
+M	res/values-large/dimens.xml
+M	res/values/dimens.xml
+M	res/values/styles.xml
+M	src/com/android/slate/PressureCooker.java
+M	src/com/android/slate/Slate.java
+
+be5fe76;Pull over new pressure debug code from partner branch.
+M	src/com/android/slate/PressureCooker.java
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+dfa485a;Tweak highlighting in action bar.
+M	res/drawable/action_button_bg.xml
+M	res/values/colors.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+0a38042;Revised actionbar icons.
+A	res/drawable-hdpi/bigx.png
+M	res/drawable-hdpi/bug.png
+M	res/drawable-hdpi/divider.png
+A	res/drawable-hdpi/doodlebug.png
+M	res/drawable-hdpi/gallery.png
+M	res/drawable-hdpi/lightning.png
+M	res/drawable-hdpi/load.png
+M	res/drawable-hdpi/newpage.png
+M	res/drawable-hdpi/newpage2.png
+M	res/drawable-hdpi/newpage3.png
+A	res/drawable-hdpi/scribble.png
+M	res/drawable-hdpi/share.png
+M	res/drawable-hdpi/undo.png
+A	res/drawable-mdpi/bigx.png
+M	res/drawable-mdpi/bug.png
+M	res/drawable-mdpi/divider.png
+A	res/drawable-mdpi/doodlebug.png
+M	res/drawable-mdpi/gallery.png
+M	res/drawable-mdpi/lightning.png
+M	res/drawable-mdpi/load.png
+M	res/drawable-mdpi/newpage.png
+M	res/drawable-mdpi/newpage2.png
+M	res/drawable-mdpi/newpage3.png
+A	res/drawable-mdpi/scribble.png
+M	res/drawable-mdpi/share.png
+M	res/drawable-mdpi/undo.png
+A	res/drawable-xhdpi/bigx.png
+M	res/drawable-xhdpi/bug.png
+M	res/drawable-xhdpi/divider.png
+A	res/drawable-xhdpi/doodlebug.png
+M	res/drawable-xhdpi/gallery.png
+M	res/drawable-xhdpi/lightning.png
+M	res/drawable-xhdpi/load.png
+M	res/drawable-xhdpi/newpage.png
+M	res/drawable-xhdpi/newpage2.png
+M	res/drawable-xhdpi/newpage3.png
+A	res/drawable-xhdpi/scribble.png
+M	res/drawable-xhdpi/share.png
+M	res/drawable-xhdpi/undo.png
+A	res/drawable/action_button_bg.xml
+M	res/layout/actionbar.xml
+M	res/values/colors.xml
+M	res/values/dimens.xml
+M	res/values/styles.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+3c871f0;WIP: new UI and quick-save workflow
+M	AndroidManifest.xml
+A	res/drawable-hdpi/bug.png
+A	res/drawable-hdpi/divider.png
+A	res/drawable-hdpi/gallery.png
+A	res/drawable-hdpi/lightning.png
+A	res/drawable-hdpi/load.png
+A	res/drawable-hdpi/newpage.png
+A	res/drawable-hdpi/newpage2.png
+A	res/drawable-hdpi/newpage3.png
+A	res/drawable-hdpi/share.png
+A	res/drawable-hdpi/undo.png
+A	res/drawable-mdpi/bug.png
+A	res/drawable-mdpi/divider.png
+A	res/drawable-mdpi/gallery.png
+A	res/drawable-mdpi/lightning.png
+A	res/drawable-mdpi/load.png
+A	res/drawable-mdpi/newpage.png
+A	res/drawable-mdpi/newpage2.png
+A	res/drawable-mdpi/newpage3.png
+A	res/drawable-mdpi/share.png
+A	res/drawable-mdpi/undo.png
+A	res/drawable-xhdpi/bug.png
+A	res/drawable-xhdpi/divider.png
+A	res/drawable-xhdpi/gallery.png
+A	res/drawable-xhdpi/lightning.png
+A	res/drawable-xhdpi/load.png
+A	res/drawable-xhdpi/newpage.png
+A	res/drawable-xhdpi/newpage2.png
+A	res/drawable-xhdpi/newpage3.png
+A	res/drawable-xhdpi/share.png
+A	res/drawable-xhdpi/undo.png
+M	res/layout-large/main.xml
+M	res/layout/actionbar.xml
+M	res/values-large/dimens.xml
+M	res/values/styles.xml
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+a2a5b66;Bump version to 0.7.3.
+M	AndroidManifest.xml
+
+749e61d;Now use pressure + size.
+R100	res/layout-xlarge/main.xml	res/layout-large/main.xml
+R100	res/layout-xlarge/tools.xml	res/layout-large/tools.xml
+R100	res/values-xlarge/dimens.xml	res/values-large/dimens.xml
+M	src/com/android/slate/Slate.java
+
+1294f87;0.7.2.2: allow clear-all to be undone
+M	AndroidManifest.xml
+M	src/com/android/slate/Slate.java
+
+0ac9934;forgot to re-enable the fat marker (v0.7.2.1)
+M	AndroidManifest.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+cc89a2d;Version bump: 0.7.2
+M	AndroidManifest.xml
+
+5e76264;Return to a simpler time.
+A	res/drawable-nodpi/checks_small_dark.png
+A	res/drawable/transparent_tool.xml
+M	res/layout-xlarge/main.xml
+M	res/layout-xlarge/tools.xml
+M	res/layout/colors.xml
+M	res/layout/main.xml
+M	res/layout/tools.xml
+A	src/com/android/slate/PressureCooker.java
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+0e5ebc3;Some early scaling work.
+M	src/com/android/slate/Slate.java
+
+97e3b41;Fixed loading bitmaps.
+M	src/com/android/slate/Slate.java
+
+1abd31e;Major progress toward panning.
+A	res/drawable-nodpi/checks_light.png
+A	res/drawable/transparent.xml
+M	res/layout-xlarge/main.xml
+M	res/layout-xlarge/tools.xml
+M	res/layout/main.xml
+M	res/layout/tools.xml
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+D	src/com/google/android/markersbeta/PenToolButton.java
+A	src/com/google/android/markersbeta/ToolButton.java
+
+ada76eb;ZOMG multiple undo
+M	AndroidManifest.xml
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+b97b15a;Merge UI layout changes
+c068cac;Fix first point of paths.
+M	src/com/android/slate/Slate.java
+
+e475d1d;Erase support.
+M	res/layout-xlarge/tools.xml
+M	res/layout/main.xml
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+72147f3;OMG progress
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SpotFilter.java
+
+654a480;Bump version to 0.7.2 (19)
+M	AndroidManifest.xml
+
+8e9d117;Disable tool quasimodes if split touch is not available.
+M	src/com/google/android/markersbeta/PenToolButton.java
+
+5667be6;New main layout.
+A	res/layout-xlarge/main.xml
+M	res/layout-xlarge/tools.xml
+M	res/layout/actionbar.xml
+A	res/layout/colors.xml
+M	res/layout/main.xml
+M	res/layout/tools.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+984d0af;Fix crash on load.
+M	AndroidManifest.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+45dd341;Add 'Share' in the main menu.
+M	AndroidManifest.xml
+M	res/layout/actionbar.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+5481bce;Bump version to 0.7-beta.
+M	AndroidManifest.xml
+
+324e1a2;resolved conflict
+92b2ab0;Checkpoint ephemeral tool support.
+A	res/color/pentool_bg.xml
+A	res/color/pentool_fg.xml
+A	res/layout-xlarge/tools.xml
+M	res/layout/main.xml
+A	res/layout/tools.xml
+A	res/values/attrs.xml
+A	res/values/colors.xml
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+A	src/com/google/android/markersbeta/PenToolButton.java
+
+67d5092;bump version
+M	AndroidManifest.xml
+
+0889eda;Misc.
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SpotFilter.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+6e05d58;Fix BACK button (broken by last commit).
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+e2fed6d;MENU key toggles the action bar.
+M	AndroidManifest.xml
+M	build.xml
+M	src/com/google/android/markersbeta/MarkersActivity.java
+
+b94f3d4;Bump version number.
+M	AndroidManifest.xml
+
+cd03610;resolve conflicts
+dff8aaa;New actionbar UI.
+M	AndroidManifest.xml
+A	res/layout/actionbar.xml
+M	res/layout/main.xml
+M	res/values-xlarge/dimens.xml
+M	res/values/dimens.xml
+A	res/values/styles.xml
+M	src/com/android/slate/SlateActivity.java
+
+7b2fbcc;Final refactoring.
+M	res/layout/main.xml
+
+9e222e3;Packaging for internal beta.
+M	AndroidManifest.xml
+M	build.properties
+
+0f2a111;Refactoring (2): rewiring the house
+M	src/com/android/slate/Slate.java
+M	src/com/google/android/markersbeta/MarkersActivity.java
+M	src/com/google/android/markersbeta/MrShaky.java
+
+aef8571;Refactoring (1): Move to com.google.android.markersbeta/.MarkersActivity
+M	AndroidManifest.xml
+R100	src/com/android/slate/SlateActivity.java	src/com/google/android/markersbeta/MarkersActivity.java
+R100	src/com/android/slate/MrShaky.java	src/com/google/android/markersbeta/MrShaky.java
+
+2bce227;Attempt to fix startup crash on EVO.
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+6e9ae12;Back to API 5.
+M	AndroidManifest.xml
+
+6f13714;Just made this work on Eclair. WHAT JUST HAPPENED
+M	AndroidManifest.xml
+M	res/layout/main.xml
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+M	src/com/android/slate/Spot.java
+M	src/com/android/slate/SpotFilter.java
+
+79604fe;More plumbing for Spot
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SpotFilter.java
+
+36dedeb;Checkpoint: Reduce dependency on PointerCoords with new Spot class
+M	default.properties
+D	src/com/android/slate/CoordBuffer.java
+M	src/com/android/slate/Slate.java
+A	src/com/android/slate/Spot.java
+A	src/com/android/slate/SpotFilter.java
+
+8823175;Merge branch 'master' of diesel.i.corp.google.com:gitrepos/Markers
+ba1fd12;Split touch events support.
+M	AndroidManifest.xml
+M	res/layout/main.xml
+M	src/com/android/slate/SlateActivity.java
+
+f89c146;Split touch events support.
+M	AndroidManifest.xml
+M	res/layout/main.xml
+M	src/com/android/slate/SlateActivity.java
+
+a637a97;New feature: automatic pressure calibration. Still rough.
+M	res/values/dimens.xml
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+5df48fc;Version number bump for pressure calibration
+M	AndroidManifest.xml
+
+3d64756;Version bump (0.3)
+M	AndroidManifest.xml
+
+61d6d46;Undo.
+A	src/com/android/slate/MrShaky.java
+M	src/com/android/slate/SlateActivity.java
+
+e0c0abb;Basic undo support.
+M	proguard.cfg
+M	res/layout/main.xml
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+b33aa5e;Fixes loading images.
+M	AndroidManifest.xml
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+0a66290;version number bump (0.2.2)
+M	AndroidManifest.xml
+
+fc28b2f;Implemented save/restore on stop.
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+508a875;Move file IO logic to Activity.
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+ac262e6;tidiness
+M	res/layout/main.xml
+
+ae4c42c;Save files to 'Drawings' instead of 'Slates'.
+M	AndroidManifest.xml
+M	src/com/android/slate/Slate.java
+
+66bbe0c;Minor UI overhaul:
+M	AndroidManifest.xml
+M	res/layout/main.xml
+A	res/values-xlarge/dimens.xml
+A	res/values/dimens.xml
+M	src/com/android/slate/SlateActivity.java
+
+0cbe727;sensorLandscape orientation
+M	AndroidManifest.xml
+
+0cd1db3;WIP: multitouch
+M	src/com/android/slate/Slate.java
+
+065b67e;Density-sensitive pen radius. Also, removed size influence for now.
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+77c39ea;Properly target API 9 (for PointerCoords).
+M	AndroidManifest.xml
+
+61fbe8b;Cleanups.
+M	src/com/android/slate/Slate.java
+
+7df2a1b;sigh
+M	src/com/android/slate/CoordBuffer.java
+M	src/com/android/slate/Slate.java
+
+872ca73;content-type; version number
+M	index.html
+
+eea9778;Merge branch 'master' of diesel.i.corp.google.com:gitrepos/Markers
+f5e316e;version 0.1
+M	AndroidManifest.xml
+
+155454d;trivial website
+A	index.html
+
+8340784;trivial website
+A	index.html
+M	src/com/android/slate/CoordBuffer.java
+M	src/com/android/slate/Slate.java
+
+4a2def4;For posterity.
+A	art/orig-icon.png
+
+7cc6e77;New name and icon.
+A	art/newicon/1296228064632.png
+A	art/newicon/icon-144.png
+A	art/newicon/icon-36.png
+A	art/newicon/icon-48.png
+A	art/newicon/icon-512.png
+A	art/newicon/icon-72.png
+M	build.xml
+M	res/drawable-hdpi/icon.png
+M	res/drawable-ldpi/icon.png
+M	res/drawable-mdpi/icon.png
+M	res/values/strings.xml
+
+f14e579;tweaks
+M	res/layout/main.xml
+M	src/com/android/slate/SlateActivity.java
+
+983be19;work
+M	res/layout/main.xml
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+5cffbd5;Added toasts. Also apply bitmap on top of canvas instead of clearing first.
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+3174967;Loading images, quick & dirty.
+M	proguard.cfg
+M	res/layout/main.xml
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+5f1e51d;Tweaks:
+M	src/com/android/slate/CoordBuffer.java
+M	src/com/android/slate/Slate.java
+
+3ea578b;Exponential decay weighted average.
+M	src/com/android/slate/CoordBuffer.java
+M	src/com/android/slate/Slate.java
+
+b478097;New filtering logic. Not bad for a first try.
+A	src/com/android/slate/CoordBuffer.java
+M	src/com/android/slate/Slate.java
+
+4e8c562;landscape UI for my son
+M	AndroidManifest.xml
+M	res/layout/main.xml
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+b0f3d02;Tweaks:
+M	res/drawable-hdpi/icon.png
+M	res/values/strings.xml
+M	src/com/android/slate/Slate.java
+
+499b3ed;Now plotting circles along the path, lerping weight
+M	src/com/android/slate/Slate.java
+
+478e2c1;Colors
+M	res/layout/main.xml
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+69b07ec;fix clear bug leaving paint in weird state
+M	res/layout/main.xml
+M	src/com/android/slate/Slate.java
+
+8bcfe06;Features: clear, save
+M	AndroidManifest.xml
+M	proguard.cfg
+M	res/layout/main.xml
+M	src/com/android/slate/Slate.java
+M	src/com/android/slate/SlateActivity.java
+
+ae594f0;initial version
+A	AndroidManifest.xml
+A	build.properties
+A	build.xml
+A	default.properties
+A	proguard.cfg
+A	res/drawable-hdpi/icon.png
+A	res/drawable-ldpi/icon.png
+A	res/drawable-mdpi/icon.png
+A	res/layout/main.xml
+A	res/values/strings.xml
+A	src/com/android/slate/Slate.java
+A	src/com/android/slate/SlateActivity.java

@@ -1,0 +1,681 @@
+564ee40;添加模块对应的文章链接
+M	README.md
+
+a952e93;解决服务配置了 context-path 后，Turbine 监控不到的问题
+M	spring-cloud-hystrix-dashboard-turbine/src/main/resources/bootstrap.yaml
+M	spring-demo-service-feign/src/main/resources/bootstrap.yaml
+M	spring-demo-service-ribbon/src/main/resources/bootstrap.yaml
+
+b689be2;解决集群中应用配置了 context-path 监控不到的问题
+M	spring-cloud-hystrix-dashboard-turbine/src/main/resources/bootstrap.yaml
+
+949f804;删除 spring-demo-service 多余的依赖
+M	spring-demo-service/pom.xml
+
+9647ac1;优化配置了context-path的解决方案
+M	spring-demo-service-feign/src/main/resources/bootstrap.yaml
+
+cf72822;添加 pom 配置，使 eureka 打包后的 jar 包可以用命令 java -jar启动
+M	eureka-service/pom.xml
+
+dee2196;去除配置中心
+M	spring-cloud-gateway/src/main/resources/bootstrap.yaml
+
+71843d7;添加 module 说明
+M	README.md
+
+b55b465;添加 module 说明
+M	README.md
+
+29663b9;Update README.md
+M	README.md
+
+2f1a569;添加 Spring Cloud Stream
+M	spring-cloud-stream/src/main/java/com/geny/stream/message/StreamReceiver.java
+
+100d186;增加 Spring Cloud Stream
+M	spring-cloud-stream/src/main/java/com/geny/stream/StreamApplication.java
+A	spring-cloud-stream/src/main/java/com/geny/stream/message/StreamClient.java
+M	spring-cloud-stream/src/main/java/com/geny/stream/message/StreamReceiver.java
+A	spring-cloud-stream/src/main/java/com/geny/stream/message/User.java
+M	spring-cloud-stream/src/main/resources/application.yaml
+
+2910b39;添加 Spring Cloud Stream
+M	spring-cloud-stream/pom.xml
+A	spring-cloud-stream/src/main/java/com/geny/stream/StreamApplication.java
+A	spring-cloud-stream/src/main/java/com/geny/stream/message/StreamReceiver.java
+A	spring-cloud-stream/src/main/resources/application.yaml
+
+6d4d5dd;修改 module 名
+M	eureka-service/pom.xml
+M	pom.xml
+M	spring-boot-admin/pom.xml
+M	spring-cloud-config-client/pom.xml
+M	spring-cloud-config/pom.xml
+M	spring-cloud-gateway/pom.xml
+M	spring-cloud-hystrix-dashboard-turbine/pom.xml
+M	spring-cloud-hystrix-dashboard/pom.xml
+M	spring-cloud-service1/pom.xml
+M	spring-cloud-service2/pom.xml
+A	spring-cloud-stream/pom.xml
+M	spring-demo-service-feign/pom.xml
+M	spring-demo-service-ribbon/pom.xml
+M	spring-demo-service/pom.xml
+
+3d10e4d;修改 module 名
+M	pom.xml
+
+61d864d;Spring Cloud Sleuth + Zipkin 集成 RabbitMQ
+M	spring-cloud-service1/pom.xml
+M	spring-cloud-service1/src/main/resources/bootstrap.yaml
+M	spring-cloud-service2/pom.xml
+M	spring-cloud-service2/src/main/resources/bootstrap.yaml
+
+36aa4b2;添加 spring-cloud-service1、spring-cloud-service2服务，对 Spring Cloud Sleuth 集成 Zipkin 进行测试
+M	spring-cloud-service1/src/main/resources/bootstrap.yaml
+M	spring-cloud-service2/src/main/resources/bootstrap.yaml
+
+4fece90;添加 spring-cloud-service
+M	pom.xml
+A	spring-cloud-service1/pom.xml
+A	spring-cloud-service1/src/main/java/com/geny/service1/Service1Application.java
+A	spring-cloud-service1/src/main/resources/bootstrap.yaml
+A	spring-cloud-service2/pom.xml
+A	spring-cloud-service2/src/main/java/com/geny/service2/Service2Application.java
+A	spring-cloud-service2/src/main/resources/bootstrap.yaml
+
+b66fd5a;Update pom.xml
+M	spring-cloud-hystrix-dashboard/pom.xml
+
+fdbdc8f;Update pom.xml
+M	spring-boot-admin/pom.xml
+
+759d867;添加限流拦截器
+M	spring-cloud-gateway/src/main/java/com/geny/gateway/filter/PostFilter.java
+M	spring-cloud-gateway/src/main/java/com/geny/gateway/filter/PreFilter.java
+A	spring-cloud-gateway/src/main/java/com/geny/gateway/filter/RateLimitFilter.java
+M	spring-cloud-gateway/src/main/resources/bootstrap.yaml
+
+e22542a;添加 gateway 网关过滤器
+A	spring-cloud-gateway/src/main/java/com/geny/gateway/filter/PostFilter.java
+A	spring-cloud-gateway/src/main/java/com/geny/gateway/filter/PreFilter.java
+M	spring-cloud-gateway/src/main/resources/bootstrap.yaml
+
+d8f6f68;修改说明
+M	README.md
+
+475a1ce;添加服务网关的说明
+M	README.md
+
+042e601;添加服务网关 Zuul 模块
+M	pom.xml
+A	spring-cloud-gateway/pom.xml
+A	spring-cloud-gateway/src/main/java/com/geny/gateway/GatewayApplication.java
+A	spring-cloud-gateway/src/main/resources/bootstrap.yaml
+
+a971a59;Merge branch 'master' of https://github.com/shmilyah/spring-cloud-componets
+bac49ab;修改 pom 文件
+M	pom.xml
+
+55268e9;Update README.md
+M	README.md
+
+e7dfce8;修改模块名称
+R100	springboot-admin/pom.xml	spring-boot-admin/pom.xml
+R100	springboot-admin/src/main/java/com/geny/admin/SpringBootAdminApplication.java	spring-boot-admin/src/main/java/com/geny/admin/SpringBootAdminApplication.java
+R100	springboot-admin/src/main/resources/bootstrap.yaml	spring-boot-admin/src/main/resources/bootstrap.yaml
+
+7dff727;Merge branch 'master' of https://github.com/shmilyah/spring-cloud-componets
+6ca0fbe;修改 spring boot admin 为 2.0.1 正式版
+M	pom.xml
+M	springboot-admin/pom.xml
+
+1b947a6;统一代码风格
+R076	spring-cloud-config/src/main/resources/application.yaml	spring-cloud-config/src/main/resources/bootstrap.yaml
+R100	spring-cloud-hystrix-dashboard-turbine/src/main/resources/application.yaml	spring-cloud-hystrix-dashboard-turbine/src/main/resources/bootstrap.yaml
+R100	spring-cloud-hystrix-dashboard/src/main/resources/application.yaml	spring-cloud-hystrix-dashboard/src/main/resources/bootstrap.yaml
+R100	spring-demo-service-feign/src/main/resources/application.yml	spring-demo-service-feign/src/main/resources/bootstrap.yaml
+R100	spring-demo-service-ribbon/src/main/resources/application.yml	spring-demo-service-ribbon/src/main/resources/bootstrap.yaml
+R100	spring-demo-service/src/main/resources/application.yml	spring-demo-service/src/main/resources/bootstrap.yaml
+D	springboot-admin/src/main/resources/application.properties
+R100	springboot-admin/src/main/resources/application.yaml	springboot-admin/src/main/resources/bootstrap.yaml
+
+e49fa19;添加 Spring Cloud Bus，动态刷新 Config
+M	spring-cloud-config-client/pom.xml
+M	spring-cloud-config-client/src/main/java/com/geny/config/client/ConfigClientApplication.java
+M	spring-cloud-config-client/src/main/resources/bootstrap.yaml
+M	spring-cloud-config/pom.xml
+M	spring-cloud-config/src/main/resources/application.yaml
+
+723b7b0;修改pom
+M	spring-cloud-config-client/pom.xml
+
+72c94f4;'修改配置中心客户端的配置文件，使用bootstrap.yaml'
+R100	spring-cloud-config-client/src/main/resources/application.yaml	spring-cloud-config-client/src/main/resources/bootstrap.yaml
+
+20a4e2d;添加配置中心
+M	pom.xml
+A	spring-cloud-config-client/pom.xml
+A	spring-cloud-config-client/src/main/java/com/geny/config/client/ConfigClientApplication.java
+A	spring-cloud-config-client/src/main/resources/application.yaml
+A	spring-cloud-config/pom.xml
+A	spring-cloud-config/src/main/java/com/geny/config/SpringCloudConfigApplication.java
+A	spring-cloud-config/src/main/resources/application.yaml
+M	spring-demo-service/pom.xml
+
+1c400b7;添加对 v1.0 tag 的说明
+M	README.md
+
+4fd631a;添加info.version配置
+M	eureka-service/src/main/resources/application.yaml
+M	spring-demo-service-feign/src/main/resources/application.yml
+
+ef3a8ad;Merge branch 'master' of https://github.com/shmilyah/spring-cloud-componets
+2d0e28a;添加注释
+M	spring-cloud-hystrix-dashboard-turbine/src/main/resources/application.yaml
+M	spring-demo-service-feign/src/main/resources/application.yml
+M	spring-demo-service-ribbon/src/main/java/com/geny/ribbon/ServiceRibbonApplication.java
+
+fc15c2b;实现 Eureka 的高可用
+M	eureka-service/src/main/resources/application.yaml
+M	spring-demo-service-feign/src/main/resources/application.yml
+M	spring-demo-service/pom.xml
+M	spring-demo-service/src/main/resources/application.yml
+
+0be9a27;Feign 增加随机负载均衡策略
+M	spring-demo-service-feign/src/main/resources/application.yml
+
+0bebf6d;给 spring-demo-service-ribbon 添加随机负载均衡策略
+M	spring-demo-service-ribbon/src/main/java/com/geny/ribbon/ServiceRibbonApplication.java
+M	spring-demo-service-ribbon/src/main/java/com/geny/ribbon/SpringDemoRibbonService.java
+M	spring-demo-service-ribbon/src/main/resources/application.yml
+
+f927f31;添加 turbine
+M	README.md
+D	eureka-service/eureka-service.iml
+M	eureka-service/src/main/resources/application.yaml
+D	eureka-service/target/classes/application.yaml
+D	eureka-service/target/classes/com/geny/eurekaservice/EurekaServiceApplication.class
+M	pom.xml
+D	spring-cloud-componets.iml
+A	spring-cloud-hystrix-dashboard-turbine/pom.xml
+A	spring-cloud-hystrix-dashboard-turbine/src/main/java/com/geny/hystrix/dashboard/turbine/HystrixDashboardTurbineApplication.java
+A	spring-cloud-hystrix-dashboard-turbine/src/main/resources/application.yaml
+R100	spring-cloud-hystix-dashboard/pom.xml	spring-cloud-hystrix-dashboard/pom.xml
+R100	spring-cloud-hystix-dashboard/src/main/java/com/geny/hystrix/dashboard/HystrixDashboardApplication.java	spring-cloud-hystrix-dashboard/src/main/java/com/geny/hystrix/dashboard/HystrixDashboardApplication.java
+R100	spring-cloud-hystix-dashboard/src/main/resources/application.yaml	spring-cloud-hystrix-dashboard/src/main/resources/application.yaml
+D	spring-demo-service-feign/spring-demo-service-feign.iml
+M	spring-demo-service-feign/src/main/resources/application.yml
+D	spring-demo-service-feign/target/classes/application.yml
+D	spring-demo-service-feign/target/classes/com/geny/feign/ServiceFeignApplication.class
+D	spring-demo-service-feign/target/classes/com/geny/feign/SpringDemoFeignController.class
+D	spring-demo-service-feign/target/classes/com/geny/feign/SpringDemoFeignService.class
+D	spring-demo-service-ribbon/spring-demo-service-ribbon.iml
+M	spring-demo-service-ribbon/src/main/resources/application.yml
+D	spring-demo-service-ribbon/target/classes/application.yml
+D	spring-demo-service-ribbon/target/classes/com/geny/ribbon/ServiceRibbonApplication.class
+D	spring-demo-service-ribbon/target/classes/com/geny/ribbon/SpringDemoRibbonController.class
+D	spring-demo-service-ribbon/target/classes/com/geny/ribbon/SpringDemoRibbonService.class
+D	spring-demo-service/spring-demo-service.iml
+M	spring-demo-service/src/main/resources/application.yml
+D	spring-demo-service/target/classes/application.yml
+D	spring-demo-service/target/classes/com/geny/services/PortService.class
+D	spring-demo-service/target/classes/com/geny/services/SpringCloudServiceApplication.class
+D	springboot-admin/springboot-admin.iml
+D	springboot-admin/target/classes/application.properties
+D	springboot-admin/target/classes/application.yaml
+D	springboot-admin/target/classes/com/geny/admin/SpringBootAdminApplication$SecurityPermitAllConfig.class
+D	springboot-admin/target/classes/com/geny/admin/SpringBootAdminApplication$SecuritySecureConfig.class
+D	springboot-admin/target/classes/com/geny/admin/SpringBootAdminApplication.class
+
+1753921;delete
+D	.idea/compiler.xml
+D	.idea/encodings.xml
+D	.idea/libraries/Maven__antlr_antlr_2_7_7.xml
+D	.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml
+D	.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml
+D	.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml
+D	.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml
+D	.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml
+D	.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_3.xml
+D	.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_3.xml
+D	.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_9_3.xml
+D	.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_3.xml
+D	.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_3.xml
+D	.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_9_3.xml
+D	.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_3.xml
+D	.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml
+D	.idea/libraries/Maven__com_github_andrewoma_dexx_dexx_collections_0_2.xml
+D	.idea/libraries/Maven__com_github_vlsi_compactmap_compactmap_1_2_1.xml
+D	.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml
+D	.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml
+D	.idea/libraries/Maven__com_google_guava_guava_16_0.xml
+D	.idea/libraries/Maven__com_google_inject_guice_4_1_0.xml
+D	.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml
+D	.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml
+D	.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml
+D	.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_8_8.xml
+D	.idea/libraries/Maven__com_netflix_eureka_eureka_core_1_8_8.xml
+D	.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_12.xml
+D	.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml
+D	.idea/libraries/Maven__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml
+D	.idea/libraries/Maven__com_netflix_netflix_commons_netflix_infix_0_3_0.xml
+D	.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml
+D	.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_2_5.xml
+D	.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_2_5.xml
+D	.idea/libraries/Maven__com_netflix_ribbon_ribbon_eureka_2_2_5.xml
+D	.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_2_5.xml
+D	.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_2_5.xml
+D	.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_2_5.xml
+D	.idea/libraries/Maven__com_netflix_servo_servo_core_0_10_1.xml
+D	.idea/libraries/Maven__com_netflix_servo_servo_internal_0_10_1.xml
+D	.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml
+D	.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml
+D	.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml
+D	.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_1.xml
+D	.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_1.xml
+D	.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_10.xml
+D	.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml
+D	.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml
+D	.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml
+D	.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml
+D	.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml
+D	.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml
+D	.idea/libraries/Maven__de_codecentric_spring_boot_admin_starter_server_2_0_1_SNAPSHOT.xml
+D	.idea/libraries/Maven__io_github_openfeign_feign_core_9_5_1.xml
+D	.idea/libraries/Maven__io_github_openfeign_feign_hystrix_9_5_1.xml
+D	.idea/libraries/Maven__io_github_openfeign_feign_java8_9_5_1.xml
+D	.idea/libraries/Maven__io_github_openfeign_feign_slf4j_9_5_1.xml
+D	.idea/libraries/Maven__io_micrometer_micrometer_core_1_0_3.xml
+D	.idea/libraries/Maven__io_netty_netty_buffer_4_1_23_Final.xml
+D	.idea/libraries/Maven__io_netty_netty_codec_4_1_23_Final.xml
+D	.idea/libraries/Maven__io_netty_netty_codec_http_4_1_23_Final.xml
+D	.idea/libraries/Maven__io_netty_netty_common_4_1_23_Final.xml
+D	.idea/libraries/Maven__io_netty_netty_resolver_4_1_23_Final.xml
+D	.idea/libraries/Maven__io_netty_netty_transport_4_1_23_Final.xml
+D	.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_1_23_Final.xml
+D	.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_23_Final.xml
+D	.idea/libraries/Maven__io_reactivex_rxjava_1_2_0.xml
+D	.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml
+D	.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml
+D	.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml
+D	.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml
+D	.idea/libraries/Maven__javax_inject_javax_inject_1.xml
+D	.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml
+D	.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml
+D	.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml
+D	.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml
+D	.idea/libraries/Maven__junit_junit_4_12.xml
+D	.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml
+D	.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml
+D	.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml
+D	.idea/libraries/Maven__net_minidev_json_smart_2_3.xml
+D	.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml
+D	.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml
+D	.idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml
+D	.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml
+D	.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml
+D	.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml
+D	.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml
+D	.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_29.xml
+D	.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_29.xml
+D	.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml
+D	.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml
+D	.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml
+D	.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_56.xml
+D	.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_56.xml
+D	.idea/libraries/Maven__org_codehaus_jettison_jettison_1_3_7.xml
+D	.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml
+D	.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml
+D	.idea/libraries/Maven__org_freemarker_freemarker_2_3_28.xml
+D	.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml
+D	.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml
+D	.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_10.xml
+D	.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml
+D	.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml
+D	.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml
+D	.idea/libraries/Maven__org_jolokia_jolokia_core_1_5_0.xml
+D	.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml
+D	.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml
+D	.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml
+D	.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml
+D	.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml
+D	.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml
+D	.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_1_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_core_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_0_0_RC1.xml
+D	.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_4_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_4_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_0_4_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_4_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_context_support_5_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_web_5_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml
+D	.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml
+D	.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml
+D	.idea/libraries/Maven__stax_stax_api_1_0_1.xml
+D	.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml
+D	.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml
+D	.idea/misc.xml
+D	.idea/modules.xml
+D	.idea/uiDesigner.xml
+D	.idea/vcs.xml
+D	.idea/workspace.xml
+
+658c71c;增加 Feign 的断路器监控
+M	spring-demo-service-feign/pom.xml
+A	spring-demo-service-feign/src/main/java/com/geny/feign/ErrorHystrix.java
+M	spring-demo-service-feign/src/main/java/com/geny/feign/ServiceFeignApplication.java
+M	spring-demo-service-feign/src/main/java/com/geny/feign/SpringDemoFeignService.java
+M	spring-demo-service-feign/src/main/resources/application.yml
+M	spring-demo-service/src/main/java/com/geny/services/SpringCloudServiceApplication.java
+
+3a5a976;修改README.md
+M	README.md
+
+17af9fc;修改eureka的配置文件
+M	README.md
+M	eureka-service/src/main/resources/application.yaml
+
+2f678d2;添加 Hystrix Dashboard
+M	pom.xml
+A	spring-cloud-hystix-dashboard/pom.xml
+A	spring-cloud-hystix-dashboard/src/main/java/com/geny/hystrix/dashboard/HystrixDashboardApplication.java
+A	spring-cloud-hystix-dashboard/src/main/resources/application.yaml
+M	spring-demo-service-feign/pom.xml
+M	spring-demo-service-ribbon/pom.xml
+M	spring-demo-service-ribbon/src/main/resources/application.yml
+
+057c6a9;添加 ribbon 熔断器
+M	.gitignore
+M	spring-demo-service-ribbon/pom.xml
+M	spring-demo-service-ribbon/src/main/java/com/geny/ribbon/ServiceRibbonApplication.java
+M	spring-demo-service-ribbon/src/main/java/com/geny/ribbon/SpringDemoRibbonService.java
+
+976adbf;更改 spring boot admin 为最新版本
+A	.gitignore
+M	.idea/libraries/Maven__de_codecentric_spring_boot_admin_starter_server_2_0_1_SNAPSHOT.xml
+M	.idea/workspace.xml
+M	pom.xml
+M	springboot-admin/pom.xml
+M	springboot-admin/springboot-admin.iml
+M	springboot-admin/src/main/resources/application.yaml
+M	springboot-admin/target/classes/application.yaml
+
+e96213a;添加 spring boot admin
+M	.idea/compiler.xml
+M	.idea/encodings.xml
+A	.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml
+A	.idea/libraries/Maven__de_codecentric_spring_boot_admin_starter_server_2_0_1_SNAPSHOT.xml
+A	.idea/libraries/Maven__org_jolokia_jolokia_core_1_5_0.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_4_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_4_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_4_RELEASE.xml
+M	.idea/modules.xml
+M	.idea/workspace.xml
+M	README.md
+M	pom.xml
+A	springboot-admin/pom.xml
+A	springboot-admin/springboot-admin.iml
+A	springboot-admin/src/main/java/com/geny/admin/SpringBootAdminApplication.java
+A	springboot-admin/src/main/resources/application.properties
+A	springboot-admin/src/main/resources/application.yaml
+A	springboot-admin/target/classes/application.properties
+A	springboot-admin/target/classes/application.yaml
+A	springboot-admin/target/classes/com/geny/admin/SpringBootAdminApplication$SecurityPermitAllConfig.class
+A	springboot-admin/target/classes/com/geny/admin/SpringBootAdminApplication$SecuritySecureConfig.class
+A	springboot-admin/target/classes/com/geny/admin/SpringBootAdminApplication.class
+
+97eac0a;添加说明
+M	README.md
+
+754e0aa;基于Feign实现的服务消费者
+M	.idea/workspace.xml
+M	pom.xml
+A	spring-demo-service-feign/pom.xml
+A	spring-demo-service-feign/spring-demo-service-feign.iml
+A	spring-demo-service-feign/src/main/java/com/geny/feign/ServiceFeignApplication.java
+A	spring-demo-service-feign/src/main/java/com/geny/feign/SpringDemoFeignController.java
+A	spring-demo-service-feign/src/main/java/com/geny/feign/SpringDemoFeignService.java
+A	spring-demo-service-feign/src/main/resources/application.yml
+A	spring-demo-service-feign/target/classes/application.yml
+A	spring-demo-service-feign/target/classes/com/geny/feign/ServiceFeignApplication.class
+A	spring-demo-service-feign/target/classes/com/geny/feign/SpringDemoFeignController.class
+A	spring-demo-service-feign/target/classes/com/geny/feign/SpringDemoFeignService.class
+
+3e12571;基于rest+ribbon实现的拥有负载均衡的服务消费者
+M	.idea/workspace.xml
+M	pom.xml
+A	spring-demo-service-ribbon/pom.xml
+A	spring-demo-service-ribbon/spring-demo-service-ribbon.iml
+A	spring-demo-service-ribbon/src/main/java/com/geny/ribbon/ServiceRibbonApplication.java
+A	spring-demo-service-ribbon/src/main/java/com/geny/ribbon/SpringDemoRibbonController.java
+A	spring-demo-service-ribbon/src/main/java/com/geny/ribbon/SpringDemoRibbonService.java
+A	spring-demo-service-ribbon/src/main/resources/application.yml
+A	spring-demo-service-ribbon/target/classes/application.yml
+A	spring-demo-service-ribbon/target/classes/com/geny/ribbon/ServiceRibbonApplication.class
+A	spring-demo-service-ribbon/target/classes/com/geny/ribbon/SpringDemoRibbonController.class
+A	spring-demo-service-ribbon/target/classes/com/geny/ribbon/SpringDemoRibbonService.class
+
+a984001;添加接口服务实例
+M	.idea/workspace.xml
+M	pom.xml
+A	spring-demo-service/pom.xml
+A	spring-demo-service/spring-demo-service.iml
+A	spring-demo-service/src/main/java/com/geny/services/PortService.java
+A	spring-demo-service/src/main/java/com/geny/services/SpringCloudServiceApplication.java
+A	spring-demo-service/src/main/resources/application.yml
+A	spring-demo-service/target/classes/application.yml
+A	spring-demo-service/target/classes/com/geny/services/PortService.class
+A	spring-demo-service/target/classes/com/geny/services/SpringCloudServiceApplication.class
+
+e65d9da;构建项目，添加注册中心eureka
+A	.idea/compiler.xml
+A	.idea/encodings.xml
+A	.idea/libraries/Maven__antlr_antlr_2_7_7.xml
+A	.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml
+A	.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml
+A	.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml
+A	.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml
+A	.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml
+A	.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_3.xml
+A	.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_3.xml
+A	.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_9_3.xml
+A	.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_3.xml
+A	.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_3.xml
+A	.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_9_3.xml
+A	.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_3.xml
+A	.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml
+A	.idea/libraries/Maven__com_github_andrewoma_dexx_dexx_collections_0_2.xml
+A	.idea/libraries/Maven__com_github_vlsi_compactmap_compactmap_1_2_1.xml
+A	.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml
+A	.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml
+A	.idea/libraries/Maven__com_google_guava_guava_16_0.xml
+A	.idea/libraries/Maven__com_google_inject_guice_4_1_0.xml
+A	.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml
+A	.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml
+A	.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_8_8.xml
+A	.idea/libraries/Maven__com_netflix_eureka_eureka_core_1_8_8.xml
+A	.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_12.xml
+A	.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml
+A	.idea/libraries/Maven__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml
+A	.idea/libraries/Maven__com_netflix_netflix_commons_netflix_infix_0_3_0.xml
+A	.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml
+A	.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_2_5.xml
+A	.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_2_5.xml
+A	.idea/libraries/Maven__com_netflix_ribbon_ribbon_eureka_2_2_5.xml
+A	.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_2_5.xml
+A	.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_2_5.xml
+A	.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_2_5.xml
+A	.idea/libraries/Maven__com_netflix_servo_servo_core_0_10_1.xml
+A	.idea/libraries/Maven__com_netflix_servo_servo_internal_0_10_1.xml
+A	.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml
+A	.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml
+A	.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml
+A	.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_1.xml
+A	.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_1.xml
+A	.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_10.xml
+A	.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml
+A	.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml
+A	.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml
+A	.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml
+A	.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml
+A	.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml
+A	.idea/libraries/Maven__io_github_openfeign_feign_core_9_5_1.xml
+A	.idea/libraries/Maven__io_github_openfeign_feign_hystrix_9_5_1.xml
+A	.idea/libraries/Maven__io_github_openfeign_feign_java8_9_5_1.xml
+A	.idea/libraries/Maven__io_github_openfeign_feign_slf4j_9_5_1.xml
+A	.idea/libraries/Maven__io_micrometer_micrometer_core_1_0_3.xml
+A	.idea/libraries/Maven__io_netty_netty_buffer_4_1_23_Final.xml
+A	.idea/libraries/Maven__io_netty_netty_codec_4_1_23_Final.xml
+A	.idea/libraries/Maven__io_netty_netty_codec_http_4_1_23_Final.xml
+A	.idea/libraries/Maven__io_netty_netty_common_4_1_23_Final.xml
+A	.idea/libraries/Maven__io_netty_netty_resolver_4_1_23_Final.xml
+A	.idea/libraries/Maven__io_netty_netty_transport_4_1_23_Final.xml
+A	.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_1_23_Final.xml
+A	.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_23_Final.xml
+A	.idea/libraries/Maven__io_reactivex_rxjava_1_2_0.xml
+A	.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml
+A	.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml
+A	.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml
+A	.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml
+A	.idea/libraries/Maven__javax_inject_javax_inject_1.xml
+A	.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml
+A	.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml
+A	.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml
+A	.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml
+A	.idea/libraries/Maven__junit_junit_4_12.xml
+A	.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml
+A	.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml
+A	.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml
+A	.idea/libraries/Maven__net_minidev_json_smart_2_3.xml
+A	.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml
+A	.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml
+A	.idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml
+A	.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml
+A	.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml
+A	.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml
+A	.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml
+A	.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_29.xml
+A	.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_29.xml
+A	.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml
+A	.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml
+A	.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml
+A	.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_56.xml
+A	.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_56.xml
+A	.idea/libraries/Maven__org_codehaus_jettison_jettison_1_3_7.xml
+A	.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml
+A	.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml
+A	.idea/libraries/Maven__org_freemarker_freemarker_2_3_28.xml
+A	.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml
+A	.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml
+A	.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_10.xml
+A	.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml
+A	.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml
+A	.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml
+A	.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml
+A	.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml
+A	.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml
+A	.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml
+A	.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml
+A	.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml
+A	.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_1_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_core_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_0_0_RC1.xml
+A	.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_0_4_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_context_support_5_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_web_5_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml
+A	.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml
+A	.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml
+A	.idea/libraries/Maven__stax_stax_api_1_0_1.xml
+A	.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml
+A	.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/uiDesigner.xml
+A	.idea/vcs.xml
+A	.idea/workspace.xml
+A	eureka-service/eureka-service.iml
+A	eureka-service/pom.xml
+A	eureka-service/src/main/java/com/geny/eurekaservice/EurekaServiceApplication.java
+A	eureka-service/src/main/resources/application.yaml
+A	eureka-service/target/classes/application.yaml
+A	eureka-service/target/classes/com/geny/eurekaservice/EurekaServiceApplication.class
+A	pom.xml
+A	spring-cloud-componets.iml
+
+f4565ea;first commit
+A	README.md

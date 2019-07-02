@@ -1,0 +1,2378 @@
+1708cd6;Remove old sensors
+M	build.gradle
+M	src/main/java/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+a557d69;Fix gradle build errors
+M	build.gradle
+
+6501f22;Upgrade gradle build version
+M	build.gradle
+
+0772ca6;Downgrade to support Android 4+
+M	build.gradle
+
+d5750b8;Backup
+M	src/main/java/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+b09cc57;Fix gradle
+M	build.gradle
+
+52595bd;Move project to gradle
+D	.classpath
+D	.gradle/2.4/taskArtifacts/cache.properties
+D	.gradle/2.4/taskArtifacts/cache.properties.lock
+D	.gradle/2.4/taskArtifacts/fileHashes.bin
+D	.gradle/2.4/taskArtifacts/fileSnapshots.bin
+D	.gradle/2.4/taskArtifacts/outputFileStates.bin
+D	.gradle/2.4/taskArtifacts/taskArtifacts.bin
+D	.project
+D	.settings/org.eclipse.jdt.core.prefs
+D	bin/AndroidManifest.xml
+D	bin/sensormanager.jar
+M	build.gradle
+D	gradle/wrapper/gradle-wrapper.jar
+D	gradle/wrapper/gradle-wrapper.properties
+D	gradlew
+D	gradlew.bat
+D	project.properties
+R100	AndroidManifest.xml	src/main/AndroidManifest.xml
+R100	src/com/ubhave/sensormanager/ESException.java	src/main/java/com/ubhave/sensormanager/ESException.java
+R100	src/com/ubhave/sensormanager/ESSensorManager.java	src/main/java/com/ubhave/sensormanager/ESSensorManager.java
+R100	src/com/ubhave/sensormanager/ESSensorManagerInterface.java	src/main/java/com/ubhave/sensormanager/ESSensorManagerInterface.java
+R100	src/com/ubhave/sensormanager/SensorDataListener.java	src/main/java/com/ubhave/sensormanager/SensorDataListener.java
+R100	src/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java	src/main/java/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java
+R100	src/com/ubhave/sensormanager/classifier/BluetoothDataClassifier.java	src/main/java/com/ubhave/sensormanager/classifier/BluetoothDataClassifier.java
+R100	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java	src/main/java/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+R100	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java	src/main/java/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+R100	src/com/ubhave/sensormanager/classifier/PhoneStateDataClassifier.java	src/main/java/com/ubhave/sensormanager/classifier/PhoneStateDataClassifier.java
+R100	src/com/ubhave/sensormanager/classifier/SMSDataClassifier.java	src/main/java/com/ubhave/sensormanager/classifier/SMSDataClassifier.java
+R100	src/com/ubhave/sensormanager/classifier/ScreenDataClassifier.java	src/main/java/com/ubhave/sensormanager/classifier/ScreenDataClassifier.java
+R100	src/com/ubhave/sensormanager/classifier/SensorClassifiers.java	src/main/java/com/ubhave/sensormanager/classifier/SensorClassifiers.java
+R100	src/com/ubhave/sensormanager/classifier/SensorDataClassifier.java	src/main/java/com/ubhave/sensormanager/classifier/SensorDataClassifier.java
+R100	src/com/ubhave/sensormanager/classifier/SocialClassifier.java	src/main/java/com/ubhave/sensormanager/classifier/SocialClassifier.java
+R100	src/com/ubhave/sensormanager/classifier/WifiDataClassifier.java	src/main/java/com/ubhave/sensormanager/classifier/WifiDataClassifier.java
+R100	src/com/ubhave/sensormanager/config/AbstractConfig.java	src/main/java/com/ubhave/sensormanager/config/AbstractConfig.java
+R100	src/com/ubhave/sensormanager/config/GlobalConfig.java	src/main/java/com/ubhave/sensormanager/config/GlobalConfig.java
+R100	src/com/ubhave/sensormanager/config/SensorConfig.java	src/main/java/com/ubhave/sensormanager/config/SensorConfig.java
+R100	src/com/ubhave/sensormanager/config/pull/BluetoothConfig.java	src/main/java/com/ubhave/sensormanager/config/pull/BluetoothConfig.java
+R100	src/com/ubhave/sensormanager/config/pull/ContentReaderConfig.java	src/main/java/com/ubhave/sensormanager/config/pull/ContentReaderConfig.java
+R100	src/com/ubhave/sensormanager/config/pull/LocationConfig.java	src/main/java/com/ubhave/sensormanager/config/pull/LocationConfig.java
+R100	src/com/ubhave/sensormanager/config/pull/MicrophoneConfig.java	src/main/java/com/ubhave/sensormanager/config/pull/MicrophoneConfig.java
+R100	src/com/ubhave/sensormanager/config/pull/MotionSensorConfig.java	src/main/java/com/ubhave/sensormanager/config/pull/MotionSensorConfig.java
+R100	src/com/ubhave/sensormanager/config/pull/PhoneRadioConfig.java	src/main/java/com/ubhave/sensormanager/config/pull/PhoneRadioConfig.java
+R100	src/com/ubhave/sensormanager/config/pull/PullSensorConfig.java	src/main/java/com/ubhave/sensormanager/config/pull/PullSensorConfig.java
+R100	src/com/ubhave/sensormanager/config/pull/StepCounterConfig.java	src/main/java/com/ubhave/sensormanager/config/pull/StepCounterConfig.java
+R100	src/com/ubhave/sensormanager/config/pull/WifiConfig.java	src/main/java/com/ubhave/sensormanager/config/pull/WifiConfig.java
+R100	src/com/ubhave/sensormanager/config/push/PassiveLocationConfig.java	src/main/java/com/ubhave/sensormanager/config/push/PassiveLocationConfig.java
+R100	src/com/ubhave/sensormanager/data/SensorData.java	src/main/java/com/ubhave/sensormanager/data/SensorData.java
+R100	src/com/ubhave/sensormanager/data/env/AbstractEnvironmentData.java	src/main/java/com/ubhave/sensormanager/data/env/AbstractEnvironmentData.java
+R100	src/com/ubhave/sensormanager/data/env/AmbientTemperatureData.java	src/main/java/com/ubhave/sensormanager/data/env/AmbientTemperatureData.java
+R100	src/com/ubhave/sensormanager/data/env/HumidityData.java	src/main/java/com/ubhave/sensormanager/data/env/HumidityData.java
+R100	src/com/ubhave/sensormanager/data/env/LightData.java	src/main/java/com/ubhave/sensormanager/data/env/LightData.java
+R100	src/com/ubhave/sensormanager/data/env/PressureData.java	src/main/java/com/ubhave/sensormanager/data/env/PressureData.java
+R100	src/com/ubhave/sensormanager/data/log/InteractionData.java	src/main/java/com/ubhave/sensormanager/data/log/InteractionData.java
+R100	src/com/ubhave/sensormanager/data/pull/AbstractContentReaderEntry.java	src/main/java/com/ubhave/sensormanager/data/pull/AbstractContentReaderEntry.java
+R100	src/com/ubhave/sensormanager/data/pull/AbstractContentReaderListData.java	src/main/java/com/ubhave/sensormanager/data/pull/AbstractContentReaderListData.java
+R100	src/com/ubhave/sensormanager/data/pull/AbstractMotionData.java	src/main/java/com/ubhave/sensormanager/data/pull/AbstractMotionData.java
+R100	src/com/ubhave/sensormanager/data/pull/AccelerometerData.java	src/main/java/com/ubhave/sensormanager/data/pull/AccelerometerData.java
+R100	src/com/ubhave/sensormanager/data/pull/ApplicationData.java	src/main/java/com/ubhave/sensormanager/data/pull/ApplicationData.java
+R100	src/com/ubhave/sensormanager/data/pull/BluetoothData.java	src/main/java/com/ubhave/sensormanager/data/pull/BluetoothData.java
+R100	src/com/ubhave/sensormanager/data/pull/CallContentListData.java	src/main/java/com/ubhave/sensormanager/data/pull/CallContentListData.java
+R100	src/com/ubhave/sensormanager/data/pull/CallContentReaderEntry.java	src/main/java/com/ubhave/sensormanager/data/pull/CallContentReaderEntry.java
+R100	src/com/ubhave/sensormanager/data/pull/ESBluetoothDevice.java	src/main/java/com/ubhave/sensormanager/data/pull/ESBluetoothDevice.java
+R100	src/com/ubhave/sensormanager/data/pull/GyroscopeData.java	src/main/java/com/ubhave/sensormanager/data/pull/GyroscopeData.java
+R100	src/com/ubhave/sensormanager/data/pull/LocationData.java	src/main/java/com/ubhave/sensormanager/data/pull/LocationData.java
+R100	src/com/ubhave/sensormanager/data/pull/MagneticFieldData.java	src/main/java/com/ubhave/sensormanager/data/pull/MagneticFieldData.java
+R100	src/com/ubhave/sensormanager/data/pull/MicrophoneData.java	src/main/java/com/ubhave/sensormanager/data/pull/MicrophoneData.java
+R100	src/com/ubhave/sensormanager/data/pull/PhoneRadioData.java	src/main/java/com/ubhave/sensormanager/data/pull/PhoneRadioData.java
+R100	src/com/ubhave/sensormanager/data/pull/PhoneRadioDataList.java	src/main/java/com/ubhave/sensormanager/data/pull/PhoneRadioDataList.java
+R100	src/com/ubhave/sensormanager/data/pull/SMSContentListData.java	src/main/java/com/ubhave/sensormanager/data/pull/SMSContentListData.java
+R100	src/com/ubhave/sensormanager/data/pull/SMSContentReaderEntry.java	src/main/java/com/ubhave/sensormanager/data/pull/SMSContentReaderEntry.java
+R100	src/com/ubhave/sensormanager/data/pull/StepCounterData.java	src/main/java/com/ubhave/sensormanager/data/pull/StepCounterData.java
+R100	src/com/ubhave/sensormanager/data/pull/WifiData.java	src/main/java/com/ubhave/sensormanager/data/pull/WifiData.java
+R100	src/com/ubhave/sensormanager/data/pull/WifiScanResult.java	src/main/java/com/ubhave/sensormanager/data/pull/WifiScanResult.java
+R100	src/com/ubhave/sensormanager/data/push/BatteryData.java	src/main/java/com/ubhave/sensormanager/data/push/BatteryData.java
+R100	src/com/ubhave/sensormanager/data/push/ConnectionStateData.java	src/main/java/com/ubhave/sensormanager/data/push/ConnectionStateData.java
+R100	src/com/ubhave/sensormanager/data/push/ConnectionStrengthData.java	src/main/java/com/ubhave/sensormanager/data/push/ConnectionStrengthData.java
+R100	src/com/ubhave/sensormanager/data/push/PassiveLocationData.java	src/main/java/com/ubhave/sensormanager/data/push/PassiveLocationData.java
+R100	src/com/ubhave/sensormanager/data/push/PhoneStateData.java	src/main/java/com/ubhave/sensormanager/data/push/PhoneStateData.java
+R100	src/com/ubhave/sensormanager/data/push/ProximityData.java	src/main/java/com/ubhave/sensormanager/data/push/ProximityData.java
+R100	src/com/ubhave/sensormanager/data/push/ScreenData.java	src/main/java/com/ubhave/sensormanager/data/push/ScreenData.java
+R100	src/com/ubhave/sensormanager/data/push/SmsData.java	src/main/java/com/ubhave/sensormanager/data/push/SmsData.java
+R100	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java	src/main/java/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+R100	src/com/ubhave/sensormanager/dutycyling/SleepWindowListener.java	src/main/java/com/ubhave/sensormanager/dutycyling/SleepWindowListener.java
+R100	src/com/ubhave/sensormanager/process/AbstractProcessor.java	src/main/java/com/ubhave/sensormanager/process/AbstractProcessor.java
+R100	src/com/ubhave/sensormanager/process/CommunicationProcessor.java	src/main/java/com/ubhave/sensormanager/process/CommunicationProcessor.java
+R100	src/com/ubhave/sensormanager/process/env/AmbientTemperatureProcessor.java	src/main/java/com/ubhave/sensormanager/process/env/AmbientTemperatureProcessor.java
+R100	src/com/ubhave/sensormanager/process/env/HumidityProcessor.java	src/main/java/com/ubhave/sensormanager/process/env/HumidityProcessor.java
+R100	src/com/ubhave/sensormanager/process/env/LightProcessor.java	src/main/java/com/ubhave/sensormanager/process/env/LightProcessor.java
+R100	src/com/ubhave/sensormanager/process/env/PressureProcessor.java	src/main/java/com/ubhave/sensormanager/process/env/PressureProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/AbstractMotionProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/AbstractMotionProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/BluetoothProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/BluetoothProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/CallContentReaderProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/CallContentReaderProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/ContentReaderProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/ContentReaderProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/GyroscopeProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/GyroscopeProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/MagneticFieldProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/MagneticFieldProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/MicrophoneProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/MicrophoneProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/PhoneRadioProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/PhoneRadioProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/SMSContentReaderProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/SMSContentReaderProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/StepCounterProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/StepCounterProcessor.java
+R100	src/com/ubhave/sensormanager/process/pull/WifiProcessor.java	src/main/java/com/ubhave/sensormanager/process/pull/WifiProcessor.java
+R100	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java	src/main/java/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+R100	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java	src/main/java/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+R100	src/com/ubhave/sensormanager/process/push/ConnectionStrengthProcessor.java	src/main/java/com/ubhave/sensormanager/process/push/ConnectionStrengthProcessor.java
+R100	src/com/ubhave/sensormanager/process/push/PassiveLocationProcessor.java	src/main/java/com/ubhave/sensormanager/process/push/PassiveLocationProcessor.java
+R100	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java	src/main/java/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+R100	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java	src/main/java/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+R100	src/com/ubhave/sensormanager/process/push/SMSProcessor.java	src/main/java/com/ubhave/sensormanager/process/push/SMSProcessor.java
+R100	src/com/ubhave/sensormanager/process/push/ScreenProcessor.java	src/main/java/com/ubhave/sensormanager/process/push/ScreenProcessor.java
+R100	src/com/ubhave/sensormanager/sensors/AbstractSensor.java	src/main/java/com/ubhave/sensormanager/sensors/AbstractSensor.java
+R100	src/com/ubhave/sensormanager/sensors/SensorEnum.java	src/main/java/com/ubhave/sensormanager/sensors/SensorEnum.java
+R100	src/com/ubhave/sensormanager/sensors/SensorInterface.java	src/main/java/com/ubhave/sensormanager/sensors/SensorInterface.java
+R100	src/com/ubhave/sensormanager/sensors/SensorUtils.java	src/main/java/com/ubhave/sensormanager/sensors/SensorUtils.java
+R100	src/com/ubhave/sensormanager/sensors/env/AbstractEnvironmentSensor.java	src/main/java/com/ubhave/sensormanager/sensors/env/AbstractEnvironmentSensor.java
+R100	src/com/ubhave/sensormanager/sensors/env/AmbientTemperatureSensor.java	src/main/java/com/ubhave/sensormanager/sensors/env/AmbientTemperatureSensor.java
+R100	src/com/ubhave/sensormanager/sensors/env/HumiditySensor.java	src/main/java/com/ubhave/sensormanager/sensors/env/HumiditySensor.java
+R100	src/com/ubhave/sensormanager/sensors/env/LightSensor.java	src/main/java/com/ubhave/sensormanager/sensors/env/LightSensor.java
+R100	src/com/ubhave/sensormanager/sensors/env/PressureSensor.java	src/main/java/com/ubhave/sensormanager/sensors/env/PressureSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/AbstractContentReaderSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/AbstractContentReaderSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/AbstractMediaSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/AbstractMediaSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/AbstractMotionSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/AbstractMotionSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/GyroscopeSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/GyroscopeSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/MagneticFieldSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/MagneticFieldSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/PhoneRadioSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/PhoneRadioSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/PullSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/PullSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/StepCounterSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/StepCounterSensor.java
+R100	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java	src/main/java/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+R100	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java	src/main/java/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+R100	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java	src/main/java/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+R100	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java	src/main/java/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+R100	src/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java	src/main/java/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java
+R100	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java	src/main/java/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+R100	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java	src/main/java/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+R100	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java	src/main/java/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+R100	src/com/ubhave/sensormanager/sensors/push/PushSensor.java	src/main/java/com/ubhave/sensormanager/sensors/push/PushSensor.java
+R100	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java	src/main/java/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+R100	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java	src/main/java/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+R100	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java	src/main/java/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+R100	src/com/ubhave/sensormanager/tasks/PullSensorTask.java	src/main/java/com/ubhave/sensormanager/tasks/PullSensorTask.java
+R100	src/com/ubhave/sensormanager/tasks/PushSensorTask.java	src/main/java/com/ubhave/sensormanager/tasks/PushSensorTask.java
+R100	src/com/ubhave/sensormanager/tasks/Subscription.java	src/main/java/com/ubhave/sensormanager/tasks/Subscription.java
+R100	src/com/ubhave/sensormanager/tasks/SubscriptionList.java	src/main/java/com/ubhave/sensormanager/tasks/SubscriptionList.java
+R100	res/values/strings.xml	src/main/res/values/strings.xml
+R100	res/values/styles.xml	src/main/res/values/styles.xml
+D	util/eclipse_code_style.xml
+
+0d4c3b8;Delete local.properties
+D	local.properties
+
+717e3da;Moving project to Android Studio
+M	.gitignore
+A	.gradle/2.4/taskArtifacts/cache.properties
+A	.gradle/2.4/taskArtifacts/cache.properties.lock
+A	.gradle/2.4/taskArtifacts/fileHashes.bin
+A	.gradle/2.4/taskArtifacts/fileSnapshots.bin
+A	.gradle/2.4/taskArtifacts/outputFileStates.bin
+A	.gradle/2.4/taskArtifacts/taskArtifacts.bin
+M	bin/sensormanager.jar
+A	build.gradle
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	local.properties
+
+b1c8dc0;Merge branch 'master' of https://github.com/emotionsense/SensorManager
+1a217b2;Remove local docs
+D	docs/README.md
+D	docs/apps.md
+D	docs/contributing.md
+D	docs/research.md
+D	docs/usage.md
+
+5ba90f5;Update README.md
+M	README.md
+
+017a932;Remove application sensor
+A	bin/AndroidManifest.xml
+A	bin/sensormanager.jar
+M	project.properties
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorEnum.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+6f5e1cb;Add interaction log data
+A	src/com/ubhave/sensormanager/data/log/InteractionData.java
+
+709f1da;Remove application sensor
+D	bin/AndroidManifest.xml
+D	bin/sensormanager.jar
+D	src/com/ubhave/sensormanager/config/pull/ApplicationConfig.java
+D	src/com/ubhave/sensormanager/data/pull/ApplicationDataList.java
+D	src/com/ubhave/sensormanager/process/pull/ApplicationProcessor.java
+D	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+
+ed58cc0;Make number hashing static
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/process/CommunicationProcessor.java
+
+50590f0;Add jar file
+A	bin/AndroidManifest.xml
+A	bin/sensormanager.jar
+
+b2a9fef;Add new fields to step counter, other minor
+M	src/com/ubhave/sensormanager/config/pull/StepCounterConfig.java
+M	src/com/ubhave/sensormanager/data/pull/AbstractContentReaderEntry.java
+M	src/com/ubhave/sensormanager/data/pull/StepCounterData.java
+M	src/com/ubhave/sensormanager/process/pull/StepCounterProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/StepCounterSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+af4c29b;Add step counter sensor
+D	bin/AndroidManifest.xml
+D	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+A	src/com/ubhave/sensormanager/config/pull/StepCounterConfig.java
+A	src/com/ubhave/sensormanager/data/pull/StepCounterData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/StepCounterProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorEnum.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+A	src/com/ubhave/sensormanager/sensors/pull/StepCounterSensor.java
+
+39918eb;Remove broken camera sensor
+M	AndroidManifest.xml
+M	bin/AndroidManifest.xml
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+D	src/com/ubhave/sensormanager/config/pull/CameraConfig.java
+D	src/com/ubhave/sensormanager/data/pull/CameraData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+D	src/com/ubhave/sensormanager/process/pull/CameraProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorEnum.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+D	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+
+9f86313;Fix Issue #12
+M	bin/AndroidManifest.xml
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/data/push/ConnectionStrengthData.java
+
+742308f;Minor refactoring
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/PhoneRadioSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+12bab8b;Upgrade to min sdk 19
+M	AndroidManifest.xml
+
+7361c29;Add new jar
+M	bin/sensormanager.jar
+
+b58f099;Set config params to final
+M	src/com/ubhave/sensormanager/config/AbstractConfig.java
+
+086ca3b;Fix global config var visibility
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+
+c6b6022;Latest jar
+M	.gitignore
+M	bin/sensormanager.jar
+
+b7fda73;Add latest jar
+A	bin/AndroidManifest.xml
+A	bin/sensormanager.jar
+
+d5ea2fe;Updating sdk in manifest
+M	AndroidManifest.xml
+D	bin/AndroidManifest.xml
+D	bin/sensormanager.jar
+
+59a747c;New jar file
+M	bin/sensormanager.jar
+
+caaa47c;Add bin dir
+A	bin/AndroidManifest.xml
+A	bin/sensormanager.jar
+
+a3b3cbe;Remove logging
+D	bin/AndroidManifest.xml
+D	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/process/pull/AbstractMotionProcessor.java
+
+95873f2;Add SensorConfig to data classifiers
+M	bin/sensormanager.jar
+D	proguard-project.txt
+M	src/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/BluetoothDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/PhoneStateDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/SMSDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/ScreenDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/SensorDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/WifiDataClassifier.java
+D	src/com/ubhave/sensormanager/config/pull/AccelerometerConfig.java
+M	src/com/ubhave/sensormanager/config/pull/MicrophoneConfig.java
+M	src/com/ubhave/sensormanager/config/pull/MotionSensorConfig.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+
+92cb2af;Fix config & prepare for extracting feature data
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/config/pull/AccelerometerConfig.java
+M	src/com/ubhave/sensormanager/config/pull/MotionSensorConfig.java
+M	src/com/ubhave/sensormanager/data/SensorData.java
+
+dbd39de;Make call/sms log sensing configurable by date
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/config/pull/ContentReaderConfig.java
+M	src/com/ubhave/sensormanager/config/pull/PhoneRadioConfig.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/PhoneRadioSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+
+2976b57;minor refactoring
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/data/pull/AbstractMotionData.java
+M	src/com/ubhave/sensormanager/process/pull/AbstractMotionProcessor.java
+
+656d177;adding missing processor
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+
+7c6c37e;Merge branch 'master' of https://github.com/nlathia/SensorManager
+8aa091b;updating jar
+M	bin/sensormanager.jar
+
+46ed2e8;Update contributing.md
+M	docs/contributing.md
+
+1677547;Refactor motion sensors & add mag field
+M	src/com/ubhave/sensormanager/sensors/SensorEnum.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractMotionSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/GyroscopeSensor.java
+A	src/com/ubhave/sensormanager/sensors/pull/MagneticFieldSensor.java
+
+9abe347;Missed accel/gyro processor commit
+A	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/GyroscopeProcessor.java
+
+e03482c;Refactor motion processing & add magnetic field
+A	src/com/ubhave/sensormanager/process/pull/AbstractMotionProcessor.java
+D	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+D	src/com/ubhave/sensormanager/process/pull/GyroscopeProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/MagneticFieldProcessor.java
+
+e93dc40;Refactor motion data & add magnetic field
+A	src/com/ubhave/sensormanager/data/pull/AbstractMotionData.java
+M	src/com/ubhave/sensormanager/data/pull/AccelerometerData.java
+M	src/com/ubhave/sensormanager/data/pull/GyroscopeData.java
+A	src/com/ubhave/sensormanager/data/pull/MagneticFieldData.java
+
+2399360;tutorial docs, first commit
+M	docs/README.md
+A	docs/contributing.md
+
+72ece6c;replace TODO comments
+M	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+
+53547cd;add @TargetApi
+M	src/com/ubhave/sensormanager/sensors/env/HumiditySensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+
+05f103e;local bluetooth test
+M	bin/sensormanager.jar
+
+be27a02;exception message when sensor is missing from device
+M	src/com/ubhave/sensormanager/sensors/env/AbstractEnvironmentSensor.java
+
+de0c7fa;updating exception message
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+afa64d1;adding environment sensors
+M	docs/README.md
+
+ac2a62d;updating jar
+M	bin/sensormanager.jar
+
+eb4869e;refactor ambient processors
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/data/env/AbstractEnvironmentData.java
+M	src/com/ubhave/sensormanager/data/env/AmbientTemperatureData.java
+M	src/com/ubhave/sensormanager/data/env/HumidityData.java
+M	src/com/ubhave/sensormanager/data/env/LightData.java
+M	src/com/ubhave/sensormanager/data/env/PressureData.java
+M	src/com/ubhave/sensormanager/process/env/AmbientTemperatureProcessor.java
+M	src/com/ubhave/sensormanager/process/env/HumidityProcessor.java
+M	src/com/ubhave/sensormanager/process/env/LightProcessor.java
+M	src/com/ubhave/sensormanager/process/env/PressureProcessor.java
+M	src/com/ubhave/sensormanager/sensors/env/AbstractEnvironmentSensor.java
+M	src/com/ubhave/sensormanager/sensors/env/AmbientTemperatureSensor.java
+
+8349a78;adding group checks
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/classifier/SocialClassifier.java
+M	src/com/ubhave/sensormanager/sensors/SensorEnum.java
+
+6a936d2;refactor utils with enum
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+A	src/com/ubhave/sensormanager/sensors/SensorEnum.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+c21edf1;simplify getSensor() calls
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/GyroscopeSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/PhoneRadioSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+822159a;remove unused exception codes
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/ESException.java
+
+700456e;adding environment sensor processors/data
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/ESException.java
+A	src/com/ubhave/sensormanager/data/env/AbstractEnvironmentData.java
+A	src/com/ubhave/sensormanager/data/env/AmbientTemperatureData.java
+A	src/com/ubhave/sensormanager/data/env/HumidityData.java
+R078	src/com/ubhave/sensormanager/data/push/LightData.java	src/com/ubhave/sensormanager/data/env/LightData.java
+A	src/com/ubhave/sensormanager/data/env/PressureData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/env/AmbientTemperatureProcessor.java
+A	src/com/ubhave/sensormanager/process/env/HumidityProcessor.java
+R070	src/com/ubhave/sensormanager/process/push/LightProcessor.java	src/com/ubhave/sensormanager/process/env/LightProcessor.java
+A	src/com/ubhave/sensormanager/process/env/PressureProcessor.java
+M	src/com/ubhave/sensormanager/sensors/env/AbstractEnvironmentSensor.java
+M	src/com/ubhave/sensormanager/sensors/env/AmbientTemperatureSensor.java
+M	src/com/ubhave/sensormanager/sensors/env/HumiditySensor.java
+M	src/com/ubhave/sensormanager/sensors/env/LightSensor.java
+M	src/com/ubhave/sensormanager/sensors/env/PressureSensor.java
+
+3c521a0;simplify namespace
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/BluetoothDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/PhoneStateDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/SMSDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/ScreenDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/WifiDataClassifier.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/AbstractContentReaderEntry.java	src/com/ubhave/sensormanager/data/pull/AbstractContentReaderEntry.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/AbstractContentReaderListData.java	src/com/ubhave/sensormanager/data/pull/AbstractContentReaderListData.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java	src/com/ubhave/sensormanager/data/pull/AccelerometerData.java
+R095	src/com/ubhave/sensormanager/data/pullsensor/ApplicationData.java	src/com/ubhave/sensormanager/data/pull/ApplicationData.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/ApplicationDataList.java	src/com/ubhave/sensormanager/data/pull/ApplicationDataList.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/BluetoothData.java	src/com/ubhave/sensormanager/data/pull/BluetoothData.java
+R096	src/com/ubhave/sensormanager/data/pullsensor/CallContentListData.java	src/com/ubhave/sensormanager/data/pull/CallContentListData.java
+R096	src/com/ubhave/sensormanager/data/pullsensor/CallContentReaderEntry.java	src/com/ubhave/sensormanager/data/pull/CallContentReaderEntry.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/CameraData.java	src/com/ubhave/sensormanager/data/pull/CameraData.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/ESBluetoothDevice.java	src/com/ubhave/sensormanager/data/pull/ESBluetoothDevice.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/GyroscopeData.java	src/com/ubhave/sensormanager/data/pull/GyroscopeData.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java	src/com/ubhave/sensormanager/data/pull/LocationData.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java	src/com/ubhave/sensormanager/data/pull/MicrophoneData.java
+R096	src/com/ubhave/sensormanager/data/pullsensor/PhoneRadioData.java	src/com/ubhave/sensormanager/data/pull/PhoneRadioData.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/PhoneRadioDataList.java	src/com/ubhave/sensormanager/data/pull/PhoneRadioDataList.java
+R096	src/com/ubhave/sensormanager/data/pullsensor/SMSContentListData.java	src/com/ubhave/sensormanager/data/pull/SMSContentListData.java
+R096	src/com/ubhave/sensormanager/data/pullsensor/SMSContentReaderEntry.java	src/com/ubhave/sensormanager/data/pull/SMSContentReaderEntry.java
+R097	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java	src/com/ubhave/sensormanager/data/pull/WifiData.java
+R092	src/com/ubhave/sensormanager/data/pullsensor/WifiScanResult.java	src/com/ubhave/sensormanager/data/pull/WifiScanResult.java
+R098	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java	src/com/ubhave/sensormanager/data/push/BatteryData.java
+R098	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java	src/com/ubhave/sensormanager/data/push/ConnectionStateData.java
+R096	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStrengthData.java	src/com/ubhave/sensormanager/data/push/ConnectionStrengthData.java
+R097	src/com/ubhave/sensormanager/data/pushsensor/LightData.java	src/com/ubhave/sensormanager/data/push/LightData.java
+R096	src/com/ubhave/sensormanager/data/pushsensor/PassiveLocationData.java	src/com/ubhave/sensormanager/data/push/PassiveLocationData.java
+R098	src/com/ubhave/sensormanager/data/pushsensor/PhoneStateData.java	src/com/ubhave/sensormanager/data/push/PhoneStateData.java
+R097	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java	src/com/ubhave/sensormanager/data/push/ProximityData.java
+R097	src/com/ubhave/sensormanager/data/pushsensor/ScreenData.java	src/com/ubhave/sensormanager/data/push/ScreenData.java
+R098	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java	src/com/ubhave/sensormanager/data/push/SmsData.java
+M	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/ApplicationProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/BluetoothProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/CallContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/CameraProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/ContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/GyroscopeProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/MicrophoneProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/PhoneRadioProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/SMSContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/WifiProcessor.java
+M	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ConnectionStrengthProcessor.java
+M	src/com/ubhave/sensormanager/process/push/LightProcessor.java
+M	src/com/ubhave/sensormanager/process/push/PassiveLocationProcessor.java
+M	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ScreenProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/GyroscopeSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/PhoneRadioSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+
+f4a30a5;fix config bug
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractMotionSensor.java
+
+8a10e36;simplify namespace
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+R095	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java	src/com/ubhave/sensormanager/config/pull/AccelerometerConfig.java
+R093	src/com/ubhave/sensormanager/config/sensors/pull/ApplicationConfig.java	src/com/ubhave/sensormanager/config/pull/ApplicationConfig.java
+R095	src/com/ubhave/sensormanager/config/sensors/pull/BluetoothConfig.java	src/com/ubhave/sensormanager/config/pull/BluetoothConfig.java
+R095	src/com/ubhave/sensormanager/config/sensors/pull/CameraConfig.java	src/com/ubhave/sensormanager/config/pull/CameraConfig.java
+R095	src/com/ubhave/sensormanager/config/sensors/pull/ContentReaderConfig.java	src/com/ubhave/sensormanager/config/pull/ContentReaderConfig.java
+R094	src/com/ubhave/sensormanager/config/sensors/pull/LocationConfig.java	src/com/ubhave/sensormanager/config/pull/LocationConfig.java
+R094	src/com/ubhave/sensormanager/config/sensors/pull/MicrophoneConfig.java	src/com/ubhave/sensormanager/config/pull/MicrophoneConfig.java
+R097	src/com/ubhave/sensormanager/config/sensors/pull/MotionSensorConfig.java	src/com/ubhave/sensormanager/config/pull/MotionSensorConfig.java
+R096	src/com/ubhave/sensormanager/config/sensors/pull/PhoneRadioConfig.java	src/com/ubhave/sensormanager/config/pull/PhoneRadioConfig.java
+R096	src/com/ubhave/sensormanager/config/sensors/pull/PullSensorConfig.java	src/com/ubhave/sensormanager/config/pull/PullSensorConfig.java
+R093	src/com/ubhave/sensormanager/config/sensors/pull/WifiConfig.java	src/com/ubhave/sensormanager/config/pull/WifiConfig.java
+R096	src/com/ubhave/sensormanager/config/sensor/push/PassiveLocationConfig.java	src/com/ubhave/sensormanager/config/push/PassiveLocationConfig.java
+M	src/com/ubhave/sensormanager/data/pullsensor/SMSContentReaderEntry.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/process/pull/CallContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/SMSContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+44f1f46;draft of environment sensors
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+A	src/com/ubhave/sensormanager/sensors/env/AbstractEnvironmentSensor.java
+A	src/com/ubhave/sensormanager/sensors/env/AmbientTemperatureSensor.java
+A	src/com/ubhave/sensormanager/sensors/env/HumiditySensor.java
+A	src/com/ubhave/sensormanager/sensors/env/LightSensor.java
+A	src/com/ubhave/sensormanager/sensors/env/PressureSensor.java
+D	src/com/ubhave/sensormanager/sensors/push/LightSensor.java
+
+c2311cb;adding bluetooth state/force enable as config
+M	.settings/org.eclipse.jdt.core.prefs
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/config/sensors/pull/BluetoothConfig.java
+M	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+4134dae;Adding SenSocial paper
+M	docs/research.md
+
+75482a8;update jar
+M	bin/sensormanager.jar
+
+a63dba6;updated jar
+M	bin/sensormanager.jar
+
+05e79bc;refactor
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+
+d54871b;ignoring cache files
+M	.gitignore
+
+40d399f;fix potential null pointer in location lists
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+M	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+M	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+
+b6d6159;Update usage.md / access sensor data
+M	docs/usage.md
+
+a07a8a1;Update README / link to ubhave
+M	docs/README.md
+
+a6d9265;Update usage.md / Accelerometer permissions
+M	docs/usage.md
+
+8d7092b;Update usage.md / transfer from Google doc
+M	docs/usage.md
+
+080e5ef;Update README / link to usage
+M	docs/README.md
+
+70a0936;Update README / pull sensors
+M	docs/README.md
+
+eb55fa3;Update README / push sensors
+M	docs/README.md
+
+82c8de2;Update README.md
+M	docs/README.md
+
+acf4de9;add apps md
+M	README.md
+A	docs/apps.md
+A	util/eclipse_code_style.xml
+
+d46a08e;Update and rename introduction.md to README.md
+A	docs/README.md
+D	docs/introduction.md
+
+39079ff;Update README.md
+M	README.md
+
+aa137a4;Update research.md
+M	docs/research.md
+
+b1c377c;adding docs dir
+A	docs/introduction.md
+A	docs/research.md
+A	docs/usage.md
+
+4019f5d;adding Idiap contributors, starting to move docs over
+M	README.md
+
+d732261;Merge pull request #8 from PuckCh/master
+03edaee;Fixed copyright
+M	src/com/ubhave/sensormanager/config/sensor/push/PassiveLocationConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/PhoneRadioConfig.java
+M	src/com/ubhave/sensormanager/data/pullsensor/PhoneRadioData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStrengthData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/PassiveLocationData.java
+M	src/com/ubhave/sensormanager/process/pull/PhoneRadioProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ConnectionStrengthProcessor.java
+M	src/com/ubhave/sensormanager/process/push/PassiveLocationProcessor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+d0d460f;Fixing config bug in Passive Location
+R078	src/com/ubhave/sensormanager/config/push/PassiveLocationConfig.java	src/com/ubhave/sensormanager/config/sensor/push/PassiveLocationConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+
+e74cce9;linking usernames to github profiles
+M	README.md
+
+3bef2f8;Added config for passive location, removed some Log call
+A	src/com/ubhave/sensormanager/config/push/PassiveLocationConfig.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+
+eb385c5;Debugging passive location sensor
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+5294c54;Looper bug
+M	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+
+b7153e4;Added PassiveLocationSensor
+A	src/com/ubhave/sensormanager/data/pushsensor/PassiveLocationData.java
+A	src/com/ubhave/sensormanager/process/push/PassiveLocationProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+A	src/com/ubhave/sensormanager/sensors/push/PassiveLocationSensor.java
+
+a6ff33a;Cleaning For locationList support
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+
+cf9ac24;Added support for list of locations
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+M	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+M	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+
+982bf23;typo and spacing fix
+M	README.md
+
+7741a52;updating readme markup
+D	README
+A	README.md
+
+7231f97;Fixed .gitignore for bin/classes
+M	.gitignore
+
+d2d92e1;Updated jar. Fixing minor typo in the merge
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+e3c5980;Merge remote-tracking branch 'nlathia/master'
+510084b;fixed Bug in ConnectionStrenght and Suuport for new bluetooth interface
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java
+
+073273a;Simplified ConnectionStrength
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java
+
+7b14e37;Merge pull request #7 from sibeliusseraphini/master
+46cb46b;Solved the Leaked IntentReceiver for the bluetooth sensor
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+
+d14bb81;Add unregister for bluetooth BroadcastReceiver
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+
+06d42cf;removing email (use the mailing list!)
+M	README
+
+4c54e1f;camera runtime exception
+M	AndroidManifest.xml
+M	bin/AndroidManifest.xml
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+
+fdb7de5;add missing app/task permission
+M	AndroidManifest.xml
+M	bin/AndroidManifest.xml
+
+b020028;remove unused
+M	AndroidManifest.xml
+M	bin/AndroidManifest.xml
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+9ce6557;add light sensor
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/push/LightSensor.java
+
+4ebb7cf;add light sensor (from @sibeliusseraphini), untested
+M	bin/sensormanager.jar
+A	src/com/ubhave/sensormanager/data/pushsensor/LightData.java
+A	src/com/ubhave/sensormanager/process/push/LightProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+A	src/com/ubhave/sensormanager/sensors/push/LightSensor.java
+
+9bfe283;add license headers
+M	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/MotionSensorConfig.java
+M	src/com/ubhave/sensormanager/data/pullsensor/GyroscopeData.java
+M	src/com/ubhave/sensormanager/sensors/pull/GyroscopeSensor.java
+
+28e577e;update read me
+M	README
+
+3842de2;refactor (MotionSensorConfig)
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java
+R074	src/com/ubhave/sensormanager/config/sensors/pull/GyroscopeConfig.java	src/com/ubhave/sensormanager/config/sensors/pull/MotionSensorConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractMotionSensor.java
+
+0effc0f;refactor (AbstractMotionSensor)
+M	bin/sensormanager.jar
+A	src/com/ubhave/sensormanager/sensors/pull/AbstractMotionSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/GyroscopeSensor.java
+
+95dcd95;add gyroscope (from @sibeliusseraphini)
+M	AndroidManifest.xml
+M	bin/AndroidManifest.xml
+M	bin/sensormanager.jar
+A	src/com/ubhave/sensormanager/config/sensors/pull/GyroscopeConfig.java
+A	src/com/ubhave/sensormanager/data/pullsensor/GyroscopeData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/GyroscopeProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+A	src/com/ubhave/sensormanager/sensors/pull/GyroscopeSensor.java
+
+a2eda9e;Add unregister for bluetooth BroadcastReceiver
+M	bin/sensormanager.jar
+M	src/com/ubhave/sensormanager/data/pullsensor/PhoneRadioData.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java
+
+b34f153;Added push sensor for connectionStrength
+D	bin/jarlist.cache
+M	bin/sensormanager.jar
+A	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStrengthData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/push/ConnectionStrengthProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/PhoneRadioSensor.java
+A	src/com/ubhave/sensormanager/sensors/push/ConnectionStrengthSensor.java
+
+cec96ba;Add PhoneRadio sensor.
+A	src/com/ubhave/sensormanager/config/sensors/pull/PhoneRadioConfig.java
+A	src/com/ubhave/sensormanager/data/pullsensor/PhoneRadioData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/PhoneRadioDataList.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/PhoneRadioProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+A	src/com/ubhave/sensormanager/sensors/pull/PhoneRadioSensor.java
+
+13efbaa;updating jar
+A	bin/jarlist.cache
+M	bin/sensormanager.jar
+
+9ce10e0;refactor permission constants
+M	AndroidManifest.xml
+M	bin/AndroidManifest.xml
+M	bin/sensormanager.jar
+M	project.properties
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+ba9fc28;removing unused
+D	bin/jarlist.cache
+D	src/com/ubhave/sensormanager/device/DeviceInfo.java
+
+b7e405b;adding jar to bin directory
+M	.gitignore
+A	bin/AndroidManifest.xml
+A	bin/jarlist.cache
+A	bin/sensormanager.jar
+
+aa1e91a;fix battery sensing on API 19
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+
+68e3557;reline
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+
+0837a83;refactor strings
+M	src/com/ubhave/sensormanager/ESException.java
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+d432b15;fixing permissions & clarifying permission exception
+M	AndroidManifest.xml
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+bb402d1;Adding app data obj
+A	src/com/ubhave/sensormanager/data/pullsensor/ApplicationData.java
+
+f556a37;Refactoring application sensor
+M	src/com/ubhave/sensormanager/config/sensors/pull/ApplicationConfig.java
+R083	src/com/ubhave/sensormanager/data/pullsensor/ApplicationData.java	src/com/ubhave/sensormanager/data/pullsensor/ApplicationDataList.java
+M	src/com/ubhave/sensormanager/process/pull/ApplicationProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+
+79c1d39;Permission update
+M	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+
+b276cce;Config param type fix
+M	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+
+5e56213;Bug fix
+M	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+
+ee5e9fd;More refactoring of config
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/ApplicationConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/BluetoothConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/CameraConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/ContentReaderConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/LocationConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/MicrophoneConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/WifiConfig.java
+D	src/com/ubhave/sensormanager/config/sensors/push/BatteryConfig.java
+
+227f587;updating readme
+M	README
+
+5a336b8;Refactoring sensor-config default values
+M	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/ApplicationConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/BluetoothConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/CameraConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/ContentReaderConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/LocationConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/MicrophoneConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/WifiConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/push/BatteryConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+50ce2c9;Refactoring config
+M	src/com/ubhave/sensormanager/config/sensors/pull/CameraConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/MicrophoneConfig.java
+M	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+13fce22;Adding support for keeping image files (via AbstractMediaSensor)
+A	src/com/ubhave/sensormanager/sensors/pull/AbstractMediaSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+9746216;Adding support for keeping audio recordings
+M	src/com/ubhave/sensormanager/config/sensors/pull/MicrophoneConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+dffd1ce;Renaming Audio* to Microphone*
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/MicrophoneProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+64f1fe5;adding petko to readme
+M	README
+
+71462f9;Microphone code formatting & refactoring
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+R090	src/com/ubhave/sensormanager/process/pull/AudioProcessor.java	src/com/ubhave/sensormanager/process/pull/MicrophoneProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+a385c39;Adding control over microphone sensing
+M	src/com/ubhave/sensormanager/config/sensors/pull/MicrophoneConfig.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/process/pull/AudioProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+e087e9b;Adding local-time-when-sensed to both content reader sensors (untested)
+M	src/com/ubhave/sensormanager/data/pullsensor/AbstractContentReaderEntry.java
+M	src/com/ubhave/sensormanager/data/pullsensor/CallContentReaderEntry.java
+M	src/com/ubhave/sensormanager/data/pullsensor/SMSContentListData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/SMSContentReaderEntry.java
+
+27e66cc;Update ignore
+M	.gitignore
+
+7220b83;Renaming variables (they are defaults)
+M	src/com/ubhave/sensormanager/config/sensors/pull/ContentReaderConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+ec1244b;Fixing time stamps/typos
+M	.classpath
+M	AndroidManifest.xml
+M	res/values/strings.xml
+M	src/com/ubhave/sensormanager/classifier/SocialClassifier.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+
+b97e887;Improving error messages
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+5f78f5c;Splitting ContentReader into SMS and Call specific types
+R089	src/com/ubhave/sensormanager/data/pullsensor/ContentReaderResult.java	src/com/ubhave/sensormanager/data/pullsensor/AbstractContentReaderEntry.java
+R067	src/com/ubhave/sensormanager/data/pullsensor/ContentReaderData.java	src/com/ubhave/sensormanager/data/pullsensor/AbstractContentReaderListData.java
+R090	src/com/ubhave/sensormanager/data/pullsensor/CallContentData.java	src/com/ubhave/sensormanager/data/pullsensor/CallContentListData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/CallContentReaderEntry.java
+R091	src/com/ubhave/sensormanager/data/pullsensor/SMSContentData.java	src/com/ubhave/sensormanager/data/pullsensor/SMSContentListData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/SMSContentReaderEntry.java
+M	src/com/ubhave/sensormanager/process/pull/CallContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/ContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/SMSContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PushSensorTask.java
+
+584432f;adding types to call content processor
+M	src/com/ubhave/sensormanager/process/pull/CallContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PushSensorTask.java
+
+08f0ad9;splitting content data types
+A	src/com/ubhave/sensormanager/data/pullsensor/CallContentData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/ContentReaderData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/SMSContentData.java
+M	src/com/ubhave/sensormanager/process/pull/CallContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/ContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/SMSContentReaderProcessor.java
+
+3910856;splitting call/sms content processors
+M	src/com/ubhave/sensormanager/config/sensors/pull/ContentReaderConfig.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/CallContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/ContentReaderProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/SMSContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+
+8f3610e;making log more readable
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+ef6071d;making log.d's optional
+M	.classpath
+M	.project
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+cc3cc25;added message type field to push SMS sensor.
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+ed9ad78;Refactoring support for SMS word-category mapping
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractContentReaderSensor.java
+
+3cd8e3d;camera sensor.
+M	AndroidManifest.xml
+A	src/com/ubhave/sensormanager/config/sensors/pull/CameraConfig.java
+A	src/com/ubhave/sensormanager/data/pullsensor/CameraData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/CameraProcessor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+A	src/com/ubhave/sensormanager/sensors/pull/CameraSensor.java
+
+e2c7caf;extracting config keys as constants
+M	src/com/ubhave/sensormanager/config/sensors/pull/ContentReaderConfig.java
+M	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+
+0721439;added try-catch-exception checks.
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+226162a;wrapping location start sense in try/catch
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+
+937b3b9;refactored content readers (processors + data)
+M	src/com/ubhave/sensormanager/config/sensors/pull/ContentReaderConfig.java
+M	src/com/ubhave/sensormanager/data/pullsensor/ContentReaderData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/ContentReaderResult.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+R081	src/com/ubhave/sensormanager/process/push/CommunicationProcessor.java	src/com/ubhave/sensormanager/process/CommunicationProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/ContentReaderProcessor.java
+M	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+R063	src/com/ubhave/sensormanager/sensors/pull/ContentReaderSensor.java	src/com/ubhave/sensormanager/sensors/pull/AbstractContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+D	src/com/ubhave/sensormanager/sensors/push/AbstractCommunicationSensor.java
+
+c7e1757;resolve config variable move
+D	src/com/ubhave/sensormanager/config/SensorManagerConstants.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/ContentReaderConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+
+8a73938;Merge branch 'dev'
+3de11d7;error catching
+M	src/com/ubhave/sensormanager/sensors/pull/ContentReaderSensor.java
+
+576e446;bug fix: location sensor
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+
+0b013a8;updated: ContentReaderSensor
+M	src/com/ubhave/sensormanager/sensors/pull/ContentReaderSensor.java
+
+7b77907;updated permissions
+M	AndroidManifest.xml
+
+414f1a8;updated sms and call-log pull sensors
+M	src/com/ubhave/sensormanager/data/pullsensor/ContentReaderData.java
+M	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ContentReaderSensor.java
+
+d0ec365;implemented pull sensor model for sms and call log sensors based on content readers
+M	.classpath
+M	src/com/ubhave/sensormanager/config/SensorManagerConstants.java
+M	src/com/ubhave/sensormanager/data/pullsensor/ContentReaderData.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractCommunicationSensor.java
+
+9493e6e;implemented pull sensor model for sms and call log sensors based on content readers
+A	src/com/ubhave/sensormanager/data/pullsensor/ContentReaderData.java
+A	src/com/ubhave/sensormanager/sensors/pull/CallContentReaderSensor.java
+A	src/com/ubhave/sensormanager/sensors/pull/ContentReaderSensor.java
+A	src/com/ubhave/sensormanager/sensors/pull/SMSContentReaderSensor.java
+
+4040595;update .gitignore
+M	.gitignore
+
+c51f001;refactor
+M	src/com/ubhave/sensormanager/process/push/ScreenProcessor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+
+a892682;adding missing screen processor code
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+
+8787f10;adding data processors and refactored code
+M	src/com/ubhave/sensormanager/ESException.java
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/ApplicationConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/BluetoothConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/LocationConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/MicrophoneConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/PullSensorConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/WifiConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/push/BatteryConfig.java
+M	src/com/ubhave/sensormanager/data/SensorData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/ApplicationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/BluetoothData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/PhoneStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ScreenData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+A	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/ApplicationProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/AudioProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/BluetoothProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/WifiProcessor.java
+A	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+A	src/com/ubhave/sensormanager/process/push/CommunicationProcessor.java
+A	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+A	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+A	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+A	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+A	src/com/ubhave/sensormanager/process/push/ScreenProcessor.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+b9ad896;Microphone sensor bug fixes
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+558b7b0;Update ignore
+M	.gitignore
+
+26283b2;Revert "Starting to move sensor construction to processor package"
+M	src/com/ubhave/sensormanager/ESException.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/config/SensorManagerConstants.java
+M	src/com/ubhave/sensormanager/data/SensorData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/PhoneStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+D	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+D	src/com/ubhave/sensormanager/process/AudioProcessor.java
+D	src/com/ubhave/sensormanager/process/CommunicationProcessor.java
+D	src/com/ubhave/sensormanager/process/PhoneStateProcessor.java
+D	src/com/ubhave/sensormanager/process/SMSProcessor.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+A	src/com/ubhave/sensormanager/sensors/push/AbstractCommunicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+1dfdf74;Revert "Bug fix"
+M	src/com/ubhave/sensormanager/process/CommunicationProcessor.java
+M	src/com/ubhave/sensormanager/process/PhoneStateProcessor.java
+
+8b22357;Revert "Extracting to processors"
+M	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+R090	src/com/ubhave/sensormanager/process/push/CommunicationProcessor.java	src/com/ubhave/sensormanager/process/CommunicationProcessor.java
+R093	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java	src/com/ubhave/sensormanager/process/PhoneStateProcessor.java
+R093	src/com/ubhave/sensormanager/process/push/SMSProcessor.java	src/com/ubhave/sensormanager/process/SMSProcessor.java
+D	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+D	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+D	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+D	src/com/ubhave/sensormanager/process/push/ScreenProcessor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+571356d;Revert "Finishing push processors"
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ScreenData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+M	src/com/ubhave/sensormanager/process/push/CommunicationProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ScreenProcessor.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+082560d;Revert "Updating setters"
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+
+9095821;Revert "changed sensor data classes for pull sensors and added place-holder classes for pull sensor processors"
+M	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/ApplicationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/BluetoothData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/AudioProcessor.java
+D	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+D	src/com/ubhave/sensormanager/process/pull/ApplicationProcessor.java
+D	src/com/ubhave/sensormanager/process/pull/AudioProcessor.java
+D	src/com/ubhave/sensormanager/process/pull/BluetoothProcessor.java
+D	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+D	src/com/ubhave/sensormanager/process/pull/WifiProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+
+2fdcd86;Revert "added processors for pull sensors"
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/ApplicationProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/AudioProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/BluetoothProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/WifiProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+
+009a305;Revert "minor edits"
+M	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+
+1491a01;Revert "Adding exception throwing"
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+
+fd300f8;Revert "added a method in ESSensorManager to return the app context."
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+b7a72de;Revert "Updating processors to have access to the app's context"
+M	.gitignore
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/ApplicationProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/AudioProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/BluetoothProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/WifiProcessor.java
+M	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+M	src/com/ubhave/sensormanager/process/push/CommunicationProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ScreenProcessor.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+
+de6962e;Revert "Preliminary implementation of SMS text analysis"
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+
+9f74674;Revert "Re-organised sensor config keys/default values"
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+A	src/com/ubhave/sensormanager/config/SensorManagerConstants.java
+D	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java
+D	src/com/ubhave/sensormanager/config/sensors/pull/ApplicationConfig.java
+D	src/com/ubhave/sensormanager/config/sensors/pull/BluetoothConfig.java
+D	src/com/ubhave/sensormanager/config/sensors/pull/LocationConfig.java
+D	src/com/ubhave/sensormanager/config/sensors/pull/MicrophoneConfig.java
+D	src/com/ubhave/sensormanager/config/sensors/pull/PullSensorConfig.java
+D	src/com/ubhave/sensormanager/config/sensors/pull/WifiConfig.java
+D	src/com/ubhave/sensormanager/config/sensors/push/BatteryConfig.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+38c4f1b;Revert "reorganised pullsensorconfig"
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/PullSensorConfig.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+
+efec6ae;Revert "adding missing processor"
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+
+a44b2ce;Revert "Adding to manifest"
+M	AndroidManifest.xml
+M	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java
+
+d981514;Revert "Making word category generic"
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+
+aa203d5;Revert "fixing phone state null pointers"
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+
+32d0c13;Revert "catching microphone run time exception"
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+a044dc4;Revert "bug fixes"
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+be73a07;Revert "SMS NullPointer bug fix"
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+fd5377e;Revert "Refactoring microphone sensor"
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+bbd9e7e;Refactoring microphone sensor
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+c7bdf53;SMS NullPointer bug fix
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+972cf1b;bug fixes
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+4364ddb;catching microphone run time exception
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+1e35463;fixing phone state null pointers
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+
+a87a7cd;Making word category generic
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+
+a6457ff;Adding to manifest
+M	AndroidManifest.xml
+M	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java
+
+f5bae8a;adding missing processor
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+
+cd76553;reorganised pullsensorconfig
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/config/sensors/pull/PullSensorConfig.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+
+55a5909;Re-organised sensor config keys/default values
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+D	src/com/ubhave/sensormanager/config/SensorManagerConstants.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/AccelerometerConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/ApplicationConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/BluetoothConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/LocationConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/MicrophoneConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/PullSensorConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/pull/WifiConfig.java
+A	src/com/ubhave/sensormanager/config/sensors/push/BatteryConfig.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+04fefab;Preliminary implementation of SMS text analysis
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+
+991127a;Updating processors to have access to the app's context
+M	.gitignore
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/ApplicationProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/AudioProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/BluetoothProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/WifiProcessor.java
+M	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+M	src/com/ubhave/sensormanager/process/push/CommunicationProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ScreenProcessor.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+
+08749ee;added a method in ESSensorManager to return the app context.
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+82447f9;Adding exception throwing
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+
+7f4845c;minor edits
+M	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+M	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+
+6158101;added processors for pull sensors
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/ApplicationProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/AudioProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/BluetoothProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+M	src/com/ubhave/sensormanager/process/pull/WifiProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+
+3e8e05c;changed sensor data classes for pull sensors and added place-holder classes for pull sensor processors
+M	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/ApplicationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/BluetoothData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+D	src/com/ubhave/sensormanager/process/AudioProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/AccelerometerProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/ApplicationProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/AudioProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/BluetoothProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/LocationProcessor.java
+A	src/com/ubhave/sensormanager/process/pull/WifiProcessor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+
+ac4a2f1;Updating setters
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+
+8e3651e;Finishing push processors
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ScreenData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+M	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+M	src/com/ubhave/sensormanager/process/push/CommunicationProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+M	src/com/ubhave/sensormanager/process/push/ScreenProcessor.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+6f8d701;Extracting to processors
+M	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java
+M	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/push/BatteryProcessor.java
+R090	src/com/ubhave/sensormanager/process/CommunicationProcessor.java	src/com/ubhave/sensormanager/process/push/CommunicationProcessor.java
+A	src/com/ubhave/sensormanager/process/push/ConnectionStateProcessor.java
+R093	src/com/ubhave/sensormanager/process/PhoneStateProcessor.java	src/com/ubhave/sensormanager/process/push/PhoneStateProcessor.java
+A	src/com/ubhave/sensormanager/process/push/ProximityProcessor.java
+R093	src/com/ubhave/sensormanager/process/SMSProcessor.java	src/com/ubhave/sensormanager/process/push/SMSProcessor.java
+A	src/com/ubhave/sensormanager/process/push/ScreenProcessor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+4706a6d;Bug fix
+M	src/com/ubhave/sensormanager/process/CommunicationProcessor.java
+M	src/com/ubhave/sensormanager/process/PhoneStateProcessor.java
+
+faa48af;Starting to move sensor construction to processor package
+M	src/com/ubhave/sensormanager/ESException.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/config/SensorManagerConstants.java
+M	src/com/ubhave/sensormanager/data/SensorData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/PhoneStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+A	src/com/ubhave/sensormanager/process/AbstractProcessor.java
+A	src/com/ubhave/sensormanager/process/AudioProcessor.java
+A	src/com/ubhave/sensormanager/process/CommunicationProcessor.java
+A	src/com/ubhave/sensormanager/process/PhoneStateProcessor.java
+A	src/com/ubhave/sensormanager/process/SMSProcessor.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+D	src/com/ubhave/sensormanager/sensors/push/AbstractCommunicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+f69b3ae;wake lock - bug fix
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+3e9bbf1;wake lock - bug fix
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+b367a08;Updating app sleep length to 5 mins
+M	src/com/ubhave/sensormanager/config/SensorManagerConstants.java
+
+bba68e6;Renaming constants file
+M	src/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+R096	src/com/ubhave/sensormanager/config/Constants.java	src/com/ubhave/sensormanager/config/SensorManagerConstants.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+68a5644;microphonesensor bug fix
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+561f000;List limit
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+dcd56e9;added new sensor (ApplicationSensor) to capture the active application and the recently accessed applications.
+M	src/com/ubhave/sensormanager/config/Constants.java
+A	src/com/ubhave/sensormanager/data/pullsensor/ApplicationData.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+A	src/com/ubhave/sensormanager/sensors/pull/ApplicationSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+
+b956f52;bug fix
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+d0068ed;bug fixes.
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+bce7f27;bug fix.
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+17d63ce;bug fixes
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+
+313b7b3;added new class to store wifi scan results
+M	src/com/ubhave/sensormanager/classifier/WifiDataClassifier.java
+M	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/WifiScanResult.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+
+0b7be49;Adding constructor to allow object to be rebuilt from JSON
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+
+1c165b8;Added tutorial link
+M	README
+
+5f5a603;bug fixes + added new config parameter for the accelerometer to control the hardware sampling rate
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+1d7c0fb;added the following - configurable accelerometer sampling delay - microphone sensor data format changed to use arrays - added timestamps to mic data
+M	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+4d0d354;added timestamps to the accelerometer data. added DeviceInfo class to query device info such as manufacturer, model etc.
+M	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java
+A	src/com/ubhave/sensormanager/device/DeviceInfo.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+
+5f2e500;adaptive sensing bug fix
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+
+a35ce65;bluetooth and wifi sensor sampling is defined in terms of number of scans
+M	src/com/ubhave/sensormanager/config/Constants.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+
+fff9989;Removing log message
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+
+2de629b;Minor cleanup
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+484c5fb;Update
+M	.classpath
+A	.settings/org.eclipse.jdt.core.prefs
+
+abb6d3f;Bug fix
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+187112e;Removing logger
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+D	src/com/ubhave/sensormanager/logs/ESLogger.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractCommunicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PushSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+D	src/com/ubhave/sensormanager/util/Utilities.java
+
+2854a3d;Require battery permission only for pub/sub
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+dfa77ee;Bug fix (sensor name)
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+
+7c7b962;bug fix, get post sense sleep value.
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+591767c;Removing getDataString() methods (replacing with Data Formatter)
+M	src/com/ubhave/sensormanager/data/SensorData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/BluetoothData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/ESBluetoothDevice.java
+M	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/PhoneStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ScreenData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+
+1406cc0;Added data getter methods
+M	.project
+M	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ScreenData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+
+d424c7b;Add null check
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+cd5dc77;Removing unused res/*
+M	AndroidManifest.xml
+D	res/drawable-hdpi/ic_launcher.png
+D	res/drawable-ldpi/ic_launcher.png
+D	res/drawable-mdpi/ic_launcher.png
+D	res/drawable-xhdpi/ic_launcher.png
+D	res/drawable/ic_launcher_es.png
+
+8d37fd2;Added license to manifest
+M	AndroidManifest.xml
+M	README
+
+c1b3f63;Added license
+M	src/com/ubhave/sensormanager/ESException.java
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/SensorDataListener.java
+M	src/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/BluetoothDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/PhoneStateDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/SMSDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/ScreenDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/SensorClassifiers.java
+M	src/com/ubhave/sensormanager/classifier/SensorDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/SocialClassifier.java
+M	src/com/ubhave/sensormanager/classifier/WifiDataClassifier.java
+M	src/com/ubhave/sensormanager/config/AbstractConfig.java
+M	src/com/ubhave/sensormanager/config/Constants.java
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/data/SensorData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/BluetoothData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/ESBluetoothDevice.java
+M	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/PhoneStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ScreenData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/dutycyling/SleepWindowListener.java
+M	src/com/ubhave/sensormanager/logs/ESLogger.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorInterface.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/PullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractCommunicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PushSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/Subscription.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+M	src/com/ubhave/sensormanager/util/Utilities.java
+
+fd0f2c6;Updated connection state classifier
+M	src/com/ubhave/sensormanager/classifier/SensorClassifiers.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+
+7b5b5ab;Adding connection state (push) sensor
+A	src/com/ubhave/sensormanager/data/pushsensor/ConnectionStateData.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+A	src/com/ubhave/sensormanager/sensors/push/ConnectionStateSensor.java
+
+9b9fcb3;Added simple classifiers
+A	src/com/ubhave/sensormanager/classifier/PhoneStateDataClassifier.java
+A	src/com/ubhave/sensormanager/classifier/SMSDataClassifier.java
+A	src/com/ubhave/sensormanager/classifier/ScreenDataClassifier.java
+A	src/com/ubhave/sensormanager/classifier/SensorClassifiers.java
+
+ce97b2c;Fixing merge conflict
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/Subscription.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+505fd19;implemented pause/unpause.
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/tasks/Subscription.java
+
+ef2eda7;made subscription list methods thread safe
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+7049320;Pause / Unpause start
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+9520b7c;wake lock permission check.
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+0495507;added acquire wake lock config
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+
+7e385e6;Finishing global config
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+0185cb6;Implementing global config
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/config/GlobalConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+c004d9a;Starting to implement global config
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+A	src/com/ubhave/sensormanager/config/AbstractConfig.java
+A	src/com/ubhave/sensormanager/config/GlobalConfig.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+
+0a08c87;bug fix: low battery threshold notification.
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+fbb2ffd;Updated interface
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+
+ff3abaa;minor edit.
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+53ed719;removed wake lock permission.
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+765d21e;refactoring
+M	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+a80eb08;notify listeners on battery level crossing a predefined threshold.
+M	src/com/ubhave/sensormanager/SensorDataListener.java
+M	src/com/ubhave/sensormanager/config/Constants.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PushSensorTask.java
+
+1ba330e;added support to specify location accuracy.
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+
+6b3f807;removed sleep interval from sensor config in the case of one-off sensor data query getCurrentSensorData().
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+f63632e;renamed sleep window length sensor config parameter.
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+aaf9aeb;sensor data requires sensor config object in its constructor.
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/data/SensorData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/BluetoothData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/PhoneStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ScreenData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+a2b41c3;Removed test mode constant
+M	src/com/ubhave/sensormanager/config/Constants.java
+
+eefe275;Added sense length variable to accelerometer/microphone
+M	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+
+c99238f;added get methods in sensor data classes.
+M	src/com/ubhave/sensormanager/data/pushsensor/PhoneStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+dd23673;error checks.
+M	src/com/ubhave/sensormanager/ESException.java
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+
+9206354;AbstractSensorTask bug fix.
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+
+4e6843d;removed sensor manager startSensorManager method
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+
+784d27a;Stop sensor moved to AsyncTask
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+
+bb7d60c;Rollback
+M	src/com/ubhave/sensormanager/config/Constants.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+7d19120;Added sensor enabled constant
+M	src/com/ubhave/sensormanager/config/Constants.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+8b1e6cc;adaptive sensing, sensor config, refactoring
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+D	src/com/ubhave/sensormanager/dutycyling/SamplingIntervalListener.java
+A	src/com/ubhave/sensormanager/dutycyling/SleepWindowListener.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorInterface.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/PullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PushSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PushSensorTask.java
+
+d971c2d;Added config get method
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+
+372705e;Updated Interface
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+
+b9f0a6f;code refactoring
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+
+629db8b;removed JSON dependencies
+M	.classpath
+D	lib/json-simple-1.1.1.jar
+D	src/com/ubhave/sensormanager/config/json/JSONLoader.java
+D	src/com/ubhave/sensormanager/config/json/SensorJsonConfig.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+
+e66ade2;adaptive sensing, added more methods to sensor manager interface
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/config/Constants.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+D	src/com/ubhave/sensormanager/config/SensorConfigUpdater.java
+M	src/com/ubhave/sensormanager/data/SensorData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/BluetoothData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/PhoneStateData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/ScreenData.java
+M	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+M	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+A	src/com/ubhave/sensormanager/dutycyling/SamplingIntervalListener.java
+
+97df763;Sensor Manager, implemented get current sensor data
+M	src/com/ubhave/sensormanager/ESException.java
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+feb1ce4;Capitalised sensor names
+M	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+
+4d01a87;pull sensor task: changed the order of sense sleep cycles.
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+b628ae5;Added comments
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+a2bfec6;Interface update with methods that need implementing
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+
+c91bfec;bug fixes, mic support, minor edits
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+M	src/com/ubhave/sensormanager/config/Constants.java
+M	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+M	src/com/ubhave/sensormanager/logs/ESLogger.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+R089	src/com/ubhave/sensormanager/sensors/SensorList.java	src/com/ubhave/sensormanager/sensors/SensorUtils.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+A	src/com/ubhave/sensormanager/util/Utilities.java
+
+f5ddd92;bug fixes, cleanup, project setup files
+A	.classpath
+M	.gitignore
+A	.project
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/config/Constants.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorList.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+4dc09cb;Removing utilities
+D	src/com/ubhave/sensormanager/config/Utilities.java
+
+7f9fbd0;Refactoring to remove Utilities.java
+M	src/com/ubhave/sensormanager/classifier/BluetoothDataClassifier.java
+M	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+A	src/com/ubhave/sensormanager/classifier/SocialClassifier.java
+M	src/com/ubhave/sensormanager/classifier/WifiDataClassifier.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+A	src/com/ubhave/sensormanager/sensors/push/AbstractCommunicationSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+a6949eb;Removing more uneccessary constants
+M	src/com/ubhave/sensormanager/config/Constants.java
+
+9d004b2;Removing constants, temporarily removing mic sensor
+M	src/com/ubhave/sensormanager/config/Constants.java
+M	src/com/ubhave/sensormanager/config/SensorConfig.java
+M	src/com/ubhave/sensormanager/config/Utilities.java
+M	src/com/ubhave/sensormanager/config/json/JSONLoader.java
+M	src/com/ubhave/sensormanager/config/json/SensorJsonConfig.java
+D	src/com/ubhave/sensormanager/logs/DataLogger.java
+M	src/com/ubhave/sensormanager/logs/ESLogger.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/SensorList.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+D	src/com/ubhave/sensormanager/service/ExperienceSenseService.java
+D	src/com/ubhave/sensormanager/service/ServiceAlarmReceiver.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+
+729259d;Added task starting/stopping on subscription registrations
+M	src/com/ubhave/sensormanager/config/SensorConfigUpdater.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/PushSensorTask.java
+M	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+ab9d455;Pub/Sub methods for sensor manager
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+M	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+A	src/com/ubhave/sensormanager/tasks/Subscription.java
+A	src/com/ubhave/sensormanager/tasks/SubscriptionList.java
+
+82bcbcb;Refactoring sensor tasks
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+D	src/com/ubhave/sensormanager/Temp_ESSensorManager.java
+A	src/com/ubhave/sensormanager/tasks/AbstractSensorTask.java
+A	src/com/ubhave/sensormanager/tasks/PullSensorTask.java
+A	src/com/ubhave/sensormanager/tasks/PushSensorTask.java
+
+9163836;Added exception throwing into sensor constructors
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+A	src/com/ubhave/sensormanager/Temp_ESSensorManager.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+D	src/com/ubhave/sensormanager/sensors/SensorDataListener.java
+A	src/com/ubhave/sensormanager/sensors/SensorList.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+
+405bc1c;Updated sensor manager interface
+M	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+A	src/com/ubhave/sensormanager/SensorDataListener.java
+
+9a0272e;Removed dependence on service
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+M	src/com/ubhave/sensormanager/config/SensorConfigUpdater.java
+
+9e93b2d;adaptive sensing
+A	lib/json-simple-1.1.1.jar
+M	src/com/ubhave/sensormanager/ESSensorManager.java
+A	src/com/ubhave/sensormanager/classifier/AccelerometerDataClassifier.java
+A	src/com/ubhave/sensormanager/classifier/BluetoothDataClassifier.java
+A	src/com/ubhave/sensormanager/classifier/LocationDataClassifier.java
+A	src/com/ubhave/sensormanager/classifier/MicrophoneDataClassifier.java
+A	src/com/ubhave/sensormanager/classifier/SensorDataClassifier.java
+A	src/com/ubhave/sensormanager/classifier/WifiDataClassifier.java
+M	src/com/ubhave/sensormanager/config/SensorConfigUpdater.java
+A	src/com/ubhave/sensormanager/dutycyling/AdaptiveSensing.java
+M	src/com/ubhave/sensormanager/logs/DataLogger.java
+M	src/com/ubhave/sensormanager/logs/ESLogger.java
+M	src/com/ubhave/sensormanager/service/ExperienceSenseService.java
+
+75d3939;Remove app context, sensors check for their permission
+M	AndroidManifest.xml
+M	src/com/ubhave/sensormanager/ESException.java
+R085	src/com/ubhave/sensormanager/sensors/ESSensorManager.java	src/com/ubhave/sensormanager/ESSensorManager.java
+A	src/com/ubhave/sensormanager/ESSensorManagerInterface.java
+D	src/com/ubhave/sensormanager/SurveyApplication.java
+M	src/com/ubhave/sensormanager/config/SensorConfigUpdater.java
+M	src/com/ubhave/sensormanager/config/Utilities.java
+M	src/com/ubhave/sensormanager/logs/DataLogger.java
+M	src/com/ubhave/sensormanager/logs/ESLogger.java
+M	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+M	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+M	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+M	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+M	src/com/ubhave/sensormanager/service/ExperienceSenseService.java
+
+c671b2d;Added readme
+A	README
+D	ic_launcher-web.png
+
+0af9594;Code transfer
+M	.gitignore
+A	res/drawable/ic_launcher_es.png
+A	src/com/ubhave/sensormanager/ESException.java
+A	src/com/ubhave/sensormanager/SurveyApplication.java
+A	src/com/ubhave/sensormanager/config/Constants.java
+A	src/com/ubhave/sensormanager/config/SensorConfig.java
+A	src/com/ubhave/sensormanager/config/SensorConfigUpdater.java
+A	src/com/ubhave/sensormanager/config/Utilities.java
+A	src/com/ubhave/sensormanager/config/json/JSONLoader.java
+A	src/com/ubhave/sensormanager/config/json/SensorJsonConfig.java
+A	src/com/ubhave/sensormanager/data/SensorData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/AccelerometerData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/BluetoothData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/ESBluetoothDevice.java
+A	src/com/ubhave/sensormanager/data/pullsensor/LocationData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/MicrophoneData.java
+A	src/com/ubhave/sensormanager/data/pullsensor/WifiData.java
+A	src/com/ubhave/sensormanager/data/pushsensor/BatteryData.java
+A	src/com/ubhave/sensormanager/data/pushsensor/PhoneStateData.java
+A	src/com/ubhave/sensormanager/data/pushsensor/ProximityData.java
+A	src/com/ubhave/sensormanager/data/pushsensor/ScreenData.java
+A	src/com/ubhave/sensormanager/data/pushsensor/SmsData.java
+A	src/com/ubhave/sensormanager/logs/DataLogger.java
+A	src/com/ubhave/sensormanager/logs/ESLogger.java
+A	src/com/ubhave/sensormanager/sensors/AbstractSensor.java
+A	src/com/ubhave/sensormanager/sensors/ESSensorManager.java
+A	src/com/ubhave/sensormanager/sensors/SensorDataListener.java
+A	src/com/ubhave/sensormanager/sensors/SensorInterface.java
+A	src/com/ubhave/sensormanager/sensors/pull/AbstractPullSensor.java
+A	src/com/ubhave/sensormanager/sensors/pull/AccelerometerSensor.java
+A	src/com/ubhave/sensormanager/sensors/pull/BluetoothSensor.java
+A	src/com/ubhave/sensormanager/sensors/pull/LocationSensor.java
+A	src/com/ubhave/sensormanager/sensors/pull/MicrophoneSensor.java
+A	src/com/ubhave/sensormanager/sensors/pull/PullSensor.java
+A	src/com/ubhave/sensormanager/sensors/pull/WifiSensor.java
+A	src/com/ubhave/sensormanager/sensors/push/AbstractPushSensor.java
+A	src/com/ubhave/sensormanager/sensors/push/BatterySensor.java
+A	src/com/ubhave/sensormanager/sensors/push/PhoneStateSensor.java
+A	src/com/ubhave/sensormanager/sensors/push/ProximitySensor.java
+A	src/com/ubhave/sensormanager/sensors/push/PushSensor.java
+A	src/com/ubhave/sensormanager/sensors/push/ScreenSensor.java
+A	src/com/ubhave/sensormanager/sensors/push/SmsSensor.java
+A	src/com/ubhave/sensormanager/service/ExperienceSenseService.java
+A	src/com/ubhave/sensormanager/service/ServiceAlarmReceiver.java
+
+9fab821;First commit
+A	.gitignore
+A	AndroidManifest.xml
+A	ic_launcher-web.png
+A	proguard-project.txt
+A	project.properties
+A	res/drawable-hdpi/ic_launcher.png
+A	res/drawable-ldpi/ic_launcher.png
+A	res/drawable-mdpi/ic_launcher.png
+A	res/drawable-xhdpi/ic_launcher.png
+A	res/values/strings.xml
+A	res/values/styles.xml

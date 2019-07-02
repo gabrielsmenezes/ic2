@@ -1,0 +1,411 @@
+ddb5008;修复 0.15 中存在的一些问题 (#29)
+M	src/main/java/net/coding/ide/config/WebConfig.java
+M	src/main/java/net/coding/ide/web/controller/ExceptionAdvice.java
+M	src/main/resources/application.properties
+
+2661ea4;add file encoding support (#27)
+M	src/main/java/net/coding/ide/dto/FileDTO.java
+M	src/main/java/net/coding/ide/model/Workspace.java
+M	src/main/java/net/coding/ide/service/GitManager.java
+M	src/main/java/net/coding/ide/service/GitManagerImpl.java
+M	src/main/java/net/coding/ide/service/WorkspaceManager.java
+M	src/main/java/net/coding/ide/service/WorkspaceManagerImpl.java
+M	src/main/java/net/coding/ide/web/controller/ExceptionAdvice.java
+M	src/main/java/net/coding/ide/web/controller/GitController.java
+M	src/main/java/net/coding/ide/web/controller/WorkspaceController.java
+
+c36a872;use lombok EqualsAndHashCode (#28)
+M	src/main/java/net/coding/ide/event/FileChangeEvent.java
+M	src/main/java/net/coding/ide/event/FileCreateEvent.java
+M	src/main/java/net/coding/ide/event/FileDeleteEvent.java
+M	src/main/java/net/coding/ide/event/FileModifyEvent.java
+M	src/main/java/net/coding/ide/service/WorkspaceWatcher.java
+M	src/main/java/net/coding/ide/web/message/EventExchange.java
+
+a3012ca;add filesCount, directoriesCount, readable, writable metadata when list files
+M	src/main/java/net/coding/ide/model/FileInfo.java
+M	src/main/java/net/coding/ide/service/WorkspaceManagerImpl.java
+
+99ac9cf;support git local protocol (#24)
+M	src/main/java/net/coding/ide/entity/ProjectEntity.java
+M	src/main/java/net/coding/ide/model/Workspace.java
+M	src/main/java/net/coding/ide/repository/ProjectRepository.java
+M	src/main/java/net/coding/ide/service/GitManagerImpl.java
+M	src/main/java/net/coding/ide/service/WorkspaceManagerImpl.java
+M	src/test/java/net/coding/ide/repository/ProjectRepositoryTest.java
+M	src/test/java/net/coding/ide/service/WorkspaceManagerTest.java
+M	src/test/java/net/coding/ide/utils/DataPopulator.java
+M	src/test/resources/db/workspace.xml
+
+3199dac;fix spring @Value path bug (#23)
+M	src/main/java/net/coding/ide/config/WebConfig.java
+M	src/main/java/net/coding/ide/service/PackageServiceImpl.java
+M	src/main/java/net/coding/ide/web/controller/PackageController.java
+M	src/test/java/net/coding/ide/service/PackageServiceImplTest.java
+
+bd74124;add package support (#22)
+M	src/main/java/net/coding/ide/config/WebConfig.java
+A	src/main/java/net/coding/ide/dto/Package.java
+A	src/main/java/net/coding/ide/service/PackageService.java
+A	src/main/java/net/coding/ide/service/PackageServiceImpl.java
+M	src/main/java/net/coding/ide/web/controller/ExceptionAdvice.java
+A	src/main/java/net/coding/ide/web/controller/PackageController.java
+M	src/main/resources/application.properties
+A	src/test/java/net/coding/ide/service/PackageServiceImplTest.java
+
+e3b0850;Update README.md (#21)
+M	.travis.yml
+M	README.md
+
+6d9c300;Merge pull request #20 from Coding/tanhehe/add_support_for_glog
+bcd988a;add getRefs api
+A	src/main/java/net/coding/ide/model/GitRef.java
+M	src/main/java/net/coding/ide/service/GitManager.java
+M	src/main/java/net/coding/ide/service/GitManagerImpl.java
+M	src/main/java/net/coding/ide/web/controller/GitController.java
+M	src/test/java/net/coding/ide/service/GitManagerTest.java
+
+e85ff49;remove stash refs from log all
+M	src/main/java/net/coding/ide/service/GitManagerImpl.java
+M	src/test/java/net/coding/ide/service/GitManagerTest.java
+
+c098b11;remove some fields never used
+M	src/main/java/net/coding/ide/model/GitLog.java
+M	src/main/java/net/coding/ide/model/PersonIdent.java
+M	src/main/java/net/coding/ide/web/mapping/PersonIdentConverter.java
+M	src/test/java/net/coding/ide/service/GitManagerTest.java
+M	src/test/java/net/coding/ide/utils/DataPopulator.java
+
+6accab6;add suppoort for glog
+M	src/main/java/net/coding/ide/config/WebConfig.java
+M	src/main/java/net/coding/ide/model/GitBlame.java
+M	src/main/java/net/coding/ide/model/GitLog.java
+A	src/main/java/net/coding/ide/model/PersonIdent.java
+M	src/main/java/net/coding/ide/service/GitManager.java
+M	src/main/java/net/coding/ide/service/GitManagerImpl.java
+M	src/main/java/net/coding/ide/web/controller/GitController.java
+A	src/main/java/net/coding/ide/web/mapping/PersonIdentConverter.java
+M	src/test/java/net/coding/ide/service/GitManagerTest.java
+M	src/test/java/net/coding/ide/utils/DataPopulator.java
+
+2440dbb;Merge pull request #19 from Coding/tanhehe/remove_same_origin_policy_limit
+58fac16;remove same-origin policy
+M	src/main/resources/application.properties
+
+d04b668;Merge pull request #18 from Coding/tanhehe/add_support_for_blame
+38bf358;add support for blame
+A	src/main/java/net/coding/ide/model/GitBlame.java
+M	src/main/java/net/coding/ide/service/GitManager.java
+M	src/main/java/net/coding/ide/service/GitManagerImpl.java
+M	src/main/java/net/coding/ide/web/controller/GitController.java
+M	src/test/java/net/coding/ide/service/GitManagerTest.java
+
+a874060;Merge pull request #17 from Coding/tanhehe/fix_read_file_from_ref_path_bug
+899abd1;fix readFileFromRef path bug
+M	src/main/java/net/coding/ide/service/GitManagerImpl.java
+M	src/test/java/net/coding/ide/service/GitManagerTest.java
+
+03b9652;Merge pull request #16 from Coding/tanhehe/allowed_push_git_file_event
+a4b646c;refactor workspaceException handler and fix test
+M	src/main/java/net/coding/ide/web/controller/ExceptionAdvice.java
+M	src/test/java/net/coding/ide/service/GitManagerTest.java
+M	src/test/java/net/coding/ide/service/WorkspaceManagerTest.java
+
+d435402;add WatchedPathStore for file watcher
+A	src/main/java/net/coding/ide/service/WatchedPathStore.java
+M	src/main/java/net/coding/ide/service/WorkspaceManagerImpl.java
+M	src/main/java/net/coding/ide/service/WorkspaceWatcher.java
+
+18fe063;use EventListener
+M	src/main/java/net/coding/ide/event/GitCheckoutEvent.java
+M	src/main/java/net/coding/ide/service/GitManagerImpl.java
+M	src/main/java/net/coding/ide/service/WorkspaceManager.java
+M	src/main/java/net/coding/ide/service/WorkspaceManagerImpl.java
+M	src/main/java/net/coding/ide/web/message/EventExchange.java
+
+e322018;add includeUntracked option for create stash
+M	src/main/java/net/coding/ide/service/GitManager.java
+M	src/main/java/net/coding/ide/service/GitManagerImpl.java
+M	src/main/java/net/coding/ide/web/controller/GitController.java
+M	src/test/java/net/coding/ide/service/GitManagerTest.java
+
+02f0fcf;remove HttpSessionHandshakeInterceptor
+M	src/main/java/net/coding/ide/config/WebSocketConfig.java
+
+5ca1358;change ~/.coding-ide-home to ~/.coding-ide
+M	.gitignore
+M	src/main/resources/application.properties
+
+21f5e5a;fix travis.
+M	.travis.yml
+
+95c6cf7;tag image latest for master branch commit
+M	.travis.yml
+
+4f45baf;fix travis
+M	.travis.yml
+
+22bcc8c;fix travis
+M	.travis.yml
+
+e6cb73e;build docker image in travis
+A	.dockerignore
+M	.travis.yml
+A	Dockerfile
+M	README-en.md
+M	README.md
+M	pom.xml
+
+b9e3fb0;using java8 in travis
+M	.travis.yml
+
+6432ac5;fix test
+M	pom.xml
+M	src/test/java/net/coding/ide/service/BaseServiceTest.java
+
+f96d62c;fix travis
+M	.travis.yml
+M	pom.xml
+
+71113f2;just run test on travis's script phase
+M	.travis.yml
+
+6331265;ignore net.coding.ide:frontend on mvn test
+M	pom.xml
+
+c09db71;update notifications
+M	.travis.yml
+
+c85af0e;update notifications
+M	.travis.yml
+
+83b9c46;add .m2 cache
+M	.travis.yml
+
+f2be0c6;add travis
+A	.travis.yml
+
+5cbaafc;add /ws/** mapping
+M	src/main/java/net/coding/ide/config/WebConfig.java
+
+e8a74c7;Merge pull request #14 from Coding/tanhehe/enhance_rebase_support_and_add_git_log_api
+fe6329e;enhance rebase support and add git log api
+A	src/main/java/net/coding/ide/git/rebase/EditActionHandler.java
+A	src/main/java/net/coding/ide/git/rebase/RebaseActionHandler.java
+A	src/main/java/net/coding/ide/git/rebase/RewordActionHandler.java
+A	src/main/java/net/coding/ide/git/rebase/SquashActionHandler.java
+A	src/main/java/net/coding/ide/model/GitLog.java
+A	src/main/java/net/coding/ide/model/exception/GitCommitMessageNeedEditException.java
+M	src/main/java/net/coding/ide/service/GitManager.java
+M	src/main/java/net/coding/ide/service/GitManagerImpl.java
+A	src/main/java/net/coding/ide/utils/RebaseStateUtils.java
+M	src/main/java/net/coding/ide/web/controller/GitController.java
+M	src/test/java/net/coding/ide/service/GitManagerTest.java
+
+1dcafb8;Merge pull request #13 from Coding/tanhehe/fix_raw_api
+fbc406d;fix raw api
+M	src/main/java/net/coding/ide/config/WebConfig.java
+
+2e366a9;Merge pull request #10 from Coding/tanhehe/modify_tty_default_working_dir
+8e1c27e;modify tty default working dir
+M	src/main/java/net/coding/ide/config/WebSocketConfig.java
+M	src/main/java/net/coding/ide/model/Message.java
+M	src/main/java/net/coding/ide/tty/SocketIOHandler.java
+
+a350c74;remove sonatype
+M	pom.xml
+
+b76916c;ensure coding-ide-home exist
+M	src/main/java/net/coding/ide/Application.java
+M	src/main/java/net/coding/ide/config/JpaConfig.java
+
+e769709;ensure CODING_IDE_HOME exists
+M	src/main/java/net/coding/ide/Application.java
+
+2a179bb;fix swagger-ui.html could not access bug
+M	src/main/resources/application.properties
+
+12a8530;Merge pull request #9 from Coding/tanhehe/modify_db_location_to_coding_ide_home
+0c19b67;modify sqlite .db location
+M	src/main/java/net/coding/ide/config/JpaConfig.java
+M	src/main/resources/application.properties
+
+e94f2b5;Merge pull request #4 from Coding/vangie/use_default_shell
+fe71133;using current user default shell.
+A	src/main/java/com/pty4j/util/PtyUtil.java
+M	src/main/java/net/coding/ide/Application.java
+M	src/main/java/net/coding/ide/tty/SocketIOHandler.java
+D	src/main/java/net/coding/ide/utils/EnvUtils.java
+
+dbb7b53;Merge pull request #3 from tanhe123/master
+7161475;add env coding-ide-home update space home env to .coding-ide-home/workspace
+M	src/main/resources/application.properties
+
+e5cfcf1;Update LICENSE
+M	LICENSE
+
+0cdd3ee;Merge pull request #1 from tanhe123/master
+ac73909;update readme
+A	README-en.md
+D	README-zh.md
+M	README.md
+
+fef5477;update space home env to user home
+M	src/main/resources/application.properties
+
+d2aeb86;first commit
+A	.coding-ci.yml
+A	.gitignore
+A	LICENSE
+A	README-zh.md
+A	README.md
+A	lib/annotations.jar
+A	lib/javac2.jar
+A	lib/jna-platform.jar
+A	lib/jna.jar
+A	lib/jsch-0.1.51.jar
+A	lib/jzlib-1.1.1.jar
+A	lib/pty4j-0.5.jar
+A	lib/purejavacomm-0.0.17.jar
+A	pom.xml
+A	src/main/java/net/coding/ide/Application.java
+A	src/main/java/net/coding/ide/config/AspectConfig.java
+A	src/main/java/net/coding/ide/config/Config.java
+A	src/main/java/net/coding/ide/config/JpaConfig.java
+A	src/main/java/net/coding/ide/config/SwaggerConfig.java
+A	src/main/java/net/coding/ide/config/WebConfig.java
+A	src/main/java/net/coding/ide/config/WebSocketConfig.java
+A	src/main/java/net/coding/ide/dto/BranchDTO.java
+A	src/main/java/net/coding/ide/dto/DiffDTO.java
+A	src/main/java/net/coding/ide/dto/DirDTO.java
+A	src/main/java/net/coding/ide/dto/FileDTO.java
+A	src/main/java/net/coding/ide/dto/FileSearchResultEntryDTO.java
+A	src/main/java/net/coding/ide/dto/KeyDTO.java
+A	src/main/java/net/coding/ide/dto/ProjectDTO.java
+A	src/main/java/net/coding/ide/dto/UserDTO.java
+A	src/main/java/net/coding/ide/dto/WorkspaceDTO.java
+A	src/main/java/net/coding/ide/entity/BaseEntity.java
+A	src/main/java/net/coding/ide/entity/ConfigEntity.java
+A	src/main/java/net/coding/ide/entity/ProjectEntity.java
+A	src/main/java/net/coding/ide/entity/WorkspaceEntity.java
+A	src/main/java/net/coding/ide/event/FileChangeEvent.java
+A	src/main/java/net/coding/ide/event/FileCreateEvent.java
+A	src/main/java/net/coding/ide/event/FileDeleteEvent.java
+A	src/main/java/net/coding/ide/event/FileModifyEvent.java
+A	src/main/java/net/coding/ide/event/GitCheckoutEvent.java
+A	src/main/java/net/coding/ide/event/WorkspaceDeleteEvent.java
+A	src/main/java/net/coding/ide/event/WorkspaceOfflineEvent.java
+A	src/main/java/net/coding/ide/event/WorkspaceOnlineEvent.java
+A	src/main/java/net/coding/ide/event/WorkspaceStatusEvent.java
+A	src/main/java/net/coding/ide/git/Identity.java
+A	src/main/java/net/coding/ide/git/KnownHosts.java
+A	src/main/java/net/coding/ide/git/MultiUserSshSessionFactory.java
+A	src/main/java/net/coding/ide/git/PrivateKeyCredentialsProvider.java
+A	src/main/java/net/coding/ide/model/Branches.java
+A	src/main/java/net/coding/ide/model/CheckoutResponse.java
+A	src/main/java/net/coding/ide/model/CommitStatus.java
+A	src/main/java/net/coding/ide/model/ConflictFile.java
+A	src/main/java/net/coding/ide/model/DiffEntry.java
+A	src/main/java/net/coding/ide/model/FileInfo.java
+A	src/main/java/net/coding/ide/model/FileSearchResultEntry.java
+A	src/main/java/net/coding/ide/model/GitStatus.java
+A	src/main/java/net/coding/ide/model/HttpSessions.java
+A	src/main/java/net/coding/ide/model/Key.java
+A	src/main/java/net/coding/ide/model/ListStashResponse.java
+A	src/main/java/net/coding/ide/model/MergeResponse.java
+A	src/main/java/net/coding/ide/model/Message.java
+A	src/main/java/net/coding/ide/model/PushCommits.java
+A	src/main/java/net/coding/ide/model/PushResponse.java
+A	src/main/java/net/coding/ide/model/RebaseOperation.java
+A	src/main/java/net/coding/ide/model/RebaseResponse.java
+A	src/main/java/net/coding/ide/model/RepositoryState.java
+A	src/main/java/net/coding/ide/model/ResetType.java
+A	src/main/java/net/coding/ide/model/User.java
+A	src/main/java/net/coding/ide/model/Workspace.java
+A	src/main/java/net/coding/ide/model/exception/GitCloneAuthFailException.java
+A	src/main/java/net/coding/ide/model/exception/GitInvalidDiffException.java
+A	src/main/java/net/coding/ide/model/exception/GitInvalidPathException.java
+A	src/main/java/net/coding/ide/model/exception/GitInvalidRefException.java
+A	src/main/java/net/coding/ide/model/exception/GitOperationException.java
+A	src/main/java/net/coding/ide/model/exception/NotFoundException.java
+A	src/main/java/net/coding/ide/model/exception/ProjectTypeConstraintException.java
+A	src/main/java/net/coding/ide/model/exception/TransportProtocolUnsupportedException.java
+A	src/main/java/net/coding/ide/model/exception/WorkspaceCreationException.java
+A	src/main/java/net/coding/ide/model/exception/WorkspaceDeletedException.java
+A	src/main/java/net/coding/ide/model/exception/WorkspaceDeletingException.java
+A	src/main/java/net/coding/ide/model/exception/WorkspaceException.java
+A	src/main/java/net/coding/ide/model/exception/WorkspaceIOException.java
+A	src/main/java/net/coding/ide/model/exception/WorkspaceMaintainingException.java
+A	src/main/java/net/coding/ide/model/exception/WorkspaceMissingException.java
+A	src/main/java/net/coding/ide/repository/ConfigRepository.java
+A	src/main/java/net/coding/ide/repository/ProjectRepository.java
+A	src/main/java/net/coding/ide/repository/WorkspaceRepository.java
+A	src/main/java/net/coding/ide/service/BaseService.java
+A	src/main/java/net/coding/ide/service/ConfigService.java
+A	src/main/java/net/coding/ide/service/ConfigServiceImpl.java
+A	src/main/java/net/coding/ide/service/GitManager.java
+A	src/main/java/net/coding/ide/service/GitManagerImpl.java
+A	src/main/java/net/coding/ide/service/KeyManager.java
+A	src/main/java/net/coding/ide/service/KeyManagerImpl.java
+A	src/main/java/net/coding/ide/service/ProjectService.java
+A	src/main/java/net/coding/ide/service/ProjectServiceImpl.java
+A	src/main/java/net/coding/ide/service/WorkspaceManager.java
+A	src/main/java/net/coding/ide/service/WorkspaceManagerImpl.java
+A	src/main/java/net/coding/ide/service/WorkspaceWatcher.java
+A	src/main/java/net/coding/ide/tty/ProcessTtyConnector.java
+A	src/main/java/net/coding/ide/tty/SocketIOHandler.java
+A	src/main/java/net/coding/ide/tty/TerminalEmulator.java
+A	src/main/java/net/coding/ide/tty/TtyConnector.java
+A	src/main/java/net/coding/ide/utils/AsyncResult.java
+A	src/main/java/net/coding/ide/utils/Callback.java
+A	src/main/java/net/coding/ide/utils/CookieStoreHolder.java
+A	src/main/java/net/coding/ide/utils/Debouncer.java
+A	src/main/java/net/coding/ide/utils/EnvUtils.java
+A	src/main/java/net/coding/ide/utils/FileUtil.java
+A	src/main/java/net/coding/ide/utils/HostMatcher.java
+A	src/main/java/net/coding/ide/utils/KeyUtils.java
+A	src/main/java/net/coding/ide/utils/ProjectUtil.java
+A	src/main/java/net/coding/ide/utils/RandomGenerator.java
+A	src/main/java/net/coding/ide/utils/RebaseTodoUtils.java
+A	src/main/java/net/coding/ide/utils/ShortKeyGenerator.java
+A	src/main/java/net/coding/ide/utils/TemporaryFileFilter.java
+A	src/main/java/net/coding/ide/utils/WildcardMatcher.java
+A	src/main/java/net/coding/ide/web/controller/ExceptionAdvice.java
+A	src/main/java/net/coding/ide/web/controller/GitController.java
+A	src/main/java/net/coding/ide/web/controller/ProjectController.java
+A	src/main/java/net/coding/ide/web/controller/UserController.java
+A	src/main/java/net/coding/ide/web/controller/WorkspaceAdvice.java
+A	src/main/java/net/coding/ide/web/controller/WorkspaceController.java
+A	src/main/java/net/coding/ide/web/message/EventExchange.java
+A	src/main/java/net/coding/ide/web/message/GsonMessageConverter.java
+A	src/main/java/net/coding/ide/web/message/OnlineWorkspaceStore.java
+A	src/main/java/net/coding/ide/web/message/SessionCacheWebSocketHandler.java
+A	src/main/java/net/coding/ide/web/message/SpaceKeyHandshakeInterceptor.java
+A	src/main/java/net/coding/ide/web/message/SpringfoxJsonToGsonAdapter.java
+A	src/main/java/net/coding/ide/web/message/WebSocketSessionStore.java
+A	src/main/resources/META-INF/mime.types
+A	src/main/resources/application.properties
+A	src/main/resources/banner.txt
+A	src/main/resources/lib/linux/x86/libpty.so
+A	src/main/resources/lib/linux/x86_64/libpty.so
+A	src/main/resources/lib/macosx/x86/libpty.dylib
+A	src/main/resources/lib/macosx/x86_64/libpty.dylib
+A	src/main/resources/lib/win/x86/libwinpty.dll
+A	src/main/resources/lib/win/x86/winpty-agent.exe
+A	src/main/resources/logback-spring.xml
+A	src/main/resources/logback.xml
+A	src/test/java/net/coding/ide/TestProperty.java
+A	src/test/java/net/coding/ide/annotation/RepositoryTest.java
+A	src/test/java/net/coding/ide/config/TestPropConfig.java
+A	src/test/java/net/coding/ide/model/WorkspaceTest.java
+A	src/test/java/net/coding/ide/repository/ProjectRepositoryTest.java
+A	src/test/java/net/coding/ide/repository/WorkspaceRepositoryTest.java
+A	src/test/java/net/coding/ide/service/BaseServiceTest.java
+A	src/test/java/net/coding/ide/service/GitManagerTest.java
+A	src/test/java/net/coding/ide/service/WorkspaceManagerTest.java
+A	src/test/java/net/coding/ide/utils/DataPopulator.java
+A	src/test/java/net/coding/ide/utils/FilesUtils.java
+A	src/test/java/net/coding/ide/utils/RepositoryHelper.java
+A	src/test/resources/application-test.properties
+A	src/test/resources/db/workspace.xml
+A	src/test/resources/workspace/upload.txt

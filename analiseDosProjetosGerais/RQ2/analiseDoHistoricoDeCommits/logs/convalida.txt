@@ -1,0 +1,1710 @@
+81bf3d9;Update README.md
+M	README.md
+
+711950a;Merge pull request #49 from WellingtonCosta/development
+092c4c5;Updating docs.
+M	docs/index.html
+M	docs/styles.css
+
+70cb7d6;Merge branch 'development' of github.com:WellingtonCosta/convalida into development
+e143b71;Preparing release 3.1.0.
+M	gradle.properties
+
+3b1762c;Merge pull request #48 from WellingtonCosta/master
+5b49be5;Implementing CNPJ and ISBN validation.
+A	convalida-annotations/src/main/java/convalida/annotations/Cnpj.java
+A	convalida-annotations/src/main/java/convalida/annotations/Isbn.java
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+A	convalida-compiler/src/main/resources/META-INF/services/javax.annotation.processing.Processor
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	convalida-ktx/src/main/java/convalida/ktx/ConvalidaKotlinDsl.kt
+M	convalida-validators/build.gradle
+M	convalida-validators/src/main/java/convalida/validators/AbstractValidator.java
+M	convalida-validators/src/main/java/convalida/validators/BetweenValidator.java
+A	convalida-validators/src/main/java/convalida/validators/CnpjValidator.java
+M	convalida-validators/src/main/java/convalida/validators/CpfValidator.java
+M	convalida-validators/src/main/java/convalida/validators/IsbnValidator.java
+R098	convalida-validators/src/main/java/convalida/validators/util/EditTextUtils.java	convalida-validators/src/main/java/convalida/validators/util/EditTexts.java
+A	convalida-validators/src/main/java/convalida/validators/util/Strings.java
+A	convalida-validators/src/test/java/convalida/validators/CnpjValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/CpfValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/IsbnValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/StringsTest.java
+M	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+R094	convalida-validators/src/test/java/convalida/validators/error/ValidationErrorTest.java	convalida-validators/src/test/java/convalida/validators/ValidationErrorTest.java
+M	sample/src/main/java/convalida/sample/AnnotataionSampleActivity.java
+M	sample/src/main/java/convalida/sample/KotlinDslSampleActivity.kt
+M	sample/src/main/res/layout/activity_annotation_sample.xml
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+M	sample/src/main/res/layout/activity_kotlin_dsl_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+76be8e3;Updating dependencies.
+M	build.gradle
+M	convalida-validators/build.gradle
+A	convalida-validators/src/main/java/convalida/validators/IsbnValidator.java
+D	convalida-validators/src/main/java/org/apache/commons/validator/routines/CodeValidator.java
+D	convalida-validators/src/main/java/org/apache/commons/validator/routines/CreditCardValidator.java
+D	convalida-validators/src/main/java/org/apache/commons/validator/routines/RegexValidator.java
+D	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/CheckDigit.java
+D	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/CheckDigitException.java
+D	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/EAN13CheckDigit.java
+D	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/ISBN10CheckDigit.java
+D	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/LuhnCheckDigit.java
+D	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/ModulusCheckDigit.java
+
+d69e305;Preparing next development.
+M	gradle.properties
+
+7b3debe;Fixing Circle CI  build.
+M	.circleci/config.yml
+
+85eb657;Fixing Circle CI  build.
+M	.circleci/config.yml
+
+4c250ec;Updating docs.
+M	docs/index.html
+M	docs/styles.css
+
+fc6281b;Updating docs.
+M	docs/index.html
+M	docs/styles.css
+
+2bb63fe;Updating docs.
+M	docs/index.html
+M	docs/styles.css
+
+0f37a8b;Update README.md
+M	README.md
+
+1e66675;Update README.md
+M	README.md
+
+3645b72;Merge pull request #46 from WellingtonCosta/development
+03c1ef0;Releasing version 3.0.0.
+M	build.gradle
+M	convalida-annotations/build.gradle
+M	convalida-compiler/build.gradle
+M	convalida-databinding/build.gradle
+M	convalida-ktx/build.gradle
+M	convalida-runtime/build.gradle
+M	convalida-validators/build.gradle
+M	gradle.properties
+D	gradle/gradle-mvn-push.gradle
+M	sample/build.gradle
+
+54d4471;Creating the new documentation site.
+A	docs/images/convalida-logo.png
+A	docs/images/favicon.ico
+A	docs/index.html
+A	docs/styles.css
+
+213a0eb;Merge pull request #44 from WellingtonCosta/feat/ktx
+b8986e4;Improving DSL sintax.
+M	convalida-ktx/src/main/java/convalida/ktx/ConvalidaKotlinDsl.kt
+M	sample/src/main/java/convalida/sample/KotlinDslSampleActivity.kt
+
+3a20cf0;Updating README.md.
+M	README.md
+
+74550bd;#38 - Implementing the feature that enable Convalida to apply validations using a Kotlin DSL.
+M	build.gradle
+A	convalida-ktx/.gitignore
+A	convalida-ktx/build.gradle
+A	convalida-ktx/gradle.properties
+A	convalida-ktx/src/main/AndroidManifest.xml
+A	convalida-ktx/src/main/java/convalida/ktx/ConvalidaKotlinDsl.kt
+M	convalida-validators/build.gradle
+M	sample/build.gradle
+M	sample/src/androidTest/java/convalida/sample/AnnotataionSampleActivityTest.java
+M	sample/src/androidTest/java/convalida/sample/DatabindingSampleActivityTest.java
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/convalida/sample/AnnotataionSampleActivity.java
+M	sample/src/main/java/convalida/sample/DatabindingSampleActivity.java
+A	sample/src/main/java/convalida/sample/KotlinDslSampleActivity.kt
+M	sample/src/main/java/convalida/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_annotation_sample.xml
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+A	sample/src/main/res/layout/activity_kotlin_dsl_sample.xml
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/values/colors.xml
+M	sample/src/main/res/values/strings.xml
+M	settings.gradle
+
+6f8f01a;Releasing version 3.0.0-beta01.
+M	README.md
+M	build.gradle
+M	gradle.properties
+M	gradle/gradle-mvn-push.gradle
+
+f550ff3;Update config.yml
+M	.circleci/config.yml
+
+58eed4d;Getting invalid fields in OnValidationError method.
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-compiler/src/main/java/convalida/compiler/Preconditions.java
+M	convalida-validators/src/main/java/convalida/validators/ValidatorSet.java
+A	convalida-validators/src/main/java/convalida/validators/error/ValidationError.java
+A	convalida-validators/src/main/java/convalida/validators/error/ValidationErrorSet.java
+M	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+M	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.java
+A	convalida-validators/src/test/java/convalida/validators/error/ValidationErrorTest.java
+
+df67288;Updating README.md.
+M	README.md
+
+40c5eb2;Adding parameter to receive error message as pure string value in all validations.
+M	convalida-annotations/src/main/java/convalida/annotations/Between.java
+M	convalida-annotations/src/main/java/convalida/annotations/ConfirmEmail.java
+M	convalida-annotations/src/main/java/convalida/annotations/ConfirmPassword.java
+M	convalida-annotations/src/main/java/convalida/annotations/Cpf.java
+M	convalida-annotations/src/main/java/convalida/annotations/CreditCard.java
+M	convalida-annotations/src/main/java/convalida/annotations/Email.java
+M	convalida-annotations/src/main/java/convalida/annotations/Length.java
+M	convalida-annotations/src/main/java/convalida/annotations/NumberLimit.java
+M	convalida-annotations/src/main/java/convalida/annotations/OnlyNumber.java
+M	convalida-annotations/src/main/java/convalida/annotations/Password.java
+M	convalida-annotations/src/main/java/convalida/annotations/Pattern.java
+M	convalida-annotations/src/main/java/convalida/annotations/Required.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	convalida-validators/src/main/java/convalida/validators/LengthValidator.java
+M	convalida-validators/src/main/java/convalida/validators/PasswordValidator.java
+M	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/PasswordValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.java
+M	sample/src/main/java/convalida/sample/AnnotataionSampleActivity.java
+
+d86c060;Adjusting POM_DESCRIPTION property.
+M	gradle.properties
+
+b09e564;Uploading artifacts to Maven Central.
+M	build.gradle
+M	convalida-annotations/build.gradle
+A	convalida-annotations/gradle.properties
+M	convalida-compiler/build.gradle
+A	convalida-compiler/gradle.properties
+M	convalida-databinding/build.gradle
+A	convalida-databinding/gradle.properties
+M	convalida-runtime/build.gradle
+A	convalida-runtime/gradle.properties
+M	convalida-validators/build.gradle
+A	convalida-validators/gradle.properties
+M	gradle.properties
+A	gradle/gradle-mvn-push.gradle
+
+122cd77;Removing 'Validation' suffix from all annotations and bindings.
+M	build.gradle
+R094	convalida-annotations/src/main/java/convalida/annotations/BetweenValidation.java	convalida-annotations/src/main/java/convalida/annotations/Between.java
+R090	convalida-annotations/src/main/java/convalida/annotations/ConfirmEmailValidation.java	convalida-annotations/src/main/java/convalida/annotations/ConfirmEmail.java
+R090	convalida-annotations/src/main/java/convalida/annotations/ConfirmPasswordValidation.java	convalida-annotations/src/main/java/convalida/annotations/ConfirmPassword.java
+R092	convalida-annotations/src/main/java/convalida/annotations/CpfValidation.java	convalida-annotations/src/main/java/convalida/annotations/Cpf.java
+R091	convalida-annotations/src/main/java/convalida/annotations/CreditCardValidation.java	convalida-annotations/src/main/java/convalida/annotations/CreditCard.java
+R092	convalida-annotations/src/main/java/convalida/annotations/EmailValidation.java	convalida-annotations/src/main/java/convalida/annotations/Email.java
+R093	convalida-annotations/src/main/java/convalida/annotations/LengthValidation.java	convalida-annotations/src/main/java/convalida/annotations/Length.java
+R092	convalida-annotations/src/main/java/convalida/annotations/NumberLimitValidation.java	convalida-annotations/src/main/java/convalida/annotations/NumberLimit.java
+R091	convalida-annotations/src/main/java/convalida/annotations/OnlyNumberValidation.java	convalida-annotations/src/main/java/convalida/annotations/OnlyNumber.java
+R092	convalida-annotations/src/main/java/convalida/annotations/PasswordValidation.java	convalida-annotations/src/main/java/convalida/annotations/Password.java
+R092	convalida-annotations/src/main/java/convalida/annotations/PatternValidation.java	convalida-annotations/src/main/java/convalida/annotations/Pattern.java
+R091	convalida-annotations/src/main/java/convalida/annotations/RequiredValidation.java	convalida-annotations/src/main/java/convalida/annotations/Required.java
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	sample/build.gradle
+M	sample/src/main/java/convalida/sample/AnnotataionSampleActivity.java
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+D	sample/src/main/res/values-w820dp/dimens.xml
+
+07c0d43;Updating a lot of things.
+M	build.gradle
+M	convalida-annotations/build.gradle
+M	convalida-annotations/src/main/java/convalida/annotations/BetweenValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/ClearValidationsOnClick.java
+M	convalida-annotations/src/main/java/convalida/annotations/ConfirmEmailValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/ConfirmPasswordValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/CpfValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/CreditCardValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/EmailValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/LengthValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/NumberLimitValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/OnValidationError.java
+M	convalida-annotations/src/main/java/convalida/annotations/OnValidationSuccess.java
+M	convalida-annotations/src/main/java/convalida/annotations/OnlyNumberValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/PasswordValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/PatternValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/RequiredValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/ValidateOnClick.java
+M	convalida-compiler/build.gradle
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/Messager.java
+M	convalida-databinding/build.gradle
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+R100	convalida/.gitignore	convalida-runtime/.gitignore
+R063	convalida/build.gradle	convalida-runtime/build.gradle
+R100	convalida/src/main/AndroidManifest.xml	convalida-runtime/src/main/AndroidManifest.xml
+R100	convalida/src/main/java/convalida/library/util/Patterns.java	convalida-runtime/src/main/java/convalida/library/util/Patterns.java
+M	convalida-validators/build.gradle
+M	convalida-validators/src/main/java/convalida/validators/util/EditTextUtils.java
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/build.gradle
+M	sample/src/androidTest/java/convalida/sample/AnnotataionSampleActivityTest.java
+M	sample/src/androidTest/java/convalida/sample/DatabindingSampleActivityTest.java
+M	sample/src/androidTest/java/convalida/sample/TestUtils.java
+M	sample/src/main/java/convalida/sample/AnnotataionSampleActivity.java
+M	sample/src/main/java/convalida/sample/DatabindingSampleActivity.java
+M	sample/src/main/java/convalida/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_annotation_sample.xml
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+M	sample/src/main/res/layout/activity_main.xml
+M	settings.gradle
+
+35efab1;Update README.md
+M	README.md
+
+0531f3d;Update config.yml
+M	.circleci/config.yml
+
+797941d;Merge pull request #34 from WellingtonCosta/v2.2.0
+0431a4d;Giving up trying to run instrumented tests on Circle CI.
+M	.circleci/config.yml
+
+c93725c;Trying to run unit tests and instrumented tests on Circle CI.
+M	.circleci/config.yml
+
+f86a5db;Trying to run unit tests and instrumented tests on Circle CI.
+M	.circleci/config.yml
+
+0dbf750;Trying to run unit tests and instrumented tests on Circle CI.
+M	.circleci/config.yml
+
+80719dd;Trying to run unit tests and instrumented tests on Circle CI.
+M	.circleci/config.yml
+
+2b270b7;Trying to run unit tests and instrumented tests on Circle CI.
+M	.circleci/config.yml
+
+c8a8549;Trying to run unit tests and instrumented tests on Circle CI.
+M	.circleci/config.yml
+
+2694cb9;Trying to run unit tests and instrumented tests on Circle CI.
+M	.circleci/config.yml
+
+003fc48;Trying to run unit tests and instrumented tests on Circle CI.
+M	.circleci/config.yml
+
+cbcaf28;Trying to run unit tests and instrumented tests on Circle CI.
+M	.circleci/config.yml
+
+ca67c04;Rollback Circle CI config.
+M	.circleci/config.yml
+
+422cec9;Adjusting CircleCI config.
+M	.circleci/config.yml
+
+65e5145;Trying to run unit tests and instrumented tests on Circle CI.
+M	.circleci/config.yml
+M	sample/build.gradle
+M	sample/src/androidTest/java/convalida/sample/AnnotataionSampleActivityTest.java
+M	sample/src/androidTest/java/convalida/sample/DatabindingSampleActivityTest.java
+
+4097413;Updating sample.
+M	sample/src/main/java/convalida/sample/AnnotataionSampleActivity.java
+M	sample/src/main/res/layout/activity_annotation_sample.xml
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+f243e5d;Validation for numeric limit (min / max).
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-compiler/src/main/java/convalida/compiler/Messager.java
+M	convalida-compiler/src/main/java/convalida/compiler/Preconditions.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+A	convalida-validators/src/main/java/convalida/validators/NumberLimitValidator.java
+A	convalida-validators/src/test/java/convalida/validators/NumberLimitValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+
+e6446ac;Update README.md
+M	README.md
+
+6b10051;Update README.md
+M	README.md
+
+e41932a;Defining annotation for numeric limit validation.
+A	convalida-annotations/src/main/java/convalida/annotations/NumberLimitValidation.java
+
+642c56f;Improving unit tests.
+M	.circleci/config.yml
+M	convalida-validators/build.gradle
+M	convalida-validators/src/main/java/convalida/validators/CpfValidator.java
+M	convalida-validators/src/test/java/convalida/validators/CpfValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/OnlyNumberValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/PatternValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.java
+
+f578b73;Trying to integrate CircleCI with Codecov.
+M	.circleci/config.yml
+
+be75d22;Updating build badge.
+M	README.md
+
+8a092d8;Removing Apache Commons Validator due to lint check errors.
+M	build.gradle
+M	convalida-validators/build.gradle
+A	convalida-validators/src/main/java/org/apache/commons/validator/routines/CodeValidator.java
+A	convalida-validators/src/main/java/org/apache/commons/validator/routines/CreditCardValidator.java
+A	convalida-validators/src/main/java/org/apache/commons/validator/routines/RegexValidator.java
+A	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/CheckDigit.java
+A	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/CheckDigitException.java
+A	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/EAN13CheckDigit.java
+A	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/ISBN10CheckDigit.java
+A	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/LuhnCheckDigit.java
+A	convalida-validators/src/main/java/org/apache/commons/validator/routines/checkdigit/ModulusCheckDigit.java
+
+eb17bf9;Resolving lint error.
+M	convalida-validators/build.gradle
+
+b977128;Adding validation for credit card fields.
+A	convalida-annotations/src/main/java/convalida/annotations/CreditCardValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+A	convalida-validators/src/main/java/convalida/validators/CreditCardValidator.java
+A	convalida-validators/src/test/java/convalida/validators/CreditCardValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+M	sample/src/main/java/convalida/sample/AnnotataionSampleActivity.java
+M	sample/src/main/res/layout/activity_annotation_sample.xml
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+aa0c423;Changing compile to implementation.
+M	convalida-annotations/build.gradle
+
+c208012;Updating deps.
+M	sample/build.gradle
+
+0f9f36d;Prevent blank values.
+M	convalida-validators/src/main/java/convalida/validators/CpfValidator.java
+M	convalida-validators/src/main/java/convalida/validators/EmailValidator.java
+M	convalida-validators/src/main/java/convalida/validators/LengthValidator.java
+M	convalida-validators/src/main/java/convalida/validators/OnlyNumberValidator.java
+M	convalida-validators/src/main/java/convalida/validators/PatternValidator.java
+
+981e028;Updating dependencies and adding Apache Commons Validator.
+M	build.gradle
+M	convalida-validators/build.gradle
+
+42fcbd9;Adjusting validators if required property is false.
+M	convalida-validators/src/main/java/convalida/validators/LengthValidator.java
+M	convalida-validators/src/main/java/convalida/validators/OnlyNumberValidator.java
+M	convalida-validators/src/main/java/convalida/validators/PatternValidator.java
+
+176c311;Adding required property in PatterValidation.
+M	convalida-annotations/src/main/java/convalida/annotations/PatternValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	convalida-validators/src/main/java/convalida/validators/PatternValidator.java
+M	convalida-validators/src/test/java/convalida/validators/PatternValidatorTest.java
+
+7c07d4b;Adding required property in OnlyNumberValidation.
+M	convalida-annotations/src/main/java/convalida/annotations/OnlyNumberValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	convalida-validators/src/main/java/convalida/validators/OnlyNumberValidator.java
+M	convalida-validators/src/test/java/convalida/validators/OnlyNumberValidatorTest.java
+
+55bc17a;Adding required property in LengthValidation.
+M	convalida-annotations/src/main/java/convalida/annotations/LengthValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	convalida-validators/src/main/java/convalida/validators/LengthValidator.java
+M	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.java
+
+ed0b9a1;Adding required property in EmailValidation.
+M	convalida-annotations/src/main/java/convalida/annotations/EmailValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	convalida-validators/src/main/java/convalida/validators/EmailValidator.java
+M	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.java
+
+3a10aeb;Adding required property in CpfValidation.
+M	convalida-annotations/src/main/java/convalida/annotations/CpfValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	convalida-validators/src/test/java/convalida/validators/CpfValidatorTest.java
+
+35b2377;Changing method isNotValid to isValid in AbstractValidator and subclasses.
+M	convalida-validators/src/main/java/convalida/validators/AbstractValidator.java
+M	convalida-validators/src/main/java/convalida/validators/BetweenValidator.java
+M	convalida-validators/src/main/java/convalida/validators/ConfirmEmailValidator.java
+M	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.java
+M	convalida-validators/src/main/java/convalida/validators/CpfValidator.java
+M	convalida-validators/src/main/java/convalida/validators/EmailValidator.java
+M	convalida-validators/src/main/java/convalida/validators/LengthValidator.java
+M	convalida-validators/src/main/java/convalida/validators/OnlyNumberValidator.java
+M	convalida-validators/src/main/java/convalida/validators/PasswordValidator.java
+M	convalida-validators/src/main/java/convalida/validators/PatternValidator.java
+M	convalida-validators/src/main/java/convalida/validators/RequiredValidator.java
+
+d232fc5;Using Circle CI.
+A	.circleci/config.yml
+D	.travis.yml
+
+9991781;Merge pull request #30 from WellingtonCosta/feat/new_validations
+23e9833;Improvement in the tests
+M	convalida-validators/src/main/java/convalida/validators/ConfirmEmailValidator.java
+M	convalida-validators/src/main/java/convalida/validators/ValidatorSet.java
+M	convalida-validators/src/test/java/convalida/validators/BetweenValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/ConfirmEmailValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/ConfirmPasswordValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/CpfValidatorTest.java
+
+4985a78;Improvement in the between fields validation
+M	convalida-validators/src/main/java/convalida/validators/AbstractValidator.java
+M	convalida-validators/src/main/java/convalida/validators/BetweenValidator.java
+M	convalida-validators/src/test/java/convalida/validators/BetweenValidatorTest.java
+
+0c53135;Prepare version 2.1.0
+M	README.md
+M	build.gradle
+
+8b93a60;Adjusted between validator
+M	convalida-validators/src/main/java/convalida/validators/BetweenValidator.java
+M	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+
+116359e;Support for validations between fields value.
+A	convalida-annotations/src/main/java/convalida/annotations/BetweenValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	convalida-validators/src/main/java/convalida/validators/AbstractValidator.java
+A	convalida-validators/src/main/java/convalida/validators/BetweenValidator.java
+M	convalida-validators/src/main/java/convalida/validators/util/EditTextUtils.java
+A	convalida-validators/src/test/java/convalida/validators/BetweenValidatorTest.java
+M	sample/src/main/java/convalida/sample/AnnotataionSampleActivity.java
+M	sample/src/main/res/layout/activity_annotation_sample.xml
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+c5f6ae7;Merge pull request #29 from WellingtonCosta/feat/new_validations
+ec3f59c;Ignored special characters in cpf validation.
+M	README.md
+M	build.gradle
+M	convalida-validators/src/main/java/convalida/validators/CpfValidator.java
+M	convalida-validators/src/test/java/convalida/validators/CpfValidatorTest.java
+M	sample/src/main/res/layout/activity_annotation_sample.xml
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+
+ab4a17d;Merge pull request #28 from WellingtonCosta/master
+a2bc9c7;Merge pull request #27 from WellingtonCosta/feat/new_validations
+c13dc1c;Prepare version 2.0.2
+M	README.md
+M	build.gradle
+
+33727e2;CpfValidator tests
+M	convalida-validators/src/test/java/convalida/validators/CpfValidatorTest.java
+
+e94ca6d;Improved CpfValidator tests
+M	convalida-validators/src/test/java/convalida/validators/CpfValidatorTest.java
+
+b489c2f;Updated android-maven-gradle-plugin
+M	build.gradle
+
+1f1cf86;Support cpf validations
+M	build.gradle
+A	convalida-annotations/src/main/java/convalida/annotations/CpfValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-databinding/build.gradle
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+A	convalida-validators/src/main/java/convalida/validators/CpfValidator.java
+A	convalida-validators/src/test/java/convalida/validators/CpfValidatorTest.java
+M	convalida/build.gradle
+M	sample/build.gradle
+M	sample/src/main/java/convalida/sample/AnnotataionSampleActivity.java
+M	sample/src/main/java/convalida/sample/DatabindingSampleActivity.java
+M	sample/src/main/res/layout/activity_annotation_sample.xml
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+3a95796;Merge pull request #22 from WellingtonCosta/fix/compiler
+c766186;Prepare release 2.0.1
+M	README.md
+
+20c5900;Fix JaCoCo build error
+M	build.gradle
+
+94735b1;Travis CI
+M	.travis.yml
+
+88a2770;Adjusted some constants.
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+
+4f48744;Updated deps
+M	build.gradle
+
+6e73d0d;Merge pull request #21 from WellingtonCosta/development
+56d6c51;Merge pull request #20 from WellingtonCosta/feat/databinding
+94b3050;Update README
+M	README.md
+
+d4da134;Ui tests.
+M	convalida-compiler/src/main/java/convalida/compiler/Preconditions.java
+M	sample/src/androidTest/java/convalida/sample/AnnotataionSampleActivityTest.java
+M	sample/src/androidTest/java/convalida/sample/DatabindingSampleActivityTest.java
+D	sample/src/androidTest/java/convalida/sample/MainActivityTest.java
+A	sample/src/androidTest/java/convalida/sample/TestSuite.java
+M	sample/src/androidTest/java/convalida/sample/TestUtils.java
+
+4e23ebc;Cleanup
+D	convalida-databinding/src/main/java/convalida/databinding/ValidationUtils.java
+
+913df25;Generate field validation code to use with databinding
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-compiler/src/main/java/convalida/compiler/Preconditions.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	convalida-databinding/src/main/java/convalida/databinding/ViewTagUtils.java
+M	convalida-databinding/src/main/res/values/ids.xml
+M	sample/src/main/java/convalida/sample/DatabindingSampleActivity.java
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+
+753afb7;Improving the generated code and refactoring in annotation processor.
+M	README.md
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+A	convalida-compiler/src/main/java/convalida/compiler/Messager.java
+A	convalida-compiler/src/main/java/convalida/compiler/Preconditions.java
+M	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+M	sample/src/main/java/convalida/sample/DatabindingSampleActivity.java
+M	sample/src/main/res/layout/activity_databinding_sample.xml
+
+6ffdcab;Initial support to validate fields via databinding
+M	README.md
+A	convalida-databinding/.gitignore
+A	convalida-databinding/build.gradle
+A	convalida-databinding/src/main/AndroidManifest.xml
+A	convalida-databinding/src/main/java/convalida/databinding/ValidationBindings.java
+A	convalida-databinding/src/main/java/convalida/databinding/ValidationUtils.java
+A	convalida-databinding/src/main/java/convalida/databinding/ViewTagUtils.java
+A	convalida-databinding/src/main/res/values/ids.xml
+M	convalida-validators/src/main/java/convalida/validators/AbstractValidator.java
+M	convalida-validators/src/main/java/convalida/validators/ValidatorSet.java
+M	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.java
+M	convalida/build.gradle
+M	sample/build.gradle
+A	sample/src/androidTest/java/convalida/sample/AnnotataionSampleActivityTest.java
+D	sample/src/androidTest/java/convalida/sample/AnotherSampleActivityTest.java
+A	sample/src/androidTest/java/convalida/sample/DatabindingSampleActivityTest.java
+D	sample/src/androidTest/java/convalida/sample/SampleActivityTest.java
+M	sample/src/main/AndroidManifest.xml
+R061	sample/src/main/java/convalida/sample/SampleActivity.java	sample/src/main/java/convalida/sample/AnnotataionSampleActivity.java
+D	sample/src/main/java/convalida/sample/AnotherSampleActivity.java
+A	sample/src/main/java/convalida/sample/Constants.java
+A	sample/src/main/java/convalida/sample/DatabindingSampleActivity.java
+M	sample/src/main/java/convalida/sample/MainActivity.java
+A	sample/src/main/res/layout/activity_annotation_sample.xml
+D	sample/src/main/res/layout/activity_another_sample.xml
+A	sample/src/main/res/layout/activity_databinding_sample.xml
+D	sample/src/main/res/layout/activity_sample.xml
+M	sample/src/main/res/values/dimens.xml
+M	settings.gradle
+
+896af28;Removed Validator interface
+D	convalida-validators/src/main/java/convalida/validators/Validator.java
+M	convalida-validators/src/main/java/convalida/validators/ValidatorSet.java
+M	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.java
+
+2d47d7c;NotEmpty files renamed to Required
+R092	convalida-annotations/src/main/java/convalida/annotations/NotEmptyValidation.java	convalida-annotations/src/main/java/convalida/annotations/RequiredValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+R080	convalida-validators/src/main/java/convalida/validators/NotEmptyValidator.java	convalida-validators/src/main/java/convalida/validators/RequiredValidator.java
+R075	convalida-validators/src/test/java/convalida/validators/NotEmptyValidatorTest.java	convalida-validators/src/test/java/convalida/validators/RequiredValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+
+a557681;Merge pull request #19 from emanuelet/master
+f6312e7;Merge branch 'development' into master
+51abaaa;added password pattern to readme. formatted markdown
+M	README.md
+
+6aaf2bd;added some additional patterns for password validation
+M	convalida/src/main/java/convalida/library/util/Patterns.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+675ee6e;Merge pull request #2 from WellingtonCosta/master
+847b7f6;Merge pull request #18 from WellingtonCosta/master
+5540e6d;Added compile options
+M	convalida/build.gradle
+
+33d3cfe;Merge pull request #17 from WellingtonCosta/development
+9801c4f;Release 1.3.7
+M	README.md
+M	build.gradle
+M	sample/build.gradle
+
+e1cab0a;Java 8 code rewritten to Java 7 code
+M	convalida-annotations/build.gradle
+M	convalida-compiler/build.gradle
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-validators/build.gradle
+M	convalida/build.gradle
+M	sample/build.gradle
+
+0c9d7dd;added compile options
+M	convalida/build.gradle
+
+67b5c3b;Merge pull request #1 from WellingtonCosta/master
+6267fe5;Merge pull request #16 from WellingtonCosta/release
+2b5f325;Changed convalida sample deps
+M	sample/build.gradle
+
+4088d31;Release 1.3.6
+M	README.md
+M	sample/build.gradle
+
+6d3b22c;Fix null pointer exception when OnValidationError annotation is not present.
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	sample/build.gradle
+
+0d4cc67;Adjust some gradle files
+M	build.gradle
+M	sample/build.gradle
+
+6109be3;Changed api to compile
+M	build.gradle
+M	convalida/build.gradle
+
+0d3fb5e;Changed group name
+M	convalida-annotations/build.gradle
+M	convalida-compiler/build.gradle
+M	convalida-validators/build.gradle
+M	convalida/build.gradle
+
+f39e82d;Try to release a new version...
+M	build.gradle
+M	convalida-annotations/build.gradle
+M	convalida-compiler/build.gradle
+M	convalida-validators/build.gradle
+M	convalida/build.gradle
+M	sample/build.gradle
+M	sample/src/main/java/convalida/sample/AnotherSampleActivity.java
+
+c659e6b;Release 1.3.5.
+M	README.md
+
+24e7fa0;Try to fix the fucking issue with Travis CI and Android 27.
+M	.travis.yml
+
+8d8975d;Rewritten Kotlin code to Java code and removed Kotlin deps.
+M	build.gradle
+M	convalida-annotations/build.gradle
+M	convalida-compiler/build.gradle
+M	convalida-validators/build.gradle
+A	convalida-validators/src/main/java/convalida/validators/AbstractValidator.java
+D	convalida-validators/src/main/java/convalida/validators/AbstractValidator.kt
+A	convalida-validators/src/main/java/convalida/validators/ConfirmEmailValidator.java
+D	convalida-validators/src/main/java/convalida/validators/ConfirmEmailValidator.kt
+A	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.java
+D	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.kt
+A	convalida-validators/src/main/java/convalida/validators/EmailValidator.java
+D	convalida-validators/src/main/java/convalida/validators/EmailValidator.kt
+A	convalida-validators/src/main/java/convalida/validators/LengthValidator.java
+D	convalida-validators/src/main/java/convalida/validators/LengthValidator.kt
+A	convalida-validators/src/main/java/convalida/validators/NotEmptyValidator.java
+D	convalida-validators/src/main/java/convalida/validators/NotEmptyValidator.kt
+A	convalida-validators/src/main/java/convalida/validators/OnlyNumberValidator.java
+D	convalida-validators/src/main/java/convalida/validators/OnlyNumberValidator.kt
+A	convalida-validators/src/main/java/convalida/validators/PasswordValidator.java
+D	convalida-validators/src/main/java/convalida/validators/PasswordValidator.kt
+A	convalida-validators/src/main/java/convalida/validators/PatternValidator.java
+D	convalida-validators/src/main/java/convalida/validators/PatternValidator.kt
+R051	convalida-validators/src/main/java/convalida/validators/Validator.kt	convalida-validators/src/main/java/convalida/validators/Validator.java
+A	convalida-validators/src/main/java/convalida/validators/ValidatorSet.java
+D	convalida-validators/src/main/java/convalida/validators/ValidatorSet.kt
+A	convalida-validators/src/main/java/convalida/validators/util/EditTextUtils.java
+D	convalida-validators/src/main/java/convalida/validators/util/EditTextUtils.kt
+A	convalida-validators/src/main/java/convalida/validators/util/ExecuteValidationListener.java
+A	convalida-validators/src/test/java/convalida/validators/BaseTest.java
+D	convalida-validators/src/test/java/convalida/validators/BaseTest.kt
+A	convalida-validators/src/test/java/convalida/validators/ConfirmEmailValidatorTest.java
+D	convalida-validators/src/test/java/convalida/validators/ConfirmEmailValidatorTest.kt
+A	convalida-validators/src/test/java/convalida/validators/ConfirmPasswordValidatorTest.java
+D	convalida-validators/src/test/java/convalida/validators/ConfirmPasswordValidatorTest.kt
+A	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.java
+D	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.kt
+A	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.java
+D	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.kt
+A	convalida-validators/src/test/java/convalida/validators/NotEmptyValidatorTest.java
+D	convalida-validators/src/test/java/convalida/validators/NotEmptyValidatorTest.kt
+A	convalida-validators/src/test/java/convalida/validators/OnlyNumberValidatorTest.java
+D	convalida-validators/src/test/java/convalida/validators/OnlyNumberValidatorTest.kt
+A	convalida-validators/src/test/java/convalida/validators/PasswordValidatorTest.java
+D	convalida-validators/src/test/java/convalida/validators/PasswordValidatorTest.kt
+A	convalida-validators/src/test/java/convalida/validators/PatternValidatorTest.java
+D	convalida-validators/src/test/java/convalida/validators/PatternValidatorTest.kt
+A	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+D	convalida-validators/src/test/java/convalida/validators/TestSuite.kt
+A	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.java
+D	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.kt
+M	convalida/build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/build.gradle
+
+e6cf667;Update README.md
+M	README.md
+
+70dded2;Merge pull request #14 from emanuelet/master
+63a61de;1.3.4
+M	build.gradle
+
+c120ade;updated javapoet, autoservice and gradle versions plugins
+M	build.gradle
+M	sample/build.gradle
+
+a593663;bumped target sdk to 27, support libs and build tools
+M	build.gradle
+
+566cb83;use gradle 4.4
+M	gradle/wrapper/gradle-wrapper.properties
+
+7f5ff67;Prepare version 1.3.3
+M	README.md
+M	build.gradle
+
+88cdf6b;Ignore validation on view if is not visible
+M	convalida-validators/src/main/java/convalida/validators/AbstractValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/ValidatorSet.kt
+
+b80b4c9;Build error fix
+M	README.md
+M	build.gradle
+M	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.kt
+
+ccca762;Prepare version 1.3.1
+M	README.md
+M	build.gradle
+
+4c006d1;Add auto dismiss parameter in annotations
+M	convalida-annotations/src/main/java/convalida/annotations/ClearValidationsOnClick.java
+M	convalida-annotations/src/main/java/convalida/annotations/ConfirmEmailValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/ConfirmPasswordValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/EmailValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/LengthValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/NotEmptyValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/OnValidationError.java
+M	convalida-annotations/src/main/java/convalida/annotations/OnValidationSuccess.java
+M	convalida-annotations/src/main/java/convalida/annotations/OnlyNumberValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/PasswordValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/PatternValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/ValidateOnClick.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-compiler/src/main/java/convalida/compiler/internal/ValidationField.java
+M	convalida-validators/src/main/java/convalida/validators/AbstractValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/ConfirmEmailValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/EmailValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/LengthValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/NotEmptyValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/OnlyNumberValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/PasswordValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/PatternValidator.kt
+M	convalida-validators/src/test/java/convalida/validators/ConfirmEmailValidatorTest.kt
+M	convalida-validators/src/test/java/convalida/validators/ConfirmPasswordValidatorTest.kt
+M	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.kt
+M	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.kt
+M	convalida-validators/src/test/java/convalida/validators/NotEmptyValidatorTest.kt
+M	convalida-validators/src/test/java/convalida/validators/OnlyNumberValidatorTest.kt
+M	convalida-validators/src/test/java/convalida/validators/PasswordValidatorTest.kt
+M	convalida-validators/src/test/java/convalida/validators/PatternValidatorTest.kt
+M	sample/src/main/java/convalida/sample/AnotherSampleActivity.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+154648b;Cleanup
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+
+144035a;Prepare version 1.3.0
+M	README.md
+M	build.gradle
+
+3859ba6;Update samples
+M	sample/src/main/java/convalida/sample/AnotherSampleActivity.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+f4457ae;Add Kotlin support
+M	build.gradle
+
+2b20a35;Refactoring
+A	convalida-validators/src/main/java/convalida/validators/util/EditTextUtils.kt
+
+ba88a39;Tests adjusts
+M	convalida-validators/build.gradle
+D	convalida-validators/src/main/java/convalida/validators/AbstractValidator.java
+A	convalida-validators/src/main/java/convalida/validators/AbstractValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/ConfirmEmailValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/PasswordValidator.kt
+M	convalida-validators/src/main/java/convalida/validators/PatternValidator.kt
+
+8e9b783;Code rewritten in Kotlin
+M	convalida-validators/build.gradle
+D	convalida-validators/src/main/java/convalida/validators/ConfirmEmailValidator.java
+A	convalida-validators/src/main/java/convalida/validators/ConfirmEmailValidator.kt
+D	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.java
+A	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.kt
+D	convalida-validators/src/main/java/convalida/validators/EmailValidator.java
+A	convalida-validators/src/main/java/convalida/validators/EmailValidator.kt
+D	convalida-validators/src/main/java/convalida/validators/LengthValidator.java
+A	convalida-validators/src/main/java/convalida/validators/LengthValidator.kt
+D	convalida-validators/src/main/java/convalida/validators/NotEmptyValidator.java
+A	convalida-validators/src/main/java/convalida/validators/NotEmptyValidator.kt
+D	convalida-validators/src/main/java/convalida/validators/OnlyNumberValidator.java
+A	convalida-validators/src/main/java/convalida/validators/OnlyNumberValidator.kt
+D	convalida-validators/src/main/java/convalida/validators/PasswordValidator.java
+A	convalida-validators/src/main/java/convalida/validators/PasswordValidator.kt
+D	convalida-validators/src/main/java/convalida/validators/PatternValidator.java
+A	convalida-validators/src/main/java/convalida/validators/PatternValidator.kt
+D	convalida-validators/src/main/java/convalida/validators/Validator.java
+A	convalida-validators/src/main/java/convalida/validators/Validator.kt
+D	convalida-validators/src/main/java/convalida/validators/ValidatorSet.java
+A	convalida-validators/src/main/java/convalida/validators/ValidatorSet.kt
+D	convalida-validators/src/test/java/convalida/validators/BaseTest.java
+A	convalida-validators/src/test/java/convalida/validators/BaseTest.kt
+D	convalida-validators/src/test/java/convalida/validators/ConfirmEmailValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/ConfirmEmailValidatorTest.kt
+D	convalida-validators/src/test/java/convalida/validators/ConfirmPasswordValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/ConfirmPasswordValidatorTest.kt
+D	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.kt
+D	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.kt
+D	convalida-validators/src/test/java/convalida/validators/NotEmptyValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/NotEmptyValidatorTest.kt
+D	convalida-validators/src/test/java/convalida/validators/OnlyNumberValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/OnlyNumberValidatorTest.kt
+D	convalida-validators/src/test/java/convalida/validators/PasswordValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/PasswordValidatorTest.kt
+D	convalida-validators/src/test/java/convalida/validators/PatternValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/PatternValidatorTest.kt
+D	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+A	convalida-validators/src/test/java/convalida/validators/TestSuite.kt
+D	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.java
+A	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.kt
+
+cf039ca;Update README
+M	README.md
+
+6ba7486;Build error fix
+M	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+
+094df7f;Update README
+M	README.md
+
+82d135a;Prepare version 1.2.1
+M	README.md
+M	build.gradle
+
+622c3b6;Confirm email validation.
+A	convalida-annotations/src/main/java/convalida/annotations/ConfirmEmailValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+A	convalida-validators/src/main/java/convalida/validators/ConfirmEmailValidator.java
+D	convalida-validators/src/main/java/convalida/validators/ConvalidaValidator.java
+A	convalida-validators/src/test/java/convalida/validators/ConfirmEmailValidatorTest.java
+D	convalida-validators/src/test/java/convalida/validators/ConvalidaValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+M	sample/src/androidTest/java/convalida/sample/SampleActivityTest.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/layout/activity_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+fbea5e6;Prepare version 1.2.0
+M	README.md
+M	build.gradle
+
+ec4d0cf;Optmize the generated code
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-compiler/src/main/java/convalida/compiler/internal/Id.java
+M	convalida-compiler/src/main/java/convalida/compiler/internal/ValidationClass.java
+M	convalida-compiler/src/main/java/convalida/compiler/internal/ValidationField.java
+M	convalida-validators/src/main/java/convalida/validators/ValidatorSet.java
+D	convalida/src/main/java/convalida/library/Convalida.java
+M	sample/src/main/java/convalida/sample/AnotherSampleActivity.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+c635450;Tests
+M	convalida-validators/src/main/java/convalida/validators/ValidatorSet.java
+A	convalida-validators/src/test/java/convalida/validators/ConvalidaValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+A	convalida-validators/src/test/java/convalida/validators/ValidatorSetTest.java
+
+c460031;Update README and prepare version 1.1.0
+M	README.md
+M	build.gradle
+M	sample/src/main/java/convalida/sample/AnotherSampleActivity.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+fdab217;Execute and clear the validations by annotations.
+M	convalida-annotations/build.gradle
+A	convalida-annotations/src/main/java/convalida/annotations/ClearValidationsOnClick.java
+A	convalida-annotations/src/main/java/convalida/annotations/OnValidationError.java
+A	convalida-annotations/src/main/java/convalida/annotations/OnValidationSuccess.java
+A	convalida-annotations/src/main/java/convalida/annotations/ValidateOnClick.java
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-compiler/src/main/java/convalida/compiler/internal/ValidationClass.java
+M	convalida-validators/src/main/java/convalida/validators/ValidatorSet.java
+M	sample/src/main/java/convalida/sample/AnotherSampleActivity.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+e643fe3;Update deps and classes refactoring.
+M	build.gradle
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-validators/build.gradle
+R093	convalida/src/main/java/convalida/library/ConvalidaValidator.java	convalida-validators/src/main/java/convalida/validators/ConvalidaValidator.java
+R053	convalida/src/main/java/convalida/library/ValidationSet.java	convalida-validators/src/main/java/convalida/validators/ValidatorSet.java
+M	convalida/build.gradle
+M	convalida/src/main/java/convalida/library/Convalida.java
+R094	convalida/src/main/java/convalida/library/Patterns.java	convalida/src/main/java/convalida/library/util/Patterns.java
+M	sample/src/main/java/convalida/sample/AnotherSampleActivity.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+5a2e2da;Update README.md
+M	README.md
+
+f53a710;Release 1.0.7
+M	README.md
+M	build.gradle
+
+a340ddd;Add sources.jar
+M	convalida-annotations/build.gradle
+M	convalida-compiler/build.gradle
+M	convalida-validators/build.gradle
+M	convalida/build.gradle
+
+65ae3b8;More tests...
+M	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.java
+
+ed944a2;Update EmailValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.java
+
+53556a1;Unit tests
+M	.travis.yml
+M	convalida-validators/build.gradle
+M	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.java
+A	convalida-validators/src/test/java/convalida/validators/BaseTest.java
+M	convalida-validators/src/test/java/convalida/validators/ConfirmPasswordValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/NotEmptyValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/OnlyNumberValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/PasswordValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/PatternValidatorTest.java
+
+a478c34;Code coverage with UI tests
+M	.travis.yml
+
+933a80f;Update README.md
+M	README.md
+
+529cee3;Update README.md
+M	README.md
+
+8146b19;Coverage badge
+M	README.md
+
+33fceaf;Code coverage
+M	.travis.yml
+M	build.gradle
+M	convalida-validators/build.gradle
+M	sample/build.gradle
+
+4bbc5e1;UI tests
+M	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.java
+M	sample/build.gradle
+A	sample/src/androidTest/java/convalida/sample/AnotherSampleActivityTest.java
+A	sample/src/androidTest/java/convalida/sample/MainActivityTest.java
+A	sample/src/androidTest/java/convalida/sample/SampleActivityTest.java
+A	sample/src/androidTest/java/convalida/sample/TestUtils.java
+M	sample/src/main/java/convalida/sample/AnotherSampleActivity.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/layout/activity_another_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+0b329ae;Update README.md
+M	README.md
+
+9f13f7d;Update README.md
+M	README.md
+
+369eeb9;Update .travis.yml
+M	.travis.yml
+
+230d23d;Removed dependencies
+M	convalida-compiler/build.gradle
+D	convalida-compiler/src/test/java/convalida/compiler/ConvalidaProcessorTest.java
+
+b8adcde;Validators unit tests
+M	convalida-validators/src/test/java/convalida/validators/ConfirmPasswordValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/NotEmptyValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/OnlyNumberValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/PasswordValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/PatternValidatorTest.java
+M	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+
+b2cd662;Moved the validators to a new module
+M	convalida-compiler/build.gradle
+M	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+A	convalida-compiler/src/test/java/convalida/compiler/ConvalidaProcessorTest.java
+A	convalida-validators/.gitignore
+A	convalida-validators/build.gradle
+A	convalida-validators/src/main/AndroidManifest.xml
+R095	convalida/src/main/java/convalida/library/validation/validator/AbstractValidator.java	convalida-validators/src/main/java/convalida/validators/AbstractValidator.java
+R057	convalida/src/main/java/convalida/library/validation/validator/ConfirmPasswordValidator.java	convalida-validators/src/main/java/convalida/validators/ConfirmPasswordValidator.java
+R057	convalida/src/main/java/convalida/library/validation/validator/EmailValidator.java	convalida-validators/src/main/java/convalida/validators/EmailValidator.java
+R081	convalida/src/main/java/convalida/library/validation/validator/LengthValidator.java	convalida-validators/src/main/java/convalida/validators/LengthValidator.java
+R079	convalida/src/main/java/convalida/library/validation/validator/NotEmptyValidator.java	convalida-validators/src/main/java/convalida/validators/NotEmptyValidator.java
+R078	convalida/src/main/java/convalida/library/validation/validator/OnlyNumberValidator.java	convalida-validators/src/main/java/convalida/validators/OnlyNumberValidator.java
+R069	convalida/src/main/java/convalida/library/validation/validator/PasswordValidator.java	convalida-validators/src/main/java/convalida/validators/PasswordValidator.java
+R078	convalida/src/main/java/convalida/library/validation/validator/PatternValidator.java	convalida-validators/src/main/java/convalida/validators/PatternValidator.java
+R077	convalida/src/main/java/convalida/library/validation/Validator.java	convalida-validators/src/main/java/convalida/validators/Validator.java
+A	convalida-validators/src/test/java/convalida/validators/ConfirmPasswordValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/EmailValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/LengthValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/NotEmptyValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/OnlyNumberValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/PasswordValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/PatternValidatorTest.java
+A	convalida-validators/src/test/java/convalida/validators/TestSuite.java
+M	convalida/build.gradle
+M	convalida/src/main/AndroidManifest.xml
+R093	convalida/src/main/java/convalida/library/validation/Patterns.java	convalida/src/main/java/convalida/library/Patterns.java
+R094	convalida/src/main/java/convalida/library/validation/ValidationSet.java	convalida/src/main/java/convalida/library/ValidationSet.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	settings.gradle
+
+6a5c609;Update dependencies
+M	build.gradle
+M	sample/build.gradle
+
+df9e56d;Refactoring
+M	build.gradle
+D	convalida-annotations/proguard-rules.pro
+M	convalida-compiler/build.gradle
+D	convalida-compiler/proguard-rules.pro
+A	convalida-compiler/src/main/java/convalida/compiler/Constants.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+D	convalida/proguard-rules.pro
+M	convalida/src/main/java/convalida/library/validation/Patterns.java
+M	sample/build.gradle
+D	sample/proguard-rules.pro
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/values/strings.xml
+
+27c6776;Update README.md
+M	README.md
+
+e413571;Update README.md
+M	README.md
+
+1793cb1;Update README.md
+M	README.md
+
+0ae04ef;@PasswordValidation bug fix
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+
+a7dcd39;Update README.md
+M	README.md
+
+81be229;Update README.md
+M	README.md
+
+2ca4929;Refactoring and bug fixes
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+R067	convalida-compiler/src/main/java/convalida/compiler/internal/TargetClassInfo.java	convalida-compiler/src/main/java/convalida/compiler/internal/ValidationClass.java
+R080	convalida-compiler/src/main/java/convalida/compiler/internal/FieldValidationInfo.java	convalida-compiler/src/main/java/convalida/compiler/internal/ValidationField.java
+M	convalida/src/main/java/convalida/library/validation/validator/AbstractValidator.java
+
+93d94e3;Updated sample and dependencies
+M	sample/build.gradle
+M	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/convalida/sample/AnotherSampleActivity.java
+A	sample/src/main/java/convalida/sample/MainActivity.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+A	sample/src/main/res/layout/activity_another_sample.xml
+A	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/layout/activity_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+fca31c4;Update README.md
+M	README.md
+
+a9258cc;Update README.md
+M	README.md
+
+ac612fb;Create LICENSE.txt
+A	LICENSE.txt
+
+64420e6;Update README.md
+M	README.md
+
+f59c8e0;Refactoring
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+
+d1374f4;Update dependencies
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+848d01f;Update README.md
+M	README.md
+
+3cfb525;Travis CI
+M	.travis.yml
+
+645b83f;Travis CI
+M	.travis.yml
+
+b0e11d5;Update README.md
+M	README.md
+
+e25ee01;Travis CI cache
+M	.travis.yml
+
+3e71178;Changed way to get Android string resources
+M	convalida-compiler/build.gradle
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+R061	convalida-compiler/src/main/java/convalida/compiler/FieldInfo.java	convalida-compiler/src/main/java/convalida/compiler/internal/FieldValidationInfo.java
+A	convalida-compiler/src/main/java/convalida/compiler/internal/Id.java
+A	convalida-compiler/src/main/java/convalida/compiler/internal/QualifiedId.java
+R072	convalida-compiler/src/main/java/convalida/compiler/TargetInfo.java	convalida-compiler/src/main/java/convalida/compiler/internal/TargetClassInfo.java
+A	convalida-compiler/src/main/java/convalida/compiler/internal/scanners/IdScanner.java
+A	convalida-compiler/src/main/java/convalida/compiler/internal/scanners/RClassScanner.java
+A	convalida-compiler/src/main/java/convalida/compiler/internal/scanners/VarScanner.java
+M	convalida/build.gradle
+M	sample/build.gradle
+
+8f54f65;Update README.md
+M	README.md
+
+f366405;Update README.md
+M	README.md
+
+1e5c050;Try to disable lint errors
+M	convalida/build.gradle
+M	sample/build.gradle
+
+6ad7756;Travis CI config (8)
+M	.travis.yml
+
+1b16659;Travis CI config (7)
+M	.travis.yml
+
+357dae3;Travis CI config (6)
+M	.travis.yml
+
+085508f;Travis CI config (5)
+M	.travis.yml
+
+b02314f;Travis CI config (4)
+M	.travis.yml
+
+cbdd083;Travis CI config (3)
+M	.travis.yml
+
+aeeba9c;Travis CI config (2)
+M	.travis.yml
+
+a6456d1;Travis CI config
+A	.travis.yml
+
+d84e865;Patterns constants
+M	convalida/src/main/java/convalida/library/validation/Patterns.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+6ebe16e;Update README.md
+M	README.md
+
+925ecf6;Updated Patterns constants to String
+M	convalida/src/main/java/convalida/library/validation/Patterns.java
+
+e6cc0ec;Try Jitpack (2)
+M	build.gradle
+M	convalida-annotations/build.gradle
+M	convalida-compiler/build.gradle
+D	gradle/gradle-mvn-push.gradle
+
+41c443f;Try Jitpack
+M	build.gradle
+D	convalida-annotations/gradle.properties
+D	convalida-compiler/gradle.properties
+D	convalida/gradle.properties
+M	gradle.properties
+
+a3a4016;Jitpack
+M	build.gradle
+M	convalida/build.gradle
+
+1808cc9;README
+M	README.md
+
+1e55930;Library module renamed
+R100	convalida-library/.gitignore	convalida/.gitignore
+R100	convalida-library/build.gradle	convalida/build.gradle
+R100	convalida-library/gradle.properties	convalida/gradle.properties
+R100	convalida-library/proguard-rules.pro	convalida/proguard-rules.pro
+R100	convalida-library/src/main/AndroidManifest.xml	convalida/src/main/AndroidManifest.xml
+R100	convalida-library/src/main/java/convalida/library/Convalida.java	convalida/src/main/java/convalida/library/Convalida.java
+R100	convalida-library/src/main/java/convalida/library/ConvalidaValidator.java	convalida/src/main/java/convalida/library/ConvalidaValidator.java
+R100	convalida-library/src/main/java/convalida/library/validation/Patterns.java	convalida/src/main/java/convalida/library/validation/Patterns.java
+R100	convalida-library/src/main/java/convalida/library/validation/ValidationSet.java	convalida/src/main/java/convalida/library/validation/ValidationSet.java
+R100	convalida-library/src/main/java/convalida/library/validation/Validator.java	convalida/src/main/java/convalida/library/validation/Validator.java
+R100	convalida-library/src/main/java/convalida/library/validation/validator/AbstractValidator.java	convalida/src/main/java/convalida/library/validation/validator/AbstractValidator.java
+R100	convalida-library/src/main/java/convalida/library/validation/validator/ConfirmPasswordValidator.java	convalida/src/main/java/convalida/library/validation/validator/ConfirmPasswordValidator.java
+R100	convalida-library/src/main/java/convalida/library/validation/validator/EmailValidator.java	convalida/src/main/java/convalida/library/validation/validator/EmailValidator.java
+R100	convalida-library/src/main/java/convalida/library/validation/validator/LengthValidator.java	convalida/src/main/java/convalida/library/validation/validator/LengthValidator.java
+R100	convalida-library/src/main/java/convalida/library/validation/validator/NotEmptyValidator.java	convalida/src/main/java/convalida/library/validation/validator/NotEmptyValidator.java
+R100	convalida-library/src/main/java/convalida/library/validation/validator/OnlyNumberValidator.java	convalida/src/main/java/convalida/library/validation/validator/OnlyNumberValidator.java
+R100	convalida-library/src/main/java/convalida/library/validation/validator/PasswordValidator.java	convalida/src/main/java/convalida/library/validation/validator/PasswordValidator.java
+R100	convalida-library/src/main/java/convalida/library/validation/validator/PatternValidator.java	convalida/src/main/java/convalida/library/validation/validator/PatternValidator.java
+M	sample/build.gradle
+M	settings.gradle
+
+b1ceb2b;Update README.md
+M	README.md
+
+6aaf111;Update README.md
+M	README.md
+
+cb19ae2;NumericOnly renamed to OnlyNumber
+M	README.md
+R090	convalida-annotations/src/main/java/convalida/annotations/NumericOnlyValidation.java	convalida-annotations/src/main/java/convalida/annotations/OnlyNumberValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+R067	convalida-library/src/main/java/convalida/library/validation/validator/NumericOnlyValidator.java	convalida-library/src/main/java/convalida/library/validation/validator/OnlyNumberValidator.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+3e0f8aa;README
+M	README.md
+
+c3878e1;README
+M	README.md
+
+db80529;Example
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/layout/activity_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+07683fb;Numeric only validation
+A	convalida-annotations/src/main/java/convalida/annotations/NumericOnlyValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+A	convalida-library/src/main/java/convalida/library/validation/validator/NumericOnlyValidator.java
+
+142513f;README
+M	README.md
+
+744e8fe;README
+M	README.md
+
+cbf5026;Change method "initialize()" to "init()"
+M	convalida-library/src/main/java/convalida/library/Convalida.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+f662b10;Default patterns
+A	convalida-library/src/main/java/convalida/library/validation/Patterns.java
+
+4588780;Refactoring
+M	convalida-annotations/src/main/java/convalida/annotations/PasswordValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/PatternValidation.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/ConfirmPasswordValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/NotEmptyValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/PasswordValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/PatternValidator.java
+
+328e87d;Length validation
+A	convalida-annotations/src/main/java/convalida/annotations/LengthValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+A	convalida-library/src/main/java/convalida/library/validation/validator/LengthValidator.java
+
+66b4d4b;Example
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/values/strings.xml
+
+87058c5;README
+M	README.md
+
+b879c90;String resource rename
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/values/strings.xml
+
+f8e351f;Confirm password validation
+A	convalida-annotations/src/main/java/convalida/annotations/ConfirmPasswordValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+A	convalida-library/src/main/java/convalida/library/validation/validator/ConfirmPasswordValidator.java
+
+96ba325;Example
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/layout/activity_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+c52ce18;Refactoring
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+92c33cc;Refactoring
+M	convalida-library/src/main/java/convalida/library/validation/validator/AbstractValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/EmailValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/NotEmptyValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/PasswordValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/PatternValidator.java
+
+35bb1a7;Removed blank spaces
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-library/src/main/java/convalida/library/validation/ValidationSet.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+c52d719;Refactoring
+M	convalida-library/src/main/java/convalida/library/validation/validator/AbstractValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/EmailValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/NotEmptyValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/PasswordValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/PatternValidator.java
+
+1294a96;Refactoring of validators
+M	convalida-library/src/main/java/convalida/library/validation/validator/AbstractValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/EmailValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/NotEmptyValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/PasswordValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/PatternValidator.java
+
+60456e0;README
+M	README.md
+
+2b0f948;Generated code improved
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+
+2951c40;Example improved
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/values/strings.xml
+
+9a9c23b;Replace string literal to string resource
+M	convalida-annotations/src/main/java/convalida/annotations/EmailValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/NotEmptyValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/PasswordValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/PatternValidation.java
+
+b93aaf5;Validation code improved
+M	convalida-library/src/main/java/convalida/library/validation/ValidationSet.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/AbstractValidator.java
+
+84d3700;Gradle
+M	build.gradle
+M	convalida-annotations/build.gradle
+M	convalida-compiler/build.gradle
+M	convalida-library/build.gradle
+M	sample/build.gradle
+
+03857ee;Removed "this.target"
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+
+18286ea;Gradle modifications
+M	sample/build.gradle
+
+34d9fcd;Change "init()" to "initialize()"
+M	README.md
+M	convalida-library/src/main/java/convalida/library/Convalida.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+0bd500b;Adjustment in validations
+M	convalida-library/src/main/java/convalida/library/validation/validator/AbstractValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/EmailValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/NotEmptyValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/PasswordValidator.java
+M	convalida-library/src/main/java/convalida/library/validation/validator/PatternValidator.java
+
+ff7b2a1;Update README.md
+M	README.md
+
+8e6c611;README
+M	README.md
+
+9b15437;README
+M	README.md
+
+4c15cd6;README
+M	README.md
+
+dc0cbb8;Gradle refactoring
+M	build.gradle
+M	convalida-compiler/build.gradle
+M	convalida-library/build.gradle
+D	convalida-library/src/androidTest/java/convalida/library/ExampleInstrumentedTest.java
+D	convalida-library/src/test/java/convalida/library/ExampleUnitTest.java
+M	sample/build.gradle
+D	sample/src/androidTest/java/convalida/sample/ExampleInstrumentedTest.java
+D	sample/src/test/java/convalida/sample/ExampleUnitTest.java
+
+0b89282;Refactoring
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-compiler/src/main/java/convalida/compiler/FieldInfo.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-compiler/src/main/java/convalida/compiler/TargetInfo.java
+
+7af8026;Gradle dependencies
+M	convalida-library/build.gradle
+M	sample/build.gradle
+
+2d0ba41;Refactoring
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+
+b854119;Gradle
+M	build.gradle
+A	convalida-annotations/gradle.properties
+A	convalida-compiler/gradle.properties
+M	convalida-library/build.gradle
+A	convalida-library/gradle.properties
+M	gradle.properties
+A	gradle/gradle-mvn-push.gradle
+M	settings.gradle
+
+d1fe7f8;Jitpack
+M	build.gradle
+M	convalida-library/build.gradle
+
+f647c13;README
+M	README.md
+
+8cc8c60;Validation strategies implementation
+M	convalida-annotations/src/main/java/convalida/annotations/PasswordValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+R051	convalida-compiler/src/main/java/convalida/compiler/FieldValidation.java	convalida-compiler/src/main/java/convalida/compiler/FieldInfo.java
+M	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+M	convalida-library/src/main/java/convalida/library/Convalida.java
+A	convalida-library/src/main/java/convalida/library/ConvalidaValidator.java
+D	convalida-library/src/main/java/convalida/library/Validator.java
+A	convalida-library/src/main/java/convalida/library/validation/ValidationSet.java
+A	convalida-library/src/main/java/convalida/library/validation/Validator.java
+A	convalida-library/src/main/java/convalida/library/validation/validator/AbstractValidator.java
+A	convalida-library/src/main/java/convalida/library/validation/validator/EmailValidator.java
+A	convalida-library/src/main/java/convalida/library/validation/validator/NotEmptyValidator.java
+A	convalida-library/src/main/java/convalida/library/validation/validator/PasswordValidator.java
+A	convalida-library/src/main/java/convalida/library/validation/validator/PatternValidator.java
+
+17b7c1d;Example
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/layout/activity_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+e3af416;Validation classes instantiation
+M	convalida-annotations/src/main/java/convalida/annotations/PasswordValidation.java
+M	convalida-annotations/src/main/java/convalida/annotations/PatternValidation.java
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	convalida-library/build.gradle
+M	convalida-library/src/main/java/convalida/library/Convalida.java
+M	convalida-library/src/main/java/convalida/library/Validator.java
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+
+0ea0bb1;Code generation rules
+M	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+A	convalida-compiler/src/main/java/convalida/compiler/FieldValidation.java
+A	convalida-compiler/src/main/java/convalida/compiler/JavaFiler.java
+A	convalida-compiler/src/main/java/convalida/compiler/TargetInfo.java
+M	convalida-library/build.gradle
+M	convalida-library/src/main/java/convalida/library/Convalida.java
+A	convalida-library/src/main/java/convalida/library/Validator.java
+
+e867ea8;Example
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/layout/activity_sample.xml
+M	sample/src/main/res/values/strings.xml
+
+42eafbf;Library module
+R100	annotations/.gitignore	convalida-annotations/.gitignore
+R100	annotations/build.gradle	convalida-annotations/build.gradle
+R064	library/proguard-rules.pro	convalida-annotations/proguard-rules.pro
+R092	annotations/src/main/java/convalida/annotation/EmailValidation.java	convalida-annotations/src/main/java/convalida/annotations/EmailValidation.java
+R092	annotations/src/main/java/convalida/annotation/NotEmptyValidation.java	convalida-annotations/src/main/java/convalida/annotations/NotEmptyValidation.java
+R059	annotations/src/main/java/convalida/annotation/PasswordValidation.java	convalida-annotations/src/main/java/convalida/annotations/PasswordValidation.java
+A	convalida-annotations/src/main/java/convalida/annotations/PatternValidation.java
+R100	library/.gitignore	convalida-compiler/.gitignore
+R081	library/build.gradle	convalida-compiler/build.gradle
+R100	annotations/proguard-rules.pro	convalida-compiler/proguard-rules.pro
+R094	library/src/main/java/convalida/compiler/ConvalidaProcessor.java	convalida-compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+A	convalida-library/.gitignore
+A	convalida-library/build.gradle
+A	convalida-library/proguard-rules.pro
+A	convalida-library/src/androidTest/java/convalida/library/ExampleInstrumentedTest.java
+A	convalida-library/src/main/AndroidManifest.xml
+A	convalida-library/src/main/java/convalida/library/Convalida.java
+A	convalida-library/src/test/java/convalida/library/ExampleUnitTest.java
+D	library/src/main/java/convalida/Convalida.java
+M	sample/build.gradle
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	settings.gradle
+
+61e154b;Modules rename
+R100	annotation/.gitignore	annotations/.gitignore
+R100	annotation/build.gradle	annotations/build.gradle
+R100	annotation/proguard-rules.pro	annotations/proguard-rules.pro
+R100	annotation/src/main/java/convalida/annotation/EmailValidation.java	annotations/src/main/java/convalida/annotation/EmailValidation.java
+R100	annotation/src/main/java/convalida/annotation/NotEmptyValidation.java	annotations/src/main/java/convalida/annotation/NotEmptyValidation.java
+R100	annotation/src/main/java/convalida/annotation/PasswordValidation.java	annotations/src/main/java/convalida/annotation/PasswordValidation.java
+M	build.gradle
+R100	compiler/.gitignore	library/.gitignore
+R086	compiler/build.gradle	library/build.gradle
+R100	compiler/proguard-rules.pro	library/proguard-rules.pro
+A	library/src/main/java/convalida/Convalida.java
+R100	compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java	library/src/main/java/convalida/compiler/ConvalidaProcessor.java
+M	sample/build.gradle
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/convalida/sample/SampleActivity.java
+M	sample/src/main/res/layout/activity_sample.xml
+M	settings.gradle
+
+7cee45e;Module rename and initial processor implementation
+R100	annotations/.gitignore	annotation/.gitignore
+R100	annotations/build.gradle	annotation/build.gradle
+R100	annotations/proguard-rules.pro	annotation/proguard-rules.pro
+R087	annotations/src/main/java/br/com/wellingtoncosta/convalida/annotations/EmailValidation.java	annotation/src/main/java/convalida/annotation/EmailValidation.java
+R087	annotations/src/main/java/br/com/wellingtoncosta/convalida/annotations/NotEmptyValidation.java	annotation/src/main/java/convalida/annotation/NotEmptyValidation.java
+R087	annotations/src/main/java/br/com/wellingtoncosta/convalida/annotations/PasswordValidation.java	annotation/src/main/java/convalida/annotation/PasswordValidation.java
+M	build.gradle
+M	compiler/build.gradle
+D	compiler/src/main/AndroidManifest.xml
+A	compiler/src/main/java/convalida/compiler/ConvalidaProcessor.java
+D	compiler/src/main/res/values/strings.xml
+M	sample/build.gradle
+R093	sample/src/androidTest/java/br/com/wellingtoncosta/convalida/sample/ExampleInstrumentedTest.java	sample/src/androidTest/java/convalida/sample/ExampleInstrumentedTest.java
+R087	sample/src/main/java/br/com/wellingtoncosta/convalida/sample/SampleActivity.java	sample/src/main/java/convalida/sample/SampleActivity.java
+R088	sample/src/test/java/br/com/wellingtoncosta/convalida/sample/ExampleUnitTest.java	sample/src/test/java/convalida/sample/ExampleUnitTest.java
+M	settings.gradle
+
+53bbd68;App icon
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+M	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+M	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	sample/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+23f4097;gitignore
+M	.gitignore
+
+644af86;gitignore
+M	.gitignore
+D	.idea/compiler.xml
+D	.idea/copyright/profiles_settings.xml
+D	.idea/gradle.xml
+D	.idea/misc.xml
+D	.idea/modules.xml
+D	.idea/runConfigurations.xml
+D	.idea/vcs.xml
+D	annotations/src/main/java/br/com/wellingtoncosta/aav/annotations/EmailValidation.java
+D	annotations/src/main/java/br/com/wellingtoncosta/aav/annotations/NotEmptyValidation.java
+D	annotations/src/main/java/br/com/wellingtoncosta/aav/annotations/PasswordValidation.java
+D	sample/src/androidTest/java/br/com/wellingtoncosta/aav/sample/ExampleInstrumentedTest.java
+D	sample/src/main/java/br/com/wellingtoncosta/aav/sample/SampleActivity.java
+D	sample/src/test/java/br/com/wellingtoncosta/aav/sample/ExampleUnitTest.java
+
+c064ec9;Update modules.xml
+M	.idea/modules.xml
+
+2b89e1c;Project rename
+M	.idea/modules.xml
+A	.idea/vcs.xml
+M	README.md
+D	annotations/src/main/AndroidManifest.xml
+A	annotations/src/main/java/br/com/wellingtoncosta/convalida/annotations/EmailValidation.java
+A	annotations/src/main/java/br/com/wellingtoncosta/convalida/annotations/NotEmptyValidation.java
+A	annotations/src/main/java/br/com/wellingtoncosta/convalida/annotations/PasswordValidation.java
+D	annotations/src/main/res/values/strings.xml
+M	sample/build.gradle
+A	sample/src/androidTest/java/br/com/wellingtoncosta/convalida/sample/ExampleInstrumentedTest.java
+M	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/br/com/wellingtoncosta/convalida/sample/SampleActivity.java
+M	sample/src/main/res/layout/activity_sample.xml
+M	sample/src/main/res/values/strings.xml
+A	sample/src/test/java/br/com/wellingtoncosta/convalida/sample/ExampleUnitTest.java
+
+a8689e1;First commit and project modules definition
+A	.gitignore
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/gradle.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/runConfigurations.xml
+A	README.md
+A	annotations/.gitignore
+A	annotations/build.gradle
+A	annotations/proguard-rules.pro
+A	annotations/src/main/AndroidManifest.xml
+A	annotations/src/main/java/br/com/wellingtoncosta/aav/annotations/EmailValidation.java
+A	annotations/src/main/java/br/com/wellingtoncosta/aav/annotations/NotEmptyValidation.java
+A	annotations/src/main/java/br/com/wellingtoncosta/aav/annotations/PasswordValidation.java
+A	annotations/src/main/res/values/strings.xml
+A	build.gradle
+A	compiler/.gitignore
+A	compiler/build.gradle
+A	compiler/proguard-rules.pro
+A	compiler/src/main/AndroidManifest.xml
+A	compiler/src/main/res/values/strings.xml
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	logo.png
+A	sample/.gitignore
+A	sample/build.gradle
+A	sample/proguard-rules.pro
+A	sample/src/androidTest/java/br/com/wellingtoncosta/aav/sample/ExampleInstrumentedTest.java
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/br/com/wellingtoncosta/aav/sample/SampleActivity.java
+A	sample/src/main/res/layout/activity_sample.xml
+A	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	sample/src/main/res/values-w820dp/dimens.xml
+A	sample/src/main/res/values/colors.xml
+A	sample/src/main/res/values/dimens.xml
+A	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/values/styles.xml
+A	sample/src/test/java/br/com/wellingtoncosta/aav/sample/ExampleUnitTest.java
+A	settings.gradle

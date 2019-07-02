@@ -1,0 +1,2704 @@
+1306c79;[NativeHook]fix HVC
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.cpp
+
+7d1b9dd;[NativeHook]add svc in assembler
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.h
+
+11c2913;[AndroidQ]fit for Apex build
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+M	xposedcompat_new/src/main/cpp/art_jni_trampoline.cpp
+
+8fcf4c0;[AndroidQ]fix for latest Q
+M	app/src/main/java/com/swift/sandhook/testHookers/ObjectHooker.java
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+6595df9;[NativeHook]remove test code
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+edcfd3f;[XposedCompat]update native hook lib
+M	xposedcompat_new/src/main/cpp/art_jni_trampoline.cpp
+M	xposedcompat_new/src/main/jniLibs/arm64-v8a/libsandhook-native.so
+M	xposedcompat_new/src/main/jniLibs/armeabi-v7a/libsandhook-native.so
+
+03d6721;[NativeHook]fix ldr align of arm32
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/hook/hook_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/relocate/code_relocate_arm32.cpp
+M	nativehook/src/main/cpp/buffer/code_buffer.cpp
+
+71e2bf7;[NativeHook]tweak code
+M	nativehook/src/main/cpp/archs/arm/arm32/hook/hook_arm32.cpp
+
+c07a012;Merge remote-tracking branch 'origin/master'
+415861d;[NativeHook]try support arm32 replace
+M	nativehook/src/main/cpp/archs/arm/arm32/hook/hook_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/decoder/decoder.cpp
+M	nativehook/src/main/cpp/includes/decoder.h
+
+32f1a9d;Update README.md
+M	README.md
+
+c978ced;Merge pull request #17 from ganyao114/new_xpcompat
+d77a98b;[XposedCompat]complete new implement
+M	README.md
+M	app/build.gradle
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	build.gradle
+M	xposedcompat_new/src/main/AndroidManifest.xml
+M	xposedcompat_new/src/main/cpp/art_jni_trampoline.cpp
+R088	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/HookInfo.java	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat/HookInfo.java
+R090	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/XposedCompat.java	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+R094	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/utils/ApplicationUtils.java	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat/utils/ApplicationUtils.java
+R099	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/utils/ClassUtils.java	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat/utils/ClassUtils.java
+R093	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/utils/ComposeClassLoader.java	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat/utils/ComposeClassLoader.java
+R097	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/utils/ProcessUtils.java	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat/utils/ProcessUtils.java
+M	xposedcompat_new/src/main/java/de/robv/android/xposed/XposedBridge.java
+M	xposedcompat_new/src/main/java/de/robv/android/xposed/callbacks/XC_LoadPackage.java
+
+8cb1f36;[XposedCompat]fix GetOatQuickMethodHeader error
+M	nativehook/src/main/cpp/sandhook_native.h
+M	xposedcompat_new/CMakeLists.txt
+M	xposedcompat_new/src/main/cpp/art_jni_trampoline.cpp
+M	xposedcompat_new/src/main/cpp/art_jni_trampoline.h
+M	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/XposedCompat.java
+A	xposedcompat_new/src/main/jniLibs/arm64-v8a/libsandhook-native.so
+A	xposedcompat_new/src/main/jniLibs/armeabi-v7a/libsandhook-native.so
+
+5818b07;[XposedCompat]add jcenter plugin for xp_new
+M	xposedcompat_new/build.gradle
+
+064560a;[XposedCompat]fix
+M	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/XposedCompat.java
+A	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/utils/ApplicationUtils.java
+R099	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/ClassUtils.java	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/utils/ClassUtils.java
+A	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/utils/ComposeClassLoader.java
+A	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/utils/ProcessUtils.java
+M	xposedcompat_new/src/main/java/de/robv/android/xposed/XposedBridge.java
+
+a9b826e;[XposedCompat]new impl
+A	xposedcompat_new/.gitignore
+A	xposedcompat_new/CMakeLists.txt
+A	xposedcompat_new/build.gradle
+A	xposedcompat_new/proguard-rules.pro
+A	xposedcompat_new/src/main/AndroidManifest.xml
+A	xposedcompat_new/src/main/cpp/art_jni_trampoline.cpp
+A	xposedcompat_new/src/main/cpp/art_jni_trampoline.h
+A	xposedcompat_new/src/main/cpp/libffi/aarch64/ffi_arm64.c
+A	xposedcompat_new/src/main/cpp/libffi/aarch64/internal.h
+A	xposedcompat_new/src/main/cpp/libffi/aarch64/sysv_arm64.S
+A	xposedcompat_new/src/main/cpp/libffi/arm/ffi_armv7.c
+A	xposedcompat_new/src/main/cpp/libffi/arm/internal.h
+A	xposedcompat_new/src/main/cpp/libffi/arm/sysv_armv7.S
+A	xposedcompat_new/src/main/cpp/libffi/closures.c
+A	xposedcompat_new/src/main/cpp/libffi/debug.c
+A	xposedcompat_new/src/main/cpp/libffi/dlmalloc.c
+A	xposedcompat_new/src/main/cpp/libffi/ffi.h
+A	xposedcompat_new/src/main/cpp/libffi/ffi_cfi.h
+A	xposedcompat_new/src/main/cpp/libffi/ffi_common.h
+A	xposedcompat_new/src/main/cpp/libffi/ffi_cxx.cc
+A	xposedcompat_new/src/main/cpp/libffi/ffi_cxx.h
+A	xposedcompat_new/src/main/cpp/libffi/fficonfig.h
+A	xposedcompat_new/src/main/cpp/libffi/ffitarget.h
+A	xposedcompat_new/src/main/cpp/libffi/java_raw_api.c
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/ffi_arm64.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/ffi_armv7.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/ffi_i386.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/ffi_x86_64.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/fficonfig_arm64.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/fficonfig_armv7.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/fficonfig_i386.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/fficonfig_x86_64.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/ffitarget_arm64.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/ffitarget_armv7.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/ffitarget_i386.h
+A	xposedcompat_new/src/main/cpp/libffi/platform_include/ffitarget_x86_64.h
+A	xposedcompat_new/src/main/cpp/libffi/prep_cif.c
+A	xposedcompat_new/src/main/cpp/libffi/raw_api.c
+A	xposedcompat_new/src/main/cpp/libffi/types.c
+A	xposedcompat_new/src/main/java/com/android/internal/util/XmlUtils.java
+A	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/ClassUtils.java
+A	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/HookInfo.java
+A	xposedcompat_new/src/main/java/com/swift/sandhook/xposedcompat_new/XposedCompat.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/IXposedHookCmdInit.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/IXposedHookInitPackageResources.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/IXposedHookLoadPackage.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/IXposedHookZygoteInit.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/IXposedMod.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/SELinuxHelper.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/XC_MethodHook.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/XC_MethodReplacement.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/XSharedPreferences.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/XposedBridge.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/XposedHelpers.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/XposedInit.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/callbacks/IXUnhook.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/callbacks/XC_InitPackageResources.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/callbacks/XC_LayoutInflated.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/callbacks/XC_LoadPackage.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/callbacks/XCallback.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/callbacks/package-info.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/services/BaseService.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/services/DirectAccessService.java
+A	xposedcompat_new/src/main/java/de/robv/android/xposed/services/FileResult.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/ArrayUtils.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/CharSequenceUtils.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/CharUtils.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/ClassUtils.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/JavaVersion.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/ObjectUtils.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/StringUtils.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/SystemUtils.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/Validate.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/builder/Builder.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/builder/CompareToBuilder.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/builder/EqualsBuilder.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/builder/HashCodeBuilder.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/builder/IDKey.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/builder/ToStringBuilder.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/builder/ToStringStyle.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/exception/CloneFailedException.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/mutable/Mutable.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/mutable/MutableInt.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/reflect/MemberUtils.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/reflect/MethodUtils.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/tuple/ImmutablePair.java
+A	xposedcompat_new/src/main/java/external/org/apache/commons/lang3/tuple/Pair.java
+A	xposedcompat_new/src/main/res/values/strings.xml
+
+5021195;[XposedCompat]new impl
+M	app/build.gradle
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+M	hooklib/src/main/cpp/includes/cast_art_method.h
+A	hooklib/src/main/cpp/includes/never_call.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+R091	hooklib/src/main/java/com/swift/sandhook/wrapper/BackupMethodStubs.java	hooklib/src/main/java/com/swift/sandhook/wrapper/StubMethodsFactory.java
+M	nativehook/build.gradle
+D	nativehook/src/androidTest/java/com/swift/sandhook/nativehook/ExampleInstrumentedTest.java
+D	nativehook/src/test/java/com/swift/sandhook/nativehook/ExampleUnitTest.java
+M	settings.gradle
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+
+8f7d1d2;Update README.md
+30bf0ac;Update README.md
+M	README.md
+
+5a5f9c3;[NativeHook]update extern api
+M	nativehook/src/main/cpp/sandhook_native.cpp
+M	nativehook/src/main/cpp/sandhook_native.h
+
+d09bebd;[NativeHook]fix arm32 break point
+M	nativehook/src/main/cpp/archs/arm/arm32/hook/hook_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/arm32_base.h
+
+770e199;[NativeHook]done arm32 break point
+M	nativehook/CMakeLists.txt
+A	nativehook/src/main/cpp/archs/arm/arm32/hook/breakpoint_shellcode.S
+M	nativehook/src/main/cpp/archs/arm/arm32/hook/hook_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/hook/hook_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm_base.h
+A	nativehook/src/main/cpp/archs/arm/shellcode_arm.h
+M	nativehook/src/main/cpp/hook/hook.cpp
+M	nativehook/src/main/cpp/includes/assembler.h
+M	nativehook/src/main/cpp/includes/hook.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+2217a3b;[NativeHook]fix mov for/to SP
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+3b441fc;[NativeHook]fix break point
+M	nativehook/src/main/cpp/archs/arm/arm64/hook/hook_arm64.cpp
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+e8aa714;[NativeHook]fix some inst a64
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/hook/hook_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_struct_aarch64.h
+
+627b057;[NativeHook]almost done break point
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/hook/hook_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/hook/hook_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/includes/hook.h
+
+1ae52e1;[NativeHook]add inst msr mrs
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/hook/hook_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/hook/hook_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/register/register_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/register/register_list_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/register/register_list_arm64.h
+M	nativehook/src/main/cpp/includes/hook.h
+
+eacc71d;[NativeHook]fix build
+M	settings.gradle
+
+ebafba8;[NativeHook]add inst add adds sub subs
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/decoder/decoder_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/archs/arm/arm_base.h
+M	settings.gradle
+
+f1ff562;Merge remote-tracking branch 'origin/master'
+56e5ee2;[NativeHook]add inst stp ldp
+M	hooklib/src/main/cpp/utils/dlfcn_nougat.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/decoder/decoder_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_struct_aarch64.h
+
+1882ea3;Update README.md
+M	README.md
+
+bf11209;Update README.md
+M	README.md
+
+d202ce5;[NativeHook]fix decode of SUB IMM
+M	nativehook/src/main/cpp/archs/arm/arm32/decoder/decoder_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_code_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/relocate/code_relocate_arm32.cpp
+M	nativehook/src/main/cpp/asm/instruction.h
+
+876f3a3;[NativeHook]tweak decoder
+M	nativehook/src/main/cpp/archs/arm/arm32/decoder/decoder_arm32.cpp
+
+c98a07b;[NativeHook]add fix inst add reg rdn
+M	nativehook/src/main/cpp/archs/arm/arm32/decoder/decoder_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_code_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/relocate/code_relocate_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/relocate/code_relocate_arm32.h
+M	nativehook/src/main/cpp/asm/register.h
+
+29adbb4;[NativeHook]add decode filter
+M	nativehook/src/main/cpp/archs/arm/arm32/decoder/decoder_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/decoder/decoder_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/relocate/code_relocate_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/decoder/decoder_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/decoder/decoder_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_arm64.cpp
+M	nativehook/src/main/cpp/includes/decoder.h
+
+1ca0a14;[NativeHook]fix LR store
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/relocate/code_relocate_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_arm64.cpp
+
+7012c12;Merge remote-tracking branch 'origin/master'
+d7ef0bd;[NativeHook]update elf
+M	hooklib/src/main/cpp/includes/elf_util.h
+M	hooklib/src/main/cpp/utils/elf_util.cpp
+M	nativehook/src/main/cpp/elf/elf.cpp
+M	nativehook/src/main/cpp/includes/elf.h
+
+a0d73a5;Update README.md
+M	README.md
+
+0c0d311;Merge remote-tracking branch 'origin/master'
+f6870ae;[NativeHook]update sample
+A	nativehook/src/main/cpp/sandhook_native.cpp
+
+1b81d37;Update README.md
+M	README.md
+
+f99bcb6;Update README.md
+M	README.md
+
+e862404;Merge pull request #15 from ganyao114/native_hook
+e4bab75;[NativeHook]update readme
+M	README.md
+
+5f2a6f2;[NativeHook]almost done native hook
+M	hooklib/src/main/cpp/includes/elf_util.h
+M	hooklib/src/main/cpp/utils/elf_util.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/elf/elf.cpp
+M	nativehook/src/main/cpp/includes/elf.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+2e3b55f;[NativeHook]add elf & tweak cmake
+M	nativehook/CMakeLists.txt
+M	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_arm64.cpp
+M	nativehook/src/main/cpp/elf/elf.cpp
+M	nativehook/src/main/cpp/includes/elf.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+M	nativehook/src/main/cpp/sandhook_native.h
+
+2f56fd5;[NativeHook]fix b
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/relocate/code_relocate_arm32.cpp
+
+c7fbe9e;[NativeHook]fix arm32
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/hook/hook_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/hook/hook_arm64.cpp
+M	nativehook/src/main/cpp/includes/base.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+99178dd;[NativeHook]fix arm32
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/hook/hook_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/arm32_base.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/relocate/code_relocate_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_arm64.cpp
+M	nativehook/src/main/cpp/asm/unit.h
+M	nativehook/src/main/cpp/includes/base.h
+M	nativehook/src/main/cpp/includes/code_relocate.h
+
+5e1e5cb;[NativeHook]fix thumb32 encode
+M	nativehook/CMakeLists.txt
+A	nativehook/src/main/cpp/archs/arm/arm32/hook/hook_arm32.cpp
+A	nativehook/src/main/cpp/archs/arm/arm32/hook/hook_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/arm32_base.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+A	nativehook/src/main/cpp/archs/arm/arm32/relocate/code_relocate_arm32.cpp
+A	nativehook/src/main/cpp/archs/arm/arm32/relocate/code_relocate_arm32.h
+A	nativehook/src/main/cpp/archs/arm/arm64/hook/hook_arm64.cpp
+A	nativehook/src/main/cpp/archs/arm/arm64/hook/hook_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_arm64.h
+M	nativehook/src/main/cpp/decoder/decoder.cpp
+M	nativehook/src/main/cpp/hook/hook.cpp
+M	nativehook/src/main/cpp/includes/code_relocate.h
+M	nativehook/src/main/cpp/includes/decoder.h
+M	nativehook/src/main/cpp/includes/hook.h
+M	nativehook/src/main/cpp/relocate/code_relocate.cpp
+
+1162fbf;[NativeHook]fix push
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+
+65d3530;[NativeHook]fix some insts
+M	nativehook/src/main/cpp/archs/arm/arm32/decoder/decoder_arm32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/includes/decoder.h
+
+f6c7aa6;[NativeHook]fix adrp decode & update test case
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+e85c7f8;[NativeHook]tweak code
+M	nativehook/CMakeLists.txt
+R099	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_a32.cpp	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.cpp
+R098	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_a32.h	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_arm32.h
+A	nativehook/src/main/cpp/archs/arm/arm32/decoder/decoder_arm32.cpp
+A	nativehook/src/main/cpp/archs/arm/arm32/decoder/decoder_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/arm32_base.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_code_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+R087	nativehook/src/main/cpp/archs/arm/arm32/register/register_a32.cpp	nativehook/src/main/cpp/archs/arm/arm32/register/register_arm32.cpp
+R100	nativehook/src/main/cpp/archs/arm/arm32/register/register_a32.h	nativehook/src/main/cpp/archs/arm/arm32/register/register_arm32.h
+R093	nativehook/src/main/cpp/archs/arm/arm32/register/register_list_a32.cpp	nativehook/src/main/cpp/archs/arm/arm32/register/register_list_arm32.cpp
+R096	nativehook/src/main/cpp/archs/arm/arm32/register/register_list_a32.h	nativehook/src/main/cpp/archs/arm/arm32/register/register_list_arm32.h
+R099	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_a64.cpp	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.cpp
+R098	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_a64.h	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/decoder/decoder_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/decoder/decoder_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+R093	nativehook/src/main/cpp/archs/arm/arm64/register/register_a64.cpp	nativehook/src/main/cpp/archs/arm/arm64/register/register_arm64.cpp
+R100	nativehook/src/main/cpp/archs/arm/arm64/register/register_a64.h	nativehook/src/main/cpp/archs/arm/arm64/register/register_arm64.h
+R094	nativehook/src/main/cpp/archs/arm/arm64/register/register_list_a64.cpp	nativehook/src/main/cpp/archs/arm/arm64/register/register_list_arm64.cpp
+R098	nativehook/src/main/cpp/archs/arm/arm64/register/register_list_a64.h	nativehook/src/main/cpp/archs/arm/arm64/register/register_list_arm64.h
+R099	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_a64.cpp	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_arm64.cpp
+R098	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_a64.h	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_arm64.h
+A	nativehook/src/main/cpp/asm/memory.h
+M	nativehook/src/main/cpp/buffer/code_buffer.cpp
+M	nativehook/src/main/cpp/decoder/decoder.cpp
+M	nativehook/src/main/cpp/hook/hook.cpp
+M	nativehook/src/main/cpp/includes/decoder.h
+
+89594d2;[NativeHook]tweak register & add some insts
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_a32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_a32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/arm32_base.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_code_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/register/register_a32.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/register/register_a64.h
+M	nativehook/src/main/cpp/asm/cpu.h
+M	nativehook/src/main/cpp/asm/register.h
+M	nativehook/src/main/cpp/asm/unit.h
+M	nativehook/src/main/cpp/assembler/assembler.cpp
+
+1b1df47;[NativeHook]add some insts
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_a32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_a32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_code_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+
+5c4ddbb;[NativeHook]add assembler arm32
+M	nativehook/CMakeLists.txt
+A	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_a32.cpp
+A	nativehook/src/main/cpp/archs/arm/arm32/assembler/assembler_a32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_a64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_a64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/register/register_list_a64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/register/register_list_a64.h
+
+60c8b84;[NativeHook]done Thumb2 insts struct
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/arm32_base.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+
+7521478;change Liscense
+D	LICENSE-2.0.txt
+A	LICENSE.txt
+
+422f080;[NativeHook]fix inst relocation when target address in move range
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_a64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_a64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_a64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_a64.h
+M	nativehook/src/main/cpp/hook/hook.cpp
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+60f5426;[NativeHook]TWEAK CODE
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/arm32_base.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_code_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+M	nativehook/src/main/cpp/asm/instruction.h
+
+62dc8d9;[NativeHook]TWEAK CODE
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/arm32_base.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_code_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/register/register_a32.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_a64.cpp
+M	nativehook/src/main/cpp/hook/hook.cpp
+M	nativehook/src/main/cpp/includes/base.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+0499294;[NativeHook]fix pop & push
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_a64.cpp
+
+5d6a954;[NativeHook]fix push
+M	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_a64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/decoder/decoder_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+
+b41514d;[NativeHook]done t16 insts
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_code_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+
+da5a7ae;[NativeHook]add CBZ LDR
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_code_arm32.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+M	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/includes/base.h
+
+577759e;fix BR
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+A	nativehook/src/main/java/com/swift/sandhook/nativehook/NativeHook.java
+
+45832ec;add arm32 & tweak code
+M	nativehook/CMakeLists.txt
+A	nativehook/src/main/cpp/archs/arm/arm32/inst/arm32_base.h
+R100	nativehook/src/main/cpp/archs/arm32/inst/inst_arm32.cpp	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_arm32.cpp
+R100	nativehook/src/main/cpp/archs/arm32/inst/inst_arm32.h	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_arm32.h
+A	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_code_arm32.h
+R083	nativehook/src/main/cpp/archs/arm32/inst/inst_strcut_arm32.h	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_a32.h
+A	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t16.h
+A	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_struct_t32.h
+A	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.cpp
+A	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t16.h
+A	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.cpp
+A	nativehook/src/main/cpp/archs/arm/arm32/inst/inst_t32.h
+A	nativehook/src/main/cpp/archs/arm/arm32/register/register_a32.cpp
+R050	nativehook/src/main/cpp/archs/arm32/register/register_a32.h	nativehook/src/main/cpp/archs/arm/arm32/register/register_a32.h
+A	nativehook/src/main/cpp/archs/arm/arm32/register/register_list_a32.cpp
+A	nativehook/src/main/cpp/archs/arm/arm32/register/register_list_a32.h
+R098	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.cpp	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_a64.cpp
+R098	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.h	nativehook/src/main/cpp/archs/arm/arm64/assembler/assembler_a64.h
+R093	nativehook/src/main/cpp/archs/arm64/decoder/decoder_arm64.cpp	nativehook/src/main/cpp/archs/arm/arm64/decoder/decoder_arm64.cpp
+R100	nativehook/src/main/cpp/archs/arm64/decoder/decoder_arm64.h	nativehook/src/main/cpp/archs/arm/arm64/decoder/decoder_arm64.h
+R090	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.cpp
+R098	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_arm64.h
+R100	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_code_arm64.h
+R062	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h	nativehook/src/main/cpp/archs/arm/arm64/inst/inst_struct_aarch64.h
+R095	nativehook/src/main/cpp/archs/arm64/register/register_a64.cpp	nativehook/src/main/cpp/archs/arm/arm64/register/register_a64.cpp
+R100	nativehook/src/main/cpp/archs/arm64/register/register_a64.h	nativehook/src/main/cpp/archs/arm/arm64/register/register_a64.h
+R085	nativehook/src/main/cpp/archs/arm64/register/register_list_a64.cpp	nativehook/src/main/cpp/archs/arm/arm64/register/register_list_a64.cpp
+R077	nativehook/src/main/cpp/archs/arm64/register/register_list_a64.h	nativehook/src/main/cpp/archs/arm/arm64/register/register_list_a64.h
+R098	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.cpp	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_a64.cpp
+R097	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.h	nativehook/src/main/cpp/archs/arm/arm64/relocate/code_relocate_a64.h
+A	nativehook/src/main/cpp/archs/arm/arm_base.h
+D	nativehook/src/main/cpp/archs/arm32/register/register_a32.cpp
+A	nativehook/src/main/cpp/archs/x86/place_holder.h
+M	nativehook/src/main/cpp/hook/hook.cpp
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+6a4150d;Merge pull request #13 from SwiftOSSite/native_hook
+44246cf;tweak code
+M	nativehook/src/main/cpp/hook/hook.cpp
+
+c10eabf;tweak code
+M	nativehook/CMakeLists.txt
+M	nativehook/src/main/cpp/hook/hook.cpp
+M	nativehook/src/main/cpp/includes/hook.h
+
+0ac2a05;fix MOV_WIDE
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.cpp
+M	nativehook/src/main/cpp/includes/base.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+01661bf;update test case
+M	nativehook/src/main/cpp/sandhook_native.cpp
+A	nativehook/src/main/cpp/utils/log.h
+
+e46299f;almost done
+M	nativehook/CMakeLists.txt
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.h
+M	nativehook/src/main/cpp/archs/arm64/decoder/decoder_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.h
+M	nativehook/src/main/cpp/assembler/assembler.cpp
+M	nativehook/src/main/cpp/buffer/code_buffer.cpp
+M	nativehook/src/main/cpp/buffer/code_buffer.h
+A	nativehook/src/main/cpp/hook/hook.cpp
+M	nativehook/src/main/cpp/includes/assembler.h
+M	nativehook/src/main/cpp/includes/base.h
+M	nativehook/src/main/cpp/includes/code_relocate.h
+A	nativehook/src/main/cpp/includes/hook.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+ea147c9;almost done
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.cpp
+
+5e75202;tweak code
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/asm/register.h
+M	nativehook/src/main/cpp/includes/base.h
+
+48cfbe0;tweak asm
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.cpp
+
+80c6032;almost finish code rewrite
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.cpp
+
+2d5579f;init code relocate
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.h
+M	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.h
+M	nativehook/src/main/cpp/includes/code_relocate.h
+
+8cabbbd;tweak framework
+M	nativehook/CMakeLists.txt
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.h
+A	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.cpp
+A	nativehook/src/main/cpp/archs/arm64/relocate/code_relocate_a64.h
+M	nativehook/src/main/cpp/assembler/assembler.cpp
+M	nativehook/src/main/cpp/buffer/code_buffer.cpp
+M	nativehook/src/main/cpp/buffer/code_buffer.h
+M	nativehook/src/main/cpp/includes/assembler.h
+M	nativehook/src/main/cpp/includes/code_relocate.h
+
+9bdcf2b;finish a64decoder
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.h
+M	nativehook/src/main/cpp/archs/arm64/decoder/decoder_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/decoder/decoder_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/includes/decoder.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+2f998a1;add inst type
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+
+b989ec8;tweak inst struct of EXCEPTION_GEN
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+
+d72dc91;add Exception Gen & SVC
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+
+cbbdfef;tweak sub/subs
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+
+b994600;add inst SUBS Reg
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/archs/arm64/register/register_list_a64.cpp
+M	nativehook/src/main/cpp/asm/instruction.h
+
+e8b846a;tweak inst code
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h
+
+8a5cc3c;add inst MOV Register
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+
+12e606a;add inst str unsign imm
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+0283ee7;tweak code
+M	nativehook/CMakeLists.txt
+A	nativehook/src/main/cpp/archs/arm32/inst/inst_arm32.cpp
+A	nativehook/src/main/cpp/archs/arm32/inst/inst_arm32.h
+A	nativehook/src/main/cpp/archs/arm32/inst/inst_strcut_arm32.h
+A	nativehook/src/main/cpp/archs/arm32/register/register_a32.cpp
+A	nativehook/src/main/cpp/archs/arm32/register/register_a32.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+933b513;finish mov assembler
+M	nativehook/CMakeLists.txt
+A	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.cpp
+A	nativehook/src/main/cpp/archs/arm64/assembler/assembler_a64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/assembler/assembler.cpp
+M	nativehook/src/main/cpp/buffer/code_buffer.cpp
+M	nativehook/src/main/cpp/includes/assembler.h
+M	nativehook/src/main/cpp/utils/platform.cpp
+M	nativehook/src/main/cpp/utils/platform.h
+
+d68629c;impl code buffer & code container
+M	nativehook/CMakeLists.txt
+M	nativehook/src/main/cpp/asm/instruction.h
+M	nativehook/src/main/cpp/asm/label.h
+M	nativehook/src/main/cpp/asm/unit.h
+M	nativehook/src/main/cpp/assembler/assembler.cpp
+A	nativehook/src/main/cpp/buffer/code_buffer.cpp
+A	nativehook/src/main/cpp/buffer/code_buffer.h
+M	nativehook/src/main/cpp/includes/assembler.h
+M	nativehook/src/main/cpp/includes/base.h
+A	nativehook/src/main/cpp/utils/lock.h
+A	nativehook/src/main/cpp/utils/platform.cpp
+A	nativehook/src/main/cpp/utils/platform.h
+
+746e516;tweak code
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/assembler/assembler.cpp
+M	nativehook/src/main/cpp/includes/base.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+7617452;tweak code
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/asm/data.h
+M	nativehook/src/main/cpp/asm/instruction.h
+M	nativehook/src/main/cpp/asm/label.h
+M	nativehook/src/main/cpp/asm/unit.h
+M	nativehook/src/main/cpp/assembler/assembler.cpp
+M	nativehook/src/main/cpp/includes/assembler.h
+M	nativehook/src/main/cpp/includes/base.h
+
+1e55474;tweak label
+A	nativehook/src/main/cpp/asm/data.h
+M	nativehook/src/main/cpp/asm/instruction.h
+A	nativehook/src/main/cpp/asm/label.h
+A	nativehook/src/main/cpp/asm/unit.h
+
+84178e6;add BR
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/archs/arm64/register/register_a64.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+8db6598;tweak include
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/archs/arm64/register/register_list_a64.h
+M	nativehook/src/main/cpp/includes/code_relocate.h
+M	nativehook/src/main/cpp/includes/decoder.h
+
+e1b7838;tweak inst struct
+M	nativehook/CMakeLists.txt
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/archs/arm64/register/register_list_a64.cpp
+M	nativehook/src/main/cpp/asm/instruction.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+c178fa9;tweak code
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/asm/instruction.h
+M	nativehook/src/main/cpp/includes/base.h
+M	nativehook/src/main/cpp/includes/code_relocate.h
+M	nativehook/src/main/cpp/includes/decoder.h
+
+30c986a;tweak code
+M	nativehook/CMakeLists.txt
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/asm/instruction.h
+A	nativehook/src/main/cpp/assembler/assembler.cpp
+A	nativehook/src/main/cpp/elf/elf.cpp
+R100	nativehook/src/main/cpp/assembler/assembler.h	nativehook/src/main/cpp/includes/assembler.h
+M	nativehook/src/main/cpp/includes/base.h
+A	nativehook/src/main/cpp/includes/code_relocate.h
+R100	nativehook/src/main/cpp/decoder/decoder.h	nativehook/src/main/cpp/includes/decoder.h
+A	nativehook/src/main/cpp/includes/elf.h
+A	nativehook/src/main/cpp/includes/exception.h
+A	nativehook/src/main/cpp/relocate/code_relocate.cpp
+
+d3ff754;tweak code
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+
+6b0d6bb;tweak code
+M	nativehook/CMakeLists.txt
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/register/register_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/register/register_a64.h
+A	nativehook/src/main/cpp/archs/arm64/register/register_list_a64.cpp
+M	nativehook/src/main/cpp/archs/arm64/register/register_list_a64.h
+M	nativehook/src/main/cpp/asm/register.h
+M	nativehook/src/main/cpp/includes/base.h
+
+a495dc5;add LDR
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+
+8c61e80;tweak code
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+
+44b6889;add inst type
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+
+852ee68;tweak code
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+
+83751ac;add B.cond & TBZ_TBNZ
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/asm/instruction.h
+
+91f6050;add cbz cbnz
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/asm/instruction.h
+
+c6f7398;Merge remote-tracking branch 'origin/master'
+aefda1d;fix classloader
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+
+c8ec525;done b bl
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/includes/base.h
+
+04e206a;tweak inst type
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/includes/base.h
+
+785422d;tweak inst
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+A	nativehook/src/main/cpp/archs/arm64/inst/inst_code_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/archs/arm64/register/register_list_a64.h
+M	nativehook/src/main/cpp/asm/instruction.h
+
+a3db525;tweak register & add mov inst
+M	nativehook/CMakeLists.txt
+R100	nativehook/src/main/cpp/archs/arm64/decoder_arm64.cpp	nativehook/src/main/cpp/archs/arm64/decoder/decoder_arm64.cpp
+R100	nativehook/src/main/cpp/archs/arm64/decoder_arm64.h	nativehook/src/main/cpp/archs/arm64/decoder/decoder_arm64.h
+R056	nativehook/src/main/cpp/archs/arm64/inst_arm64.cpp	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.cpp
+R056	nativehook/src/main/cpp/archs/arm64/inst_arm64.h	nativehook/src/main/cpp/archs/arm64/inst/inst_arm64.h
+R090	nativehook/src/main/cpp/archs/arm64/inst_struct_aarch64.h	nativehook/src/main/cpp/archs/arm64/inst/inst_struct_aarch64.h
+A	nativehook/src/main/cpp/archs/arm64/register/register_a64.cpp
+A	nativehook/src/main/cpp/archs/arm64/register/register_a64.h
+A	nativehook/src/main/cpp/archs/arm64/register/register_list_a64.h
+M	nativehook/src/main/cpp/asm/instruction.h
+M	nativehook/src/main/cpp/asm/register.h
+M	nativehook/src/main/cpp/includes/base.h
+
+9dcdead;tweak code
+M	nativehook/src/main/cpp/archs/arm64/inst_arm64.cpp
+M	nativehook/src/main/cpp/archs/arm64/inst_arm64.h
+M	nativehook/src/main/cpp/archs/arm64/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/asm/instruction.h
+A	nativehook/src/main/cpp/assembler/assembler.h
+M	nativehook/src/main/cpp/includes/base.h
+
+aebe700;add inst type
+M	nativehook/src/main/cpp/archs/arm64/inst_arm64.h
+M	nativehook/src/main/cpp/asm/instruction.h
+M	nativehook/src/main/cpp/includes/base.h
+
+2c5124f;add armv8
+M	nativehook/CMakeLists.txt
+M	nativehook/build.gradle
+A	nativehook/src/main/cpp/archs/arm64/decoder_arm64.cpp
+A	nativehook/src/main/cpp/archs/arm64/decoder_arm64.h
+A	nativehook/src/main/cpp/archs/arm64/inst_arm64.cpp
+A	nativehook/src/main/cpp/archs/arm64/inst_arm64.h
+A	nativehook/src/main/cpp/archs/arm64/inst_struct_aarch64.h
+M	nativehook/src/main/cpp/asm/instruction.h
+A	nativehook/src/main/cpp/decoder/decoder.cpp
+A	nativehook/src/main/cpp/decoder/decoder.h
+M	nativehook/src/main/cpp/includes/base.h
+A	nativehook/src/main/cpp/includes/compiler.h
+M	nativehook/src/main/cpp/sandhook_native.cpp
+
+417f180;Merge pull request #12 from rover12421/newNDK
+c97627a;support new ndk/clang build
+D	hooklib/CMakeLists.txt
+M	hooklib/build.gradle
+A	hooklib/src/main/cpp/CMakeLists.txt
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+M	hooklib/src/main/cpp/includes/arch_base.h
+M	hooklib/src/main/cpp/includes/elf_util.h
+M	hooklib/src/main/cpp/includes/trampoline.h
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+M	hooklib/src/main/cpp/utils/dlfcn_nougat.cpp
+M	hooklib/src/main/cpp/utils/elf_util.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+65d9893;tweak api bypass
+M	hooklib/src/main/java/com/swift/sandhook/utils/ReflectionUtils.java
+
+61d7653;disable hook setAccessible
+M	hooklib/src/main/java/com/swift/sandhook/blacklist/HookBlackList.java
+
+9179864;ForceProcessProfiles & clear hotness_count
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+M	hooklib/src/main/cpp/includes/arch.h
+M	hooklib/src/main/cpp/includes/art_method.h
+M	hooklib/src/main/cpp/includes/cast.h
+M	hooklib/src/main/cpp/includes/cast_art_method.h
+M	hooklib/src/main/cpp/includes/hide_api.h
+M	hooklib/src/main/cpp/includes/sandhook.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+a4947ce;Update MyApp.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+
+450a97d;fix typo
+M	hooklib/src/main/cpp/nativehook/native_hook.cpp
+
+8596d59;Merge remote-tracking branch 'origin/master'
+82099cb;fix disable dex2oat inline
+M	hooklib/src/main/cpp/nativehook/native_hook.cpp
+
+ce7b251;tweak black list
+M	hooklib/src/main/java/com/swift/sandhook/blacklist/HookBlackList.java
+
+956330a;fix call origin in hook bridge
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+
+be01603;update hook black list
+M	hooklib/src/main/java/com/swift/sandhook/blacklist/HookBlackList.java
+
+a958238;fix call origin method in hookBridge
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+
+6d5b4e2;add invokeOriginalMethod in XposedBridge
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedBridge.java
+
+372876e;[NativeHook]first commit
+M	app/build.gradle
+A	nativehook/.gitignore
+A	nativehook/CMakeLists.txt
+A	nativehook/build.gradle
+A	nativehook/proguard-rules.pro
+A	nativehook/ref/armv8_arm.pdf
+A	nativehook/src/androidTest/java/com/swift/sandhook/nativehook/ExampleInstrumentedTest.java
+A	nativehook/src/main/AndroidManifest.xml
+A	nativehook/src/main/cpp/asm/cpu.h
+A	nativehook/src/main/cpp/asm/imme.h
+A	nativehook/src/main/cpp/asm/instruction.h
+A	nativehook/src/main/cpp/asm/register.h
+A	nativehook/src/main/cpp/includes/base.h
+A	nativehook/src/main/cpp/sandhook_native.cpp
+A	nativehook/src/main/cpp/sandhook_native.h
+A	nativehook/src/main/res/values/strings.xml
+A	nativehook/src/test/java/com/swift/sandhook/nativehook/ExampleUnitTest.java
+M	settings.gradle
+
+c0b453c;Merge remote-tracking branch 'origin/master'
+1ca453e;tweak code
+M	hooklib/src/main/java/com/swift/sandhook/blacklist/HookBlackList.java
+M	hooklib/src/main/java/com/swift/sandhook/utils/Unsafe.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookMethodEntity.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/DexLog.java
+
+783d5bf;tweak native hook
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+6348b1d;skip dex2oat SandHooker
+M	hooklib/src/main/cpp/nativehook/native_hook.cpp
+
+51d6ef6;Update README.md
+M	README.md
+
+8674c88;Update README.md
+M	README.md
+
+327c62b;Update README.md
+M	README.md
+
+99c556c;Merge remote-tracking branch 'origin/master'
+9455db2;[NativeHook]add simple nativehook & disable dex2oat
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	hooklib/CMakeLists.txt
+A	hooklib/src/main/cpp/includes/native_hook.h
+A	hooklib/src/main/cpp/includes/sandhook.h
+M	hooklib/src/main/cpp/includes/trampoline_manager.h
+A	hooklib/src/main/cpp/nativehook/native_hook.cpp
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+fc571b2;fix XSharePreference
+M	build.gradle
+M	xposedcompat/src/main/java/com/android/internal/util/XmlUtils.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/SELinuxHelper.java
+
+6f69e00;fix XSharePreference
+A	xposedcompat/src/main/java/com/android/internal/util/XmlUtils.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/SELinuxHelper.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XSharedPreferences.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/services/BaseService.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/services/DirectAccessService.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/services/FileResult.java
+
+ee13b7b;fix error covert of Boolean to long
+M	hooklib/src/main/java/com/swift/sandhook/utils/ParamWrapper.java
+
+d190d71;update doc
+M	doc/doc.md
+
+2bc5ab9;remove useless code
+M	hooklib/src/main/java/com/swift/sandhook/blacklist/HookBlackList.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+D	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/ClassLoaderUtils.java
+D	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/DexUtils.java
+
+c4f618d;[DexMaker]load Dex by InMemoryDexClassLoader in some case
+M	xposedcompat/src/main/java/com/android/dx/DexMaker.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMakerNew.java
+
+8b1814e;update doc
+M	doc/doc.md
+
+42cd4e9;[doc]fix typo
+M	doc/doc.md
+
+f6e97fc;Merge remote-tracking branch 'origin/master'
+fc7c971;done doc
+M	doc/doc.md
+
+735a785;Update README.md
+M	README.md
+
+3489c80;update doc
+M	doc/doc.md
+A	doc/res/sandhook_arch.png
+
+78dc131;update doc
+M	doc/doc.md
+
+3ea18dd;update doc
+M	doc/doc.md
+A	doc/res/pc_relate.png
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+
+300a651;Merge remote-tracking branch 'origin/master'
+aa9be54;remove useless code of xposed
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+D	xposedcompat/src/main/java/de/robv/android/xposed/DexCreator.java
+D	xposedcompat/src/main/java/de/robv/android/xposed/SELinuxHelper.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XSharedPreferences.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedBridge.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedInit.java
+D	xposedcompat/src/main/java/de/robv/android/xposed/services/BaseService.java
+D	xposedcompat/src/main/java/de/robv/android/xposed/services/BinderService.java
+D	xposedcompat/src/main/java/de/robv/android/xposed/services/DirectAccessService.java
+D	xposedcompat/src/main/java/de/robv/android/xposed/services/FileResult.java
+D	xposedcompat/src/main/java/de/robv/android/xposed/services/ZygoteService.java
+D	xposedcompat/src/main/java/de/robv/android/xposed/services/package-info.java
+
+d79f897;update doc
+M	doc/doc.md
+
+08c68ea;update doc
+M	doc/doc.md
+
+c6dc9d2;update doc
+M	doc/doc.md
+A	doc/res/inline_flow.png
+
+bb9a7b6;add doc
+A	doc/doc.md
+
+eb563c2;tweak flow of call backup
+M	README.md
+M	app/src/main/java/com/swift/sandhook/testHookers/ActivityHooker.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMakerNew.java
+
+4825a17;error version filter
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+32c6fac;Merge remote-tracking branch 'origin/master'
+4ec0096;try disable jit/aot profile
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHookConfig.java
+A	hooklib/src/main/java/com/swift/sandhook/utils/ArtDexOptimizer.java
+A	hooklib/src/main/java/com/swift/sandhook/utils/FileUtils.java
+
+be95a89;Update README.md
+M	README.md
+
+c00a32a;update doc
+M	README.md
+
+795c09b;tweak demo
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	app/src/main/java/com/swift/sandhook/testHookers/CtrHook.java
+
+59726be;tweak demo
+M	app/src/main/java/com/swift/sandhook/testHookers/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/CtrHook.java
+M	app/src/main/java/com/swift/sandhook/testHookers/JniHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/LogHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/NewAnnotationApiHooker.java
+
+23b2544;tweak hook policy
+M	hooklib/src/main/cpp/sandhook.cpp
+
+7a779f0;add hook black list "getDeclaredField"
+M	hooklib/src/main/java/com/swift/sandhook/blacklist/HookBlackList.java
+
+2835c89;remove useless flag set
+M	hooklib/src/main/cpp/sandhook.cpp
+
+9ba21a3;Update README.md
+M	README.md
+
+69b9b89;Merge remote-tracking branch 'origin/master'
+62b42c6;tweak default accessFlag offset
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+
+1e683c1;tweak HookBlackList
+M	hooklib/src/main/java/com/swift/sandhook/blacklist/HookBlackList.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+
+e84a32a;fix error logic of resolveDexCache
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+bf2c84b;fix error flag
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+5b8585d;disable useless reset declaring class
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+bc67045;add hook blacklist & reset declare method
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+M	hooklib/src/main/cpp/includes/art_method.h
+M	hooklib/src/main/cpp/includes/cast_art_method.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+A	hooklib/src/main/java/com/swift/sandhook/blacklist/HookBlackList.java
+
+d0f5ffd;fix dead loop when hook "getCallingClassLoader"
+M	hooklib/src/main/java/com/swift/sandhook/utils/Unsafe.java
+
+17cfb2c;remove useless code
+M	app/build.gradle
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+7ec4541;Merge remote-tracking branch 'origin/master'
+44ec38d;should not resolve dex cache when use stub backups
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+f27fffb;Update README.md
+M	README.md
+
+71a1510;Update README.md
+M	README.md
+
+8b2924d;fix JNI_Load_Ex export
+M	hooklib/src/main/cpp/sandhook.cpp
+
+8783d33;fix export sym of JNI_Load_Ex
+M	hooklib/src/main/cpp/sandhook.cpp
+
+fbbba62;[Xposed]can load lib extern
+M	hooklib/src/main/cpp/sandhook.cpp
+
+9fd0e9c;tweak jit init checker
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+ec95d24;add global jit compiler check
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+6798205;Merge remote-tracking branch 'origin/master'
+8aa1f24;fix method stub on 64bit
+M	xposedcompat/genhookstubs.py
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs64.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedBridge.java
+
+6457566;add classloader for loading system class
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHookConfig.java
+
+45dfd0a;tweak jni load
+M	build.gradle
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHookConfig.java
+
+6e652fb;tweak compile switcher
+M	hooklib/src/main/cpp/includes/utils.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+M	hooklib/src/main/cpp/utils/utils.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+2de0244;fix backup parser
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+c3e3668;add compiler switcher
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHookConfig.java
+
+b1fa5c2;[HookWrapper]tweak logic of search backup
+M	annotation/src/main/java/com/swift/sandhook/annotation/SkipParamCheck.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+4cb97b5;remove useless code
+M	hooklib/src/main/cpp/art/art_method.cpp
+
+7261914;fix accessFlag on Android Q
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+M	xposedcompat/genhookstubs.py
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs32.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs64.java
+
+d7dcb65;add passApiCheck Method
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/utils/ReflectionUtils.java
+
+818f4cb;add pass reflection on Android Q
+M	hooklib/src/main/java/com/swift/sandhook/utils/ReflectionUtils.java
+
+59da57c;add pass reflection on Android Q
+M	hooklib/src/main/java/com/swift/sandhook/utils/ReflectionUtils.java
+
+a19666f;Merge remote-tracking branch 'origin/master'
+0edd308;add pass reflection on Android Q
+A	hooklib/src/main/java/com/swift/sandhook/utils/ReflectionUtils.java
+
+9f40341;sync demo
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+
+34d95b6;tweak internal stub for Android Q
+M	xposedcompat/genhookstubs.py
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs32.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs64.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+
+9638184;Merge remote-tracking branch 'origin/master'
+f390656;tweak deCompile api
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+84ba48a;Update README.md
+M	README.md
+
+de26333;support Android Q
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHookConfig.java
+
+3c957c8;remove useless code
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+1947889;pre support Android Q
+M	hooklib/src/main/cpp/includes/arch.h
+M	hooklib/src/main/cpp/includes/hide_api.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+a9597ad;fix fake dlopen on Android Q
+M	hooklib/src/main/cpp/utils/dlfcn_nougat.cpp
+M	hooklib/src/main/cpp/utils/elf_util.cpp
+
+e287e04;Merge remote-tracking branch 'origin/master'
+90da813;fix get jni trampoline
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+M	hooklib/src/main/cpp/includes/cast_art_method.h
+M	hooklib/src/main/cpp/includes/elf_util.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/elf_util.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+M	hooklib/src/main/java/com/swift/sandhook/ClassNeverCall.java
+
+8347032;fix parser symb
+M	hooklib/src/main/cpp/includes/elf_util.h
+M	hooklib/src/main/cpp/utils/elf_util.cpp
+
+b54e8a1;new ELF parser
+M	hooklib/CMakeLists.txt
+A	hooklib/src/main/cpp/includes/elf_util.h
+A	hooklib/src/main/cpp/utils/elf_util.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+08e615d;Update README.md
+M	README.md
+
+6e88492;Merge remote-tracking branch 'origin/master'
+331f913;tweak code
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+M	hooklib/src/main/cpp/includes/art_method.h
+M	hooklib/src/main/cpp/includes/cast_art_method.h
+M	hooklib/src/main/cpp/includes/dlfcn_nougat.h
+M	hooklib/src/main/cpp/includes/hide_api.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/dlfcn_nougat.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+M	hooklib/src/main/java/com/swift/sandhook/ClassNeverCall.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+d2b7b3c;update doc
+M	README.md
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	build.gradle
+
+891bd37;tweak log
+A	hooklib/src/main/java/com/swift/sandhook/HookLog.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/DexLog.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedBridge.java
+
+dd6c709;teak code
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/includes/art_method.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHookConfig.java
+
+aefbd45;remove useless code
+D	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/classloaders/XposedClassLoader.java
+D	xposedcompat/src/main/java/de/robv/android/xposed/GeneClass_Template.java
+
+8912ff9;Merge remote-tracking branch 'origin/master'
+0d14d58;suspendVM < 7.0
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+134a3f6;remove used code gen
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMakerNew.java
+
+4852ccf;done new hooker maker
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookMaker.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMakerNew.java
+
+fc5fb8e;Update README.md
+M	README.md
+
+0d61724;can not call jni origin in 4.4
+M	app/src/main/java/com/swift/sandhook/testHookers/JniHooker.java
+
+2209c18;Merge branch 'master' into support_k
+48916f5;remove useless code
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+e084449;fix crash in Android 5
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+43cffaa;fix NPE
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+ea2f117;try support k
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHookMethodResolver.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+3881352;fix crash when use replace hook
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+43ada91;tweak bridge exception
+M	build.gradle
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+
+5d50e0b;tweak hook stubs
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	app/src/main/java/com/swift/sandhook/testHookers/JniHooker.java
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/BackupMethodStubs.java
+M	xposedcompat/genhookstubs.py
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs32.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs64.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+
+c17f756;tweak disable jit
+M	hooklib/src/main/cpp/includes/hide_api.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+f009483;fix NPE
+M	hooklib/src/main/cpp/sandhook.cpp
+
+5973f80;Update README.md
+M	README.md
+
+39bdce7;fix error logic
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+70a3a01;update demo & doc
+M	README.md
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+bd46d43;done disable vm inline!
+M	hooklib/CMakeLists.txt
+A	hooklib/src/main/cpp/art/art_compiler_options.cpp
+A	hooklib/src/main/cpp/casts/cast_compiler_options.cpp
+M	hooklib/src/main/cpp/includes/art_compiler_options.h
+M	hooklib/src/main/cpp/includes/art_jit.h
+A	hooklib/src/main/cpp/includes/cast_compiler_options.h
+M	hooklib/src/main/cpp/includes/hide_api.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+75d75c0;add
+A	hooklib/src/main/cpp/includes/art_compiler_options.h
+A	hooklib/src/main/cpp/includes/art_jit.h
+A	hooklib/src/main/cpp/includes/art_runtime.h
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+0aab93f;fix logic of resolve dex cache
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+
+2beba56;catch error of load call origin class
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+
+9fdd0a0;add hook in log
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+
+a19895e;fix hook wrapper switch logic
+A	annotation/src/main/java/com/swift/sandhook/annotation/SkipParamCheck.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+8966cd9;fuck throw exception
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+
+5eb40da;fix param parser of internal stub
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookMethodEntity.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+
+a9debfe;add gen stubs script
+A	xposedcompat/genhookstubs.py
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs32.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs64.java
+
+93372c4;add useInternalStub switcher
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+
+3235b9d;add compile method
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+
+6637f8e;add stub 64bit
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/CallOriginCallBack.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs32.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs64.java
+
+60fd35c;fix param parser
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/utils/ParamWrapper.java
+M	hooklib/src/main/java/com/swift/sandhook/utils/Unsafe.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedBridge.java
+
+f65fd71;Merge remote-tracking branch 'origin/master' into method_stubs
+cc27921;done stub 32
+M	hooklib/src/main/java/com/swift/sandhook/utils/ParamWrapper.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/CallOriginCallBack.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookMethodEntity.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs32.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedBridge.java
+
+3b15f9e;done stub manager
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookMethodEntity.java
+D	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookMethodInfo.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+R060	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs.java	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs32.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs64.java
+
+ff09c69;pre add hooker stubs
+M	hooklib/src/main/cpp/includes/hide_api.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+A	hooklib/src/main/java/com/swift/sandhook/utils/ParamWrapper.java
+A	hooklib/src/main/java/com/swift/sandhook/utils/Unsafe.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/CallOriginCallBack.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookMethodInfo.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/HookStubManager.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/hookstub/MethodHookerStubs.java
+
+60d2f21;fix call origin method by invoke!
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/includes/art_method.h
+M	hooklib/src/main/cpp/sandhook.cpp
+
+e084531;Merge remote-tracking branch 'origin/master' into method_stubs
+1432714;add get java object
+M	hooklib/src/main/cpp/includes/hide_api.h
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+465929e;compile callOriginMethod
+M	hooklib/src/main/cpp/sandhook.cpp
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+
+e5b970f;Update README.md
+M	README.md
+
+aec1225;Update README.md
+M	README.md
+
+4192be5;compile callOriginMethod to avoid CheckIncompatibleClassChange after JIT
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+a4fc9be;revert to call backup method direct, because callOriginMethod dose not deal
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+
+a87c367;update doc
+M	README.md
+
+f130ce3;add new hook api
+A	annotation/src/main/java/com/swift/sandhook/annotation/Param.java
+A	annotation/src/main/java/com/swift/sandhook/annotation/ThisObject.java
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	app/src/main/java/com/swift/sandhook/test/TestClass.java
+M	app/src/main/java/com/swift/sandhook/testHookers/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/CtrHook.java
+M	app/src/main/java/com/swift/sandhook/testHookers/CustmizeHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/LogHooker.java
+A	app/src/main/java/com/swift/sandhook/testHookers/NewAnnotationApiHooker.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+5ac8c41;wrap callOrigin
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+
+02ff063;fix param decode
+M	annotation/src/main/java/com/swift/sandhook/annotation/MethodReflectParams.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+c474f8f;add callOriginByBackup
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+fd05860;fix resolve static method
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+0f5ddd3;fix call origin method
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+43a453e;add call origin check switcher
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+
+3e4cf9a;add call origin error detect
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/ErrorCatch.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+
+955fa99;Update README.md
+M	README.md
+
+320c718;when libart.so can not load
+M	build.gradle
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+
+b935578;update fake_dlopen
+M	build.gradle
+M	hooklib/CMakeLists.txt
+A	hooklib/src/main/cpp/includes/dlfcn_nougat.h
+M	hooklib/src/main/cpp/includes/hide_api.h
+A	hooklib/src/main/cpp/utils/dlfcn_nougat.cpp
+D	hooklib/src/main/cpp/utils/fake_dlfcn.cpp
+D	hooklib/src/main/cpp/utils/fake_dlfcn.h
+
+75c42e7;avoid inline when call origin
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/DexLog.java
+
+feeab48;stop the world when hooking
+M	hooklib/src/main/cpp/includes/hide_api.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/hide_api.cpp
+M	hooklib/src/main/cpp/utils/lock.h
+
+237274b;add logger invoke switcher
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/DexLog.java
+
+68be741;fix error sandhooker class desc & add hook in log
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/DexLog.java
+
+912f76c;fix null dir
+M	xposedcompat/src/main/java/com/android/dx/DexMaker.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+
+5c250a7;add dexmaker cache
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	xposedcompat/build.gradle
+A	xposedcompat/src/main/java/com/android/dx/AnnotationId.java
+A	xposedcompat/src/main/java/com/android/dx/AppDataDirGuesser.java
+A	xposedcompat/src/main/java/com/android/dx/BinaryOp.java
+A	xposedcompat/src/main/java/com/android/dx/Code.java
+A	xposedcompat/src/main/java/com/android/dx/Comparison.java
+A	xposedcompat/src/main/java/com/android/dx/Constants.java
+A	xposedcompat/src/main/java/com/android/dx/DexMaker.java
+A	xposedcompat/src/main/java/com/android/dx/FieldId.java
+A	xposedcompat/src/main/java/com/android/dx/Label.java
+A	xposedcompat/src/main/java/com/android/dx/Local.java
+A	xposedcompat/src/main/java/com/android/dx/MethodId.java
+A	xposedcompat/src/main/java/com/android/dx/TypeId.java
+A	xposedcompat/src/main/java/com/android/dx/TypeList.java
+A	xposedcompat/src/main/java/com/android/dx/UnaryOp.java
+A	xposedcompat/src/main/java/com/android/dx/stock/ProxyBuilder.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/DexMakerUtils.java
+
+0b88465;tweak xposed compat
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/XC_LoadPackage.java
+
+10f5e04;can skip size check
+M	hooklib/src/main/cpp/includes/trampoline_manager.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+0722234;tweak api
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+6bce5cf;add hook mode choice
+M	hooklib/src/main/cpp/includes/inst.h
+M	hooklib/src/main/cpp/includes/trampoline_manager.h
+M	hooklib/src/main/cpp/inst/insts_arm32.cpp
+M	hooklib/src/main/cpp/inst/insts_arm64.cpp
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+fc125fb;android p 32bit support inline hook
+M	hooklib/src/main/cpp/includes/trampoline.h
+M	hooklib/src/main/cpp/trampoline/arch/arm32.S
+M	hooklib/src/main/cpp/trampoline/trampoline.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+d577c5a;fix crash when hook replacement
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+M	hooklib/src/main/cpp/includes/art_method.h
+M	hooklib/src/main/cpp/includes/cast_art_method.h
+A	hooklib/src/main/cpp/includes/log.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+a7924ae;fix classloader
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+
+003641e;add log
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedBridge.java
+
+b5dec3c;tweak loadModule
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedInit.java
+
+60f3ddb;Merge remote-tracking branch 'origin/master'
+dbf10a1;check hooked in java
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+93d5ac4;fix doc
+M	README.md
+
+9782831;add empty trt catch to avoid inline
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+
+786ed74;tweak xposed loadModule
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/classloaders/ComposeClassLoader.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/classloaders/XposedClassLoader.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+D	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/ProcessUtils.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/ApplicationUtils.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/ClassLoaderUtils.java
+R093	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DexLog.java	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/DexLog.java
+R099	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DexMakerUtils.java	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/DexMakerUtils.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/DexUtils.java
+R097	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/FileUtils.java	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/FileUtils.java
+R097	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/ProcessUtils.java	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/utils/ProcessUtils.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedInit.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/XC_LoadPackage.java
+
+87f376e;remove useless code
+M	hooklib/src/main/cpp/sandhook.cpp
+
+dbab411;update doc
+M	README.md
+M	build.gradle
+D	xposedcompat/src/main/java/external/org/apache/commons/lang3/builder/package.html
+D	xposedcompat/src/main/java/external/org/apache/commons/lang3/exception/package.html
+D	xposedcompat/src/main/java/external/org/apache/commons/lang3/mutable/package.html
+D	xposedcompat/src/main/java/external/org/apache/commons/lang3/overview.html
+D	xposedcompat/src/main/java/external/org/apache/commons/lang3/package.html
+D	xposedcompat/src/main/java/external/org/apache/commons/lang3/reflect/package.html
+D	xposedcompat/src/main/java/external/org/apache/commons/lang3/tuple/package.html
+
+7c9757e;[XposedCompat]add binary publish
+M	xposedcompat/build.gradle
+
+3615f33;done compat for xposed
+M	app/build.gradle
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+M	xposedcompat/build.gradle
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/ProcessUtils.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DexLog.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DexMakerUtils.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DynamicBridge.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/FileUtils.java
+M	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/ProcessUtils.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/IXposedHookInitPackageResources.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/SELinuxHelper.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XSharedPreferences.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedBridge.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedInit.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/XC_InitPackageResources.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/XC_LayoutInflated.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/XC_LoadPackage.java
+M	xposedcompat/src/main/java/de/robv/android/xposed/services/BinderService.java
+
+8e0774b;Merge branch 'master' into xposed_compat
+09c2e9c;fix decode inst logic
+M	hooklib/src/main/cpp/inst/insts_arm32.cpp
+M	hooklib/src/main/cpp/inst/insts_arm64.cpp
+
+74316b1;Merge remote-tracking branch 'origin/master' into xposed_compat
+ae55883;fix check logic on android p 32bit
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+6042236;fix thumb32 check
+M	hooklib/src/main/cpp/inst/insts_arm32.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+c39baed;add
+M	xposedcompat/src/main/java/de/robv/android/xposed/XposedBridge.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/ArrayUtils.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/CharSequenceUtils.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/CharUtils.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/ClassUtils.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/JavaVersion.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/ObjectUtils.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/StringUtils.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/SystemUtils.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/Validate.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/builder/Builder.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/builder/CompareToBuilder.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/builder/EqualsBuilder.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/builder/HashCodeBuilder.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/builder/IDKey.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/builder/ToStringBuilder.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/builder/ToStringStyle.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/builder/package.html
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/exception/CloneFailedException.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/exception/package.html
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/mutable/Mutable.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/mutable/MutableInt.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/mutable/package.html
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/overview.html
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/package.html
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/reflect/MemberUtils.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/reflect/MethodUtils.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/reflect/package.html
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/tuple/ImmutablePair.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/tuple/Pair.java
+A	xposedcompat/src/main/java/external/org/apache/commons/lang3/tuple/package.html
+
+95189ef;init
+M	settings.gradle
+A	xposedcompat/.gitignore
+A	xposedcompat/build.gradle
+A	xposedcompat/proguard-rules.pro
+A	xposedcompat/src/main/AndroidManifest.xml
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/XposedCompat.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/DexMakerUtils.java
+A	xposedcompat/src/main/java/com/swift/sandhook/xposedcompat/methodgen/HookerDexMaker.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/DexCreator.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/GeneClass_Template.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/IXposedHookCmdInit.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/IXposedHookInitPackageResources.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/IXposedHookLoadPackage.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/IXposedHookZygoteInit.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/IXposedMod.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/SELinuxHelper.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/XC_MethodHook.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/XC_MethodReplacement.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/XSharedPreferences.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/XposedBridge.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/XposedHelpers.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/XposedInit.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/IXUnhook.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/XC_InitPackageResources.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/XC_LayoutInflated.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/XC_LoadPackage.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/XCallback.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/callbacks/package-info.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/services/BaseService.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/services/BinderService.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/services/DirectAccessService.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/services/FileResult.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/services/ZygoteService.java
+A	xposedcompat/src/main/java/de/robv/android/xposed/services/package-info.java
+A	xposedcompat/src/main/res/values/strings.xml
+
+8eed3a0;tweak cache flush
+M	hooklib/src/main/cpp/sandhook.cpp
+
+69ada1b;add aarch64 inst check
+M	hooklib/src/main/cpp/includes/inst.h
+M	hooklib/src/main/cpp/inst/insts_arm64.cpp
+
+82331db;fix bug & add arm32 inst check
+M	build.gradle
+M	hooklib/CMakeLists.txt
+M	hooklib/build.gradle
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/casts/cast_art_method.cpp
+M	hooklib/src/main/cpp/includes/cast.h
+M	hooklib/src/main/cpp/includes/cast_art_method.h
+M	hooklib/src/main/cpp/includes/inst.h
+M	hooklib/src/main/cpp/includes/trampoline.h
+M	hooklib/src/main/cpp/includes/trampoline_manager.h
+A	hooklib/src/main/cpp/inst/insts_arm32.cpp
+A	hooklib/src/main/cpp/inst/insts_arm64.cpp
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+60554bc;inst check
+A	hooklib/src/main/cpp/includes/inst.h
+
+0dbe3b9;Merge remote-tracking branch 'origin/master'
+86cdff4;[ReplaceHook]set x0
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+5bc325a;[reconsit]done
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/includes/art_method.h
+M	hooklib/src/main/cpp/includes/hide_api.h
+M	hooklib/src/main/cpp/includes/utils.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/utils/utils.cpp
+
+5bd6ce0;reconst
+M	hooklib/CMakeLists.txt
+M	hooklib/src/main/cpp/art/art_method.cpp
+M	hooklib/src/main/cpp/includes/art_method.h
+M	hooklib/src/main/cpp/includes/cast.h
+A	hooklib/src/main/cpp/includes/hide_api.h
+M	hooklib/src/main/cpp/includes/utils.h
+M	hooklib/src/main/cpp/sandhook.cpp
+A	hooklib/src/main/cpp/utils/hide_api.cpp
+D	hooklib/src/main/cpp/utils/hide_api.h
+M	hooklib/src/main/cpp/utils/offset.cpp
+M	hooklib/src/main/cpp/utils/utils.cpp
+
+a482565;reconstitution
+M	hooklib/CMakeLists.txt
+M	hooklib/build.gradle
+A	hooklib/src/main/cpp/art/art_method.cpp
+D	hooklib/src/main/cpp/casts/art/art.cpp
+A	hooklib/src/main/cpp/casts/cast_art_method.cpp
+D	hooklib/src/main/cpp/casts/cast_art_method.h
+M	hooklib/src/main/cpp/includes/arch.h
+R100	hooklib/src/main/cpp/trampoline/arch/base.h	hooklib/src/main/cpp/includes/arch_base.h
+R100	hooklib/src/main/cpp/casts/art/art.h	hooklib/src/main/cpp/includes/art_method.h
+M	hooklib/src/main/cpp/includes/cast.h
+A	hooklib/src/main/cpp/includes/cast_art_method.h
+A	hooklib/src/main/cpp/includes/offset.h
+R099	hooklib/src/main/cpp/trampoline/trampoline.h	hooklib/src/main/cpp/includes/trampoline.h
+R095	hooklib/src/main/cpp/trampoline/trampoline_manager.h	hooklib/src/main/cpp/includes/trampoline_manager.h
+M	hooklib/src/main/cpp/includes/utils.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/arch/arm32.S
+M	hooklib/src/main/cpp/trampoline/arch/arm64.S
+M	hooklib/src/main/cpp/trampoline/trampoline.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+M	hooklib/src/main/cpp/utils/fake_dlfcn.cpp
+M	hooklib/src/main/cpp/utils/hide_api.h
+A	hooklib/src/main/cpp/utils/offset.cpp
+A	hooklib/src/main/cpp/utils/utils.cpp
+
+0d3eb16;start reconsitution
+M	app/src/main/java/com/swift/sandhook/testHookers/CustmizeHooker.java
+A	hooklib/src/main/cpp/casts/art/art.cpp
+M	hooklib/src/main/cpp/casts/art/art.h
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.h
+
+623c5b2;Update README.md
+M	README.md
+
+6a6129f;enable custom libsandhook
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+A	hooklib/src/main/java/com/swift/sandhook/SandHookConfig.java
+
+a332983;add backup method stubs & remove error flag setting
+M	app/src/main/java/com/swift/sandhook/testHookers/CustmizeHooker.java
+M	hooklib/src/main/cpp/sandhook.cpp
+A	hooklib/src/main/java/com/swift/sandhook/wrapper/BackupMethodStubs.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+e0d65df;SetHasSingleImplementation(false);
+M	hooklib/src/main/cpp/sandhook.cpp
+
+a4a49bb;fix call origin with android p 32bit
+M	hooklib/src/main/cpp/sandhook.cpp
+
+bd2c91b;add hookmode sample
+M	app/src/main/java/com/swift/sandhook/testHookers/CtrHook.java
+M	app/src/main/java/com/swift/sandhook/testHookers/JniHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/LogHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/ObjectHooker.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+d1c1b69;add hookmode modifier
+A	annotation/src/main/java/com/swift/sandhook/annotation/HookMode.java
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+adf9774;add entry code size check
+M	hooklib/src/main/cpp/includes/arch.h
+M	hooklib/src/main/cpp/includes/cast.h
+M	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.h
+
+9586a35;fix 32bit on android p temp
+M	hooklib/src/main/cpp/sandhook.cpp
+
+aef899b;fix code
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+f05f9ec;fix call with classloader
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+5725154;add plugin hooker sample
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+A	hookers/src/main/java/com/swift/sandhook/hookers/PluginHooker.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+ca8d08d;tweak so name
+M	build.gradle
+M	hooklib/CMakeLists.txt
+R100	hooklib/src/main/cpp/sandhooklib.cpp	hooklib/src/main/cpp/sandhook.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+6534400;Merge remote-tracking branch 'origin/master'
+09f7d70;tweak so name & add custom classloader
+M	hooklib/CMakeLists.txt
+R100	hooklib/src/main/cpp/native-lib.cpp	hooklib/src/main/cpp/sandhooklib.cpp
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+97d8990;Update README.md
+M	README.md
+
+dfbb6bb;Update README.md
+M	README.md
+
+b55f58e;update doc
+M	README.md
+
+d23cd30;Merge remote-tracking branch 'origin/master'
+d4879f1;fix kAccCompileDontBother flag
+M	hooklib/src/main/cpp/native-lib.cpp
+
+2de2766;Update README.md
+M	README.md
+
+19b099b;remove useless code
+D	.idea/codeStyles/Project.xml
+D	.idea/gradle.xml
+D	.idea/misc.xml
+D	.idea/runConfigurations.xml
+
+60bc0b0;publish to jcenter & add proguard profile
+M	annotation/build.gradle
+M	build.gradle
+M	hooklib/build.gradle
+M	hooklib/proguard-rules.pro
+D	hooklib/src/androidTest/java/com/swift/sandhook/ExampleInstrumentedTest.java
+D	hooklib/src/test/java/com/swift/sandhook/ExampleUnitTest.java
+
+23f76c5;disable jit >= 7.0
+M	hooklib/src/main/cpp/native-lib.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline.h
+
+e711245;tweak project struct
+A	annotation/.gitignore
+A	annotation/build.gradle
+R087	hooklib/src/main/java/com/swift/sandhook/wrapper/HookClass.java	annotation/src/main/java/com/swift/sandhook/annotation/HookClass.java
+R088	hooklib/src/main/java/com/swift/sandhook/wrapper/HookMethod.java	annotation/src/main/java/com/swift/sandhook/annotation/HookMethod.java
+R089	hooklib/src/main/java/com/swift/sandhook/wrapper/HookMethodBackup.java	annotation/src/main/java/com/swift/sandhook/annotation/HookMethodBackup.java
+R088	hooklib/src/main/java/com/swift/sandhook/wrapper/HookReflectClass.java	annotation/src/main/java/com/swift/sandhook/annotation/HookReflectClass.java
+R088	hooklib/src/main/java/com/swift/sandhook/wrapper/MethodParams.java	annotation/src/main/java/com/swift/sandhook/annotation/MethodParams.java
+R088	hooklib/src/main/java/com/swift/sandhook/wrapper/MethodReflectParams.java	annotation/src/main/java/com/swift/sandhook/annotation/MethodReflectParams.java
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+A	app/src/main/java/com/swift/sandhook/test/Inter.java
+A	app/src/main/java/com/swift/sandhook/test/InterImpl.java
+D	app/src/main/java/com/swift/sandhook/testHookers/AbsHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/CtrHook.java
+M	app/src/main/java/com/swift/sandhook/testHookers/CustmizeHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/JniHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/LogHooker.java
+M	app/src/main/java/com/swift/sandhook/testHookers/ObjectHooker.java
+A	hookers/.gitignore
+A	hookers/build.gradle
+A	hookers/proguard-rules.pro
+A	hookers/src/main/AndroidManifest.xml
+A	hookers/src/main/java/com/swift/sandhook/hookers/AbsHooker.java
+A	hookers/src/main/res/values/strings.xml
+M	hooklib/build.gradle
+M	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+M	settings.gradle
+
+eb548da;Merge pull request #1 from ganyao114/trampoline_rewrite
+e5e9b35;fix 5.1, jni need fix
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+A	app/src/main/java/com/swift/sandhook/testHookers/AbsHooker.java
+M	hooklib/src/main/cpp/trampoline/arch/arm32.S
+M	hooklib/src/main/cpp/trampoline/trampoline.h
+
+6cb22ff;trampoline arm64 rewrite
+M	hooklib/src/main/cpp/trampoline/arch/arm64.S
+M	hooklib/src/main/cpp/trampoline/trampoline.cpp
+M	hooklib/src/main/cpp/trampoline/trampoline.h
+M	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+
+14200be;fix
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	hooklib/src/main/cpp/casts/cast_art_method.h
+M	hooklib/src/main/cpp/native-lib.cpp
+M	hooklib/src/main/cpp/trampoline/arch/arm64.S
+M	hooklib/src/main/java/com/swift/sandhook/ClassNeverCall.java
+
+187156d;add license
+A	LICENSE-2.0.txt
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+
+f6cf74a;add jni test case
+M	README.md
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	app/src/main/java/com/swift/sandhook/test/TestClass.java
+A	app/src/main/java/com/swift/sandhook/testHookers/JniHooker.java
+M	hooklib/src/main/cpp/native-lib.cpp
+
+ff86d7a;Update README.md
+M	README.md
+
+49de2a8;Update README.md
+M	README.md
+
+217c39b;fix abstract method
+M	hooklib/src/main/cpp/native-lib.cpp
+
+c02ab68;Update README.md
+M	README.md
+
+9c8012c;Merge remote-tracking branch 'origin/master'
+5524b33;if virtual method skip compile
+M	hooklib/src/main/cpp/native-lib.cpp
+
+01c7369;Create README.md
+A	README.md
+
+c1e5d6e;test catch exception
+M	.idea/gradle.xml
+M	app/src/main/java/com/swift/sandhook/test/TestClass.java
+M	app/src/main/java/com/swift/sandhook/testHookers/CtrHook.java
+
+4659bc6;remove useless logic
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+a94258b;fix ip register
+M	hooklib/src/main/cpp/trampoline/arch/arm64.S
+M	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+
+4cbbcb5;add test case
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+A	app/src/main/java/com/swift/sandhook/test/TestClass.java
+R097	app/src/main/java/com/swift/sandhook/test/ActivityHooker.java	app/src/main/java/com/swift/sandhook/testHookers/ActivityHooker.java
+A	app/src/main/java/com/swift/sandhook/testHookers/CtrHook.java
+R096	app/src/main/java/com/swift/sandhook/test/CustmizeHooker.java	app/src/main/java/com/swift/sandhook/testHookers/CustmizeHooker.java
+R094	app/src/main/java/com/swift/sandhook/test/LogHooker.java	app/src/main/java/com/swift/sandhook/testHookers/LogHooker.java
+R092	app/src/main/java/com/swift/sandhook/test/ObjectHooker.java	app/src/main/java/com/swift/sandhook/testHookers/ObjectHooker.java
+M	hooklib/src/main/cpp/trampoline/arch/arm64.S
+M	hooklib/src/main/java/com/swift/sandhook/SandHookMethodResolver.java
+
+779037e;tweak project structure
+M	app/build.gradle
+M	app/src/main/java/com/swift/sandhook/test/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/test/LogHooker.java
+M	app/src/main/java/com/swift/sandhook/test/ObjectHooker.java
+A	hooklib/.gitignore
+A	hooklib/CMakeLists.txt
+A	hooklib/build.gradle
+A	hooklib/proguard-rules.pro
+A	hooklib/src/androidTest/java/com/swift/sandhook/ExampleInstrumentedTest.java
+A	hooklib/src/main/AndroidManifest.xml
+R100	app/src/main/cpp/casts/art/art.h	hooklib/src/main/cpp/casts/art/art.h
+R100	app/src/main/cpp/casts/cast_art_method.h	hooklib/src/main/cpp/casts/cast_art_method.h
+R100	app/src/main/cpp/includes/arch.h	hooklib/src/main/cpp/includes/arch.h
+R100	app/src/main/cpp/includes/cast.h	hooklib/src/main/cpp/includes/cast.h
+R100	app/src/main/cpp/includes/utils.h	hooklib/src/main/cpp/includes/utils.h
+R100	app/src/main/cpp/native-lib.cpp	hooklib/src/main/cpp/native-lib.cpp
+R100	app/src/main/cpp/trampoline/arch/arm32.S	hooklib/src/main/cpp/trampoline/arch/arm32.S
+R100	app/src/main/cpp/trampoline/arch/arm64.S	hooklib/src/main/cpp/trampoline/arch/arm64.S
+R100	app/src/main/cpp/trampoline/arch/base.h	hooklib/src/main/cpp/trampoline/arch/base.h
+R100	app/src/main/cpp/trampoline/trampoline.cpp	hooklib/src/main/cpp/trampoline/trampoline.cpp
+R100	app/src/main/cpp/trampoline/trampoline.h	hooklib/src/main/cpp/trampoline/trampoline.h
+R100	app/src/main/cpp/trampoline/trampoline_manager.cpp	hooklib/src/main/cpp/trampoline/trampoline_manager.cpp
+R100	app/src/main/cpp/trampoline/trampoline_manager.h	hooklib/src/main/cpp/trampoline/trampoline_manager.h
+R100	app/src/main/cpp/utils/fake_dlfcn.cpp	hooklib/src/main/cpp/utils/fake_dlfcn.cpp
+R100	app/src/main/cpp/utils/fake_dlfcn.h	hooklib/src/main/cpp/utils/fake_dlfcn.h
+R100	app/src/main/cpp/utils/hide_api.h	hooklib/src/main/cpp/utils/hide_api.h
+R100	app/src/main/cpp/utils/lock.h	hooklib/src/main/cpp/utils/lock.h
+R100	app/src/main/java/com/swift/sandhook/ArtMethodSizeTest.java	hooklib/src/main/java/com/swift/sandhook/ArtMethodSizeTest.java
+R100	app/src/main/java/com/swift/sandhook/ClassNeverCall.java	hooklib/src/main/java/com/swift/sandhook/ClassNeverCall.java
+R096	app/src/main/java/com/swift/sandhook/SandHook.java	hooklib/src/main/java/com/swift/sandhook/SandHook.java
+R100	app/src/main/java/com/swift/sandhook/SandHookMethodResolver.java	hooklib/src/main/java/com/swift/sandhook/SandHookMethodResolver.java
+R100	app/src/main/java/com/swift/sandhook/wrapper/HookClass.java	hooklib/src/main/java/com/swift/sandhook/wrapper/HookClass.java
+R100	app/src/main/java/com/swift/sandhook/wrapper/HookErrorException.java	hooklib/src/main/java/com/swift/sandhook/wrapper/HookErrorException.java
+R100	app/src/main/java/com/swift/sandhook/wrapper/HookMethod.java	hooklib/src/main/java/com/swift/sandhook/wrapper/HookMethod.java
+R100	app/src/main/java/com/swift/sandhook/wrapper/HookMethodBackup.java	hooklib/src/main/java/com/swift/sandhook/wrapper/HookMethodBackup.java
+R100	app/src/main/java/com/swift/sandhook/wrapper/HookReflectClass.java	hooklib/src/main/java/com/swift/sandhook/wrapper/HookReflectClass.java
+R100	app/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java	hooklib/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+R100	app/src/main/java/com/swift/sandhook/wrapper/MethodParams.java	hooklib/src/main/java/com/swift/sandhook/wrapper/MethodParams.java
+R100	app/src/main/java/com/swift/sandhook/wrapper/MethodReflectParams.java	hooklib/src/main/java/com/swift/sandhook/wrapper/MethodReflectParams.java
+A	hooklib/src/main/res/values/strings.xml
+A	hooklib/src/test/java/com/swift/sandhook/ExampleUnitTest.java
+M	settings.gradle
+
+9da3357;kill inline
+M	app/src/main/java/com/swift/sandhook/test/ActivityHooker.java
+
+b209937;re-choose ip registers
+M	app/src/main/cpp/trampoline/arch/arm64.S
+M	app/src/main/java/com/swift/sandhook/test/ActivityHooker.java
+
+4254357;fix 5.1, jni need fix
+M	app/src/main/java/com/swift/sandhook/test/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/test/CustmizeHooker.java
+
+b8775fb;fix thumb code offset
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+
+6ad5dca;only static method need resolve
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+
+31b1326;fix
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+M	app/src/main/java/com/swift/sandhook/test/CustmizeHooker.java
+M	app/src/main/java/com/swift/sandhook/wrapper/HookMethodBackup.java
+M	app/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+M	app/src/main/java/com/swift/sandhook/wrapper/MethodParams.java
+M	app/src/main/java/com/swift/sandhook/wrapper/MethodReflectParams.java
+
+da81d7b;fix 5.1 thumb
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/trampoline_manager.h
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/test/CustmizeHooker.java
+
+c5b4c70;fix offset
+M	app/src/main/cpp/casts/cast_art_method.h
+M	app/src/main/cpp/includes/cast.h
+
+3cace0f;fix artmethod size in 5.0
+M	app/src/main/cpp/casts/cast_art_method.h
+
+6378231;ensure static method resolved
+M	app/src/main/cpp/casts/art/art.h
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+M	app/src/main/cpp/utils/hide_api.h
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+R063	app/src/main/java/com/swift/sandhook/ActivityHooker.java	app/src/main/java/com/swift/sandhook/test/ActivityHooker.java
+A	app/src/main/java/com/swift/sandhook/test/CustmizeHooker.java
+R095	app/src/main/java/com/swift/sandhook/LogHooker.java	app/src/main/java/com/swift/sandhook/test/LogHooker.java
+R093	app/src/main/java/com/swift/sandhook/ObjectHooker.java	app/src/main/java/com/swift/sandhook/test/ObjectHooker.java
+
+790083c;done arm32 compat
+M	app/src/main/cpp/trampoline/arch/arm32.S
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+
+c2bf39e;done arm32 compat
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/arch/arm32.S
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+M	app/src/main/java/com/swift/sandhook/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+
+bd2a9f9;half fix for thumb hook
+M	.idea/misc.xml
+M	app/src/main/cpp/trampoline/arch/arm32.S
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+M	app/src/main/java/com/swift/sandhook/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+
+e75ab9c;add thumb code
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/arch/arm32.S
+M	app/src/main/cpp/trampoline/arch/base.h
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+M	app/src/main/cpp/trampoline/trampoline_manager.h
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+
+22ec6bc;fix tweak opcode imm
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+
+ef518c6;revert error change
+M	app/src/main/cpp/trampoline/trampoline.h
+
+61a289a;fix typo
+M	app/src/main/cpp/casts/cast_art_method.h
+
+79e2b1b;use replacement hook in arm32 tmp
+M	app/src/main/cpp/includes/arch.h
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/java/com/swift/sandhook/SandHookMethodResolver.java
+
+86681ef;done arm32 impl
+M	app/src/main/cpp/casts/art/art.h
+M	app/src/main/cpp/casts/cast_art_method.h
+M	app/src/main/cpp/trampoline/arch/arm32.S
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/java/com/swift/sandhook/SandHookMethodResolver.java
+
+35ac9ab;arm32 trampoline demo
+M	app/src/main/cpp/trampoline/arch/arm32.S
+M	app/src/main/cpp/trampoline/trampoline.h
+
+cef1dcc;start impl arm32
+M	app/src/main/cpp/trampoline/arch/arm32.S
+R067	app/src/main/java/com/swift/sandhook/wrapper/LogHooker.java	app/src/main/java/com/swift/sandhook/LogHooker.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+A	app/src/main/java/com/swift/sandhook/ObjectHooker.java
+
+7a8cde9;add call origin trampoline
+M	app/src/main/cpp/trampoline/arch/arm32.S
+M	app/src/main/cpp/trampoline/arch/arm64.S
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+
+cfa2690;invoke backup to resolve static method
+M	app/src/main/cpp/casts/cast_art_method.h
+M	app/src/main/cpp/includes/cast.h
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/arch/arm64.S
+M	app/src/main/cpp/trampoline/arch/base.h
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+M	app/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+A	app/src/main/java/com/swift/sandhook/wrapper/LogHooker.java
+
+8ffd553;done call origin method
+M	app/src/main/cpp/casts/cast_art_method.h
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/arch/arm64.S
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+M	app/src/main/java/com/swift/sandhook/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/ClassNeverCall.java
+M	app/src/main/java/com/swift/sandhook/MyApp.java
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+M	app/src/main/java/com/swift/sandhook/SandHookMethodResolver.java
+
+beabc0f;done inline hook
+M	app/CMakeLists.txt
+M	app/build.gradle
+M	app/src/main/cpp/includes/arch.h
+M	app/src/main/cpp/includes/utils.h
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/arch/arm64.S
+M	app/src/main/cpp/trampoline/trampoline.h
+A	app/src/main/cpp/utils/fake_dlfcn.cpp
+A	app/src/main/cpp/utils/fake_dlfcn.h
+A	app/src/main/cpp/utils/hide_api.h
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+
+04f28dc;done replacement hook
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/cpp/includes/cast.h
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/java/com/swift/sandhook/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+A	app/src/main/java/com/swift/sandhook/MyApp.java
+
+8dc5d1b;add global ref
+M	app/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+729a53f;fix
+M	app/src/main/cpp/casts/art/art.h
+M	app/src/main/cpp/casts/cast_art_method.h
+M	app/src/main/cpp/native-lib.cpp
+
+c926018;done demo
+M	app/src/main/cpp/casts/cast_art_method.h
+M	app/src/main/cpp/includes/utils.h
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+M	app/src/main/cpp/trampoline/trampoline_manager.h
+M	app/src/main/java/com/swift/sandhook/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+M	app/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+8c3f0c1;fix code
+M	app/src/main/cpp/casts/art/art.h
+M	app/src/main/cpp/casts/cast_art_method.h
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+
+c976181;tweak arm64 asm
+M	app/src/main/cpp/trampoline/arch/arm64.S
+
+faa13b1;done trampoline manager
+M	app/build.gradle
+A	app/src/main/cpp/casts/art/art.h
+D	app/src/main/cpp/casts/art/art_6_0.h
+M	app/src/main/cpp/casts/cast_art_method.h
+M	app/src/main/cpp/includes/arch.h
+M	app/src/main/cpp/includes/cast.h
+M	app/src/main/cpp/includes/utils.h
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+M	app/src/main/cpp/trampoline/trampoline_manager.h
+
+6ab163a;add trampoline manager
+D	.idea/caches/build_file_checksums.ser
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+M	app/src/main/cpp/trampoline/trampoline_manager.cpp
+M	app/src/main/cpp/trampoline/trampoline_manager.h
+A	app/src/main/cpp/utils/lock.h
+
+d70a536;done trampoline
+M	app/CMakeLists.txt
+M	app/src/main/cpp/includes/arch.h
+M	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+A	app/src/main/cpp/trampoline/trampoline_manager.cpp
+A	app/src/main/cpp/trampoline/trampoline_manager.h
+A	app/src/main/java/com/swift/sandhook/ClassNeverCall.java
+
+812a459;Merge remote-tracking branch 'origin/master'
+08fe90f;done s
+M	.idea/caches/build_file_checksums.ser
+M	app/CMakeLists.txt
+M	app/build.gradle
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/arch/arm32.S
+M	app/src/main/cpp/trampoline/arch/arm64.S
+M	app/src/main/cpp/trampoline/arch/base.h
+M	app/src/main/cpp/trampoline/trampoline.cpp
+
+2c6f430;add
+M	.idea/caches/build_file_checksums.ser
+M	app/CMakeLists.txt
+M	app/build.gradle
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/arch/arm32.S
+M	app/src/main/cpp/trampoline/arch/arm64.S
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+
+27782e4;fix code
+A	app/src/main/cpp/trampoline/arch/arm32.S
+M	app/src/main/cpp/trampoline/arch/arm64.S
+
+48df9f4;fix build
+M	app/build.gradle
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/arch/arm64.S
+M	app/src/main/cpp/trampoline/arch/base.h
+M	app/src/main/cpp/trampoline/trampoline.h
+
+efb8f4c;remove useless code
+D	app/src/main/cpp/casts/CastArtMethod.h
+D	app/src/main/cpp/includes/ICast.h
+
+5612525;add arm64.s
+M	app/CMakeLists.txt
+M	app/build.gradle
+M	app/src/main/cpp/native-lib.cpp
+M	app/src/main/cpp/trampoline/arch/arm64.S
+M	app/src/main/cpp/trampoline/arch/base.h
+A	app/src/main/cpp/trampoline/trampoline.cpp
+M	app/src/main/cpp/trampoline/trampoline.h
+
+e4af859;fix C++
+M	app/src/main/cpp/includes/cast.h
+A	app/src/main/cpp/trampoline/arch/arm64.S
+A	app/src/main/cpp/trampoline/arch/base.h
+A	app/src/main/cpp/trampoline/trampoline.h
+
+af878e6;tweak code
+A	app/src/main/cpp/casts/cast_art_method.h
+D	app/src/main/cpp/includes/IMethodResolver.h
+A	app/src/main/cpp/includes/cast.h
+M	app/src/main/cpp/native-lib.cpp
+
+217cb80;fix offset
+M	app/src/main/cpp/casts/CastArtMethod.h
+M	app/src/main/cpp/includes/utils.h
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+92f2647;fix hook for ctor
+M	app/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+
+3be9351;add hook wrapper
+M	app/src/main/cpp/casts/CastArtMethod.h
+M	app/src/main/cpp/includes/utils.h
+A	app/src/main/java/com/swift/sandhook/ActivityHooker.java
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+A	app/src/main/java/com/swift/sandhook/wrapper/HookClass.java
+A	app/src/main/java/com/swift/sandhook/wrapper/HookErrorException.java
+A	app/src/main/java/com/swift/sandhook/wrapper/HookMethod.java
+A	app/src/main/java/com/swift/sandhook/wrapper/HookMethodBackup.java
+A	app/src/main/java/com/swift/sandhook/wrapper/HookReflectClass.java
+A	app/src/main/java/com/swift/sandhook/wrapper/HookWrapper.java
+A	app/src/main/java/com/swift/sandhook/wrapper/MethodParams.java
+A	app/src/main/java/com/swift/sandhook/wrapper/MethodReflectParams.java
+
+13f17d1;sync code
+M	app/src/main/cpp/casts/CastArtMethod.h
+M	app/src/main/cpp/includes/ICast.h
+M	app/src/main/cpp/includes/utils.h
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+M	app/src/main/java/com/swift/sandhook/SandHookMethodResolver.java
+
+3d7db2a;fix resolve cache
+M	app/src/main/cpp/casts/CastArtMethod.h
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/SandHookMethodResolver.java
+
+8775fed;[ResolveMethod]add resolve method in java
+M	app/src/main/cpp/casts/CastArtMethod.h
+A	app/src/main/cpp/includes/IMethodResolver.h
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+M	app/src/main/java/com/swift/sandhook/SandHook.java
+A	app/src/main/java/com/swift/sandhook/SandHookMethodResolver.java
+
+a2623a3;fix bugs
+M	app/src/main/cpp/casts/CastArtMethod.h
+M	app/src/main/cpp/includes/ICast.h
+M	app/src/main/cpp/includes/arch.h
+M	app/src/main/cpp/includes/utils.h
+A	app/src/main/java/com/swift/sandhook/SandHook.java
+
+032ebf9;cal accessFlag offset
+M	app/src/main/cpp/casts/CastArtMethod.h
+M	app/src/main/cpp/includes/ICast.h
+A	app/src/main/cpp/includes/utils.h
+
+1347ca1;add offset cal
+M	app/CMakeLists.txt
+D	app/src/main/cpp/casts/CastArtMethod.cpp
+A	app/src/main/cpp/casts/CastArtMethod.h
+A	app/src/main/cpp/casts/art/art_6_0.h
+M	app/src/main/cpp/includes/ICast.h
+M	app/src/main/cpp/native-lib.cpp
+A	app/src/main/java/com/swift/sandhook/ArtMethodSizeTest.java
+M	app/src/main/java/com/swift/sandhook/MainActivity.java
+
+30b0988;first commit
+A	.gitignore
+A	.idea/caches/build_file_checksums.ser
+A	.idea/codeStyles/Project.xml
+A	.idea/gradle.xml
+A	.idea/misc.xml
+A	.idea/runConfigurations.xml
+A	app/.gitignore
+A	app/CMakeLists.txt
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/com/swift/sandhook/ExampleInstrumentedTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/cpp/casts/CastArtMethod.cpp
+A	app/src/main/cpp/includes/ICast.h
+A	app/src/main/cpp/includes/arch.h
+A	app/src/main/cpp/native-lib.cpp
+A	app/src/main/java/com/swift/sandhook/MainActivity.java
+A	app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+A	app/src/main/res/drawable/ic_launcher_background.xml
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/content_main.xml
+A	app/src/main/res/menu/menu_main.xml
+A	app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+A	app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/test/java/com/swift/sandhook/ExampleUnitTest.java
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle

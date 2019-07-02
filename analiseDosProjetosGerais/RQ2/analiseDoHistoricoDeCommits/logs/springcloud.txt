@@ -1,0 +1,194 @@
+4011f08;Merge branch 'master' of https://github.com/liaokailin/springcloud
+01b2c55;consul
+A	consul/pom.xml
+A	consul/src/main/java/com/lkl/consul/HealthCheck.java
+A	consul/src/main/java/com/lkl/consul/KeyValues.java
+A	consul/src/main/java/com/lkl/consul/ScheduleKV.java
+A	consul/src/main/java/com/lkl/consul/ServiceRegister.java
+A	consul/src/main/java/com/lkl/consul/archaius/QuickStart.java
+A	consul/src/main/resources/application.properties
+A	note/10.springcloud.zuul.md
+M	note/9.zuul.md
+M	pom.xml
+
+fc2b10e;Update README.md
+M	README.md
+
+66e2578;zuul
+M	note/9.zuul.md
+
+d2c5fc4;zuul
+A	myzuul/pom.xml
+A	myzuul/src/main/java/com/lkl/springcloud/zuul/Application.java
+A	myzuul/src/main/java/com/lkl/springcloud/zuul/filters/groovy/pre/PreRequest.groovy
+M	note/9.zuul.md
+M	pom.xml
+M	turbine/pom.xml
+D	zuul/pom.xml
+D	zuul/src/main/java/com/lkl/springcloud/zuul/Application.java
+
+ec4ef0a;zuul
+M	pom.xml
+A	zuul/pom.xml
+A	zuul/src/main/java/com/lkl/springcloud/zuul/Application.java
+
+18447e9;zuul
+M	.gitignore
+M	eureka/src/main/java/com/lkl/springcloud/eureka/Application.java
+A	note/9.zuul.md
+M	pom.xml
+D	zuul/pom.xml
+
+efff744;feign.md
+M	feign-ribbion-eureka/src/main/java/com/lkl/springcloud/feign/Application.java
+M	note/7.ribbon with eureka.md
+A	note/8.feign.md
+
+18a90f2;zuul
+A	feign-ribbion-eureka/pom.xml
+A	feign-ribbion-eureka/src/main/java/com/lkl/springcloud/feign/Application.java
+A	feign-ribbion-eureka/src/main/resources/application.properties
+A	feign-ribbion-eureka/src/test/java/com/lkl/springcloud/feign/EurekaServerApplication.java
+A	feign-ribbion-eureka/src/test/java/com/lkl/springcloud/feign/SimpleApplication.java
+A	feign-ribbion-eureka/src/test/resources/eureka.properties
+A	feign-ribbion-eureka/src/test/resources/simple.properties
+A	feign/pom.xml
+A	feign/src/main/java/com/lkl/springcloud/feign/Application.java
+A	netflix-feign/pom.xml
+A	netflix-feign/src/main/java/com/lkl/netflix/feign/GitHubExample.java
+A	note/6.ribbon.md
+A	note/7.ribbon with eureka.md
+M	pom.xml
+M	ribbon-eureka/src/test/java/com/lkl/springcloud/ribbon/SimpleApplication.java
+M	ribbon/src/main/resources/application.properties
+M	ribbon/src/main/resources/config.properties
+A	zuul/pom.xml
+
+f45a328;ribbon
+M	.gitignore
+M	pom.xml
+A	ribbon-eureka/pom.xml
+A	ribbon-eureka/src/main/java/com/lkl/springcloud/ribbon/Application.java
+A	ribbon-eureka/src/main/resources/application.properties
+A	ribbon-eureka/src/test/java/com/lkl/springcloud/ribbon/EurekaServerApplication.java
+A	ribbon-eureka/src/test/java/com/lkl/springcloud/ribbon/SimpleApplication.java
+A	ribbon-eureka/src/test/resources/eureka.properties
+A	ribbon-eureka/src/test/resources/simple.properties
+M	ribbon/pom.xml
+M	ribbon/src/main/java/com/lkl/springcloud/ribbon/MyDefaultRibbonConfig.java
+M	ribbon/src/main/java/com/lkl/springcloud/ribbon/RibbonDefaultConfigApplication.java
+M	ribbon/src/main/resources/application.properties
+A	ribbon/src/main/resources/config.properties
+
+4ef468b;ribbon
+M	note/4.hystrix.md
+M	note/5.turbine.md
+M	pom.xml
+A	ribbon/pom.xml
+A	ribbon/src/main/java/com/lkl/springcloud/ribbon/MyDefaultRibbonConfig.java
+A	ribbon/src/main/java/com/lkl/springcloud/ribbon/RibbonDefaultConfigApplication.java
+A	ribbon/src/main/resources/application.properties
+A	ribbon/src/test/java/com/lkl/springcloud/ribbon/BasicTest.java
+A	ribbon/src/test/resources/sample-client.properties
+R100	turbine/src/test/resource/eureka.properties	turbine/src/test/resources/eureka.properties
+R100	turbine/src/test/resource/node01.properties	turbine/src/test/resources/node01.properties
+R100	turbine/src/test/resource/node02.properties	turbine/src/test/resources/node02.properties
+
+63199f6;turbine
+M	note/3.eureka.md
+R100	note/hystrix.md	note/4.hystrix.md
+A	note/5.turbine.md
+M	turbine/src/main/java/com/lkl/springcloud/turbine/Application.java
+M	turbine/src/main/resources/application.properties
+A	turbine/src/test/java/com/lkl/springcloud/turbine/EurekaServer.java
+A	turbine/src/test/java/com/lkl/springcloud/turbine/Node01.java
+A	turbine/src/test/java/com/lkl/springcloud/turbine/Node02.java
+A	turbine/src/test/resource/eureka.properties
+A	turbine/src/test/resource/node01.properties
+A	turbine/src/test/resource/node02.properties
+
+9acbab5;hystrix
+M	note/hystrix.md
+
+b61c358;hystrix
+M	note/hystrix.md
+
+530e970;hystrix
+M	note/hystrix.md
+
+caab7a1;hystrix
+M	eureka-server/READER.md
+M	eureka/src/main/java/com/lkl/springcloud/eureka/DiscoveryService.java
+A	hystrix/pom.xml
+A	hystrix/src/main/java/com/lkl/springcloud/hystrix/Application.java
+A	hystrix/src/main/java/com/lkl/springcloud/hystrix/controller/HystrixController.java
+A	hystrix/src/main/java/com/lkl/springcloud/hystrix/service/CallDependencyService.java
+A	hystrix/src/main/java/com/lkl/springcloud/hystrix/service/HystrixService.java
+A	hystrix/src/main/resources/application.properties
+M	"note/1.springcloud config \345\205\245\351\227\250.md"
+M	"note/2.\351\205\215\347\275\256\344\277\256\346\224\271.md"
+A	note/3.eureka.md
+A	note/hystrix.md
+A	note/hystrix.pdf
+M	pom.xml
+A	turbine/pom.xml
+A	turbine/src/main/java/com/lkl/springcloud/turbine/Application.java
+A	turbine/src/main/resources/application.properties
+
+f290ab9;eureka
+R100	eureka/READER.md	eureka/README.md
+
+7f20320;eureka
+M	eureka/READER.md
+
+5c70458;eureka
+A	eureka-server-replicas-two/pom.xml
+A	eureka-server-replicas-two/src/main/java/com/lkl/springcloud/eureka/server/Application.java
+A	eureka-server-replicas-two/src/main/resources/application.yml
+A	eureka-server-replicas/pom.xml
+A	eureka-server-replicas/src/main/java/com/lkl/springcloud/eureka/server/Application.java
+A	eureka-server-replicas/src/main/resources/application.yml
+A	eureka-server/READER.md
+A	eureka-server/pom.xml
+A	eureka-server/src/main/java/com/lkl/springcloud/eureka/Application.java
+A	eureka-server/src/main/resources/application.yml
+A	eureka/READER.md
+A	eureka/pom.xml
+A	eureka/src/main/java/com/lkl/springcloud/eureka/Application.java
+A	eureka/src/main/java/com/lkl/springcloud/eureka/DiscoveryService.java
+A	eureka/src/main/resources/application.properties
+M	pom.xml
+
+2e1923e;dynamic modify config
+M	config-client/src/main/java/com/lkl/springcloud/config/client/Application.java
+A	config-client/src/main/resources/application.properties
+D	config-client/target/classes/bootstrap.properties
+D	config-client/target/classes/com/lkl/springcloud/config/client/Application.class
+D	config-server/target/classes/application.properties
+D	config-server/target/classes/bootstrap.properties
+D	config-server/target/classes/com/lkl/springcloud/config/server/Application.class
+A	"note/2.\351\205\215\347\275\256\344\277\256\346\224\271.md"
+
+1896d1e;note
+M	"note/1.springcloud config \345\205\245\351\227\250.md"
+
+dac0ba7;note
+M	"note/1.springcloud config \345\205\245\351\227\250.md"
+
+15426cc;spring cloud
+A	.gitignore
+A	README.md
+A	config-client/pom.xml
+A	config-client/src/main/java/com/lkl/springcloud/config/client/Application.java
+A	config-client/src/main/resources/bootstrap.properties
+A	config-client/target/classes/bootstrap.properties
+A	config-client/target/classes/com/lkl/springcloud/config/client/Application.class
+A	config-server/pom.xml
+A	config-server/src/main/java/com/lkl/springcloud/config/server/Application.java
+A	config-server/src/main/resources/application.properties
+A	config-server/src/main/resources/bootstrap.properties
+A	config-server/target/classes/application.properties
+A	config-server/target/classes/bootstrap.properties
+A	config-server/target/classes/com/lkl/springcloud/config/server/Application.class
+A	"note/1.springcloud config \345\205\245\351\227\250.md"
+A	pom.xml

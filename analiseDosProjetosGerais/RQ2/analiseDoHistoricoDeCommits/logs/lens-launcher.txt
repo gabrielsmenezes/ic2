@@ -1,0 +1,1988 @@
+d614501;Release 2.3.9
+M	app/build.gradle
+
+22f8cd0;Merge pull request #27 from asimaruk/click-no-animation
+0d52802;Perform no animation for single click on app.
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+68c1086;Add license
+A	LICENSE.md
+
+6ad9b2e;Release 2.3.7
+M	app/build.gradle
+M	resources/art/lens_launcher.sketch
+
+b86e213;Update SDK build tools and material dialogs
+M	app/build.gradle
+
+a10a726;Update art
+M	app/src/main/res/drawable-hdpi/im_about.png
+M	app/src/main/res/drawable-mdpi/im_about.png
+M	app/src/main/res/drawable-xhdpi/im_about.png
+M	app/src/main/res/drawable-xxhdpi/im_about.png
+M	app/src/main/res/drawable-xxxhdpi/im_about.png
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	resources/art/lens_launcher.sketch
+D	resources/art/lens_launcher_app_icon.png
+D	resources/art/lens_launcher_app_icon.sketch
+
+7e352aa;Release 2.3.6
+M	app/build.gradle
+
+4d4f785;Update about text
+M	app/src/main/res/values/strings.xml
+
+35b4e0a;Update libraries and dependencies
+M	app/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+9f139e8;Merge pull request #24 from premnirmal/master
+4343638;increase max icon size
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+
+b2f31d5;Update dependencies and bump version
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+
+136bd54;Release 2.3.4
+M	app/build.gradle
+
+965762b;Update support libs and butterknife
+M	app/build.gradle
+
+2249b33;Merge pull request #22 from premnirmal/master
+882b1de;no need to override onAttachedToWindow() anymore
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+
+64e3e4c;Merge remote-tracking branch 'origin/master'
+8b23d9c;adjust transparent system bars in onResume so that the launcher displays correctly after opening a fullscreen app
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+
+b1f4dc8;Merge pull request #20 from premnirmal/master
+11900eb;fixing calendar app icon for android 7.1.1 - use PackageManager.getApplicationIcon(String) instead of Context.getDrawable(Context, int)
+M	app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+
+b61542d;Bump version
+M	app/build.gradle
+
+e4e04b0;Fix 7.1 app shorcuts
+M	app/src/main/AndroidManifest.xml
+
+dea414d;Release 2.3.2
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/adapter/AppRecyclerAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/background/BroadcastReceivers.java
+A	app/src/main/java/nickrout/lenslauncher/background/NightModeObservable.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/BaseActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+A	app/src/main/java/nickrout/lenslauncher/util/NightModeUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+A	app/src/main/res/animator/raise.xml
+A	app/src/main/res/drawable-hdpi/ic_shortcut_apps.png
+A	app/src/main/res/drawable-hdpi/ic_shortcut_settings.png
+A	app/src/main/res/drawable-mdpi/ic_shortcut_apps.png
+A	app/src/main/res/drawable-mdpi/ic_shortcut_settings.png
+A	app/src/main/res/drawable-xhdpi/ic_shortcut_apps.png
+A	app/src/main/res/drawable-xhdpi/ic_shortcut_settings.png
+A	app/src/main/res/drawable-xxhdpi/ic_shortcut_apps.png
+A	app/src/main/res/drawable-xxhdpi/ic_shortcut_settings.png
+A	app/src/main/res/drawable-xxxhdpi/ic_shortcut_apps.png
+A	app/src/main/res/drawable-xxxhdpi/ic_shortcut_settings.png
+M	app/src/main/res/layout/activity_about.xml
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/layout/fragment_apps.xml
+M	app/src/main/res/layout/fragment_lens.xml
+M	app/src/main/res/layout/fragment_settings.xml
+M	app/src/main/res/layout/recycler_item_app.xml
+M	app/src/main/res/menu/menu_app.xml
+D	app/src/main/res/menu/menu_app_lens_launcher.xml
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/values-night/colors.xml
+A	app/src/main/res/values-night/styles.xml
+A	app/src/main/res/values-w640dp/integers.xml
+A	app/src/main/res/values-w820dp/dimen.xml
+M	app/src/main/res/values/arrays.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/dimen.xml
+A	app/src/main/res/values/integers.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+A	app/src/main/res/xml/shortcuts.xml
+
+2b58dda;Merge pull request #19 from dfrankland/add-build-tools
+d6e470b;Update README.md with "Build From Source" section
+M	README.md
+
+9c274d6;Update .gitignore with Android SDK files
+M	.gitignore
+
+5d35e09;Add Docker Compose to build APK
+A	docker-compose.yml
+A	docker-entrypoint.sh
+
+130b48f;Update gradle and dependencies
+M	app/build.gradle
+M	build.gradle
+
+e0a3e85;Merge remote-tracking branch 'origin/master'
+33530d7;Merge master, resolve conflicts
+f67aca4;Merge pull request #18 from premnirmal/master
+7db06ab;build tools version updated to 25.0.1
+M	app/build.gradle
+
+707ecd3;when using the google pixel, the decoded bitmap is null, so get the drawable and convert that to a bitmap. fixing #17
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+
+0b65294;Remove unused import
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+69dddb9;Launch animation null handling
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+ae1dade;Improve launch animation
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/adapter/AppRecyclerAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+bcb82a4;Update dependencies
+M	app/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+9fd7566;Update grade
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+e41e6c6;Release 2.2.1
+M	app/build.gradle
+
+7b91063;Better selection of back image (palette)
+M	app/src/main/java/nickrout/lenslauncher/util/ColorUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+
+770f4b4;Much better handling of icon packs with back/mask/front images
+M	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+
+15b27bd;Proper support for multi window
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/AppsSingleton.java
+M	app/src/main/java/nickrout/lenslauncher/adapter/AppRecyclerAdapter.java
+A	app/src/main/java/nickrout/lenslauncher/background/BackgroundChangedObservable.java
+M	app/src/main/java/nickrout/lenslauncher/background/BroadcastReceivers.java
+A	app/src/main/java/nickrout/lenslauncher/background/VisibilityChangedObservable.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+
+3d9c3d8;Better setting/drawing of system backgrounds
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+1587cfa;Better handling of system bars
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+78a92ac;Updated libs for Android N
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/LensFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+
+ea9e12d;Release 2.2.0
+M	app/build.gradle
+
+b49bc5e;Edited max values for distortion / scale
+M	app/src/main/java/nickrout/lenslauncher/ui/LensFragment.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+
+047c6de;More refactoring
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/LensLauncherApplication.java
+M	app/src/main/java/nickrout/lenslauncher/background/BroadcastReceivers.java
+R065	app/src/main/java/nickrout/lenslauncher/background/SortedObservable.java	app/src/main/java/nickrout/lenslauncher/background/EditedObservable.java
+R063	app/src/main/java/nickrout/lenslauncher/background/UpdateObservable.java	app/src/main/java/nickrout/lenslauncher/background/UpdatedObservable.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+5c6b2d4;Big refactor, faster app hiding
+M	app/src/main/AndroidManifest.xml
+R097	app/src/main/java/nickrout/lenslauncher/util/AppsSingleton.java	app/src/main/java/nickrout/lenslauncher/AppsSingleton.java
+M	app/src/main/java/nickrout/lenslauncher/LensLauncherApplication.java
+M	app/src/main/java/nickrout/lenslauncher/adapter/AppRecyclerAdapter.java
+R095	app/src/main/java/nickrout/lenslauncher/util/BroadcastReceivers.java	app/src/main/java/nickrout/lenslauncher/background/BroadcastReceivers.java
+R092	app/src/main/java/nickrout/lenslauncher/util/LoadedObservable.java	app/src/main/java/nickrout/lenslauncher/background/LoadedObservable.java
+R090	app/src/main/java/nickrout/lenslauncher/util/SortAppsTask.java	app/src/main/java/nickrout/lenslauncher/background/SortAppsTask.java
+R092	app/src/main/java/nickrout/lenslauncher/util/SortedObservable.java	app/src/main/java/nickrout/lenslauncher/background/SortedObservable.java
+R092	app/src/main/java/nickrout/lenslauncher/util/UpdateAppsTask.java	app/src/main/java/nickrout/lenslauncher/background/UpdateAppsTask.java
+R092	app/src/main/java/nickrout/lenslauncher/util/UpdateObservable.java	app/src/main/java/nickrout/lenslauncher/background/UpdateObservable.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+b05f71d;Faster sorting! And sort by open count
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/LensLauncherApplication.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppSorter.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/BroadcastReceivers.java
+A	app/src/main/java/nickrout/lenslauncher/util/SortAppsTask.java
+A	app/src/main/java/nickrout/lenslauncher/util/SortedObservable.java
+M	app/src/main/java/nickrout/lenslauncher/util/UpdateAppsTask.java
+M	app/src/main/res/values/strings.xml
+
+451f810;Release 2.1.2
+M	app/build.gradle
+
+21f7bd9;Better handling of 0 / 1 items in grid
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+
+2abea2b;Improved grid calculation algorithm
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+
+5aa9052;Fix some crashes in IconPackManager
+M	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+
+547e92a;Release 2.1.1
+M	app/build.gradle
+
+96dce02;Downgrade material dialogs
+M	app/build.gradle
+
+077796b;Update MaterialDialogs
+M	app/build.gradle
+
+1a23586;Fixed interface between Settings fragments
+M	app/src/main/java/nickrout/lenslauncher/ui/AppsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsFragment.java
+M	app/src/main/res/layout/fragment_lens.xml
+M	app/src/main/res/values-land/dimen.xml
+M	app/src/main/res/values/dimen.xml
+
+bd43f78;Improved system offsets
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+A	app/src/main/res/values-land/dimen.xml
+M	app/src/main/res/values/dimen.xml
+
+2fb6d65;First attempt at portrait orientation
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+
+3c4feba;Bolded 'Open' in app menu
+M	app/src/main/res/values/strings.xml
+
+262cb0e;Split app menu into uninstall / app info
+M	app/src/main/java/nickrout/lenslauncher/adapter/AppRecyclerAdapter.java
+M	app/src/main/res/menu/menu_app.xml
+M	app/src/main/res/menu/menu_app_lens_launcher.xml
+M	app/src/main/res/values/strings.xml
+
+7414348;Increased max icon size
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/values/strings.xml
+
+3cb87d7;Added ADW launcher icon pack filter
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/res/values/arrays.xml
+
+b2cc5bd;Release 2.1.0
+M	app/build.gradle
+
+8b4ac25;Working background selector
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsFragment.java
+M	app/src/main/res/layout/fragment_settings.xml
+
+a1ccebd;Started adding background chooser
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/layout/fragment_settings.xml
+M	app/src/main/res/values/arrays.xml
+M	app/src/main/res/values/strings.xml
+
+90279c3;Update ButterKnife to 8.1.0
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/adapter/AppRecyclerAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsFragment.java
+M	build.gradle
+
+7c38aa6;Release 2.0.4
+M	app/build.gradle
+
+37d5bac;Removed usages of unused drag drop recycler
+M	app/build.gradle
+R067	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java	app/src/main/java/nickrout/lenslauncher/adapter/AppRecyclerAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+921920b;Fix occasional OOM crash in IconPackManager
+M	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+
+bb70321;Removed (most) fonts
+M	app/build.gradle
+D	app/src/main/assets/fonts/Roboto-Bold.ttf
+D	app/src/main/assets/fonts/Roboto-Regular.ttf
+M	app/src/main/java/nickrout/lenslauncher/LensLauncherApplication.java
+M	app/src/main/java/nickrout/lenslauncher/ui/BaseActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/res/layout/fragment_lens.xml
+M	app/src/main/res/layout/fragment_settings.xml
+M	app/src/main/res/layout/recycler_item_app.xml
+
+f8d285a;Release 2.0.3
+M	app/build.gradle
+
+4392dcd;Font update
+M	app/build.gradle
+A	app/src/main/assets/fonts/Roboto-Bold.ttf
+A	app/src/main/assets/fonts/Roboto-Regular.ttf
+A	app/src/main/assets/fonts/RobotoCondensed-Regular.ttf
+M	app/src/main/java/nickrout/lenslauncher/LensLauncherApplication.java
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/BaseActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/res/layout/fragment_lens.xml
+M	app/src/main/res/layout/fragment_settings.xml
+R090	app/src/main/res/layout/recycler_item_app_arranger.xml	app/src/main/res/layout/recycler_item_app.xml
+
+cca8e3d;Fix icon pack manager crash
+M	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+
+6f953cc;Release 2.0.2
+M	app/build.gradle
+
+145e83c;Better grid algorithm
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+M	app/src/main/res/values/dimen.xml
+
+9b1124a;Release 2.0.1
+M	app/build.gradle
+
+bb2e1cb;Fixed launching issue
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+A	app/src/main/res/menu/menu_app_lens_launcher.xml
+
+9229fbc;Updated demo gif
+M	resources/art/lens_launcher_demo.gif
+
+7b4d653;Release 2.0.0
+M	app/build.gradle
+
+b265f69;Collapsing toolbar title fade in About
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+
+01a7348;Not sending broadcast if default sort selected
+M	app/src/main/java/nickrout/lenslauncher/ui/AppsFragment.java
+
+1dd49c5;Fixed home launching
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/LauncherUtil.java
+
+0edf086;Redesigned settings, faster loading
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/nickrout/lenslauncher/LensLauncherApplication.java
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+D	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+A	app/src/main/java/nickrout/lenslauncher/ui/AppsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+A	app/src/main/java/nickrout/lenslauncher/ui/LensFragment.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+A	app/src/main/java/nickrout/lenslauncher/ui/SettingsFragment.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppsSingleton.java
+A	app/src/main/java/nickrout/lenslauncher/util/BroadcastReceivers.java
+M	app/src/main/java/nickrout/lenslauncher/util/LauncherUtil.java
+A	app/src/main/java/nickrout/lenslauncher/util/LoadedObservable.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/java/nickrout/lenslauncher/util/UpdateAppsTask.java
+R063	app/src/main/java/nickrout/lenslauncher/util/ObservableObject.java	app/src/main/java/nickrout/lenslauncher/util/UpdateObservable.java
+M	app/src/main/res/layout/activity_about.xml
+D	app/src/main/res/layout/activity_app_arranger.xml
+M	app/src/main/res/layout/activity_home.xml
+M	app/src/main/res/layout/activity_settings.xml
+A	app/src/main/res/layout/fragment_apps.xml
+A	app/src/main/res/layout/fragment_lens.xml
+A	app/src/main/res/layout/fragment_settings.xml
+R100	app/src/main/res/menu/menu_app_arranger_element.xml	app/src/main/res/menu/menu_app.xml
+M	app/src/main/res/menu/menu_settings.xml
+M	app/src/main/res/values/dimen.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+b5d0eda;Release 1.5.3
+M	app/build.gradle
+
+74b2b87;Grade update
+M	build.gradle
+
+cbfe75f;Added BG gradient for light color wallpaper
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+A	app/src/main/res/drawable-hdpi/workspace_bg.9.png
+A	app/src/main/res/drawable-mdpi/workspace_bg.9.png
+A	app/src/main/res/drawable-xhdpi/workspace_bg.9.png
+A	app/src/main/res/drawable-xxhdpi/workspace_bg.9.png
+M	app/src/main/res/values/styles.xml
+
+ae0f7ef;Added transition animations
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+A	app/src/main/res/anim/fade_in.xml
+A	app/src/main/res/anim/fade_out.xml
+A	app/src/main/res/anim/slide_in_left.xml
+A	app/src/main/res/anim/slide_in_right.xml
+A	app/src/main/res/anim/slide_out_left.xml
+A	app/src/main/res/anim/slide_out_right.xml
+
+d473aa9;Release 1.5.2
+M	app/build.gradle
+
+8126d17;Fix occasional bitmap crash in IconManager
+M	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+
+64d9e8c;Release 1.5.1
+M	app/build.gradle
+
+92b955d;Better no. of circles for preview
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/res/values/dimen.xml
+
+ae3e2c4;Added new about layout
+A	app/src/main/res/layout/activity_about.xml
+
+38faa2c;Collapsing toolbar layout in About screen
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+D	app/src/main/res/layout/activity_about.xml
+D	app/src/main/res/values-v21/styles.xml
+M	app/src/main/res/values/styles.xml
+
+89be308;Release 1.5.0
+M	app/build.gradle
+
+b4028be;Code cleanup and small fixes
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/LauncherUtil.java
+M	app/src/main/res/layout/activity_fake_launcher.xml
+M	app/src/main/res/menu/menu_settings.xml
+D	app/src/main/res/values-w820dp/dimens.xml
+D	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+
+06df50f;Merge pull request #7 from CreaRo/feature-default-launcher
+5387658;Merge branch 'master' of https://github.com/CreaRo/lens-launcher into feature-default-launcher
+b8751e0;Added animation time to reset defaults
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+
+050ae63;Animating alpha of label text
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+e704881;Ensure users have new min / max values
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+
+41eb43f;Fixed app hide issue
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/model/AppPersistent.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppSorter.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+f07ac69;Improved Lens algorithm & animation
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/values/dimen.xml
+M	app/src/main/res/values/strings.xml
+
+ae1248c;Add LauncherUtil class, menu item for alter launcher
+M	app/src/main/java/nickrout/lenslauncher/ui/FakeLauncherActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+A	app/src/main/java/nickrout/lenslauncher/util/LauncherUtil.java
+M	app/src/main/res/menu/menu_settings.xml
+M	app/src/main/res/values/strings.xml
+
+99ce304;Add FakeLauncherActivity
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/nickrout/lenslauncher/ui/FakeLauncherActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+A	app/src/main/res/layout/activity_fake_launcher.xml
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values/dimens.xml
+
+72f5728;Minor bug / crash fixes
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+M	app/src/main/java/nickrout/lenslauncher/util/UpdateAppsTask.java
+
+949f80f;Saving order / hide in onPause
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+
+fe789b1;Removed new task flag
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+6655dac;Release 1.4.0
+M	app/build.gradle
+
+ef7200f;Better hiding of apps with multiple launcher intents
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/model/AppPersistent.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppSorter.java
+
+a598287;Better app launching
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+7dc1528;Fixed hidden apps arranger bug
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/UpdateAppsTask.java
+M	app/src/main/res/values/strings.xml
+
+d260b35;Handling new/changed Apps in Arranger
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+
+2b75a89;Small improvement to Apps Singleton
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+
+ce07d0a;Added apps singleton, fixed some issues
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+A	app/src/main/java/nickrout/lenslauncher/util/AppsSingleton.java
+M	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+M	app/src/main/java/nickrout/lenslauncher/util/UpdateAppsTask.java
+
+dd11add;Fix for occasional Palette crash
+M	app/src/main/java/nickrout/lenslauncher/util/ColorUtil.java
+
+12103c6;Rtf Fix
+M	app/src/main/res/layout/recycler_item_app_arranger.xml
+
+aa89db9;Minor fixes
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/res/layout/activity_app_arranger.xml
+
+46caa31;Added Rish to About / README
+M	README.md
+M	app/src/main/res/values/strings.xml
+
+e646ad3;Using latest support lib for new grade dependencies
+M	app/build.gradle
+
+b645abe;Code cleanup and drawable additions
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppSorter.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+D	app/src/main/res/drawable-hdpi/ic_menu.png
+A	app/src/main/res/drawable-hdpi/ic_more_vert_grey_24dp.png
+A	app/src/main/res/drawable-hdpi/ic_sort_white_24dp.png
+R100	app/src/main/res/drawable-hdpi/ic_visible.png	app/src/main/res/drawable-hdpi/ic_visibility_grey_24dp.png
+R100	app/src/main/res/drawable-hdpi/ic_invisible.png	app/src/main/res/drawable-hdpi/ic_visibility_off_grey_24dp.png
+A	app/src/main/res/drawable-mdpi/ic_more_vert_grey_24dp.png
+A	app/src/main/res/drawable-mdpi/ic_sort_white_24dp.png
+A	app/src/main/res/drawable-mdpi/ic_visibility_grey_24dp.png
+A	app/src/main/res/drawable-mdpi/ic_visibility_off_grey_24dp.png
+A	app/src/main/res/drawable-xhdpi/ic_more_vert_grey_24dp.png
+A	app/src/main/res/drawable-xhdpi/ic_sort_white_24dp.png
+A	app/src/main/res/drawable-xhdpi/ic_visibility_grey_24dp.png
+A	app/src/main/res/drawable-xhdpi/ic_visibility_off_grey_24dp.png
+A	app/src/main/res/drawable-xxhdpi/ic_more_vert_grey_24dp.png
+R100	app/src/main/res/drawable-hdpi/ic_sort_white_48dp.png	app/src/main/res/drawable-xxhdpi/ic_sort_white_24dp.png
+A	app/src/main/res/drawable-xxhdpi/ic_visibility_grey_24dp.png
+A	app/src/main/res/drawable-xxhdpi/ic_visibility_off_grey_24dp.png
+A	app/src/main/res/drawable-xxxhdpi/ic_more_vert_grey_24dp.png
+A	app/src/main/res/drawable-xxxhdpi/ic_sort_white_24dp.png
+A	app/src/main/res/drawable-xxxhdpi/ic_visibility_grey_24dp.png
+A	app/src/main/res/drawable-xxxhdpi/ic_visibility_off_grey_24dp.png
+M	app/src/main/res/layout/activity_app_arranger.xml
+D	app/src/main/res/layout/content_main.xml
+R060	app/src/main/res/layout/element_app_arranger.xml	app/src/main/res/layout/recycler_item_app_arranger.xml
+D	app/src/main/res/values-w820dp/dimens.xml
+M	app/src/main/res/values/dimen.xml
+D	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+
+f2bb6d8;Merge pull request #6 from CreaRo/feature-rearrange-apps
+bd2c264;Disable DragSort
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+
+9586385;Minor fix : Butterknife in AboutActivity
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+
+34be831;UI changes visibility button for lens launcher removed coordinator layout open app from recycler spinner title and subtitle visibility icons app sorter names
+85209e8;Added color sorting :-D
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppSorter.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+A	app/src/main/java/nickrout/lenslauncher/util/ColorUtil.java
+M	app/src/main/res/values/strings.xml
+
+c588ca2;Added sort type display names, refactored a bit
+M	app/src/main/java/nickrout/lenslauncher/util/AppSorter.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/values/strings.xml
+
+aea7b9c;Add reset menu item in Settings
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/menu/menu_settings.xml
+M	app/src/main/res/values/strings.xml
+
+aaf48dd;Minor Bug Fix : App Hide default
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/model/AppPersistent.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+
+239932f;Minor Bug Fix : Decerement while removing
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+
+4570348;Minor bug fix - butterknife bind
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+
+24b6e18;Code Cleaned
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+D	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java.orig
+M	app/src/main/res/layout/activity_app_arranger.xml
+M	app/src/main/res/layout/element_app_arranger.xml
+M	app/src/main/res/values/dimen.xml
+M	app/src/main/res/values/strings.xml
+
+18a48f1;Set Lens Launcher Unhideable
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/res/values/strings.xml
+
+58da7c4;Add App Sorting class
+653f905;Added app sorting util class
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+A	app/src/main/java/nickrout/lenslauncher/util/AppSorter.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+
+b97cf6c;Remove Logs, Hide Apps from Launcher
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/model/AppPersistent.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+83ea415;Add ability to uninstall from apps menu
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+A	app/src/main/res/drawable-hdpi/ic_menu.png
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/layout/element_app_arranger.xml
+A	app/src/main/res/menu/menu_app_arranger.xml
+M	app/src/main/res/values/strings.xml
+
+9944c08;Fixed Saving ToPersistence App Visibility
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/model/AppPersistent.java
+M	app/src/main/res/layout/element_app_arranger.xml
+
+471c437;Add Visible/Invisible persistence + drawable
+M	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/model/AppPersistent.java
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+A	app/src/main/res/drawable-hdpi/ic_invisible.png
+A	app/src/main/res/drawable-hdpi/ic_visible.png
+M	app/src/main/res/layout/element_app_arranger.xml
+
+616fc4b;UpdateAppsTaskListener - separate class
+M	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+A	app/src/main/java/nickrout/lenslauncher/util/UpdateAppsTask.java
+
+d0651fd;Add DragSortAdapter ToDo : Clean Code, Save order to AppPersistent
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/nickrout/lenslauncher/adapter/ArrangerDragDropAdapter.java
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+A	app/src/main/java/nickrout/lenslauncher/ui/AppArrangerActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+A	app/src/main/res/layout/activity_app_arranger.xml
+M	app/src/main/res/layout/activity_settings.xml
+A	app/src/main/res/layout/element_app_arranger.xml
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+
+094c1dc;Release 1.3.0
+M	app/build.gradle
+
+56ae3d4;Code cleanup
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/res/values/strings.xml
+
+e5c6e7c;Small fixes
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/res/layout/activity_settings.xml
+
+4c9cf9c;Using material dialogs for app load / colours
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	build.gradle
+
+481ee59;Merge pull request #5 from CreaRo/feature-icon-pack
+e46bfcb;Add missing icon pack chooser function
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+D	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java.orig
+
+aa026fd;Icon Pack Integrated
+be715e3;Potential fix for occasional OOM
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+
+8a68a8e;Bump version for release
+M	app/build.gradle
+
+1045d48;Fixed color dialog hiding buttons issue
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+
+c4403c8;Code cleaned
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+A	app/src/main/res/values/arrays.xml
+
+45e1ff3;Merge with Icon Chooser
+1ba70f6;Add Icon Packs
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+A	app/src/main/java/nickrout/lenslauncher/util/IconPackManager.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/values/strings.xml
+
+0c9969d;Bump version for release
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+
+1791338;Merge branch 'pr/3'
+c68daa5;Merge conflict changes
+da2a56f;Merged in master
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/layout/activity_about.xml
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/values/dimen.xml
+M	app/src/main/res/values/strings.xml
+
+c981806;Default touch selection color matches accent
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+
+4ca5eaf;Better drawing of new app tag
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/res/values/dimen.xml
+
+e883bf3;Updated tags
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+
+f365b67;Merge branch 'pr/3'
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+A	app/src/main/java/nickrout/lenslauncher/model/AppPersistent.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/values/dimen.xml
+M	app/src/main/res/values/strings.xml
+
+6efd37e;Minor change - color of new app dot same as touch selector
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+423fbd1;Changed new tag to a dot. Added AppPersistent database - frequency count of number of times an is app open
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+M	app/src/main/java/nickrout/lenslauncher/model/AppPersistent.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/values/dimen.xml
+
+e47cde0;Bumped version for release
+M	app/build.gradle
+
+deedfdc;Fixed progress dialog crash
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/res/layout/activity_about.xml
+M	app/src/main/res/values/strings.xml
+
+066b732;Added AppPersistent db to store openCount
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+A	app/src/main/java/nickrout/lenslauncher/model/AppPersistent.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+498ebd0;Minor changes. Changed new_app tag size and duration, color change updates immediately
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/values/dimen.xml
+
+ce9aa9e;Merge branch 'master' of https://github.com/nicholasrout/lens-launcher
+9297f49;Removed ignored files
+M	.gitignore
+D	.gradle/2.8/taskArtifacts/cache.properties
+D	.gradle/2.8/taskArtifacts/cache.properties.lock
+D	.gradle/2.8/taskArtifacts/fileHashes.bin
+D	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+D	.gradle/2.8/taskArtifacts/outputFileStates.bin
+D	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+D	.idea/.name
+D	.idea/compiler.xml
+D	.idea/copyright/profiles_settings.xml
+D	.idea/gradle.xml
+D	.idea/libraries/animated_vector_drawable_23_3_0.xml
+D	.idea/libraries/appcompat_v7_23_3_0.xml
+D	.idea/libraries/preference_v7_23_2_1.xml
+D	.idea/libraries/recyclerview_v7_23_2_1.xml
+D	.idea/libraries/support_annotations_23_3_0.xml
+D	.idea/libraries/support_v4_23_3_0.xml
+D	.idea/libraries/support_vector_drawable_23_3_0.xml
+D	.idea/libraries/vintage_chroma_1_4.xml
+D	.idea/misc.xml
+D	.idea/modules.xml
+D	.idea/runConfigurations.xml
+D	.idea/vcs.xml
+D	.idea/workspace.xml
+D	LensLauncher.iml
+D	app/app.iml
+D	build/intermediates/dex-cache/cache.xml
+D	lens-launcher.iml
+D	local.properties
+
+753d5cb;Removed more ignored files
+D	build/generated/mockable-android-23.jar
+
+dbc826e;Even better gitignore
+M	.gitignore
+M	build/generated/mockable-android-23.jar
+D	build/intermediates/dex-cache/cache.xml
+
+ce49728;Remove ignored files
+D	.gradle/2.8/taskArtifacts/cache.properties
+D	.gradle/2.8/taskArtifacts/cache.properties.lock
+D	.gradle/2.8/taskArtifacts/fileHashes.bin
+D	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+D	.gradle/2.8/taskArtifacts/outputFileStates.bin
+D	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+D	.idea/.name
+D	.idea/compiler.xml
+D	.idea/copyright/profiles_settings.xml
+D	.idea/encodings.xml
+D	.idea/gradle.xml
+D	.idea/libraries/animated_vector_drawable_23_4_0.xml
+D	.idea/libraries/appcompat_v7_23_4_0.xml
+D	.idea/libraries/hamcrest_core_1_3.xml
+D	.idea/libraries/junit_4_12.xml
+D	.idea/libraries/support_annotations_23_4_0.xml
+D	.idea/libraries/support_v4_23_4_0.xml
+D	.idea/libraries/support_vector_drawable_23_4_0.xml
+D	.idea/misc.xml
+D	.idea/modules.xml
+D	.idea/runConfigurations.xml
+D	.idea/vcs.xml
+D	.idea/workspace.xml
+D	LensLauncher.iml
+D	app/app.iml
+D	lens-launcher.iml
+D	local.properties
+
+341cc84;Updated gitignore
+M	.gitignore
+
+54e6cea;Fixed out-of-sync icons bug, drawing names on top
+R061	.idea/libraries/animated_vector_drawable_23_3_0.xml	.idea/libraries/animated_vector_drawable_23_4_0.xml
+R056	.idea/libraries/appcompat_v7_23_3_0.xml	.idea/libraries/appcompat_v7_23_4_0.xml
+D	.idea/libraries/support_annotations_23_3_0.xml
+A	.idea/libraries/support_annotations_23_4_0.xml
+R054	.idea/libraries/support_v4_23_3_0.xml	.idea/libraries/support_v4_23_4_0.xml
+R062	.idea/libraries/support_vector_drawable_23_3_0.xml	.idea/libraries/support_vector_drawable_23_4_0.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/res/values/dimen.xml
+M	build/intermediates/dex-cache/cache.xml
+
+c934a56;New app tag + color for touch selection
+M	.idea/compiler.xml
+D	.idea/encodings.xml
+M	.idea/gradle.xml
+M	.idea/libraries/animated_vector_drawable_23_3_0.xml
+M	.idea/libraries/appcompat_v7_23_3_0.xml
+D	.idea/libraries/hamcrest_core_1_3.xml
+D	.idea/libraries/junit_4_12.xml
+A	.idea/libraries/preference_v7_23_2_1.xml
+A	.idea/libraries/recyclerview_v7_23_2_1.xml
+M	.idea/libraries/support_annotations_23_3_0.xml
+M	.idea/libraries/support_v4_23_3_0.xml
+M	.idea/libraries/support_vector_drawable_23_3_0.xml
+A	.idea/libraries/vintage_chroma_1_4.xml
+M	.idea/misc.xml
+M	.idea/vcs.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/values/strings.xml
+D	build/generated/mockable-android-23.jar
+M	local.properties
+
+6ab8171;Better sorting / launching of apps
+M	.idea/misc.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	build/intermediates/dex-cache/cache.xml
+
+85cd873;Potential fix for too many apps crash (dead object exception)
+M	.idea/workspace.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/res/values/strings.xml
+
+ff262f4;Potential fix for not attached to window manager crash
+M	.idea/misc.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	build/intermediates/dex-cache/cache.xml
+
+da062db;Merge pull request #1 from RadiationX/patch-1
+f31b294;Maybe need set action and add category
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+
+bb99119;Added Transparent Status & Navigation Bars
+M	.idea/workspace.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+M	app/src/main/res/values/dimen.xml
+
+7e4a73e;Support
+A	.idea/libraries/animated_vector_drawable_23_3_0.xml
+A	.idea/libraries/appcompat_v7_23_3_0.xml
+A	.idea/libraries/hamcrest_core_1_3.xml
+A	.idea/libraries/junit_4_12.xml
+A	.idea/libraries/support_annotations_23_3_0.xml
+A	.idea/libraries/support_v4_23_3_0.xml
+A	.idea/libraries/support_vector_drawable_23_3_0.xml
+
+f900fb4;Import & Release
+D	.idea/libraries/animated_vector_drawable_23_3_0.xml
+D	.idea/libraries/appcompat_v7_23_3_0.xml
+D	.idea/libraries/hamcrest_core_1_3.xml
+D	.idea/libraries/junit_4_12.xml
+D	.idea/libraries/support_annotations_23_3_0.xml
+D	.idea/libraries/support_v4_23_3_0.xml
+D	.idea/libraries/support_vector_drawable_23_3_0.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	build/intermediates/dex-cache/cache.xml
+M	local.properties
+
+29a71e9;Improved App Launching & Defaults
+M	.idea/libraries/appcompat_v7_23_3_0.xml
+M	.idea/libraries/support_v4_23_3_0.xml
+M	.idea/libraries/support_vector_drawable_23_3_0.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	build/intermediates/dex-cache/cache.xml
+M	local.properties
+
+b5f5f5f;Dependencies
+A	.idea/libraries/animated_vector_drawable_23_3_0.xml
+A	.idea/libraries/appcompat_v7_23_3_0.xml
+A	.idea/libraries/hamcrest_core_1_3.xml
+A	.idea/libraries/junit_4_12.xml
+A	.idea/libraries/support_annotations_23_3_0.xml
+A	.idea/libraries/support_v4_23_3_0.xml
+A	.idea/libraries/support_vector_drawable_23_3_0.xml
+
+9ede631;Fixes & Improvements
+D	.idea/libraries/animated_vector_drawable_23_3_0.xml
+D	.idea/libraries/appcompat_v7_23_3_0.xml
+D	.idea/libraries/hamcrest_core_1_3.xml
+D	.idea/libraries/junit_4_12.xml
+D	.idea/libraries/support_annotations_23_3_0.xml
+D	.idea/libraries/support_v4_23_3_0.xml
+D	.idea/libraries/support_vector_drawable_23_3_0.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+M	build.gradle
+M	build/generated/mockable-android-23.jar
+
+5b8d1d2;.gitignore stuff
+18a1db4;Reliable handling of updated apps
+M	.idea/workspace.xml
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	build/intermediates/dex-cache/cache.xml
+
+9076be5;Fixes
+874292b;Updated .gitignore
+M	.gitignore
+D	.idea/workspace.xml
+
+e670b37;Version Bump
+M	.idea/libraries/appcompat_v7_23_3_0.xml
+M	.idea/libraries/support_v4_23_3_0.xml
+M	.idea/libraries/support_vector_drawable_23_3_0.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/build.gradle
+M	local.properties
+
+4035359;More...
+A	.idea/libraries/animated_vector_drawable_23_3_0.xml
+A	.idea/libraries/appcompat_v7_23_3_0.xml
+A	.idea/libraries/support_annotations_23_3_0.xml
+A	.idea/libraries/support_v4_23_3_0.xml
+A	.idea/libraries/support_vector_drawable_23_3_0.xml
+
+6e0ae5d;Bug Fixes
+D	.idea/libraries/animated_vector_drawable_23_3_0.xml
+D	.idea/libraries/appcompat_v7_23_3_0.xml
+D	.idea/libraries/support_annotations_23_3_0.xml
+D	.idea/libraries/support_v4_23_3_0.xml
+D	.idea/libraries/support_vector_drawable_23_3_0.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	build/intermediates/dex-cache/cache.xml
+M	local.properties
+
+736c82a;Version Bump
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/build.gradle
+
+84b9000;Improved Initial Loading, Fixed Bugs
+M	.idea/workspace.xml
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+
+95e3356;Lens Improvements & Fixes
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+M	build/intermediates/dex-cache/cache.xml
+
+7b1fbaf;About/README Copy Update
+M	.idea/workspace.xml
+M	README.md
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/res/values/strings.xml
+M	build/intermediates/dex-cache/cache.xml
+
+92f1958;Play Store Link in README
+M	.idea/workspace.xml
+M	README.md
+M	build/intermediates/dex-cache/cache.xml
+
+633cc30;Version Bump
+M	.idea/workspace.xml
+M	app/build.gradle
+M	build/intermediates/dex-cache/cache.xml
+
+29b3e50;Small Fixes
+M	.idea/workspace.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	build/intermediates/dex-cache/cache.xml
+
+ec7b965;More...
+A	.idea/libraries/animated_vector_drawable_23_3_0.xml
+A	.idea/libraries/appcompat_v7_23_3_0.xml
+A	.idea/libraries/hamcrest_core_1_3.xml
+A	.idea/libraries/junit_4_12.xml
+A	.idea/libraries/support_annotations_23_3_0.xml
+A	.idea/libraries/support_v4_23_3_0.xml
+A	.idea/libraries/support_vector_drawable_23_3_0.xml
+
+efcd5f5;Crash Fix
+D	.idea/libraries/animated_vector_drawable_23_3_0.xml
+D	.idea/libraries/appcompat_v7_23_3_0.xml
+D	.idea/libraries/hamcrest_core_1_3.xml
+D	.idea/libraries/junit_4_12.xml
+D	.idea/libraries/support_annotations_23_3_0.xml
+D	.idea/libraries/support_v4_23_3_0.xml
+D	.idea/libraries/support_vector_drawable_23_3_0.xml
+M	.idea/workspace.xml
+M	app/build.gradle
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+7d4cc72;Dependency Update
+R061	.idea/libraries/animated_vector_drawable_23_2_1.xml	.idea/libraries/animated_vector_drawable_23_3_0.xml
+D	.idea/libraries/appcompat_v7_23_2_1.xml
+A	.idea/libraries/appcompat_v7_23_3_0.xml
+D	.idea/libraries/support_annotations_23_2_1.xml
+A	.idea/libraries/support_annotations_23_3_0.xml
+D	.idea/libraries/support_v4_23_2_1.xml
+A	.idea/libraries/support_v4_23_3_0.xml
+R062	.idea/libraries/support_vector_drawable_23_2_1.xml	.idea/libraries/support_vector_drawable_23_3_0.xml
+M	.idea/misc.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/build.gradle
+M	build/intermediates/dex-cache/cache.xml
+
+c16ee4b;Copy Update
+M	.idea/libraries/appcompat_v7_23_2_1.xml
+M	.idea/libraries/support_v4_23_2_1.xml
+M	.idea/libraries/support_vector_drawable_23_2_1.xml
+M	.idea/misc.xml
+M	.idea/workspace.xml
+M	README.md
+M	app/src/main/res/values/strings.xml
+M	local.properties
+
+654ab6f;AsyncTask Loading and... Updating!
+M	.idea/workspace.xml
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+D	app/src/main/java/nickrout/lenslauncher/model/AppChange.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/ObservableObject.java
+M	app/src/main/res/values/strings.xml
+
+e088ded;Added App Not Found Error
+M	.idea/libraries/appcompat_v7_23_2_1.xml
+M	.idea/libraries/support_v4_23_2_1.xml
+M	.idea/libraries/support_vector_drawable_23_2_1.xml
+A	.idea/vcs.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/res/values/strings.xml
+M	local.properties
+
+c4b7bb8;Attempt Refresh After App Add/Remove
+M	.idea/gradle.xml
+M	.idea/libraries/appcompat_v7_23_2_1.xml
+M	.idea/libraries/support_v4_23_2_1.xml
+M	.idea/libraries/support_vector_drawable_23_2_1.xml
+D	.idea/vcs.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+A	app/src/main/java/nickrout/lenslauncher/model/AppChange.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+A	app/src/main/java/nickrout/lenslauncher/util/ObservableObject.java
+M	build.gradle
+M	build/generated/mockable-android-23.jar
+M	build/intermediates/dex-cache/cache.xml
+M	local.properties
+
+32bcd96;Prettier About Header
+M	.idea/misc.xml
+M	app/app.iml
+A	app/src/main/res/drawable-hdpi/im_about.png
+D	app/src/main/res/drawable-hdpi/im_lens_white_120dp.png
+A	app/src/main/res/drawable-mdpi/im_about.png
+D	app/src/main/res/drawable-mdpi/im_lens_white_120dp.png
+A	app/src/main/res/drawable-xhdpi/im_about.png
+D	app/src/main/res/drawable-xhdpi/im_lens_white_120dp.png
+A	app/src/main/res/drawable-xxhdpi/im_about.png
+D	app/src/main/res/drawable-xxhdpi/im_lens_white_120dp.png
+A	app/src/main/res/drawable-xxxhdpi/im_about.png
+D	app/src/main/res/drawable-xxxhdpi/im_lens_white_120dp.png
+M	app/src/main/res/layout/activity_about.xml
+M	build/intermediates/dex-cache/cache.xml
+
+fe06b79;More Updates
+A	.idea/libraries/animated_vector_drawable_23_2_1.xml
+A	.idea/libraries/appcompat_v7_23_2_1.xml
+A	.idea/libraries/hamcrest_core_1_3.xml
+A	.idea/libraries/junit_4_12.xml
+A	.idea/libraries/support_annotations_23_2_1.xml
+A	.idea/libraries/support_v4_23_2_1.xml
+A	.idea/libraries/support_vector_drawable_23_2_1.xml
+M	.idea/misc.xml
+
+53ced5c;Grade & Dependency Update
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	.idea/gradle.xml
+D	.idea/libraries/animated_vector_drawable_23_2_1.xml
+D	.idea/libraries/appcompat_v7_23_2_1.xml
+D	.idea/libraries/hamcrest_core_1_3.xml
+D	.idea/libraries/junit_4_12.xml
+D	.idea/libraries/support_annotations_23_2_1.xml
+D	.idea/libraries/support_v4_23_2_1.xml
+D	.idea/libraries/support_vector_drawable_23_2_1.xml
+M	app/app.iml
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+160241b;Intent Filter Priorities
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	.idea/gradle.xml
+M	.idea/libraries/appcompat_v7_23_2_1.xml
+A	.idea/libraries/hamcrest_core_1_3.xml
+A	.idea/libraries/junit_4_12.xml
+M	.idea/libraries/support_v4_23_2_1.xml
+M	.idea/libraries/support_vector_drawable_23_2_1.xml
+M	app/app.iml
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	local.properties
+
+7c5d595;Improvements
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	.idea/libraries/appcompat_v7_23_2_1.xml
+D	.idea/libraries/hamcrest_core_1_3.xml
+D	.idea/libraries/junit_4_12.xml
+M	.idea/libraries/support_v4_23_2_1.xml
+M	.idea/libraries/support_vector_drawable_23_2_1.xml
+M	README.md
+M	app/src/main/java/nickrout/lenslauncher/ui/BaseActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+A	app/src/main/res/drawable-hdpi/ic_apps_white_24dp.png
+R100	app/src/main/res/drawable-hdpi/im_lens.png	app/src/main/res/drawable-hdpi/im_lens_white_120dp.png
+A	app/src/main/res/drawable-mdpi/ic_apps_white_24dp.png
+R100	app/src/main/res/drawable-mdpi/im_lens.png	app/src/main/res/drawable-mdpi/im_lens_white_120dp.png
+A	app/src/main/res/drawable-xhdpi/ic_apps_white_24dp.png
+R100	app/src/main/res/drawable-xhdpi/im_lens.png	app/src/main/res/drawable-xhdpi/im_lens_white_120dp.png
+A	app/src/main/res/drawable-xxhdpi/ic_apps_white_24dp.png
+R100	app/src/main/res/drawable-xxhdpi/im_lens.png	app/src/main/res/drawable-xxhdpi/im_lens_white_120dp.png
+A	app/src/main/res/drawable-xxxhdpi/ic_apps_white_24dp.png
+R100	app/src/main/res/drawable-xxxhdpi/im_lens.png	app/src/main/res/drawable-xxxhdpi/im_lens_white_120dp.png
+M	app/src/main/res/layout/activity_about.xml
+M	app/src/main/res/menu/menu_settings.xml
+M	app/src/main/res/values/strings.xml
+
+030a9d4;Bold 'Lens' in App Name
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	app/src/main/res/values/strings.xml
+
+ad4d0dc;Added README
+A	README.md
+
+37bef6a;Added Demo GIF
+A	resources/art/lens_launcher_demo.gif
+
+5a29e0a;Commenting & Referencing
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+
+656539d;Dimens / Strings
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	app/src/main/res/layout/activity_about.xml
+M	app/src/main/res/values/dimen.xml
+M	app/src/main/res/values/strings.xml
+
+7b8a8a2;Full About Activity
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	.idea/gradle.xml
+A	.idea/vcs.xml
+M	app/app.iml
+M	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+A	app/src/main/res/drawable-hdpi/im_lens.png
+A	app/src/main/res/drawable-mdpi/im_lens.png
+A	app/src/main/res/drawable-xhdpi/im_lens.png
+A	app/src/main/res/drawable-xxhdpi/im_lens.png
+A	app/src/main/res/drawable-xxxhdpi/im_lens.png
+A	app/src/main/res/layout/activity_about.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/dimen.xml
+M	app/src/main/res/values/strings.xml
+M	local.properties
+M	resources/art/lens_launcher_app_icon.sketch
+
+76f85d4;Small Changes
+M	.idea/workspace.xml
+
+5103474;Activity Transitions
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/nickrout/lenslauncher/ui/AboutActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/BaseActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/res/values/strings.xml
+
+67aff45;Lens Animation now uses Lens Size
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+120c0bf;Greatly Improved Icon Drawing!
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/outputFileStates.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+A	app/src/main/res/menu/menu_settings.xml
+M	app/src/main/res/values/strings.xml
+
+a35f174;Added .gitignore
+A	.gitignore
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+A	.idea/encodings.xml
+M	.idea/gradle.xml
+M	.idea/libraries/appcompat_v7_23_2_1.xml
+A	.idea/libraries/hamcrest_core_1_3.xml
+A	.idea/libraries/junit_4_12.xml
+M	.idea/libraries/support_v4_23_2_1.xml
+M	.idea/libraries/support_vector_drawable_23_2_1.xml
+D	.idea/vcs.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	local.properties
+
+2e3d701;Fix Attempt - Icon Draw Quality
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	.idea/workspace.xml
+M	app/src/main/java/nickrout/lenslauncher/model/App.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+
+13997f4;Small Tweaks
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	.idea/libraries/appcompat_v7_23_2_1.xml
+M	.idea/libraries/support_v4_23_2_1.xml
+M	.idea/misc.xml
+M	.idea/workspace.xml
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/res/values/dimen.xml
+
+13874fb;Final Refactor
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/outputFileStates.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+D	.idea/encodings.xml
+M	.idea/gradle.xml
+M	.idea/libraries/appcompat_v7_23_2_1.xml
+D	.idea/libraries/hamcrest_core_1_3.xml
+D	.idea/libraries/junit_4_12.xml
+M	.idea/libraries/support_v4_23_2_1.xml
+M	.idea/libraries/support_vector_drawable_23_2_1.xml
+M	.idea/misc.xml
+A	.idea/vcs.xml
+M	.idea/workspace.xml
+M	app/app.iml
+M	app/src/main/java/nickrout/lenslauncher/ui/BaseActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	local.properties
+
+2e523b0;Big Refactor
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	.idea/misc.xml
+M	.idea/workspace.xml
+A	app/src/main/java/nickrout/lenslauncher/ui/BaseActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+M	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	app/src/main/res/values/dimen.xml
+M	build/intermediates/dex-cache/cache.xml
+
+1982ed1;Base Project Restructure
+A	.gradle/2.8/taskArtifacts/cache.properties
+A	.gradle/2.8/taskArtifacts/cache.properties.lock
+A	.gradle/2.8/taskArtifacts/fileHashes.bin
+A	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+A	.gradle/2.8/taskArtifacts/outputFileStates.bin
+A	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+A	.idea/.name
+R100	LensLauncher/.idea/compiler.xml	.idea/compiler.xml
+R100	LensLauncher/.idea/copyright/profiles_settings.xml	.idea/copyright/profiles_settings.xml
+R100	LensLauncher/.idea/encodings.xml	.idea/encodings.xml
+R065	LensLauncher/.idea/gradle.xml	.idea/gradle.xml
+A	.idea/libraries/animated_vector_drawable_23_2_1.xml
+A	.idea/libraries/appcompat_v7_23_2_1.xml
+A	.idea/libraries/hamcrest_core_1_3.xml
+A	.idea/libraries/junit_4_12.xml
+A	.idea/libraries/support_annotations_23_2_1.xml
+A	.idea/libraries/support_v4_23_2_1.xml
+A	.idea/libraries/support_vector_drawable_23_2_1.xml
+A	.idea/misc.xml
+R067	TestLauncher/.idea/modules.xml	.idea/modules.xml
+R100	LensLauncher/.idea/runConfigurations.xml	.idea/runConfigurations.xml
+A	.idea/workspace.xml
+A	LensLauncher.iml
+D	LensLauncher/.gitignore
+D	LensLauncher/.idea/.name
+D	LensLauncher/.idea/misc.xml
+D	LensLauncher/.idea/modules.xml
+D	LensLauncher/.idea/vcs.xml
+D	TestLauncher/.gitignore
+D	TestLauncher/.idea/.name
+D	TestLauncher/.idea/compiler.xml
+D	TestLauncher/.idea/copyright/profiles_settings.xml
+D	TestLauncher/.idea/gradle.xml
+D	TestLauncher/.idea/misc.xml
+D	TestLauncher/.idea/runConfigurations.xml
+D	TestLauncher/.idea/vcs.xml
+D	TestLauncher/app/.gitignore
+D	TestLauncher/app/build.gradle
+D	TestLauncher/app/proguard-rules.pro
+D	TestLauncher/app/src/androidTest/java/com/nickrout/testlauncher/ApplicationTest.java
+D	TestLauncher/app/src/main/AndroidManifest.xml
+D	TestLauncher/app/src/main/java/com/nickrout/testlauncher/AppAdapter.java
+D	TestLauncher/app/src/main/java/com/nickrout/testlauncher/AppDetail.java
+D	TestLauncher/app/src/main/java/com/nickrout/testlauncher/HomeActivity.java
+D	TestLauncher/app/src/main/java/com/nickrout/testlauncher/SettingsActivity.java
+D	TestLauncher/app/src/main/res/layout/activity_home.xml
+D	TestLauncher/app/src/main/res/layout/activity_settings.xml
+D	TestLauncher/app/src/main/res/layout/recycler_item_app.xml
+D	TestLauncher/app/src/main/res/mipmap-hdpi/ic_launcher.png
+D	TestLauncher/app/src/main/res/mipmap-mdpi/ic_launcher.png
+D	TestLauncher/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+D	TestLauncher/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+D	TestLauncher/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+D	TestLauncher/app/src/main/res/values/colors.xml
+D	TestLauncher/app/src/main/res/values/strings.xml
+D	TestLauncher/app/src/main/res/values/styles.xml
+D	TestLauncher/app/src/test/java/com/nickrout/testlauncher/ExampleUnitTest.java
+D	TestLauncher/build.gradle
+D	TestLauncher/gradle.properties
+D	TestLauncher/gradle/wrapper/gradle-wrapper.jar
+D	TestLauncher/gradle/wrapper/gradle-wrapper.properties
+D	TestLauncher/gradlew
+D	TestLauncher/gradlew.bat
+D	TestLauncher/settings.gradle
+D	TestLens/.gitignore
+D	TestLens/.idea/.name
+D	TestLens/.idea/compiler.xml
+D	TestLens/.idea/copyright/profiles_settings.xml
+D	TestLens/.idea/gradle.xml
+D	TestLens/.idea/misc.xml
+D	TestLens/.idea/modules.xml
+D	TestLens/.idea/runConfigurations.xml
+D	TestLens/.idea/vcs.xml
+D	TestLens/app/.gitignore
+D	TestLens/app/build.gradle
+D	TestLens/app/proguard-rules.pro
+D	TestLens/app/src/androidTest/java/com/nickrout/testlens/ApplicationTest.java
+D	TestLens/app/src/main/AndroidManifest.xml
+D	TestLens/app/src/main/java/com/nickrout/testlens/Grid.java
+D	TestLens/app/src/main/java/com/nickrout/testlens/LensCalculator.java
+D	TestLens/app/src/main/java/com/nickrout/testlens/LensSettings.java
+D	TestLens/app/src/main/java/com/nickrout/testlens/LensView.java
+D	TestLens/app/src/main/java/com/nickrout/testlens/MainActivity.java
+D	TestLens/app/src/main/res/layout/activity_main.xml
+D	TestLens/app/src/main/res/mipmap-hdpi/ic_launcher.png
+D	TestLens/app/src/main/res/mipmap-mdpi/ic_launcher.png
+D	TestLens/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+D	TestLens/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+D	TestLens/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+D	TestLens/app/src/main/res/values/colors.xml
+D	TestLens/app/src/main/res/values/dimens.xml
+D	TestLens/app/src/main/res/values/strings.xml
+D	TestLens/app/src/main/res/values/styles.xml
+D	TestLens/app/src/test/java/com/nickrout/testlens/ExampleUnitTest.java
+D	TestLens/build.gradle
+D	TestLens/gradle.properties
+D	TestLens/gradle/wrapper/gradle-wrapper.jar
+D	TestLens/gradle/wrapper/gradle-wrapper.properties
+D	TestLens/gradlew
+D	TestLens/gradlew.bat
+D	TestLens/settings.gradle
+R100	LensLauncher/app/.gitignore	app/.gitignore
+A	app/app.iml
+R100	LensLauncher/app/build.gradle	app/build.gradle
+R100	LensLauncher/app/proguard-rules.pro	app/proguard-rules.pro
+R100	LensLauncher/app/src/androidTest/java/nickrout/lenslauncher/ApplicationTest.java	app/src/androidTest/java/nickrout/lenslauncher/ApplicationTest.java
+R100	LensLauncher/app/src/main/AndroidManifest.xml	app/src/main/AndroidManifest.xml
+R100	LensLauncher/app/src/main/java/nickrout/lenslauncher/model/App.java	app/src/main/java/nickrout/lenslauncher/model/App.java
+R100	LensLauncher/app/src/main/java/nickrout/lenslauncher/model/Grid.java	app/src/main/java/nickrout/lenslauncher/model/Grid.java
+R100	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java	app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+R100	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java	app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+R100	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java	app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+R100	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/AppUtil.java	app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+R100	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java	app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+R100	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java	app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+R100	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/Settings.java	app/src/main/java/nickrout/lenslauncher/util/Settings.java
+R100	LensLauncher/app/src/main/res/layout/activity_home.xml	app/src/main/res/layout/activity_home.xml
+R100	LensLauncher/app/src/main/res/layout/activity_settings.xml	app/src/main/res/layout/activity_settings.xml
+R100	LensLauncher/app/src/main/res/mipmap-hdpi/ic_launcher.png	app/src/main/res/mipmap-hdpi/ic_launcher.png
+R100	LensLauncher/app/src/main/res/mipmap-mdpi/ic_launcher.png	app/src/main/res/mipmap-mdpi/ic_launcher.png
+R100	LensLauncher/app/src/main/res/mipmap-xhdpi/ic_launcher.png	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+R100	LensLauncher/app/src/main/res/mipmap-xxhdpi/ic_launcher.png	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+R100	LensLauncher/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+R100	LensLauncher/app/src/main/res/values/colors.xml	app/src/main/res/values/colors.xml
+R100	LensLauncher/app/src/main/res/values/dimen.xml	app/src/main/res/values/dimen.xml
+R100	LensLauncher/app/src/main/res/values/strings.xml	app/src/main/res/values/strings.xml
+R100	LensLauncher/app/src/main/res/values/styles.xml	app/src/main/res/values/styles.xml
+R100	LensLauncher/app/src/test/java/nickrout/lenslauncher/ExampleUnitTest.java	app/src/test/java/nickrout/lenslauncher/ExampleUnitTest.java
+R100	LensLauncher/build.gradle	build.gradle
+A	build/generated/mockable-android-23.jar
+A	build/intermediates/dex-cache/cache.xml
+R100	LensLauncher/gradle.properties	gradle.properties
+R100	LensLauncher/gradle/wrapper/gradle-wrapper.jar	gradle/wrapper/gradle-wrapper.jar
+R100	LensLauncher/gradle/wrapper/gradle-wrapper.properties	gradle/wrapper/gradle-wrapper.properties
+R100	LensLauncher/gradlew	gradlew
+R100	LensLauncher/gradlew.bat	gradlew.bat
+A	lens-launcher.iml
+A	local.properties
+A	resources/art/lens_launcher_app_icon.png
+R099	icon.sketch	resources/art/lens_launcher_app_icon.sketch
+R100	graphical_fisheye_views.pdf	resources/graphical_fisheye_views.pdf
+R100	LensLauncher/settings.gradle	settings.gradle
+
+ace45ff;Added Name Drawing
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	LensLauncher/app/src/main/res/layout/activity_settings.xml
+M	LensLauncher/app/src/main/res/values/colors.xml
+A	LensLauncher/app/src/main/res/values/dimen.xml
+M	LensLauncher/app/src/main/res/values/strings.xml
+
+2ea35fd;Change Alpha on App Hover
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+b1b3618;Vertical Center-alignment of Grid
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+
+def55e7;Updated Settings Default / Max Values
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/Settings.java
+
+6653f37;Final Color Update!
+M	LensLauncher/.idea/misc.xml
+M	LensLauncher/app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/values/colors.xml
+M	icon.sketch
+
+d07835b;Updated Colors / Icon
+M	LensLauncher/.idea/gradle.xml
+M	LensLauncher/.idea/misc.xml
+A	LensLauncher/.idea/vcs.xml
+M	LensLauncher/app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/values/colors.xml
+M	LensLauncher/app/src/main/res/values/styles.xml
+M	icon.sketch
+
+61b4d90;Final Status Bar Change
+M	LensLauncher/.idea/.name
+A	LensLauncher/.idea/encodings.xml
+M	LensLauncher/.idea/gradle.xml
+D	LensLauncher/.idea/vcs.xml
+M	LensLauncher/app/src/main/AndroidManifest.xml
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+M	LensLauncher/app/src/main/res/values/colors.xml
+D	LensLauncher/app/src/main/res/values/dimens.xml
+M	LensLauncher/app/src/main/res/values/styles.xml
+
+4e9ca20;Finer Settings - Distortion / Scale
+M	LensLauncher/.idea/misc.xml
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/Settings.java
+
+5b4561c;Lens Show/Hide Animation!
+M	LensLauncher/.idea/misc.xml
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+1ee0ae5;Graphical Preview in Settings
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	LensLauncher/app/src/main/res/values/colors.xml
+
+6dc5721;Improved Status Bar Touch Area
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	LensLauncher/app/src/main/res/values/dimens.xml
+
+4340d3a;Status Bar Touch Area
+M	LensLauncher/.idea/misc.xml
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+0f9288b;Min Values for Lens Diam. & Icon Size
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/Settings.java
+
+259d2f2;0 Lens value checks
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/Settings.java
+
+01c6ae0;Settings Working
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+D	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/LensSettings.java
+A	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/Settings.java
+M	LensLauncher/app/src/main/res/layout/activity_settings.xml
+M	LensLauncher/app/src/main/res/values/dimens.xml
+M	LensLauncher/app/src/main/res/values/strings.xml
+
+f672f29;Settings & UI Update
+M	LensLauncher/.idea/misc.xml
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+M	LensLauncher/app/src/main/res/layout/activity_settings.xml
+M	LensLauncher/app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/values/colors.xml
+M	LensLauncher/app/src/main/res/values/strings.xml
+M	icon.sketch
+
+4779bf8;Settings Layout
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+M	LensLauncher/app/src/main/res/layout/activity_home.xml
+M	LensLauncher/app/src/main/res/layout/activity_settings.xml
+M	LensLauncher/app/src/main/res/values/colors.xml
+M	LensLauncher/app/src/main/res/values/strings.xml
+
+0f2b855;Colors & App Icon
+M	LensLauncher/app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	LensLauncher/app/src/main/res/values/colors.xml
+M	icon.sketch
+
+3b0ec5f;App Launch Fix
+M	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+
+58e8fbe;Working!
+M	LensLauncher/.idea/misc.xml
+M	LensLauncher/app/src/main/AndroidManifest.xml
+A	LensLauncher/app/src/main/java/nickrout/lenslauncher/model/App.java
+A	LensLauncher/app/src/main/java/nickrout/lenslauncher/model/Grid.java
+A	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/HomeActivity.java
+A	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/LensView.java
+A	LensLauncher/app/src/main/java/nickrout/lenslauncher/ui/SettingsActivity.java
+A	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/AppUtil.java
+A	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/BitmapUtil.java
+A	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/LensCalculator.java
+A	LensLauncher/app/src/main/java/nickrout/lenslauncher/util/LensSettings.java
+A	LensLauncher/app/src/main/res/layout/activity_home.xml
+A	LensLauncher/app/src/main/res/layout/activity_settings.xml
+M	LensLauncher/app/src/main/res/values/colors.xml
+A	LensLauncher/app/src/main/res/values/dimens.xml
+M	LensLauncher/app/src/main/res/values/styles.xml
+M	TestLens/app/src/main/java/com/nickrout/testlens/LensCalculator.java
+M	TestLens/app/src/main/java/com/nickrout/testlens/LensView.java
+
+fc3522e;New Project
+A	LensLauncher/.gitignore
+A	LensLauncher/.idea/.name
+A	LensLauncher/.idea/compiler.xml
+A	LensLauncher/.idea/copyright/profiles_settings.xml
+A	LensLauncher/.idea/gradle.xml
+A	LensLauncher/.idea/misc.xml
+A	LensLauncher/.idea/modules.xml
+A	LensLauncher/.idea/runConfigurations.xml
+A	LensLauncher/.idea/vcs.xml
+A	LensLauncher/app/.gitignore
+A	LensLauncher/app/build.gradle
+A	LensLauncher/app/proguard-rules.pro
+A	LensLauncher/app/src/androidTest/java/nickrout/lenslauncher/ApplicationTest.java
+A	LensLauncher/app/src/main/AndroidManifest.xml
+A	LensLauncher/app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	LensLauncher/app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	LensLauncher/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	LensLauncher/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	LensLauncher/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	LensLauncher/app/src/main/res/values/colors.xml
+A	LensLauncher/app/src/main/res/values/strings.xml
+A	LensLauncher/app/src/main/res/values/styles.xml
+A	LensLauncher/app/src/test/java/nickrout/lenslauncher/ExampleUnitTest.java
+A	LensLauncher/build.gradle
+A	LensLauncher/gradle.properties
+A	LensLauncher/gradle/wrapper/gradle-wrapper.jar
+A	LensLauncher/gradle/wrapper/gradle-wrapper.properties
+A	LensLauncher/gradlew
+A	LensLauncher/gradlew.bat
+A	LensLauncher/settings.gradle
+M	TestLauncher/.idea/misc.xml
+M	TestLens/.idea/misc.xml
+R100	Sarkar_&_Brown.pdf	graphical_fisheye_views.pdf
+R100	Lens Launcher Icon.sketch	icon.sketch
+
+f488ddb;Settings
+M	TestLauncher/app/src/main/AndroidManifest.xml
+A	TestLauncher/app/src/main/java/com/nickrout/testlauncher/SettingsActivity.java
+A	TestLauncher/app/src/main/res/layout/activity_settings.xml
+
+abfbf1f;Lens Vibration
+M	TestLauncher/.idea/.name
+M	TestLauncher/.idea/misc.xml
+M	TestLens/.idea/.name
+M	TestLens/.idea/misc.xml
+M	TestLens/app/src/main/AndroidManifest.xml
+M	TestLens/app/src/main/java/com/nickrout/testlens/LensView.java
+M	TestLens/app/src/main/res/layout/activity_main.xml
+
+c3dcd19;Icon
+A	Lens Launcher Icon.sketch
+
+d972ba6;Initial commit
+A	Sarkar_&_Brown.pdf
+A	TestLauncher/.gitignore
+A	TestLauncher/.idea/.name
+A	TestLauncher/.idea/compiler.xml
+A	TestLauncher/.idea/copyright/profiles_settings.xml
+A	TestLauncher/.idea/gradle.xml
+A	TestLauncher/.idea/misc.xml
+A	TestLauncher/.idea/modules.xml
+A	TestLauncher/.idea/runConfigurations.xml
+A	TestLauncher/.idea/vcs.xml
+A	TestLauncher/app/.gitignore
+A	TestLauncher/app/build.gradle
+A	TestLauncher/app/proguard-rules.pro
+A	TestLauncher/app/src/androidTest/java/com/nickrout/testlauncher/ApplicationTest.java
+A	TestLauncher/app/src/main/AndroidManifest.xml
+A	TestLauncher/app/src/main/java/com/nickrout/testlauncher/AppAdapter.java
+A	TestLauncher/app/src/main/java/com/nickrout/testlauncher/AppDetail.java
+A	TestLauncher/app/src/main/java/com/nickrout/testlauncher/HomeActivity.java
+A	TestLauncher/app/src/main/res/layout/activity_home.xml
+A	TestLauncher/app/src/main/res/layout/recycler_item_app.xml
+A	TestLauncher/app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	TestLauncher/app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	TestLauncher/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	TestLauncher/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	TestLauncher/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	TestLauncher/app/src/main/res/values/colors.xml
+A	TestLauncher/app/src/main/res/values/strings.xml
+A	TestLauncher/app/src/main/res/values/styles.xml
+A	TestLauncher/app/src/test/java/com/nickrout/testlauncher/ExampleUnitTest.java
+A	TestLauncher/build.gradle
+A	TestLauncher/gradle.properties
+A	TestLauncher/gradle/wrapper/gradle-wrapper.jar
+A	TestLauncher/gradle/wrapper/gradle-wrapper.properties
+A	TestLauncher/gradlew
+A	TestLauncher/gradlew.bat
+A	TestLauncher/settings.gradle
+A	TestLens/.gitignore
+A	TestLens/.idea/.name
+A	TestLens/.idea/compiler.xml
+A	TestLens/.idea/copyright/profiles_settings.xml
+A	TestLens/.idea/gradle.xml
+A	TestLens/.idea/misc.xml
+A	TestLens/.idea/modules.xml
+A	TestLens/.idea/runConfigurations.xml
+A	TestLens/.idea/vcs.xml
+A	TestLens/app/.gitignore
+A	TestLens/app/build.gradle
+A	TestLens/app/proguard-rules.pro
+A	TestLens/app/src/androidTest/java/com/nickrout/testlens/ApplicationTest.java
+A	TestLens/app/src/main/AndroidManifest.xml
+A	TestLens/app/src/main/java/com/nickrout/testlens/Grid.java
+A	TestLens/app/src/main/java/com/nickrout/testlens/LensCalculator.java
+A	TestLens/app/src/main/java/com/nickrout/testlens/LensSettings.java
+A	TestLens/app/src/main/java/com/nickrout/testlens/LensView.java
+A	TestLens/app/src/main/java/com/nickrout/testlens/MainActivity.java
+A	TestLens/app/src/main/res/layout/activity_main.xml
+A	TestLens/app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	TestLens/app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	TestLens/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	TestLens/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	TestLens/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	TestLens/app/src/main/res/values/colors.xml
+A	TestLens/app/src/main/res/values/dimens.xml
+A	TestLens/app/src/main/res/values/strings.xml
+A	TestLens/app/src/main/res/values/styles.xml
+A	TestLens/app/src/test/java/com/nickrout/testlens/ExampleUnitTest.java
+A	TestLens/build.gradle
+A	TestLens/gradle.properties
+A	TestLens/gradle/wrapper/gradle-wrapper.jar
+A	TestLens/gradle/wrapper/gradle-wrapper.properties
+A	TestLens/gradlew
+A	TestLens/gradlew.bat
+A	TestLens/settings.gradle

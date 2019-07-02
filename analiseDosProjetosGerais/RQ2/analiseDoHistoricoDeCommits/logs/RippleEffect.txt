@@ -1,0 +1,390 @@
+df5f9e4;Merge pull request #92 from Hitta/canvas-restore-android-m-api-23-fix
+241a8d0;Merge pull request #96 from traex/issue/37
+05021ab;Update README
+M	README.md
+
+38ba6bb;Merge pull request #95 from traex/fix/gradle-wrapper
+ebf9e38;Update dependencies
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+
+c632fe0;Merge pull request #82 from emanzanoaxa/fix_marshmallow
+82cf00e;Avoid calling canvas.restore on Android M
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+52ea2a0;Fixed crash on Android 6.0, caused by different number of calls to canvas.restore() / canvas.save(). This may be caused by new restrictions introduced to Marshmallow. Updated compile, target and support lib versions to 23.
+M	library/build.gradle
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/build.gradle
+
+3f40244;Merge pull request #61 from traex/fix/README
+2c0ab45;Upadte README
+M	README.md
+
+5983dc7;Upadte sample gradle
+M	sample/build.gradle
+
+9b04c21;Merge pull request #60 from traex/release/v1.3
+e802cb7;Remove useless nonnull annotation
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+4e820a8;Update configuration files
+M	build.gradle
+M	library/build.gradle
+M	sample/build.gradle
+
+279fbfd;Merge pull request #59 from traex/feature/DisableRippleView
+002e9c2;Add disabled/disabled ripple view
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+54aea87;Merge pull request #52 from cosic/am/#43
+20c730e;Merge pull request #58 from traex/feature/GetSetForAttrs
+d038470;Add documentation
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+a005910;Add getters and setters for all remaining attrs
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+5621678;Add getters and setters for RippleType
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+4a75548;Merge pull request #46 from lukaciko/resource_cleanup
+d40057d;Merge pull request #44 from rafaeltoledo/master
+09b69cb;#43 Cast parent to AdapterView instead ListView for support of GridView too
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+8993f2b;Removed unused resources.
+D	library/src/main/res/drawable-hdpi/ic_launcher.png
+D	library/src/main/res/drawable-mdpi/ic_launcher.png
+D	library/src/main/res/drawable-xhdpi/ic_launcher.png
+D	library/src/main/res/drawable-xxhdpi/ic_launcher.png
+D	library/src/main/res/drawable/shape_rounded.xml
+D	library/src/main/res/values/strings.xml
+
+27a50e2;Added OnRippleCompleteListener and eemoved ic_launcher from library (Issues #27 and #36). Updated build tools.
+M	build.gradle
+M	library/build.gradle
+M	library/src/main/java/com/andexert/library/RippleView.java
+D	library/src/main/res/drawable-hdpi/ic_launcher.png
+D	library/src/main/res/drawable-mdpi/ic_launcher.png
+D	library/src/main/res/drawable-xhdpi/ic_launcher.png
+D	library/src/main/res/drawable-xxhdpi/ic_launcher.png
+M	sample/build.gradle
+M	sample/src/main/java/com/andexert/rippleeffect/MainActivity.java
+
+2a04317;Update README.md
+M	README.md
+
+5db9d16;Merge pull request #35 from Daaaab/ripple_color_setter
+9d5ca81;Merge pull request #38 from yuripourre/patch-1
+71ddcab;Merge pull request #39 from javmarina/patch
+8a7ecf8;Minor fixes to RippleView.java
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+e87c182;Fix usage example
+M	README.md
+
+b32160a;RippleColor getter/setter
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+25a97d0;Merge branch 'master' of https://github.com/traex/RippleEffect
+b07abe5;Merge branch 'release/v1.2.4'
+5b8c173;[RELEASE] Update config files
+M	build.gradle
+M	library/build.gradle
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/src/main/java/com/andexert/rippleeffect/MainActivity.java
+
+f8fe976;[FIX] Issue with itemClick and ListView
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/build.gradle
+A	sample/src/main/java/com/andexert/rippleeffect/CustomListViewAdapter.java
+M	sample/src/main/java/com/andexert/rippleeffect/MainActivity.java
+A	sample/src/main/res/layout/activity_main_list.xml
+R100	sample/src/main/res/layout/activity_main.xml	sample/src/main/res/layout/activity_main_recycler.xml
+
+0f7d03f;[RELEASE] Update config files
+M	library/build.gradle
+M	sample/build.gradle
+
+f4a7a7b;Update README.md
+M	README.md
+
+6a6e8c1;[CLEAN] Update files
+M	build.gradle
+M	library/build.gradle
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/build.gradle
+
+6904bc5;[UPDATE] Update buildToolsVersion and clean logs
+M	library/build.gradle
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/build.gradle
+
+2b94d2d;[SAMPLE] Sample with Onclick and OnLongClick with Toolbar from appcompat-v7
+M	library/build.gradle
+M	sample/build.gradle
+M	sample/src/main/java/com/andexert/rippleeffect/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/values/styles.xml
+
+2542428;[FIX] Onclick and OnLongClick
+M	library/src/main/AndroidManifest.xml
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/src/main/java/com/andexert/rippleeffect/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/layout/row_view.xml
+
+8c8a194;[WIP]
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/build.gradle
+M	sample/src/main/java/com/andexert/rippleeffect/MainActivity.java
+A	sample/src/main/res/drawable/selector_row.xml
+M	sample/src/main/res/layout/row_view.xml
+
+1ac0236;Update README.md
+M	README.md
+
+37aecc9;Merge branch 'develop'
+f6e43a9;[README] Update header image
+M	header.png
+
+a895fc9;Merge branch 'release/v1.2.2'
+9a02f29;Merge branch 'release/v1.2.2' into develop
+be17b92;[RELEASE] Update Configuration files
+M	library/build.gradle
+
+b00bbb4;[SDK] Downgrade minSDK from 14 to 9
+M	library/build.gradle
+
+91c78c0;Merge branch 'develop'
+4ba075e;[EXAMPLE] Add an example of RippleEffect in a RecyclerView
+M	sample/build.gradle
+A	sample/src/main/java/com/andexert/rippleeffect/CustomAdapter.java
+M	sample/src/main/java/com/andexert/rippleeffect/MainActivity.java
+A	sample/src/main/java/com/andexert/rippleeffect/OnTapListener.java
+M	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/layout/row_view.xml
+
+34ecbaa;Update README.md
+M	README.md
+
+a768988;Merge branch 'release/v1.2.1' into develop
+6fa99d3;Merge branch 'release/v1.2.1'
+b208b83;[RELEASE] Update configuration files
+M	library/build.gradle
+
+d092892;[FIX] Add click on RippleVIew
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/src/main/java/com/andexert/rippleeffect/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+
+3479827;Update README.md
+M	README.md
+
+87c483d;Merge branch 'release/v1.2' into develop
+6422729;Merge branch 'release/v1.2'
+dfa5f55;[FIX] Clean manifest with empty application
+M	library/src/main/AndroidManifest.xml
+
+0c3534f;[RELEASE] Optimize imports
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+182a8ff;[RELEASE] Update configuration files
+M	README.md
+M	library/build.gradle
+
+4378355;[FUNC] Remove inverse effect
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/res/layout/activity_main.xml
+
+eb59edd;[PROGRESS] Reverse ripple
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/res/layout/activity_main.xml
+
+eeedf55;[FUNC] Add zoomScale attribute
+M	library/src/main/java/com/andexert/library/RippleView.java
+D	library/src/main/res/anim/zoom.xml
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/res/layout/activity_main.xml
+
+adf4824;[FIX] Rendering problems in Android Studio
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+d5be111;Merge branch 'develop'
+e60abe0;Merge pull request #8 from kashban/patch-1
+df32c50;Update AndroidManifest.xml
+M	library/src/main/AndroidManifest.xml
+
+1242294;Merge pull request #6 from Cheesebaron/patch-1
+decfdf7;Update README.md
+M	README.md
+
+0d85539;[DOC] Update Readme
+M	README.md
+
+d14b4dd;[DOC] Update Readme
+M	README.md
+
+ab93abb;Merge branch 'release/v1.1.1' into develop
+9359175;Merge branch 'release/v1.1.1'
+eb8052d;[RELEASE] Update configuration files
+M	library/build.gradle
+
+e31e17c;[UPDATE] attrs names to avoid conflicts with others libraries
+M	README.md
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/res/layout/activity_main.xml
+
+26c9c9c;Update README.md
+M	README.md
+
+a4a6093;Update README.md
+M	README.md
+
+685ffa7;Merge branch 'master' of https://github.com/traex/RippleEffect
+47894f2;Merge branch 'release/v1.1' into develop
+7b7bcfa;Merge branch 'release/v1.1'
+e2b075f;[RELEASE] Update configuration files
+M	library/build.gradle
+
+a06237e;Merge pull request #4 from traex/develop
+7d0496c;[FIX] WrapContent issue
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	library/src/main/res/values/attrs.xml
+M	sample/build.gradle
+M	sample/src/main/res/layout/activity_main.xml
+
+484d788;Update README.md
+M	README.md
+
+411b980;Update README.md
+M	README.md
+
+f39fb3c;Merge branch 'release/v1.0' into develop
+941a6af;Merge branch 'release/v1.0'
+2cac894;[DOC] Update Readme
+M	README.md
+
+aacb3e0;[RELEASE] Update confs files
+M	build.gradle
+M	library/build.gradle
+
+fad055a;[CONF] Update .gitignore
+M	.gitignore
+M	library/.gitignore
+M	sample/.gitignore
+
+7de36bc;[DOC] Update Readme
+M	README.md
+
+c1763c6;[DOC]  Add header and update README
+M	README.md
+M	demo.gif
+A	header.png
+M	sample/src/main/res/layout/activity_main.xml
+
+17f6ac2;[ATTRS] Add alpha and centered options
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/res/layout/activity_main.xml
+
+4d94304;[DOC] Add Readme and demo.gif
+A	README.md
+A	demo.gif
+
+edd1810;[CLEAN] Remove unused imports
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/src/main/res/layout/activity_main.xml
+
+5394717;[FUNC] Add options to attrs : type, framerate, rippleDuration, zoomDuration
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/res/layout/activity_main.xml
+
+e2e400b;[FUNC][TMP] Add attrs
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	library/src/main/res/values/attrs.xml
+M	sample/src/main/res/layout/activity_main.xml
+
+588fed5;[FUNC] Add method to force drawing
+M	library/src/main/java/com/andexert/library/RippleView.java
+
+06adb11;[FUNC] Change color
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/src/main/res/layout/activity_main.xml
+
+005d415;[FUNC] TA-DAH ! RippleEffect Done
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/src/main/res/layout/activity_main.xml
+
+d837893;[FIX] Scale animation time
+M	library/src/main/res/anim/zoom.xml
+
+f54c3bf;[UI] Fix time
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	library/src/main/res/anim/zoom.xml
+
+d15e2a3;[FUNC] Add zoom function and fix ripple effect
+M	library/src/main/java/com/andexert/library/RippleView.java
+A	library/src/main/res/anim/zoom.xml
+M	sample/src/main/res/layout/activity_main.xml
+
+05669ff;[FUNC] Remove Action_Up check
+M	build.gradle
+M	library/src/main/java/com/andexert/library/RippleView.java
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/values/styles.xml
+
+94b5690;[FUNC] Add rounded func
+M	library/src/main/java/com/andexert/library/RippleView.java
+A	sample/src/main/res/drawable/ic_profil_plus.png
+A	sample/src/main/res/drawable/shape_example.xml
+M	sample/src/main/res/layout/activity_main.xml
+
+8249f9d;[INIT] Add Project
+A	.gitignore
+A	LICENSE.txt
+A	build.gradle
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	library/.gitignore
+A	library/build.gradle
+A	library/proguard-rules.pro
+A	library/src/androidTest/java/com/andexert/library/ApplicationTest.java
+A	library/src/main/AndroidManifest.xml
+A	library/src/main/java/com/andexert/library/RippleView.java
+A	library/src/main/res/drawable-hdpi/ic_launcher.png
+A	library/src/main/res/drawable-mdpi/ic_launcher.png
+A	library/src/main/res/drawable-xhdpi/ic_launcher.png
+A	library/src/main/res/drawable-xxhdpi/ic_launcher.png
+A	library/src/main/res/drawable/shape_rounded.xml
+A	library/src/main/res/values/attrs.xml
+A	library/src/main/res/values/colors.xml
+A	library/src/main/res/values/strings.xml
+A	library/src/main/res/values/styles.xml
+A	sample/.gitignore
+A	sample/build.gradle
+A	sample/proguard-rules.pro
+A	sample/src/androidTest/java/com/andexert/rippleeffect/ApplicationTest.java
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/com/andexert/rippleeffect/MainActivity.java
+A	sample/src/main/res/drawable-hdpi/ic_launcher.png
+A	sample/src/main/res/drawable-mdpi/ic_launcher.png
+A	sample/src/main/res/drawable-xhdpi/ic_launcher.png
+A	sample/src/main/res/drawable-xxhdpi/ic_launcher.png
+A	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/menu/main.xml
+A	sample/src/main/res/values-w820dp/dimens.xml
+A	sample/src/main/res/values/dimens.xml
+A	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/values/styles.xml
+A	settings.gradle

@@ -1,0 +1,691 @@
+a6beec6;Added jitpack badge to README
+M	README.md
+
+94d165d;Updated README file so it will point to jitpack
+M	README.md
+
+a00057a;Merge pull request #23 from jacek-marchwicki/new-okhttp
+998e13f;Update build scripts
+M	.travis.yml
+M	websockets-rxjava-example/build.gradle
+
+df73f29;Implemented new okhttp
+M	websockets-rxjava-example/build.gradle
+M	websockets-rxjava-example/src/main/AndroidManifest.xml
+M	websockets-rxjava-example/src/main/java/com/appunite/socket/MainPresenter.java
+M	websockets-rxjava-example/src/main/java/com/example/Socket.java
+M	websockets-rxjava-example/src/main/java/com/example/model/MessageType.java
+M	websockets-rxjava-example/src/main/res/values/colors.xml
+M	websockets-rxjava/build.gradle
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxMoreObservables.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/ServerHttpError.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventBinaryMessage.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventBinaryMessageAbs.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventConn.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventConnected.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventDisconnected.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventPong.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventStringMessage.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/ObjectParseException.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/ObjectWebSocketSender.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/RxObjectWebSockets.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventDisconnected.java
+
+886d9ba;New gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	websockets-rxjava-example/build.gradle
+M	websockets-rxjava/build.gradle
+
+a522486;Merge pull request #20 from jacek-marchwicki/remove-unused-kubernates
+54a8688;Added new launcher icon
+M	websockets-rxjava-example/src/main/AndroidManifest.xml
+A	websockets-rxjava-example/src/main/ic_launcher-web.png
+D	websockets-rxjava-example/src/main/res/drawable-hdpi/ic_launcher.png
+D	websockets-rxjava-example/src/main/res/drawable-ldpi/ic_launcher.png
+D	websockets-rxjava-example/src/main/res/drawable-mdpi/ic_launcher.png
+D	websockets-rxjava-example/src/main/res/drawable-xhdpi/ic_launcher.png
+A	websockets-rxjava-example/src/main/res/mipmap-hdpi/ic_launcher.png
+A	websockets-rxjava-example/src/main/res/mipmap-mdpi/ic_launcher.png
+A	websockets-rxjava-example/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	websockets-rxjava-example/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	websockets-rxjava-example/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+bea46bb;Changed app name
+M	websockets-rxjava-example/src/main/res/values/strings.xml
+
+e0ec37d;Added presentation for example
+M	README.md
+A	imgs/presentation.gif
+
+d92ca8a;Point to staging server
+M	websockets-rxjava-example/src/main/java/com/appunite/socket/MainActivity.java
+
+f4e29e4;Better deamon documentation
+M	websockets-server/README.md
+
+49ab42e;Merge pull request #19 from jacek-marchwicki/remove-gitlabci-badge
+c8b7d66;Added readme to point docker image + removed old scripts
+M	websockets-server/README.md
+D	websockets-server/build-docker.sh
+D	websockets-server/kubernates/frontend.yml
+D	websockets-server/run-docker.sh
+D	websockets-server/upload-docker.sh
+
+1ed5033;Remove gitlabci old badge
+M	README.md
+
+fe4968f;Merge pull request #18 from jacek-marchwicki/travis-fix
+0868e5f;Updated build tools
+M	.travis.yml
+
+d16583f;More lint
+M	.travis.yml
+A	websockets-server/build-docker.sh
+A	websockets-server/kubernates/frontend.yml
+A	websockets-server/run-docker.sh
+A	websockets-server/upload-docker.sh
+
+df654ab;Finding travis issues
+M	.travis.yml
+
+28a671c;Merge branch 'updates' into 'master'
+075d6f0;Added jcenter
+M	websockets-rxjava-example/build.gradle
+M	websockets-rxjava-example/src/main/java/com/appunite/socket/MainActivity.java
+M	websockets-rxjava/build.gradle
+
+0a567b9;Added dockerfile
+A	websockets-server/Dockerfile
+
+f3f683c;Fixed building of websocket
+M	websockets-server/server/example/hub/websocket.py
+M	websockets-server/server/setup.py
+
+3ee19f1;Updated gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	websockets-rxjava-example/build.gradle
+M	websockets-rxjava/build.gradle
+
+9ed3763;Merge branch 'lock-websocket-write' into 'master'
+0372767;Synchornize websockets writes
+M	README.md
+M	websockets-rxjava/build.gradle
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.java
+
+07599a8;Merge branch 'okhttp3' into 'master'
+b3f134c;Use okhttp3 instead of old one
+M	README.md
+M	websockets-rxjava-example/src/main/java/com/appunite/socket/MainActivity.java
+M	websockets-rxjava-example/src/test/java/com/example/RxObjectWebSocketsRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/RxWebSocketsRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/SocketRealTest.java
+M	websockets-rxjava/build.gradle
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxMoreObservables.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventBinaryMessage.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventBinaryMessageAbs.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventConn.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventConnected.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventDisconnected.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventPong.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventStringMessage.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/RxObjectWebSockets.java
+
+9cec842;Merge branch 'fix-build' into 'master'
+b93da79;Specify verions of packages
+M	websockets-server/server/setup.py
+
+12da78e;Merge branch 'fix-documentation' into 'master'
+07eda48;Fixed documentation of ObjectWebSocketSender
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/ObjectWebSocketSender.java
+
+9dfa981;Merge branch 'fix-server-close-request' into 'master'
+c24daa8;Fixed behavior when server requested close
+M	websockets-rxjava/build.gradle
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.java
+R053	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventServerRequestedClose.java	websockets-rxjava/src/main/java/com/appunite/websocket/rx/ServerRequestedCloseException.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEvent.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventBinaryMessageAbs.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventDisconnected.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/RxObjectWebSockets.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventDisconnected.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventMessage.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventWrongBinaryMessageFormat.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventWrongMessageFormat.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventWrongStringMessageFormat.java
+
+1efae6f;Merge branch 'gitlab-ci' into 'master'
+21785c6;Added gitlab-ci build status
+M	README.md
+
+3f477da;Updated readme to refer .gitlab-ci.yml file
+M	websockets-server/README.md
+
+8c19300;Fixed typo in build script
+M	.gitlab-ci.yml
+
+c95bfc5;Don't build app when tag is pushed
+M	.gitlab-ci.yml
+
+ecebef0;Added script for building on gitlab-ci
+A	.gitlab-ci.yml
+A	tools/close-task.py
+A	tools/download.py
+A	tools/upload-keys.py
+A	tools/upload.py
+
+14eb94d;Updated readme for websockets-server
+M	websockets-server/README.md
+
+720471f;Fixed dependencies is websocket-server
+M	websockets-server/server/setup.py
+
+e6eba27;Merge pull request #15 from jacek-marchwicki/okhttp
+c4c58d5;Fixed readme file
+M	README.md
+
+0e17631;Renamed example to bo more generic
+R084	websockets-rxjava-example/src/test/java/com/example/RxJsonWebSocketsRealTest.java	websockets-rxjava-example/src/test/java/com/example/RxObjectWebSocketsRealTest.java
+
+dd1ebf5;Fixed showing errors
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.java
+
+b32987c;Fixed tests
+M	websockets-rxjava-example/build.gradle
+M	websockets-rxjava-example/src/test/java/com/example/RxJsonWebSocketsRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/RxWebSocketsRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/SocketRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/SocketTest.java
+
+fe21ca7;Sample library that works with okhttp
+M	settings.gradle
+D	websockets-example/build.gradle
+D	websockets-example/src/main/AndroidManifest.xml
+D	websockets-example/src/main/java/com/appunite/socket/MainActivity.java
+D	websockets-example/src/main/res/drawable-hdpi/ic_launcher.png
+D	websockets-example/src/main/res/drawable-ldpi/ic_launcher.png
+D	websockets-example/src/main/res/drawable-mdpi/ic_launcher.png
+D	websockets-example/src/main/res/drawable-xhdpi/ic_launcher.png
+D	websockets-example/src/main/res/layout/main_activity.xml
+D	websockets-example/src/main/res/values/strings.xml
+M	websockets-rxjava-example/src/main/java/com/appunite/socket/MainActivity.java
+M	websockets-rxjava-example/src/main/java/com/appunite/socket/MainAdapter.java
+M	websockets-rxjava/build.gradle
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxMoreObservables.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventBinaryMessage.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventBinaryMessageAbs.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventConn.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventConnected.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventDisconnected.java
+D	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventPing.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventPong.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventServerRequestedClose.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventStringMessage.java
+D	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventUnknownMessage.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/ObjectParseException.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/ObjectWebSocketSender.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/RxObjectWebSockets.java
+M	websockets-server/server/example/hub/websocket.py
+D	websockets/build.gradle
+D	websockets/src/main/java/com/appunite/websocket/NewWebSocket.java
+D	websockets/src/main/java/com/appunite/websocket/NotConnectedException.java
+D	websockets/src/main/java/com/appunite/websocket/WebSocket.java
+D	websockets/src/main/java/com/appunite/websocket/WebSocketConnection.java
+D	websockets/src/main/java/com/appunite/websocket/WebSocketListener.java
+D	websockets/src/main/java/com/appunite/websocket/WebSocketReader.java
+D	websockets/src/main/java/com/appunite/websocket/WebSocketSender.java
+D	websockets/src/main/java/com/appunite/websocket/WebSocketWriter.java
+D	websockets/src/main/java/com/appunite/websocket/WrongWebsocketResponse.java
+D	websockets/src/main/java/com/appunite/websocket/internal/SecureRandomProvider.java
+D	websockets/src/main/java/com/appunite/websocket/internal/SecureRandomProviderImpl.java
+D	websockets/src/main/java/com/appunite/websocket/internal/SocketProvider.java
+D	websockets/src/main/java/com/appunite/websocket/internal/SocketProviderImpl.java
+D	websockets/src/main/java/com/appunite/websocket/tools/Base64.java
+D	websockets/src/main/java/com/appunite/websocket/tools/Preconditions.java
+D	websockets/src/main/java/com/appunite/websocket/tools/Strings.java
+D	websockets/src/test/java/com/appunite/websocket/NewWebSocketTest.java
+D	websockets/src/test/java/com/appunite/websocket/WebsocketTest.java
+
+473a674;Merge pull request #14 from jacek-marchwicki/serialize-more-than-gson
+61116cb;Fixed compilation
+M	websockets-rxjava-example/src/test/java/com/example/RxJsonWebSocketsRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/SocketRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/SocketTest.java
+
+b2c678e;Added javadoc to new classes
+M	websockets-rxjava-example/src/main/java/com/appunite/websocket/rx/object/GsonObjectSerializer.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/ObjectParseException.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/ObjectSerializer.java
+
+daeb1e6;Updated readme file
+M	README.md
+
+fbf4ae0;Ability to serialize not only gson
+M	README.md
+M	websockets-rxjava-example/build.gradle
+M	websockets-rxjava-example/src/main/java/com/appunite/socket/MainActivity.java
+M	websockets-rxjava-example/src/main/java/com/appunite/socket/MainPresenter.java
+A	websockets-rxjava-example/src/main/java/com/appunite/websocket/rx/object/GsonObjectSerializer.java
+M	websockets-rxjava-example/src/main/java/com/example/MoreObservables.java
+M	websockets-rxjava-example/src/main/java/com/example/Socket.java
+M	websockets-rxjava-example/src/main/java/com/example/SocketConnection.java
+M	websockets-rxjava-example/src/main/java/com/example/SocketConnectionImpl.java
+M	websockets-rxjava-example/src/test/java/com/example/RxJsonWebSocketsRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/SocketRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/SocketTest.java
+M	websockets-rxjava/build.gradle
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxMoreObservables.java
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.java
+D	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/RxJsonWebSockets.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/ObjectParseException.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/ObjectSerializer.java
+R077	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/JsonWebSocketSender.java	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/ObjectWebSocketSender.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/RxObjectWebSockets.java
+R077	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEvent.java	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEvent.java
+R064	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEventConn.java	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventConn.java
+R078	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEventConnected.java	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventConnected.java
+R078	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEventDisconnected.java	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventDisconnected.java
+R069	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEventMessage.java	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventMessage.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventWrongBinaryMessageFormat.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventWrongMessageFormat.java
+R060	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEventWrongMessageFormat.java	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventWrongStringMessageFormat.java
+
+9c8a6ce;Merge pull request #13 from jacek-marchwicki/headers-and-sub-protocols
+344d59e;Merge pull request #12 from jacek-marchwicki/better-info-about-failure
+9ddc092;Ability to send subprotocols and own headers
+M	websockets-rxjava-example/src/main/java/com/appunite/socket/MainActivity.java
+M	websockets-rxjava-example/src/test/java/com/example/RxJsonWebSocketsRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/RxWebSocketsRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/SocketRealTest.java
+M	websockets-rxjava/build.gradle
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.java
+M	websockets/build.gradle
+M	websockets/src/main/java/com/appunite/websocket/NewWebSocket.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocket.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketConnection.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketWriter.java
+M	websockets/src/test/java/com/appunite/websocket/NewWebSocketTest.java
+
+6692630;Merge pull request #11 from jacek-marchwicki/removed-unecessary-lines
+a706662;Better info about failure http response
+M	websockets/src/main/java/com/appunite/websocket/WebSocketConnection.java
+
+4c74492;Removed unnecessary lines from test
+M	websockets-rxjava-example/src/test/java/com/example/RxWebSocketsRealTest.java
+
+966b6ca;Merge pull request #8 from jacek-marchwicki/added-maven-central
+2c4efdc;Disabled signing when no uploadArchives
+M	websockets-rxjava/build.gradle
+M	websockets/build.gradle
+
+147a11b;Added maven central
+M	.gitignore
+M	README.md
+M	websockets-rxjava/build.gradle
+M	websockets/build.gradle
+
+ec0c508;Merge pull request #7 from jacek-marchwicki/remove-old-ci
+d135101;Removed old ci build script
+D	auto-build.sh
+
+504b027;Merge pull request #6 from jacek-marchwicki/rx-java
+e36f037;RxJava implemenation with example
+M	.gitignore
+M	README.md
+M	settings.gradle
+M	websockets-example/src/main/AndroidManifest.xml
+R092	websockets-example/src/main/java/com/appunite/socket/Main.java	websockets-example/src/main/java/com/appunite/socket/MainActivity.java
+R088	websockets-example/src/main/res/layout/main.xml	websockets-example/src/main/res/layout/main_activity.xml
+A	websockets-rxjava-example/build.gradle
+A	websockets-rxjava-example/src/main/AndroidManifest.xml
+A	websockets-rxjava-example/src/main/java/com/appunite/detector/ChangesDetector.java
+A	websockets-rxjava-example/src/main/java/com/appunite/detector/SimpleDetector.java
+A	websockets-rxjava-example/src/main/java/com/appunite/socket/MainActivity.java
+A	websockets-rxjava-example/src/main/java/com/appunite/socket/MainAdapter.java
+A	websockets-rxjava-example/src/main/java/com/appunite/socket/MainPresenter.java
+A	websockets-rxjava-example/src/main/java/com/example/LoggingObservables.java
+A	websockets-rxjava-example/src/main/java/com/example/MoreObservables.java
+A	websockets-rxjava-example/src/main/java/com/example/OperatorDoOnNext.java
+A	websockets-rxjava-example/src/main/java/com/example/Socket.java
+A	websockets-rxjava-example/src/main/java/com/example/SocketConnection.java
+A	websockets-rxjava-example/src/main/java/com/example/SocketConnectionImpl.java
+A	websockets-rxjava-example/src/main/java/com/example/model/ChatMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/DataMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/ErrorMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/Message.java
+A	websockets-rxjava-example/src/main/java/com/example/model/MessageType.java
+A	websockets-rxjava-example/src/main/java/com/example/model/PingMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/PongMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/RegisterMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/RegisteredMessage.java
+A	websockets-rxjava-example/src/main/res/drawable-hdpi/ic_launcher.png
+A	websockets-rxjava-example/src/main/res/drawable-ldpi/ic_launcher.png
+A	websockets-rxjava-example/src/main/res/drawable-mdpi/ic_launcher.png
+A	websockets-rxjava-example/src/main/res/drawable-xhdpi/ic_launcher.png
+A	websockets-rxjava-example/src/main/res/layout/main_activity.xml
+A	websockets-rxjava-example/src/main/res/layout/main_adapter_item.xml
+A	websockets-rxjava-example/src/main/res/values/colors.xml
+A	websockets-rxjava-example/src/main/res/values/strings.xml
+A	websockets-rxjava-example/src/test/java/com/appunite/detector/ChangesDetectorTest.java
+A	websockets-rxjava-example/src/test/java/com/example/RxJsonWebSocketsRealTest.java
+A	websockets-rxjava-example/src/test/java/com/example/RxWebSocketsRealTest.java
+A	websockets-rxjava-example/src/test/java/com/example/SocketRealTest.java
+A	websockets-rxjava-example/src/test/java/com/example/SocketTest.java
+A	websockets-rxjava/build.gradle
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxMoreObservables.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/JsonWebSocketSender.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/RxJsonWebSockets.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEvent.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEventConn.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEventConnected.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEventDisconnected.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEventMessage.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/json/messages/RxJsonEventWrongMessageFormat.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEvent.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventBinaryMessage.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventBinaryMessageAbs.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventConn.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventConnected.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventDisconnected.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventPing.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventPong.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventServerRequestedClose.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventStringMessage.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/messages/RxEventUnknownMessage.java
+A	websockets-server/README.md
+A	websockets-server/server/example/__init__.py
+A	websockets-server/server/example/hub/__init__.py
+A	websockets-server/server/example/hub/__init__.py~
+A	websockets-server/server/example/hub/__init__.pz~
+A	websockets-server/server/example/hub/websocket.py
+A	websockets-server/server/setup.py
+M	websockets/src/main/java/com/appunite/websocket/NewWebSocket.java
+M	websockets/src/main/java/com/appunite/websocket/NotConnectedException.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocket.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketConnection.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketListener.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketReader.java
+A	websockets/src/main/java/com/appunite/websocket/WebSocketSender.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketWriter.java
+M	websockets/src/main/java/com/appunite/websocket/WrongWebsocketResponse.java
+M	websockets/src/main/java/com/appunite/websocket/internal/SecureRandomProvider.java
+M	websockets/src/main/java/com/appunite/websocket/internal/SecureRandomProviderImpl.java
+M	websockets/src/main/java/com/appunite/websocket/internal/SocketProvider.java
+M	websockets/src/main/java/com/appunite/websocket/internal/SocketProviderImpl.java
+M	websockets/src/main/java/com/appunite/websocket/tools/Strings.java
+M	websockets/src/test/java/com/appunite/websocket/NewWebSocketTest.java
+M	websockets/src/test/java/com/appunite/websocket/WebsocketTest.java
+
+857a5c5;Merge pull request #5 from jacek-marchwicki/remove-socketio
+424593f;Changed to NewWebSocket implementation
+A	websockets/src/main/java/com/appunite/websocket/NewWebSocket.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocket.java
+A	websockets/src/main/java/com/appunite/websocket/WebSocketConnection.java
+A	websockets/src/main/java/com/appunite/websocket/internal/SecureRandomProvider.java
+A	websockets/src/main/java/com/appunite/websocket/internal/SecureRandomProviderImpl.java
+A	websockets/src/main/java/com/appunite/websocket/internal/SocketProvider.java
+A	websockets/src/main/java/com/appunite/websocket/internal/SocketProviderImpl.java
+A	websockets/src/test/java/com/appunite/websocket/NewWebSocketTest.java
+M	websockets/src/test/java/com/appunite/websocket/WebsocketTest.java
+
+ab72584;Removed Guava Optional and added @Nonnull annotations
+M	websockets-example/src/main/java/com/appunite/socket/Main.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocket.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketListener.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketReader.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketWriter.java
+M	websockets/src/main/java/com/appunite/websocket/WrongWebsocketResponse.java
+D	websockets/src/main/java/com/appunite/websocket/tools/Absent.java
+D	websockets/src/main/java/com/appunite/websocket/tools/Optional.java
+D	websockets/src/main/java/com/appunite/websocket/tools/Present.java
+
+3990264;Commented integration tests
+M	websockets/src/test/java/com/appunite/websocket/WebsocketTest.java
+
+8e68f28;Removed "public" in interface
+M	websockets/src/main/java/com/appunite/websocket/WebSocketListener.java
+
+448acff;Change naming conventions for fileds
+M	websockets-example/src/main/java/com/appunite/socket/Main.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocket.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketReader.java
+M	websockets/src/main/java/com/appunite/websocket/WebSocketWriter.java
+M	websockets/src/test/java/com/appunite/websocket/WebsocketTest.java
+
+7e7f808;Updated readme file
+M	README.md
+
+1ae6a98;Removed unused socket io
+D	AndroidSocket/src/main/java/com/appunite/socket/Main.java
+D	AndroidSocketIO/project.properties
+D	AndroidSocketIO/src/androidTest/AndroidManifest.xml
+D	AndroidSocketIO/src/androidTest/java/com/appunite/socketio/IOMessageTest.java
+D	AndroidSocketIO/src/androidTest/java/com/appunite/socketio/SocketIOTest.java
+D	AndroidSocketIO/src/androidTest/libs/dexmaker-0.9.jar
+D	AndroidSocketIO/src/androidTest/libs/dexmaker-mockito-0.9.jar
+D	AndroidSocketIO/src/androidTest/libs/hamcrest-all-1.3.jar
+D	AndroidSocketIO/src/androidTest/libs/jsonmatchers-1.0-SNAPSHOT.jar
+D	AndroidSocketIO/src/androidTest/libs/mockito-core-1.9.8.jar
+D	AndroidSocketIO/src/main/AndroidManifest.xml
+D	AndroidSocketIO/src/main/java/com/appunite/socketio/IOMessage.java
+D	AndroidSocketIO/src/main/java/com/appunite/socketio/SocketBase.java
+D	AndroidSocketIO/src/main/java/com/appunite/socketio/SocketIO.java
+D	AndroidSocketIO/src/main/java/com/appunite/socketio/SocketIOBase.java
+D	AndroidSocketIO/src/main/java/com/appunite/socketio/SocketListener.java
+D	AndroidSocketIO/src/main/java/com/appunite/socketio/SocketWriter.java
+D	AndroidSocketIO/src/main/java/com/appunite/socketio/WrongSocketIOResponse.java
+D	AndroidSocketIO/src/main/java/com/appunite/socketio/helpers/HTTPUtils.java
+M	settings.gradle
+R088	AndroidSocket/build.gradle	websockets-example/build.gradle
+R100	AndroidSocket/src/main/AndroidManifest.xml	websockets-example/src/main/AndroidManifest.xml
+A	websockets-example/src/main/java/com/appunite/socket/Main.java
+R100	AndroidSocket/src/main/res/drawable-hdpi/ic_launcher.png	websockets-example/src/main/res/drawable-hdpi/ic_launcher.png
+R100	AndroidSocket/src/main/res/drawable-ldpi/ic_launcher.png	websockets-example/src/main/res/drawable-ldpi/ic_launcher.png
+R100	AndroidSocket/src/main/res/drawable-mdpi/ic_launcher.png	websockets-example/src/main/res/drawable-mdpi/ic_launcher.png
+R100	AndroidSocket/src/main/res/drawable-xhdpi/ic_launcher.png	websockets-example/src/main/res/drawable-xhdpi/ic_launcher.png
+R100	AndroidSocket/src/main/res/layout/main.xml	websockets-example/src/main/res/layout/main.xml
+R100	AndroidSocket/src/main/res/values/strings.xml	websockets-example/src/main/res/values/strings.xml
+R070	AndroidSocketIO/build.gradle	websockets/build.gradle
+R096	AndroidSocketIO/src/main/java/com/appunite/socketio/NotConnectedException.java	websockets/src/main/java/com/appunite/websocket/NotConnectedException.java
+R097	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocket.java	websockets/src/main/java/com/appunite/websocket/WebSocket.java
+R098	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocketListener.java	websockets/src/main/java/com/appunite/websocket/WebSocketListener.java
+R100	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocketReader.java	websockets/src/main/java/com/appunite/websocket/WebSocketReader.java
+R100	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocketWriter.java	websockets/src/main/java/com/appunite/websocket/WebSocketWriter.java
+R100	AndroidSocketIO/src/main/java/com/appunite/websocket/WrongWebsocketResponse.java	websockets/src/main/java/com/appunite/websocket/WrongWebsocketResponse.java
+A	websockets/src/main/java/com/appunite/websocket/tools/Absent.java
+A	websockets/src/main/java/com/appunite/websocket/tools/Base64.java
+A	websockets/src/main/java/com/appunite/websocket/tools/Optional.java
+A	websockets/src/main/java/com/appunite/websocket/tools/Preconditions.java
+A	websockets/src/main/java/com/appunite/websocket/tools/Present.java
+A	websockets/src/main/java/com/appunite/websocket/tools/Strings.java
+R079	AndroidSocketIO/src/androidTest/java/com/appunite/websocket/WebsocketTest.java	websockets/src/test/java/com/appunite/websocket/WebsocketTest.java
+
+8420597;Merge pull request #3 from jacek-marchwicki/build-tools-r22
+6559fa3;Merge pull request #2 from jacek-marchwicki/new-gradle-plugin
+9adf6dc;Moved to build tools r22
+M	.travis.yml
+M	AndroidSocket/build.gradle
+M	AndroidSocketIO/build.gradle
+
+cc46850;New gradle plugin
+M	AndroidSocket/build.gradle
+M	AndroidSocketIO/build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+06ebfc6;Merge pull request #1 from jacek-marchwicki/travis
+3eb1da5;Fixed build tools version from 19.1 to 19.1.0
+M	.travis.yml
+
+0dc7ae0;Use docker with travis
+M	.travis.yml
+
+92f7774;Integration with travis
+A	.travis.yml
+
+3365315;Fixed some variables to camelCase
+M	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocket.java
+
+706d2d0;Fixed ping/pong
+M	AndroidSocketIO/build.gradle
+M	AndroidSocketIO/src/androidTest/java/com/appunite/websocket/WebsocketTest.java
+M	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocket.java
+
+dcd8d91;Optimization for start time
+M	AndroidSocketIO/build.gradle
+M	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocket.java
+
+a3ebf26;Added test that prestes working with websockets
+A	AndroidSocketIO/src/androidTest/java/com/appunite/websocket/WebsocketTest.java
+
+01d4f41;Little fixes in WebSocket's
+M	AndroidSocketIO/build.gradle
+M	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocketListener.java
+M	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocketReader.java
+
+844ec4c;Moved to gradle structure
+D	AndroidSocket/ant.properties
+M	AndroidSocket/build.gradle
+D	AndroidSocket/build.xml
+D	AndroidSocket/proguard-project.txt
+D	AndroidSocket/project.properties
+R100	AndroidSocket/AndroidManifest.xml	AndroidSocket/src/main/AndroidManifest.xml
+R100	AndroidSocket/src/com/appunite/socket/Main.java	AndroidSocket/src/main/java/com/appunite/socket/Main.java
+R100	AndroidSocket/res/drawable-hdpi/ic_launcher.png	AndroidSocket/src/main/res/drawable-hdpi/ic_launcher.png
+R100	AndroidSocket/res/drawable-ldpi/ic_launcher.png	AndroidSocket/src/main/res/drawable-ldpi/ic_launcher.png
+R100	AndroidSocket/res/drawable-mdpi/ic_launcher.png	AndroidSocket/src/main/res/drawable-mdpi/ic_launcher.png
+R100	AndroidSocket/res/drawable-xhdpi/ic_launcher.png	AndroidSocket/src/main/res/drawable-xhdpi/ic_launcher.png
+R100	AndroidSocket/res/layout/main.xml	AndroidSocket/src/main/res/layout/main.xml
+R100	AndroidSocket/res/values/strings.xml	AndroidSocket/src/main/res/values/strings.xml
+D	AndroidSocketIO/ant.properties
+M	AndroidSocketIO/build.gradle
+D	AndroidSocketIO/build.xml
+D	AndroidSocketIO/libs/guava-14.0-rc1.jar
+D	AndroidSocketIO/libs/javax.inject.jar
+D	AndroidSocketIO/libs/jsr305-2.0.1.jar
+D	AndroidSocketIO/proguard-project.txt
+R060	AndroidSocketIOTest/AndroidManifest.xml	AndroidSocketIO/src/androidTest/AndroidManifest.xml
+R100	AndroidSocketIOTest/src/com/appunite/socketio/IOMessageTest.java	AndroidSocketIO/src/androidTest/java/com/appunite/socketio/IOMessageTest.java
+R097	AndroidSocketIOTest/src/com/appunite/socketio/SocketIOTest.java	AndroidSocketIO/src/androidTest/java/com/appunite/socketio/SocketIOTest.java
+R100	AndroidSocketIOTest/libs/dexmaker-0.9.jar	AndroidSocketIO/src/androidTest/libs/dexmaker-0.9.jar
+R100	AndroidSocketIOTest/libs/dexmaker-mockito-0.9.jar	AndroidSocketIO/src/androidTest/libs/dexmaker-mockito-0.9.jar
+R100	AndroidSocketIOTest/libs/hamcrest-all-1.3.jar	AndroidSocketIO/src/androidTest/libs/hamcrest-all-1.3.jar
+R100	AndroidSocketIOTest/libs/jsonmatchers-1.0-SNAPSHOT.jar	AndroidSocketIO/src/androidTest/libs/jsonmatchers-1.0-SNAPSHOT.jar
+R100	AndroidSocketIOTest/libs/mockito-core-1.9.8.jar	AndroidSocketIO/src/androidTest/libs/mockito-core-1.9.8.jar
+R100	AndroidSocketIO/AndroidManifest.xml	AndroidSocketIO/src/main/AndroidManifest.xml
+R100	AndroidSocketIO/src/com/appunite/socketio/IOMessage.java	AndroidSocketIO/src/main/java/com/appunite/socketio/IOMessage.java
+R100	AndroidSocketIO/src/com/appunite/socketio/NotConnectedException.java	AndroidSocketIO/src/main/java/com/appunite/socketio/NotConnectedException.java
+R100	AndroidSocketIO/src/com/appunite/socketio/SocketBase.java	AndroidSocketIO/src/main/java/com/appunite/socketio/SocketBase.java
+R100	AndroidSocketIO/src/com/appunite/socketio/SocketIO.java	AndroidSocketIO/src/main/java/com/appunite/socketio/SocketIO.java
+R100	AndroidSocketIO/src/com/appunite/socketio/SocketIOBase.java	AndroidSocketIO/src/main/java/com/appunite/socketio/SocketIOBase.java
+R100	AndroidSocketIO/src/com/appunite/socketio/SocketListener.java	AndroidSocketIO/src/main/java/com/appunite/socketio/SocketListener.java
+R100	AndroidSocketIO/src/com/appunite/socketio/SocketWriter.java	AndroidSocketIO/src/main/java/com/appunite/socketio/SocketWriter.java
+R100	AndroidSocketIO/src/com/appunite/socketio/WrongSocketIOResponse.java	AndroidSocketIO/src/main/java/com/appunite/socketio/WrongSocketIOResponse.java
+R100	AndroidSocketIO/src/com/appunite/socketio/helpers/HTTPUtils.java	AndroidSocketIO/src/main/java/com/appunite/socketio/helpers/HTTPUtils.java
+R100	AndroidSocketIO/src/com/appunite/websocket/WebSocket.java	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocket.java
+R100	AndroidSocketIO/src/com/appunite/websocket/WebSocketListener.java	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocketListener.java
+R100	AndroidSocketIO/src/com/appunite/websocket/WebSocketReader.java	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocketReader.java
+R100	AndroidSocketIO/src/com/appunite/websocket/WebSocketWriter.java	AndroidSocketIO/src/main/java/com/appunite/websocket/WebSocketWriter.java
+R100	AndroidSocketIO/src/com/appunite/websocket/WrongWebsocketResponse.java	AndroidSocketIO/src/main/java/com/appunite/websocket/WrongWebsocketResponse.java
+D	AndroidSocketIOTest/ant.properties
+D	AndroidSocketIOTest/build.xml
+D	AndroidSocketIOTest/libs/com.springsource.org.objenesis-1.0.0.jar
+D	AndroidSocketIOTest/proguard-project.txt
+D	AndroidSocketIOTest/project.properties
+M	README.md
+
+3b7446e;Fixed some warning and small issues
+M	AndroidSocketIO/build.gradle
+M	AndroidSocketIO/src/com/appunite/socketio/IOMessage.java
+M	AndroidSocketIO/src/com/appunite/socketio/SocketBase.java
+M	AndroidSocketIO/src/com/appunite/socketio/SocketIO.java
+M	AndroidSocketIO/src/com/appunite/socketio/SocketIOBase.java
+M	AndroidSocketIO/src/com/appunite/socketio/SocketListener.java
+M	AndroidSocketIO/src/com/appunite/socketio/SocketWriter.java
+M	AndroidSocketIO/src/com/appunite/websocket/WebSocket.java
+M	AndroidSocketIO/src/com/appunite/websocket/WebSocketListener.java
+M	AndroidSocketIO/src/com/appunite/websocket/WebSocketReader.java
+
+2a7d9f3;Upgraded gradle and added auto-build script
+M	.gitignore
+M	AndroidSocket/build.gradle
+M	AndroidSocketIO/build.gradle
+A	auto-build.sh
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+d35a0fd;Moved to android gradle plugin 0.5.+
+M	AndroidSocket/build.gradle
+M	AndroidSocketIO/build.gradle
+
+14c88aa;Added gradle support
+M	.gitignore
+A	AndroidSocket/build.gradle
+A	AndroidSocketIO/build.gradle
+M	README.md
+A	build.gradle
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle
+
+c61848c;Library now working well with proguard
+M	AndroidSocket/proguard-project.txt
+M	AndroidSocket/project.properties
+D	AndroidSocketIO/libs/guava-13.0.1.jar
+A	AndroidSocketIO/libs/guava-14.0-rc1.jar
+A	AndroidSocketIO/libs/javax.inject.jar
+A	AndroidSocketIO/libs/jsr305-2.0.1.jar
+M	AndroidSocketIO/proguard-project.txt
+
+22c3206;Initial commit
+A	.gitignore
+A	AndroidSocket/AndroidManifest.xml
+A	AndroidSocket/ant.properties
+A	AndroidSocket/build.xml
+A	AndroidSocket/proguard-project.txt
+A	AndroidSocket/project.properties
+A	AndroidSocket/res/drawable-hdpi/ic_launcher.png
+A	AndroidSocket/res/drawable-ldpi/ic_launcher.png
+A	AndroidSocket/res/drawable-mdpi/ic_launcher.png
+A	AndroidSocket/res/drawable-xhdpi/ic_launcher.png
+A	AndroidSocket/res/layout/main.xml
+A	AndroidSocket/res/values/strings.xml
+A	AndroidSocket/src/com/appunite/socket/Main.java
+A	AndroidSocketIO/AndroidManifest.xml
+A	AndroidSocketIO/ant.properties
+A	AndroidSocketIO/build.xml
+A	AndroidSocketIO/libs/guava-13.0.1.jar
+A	AndroidSocketIO/proguard-project.txt
+A	AndroidSocketIO/project.properties
+A	AndroidSocketIO/src/com/appunite/socketio/IOMessage.java
+A	AndroidSocketIO/src/com/appunite/socketio/NotConnectedException.java
+A	AndroidSocketIO/src/com/appunite/socketio/SocketBase.java
+A	AndroidSocketIO/src/com/appunite/socketio/SocketIO.java
+A	AndroidSocketIO/src/com/appunite/socketio/SocketIOBase.java
+A	AndroidSocketIO/src/com/appunite/socketio/SocketListener.java
+A	AndroidSocketIO/src/com/appunite/socketio/SocketWriter.java
+A	AndroidSocketIO/src/com/appunite/socketio/WrongSocketIOResponse.java
+A	AndroidSocketIO/src/com/appunite/socketio/helpers/HTTPUtils.java
+A	AndroidSocketIO/src/com/appunite/websocket/WebSocket.java
+A	AndroidSocketIO/src/com/appunite/websocket/WebSocketListener.java
+A	AndroidSocketIO/src/com/appunite/websocket/WebSocketReader.java
+A	AndroidSocketIO/src/com/appunite/websocket/WebSocketWriter.java
+A	AndroidSocketIO/src/com/appunite/websocket/WrongWebsocketResponse.java
+A	AndroidSocketIOTest/AndroidManifest.xml
+A	AndroidSocketIOTest/ant.properties
+A	AndroidSocketIOTest/build.xml
+A	AndroidSocketIOTest/libs/com.springsource.org.objenesis-1.0.0.jar
+A	AndroidSocketIOTest/libs/dexmaker-0.9.jar
+A	AndroidSocketIOTest/libs/dexmaker-mockito-0.9.jar
+A	AndroidSocketIOTest/libs/hamcrest-all-1.3.jar
+A	AndroidSocketIOTest/libs/jsonmatchers-1.0-SNAPSHOT.jar
+A	AndroidSocketIOTest/libs/mockito-core-1.9.8.jar
+A	AndroidSocketIOTest/proguard-project.txt
+A	AndroidSocketIOTest/project.properties
+A	AndroidSocketIOTest/src/com/appunite/socketio/IOMessageTest.java
+A	AndroidSocketIOTest/src/com/appunite/socketio/SocketIOTest.java
+A	README.md

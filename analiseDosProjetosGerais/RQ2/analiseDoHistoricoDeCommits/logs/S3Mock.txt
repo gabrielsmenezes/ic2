@@ -1,0 +1,1411 @@
+ead3fc5;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+a3cca5e;[maven-release-plugin] prepare release 2.1.11
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+bcba9f7;Fixed ambuguity of encrypted copy requests.
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+
+d39ad16;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+68b3b76;[maven-release-plugin] prepare release 2.1.10
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+2c335de;updates spring boot version (#153)
+M	pom.xml
+
+676aaa8;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+0bbf530;[maven-release-plugin] prepare release 2.1.9
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+da3223f;Adds support for response header overrides according to https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html#RESTObjectGET-requests Adds unit test for presigned URL with response header overrides.
+M	AUTHORS
+M	pom.xml
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+9cfbf12;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+e7519fe;[maven-release-plugin] prepare release 2.1.8
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+0d75584;Retrieve of MultiPart upload parts (#150)
+M	AUTHORS
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListPartsResult.java
+A	server/src/main/java/com/adobe/testing/s3mock/dto/Part.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+11f2764;Add Aidan to the list of authors
+M	AUTHORS
+
+b748657;accept object tagging via PutObject requests (#149)
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+8d412c7;Fix execution of JUnit 5 tests during build and make sure that never breaks again without being noticed. Fix encoding test (`+` is converted to `%20` in upload request URIs by the AWS SDK).
+M	build-config/pom.xml
+M	pom.xml
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+M	testsupport/common/pom.xml
+A	testsupport/common/src/test/java/com/adobe/testing/s3mock/testsupport/common/S3MockStarterTest.java
+
+6458ac9;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+990f2dd;[maven-release-plugin] prepare release 2.1.7
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+755d9bc;Fixes #145: `Content-encoding` support is missing (#146)
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/MultipartUploadInfo.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/S3Object.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+db99a43;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+49f7a7a;[maven-release-plugin] prepare release 2.1.6
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+f239d14;Update JDK, Alpine, Spring and JUnit 5
+M	pom.xml
+
+24323ac;Add Kirill to the list of authors
+M	AUTHORS
+
+d53e0c5;Fixes #112: continuation token and start after modified tests to check of correctness of start-after. continuation token and start after use the same code path, so checking only one of them should be sufficient
+M	server/src/test/java/com/adobe/testing/s3mock/its/ListObjectIT.java
+
+889409c;Fixes #112: continuation token and start after
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+
+d9f69d8;Add AWS SDK 2.0 support for JUnit 5
+M	AUTHORS
+M	pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/common/src/main/java/com/adobe/testing/s3mock/testsupport/common/S3MockStarter.java
+M	testsupport/junit5/src/main/java/com/adobe/testing/s3mock/junit5/S3MockExtension.java
+R089	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/S3MockExtensionDeclarativeTest.java	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/sdk1/S3MockExtensionDeclarativeTest.java
+R090	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/S3MockExtensionProgrammaticTest.java	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/sdk1/S3MockExtensionProgrammaticTest.java
+A	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/sdk2/S3MockExtensionDeclarativeTest.java
+A	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/sdk2/S3MockExtensionProgrammaticTest.java
+
+325941e;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+0cb8feb;[maven-release-plugin] prepare release 2.1.5
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+2b8a43d;Include dependency to verify fix for #130
+M	testsupport/junit4/pom.xml
+
+2590387;Fix #130: exclude ManagementWebSecurityAutoConfiguration by class name
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+
+3db7635;Fix #133: honor encoding-type parameter in list object API
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+6b3f261;Fix #133: escape dangerous characters in file names
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+A	server/src/test/java/com/adobe/testing/s3mock/KeyEncodingTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+75a5e67;Fix path handling on Windows
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+
+5aa299c;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+38faf77;[maven-release-plugin] prepare release 2.1.4
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+25795ec;Update oauth2 and checkstyle dependencies
+M	pom.xml
+
+1114b5f;Fix #131: apply URL-decoding to the copy source (#132)
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ObjectRef.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+5960703;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+dbc756e;[maven-release-plugin] prepare release 2.1.3
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+2f73afa;Add alinpa to list of authors
+M	AUTHORS
+
+bdd9bcb;fixed inconsistent file name encoding (#129)
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/PlainHttpIT.java
+
+6c9a826;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+e95b078;[maven-release-plugin] prepare release 2.1.2
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+ab67e9c;Add Clément to the list of authors
+M	AUTHORS
+
+994351a;Update selfsigned certificate #122
+M	server/src/main/resources/s3mock.jks
+
+f6322cd;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+b5944bf;[maven-release-plugin] prepare release 2.1.1
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+e5bb111;Update license header years in poms to fix release build.
+M	build-config/pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+16ec064;Update JDK, SpringBoot and AWS SDK
+M	pom.xml
+M	server/src/main/resources/application.properties
+
+f7fb92e;#87 When handling requests without a content type, support unmarshalling the XML payload
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/PlainHttpIT.java
+
+16b9c86;Update versions of dependencies, plugins, and Docker base image to latest and fix execution of tests in `server` module.
+M	pom.xml
+M	server/pom.xml
+M	server/src/test/java/com/adobe/testing/s3mock/its/ListObjectIT.java
+M	testsupport/junit5/pom.xml
+
+c56af00;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+968f877;[maven-release-plugin] prepare release 2.1.0
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+3c993fe;Bump version to 2.1.0-SNAPSHOT due to the many dependency changes and upgrades
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+4acf67f;Use Jetty instead of Tomcat
+M	server/pom.xml
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+
+db24c0b;Use Jackson-Dataformat-Xml instead of XStream
+M	pom.xml
+M	server/pom.xml
+M	server/src/main/java/com/adobe/testing/s3mock/KmsValidationFilter.java
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/Bucket.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/BucketContents.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/Buckets.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/Tag.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/BatchDeleteRequest.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/BatchDeleteResponse.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/CommonPrefixes.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/CompleteMultipartUploadResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/CopyObjectResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/CopyPartResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/DeletedObject.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ErrorResponse.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/InitiateMultipartUploadResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListAllMyBucketsResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListBucketResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListBucketResultV2.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListMultipartUploadsResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListPartsResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/MultipartUpload.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/Owner.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/Tagging.java
+
+59f9d71;Use AdoptOpenJDK 11 build with minified modular runtime and update to SpringBoot 2.1.0.RELEASE
+M	pom.xml
+M	server/pom.xml
+A	server/src/main/docker/Dockerfile
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	server/src/main/resources/application.properties
+
+4d5c8c5;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+7a2178f;[maven-release-plugin] prepare release 2.0.11
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+7c66546;Add Nik and Artem to the list of authors
+M	AUTHORS
+
+2eb8c43;Update oauth version once again, this time to latest-greatest
+M	pom.xml
+
+6dbd3a2;Honor max-keys parameter in List Objects v1 API (#111)
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListBucketResult.java
+A	server/src/test/java/com/adobe/testing/s3mock/its/ListObjectV1MaxKeysIT.java
+
+cfa3422;Junit 5 integration (#106)
+M	pom.xml
+M	server/pom.xml
+M	server/src/test/java/com/adobe/testing/s3mock/RangeConverterTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/ObjectRefTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/dto/CopyPartResultTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/ErrorResponsesIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/ListObjectIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/PlainHttpIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/S3TestBase.java
+
+d120ff0;Update oauth version to fix GitHub security alert
+M	pom.xml
+
+0a98306;polishes code
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/KmsValidationFilter.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/Bucket.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/BucketContents.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/Buckets.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/KmsKeyStore.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/MultipartUploadInfo.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/S3Exception.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/BatchDeleteRequest.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/BatchDeleteResponse.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/CommonPrefixes.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/CompleteMultipartUploadResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/CopyObjectResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/CopyPartResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/DeletedObject.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ErrorResponse.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/InitiateMultipartUploadResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListAllMyBucketsResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListBucketResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListBucketResultV2.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListPartsResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ObjectRef.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/Owner.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/Range.java
+M	server/src/main/java/com/adobe/testing/s3mock/util/AwsChunkDecodingInputStream.java
+M	server/src/main/java/com/adobe/testing/s3mock/util/RangeConverter.java
+M	server/src/main/java/com/adobe/testing/s3mock/util/S3MockExceptionHandler.java
+M	server/src/test/java/com/adobe/testing/s3mock/RangeConverterTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/ObjectRefTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/ErrorResponsesIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/ListObjectIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/PlainHttpIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/util/EtagInputStream.java
+M	testsupport/common/src/main/java/com/adobe/testing/s3mock/testsupport/common/S3MockStarter.java
+M	testsupport/junit4/src/test/java/com/adobe/testing/s3mock/junit4/S3MockRuleTest.java
+M	testsupport/junit5/src/main/java/com/adobe/testing/s3mock/junit5/S3MockExtension.java
+M	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/S3MockExtensionProgrammaticTest.java
+
+949ccf6;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+5a63d99;[maven-release-plugin] prepare release 2.0.10
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+757deae;extract concatenateMd5sForAllParts method
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+
+645daaa;Remove handling of v4 signing
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+
+5390986;1M is not 1G
+M	server/src/test/java/com/adobe/testing/s3mock/util/EtagInputStream.java
+
+eebdaaa;Multipart md5 hash calculation is incorrect #66
+M	server/pom.xml
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+A	server/src/test/java/com/adobe/testing/s3mock/util/EtagInputStream.java
+
+0f534e8;Fix common prefix for listObjectsV2 request.
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/ListObjectIT.java
+
+012fccd;adds Ptomala5 as an author (#104)
+M	AUTHORS
+
+2606b9c;Fixed alias for bucket name in InitiateMultipartUploadResult + updated multipart upload integration test
+M	server/src/main/java/com/adobe/testing/s3mock/dto/InitiateMultipartUploadResult.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+084e459;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+1c04a76;[maven-release-plugin] prepare release 2.0.9
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+4338db4;Add Steve to the list of authors
+M	AUTHORS
+
+d5484ea;Allow the s3 client to communicate over HTTP or HTTPS connections. (#101)
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	testsupport/common/src/main/java/com/adobe/testing/s3mock/testsupport/common/S3MockStarter.java
+M	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/S3MockExtensionProgrammaticTest.java
+
+e9d40f2;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+c9f452d;[maven-release-plugin] prepare release 2.0.8
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+e2e6372;Add Artem Vovk to list of authors
+M	AUTHORS
+
+5110b92;Matching real S3 partial prefix matching (#98)
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/ListObjectIT.java
+
+2ec5a2c;Add Shumpei Akai to the list of authors
+M	AUTHORS
+
+0008d60;Content-Range value should contain total-length
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+8cdda56;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+b054d5d;[maven-release-plugin] prepare release 2.0.7
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+1cb42ac;Fix batch-delete behaviour for non-existing files
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/ErrorResponsesIT.java
+
+da721cf;Add Jörg Henne to list of authors.
+M	AUTHORS
+
+8db7d3a;Add support for the delimiter parameter to the List Objects API (#90)
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+A	server/src/main/java/com/adobe/testing/s3mock/dto/CommonPrefixes.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListBucketResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListBucketResultV2.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+A	server/src/test/java/com/adobe/testing/s3mock/its/ListObjectIT.java
+
+4558aaa;Update JRE version and SpringBoot, update Surefire version.
+M	pom.xml
+M	testsupport/junit5/pom.xml
+
+7d444a6;add sveryovka as an author, polish code a bit
+M	AUTHORS
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/ObjectRefTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/ErrorResponsesIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/S3TestBase.java
+M	testsupport/junit4/src/test/java/com/adobe/testing/s3mock/junit4/S3MockRuleTest.java
+
+1637d9e;Support for ListObjectsV2
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+A	server/src/main/java/com/adobe/testing/s3mock/dto/ListBucketResultV2.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+b37ae33;adds Lasse Reedtz to the list of authors and cleaned up code a bit
+M	AUTHORS
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/PlainHttpIT.java
+
+221cf45;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+5c79d5b;[maven-release-plugin] prepare release 2.0.6
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+b594071;respect --if-match and --if-none-match at getObject()
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+5ad9165;Added Last-modified header to getObject operation response
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+
+c68452a;Fix shouldGetEncryptedObject and shouldStoreObjectEncrypted test from FileStoreTest class for Windows
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+
+5b5a3e5;📝 proper link to CONTRIBUTING.md from README, link to open source office email in CONTRIBUTING.md, and removed probably from CONTRIBUTING.md with respect to CLA signing - better to get rid of vague sentences!
+M	.github/CONTRIBUTING.md
+M	README.md
+
+0f17437;[maven-release-plugin] prepare for next development iteration
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+bd271a6;[maven-release-plugin] prepare release 2.0.5
+M	build-config/pom.xml
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+2b9efbf;when completing the multipart upload, file parts are sorted by their part number now
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+6079635;Fix finding checkstyle config
+M	build-config/pom.xml
+
+ceae22d;integrates checkstyle plugin to check against Google Java Codestyle
+A	build-config/pom.xml
+A	build-config/src/main/resources/build-config/checkstyle.xml
+M	pom.xml
+M	server/pom.xml
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+R090	server/src/main/java/com/adobe/testing/s3mock/KMSValidationFilter.java	server/src/main/java/com/adobe/testing/s3mock/KmsValidationFilter.java
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/Bucket.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/BucketContents.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/Buckets.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+R098	server/src/main/java/com/adobe/testing/s3mock/domain/KMSKeyStore.java	server/src/main/java/com/adobe/testing/s3mock/domain/KmsKeyStore.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/MultipartUploadInfo.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/S3Exception.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/S3Object.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/Tag.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/CompleteMultipartUploadResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/CopyObjectResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ErrorResponse.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListAllMyBucketsResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListBucketResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/ListMultipartUploadsResult.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/MultipartUpload.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/Owner.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/Range.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/Tagging.java
+M	server/src/main/java/com/adobe/testing/s3mock/util/AwsChunkDecodingInputStream.java
+M	server/src/main/java/com/adobe/testing/s3mock/util/BetterHeaders.java
+M	server/src/main/java/com/adobe/testing/s3mock/util/HashUtil.java
+M	server/src/main/java/com/adobe/testing/s3mock/util/RangeConverter.java
+M	server/src/main/java/com/adobe/testing/s3mock/util/S3MockExceptionHandler.java
+M	server/src/test/java/com/adobe/testing/s3mock/RangeConverterTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/dto/CopyPartResultTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/ErrorResponsesIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/PlainHttpIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/S3TestBase.java
+M	testsupport/common/pom.xml
+M	testsupport/common/src/main/java/com/adobe/testing/s3mock/testsupport/common/S3MockStarter.java
+M	testsupport/junit4/pom.xml
+M	testsupport/junit4/src/main/java/com/adobe/testing/s3mock/junit4/S3MockRule.java
+M	testsupport/junit4/src/test/java/com/adobe/testing/s3mock/junit4/S3MockRuleTest.java
+M	testsupport/junit5/pom.xml
+M	testsupport/junit5/src/main/java/com/adobe/testing/s3mock/junit5/S3MockExtension.java
+M	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/S3MockExtensionDeclarativeTest.java
+M	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/S3MockExtensionProgrammaticTest.java
+M	testsupport/testng/pom.xml
+M	testsupport/testng/src/main/java/com/adobe/testing/s3mock/testng/S3Mock.java
+M	testsupport/testng/src/main/java/com/adobe/testing/s3mock/testng/S3MockListener.java
+D	testsupport/testng/src/test/java/com/adobe/testing/s3mock/testng/S3MockListenerXMLConfigurationTest.java
+A	testsupport/testng/src/test/java/com/adobe/testing/s3mock/testng/S3MockListenerXmlConfigurationTest.java
+M	testsupport/testng/src/test/resources/testng.xml
+
+c97ff21;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+c320dd8;[maven-release-plugin] prepare release 2.0.4
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+4dd9558;cleans up code
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/Tag.java
+M	server/src/main/java/com/adobe/testing/s3mock/dto/Tagging.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+M	testsupport/testng/src/test/resources/testng.xml
+
+e34f739;#49 Adding capability to put and get tags - Code Review changes
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+M	testsupport/testng/src/test/java/com/adobe/testing/s3mock/testng/S3MockListenerXMLConfigurationTest.java
+M	testsupport/testng/src/test/resources/testng.xml
+
+0b039c4;#49 Adding capability to put and get tags
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/S3Object.java
+A	server/src/main/java/com/adobe/testing/s3mock/domain/Tag.java
+A	server/src/main/java/com/adobe/testing/s3mock/dto/Tagging.java
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	testsupport/testng/src/test/java/com/adobe/testing/s3mock/testng/S3MockListenerXMLConfigurationTest.java
+M	testsupport/testng/src/test/resources/testng.xml
+
+3cbfc75;Fix the problem that Nested tests cause an initialization error when starting.
+M	testsupport/junit5/src/main/java/com/adobe/testing/s3mock/junit5/S3MockExtension.java
+M	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/S3MockExtensionDeclarativeTest.java
+
+d54e012;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+8a71360;[maven-release-plugin] prepare release 2.0.3
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+e5595c2;excludes SecurityAutoConfiguration
+M	pom.xml
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	testsupport/junit4/pom.xml
+
+fee4bd9;Update JUnit 5 to latest version
+M	pom.xml
+M	testsupport/junit5/pom.xml
+
+9954a37;Minor documentation fix
+M	README.md
+
+2d10ed0;Adding optional region to client creation
+M	testsupport/common/src/main/java/com/adobe/testing/s3mock/testsupport/common/S3MockStarter.java
+M	testsupport/testng/src/test/java/com/adobe/testing/s3mock/testng/S3MockListenerXMLConfigurationTest.java
+
+b1b7648;Adding support for Java 9
+M	pom.xml
+
+6da0d9b;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+0cf3654;[maven-release-plugin] prepare release 2.0.2
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+cae9477;deleting non existing Objects will return 204 anyway, PUT Object returns 200 instead of 204
+M	server/pom.xml
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/ErrorResponsesIT.java
+A	server/src/test/java/com/adobe/testing/s3mock/its/PlainHttpIT.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/S3TestBase.java
+M	testsupport/common/src/main/java/com/adobe/testing/s3mock/testsupport/common/S3MockStarter.java
+
+057203d;Make dynamic port selection for HTTP more robust
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+
+d19088a;Fix local startup and adjust documentation on that.
+M	README.md
+M	pom.xml
+M	server/pom.xml
+
+bc797c9;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+afed313;[maven-release-plugin] prepare release 2.0.1
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+M	testsupport/testng/pom.xml
+
+21d92bc;Add Santthosh Selvadurai to the list of authors
+M	AUTHORS
+
+a36d010;Adding testng variant, supporting through IExecutionListener (#48)
+M	README.md
+M	testsupport/pom.xml
+A	testsupport/testng/pom.xml
+A	testsupport/testng/src/main/java/com/adobe/testing/s3mock/testng/S3Mock.java
+A	testsupport/testng/src/main/java/com/adobe/testing/s3mock/testng/S3MockListener.java
+A	testsupport/testng/src/test/java/com/adobe/testing/s3mock/testng/S3MockListenerXMLConfigurationTest.java
+A	testsupport/testng/src/test/resources/sampleFile.txt
+A	testsupport/testng/src/test/resources/testng.xml
+
+11ddffd;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+
+39acc57;[maven-release-plugin] prepare release 2.0.0
+M	pom.xml
+M	server/pom.xml
+M	testsupport/common/pom.xml
+M	testsupport/junit4/pom.xml
+M	testsupport/junit5/pom.xml
+M	testsupport/pom.xml
+
+0ff4592;Change S3ExceptionResolver to an ExceptionHandler to avoid logging StackTraces, fix security warning in XStreamMarshaller.
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+D	server/src/main/java/com/adobe/testing/s3mock/util/S3ExceptionResolver.java
+A	server/src/main/java/com/adobe/testing/s3mock/util/S3MockExceptionHandler.java
+
+1cb53d8;Update to Spring Boot 2.0.1
+M	pom.xml
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	server/src/main/java/com/adobe/testing/s3mock/KMSValidationFilter.java
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+6d2c984;Update README to add more documentation for different methods to use the mock
+M	README.md
+
+3bfc2bc;Add JUnit5 Extension
+M	pom.xml
+A	testsupport/junit5/pom.xml
+A	testsupport/junit5/src/main/java/com/adobe/testing/s3mock/junit5/S3MockExtension.java
+A	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/S3MockExtensionDeclarativeTest.java
+A	testsupport/junit5/src/test/java/com/adobe/testing/s3mock/junit5/S3MockExtensionProgrammaticTest.java
+A	testsupport/junit5/src/test/resources/sampleFile.txt
+M	testsupport/pom.xml
+
+63b65b1;Extract a common base for different test frameworks
+M	pom.xml
+A	testsupport/common/pom.xml
+A	testsupport/common/src/main/java/com/adobe/testing/s3mock/testsupport/common/S3MockStarter.java
+M	testsupport/junit4/pom.xml
+M	testsupport/junit4/src/main/java/com/adobe/testing/s3mock/junit4/S3MockRule.java
+M	testsupport/junit4/src/test/java/com/adobe/testing/s3mock/junit4/S3MockRuleTest.java
+M	testsupport/pom.xml
+
+7764f59;Refactor configuration and initialization of the App, make the builder in S3MockRule usable and use random ports in the S3MockRule by default.
+M	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	server/src/main/resources/application.properties
+M	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	testsupport/junit4/src/main/java/com/adobe/testing/s3mock/junit4/S3MockRule.java
+M	testsupport/junit4/src/test/java/com/adobe/testing/s3mock/junit4/S3MockRuleTest.java
+D	testsupport/junit4/src/test/resources/logback.xml
+
+8849b21;Update base image and dependencies to latest (except spring boot)
+M	pom.xml
+M	server/pom.xml
+
+bd15004;Split S3Mock server and JUnit rule into different modules to reduce runtime dependencies.
+M	pom.xml
+A	server/pom.xml
+R094	src/main/java/com/adobe/testing/s3mock/FileStoreController.java	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+R090	src/main/java/com/adobe/testing/s3mock/KMSValidationFilter.java	server/src/main/java/com/adobe/testing/s3mock/KMSValidationFilter.java
+R094	src/main/java/com/adobe/testing/s3mock/S3MockApplication.java	server/src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+R098	src/main/java/com/adobe/testing/s3mock/domain/Bucket.java	server/src/main/java/com/adobe/testing/s3mock/domain/Bucket.java
+R098	src/main/java/com/adobe/testing/s3mock/domain/BucketContents.java	server/src/main/java/com/adobe/testing/s3mock/domain/BucketContents.java
+R097	src/main/java/com/adobe/testing/s3mock/domain/Buckets.java	server/src/main/java/com/adobe/testing/s3mock/domain/Buckets.java
+R093	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java	server/src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+R098	src/main/java/com/adobe/testing/s3mock/domain/KMSKeyStore.java	server/src/main/java/com/adobe/testing/s3mock/domain/KMSKeyStore.java
+R100	src/main/java/com/adobe/testing/s3mock/domain/MultipartUploadInfo.java	server/src/main/java/com/adobe/testing/s3mock/domain/MultipartUploadInfo.java
+R100	src/main/java/com/adobe/testing/s3mock/domain/S3Exception.java	server/src/main/java/com/adobe/testing/s3mock/domain/S3Exception.java
+R100	src/main/java/com/adobe/testing/s3mock/domain/S3Object.java	server/src/main/java/com/adobe/testing/s3mock/domain/S3Object.java
+R098	src/main/java/com/adobe/testing/s3mock/dto/BatchDeleteRequest.java	server/src/main/java/com/adobe/testing/s3mock/dto/BatchDeleteRequest.java
+R097	src/main/java/com/adobe/testing/s3mock/dto/BatchDeleteResponse.java	server/src/main/java/com/adobe/testing/s3mock/dto/BatchDeleteResponse.java
+R097	src/main/java/com/adobe/testing/s3mock/dto/CompleteMultipartUploadResult.java	server/src/main/java/com/adobe/testing/s3mock/dto/CompleteMultipartUploadResult.java
+R098	src/main/java/com/adobe/testing/s3mock/dto/CopyObjectResult.java	server/src/main/java/com/adobe/testing/s3mock/dto/CopyObjectResult.java
+R100	src/main/java/com/adobe/testing/s3mock/dto/CopyPartResult.java	server/src/main/java/com/adobe/testing/s3mock/dto/CopyPartResult.java
+R097	src/main/java/com/adobe/testing/s3mock/dto/DeletedObject.java	server/src/main/java/com/adobe/testing/s3mock/dto/DeletedObject.java
+R098	src/main/java/com/adobe/testing/s3mock/dto/ErrorResponse.java	server/src/main/java/com/adobe/testing/s3mock/dto/ErrorResponse.java
+R097	src/main/java/com/adobe/testing/s3mock/dto/InitiateMultipartUploadResult.java	server/src/main/java/com/adobe/testing/s3mock/dto/InitiateMultipartUploadResult.java
+R098	src/main/java/com/adobe/testing/s3mock/dto/ListAllMyBucketsResult.java	server/src/main/java/com/adobe/testing/s3mock/dto/ListAllMyBucketsResult.java
+R099	src/main/java/com/adobe/testing/s3mock/dto/ListBucketResult.java	server/src/main/java/com/adobe/testing/s3mock/dto/ListBucketResult.java
+R099	src/main/java/com/adobe/testing/s3mock/dto/ListMultipartUploadsResult.java	server/src/main/java/com/adobe/testing/s3mock/dto/ListMultipartUploadsResult.java
+R098	src/main/java/com/adobe/testing/s3mock/dto/ListPartsResult.java	server/src/main/java/com/adobe/testing/s3mock/dto/ListPartsResult.java
+R099	src/main/java/com/adobe/testing/s3mock/dto/MultipartUpload.java	server/src/main/java/com/adobe/testing/s3mock/dto/MultipartUpload.java
+R098	src/main/java/com/adobe/testing/s3mock/dto/ObjectRef.java	server/src/main/java/com/adobe/testing/s3mock/dto/ObjectRef.java
+R098	src/main/java/com/adobe/testing/s3mock/dto/Owner.java	server/src/main/java/com/adobe/testing/s3mock/dto/Owner.java
+R097	src/main/java/com/adobe/testing/s3mock/dto/Range.java	server/src/main/java/com/adobe/testing/s3mock/dto/Range.java
+R099	src/main/java/com/adobe/testing/s3mock/util/AwsChunkDecodingInputStream.java	server/src/main/java/com/adobe/testing/s3mock/util/AwsChunkDecodingInputStream.java
+R097	src/main/java/com/adobe/testing/s3mock/util/BetterHeaders.java	server/src/main/java/com/adobe/testing/s3mock/util/BetterHeaders.java
+R098	src/main/java/com/adobe/testing/s3mock/util/HashUtil.java	server/src/main/java/com/adobe/testing/s3mock/util/HashUtil.java
+R096	src/main/java/com/adobe/testing/s3mock/util/ObjectRefConverter.java	server/src/main/java/com/adobe/testing/s3mock/util/ObjectRefConverter.java
+R100	src/main/java/com/adobe/testing/s3mock/util/RangeConverter.java	server/src/main/java/com/adobe/testing/s3mock/util/RangeConverter.java
+R097	src/main/java/com/adobe/testing/s3mock/util/S3ExceptionResolver.java	server/src/main/java/com/adobe/testing/s3mock/util/S3ExceptionResolver.java
+R095	src/main/resources/application.properties	server/src/main/resources/application.properties
+R100	src/main/resources/banner.txt	server/src/main/resources/banner.txt
+R100	src/main/resources/s3mock.jks	server/src/main/resources/s3mock.jks
+R100	src/test/java/com/adobe/testing/s3mock/RangeConverterTest.java	server/src/test/java/com/adobe/testing/s3mock/RangeConverterTest.java
+R099	src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java	server/src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+R098	src/test/java/com/adobe/testing/s3mock/domain/ObjectRefTest.java	server/src/test/java/com/adobe/testing/s3mock/domain/ObjectRefTest.java
+R100	src/test/java/com/adobe/testing/s3mock/dto/CopyPartResultTest.java	server/src/test/java/com/adobe/testing/s3mock/dto/CopyPartResultTest.java
+R098	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java	server/src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+R100	src/test/java/com/adobe/testing/s3mock/its/ErrorResponsesIT.java	server/src/test/java/com/adobe/testing/s3mock/its/ErrorResponsesIT.java
+R098	src/test/java/com/adobe/testing/s3mock/its/S3TestBase.java	server/src/test/java/com/adobe/testing/s3mock/its/S3TestBase.java
+R095	src/test/resources/logback.xml	server/src/test/resources/logback.xml
+R100	src/test/resources/sampleFile.txt	server/src/test/resources/sampleFile.txt
+R100	src/test/resources/sampleKMSFile.txt	server/src/test/resources/sampleKMSFile.txt
+D	src/test/resources/s3mock.jks
+A	testsupport/junit4/pom.xml
+R098	src/main/java/com/adobe/testing/s3mock/S3MockRule.java	testsupport/junit4/src/main/java/com/adobe/testing/s3mock/junit4/S3MockRule.java
+R093	src/test/java/com/adobe/testing/s3mock/S3MockRuleTest.java	testsupport/junit4/src/test/java/com/adobe/testing/s3mock/junit4/S3MockRuleTest.java
+A	testsupport/junit4/src/test/resources/logback.xml
+A	testsupport/junit4/src/test/resources/sampleFile.txt
+A	testsupport/pom.xml
+
+20de0e2;adds Thomas Beckmann to list of authors + cleaned up code a bit
+M	AUTHORS
+M	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	src/main/java/com/adobe/testing/s3mock/domain/MultipartUploadInfo.java
+M	src/main/java/com/adobe/testing/s3mock/dto/CopyPartResult.java
+M	src/test/java/com/adobe/testing/s3mock/dto/CopyPartResultTest.java
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+2fe12c3;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+769d523;[maven-release-plugin] prepare release 1.1.6
+M	pom.xml
+
+ba04016;Adds support for user metadata for putObjectEncrypted
+M	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+cb48c34;updated license header
+M	src/main/java/com/adobe/testing/s3mock/domain/MultipartUploadInfo.java
+
+85e1e86;Adds support for user metadata for multipart upload
+M	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	src/main/java/com/adobe/testing/s3mock/domain/MultipartUploadInfo.java
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+ba1d536;Add CONTRIBUTING.md with link to CLA and add some simple PR / issue templates.
+A	.github/CONTRIBUTING.md
+A	.github/ISSUE_TEMPLATE.md
+A	.github/PULL_REQUEST_TEMPLATE.md
+A	COPYRIGHT
+M	README.md
+
+0585050;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+7858eb8;[maven-release-plugin] prepare release 1.1.5
+M	pom.xml
+
+816ca26;Feature/check s3 bucket and object existence (#37)
+M	etc/license-template.txt
+M	pom.xml
+M	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	src/main/java/com/adobe/testing/s3mock/KMSValidationFilter.java
+M	src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	src/main/java/com/adobe/testing/s3mock/S3MockRule.java
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+A	src/main/java/com/adobe/testing/s3mock/domain/S3Exception.java
+M	src/main/java/com/adobe/testing/s3mock/domain/S3Object.java
+M	src/main/java/com/adobe/testing/s3mock/util/RangeConverter.java
+A	src/main/java/com/adobe/testing/s3mock/util/S3ExceptionResolver.java
+M	src/test/java/com/adobe/testing/s3mock/RangeConverterTest.java
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+A	src/test/java/com/adobe/testing/s3mock/its/ErrorResponsesIT.java
+A	src/test/java/com/adobe/testing/s3mock/its/S3TestBase.java
+
+4f244dc;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+4db0efc;[maven-release-plugin] prepare release 1.1.4
+M	pom.xml
+
+8315e58;Adds support for user metadata for putObject / headObject
+M	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	src/main/java/com/adobe/testing/s3mock/domain/S3Object.java
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+e2080d5;extend list of authors and cleans up code (#31)
+M	AUTHORS
+M	src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	src/main/java/com/adobe/testing/s3mock/S3MockRule.java
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+f5a6517;define types explicit in imports
+M	src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+
+351ea1e;implemented functionality to define the rootFolder using the S3MockBuilder in the S3MockRule, or by passing the "root" parameter when starting the application
+M	src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	src/main/java/com/adobe/testing/s3mock/S3MockRule.java
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+
+8abc048;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+ddbc606;[maven-release-plugin] prepare release 1.1.3
+M	pom.xml
+
+3b18e96;handle range where end range is undefined
+M	src/main/java/com/adobe/testing/s3mock/util/RangeConverter.java
+M	src/test/java/com/adobe/testing/s3mock/RangeConverterTest.java
+
+2344248;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+cf9d02d;[maven-release-plugin] prepare release 1.1.2
+M	pom.xml
+
+435bba0;Add frame to banner to avoid trimming of leading whitespaces in docker
+M	src/main/resources/banner.txt
+
+b6fd157;Add @jens_meiss to list of authors
+M	AUTHORS
+
+4f12d91;provide a banner for the logs (#26)
+M	pom.xml
+A	src/main/resources/banner.txt
+
+7040c44;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+f1df302;[maven-release-plugin] prepare release 1.1.1
+M	pom.xml
+
+6d8a41c;Checkout master branch on release and try using https SCM connection
+M	.travis/travis-release.sh
+M	pom.xml
+
+0fe850b;Fix syntax in travis-release.sh
+M	.travis/travis-release.sh
+
+5417e72;#1 Add scripts for releasing from Travis.
+M	.travis.yml
+A	.travis/release.sh
+A	.travis/settings.xml
+A	.travis/travis-release.sh
+M	pom.xml
+
+fbdd478;Allow for a minute clock skew in the IT to make the tests more stable
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+1d70957;Add Artem to list of contributors
+M	AUTHORS
+
+1cb1d74;Isolate the aws-java-sdk-s3 dependency to S3MockRule
+M	pom.xml
+M	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	src/main/java/com/adobe/testing/s3mock/domain/BucketContents.java
+M	src/main/java/com/adobe/testing/s3mock/dto/CopyPartResult.java
+M	src/main/java/com/adobe/testing/s3mock/util/AwsChunkDecodingInputStream.java
+M	src/main/java/com/adobe/testing/s3mock/util/BetterHeaders.java
+A	src/test/java/com/adobe/testing/s3mock/dto/CopyPartResultTest.java
+
+5625f63;Mark JUnit as an optional dependency
+M	pom.xml
+
+8d59ab9;Merge pull request #20 from arteam/remove-gson
+89a5e28;Remove a Gson dependency
+M	pom.xml
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+
+5ec7f82;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+788d8cc;[maven-release-plugin] prepare release 1.1.0
+M	pom.xml
+
+0c91ae0;use nexus base url
+M	pom.xml
+
+a1a2619;Merge pull request #19 from adobe/fix/add_required_attributes_for_nexus_staging_plugin
+b301acf;Add required attributes for Nexus staging plugin
+M	pom.xml
+
+cfd81ce;cleans up code and adds Martin Grotzke to the list of Authors
+M	AUTHORS
+M	pom.xml
+M	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	src/main/java/com/adobe/testing/s3mock/domain/MultipartUploadInfo.java
+M	src/main/java/com/adobe/testing/s3mock/domain/S3Object.java
+M	src/main/java/com/adobe/testing/s3mock/dto/CompleteMultipartUploadResult.java
+M	src/main/java/com/adobe/testing/s3mock/dto/ListAllMyBucketsResult.java
+M	src/main/java/com/adobe/testing/s3mock/dto/ListMultipartUploadsResult.java
+M	src/main/java/com/adobe/testing/s3mock/dto/ListPartsResult.java
+M	src/main/java/com/adobe/testing/s3mock/dto/MultipartUpload.java
+M	src/main/java/com/adobe/testing/s3mock/dto/ObjectRef.java
+M	src/main/resources/application.properties
+M	src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	src/test/java/com/adobe/testing/s3mock/domain/ObjectRefTest.java
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+a442e97;Merge pull request #16 from inoio/more-multipart-uploads
+9f1288d;Fixup to "Simple support for List Multipart Uploads": Code review feedback
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+A	src/main/java/com/adobe/testing/s3mock/domain/MultipartUploadInfo.java
+
+f9be26e;Adds abort multipart upload
+M	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+0eaff67;Simple support for List Multipart Uploads
+M	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+A	src/main/java/com/adobe/testing/s3mock/dto/ListMultipartUploadsResult.java
+A	src/main/java/com/adobe/testing/s3mock/dto/MultipartUpload.java
+M	src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+ffdafb5;Merge pull request #14 from adobe/deploy_with_nexus_staging_plugin
+38375aa;Prepare more automated release: use nexus-staging-plugin for deploy phase
+M	pom.xml
+
+409e9de;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+2ee6e8e;[maven-release-plugin] prepare release 1.0.4
+M	pom.xml
+
+df9e937;Fix getS3Objects for root directory.
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+
+ddecb83;adds https://github.com/mattelacchiato to list of authors
+M	AUTHORS
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+
+8f3562d;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+a1458f3;[maven-release-plugin] prepare release 1.0.3
+M	pom.xml
+
+fca13ad;Merge pull request #10 from inoio/fix/NPE_getS3Objects
+7ecf449;Fix getS3Objects for parent directories.
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+
+7ef26cb;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+17f6deb;[maven-release-plugin] prepare release 1.0.2
+M	pom.xml
+
+6dd2098;updates Spring Boot Version
+M	pom.xml
+
+041f327;API for creating objects is able to deal with object keys containing path separators
+M	pom.xml
+M	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+M	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+M	src/main/java/com/adobe/testing/s3mock/dto/ObjectRef.java
+M	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+
+4092b20;Use https for link in Maven Central badge
+M	README.md
+
+e3d87f2;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+eabfe73;[maven-release-plugin] prepare release 1.0.1
+M	pom.xml
+
+ebc865a;Merge pull request #6 from sangupta/master
+08208af;upgraded maven dependency versions for aws, commons-io, xstream, logback, commons-codec and jodatime
+M	pom.xml
+
+4f49e04;Add badge for docker-hub to README
+M	README.md
+
+7ceeda0;README.md - typo fix (#4)
+M	README.md
+
+1f1529a;Merge pull request #3 from adobe/release-badge
+a3060d3;Add "Latest Release" badge to readme
+M	README.md
+
+0e137c8;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+f525a0e;[maven-release-plugin] prepare release 1.0.0
+M	pom.xml
+
+9765d79;Use correct scm syntax and fix gpg plugin config and skip tests during release
+M	pom.xml
+
+95fb1ac;Use `adobe/s3mock` as public image name
+M	pom.xml
+
+da07728;adds TravisCI Build Badge (#1)
+M	README.md
+
+71eddce;Initial public commit. Original authors are listed in AUTHORS.
+A	.gitignore
+A	.travis.yml
+A	AUTHORS
+A	CODE_OF_CONDUCT.md
+A	LICENSE
+A	README.md
+A	etc/license-template.txt
+A	pom.xml
+A	src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+A	src/main/java/com/adobe/testing/s3mock/KMSValidationFilter.java
+A	src/main/java/com/adobe/testing/s3mock/S3MockApplication.java
+A	src/main/java/com/adobe/testing/s3mock/S3MockRule.java
+A	src/main/java/com/adobe/testing/s3mock/domain/Bucket.java
+A	src/main/java/com/adobe/testing/s3mock/domain/BucketContents.java
+A	src/main/java/com/adobe/testing/s3mock/domain/Buckets.java
+A	src/main/java/com/adobe/testing/s3mock/domain/FileStore.java
+A	src/main/java/com/adobe/testing/s3mock/domain/KMSKeyStore.java
+A	src/main/java/com/adobe/testing/s3mock/domain/S3Object.java
+A	src/main/java/com/adobe/testing/s3mock/dto/BatchDeleteRequest.java
+A	src/main/java/com/adobe/testing/s3mock/dto/BatchDeleteResponse.java
+A	src/main/java/com/adobe/testing/s3mock/dto/CompleteMultipartUploadResult.java
+A	src/main/java/com/adobe/testing/s3mock/dto/CopyObjectResult.java
+A	src/main/java/com/adobe/testing/s3mock/dto/CopyPartResult.java
+A	src/main/java/com/adobe/testing/s3mock/dto/DeletedObject.java
+A	src/main/java/com/adobe/testing/s3mock/dto/ErrorResponse.java
+A	src/main/java/com/adobe/testing/s3mock/dto/InitiateMultipartUploadResult.java
+A	src/main/java/com/adobe/testing/s3mock/dto/ListAllMyBucketsResult.java
+A	src/main/java/com/adobe/testing/s3mock/dto/ListBucketResult.java
+A	src/main/java/com/adobe/testing/s3mock/dto/ListPartsResult.java
+A	src/main/java/com/adobe/testing/s3mock/dto/ObjectRef.java
+A	src/main/java/com/adobe/testing/s3mock/dto/Owner.java
+A	src/main/java/com/adobe/testing/s3mock/dto/Range.java
+A	src/main/java/com/adobe/testing/s3mock/util/AwsChunkDecodingInputStream.java
+A	src/main/java/com/adobe/testing/s3mock/util/BetterHeaders.java
+A	src/main/java/com/adobe/testing/s3mock/util/HashUtil.java
+A	src/main/java/com/adobe/testing/s3mock/util/ObjectRefConverter.java
+A	src/main/java/com/adobe/testing/s3mock/util/RangeConverter.java
+A	src/main/resources/application.properties
+A	src/main/resources/s3mock.jks
+A	src/test/java/com/adobe/testing/s3mock/RangeConverterTest.java
+A	src/test/java/com/adobe/testing/s3mock/S3MockRuleTest.java
+A	src/test/java/com/adobe/testing/s3mock/domain/FileStoreTest.java
+A	src/test/java/com/adobe/testing/s3mock/domain/ObjectRefTest.java
+A	src/test/java/com/adobe/testing/s3mock/its/AmazonClientUploadIT.java
+A	src/test/resources/logback.xml
+A	src/test/resources/s3mock.jks
+A	src/test/resources/sampleFile.txt
+A	src/test/resources/sampleKMSFile.txt

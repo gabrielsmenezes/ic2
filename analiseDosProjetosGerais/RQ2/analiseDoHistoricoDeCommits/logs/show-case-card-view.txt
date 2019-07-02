@@ -1,0 +1,341 @@
+bd4c181;add possibility to change background color in show case step
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStep.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepDisplayer.java
+
+26f6b64;reformat code
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	showcasecard/src/main/AndroidManifest.xml
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/BottomCenter.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/BottomLeft.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/BottomRight.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/Center.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopLeft.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopLeftToolbar.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopRight.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopRightToolbar.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStep.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepDisplayer.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/NavigationBarUtils.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/ViewUtils.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/widget/WrapWidthTextView.java
+M	showcasecard/src/main/res/layout/item_show_case_content.xml
+M	showcasecard/src/main/res/values/style.xml
+
+d9196d1;make possibility to pass custom radius to show case step (breaking changes)
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStep.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepDisplayer.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/ViewUtils.java
+
+8fbc2e6;migrate gradle build files to kotlin
+D	app/build.gradle
+A	app/build.gradle.kts
+R060	build.gradle	build.gradle.kts
+D	settings.gradle
+A	settings.gradle.kts
+D	showcasecard/build.gradle
+A	showcasecard/build.gradle.kts
+
+74334d3;update dependencies
+M	app/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	showcasecard/build.gradle
+
+133e375;Fixes #7. Fix readme
+M	README.md
+
+2d080bb;bump version on readme
+M	README.md
+
+4ee8eeb;Change target java to 6 (disable desugaring)
+M	build.gradle
+M	showcasecard/build.gradle
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/BottomCenter.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/BottomLeft.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/BottomRight.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/Center.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/Position.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/ShowCasePosition.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopLeft.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopLeftToolbar.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopRight.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopRightToolbar.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepDisplayer.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepScroller.java
+
+de26d7a;update gradle plugin
+M	build.gradle
+
+d1c5647;change version on readme
+M	README.md
+
+2c295b0;bump version
+M	showcasecard/build.gradle
+
+f8a6cef;Merge pull request #4 from the-reach-trust/master
+dad75c5;Merge branch 'master' into master
+cf84111;CHANGE made one method private
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepDisplayer.java
+
+0fc9ce6;BUGFIX if an async method comes back on a detached fragment it will not proceed
+M	app/build.gradle
+M	build.gradle
+M	showcasecard/build.gradle
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepDisplayer.java
+
+8562a12;change library version in readme
+M	README.md
+M	build.gradle
+
+e7fe9a3;add google repository to build scripts scope
+M	build.gradle
+
+1511505;update android gradle maven plugin
+M	build.gradle
+
+5c6cb65;use google repo
+M	build.gradle
+
+370ac51;downgrade to beta2 gradle plugin
+M	build.gradle
+
+cd81b80;Merge pull request #3 from the-reach-trust/master
+0d3c978;REMOVE removed views from Steps and build a different solution REMOVE need to provide "scrollTo = true" on steps. Scrolled automatically now when needed.
+M	README.md
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/ShowCasePosition.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/ViewPosition.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStep.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepDisplayer.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepScroller.java
+
+0cac0e9;CHANGE use of ORIENTATION_LANDSCAPE instead of harcoded position CHANGE removed git submodule CHANGE layout style change
+D	.gitmodules
+M	app/src/main/res/layout/activity_main.xml
+M	gradle/wrapper/gradle-wrapper.properties
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/BottomCenter.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/Center.java
+
+6516a69;CHANGE Address a few TODOs
+M	build.gradle
+
+6d40352;CHANGE spelling error in ReadMe
+M	README.md
+
+92177c5;CHANGE readme
+M	README.md
+
+6e43a7d;CHANGE some naming changes
+M	README.md
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+R085	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepItem.java	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStep.java
+R082	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepController.java	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepDisplayer.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepScroller.java
+
+12ec04e;ADD builder pattern for ShowCaseStepController
+M	README.md
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepController.java
+
+dd8f10a;ADD examples in example app ADD examples in readme file CHANGE some scroll improvements
+M	README.md
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/strings.xml
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepController.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepItem.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepScroller.java
+
+2362cda;Some null checks
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepScroller.java
+
+2a86c46;ADD dark overlay changes inbetween items
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepController.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepScroller.java
+
+4b57b05;ADD context getter
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepController.java
+
+9fd8ab0;ADD scroll functionality
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepController.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepItem.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepScroller.java
+
+ef58ee9;CHANGE test if submodule updating works
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepItem.java
+
+710435e;CHANGE removed old maven repo
+A	.gitmodules
+M	showcasecard/build.gradle
+
+120b2fa;BUGFIX java 8 fix CHANGE version name change
+M	app/build.gradle
+M	showcasecard/build.gradle
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepItem.java
+
+aa8d51d;ADD showing of lists of tips in click-through steps CHANGE minSdk to 15 CHANGE updated support lib ADD lambda statements and Java8
+M	app/build.gradle
+M	showcasecard/build.gradle
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepController.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/step/ShowCaseStepItem.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/MeasuredUtils.java
+A	showcasecard/src/main/res/values/dimens.xml
+
+eb76193;ADD extra card positions
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/BottomCenter.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/Center.java
+
+31de14c;add badge
+M	README.md
+
+31c12f0;add jitpack plugin + add demo gif
+M	README.md
+A	art/demo.gif
+M	build.gradle
+M	showcasecard/build.gradle
+
+abf816a;readme template
+M	README.md
+
+2fd5e88;fix width
+M	README.md
+
+90059b8;add logo
+M	README.md
+A	art/logo.png
+
+43067f5;fixes + sample code
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/strings.xml
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/radius/ViewRadius.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/MeasuredUtils.java
+M	showcasecard/src/main/res/layout/item_show_case_content.xml
+M	showcasecard/src/main/res/values/colors.xml
+A	showcasecard/src/main/res/values/style.xml
+
+1a8c0c6;fully move to java
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	build.gradle
+M	showcasecard/build.gradle
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.java
+D	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.kt
+D	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseViewJava.java
+M	showcasecard/src/main/res/values/colors.xml
+
+aef10fd;move builder to java
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.kt
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseViewJava.java
+
+2c4c87d;fix crash on dynamic navigation bar
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/NavigationBarUtils.java
+
+22badff;move positions from kotlin to java
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+D	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCasePosition.kt
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.kt
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/BottomLeft.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/BottomRight.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/Position.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/ShowCasePosition.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopLeft.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopLeftToolbar.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopRight.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/TopRightToolbar.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/position/ViewPosition.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/NavigationBarUtils.java
+
+a84a7ee;move all extensions to utils + move radius entity to java
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCasePosition.kt
+D	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseRadius.kt
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.kt
+D	showcasecard/src/main/java/ru/dimorinny/showcasecard/ext/Extensions.kt
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/radius/Radius.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/radius/ShowCaseRadius.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/radius/ViewRadius.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/ActivityUtils.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/MeasuredUtils.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/ViewUtils.java
+
+8475449;add license
+A	LICENSE
+
+dd105bb;move kotlin extensions to java util classes + fix offset calculation after measured
+M	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCasePosition.kt
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.kt
+M	showcasecard/src/main/java/ru/dimorinny/showcasecard/ext/Extensions.kt
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/ActivityUtils.java
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/util/NavigationBarUtils.java
+
+0ebaf6f;init code with kotlin library
+A	.gitignore
+A	README.md
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/ru/dimorinny/showcasesample/MainActivity.java
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle
+A	showcasecard/.gitignore
+A	showcasecard/build.gradle
+A	showcasecard/proguard-rules.pro
+A	showcasecard/src/main/AndroidManifest.xml
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCasePosition.kt
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseRadius.kt
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/ShowCaseView.kt
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/ext/Extensions.kt
+A	showcasecard/src/main/java/ru/dimorinny/showcasecard/widget/WrapWidthTextView.java
+A	showcasecard/src/main/res/drawable-hdpi/background_showcase_left_bottom.9.png
+A	showcasecard/src/main/res/drawable-hdpi/background_showcase_left_top.9.png
+A	showcasecard/src/main/res/drawable-hdpi/background_showcase_right_bottom.9.png
+A	showcasecard/src/main/res/drawable-hdpi/background_showcase_right_top.9.png
+A	showcasecard/src/main/res/drawable-mdpi/background_showcase_left_bottom.9.png
+A	showcasecard/src/main/res/drawable-mdpi/background_showcase_left_top.9.png
+A	showcasecard/src/main/res/drawable-mdpi/background_showcase_right_bottom.9.png
+A	showcasecard/src/main/res/drawable-mdpi/background_showcase_right_top.9.png
+A	showcasecard/src/main/res/drawable-xhdpi/background_showcase_left_bottom.9.png
+A	showcasecard/src/main/res/drawable-xhdpi/background_showcase_left_top.9.png
+A	showcasecard/src/main/res/drawable-xhdpi/background_showcase_right_bottom.9.png
+A	showcasecard/src/main/res/drawable-xhdpi/background_showcase_right_top.9.png
+A	showcasecard/src/main/res/drawable-xxhdpi/background_showcase_left_bottom.9.png
+A	showcasecard/src/main/res/drawable-xxhdpi/background_showcase_left_top.9.png
+A	showcasecard/src/main/res/drawable-xxhdpi/background_showcase_right_bottom.9.png
+A	showcasecard/src/main/res/drawable-xxhdpi/background_showcase_right_top.9.png
+A	showcasecard/src/main/res/drawable-xxxhdpi/background_showcase_left_bottom.9.png
+A	showcasecard/src/main/res/drawable-xxxhdpi/background_showcase_left_top.9.png
+A	showcasecard/src/main/res/drawable-xxxhdpi/background_showcase_right_bottom.9.png
+A	showcasecard/src/main/res/drawable-xxxhdpi/background_showcase_right_top.9.png
+A	showcasecard/src/main/res/layout/item_show_case_content.xml
+A	showcasecard/src/main/res/values/colors.xml
+A	showcasecard/src/main/res/values/strings.xml

@@ -1,0 +1,142 @@
+82d12f0;Update README.md
+M	README.md
+
+d57d092;Update README.md
+M	README.md
+
+841f0ab;1.0.5 release
+M	gradle.properties
+
+0e9993b;Merge pull request #6 from arturogutierrez/bug/samsung_column
+c0f9a0a;[modify] Column ID index is not zero always on some Samsung devices.
+M	badges/src/main/java/com/github/arturogutierrez/providers/SamsungBadgeProvider.java
+
+e05a3db;1.0.4 release
+M	gradle.properties
+
+81fe3bd;Merge pull request #3 from arturogutierrez/task/clean_refactor
+c51d72b;Trying to make the code more clean.
+M	badges/src/main/java/com/github/arturogutierrez/Badges.java
+M	badges/src/main/java/com/github/arturogutierrez/providers/BadgeProvider.java
+M	badges/src/main/java/com/github/arturogutierrez/providers/BadgeProviderFactory.java
+A	badges/src/main/java/com/github/arturogutierrez/providers/NullBadgeProvider.java
+M	badges/src/main/java/com/github/arturogutierrez/providers/SamsungBadgeProvider.java
+M	badges/src/main/java/com/github/arturogutierrez/providers/SonyBadgeProvider.java
+A	badges/src/main/java/com/github/arturogutierrez/providers/collaborators/HomePackageIdentify.java
+
+4a703fe;Update README.md
+M	README.md
+
+4cdabdc;Fix for devices with apparently have no launcher
+M	badges/src/main/java/com/github/arturogutierrez/Badges.java
+M	badges/src/main/java/com/github/arturogutierrez/BadgesNotSupportedException.java
+M	badges/src/main/java/com/github/arturogutierrez/providers/BadgeProviderFactory.java
+M	gradle.properties
+
+4a460fa;Another approach
+M	badges/src/main/java/com/github/arturogutierrez/Badges.java
+M	gradle.properties
+
+fe04121;Protecting lib from crappy devices
+M	badges/src/main/java/com/github/arturogutierrez/Badges.java
+M	gradle.properties
+
+aba0d92;Merge pull request #2 from ffgiraldez/bug/np_samsung_provider
+ed518cd;Prevent NP on samsung devices
+M	badges/src/main/java/com/github/arturogutierrez/providers/SamsungBadgeProvider.java
+
+a93a943;Update grade script to final version 1.0.0
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+e6522f2;Update README.md
+M	README.md
+
+bcd8027;Update README.md
+M	README.md
+
+52ebbed;Java docs fixed.
+M	badges/src/main/java/com/github/arturogutierrez/Badges.java
+
+9127fa1;Adding gradle wrapper
+M	.gitignore
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+
+fd5b375;Changing package to support deployments in global repository.
+M	badges/src/main/AndroidManifest.xml
+A	badges/src/main/java/com/github/arturogutierrez/Badges.java
+R078	badges/src/main/java/org/agd/badges/BadgesNotSupportedException.java	badges/src/main/java/com/github/arturogutierrez/BadgesNotSupportedException.java
+R083	badges/src/main/java/org/agd/badges/BadgeProvider.java	badges/src/main/java/com/github/arturogutierrez/providers/BadgeProvider.java
+R070	badges/src/main/java/org/agd/badges/Badges.java	badges/src/main/java/com/github/arturogutierrez/providers/BadgeProviderFactory.java
+R083	badges/src/main/java/org/agd/badges/impl/HtcBadgeProvider.java	badges/src/main/java/com/github/arturogutierrez/providers/HtcBadgeProvider.java
+R085	badges/src/main/java/org/agd/badges/impl/LGBadgeProvider.java	badges/src/main/java/com/github/arturogutierrez/providers/LGBadgeProvider.java
+R091	badges/src/main/java/org/agd/badges/impl/SamsungBadgeProvider.java	badges/src/main/java/com/github/arturogutierrez/providers/SamsungBadgeProvider.java
+R087	badges/src/main/java/org/agd/badges/impl/SonyBadgeProvider.java	badges/src/main/java/com/github/arturogutierrez/providers/SonyBadgeProvider.java
+M	build.gradle
+M	gradle.properties
+M	sample/src/main/AndroidManifest.xml
+R087	sample/src/main/java/org/agd/sample/MainActivity.java	sample/src/main/java/com/github/arturogutierrez/sample/MainActivity.java
+
+0cfc433;Merge pull request #1 from mbarrben/task/mavenize
+05c2b8a;[ADD] maven push plugin
+M	badges/build.gradle
+A	badges/gradle.properties
+M	build.gradle
+M	gradle.properties
+M	sample/build.gradle
+
+c7fc35d;Update README.md
+M	README.md
+
+d820e73;Update README.md
+M	README.md
+
+df7537a;Update README.md
+M	README.md
+
+f5f93c6;Badge exception name refactorized.
+M	badges/src/main/java/org/agd/badges/Badges.java
+R086	badges/src/main/java/org/agd/badges/BadgesNotSupported.java	badges/src/main/java/org/agd/badges/BadgesNotSupportedException.java
+M	sample/src/main/java/org/agd/sample/MainActivity.java
+
+9a4c5c8;Uploading screenshots...
+A	art/example_htc.png
+A	art/example_lg.png
+A	art/example_samsung.png
+A	art/example_sony.png
+
+4816d69;First import with support for Samsung, HTC, Sony and LG devices and a sample application
+A	badges/build.gradle
+A	badges/src/main/AndroidManifest.xml
+A	badges/src/main/java/org/agd/badges/BadgeProvider.java
+A	badges/src/main/java/org/agd/badges/Badges.java
+A	badges/src/main/java/org/agd/badges/BadgesNotSupported.java
+A	badges/src/main/java/org/agd/badges/impl/HtcBadgeProvider.java
+A	badges/src/main/java/org/agd/badges/impl/LGBadgeProvider.java
+A	badges/src/main/java/org/agd/badges/impl/SamsungBadgeProvider.java
+A	badges/src/main/java/org/agd/badges/impl/SonyBadgeProvider.java
+A	build.gradle
+A	gradle.properties
+A	sample/build.gradle
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/org/agd/sample/MainActivity.java
+A	sample/src/main/res/drawable-hdpi/ic_launcher.png
+A	sample/src/main/res/drawable-mdpi/ic_launcher.png
+A	sample/src/main/res/drawable-xhdpi/ic_launcher.png
+A	sample/src/main/res/drawable-xxhdpi/ic_launcher.png
+A	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/values-w820dp/dimens.xml
+A	sample/src/main/res/values/dimens.xml
+A	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/values/styles.xml
+A	settings.gradle
+
+41ef626;Creating repository
+A	.gitignore
+A	LICENSE.txt
+
+01fb73f;Initial commit
+A	README.md

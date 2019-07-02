@@ -1,0 +1,221 @@
+41f431a;update README
+M	README.md
+
+818d7b8;update annotation
+M	security-core/src/main/java/com/whyalwaysmea/core/authentication/MyAuthorizeConfigManager.java
+M	security-core/src/main/java/com/whyalwaysmea/core/authentication/MyAuthorizeConfigProvider.java
+M	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/SmsCodeAuthenticationFilter.java
+M	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/SmsCodeAuthenticationProvider.java
+M	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/SmsCodeAuthenticationSecurityConfig.java
+M	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/SmsCodeAuthenticationToken.java
+M	security-demo/src/main/java/com/whyalwaysmea/security/DemoAuthorizeConfigProvider.java
+M	security-demo/src/main/java/com/whyalwaysmea/security/RbacPermission.java
+
+32c156b;add annotation
+M	security-browser/src/main/java/com/whyalwaysmea/browser/authentication/MyAuthenctiationFailureHandler.java
+M	security-browser/src/main/java/com/whyalwaysmea/browser/config/BrowerSecurityConfig.java
+M	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/AbstractChannelSecurityConfig.java
+M	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/SmsCodeAuthenticationFilter.java
+M	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/SmsCodeAuthenticationSecurityConfig.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/BrowserProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/ImageProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/SecurityProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/SessionProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/SmsCodeProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/ValidateCodeProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeFilter.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/impl/AbstractValidateCodeProcessor.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/sms/SmsCodeGenerator.java
+
+78319e3;add Permission
+M	security-app/src/main/java/com/whyalwaysmea/app/MyAuthorizationServerConfig.java
+M	security-browser/src/main/java/com/whyalwaysmea/browser/config/BrowerSecurityConfig.java
+A	security-browser/src/main/java/com/whyalwaysmea/browser/config/BrowserSecurityBeanConfig.java
+A	security-core/src/main/java/com/whyalwaysmea/core/authentication/AuthorizeConfigManager.java
+A	security-core/src/main/java/com/whyalwaysmea/core/authentication/AuthorizeConfigProvider.java
+A	security-core/src/main/java/com/whyalwaysmea/core/authentication/MyAuthorizeConfigManager.java
+A	security-core/src/main/java/com/whyalwaysmea/core/authentication/MyAuthorizeConfigProvider.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/impl/AbstractValidateCodeProcessor.java
+M	security-demo/pom.xml
+A	security-demo/src/main/java/com/whyalwaysmea/security/DemoAuthorizeConfigProvider.java
+M	security-demo/src/main/java/com/whyalwaysmea/security/MyUserDetailsService.java
+A	security-demo/src/main/java/com/whyalwaysmea/security/RbacPermission.java
+
+587b50f;update README
+M	README.md
+
+c29187e;Authorization Server
+A	security-app/src/main/java/com/whyalwaysmea/app/App.java
+A	security-app/src/main/java/com/whyalwaysmea/app/MyAuthorizationServerConfig.java
+A	security-app/src/main/java/com/whyalwaysmea/app/MyResourceServerConfig.java
+A	security-app/src/main/java/com/whyalwaysmea/app/authentication/MyAuthenctiationFailureHandler.java
+A	security-app/src/main/java/com/whyalwaysmea/app/authentication/MyAuthenctiationSuccessHandler.java
+M	security-browser/src/main/java/com/whyalwaysmea/browser/BrowserSecurityController.java
+M	security-browser/src/main/java/com/whyalwaysmea/browser/authentication/MyAuthenctiationFailureHandler.java
+M	security-browser/src/main/java/com/whyalwaysmea/browser/config/BrowerSecurityConfig.java
+M	security-browser/src/main/java/com/whyalwaysmea/browser/session/AbstractSessionStrategy.java
+M	security-core/src/main/java/com/whyalwaysmea/core/SecurityCoreConfig.java
+R090	security-browser/src/main/java/com/whyalwaysmea/browser/dto/BaseResponse.java	security-core/src/main/java/com/whyalwaysmea/core/dto/BaseResponse.java
+M	security-demo/pom.xml
+M	security-demo/src/main/java/com/whyalwaysmea/security/MyUserDetailsService.java
+
+edacd0b;Session 处理
+M	security-browser/src/main/java/com/whyalwaysmea/browser/config/BrowerSecurityConfig.java
+A	security-browser/src/main/java/com/whyalwaysmea/browser/session/AbstractSessionStrategy.java
+A	security-browser/src/main/java/com/whyalwaysmea/browser/session/MyExpiredSessionStrategy.java
+A	security-browser/src/main/java/com/whyalwaysmea/browser/session/MyInvalidSessionStrategy.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/BrowserProperties.java
+A	security-core/src/main/java/com/whyalwaysmea/core/properties/SessionProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeFilter.java
+M	security-demo/src/main/resources/application.properties
+
+730f293;Session过期处理
+M	security-browser/src/main/java/com/whyalwaysmea/browser/BrowserSecurityController.java
+M	security-browser/src/main/java/com/whyalwaysmea/browser/config/BrowerSecurityConfig.java
+M	security-demo/src/main/resources/application.properties
+
+102f380;update README
+M	README.md
+
+7d64fb2;短信验证码
+M	security-browser/src/main/java/com/whyalwaysmea/browser/BrowserSecurityController.java
+M	security-browser/src/main/java/com/whyalwaysmea/browser/config/BrowerSecurityConfig.java
+A	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/AbstractChannelSecurityConfig.java
+A	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/SmsCodeAuthenticationFilter.java
+A	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/SmsCodeAuthenticationProvider.java
+A	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/SmsCodeAuthenticationSecurityConfig.java
+A	security-core/src/main/java/com/whyalwaysmea/core/authentication/sms/SmsCodeAuthenticationToken.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/ImageProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/SecurityConstants.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/SecurityProperties.java
+A	security-core/src/main/java/com/whyalwaysmea/core/properties/SmsCodeProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/ValidateCodeProperties.java
+R054	security-core/src/main/java/com/whyalwaysmea/core/validate/ImageCode.java	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCode.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeBeanConfig.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeController.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeFilter.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeGenerator.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeProcessor.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeProcessorHolder.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeSecurityConfig.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeType.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/image/ImageCode.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/image/ImageCodeProcessor.java
+R095	security-core/src/main/java/com/whyalwaysmea/core/validate/ImageValidateCodeGenerator.java	security-core/src/main/java/com/whyalwaysmea/core/validate/image/ImageValidateCodeGenerator.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/impl/AbstractValidateCodeProcessor.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/sms/DefaultSmsCodeSender.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/sms/SmsCodeGenerator.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/sms/SmsCodeProcessor.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/sms/SmsCodeSender.java
+M	security-demo/src/main/java/com/whyalwaysmea/code/ImageCodeGenerator.java
+M	security-demo/src/main/resources/resources/demo-login.html
+
+a496348;RememberMe
+M	README.md
+
+f22ab26;RememberMe
+M	security-browser/src/main/java/com/whyalwaysmea/browser/config/BrowerSecurityConfig.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/BrowserProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/ImageProperties.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ImageValidateCodeGenerator.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeBeanConfig.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeController.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeFilter.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeGenerator.java
+M	security-demo/src/main/java/com/whyalwaysmea/DemoApplication.java
+A	security-demo/src/main/java/com/whyalwaysmea/code/ImageCodeGenerator.java
+M	security-demo/src/main/resources/application.properties
+M	security-demo/src/main/resources/resources/demo-login.html
+
+82279b6;Merge branch 'master' of https://github.com/whyalwaysmea/Spring-Security
+a0be85f;图形验证码参数配置化
+A	security-core/src/main/java/com/whyalwaysmea/core/properties/ImageProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/SecurityProperties.java
+A	security-core/src/main/java/com/whyalwaysmea/core/properties/ValidateCodeProperties.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeController.java
+M	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeFilter.java
+M	security-demo/src/main/resources/application.properties
+M	security-demo/src/main/resources/resources/demo-login.html
+
+9957bcf;Update README.md
+M	README.md
+
+6556902;图形验证码
+M	security-browser/src/main/java/com/whyalwaysmea/browser/config/BrowerSecurityConfig.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ImageCode.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeController.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeException.java
+A	security-core/src/main/java/com/whyalwaysmea/core/validate/ValidateCodeFilter.java
+M	security-demo/src/main/resources/application.properties
+M	security-demo/src/main/resources/resources/demo-login.html
+
+9cbbe5e;SpringSecurity 获取当前认证用户
+M	security-demo/src/main/java/com/whyalwaysmea/web/controller/UserController.java
+
+dee5edb;Login Success&failed
+A	security-browser/src/main/java/com/whyalwaysmea/browser/authentication/MyAuthenctiationFailureHandler.java
+A	security-browser/src/main/java/com/whyalwaysmea/browser/authentication/MyAuthenctiationSuccessHandler.java
+R070	security-browser/src/main/java/com/whyalwaysmea/browser/BrowerSecurityConfig.java	security-browser/src/main/java/com/whyalwaysmea/browser/config/BrowerSecurityConfig.java
+M	security-core/src/main/java/com/whyalwaysmea/core/properties/BrowserProperties.java
+A	security-core/src/main/java/com/whyalwaysmea/core/properties/LoginResponseType.java
+M	security-demo/src/main/resources/application.properties
+M	security-demo/src/main/resources/resources/demo-login.html
+
+a3f51f3;init project
+D	.mvn/wrapper/maven-wrapper.properties
+D	mvnw
+D	mvnw.cmd
+M	pom.xml
+A	security-app/pom.xml
+A	security-browser/pom.xml
+A	security-browser/src/main/java/com/whyalwaysmea/browser/BrowerSecurityConfig.java
+A	security-browser/src/main/java/com/whyalwaysmea/browser/BrowserSecurityController.java
+A	security-browser/src/main/java/com/whyalwaysmea/browser/dto/BaseResponse.java
+A	security-browser/src/main/resources/resources/login.html
+A	security-core/pom.xml
+A	security-core/src/main/java/com/whyalwaysmea/core/SecurityCoreConfig.java
+A	security-core/src/main/java/com/whyalwaysmea/core/properties/BrowserProperties.java
+A	security-core/src/main/java/com/whyalwaysmea/core/properties/SecurityConstants.java
+A	security-core/src/main/java/com/whyalwaysmea/core/properties/SecurityProperties.java
+A	security-demo/pom.xml
+A	security-demo/src/main/java/com/whyalwaysmea/DemoApplication.java
+A	security-demo/src/main/java/com/whyalwaysmea/dto/User.java
+A	security-demo/src/main/java/com/whyalwaysmea/dto/UserQueryCondition.java
+A	security-demo/src/main/java/com/whyalwaysmea/exception/UserNotExistException.java
+A	security-demo/src/main/java/com/whyalwaysmea/security/MyUserDetailsService.java
+A	security-demo/src/main/java/com/whyalwaysmea/service/HelloService.java
+A	security-demo/src/main/java/com/whyalwaysmea/service/impl/HelloServiceImpl.java
+A	security-demo/src/main/java/com/whyalwaysmea/validator/MyConstraint.java
+A	security-demo/src/main/java/com/whyalwaysmea/validator/MyConstraintValidator.java
+A	security-demo/src/main/java/com/whyalwaysmea/validator/ValidateAspect.java
+A	security-demo/src/main/java/com/whyalwaysmea/validator/ValidateException.java
+A	security-demo/src/main/java/com/whyalwaysmea/web/aspect/TimeAspect.java
+A	security-demo/src/main/java/com/whyalwaysmea/web/config/WebConfig.java
+A	security-demo/src/main/java/com/whyalwaysmea/web/controller/AsyncController.java
+A	security-demo/src/main/java/com/whyalwaysmea/web/controller/ControllerExceptionHandler.java
+A	security-demo/src/main/java/com/whyalwaysmea/web/controller/UserController.java
+A	security-demo/src/main/java/com/whyalwaysmea/web/filter/TimeFilter.java
+A	security-demo/src/main/java/com/whyalwaysmea/web/interceptor/TimeInterceptor.java
+A	security-demo/src/main/resources/application.properties
+A	security-demo/src/main/resources/resources/demo-login.html
+A	security-demo/src/main/resources/resources/index.html
+A	security-demo/src/test/java/com/whyalwaysmea/UserControllerTest.java
+D	src/main/java/com/whyalwaysmea/memobird/MemobirdApplication.java
+D	src/main/resources/application.properties
+D	src/test/java/com/whyalwaysmea/memobird/MemobirdApplicationTests.java
+
+d29b7ce;Create README.md
+A	README.md
+
+f8c34a3;初始Spring Security
+M	.gitignore
+A	.mvn/wrapper/maven-wrapper.properties
+A	mvnw
+A	mvnw.cmd
+A	pom.xml
+A	src/main/java/com/whyalwaysmea/memobird/MemobirdApplication.java
+A	src/main/resources/application.properties
+A	src/test/java/com/whyalwaysmea/memobird/MemobirdApplicationTests.java
+
+23245b2;Initial commit
+A	.gitignore

@@ -1,0 +1,2174 @@
+6338890;merge
+3fe31a2;完善readme
+M	README.md
+M	build.gradle
+M	skyeye-agent/README.md
+
+2d5f6b1;修复bug
+M	skyeye-web/src/main/java/com/jthink/skyeye/web/task/MonitorTask.java
+
+e125c59;修复bug
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/domain/NameInfo.java
+M	skyeye-data/skyeye-data-jpa/src/main/resources/sql/init.sql
+
+70360d4;修改调用链的样式
+M	skyeye-web/src/main/resources/static/styles/rpctrace/chain.css
+M	skyeye-web/src/main/resources/static/views/rpctrace/chain.html
+
+f3437df;支持在主机时间偏移情况下，调用图形正常显示;修复trace的复选框的bug
+M	skyeye-web/src/main/resources/static/scripts/controllers/rpctrace/chainController.js
+
+eefa36c;修改gradle能够访问cloudera maven服务器
+M	skyeye-collector/skyeye-collector-backup/build.gradle
+
+2624460;完成模板报警
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/NameInfoType.java
+M	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/cache/CacheService.java
+M	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/JobConfiguration.java
+M	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/NameCollector.java
+M	skyeye-data/skyeye-data-jpa/src/main/resources/sql/init.sql
+
+bb8b6d1;初步实现模板报警
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/domain/MonitorTemplate.java
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/domain/NameInfo.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/repository/MonitorTemplateRepository.java
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/repository/NameInfoRepository.java
+M	skyeye-web/src/main/java/com/jthink/skyeye/web/task/MonitorTask.java
+M	skyeye-web/src/main/resources/application.properties
+M	skyeye-web/src/main/resources/properties/web.properties
+
+c3d1db0;解决对接的app部署在容器中无法获取host
+M	skyeye-agent/image/run.sh
+
+b3efd11;解决对接的app部署在容器中无法获取host
+M	build.sh
+M	settings.gradle
+A	skyeye-agent/.gitignore
+A	skyeye-agent/README.md
+A	skyeye-agent/build.gradle
+A	skyeye-agent/image/Dockerfile
+A	skyeye-agent/image/build.sh
+A	skyeye-agent/image/run.sh
+A	skyeye-agent/settings.gradle
+A	skyeye-agent/src/main/java/com/jthink/skyeye/agent/launcher/Launcher.java
+M	skyeye-base/build.gradle
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/base/util/DockerHostUtil.java
+M	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/util/SysUtil.java
+
+20404a5;支持容器化部署app对接skyeye
+M	README.md
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/resources/logback.xml
+M	skyeye-benchmark/hi-log/hi-log-log4j2/image/Dockerfile
+M	skyeye-benchmark/hi-log/hi-log-log4j2/src/main/resources/log4j2.xml
+M	skyeye-benchmark/log-generater/src/main/resources/logback.xml
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/src/main/resources/logback.xml
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/src/main/resources/logback.xml
+M	skyeye-client/README.md
+M	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/util/SysUtil.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaManager.java
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+
+023acd1;添加image
+A	skyeye-benchmark/hi-log/hi-log-log4j2/image/Dockerfile
+A	skyeye-benchmark/hi-log/hi-log-log4j2/image/build.sh
+A	skyeye-benchmark/hi-log/hi-log-log4j2/image/run.sh
+
+76a19fa;update gitignore
+M	.gitignore
+A	skyeye-benchmark/.gitignore
+A	skyeye-benchmark/dubbo-service/.gitignore
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/.gitignore
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/.gitignore
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/.gitignore
+M	skyeye-benchmark/dubbo-service/dubbo-service-client/.gitignore
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/.gitignore
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/.gitignore
+M	skyeye-benchmark/dubbo-service/performance-test/.gitignore
+M	skyeye-benchmark/hi-log/.gitignore
+M	skyeye-benchmark/hi-log/hi-log-log4j2/.gitignore
+M	skyeye-benchmark/log-generater/.gitignore
+M	skyeye-benchmark/spring-cloud-service/.gitignore
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/.gitignore
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/.gitignore
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/.gitignore
+
+cd0f2e1;fix bug
+M	docker-compose.yml
+M	skyeye-alarm/src/main/resources/application.properties
+
+a025127;删除tar包
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/e/configuration/dubbo/DubboConfiguration.java
+
+763f90a;删除tar包
+D	skyeye-benchmark/dubbo-service/dubbo-service-e/image/dubbo-service-e-1.3.0.tar
+
+0992536;测试新版dubbo 2.5.7版本
+M	build.gradle
+M	settings.gradle
+M	skyeye-benchmark/dubbo-service/build.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/image/Dockerfile
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/image/build.sh
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/image/dubbo-service-e-1.3.0.tar
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/image/run.sh
+M	skyeye-data/settings.gradle
+A	skyeye-data/skyeye-data-dubbo/.gitignore
+A	skyeye-data/skyeye-data-dubbo/README.md
+A	skyeye-data/skyeye-data-dubbo/build.gradle
+A	skyeye-data/skyeye-data-dubbo/settings.gradle
+A	skyeye-data/skyeye-data-dubbo/src/main/java/com/jthink/skyeye/data/dubbo/DubboAutoConfiguration.java
+A	skyeye-data/skyeye-data-dubbo/src/main/java/com/jthink/skyeye/data/dubbo/DubboProperties.java
+A	skyeye-data/skyeye-data-dubbo/src/main/java/com/jthink/skyeye/data/dubbo/DubboService.java
+A	skyeye-data/skyeye-data-dubbo/src/main/resources/META-INF/spring.factories
+M	skyeye-data/skyeye-data-dubbox/README.md
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+
+019b91a;完成compse文件
+M	docker-compose.yml
+
+db9d16e;完成所有的docker image构造脚本
+A	build.sh
+A	docker-compose.yml
+A	skyeye-collector/skyeye-collector-backup/image/Dockerfile
+A	skyeye-collector/skyeye-collector-backup/image/build.sh
+A	skyeye-collector/skyeye-collector-backup/image/run.sh
+A	skyeye-collector/skyeye-collector-indexer/image/Dockerfile
+A	skyeye-collector/skyeye-collector-indexer/image/build.sh
+A	skyeye-collector/skyeye-collector-indexer/image/run.sh
+A	skyeye-collector/skyeye-collector-metrics/image/Dockerfile
+A	skyeye-collector/skyeye-collector-metrics/image/build.sh
+A	skyeye-collector/skyeye-collector-metrics/image/run.sh
+A	skyeye-collector/skyeye-collector-trace/image/Dockerfile
+A	skyeye-collector/skyeye-collector-trace/image/build.sh
+A	skyeye-collector/skyeye-collector-trace/image/run.sh
+A	skyeye-monitor/image/Dockerfile
+A	skyeye-monitor/image/build.sh
+A	skyeye-monitor/image/run.sh
+A	skyeye-web/image/Dockerfile
+A	skyeye-web/image/build.sh
+A	skyeye-web/image/run.sh
+
+2dbe70c;修改image构建为传递参数
+M	skyeye-alarm/image/Dockerfile
+M	skyeye-alarm/image/build.sh
+M	skyeye-alarm/image/run.sh
+
+90f8a15;修改image构建为传递参数
+M	skyeye-alarm/image/Dockerfile
+M	skyeye-alarm/image/build.sh
+M	skyeye-alarm/image/run.sh
+
+81ddc53;update image
+M	skyeye-alarm/image/Dockerfile
+M	skyeye-alarm/image/build.sh
+M	skyeye-alarm/image/run.sh
+M	skyeye-trace/build.gradle
+
+25bd563;增加image构建文件
+A	skyeye-alarm/image/Dockerfile
+A	skyeye-alarm/image/build.sh
+A	skyeye-alarm/image/run.sh
+
+f00a8d5;升级对应版本
+M	README.md
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/hi-log/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-benchmark/spring-cloud-service/build.gradle
+M	skyeye-client/README.md
+M	skyeye-statistics/build.gradle
+M	skyeye-statistics/pom.xml
+
+0780dc9;修复采集器在log4j不能心跳自启的bug
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+
+d00df5d;修复采集器在log4j不能心跳自启的bug
+M	build.gradle
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+
+f227526;update version
+M	build.gradle
+
+098043a;修改gradle
+M	build.gradle
+M	skyeye-base/build.gradle
+M	skyeye-data/build.gradle
+M	skyeye-trace/build.gradle
+
+afd86b5;修复已知bug
+M	build.gradle
+M	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/listener/AppChildrenChangeListener.java
+M	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/service/AppInfoService.java
+M	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/service/AppStatusMonitorService.java
+M	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/service/CacheService.java
+
+8c2df9e;update gitignore
+M	skyeye-alarm/.gitignore
+M	skyeye-base/.gitignore
+M	skyeye-client/.gitignore
+M	skyeye-client/skyeye-client-core/.gitignore
+M	skyeye-client/skyeye-client-log4j/.gitignore
+M	skyeye-client/skyeye-client-log4j2/.gitignore
+M	skyeye-client/skyeye-client-logback/.gitignore
+M	skyeye-collector/.gitignore
+M	skyeye-collector/skyeye-collector-backup/.gitignore
+M	skyeye-collector/skyeye-collector-core/.gitignore
+M	skyeye-collector/skyeye-collector-indexer/.gitignore
+M	skyeye-collector/skyeye-collector-metrics/.gitignore
+M	skyeye-collector/skyeye-collector-trace/.gitignore
+M	skyeye-data/.gitignore
+M	skyeye-data/skyeye-data-dubbox/.gitignore
+M	skyeye-data/skyeye-data-hbase/.gitignore
+M	skyeye-data/skyeye-data-http/.gitignore
+M	skyeye-data/skyeye-data-jpa/.gitignore
+M	skyeye-data/skyeye-data-rabbitmq/.gitignore
+M	skyeye-monitor/.gitignore
+M	skyeye-statistics/.gitignore
+M	skyeye-trace/.gitignore
+M	skyeye-trace/skyeye-trace-core/.gitignore
+A	skyeye-trace/skyeye-trace-sc/.gitignore
+M	skyeye-web/.gitignore
+
+999f47b;去除不需要upload的jar，修改readme
+M	README.md
+M	skyeye-base/build.gradle
+M	skyeye-client/README.md
+M	skyeye-data/build.gradle
+M	skyeye-trace/build.gradle
+
+8ad0d60;升级hbase版本
+M	build.gradle
+
+4fb19ce;修改整个项目为moudle形式
+A	build.gradle
+D	build.sh
+A	settings.gradle
+M	skyeye-alarm/build.gradle
+M	skyeye-base/build.gradle
+M	skyeye-base/settings.gradle
+M	skyeye-client/build.gradle
+M	skyeye-client/skyeye-client-core/build.gradle
+M	skyeye-client/skyeye-client-log4j/build.gradle
+M	skyeye-client/skyeye-client-log4j2/build.gradle
+M	skyeye-client/skyeye-client-logback/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-collector/skyeye-collector-backup/build.gradle
+M	skyeye-collector/skyeye-collector-core/build.gradle
+M	skyeye-collector/skyeye-collector-indexer/build.gradle
+M	skyeye-collector/skyeye-collector-metrics/build.gradle
+M	skyeye-collector/skyeye-collector-trace/build.gradle
+M	skyeye-data/build.gradle
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+M	skyeye-data/skyeye-data-dubbox/settings.gradle
+M	skyeye-data/skyeye-data-hbase/build.gradle
+M	skyeye-data/skyeye-data-hbase/settings.gradle
+M	skyeye-data/skyeye-data-http/build.gradle
+M	skyeye-data/skyeye-data-http/settings.gradle
+M	skyeye-data/skyeye-data-jpa/build.gradle
+M	skyeye-data/skyeye-data-jpa/settings.gradle
+M	skyeye-data/skyeye-data-rabbitmq/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-trace/build.gradle
+M	skyeye-trace/skyeye-trace-core/build.gradle
+M	skyeye-trace/skyeye-trace-sc/build.gradle
+M	skyeye-web/build.gradle
+
+c301a27;降低zk 版本
+M	skyeye-collector/skyeye-collector-metrics/build.gradle
+
+4ddcb64;upgrade spring cloud version
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/build.gradle
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/build.gradle
+
+389ff77;upgrade version
+M	README.md
+M	skyeye-client/README.md
+
+00d1039;增加报警邮件的开关
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/configuration/mail/MailProperties.java
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/listener/SyncRequestListener.java
+M	skyeye-alarm/src/main/resources/application.properties
+M	skyeye-alarm/src/main/resources/properties/alarm.properties
+
+5b282f1;upgrade version
+M	skyeye-web/build.gradle
+
+4e741c0;upgrade
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+
+4b97762;完成一个host部署app的多个实例
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaManager.java
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+M	skyeye-web/src/main/java/com/jthink/skyeye/web/service/AppMonitorService.java
+M	skyeye-web/src/main/java/com/jthink/skyeye/web/task/MonitorTask.java
+M	skyeye-web/src/main/java/com/jthink/skyeye/web/web/controller/AppController.java
+M	skyeye-web/src/main/resources/static/scripts/controllers/app/deployController.js
+M	skyeye-web/src/main/resources/static/scripts/controllers/app/statusController.js
+M	skyeye-web/src/main/resources/static/scripts/controllers/log/historyController.js
+M	skyeye-web/src/main/resources/static/scripts/controllers/log/realtimeController.js
+
+a133d24;完成页面优化
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/repository/AppInfoRepository.java
+M	skyeye-web/src/main/java/com/jthink/skyeye/web/service/AppMonitorService.java
+
+8959f5a;完成一个host部署app的多个实例
+M	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/register/ZkRegister.java
+
+795577f;完成一个host部署app的多个实例
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/listener/SyncRequestListener.java
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/service/MailService.java
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/register/ZkRegister.java
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaManager.java
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+M	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/listener/ScrollChildrenChangeListener.java
+
+d7149cc;fix bug
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/configuration/amqp/AmqpConfiguration.java
+
+39dba24;fix bug
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaAppender.java
+
+c4dd540;完成log4j和log4j2的采集器心跳检测机制
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaManager.java
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+
+00b8167;完成采集器心跳检测机制
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+M	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/listener/AppChildrenChangeListener.java
+M	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/listener/ScrollChildrenChangeListener.java
+M	skyeye-statistics/pom.xml
+M	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/generater/UniqueIdGen.java
+
+36cdfcf;初步完成心跳检测机制
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+
+092e136;update gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/sampler/PercentageSampler.java
+
+71df583;完善log mock
+M	skyeye-benchmark/log-generater/src/main/java/com/jthink/skyeye/benchmark/log/generater/launcher/Launcher.java
+M	skyeye-benchmark/log-generater/src/main/java/com/jthink/skyeye/benchmark/log/generater/service/GenerateLogService.java
+A	skyeye-benchmark/log-generater/src/main/java/com/jthink/skyeye/benchmark/log/generater/util/RandomSeed.java
+
+aab9d71;提供钉钉和微信报警
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/listener/SyncRequestListener.java
+
+5430922;提供钉钉和微信报警
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/listener/SyncRequestListener.java
+
+c718268;提供钉钉和微信报警
+M	README.md
+M	skyeye-alarm/build.gradle
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/configuration/amqp/AmqpConfiguration.java
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/configuration/dingding/DingdingProperties.java
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/configuration/wechat/WechatProperties.java
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/dto/DingDingDto.java
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/listener/SyncRequestListener.java
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/service/DingDingService.java
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/service/WechatService.java
+D	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/task/AlertTask.java
+M	skyeye-alarm/src/main/resources/application.properties
+M	skyeye-alarm/src/main/resources/properties/alarm.properties
+M	skyeye-benchmark/doc/Test Case of SkyEye.xls
+M	skyeye-data/skyeye-data-http/build.gradle
+M	skyeye-data/skyeye-data-http/src/main/java/com/jthink/skyeye/data/http/HttpRequest.java
+M	skyeye-data/skyeye-data-rabbitmq/src/main/java/com/jthink/skyeye/data/rabbitmq/service/RabbitmqService.java
+
+32d37e4;增加报警占比
+M	skyeye-web/src/main/java/com/jthink/skyeye/web/task/MonitorTask.java
+
+2eefe4c;增加报警占比
+M	skyeye-data/skyeye-data-hbase/build.gradle
+M	skyeye-web/src/main/java/com/jthink/skyeye/web/task/MonitorTask.java
+
+dece859;初步完成sc service
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/build.gradle
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/a/controller/TraceController.java
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/build.gradle
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+M	skyeye-trace/skyeye-trace-sc/src/main/java/com/jthink/skyeye/trace/sc/filter/RpcTraceFilter.java
+
+100a604;初步完成spring cloud微服务测试代码
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/b/application/Application.java
+
+808a1f2;初步完成spring cloud微服务测试代码
+D	skyeye-benchmark/dubbo-service/dubbo-service-client/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/client/ServiceA.java
+M	skyeye-benchmark/hi-log/hi-log-log4j2/settings.gradle
+M	skyeye-benchmark/spring-cloud-service/settings.gradle
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/build.gradle
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/a/application/Application.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/a/controller/TraceController.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/a/service/TraceService.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/src/main/resources/application.properties
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/src/main/resources/logback.xml
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/src/main/resources/properties/service-a.properties
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/build.gradle
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/settings.gradle
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/b/application/Application.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/b/controller/ServiceController.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/src/main/resources/application.properties
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/src/main/resources/logback.xml
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-b/src/main/resources/properties/service-b.properties
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/build.gradle
+D	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/fallback/ServiceAFallbackFactory.java
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/fallback/ServiceBFallbackFactory.java
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/fallback/ServiceCFallbackFactory.java
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/fallback/ServiceDFallbackFactory.java
+M	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/fallback/ServiceEFallbackFactory.java
+D	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/iface/ServiceA.java
+
+66c4eeb;完成spring cloud测试代码
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/RpcType.java
+A	skyeye-benchmark/spring-cloud-service/.gitignore
+A	skyeye-benchmark/spring-cloud-service/build.gradle
+A	skyeye-benchmark/spring-cloud-service/settings.gradle
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/.gitignore
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/build.gradle
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-a/settings.gradle
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/.gitignore
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/build.gradle
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/settings.gradle
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/fallback/ServiceAFallbackFactory.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/fallback/ServiceBFallbackFactory.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/fallback/ServiceCFallbackFactory.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/fallback/ServiceDFallbackFactory.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/fallback/ServiceEFallbackFactory.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/iface/ServiceA.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/iface/ServiceB.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/iface/ServiceC.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/iface/ServiceD.java
+A	skyeye-benchmark/spring-cloud-service/spring-cloud-service-client/src/main/java/com/jthink/skyeye/benchmark/spring/cloud/service/client/iface/ServiceE.java
+M	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/register/ZkRegister.java
+M	skyeye-trace/settings.gradle
+A	skyeye-trace/skyeye-trace-sc/build.gradle
+A	skyeye-trace/skyeye-trace-sc/settings.gradle
+A	skyeye-trace/skyeye-trace-sc/src/main/java/com/jthink/skyeye/trace/sc/filter/RpcTraceFilter.java
+
+9df7ae3;re-arch skyeye-trace module
+M	skyeye-client/build.gradle
+M	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/register/ZkRegister.java
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+
+b1d38b6;re-arch skyeye-trace module
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-client/skyeye-client-core/build.gradle
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+M	skyeye-trace/build.gradle
+M	skyeye-trace/settings.gradle
+A	skyeye-trace/skyeye-trace-core/.gitignore
+A	skyeye-trace/skyeye-trace-core/build.gradle
+A	skyeye-trace/skyeye-trace-core/settings.gradle
+R084	skyeye-trace/src/main/java/com/jthink/skyeye/trace/collector/Collector.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/collector/Collector.java
+R097	skyeye-trace/src/main/java/com/jthink/skyeye/trace/collector/KafkaCollector.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/collector/KafkaCollector.java
+R095	skyeye-trace/src/main/java/com/jthink/skyeye/trace/dto/RegisterDto.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/dto/RegisterDto.java
+R082	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/IdGen.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/generater/IdGen.java
+R096	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/IncrementIdGen.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/generater/IncrementIdGen.java
+R098	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/UniqueIdGen.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/generater/UniqueIdGen.java
+R074	skyeye-trace/src/main/java/com/jthink/skyeye/trace/registry/Registry.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/registry/Registry.java
+R082	skyeye-trace/src/main/java/com/jthink/skyeye/trace/registry/ZookeeperRegistry.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/registry/ZookeeperRegistry.java
+R086	skyeye-trace/src/main/java/com/jthink/skyeye/trace/sampler/HashSampler.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/sampler/HashSampler.java
+R096	skyeye-trace/src/main/java/com/jthink/skyeye/trace/sampler/PercentageSampler.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/sampler/PercentageSampler.java
+R083	skyeye-trace/src/main/java/com/jthink/skyeye/trace/sampler/Sampler.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/sampler/Sampler.java
+R093	skyeye-trace/src/main/java/com/jthink/skyeye/trace/trace/Tracer.java	skyeye-trace/skyeye-trace-core/src/main/java/com/jthink/skyeye/trace/core/trace/Tracer.java
+R085	skyeye-trace/src/test/java/com/jthink/skyeye/trace/test/id/UniqueIdGenTest.java	skyeye-trace/skyeye-trace-core/src/test/java/com/jthink/skyeye/trace/core/test/id/UniqueIdGenTest.java
+
+63b146f;update version
+M	README.md
+M	build.sh
+M	skyeye-alarm/build.gradle
+M	skyeye-base/build.gradle
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/hi-log/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-client/README.md
+M	skyeye-client/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-collector/skyeye-collector-metrics/build.gradle
+M	skyeye-collector/skyeye-collector-trace/build.gradle
+M	skyeye-data/build.gradle
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-statistics/build.gradle
+M	skyeye-trace/build.gradle
+M	skyeye-web/build.gradle
+
+c8a0ce2;update readme
+M	README.md
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/hi-log/hi-log-log4j2/src/main/resources/log4j2.xml
+M	skyeye-client/README.md
+M	skyeye-statistics/pom.xml
+
+a7ed769;upgrade zkclient to 0.10 fix log4j2 bug
+M	README.md
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/hi-log/hi-log-log4j2/src/main/java/com/jthink/skyeye/benchmark/hi/log/log4j2/launcher/Launcher.java
+M	skyeye-benchmark/hi-log/hi-log-log4j2/src/main/resources/log4j2.xml
+M	skyeye-client/README.md
+M	skyeye-client/build.gradle
+M	skyeye-client/skyeye-client-log4j2/build.gradle
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaManager.java
+M	skyeye-collector/skyeye-collector-metrics/build.gradle
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-statistics/build.gradle
+M	skyeye-trace/build.gradle
+M	skyeye-web/build.gradle
+
+5ba01e2;完善log4j2开发和测试代码
+M	skyeye-benchmark/doc/Test Case of SkyEye.xls
+A	skyeye-benchmark/hi-log/.gitignore
+A	skyeye-benchmark/hi-log/build.gradle
+A	skyeye-benchmark/hi-log/hi-log-log4j2/.gitignore
+A	skyeye-benchmark/hi-log/hi-log-log4j2/build.gradle
+A	skyeye-benchmark/hi-log/hi-log-log4j2/settings.gradle
+A	skyeye-benchmark/hi-log/hi-log-log4j2/src/main/java/com/jthink/skyeye/benchmark/hi/log/log4j2/launcher/Launcher.java
+A	skyeye-benchmark/hi-log/hi-log-log4j2/src/main/resources/log4j2.xml
+A	skyeye-benchmark/hi-log/settings.gradle
+M	skyeye-benchmark/log-generater/src/main/java/com/jthink/skyeye/benchmark/log/generater/launcher/Launcher.java
+M	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaAppender.java
+D	skyeye-client/skyeye-client-log4j2/src/main/resources/log4j2.xml
+
+c1c0efe;初步完成log4j2 client
+M	README.md
+M	skyeye-client/settings.gradle
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-log4j2/build.gradle
+A	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaAppender.java
+A	skyeye-client/skyeye-client-log4j2/src/main/java/com/jthink/skyeye/client/log4j2/appender/KafkaManager.java
+A	skyeye-client/skyeye-client-log4j2/src/main/resources/log4j2.xml
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+M	skyeye-data/build.gradle
+
+336b50b;update version
+M	skyeye-alarm/build.gradle
+M	skyeye-base/build.gradle
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-client/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-collector/skyeye-collector-metrics/build.gradle
+M	skyeye-collector/skyeye-collector-trace/build.gradle
+M	skyeye-data/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-statistics/build.gradle
+M	skyeye-trace/build.gradle
+M	skyeye-web/build.gradle
+
+336afb2;finish compile shell
+A	build.sh
+
+6c0eb80;Merge branch 'dev'
+641178b;add file
+A	skyeye-collector/skyeye-collector-core/src/main/resources/shell/create-topic.sh
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/shell/create-index.py
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/shell/install.sh
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/shell/start.sh
+A	skyeye-collector/skyeye-collector-metrics/src/main/resources/shell/create-index.py
+A	skyeye-collector/skyeye-collector-metrics/src/main/resources/shell/install.sh
+A	skyeye-collector/skyeye-collector-metrics/src/main/resources/shell/start.sh
+A	skyeye-collector/skyeye-collector-trace/src/main/resources/shell/hbase
+
+afd952a;update the readme
+M	README.md
+M	skyeye-client/README.md
+R100	skyeye-collector/skyeye-collector-metrics/src/main/resources/config/collector-metrics.properties	skyeye-collector/skyeye-collector-metrics/src/main/resources/properties/collector-metrics.properties
+R100	skyeye-collector/skyeye-collector-trace/src/main/resources/config/collector-trace.properties	skyeye-collector/skyeye-collector-trace/src/main/resources/properties/collector-trace.properties
+
+bb2fab6;test trace module
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/performance-test/build.gradle
+
+ef7b5ce;update gradle
+M	skyeye-benchmark/log-generater/build.gradle
+
+76261e3;fix bug
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-benchmark/log-generater/src/main/java/com/jthink/skyeye/benchmark/log/generater/service/GenerateLogService.java
+M	skyeye-benchmark/log-generater/src/main/resources/logback.xml
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+M	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/configuration/kafka/KafkaConfiguration.java
+M	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/launcher/Launcher.java
+M	skyeye-collector/skyeye-collector-metrics/src/main/resources/application.properties
+M	skyeye-collector/skyeye-collector-metrics/src/main/resources/config/collector-metrics.properties
+M	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/launcher/Launcher.java
+M	skyeye-collector/skyeye-collector-trace/src/main/resources/application.properties
+M	skyeye-data/skyeye-data-jpa/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-monitor/src/main/resources/application.properties
+M	skyeye-statistics/build.gradle
+M	skyeye-web/build.gradle
+M	skyeye-web/src/main/resources/application.properties
+M	skyeye-web/src/main/resources/properties/web.properties
+
+41255fe;update constants
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/RpcType.java
+
+19b5c79;re arch metrics data collector
+M	skyeye-collector/settings.gradle
+R099	skyeye-collector/src/test/java/com/jthink/skyeye/collector/test/KafkaConsumerTest.java	skyeye-collector/skyeye-collector-core/src/test/java/com/jthink/skyeye/collector/core/test/KafkaConsumerTest.java
+A	skyeye-collector/skyeye-collector-metrics/build.gradle
+A	skyeye-collector/skyeye-collector-metrics/settings.gradle
+R067	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForEvent.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/balancer/HandleRebalance.java
+R083	skyeye-collector/src/main/java/com/jthink/skyeye/collector/service/CacheService.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/cache/CacheService.java
+R094	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/zookeeper/ZookeeperConfiguration.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/configuration/zookeeper/ZookeeperConfiguration.java
+A	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/launcher/Launcher.java
+R092	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/CollectTask.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/MetricsTask.java
+R098	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/ExceptionProcessor.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/ExceptionProcessor.java
+R095	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/Indexer.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/Indexer.java
+R095	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/Job.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/Job.java
+A	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/JobConfiguration.java
+R097	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/NameCollector.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/NameCollector.java
+R075	skyeye-collector/src/main/resources/application.properties	skyeye-collector/skyeye-collector-metrics/src/main/resources/application.properties
+A	skyeye-collector/skyeye-collector-metrics/src/main/resources/banner.txt
+R061	skyeye-collector/src/main/resources/properties/collector.properties	skyeye-collector/skyeye-collector-metrics/src/main/resources/config/collector-metrics.properties
+R097	skyeye-collector/src/main/resources/logback.xml	skyeye-collector/skyeye-collector-metrics/src/main/resources/logback.xml
+M	skyeye-collector/skyeye-collector-trace/build.gradle
+D	skyeye-collector/src/main/java/com/google/common/base/Stopwatch.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/Task.java
+D	skyeye-collector/src/main/resources/banner.txt
+D	skyeye-collector/src/main/resources/shell/es/app-log/create-index.py
+D	skyeye-collector/src/main/resources/shell/es/app-log/start.sh
+D	skyeye-collector/src/main/resources/shell/es/event-log/create-index.py
+D	skyeye-collector/src/main/resources/shell/es/event-log/start.sh
+D	skyeye-collector/src/main/resources/shell/es/install.sh
+D	skyeye-collector/src/main/resources/shell/hbase/hbase
+D	skyeye-collector/src/main/resources/shell/kafka/create-topic.sh
+
+e7897b0;re arch rpc trace data collector
+M	skyeye-collector/settings.gradle
+M	skyeye-collector/skyeye-collector-backup/build.gradle
+M	skyeye-collector/skyeye-collector-backup/src/main/resources/properties/collector-backup.properties
+A	skyeye-collector/skyeye-collector-trace/build.gradle
+A	skyeye-collector/skyeye-collector-trace/settings.gradle
+R066	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForRpcTrace.java	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/balancer/HandleRebalance.java
+A	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/cache/CacheService.java
+A	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/launcher/Launcher.java
+R097	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/HbaseStore.java	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/store/HbaseStore.java
+R095	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/Store.java	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/store/Store.java
+R092	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/RpcTraceTask.java	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/task/RpcTraceTask.java
+A	skyeye-collector/skyeye-collector-trace/src/main/resources/application.properties
+A	skyeye-collector/skyeye-collector-trace/src/main/resources/banner.txt
+A	skyeye-collector/skyeye-collector-trace/src/main/resources/config/collector-trace.properties
+A	skyeye-collector/skyeye-collector-trace/src/main/resources/logback.xml
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/UploadTask.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/util/FileUtil.java
+M	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/boot/HbaseAutoConfiguration.java
+M	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/boot/HbaseProperties.java
+
+f0cd173;add gitignore
+A	skyeye-client/skyeye-client-core/.gitignore
+A	skyeye-client/skyeye-client-log4j/.gitignore
+A	skyeye-client/skyeye-client-log4j2/.gitignore
+A	skyeye-client/skyeye-client-logback/.gitignore
+A	skyeye-collector/skyeye-collector-backup/.gitignore
+A	skyeye-collector/skyeye-collector-core/.gitignore
+A	skyeye-collector/skyeye-collector-indexer/.gitignore
+A	skyeye-collector/skyeye-collector-metrics/.gitignore
+A	skyeye-collector/skyeye-collector-trace/.gitignore
+
+b4181ae;add gitignore
+M	skyeye-collector/build.gradle
+
+279ef24;re arch log backup collector
+M	skyeye-collector/settings.gradle
+A	skyeye-collector/skyeye-collector-backup/build.gradle
+A	skyeye-collector/skyeye-collector-backup/settings.gradle
+R067	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForBackup.java	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/balancer/HandleRebalance.java
+R096	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/hadoop/HadoopConfiguration.java	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/configuration/hadoop/HadoopConfiguration.java
+R079	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/hadoop/HadoopProperties.java	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/configuration/hadoop/HadoopProperties.java
+A	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/launcher/Launcher.java
+R084	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/BackupTask.java	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/task/BackupTask.java
+A	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/task/UploadTask.java
+A	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/util/FileUtil.java
+A	skyeye-collector/skyeye-collector-backup/src/main/resources/application.properties
+A	skyeye-collector/skyeye-collector-backup/src/main/resources/banner.txt
+A	skyeye-collector/skyeye-collector-backup/src/main/resources/logback.xml
+A	skyeye-collector/skyeye-collector-backup/src/main/resources/properties/collector-backup.properties
+M	skyeye-collector/skyeye-collector-indexer/src/main/java/com/jthink/skyeye/collector/indexer/balancer/HandleRebalance.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/callback/KafkaOffsetCommitCallback.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/es/EsConfiguration.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/es/EsProperties.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/kafka/KafkaConfiguration.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/kafka/KafkaProperties.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/launcher/Launcher.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForRpcTrace.java
+M	skyeye-web/build.gradle
+
+5475c2d;update properties file in collecttor indexer
+M	skyeye-collector/skyeye-collector-indexer/build.gradle
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/application.properties
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/banner.txt
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/logback.xml
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/properties/collector-indexer.properties
+M	skyeye-collector/src/main/resources/banner.txt
+
+cc348ab;re arch log indexer collector
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/dubbo-service/performance-test/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-collector/settings.gradle
+A	skyeye-collector/skyeye-collector-core/build.gradle
+A	skyeye-collector/skyeye-collector-core/settings.gradle
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/callback/KafkaOffsetCommitCallback.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/configuration/es/EsConfiguration.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/configuration/es/EsProperties.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/configuration/kafka/KafkaConfiguration.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/configuration/kafka/KafkaProperties.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/hook/ShutdownHookRunner.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/task/Task.java
+A	skyeye-collector/skyeye-collector-indexer/build.gradle
+A	skyeye-collector/skyeye-collector-indexer/settings.gradle
+R080	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForApp.java	skyeye-collector/skyeye-collector-indexer/src/main/java/com/jthink/skyeye/collector/indexer/balancer/HandleRebalance.java
+A	skyeye-collector/skyeye-collector-indexer/src/main/java/com/jthink/skyeye/collector/indexer/launcher/Launcher.java
+R085	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/IndexerTask.java	skyeye-collector/skyeye-collector-indexer/src/main/java/com/jthink/skyeye/collector/indexer/task/IndexerTask.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/launcher/Launcher.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/TaskExecutor.java
+M	skyeye-monitor/build.gradle
+M	skyeye-statistics/build.gradle
+
+b14b1cd;modify the scope
+M	skyeye-statistics/build.gradle
+
+9d344aa;change statistics use gradle
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-monitor/build.gradle
+A	skyeye-statistics/build.gradle
+A	skyeye-statistics/settings.gradle
+M	skyeye-web/build.gradle
+
+c92ac96;re arch logbck kafka appender
+M	skyeye-client/settings.gradle
+A	skyeye-client/skyeye-client-log4j2/build.gradle
+A	skyeye-client/skyeye-client-log4j2/settings.gradle
+D	skyeye-client/skyeye-client-log4j2/todo.md
+A	skyeye-client/skyeye-client-logback/build.gradle
+A	skyeye-client/skyeye-client-logback/settings.gradle
+A	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+A	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/builder/AppHostKeyBuilder.java
+A	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/builder/KeyBuilder.java
+A	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/encoder/KafkaLayoutEncoder.java
+D	skyeye-client/skyeye-client-logback/todo.md
+M	skyeye-collector/build.gradle
+M	skyeye-trace/build.gradle
+M	skyeye-web/build.gradle
+
+9560bfd;re arch log4j
+M	skyeye-client/settings.gradle
+A	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/kafka/partitioner/KeyModPartitioner.java
+A	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/producer/LazySingletonProducer.java
+M	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/register/ZkRegister.java
+A	skyeye-client/skyeye-client-log4j/build.gradle
+A	skyeye-client/skyeye-client-log4j/settings.gradle
+A	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+D	skyeye-client/skyeye-client-log4j/todo.md
+
+ec42947;完成skyeye-client-core核心代码
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/RpcType.java
+M	skyeye-client/settings.gradle
+A	skyeye-client/skyeye-client-core/build.gradle
+A	skyeye-client/skyeye-client-core/settings.gradle
+R097	skyeye-client/src/main/java/com/jthink/skyeye/client/constant/KafkaConfig.java	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/constant/KafkaConfig.java
+R092	skyeye-client/src/main/java/com/jthink/skyeye/client/constant/NodeMode.java	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/constant/NodeMode.java
+A	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/register/ZkRegister.java
+R095	skyeye-client/src/main/java/com/jthink/skyeye/client/util/SysUtil.java	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/util/SysUtil.java
+R097	skyeye-client/src/test/java/com/jthink/skyeye/client/kafka/logback/test/KafkaProducerDemo.java	skyeye-client/skyeye-client-core/src/test/java/com/jthink/skyeye/client/core/kafka/logback/test/KafkaProducerDemo.java
+R092	skyeye-client/src/test/java/com/jthink/skyeye/client/kafka/partition/test/PartitionTest.java	skyeye-client/skyeye-client-core/src/test/java/com/jthink/skyeye/client/core/kafka/partition/test/PartitionTest.java
+R098	skyeye-client/src/test/java/com/jthink/skyeye/client/zk/test/ZkTest.java	skyeye-client/skyeye-client-core/src/test/java/com/jthink/skyeye/client/core/zk/test/ZkTest.java
+D	skyeye-client/skyeye-client-core/todo.md
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/LazySingletonProducer.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/log4j/KafkaAppender.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/logback/KafkaAppender.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/logback/encoder/KafkaLayoutEncoder.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/partitioner/AppHostKeyBuilder.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/partitioner/KeyBuilder.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/partitioner/KeyModPartitioner.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/register/ZkRegister.java
+
+8c529df;upgrade
+M	.gitignore
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-trace/src/test/java/com/jthink/skyeye/trace/test/id/UniqueIdGenTest.java
+
+7bfcc44;modify the launcher class
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+
+61210f7;upgrade spring boot and some plugin version to latest
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-client/build.gradle
+M	skyeye-client/settings.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-data/settings.gradle
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+M	skyeye-data/skyeye-data-hbase/build.gradle
+M	skyeye-data/skyeye-data-jpa/build.gradle
+M	skyeye-data/skyeye-data-rabbitmq/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-web/build.gradle
+
+472540c;修改client架构，准备支持log4j2
+A	skyeye-client/skyeye-client-core/todo.md
+A	skyeye-client/skyeye-client-log4j/todo.md
+A	skyeye-client/skyeye-client-log4j2/todo.md
+A	skyeye-client/skyeye-client-logback/todo.md
+
+aa5eaad;修改client架构，准备支持log4j2
+M	.gitignore
+
+c4e2583;update jdk from 1.7 to 1.8
+M	skyeye-alarm/build.gradle
+M	skyeye-base/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-client/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/configuration/JpaConfiguration.java
+M	skyeye-monitor/build.gradle
+M	skyeye-statistics/pom.xml
+D	skyeye-statistics/src/main/java/org/springframework/context/annotation/PropertySource.java
+M	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/configuration/SparkConfiguration.scala
+M	skyeye-trace/build.gradle
+M	skyeye-web/build.gradle
+
+f16ac3d;upgrade the jdk from 1.7 to 1.8
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-data/build.gradle
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+M	skyeye-data/skyeye-data-hbase/build.gradle
+M	skyeye-data/skyeye-data-http/build.gradle
+M	skyeye-data/skyeye-data-jpa/build.gradle
+M	skyeye-data/skyeye-data-rabbitmq/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-web/build.gradle
+
+433a16c;upgrade spring-boot version from 1.3.6 to 1.5.4
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+M	skyeye-data/skyeye-data-hbase/build.gradle
+M	skyeye-data/skyeye-data-jpa/build.gradle
+M	skyeye-data/skyeye-data-rabbitmq/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-web/build.gradle
+
+81af867;upgrade the version from 0.0.1 to 1.0.0
+M	skyeye-alarm/build.gradle
+M	skyeye-base/build.gradle
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-client/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-data/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-trace/build.gradle
+M	skyeye-web/build.gradle
+
+aeb304d;add file
+A	skyeye-collector/skyeye-collector-core/src/main/resources/shell/create-topic.sh
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/shell/create-index.py
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/shell/install.sh
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/shell/start.sh
+A	skyeye-collector/skyeye-collector-metrics/src/main/resources/shell/create-index.py
+A	skyeye-collector/skyeye-collector-metrics/src/main/resources/shell/install.sh
+A	skyeye-collector/skyeye-collector-metrics/src/main/resources/shell/start.sh
+A	skyeye-collector/skyeye-collector-trace/src/main/resources/shell/hbase
+
+68a5962;update the readme
+M	README.md
+M	skyeye-client/README.md
+R100	skyeye-collector/skyeye-collector-metrics/src/main/resources/config/collector-metrics.properties	skyeye-collector/skyeye-collector-metrics/src/main/resources/properties/collector-metrics.properties
+R100	skyeye-collector/skyeye-collector-trace/src/main/resources/config/collector-trace.properties	skyeye-collector/skyeye-collector-trace/src/main/resources/properties/collector-trace.properties
+
+10d50c9;test trace module
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/performance-test/build.gradle
+
+a60e3fe;update gradle
+M	skyeye-benchmark/log-generater/build.gradle
+
+11b8d12;fix bug
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-benchmark/log-generater/src/main/java/com/jthink/skyeye/benchmark/log/generater/service/GenerateLogService.java
+M	skyeye-benchmark/log-generater/src/main/resources/logback.xml
+M	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+M	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+M	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/configuration/kafka/KafkaConfiguration.java
+M	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/launcher/Launcher.java
+M	skyeye-collector/skyeye-collector-metrics/src/main/resources/application.properties
+M	skyeye-collector/skyeye-collector-metrics/src/main/resources/config/collector-metrics.properties
+M	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/launcher/Launcher.java
+M	skyeye-collector/skyeye-collector-trace/src/main/resources/application.properties
+M	skyeye-data/skyeye-data-jpa/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-monitor/src/main/resources/application.properties
+M	skyeye-statistics/build.gradle
+M	skyeye-web/build.gradle
+M	skyeye-web/src/main/resources/application.properties
+M	skyeye-web/src/main/resources/properties/web.properties
+
+33c89be;update constants
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/RpcType.java
+
+aa4e8aa;re arch metrics data collector
+M	skyeye-collector/settings.gradle
+R099	skyeye-collector/src/test/java/com/jthink/skyeye/collector/test/KafkaConsumerTest.java	skyeye-collector/skyeye-collector-core/src/test/java/com/jthink/skyeye/collector/core/test/KafkaConsumerTest.java
+A	skyeye-collector/skyeye-collector-metrics/build.gradle
+A	skyeye-collector/skyeye-collector-metrics/settings.gradle
+R067	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForEvent.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/balancer/HandleRebalance.java
+R083	skyeye-collector/src/main/java/com/jthink/skyeye/collector/service/CacheService.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/cache/CacheService.java
+R094	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/zookeeper/ZookeeperConfiguration.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/configuration/zookeeper/ZookeeperConfiguration.java
+A	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/launcher/Launcher.java
+R092	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/CollectTask.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/MetricsTask.java
+R098	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/ExceptionProcessor.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/ExceptionProcessor.java
+R095	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/Indexer.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/Indexer.java
+R095	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/Job.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/Job.java
+A	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/JobConfiguration.java
+R097	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/NameCollector.java	skyeye-collector/skyeye-collector-metrics/src/main/java/com/jthink/skyeye/collector/metrics/task/job/NameCollector.java
+R075	skyeye-collector/src/main/resources/application.properties	skyeye-collector/skyeye-collector-metrics/src/main/resources/application.properties
+A	skyeye-collector/skyeye-collector-metrics/src/main/resources/banner.txt
+R061	skyeye-collector/src/main/resources/properties/collector.properties	skyeye-collector/skyeye-collector-metrics/src/main/resources/config/collector-metrics.properties
+R097	skyeye-collector/src/main/resources/logback.xml	skyeye-collector/skyeye-collector-metrics/src/main/resources/logback.xml
+M	skyeye-collector/skyeye-collector-trace/build.gradle
+D	skyeye-collector/src/main/java/com/google/common/base/Stopwatch.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/Task.java
+D	skyeye-collector/src/main/resources/banner.txt
+D	skyeye-collector/src/main/resources/shell/es/app-log/create-index.py
+D	skyeye-collector/src/main/resources/shell/es/app-log/start.sh
+D	skyeye-collector/src/main/resources/shell/es/event-log/create-index.py
+D	skyeye-collector/src/main/resources/shell/es/event-log/start.sh
+D	skyeye-collector/src/main/resources/shell/es/install.sh
+D	skyeye-collector/src/main/resources/shell/hbase/hbase
+D	skyeye-collector/src/main/resources/shell/kafka/create-topic.sh
+
+a304022;re arch rpc trace data collector
+M	skyeye-collector/settings.gradle
+M	skyeye-collector/skyeye-collector-backup/build.gradle
+M	skyeye-collector/skyeye-collector-backup/src/main/resources/properties/collector-backup.properties
+A	skyeye-collector/skyeye-collector-trace/build.gradle
+A	skyeye-collector/skyeye-collector-trace/settings.gradle
+R066	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForRpcTrace.java	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/balancer/HandleRebalance.java
+A	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/cache/CacheService.java
+A	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/launcher/Launcher.java
+R097	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/HbaseStore.java	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/store/HbaseStore.java
+R095	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/Store.java	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/store/Store.java
+R092	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/RpcTraceTask.java	skyeye-collector/skyeye-collector-trace/src/main/java/com/jthink/skyeye/collector/trace/task/RpcTraceTask.java
+A	skyeye-collector/skyeye-collector-trace/src/main/resources/application.properties
+A	skyeye-collector/skyeye-collector-trace/src/main/resources/banner.txt
+A	skyeye-collector/skyeye-collector-trace/src/main/resources/config/collector-trace.properties
+A	skyeye-collector/skyeye-collector-trace/src/main/resources/logback.xml
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/UploadTask.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/util/FileUtil.java
+M	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/boot/HbaseAutoConfiguration.java
+M	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/boot/HbaseProperties.java
+
+7419259;add gitignore
+A	skyeye-client/skyeye-client-core/.gitignore
+A	skyeye-client/skyeye-client-log4j/.gitignore
+A	skyeye-client/skyeye-client-log4j2/.gitignore
+A	skyeye-client/skyeye-client-logback/.gitignore
+A	skyeye-collector/skyeye-collector-backup/.gitignore
+A	skyeye-collector/skyeye-collector-core/.gitignore
+A	skyeye-collector/skyeye-collector-indexer/.gitignore
+A	skyeye-collector/skyeye-collector-metrics/.gitignore
+A	skyeye-collector/skyeye-collector-trace/.gitignore
+
+05d62b5;add gitignore
+M	skyeye-collector/build.gradle
+
+3735e09;re arch log backup collector
+M	skyeye-collector/settings.gradle
+A	skyeye-collector/skyeye-collector-backup/build.gradle
+A	skyeye-collector/skyeye-collector-backup/settings.gradle
+R067	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForBackup.java	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/balancer/HandleRebalance.java
+R096	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/hadoop/HadoopConfiguration.java	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/configuration/hadoop/HadoopConfiguration.java
+R079	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/hadoop/HadoopProperties.java	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/configuration/hadoop/HadoopProperties.java
+A	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/launcher/Launcher.java
+R084	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/BackupTask.java	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/task/BackupTask.java
+A	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/task/UploadTask.java
+A	skyeye-collector/skyeye-collector-backup/src/main/java/com/jthink/skyeye/collector/backup/util/FileUtil.java
+A	skyeye-collector/skyeye-collector-backup/src/main/resources/application.properties
+A	skyeye-collector/skyeye-collector-backup/src/main/resources/banner.txt
+A	skyeye-collector/skyeye-collector-backup/src/main/resources/logback.xml
+A	skyeye-collector/skyeye-collector-backup/src/main/resources/properties/collector-backup.properties
+M	skyeye-collector/skyeye-collector-indexer/src/main/java/com/jthink/skyeye/collector/indexer/balancer/HandleRebalance.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/callback/KafkaOffsetCommitCallback.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/es/EsConfiguration.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/es/EsProperties.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/kafka/KafkaConfiguration.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/kafka/KafkaProperties.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/launcher/Launcher.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForRpcTrace.java
+M	skyeye-web/build.gradle
+
+0547683;modify the log file name
+M	skyeye-web/src/main/resources/logback.xml
+
+0e074c1;update properties file in collecttor indexer
+M	skyeye-collector/skyeye-collector-indexer/build.gradle
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/application.properties
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/banner.txt
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/logback.xml
+A	skyeye-collector/skyeye-collector-indexer/src/main/resources/properties/collector-indexer.properties
+M	skyeye-collector/src/main/resources/banner.txt
+M	skyeye-web/src/main/resources/logback.xml
+
+6c413b2;re arch log indexer collector
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/dubbo-service/performance-test/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-collector/settings.gradle
+A	skyeye-collector/skyeye-collector-core/build.gradle
+A	skyeye-collector/skyeye-collector-core/settings.gradle
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/callback/KafkaOffsetCommitCallback.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/configuration/es/EsConfiguration.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/configuration/es/EsProperties.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/configuration/kafka/KafkaConfiguration.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/configuration/kafka/KafkaProperties.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/hook/ShutdownHookRunner.java
+A	skyeye-collector/skyeye-collector-core/src/main/java/com/jthink/skyeye/collector/core/task/Task.java
+A	skyeye-collector/skyeye-collector-indexer/build.gradle
+A	skyeye-collector/skyeye-collector-indexer/settings.gradle
+R080	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForApp.java	skyeye-collector/skyeye-collector-indexer/src/main/java/com/jthink/skyeye/collector/indexer/balancer/HandleRebalance.java
+A	skyeye-collector/skyeye-collector-indexer/src/main/java/com/jthink/skyeye/collector/indexer/launcher/Launcher.java
+R085	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/IndexerTask.java	skyeye-collector/skyeye-collector-indexer/src/main/java/com/jthink/skyeye/collector/indexer/task/IndexerTask.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/launcher/Launcher.java
+D	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/TaskExecutor.java
+M	skyeye-monitor/build.gradle
+M	skyeye-statistics/build.gradle
+
+1d7e500;modify the scope
+M	skyeye-statistics/build.gradle
+
+e4e6e50;change statistics use gradle
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-monitor/build.gradle
+A	skyeye-statistics/build.gradle
+A	skyeye-statistics/settings.gradle
+M	skyeye-web/build.gradle
+
+c242506;re arch logbck kafka appender
+M	skyeye-client/settings.gradle
+A	skyeye-client/skyeye-client-log4j2/build.gradle
+A	skyeye-client/skyeye-client-log4j2/settings.gradle
+D	skyeye-client/skyeye-client-log4j2/todo.md
+A	skyeye-client/skyeye-client-logback/build.gradle
+A	skyeye-client/skyeye-client-logback/settings.gradle
+A	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/appender/KafkaAppender.java
+A	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/builder/AppHostKeyBuilder.java
+A	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/builder/KeyBuilder.java
+A	skyeye-client/skyeye-client-logback/src/main/java/com/jthink/skyeye/client/logback/encoder/KafkaLayoutEncoder.java
+D	skyeye-client/skyeye-client-logback/todo.md
+M	skyeye-collector/build.gradle
+M	skyeye-trace/build.gradle
+M	skyeye-web/build.gradle
+
+28db330;re arch log4j
+M	skyeye-client/settings.gradle
+A	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/kafka/partitioner/KeyModPartitioner.java
+A	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/producer/LazySingletonProducer.java
+M	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/register/ZkRegister.java
+A	skyeye-client/skyeye-client-log4j/build.gradle
+A	skyeye-client/skyeye-client-log4j/settings.gradle
+A	skyeye-client/skyeye-client-log4j/src/main/java/com/jthink/skyeye/client/log4j/appender/KafkaAppender.java
+D	skyeye-client/skyeye-client-log4j/todo.md
+
+4ed87a7;完成skyeye-client-core核心代码
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/RpcType.java
+M	skyeye-client/settings.gradle
+A	skyeye-client/skyeye-client-core/build.gradle
+A	skyeye-client/skyeye-client-core/settings.gradle
+R097	skyeye-client/src/main/java/com/jthink/skyeye/client/constant/KafkaConfig.java	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/constant/KafkaConfig.java
+R092	skyeye-client/src/main/java/com/jthink/skyeye/client/constant/NodeMode.java	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/constant/NodeMode.java
+A	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/register/ZkRegister.java
+R095	skyeye-client/src/main/java/com/jthink/skyeye/client/util/SysUtil.java	skyeye-client/skyeye-client-core/src/main/java/com/jthink/skyeye/client/core/util/SysUtil.java
+R097	skyeye-client/src/test/java/com/jthink/skyeye/client/kafka/logback/test/KafkaProducerDemo.java	skyeye-client/skyeye-client-core/src/test/java/com/jthink/skyeye/client/core/kafka/logback/test/KafkaProducerDemo.java
+R092	skyeye-client/src/test/java/com/jthink/skyeye/client/kafka/partition/test/PartitionTest.java	skyeye-client/skyeye-client-core/src/test/java/com/jthink/skyeye/client/core/kafka/partition/test/PartitionTest.java
+R098	skyeye-client/src/test/java/com/jthink/skyeye/client/zk/test/ZkTest.java	skyeye-client/skyeye-client-core/src/test/java/com/jthink/skyeye/client/core/zk/test/ZkTest.java
+D	skyeye-client/skyeye-client-core/todo.md
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/LazySingletonProducer.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/log4j/KafkaAppender.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/logback/KafkaAppender.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/logback/encoder/KafkaLayoutEncoder.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/partitioner/AppHostKeyBuilder.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/partitioner/KeyBuilder.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/partitioner/KeyModPartitioner.java
+D	skyeye-client/src/main/java/com/jthink/skyeye/client/register/ZkRegister.java
+
+531fb6d;upgrade
+M	.gitignore
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-trace/src/test/java/com/jthink/skyeye/trace/test/id/UniqueIdGenTest.java
+
+f665b0d;modify the launcher class
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+
+5023f0e;upgrade spring boot and some plugin version to latest
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-client/build.gradle
+M	skyeye-client/settings.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-data/settings.gradle
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+M	skyeye-data/skyeye-data-hbase/build.gradle
+M	skyeye-data/skyeye-data-jpa/build.gradle
+M	skyeye-data/skyeye-data-rabbitmq/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-web/build.gradle
+
+7cd1d4b;修改client架构，准备支持log4j2
+A	skyeye-client/skyeye-client-core/todo.md
+A	skyeye-client/skyeye-client-log4j/todo.md
+A	skyeye-client/skyeye-client-log4j2/todo.md
+A	skyeye-client/skyeye-client-logback/todo.md
+
+38aa07d;修改client架构，准备支持log4j2
+M	.gitignore
+
+1cf63bc;update jdk from 1.7 to 1.8
+M	skyeye-alarm/build.gradle
+M	skyeye-base/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-client/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/configuration/JpaConfiguration.java
+M	skyeye-monitor/build.gradle
+M	skyeye-statistics/pom.xml
+D	skyeye-statistics/src/main/java/org/springframework/context/annotation/PropertySource.java
+M	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/configuration/SparkConfiguration.scala
+M	skyeye-trace/build.gradle
+M	skyeye-web/build.gradle
+
+aedb2a0;upgrade the jdk from 1.7 to 1.8
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-data/build.gradle
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+M	skyeye-data/skyeye-data-hbase/build.gradle
+M	skyeye-data/skyeye-data-http/build.gradle
+M	skyeye-data/skyeye-data-jpa/build.gradle
+M	skyeye-data/skyeye-data-rabbitmq/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-web/build.gradle
+
+202ae58;upgrade spring-boot version from 1.3.6 to 1.5.4
+M	skyeye-alarm/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-data/skyeye-data-dubbox/build.gradle
+M	skyeye-data/skyeye-data-hbase/build.gradle
+M	skyeye-data/skyeye-data-jpa/build.gradle
+M	skyeye-data/skyeye-data-rabbitmq/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-web/build.gradle
+
+4941ef3;upgrade the version from 0.0.1 to 1.0.0
+M	skyeye-alarm/build.gradle
+M	skyeye-base/build.gradle
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/log-generater/build.gradle
+M	skyeye-client/build.gradle
+M	skyeye-collector/build.gradle
+M	skyeye-data/build.gradle
+M	skyeye-monitor/build.gradle
+M	skyeye-trace/build.gradle
+M	skyeye-web/build.gradle
+
+490ef6b;update the cloudera repo
+M	skyeye-collector/build.gradle
+
+d71986c;add menue
+M	skyeye-web/src/main/resources/static/scripts/services/platformService.js
+
+c39d53e;Merge pull request #2 from Aiurvie/dev
+96fd5c7;RCP Trace 图形化页面。
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/repository/ServiceInfoRepository.java
+M	skyeye-web/build.gradle
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/dto/TraceAnnotationDto.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/dto/TraceDto.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/dto/TraceStatisticsDto.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/dto/TraceTimeConsumeDto.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/dto/mapper/TraceStatisticsMapper.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/dto/mapper/TraceTimeConsumeRowMapper.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/service/TraceService.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/util/RadixUtil.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/web/controller/TraceController.java
+M	skyeye-web/src/main/resources/application.properties
+M	skyeye-web/src/main/resources/properties/web.properties
+M	skyeye-web/src/main/resources/static/index.html
+M	skyeye-web/src/main/resources/static/scripts/app.js
+M	skyeye-web/src/main/resources/static/scripts/common/chartUtil.js
+A	skyeye-web/src/main/resources/static/scripts/common/rpcchart.js
+M	skyeye-web/src/main/resources/static/scripts/common/util.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/rpctrace/chainController.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/rpctrace/traceController.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jedate/jquery-1.7.2.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jedate/jquery.jedate.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jedate/jquery.jedate.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jedate/skin/jedate.css
+M	skyeye-web/src/main/resources/static/scripts/main.js
+A	skyeye-web/src/main/resources/static/styles/libs/jedate/jedate.css
+A	skyeye-web/src/main/resources/static/styles/rpctrace/chain.css
+A	skyeye-web/src/main/resources/static/styles/rpctrace/trace.css
+A	skyeye-web/src/main/resources/static/views/rpctrace/chain.html
+A	skyeye-web/src/main/resources/static/views/rpctrace/trace.html
+
+a661533;update readme
+M	skyeye-client/README.md
+
+8e0106d;update readme
+M	README.md
+
+c0652c3;更新部署步骤
+M	README.md
+
+06416e7;更新部署步骤
+M	README.md
+
+4800e17;更新部署步骤
+M	README.md
+
+7be8f10;更新部署步骤
+M	README.md
+
+70a6584;更新部署步骤
+M	README.md
+
+ff2f0ed;更新部署步骤
+M	README.md
+
+45d3541;更新部署步骤
+M	README.md
+
+94f9d10;update licence
+A	LICENSE
+
+7148f60;Merge branch 'dev'
+dc94176;change grale
+M	skyeye-benchmark/dubbo-service/performance-test/build.gradle
+
+1f65fc3;修改gradle文件
+M	skyeye-benchmark/dubbo-service/performance-test/build.gradle
+
+955053f;完善统计模块的骨架代码
+M	skyeye-statistics/pom.xml
+M	skyeye-statistics/src/main/java/com/jthink/skyeye/statistics/properties/TaskProperties.java
+R092	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/key/statistic/TimeApiKey.scala	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/key/rpc/TimeApiKey.scala
+R093	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/key/statistic/TimeApiStatusKey.scala	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/key/rpc/TimeApiStatusKey.scala
+R092	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/value/statistic/StatusCntValue.scala	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/value/rpc/StatusCntValue.scala
+R093	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/value/statistic/SuccessFailedCntValue.scala	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/value/rpc/SuccessFailedCntValue.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/task/RpcStatisticTask.scala
+
+2739a52;完善性能测试代码
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/a/configuration/dubbo/DubboConfiguration.java
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/a/controller/TraceController.java
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/a/service/TraceService.java
+M	skyeye-benchmark/dubbo-service/performance-test/src/main/java/com/jthink/skyeye/benchmark/performance/test/launcher/Launcher.java
+
+3bca402;完善性能测试代码
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/e/configuration/dubbo/DubboConfiguration.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/e/launcher/Launcher.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/e/service/ServiceEImpl.java
+
+9275cd3;修复hbase annotation表插入bug；完成性能测试代码
+D	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/e/configuration/dubbo/DubboConfiguration.java
+D	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/e/launcher/Launcher.java
+D	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/e/service/ServiceEImpl.java
+A	skyeye-benchmark/dubbo-service/performance-test/.gitignore
+A	skyeye-benchmark/dubbo-service/performance-test/build.gradle
+A	skyeye-benchmark/dubbo-service/performance-test/settings.gradle
+A	skyeye-benchmark/dubbo-service/performance-test/src/main/java/com/jthink/skyeye/benchmark/performance/test/launcher/Launcher.java
+A	skyeye-benchmark/dubbo-service/performance-test/src/main/java/com/jthink/skyeye/benchmark/performance/test/task/RpcCaller.java
+M	skyeye-benchmark/dubbo-service/settings.gradle
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/HbaseStore.java
+
+eb757ec;修复hbase bug
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/HbaseStore.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/RpcTraceTask.java
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/domain/ServiceInfo.java
+M	skyeye-data/skyeye-data-jpa/src/main/resources/sql/init.sql
+
+c6a86ca;修复hbase和es同时使用guava StopWatch的bug
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/EventType.java
+M	skyeye-benchmark/dubbo-service/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-b/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-c/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-d/src/main/resources/logback.xml
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+M	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/resources/logback.xml
+A	skyeye-collector/src/main/java/com/google/common/base/Stopwatch.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/service/CacheService.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/RpcTraceTask.java
+M	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/api/HbaseTemplate.java
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/domain/ServiceInfo.java
+M	skyeye-data/skyeye-data-jpa/src/main/resources/sql/init.sql
+
+08a07f6;修复id bug
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/domain/ServiceInfo.java
+
+f873458;hbase创建脚本
+A	skyeye-collector/src/main/resources/shell/hbase/hbase
+
+a1c6aa4;fix bug
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/HbaseStore.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/Store.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/service/CacheService.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/RpcTraceTask.java
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/domain/ServiceInfo.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/pk/ServiceInfoPK.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/repository/ServiceInfoRepository.java
+M	skyeye-data/skyeye-data-jpa/src/main/resources/sql/init.sql
+
+82b99d5;处理时钟同步问题
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/trace/Tracer.java
+
+8ee6f84;修改生成器代码
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/UniqueIdGen.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/trace/Tracer.java
+
+a0c8cfb;修改方法的作用域
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/UniqueIdGen.java
+
+b353ea5;完成分布式唯一id生成代码
+R097	skyeye-monitor/src/test/java/com/jthink/skyeye/monitor/test/curator/CuratorTest.java	skyeye-monitor/src/test/java/com/jthink/skyeye/monitor/test/CuratorTest.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/IncrementIdGen.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/UniqueIdGen.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/registry/ZookeeperRegistry.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/trace/Tracer.java
+A	skyeye-trace/src/test/java/com/jthink/skyeye/trace/test/id/UniqueIdGenTest.java
+
+bbcb659;完善tracer
+M	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/log4j/KafkaAppender.java
+M	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/logback/KafkaAppender.java
+M	skyeye-trace/build.gradle
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/IncrementIdGen.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/trace/Tracer.java
+
+df881b2;完善rpc跟踪的注册中心代码
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/RpcType.java
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/dapper/EndPoint.java
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/dapper/ExceptionType.java
+M	skyeye-benchmark/log-generater/src/main/java/com/jthink/skyeye/benchmark/log/generater/launcher/Launcher.java
+M	skyeye-benchmark/log-generater/src/main/resources/logback.xml
+M	skyeye-client/build.gradle
+M	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/log4j/KafkaAppender.java
+M	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/logback/KafkaAppender.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/HbaseStore.java
+M	skyeye-data/skyeye-data-dubbox/README.md
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/collector/KafkaCollector.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/dto/RegisterDto.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/UniqueIdGen.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/registry/ZookeeperRegistry.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/trace/Tracer.java
+
+11e1f80;完成注册中心的id自增实现，完成service的编号实现
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-monitor/src/main/resources/shell/zk
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/IdGen.java
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/IncrementIdGen.java
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/generater/UniqueIdGen.java
+M	skyeye-trace/src/main/java/com/jthink/skyeye/trace/registry/ZookeeperRegistry.java
+
+4197e97;设计注册中心
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/dto/RegisterDto.java
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/registry/Registry.java
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/registry/ZookeeperRegistry.java
+
+86e3bd4;修改项目依赖
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-collector/build.gradle
+M	skyeye-trace/build.gradle
+
+e713abc;删除不用文件
+D	skyeye-benchmark/dubbo-service/dubbo-service-a/pom.xml
+D	skyeye-benchmark/dubbo-service/dubbo-service-tracer/.gitignore
+D	skyeye-benchmark/dubbo-service/dubbo-service-tracer/src/main/java/com/unionpaysmart/sniper/tracer/application/Application.java
+D	skyeye-benchmark/dubbo-service/dubbo-service-tracer/src/main/java/com/unionpaysmart/sniper/tracer/controller/IdController.java
+D	skyeye-benchmark/dubbo-service/dubbo-service-tracer/src/main/resources/application.properties
+D	skyeye-benchmark/dubbo-service/dubbo-service-tracer/src/main/resources/logback.xml
+
+01abda6;add dubbo rpc trace test code
+A	skyeye-benchmark/dubbo-service/build.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-a/.gitignore
+A	skyeye-benchmark/dubbo-service/dubbo-service-a/build.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-a/pom.xml
+A	skyeye-benchmark/dubbo-service/dubbo-service-a/settings.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/a/application/Application.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/a/configuration/dubbo/DubboConfiguration.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/a/controller/TraceController.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/a/service/TraceService.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/resources/application.properties
+A	skyeye-benchmark/dubbo-service/dubbo-service-a/src/main/resources/logback.xml
+A	skyeye-benchmark/dubbo-service/dubbo-service-b/.gitignore
+A	skyeye-benchmark/dubbo-service/dubbo-service-b/build.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-b/settings.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-b/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/b/configuration/dubbo/DubboConfiguration.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-b/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/b/launcher/Launcher.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-b/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/b/service/ServiceBImpl.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-b/src/main/resources/application.properties
+A	skyeye-benchmark/dubbo-service/dubbo-service-b/src/main/resources/logback.xml
+A	skyeye-benchmark/dubbo-service/dubbo-service-c/.gitignore
+A	skyeye-benchmark/dubbo-service/dubbo-service-c/build.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-c/settings.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-c/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/c/configuration/dubbo/DubboConfiguration.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-c/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/c/launcher/Launcher.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-c/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/c/service/ServiceCImpl.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-c/src/main/resources/application.properties
+A	skyeye-benchmark/dubbo-service/dubbo-service-c/src/main/resources/logback.xml
+A	skyeye-benchmark/dubbo-service/dubbo-service-client/.gitignore
+A	skyeye-benchmark/dubbo-service/dubbo-service-client/build.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-client/settings.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-client/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/client/ServiceA.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-client/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/client/ServiceB.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-client/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/client/ServiceC.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-client/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/client/ServiceD.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-client/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/client/ServiceE.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-d/.gitignore
+A	skyeye-benchmark/dubbo-service/dubbo-service-d/build.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-d/settings.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-d/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/d/configuration/dubbo/DubboConfiguration.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-d/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/d/launcher/Launcher.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-d/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/d/service/ServiceDImpl.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-d/src/main/resources/application.properties
+A	skyeye-benchmark/dubbo-service/dubbo-service-d/src/main/resources/logback.xml
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/.gitignore
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/build.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/settings.gradle
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/e/configuration/dubbo/DubboConfiguration.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/e/launcher/Launcher.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/java/com/jthink/skyeye/benchmark/dubbo/service/e/service/ServiceEImpl.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/resources/application.properties
+A	skyeye-benchmark/dubbo-service/dubbo-service-e/src/main/resources/logback.xml
+A	skyeye-benchmark/dubbo-service/dubbo-service-tracer/.gitignore
+A	skyeye-benchmark/dubbo-service/dubbo-service-tracer/src/main/java/com/unionpaysmart/sniper/tracer/application/Application.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-tracer/src/main/java/com/unionpaysmart/sniper/tracer/controller/IdController.java
+A	skyeye-benchmark/dubbo-service/dubbo-service-tracer/src/main/resources/application.properties
+A	skyeye-benchmark/dubbo-service/dubbo-service-tracer/src/main/resources/logback.xml
+A	skyeye-benchmark/dubbo-service/settings.gradle
+
+c911769;完成日志生成器测试项目
+M	skyeye-benchmark/README.md
+A	skyeye-benchmark/log-generater/.gitignore
+A	skyeye-benchmark/log-generater/README.md
+A	skyeye-benchmark/log-generater/build.gradle
+A	skyeye-benchmark/log-generater/settings.gradle
+A	skyeye-benchmark/log-generater/src/main/java/com/jthink/skyeye/benchmark/log/generater/launcher/Launcher.java
+A	skyeye-benchmark/log-generater/src/main/java/com/jthink/skyeye/benchmark/log/generater/service/GenerateLogService.java
+A	skyeye-benchmark/log-generater/src/main/java/com/jthink/skyeye/benchmark/log/generater/task/GenerateLog.java
+A	skyeye-benchmark/log-generater/src/main/resources/application.properties
+A	skyeye-benchmark/log-generater/src/main/resources/logback.xml
+A	skyeye-benchmark/log-generater/src/main/resources/properties/log-generater.properties
+
+bd8c402;add the dubbox spring boot starter
+M	skyeye-data/settings.gradle
+A	skyeye-data/skyeye-data-dubbox/.gitignore
+A	skyeye-data/skyeye-data-dubbox/README.md
+A	skyeye-data/skyeye-data-dubbox/build.gradle
+A	skyeye-data/skyeye-data-dubbox/settings.gradle
+A	skyeye-data/skyeye-data-dubbox/src/main/java/com/jthink/skyeye/data/dubbox/DubboAutoConfiguration.java
+A	skyeye-data/skyeye-data-dubbox/src/main/java/com/jthink/skyeye/data/dubbox/DubboProperties.java
+A	skyeye-data/skyeye-data-dubbox/src/main/java/com/jthink/skyeye/data/dubbox/DubboService.java
+A	skyeye-data/skyeye-data-dubbox/src/main/resources/META-INF/spring.factories
+M	skyeye-data/skyeye-data-hbase/README.md
+
+1cfc194;update the readme
+M	README.md
+
+d96ebce;update the readme
+M	README.md
+
+b2421f0;更新qq
+M	README.md
+
+d59421c;更新联系
+M	README.md
+
+84ae261;更新联系
+M	README.md
+
+173696c;修改联系
+M	README.md
+
+4ca8338;修改readme
+M	README.md
+
+e80e8e1;修改项目之间的依赖
+M	skyeye-alarm/build.gradle
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/configuration/mail/MailProperties.java
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/launcher/Launcher.java
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/service/MailService.java
+M	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/task/AlertTask.java
+R058	skyeye-alarm/src/test/java/com/unionpaysmart/bane/test/mail/MailTest.java	skyeye-alarm/src/test/java/com/jthink/skyeye/alarm/test/mail/MailTest.java
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/dto/LogDto.java
+M	skyeye-collector/build.gradle
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/launcher/Launcher.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForRpcTrace.java
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/TaskExecutor.java
+M	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/launcher/Launcher.java
+M	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/service/CacheService.java
+M	skyeye-statistics/README.md
+M	skyeye-web/build.gradle
+M	skyeye-web/src/main/java/com/jthink/skyeye/web/application/Application.java
+M	skyeye-web/src/main/resources/static/index.html
+
+9ef903c;完成流统计分析的骨架代码
+A	skyeye-statistics/.gitignore
+M	skyeye-statistics/README.md
+A	skyeye-statistics/pom.xml
+A	skyeye-statistics/src/main/java/com/jthink/skyeye/statistics/properties/TaskProperties.java
+A	skyeye-statistics/src/main/java/org/springframework/context/annotation/PropertySource.java
+A	skyeye-statistics/src/main/resources/application.properties
+A	skyeye-statistics/src/main/resources/banner.txt
+A	skyeye-statistics/src/main/resources/log4j.xml
+A	skyeye-statistics/src/main/resources/properties/teemo.properties
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/configuration/SparkConfiguration.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/dto/ApiStatisticDto.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/launcher/Launcher.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/key/Key.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/key/statistic/TimeApiKey.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/key/statistic/TimeApiStatusKey.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/value/Value.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/value/statistic/StatusCntValue.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/model/value/statistic/SuccessFailedCntValue.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/task/Task.scala
+A	skyeye-statistics/src/main/scala/com/jthink/skyeye/statistics/task/TestTask.scala
+
+ed93b47;提交一期二期的测试点
+A	skyeye-benchmark/doc/Test Case of SkyEye.xls
+
+14d6013;修改项目banner
+M	skyeye-alarm/src/main/resources/banner.txt
+M	skyeye-collector/src/main/resources/banner.txt
+M	skyeye-monitor/src/main/resources/banner.txt
+M	skyeye-web/src/main/resources/banner.txt
+
+b0d77a4;完善部署文档
+M	README.md
+
+b778003;rpc-trace readme修改
+M	skyeye-trace/README.md
+
+bbd0352;修改readme
+M	skyeye-collector/README.md
+
+32eaa91;修改readme
+M	skyeye-client/README.md
+
+f22e358;修改readme
+M	skyeye-client/README.md
+M	skyeye-collector/README.md
+
+ffec276;修改readme
+M	README.md
+M	skyeye-collector/README.md
+R100	column.png	skyeye-collector/column.png
+
+f8af2a9;修改签名
+M	skyeye-collector/src/main/java/com/jthink/skyeye/collector/service/CacheService.java
+M	skyeye-collector/src/main/resources/properties/collector.properties
+M	skyeye-web/src/main/resources/static/scripts/common/chartUtil.js
+
+fc7d0f3;完成ui系统
+A	skyeye-web/.gitignore
+M	skyeye-web/README.md
+A	skyeye-web/build.gradle
+A	skyeye-web/settings.gradle
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/application/Application.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/configuration/mvc/MvcConfig.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/constant/EsSqlTemplate.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/dto/FilterDto.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/dto/NoneDupeLogDto.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/dto/StatisticsDto.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/message/BaseMessage.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/message/Message.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/message/MessageCode.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/message/StatusCode.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/service/AppMonitorService.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/service/LogQueryService.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/service/StatisticsService.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/task/MonitorTask.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/util/ResponseUtil.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/web/controller/AppController.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/web/controller/LogController.java
+A	skyeye-web/src/main/java/com/jthink/skyeye/web/web/controller/StatisticsController.java
+A	skyeye-web/src/main/resources/application.properties
+A	skyeye-web/src/main/resources/banner.txt
+A	skyeye-web/src/main/resources/favicon.ico
+A	skyeye-web/src/main/resources/logback.xml
+A	skyeye-web/src/main/resources/properties/web.properties
+A	skyeye-web/src/main/resources/static/images/loading.gif
+A	skyeye-web/src/main/resources/static/index.html
+A	skyeye-web/src/main/resources/static/scripts/app.js
+A	skyeye-web/src/main/resources/static/scripts/common/chartUtil.js
+A	skyeye-web/src/main/resources/static/scripts/common/constant.js
+A	skyeye-web/src/main/resources/static/scripts/common/util.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/app/deployController.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/app/statusController.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/controllers.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/homeController.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/log/historyController.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/log/queryController.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/log/realtimeController.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/platformController.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/statistics/apiController.js
+A	skyeye-web/src/main/resources/static/scripts/controllers/statistics/thirdController.js
+A	skyeye-web/src/main/resources/static/scripts/directives/directives.js
+A	skyeye-web/src/main/resources/static/scripts/directives/reloadSlidebar.js
+A	skyeye-web/src/main/resources/static/scripts/filters/filters.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular-plugin/angular-ui-router.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular-plugin/angular-ui-router.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular-plugin/ui-bootstrap-tpls-0.13.0.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-animate.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-animate.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-animate.min.js.map
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-aria.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-aria.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-aria.min.js.map
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-cookies.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-cookies.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-cookies.min.js.map
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-csp.css
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-loader.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-loader.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-loader.min.js.map
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-messages.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-messages.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-messages.min.js.map
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-mocks.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-resource.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-resource.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-resource.min.js.map
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-route.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-route.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-route.min.js.map
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-sanitize.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-sanitize.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-sanitize.min.js.map
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-scenario.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-touch.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-touch.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular-touch.min.js.map
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/angular/angular.min.js.map
+A	skyeye-web/src/main/resources/static/scripts/libs/bootstrap-plugin/bootstrap-select.js
+A	skyeye-web/src/main/resources/static/scripts/libs/bootstrap/bootstrap.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/custom/ui.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts/echarts.common.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts/echarts.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts/esl.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts/theme/chalk.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts/theme/halloween.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts/theme/macarons.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts/theme/roma.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts/theme/shine.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts/theme/walden.js
+A	skyeye-web/src/main/resources/static/scripts/libs/echarts/zrender.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jquery-plugin/common-table.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jquery-plugin/jquery-ui.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jquery-plugin/jquery.dcjqaccordion.2.7.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jquery-plugin/jquery.nicescroll.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jquery-plugin/jquery.scrollTo.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jquery/jquery.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/jquery/jquery.min.map
+A	skyeye-web/src/main/resources/static/scripts/libs/requirejs/require.min.js
+A	skyeye-web/src/main/resources/static/scripts/libs/underscore/underscore-min.map
+A	skyeye-web/src/main/resources/static/scripts/libs/underscore/underscore.min.js
+A	skyeye-web/src/main/resources/static/scripts/main.js
+A	skyeye-web/src/main/resources/static/scripts/services/dataService.js
+A	skyeye-web/src/main/resources/static/scripts/services/platformService.js
+A	skyeye-web/src/main/resources/static/scripts/services/services.js
+A	skyeye-web/src/main/resources/static/styles/app/deploy.css
+A	skyeye-web/src/main/resources/static/styles/app/status.css
+A	skyeye-web/src/main/resources/static/styles/home.css
+A	skyeye-web/src/main/resources/static/styles/libs/bootstrap/bootstrap.css.map
+A	skyeye-web/src/main/resources/static/styles/libs/bootstrap/bootstrap.min.css
+A	skyeye-web/src/main/resources/static/styles/libs/fonts/glyphicons-halflings-regular.eot
+A	skyeye-web/src/main/resources/static/styles/libs/fonts/glyphicons-halflings-regular.svg
+A	skyeye-web/src/main/resources/static/styles/libs/fonts/glyphicons-halflings-regular.ttf
+A	skyeye-web/src/main/resources/static/styles/libs/fonts/glyphicons-halflings-regular.woff
+A	skyeye-web/src/main/resources/static/styles/libs/fonts/glyphicons-halflings-regular.woff2
+A	skyeye-web/src/main/resources/static/styles/libs/jquery-plugin/jquery-ui.css
+A	skyeye-web/src/main/resources/static/styles/log/history.css
+A	skyeye-web/src/main/resources/static/styles/log/query.css
+A	skyeye-web/src/main/resources/static/styles/log/realtime.css
+A	skyeye-web/src/main/resources/static/styles/main.css
+A	skyeye-web/src/main/resources/static/styles/statistics/api.css
+A	skyeye-web/src/main/resources/static/styles/statistics/third.css
+A	skyeye-web/src/main/resources/static/views/app/deploy.html
+A	skyeye-web/src/main/resources/static/views/app/status.html
+A	skyeye-web/src/main/resources/static/views/home.html
+A	skyeye-web/src/main/resources/static/views/log/history.html
+A	skyeye-web/src/main/resources/static/views/log/query.html
+A	skyeye-web/src/main/resources/static/views/log/realtime.html
+A	skyeye-web/src/main/resources/static/views/statistics/api.html
+A	skyeye-web/src/main/resources/static/views/statistics/third.html
+
+3a75456;完成kafka消费端
+A	skyeye-collector/.gitignore
+M	skyeye-collector/README.md
+A	skyeye-collector/build.gradle
+A	skyeye-collector/settings.gradle
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/callback/KafkaOffsetCommitCallback.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/es/EsConfiguration.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/es/EsProperties.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/hadoop/HadoopConfiguration.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/hadoop/HadoopProperties.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/kafka/KafkaConfiguration.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/kafka/KafkaProperties.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/configuration/zookeeper/ZookeeperConfiguration.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/HbaseStore.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/dapper/store/Store.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/launcher/Launcher.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForApp.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForBackup.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForEvent.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/listener/HandleRebalanceForRpcTrace.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/service/CacheService.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/BackupTask.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/CollectTask.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/IndexerTask.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/RpcTraceTask.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/Task.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/TaskExecutor.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/UploadTask.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/ExceptionProcessor.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/Indexer.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/Job.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/task/job/NameCollector.java
+A	skyeye-collector/src/main/java/com/jthink/skyeye/collector/util/FileUtil.java
+A	skyeye-collector/src/main/resources/application.properties
+A	skyeye-collector/src/main/resources/banner.txt
+A	skyeye-collector/src/main/resources/logback.xml
+A	skyeye-collector/src/main/resources/properties/collector.properties
+A	skyeye-collector/src/main/resources/shell/es/app-log/create-index.py
+A	skyeye-collector/src/main/resources/shell/es/app-log/start.sh
+A	skyeye-collector/src/main/resources/shell/es/event-log/create-index.py
+A	skyeye-collector/src/main/resources/shell/es/event-log/start.sh
+A	skyeye-collector/src/main/resources/shell/es/install.sh
+A	skyeye-collector/src/main/resources/shell/kafka/create-topic.sh
+A	skyeye-collector/src/test/java/com/jthink/skyeye/collector/test/KafkaConsumerTest.java
+M	skyeye-monitor/README.md
+M	skyeye-monitor/build.gradle
+
+6e87d3c;完成rpc trace基本jar包方法
+A	skyeye-trace/.gitignore
+M	skyeye-trace/README.md
+A	skyeye-trace/build.gradle
+A	skyeye-trace/settings.gradle
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/collector/Collector.java
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/collector/KafkaCollector.java
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/sampler/HashSampler.java
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/sampler/PercentageSampler.java
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/sampler/Sampler.java
+A	skyeye-trace/src/main/java/com/jthink/skyeye/trace/trace/Tracer.java
+
+1c6b2cf;修改名字
+R100	skyeye-bechmark/README.md	skyeye-benchmark/README.md
+
+dc1c811;完成监控模块
+A	skyeye-bechmark/README.md
+M	skyeye-data/skyeye-data-hbase/README.md
+M	skyeye-data/skyeye-data-http/src/test/java/com/jthink/skyeye/data/http/test/HttpRequestTest.java
+A	skyeye-monitor/.gitignore
+M	skyeye-monitor/README.md
+A	skyeye-monitor/build.gradle
+A	skyeye-monitor/settings.gradle
+A	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/configuration/zookeeper/ZookeeperConfiguration.java
+A	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/launcher/Launcher.java
+A	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/listener/AppChildrenChangeListener.java
+A	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/listener/ScrollChildrenChangeListener.java
+A	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/service/AppInfoService.java
+A	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/service/AppStatusMonitorService.java
+A	skyeye-monitor/src/main/java/com/jthink/skyeye/monitor/service/CacheService.java
+A	skyeye-monitor/src/main/resources/application.properties
+A	skyeye-monitor/src/main/resources/banner.txt
+A	skyeye-monitor/src/main/resources/logback.xml
+A	skyeye-monitor/src/main/resources/properties/monitor.properties
+A	skyeye-monitor/src/main/resources/shell/zk
+A	skyeye-monitor/src/test/java/com/jthink/skyeye/monitor/test/curator/CuratorTest.java
+
+f579ab3;修改注释
+M	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/dto/NameInfoDto.java
+
+793c456;修改包
+R100	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/configuration/JpaConfiguration.java	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/configuration/JpaConfiguration.java
+R100	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/AppInfo.java	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/domain/AppInfo.java
+R100	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/NameInfo.java	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/domain/NameInfo.java
+R100	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/ServiceInfo.java	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/domain/ServiceInfo.java
+R100	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/dto/AppStatusDto.java	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/dto/AppStatusDto.java
+R100	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/dto/NameInfoDto.java	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/dto/NameInfoDto.java
+R100	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/pk/AppInfoPK.java	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/pk/AppInfoPK.java
+R100	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/pk/NameInfoPK.java	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/pk/NameInfoPK.java
+R100	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/repository/AppInfoRepository.java	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/repository/AppInfoRepository.java
+R100	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/repository/NameInfoRepository.java	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/skyeye/data/jpa/repository/NameInfoRepository.java
+
+f1b7461;remove
+D	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/TraceHostInfo.java
+D	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/TraceProjectInfo.java
+D	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/TraceProjectInstanceInfo.java
+D	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/dto/TraceHostInfoDto.java
+D	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/dto/TraceProjectInfoDto.java
+D	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/dto/TraceProjectInstanceDto.java
+D	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/pk/TraceProjectInstanceInfoPK.java
+D	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/repository/TraceHostInfoRepository.java
+D	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/repository/TraceProjectInfoRepository.java
+D	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/repository/TraceProjectInstanceInfoRepository.java
+M	skyeye-data/skyeye-data-jpa/src/main/resources/sql/init.sql
+D	skyeye-data/skyeye-data-jpa/src/main/resources/sql/patch_sql_20161210.sql
+
+ae49a0e;完成data项目
+A	skyeye-data/.gitignore
+M	skyeye-data/README.md
+A	skyeye-data/build.gradle
+A	skyeye-data/settings.gradle
+A	skyeye-data/skyeye-data-hbase/.gitignore
+A	skyeye-data/skyeye-data-hbase/README.md
+A	skyeye-data/skyeye-data-hbase/build.gradle
+A	skyeye-data/skyeye-data-hbase/settings.gradle
+A	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/api/HbaseOperations.java
+A	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/api/HbaseSystemException.java
+A	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/api/HbaseTemplate.java
+A	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/api/MutatorCallback.java
+A	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/api/RowMapper.java
+A	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/api/TableCallback.java
+A	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/boot/HbaseAutoConfiguration.java
+A	skyeye-data/skyeye-data-hbase/src/main/java/com/jthink/skyeye/data/hbase/boot/HbaseProperties.java
+A	skyeye-data/skyeye-data-hbase/src/main/resources/META-INF/spring.factories
+A	skyeye-data/skyeye-data-http/.gitignore
+A	skyeye-data/skyeye-data-http/README.md
+A	skyeye-data/skyeye-data-http/build.gradle
+A	skyeye-data/skyeye-data-http/settings.gradle
+A	skyeye-data/skyeye-data-http/src/main/java/com/jthink/skyeye/data/http/HttpRequest.java
+A	skyeye-data/skyeye-data-http/src/test/java/com/jthink/skyeye/data/http/test/HttpRequestTest.java
+A	skyeye-data/skyeye-data-jpa/.gitignore
+A	skyeye-data/skyeye-data-jpa/README.md
+A	skyeye-data/skyeye-data-jpa/build.gradle
+A	skyeye-data/skyeye-data-jpa/settings.gradle
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/configuration/JpaConfiguration.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/AppInfo.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/NameInfo.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/ServiceInfo.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/TraceHostInfo.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/TraceProjectInfo.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/domain/TraceProjectInstanceInfo.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/dto/AppStatusDto.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/dto/NameInfoDto.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/dto/TraceHostInfoDto.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/dto/TraceProjectInfoDto.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/dto/TraceProjectInstanceDto.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/pk/AppInfoPK.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/pk/NameInfoPK.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/pk/TraceProjectInstanceInfoPK.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/repository/AppInfoRepository.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/repository/NameInfoRepository.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/repository/TraceHostInfoRepository.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/repository/TraceProjectInfoRepository.java
+A	skyeye-data/skyeye-data-jpa/src/main/java/com/jthink/data/jpa/repository/TraceProjectInstanceInfoRepository.java
+A	skyeye-data/skyeye-data-jpa/src/main/resources/sql/init.sql
+A	skyeye-data/skyeye-data-jpa/src/main/resources/sql/patch_sql_20161210.sql
+A	skyeye-data/skyeye-data-rabbitmq/.gitignore
+A	skyeye-data/skyeye-data-rabbitmq/README.md
+A	skyeye-data/skyeye-data-rabbitmq/build.gradle
+A	skyeye-data/skyeye-data-rabbitmq/settings.gradle
+A	skyeye-data/skyeye-data-rabbitmq/src/main/java/com/jthink/skyeye/data/rabbitmq/configuration/AmqpConfiguration.java
+A	skyeye-data/skyeye-data-rabbitmq/src/main/java/com/jthink/skyeye/data/rabbitmq/service/RabbitmqService.java
+
+bfb1c1f;完成client
+M	skyeye-base/src/test/java/com/jthink/skyeye/base/log/event/EventLogTest.java
+A	skyeye-client/build.gradle
+A	skyeye-client/settings.gradle
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/constant/KafkaConfig.java
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/constant/NodeMode.java
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/LazySingletonProducer.java
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/log4j/KafkaAppender.java
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/logback/KafkaAppender.java
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/logback/encoder/KafkaLayoutEncoder.java
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/partitioner/AppHostKeyBuilder.java
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/partitioner/KeyBuilder.java
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/kafka/partitioner/KeyModPartitioner.java
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/register/ZkRegister.java
+A	skyeye-client/src/main/java/com/jthink/skyeye/client/util/SysUtil.java
+A	skyeye-client/src/test/java/com/jthink/skyeye/client/kafka/logback/test/KafkaProducerDemo.java
+A	skyeye-client/src/test/java/com/jthink/skyeye/client/kafka/partition/test/PartitionTest.java
+A	skyeye-client/src/test/java/com/jthink/skyeye/client/zk/test/ZkTest.java
+
+f773768;完成报警系统
+A	skyeye-alarm/.gitignore
+M	skyeye-alarm/README.md
+A	skyeye-alarm/build.gradle
+A	skyeye-alarm/settings.gradle
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/configuration/mail/MailProperties.java
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/launcher/Launcher.java
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/service/MailService.java
+A	skyeye-alarm/src/main/java/com/jthink/skyeye/alarm/task/AlertTask.java
+A	skyeye-alarm/src/main/resources/application.properties
+A	skyeye-alarm/src/main/resources/banner.txt
+A	skyeye-alarm/src/main/resources/logback.xml
+A	skyeye-alarm/src/main/resources/properties/alarm.properties
+A	skyeye-alarm/src/test/java/com/unionpaysmart/bane/test/mail/MailTest.java
+M	skyeye-base/src/main/java/com/jthink/skyeye/base/dto/LogDto.java
+M	skyeye-client/README.md
+
+bdc79b0;修改测试代码package
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/Constants.java	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Constants.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/EventType.java	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/EventType.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/LogCollectionStatus.java	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/LogCollectionStatus.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/LogLevel.java	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/LogLevel.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/MiddleWare.java	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/MiddleWare.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/NameInfoType.java	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/NameInfoType.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/Opt.java	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/Opt.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/TimeUnit.java	skyeye-base/src/main/java/com/jthink/skyeye/base/constant/TimeUnit.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/Annotation.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dapper/Annotation.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/AnnotationType.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dapper/AnnotationType.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/BinaryAnnotation.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dapper/BinaryAnnotation.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/EndPoint.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dapper/EndPoint.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/ExceptionType.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dapper/ExceptionType.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/NodeProperty.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dapper/NodeProperty.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/Span.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dapper/Span.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/AlertDto.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dto/AlertDto.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/ApiLog.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dto/ApiLog.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/EventLog.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dto/EventLog.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/FileDto.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dto/FileDto.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/LogDto.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dto/LogDto.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/MailDto.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dto/MailDto.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/RpcTraceLog.java	skyeye-base/src/main/java/com/jthink/skyeye/base/dto/RpcTraceLog.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/Condition.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/Condition.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/ConditionOrder.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/ConditionOrder.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/From.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/From.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/Func.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/Func.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/GroupBy.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/GroupBy.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/Opt.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/Opt.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/OrderBy.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/OrderBy.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/OrderDesc.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/OrderDesc.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/Select.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/Select.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/SelectColumn.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/SelectColumn.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/SqlBuildException.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/SqlBuildException.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/Where.java	skyeye-base/src/main/java/com/jthink/skyeye/base/sql/Where.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/util/DateUtil.java	skyeye-base/src/main/java/com/jthink/skyeye/base/util/DateUtil.java
+R100	skyeye-base/src/main/java/com/jthink/skyeye/ base/util/StringUtil.java	skyeye-base/src/main/java/com/jthink/skyeye/base/util/StringUtil.java
+R096	skyeye-base/src/test/java/com/unionpaysmart/shaker/test/log/event/EventLogTest.java	skyeye-base/src/test/java/com/jthink/skyeye/base/log/event/EventLogTest.java
+
+83fb387;修改client的readme
+M	skyeye-client/README.md
+
+4490f56;删除idea文件
+D	.idea/modules.xml
+D	.idea/modules/SkyEye.iml
+D	.idea/modules/skyeye-base.iml
+D	.idea/vcs.xml
+
+0beac43;完成公用基础包定义
+A	.gitignore
+A	.idea/modules.xml
+A	.idea/modules/SkyEye.iml
+A	.idea/modules/skyeye-base.iml
+A	.idea/vcs.xml
+A	skyeye-base/.gitignore
+M	skyeye-base/README.md
+A	skyeye-base/build.gradle
+A	skyeye-base/settings.gradle
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/Constants.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/EventType.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/LogCollectionStatus.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/LogLevel.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/MiddleWare.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/NameInfoType.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/Opt.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/constant/TimeUnit.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/Annotation.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/AnnotationType.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/BinaryAnnotation.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/EndPoint.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/ExceptionType.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/NodeProperty.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dapper/Span.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/AlertDto.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/ApiLog.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/EventLog.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/FileDto.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/LogDto.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/MailDto.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/dto/RpcTraceLog.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/Condition.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/ConditionOrder.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/From.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/Func.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/GroupBy.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/Opt.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/OrderBy.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/OrderDesc.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/Select.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/SelectColumn.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/SqlBuildException.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/sql/Where.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/util/DateUtil.java
+A	skyeye-base/src/main/java/com/jthink/skyeye/ base/util/StringUtil.java
+A	skyeye-base/src/test/java/com/unionpaysmart/shaker/test/log/event/EventLogTest.java
+
+f681ef3;完成代码架构包
+A	skyeye-alarm/README.md
+A	skyeye-collector/README.md
+A	skyeye-data/README.md
+A	skyeye-monitor/README.md
+A	skyeye-statistics/README.md
+A	skyeye-trace/README.md
+A	skyeye-web/README.md
+
+a603834;完善readme
+M	README.md
+R100	skyeye-base/architecture.png	architecture.png
+R100	skyeye-base/column.png	column.png
+M	skyeye-base/README.md
+M	skyeye-client/README.md
+
+2687cae;完善readme
+M	README.md
+
+1ac2c51;提交readme
+A	skyeye-base/README.md
+A	skyeye-base/architecture.png
+A	skyeye-base/column.png
+A	skyeye-client/.gitignore
+A	skyeye-client/README.md
+A	skyeye-client/zknode.png
+
+978e109;init
+A	README.md

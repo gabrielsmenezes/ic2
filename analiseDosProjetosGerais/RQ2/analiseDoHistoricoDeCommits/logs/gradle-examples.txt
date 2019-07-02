@@ -1,0 +1,158 @@
+f311149;Fix the build
+M	testsets-plugin/build.gradle
+
+2005c80;Fix the build
+M	integration-tests/build.gradle
+
+4ca11b3;Merge pull request #1 from erikweibust/master
+503e5b0;Add README
+M	README.md
+
+15640c1;adding Eclipse files/dirs to gitignore
+M	.gitignore
+
+a6259ec;Add blog post url
+M	spring-boot-web-application/README.md
+
+9505cba;Remove unnecessary main class configuration
+M	spring-boot-web-application/build.gradle
+
+30c7603;First version of the Spring Boot example
+A	spring-boot-web-application/LICENSE
+A	spring-boot-web-application/README.md
+A	spring-boot-web-application/build.gradle
+A	spring-boot-web-application/src/integration-test/java/net/petrikainulainen/gradle/springboot/HelloWorldControllerIT.java
+A	spring-boot-web-application/src/main/java/net/petrikainulainen/gradle/springboot/HelloWorldController.java
+A	spring-boot-web-application/src/main/java/net/petrikainulainen/gradle/springboot/SpringBootExampleApplication.java
+A	spring-boot-web-application/src/main/resources/templates/index.html
+A	spring-boot-web-application/src/test/java/net/petrikainulainen/gradle/springboot/HelloWorldControllerTest.java
+
+5c46204;Update the target directory.
+M	first-java-project/README.md
+
+9cbfdb5;Add blog post url
+M	testsets-plugin/README.md
+
+29dd0b2;Add example that uses the Gradle TestSets plugin
+A	testsets-plugin/LICENSE
+A	testsets-plugin/README.md
+A	testsets-plugin/build.gradle
+A	testsets-plugin/src/integration-test/java/net/petrikainulainen/gradle/MessageServiceIT.java
+A	testsets-plugin/src/main/java/net/petrikainulainen/gradle/HelloWorld.java
+A	testsets-plugin/src/main/java/net/petrikainulainen/gradle/MessageService.java
+A	testsets-plugin/src/main/resources/log4j.properties
+A	testsets-plugin/src/test/java/net/petrikainulainen/gradle/MessageServiceTest.java
+
+bbf3c9f;Remove unncessary s letters
+M	integration-tests/build.gradle
+
+65ad916;Add the possibility to run integration tests always when the task is run
+M	integration-tests/build.gradle
+
+40bc2da;Update gradle tasks
+M	integration-tests/README.md
+
+93dcf42;Add blog post url
+M	integration-tests/README.md
+
+ff7fcee;Add integration testing example
+A	integration-tests/LICENSE
+A	integration-tests/README.md
+A	integration-tests/build.gradle
+A	integration-tests/src/integration-test/java/net/petrikainulainen/gradle/MessageServiceIT.java
+A	integration-tests/src/main/java/net/petrikainulainen/gradle/HelloWorld.java
+A	integration-tests/src/main/java/net/petrikainulainen/gradle/MessageService.java
+A	integration-tests/src/main/resources/log4j.properties
+A	integration-tests/src/test/java/net/petrikainulainen/gradle/MessageServiceTest.java
+
+bf218b5;Add blog post URL
+M	web-application/README.md
+
+0131f91;Remove unused hamcrest-library dependency
+M	web-application/build.gradle
+
+c5eb03a;First version of the web application example
+A	web-application/README.md
+A	web-application/build.gradle
+A	web-application/src/main/java/net/petrikainulainen/gradle/webapp/config/WebAppConfig.java
+A	web-application/src/main/java/net/petrikainulainen/gradle/webapp/config/WebAppContext.java
+A	web-application/src/main/java/net/petrikainulainen/gradle/webapp/controller/HelloController.java
+A	web-application/src/main/resources/log4j.properties
+A	web-application/src/main/webapp/WEB-INF/jsp/index.jsp
+A	web-application/src/test/java/net/petrikainulainen/gradle/webapp/controller/HelloControllerTest.java
+A	web-application/src/test/resources/log4j.properties
+
+385f96a;Link to the blog post
+M	multi-project-build/README.md
+
+6600802;Remove unused task
+M	multi-project-build/build.gradle
+
+1f9eccb;First version
+A	multi-project-build/README.md
+A	multi-project-build/app/LICENSE
+A	multi-project-build/app/build.gradle
+A	multi-project-build/app/src/main/java/net/petrikainulainen/gradle/client/HelloWorld.java
+A	multi-project-build/app/src/main/resources/log4j.properties
+A	multi-project-build/build.gradle
+A	multi-project-build/core/build.gradle
+A	multi-project-build/core/src/main/java/net/petrikainulainen/gradle/core/MessageService.java
+A	multi-project-build/core/src/test/java/net/petrikainulainen/gradle/coe/MessageServiceTest.java
+A	multi-project-build/settings.gradle
+
+9cdb464;Update blog post url formatting
+M	dependency-management/README.md
+M	first-java-project/README.md
+M	runnable-binary-distribution/README.md
+
+3b4f53d;Add blog post url
+M	dependency-management/README.md
+
+12b4ae0;First commit
+A	runnable-binary-distribution/LICENSE
+A	runnable-binary-distribution/README.md
+A	runnable-binary-distribution/build.gradle
+A	runnable-binary-distribution/src/main/java/net/petrikainulainen/gradle/HelloWorld.java
+A	runnable-binary-distribution/src/main/java/net/petrikainulainen/gradle/MessageService.java
+A	runnable-binary-distribution/src/main/resources/log4j.properties
+A	runnable-binary-distribution/src/test/java/net/petrikainulainen/gradle/MessageServiceTest.java
+
+f045a5f;Update the name of the blog post
+M	dependency-management/README.md
+
+1dd2e44;Rename the root directory of the example
+R100	working-with-dependencies/README.md	dependency-management/README.md
+R100	working-with-dependencies/build.gradle	dependency-management/build.gradle
+R100	working-with-dependencies/src/main/java/net/petrikainulainen/gradle/HelloWorld.java	dependency-management/src/main/java/net/petrikainulainen/gradle/HelloWorld.java
+R100	working-with-dependencies/src/main/java/net/petrikainulainen/gradle/MessageService.java	dependency-management/src/main/java/net/petrikainulainen/gradle/MessageService.java
+R100	working-with-dependencies/src/main/resources/log4j.properties	dependency-management/src/main/resources/log4j.properties
+R100	working-with-dependencies/src/test/java/net/petrikainulainen/gradle/MessageServiceTest.java	dependency-management/src/test/java/net/petrikainulainen/gradle/MessageServiceTest.java
+
+4a29aa9;Declare dependencies by using the short form
+M	working-with-dependencies/build.gradle
+
+ebfff15;Add the example application which demonstrates the dependency management of Gradle
+A	working-with-dependencies/README.md
+A	working-with-dependencies/build.gradle
+A	working-with-dependencies/src/main/java/net/petrikainulainen/gradle/HelloWorld.java
+A	working-with-dependencies/src/main/java/net/petrikainulainen/gradle/MessageService.java
+A	working-with-dependencies/src/main/resources/log4j.properties
+A	working-with-dependencies/src/test/java/net/petrikainulainen/gradle/MessageServiceTest.java
+
+d8b0df8;Update README
+A	first-java-project/README.md
+
+1fd75e0;First commit
+A	first-java-project/build.gradle
+A	first-java-project/src/main/java/net/petrikainulainen/gradle/HelloWorld.java
+
+e9a7de4;Update .gitignore
+M	.gitignore
+
+744e970;Update license to shorter version of Apache License 2
+M	LICENSE
+
+ce9abc4;Initial commit
+A	.gitignore
+A	LICENSE
+A	README.md

@@ -1,0 +1,3223 @@
+bfa8dd6;3.有时分词界面会显示上次复制的内容
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	info.txt
+
+85cd45e;修复通知栏的bug
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+
+bf487b9;2.6.5 【修复】 1.侧边栏条目重复的bug 2.在7.0以上系统可能首次启动悬浮窗会消失的bug 【优化】 1.增强应用的存活性
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/forfan/bigbang/component/activity/KeepAliveActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/share/ShareAppManagerActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/SharedIntentHelper.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangBottom.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/res/layout/activity_donate.xml
+M	app/src/main/res/layout/items_translate.xml
+M	app/src/main/res/menu/universal_copy.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+M	info.txt
+
+179b5fa;截屏时，按钮触摸响应的范围增大 update readme
+M	README.md
+M	app/src/main/java/com/forfan/bigbang/view/MarkSizeView.java
+M	info.txt
+
+b874ab6;更新readme
+M	README.md
+
+43cde05;2.6.0 【新增】 1.可以设置不显示悬浮球的应用 2.可选分词时空格是否作为符号处理 【修复】 1.在屏幕左边缘截屏框选时，会导致按钮不显示 2.XP版中设置长按或单击，导致编辑框无法操作的bug 3.XP版有些文字单击无反应的bug 【优化】 1.优化文字触发逻辑 2.分词界面图标改用高清图标
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/floatviewwhitelist/AppListAdapter.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/floatviewwhitelist/FloatViewWhiteListActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/WhiteListActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/RegexUtil.java
+A	app/src/main/java/com/forfan/bigbang/util/RunningTaskUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangBottom.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/java/com/forfan/bigbang/view/MarkSizeView.java
+M	app/src/main/res/layout/activity_diy_ocr_key.xml
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/layout/card_float_notify_setting.xml
+A	app/src/main/res/layout/item_app_list_float.xml
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_cloud.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_copy.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_enter.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_local.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_no_enter.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_no_symbol.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_search.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_select_other.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_share.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_symbol.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_nor.9.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_nor_section.9.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_sel.9.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_sel_section.9.png
+D	app/src/main/res/mipmap-xhdpi/ic_close_capture.png
+D	app/src/main/res/mipmap-xhdpi/ic_compare_arrows_white_36dp.png
+D	app/src/main/res/mipmap-xhdpi/ic_done_white_36dp.png
+D	app/src/main/res/mipmap-xhdpi/ic_drag_select_36dp_n.png
+D	app/src/main/res/mipmap-xhdpi/ic_drag_select_36dp_p.png
+D	app/src/main/res/mipmap-xhdpi/ic_sort_white_36dp.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_action_cloud.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_action_copy.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_action_enter.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_action_local.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_action_no_enter.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_action_no_symbol.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_action_search.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_action_select_other.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_action_share.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_action_symbol.png
+D	app/src/main/res/mipmap-xxhdpi/bigbang_item_bg_nor.9.png
+D	app/src/main/res/mipmap-xxhdpi/bigbang_item_bg_nor_section.9.png
+D	app/src/main/res/mipmap-xxhdpi/bigbang_item_bg_sel.9.png
+D	app/src/main/res/mipmap-xxhdpi/bigbang_item_bg_sel_section.9.png
+A	app/src/main/res/mipmap-xxhdpi/ic_close_capture.png
+A	app/src/main/res/mipmap-xxhdpi/ic_compare_arrows_white_36dp.png
+A	app/src/main/res/mipmap-xxhdpi/ic_done_white_36dp.png
+A	app/src/main/res/mipmap-xxhdpi/ic_drag_select_36dp_n.png
+A	app/src/main/res/mipmap-xxhdpi/ic_drag_select_36dp_p.png
+A	app/src/main/res/mipmap-xxhdpi/ic_sort_white_36dp.png
+A	app/src/main/res/mipmap-xxxhdpi/bigbang_item_bg_nor.9.png
+A	app/src/main/res/mipmap-xxxhdpi/bigbang_item_bg_nor_section.9.png
+A	app/src/main/res/mipmap-xxxhdpi/bigbang_item_bg_sel.9.png
+A	app/src/main/res/mipmap-xxxhdpi/bigbang_item_bg_sel_section.9.png
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/xposed/java/com/shang/xposed/Filter.java
+M	app/src/xposed/java/com/shang/xposed/TouchEventHandler.java
+M	app/src/xposed/java/com/shang/xposed/XposedBigBang.java
+M	info.txt
+
+1f55712;2.5.0 【新增】 1.加入以图搜图功能 2.引导页增加跳过按钮（用过一次才出现） 【修复】 1.有时分词内容重复的bug 【优化】 1.悬浮球靠边隐藏逻辑 2.分词界面文字圆角角度减小
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyNodeView.java
+M	app/src/main/java/com/forfan/bigbang/entity/ImageUpload.java
+M	app/src/main/java/com/forfan/bigbang/network/RetrofitHelper.java
+A	app/src/main/java/com/forfan/bigbang/network/UploadUtil.java
+M	app/src/main/java/com/forfan/bigbang/network/api/ImageUploadService.java
+A	app/src/main/java/com/forfan/bigbang/network/api/PicUploadService.java
+M	app/src/main/java/com/forfan/bigbang/test/TestActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+M	app/src/main/res/layout/activity_capture_result.xml
+M	app/src/main/res/layout/activity_orc.xml
+M	app/src/main/res/layout/activity_test.xml
+M	app/src/main/res/layout/activity_web.xml
+A	app/src/main/res/mipmap-xxhdpi/bigbang_item_bg_nor.9.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_item_bg_nor_section.9.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_item_bg_sel.9.png
+A	app/src/main/res/mipmap-xxhdpi/bigbang_item_bg_sel_section.9.png
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+0085352;update Readme
+M	README.md
+
+aff3410;+【新增】 +1.引导页增加跳过按钮 +【修复】 +1.有时分词内容重复的bug +2.XP版在今日头条等一些应用中长按崩溃的bug +3.XP版保存设置的时候，没有保存应用监控点击的设置bug +【优化】 +1.悬浮球靠边隐藏逻辑 全局复制相关代码整理，添加注释
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SLSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyNodeView.java
+A	app/src/main/java/com/forfan/bigbang/entity/ImageUpload.java
+M	app/src/main/java/com/forfan/bigbang/network/RetrofitHelper.java
+A	app/src/main/java/com/forfan/bigbang/network/api/ImageUploadService.java
+M	app/src/main/java/com/forfan/bigbang/test/TestActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/res/layout/activity_intro.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/xposed/java/com/shang/xposed/TouchEventHandler.java
+M	app/src/xposed/java/com/shang/xposed/XposedBigBang.java
+M	info.txt
+
+6ea535c;适配7.0的通知栏快捷开关 调整ui上的两个小细节 发布2.4.0版本
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/forfan/bigbang/quicksetting/GlobalCopyTile.java
+A	app/src/main/java/com/forfan/bigbang/quicksetting/ScreenCaptureTile.java
+A	app/src/main/java/com/forfan/bigbang/quicksetting/TotleSwitchTile.java
+M	app/src/main/res/layout/activity_capture_result.xml
+M	app/src/main/res/layout/activity_diy_ocr_key.xml
+M	app/src/main/res/layout/activity_test.xml
+
+459cf80;【新增】 1.截屏OCR后，可以修改后再分词 2.开放调用方式，可以通过第三方应用调用功能和开关 【修复】 1.有时分词会显示上一次的词语 【优化】 1.自动加群改成二群
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/DonateActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/TotalSwitchActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/UniversalCopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/XposedBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/howtouse/HowToUseActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/layout/activity_capture_result.xml
+M	app/src/main/res/layout/activity_how_to_use.xml
+M	app/src/main/res/layout/card_float_notify_setting.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+776ca04;添加新反馈通知提醒 修复一个崩溃
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	info.txt
+
+6d37448;更新readme 替换全局复制的图片
+A	COPYING.WTFPL
+M	README.md
+M	gif/ucopy.gif
+
+bc58773;修复自动开启辅助服务耗费内存的bug
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/res/values/strings.xml
+
+a1abf55;隐藏掉辅助应用的设置项
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/GoToSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+
+a6a308b;替换友盟的反馈sdk为百川的sdk 全局复制用xp实现 悬浮窗可以设置固定位置 悬浮窗可以主动隐藏（向屏幕方向滑动） 修复4.4悬浮球展示时展开背景问题 录音权限到使用时才申请 恢复bigbang界面字体自适应 把截屏从service中取出来 把截屏对NavigationBar的特殊处理去掉  自动开启辅助服务
+M	app/build.gradle
+A	app/libs/alisdk-ut-5.jar
+A	app/libs/armeabi/libsecuritysdk-3.1.27.so
+D	app/libs/com.umeng.fb.5.4.0.jar
+A	app/libs/feedbackSdk.aar
+A	app/libs/securityguard-3.1.27.jar
+A	app/libs/utdid4all-1.0.4.jar
+M	app/proguard-rules.pro
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+R097	app/src/main/java/com/forfan/bigbang/component/activity/screen/DiyOcrKeyActivity.java	app/src/main/java/com/forfan/bigbang/component/activity/DiyOcrKeyActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/FeedbackActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingFloatViewActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+R066	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCapture.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/AboutCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/GoToSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/PickWordFragment.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SLSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/ShareCard.java
+M	app/src/main/java/com/forfan/bigbang/component/base/PermissionActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyNode.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/KeepAliveWatcher.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/ViewUtil.java
+D	app/src/main/res/anim/umeng_fb_dialog_enter_anim.xml
+D	app/src/main/res/anim/umeng_fb_dialog_exit_anim.xml
+D	app/src/main/res/drawable-xhdpi/umeng_fb_audio_dialog_cancel.png
+D	app/src/main/res/drawable-xhdpi/umeng_fb_audio_dialog_content.png
+D	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_01.png
+D	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_02.png
+D	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_03.png
+D	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_bg.9.png
+D	app/src/main/res/drawable-xhdpi/umeng_fb_keyboard.png
+D	app/src/main/res/drawable-xhdpi/umeng_fb_plus.png
+D	app/src/main/res/drawable-xhdpi/umeng_fb_record.png
+D	app/src/main/res/drawable/umeng_fb_action_replay.png
+D	app/src/main/res/drawable/umeng_fb_arrow_right.png
+D	app/src/main/res/drawable/umeng_fb_audio_play_anim.xml
+D	app/src/main/res/drawable/umeng_fb_help_tab_bg.xml
+D	app/src/main/res/drawable/umeng_fb_round_white_bg.xml
+A	app/src/main/res/drawable/yw_1222.jpg
+M	app/src/main/res/layout/activity_diy_ocr_key.xml
+A	app/src/main/res/layout/activity_feedback.xml
+M	app/src/main/res/layout/activity_setting.xml
+M	app/src/main/res/layout/activity_setting_floatview.xml
+M	app/src/main/res/layout/card_goto_setting.xml
+M	app/src/main/res/layout/card_xposed.xml
+D	app/src/main/res/layout/umeng_fb_activity_conversation.xml
+D	app/src/main/res/layout/umeng_fb_activity_help.xml
+D	app/src/main/res/layout/umeng_fb_audio_dialog.xml
+D	app/src/main/res/layout/umeng_fb_contact.xml
+D	app/src/main/res/layout/umeng_fb_contact_spinner.xml
+D	app/src/main/res/layout/umeng_fb_fragment.xml
+D	app/src/main/res/layout/umeng_fb_fragment_question.xml
+D	app/src/main/res/layout/umeng_fb_image_dialog.xml
+D	app/src/main/res/layout/umeng_fb_input_contact.xml
+D	app/src/main/res/layout/umeng_fb_input_conversation.xml
+D	app/src/main/res/layout/umeng_fb_input_conversation_audio.xml
+D	app/src/main/res/layout/umeng_fb_reply_item_audio.xml
+D	app/src/main/res/layout/umeng_fb_reply_item_image.xml
+D	app/src/main/res/layout/umeng_fb_reply_item_text.xml
+D	app/src/main/res/layout/umeng_fb_welcome_item.xml
+M	app/src/main/res/values-en/strings.xml
+D	app/src/main/res/values-en/umeng_fb_strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+D	app/src/main/res/values/umeng_fb_color.xml
+D	app/src/main/res/values/umeng_fb_dimens.xml
+D	app/src/main/res/values/umeng_fb_strings.xml
+D	app/src/main/res/values/umeng_fb_style.xml
+R086	xposed/src/main/java/com/shang/xposed/Filter.java	app/src/xposed/java/com/shang/xposed/Filter.java
+R095	xposed/src/main/java/com/shang/xposed/Logger.java	app/src/xposed/java/com/shang/xposed/Logger.java
+R099	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java	app/src/xposed/java/com/shang/xposed/TouchEventHandler.java
+R090	xposed/src/main/java/com/shang/xposed/XposedBigBang.java	app/src/xposed/java/com/shang/xposed/XposedBigBang.java
+R080	xposed/src/main/java/com/shang/xposed/XposedConstant.java	app/src/xposed/java/com/shang/xposed/XposedConstant.java
+R100	xposed/src/main/java/com/shang/xposed/XposedEnable.java	app/src/xposed/java/com/shang/xposed/XposedEnable.java
+A	app/src/xposed/java/com/shang/xposed/XposedUniversalCopyHandler.java
+R100	xposed/src/main/java/com/shang/xposed/forcetouch/Callback.java	app/src/xposed/java/com/shang/xposed/forcetouch/Callback.java
+R100	xposed/src/main/java/com/shang/xposed/forcetouch/ForceTouchActivity.java	app/src/xposed/java/com/shang/xposed/forcetouch/ForceTouchActivity.java
+R100	xposed/src/main/java/com/shang/xposed/forcetouch/ForceTouchListener.java	app/src/xposed/java/com/shang/xposed/forcetouch/ForceTouchListener.java
+R100	xposed/src/main/java/com/shang/xposed/setting/Adapter.java	app/src/xposed/java/com/shang/xposed/setting/Adapter.java
+R100	xposed/src/main/java/com/shang/xposed/setting/AppInfo.java	app/src/xposed/java/com/shang/xposed/setting/AppInfo.java
+R100	xposed/src/main/java/com/shang/xposed/setting/StatusBarCompat.java	app/src/xposed/java/com/shang/xposed/setting/StatusBarCompat.java
+A	app/src/xposed/res/drawable/yw_1222.jpg
+M	app/src/xposed/res/values/strings.xml
+M	colorpicker/src/main/java/com/flask/colorpicker/CircleColorDrawable.java
+M	gradle.properties
+M	xposed/src/main/AndroidManifest.xml
+
+4c25e61;Update README.md
+M	README.md
+
+480ee1e;Update README.md
+M	README.md
+
+2c08790;Update README.md
+M	README.md
+
+c31d881;Update README.md
+M	README.md
+
+a416ff7;Update README.md
+M	README.md
+
+52d0707;Update README.md
+M	README.md
+
+d7621cc;Update README.md
+M	README.md
+
+96b319b;添加readme，添加gif图
+A	README.md
+D	added.txt
+M	app/src/main/java/com/forfan/bigbang/network/api/TranslationService.java
+M	app/src/main/java/com/forfan/bigbang/network/api/WordSegmentService.java
+D	count_id_1.5.0.txt
+D	count_id_1.6.2.txt
+D	count_id_1.6.8.txt
+D	count_id_1.7.0.txt
+D	count_id_1.7.1.txt
+A	gif/click.gif
+A	gif/copy.gif
+A	gif/ocr.gif
+A	gif/setting.gif
+A	gif/ucopy.gif
+D	keyStore/keyStore.jks
+D	removed.txt
+
+df16d97;添加xposed设置说明 准备放到github上去
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingFloatViewActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/howtouse/HowToUseActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/DiyOcrKeyActivity.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/res/layout/activity_how_to_use.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+3cbb2fb;完善xp的长按和单击方式 调整文案 修复悬浮球透明度不随开关变化的bug
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/card_xposed.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/xposed/res/values-en/strings.xml
+M	app/src/xposed/res/values/strings.xml
+M	info.txt
+M	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+M	xposed/src/main/res/values-en/strings.xml
+M	xposed/src/main/res/values/ids.xml
+M	xposed/src/main/res/values/strings.xml
+
+4eca522;增加本地log收集，xposed % 的问题
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/XposedBigBangActivity.java
+A	app/src/main/java/com/forfan/bigbang/util/CrashHandler.java
+
+cc29bf1;xp模块添加点击长按触发
+M	app/src/main/AndroidManifest.xml
+A	app/src/xposed/java/com/forfan/bigbang/component/activity/setting/XposedAppManagerActivity.java
+M	app/src/xposed/java/com/forfan/bigbang/component/activity/setting/XposedCard.java
+M	info.txt
+M	xposed/src/main/java/com/shang/xposed/Filter.java
+M	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+D	xposed/src/main/java/com/shang/xposed/setting/XposedAppManagerActivity.java
+D	xposed/src/main/res/menu/app_manger.xml
+M	xposed/src/main/res/values/strings.xml
+
+825d237;调整默认背景色，默认内边距 添加自动空格选项
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingFloatViewActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/RegexUtil.java
+D	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+D	app/src/main/res/drawable/float_view_image_bg.xml
+D	app/src/main/res/drawable/float_view_switch_bg.xml
+M	app/src/main/res/layout/activity_diy_ocr_key.xml
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/layout/arc_menu.xml
+D	app/src/main/res/layout/view_float.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+4a6240a;分享的问题,xposed 双击设置的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/util/SharedIntentHelper.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+b8d8348;web页面时跳转到本地浏览器网址不对的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+
+1f5883c;悬浮球调整大小
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingFloatViewActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/ArcLayout.java
+M	app/src/main/java/com/forfan/bigbang/view/ArcMenu.java
+M	app/src/main/res/layout/activity_setting_floatview.xml
+M	app/src/main/res/layout/arc_float_icon.xml
+
+4851966;通过设置android:excludeFromRecents="true"，让activity的切换更加合理
+M	ToDoList.txt
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+
+110e378;全局复制增加全选功能 替换图标，未选择状态下现在虚线框
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyNodeView.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+A	app/src/main/res/drawable-xhdpi/universal_copy.png
+A	app/src/main/res/drawable-xhdpi/universal_select_all.png
+A	app/src/main/res/drawable/universal_copy_node_bg_n.xml
+M	app/src/main/res/menu/universal_copy.xml
+
+e986bae;截屏或全局复制时悬浮球自动靠边
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+
+1f847fe;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+7313c83;web页面的title显示问题，bigbang界面时自动隐藏悬浮球
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+
+d0e0f58;复制的时候还是自动关闭activity，其他操作不关闭 修复分词界面不按back关闭时，再次分词显示的是上次分词结果的bug
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+
+6a0de26;将捐赠和qq群彻底移动到捐赠页面中
+M	app/src/main/java/com/forfan/bigbang/component/activity/DonateActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/AboutCard.java
+M	app/src/main/java/com/forfan/bigbang/util/CountLinkMovementMethod.java
+M	app/src/main/res/layout/activity_donate.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+e379bb6;2.1.2版本
+M	app/build.gradle
+M	info.txt
+
+2738532;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+e3e4635;修复调用外部浏览器的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+
+51dd19c;分词界面全屏时要考虑虚拟导航栏的高度
+M	ToDoList.txt
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ViewUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+M	info.txt
+
+6b18268;修复全屏下分词界面顶部按钮被状态栏遮挡的bug 修复默认本地分词时，图标不统一的bug 修复文案的错误
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+fa81590;设置bigbang界面颜色为一致
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+M	app/src/main/res/layout/activity_big_bang.xml
+M	app/src/main/res/values/styles.xml
+
+f427ac2;修复截图偏移的bug 微调分享设置的样式和文案 发布2.1.0版本
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/MenuAdapter.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/share/ShareAppManagerActivity.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/activity_big_bang.xml
+M	app/src/main/res/menu/app_manger.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+b418b70;修复侧边栏点击的bug 修复全局复制和分词界面全局key冲突的bug 修复辅助模式可能的崩溃
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/res/layout/activity_big_bang.xml
+
+b070538;第一次分词弹长按提示
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+36dced7;忘记提交的资源
+A	app/src/main/res/menu/app_manger.xml
+
+2a2a6d9;资源引用问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/share/Adapter.java
+A	app/src/main/res/layout/item_app_info.xml
+A	app/src/main/res/layout/item_empty_info.xml
+A	app/src/main/res/layout/item_loading.xml
+
+0803e37;分享侧边栏可以滑动以及自定义位置
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/share/Adapter.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/share/ShareAppInfo.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/share/ShareAppManagerActivity.java
+M	app/src/main/java/com/forfan/bigbang/onestep/AppsAdapter.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/SharedIntentHelper.java
+M	app/src/main/res/layout/activity_big_bang.xml
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+A	app/src/main/res/layout/activity_share_app_manager.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+ea01a7b;添加默认使用本地分词选项 添加悬浮窗恢复默认图标选项 优化悬浮窗内存使用 优化分词界面内存和cpu使用
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingFloatViewActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/howtouse/HowToUseActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SLSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/activity_how_to_use.xml
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/layout/activity_setting_floatview.xml
+M	app/src/main/res/layout/card_feedback_update.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+226580e;优化使用引导和应用介绍
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/howtouse/HowToUseActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/IntroCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/activity_how_to_use.xml
+M	app/src/main/res/layout/intro_card_viewstub.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+e8c9821;修复xp版本的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingFloatViewActivity.java
+M	app/src/main/java/com/forfan/bigbang/cropper/CropFileUtils.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/SearchEngineUtil.java
+
+7fb3e62;添加介绍和设置引导
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/howtouse/HowToUseActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/IntroCard.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangBottom.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+A	app/src/main/res/layout/activity_how_to_use.xml
+M	app/src/main/res/layout/activity_setting.xml
+A	app/src/main/res/layout/intro_card_viewstub.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+9730b4c;全局复制界面保存上次的设置记录
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/res/layout/activity_copy_overlay.xml
+
+b7879c2;修复曲线截图时按钮位置的问题
+M	app/src/main/java/com/forfan/bigbang/view/MarkSizeView.java
+M	info.txt
+
+e359140;xp版将辅助服务的设置给暴露出来，修复翻译时的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/PreSettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/XposedBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/PickWordFragment.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+
+e88245c;翻译时隐藏掉侧边栏
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+
+e5434f5;xp 模式下隐藏不相干设置
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/PickWordFragment.java
+
+0e9bd3d;xp版本的
+M	app/src/main/res/layout/activity_big_bang.xml
+M	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+
+c3fbb79;解决第一次截图失败的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/res/layout/activity_big_bang.xml
+M	info.txt
+
+edb3a66;框选功能完成
+M	app/src/main/java/com/forfan/bigbang/view/BigBangBottom.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+A	app/src/main/res/mipmap-xhdpi/ic_drag_select_36dp_n.png
+A	app/src/main/res/mipmap-xhdpi/ic_drag_select_36dp_p.png
+
+674caa7;长按某个词，则把这个词分成一个一个单字
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+
+fdcb71d;修复bug：非全屏常显顶部功能时，上下滑动无法选择
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+
+48cded9;分享侧边栏
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+A	app/src/main/java/com/forfan/bigbang/onestep/AppItem.java
+A	app/src/main/java/com/forfan/bigbang/onestep/AppManager.java
+A	app/src/main/java/com/forfan/bigbang/onestep/AppsAdapter.java
+A	app/src/main/java/com/forfan/bigbang/onestep/DataManager.java
+A	app/src/main/java/com/forfan/bigbang/onestep/FileInfo.java
+A	app/src/main/java/com/forfan/bigbang/onestep/RecorderInfo.java
+A	app/src/main/java/com/forfan/bigbang/onestep/ResolveInfoGroup.java
+A	app/src/main/java/com/forfan/bigbang/onestep/ResolveInfoManager.java
+A	app/src/main/java/com/forfan/bigbang/onestep/ResolveInfoWrap.java
+A	app/src/main/java/com/forfan/bigbang/onestep/SidebarItem.java
+A	app/src/main/java/com/forfan/bigbang/onestep/Utils.java
+A	app/src/main/java/com/forfan/bigbang/onestep/widget/DragDropHelper.java
+A	app/src/main/java/com/forfan/bigbang/onestep/widget/DragView.java
+A	app/src/main/java/com/forfan/bigbang/onestep/widget/DropView.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/SharedIntentHelper.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/layout/activity_big_bang.xml
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+A	app/src/main/res/layout/item_app_intent.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+6176541;bigbangActivity不再从使用历史中删除了
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/view/MarkSizeView.java
+
+2e018b2;完成曲线截图功能
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/SelectionDbHelper.java
+M	app/src/main/java/com/forfan/bigbang/view/MarkSizeView.java
+M	app/src/main/res/layout/activity_screen_capture.xml
+M	app/src/main/res/layout/card_feedback_update.xml
+M	app/src/main/res/layout/card_function_setting.xml
+M	app/src/main/res/layout/card_goto_setting.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+eb0b684;修复bug：全局复制触发时跳到设置页面
+M	app/src/main/AndroidManifest.xml
+
+c955952;添加虚拟按键长按触发菜单
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/KeyPressedTipViewController.java
+M	app/src/main/res/values-en/array.xml
+
+834a96b;header常驻时，不选中相当于全选中
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+
+fc79379;turn icons in notification blue
+M	app/src/main/res/drawable-xhdpi/notify_copy.png
+M	app/src/main/res/drawable-xhdpi/notify_screen.png
+M	app/src/main/res/layout/long_press_box_trans.xml
+M	app/src/main/res/layout/notification_box_trans.xml
+
+affbaf8;设置bigbang界面的时候，添加几个功能键的事件响应
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	info.txt
+
+d841c95;悬浮窗和通知栏都不开的时候，不默认通过悬浮球触发了 修复一些bug
+M	ToDoList.txt
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/GoToSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/WhiteListActivity.java
+M	app/src/main/res/layout/card_bigbang_setting.xml
+M	app/src/main/res/layout/card_float_notify_setting.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+52a2491;优化悬浮窗口色值大小，修复部分bug
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/res/layout/arc_menu.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+928ebf6;透明度及按钮样式
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingFloatViewActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/res/layout/arc_menu.xml
+
+f539839;将logutil.e的输出改成logutil.d
+M	app/src/main/java/com/forfan/bigbang/component/WakeUpBroadcastReceiver.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/KeyPressedTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/ArcLayout.java
+
+f302161;make the icon larger
+M	app/src/main/res/drawable-xhdpi/ic_monitor_on.png
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+D	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+6120a01;按键触发菜单
+M	ToDoList.txt
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/GoToSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+A	app/src/main/java/com/forfan/bigbang/component/service/voiceInteraction/BBVoiceInteractionService.java
+A	app/src/main/java/com/forfan/bigbang/component/service/voiceInteraction/BBVoiceInteractionSession.java
+A	app/src/main/java/com/forfan/bigbang/component/service/voiceInteraction/BBVoiceInteractionSessionService.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+A	app/src/main/java/com/forfan/bigbang/util/KeyPressedTipViewController.java
+D	app/src/main/java/com/forfan/bigbang/util/TipViewController.java.orig
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+A	app/src/main/java/com/forfan/bigbang/view/KeyRelativeLayout.java
+M	app/src/main/java/com/forfan/bigbang/view/SimpleDialog.java
+M	app/src/main/res/layout/card_bigbang_setting.xml
+M	app/src/main/res/layout/card_float_notify_setting.xml
+M	app/src/main/res/layout/card_goto_setting.xml
+M	app/src/main/res/layout/card_monitor_setting.xml
+A	app/src/main/res/layout/long_press_box_trans.xml
+A	app/src/main/res/layout/long_pressed_view_float.xml
+M	app/src/main/res/layout/notification_box_trans.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/array.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+A	app/src/main/res/xml/assist_service.xml
+
+3c80590;api 16以下 用不了setBackground
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+
+338635f;可能存在的fc 悬浮窗背景变量名
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+
+ae96c1d;完成设置悬浮窗样式的逻辑
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingFloatViewActivity.java
+M	app/src/main/java/com/forfan/bigbang/cropper/BitmapUtil.java
+M	app/src/main/java/com/forfan/bigbang/cropper/CropFileUtils.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/ArcMenu.java
+M	app/src/main/res/layout/activity_setting_floatview.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+81a0171;剪切图片部分使用app自带的
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/SettingFloatViewActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/cropper/CropHelper.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/BitmapCroppingWorkerTask.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/BitmapLoadingWorkerTask.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/BitmapUtils.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/CropImage.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/CropImageActivity.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/CropImageAnimation.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/CropImageOptions.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/CropImageView.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/CropOverlayView.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/CropWindowHandler.java
+A	app/src/main/java/com/forfan/bigbang/cropper/handler/CropWindowMoveHandler.java
+A	app/src/main/res/layout/activity_setting_floatview.xml
+M	app/src/main/res/layout/card_bigbang_setting.xml
+A	app/src/main/res/layout/crop_image_activity.xml
+A	app/src/main/res/layout/crop_image_view.xml
+A	app/src/main/res/menu/crop_image_menu.xml
+A	app/src/main/res/mipmap-xhdpi/crop_image_menu_rotate_left.png
+A	app/src/main/res/mipmap-xhdpi/crop_image_menu_rotate_right.png
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/attrs.xml
+M	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/ids.xml
+M	app/src/main/res/values/strings.xml
+
+ede36a4;通知栏和悬浮球状态同步 第一个词内边距问题修复 发布2.0.0版
+M	ToDoList.txt
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+D	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java.orig
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	info.txt
+
+f9b8562;修复第一次关闭状态下还炸词的bug
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+
+808172b;ui微调
+M	app/src/main/res/anim/anim_scale_out.xml
+M	app/src/main/res/layout/card_bigbang_setting.xml
+M	app/src/main/res/layout/card_float_notify_setting.xml
+M	app/src/main/res/values/strings.xml
+
+e30021c;修复在低分辨率机型上，悬浮窗间距过大的问题
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/ArcLayout.java
+M	app/src/main/res/layout/arc_menu.xml
+M	app/src/main/res/layout/arc_view_float.xml
+M	app/src/main/res/layout/notification_trans.xml
+
+d341bae;修复白名单快速退出崩溃的bug 调整通知栏文字显示 修改保存设置文案
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SLSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/WhiteListActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/IOUtil.java
+M	app/src/main/res/layout/card_goto_setting.xml
+M	app/src/main/res/layout/notification_box_trans.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+67d0aa3;开关透明度
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+
+47e4d65;修复浏览器引擎无法添加的问题
+M	ToDoList.txt
+M	app/src/main/res/layout/activity_search_engine.xml
+
+ee8d4ef;一些文案细节的修改
+M	app/src/main/java/com/forfan/bigbang/cropper/CropParams.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/res/layout/card_bigbang_setting.xml
+M	xposed/src/main/res/layout/activity_xposed_app_manager.xml
+M	xposed/src/main/res/values-en/strings.xml
+M	xposed/src/main/res/values/strings.xml
+
+aebb769;捐赠标红
+M	app/src/main/res/layout/card_about.xml
+
+27da722;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+9976dc1;判断版本，展示悬浮球
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+
+242994d;replace screen pic in float view
+M	app/src/main/res/mipmap-xhdpi/ic_float_screen.png
+
+aaaf3ca;修复floatview的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/res/layout/arc_view_float.xml
+
+1ff76d9;讲复制和删除文件夹的操作放到IOUtil中
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SLSettingCard.java
+A	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java.orig
+D	app/src/main/java/com/forfan/bigbang/util/FileUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/IOUtil.java
+
+99dd3bc;悬浮窗的一些逻辑
+M	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/res/layout/arc_float_icon.xml
+
+4cd2e43;添加备份恢复设置 添加前往辅助模式设置的选项
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/GoToSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/OthersFragment.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/PickWordFragment.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/SLSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/SelectionDbHelper.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+A	app/src/main/java/com/forfan/bigbang/util/AESUtils.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+D	app/src/main/java/com/forfan/bigbang/util/DensityUtils.java
+M	app/src/main/java/com/forfan/bigbang/util/NativeHelper.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+A	app/src/main/res/drawable/tab_shadow.9.png
+M	app/src/main/res/layout/activity_setting.xml
+M	app/src/main/res/layout/card_about.xml
+M	app/src/main/res/layout/card_float_notify_setting.xml
+M	app/src/main/res/layout/card_function_setting.xml
+A	app/src/main/res/layout/card_goto_setting.xml
+A	app/src/main/res/layout/card_sl_setting.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values-v19/dimens.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+M	commonjar/src/main/java/com/shang/commonjar/contentProvider/BigBangContentProvider.java
+M	commonjar/src/main/java/com/shang/commonjar/contentProvider/ConstantUtil.java
+M	commonjar/src/main/java/com/shang/commonjar/contentProvider/SPHelper.java
+M	commonjar/src/main/java/com/shang/commonjar/contentProvider/SPHelperImpl.java
+
+277a3f9;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+03deb3f;重写了新的tipview
+M	app/src/main/java/com/forfan/bigbang/component/activity/XposedBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+A	app/src/main/java/com/forfan/bigbang/util/ArcTipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/ViewUtil.java
+A	app/src/main/java/com/forfan/bigbang/view/ArcLayout.java
+A	app/src/main/java/com/forfan/bigbang/view/ArcMenu.java
+A	app/src/main/java/com/forfan/bigbang/view/PathMenu.java
+A	app/src/main/java/com/forfan/bigbang/view/RotateAndTranslateAnimation.java
+A	app/src/main/res/layout/arc_float_icon.xml
+A	app/src/main/res/layout/arc_menu.xml
+A	app/src/main/res/layout/arc_view_float.xml
+M	app/src/main/res/values/attrs.xml
+
+2e94fe8;通知栏字体颜色也会随开关状态改变 添加设置bigbang文字内边距的功能
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigbangNotification.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/values-en/strings.xml
+A	app/src/main/res/values-v16/strings.xml
+M	app/src/main/res/values/strings.xml
+
+6849e1e;微调界面，添加横屏支持
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/base/BaseActivity.java
+M	app/src/main/res/values/dimens.xml
+
+db20eeb;设置界面改成用tab的方式实现
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/BaseFragment.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/BaseRecyclerFragment.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/DisplayFragment.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/OthersFragment.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/PickWordFragment.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/ShareCard.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/layout/activity_setting.xml
+M	app/src/main/res/layout/dialog_copy_text_editor.xml
+A	app/src/main/res/layout/fragment_common.xml
+A	app/src/main/res/layout/share_card_viewstub.xml
+M	app/src/main/res/values-en/strings.xml
+A	app/src/main/res/values-v19/dimens.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+d59c105;替换通知栏图标，大小更一致一些
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/res/drawable-xhdpi/notify_click_off.png
+M	app/src/main/res/drawable-xhdpi/notify_click_on.png
+M	app/src/main/res/drawable-xhdpi/notify_clipboard_on.png
+M	app/src/main/res/drawable-xhdpi/notify_clipboare_off.png
+M	app/src/main/res/layout/notification_box_trans.xml
+M	app/src/main/res/values/dimens.xml
+
+6ffcb6d;删除白底的通知栏
+M	app/src/main/java/com/forfan/bigbang/component/base/BaseActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigbangNotification.java
+D	app/src/main/res/drawable-v16/notify_item_bg_light.xml
+D	app/src/main/res/drawable/notify_item_bg_light.xml
+D	app/src/main/res/layout/notification_box_light.xml
+M	app/src/main/res/layout/notification_box_trans.xml
+D	app/src/main/res/layout/notification_light.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/dimens.xml
+
+c633154;make the notification beautiful
+M	app/src/main/java/com/forfan/bigbang/component/service/BigbangNotification.java
+A	app/src/main/res/drawable-v16/notify_item_bg_light.xml
+A	app/src/main/res/drawable-v16/notify_item_bg_transe.xml
+A	app/src/main/res/drawable-xhdpi/notify_click_off.png
+A	app/src/main/res/drawable-xhdpi/notify_click_on.png
+A	app/src/main/res/drawable-xhdpi/notify_clipboard_on.png
+A	app/src/main/res/drawable-xhdpi/notify_clipboare_off.png
+A	app/src/main/res/drawable-xhdpi/notify_copy.png
+A	app/src/main/res/drawable-xhdpi/notify_off.png
+A	app/src/main/res/drawable-xhdpi/notify_on.png
+A	app/src/main/res/drawable-xhdpi/notify_screen.png
+M	app/src/main/res/values/strings.xml
+
+225db67;可以对每个应用单独设置监控按键了
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/AppListAdapter.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/SelectionDbHelper.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/WhiteListActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+A	app/src/main/res/drawable-xhdpi/select_all.png
+A	app/src/main/res/drawable-xhdpi/select_mode.png
+A	app/src/main/res/drawable-xhdpi/set_selection.png
+M	app/src/main/res/drawable-xhdpi/toolbar_search.png
+M	app/src/main/res/layout/activity_monitor_white_list.xml
+M	app/src/main/res/layout/card_monitor_setting.xml
+M	app/src/main/res/layout/item_app_list.xml
+M	app/src/main/res/menu/white_list_activity_menu.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+3d81278;修复ocr界面可能的崩溃
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+
+ac6c0e4;发布1.7.2版本
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigbangNotification.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/res/xml/accessibility.xml
+M	info.txt
+
+01aaa8e;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+a857655;bigbang full screen above navigation
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+
+6e79f88;xp 和 普通版的互斥
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/XposedBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	xposed/src/main/AndroidManifest.xml
+
+145bf92;360手机的属性动画bug解决
+M	app/proguard-rules.pro
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/java/com/forfan/bigbang/view/RectEvaluator.java
+
+12e45e6;添加打点 监控设置点击失效的bug 修复webview打开百度失败的bug 发布1.7.1版本
+M	added.txt
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+A	app/src/main/res/drawable/bigbang_activity_window_full.xml
+A	count_id_1.7.1.txt
+M	groovy/compareFile.groovy
+M	info.txt
+M	removed.txt
+
+6874270;完成Bigbang全屏功能，功能键置顶设置
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+A	app/src/main/res/drawable/bigbang_activity_window_bg.xml
+M	app/src/main/res/layout/activity_big_bang.xml
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/layout/bigbang_layout.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+f14f66d;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+36e2dbe;xp支持在任一应用中双击触发
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+M	app/src/main/res/layout/card_xposed.xml
+M	app/src/xposed/java/com/forfan/bigbang/component/activity/setting/XposedCard.java
+M	xposed/build.gradle
+M	xposed/src/main/AndroidManifest.xml
+M	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+M	xposed/src/main/java/com/shang/xposed/XposedConstant.java
+M	xposed/src/main/java/com/shang/xposed/forcetouch/ForceTouchActivity.java
+A	xposed/src/main/java/com/shang/xposed/setting/StatusBarCompat.java
+M	xposed/src/main/java/com/shang/xposed/setting/XposedAppManagerActivity.java
+M	xposed/src/main/res/values/ids.xml
+
+256d056;add notification urlcount
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+
+7fb25f6;修复小米monkey的崩溃
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+
+c38625f;修复微信在7.0崩溃的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/ShareCard.java
+
+05e0028;wevActivity can modify settings now
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+d88083b;英文
+M	app/src/main/res/values-en/strings.xml
+
+33cc24d;增加打点，微调整一些设置和文案
+M	ToDoList.txt
+M	added.txt
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/DiyOcrKeyActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/MenuAdapter.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/SearchEngineActivity.java
+R096	app/src/main/java/com/forfan/bigbang/component/activity/setting/AboudCard.java	app/src/main/java/com/forfan/bigbang/component/activity/setting/AboutCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+A	app/src/main/java/com/forfan/bigbang/entity/SearchEngine.java
+M	app/src/main/java/com/forfan/bigbang/util/ColorUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/CountLinkMovementMethod.java
+M	app/src/main/java/com/forfan/bigbang/util/SearchEngineUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/layout/search_engine_edit.xml
+M	app/src/main/res/values-v19/styles.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+A	count_id_1.7.0.txt
+M	groovy/compareFile.groovy
+M	info.txt
+
+ec19c12;增加有道 知乎
+M	app/src/main/java/com/forfan/bigbang/util/SearchEngineUtil.java
+
+f29e877;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+e054cc5;分享增加了分享到电话以及地图
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+A	app/src/main/java/com/forfan/bigbang/util/SharedIntentHelper.java
+
+b6dbe59;状态栏变色的问题解决 自动适配字体颜色
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+D	app/src/main/java/com/forfan/bigbang/component/activity/SettingQueryActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/DiyOcrKeyActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/AboudCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+A	app/src/main/java/com/forfan/bigbang/util/ColorUtil.java
+M	app/src/main/res/drawable-xhdpi/diy_ocr_key_1.png
+M	app/src/main/res/layout/activity_capture_result.xml
+M	app/src/main/res/layout/activity_search_engine.xml
+D	app/src/main/res/layout/activity_setting_query.xml
+M	app/src/main/res/layout/items_translate.xml
+M	app/src/main/res/layout/search_engine_edit.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+f1d276a;自定义引擎页面ui
+M	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/SearchEngineActivity.java
+M	app/src/main/res/layout/activity_search_engine.xml
+M	app/src/main/res/values/dimens.xml
+
+54a17a3;diy 的可以使用
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+
+76c3836;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+d3a3fe9;完成diyOcrKey的引导
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/DiyOcrKeyActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/AboudCard.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+A	app/src/main/res/drawable-xhdpi/diy_ocr_key_1.png
+A	app/src/main/res/drawable-xhdpi/diy_ocr_key_2.png
+A	app/src/main/res/drawable-xhdpi/diy_ocr_key_3.png
+A	app/src/main/res/drawable-xhdpi/diy_ocr_key_4.png
+A	app/src/main/res/drawable-xhdpi/diy_ocr_key_5.png
+A	app/src/main/res/drawable-xhdpi/diy_ocr_key_6.png
+A	app/src/main/res/drawable-xhdpi/diy_ocr_key_7.png
+M	app/src/main/res/layout/activity_capture_result.xml
+M	app/src/main/res/layout/activity_diy_ocr_key.xml
+M	app/src/main/res/layout/card_about.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+2a87051;设置默认搜索引擎
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+D	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/Adapter.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/MenuAdapter.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/SearchEngineActivity.java
+D	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/SlidingButtonView.java
+D	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/Utils.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/listener/OnItemClickListener.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/view/ListViewDecoration.java
+A	app/src/main/java/com/forfan/bigbang/util/SearchEngineUtil.java
+A	app/src/main/res/drawable/divider_recycler.xml
+A	app/src/main/res/drawable/transpate.xml
+M	app/src/main/res/layout/activity_search_engine.xml
+A	app/src/main/res/layout/item.xml
+D	app/src/main/res/layout/layout_item.xml
+A	app/src/main/res/layout/search_engine_edit.xml
+A	app/src/main/res/mipmap-xhdpi/add.png
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+795ed27;修复有虚拟按键的手机上，区域截图位置向下漂移的bug
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+
+69ba7c2;settingbigbangactivity打点，微调界面，调整颜色饱和度，dialog按钮边距调整
+M	app/src/main/java/com/forfan/bigbang/component/activity/PreSettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/Dialog.java
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/colors.xml
+
+6e4f554;移动两个activity的位置 准备做diyOcrKeyActivity
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+R098	app/src/main/java/com/forfan/bigbang/component/PreSettingActivity.java	app/src/main/java/com/forfan/bigbang/component/activity/PreSettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/screen/DiyOcrKeyActivity.java
+A	app/src/main/res/layout/activity_diy_ocr_key.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+
+3b32b8c;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+07214c6;完成bigbang背景颜色自定义功能
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/PreSettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/array.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+A	colorpicker/.gitignore
+A	colorpicker/build.gradle
+A	colorpicker/proguard-rules.pro
+A	colorpicker/src/androidTest/java/com/flask/colorpicker/ApplicationTest.java
+A	colorpicker/src/main/AndroidManifest.xml
+A	colorpicker/src/main/java/com/flask/colorpicker/CircleColorDrawable.java
+A	colorpicker/src/main/java/com/flask/colorpicker/ColorCircle.java
+A	colorpicker/src/main/java/com/flask/colorpicker/ColorPickerPreference.java
+A	colorpicker/src/main/java/com/flask/colorpicker/ColorPickerView.java
+A	colorpicker/src/main/java/com/flask/colorpicker/OnColorChangedListener.java
+A	colorpicker/src/main/java/com/flask/colorpicker/OnColorSelectedListener.java
+A	colorpicker/src/main/java/com/flask/colorpicker/Utils.java
+A	colorpicker/src/main/java/com/flask/colorpicker/builder/ColorPickerClickListener.java
+A	colorpicker/src/main/java/com/flask/colorpicker/builder/ColorPickerDialogBuilder.java
+A	colorpicker/src/main/java/com/flask/colorpicker/builder/ColorWheelRendererBuilder.java
+A	colorpicker/src/main/java/com/flask/colorpicker/builder/PaintBuilder.java
+A	colorpicker/src/main/java/com/flask/colorpicker/renderer/AbsColorWheelRenderer.java
+A	colorpicker/src/main/java/com/flask/colorpicker/renderer/ColorWheelRenderOption.java
+A	colorpicker/src/main/java/com/flask/colorpicker/renderer/ColorWheelRenderer.java
+A	colorpicker/src/main/java/com/flask/colorpicker/renderer/FlowerColorWheelRenderer.java
+A	colorpicker/src/main/java/com/flask/colorpicker/renderer/SimpleColorWheelRenderer.java
+A	colorpicker/src/main/java/com/flask/colorpicker/slider/AbsCustomSlider.java
+A	colorpicker/src/main/java/com/flask/colorpicker/slider/AlphaSlider.java
+A	colorpicker/src/main/java/com/flask/colorpicker/slider/LightnessSlider.java
+A	colorpicker/src/main/java/com/flask/colorpicker/slider/OnValueChangedListener.java
+A	colorpicker/src/main/res/layout/color_preview.xml
+A	colorpicker/src/main/res/layout/color_selector.xml
+A	colorpicker/src/main/res/layout/color_widget.xml
+A	colorpicker/src/main/res/layout/picker_edit.xml
+A	colorpicker/src/main/res/values/attrs.xml
+A	colorpicker/src/main/res/values/dimens.xml
+A	colorpicker/src/main/res/values/styles.xml
+M	settings.gradle
+
+ded9aaa;ocr 次数耗尽时的解决方案
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/Adapter.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/SearchEngineActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/SlidingButtonView.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/searchengine/Utils.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+A	app/src/main/res/layout/activity_search_engine.xml
+M	app/src/main/res/layout/card_bigbang_setting.xml
+A	app/src/main/res/layout/layout_item.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+4e16f98;修复回退键引起的crash
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+
+f95c945;修改todoList
+M	ToDoList.txt
+
+1d1a519;发布1.6.9版本 修复一点小bug
+M	added.txt
+M	app/build.gradle
+A	app/src/coolapk/res/values-en/strings.xml
+A	app/src/coolapk/res/values/strings.xml
+M	app/src/main/java/com/forfan/bigbang/util/ChanelUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/values/strings.xml
+A	count_id_1.6.8.txt
+M	groovy/compareFile.groovy
+M	info.txt
+
+9272842;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+1cd881b;本地分词的问题 白色识别结果
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/res/layout/activity_capture_result.xml
+
+b8e299a;开启时不显示hintTextView动画
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/view/HintTextView.java
+
+dcb35fd;分享到微信暂时用try包起来了，以后研究7.0崩溃的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/ShareCard.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+d4efd0d;调整preSetting在透明底栏上的显示
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/res/values-v21/styles.xml
+M	app/src/main/res/values/styles.xml
+
+d7fd530;默认关闭悬浮窗、通知栏、悬浮窗触发，preSetting页面通过snackbar显示权限提醒
+M	app/src/main/java/com/forfan/bigbang/component/PreSettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+0f38f8c;presettingActivity添加动画
+M	app/src/main/java/com/forfan/bigbang/component/PreSettingActivity.java
+M	app/src/main/res/layout/activity_presetting.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+9957c58;xposed 框架打包
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	xposed/src/main/java/com/shang/xposed/Logger.java
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+
+5cc5964;截图后disable掉截图功能，hinttextview添加动画，通知栏权限自动检测
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/HintTextView.java
+M	app/src/main/java/com/forfan/bigbang/view/MarkSizeView.java
+M	app/src/main/res/drawable/card_list_divider.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+f292ab4;修改flaver的名字和结构
+M	app/build.gradle
+R100	app/src/main/java/com/forfan/bigbang/component/activity/setting/XposedCard.java	app/src/Normal/java/com/forfan/bigbang/component/activity/setting/XposedCard.java
+R100	app/src/main/java/com/forfan/bigbang/util/XposedEnableUtil.java	app/src/Normal/java/com/forfan/bigbang/util/XposedEnableUtil.java
+R100	app/src/coolapk/res/values-en/strings.xml	app/src/Normal/res/values-en/strings.xml
+R100	app/src/coolapk/res/values/strings.xml	app/src/Normal/res/values/strings.xml
+M	app/src/main/java/com/forfan/bigbang/component/PreSettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ChanelUtil.java
+M	app/src/main/res/layout/activity_presetting.xml
+R096	app/src/coolapk/java/com/forfun/bigbang/component/activity/setting/XposedCard.java	app/src/xposed/java/com/forfan/bigbang/component/activity/setting/XposedCard.java
+R083	app/src/coolapk/java/com/forfun/bigbang/util/XposedEnableUtil.java	app/src/xposed/java/com/forfan/bigbang/util/XposedEnableUtil.java
+A	app/src/xposed/res/values-en/strings.xml
+A	app/src/xposed/res/values/strings.xml
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+M	xposed/src/main/java/com/shang/xposed/XposedConstant.java
+
+ab3379d;Merge remote-tracking branch 'origin/master'
+7b6c9b7;完成触发方式的引导页
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/PreSettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/MarkSizeView.java
+M	app/src/main/res/layout/activity_presetting.xml
+M	app/src/main/res/layout/activity_splash.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+2121e2e;ocr页面打点统计
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+
+fa02d8f;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+b8343db;修改部分提示
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+
+1af7afb;修复悬浮窗不能显示完全的bug，截屏对话框做自动横竖切换
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/activity_capture_result.xml
+M	app/src/main/res/layout/activity_screen_capture.xml
+M	app/src/main/res/layout/card_float_notify_setting.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+1181936;Merge remote-tracking branch 'origin/master'
+cefb6f4;可以选择通过悬浮窗触发bigbang
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+R072	app/src/main/res/layout/card_choice.xml	app/src/main/res/layout/card_bigbang_setting.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+a040be3;修复截屏区域超出屏幕时的bug
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/view/MarkSizeView.java
+
+fefa88c;[FIXED]修复部分崩溃的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+
+5e17333;catch crashs
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+
+8908ca0;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+866c860;修复部分crash
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+
+ba99681;名字改成Bigbang！ 发布1.6.8版
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ChanelUtil.java
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+f81e1eb;单独给coolapk设置flaver 以后xp和其他模块单独维护
+M	app/build.gradle
+A	app/src/coolapk/java/com/forfun/bigbang/component/activity/setting/XposedCard.java
+A	app/src/coolapk/java/com/forfun/bigbang/util/XposedEnableUtil.java
+A	app/src/coolapk/res/values-en/strings.xml
+A	app/src/coolapk/res/values/strings.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/OcrCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/XposedCard.java
+A	app/src/main/java/com/forfan/bigbang/util/XposedEnableUtil.java
+M	app/src/main/res/values/strings.xml
+
+21aa21d;修复截图时按钮不消失的bug
+M	app/src/main/java/com/forfan/bigbang/view/MarkSizeView.java
+M	app/src/main/res/values/strings.xml
+
+659f52f;ocr 识别失败的toast
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+
+bb6e91f;截图结果页面
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/res/layout/activity_capture_result.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+7d12e40;capture almost done
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/WakeUpBroadcastReceiver.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/screen/CaptureResultActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+A	app/src/main/java/com/forfan/bigbang/view/MarkSizeView.java
+A	app/src/main/res/layout/activity_capture_result.xml
+A	app/src/main/res/layout/activity_screen_capture.xml
+A	app/src/main/res/mipmap-xhdpi/ic_close_capture.png
+M	app/src/main/res/values-en/strings.xml
+A	app/src/main/res/values/attrs_mark_size.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+M	psFiles/bigbang_action_symbol.psd
+
+31aa94b;pre 设置页面，ocr第一次截图的问题
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/forfan/bigbang/component/PreSettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+A	app/src/main/java/com/forfan/bigbang/view/ColorTextView.java
+M	app/src/main/java/com/forfan/bigbang/view/GuideView.java
+A	app/src/main/res/layout/activity_presetting.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+bafba36;修复第一次无法截屏的问题，ocr可以正常识别，截屏返回地址接口，ocr识别重试逻辑
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/values/strings.xml
+M	lib/src/main/java/com/microsoft/projectoxford/vision/VisionServiceRestClient.java
+M	lib/src/main/java/com/microsoft/projectoxford/vision/rest/WebServiceRequest.java
+
+6a01302;修复bigbang ocr 的问题
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+
+1531bb8;修改应用名字 新增todolist
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/res/values/strings.xml
+
+3ea02e2;发布1.6.2版本 内存泄露检测可以用了
+M	ToDoList.txt
+M	added.txt
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigbangNotification.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/notification_box_light.xml
+M	app/src/main/res/layout/notification_box_trans.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+A	count_id_1.6.2.txt
+M	groovy/compareFile.groovy
+M	info.txt
+
+1dad27e;发布1.6.0版本
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/res/values/styles.xml
+M	info.txt
+M	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java
+
+d05d949;优化悬浮窗和通知栏开关 开启通知栏时，也不用悬浮窗来二次判断是否触发bigbang
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/HintTextView.java
+M	app/src/main/res/layout/card_float_notify_setting.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+49b4f60;打点相关
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/XposedCard.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/layout/card_xposed.xml
+
+6844c79;介绍页面 本地非词
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/RegexUtil.java
+M	app/src/main/res/layout/bigbang_layout.xml
+M	app/src/main/res/layout/card_xposed.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+51c6291;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+370d058;5.0一下的手机不截屏
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+a26a7b7;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+ba83a2b;replace some pics
+M	app/src/main/res/drawable-xhdpi/toolbar_search.png
+M	app/src/main/res/drawable-xhdpi/umeng_fb_audio_dialog_cancel.png
+M	app/src/main/res/drawable-xhdpi/umeng_fb_audio_dialog_content.png
+M	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_01.png
+M	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_02.png
+M	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_03.png
+M	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_bg.9.png
+M	app/src/main/res/drawable-xhdpi/umeng_fb_keyboard.png
+M	app/src/main/res/drawable-xhdpi/umeng_fb_plus.png
+M	app/src/main/res/drawable-xhdpi/umeng_fb_record.png
+M	app/src/main/res/drawable/umeng_fb_action_replay.png
+M	app/src/main/res/drawable/umeng_fb_arrow_right.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_enter.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_no_enter.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_no_symbol.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_symbol.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_nor.9.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_nor_section.9.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_sel.9.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_sel_section.9.png
+M	psFiles/bigbang_action_enter.psd
+M	psFiles/bigbang_action_symbol.psd
+
+84fa881;xposed的 bigbang改为双击执行
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/XposedCard.java
+M	commonjar/src/main/java/com/shang/commonjar/contentProvider/ConstantUtil.java
+M	commonjar/src/main/java/com/shang/commonjar/contentProvider/SPHelperImpl.java
+M	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+M	xposed/src/main/java/com/shang/xposed/forcetouch/ForceTouchActivity.java
+
+e47208c;bigbang 背景 ，间距
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+
+dc3665d;首页卡片修改
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/res/layout/card_choice.xml
+M	app/src/main/res/layout/card_function_setting.xml
+M	app/src/main/res/layout/card_xposed.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+df27b6b;完成通知栏功能
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+A	app/src/main/java/com/forfan/bigbang/component/service/BigbangNotification.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+D	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java.orig
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+A	app/src/main/res/drawable/notify_item_bg_light.xml
+A	app/src/main/res/drawable/notify_item_bg_transe.xml
+M	app/src/main/res/layout/card_float_notify_setting.xml
+A	app/src/main/res/layout/notification_box_light.xml
+A	app/src/main/res/layout/notification_box_trans.xml
+A	app/src/main/res/layout/notification_light.xml
+A	app/src/main/res/layout/notification_trans.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+
+a1c64a7;一些英文的string 修复touch 中无法使用软键盘的问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	xposed/src/main/AndroidManifest.xml
+M	xposed/src/main/java/com/shang/xposed/forcetouch/ForceTouchActivity.java
+M	xposed/src/main/res/layout/activity_forcetouch_setting.xml
+M	xposed/src/main/res/values-en/strings.xml
+M	xposed/src/main/res/values/strings.xml
+
+aae010c;增加了自定义透明度 优化了ui，xposed + 问题，设置页面
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/layout/bigbang_layout.xml
+M	app/src/main/res/layout/card_xposed.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/colors_material.xml
+M	app/src/main/res/values/strings.xml
+M	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java
+M	xposed/src/main/java/com/shang/xposed/forcetouch/ForceTouchActivity.java
+M	xposed/src/main/res/layout/activity_forcetouch_setting.xml
+
+aa1fdaa;更新todolist 2个字符一下不炸 提交hinttextview
+M	ToDoList.txt
+M	app/proguard-rules.pro
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+A	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java.orig
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+A	app/src/main/java/com/forfan/bigbang/util/TipViewController.java.orig
+A	app/src/main/java/com/forfan/bigbang/view/HintTextView.java
+M	app/src/main/res/layout/card_about.xml
+M	app/src/main/res/layout/card_choice.xml
+M	app/src/main/res/layout/card_feedback_update.xml
+M	app/src/main/res/layout/card_float_notify_setting.xml
+M	app/src/main/res/layout/card_function_setting.xml
+M	app/src/main/res/layout/card_monitor_setting.xml
+A	app/src/main/res/layout/hint_text_view_layout.xml
+M	app/src/main/res/values-en/strings.xml
+A	app/src/main/res/values/attrs_hint_text_view.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+M	commonjar/build.gradle
+
+26e5d73;xposed框架 force-touch
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/layout/card_xposed.xml
+M	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+M	xposed/src/main/java/com/shang/xposed/forcetouch/ForceTouchActivity.java
+M	xposed/src/main/java/com/shang/xposed/setting/XposedAppManagerActivity.java
+M	xposed/src/main/res/layout/activity_forcetouch_setting.xml
+M	xposed/src/main/res/layout/activity_xposed_app_manager.xml
+M	xposed/src/main/res/values-en/strings.xml
+M	xposed/src/main/res/values/strings.xml
+
+1471c9d;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+2d21ff3;更改目录包结构
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/DonateActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/ShareCard.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/XposedCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/WhiteListActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/base/BaseActivity.java
+D	app/src/main/java/com/forfan/bigbang/component/contentProvider/SPHelper.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/RegexUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+A	app/src/main/res/layout/card_xposed.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+A	commonjar/.gitignore
+A	commonjar/build.gradle
+A	commonjar/proguard-rules.pro
+A	commonjar/src/androidTest/java/com/shang/commonjar/ExampleInstrumentedTest.java
+A	commonjar/src/main/AndroidManifest.xml
+R088	app/src/main/java/com/forfan/bigbang/component/contentProvider/BigBangContentProvider.java	commonjar/src/main/java/com/shang/commonjar/contentProvider/BigBangContentProvider.java
+A	commonjar/src/main/java/com/shang/commonjar/contentProvider/ConstantUtil.java
+A	commonjar/src/main/java/com/shang/commonjar/contentProvider/Global.java
+A	commonjar/src/main/java/com/shang/commonjar/contentProvider/SPHelper.java
+R084	app/src/main/java/com/forfan/bigbang/component/contentProvider/SPHelperImpl.java	commonjar/src/main/java/com/shang/commonjar/contentProvider/SPHelperImpl.java
+R098	app/src/main/java/com/forfan/bigbang/util/StatusBarCompat.java	commonjar/src/main/java/com/shang/utils/StatusBarCompat.java
+A	commonjar/src/main/res/values/strings.xml
+A	commonjar/src/test/java/com/shang/commonjar/ExampleUnitTest.java
+M	settings.gradle
+M	xposed/build.gradle
+M	xposed/src/main/AndroidManifest.xml
+M	xposed/src/main/java/com/shang/xposed/Filter.java
+M	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+R086	app/src/main/java/com/forfan/bigbang/forcetouch/Callback.java	xposed/src/main/java/com/shang/xposed/forcetouch/Callback.java
+A	xposed/src/main/java/com/shang/xposed/forcetouch/ForceTouchActivity.java
+R099	app/src/main/java/com/forfan/bigbang/forcetouch/ForceTouchListener.java	xposed/src/main/java/com/shang/xposed/forcetouch/ForceTouchListener.java
+A	xposed/src/main/res/layout/activity_forcetouch_setting.xml
+A	xposed/src/main/res/values-en/strings.xml
+A	xposed/src/main/res/values/dimens.xml
+M	xposed/src/main/res/values/strings.xml
+
+7a65608;修复一个monitorsetvice的空指针崩溃
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+
+c681e99;再暂存一下修改的卡片，可以使用了
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/layout/card_float_notify_setting.xml
+
+19ea327;暂存以下修改的卡片
+M	ToDoList.txt
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/AboudCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/FloatAndNotifySettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/CountLinkMovementMethod.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+A	app/src/main/res/layout/card_about.xml
+M	app/src/main/res/layout/card_feedback_update.xml
+A	app/src/main/res/layout/card_float_notify_setting.xml
+M	app/src/main/res/layout/card_function_setting.xml
+
+c2b1658;改toolbar的显示
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/DonateActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+R095	app/src/main/java/com/forfan/bigbang/component/activity/setting/ChoiceCard.java	app/src/main/java/com/forfan/bigbang/component/activity/setting/BigBangSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/WhiteListActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/layout/activity_donate.xml
+M	app/src/main/res/layout/activity_monitor_white_list.xml
+M	app/src/main/res/layout/activity_orc.xml
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/layout/activity_web.xml
+M	app/src/main/res/layout/card_monitor_setting.xml
+M	app/src/main/res/layout/card_ocr.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+
+61776c2;记录悬浮球位置，重启后还在那里
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+3fe3385;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+156a8b2;悬浮窗记录上次的位置
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+
+02dc0cd;ocr 界面文字可编辑 focetouch 功能 bigbang页面打点 本地分词优化
+M	ToDoList.txt
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/cropper/CropParams.java
+A	app/src/main/java/com/forfan/bigbang/forcetouch/Callback.java
+A	app/src/main/java/com/forfan/bigbang/forcetouch/ForceTouchListener.java
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+A	app/src/main/java/com/forfan/bigbang/util/RegexUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/layout/activity_orc.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+97e5440;保留段落和标点的图标完善，段首颜色加深
+M	app/src/main/java/com/forfan/bigbang/view/BigBangBottom.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+A	app/src/main/res/drawable/item_background_section.xml
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_no_enter.png
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_no_symbol.png
+A	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_nor_section.9.png
+A	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_sel_section.9.png
+M	app/src/main/res/values/attrs.xml
+M	psFiles/bigbang_action_enter.psd
+M	psFiles/bigbang_action_symbol.psd
+
+4b79fe2;保留段落完成
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangBottom.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_enter.png
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_symbol.png
+A	psFiles/bigbang_action_enter.psd
+A	psFiles/bigbang_action_symbol.psd
+
+1790445;更新todoList
+M	ToDoList.txt
+
+724306c;增加xposed 唤醒，增加分行逻辑
+A	app/src/main/java/com/forfan/bigbang/component/WakeUpBroadcastReceiver.java
+M	app/src/main/java/com/forfan/bigbang/network/api/WordSegmentService.java
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+
+485827a;发布1.5.2版
+M	ToDoList.txt
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/OcrCard.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	gradle.properties
+M	info.txt
+M	xposed/src/main/AndroidManifest.xml
+
+23ae3fd;去掉混淆bigbang
+M	app/build.gradle
+M	app/proguard-rules.pro
+M	xposed/proguard-rules.pro
+R097	xposed/src/main/java/com/shang/xposed/L.java	xposed/src/main/java/com/shang/xposed/Logger.java
+R097	xposed/src/main/java/com/shang/xposed/TouchHandler.java	xposed/src/main/java/com/shang/xposed/TouchEventHandler.java
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+
+ab29639;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+a0a8c15;修复点小bug
+M	ToDoList.txt
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangBottom.java
+M	app/src/main/res/layout/activity_big_bang.xml
+M	app/src/main/res/layout/card_ocr.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	info.txt
+M	xposed/build.gradle
+
+78ada4e;替换隐藏时的图标
+M	app/src/main/res/mipmap-xhdpi/floatview_hide_left.png
+M	app/src/main/res/mipmap-xhdpi/floatview_hide_right.png
+M	psFiles/floatview_hide_left.psd
+
+25ea59d;修复屏幕截图长时间等待的问题，增加xposed框架
+M	ToDoList.txt
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/OcrCard.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+
+8c46c27;修复部分bug 加入xposed框架
+M	ToDoList.txt
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/OcrCard.java
+M	app/src/main/java/com/forfan/bigbang/test/TestActivity.java
+M	app/src/main/res/layout/card_ocr.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	settings.gradle
+A	xposed/.gitignore
+A	xposed/build.gradle
+A	xposed/proguard-rules.pro
+A	xposed/src/androidTest/java/com/shang/xposed/ExampleInstrumentedTest.java
+A	xposed/src/main/AndroidManifest.xml
+A	xposed/src/main/assets/xposed_init
+A	xposed/src/main/java/com/shang/xposed/Filter.java
+A	xposed/src/main/java/com/shang/xposed/L.java
+A	xposed/src/main/java/com/shang/xposed/TouchHandler.java
+A	xposed/src/main/java/com/shang/xposed/XposedBigBang.java
+A	xposed/src/main/java/com/shang/xposed/XposedConstant.java
+A	xposed/src/main/java/com/shang/xposed/XposedEnable.java
+A	xposed/src/main/java/com/shang/xposed/setting/Adapter.java
+A	xposed/src/main/java/com/shang/xposed/setting/AppInfo.java
+A	xposed/src/main/java/com/shang/xposed/setting/XposedAppManagerActivity.java
+A	xposed/src/main/res/layout/activity_xposed_app_manager.xml
+A	xposed/src/main/res/layout/item_app_info.xml
+A	xposed/src/main/res/layout/item_empty_info.xml
+A	xposed/src/main/res/layout/item_loading.xml
+A	xposed/src/main/res/menu/app_manger.xml
+A	xposed/src/main/res/values/colors.xml
+A	xposed/src/main/res/values/ids.xml
+A	xposed/src/main/res/values/strings.xml
+A	xposed/src/main/res/values/styles.xml
+A	xposed/src/test/java/com/shang/xposed/ExampleUnitTest.java
+
+65602f3;Bigbang添加本地分词选项，添加超时判断，删掉全选按钮，不长期显示悬浮窗的情况下，弹悬浮窗来让用户触发bigbang
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangBottom.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+A	app/src/main/java/com/forfan/bigbang/view/BigBangLayoutWrapper.java
+M	app/src/main/res/layout/activity_big_bang.xml
+M	app/src/main/res/layout/activity_intro.xml
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+A	app/src/main/res/layout/bigbang_layout.xml
+M	app/src/main/res/layout/view_float.xml
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_cloud.png
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_local.png
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_select_all.png
+M	app/src/main/res/mipmap-xhdpi/floatview_hide_left.png
+M	app/src/main/res/mipmap-xhdpi/floatview_hide_right.png
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	psFiles/bannar.psd
+A	psFiles/bigbang_action_cloud.psd
+A	psFiles/bigbang_action_local2.psd
+
+874c8d4;悬浮窗自动隐藏，悬浮窗动画
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/layout/view_float.xml
+A	app/src/main/res/mipmap-xhdpi/floatview_hide_left.png
+A	app/src/main/res/mipmap-xhdpi/floatview_hide_right.png
+A	psFiles/floatview_hide_left.psd
+
+3cca391;悬浮窗动画只播放5秒 修复: 悬浮球中的开关在重启后会重置为开启
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+
+7e39986;添加打点记录的处理脚本
+A	added.txt
+A	count_id_1.5.0.txt
+A	groovy/compareFile.groovy
+A	removed.txt
+
+67a8e84;发布1.5.0版
+M	info.txt
+
+9bb8ad3;添加微信分享功能及相关打点
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/ShareCard.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/layout/card_feedback_update.xml
+R100	app/src/main/assets/bannar.jpg	app/src/main/res/mipmap-xhdpi/bannar.jpg
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+1d47bf7;添加banner图片，用于分享
+D	1479609520.png
+A	app/src/main/assets/bannar.jpg
+
+4b028e4;修复@的bug OCRActivity崩溃的bug 全局截屏内存减半 手心输入法的bug 全局复制直接炸开 微信优化 全局ocr动画
+A	1479609520.png
+M	ToDoList.txt
+M	app/build.gradle
+M	app/proguard-rules.pro
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/layout/view_float.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/accessibility.xml
+
+9f1034d;添加捐赠页以及相关打点
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/forfan/bigbang/component/activity/DonateActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/util/CountLinkMovementMethod.java
+M	app/src/main/java/com/forfan/bigbang/util/IOUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+A	app/src/main/res/drawable/alipay.jpg
+A	app/src/main/res/drawable/wechat.jpg
+A	app/src/main/res/layout/activity_donate.xml
+M	app/src/main/res/layout/card_feedback_update.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+100b8ba;打点逻辑补充
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/ChoiceCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/OcrCard.java
+M	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+A	app/src/main/java/com/forfan/bigbang/util/CountLinkMovementMethod.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+a00386d;部分打点 英文分词问题
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+M	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+
+551e2c3;添加悬浮窗的开启请求 bigbang添加文本分享接口
+M	ToDoList.txt
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/drawable/float_view_bg.xml
+M	app/src/main/res/drawable/float_view_switch_bg.xml
+M	app/src/main/res/layout/activity_orc.xml
+M	app/src/main/res/layout/card_function_setting.xml
+M	app/src/main/res/layout/view_float.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+f997493;链接到图片分享
+M	app/src/main/AndroidManifest.xml
+
+f2a446b;ocr 的 key 用别人的
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+
+e921a25;细节改进
+M	app/proguard-rules.pro
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/values/strings.xml
+D	lib/supportlibs/commons-io-2.4.jar
+
+d93ba14;ocr 识别 ，分享等逻辑
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/ScreenCaptureActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/screen/ScreenCaptureService.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+A	app/src/main/java/com/forfan/bigbang/util/OcrAnalsyser.java
+M	app/src/main/java/com/forfan/bigbang/util/ToastUtil.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+M	lib/src/main/java/com/microsoft/projectoxford/vision/rest/WebServiceRequest.java
+
+5a40c5d; 完成悬浮窗功能ui的修改，还需添加功能调用
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+A	app/src/main/res/drawable-xhdpi/ic_switch_on.png
+R057	app/src/main/res/drawable/float_image_bg.xml	app/src/main/res/drawable/float_view_bg.xml
+A	app/src/main/res/drawable/float_view_image_bg.xml
+A	app/src/main/res/drawable/float_view_switch_bg.xml
+M	app/src/main/res/layout/activity_copy_overlay.xml
+M	app/src/main/res/layout/dialog_copy_text_editor.xml
+M	app/src/main/res/layout/view_float.xml
+M	app/src/main/res/menu/universal_copy.xml
+D	app/src/main/res/mipmap-xhdpi/ic_content_copy_white_24dp.png
+A	app/src/main/res/mipmap-xhdpi/ic_float_copy.png
+A	app/src/main/res/mipmap-xhdpi/ic_float_screen.png
+A	app/src/main/res/mipmap-xhdpi/ic_float_switch.png
+M	app/src/main/res/values/colors_material.xml
+
+9e28aab;完成全局复制的功能
+M	ToDoList.txt
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/baseCard/DividerItemDecoration.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+A	app/src/main/java/com/forfan/bigbang/copy/CopyActivity.java
+A	app/src/main/java/com/forfan/bigbang/copy/CopyNode.java
+A	app/src/main/java/com/forfan/bigbang/copy/CopyNodeView.java
+A	app/src/main/res/drawable/borders.xml
+A	app/src/main/res/layout/activity_copy_overlay.xml
+A	app/src/main/res/layout/dialog_copy_text_editor.xml
+A	app/src/main/res/menu/universal_copy.xml
+A	app/src/main/res/mipmap-xhdpi/ic_arrow_back_white_24dp.png
+A	app/src/main/res/mipmap-xhdpi/ic_close_white_24dp.png
+A	app/src/main/res/mipmap-xhdpi/ic_content_copy_white_24dp.png
+A	app/src/main/res/mipmap-xhdpi/ic_crop_free_white_24dp.png
+A	app/src/main/res/mipmap-xhdpi/ic_edit_white_24dp.png
+A	app/src/main/res/mipmap-xhdpi/ic_fullscreen_white_24dp.png
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+M	app/src/main/res/xml/accessibility.xml
+
+237bcc2;使用微软 的ocr 识别
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/network/api/MicSoftOcrService.java
+M	app/src/main/java/com/forfan/bigbang/test/TestActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/IOUtil.java
+M	app/src/main/res/layout/activity_orc.xml
+M	lib/build.gradle
+D	lib/src/main/java/com/microsoft/projectoxford/vision/VisionServiceClient.java
+M	lib/src/main/java/com/microsoft/projectoxford/vision/VisionServiceRestClient.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Adult.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/AnalysisInDomainResult.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/AnalysisResult.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Caption.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Category.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Color.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Description.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Face.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/FaceRectangle.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/GenderEnum.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/ImageType.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Metadata.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Model.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/ModelResult.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/NameScorePair.java
+D	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Tag.java
+M	lib/src/main/java/com/microsoft/projectoxford/vision/rest/VisionServiceException.java
+M	lib/src/main/java/com/microsoft/projectoxford/vision/rest/WebServiceRequest.java
+
+00c9648;添加微软ocr识别接口
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/network/RetrofitHelper.java
+A	app/src/main/java/com/forfan/bigbang/network/api/MicSoftOcrService.java
+M	app/src/main/java/com/forfan/bigbang/test/TestActivity.java
+A	lib/.gitignore
+A	lib/build.gradle
+A	lib/src/main/AndroidManifest.xml
+A	lib/src/main/gen/com/microsoft/projectoxford/vision/BuildConfig.java
+A	lib/src/main/gen/com/microsoft/projectoxford/vision/Manifest.java
+A	lib/src/main/gen/com/microsoft/projectoxford/vision/R.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/VisionServiceClient.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/VisionServiceRestClient.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Adult.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/AnalysisInDomainResult.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/AnalysisResult.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Caption.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Category.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Color.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Description.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Face.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/FaceRectangle.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/GenderEnum.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/ImageType.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/LanguageCodes.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Line.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Metadata.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Model.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/ModelResult.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/NameScorePair.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/OCR.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Region.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Tag.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/contract/Word.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/rest/HttpPatch.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/rest/VisionServiceException.java
+A	lib/src/main/java/com/microsoft/projectoxford/vision/rest/WebServiceRequest.java
+A	lib/supportlibs/commons-io-2.4.jar
+M	settings.gradle
+
+f7a7dcc;手心输入法的bug修复 杀进程白名单丢失的bug修复
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+f6f1740;添加一键加群 修复bug：杀进程就会提示开启辅助模式
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+7e7af33;修复内置浏览器打开外部浏览器的bug
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+
+f241892;替换图标 微调设置的文案 发布1.4.0版本
+M	ToDoList.txt
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/WhiteListActivity.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+D	app/src/main/res/drawable-xhdpi/ic_monitor_off.png
+M	app/src/main/res/drawable-xhdpi/ic_monitor_on.png
+M	app/src/main/res/drawable/float_image_bg.xml
+M	app/src/main/res/layout/activity_intro.xml
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+4315974;去掉360搜索
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/res/layout/simple_spinner_item.xml
+M	app/src/main/res/values-en/array.xml
+M	app/src/main/res/values/array.xml
+M	app/src/main/res/values/styles.xml
+
+45a6ba5;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+2a79b6b;下拉栏的样式
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+A	app/src/main/res/drawable/spinner_item_selector.xml
+M	app/src/main/res/layout/activity_web.xml
+A	app/src/main/res/layout/simple_spinner_dropdown_item.xml
+A	app/src/main/res/layout/simple_spinner_item.xml
+M	app/src/main/res/values/styles.xml
+
+26d7747;修改拖动，全选，反选的位置 添加双击间隔的设定 添加权限检查
+M	ToDoList.txt
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/base/PermissionActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/EasyPermissions.java
+A	app/src/main/java/com/forfan/bigbang/view/BigBangBottom.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/activity_setting_query.xml
+M	app/src/main/res/layout/card_monitor_setting.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+f8eb534;浏览器可以选择搜索引擎啦
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/res/layout/activity_web.xml
+M	app/src/main/res/values-en/array.xml
+M	app/src/main/res/values/array.xml
+M	app/src/main/res/values/styles.xml
+
+799804f; 完成双击的功能
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/res/values-en/array.xml
+M	app/src/main/res/values-v21/styles.xml
+M	app/src/main/res/values/array.xml
+
+a0e7f40;调整设置页面中，设置Bigbang样式的位置，隐藏其中对webview的设置项
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/ChoiceCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/layout/card_choice.xml
+M	app/src/main/res/layout/card_function_setting.xml
+
+ac6f03f;添加监控白名单
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/AppListAdapter.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/whitelist/WhiteListActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+A	app/src/main/res/drawable-xhdpi/toolbar_search.png
+A	app/src/main/res/drawable/situation_divider.xml
+A	app/src/main/res/layout/activity_monitor_white_list.xml
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/layout/card_monitor_setting.xml
+A	app/src/main/res/layout/item_app_list.xml
+A	app/src/main/res/menu/white_list_activity_menu.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+3df8750;修复内置webview 回退 bug,添加设置项可切换使用的浏览器
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/ChoiceCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+A	app/src/main/res/layout/card_choice.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+106885c;完成了query setting的一部分
+M	ToDoList.txt
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+R085	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingBigBangActivity.java	app/src/main/java/com/forfan/bigbang/component/activity/SettingBigBangActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/SettingQueryActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+A	app/src/main/res/layout/activity_setting_query.xml
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+b6908d0;添加捐赠的链接
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/view/SimpleDialog.java
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+c3e4d36;修复bug：分享给微信好友以后就不能分享给其他人了
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+2edb0a2;补充英文的支持 修复复制英语的时候反复触发bigbang 修复设置Bigbang的时候总是跳动的bug 添加悬浮窗无权限的引导
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+A	app/src/main/res/values-en/array.xml
+M	app/src/main/res/values-en/strings.xml
+A	app/src/main/res/values-en/umeng_fb_strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/umeng_fb_strings.xml
+M	app/src/main/res/xml/accessibility.xml
+M	info.txt
+
+1ebdb90;调整bigbang样式 webview自动识别网址和搜索词
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/res/layout/activity_intro.xml
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+
+5fec780;增加英文的支持
+A	app/src/main/res/values-en/strings.xml
+M	app/src/main/res/values/strings.xml
+
+b6d02e6;加入bigbang样式调整 调整webview的ui
+M	ToDoList.txt
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingBigBangActivity.java
+A	app/src/main/java/com/forfan/bigbang/util/ChanelUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/layout/activity_web.xml
+M	app/src/main/res/layout/card_function_setting.xml
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_select_all.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_select_other.png
+M	app/src/main/res/mipmap-xhdpi/ic_browser.png
+M	app/src/main/res/mipmap-xhdpi/ic_close.png
+D	app/src/main/res/mipmap-xhdpi/selece_all.png
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/styles.xml
+M	info.txt
+
+070a64c;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+151a7ad;将所有字符串放到string中
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/res/layout/activity_orc.xml
+M	app/src/main/res/layout/activity_splash.xml
+M	app/src/main/res/layout/activity_web.xml
+M	app/src/main/res/layout/card_ocr.xml
+M	app/src/main/res/layout/items_translate.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+
+4c6e5ea;发布1.2.0版本
+M	app/build.gradle
+M	info.txt
+
+b8fb3c5;修复复制反复触发bigbang 使用在线参数控制检测升级 把桌面和输入法加入到白名单中
+M	ToDoList.txt
+M	app/src/main/java/com/forfan/bigbang/clipboard/ClipboardManagerCompat.java
+M	app/src/main/java/com/forfan/bigbang/clipboard/ClipboardManagerImpl11.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/res/values/strings.xml
+M	info.txt
+
+49d5455;加入本地弱鸡分词
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+
+1a779c0;添加webview相关图片
+A	app/src/main/res/mipmap-xhdpi/ic_browser.png
+A	app/src/main/res/mipmap-xhdpi/ic_close.png
+A	psFiles/bannar.psd
+A	psFiles/ic_browser.psd
+A	psFiles/ic_close.psd
+
+8958391;加载进度条问题
+M	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+
+c783121;增加了简单 的网页webview
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/WebActivity.java
+A	app/src/main/java/com/forfan/bigbang/util/DensityUtils.java
+A	app/src/main/res/layout/activity_web.xml
+
+ace0364;发布1.1.0版本
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/JobService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/res/layout/activity_setting.xml
+M	app/src/main/res/layout/card_function_setting.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+M	info.txt
+
+810fd3c;暂存一下，准备发新版
+M	ToDoList.txt
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingBigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/activity_big_bang.xml
+A	app/src/main/res/layout/activity_setting_bigbang.xml
+M	app/src/main/res/layout/card_function_setting.xml
+A	app/src/main/res/mipmap-xhdpi/selece_all.png
+M	app/src/main/res/values/strings.xml
+
+4322fa0;增加ocr拍照或者从相册选取
+M	app/build.gradle
+A	app/libs/AndroidScreenCap.jar
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/forfan/bigbang/component/activity/OcrActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/OcrCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+A	app/src/main/java/com/forfan/bigbang/cropper/BitmapUtil.java
+A	app/src/main/java/com/forfan/bigbang/cropper/CompressImageUtils.java
+A	app/src/main/java/com/forfan/bigbang/cropper/CropFileUtils.java
+A	app/src/main/java/com/forfan/bigbang/cropper/CropHandler.java
+A	app/src/main/java/com/forfan/bigbang/cropper/CropHelper.java
+A	app/src/main/java/com/forfan/bigbang/cropper/CropParams.java
+A	app/src/main/java/com/forfan/bigbang/cropper/ImageUriUtil.java
+M	app/src/main/java/com/forfan/bigbang/network/api/OcrService.java
+A	app/src/main/res/layout/activity_orc.xml
+A	app/src/main/res/layout/card_ocr.xml
+
+774c46e;添加反选图标
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_select_other.png
+A	psFiles/bigbang_action_select_other.psd
+
+93d60a8;添加全选按钮
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_select_all.png
+A	psFiles/bigbang_action_select_all.psd
+
+265a116;添加ToDoList
+A	ToDoList.txt
+M	app/build.gradle
+
+f5a1456;[DEMOND]添加ocr在线解析接口
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/forfan/bigbang/entity/OcrItem.java
+R090	app/src/main/java/com/forfan/bigbang/entity/wordsegement/WordSegs.java	app/src/main/java/com/forfan/bigbang/entity/WordSegs.java
+M	app/src/main/java/com/forfan/bigbang/network/RetrofitHelper.java
+A	app/src/main/java/com/forfan/bigbang/network/api/OcrService.java
+M	app/src/main/java/com/forfan/bigbang/network/api/WordSegmentService.java
+M	app/src/main/java/com/forfan/bigbang/test/TestActivity.java
+M	app/src/main/res/layout/activity_test.xml
+
+30dee36;修复一些bug 发布1.0版
+M	app/build.gradle
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/res/values-v19/styles.xml
+A	info.txt
+
+2aff869;修复过滤符合的时候也过滤数字的bug
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+
+e5260df;bigbangActivity改成不保留任务记录
+M	app/src/main/AndroidManifest.xml
+
+b263414;用tinyPng压缩图片 修改一些默认的设置项 调整翻译界面的操作
+M	app/build.gradle
+M	app/proguard-rules.pro
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+D	app/src/main/java/com/forfan/bigbang/component/activity/HomeActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/res/drawable-xhdpi/ic_monitor_off.png
+M	app/src/main/res/drawable-xhdpi/ic_monitor_on.png
+D	app/src/main/res/drawable/photo.png
+D	app/src/main/res/layout/activity_home.xml
+M	app/src/main/res/layout/items_translate.xml
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_copy.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_search.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_share.png
+M	app/src/main/res/mipmap-xhdpi/hand_down.png
+M	app/src/main/res/mipmap-xhdpi/hand_down_splash.png
+M	app/src/main/res/mipmap-xhdpi/hand_swipe.png
+M	app/src/main/res/mipmap-xhdpi/ic_compare_arrows_white_36dp.png
+M	app/src/main/res/mipmap-xhdpi/ic_done_white_36dp.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_sort_white_36dp.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	app/src/main/res/values/strings.xml
+A	keyStore/keyStore.jks
+
+8dc1ed8;对话框延迟显示 调整Activity的状态栏
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/layout/activity_setting.xml
+M	app/src/main/res/values-v21/styles.xml
+M	app/src/main/res/values/styles.xml
+
+8687d30;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+a1ff49e;增加使用问题的文案
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/res/layout/card_feedback_update.xml
+M	app/src/main/res/values/strings.xml
+
+87d1d00;显示长按提示
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/res/values/strings.xml
+
+b5da200;引导页面完成
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/view/Dialog.java
+M	app/src/main/java/com/forfan/bigbang/view/SimpleDialog.java
+A	app/src/main/res/drawable-v21/button_introduction.xml
+A	app/src/main/res/drawable/button_introduction.xml
+A	app/src/main/res/drawable/button_introduction_n.xml
+A	app/src/main/res/drawable/button_introduction_p.xml
+M	app/src/main/res/layout/activity_big_bang.xml
+M	app/src/main/res/layout/activity_intro.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+
+8eb183b;替换一些图标 添加自定义dialog 增加长按震动
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+A	app/src/main/java/com/forfan/bigbang/util/ThemeUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+A	app/src/main/java/com/forfan/bigbang/view/BlankDrawable.java
+A	app/src/main/java/com/forfan/bigbang/view/Dialog.java
+A	app/src/main/java/com/forfan/bigbang/view/DialogFragment.java
+A	app/src/main/java/com/forfan/bigbang/view/SimpleDialog.java
+A	app/src/main/res/anim/anim_scale_in.xml
+A	app/src/main/res/anim/anim_scale_out.xml
+A	app/src/main/res/drawable-v21/button_white_stroke_green.xml
+M	app/src/main/res/drawable-xhdpi/ic_monitor_off.png
+M	app/src/main/res/drawable-xhdpi/ic_monitor_on.png
+A	app/src/main/res/drawable/button_white_stroke_green.xml
+A	app/src/main/res/drawable/button_white_stroke_green_n.xml
+A	app/src/main/res/drawable/button_white_stroke_green_p.xml
+M	app/src/main/res/layout/card_feedback_update.xml
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/values/attrs_material.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles_material.xml
+D	bigbang_action_copy.png
+D	bigbang_action_search.png
+D	bigbang_action_share.png
+D	ic_compare_arrows_white_36dp.png
+D	ic_done_white_36dp.png
+D	ic_launcher.psd
+D	ic_monitor_on.psd
+D	ic_sort_white_36dp.png
+R100	bigbang_action_copy.psd	psFiles/bigbang_action_copy.psd
+R100	bigbang_action_search.psd	psFiles/bigbang_action_search.psd
+R100	bigbang_action_share.psd	psFiles/bigbang_action_share.psd
+R100	ic_compare_arrows_white_36dp.psd	psFiles/ic_compare_arrows_white_36dp.psd
+R100	ic_done_white_36dp.psd	psFiles/ic_done_white_36dp.psd
+A	psFiles/ic_launcher.psd
+A	psFiles/ic_monitor_off.psd
+A	psFiles/ic_monitor_on.psd
+R100	ic_sort_white_36dp.psd	psFiles/ic_sort_white_36dp.psd
+
+410ecf1;修改图片和引导页
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/java/com/forfan/bigbang/view/GuideView.java
+A	app/src/main/res/anim/click_here_anim.xml
+A	app/src/main/res/anim/swipe_here_anim.xml
+D	app/src/main/res/drawable-xhdpi/click.png
+D	app/src/main/res/drawable-xhdpi/eye_close.png
+D	app/src/main/res/drawable-xhdpi/eye_open.png
+A	app/src/main/res/drawable-xhdpi/ic_monitor_off.png
+A	app/src/main/res/drawable-xhdpi/ic_monitor_on.png
+M	app/src/main/res/drawable/float_image_bg.xml
+M	app/src/main/res/layout/activity_intro.xml
+M	app/src/main/res/layout/activity_splash.xml
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_copy.png
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_search.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_action_share.png
+A	app/src/main/res/mipmap-xhdpi/hand_down.png
+R100	app/src/main/res/mipmap-xxxhdpi/hand_down.png	app/src/main/res/mipmap-xhdpi/hand_down_splash.png
+A	app/src/main/res/mipmap-xhdpi/hand_swipe.png
+M	app/src/main/res/mipmap-xhdpi/ic_compare_arrows_white_36dp.png
+M	app/src/main/res/mipmap-xhdpi/ic_done_white_36dp.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_sort_white_36dp.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+D	app/src/main/res/mipmap-xxxhdpi/bigbang_action_search.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/styles.xml
+A	bigbang_action_copy.png
+A	bigbang_action_copy.psd
+A	bigbang_action_search.png
+A	bigbang_action_search.psd
+A	bigbang_action_share.png
+A	bigbang_action_share.psd
+A	ic_compare_arrows_white_36dp.png
+A	ic_compare_arrows_white_36dp.psd
+A	ic_done_white_36dp.png
+A	ic_done_white_36dp.psd
+A	ic_launcher.psd
+A	ic_monitor_on.psd
+A	ic_sort_white_36dp.png
+A	ic_sort_white_36dp.psd
+
+78a8d0a;设置页面隐藏部分显示
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/res/layout/card_feedback_update.xml
+M	app/src/main/res/layout/card_function_setting.xml
+M	app/src/main/res/values-v19/styles.xml
+M	app/src/main/res/values/styles.xml
+
+fbf2eee;settingsActivity 的 launchMode
+M	app/src/main/AndroidManifest.xml
+
+0441d89;设置页面的card 显示与隐藏
+M	app/src/main/java/com/forfan/bigbang/baseCard/CardListAdapter.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/res/values/styles.xml
+
+4aa3a02;bigbang展现的动画
+A	app/src/main/res/anim/zoomin.xml
+A	app/src/main/res/anim/zoomout.xml
+M	app/src/main/res/values/styles.xml
+
+b3e44e7;添加一些文案
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/accessibility.xml
+
+412e1fc;剪切板获取文字逻辑，欢迎页逻辑
+M	app/src/main/java/com/forfan/bigbang/clipboard/ClipboardManagerImpl11.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+
+6e6d4cf;监控设置修改立即生效
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+
+36a8d13;修复几个bug
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/card_function_setting.xml
+
+bb720aa;设置项的逻辑完成，基本上可以完整的工作了
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/baseCard/CardListAdapter.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/res/layout/card_monitor_setting.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+d05a357;引导页ui
+M	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/res/layout/activity_intro.xml
+M	app/src/main/res/layout/activity_splash.xml
+
+87e384d;修改闪屏页
+M	app/src/main/res/layout/activity_splash.xml
+A	app/src/main/res/mipmap-xxxhdpi/hand_down.png
+
+4d57a2a;引导页相关逻辑
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/HomeActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/IntroActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/base/BaseActivity.java
+M	app/src/main/java/com/forfan/bigbang/test/TestActivity.java
+A	app/src/main/java/com/forfan/bigbang/view/GuideView.java
+A	app/src/main/res/drawable-xhdpi/click.png
+M	app/src/main/res/drawable/bigbang_action_bar_bg.xml
+M	app/src/main/res/layout/activity_big_bang.xml
+M	app/src/main/res/layout/activity_home.xml
+A	app/src/main/res/layout/activity_intro.xml
+D	app/src/main/res/mipmap-xhdpi/bigbang_action_search.png
+M	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_sel.9.png
+A	app/src/main/res/mipmap-xxxhdpi/bigbang_action_search.png
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/colors_material.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+7f4ad3c;修改设置页面
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/forfan/bigbang/baseCard/AbsCard.java
+A	app/src/main/java/com/forfan/bigbang/baseCard/CardListAdapter.java
+A	app/src/main/java/com/forfan/bigbang/baseCard/DividerItemDecoration.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/HomeActivity.java
+D	app/src/main/java/com/forfan/bigbang/component/activity/SettingActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/FeedBackAndUpdateCard.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/FunctionSettingCard.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/MonitorSettingCard.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/SettingActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/setting/ShareCard.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+A	app/src/main/res/drawable/button_background.xml
+A	app/src/main/res/drawable/button_share_cancel.xml
+A	app/src/main/res/drawable/button_share_confirm.xml
+A	app/src/main/res/drawable/card_list_divider.xml
+M	app/src/main/res/layout/activity_big_bang.xml
+D	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/activity_setting.xml
+A	app/src/main/res/layout/card_feedback_update.xml
+A	app/src/main/res/layout/card_function_setting.xml
+A	app/src/main/res/layout/card_monitor_setting.xml
+A	app/src/main/res/layout/card_share.xml
+A	app/src/main/res/values-v11/styles.xml
+M	app/src/main/res/values-v21/styles.xml
+A	app/src/main/res/values/array.xml
+M	app/src/main/res/values/colors_material.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+M	app/src/main/res/xml/accessibility.xml
+
+6217eb9;复制文字来使用基本跑通了
+M	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/base/BaseActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+M	app/src/main/res/layout/activity_big_bang.xml
+A	app/src/main/res/layout/items_translate.xml
+A	app/src/main/res/mipmap-xhdpi/ic_compare_arrows_white_36dp.png
+M	app/src/main/res/values-v21/styles.xml
+
+2aa96e7;完善home页面
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/HomeActivity.java
+A	app/src/main/res/drawable/photo.png
+M	app/src/main/res/layout/activity_home.xml
+M	app/src/main/res/values/dimens.xml
+
+1ba7382;添加升级和反馈页面的正确打开方式
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/HomeActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+A	app/src/main/java/com/forfan/bigbang/util/NetWorkUtil.java
+A	app/src/main/java/com/forfan/bigbang/util/UpdateUtil.java
+
+a521e86;完成拖动的效果，添加剪贴板监控
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+A	app/src/main/java/com/forfan/bigbang/clipboard/ClipboardManagerCompat.java
+A	app/src/main/java/com/forfan/bigbang/clipboard/ClipboardManagerImpl11.java
+A	app/src/main/java/com/forfan/bigbang/clipboard/ClipboardManagerImpl9.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/BigBangActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+A	app/src/main/java/com/forfan/bigbang/component/service/ListenClipboardService.java
+R076	app/src/main/java/com/forfan/bigbang/view/BigBangActionBar.java	app/src/main/java/com/forfan/bigbang/view/BigBangHeader.java
+M	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+A	app/src/main/res/layout/activity_big_bang.xml
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/mipmap-xhdpi/ic_done_white_36dp.png
+A	app/src/main/res/mipmap-xhdpi/ic_sort_white_36dp.png
+M	app/src/main/res/values/attrs.xml
+M	app/src/main/res/values/styles.xml
+
+1d1ebff;目录结构改动
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingActivity.java
+R096	app/src/main/java/com/forfan/bigbang/component/activity/BaseActivity.java	app/src/main/java/com/forfan/bigbang/component/base/BaseActivity.java
+R098	app/src/main/java/com/forfan/bigbang/component/activity/PermissionActivity.java	app/src/main/java/com/forfan/bigbang/component/base/PermissionActivity.java
+M	app/src/main/java/com/forfan/bigbang/test/TestActivity.java
+
+beb1faf;增加闪屏页以及剪切板 图片模糊工具
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/forfan/bigbang/component/activity/HomeActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/SplashActivity.java
+A	app/src/main/java/com/forfan/bigbang/util/ClipboardUtils.java
+A	app/src/main/java/com/forfan/bigbang/util/ImageBlurUtil.java
+A	app/src/main/res/layout/activity_home.xml
+A	app/src/main/res/layout/activity_splash.xml
+M	app/src/main/res/values-v19/styles.xml
+A	app/src/main/res/values-v21/styles.xml
+M	app/src/main/res/values/styles.xml
+
+6f246c6;添加悬浮窗，可以走通基本流程了
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+M	app/src/main/java/com/forfan/bigbang/util/LogUtil.java
+M	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+A	app/src/main/java/com/forfan/bigbang/view/BigBangActionBar.java
+A	app/src/main/java/com/forfan/bigbang/view/BigBangLayout.java
+A	app/src/main/java/com/forfan/bigbang/view/RectEvaluator.java
+A	app/src/main/res/color/bigbang_item_text.xml
+A	app/src/main/res/drawable-xhdpi/eye_close.png
+A	app/src/main/res/drawable-xhdpi/eye_open.png
+A	app/src/main/res/drawable/bigbang_action_bar_bg.xml
+A	app/src/main/res/drawable/float_image_bg.xml
+A	app/src/main/res/drawable/item_background.xml
+M	app/src/main/res/layout/view_float.xml
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_copy.png
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_search.png
+A	app/src/main/res/mipmap-xhdpi/bigbang_action_share.png
+A	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_nor.9.png
+A	app/src/main/res/mipmap-xhdpi/bigbang_item_bg_sel.9.png
+A	app/src/main/res/values/attrs.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/xml/accessibility.xml
+
+2be2164;增加了翻译的 有道接口
+A	app/src/main/java/com/forfan/bigbang/entity/TranslationItem.java
+M	app/src/main/java/com/forfan/bigbang/network/RetrofitHelper.java
+A	app/src/main/java/com/forfan/bigbang/network/api/TranslationService.java
+M	app/src/main/java/com/forfan/bigbang/test/TestActivity.java
+M	app/src/main/res/layout/activity_test.xml
+
+6bbbc1d;修改manifes
+M	app/src/main/AndroidManifest.xml
+
+f13c154;Merge branch 'master' of https://bitbucket.org/l465659833/bigbang
+dd7e755;增加retrofit okhttp rxlifecycle 实现分词接口，可直接使用
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/PermissionActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingActivity.java
+A	app/src/main/java/com/forfan/bigbang/entity/wordsegement/WordSegs.java
+A	app/src/main/java/com/forfan/bigbang/network/RetrofitHelper.java
+A	app/src/main/java/com/forfan/bigbang/network/api/WordSegmentService.java
+A	app/src/main/java/com/forfan/bigbang/test/TestActivity.java
+A	app/src/main/res/layout/activity_test.xml
+
+f560d4b;添加沉浸式设置和打点的工具类
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/forfan/bigbang/component/activity/BaseActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/PermissionActivity.java
+M	app/src/main/java/com/forfan/bigbang/component/activity/SettingActivity.java
+A	app/src/main/java/com/forfan/bigbang/util/UrlCountUtil.java
+A	app/src/main/res/values-v19/styles.xml
+M	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/colors_material.xml
+M	app/src/main/res/values/styles.xml
+
+2f6898d;新建项目，添加一些以前用到的工具类和统计升级等组件
+A	.gitattributes
+A	.gitignore
+A	app/.gitignore
+A	app/build.gradle
+A	app/libs/360update-5.0.4.jar
+A	app/libs/com.umeng.fb.5.4.0.jar
+A	app/libs/umeng-onlineconfig_v1.0.0.jar
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/com/forfan/bigbang/ExampleInstrumentedTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/forfan/bigbang/BigBangApp.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/BaseActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/PermissionActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/activity/SettingActivity.java
+A	app/src/main/java/com/forfan/bigbang/component/contentProvider/BigBangContentProvider.java
+A	app/src/main/java/com/forfan/bigbang/component/contentProvider/SPHelper.java
+A	app/src/main/java/com/forfan/bigbang/component/contentProvider/SPHelperImpl.java
+A	app/src/main/java/com/forfan/bigbang/component/service/BigBangMonitorService.java
+A	app/src/main/java/com/forfan/bigbang/component/service/GetAwayNotificationListenerService.java
+A	app/src/main/java/com/forfan/bigbang/component/service/JobService.java
+A	app/src/main/java/com/forfan/bigbang/util/ConstantUtil.java
+A	app/src/main/java/com/forfan/bigbang/util/EasyPermissions.java
+A	app/src/main/java/com/forfan/bigbang/util/FileUtil.java
+A	app/src/main/java/com/forfan/bigbang/util/IMMLeaks.java
+A	app/src/main/java/com/forfan/bigbang/util/IOUtil.java
+A	app/src/main/java/com/forfan/bigbang/util/KeepAliveWatcher.java
+A	app/src/main/java/com/forfan/bigbang/util/LifecycleCallbacksAdapter.java
+A	app/src/main/java/com/forfan/bigbang/util/LogUtil.java
+A	app/src/main/java/com/forfan/bigbang/util/Md5Util.java
+A	app/src/main/java/com/forfan/bigbang/util/NativeHelper.java
+A	app/src/main/java/com/forfan/bigbang/util/NotificationCheckUtil.java
+A	app/src/main/java/com/forfan/bigbang/util/SnackBarUtil.java
+A	app/src/main/java/com/forfan/bigbang/util/SoundHelper.java
+A	app/src/main/java/com/forfan/bigbang/util/StatusBarCompat.java
+A	app/src/main/java/com/forfan/bigbang/util/TipViewController.java
+A	app/src/main/java/com/forfan/bigbang/util/ToastUtil.java
+A	app/src/main/java/com/forfan/bigbang/util/ViewUtil.java
+A	app/src/main/res/anim/umeng_fb_dialog_enter_anim.xml
+A	app/src/main/res/anim/umeng_fb_dialog_exit_anim.xml
+A	app/src/main/res/drawable-xhdpi/umeng_fb_audio_dialog_cancel.png
+A	app/src/main/res/drawable-xhdpi/umeng_fb_audio_dialog_content.png
+A	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_01.png
+A	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_02.png
+A	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_03.png
+A	app/src/main/res/drawable-xhdpi/umeng_fb_audio_play_bg.9.png
+A	app/src/main/res/drawable-xhdpi/umeng_fb_keyboard.png
+A	app/src/main/res/drawable-xhdpi/umeng_fb_plus.png
+A	app/src/main/res/drawable-xhdpi/umeng_fb_record.png
+A	app/src/main/res/drawable/umeng_fb_action_replay.png
+A	app/src/main/res/drawable/umeng_fb_arrow_right.png
+A	app/src/main/res/drawable/umeng_fb_audio_play_anim.xml
+A	app/src/main/res/drawable/umeng_fb_help_tab_bg.xml
+A	app/src/main/res/drawable/umeng_fb_round_white_bg.xml
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/umeng_fb_activity_conversation.xml
+A	app/src/main/res/layout/umeng_fb_activity_help.xml
+A	app/src/main/res/layout/umeng_fb_audio_dialog.xml
+A	app/src/main/res/layout/umeng_fb_contact.xml
+A	app/src/main/res/layout/umeng_fb_contact_spinner.xml
+A	app/src/main/res/layout/umeng_fb_fragment.xml
+A	app/src/main/res/layout/umeng_fb_fragment_question.xml
+A	app/src/main/res/layout/umeng_fb_image_dialog.xml
+A	app/src/main/res/layout/umeng_fb_input_contact.xml
+A	app/src/main/res/layout/umeng_fb_input_conversation.xml
+A	app/src/main/res/layout/umeng_fb_input_conversation_audio.xml
+A	app/src/main/res/layout/umeng_fb_reply_item_audio.xml
+A	app/src/main/res/layout/umeng_fb_reply_item_image.xml
+A	app/src/main/res/layout/umeng_fb_reply_item_text.xml
+A	app/src/main/res/layout/umeng_fb_welcome_item.xml
+A	app/src/main/res/layout/view_float.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/main/res/values/umeng_fb_color.xml
+A	app/src/main/res/values/umeng_fb_dimens.xml
+A	app/src/main/res/values/umeng_fb_strings.xml
+A	app/src/main/res/values/umeng_fb_style.xml
+A	app/src/main/res/xml/accessibility.xml
+A	app/src/test/java/com/forfan/bigbang/ExampleUnitTest.java
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle

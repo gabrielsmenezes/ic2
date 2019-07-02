@@ -1,0 +1,498 @@
+cd3ba1c;Merge branch 'master' of https://github.com/anilallewar/microservices-basics-spring-boot
+9e66805;Merge pull request #10 from 1singhmanmeet/patch-1
+2fa7b51;Merge pull request #13 from stevewallone/patch-1
+277f413;Merge pull request #14 from stevewallone/master
+efe928f;Consolidated swagger usage so that all services are available through swagger once OAuth2 authentication is done through auth-server
+M	api-gateway/.settings/org.eclipse.jdt.core.prefs
+M	api-gateway/build.gradle
+M	api-gateway/src/main/java/com/anilallewar/microservices/gateway/GatewayApplication.java
+A	api-gateway/src/main/java/com/anilallewar/microservices/gateway/config/bean/BeanFactory.java
+A	api-gateway/src/main/java/com/anilallewar/microservices/gateway/config/swagger/SwaggerDocumentationConfiguration.java
+A	api-gateway/src/main/java/com/anilallewar/microservices/gateway/security/WebSecurityConfiguration.java
+M	auth-server/build.gradle
+M	auth-server/src/main/java/com/anilallewar/microservices/auth/AuthServerApplication.java
+M	auth-server/src/main/java/com/anilallewar/microservices/auth/api/AuthUserController.java
+M	auth-server/src/main/java/com/anilallewar/microservices/auth/config/OAuthServerConfiguration.java
+M	auth-server/src/main/java/com/anilallewar/microservices/auth/config/OAuthWebFormConfiguration.java
+M	build-all-projects.sh
+M	config-server/src/main/resources/application.yml
+M	task-webservice/build.gradle
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/TaskApplication.java
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/config/TaskBeanFactory.java
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/config/security/ResourceServerConfiguration.java
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/config/security/WebSecurityConfiguration.java
+M	user-webservice/.settings/org.eclipse.jdt.core.prefs
+M	user-webservice/build.gradle
+M	user-webservice/src/main/java/com/anilallewar/microservices/user/UserApplication.java
+A	user-webservice/src/main/java/com/anilallewar/microservices/user/config/UserBeanFactory.java
+A	user-webservice/src/main/java/com/anilallewar/microservices/user/config/security/ResourceServerConfiguration.java
+A	user-webservice/src/main/java/com/anilallewar/microservices/user/config/security/WebSecurityConfiguration.java
+M	web-portal/.settings/org.eclipse.jdt.core.prefs
+
+df2e546;Remove spaces from OAuth2 png name
+M	README.md
+
+900b19f;Merge branch 'master' of github.com:stevewallone/microservices-basics-spring-boot
+ad328af;Rename png, removing spaces
+R100	images/OAuth2 abstract protocol flow.png	images/OAuth2_abstract_protocol_flow.png
+
+25d1bce;Change decentralized image link.
+M	README.md
+
+ef883f6;Rename png, removing spaces
+R100	images/Decentralized Goverance.png	images/Decentralized_Goverance.png
+
+0d8ce10;Fix minor typo
+M	auth-server/README.md
+
+0268462;Upgrade to Spring boot 1.5.6
+M	README.md
+M	api-gateway/build.gradle
+M	api-gateway/src/main/resources/run.sh
+M	auth-server/build.gradle
+M	auth-server/src/main/resources/run.sh
+M	comments-webservice/build.gradle
+M	comments-webservice/src/main/resources/run.sh
+M	config-server/.settings/org.eclipse.jdt.core.prefs
+M	config-server/build.gradle
+M	config-server/src/main/resources/run.sh
+M	docker-image-all-projects.sh
+M	task-webservice/.settings/org.eclipse.jdt.core.prefs
+M	task-webservice/build.gradle
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/config/OAuthClientConfiguration.java
+M	task-webservice/src/main/resources/run.sh
+M	task-webservice/src/test/java/com/anilallewar/microservices/task/CommentsServiceTests.java
+M	task-webservice/src/test/java/com/anilallewar/microservices/task/oauth2/config/OAuth2ClientTestConfiguration.java
+M	user-webservice/build.gradle
+M	user-webservice/src/main/resources/run.sh
+M	web-portal/build.gradle
+M	web-portal/src/main/resources/run.sh
+M	webservice-registry/build.gradle
+M	webservice-registry/src/main/resources/run.sh
+M	zipkin-server/build.gradle
+M	zipkin-server/src/main/resources/run.sh
+
+60fe6e7;Fixed some formatting issues
+M	config-server/README.md
+
+6630715;Updated top-level README, build files and changes for docker orchestration
+M	README.md
+M	build-all-projects.sh
+M	docker-image-all-projects.sh
+M	docker-orchestration/docker-compose/docker-compose.yml
+M	docker-orchestration/rancher/docker-compose.yml
+M	docker-orchestration/rancher/rancher-compose.yml
+
+bd8bee3;Updated README for all individual projects and added custom public-private key pair.
+M	api-gateway/README.md
+M	auth-server/README.md
+M	auth-server/src/main/java/com/anilallewar/microservices/auth/config/OAuthServerConfiguration.java
+A	auth-server/src/main/resources/anilkeystore.jks
+D	auth-server/src/main/resources/keystore.jks
+M	comments-webservice/README.md
+M	config-server/README.md
+M	task-webservice/README.md
+M	user-webservice/README.md
+M	web-portal/README.md
+M	webservice-registry/README.md
+A	zipkin-server/README.md
+
+3747c2a;1. Fixed issue with hardcoded path in clean.doFirst 2. Removed the additional class and test method for the Base class on the producer side
+M	auth-server/src/main/java/com/anilallewar/microservices/auth/config/OAuthServerConfiguration.java
+M	comments-webservice/build.gradle
+D	comments-webservice/src/test/java/com/anilallewar/microservices/comments/CommentsApplicationTests.java
+M	comments-webservice/src/test/java/com/anilallewar/microservices/comments/contracts/TaskCommentsBase.java
+M	task-webservice/build.gradle
+M	task-webservice/src/test/java/com/anilallewar/microservices/task/CommentsServiceTests.java
+M	zipkin-server/src/main/resources/bootstrap.yml
+
+dbc0757;Zipkin tracing enabled
+M	api-gateway/.settings/org.eclipse.jdt.core.prefs
+M	api-gateway/build.gradle
+M	comments-webservice/.settings/org.eclipse.jdt.core.prefs
+M	comments-webservice/build.gradle
+M	task-webservice/.settings/org.eclipse.jdt.core.prefs
+M	task-webservice/build.gradle
+M	user-webservice/.settings/org.eclipse.jdt.core.prefs
+M	user-webservice/build.gradle
+A	zipkin-server/.gitignore
+A	zipkin-server/.project
+A	zipkin-server/.settings/org.eclipse.jdt.core.prefs
+A	zipkin-server/build.gradle
+A	zipkin-server/gradle/wrapper/gradle-wrapper.jar
+A	zipkin-server/gradle/wrapper/gradle-wrapper.properties
+A	zipkin-server/gradlew
+A	zipkin-server/gradlew.bat
+A	zipkin-server/src/main/docker/Dockerfile
+A	zipkin-server/src/main/java/com/anilallewar/microservices/tracing/ZipkinTracingApplication.java
+A	zipkin-server/src/main/resources/application.yml
+A	zipkin-server/src/main/resources/bootstrap.yml
+A	zipkin-server/src/main/resources/run.sh
+
+6f91184;Got sleuth to work
+M	api-gateway/build.gradle
+M	comments-webservice/build.gradle
+M	comments-webservice/src/main/java/com/anilallewar/microservices/comments/apis/CommentsController.java
+M	task-webservice/build.gradle
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/apis/CommentsService.java
+M	user-webservice/build.gradle
+M	user-webservice/src/main/java/com/anilallewar/microservices/user/api/UserController.java
+
+70a0771;Fixed the producer side test - the contract was expecting the content-Type header
+M	comments-webservice/.settings/org.eclipse.jdt.core.prefs
+M	comments-webservice/build.gradle
+M	comments-webservice/src/test/java/com/anilallewar/microservices/comments/CommentsApplicationTests.java
+M	comments-webservice/src/test/resources/contracts/task/comments/returnCommentsForTasks.groovy
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/apis/CommentsService.java
+M	task-webservice/src/test/java/com/anilallewar/microservices/task/CommentsServiceTests.java
+
+5dbe43d;Got the provider test case to run, the consumer test case is failing because of service discovery
+M	comments-webservice/build.gradle
+M	comments-webservice/src/test/java/com/anilallewar/microservices/comments/CommentsApplicationTests.java
+D	comments-webservice/src/test/java/com/anilallewar/microservices/comments/contracts/BaseContractVerifier.java
+A	comments-webservice/src/test/java/com/anilallewar/microservices/comments/contracts/TaskCommentsBase.java
+D	comments-webservice/src/test/resources/contracts/returnCommentsForTasks.groovy
+A	comments-webservice/src/test/resources/contracts/task/comments/returnCommentsForTasks.groovy
+M	task-webservice/build.gradle
+M	task-webservice/src/test/java/com/anilallewar/microservices/task/CommentsServiceTests.java
+
+a91320d;Moved the default clientId to the annotation
+M	task-webservice/src/test/java/com/anilallewar/microservices/task/CommentsServiceTests.java
+M	task-webservice/src/test/java/com/anilallewar/microservices/task/oauth2/security/WithMockOAuth2Token.java
+M	task-webservice/src/test/java/com/anilallewar/microservices/task/oauth2/security/WithOAuth2MockAccessTokenSecurityContextFactory.java
+
+9332794;Got the task-webservice test to use OAuth2 mock token without re-direction
+M	api-gateway/.settings/org.eclipse.jdt.core.prefs
+M	api-gateway/build.gradle
+M	comments-webservice/.project
+M	comments-webservice/.settings/org.eclipse.jdt.core.prefs
+A	comments-webservice/.settings/org.eclipse.jdt.groovy.core.prefs
+M	comments-webservice/build.gradle
+M	comments-webservice/src/main/java/com/anilallewar/microservices/comments/apis/CommentsController.java
+A	comments-webservice/src/test/java/com/anilallewar/microservices/comments/CommentsApplicationTests.java
+A	comments-webservice/src/test/java/com/anilallewar/microservices/comments/contracts/BaseContractVerifier.java
+A	comments-webservice/src/test/resources/contracts/returnCommentsForTasks.groovy
+M	task-webservice/.settings/org.eclipse.jdt.core.prefs
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/apis/TaskController.java
+A	task-webservice/src/test/java/com/anilallewar/microservices/task/CommentsServiceTests.java
+A	task-webservice/src/test/java/com/anilallewar/microservices/task/oauth2/config/OAuth2ClientTestConfiguration.java
+A	task-webservice/src/test/java/com/anilallewar/microservices/task/oauth2/security/WithMockOAuth2Token.java
+A	task-webservice/src/test/java/com/anilallewar/microservices/task/oauth2/security/WithOAuth2MockAccessTokenSecurityContextFactory.java
+
+41fe8dc;Fixed issue with manually having to set the access token in the call to comments service
+M	task-webservice/build.gradle
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/apis/CommentsService.java
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/config/OAuthClientConfiguration.java
+
+9c62fba;Added affinity for other services
+M	docker-orchestration/rancher/docker-compose.yml
+
+7c2f646;Added mysql client and other checks for container ordering
+M	config-server/src/main/docker/Dockerfile
+M	docker-orchestration/rancher/docker-compose.yml
+
+bc61ed4;Docker changes to start applications based on run shell script
+M	api-gateway/build.gradle
+M	api-gateway/src/main/docker/Dockerfile
+A	api-gateway/src/main/resources/run.sh
+M	auth-server/build.gradle
+M	auth-server/src/main/docker/Dockerfile
+A	auth-server/src/main/resources/run.sh
+M	comments-webservice/build.gradle
+M	comments-webservice/src/main/docker/Dockerfile
+A	comments-webservice/src/main/resources/run.sh
+M	config-server/build.gradle
+M	config-server/src/main/docker/Dockerfile
+A	config-server/src/main/resources/run.sh
+R100	docker-compose.yml	docker-orchestration/docker-compose/docker-compose.yml
+A	docker-orchestration/rancher/docker-compose.yml
+A	docker-orchestration/rancher/rancher-compose.yml
+M	task-webservice/build.gradle
+M	task-webservice/src/main/docker/Dockerfile
+A	task-webservice/src/main/resources/run.sh
+M	user-webservice/build.gradle
+M	user-webservice/src/main/docker/Dockerfile
+A	user-webservice/src/main/resources/run.sh
+M	web-portal/build.gradle
+M	web-portal/src/main/docker/Dockerfile
+A	web-portal/src/main/resources/run.sh
+M	webservice-registry/build.gradle
+M	webservice-registry/src/main/docker/Dockerfile
+A	webservice-registry/src/main/resources/run.sh
+
+304cf85;Changes to get the application to work on Docker
+M	api-gateway/src/main/docker/Dockerfile
+M	api-gateway/src/main/resources/bootstrap.yml
+M	auth-server/src/main/docker/Dockerfile
+M	auth-server/src/main/resources/bootstrap.yml
+M	comments-webservice/src/main/docker/Dockerfile
+M	comments-webservice/src/main/resources/bootstrap.yml
+M	config-server/src/main/docker/Dockerfile
+M	docker-compose.yml
+M	task-webservice/src/main/docker/Dockerfile
+M	task-webservice/src/main/resources/bootstrap.yml
+M	user-webservice/src/main/docker/Dockerfile
+M	user-webservice/src/main/resources/bootstrap.yml
+M	web-portal/.settings/org.eclipse.jdt.core.prefs
+M	web-portal/build.gradle
+M	web-portal/src/main/docker/Dockerfile
+M	web-portal/src/main/java/com/anilallewar/microservices/portal/PortalApplication.java
+M	web-portal/src/main/resources/bootstrap.yml
+M	web-portal/src/main/resources/static/js/app/services/dataservice.js
+M	webservice-registry/src/main/docker/Dockerfile
+M	webservice-registry/src/main/resources/bootstrap.yml
+
+c0b34fb;Added all the oauth2 grants
+M	auth-server/src/main/java/com/anilallewar/microservices/auth/config/OAuthServerConfiguration.java
+M	auth-server/src/main/java/com/anilallewar/microservices/auth/service/JdbcUserDetailsService.java
+
+9ca4218;Fixed issue with tomcat root redirection if you don’t have “/“ after the context root
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/config/OAuthClientConfiguration.java
+M	web-portal/src/main/resources/static/js/app/services/dataservice.js
+
+116ef0a;Fixed issue with ribbon client not being able to call Comments service - need loadbalancer client for being able to understand eureka mappings
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/TaskApplication.java
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/apis/CommentsService.java
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/config/OAuthClientConfiguration.java
+
+546317e;Fixed the issues with redirection to OAuth2 login endpoint.
+M	api-gateway/.gitignore
+M	api-gateway/build.gradle
+D	api-gateway/src/main/java/com/anilallewar/microservice/gateway/config/OAuthConfiguration.java
+R073	api-gateway/src/main/java/com/anilallewar/microservice/gateway/Application.java	api-gateway/src/main/java/com/anilallewar/microservices/gateway/GatewayApplication.java
+M	auth-server/build.gradle
+D	auth-server/src/main/java/com/anilallewar/microservice/auth/config/ResourceServerConfiguration.java
+R071	auth-server/src/main/java/com/anilallewar/microservice/auth/Application.java	auth-server/src/main/java/com/anilallewar/microservices/auth/AuthServerApplication.java
+R074	auth-server/src/main/java/com/anilallewar/microservice/auth/api/AuthUserController.java	auth-server/src/main/java/com/anilallewar/microservices/auth/api/AuthUserController.java
+R052	auth-server/src/main/java/com/anilallewar/microservice/auth/config/OAuthConfiguration.java	auth-server/src/main/java/com/anilallewar/microservices/auth/config/OAuthServerConfiguration.java
+A	auth-server/src/main/java/com/anilallewar/microservices/auth/config/OAuthWebFormConfiguration.java
+A	auth-server/src/main/java/com/anilallewar/microservices/auth/service/JdbcUserDetailsService.java
+M	auth-server/src/main/resources/schema.sql
+R071	auth-server/src/main/resources/templates/authorize.html	auth-server/src/main/resources/templates/authorize.ftl
+R066	auth-server/src/main/resources/templates/login.html	auth-server/src/main/resources/templates/login.ftl
+D	comments-webservice/.classpath
+M	comments-webservice/.gitignore
+M	comments-webservice/build.gradle
+R083	comments-webservice/src/main/java/com/anilallewar/microservices/comments/Application.java	comments-webservice/src/main/java/com/anilallewar/microservices/comments/CommentsApplication.java
+D	comments-webservice/src/main/java/com/anilallewar/microservices/comments/config/CommentsConfiguration.java
+M	config-server/build.gradle
+R089	config-server/src/main/java/com/anilallewar/microservices/config/Application.java	config-server/src/main/java/com/anilallewar/microservices/config/ConfigApplication.java
+M	task-webservice/build.gradle
+R088	task-webservice/src/main/java/com/anilallewar/microservices/task/Application.java	task-webservice/src/main/java/com/anilallewar/microservices/task/TaskApplication.java
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/apis/CommentsService.java
+M	task-webservice/src/main/java/com/anilallewar/microservices/task/config/OAuthClientConfiguration.java
+D	task-webservice/src/main/java/com/anilallewar/microservices/task/config/TaskConfiguration.java
+M	user-webservice/build.gradle
+R081	user-webservice/src/main/java/com/anilallewar/microservices/user/Application.java	user-webservice/src/main/java/com/anilallewar/microservices/user/UserApplication.java
+R094	user-webservice/src/main/java/com/anilallewar/microservices/user/apis/UserController.java	user-webservice/src/main/java/com/anilallewar/microservices/user/api/UserController.java
+D	user-webservice/src/main/java/com/anilallewar/microservices/user/config/UserConfiguration.java
+M	user-webservice/src/main/java/com/anilallewar/microservices/user/dto/UserDTO.java
+M	user-webservice/src/main/resources/bootstrap.yml
+M	web-portal/.settings/org.eclipse.jdt.core.prefs
+M	web-portal/build.gradle
+D	web-portal/public/js/libs/angular-route.min.js
+D	web-portal/public/js/libs/angular.min.js
+R062	web-portal/src/main/java/com/anilallewar/microservices/portal/Application.java	web-portal/src/main/java/com/anilallewar/microservices/portal/PortalApplication.java
+R100	web-portal/public/css/bootstrap.min.css	web-portal/src/main/resources/static/css/bootstrap.min.css
+R095	web-portal/public/index.html	web-portal/src/main/resources/static/index.html
+R100	web-portal/public/js/app/controller/homeController.js	web-portal/src/main/resources/static/js/app/controller/homeController.js
+R100	web-portal/public/js/app/controller/navController.js	web-portal/src/main/resources/static/js/app/controller/navController.js
+R100	web-portal/public/js/app/controller/taskController.js	web-portal/src/main/resources/static/js/app/controller/taskController.js
+R100	web-portal/public/js/app/controller/userController.js	web-portal/src/main/resources/static/js/app/controller/userController.js
+R100	web-portal/public/js/app/oauthapp.js	web-portal/src/main/resources/static/js/app/oauthapp.js
+R096	web-portal/public/js/app/services/dataservice.js	web-portal/src/main/resources/static/js/app/services/dataservice.js
+A	web-portal/src/main/resources/static/js/libs/angular-route.min.js
+A	web-portal/src/main/resources/static/js/libs/angular.min.js
+R100	web-portal/public/views/home.html	web-portal/src/main/resources/static/views/home.html
+R100	web-portal/public/views/task-comments.html	web-portal/src/main/resources/static/views/task-comments.html
+R100	web-portal/public/views/task-details.html	web-portal/src/main/resources/static/views/task-details.html
+R100	web-portal/public/views/task.html	web-portal/src/main/resources/static/views/task.html
+R100	web-portal/public/views/user.html	web-portal/src/main/resources/static/views/user.html
+M	webservice-registry/build.gradle
+R089	webservice-registry/src/main/java/com/anilallewar/microservices/registry/Application.java	webservice-registry/src/main/java/com/anilallewar/microservices/registry/RegistryApplication.java
+
+40c6f59;Added rest of the projects and JWT tokens - /login still NOT redirecting to OAuth authentication page
+A	LICENSE
+A	README.md
+A	api-gateway/.gitignore
+A	api-gateway/.project
+A	api-gateway/.settings/gradle/org.springsource.ide.eclipse.gradle.core.import.prefs
+A	api-gateway/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs
+A	api-gateway/.settings/gradle/org.springsource.ide.eclipse.gradle.refresh.prefs
+A	api-gateway/.settings/org.eclipse.buildship.core.prefs
+A	api-gateway/.settings/org.eclipse.jdt.core.prefs
+A	api-gateway/README.md
+A	api-gateway/build.gradle
+A	api-gateway/gradle/wrapper/gradle-wrapper.jar
+A	api-gateway/gradle/wrapper/gradle-wrapper.properties
+A	api-gateway/gradlew
+A	api-gateway/gradlew.bat
+A	api-gateway/src/main/docker/Dockerfile
+A	api-gateway/src/main/java/com/anilallewar/microservice/gateway/Application.java
+A	api-gateway/src/main/java/com/anilallewar/microservice/gateway/config/OAuthConfiguration.java
+A	api-gateway/src/main/resources/application.yml
+A	api-gateway/src/main/resources/bootstrap.yml
+M	auth-server/.settings/org.eclipse.jdt.core.prefs
+M	auth-server/build.gradle
+M	auth-server/src/main/docker/Dockerfile
+M	auth-server/src/main/java/com/anilallewar/microservice/auth/Application.java
+M	auth-server/src/main/java/com/anilallewar/microservice/auth/api/AuthUserController.java
+M	auth-server/src/main/java/com/anilallewar/microservice/auth/config/OAuthConfiguration.java
+M	auth-server/src/main/java/com/anilallewar/microservice/auth/config/ResourceServerConfiguration.java
+A	auth-server/src/main/resources/keystore.jks
+A	auth-server/src/main/resources/templates/authorize.html
+A	auth-server/src/main/resources/templates/login.html
+A	build-all-projects.sh
+A	comments-webservice/.classpath
+A	comments-webservice/.gitignore
+A	comments-webservice/.project
+A	comments-webservice/.settings/org.eclipse.buildship.core.prefs
+A	comments-webservice/.settings/org.eclipse.jdt.core.prefs
+A	comments-webservice/README.md
+A	comments-webservice/build.gradle
+A	comments-webservice/gradle/wrapper/gradle-wrapper.jar
+A	comments-webservice/gradle/wrapper/gradle-wrapper.properties
+A	comments-webservice/gradlew
+A	comments-webservice/gradlew.bat
+A	comments-webservice/src/main/docker/Dockerfile
+A	comments-webservice/src/main/java/com/anilallewar/microservices/comments/Application.java
+A	comments-webservice/src/main/java/com/anilallewar/microservices/comments/apis/CommentsController.java
+A	comments-webservice/src/main/java/com/anilallewar/microservices/comments/config/CommentsConfiguration.java
+A	comments-webservice/src/main/java/com/anilallewar/microservices/comments/dtos/CommentDTO.java
+A	comments-webservice/src/main/resources/application.yml
+A	comments-webservice/src/main/resources/bootstrap.yml
+M	config-server/.settings/org.eclipse.jdt.core.prefs
+M	config-server/src/main/docker/Dockerfile
+A	docker-compose.yml
+A	docker-image-all-projects.sh
+A	images/Application_Components.jpg
+A	images/Decentralized Goverance.png
+A	images/OAuth2 abstract protocol flow.png
+A	images/Target_Architecture.jpg
+A	task-webservice/.gitignore
+A	task-webservice/.project
+A	task-webservice/.settings/gradle/org.springsource.ide.eclipse.gradle.core.import.prefs
+A	task-webservice/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs
+A	task-webservice/.settings/gradle/org.springsource.ide.eclipse.gradle.refresh.prefs
+A	task-webservice/.settings/org.eclipse.buildship.core.prefs
+A	task-webservice/.settings/org.eclipse.jdt.core.prefs
+A	task-webservice/README.md
+A	task-webservice/build.gradle
+A	task-webservice/gradle/wrapper/gradle-wrapper.jar
+A	task-webservice/gradle/wrapper/gradle-wrapper.properties
+A	task-webservice/gradlew
+A	task-webservice/gradlew.bat
+A	task-webservice/src/main/docker/Dockerfile
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/Application.java
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/apis/CommentsService.java
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/apis/TaskController.java
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/config/OAuthClientConfiguration.java
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/config/TaskConfiguration.java
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/dtos/TaskDTO.java
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/model/CommentCollectionResource.java
+A	task-webservice/src/main/java/com/anilallewar/microservices/task/model/CommentResource.java
+A	task-webservice/src/main/resources/application.yml
+A	task-webservice/src/main/resources/bootstrap.yml
+A	understanding_notes.pages
+A	user-webservice/.gitignore
+A	user-webservice/.project
+A	user-webservice/.settings/org.eclipse.buildship.core.prefs
+A	user-webservice/.settings/org.eclipse.jdt.core.prefs
+A	user-webservice/README.md
+A	user-webservice/build.gradle
+A	user-webservice/gradle/wrapper/gradle-wrapper.jar
+A	user-webservice/gradle/wrapper/gradle-wrapper.properties
+A	user-webservice/gradlew
+A	user-webservice/gradlew.bat
+A	user-webservice/src/main/docker/Dockerfile
+A	user-webservice/src/main/java/com/anilallewar/microservices/user/Application.java
+A	user-webservice/src/main/java/com/anilallewar/microservices/user/apis/UserController.java
+A	user-webservice/src/main/java/com/anilallewar/microservices/user/config/UserConfiguration.java
+A	user-webservice/src/main/java/com/anilallewar/microservices/user/dto/UserDTO.java
+A	user-webservice/src/main/resources/application.yml
+A	user-webservice/src/main/resources/bootstrap.yml
+A	web-portal/.gitignore
+A	web-portal/.project
+A	web-portal/.settings/org.eclipse.buildship.core.prefs
+A	web-portal/.settings/org.eclipse.jdt.core.prefs
+A	web-portal/README.md
+A	web-portal/build.gradle
+A	web-portal/gradle/wrapper/gradle-wrapper.jar
+A	web-portal/gradle/wrapper/gradle-wrapper.properties
+A	web-portal/gradlew
+A	web-portal/gradlew.bat
+A	web-portal/public/css/bootstrap.min.css
+A	web-portal/public/index.html
+A	web-portal/public/js/app/controller/homeController.js
+A	web-portal/public/js/app/controller/navController.js
+A	web-portal/public/js/app/controller/taskController.js
+A	web-portal/public/js/app/controller/userController.js
+A	web-portal/public/js/app/oauthapp.js
+A	web-portal/public/js/app/services/dataservice.js
+A	web-portal/public/js/libs/angular-route.min.js
+A	web-portal/public/js/libs/angular.min.js
+A	web-portal/public/views/home.html
+A	web-portal/public/views/task-comments.html
+A	web-portal/public/views/task-details.html
+A	web-portal/public/views/task.html
+A	web-portal/public/views/user.html
+A	web-portal/src/main/docker/Dockerfile
+A	web-portal/src/main/java/com/anilallewar/microservices/portal/Application.java
+A	web-portal/src/main/resources/application.yml
+A	web-portal/src/main/resources/bootstrap.yml
+M	webservice-registry/.settings/org.eclipse.jdt.core.prefs
+M	webservice-registry/src/main/docker/Dockerfile
+
+6d093d4;Got auth server to work
+A	auth-server/.gitignore
+A	auth-server/.project
+A	auth-server/.settings/gradle/org.springsource.ide.eclipse.gradle.core.import.prefs
+A	auth-server/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs
+A	auth-server/.settings/gradle/org.springsource.ide.eclipse.gradle.refresh.prefs
+A	auth-server/.settings/org.eclipse.buildship.core.prefs
+A	auth-server/.settings/org.eclipse.jdt.core.prefs
+A	auth-server/README.md
+A	auth-server/build.gradle
+A	auth-server/gradle/wrapper/gradle-wrapper.jar
+A	auth-server/gradle/wrapper/gradle-wrapper.properties
+A	auth-server/gradlew
+A	auth-server/gradlew.bat
+A	auth-server/src/main/docker/Dockerfile
+A	auth-server/src/main/java/com/anilallewar/microservice/auth/Application.java
+A	auth-server/src/main/java/com/anilallewar/microservice/auth/api/AuthUserController.java
+A	auth-server/src/main/java/com/anilallewar/microservice/auth/config/OAuthConfiguration.java
+A	auth-server/src/main/java/com/anilallewar/microservice/auth/config/ResourceServerConfiguration.java
+A	auth-server/src/main/resources/application.yml
+A	auth-server/src/main/resources/bootstrap.yml
+A	auth-server/src/main/resources/schema.sql
+M	config-server/build.gradle
+M	config-server/src/main/resources/application.yml
+M	webservice-registry/build.gradle
+
+5018d40;Initial working setup for config and discovery server with Spring boot 1.5.3
+A	config-server/.gitignore
+A	config-server/.project
+A	config-server/.settings/org.eclipse.jdt.core.prefs
+A	config-server/README.md
+A	config-server/build.gradle
+A	config-server/gradle/wrapper/gradle-wrapper.jar
+A	config-server/gradle/wrapper/gradle-wrapper.properties
+A	config-server/gradlew
+A	config-server/gradlew.bat
+A	config-server/src/main/docker/Dockerfile
+A	config-server/src/main/java/com/anilallewar/microservices/config/Application.java
+A	config-server/src/main/resources/application.yml
+A	config-server/src/main/resources/bootstrap.yml
+A	webservice-registry/.gitignore
+A	webservice-registry/.project
+A	webservice-registry/.settings/org.eclipse.jdt.core.prefs
+A	webservice-registry/README.md
+A	webservice-registry/build.gradle
+A	webservice-registry/gradle/wrapper/gradle-wrapper.jar
+A	webservice-registry/gradle/wrapper/gradle-wrapper.properties
+A	webservice-registry/gradlew
+A	webservice-registry/gradlew.bat
+A	webservice-registry/src/main/docker/Dockerfile
+A	webservice-registry/src/main/java/com/anilallewar/microservices/registry/Application.java
+A	webservice-registry/src/main/resources/application.yml
+A	webservice-registry/src/main/resources/bootstrap.yml

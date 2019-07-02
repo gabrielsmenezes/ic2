@@ -1,0 +1,438 @@
+d2f099b;Merge pull request #9 from jshvarts/android-weekly-badge
+a1f2295;add android weekly badge
+M	README.md
+
+b0d45cb;Merge pull request #7 from jshvarts/udjust-json-api
+573a957;adopt jsonplaceholder remote call api changes
+M	app/src/main/java/com/example/offline/domain/services/networking/RemoteCommentEndpoint.java
+M	app/src/main/java/com/example/offline/model/Comment.java
+
+e0467e6;fix merge conflict
+b7dc880;Update Android plugin for Gradle to 3.0.1
+M	build.gradle
+
+e24c448;Merge pull request #4 from friederbluemle/update-project
+6e9da39;Update lifecycle and room to 1.0.0-rc1
+M	app/build.gradle
+M	build.gradle
+
+73264b4;Update Android Gradle plugin to 3.0.0
+M	build.gradle
+
+a45b4ac;Update Gradle wrapper to 4.3
+M	gradle/wrapper/gradle-wrapper.properties
+
+0efcc0e;Update compile and targetSdkVersion to 26
+M	.travis.yml
+M	app/build.gradle
+
+0b14d00;Revert "remove RECEIVE_BOOT_COMPLETED permission"
+M	app/src/main/AndroidManifest.xml
+
+2194092;remove RECEIVE_BOOT_COMPLETED permission
+M	app/src/main/AndroidManifest.xml
+
+49a067c;Merge pull request #2 from friederbluemle/update-play-services
+c17a839;Update play-services to 11.4.2
+M	app/build.gradle
+
+f3ae3bc;update android gradle plugin
+M	build.gradle
+
+04529d2;introduce RxLint
+M	README.md
+M	app/build.gradle
+M	app/src/main/java/com/example/offline/domain/services/SyncCommentLifecycleObserver.java
+
+b8a9d84;Merge pull request #1 from friederbluemle/update-gradle-wrapper
+e41d052;Use implementation instead of compile
+M	app/build.gradle
+
+7131243;Update Gradle wrapper to 4.2.1
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	gradlew.bat
+
+14d9c06;Update build tools to 26.0.2
+M	.travis.yml
+M	app/build.gradle
+
+006a085;Update Android Gradle plugin to 3.0.0-beta7
+M	build.gradle
+
+2612be0;add article link to readme
+M	README.md
+
+1041c39;use method references
+M	app/src/main/java/com/example/offline/domain/AddCommentUseCase.java
+M	app/src/main/java/com/example/offline/domain/services/SyncCommentLifecycleObserver.java
+M	app/src/main/java/com/example/offline/presentation/CommentsViewModel.java
+
+430f97f;rename public comments lookup in ViewModel
+M	app/src/main/java/com/example/offline/presentation/CommentsViewModel.java
+M	app/src/main/java/com/example/offline/view/CommentsActivity.java
+
+8862bd8;use method reference to update data on RecyclerViewAdapter
+M	app/src/main/java/com/example/offline/view/CommentsActivity.java
+
+0ca3e9b;remove SchedulersFacade abstraction
+M	app/src/main/java/com/example/offline/di/CommentsActivityModule.java
+M	app/src/main/java/com/example/offline/domain/services/SyncCommentLifecycleObserver.java
+M	app/src/main/java/com/example/offline/presentation/CommentsViewModel.java
+M	app/src/main/java/com/example/offline/presentation/CommentsViewModelFactory.java
+D	app/src/main/java/com/example/offline/rx/SchedulersFacade.java
+
+6308c4b;update README to reference branch sync-in-background
+M	README.md
+
+73ac545;remove unused
+D	config/quality/checkstyle/checkstyle.gradle
+
+0439b30;update readme with branch breakdown
+M	README.md
+
+bda6231;update JobManagerFactory to return singleton JobManager
+M	app/src/main/java/com/example/offline/App.java
+M	app/src/main/java/com/example/offline/data/RemoteCommentDataStore.java
+M	app/src/main/java/com/example/offline/di/AppModule.java
+M	app/src/main/java/com/example/offline/domain/services/jobs/GcmJobService.java
+M	app/src/main/java/com/example/offline/domain/services/jobs/JobManagerFactory.java
+M	app/src/main/java/com/example/offline/domain/services/jobs/SchedulerJobService.java
+
+f8c17fa;update quality checks group name
+M	config/quality.gradle
+M	config/quality/pmd/pmd-ruleset.xml
+
+766a9c5;update quality checks doc
+M	README.md
+
+8b77948;revert buildToolsVersion
+M	app/build.gradle
+
+ddc450e;add quality checks: pmd, checkstyle, findbugs
+M	README.md
+M	app/build.gradle
+M	app/src/main/java/com/example/offline/domain/services/jobs/JobPriority.java
+M	app/src/main/res/layout/comment_row.xml
+M	app/src/main/res/layout/comments_activity.xml
+M	app/src/main/res/values/strings.xml
+A	config/quality.gradle
+A	config/quality/checkstyle/checkstyle.gradle
+A	config/quality/checkstyle/checkstyle.xml
+A	config/quality/checkstyle/suppressions.xml
+A	config/quality/findbugs/findbugs-filter.xml
+A	config/quality/lint/lint.xml
+A	config/quality/pmd/pmd-ruleset.xml
+
+bafb01e;hide implememtation detail of SyncCommentRxBus
+M	app/src/main/java/com/example/offline/domain/services/SyncCommentLifecycleObserver.java
+M	app/src/main/java/com/example/offline/domain/services/SyncCommentRxBus.java
+
+561c726;make readme clearer
+M	README.md
+
+d461dab;add screenshot
+M	README.md
+A	images/comments.png
+
+44ad230;extract customLogger into a member var
+M	app/src/main/java/com/example/offline/domain/services/jobs/JobManagerFactory.java
+
+f3deb2f;re-organize packages, abstract repositories
+M	app/src/main/AndroidManifest.xml
+D	app/src/main/java/com/example/offline/comments/AddCommentUseCase.java
+D	app/src/main/java/com/example/offline/comments/CommentsModule.java
+D	app/src/main/java/com/example/offline/comments/DeleteCommentUseCase.java
+D	app/src/main/java/com/example/offline/comments/GetCommentsUseCase.java
+D	app/src/main/java/com/example/offline/comments/SyncCommentUseCase.java
+D	app/src/main/java/com/example/offline/comments/UpdateCommentUseCase.java
+R089	app/src/main/java/com/example/offline/model/CommentDao.java	app/src/main/java/com/example/offline/data/CommentDao.java
+R085	app/src/main/java/com/example/offline/model/CommentDatabase.java	app/src/main/java/com/example/offline/data/CommentDatabase.java
+R085	app/src/main/java/com/example/offline/model/LocalCommentDataStore.java	app/src/main/java/com/example/offline/data/LocalCommentDataStore.java
+A	app/src/main/java/com/example/offline/data/RemoteCommentDataStore.java
+M	app/src/main/java/com/example/offline/di/AppModule.java
+M	app/src/main/java/com/example/offline/di/BuildersModule.java
+A	app/src/main/java/com/example/offline/di/CommentsActivityModule.java
+A	app/src/main/java/com/example/offline/domain/AddCommentUseCase.java
+A	app/src/main/java/com/example/offline/domain/DeleteCommentUseCase.java
+A	app/src/main/java/com/example/offline/domain/GetCommentsUseCase.java
+A	app/src/main/java/com/example/offline/domain/LocalCommentRepository.java
+A	app/src/main/java/com/example/offline/domain/RemoteCommentRepository.java
+A	app/src/main/java/com/example/offline/domain/SyncCommentUseCase.java
+A	app/src/main/java/com/example/offline/domain/UpdateCommentUseCase.java
+R088	app/src/main/java/com/example/offline/comments/SyncCommentLifecycleObserver.java	app/src/main/java/com/example/offline/domain/services/SyncCommentLifecycleObserver.java
+R087	app/src/main/java/com/example/offline/events/SyncCommentResponse.java	app/src/main/java/com/example/offline/domain/services/SyncCommentResponse.java
+R094	app/src/main/java/com/example/offline/events/SyncCommentRxBus.java	app/src/main/java/com/example/offline/domain/services/SyncCommentRxBus.java
+R058	app/src/main/java/com/example/offline/events/SyncResponseEventType.java	app/src/main/java/com/example/offline/domain/services/SyncResponseEventType.java
+R091	app/src/main/java/com/example/offline/services/GcmJobService.java	app/src/main/java/com/example/offline/domain/services/jobs/GcmJobService.java
+R096	app/src/main/java/com/example/offline/jobs/JobManagerFactory.java	app/src/main/java/com/example/offline/domain/services/jobs/JobManagerFactory.java
+R056	app/src/main/java/com/example/offline/jobs/Priority.java	app/src/main/java/com/example/offline/domain/services/jobs/JobPriority.java
+R091	app/src/main/java/com/example/offline/services/SchedulerJobService.java	app/src/main/java/com/example/offline/domain/services/jobs/SchedulerJobService.java
+R085	app/src/main/java/com/example/offline/jobs/SyncCommentJob.java	app/src/main/java/com/example/offline/domain/services/jobs/SyncCommentJob.java
+R080	app/src/main/java/com/example/offline/networking/RemoteCommentEndpoint.java	app/src/main/java/com/example/offline/domain/services/networking/RemoteCommentEndpoint.java
+R097	app/src/main/java/com/example/offline/networking/RemoteCommentService.java	app/src/main/java/com/example/offline/domain/services/networking/RemoteCommentService.java
+R083	app/src/main/java/com/example/offline/networking/RemoteException.java	app/src/main/java/com/example/offline/domain/services/networking/RemoteException.java
+R081	app/src/main/java/com/example/offline/comments/CommentsViewModel.java	app/src/main/java/com/example/offline/presentation/CommentsViewModel.java
+R075	app/src/main/java/com/example/offline/comments/CommentsViewModelFactory.java	app/src/main/java/com/example/offline/presentation/CommentsViewModelFactory.java
+R098	app/src/main/java/com/example/offline/comments/CommentListAdapter.java	app/src/main/java/com/example/offline/view/CommentListAdapter.java
+R092	app/src/main/java/com/example/offline/comments/CommentsActivity.java	app/src/main/java/com/example/offline/view/CommentsActivity.java
+M	app/src/main/res/layout/comments_activity.xml
+
+321df9e;use RxJava instead of EventBus
+M	README.md
+M	app/build.gradle
+M	app/src/main/java/com/example/offline/comments/SyncCommentLifecycleObserver.java
+D	app/src/main/java/com/example/offline/events/DeleteCommentRequestEvent.java
+A	app/src/main/java/com/example/offline/events/SyncCommentResponse.java
+A	app/src/main/java/com/example/offline/events/SyncCommentRxBus.java
+A	app/src/main/java/com/example/offline/events/SyncResponseEventType.java
+D	app/src/main/java/com/example/offline/events/UpdateCommentRequestEvent.java
+M	app/src/main/java/com/example/offline/jobs/SyncCommentJob.java
+
+0cc84e1;moved comment sync func to domain layer
+M	app/src/main/java/com/example/offline/comments/AddCommentUseCase.java
+M	app/src/main/java/com/example/offline/comments/CommentsModule.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModel.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModelFactory.java
+
+09c1e2b;extend AppCompatActivity
+M	app/src/main/java/com/example/offline/comments/CommentsActivity.java
+
+b675373;use Flowable for db query
+M	README.md
+M	app/build.gradle
+M	app/src/main/java/com/example/offline/comments/CommentsModule.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModel.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModelFactory.java
+M	app/src/main/java/com/example/offline/comments/GetCommentsUseCase.java
+M	app/src/main/java/com/example/offline/model/CommentDao.java
+M	app/src/main/java/com/example/offline/model/LocalCommentDataStore.java
+
+07d3b96;add SyncCommentLifecycleObserver
+M	app/src/main/java/com/example/offline/comments/CommentListAdapter.java
+M	app/src/main/java/com/example/offline/comments/CommentsActivity.java
+M	app/src/main/java/com/example/offline/comments/CommentsModule.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModel.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModelFactory.java
+M	app/src/main/java/com/example/offline/comments/GetCommentsUseCase.java
+A	app/src/main/java/com/example/offline/comments/SyncCommentLifecycleObserver.java
+M	app/src/main/java/com/example/offline/model/CommentDao.java
+M	app/src/main/java/com/example/offline/model/LocalCommentDataStore.java
+
+8884927;model api cleanup
+M	README.md
+M	app/src/main/java/com/example/offline/jobs/SyncCommentJob.java
+M	app/src/main/java/com/example/offline/model/Comment.java
+M	app/src/main/java/com/example/offline/model/CommentDatabase.java
+A	app/src/main/java/com/example/offline/model/CommentUtils.java
+D	app/src/main/java/com/example/offline/model/DataException.java
+M	app/src/main/java/com/example/offline/model/LocalCommentDataStore.java
+M	app/src/main/java/com/example/offline/model/ModelConstants.java
+R087	app/src/main/java/com/example/offline/networking/RemoteCommentDataStore.java	app/src/main/java/com/example/offline/networking/RemoteCommentEndpoint.java
+R077	app/src/main/java/com/example/offline/networking/RemoteSyncCommentService.java	app/src/main/java/com/example/offline/networking/RemoteCommentService.java
+R065	app/src/main/java/com/example/offline/networking/RemoteSyncDataException.java	app/src/main/java/com/example/offline/networking/RemoteException.java
+M	app/src/main/java/com/example/offline/services/SchedulerJobService.java
+M	app/src/main/res/layout/comment_row.xml
+M	app/src/main/res/layout/comments_activity.xml
+
+cd9317b;update README
+M	README.md
+M	app/src/main/java/com/example/offline/jobs/SyncCommentJob.java
+
+a81c73c;persisting job
+M	app/src/main/java/com/example/offline/comments/CommentsActivity.java
+M	app/src/main/java/com/example/offline/comments/CommentsModule.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModel.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModelFactory.java
+A	app/src/main/java/com/example/offline/comments/DeleteCommentUseCase.java
+M	app/src/main/java/com/example/offline/comments/SyncCommentUseCase.java
+A	app/src/main/java/com/example/offline/comments/UpdateCommentUseCase.java
+M	app/src/main/java/com/example/offline/di/AppModule.java
+A	app/src/main/java/com/example/offline/events/DeleteCommentRequestEvent.java
+D	app/src/main/java/com/example/offline/events/DeleteCommentSuccessEvent.java
+D	app/src/main/java/com/example/offline/events/SyncCommentSuccessEvent.java
+A	app/src/main/java/com/example/offline/events/UpdateCommentRequestEvent.java
+M	app/src/main/java/com/example/offline/jobs/SyncCommentJob.java
+M	app/src/main/java/com/example/offline/model/Comment.java
+M	app/src/main/java/com/example/offline/networking/RemoteSyncCommentService.java
+
+08f6dac;add local delete on job cancellation
+M	app/src/main/java/com/example/offline/comments/CommentsActivity.java
+A	app/src/main/java/com/example/offline/events/DeleteCommentSuccessEvent.java
+M	app/src/main/java/com/example/offline/jobs/SyncCommentJob.java
+M	app/src/main/java/com/example/offline/model/CommentDao.java
+M	app/src/main/java/com/example/offline/model/LocalCommentDataStore.java
+
+b2e12f3;make retrofit call sync and move base api url def to gradle config
+M	app/build.gradle
+M	app/src/main/java/com/example/offline/jobs/SyncCommentJob.java
+M	app/src/main/java/com/example/offline/networking/RemoteSyncCommentService.java
+M	app/src/main/java/com/example/offline/networking/RemoteSyncDataException.java
+
+74722ec;implement remote Retrofit call to sync comments
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/example/offline/comments/CommentsModule.java
+M	app/src/main/java/com/example/offline/comments/SyncCommentUseCase.java
+M	app/src/main/java/com/example/offline/di/AppModule.java
+M	app/src/main/java/com/example/offline/jobs/SyncCommentJob.java
+M	app/src/main/java/com/example/offline/model/Comment.java
+M	app/src/main/java/com/example/offline/model/CommentDatabase.java
+A	app/src/main/java/com/example/offline/networking/RemoteCommentDataStore.java
+A	app/src/main/java/com/example/offline/networking/RemoteSyncCommentService.java
+R087	app/src/main/java/com/example/offline/jobs/RemoteSyncDataException.java	app/src/main/java/com/example/offline/networking/RemoteSyncDataException.java
+
+7867300;integrate Room db
+M	app/build.gradle
+M	app/src/main/java/com/example/offline/comments/AddCommentUseCase.java
+M	app/src/main/java/com/example/offline/comments/CommentListAdapter.java
+M	app/src/main/java/com/example/offline/comments/CommentsModule.java
+M	app/src/main/java/com/example/offline/comments/GetCommentsUseCase.java
+M	app/src/main/java/com/example/offline/comments/SyncCommentUseCase.java
+M	app/src/main/java/com/example/offline/di/AppModule.java
+M	app/src/main/java/com/example/offline/jobs/RemoteSyncDataException.java
+M	app/src/main/java/com/example/offline/jobs/SyncCommentJob.java
+M	app/src/main/java/com/example/offline/model/Comment.java
+A	app/src/main/java/com/example/offline/model/CommentDao.java
+A	app/src/main/java/com/example/offline/model/CommentDatabase.java
+A	app/src/main/java/com/example/offline/model/DataException.java
+A	app/src/main/java/com/example/offline/model/LocalCommentDataStore.java
+M	app/src/main/java/com/example/offline/model/ModelConstants.java
+D	app/src/main/java/com/example/offline/model/PhotoCommentsRepository.java
+D	app/src/main/java/com/example/offline/model/RepositoryDataException.java
+M	build.gradle
+
+3e7ba81;rename sync job and add remote exception
+M	app/src/main/java/com/example/offline/comments/SyncCommentUseCase.java
+A	app/src/main/java/com/example/offline/jobs/RemoteSyncDataException.java
+R066	app/src/main/java/com/example/offline/jobs/AddCommentJob.java	app/src/main/java/com/example/offline/jobs/SyncCommentJob.java
+
+609978a;add EventBus and hook up to UI
+M	app/build.gradle
+D	app/src/main/java/com/example/offline/comments/AddCommentJob.java
+M	app/src/main/java/com/example/offline/comments/AddCommentUseCase.java
+M	app/src/main/java/com/example/offline/comments/CommentListAdapter.java
+M	app/src/main/java/com/example/offline/comments/CommentsActivity.java
+M	app/src/main/java/com/example/offline/comments/CommentsModule.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModel.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModelFactory.java
+A	app/src/main/java/com/example/offline/comments/GetCommentsUseCase.java
+M	app/src/main/java/com/example/offline/comments/SyncCommentUseCase.java
+D	app/src/main/java/com/example/offline/comments/UpdateCommentUseCase.java
+A	app/src/main/java/com/example/offline/events/SyncCommentSuccessEvent.java
+A	app/src/main/java/com/example/offline/jobs/AddCommentJob.java
+M	app/src/main/java/com/example/offline/model/Comment.java
+A	app/src/main/java/com/example/offline/model/ModelConstants.java
+M	app/src/main/java/com/example/offline/model/PhotoCommentsRepository.java
+M	app/src/main/res/layout/comment_row.xml
+M	app/src/main/res/layout/comments_activity.xml
+
+35c6da2;let repository be the only source of truth for comments
+M	app/src/main/java/com/example/offline/comments/AddCommentUseCase.java
+M	app/src/main/java/com/example/offline/comments/CommentsActivity.java
+M	app/src/main/java/com/example/offline/comments/CommentsModule.java
+D	app/src/main/java/com/example/offline/comments/CommentsRepository.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModel.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModelFactory.java
+M	app/src/main/java/com/example/offline/comments/UpdateCommentUseCase.java
+M	app/src/main/java/com/example/offline/di/AppModule.java
+M	app/src/main/java/com/example/offline/model/Comment.java
+A	app/src/main/java/com/example/offline/model/PhotoCommentsRepository.java
+A	app/src/main/java/com/example/offline/model/RepositoryDataException.java
+
+5bc7b5a;add recycler view for displaying comments
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/example/offline/comments/CommentListAdapter.java
+M	app/src/main/java/com/example/offline/comments/CommentsActivity.java
+M	app/src/main/java/com/example/offline/model/Comment.java
+A	app/src/main/res/drawable/newport_the_breakers.png
+A	app/src/main/res/layout/comment_row.xml
+M	app/src/main/res/layout/comments_activity.xml
+M	app/src/main/res/values/styles.xml
+
+b59a081;add add/sync/update chain
+M	app/src/main/java/com/example/offline/comments/AddCommentJob.java
+M	app/src/main/java/com/example/offline/comments/AddCommentUseCase.java
+M	app/src/main/java/com/example/offline/comments/CommentsActivity.java
+M	app/src/main/java/com/example/offline/comments/CommentsModule.java
+M	app/src/main/java/com/example/offline/comments/CommentsRepository.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModel.java
+M	app/src/main/java/com/example/offline/comments/CommentsViewModelFactory.java
+A	app/src/main/java/com/example/offline/comments/SyncCommentUseCase.java
+A	app/src/main/java/com/example/offline/comments/UpdateCommentUseCase.java
+D	app/src/main/java/com/example/offline/common/viewmodel/Response.java
+D	app/src/main/java/com/example/offline/common/viewmodel/Status.java
+M	app/src/main/java/com/example/offline/di/AppModule.java
+R096	app/src/main/java/com/example/offline/services/JobManagerFactory.java	app/src/main/java/com/example/offline/jobs/JobManagerFactory.java
+M	app/src/main/java/com/example/offline/model/Comment.java
+
+217d431;declare services in AndroidManifest.xml
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/example/offline/di/AppModule.java
+M	app/src/main/java/com/example/offline/services/GcmJobService.java
+M	app/src/main/java/com/example/offline/services/SchedulerJobService.java
+
+e1118c3;set up job manager and services
+M	app/build.gradle
+A	app/src/main/java/com/example/offline/comments/AddCommentJob.java
+M	app/src/main/java/com/example/offline/di/AppModule.java
+A	app/src/main/java/com/example/offline/jobs/Priority.java
+A	app/src/main/java/com/example/offline/model/Comment.java
+A	app/src/main/java/com/example/offline/services/GcmJobService.java
+A	app/src/main/java/com/example/offline/services/JobManagerFactory.java
+A	app/src/main/java/com/example/offline/services/SchedulerJobService.java
+
+e02bd84;integrate android-priority-jobqueue
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+
+8621d58;update readme
+M	README.md
+
+9059e36;initial commit
+A	.gitignore
+A	.travis.yml
+A	README.md
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/example/offline/App.java
+A	app/src/main/java/com/example/offline/comments/AddCommentUseCase.java
+A	app/src/main/java/com/example/offline/comments/CommentsActivity.java
+A	app/src/main/java/com/example/offline/comments/CommentsModule.java
+A	app/src/main/java/com/example/offline/comments/CommentsRepository.java
+A	app/src/main/java/com/example/offline/comments/CommentsViewModel.java
+A	app/src/main/java/com/example/offline/comments/CommentsViewModelFactory.java
+A	app/src/main/java/com/example/offline/common/viewmodel/Response.java
+A	app/src/main/java/com/example/offline/common/viewmodel/Status.java
+A	app/src/main/java/com/example/offline/di/AppComponent.java
+A	app/src/main/java/com/example/offline/di/AppModule.java
+A	app/src/main/java/com/example/offline/di/BuildersModule.java
+A	app/src/main/java/com/example/offline/rx/SchedulersFacade.java
+A	app/src/main/res/layout/comments_activity.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle
+
+6215228;Initial commit
+A	LICENSE

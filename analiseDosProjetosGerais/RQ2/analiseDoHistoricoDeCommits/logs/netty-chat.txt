@@ -1,0 +1,905 @@
+402b67e;update test
+M	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+M	comet/src/test/java/wiki/tony/chat/comet/client/ChatClient.java
+M	logic/src/main/java/wiki/tony/chat/logic/service/MsgServiceImpl.java
+
+8c1101b;去除服务端心跳处理
+M	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+
+e4a6e2f;Dubbo配置迁移至.yml中
+M	comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java
+M	comet/src/main/resources/application.yml
+M	comet/src/main/resources/dubbo-consumer.xml
+M	logic/src/main/java/wiki/tony/chat/logic/LogicApplication.java
+M	logic/src/main/resources/application.yml
+M	logic/src/main/resources/dubbo-provider.xml
+
+0de9793;Merge pull request #6 from wozitaoran/patch-1
+93c6714;Update WebSocketChatServer.java
+M	comet/src/main/java/wiki/tony/chat/comet/server/WebSocketChatServer.java
+
+cd770df;fix websocket
+M	comet/src/main/java/wiki/tony/chat/comet/codec/WebSocketProtoCodec.java
+M	docs/websocket/demo.html
+
+6e04b34;update websocket
+M	README.md
+R100	modules/base/pom.xml	base/pom.xml
+R100	modules/base/src/main/java/wiki/tony/chat/base/bean/AuthToken.java	base/src/main/java/wiki/tony/chat/base/bean/AuthToken.java
+A	base/src/main/java/wiki/tony/chat/base/bean/Constants.java
+R100	modules/base/src/main/java/wiki/tony/chat/base/bean/Message.java	base/src/main/java/wiki/tony/chat/base/bean/Message.java
+R100	modules/base/src/main/java/wiki/tony/chat/base/bean/Proto.java	base/src/main/java/wiki/tony/chat/base/bean/Proto.java
+R100	modules/base/src/main/java/wiki/tony/chat/base/exception/ConnectionAuthException.java	base/src/main/java/wiki/tony/chat/base/exception/ConnectionAuthException.java
+R100	modules/base/src/main/java/wiki/tony/chat/base/pb/Auth.java	base/src/main/java/wiki/tony/chat/base/pb/Auth.java
+R100	modules/base/src/main/java/wiki/tony/chat/base/pb/Message.java	base/src/main/java/wiki/tony/chat/base/pb/Message.java
+R100	modules/base/src/main/java/wiki/tony/chat/base/service/AuthService.java	base/src/main/java/wiki/tony/chat/base/service/AuthService.java
+R100	modules/base/src/main/java/wiki/tony/chat/base/service/MsgService.java	base/src/main/java/wiki/tony/chat/base/service/MsgService.java
+R100	modules/comet/pom.xml	comet/pom.xml
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java	comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/ChatOperation.java	comet/src/main/java/wiki/tony/chat/comet/ChatOperation.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/ChatServer.java	comet/src/main/java/wiki/tony/chat/comet/ChatServer.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/bean/Constants.java	comet/src/main/java/wiki/tony/chat/comet/bean/Constants.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/codec/TcpProtoCodec.java	comet/src/main/java/wiki/tony/chat/comet/codec/TcpProtoCodec.java
+A	comet/src/main/java/wiki/tony/chat/comet/codec/WebSocketProtoCodec.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/exception/ChatException.java	comet/src/main/java/wiki/tony/chat/comet/exception/ChatException.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/exception/NotAuthException.java	comet/src/main/java/wiki/tony/chat/comet/exception/NotAuthException.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/initializer/TcpServerInitializer.java	comet/src/main/java/wiki/tony/chat/comet/initializer/TcpServerInitializer.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/initializer/WebSocketServerInitializer.java	comet/src/main/java/wiki/tony/chat/comet/initializer/WebSocketServerInitializer.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/operation/AbstractOperation.java	comet/src/main/java/wiki/tony/chat/comet/operation/AbstractOperation.java
+R088	modules/comet/src/main/java/wiki/tony/chat/comet/operation/AuthOperation.java	comet/src/main/java/wiki/tony/chat/comet/operation/AuthOperation.java
+A	comet/src/main/java/wiki/tony/chat/comet/operation/HeartbeatOperation.java
+R086	modules/comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java	comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java
+R075	modules/comet/src/main/java/wiki/tony/chat/comet/operation/Operation.java	comet/src/main/java/wiki/tony/chat/comet/operation/Operation.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/server/TcpChatServer.java	comet/src/main/java/wiki/tony/chat/comet/server/TcpChatServer.java
+R100	modules/comet/src/main/java/wiki/tony/chat/comet/server/WebSocketChatServer.java	comet/src/main/java/wiki/tony/chat/comet/server/WebSocketChatServer.java
+R100	modules/comet/src/main/resources/application.yml	comet/src/main/resources/application.yml
+R100	modules/comet/src/main/resources/dubbo-consumer.xml	comet/src/main/resources/dubbo-consumer.xml
+R100	modules/comet/src/main/resources/dubbo.xsd	comet/src/main/resources/dubbo.xsd
+R100	modules/comet/src/test/java/wiki/tony/chat/comet/client/ChatClient.java	comet/src/test/java/wiki/tony/chat/comet/client/ChatClient.java
+R057	pb/README.md	docs/pb/README.md
+R100	pb/auth.proto	docs/pb/auth.proto
+R100	pb/message.proto	docs/pb/message.proto
+A	docs/websocket/demo.html
+A	docs/websocket/js/bytebuffer.min.js
+A	docs/websocket/js/long.min.js
+A	docs/websocket/js/protobuf.min.js
+R100	modules/logic/pom.xml	logic/pom.xml
+R100	modules/logic/src/main/java/wiki/tony/chat/logic/LogicApplication.java	logic/src/main/java/wiki/tony/chat/logic/LogicApplication.java
+R100	modules/logic/src/main/java/wiki/tony/chat/logic/config/CachingConfig.java	logic/src/main/java/wiki/tony/chat/logic/config/CachingConfig.java
+R100	modules/logic/src/main/java/wiki/tony/chat/logic/service/AuthServiceImpl.java	logic/src/main/java/wiki/tony/chat/logic/service/AuthServiceImpl.java
+R100	modules/logic/src/main/java/wiki/tony/chat/logic/service/MsgServiceImpl.java	logic/src/main/java/wiki/tony/chat/logic/service/MsgServiceImpl.java
+R100	modules/logic/src/main/resources/application.yml	logic/src/main/resources/application.yml
+R100	modules/logic/src/main/resources/dubbo-provider.xml	logic/src/main/resources/dubbo-provider.xml
+R100	modules/logic/src/main/resources/dubbo.xsd	logic/src/main/resources/dubbo.xsd
+D	modules/comet/src/main/java/wiki/tony/chat/comet/codec/WebSocketProtoCodec.java
+D	modules/comet/src/test/resources/websocket/client.js
+D	modules/comet/src/test/resources/websocket/demo.html
+R100	modules/pom.xml	pom.xml
+R100	modules/web/pom.xml	web/pom.xml
+
+aad60b4;Add Comment
+M	modules/base/src/main/java/wiki/tony/chat/base/bean/AuthToken.java
+D	modules/base/src/main/java/wiki/tony/chat/base/bean/MQTopics.java
+M	modules/base/src/main/java/wiki/tony/chat/base/bean/Message.java
+M	modules/base/src/main/java/wiki/tony/chat/base/bean/Proto.java
+M	modules/base/src/main/java/wiki/tony/chat/base/exception/ConnectionAuthException.java
+D	modules/base/src/main/java/wiki/tony/chat/base/mq/MQConsumer.java
+D	modules/base/src/main/java/wiki/tony/chat/base/mq/MQMessage.java
+D	modules/base/src/main/java/wiki/tony/chat/base/mq/MQMessageListener.java
+D	modules/base/src/main/java/wiki/tony/chat/base/mq/MQProducer.java
+D	modules/base/src/main/java/wiki/tony/chat/base/mq/impl/test/DefaultMQMessage.java
+D	modules/base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQConsumer.java
+D	modules/base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQProducer.java
+D	modules/base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQProxy.java
+M	modules/base/src/main/java/wiki/tony/chat/base/service/AuthService.java
+M	modules/base/src/main/java/wiki/tony/chat/base/service/MsgService.java
+D	modules/base/src/main/java/wiki/tony/chat/base/util/JsonUtils.java
+M	modules/comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+M	modules/comet/src/test/java/wiki/tony/chat/comet/client/ChatClient.java
+
+457ffbe;update
+M	modules/base/src/main/java/wiki/tony/chat/base/bean/Proto.java
+M	modules/comet/pom.xml
+M	modules/comet/src/main/resources/dubbo-consumer.xml
+M	modules/comet/src/test/java/wiki/tony/chat/comet/client/ChatClient.java
+M	modules/logic/pom.xml
+M	modules/logic/src/main/java/wiki/tony/chat/logic/service/AuthServiceImpl.java
+A	modules/logic/src/main/resources/application.yml
+M	modules/logic/src/main/resources/dubbo-provider.xml
+
+12d1f5c;Add RPC
+M	modules/comet/pom.xml
+M	modules/comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+D	modules/comet/src/main/java/wiki/tony/chat/comet/service/AuthServiceImpl.java
+D	modules/comet/src/main/java/wiki/tony/chat/comet/service/MsgServiceImpl.java
+D	modules/comet/src/main/resources/application.properties
+A	modules/comet/src/main/resources/dubbo-consumer.xml
+A	modules/comet/src/main/resources/dubbo.xsd
+M	modules/logic/pom.xml
+M	modules/logic/src/main/java/wiki/tony/chat/logic/LogicApplication.java
+M	modules/logic/src/main/java/wiki/tony/chat/logic/service/AuthServiceImpl.java
+R075	modules/logic/src/main/java/wiki/tony/chat/logic/service/MessageServiceImpl.java	modules/logic/src/main/java/wiki/tony/chat/logic/service/MsgServiceImpl.java
+D	modules/logic/src/main/resources/application.properties
+A	modules/logic/src/main/resources/dubbo-provider.xml
+A	modules/logic/src/main/resources/dubbo.xsd
+M	modules/pom.xml
+
+c424e75;Pre Add RPC
+R060	modules/base/src/main/java/wiki/tony/chat/base/service/MessageService.java	modules/base/src/main/java/wiki/tony/chat/base/service/MsgService.java
+M	modules/comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+M	modules/comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java
+A	modules/comet/src/main/java/wiki/tony/chat/comet/service/AuthServiceImpl.java
+A	modules/comet/src/main/java/wiki/tony/chat/comet/service/MsgServiceImpl.java
+M	modules/logic/src/main/java/wiki/tony/chat/logic/service/MessageServiceImpl.java
+
+5ed9fcd;refactor modules
+D	base/src/main/java/wiki/tony/chat/base/service/AuthService.java
+D	comet/src/main/java/wiki/tony/chat/comet/operation/AuthOperation.java
+D	comet/src/test/java/wiki/tony/chat/comet/JsonTest.java
+D	logic/src/main/java/wiki/tony/chat/logic/service/AuthServiceImpl.java
+D	logic/src/main/java/wiki/tony/chat/logic/service/MessageServiceImpl.java
+R100	base/pom.xml	modules/base/pom.xml
+R100	base/src/main/java/wiki/tony/chat/base/bean/AuthToken.java	modules/base/src/main/java/wiki/tony/chat/base/bean/AuthToken.java
+R100	base/src/main/java/wiki/tony/chat/base/bean/MQTopics.java	modules/base/src/main/java/wiki/tony/chat/base/bean/MQTopics.java
+R100	base/src/main/java/wiki/tony/chat/base/bean/Message.java	modules/base/src/main/java/wiki/tony/chat/base/bean/Message.java
+R097	comet/src/main/java/wiki/tony/chat/comet/bean/Proto.java	modules/base/src/main/java/wiki/tony/chat/base/bean/Proto.java
+A	modules/base/src/main/java/wiki/tony/chat/base/exception/ConnectionAuthException.java
+R100	base/src/main/java/wiki/tony/chat/base/mq/MQConsumer.java	modules/base/src/main/java/wiki/tony/chat/base/mq/MQConsumer.java
+R100	base/src/main/java/wiki/tony/chat/base/mq/MQMessage.java	modules/base/src/main/java/wiki/tony/chat/base/mq/MQMessage.java
+R100	base/src/main/java/wiki/tony/chat/base/mq/MQMessageListener.java	modules/base/src/main/java/wiki/tony/chat/base/mq/MQMessageListener.java
+R100	base/src/main/java/wiki/tony/chat/base/mq/MQProducer.java	modules/base/src/main/java/wiki/tony/chat/base/mq/MQProducer.java
+R100	base/src/main/java/wiki/tony/chat/base/mq/impl/test/DefaultMQMessage.java	modules/base/src/main/java/wiki/tony/chat/base/mq/impl/test/DefaultMQMessage.java
+R100	base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQConsumer.java	modules/base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQConsumer.java
+R100	base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQProducer.java	modules/base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQProducer.java
+R100	base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQProxy.java	modules/base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQProxy.java
+R100	base/src/main/java/wiki/tony/chat/base/pb/Auth.java	modules/base/src/main/java/wiki/tony/chat/base/pb/Auth.java
+R100	base/src/main/java/wiki/tony/chat/base/pb/Message.java	modules/base/src/main/java/wiki/tony/chat/base/pb/Message.java
+A	modules/base/src/main/java/wiki/tony/chat/base/service/AuthService.java
+R057	base/src/main/java/wiki/tony/chat/base/service/MessageService.java	modules/base/src/main/java/wiki/tony/chat/base/service/MessageService.java
+R100	base/src/main/java/wiki/tony/chat/base/util/JsonUtils.java	modules/base/src/main/java/wiki/tony/chat/base/util/JsonUtils.java
+R100	comet/pom.xml	modules/comet/pom.xml
+R091	comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java	modules/comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+R100	comet/src/main/java/wiki/tony/chat/comet/ChatOperation.java	modules/comet/src/main/java/wiki/tony/chat/comet/ChatOperation.java
+R100	comet/src/main/java/wiki/tony/chat/comet/ChatServer.java	modules/comet/src/main/java/wiki/tony/chat/comet/ChatServer.java
+R061	comet/src/main/java/wiki/tony/chat/comet/bean/Constants.java	modules/comet/src/main/java/wiki/tony/chat/comet/bean/Constants.java
+R098	comet/src/main/java/wiki/tony/chat/comet/codec/TcpProtoCodec.java	modules/comet/src/main/java/wiki/tony/chat/comet/codec/TcpProtoCodec.java
+R097	comet/src/main/java/wiki/tony/chat/comet/codec/WebSocketProtoCodec.java	modules/comet/src/main/java/wiki/tony/chat/comet/codec/WebSocketProtoCodec.java
+R100	comet/src/main/java/wiki/tony/chat/comet/exception/ChatException.java	modules/comet/src/main/java/wiki/tony/chat/comet/exception/ChatException.java
+R100	comet/src/main/java/wiki/tony/chat/comet/exception/NotAuthException.java	modules/comet/src/main/java/wiki/tony/chat/comet/exception/NotAuthException.java
+R087	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java	modules/comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+R100	comet/src/main/java/wiki/tony/chat/comet/initializer/TcpServerInitializer.java	modules/comet/src/main/java/wiki/tony/chat/comet/initializer/TcpServerInitializer.java
+R100	comet/src/main/java/wiki/tony/chat/comet/initializer/WebSocketServerInitializer.java	modules/comet/src/main/java/wiki/tony/chat/comet/initializer/WebSocketServerInitializer.java
+R063	comet/src/main/java/wiki/tony/chat/comet/operation/AbstractOperation.java	modules/comet/src/main/java/wiki/tony/chat/comet/operation/AbstractOperation.java
+A	modules/comet/src/main/java/wiki/tony/chat/comet/operation/AuthOperation.java
+R082	comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java	modules/comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java
+R070	comet/src/main/java/wiki/tony/chat/comet/operation/Operation.java	modules/comet/src/main/java/wiki/tony/chat/comet/operation/Operation.java
+R100	comet/src/main/java/wiki/tony/chat/comet/server/TcpChatServer.java	modules/comet/src/main/java/wiki/tony/chat/comet/server/TcpChatServer.java
+R100	comet/src/main/java/wiki/tony/chat/comet/server/WebSocketChatServer.java	modules/comet/src/main/java/wiki/tony/chat/comet/server/WebSocketChatServer.java
+R100	comet/src/main/resources/application.properties	modules/comet/src/main/resources/application.properties
+R100	comet/src/main/resources/application.yml	modules/comet/src/main/resources/application.yml
+R098	comet/src/test/java/wiki/tony/chat/comet/client/ChatClient.java	modules/comet/src/test/java/wiki/tony/chat/comet/client/ChatClient.java
+R100	comet/src/test/resources/websocket/client.js	modules/comet/src/test/resources/websocket/client.js
+R100	comet/src/test/resources/websocket/demo.html	modules/comet/src/test/resources/websocket/demo.html
+R100	logic/pom.xml	modules/logic/pom.xml
+R100	logic/src/main/java/wiki/tony/chat/logic/LogicApplication.java	modules/logic/src/main/java/wiki/tony/chat/logic/LogicApplication.java
+R100	logic/src/main/java/wiki/tony/chat/logic/config/CachingConfig.java	modules/logic/src/main/java/wiki/tony/chat/logic/config/CachingConfig.java
+A	modules/logic/src/main/java/wiki/tony/chat/logic/service/AuthServiceImpl.java
+A	modules/logic/src/main/java/wiki/tony/chat/logic/service/MessageServiceImpl.java
+R100	logic/src/main/resources/application.properties	modules/logic/src/main/resources/application.properties
+R098	pom.xml	modules/pom.xml
+R100	web/pom.xml	modules/web/pom.xml
+
+f03a8e1;Merge branch 'master' of https://github.com/im-qq/netty-chat
+767e52b;no message
+M	base/src/main/java/wiki/tony/chat/base/service/MessageService.java
+M	comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+A	comet/src/main/resources/application.properties
+D	comet/src/main/resources/spring-dubbo.xml
+M	logic/src/main/java/wiki/tony/chat/logic/LogicApplication.java
+A	logic/src/main/resources/application.properties
+D	logic/src/main/resources/spring-dubbo.xml
+M	pom.xml
+
+7a2e009;add pb files.
+A	base/src/main/java/wiki/tony/chat/base/pb/Auth.java
+A	base/src/main/java/wiki/tony/chat/base/pb/Message.java
+A	pb/README.md
+A	pb/auth.proto
+A	pb/message.proto
+M	pom.xml
+
+c4029a1;添加dubbo支持
+M	comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+A	comet/src/main/resources/spring-dubbo.xml
+A	logic/src/main/java/wiki/tony/chat/logic/LogicApplication.java
+M	logic/src/main/java/wiki/tony/chat/logic/service/MessageServiceImpl.java
+A	logic/src/main/resources/spring-dubbo.xml
+M	pom.xml
+
+09cd58f;添加注释
+M	comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+M	comet/src/main/java/wiki/tony/chat/comet/ChatOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/ChatServer.java
+M	comet/src/main/java/wiki/tony/chat/comet/bean/Constants.java
+M	comet/src/main/java/wiki/tony/chat/comet/bean/Proto.java
+M	comet/src/main/java/wiki/tony/chat/comet/codec/TcpProtoCodec.java
+M	comet/src/main/java/wiki/tony/chat/comet/codec/WebSocketProtoCodec.java
+M	comet/src/main/java/wiki/tony/chat/comet/exception/ChatException.java
+M	comet/src/main/java/wiki/tony/chat/comet/exception/NotAuthException.java
+M	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+M	comet/src/main/java/wiki/tony/chat/comet/initializer/TcpServerInitializer.java
+M	comet/src/main/java/wiki/tony/chat/comet/initializer/WebSocketServerInitializer.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/AbstractOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/AuthOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/Operation.java
+
+1a1de11;update handler
+M	README.md
+M	base/pom.xml
+M	base/src/main/java/wiki/tony/chat/base/bean/MQTopics.java
+M	base/src/main/java/wiki/tony/chat/base/mq/MQConsumer.java
+M	base/src/main/java/wiki/tony/chat/base/mq/MQMessage.java
+M	base/src/main/java/wiki/tony/chat/base/mq/MQProducer.java
+M	base/src/main/java/wiki/tony/chat/base/mq/impl/test/DefaultMQMessage.java
+M	base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQConsumer.java
+M	base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQProducer.java
+M	base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQProxy.java
+M	base/src/main/java/wiki/tony/chat/base/service/AuthService.java
+M	logic/src/main/java/wiki/tony/chat/logic/service/AuthServiceImpl.java
+M	logic/src/main/java/wiki/tony/chat/logic/service/MessageServiceImpl.java
+M	pom.xml
+
+ba60bd7;Merge branch 'master' of github.com:im-qq/netty-chat
+7701b1f;update handler
+R080	base/src/main/java/wiki/tony/chat/base/bean/MQSubjectPrefix.java	base/src/main/java/wiki/tony/chat/base/bean/MQTopics.java
+M	comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+M	comet/src/main/java/wiki/tony/chat/comet/bean/Constants.java
+M	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/AbstractOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/AuthOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java
+
+2f07cfd;Merge pull request #4 from Nov11/master
+41d7b6e;'channelFuture.channel().closeFuture();' doesn't make a close, use close() explicitly.
+M	comet/src/main/java/wiki/tony/chat/comet/server/TcpChatServer.java
+M	comet/src/main/java/wiki/tony/chat/comet/server/WebSocketChatServer.java
+
+454f715;add MQ info
+M	README.md
+
+d8af1e1;rename ChatOperation.
+R079	comet/src/main/java/wiki/tony/chat/comet/manager/OperationManager.java	comet/src/main/java/wiki/tony/chat/comet/ChatOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+M	docs/proto.png
+
+e52f1ff;update proto.png
+M	docs/proto.png
+
+c0bd32f;add photo.png
+M	README.md
+A	docs/proto.png
+
+cbfa589;add license.
+M	README.md
+
+310f76a;modify Operation.
+M	README.md
+M	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/AbstractOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/AuthOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/Operation.java
+
+8d9a12f;fix readme
+M	README.md
+
+0e0e208;fix readme
+M	README.md
+
+aeaa6f6;update README
+M	README.md
+
+5b04c53;dev commit
+M	.gitignore
+M	README.md
+A	base/pom.xml
+A	base/src/main/java/wiki/tony/chat/base/bean/AuthToken.java
+A	base/src/main/java/wiki/tony/chat/base/bean/MQSubjectPrefix.java
+A	base/src/main/java/wiki/tony/chat/base/bean/Message.java
+A	base/src/main/java/wiki/tony/chat/base/mq/MQConsumer.java
+A	base/src/main/java/wiki/tony/chat/base/mq/MQMessage.java
+A	base/src/main/java/wiki/tony/chat/base/mq/MQMessageListener.java
+A	base/src/main/java/wiki/tony/chat/base/mq/MQProducer.java
+A	base/src/main/java/wiki/tony/chat/base/mq/impl/test/DefaultMQMessage.java
+A	base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQConsumer.java
+A	base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQProducer.java
+A	base/src/main/java/wiki/tony/chat/base/mq/impl/test/TestMQProxy.java
+A	base/src/main/java/wiki/tony/chat/base/service/AuthService.java
+A	base/src/main/java/wiki/tony/chat/base/service/MessageService.java
+A	base/src/main/java/wiki/tony/chat/base/util/JsonUtils.java
+D	chat-biz/pom.xml
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/ApplicationConfig.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/bean/ClientType.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/bean/Gender.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/bean/Presence.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/entity/BaseEntity.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/entity/Login.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/entity/Message.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/entity/User.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/entity/UserDetail.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/repository/LoginRepository.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/repository/MessageRepository.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/repository/UserRepository.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/service/MessageService.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/service/UserService.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/service/impl/MessageServiceImpl.java
+D	chat-biz/src/main/java/io/ganguo/chat/route/biz/service/impl/UserServiceImpl.java
+D	chat-biz/src/main/resources/log4j.properties
+D	chat-biz/src/test/java/io/ganguo/chat/route/biz/AbstractIntegrationTest.java
+D	chat-biz/src/test/java/io/ganguo/chat/route/biz/ApplicationConfigTest.java
+D	chat-biz/src/test/java/io/ganguo/chat/route/biz/Test.java
+D	chat-biz/src/test/java/io/ganguo/chat/route/biz/user/TestUserRepository.java
+D	chat-biz/src/test/java/io/ganguo/chat/route/biz/user/TestUserService.java
+D	chat-client/pom.xml
+D	chat-client/src/main/java/io/ganguo/chat/route/client/ChatClient.java
+D	chat-client/src/main/java/io/ganguo/chat/route/client/ChatClientHandler.java
+D	chat-client/src/main/java/io/ganguo/chat/route/client/ChatClientInitializer.java
+D	chat-client/src/main/java/io/ganguo/chat/route/client/handler/MessageHandler.java
+D	chat-client/src/main/java/io/ganguo/chat/route/client/handler/UserHandler.java
+D	chat-client/src/main/resources/log4j.properties
+D	chat-core/src/main/java/io/ganguo/chat/core/codec/PacketDecoder.java
+D	chat-core/src/main/java/io/ganguo/chat/core/codec/PacketEncoder.java
+D	chat-core/src/main/java/io/ganguo/chat/core/connetion/ConnectionManager.java
+D	chat-core/src/main/java/io/ganguo/chat/core/connetion/IMConnection.java
+D	chat-core/src/main/java/io/ganguo/chat/core/handler/IMHandler.java
+D	chat-core/src/main/java/io/ganguo/chat/core/handler/IMHandlerManager.java
+D	chat-core/src/main/java/io/ganguo/chat/core/protocol/Commands.java
+D	chat-core/src/main/java/io/ganguo/chat/core/protocol/Handlers.java
+D	chat-core/src/main/java/io/ganguo/chat/core/transport/DataBuffer.java
+D	chat-core/src/main/java/io/ganguo/chat/core/transport/Header.java
+D	chat-core/src/main/java/io/ganguo/chat/core/transport/IMRequest.java
+D	chat-core/src/main/java/io/ganguo/chat/core/transport/IMResponse.java
+D	chat-core/src/main/java/io/ganguo/chat/core/transport/IMSerializer.java
+D	chat-core/src/main/java/io/ganguo/chat/core/util/Benchmark.java
+D	chat-core/src/main/java/io/ganguo/chat/core/util/DateUtils.java
+D	chat-core/src/main/java/io/ganguo/chat/core/util/StringUtils.java
+D	chat-core/src/main/java/io/ganguo/chat/core/util/TaskUtil.java
+D	chat-core/src/main/resources/log4j.properties
+D	chat-route/pom.xml
+D	chat-route/src/main/java/io/ganguo/chat/route/Bootstrap.java
+D	chat-route/src/main/java/io/ganguo/chat/route/ChatContext.java
+D	chat-route/src/main/java/io/ganguo/chat/route/ChatRouteServer.java
+D	chat-route/src/main/java/io/ganguo/chat/route/ChatRouteServerHandler.java
+D	chat-route/src/main/java/io/ganguo/chat/route/ChatRouteServerInitializer.java
+D	chat-route/src/main/java/io/ganguo/chat/route/bean/Constants.java
+D	chat-route/src/main/java/io/ganguo/chat/route/bean/RouteData.java
+D	chat-route/src/main/java/io/ganguo/chat/route/bean/RouteResponse.java
+D	chat-route/src/main/java/io/ganguo/chat/route/codec/RoutePacketDecoder.java
+D	chat-route/src/main/java/io/ganguo/chat/route/codec/RoutePacketEncoder.java
+D	chat-route/src/main/java/io/ganguo/chat/route/config/CachingConfiguration.java
+D	chat-route/src/main/java/io/ganguo/chat/route/handler/RegisterRouteDataHandler.java
+D	chat-route/src/main/java/io/ganguo/chat/route/handler/RoomRouteDataHandler.java
+D	chat-route/src/main/java/io/ganguo/chat/route/handler/UserRouteDataHandler.java
+D	chat-route/src/test/java/io/ganguo/chat/route/AppTest.java
+D	chat-server/pom.xml
+D	chat-server/src/main/java/io/ganguo/chat/route/server/Bootstrap.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/ChatContext.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/ChatServer.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/ChatServerHandler.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/ChatServerInitializer.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/dto/AckDTO.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/dto/LoginDTO.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/dto/MessageDTO.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/dto/PresenceDTO.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/dto/UserDTO.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/dto/UserDetailDTO.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/event/EventDispatcher.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/event/EventDispatcherManager.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/event/EventListener.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/event/PresenceEventDispatcher.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/handler/MessageHandler.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/handler/UserHandler.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/session/ClientSession.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/session/ClientSessionManager.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/worker/IMWorker.java
+D	chat-server/src/main/java/io/ganguo/chat/route/server/worker/PresenceWorker.java
+D	chat-server/src/main/resources/log4j.properties
+A	comet/pom.xml
+A	comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+A	comet/src/main/java/wiki/tony/chat/comet/ChatServer.java
+A	comet/src/main/java/wiki/tony/chat/comet/bean/Constants.java
+A	comet/src/main/java/wiki/tony/chat/comet/bean/Proto.java
+A	comet/src/main/java/wiki/tony/chat/comet/codec/TcpProtoCodec.java
+A	comet/src/main/java/wiki/tony/chat/comet/codec/WebSocketProtoCodec.java
+A	comet/src/main/java/wiki/tony/chat/comet/exception/ChatException.java
+A	comet/src/main/java/wiki/tony/chat/comet/exception/NotAuthException.java
+A	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+A	comet/src/main/java/wiki/tony/chat/comet/initializer/TcpServerInitializer.java
+A	comet/src/main/java/wiki/tony/chat/comet/initializer/WebSocketServerInitializer.java
+A	comet/src/main/java/wiki/tony/chat/comet/manager/OperationManager.java
+A	comet/src/main/java/wiki/tony/chat/comet/operation/AbstractOperation.java
+A	comet/src/main/java/wiki/tony/chat/comet/operation/AuthOperation.java
+A	comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java
+A	comet/src/main/java/wiki/tony/chat/comet/operation/Operation.java
+A	comet/src/main/java/wiki/tony/chat/comet/server/TcpChatServer.java
+A	comet/src/main/java/wiki/tony/chat/comet/server/WebSocketChatServer.java
+A	comet/src/main/resources/application.yml
+A	comet/src/test/java/wiki/tony/chat/comet/JsonTest.java
+A	comet/src/test/java/wiki/tony/chat/comet/client/ChatClient.java
+A	comet/src/test/resources/websocket/client.js
+A	comet/src/test/resources/websocket/demo.html
+A	docs/architecture.png
+D	docs/uml/Distributed.png
+D	docs/uml/Login.jpg
+D	docs/uml/Message.jpg
+D	docs/uml/jude_uml.asta
+A	logic/pom.xml
+R081	chat-server/src/main/java/io/ganguo/chat/route/server/config/CachingConfiguration.java	logic/src/main/java/wiki/tony/chat/logic/config/CachingConfig.java
+A	logic/src/main/java/wiki/tony/chat/logic/service/AuthServiceImpl.java
+A	logic/src/main/java/wiki/tony/chat/logic/service/MessageServiceImpl.java
+M	pom.xml
+R068	chat-core/pom.xml	web/pom.xml
+
+0b26a0e;Merge pull request #3 from tonydeng/master
+681f742;Merge pull request #2 from a2888409/master
+51ba185;修复编译错误
+M	chat-client/src/main/java/io/ganguo/chat/route/client/handler/MessageHandler.java
+M	chat-client/src/main/java/io/ganguo/chat/route/client/handler/UserHandler.java
+
+241411d;修复intellij下client模块  mvn compile失败
+M	chat-client/src/main/java/io/ganguo/chat/route/client/handler/MessageHandler.java
+M	chat-client/src/main/java/io/ganguo/chat/route/client/handler/UserHandler.java
+
+8555c1e;添加route-server实现
+M	README.md
+M	chat-biz/src/test/java/io/ganguo/chat/route/biz/user/TestUserRepository.java
+M	chat-client/src/main/java/io/ganguo/chat/route/client/ChatClient.java
+M	chat-client/src/main/java/io/ganguo/chat/route/client/ChatClientHandler.java
+M	chat-client/src/main/java/io/ganguo/chat/route/client/ChatClientInitializer.java
+M	chat-client/src/main/java/io/ganguo/chat/route/client/handler/MessageHandler.java
+M	chat-client/src/main/java/io/ganguo/chat/route/client/handler/UserHandler.java
+R081	chat-core/src/main/java/io/ganguo/chat/route/core/codec/PacketDecoder.java	chat-core/src/main/java/io/ganguo/chat/core/codec/PacketDecoder.java
+R079	chat-core/src/main/java/io/ganguo/chat/route/core/codec/PacketEncoder.java	chat-core/src/main/java/io/ganguo/chat/core/codec/PacketEncoder.java
+R097	chat-core/src/main/java/io/ganguo/chat/route/core/connetion/ConnectionManager.java	chat-core/src/main/java/io/ganguo/chat/core/connetion/ConnectionManager.java
+R095	chat-core/src/main/java/io/ganguo/chat/route/core/connetion/IMConnection.java	chat-core/src/main/java/io/ganguo/chat/core/connetion/IMConnection.java
+A	chat-core/src/main/java/io/ganguo/chat/core/handler/IMHandler.java
+R095	chat-core/src/main/java/io/ganguo/chat/route/core/handler/IMHandlerManager.java	chat-core/src/main/java/io/ganguo/chat/core/handler/IMHandlerManager.java
+R082	chat-core/src/main/java/io/ganguo/chat/route/core/protocol/Commands.java	chat-core/src/main/java/io/ganguo/chat/core/protocol/Commands.java
+A	chat-core/src/main/java/io/ganguo/chat/core/protocol/Handlers.java
+R099	chat-core/src/main/java/io/ganguo/chat/route/core/transport/DataBuffer.java	chat-core/src/main/java/io/ganguo/chat/core/transport/DataBuffer.java
+R097	chat-core/src/main/java/io/ganguo/chat/route/core/transport/Header.java	chat-core/src/main/java/io/ganguo/chat/core/transport/Header.java
+R097	chat-core/src/main/java/io/ganguo/chat/route/core/transport/IMRequest.java	chat-core/src/main/java/io/ganguo/chat/core/transport/IMRequest.java
+R097	chat-core/src/main/java/io/ganguo/chat/route/core/transport/IMResponse.java	chat-core/src/main/java/io/ganguo/chat/core/transport/IMResponse.java
+R090	chat-core/src/main/java/io/ganguo/chat/route/core/transport/IMSerializer.java	chat-core/src/main/java/io/ganguo/chat/core/transport/IMSerializer.java
+A	chat-core/src/main/java/io/ganguo/chat/core/util/Benchmark.java
+R062	chat-core/src/main/java/io/ganguo/chat/route/core/util/DateUtils.java	chat-core/src/main/java/io/ganguo/chat/core/util/DateUtils.java
+R065	chat-core/src/main/java/io/ganguo/chat/route/core/util/StringUtils.java	chat-core/src/main/java/io/ganguo/chat/core/util/StringUtils.java
+R093	chat-core/src/main/java/io/ganguo/chat/route/core/util/TaskUtil.java	chat-core/src/main/java/io/ganguo/chat/core/util/TaskUtil.java
+D	chat-core/src/main/java/io/ganguo/chat/route/core/handler/IMHandler.java
+D	chat-core/src/main/java/io/ganguo/chat/route/core/protocol/Handlers.java
+M	chat-route/pom.xml
+A	chat-route/src/main/java/io/ganguo/chat/route/Bootstrap.java
+A	chat-route/src/main/java/io/ganguo/chat/route/ChatContext.java
+M	chat-route/src/main/java/io/ganguo/chat/route/ChatRouteServer.java
+A	chat-route/src/main/java/io/ganguo/chat/route/ChatRouteServerHandler.java
+A	chat-route/src/main/java/io/ganguo/chat/route/ChatRouteServerInitializer.java
+A	chat-route/src/main/java/io/ganguo/chat/route/bean/Constants.java
+A	chat-route/src/main/java/io/ganguo/chat/route/bean/RouteData.java
+A	chat-route/src/main/java/io/ganguo/chat/route/bean/RouteResponse.java
+A	chat-route/src/main/java/io/ganguo/chat/route/codec/RoutePacketDecoder.java
+A	chat-route/src/main/java/io/ganguo/chat/route/codec/RoutePacketEncoder.java
+R083	chat-route/src/main/java/io/ganguo/chat/route/CachingConfiguration.java	chat-route/src/main/java/io/ganguo/chat/route/config/CachingConfiguration.java
+A	chat-route/src/main/java/io/ganguo/chat/route/handler/RegisterRouteDataHandler.java
+A	chat-route/src/main/java/io/ganguo/chat/route/handler/RoomRouteDataHandler.java
+A	chat-route/src/main/java/io/ganguo/chat/route/handler/UserRouteDataHandler.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/ChatServerHandler.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/ChatServerInitializer.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/dto/AckDTO.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/dto/LoginDTO.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/dto/MessageDTO.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/dto/PresenceDTO.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/dto/UserDTO.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/dto/UserDetailDTO.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/handler/MessageHandler.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/handler/UserHandler.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/session/ClientSession.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/session/ClientSessionManager.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/worker/PresenceWorker.java
+A	docs/uml/Distributed.png
+M	docs/uml/jude_uml.asta
+
+5818c55;添加PresenceWorker，发送用户改变状态通知
+M	chat-biz/src/main/java/io/ganguo/chat/route/biz/bean/Presence.java
+M	chat-client/src/main/java/io/ganguo/chat/route/client/handler/UserHandler.java
+M	chat-core/src/main/java/io/ganguo/chat/route/core/protocol/Commands.java
+M	chat-core/src/main/java/io/ganguo/chat/route/core/util/TaskUtil.java
+R094	chat-route/src/main/java/io/ganguo/chat/route/EhCacheConfiguration.java	chat-route/src/main/java/io/ganguo/chat/route/CachingConfiguration.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/Bootstrap.java
+A	chat-server/src/main/java/io/ganguo/chat/route/server/ChatContext.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/ChatServerInitializer.java
+A	chat-server/src/main/java/io/ganguo/chat/route/server/config/CachingConfiguration.java
+A	chat-server/src/main/java/io/ganguo/chat/route/server/dto/PresenceDTO.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/event/PresenceEventDispatcher.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/handler/UserHandler.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/session/ClientSession.java
+M	chat-server/src/main/java/io/ganguo/chat/route/server/session/ClientSessionManager.java
+A	chat-server/src/main/java/io/ganguo/chat/route/server/worker/IMWorker.java
+A	chat-server/src/main/java/io/ganguo/chat/route/server/worker/PresenceWorker.java
+
+0278db0;Merge branch 'master' of https://github.com/im-qq/netty-chat
+fdb7c70;添加message回执，添加chat-route模块
+M	README.md
+D	chat-biz/src/main/java/io/ganguo/chat/biz/repository/LoginRepository.java
+R095	chat-biz/src/main/java/io/ganguo/chat/biz/ApplicationConfig.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/ApplicationConfig.java
+R093	chat-biz/src/main/java/io/ganguo/chat/biz/bean/ClientType.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/bean/ClientType.java
+R092	chat-biz/src/main/java/io/ganguo/chat/biz/bean/Gender.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/bean/Gender.java
+R097	chat-biz/src/main/java/io/ganguo/chat/biz/bean/Presence.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/bean/Presence.java
+R091	chat-biz/src/main/java/io/ganguo/chat/biz/entity/BaseEntity.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/entity/BaseEntity.java
+R092	chat-biz/src/main/java/io/ganguo/chat/biz/entity/Login.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/entity/Login.java
+R079	chat-biz/src/main/java/io/ganguo/chat/biz/entity/Message.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/entity/Message.java
+R098	chat-biz/src/main/java/io/ganguo/chat/biz/entity/User.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/entity/User.java
+R096	chat-biz/src/main/java/io/ganguo/chat/biz/entity/UserDetail.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/entity/UserDetail.java
+A	chat-biz/src/main/java/io/ganguo/chat/route/biz/repository/LoginRepository.java
+A	chat-biz/src/main/java/io/ganguo/chat/route/biz/repository/MessageRepository.java
+R071	chat-biz/src/main/java/io/ganguo/chat/biz/repository/UserRepository.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/repository/UserRepository.java
+A	chat-biz/src/main/java/io/ganguo/chat/route/biz/service/MessageService.java
+R063	chat-biz/src/main/java/io/ganguo/chat/biz/service/UserService.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/service/UserService.java
+A	chat-biz/src/main/java/io/ganguo/chat/route/biz/service/impl/MessageServiceImpl.java
+R083	chat-biz/src/main/java/io/ganguo/chat/biz/service/impl/UserServiceImpl.java	chat-biz/src/main/java/io/ganguo/chat/route/biz/service/impl/UserServiceImpl.java
+R094	chat-biz/src/test/java/io/ganguo/chat/biz/AbstractIntegrationTest.java	chat-biz/src/test/java/io/ganguo/chat/route/biz/AbstractIntegrationTest.java
+R097	chat-biz/src/test/java/io/ganguo/chat/biz/ApplicationConfigTest.java	chat-biz/src/test/java/io/ganguo/chat/route/biz/ApplicationConfigTest.java
+R089	chat-biz/src/test/java/io/ganguo/chat/biz/Test.java	chat-biz/src/test/java/io/ganguo/chat/route/biz/Test.java
+R072	chat-biz/src/test/java/io/ganguo/chat/biz/user/TestUserRepository.java	chat-biz/src/test/java/io/ganguo/chat/route/biz/user/TestUserRepository.java
+R066	chat-biz/src/test/java/io/ganguo/chat/biz/user/TestUserService.java	chat-biz/src/test/java/io/ganguo/chat/route/biz/user/TestUserService.java
+D	chat-client/src/main/java/io/ganguo/chat/client/handler/MessageHandler.java
+R070	chat-client/src/main/java/io/ganguo/chat/client/ChatClient.java	chat-client/src/main/java/io/ganguo/chat/route/client/ChatClient.java
+R080	chat-client/src/main/java/io/ganguo/chat/client/ChatClientHandler.java	chat-client/src/main/java/io/ganguo/chat/route/client/ChatClientHandler.java
+R065	chat-client/src/main/java/io/ganguo/chat/client/ChatClientInitializer.java	chat-client/src/main/java/io/ganguo/chat/route/client/ChatClientInitializer.java
+A	chat-client/src/main/java/io/ganguo/chat/route/client/handler/MessageHandler.java
+R085	chat-client/src/main/java/io/ganguo/chat/client/handler/UserHandler.java	chat-client/src/main/java/io/ganguo/chat/route/client/handler/UserHandler.java
+R081	chat-core/src/main/java/io/ganguo/chat/core/codec/PacketDecoder.java	chat-core/src/main/java/io/ganguo/chat/route/core/codec/PacketDecoder.java
+R079	chat-core/src/main/java/io/ganguo/chat/core/codec/PacketEncoder.java	chat-core/src/main/java/io/ganguo/chat/route/core/codec/PacketEncoder.java
+R087	chat-core/src/main/java/io/ganguo/chat/core/connetion/ConnectionManager.java	chat-core/src/main/java/io/ganguo/chat/route/core/connetion/ConnectionManager.java
+R078	chat-core/src/main/java/io/ganguo/chat/core/connetion/IMConnection.java	chat-core/src/main/java/io/ganguo/chat/route/core/connetion/IMConnection.java
+R058	chat-core/src/main/java/io/ganguo/chat/core/handler/IMHandler.java	chat-core/src/main/java/io/ganguo/chat/route/core/handler/IMHandler.java
+R095	chat-core/src/main/java/io/ganguo/chat/core/handler/IMHandlerManager.java	chat-core/src/main/java/io/ganguo/chat/route/core/handler/IMHandlerManager.java
+R074	chat-core/src/main/java/io/ganguo/chat/core/protocol/Commands.java	chat-core/src/main/java/io/ganguo/chat/route/core/protocol/Commands.java
+R084	chat-core/src/main/java/io/ganguo/chat/core/protocol/Handlers.java	chat-core/src/main/java/io/ganguo/chat/route/core/protocol/Handlers.java
+R099	chat-core/src/main/java/io/ganguo/chat/core/transport/DataBuffer.java	chat-core/src/main/java/io/ganguo/chat/route/core/transport/DataBuffer.java
+R097	chat-core/src/main/java/io/ganguo/chat/core/transport/Header.java	chat-core/src/main/java/io/ganguo/chat/route/core/transport/Header.java
+R097	chat-core/src/main/java/io/ganguo/chat/core/transport/IMRequest.java	chat-core/src/main/java/io/ganguo/chat/route/core/transport/IMRequest.java
+R097	chat-core/src/main/java/io/ganguo/chat/core/transport/IMResponse.java	chat-core/src/main/java/io/ganguo/chat/route/core/transport/IMResponse.java
+R090	chat-core/src/main/java/io/ganguo/chat/core/transport/IMSerializer.java	chat-core/src/main/java/io/ganguo/chat/route/core/transport/IMSerializer.java
+R062	chat-core/src/main/java/io/ganguo/chat/core/util/DateUtils.java	chat-core/src/main/java/io/ganguo/chat/route/core/util/DateUtils.java
+R065	chat-core/src/main/java/io/ganguo/chat/core/util/StringUtils.java	chat-core/src/main/java/io/ganguo/chat/route/core/util/StringUtils.java
+R090	chat-core/src/main/java/io/ganguo/chat/core/util/TaskUtil.java	chat-core/src/main/java/io/ganguo/chat/route/core/util/TaskUtil.java
+A	chat-route/pom.xml
+A	chat-route/src/main/java/io/ganguo/chat/route/ChatRouteServer.java
+A	chat-route/src/main/java/io/ganguo/chat/route/EhCacheConfiguration.java
+A	chat-route/src/test/java/io/ganguo/chat/route/AppTest.java
+R085	chat-server/src/main/java/io/ganguo/chat/server/Bootstrap.java	chat-server/src/main/java/io/ganguo/chat/route/server/Bootstrap.java
+R096	chat-server/src/main/java/io/ganguo/chat/server/ChatServer.java	chat-server/src/main/java/io/ganguo/chat/route/server/ChatServer.java
+R079	chat-server/src/main/java/io/ganguo/chat/server/ChatServerHandler.java	chat-server/src/main/java/io/ganguo/chat/route/server/ChatServerHandler.java
+R080	chat-server/src/main/java/io/ganguo/chat/server/ChatServerInitializer.java	chat-server/src/main/java/io/ganguo/chat/route/server/ChatServerInitializer.java
+A	chat-server/src/main/java/io/ganguo/chat/route/server/dto/AckDTO.java
+R080	chat-server/src/main/java/io/ganguo/chat/server/dto/LoginDTO.java	chat-server/src/main/java/io/ganguo/chat/route/server/dto/LoginDTO.java
+R087	chat-server/src/main/java/io/ganguo/chat/server/dto/MessageDTO.java	chat-server/src/main/java/io/ganguo/chat/route/server/dto/MessageDTO.java
+R086	chat-server/src/main/java/io/ganguo/chat/server/dto/UserDTO.java	chat-server/src/main/java/io/ganguo/chat/route/server/dto/UserDTO.java
+R087	chat-server/src/main/java/io/ganguo/chat/server/dto/UserDetailDTO.java	chat-server/src/main/java/io/ganguo/chat/route/server/dto/UserDetailDTO.java
+R094	chat-server/src/main/java/io/ganguo/chat/server/event/EventDispatcher.java	chat-server/src/main/java/io/ganguo/chat/route/server/event/EventDispatcher.java
+R090	chat-server/src/main/java/io/ganguo/chat/server/event/EventDispatcherManager.java	chat-server/src/main/java/io/ganguo/chat/route/server/event/EventDispatcherManager.java
+R065	chat-server/src/main/java/io/ganguo/chat/server/event/EventListener.java	chat-server/src/main/java/io/ganguo/chat/route/server/event/EventListener.java
+R086	chat-server/src/main/java/io/ganguo/chat/server/event/PresenceEventDispatcher.java	chat-server/src/main/java/io/ganguo/chat/route/server/event/PresenceEventDispatcher.java
+R053	chat-server/src/main/java/io/ganguo/chat/server/handler/MessageHandler.java	chat-server/src/main/java/io/ganguo/chat/route/server/handler/MessageHandler.java
+R083	chat-server/src/main/java/io/ganguo/chat/server/handler/UserHandler.java	chat-server/src/main/java/io/ganguo/chat/route/server/handler/UserHandler.java
+R077	chat-server/src/main/java/io/ganguo/chat/server/session/ClientSession.java	chat-server/src/main/java/io/ganguo/chat/route/server/session/ClientSession.java
+R085	chat-server/src/main/java/io/ganguo/chat/server/session/ClientSessionManager.java	chat-server/src/main/java/io/ganguo/chat/route/server/session/ClientSessionManager.java
+D	chat-server/src/main/java/io/ganguo/chat/server/dto/MessageAckDTO.java
+M	docs/uml/jude_uml.asta
+M	pom.xml
+
+ba51c9d;Update README fix images show.
+M	README.md
+
+55c6c01;add uml
+M	README.md
+A	docs/uml/Login.jpg
+A	docs/uml/Message.jpg
+A	docs/uml/jude_uml.asta
+
+c955d89;加入event和ClientSession，以及状态事件
+M	README.md
+M	chat-biz/src/main/java/io/ganguo/chat/biz/bean/ClientType.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/bean/Gender.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/bean/Presence.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/entity/Login.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/entity/User.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/repository/LoginRepository.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/repository/UserRepository.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/service/UserService.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/service/impl/UserServiceImpl.java
+M	chat-client/src/main/java/io/ganguo/chat/client/ChatClient.java
+M	chat-client/src/main/java/io/ganguo/chat/client/ChatClientHandler.java
+M	chat-client/src/main/java/io/ganguo/chat/client/handler/MessageHandler.java
+M	chat-client/src/main/java/io/ganguo/chat/client/handler/UserHandler.java
+M	chat-core/src/main/java/io/ganguo/chat/core/connetion/ConnectionManager.java
+M	chat-core/src/main/java/io/ganguo/chat/core/connetion/IMConnection.java
+M	chat-server/src/main/java/io/ganguo/chat/server/dto/LoginDTO.java
+M	chat-server/src/main/java/io/ganguo/chat/server/dto/UserDTO.java
+A	chat-server/src/main/java/io/ganguo/chat/server/event/EventDispatcher.java
+A	chat-server/src/main/java/io/ganguo/chat/server/event/EventDispatcherManager.java
+A	chat-server/src/main/java/io/ganguo/chat/server/event/EventListener.java
+A	chat-server/src/main/java/io/ganguo/chat/server/event/PresenceEventDispatcher.java
+M	chat-server/src/main/java/io/ganguo/chat/server/handler/MessageHandler.java
+M	chat-server/src/main/java/io/ganguo/chat/server/handler/UserHandler.java
+A	chat-server/src/main/java/io/ganguo/chat/server/session/ClientSession.java
+A	chat-server/src/main/java/io/ganguo/chat/server/session/ClientSessionManager.java
+
+82f680b;添加同UIN踢下线提示，并且关闭旧的连接
+D	chat-client/src/main/java/io/ganguo/chat/client/Bootstrap.java
+M	chat-client/src/main/java/io/ganguo/chat/client/ChatClient.java
+M	chat-client/src/main/java/io/ganguo/chat/client/ChatClientHandler.java
+M	chat-client/src/main/java/io/ganguo/chat/client/ChatClientInitializer.java
+M	chat-client/src/main/java/io/ganguo/chat/client/handler/MessageHandler.java
+M	chat-client/src/main/java/io/ganguo/chat/client/handler/UserHandler.java
+M	chat-core/src/main/java/io/ganguo/chat/core/connetion/ConnectionManager.java
+M	chat-core/src/main/java/io/ganguo/chat/core/connetion/IMConnection.java
+M	chat-core/src/main/java/io/ganguo/chat/core/protocol/Commands.java
+A	chat-core/src/main/java/io/ganguo/chat/core/util/TaskUtil.java
+M	chat-server/src/main/java/io/ganguo/chat/server/ChatServerHandler.java
+M	chat-server/src/main/java/io/ganguo/chat/server/handler/UserHandler.java
+M	pom.xml
+
+8349a74;重构序列化问题，去除了entity中的版本号，使用header的协议版本号控制，添加mongodb数据配置，添加用户登录逻辑，添加消息转发MessageHandler。
+M	README.md
+M	chat-biz/pom.xml
+A	chat-biz/src/main/java/io/ganguo/chat/biz/ApplicationConfig.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/bean/ClientType.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/bean/Gender.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/bean/Presence.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/entity/BaseEntity.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/entity/Login.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/entity/Message.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/entity/User.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/entity/UserDetail.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/repository/LoginRepository.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/repository/UserRepository.java
+M	chat-biz/src/main/java/io/ganguo/chat/biz/service/UserService.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/service/impl/UserServiceImpl.java
+A	chat-biz/src/test/java/io/ganguo/chat/biz/AbstractIntegrationTest.java
+A	chat-biz/src/test/java/io/ganguo/chat/biz/ApplicationConfigTest.java
+A	chat-biz/src/test/java/io/ganguo/chat/biz/Test.java
+A	chat-biz/src/test/java/io/ganguo/chat/biz/user/TestUserRepository.java
+A	chat-biz/src/test/java/io/ganguo/chat/biz/user/TestUserService.java
+M	chat-client/pom.xml
+A	chat-client/src/main/java/io/ganguo/chat/client/Bootstrap.java
+M	chat-client/src/main/java/io/ganguo/chat/client/ChatClient.java
+M	chat-client/src/main/java/io/ganguo/chat/client/ChatClientHandler.java
+D	chat-client/src/main/java/io/ganguo/chat/client/ChatClientInitailizer.java
+A	chat-client/src/main/java/io/ganguo/chat/client/ChatClientInitializer.java
+A	chat-client/src/main/java/io/ganguo/chat/client/handler/MessageHandler.java
+M	chat-client/src/main/java/io/ganguo/chat/client/handler/UserHandler.java
+M	chat-core/src/main/java/io/ganguo/chat/core/connetion/ConnectionManager.java
+M	chat-core/src/main/java/io/ganguo/chat/core/connetion/IMConnection.java
+M	chat-core/src/main/java/io/ganguo/chat/core/protocol/Commands.java
+M	chat-core/src/main/java/io/ganguo/chat/core/protocol/Handlers.java
+M	chat-core/src/main/java/io/ganguo/chat/core/transport/DataBuffer.java
+D	chat-core/src/main/java/io/ganguo/chat/core/transport/Entity.java
+M	chat-core/src/main/java/io/ganguo/chat/core/transport/Header.java
+M	chat-core/src/main/java/io/ganguo/chat/core/transport/IMRequest.java
+M	chat-core/src/main/java/io/ganguo/chat/core/transport/IMResponse.java
+A	chat-core/src/main/java/io/ganguo/chat/core/transport/IMSerializer.java
+A	chat-core/src/main/java/io/ganguo/chat/core/util/DateUtils.java
+A	chat-core/src/main/java/io/ganguo/chat/core/util/StringUtils.java
+M	chat-server/src/main/java/io/ganguo/chat/server/ChatServerHandler.java
+A	chat-server/src/main/java/io/ganguo/chat/server/dto/LoginDTO.java
+A	chat-server/src/main/java/io/ganguo/chat/server/dto/MessageAckDTO.java
+A	chat-server/src/main/java/io/ganguo/chat/server/dto/MessageDTO.java
+A	chat-server/src/main/java/io/ganguo/chat/server/dto/UserDTO.java
+A	chat-server/src/main/java/io/ganguo/chat/server/dto/UserDetailDTO.java
+A	chat-server/src/main/java/io/ganguo/chat/server/handler/MessageHandler.java
+M	chat-server/src/main/java/io/ganguo/chat/server/handler/UserHandler.java
+M	pom.xml
+
+de6af28;Update README 修正信息
+M	README.md
+
+cd9d2a2;update README
+M	README.md
+
+367963c;update README 样式显示
+M	README.md
+
+6889351;IMRequest和IMRespons中添加Entity处理，添加README信息。
+M	README.md
+M	chat-client/src/main/java/io/ganguo/chat/client/ChatClient.java
+M	chat-core/src/main/java/io/ganguo/chat/core/codec/PacketDecoder.java
+M	chat-core/src/main/java/io/ganguo/chat/core/handler/IMHandlerManager.java
+M	chat-core/src/main/java/io/ganguo/chat/core/transport/Header.java
+M	chat-core/src/main/java/io/ganguo/chat/core/transport/IMRequest.java
+M	chat-core/src/main/java/io/ganguo/chat/core/transport/IMResponse.java
+M	chat-server/src/main/java/io/ganguo/chat/server/Bootstrap.java
+M	chat-server/src/main/java/io/ganguo/chat/server/ChatServer.java
+M	chat-server/src/main/java/io/ganguo/chat/server/ChatServerInitializer.java
+M	chat-server/src/main/java/io/ganguo/chat/server/handler/UserHandler.java
+
+f5ef176;add gitignore file
+A	.gitignore
+D	.idea/.name
+D	.idea/compiler.xml
+D	.idea/copyright/profiles_settings.xml
+D	.idea/encodings.xml
+D	.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml
+D	.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml
+D	.idea/libraries/Maven__io_netty_netty_all_4_1_0_Beta3.xml
+D	.idea/libraries/Maven__io_netty_netty_all_5_0_0_Alpha1.xml
+D	.idea/libraries/Maven__junit_junit_3_8_1.xml
+D	.idea/libraries/Maven__junit_junit_4_12.xml
+D	.idea/libraries/Maven__log4j_log4j_1_2_17.xml
+D	.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml
+D	.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_7.xml
+D	.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml
+D	.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_7.xml
+D	.idea/libraries/Maven__org_springframework_spring_aop_4_1_4_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_beans_4_1_4_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_context_4_1_4_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_core_4_1_4_RELEASE.xml
+D	.idea/libraries/Maven__org_springframework_spring_expression_4_1_4_RELEASE.xml
+D	.idea/misc.xml
+D	.idea/modules.xml
+D	.idea/scopes/scope_settings.xml
+D	.idea/uiDesigner.xml
+D	.idea/vcs.xml
+D	.idea/workspace.xml
+D	chat-biz/chat-biz.iml
+D	chat-biz/target/MANIFEST.MF
+D	chat-biz/target/classes/io/ganguo/chat/biz/bean/Gender.class
+D	chat-biz/target/classes/io/ganguo/chat/biz/bean/Presence.class
+D	chat-biz/target/classes/io/ganguo/chat/biz/entity/User.class
+D	chat-biz/target/classes/io/ganguo/chat/biz/entity/UserDetail.class
+D	chat-biz/target/classes/io/ganguo/chat/biz/service/UserService.class
+D	chat-biz/target/classes/log4j.properties
+D	chat-client/chat-client.iml
+D	chat-client/target/MANIFEST.MF
+D	chat-client/target/classes/io/ganguo/chat/client/ChatClient.class
+D	chat-client/target/classes/io/ganguo/chat/client/ChatClientHandler.class
+D	chat-client/target/classes/io/ganguo/chat/client/ChatClientInitailizer.class
+D	chat-client/target/classes/io/ganguo/chat/client/handler/UserHandler.class
+D	chat-client/target/classes/log4j.properties
+D	chat-core/chat-core.iml
+D	chat-core/target/MANIFEST.MF
+D	chat-core/target/classes/io/ganguo/chat/core/codec/PacketDecoder.class
+D	chat-core/target/classes/io/ganguo/chat/core/codec/PacketEncoder.class
+D	chat-core/target/classes/io/ganguo/chat/core/connetion/ConnectionManager.class
+D	chat-core/target/classes/io/ganguo/chat/core/connetion/IMConnection.class
+D	chat-core/target/classes/io/ganguo/chat/core/handler/IMHandler.class
+D	chat-core/target/classes/io/ganguo/chat/core/handler/IMHandlerManager.class
+D	chat-core/target/classes/io/ganguo/chat/core/protocol/Commands.class
+D	chat-core/target/classes/io/ganguo/chat/core/protocol/Handlers.class
+D	chat-core/target/classes/io/ganguo/chat/core/transport/DataBuffer.class
+D	chat-core/target/classes/io/ganguo/chat/core/transport/Entity.class
+D	chat-core/target/classes/io/ganguo/chat/core/transport/Header.class
+D	chat-core/target/classes/io/ganguo/chat/core/transport/IMRequest.class
+D	chat-core/target/classes/io/ganguo/chat/core/transport/IMResponse.class
+D	chat-core/target/classes/log4j.properties
+D	chat-server/chat-server.iml
+D	chat-server/target/MANIFEST.MF
+D	chat-server/target/classes/io/ganguo/chat/server/Bootstrap.class
+D	chat-server/target/classes/io/ganguo/chat/server/ChatServer.class
+D	chat-server/target/classes/io/ganguo/chat/server/ChatServerHandler.class
+D	chat-server/target/classes/io/ganguo/chat/server/ChatServerInitializer.class
+D	chat-server/target/classes/io/ganguo/chat/server/handler/UserHandler.class
+D	chat-server/target/classes/log4j.properties
+D	netty-chat-parent.iml
+D	target/MANIFEST.MF
+
+dceb3f5;dev commit
+A	.idea/.name
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/encodings.xml
+A	.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml
+A	.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml
+A	.idea/libraries/Maven__io_netty_netty_all_4_1_0_Beta3.xml
+A	.idea/libraries/Maven__io_netty_netty_all_5_0_0_Alpha1.xml
+A	.idea/libraries/Maven__junit_junit_3_8_1.xml
+A	.idea/libraries/Maven__junit_junit_4_12.xml
+A	.idea/libraries/Maven__log4j_log4j_1_2_17.xml
+A	.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml
+A	.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_7.xml
+A	.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml
+A	.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_7.xml
+A	.idea/libraries/Maven__org_springframework_spring_aop_4_1_4_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_beans_4_1_4_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_context_4_1_4_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_core_4_1_4_RELEASE.xml
+A	.idea/libraries/Maven__org_springframework_spring_expression_4_1_4_RELEASE.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/scopes/scope_settings.xml
+A	.idea/uiDesigner.xml
+A	.idea/vcs.xml
+A	.idea/workspace.xml
+A	chat-biz/chat-biz.iml
+A	chat-biz/pom.xml
+A	chat-biz/src/main/java/io/ganguo/chat/biz/bean/Gender.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/bean/Presence.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/entity/User.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/entity/UserDetail.java
+A	chat-biz/src/main/java/io/ganguo/chat/biz/service/UserService.java
+A	chat-biz/src/main/resources/log4j.properties
+A	chat-biz/target/MANIFEST.MF
+A	chat-biz/target/classes/io/ganguo/chat/biz/bean/Gender.class
+A	chat-biz/target/classes/io/ganguo/chat/biz/bean/Presence.class
+A	chat-biz/target/classes/io/ganguo/chat/biz/entity/User.class
+A	chat-biz/target/classes/io/ganguo/chat/biz/entity/UserDetail.class
+A	chat-biz/target/classes/io/ganguo/chat/biz/service/UserService.class
+A	chat-biz/target/classes/log4j.properties
+A	chat-client/chat-client.iml
+A	chat-client/pom.xml
+A	chat-client/src/main/java/io/ganguo/chat/client/ChatClient.java
+A	chat-client/src/main/java/io/ganguo/chat/client/ChatClientHandler.java
+A	chat-client/src/main/java/io/ganguo/chat/client/ChatClientInitailizer.java
+A	chat-client/src/main/java/io/ganguo/chat/client/handler/UserHandler.java
+A	chat-client/src/main/resources/log4j.properties
+A	chat-client/target/MANIFEST.MF
+A	chat-client/target/classes/io/ganguo/chat/client/ChatClient.class
+A	chat-client/target/classes/io/ganguo/chat/client/ChatClientHandler.class
+A	chat-client/target/classes/io/ganguo/chat/client/ChatClientInitailizer.class
+A	chat-client/target/classes/io/ganguo/chat/client/handler/UserHandler.class
+A	chat-client/target/classes/log4j.properties
+A	chat-core/chat-core.iml
+A	chat-core/pom.xml
+A	chat-core/src/main/java/io/ganguo/chat/core/codec/PacketDecoder.java
+A	chat-core/src/main/java/io/ganguo/chat/core/codec/PacketEncoder.java
+A	chat-core/src/main/java/io/ganguo/chat/core/connetion/ConnectionManager.java
+A	chat-core/src/main/java/io/ganguo/chat/core/connetion/IMConnection.java
+A	chat-core/src/main/java/io/ganguo/chat/core/handler/IMHandler.java
+A	chat-core/src/main/java/io/ganguo/chat/core/handler/IMHandlerManager.java
+A	chat-core/src/main/java/io/ganguo/chat/core/protocol/Commands.java
+A	chat-core/src/main/java/io/ganguo/chat/core/protocol/Handlers.java
+A	chat-core/src/main/java/io/ganguo/chat/core/transport/DataBuffer.java
+A	chat-core/src/main/java/io/ganguo/chat/core/transport/Entity.java
+A	chat-core/src/main/java/io/ganguo/chat/core/transport/Header.java
+A	chat-core/src/main/java/io/ganguo/chat/core/transport/IMRequest.java
+A	chat-core/src/main/java/io/ganguo/chat/core/transport/IMResponse.java
+A	chat-core/src/main/resources/log4j.properties
+A	chat-core/target/MANIFEST.MF
+A	chat-core/target/classes/io/ganguo/chat/core/codec/PacketDecoder.class
+A	chat-core/target/classes/io/ganguo/chat/core/codec/PacketEncoder.class
+A	chat-core/target/classes/io/ganguo/chat/core/connetion/ConnectionManager.class
+A	chat-core/target/classes/io/ganguo/chat/core/connetion/IMConnection.class
+A	chat-core/target/classes/io/ganguo/chat/core/handler/IMHandler.class
+A	chat-core/target/classes/io/ganguo/chat/core/handler/IMHandlerManager.class
+A	chat-core/target/classes/io/ganguo/chat/core/protocol/Commands.class
+A	chat-core/target/classes/io/ganguo/chat/core/protocol/Handlers.class
+A	chat-core/target/classes/io/ganguo/chat/core/transport/DataBuffer.class
+A	chat-core/target/classes/io/ganguo/chat/core/transport/Entity.class
+A	chat-core/target/classes/io/ganguo/chat/core/transport/Header.class
+A	chat-core/target/classes/io/ganguo/chat/core/transport/IMRequest.class
+A	chat-core/target/classes/io/ganguo/chat/core/transport/IMResponse.class
+A	chat-core/target/classes/log4j.properties
+A	chat-server/chat-server.iml
+A	chat-server/pom.xml
+A	chat-server/src/main/java/io/ganguo/chat/server/Bootstrap.java
+A	chat-server/src/main/java/io/ganguo/chat/server/ChatServer.java
+A	chat-server/src/main/java/io/ganguo/chat/server/ChatServerHandler.java
+A	chat-server/src/main/java/io/ganguo/chat/server/ChatServerInitializer.java
+A	chat-server/src/main/java/io/ganguo/chat/server/handler/UserHandler.java
+A	chat-server/src/main/resources/log4j.properties
+A	chat-server/target/MANIFEST.MF
+A	chat-server/target/classes/io/ganguo/chat/server/Bootstrap.class
+A	chat-server/target/classes/io/ganguo/chat/server/ChatServer.class
+A	chat-server/target/classes/io/ganguo/chat/server/ChatServerHandler.class
+A	chat-server/target/classes/io/ganguo/chat/server/ChatServerInitializer.class
+A	chat-server/target/classes/io/ganguo/chat/server/handler/UserHandler.class
+A	chat-server/target/classes/log4j.properties
+A	netty-chat-parent.iml
+A	pom.xml
+A	target/MANIFEST.MF
+
+8b6d4af;first commit
+A	README.md

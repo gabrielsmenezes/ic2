@@ -1,0 +1,455 @@
+a95bc36;Change read me file.
+M	README.md
+
+0d6472e;Change read me file.
+M	README.md
+
+9eec78a;Add the technology document address in read me file.
+M	README.md
+
+6ac1ca3;Change the default fps in video configuration.
+M	README.md
+M	document/en/README.md
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/configuration/VideoConfiguration.java
+
+4ae84ce;Merge remote-tracking branch 'origin/master'
+a53697e;1. Fix the bug that the preview image of front camera is inversion in some devices. 2. Delete the audio resample function.
+M	README.md
+M	document/en/README.md
+D	sopcast-sdk/libs/armeabi-v7a/libwebrtc_resample.so
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/audio/AudioProcessor.java
+D	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/audio/AudioResample.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/audio/AudioUtils.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/blacklist/BlackListHelper.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/CameraUtils.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/configuration/CameraConfiguration.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/mediacodec/AudioMediaCodec.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/ui/CameraLivingView.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/effect/Effect.java
+
+29e8fc3;Create LICENSE
+A	LICENSE
+
+6c498f5;Update README.md
+M	README.md
+
+68b529b;Change the read me file
+M	README.md
+
+49c99d6;Change the read me file
+M	document/en/README.md
+
+13729b3;Change the read me file
+M	document/en/README.md
+A	document/en/sopcast.jpg
+
+ad68a9f;Change the read me file
+M	README.md
+M	document/en/README.md
+
+d56517c;Change the read me file
+M	README.md
+M	document/en/README.md
+
+a1195a6;Change the read me file
+M	README.md
+A	document/en/README.md
+D	sopcast.jpeg
+A	sopcast.jpg
+
+de8e9e2;Change the read me file
+M	README.md
+
+89773ac;Use the default shader when fail to load the video effect shader.
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/constant/SopCastConstant.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/effect/Effect.java
+
+828cdb5;Optimize the code in camera setting.
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/CameraUtils.java
+
+03767b0;Change read me file
+M	README.md
+
+11a2844;Fix Bugs
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/RtmpSender.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/ReadThread.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/WriteThread.java
+M	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/sendqueue/NormalSendQueue.java
+
+81e0a0e;Change the read me file
+M	README.md
+
+304a1b1;Add gradle file
+M	.gitignore
+A	build.gradle
+M	sopcast-sdk/.gitignore
+A	sopcast-sdk/build.gradle
+
+735f41b;update .gitignore
+D	build.gradle
+D	sopcast-sdk/build.gradle
+
+1385bb4;Change the git ignore file
+M	.gitignore
+M	sopcast-sdk/.gitignore
+
+61db478;Add the gradle file
+A	sopcast-sdk/build.gradle
+
+56885a5;Rename the module
+M	.gitignore
+M	app/build.gradle
+M	settings.gradle
+D	sopcast-component/build.gradle
+R072	sopcast-component/.gitignore	sopcast-sdk/.gitignore
+R100	sopcast-component/libs/armeabi-v7a/libwebrtc_resample.so	sopcast-sdk/libs/armeabi-v7a/libwebrtc_resample.so
+R100	sopcast-component/proguard-rules.pro	sopcast-sdk/proguard-rules.pro
+R100	sopcast-component/src/main/AndroidManifest.xml	sopcast-sdk/src/main/AndroidManifest.xml
+R100	sopcast-component/src/main/assets/gray/fragmentshader.glsl	sopcast-sdk/src/main/assets/gray/fragmentshader.glsl
+R100	sopcast-component/src/main/assets/gray/vertexshader.glsl	sopcast-sdk/src/main/assets/gray/vertexshader.glsl
+R100	sopcast-component/src/main/assets/null/fragmentshader.glsl	sopcast-sdk/src/main/assets/null/fragmentshader.glsl
+R100	sopcast-component/src/main/assets/null/vertexshader.glsl	sopcast-sdk/src/main/assets/null/vertexshader.glsl
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/audio/AudioEncoder.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/audio/AudioEncoder.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/audio/AudioProcessor.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/audio/AudioProcessor.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/audio/AudioResample.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/audio/AudioResample.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/audio/AudioUtils.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/audio/AudioUtils.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/audio/OnAudioEncodeListener.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/audio/OnAudioEncodeListener.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/blacklist/BlackListHelper.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/blacklist/BlackListHelper.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/CameraData.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/CameraData.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/CameraHolder.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/CameraHolder.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/CameraListener.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/CameraListener.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/CameraUtils.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/CameraUtils.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/CameraZoomListener.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/CameraZoomListener.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/exception/CameraDisabledException.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/exception/CameraDisabledException.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/exception/CameraHardwareException.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/exception/CameraHardwareException.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/exception/CameraNotSupportException.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/exception/CameraNotSupportException.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/exception/NoCameraException.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/exception/NoCameraException.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/focus/FocusManager.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/focus/FocusManager.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/focus/FocusPieView.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/camera/focus/FocusPieView.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/configuration/AudioConfiguration.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/configuration/AudioConfiguration.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/configuration/CameraConfiguration.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/configuration/CameraConfiguration.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/configuration/VideoConfiguration.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/configuration/VideoConfiguration.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/constant/SopCastConstant.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/constant/SopCastConstant.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/StreamController.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/controller/StreamController.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/audio/IAudioController.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/controller/audio/IAudioController.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/audio/NormalAudioController.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/controller/audio/NormalAudioController.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/video/CameraVideoController.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/controller/video/CameraVideoController.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/video/IVideoController.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/controller/video/IVideoController.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/video/ScreenVideoController.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/controller/video/ScreenVideoController.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/entity/Frame.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/entity/Frame.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/entity/Watermark.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/entity/Watermark.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/entity/WatermarkPosition.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/entity/WatermarkPosition.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/mediacodec/AudioMediaCodec.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/mediacodec/AudioMediaCodec.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/mediacodec/MediaCodecHelper.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/mediacodec/MediaCodecHelper.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/mediacodec/VideoMediaCodec.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/mediacodec/VideoMediaCodec.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/screen/ScreenRecordActivity.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/screen/ScreenRecordActivity.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/screen/ScreenRecordEncoder.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/screen/ScreenRecordEncoder.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfArray.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfArray.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfBoolean.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfBoolean.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfData.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfData.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfDecoder.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfDecoder.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfMap.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfMap.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfNull.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfNull.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfNumber.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfNumber.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfObject.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfObject.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfString.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfString.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfType.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfType.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfUndefined.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfUndefined.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/Util.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/amf/Util.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/packer/AnnexbHelper.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/packer/AnnexbHelper.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/packer/Packer.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/packer/Packer.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/packer/flv/FlvPacker.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/packer/flv/FlvPacker.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/packer/flv/FlvPackerHelper.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/packer/flv/FlvPackerHelper.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/packer/rtmp/RtmpPacker.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/packer/rtmp/RtmpPacker.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/Sender.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/Sender.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/local/LocalSender.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/local/LocalSender.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/Crypto.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/Crypto.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/RtmpSender.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/RtmpSender.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/Util.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/Util.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/OnReadListener.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/OnReadListener.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/OnWriteListener.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/OnWriteListener.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/ReadThread.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/ReadThread.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/RtmpConnectListener.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/RtmpConnectListener.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/RtmpConnection.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/RtmpConnection.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/RtmpDecoder.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/RtmpDecoder.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/SessionInfo.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/SessionInfo.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/StoreChunk.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/StoreChunk.java
+R096	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/WriteThread.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/WriteThread.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Abort.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Abort.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Acknowledgement.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Acknowledgement.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Audio.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Audio.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Chunk.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Chunk.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/ChunkHeader.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/ChunkHeader.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/ChunkType.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/ChunkType.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Command.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Command.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/ContentData.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/ContentData.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Data.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Data.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Handshake.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Handshake.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/MessageType.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/MessageType.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/SetChunkSize.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/SetChunkSize.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/SetPeerBandwidth.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/SetPeerBandwidth.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/UserControl.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/UserControl.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/VariableBodyRtmpPacket.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/VariableBodyRtmpPacket.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Video.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Video.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/WindowAckSize.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/WindowAckSize.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/sendqueue/ISendQueue.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/sendqueue/ISendQueue.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/sendqueue/NormalSendQueue.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/sendqueue/NormalSendQueue.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/sendqueue/SendQueueListener.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/stream/sender/sendqueue/SendQueueListener.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/ui/CameraLivingView.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/ui/CameraLivingView.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/ui/CameraView.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/ui/CameraView.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/ui/RenderSurfaceView.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/ui/RenderSurfaceView.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/utils/SopCastLog.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/utils/SopCastLog.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/utils/SopCastUtils.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/utils/SopCastUtils.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/utils/WeakHandler.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/utils/WeakHandler.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/GLSLFileUtils.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/GLSLFileUtils.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/GlUtil.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/GlUtil.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/InputSurface.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/InputSurface.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/MyRecorder.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/MyRecorder.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/MyRenderer.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/MyRenderer.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/OnVideoEncodeListener.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/OnVideoEncodeListener.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/RenderScreen.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/RenderScreen.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/RenderSrfTex.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/RenderSrfTex.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/effect/Effect.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/effect/Effect.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/effect/GrayEffect.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/effect/GrayEffect.java
+R100	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/effect/NullEffect.java	sopcast-sdk/src/main/java/com/laifeng/sopcastsdk/video/effect/NullEffect.java
+R100	sopcast-component/src/main/res/drawable/camera_focus_ring_fail.png	sopcast-sdk/src/main/res/drawable/camera_focus_ring_fail.png
+R100	sopcast-component/src/main/res/drawable/camera_focus_ring_success.png	sopcast-sdk/src/main/res/drawable/camera_focus_ring_success.png
+R100	sopcast-component/src/main/res/layout/layout_camera_view.xml	sopcast-sdk/src/main/res/layout/layout_camera_view.xml
+R100	sopcast-component/src/main/res/values/attr.xml	sopcast-sdk/src/main/res/values/attr.xml
+R100	sopcast-component/src/main/res/values/strings.xml	sopcast-sdk/src/main/res/values/strings.xml
+
+3736c85;Change the image
+M	sopcast.jpeg
+
+a5502b8;Delete some permissions
+M	README.md
+M	app/src/main/AndroidManifest.xml
+
+0e55f9f;Change the read.me file
+M	README.md
+
+5d33d04;Change the read.me file
+M	README.md
+
+499f7d9;Delete the okhttp library
+M	app/build.gradle
+
+0c6e95a;Support set upload address
+M	README.md
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/laifeng/sopcastdemo/LandscapeActivity.java
+M	app/src/main/java/com/laifeng/sopcastdemo/ScreenActivity.java
+D	app/src/main/res/layout/activity_laifeng_flv.xml
+D	app/src/main/res/layout/activity_laifeng_rtp.xml
+A	app/src/main/res/layout/address_dialog.xml
+D	app/src/main/res/layout/flv_live_dialog.xml
+D	app/src/main/res/layout/flv_play_dialog.xml
+D	app/src/main/res/layout/flv_player_dialog.xml
+D	app/src/main/res/layout/rtp_live_dialog.xml
+D	app/src/main/res/layout/rtp_play_dialog.xml
+M	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/RtmpSender.java
+
+f7e8c21;Change the image
+M	README.md
+A	sopcast.jpeg
+D	sopcast.png
+
+2a12388;Upload the code
+A	.gitignore
+A	README.md
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/laifeng/sopcastdemo/LandscapeActivity.java
+A	app/src/main/java/com/laifeng/sopcastdemo/MainActivity.java
+A	app/src/main/java/com/laifeng/sopcastdemo/PartActivity.java
+A	app/src/main/java/com/laifeng/sopcastdemo/PortraitActivity.java
+A	app/src/main/java/com/laifeng/sopcastdemo/ScreenActivity.java
+A	app/src/main/java/com/laifeng/sopcastdemo/ui/Gusterpolator.java
+A	app/src/main/java/com/laifeng/sopcastdemo/ui/MultiToggleImageButton.java
+A	app/src/main/java/com/laifeng/sopcastdemo/ui/TopRightWeightedLayout.java
+A	app/src/main/res/drawable/blue_tile.xml
+A	app/src/main/res/drawable/button_background_pressed_dark.xml
+A	app/src/main/res/drawable/green_tile.xml
+A	app/src/main/res/drawable/ic_flash_off.xml
+A	app/src/main/res/drawable/ic_flash_on.xml
+A	app/src/main/res/drawable/ic_focus_off.xml
+A	app/src/main/res/drawable/ic_focus_on.xml
+A	app/src/main/res/drawable/ic_mic_off.xml
+A	app/src/main/res/drawable/ic_mic_on.xml
+A	app/src/main/res/drawable/ic_render_off.xml
+A	app/src/main/res/drawable/ic_render_on.xml
+A	app/src/main/res/drawable/ic_switch_camera_back.xml
+A	app/src/main/res/drawable/ic_switch_camera_front.xml
+A	app/src/main/res/drawable/purple_tile.xml
+A	app/src/main/res/drawable/red_tile.xml
+A	app/src/main/res/drawable/tag_background.xml
+A	app/src/main/res/drawable/yellow_tile.xml
+A	app/src/main/res/layout/activity_laifeng_flv.xml
+A	app/src/main/res/layout/activity_laifeng_rtp.xml
+A	app/src/main/res/layout/activity_landscape.xml
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/activity_part.xml
+A	app/src/main/res/layout/activity_portrait.xml
+A	app/src/main/res/layout/activity_screen.xml
+A	app/src/main/res/layout/flv_live_dialog.xml
+A	app/src/main/res/layout/flv_play_dialog.xml
+A	app/src/main/res/layout/flv_player_dialog.xml
+A	app/src/main/res/layout/grid_item.xml
+A	app/src/main/res/layout/rtp_live_dialog.xml
+A	app/src/main/res/layout/rtp_play_dialog.xml
+A	app/src/main/res/mipmap-hdpi/ic_flash_auto_disabled.png
+A	app/src/main/res/mipmap-hdpi/ic_flash_auto_normal.png
+A	app/src/main/res/mipmap-hdpi/ic_flash_off_disabled.png
+A	app/src/main/res/mipmap-hdpi/ic_flash_off_normal.png
+A	app/src/main/res/mipmap-hdpi/ic_flash_on_disabled.png
+A	app/src/main/res/mipmap-hdpi/ic_flash_on_normal.png
+A	app/src/main/res/mipmap-hdpi/ic_focus_off_normal.png
+A	app/src/main/res/mipmap-hdpi/ic_focus_on_normal.png
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-hdpi/ic_mic_off_normal.png
+A	app/src/main/res/mipmap-hdpi/ic_mic_on_normal.png
+A	app/src/main/res/mipmap-hdpi/ic_record_start.png
+A	app/src/main/res/mipmap-hdpi/ic_record_stop.png
+A	app/src/main/res/mipmap-hdpi/ic_render_off_normal.png
+A	app/src/main/res/mipmap-hdpi/ic_render_on_normal.png
+A	app/src/main/res/mipmap-hdpi/ic_switch_camera_back_disabled.png
+A	app/src/main/res/mipmap-hdpi/ic_switch_camera_back_normal.png
+A	app/src/main/res/mipmap-hdpi/ic_switch_camera_front_disabled.png
+A	app/src/main/res/mipmap-hdpi/ic_switch_camera_front_normal.png
+A	app/src/main/res/mipmap-hdpi/watermark.png
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values-zh/strings.xml
+A	app/src/main/res/values/arrays.xml
+A	app/src/main/res/values/attrs.xml
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle
+A	sopcast-component/.gitignore
+A	sopcast-component/build.gradle
+A	sopcast-component/libs/armeabi-v7a/libwebrtc_resample.so
+A	sopcast-component/proguard-rules.pro
+A	sopcast-component/src/main/AndroidManifest.xml
+A	sopcast-component/src/main/assets/gray/fragmentshader.glsl
+A	sopcast-component/src/main/assets/gray/vertexshader.glsl
+A	sopcast-component/src/main/assets/null/fragmentshader.glsl
+A	sopcast-component/src/main/assets/null/vertexshader.glsl
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/audio/AudioEncoder.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/audio/AudioProcessor.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/audio/AudioResample.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/audio/AudioUtils.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/audio/OnAudioEncodeListener.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/blacklist/BlackListHelper.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/CameraData.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/CameraHolder.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/CameraListener.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/CameraUtils.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/CameraZoomListener.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/exception/CameraDisabledException.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/exception/CameraHardwareException.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/exception/CameraNotSupportException.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/exception/NoCameraException.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/focus/FocusManager.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/camera/focus/FocusPieView.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/configuration/AudioConfiguration.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/configuration/CameraConfiguration.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/configuration/VideoConfiguration.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/constant/SopCastConstant.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/StreamController.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/audio/IAudioController.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/audio/NormalAudioController.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/video/CameraVideoController.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/video/IVideoController.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/controller/video/ScreenVideoController.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/entity/Frame.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/entity/Watermark.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/entity/WatermarkPosition.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/mediacodec/AudioMediaCodec.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/mediacodec/MediaCodecHelper.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/mediacodec/VideoMediaCodec.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/screen/ScreenRecordActivity.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/screen/ScreenRecordEncoder.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfArray.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfBoolean.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfData.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfDecoder.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfMap.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfNull.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfNumber.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfObject.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfString.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfType.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/AmfUndefined.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/amf/Util.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/packer/AnnexbHelper.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/packer/Packer.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/packer/flv/FlvPacker.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/packer/flv/FlvPackerHelper.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/packer/rtmp/RtmpPacker.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/Sender.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/local/LocalSender.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/Crypto.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/RtmpSender.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/Util.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/OnReadListener.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/OnWriteListener.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/ReadThread.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/RtmpConnectListener.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/RtmpConnection.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/RtmpDecoder.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/SessionInfo.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/StoreChunk.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/io/WriteThread.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Abort.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Acknowledgement.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Audio.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Chunk.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/ChunkHeader.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/ChunkType.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Command.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/ContentData.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Data.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Handshake.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/MessageType.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/SetChunkSize.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/SetPeerBandwidth.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/UserControl.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/VariableBodyRtmpPacket.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/Video.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/rtmp/packets/WindowAckSize.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/sendqueue/ISendQueue.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/sendqueue/NormalSendQueue.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/stream/sender/sendqueue/SendQueueListener.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/ui/CameraLivingView.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/ui/CameraView.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/ui/RenderSurfaceView.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/utils/SopCastLog.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/utils/SopCastUtils.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/utils/WeakHandler.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/GLSLFileUtils.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/GlUtil.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/InputSurface.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/MyRecorder.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/MyRenderer.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/OnVideoEncodeListener.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/RenderScreen.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/RenderSrfTex.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/effect/Effect.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/effect/GrayEffect.java
+A	sopcast-component/src/main/java/com/laifeng/sopcastsdk/video/effect/NullEffect.java
+A	sopcast-component/src/main/res/drawable/camera_focus_ring_fail.png
+A	sopcast-component/src/main/res/drawable/camera_focus_ring_success.png
+A	sopcast-component/src/main/res/layout/layout_camera_view.xml
+A	sopcast-component/src/main/res/values/attr.xml
+A	sopcast-component/src/main/res/values/strings.xml
+A	sopcast.png

@@ -1,0 +1,2628 @@
+8e61b49;Update README.md
+M	README.md
+
+f6440cd;EventDetailActivity: status bar transparent in Lollipop.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+M	app/src/main/res/layout/activity_event_detail.xml
+
+e1e596e;HeartBeatWidgetProvider: show count of events and thoughts.
+M	app/src/main/java/com/maxiee/heartbeat/widget/HeartBeatWidgetProvider.java
+
+2a6887a;update resources.
+M	app/app.iml
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+M	multi-image-selector/multi-image-selector.iml
+
+744be8a;HeartBeatWidgetProvider: HeartBeat widget.
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/maxiee/heartbeat/widget/HeartBeatWidgetProvider.java
+A	app/src/main/res/drawable/card.xml
+A	app/src/main/res/layout/widget.xml
+A	app/src/main/res/xml/widget_info.xml
+
+bb5aa4f;update changelog.
+M	ChangeLog.md
+M	app/app.iml
+
+98a2cb8;update version to v0.9.5.
+M	ChangeLog.md
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/assets/donate_list.html
+
+a1b7383;strings: mark backup all and restore all as experiment.
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+6ca95fc;EventDetailActivity: fix #9
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+c08eebb;SettingsFragment: add License preferences.
+M	app/app.iml
+A	app/src/main/assets/licenses.html
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/values/strings.xml
+M	build.gradle
+
+79bf125;SettingFragment: add licenses.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+2d14c20;update resources.
+M	app/app.iml
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+ca7eac9;SettingsFragment: add a restore all preference.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+
+776ddcb;RestoreAllTask: a AsyncTask to restore all the data.
+A	app/src/main/java/com/maxiee/heartbeat/backup/RestoreAllTask.java
+
+7d7bea5;FileUtils: add a new method detectFileType.
+M	app/src/main/java/com/maxiee/heartbeat/common/FileUtils.java
+
+a7345ab;BackupManager: add a new method restoreAll.
+M	app/src/main/java/com/maxiee/heartbeat/backup/BackupManager.java
+
+0ad1a11;FileDES: add a new method doDecryptFileNotClose.
+M	app/src/main/java/com/maxiee/heartbeat/backup/FileDES.java
+
+10c7166;update resources.
+M	app/app.iml
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+fabeb06;SettingsFragment: new preference for backup all the data.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+
+ad20aef;BackupAllTask: a AsyncTask for backing up all the data.
+A	app/src/main/java/com/maxiee/heartbeat/backup/BackupAllTask.java
+
+0905722;BackupManager: backupAll.
+M	app/src/main/java/com/maxiee/heartbeat/backup/BackupManager.java
+
+db63cff;FileUtils: generateBackupAllZip.
+M	app/src/main/java/com/maxiee/heartbeat/common/FileUtils.java
+
+1dc035d;DatabaseUtils: fix memory leak.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/DatabaseUtils.java
+
+b27e49e;use leakcanary.
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/maxiee/heartbeat/HeartBeatApplication.java
+M	multi-image-selector/multi-image-selector.iml
+
+1074c7b;update changelog.
+M	ChangeLog.md
+M	app/app.iml
+
+9f85409;update version to v0.9.4.
+M	app/app.iml
+M	app/build.gradle
+M	multi-image-selector/multi-image-selector.iml
+
+eab018c;update donate list.
+M	app/src/main/assets/donate_list.html
+
+1a074c8;EventListFragment: use list LayoutManager first.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+
+2b4d6a4;EntryActivity: Backup database first.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+
+eed4ac8;update resources.
+M	app/app.iml
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+M	build.gradle
+M	multi-image-selector/multi-image-selector.iml
+
+268ce6f;ThoughtUtils: add queryThoughtRes method.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/ThoughtUtils.java
+
+dbbdfb3;BackupManager: needTransGallery method.
+M	app/src/main/java/com/maxiee/heartbeat/backup/BackupManager.java
+
+66274ee;EntryActivity: transfer gallery.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+
+4a431f5;GalleryUtils: use helper method.
+M	app/src/main/java/com/maxiee/heartbeat/common/GalleryUtils.java
+
+8235cc2;FileUtils: copyImageToHeartBeat method.
+M	app/src/main/java/com/maxiee/heartbeat/common/FileUtils.java
+
+bf28bb7;ImageUtils: add some method.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/ImageUtils.java
+
+2facd06;EntryActivity: add a layout.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+A	app/src/main/res/layout/activity_entry.xml
+
+b41af78;GalleryUtils: only save filename to DB.
+M	app/src/main/java/com/maxiee/heartbeat/common/GalleryUtils.java
+
+033ac37;GalleryUtils: save new added images under heartbeat directory.
+M	app/src/main/java/com/maxiee/heartbeat/common/GalleryUtils.java
+
+7b0256f;update resources.
+M	app/app.iml
+M	multi-image-selector/multi-image-selector.iml
+
+e6b465f;use new method getImagePath to get image path.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/GalleryActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/DayCardEventAdapter.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/EventListAdapter.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/ThoughtTimeaxisAdapter.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/TodayEventAdapter.java
+
+4d6ebc2;GalleryUtils: add a method getImagePath.
+M	app/src/main/java/com/maxiee/heartbeat/common/GalleryUtils.java
+
+2a5a78c;fix #8.
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+
+6c53109;MainActivity: request permission on 6.0+ systems.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+61d255d;FileUtils: add a helper function.
+M	app/src/main/java/com/maxiee/heartbeat/common/FileUtils.java
+
+9febb84;update resources.
+M	app/app.iml
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+234888b;BackupManager: DB backup to HeartBeat/backup.
+M	app/src/main/java/com/maxiee/heartbeat/backup/BackupManager.java
+
+ca0630c;FileUtils: add several helper functions.
+M	app/src/main/java/com/maxiee/heartbeat/common/FileUtils.java
+
+58d1870;update change log.
+M	ChangeLog.md
+
+0da0232;update version to v0.9.3
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/assets/donate_list.html
+M	build.gradle
+M	multi-image-selector/multi-image-selector.iml
+
+ec7a7dd;AddEditThoughtActivity: use new GalleryUtils.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+
+fff7e49;AddEventActivity: remove unused code.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+057f722;update resources.
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	multi-image-selector/build.gradle
+M	multi-image-selector/multi-image-selector.iml
+
+b1c5751;AddEventActivity: use new GalleryUtils.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+539f8b5;EventDetailActivity.java: modify onActivityResult.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+01ad9f3;GalleryUtils: methods adjust.
+M	app/src/main/java/com/maxiee/heartbeat/common/GalleryUtils.java
+
+b5f9305;EventDetailActivity: using GalleryUtils.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+6ee3fa6;GalleryUtils: util for picking up images.
+A	app/src/main/java/com/maxiee/heartbeat/common/GalleryUtils.java
+
+f9e4f11;use library multi-image-selector
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+A	multi-image-selector/.gitignore
+A	multi-image-selector/build.gradle
+A	multi-image-selector/multi-image-selector.iml
+A	multi-image-selector/proguard-rules.pro
+A	multi-image-selector/src/androidTest/java/me/nereo/multi_image_selector/ApplicationTest.java
+A	multi-image-selector/src/main/AndroidManifest.xml
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/MultiImageSelectorActivity.java
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/MultiImageSelectorFragment.java
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/adapter/FolderAdapter.java
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/adapter/ImageGridAdapter.java
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/bean/Folder.java
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/bean/Image.java
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/utils/FileUtils.java
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/utils/ScreenUtils.java
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/utils/TimeUtils.java
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/view/SquareFrameLayout.java
+A	multi-image-selector/src/main/java/me/nereo/multi_image_selector/view/SquaredImageView.java
+A	multi-image-selector/src/main/res/color/default_text_color.xml
+A	multi-image-selector/src/main/res/color/folder_text_color.xml
+A	multi-image-selector/src/main/res/drawable-xhdpi/btn_back.png
+A	multi-image-selector/src/main/res/drawable-xhdpi/default_check_s.png
+A	multi-image-selector/src/main/res/drawable-xhdpi/ic_menu_back.png
+A	multi-image-selector/src/main/res/drawable-xhdpi/selector_indicator.png
+A	multi-image-selector/src/main/res/drawable-xxhdpi/asv.png
+A	multi-image-selector/src/main/res/drawable-xxhdpi/asy.png
+A	multi-image-selector/src/main/res/drawable-xxhdpi/btn_selected.png
+A	multi-image-selector/src/main/res/drawable-xxhdpi/btn_unselected.png
+A	multi-image-selector/src/main/res/drawable-xxhdpi/default_check.png
+A	multi-image-selector/src/main/res/drawable-xxhdpi/default_error.png
+A	multi-image-selector/src/main/res/drawable-xxhdpi/text_indicator.png
+A	multi-image-selector/src/main/res/drawable/action_btn.xml
+A	multi-image-selector/src/main/res/layout-v14/fragment_multi_image.xml
+A	multi-image-selector/src/main/res/layout/activity_default.xml
+A	multi-image-selector/src/main/res/layout/cmp_customer_actionbar.xml
+A	multi-image-selector/src/main/res/layout/fragment_multi_image.xml
+A	multi-image-selector/src/main/res/layout/list_item_camera.xml
+A	multi-image-selector/src/main/res/layout/list_item_folder.xml
+A	multi-image-selector/src/main/res/layout/list_item_image.xml
+A	multi-image-selector/src/main/res/values-sw360dp/dimens.xml
+A	multi-image-selector/src/main/res/values-sw480dp/dimens.xml
+A	multi-image-selector/src/main/res/values-sw720dp/dimens.xml
+A	multi-image-selector/src/main/res/values-zh/strings.xml
+A	multi-image-selector/src/main/res/values/dimens.xml
+A	multi-image-selector/src/main/res/values/strings.xml
+M	settings.gradle
+
+e8c241b;EventListFragment: load data async.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+M	app/src/main/res/layout/fragment_event_list.xml
+
+79f5c11;EntryActivity: now only use one method from DataManager.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+
+351d045;DataManager: speed up isEventEmpty method.
+M	app/src/main/java/com/maxiee/heartbeat/data/DataManager.java
+
+9ff54dd;update changelog.
+M	ChangeLog.md
+
+b70a0da;update resouece.
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/assets/donate_list.html
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+M	build.gradle
+
+cd14fe3;remove ic_launcher-web.png
+D	app/src/main/ic_launcher-web.png
+
+b555f30;DayCardEventAdapter: remove item time from the list.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/DayCardEventAdapter.java
+M	app/src/main/res/layout/item_day_card_item.xml
+
+368104a;update resources.
+M	app/app.iml
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+M	app/src/main/res/layout/item_day_card_item.xml
+M	app/src/main/res/values/dimens.xml
+
+539d6cd;DayCardEventAdapter.java: move layout inflating into a AsyncTask. Now such list very smooth!!!!! smooth! smooth! smooth!
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/DayCardEventAdapter.java
+
+b6753ad;HeartBeatContentProvider.java: add thought related ContentProvider methods.
+M	app/app.iml
+M	app/src/main/java/com/maxiee/heartbeat/provider/Constant.java
+M	app/src/main/java/com/maxiee/heartbeat/provider/HeartBeatContentProvider.java
+
+0bec53d;ProviderThoughtDelegate: delegate for thought related methods.
+A	app/src/main/java/com/maxiee/heartbeat/provider/IProviderThoughtDelegate.java
+A	app/src/main/java/com/maxiee/heartbeat/provider/ProviderThoughtDelegete.java
+
+9b46a06;ContentProvider: add a new method, getting event by id.
+M	app/app.iml
+M	app/src/main/java/com/maxiee/heartbeat/provider/Constant.java
+M	app/src/main/java/com/maxiee/heartbeat/provider/HeartBeatContentProvider.java
+M	app/src/main/java/com/maxiee/heartbeat/provider/IProviderEventDelegate.java
+M	app/src/main/java/com/maxiee/heartbeat/provider/ProviderEventDelegate.java
+
+335aa5e;update resources.
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/res/layout/item_thought_timeaxis.xml
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+a469e4f;TimeUtils.java: parseTime read setting first.
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+
+13392e8;settings.java: add a setting fot time format.
+M	app/src/main/res/xml/settings.xml
+
+6eaae7c;EventManager.java: bug fix in parseData.
+M	app/src/main/java/com/maxiee/heartbeat/data/EventManager.java
+
+9ecd0af;fix #7.
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+209ce80;DayCardEventAdapter.java: item long clicked.
+M	app/app.iml
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/DayCardEventAdapter.java
+
+e28fa72;update resources.
+M	app/src/main/res/values/colors.xml
+
+168a93a;DataManager.java: now use DayCardEventAdapter.
+M	app/src/main/java/com/maxiee/heartbeat/data/DataManager.java
+
+56606eb;EventManager.java: now use DayCard.
+M	app/src/main/java/com/maxiee/heartbeat/data/EventManager.java
+
+7dc8af9;DayCardEventAdapter.java: the new event list, actually is DayCard list.
+A	app/src/main/java/com/maxiee/heartbeat/ui/adapter/DayCardEventAdapter.java
+A	app/src/main/res/layout/item_day_card.xml
+A	app/src/main/res/layout/item_day_card_item.xml
+
+13e6e74;DayCard.java: DayCard is a new model, it contains the events in a given day!
+A	app/src/main/java/com/maxiee/heartbeat/model/DayCard.java
+
+f448579;TimeUtils.java: add useful method.
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+
+23d5266;Android Studio Preview updated again, with no doubt the Instant Run still sucking!
+M	app/app.iml
+M	build.gradle
+
+4b072fc;update changelog.
+M	ChangeLog.md
+
+3ea2720;update version to 0.9.1.
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/assets/donate_list.html
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+275abc4;MainActivity.java: adjust to fit persistentsearch 1.1.0.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+
+38ebf9c;ProviderEventDelegate.java: delegate for event related methods in ContentProvider. (with an interface IProviderEventDelegate)
+A	app/src/main/java/com/maxiee/heartbeat/provider/IProviderEventDelegate.java
+A	app/src/main/java/com/maxiee/heartbeat/provider/ProviderEventDelegate.java
+
+5f8bf8b;HeartBeatContentProvider.java: HeartBeat ContentProvider.
+A	app/src/main/java/com/maxiee/heartbeat/provider/HeartBeatContentProvider.java
+
+7f5e4ba;Constant.java: URIs for ContentProvider.
+A	app/src/main/java/com/maxiee/heartbeat/provider/Constant.java
+
+f3fb70c;update build.gradle.
+M	app/app.iml
+M	app/build.gradle
+
+b2af06b;AndroidManifest.xml: android:exported="true" for ContentProvider.
+M	app/src/main/AndroidManifest.xml
+
+36d419b;LabelUtils.java: remove unused code.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/LabelUtils.java
+
+c11f500;EventUtils.java: now the getEvents method is ordered by timestamp.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/EventUtils.java
+
+ace3383;LabelDetailActivity.java: remove unused code.
+M	app/src/main/java/com/maxiee/heartbeat/ui/LabelDetailActivity.java
+
+fe0af8f;delete NewLabelDialog.
+D	app/src/main/java/com/maxiee/heartbeat/ui/dialog/NewLabelDialog.java
+
+36a671d;AddEventActivity.java: use new add-label dialog.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+f51271b;ThemeUtils.java: add a method called getCurrentDialogTheme.
+M	app/src/main/java/com/maxiee/heartbeat/common/ThemeUtils.java
+
+6da1230;Add theme for dialogs.
+M	app/src/main/res/values-v21/styles.xml
+M	app/src/main/res/values/styles.xml
+
+9ede6f1;update version to v0.9.0.
+M	ChangeLog.md
+M	app/app.iml
+M	app/build.gradle
+
+f1f5582;HelpCenterActivity.java: add 2 articles and adjust layout.
+M	app/src/main/java/com/maxiee/heartbeat/ui/HelpCenterActivity.java
+M	app/src/main/res/layout/activity_help_center.xml
+M	app/src/main/res/layout/item_help_center.xml
+
+169a98b;add 2 new help articles.
+A	app/src/main/assets/donate_list.html
+A	app/src/main/assets/label_event_thought.html
+
+c610550;ThoughtUtils.java: add 2 methods addThought and updateThought use timestamp as a parameter.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/ThoughtUtils.java
+
+bf66938;ThoughtTimeaxisAdapter.java: put timestamp into intent when long clicking a thought.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/ThoughtTimeaxisAdapter.java
+
+b59b3ce;Thoughts.java: now the add method considers the time order.
+M	app/src/main/java/com/maxiee/heartbeat/model/Thoughts.java
+
+394aec4;AddEventActivity.java: if the new event has the create time in the past, then the first thought use the past time.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+a48622c;AddEditThoughtActivity.java: now the time of the thought can be modified.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+M	app/src/main/res/layout/activity_add_edit_thought.xml
+
+891c726;update resources.
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+M	build.gradle
+
+11f0042;TodayManager.java: add and update now just reload.
+M	app/src/main/java/com/maxiee/heartbeat/data/TodayManager.java
+
+171d3be;TimeUtils.java: add several methods.
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+
+241e58c;EventUtils.java: now consider the condition of timestamp can be changed.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/EventUtils.java
+
+bb15fdc;EventDetailActivity.java: update time in onResume.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+9d05409;EntryActivity.java: fit new addEvent method.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+
+f1b7ee5;BaseEventManager.java: now consider the condition of timestamp can be changed.
+M	app/src/main/java/com/maxiee/heartbeat/data/BaseEventManager.java
+
+d7c3a28;AddEventActivity.java: now event time can be changed.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+M	app/src/main/res/layout/activity_add_event.xml
+
+2576657;DatabaseUtils.java: add 2 method queryAllOrderDesc and queryOrderDesc.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/DatabaseUtils.java
+
+08d822f;update a help article.
+A	app/src/main/assets/what_heartbeat_is.html
+M	app/src/main/java/com/maxiee/heartbeat/ui/HelpCenterActivity.java
+
+68bd2f1;HelpListAdapter.java: item click.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/HelpListAdapter.java
+
+bce5297;HelpCenterDetailActivity.java: new Activity to show help article.
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/maxiee/heartbeat/ui/HelpCenterDetailActivity.java
+A	app/src/main/res/layout/activity_help_center_detail.xml
+
+94005d8;MainActivity.java: add a menu item to HelpCenterActivity.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+M	app/src/main/res/menu/menu_main.xml
+
+fb4147a;HelpListAdapter.java: adapter of RecyclerView in HelpCenterActivity.
+A	app/src/main/java/com/maxiee/heartbeat/ui/adapter/HelpListAdapter.java
+A	app/src/main/res/layout/item_help_center.xml
+
+23f7df9;Add a new Activity HelpCenterActivity.
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/maxiee/heartbeat/ui/HelpCenterActivity.java
+A	app/src/main/res/layout/activity_help_center.xml
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+e75d24b;update version to v0.8.9.
+M	ChangeLog.md
+M	app/app.iml
+M	app/build.gradle
+
+cce2fe6;EventDetailActivity.java: fix long image.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+f813f10;HintSearchBox.java: a hack of SearchBox to add a hint to the EditText.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+A	app/src/main/java/com/maxiee/heartbeat/ui/common/HintSearchBox.java
+M	app/src/main/res/layout/activity_main.xml
+
+c2cd77f;EventDetailActivity.java: bug fix the height of long-image large than need.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+4453a3d; StatisticsFragment.java: cancel tasks onStop.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/StatisticsFragment.java
+
+95c3e15;LabelUtils.java: getFreq use sql count.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/LabelUtils.java
+
+96f987d;MainActivity.java: now use FragmentStatePagerAdapter.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+
+cb2362c;ThoughtUtils.java: now getEventCount use true sql count.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/ThoughtUtils.java
+
+3996aa7;StatisticsFragment.java: split one AsyncTask to many.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/StatisticsFragment.java
+
+e9c1c33;StopWatch.java: measure code time usage.
+A	app/src/main/java/com/maxiee/heartbeat/support/StopWatch.java
+
+b9e2bbe;DataManager.java: add method getEventManager.
+M	app/src/main/java/com/maxiee/heartbeat/data/DataManager.java
+
+80cd096;LabelCloudFragment.java: use butter knife.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/LabelCloudFragment.java
+
+66e77e6;MainActivity: remove unused code.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+
+283ed5e;update changelog.
+M	ChangeLog.md
+
+48f3e6d;update version to v0.8.8.
+M	app/app.iml
+M	app/build.gradle
+
+c3ea8da;EventDetailActivity.java: remove unused code.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+cbb0abf;EventTodayFragment.java: code refactoring.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventTodayFragment.java
+
+5666d38;TodayManager.java: bug fix, today events not be updated when a day past.
+M	app/src/main/java/com/maxiee/heartbeat/data/TodayManager.java
+
+84a2491;build.gradle: update gradle.
+M	build.gradle
+
+5b21b74;SettingsFragment.java: use snackbar instead of toast.
+M	app/src/main/java/com/maxiee/heartbeat/backup/BackupManager.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+
+ad64abe;adjust layout of event detail activity.
+M	app/src/main/res/layout/activity_event_detail.xml
+
+9c5ca4c;adjust layout of event detail page.
+M	app/src/main/res/layout/activity_event_detail.xml
+M	app/src/main/res/layout/item_thought_timeaxis.xml
+
+4a4ced5;adjust layout of list item.
+M	app/src/main/java/com/maxiee/heartbeat/ui/LabelDetailActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/SearchResultActivity.java
+A	app/src/main/java/com/maxiee/heartbeat/ui/common/RecyclerInsetsDecoration.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+M	app/src/main/res/layout/item_event_card.xml
+M	app/src/main/res/values/dimens.xml
+
+c943fe7;EntryActivity.java: remove outdated tutorial.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+
+37edc60;SettingsFragment.java: change intent type of restore.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+
+1bcc9f6;v21/style.xml: set navigationBarColor to black.
+M	app/src/main/res/values-v21/styles.xml
+
+5180075;update build.gradle.
+M	app/app.iml
+M	app/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+da85ec9;update changelog.
+M	ChangeLog.md
+
+60e88a7;update changelog.
+M	ChangeLog.md
+
+728aad7;update version to v0.8.7.
+M	app/build.gradle
+
+fdf7ea3;MDHeaderView.java: add animation.
+M	app/src/main/java/com/maxiee/heartbeat/ui/common/mdheaderview/MDHeaderView.java
+
+ac9df7d;attrs for TriView.
+A	app/src/main/res/values/attrs.xml
+
+84aaac5;MDHeaderView.java: now extends ViewGroup.
+M	app/src/main/java/com/maxiee/heartbeat/ui/common/mdheaderview/MDHeaderView.java
+
+7fdafd8;change TriDrawable to TriView.
+D	app/src/main/java/com/maxiee/heartbeat/ui/common/mdheaderview/TriDrawable.java
+A	app/src/main/java/com/maxiee/heartbeat/ui/common/mdheaderview/TriView.java
+
+2485bb1;DataManager.java: bug fix in deleteEvent.
+M	app/src/main/java/com/maxiee/heartbeat/data/DataManager.java
+
+894c96c;EventDetailActivity.java: time axis data reload.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+5d451aa;AddEditThoughtActivity.java: bug fix.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+
+820737f;dialog_edit_thought.xml: remove unused item.
+M	app/src/main/res/menu/dialog_edit_thought.xml
+
+8860325;ThoughtUtils.java: bug fix.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/ThoughtUtils.java
+
+6ec0cec;remove unused resources.
+D	app/src/main/res/drawable-hdpi/header001.png
+D	app/src/main/res/drawable-ldpi/header001.png
+D	app/src/main/res/drawable-mdpi/header001.png
+D	app/src/main/res/drawable-xhdpi/header001.png
+D	app/src/main/res/layout/nav_header.xml
+
+d1751e4;ThoughtTimeaxisAdapter.java: add a setData method.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/ThoughtTimeaxisAdapter.java
+
+8ca7512;EventDetailActivity.java: use new MDHeaderView.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+M	app/src/main/res/layout/activity_add_event.xml
+M	app/src/main/res/layout/activity_event_detail.xml
+
+f49f2f1;AddEventActivity.java: switch between MDHeaderView and ImageView.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+M	app/src/main/res/layout/activity_add_event.xml
+
+91b832a;MDHeaderView.java: a Material Design header view shows several triangles.
+A	app/src/main/java/com/maxiee/heartbeat/ui/common/mdheaderview/MDHeaderView.java
+
+4cd4471;TriDrawable.java: a custom drawable.
+A	app/src/main/java/com/maxiee/heartbeat/ui/common/mdheaderview/TriDrawable.java
+
+689417a;LabelUtils.java: fix bug: add label duplicated.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/LabelUtils.java
+
+d59a44f;Event.java: override toString.
+M	app/src/main/java/com/maxiee/heartbeat/model/Event.java
+
+68e542c;EventUtils.java: remove debug log.
+M	app/src/main/java/com/maxiee/heartbeat/database/utils/EventUtils.java
+
+4863d1d;EventDetailActivity.java: fix card background color in long image.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+52053af;EventDetailActivity.java: fix long image.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+e444cc2;use new utils.
+M	app/app.iml
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+M	app/src/main/java/com/maxiee/heartbeat/database/api/ImageUriUpgradeApi.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/GalleryActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/LabelDetailActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/SearchResultActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/EventListAdapter.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/TodayEventAdapter.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/LabelCloudFragment.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/StatisticsFragment.java
+
+6562d92;DataManager.java: use new eventManager and new utils.
+M	app/src/main/java/com/maxiee/heartbeat/data/DataManager.java
+
+cc16708;new eventManagers.
+A	app/src/main/java/com/maxiee/heartbeat/data/BaseEventManager.java
+A	app/src/main/java/com/maxiee/heartbeat/data/EventManager.java
+A	app/src/main/java/com/maxiee/heartbeat/data/TodayManager.java
+
+06339b3;model changes.
+M	app/src/main/java/com/maxiee/heartbeat/model/Event.java
+A	app/src/main/java/com/maxiee/heartbeat/model/Image.java
+M	app/src/main/java/com/maxiee/heartbeat/model/Label.java
+A	app/src/main/java/com/maxiee/heartbeat/model/ThoughtRes.java
+M	app/src/main/java/com/maxiee/heartbeat/model/Thoughts.java
+
+99089c0;ThoughtUtils.java: substitute to thought related APIs.
+A	app/src/main/java/com/maxiee/heartbeat/database/utils/ThoughtUtils.java
+
+3a479a1;LabelUtils.java: substitute to label related APIs.
+A	app/src/main/java/com/maxiee/heartbeat/database/utils/LabelUtils.java
+
+0cc8716;ImageUtils.java: substitute to imgae related APIs.
+A	app/src/main/java/com/maxiee/heartbeat/database/utils/ImageUtils.java
+
+1f1dfe8;EventUtils.java: substitute to event related APIs.
+A	app/src/main/java/com/maxiee/heartbeat/database/utils/EventUtils.java
+
+a28b1d8;DatabaseUtils.java: common database methods.
+A	app/src/main/java/com/maxiee/heartbeat/database/utils/DatabaseUtils.java
+
+05a75a3;drop 2 dialogs.
+D	app/src/main/java/com/maxiee/heartbeat/ui/dialog/EditThoughtDialog.java
+D	app/src/main/java/com/maxiee/heartbeat/ui/dialog/NewThoughtDialog.java
+
+d3e5c83;Drop APIs.
+D	app/src/main/java/com/maxiee/heartbeat/database/api/AddEventThoughtRelationApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/AddThoughtApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/AddThoughtResByKeyApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteThoughtByKeyApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteThoughtsByEventKeyApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllThoughtApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetThoughtResByKey.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetThoughtTodayCountApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetTodayEventApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/ThoughtCountByEventApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/UpdateThoughtApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/UpdateThoughtResByKey.java
+
+bec59d4;Drop APIs.
+D	app/src/main/java/com/maxiee/heartbeat/database/api/AddEventLabelRelationApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/AddLabelsApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteEventLabelRelationApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteLabelIfNoUseApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllLabelApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetLabelKeysByEventKeyApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetLabelsAndFreqApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetLabelsByEventKeyApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetOneLabelApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/HasLabelApi.java
+
+bdf9edf;drop APIs.
+D	app/src/main/java/com/maxiee/heartbeat/database/api/AddEventImageRelationApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/AddImageApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteImageByEventKeyApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteImageByImageKeyApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetImageByEventKeyApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/UpdateImageByKeyApi.java
+
+529b517;drop this API.
+D	app/src/main/java/com/maxiee/heartbeat/database/api/EventSearchApi.java
+
+12a33f5;drop these APIs.
+D	app/src/main/java/com/maxiee/heartbeat/database/api/AddEventApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteEventByKeyApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllEventApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetEventsByLabelKeyApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/GetOneEventApi.java
+D	app/src/main/java/com/maxiee/heartbeat/database/api/UpdateEventApi.java
+
+a04fb8c;update resources.
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+a6d1d84;EventListAdapter.java: long click to edit the event.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/EventListAdapter.java
+
+507f8ed;EventDetailActivity.java: update event when onResume.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+cf8289b;AddEventActivity.java: now event editing is in this Activity, too.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+M	app/src/main/res/layout/activity_add_event.xml
+
+88915b7;remove unused code.
+D	app/src/main/java/com/maxiee/heartbeat/ui/dialog/EditEventDialog.java
+D	app/src/main/res/menu/dialog_edit_event.xml
+
+35f1798;use butterknife.
+M	app/app.iml
+M	app/build.gradle
+
+704673f;UpdateImageByKeyApi.java: a new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/UpdateImageByKeyApi.java
+
+bf4daf1;AddEditThoughtActivity.java: move add image button to the bottom.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+M	app/src/main/res/layout/activity_add_edit_thought.xml
+M	app/src/main/res/menu/dialog_new_thought.xml
+
+74f702e;Manifest: windowSoftInputMode of AddEditThoughtActivity.
+M	app/src/main/AndroidManifest.xml
+
+ca495ee;SettingsFragment.java: reload data when data restored.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+
+674eb83;EventDetailActivity.java: fix event card background of the long image.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+07b7b04;update changelog.
+M	ChangeLog.md
+
+dc30655;version to 0.8.6.
+M	app/build.gradle
+
+3b6c465;AndroidManifest.xml: launchmode of AddEventActivity.
+M	app/src/main/AndroidManifest.xml
+
+46e3f88;EntryActivity.java: add a condition to tell if first use.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+
+d329174;EventDetailActivity.java: fix time point in long image.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+fcbbed6;GalleryActivity.java: tap to close.
+M	app/src/main/java/com/maxiee/heartbeat/ui/GalleryActivity.java
+
+888ca28;GalleryActivity.java: image zoom.
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/java/com/maxiee/heartbeat/ui/GalleryActivity.java
+M	app/src/main/res/layout/activity_gallery.xml
+
+76cf033;update changelog.
+M	ChangeLog.md
+
+7b1ee66;update version to v0.8.5
+M	app/build.gradle
+
+effbe41;EventTodayFragment.java: check new day by DataManager on onResume.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventTodayFragment.java
+
+b66059b;EventListFragment.java: check new day by DataManager on onResume.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+
+c64a4b1;DataManager.java: check if new day begins.
+M	app/src/main/java/com/maxiee/heartbeat/data/DataManager.java
+
+f627e9a;TimeUtils.java: add a new function getToday.
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+
+e70deff;DataManager.java: use TodayEventAdapter to today event list.
+M	app/src/main/java/com/maxiee/heartbeat/data/DataManager.java
+
+c8da3d8;EventTodayFragment.java: remove unused code.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventTodayFragment.java
+M	app/src/main/res/layout/fragment_event_today.xml
+
+3aaf003;GetThoughtTodayCountApi.java: return 0 if nothing found.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/GetThoughtTodayCountApi.java
+
+051e9d5;TodayEventAdapter.java: add a header to RecyclerView to show hint info.
+A	app/src/main/java/com/maxiee/heartbeat/ui/adapter/TodayEventAdapter.java
+A	app/src/main/res/layout/item_today_header.xml
+
+6f8b0a0;MainActivity.java: remove Fragment list.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+
+f8a1949;GetTodayEventApi.java: return empty list if has no data.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/GetTodayEventApi.java
+
+df859da;EventTodayFragment.java: get data from DataManager.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventTodayFragment.java
+
+1fa130c;EventListFragment.java: get data from DataManager.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+
+c3e627e;EventListAdapter.java: tell DataManager to delete event.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/EventListAdapter.java
+
+4d2d177;EventDetailActivity.java: remove unused code.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+7446d6f;EntryActivity.java: DataManager reload when tutorial created.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+
+0120f52;EditEventDialog.java: tell DataManager if event update or delete.
+M	app/src/main/java/com/maxiee/heartbeat/ui/dialog/EditEventDialog.java
+
+50e27f9;DatabaseHelper.java: make constructor private.
+M	app/src/main/java/com/maxiee/heartbeat/database/DatabaseHelper.java
+
+ce12ceb;AddEventActivity.java: tell DataManager when event added.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+1eac7f7;DataManager.java: introduce a singleton.
+A	app/src/main/java/com/maxiee/heartbeat/data/DataManager.java
+
+b09807a;EventListAdapter.java: long press to remove event.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/EventListAdapter.java
+
+a1cf05f;add touch effect to cards.
+M	app/src/main/res/layout/activity_event_detail.xml
+M	app/src/main/res/layout/item_crash_card.xml
+M	app/src/main/res/layout/item_event_card.xml
+M	app/src/main/res/layout/item_thought_timeaxis.xml
+
+82171c2;styles.xml: v21.
+M	app/src/main/res/layout/activity_event_detail.xml
+A	app/src/main/res/values-v21/styles.xml
+
+b26d7f5;update changelog.
+M	ChangeLog.md
+
+ac2b7c6;update version to 0.8.4.
+M	app/build.gradle
+
+4dc5a8e;ThemeUtils.java: now have 7 themes.
+M	app/src/main/java/com/maxiee/heartbeat/common/ThemeUtils.java
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+61902f2;circle_timeaxis.xml: fix xml drawable bug.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/ThoughtTimeaxisAdapter.java
+M	app/src/main/res/drawable/circle_timeaxis.xml
+M	app/src/main/res/layout/item_thought_timeaxis.xml
+
+4b95014;set label background to colorAccent.
+M	app/src/main/res/layout/activity_add_event.xml
+M	app/src/main/res/layout/activity_event_detail.xml
+M	app/src/main/res/layout/dialog_edit_event.xml
+
+31a0bb6;TagView.java: add a new attr label_background.
+M	app/src/main/java/com/maxiee/heartbeat/common/tagview/TagView.java
+M	app/src/main/res/values/tagview_attr.xml
+
+a9b6788;circle_timeaxis.xml: use theme's colorPrimary.
+M	app/src/main/res/drawable/circle_timeaxis.xml
+
+d97cba2;Activities now extend BaseActivity.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/CrashDetailActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/CrashListActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/GalleryActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/LabelDetailActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/PatternActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/SearchResultActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/SettingsActivity.java
+
+a54b216;ThemeUtils.java: manage themes.
+A	app/src/main/java/com/maxiee/heartbeat/common/ThemeUtils.java
+
+fa4b04c;SettingFragment.java: add change theme preference.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+437a149;add test theme.
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/styles.xml
+
+24d6d0d;BaseActivity.java: set and update Theme.
+A	app/src/main/java/com/maxiee/heartbeat/ui/common/BaseActivity.java
+
+5cdfed3;update changelog.
+M	ChangeLog.md
+
+db48ff9;update version to 0.8.3.1.
+M	app/build.gradle
+
+457dcf6;EventListFragment.java: [Bug fixed] event list duplicated adding.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+
+70746ce;update changelog.
+M	ChangeLog.md
+
+1c133cd;update version to 0.8.3.
+M	app/build.gradle
+
+3ab7307;menu_event_detail.xml: use new icon of long image.
+M	app/src/main/res/menu/menu_event_detail.xml
+
+00ca5b2;AddEventActivity.java: goto EventDetailActivity.java after adding.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+66ee57b;GetLabelsAndFreqApi.java: remove log.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/GetLabelsAndFreqApi.java
+
+ba3d1d3;CloudView.java: [bug fixed] tag not showing when there's only one.
+M	app/src/main/java/com/maxiee/heartbeat/common/cloudview/CloudView.java
+
+5c864a5;update resources.
+D	app/src/main/res/drawable-hdpi/ic_action_camera_roll.png
+A	app/src/main/res/drawable-hdpi/ic_action_theaters.png
+D	app/src/main/res/drawable-mdpi/ic_action_camera_roll.png
+A	app/src/main/res/drawable-mdpi/ic_action_theaters.png
+D	app/src/main/res/drawable-xhdpi/ic_action_camera_roll.png
+A	app/src/main/res/drawable-xhdpi/ic_action_theaters.png
+D	app/src/main/res/drawable-xxhdpi/ic_action_camera_roll.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_theaters.png
+D	app/src/main/res/drawable-xxxhdpi/ic_action_camera_roll.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_theaters.png
+
+c7de09d;update resources.
+M	app/src/main/res/layout/fragment_event_today.xml
+M	app/src/main/res/values/dimens.xml
+
+ad3f201;EventListAdapter.java: adjust layout.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/EventListAdapter.java
+M	app/src/main/res/layout/item_event_card.xml
+M	app/src/main/res/values/dimens.xml
+
+d6c7864;EventListFragment.java: save view mode in SP.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+
+5698715;update resources.
+A	app/src/main/res/drawable-hdpi/ic_action_dashboard.png
+A	app/src/main/res/drawable-hdpi/ic_action_list.png
+A	app/src/main/res/drawable-mdpi/ic_action_dashboard.png
+A	app/src/main/res/drawable-mdpi/ic_action_list.png
+A	app/src/main/res/drawable-xhdpi/ic_action_dashboard.png
+A	app/src/main/res/drawable-xhdpi/ic_action_list.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_dashboard.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_list.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_dashboard.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_list.png
+A	app/src/main/res/menu/fragment_eventlist_type.xml
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+038040c;EventListFragment.java: switch LayoutManager between List and Staggered.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+
+d11700c;EventListFragment.java: use StaggeredGridLayoutManager.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+M	app/src/main/res/layout/fragment_event_list.xml
+
+bb87f7e;item_event_card.xml: add ImageView.
+M	app/src/main/res/layout/item_event_card.xml
+
+055b3ab;EventListAdapter.java: add ImageView.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/EventListAdapter.java
+
+2a609c6;changelog.
+M	ChangeLog.md
+
+e39e6e6;update version.
+M	app/build.gradle
+
+e05fd63;update resources.
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+ea54373;GalleryActivity fullscreen.
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/res/values/styles.xml
+
+0871f89;update resources.
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+295e6ff;EntryActivity.java: create a tutorial when new user first use.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+
+25d9aa0;changelog date fix.
+M	ChangeLog.md
+
+944d462;update changelog.
+M	ChangeLog.md
+
+805017a;update version to 0.8.1.
+M	app/build.gradle
+
+df3c399;SettingsFragment.java: add donate preference.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+43ff5fa;TagView.java: fix FC in 4.0.4.
+M	app/src/main/java/com/maxiee/heartbeat/common/tagview/TagView.java
+
+d388809;update resources.
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+M	gradle.properties
+
+96ed378;AddEventActivity.java: press back twice to exit Activity.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+a896091;AddEditThoughtActivity.java: press back twice to exit Activity.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+
+7873f70;update version to v0.8.0.
+M	ChangeLog.md
+M	app/build.gradle
+
+cc6bf6c;AddEditThoughtActivity.java: fix the situation updating only the thought of a has-image thought.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+
+521dd2d;EventDetailActivity.java: Fix thought image height when generating long image.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+84fd84c;EventDetailActivity.java: 1.Logo layout 2.bitmap rotation 3. update gallery.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+9a69ecc;update resources.
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+bf793a1;EventDetailActivity.java: wrap long-image generating code into AsyncTask, but no egg use. LOL
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+959523d;EventDetailActivity.java: long image code refactoring.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+eb000cc;update resources.
+M	app/src/main/res/layout/item_thought_timeaxis.xml
+A	app/src/main/res/menu/menu_event_detail.xml
+
+5869c7c;FileUtils.java: saveLongImage.
+M	app/src/main/java/com/maxiee/heartbeat/common/FileUtils.java
+
+fd58f23;EventDetailActivity.java: generate long image from event. The function has 150+ lines, shitty but works.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+e3071c3;update resources.
+A	app/src/main/res/drawable-hdpi/ic_action_camera_roll.png
+A	app/src/main/res/drawable-mdpi/ic_action_camera_roll.png
+A	app/src/main/res/drawable-xhdpi/ic_action_camera_roll.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_camera_roll.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_camera_roll.png
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+91af570;Fix code for upgrading support library.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/LabelDetailActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/common/ScrollingFABBehavior.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/dialog/EditEventDialog.java
+A	app/src/main/res/menu/dialog_edit_event.xml
+
+b474e29;Forget to update app version LOL.
+M	app/app.iml
+M	app/build.gradle
+
+e77711d;update changelog.
+M	ChangeLog.md
+
+024cbc1;update resource.
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/java/com/maxiee/heartbeat/support/CrashHandler.java
+M	app/src/main/res/menu/dialog_edit_thought.xml
+M	app/src/main/res/menu/dialog_new_thought.xml
+
+6621d3f;UpdateThoughtResByKey.java: new API.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/UpdateThoughtResByKey.java
+
+0351e22;Thoughts.java: add a few methods.
+M	app/src/main/java/com/maxiee/heartbeat/model/Thoughts.java
+
+ca5d99b;GalleryActivity.java: show image from a path.
+M	app/src/main/java/com/maxiee/heartbeat/ui/GalleryActivity.java
+
+e90a8cf;ThoughtTimeaxisAdapter.java: show image if thought has one.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/ThoughtTimeaxisAdapter.java
+M	app/src/main/res/layout/item_thought_timeaxis.xml
+
+2bfa170;DeleteThoughtByKeyApi.java: delete thought_res table as well.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteThoughtByKeyApi.java
+
+90d2ed9;AddThoughtResByKeyApi.java: new API.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/AddThoughtResByKeyApi.java
+
+e3fcd05;AddEditThoughtActivity.java: finish thought editing.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+M	app/src/main/res/layout/activity_add_edit_thought.xml
+
+b5fbea1;AddEventActivity.java: use new AddThoughtApi.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+cf3e738;update resources.
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/res/drawable-hdpi/ic_action_photo.png
+A	app/src/main/res/drawable-mdpi/ic_action_photo.png
+A	app/src/main/res/drawable-xhdpi/ic_action_photo.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_photo.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_photo.png
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+2be5976;ThoughtTimeaxisAdapter.java: add ImageView in ViewHolder.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/ThoughtTimeaxisAdapter.java
+
+e5f8787;Thoughts.java: resource in Thought.
+M	app/src/main/java/com/maxiee/heartbeat/model/Thoughts.java
+
+cf6c149;item_thought_timeaxis.xml: now contains image.
+M	app/src/main/res/layout/item_thought_timeaxis.xml
+
+cf42150;GetThoughtResByKey.java.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/GetThoughtResByKey.java
+
+e8cdcea;GetAllThoughtApi.java: get resources of thoughts.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllThoughtApi.java
+
+207dfa9;EventDetailActivity.java: now use AddEditThoughtActivity to add new thoughts.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+c2c18cf;NewThoughtDialog.java: delete in the future.
+M	app/src/main/java/com/maxiee/heartbeat/ui/dialog/NewThoughtDialog.java
+M	app/src/main/res/layout/dialog_new_thought.xml
+
+65fb54e;AddThoughtApi.java: add thought resource.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/AddThoughtApi.java
+
+56c02c1;AddEditThoughtActivity.java: merge NewThoughtDialog and EditThoughtDialog into this one.
+A	app/src/main/java/com/maxiee/heartbeat/ui/AddEditThoughtActivity.java
+A	app/src/main/res/layout/activity_add_edit_thought.xml
+
+1a1860b;update ChangeLog.
+M	ChangeLog.md
+
+61c9e4a;update version to 0.7.8.
+M	app/app.iml
+M	app/build.gradle
+
+a2a9040;update resources.
+M	app/app.iml
+M	app/src/main/res/layout/activity_gallery.xml
+
+03007eb;ThoughtResTable.java: new table.
+A	app/src/main/java/com/maxiee/heartbeat/database/tables/ThoughtResTable.java
+
+f2149cc;TagView.java: add comments.
+M	app/src/main/java/com/maxiee/heartbeat/common/tagview/TagView.java
+
+cc27ec7;ImageUriUpgradeApi.java: convert uri to path when upgrade.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/ImageUriUpgradeApi.java
+
+06f8828;GalleryActivity.java: set toolBar background color.
+M	app/src/main/java/com/maxiee/heartbeat/ui/GalleryActivity.java
+
+d772d43;FileUtils.java: add a function uriToPath.
+A	app/src/main/java/com/maxiee/heartbeat/common/FileUtils.java
+
+5d946ad;EventDetailActivity.java: remove unused code and save path into db.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+772c98c;DeleteImageByImageKeyApi.java.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteImageByImageKeyApi.java
+
+e522070;DatabaseHelper.java: add new table and convert item in image table when upgrade.
+M	app/src/main/java/com/maxiee/heartbeat/database/DatabaseHelper.java
+
+9b70d94;AddEventActivity.java: now save path into DB.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+fb2703e;update changelog.
+M	ChangeLog.md
+
+5c8d846;update version to 0.7.7
+M	app/build.gradle
+
+370a670;EventDetailActivity.java: 1. add image when event has no image. 2. click to show full image if event has a event. 3. remove when the uri of event is not valid.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+M	app/src/main/res/layout/activity_event_detail.xml
+
+462cd10;GalleryActivity.java: show image.
+M	app/src/main/java/com/maxiee/heartbeat/ui/GalleryActivity.java
+
+ff1e732;update resources.
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+e51aa80;EventDetailActivity.java: check if uri is valid.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+cda14ec;activity_gallery.xml: fix include layout.
+M	app/src/main/res/layout/activity_gallery.xml
+
+c1cef88;update gradle.
+M	app/app.iml
+M	build.gradle
+
+f0d8580;AddEventActivity.java: fix Storage Access Framework problem in API19+
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+be56974;GalleryActivity.
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/maxiee/heartbeat/ui/GalleryActivity.java
+A	app/src/main/res/layout/activity_gallery.xml
+
+c8d7aa0;SettingsFragment.java: clicking email opens email APP if has one.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+
+dd2f424;fragment_event_today.xml: fix text gravity.
+M	app/src/main/res/layout/fragment_event_today.xml
+M	app/src/main/res/values/strings.xml
+
+c0adb5f;update screenshot.
+M	screenshot.png
+
+31b0d8b;update changelog.
+M	ChangeLog.md
+
+225578d;update version to v0.7.6.
+M	app/app.iml
+M	app/build.gradle
+
+0015df4;translation fix.
+M	app/src/main/res/values-zh/strings.xml
+
+1b00d92;add license.
+A	LICENSE
+M	README.md
+
+789b3cd;translation fix.
+M	app/src/main/res/values/strings.xml
+
+89a739e;update Readme.
+M	README.md
+M	icon.png
+
+1849009;StatisticsFragment.java: replace hardcoded string.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/StatisticsFragment.java
+
+b69c9f4;Translation fixes.
+M	app/src/main/res/values-zh/strings.xml
+M	app/src/main/res/values/strings.xml
+
+a57440d;TimeUtils.java: change date format to suit for English.
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+
+5c58b73;strings.xml: English translation fix.
+M	app/src/main/res/values/strings.xml
+
+3084eb2;strings.xml: English translation.
+M	app/src/main/res/values/strings.xml
+
+c76fefe;strings.xml: Chinese translation.
+A	app/src/main/res/values-zh/strings.xml
+
+2520bd0;update changelog.
+M	ChangeLog.md
+
+bcf5a28;update setting.
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+bdaffb1;update version to 0.7.5.
+M	app/build.gradle
+
+9784865;update icon.
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+953a63a;EventTodayFragment: use new background image.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventTodayFragment.java
+A	app/src/main/res/drawable/empty_bg2.png
+
+32a8219;FileDES.java: remove unused codes.
+M	app/src/main/java/com/maxiee/heartbeat/backup/FileDES.java
+
+7aee33e;BackupManager.java: use encryption in backup process.
+M	app/src/main/java/com/maxiee/heartbeat/backup/BackupManager.java
+
+33f310f;FileDES.java: backup file encryption.
+A	app/src/main/java/com/maxiee/heartbeat/backup/FileDES.java
+
+86bfe4c;update resources.
+M	app/src/main/res/values/strings.xml
+
+dd6a882;TimeUtils.java: add getDate.
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+
+18f313b;SettingsFragment and SettingActivity: Preferences for backup and restore.
+M	app/src/main/java/com/maxiee/heartbeat/ui/SettingsActivity.java
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/xml/settings.xml
+
+c007a0d;BackupManager.java: backup and restore.
+M	app/src/main/java/com/maxiee/heartbeat/backup/BackupManager.java
+
+0bf928f;AndroidManifest.xml: introducing a permission.
+M	app/src/main/AndroidManifest.xml
+
+b86af19;BackupManager.java: backup database.
+A	app/src/main/java/com/maxiee/heartbeat/backup/BackupManager.java
+
+f10df12;SettingsFragment.java: add Preferences for back up.
+M	app/app.iml
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+0be79d5;changelog update.
+M	ChangeLog.md
+
+134f0e9;update version to 0.7.4.
+M	app/app.iml
+M	app/build.gradle
+
+10c4afb;update resources.
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+a655a46;activity_settings.xml: fix toolbar.
+M	app/src/main/res/layout/activity_settings.xml
+
+26c07a6;make icon bigger.
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+f465f15;make icon bigger.
+M	app/src/main/ic_launcher-web.png
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+06cf4fa;icon too small.
+D	app/src/main/res/mipmap-hdpi/ic_launcher.png
+D	app/src/main/res/mipmap-mdpi/ic_launcher.png
+D	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+D	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+D	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+ae55b20;use new icon.
+A	app/src/main/ic_launcher-web.png
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+9084c75;add 2 background images.
+A	app/src/main/res/drawable/empty_bg.png
+A	app/src/main/res/drawable/empty_bg1.png
+
+4d4e610;GetAllThoughtApi.java: reverse if time_axis_sorting SP is set.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllThoughtApi.java
+
+62a28f7;ThoughtTimeaxisAdapter.java: read SP to set index by time_axis_sorting order.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/ThoughtTimeaxisAdapter.java
+
+8250eb7;Thoughts.java: add reverse() method.
+M	app/src/main/java/com/maxiee/heartbeat/model/Thoughts.java
+
+559eefb;Settings.xml: add a ListPreference to set time axis sorting order.
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+5fc3714;SearchResultActivity.java: show hint when empty.
+M	app/src/main/java/com/maxiee/heartbeat/ui/SearchResultActivity.java
+M	app/src/main/res/layout/activity_search_result.xml
+M	app/src/main/res/values/strings.xml
+
+130ea63;update resources.
+M	app/src/main/res/layout/fragment_event_list.xml
+M	app/src/main/res/layout/fragment_label_cloud.xml
+M	app/src/main/res/values/strings.xml
+
+6489554;EventTodayFragment.java: show when empty.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventTodayFragment.java
+M	app/src/main/res/layout/fragment_event_today.xml
+
+c79be2f;update resources.
+M	app/src/main/res/values/strings.xml
+
+1c98676;MainActivity.java: fix getDrawable.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+
+904e736;LabelCloudFragment.java: show hint when labels is empty.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/LabelCloudFragment.java
+M	app/src/main/res/layout/fragment_label_cloud.xml
+
+fca1599;EventListFragment.java: show hint image when list is empty.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+M	app/src/main/res/layout/fragment_event_list.xml
+
+4efa7ac;MainActivity.java: tab icon color add transparent.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+M	app/src/main/res/values/colors.xml
+
+8c60bc2;MainActivity.java: use new Tablayout with ViewPager.
+M	app/app.iml
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+
+4c060d3;styles.xml: add AppTabTextAppearance.
+M	app/src/main/res/values/styles.xml
+
+4ff8a60;include_activity_main.xml: use TabLayout and ViewPager.
+M	app/src/main/res/layout/include_activity_main.xml
+
+4935c8c;activity_main.xml: remove DrawerLayout.
+M	app/src/main/res/layout/activity_main.xml
+
+6079d4b;changelog of 0.7.3
+M	ChangeLog.md
+
+66c9366;SettingsFragment.java: fix a string description.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/values/strings.xml
+
+d796c44;update version to 0.7.3
+M	app/build.gradle
+
+7e7e89e;make cards more close.
+M	app/src/main/res/layout/item_event_card.xml
+
+e47edc3;TimeUtils.java: fix cast bug in countDaysBetween.
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+
+b76f54e;using back design 22.2.0.
+M	app/app.iml
+M	app/build.gradle
+
+e2145de;update resources.
+M	app/src/main/AndroidManifest.xml
+
+a533920;PatternActivity.java: verify pattern.
+M	app/src/main/java/com/maxiee/heartbeat/ui/PatternActivity.java
+
+464c8a9;EntryActivity.java.
+A	app/src/main/java/com/maxiee/heartbeat/ui/EntryActivity.java
+
+50a7d61;PatternActivity.java: modify pattern.
+M	app/src/main/java/com/maxiee/heartbeat/ui/PatternActivity.java
+M	app/src/main/res/values/strings.xml
+
+c940bd3;update resources.
+M	app/src/main/res/values/strings.xml
+
+a1ce966;SettingsFragment.java: update when back from PatternActivity.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+
+2d6f966;PatternActivity.java: pattern cancel.
+M	app/src/main/java/com/maxiee/heartbeat/ui/PatternActivity.java
+M	app/src/main/res/layout/activity_pattern.xml
+
+7f21ba0;SettingsFragment.java: option when pattern has set.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+
+de4edb7;update resources.
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/res/values/strings.xml
+
+297e13e;SettingsFragment.java: add Preference for pattern.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/xml/settings.xml
+
+079522b;PatternActivity.java.
+A	app/src/main/java/com/maxiee/heartbeat/ui/PatternActivity.java
+A	app/src/main/res/layout/activity_pattern.xml
+
+7438af6;add pattern library.
+M	app/app.iml
+M	app/build.gradle
+
+8583e81;update changelog.
+M	ChangeLog.md
+
+112c849;update version to 0.7.2
+M	app/build.gradle
+
+a0ce6af;TimeUtils.java: show date after MS_FOUR_DAYS.
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+
+96de8cd;LabelDetailActivity.java: fix wrong latest time.
+M	app/src/main/java/com/maxiee/heartbeat/ui/LabelDetailActivity.java
+
+f555ae8;update resources.
+M	app/src/main/res/values/strings.xml
+
+f2046c5;TimeUtils.java: add a helper function.
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+
+39f4526;LabelDetailActivity.java: add hint information.
+M	app/src/main/java/com/maxiee/heartbeat/ui/LabelDetailActivity.java
+M	app/src/main/res/layout/activity_label_detail.xml
+
+4c913d9;StatisticsFragment.java: fix bug4.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/StatisticsFragment.java
+
+91033fa;MainActivity.java: search history.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+
+1c998b5;SearchResultActivity.java: call EventSearchApi.java to search.
+M	app/src/main/java/com/maxiee/heartbeat/ui/SearchResultActivity.java
+M	app/src/main/res/layout/activity_search_result.xml
+
+c95e93f;EventSearchApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/EventSearchApi.java
+
+79a318b;update resources.
+M	app/app.iml
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/res/drawable-hdpi/ic_action_search.png
+A	app/src/main/res/drawable-mdpi/ic_action_search.png
+A	app/src/main/res/drawable-xhdpi/ic_action_search.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_search.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_search.png
+M	app/src/main/res/layout/toolbar.xml
+M	app/src/main/res/menu/menu_main.xml
+M	app/src/main/res/values/strings.xml
+
+f53259e;SearchResultActivity.java: new Activity.
+A	app/src/main/java/com/maxiee/heartbeat/ui/SearchResultActivity.java
+A	app/src/main/res/layout/activity_search_result.xml
+
+1508b25;MainActivity.java: add SearchBox.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+
+7fe5f56;Update Changelog
+M	ChangeLog.md
+A	HeartBeat.iml
+
+beaa891;versionName 0.7
+M	app/app.iml
+M	app/build.gradle
+
+8753762;StatisticsFragment.java: fix fc when DB empty.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/StatisticsFragment.java
+
+f7ab0bf;CloudView.java: Bug fix.
+M	app/src/main/java/com/maxiee/heartbeat/common/cloudview/CloudView.java
+M	app/src/main/res/layout/fragment_label_cloud.xml
+
+630f0db;StatisticsFragment.java: control the length of averageCount.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/StatisticsFragment.java
+
+86f06a5;update resources.
+M	app/src/main/res/layout/fragment_label_cloud.xml
+M	app/src/main/res/layout/fragment_statistics.xml
+M	app/src/main/res/layout/include_activity_main.xml
+M	app/src/main/res/values/strings.xml
+
+942e86e;StatisticsFragment.java: use PieChart and use AsyncTask to do DB relative operations.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/StatisticsFragment.java
+
+a374a46;CloudView.java: fixed onMeasure().
+M	app/src/main/java/com/maxiee/heartbeat/common/cloudview/CloudView.java
+
+d7630cf;TimeUtils.java: add 2 static methods.
+M	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+
+c4d7179;update resources.
+A	app/src/main/res/drawable-hdpi/ic_action_trending_up.png
+A	app/src/main/res/drawable-mdpi/ic_action_trending_up.png
+A	app/src/main/res/drawable-xhdpi/ic_action_trending_up.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_trending_up.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_trending_up.png
+M	app/src/main/res/layout/item_crash_card.xml
+M	app/src/main/res/values/strings.xml
+
+6ebe70d;GetCountSpecDayApi.java: new API.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/GetCountSpecDayApi.java
+
+ec4e5c9;GetCountByNameApi.java: new API.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/GetCountByNameApi.java
+
+0b4cb82;StatisticsFragment.java: create and finished conbinedChart.
+A	app/src/main/java/com/maxiee/heartbeat/ui/fragments/StatisticsFragment.java
+A	app/src/main/res/layout/fragment_statistics.xml
+
+bb13713;fix background color in fragments.
+M	app/src/main/res/layout/fragment_event_today.xml
+M	app/src/main/res/layout/fragment_label_cloud.xml
+
+deeb611;MainActivity.java: add new drawer item.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+M	app/src/main/res/menu/drawer_view.xml
+
+d6fc01c;build.gradle: use new library MPAndroidChart.
+M	app/app.iml
+M	app/build.gradle
+
+bbafe04;update download link
+M	README.md
+
+9704c5f;update changelog
+M	ChangeLog.md
+
+c874f6a;build.gradle: v0.6.1
+M	app/build.gradle
+
+a3c76b6;GetAllThoughtApi.java: fix bug: null exception when a event removed all its thoughts.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllThoughtApi.java
+
+3af01e1;GetLabelKeysByEventKeyApi.java: bug fix, null exception when removing a no-label event.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/GetLabelKeysByEventKeyApi.java
+
+8f50db3;update download link
+M	README.md
+
+2a02451;change log
+A	ChangeLog.md
+
+f736226;SettingsFragment.java: add email.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+732d5aa;GetAllEventApi.java: Bug fixed.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllEventApi.java
+
+3b8f8c7;update resources.
+A	app/src/main/res/drawable-hdpi/ic_action_content_copy.png
+A	app/src/main/res/drawable-hdpi/ic_action_share.png
+A	app/src/main/res/drawable-mdpi/ic_action_content_copy.png
+A	app/src/main/res/drawable-mdpi/ic_action_share.png
+A	app/src/main/res/drawable-xhdpi/ic_action_content_copy.png
+A	app/src/main/res/drawable-xhdpi/ic_action_share.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_content_copy.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_share.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_content_copy.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_share.png
+A	app/src/main/res/menu/menu_crash_detail.xml
+M	app/src/main/res/values/strings.xml
+
+1891007;CrashDetailActivity.java: copy to clipboard and share text.
+M	app/src/main/java/com/maxiee/heartbeat/ui/CrashDetailActivity.java
+
+8ecb3f1;update resources.
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/res/layout/fragment_event_list.xml
+A	app/src/main/res/layout/item_crash_card.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/settings.xml
+
+cd227e0;SettingsFragment.java: add crash report preference.
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+
+ecdba4b;MainActivity.java: use CrashHandler.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+
+9c252f5;GetAllCrashesApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllCrashesApi.java
+
+e0c22c5;CrashTable.java.
+M	app/src/main/java/com/maxiee/heartbeat/database/tables/CrashTable.java
+
+139cbb1;CrashListAdapter.java.
+A	app/src/main/java/com/maxiee/heartbeat/ui/adapter/CrashListAdapter.java
+
+cbe8dc1;CrashHandler.java.
+M	app/src/main/java/com/maxiee/heartbeat/support/CrashHandler.java
+
+513528e;CrashListActivity.java.
+A	app/src/main/java/com/maxiee/heartbeat/ui/CrashListActivity.java
+A	app/src/main/res/layout/activity_crash_list.xml
+
+9f7f307;CrashDetailActivity.java.
+A	app/src/main/java/com/maxiee/heartbeat/ui/CrashDetailActivity.java
+A	app/src/main/res/layout/activity_crash_detail.xml
+
+34e5362;Crash.java: new model.
+A	app/src/main/java/com/maxiee/heartbeat/model/Crash.java
+
+437364e;build.gradle: update version to 0.6.
+M	app/build.gradle
+
+0714c94;DatabaseHelper.java: update db version to 3.
+M	app/src/main/java/com/maxiee/heartbeat/database/DatabaseHelper.java
+
+76dd4ad;CrashTable.java: new DB table.
+A	app/src/main/java/com/maxiee/heartbeat/database/tables/CrashTable.java
+
+db2843f;CrashHandler.java.
+A	app/src/main/java/com/maxiee/heartbeat/support/CrashHandler.java
+
+b7fca13;AddCrashApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/AddCrashApi.java
+
+81dcf13;EditEventDialog: delete thought and event-thought relation when removing event.
+M	app/src/main/java/com/maxiee/heartbeat/ui/dialog/EditEventDialog.java
+
+6dc4235;DeleteThoughtsByEventKeyApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteThoughtsByEventKeyApi.java
+
+7e035c1;EditEventDialog.java: remove image and event-image relation when removing event.
+M	app/src/main/java/com/maxiee/heartbeat/ui/dialog/EditEventDialog.java
+
+1a05e9e;DeleteImageByEventKeyApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteImageByEventKeyApi.java
+
+a76962f;EventTodayFragment.java: getActivity() cause null exception?
+M	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventTodayFragment.java
+
+a230dca;EventDetailActivity.java: update tagView as well.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+
+8794eb7;EditEventDialog.java: handle remove event. bug fix: add label which already existed.
+M	app/src/main/java/com/maxiee/heartbeat/ui/dialog/EditEventDialog.java
+
+7bab1da;DeleteEventByKeyApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteEventByKeyApi.java
+
+1b78e1f;update resources.
+M	app/src/main/res/values/strings.xml
+
+9db5422;MainActivity.java: handle result from EventDetailActivity.
+M	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+
+de354e0;GetLabelsByEventKeyApi.java: separate codes to GetLabelKeysByEventKeyApi.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/GetLabelsByEventKeyApi.java
+
+3e80b46;EventListAdapter.java: startActivityForResult.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/EventListAdapter.java
+
+9e8d1a3;EditEventDialog.java: a dialog for editing event.
+A	app/src/main/java/com/maxiee/heartbeat/ui/dialog/EditEventDialog.java
+A	app/src/main/res/layout/dialog_edit_event.xml
+
+cf54d39;AddLabelsApi.java: add a constructor for single String.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/AddLabelsApi.java
+
+ec7a37f;AddEventActivity.java: avoid adding duplicated labels.
+M	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+
+13c6a5d;EventDetailActivity.java: long click open EditEventDialog, setResult to MainActivity if event has modified.
+M	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+M	app/src/main/res/layout/activity_event_detail.xml
+
+f831ded;UpdateEventApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/UpdateEventApi.java
+
+426eac1;GetLabelKeysByEventKeyApi.java: separated from GetLabelsByEventKeyApi.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/GetLabelKeysByEventKeyApi.java
+
+c7b1ca1;DeleteLabelIfNoUseApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteLabelIfNoUseApi.java
+
+8a79e79;DeleteEventLabelRelationApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteEventLabelRelationApi.java
+
+0c21035;Label.java: new model represents label(tag).
+A	app/src/main/java/com/maxiee/heartbeat/model/Label.java
+
+d4221d2;ThoughtTimeaxisAdapter.java: handle long click of item, opening EditThoughtDialog.
+M	app/src/main/java/com/maxiee/heartbeat/ui/adapter/ThoughtTimeaxisAdapter.java
+
+7a13214;GetAllThoughtApi.java: query key(id) from DB.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllThoughtApi.java
+
+91f2275;update resources.
+A	app/src/main/res/drawable-hdpi/ic_action_done.png
+A	app/src/main/res/drawable-mdpi/ic_action_done.png
+A	app/src/main/res/drawable-xhdpi/ic_action_done.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_done.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_done.png
+M	app/src/main/res/values/strings.xml
+
+88b64d4;UpdateThoughtApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/UpdateThoughtApi.java
+
+e94df27;Thoughts.java: add a field to store key.
+M	app/src/main/java/com/maxiee/heartbeat/model/Thoughts.java
+
+d9b5a74;EditThoughtDialog.java: a dialog editing thoughts.
+M	app/src/main/java/com/maxiee/heartbeat/ui/dialog/EditThoughtDialog.java
+
+0a84d3b;resources of EditThoughtDialog.
+M	app/src/main/res/layout/dialog_edit_thought.xml
+M	app/src/main/res/menu/dialog_edit_thought.xml
+
+1706c7c;DeleteThoughtByKeyApi.java: new api.
+A	app/src/main/java/com/maxiee/heartbeat/database/api/DeleteThoughtByKeyApi.java
+
+2eb5de0;fix email in README
+M	README.md
+
+b0d34e3;update README
+M	README.md
+A	app/src/main/java/com/maxiee/heartbeat/ui/dialog/EditThoughtDialog.java
+A	app/src/main/res/layout/dialog_edit_thought.xml
+A	app/src/main/res/menu/dialog_edit_thought.xml
+A	icon.png
+A	screenshot.png
+
+cf033c6;AddLabel.java: directly return key in insertLabel function.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/AddLabelsApi.java
+
+81b3922;AddEventApi.java: remove unused code.
+M	app/src/main/java/com/maxiee/heartbeat/database/api/AddEventApi.java
+
+a21950b;adjust theme.
+M	app/src/main/java/com/maxiee/heartbeat/common/tagview/Constants.java
+M	app/src/main/res/drawable/circle_timeaxis.xml
+M	app/src/main/res/layout/item_event_card.xml
+M	app/src/main/res/values/styles.xml
+
+3076812;use new icon.
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+e615ef5;adjust layout.
+M	app/src/main/res/layout/activity_add_event.xml
+M	app/src/main/res/layout/activity_event_detail.xml
+
+766ffa4;add new header image.
+A	app/src/main/res/drawable-hdpi/header001.png
+A	app/src/main/res/drawable-ldpi/header001.png
+A	app/src/main/res/drawable-mdpi/header001.png
+A	app/src/main/res/drawable-xhdpi/header001.png
+
+a3fb53b;adjust layouts.
+M	app/src/main/res/layout/activity_add_event.xml
+M	app/src/main/res/layout/nav_header.xml
+
+99a05e9;remove old header image.
+D	app/src/main/res/drawable-hdpi/header001.png
+D	app/src/main/res/drawable-ldpi/header001.png
+D	app/src/main/res/drawable-mdpi/header001.png
+D	app/src/main/res/drawable-xhdpi/header001.png
+D	app/src/main/res/drawable-xxhdpi/header001.png
+D	app/src/main/res/drawable-xxxhdpi/header001.png
+
+51c7731;CloudView.java: bux fix.
+M	app/src/main/java/com/maxiee/heartbeat/common/cloudview/CloudView.java
+
+108e4af;add new icon.
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+ed561c1;remove old icon.
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+
+36f7c93;ScrollingFABBehavior.java: does not work.
+M	app/src/main/java/com/maxiee/heartbeat/ui/common/ScrollingFABBehavior.java
+M	app/src/main/res/layout/include_activity_main.xml
+
+116a490;ScrollingFABBehavior.java: hide FAB.
+A	app/src/main/java/com/maxiee/heartbeat/ui/common/ScrollingFABBehavior.java
+
+400da52;App rename.
+M	app/app.iml
+M	app/build.gradle
+R091	app/src/androidTest/java/com/maxiee/attitude/ApplicationTest.java	app/src/androidTest/java/com/maxiee/heartbeat/ApplicationTest.java
+M	app/src/main/AndroidManifest.xml
+R098	app/src/main/java/com/maxiee/attitude/common/DialogAsyncTask.java	app/src/main/java/com/maxiee/heartbeat/common/DialogAsyncTask.java
+R096	app/src/main/java/com/maxiee/attitude/common/FixedHeightScrollingViewBehavior.java	app/src/main/java/com/maxiee/heartbeat/common/FixedHeightScrollingViewBehavior.java
+R095	app/src/main/java/com/maxiee/attitude/common/TimeUtils.java	app/src/main/java/com/maxiee/heartbeat/common/TimeUtils.java
+R095	app/src/main/java/com/maxiee/attitude/common/cloudview/Cloud.java	app/src/main/java/com/maxiee/heartbeat/common/cloudview/Cloud.java
+R094	app/src/main/java/com/maxiee/attitude/common/cloudview/CloudTag.java	app/src/main/java/com/maxiee/heartbeat/common/cloudview/CloudTag.java
+R098	app/src/main/java/com/maxiee/attitude/common/cloudview/CloudView.java	app/src/main/java/com/maxiee/heartbeat/common/cloudview/CloudView.java
+R097	app/src/main/java/com/maxiee/attitude/common/tagview/Constants.java	app/src/main/java/com/maxiee/heartbeat/common/tagview/Constants.java
+R099	app/src/main/java/com/maxiee/attitude/common/tagview/Tag.java	app/src/main/java/com/maxiee/heartbeat/common/tagview/Tag.java
+R099	app/src/main/java/com/maxiee/attitude/common/tagview/TagView.java	app/src/main/java/com/maxiee/heartbeat/common/tagview/TagView.java
+R070	app/src/main/java/com/maxiee/attitude/database/DatabaseHelper.java	app/src/main/java/com/maxiee/heartbeat/database/DatabaseHelper.java
+R085	app/src/main/java/com/maxiee/attitude/database/api/AddEventApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/AddEventApi.java
+R087	app/src/main/java/com/maxiee/attitude/database/api/AddEventImageRelationApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/AddEventImageRelationApi.java
+R087	app/src/main/java/com/maxiee/attitude/database/api/AddEventLabelRelationApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/AddEventLabelRelationApi.java
+R087	app/src/main/java/com/maxiee/attitude/database/api/AddEventThoughtRelationApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/AddEventThoughtRelationApi.java
+R088	app/src/main/java/com/maxiee/attitude/database/api/AddImageApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/AddImageApi.java
+R092	app/src/main/java/com/maxiee/attitude/database/api/AddLabelsApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/AddLabelsApi.java
+R090	app/src/main/java/com/maxiee/attitude/database/api/AddThoughtApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/AddThoughtApi.java
+R087	app/src/main/java/com/maxiee/attitude/database/api/BaseDBApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/BaseDBApi.java
+R090	app/src/main/java/com/maxiee/attitude/database/api/GetAllEventApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllEventApi.java
+R088	app/src/main/java/com/maxiee/attitude/database/api/GetAllLabelApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllLabelApi.java
+R087	app/src/main/java/com/maxiee/attitude/database/api/GetAllThoughtApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetAllThoughtApi.java
+R089	app/src/main/java/com/maxiee/attitude/database/api/GetEventsByLabelKeyApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetEventsByLabelKeyApi.java
+R090	app/src/main/java/com/maxiee/attitude/database/api/GetImageByEventKeyApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetImageByEventKeyApi.java
+R087	app/src/main/java/com/maxiee/attitude/database/api/GetLabelsAndFreqApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetLabelsAndFreqApi.java
+R091	app/src/main/java/com/maxiee/attitude/database/api/GetLabelsByEventKeyApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetLabelsByEventKeyApi.java
+R084	app/src/main/java/com/maxiee/attitude/database/api/GetOneEventApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetOneEventApi.java
+R090	app/src/main/java/com/maxiee/attitude/database/api/GetOneLabelApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetOneLabelApi.java
+R087	app/src/main/java/com/maxiee/attitude/database/api/GetThoughtTodayCountApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetThoughtTodayCountApi.java
+R092	app/src/main/java/com/maxiee/attitude/database/api/GetTodayEventApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/GetTodayEventApi.java
+R090	app/src/main/java/com/maxiee/attitude/database/api/HasLabelApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/HasLabelApi.java
+R074	app/src/main/java/com/maxiee/attitude/database/api/ThoughtCountByEventApi.java	app/src/main/java/com/maxiee/heartbeat/database/api/ThoughtCountByEventApi.java
+R092	app/src/main/java/com/maxiee/attitude/database/tables/EventImageRelationTable.java	app/src/main/java/com/maxiee/heartbeat/database/tables/EventImageRelationTable.java
+R092	app/src/main/java/com/maxiee/attitude/database/tables/EventLabelRelationTable.java	app/src/main/java/com/maxiee/heartbeat/database/tables/EventLabelRelationTable.java
+R092	app/src/main/java/com/maxiee/attitude/database/tables/EventThoughtRelationTable.java	app/src/main/java/com/maxiee/heartbeat/database/tables/EventThoughtRelationTable.java
+R091	app/src/main/java/com/maxiee/attitude/database/tables/EventsTable.java	app/src/main/java/com/maxiee/heartbeat/database/tables/EventsTable.java
+R089	app/src/main/java/com/maxiee/attitude/database/tables/ImageTable.java	app/src/main/java/com/maxiee/heartbeat/database/tables/ImageTable.java
+R089	app/src/main/java/com/maxiee/attitude/database/tables/LabelsTable.java	app/src/main/java/com/maxiee/heartbeat/database/tables/LabelsTable.java
+R091	app/src/main/java/com/maxiee/attitude/database/tables/ThoughtsTable.java	app/src/main/java/com/maxiee/heartbeat/database/tables/ThoughtsTable.java
+R084	app/src/main/java/com/maxiee/attitude/model/Event.java	app/src/main/java/com/maxiee/heartbeat/model/Event.java
+R091	app/src/main/java/com/maxiee/attitude/model/Thoughts.java	app/src/main/java/com/maxiee/heartbeat/model/Thoughts.java
+R092	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java	app/src/main/java/com/maxiee/heartbeat/ui/AddEventActivity.java
+R087	app/src/main/java/com/maxiee/attitude/ui/EventDetailActivity.java	app/src/main/java/com/maxiee/heartbeat/ui/EventDetailActivity.java
+R086	app/src/main/java/com/maxiee/attitude/ui/LabelDetailActivity.java	app/src/main/java/com/maxiee/heartbeat/ui/LabelDetailActivity.java
+R096	app/src/main/java/com/maxiee/attitude/ui/MainActivity.java	app/src/main/java/com/maxiee/heartbeat/ui/MainActivity.java
+R086	app/src/main/java/com/maxiee/attitude/ui/SettingsActivity.java	app/src/main/java/com/maxiee/heartbeat/ui/SettingsActivity.java
+R085	app/src/main/java/com/maxiee/attitude/ui/adapter/EventListAdapter.java	app/src/main/java/com/maxiee/heartbeat/ui/adapter/EventListAdapter.java
+R091	app/src/main/java/com/maxiee/attitude/ui/adapter/ThoughtTimeaxisAdapter.java	app/src/main/java/com/maxiee/heartbeat/ui/adapter/ThoughtTimeaxisAdapter.java
+R097	app/src/main/java/com/maxiee/attitude/ui/dialog/NewLabelDialog.java	app/src/main/java/com/maxiee/heartbeat/ui/dialog/NewLabelDialog.java
+R095	app/src/main/java/com/maxiee/attitude/ui/dialog/NewThoughtDialog.java	app/src/main/java/com/maxiee/heartbeat/ui/dialog/NewThoughtDialog.java
+R076	app/src/main/java/com/maxiee/attitude/ui/fragments/EventListFragment.java	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventListFragment.java
+R088	app/src/main/java/com/maxiee/attitude/ui/fragments/EventTodayFragment.java	app/src/main/java/com/maxiee/heartbeat/ui/fragments/EventTodayFragment.java
+R085	app/src/main/java/com/maxiee/attitude/ui/fragments/LabelCloudFragment.java	app/src/main/java/com/maxiee/heartbeat/ui/fragments/LabelCloudFragment.java
+R095	app/src/main/java/com/maxiee/attitude/ui/fragments/SettingsFragment.java	app/src/main/java/com/maxiee/heartbeat/ui/fragments/SettingsFragment.java
+M	app/src/main/res/layout/activity_add_event.xml
+M	app/src/main/res/layout/activity_event_detail.xml
+M	app/src/main/res/layout/fragment_label_cloud.xml
+M	app/src/main/res/values/strings.xml
+
+497f672;update README with new App name.
+M	README.md
+
+502a9ce;MainActivity.java: update every fragment after adding a new event.
+M	app/src/main/java/com/maxiee/attitude/ui/MainActivity.java
+
+a90c1f9;LabelCloudFragment.java: wrap update process to a function.
+M	app/src/main/java/com/maxiee/attitude/ui/fragments/LabelCloudFragment.java
+
+4168e13;GetTodayEventApi.java: reverse time order.
+M	app/src/main/java/com/maxiee/attitude/database/api/GetTodayEventApi.java
+
+d00bbe1;fix back problem in Activities.
+M	app/src/main/java/com/maxiee/attitude/ui/EventDetailActivity.java
+M	app/src/main/java/com/maxiee/attitude/ui/LabelDetailActivity.java
+
+5ecaed6;reverse event time order.
+M	app/src/main/java/com/maxiee/attitude/database/api/GetAllEventApi.java
+M	app/src/main/java/com/maxiee/attitude/database/api/GetEventsByLabelKeyApi.java
+
+7606354;AddEventActivity.java: bug fix.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+ae1795e;EventDetailActivity.java: show image if having one.
+M	app/src/main/java/com/maxiee/attitude/ui/EventDetailActivity.java
+
+2fd3649;GetImageByEventKeyApi.java: new api.
+A	app/src/main/java/com/maxiee/attitude/database/api/GetImageByEventKeyApi.java
+
+0985de4;update sources.
+M	app/src/main/res/values/strings.xml
+
+6d0b71b;AddEventActivity.java: save added image to DB.
+A	app/src/main/java/com/maxiee/attitude/database/api/AddEventImageRelationApi.java
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+3c8e9e4;AddThoughtApi.java: new api.
+M	app/src/main/java/com/maxiee/attitude/database/api/AddThoughtApi.java
+
+28d2824;AddImageApi.java: new api.
+A	app/src/main/java/com/maxiee/attitude/database/api/AddImageApi.java
+
+5389ada;AddEventActivity.java: use glide library show image.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+240488f;build.gradle: use glide library.
+M	app/app.iml
+M	app/build.gradle
+
+44aa230;AddEventActivity.java: open the system gallery.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+M	app/src/main/res/layout/activity_add_event.xml
+M	app/src/main/res/values/strings.xml
+
+1b05d37;DatabaseHelper.java: update database to add image tables.
+M	app/src/main/java/com/maxiee/attitude/database/DatabaseHelper.java
+
+9ea3b3e;Update resources.
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/menu/menu_main.xml
+M	app/src/main/res/values/strings.xml
+A	app/src/main/res/xml/settings.xml
+
+51529f3;MainActivity.java: click settings menu opening SettingsActivity.
+M	app/src/main/java/com/maxiee/attitude/ui/MainActivity.java
+
+3543db1;DatabaseHelper.java: add create of two new table.
+M	app/src/main/java/com/maxiee/attitude/database/DatabaseHelper.java
+
+14836d8;EventImageRelationTable.java: a model to store relationship between events and iamges. not working now.
+A	app/src/main/java/com/maxiee/attitude/database/tables/EventImageRelationTable.java
+
+4c6734d;ImageTable.java: a new model to store images. not working now.
+A	app/src/main/java/com/maxiee/attitude/database/tables/ImageTable.java
+
+7db35d0;SettingsActivity.java: new Activity contains SettingsFragment.
+A	app/src/main/java/com/maxiee/attitude/ui/SettingsActivity.java
+
+03d25e8;SettingFragment.java: a new Fragment displaying setting info.
+A	app/src/main/java/com/maxiee/attitude/ui/fragments/SettingsFragment.java
+
+44e9da6;LabelCloudFragment.java: click Label goto LabelDetailActivity.
+M	app/src/main/java/com/maxiee/attitude/ui/fragments/LabelCloudFragment.java
+
+c826a68;CloudView.java: add a callback function.
+M	app/src/main/java/com/maxiee/attitude/common/cloudview/CloudView.java
+
+ca298f9;EventDetailActivity.java: now not call finish() when clicking tag.
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/maxiee/attitude/ui/EventDetailActivity.java
+M	app/src/main/res/layout/activity_label_detail.xml
+
+3b65fab;LabelDetailActivity.java: display events under the label.
+M	app/src/main/java/com/maxiee/attitude/ui/LabelDetailActivity.java
+
+984d450;GetEventByLabelKeyApi.java: new api.
+A	app/src/main/java/com/maxiee/attitude/database/api/GetEventsByLabelKeyApi.java
+
+56902d1;EventDetailActivity.java: click tag open LabelDetailActivity.java.
+M	app/src/main/java/com/maxiee/attitude/ui/EventDetailActivity.java
+
+7a690c2;LabelDetailActivity.java: new Activity.
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/maxiee/attitude/ui/LabelDetailActivity.java
+A	app/src/main/res/layout/activity_label_detail.xml
+
+f277eec;CloudView.java: color change by freq.
+M	app/src/main/java/com/maxiee/attitude/common/cloudview/CloudView.java
+
+687106b;CloudView.java: size computing.
+M	app/src/main/java/com/maxiee/attitude/common/cloudview/CloudView.java
+
+7ad889e;update resources.
+A	app/src/main/res/drawable-hdpi/ic_action_label.png
+A	app/src/main/res/drawable-mdpi/ic_action_label.png
+A	app/src/main/res/drawable-xhdpi/ic_action_label.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_label.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_label.png
+M	app/src/main/res/values/strings.xml
+
+061bbf6;MainActivity.java: add navigation item for LabelCloudFragment.
+M	app/src/main/java/com/maxiee/attitude/ui/MainActivity.java
+M	app/src/main/res/menu/drawer_view.xml
+
+43d5ca6;LabelCloudFragment.java: new Fragment showing cloud tag.
+A	app/src/main/java/com/maxiee/attitude/ui/fragments/LabelCloudFragment.java
+A	app/src/main/res/layout/fragment_label_cloud.xml
+
+e4950e7;CloudView.java: Cloud Tag View.
+A	app/src/main/java/com/maxiee/attitude/common/cloudview/Cloud.java
+A	app/src/main/java/com/maxiee/attitude/common/cloudview/CloudTag.java
+A	app/src/main/java/com/maxiee/attitude/common/cloudview/CloudView.java
+
+2c1afd4;GetTodayEventApi.java: remove log codes.
+M	app/src/main/java/com/maxiee/attitude/database/api/GetTodayEventApi.java
+
+513efef;GetThoughtTodayCountApi.java: new Api.
+A	app/src/main/java/com/maxiee/attitude/database/api/GetThoughtTodayCountApi.java
+
+0910998;EventTodayFragment.java: show today infos.
+M	app/src/main/java/com/maxiee/attitude/ui/fragments/EventTodayFragment.java
+M	app/src/main/res/layout/fragment_event_today.xml
+M	app/src/main/res/values/strings.xml
+
+ad6c263;EventTodayFragment.java: show event today.
+M	app/src/main/java/com/maxiee/attitude/ui/fragments/EventTodayFragment.java
+M	app/src/main/res/layout/fragment_event_today.xml
+
+672fb4f;GetTodayEventApi.java: new API.
+A	app/src/main/java/com/maxiee/attitude/database/api/GetTodayEventApi.java
+
+135c3ad;code fixes.
+M	app/src/main/java/com/maxiee/attitude/common/TimeUtils.java
+M	app/src/main/java/com/maxiee/attitude/database/api/GetAllEventApi.java
+M	app/src/main/java/com/maxiee/attitude/ui/fragments/EventListFragment.java
+
+c49fa2d;EventTodayFragment.java: add a new Fragment.
+M	app/src/main/java/com/maxiee/attitude/ui/MainActivity.java
+A	app/src/main/java/com/maxiee/attitude/ui/fragments/EventTodayFragment.java
+M	app/src/main/res/layout/fragment_event_list.xml
+A	app/src/main/res/layout/fragment_event_today.xml
+
+edc1a33;MainAcivity.java: navigationView listener.
+M	app/src/main/java/com/maxiee/attitude/ui/MainActivity.java
+M	app/src/main/res/layout/nav_header.xml
+
+9e2f392;update resources.
+A	app/src/main/res/drawable-hdpi/ic_action_reorder.png
+A	app/src/main/res/drawable-hdpi/ic_action_today.png
+A	app/src/main/res/drawable-mdpi/ic_action_reorder.png
+A	app/src/main/res/drawable-mdpi/ic_action_today.png
+A	app/src/main/res/drawable-xhdpi/ic_action_reorder.png
+A	app/src/main/res/drawable-xhdpi/ic_action_today.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_reorder.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_today.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_reorder.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_today.png
+M	app/src/main/res/menu/drawer_view.xml
+M	app/src/main/res/values/strings.xml
+
+c6c832a;MainActivity.java: init toolbar and navigation view.
+M	app/src/main/java/com/maxiee/attitude/ui/MainActivity.java
+
+641c122;AddEventActivity.java: recent Label add works.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+d3f5113;AddEventActivity.java: put label count to extra information of TagView.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+0d67677;TagView.java: add a extra information field in TagView.
+M	app/src/main/java/com/maxiee/attitude/common/tagview/Tag.java
+M	app/src/main/java/com/maxiee/attitude/common/tagview/TagView.java
+M	app/src/main/res/layout/tagview_item.xml
+
+814bb97;item_event_card.xml: adjust layout.
+M	app/src/main/res/layout/item_event_card.xml
+
+f2abd54;ThoughtTimeaxisAdapter.java: remove unused code.
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/ThoughtTimeaxisAdapter.java
+
+7ef84b8;ThoughtsTable.java: new table.
+A	app/src/main/java/com/maxiee/attitude/database/tables/ThoughtsTable.java
+
+9ae9f22;Thoughts.java: model refactoring.
+M	app/src/main/java/com/maxiee/attitude/model/Thoughts.java
+
+3b1536e;ThoughtCountByEventApi.java: new Api.
+A	app/src/main/java/com/maxiee/attitude/database/api/ThoughtCountByEventApi.java
+
+cd79594;NewThoughtDialog.java: remove unused code.
+M	app/src/main/java/com/maxiee/attitude/ui/dialog/NewThoughtDialog.java
+
+be6c5fa;GetOneEventApi.java: fit new model.
+M	app/src/main/java/com/maxiee/attitude/database/api/GetOneEventApi.java
+
+d65b3db;GetAllThoughtApi.java: new Api.
+A	app/src/main/java/com/maxiee/attitude/database/api/GetAllThoughtApi.java
+
+72abc06;GetAllEventApi.java: fit new model.
+M	app/src/main/java/com/maxiee/attitude/database/api/GetAllEventApi.java
+
+4140270;EventThoughtRelationTable.java: new Api
+A	app/src/main/java/com/maxiee/attitude/database/tables/EventThoughtRelationTable.java
+
+716d654;EventsTable.java: remove thoughts in Event table.
+M	app/src/main/java/com/maxiee/attitude/database/tables/EventsTable.java
+
+e9ca427;EventListAdapter.java: use new Api.
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/EventListAdapter.java
+
+72ad814;EventDetailActivity.java: use new Api.
+M	app/src/main/java/com/maxiee/attitude/ui/EventDetailActivity.java
+
+a1f9f60;Event.java: remove Thoughts filed (moving to a separate table).
+M	app/src/main/java/com/maxiee/attitude/model/Event.java
+
+f6605b6;DatabaseHelper.java: add new models.
+M	app/src/main/java/com/maxiee/attitude/database/DatabaseHelper.java
+
+027adea;BaseDBApi.java: add method returns the id inserted.
+M	app/src/main/java/com/maxiee/attitude/database/api/BaseDBApi.java
+
+727b424;AddThoughtApi.java: fit new Thought model.
+M	app/src/main/java/com/maxiee/attitude/database/api/AddThoughtApi.java
+
+6e91e62;AddEventThoughtRelationApi.java: new Api.
+A	app/src/main/java/com/maxiee/attitude/database/api/AddEventThoughtRelationApi.java
+
+38ed10d;AddEventApi.java: fit new Event model.
+M	app/src/main/java/com/maxiee/attitude/database/api/AddEventApi.java
+
+8926f7b;AddEventActivity.java: use new Api.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+66b522f;GetOneEventApi.java: fix timestamp.
+M	app/src/main/java/com/maxiee/attitude/database/api/GetOneEventApi.java
+
+dc73b1e;EventListAdapter.java: remove unused code.
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/EventListAdapter.java
+
+e72bf6d;EventDetailActivity.java: add time and tag display.
+M	app/src/main/java/com/maxiee/attitude/ui/EventDetailActivity.java
+M	app/src/main/res/layout/activity_event_detail.xml
+
+ba16b28;code refracting.
+M	app/src/main/java/com/maxiee/attitude/common/tagview/TagView.java
+M	app/src/main/java/com/maxiee/attitude/database/api/GetLabelsAndFreqApi.java
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+7f41058;EventListAdapter.java: remove TagView from Taglist.
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/EventListAdapter.java
+M	app/src/main/res/layout/item_event_card.xml
+
+d015602;resources.
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+
+a82ca09;GetOneLabelApi.java.
+A	app/src/main/java/com/maxiee/attitude/database/api/GetOneLabelApi.java
+
+e34a6c5;GetLabelsAndFreqApi.java.
+A	app/src/main/java/com/maxiee/attitude/database/api/GetLabelsAndFreqApi.java
+
+f4113a5;GetAllLabelApi.java.
+A	app/src/main/java/com/maxiee/attitude/database/api/GetAllLabelApi.java
+
+ff0203a;AddEventActivity.java: recent Tagview.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+31d28e6;activity_add_event.xml: recent TagView.
+M	app/src/main/res/layout/activity_add_event.xml
+
+c9159cd;GetLabelsByEventKeyApi.java: new Api.
+A	app/src/main/java/com/maxiee/attitude/database/api/GetLabelsByEventKeyApi.java
+
+ad0d672;update resources.
+M	app/src/main/res/layout/item_event_card.xml
+
+2169c4b;EventListAdapter.java: show TagView.
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/EventListAdapter.java
+
+66aba63;AddEventApi.java: bug fix.
+M	app/src/main/java/com/maxiee/attitude/database/api/AddEventApi.java
+
+26cea75;HasLabelApi: if database has the label, then return its key.
+A	app/src/main/java/com/maxiee/attitude/database/api/HasLabelApi.java
+
+e53e9c3;EventLabelRelationTable.java
+A	app/src/main/java/com/maxiee/attitude/database/tables/EventLabelRelationTable.java
+
+aae0bfd;DatabaseHelper.java: add EventLabelRelation model.
+M	app/src/main/java/com/maxiee/attitude/database/DatabaseHelper.java
+
+ffd786d;AddLabelsApi.java
+A	app/src/main/java/com/maxiee/attitude/database/api/AddLabelsApi.java
+
+8191873;AddEventLabelRelationApi.java
+A	app/src/main/java/com/maxiee/attitude/database/api/AddEventLabelRelationApi.java
+
+add4527;AddEventApi.java: add a method to query the id of the latest add event.
+M	app/src/main/java/com/maxiee/attitude/database/api/AddEventApi.java
+
+94b0ea7;AddEventActivity.java: now add envent, label and their relationship.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+e6a069d;TagView.java: add a clear method.
+M	app/src/main/java/com/maxiee/attitude/common/tagview/TagView.java
+
+656dc2e;NewLabelDialog.java: a dialog to add new label.
+A	app/src/main/java/com/maxiee/attitude/ui/dialog/NewLabelDialog.java
+A	app/src/main/res/layout/dialog_new_label.xml
+
+cde5f75;BaseDBApi.java: save Context as field.
+M	app/src/main/java/com/maxiee/attitude/database/api/BaseDBApi.java
+
+04781cc;AddEventActivity.java: Tag listener.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+95c2c20;EventTable.java: remove labels field.
+M	app/src/main/java/com/maxiee/attitude/database/api/AddEventApi.java
+M	app/src/main/java/com/maxiee/attitude/database/api/GetAllEventApi.java
+M	app/src/main/java/com/maxiee/attitude/database/api/GetOneEventApi.java
+M	app/src/main/java/com/maxiee/attitude/database/tables/EventsTable.java
+M	app/src/main/java/com/maxiee/attitude/model/Event.java
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+18688f9;update resources.
+M	app/src/main/res/values/strings.xml
+
+f4194c4;AddEventActivity.java: use TagView, more work needed.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+M	app/src/main/res/layout/activity_add_event.xml
+
+2ec14de;TagView: modify from kaedea/Android-Cloud-TagView-Plus.
+A	app/src/main/java/com/maxiee/attitude/common/tagview/Constants.java
+A	app/src/main/java/com/maxiee/attitude/common/tagview/Tag.java
+A	app/src/main/java/com/maxiee/attitude/common/tagview/TagView.java
+A	app/src/main/res/layout/tagview_item.xml
+A	app/src/main/res/values/tagview_attr.xml
+
+b2af7fa;use new model.
+M	app/src/main/java/com/maxiee/attitude/database/api/AddEventApi.java
+M	app/src/main/java/com/maxiee/attitude/database/api/AddThoughtApi.java
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/ThoughtTimeaxisAdapter.java
+
+ccfc527;Event.java: use new model.
+M	app/src/main/java/com/maxiee/attitude/model/Event.java
+
+6864980;Thoughts.java: new model.
+A	app/src/main/java/com/maxiee/attitude/model/Thoughts.java
+
+ad084ff;MainActivity.java: autorefresh event list fragment when finishing adding a new event.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+M	app/src/main/java/com/maxiee/attitude/ui/MainActivity.java
+
+f81edd0;EventListFragment.java: use a public method to update list.
+M	app/src/main/java/com/maxiee/attitude/ui/fragments/EventListFragment.java
+
+5cb0173;AddEventActivity.java: show a progress dialog when add new event.
+M	app/src/main/java/com/maxiee/attitude/common/DialogAsyncTask.java
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+M	app/src/main/res/values/strings.xml
+
+52d5ad8;Merge remote-tracking branch 'origin/master'
+acc9225;DialogAsyncTask.java: wrap ProgressDialog into a AsyncTask.
+A	app/src/main/java/com/maxiee/attitude/common/DialogAsyncTask.java
+
+e5f60b6;DialogAsyncTask.java: wrap ProgressDialog into a AsyncTask.
+A	app/src/main/java/com/maxiee/attitude/common/DialogAsyncTask.java
+
+dbaaaf2;item_thought_timeaxis.xml: bug fix and optimize.
+M	app/src/main/res/layout/item_thought_timeaxis.xml
+
+7244133;ThoughtTimeaxisAdapter.java: fix index of thought.
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/ThoughtTimeaxisAdapter.java
+
+cc06436;Bug fix: using getLong() instead of getInt() to fetch timestamp from DB.
+M	app/src/main/java/com/maxiee/attitude/common/TimeUtils.java
+M	app/src/main/java/com/maxiee/attitude/database/api/GetAllEventApi.java
+M	app/src/main/java/com/maxiee/attitude/model/Event.java
+
+a403b41;EventListAdapter.java: show time on the Event list.
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/EventListAdapter.java
+
+6a1e102;update resources.
+M	app/src/main/res/layout/item_thought_timeaxis.xml
+A	app/src/main/res/layout/toolbar.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+f719f95;EventDetailActivity.java: handle fab click to open dialog to add new thought.
+M	app/src/main/java/com/maxiee/attitude/ui/EventDetailActivity.java
+
+0e8d1e0;NewThoughtDialog: a dialog to add new thought.
+A	app/src/main/java/com/maxiee/attitude/ui/dialog/NewThoughtDialog.java
+A	app/src/main/res/layout/dialog_new_thought.xml
+A	app/src/main/res/menu/dialog_new_thought.xml
+
+319f74e;AddThoughtApi.java: a new Api to add new thought to a event.
+A	app/src/main/java/com/maxiee/attitude/database/api/AddThoughtApi.java
+
+a1a575b;activity_event_detail.xml: add fab to add new thought.
+M	app/src/main/res/layout/activity_event_detail.xml
+
+78c04d2;ThoughtTimeaxisAdapter.java: use TimeUtils.
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/ThoughtTimeaxisAdapter.java
+M	app/src/main/res/values/strings.xml
+
+6ce678e;TimeUtils.java: parse time to String such as "xxx minutes ago".
+A	app/src/main/java/com/maxiee/attitude/common/TimeUtils.java
+
+a194baa;AddEventActivity.java: handle exception.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+
+510737b;item_thought_timeaxis.xml: add a TextView to show time.
+M	app/src/main/res/layout/item_thought_timeaxis.xml
+
+c622975;update event model: now Thought JSONArray consist of {String thought; int timestamp}
+M	app/src/main/java/com/maxiee/attitude/database/api/AddEventApi.java
+M	app/src/main/java/com/maxiee/attitude/database/api/BaseDBApi.java
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/ThoughtTimeaxisAdapter.java
+
+896e1bc;update resources.
+A	app/src/main/res/drawable/circle_timeaxis.xml
+M	app/src/main/res/values/strings.xml
+
+fa39e4a;ThoughtTimeaxisAdapter.java: time axis adapter.
+A	app/src/main/java/com/maxiee/attitude/ui/adapter/ThoughtTimeaxisAdapter.java
+
+4be8222;item_thought_timeaxis.cml: time axis item layout.
+A	app/src/main/res/layout/item_thought_timeaxis.xml
+
+f0b11e7;GetOneEventApi.java: get one event detail from DB.
+M	app/src/main/java/com/maxiee/attitude/database/api/GetAllEventApi.java
+A	app/src/main/java/com/maxiee/attitude/database/api/GetOneEventApi.java
+
+192b6f2;FixedHeightScrollingViewBehavior.java: Bug fix of Design Support Library.
+A	app/src/main/java/com/maxiee/attitude/common/FixedHeightScrollingViewBehavior.java
+
+491f79f;EventDetailActivity.java: read DB to fetch Event details and update UI.
+M	app/src/main/java/com/maxiee/attitude/ui/EventDetailActivity.java
+
+980a834;activity_event_detail.xml: add RecyclerView of thought timeaxis.
+M	app/src/main/res/layout/activity_event_detail.xml
+
+82563de;add event id to Event model.
+M	app/src/main/java/com/maxiee/attitude/database/api/GetAllEventApi.java
+M	app/src/main/java/com/maxiee/attitude/model/Event.java
+M	app/src/main/java/com/maxiee/attitude/ui/adapter/EventListAdapter.java
+
+23a0f51;add a new Activity: EventDetailActivity
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/maxiee/attitude/ui/EventDetailActivity.java
+A	app/src/main/res/layout/activity_event_detail.xml
+
+01b51f1;add Fragment to MainActivity.
+M	app/src/main/java/com/maxiee/attitude/ui/MainActivity.java
+M	app/src/main/res/layout/include_activity_main.xml
+
+a530798;Bug fixes.
+A	app/src/main/java/com/maxiee/attitude/database/api/BaseDBApi.java
+D	app/src/main/java/com/maxiee/attitude/database/query/BaseQuery.java
+M	app/src/main/java/com/maxiee/attitude/database/tables/LabelsTable.java
+
+0dca9d0;update resources.
+A	app/src/main/res/drawable-hdpi/ic_action_messenger.png
+A	app/src/main/res/drawable-mdpi/ic_action_messenger.png
+A	app/src/main/res/drawable-xhdpi/ic_action_messenger.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_messenger.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_messenger.png
+M	app/src/main/res/values/strings.xml
+
+c690a24;An API querying all event from DB.
+A	app/src/main/java/com/maxiee/attitude/database/api/GetAllEventApi.java
+
+34de5d0;EventListFragment: a Fragment contains RecyclerView which consist of CardViews.
+A	app/src/main/java/com/maxiee/attitude/ui/adapter/EventListAdapter.java
+A	app/src/main/java/com/maxiee/attitude/ui/fragments/EventListFragment.java
+A	app/src/main/res/layout/fragment_event_list.xml
+A	app/src/main/res/layout/item_event_card.xml
+
+057dc21;Event model.
+A	app/src/main/java/com/maxiee/attitude/model/Event.java
+
+46897c0;api of save event to DB.
+A	app/src/main/java/com/maxiee/attitude/database/api/AddEventApi.java
+
+b36a2a9;fab add event implement.
+M	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+M	app/src/main/res/layout/activity_add_event.xml
+
+a614bc8;add resources.
+A	app/src/main/res/drawable-hdpi/header001.png
+A	app/src/main/res/drawable-ldpi/header001.png
+A	app/src/main/res/drawable-mdpi/header001.png
+A	app/src/main/res/drawable-xhdpi/header001.png
+A	app/src/main/res/drawable-xxhdpi/header001.png
+A	app/src/main/res/drawable-xxxhdpi/header001.png
+M	app/src/main/res/values/strings.xml
+
+cc4c8d0;click FAB start AddEventActivity.
+M	app/src/main/AndroidManifest.xml
+R063	app/src/main/java/com/maxiee/attitude/MainActivity.java	app/src/main/java/com/maxiee/attitude/ui/MainActivity.java
+M	app/src/main/res/layout/include_activity_main.xml
+
+fa40300;add event activity.
+A	app/src/main/java/com/maxiee/attitude/ui/AddEventActivity.java
+A	app/src/main/res/layout/activity_add_event.xml
+
+ef2911f;base UI.
+A	app/src/main/res/layout/include_activity_main.xml
+A	app/src/main/res/layout/nav_header.xml
+A	app/src/main/res/menu/drawer_view.xml
+A	app/src/main/res/values/colors.xml
+
+350fae8;database
+A	app/src/main/java/com/maxiee/attitude/database/DatabaseHelper.java
+A	app/src/main/java/com/maxiee/attitude/database/query/BaseQuery.java
+A	app/src/main/java/com/maxiee/attitude/database/tables/EventsTable.java
+A	app/src/main/java/com/maxiee/attitude/database/tables/LabelsTable.java
+
+51e25f2;UI.
+M	app/app.iml
+M	app/build.gradle
+A	app/src/main/res/drawable-hdpi/ic_action_add.png
+A	app/src/main/res/drawable-mdpi/ic_action_add.png
+A	app/src/main/res/drawable-xhdpi/ic_action_add.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_add.png
+A	app/src/main/res/drawable-xxxhdpi/ic_action_add.png
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/styles.xml
+
+d76c933;init
+M	.gitignore
+A	AndroidProjects.iml
+A	app/.gitignore
+A	app/app.iml
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/com/maxiee/attitude/ApplicationTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/maxiee/attitude/MainActivity.java
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/menu/menu_main.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	attitude.iml
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle
+
+572f089;Initial commit
+A	.gitignore
+A	README.md

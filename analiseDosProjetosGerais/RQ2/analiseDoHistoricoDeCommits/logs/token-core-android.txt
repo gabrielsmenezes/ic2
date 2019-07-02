@@ -1,0 +1,181 @@
+12533cd;Update the signTransaction section of readme
+M	README.md
+
+8ae17b1;Fix that the app could not installe to Android Oreo
+M	README.md
+
+e4d1606;Remove the findbugs
+M	app/build.gradle
+M	build.gradle
+
+ea2c006;Update the gitignore
+M	.gitignore
+A	.idea/codeStyles/Project.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/runConfigurations.xml
+A	.idea/vcs.xml
+
+2f40b37;Add java8 support
+M	README.md
+
+9a46c05;Add 'init step'
+M	README.md
+
+d34396d;Add the missing gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.jar
+
+5ac7aa1;Add the maven plugin for jitpack
+M	app/build.gradle
+M	build.gradle
+
+ddcdb27;Update jitpack address
+M	README.md
+
+f846758;init commit
+A	.gitignore
+A	.project
+A	LICENSE
+A	README.md
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/org/consenlabs/tokencore/ExampleInstrumentedTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/AES.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/CipherParams.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/Crypto.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/EncPair.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/Hash.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/KDFParams.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/Keccak.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/Multihash.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/PBKDF2Crypto.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/PBKDF2Params.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/SCryptCrypto.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/crypto/SCryptParams.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/rlp/RlpEncoder.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/rlp/RlpList.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/rlp/RlpString.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/rlp/RlpType.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/utils/ByteUtil.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/utils/CachedDerivedKey.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/utils/DateUtil.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/utils/MnemonicUtil.java
+A	app/src/main/java/org/consenlabs/tokencore/foundation/utils/NumericUtil.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/Identity.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/KeystoreStorage.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/Wallet.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/WalletManager.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/address/AddressCreator.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/address/AddressCreatorManager.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/address/BitcoinAddressCreator.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/address/EthereumAddressCreator.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/address/SegWitBitcoinAddressCreator.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/EOSKeystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/EncMnemonicKeystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/ExportableKeystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/HDMnemonicKeystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/IMTKeystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/IdentityKeystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/Keystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/LegacyEOSKeystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/V3Ignore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/V3Keystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/V3MnemonicKeystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/keystore/WalletKeystore.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/model/BIP44Util.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/model/ChainId.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/model/ChainType.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/model/KeyPair.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/model/Messages.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/model/Metadata.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/model/MnemonicAndPath.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/model/Network.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/model/TokenException.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/BitcoinTransaction.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/EOSECDSASigner.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/EOSKey.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/EOSSign.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/EOSTransaction.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/EthereumSign.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/EthereumTransaction.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/MyHMacDSAKCalculator.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/SignatureData.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/TransactionSigner.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/TxMultiSignResult.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/transaction/TxSignResult.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/validators/ETHAddressValidator.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/validators/MetadataValidator.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/validators/PrivateKeyValidator.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/validators/Validator.java
+A	app/src/main/java/org/consenlabs/tokencore/wallet/validators/WIFValidator.java
+A	app/src/test/java/org/consenlabs/tokencore/ExampleUnitTest.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/crypto/AESTest.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/crypto/CryptoTest.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/crypto/HashTest.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/crypto/MultihashTest.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/crypto/PBKDFTest.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/crypto/ScryptTest.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/rlp/RLPTestCase.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/rlp/RlpEncoderTest.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/utils/ByteUtilTest.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/utils/MnemonicUtilTest.java
+A	app/src/test/java/org/consenlabs/tokencore/foundation/utils/NumericUtilTest.java
+A	app/src/test/java/org/consenlabs/tokencore/testutils/LocalFileStorage.java
+A	app/src/test/java/org/consenlabs/tokencore/testutils/ResourcesManager.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/EOSWalletTest.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/IdentityTest.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/SampleKey.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/SegWitWalletTest.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/StorageTest.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/TokenCoreTour.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/WalletManagerTest.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/WalletSupport.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/address/AddressCreatorTest.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/keystore/KeystoreTest.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/transaction/BitcoinTransactionTest.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/transaction/EthereumSignTest.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/transaction/EthereumTransactionTest.java
+A	app/src/test/java/org/consenlabs/tokencore/wallet/validators/ValidatorTest.java
+A	app/src/test/resources/EOSSignTestcase.txt
+A	app/src/test/resources/eos_migration_keystore/5776d691-6a29-4111-81b1-9c3b053b9eaf.json
+A	app/src/test/resources/invalid_keystores/address_empty.json
+A	app/src/test/resources/invalid_keystores/address_wrong.json
+A	app/src/test/resources/invalid_keystores/cipher_empty.json
+A	app/src/test/resources/invalid_keystores/cipher_wrong.json
+A	app/src/test/resources/invalid_keystores/cipherparams_empty.json
+A	app/src/test/resources/invalid_keystores/cipherparams_wrong.json
+A	app/src/test/resources/invalid_keystores/ciphertext_empty.json
+A	app/src/test/resources/invalid_keystores/ciphertext_wrong.json
+A	app/src/test/resources/invalid_keystores/kdf_empty.json
+A	app/src/test/resources/invalid_keystores/kdf_wrong.json
+A	app/src/test/resources/invalid_keystores/kdfparams_dklen_empty.json
+A	app/src/test/resources/invalid_keystores/kdfparams_empty.json
+A	app/src/test/resources/invalid_keystores/kdfparams_n_empty.json
+A	app/src/test/resources/invalid_keystores/kdfparams_pbkdf2_c_empty.json
+A	app/src/test/resources/invalid_keystores/kdfparams_pbkdf2_c_wrong.json
+A	app/src/test/resources/invalid_keystores/kdfparams_pbkdf2_salt_empty.json
+A	app/src/test/resources/invalid_keystores/kdfparams_pbkdf2_salt_wrong.json
+A	app/src/test/resources/invalid_keystores/kdfparams_salt_empty.json
+A	app/src/test/resources/invalid_keystores/kdfparams_salt_wrong.json
+A	app/src/test/resources/invalid_keystores/kdfparams_scrypt_p_empty.json
+A	app/src/test/resources/invalid_keystores/kdfparams_scrypt_r_empty.json
+A	app/src/test/resources/invalid_keystores/mac_empty.json
+A	app/src/test/resources/invalid_keystores/mac_wrong.json
+A	app/src/test/resources/keystore/02a55ab6-554a-4e78-bc26-6a7acced7e5e.json
+A	app/src/test/resources/keystore/045861fe-0e9b-4069-92aa-0ac03cad55e0.json
+A	app/src/test/resources/keystore/175169f7-5a35-4df7-93c1-1ff612168e71.json
+A	app/src/test/resources/keystore/3831346d-0b81-405b-89cf-cdb1d010430e.json
+A	app/src/test/resources/keystore/42c275c6-957a-49e8-9eb3-43c21cbf583f.json
+A	app/src/test/resources/keystore/7f5406be-b5ee-4497-948c-877deab8c994.json
+A	app/src/test/resources/keystore/identity.json
+A	app/src/test/resources/rlptest.json
+A	app/src/test/resources/ttTransactionTest.json
+A	app/src/test/resources/ttTransactionTestEip155VitaliksTests.json
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle

@@ -1,0 +1,271 @@
+ecbf6de;Merge branch 'virusman-pr-purchase-data'
+e06c641;Merge branch 'pr-purchase-data' of https://github.com/virusman/Reactive-Billing into virusman-pr-purchase-data
+c8b9127;Merge branch 'rharter-master'
+c9af0be;Merge branch 'master' of git://github.com/rharter/Reactive-Billing into rharter-master
+aff0cf9;Merge branch 'rharter-rh/logging'
+3aa4a5e;Merge branch 'rh/logging' of git://github.com/rharter/Reactive-Billing into rharter-rh/logging
+dc9fa82;Merge pull request #12 from rharter/rh/nullability
+a8ea1ae;Merge pull request #13 from rharter/rh/npe
+6bea8a3;Fixes null pointer exception in billing service.
+M	library/src/main/java/com/github/lukaspili/reactivebilling/BillingService.java
+
+90e34b2;Adds nullability annotations.
+M	library/build.gradle
+M	library/src/main/java/com/github/lukaspili/reactivebilling/BillingService.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBilling.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/BillingServiceObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/ConsumePurchaseObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetBuyIntentObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetPurchasesObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetSkuDetailsObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/IsBillingSupportedObservable.java
+
+1194c14;Restores production group.
+M	gradle.properties
+
+cf4395c;Fixes null pointer exception in billing service.
+M	library/src/main/java/com/github/lukaspili/reactivebilling/BillingService.java
+
+7b0528f;Adds nullability annotations.
+M	library/build.gradle
+M	library/src/main/java/com/github/lukaspili/reactivebilling/BillingService.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBilling.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/BillingServiceObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/ConsumePurchaseObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetBuyIntentObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetPurchasesObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetSkuDetailsObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/IsBillingSupportedObservable.java
+
+bac2c97;Updates logger to be customizable. Updates gradle maven push script to be locally included.
+M	build.gradle
+M	gradle.properties
+A	gradle/gradle-mvn-push.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/src/main/java/com/github/lukaspili/reactivebilling/BillingService.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/Logger.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/PurchaseFlowService.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBilling.java
+D	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBillingLogger.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBillingShadowActivity.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/BaseObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetBuyIntentObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/parser/PurchaseParser.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/parser/SkuDetailsParser.java
+M	sample/build.gradle
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/App.java
+
+823def5;Added purchaseData to PurchaseResponse to enable validation of purchases
+M	library/src/main/java/com/github/lukaspili/reactivebilling/PurchaseFlowService.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/response/PurchaseResponse.java
+
+7645a24;Fix readme typo about gradle dependencies.
+M	README.md
+
+bd3133e;Update readme.
+M	README.md
+
+af28800;Readme typos.
+M	README.md
+
+7e3aece;Update changelog.
+M	CHANGELOG.md
+
+2dc360e;Add changelog.
+A	CHANGELOG.md
+M	README.md
+
+49a8345;Prepare for next development iteration.
+M	gradle.properties
+
+fb00d09;Prepare for relase 0.2.
+M	README.md
+M	gradle.properties
+
+cb100b1;Spring cleaning.
+M	library/src/main/AndroidManifest.xml
+D	library/src/main/res/values/strings.xml
+D	library/src/test/java/com/github/lukaspili/reactivebilling/ExampleUnitTest.java
+
+f5e93ca;Small refactoring of the purchase flow.
+M	README.md
+M	library/src/main/java/com/github/lukaspili/reactivebilling/BillingService.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/PurchaseFlowService.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBilling.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBillingShadowActivity.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetBuyIntentObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetPurchasesObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetSkuDetailsObservable.java
+D	library/src/main/java/com/github/lukaspili/reactivebilling/response/DidBuy.java
+R071	library/src/main/java/com/github/lukaspili/reactivebilling/response/GetBuyIntent.java	library/src/main/java/com/github/lukaspili/reactivebilling/response/GetBuyIntentResponse.java
+R067	library/src/main/java/com/github/lukaspili/reactivebilling/response/GetPurchases.java	library/src/main/java/com/github/lukaspili/reactivebilling/response/GetPurchasesResponse.java
+D	library/src/main/java/com/github/lukaspili/reactivebilling/response/GetSkuDetails.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/response/GetSkuDetailsResponse.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/response/PurchaseResponse.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/Utils.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/inventory/InventoryFragment.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/shop/ShopFragment.java
+
+3ca6151;Update readme again and again.
+M	README.md
+
+1df0a8f;Fix deadlock when observable was called on main thread.
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/BaseObservable.java
+
+c7d4a19;Add license file.
+A	LICENSE
+M	README.md
+
+c16190e;Hate the typos.
+M	README.md
+
+0cf0c96;Readme typos again.
+M	README.md
+
+6a4c6e6;Fix readme typos.
+M	README.md
+
+4d88021;Update readme.
+M	README.md
+
+b98bca2;Prepare for next development iteration.
+M	gradle.properties
+
+2a40229;Release 0.1 version.
+M	gradle.properties
+
+a06a4fe;Update readme.
+M	README.md
+
+a0aa21d;Fix readme typos.
+M	README.md
+
+3206b67;Update readme.
+M	README.md
+
+bc5a669;Add maven publish.
+M	gradle.properties
+M	library/build.gradle
+A	library/gradle.properties
+
+5e74910;Add fabric and bump sample to 1.1.
+M	.gitignore
+M	sample/build.gradle
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/App.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/inventory/InventoryFragment.java
+
+c5f2cfa;Improve sample app.
+D	library/src/main/java/com/github/lukaspili/reactivebilling/Constants.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/PurchaseFlowService.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/response/DidBuy.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/MainActivity.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/TabsAdapter.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/inventory/InventoryFragment.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/shop/ShopFragment.java
+A	sample/src/main/res/layout/fragment.xml
+D	sample/src/main/res/layout/fragment_shop.xml
+
+3a7edbb;Clean code preparing for first release.
+M	library/src/main/java/com/github/lukaspili/reactivebilling/BillingService.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/Constants.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/PurchaseFlowService.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBilling.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBillingLogger.java
+D	library/src/main/java/com/github/lukaspili/reactivebilling/SkuDetails.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/BaseObservable.java
+M	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/App.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/MainActivity.java
+R090	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/AppPagerAdapter.java	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/TabsAdapter.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/inventory/InventoryFragment.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/shop/ShopFragment.java
+D	sample/src/main/res/menu/fragment_toolbar_menu.xml
+
+7226e5f;Add consuming purchases and more samples.
+M	library/src/main/java/com/github/lukaspili/reactivebilling/BillingService.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBilling.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/BaseObservable.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/observable/ConsumePurchaseObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/observable/IsBillingSupportedObservable.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/parser/PurchaseParser.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/response/GetPurchases.java
+D	library/src/main/java/com/github/lukaspili/reactivebilling/response/IsBillingSupported.java
+D	library/src/main/java/com/github/lukaspili/reactivebilling/response/MakePurchase.java
+M	library/src/main/java/com/github/lukaspili/reactivebilling/response/Response.java
+A	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/Utils.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/inventory/InventoryAdapter.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/inventory/InventoryFragment.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/inventory/InventoryRowView.java
+M	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/shop/ShopFragment.java
+A	sample/src/main/res/layout/row_inventory.xml
+
+a189f72;Add readme.
+A	README.md
+
+9be03a2;Initial commit.
+A	.gitignore
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	library/.gitignore
+A	library/build.gradle
+A	library/proguard-rules.pro
+A	library/src/androidTest/java/com/github/lukaspili/reactivebilling/ApplicationTest.java
+A	library/src/main/AndroidManifest.xml
+A	library/src/main/aidl/com/android/vending/billing/IInAppBillingService.aidl
+A	library/src/main/java/com/github/lukaspili/reactivebilling/BillingService.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/Constants.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/PurchaseFlowService.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBilling.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBillingLogger.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/ReactiveBillingShadowActivity.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/SkuDetails.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/model/Purchase.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/model/PurchaseState.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/model/PurchaseType.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/model/SkuDetails.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/observable/BaseObservable.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/observable/BillingServiceObservable.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetBuyIntentObservable.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetPurchasesObservable.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/observable/GetSkuDetailsObservable.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/observable/IsBillingSupportedObservable.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/parser/PurchaseParser.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/parser/PurchaseStateParser.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/parser/PurchaseTypeParser.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/parser/SkuDetailsParser.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/response/DidBuy.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/response/GetBuyIntent.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/response/GetPurchases.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/response/GetSkuDetails.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/response/IsBillingSupported.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/response/MakePurchase.java
+A	library/src/main/java/com/github/lukaspili/reactivebilling/response/Response.java
+A	library/src/main/res/values/strings.xml
+A	library/src/test/java/com/github/lukaspili/reactivebilling/ExampleUnitTest.java
+A	sample/.gitignore
+A	sample/build.gradle
+A	sample/proguard-rules.pro
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/AppPagerAdapter.java
+A	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/MainActivity.java
+A	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/inventory/InventoryAdapter.java
+A	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/inventory/InventoryFragment.java
+A	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/inventory/InventoryRowView.java
+A	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/shop/ShopAdapter.java
+A	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/shop/ShopFragment.java
+A	sample/src/main/java/com/github/lukaspili/reactivebilling/sample/shop/ShopRowView.java
+A	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/layout/fragment_shop.xml
+A	sample/src/main/res/layout/row_shop.xml
+A	sample/src/main/res/menu/fragment_toolbar_menu.xml
+A	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	sample/src/main/res/values/colors.xml
+A	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/values/styles.xml
+A	settings.gradle

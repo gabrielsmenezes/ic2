@@ -1,0 +1,398 @@
+073418d;Replacement of "compile" with "implementation" (#47)
+M	README.md
+
+eb60324;Update build tools
+M	material-sheet-fab/build.gradle
+M	sample/build.gradle
+
+e036ea8;Update README.md
+M	README.md
+
+492b84d;Update README.md
+M	README.md
+
+b74f255;v1.2.1
+M	CHANGELOG.md
+M	README.md
+M	RELEASE_PROCEDURE.md
+M	material-sheet-fab/build.gradle
+
+19a5a75;Update MaterialSheetFab.java
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+
+79a5d5a;Fix FAB's global layout listener causing memory leaks. Closes #21 and #22.
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+
+76cc9e7;Add Codacy badge and fix issues found by Codacy
+M	README.md
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/OverlayAnimation.java
+
+ba660d0;Update build tools
+M	material-sheet-fab/build.gradle
+M	sample/build.gradle
+
+4cb0829;v1.0.3 sample app
+A	sample-apks/sample-release-1-0-3.apk
+M	sample/build.gradle
+
+bb1c773;Fix ResourceNotFoundException when setting image resource to 0. Closes #17
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/adapters/NotesAdapter.java
+
+43e4254;Add list of apps using MaterialSheetFab
+M	README.md
+
+8496ada;Update ordering of setup instructions
+M	README.md
+
+fd31b1c;Update CHANGELOG.md
+M	CHANGELOG.md
+
+c9c5096;Update CHANGELOG.md
+M	CHANGELOG.md
+
+5d44e70;v1.2
+M	CHANGELOG.md
+M	README.md
+M	material-sheet-fab/build.gradle
+
+f73cc45;Fix sheet incorrectly hiding after opening if the user repeatedly pressed the back button or outside of the sheet
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+
+94eb93a;Allow FAB to be placed anywhere on the screen and the sheet will open in the correct direction on the screen. Closes #15 and #16
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java
+
+52879c2;Make margin styles easier to test
+M	sample/src/main/res/values/styles.xml
+
+4d5f9a6;Refactor sheet animation coordinate helpers to only return absolute screen coordinates instead of coordinates relative to some view
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java
+
+04cecc7;Add sheet reveal direction state to sheet animation
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java
+
+7f7690e;Allow the FAB arc animation side to be specified
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java
+
+30c5497;Update CHANGELOG.md
+M	CHANGELOG.md
+
+0f02d90;Update README.md
+M	README.md
+
+d151f5c;v1.1
+M	CHANGELOG.md
+M	README.md
+M	material-sheet-fab/build.gradle
+
+dafec4d;#12 Calling hideSheet() while the sheet is opening will wait until the sheet is shown and then hide it
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+
+85c9f54;Update README.md
+M	README.md
+
+3286aea;#13 Add callbacks for when the sheet's show and hide animations end
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFabEventListener.java
+
+624f617;v1.0.5
+M	CHANGELOG.md
+M	README.md
+M	material-sheet-fab/build.gradle
+
+349ec13;#8 Use CardView.setCardBackgroundColor() to set the background color for CardViews
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java
+
+2c35c62;Supress lint warnings
+M	sample/src/main/res/values/styles.xml
+
+7e7ece9;Update target SDK version and support libraries to 23 (Android 6.0)
+M	material-sheet-fab/build.gradle
+M	sample/build.gradle
+
+ade063c;Update build tools version
+M	material-sheet-fab/build.gradle
+M	sample/build.gradle
+
+f8b972f;v1.0.2 sample app
+M	RELEASE_PROCEDURE.md
+A	sample-apks/sample-release-1-0-2.apk
+M	sample/build.gradle
+
+840c834;v1.0.4
+M	CHANGELOG.md
+M	README.md
+M	material-sheet-fab/build.gradle
+
+afcba75;#6 Fix FAB shifting by 1 pixel when opening and closing sheet on certain devices.
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+
+2bebe8b;Update readme
+M	README.md
+
+0fa43d9;v1.0.3
+M	CHANGELOG.md
+M	README.md
+M	RELEASE_PROCEDURE.md
+M	material-sheet-fab/build.gradle
+
+063d1e3;#5 Fix FAB's anchor from being initialized incorrectly if the FAB's pivots were missing
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java
+
+44b0d6d;Update build tools
+M	material-sheet-fab/build.gradle
+M	sample/build.gradle
+
+eb7beb9;v1.0.1 sample app
+A	sample-apks/sample-release-1-0-1.apk
+M	sample/build.gradle
+
+bcb2044;v1.0.2
+M	CHANGELOG.md
+M	README.md
+M	material-sheet-fab/build.gradle
+
+2c60931;#2 Fix crashes on certain devices with Android < 5.0 caused by calling setBackgroundColor() on android.support.v7.widget.CardView
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java
+
+c77bb82;Update README.md
+M	README.md
+
+74b295f;Update README.md
+M	README.md
+
+0524e5f;Update README.md
+M	README.md
+
+7551223;Update README.md
+M	README.md
+
+b362e9d;Add release procedure.
+A	RELEASE_PROCEDURE.md
+
+084ff33;Add sample APK
+A	sample-apks/sample-release-1-0.apk
+
+d224952;Add new icon for sample app
+D	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+D	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+M	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+9afb262;Update README.md
+M	README.md
+
+25b02ea;v1.0.1 release
+M	CHANGELOG.md
+M	material-sheet-fab/build.gradle
+
+7b44908;Fix sheet not lining up with FAB in sample app
+M	sample/src/main/res/values-v21/dimens.xml
+M	sample/src/main/res/values/dimens.xml
+M	sample/src/main/res/values/styles.xml
+
+3ec8b54;Fix sheet not lining up with FAB due to padding/margin issues
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+M	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java
+
+b9704c1;Update readme
+M	README.md
+A	art/sample1.png
+A	art/sample2.png
+
+d985bfb;Add random note generation
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/models/Note.java
+A	sample/src/main/res/drawable-xhdpi/ic_event_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_place_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_event_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_place_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_event_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_place_white_24dp.png
+
+09e3053;Add notes styling
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/adapters/NotesAdapter.java
+M	sample/src/main/res/layout/list_item_note.xml
+M	sample/src/main/res/values/colors.xml
+M	sample/src/main/res/values/dimens.xml
+M	sample/src/main/res/values/styles.xml
+
+6362379;Add notes list fragments and adapter
+A	sample/src/main/java/com/gordonwong/materialsheetfab/sample/adapters/NotesAdapter.java
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/fragments/AllFragment.java
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/fragments/FavoritesFragment.java
+A	sample/src/main/java/com/gordonwong/materialsheetfab/sample/fragments/NotesListFragment.java
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/fragments/SharedFragment.java
+A	sample/src/main/java/com/gordonwong/materialsheetfab/sample/models/Note.java
+M	sample/src/main/res/layout/fragment_favorites.xml
+A	sample/src/main/res/layout/list_item_note.xml
+M	sample/src/main/res/values/dimens.xml
+M	sample/src/main/res/values/styles.xml
+
+55298b1;Add RecyclerView lists
+M	sample/build.gradle
+M	sample/src/main/res/layout/fragment_all.xml
+M	sample/src/main/res/layout/fragment_favorites.xml
+M	sample/src/main/res/layout/fragment_shared.xml
+M	sample/src/main/res/values/dimens.xml
+M	sample/src/main/res/values/styles.xml
+
+7332409;Hide toolbar on scroll
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/values/styles.xml
+
+7a8f9ae;Move snackbar from fragment layout to activity layout
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/layout/fragment_shared.xml
+
+fb2a14f;Keep all tabs loaded
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/MainActivity.java
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/adapters/MainPagerAdapter.java
+
+98311e2;Refactoring
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/MainActivity.java
+R093	sample/src/main/java/com/gordonwong/materialsheetfab/sample/MainPagerAdapter.java	sample/src/main/java/com/gordonwong/materialsheetfab/sample/adapters/MainPagerAdapter.java
+
+41cb16c;Update FAB based on the selected tab
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/Fab.java
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/MainActivity.java
+
+fe5ccd4;Add snackbar to "Shared" tab
+M	sample/src/main/res/layout/fragment_shared.xml
+M	sample/src/main/res/values/colors.xml
+M	sample/src/main/res/values/dimens.xml
+M	sample/src/main/res/values/strings.xml
+M	sample/src/main/res/values/styles.xml
+
+a826d6b;Fix issues with TabLayout (tab indicator stuttering, incorrect view pager item being selected when pressing a tab)
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/MainActivity.java
+
+6c7faf6;Update android support libraries
+M	sample/build.gradle
+
+89505ed;Add navigation drawer
+M	sample/src/main/java/com/gordonwong/materialsheetfab/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/layout/layout_drawer_header.xml
+M	sample/src/main/res/values/colors.xml
+M	sample/src/main/res/values/dimens.xml
+M	sample/src/main/res/values/strings.xml
+
+137b645;Add main activity with tabs and FAB
+M	sample/build.gradle
+M	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/com/gordonwong/materialsheetfab/sample/Fab.java
+A	sample/src/main/java/com/gordonwong/materialsheetfab/sample/MainActivity.java
+A	sample/src/main/java/com/gordonwong/materialsheetfab/sample/MainPagerAdapter.java
+A	sample/src/main/java/com/gordonwong/materialsheetfab/sample/fragments/AllFragment.java
+A	sample/src/main/java/com/gordonwong/materialsheetfab/sample/fragments/FavoritesFragment.java
+A	sample/src/main/java/com/gordonwong/materialsheetfab/sample/fragments/SharedFragment.java
+A	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/layout/fragment_all.xml
+A	sample/src/main/res/layout/fragment_favorites.xml
+A	sample/src/main/res/layout/fragment_shared.xml
+A	sample/src/main/res/menu/menu_main.xml
+A	sample/src/main/res/values-v21/dimens.xml
+A	sample/src/main/res/values-v21/styles.xml
+A	sample/src/main/res/values/colors.xml
+A	sample/src/main/res/values/dimens.xml
+M	sample/src/main/res/values/strings.xml
+M	sample/src/main/res/values/styles.xml
+
+6b9bb22;Add icons
+A	sample/src/main/res/drawable-xhdpi/ic_access_alarms_grey600_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_add_grey600_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_create_grey600_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_mic_grey600_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_photo_camera_grey600_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_search_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_access_alarms_grey600_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_add_grey600_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_create_grey600_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_mic_grey600_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_photo_camera_grey600_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_search_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_access_alarms_grey600_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_add_grey600_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_create_grey600_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_mic_grey600_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_photo_camera_grey600_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_search_white_24dp.png
+
+7dc7101;Update readme
+M	README.md
+A	art/bgmonitor.gif
+
+42a82ba;Refactor project structure
+R100	lib/bintray.gradle	material-sheet-fab/bintray.gradle
+R080	lib/build.gradle	material-sheet-fab/build.gradle
+R100	lib/maven.gradle	material-sheet-fab/maven.gradle
+R100	lib/src/main/AndroidManifest.xml	material-sheet-fab/src/main/AndroidManifest.xml
+R100	lib/src/main/java/com/gordonwong/materialsheetfab/AnimatedFab.java	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/AnimatedFab.java
+R100	lib/src/main/java/com/gordonwong/materialsheetfab/DimOverlayFrameLayout.java	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/DimOverlayFrameLayout.java
+R100	lib/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+R100	lib/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFabEventListener.java	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFabEventListener.java
+R100	lib/src/main/java/com/gordonwong/materialsheetfab/animations/AnimationListener.java	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/AnimationListener.java
+R100	lib/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java
+R100	lib/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java
+R100	lib/src/main/java/com/gordonwong/materialsheetfab/animations/OverlayAnimation.java	material-sheet-fab/src/main/java/com/gordonwong/materialsheetfab/animations/OverlayAnimation.java
+A	material-sheet-fab/src/main/java/io/codetail/animation/RevealAnimator.java
+A	material-sheet-fab/src/main/java/io/codetail/animation/SupportAnimator.java
+A	material-sheet-fab/src/main/java/io/codetail/animation/SupportAnimatorLollipop.java
+A	material-sheet-fab/src/main/java/io/codetail/animation/SupportAnimatorPreL.java
+A	material-sheet-fab/src/main/java/io/codetail/animation/ViewAnimationUtils.java
+A	material-sheet-fab/src/main/java/io/codetail/widget/RevealFrameLayout.java
+A	material-sheet-fab/src/main/java/io/codetail/widget/RevealLinearLayout.java
+R100	lib/src/main/res/layout/dim_overlay.xml	material-sheet-fab/src/main/res/layout/dim_overlay.xml
+R100	lib/src/main/res/values-v21/refs.xml	material-sheet-fab/src/main/res/values-v21/refs.xml
+R100	lib/src/main/res/values/colors.xml	material-sheet-fab/src/main/res/values/colors.xml
+R100	lib/src/main/res/values/refs.xml	material-sheet-fab/src/main/res/values/refs.xml
+M	settings.gradle
+
+9e0c8a1;Initial project
+A	.gitattributes
+M	.gitignore
+A	CHANGELOG.md
+M	LICENSE
+M	README.md
+A	build.gradle
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	lib/bintray.gradle
+A	lib/build.gradle
+A	lib/maven.gradle
+A	lib/src/main/AndroidManifest.xml
+A	lib/src/main/java/com/gordonwong/materialsheetfab/AnimatedFab.java
+A	lib/src/main/java/com/gordonwong/materialsheetfab/DimOverlayFrameLayout.java
+A	lib/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFab.java
+A	lib/src/main/java/com/gordonwong/materialsheetfab/MaterialSheetFabEventListener.java
+A	lib/src/main/java/com/gordonwong/materialsheetfab/animations/AnimationListener.java
+A	lib/src/main/java/com/gordonwong/materialsheetfab/animations/FabAnimation.java
+A	lib/src/main/java/com/gordonwong/materialsheetfab/animations/MaterialSheetAnimation.java
+A	lib/src/main/java/com/gordonwong/materialsheetfab/animations/OverlayAnimation.java
+A	lib/src/main/res/layout/dim_overlay.xml
+A	lib/src/main/res/values-v21/refs.xml
+A	lib/src/main/res/values/colors.xml
+A	lib/src/main/res/values/refs.xml
+A	sample/build.gradle
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/values/styles.xml
+A	settings.gradle
+
+9218a17;Initial commit
+A	.gitignore
+A	LICENSE
+A	README.md

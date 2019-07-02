@@ -1,0 +1,699 @@
+7774d25;通过field来进行解耦
+M	app/src/main/java/kale/db/UserDetailActivity.java
+M	app/src/main/res/layout/user_detail_activity.xml
+
+b5f41c4;支持多个页面传递ObservableCharSequence
+M	app/src/main/java/kale/db/GameDetailActivity.java
+M	app/src/main/java/kale/db/GameItem.java
+M	app/src/main/java/kale/db/GameListActivity.java
+M	app/src/main/java/kale/db/GameListPresenter.java
+M	app/src/main/java/kale/db/UserDetailActivity.java
+M	app/src/main/java/kale/db/base/BaseActivity.java
+M	app/src/main/java/kale/db/base/BaseAdapterItem.java
+M	app/src/main/java/kale/db/network/NetworkService.java
+D	app/src/main/java/kale/viewmodel/HeaderLayoutVm.java
+D	app/src/main/java/kale/viewmodel/UserDetailActivityVm.java
+D	app/src/main/java/kale/viewmodel/ViewModelWrapper.java
+D	app/src/main/java/vm/CommonViewModel.java
+M	app/src/main/java/vm/EventViewModel.java
+D	app/src/main/java/vm/GameItemVm.java
+D	app/src/main/java/vm/OtherViewModel.java
+R100	app/src/main/res/drawable-xhdpi/assassin_s_creed.jpg	app/src/main/res/drawable-xhdpi/assassins_creed.jpg
+R100	app/src/main/res/drawable-xhdpi/assassin_s_creed_icon.png	app/src/main/res/drawable-xhdpi/assassins_creed_icon.png
+M	app/src/main/res/layout/game_detail_activity.xml
+M	app/src/main/res/layout/game_item.xml
+M	app/src/main/res/layout/game_list_activity.xml
+M	app/src/main/res/layout/header_layout.xml
+M	app/src/main/res/layout/user_detail_activity.xml
+M	dbindinglib/src/main/java/kale/dbinding/BaseViewModel.java
+M	dbindinglib/src/main/java/kale/dbinding/DBinding.java
+D	dbindinglib/src/main/java/kale/dbinding/ObservableBitmap.java
+D	dbindinglib/src/main/java/kale/dbinding/ObservableString.java
+R072	dbindinglib/src/main/java/kale/dbinding/util/SerializableViewModel.java	dbindinglib/src/main/java/kale/dbinding/SerializableViewModel.java
+D	dbindinglib/src/main/java/kale/dbinding/ViewModelLayout.java
+A	dbindinglib/src/main/java/kale/dbinding/ViewModelStorage.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/EditTextAttrAdapter.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/ImageViewAttrAdapter.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/TextViewAttrAdapter.java
+R099	dbindinglib/src/main/java/kale/dbinding/util/ObservableArrayList.java	dbindinglib/src/main/java/kale/dbinding/data/ObservableArrayList.java
+A	dbindinglib/src/main/java/kale/dbinding/data/ObservableBitmap.java
+A	dbindinglib/src/main/java/kale/dbinding/data/ObservableCharSequence.java
+D	dbindinglib/src/main/java/kale/dbinding/util/ViewModelStorage.java
+A	dbindinglib/src/test/java/kale/dbinding/ViewModelStorageTest.java
+
+6666503;尝试使用field的方式来做解耦
+M	app/build.gradle
+M	app/src/main/java/kale/db/GameDetailActivity.java
+M	app/src/main/java/kale/db/GameItem.java
+D	app/src/main/java/kale/viewmodel/GameDetailActivityVm.java
+D	app/src/main/java/kale/viewmodel/GameItemVm.java
+M	app/src/main/java/vm/CommonViewModel.java
+A	app/src/main/java/vm/GameItemVm.java
+M	app/src/main/res/layout/game_detail_activity.xml
+M	app/src/main/res/layout/game_item.xml
+A	dbindinglib/src/main/java/kale/dbinding/ObservableBitmap.java
+A	dbindinglib/src/main/java/kale/dbinding/ObservableString.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/ImageViewAttrAdapter.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/TextViewAttrAdapter.java
+
+4bff735;重构了代码结构，建立了commonViewModel
+M	Plugin/src/kale/dbinding/plugin/ViewModelGenerator.java
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/kale/db/GameDetailActivity.java
+M	app/src/main/java/kale/db/GameItem.java
+A	app/src/main/java/kale/db/GameListActivity.java
+R074	app/src/main/java/kale/db/GamePresenter.java	app/src/main/java/kale/db/GameListPresenter.java
+D	app/src/main/java/kale/db/MainActivity.java
+M	app/src/main/java/kale/db/UserDetailActivity.java
+M	app/src/main/java/kale/db/base/BaseActivity.java
+A	app/src/main/java/kale/db/base/BaseAdapterItem.java
+A	app/src/main/java/kale/viewmodel/GameDetailActivityVm.java
+A	app/src/main/java/kale/viewmodel/GameItemVm.java
+A	app/src/main/java/kale/viewmodel/HeaderLayoutVm.java
+A	app/src/main/java/kale/viewmodel/UserDetailActivityVm.java
+A	app/src/main/java/kale/viewmodel/ViewModelWrapper.java
+R054	app/src/main/java/vm/GameViewModel.java	app/src/main/java/vm/CommonViewModel.java
+D	app/src/main/java/vm/UserViewModel.java
+M	app/src/main/res/layout/game_detail_activity.xml
+M	app/src/main/res/layout/game_item.xml
+R088	app/src/main/res/layout/activity_main.xml	app/src/main/res/layout/game_list_activity.xml
+M	app/src/main/res/layout/header_layout.xml
+M	app/src/main/res/layout/user_detail_activity.xml
+M	build.gradle
+M	dbindinglib/build.gradle
+A	dbindinglib/src/main/java/kale/dbinding/ViewModelLayout.java
+
+625e877;增加了双向绑定的支持
+M	app/build.gradle
+M	app/src/main/java/kale/db/MainActivity.java
+M	app/src/main/java/vm/EventViewModel.java
+M	app/src/main/java/vm/GameViewModel.java
+M	app/src/main/java/vm/OtherViewModel.java
+M	app/src/main/java/vm/UserViewModel.java
+M	app/src/main/res/layout/user_detail_activity.xml
+R100	simple/.gitignore	apt/.gitignore
+A	apt/build.gradle
+A	apt/src/main/java/kale/dbinding/VmGenerateProcessor.java
+A	apt/src/main/java/kale/dbinding/VmGenerator.java
+A	apt/src/main/resources/META-INF/services/javax.annotation.processing.Processor
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	settings.gradle
+D	simple/build.gradle
+D	simple/proguard-rules.pro
+D	simple/src/androidTest/java/kale/db/simple/ExampleInstrumentedTest.java
+D	simple/src/main/AndroidManifest.xml
+D	simple/src/main/java/kale/db/simple/MainActivity.java
+D	simple/src/main/java/kale/db/simple/PicDetailActivity.java
+D	simple/src/main/java/kale/db/simple/PicItem.java
+D	simple/src/main/java/kale/db/simple/base/BaseActivity.java
+D	simple/src/main/java/kale/db/simple/databinding/SimpleDraweeViewAdapter.java
+D	simple/src/main/java/kale/db/simple/model/Result.java
+D	simple/src/main/java/kale/db/simple/model/Root.java
+D	simple/src/main/java/kale/db/simple/service/ApiService.java
+D	simple/src/main/java/kale/db/simple/util/OnRcvScrollListener.java
+D	simple/src/main/java/vm/EventViewModel.java
+D	simple/src/main/java/vm/PicVm.java
+D	simple/src/main/java/vm/ViewEvent.java
+D	simple/src/main/res/layout/activity_main.xml
+D	simple/src/main/res/layout/main_loading_footer.xml
+D	simple/src/main/res/layout/pic_detail_activity.xml
+D	simple/src/main/res/layout/pic_item.xml
+D	simple/src/main/res/mipmap-hdpi/ic_launcher.png
+D	simple/src/main/res/mipmap-mdpi/ic_launcher.png
+D	simple/src/main/res/mipmap-xhdpi/ic_launcher.png
+D	simple/src/main/res/mipmap-xxhdpi/ic_launcher.png
+D	simple/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+D	simple/src/main/res/values-w820dp/dimens.xml
+D	simple/src/main/res/values/colors.xml
+D	simple/src/main/res/values/dbinding_config.xml
+D	simple/src/main/res/values/dimens.xml
+D	simple/src/main/res/values/strings.xml
+D	simple/src/main/res/values/styles.xml
+D	simple/src/test/java/kale/db/simple/ExampleUnitTest.java
+
+a269f65;增加了一个异常的防御
+M	Plugin/DBindPlugin.zip
+M	plugin/lib/pluginlib.jar
+M	pluginlib/src/main/java/kale/dbinding/parser/ViewModelGenerator.java
+
+12ddc2f;增加了较为完整的项目
+M	dbindinglib/src/main/java/kale/dbinding/util/ViewModelStorage.java
+M	settings.gradle
+A	simple/.gitignore
+A	simple/build.gradle
+A	simple/proguard-rules.pro
+A	simple/src/androidTest/java/kale/db/simple/ExampleInstrumentedTest.java
+A	simple/src/main/AndroidManifest.xml
+A	simple/src/main/java/kale/db/simple/MainActivity.java
+A	simple/src/main/java/kale/db/simple/PicDetailActivity.java
+A	simple/src/main/java/kale/db/simple/PicItem.java
+A	simple/src/main/java/kale/db/simple/base/BaseActivity.java
+A	simple/src/main/java/kale/db/simple/databinding/SimpleDraweeViewAdapter.java
+A	simple/src/main/java/kale/db/simple/model/Result.java
+A	simple/src/main/java/kale/db/simple/model/Root.java
+A	simple/src/main/java/kale/db/simple/service/ApiService.java
+A	simple/src/main/java/kale/db/simple/util/OnRcvScrollListener.java
+A	simple/src/main/java/vm/EventViewModel.java
+A	simple/src/main/java/vm/PicVm.java
+A	simple/src/main/java/vm/ViewEvent.java
+A	simple/src/main/res/layout/activity_main.xml
+A	simple/src/main/res/layout/main_loading_footer.xml
+A	simple/src/main/res/layout/pic_detail_activity.xml
+A	simple/src/main/res/layout/pic_item.xml
+A	simple/src/main/res/mipmap-hdpi/ic_launcher.png
+A	simple/src/main/res/mipmap-mdpi/ic_launcher.png
+A	simple/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	simple/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	simple/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	simple/src/main/res/values-w820dp/dimens.xml
+A	simple/src/main/res/values/colors.xml
+A	simple/src/main/res/values/dbinding_config.xml
+A	simple/src/main/res/values/dimens.xml
+A	simple/src/main/res/values/strings.xml
+A	simple/src/main/res/values/styles.xml
+A	simple/src/test/java/kale/db/simple/ExampleUnitTest.java
+
+3447bb6;升级了依赖库，增加了测试用例
+M	Plugin/DBindPlugin.zip
+M	app/build.gradle
+M	app/src/main/java/kale/db/GameDetailActivity.java
+M	app/src/main/java/kale/db/GameItem.java
+R073	app/src/main/java/kale/db/MainPresenter.java	app/src/main/java/kale/db/GamePresenter.java
+M	app/src/main/java/kale/db/MainActivity.java
+M	app/src/main/java/kale/db/UserDetailActivity.java
+A	app/src/main/java/kale/db/base/BaseActivity.java
+M	app/src/main/java/vm/EventViewModel.java
+M	app/src/main/java/vm/GameViewModel.java
+M	app/src/main/java/vm/OtherViewModel.java
+M	app/src/main/java/vm/UserViewModel.java
+M	app/src/main/res/layout/activity_main.xml
+R100	app/src/main/res/layout/game_detail.xml	app/src/main/res/layout/game_detail_activity.xml
+M	app/src/main/res/layout/game_item.xml
+M	app/src/main/res/layout/header_layout.xml
+R100	app/src/main/res/layout/user_detail.xml	app/src/main/res/layout/user_detail_activity.xml
+M	build.gradle
+M	dbindinglib/build.gradle
+M	dbindinglib/src/main/java/kale/dbinding/adapters/RecyclerViewAttrAdapter.java
+D	dbindinglib/src/main/java/kale/dbinding/annotation/Visibility.java
+D	dbindinglib/src/main/java/kale/dbinding/test/TypeTest.java
+M	gradle.properties
+M	plugin/lib/pluginlib.jar
+M	pluginlib/build.gradle
+M	pluginlib/src/main/java/kale/dbinding/CodeTemple.java
+M	pluginlib/src/main/java/kale/dbinding/model/SimpleClass.java
+M	pluginlib/src/main/java/kale/dbinding/parser/ViewModelGenerator.java
+M	pluginlib/src/main/java/kale/dbinding/util/LetterUtil.java
+A	pluginlib/src/test/java/kale/dbinding/util/LetterUtilTest.java
+
+f606d68;添加了在线预览
+M	README.md
+M	app/src/main/java/kale/db/GameDetailActivity.java
+M	app/src/main/java/kale/db/GameItem.java
+M	app/src/main/res/values/colors.xml
+D	pic/genVm.gif
+A	pic/gen_vm.gif
+A	pic/preview.png
+
+7b2d8a4;增加了测试用例
+M	dbindinglib/build.gradle
+A	dbindinglib/src/test/java/kale/test/plugin/PluginTypeTest.java
+
+66a1cdd;更新了readme
+M	Plugin/src/kale/dbinding/plugin/ViewModelGenerator.java
+M	README.md
+A	plugin/README.md
+M	pluginlib/src/main/java/kale/dbinding/Test.java
+M	pluginlib/src/main/java/kale/dbinding/model/SimpleClass.java
+M	pluginlib/src/main/java/kale/dbinding/util/FileHelper.java
+
+4a5219d;修复了插件无法加载的问题
+M	Plugin/DBindPlugin.zip
+M	Plugin/src/kale/dbinding/plugin/ViewModelGenerator.java
+M	README.md
+M	build.gradle
+M	dbindinglib/build.gradle
+M	dbindinglib/src/main/java/kale/dbinding/adapters/RecyclerViewAttrAdapter.java
+A	dbindinglib/src/main/res/values/dbinding_config.xml
+M	pic/doc.png
+A	pic/genVm.gif
+A	plugin/lib/pluginlib.jar
+
+7dcc171;更新了readme
+M	README.md
+M	build.gradle
+M	dbindinglib/proguard-rules.pro
+M	dbindinglib/src/main/java/kale/dbinding/test/TypeTest.java
+
+1801693;完成1.0.0版本
+M	Plugin/DBindPlugin.zip
+M	Plugin/src/kale/dbinding/plugin/ViewModelGenerator.java
+M	README.md
+M	app/build.gradle
+M	build.gradle
+M	dbindinglib/build.gradle
+R095	dbindingtest/src/main/java/kale/dbindingtest/TypeTest.java	dbindinglib/src/main/java/kale/dbinding/test/TypeTest.java
+M	dbindinglib/src/main/res/values/attr.xml
+D	dbindingtest/.gitignore
+D	dbindingtest/build.gradle
+D	dbindingtest/proguard-rules.pro
+D	dbindingtest/src/main/AndroidManifest.xml
+D	"dbindingtest/src/main/java/kale/dbindingtest/________\344\270\213\351\235\242\346\230\257\350\207\252\345\256\232\344\271\211\347\232\204\351\200\202\351\205\215\345\231\250________.java"
+M	settings.gradle
+
+bc5b9ef;增加了对intent传值的支持，提供了可被序列化的vm类，event的vm
+M	README.md
+M	app/build.gradle
+M	app/src/main/java/kale/db/GameDetailActivity.java
+M	app/src/main/java/kale/db/GameItem.java
+M	app/src/main/java/kale/db/MainActivity.java
+M	app/src/main/java/kale/db/MainPresenter.java
+M	app/src/main/java/kale/db/UserDetailActivity.java
+M	app/src/main/java/vm/EventViewModel.java
+M	app/src/main/java/vm/GameViewModel.java
+M	app/src/main/java/vm/OtherViewModel.java
+M	app/src/main/java/vm/UserViewModel.java
+D	app/src/main/res/drawable/cover_transparent.9.png
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/game_detail.xml
+M	app/src/main/res/layout/game_item.xml
+M	app/src/main/res/layout/header_layout.xml
+M	app/src/main/res/layout/user_detail.xml
+D	app/src/test/java/kale/dbinding/ExampleUnitTest.java
+M	build.gradle
+M	dbindinglib/src/main/java/kale/dbinding/BaseViewModel.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/TextViewAttrAdapter.java
+A	dbindinglib/src/main/java/kale/dbinding/util/SerializableViewModel.java
+R091	dbindinglib/src/main/java/kale/dbinding/ViewModelStorage.java	dbindinglib/src/main/java/kale/dbinding/util/ViewModelStorage.java
+M	pluginlib/src/main/java/kale/dbinding/CodeTemple.java
+M	pluginlib/src/main/java/kale/dbinding/parser/ViewModelGenerator.java
+
+4bb7afa;允许viewmodel代理view的事件
+M	Plugin/DBindPlugin.zip
+M	Plugin/resources/META-INF/plugin.xml
+R077	Plugin/src/kale/dbinding/plugin/ViewDataGenerator.java	Plugin/src/kale/dbinding/plugin/ViewModelGenerator.java
+M	README.md
+M	app/build.gradle
+M	app/src/main/java/kale/db/GameDetailActivity.java
+M	app/src/main/java/kale/db/GameItem.java
+M	app/src/main/java/kale/db/MainPresenter.java
+M	app/src/main/java/vm/GameViewModel.java
+M	app/src/main/res/layout/game_detail.xml
+M	build.gradle
+A	dbindinglib/src/main/java/kale/dbinding/util/ObservableArrayList.java
+M	gradle.properties
+
+9b94320;对项目进行了大范围的整理，增加了对adapter数据源的完美支持
+M	Plugin/resources/META-INF/plugin.xml
+M	Plugin/src/kale/dbinding/plugin/ViewDataGenerator.java
+M	README.md
+M	app/build.gradle
+M	app/src/main/java/kale/db/GameDetailActivity.java
+M	app/src/main/java/kale/db/GameItem.java
+M	app/src/main/java/kale/db/MainActivity.java
+A	app/src/main/java/kale/db/MainPresenter.java
+D	app/src/main/java/kale/db/MainViewModel.java
+M	app/src/main/java/kale/db/UserDetailActivity.java
+A	app/src/main/java/kale/db/network/NetworkService.java
+D	app/src/main/java/viewdata/GoGo.java
+D	app/src/main/java/viewdata/OtherViewData.java
+D	app/src/main/java/viewdata/ignored/IgnoreViewData.java
+A	app/src/main/java/vm/EventViewModel.java
+R089	app/src/main/java/viewdata/GameViewData.java	app/src/main/java/vm/GameViewModel.java
+A	app/src/main/java/vm/OtherViewModel.java
+R052	app/src/main/java/viewdata/UserViewData.java	app/src/main/java/vm/UserViewModel.java
+A	app/src/main/java/vm/ignored/IgnoreViewModel.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/game_detail.xml
+M	app/src/main/res/layout/game_item.xml
+M	app/src/main/res/layout/header_layout.xml
+M	app/src/main/res/layout/user_detail.xml
+M	build.gradle
+M	dbindinglib/build.gradle
+D	dbindinglib/src/main/java/kale/dbinding/BaseViewData.java
+A	dbindinglib/src/main/java/kale/dbinding/BaseViewModel.java
+M	dbindinglib/src/main/java/kale/dbinding/DBinding.java
+R055	dbindinglib/src/main/java/kale/dbinding/ViewDataStorage.java	dbindinglib/src/main/java/kale/dbinding/ViewModelStorage.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/EditTextAttrAdapter.java
+A	dbindinglib/src/main/java/kale/dbinding/adapters/ViewAttrAdapter.java
+D	dbindinglib/src/main/java/kale/dbinding/annotation/InjectViewData.java
+D	dbindinglib/src/main/java/kale/dbinding/util/ActivityLifecycleCallbacksAdapter.java
+M	dbindinglib/src/main/java/kale/dbinding/util/BitmapUtil.java
+M	dbindinglib/src/main/java/kale/dbinding/util/ReflectUtil.java
+D	dbindinglib/src/main/java/kale/dbinding/util/TextWatcherAdapter.java
+M	pluginlib/build.gradle
+M	pluginlib/src/main/java/android/graphics/Bitmap.java
+M	pluginlib/src/main/java/android/support/v4/view/PagerAdapter.java
+M	pluginlib/src/main/java/android/support/v7/widget/RecyclerView.java
+A	pluginlib/src/main/java/android/view/View.java
+M	pluginlib/src/main/java/kale/dbinding/CodeTemple.java
+R079	pluginlib/src/main/java/kale/dbinding/GenViewData.java	pluginlib/src/main/java/kale/dbinding/GenViewModel.java
+M	pluginlib/src/main/java/kale/dbinding/Test.java
+D	pluginlib/src/main/java/kale/dbinding/annotation/Visibility.java
+M	pluginlib/src/main/java/kale/dbinding/model/SimpleClass.java
+M	pluginlib/src/main/java/kale/dbinding/model/SimpleField.java
+M	pluginlib/src/main/java/kale/dbinding/parser/TypeFinder.java
+D	pluginlib/src/main/java/kale/dbinding/parser/ViewDataGenerator.java
+A	pluginlib/src/main/java/kale/dbinding/parser/ViewModelGenerator.java
+M	pluginlib/src/main/java/kale/dbinding/util/FileHelper.java
+M	pluginlib/src/main/java/kale/dbinding/util/LetterUtil.java
+
+4f846d6;更新了readme，美化了文档
+a2ef6e5;添加了readme，补充了详细文档地址
+M	README.md
+M	app/src/main/java/kale/db/GameDetailActivity.java
+M	app/src/main/java/kale/db/GameItem.java
+M	app/src/main/java/kale/db/MainActivity.java
+M	app/src/main/java/kale/db/MainViewModel.java
+M	app/src/main/java/kale/db/UserDetailActivity.java
+A	pic/01.jpg
+A	pic/02.jpg
+A	pic/doc.png
+A	pic/logo.jpg
+
+ad02434;添加了readme
+M	app/src/main/java/kale/db/GameDetailActivity.java
+M	app/src/main/java/kale/db/GameItem.java
+M	app/src/main/java/kale/db/MainActivity.java
+M	app/src/main/java/kale/db/MainViewModel.java
+M	app/src/main/java/kale/db/UserDetailActivity.java
+
+30b9b46;Create README.md
+A	README.md
+
+426518b;更新了demo和插件
+M	Plugin/DBindPlugin.zip
+M	Plugin/resources/META-INF/plugin.xml
+D	Plugin/src/kale/dbinding/plugin/MyComponent.java
+D	Plugin/src/kale/dbinding/plugin/ReadCurrentFile.java
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/kale/db/GameDetailActivity.java
+R074	app/src/main/java/kale/db/NewsItem.java	app/src/main/java/kale/db/GameItem.java
+M	app/src/main/java/kale/db/MainActivity.java
+M	app/src/main/java/kale/db/MainViewModel.java
+D	app/src/main/java/kale/db/NewsDetailActivity.java
+D	app/src/main/java/kale/db/ignore/IgnoreViewData.java
+R073	app/src/main/java/viewdata/NewsViewData.java	app/src/main/java/viewdata/GameViewData.java
+A	app/src/main/java/viewdata/GoGo.java
+M	app/src/main/java/viewdata/UserViewData.java
+A	app/src/main/java/viewdata/ignored/IgnoreViewData.java
+A	app/src/main/res/drawable-xhdpi/assassin_s_creed.jpg
+A	app/src/main/res/drawable-xhdpi/assassin_s_creed_icon.png
+D	app/src/main/res/drawable-xhdpi/chuyin.jpg
+D	app/src/main/res/drawable-xhdpi/dysn.jpg
+D	app/src/main/res/drawable-xhdpi/ghz.jpg
+A	app/src/main/res/drawable-xhdpi/header.jpg
+A	app/src/main/res/drawable-xhdpi/hit_man.jpg
+A	app/src/main/res/drawable-xhdpi/hit_man_icon.png
+D	app/src/main/res/drawable-xhdpi/lianggong.jpg
+D	app/src/main/res/drawable-xhdpi/mingren.jpg
+D	app/src/main/res/drawable-xhdpi/saber.jpeg
+A	app/src/main/res/drawable-xhdpi/speed_icon.png
+A	app/src/main/res/drawable-xhdpi/star_craft.jpg
+A	app/src/main/res/drawable-xhdpi/star_craft_icon.png
+A	app/src/main/res/drawable-xhdpi/watch_dogs.jpg
+A	app/src/main/res/drawable-xhdpi/watch_dogs_icon.png
+A	app/src/main/res/drawable/cover_transparent.9.png
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/game_detail.xml
+R055	app/src/main/res/layout/news_item.xml	app/src/main/res/layout/game_item.xml
+A	app/src/main/res/layout/header_layout.xml
+D	app/src/main/res/layout/news_detail.xml
+M	app/src/main/res/layout/user_detail.xml
+M	app/src/main/res/values/colors.xml
+M	dbindinglib/src/main/java/kale/dbinding/adapters/EditTextAttrAdapter.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/TextViewAttrAdapter.java
+M	dbindingtest/src/main/java/kale/dbindingtest/TypeTest.java
+A	"dbindingtest/src/main/java/kale/dbindingtest/________\344\270\213\351\235\242\346\230\257\350\207\252\345\256\232\344\271\211\347\232\204\351\200\202\351\205\215\345\231\250________.java"
+M	pluginlib/src/main/java/kale/dbinding/GenViewData.java
+M	pluginlib/src/main/java/kale/dbinding/parser/TypeFinder.java
+
+7b2f30c;修改了一个插件的包名
+M	Plugin/DBindPlugin.zip
+M	Plugin/src/kale/dbinding/plugin/ReadCurrentFile.java
+M	app/src/main/java/kale/db/MainActivity.java
+M	app/src/main/java/kale/db/MainViewModel.java
+M	app/src/main/java/kale/db/NewsDetailActivity.java
+M	app/src/main/java/kale/db/NewsItem.java
+M	app/src/main/java/kale/db/UserDetailActivity.java
+M	app/src/main/java/viewdata/UserViewData.java
+M	app/src/main/res/layout/activity_main.xml
+M	build.gradle
+M	dbindinglib/src/main/java/kale/dbinding/adapters/TextViewAttrAdapter.java
+M	dbindingtest/build.gradle
+D	dbindingtest/src/androidTest/java/kale/dbindingtest/ApplicationTest.java
+M	dbindingtest/src/main/AndroidManifest.xml
+D	dbindingtest/src/main/res/values/strings.xml
+D	dbindingtest/src/test/java/kale/dbindingtest/ExampleUnitTest.java
+D	lib/src/main/java/android/Test.java
+D	lib/src/main/java/resources/META-INF/MANIFEST.MF
+D	lib/src/main/java/resources/META-INF/services/javax.annotation.processing.Processor
+R100	lib/.gitignore	pluginlib/.gitignore
+R073	lib/build.gradle	pluginlib/build.gradle
+R100	lib/src/main/java/android/graphics/Bitmap.java	pluginlib/src/main/java/android/graphics/Bitmap.java
+R100	lib/src/main/java/android/support/v4/view/PagerAdapter.java	pluginlib/src/main/java/android/support/v4/view/PagerAdapter.java
+R100	lib/src/main/java/android/support/v7/widget/RecyclerView.java	pluginlib/src/main/java/android/support/v7/widget/RecyclerView.java
+R100	lib/src/main/java/android/widget/ListAdapter.java	pluginlib/src/main/java/android/widget/ListAdapter.java
+R100	lib/src/main/java/kale/dbinding/CodeTemple.java	pluginlib/src/main/java/kale/dbinding/CodeTemple.java
+R071	lib/src/main/java/kale/dbinding/GenViewData.java	pluginlib/src/main/java/kale/dbinding/GenViewData.java
+A	pluginlib/src/main/java/kale/dbinding/Test.java
+R100	lib/src/main/java/kale/dbinding/annotation/Visibility.java	pluginlib/src/main/java/kale/dbinding/annotation/Visibility.java
+R100	lib/src/main/java/kale/dbinding/model/SimpleClass.java	pluginlib/src/main/java/kale/dbinding/model/SimpleClass.java
+R100	lib/src/main/java/kale/dbinding/model/SimpleField.java	pluginlib/src/main/java/kale/dbinding/model/SimpleField.java
+R100	lib/src/main/java/kale/dbinding/parser/TypeFinder.java	pluginlib/src/main/java/kale/dbinding/parser/TypeFinder.java
+R100	lib/src/main/java/kale/dbinding/parser/ViewDataGenerator.java	pluginlib/src/main/java/kale/dbinding/parser/ViewDataGenerator.java
+R100	lib/src/main/java/kale/dbinding/util/FileHelper.java	pluginlib/src/main/java/kale/dbinding/util/FileHelper.java
+R100	lib/src/main/java/kale/dbinding/util/LetterUtil.java	pluginlib/src/main/java/kale/dbinding/util/LetterUtil.java
+M	settings.gradle
+
+db3a922;修复了找不到vd的bug，升级了gradle，修改了生成vd的路径
+R100	lib/src/api-versions.xml	api-versions.xml
+M	app/build.gradle
+A	app/src/main/java/viewdata/NewsViewData.java
+A	app/src/main/java/viewdata/OtherViewData.java
+A	app/src/main/java/viewdata/UserViewData.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/news_detail.xml
+M	app/src/main/res/layout/news_item.xml
+M	app/src/main/res/layout/user_detail.xml
+M	build.gradle
+M	dbindinglib/src/main/java/kale/dbinding/adapters/EditTextAttrAdapter.java
+A	lib/src/main/java/android/Test.java
+M	lib/src/main/java/kale/dbinding/util/FileHelper.java
+A	lib/src/main/java/resources/META-INF/MANIFEST.MF
+A	lib/src/main/java/resources/META-INF/services/javax.annotation.processing.Processor
+
+1a08612;添加了能自动生成viewdata的插件
+M	.gitignore
+A	Plugin/DBindPlugin.zip
+A	Plugin/resources/META-INF/plugin.xml
+A	Plugin/src/kale/dbinding/plugin/MyComponent.java
+A	Plugin/src/kale/dbinding/plugin/ReadCurrentFile.java
+A	Plugin/src/kale/dbinding/plugin/ViewDataGenerator.java
+M	lib/build.gradle
+A	lib/src/main/java/android/graphics/Bitmap.java
+A	lib/src/main/java/android/support/v4/view/PagerAdapter.java
+A	lib/src/main/java/android/widget/ListAdapter.java
+M	lib/src/main/java/kale/dbinding/GenViewData.java
+M	lib/src/main/java/kale/dbinding/util/FileHelper.java
+
+7d7ab60;将adapter迁移到了vm层
+M	app/src/main/java/kale/db/MainActivity.java
+M	app/src/main/java/kale/db/MainViewModel.java
+M	app/src/main/java/kale/db/NewsItem.java
+M	app/src/main/java/kale/db/UserDetailActivity.java
+R096	app/src/main/java/kale/db/NewsInfo.java	app/src/main/java/kale/db/model/NewsInfo.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/dbinding_config.xml
+M	dbindinglib/build.gradle
+M	dbindinglib/src/main/java/kale/dbinding/BaseViewData.java
+R081	dbindinglib/src/main/java/kale/dbinding/ViewDataManager.java	dbindinglib/src/main/java/kale/dbinding/ViewDataStorage.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/EditTextAttrAdapter.java
+A	dbindinglib/src/main/java/kale/dbinding/adapters/RecyclerViewAttrAdapter.java
+D	dbindinglib/src/main/java/kale/dbinding/adapters/TestV.java
+M	lib/build.gradle
+A	lib/src/main/java/android/support/v7/widget/RecyclerView.java
+M	lib/src/main/java/kale/dbinding/CodeTemple.java
+M	lib/src/main/java/kale/dbinding/parser/TypeFinder.java
+M	lib/src/main/java/kale/dbinding/parser/ViewDataGenerator.java
+D	lib/src/main/resources/META-INF/services/javax.annotation.processing.Processor
+
+9d3eb98;完成了一个mvvm的demo、
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+D	app/src/main/java/kale/db/CustomFragment.java
+D	app/src/main/java/kale/db/MainActivity$ViewDataInject.java
+M	app/src/main/java/kale/db/MainActivity.java
+A	app/src/main/java/kale/db/MainViewModel.java
+D	app/src/main/java/kale/db/MyViewModel.java
+A	app/src/main/java/kale/db/NewsDetailActivity.java
+A	app/src/main/java/kale/db/NewsInfo.java
+M	app/src/main/java/kale/db/NewsItem.java
+D	app/src/main/java/kale/db/NewsModel.java
+D	app/src/main/java/kale/db/ObservableValue.java
+D	app/src/main/java/kale/db/TestViewData.java
+R058	app/src/main/java/kale/db/SecondActivity.java	app/src/main/java/kale/db/UserDetailActivity.java
+D	app/src/main/java/kale/db/ValueObserver.java
+A	app/src/main/java/kale/db/ignore/IgnoreViewData.java
+M	app/src/main/res/drawable-xhdpi/chuyin.jpg
+A	app/src/main/res/drawable-xhdpi/dysn.jpg
+A	app/src/main/res/drawable-xhdpi/ghz.jpg
+A	app/src/main/res/drawable-xhdpi/lianggong.jpg
+A	app/src/main/res/drawable-xhdpi/mingren.jpg
+A	app/src/main/res/drawable-xhdpi/saber.jpeg
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/news_detail.xml
+M	app/src/main/res/layout/news_item.xml
+A	app/src/main/res/values/dbinding_config.xml
+M	app/src/test/java/kale/dbinding/ExampleUnitTest.java
+M	build.gradle
+M	dbindinglib/build.gradle
+M	dbindinglib/src/main/AndroidManifest.xml
+D	dbindinglib/src/main/java/kale/dbinding/BaseImp.java
+M	dbindinglib/src/main/java/kale/dbinding/BaseViewData.java
+M	dbindinglib/src/main/java/kale/dbinding/DBinding.java
+D	dbindinglib/src/main/java/kale/dbinding/OnValueChangedCallback.java
+M	dbindinglib/src/main/java/kale/dbinding/ViewDataManager.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/ImageViewAttrAdapter.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/TestV.java
+M	dbindinglib/src/main/java/kale/dbinding/adapters/TextViewAttrAdapter.java
+D	dbindinglib/src/main/java/kale/dbinding/annotation/OnValueChanged.java
+D	dbindinglib/src/main/java/kale/dbinding/moke/Context.java
+D	dbindinglib/src/main/java/kale/dbinding/moke/MockContext.java
+D	dbindinglib/src/test.js
+A	dbindingtest/.gitignore
+A	dbindingtest/build.gradle
+A	dbindingtest/proguard-rules.pro
+A	dbindingtest/src/androidTest/java/kale/dbindingtest/ApplicationTest.java
+A	dbindingtest/src/main/AndroidManifest.xml
+A	dbindingtest/src/main/java/kale/dbindingtest/TypeTest.java
+A	dbindingtest/src/main/res/values/strings.xml
+R090	dbindinglib/src/test/java/kale/dbinding/ExampleUnitTest.java	dbindingtest/src/test/java/kale/dbindingtest/ExampleUnitTest.java
+R064	lib/src/main/java/kale/dbinding/parser/CodeTemple.java	lib/src/main/java/kale/dbinding/CodeTemple.java
+M	lib/src/main/java/kale/dbinding/GenViewData.java
+D	lib/src/main/java/kale/dbinding/annotation/BindLayout.java
+A	lib/src/main/java/kale/dbinding/parser/TypeFinder.java
+M	lib/src/main/java/kale/dbinding/parser/ViewDataGenerator.java
+D	lib/src/main/java/kale/dbinding/processor/Layout2ViewData.java
+R050	lib/src/main/java/kale/dbinding/parser/FileHelper.java	lib/src/main/java/kale/dbinding/util/FileHelper.java
+A	lib/src/main/java/kale/dbinding/util/LetterUtil.java
+D	lib/src/main/resources/META-INF/MANIFEST.MF
+M	settings.gradle
+
+f5b3c30;准备大改
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+D	app/src/main/java/kale/db/BaseActivity.java
+A	app/src/main/java/kale/db/CustomFragment.java
+A	app/src/main/java/kale/db/MainActivity$ViewDataInject.java
+M	app/src/main/java/kale/db/MainActivity.java
+M	app/src/main/java/kale/db/MyViewModel.java
+A	app/src/main/java/kale/db/NewsItem.java
+A	app/src/main/java/kale/db/NewsModel.java
+A	app/src/main/java/kale/db/ObservableValue.java
+M	app/src/main/java/kale/db/SecondActivity.java
+A	app/src/main/java/kale/db/TestViewData.java
+A	app/src/main/java/kale/db/ValueObserver.java
+A	app/src/main/res/drawable-xhdpi/chuyin.jpg
+A	app/src/main/res/drawable-xhdpi/kale.png
+M	app/src/main/res/layout/activity_main.xml
+D	app/src/main/res/layout/activity_main02.xml
+A	app/src/main/res/layout/news_item.xml
+D	app/src/main/res/layout/test_non.xml
+R053	app/src/main/res/layout/activity_main03.xml	app/src/main/res/layout/user_detail.xml
+M	build.gradle
+M	dbindinglib/build.gradle
+A	dbindinglib/src/main/java/kale/dbinding/BaseImp.java
+A	dbindinglib/src/main/java/kale/dbinding/BaseViewData.java
+M	dbindinglib/src/main/java/kale/dbinding/DBinding.java
+D	dbindinglib/src/main/java/kale/dbinding/IViewData.java
+A	dbindinglib/src/main/java/kale/dbinding/OnValueChangedCallback.java
+D	dbindinglib/src/main/java/kale/dbinding/Test.java
+M	dbindinglib/src/main/java/kale/dbinding/ViewDataManager.java
+A	dbindinglib/src/main/java/kale/dbinding/adapters/EditTextAttrAdapter.java
+A	dbindinglib/src/main/java/kale/dbinding/adapters/ImageViewAttrAdapter.java
+A	dbindinglib/src/main/java/kale/dbinding/adapters/TestV.java
+A	dbindinglib/src/main/java/kale/dbinding/adapters/TextViewAttrAdapter.java
+R069	lib/src/main/java/kale/dbinding/annotation/InjectViewData.java	dbindinglib/src/main/java/kale/dbinding/annotation/InjectViewData.java
+A	dbindinglib/src/main/java/kale/dbinding/annotation/OnValueChanged.java
+A	dbindinglib/src/main/java/kale/dbinding/annotation/Visibility.java
+A	dbindinglib/src/main/java/kale/dbinding/moke/Context.java
+A	dbindinglib/src/main/java/kale/dbinding/moke/MockContext.java
+A	dbindinglib/src/main/java/kale/dbinding/util/ActivityLifecycleCallbacksAdapter.java
+A	dbindinglib/src/main/java/kale/dbinding/util/BitmapUtil.java
+A	dbindinglib/src/main/java/kale/dbinding/util/ReflectUtil.java
+A	dbindinglib/src/main/java/kale/dbinding/util/TextWatcherAdapter.java
+A	dbindinglib/src/main/res/values/attr.xml
+A	dbindinglib/src/test.js
+M	gradle/wrapper/gradle-wrapper.properties
+A	lib/src/main/java/kale/dbinding/GenViewData.java
+D	lib/src/main/java/kale/dbinding/MyClass.java
+A	lib/src/main/java/kale/dbinding/annotation/Visibility.java
+M	lib/src/main/java/kale/dbinding/model/SimpleField.java
+M	lib/src/main/java/kale/dbinding/parser/CodeTemple.java
+M	lib/src/main/java/kale/dbinding/parser/FileHelper.java
+M	lib/src/main/java/kale/dbinding/parser/ViewDataGenerator.java
+M	lib/src/main/java/kale/dbinding/processor/Layout2ViewData.java
+D	lib/src/main/res/layout/activity_main.xml
+M	lib/src/main/resources/META-INF/MANIFEST.MF
+
+815b18f;初步完成，后续慢慢完善
+A	.gitattributes
+A	.gitignore
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/kale/dbinding/ApplicationTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/kale/db/BaseActivity.java
+A	app/src/main/java/kale/db/MainActivity.java
+A	app/src/main/java/kale/db/MyViewModel.java
+A	app/src/main/java/kale/db/SecondActivity.java
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/activity_main02.xml
+A	app/src/main/res/layout/activity_main03.xml
+A	app/src/main/res/layout/test_non.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/test/java/kale/dbinding/ExampleUnitTest.java
+A	build.gradle
+A	dbindinglib/.gitignore
+A	dbindinglib/build.gradle
+A	dbindinglib/proguard-rules.pro
+A	dbindinglib/src/androidTest/java/kale/dbinding/ApplicationTest.java
+A	dbindinglib/src/main/AndroidManifest.xml
+A	dbindinglib/src/main/java/kale/dbinding/DBinding.java
+A	dbindinglib/src/main/java/kale/dbinding/IViewData.java
+A	dbindinglib/src/main/java/kale/dbinding/Test.java
+A	dbindinglib/src/main/java/kale/dbinding/ViewDataManager.java
+A	dbindinglib/src/main/res/values/strings.xml
+A	dbindinglib/src/test/java/kale/dbinding/ExampleUnitTest.java
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	lib/.gitignore
+A	lib/build.gradle
+A	lib/src/api-versions.xml
+A	lib/src/main/java/kale/dbinding/MyClass.java
+A	lib/src/main/java/kale/dbinding/annotation/BindLayout.java
+A	lib/src/main/java/kale/dbinding/annotation/InjectViewData.java
+A	lib/src/main/java/kale/dbinding/model/SimpleClass.java
+A	lib/src/main/java/kale/dbinding/model/SimpleField.java
+A	lib/src/main/java/kale/dbinding/parser/CodeTemple.java
+A	lib/src/main/java/kale/dbinding/parser/FileHelper.java
+A	lib/src/main/java/kale/dbinding/parser/ViewDataGenerator.java
+A	lib/src/main/java/kale/dbinding/processor/Layout2ViewData.java
+A	lib/src/main/res/layout/activity_main.xml
+A	lib/src/main/resources/META-INF/MANIFEST.MF
+A	lib/src/main/resources/META-INF/services/javax.annotation.processing.Processor
+A	settings.gradle

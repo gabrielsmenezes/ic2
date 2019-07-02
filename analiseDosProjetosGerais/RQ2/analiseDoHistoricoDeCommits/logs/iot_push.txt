@@ -1,0 +1,1144 @@
+346c683;qos修改
+M	iot_push_client/iot_push_client.iml
+M	iot_push_client_starter_test/iot_push_client_starter.iml
+M	iot_push_client_starter_test/src/main/java/com/lxr/iot/example/MqttMain.java
+M	iot_push_client_starter_test/src/main/resources/application.yml
+M	iot_push_common/iot_push_common.iml
+M	iot_push_common/pom.xml
+M	iot_push_server/iot_push_server.iml
+M	iot_push_server/src/main/java/com/lxr/iot/auto/InitServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/auto/ServerAutoConfigure.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/MqttChannel.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/PublishApiSevice.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/queue/DisruptorMessageStarter.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/queue/MessageEvent.java
+R064	iot_push_server/src/main/java/com/lxr/iot/bootstrap/scan/SacnScheduled.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/queue/MessageHandler.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/queue/MessageStarter.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/queue/MessageTransfer.java
+D	iot_push_server/src/main/java/com/lxr/iot/bootstrap/scan/ScanRunnable.java
+M	iot_push_server_starter_test/iot_push_server_starter.iml
+M	iot_push_test/iot_push_test.iml
+
+8178e69;Update PublishApiSevice.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/PublishApiSevice.java
+
+72b3bc8;Update MqttChannel.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/MqttChannel.java
+
+0fd1418;Update MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttHandlerService.java
+
+f3c9cea;Update AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+
+7ea6144;Update DefaultMqttHandler.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/DefaultMqttHandler.java
+
+9a11dca;Update MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttChannelService.java
+
+4e14e7d;bugfix
+M	iot_push_client_starter_test/src/main/java/com/lxr/iot/SubListener.java
+M	iot_push_client_starter_test/src/main/resources/application.yml
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttHandlerService.java
+M	iot_push_test/src/main/java/com/lxr/iot/client/main.java
+
+1c35d3f;update
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/scan/ScanRunnable.java
+
+09a754e;阻塞队列 解决cpu问题
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/scan/ScanRunnable.java
+
+c51f1e8;update
+M	iot_push_server/src/main/java/com/lxr/iot/auto/ServerAutoConfigure.java
+
+d2162bf;update
+M	iot_push_test/src/main/java/com/lxr/iot/client/main.java
+
+09cb9e6;update
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/DefaultMqttHandler.java
+
+8c0e668;update
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+
+e5aa297;update
+M	iot_push_common/src/main/java/com/lxr/iot/properties/InitBean.java
+
+fcb9904;update
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+
+2c90a36;update
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+
+003f54b;update
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttMessageListener.java
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+
+99c5eb5;update
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/DefaultMqttHandler.java
+M	iot_push_client_starter_test/src/main/java/com/lxr/iot/example/MqttMain.java
+M	iot_push_client_starter_test/src/main/resources/application.yml
+M	iot_push_common/src/main/java/com/lxr/iot/properties/ConnectOptions.java
+M	iot_push_common/src/main/java/com/lxr/iot/util/RemotingUtil.java
+M	iot_push_server_starter_test/src/main/resources/application.yml
+
+627efaa;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapServer.java
+
+8a397f1;device outline
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/PublishApiSevice.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/WillService.java
+
+56eeefb;update session
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttChannelService.java
+
+b2085a4;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttChannelService.java
+
+9cde1ce;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/cache/CacheMap.java
+
+0e38193;cache
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/cache/CacheMap.java
+
+9c0246b;Merge remote-tracking branch 'origin/master'
+2e6f05d;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttChannelService.java
+
+c0846c0;update
+M	iot_push_server_starter_test/src/main/java/com/lxr/iot/DefaultAutoService.java
+
+84e3543;login
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/DefaultMqttHandler.java
+
+81f3b7f;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+
+6948d01;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttChannelService.java
+
+d08d1b1;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/PublishApiSevice.java
+
+65518c9;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/WillService.java
+
+87e8905;login
+M	iot_push_client_starter_test/src/main/resources/application.yml
+
+d10f7d3;login
+A	iot_push_client_starter_test/src/main/java/com/lxr/iot/spring/springTest.java
+
+3bd2398;Merge remote-tracking branch 'origin/master'
+dd9ec74;login
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/MqttHandlerServiceService.java
+
+84c46a7;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapServer.java
+
+277e26e;login
+A	iot_push_common/src/main/java/com/lxr/iot/util/RemotingUtil.java
+
+9459655;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/BaseApi.java
+
+3a3974e;login
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapServer.java
+
+284e41f;login
+M	iot_push_server_starter_test/pom.xml
+
+3341112;login
+R082	iot_push_server_starter_test/src/main/java/com/lxr/iot/DefaleAutoService.java	iot_push_server_starter_test/src/main/java/com/lxr/iot/DefaultAutoService.java
+
+4767f2b;login
+M	iot_push_client/iot_push_client.iml
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client_starter_test/iot_push_client_starter.iml
+M	iot_push_client_starter_test/src/main/resources/application.yml
+M	iot_push_common/iot_push_common.iml
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHander.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/BaseAuthService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttHandlerService.java
+M	iot_push_server_starter_test/iot_push_server_starter.iml
+A	iot_push_server_starter_test/src/main/java/com/lxr/iot/DefaleAutoService.java
+M	iot_push_test/iot_push_test.iml
+
+d771018;update
+M	iot_push_server/iot_push_server.iml
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/MqttChannel.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/ClientSessionService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/cache/CacheMap.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/DefaultMqttHandler.java
+
+70b769d;update
+M	iot_push_common/pom.xml
+
+8f8969c;update
+M	iot_push_client_starter_test/iot_push_client_starter.iml
+M	iot_push_server_starter_test/iot_push_server_starter.iml
+M	pom.xml
+
+0e7012c;commit complete
+M	README.md
+
+3e5501f;commit complete
+M	README.md
+A	iot_push_client_starter_test/src/main/resources/application.yml
+A	iot_push_client_starter_test/src/main/resources/securesocket.jks
+
+f0f8be0;commit complete
+M	iot_push_client_starter_test/iot_push_client_starter.iml
+M	iot_push_server_starter_test/iot_push_server_starter.iml
+D	iot_push_server_starter_test/src/main/java/com/lxr/iot/App.java
+R100	iot_push_server/src/main/java/com/lxr/iot/ServerApplication.java	iot_push_server_starter_test/src/main/java/com/lxr/iot/ServerApplication.java
+
+3594eea;commit complete
+A	iot_push_client_starter_test/iot_push_client_starter.iml
+A	iot_push_client_starter_test/pom.xml
+A	iot_push_client_starter_test/src/main/java/com/lxr/iot/App.java
+A	iot_push_client_starter_test/src/main/java/com/lxr/iot/SubListener.java
+A	iot_push_client_starter_test/src/main/java/com/lxr/iot/example/MqttMain.java
+A	iot_push_server/src/main/resources/META-INF/spring.factories
+A	iot_push_server_starter_test/iot_push_server_starter.iml
+A	iot_push_server_starter_test/pom.xml
+A	iot_push_server_starter_test/src/main/java/com/lxr/iot/App.java
+R100	iot_push_server/src/main/resources/application.yml	iot_push_server_starter_test/src/main/resources/application.yml
+R100	iot_push_server/src/main/resources/securesocket.jks	iot_push_server_starter_test/src/main/resources/securesocket.jks
+M	pom.xml
+
+004a2e3;commit complete
+D	iot_push_client/src/main/java/com/lxr/iot/ClientApplication.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+D	iot_push_client/src/main/java/com/lxr/iot/test/MyListener.java
+D	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+A	iot_push_client/src/main/resources/META-INF/spring.factories
+M	iot_push_test/iot_push_test.iml
+R100	iot_push_client/src/main/resources/application.yml	iot_push_test/src/main/resources/application.yml
+R100	iot_push_client/src/main/resources/securesocket.jks	iot_push_test/src/main/resources/securesocket.jks
+
+b7d14cf;commit complete
+M	iot_push_client/src/main/java/com/lxr/iot/test/MyListener.java
+M	iot_push_client/src/main/resources/application.yml
+M	iot_push_server/src/main/resources/application.yml
+M	iot_push_test/src/main/java/com/lxr/iot/paho/MqttClientProducerTest.java
+
+26d01d3;commit complete
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+
+76ac68b;commit complete
+M	iot_push_server/src/main/java/com/lxr/iot/auto/InitServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/PublishApiSevice.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/WillService.java
+
+ae1e1be;commit update qos
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/scan/ScanRunnable.java
+
+662d78a;commit update qos
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/scan/ScanRunnable.java
+
+fd2ced7;commit update qos
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/AbstractChannelService.java
+M	iot_push_server/src/main/resources/application.yml
+
+23bbb57;commit update qos
+M	iot_push_common/src/main/java/com/lxr/iot/properties/InitBean.java
+M	iot_push_server/src/main/java/com/lxr/iot/auto/InitServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/auto/ServerAutoConfigure.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/resources/application.yml
+
+94097f2;commit update qos
+M	iot_push_server/src/main/resources/application.yml
+
+13896a2;commit update qos
+M	iot_push_server/src/main/resources/application.yml
+M	iot_push_test/src/main/java/com/lxr/iot/paho/MqttClientProducerTest.java
+
+c794e93;commit update qos
+M	README.md
+
+6b4f68f;commit update qos
+M	iot_push_test/iot_push_test.iml
+M	iot_push_test/pom.xml
+A	iot_push_test/src/main/java/com/lxr/iot/client/MyListener.java
+A	iot_push_test/src/main/java/com/lxr/iot/client/main.java
+R095	iot_push_test/src/main/java/com/lxr/iot/MqttClientProducerTest.java	iot_push_test/src/main/java/com/lxr/iot/paho/MqttClientProducerTest.java
+R098	iot_push_test/src/main/java/com/lxr/iot/comsumer2/MqttClientConsumerTest.java	iot_push_test/src/main/java/com/lxr/iot/paho/comsumer2/MqttClientConsumerTest.java
+R095	iot_push_test/src/main/java/com/lxr/iot/consumer/MqttClientConsumerTest1.java	iot_push_test/src/main/java/com/lxr/iot/paho/consumer/MqttClientConsumerTest1.java
+
+729c432;commit update qos
+M	README.md
+
+5c97184;commit update qos
+M	README.md
+
+d409cce;commit update qos
+M	README.md
+
+3245cba;commit update qos
+M	README.md
+
+f4d684e;commit update qos
+M	README.md
+
+b45f668;commit update qos
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+M	iot_push_common/src/main/java/com/lxr/iot/enums/ConfirmStatus.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHander.java
+M	iot_push_server/src/main/java/com/lxr/iot/auto/ServerAutoConfigure.java
+D	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/ConfirmMessage.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/MqttChannel.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/SendMqttMessage.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/PublishApiSevice.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/scan/SacnScheduled.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/scan/ScanRunnable.java
+
+615aea9;update
+M	iot_push_server/src/main/java/com/lxr/iot/auto/InitServer.java
+M	iot_push_server/src/main/resources/application.yml
+
+68e5507;commit
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+R099	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/MqttHandlerServiceService.java
+R099	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/DefaultMqttHandler.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/scan/SacnScheduled.java
+M	iot_push_server/iot_push_server.iml
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/SendMqttMessage.java
+R096	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/AbstractChannelService.java
+R095	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/ClientSessionService.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/ClientSessionService.java
+R099	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttChannelService.java
+R099	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/MqttHandlerService.java
+R099	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/PublishApiSevice.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/PublishApiSevice.java
+R097	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/WillService.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/WillService.java
+R098	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/cache/CacheMap.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/cache/CacheMap.java
+R098	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/DefaultMqttHandler.java
+M	iot_push_server/src/main/resources/application.yml
+
+b5880c8;commit
+M	iot_push_server/pom.xml
+
+607be27;commit unsub
+M	iot_push_common/src/main/java/com/lxr/iot/enums/ConfirmStatus.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/SendMqttMessage.java
+
+889e948;commit unsub
+M	iot_push_common/src/main/java/com/lxr/iot/enums/ConfirmStatus.java
+M	iot_push_common/src/main/java/com/lxr/iot/ssl/StreamReader.java
+M	iot_push_server/iot_push_server.iml
+M	iot_push_server/pom.xml
+M	iot_push_server/src/main/java/com/lxr/iot/auto/InitServer.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/SendMqttMessage.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/scan/ScanRunnable.java
+
+08d519c;commit unsub
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/MqttChannel.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+
+24ac5e7;commit unsub
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/scan/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/scan/ScanRunnable.java
+
+a0e79b7;commit unsub
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/scan/ScanRunnable.java
+
+23e829e;commit unsub
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/ClientMqttHandlerService.java
+
+b238ce6;commit unsub
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+
+5089749;commit unsub
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+
+caa3710;Merge remote-tracking branch 'origin/master'
+d94ea4d;commit
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+
+d5adfbb;commit
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_common/src/main/java/com/lxr/iot/properties/ConnectOptions.java
+
+2c7fee7;commit
+M	iot_push_client/src/main/resources/application.yml
+
+8fcd947;commit
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_client/src/main/java/com/lxr/iot/test/MyListener.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+4ada14d;commit
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+
+ca77fc1;commit
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttListener.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+R098	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java	iot_push_client/src/main/java/com/lxr/iot/bootstrap/scan/SacnScheduled.java
+R085	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java	iot_push_client/src/main/java/com/lxr/iot/bootstrap/scan/ScanRunnable.java
+
+60b887a;commit
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+A	iot_push_client/src/main/java/com/lxr/iot/test/MyListener.java
+M	iot_push_client/src/main/resources/application.yml
+M	iot_push_common/src/main/java/com/lxr/iot/enums/ProtocolEnum.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/ServerMqttHandlerService.java
+M	iot_push_common/src/main/java/com/lxr/iot/properties/ConnectOptions.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+1aff463;commit
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+
+8ab3e35;commit update client
+M	README.md
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+M	iot_push_client/src/main/resources/application.yml
+M	iot_push_common/src/main/java/com/lxr/iot/properties/ConnectOptions.java
+
+2519556;commit update client
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_test/src/main/java/com/lxr/iot/MqttClientProducerTest.java
+
+6dcf008;commit update client
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+
+94068dd;commit update client
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+M	iot_push_test/src/main/java/com/lxr/iot/MqttClientProducerTest.java
+M	iot_push_test/src/main/java/com/lxr/iot/consumer/MqttClientConsumerTest1.java
+
+7b5d9ca;commit update client
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHandlerIntf.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/PublishApiSevice.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+a3f21d0;commit
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/ClientMqttChannel.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/SendMqttMessage.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java
+
+745a8ff;commit update client
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/ClientMqttHandlerService.java
+
+afea1eb;commit update client
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+
+8685dbf;commit update client
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+
+31513a6;commit update client
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+bedc7fe;commit update client
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+43cf4b9;commit update client
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/ClientMqttHandlerService.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHandlerIntf.java
+
+e9cda47;commit update client
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHandlerIntf.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+
+ccd9924;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+11e5ed1;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+M	iot_push_server/src/main/resources/application.yml
+
+79fb5ae;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/ClientMqttHandlerService.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/ServerMqttHandlerService.java
+
+6915585;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+
+cf159f9;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+
+8a192bf;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+422dc98;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+40b4c92;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+
+4acd6af;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+
+5b6cf59;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java
+
+15ea028;commit update ws
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/ScheduledPool.java
+
+d5c40e2;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java
+M	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+
+f9d1556;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+
+9f11f32;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java
+
+d4eba34;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+M	iot_push_common/src/main/java/com/lxr/iot/properties/ConnectOptions.java
+
+fe3e51d;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+
+7c00d72;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttApi.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/PublishApiSevice.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java
+A	iot_push_client/src/main/java/com/lxr/iot/test/main.java
+
+27bbe23;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+R094	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/MqttMessage.java	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/SendMqttMessage.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/PublishApiSevice.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/cache/Cache.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java
+
+445d920;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java
+
+c2deedf;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+
+a448e79;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java
+
+8e318ea;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/cache/Cache.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/SacnScheduled.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/TimeProduceFactory.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+35d3c8d;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/ScheduledPool.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/ScheduledPool.java
+
+d593d0b;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttListener.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/MqttMessage.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/PublishApiSevice.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/ScheduledPool.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/back/ScanConfirmMessage.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/cache/Cache.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/ScanRunnable.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/time/TimeProduceFactory.java
+M	iot_push_common/src/main/java/com/lxr/iot/enums/ConfirmStatus.java
+M	iot_push_common/src/main/java/com/lxr/iot/properties/ConnectOptions.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/ScheduledPool.java
+
+10ed378;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/MqttMessage.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/PublishApiSevice.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/back/ScanConfirmMessage.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/cache/Cache.java
+A	iot_push_common/src/main/java/com/lxr/iot/enums/ConfirmStatus.java
+M	iot_push_server/src/main/resources/application.yml
+
+32a1ad3;commit update ws
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/MqttMessage.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/PublishApiSevice.java
+A	iot_push_common/src/main/java/com/lxr/iot/enums/ProtocolEnum.java
+
+92f12da;commit update ws
+M	iot_push_common/src/main/java/com/lxr/iot/properties/InitBean.java
+M	iot_push_server/src/main/java/com/lxr/iot/auto/ServerAutoConfigure.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/resources/application.yml
+
+20a5896;commit update ws
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/ServerMqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/coder/ByteBufToWebSocketFrameEncoder.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/coder/WebSocketFrameToByteBufDecoder.java
+
+157b98f;commit update
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+657b549;commit update
+M	iot_push_client/src/main/resources/application.yml
+M	iot_push_server/src/main/java/com/lxr/iot/ServerApplication.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_server/src/main/resources/application.yml
+M	iot_push_test/src/main/java/com/lxr/iot/MqttClientProducerTest.java
+M	iot_push_test/src/main/java/com/lxr/iot/consumer/MqttClientConsumerTest1.java
+
+86302c4;server init
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+
+63399da;server init
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_client/src/main/resources/application.yml
+
+b9175e9;Merge remote-tracking branch 'origin/master'
+3f11157;commit update
+M	iot_push_client/src/main/resources/application.yml
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHander.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/resources/application.yml
+
+3de7229;server init
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_client/src/main/resources/application.yml
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHander.java
+
+01b3136;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHander.java
+M	iot_push_common/src/main/java/com/lxr/iot/properties/ConnectOptions.java
+
+4f67c3b;commit update
+M	iot_push_client/iot_push_client.iml
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/SubMessage.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/PublishApiSevice.java
+A	iot_push_client/src/main/resources/application.yml
+A	iot_push_client/src/main/resources/securesocket.jks
+M	iot_push_common/iot_push_common.iml
+M	iot_push_common/src/main/java/com/lxr/iot/properties/ConnectOptions.java
+M	iot_push_common/src/main/java/com/lxr/iot/util/MessageId.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/PublishApiSevice.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+0e100b1;commit update
+M	iot_push_common/src/main/java/com/lxr/iot/util/MessageId.java
+M	iot_push_server/src/main/java/com/lxr/iot/auto/ServerAutoConfigure.java
+
+dd44d53;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+6beb9d9;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+R071	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerServiceService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+D	iot_push_common/src/main/java/com/lxr/iot/mqtt/ClientMqttHandler.java
+A	iot_push_common/src/main/java/com/lxr/iot/mqtt/ClientMqttHandlerService.java
+R091	iot_push_common/src/main/java/com/lxr/iot/mqtt/ServerMqttHandler.java	iot_push_common/src/main/java/com/lxr/iot/mqtt/ServerMqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+24d4a49;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/ClientMqttChannel.java
+
+1c7d531;commit update
+R080	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttListener.java	iot_push_client/src/main/java/com/lxr/iot/auto/MqttListener.java
+R088	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttMessageListener.java	iot_push_client/src/main/java/com/lxr/iot/auto/MqttMessageListener.java
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+R084	iot_push_common/src/main/java/com/lxr/iot/bean/ClientMqttChannel.java	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/ClientMqttChannel.java
+R088	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttMessage.java	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/MqttMessage.java
+R085	iot_push_client/src/main/java/com/lxr/iot/bootstrap/SubMessage.java	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Bean/SubMessage.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/PublishApiSevice.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/cache/Cache.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+R093	iot_push_common/src/main/java/com/lxr/iot/mqtt/ByteBufUtil.java	iot_push_common/src/main/java/com/lxr/iot/util/ByteBufUtil.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+R092	iot_push_common/src/main/java/com/lxr/iot/bean/ConfirmMessage.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/ConfirmMessage.java
+R098	iot_push_common/src/main/java/com/lxr/iot/bean/MqttChannel.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/MqttChannel.java
+R090	iot_push_common/src/main/java/com/lxr/iot/bean/RetainMessage.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/RetainMessage.java
+R091	iot_push_common/src/main/java/com/lxr/iot/bean/SessionMessage.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/SessionMessage.java
+R088	iot_push_common/src/main/java/com/lxr/iot/bean/WillMeaasge.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/bean/WillMeaasge.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/ClientSessionService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/PublishApiSevice.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/WillService.java
+
+2b83f9d;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/SubMessage.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttMessageListener.java
+
+86d3d20;commit update
+A	iot_push_client/src/main/java/com/lxr/iot/auto/MqttProducerConfigure.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/PublishApiSevice.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/cache/Cache.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+R091	iot_push_common/src/main/java/com/lxr/iot/mqtt/publish/ByteBufUtil.java	iot_push_common/src/main/java/com/lxr/iot/mqtt/ByteBufUtil.java
+M	iot_push_common/src/main/java/com/lxr/iot/pool/Scheduled.java
+R088	iot_push_common/src/main/java/com/lxr/iot/pool/ScheduledPool.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/ScheduledPool.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+R099	iot_push_common/src/main/java/com/lxr/iot/mqtt/publish/PublishApiSevice.java	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/PublishApiSevice.java
+
+1f97a2f;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/SubMessage.java
+
+f938835;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttMessage.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+
+1f068a4;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttListener.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHander.java
+
+6d27893;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttListener.java
+
+8303960;commit update
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttListener.java
+
+fc14cae;commit update
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbsMqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapClient.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/Producer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+D	iot_push_common/src/main/java/com/lxr/iot/bean/ConnectOptions.java
+A	iot_push_common/src/main/java/com/lxr/iot/properties/ConnectOptions.java
+M	iot_push_common/src/main/java/com/lxr/iot/properties/InitBean.java
+
+3f824e1;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+A	iot_push_common/src/main/java/com/lxr/iot/bean/ConnectOptions.java
+M	iot_push_common/src/main/java/com/lxr/iot/properties/InitBean.java
+
+3c27a61;commit update
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+
+8973298;commit update
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttProducer.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapClient.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+
+b941dd2;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/BootstrapClient.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/BootstrapServer.java
+
+66ae2a8;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/BootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_common/iot_push_common.iml
+A	iot_push_common/src/main/java/com/lxr/iot/mqtt/ClientMqttHandler.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/BootstrapServer.java
+M	iot_push_test/iot_push_test.iml
+M	iot_push_test/pom.xml
+
+03930ed;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+A	iot_push_common/src/main/java/com/lxr/iot/exception/NoFindHandlerException.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHander.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHandlerIntf.java
+A	iot_push_common/src/main/java/com/lxr/iot/mqtt/ServerMqttHandler.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+36b73fb;commit update
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHander.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_server/src/main/resources/application.yml
+
+d3cdd03;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapClient.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+A	iot_push_common/src/main/java/com/lxr/iot/bean/ClientMqttChannel.java
+M	iot_push_common/src/main/java/com/lxr/iot/properties/InitBean.java
+
+15af13d;commit update
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttHandlerIntf.java
+
+d28965b;commit update
+R080	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/publish/ByteBufUtil.java	iot_push_common/src/main/java/com/lxr/iot/mqtt/publish/ByteBufUtil.java
+R099	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/publish/PublishApiSevice.java	iot_push_common/src/main/java/com/lxr/iot/mqtt/publish/PublishApiSevice.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+D	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/PingPongService.java
+
+a5a3cae;commit update
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+
+e015b9d;commit update
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+
+c8a44ba;commit update
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/ClientSessionService.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/PingPongService.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/WillService.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/RetainMessage.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/WillMeaasge.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/SessionStatus.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/publish/ByteBufUtil.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/publish/PublishApiSevice.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/hander/mqtt/DefaultMqttHandler.java
+D	iot_push_client/src/main/java/com/lxr/iot/bootstrap/hander/mqtt/MqttHander.java
+R078	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/ConfirmMessage.java	iot_push_common/src/main/java/com/lxr/iot/bean/ConfirmMessage.java
+R093	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/MqttChannel.java	iot_push_common/src/main/java/com/lxr/iot/bean/MqttChannel.java
+R087	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/RetainMessage.java	iot_push_common/src/main/java/com/lxr/iot/bean/RetainMessage.java
+R088	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/SessionMessage.java	iot_push_common/src/main/java/com/lxr/iot/bean/SessionMessage.java
+R085	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/WillMeaasge.java	iot_push_common/src/main/java/com/lxr/iot/bean/WillMeaasge.java
+R082	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/QosStatus.java	iot_push_common/src/main/java/com/lxr/iot/enums/QosStatus.java
+R076	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/SessionStatus.java	iot_push_common/src/main/java/com/lxr/iot/enums/SessionStatus.java
+R071	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/SubStatus.java	iot_push_common/src/main/java/com/lxr/iot/enums/SubStatus.java
+M	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHander.java
+R088	iot_push_server/src/main/java/com/lxr/iot/bootstrap/MqttHandlerIntf.java	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHandlerIntf.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/ClientSessionService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/PingPongService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/WillService.java
+D	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/ConfirmMessage.java
+D	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/MqttChannel.java
+D	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/SessionMessage.java
+D	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/QosStatus.java
+D	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/SubStatus.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/publish/PublishApiSevice.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+
+1bf09cb;commit update
+A	.idea/uiDesigner.xml
+M	iot_push_client/iot_push_client.iml
+M	iot_push_client/pom.xml
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/MqttHandlerIntf.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/ClientSessionService.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/PingPongService.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/WillService.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/ConfirmMessage.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/MqttChannel.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/RetainMessage.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/SessionMessage.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/WillMeaasge.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/QosStatus.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/SessionStatus.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/SubStatus.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/publish/ByteBufUtil.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/publish/PublishApiSevice.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/hander/mqtt/DefaultMqttHandler.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/hander/mqtt/MqttHander.java
+D	iot_push_client/src/main/java/com/lxr/iot/properties/ClientBean.java
+M	iot_push_common/iot_push_common.iml
+M	iot_push_common/pom.xml
+R100	iot_push_server/src/main/java/com/lxr/iot/exception/ConnectionException.java	iot_push_common/src/main/java/com/lxr/iot/exception/ConnectionException.java
+R086	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/MqttHander.java	iot_push_common/src/main/java/com/lxr/iot/mqtt/MqttHander.java
+R100	iot_push_server/src/main/java/com/lxr/iot/pool/DefaultThreadFactory.java	iot_push_common/src/main/java/com/lxr/iot/pool/DefaultThreadFactory.java
+R100	iot_push_server/src/main/java/com/lxr/iot/pool/ExecutorQueue.java	iot_push_common/src/main/java/com/lxr/iot/pool/ExecutorQueue.java
+R100	iot_push_server/src/main/java/com/lxr/iot/pool/Scheduled.java	iot_push_common/src/main/java/com/lxr/iot/pool/Scheduled.java
+R085	iot_push_server/src/main/java/com/lxr/iot/pool/ScheduledPool.java	iot_push_common/src/main/java/com/lxr/iot/pool/ScheduledPool.java
+R100	iot_push_server/src/main/java/com/lxr/iot/pool/StandardThreadExecutor.java	iot_push_common/src/main/java/com/lxr/iot/pool/StandardThreadExecutor.java
+R085	iot_push_server/src/main/java/com/lxr/iot/properties/ServerBean.java	iot_push_common/src/main/java/com/lxr/iot/properties/InitBean.java
+M	iot_push_server/iot_push_server.iml
+M	iot_push_server/pom.xml
+M	iot_push_server/src/main/java/com/lxr/iot/auto/InitServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/auto/ServerAutoConfigure.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/BaseApi.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/BootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_test/iot_push_test.iml
+
+7bec323;Merge remote-tracking branch 'origin/master'
+78adcff;commit
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapServer.java
+
+1d3e4ef;commit
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapServer.java
+M	iot_push_server/src/main/resources/application.yml
+
+aec7d13;server init
+R096	iot_push_server/src/main/java/com/lxr/iot/init/InitServer.java	iot_push_server/src/main/java/com/lxr/iot/auto/InitServer.java
+R093	iot_push_server/src/main/java/com/lxr/iot/init/ServerAutoConfigure.java	iot_push_server/src/main/java/com/lxr/iot/auto/ServerAutoConfigure.java
+
+eb26975;client init
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapClient.java
+M	iot_push_client/src/main/java/com/lxr/iot/bootstrap/BootstrapClient.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapClient.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/hander/mqtt/MqttHander.java
+A	iot_push_client/src/main/java/com/lxr/iot/properties/ClientBean.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/properties/ServerBean.java
+
+0d8b639;server pool
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+
+261d301;server pool
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+
+d09de45;server init
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/init/ServerAutoConfigure.java
+
+38f82eb;server init
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/init/ServerAutoConfigure.java
+M	iot_push_server/src/main/java/com/lxr/iot/properties/ServerBean.java
+M	iot_push_server/src/main/resources/application.yml
+
+13f9ab9;server excutor
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/publish/PublishApiSevice.java
+
+31bbe91;server
+M	README.md
+
+cb6ca17;server ssl
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/properties/ServerBean.java
+M	iot_push_server/src/main/resources/application.yml
+A	iot_push_server/src/main/resources/securesocket.jks
+
+7e92788;server
+M	iot_push_server/src/main/resources/application.yml
+
+d215c52;server update
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/ConfirmMessage.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/MqttChannel.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/RetainMessage.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/SessionMessage.java
+M	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+M	iot_push_server/src/main/java/com/lxr/iot/init/ServerAutoConfigure.java
+M	iot_push_server/src/main/java/com/lxr/iot/properties/ServerBean.java
+
+717f1f8;server init
+A	README.md
+A	iot_push.iml
+A	iot_push_client/iot_push_client.iml
+A	iot_push_client/pom.xml
+A	iot_push_client/src/main/java/com/lxr/iot/ClientApplication.java
+A	iot_push_client/src/main/java/com/lxr/iot/bootstrap/BootstrapClient.java
+A	iot_push_common/iot_push_common.iml
+A	iot_push_common/pom.xml
+A	iot_push_common/src/main/java/com/lxr/iot/ip/IpUtils.java
+A	iot_push_common/src/main/java/com/lxr/iot/ssl/SecureSocketKeyStore.java
+A	iot_push_common/src/main/java/com/lxr/iot/ssl/SecureSocketSslContextFactory.java
+A	iot_push_common/src/main/java/com/lxr/iot/ssl/SecureSokcetTrustManagerFactory.java
+A	iot_push_common/src/main/java/com/lxr/iot/ssl/StreamReader.java
+A	iot_push_common/src/main/java/com/lxr/iot/ssl/X509CertTool.java
+A	iot_push_common/src/main/java/com/lxr/iot/util/IdWorker.java
+A	iot_push_common/src/main/java/com/lxr/iot/util/MessageId.java
+A	iot_push_common/src/main/java/com/lxr/iot/util/SpringBeanUtils.java
+A	iot_push_common/src/main/java/com/lxr/iot/zookeeper/ZkStateListener.java
+A	iot_push_common/src/main/java/com/lxr/iot/zookeeper/ZkUtils.java
+A	iot_push_common/src/main/java/com/lxr/iot/zookeeper/testZk.java
+A	iot_push_server/iot_push_server.iml
+A	iot_push_server/pom.xml
+A	iot_push_server/src/main/java/com/lxr/iot/ServerApplication.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/AbstractBootstrapServer.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/BaseApi.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/BootstrapServer.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/ChannelService.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/MqttHandlerIntf.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/NettyBootstrapServer.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/AbstractChannelService.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/ClientSessionService.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttChannelService.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/MqttHandlerService.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/PingPongService.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/WillService.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/ConfirmMessage.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/MqttChannel.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/RetainMessage.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/SessionMessage.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/bean/WillMeaasge.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/cache/CacheMap.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/QosStatus.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/SessionStatus.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/enums/SubStatus.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/publish/ByteBufUtil.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/channel/mqtt/publish/PublishApiSevice.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/DefaultMqttHandler.java
+A	iot_push_server/src/main/java/com/lxr/iot/bootstrap/handler/mqtt/MqttHander.java
+A	iot_push_server/src/main/java/com/lxr/iot/exception/ConnectionException.java
+A	iot_push_server/src/main/java/com/lxr/iot/init/InitServer.java
+A	iot_push_server/src/main/java/com/lxr/iot/init/ServerAutoConfigure.java
+A	iot_push_server/src/main/java/com/lxr/iot/pool/DefaultThreadFactory.java
+A	iot_push_server/src/main/java/com/lxr/iot/pool/ExecutorQueue.java
+A	iot_push_server/src/main/java/com/lxr/iot/pool/Scheduled.java
+A	iot_push_server/src/main/java/com/lxr/iot/pool/ScheduledPool.java
+A	iot_push_server/src/main/java/com/lxr/iot/pool/StandardThreadExecutor.java
+A	iot_push_server/src/main/java/com/lxr/iot/properties/ServerBean.java
+A	iot_push_server/src/main/resources/application.yml
+A	iot_push_test/iot_push_test.iml
+A	iot_push_test/pom.xml
+A	iot_push_test/src/main/java/com/lxr/iot/MqttClientProducerTest.java
+A	iot_push_test/src/main/java/com/lxr/iot/comsumer2/MqttClientConsumerTest.java
+A	iot_push_test/src/main/java/com/lxr/iot/consumer/MqttClientConsumerTest1.java
+A	pom.xml

@@ -1,0 +1,825 @@
+3218992;完善根据标签云查询某个标签下的所有博客文章
+A	src/main/java/com/sparrow/hadmin/common/utils/RandomColor.java
+M	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+M	src/main/java/com/sparrow/hadmin/dao/IArticleDao.java
+M	src/main/java/com/sparrow/hadmin/service/IArticleService.java
+M	src/main/java/com/sparrow/hadmin/service/impl/ArticleServiceImpl.java
+A	src/main/java/com/sparrow/hadmin/vo/Tags.java
+
+05079c5;标签云页面创建
+M	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+M	src/main/java/com/sparrow/hadmin/service/impl/ArticleServiceImpl.java
+A	src/main/resources/static/html/css/screen.css
+
+7fad3f5;新增文章缩略图的上传功能
+M	pom.xml
+M	springboot-hadmin.iml
+M	src/main/java/com/sparrow/hadmin/common/utils/RandomUtils.java
+M	src/main/java/com/sparrow/hadmin/config/shiro/MyRealm.java
+M	src/main/java/com/sparrow/hadmin/config/shiro/ShiroManager.java
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleController.java
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleSortController.java
+M	src/main/java/com/sparrow/hadmin/controller/admin/system/UserController.java
+M	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+M	src/main/java/com/sparrow/hadmin/controller/web/IndexController.java
+M	src/main/java/com/sparrow/hadmin/entity/Article.java
+M	src/main/java/com/sparrow/hadmin/entity/ArticleSort.java
+M	src/main/java/com/sparrow/hadmin/entity/Resource.java
+M	src/main/java/com/sparrow/hadmin/entity/Role.java
+M	src/main/java/com/sparrow/hadmin/entity/User.java
+A	src/main/java/com/sparrow/hadmin/fileupload/DiyUploadController.java
+M	src/main/java/com/sparrow/hadmin/fileupload/UploadController.java
+M	src/main/java/com/sparrow/hadmin/service/IArticleService.java
+M	src/main/java/com/sparrow/hadmin/service/IArticleSortService.java
+M	src/main/java/com/sparrow/hadmin/service/IResourceService.java
+M	src/main/java/com/sparrow/hadmin/service/IRoleService.java
+M	src/main/java/com/sparrow/hadmin/service/IUserService.java
+M	src/main/java/com/sparrow/hadmin/service/impl/ArticleServiceImpl.java
+M	src/main/java/com/sparrow/hadmin/service/impl/ArticleSortServiceImpl.java
+M	src/main/java/com/sparrow/hadmin/service/impl/ResourceServiceImpl.java
+M	src/main/java/com/sparrow/hadmin/service/impl/RoleServiceImpl.java
+M	src/main/java/com/sparrow/hadmin/service/impl/UserServiceImpl.java
+M	src/main/java/com/sparrow/hadmin/vo/ArticleSortVo.java
+A	src/main/resources/static/diyUpload/css/diyUpload.css
+A	src/main/resources/static/diyUpload/css/webuploader.css
+A	src/main/resources/static/diyUpload/css/zyUpload.css
+A	src/main/resources/static/diyUpload/images/bgblack.png
+A	src/main/resources/static/diyUpload/images/check_alt.png
+A	src/main/resources/static/diyUpload/images/filebg/avi.png
+A	src/main/resources/static/diyUpload/images/filebg/cdr.png
+A	src/main/resources/static/diyUpload/images/filebg/csv.png
+A	src/main/resources/static/diyUpload/images/filebg/doc.png
+A	src/main/resources/static/diyUpload/images/filebg/jpg.png
+A	src/main/resources/static/diyUpload/images/filebg/mp3.png
+A	src/main/resources/static/diyUpload/images/filebg/pdf.png
+A	src/main/resources/static/diyUpload/images/filebg/png.png
+A	src/main/resources/static/diyUpload/images/filebg/ppt.png
+A	src/main/resources/static/diyUpload/images/filebg/rar.png
+A	src/main/resources/static/diyUpload/images/filebg/txt.png
+A	src/main/resources/static/diyUpload/images/filebg/xls.png
+A	src/main/resources/static/diyUpload/images/filebg/zip.png
+A	"src/main/resources/static/diyUpload/images/filebg/\345\244\215\344\273\266 txt.png"
+A	src/main/resources/static/diyUpload/images/x_alt.png
+A	src/main/resources/static/diyUpload/js/diyUpload.js
+A	src/main/resources/static/diyUpload/js/webuploader.html5only.min.js
+M	src/main/resources/templates/admin/article/form.ftl
+M	src/main/resources/templates/admin/article/index.ftl
+M	src/main/resources/templates/admin/common/common.ftl
+A	src/main/resources/templates/admin/common/uploadimage_common.ftl
+M	src/main/resources/templates/admin/login.ftl
+
+e8fb6eb;文章管理新增作者，和标签云
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleController.java
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleSortController.java
+M	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+M	src/main/java/com/sparrow/hadmin/entity/Article.java
+M	src/main/java/com/sparrow/hadmin/fileupload/UploadController.java
+M	src/main/resources/templates/admin/article/form.ftl
+M	src/main/resources/templates/admin/article/index.ftl
+
+53a0ad7;更改github上面显示的语言
+A	.gitattributes
+
+c4ff273;Link页面完善
+M	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+M	src/main/java/com/sparrow/hadmin/service/impl/ArticleServiceImpl.java
+
+ab6ca03;动态生成博客详情页面的svg背景图片
+A	src/main/java/com/sparrow/hadmin/common/utils/RandomUtils.java
+M	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+
+c70d45d;完善博客详情页面，h2，h3动态新增描点功能，新增3张svg背景图
+M	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+A	src/main/resources/static/html/img/5.svg
+A	src/main/resources/static/html/img/6.svg
+A	src/main/resources/static/html/img/7.svg
+
+f117e1d;从github上面获取所有项目进行展示，调用github api接口获取项目总数，starts总数和forks总数 完善个人博客系统
+M	pom.xml
+M	springboot-hadmin.iml
+A	src/main/java/com/sparrow/hadmin/api/github/GistViaOAuthToken.java
+A	src/main/java/com/sparrow/hadmin/api/github/MyComparator.java
+A	src/main/java/com/sparrow/hadmin/api/github/PageCommits.java
+A	src/main/java/com/sparrow/hadmin/api/github/PrintRepos.java
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleSortController.java
+M	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+M	src/main/java/com/sparrow/hadmin/entity/Article.java
+M	src/main/java/com/sparrow/hadmin/entity/ArticleSort.java
+M	src/main/java/com/sparrow/hadmin/service/IArticleService.java
+A	src/main/java/com/sparrow/hadmin/vo/ArticleSortVo.java
+A	src/main/resources/static/html/img/1.svg
+A	src/main/resources/static/html/img/2.svg
+A	src/main/resources/static/html/img/3.svg
+A	src/main/resources/static/html/img/4.svg
+A	src/main/resources/static/html/img/opensource_bg.svg
+
+bfb87cd;增加效果图
+M	README.md
+
+9eb2f7f;完善spring-boot系列文章
+M	README.md
+
+e7e783f;编辑备注
+M	README.md
+
+8a30319;新增效果图片
+A	src/main/resources/static/effect_pic/1.png
+A	src/main/resources/static/effect_pic/10.png
+A	src/main/resources/static/effect_pic/2.png
+A	src/main/resources/static/effect_pic/3.png
+A	src/main/resources/static/effect_pic/4.png
+A	src/main/resources/static/effect_pic/5.png
+A	src/main/resources/static/effect_pic/6.png
+A	src/main/resources/static/effect_pic/7.png
+A	src/main/resources/static/effect_pic/8.png
+A	src/main/resources/static/effect_pic/9.png
+
+d2152e3;完善spring-boot系列文章
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleController.java
+M	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+M	src/main/java/com/sparrow/hadmin/dao/IArticleDao.java
+M	src/main/java/com/sparrow/hadmin/entity/Article.java
+M	src/main/java/com/sparrow/hadmin/service/IArticleService.java
+M	src/main/java/com/sparrow/hadmin/service/impl/ArticleServiceImpl.java
+M	src/main/resources/templates/admin/article/index.ftl
+
+213da16;发现使用ftl后缀会比使用html后缀idea有更友好的提示效果，是页面看起来不那么单调
+M	src/main/resources/templates/admin/article/index.ftl
+M	src/main/resources/templates/admin/article/sort/form.ftl
+M	src/main/resources/templates/admin/article/sort/index.ftl
+D	src/main/resources/templates/html/blog/about.html
+D	src/main/resources/templates/html/blog/allMyBlog.html
+D	src/main/resources/templates/html/blog/footer.html
+D	src/main/resources/templates/html/blog/header.html
+D	src/main/resources/templates/html/blog/link.html
+D	src/main/resources/templates/html/blog/openSourceProjects.html
+D	src/main/resources/templates/html/blog/spring-boot.html
+
+e5975bd;完善博客首页，动态加载数据，分页加载数据
+M	src/main/java/com/sparrow/hadmin/controller/BaseController.java
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleController.java
+M	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+A	src/main/resources/static/html/js/bootstrap-paginator.js
+M	src/main/resources/templates/admin/article/form.ftl
+M	src/main/resources/templates/admin/article/index.ftl
+
+50323f5;引入博客功能
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleController.java
+A	src/main/java/com/sparrow/hadmin/controller/blog/BlogController.java
+M	src/main/java/com/sparrow/hadmin/entity/Article.java
+M	src/main/java/com/sparrow/hadmin/service/impl/ArticleServiceImpl.java
+M	src/main/resources/templates/admin/article/form.ftl
+M	src/main/resources/templates/admin/article/index.ftl
+A	src/main/resources/templates/html/blog/about.html
+A	src/main/resources/templates/html/blog/allMyBlog.html
+A	src/main/resources/templates/html/blog/footer.html
+A	src/main/resources/templates/html/blog/header.html
+A	src/main/resources/templates/html/blog/link.html
+A	src/main/resources/templates/html/blog/openSourceProjects.html
+A	src/main/resources/templates/html/blog/spring-boot.html
+
+c3d0730;完善文章分类，排序等功能
+M	src/main/java/com/sparrow/hadmin/controller/BaseController.java
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleController.java
+M	src/main/java/com/sparrow/hadmin/entity/Article.java
+M	src/main/java/com/sparrow/hadmin/service/impl/ArticleServiceImpl.java
+M	src/main/resources/templates/admin/article/form.ftl
+M	src/main/resources/templates/admin/article/index.ftl
+
+7b8c1a4;文章分类管理功能开发
+A	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleSortController.java
+A	src/main/java/com/sparrow/hadmin/dao/IArticleSortDao.java
+A	src/main/java/com/sparrow/hadmin/entity/ArticleSort.java
+A	src/main/java/com/sparrow/hadmin/service/IArticleSortService.java
+A	src/main/java/com/sparrow/hadmin/service/impl/ArticleSortServiceImpl.java
+D	src/main/resources/templates/admin/article/grant.ftl
+A	src/main/resources/templates/admin/article/sort/form.ftl
+A	src/main/resources/templates/admin/article/sort/index.ftl
+M	src/main/resources/templates/admin/index.ftl
+
+724a7fb;图片上传服务器配置
+A	src/main/java/com/sparrow/hadmin/fileupload/UploadController.java
+
+97450e4;文章管理，集成wangEditor可视化编辑器
+M	pom.xml
+M	springboot-hadmin.iml
+M	src/main/java/com/sparrow/hadmin/Application.java
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleController.java
+M	src/main/resources/application.properties
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/css/wangEditor.css
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/css/wangEditor.less
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/css/wangEditor.min.css
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/fonts/icomoon.eot
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/fonts/icomoon.svg
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/fonts/icomoon.ttf
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/fonts/icomoon.woff
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/js/lib/jquery-1.10.2.min.js
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/js/lib/jquery-2.2.1.js
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/js/wangEditor.js
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/js/wangEditor.min.js
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/js/wangHighLighter-1.0.0-min.js
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/dist/js/wangHighLighter-1.0.0.js
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/editorconfig.js
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/1.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/10.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/11.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/12.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/13.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/14.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/15.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/16.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/17.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/18.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/19.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/2.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/20.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/21.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/22.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/23.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/24.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/25.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/26.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/27.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/28.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/29.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/3.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/30.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/31.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/32.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/33.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/34.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/35.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/36.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/37.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/38.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/39.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/4.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/40.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/41.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/42.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/43.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/44.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/45.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/46.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/47.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/48.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/49.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/5.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/50.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/6.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/7.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/8.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/default/9.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/jinxing/1.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/jinxing/2.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/jinxing/3.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/jinxing/4.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/jinxing/5.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/emotions/jinxing/6.gif
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/highlightjs/dark.css
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/highlightjs/github.css
+A	src/main/resources/static/hadmin/js/plugins/wangEditor-2.1.23/static/highlightjs/highlight.pack.js
+M	src/main/resources/templates/admin/article/form.ftl
+M	src/main/resources/templates/admin/article/index.ftl
+M	src/main/resources/templates/admin/common/common.ftl
+A	src/main/resources/templates/admin/common/wangEditorConfig.ftl
+
+663595f;抽取公共的js，采用导入的形式引入
+M	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleController.java
+M	src/main/java/com/sparrow/hadmin/service/impl/ArticleServiceImpl.java
+M	src/main/java/com/sparrow/hadmin/service/impl/RoleServiceImpl.java
+M	src/main/java/com/sparrow/hadmin/service/impl/UserServiceImpl.java
+M	src/main/resources/templates/admin/article/form.ftl
+M	src/main/resources/templates/admin/article/grant.ftl
+M	src/main/resources/templates/admin/article/index.ftl
+M	src/main/resources/templates/admin/role/form.ftl
+M	src/main/resources/templates/admin/role/index.ftl
+M	src/main/resources/templates/admin/user/form.ftl
+M	src/main/resources/templates/admin/user/grant.ftl
+M	src/main/resources/templates/admin/user/index.ftl
+
+d20b108;文章管理
+M	pom.xml
+R094	src/main/java/com/sparrow/hdmin/Application.java	src/main/java/com/sparrow/hadmin/Application.java
+R081	src/main/java/com/sparrow/hdmin/common/Constats.java	src/main/java/com/sparrow/hadmin/common/Constats.java
+R097	src/main/java/com/sparrow/hdmin/common/DateEditor.java	src/main/java/com/sparrow/hadmin/common/DateEditor.java
+R098	src/main/java/com/sparrow/hdmin/common/JsonResult.java	src/main/java/com/sparrow/hadmin/common/JsonResult.java
+R098	src/main/java/com/sparrow/hdmin/common/utils/AESUtils.java	src/main/java/com/sparrow/hadmin/common/utils/AESUtils.java
+R096	src/main/java/com/sparrow/hdmin/common/utils/MD5Utils.java	src/main/java/com/sparrow/hadmin/common/utils/MD5Utils.java
+R083	src/main/java/com/sparrow/hdmin/config/FreeMarkerConfig.java	src/main/java/com/sparrow/hadmin/config/FreeMarkerConfig.java
+R096	src/main/java/com/sparrow/hdmin/config/WebMvcConfig.java	src/main/java/com/sparrow/hadmin/config/WebMvcConfig.java
+R095	src/main/java/com/sparrow/hdmin/config/intercepter/CommonIntercepter.java	src/main/java/com/sparrow/hadmin/config/intercepter/CommonIntercepter.java
+R098	src/main/java/com/sparrow/hdmin/config/listener/ApplicationEventListener.java	src/main/java/com/sparrow/hadmin/config/listener/ApplicationEventListener.java
+R090	src/main/java/com/sparrow/hdmin/config/shiro/MyRealm.java	src/main/java/com/sparrow/hadmin/config/shiro/MyRealm.java
+R098	src/main/java/com/sparrow/hdmin/config/shiro/ShiroConfig.java	src/main/java/com/sparrow/hadmin/config/shiro/ShiroConfig.java
+R097	src/main/java/com/sparrow/hdmin/config/shiro/ShiroManager.java	src/main/java/com/sparrow/hadmin/config/shiro/ShiroManager.java
+R096	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/AuthenticatedTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/AuthenticatedTag.java
+R096	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/GuestTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/GuestTag.java
+R097	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/HasAnyRolesTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/HasAnyRolesTag.java
+R082	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/HasPermissionTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/HasPermissionTag.java
+R082	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/HasRoleTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/HasRoleTag.java
+R081	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/LacksPermissionTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/LacksPermissionTag.java
+R084	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/LacksRoleTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/LacksRoleTag.java
+R095	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/NotAuthenticatedTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/NotAuthenticatedTag.java
+R095	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/PermissionTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/PermissionTag.java
+R098	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/PrincipalTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/PrincipalTag.java
+R093	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/RoleTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/RoleTag.java
+R096	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/SecureTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/SecureTag.java
+R093	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/ShiroTags.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/ShiroTags.java
+R096	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/UserTag.java	src/main/java/com/sparrow/hadmin/config/shiro/freemarker/UserTag.java
+R096	src/main/java/com/sparrow/hdmin/controller/BaseController.java	src/main/java/com/sparrow/hadmin/controller/BaseController.java
+R080	src/main/java/com/sparrow/hdmin/controller/admin/AdminIndexController.java	src/main/java/com/sparrow/hadmin/controller/admin/AdminIndexController.java
+R093	src/main/java/com/sparrow/hdmin/controller/admin/LoginController.java	src/main/java/com/sparrow/hadmin/controller/admin/LoginController.java
+A	src/main/java/com/sparrow/hadmin/controller/admin/article/ArticleController.java
+R085	src/main/java/com/sparrow/hdmin/controller/admin/system/ResourceController.java	src/main/java/com/sparrow/hadmin/controller/admin/system/ResourceController.java
+R086	src/main/java/com/sparrow/hdmin/controller/admin/system/RoleController.java	src/main/java/com/sparrow/hadmin/controller/admin/system/RoleController.java
+R083	src/main/java/com/sparrow/hdmin/controller/admin/system/UserController.java	src/main/java/com/sparrow/hadmin/controller/admin/system/UserController.java
+A	src/main/java/com/sparrow/hadmin/controller/web/IndexController.java
+A	src/main/java/com/sparrow/hadmin/dao/IArticleDao.java
+R078	src/main/java/com/sparrow/hdmin/dao/IResourceDao.java	src/main/java/com/sparrow/hadmin/dao/IResourceDao.java
+R051	src/main/java/com/sparrow/hdmin/dao/IRoleDao.java	src/main/java/com/sparrow/hadmin/dao/IRoleDao.java
+R058	src/main/java/com/sparrow/hdmin/dao/IUserDao.java	src/main/java/com/sparrow/hadmin/dao/IUserDao.java
+R080	src/main/java/com/sparrow/hdmin/dao/support/IBaseDao.java	src/main/java/com/sparrow/hadmin/dao/support/IBaseDao.java
+A	src/main/java/com/sparrow/hadmin/entity/Article.java
+R096	src/main/java/com/sparrow/hdmin/entity/Resource.java	src/main/java/com/sparrow/hadmin/entity/Resource.java
+R096	src/main/java/com/sparrow/hdmin/entity/Role.java	src/main/java/com/sparrow/hadmin/entity/Role.java
+R097	src/main/java/com/sparrow/hdmin/entity/User.java	src/main/java/com/sparrow/hadmin/entity/User.java
+R084	src/main/java/com/sparrow/hdmin/entity/support/BaseEntity.java	src/main/java/com/sparrow/hadmin/entity/support/BaseEntity.java
+A	src/main/java/com/sparrow/hadmin/service/IArticleService.java
+R069	src/main/java/com/sparrow/hdmin/service/IResourceService.java	src/main/java/com/sparrow/hadmin/service/IResourceService.java
+R074	src/main/java/com/sparrow/hdmin/service/IRoleService.java	src/main/java/com/sparrow/hadmin/service/IRoleService.java
+R078	src/main/java/com/sparrow/hdmin/service/IUserService.java	src/main/java/com/sparrow/hadmin/service/IUserService.java
+A	src/main/java/com/sparrow/hadmin/service/impl/ArticleServiceImpl.java
+R086	src/main/java/com/sparrow/hdmin/service/impl/ResourceServiceImpl.java	src/main/java/com/sparrow/hadmin/service/impl/ResourceServiceImpl.java
+R083	src/main/java/com/sparrow/hdmin/service/impl/RoleServiceImpl.java	src/main/java/com/sparrow/hadmin/service/impl/RoleServiceImpl.java
+R083	src/main/java/com/sparrow/hdmin/service/impl/UserServiceImpl.java	src/main/java/com/sparrow/hadmin/service/impl/UserServiceImpl.java
+R096	src/main/java/com/sparrow/hdmin/service/specification/SimpleSpecification.java	src/main/java/com/sparrow/hadmin/service/specification/SimpleSpecification.java
+R093	src/main/java/com/sparrow/hdmin/service/specification/SimpleSpecificationBuilder.java	src/main/java/com/sparrow/hadmin/service/specification/SimpleSpecificationBuilder.java
+R096	src/main/java/com/sparrow/hdmin/service/specification/SpecificationOperator.java	src/main/java/com/sparrow/hadmin/service/specification/SpecificationOperator.java
+R096	src/main/java/com/sparrow/hdmin/service/support/IBaseService.java	src/main/java/com/sparrow/hadmin/service/support/IBaseService.java
+R092	src/main/java/com/sparrow/hdmin/service/support/impl/BaseServiceImpl.java	src/main/java/com/sparrow/hadmin/service/support/impl/BaseServiceImpl.java
+R097	src/main/java/com/sparrow/hdmin/vo/ZtreeView.java	src/main/java/com/sparrow/hadmin/vo/ZtreeView.java
+D	src/main/java/com/sparrow/hdmin/controller/web/IndexController.java
+M	src/main/resources/application.properties
+A	src/main/resources/templates/admin/article/form.ftl
+A	src/main/resources/templates/admin/article/grant.ftl
+A	src/main/resources/templates/admin/article/index.ftl
+M	src/main/resources/templates/admin/common/common.ftl
+M	src/main/resources/templates/admin/index.ftl
+M	src/main/resources/templates/admin/resource/index.ftl
+M	src/main/resources/templates/admin/role/index.ftl
+M	src/main/resources/templates/admin/user/index.ftl
+
+50418cc;Create README.md
+A	README.md
+
+0292106;修改备注
+D	readme.md
+M	src/main/resources/templates/admin/common/common.ftl
+
+764e212;修改pom文件
+M	pom.xml
+
+1dead81;文字介绍
+M	readme.md
+
+6fc60a9;修改配置
+M	readme.md
+R100	base.iml	springboot-hadmin.iml
+M	src/main/resources/application.properties
+
+e11447a;springboot-hdmin-freemarker springboot集成hdmin，freemarker 主要功能包括用户管理，角色管理，资源管理，动态分配资源 前端技术freemarker，bootstrap table，layer弹窗
+A	base.iml
+A	pom.xml
+A	readme.md
+A	src/main/java/com/sparrow/hdmin/Application.java
+A	src/main/java/com/sparrow/hdmin/common/Constats.java
+A	src/main/java/com/sparrow/hdmin/common/DateEditor.java
+A	src/main/java/com/sparrow/hdmin/common/JsonResult.java
+A	src/main/java/com/sparrow/hdmin/common/utils/AESUtils.java
+A	src/main/java/com/sparrow/hdmin/common/utils/MD5Utils.java
+A	src/main/java/com/sparrow/hdmin/config/FreeMarkerConfig.java
+A	src/main/java/com/sparrow/hdmin/config/WebMvcConfig.java
+A	src/main/java/com/sparrow/hdmin/config/intercepter/CommonIntercepter.java
+A	src/main/java/com/sparrow/hdmin/config/listener/ApplicationEventListener.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/MyRealm.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/ShiroConfig.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/ShiroManager.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/AuthenticatedTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/GuestTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/HasAnyRolesTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/HasPermissionTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/HasRoleTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/LacksPermissionTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/LacksRoleTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/NotAuthenticatedTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/PermissionTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/PrincipalTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/RoleTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/SecureTag.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/ShiroTags.java
+A	src/main/java/com/sparrow/hdmin/config/shiro/freemarker/UserTag.java
+A	src/main/java/com/sparrow/hdmin/controller/BaseController.java
+A	src/main/java/com/sparrow/hdmin/controller/admin/AdminIndexController.java
+A	src/main/java/com/sparrow/hdmin/controller/admin/LoginController.java
+A	src/main/java/com/sparrow/hdmin/controller/admin/system/ResourceController.java
+A	src/main/java/com/sparrow/hdmin/controller/admin/system/RoleController.java
+A	src/main/java/com/sparrow/hdmin/controller/admin/system/UserController.java
+A	src/main/java/com/sparrow/hdmin/controller/web/IndexController.java
+A	src/main/java/com/sparrow/hdmin/dao/IResourceDao.java
+A	src/main/java/com/sparrow/hdmin/dao/IRoleDao.java
+A	src/main/java/com/sparrow/hdmin/dao/IUserDao.java
+A	src/main/java/com/sparrow/hdmin/dao/support/IBaseDao.java
+A	src/main/java/com/sparrow/hdmin/entity/Resource.java
+A	src/main/java/com/sparrow/hdmin/entity/Role.java
+A	src/main/java/com/sparrow/hdmin/entity/User.java
+A	src/main/java/com/sparrow/hdmin/entity/support/BaseEntity.java
+A	src/main/java/com/sparrow/hdmin/service/IResourceService.java
+A	src/main/java/com/sparrow/hdmin/service/IRoleService.java
+A	src/main/java/com/sparrow/hdmin/service/IUserService.java
+A	src/main/java/com/sparrow/hdmin/service/impl/ResourceServiceImpl.java
+A	src/main/java/com/sparrow/hdmin/service/impl/RoleServiceImpl.java
+A	src/main/java/com/sparrow/hdmin/service/impl/UserServiceImpl.java
+A	src/main/java/com/sparrow/hdmin/service/specification/SimpleSpecification.java
+A	src/main/java/com/sparrow/hdmin/service/specification/SimpleSpecificationBuilder.java
+A	src/main/java/com/sparrow/hdmin/service/specification/SpecificationOperator.java
+A	src/main/java/com/sparrow/hdmin/service/support/IBaseService.java
+A	src/main/java/com/sparrow/hdmin/service/support/impl/BaseServiceImpl.java
+A	src/main/java/com/sparrow/hdmin/vo/ZtreeView.java
+A	src/main/resources/application.properties
+A	src/main/resources/ehcache.xml
+A	src/main/resources/import.sql
+A	src/main/resources/logback.xml
+A	src/main/resources/static/hadmin/404.html
+A	src/main/resources/static/hadmin/500.html
+A	src/main/resources/static/hadmin/agile_board.html
+A	src/main/resources/static/hadmin/article.html
+A	src/main/resources/static/hadmin/badges_labels.html
+A	src/main/resources/static/hadmin/basic_gallery.html
+A	src/main/resources/static/hadmin/blog.html
+A	src/main/resources/static/hadmin/blueimp.html
+A	src/main/resources/static/hadmin/buttons.html
+A	src/main/resources/static/hadmin/calendar.html
+A	src/main/resources/static/hadmin/carousel.html
+A	src/main/resources/static/hadmin/chat_view.html
+A	src/main/resources/static/hadmin/clients.html
+A	src/main/resources/static/hadmin/code_editor.html
+A	src/main/resources/static/hadmin/contacts.html
+A	src/main/resources/static/hadmin/css/animate.css
+A	src/main/resources/static/hadmin/css/bootstrap-rtl.css
+A	src/main/resources/static/hadmin/css/bootstrap.min.css
+A	src/main/resources/static/hadmin/css/demo/webuploader-demo.css
+A	src/main/resources/static/hadmin/css/font-awesome.css
+A	src/main/resources/static/hadmin/css/font-awesome.min.css
+A	src/main/resources/static/hadmin/css/login.css
+A	src/main/resources/static/hadmin/css/patterns/header-profile-skin-1.png
+A	src/main/resources/static/hadmin/css/patterns/header-profile-skin-3.png
+A	src/main/resources/static/hadmin/css/patterns/header-profile.png
+A	src/main/resources/static/hadmin/css/patterns/shattered.png
+A	src/main/resources/static/hadmin/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css
+A	src/main/resources/static/hadmin/css/plugins/blueimp/css/blueimp-gallery-indicator.css
+A	src/main/resources/static/hadmin/css/plugins/blueimp/css/blueimp-gallery-video.css
+A	src/main/resources/static/hadmin/css/plugins/blueimp/css/blueimp-gallery.css
+A	src/main/resources/static/hadmin/css/plugins/blueimp/css/blueimp-gallery.min.css
+A	src/main/resources/static/hadmin/css/plugins/blueimp/css/demo.css
+A	src/main/resources/static/hadmin/css/plugins/blueimp/img/error.png
+A	src/main/resources/static/hadmin/css/plugins/blueimp/img/error.svg
+A	src/main/resources/static/hadmin/css/plugins/blueimp/img/loading.gif
+A	src/main/resources/static/hadmin/css/plugins/blueimp/img/play-pause.png
+A	src/main/resources/static/hadmin/css/plugins/blueimp/img/play-pause.svg
+A	src/main/resources/static/hadmin/css/plugins/blueimp/img/video-play.png
+A	src/main/resources/static/hadmin/css/plugins/blueimp/img/video-play.svg
+A	src/main/resources/static/hadmin/css/plugins/bootstrap-table/bootstrap-table.min.css
+A	src/main/resources/static/hadmin/css/plugins/chosen/chosen-sprite.png
+A	src/main/resources/static/hadmin/css/plugins/chosen/chosen-sprite@2x.png
+A	src/main/resources/static/hadmin/css/plugins/chosen/chosen.css
+A	src/main/resources/static/hadmin/css/plugins/clockpicker/clockpicker.css
+A	src/main/resources/static/hadmin/css/plugins/codemirror/ambiance.css
+A	src/main/resources/static/hadmin/css/plugins/codemirror/codemirror.css
+A	src/main/resources/static/hadmin/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css
+A	src/main/resources/static/hadmin/css/plugins/colorpicker/img/bootstrap-colorpicker/alpha-horizontal.png
+A	src/main/resources/static/hadmin/css/plugins/colorpicker/img/bootstrap-colorpicker/alpha.png
+A	src/main/resources/static/hadmin/css/plugins/colorpicker/img/bootstrap-colorpicker/hue-horizontal.png
+A	src/main/resources/static/hadmin/css/plugins/colorpicker/img/bootstrap-colorpicker/hue.png
+A	src/main/resources/static/hadmin/css/plugins/colorpicker/img/bootstrap-colorpicker/saturation.png
+A	src/main/resources/static/hadmin/css/plugins/cropper/cropper.min.css
+A	src/main/resources/static/hadmin/css/plugins/dataTables/dataTables.bootstrap.css
+A	src/main/resources/static/hadmin/css/plugins/datapicker/datepicker3.css
+A	src/main/resources/static/hadmin/css/plugins/dropzone/basic.css
+A	src/main/resources/static/hadmin/css/plugins/dropzone/dropzone.css
+A	src/main/resources/static/hadmin/css/plugins/duallistbox/bootstrap-duallistbox.css
+A	src/main/resources/static/hadmin/css/plugins/footable/fonts/footable.eot
+A	src/main/resources/static/hadmin/css/plugins/footable/fonts/footable.svg
+A	src/main/resources/static/hadmin/css/plugins/footable/fonts/footable.ttf
+A	src/main/resources/static/hadmin/css/plugins/footable/fonts/footable.woff
+A	src/main/resources/static/hadmin/css/plugins/footable/footable.core.css
+A	src/main/resources/static/hadmin/css/plugins/fullcalendar/fullcalendar.css
+A	src/main/resources/static/hadmin/css/plugins/fullcalendar/fullcalendar.print.css
+A	src/main/resources/static/hadmin/css/plugins/iCheck/custom.css
+A	src/main/resources/static/hadmin/css/plugins/iCheck/green.png
+A	src/main/resources/static/hadmin/css/plugins/iCheck/green@2x.png
+A	src/main/resources/static/hadmin/css/plugins/images/sort_asc.png
+A	src/main/resources/static/hadmin/css/plugins/images/sort_desc.png
+A	src/main/resources/static/hadmin/css/plugins/images/sprite-skin-flat.png
+A	src/main/resources/static/hadmin/css/plugins/images/spritemap.png
+A	src/main/resources/static/hadmin/css/plugins/images/spritemap@2x.png
+A	src/main/resources/static/hadmin/css/plugins/ionRangeSlider/ion.rangeSlider.css
+A	src/main/resources/static/hadmin/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css
+A	src/main/resources/static/hadmin/css/plugins/jQueryUI/images/ui-bg_flat_0_aaaaaa_40x100.png
+A	src/main/resources/static/hadmin/css/plugins/jQueryUI/images/ui-bg_flat_75_ffffff_40x100.png
+A	src/main/resources/static/hadmin/css/plugins/jQueryUI/images/ui-icons_222222_256x240.png
+A	src/main/resources/static/hadmin/css/plugins/jQueryUI/images/ui-icons_454545_256x240.png
+A	src/main/resources/static/hadmin/css/plugins/jQueryUI/images/ui-icons_888888_256x240.png
+A	src/main/resources/static/hadmin/css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css
+A	src/main/resources/static/hadmin/css/plugins/jasny/jasny-bootstrap.min.css
+A	src/main/resources/static/hadmin/css/plugins/jqgrid/ui.jqgrid.css
+A	src/main/resources/static/hadmin/css/plugins/jsTree/32px.png
+A	src/main/resources/static/hadmin/css/plugins/jsTree/style.min.css
+A	src/main/resources/static/hadmin/css/plugins/jsTree/throbber.gif
+A	src/main/resources/static/hadmin/css/plugins/markdown/bootstrap-markdown.min.css
+A	src/main/resources/static/hadmin/css/plugins/morris/morris-0.4.3.min.css
+A	src/main/resources/static/hadmin/css/plugins/multiselect/bootstrap-multiselect.css
+A	src/main/resources/static/hadmin/css/plugins/nouslider/jquery.nouislider.css
+A	src/main/resources/static/hadmin/css/plugins/plyr/plyr.css
+A	src/main/resources/static/hadmin/css/plugins/plyr/sprite.svg
+A	src/main/resources/static/hadmin/css/plugins/simditor/simditor.css
+A	src/main/resources/static/hadmin/css/plugins/steps/jquery.steps.css
+A	src/main/resources/static/hadmin/css/plugins/summernote/summernote-bs3.css
+A	src/main/resources/static/hadmin/css/plugins/summernote/summernote.css
+A	src/main/resources/static/hadmin/css/plugins/sweetalert/sweetalert.css
+A	src/main/resources/static/hadmin/css/plugins/switchery/switchery.css
+A	src/main/resources/static/hadmin/css/plugins/toastr/toastr.min.css
+A	src/main/resources/static/hadmin/css/plugins/treeview/bootstrap-treeview.css
+A	src/main/resources/static/hadmin/css/plugins/webuploader/webuploader.css
+A	src/main/resources/static/hadmin/css/plugins/zTree/awesomeStyle/awesome.css
+A	src/main/resources/static/hadmin/css/plugins/zTree/awesomeStyle/awesome.less
+A	src/main/resources/static/hadmin/css/plugins/zTree/awesomeStyle/fa.less
+A	src/main/resources/static/hadmin/css/plugins/zTree/awesomeStyle/img/loading.gif
+A	src/main/resources/static/hadmin/css/plugins/zTree/metroStyle/img/line_conn.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/metroStyle/img/loading.gif
+A	src/main/resources/static/hadmin/css/plugins/zTree/metroStyle/img/metro.gif
+A	src/main/resources/static/hadmin/css/plugins/zTree/metroStyle/img/metro.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/metroStyle/metroStyle.css
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/diy/1_close.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/diy/1_open.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/diy/2.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/diy/3.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/diy/4.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/diy/5.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/diy/6.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/diy/7.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/diy/8.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/diy/9.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/line_conn.gif
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/loading.gif
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/zTreeStandard.gif
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/img/zTreeStandard.png
+A	src/main/resources/static/hadmin/css/plugins/zTree/zTreeStyle/zTreeStyle.css
+A	src/main/resources/static/hadmin/css/style.css
+A	src/main/resources/static/hadmin/css_animation.html
+A	src/main/resources/static/hadmin/diff.html
+A	src/main/resources/static/hadmin/draggable_panels.html
+A	src/main/resources/static/hadmin/empty_page.html
+A	src/main/resources/static/hadmin/faq.html
+A	src/main/resources/static/hadmin/favicon.ico
+A	src/main/resources/static/hadmin/file_manager.html
+A	src/main/resources/static/hadmin/fontawesome.html
+A	src/main/resources/static/hadmin/fonts/FontAwesome.otf
+A	src/main/resources/static/hadmin/fonts/fontawesome-webfont.eot
+A	src/main/resources/static/hadmin/fonts/fontawesome-webfont.svg
+A	src/main/resources/static/hadmin/fonts/fontawesome-webfont.ttf
+A	src/main/resources/static/hadmin/fonts/fontawesome-webfont.woff
+A	src/main/resources/static/hadmin/fonts/fontawesome-webfont.woff2
+A	src/main/resources/static/hadmin/fonts/glyphicons-halflings-regular.eot
+A	src/main/resources/static/hadmin/fonts/glyphicons-halflings-regular.svg
+A	src/main/resources/static/hadmin/fonts/glyphicons-halflings-regular.ttf
+A	src/main/resources/static/hadmin/fonts/glyphicons-halflings-regular.woff
+A	src/main/resources/static/hadmin/fonts/glyphicons-halflings-regular.woff2
+A	src/main/resources/static/hadmin/form_advanced.html
+A	src/main/resources/static/hadmin/form_basic.html
+A	src/main/resources/static/hadmin/form_builder.html
+A	src/main/resources/static/hadmin/form_editors.html
+A	src/main/resources/static/hadmin/form_file_upload.html
+A	src/main/resources/static/hadmin/form_markdown.html
+A	src/main/resources/static/hadmin/form_simditor.html
+A	src/main/resources/static/hadmin/form_validate.html
+A	src/main/resources/static/hadmin/form_webuploader.html
+A	src/main/resources/static/hadmin/form_wizard.html
+A	src/main/resources/static/hadmin/forum_main.html
+A	src/main/resources/static/hadmin/glyphicons.html
+A	src/main/resources/static/hadmin/graph_echarts.html
+A	src/main/resources/static/hadmin/graph_flot.html
+A	src/main/resources/static/hadmin/graph_metrics.html
+A	src/main/resources/static/hadmin/graph_morris.html
+A	src/main/resources/static/hadmin/graph_peity.html
+A	src/main/resources/static/hadmin/graph_rickshaw.html
+A	src/main/resources/static/hadmin/graph_sparkline.html
+A	src/main/resources/static/hadmin/grid_options.html
+A	src/main/resources/static/hadmin/iconfont.html
+A	src/main/resources/static/hadmin/ie.html
+A	src/main/resources/static/hadmin/img/1.png
+A	src/main/resources/static/hadmin/img/a1.jpg
+A	src/main/resources/static/hadmin/img/a2.jpg
+A	src/main/resources/static/hadmin/img/a3.jpg
+A	src/main/resources/static/hadmin/img/a4.jpg
+A	src/main/resources/static/hadmin/img/a5.jpg
+A	src/main/resources/static/hadmin/img/a6.jpg
+A	src/main/resources/static/hadmin/img/a7.jpg
+A	src/main/resources/static/hadmin/img/a8.jpg
+A	src/main/resources/static/hadmin/img/a9.jpg
+A	src/main/resources/static/hadmin/img/bg.png
+A	src/main/resources/static/hadmin/img/browser.png
+A	src/main/resources/static/hadmin/img/iconfont-logo.png
+A	src/main/resources/static/hadmin/img/icons.png
+A	src/main/resources/static/hadmin/img/loading-upload.gif
+A	src/main/resources/static/hadmin/img/locked.png
+A	src/main/resources/static/hadmin/img/login-background.jpg
+A	src/main/resources/static/hadmin/img/p1.jpg
+A	src/main/resources/static/hadmin/img/p2.jpg
+A	src/main/resources/static/hadmin/img/p3.jpg
+A	src/main/resources/static/hadmin/img/profile.jpg
+A	src/main/resources/static/hadmin/img/profile_small.jpg
+A	src/main/resources/static/hadmin/img/progress.png
+A	src/main/resources/static/hadmin/img/sprite-skin-flat.png
+A	src/main/resources/static/hadmin/img/success.png
+A	src/main/resources/static/hadmin/img/user.png
+A	src/main/resources/static/hadmin/img/webuploader.png
+A	src/main/resources/static/hadmin/img/wenku_logo.png
+A	src/main/resources/static/hadmin/index.html
+A	src/main/resources/static/hadmin/index_v1.html
+A	src/main/resources/static/hadmin/invoice.html
+A	src/main/resources/static/hadmin/invoice_print.html
+A	src/main/resources/static/hadmin/js/bootstrap.min.js
+A	src/main/resources/static/hadmin/js/content.js
+A	src/main/resources/static/hadmin/js/demo/bootstrap-table-demo.js
+A	src/main/resources/static/hadmin/js/demo/bootstrap_table_test.json
+A	src/main/resources/static/hadmin/js/demo/bootstrap_table_test2.json
+A	src/main/resources/static/hadmin/js/demo/echarts-demo.js
+A	src/main/resources/static/hadmin/js/demo/flot-demo.js
+A	src/main/resources/static/hadmin/js/demo/form-advanced-demo.js
+A	src/main/resources/static/hadmin/js/demo/form-validate-demo.js
+A	src/main/resources/static/hadmin/js/demo/layer-demo.js
+A	src/main/resources/static/hadmin/js/demo/morris-demo.js
+A	src/main/resources/static/hadmin/js/demo/peity-demo.js
+A	src/main/resources/static/hadmin/js/demo/photos.json
+A	src/main/resources/static/hadmin/js/demo/rickshaw-demo.js
+A	src/main/resources/static/hadmin/js/demo/sparkline-demo.js
+A	src/main/resources/static/hadmin/js/demo/table_base.json
+A	src/main/resources/static/hadmin/js/demo/treeview-demo.js
+A	src/main/resources/static/hadmin/js/demo/webuploader-demo.js
+A	src/main/resources/static/hadmin/js/hAdmin.js
+A	src/main/resources/static/hadmin/js/index.js
+A	src/main/resources/static/hadmin/js/jquery-ui-1.10.4.min.js
+A	src/main/resources/static/hadmin/js/jquery-ui.custom.min.js
+A	src/main/resources/static/hadmin/js/jquery.min.js
+A	src/main/resources/static/hadmin/js/jquery.min.map
+A	src/main/resources/static/hadmin/js/plugins/beautifyhtml/beautifyhtml.js
+A	src/main/resources/static/hadmin/js/plugins/blueimp/jquery.blueimp-gallery.min.js
+A	src/main/resources/static/hadmin/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js
+A	src/main/resources/static/hadmin/js/plugins/bootstrap-table/bootstrap-table.min.js
+A	src/main/resources/static/hadmin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js
+A	src/main/resources/static/hadmin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js
+A	src/main/resources/static/hadmin/js/plugins/chartJs/Chart.min.js
+A	src/main/resources/static/hadmin/js/plugins/chosen/chosen.jquery.js
+A	src/main/resources/static/hadmin/js/plugins/cropper/cropper.min.js
+A	src/main/resources/static/hadmin/js/plugins/dataTables/dataTables.bootstrap.js
+A	src/main/resources/static/hadmin/js/plugins/dataTables/jquery.dataTables.js
+A	src/main/resources/static/hadmin/js/plugins/datapicker/bootstrap-datepicker.js
+A	src/main/resources/static/hadmin/js/plugins/duallistbox/jquery.bootstrap-duallistbox.js
+A	src/main/resources/static/hadmin/js/plugins/echarts/echarts-all.js
+A	src/main/resources/static/hadmin/js/plugins/flot/curvedLines.js
+A	src/main/resources/static/hadmin/js/plugins/flot/jquery.flot.js
+A	src/main/resources/static/hadmin/js/plugins/flot/jquery.flot.pie.js
+A	src/main/resources/static/hadmin/js/plugins/flot/jquery.flot.resize.js
+A	src/main/resources/static/hadmin/js/plugins/flot/jquery.flot.spline.js
+A	src/main/resources/static/hadmin/js/plugins/flot/jquery.flot.symbol.js
+A	src/main/resources/static/hadmin/js/plugins/flot/jquery.flot.tooltip.min.js
+A	src/main/resources/static/hadmin/js/plugins/footable/footable.all.min.js
+A	src/main/resources/static/hadmin/js/plugins/fullcalendar/fullcalendar.min.js
+A	src/main/resources/static/hadmin/js/plugins/fullcalendar/moment.min.js
+A	src/main/resources/static/hadmin/js/plugins/gritter/images/gritter-light.png
+A	src/main/resources/static/hadmin/js/plugins/gritter/images/gritter.png
+A	src/main/resources/static/hadmin/js/plugins/gritter/images/ie-spacer.gif
+A	src/main/resources/static/hadmin/js/plugins/gritter/jquery.gritter.css
+A	src/main/resources/static/hadmin/js/plugins/gritter/jquery.gritter.min.js
+A	src/main/resources/static/hadmin/js/plugins/iCheck/icheck.min.js
+A	src/main/resources/static/hadmin/js/plugins/ionRangeSlider/ion.rangeSlider.min.js
+A	src/main/resources/static/hadmin/js/plugins/ionRangeSlider/jasny/jasny-bootstrap.min.js
+A	src/main/resources/static/hadmin/js/plugins/jasny/jasny-bootstrap.min.js
+A	src/main/resources/static/hadmin/js/plugins/jeditable/jquery.jeditable.js
+A	src/main/resources/static/hadmin/js/plugins/jqgrid/i18n/grid.locale-cn.js
+A	src/main/resources/static/hadmin/js/plugins/jqgrid/jquery.jqGrid.min.js
+A	src/main/resources/static/hadmin/js/plugins/jquery-ui/jquery-ui.min.js
+A	src/main/resources/static/hadmin/js/plugins/jsTree/jstree.js
+A	src/main/resources/static/hadmin/js/plugins/jsTree/jstree.min.js
+A	src/main/resources/static/hadmin/js/plugins/layer/extend/layer.ext.js
+A	src/main/resources/static/hadmin/js/plugins/layer/laydate/laydate.js
+A	src/main/resources/static/hadmin/js/plugins/layer/laydate/need/laydate.css
+A	src/main/resources/static/hadmin/js/plugins/layer/laydate/skins/default/icon.png
+A	src/main/resources/static/hadmin/js/plugins/layer/laydate/skins/default/laydate.css
+A	src/main/resources/static/hadmin/js/plugins/layer/layer.min.js
+A	src/main/resources/static/hadmin/js/plugins/layer/layim/data/chatlog.json
+A	src/main/resources/static/hadmin/js/plugins/layer/layim/data/friend.json
+A	src/main/resources/static/hadmin/js/plugins/layer/layim/data/group.json
+A	src/main/resources/static/hadmin/js/plugins/layer/layim/data/groups.json
+A	src/main/resources/static/hadmin/js/plugins/layer/layim/layim.css
+A	src/main/resources/static/hadmin/js/plugins/layer/layim/layim.js
+A	src/main/resources/static/hadmin/js/plugins/layer/layim/loading.gif
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/icon-ext.png
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/icon.png
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/icon_ext.png
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/loading-0.gif
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/loading-1.gif
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/loading-2.gif
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/textbg.png
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/xubox_ico0.png
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/xubox_loading0.gif
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/xubox_loading1.gif
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/xubox_loading2.gif
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/xubox_loading3.gif
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/default/xubox_title0.png
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/layer.css
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/layer.ext.css
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/moon/default.png
+A	src/main/resources/static/hadmin/js/plugins/layer/skin/moon/style.css
+A	src/main/resources/static/hadmin/js/plugins/markdown/bootstrap-markdown.js
+A	src/main/resources/static/hadmin/js/plugins/markdown/bootstrap-markdown.zh.js
+A	src/main/resources/static/hadmin/js/plugins/markdown/markdown.js
+A	src/main/resources/static/hadmin/js/plugins/markdown/to-markdown.js
+A	src/main/resources/static/hadmin/js/plugins/metisMenu/jquery.metisMenu.js
+A	src/main/resources/static/hadmin/js/plugins/multiselect/bootstrap-multiselect.js
+A	src/main/resources/static/hadmin/js/plugins/peity/jquery.peity.min.js
+A	src/main/resources/static/hadmin/js/plugins/plyr/plyr.js
+A	src/main/resources/static/hadmin/js/plugins/preetyTextDiff/jquery.pretty-text-diff.min.js
+A	src/main/resources/static/hadmin/js/plugins/prettyfile/bootstrap-prettyfile.js
+A	src/main/resources/static/hadmin/js/plugins/slimscroll/jquery.slimscroll.min.js
+A	src/main/resources/static/hadmin/js/plugins/sparkline/jquery.sparkline.min.js
+A	src/main/resources/static/hadmin/js/plugins/suggest/bootstrap-suggest.min.js
+A	src/main/resources/static/hadmin/js/plugins/suggest/data.json
+A	src/main/resources/static/hadmin/js/plugins/toastr/toastr.min.js
+A	src/main/resources/static/hadmin/js/plugins/treeview/bootstrap-treeview.js
+A	src/main/resources/static/hadmin/js/plugins/validate/additional-methods.min.js
+A	src/main/resources/static/hadmin/js/plugins/validate/jquery.validate.min.js
+A	src/main/resources/static/hadmin/js/plugins/validate/messages_zh.min.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/.gitattributes
+A	src/main/resources/static/hadmin/js/plugins/zTree/.gitignore
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery-1.4.4.min.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery.ztree.all.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery.ztree.all.min.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery.ztree.core.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery.ztree.core.min.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery.ztree.excheck.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery.ztree.excheck.min.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery.ztree.exedit.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery.ztree.exedit.min.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery.ztree.exhide.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/jquery.ztree.exhide.min.js
+A	src/main/resources/static/hadmin/js/plugins/zTree/ztree.3.5.26.zip
+A	src/main/resources/static/hadmin/jstree.html
+A	src/main/resources/static/hadmin/layer.html
+A	src/main/resources/static/hadmin/layerdate.html
+A	src/main/resources/static/hadmin/layouts.html
+A	src/main/resources/static/hadmin/lockscreen.html
+A	src/main/resources/static/hadmin/login.html
+A	src/main/resources/static/hadmin/login_v2.html
+A	src/main/resources/static/hadmin/mail_compose.html
+A	src/main/resources/static/hadmin/mail_detail.html
+A	src/main/resources/static/hadmin/mailbox.html
+A	src/main/resources/static/hadmin/modal_window.html
+A	src/main/resources/static/hadmin/nestable_list.html
+A	src/main/resources/static/hadmin/notifications.html
+A	src/main/resources/static/hadmin/pin_board.html
+A	src/main/resources/static/hadmin/plyr.html
+A	src/main/resources/static/hadmin/profile.html
+A	src/main/resources/static/hadmin/project_detail.html
+A	src/main/resources/static/hadmin/projects.html
+A	src/main/resources/static/hadmin/register.html
+A	src/main/resources/static/hadmin/search_results.html
+A	src/main/resources/static/hadmin/social_feed.html
+A	src/main/resources/static/hadmin/spinners.html
+A	src/main/resources/static/hadmin/sweetalert.html
+A	src/main/resources/static/hadmin/table_basic.html
+A	src/main/resources/static/hadmin/table_bootstrap.html
+A	src/main/resources/static/hadmin/table_data_tables.html
+A	src/main/resources/static/hadmin/table_foo_table.html
+A	src/main/resources/static/hadmin/table_jqgrid.html
+A	src/main/resources/static/hadmin/tabs_panels.html
+A	src/main/resources/static/hadmin/teams_board.html
+A	src/main/resources/static/hadmin/timeline.html
+A	src/main/resources/static/hadmin/timeline_v2.html
+A	src/main/resources/static/hadmin/toastr_notifications.html
+A	src/main/resources/static/hadmin/tree_view.html
+A	src/main/resources/static/hadmin/typography.html
+A	src/main/resources/static/hadmin/widgets.html
+A	src/main/resources/templates/admin/common/common.ftl
+A	src/main/resources/templates/admin/index.ftl
+A	src/main/resources/templates/admin/login.ftl
+A	src/main/resources/templates/admin/resource/form.ftl
+A	src/main/resources/templates/admin/resource/index.ftl
+A	src/main/resources/templates/admin/role/form.ftl
+A	src/main/resources/templates/admin/role/grant.ftl
+A	src/main/resources/templates/admin/role/index.ftl
+A	src/main/resources/templates/admin/user/form.ftl
+A	src/main/resources/templates/admin/user/grant.ftl
+A	src/main/resources/templates/admin/user/index.ftl
+A	src/main/resources/templates/admin/welcome.ftl

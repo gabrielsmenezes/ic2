@@ -1,0 +1,255 @@
+4a7d48d;Merge pull request #17 from ragdroid/dagger-android
+134c622;update libraries
+M	app/build.gradle
+M	app/src/main/java/com/ragdroid/dahaka/util/BindingAdapter.java
+M	build.gradle
+
+d4f1b5f;Merge pull request #12 from bangarharshit/dagger-scopes
+449b90a;Providers are made static to remove redundant generated modules object
+M	app/src/androidTest/java/com/ragdroid/dahaka/activity/login/TestLoginModule.java
+M	app/src/androidTest/java/com/ragdroid/dahaka/api/MockApiModule.java
+M	app/src/androidTest/java/com/ragdroid/dahaka/app/MockAppModule.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsModule.java
+M	app/src/main/java/com/ragdroid/dahaka/api/ApiModule.java
+M	app/src/main/java/com/ragdroid/dahaka/app/AppDataBindingModule.java
+M	build.gradle
+
+7ea8938;Merge pull request #9 from ragdroid/readme
+004d226;docs(*): added README
+A	README.md
+A	images/CustomScopes.jpeg
+A	images/DahakaLow.gif
+
+e797e15;Merge pull request #8 from ragdroid/dagger-android
+1949b75;Merge pull request #4 from ragdroid/add-license
+132cf53;Merge pull request #1 from ragdroid/add-license
+17f496d;Create License
+A	LICENSE.md
+
+2218d66;test(login): mock login presenter
+M	app/src/androidTest/java/com/ragdroid/dahaka/app/TestAppBindingModule.java
+M	app/src/androidTest/java/com/ragdroid/dahaka/app/TestComponent.java
+
+1f8b90f;fix(*): small fixes
+M	app/src/main/java/com/ragdroid/dahaka/app/AppModule.java
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+017ddcc;test(login): mock presenter in instrumentation tests
+M	app/build.gradle
+R076	app/src/androidTest/java/com/ragdroid/dahaka/dagger/DahakaTestApplication.java	app/src/androidTest/java/com/ragdroid/dahaka/DahakaTestApplication.java
+M	app/src/androidTest/java/com/ragdroid/dahaka/activity/login/LoginActivityTest.java
+A	app/src/androidTest/java/com/ragdroid/dahaka/activity/login/TestLoginModule.java
+R082	app/src/androidTest/java/com/ragdroid/dahaka/dagger/MockApiModule.java	app/src/androidTest/java/com/ragdroid/dahaka/api/MockApiModule.java
+R093	app/src/androidTest/java/com/ragdroid/dahaka/dagger/MockAppModule.java	app/src/androidTest/java/com/ragdroid/dahaka/app/MockAppModule.java
+A	app/src/androidTest/java/com/ragdroid/dahaka/app/TestAppBindingModule.java
+R068	app/src/androidTest/java/com/ragdroid/dahaka/dagger/TestComponent.java	app/src/androidTest/java/com/ragdroid/dahaka/app/TestComponent.java
+R084	app/src/androidTest/java/com/ragdroid/dahaka/dagger/TestRunner.java	app/src/androidTest/java/com/ragdroid/dahaka/app/TestRunner.java
+
+2b99029;test(*): added login test
+M	app/build.gradle
+A	app/src/androidTest/java/com/ragdroid/dahaka/BaseTest.java
+A	app/src/androidTest/java/com/ragdroid/dahaka/activity/login/LoginActivityTest.java
+A	app/src/androidTest/java/com/ragdroid/dahaka/activity/login/TestDataFactory.java
+A	app/src/androidTest/java/com/ragdroid/dahaka/dagger/DahakaTestApplication.java
+A	app/src/androidTest/java/com/ragdroid/dahaka/dagger/MockApiModule.java
+A	app/src/androidTest/java/com/ragdroid/dahaka/dagger/MockAppModule.java
+A	app/src/androidTest/java/com/ragdroid/dahaka/dagger/TestComponent.java
+A	app/src/androidTest/java/com/ragdroid/dahaka/dagger/TestRunner.java
+M	app/src/main/java/com/ragdroid/dahaka/DahakaApplication.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginActivity.java
+M	app/src/main/java/com/ragdroid/dahaka/api/entity/Pokemon.java
+M	app/src/main/java/com/ragdroid/dahaka/user/BaseUserActivity.java
+M	app/src/main/res/layout/activity_login.xml
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+8fafb61;feat(*): dagger-android, dahaka is defeated
+M	app/build.gradle
+M	app/src/main/java/com/ragdroid/dahaka/DahakaApplication.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/AppBindingModule.java
+D	app/src/main/java/com/ragdroid/dahaka/activity/FragmentInjector.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/HomeActivity.java
+D	app/src/main/java/com/ragdroid/dahaka/activity/home/HomeComponent.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/HomeModule.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/moves/MovesFragment.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/profile/ProfileFragment.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/stats/StatsFragment.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsActivity.java
+D	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsComponent.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginActivity.java
+D	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginComponent.java
+M	app/src/main/java/com/ragdroid/dahaka/api/ApiModule.java
+M	app/src/main/java/com/ragdroid/dahaka/app/AppComponent.java
+A	app/src/main/java/com/ragdroid/dahaka/app/AppDataBindingComponent.java
+A	app/src/main/java/com/ragdroid/dahaka/app/AppDataBindingModule.java
+M	app/src/main/java/com/ragdroid/dahaka/app/AppModule.java
+D	app/src/main/java/com/ragdroid/dahaka/app/ApplicationBinders.java
+M	app/src/main/java/com/ragdroid/dahaka/app/UserManager.java
+M	app/src/main/java/com/ragdroid/dahaka/mvp/BaseActivity.java
+M	app/src/main/java/com/ragdroid/dahaka/mvp/BaseFragment.java
+M	app/src/main/java/com/ragdroid/dahaka/user/BaseUserActivity.java
+A	app/src/main/java/com/ragdroid/dahaka/user/UserBindingModule.java
+M	app/src/main/java/com/ragdroid/dahaka/user/UserComponent.java
+A	app/src/main/java/com/ragdroid/dahaka/user/UserInjection.java
+D	app/src/main/java/com/ragdroid/dahaka/user/UserModule.java
+
+50419c5;fix(*): small fixes
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/ic_launcher-web.png
+M	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsActivity.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsModule.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsPresenter.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginActivity.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginModel.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginPresenter.java
+M	app/src/main/java/com/ragdroid/dahaka/util/BindingAdapter.java
+M	app/src/main/res/layout/activity_home.xml
+M	app/src/main/res/layout/activity_items.xml
+M	app/src/main/res/layout/activity_login.xml
+M	app/src/main/res/layout/item_held.xml
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/dimens.xml
+
+05b333c;feat(*): added caching, fixes
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/ragdroid/dahaka/DahakaApplication.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/FragmentInjector.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/HomeActivity.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/HomeComponent.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/HomeContract.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/HomeModule.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/HomePresenter.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/moves/MovesContract.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/moves/MovesFragment.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/moves/MovesModel.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/moves/MovesPresenter.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/profile/ProfileContract.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/profile/ProfileFragment.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/profile/ProfileModel.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/home/profile/ProfilePresenter.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/stats/StatsContract.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/stats/StatsFragment.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/stats/StatsModel.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/stats/StatsPresenter.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsActivity.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsComponent.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsContract.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsModel.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsModule.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/items/ItemsPresenter.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/items/list/ItemsAdapter.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginActivity.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginContract.java
+M	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginPresenter.java
+M	app/src/main/java/com/ragdroid/dahaka/api/ApiModule.java
+M	app/src/main/java/com/ragdroid/dahaka/app/AppComponent.java
+M	app/src/main/java/com/ragdroid/dahaka/app/AppModule.java
+M	app/src/main/java/com/ragdroid/dahaka/app/UserManager.java
+M	app/src/main/java/com/ragdroid/dahaka/mvp/BaseActivity.java
+M	app/src/main/java/com/ragdroid/dahaka/mvp/BaseFragment.java
+M	app/src/main/java/com/ragdroid/dahaka/mvp/BasePresenterImpl.java
+M	app/src/main/java/com/ragdroid/dahaka/mvp/BaseView.java
+M	app/src/main/java/com/ragdroid/dahaka/user/BaseUserActivity.java
+D	app/src/main/java/com/ragdroid/dahaka/user/BaseUserPresenterImpl.java
+M	app/src/main/java/com/ragdroid/dahaka/user/UserComponent.java
+M	app/src/main/java/com/ragdroid/dahaka/user/UserModule.java
+M	app/src/main/java/com/ragdroid/dahaka/util/BindingAdapter.java
+A	app/src/main/res/color/home_navigation_color.xml
+A	app/src/main/res/drawable/ic_arrow_back.xml
+A	app/src/main/res/drawable/ic_items.xml
+A	app/src/main/res/drawable/ic_log_out.xml
+A	app/src/main/res/drawable/ic_moves.xml
+A	app/src/main/res/drawable/ic_profile.xml
+A	app/src/main/res/drawable/ic_stats.xml
+A	app/src/main/res/layout/activity_home.xml
+A	app/src/main/res/layout/activity_items.xml
+M	app/src/main/res/layout/activity_login.xml
+M	app/src/main/res/layout/fragment_moves.xml
+M	app/src/main/res/layout/fragment_profile.xml
+A	app/src/main/res/layout/fragment_stats.xml
+A	app/src/main/res/layout/item_held.xml
+M	app/src/main/res/menu/menu_home.xml
+A	app/src/main/res/menu/menu_home_navigation.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+M	build.gradle
+
+a17655b;feat(*): added home activity
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/HomeComponent.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/HomeContract.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/HomeModule.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/HomePresenter.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/profile/ProfileContract.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/profile/ProfileFragment.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/profile/ProfileModel.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/home/profile/ProfilePresenter.java
+A	app/src/main/java/com/ragdroid/dahaka/mvp/BaseFragment.java
+A	app/src/main/java/com/ragdroid/dahaka/user/BaseUserActivity.java
+A	app/src/main/java/com/ragdroid/dahaka/user/BaseUserPresenterImpl.java
+A	app/src/main/java/com/ragdroid/dahaka/util/BindingAdapter.java
+A	app/src/main/res/layout/fragment_moves.xml
+A	app/src/main/res/layout/fragment_profile.xml
+A	app/src/main/res/menu/menu_home.xml
+
+3c834dd;feat(*): added pokemon login, basic setup
+A	.gitignore
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/com/ragdroid/dahaka/ExampleInstrumentedTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/ragdroid/dahaka/DahakaApplication.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/ActivityScope.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginActivity.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginComponent.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginContract.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginModel.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginModule.java
+A	app/src/main/java/com/ragdroid/dahaka/activity/login/LoginPresenter.java
+A	app/src/main/java/com/ragdroid/dahaka/api/ApiModule.java
+A	app/src/main/java/com/ragdroid/dahaka/api/entity/Pokemon.java
+A	app/src/main/java/com/ragdroid/dahaka/app/AppComponent.java
+A	app/src/main/java/com/ragdroid/dahaka/app/AppModule.java
+A	app/src/main/java/com/ragdroid/dahaka/app/ApplicationBinders.java
+A	app/src/main/java/com/ragdroid/dahaka/app/UserManager.java
+A	app/src/main/java/com/ragdroid/dahaka/mvp/BaseActivity.java
+A	app/src/main/java/com/ragdroid/dahaka/mvp/BasePresenter.java
+A	app/src/main/java/com/ragdroid/dahaka/mvp/BasePresenterImpl.java
+A	app/src/main/java/com/ragdroid/dahaka/mvp/BaseView.java
+A	app/src/main/java/com/ragdroid/dahaka/user/PokemonService.java
+A	app/src/main/java/com/ragdroid/dahaka/user/UserComponent.java
+A	app/src/main/java/com/ragdroid/dahaka/user/UserModule.java
+A	app/src/main/java/com/ragdroid/dahaka/user/UserScope.java
+A	app/src/main/java/com/ragdroid/dahaka/util/BaseSchedulerProvider.java
+A	app/src/main/java/com/ragdroid/dahaka/util/SchedulerProvider.java
+A	app/src/main/java/com/ragdroid/dahaka/util/TextUtil.java
+A	app/src/main/res/layout/activity_login.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/test/java/com/ragdroid/dahaka/ExampleUnitTest.java
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle

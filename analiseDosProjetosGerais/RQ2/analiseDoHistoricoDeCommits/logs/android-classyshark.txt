@@ -1,0 +1,2556 @@
+25d0b27;Merge pull request #171 from mikeroyal/snap
+9bd80be;snap
+A	ClassySharkAndroid/snap/snapcraft.yaml
+
+ca04c8f;Changed fonts to look better on linux
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+
+bc096cb;Updated with latest dexlib version
+M	ClassySharkWS/build.gradle
+M	ClassySharkWS/gradle/wrapper/gradle-wrapper.jar
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+D	third_party/dexlib2.LICENSE
+D	third_party/dexlib2.jar
+
+1bffa2c;Merge pull request #165 from Foso/patch-1
+b9168c5;changed typo Retrobuid to RetroBuild
+M	README.md
+
+d86734e;dexlib2 and gradle updates
+M	ClassySharkWS/gradle/wrapper/gradle-wrapper.jar
+M	ClassySharkWS/gradlew
+M	third_party/dexlib2.jar
+
+bb45aab;updated source compatibility for more OSs
+M	ClassySharkWS/build.gradle
+
+d50b81b;Merge pull request #162 from bootstraponline/patch-1
+2ac877f;Fix spacing
+M	ClassySharkWS/build.gradle
+
+419ce80;Remove class path from fatJar
+M	ClassySharkWS/build.gradle
+
+df2d2c4;added fatJar task
+M	ClassySharkWS/build.gradle
+
+06c2997;Merge pull request #161 from google/method-name-sort
+e015d37;added sorted view by method and field names
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/JavaTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObject.java
+
+b35ebf1;bumped Gradle version
+M	ClassySharkAndroid/build.gradle
+
+4a8b572;added full grade build
+A	ClassySharkWS/gradle/wrapper/gradle-wrapper.jar
+A	ClassySharkWS/gradlew
+A	ClassySharkWS/gradlew.bat
+
+8253f61;Merge pull request #156 from bootstraponline/gradle
+2445ee9;Resolve deps via maven
+M	.gitignore
+M	ClassySharkWS/build.gradle
+D	third_party/ASM.LICENSE
+D	third_party/asm-all-5.0.4.jar
+D	third_party/bcel-5.2.jar
+D	third_party/bcel.LICENSE
+D	third_party/converter-gson-2.0.2.jar
+D	third_party/gson-2.6.2.jar
+D	third_party/guava-18.0.jar
+R100	third_party/jav-binutils.LICENSE	third_party/java-binutils.LICENSE
+D	third_party/okhttp-3.2.0.jar
+D	third_party/okio-1.7.0.jar
+D	third_party/retrofit-2.0.2.jar
+
+3f56824;Update README.md
+M	README.md
+
+b23dc0c;Merge pull request #151 from google/manifest-inspection
+ba45429;updated system actions
+M	ClassySharkAndroid/build.gradle
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+R073	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/asciitable/Table.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/Table.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/asciitable/Align.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/asciitable/Column.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ReceiverActionsBL.java
+
+f56b972;refactoring
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+
+eab4388;cleaning
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ReceiverActionsBL.java
+
+2c28a0e;fixed manifest
+A	ClassySharkWS/src/META-INF/MANIFEST.MF
+
+ae9ca45;added ascii map to APK dashboard
+D	ClassySharkWS/src/META-INF/MANIFEST.MF
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaDependenciesInspector.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaInternalAPIsInspector.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/asciitable/Align.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/asciitable/Column.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/asciitable/Table.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ReceiverActionsBL.java
+
+91107c3;removed jack support
+D	ClassySharkWS/src/com/android/jack/jayce/JayceFormatPackageLoader.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/io/FileChooserUtils.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/ContentReader.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/jar/JayceReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/methodscounter/RootBuilder.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ManifestInspector.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ReceiverActionsBL.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/MetaObjectDex.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/jayce/MetaObjectJayce.java
+D	third_party/jack-1.3-b2.jar
+
+b67ca6e;added license
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ManifestInspector.java
+
+13f8721;documentation fixes
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ManifestInspector.java
+
+911f0b9;tool versions
+M	ClassySharkAndroid/app/build.gradle
+M	ClassySharkAndroid/build.gradle
+
+31b4af5;minor typo fix
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ManifestInspector.java
+
+8794042;merge fixes
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+
+4ef117b;Merge branch 'master' into manifest-inspection
+69f6742;Merge pull request #150 from google/robustness-fixes
+cc819bc;added another scenario for custom dex loading
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/MultidexReader.java
+
+73b5285;non existing manifest elements
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/dex/DexlibLoader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/MetaObjectDex.java
+R054	third_party/dexlib2-2.1.0.jar	third_party/dexlib2.jar
+
+3ddb9bb;Merge branch 'master' into manifest-inspection
+edaff30;Update README.md
+M	README.md
+
+b18083e;Update README.md
+M	README.md
+
+20f82f4;Merge branch 'master' into manifest-inspection
+2a9ca59;Merge pull request #148 from google/daily-activations
+ba158e7;implementation
+M	ClassySharkWS/src/com/google/classyshark/Main.java
+A	ClassySharkWS/src/com/google/classyshark/analytics/Analytics.java
+A	ClassySharkWS/src/com/google/classyshark/analytics/FocusPoint.java
+A	ClassySharkWS/src/com/google/classyshark/analytics/GoogleAnalytics_v1_URLBuildingStrategy.java
+A	ClassySharkWS/src/com/google/classyshark/analytics/HTTPGetMethod.java
+A	ClassySharkWS/src/com/google/classyshark/analytics/JGoogleAnalyticsTracker.java
+A	ClassySharkWS/src/com/google/classyshark/analytics/LoggingAdapter.java
+A	ClassySharkWS/src/com/google/classyshark/analytics/URLBuildingStrategy.java
+
+ca5f718;Merge pull request #147 from bootstraponline/distZip
+f3f542c;Add distZip task for creating releases
+M	ClassySharkWS/build.gradle
+
+bf55aaf;wording for Intent Service
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ManifestInspector.java
+
+2074600;Merge branch 'master' into manifest-inspection
+1053eb1;Update README.md
+M	README.md
+
+7892cdb;Update README.md
+M	README.md
+
+34e9e19;Update README.md
+M	README.md
+
+b5ccd35;Merge branch 'master' into manifest-inspection
+8a94f6e;Merge pull request #146 from bootstraponline/build_gradle_ws
+513f715;Add build.gradle for ClassySharkWS
+M	.gitignore
+A	ClassySharkWS/build.gradle
+
+baee295;more BG services checks
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ManifestInspector.java
+
+861c8aa;added more approved actions
+M	ClassySharkAndroid/build.gradle
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ReceiverActionsBL.java
+
+ad4ea5b;full implementation
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ManifestInspector.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ReceiverActionsBL.java
+
+5d121c8;Merge branch 'master' into manifest-inspection
+21ed804;Merge pull request #142 from google/jayce
+0288b76;init drop
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/AndroidManifestPlainTextReader.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/manifest/ManifestInspector.java
+
+e37ad4e;plumbing method pie view
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/jar/JarReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/jar/JayceReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/methodscounter/RootBuilder.java
+
+03bb973;updated the version number
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+
+b6e9832;init drop
+A	ClassySharkWS/src/com/android/jack/jayce/JayceFormatPackageLoader.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/io/FileChooserUtils.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/ContentReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/jar/JarReader.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/jar/JayceReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObject.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectFactory.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/jayce/MetaObjectJayce.java
+A	third_party/jack-1.3-b2.jar
+
+fb35583;bumped Android tool versions
+M	ClassySharkAndroid/build.gradle
+
+647a74c;Merge pull request #138 from google/sun-internal-inspections
+bcbfed1;drop
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+R087	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaUnsafeInspector.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaInternalAPIsInspector.java
+
+2ebd257;Merge pull request #136 from google/unsafe-inspection
+be9b4cb;Delete ClassySharkPRD.pdf
+D	ClassySharkPRD.pdf
+
+89605e1;Merge branch 'master' into unsafe-inspection
+8090be2;added unsafe inspection
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaUnsafeInspector.java
+
+95387a1;Merge pull request #135 from dandv/patch-1
+658b63d;Fix typos, improve lead paragraph
+M	README.md
+
+391f1d2;condition fix
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaDependenciesInspector.java
+
+d0c6ec6;added view pager indicator
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaDependenciesInspector.java
+
+3462132;Merge pull request #134 from vanniktech/add_moshi
+fd7cb38;Add Moshi to JavaDependenciesInspector
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaDependenciesInspector.java
+
+e5f9235;Merge pull request #133 from google/duplicate-dependencies-inspector
+3b704ab;naming fixes
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+
+c424366;small fixes
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaDependenciesInspector.java
+
+5d698d1;additional inspections
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaDependenciesInspector.java
+
+e93a50a;init drop
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/JavaDependenciesInspector.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/MultidexReader.java
+
+3f111b4;fixed command line build error
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+
+c6a41da;Merge pull request #132 from google/search-in-manifest
+659b23e;code cleaning
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkNativeMethodsVisitor.java
+R087	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ClassesDexEntry.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ClassesDexDataEntry.java
+
+b7361d7;custom dex loading: custom classes.dex shown in the APK dashboard view
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/apk/ApkReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkNativeMethodsVisitor.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkReader.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ClassesDexEntry.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectFactory.java
+R072	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/Multidex.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/MultidexReader.java
+
+234d1ff;added dex entries iterator
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkReader.java
+
+4723fd5;refactoring for dex iterator
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/ApkInspectionsBag.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkDashboard.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkNativeMethodsVisitor.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/ApkReader.java
+R094	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/DynamicSymbolsInspector.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/DynamicSymbolsInspector.java
+R095	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/PrivateNativeLibsInspector.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/PrivateNativeLibsInspector.java
+R096	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/SyntheticAccessorsInspector.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/dashboard/SyntheticAccessorsInspector.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexMethodsDumper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/Multidex.java
+
+f87868f;minor fix for an un used variable
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexMethodsDumper.java
+
+5647311;fix classes.dex numbering on the APK translator page
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/ApkInspectionsBag.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexMethodsDumper.java
+
+879a64e;fix go to line bug & cleaning
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+
+0109fee;fix null conditions
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+
+d2ee15f;changed UX display, for manifest searches
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/Translator.java
+
+568fa8f;refactoring search in manifest changes
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/IDisplayArea.java
+
+083900c;go to a selected line in manifest
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/IDisplayArea.java
+
+72134dd;fix empty lines clicks
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+
+a2d1b20;fixed colouring
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+
+b3a75c5;cleaning the manifest search additions
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/IDisplayArea.java
+
+6901d76;fix error for missing method
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+
+8012464;init drop
+M	.gitignore
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/IDisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+
+5874a4a;added ClassyShark PRD
+A	ClassySharkPRD.pdf
+
+d249878;Update README.md
+M	README.md
+
+1bedc5a;Merge pull request #123 from pedronveloso/patch-1
+c1ac189;Update README.md
+M	README.md
+
+ce6d176;Merge pull request #120 from google/synthetic-accessors
+d62c457;variables naming fixes
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/ApkInspectionsBag.java
+
+96076cc;API and cosmetic fixes
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/ApkInspectionsBag.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/PrivateNativeLibsInspector.java
+
+d878721;formatting the output of the synthetic accessors part
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+
+64b44af;moved the multidex reading to one class
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/apk/ApkReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/Multidex.java
+
+b7694db;init drop + classes.dex names fixes
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/apk/ApkReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/ApkInspectionsBag.java
+R094	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/DynamicSymbolsInspector.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/DynamicSymbolsInspector.java
+R090	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/PrivateNativeLibsInspector.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/PrivateNativeLibsInspector.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/apkinspectionsbag/SyntheticAccessorsInspector.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/Multidex.java
+
+b934e72;added custom dex condition + next version
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhostFacade.java
+
+4d5bdad;Update README.md
+M	README.md
+
+115792c;Merge pull request #116 from google/display-area-plugin
+7529002;display area plug in
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+A	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/IDisplayArea.java
+
+56c83eb;Update README.md
+M	README.md
+
+c1274f5;Update README.md
+M	README.md
+
+0807ae1;Update README.md
+M	README.md
+
+39fdc3f;Update README.md
+M	README.md
+
+cf5cf7b;Update README.md
+M	README.md
+
+f029d71;Merge pull request #115 from google/classes-dex-file-size
+df43faa;fix https://github.com/google/android-classyshark/issues/110
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+
+b503bb6;Merge pull request #114 from andreban/tree-fix
+beed701;Fix last package not making to list
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+
+e5140d6;bumped version number
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+
+8215107;Merge pull request #112 from google/custom-standard-multidex
+97c787d;added custom dex checking for mulitdex
+M	ClassySharkWS/src/com/google/classyshark/Shark.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhostFacade.java
+
+830c052;Merge pull request #111 from google/soname-textrel-elf
+f135d82;fix bug https://github.com/google/android-classyshark/issues/109
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/DynamicSymbolsInspector.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/elf/ElfTranslator.java
+M	third_party/java-binutils.jar
+
+9d314f8;fixed RetroLambda support and added case for manually stripped APK
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/clazz/ClassNameVisitor.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/clazz/ClazzLoader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/clazz/ClazzReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/dex/DexReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/JavaTranslator.java
+
+8527ecc;Merge pull request #108 from google/is-multi-dex-api
+9babdc4;added isMultiDex for APK
+M	ClassySharkWS/src/com/google/classyshark/Shark.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhostFacade.java
+
+57dfa1d;Merge branch 'master' into is-multi-dex-api
+c12cfd0;Update README.md
+M	README.md
+
+47d7903;Update README.md
+M	README.md
+
+93ca26a;Merge pull request #107 from google/priv-libs-flagger
+834af1d;native libs looking inspector
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/PrivateNativeLibsInspector.java
+
+1f5f41d;Merge pull request #106 from google/all-native-depedendencies
+2bc18cd;fix bug https://github.com/google/android-classyshark/issues/103
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/elf/ElfTranslator.java
+
+581660a;removed previous tokens mapper
+D	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/MappingProcessor.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/MappingReader.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/ProguardMapper.java
+
+32c1e03;Merge pull request #104 from google/plugins-full
+5068fd5;implemented plugin system
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/FullArchiveReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/TokensMapper.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/plugins/EmptyFullArchiveReader.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/plugins/IdentityMapper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/Translator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/elf/ElfTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/jar/JarInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/JavaTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectWithMapper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/AndroidXmlTranslator.java
+
+9ca1ce4;Merge pull request #101 from chthai64/update-gradle-version
+fc1c4b8;update gradle from 2.1.0-beta1 to 2.1.0
+M	ClassySharkAndroid/build.gradle
+
+aa3099e;Merge pull request #100 from tiwiz/autoupdate_v2
+ccf6519;Fixes bug preventing the build of the app
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/AbstractDownloader.java
+
+e436fc4;Removes the GUI flag from the MessageRunnable
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/GuiDownloader.java
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/MessageRunnable.java
+
+ec0717c;Adds comments
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/AbstractDownloader.java
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/CliDownloader.java
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/GuiDownloader.java
+
+9bf54dc;Adds the cli changelog message
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/CliDownloader.java
+
+b33f221;Wires up the UpdateManger
+M	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+
+df89c2b;Adds the command line downloader
+A	ClassySharkWS/src/com/google/classyshark/updater/networking/CliDownloader.java
+
+7b1dfaf;Refactors the downloader
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/AbstractDownloader.java
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/GuiDownloader.java
+
+ac2942d;Starts refactoring updater so that it can have two algohrithms
+A	ClassySharkWS/src/com/google/classyshark/updater/networking/AbstractDownloader.java
+A	ClassySharkWS/src/com/google/classyshark/updater/networking/GuiDownloader.java
+
+a890589;Adds the update to the list of available params
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+
+4fdcaa1;Changes error message
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+
+5cb4695;removed non null annotation for dependencies
+M	ClassySharkWS/src/com/google/classyshark/updater/models/Release.java
+M	ClassySharkWS/src/com/google/classyshark/updater/utils/NamingUtils.java
+
+55e6e6c;minor fixes to auto uploader
+M	.gitignore
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+M	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+M	ClassySharkWS/src/com/google/classyshark/updater/models/Release.java
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/GitHubApi.java
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/MessageRunnable.java
+M	ClassySharkWS/src/com/google/classyshark/updater/utils/NamingUtils.java
+
+6aec59d;Merge pull request #99 from tiwiz/autoupdate
+30fe686;Makes a clearer update message
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/MessageRunnable.java
+
+c35f5a3;Skips the download if the same file is already present
+M	ClassySharkWS/src/com/google/classyshark/updater/utils/FileUtils.java
+
+734b458;Adds explanations on UpdateManager
+M	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+
+a72979c;Adds comments on Release file
+M	ClassySharkWS/src/com/google/classyshark/updater/models/Release.java
+
+d0bdd3a;Adds comments on GitHubApi file
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/GitHubApi.java
+
+bfc88a6;Refactors names
+M	ClassySharkWS/src/com/google/classyshark/updater/models/Release.java
+R062	ClassySharkWS/src/com/google/classyshark/updater/models/Assets.java	ClassySharkWS/src/com/google/classyshark/updater/models/ReleaseDownloadData.java
+
+5e7bc90;Renames variable
+M	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+
+410625c;Removes unused imports
+M	ClassySharkWS/src/com/google/classyshark/Main.java
+
+12382b0;Adds copyright
+M	ClassySharkWS/src/com/google/classyshark/Version.java
+M	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+M	ClassySharkWS/src/com/google/classyshark/updater/models/Assets.java
+M	ClassySharkWS/src/com/google/classyshark/updater/models/Release.java
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/AbstractReleaseCallback.java
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/GitHubApi.java
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/MessageRunnable.java
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/NetworkManager.java
+M	ClassySharkWS/src/com/google/classyshark/updater/utils/FileUtils.java
+M	ClassySharkWS/src/com/google/classyshark/updater/utils/NamingUtils.java
+
+e5b543d;Adds easier way to track release
+A	ClassySharkWS/src/com/google/classyshark/Version.java
+M	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+M	ClassySharkWS/src/com/google/classyshark/updater/models/Release.java
+
+69447d5;Code refactoring
+M	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+A	ClassySharkWS/src/com/google/classyshark/updater/utils/FileUtils.java
+M	ClassySharkWS/src/com/google/classyshark/updater/utils/NamingUtils.java
+
+3a9ebd2;Adds the new way of naming files
+D	ClassySharkWS/ClassyShark.jar
+M	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+M	ClassySharkWS/src/com/google/classyshark/updater/models/Release.java
+A	ClassySharkWS/src/com/google/classyshark/updater/utils/NamingUtils.java
+
+0e73385;Fixes message
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/MessageRunnable.java
+
+ff6888e;Adds a dialog informing the user about the updated
+A	ClassySharkWS/ClassyShark.jar
+M	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+A	ClassySharkWS/src/com/google/classyshark/updater/networking/MessageRunnable.java
+A	ClassySharkWS/src/resources/ic_update.png
+
+30a7d2e;Hides the call to the update routine in the GuiMode and CliMode
+M	ClassySharkWS/src/com/google/classyshark/Main.java
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+M	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+
+58648ea;Wires the things up for the autoupdate feature
+M	ClassySharkWS/src/com/google/classyshark/Main.java
+A	ClassySharkWS/src/com/google/classyshark/updater/UpdateManager.java
+
+24a5a67;Adds the callback for the release API
+A	ClassySharkWS/src/com/google/classyshark/updater/networking/AbstractReleaseCallback.java
+
+7c5d296;Fixes the visibility of GitHub API
+M	ClassySharkWS/src/com/google/classyshark/updater/networking/GitHubApi.java
+
+c855cc8;Updates the model
+M	ClassySharkWS/src/com/google/classyshark/updater/models/Release.java
+
+6702b54;Adds the update check in the main class
+M	ClassySharkWS/src/com/google/classyshark/Main.java
+
+da41895;Adds networking APIs for retrieving the latest release version
+A	ClassySharkWS/src/com/google/classyshark/updater/networking/GitHubApi.java
+A	ClassySharkWS/src/com/google/classyshark/updater/networking/NetworkManager.java
+
+84171a1;Adds models for response
+A	ClassySharkWS/src/com/google/classyshark/updater/models/Assets.java
+A	ClassySharkWS/src/com/google/classyshark/updater/models/Release.java
+
+d15f2ad;Adds networking libraries
+A	third_party/okhttp-3.2.0.jar
+A	third_party/okio-1.7.0.jar
+
+2080620;Adds Gson and GsonConverter for Retrofit
+A	third_party/converter-gson-2.0.2.jar
+A	third_party/gson-2.6.2.jar
+
+a399d35;Adds Retrofit library
+A	third_party/retrofit-2.0.2.jar
+
+416b9e5;Merge pull request #97 from andreban/res-fixes
+8925e69;Improve resources handling
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlHighlighter.java
+
+3482a72;Merge pull request #96 from andreban/xml-res-highlight
+eb8979a;Fix xmlDecompressor bug
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlDecompressor.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlHighlighter.java
+
+5baf75e;Update README.md
+M	README.md
+
+95ddfa3;Merge pull request #95 from andreban/xml-resources
+c4cb5a2;Fix CDATA Handling
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlDecompressor.java
+
+1d586ba;Improve XML Resource parsing
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlDecompressor.java
+
+d088395;Improved XML Parser
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlDecompressor.java
+
+077d382;Add support for XML resources
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/apk/ApkReader.java
+
+fa992b1;Add references javadoc
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlDecompressor.java
+
+32d9a3a;Add support for XML resources
+M	ClassySharkWS/src/com/google/classyshark/Main.java
+M	ClassySharkWS/src/com/google/classyshark/Shark.java
+M	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/FileTransferHandler.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/BatchDocument.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/CellRenderer.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/gui/settings/SettingsFrame.java
+M	ClassySharkWS/src/com/google/classyshark/gui/settings/ThemeChosenListener.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/Theme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkColorScheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightTheme.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhostFacade.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/ContentReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/aar/AarReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/apk/ApkReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/clazz/ClazzReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/dex/DexReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/dex/DexlibLoader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/jar/JarReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/methodscounter/RootBuilder.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/MappingReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/Translator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexMethodsDumper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexStringsDumper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/elf/ElfTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/jar/JarInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/JavaTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectWithMapper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/StressTest.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/QualifiedTypesMap.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/asm/ClassDetailsFiller.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/asm/MetaObjectAsmClass.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/reflect/MetaObjectClass.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/MetaObjectDex.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/Multidex.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/AndroidXmlTranslator.java
+
+457fee8;Add support for XML resources
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/apk/ApkReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/AndroidXmlTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlDecompressor.java
+
+67fdf48;Merge pull request #92 from google/integration-sherlock-hash
+0281128;Merge branch 'master' into integration-sherlock-hash
+9883dc8;updated the file search key
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/apk/ApkReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/Multidex.java
+
+21427ec;Merge pull request #91 from google/integration-sherlock-hash
+9ea3849;UI panel fixes
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+
+6680dec;integrated Sherlock hash
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/apk/ApkReader.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/io/SherlockHash.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/elf/ElfTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/Multidex.java
+
+5007d7c;fix bug https://github.com/google/android-classyshark/issues/89
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+
+872f097;fix bug https://github.com/google/android-classyshark/issues/90
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+
+6964487;dark scheme fixes
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkColorScheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/JavaTranslator.java
+
+552db52;minor fix setting toolbar colour be more contrast
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+
+042038c;next version preps
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+
+bb0eae6;Merge pull request #87 from tiwiz/fixes-tree-node-theme
+fe34024;Fixes chart background
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+
+07dad19;Fixes MethodsCount tree background
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+
+e514d10;Merged branch master into master
+fe9cb77;Merge pull request #86 from tiwiz/dark-theme-fixes
+ae2d5b8;Fixes issue with light theme
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightTheme.java
+
+c3d89ca;Changes selection in Light theme mode
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightColorScheme.java
+
+f9c26ff;Adds cell renderer in order to show correctly the tree node colors
+A	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/CellRenderer.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+
+8a457df;Merge pull request #4 from google/master
+e9ec2cf;added bg default colour
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/Theme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightTheme.java
+
+a040d0e;Merge pull request #84 from tiwiz/theme-manager
+c47f36e;Cleans up the code
+M	ClassySharkWS/src/com/google/classyshark/gui/settings/SettingsFrame.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/ThemeManager.java
+
+7ff4452;Adds the possibility to change theme
+M	ClassySharkWS/src/com/google/classyshark/gui/settings/SettingsFrame.java
+A	ClassySharkWS/src/com/google/classyshark/gui/settings/ThemeChosenListener.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/ThemeManager.java
+
+9b78eed;Adds the Settings for the Theme
+M	ClassySharkWS/src/com/google/classyshark/gui/settings/SettingsFrame.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+
+056e47f;minor fix
+M	CommandLine.pdf
+
+3f4675c;Merge pull request #83 from google/cli-refactoring
+8c1d59d;documenation
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhostFacade.java
+M	CommandLine.pdf
+
+9081f56;intro SilverGhostFacade so both CLI and Shark use the same apis
+M	ClassySharkWS/src/com/google/classyshark/Shark.java
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhostFacade.java
+
+fd8ea07;minor colors fix
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+
+c8ddda8;Merge pull request #82 from google/proguard-integ
+cfcb3cf;revert dark colouring
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ColorScheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+
+15cd84b;Starts implementation of SettingsFrame
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+A	ClassySharkWS/src/com/google/classyshark/gui/settings/SettingsFrame.java
+
+3b64eba;Adds callbacks for settings
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/ToolbarController.java
+
+4e5c25b;Styles correctly the recent popup menu
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+
+058e7b7;Colors with a lighter gray the typing area
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+
+d68437a;Adds setting button to the toolbar
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+d05ce1e;Adds settings icon bindings
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/Theme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkIconScheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightIconScheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightTheme.java
+
+c5d91a0;Adds settings icon
+A	ClassySharkWS/src/resources/ic_settings.png
+
+eda4d33;Changes background based on IntelliJ's
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkColorScheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+
+98f8dec;Colors the full UI
+M	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+
+685bd3f;Colors methods count chart
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChartPanel.java
+
+ffe7950;Colors files tree
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+
+c67b66f;Colors text area for searches
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+33c542e;Colors code area
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+
+8c2d554;Colors the toolbar
+M	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/Theme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/ThemeManager.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightTheme.java
+
+bfcf797;Adds Dark theme
+A	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkTheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightTheme.java
+
+258b724;Adds dark colors and icons
+A	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkColorScheme.java
+A	ClassySharkWS/src/com/google/classyshark/gui/theme/dark/DarkIconScheme.java
+
+dc45eb3;Fixes solarized syntax colors
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightColorScheme.java
+
+ce05334;Adds the ThemeManager to the package
+M	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+A	ClassySharkWS/src/com/google/classyshark/gui/theme/ThemeManager.java
+
+dde4c52;Adds the possibility to apply the theme to a JComponent
+A	ClassySharkWS/src/com/google/classyshark/gui/theme/SwingThemeApplier.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/Theme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightTheme.java
+
+d509bc9;Refactor code
+M	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+R095	ClassySharkWS/src/com/google/classyshark/gui/theme/ThemeManager.java	ClassySharkWS/src/com/google/classyshark/gui/theme/Theme.java
+R094	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightThemeManager.java	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightTheme.java
+
+45e68ce;Fixes the LightThemeManager implementation
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+4812137;Changes visibility of the colors
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightColorScheme.java
+
+61d35d6;Starts adding the theme manager
+M	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightIconScheme.java
+
+f588c1e;Adds LightThemeManager
+A	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightThemeManager.java
+
+dcda2bd;Merge branch 'master' into proguard-integ
+b49bb4d;Refactor code - 2
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+R094	ClassySharkWS/src/com/google/classyshark/gui/theme/light/ColorScheme.java	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightColorScheme.java
+R096	ClassySharkWS/src/com/google/classyshark/gui/theme/light/IconSchemes.java	ClassySharkWS/src/com/google/classyshark/gui/theme/light/LightIconScheme.java
+
+d9b1f1d;Refactor code
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+R095	ClassySharkWS/src/com/google/classyshark/gui/panel/ColorScheme.java	ClassySharkWS/src/com/google/classyshark/gui/theme/light/ColorScheme.java
+R093	ClassySharkWS/src/com/google/classyshark/gui/panel/IconSchemes.java	ClassySharkWS/src/com/google/classyshark/gui/theme/light/IconSchemes.java
+
+f0eb6a1;Adds ThemeManager interface
+A	ClassySharkWS/src/com/google/classyshark/gui/theme/ThemeManager.java
+
+b48c347;Merge pull request #3 from google/master
+687644e;fixed typing area focus
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+b66bbe2;Merge branch 'master' into proguard-integ
+e8f3492;Merge pull request #81 from tiwiz/update-ui-proguard
+50bec81;Adds Proguard mapping icon
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/IconSchemes.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+A	ClassySharkWS/src/resources/ic_mappings.png
+
+070625d;Merge pull request #2 from google/master
+1148faf;init dark colour scheme
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ColorScheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+
+b642844;Merge branch 'master' into proguard-integ
+5360e57;added proguard mapping class names init support
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+b71466e;Merge pull request #80 from google/proguard-integ
+94f4bea;Merge branch 'master' into proguard-integ
+ca334f8;Merge pull request #79 from google/proguard-integ
+de7ab60;merging fixes for icons inside jar
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/IconSchemes.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+R100	ClassySharkWS/resources/ic_back.png	ClassySharkWS/src/resources/ic_back.png
+R100	ClassySharkWS/resources/ic_export.png	ClassySharkWS/src/resources/ic_export.png
+R100	ClassySharkWS/resources/ic_history.png	ClassySharkWS/src/resources/ic_history.png
+R100	ClassySharkWS/resources/ic_menu.png	ClassySharkWS/src/resources/ic_menu.png
+R100	ClassySharkWS/resources/ic_next.png	ClassySharkWS/src/resources/ic_next.png
+R100	ClassySharkWS/resources/ic_open.png	ClassySharkWS/src/resources/ic_open.png
+
+6ef8512;Merge branch 'master' into proguard-integ
+69ba6de;Merge pull request #78 from tiwiz/native-look-and-feel
+9c845b9;Merge pull request #1 from google/master
+2ba4e21;Removes unused methods
+M	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+
+84a88dc;Polishes Toolbar's border
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+c283d37;Refines toolbar's typing area
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+237831d;Changes tabs names
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+
+24a4813;Adds Solarized syntax highlight
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ColorScheme.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+57cafdf;Makes the history menu more native
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+
+cdf919d;Adds export button
+A	ClassySharkWS/resources/ic_export.png
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/IconSchemes.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+8de88a4;Adds open button
+A	ClassySharkWS/resources/ic_open.png
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/IconSchemes.java
+
+eeb28b4;Adds next button
+A	ClassySharkWS/resources/ic_next.png
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/IconSchemes.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+3eff19b;Adds back button
+A	ClassySharkWS/resources/ic_back.png
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/IconSchemes.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+85ce183;Adds Menu and History buttons
+A	ClassySharkWS/resources/ic_history.png
+A	ClassySharkWS/resources/ic_menu.png
+A	ClassySharkWS/src/com/google/classyshark/gui/panel/IconSchemes.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+
+98ccee9;names refactoring
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+
+1b77d6e;optimised mappings reading
+M	ClassySharkAndroid/build.gradle
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+
+6f8a44e;Cleans the UI
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+
+2954358;Replaces Metal Look & Feel
+M	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+
+7ee4874;added UI flow
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/ProguardMapper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectWithMapper.java
+
+d86c54f;plumbing integration with pro guard
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/ToolbarController.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/Driver.java
+R088	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/ClassySharkMappingProcessor.java	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/ProguardMapper.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/TokensMapper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/Translator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/elf/ElfTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/jar/JarInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/JavaTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectWithMapper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/AndroidXmlTranslator.java
+
+9fb6bfa;refactoring apis level
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/exporter/Exporter.java
+
+960b7b7;finished decoupling SilverGhost
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+
+63cef44;Merge branch 'master' into proguard-integ
+641b2cd;Merge branch 'master' into proguard-integ
+954c387;decoupling SilverGhost from ClassySharkPanel
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/SilverGhost.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/ClassySharkMappingProcessor.java
+R063	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/proguard/Driver.java	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/Driver.java
+R097	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/proguard/MappingProcessor.java	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/MappingProcessor.java
+R098	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/proguard/MappingReader.java	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/MappingReader.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/tokensmapper/TokensMapper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/JavaTranslator.java
+R068	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/proguard/MetaObjectDeobfuscated.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectWithMapper.java
+D	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/proguard/ClassySharkMethodProcessor.java
+
+5952071;Merge pull request #76 from andreban/method-count-export
+ebbcfa7;Add method count export
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/exporter/Exporter.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/exporter/FlatMethodCountExporter.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/exporter/MethodCountExporter.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/exporter/TreeMethodCountExporter.java
+
+6195810;Merge pull request #75 from andreban/image-npe
+a688057;Fix NPE of mouseMove without image
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+
+f859c82;Merge branch 'master' into proguard-integ
+b7f2b45;init drop
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/proguard/ClassySharkMethodProcessor.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/proguard/Driver.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/proguard/MappingProcessor.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/proguard/MappingReader.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/proguard/MetaObjectDeobfuscated.java
+
+8e9016c;Merge pull request #74 from andreban/dex-magic
+8e70de5;Handle large strings in XML Parser
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlDecompressor.java
+
+d306dab;Update README.md
+M	README.md
+
+3ce4de5;Merge pull request #69 from google/dex-in-dex
+953f523;next version
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/Doodle.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+
+0713f9e;added logic for viewing the inner classes.dex entry
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+
+2d492dc;init drop added reading and class showing
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/apk/ApkReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/Multidex.java
+
+042be64;Merge pull request #68 from google/drag-and-drop-file
+d18b44c;cosmetic fixes
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/FileTransferHandler.java
+
+1fac963;Merge branch 'master' into drag-and-drop-file
+108ea53;Update README.md
+M	README.md
+
+1b5cf63;Merge branch 'master' into drag-and-drop-file
+6666440;Merge pull request #67 from andreban/chart-skip
+a20a5ed;renaming
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ArchiveDisplayer.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/FileTransferHandler.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+
+5984da8;added test for un supported archives
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/FileTransferHandler.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/io/FileChooserUtils.java
+
+35ab76f;Skipping very small packages
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+
+dbf2aae;init drop
+A	ClassySharkWS/src/com/google/classyshark/gui/panel/ArchiveDisplayer.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+A	ClassySharkWS/src/com/google/classyshark/gui/panel/FileTransferHandler.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ViewerController.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChartPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/ToolbarController.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+
+3cce979;Merge pull request #66 from google/samples-plugins
+7d92973;Update README.md
+M	Samples/README.md
+
+4cf3ff8;Merge pull request #62 from keyboardsurfer/patch-1
+080a36c;Fix screenshot link
+M	Samples/SampleGradle/README.md
+
+0139ed6;Update README.md
+M	README.md
+
+15392d3;Update README.md
+M	README.md
+
+a5f8565;init drop
+A	Samples/.gitignore
+A	Samples/LICENSE
+A	Samples/README.md
+A	Samples/SampleGradle/README.md
+A	Samples/SampleGradle/RunScreenshot.png
+A	Samples/SampleGradle/build.gradle
+A	Samples/SampleGradle/gradlew
+A	Samples/SampleGradle/gradlew.bat
+A	Samples/SampleGradle/src/main/java/Main.java
+
+4a7a7b3;add checks + error message on the command line
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/Doodle.java
+A	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SanFranBG.java
+
+b81edcf;updated tools version
+M	ClassySharkAndroid/build.gradle
+
+88fde7d;Update README.md
+M	README.md
+
+a681430;Update README.md
+M	README.md
+
+a27bb04;fixed typo in docs
+M	CommandLine.pdf
+
+67c6169;Merge pull request #60 from google/programmable-api
+3d94f71;changed API to Shark
+R068	ClassySharkWS/src/com/google/classyshark/API.java	ClassySharkWS/src/com/google/classyshark/Shark.java
+
+44cb152;implementation
+A	ClassySharkWS/src/com/google/classyshark/API.java
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+D	ClassySharkWS/src/com/google/classyshark/gui/panel/io/Export2FileWriter.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/exporter/Exporter.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexMethodsDumper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexStringsDumper.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/JavaTranslator.java
+
+fbc0542;updated command line reference usage
+M	CommandLine.pdf
+
+1df0c8b;Update README.md
+M	README.md
+
+832ed30;Update README.md
+M	README.md
+
+d40a173;add command line reference
+A	CommandLine.pdf
+
+96a9114;version 6.0 preps
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+
+341fc58;Merge pull request #58 from andreban/chart-rover
+1b9b4a9;Highlighting clickable pie chart areas
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChartPanel.java
+
+006022e;back ported to Java 7
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChartPanel.java
+
+bf77dca;Merge pull request #56 from andreban/chart_click
+dab60ac;Clicking on a class on the chart navigates to it
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChartPanel.java
+
+059d7e1;version number 5.7
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+
+3378189;Merge pull request #55 from andreban/chart_quality
+7a53427;Optimize graphic rendering  quality
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+
+96dd081;Merge pull request #54 from andreban/chart-hint
+9c6357b;Added a hint on onMouseOver over the chart
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChartPanel.java
+
+6a06552;added so's file size and dex print for apis
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/elf/ElfTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/jar/JarInfoTranslator.java
+
+93535d2;version number for the next version
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+
+72a906d;Merge pull request #53 from andreban/chart
+afcb597;Adds a method count chart
+M	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ViewerController.java
+A	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+A	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChartPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/methodscounter/RootBuilder.java
+
+884ed1c;Delete Intro.png
+D	Resources/Intro.png
+
+a776b27;Update README.md
+M	README.md
+
+d3f535d;Update README.md
+M	README.md
+
+d21c240;added version 5.5
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+
+260ebfd;Merge pull request #52 from google/method-dumper
+711ef59;added docs
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexMethodsDumper.java
+
+ee0f83b;Update README.md
+M	README.md
+
+2845fcd;init drop
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/io/Export2FileWriter.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexMethodsDumper.java
+
+5bba84b;minor fixes
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/jar/JarInfoTranslator.java
+
+eedc867;cleaned git ignore
+M	.gitignore
+
+5c498eb;minor cleaning
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/TranslatorFactory.java
+
+83de99d;moved reducer be part of UI
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/io/Export2FileWriter.java
+R097	ClassySharkWS/src/com/google/classyshark/silverghost/reducer/Reducer.java	ClassySharkWS/src/com/google/classyshark/gui/panel/reducer/Reducer.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/jar/JarInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/JavaTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/reflect/MetaObjectClass.java
+
+999ada1;Update README.md
+M	README.md
+
+cd935f4;Update README.md
+M	README.md
+
+21f9aec;Merge pull request #51 from google/all-dump-performance
+7002397;implementation
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/io/Export2FileWriter.java
+
+7027294;Merge pull request #49 from google/doodles
+879e036;init drop
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+R097	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/ChristmasBG.java	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/ChristmasBG.java
+A	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/Doodle.java
+R098	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/SharkBG.java	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/doodles/SharkBG.java
+
+0d713c6;Update README.md
+M	README.md
+
+c8617b5;Merge pull request #48 from google/cli-fixes
+136f9d4;Rename GUIMode.java to GuiMode.java
+R100	ClassySharkWS/src/com/google/classyshark/gui/GUIMode.java	ClassySharkWS/src/com/google/classyshark/gui/GuiMode.java
+
+f1c82f3;added breaks to strings switch
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+
+3b9b846;fixes in cli mode
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+
+fd68a5b;Merge pull request #47 from google/revert-46-chart
+79e0083;Revert "Added Chart to methods count"
+M	ClassySharkWS/src/com/google/classyshark/gui/GUIMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ViewerController.java
+D	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+D	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChartPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+
+273741c;init drop
+M	ClassySharkWS/src/com/google/classyshark/Main.java
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/GUIMode.java
+
+efb7102;Merge pull request #46 from andreban/chart
+6b3b492;Adjusted grpah panels to new class strutcture
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+R089	ClassySharkWS/src/com/google/classyshark/ui/panel/chart/RingChart.java	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChart.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/panel/chart/RingChartPanel.java	ClassySharkWS/src/com/google/classyshark/gui/panel/chart/RingChartPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+
+deebf15;First charts
+M	ClassySharkWS/src/com/google/classyshark/gui/GUIMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ViewerController.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/chart/RingChart.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/chart/RingChartPanel.java
+
+7bb1882;First charts
+A	ClassySharkWS/src/com/google/classyshark/ui/panel/chart/RingChart.java
+A	ClassySharkWS/src/com/google/classyshark/ui/panel/chart/RingChartPanel.java
+
+8469cb9;Update README.md
+M	README.md
+
+4598cf1;Merge pull request #45 from google/string-table-dump
+67956b7;command line for dumping strings
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+
+99e6f1d;implementation
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/SharkBG.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/io/Export2FileWriter.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexStringsDumper.java
+
+ebfab9a;fix https://github.com/google/android-classyshark/issues/43
+M	README.md
+
+6c7cbe2;Update README.md
+M	README.md
+
+7de6715;Update README.md
+M	README.md
+
+4f02d8f;Update README.md
+M	README.md
+
+81831f8;update resources
+D	Resources/ClassySharkAnimated.gif
+M	Resources/Intro.png
+
+e06ef5b;quick fix, file parsers selection
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/ContentReader.java
+
+ba189ad;Update README.md
+M	README.md
+
+583566b;Merge pull request #42 from google/aar-format
+4e3af48;Update README.md
+M	README.md
+
+d874b44;version number
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/SharkBG.java
+
+56ae1d2;fixed XML parsing and temp file removing
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/aar/AarReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/methodscounter/RootBuilder.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/AndroidXmlTranslator.java
+
+69d3e71;code cleaning
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/aar/AarReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectFactory.java
+
+c8c87ff;init drop
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/io/FileChooserUtils.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/ContentReader.java
+A	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/aar/AarReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/methodscounter/RootBuilder.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/AndroidXmlTranslator.java
+
+f97df3f;Update README.md
+M	README.md
+
+8d0061e;Update README.md
+M	README.md
+
+18aa703;Merge pull request #39 from google/click-on-lib
+c02f21d;version cleaning
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/SharkBG.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/dex/DexlibLoader.java
+
+46ff8be;code and api cleaning
+M	ClassySharkWS/src/com/google/classyshark/Main.java
+M	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/GUIMode.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/io/Export2FileWriter.java
+
+33a043f;added methods counts per jar
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+M	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+R094	ClassySharkWS/src/com/google/classyshark/silverghost/methodsperpackage/ClassInfo.java	ClassySharkWS/src/com/google/classyshark/silverghost/methodscounter/ClassInfo.java
+R081	ClassySharkWS/src/com/google/classyshark/silverghost/methodsperpackage/Node.java	ClassySharkWS/src/com/google/classyshark/silverghost/methodscounter/ClassNode.java
+R061	ClassySharkWS/src/com/google/classyshark/silverghost/methodsperpackage/Analyzer.java	ClassySharkWS/src/com/google/classyshark/silverghost/methodscounter/RootBuilder.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/elf/ElfTranslator.java
+A	third_party/bcel-5.2.jar
+A	third_party/bcel.LICENSE
+
+82dece4;Update README.md
+M	README.md
+
+d585922;Update README.md
+M	README.md
+
+c4895ec;ShellMode --> CliMode
+M	ClassySharkWS/src/com/google/classyshark/Main.java
+R098	ClassySharkWS/src/com/google/classyshark/cli/ShellMode.java	ClassySharkWS/src/com/google/classyshark/cli/CliMode.java
+
+07cadbe;repackaging Shell mode, UI mode and SilverGhost
+M	ClassySharkWS/src/META-INF/MANIFEST.MF
+R090	ClassySharkWS/src/com/google/classyshark/ui/Main.java	ClassySharkWS/src/com/google/classyshark/Main.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/ShellMode.java	ClassySharkWS/src/com/google/classyshark/cli/ShellMode.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/GUIMode.java	ClassySharkWS/src/com/google/classyshark/gui/GUIMode.java
+R095	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java	ClassySharkWS/src/com/google/classyshark/gui/panel/ClassySharkPanel.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/panel/ColorScheme.java	ClassySharkWS/src/com/google/classyshark/gui/panel/ColorScheme.java
+R095	ClassySharkWS/src/com/google/classyshark/ui/panel/ViewerController.java	ClassySharkWS/src/com/google/classyshark/gui/panel/ViewerController.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/BatchDocument.java	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/BatchDocument.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/ChristmasBG.java	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/ChristmasBG.java
+R098	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/DisplayArea.java
+A	ClassySharkWS/src/com/google/classyshark/gui/panel/displayarea/SharkBG.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/panel/io/CurrentFolderConfig.java	ClassySharkWS/src/com/google/classyshark/gui/panel/io/CurrentFolderConfig.java
+R095	ClassySharkWS/src/com/google/classyshark/ui/panel/io/Export2FileWriter.java	ClassySharkWS/src/com/google/classyshark/gui/panel/io/Export2FileWriter.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/panel/io/FileChooserUtils.java	ClassySharkWS/src/com/google/classyshark/gui/panel/io/FileChooserUtils.java
+R098	ClassySharkWS/src/com/google/classyshark/ui/panel/io/RecentArchivesConfig.java	ClassySharkWS/src/com/google/classyshark/gui/panel/io/RecentArchivesConfig.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/panel/methodscount/MethodsCountPanel.java	ClassySharkWS/src/com/google/classyshark/gui/panel/methodscount/MethodsCountPanel.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/KeyUtils.java	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/KeyUtils.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/RecentArchivesButton.java	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/RecentArchivesButton.java
+R098	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/Toolbar.java	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/Toolbar.java
+R094	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/ToolbarController.java	ClassySharkWS/src/com/google/classyshark/gui/panel/toolbar/ToolbarController.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/FilesTree.java
+R095	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/NodeInfo.java	ClassySharkWS/src/com/google/classyshark/gui/panel/tree/NodeInfo.java
+R093	ClassySharkWS/src/com/google/classyshark/contentreader/BinaryContentReader.java	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/BinaryContentReader.java
+R087	ClassySharkWS/src/com/google/classyshark/contentreader/ContentReader.java	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/ContentReader.java
+R092	ClassySharkWS/src/com/google/classyshark/contentreader/apk/ApkReader.java	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/apk/ApkReader.java
+R096	ClassySharkWS/src/com/google/classyshark/contentreader/clazz/ClazzLoader.java	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/clazz/ClazzLoader.java
+R085	ClassySharkWS/src/com/google/classyshark/contentreader/clazz/ClazzReader.java	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/clazz/ClazzReader.java
+R090	ClassySharkWS/src/com/google/classyshark/contentreader/dex/DexReader.java	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/dex/DexReader.java
+R087	ClassySharkWS/src/com/google/classyshark/contentreader/dex/DexlibLoader.java	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/dex/DexlibLoader.java
+R093	ClassySharkWS/src/com/google/classyshark/contentreader/jar/JarReader.java	ClassySharkWS/src/com/google/classyshark/silverghost/contentreader/jar/JarReader.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/methodsperpackage/Analyzer.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectFactory.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/StressTest.java
+M	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/Multidex.java
+D	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/SharkBG.java
+
+2340eba;refactoring ==> consolidated binary formats to silverghost package
+M	ClassySharkWS/src/com/google/classyshark/contentreader/ContentReader.java
+R098	ClassySharkWS/src/com/google/classyshark/treewalker/methodsperpackage/Analyzer.java	ClassySharkWS/src/com/google/classyshark/silverghost/methodsperpackage/Analyzer.java
+R094	ClassySharkWS/src/com/google/classyshark/treewalker/methodsperpackage/ClassInfo.java	ClassySharkWS/src/com/google/classyshark/silverghost/methodsperpackage/ClassInfo.java
+R096	ClassySharkWS/src/com/google/classyshark/treewalker/methodsperpackage/Node.java	ClassySharkWS/src/com/google/classyshark/silverghost/methodsperpackage/Node.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/panel/reducer/Reducer.java	ClassySharkWS/src/com/google/classyshark/silverghost/reducer/Reducer.java
+R087	ClassySharkWS/src/com/google/classyshark/translator/Translator.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/Translator.java
+R074	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/TranslatorFactory.java
+R098	ClassySharkWS/src/com/google/classyshark/translator/apk/ApkTranslator.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/apk/ApkTranslator.java
+R096	ClassySharkWS/src/com/google/classyshark/translator/dex/DexInfoTranslator.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/dex/DexInfoTranslator.java
+R099	ClassySharkWS/src/com/google/classyshark/translator/elf/ElfReader.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/elf/ElfReader.java
+R095	ClassySharkWS/src/com/google/classyshark/translator/elf/ElfTranslator.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/elf/ElfTranslator.java
+R091	ClassySharkWS/src/com/google/classyshark/translator/jar/JarInfoTranslator.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/jar/JarInfoTranslator.java
+R095	ClassySharkWS/src/com/google/classyshark/translator/java/JavaTranslator.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/JavaTranslator.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObject.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObject.java
+R088	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObjectFactory.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/MetaObjectFactory.java
+R089	ClassySharkWS/src/com/google/classyshark/translator/java/StressTest.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/StressTest.java
+R095	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/QualifiedTypesMap.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/QualifiedTypesMap.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassBytesFromJarExtractor.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/asm/ClassBytesFromJarExtractor.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassDetailsFiller.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/asm/ClassDetailsFiller.java
+R096	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/MetaObjectAsmClass.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/asm/MetaObjectAsmClass.java
+R094	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/ClassUtils.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/reflect/ClassUtils.java
+R096	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/MetaObjectClass.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/clazz/reflect/MetaObjectClass.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/java/dex/DexlibAdapter.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/DexlibAdapter.java
+R095	ClassySharkWS/src/com/google/classyshark/translator/java/dex/MetaObjectDex.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/MetaObjectDex.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/java/dex/Multidex.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/java/dex/Multidex.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/xml/AndroidXmlTranslator.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/AndroidXmlTranslator.java
+R099	ClassySharkWS/src/com/google/classyshark/translator/xml/XmlDecompressor.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlDecompressor.java
+R098	ClassySharkWS/src/com/google/classyshark/translator/xml/XmlHighlighter.java	ClassySharkWS/src/com/google/classyshark/silverghost/translator/xml/XmlHighlighter.java
+M	ClassySharkWS/src/com/google/classyshark/ui/ShellMode.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/SharkBG.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/io/Export2FileWriter.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/methodscount/MethodsCountPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+5a83f2d;Update README.md
+M	README.md
+
+98fa76a;Update README.md
+M	README.md
+
+185ebe6;Merge pull request #38 from google/so-viewing
+c28226f;licenses updated
+A	third_party/ASM.LICENSE
+A	third_party/ASMDEX.LICENSE
+A	third_party/dexlib2.LICENSE
+A	third_party/jav-binutils.LICENSE
+
+cec4e50;Merge branch 'master' into so-viewing
+67425d5;added elf readers
+M	ClassySharkWS/src/com/google/classyshark/contentreader/jar/JarReader.java
+M	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+A	ClassySharkWS/src/com/google/classyshark/translator/elf/ElfReader.java
+M	ClassySharkWS/src/com/google/classyshark/translator/elf/ElfTranslator.java
+R098	ClassySharkWS/src/com/google/classyshark/translator/java/Translator2Java.java	ClassySharkWS/src/com/google/classyshark/translator/java/JavaTranslator.java
+R063	ClassySharkWS/src/com/google/classyshark/ztests/StressTestDex.java	ClassySharkWS/src/com/google/classyshark/translator/java/StressTest.java
+R095	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java	ClassySharkWS/src/com/google/classyshark/translator/xml/AndroidXmlTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/SharkBG.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+D	ClassySharkWS/src/com/google/classyshark/ztests/StressTestClass.java
+A	third_party/java-binutils.jar
+
+0f57790;Update README.md
+M	README.md
+
+4c1e0a0;added extract elf file
+M	ClassySharkWS/src/com/google/classyshark/translator/elf/ElfTranslator.java
+
+3307700;added 3rd party folder structure
+R100	ClassySharkWS/libs/asm-all-5.0.4.jar	third_party/asm-all-5.0.4.jar
+R100	ClassySharkWS/libs/asmdex-1.0.jar	third_party/asmdex-1.0.jar
+R100	ClassySharkWS/libs/dexlib2-2.1.0.jar	third_party/dexlib2-2.1.0.jar
+R100	ClassySharkWS/libs/guava-18.0.jar	third_party/guava-18.0.jar
+R100	ClassySharkWS/libs/util-2.0.6.jar	third_party/util-2.0.6.jar
+
+ee96f12;Merge branch 'master' into so-viewing
+b4e2da4;Update README.md
+M	README.md
+
+7b6e1e9;basic flow implemented
+M	ClassySharkWS/src/com/google/classyshark/contentreader/ContentReader.java
+M	ClassySharkWS/src/com/google/classyshark/contentreader/apk/ApkReader.java
+M	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+A	ClassySharkWS/src/com/google/classyshark/translator/elf/ElfTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+cb06184;created content reader
+A	ClassySharkWS/src/com/google/classyshark/contentreader/BinaryContentReader.java
+A	ClassySharkWS/src/com/google/classyshark/contentreader/ContentReader.java
+A	ClassySharkWS/src/com/google/classyshark/contentreader/apk/ApkReader.java
+A	ClassySharkWS/src/com/google/classyshark/contentreader/clazz/ClazzLoader.java
+A	ClassySharkWS/src/com/google/classyshark/contentreader/clazz/ClazzReader.java
+A	ClassySharkWS/src/com/google/classyshark/contentreader/dex/DexReader.java
+A	ClassySharkWS/src/com/google/classyshark/contentreader/dex/DexlibLoader.java
+A	ClassySharkWS/src/com/google/classyshark/contentreader/jar/JarReader.java
+D	ClassySharkWS/src/com/google/classyshark/reducer/ArchiveFileReader.java
+D	ClassySharkWS/src/com/google/classyshark/reducer/Reducer.java
+M	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/translator/jar/JarInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObjectFactory.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/Translator2Java.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/MetaObjectClass.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/dex/Multidex.java
+M	ClassySharkWS/src/com/google/classyshark/treewalker/methodsperpackage/Analyzer.java
+M	ClassySharkWS/src/com/google/classyshark/ui/ShellMode.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/io/Export2FileWriter.java
+A	ClassySharkWS/src/com/google/classyshark/ui/panel/reducer/Reducer.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/ztests/StressTestClass.java
+M	ClassySharkWS/src/com/google/classyshark/ztests/StressTestDex.java
+
+86affbc;refactoring + Chirstmas edition
+R098	ClassySharkWS/src/com/google/classyshark/analyzer/Analyzer.java	ClassySharkWS/src/com/google/classyshark/treewalker/methodsperpackage/Analyzer.java
+R094	ClassySharkWS/src/com/google/classyshark/analyzer/ClassInfo.java	ClassySharkWS/src/com/google/classyshark/treewalker/methodsperpackage/ClassInfo.java
+R096	ClassySharkWS/src/com/google/classyshark/analyzer/Node.java	ClassySharkWS/src/com/google/classyshark/treewalker/methodsperpackage/Node.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+A	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/ChristmasBG.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java
+R089	ClassySharkWS/src/com/google/classyshark/ui/panel/analyzer/AnalyzerPanel.java	ClassySharkWS/src/com/google/classyshark/ui/panel/methodscount/MethodsCountPanel.java
+
+006e91f;Update README.md
+M	README.md
+
+2a0843d;Rename APKTranslator.java to ApkTranslator.java
+R100	ClassySharkWS/src/com/google/classyshark/translator/apk/APKTranslator.java	ClassySharkWS/src/com/google/classyshark/translator/apk/ApkTranslator.java
+
+39d9904;Merge pull request #37 from google/apk-analyzer
+48d2913;page report design
+M	ClassySharkWS/src/com/google/classyshark/translator/apk/APKTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java
+
+fce040c;init drop
+A	ClassySharkWS/libs/asmdex-1.0.jar
+M	ClassySharkWS/src/com/google/classyshark/reducer/ArchiveFileReader.java
+M	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+A	ClassySharkWS/src/com/google/classyshark/translator/apk/APKTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/dex/Multidex.java
+M	ClassySharkWS/src/com/google/classyshark/ui/ShellMode.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/SharkBG.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/ToolbarController.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+78e86ed;Merge pull request #35 from andreban/tabs
+5a9815f;Renamed packages tab
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+
+7b0e015;Update README.md
+M	README.md
+
+b25d903;Update README.md
+M	README.md
+
+44408fb;Update README.md
+M	README.md
+
+0023cf2;Update README.md
+M	README.md
+
+9b15db9;Moved Analyzer to Tab
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/analyzer/AnalyzerPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/Toolbar.java
+
+adf977d;fixed wrong error handling from toolbar
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+
+bb35125;Merge pull request #34 from andreban/analyzer
+88af694;Changed Icon for Analyzer
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/Toolbar.java
+
+28b8e03;Cleanup
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/analyzer/AnalyzerPanel.java
+
+74b0d35;Re-added LICENSE.txt
+A	LICENSE.txt
+
+16517e4;Added method count analyzer
+A	ClassySharkWS/src/com/google/classyshark/analyzer/Analyzer.java
+A	ClassySharkWS/src/com/google/classyshark/analyzer/ClassInfo.java
+A	ClassySharkWS/src/com/google/classyshark/analyzer/Node.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassBytesFromJarExtractor.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/MetaObjectAsmClass.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+A	ClassySharkWS/src/com/google/classyshark/ui/panel/analyzer/AnalyzerPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/ToolbarController.java
+D	LICENSE.txt
+
+ab455ce;Merge pull request #33 from google/file-in-ui-from-comand-line
+2e9ca6b;error s handling
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+M	ClassySharkWS/src/com/google/classyshark/ui/ShellMode.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java
+
+89924c3;minor cleaning
+R094	ClassySharkWS/src/com/google/classyshark/ui/UIMode.java	ClassySharkWS/src/com/google/classyshark/ui/GUIMode.java
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+M	ClassySharkWS/src/com/google/classyshark/ui/ShellMode.java
+
+06a4283;command line for dumping a specific class
+M	ClassySharkWS/src/com/google/classyshark/ui/ShellMode.java
+
+caf9448;added shell and ui modes
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+A	ClassySharkWS/src/com/google/classyshark/ui/ShellMode.java
+A	ClassySharkWS/src/com/google/classyshark/ui/UIMode.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+
+e51fda6;init drop
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+
+f1c60c4;Update README.md
+M	README.md
+
+4787a4b;fix bug https://github.com/google/android-classyshark/issues/32
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+A	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/NodeInfo.java
+
+0228376;Merge pull request #31 from google/toolbar-ui-refactor
+f35b4d8;added command line export
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+
+efda7b4;Merge pull request #30 from ReadmeCritic/master
+135ba53;Update README URLs based on HTTP redirects
+M	README.md
+
+96b37b7;cosmetic fix
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+8e5d7a4;cosmetic fix
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+79fc212;cosmetic fix
+M	ClassySharkWS/src/com/google/classyshark/translator/jar/JarInfoTranslator.java
+
+a18ca14;added jar files data
+M	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+A	ClassySharkWS/src/com/google/classyshark/translator/jar/JarInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+dc6851a;cosmetic fixes
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/SharkBG.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/io/FileChooserUtils.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+7a7dfa3;text processing cleaning
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/KeyUtils.java
+
+18076ea;minor fixes
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+
+afaf55b;refactoring steamroller, added controller interfaces
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+A	ClassySharkWS/src/com/google/classyshark/ui/panel/ViewerController.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java
+A	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/KeyUtils.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/Toolbar.java
+A	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/ToolbarController.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+f97c019;fix internal representation without class in the end
+M	ClassySharkWS/src/com/google/classyshark/reducer/ArchiveFileReader.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObjectFactory.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/MetaObjectAsmClass.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/ClassUtils.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+2f5a542;refactoring
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+
+72c7293;refactoring
+M	ClassySharkWS/src/com/google/classyshark/translator/java/Translator2Java.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/TypesToNamesMapper.java	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/QualifiedTypesMap.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/MetaObjectClass.java
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/panel/CurrentFolderConfig.java	ClassySharkWS/src/com/google/classyshark/ui/panel/io/CurrentFolderConfig.java
+R098	ClassySharkWS/src/com/google/classyshark/ui/panel/Export2FileWriter.java	ClassySharkWS/src/com/google/classyshark/ui/panel/io/Export2FileWriter.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/panel/FileChooserUtils.java	ClassySharkWS/src/com/google/classyshark/ui/panel/io/FileChooserUtils.java
+R098	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/RecentArchivesConfig.java	ClassySharkWS/src/com/google/classyshark/ui/panel/io/RecentArchivesConfig.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/RecentArchivesButton.java
+
+a524881;refactoring
+M	ClassySharkWS/src/com/google/classyshark/reducer/Reducer.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/Export2FileWriter.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/RecentArchivesButton.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/ztests/StressTestDex.java
+
+919054f;refactoring
+R052	ClassySharkWS/src/com/google/classyshark/reducer/ArchiveReader.java	ClassySharkWS/src/com/google/classyshark/reducer/ArchiveFileReader.java
+M	ClassySharkWS/src/com/google/classyshark/reducer/Reducer.java
+M	ClassySharkWS/src/com/google/classyshark/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObjectFactory.java
+R089	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/ClassLoadingUtils.java	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/ClassUtils.java
+A	ClassySharkWS/src/com/google/classyshark/translator/java/dex/Multidex.java
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+R090	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/ExportFileWriter.java	ClassySharkWS/src/com/google/classyshark/ui/panel/Export2FileWriter.java
+R068	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanelUtils.java	ClassySharkWS/src/com/google/classyshark/ui/panel/FileChooserUtils.java
+M	ClassySharkWS/src/com/google/classyshark/ztests/StressTestClass.java
+M	ClassySharkWS/src/com/google/classyshark/ztests/StressTestDex.java
+
+9bf83e5;Update README.md
+M	README.md
+
+c1303f6;updated export functionality
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/ExportFileWriter.java
+
+069bda0;updated animation
+M	Resources/ClassySharkAnimated.gif
+
+339e585;Update README.md
+M	README.md
+
+441145a;Update README.md
+M	README.md
+
+2a5a369;added export writer
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+A	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/ExportFileWriter.java
+M	Resources/ClassySharkAnimated.gif
+
+ae16014;updated animated gif
+M	Resources/ClassySharkAnimated.gif
+
+5ec46e7;updated animated gif
+M	Resources/ClassySharkAnimated.gif
+
+e59a061;Update README.md
+M	README.md
+
+08cee38;refactoring +cleaning
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+A	Resources/ClassySharkAnimated.gif
+
+fc59e69;updated ASM fallback and verifier
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObjectFactory.java
+
+6b0aca7;updated gitignore
+M	.gitignore
+A	ClassySharkAndroid/app/src/main/res/layout/activity_source_viewer.xml
+
+be3265c;cleaning
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanelUtils.java
+
+e4930bf;added (all file in archive dump) and (class dump)
+M	.gitignore
+M	ClassySharkWS/src/com/google/classyshark/reducer/ArchiveReader.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanelUtils.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/Toolbar.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+D	Resources/Get Started Class View.png
+D	Resources/Get Started Lib View.png
+D	Resources/Get Started Open File.png
+M	Resources/Intro.png
+D	Resources/Main Shot.png
+
+80cb37d;version number
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/SharkBG.java
+
+d1bedfe;swing updates for popup
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/RecentArchivesButton.java
+
+567f664;cosmetic fix
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java
+
+901e59f;robustness around open recents
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+b529925;refactoring
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+R093	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkPanel.java	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanel.java
+R092	ClassySharkWS/src/com/google/classyshark/ui/viewer/PanelUtils.java	ClassySharkWS/src/com/google/classyshark/ui/panel/ClassySharkPanelUtils.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/ColorScheme.java	ClassySharkWS/src/com/google/classyshark/ui/panel/ColorScheme.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkConfig.java	ClassySharkWS/src/com/google/classyshark/ui/panel/CurrentFolderConfig.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/BatchDocument.java	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/BatchDocument.java
+R098	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/DisplayArea.java	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/DisplayArea.java
+R098	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/SharkBG.java	ClassySharkWS/src/com/google/classyshark/ui/panel/displayarea/SharkBG.java
+R090	ClassySharkWS/src/com/google/classyshark/ui/viewer/toolbar/RecentArchivesButton.java	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/RecentArchivesButton.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/viewer/toolbar/RecentFilesConfig.java	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/RecentArchivesConfig.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/viewer/toolbar/ToolBar.java	ClassySharkWS/src/com/google/classyshark/ui/panel/toolbar/Toolbar.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/viewer/tree/FilesTree.java	ClassySharkWS/src/com/google/classyshark/ui/panel/tree/FilesTree.java
+
+dce7651;removed tabs
+D	ClassySharkWS/src/com/google/classyshark/ui/ExperimentalBlackFrame.java
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+D	ClassySharkWS/src/com/google/classyshark/ui/tabs/ClassySharkTabsFrame.java
+D	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabsBuilder.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/PanelUtils.java
+D	ClassySharkWS/src/com/google/classyshark/ui/viewer/tree/ExperimentalBlackTree.java
+
+9c4176d;implementations
+M	.gitignore
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/PanelUtils.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/DisplayArea.java
+D	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/FileStubGenerator.java
+D	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/InfoBG.java
+A	ClassySharkWS/src/com/google/classyshark/ui/viewer/toolbar/RecentArchivesButton.java
+A	ClassySharkWS/src/com/google/classyshark/ui/viewer/toolbar/RecentFilesConfig.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/toolbar/ToolBar.java
+
+0d129e2;Update README.md
+M	README.md
+
+061e55e;Merge pull request #26 from dturner/master
+6077587;Updated wording and added links
+M	README.md
+
+0d7e776;fix https://github.com/google/android-classyshark/issues/24
+M	.gitignore
+A	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkConfig.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkPanel.java
+
+261cdce;Update README.md
+M	README.md
+
+a6cb0d1;Update README.md
+M	README.md
+
+766720c;Update README.md
+M	README.md
+
+6be5da8;Update README.md
+M	README.md
+
+db5274a;Update README.md
+M	README.md
+
+c4aef67;cleaned redundant folder
+D	Scenarios/.idea/artifacts/FacyLib_jar.xml
+D	Scenarios/Scenarios.iml
+D	Scenarios/src/META-INF/MANIFEST.MF
+D	Scenarios/src/com/google/classyshark/scenarios/AppDriver.java
+D	Scenarios/src/com/google/classyshark/scenarios/FancyLibrary.java
+
+865bee1;Update README.md
+M	README.md
+
+8fab3fa;Update README.md
+M	README.md
+
+568e676;Update README.md
+M	README.md
+
+d329df1;name changes
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/tree/FilesTree.java
+
+d9e9ac9;added dex hierarchical view
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/tree/FilesTree.java
+
+368f05e;Update README.md
+M	README.md
+
+1c31550;Update README.md
+M	README.md
+
+ed8f376;Update README.md
+M	README.md
+
+e880d9f;Update README.md
+M	README.md
+
+4338b24;Update README.md
+M	README.md
+
+57ad383;Update README.md
+M	README.md
+
+7259910;Merge pull request #25 from googlesamples/multi-dex
+0f61d98;cosmetic fix
+M	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+
+f71d92a;added class description
+M	ClassySharkWS/src/com/google/classyshark/translator/dex/DexInfoTranslator.java
+
+9567fe4;minor fixes
+M	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/translator/dex/DexInfoTranslator.java
+
+9eb5fc9;added tree support + versioning
+M	ClassySharkWS/src/com/google/classyshark/reducer/Reducer.java
+M	ClassySharkWS/src/com/google/classyshark/translator/dex/DexInfoTranslator.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObjectFactory.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/InfoBG.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/tree/FilesTree.java
+
+8830f5e;code cleaning
+M	ClassySharkWS/src/com/google/classyshark/reducer/Reducer.java
+M	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/translator/dex/DexInfoTranslator.java
+
+c7cd145;added dex info translator
+M	ClassySharkWS/src/com/google/classyshark/reducer/ArchiveReader.java
+M	ClassySharkWS/src/com/google/classyshark/reducer/Reducer.java
+M	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+A	ClassySharkWS/src/com/google/classyshark/translator/dex/DexInfoTranslator.java
+D	ClassySharkWS/src/com/google/classyshark/translator/virtual/DummyDexTranslator.java
+
+677b6d8;updates
+A	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+
+03854ff;multi dex started to work
+M	ClassySharkWS/src/com/google/classyshark/reducer/ArchiveReader.java
+M	ClassySharkWS/src/com/google/classyshark/reducer/Reducer.java
+M	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObjectFactory.java
+A	ClassySharkWS/src/com/google/classyshark/translator/virtual/DummyDexTranslator.java
+D	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+
+9a276c9;fixed bug https://github.com/googlesamples/android-classyshark/issues/22
+M	.gitignore
+A	ClassySharkAndroid/app/src/main/res/layout/activity_classes_list.xml
+A	ClassySharkAndroid/app/src/main/res/layout/activity_main.xml
+A	ClassySharkAndroid/app/src/main/res/menu/menu_main.xml
+A	ClassySharkAndroid/app/src/main/res/menu/menu_source_viewer.xml
+A	ClassySharkAndroid/app/src/main/res/values-w820dp/dimens.xml
+A	ClassySharkAndroid/app/src/main/res/values/dimens.xml
+A	ClassySharkAndroid/app/src/main/res/values/strings.xml
+A	ClassySharkAndroid/app/src/main/res/values/styles.xml
+A	Scenarios/.idea/artifacts/FacyLib_jar.xml
+
+cff7a4b;added Android manifest
+A	ClassySharkAndroid/app/src/main/AndroidManifest.xml
+
+2d2b8d6;Merge pull request #23 from andreban/truefalse
+57a8202;Merge pull request #21 from andreban/ctrlc
+2013851;Improved XML parsing
+M	ClassySharkWS/src/com/google/classyshark/translator/xml/XmlDecompressor.java
+
+5efd43b;Added ctrl+c cabability
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/DisplayArea.java
+
+1bd2f9b;added Android client
+A	ClassySharkAndroid/.gitignore
+A	ClassySharkAndroid/ClassySharkAndroid.iml
+A	ClassySharkAndroid/app/.gitignore
+A	ClassySharkAndroid/app/build.gradle
+A	ClassySharkAndroid/app/proguard-rules.pro
+A	ClassySharkAndroid/app/src/androidTest/java/com/google/classysharkandroid/activities/classysharkandroid/ApplicationTest.java
+A	ClassySharkAndroid/app/src/main/assets/prettify.css
+A	ClassySharkAndroid/app/src/main/assets/prettify.js
+A	ClassySharkAndroid/app/src/main/assets/run_prettify.js
+A	ClassySharkAndroid/app/src/main/assets/sons-of-obsidian.css
+A	ClassySharkAndroid/app/src/main/java/com/google/classysharkandroid/activities/ClassesListActivity.java
+A	ClassySharkAndroid/app/src/main/java/com/google/classysharkandroid/activities/MainActivity.java
+A	ClassySharkAndroid/app/src/main/java/com/google/classysharkandroid/activities/SourceViewerActivity.java
+A	ClassySharkAndroid/app/src/main/java/com/google/classysharkandroid/adapters/StableArrayAdapter.java
+A	ClassySharkAndroid/app/src/main/java/com/google/classysharkandroid/dex/DexLoaderBuilder.java
+A	ClassySharkAndroid/app/src/main/java/com/google/classysharkandroid/reflector/ClassTypeAlgorithm.java
+A	ClassySharkAndroid/app/src/main/java/com/google/classysharkandroid/reflector/ClassesNamesList.java
+A	ClassySharkAndroid/app/src/main/java/com/google/classysharkandroid/reflector/Reflector.java
+A	ClassySharkAndroid/app/src/main/java/com/google/classysharkandroid/utils/IOUtils.java
+A	ClassySharkAndroid/app/src/main/java/com/google/classysharkandroid/utils/UriUtils.java
+A	ClassySharkAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	ClassySharkAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	ClassySharkAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	ClassySharkAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	ClassySharkAndroid/app/src/test/java/com/classysharkandroid/ExampleUnitTest.java
+A	ClassySharkAndroid/build.gradle
+A	ClassySharkAndroid/settings.gradle
+
+3bdefe8;Merge pull request #19 from andreban/nopackage
+aff0183;Display classes without pkg
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/tree/FilesTree.java
+
+c70d1d5;Merge pull request #18 from andreban/xmldecompressor
+366ed4b;Merge branch 'master' of https://github.com/googlesamples/android-classyshark into xmldecompressor
+b30b46b;Merge pull request #17 from andreban/xmlhighlighter
+d4b8e96;Added XmlDecompressor
+M	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+A	ClassySharkWS/src/com/google/classyshark/translator/xml/XmlDecompressor.java
+
+44c54b2;Added XmlHighligher
+M	ClassySharkWS/src/com/google/classyshark/translator/Translator.java
+M	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+A	ClassySharkWS/src/com/google/classyshark/translator/xml/XmlHighlighter.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/DisplayArea.java
+
+3fa38ba;Update README.md
+M	README.md
+
+aeaa8ae;Merge pull request #16 from googlesamples/controller
+2a56d33;sorting imports
+M	ClassySharkWS/src/com/google/classyshark/translator/java/Translator2Java.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/TypesToNamesMapper.java
+
+790848b;fixed bug of default packages + new images
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/tree/FilesTree.java
+M	Resources/Get Started Class View.png
+M	Resources/Get Started Lib View.png
+M	Resources/Intro.png
+
+83bd6fe;cosmetic fix
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkPanel.java
+
+a1e9ddf;renaming fixes in Toolbar
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/InfoBG.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/toolbar/ToolBar.java
+
+d6c4862;added file name as title when the viewer is opened (without tabs)
+M	ClassySharkWS/src/com/google/classyshark/ui/ExperimentalBlackFrame.java
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabsBuilder.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/toolbar/ToolBar.java
+
+bd5687a;minor fix
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+
+dab7342;full back scheme in experimental mode
+M	ClassySharkWS/src/com/google/classyshark/ui/ExperimentalBlackFrame.java
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkPanel.java
+A	ClassySharkWS/src/com/google/classyshark/ui/viewer/tree/ExperimentalBlackTree.java
+
+23e0aec;default mode without tabs
+M	ClassySharkWS/src/com/google/classyshark/ui/ColorScheme.java
+M	ClassySharkWS/src/com/google/classyshark/ui/ExperimentalBlackFrame.java
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/viewer/toolbar/ToolBar.java
+
+6c87487;refactoring, repackaging + modules
+A	ClassySharkWS/src/com/google/classyshark/ui/ColorScheme.java
+A	ClassySharkWS/src/com/google/classyshark/ui/ExperimentalBlackFrame.java
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+R063	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabsFrame.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/ClassySharkTabsFrame.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabsBuilder.java
+R090	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/TabPanel.java	ClassySharkWS/src/com/google/classyshark/ui/viewer/ClassySharkPanel.java
+R088	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/TabPanelUtils.java	ClassySharkWS/src/com/google/classyshark/ui/viewer/PanelUtils.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/BatchDocument.java	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/BatchDocument.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/DisplayArea.java	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/DisplayArea.java
+R094	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/FileStubGenerator.java	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/FileStubGenerator.java
+R095	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/InfoBG.java	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/InfoBG.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/SharkBG.java	ClassySharkWS/src/com/google/classyshark/ui/viewer/displayarea/SharkBG.java
+R078	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/toolbar/ToolBar.java	ClassySharkWS/src/com/google/classyshark/ui/viewer/toolbar/ToolBar.java
+R091	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/tree/FilesTree.java	ClassySharkWS/src/com/google/classyshark/ui/viewer/tree/FilesTree.java
+
+12add7b;fixing individual tab pane when opening file for a second time + version number update
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/TabPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/InfoBG.java
+
+059a61a;renaming and cleaning
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabsBuilder.java
+R093	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/ViewerPanel.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/TabPanel.java
+R088	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/ViewerPanelUtils.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/TabPanelUtils.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/displayarea/BatchDocument.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/BatchDocument.java
+R098	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/displayarea/DisplayArea.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/DisplayArea.java
+R094	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/displayarea/FileStubGenerator.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/FileStubGenerator.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/displayarea/InfoBG.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/InfoBG.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/displayarea/SharkBG.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/displayarea/SharkBG.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/toolbar/ToolBar.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/toolbar/ToolBar.java
+R082	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/tree/FilesTree.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/tabpanel/tree/FilesTree.java
+M	ClassySharkWS/src/com/google/classyshark/ztests/StressTestClass.java
+M	ClassySharkWS/src/com/google/classyshark/ztests/StressTestDex.java
+
+f4a799f;refactoring, separating tree
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+R086	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabbedPaneBuilder.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabsBuilder.java
+R090	ClassySharkWS/src/com/google/classyshark/ui/ClassySharkFrame.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabsFrame.java
+R064	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/ViewerPanel.java
+A	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/ViewerPanelUtils.java
+R096	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/BatchDocument.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/displayarea/BatchDocument.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/DisplayArea.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/displayarea/DisplayArea.java
+R094	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/FileStubGenerator.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/displayarea/FileStubGenerator.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/InfoBG.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/displayarea/InfoBG.java
+R097	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/SharkBG.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/displayarea/SharkBG.java
+R077	ClassySharkWS/src/com/google/classyshark/ui/tabs/ToolBar.java	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/toolbar/ToolBar.java
+A	ClassySharkWS/src/com/google/classyshark/ui/tabs/viewerpanel/tree/FilesTree.java
+
+bdff386;added testing constructor per file
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java
+
+ad7c1fa;Merge pull request #15 from andreban/properencoding
+2be4234;Support for UTF-16
+M	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+
+6041172;changed text of info button to " ? "
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/ToolBar.java
+
+acb8f77;Merge pull request #14 from andreban/closeres
+7b8a56e;Improved closing resources on error
+M	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+
+5ec582a;renaming + fixes
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/ToolBar.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/DisplayArea.java
+
+51b6142;Update README.md
+M	README.md
+
+b6ce3c9;updated the intro shot
+M	Resources/Main Shot.png
+
+c727779;Merge pull request #13 from andreban/xmlfix
+b20fb5f;fixed issues around JTree packaging for jar and class files
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObjectFactory.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/MetaObjectAsmClass.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/ClassLoadingUtils.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/ToolBar.java
+
+16fc718;Merge branch 'xmlfix' of https://github.com/andreban/android-classyshark into xmlfix
+7ce0f5f;Fixed support for large manifests
+M	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+
+6795b15;Fixed support for large manifests
+M	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+
+a3c0abc;updates for next version
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/InfoBG.java
+A	Resources/Main Shot.png
+
+cb650ae;Merge pull request #12 from andreban/splitpane
+fd7eddf;Cleaning up display area after load new file.
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/ToolBar.java
+
+f523096;Improvements o JTree displaying
+M	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/ToolBar.java
+
+98b1c11;Better project navigation
+M	ClassySharkWS/src/com/google/classyshark/ui/ClassySharkFrame.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/DisplayArea.java
+
+ea8d494;Merge pull request #11 from andreban/cdata
+4a4b876;Merge branch 'cdata' of https://github.com/andreban/android-classyshark into cdata
+0a4bb70;Fixed parsing CDATA sections
+M	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+
+dc74019;Fixed parsing CDATA sections
+M	ClassySharkWS/src/com/google/classyshark/translator/Translator2AndroidXml.java
+
+02fbb74;Update README.md
+M	README.md
+
+560af63;added another fallback case for AndroidManifest
+M	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+
+2c6b631;cleaning and setting next version number
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/MetaObjectAsmClass.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/InfoBG.java
+
+fe02060;Delete android-classyshark.iml
+D	.idea/android-classyshark.iml
+
+9ec9405;Merge pull request #10 from googlesamples/class-reader-jvm-fallback
+302c613;finishing ASM and version
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObject.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObjectFactory.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassBytesFromJarExtractor.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassDetailsFiller.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/MetaObjectAsmClass.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/MetaObjectClass.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/dex/DexlibAdapter.java
+
+93a9cf6;added methods
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObject.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassDetailsFiller.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/MetaObjectAsmClass.java
+
+b61c3ba;continue flashing the ASM filler
+M	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObject.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassBytesFromJarExtractor.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassDetailsFiller.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/MetaObjectClass.java
+
+722c016;added meta object asm
+M	ClassySharkWS/src/com/google/classyshark/translator/java/Translator2Java.java
+R060	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassPrinter.java	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassDetailsFiller.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/MetaObjectAsmClass.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/ClassLoadingUtils.java
+M	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/MetaObjectClass.java
+
+f28f7ba;added fallback for classes that can't be loaded due to dependencies in other archives
+A	.idea/android-classyshark.iml
+A	ClassySharkWS/libs/asm-all-5.0.4.jar
+M	ClassySharkWS/src/com/google/classyshark/translator/Translator.java
+M	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/metaobject/MetaObject.java	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObject.java
+A	ClassySharkWS/src/com/google/classyshark/translator/java/MetaObjectFactory.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/Translator2Java.java	ClassySharkWS/src/com/google/classyshark/translator/java/Translator2Java.java
+R095	ClassySharkWS/src/com/google/classyshark/translator/metaobject/clazz/TypesToNamesMapper.java	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/TypesToNamesMapper.java
+A	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassBytesFromJarExtractor.java
+A	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/ClassPrinter.java
+A	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/asm/MetaObjectAsmClass.java
+R080	ClassySharkWS/src/com/google/classyshark/translator/metaobject/clazz/ClassUtils.java	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/ClassLoadingUtils.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/metaobject/clazz/MetaObjectClass.java	ClassySharkWS/src/com/google/classyshark/translator/java/clazz/reflect/MetaObjectClass.java
+R097	ClassySharkWS/src/com/google/classyshark/translator/metaobject/dex/DexlibAdapter.java	ClassySharkWS/src/com/google/classyshark/translator/java/dex/DexlibAdapter.java
+R098	ClassySharkWS/src/com/google/classyshark/translator/metaobject/dex/MetaObjectDex.java	ClassySharkWS/src/com/google/classyshark/translator/java/dex/MetaObjectDex.java
+D	ClassySharkWS/src/com/google/classyshark/translator/metaobject/MetaObjectFactory.java
+R099	ClassySharkWS/src/com/google/classyshark/translator/Translator2AndroidXml.java	ClassySharkWS/src/com/google/classyshark/translator/xml/Translator2AndroidXml.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/DisplayArea.java
+M	ClassySharkWS/src/com/google/classyshark/ztests/StressTestDex.java
+
+8c3ee08;xml key colouring
+M	ClassySharkWS/src/com/google/classyshark/translator/Translator2AndroidXml.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/InfoBG.java
+
+91ac72e;Update README.md
+M	README.md
+
+7cb2cc7;Update README.md
+M	README.md
+
+37fddd5;Update README.md
+M	README.md
+
+e63cbb9;Update README.md
+M	README.md
+
+bfde4ca;Delete Get Started.md
+D	Get Started.md
+
+801be97;Update README.md
+M	README.md
+
+83584a5;updated images to get started guide
+M	Resources/Get Started Class View.png
+M	Resources/Get Started Lib View.png
+M	Resources/Get Started Open File.png
+
+0b73317;Update README.md
+M	README.md
+
+093aac0;cosmetic fix
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/ToolBar.java
+
+0cd5bdb;fixed borders around toolbar
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/ToolBar.java
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/InfoBG.java
+
+1eaee4e;Merge pull request #6 from andreban/master
+3fe3aef;Added gap to DisplayArea
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java
+
+f79ab56;Merge pull request #1 from googlesamples/master
+1a4f639;Merge pull request #4 from andreban/master
+93dc8cd;Update README.md
+M	README.md
+
+e8e90a7;Update README.md
+M	README.md
+
+94c15c1;Update README.md
+M	README.md
+
+cf4806b;Update README.md
+M	README.md
+
+5fbea22;Resizing TabPane with the JFrame
+M	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java
+
+58b5942;Merge pull request #2 from sschuberth/patch-1
+dde11f3;Merge pull request #3 from rock3r/patch-1
+33cf280;Fix typos in README
+M	README.md
+
+a208cf0;Minor typography improvements
+M	Get Started.md
+
+c434428;Update README.md
+M	README.md
+
+7dee541;Update README.md
+M	README.md
+
+c1cfc78;Update README.md
+M	README.md
+
+843e39c;updated scenarious
+D	Scenarios/src/AppDriver.java
+D	Scenarios/src/FancyLibrary.java
+M	Scenarios/src/META-INF/MANIFEST.MF
+A	Scenarios/src/com/google/classyshark/scenarios/AppDriver.java
+A	Scenarios/src/com/google/classyshark/scenarios/FancyLibrary.java
+
+522c637;Update Get Started.md
+M	Get Started.md
+
+20a68ec;Update Get Started.md
+M	Get Started.md
+
+80b6136;Update README.md
+M	README.md
+
+581c421;first drop
+A	.gitignore
+A	CONTRIB.md
+A	ClassySharkWS/libs/dexlib2-2.1.0.jar
+A	ClassySharkWS/libs/guava-18.0.jar
+A	ClassySharkWS/libs/util-2.0.6.jar
+A	ClassySharkWS/src/META-INF/MANIFEST.MF
+A	ClassySharkWS/src/com/google/classyshark/reducer/ArchiveReader.java
+A	ClassySharkWS/src/com/google/classyshark/reducer/Reducer.java
+A	ClassySharkWS/src/com/google/classyshark/translator/Translator.java
+A	ClassySharkWS/src/com/google/classyshark/translator/Translator2AndroidXml.java
+A	ClassySharkWS/src/com/google/classyshark/translator/Translator2Java.java
+A	ClassySharkWS/src/com/google/classyshark/translator/TranslatorFactory.java
+A	ClassySharkWS/src/com/google/classyshark/translator/metaobject/MetaObject.java
+A	ClassySharkWS/src/com/google/classyshark/translator/metaobject/MetaObjectFactory.java
+A	ClassySharkWS/src/com/google/classyshark/translator/metaobject/clazz/ClassUtils.java
+A	ClassySharkWS/src/com/google/classyshark/translator/metaobject/clazz/MetaObjectClass.java
+A	ClassySharkWS/src/com/google/classyshark/translator/metaobject/clazz/TypesToNamesMapper.java
+A	ClassySharkWS/src/com/google/classyshark/translator/metaobject/dex/DexlibAdapter.java
+A	ClassySharkWS/src/com/google/classyshark/translator/metaobject/dex/MetaObjectDex.java
+A	ClassySharkWS/src/com/google/classyshark/ui/ClassySharkFrame.java
+A	ClassySharkWS/src/com/google/classyshark/ui/Main.java
+A	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabPanel.java
+A	ClassySharkWS/src/com/google/classyshark/ui/tabs/TabbedPaneBuilder.java
+A	ClassySharkWS/src/com/google/classyshark/ui/tabs/ToolBar.java
+A	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/BatchDocument.java
+A	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/DisplayArea.java
+A	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/FileStubGenerator.java
+A	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/InfoBG.java
+A	ClassySharkWS/src/com/google/classyshark/ui/tabs/displayarea/SharkBG.java
+A	ClassySharkWS/src/com/google/classyshark/ztests/StressTestClass.java
+A	ClassySharkWS/src/com/google/classyshark/ztests/StressTestDex.java
+A	Get Started.md
+A	LICENSE.txt
+A	NOTICE
+A	README.md
+A	Resources/Get Started Class View.png
+A	Resources/Get Started Lib View.png
+A	Resources/Get Started Open File.png
+A	Resources/Intro.png
+A	Scenarios/Scenarios.iml
+A	Scenarios/src/AppDriver.java
+A	Scenarios/src/FancyLibrary.java
+A	Scenarios/src/META-INF/MANIFEST.MF

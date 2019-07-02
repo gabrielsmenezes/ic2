@@ -1,0 +1,546 @@
+3a43e88;drop nineoldandroids, change target API, switch orangegangsters to omadahealth, gradle 3
+M	CircularBarPager.iml
+M	README.md
+M	app/app.iml
+M	app/build.gradle
+R085	app/src/androidTest/java/com/github/OrangeGangsters/circularbarpager/ApplicationTest.java	app/src/androidTest/java/com/github/omadahealth/circularbarpager/ApplicationTest.java
+M	app/src/main/AndroidManifest.xml
+R097	app/src/main/java/com/github/OrangeGangsters/circularbarpager/DemoPagerAdapter.java	app/src/main/java/com/github/omadahealth/circularbarpager/DemoPagerAdapter.java
+R097	app/src/main/java/com/github/OrangeGangsters/circularbarpager/DemoView.java	app/src/main/java/com/github/omadahealth/circularbarpager/DemoView.java
+R097	app/src/main/java/com/github/OrangeGangsters/circularbarpager/MainActivity.java	app/src/main/java/com/github/omadahealth/circularbarpager/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/library.iml
+R086	library/src/androidTest/java/com/github/OrangeGangsters/circularbarpager/library/ApplicationTest.java	library/src/androidTest/java/com/github/omadahealth/circularbarpager/library/ApplicationTest.java
+R098	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java	library/src/main/java/com/github/omadahealth/circularbarpager/library/CircularBar.java
+R097	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBarPager.java	library/src/main/java/com/github/omadahealth/circularbarpager/library/CircularBarPager.java
+R097	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/viewpager/FadeViewPagerTransformer.java	library/src/main/java/com/github/omadahealth/circularbarpager/library/viewpager/FadeViewPagerTransformer.java
+R098	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/viewpager/WrapContentViewPager.java	library/src/main/java/com/github/omadahealth/circularbarpager/library/viewpager/WrapContentViewPager.java
+M	library/src/main/res/layout/circularbar_view_pager.xml
+
+680efe8;Update README.md
+M	README.md
+
+f06f4ef;Targetting 26, and updating the version for maven release
+M	CircularBarPager.iml
+M	app/app.iml
+M	app/src/main/java/com/github/OrangeGangsters/circularbarpager/MainActivity.java
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/library.iml
+
+1d66bac;Update README.md
+M	README.md
+
+4cd351a;new gif
+M	app/src/main/res/raw/github_gif.gif
+
+8eab507;new package name
+M	README.md
+
+9bc1a5e;Merge pull request #10 from OrangeGangsters/circular_bar_multiple_arcs
+d180c91;Added support for multi spoke animation for the arc
+M	gradle.properties
+M	library/build.gradle
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+
+fef04ad;3 spoke support
+M	gradle.properties
+M	library/build.gradle
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+
+4eed8b8;Merge pull request #9 from OrangeGangsters/circular_bar_multiple_arcs
+e715442;Revert "Added Generic param to updateProgress to divide arc into equal parts."
+M	CircularBarPager.iml
+M	app/app.iml
+M	library/library.iml
+
+ffbbd1f;Added Generic param to updateProgress to divide arc into equal parts.
+M	CircularBarPager.iml
+M	app/app.iml
+M	library/library.iml
+
+d42fc6d;Added Generic param to updateProgress to divide arc into equal parts.
+M	app/src/main/java/com/github/OrangeGangsters/circularbarpager/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+
+17708b7;hardcoded 3 arcs for proof of concept. needs to be generic.
+M	app/src/main/java/com/github/OrangeGangsters/circularbarpager/MainActivity.java
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+
+2cc806e;Merge pull request #7 from CCorrado/master
+d62fce7;version code 3, gradle to 2.14.1, updating support lib/compiles to 25.0.0, allowing onDraw to be overridden to customize the way the circular bar is being drawn.
+M	app/app.iml
+M	app/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/library.iml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+
+8ec0f14;Merge pull request #5 from cmpsoares91/patch-1
+6b07332;Only way we found to compile it was by adding the other dependencies as well.
+M	README.md
+
+1d6446e;updating readme
+M	README.md
+
+3eccb64;updating to 1.3.4 for maven release
+M	app/app.iml
+M	build.gradle
+M	gradle.properties
+M	library/build.gradle
+M	library/library.iml
+
+43c3d5d;applying merge
+M	app/app.iml
+M	gradle.properties
+M	library/library.iml
+
+bd6089c;Merge remote-tracking branch 'origin/master'
+cdd7575;updating build tools to com.android.tools.build:gradle:2.0.0-alpha2
+M	app/app.iml
+M	app/build.gradle
+M	build.gradle
+M	gradle.properties
+M	library/build.gradle
+M	library/library.iml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+
+e32a38c;Fix NullPointerException in WrapContentViewPager
+M	README.md
+M	app/app.iml
+M	app/build.gradle
+M	gradle.properties
+M	library/build.gradle
+M	library/library.iml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/viewpager/WrapContentViewPager.java
+
+2868ffb;[#108281480] Fix WrapContentViewPager NullPointerException
+M	README.md
+M	gradle.properties
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/viewpager/WrapContentViewPager.java
+
+46e80ed;Fix ViewPager.performDrag IndexOutOfBoundsException for support libraries (2)
+M	README.md
+M	gradle.properties
+M	library/library.iml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/viewpager/WrapContentViewPager.java
+
+7b7fce7;Fix ViewPager.performDrag IndexOutOfBoundsException for support libraries
+M	README.md
+M	app/app.iml
+M	gradle.properties
+M	library/build.gradle
+M	library/library.iml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/viewpager/WrapContentViewPager.java
+
+2053e49;updated 1.2.7 to prevent protected int getChildDrawingOrder(int childCount, int i)  null
+M	README.md
+M	gradle.properties
+M	library/library.iml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/viewpager/WrapContentViewPager.java
+
+1f41507;updating to 1.2.6 with build tools 23.0.1 and support lib-v7 23.0.1
+M	CircularBarPager.iml
+M	README.md
+M	app/app.iml
+M	app/build.gradle
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+M	library/library.iml
+
+3c90079;updating readme
+M	README.md
+M	gradle.properties
+M	library/build.gradle
+
+3d1c60c;Added method to get the diameter of the circle
+M	gradle.properties
+M	library/build.gradle
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+
+3e2adb7;added setter method for toggling the start line drawing through java
+M	app/app.iml
+M	gradle.properties
+M	library/build.gradle
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+
+f7a5b6a;updated build and readme
+M	README.md
+M	library/build.gradle
+
+e16cff2;added method to refresh fill circle boolean
+M	app/app.iml
+M	gradle.properties
+M	library/build.gradle
+M	library/library.iml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+
+a5a9568;added fill modes for the circle fill color
+M	CircularBarPager.iml
+M	README.md
+M	app/app.iml
+M	app/src/main/res/layout/activity_main.xml
+M	gradle.properties
+M	library/build.gradle
+M	library/library.iml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+M	library/src/main/res/values/attrs.xml
+
+f44a1f2;updated versioning for maven upload
+M	app/build.gradle
+M	gradle.properties
+M	library/build.gradle
+
+25d2dec;updated the readme
+M	README.md
+
+240fcc0;Added attr to enable or not the start line
+M	app/src/main/res/layout/activity_main.xml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+M	library/src/main/res/values/attrs.xml
+
+651861d;added circle fill to the bar, and associated attr
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/styles.xml
+M	library/library.iml
+M	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+M	library/src/main/res/layout/circularbar_view_pager.xml
+M	library/src/main/res/values/attrs.xml
+M	library/src/main/res/values/styles.xml
+
+bb9c574;Added Android arsenal badge
+M	CircularBarPager.iml
+M	README.md
+M	app/app.iml
+M	library/library.iml
+
+5d89fb7;Added Android arsenal badge
+M	README.md
+
+47b82c9;Merge remote-tracking branch 'origin/master'
+21d0d70;Added explanation about other repo dependency
+M	README.md
+M	library/library.iml
+
+2c125d4;spacing
+M	README.md
+
+810543a;spacing
+M	README.md
+
+47c52c7;added designer
+M	README.md
+
+519dfbf;fixed link
+M	README.md
+
+6c2401e;added by
+M	README.md
+
+b1e72ab;added gradle instructions
+M	README.md
+
+b6eb9ca;Merge remote-tracking branch 'origin/master'
+2bb0eff;updated gradle files
+M	gradle.properties
+M	library/build.gradle
+
+307c6a5;Added Usage in README
+M	README.md
+
+73c12fc;Added customization in README
+M	README.md
+
+389d4f4;Added a gif for Github presentation
+M	README.md
+A	app/src/main/res/raw/github_gif.gif
+
+07db972;changed maven password
+D	gradle-mvn-push.gradle
+D	mvn_push.gradle
+
+b9186e6;changed project package name for maven namespace, added mvn push gradle files, adding implementations
+M	app/build.gradle
+R085	app/src/androidTest/java/stoyan/olivier/circularbarpager/ApplicationTest.java	app/src/androidTest/java/com/github/OrangeGangsters/circularbarpager/ApplicationTest.java
+M	app/src/main/AndroidManifest.xml
+R097	app/src/main/java/daniel/olivier/stoyan/circularbarpager/DemoPagerAdapter.java	app/src/main/java/com/github/OrangeGangsters/circularbarpager/DemoPagerAdapter.java
+R094	app/src/main/java/daniel/olivier/stoyan/circularbarpager/DemoView.java	app/src/main/java/com/github/OrangeGangsters/circularbarpager/DemoView.java
+R096	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java	app/src/main/java/com/github/OrangeGangsters/circularbarpager/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	build.gradle
+R080	library/gradle-mvn-push.gradle	gradle-mvn-push.gradle
+M	gradle.properties
+M	library/build.gradle
+A	library/gradle.properties
+M	library/library.iml
+R086	library/src/androidTest/java/stoyan/olivier/library/ApplicationTest.java	library/src/androidTest/java/com/github/OrangeGangsters/circularbarpager/library/ApplicationTest.java
+R099	library/src/main/java/daniel/olivier/stoyan/pager/CircularBar.java	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBar.java
+R096	library/src/main/java/daniel/olivier/stoyan/pager/CircularBarPager.java	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/CircularBarPager.java
+R097	library/src/main/java/daniel/olivier/stoyan/pager/viewpager/FadeViewPagerTransformer.java	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/viewpager/FadeViewPagerTransformer.java
+R097	library/src/main/java/daniel/olivier/stoyan/pager/viewpager/WrapContentViewPager.java	library/src/main/java/com/github/OrangeGangsters/circularbarpager/library/viewpager/WrapContentViewPager.java
+M	library/src/main/res/layout/circularbar_view_pager.xml
+A	mvn_push.gradle
+
+b4be623;cleaned up code
+M	library/src/main/java/daniel/olivier/stoyan/pager/CircularBar.java
+
+4c4b522;fixed edge case when progress is  == mMax of -mMax
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	library/build.gradle
+M	library/src/main/java/daniel/olivier/stoyan/pager/CircularBar.java
+M	library/src/main/java/daniel/olivier/stoyan/pager/CircularBarPager.java
+M	library/src/main/res/values/attrs.xml
+M	library/src/main/res/values/styles.xml
+
+2609f25;added counter clockwise drawing, animation, and attr
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	app/src/main/res/values/styles.xml
+M	library/src/androidTest/java/stoyan/olivier/library/ApplicationTest.java
+M	library/src/main/java/daniel/olivier/stoyan/pager/CircularBar.java
+M	library/src/main/res/layout/circularbar_view_pager.xml
+M	library/src/main/res/values/attrs.xml
+M	library/src/main/res/values/styles.xml
+
+5ff037b;moved attr around
+R094	app/src/main/java/daniel/olivier/stoyan/circularbarpager/DemoViewPagerAdapter.java	app/src/main/java/daniel/olivier/stoyan/circularbarpager/DemoPagerAdapter.java
+R094	app/src/main/java/daniel/olivier/stoyan/circularbarpager/DemoAdapterView.java	app/src/main/java/daniel/olivier/stoyan/circularbarpager/DemoView.java
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/styles.xml
+M	library/src/main/java/daniel/olivier/stoyan/pager/CircularBar.java
+M	library/src/main/res/values/attrs.xml
+M	library/src/main/res/values/styles.xml
+
+a18d7a2;renaming classes and modularizing lib calls
+R094	app/src/main/java/daniel/olivier/stoyan/circularbarpager/ExampleAdapterView.java	app/src/main/java/daniel/olivier/stoyan/circularbarpager/DemoAdapterView.java
+R093	app/src/main/java/daniel/olivier/stoyan/circularbarpager/HomeFragmentViewPagerAdapter.java	app/src/main/java/daniel/olivier/stoyan/circularbarpager/DemoViewPagerAdapter.java
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+
+2ee8378;moving adapter out of lib
+R097	library/src/main/java/daniel/olivier/stoyan/pager/viewpager/HomeFragmentViewPagerAdapter.java	app/src/main/java/daniel/olivier/stoyan/circularbarpager/HomeFragmentViewPagerAdapter.java
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	library/src/main/res/values/attrs.xml
+M	library/src/main/res/values/styles.xml
+
+054f398;changed unreached bar/color/width etc to outline
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/styles.xml
+M	library/src/main/java/daniel/olivier/stoyan/pager/CircularBar.java
+M	library/src/main/res/values/attrs.xml
+M	library/src/main/res/values/styles.xml
+
+2f99ca7;added attr to allow for taps to do the same as swipes
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	library/build.gradle
+M	library/src/main/java/daniel/olivier/stoyan/pager/CircularBarPager.java
+M	library/src/main/res/values/attrs.xml
+M	library/src/main/res/values/styles.xml
+
+0694a0f;changed names of attributes to avoid collisions
+M	app/app.iml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/styles.xml
+M	library/build.gradle
+M	library/src/main/AndroidManifest.xml
+M	library/src/main/java/daniel/olivier/stoyan/pager/CircularBar.java
+D	library/src/main/res/drawable-hdpi/ic_launcher.png
+D	library/src/main/res/drawable-mdpi/ic_launcher.png
+D	library/src/main/res/drawable-xhdpi/ic_launcher.png
+D	library/src/main/res/drawable-xxhdpi/ic_launcher.png
+M	library/src/main/res/values/attrs.xml
+M	library/src/main/res/values/styles.xml
+
+1cd1f9f;updated build to push to git maven repo
+M	app/app.iml
+M	library/build.gradle
+M	library/library.iml
+
+a123f31;added listener methods to the main view container and an example in the demo app
+M	app/app.iml
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	library/src/main/java/daniel/olivier/stoyan/pager/CircularBarPager.java
+
+e944277;added animatorlisteners to the circularbar
+M	app/app.iml
+M	library/src/main/java/daniel/olivier/stoyan/pager/CircularBar.java
+
+b146196;added MIT license
+M	LICENSE
+A	app/LICENSE
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/ExampleAdapterView.java
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	library/build.gradle
+A	library/gradle-mvn-push.gradle
+M	library/src/main/AndroidManifest.xml
+D	library/src/main/java/daniel/olivier/stoyan/library/viewpager/HomeFragmentViewPagerAdapter.java
+R092	library/src/main/java/daniel/olivier/stoyan/library/CircularBar.java	library/src/main/java/daniel/olivier/stoyan/pager/CircularBar.java
+R075	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java	library/src/main/java/daniel/olivier/stoyan/pager/CircularBarPager.java
+R056	library/src/main/java/daniel/olivier/stoyan/library/viewpager/FadeViewPagerTransformer.java	library/src/main/java/daniel/olivier/stoyan/pager/viewpager/FadeViewPagerTransformer.java
+A	library/src/main/java/daniel/olivier/stoyan/pager/viewpager/HomeFragmentViewPagerAdapter.java
+R055	library/src/main/java/daniel/olivier/stoyan/library/viewpager/WrapContentViewPager.java	library/src/main/java/daniel/olivier/stoyan/pager/viewpager/WrapContentViewPager.java
+M	library/src/main/res/layout/circularbar_view_pager.xml
+
+fa00dd2;updated project with comments and code restructure
+R085	app/src/main/java/daniel/olivier/stoyan/circularbarpager/HomeUserView.java	app/src/main/java/daniel/olivier/stoyan/circularbarpager/ExampleAdapterView.java
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	library/build.gradle
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBar.java
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+
+a78351d;added background to the dema app, and fixed start tab line mis-alignment
+A	app/src/main/res/drawable-hdpi/particiant_bkg.png
+A	app/src/main/res/drawable-mdpi/particiant_bkg.png
+A	app/src/main/res/drawable-xhdpi/particiant_bkg.png
+A	app/src/main/res/drawable-xxhdpi/particiant_bkg.png
+M	app/src/main/res/layout/activity_main.xml
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBar.java
+
+dc6e652;Added color to CirclePageIndicator for awesome beautifulness!
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+
+a848e71;Fixed swipe for last element by reducing speed
+M	app/src/main/res/layout/view_user_info.xml
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+M	library/src/main/java/daniel/olivier/stoyan/library/viewpager/FadeViewPagerTransformer.java
+
+5223aad;Improvements on CircularBarPager, need to fix a bug on the ViewPager animation for the last pages, need to swipe fast to go the last (which is not normal)
+M	app/src/main/res/layout/view_user_info.xml
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+
+358c253;Integration of ViewPager and CirclePageIndicator into the project. Updated the example project also. Still need to provide attributes to customize CirclePageIndicator.
+A	app/src/main/java/daniel/olivier/stoyan/circularbarpager/HomeUserView.java
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/view_user_info.xml
+A	app/src/main/res/values/colors.xml
+M	build.gradle
+M	library/build.gradle
+M	library/library.iml
+A	library/src/main/java/daniel/olivier/stoyan/library/CircularBar.java
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+A	library/src/main/java/daniel/olivier/stoyan/library/viewpager/FadeViewPagerTransformer.java
+A	library/src/main/java/daniel/olivier/stoyan/library/viewpager/HomeFragmentViewPagerAdapter.java
+A	library/src/main/java/daniel/olivier/stoyan/library/viewpager/WrapContentViewPager.java
+A	library/src/main/res/layout/circularbar_view_pager.xml
+M	library/src/main/res/values/attrs.xml
+
+f5f46f0;animation replaces timer, we are now using easing
+M	app/app.iml
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	library/build.gradle
+M	library/library.iml
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+
+dfb8e52;angle animation works
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+
+e4ffe5b;added auto increment animation, need to fix sweep angles
+M	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+
+436757b;added angle sweep class with progress increment to get angles of arcs to draw
+M	app/src/main/res/layout/activity_main.xml
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+
+3b600bc;fixed the unreached rectf
+M	app/src/main/res/layout/activity_main.xml
+M	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+
+928845e;fixed drawing on edge of rectf
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+R086	app/src/main/java/stoyan/olivier/circularbarpager/MainActivity.java	app/src/main/java/daniel/olivier/stoyan/circularbarpager/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/styles.xml
+R079	library/src/main/java/stoyan/olivier/library/CircularBarPager.java	library/src/main/java/daniel/olivier/stoyan/library/CircularBarPager.java
+M	library/src/main/res/values/styles.xml
+
+5d248bc;removed all text from custom view
+M	app/src/main/res/layout/activity_main.xml
+M	library/src/main/java/stoyan/olivier/library/CircularBarPager.java
+M	library/src/main/res/values/attrs.xml
+M	library/src/main/res/values/styles.xml
+
+65e3ddd;updating build settings
+M	app/build.gradle
+
+ccc4b37;removed .idea
+M	.gitignore
+D	.idea/.name
+D	.idea/compiler.xml
+D	.idea/copyright/profiles_settings.xml
+D	.idea/encodings.xml
+D	.idea/gradle.xml
+D	.idea/misc.xml
+D	.idea/modules.xml
+D	.idea/scopes/scope_settings.xml
+D	.idea/vcs.xml
+
+d890670;merge with origin
+b023b59;init
+A	.gitignore
+A	.idea/.name
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/encodings.xml
+A	.idea/gradle.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/scopes/scope_settings.xml
+A	.idea/vcs.xml
+A	CircularBarPager.iml
+A	app/.gitignore
+A	app/app.iml
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/androidTest/java/stoyan/olivier/circularbarpager/ApplicationTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/stoyan/olivier/circularbarpager/MainActivity.java
+A	app/src/main/res/drawable-hdpi/ic_launcher.png
+A	app/src/main/res/drawable-mdpi/ic_launcher.png
+A	app/src/main/res/drawable-xhdpi/ic_launcher.png
+A	app/src/main/res/drawable-xxhdpi/ic_launcher.png
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	library/.gitignore
+A	library/build.gradle
+A	library/library.iml
+A	library/proguard-rules.pro
+A	library/src/androidTest/java/stoyan/olivier/library/ApplicationTest.java
+A	library/src/main/AndroidManifest.xml
+A	library/src/main/java/stoyan/olivier/library/CircularBarPager.java
+A	library/src/main/res/drawable-hdpi/ic_launcher.png
+A	library/src/main/res/drawable-mdpi/ic_launcher.png
+A	library/src/main/res/drawable-xhdpi/ic_launcher.png
+A	library/src/main/res/drawable-xxhdpi/ic_launcher.png
+A	library/src/main/res/values/attrs.xml
+A	library/src/main/res/values/strings.xml
+A	library/src/main/res/values/styles.xml
+A	settings.gradle
+
+604f074;Initial commit
+A	.gitignore
+A	LICENSE
+A	README.md

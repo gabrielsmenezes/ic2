@@ -1,0 +1,366 @@
+c064fd8;Merge branch 'develop'
+668ab9f;Prepare next release
+M	gradle.properties
+
+effe459;Fixes a FC when clicking on a empty RecyclerView with header touch listener (#24)
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersTouchListener.java
+
+49d8a5a;Fix first header not pushed when there is only one item  (#25)
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+5565e0f;Update to Android Studio 1.0
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+
+aece1eb;Merge branch 'develop' of github.com:eowise/recyclerview-stickyheaders into develop
+f683b71;Handle headers visibility (#23)
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/HeaderStore.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+cf921db;Merge pull request #22 from is-devteam/fix_header_store_out_of_bounds
+294adff;Fixed an ArrayOutOfBoundsException in HeaderStore.
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/HeaderStore.java
+
+9cda895;Fix indentation
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/HeaderStore.java
+
+ce194c5;Merge pull request #21 from is-devteam/fix_header_store_data_observer_impl
+13d98af;Samples : Allow to test items and headers click (#17)
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonAdapter.java
+
+7244734;Intercept item click when a header is clicked (#17)
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersTouchListener.java
+
+348169d;Update build tools to 21.1.1
+M	library/build.gradle
+M	samples/build.gradle
+
+787ed3a;Add better data observer capabilities to HeaderStore
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/HeaderStore.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+d98cb6f;Merge pull request #19 from is-devteam/fix_remove_position_0
+f0e7456;Fix the header over position 0 to y=0.
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+c5489b4;Don't display headers on invalid views (#15)
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+3c1b54c;Update README.md
+M	README.md
+
+cbb62ca;Next iteration
+M	gradle.properties
+
+e2b33df;Merge branch 'develop'
+99e1587;Prepare v0.5.0 release
+M	gradle.properties
+
+05b1a0e;Merge pull request #13 from vovan888/develop
+a759c0e;Allow draw headers under items (#11)
+A	library/src/main/java/com/eowise/recyclerview/stickyheaders/DrawOrder.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersBuilder.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+71938aa;Fix java.lang.IndexOutOfBoundsException: (happens when AdapterDataObserver.onChanged() is called) java.lang.IndexOutOfBoundsException: Invalid index 6, size is 0             at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)             at java.util.ArrayList.add(ArrayList.java:147)             at com.eowise.recyclerview.stickyheaders.HeaderStore.isHeader(HeaderStore.java:74)
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/HeaderStore.java
+
+3366c5c;Fix first item header click
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersTouchListener.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonAdapter.java
+
+2f3bc26;Allow headers to be not sticky (#12)
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/HeaderStore.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersBuilder.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersTouchListener.java
+
+65f1607;Click listeners on headers (#9)
+A	library/src/main/java/com/eowise/recyclerview/stickyheaders/HeaderStore.java
+A	library/src/main/java/com/eowise/recyclerview/stickyheaders/OnHeaderClickListener.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersBuilder.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+A	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersTouchListener.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+
+0f5850f;Set library min version to 7
+M	library/build.gradle
+
+e12c081;Fix javadoc generation
+M	library/build.gradle
+
+9c6779a;Fix when using more than one item decorations
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+
+89f4462;Fix for multiple same headers when adding items (again)
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+
+9222b55;Cache headers heights to better handle item removal, fixes #8
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+f4184bb;Next iteration
+M	gradle.properties
+
+4be40bf;Switch to gradle-mvn-push
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/build.gradle
+A	library/gradle.properties
+M	samples/build.gradle
+M	samples/src/main/AndroidManifest.xml
+
+774c98d;Merge branch 'develop'
+462d996;Fix for multiple same headers when adding items
+M	gradle.properties
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+6ddabc7;Prepare v0.4.2
+M	gradle.properties
+
+462de7b;Merge branch 'develop'
+a82f2f3;Allow header children resize, fixes #7
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+2d81434;Handle dataset changed
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+e37c797;Next iteration
+M	gradle.properties
+
+5dcaf7c;Prepare v0.4.1
+M	gradle.properties
+
+6330629;Handle multiple items insert and remove
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+839f02a;Next iteration
+M	gradle.properties
+
+460cbba;Prepare 0.4.0 release
+M	gradle.properties
+
+c38d2ae;Merge pull request #4 from hazam/master
+b849060;fix measure in 4.2.2
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+1532884;Simplify header position
+D	library/src/main/java/com/eowise/recyclerview/stickyheaders/HeaderPosition.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersBuilder.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+
+1a2f484;Samples : Prepare publication on play store
+M	samples/build.gradle
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+M	samples/src/main/res/menu/main.xml
+
+c7f49ff;Add validation for adapter stable ids in builder
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersBuilder.java
+
+5e416f8;Next iteration
+M	gradle.properties
+
+991a0f4;Prepare v0.3.0 release
+M	gradle.properties
+
+79bb17d;Samples : Use builder
+R067	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeaderBuilder.java	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersBuilder.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+
+4c9ca55;Remove isLaidOut()
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+f01f180;Remove animations in builder
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeaderBuilder.java
+
+71dbba5;Clean up
+M	gradle.properties
+D	library/src/main/java/com/eowise/recyclerview/stickyheaders/InvalidateAnimationRunnable.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonAdapter.java
+
+cf6150a;Samples : Use AppCompat toolbar
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+M	samples/src/main/res/layout/activity_main.xml
+M	samples/src/main/res/menu/main.xml
+M	samples/src/main/res/values-v21/styles.xml
+M	samples/src/main/res/values/styles.xml
+
+967be66;Samples : Add stables ids
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonAdapter.java
+
+1ac629a;Builder added
+A	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeaderBuilder.java
+
+d2437af;Fix items add and remove after RecyclerView API changes
+A	library/src/main/java/android/support/v7/widget/RecyclerViewHelper.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+2d21eff;Apply RecyclerView API changes
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+
+6b183bb;Samples : Use support toolbar
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+M	samples/src/main/res/layout/activity_main.xml
+M	samples/src/main/res/layout/top_header.xml
+A	samples/src/main/res/values-v21/styles.xml
+M	samples/src/main/res/values/styles.xml
+
+127e5c5;Update to API 21
+M	library/build.gradle
+M	samples/build.gradle
+M	samples/src/main/AndroidManifest.xml
+
+b84b56f;Flattr button added
+M	README.md
+
+05cc92a;Flattr button added
+M	README.md
+
+f23a760;Fixing glitch on item add
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+002c810;Changelog added
+A	CHANGELOG.md
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersAdapter.java
+
+ff450fa;Prepare 0.2.0 release
+M	gradle.properties
+
+5665f48;Samples : Handle items addition
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonAdapter.java
+A	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/data/PersonDataProvider.java
+A	samples/src/main/res/drawable-hdpi/ic_action_content_new.png
+A	samples/src/main/res/drawable-mdpi/ic_action_content_new.png
+A	samples/src/main/res/drawable-xhdpi/ic_action_content_new.png
+A	samples/src/main/res/drawable-xxhdpi/ic_action_content_new.png
+M	samples/src/main/res/layout/activity_main.xml
+A	samples/src/main/res/menu/main.xml
+A	samples/src/main/res/values/colors.xml
+M	samples/src/main/res/values/strings.xml
+M	samples/src/main/res/values/styles.xml
+
+cac2597;Animate sticky headers on item insertion
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+e83ac9e;Animate sticky headers on item remove
+A	library/src/main/java/com/eowise/recyclerview/stickyheaders/InvalidateAnimationRunnable.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+
+4ce523d;Glitch when removing item correction
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+a8684d0;StickyHeadersAdapter simplification
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersAdapter.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/BigramHeaderAdapter.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/InitialHeaderAdapter.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonAdapter.java
+
+8d7da27;Samples : Handle adapter removes on item touch
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonAdapter.java
+A	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/listeners/OnRemoveListener.java
+
+ea2474d;Use "android-maven" plugin to install to local repo
+M	build.gradle
+M	library/build.gradle
+
+9f172eb;API documentation
+M	README.md
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersAdapter.java
+
+cc84134;Added pom signing to release on maven central
+M	library/build.gradle
+
+406bf6f;Prepare v0.1.0 release
+M	gradle.properties
+
+65e2801;Setup publishing
+M	gradle.properties
+M	library/build.gradle
+
+e38ffc8;Samples : Using bigram as header for top header
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+R079	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/LengthHeaderAdapter.java	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/BigramHeaderAdapter.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonAdapter.java
+
+df2fea0;Samples : UI adjustments
+M	samples/src/main/res/layout/letter_header.xml
+M	samples/src/main/res/layout/list_item.xml
+M	samples/src/main/res/layout/top_header.xml
+M	samples/src/main/res/values/dimens.xml
+
+1269e99;Samples : Adding top header
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+R090	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonInitialAdapter.java	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/InitialHeaderAdapter.java
+A	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/LengthHeaderAdapter.java
+M	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonAdapter.java
+A	samples/src/main/res/layout/top_header.xml
+
+453a6f2;Fixes incorrect headers height
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+60a089d;Using Sparse array to store header ids
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+ff7aad9;Samples setup
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+A	samples/build.gradle
+A	samples/src/main/AndroidManifest.xml
+A	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/MainActivity.java
+A	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonAdapter.java
+A	samples/src/main/java/com/eowise/recyclerview/stickyheaders/samples/adapters/PersonInitialAdapter.java
+A	samples/src/main/res/drawable-hdpi/ic_launcher.png
+A	samples/src/main/res/drawable-mdpi/ic_launcher.png
+A	samples/src/main/res/drawable-xhdpi/ic_launcher.png
+A	samples/src/main/res/layout/activity_main.xml
+A	samples/src/main/res/layout/letter_header.xml
+A	samples/src/main/res/layout/list_item.xml
+A	samples/src/main/res/values/dimens.xml
+A	samples/src/main/res/values/strings.xml
+A	samples/src/main/res/values/styles.xml
+M	settings.gradle
+
+dea61e6;Header position implementation
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+fa9f259;Added Header position property
+A	library/src/main/java/com/eowise/recyclerview/stickyheaders/HeaderPosition.java
+M	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+
+0ab5177;Library setup
+M	.gitignore
+A	build.gradle
+A	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+A	library/.gitignore
+A	library/build.gradle
+A	library/src/main/AndroidManifest.xml
+A	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersAdapter.java
+A	library/src/main/java/com/eowise/recyclerview/stickyheaders/StickyHeadersItemDecoration.java
+A	settings.gradle
+
+222edf6;Add gradle wrapper
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+
+74bd27e;Ignore intellij project files
+M	.gitignore
+
+ba2b6c0;Initial commit
+A	.gitignore
+A	LICENSE
+A	README.md

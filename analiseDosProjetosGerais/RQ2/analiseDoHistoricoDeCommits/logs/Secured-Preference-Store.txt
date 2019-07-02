@@ -1,0 +1,349 @@
+02d7130;Merge pull request #44 from swaby/label_manifest_issue
+eeacade;Prevent the Application field Label from interfering with other module Manifest Files.
+M	build.gradle
+M	securedpreferencestore/src/main/AndroidManifest.xml
+M	securedpreferencestore/src/main/res/values/strings.xml
+
+0499667;file encryption added.
+D	.idea/compiler.xml
+D	.idea/encodings.xml
+M	.idea/vcs.xml
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/devliving/online/securedpreferencestoresample/FileDemoActivity.java
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/file_demo_layout.xml
+M	build.gradle
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/AndroidManifest.xml
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+57f976c;Probable fix for #33
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/androidTest/java/devliving/online/securedpreferencestore/ApplicationTest.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+D	securedpreferencestore/src/test/java/devliving/online/securedpreferencestore/ExampleUnitTest.java
+A	securedpreferencestore/src/test/java/devliving/online/securedpreferencestore/PreferenceStoreUnitTest.java
+
+1fbdab3;Probable fix for #15
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+3356e95;version bump
+M	securedpreferencestore/build.gradle
+
+639ca82;fix for issues #31, #32
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+ee241dc;Merge pull request #21 from Onimishra/master
+45cc4a9;Update README.md
+M	README.md
+
+801e9cf;compatibility issues resolved
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	build.gradle
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+D	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/MigrateFrom050to060.java
+D	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/MigrationHandler.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+cb516d1;Merge branch 'master' of github.com:iamMehedi/Secured-Preference-Store
+d75c02a;version bump
+M	securedpreferencestore/build.gradle
+
+5f37357;Add: Migrations. Created first migration from 0.5.0 to 0.6.0 Add: Small logging framework. This makes it possible to turn all logging in the library on with a single call. The default options is on for DEBUG and off for everything else. Change: Bumped version number to 0.6.0, to distinguish then new old data format from the old. Change: Deprecated the old init function. This will initialise a version of the store, that can read and write the old data format. Change: Annotated the encryption manager with Nullable parameters. If null is passed in all the new parameters, or the deprecated constructor is used, the manager will be able to read and write the old format. Change: A version number is now written into the dataset. This will help determine how to update the data, should new updates be available later.
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/DefaultRecoveryHandler.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+A	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/Logger.java
+A	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/MigrateFrom050to060.java
+A	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/MigrationHandler.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+2094fa4;Merge pull request #30 from iamMehedi/issue_29
+d1d969d;added option to pass seed for SecureRandom
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+
+712629b;added option to pass seed for SecureRandom
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+40ffbd7;dependency update
+M	app/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	securedpreferencestore/build.gradle
+
+fb94b7d;Merge pull request #27 from StuStirling/issue/15
+bbc0e93;[issue-15] Removed start and end validity dates for RSA keys too.
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+e50e54d;[issue-15] Removed setting a date constraint on the key's validaity.
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+2133bfd;version bump
+M	securedpreferencestore/build.gradle
+
+34abcbc;minor updates.
+M	app/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+16ee515;Change: Readme now contains a line about hiding the use of Secure Preference Store.
+M	README.md
+
+ab92518;Change: The prefix of the keys in the store can now be set på the application. This removes all references in the files that an attacker could see, that Secure Preference Store is in use within the application. The next steps for an attacker would be decompiling of the application, but all strings can be encrypted within and all classes can be obscured beyond recognition, making several extra layers, before the attacker knows what library is in use.
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+e0972c5;Change: Name of the store file can now be set by the application using the library. A secure open-source library should try to make it as hard as possible to know that it is being used.
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+2c3b3cc;Change: Removed logging. A security library should never advertice who they are. When going though class obfuscation (and sometimes even class encryption), it is pointless if a opensource project advertise its own use within the application, making for an easy attack vector, as the entire code base is public.
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+cae5ce9;minor updates.
+M	.gitignore
+A	.idea/encodings.xml
+M	README.md
+A	app/proguard-rules.pro
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+76ecc34;Merge pull request #14 from StuStirling/develop
+ecbe80d;VCS clean up. Recovery handler init change and check removed
+M	.gitignore
+D	.idea/copyright/profiles_settings.xml
+D	.idea/markdown-navigator.xml
+D	.idea/markdown-navigator/profiles_settings.xml
+D	.idea/modules.xml
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+162b3f1;Updated readme to contain init method change
+A	.idea/markdown-navigator.xml
+M	README.md
+
+88c7939;Modified encryption manager initialisation location
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+0b648eb;Merge branch 'feature/initialisaton' into develop
+3bf539b;Added one time call init method.
+M	.idea/modules.xml
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	build.gradle
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+A	settings.gradle
+
+f841990;Added a gitignore to ignore unnecessary files.
+A	.gitignore
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/markdown-navigator/profiles_settings.xml
+A	.idea/modules.xml
+A	.idea/runConfigurations.xml
+A	.idea/vcs.xml
+
+e29c4fe;Merge pull request #11 from iamMehedi/issues/9_10
+b4c31df;fix for #09
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+ac59758;fix for #10
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+900806b;version bump
+M	securedpreferencestore/build.gradle
+
+06848f6;improvements to recovery
+M	app/build.gradle
+M	build.gradle
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+4c49c31;Update README.md
+M	README.md
+
+40841fb;no re-initialization needed after recovery.
+M	app/build.gradle
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/DefaultRecoveryHandler.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/RecoveryHandler.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+b6c82a5;javadoc updates.
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/DefaultRecoveryHandler.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/RecoveryHandler.java
+
+82df71a;Merge pull request #8 from iamMehedi/recovery
+f50f724;changed access of `recover` method to `protected`.
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/DefaultRecoveryHandler.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/RecoveryHandler.java
+
+913f442;update Readme.md for error recovery
+M	README.md
+
+10629af;added a recovery method to start fresh when keys are lost or unrecoverable.
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	securedpreferencestore/build.gradle
+A	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/DefaultRecoveryHandler.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+A	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/RecoveryHandler.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+53deb5d;removed reference to `KeyProperties` from older APIs (<23)
+M	app/build.gradle
+M	build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+f345dcc;Update README.md
+M	README.md
+
+a741def;Update README.md
+M	README.md
+
+64d1522;updated readme.
+M	README.md
+M	securedpreferencestore/build.gradle
+
+8b165f2;Merge pull request #3 from qq915458022/master
+0a97815;Update SecuredPreferenceStore.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+d4cd81d;Update README.md
+M	README.md
+
+cd9e48f;Update README.md
+M	README.md
+
+a5345b3;method for saving byte array
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+081cf03;Update README.md
+M	README.md
+
+246636e;make the hashing function static
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+1cc1f0a;Update README.md
+M	README.md
+
+437fbe3;let access to the encryption manager that the secured preference store use.
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+eba8f7d;javadoc fixes
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+c83a335;Merge branch 'master' of https://github.com/iamMehedi/Secured-Preference-Store
+0d41ecc;version 0.2.0
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	securedpreferencestore/build.gradle
+
+a89fe27;Update README.md
+M	README.md
+
+6ee209e;make encryption manager public
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+28cd4ed;a temporary fix for when an OS upgrade occurs to API 23. A migration strategy needs to be implemented at some point later.
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+48a3ccb;fix for wrong IV length on API 23+
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+a5b3e86;integrity check on APIs < 23
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+260f325;Update README.md
+M	README.md
+
+4b3f97c;added license to readme
+M	README.md
+M	securedpreferencestore/build.gradle
+
+9d644d0;Key hashing changed to SHA-256
+M	README.md
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+6ada828;Create README.md
+A	README.md
+
+c6cefa8;added gradle configuration for publishing
+M	build.gradle
+M	securedpreferencestore/build.gradle
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+7c0275f;removed ambiguous fallback strategy
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+7a497d4;aes uses CBC block mode on older APIs
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+0e9e9e8;random IV generation
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+7d1a8dc;fix for API level < 23
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+
+2c46816;preference store works on API level 23
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+a97f3b9;updated sample
+M	app/build.gradle
+M	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/strings.xml
+M	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+
+79684c1;initial commit
+A	app/build.gradle
+A	app/src/androidTest/java/devliving/online/securedpreferencestoresample/ApplicationTest.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/devliving/online/securedpreferencestoresample/MainActivity.java
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/test/java/devliving/online/securedpreferencestoresample/ExampleUnitTest.java
+A	build.gradle
+A	securedpreferencestore/build.gradle
+A	securedpreferencestore/src/androidTest/java/devliving/online/securedpreferencestore/ApplicationTest.java
+A	securedpreferencestore/src/main/AndroidManifest.xml
+A	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/EncryptionManager.java
+A	securedpreferencestore/src/main/java/devliving/online/securedpreferencestore/SecuredPreferenceStore.java
+A	securedpreferencestore/src/main/res/values/strings.xml
+A	securedpreferencestore/src/test/java/devliving/online/securedpreferencestore/ExampleUnitTest.java

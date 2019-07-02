@@ -1,0 +1,705 @@
+9e010f4;오타 수정
+M	docs/service-guide.md
+
+edee09c;오타 수정
+M	docs/directory-guide.md
+M	src/main/java/com/spring/guide/domain/member/api/MemberApi.java
+R078	src/main/java/com/spring/guide/global/common/resonse/Existence.java	src/main/java/com/spring/guide/global/common/response/Existence.java
+
+190aceb;Merge branch 'guide-package'
+11d365c;CI report 제거
+M	docs/directory-guide.md
+
+2dc4830;CI report 제거
+M	.circleci/config.yml
+
+720dc0a;Merge pull request #20 from cheese10yun/guide-package
+89499f3;주석 제거
+M	pom.xml
+
+085a8ae;READMe 수정
+M	README.md
+
+9b7723e;오타 수정
+M	docs/directory-guide.md
+
+1af2285;디렉토리 가이드 초안 작성 (2)
+M	docs/directory-guide.md
+M	src/main/java/com/spring/guide/infra/sms/AmazonSmsClient.java
+A	src/main/java/com/spring/guide/infra/sms/KtSmsClient.java
+A	src/test/java/com/spring/guide/infra/sms/AmazonSmsClientTest.java
+A	src/test/java/com/spring/guide/infra/sms/KtSmsClientTest.java
+
+fc7d3c1;디렉토리 가이드 초안 작성
+A	docs/directory-guide.md
+
+b050f99;DAO 추가
+A	src/main/java/com/spring/guide/domain/member/dao/MemberPredicateExecutor.java
+M	src/main/java/com/spring/guide/domain/member/dao/MemberRepository.java
+A	src/main/java/com/spring/guide/domain/member/dao/MemberSupportRepository.java
+A	src/main/java/com/spring/guide/domain/member/dao/MemberSupportRepositoryImpl.java
+M	src/test/java/com/spring/guide/domain/member/dao/MemberRepositoryTest.java
+
+249e2ff;rename
+M	src/main/java/com/spring/guide/domain/coupon/api/CouponApi.java
+M	src/main/java/com/spring/guide/domain/coupon/application/CouponUseService.java
+R095	src/main/java/com/spring/guide/domain/coupon/dao/CouponHelperService.java	src/main/java/com/spring/guide/domain/coupon/dao/CouponFindDao.java
+M	src/main/java/com/spring/guide/domain/member/api/MemberApi.java
+M	src/main/java/com/spring/guide/domain/member/application/MemberProfileService.java
+R096	src/main/java/com/spring/guide/domain/member/dao/MemberHelperService.java	src/main/java/com/spring/guide/domain/member/dao/MemberFindDao.java
+M	src/test/java/com/spring/guide/domain/coupon/application/CouponUseServiceTest.java
+R086	src/test/java/com/spring/guide/domain/coupon/dao/CouponHelperServiceTest.java	src/test/java/com/spring/guide/domain/coupon/dao/CouponFindDaoTest.java
+M	src/test/java/com/spring/guide/domain/member/api/MemberMockApiTest.java
+M	src/test/java/com/spring/guide/domain/member/application/MemberProfileServiceTest.java
+R084	src/test/java/com/spring/guide/domain/member/dao/MemberHelperServiceTest.java	src/test/java/com/spring/guide/domain/member/dao/MemberFindDaoTest.java
+
+bfac950;다랙토리 변경
+M	src/main/java/com/spring/guide/domain/coupon/api/CouponApi.java
+M	src/main/java/com/spring/guide/domain/coupon/application/CouponUseService.java
+R071	src/main/java/com/spring/guide/domain/coupon/CouponHelperService.java	src/main/java/com/spring/guide/domain/coupon/dao/CouponHelperService.java
+R062	src/main/java/com/spring/guide/domain/coupon/CouponRepository.java	src/main/java/com/spring/guide/domain/coupon/dao/CouponRepository.java
+R092	src/main/java/com/spring/guide/domain/coupon/Coupon.java	src/main/java/com/spring/guide/domain/coupon/domain/Coupon.java
+R094	src/main/java/com/spring/guide/domain/coupon/CouponCode.java	src/main/java/com/spring/guide/domain/coupon/domain/CouponCode.java
+M	src/main/java/com/spring/guide/domain/coupon/dto/CouponResponse.java
+R084	src/main/java/com/spring/guide/domain/coupon/CouponAlreadyUseException.java	src/main/java/com/spring/guide/domain/coupon/exception/CouponAlreadyUseException.java
+R084	src/main/java/com/spring/guide/domain/coupon/CouponExpireException.java	src/main/java/com/spring/guide/domain/coupon/exception/CouponExpireException.java
+R083	src/main/java/com/spring/guide/domain/coupon/CouponNotFoundException.java	src/main/java/com/spring/guide/domain/coupon/exception/CouponNotFoundException.java
+M	src/main/java/com/spring/guide/domain/member/api/MemberApi.java
+M	src/main/java/com/spring/guide/domain/member/application/MemberProfileService.java
+M	src/main/java/com/spring/guide/domain/member/application/MemberSearchService.java
+M	src/main/java/com/spring/guide/domain/member/application/MemberSignUpService.java
+R095	src/main/java/com/spring/guide/domain/member/MemberHelperService.java	src/main/java/com/spring/guide/domain/member/dao/MemberHelperService.java
+R080	src/main/java/com/spring/guide/domain/member/MemberRepository.java	src/main/java/com/spring/guide/domain/member/dao/MemberRepository.java
+M	src/main/java/com/spring/guide/domain/member/domain/Member.java
+R093	src/main/java/com/spring/guide/domain/member/ReferralCode.java	src/main/java/com/spring/guide/domain/member/domain/ReferralCode.java
+M	src/main/java/com/spring/guide/domain/member/dto/SignUpRequest.java
+M	src/test/java/com/spring/guide/domain/coupon/CouponBuilder.java
+R095	src/test/java/com/spring/guide/domain/coupon/CouponApiTest.java	src/test/java/com/spring/guide/domain/coupon/api/CouponApiTest.java
+R079	src/test/java/com/spring/guide/domain/coupon/CouponUseServiceTest.java	src/test/java/com/spring/guide/domain/coupon/application/CouponUseServiceTest.java
+R082	src/test/java/com/spring/guide/domain/coupon/CouponHelperServiceTest.java	src/test/java/com/spring/guide/domain/coupon/dao/CouponHelperServiceTest.java
+R093	src/test/java/com/spring/guide/domain/coupon/CouponCodeTest.java	src/test/java/com/spring/guide/domain/coupon/domain/CouponCodeTest.java
+R077	src/test/java/com/spring/guide/domain/coupon/CouponTest.java	src/test/java/com/spring/guide/domain/coupon/domain/CouponTest.java
+M	src/test/java/com/spring/guide/domain/member/MemberTest.java
+R098	src/test/java/com/spring/guide/domain/member/MemberApiTest.java	src/test/java/com/spring/guide/domain/member/api/MemberApiTest.java
+R095	src/test/java/com/spring/guide/domain/member/MemberMockApiTest.java	src/test/java/com/spring/guide/domain/member/api/MemberMockApiTest.java
+M	src/test/java/com/spring/guide/domain/member/application/MemberProfileServiceTest.java
+M	src/test/java/com/spring/guide/domain/member/application/MemberSignUpServiceTest.java
+R095	src/test/java/com/spring/guide/domain/member/MemberHelperServiceTest.java	src/test/java/com/spring/guide/domain/member/dao/MemberHelperServiceTest.java
+R095	src/test/java/com/spring/guide/domain/member/MemberRepositoryTest.java	src/test/java/com/spring/guide/domain/member/dao/MemberRepositoryTest.java
+R095	src/test/java/com/spring/guide/domain/member/MemberSearchServiceTest.java	src/test/java/com/spring/guide/domain/member/dao/MemberSearchServiceTest.java
+R090	src/test/java/com/spring/guide/domain/member/MemberBuilder.java	src/test/java/com/spring/guide/domain/member/domain/MemberBuilder.java
+M	src/test/java/com/spring/guide/test/setup/domain/CouponSetup.java
+M	src/test/java/com/spring/guide/test/setup/domain/MemberSetup.java
+
+26176e2;단일 프로젝트로 변경
+D	api-service/pom.xml
+D	api-service/src/test/java/com/spring/guide/coupon/CouponBuilder.java
+D	api-service/src/test/java/com/spring/guide/member/dto/SignUpRequestBuilder.java
+D	api-service/src/test/java/com/spring/guide/test/setup/model/EmailBuilder.java
+D	core/pom.xml
+D	core/src/main/java/com/spring/guide/domain/coupon/exception/CouponAlreadyUseException.java
+D	core/src/main/java/com/spring/guide/domain/coupon/exception/CouponExpireException.java
+D	core/src/main/java/com/spring/guide/excpetion/InvalidValueException.java
+D	core/src/main/resources/application-local.yml
+D	core/src/main/resources/application.yml
+D	core/src/test/java/com/spring/guide/domain/member/MemberBuilder.java
+D	core/src/test/java/com/spring/guide/test/MockTest.java
+D	core/src/test/java/com/spring/guide/test/TestConfig.java
+D	core/src/test/java/com/spring/guide/test/config/TestProfile.java
+D	core/src/test/java/com/spring/guide/test/setup/model/AddressBuilder.java
+D	core/src/test/java/com/spring/guide/test/setup/model/NameBuilder.java
+D	core/src/test/resources/application-test.yml
+D	core/src/test/resources/application.yml
+M	pom.xml
+R100	api-service/src/main/java/com/spring/guide/ApiApp.java	src/main/java/com/spring/guide/ApiApp.java
+R090	api-service/src/main/java/com/spring/guide/SampleApi.java	src/main/java/com/spring/guide/SampleApi.java
+R084	core/src/main/java/com/spring/guide/domain/coupon/Coupon.java	src/main/java/com/spring/guide/domain/coupon/Coupon.java
+A	src/main/java/com/spring/guide/domain/coupon/CouponAlreadyUseException.java
+R099	core/src/main/java/com/spring/guide/domain/coupon/CouponCode.java	src/main/java/com/spring/guide/domain/coupon/CouponCode.java
+A	src/main/java/com/spring/guide/domain/coupon/CouponExpireException.java
+R089	core/src/main/java/com/spring/guide/domain/coupon/CouponHelperService.java	src/main/java/com/spring/guide/domain/coupon/CouponHelperService.java
+R060	core/src/main/java/com/spring/guide/domain/coupon/exception/CouponNotFoundException.java	src/main/java/com/spring/guide/domain/coupon/CouponNotFoundException.java
+R099	core/src/main/java/com/spring/guide/domain/coupon/CouponRepository.java	src/main/java/com/spring/guide/domain/coupon/CouponRepository.java
+R059	api-service/src/main/java/com/spring/guide/coupon/CouponApi.java	src/main/java/com/spring/guide/domain/coupon/api/CouponApi.java
+R091	api-service/src/main/java/com/spring/guide/coupon/CouponUseService.java	src/main/java/com/spring/guide/domain/coupon/application/CouponUseService.java
+R093	api-service/src/main/java/com/spring/guide/coupon/CouponResponse.java	src/main/java/com/spring/guide/domain/coupon/dto/CouponResponse.java
+R090	core/src/main/java/com/spring/guide/domain/member/MemberHelperService.java	src/main/java/com/spring/guide/domain/member/MemberHelperService.java
+R078	core/src/main/java/com/spring/guide/domain/member/MemberRepository.java	src/main/java/com/spring/guide/domain/member/MemberRepository.java
+R099	core/src/main/java/com/spring/guide/domain/member/ReferralCode.java	src/main/java/com/spring/guide/domain/member/ReferralCode.java
+R077	api-service/src/main/java/com/spring/guide/member/MemberApi.java	src/main/java/com/spring/guide/domain/member/api/MemberApi.java
+R077	api-service/src/main/java/com/spring/guide/member/service/MemberProfileService.java	src/main/java/com/spring/guide/domain/member/application/MemberProfileService.java
+R081	api-service/src/main/java/com/spring/guide/member/service/MemberSearchService.java	src/main/java/com/spring/guide/domain/member/application/MemberSearchService.java
+R076	api-service/src/main/java/com/spring/guide/member/service/MemberSignUpRestService.java	src/main/java/com/spring/guide/domain/member/application/MemberSignUpRestService.java
+R081	api-service/src/main/java/com/spring/guide/member/service/MemberSignUpService.java	src/main/java/com/spring/guide/domain/member/application/MemberSignUpService.java
+R071	core/src/main/java/com/spring/guide/domain/member/Member.java	src/main/java/com/spring/guide/domain/member/domain/Member.java
+R060	api-service/src/main/java/com/spring/guide/member/type/MemberExistenceType.java	src/main/java/com/spring/guide/domain/member/dto/MemberExistenceType.java
+R079	api-service/src/main/java/com/spring/guide/member/dto/MemberProfileUpdate.java	src/main/java/com/spring/guide/domain/member/dto/MemberProfileUpdate.java
+R065	api-service/src/main/java/com/spring/guide/member/dto/MemberResponse.java	src/main/java/com/spring/guide/domain/member/dto/MemberResponse.java
+R078	api-service/src/main/java/com/spring/guide/member/dto/SignUpRequest.java	src/main/java/com/spring/guide/domain/member/dto/SignUpRequest.java
+R063	api-service/src/main/java/com/spring/guide/member/exception/EmailDuplicateException.java	src/main/java/com/spring/guide/domain/member/exception/EmailDuplicateException.java
+R075	core/src/main/java/com/spring/guide/domain/member/exception/EmailNotFoundException.java	src/main/java/com/spring/guide/domain/member/exception/EmailNotFoundException.java
+R075	core/src/main/java/com/spring/guide/domain/member/exception/MemberNotFoundException.java	src/main/java/com/spring/guide/domain/member/exception/MemberNotFoundException.java
+R096	core/src/main/java/com/spring/guide/model/Address.java	src/main/java/com/spring/guide/domain/model/Address.java
+R095	core/src/main/java/com/spring/guide/model/Email.java	src/main/java/com/spring/guide/domain/model/Email.java
+R085	core/src/main/java/com/spring/guide/model/Name.java	src/main/java/com/spring/guide/domain/model/Name.java
+R100	api-service/src/main/java/com/spring/guide/global/common/resonse/Existence.java	src/main/java/com/spring/guide/global/common/resonse/Existence.java
+R100	api-service/src/main/java/com/spring/guide/global/config/SwaggerConfig.java	src/main/java/com/spring/guide/global/config/SwaggerConfig.java
+R100	api-service/src/main/java/com/spring/guide/global/config/resttemplate/RestTemplateClientHttpRequestInterceptor.java	src/main/java/com/spring/guide/global/config/resttemplate/RestTemplateClientHttpRequestInterceptor.java
+R100	api-service/src/main/java/com/spring/guide/global/config/resttemplate/RestTemplateConfig.java	src/main/java/com/spring/guide/global/config/resttemplate/RestTemplateConfig.java
+R100	api-service/src/main/java/com/spring/guide/global/config/resttemplate/RestTemplateErrorHandler.java	src/main/java/com/spring/guide/global/config/resttemplate/RestTemplateErrorHandler.java
+R098	api-service/src/main/java/com/spring/guide/global/error/ErrorResponse.java	src/main/java/com/spring/guide/global/error/ErrorResponse.java
+R097	api-service/src/main/java/com/spring/guide/global/error/GlobalExceptionHandler.java	src/main/java/com/spring/guide/global/error/GlobalExceptionHandler.java
+R089	core/src/main/java/com/spring/guide/excpetion/BusinessException.java	src/main/java/com/spring/guide/global/error/exception/BusinessException.java
+R078	core/src/main/java/com/spring/guide/excpetion/EntityNotFoundException.java	src/main/java/com/spring/guide/global/error/exception/EntityNotFoundException.java
+R096	core/src/main/java/com/spring/guide/excpetion/ErrorCode.java	src/main/java/com/spring/guide/global/error/exception/ErrorCode.java
+R077	api-service/src/main/java/com/spring/guide/global/error/exception/InvalidValueException.java	src/main/java/com/spring/guide/global/error/exception/InvalidValueException.java
+R100	api-service/src/main/java/com/spring/guide/infra/sms/AmazonSmsClient.java	src/main/java/com/spring/guide/infra/sms/AmazonSmsClient.java
+R100	api-service/src/main/java/com/spring/guide/infra/sms/SmsClient.java	src/main/java/com/spring/guide/infra/sms/SmsClient.java
+R100	api-service/src/main/java/com/spring/guide/infra/sms/dto/SmsRequest.java	src/main/java/com/spring/guide/infra/sms/dto/SmsRequest.java
+R100	api-service/src/main/resources/application-dev.yml	src/main/resources/application-dev.yml
+R100	api-service/src/main/resources/application-local.yml	src/main/resources/application-local.yml
+R100	api-service/src/main/resources/application-prod.yml	src/main/resources/application-prod.yml
+R100	api-service/src/main/resources/application.yml	src/main/resources/application.yml
+R060	api-service/src/test/java/com/spring/guide/ApiAppTest.java	src/test/java/com/spring/guide/ApiAppTest.java
+R094	api-service/src/test/java/com/spring/guide/coupon/CouponApiTest.java	src/test/java/com/spring/guide/domain/coupon/CouponApiTest.java
+R100	core/src/test/java/com/spring/guide/domain/coupon/CouponBuilder.java	src/test/java/com/spring/guide/domain/coupon/CouponBuilder.java
+R099	core/src/test/java/com/spring/guide/domain/coupon/CouponCodeTest.java	src/test/java/com/spring/guide/domain/coupon/CouponCodeTest.java
+R094	core/src/test/java/com/spring/guide/domain/coupon/CouponHelperServiceTest.java	src/test/java/com/spring/guide/domain/coupon/CouponHelperServiceTest.java
+R089	core/src/test/java/com/spring/guide/domain/coupon/CouponTest.java	src/test/java/com/spring/guide/domain/coupon/CouponTest.java
+R084	api-service/src/test/java/com/spring/guide/coupon/CouponUseServiceTest.java	src/test/java/com/spring/guide/domain/coupon/CouponUseServiceTest.java
+R094	api-service/src/test/java/com/spring/guide/member/MemberApiTest.java	src/test/java/com/spring/guide/domain/member/MemberApiTest.java
+R075	api-service/src/test/java/com/spring/guide/member/MemberBuilder.java	src/test/java/com/spring/guide/domain/member/MemberBuilder.java
+R097	core/src/test/java/com/spring/guide/domain/member/MemberHelperServiceTest.java	src/test/java/com/spring/guide/domain/member/MemberHelperServiceTest.java
+R085	api-service/src/test/java/com/spring/guide/member/MemberMockApiTest.java	src/test/java/com/spring/guide/domain/member/MemberMockApiTest.java
+R093	core/src/test/java/com/spring/guide/domain/member/MemberRepositoryTest.java	src/test/java/com/spring/guide/domain/member/MemberRepositoryTest.java
+R086	api-service/src/test/java/com/spring/guide/member/MemberSearchServiceTest.java	src/test/java/com/spring/guide/domain/member/MemberSearchServiceTest.java
+R092	core/src/test/java/com/spring/guide/domain/member/MemberTest.java	src/test/java/com/spring/guide/domain/member/MemberTest.java
+R085	api-service/src/test/java/com/spring/guide/member/service/MemberProfileServiceTest.java	src/test/java/com/spring/guide/domain/member/application/MemberProfileServiceTest.java
+R080	api-service/src/test/java/com/spring/guide/member/service/MemberSignUpServiceTest.java	src/test/java/com/spring/guide/domain/member/application/MemberSignUpServiceTest.java
+A	src/test/java/com/spring/guide/domain/member/dto/SignUpRequestBuilder.java
+R088	core/src/test/java/com/spring/guide/model/AddressTest.java	src/test/java/com/spring/guide/domain/model/AddressTest.java
+R094	core/src/test/java/com/spring/guide/model/EmailTest.java	src/test/java/com/spring/guide/domain/model/EmailTest.java
+R093	core/src/test/java/com/spring/guide/model/NameTest.java	src/test/java/com/spring/guide/domain/model/NameTest.java
+R097	api-service/src/test/java/com/spring/guide/global/error/GlobalExceptionHandlerTest.java	src/test/java/com/spring/guide/global/error/GlobalExceptionHandlerTest.java
+R099	api-service/src/test/java/com/spring/guide/test/IntegrationTest.java	src/test/java/com/spring/guide/test/IntegrationTest.java
+R093	api-service/src/test/java/com/spring/guide/test/MockApiTest.java	src/test/java/com/spring/guide/test/MockApiTest.java
+R100	api-service/src/test/java/com/spring/guide/test/MockTest.java	src/test/java/com/spring/guide/test/MockTest.java
+R100	core/src/test/java/com/spring/guide/test/RepositoryTest.java	src/test/java/com/spring/guide/test/RepositoryTest.java
+R100	api-service/src/test/java/com/spring/guide/test/RestDocsConfiguration.java	src/test/java/com/spring/guide/test/RestDocsConfiguration.java
+R100	api-service/src/test/java/com/spring/guide/test/config/TestProfile.java	src/test/java/com/spring/guide/test/config/TestProfile.java
+R094	api-service/src/test/java/com/spring/guide/test/setup/domain/CouponSetup.java	src/test/java/com/spring/guide/test/setup/domain/CouponSetup.java
+R091	api-service/src/test/java/com/spring/guide/test/setup/domain/MemberSetup.java	src/test/java/com/spring/guide/test/setup/domain/MemberSetup.java
+R092	api-service/src/test/java/com/spring/guide/test/setup/model/AddressBuilder.java	src/test/java/com/spring/guide/test/setup/model/AddressBuilder.java
+R085	core/src/test/java/com/spring/guide/test/setup/model/EmailBuilder.java	src/test/java/com/spring/guide/test/setup/model/EmailBuilder.java
+R091	api-service/src/test/java/com/spring/guide/test/setup/model/NameBuilder.java	src/test/java/com/spring/guide/test/setup/model/NameBuilder.java
+R075	api-service/src/test/java/com/spring/guide/test/setup/request/MemberProfileUpdateBuilder.java	src/test/java/com/spring/guide/test/setup/request/MemberProfileUpdateBuilder.java
+R100	api-service/src/test/resources/application-test.yml	src/test/resources/application-test.yml
+R100	api-service/src/test/resources/application.yml	src/test/resources/application.yml
+
+b2c5e7f;오타 수정
+M	docs/api-call-guide.md
+
+442aa7e;기초 패키지 구성
+R078	api-service/src/main/java/com/spring/guide/common/resonse/Existence.java	api-service/src/main/java/com/spring/guide/global/common/resonse/Existence.java
+R094	api-service/src/main/java/com/spring/guide/config/SwaggerConfig.java	api-service/src/main/java/com/spring/guide/global/config/SwaggerConfig.java
+R097	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateClientHttpRequestInterceptor.java	api-service/src/main/java/com/spring/guide/global/config/resttemplate/RestTemplateClientHttpRequestInterceptor.java
+R066	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateConfig.java	api-service/src/main/java/com/spring/guide/global/config/resttemplate/RestTemplateConfig.java
+R096	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateErrorHandler.java	api-service/src/main/java/com/spring/guide/global/config/resttemplate/RestTemplateErrorHandler.java
+R098	api-service/src/main/java/com/spring/guide/error/ErrorResponse.java	api-service/src/main/java/com/spring/guide/global/error/ErrorResponse.java
+R099	api-service/src/main/java/com/spring/guide/error/GlobalExceptionHandler.java	api-service/src/main/java/com/spring/guide/global/error/GlobalExceptionHandler.java
+R088	api-service/src/main/java/com/spring/guide/error/exception/InvalidValueException.java	api-service/src/main/java/com/spring/guide/global/error/exception/InvalidValueException.java
+A	api-service/src/main/java/com/spring/guide/infra/sms/AmazonSmsClient.java
+A	api-service/src/main/java/com/spring/guide/infra/sms/SmsClient.java
+A	api-service/src/main/java/com/spring/guide/infra/sms/dto/SmsRequest.java
+M	api-service/src/main/java/com/spring/guide/member/MemberApi.java
+M	api-service/src/main/java/com/spring/guide/member/exception/EmailDuplicateException.java
+R098	api-service/src/test/java/com/spring/guide/error/GlobalExceptionHandlerTest.java	api-service/src/test/java/com/spring/guide/global/error/GlobalExceptionHandlerTest.java
+
+e32a96a;Merge pull request #19 from cheese10yun/guide-service
+8687e87;오타 수정
+M	docs/service-guide.md
+
+5c91b5e;domain 가이드 수정
+M	docs/domain-guide.md
+
+fcfe668;Update service-guide.md
+M	docs/service-guide.md
+
+1a19b39;Merge pull request #18 from cheese10yun/guide-service
+ab30f1c;오타 수정
+M	docs/service-guide.md
+
+5e7cfc6;오타 수정
+M	docs/service-guide.md
+
+a898895;Merge pull request #17 from cheese10yun/guide-service
+dcf303c;README 수정
+M	README.md
+
+93df336;서비스 가이드 작성
+M	docs/service-guide.md
+
+6afb129;서비스 가이드 초안 작성
+M	docs/service-guide.md
+
+0903c6c;패키지 구조 변경
+M	api-service/src/main/java/com/spring/guide/member/MemberApi.java
+R097	api-service/src/main/java/com/spring/guide/member/MemberSearchService.java	api-service/src/main/java/com/spring/guide/member/service/MemberSearchService.java
+M	api-service/src/test/java/com/spring/guide/member/MemberMockApiTest.java
+M	api-service/src/test/java/com/spring/guide/member/MemberSearchServiceTest.java
+A	docs/service-guide.md
+
+b67dc7d;Merge pull request #16 from cheese10yun/guide-api-call
+af2cdbf;README 수정
+M	README.md
+
+5421632;Merge pull request #15 from cheese10yun/guide-api-call
+5aa314b;README 수정
+M	README.md
+
+19c38a1;rest template 초안 작성
+M	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateConfig.java
+
+f493859;rest template 초안 작성
+M	docs/api-call-guide.md
+
+594defd;rest template 초안 작성
+A	api-service/src/main/java/com/spring/guide/SampleApi.java
+M	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateClientHttpRequestInterceptor.java
+M	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateConfig.java
+M	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateErrorHandler.java
+A	docs/api-call-guide.md
+A	docs/imgs/api-error.png
+A	docs/imgs/api-req-res.png
+
+3902d27;rest template 기본 설정들
+M	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateConfig.java
+A	api-service/src/main/java/com/spring/guide/member/service/MemberSignUpRestService.java
+
+2dc4734;rest template 기본 설정들
+D	api-service/src/main/java/com/spring/guide/config/RestTemplateConfig.java
+A	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateClientHttpRequestInterceptor.java
+A	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateConfig.java
+A	api-service/src/main/java/com/spring/guide/config/resttemplate/RestTemplateErrorHandler.java
+
+e69b181;resttemplate confg 추가
+A	api-service/src/main/java/com/spring/guide/config/RestTemplateConfig.java
+
+3efea41;Merge pull request #14 from jacobis/guide-domain
+6291bae;Fix typos and nongrammatical sentences
+M	docs/domain-guide.md
+
+075954f;Merge pull request #13 from cheese10yun/lombok-setting
+cdc10a6;불필요한 main 코드제거
+D	core/src/main/java/com/spring/guide/CoreApp.java
+
+98e7be7;Merge pull request #12 from cheese10yun/lombok-setting
+9d23851;lombok 설정 변경
+M	lombok.config
+
+13a00b5;Merge pull request #11 from cheese10yun/guide-domain
+1ed321e;Merge pull request #10 from cheese10yun/guide-domain
+3310a8a;README 수정
+M	README.md
+
+bb8b7cd;도메인 가이드 작성
+M	docs/domain-guide.md
+
+21c25fe;도메인 가이드 작성
+M	README.md
+A	docs/domain-guide.md
+
+fa3984e;Merge pull request #9 from cheese10yun/test-cerverage
+754839a;테스트 커버리지툴 변경
+M	lombok.config
+M	pom.xml
+
+bf70c04;Merge pull request #8 from cheese10yun/test-cerverage
+7c7fd35;테스트 커버리지툴 변경
+M	.circleci/config.yml
+
+9399537;테스트 커버리지툴 변경
+M	.circleci/config.yml
+M	pom.xml
+
+36f6b2c;README 수정
+M	README.md
+
+2a7d59f;README 수정
+M	README.md
+
+a9fcbcd;CI 설정 변경2
+M	pom.xml
+
+bfa7c43;CI 설정 변경2
+M	pom.xml
+
+053b9c0;CI 설정 변경2
+M	.circleci/config.yml
+
+1b269a7;CI 설정 변경2
+M	.circleci/config.yml
+M	api-service/pom.xml
+M	core/pom.xml
+
+ac62685;CI 설정 변경2
+M	.circleci/config.yml
+
+cb532bb;CI 설정 변경2
+M	.circleci/config.yml
+M	pom.xml
+
+b967ab4;CI 설정 변경2
+M	core/pom.xml
+
+3254c18;CI 설정 변경2
+M	.circleci/config.yml
+
+90f50f0;CI 설정 변경2
+M	api-service/src/main/resources/application-local.yml
+M	core/src/main/resources/application-local.yml
+
+2c11b36;CI 설정 변경2
+M	.circleci/config.yml
+
+fa8843d;CI 설정 변경2
+M	.circleci/config.yml
+M	api-service/src/main/resources/application-dev.yml
+M	api-service/src/main/resources/application-local.yml
+M	api-service/src/main/resources/application-prod.yml
+
+a9e717f;CI 설정 변경2
+M	.circleci/config.yml
+
+fa66965;CI 설정 변경2
+M	.circleci/config.yml
+
+bfac694;CI 설정 변경2
+M	.circleci/config.yml
+
+c416b66;CI 설정 변경1
+M	.circleci/config.yml
+
+2a857ec;CI 설정 변경
+M	.circleci/config.yml
+
+15cf45a;CI 설정 변경
+M	api-service/src/test/resources/application-test.yml
+M	core/pom.xml
+M	core/src/test/java/com/spring/guide/test/RepositoryTest.java
+M	core/src/test/resources/application-test.yml
+
+7c84ad0;Merge pull request #6 from sarguments/master
+2eaa92c;ci
+M	.circleci/config.yml
+
+b27575b;ci
+M	.circleci/config.yml
+
+7848d09;ci
+M	.circleci/config.yml
+
+e5b9ae7;ci
+M	.circleci/config.yml
+
+a6a7301;Update test-guide.md
+M	docs/test-guide.md
+
+d39663d;CI 설정
+M	.circleci/config.yml
+
+d0cf70a;CI 설정
+M	.circleci/config.yml
+
+18aba33;CI 설정
+M	.circleci/config.yml
+
+34b7cf2;CI 설정
+M	.circleci/config.yml
+
+b4be839;CI 설정
+M	.circleci/config.yml
+
+0b7d3fb;CI 설정
+M	.circleci/config.yml
+
+bb26540;Merge branch 'master' of https://github.com/jacobis/spring-guide
+123d189;Merge pull request #5 from cheese10yun/guide-exception
+88180ac;오타 수정
+M	docs/exception-guide.md
+
+d581196;Fix typos
+M	docs/exception-guide.md
+
+45268c1;circle ci 추가
+M	.circleci/config.yml
+
+4ed9a1a;circle ci 추가
+M	.circleci/config.yml
+
+df3ea2f;circle ci 추가
+A	.circleci/config.yml
+
+13218ba;Merge pull request #3 from cheese10yun/guide-exception
+c717df8;중복파일제거
+D	docs/test-exception.md
+
+e72be95;README 작성
+M	docs/exception-guide.md
+
+71381ad;Merge pull request #2 from cheese10yun/guide-exception
+5e2506a;README 작성
+M	README.md
+
+ea0cebd;Exception 가이드 작성
+M	api-service/pom.xml
+M	api-service/src/main/java/com/spring/guide/config/SwaggerConfig.java
+M	api-service/src/main/java/com/spring/guide/error/ErrorResponse.java
+M	api-service/src/main/resources/application-dev.yml
+M	api-service/src/main/resources/application.yml
+M	core/src/test/java/com/spring/guide/domain/member/MemberHelperServiceTest.java
+A	docs/test-exception.md
+
+90f7c59;Merge pull request #1 from cheese10yun/guide-exception
+306c64f;Exception 가이드 초안 작성
+M	core/src/main/java/com/spring/guide/domain/coupon/exception/CouponExpireException.java
+R064	docs/test-exception.md	docs/exception-guide.md
+A	docs/imgs/BusinessException-final.png
+
+cd71562;쿠폰 API 작성
+M	api-service/src/main/java/com/spring/guide/coupon/CouponApi.java
+A	api-service/src/test/java/com/spring/guide/coupon/CouponApiTest.java
+A	api-service/src/test/java/com/spring/guide/test/setup/domain/CouponSetup.java
+
+14d0920;쿠폰 API 작성
+A	api-service/src/main/java/com/spring/guide/coupon/CouponApi.java
+A	api-service/src/main/java/com/spring/guide/coupon/CouponResponse.java
+A	api-service/src/main/java/com/spring/guide/coupon/CouponUseService.java
+M	api-service/src/main/java/com/spring/guide/error/ErrorResponse.java
+M	api-service/src/main/java/com/spring/guide/error/GlobalExceptionHandler.java
+A	api-service/src/test/java/com/spring/guide/coupon/CouponBuilder.java
+A	api-service/src/test/java/com/spring/guide/coupon/CouponUseServiceTest.java
+M	api-service/src/test/java/com/spring/guide/error/GlobalExceptionHandlerTest.java
+A	core/src/main/java/com/spring/guide/domain/coupon/Coupon.java
+A	core/src/main/java/com/spring/guide/domain/coupon/CouponCode.java
+A	core/src/main/java/com/spring/guide/domain/coupon/CouponHelperService.java
+A	core/src/main/java/com/spring/guide/domain/coupon/CouponRepository.java
+A	core/src/main/java/com/spring/guide/domain/coupon/exception/CouponAlreadyUseException.java
+A	core/src/main/java/com/spring/guide/domain/coupon/exception/CouponExpireException.java
+A	core/src/main/java/com/spring/guide/domain/coupon/exception/CouponNotFoundException.java
+M	core/src/main/java/com/spring/guide/excpetion/ErrorCode.java
+A	core/src/main/java/com/spring/guide/excpetion/InvalidValueException.java
+A	core/src/test/java/com/spring/guide/domain/coupon/CouponBuilder.java
+A	core/src/test/java/com/spring/guide/domain/coupon/CouponCodeTest.java
+A	core/src/test/java/com/spring/guide/domain/coupon/CouponHelperServiceTest.java
+A	core/src/test/java/com/spring/guide/domain/coupon/CouponTest.java
+A	docs/test-exception.md
+
+c02140f;테스트용 API추가
+M	api-service/src/test/java/com/spring/guide/member/MemberApiTest.java
+
+7f6b7de;테스트용 API추가
+A	api-service/src/main/java/com/spring/guide/common/resonse/Existence.java
+A	api-service/src/main/java/com/spring/guide/config/SwaggerConfig.java
+M	api-service/src/main/java/com/spring/guide/member/MemberApi.java
+A	api-service/src/main/java/com/spring/guide/member/MemberSearchService.java
+M	api-service/src/main/java/com/spring/guide/member/dto/SignUpRequest.java
+M	api-service/src/main/java/com/spring/guide/member/service/MemberSignUpService.java
+A	api-service/src/main/java/com/spring/guide/member/type/MemberExistenceType.java
+M	api-service/src/test/java/com/spring/guide/member/MemberMockApiTest.java
+A	api-service/src/test/java/com/spring/guide/member/MemberSearchServiceTest.java
+M	api-service/src/test/java/com/spring/guide/test/setup/domain/MemberSetup.java
+M	core/pom.xml
+M	core/src/main/java/com/spring/guide/domain/member/Member.java
+M	core/src/main/java/com/spring/guide/domain/member/MemberRepository.java
+A	core/src/main/java/com/spring/guide/domain/member/ReferralCode.java
+M	core/src/test/java/com/spring/guide/domain/member/MemberBuilder.java
+
+b463e01;target 디렉토리 전체 git ignore
+M	.gitignore
+
+6bf5c4f;README 정리
+A	README.md
+M	api-service/pom.xml
+M	docs/test-guide.md
+
+f609fed;docker 파일 추가
+M	.gitignore
+A	docker-compose.yaml
+
+5def2ee;db 포트변경
+M	api-service/src/main/resources/application-dev.yml
+M	api-service/src/main/resources/application-local.yml
+M	api-service/src/test/java/com/spring/guide/member/MemberMockApiTest.java
+
+843adba;ddl 설정 변경
+M	api-service/src/test/resources/application-test.yml
+M	core/src/main/resources/application-local.yml
+
+3c6fdab;db port 변경
+M	api-service/src/main/resources/application-dev.yml
+M	api-service/src/main/resources/application-local.yml
+M	api-service/src/main/resources/application-prod.yml
+M	api-service/src/test/resources/application-test.yml
+M	core/src/main/resources/application-local.yml
+M	core/src/test/resources/application-test.yml
+
+5529af7;프로퍼티 추가
+A	core/src/main/resources/application-local.yml
+M	docs/test-guide.md
+
+8a410e0;맴버 프로필 업데이트 추가
+M	api-service/src/main/java/com/spring/guide/member/MemberApi.java
+A	api-service/src/main/java/com/spring/guide/member/dto/MemberProfileUpdate.java
+A	api-service/src/main/java/com/spring/guide/member/service/MemberProfileService.java
+M	api-service/src/main/resources/application-dev.yml
+M	api-service/src/main/resources/application-local.yml
+M	api-service/src/main/resources/application-prod.yml
+M	api-service/src/test/java/com/spring/guide/member/MemberApiTest.java
+A	api-service/src/test/java/com/spring/guide/member/service/MemberProfileServiceTest.java
+M	api-service/src/test/java/com/spring/guide/test/IntegrationTest.java
+R097	api-service/src/test/java/com/spring/guide/test/setup/MemberSetup.java	api-service/src/test/java/com/spring/guide/test/setup/domain/MemberSetup.java
+A	api-service/src/test/java/com/spring/guide/test/setup/model/AddressBuilder.java
+A	api-service/src/test/java/com/spring/guide/test/setup/model/EmailBuilder.java
+A	api-service/src/test/java/com/spring/guide/test/setup/model/NameBuilder.java
+A	api-service/src/test/java/com/spring/guide/test/setup/request/MemberProfileUpdateBuilder.java
+M	core/src/main/java/com/spring/guide/domain/member/Member.java
+M	core/src/test/java/com/spring/guide/domain/member/MemberTest.java
+
+84978fb;리팩토링
+M	api-service/src/test/java/com/spring/guide/member/MemberApiTest.java
+M	api-service/src/test/java/com/spring/guide/test/IntegrationTest.java
+M	api-service/src/test/resources/application-test.yml
+M	core/pom.xml
+M	core/src/main/resources/application.yml
+M	core/src/test/java/com/spring/guide/test/RepositoryTest.java
+M	core/src/test/resources/application-test.yml
+M	docs/test-guide.md
+
+97483a0;리팩토링
+M	api-service/src/main/java/com/spring/guide/member/MemberApi.java
+M	api-service/src/test/java/com/spring/guide/error/GlobalExceptionHandlerTest.java
+M	api-service/src/test/java/com/spring/guide/member/MemberApiTest.java
+M	api-service/src/test/java/com/spring/guide/member/MemberMockApiTest.java
+M	api-service/src/test/java/com/spring/guide/member/service/MemberSignUpServiceTest.java
+R089	api-service/src/test/java/com/spring/guide/utile/IntegrationTest.java	api-service/src/test/java/com/spring/guide/test/IntegrationTest.java
+R096	api-service/src/test/java/com/spring/guide/utile/MockApiTest.java	api-service/src/test/java/com/spring/guide/test/MockApiTest.java
+R066	core/src/test/java/com/spring/guide/utile/MockTest.java	api-service/src/test/java/com/spring/guide/test/MockTest.java
+R095	api-service/src/test/java/com/spring/guide/utile/RestDocsConfiguration.java	api-service/src/test/java/com/spring/guide/test/RestDocsConfiguration.java
+A	api-service/src/test/java/com/spring/guide/test/config/TestProfile.java
+R086	api-service/src/test/java/com/spring/guide/utile/setup/MemberSetup.java	api-service/src/test/java/com/spring/guide/test/setup/MemberSetup.java
+M	core/src/test/java/com/spring/guide/domain/member/MemberHelperServiceTest.java
+M	core/src/test/java/com/spring/guide/domain/member/MemberRepositoryTest.java
+R066	api-service/src/test/java/com/spring/guide/utile/MockTest.java	core/src/test/java/com/spring/guide/test/MockTest.java
+R081	core/src/test/java/com/spring/guide/utile/RepositoryTest.java	core/src/test/java/com/spring/guide/test/RepositoryTest.java
+R078	core/src/test/java/com/spring/guide/utile/TestConfig.java	core/src/test/java/com/spring/guide/test/TestConfig.java
+A	core/src/test/java/com/spring/guide/test/config/TestProfile.java
+R092	core/src/test/java/com/spring/guide/utile/setup/model/AddressBuilder.java	core/src/test/java/com/spring/guide/test/setup/model/AddressBuilder.java
+R084	core/src/test/java/com/spring/guide/utile/setup/model/EmailBuilder.java	core/src/test/java/com/spring/guide/test/setup/model/EmailBuilder.java
+R091	core/src/test/java/com/spring/guide/utile/setup/model/NameBuilder.java	core/src/test/java/com/spring/guide/test/setup/model/NameBuilder.java
+M	docs/test-guide.md
+
+f873174;리팩토링
+M	api-service/src/main/java/com/spring/guide/error/GlobalExceptionHandler.java
+A	api-service/src/test/java/com/spring/guide/error/GlobalExceptionHandlerTest.java
+M	api-service/src/test/java/com/spring/guide/member/MemberApiTest.java
+M	api-service/src/test/java/com/spring/guide/utile/IntegrationTest.java
+M	api-service/src/test/java/com/spring/guide/utile/setup/MemberSetup.java
+M	core/src/main/java/com/spring/guide/excpetion/ErrorCode.java
+A	core/src/test/java/com/spring/guide/utile/setup/model/NameBuilder.java
+
+3fc8508;리팩토링
+M	api-service/src/main/java/com/spring/guide/member/MemberApi.java
+M	api-service/src/test/java/com/spring/guide/member/MemberApiTest.java
+M	api-service/src/test/java/com/spring/guide/member/MemberMockApiTest.java
+M	api-service/src/test/java/com/spring/guide/utile/IntegrationTest.java
+R099	api-service/src/test/java/com/spring/guide/utile/MockMvcTest.java	api-service/src/test/java/com/spring/guide/utile/MockApiTest.java
+A	api-service/src/test/java/com/spring/guide/utile/setup/MemberSetup.java
+M	core/src/test/java/com/spring/guide/domain/member/MemberRepositoryTest.java
+R094	core/src/test/java/com/spring/guide/utile/JpaTest.java	core/src/test/java/com/spring/guide/utile/RepositoryTest.java
+A	core/src/test/java/com/spring/guide/utile/TestConfig.java
+A	core/src/test/java/com/spring/guide/utile/setup/model/AddressBuilder.java
+A	core/src/test/java/com/spring/guide/utile/setup/model/EmailBuilder.java
+M	docs/test-guide.md
+
+8ec1575;리팩토링
+M	api-service/src/test/java/com/spring/guide/member/service/MemberSignUpServiceTest.java
+
+ebf9677;리팩토링
+M	api-service/src/main/java/com/spring/guide/member/MemberApi.java
+
+4270dda;리팩토링
+M	api-service/src/main/java/com/spring/guide/member/MemberApi.java
+M	api-service/src/main/java/com/spring/guide/member/dto/SignUpRequest.java
+M	api-service/src/main/java/com/spring/guide/member/service/MemberSignUpService.java
+M	api-service/src/test/java/com/spring/guide/member/MemberMockApiTest.java
+M	api-service/src/test/java/com/spring/guide/member/service/MemberSignUpServiceTest.java
+A	docs/test-guide.md
+
+64d7d34;commit
+M	core/src/main/java/com/spring/guide/domain/member/Member.java
+M	core/src/main/java/com/spring/guide/model/Email.java
+M	core/src/main/java/com/spring/guide/model/Name.java
+M	core/src/test/java/com/spring/guide/domain/member/MemberRepositoryTest.java
+M	core/src/test/java/com/spring/guide/domain/member/MemberTest.java
+M	lombok.config
+
+828a18a;commit
+A	.gitignore
+A	.mvn/wrapper/maven-wrapper.jar
+A	.mvn/wrapper/maven-wrapper.properties
+A	api-service/pom.xml
+A	api-service/src/main/java/com/spring/guide/ApiApp.java
+A	api-service/src/main/java/com/spring/guide/error/ErrorResponse.java
+A	api-service/src/main/java/com/spring/guide/error/GlobalExceptionHandler.java
+A	api-service/src/main/java/com/spring/guide/error/exception/InvalidValueException.java
+A	api-service/src/main/java/com/spring/guide/member/MemberApi.java
+A	api-service/src/main/java/com/spring/guide/member/dto/MemberResponse.java
+A	api-service/src/main/java/com/spring/guide/member/dto/SignUpRequest.java
+A	api-service/src/main/java/com/spring/guide/member/exception/EmailDuplicateException.java
+A	api-service/src/main/java/com/spring/guide/member/service/MemberSignUpService.java
+A	api-service/src/main/resources/application-dev.yml
+A	api-service/src/main/resources/application-local.yml
+A	api-service/src/main/resources/application-prod.yml
+A	api-service/src/main/resources/application.yml
+A	api-service/src/test/java/com/spring/guide/ApiAppTest.java
+A	api-service/src/test/java/com/spring/guide/member/MemberApiTest.java
+A	api-service/src/test/java/com/spring/guide/member/MemberBuilder.java
+A	api-service/src/test/java/com/spring/guide/member/MemberMockApiTest.java
+A	api-service/src/test/java/com/spring/guide/member/dto/SignUpRequestBuilder.java
+A	api-service/src/test/java/com/spring/guide/member/service/MemberSignUpServiceTest.java
+A	api-service/src/test/java/com/spring/guide/utile/IntegrationTest.java
+A	api-service/src/test/java/com/spring/guide/utile/MockMvcTest.java
+A	api-service/src/test/java/com/spring/guide/utile/MockTest.java
+A	api-service/src/test/java/com/spring/guide/utile/RestDocsConfiguration.java
+A	api-service/src/test/resources/application-test.yml
+A	api-service/src/test/resources/application.yml
+A	core/pom.xml
+A	core/src/main/java/com/spring/guide/CoreApp.java
+A	core/src/main/java/com/spring/guide/domain/member/Member.java
+A	core/src/main/java/com/spring/guide/domain/member/MemberHelperService.java
+A	core/src/main/java/com/spring/guide/domain/member/MemberRepository.java
+A	core/src/main/java/com/spring/guide/domain/member/exception/EmailNotFoundException.java
+A	core/src/main/java/com/spring/guide/domain/member/exception/MemberNotFoundException.java
+A	core/src/main/java/com/spring/guide/excpetion/BusinessException.java
+A	core/src/main/java/com/spring/guide/excpetion/EntityNotFoundException.java
+A	core/src/main/java/com/spring/guide/excpetion/ErrorCode.java
+A	core/src/main/java/com/spring/guide/model/Address.java
+A	core/src/main/java/com/spring/guide/model/Email.java
+A	core/src/main/java/com/spring/guide/model/Name.java
+A	core/src/main/resources/application.yml
+A	core/src/test/java/com/spring/guide/domain/member/MemberBuilder.java
+A	core/src/test/java/com/spring/guide/domain/member/MemberHelperServiceTest.java
+A	core/src/test/java/com/spring/guide/domain/member/MemberRepositoryTest.java
+A	core/src/test/java/com/spring/guide/domain/member/MemberTest.java
+A	core/src/test/java/com/spring/guide/model/AddressTest.java
+A	core/src/test/java/com/spring/guide/model/EmailTest.java
+A	core/src/test/java/com/spring/guide/model/NameTest.java
+A	core/src/test/java/com/spring/guide/utile/JpaTest.java
+A	core/src/test/java/com/spring/guide/utile/MockTest.java
+A	core/src/test/resources/application-test.yml
+A	core/src/test/resources/application.yml
+A	lombok.config
+A	mvnw
+A	mvnw.cmd
+A	pom.xml

@@ -1,0 +1,586 @@
+740829c;Updated deploy key
+M	.circleci/config.yml
+
+c9b7ef7;Fixed failing test
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/security/SecurityConfigurationTests.java
+
+fec3779;Updated reference documentation
+M	README.adoc
+M	docs/src/main/asciidoc/README.adoc
+M	docs/src/main/asciidoc/index.adoc
+A	docs/src/main/asciidoc/intro.adoc
+A	docs/src/main/asciidoc/setup-getting-started.adoc
+A	docs/src/main/asciidoc/setup-security.adoc
+A	docs/src/main/asciidoc/setup-service-discovery.adoc
+A	docs/src/main/asciidoc/setup.adoc
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/BasicClientSecurityProperties.java
+
+2205900;Fixed some dangling references (ordina-jworks/microservices-dashboard-server/issues/82)
+M	.github/ISSUE_TEMPLATE/bug_report.md
+M	.github/PULL_REQUEST_TEMPLATE/bug_fix.md
+M	.github/PULL_REQUEST_TEMPLATE/documentation.md
+M	.github/PULL_REQUEST_TEMPLATE/feature_change.md
+M	.github/PULL_REQUEST_TEMPLATE/performance_improvement.md
+M	.github/pull_request_template.md
+M	CONTRIBUTING.md
+M	README.adoc
+M	docs/src/main/asciidoc/README.adoc
+M	docs/src/main/asciidoc/attributes.adoc
+M	docs/src/main/asciidoc/index-docinfo.xml
+M	pom.xml
+
+fec771f;Updated project structure to reflect ordina-jworks/microservices-dashboard-server/issues/82
+M	.circleci/config.yml
+M	README.adoc
+M	docs/pom.xml
+M	docs/src/main/asciidoc/README.adoc
+M	microservices-dashboard-server-core/pom.xml
+M	pom.xml
+M	samples/microservices-dashboard-simple/pom.xml
+M	samples/pom.xml
+
+41bb9db;Fixed a pom issue and added some ignores
+M	pom.xml
+M	samples/microservices-dashboard-simple/src/main/java/be/ordina/msdashboard/SampleApplication.java
+M	samples/microservices-dashboard-simple/src/main/resources/application.properties
+M	samples/microservices-dashboard-simple/src/main/resources/bootstrap.properties
+
+2807274;Added additional tests
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceTests.java
+M	samples/microservices-dashboard-simple/src/main/java/be/ordina/msdashboard/SampleApplication.java
+M	samples/microservices-dashboard-simple/src/main/resources/application.properties
+
+80a44dc;Discover the actuator endpoints after the application instance is created
+M	checkstyle/checkstyle.xml
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ActuatorEndpointsDiscoverer.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ActuatorEndpointsDiscovererService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcher.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceUpdater.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/HalActuatorEndpointsDiscoverer.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/commands/UpdateActuatorEndpoints.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/events/ActuatorEndpointsUpdated.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/api/ApplicationInstanceControllerTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ActuatorEndpointsDiscovererServiceTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceEventMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceServiceTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceUpdaterTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/HalActuatorEndpointsDiscovererTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/autoconfigure/AutoConfigurationTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/CatalogUpdaterTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/configuration/WebClientResponseExceptionCreatorTests.java
+
+7db0d61;Added missing security test for basic auth filter
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/security/SecurityConfigurationTests.java
+
+64d4ccc;Moved creation of machine-to-machine-web-client to CommonConfiguration
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/configuration/CommonConfiguration.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/configuration/MachineToMachineWebClientConfigurer.java
+R098	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/WebClientResponseExceptionCreator.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/configuration/WebClientResponseExceptionCreator.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/BasicClientSecurityConfigured.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/BasicClientSecurityProperties.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/SecurityConfiguration.java
+D	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/SecurityProperties.java
+R097	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/security/WebClientResponseExceptionCreatorTests.java	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/configuration/WebClientResponseExceptionCreatorTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/security/SecurityConfigurationTests.java
+
+17514a5;Throw a WebClientResponseException when the HTTP status is 4xx or 5xx
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ActuatorEndpointsDiscovererService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/HalActuatorEndpointsDiscoverer.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/SecurityConfiguration.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/WebClientResponseExceptionCreator.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/security/WebClientResponseExceptionCreatorTests.java
+
+dadc461;Enabled configuration properties OAuth2ClientProperties
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/SecurityConfiguration.java
+
+ab219fe;Added ExchangeFilterFunctions to authenticate against secured resources
+M	microservices-dashboard-server-core/pom.xml
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/BasicClientSecurityProperties.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/SecurityConfiguration.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/security/SecurityProperties.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/autoconfigure/AutoConfigurationTests.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/security/SecurityConfigurationTests.java
+M	pom.xml
+
+9036ed3;Added fallback in case something goes wrong while discovering the actuator endpoints
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ActuatorEndpointsDiscovererService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/HalActuatorEndpointsDiscoverer.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ActuatorEndpointsDiscovererServiceTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/HalActuatorEndpointsDiscovererTests.java
+
+65b8b17;Added commands
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcher.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceUpdater.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/commands/CreateApplicationInstance.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/commands/DeleteApplicationInstance.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/commands/UpdateApplicationInstanceHealth.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/events/ApplicationInstanceHealthDataRetrieved.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceServiceTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceUpdaterTests.java
+
+063af97;Don't check the health of deleted instances
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcher.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceTests.java
+
+f50dc7c;Added HTTP endpoints to get an overview of the environment
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/api/ApplicationInstanceController.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/api/ApplicationInstanceResource.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/api/ApplicationInstanceResourceAssembler.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/api/CatalogController.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/api/CatalogResource.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/Catalog.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/api/ApplicationInstanceControllerTests.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/api/CatalogControllerTests.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/CatalogMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/CatalogTests.java
+
+9999c89;Added missing beans to configuration
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/CatalogConfiguration.java
+
+5949c66;The catalog will act as the read model of the whole system
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceService.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceUpdater.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/events/ApplicationInstanceCreated.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/events/ApplicationInstanceDeleted.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/Catalog.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/CatalogConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/CatalogService.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/CatalogUpdater.java
+D	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/LandscapeWatcher.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/discovery/ApplicationFilter.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/discovery/ApplicationInstanceFilter.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/discovery/DiscoveryConfiguration.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/discovery/LandscapeWatcher.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/discovery/events/ServiceDisappeared.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/discovery/events/ServiceDiscovered.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/discovery/events/ServiceInstanceDisappeared.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/discovery/events/ServiceInstanceDiscovered.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceEventMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceServiceTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceTests.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceUpdaterTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/autoconfigure/AutoConfigurationTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/CatalogServiceTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/CatalogTests.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/CatalogUpdaterTests.java
+D	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/LandscapeWatcherTest.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/discovery/LandscapeWatcherTest.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/discovery/ServiceDiscoveryEventMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/eventstore/EventSourcedApplicationInstanceRepositoryTests.java
+
+0c64df7;Added test in case there is no "_links" element in the json body
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/HalActuatorEndpointsDiscovererTests.java
+
+e62a9d4;Fixed problems introduced with refactoring
+M	pom.xml
+
+179e022;Added discovery of actuator endpoints
+M	microservices-dashboard-server-core/pom.xml
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ActuatorEndpointsDiscoverer.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ActuatorEndpointsDiscovererService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcher.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceService.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/HalActuatorEndpointsDiscoverer.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/Catalog.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/CatalogService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/LandscapeWatcher.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ActuatorEndpointsDiscovererServiceTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceEventMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceServiceTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceTests.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/HalActuatorEndpointsDiscovererTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/autoconfigure/AutoConfigurationTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/CatalogServiceTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/CatalogTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/LandscapeWatcherTest.java
+M	pom.xml
+
+95e4435;No reason to discover the landscape at startup. Let the discovery client(s) connect first to the registry|ies
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/LandscapeWatcher.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/LandscapeWatcherTest.java
+
+a190102;Fixed wrong comparison
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+
+2527ac0;Enabled async and scheduling
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+
+7942e27;Spread the retrieval/creation of application instances across multiple threads
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/LandscapeWatcher.java
+
+81cd74f;Use the dynamic URI for the health actuator endpoint instead of the hardcoded one
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcher.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceEventMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceTests.java
+
+3dd64eb;Added possibility to save the actuator endpoints
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceTests.java
+
+bd2e2ef;A newly created application instance should always have an unknown health status
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+
+7516f41;Fixed issue where a wrong event was dispatched when updating an application instance's health status
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/events/ApplicationInstanceHealthUpdated.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceTests.java
+
+eadc0cb;Update the application instance's health status when retrieved
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcher.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceService.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceEventMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceServiceTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceTests.java
+
+b1fe379;Check if the application instance health watcher receives additional details
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+
+a257926;Removed obsolete events
+D	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/NewServiceDiscovered.java
+D	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/NewServiceInstanceDiscovered.java
+D	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/ServiceDeregistered.java
+D	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/ServiceInstanceDeregistered.java
+D	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/package-info.java
+D	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/events/NewServiceInstanceDiscoveredMother.java
+
+48f0b7d;Added basic implementation of the catalog service
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/CatalogService.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/CatalogServiceTests.java
+
+29a524e;Added basic implementation of the catalog
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/Catalog.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/CatalogTests.java
+
+1332266;Added setup for deploying snapshot builds
+M	.circleci/config.yml
+
+4cefc64;Added possibility to filter out discovered applications and instances
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/CatalogConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/LandscapeWatcher.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/LandscapeWatcherTest.java
+
+4432340;Divided auto-configuration across multiple configuration classes
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcher.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/CatalogConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/LandscapeWatcher.java
+
+bacfa91;Updated all ASF license headers
+M	.settings.xml
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/events/ApplicationInstanceHealthDataRetrievalFailed.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/events/ApplicationInstanceHealthDataRetrieved.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/LandscapeWatcher.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/NewServiceDiscovered.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/NewServiceInstanceDiscovered.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/ServiceDeregistered.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/ServiceInstanceDeregistered.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/package-info.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/eventstore/InMemoryEventStoreConfiguration.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/package-info.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/events/NewServiceInstanceDiscoveredMother.java
+
+b8c2b72;Fixed all checktyle issues
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/eventstore/EventSourcedApplicationInstanceRepository.java
+M	pom.xml
+M	samples/microservices-dashboard-simple/src/main/java/be/ordina/msdashboard/SampleApplication.java
+M	samples/microservices-dashboard-simple/src/main/resources/application.properties
+M	samples/microservices-dashboard-simple/src/main/resources/bootstrap.properties
+
+6b39d91;Changed event on which the health of an application instance should be retrieved
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcher.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceEventMother.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+
+ca46f73;Implemented `ApplicationInstanceRepository`
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/events/ApplicationInstanceCreated.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/eventstore/EventSourcedApplicationInstanceRepository.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/eventstore/InMemoryEventStoreConfiguration.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceMother.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceTests.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/eventstore/EventSourcedApplicationInstanceRepositoryTests.java
+
+5db7f3f;Added `ApplicationInstanceRepository`
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceRepository.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/eventstore/EventSourcedApplicationInstanceRepository.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/eventstore/InMemoryEventStoreConfiguration.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceServiceTests.java
+
+278b24b;Moved `LandscapeWatcher`
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+R097	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/LandscapeWatcher.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/LandscapeWatcher.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/autoconfigure/AutoConfigurationTests.java
+R097	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/LandscapeWatcherTest.java	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/catalog/LandscapeWatcherTest.java
+
+b03f73a;Refactored `HealthAggregator` to `ApplicationInstanceHealthWatcher`
+D	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/aggregator/health/package-info.java
+R071	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/aggregator/health/HealthAggregator.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcher.java
+R069	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/HealthInfoRetrievalFailed.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/events/ApplicationInstanceHealthDataRetrievalFailed.java
+R073	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/HealthInfoRetrieved.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/events/ApplicationInstanceHealthDataRetrieved.java
+R070	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/aggregator/health/package-info.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/package-info.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+R069	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/aggregator/health/HealthAggregatorTest.java	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceHealthWatcherTests.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/autoconfigure/AutoConfigurationTests.java
+R090	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/aggregator/health/NewServiceInstanceDiscoveredMother.java	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/events/NewServiceInstanceDiscoveredMother.java
+
+13d45f6;Introducing the catalog - keeps track of all known applications and their instances in the environment
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/LandscapeWatcher.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/aggregator/health/HealthAggregator.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstance.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/Catalog.java
+A	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/catalog/CatalogService.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/HealthInfoRetrievalFailed.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/HealthInfoRetrieved.java
+M	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/NewServiceInstanceDiscovered.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/LandscapeWatcherTest.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/aggregator/health/HealthAggregatorTest.java
+M	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/aggregator/health/NewServiceInstanceDiscoveredMother.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/applicationinstance/ApplicationInstanceMother.java
+
+759f637;Fixed ghpages.sh
+M	docs/src/main/scripts/ghpages.sh
+
+e815894;Switched container image
+M	.circleci/config.yml
+
+88ec1a1;Switched CircleCI build from VM to container
+M	.circleci/config.yml
+
+03cf436;Fixed typo in URL in README
+M	README.adoc
+M	docs/src/main/asciidoc/README.adoc
+
+98244ce;Updated code conventions and checkstyle
+M	.editorconfig
+M	README.adoc
+M	checkstyle/checkstyle-suppressions.xml
+M	checkstyle/checkstyle.xml
+A	checkstyle/eclipse/eclipse-code-formatter.xml
+A	checkstyle/intellij/IntelliJ_Ordina_OSS_Java_Conventions.xml
+A	checkstyle/intellij/Intellij_Project_Defaults.xml
+M	docs/src/main/asciidoc/README.adoc
+A	docs/src/main/asciidoc/images/intellij-checkstyle.png
+A	docs/src/main/asciidoc/images/intellij-code-style.png
+A	docs/src/main/asciidoc/images/intellij-inspections.png
+M	pom.xml
+
+042f556;Fixed CircleCI script
+M	.circleci/config.yml
+
+a14d7fc;Fixed CircleCI script
+M	.circleci/config.yml
+
+829e965;Fixed GitHub Pages script
+M	.circleci/config.yml
+M	docs/src/main/scripts/ghpages.sh
+
+35fcd63;Fixed CircleCI script
+M	.circleci/config.yml
+
+8192d52;Added auto-documentation infrastructure
+M	.circleci/config.yml
+A	README.adoc
+D	README.md
+A	docs/pom.xml
+A	docs/src/main/asciidoc/README.adoc
+A	docs/src/main/asciidoc/attributes.adoc
+A	docs/src/main/asciidoc/index-docinfo.xml
+A	docs/src/main/asciidoc/index.adoc
+A	docs/src/main/scripts/generate_readme.sh
+A	docs/src/main/scripts/ghpages.sh
+M	pom.xml
+
+cd9cb14;Updated project structure
+A	.circleci/config.yml
+A	.mvn/wrapper/MavenWrapperDownloader.java
+A	.mvn/wrapper/maven-wrapper.jar
+A	.mvn/wrapper/maven-wrapper.properties
+A	.settings.xml
+R100	microservices-dashboard-server/src/checkstyle/checkstyle-header.txt	checkstyle/checkstyle-header.txt
+R100	microservices-dashboard-server/src/checkstyle/checkstyle-suppressions.xml	checkstyle/checkstyle-suppressions.xml
+R099	microservices-dashboard-server/src/checkstyle/checkstyle.xml	checkstyle/checkstyle.xml
+R100	microservices-dashboard-server/src/checkstyle/import-control.xml	checkstyle/import-control.xml
+A	microservices-dashboard-server-core/pom.xml
+R098	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/LandscapeWatcher.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/LandscapeWatcher.java
+R097	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/aggregator/health/HealthAggregator.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/aggregator/health/HealthAggregator.java
+R090	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/aggregator/health/package-info.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/aggregator/health/package-info.java
+R087	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+R099	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/HealthInfoRetrievalFailed.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/HealthInfoRetrievalFailed.java
+R099	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/HealthInfoRetrieved.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/HealthInfoRetrieved.java
+R100	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/NewServiceDiscovered.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/NewServiceDiscovered.java
+R100	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/NewServiceInstanceDiscovered.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/NewServiceInstanceDiscovered.java
+R100	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/ServiceDeregistered.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/ServiceDeregistered.java
+R100	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/ServiceInstanceDeregistered.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/ServiceInstanceDeregistered.java
+R100	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/package-info.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/events/package-info.java
+R090	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/package-info.java	microservices-dashboard-server-core/src/main/java/be/ordina/msdashboard/package-info.java
+R100	microservices-dashboard-server/src/main/resources/META-INF/spring.factories	microservices-dashboard-server-core/src/main/resources/META-INF/spring.factories
+R100	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/LandscapeWatcherTest.java	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/LandscapeWatcherTest.java
+R084	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/aggregator/health/HealthAggregatorTest.java	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/aggregator/health/HealthAggregatorTest.java
+R099	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/aggregator/health/NewServiceInstanceDiscoveredMother.java	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/aggregator/health/NewServiceInstanceDiscoveredMother.java
+R090	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/aggregator/health/package-info.java	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/aggregator/health/package-info.java
+A	microservices-dashboard-server-core/src/test/java/be/ordina/msdashboard/autoconfigure/AutoConfigurationTests.java
+D	microservices-dashboard-server/pom.xml
+D	microservices-dashboard-server/src/main/asciidoc/api-guide.asciidoc
+D	microservices-dashboard-server/src/main/asciidoc/getting-started-guide.asciidoc
+D	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/MicroservicesDashboardServerApplicationTest.java
+A	mvnw
+A	mvnw.cmd
+A	pom.xml
+M	samples/microservices-dashboard-simple/pom.xml
+M	samples/microservices-dashboard-simple/src/main/java/be/ordina/msdashboard/SampleApplication.java
+A	samples/pom.xml
+
+f3d3830;Added PR templates
+D	.DS_Store
+M	.github/ISSUE_TEMPLATE/bug_report.md
+M	.github/ISSUE_TEMPLATE/feature_request.md
+A	.github/PULL_REQUEST_TEMPLATE/bug_fix.md
+A	.github/PULL_REQUEST_TEMPLATE/documentation.md
+A	.github/PULL_REQUEST_TEMPLATE/feature_change.md
+A	.github/PULL_REQUEST_TEMPLATE/performance_improvement.md
+A	.github/pull_request_template.md
+
+c4e58ef;Upgraded to latest and greatest (#75)
+M	microservices-dashboard-server/pom.xml
+
+3897aa6;Added issue templates
+A	.github/ISSUE_TEMPLATE/bug_report.md
+A	.github/ISSUE_TEMPLATE/feature_request.md
+
+bd391d5;Added a very basic Health Aggregator (#64)
+M	microservices-dashboard-server/pom.xml
+M	microservices-dashboard-server/src/checkstyle/import-control.xml
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/LandscapeWatcher.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/aggregator/health/HealthAggregator.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/aggregator/health/package-info.java
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/HealthInfoRetrievalFailed.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/HealthInfoRetrieved.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/package-info.java
+M	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/LandscapeWatcherTest.java
+M	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/MicroservicesDashboardServerApplicationTest.java
+A	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/aggregator/health/HealthAggregatorTest.java
+A	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/aggregator/health/NewServiceInstanceDiscoveredMother.java
+A	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/aggregator/health/package-info.java
+M	samples/microservices-dashboard-simple/pom.xml
+M	samples/microservices-dashboard-simple/src/main/resources/application.properties
+M	samples/microservices-dashboard-simple/src/main/resources/bootstrap.properties
+
+e067575;Removed @EnableMicroservicesDashboardServer
+M	samples/microservices-dashboard-simple/src/main/java/be/ordina/msdashboard/SampleApplication.java
+
+7118366;Added checkstyle rules & .editorconfig
+A	.editorconfig
+M	microservices-dashboard-server/pom.xml
+A	microservices-dashboard-server/src/checkstyle/checkstyle-header.txt
+A	microservices-dashboard-server/src/checkstyle/checkstyle-suppressions.xml
+A	microservices-dashboard-server/src/checkstyle/checkstyle.xml
+A	microservices-dashboard-server/src/checkstyle/import-control.xml
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/LandscapeWatcher.java
+D	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/MicroservicesDashboardServerAutoConfiguration.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/autoconfigure/MicroservicesDashboardServerAutoConfiguration.java
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/NewServiceDiscovered.java
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/NewServiceInstanceDiscovered.java
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/ServiceDeregistered.java
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/ServiceInstanceDeregistered.java
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/package-info.java
+M	microservices-dashboard-server/src/main/resources/META-INF/spring.factories
+M	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/LandscapeWatcherTest.java
+M	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/MicroservicesDashboardServerApplicationTest.java
+
+b72c90e;Removed unnecessary @EnableMicroservicesDashboardServer
+D	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/EnableMicroservicesDashboardServer.java
+M	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/MicroservicesDashboardServerApplicationTest.java
+
+b3ad92b;Added integration test
+A	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/MicroservicesDashboardServerApplicationTest.java
+
+3e95c36;Don't take the metadata into consideration for uniqueness.
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/LandscapeWatcher.java
+
+75fc8cd;Added `ServiceInstanceWrapper`. This is used to have a standardized equals/hashcode implementation.
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/LandscapeWatcher.java
+
+d9a1781;Added implementation of the landscape watcher
+M	.gitignore
+M	microservices-dashboard-server/pom.xml
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/LandscapeWatcher.java
+M	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/MicroservicesDashboardServerAutoConfiguration.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/NewServiceDiscovered.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/NewServiceInstanceDiscovered.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/ServiceDeregistered.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/events/ServiceInstanceDeregistered.java
+A	microservices-dashboard-server/src/test/java/be/ordina/msdashboard/LandscapeWatcherTest.java
+
+f0dbe3e;Updated simple sample to work with Eureka
+M	samples/microservices-dashboard-simple/pom.xml
+A	samples/microservices-dashboard-simple/src/main/resources/application.properties
+A	samples/microservices-dashboard-simple/src/main/resources/bootstrap.properties
+
+7ec9cb9;Added auto-configuration
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/MicroservicesDashboardServerAutoConfiguration.java
+M	microservices-dashboard-server/src/main/resources/META-INF/spring.factories
+
+959a71a;Added a main function
+M	.gitignore
+M	samples/microservices-dashboard-simple/src/main/java/be/ordina/msdashboard/SampleApplication.java
+
+099e233;Fixed issue with pom.xml of sample application
+M	samples/microservices-dashboard-simple/pom.xml
+
+36616e3;Setup sample project
+M	.DS_Store
+M	microservices-dashboard-server/src/main/asciidoc/api-guide.asciidoc
+M	microservices-dashboard-server/src/main/asciidoc/getting-started-guide.asciidoc
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/LandscapeWatcher.java
+A	samples/microservices-dashboard-simple/pom.xml
+A	samples/microservices-dashboard-simple/src/main/java/be/ordina/msdashboard/SampleApplication.java
+
+401288a;Setup new project structure in preparation for 2.0
+A	.DS_Store
+A	.gitignore
+A	CODE_OF_CONDUCT.md
+A	CONTRIBUTING.md
+A	LICENSE.txt
+A	README.md
+A	codecov.yml
+A	microservices-dashboard-server/pom.xml
+A	microservices-dashboard-server/src/main/asciidoc/api-guide.asciidoc
+A	microservices-dashboard-server/src/main/asciidoc/getting-started-guide.asciidoc
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/EnableMicroservicesDashboardServer.java
+A	microservices-dashboard-server/src/main/java/be/ordina/msdashboard/package-info.java
+A	microservices-dashboard-server/src/main/resources/META-INF/spring.factories

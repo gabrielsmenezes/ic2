@@ -1,0 +1,380 @@
+0146134;fix dependency rule on diagram
+M	README.md
+M	art/mobile-architecture-diagram.jpg
+M	art/mobile-architecture-diagram.svg
+
+116d3cb;fix for readme svg
+M	README.md
+
+ed43278;adding diagram; updating gradle and build tools
+M	.idea/gradle.xml
+A	.idea/markdown-navigator.xml
+A	.idea/markdown-navigator/profiles_settings.xml
+M	README.md
+M	app/build.gradle
+A	art/mobile-architecture-diagram.jpg
+A	art/mobile-architecture-diagram.svg
+M	build.gradle
+M	data/build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+c507de5;smaller gif file
+M	README.md
+
+c361fdf;smaller gif file
+M	README.md
+M	art/list.gif
+D	art/list2.gif
+
+ee5b3c6;translucent system bars; shared image transition; updated readme and art
+M	README.md
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailActivity.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListItemView.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/activity_thing_detail.xml
+M	app/src/main/res/layout/thing_list_item_wide.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/styles.xml
+A	art/list2.gif
+M	core/src/main/java/com/vml/listofthings/core/things/ThingEntity.java
+M	data/src/dev/java/com/vml/listofthings/data/MockThingService.java
+
+becb63a;adding shared element activity transition and overscroll - still needs code cleanup
+M	app/build.gradle
+M	app/src/main/java/com/vml/listofthings/app/base/BaseActivity.java
+A	app/src/main/java/com/vml/listofthings/app/base/TransitionHelper.java
+M	app/src/main/java/com/vml/listofthings/app/di/AppModule.java
+A	app/src/main/java/com/vml/listofthings/app/thingdetail/BitmapUtil.java
+A	app/src/main/java/com/vml/listofthings/app/thingdetail/RevealUtil.java
+M	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailActivity.java
+D	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailUtil.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListItemView.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/layout/activity_thing_detail.xml
+M	app/src/main/res/layout/thing_list_item_tall.xml
+M	app/src/main/res/layout/thing_list_item_wide.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/values/styles.xml
+
+6b1fc3e;add thing images; multiple list item layouts; pinch and spread gesture
+M	app/build.gradle
+M	app/src/main/java/com/vml/listofthings/app/base/GridRecyclerView.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+A	app/src/main/java/com/vml/listofthings/app/thinglist/PinchSpreadHelper.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListItemView.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListLayout.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/thing_list_item.xml
+A	app/src/main/res/layout/thing_list_item_tall.xml
+A	app/src/main/res/layout/thing_list_item_wide.xml
+
+110f8ba;updated list.gif to show new animations
+M	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailActivity.java
+M	app/src/main/res/layout/activity_thing_detail.xml
+M	art/list.gif
+
+05d2e60;toggle view mode with animation
+M	README.md
+M	app/src/main/java/com/vml/listofthings/app/base/GridRecyclerView.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListItemView.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListLayout.java
+A	app/src/main/res/drawable/ic_grid_off_white_24px.xml
+A	app/src/main/res/drawable/ic_grid_on_white_24px.xml
+A	app/src/main/res/drawable/ic_view_module_white_24px.xml
+A	app/src/main/res/drawable/ic_view_stream_white_24px.xml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/thing_list_item.xml
+A	app/src/main/res/menu/main_menu.xml
+M	app/src/main/res/values/strings.xml
+
+2045c50;List animations for refresh, remove, and undo
+M	README.md
+A	app/src/main/java/com/vml/listofthings/app/base/BaseRecyclerAdapter.java
+A	app/src/main/java/com/vml/listofthings/app/base/GridRecyclerView.java
+D	app/src/main/java/com/vml/listofthings/app/base/SmartHeaderRecyclerAdapter.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+A	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListLayout.java
+A	app/src/main/res/anim/grid_layout_animation.xml
+A	app/src/main/res/anim/slide_in_bottom.xml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/thing_list_item.xml
+M	app/src/main/res/values/strings.xml
+M	build.gradle
+
+7bfa78a;adding readme links
+M	README.md
+
+6617a7a;adding readme links
+M	README.md
+
+90430e3;update itemsrecycleradapter
+M	README.md
+M	app/src/main/java/com/vml/listofthings/app/base/ItemsRecyclerAdapter.java
+
+e86bf17;updated readme
+M	README.md
+
+37747ec;adding gif screencasts
+M	README.md
+A	art/list.gif
+A	art/settings.gif
+
+b023872;move domainmodule and domain tests to data library
+M	app/src/dev/java/com/vml/listofthings/app/base/AppComponentBuilder.java
+M	app/src/main/java/com/vml/listofthings/app/di/AppComponent.java
+D	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListRecyclerAdapter.java
+D	app/src/test/java/com/vml/listofthings/di/TestDomainComponent.java
+R097	app/src/main/java/com/vml/listofthings/app/di/DomainModule.java	data/src/main/java/com/vml/listofthings/data/di/DomainModule.java
+R086	app/src/test/java/com/vml/listofthings/GetThingInteractorTest.java	data/src/test/java/com/vml/listofthings/GetThingInteractorTest.java
+R089	app/src/test/java/com/vml/listofthings/GetThingListInteractorTest.java	data/src/test/java/com/vml/listofthings/GetThingListInteractorTest.java
+M	data/src/test/java/com/vml/listofthings/ThingRepositoryTest.java
+M	data/src/test/java/com/vml/listofthings/di/TestDataComponent.java
+
+28e60f9;environment switching; git build integration; gloabl error handling
+M	README.md
+M	app/build.gradle
+M	app/src/dev/java/com/vml/listofthings/app/base/AppComponentBuilder.java
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/vml/listofthings/app/base/App.java
+M	app/src/main/java/com/vml/listofthings/app/base/BaseActivity.java
+A	app/src/main/java/com/vml/listofthings/app/base/ItemsRecyclerAdapter.java
+R095	app/src/main/java/com/vml/listofthings/app/base/QuickReturnFooterBehavior.java	app/src/main/java/com/vml/listofthings/app/base/SmartFooterBehavior.java
+R096	app/src/main/java/com/vml/listofthings/app/base/RecyclerItemsAdapter.java	app/src/main/java/com/vml/listofthings/app/base/SmartHeaderRecyclerAdapter.java
+M	app/src/main/java/com/vml/listofthings/app/di/AppComponent.java
+M	app/src/main/java/com/vml/listofthings/app/di/AppModule.java
+M	app/src/main/java/com/vml/listofthings/app/di/DomainModule.java
+A	app/src/main/java/com/vml/listofthings/app/settings/SettingsActivity.java
+A	app/src/main/java/com/vml/listofthings/app/settings/SettingsPresenter.java
+A	app/src/main/java/com/vml/listofthings/app/settings/SettingsView.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListItemView.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListPresenter.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListView.java
+A	app/src/main/res/drawable/bottom_border_grey.xml
+A	app/src/main/res/drawable/bottom_border_grey_background_white.xml
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/activity_settings.xml
+D	app/src/main/res/menu/menu_scrolling.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/test/java/com/vml/listofthings/GetThingListInteractorTest.java
+M	app/src/test/java/com/vml/listofthings/di/TestDomainComponent.java
+R056	data/src/main/java/com/vml/listofthings/data/retrofit/Environment.java	core/src/main/java/com/vml/listofthings/core/environment/Environment.java
+A	core/src/main/java/com/vml/listofthings/core/environment/GetEnvironmentInteractor.java
+A	core/src/main/java/com/vml/listofthings/core/environment/GetEnvironmentsInteractor.java
+R085	core/src/main/java/com/vml/listofthings/core/SessionEntity.java	core/src/main/java/com/vml/listofthings/core/environment/SessionEntity.java
+A	core/src/main/java/com/vml/listofthings/core/environment/SetEnvironmentInteractor.java
+A	data/src/dev/java/com/vml/listofthings/data/DevDataModule.java
+A	data/src/dev/java/com/vml/listofthings/data/DevServiceFactory.java
+D	data/src/main/java/com/vml/listofthings/data/DataUtil.java
+A	data/src/main/java/com/vml/listofthings/data/base/DataUtil.java
+R080	data/src/main/java/com/vml/listofthings/data/retrofit/NetworkErrorHandler.java	data/src/main/java/com/vml/listofthings/data/base/NetworkErrorHandler.java
+R097	data/src/main/java/com/vml/listofthings/data/RxUtil.java	data/src/main/java/com/vml/listofthings/data/base/RxUtil.java
+A	data/src/main/java/com/vml/listofthings/data/base/ServiceFactory.java
+M	data/src/main/java/com/vml/listofthings/data/di/DataModule.java
+D	data/src/main/java/com/vml/listofthings/data/retrofit/ServiceFactory.java
+M	data/src/main/java/com/vml/listofthings/data/things/ThingRepositoryImpl.java
+M	data/src/test/java/com/vml/listofthings/ThingRepositoryTest.java
+M	data/src/test/java/com/vml/listofthings/di/TestDataComponent.java
+
+84a3294;adding quick return header, footer, and collapsing toolbar examples
+A	app/src/main/java/com/vml/listofthings/app/base/QuickReturnFooterBehavior.java
+A	app/src/main/java/com/vml/listofthings/app/base/RecyclerItemsAdapter.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/menu/menu_scrolling.xml
+A	app/src/main/res/values-v21/styles.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+
+0610325;readme updates
+M	README.md
+
+9c2daa9;readme updates
+M	README.md
+
+b21b398;fix null pointer, make ids random
+M	app/src/dev/java/com/vml/listofthings/app/base/AppComponentBuilder.java
+M	app/src/main/java/com/vml/listofthings/app/base/App.java
+R092	app/src/main/java/com/vml/listofthings/app/base/AppComponent.java	app/src/main/java/com/vml/listofthings/app/di/AppComponent.java
+R096	app/src/main/java/com/vml/listofthings/app/base/AppModule.java	app/src/main/java/com/vml/listofthings/app/di/AppModule.java
+R094	app/src/main/java/com/vml/listofthings/app/base/DomainModule.java	app/src/main/java/com/vml/listofthings/app/di/DomainModule.java
+M	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailActivity.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListPresenter.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListView.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/activity_thing_detail.xml
+M	app/src/test/java/com/vml/listofthings/GetThingListInteractorTest.java
+M	app/src/test/java/com/vml/listofthings/di/TestDomainComponent.java
+M	data/src/dev/java/com/vml/listofthings/data/MockThingService.java
+M	data/src/test/java/com/vml/listofthings/ThingRepositoryTest.java
+M	data/src/test/java/com/vml/listofthings/di/TestDataComponent.java
+
+4380b91;add manifest perms
+M	app/src/main/AndroidManifest.xml
+
+6af4033;Adding domain tests, ServiceFactory, mock delay, pull to refresh
+M	app/src/dev/java/com/vml/listofthings/app/base/AppComponentBuilder.java
+M	app/src/main/java/com/vml/listofthings/app/base/AppComponent.java
+M	app/src/main/java/com/vml/listofthings/app/base/DomainModule.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListPresenter.java
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/test/java/com/vml/listofthings/di/TestDomainComponent.java
+A	core/src/main/java/com/vml/listofthings/core/SessionEntity.java
+A	core/src/main/java/com/vml/listofthings/core/errors/InvalidSessionError.java
+A	core/src/main/java/com/vml/listofthings/core/errors/LoginFailedError.java
+A	core/src/main/java/com/vml/listofthings/core/errors/NetworkUnavailableError.java
+A	core/src/main/java/com/vml/listofthings/core/errors/ServerError.java
+A	core/src/main/java/com/vml/listofthings/core/errors/UnknownError.java
+A	core/src/main/java/com/vml/listofthings/core/errors/UnsupportedVersionError.java
+M	core/src/main/java/com/vml/listofthings/core/things/GetThingListInteractor.java
+M	core/src/main/java/com/vml/listofthings/core/things/ThingRepository.java
+M	data/src/dev/java/com/vml/listofthings/data/MockThingService.java
+D	data/src/main/java/com/vml/listofthings/data/DataModule.java
+A	data/src/main/java/com/vml/listofthings/data/DataUtil.java
+A	data/src/main/java/com/vml/listofthings/data/RxUtil.java
+A	data/src/main/java/com/vml/listofthings/data/di/DataModule.java
+A	data/src/main/java/com/vml/listofthings/data/retrofit/Environment.java
+A	data/src/main/java/com/vml/listofthings/data/retrofit/NetworkErrorHandler.java
+A	data/src/main/java/com/vml/listofthings/data/retrofit/ServiceFactory.java
+R052	data/src/main/java/com/vml/listofthings/data/ThingRepositoryImpl.java	data/src/main/java/com/vml/listofthings/data/things/ThingRepositoryImpl.java
+R085	data/src/main/java/com/vml/listofthings/data/ThingService.java	data/src/main/java/com/vml/listofthings/data/things/ThingService.java
+M	data/src/test/java/com/vml/listofthings/ThingRepositoryTest.java
+M	data/src/test/java/com/vml/listofthings/di/TestDataComponent.java
+
+4c3d6fe;Adding domain tests
+M	app/build.gradle
+A	app/src/dev/java/com/vml/listofthings/app/base/AppComponentBuilder.java
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/vml/listofthings/app/base/App.java
+M	app/src/main/java/com/vml/listofthings/app/base/AppComponent.java
+M	app/src/main/java/com/vml/listofthings/app/base/AppModule.java
+A	app/src/main/java/com/vml/listofthings/app/base/DomainModule.java
+M	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailActivity.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+A	app/src/prod/java/com/vml/listofthings/app/base/AppComponentBuilder.java
+D	app/src/test/java/com/vml/listofthings/ExampleUnitTest.java
+A	app/src/test/java/com/vml/listofthings/GetThingInteractorTest.java
+A	app/src/test/java/com/vml/listofthings/GetThingListInteractorTest.java
+A	app/src/test/java/com/vml/listofthings/di/TestDomainComponent.java
+M	data/build.gradle
+R100	data/src/debug/java/com/vml/listofthings/data/MockThingService.java	data/src/dev/java/com/vml/listofthings/data/MockThingService.java
+D	data/src/test/java/com/vml/listofthings/TestDataModule.java
+M	data/src/test/java/com/vml/listofthings/ThingRepositoryTest.java
+R050	data/src/test/java/com/vml/listofthings/TestDataComponent.java	data/src/test/java/com/vml/listofthings/di/TestDataComponent.java
+
+83c3862;Adding presenter and data for detail screen
+M	README.md
+M	app/src/main/java/com/vml/listofthings/app/base/AppComponent.java
+M	app/src/main/java/com/vml/listofthings/app/base/AppModule.java
+M	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailActivity.java
+A	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailPresenter.java
+A	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailUtil.java
+A	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailView.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListItemView.java
+M	app/src/main/res/layout/activity_thing_detail.xml
+M	data/src/main/java/com/vml/listofthings/data/ThingRepositoryImpl.java
+M	data/src/test/java/com/vml/listofthings/ThingRepositoryTest.java
+
+194495f;Adding readme, detail activity, support library example
+M	README.md
+
+d82ab15;Adding readme, detail activity, support library example
+M	README.md
+
+ec56740;Adding readme, detail activity, support library example
+M	README.md
+
+649cb54;Adding readme, detail activity, support library example
+M	README.md
+
+fdbfa9d;Adding readme, detail activity, support library example
+M	README.md
+
+a7639de;Adding readme, detail activity, support library example
+A	README.md
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/vml/listofthings/app/base/BaseActivity.java
+A	app/src/main/java/com/vml/listofthings/app/base/ViewUtil.java
+A	app/src/main/java/com/vml/listofthings/app/thingdetail/ThingDetailActivity.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListItemView.java
+M	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListRecyclerAdapter.java
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/activity_thing_detail.xml
+M	app/src/main/res/layout/thing_list_item.xml
+M	app/src/main/res/values/styles.xml
+M	core/src/main/java/com/vml/listofthings/core/things/ThingEntity.java
+M	data/src/debug/java/com/vml/listofthings/data/MockThingService.java
+M	data/src/main/java/com/vml/listofthings/data/ThingRepositoryImpl.java
+M	data/src/test/java/com/vml/listofthings/TestDataModule.java
+
+cf68007;Initial Commit
+A	.gitignore
+A	.idea/.name
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/encodings.xml
+A	.idea/gradle.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/runConfigurations.xml
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/vml/listofthings/app/base/AppComponent.java
+A	app/src/main/java/com/vml/listofthings/app/base/AppModule.java
+A	app/src/main/java/com/vml/listofthings/app/base/BaseActivity.java
+A	app/src/main/java/com/vml/listofthings/app/base/BasePresenter.java
+A	app/src/main/java/com/vml/listofthings/app/base/BaseView.java
+A	app/src/main/java/com/vml/listofthings/app/thinglist/MainActivity.java
+A	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListItemView.java
+A	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListPresenter.java
+A	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListRecyclerAdapter.java
+A	app/src/main/java/com/vml/listofthings/app/thinglist/ThingListView.java
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/thing_list_item.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/values-w820dp/dimens.xml
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/dimens.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/test/java/com/vml/listofthings/ExampleUnitTest.java
+A	build.gradle
+A	core/.gitignore
+A	core/build.gradle
+A	core/src/main/java/com/vml/listofthings/core/things/GetThingInteractor.java
+A	core/src/main/java/com/vml/listofthings/core/things/GetThingListInteractor.java
+A	core/src/main/java/com/vml/listofthings/core/things/ThingEntity.java
+A	core/src/main/java/com/vml/listofthings/core/things/ThingRepository.java
+A	data/.gitignore
+A	data/build.gradle
+A	data/proguard-rules.pro
+A	data/src/debug/java/com/vml/listofthings/data/MockThingService.java
+A	data/src/main/AndroidManifest.xml
+A	data/src/main/java/com/vml/listofthings/data/DataModule.java
+A	data/src/main/java/com/vml/listofthings/data/ThingRepositoryImpl.java
+A	data/src/main/java/com/vml/listofthings/data/ThingService.java
+A	data/src/main/res/values/strings.xml
+A	data/src/test/java/com/vml/listofthings/TestDataComponent.java
+A	data/src/test/java/com/vml/listofthings/TestDataModule.java
+A	data/src/test/java/com/vml/listofthings/ThingRepositoryTest.java
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle

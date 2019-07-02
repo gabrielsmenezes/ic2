@@ -1,0 +1,935 @@
+3b59a9c;Prepare next development version
+M	gradle.properties
+
+8af0334;Prepare for release 2.2.0
+M	CHANGELOG.md
+M	README.md
+M	gradle.properties
+
+ecae8df;Enable snapshots (#60)
+A	.buildscript/deploy_snapshot.sh
+M	.travis.yml
+
+097f089;Migrate to AndroidX (#58)
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	rave-compiler/build.gradle
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationVerifier.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/CompilerUtils.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/MyFactory.java
+M	rave-compiler/src/test/java/com/uber/rave/model/AbstractAnnotated.java
+M	rave-compiler/src/test/java/com/uber/rave/model/ArrayNotNull.java
+M	rave-compiler/src/test/java/com/uber/rave/model/FloatRangeTestModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/InheritFrom.java
+M	rave-compiler/src/test/java/com/uber/rave/model/IntDefModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/IntRangeTestModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/LongDefModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/MultiMethodSampleModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/NonAnnotated.java
+M	rave-compiler/src/test/java/com/uber/rave/model/SingleMethodSampleModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/SampleFactory.java
+M	rave-compiler/src/test/resources/fixtures/excluded/UseOfExcluded.java
+M	rave-compiler/src/test/resources/fixtures/floatrange/BadFloatRangeUsage.java
+M	rave-compiler/src/test/resources/fixtures/floatrange/FloatRangeTestClass.java
+M	rave-compiler/src/test/resources/fixtures/intdef/BadIntDefUse.java
+M	rave-compiler/src/test/resources/fixtures/intdef/IntDefTestClass.java
+M	rave-compiler/src/test/resources/fixtures/intrange/BadIntRangeUsage.java
+M	rave-compiler/src/test/resources/fixtures/intrange/IntRangeTestClass.java
+M	rave-compiler/src/test/resources/fixtures/longdef/BadLongDefUse.java
+M	rave-compiler/src/test/resources/fixtures/longdef/LongDefTestClass.java
+M	rave-compiler/src/test/resources/fixtures/maps/ModelWithMap.java
+M	rave-compiler/src/test/resources/fixtures/string_def/StringDefCases.java
+M	rave-compiler/src/test/resources/fixtures/test1/SimpleCase.java
+M	rave-compiler/src/test/resources/fixtures/test2/AbstractAnnotated.java
+M	rave-compiler/src/test/resources/fixtures/test2/ArrayNotNull.java
+M	rave-compiler/src/test/resources/fixtures/test2/FloatRangeTestModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/InheritFrom.java
+M	rave-compiler/src/test/resources/fixtures/test2/IntDefModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/IntRangeTestModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/LongDefModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/MultiMethodSampleModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/MyFactory.java
+M	rave-compiler/src/test/resources/fixtures/test2/NonAnnotated.java
+M	rave-compiler/src/test/resources/fixtures/test2/SingleMethodSampleModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/test3/InheritFrom.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateBySecondInterface.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateSample.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateSample2.java
+M	rave-compiler/src/test/resources/fixtures/test4/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/test4/ValidateSample2.java
+M	rave-compiler/src/test/resources/fixtures/test5/ConflictingMustbeTrue.java
+M	rave-compiler/src/test/resources/fixtures/testSize/BadSizeAnnotation.java
+M	rave-compiler/src/test/resources/fixtures/testSize/SimpleCase.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/StrictModeFactory.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/primative/PrimativeCase.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/simple/SimpleCase.java
+M	rave-test/build.gradle
+M	rave-test/src/main/java/com/uber/rave/AnnotationSpecs.java
+M	rave/build.gradle
+M	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+M	rave/src/test/java/com/uber/rave/model/AbstractAnnotated.java
+M	rave/src/test/java/com/uber/rave/model/ArrayNotNull.java
+M	rave/src/test/java/com/uber/rave/model/FloatRangeTestModel.java
+M	rave/src/test/java/com/uber/rave/model/InheritFrom.java
+M	rave/src/test/java/com/uber/rave/model/IntDefModel.java
+M	rave/src/test/java/com/uber/rave/model/IntRangeTestModel.java
+M	rave/src/test/java/com/uber/rave/model/LongDefModel.java
+M	rave/src/test/java/com/uber/rave/model/MultiMethodSampleModel.java
+M	rave/src/test/java/com/uber/rave/model/NonAnnotated.java
+M	rave/src/test/java/com/uber/rave/model/SingleMethodSampleModel.java
+M	rave/src/test/java/com/uber/rave/model/TestFactory.java
+M	rave/src/test/java/com/uber/rave/model/TestFactory_Generated_Validator.java
+M	rave/src/test/java/com/uber/rave/model/ValidateByInterface.java
+M	sample/build.gradle
+M	sample/src/main/java/com/uber/rave/sample/RaveApplication.java
+M	sample/src/main/java/com/uber/rave/sample/network/RaveValidatorFactory.java
+M	sample/src/main/java/com/uber/rave/sample/network/model/Owner.java
+M	sample/src/main/java/com/uber/rave/sample/network/model/Repo.java
+
+3365f27;Fix merge conflicts.
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+
+7a54d01;Revert "Add generated code that allows for inner private/protected fields to be validated. (#48)"
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/ClassIR.java
+D	rave-compiler/src/main/java/com/uber/rave/compiler/ElementIRBase.java
+D	rave-compiler/src/main/java/com/uber/rave/compiler/FieldIR.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/MethodIR.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+M	rave-compiler/src/test/resources/fixtures/excluded/SampleFactory_Generated_Validator.java
+D	rave-compiler/src/test/resources/fixtures/fields/FieldsOnlyFactory.java
+D	rave-compiler/src/test/resources/fixtures/fields/NotStrictFieldsOnlyFactory.java
+D	rave-compiler/src/test/resources/fixtures/fields/comprehensive/SimpleCase.java
+D	rave-compiler/src/test/resources/fixtures/fields/no_gen/NoGen.java
+D	rave-compiler/src/test/resources/fixtures/fields/no_gen/NotStrictFieldsOnlyFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/jsr305/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/maps/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test1/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test2/MyFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test3/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test4/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/unannotated/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/simple/StrictModeFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/voidreturn/SampleFactory_Generated_Validator.java
+M	rave/src/main/java/com/uber/rave/annotation/Excluded.java
+M	rave/src/main/java/com/uber/rave/annotation/MustBeFalse.java
+M	rave/src/main/java/com/uber/rave/annotation/MustBeTrue.java
+M	rave/src/test/java/com/uber/rave/model/TestFactory_Generated_Validator.java
+
+9bb554f;Revert "Migrate to AndroidX (#58)"
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	rave-compiler/build.gradle
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationVerifier.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/CompilerUtils.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/MyFactory.java
+M	rave-compiler/src/test/java/com/uber/rave/model/AbstractAnnotated.java
+M	rave-compiler/src/test/java/com/uber/rave/model/ArrayNotNull.java
+M	rave-compiler/src/test/java/com/uber/rave/model/FloatRangeTestModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/InheritFrom.java
+M	rave-compiler/src/test/java/com/uber/rave/model/IntDefModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/IntRangeTestModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/LongDefModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/MultiMethodSampleModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/NonAnnotated.java
+M	rave-compiler/src/test/java/com/uber/rave/model/SingleMethodSampleModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/SampleFactory.java
+M	rave-compiler/src/test/resources/fixtures/excluded/UseOfExcluded.java
+M	rave-compiler/src/test/resources/fixtures/fields/FieldsOnlyFactory.java
+M	rave-compiler/src/test/resources/fixtures/fields/NotStrictFieldsOnlyFactory.java
+M	rave-compiler/src/test/resources/fixtures/fields/comprehensive/SimpleCase.java
+M	rave-compiler/src/test/resources/fixtures/fields/no_gen/NoGen.java
+M	rave-compiler/src/test/resources/fixtures/floatrange/BadFloatRangeUsage.java
+M	rave-compiler/src/test/resources/fixtures/floatrange/FloatRangeTestClass.java
+M	rave-compiler/src/test/resources/fixtures/intdef/BadIntDefUse.java
+M	rave-compiler/src/test/resources/fixtures/intdef/IntDefTestClass.java
+M	rave-compiler/src/test/resources/fixtures/intrange/BadIntRangeUsage.java
+M	rave-compiler/src/test/resources/fixtures/intrange/IntRangeTestClass.java
+M	rave-compiler/src/test/resources/fixtures/longdef/BadLongDefUse.java
+M	rave-compiler/src/test/resources/fixtures/longdef/LongDefTestClass.java
+M	rave-compiler/src/test/resources/fixtures/maps/ModelWithMap.java
+M	rave-compiler/src/test/resources/fixtures/string_def/StringDefCases.java
+M	rave-compiler/src/test/resources/fixtures/test1/SimpleCase.java
+M	rave-compiler/src/test/resources/fixtures/test2/AbstractAnnotated.java
+M	rave-compiler/src/test/resources/fixtures/test2/ArrayNotNull.java
+M	rave-compiler/src/test/resources/fixtures/test2/FloatRangeTestModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/InheritFrom.java
+M	rave-compiler/src/test/resources/fixtures/test2/IntDefModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/IntRangeTestModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/LongDefModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/MultiMethodSampleModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/MyFactory.java
+M	rave-compiler/src/test/resources/fixtures/test2/NonAnnotated.java
+M	rave-compiler/src/test/resources/fixtures/test2/SingleMethodSampleModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/test3/InheritFrom.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateBySecondInterface.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateSample.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateSample2.java
+M	rave-compiler/src/test/resources/fixtures/test4/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/test4/ValidateSample2.java
+M	rave-compiler/src/test/resources/fixtures/test5/ConflictingMustbeTrue.java
+M	rave-compiler/src/test/resources/fixtures/testSize/BadSizeAnnotation.java
+M	rave-compiler/src/test/resources/fixtures/testSize/SimpleCase.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/StrictModeFactory.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/primative/PrimativeCase.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/simple/SimpleCase.java
+M	rave-test/build.gradle
+M	rave-test/src/main/java/com/uber/rave/AnnotationSpecs.java
+M	rave/build.gradle
+M	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+M	rave/src/test/java/com/uber/rave/model/AbstractAnnotated.java
+M	rave/src/test/java/com/uber/rave/model/ArrayNotNull.java
+M	rave/src/test/java/com/uber/rave/model/FloatRangeTestModel.java
+M	rave/src/test/java/com/uber/rave/model/InheritFrom.java
+M	rave/src/test/java/com/uber/rave/model/IntDefModel.java
+M	rave/src/test/java/com/uber/rave/model/IntRangeTestModel.java
+M	rave/src/test/java/com/uber/rave/model/LongDefModel.java
+M	rave/src/test/java/com/uber/rave/model/MultiMethodSampleModel.java
+M	rave/src/test/java/com/uber/rave/model/NonAnnotated.java
+M	rave/src/test/java/com/uber/rave/model/SingleMethodSampleModel.java
+M	rave/src/test/java/com/uber/rave/model/TestFactory.java
+M	rave/src/test/java/com/uber/rave/model/TestFactory_Generated_Validator.java
+M	rave/src/test/java/com/uber/rave/model/ValidateByInterface.java
+M	sample/build.gradle
+M	sample/src/main/java/com/uber/rave/sample/RaveApplication.java
+M	sample/src/main/java/com/uber/rave/sample/network/RaveValidatorFactory.java
+M	sample/src/main/java/com/uber/rave/sample/network/model/Owner.java
+M	sample/src/main/java/com/uber/rave/sample/network/model/Repo.java
+
+b60f20d;Remove sudo: false from travis config (#59)
+M	.travis.yml
+
+a116f1d;Migrate to AndroidX (#58)
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	rave-compiler/build.gradle
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationVerifier.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/CompilerUtils.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/MyFactory.java
+M	rave-compiler/src/test/java/com/uber/rave/model/AbstractAnnotated.java
+M	rave-compiler/src/test/java/com/uber/rave/model/ArrayNotNull.java
+M	rave-compiler/src/test/java/com/uber/rave/model/FloatRangeTestModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/InheritFrom.java
+M	rave-compiler/src/test/java/com/uber/rave/model/IntDefModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/IntRangeTestModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/LongDefModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/MultiMethodSampleModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/NonAnnotated.java
+M	rave-compiler/src/test/java/com/uber/rave/model/SingleMethodSampleModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/SampleFactory.java
+M	rave-compiler/src/test/resources/fixtures/excluded/UseOfExcluded.java
+M	rave-compiler/src/test/resources/fixtures/fields/FieldsOnlyFactory.java
+M	rave-compiler/src/test/resources/fixtures/fields/NotStrictFieldsOnlyFactory.java
+M	rave-compiler/src/test/resources/fixtures/fields/comprehensive/SimpleCase.java
+M	rave-compiler/src/test/resources/fixtures/fields/no_gen/NoGen.java
+M	rave-compiler/src/test/resources/fixtures/floatrange/BadFloatRangeUsage.java
+M	rave-compiler/src/test/resources/fixtures/floatrange/FloatRangeTestClass.java
+M	rave-compiler/src/test/resources/fixtures/intdef/BadIntDefUse.java
+M	rave-compiler/src/test/resources/fixtures/intdef/IntDefTestClass.java
+M	rave-compiler/src/test/resources/fixtures/intrange/BadIntRangeUsage.java
+M	rave-compiler/src/test/resources/fixtures/intrange/IntRangeTestClass.java
+M	rave-compiler/src/test/resources/fixtures/longdef/BadLongDefUse.java
+M	rave-compiler/src/test/resources/fixtures/longdef/LongDefTestClass.java
+M	rave-compiler/src/test/resources/fixtures/maps/ModelWithMap.java
+M	rave-compiler/src/test/resources/fixtures/string_def/StringDefCases.java
+M	rave-compiler/src/test/resources/fixtures/test1/SimpleCase.java
+M	rave-compiler/src/test/resources/fixtures/test2/AbstractAnnotated.java
+M	rave-compiler/src/test/resources/fixtures/test2/ArrayNotNull.java
+M	rave-compiler/src/test/resources/fixtures/test2/FloatRangeTestModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/InheritFrom.java
+M	rave-compiler/src/test/resources/fixtures/test2/IntDefModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/IntRangeTestModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/LongDefModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/MultiMethodSampleModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/MyFactory.java
+M	rave-compiler/src/test/resources/fixtures/test2/NonAnnotated.java
+M	rave-compiler/src/test/resources/fixtures/test2/SingleMethodSampleModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/test3/InheritFrom.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateBySecondInterface.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateSample.java
+M	rave-compiler/src/test/resources/fixtures/test3/ValidateSample2.java
+M	rave-compiler/src/test/resources/fixtures/test4/ValidateByInterface.java
+M	rave-compiler/src/test/resources/fixtures/test4/ValidateSample2.java
+M	rave-compiler/src/test/resources/fixtures/test5/ConflictingMustbeTrue.java
+M	rave-compiler/src/test/resources/fixtures/testSize/BadSizeAnnotation.java
+M	rave-compiler/src/test/resources/fixtures/testSize/SimpleCase.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/StrictModeFactory.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/primative/PrimativeCase.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/simple/SimpleCase.java
+M	rave-test/build.gradle
+M	rave-test/src/main/java/com/uber/rave/AnnotationSpecs.java
+M	rave/build.gradle
+M	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+M	rave/src/test/java/com/uber/rave/model/AbstractAnnotated.java
+M	rave/src/test/java/com/uber/rave/model/ArrayNotNull.java
+M	rave/src/test/java/com/uber/rave/model/FloatRangeTestModel.java
+M	rave/src/test/java/com/uber/rave/model/InheritFrom.java
+M	rave/src/test/java/com/uber/rave/model/IntDefModel.java
+M	rave/src/test/java/com/uber/rave/model/IntRangeTestModel.java
+M	rave/src/test/java/com/uber/rave/model/LongDefModel.java
+M	rave/src/test/java/com/uber/rave/model/MultiMethodSampleModel.java
+M	rave/src/test/java/com/uber/rave/model/NonAnnotated.java
+M	rave/src/test/java/com/uber/rave/model/SingleMethodSampleModel.java
+M	rave/src/test/java/com/uber/rave/model/TestFactory.java
+M	rave/src/test/java/com/uber/rave/model/TestFactory_Generated_Validator.java
+M	rave/src/test/java/com/uber/rave/model/ValidateByInterface.java
+M	sample/build.gradle
+M	sample/src/main/java/com/uber/rave/sample/RaveApplication.java
+M	sample/src/main/java/com/uber/rave/sample/network/RaveValidatorFactory.java
+M	sample/src/main/java/com/uber/rave/sample/network/model/Owner.java
+M	sample/src/main/java/com/uber/rave/sample/network/model/Repo.java
+
+5e5c74b;Prepare next development version.
+M	gradle.properties
+
+e8e89af;Prepare for release 2.1.0.
+M	CHANGELOG.md
+M	README.md
+M	gradle.properties
+
+d45c781;Bump support annotations to 27.1.0. (#54)
+M	.travis.yml
+M	build.gradle
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationVerifier.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/CompilerUtils.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/CompilerIntegrationTest.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+M	rave-compiler/src/test/java/com/uber/rave/model/IntDefModel.java
+M	rave-compiler/src/test/java/com/uber/rave/model/IntRangeTestModel.java
+A	rave-compiler/src/test/java/com/uber/rave/model/LongDefModel.java
+M	rave-compiler/src/test/resources/fixtures/fields/comprehensive/FieldsOnlyFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/intdef/IntDefTestClass.java
+M	rave-compiler/src/test/resources/fixtures/intdef/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/longdef/BadLongDefUse.java
+A	rave-compiler/src/test/resources/fixtures/longdef/LongDefTestClass.java
+A	rave-compiler/src/test/resources/fixtures/longdef/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test2/IntDefModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/IntRangeTestModel.java
+A	rave-compiler/src/test/resources/fixtures/test2/LongDefModel.java
+M	rave-compiler/src/test/resources/fixtures/test2/MyFactory_Generated_Validator.java
+M	rave-test/src/main/java/com/uber/rave/AnnotationSpecs.java
+M	rave-test/src/main/java/com/uber/rave/DoubleCreator.java
+A	rave-test/src/main/java/com/uber/rave/IntCreator.java
+M	rave-test/src/main/java/com/uber/rave/LongCreator.java
+M	rave/src/main/java/com/uber/rave/BaseValidator.java
+M	rave/src/main/java/com/uber/rave/RaveErrorStrings.java
+M	rave/src/test/java/com/uber/rave/RaveParameterizedUnitTest.java
+M	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+M	rave/src/test/java/com/uber/rave/model/IntDefModel.java
+M	rave/src/test/java/com/uber/rave/model/IntRangeTestModel.java
+A	rave/src/test/java/com/uber/rave/model/LongDefModel.java
+M	rave/src/test/java/com/uber/rave/model/TestFactory_Generated_Validator.java
+M	sample/build.gradle
+
+51ecaef;Update README.md (#56)
+M	README.md
+
+14cc150;Update README.md (#55)
+M	README.md
+
+6bdb078;Move Rave unit tests to Google Truth. (#49)
+M	build.gradle
+M	rave/build.gradle
+M	rave/src/test/java/com/uber/rave/RaveParameterizedUnitTest.java
+M	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+M	rave/src/test/java/com/uber/rave/ValidationIgnoreTest.java
+M	sample/build.gradle
+
+0d49228;Update README.md
+M	README.md
+
+4da88c9;Add generated code that allows for inner private/protected fields to be validated. (#48)
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/ClassIR.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/ElementIRBase.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/FieldIR.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/MethodIR.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+M	rave-compiler/src/test/resources/fixtures/excluded/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/fields/FieldsOnlyFactory.java
+A	rave-compiler/src/test/resources/fixtures/fields/NotStrictFieldsOnlyFactory.java
+A	rave-compiler/src/test/resources/fixtures/fields/comprehensive/FieldsOnlyFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/fields/comprehensive/SimpleCase.java
+A	rave-compiler/src/test/resources/fixtures/fields/no_gen/NoGen.java
+A	rave-compiler/src/test/resources/fixtures/fields/no_gen/NotStrictFieldsOnlyFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/jsr305/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/maps/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test1/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test2/MyFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test3/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test4/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/unannotated/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/simple/StrictModeFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/voidreturn/SampleFactory_Generated_Validator.java
+M	rave/src/main/java/com/uber/rave/annotation/Excluded.java
+M	rave/src/main/java/com/uber/rave/annotation/MustBeFalse.java
+M	rave/src/main/java/com/uber/rave/annotation/MustBeTrue.java
+M	rave/src/test/java/com/uber/rave/model/TestFactory_Generated_Validator.java
+
+9dca7c5;Update README with Proguard settings.
+M	README.md
+
+6db0b0c;Prepare next development version.
+M	gradle.properties
+
+539d7ed;Prepare for release 2.0.0.
+M	CHANGELOG.md
+M	README.md
+M	gradle.properties
+
+f290611;Support any nullability annotation. (#42)
+M	README.md
+M	rave-compiler/build.gradle
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationVerifier.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/CompilerUtils.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/CompilerUtilTest.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+M	rave-compiler/src/test/resources/fixtures/excluded/UseOfExcluded.java
+A	rave-compiler/src/test/resources/fixtures/jsr305/JSR305Conflict.java
+A	rave-compiler/src/test/resources/fixtures/jsr305/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/jsr305/UseOfJSR305.java
+M	rave/build.gradle
+M	rave/src/main/java/com/uber/rave/BaseValidator.java
+M	rave/src/main/java/com/uber/rave/Validator.java
+
+4059653;Add an api that allows users to ignore the unsupported exception. (#43)
+M	rave/src/main/java/com/uber/rave/Rave.java
+M	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+
+84ed91c;Remove Support Annotations from Runtime Classpath (#37)
+M	rave-compiler/build.gradle
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+M	rave-compiler/src/test/resources/fixtures/excluded/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/floatrange/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/intdef/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/intrange/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/maps/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/string_def/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test1/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test2/MyFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test3/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test4/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/testSize/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/unannotated/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/primative/StrictModeFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/simple/StrictModeFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/voidreturn/SampleFactory_Generated_Validator.java
+M	rave-test/build.gradle
+M	rave/build.gradle
+M	rave/src/main/java/com/uber/rave/BaseValidator.java
+
+39ef76c;Switch to Google's maven for support library artifacts (#38)
+M	build.gradle
+M	rave-compiler/build.gradle
+M	rave-test/build.gradle
+M	rave/build.gradle
+M	sample/build.gradle
+
+2beb7f3;Use JSR 305 to annotate internals of RAVE. (#36)
+M	build.gradle
+M	rave-compiler/build.gradle
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationVerifier.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/ClassIR.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/CompilerUtils.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/MethodIR.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveIR.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/package-info.java
+M	rave-test/build.gradle
+M	rave-test/src/main/java/com/uber/rave/AnnotationSpecs.java
+M	rave-test/src/main/java/com/uber/rave/ObjectCreator.java
+M	rave/build.gradle
+M	rave/src/main/java/com/uber/rave/BaseValidator.java
+M	rave/src/main/java/com/uber/rave/Rave.java
+M	rave/src/main/java/com/uber/rave/RaveError.java
+M	rave/src/main/java/com/uber/rave/RaveException.java
+M	rave/src/main/java/com/uber/rave/ValidationIgnore.java
+M	rave/src/main/java/com/uber/rave/ValidatorFactory.java
+M	rave/src/main/java/com/uber/rave/annotation/Validated.java
+A	rave/src/main/java/com/uber/rave/package-info.java
+
+9541b3e;Remove ExclusionStrategy. (#34)
+D	rave/src/main/java/com/uber/rave/ExclusionStrategy.java
+M	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+
+8a8d481;Remove apt in favor of annotationProcessor and provided in favor of compileOnly. (#33)
+M	build.gradle
+M	rave-compiler/build.gradle
+M	rave-test/build.gradle
+M	rave/build.gradle
+
+bdeb3aa;Remove comical log messages. (#32)
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+
+2430b1c;Update README.md
+M	README.md
+
+f7d8fc7;Prepare next development version.
+M	gradle.properties
+
+046a1c3;Prepare for release 1.0.1.
+M	CHANGELOG.md
+M	README.md
+M	gradle.properties
+
+6e08560;Do not generate validation code for void return types. (#31)
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+M	rave-compiler/src/test/resources/fixtures/unannotated/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/voidreturn/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/voidreturn/VoidReturn.java
+
+abeba8a;Update CHANGELOG.md
+M	CHANGELOG.md
+
+c5d7d14;Update CHANGELOG.md
+M	CHANGELOG.md
+
+974aa44;Prepare next development version.
+M	gradle.properties
+
+955d5f1;Prepare for release 1.0.0.
+M	CHANGELOG.md
+M	gradle.properties
+
+539f6a6;Remove ExclusionStrategy API (#29)
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+M	rave-compiler/src/test/resources/fixtures/excluded/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/floatrange/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/intdef/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/intrange/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/maps/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/string_def/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test1/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test2/MyFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test3/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test4/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/testSize/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/primative/StrictModeFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/validationstrategy/simple/StrictModeFactory_Generated_Validator.java
+M	rave/src/main/java/com/uber/rave/BaseValidator.java
+M	rave/src/main/java/com/uber/rave/Rave.java
+M	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+M	rave/src/test/java/com/uber/rave/model/TestFactory_Generated_Validator.java
+
+ac161e1;Add @Excluded which can be applied to opt a method out of validation. (#23)
+M	README.md
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+A	rave-compiler/src/test/resources/fixtures/excluded/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/excluded/UseOfExcluded.java
+A	rave/src/main/java/com/uber/rave/annotation/Excluded.java
+
+b98f20b;Add Map validation support to RAVE. (#28)
+M	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+A	rave-compiler/src/test/resources/fixtures/maps/ModelWithMap.java
+A	rave-compiler/src/test/resources/fixtures/maps/SampleFactory_Generated_Validator.java
+M	rave/src/main/java/com/uber/rave/BaseValidator.java
+M	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+
+2d0fb04;Adding better nullability support for Collections and arrays. (#26)
+M	rave/src/main/java/com/uber/rave/BaseValidator.java
+M	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+
+722651f;Bump support down. (#27)
+M	build.gradle
+
+2a6ea2f;Add support for unannotated methods to be validated. (#25)
+M	build.gradle
+M	rave-compiler/src/main/java/com/uber/rave/compiler/MethodIR.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+M	rave-compiler/src/test/resources/fixtures/test2/MyFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/unannotated/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/unannotated/UnannotatedField.java
+M	rave/src/test/java/com/uber/rave/model/InheritFrom.java
+
+4415aef;Add CHANGELOG.md, CONTRIBUTING.md, RELEASING.md and issue/pull request templates. (#24)
+A	.github/ISSUE_TEMPLATE.md
+A	.github/PULL_REQUEST_TEMPLATE.md
+A	CHANGELOG.md
+A	CONTRIBUTING.md
+R100	LICENSE	LICENSE.txt
+A	RELEASING.md
+
+efc019f;Update README.md
+M	README.md
+
+aafd4cb;Prepare next development version.
+M	gradle.properties
+
+7d27235;Prepare for release 0.7.0.
+M	gradle.properties
+
+9610351;Adds @Validator to facilitate nullness assumptions (#22)
+M	gradle/wrapper/gradle-wrapper.properties
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveIR.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+A	rave-compiler/src/test/resources/fixtures/validationstrategy/StrictModeFactory.java
+A	rave-compiler/src/test/resources/fixtures/validationstrategy/primative/PrimativeCase.java
+A	rave-compiler/src/test/resources/fixtures/validationstrategy/primative/StrictModeFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/validationstrategy/simple/SimpleCase.java
+A	rave-compiler/src/test/resources/fixtures/validationstrategy/simple/StrictModeFactory_Generated_Validator.java
+A	rave/src/main/java/com/uber/rave/Validator.java
+
+7cfe235;Add `@Generated` annotation to generated validator class (#17)
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+M	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+M	rave-compiler/src/test/resources/fixtures/floatrange/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/intdef/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/intrange/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/string_def/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test1/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test2/MyFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test3/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/test4/SampleFactory_Generated_Validator.java
+M	rave-compiler/src/test/resources/fixtures/testSize/SampleFactory_Generated_Validator.java
+M	sample/build.gradle
+
+62acd61;Fix sample project (#16)
+M	sample/build.gradle
+
+1f72b29;Merge pull request #15 from naturalwarren/ws_rave_documentation_improvement
+32d3a83;Molly's suggestions.
+M	README.md
+
+0546a45;Naveen's comments.
+M	README.md
+
+2be7ccf;Typo.
+M	README.md
+
+89648b1;Improve README.
+M	README.md
+
+06c567f;Merge pull request #14 from uber-common/update_docs
+2e22089;Updated docs to update how to use Rave.
+M	README.md
+
+66fc2cd;Merge pull request #12 from naturalwarren/ws_sample_app
+e74b880;Merge pull request #13 from erichkleung/master
+ed3e1ab;remove unused imports
+M	rave/src/main/java/com/uber/rave/Rave.java
+
+d658a00;Nitpicks, comments, naming.
+M	sample/src/main/java/com/uber/rave/sample/RaveActivity.java
+R079	sample/src/main/java/com/uber/rave/sample/github/GitHubModule.java	sample/src/main/java/com/uber/rave/sample/network/GitHubModule.java
+R061	sample/src/main/java/com/uber/rave/sample/github/GitHubService.java	sample/src/main/java/com/uber/rave/sample/network/GitHubService.java
+R098	sample/src/main/java/com/uber/rave/sample/github/RaveConverterFactory.java	sample/src/main/java/com/uber/rave/sample/network/RaveConverterFactory.java
+R069	sample/src/main/java/com/uber/rave/sample/github/RaveValidatorFactory.java	sample/src/main/java/com/uber/rave/sample/network/RaveValidatorFactory.java
+R090	sample/src/main/java/com/uber/rave/sample/github/model/Owner.java	sample/src/main/java/com/uber/rave/sample/network/model/Owner.java
+R086	sample/src/main/java/com/uber/rave/sample/github/model/Repo.java	sample/src/main/java/com/uber/rave/sample/network/model/Repo.java
+R084	sample/src/main/java/com/uber/rave/sample/github/OwnerStorage.java	sample/src/main/java/com/uber/rave/sample/storage/DiskStorage.java
+A	sample/src/main/java/com/uber/rave/sample/storage/StorageModule.java
+M	sample/src/main/res/layout/activity_rave.xml
+M	sample/src/main/res/values/strings.xml
+
+94ae500;Change documentation to be clear what annotations are supported
+M	README.md
+M	rave/src/main/java/com/uber/rave/Rave.java
+
+956c791;clean up storage class api
+M	sample/src/main/java/com/uber/rave/sample/github/OwnerStorage.java
+
+5fec7c1;create checkbox for valid or not storage object
+M	sample/src/main/java/com/uber/rave/sample/RaveActivity.java
+M	sample/src/main/res/layout/activity_rave.xml
+M	sample/src/main/res/values/strings.xml
+
+7689524;move serializer into storage class, have it provided and check internally
+M	sample/src/main/java/com/uber/rave/sample/RaveActivity.java
+M	sample/src/main/java/com/uber/rave/sample/github/GitHubModule.java
+R058	sample/src/main/java/com/uber/rave/sample/DefaultSerializer.java	sample/src/main/java/com/uber/rave/sample/github/OwnerStorage.java
+
+030ffd1;Add comment to travis yml.
+M	.travis.yml
+
+023bd4e;Remove space in settings.gradle.
+M	settings.gradle
+
+d5dfc6b;Address lint warnings/errors.
+M	sample/config/lint/lint.xml
+M	sample/src/main/AndroidManifest.xml
+
+8a17e74;Update support versions.
+M	build.gradle
+M	sample/build.gradle
+
+7422881;Back to build tools 25 now that this builds.
+M	.travis.yml
+M	build.gradle
+M	sample/build.gradle
+
+b8106cb;Try with install command.
+M	.travis.yml
+
+b55c06e;Just use build tools 23.
+M	sample/build.gradle
+
+25069bd;Downgrade to build tools 23.
+M	.travis.yml
+M	build.gradle
+M	sample/build.gradle
+
+6a48b6f;Add android support repository.
+M	.travis.yml
+
+9d0a1b3;Use build-tools-25.0.2, place tools first in travis.yml.
+M	.travis.yml
+M	build.gradle
+M	sample/build.gradle
+
+04498bb;pull serialization methods into its own class
+A	sample/src/main/java/com/uber/rave/sample/DefaultSerializer.java
+M	sample/src/main/java/com/uber/rave/sample/RaveActivity.java
+
+ad5d594;add serialization/deserialization as an alternate way of demonstrating RAVEs use case
+M	build.gradle
+M	sample/src/main/java/com/uber/rave/sample/RaveActivity.java
+M	sample/src/main/java/com/uber/rave/sample/github/model/Owner.java
+M	sample/src/main/res/layout/activity_rave.xml
+M	sample/src/main/res/values/strings.xml
+
+00a3a21;Attempt manual installation.
+M	.travis.yml
+
+cad1be4;Use android 25.
+M	.travis.yml
+
+9cc9759;Update travis config.
+M	.travis.yml
+M	build.gradle
+
+197a8f1;Add sample Android app that calls GitHub using Retrofit and validates the response with RAVE.
+M	gradle/wrapper/gradle-wrapper.properties
+A	sample/.gitignore
+A	sample/build.gradle
+A	sample/config/lint/lint.xml
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/com/uber/rave/sample/RaveActivity.java
+A	sample/src/main/java/com/uber/rave/sample/RaveActivityScope.java
+A	sample/src/main/java/com/uber/rave/sample/RaveApplication.java
+A	sample/src/main/java/com/uber/rave/sample/github/GitHubModule.java
+A	sample/src/main/java/com/uber/rave/sample/github/GitHubService.java
+A	sample/src/main/java/com/uber/rave/sample/github/RaveConverterFactory.java
+A	sample/src/main/java/com/uber/rave/sample/github/RaveValidatorFactory.java
+A	sample/src/main/java/com/uber/rave/sample/github/model/Owner.java
+A	sample/src/main/java/com/uber/rave/sample/github/model/Repo.java
+A	sample/src/main/res/drawable-hdpi/ic_shortcut_rave.png
+A	sample/src/main/res/drawable-mdpi/ic_shortcut_rave.png
+A	sample/src/main/res/drawable-xhdpi/ic_shortcut_rave.png
+A	sample/src/main/res/drawable-xxhdpi/ic_shortcut_rave.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_shortcut_rave.png
+A	sample/src/main/res/layout/activity_rave.xml
+A	sample/src/main/res/values-w820dp/dimens.xml
+A	sample/src/main/res/values/colors.xml
+A	sample/src/main/res/values/dimens.xml
+A	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/values/styles.xml
+M	settings.gradle
+
+cf9f74a;Merge pull request #11 from naturalwarren/ws_rave_dependency_update
+7191666;Bumps dependencies and cleans up warnings and deprecated method usage.
+M	build.gradle
+M	rave-compiler/build.gradle
+M	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationVerifier.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/AnnotationVerifierTest.java
+M	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+M	rave-test/build.gradle
+M	rave-test/src/main/java/com/uber/rave/AnnotationSpecs.java
+M	rave/build.gradle
+
+d9688a2;Merge pull request #6 from uber-common/erichkleung-formatting
+e1421dd;fix some formatting/grammar things in README
+M	README.md
+
+bea4686;Merge pull request #3 from uber-common/bk/multi-thread-optimization
+0dc9388;Merge pull request #5 from uber-common/ts/travis
+407ae3f;Add Travis CI integration
+A	.travis.yml
+M	README.md
+
+eca7e21;Merge pull request #4 from uber-common/tonycosentini-patch-1
+0f77586;Fix Contributors section formatting.
+M	README.md
+
+4415a8d;Add a minor multithreading optimization
+M	gradle.properties
+M	rave/src/main/java/com/uber/rave/Rave.java
+
+378eb72;Merge pull request #2 from uber-common/ts/fix-open-ended-mockito-dep
+cc757b8;Replace wildcard mockito dependency for pom validation
+M	rave-compiler/build.gradle
+
+7258868;Rave library initial commit.
+A	.gitignore
+A	LICENSE
+A	README.md
+A	build.gradle
+A	gradle.properties
+A	gradle/gradle-mvn-push.gradle
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	rave-compiler/build.gradle
+A	rave-compiler/config/checkstyle/checkstyle-test.xml
+A	rave-compiler/config/checkstyle/checkstyle.xml
+A	rave-compiler/config/checkstyle/suppressions.xml
+A	rave-compiler/gradle.properties
+A	rave-compiler/src/main/java/com/uber/rave/compiler/AbortProcessingException.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationVerifier.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/AnnotationWriter.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/ClassIR.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/CompilerUtils.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/MethodIR.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/RaveIR.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/RaveProcessor.java
+A	rave-compiler/src/main/java/com/uber/rave/compiler/RaveWriter.java
+A	rave-compiler/src/test/java/com/uber/rave/compiler/AnnotationVerifierTest.java
+A	rave-compiler/src/test/java/com/uber/rave/compiler/CompilerIntegrationTest.java
+A	rave-compiler/src/test/java/com/uber/rave/compiler/CompilerUtilTest.java
+A	rave-compiler/src/test/java/com/uber/rave/compiler/MyFactory.java
+A	rave-compiler/src/test/java/com/uber/rave/compiler/RaveProcessorTest.java
+A	rave-compiler/src/test/java/com/uber/rave/model/AbstractAnnotated.java
+A	rave-compiler/src/test/java/com/uber/rave/model/ArrayNotNull.java
+A	rave-compiler/src/test/java/com/uber/rave/model/FloatRangeTestModel.java
+A	rave-compiler/src/test/java/com/uber/rave/model/InheritFrom.java
+A	rave-compiler/src/test/java/com/uber/rave/model/IntDefModel.java
+A	rave-compiler/src/test/java/com/uber/rave/model/IntRangeTestModel.java
+A	rave-compiler/src/test/java/com/uber/rave/model/MultiMethodSampleModel.java
+A	rave-compiler/src/test/java/com/uber/rave/model/NonAnnotated.java
+A	rave-compiler/src/test/java/com/uber/rave/model/SingleMethodSampleModel.java
+A	rave-compiler/src/test/java/com/uber/rave/model/ValidateByInterface.java
+A	rave-compiler/src/test/resources/fixtures/SampleFactory.java
+A	rave-compiler/src/test/resources/fixtures/compileFail/BadUseOfValidate.java
+A	rave-compiler/src/test/resources/fixtures/floatrange/BadFloatRangeUsage.java
+A	rave-compiler/src/test/resources/fixtures/floatrange/FloatRangeTestClass.java
+A	rave-compiler/src/test/resources/fixtures/floatrange/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/intdef/BadIntDefUse.java
+A	rave-compiler/src/test/resources/fixtures/intdef/IntDefTestClass.java
+A	rave-compiler/src/test/resources/fixtures/intdef/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/intrange/BadIntRangeUsage.java
+A	rave-compiler/src/test/resources/fixtures/intrange/IntRangeTestClass.java
+A	rave-compiler/src/test/resources/fixtures/intrange/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/string_def/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/string_def/StringDefCases.java
+A	rave-compiler/src/test/resources/fixtures/test1/NothingInterface.java
+A	rave-compiler/src/test/resources/fixtures/test1/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/test1/SimpleCase.java
+A	rave-compiler/src/test/resources/fixtures/test2/AbstractAnnotated.java
+A	rave-compiler/src/test/resources/fixtures/test2/ArrayNotNull.java
+A	rave-compiler/src/test/resources/fixtures/test2/FloatRangeTestModel.java
+A	rave-compiler/src/test/resources/fixtures/test2/InheritFrom.java
+A	rave-compiler/src/test/resources/fixtures/test2/IntDefModel.java
+A	rave-compiler/src/test/resources/fixtures/test2/IntRangeTestModel.java
+A	rave-compiler/src/test/resources/fixtures/test2/MultiMethodSampleModel.java
+A	rave-compiler/src/test/resources/fixtures/test2/MyFactory.java
+A	rave-compiler/src/test/resources/fixtures/test2/MyFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/test2/NonAnnotated.java
+A	rave-compiler/src/test/resources/fixtures/test2/SingleMethodSampleModel.java
+A	rave-compiler/src/test/resources/fixtures/test2/ValidateByInterface.java
+A	rave-compiler/src/test/resources/fixtures/test3/InheritFrom.java
+A	rave-compiler/src/test/resources/fixtures/test3/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/test3/ValidateByInterface.java
+A	rave-compiler/src/test/resources/fixtures/test3/ValidateBySecondInterface.java
+A	rave-compiler/src/test/resources/fixtures/test3/ValidateSample.java
+A	rave-compiler/src/test/resources/fixtures/test3/ValidateSample2.java
+A	rave-compiler/src/test/resources/fixtures/test4/InheritFrom.java
+A	rave-compiler/src/test/resources/fixtures/test4/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/test4/ValidateByInterface.java
+A	rave-compiler/src/test/resources/fixtures/test4/ValidateSample2.java
+A	rave-compiler/src/test/resources/fixtures/test5/ConflictingMustbeTrue.java
+A	rave-compiler/src/test/resources/fixtures/test5/PackagePrivateClass.java
+A	rave-compiler/src/test/resources/fixtures/test5/PrivateClass.java
+A	rave-compiler/src/test/resources/fixtures/test5/ProtectedClassWrongPackage.java
+A	rave-compiler/src/test/resources/fixtures/test6/ModelUsesMyFactory.java
+A	rave-compiler/src/test/resources/fixtures/test6/ModelUsesSampleFactory.java
+A	rave-compiler/src/test/resources/fixtures/testSize/BadSizeAnnotation.java
+A	rave-compiler/src/test/resources/fixtures/testSize/SampleFactory_Generated_Validator.java
+A	rave-compiler/src/test/resources/fixtures/testSize/SimpleCase.java
+A	rave-test/.gitignore
+A	rave-test/build.gradle
+A	rave-test/config/checkstyle/checkstyle.xml
+A	rave-test/gradle.properties
+A	rave-test/src/main/java/com/uber/rave/AnnotationSpecs.java
+A	rave-test/src/main/java/com/uber/rave/ArrayCreator.java
+A	rave-test/src/main/java/com/uber/rave/BooleanCreator.java
+A	rave-test/src/main/java/com/uber/rave/CollectionCreator.java
+A	rave-test/src/main/java/com/uber/rave/DoubleCreator.java
+A	rave-test/src/main/java/com/uber/rave/LongCreator.java
+A	rave-test/src/main/java/com/uber/rave/ObjectCreator.java
+A	rave-test/src/main/java/com/uber/rave/ObjectCreatorIncrementer.java
+A	rave-test/src/main/java/com/uber/rave/ParameterizedBuilder.java
+A	rave-test/src/main/java/com/uber/rave/StringCreator.java
+A	rave-test/src/main/java/com/uber/rave/Utils.java
+A	rave/build.gradle
+A	rave/config/checkstyle/checkstyle-test.xml
+A	rave/config/checkstyle/checkstyle.xml
+A	rave/config/checkstyle/suppressions.xml
+A	rave/gradle.properties
+A	rave/src/main/java/com/uber/rave/BaseValidator.java
+A	rave/src/main/java/com/uber/rave/ExclusionStrategy.java
+A	rave/src/main/java/com/uber/rave/InvalidModelException.java
+A	rave/src/main/java/com/uber/rave/Rave.java
+A	rave/src/main/java/com/uber/rave/RaveError.java
+A	rave/src/main/java/com/uber/rave/RaveErrorStrings.java
+A	rave/src/main/java/com/uber/rave/RaveException.java
+A	rave/src/main/java/com/uber/rave/UnsupportedObjectException.java
+A	rave/src/main/java/com/uber/rave/ValidationIgnore.java
+A	rave/src/main/java/com/uber/rave/ValidatorFactory.java
+A	rave/src/main/java/com/uber/rave/annotation/MustBeFalse.java
+A	rave/src/main/java/com/uber/rave/annotation/MustBeTrue.java
+A	rave/src/main/java/com/uber/rave/annotation/Validated.java
+A	rave/src/test/java/com/uber/rave/RaveParameterizedUnitTest.java
+A	rave/src/test/java/com/uber/rave/RaveUnitTest.java
+A	rave/src/test/java/com/uber/rave/ValidationIgnoreTest.java
+A	rave/src/test/java/com/uber/rave/model/AbstractAnnotated.java
+A	rave/src/test/java/com/uber/rave/model/ArrayNotNull.java
+A	rave/src/test/java/com/uber/rave/model/FloatRangeTestModel.java
+A	rave/src/test/java/com/uber/rave/model/InheritFrom.java
+A	rave/src/test/java/com/uber/rave/model/IntDefModel.java
+A	rave/src/test/java/com/uber/rave/model/IntRangeTestModel.java
+A	rave/src/test/java/com/uber/rave/model/MultiMethodSampleModel.java
+A	rave/src/test/java/com/uber/rave/model/NonAnnotated.java
+A	rave/src/test/java/com/uber/rave/model/SingleMethodSampleModel.java
+A	rave/src/test/java/com/uber/rave/model/TestFactory.java
+A	rave/src/test/java/com/uber/rave/model/TestFactory_Generated_Validator.java
+A	rave/src/test/java/com/uber/rave/model/ValidateByInterface.java
+A	settings.gradle

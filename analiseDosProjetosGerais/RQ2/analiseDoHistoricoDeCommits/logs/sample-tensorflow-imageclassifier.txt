@@ -1,0 +1,305 @@
+9005d2c;Merge pull request #10 from daj/readme-fix
+338f92b;Updates max camera resolution to depend on available camera resolutions
+M	app/build.gradle
+A	app/src/androidTest/java/com/example/androidthings/imageclassifier/CameraSizeInstrumentationTest.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/CameraHandler.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+
+0721efd;Merge "Update Readme to include "Run on Android Things Starter Kit""
+13a45b2;Change packaging category.
+M	.google/packaging.yaml
+M	README.md
+
+f6ecd8b;sample-tensorflow-imageclassifier: bump tensorflow dep
+M	app/build.gradle
+
+13e8073;Update Readme to include "Run on Android Things Starter Kit"
+M	README.md
+A	toolkit_tensorflowsample.jpg
+
+e5fab9f;Update to new drivers
+M	app/build.gradle
+
+05fa188;Update to android things sdk 1.0
+M	app/build.gradle
+
+79dccfd;Clean up README for sample index.
+M	README.md
+
+37907ca;Add default version code.
+M	app/build.gradle
+
+456a3d4;Do not extract native TensorFlow libraries
+M	app/src/main/AndroidManifest.xml
+
+1245592;sample-tensorflow-imageclassifier: clean up manifest
+M	app/src/main/AndroidManifest.xml
+
+eb47c5b;Update to android things sdk 0.8 and API 27
+M	app/build.gradle
+
+5828867;Make launch behavior optional.
+M	README.md
+M	app/src/main/AndroidManifest.xml
+
+fef4349;Remove deprecated reference to Intel Edison
+M	app/src/main/java/com/example/androidthings/imageclassifier/BoardDefaults.java
+
+beef76a;Update to android things sdk 0.7 and new drivers
+M	app/build.gradle
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+M	build.gradle
+
+b64b176;Merge "Updates ordered list in README"
+6907cb5;Updates ordered list in README
+M	README.md
+
+4e722c5;Add demo GIF and Youtube link.
+M	README.md
+A	demo1.gif
+
+c2dc5ce;Migrate to TensorflowLite
+M	.gitignore
+M	README.md
+A	app/assets/LICENSE
+A	app/assets/README.txt
+A	app/assets/labels.txt
+A	app/assets/mobilenet_quant_v1_224.tflite
+M	app/build.gradle
+M	app/src/main/java/com/example/androidthings/imageclassifier/CameraHandler.java
+D	app/src/main/java/com/example/androidthings/imageclassifier/Helper.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImagePreprocessor.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/TtsSpeaker.java
+D	app/src/main/java/com/example/androidthings/imageclassifier/classifier/Classifier.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/classifier/Recognition.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/classifier/TensorFlowHelper.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/classifier/TensorFlowImageClassifier.java
+M	app/src/main/res/layout/activity_camera.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+M	build.gradle
+
+4579bd1;Fix adb command so it is all on one line
+M	README.md
+
+055873c;Merge commit 'c0048135011326f23186386598315fca1a66eca8' into HEAD
+c004813;Merge pull request #7 from daj/master
+faa889a;Support non-Android Things devices too
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+
+c38d06a;Update to android things sdk 0.6
+M	app/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+4b09daf;Remove deprecated signals.
+M	README.md
+M	app/src/main/java/com/example/androidthings/imageclassifier/BoardDefaults.java
+
+05b6044;tensorflow-imageclassifier: update imx7d pin names
+M	app/src/main/java/com/example/androidthings/imageclassifier/BoardDefaults.java
+
+40c3152;Removed code for requesting permissions
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+
+bd9ae42;Use onKeyUp to avoid excessive amount of events
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+
+7a44fd3;Merge "Capture image in JPEG format Capture image in JPEG format instead of YUV so that the sample works for both RPi3 and IMX7d (b/63540488, b/62632235) Refactored code and removed unused files"
+9f0ee5f;Capture image in JPEG format Capture image in JPEG format instead of YUV so that the sample works for both RPi3 and IMX7d (b/63540488, b/62632235) Refactored code and removed unused files
+M	app/src/main/java/com/example/androidthings/imageclassifier/CameraHandler.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/Helper.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImagePreprocessor.java
+D	app/src/main/java/com/example/androidthings/imageclassifier/env/ImageUtils.java
+D	app/src/main/java/com/example/androidthings/imageclassifier/env/Logger.java
+
+bbf59a3;Update README.md for samples-api.
+A	.google/packaging.yaml
+M	README.md
+
+95ad5e7;Update TF inference library instructions on README
+M	README.md
+
+888e2d5;Add new UserDriver permissions.
+M	app/src/main/AndroidManifest.xml
+
+4f0af7d;Use the latest Tensorflow library 1.2.0
+M	app/build.gradle
+D	app/libs/Tensorflow-Android-Inference-alpha-debug.aar
+A	app/src/main/java/com/example/androidthings/imageclassifier/BoardDefaults.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/Helper.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/classifier/Classifier.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/classifier/TensorFlowImageClassifier.java
+M	app/src/main/res/values/strings.xml
+
+0199dd2;Revert change submitted directly to HEAD
+M	app/build.gradle
+A	app/libs/Tensorflow-Android-Inference-alpha-debug.aar
+D	app/src/main/java/com/example/androidthings/imageclassifier/BoardDefaults.java
+D	app/src/main/java/com/example/androidthings/imageclassifier/Helper.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/classifier/Classifier.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/classifier/TensorFlowImageClassifier.java
+M	app/src/main/res/values/strings.xml
+
+6290d75;Updated the sample to use the latest Android Inference Lib 1.2.0 from Jcenter Updated GPIO stuff
+M	app/build.gradle
+D	app/libs/Tensorflow-Android-Inference-alpha-debug.aar
+A	app/src/main/java/com/example/androidthings/imageclassifier/BoardDefaults.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/Helper.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/classifier/Classifier.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/classifier/TensorFlowImageClassifier.java
+M	app/src/main/res/values/strings.xml
+
+1e31c11;Updade sdk 0.4 and drivers
+M	app/build.gradle
+
+6ac93ff;Update to supportlibrary 0.3
+M	app/build.gradle
+
+4ac849d;Update build dependencies
+M	app/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+901bd74;Change hasSenseOfHumor to be controlled by a flag
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/TtsSpeaker.java
+
+74c5c97;Minor fixes for demo
+M	app/src/main/java/com/example/androidthings/imageclassifier/CameraHandler.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+
+fa5a692;Don't repeat a joke for 2 minutes
+M	app/src/main/java/com/example/androidthings/imageclassifier/TtsSpeaker.java
+
+7a5ba06;Create a TtsSpeaker abstraction
+M	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/TtsSpeaker.java
+
+122840c;Updating license
+M	README.md
+M	app/src/main/java/com/example/androidthings/imageclassifier/CameraHandler.java
+
+2f9852a;bump sdk to 0.2
+M	app/build.gradle
+
+e490e50;Rename inference lib and change README
+M	README.md
+M	app/build.gradle
+R100	app/libs/Tensorflow-Android-Inference-debug.aar	app/libs/Tensorflow-Android-Inference-alpha-debug.aar
+M	app/src/main/AndroidManifest.xml
+D	app/src/main/res/drawable-hdpi/ic_action_info.png
+D	app/src/main/res/drawable-hdpi/ic_launcher.png
+D	app/src/main/res/drawable-hdpi/tile.9.png
+D	app/src/main/res/drawable-mdpi/ic_action_info.png
+D	app/src/main/res/drawable-mdpi/ic_launcher.png
+D	app/src/main/res/drawable-xhdpi/ic_action_info.png
+D	app/src/main/res/drawable-xhdpi/ic_launcher.png
+D	app/src/main/res/drawable-xxhdpi/ic_action_info.png
+D	app/src/main/res/drawable-xxhdpi/ic_launcher.png
+M	app/src/main/res/layout/activity_camera.xml
+D	app/src/main/res/values-v21/base-colors.xml
+D	app/src/main/res/values-v21/base-template-styles.xml
+D	app/src/main/res/values/attrs.xml
+D	app/src/main/res/values/base-strings.xml
+M	app/src/main/res/values/strings.xml
+D	app/src/main/res/values/styles.xml
+D	app/src/main/res/values/template-dimens.xml
+D	app/src/main/res/values/template-styles.xml
+
+ba891b8;Update README, add schematics
+M	README.md
+A	rpi3_schematics_tf.fzz
+A	rpi3_schematics_tf.png
+
+c3ad599;Refactor imageclassifier
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+D	app/src/main/java/com/example/androidthings/imageclassifier/CameraActivity.java
+D	app/src/main/java/com/example/androidthings/imageclassifier/CameraConnectionFragment.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/CameraHandler.java
+D	app/src/main/java/com/example/androidthings/imageclassifier/Classifier.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/ImageClassifierActivity.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/ImagePreprocessor.java
+D	app/src/main/java/com/example/androidthings/imageclassifier/RecognitionScoreView.java
+D	app/src/main/java/com/example/androidthings/imageclassifier/TensorFlowImageClassifier.java
+D	app/src/main/java/com/example/androidthings/imageclassifier/TensorFlowImageListener.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/classifier/Classifier.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/classifier/TensorFlowImageClassifier.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/env/ImageUtils.java
+D	app/src/main/res/layout-land/camera_connection_fragment.xml
+M	app/src/main/res/layout/activity_camera.xml
+D	app/src/main/res/layout/camera_connection_fragment.xml
+D	app/src/main/res/values-sw600dp/template-dimens.xml
+D	app/src/main/res/values-sw600dp/template-styles.xml
+D	app/src/main/res/values-v11/styles.xml
+D	app/src/main/res/values-v11/template-styles.xml
+D	app/src/main/res/values-v14/styles.xml
+
+636b00e;Updated TensorFlow Android Inference library to include multiple ABIs
+M	app/libs/Tensorflow-Android-Inference-debug.aar
+M	app/src/main/java/com/example/androidthings/imageclassifier/TensorFlowImageListener.java
+
+f3c781a;Improve performance
+M	app/src/main/java/com/example/androidthings/imageclassifier/CameraConnectionFragment.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/TensorFlowImageClassifier.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/TensorFlowImageListener.java
+M	app/src/main/java/com/example/androidthings/imageclassifier/env/ImageUtils.java
+
+e229edc;First draft of Android Things TensorFlow image classifier sample
+A	.gitignore
+A	AUTHORS
+A	CONTRIBUTING.md
+A	LICENSE
+A	README.md
+A	app/build.gradle
+A	app/libs/Tensorflow-Android-Inference-debug.aar
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/example/androidthings/imageclassifier/CameraActivity.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/CameraConnectionFragment.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/Classifier.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/RecognitionScoreView.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/TensorFlowImageClassifier.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/TensorFlowImageListener.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/env/ImageUtils.java
+A	app/src/main/java/com/example/androidthings/imageclassifier/env/Logger.java
+A	app/src/main/res/drawable-hdpi/ic_action_info.png
+A	app/src/main/res/drawable-hdpi/ic_launcher.png
+A	app/src/main/res/drawable-hdpi/tile.9.png
+A	app/src/main/res/drawable-mdpi/ic_action_info.png
+A	app/src/main/res/drawable-mdpi/ic_launcher.png
+A	app/src/main/res/drawable-xhdpi/ic_action_info.png
+A	app/src/main/res/drawable-xhdpi/ic_launcher.png
+A	app/src/main/res/drawable-xxhdpi/ic_action_info.png
+A	app/src/main/res/drawable-xxhdpi/ic_launcher.png
+A	app/src/main/res/layout-land/camera_connection_fragment.xml
+A	app/src/main/res/layout/activity_camera.xml
+A	app/src/main/res/layout/camera_connection_fragment.xml
+A	app/src/main/res/values-sw600dp/template-dimens.xml
+A	app/src/main/res/values-sw600dp/template-styles.xml
+A	app/src/main/res/values-v11/styles.xml
+A	app/src/main/res/values-v11/template-styles.xml
+A	app/src/main/res/values-v14/styles.xml
+A	app/src/main/res/values-v21/base-colors.xml
+A	app/src/main/res/values-v21/base-template-styles.xml
+A	app/src/main/res/values/attrs.xml
+A	app/src/main/res/values/base-strings.xml
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/main/res/values/template-dimens.xml
+A	app/src/main/res/values/template-styles.xml
+A	build.gradle
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle
+
+fdbadc2;Initial commit

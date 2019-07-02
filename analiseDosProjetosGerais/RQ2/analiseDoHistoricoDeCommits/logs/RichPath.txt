@@ -1,0 +1,276 @@
+eac76f3;Feature/find all rich paths (#36)
+M	app/src/main/java/com/richpathanimator/sample/AnimationSamplesActivity.java
+M	app/src/main/java/com/richpathanimator/sample/MainActivity.java
+M	richpath/src/main/java/com/richpath/RichPathDrawable.java
+M	richpath/src/main/java/com/richpath/RichPathView.java
+
+e96ea68;circleci badge
+M	README.md
+
+4bee2fb;circleci (#37)
+A	.circleci/config.yml
+
+6f7c04d;enahance clickable paths
+M	README.md
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/richpathanimator/sample/AnimationSamplesActivity.java
+A	app/src/main/java/com/richpathanimator/sample/CompoundViewSamplesActivity.java
+M	app/src/main/java/com/richpathanimator/sample/MainActivity.java
+A	app/src/main/res/drawable/color_picker.xml
+M	app/src/main/res/drawable/ic_android.xml
+A	app/src/main/res/layout/activity_animation_samples.xml
+A	app/src/main/res/layout/activity_compound_view_samples.xml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/strings.xml
+M	build.gradle
+M	richpath/src/main/java/com/richpath/RichPath.java
+M	richpath/src/main/java/com/richpath/RichPathDrawable.java
+M	richpath/src/main/java/com/richpath/RichPathView.java
+
+ce02aac;fix color parsing (#22)
+M	richpath/src/main/java/com/richpath/util/Utils.java
+M	richpath/src/main/java/com/richpath/util/XmlParser.java
+
+33d52ee;Tweak the build to move common version numbers in to the root project (#16)
+M	animator/build.gradle
+M	app/build.gradle
+M	app/src/main/java/com/richpathanimator/sample/MainActivity.java
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	richpath/build.gradle
+
+40d46ac;handle scaleType fitXY (#10)
+M	app/src/main/res/drawable/animal.xml
+M	app/src/main/res/drawable/face_love.xml
+M	app/src/main/res/drawable/ic_android.xml
+M	app/src/main/res/drawable/ic_arrow_search.xml
+M	app/src/main/res/drawable/ic_command.xml
+M	app/src/main/res/drawable/ic_notifications.xml
+M	app/src/main/res/drawable/ic_playlist_add_check.xml
+M	app/src/main/res/layout/activity_main.xml
+M	richpath/src/main/java/com/richpath/RichPathDrawable.java
+M	richpath/src/main/java/com/richpath/RichPathView.java
+
+5700096;fix scaling when change RichPathView dimens dynamically
+M	richpath/src/main/java/com/richpath/RichPathDrawable.java
+M	richpath/src/main/java/com/richpath/model/Vector.java
+
+6d3f904;introduce OnPathClickListener
+M	README.md
+M	animator/src/main/java/com/richpathanimator/AnimationBuilder.java
+M	richpath/src/main/java/com/richpath/RichPath.java
+M	richpath/src/main/java/com/richpath/RichPathDrawable.java
+M	richpath/src/main/java/com/richpath/RichPathView.java
+M	richpath/src/main/java/com/richpath/util/PathUtils.java
+
+a1598df;Add other options to find RichPaths in RichPathView (#6)
+M	README.md
+M	app/src/main/java/com/richpathanimator/sample/MainActivity.java
+M	app/src/main/res/drawable/animal.xml
+M	richpath/src/main/java/com/richpath/RichPathDrawable.java
+M	richpath/src/main/java/com/richpath/RichPathView.java
+
+94e88c3;update readme
+M	README.md
+
+479e06c;add todo list
+M	README.md
+
+599e75a;add proguard rules for richpath module
+M	README.md
+M	richpath/build.gradle
+A	richpath/consumer-proguard-rules.pro
+D	richpath/proguard-rules.pro
+
+e8a1821;migrate from View to ImageView to use the vector as a drawable
+M	README.md
+M	app/build.gradle
+M	app/src/main/res/layout/activity_main.xml
+M	richpath/build.gradle
+A	richpath/src/main/java/com/richpath/RichPathDrawable.java
+M	richpath/src/main/java/com/richpath/RichPathView.java
+
+693007d;fix twice vector dimen converting to px
+M	README.md
+M	richpath/src/main/java/com/richpath/RichPathView.java
+
+276f4ad;Optimize the path morphing animation performance
+M	README.md
+M	animator/src/main/java/com/richpathanimator/AnimationBuilder.java
+M	animator/src/main/java/com/richpathanimator/PathEvaluator.java
+D	app/src/main/res/drawable/square.xml
+M	richpath/src/main/java/com/richpath/RichPath.java
+A	richpath/src/main/java/com/richpath/pathparser/PathDataNode.java
+M	richpath/src/main/java/com/richpath/pathparser/PathParserCompat.java
+M	richpath/src/main/java/com/richpath/util/PathUtils.java
+
+e10fb57;update readme
+M	README.md
+A	screenshots/animal_path_morphing.gif
+
+1c267a2;support path morphing
+M	animator/src/main/java/com/richpathanimator/AnimationBuilder.java
+A	animator/src/main/java/com/richpathanimator/PathEvaluator.java
+M	app/src/main/java/com/richpathanimator/sample/MainActivity.java
+A	app/src/main/res/drawable/animal.xml
+A	app/src/main/res/drawable/square.xml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/strings.xml
+M	richpath/src/main/java/com/richpath/RichPath.java
+M	richpath/src/main/java/com/richpath/pathparser/PathParser.java
+M	richpath/src/main/java/com/richpath/pathparser/PathParserCompat.java
+M	richpath/src/main/java/com/richpath/util/PathUtils.java
+M	richpath/src/test/java/com/richpath/util/UtilsTest.java
+
+bb3949c;add google play sample app
+M	.gitignore
+M	README.md
+M	app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+M	app/src/main/res/values/strings.xml
+
+ffd81a5;update readme
+M	README.md
+
+e6f3c61;update sample app, and samples gif
+M	app/src/main/java/com/richpathanimator/sample/MainActivity.java
+M	app/src/main/res/layout/activity_main.xml
+M	screenshots/samples.gif
+
+fe8acbc;parse resource Ids, repeatModeSet and repeatCountSet, full color command animation
+M	README.md
+M	animator/src/main/java/com/richpathanimator/AnimationBuilder.java
+M	animator/src/main/java/com/richpathanimator/RichPathAnimator.java
+M	app/src/main/java/com/richpathanimator/sample/MainActivity.java
+A	app/src/main/res/drawable/ic_command.xml
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+M	richpath/src/main/java/com/richpath/RichPath.java
+M	richpath/src/main/java/com/richpath/RichPathView.java
+M	richpath/src/main/java/com/richpath/model/Group.java
+M	richpath/src/main/java/com/richpath/model/Vector.java
+M	richpath/src/main/java/com/richpath/util/XmlParser.java
+
+35bcebd;update git ignore, readme
+M	.gitignore
+D	.idea/compiler.xml
+D	.idea/copyright/profiles_settings.xml
+D	.idea/gradle.xml
+D	.idea/runConfigurations.xml
+M	README.md
+
+7b6b767;update readme
+M	README.md
+M	screenshots/samples.gif
+
+5546953;fix scaling and add scaling sample
+M	README.md
+M	animator/src/main/java/com/richpathanimator/AnimationBuilder.java
+M	app/src/main/java/com/richpathanimator/sample/MainActivity.java
+A	app/src/main/res/drawable/face_love.xml
+M	app/src/main/res/drawable/ic_arrow_search.xml
+M	app/src/main/res/layout/activity_main.xml
+M	richpath/src/main/java/com/richpath/RichPath.java
+M	richpath/src/main/java/com/richpath/model/Group.java
+M	richpath/src/main/java/com/richpath/util/PathUtils.java
+
+04256c0;rename the RichPathAnimator
+M	README.md
+M	animator/src/main/java/com/richpathanimator/AnimationBuilder.java
+R086	animator/src/main/java/com/richpathanimator/PathAnimator.java	animator/src/main/java/com/richpathanimator/RichPathAnimator.java
+M	app/src/main/java/com/richpathanimator/sample/MainActivity.java
+
+6fd2ad2;update readme
+M	README.md
+
+11bd328;upload gif
+A	screenshots/header.gif
+
+1787a39;remove commented code
+M	README.md
+M	app/src/main/res/drawable/ic_android.xml
+
+8090fa1;update readme
+M	.gitignore
+M	README.md
+M	animator/src/main/java/com/richpathanimator/AnimationBuilder.java
+A	screenshots/ic_notifications.gif
+A	screenshots/ic_notifications.png
+A	screenshots/samples.gif
+
+7769113;first commit
+A	.gitignore
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/gradle.xml
+A	.idea/runConfigurations.xml
+A	README.md
+A	animator/.gitignore
+A	animator/build.gradle
+A	animator/proguard-rules.pro
+A	animator/src/main/AndroidManifest.xml
+A	animator/src/main/java/com/richpathanimator/AnimationBuilder.java
+A	animator/src/main/java/com/richpathanimator/AnimationListener.java
+A	animator/src/main/java/com/richpathanimator/AnimationUpdateListener.java
+A	animator/src/main/java/com/richpathanimator/PathAnimator.java
+A	animator/src/main/res/values/strings.xml
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/richpathanimator/sample/MainActivity.java
+A	app/src/main/res/drawable/ic_android.xml
+A	app/src/main/res/drawable/ic_arrow_search.xml
+A	app/src/main/res/drawable/ic_notifications.xml
+A	app/src/main/res/drawable/ic_playlist_add_check.xml
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/main/res/xml/square.xml
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	richpath/.gitignore
+A	richpath/build.gradle
+A	richpath/proguard-rules.pro
+A	richpath/src/androidTest/java/com/richpath/ExampleInstrumentedTest.java
+A	richpath/src/main/AndroidManifest.xml
+A	richpath/src/main/java/com/richpath/RichPath.java
+A	richpath/src/main/java/com/richpath/RichPathView.java
+A	richpath/src/main/java/com/richpath/listener/OnRichPathUpdatedListener.java
+A	richpath/src/main/java/com/richpath/model/Group.java
+A	richpath/src/main/java/com/richpath/model/Vector.java
+A	richpath/src/main/java/com/richpath/pathparser/PathParser.java
+A	richpath/src/main/java/com/richpath/pathparser/PathParserCompat.java
+A	richpath/src/main/java/com/richpath/pathparser/PathParserCompatApi21.java
+A	richpath/src/main/java/com/richpath/util/PathUtils.java
+A	richpath/src/main/java/com/richpath/util/Utils.java
+A	richpath/src/main/java/com/richpath/util/XmlParser.java
+A	richpath/src/main/res/values/strings.xml
+A	richpath/src/main/res/values/styles.xml
+A	richpath/src/test/java/com/richpath/util/UtilsTest.java
+A	settings.gradle

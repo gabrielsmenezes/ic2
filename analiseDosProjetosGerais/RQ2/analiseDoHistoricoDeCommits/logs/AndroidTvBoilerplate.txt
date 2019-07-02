@@ -1,0 +1,187 @@
+20d4732;Update licence styling
+M	License.md
+
+e069b4a;Fix license...
+M	License.md
+
+5d54c4b;Add License
+A	License.md
+
+3557e9b;Fix typo in README
+M	README.md
+
+c033993;Move gitignore to correct place
+M	app/.gitignore
+D	app/src/.gitignore
+
+210a97c;Remove redundant quote marks
+M	README.md
+
+2759cf3;Add Check instruction to README
+M	README.md
+
+f5d5704;Update README
+M	README.md
+
+ad00e10;Update README
+M	README.md
+
+52a3c02;Implement MVP architecture
+R091	app/src/androidTest/java/com/hitherejoe/androidtvboilerplate/MainActivityTest.java	app/src/androidTest/java/com/hitherejoe/androidtvboilerplate/ContentActivityTest.java
+R089	app/src/androidTest/java/com/hitherejoe/androidtvboilerplate/SearchActivityTest.java	app/src/androidTest/java/com/hitherejoe/androidtvboilerplate/SearchContentActivityTest.java
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/hitherejoe/androidtvboilerplate/injection/component/ActivityComponent.java
+D	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/activity/MainActivity.java
+D	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/activity/SearchActivity.java
+R068	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/activity/BaseActivity.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/base/BaseActivity.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/base/BasePresenter.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/base/MvpView.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/base/Presenter.java
+R097	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/presenter/CardPresenter.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/common/CardPresenter.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/content/ContentActivity.java
+R081	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/fragment/MainFragment.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/content/ContentFragment.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/content/ContentMvpView.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/content/ContentPresenter.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/search/SearchContentActivity.java
+R077	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/fragment/SearchFragment.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/search/SearchContentFragment.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/search/SearchContentMvpView.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/search/SearchContentPresenter.java
+M	app/src/main/res/layout/activity_search.xml
+M	app/src/main/res/values/strings.xml
+R091	app/src/test/java/com/hitherejoe/androidtvboilerplate/DataManagerTest.java	app/src/test/java/com/hitherejoe/androidtvboilerplate/data/DataManagerTest.java
+A	app/src/test/java/com/hitherejoe/androidtvboilerplate/ui/content/ContentPresenterTest.java
+A	app/src/test/java/com/hitherejoe/androidtvboilerplate/ui/search/SearchContentPresenterTest.java
+
+4de7b29;Fix UI tests for search screen
+M	app/src/androidTest/java/com/hitherejoe/androidtvboilerplate/SearchActivityTest.java
+M	app/src/commonTest/java/com/hitherejoe/androidtvboilerplate/test/common/injection/module/ApplicationTestModule.java
+
+fd2d25c;Added search fragment
+M	README.md
+M	app/build.gradle
+M	app/src/androidTest/java/com/hitherejoe/androidtvboilerplate/MainActivityTest.java
+A	app/src/androidTest/java/com/hitherejoe/androidtvboilerplate/SearchActivityTest.java
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/hitherejoe/androidtvboilerplate/injection/component/ActivityComponent.java
+M	app/src/main/java/com/hitherejoe/androidtvboilerplate/injection/module/ApplicationModule.java
+M	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/activity/MainActivity.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/activity/SearchActivity.java
+M	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/fragment/MainFragment.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/fragment/SearchFragment.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/util/ToastFactory.java
+A	app/src/main/res/layout/activity_search.xml
+M	app/src/main/res/values/strings.xml
+A	images/search_fragment.png
+
+1a3c095;Add recommendations service to manifest
+M	app/src/main/AndroidManifest.xml
+
+2bee6bb;Add README
+A	.travis.yml
+A	README.md
+R100	app/images/browse_fragment.png	images/browse_fragment.png
+R100	app/images/web_banner.png	images/web_banner.png
+
+962bb8c;Add tests and dummy data
+M	app/build.gradle
+A	app/images/browse_fragment.png
+A	app/images/web_banner.png
+A	app/src/androidTest/java/com/hitherejoe/androidtvboilerplate/MainActivityTest.java
+A	app/src/androidTest/java/com/hitherejoe/androidtvboilerplate/util/CustomMatchers.java
+D	app/src/androidTest/java/com/hitherejoe/soundcloudtv/ApplicationTest.java
+A	app/src/commonTest/java/com/hitherejoe/androidtvboilerplate/test/common/TestDataFactory.java
+A	app/src/commonTest/java/com/hitherejoe/androidtvboilerplate/test/common/injection/component/TestComponent.java
+R073	app/src/commonTest/java/com/hitherejoe/tvboilerplate/test/common/injection/module/ApplicationTestModule.java	app/src/commonTest/java/com/hitherejoe/androidtvboilerplate/test/common/injection/module/ApplicationTestModule.java
+R066	app/src/commonTest/java/com/hitherejoe/tvboilerplate/test/common/rules/TestComponentRule.java	app/src/commonTest/java/com/hitherejoe/androidtvboilerplate/test/common/rules/TestComponentRule.java
+D	app/src/commonTest/java/com/hitherejoe/tvboilerplate/test/common/TestDataFactory.java
+D	app/src/commonTest/java/com/hitherejoe/tvboilerplate/test/common/injection/component/TestComponent.java
+M	app/src/main/AndroidManifest.xml
+R065	app/src/main/java/com/hitherejoe/tvboilerplate/TvBoilerplateApplication.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/AndroidTvBoilerplateApplication.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/data/DataManager.java
+R083	app/src/main/java/com/hitherejoe/tvboilerplate/data/local/PreferencesHelper.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/data/local/PreferencesHelper.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/data/model/Cat.java
+R088	app/src/main/java/com/hitherejoe/tvboilerplate/data/recommendations/RecommendationReceiver.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/data/recommendations/RecommendationReceiver.java
+R056	app/src/main/java/com/hitherejoe/tvboilerplate/data/recommendations/UpdateRecommendationsService.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/data/recommendations/UpdateRecommendationsService.java
+R081	app/src/main/java/com/hitherejoe/tvboilerplate/data/remote/BoilerplateService.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/data/remote/AndroidTvBoilerplateService.java
+R078	app/src/main/java/com/hitherejoe/tvboilerplate/injection/ActivityContext.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/injection/ActivityContext.java
+R078	app/src/main/java/com/hitherejoe/tvboilerplate/injection/ApplicationContext.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/injection/ApplicationContext.java
+R086	app/src/main/java/com/hitherejoe/tvboilerplate/injection/PerActivity.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/injection/PerActivity.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/injection/component/ActivityComponent.java
+R057	app/src/main/java/com/hitherejoe/tvboilerplate/injection/component/ApplicationComponent.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/injection/component/ApplicationComponent.java
+R077	app/src/main/java/com/hitherejoe/tvboilerplate/injection/module/ActivityModule.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/injection/module/ActivityModule.java
+R073	app/src/main/java/com/hitherejoe/tvboilerplate/injection/module/ApplicationModule.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/injection/module/ApplicationModule.java
+R055	app/src/main/java/com/hitherejoe/tvboilerplate/ui/activity/BaseActivity.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/activity/BaseActivity.java
+R087	app/src/main/java/com/hitherejoe/tvboilerplate/ui/activity/MainActivity.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/activity/MainActivity.java
+R076	app/src/main/java/com/hitherejoe/tvboilerplate/ui/fragment/MainFragment.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/fragment/MainFragment.java
+R082	app/src/main/java/com/hitherejoe/tvboilerplate/ui/presenter/CardPresenter.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/ui/presenter/CardPresenter.java
+A	app/src/main/java/com/hitherejoe/androidtvboilerplate/util/NetworkUtil.java
+R088	app/src/main/java/com/hitherejoe/tvboilerplate/util/ViewUtils.java	app/src/main/java/com/hitherejoe/androidtvboilerplate/util/ViewUtils.java
+D	app/src/main/java/com/hitherejoe/tvboilerplate/data/DataManager.java
+D	app/src/main/java/com/hitherejoe/tvboilerplate/data/model/Cat.java
+D	app/src/main/java/com/hitherejoe/tvboilerplate/injection/component/ActivityComponent.java
+D	app/src/main/java/com/hitherejoe/tvboilerplate/util/NetworkUtil.java
+A	app/src/main/res/drawable-xhdpi/banner.png
+M	app/src/main/res/drawable-xhdpi/banner_browse.png
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+A	app/src/test/java/com/hitherejoe/androidtvboilerplate/DataManagerTest.java
+R073	app/src/test/java/com/hitherejoe/tvboilerplate/util/DefaultConfig.java	app/src/test/java/com/hitherejoe/androidtvboilerplate/util/DefaultConfig.java
+R098	app/src/test/java/com/hitherejoe/tvboilerplate/util/RxSchedulersOverrideRule.java	app/src/test/java/com/hitherejoe/androidtvboilerplate/util/RxSchedulersOverrideRule.java
+D	app/src/test/java/com/hitherejoe/tvboilerplate/DataManagerTest.java
+A	config/quality/checkstyle/checkstyle-config.xml
+A	config/quality/findbugs/android-exclude-filter.xml
+A	config/quality/pmd/pmd-ruleset.xml
+A	config/quality/quality.gradle
+
+cb8c1a0;Initial commit
+A	.gitignore
+A	app/.gitignore
+A	app/build.gradle
+A	app/proguard-rules.pro
+A	app/src/.gitignore
+A	app/src/androidTest/java/com/hitherejoe/soundcloudtv/ApplicationTest.java
+A	app/src/commonTest/java/com/hitherejoe/tvboilerplate/test/common/TestDataFactory.java
+A	app/src/commonTest/java/com/hitherejoe/tvboilerplate/test/common/injection/component/TestComponent.java
+A	app/src/commonTest/java/com/hitherejoe/tvboilerplate/test/common/injection/module/ApplicationTestModule.java
+A	app/src/commonTest/java/com/hitherejoe/tvboilerplate/test/common/rules/TestComponentRule.java
+A	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/hitherejoe/tvboilerplate/TvBoilerplateApplication.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/data/DataManager.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/data/local/PreferencesHelper.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/data/model/Cat.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/data/recommendations/RecommendationReceiver.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/data/recommendations/UpdateRecommendationsService.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/data/remote/BoilerplateService.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/injection/ActivityContext.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/injection/ApplicationContext.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/injection/PerActivity.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/injection/component/ActivityComponent.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/injection/component/ApplicationComponent.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/injection/module/ActivityModule.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/injection/module/ApplicationModule.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/ui/activity/BaseActivity.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/ui/activity/MainActivity.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/ui/fragment/MainFragment.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/ui/presenter/CardPresenter.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/util/NetworkUtil.java
+A	app/src/main/java/com/hitherejoe/tvboilerplate/util/ViewUtils.java
+A	app/src/main/res/drawable-xhdpi/banner_browse.png
+A	app/src/main/res/drawable-xhdpi/card_default.png
+A	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	app/src/main/res/values/colors.xml
+A	app/src/main/res/values/strings.xml
+A	app/src/main/res/values/styles.xml
+A	app/src/test/java/com/hitherejoe/tvboilerplate/DataManagerTest.java
+A	app/src/test/java/com/hitherejoe/tvboilerplate/util/DefaultConfig.java
+A	app/src/test/java/com/hitherejoe/tvboilerplate/util/RxSchedulersOverrideRule.java
+A	build.gradle
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle

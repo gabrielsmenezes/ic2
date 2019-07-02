@@ -1,0 +1,873 @@
+08692bc;Merge pull request #26 from eabait/extract_texts
+8107463;Extracted message texts into string.xml
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/AddNewMessageTask.java
+M	slyce-messaging/src/main/res/values/strings.xml
+
+6097a40;Extracted DateUtil texts into string.xml
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/DateUtils.java
+M	slyce-messaging/src/main/res/values/strings.xml
+
+4d482a9;Merge pull request #24 from Slyce-Inc/issue-23-NPE
+0b62b4a;issue-23-NPE: Added null check on `getActivity()`.
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+f211b2a;Update README.md
+M	README.md
+
+d8aa367;Update README.md
+M	README.md
+
+09ce6cc;Changed the way the final text on GeneralOptionsMessage was determined
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/listeners/OnOptionSelectedListener.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/GeneralOptionsMessage.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/general/generalOptions/MessageGeneralOptionsItem.java
+
+34133eb;Removed bad javadoc
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/general/generalOptions/MessageGeneralOptionsViewHolder.java
+
+5df28be;Merge pull request #20 from Slyce-Inc/general-text-item
+efca111;Removed invasid javadocs
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/general/generalText/MessageGeneralTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/general/generalText/MessageGeneralTextViewHolder.java
+
+c11bdea;Added General Options item
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/listeners/OnOptionSelectedListener.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/message/GeneralOptionsMessage.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/GeneralTextMessage.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItemType.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/general/generalOptions/MessageGeneralOptionsItem.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/general/generalOptions/MessageGeneralOptionsViewHolder.java
+R094	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/general/MessageGeneralTextItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/general/generalText/MessageGeneralTextItem.java
+R090	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/general/MessageGeneralTextViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/general/generalText/MessageGeneralTextViewHolder.java
+A	slyce-messaging/src/main/res/layout/item_message_general_options.xml
+M	slyce-messaging/src/main/res/values/colors.xml
+
+a0e9156;Removed top margin for GeneralTextMessage
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	slyce-messaging/src/main/res/layout/item_message_general_text.xml
+
+0265385;Added GeneralText to adapter
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/GeneralTextMessage.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItemType.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/general/MessageGeneralTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/general/MessageGeneralTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/spinner/SpinnerItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+A	slyce-messaging/src/main/res/layout/item_message_general_text.xml
+
+280412b;Added MessageGeneralTextViewHolder
+A	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/general/MessageGeneralTextViewHolder.java
+
+50f6c05;Created MessageItemType.GENERAL
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItemType.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/general/MessageGeneralTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/spinner/SpinnerItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+
+f685fb1;Added MessageGeneralTextItem
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/GeneralTextMessage.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/MessageSource.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/general/MessageGeneralTextItem.java
+
+6118e36;added GeneralTextMessage
+A	slyce-messaging/src/main/java/it/slyce/messaging/message/GeneralTextMessage.java
+
+285d643;Updated README to include kitpack.io instructions
+M	README.md
+
+a300019;Removed bad javadoc commands
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MediaUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/Refresher.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/ScrollUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/AddNewMessageTask.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/ReplaceMessagesTask.java
+
+5bb083c;Added Jitpack.io badge to README
+M	README.md
+
+c2f9575;removed random dir
+D	HelloAndroid/.idea/workspace.xml
+
+07a144c;Update local.properties
+M	local.properties
+
+d3464a9;Update README.md
+M	README.md
+
+e720911;Merge pull request #18 from Slyce-Inc/dev
+2ad23e4;Revert "fixed sdk location"
+D	slyce-messaging/.idea/workspace.xml
+
+92a0c6c;fixed sdk location
+A	slyce-messaging/.idea/workspace.xml
+
+a5dbacd;removed bad files
+D	slyce-messaging/.idea/compiler.xml
+D	slyce-messaging/.idea/copyright/profiles_settings.xml
+D	slyce-messaging/.idea/encodings.xml
+D	slyce-messaging/.idea/gradle.xml
+D	slyce-messaging/.idea/libraries/accessibility_test_framework_2_0.xml
+D	slyce-messaging/.idea/libraries/animated_vector_drawable_24_1_1.xml
+D	slyce-messaging/.idea/libraries/appcompat_v7_24_1_1.xml
+D	slyce-messaging/.idea/libraries/cam2_0_6_2.xml
+D	slyce-messaging/.idea/libraries/circleimageview_2_1_0.xml
+D	slyce-messaging/.idea/libraries/design_24_1_1.xml
+D	slyce-messaging/.idea/libraries/espresso_contrib_2_2_2.xml
+D	slyce-messaging/.idea/libraries/espresso_core_2_2_2.xml
+D	slyce-messaging/.idea/libraries/espresso_idling_resource_2_2_2.xml
+D	slyce-messaging/.idea/libraries/eventbus_2_4_0.xml
+D	slyce-messaging/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml
+D	slyce-messaging/.idea/libraries/fab_1_6_2.xml
+D	slyce-messaging/.idea/libraries/glide_3_7_0.xml
+D	slyce-messaging/.idea/libraries/hamcrest_core_1_3.xml
+D	slyce-messaging/.idea/libraries/hamcrest_integration_1_3.xml
+D	slyce-messaging/.idea/libraries/hamcrest_library_1_3.xml
+D	slyce-messaging/.idea/libraries/javawriter_2_1_1.xml
+D	slyce-messaging/.idea/libraries/javax_annotation_api_1_2.xml
+D	slyce-messaging/.idea/libraries/javax_inject_1.xml
+D	slyce-messaging/.idea/libraries/jsr305_2_0_1.xml
+D	slyce-messaging/.idea/libraries/junit_4_12.xml
+D	slyce-messaging/.idea/libraries/multidex_1_0_1.xml
+D	slyce-messaging/.idea/libraries/multidex_instrumentation_1_0_1.xml
+D	slyce-messaging/.idea/libraries/percent_24_1_1.xml
+D	slyce-messaging/.idea/libraries/recyclerview_v7_24_1_1.xml
+D	slyce-messaging/.idea/libraries/roundedimageview_2_2_1.xml
+D	slyce-messaging/.idea/libraries/rules_0_5.xml
+D	slyce-messaging/.idea/libraries/runner_0_5.xml
+D	slyce-messaging/.idea/libraries/support_annotations_24_1_1.xml
+D	slyce-messaging/.idea/libraries/support_v13_24_1_1.xml
+D	slyce-messaging/.idea/libraries/support_v4_24_1_1.xml
+D	slyce-messaging/.idea/libraries/support_vector_drawable_24_1_1.xml
+D	slyce-messaging/.idea/misc.xml
+D	slyce-messaging/.idea/modules.xml
+D	slyce-messaging/.idea/vcs.xml
+D	slyce-messaging/.idea/workspace.xml
+D	slyce-messaging/gradle/wrapper/gradle-wrapper.jar
+D	slyce-messaging/gradle/wrapper/gradle-wrapper.properties
+D	slyce-messaging/gradlew
+D	slyce-messaging/gradlew.bat
+
+b78e991;Fixed bug InvalidViewHolderPosiition
+A	HelloAndroid/.idea/workspace.xml
+M	local.properties
+A	slyce-messaging/.idea/compiler.xml
+A	slyce-messaging/.idea/copyright/profiles_settings.xml
+A	slyce-messaging/.idea/encodings.xml
+A	slyce-messaging/.idea/gradle.xml
+A	slyce-messaging/.idea/libraries/accessibility_test_framework_2_0.xml
+A	slyce-messaging/.idea/libraries/animated_vector_drawable_24_1_1.xml
+A	slyce-messaging/.idea/libraries/appcompat_v7_24_1_1.xml
+A	slyce-messaging/.idea/libraries/cam2_0_6_2.xml
+A	slyce-messaging/.idea/libraries/circleimageview_2_1_0.xml
+A	slyce-messaging/.idea/libraries/design_24_1_1.xml
+A	slyce-messaging/.idea/libraries/espresso_contrib_2_2_2.xml
+A	slyce-messaging/.idea/libraries/espresso_core_2_2_2.xml
+A	slyce-messaging/.idea/libraries/espresso_idling_resource_2_2_2.xml
+A	slyce-messaging/.idea/libraries/eventbus_2_4_0.xml
+A	slyce-messaging/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml
+A	slyce-messaging/.idea/libraries/fab_1_6_2.xml
+A	slyce-messaging/.idea/libraries/glide_3_7_0.xml
+A	slyce-messaging/.idea/libraries/hamcrest_core_1_3.xml
+A	slyce-messaging/.idea/libraries/hamcrest_integration_1_3.xml
+A	slyce-messaging/.idea/libraries/hamcrest_library_1_3.xml
+A	slyce-messaging/.idea/libraries/javawriter_2_1_1.xml
+A	slyce-messaging/.idea/libraries/javax_annotation_api_1_2.xml
+A	slyce-messaging/.idea/libraries/javax_inject_1.xml
+A	slyce-messaging/.idea/libraries/jsr305_2_0_1.xml
+A	slyce-messaging/.idea/libraries/junit_4_12.xml
+A	slyce-messaging/.idea/libraries/multidex_1_0_1.xml
+A	slyce-messaging/.idea/libraries/multidex_instrumentation_1_0_1.xml
+A	slyce-messaging/.idea/libraries/percent_24_1_1.xml
+A	slyce-messaging/.idea/libraries/recyclerview_v7_24_1_1.xml
+A	slyce-messaging/.idea/libraries/roundedimageview_2_2_1.xml
+A	slyce-messaging/.idea/libraries/rules_0_5.xml
+A	slyce-messaging/.idea/libraries/runner_0_5.xml
+A	slyce-messaging/.idea/libraries/support_annotations_24_1_1.xml
+A	slyce-messaging/.idea/libraries/support_v13_24_1_1.xml
+A	slyce-messaging/.idea/libraries/support_v4_24_1_1.xml
+A	slyce-messaging/.idea/libraries/support_vector_drawable_24_1_1.xml
+A	slyce-messaging/.idea/misc.xml
+A	slyce-messaging/.idea/modules.xml
+A	slyce-messaging/.idea/vcs.xml
+A	slyce-messaging/.idea/workspace.xml
+A	slyce-messaging/gradle/wrapper/gradle-wrapper.jar
+A	slyce-messaging/gradle/wrapper/gradle-wrapper.properties
+A	slyce-messaging/gradlew
+A	slyce-messaging/gradlew.bat
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/Refresher.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/ReplaceMessagesTask.java
+
+466a8bf;Update README.md
+M	README.md
+
+f5ca9c1;Merge pull request #16 from Slyce-Inc/dev
+d19ed37;Revert improperly commited files
+D	slyce-messaging/.idea/.name
+D	slyce-messaging/.idea/compiler.xml
+D	slyce-messaging/.idea/copyright/profiles_settings.xml
+D	slyce-messaging/.idea/encodings.xml
+D	slyce-messaging/.idea/gradle.xml
+D	slyce-messaging/.idea/libraries/accessibility_test_framework_2_0.xml
+D	slyce-messaging/.idea/libraries/android_android_24.xml
+D	slyce-messaging/.idea/libraries/animated_vector_drawable_24_1_1.xml
+D	slyce-messaging/.idea/libraries/appcompat_v7_24_1_1.xml
+D	slyce-messaging/.idea/libraries/cam2_0_6_2.xml
+D	slyce-messaging/.idea/libraries/circleimageview_2_1_0.xml
+D	slyce-messaging/.idea/libraries/design_24_1_1.xml
+D	slyce-messaging/.idea/libraries/espresso_contrib_2_2_2.xml
+D	slyce-messaging/.idea/libraries/espresso_core_2_2_2.xml
+D	slyce-messaging/.idea/libraries/espresso_idling_resource_2_2_2.xml
+D	slyce-messaging/.idea/libraries/eventbus_2_4_0.xml
+D	slyce-messaging/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml
+D	slyce-messaging/.idea/libraries/fab_1_6_2.xml
+D	slyce-messaging/.idea/libraries/glide_3_7_0.xml
+D	slyce-messaging/.idea/libraries/hamcrest_core_1_3.xml
+D	slyce-messaging/.idea/libraries/hamcrest_integration_1_3.xml
+D	slyce-messaging/.idea/libraries/hamcrest_library_1_3.xml
+D	slyce-messaging/.idea/libraries/javawriter_2_1_1.xml
+D	slyce-messaging/.idea/libraries/javax_annotation_api_1_2.xml
+D	slyce-messaging/.idea/libraries/javax_inject_1.xml
+D	slyce-messaging/.idea/libraries/jsr305_2_0_1.xml
+D	slyce-messaging/.idea/libraries/junit_4_12.xml
+D	slyce-messaging/.idea/libraries/multidex_1_0_1.xml
+D	slyce-messaging/.idea/libraries/multidex_instrumentation_1_0_1.xml
+D	slyce-messaging/.idea/libraries/percent_24_1_1.xml
+D	slyce-messaging/.idea/libraries/recyclerview_v7_24_1_1.xml
+D	slyce-messaging/.idea/libraries/roundedimageview_2_2_1.xml
+D	slyce-messaging/.idea/libraries/rules_0_5.xml
+D	slyce-messaging/.idea/libraries/runner_0_5.xml
+D	slyce-messaging/.idea/libraries/support_annotations_24_1_1.xml
+D	slyce-messaging/.idea/libraries/support_v13_24_1_1.xml
+D	slyce-messaging/.idea/libraries/support_v4_24_1_1.xml
+D	slyce-messaging/.idea/libraries/support_vector_drawable_24_1_1.xml
+D	slyce-messaging/.idea/misc.xml
+D	slyce-messaging/.idea/modules.xml
+D	slyce-messaging/.idea/runConfigurations.xml
+D	slyce-messaging/.idea/vcs.xml
+D	slyce-messaging/.idea/workspace.xml
+D	slyce-messaging/gradle/wrapper/gradle-wrapper.jar
+D	slyce-messaging/gradle/wrapper/gradle-wrapper.properties
+D	slyce-messaging/gradlew
+D	slyce-messaging/gradlew.bat
+
+093df29;Update README.md
+M	README.md
+
+497b95e;Merge pull request #14 from Slyce-Inc/dev
+053edb8;made loadMoreMessages() async
+M	local.properties
+A	slyce-messaging/.idea/.name
+A	slyce-messaging/.idea/compiler.xml
+A	slyce-messaging/.idea/copyright/profiles_settings.xml
+A	slyce-messaging/.idea/encodings.xml
+A	slyce-messaging/.idea/gradle.xml
+A	slyce-messaging/.idea/libraries/accessibility_test_framework_2_0.xml
+A	slyce-messaging/.idea/libraries/android_android_24.xml
+A	slyce-messaging/.idea/libraries/animated_vector_drawable_24_1_1.xml
+A	slyce-messaging/.idea/libraries/appcompat_v7_24_1_1.xml
+A	slyce-messaging/.idea/libraries/cam2_0_6_2.xml
+A	slyce-messaging/.idea/libraries/circleimageview_2_1_0.xml
+A	slyce-messaging/.idea/libraries/design_24_1_1.xml
+A	slyce-messaging/.idea/libraries/espresso_contrib_2_2_2.xml
+A	slyce-messaging/.idea/libraries/espresso_core_2_2_2.xml
+A	slyce-messaging/.idea/libraries/espresso_idling_resource_2_2_2.xml
+A	slyce-messaging/.idea/libraries/eventbus_2_4_0.xml
+A	slyce-messaging/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml
+A	slyce-messaging/.idea/libraries/fab_1_6_2.xml
+A	slyce-messaging/.idea/libraries/glide_3_7_0.xml
+A	slyce-messaging/.idea/libraries/hamcrest_core_1_3.xml
+A	slyce-messaging/.idea/libraries/hamcrest_integration_1_3.xml
+A	slyce-messaging/.idea/libraries/hamcrest_library_1_3.xml
+A	slyce-messaging/.idea/libraries/javawriter_2_1_1.xml
+A	slyce-messaging/.idea/libraries/javax_annotation_api_1_2.xml
+A	slyce-messaging/.idea/libraries/javax_inject_1.xml
+A	slyce-messaging/.idea/libraries/jsr305_2_0_1.xml
+A	slyce-messaging/.idea/libraries/junit_4_12.xml
+A	slyce-messaging/.idea/libraries/multidex_1_0_1.xml
+A	slyce-messaging/.idea/libraries/multidex_instrumentation_1_0_1.xml
+A	slyce-messaging/.idea/libraries/percent_24_1_1.xml
+A	slyce-messaging/.idea/libraries/recyclerview_v7_24_1_1.xml
+A	slyce-messaging/.idea/libraries/roundedimageview_2_2_1.xml
+A	slyce-messaging/.idea/libraries/rules_0_5.xml
+A	slyce-messaging/.idea/libraries/runner_0_5.xml
+A	slyce-messaging/.idea/libraries/support_annotations_24_1_1.xml
+A	slyce-messaging/.idea/libraries/support_v13_24_1_1.xml
+A	slyce-messaging/.idea/libraries/support_v4_24_1_1.xml
+A	slyce-messaging/.idea/libraries/support_vector_drawable_24_1_1.xml
+A	slyce-messaging/.idea/misc.xml
+A	slyce-messaging/.idea/modules.xml
+A	slyce-messaging/.idea/runConfigurations.xml
+A	slyce-messaging/.idea/vcs.xml
+A	slyce-messaging/.idea/workspace.xml
+A	slyce-messaging/gradle/wrapper/gradle-wrapper.jar
+A	slyce-messaging/gradle/wrapper/gradle-wrapper.properties
+A	slyce-messaging/gradlew
+A	slyce-messaging/gradlew.bat
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+375db75;Merge pull request #13 from nisrulz/update-project
+734bbfa;[*] updated the support library to latest v24.1.1
+M	build.gradle
+
+216ec33;[*] updates - added support for api 24 - updated the buildToolVersion to v24.0.1 - updated all dependencies to latest version - cleaned up the build.gradle to use external variables to better manage all dependencies and their versions from one place. - updated gradle-wrapper to v2.13
+M	build.gradle
+M	example/build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	slyce-messaging/build.gradle
+
+e2838dc;Merge pull request #11 from snipsnap/add-jsq-to-readme
+7a5314d;add links to JSQ repos
+M	README.md
+
+266b7f4;Update README.md
+M	README.md
+
+678658e;more tests
+R069	example/src/androidTest/java/it/snipsnap/slyce_messaging_example/SlyceMessagingTests.java	example/src/androidTest/java/it/snipsnap/slyce_messaging_example/SlyceMessagingUITests.java
+
+90a3c07;cleanup
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/ReplaceMessagesTask.java
+
+acdb942;basic testing
+M	example/build.gradle
+D	example/src/androidTest/java/it/snipsnap/slyce_messaging_example/FirstMessagesLoadTest.java
+A	example/src/androidTest/java/it/snipsnap/slyce_messaging_example/SlyceMessagingTests.java
+M	example/src/main/AndroidManifest.xml
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+
+96568b4;snackbar minor bugs fixed + added example in app module
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/AddNewMessageTask.java
+M	slyce-messaging/src/main/res/layout/fragment_slyce_messaging.xml
+M	slyce-messaging/src/main/res/values/colors.xml
+M	slyce-messaging/src/main/res/values/styles.xml
+
+ddbd1e6;Merge branch 'master' of https://github.com/snipsnap/SlyceMessaging
+595f07b;fixed error with spinner where it sometimes wouldn't be removed properly if setMoreMessagesExist(false) is called from the LoadMoreMessages listener.
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/ReplaceMessagesTask.java
+
+d9a72e1;Merge pull request #9 from snipsnap/clean-out-files
+0cab546;re-add default android stuff to .gitignore, keeping the recent additions.
+M	.gitignore
+
+60d5306;Merge pull request #8 from snipsnap/keep-these-images-private-to-the-app
+52b7ccb;Merge pull request #10 from snipsnap/add-image-screenshot-to-readme
+2787a95;I'd rather not mess up the download link :)
+M	README.md
+
+0dcc786;Github markdown no longer supports resizing images with markdown.
+M	README.md
+M	sample-photos/chat-with-image.png
+M	sample-photos/example.png
+
+804a03a;use relative links in the README
+M	README.md
+
+8e58bde;Add a sample image with an image message to the README
+M	README.md
+A	sample-photos/chat-with-image.png
+R100	ExamplePhoto.png	sample-photos/example.png
+
+be5e080;Update gitignore and remove extra files that don't need to be shared.
+D	.DS_Store
+M	.gitignore
+D	.idea/.name
+D	.idea/compiler.xml
+D	.idea/copyright/profiles_settings.xml
+D	.idea/encodings.xml
+D	.idea/gradle.xml
+D	.idea/misc.xml
+D	.idea/modules.xml
+D	.idea/runConfigurations.xml
+D	.idea/vcs.xml
+
+162e94d;Put the images in a directory that's private to the app. I don't think we generally want to be creating a public SlyceMessaging directory on people's phones.
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+977d27c;removed System.out calls
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/ScrollUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/image/FixedAspectRatioImageView.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/image/FixedAspectRatioRoundedImageView.java
+
+0643a98;Merge branch 'master' of https://github.com/snipsnap/SlyceMessaging
+8c3b16a;fixed send new message scrolling issue
+M	slyce-messaging/build.gradle
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/ScrollUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/AddNewMessageTask.java
+
+e33c9a5;Update README.md
+M	README.md
+
+6f534ad;Merge branch 'master' of https://github.com/snipsnap/SlyceMessaging
+bef85c2;mild refactoring
+M	example/build.gradle
+M	example/src/androidTest/java/it/snipsnap/slyce_messaging_example/ApplicationTest.java
+A	example/src/androidTest/java/it/snipsnap/slyce_messaging_example/FirstMessagesLoadTest.java
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	example/src/main/res/layout/activity_main.xml
+M	slyce-messaging/build.gradle
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/externalUser/media/MessageExternalUserMediaViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/media/MessageInternalUserViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaViewHolder.java
+R087	slyce-messaging/src/main/java/it/slyce/messaging/view/image/PicassoRoundedImageView.java	slyce-messaging/src/main/java/it/slyce/messaging/view/image/GlideRoundedImageView.java
+M	slyce-messaging/src/main/res/layout/fragment_slyce_messaging.xml
+M	slyce-messaging/src/main/res/layout/item_message_external_media.xml
+M	slyce-messaging/src/main/res/layout/item_message_user_media.xml
+
+29eea5c;Merge pull request #7 from snipsnap/edits
+99885f9;edits: Minor fix so that media message is not displayed if user backs out of adding an image.
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+8b38988;edits: Cleaned up `fragment_slyce_messaging.xml`.
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/res/layout/fragment_slyce_messaging.xml
+
+8bf996d;Add a note for developers in the README about the local.properties file.
+M	README.md
+
+8029b4b;remove duplicate
+M	.gitignore
+
+0dcdf0d;CI CONFIG: Add Circle CI's local.properties
+A	local.properties
+
+dfe206d;.gitignore updated
+M	.gitignore
+
+0d918d0;gitignore issues
+D	local.properties
+M	slyce-messaging/src/test/java/it/slyce/messaging/MessageUtilsTest.java
+
+1f9422f;Use listener for loading more messages
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/image/PicassoRoundedImageView.java
+
+12eda0f;scroll to bottom on user's own messsage
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/ScrollUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/AddNewMessageTask.java
+
+3e72494;Proper name for folder that images save to
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+6db2113;Merge branch 'master' of https://github.com/snipsnap/SlyceMessaging
+702dd9b;removed picasso for glide
+M	slyce-messaging/build.gradle
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/ViewImageActivity.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/spinner/SpinnerItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/DateUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MediaUtils.java
+D	slyce-messaging/src/main/java/it/slyce/messaging/view/image/BottomCropImageView.java
+D	slyce-messaging/src/main/java/it/slyce/messaging/view/image/PicassoImageView.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/image/PicassoRoundedImageView.java
+D	slyce-messaging/src/main/java/it/slyce/messaging/view/image/ScaleImageView.java
+
+be65369;Solved issue with images not loading: Use glide instead of picasso
+A	.DS_Store
+M	.idea/modules.xml
+A	slyce-messaging/.DS_Store
+M	slyce-messaging/build.gradle
+M	slyce-messaging/src/main/AndroidManifest.xml
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/externalUser/text/MessageExternalUserTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/text/MessageInternalUserTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/DateUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/AddNewMessageTask.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/image/FixedAspectRatioImageView.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/image/FixedAspectRatioRoundedImageView.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/image/PicassoRoundedImageView.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/image/ScaleImageView.java
+
+ad5cc4e;add circle token to status badge
+M	README.md
+
+f98ec68;add Circle CI status badge for build status
+M	README.md
+
+3131a05;Merge pull request #6 from snipsnap/more-refactoring
+e295fe3;CI CONFIG: this test results collection works best.
+M	circle.yml
+
+911951e;CI CONFIG: better copy test results
+M	circle.yml
+
+f866a53;CI CONFIG: put the environment settings back because they seem to be needed.
+M	circle.yml
+
+df177f9;CI CONFIG: get test reports logged and simplify config.
+M	circle.yml
+
+9d2c996;CI CONFIG: try to get support libraries downloaded again
+M	circle.yml
+
+27f00eb;CI CONFIG: try to get support libraries downloaded
+M	circle.yml
+
+14d113e;add local.properties for circle ci config.
+A	local.properties
+
+699c5b3;CI SETUP: get some files created.
+M	circle.yml
+
+0a7ec12;Add circle ci config
+A	circle.yml
+
+218678b;Merge branch 'master' of github.com:snipsnap/SlyceMessaging into more-refactoring
+912e150;Add test for MessageUtils ...set first or last method.
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/AddNewMessageTask.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/ReplaceMessagesTask.java
+D	slyce-messaging/src/test/java/it/slyce/messaging/ExampleUnitTest.java
+A	slyce-messaging/src/test/java/it/slyce/messaging/MessageUtilsTest.java
+
+c04e281;Merge pull request #5 from snipsnap/more-refactoring
+01cc549;Revert "REFACTOR: simplify iteration"
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+91240a1;REFACTOR: No need to store an extra copy of the message--it's already there in the parent class
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+
+4ec9481;REFACTOR: rename boolean variables/methods to be more boolean sounding
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+
+16977eb;REFACTOR: extracted methods to make this code easier to understand at a glance
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+
+c7826a8;REFACTOR: future-proof the code with some curlies, even for single line if blocks.
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/ScrollUtils.java
+
+d678f0f;REFACTOR: Remove unused method in MessageItem.
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/spinner/SpinnerItem.java
+
+ef7b2f8;REFACTOR: future-proof the code with some curlies, even for single line if blocks.
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+338ea04;REFACTOR: simplify iteration
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+abc8121;simplify boolean return
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+57c9780;REFACTOR: optimize imports
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+b19b9e6;Merge pull request #4 from snipsnap/removing-unused-code-and-renaming
+2d91f0d;Rename project in Android Studio for the library
+M	.idea/.name
+M	.idea/modules.xml
+M	.idea/vcs.xml
+
+16ced66;REFACTOR: Rename message item types to more accurately reflect what they are: incoming and outgoing text and images.
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItemType.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+
+469fc83;REFACTOR: We aren't listening to clicks on message items, so there's no need for a click listener
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItem.java
+D	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItemClickType.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/spinner/SpinnerItem.java
+M	slyce-messaging/src/main/res/values/tags.xml
+
+1f32fd5;Documentation error
+M	README.md
+
+564df45;documentation error
+M	README.md
+
+d53f426;Update README to reflect 1.0.1
+M	README.md
+
+f488d21;More smooth animations
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+fcfef8a;cleanup
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+
+b799b68;fixed loadMoreMessages bugs
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/MediaMessage.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/Message.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/TextMessage.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MediaUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/AddNewMessageTask.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/ReplaceMessagesTask.java
+
+2338a95;cleanup
+M	.idea/misc.xml
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+R079	slyce-messaging/src/main/java/it/slyce/messaging/listeners/ShouldLoadMoreMessagesListener.java	slyce-messaging/src/main/java/it/slyce/messaging/listeners/LoadMoreMessagesListener.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+R079	slyce-messaging/src/main/java/it/slyce/messaging/utils/Utils.java	slyce-messaging/src/main/java/it/slyce/messaging/utils/DateUtils.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/utils/MediaUtils.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/utils/Refresher.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/utils/ScrollUtils.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/AddNewMessageTask.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/ReplaceMessagesTask.java
+
+537d23b;Merge branch 'master' of https://github.com/snipsnap/SlyceMessaging
+7384298;refactoring
+M	.idea/misc.xml
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/listeners/ShouldLoadMoreMessagesListener.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/MediaMessage.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/TextMessage.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+R053	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/scout/media/MessageScoutMediaItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/externalUser/media/MessageExternalUserMediaItem.java
+R080	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/scout/media/MessageScoutMediaViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/externalUser/media/MessageExternalUserMediaViewHolder.java
+R053	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/scout/text/MessageScoutTextItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/externalUser/text/MessageExternalUserTextItem.java
+R087	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/scout/text/MessageScoutTextViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/externalUser/text/MessageExternalUserTextViewHolder.java
+R053	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/user/media/MessageUserMediaItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/media/MessageInternalUserMediaItem.java
+R080	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/user/media/MessageUserMediaViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/media/MessageInternalUserViewHolder.java
+R053	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/user/text/MessageUserTextItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/text/MessageInternalUserTextItem.java
+R087	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/user/text/MessageUserTextViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/text/MessageInternalUserTextViewHolder.java
+
+6d6b923;Update README.md
+M	README.md
+
+12223a4;Merge branch 'master' of https://github.com/snipsnap/SlyceMessaging
+491320c;cleanup
+M	README.md
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	example/src/main/res/layout/activity_main.xml
+R090	slyce-messaging/src/androidTest/java/it/slyce/slyce_messaging/ApplicationTest.java	slyce-messaging/src/androidTest/java/it/slyce/messaging/ApplicationTest.java
+M	slyce-messaging/src/main/AndroidManifest.xml
+R100	slyce-messaging/src/main/java/it/slyce/slyce_messaging/.DS_Store	slyce-messaging/src/main/java/it/slyce/messaging/.DS_Store
+R094	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/SlyceMessagingFragment.java	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+R094	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/ViewImageActivity.java	slyce-messaging/src/main/java/it/slyce/messaging/ViewImageActivity.java
+R060	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/listeners/ShouldLoadMoreMessagesListener.java	slyce-messaging/src/main/java/it/slyce/messaging/listeners/ShouldLoadMoreMessagesListener.java
+R074	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/listeners/UserClicksAvatarPictureListener.java	slyce-messaging/src/main/java/it/slyce/messaging/listeners/UserClicksAvatarPictureListener.java
+R080	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/listeners/UserSendsMessageListener.java	slyce-messaging/src/main/java/it/slyce/messaging/listeners/UserSendsMessageListener.java
+R062	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/MediaMessage.java	slyce-messaging/src/main/java/it/slyce/messaging/message/MediaMessage.java
+R090	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/Message.java	slyce-messaging/src/main/java/it/slyce/messaging/message/Message.java
+R068	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/MessageSource.java	slyce-messaging/src/main/java/it/slyce/messaging/message/MessageSource.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/message/SpinnerMessage.java
+R055	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/TextMessage.java	slyce-messaging/src/main/java/it/slyce/messaging/message/TextMessage.java
+R086	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/MessageItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItem.java
+R072	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/MessageItemClickType.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItemClickType.java
+R077	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/MessageItemType.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItemType.java
+R081	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/MessageRecyclerAdapter.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+R082	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/MessageViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageViewHolder.java
+R086	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/master/media/MessageMediaItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+R051	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/master/media/MessageMediaViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaViewHolder.java
+R089	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/master/text/MessageTextItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+R067	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/master/text/MessageTextViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextViewHolder.java
+R053	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/scout/media/MessageScoutMediaItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/scout/media/MessageScoutMediaItem.java
+R072	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/scout/media/MessageScoutMediaViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/scout/media/MessageScoutMediaViewHolder.java
+R053	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/scout/text/MessageScoutTextItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/scout/text/MessageScoutTextItem.java
+R085	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/scout/text/MessageScoutTextViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/scout/text/MessageScoutTextViewHolder.java
+R064	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/spinner/SpinnerItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/spinner/SpinnerItem.java
+R068	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/spinner/SpinnerViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/spinner/SpinnerViewHolder.java
+R053	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/user/media/MessageUserMediaItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/user/media/MessageUserMediaItem.java
+R072	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/user/media/MessageUserMediaViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/user/media/MessageUserMediaViewHolder.java
+R053	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/user/text/MessageUserTextItem.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/user/text/MessageUserTextItem.java
+R085	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/user/text/MessageUserTextViewHolder.java	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/user/text/MessageUserTextViewHolder.java
+R078	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/utils/CustomSettings.java	slyce-messaging/src/main/java/it/slyce/messaging/utils/CustomSettings.java
+R098	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/utils/Utils.java	slyce-messaging/src/main/java/it/slyce/messaging/utils/Utils.java
+R092	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/ViewUtils.java	slyce-messaging/src/main/java/it/slyce/messaging/view/ViewUtils.java
+R098	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/BottomCropImageView.java	slyce-messaging/src/main/java/it/slyce/messaging/view/image/BottomCropImageView.java
+R097	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/FixedAspectRatioImageView.java	slyce-messaging/src/main/java/it/slyce/messaging/view/image/FixedAspectRatioImageView.java
+R097	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/FixedAspectRatioRoundedImageView.java	slyce-messaging/src/main/java/it/slyce/messaging/view/image/FixedAspectRatioRoundedImageView.java
+R094	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/PicassoImageView.java	slyce-messaging/src/main/java/it/slyce/messaging/view/image/PicassoImageView.java
+R094	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/PicassoRoundedImageView.java	slyce-messaging/src/main/java/it/slyce/messaging/view/image/PicassoRoundedImageView.java
+R098	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/ScaleImageView.java	slyce-messaging/src/main/java/it/slyce/messaging/view/image/ScaleImageView.java
+R095	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/text/FontEditText.java	slyce-messaging/src/main/java/it/slyce/messaging/view/text/FontEditText.java
+R096	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/text/FontTextView.java	slyce-messaging/src/main/java/it/slyce/messaging/view/text/FontTextView.java
+D	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/SpinnerMessage.java
+M	slyce-messaging/src/main/res/layout/activity_example.xml
+M	slyce-messaging/src/main/res/layout/activity_view_image.xml
+M	slyce-messaging/src/main/res/layout/content_example.xml
+M	slyce-messaging/src/main/res/layout/fragment_slyce_messaging.xml
+M	slyce-messaging/src/main/res/layout/item_message_external_media.xml
+M	slyce-messaging/src/main/res/layout/item_message_external_text.xml
+M	slyce-messaging/src/main/res/layout/item_message_user_media.xml
+M	slyce-messaging/src/main/res/layout/item_message_user_text.xml
+R088	slyce-messaging/src/test/java/it/slyce/slyce_messaging/ExampleUnitTest.java	slyce-messaging/src/test/java/it/slyce/messaging/ExampleUnitTest.java
+
+2ef0247;Update README.md
+M	README.md
+
+050237f;Fix image URL
+M	README.md
+
+b4fe071;initial commit
+A	.gitignore
+A	.idea/.name
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/encodings.xml
+A	.idea/gradle.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/runConfigurations.xml
+A	.idea/vcs.xml
+A	ExamplePhoto.png
+A	LICENSE
+A	README.md
+A	build.gradle
+A	example/.gitignore
+A	example/build.gradle
+A	example/proguard-rules.pro
+A	example/src/androidTest/java/it/snipsnap/slyce_messaging_example/ApplicationTest.java
+A	example/src/main/AndroidManifest.xml
+A	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+A	example/src/main/res/layout/activity_main.xml
+A	example/src/main/res/mipmap-hdpi/ic_launcher.png
+A	example/src/main/res/mipmap-mdpi/ic_launcher.png
+A	example/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	example/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	example/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	example/src/main/res/values-w820dp/dimens.xml
+A	example/src/main/res/values/colors.xml
+A	example/src/main/res/values/dimens.xml
+A	example/src/main/res/values/strings.xml
+A	example/src/main/res/values/styles.xml
+A	example/src/test/java/it/snipsnap/slyce_messaging_example/ExampleUnitTest.java
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle
+A	slyce-messaging/.gitignore
+A	slyce-messaging/build.gradle
+A	slyce-messaging/libs/.DS_Store
+A	slyce-messaging/src/.DS_Store
+A	slyce-messaging/src/androidTest/java/it/slyce/slyce_messaging/ApplicationTest.java
+A	slyce-messaging/src/main/AndroidManifest.xml
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/.DS_Store
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/SlyceMessagingFragment.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/ViewImageActivity.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/listeners/ShouldLoadMoreMessagesListener.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/listeners/UserClicksAvatarPictureListener.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/listeners/UserSendsMessageListener.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/MediaMessage.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/Message.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/MessageSource.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/SpinnerMessage.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/TextMessage.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/MessageItem.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/MessageItemClickType.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/MessageItemType.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/MessageRecyclerAdapter.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/MessageViewHolder.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/master/media/MessageMediaItem.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/master/media/MessageMediaViewHolder.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/master/text/MessageTextItem.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/master/text/MessageTextViewHolder.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/scout/media/MessageScoutMediaItem.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/scout/media/MessageScoutMediaViewHolder.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/scout/text/MessageScoutTextItem.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/scout/text/MessageScoutTextViewHolder.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/spinner/SpinnerItem.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/spinner/SpinnerViewHolder.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/user/media/MessageUserMediaItem.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/user/media/MessageUserMediaViewHolder.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/user/text/MessageUserTextItem.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/message/messageItem/user/text/MessageUserTextViewHolder.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/utils/CustomSettings.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/messenger/utils/Utils.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/ViewUtils.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/BottomCropImageView.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/FixedAspectRatioImageView.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/FixedAspectRatioRoundedImageView.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/PicassoImageView.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/PicassoRoundedImageView.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/image/ScaleImageView.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/text/FontEditText.java
+A	slyce-messaging/src/main/java/it/slyce/slyce_messaging/view/text/FontTextView.java
+A	slyce-messaging/src/main/res/drawable/shape_oval_navy.xml
+A	slyce-messaging/src/main/res/drawable/shape_oval_white.xml
+A	slyce-messaging/src/main/res/drawable/shape_rectangle_gray.xml
+A	slyce-messaging/src/main/res/drawable/shape_rounded_rectangle_gray.xml
+A	slyce-messaging/src/main/res/drawable/shape_rounded_rectangle_white.xml
+A	slyce-messaging/src/main/res/drawable/vd_ic_scout_carrot.xml
+A	slyce-messaging/src/main/res/drawable/vd_ic_user_carrot.xml
+A	slyce-messaging/src/main/res/layout/activity_example.xml
+A	slyce-messaging/src/main/res/layout/activity_view_image.xml
+A	slyce-messaging/src/main/res/layout/content_example.xml
+A	slyce-messaging/src/main/res/layout/fragment_slyce_messaging.xml
+A	slyce-messaging/src/main/res/layout/item_message_external_media.xml
+A	slyce-messaging/src/main/res/layout/item_message_external_text.xml
+A	slyce-messaging/src/main/res/layout/item_message_user_media.xml
+A	slyce-messaging/src/main/res/layout/item_message_user_text.xml
+A	slyce-messaging/src/main/res/layout/item_spinner.xml
+A	slyce-messaging/src/main/res/mipmap-hdpi/ic_camera_photo.png
+A	slyce-messaging/src/main/res/mipmap-hdpi/ic_camera_photo_black.png
+A	slyce-messaging/src/main/res/mipmap-hdpi/ic_launcher.png
+A	slyce-messaging/src/main/res/mipmap-hdpi/ic_send.png
+A	slyce-messaging/src/main/res/mipmap-mdpi/ic_camera_photo.png
+A	slyce-messaging/src/main/res/mipmap-mdpi/ic_camera_photo_black.png
+A	slyce-messaging/src/main/res/mipmap-mdpi/ic_launcher.png
+A	slyce-messaging/src/main/res/mipmap-mdpi/ic_send.png
+A	slyce-messaging/src/main/res/mipmap-xhdpi/ic_camera_photo.png
+A	slyce-messaging/src/main/res/mipmap-xhdpi/ic_camera_photo_black.png
+A	slyce-messaging/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	slyce-messaging/src/main/res/mipmap-xhdpi/ic_send.png
+A	slyce-messaging/src/main/res/mipmap-xxhdpi/ic_camera_photo.png
+A	slyce-messaging/src/main/res/mipmap-xxhdpi/ic_camera_photo_black.png
+A	slyce-messaging/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	slyce-messaging/src/main/res/mipmap-xxhdpi/ic_send.png
+A	slyce-messaging/src/main/res/mipmap-xxxhdpi/ic_camera_photo.png
+A	slyce-messaging/src/main/res/mipmap-xxxhdpi/ic_camera_photo_black.png
+A	slyce-messaging/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	slyce-messaging/src/main/res/mipmap-xxxhdpi/ic_send.png
+A	slyce-messaging/src/main/res/values-v21/attrs.xml
+A	slyce-messaging/src/main/res/values-v21/dimens.xml
+A	slyce-messaging/src/main/res/values-v21/styles.xml
+A	slyce-messaging/src/main/res/values-w820dp/dimens.xml
+A	slyce-messaging/src/main/res/values/attrs.xml
+A	slyce-messaging/src/main/res/values/colors.xml
+A	slyce-messaging/src/main/res/values/dimens.xml
+A	slyce-messaging/src/main/res/values/strings.xml
+A	slyce-messaging/src/main/res/values/styles.xml
+A	slyce-messaging/src/main/res/values/tags.xml
+A	slyce-messaging/src/test/java/it/slyce/slyce_messaging/ExampleUnitTest.java

@@ -1,0 +1,662 @@
+b0f4189;Disable BuildConfig generation (#109)
+M	sqlite-android/build.gradle
+
+7dc8d72;Fix SupportSQLiteDatabase.query overload call (#110)
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+
+cc5b547;Handle null CancellationSignal argument in SupportSQLiteDatabase.query
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+
+09817ce;Resolve #94 Compile with ENABLE_FTS5 flags
+M	sqlite-android/src/main/jni/sqlite/Android.mk
+
+41af964;Resolve #103 error logged when creating database file in existing directory (#104)
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+
+96364f8;Update version to 3.28.0
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+33c6b97;Resolve #101 Fix OperationCanceledException package path (#102)
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteCommon.cpp
+
+ca9409c;Update version to 3.27.2 (#96)
+M	CHANGELOG.md
+M	build.gradle
+M	sqlite-android/build.gradle
+
+2209ef4;Update version to 3.27.1  (#92)
+M	CHANGELOG.md
+M	build.gradle
+M	sqlite-android/build.gradle
+
+8c5a893;Update dependencies (#91)
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	sqlite-android/build.gradle
+
+6388a4d;Update version to 3.26.0 (#88)
+M	CHANGELOG.md
+M	README.md
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	sqlite-android/build.gradle
+M	sqlite-android/src/androidTest/java/io/requery/android/database/CursorWindowTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseCursorTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseErrorHandlerTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseGeneralTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseLocaleTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseStatementTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTestSuite.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTests.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/benchmark/Benchmark.java
+
+175b498;Resolve #69 change androidx dependencies to api (#85)
+M	sqlite-android/build.gradle
+
+97ea27a;Update changelog
+M	CHANGELOG.md
+
+b8a4bd2;Update version to 3.25.3 (#83)
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+0430025;Resolve #77 SQLiteCursor handle hash collision in column name
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCursor.java
+
+da119c1;Resolve #73 Update to androidx libraries
+M	sqlite-android/build.gradle
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/RequerySQLiteOpenHelperFactory.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnection.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnectionPool.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDirectCursorDriver.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteOpenHelper.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteProgram.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteQuery.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteQueryBuilder.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteSession.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteStatement.java
+
+d38c453;Update tests to JUnit4 (#76)
+M	.travis.yml
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	sqlite-android/build.gradle
+M	sqlite-android/src/androidTest/java/io/requery/android/database/CursorWindowTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseCursorTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseErrorHandlerTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseGeneralTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseLocaleTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseStatementTest.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTestSuite.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTests.java
+
+6808374;Resolve #78 Add ndk abiFilters to build file
+M	sqlite-android/build.gradle
+
+0c617a9;Update version to 3.25.2 (#79)
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+3f0d132;Update version to 3.25.1 (#75)
+M	.gitignore
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+99cd1a3;Remove MIPS from list of platforms (#65) (#74)
+M	README.md
+
+06a3703;Resolve #65 remove now deprecated mips abi support
+M	sqlite-android/src/main/jni/Application.mk
+
+a0504ee;Update version to 3.24.0 (#68)
+M	CHANGELOG.md
+M	README.md
+M	build.gradle
+M	sqlite-android/.gitignore
+M	sqlite-android/build.gradle
+
+25db41f;Resolve #67 Only call ensureFile if OPEN_CREATE flag is set
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+
+7704227;Add validateSql function from API level 24
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteQueryBuilder.java
+
+3e14348;Switch to libc++
+M	sqlite-android/src/main/jni/Application.mk
+M	sqlite-android/src/main/jni/sqlite/Android.mk
+
+ee9aa15;Fix pre build tasks
+M	sqlite-android/build.gradle
+
+5443e4e;Add externalNativeBuild pre build tasks
+M	sqlite-android/build.gradle
+
+9218f2d;Switch to externalNativeBuild
+M	sqlite-android/build.gradle
+
+8eb2125;Travis try sdkmanager ndk-bundle
+M	.travis.yml
+
+352af45;Travis log unzip
+M	.travis.yml
+
+feaeb07;Update build tools version
+M	.travis.yml
+M	sqlite-android/build.gradle
+
+a773cf9;Update android gradle plugin
+M	build.gradle
+
+ec922ba;Update gradle wrapper
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+
+c8c2c31;Travis CI use ndk r16b
+M	.travis.yml
+
+11e2d93;Update version to 3.23.1
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+e7d7a4e;Update proguard rules for new SQLiteFunction interface (#63)
+M	sqlite-android/proguard-rules.pro
+
+2b6e160;Allow passing flags when registering Functions (#62)
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteFunction.java
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+
+f570685;Improved Function support (#61)
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseGeneralTest.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnection.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabaseConfiguration.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteFunction.java
+M	sqlite-android/src/main/jni/sqlite/Android.mk
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+A	sqlite-android/src/main/jni/sqlite/android_database_SQLiteFunction.cpp
+
+ad55027;Update version to 3.22.0 (#59)
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+8ee97e8;Add ability to configure SQLiteDatabaseConfiguration for support interfaces (#58)
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/RequerySQLiteOpenHelperFactory.java
+
+8b1e8e2;Increase CursorWindow size to match AOSP (#56)
+M	sqlite-android/src/main/java/io/requery/android/database/CursorWindow.java
+
+3070176;Add error message from sqlite3_load_extension (#53)
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+
+c2dd51f;Update android.arch.persistence:db dependency to 1.0.0 (#51)
+M	sqlite-android/build.gradle
+
+8689014;Update version to 3.21.0
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+534828d;Resolve #33 Add mips to abi list
+M	sqlite-android/src/main/jni/Application.mk
+
+12d6d3c;Update support interface dependency version
+M	sqlite-android/build.gradle
+
+10012e3;Resolve #49 Custom function local reference table overflow (#50)
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+
+d58f5eb;Implement persistence SupportSQLite* interfaces (#48)
+M	.travis.yml
+M	README.md
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	sqlite-android/build.gradle
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseGeneralTest.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/RequerySQLiteOpenHelperFactory.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteOpenHelper.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteProgram.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteStatement.java
+
+5ed4fdd;Resolve #46 Fix Cursor getString not returning null
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseGeneralTest.java
+M	sqlite-android/src/main/java/io/requery/android/database/CursorWindow.java
+M	sqlite-android/src/main/jni/sqlite/android_database_CursorWindow.cpp
+
+57ec406;Update version 3.20.1 (#44)
+M	CHANGELOG.md
+M	sqlite-android/build.gradle
+
+866fad1;Fix travis ci build
+M	.travis.yml
+
+2b396b9;Fix travis ci build
+M	.travis.yml
+
+c4a5b9c;Fix travis ci build
+M	.travis.yml
+
+6845c53;Fix travis ci build
+M	.travis.yml
+
+a022cbc;Fix travis ci build
+M	.travis.yml
+
+fdcb4e9;Update version to 3.20.0
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+0e6d40f;Update version to 3.19.3
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+e83ed25;Resolve #37 Add FTS enhanced query syntax compile flags
+M	sqlite-android/src/main/jni/sqlite/Android.mk
+
+7f1fbba;Update version to 3.19.2
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+76761c8;Update version to 3.18.0
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+d415541;Resolve #35 Heap allocate large strings
+M	sqlite-android/src/main/jni/sqlite/android_database_CursorWindow.cpp
+
+6d496de;Update version to 3.17.0
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+480a207;Update build scripts (#34)
+M	.travis.yml
+M	build.gradle
+M	sqlite-android/build.gradle
+
+86a280b;Update version to 3.16.2
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+6f2070b;Resolve #29 Support additional sqlite open flags
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnection.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+
+92e8bab;Resolve #28 Add DatabaseUtils equivalent methods where applicable
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteProgram.java
+
+24417a3;Fix build tools version
+M	sqlite-android/build.gradle
+
+1bacf4c;Update gradle wrapper, android build tools
+M	.travis.yml
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	gradlew.bat
+M	sqlite-android/build.gradle
+
+4777185;Update version to 3.16.0
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+5bd3e7a;Update version to 3.15.1
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+774c301;Update version to 3.15.0
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+d58cee4;Update build tools version
+M	sqlite-android/build.gradle
+
+5f1d667;Update build tools version
+M	.travis.yml
+
+f8edf88;Update version to 3.14.2
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+8b7081f;Resolve #27 Remove unnecessary WAL disable when using attach database
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+
+a182edb;Update version to 3.14.1
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+94c279e;Update readme
+M	README.md
+
+bdc3865;Update version to 3.14.0
+M	CHANGELOG.md
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	sqlite-android/build.gradle
+
+79d23a1;Resolve #18 Add return value to CustomFunction
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseGeneralTest.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCustomFunction.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+
+7b8c98c;Update test dependencies
+M	sqlite-android/build.gradle
+
+3d3d396;Update selectionArgs to Object[]
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+
+52b7054;Update selectionArgs test as nulls are allowed in arguments
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseGeneralTest.java
+
+ef94a3a;Resolve #25 rawQuery accepts an Object[] array for bind arguments
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCursorDriver.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDirectCursorDriver.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteQuery.java
+
+fb6823c;Use java 8 on ci
+M	.travis.yml
+
+7308174;Update build tools to sdk 24
+M	.travis.yml
+
+c68fe1b;Update build tools to sdk 24
+M	build.gradle
+M	sqlite-android/build.gradle
+
+a2df26f;Update version to 3.13.0-3
+M	CHANGELOG.md
+M	README.md
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	sqlite-android/build.gradle
+
+bed1d4e;Resolve #17 Add x86_64 target
+M	sqlite-android/src/main/jni/Application.mk
+
+531b781;Update version to 3.13.0-2
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+b4c2436;Resolve #20 Updated proguard rules
+M	sqlite-android/proguard-rules.pro
+
+acd0eed;Update version to 3.13.0-1
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+5781464;Resolve #19 Fix proguard keepclasseswithmembers
+M	sqlite-android/proguard-rules.pro
+
+fae68f6;Update version to 3.13.0
+M	README.md
+
+c57bd65;Update version to 3.13.0
+M	CHANGELOG.md
+M	sqlite-android/build.gradle
+
+b39c49e;Ensure test closes cursor
+M	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseCursorTest.java
+
+7583a24;Fix CloseGuard logging
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/CloseGuard.java
+
+12e3507;Resolve #16 Updated proguard rules
+M	sqlite-android/proguard-rules.pro
+
+99f290f;Remove duplicate jni macros
+M	sqlite-android/src/main/jni/sqlite/JNIHelp.h
+M	sqlite-android/src/main/jni/sqlite/android_database_CursorWindow.cpp
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteDebug.cpp
+
+ed64da6;Update gradle wrapper
+M	gradle/wrapper/gradle-wrapper.jar
+M	gradle/wrapper/gradle-wrapper.properties
+M	gradlew
+M	gradlew.bat
+
+6d3993f;Use regular image on travis ci
+M	.travis.yml
+
+1bb0eac;Update version to 3.12.2-2
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+025673c;Resolve #14 Changes to support api level 9 (Gingerbread)
+M	sqlite-android/build.gradle
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnection.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnectionPool.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteProgram.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteSession.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteStatementType.java
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteCommon.cpp
+
+63ab0d9;Use int instead of jint for result code
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+
+28ffac8;Update JNI readme
+M	sqlite-android/src/main/jni/sqlite/README
+
+0d868e7;Update build tools to 23.0.3
+M	.travis.yml
+M	sqlite-android/build.gradle
+
+dfe5c67;Resolve #15 Add dependencies to POM
+M	sqlite-android/build.gradle
+
+e8ef25c;Update to 3.12.2-1
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+89d5db5;Fix mEnableWriteAheadLogging flag not passed to open
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteOpenHelper.java
+
+c807826;Resolve #12 Failure creating database file from open()
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+
+1683519;Change default config to match Android defaults
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteGlobal.java
+
+88fdd9a;Update version to 3.12.2
+M	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+81466ba;Update version to 3.12.1-1
+M	CHANGELOG.md
+M	sqlite-android/build.gradle
+
+22ff99f;Resolve #11 Close window from onDeactivateOrClose
+M	sqlite-android/src/main/java/io/requery/android/database/AbstractWindowedCursor.java
+
+18764d4;Suppress warning for deprecated method needed for older API versions
+M	sqlite-android/src/main/java/io/requery/android/database/AbstractCursor.java
+
+e602985;Cleanup buildscript, ensure assembleRelease is run before publish
+M	sqlite-android/build.gradle
+
+a96ea25;Add Contributing.md
+A	CONTRIBUTING.md
+
+1d7fe22;Add IntDef values for SQLiteDatabase, fix warnings
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabaseConfiguration.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteOpenHelper.java
+
+7181e08;Merge pull request #10 from vovkab/patch-2
+cd32b52;Fix AbstractCursor to dispatch changes correctly
+M	sqlite-android/src/main/java/io/requery/android/database/AbstractCursor.java
+
+8b386e5;Detect finalized cursors using CloseGuard since StrictMode private api isn't available
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCursor.java
+
+7653610;Resolve #9 setNotificationUri not working
+M	sqlite-android/src/main/java/io/requery/android/database/AbstractCursor.java
+
+1c5f0f2;Merge pull request #8 from vovkab/patch-1
+51faf6e;Update README.md
+M	README.md
+
+7154403;Remove unneeded ScopedLocalRef
+D	sqlite-android/src/main/jni/sqlite/ScopedLocalRef.h
+
+76c2fd8;Remove unneeded JniConstants
+M	sqlite-android/src/main/jni/sqlite/Android.mk
+M	sqlite-android/src/main/jni/sqlite/JNIHelp.cpp
+D	sqlite-android/src/main/jni/sqlite/JniConstants.cpp
+D	sqlite-android/src/main/jni/sqlite/JniConstants.h
+
+f817438;Update to 3.12.1, add changelog
+A	CHANGELOG.md
+M	README.md
+M	sqlite-android/build.gradle
+
+3ee1089;Deferred transaction support in SQLiteDatabase
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+
+9edf2eb;Runtime loadable extension support
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnection.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCustomExtension.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabaseConfiguration.java
+M	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteOpenHelper.java
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+
+b759871;Fix mismatched call to GetStringUTFChars without release in nativeRegisterLocalizedCollators
+M	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+
+6ea2d66;Add Travis build status
+M	README.md
+
+0b77a3b;Fix shared library missing from library when running on CI
+M	sqlite-android/build.gradle
+
+f8354d2;Don't run performance tests by default
+M	sqlite-android/src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTestSuite.java
+M	sqlite-android/src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTests.java
+
+1e302c7;Travis CI run tests on emulator
+M	.travis.yml
+
+68ed241;Try to get ndk-build working on travis CI
+M	sqlite-android/build.gradle
+
+492ddfd;Get ANDROID_NDK_HOME from environment
+M	sqlite-android/build.gradle
+
+6d1bdbb;Add sources to artifacts
+M	sqlite-android/build.gradle
+
+c2b0b9f;Merge pull request #2 from JakeWharton/jw/no-resources
+19cc81f;Merge pull request #1 from JakeWharton/patch-1
+e2e452e;Drop AppCompat, use only support-v4.
+M	README.md
+M	sqlite-android/build.gradle
+
+deadcc5;Remove unused resource.
+M	sqlite-android/src/main/AndroidManifest.xml
+D	sqlite-android/src/main/res/values/strings.xml
+
+52670a4;Initial commit
+A	.gitignore
+A	.travis.yml
+A	LICENSE
+A	README.md
+A	build.gradle
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	settings.gradle
+A	sqlite-android/.gitignore
+A	sqlite-android/build.gradle
+A	sqlite-android/proguard-rules.pro
+A	sqlite-android/src/androidTest/java/io/requery/android/database/CursorWindowTest.java
+A	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseCursorTest.java
+A	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseErrorHandlerTest.java
+A	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseGeneralTest.java
+A	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseLocaleTest.java
+A	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseStatementTest.java
+A	sqlite-android/src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTestSuite.java
+A	sqlite-android/src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTests.java
+A	sqlite-android/src/androidTest/java/io/requery/android/database/benchmark/Benchmark.java
+A	sqlite-android/src/main/AndroidManifest.xml
+A	sqlite-android/src/main/java/io/requery/android/database/AbstractCursor.java
+A	sqlite-android/src/main/java/io/requery/android/database/AbstractWindowedCursor.java
+A	sqlite-android/src/main/java/io/requery/android/database/CursorWindow.java
+A	sqlite-android/src/main/java/io/requery/android/database/CursorWindowAllocationException.java
+A	sqlite-android/src/main/java/io/requery/android/database/DatabaseErrorHandler.java
+A	sqlite-android/src/main/java/io/requery/android/database/DefaultDatabaseErrorHandler.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/CloseGuard.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteClosable.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnection.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnectionPool.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCursor.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCursorDriver.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCustomFunction.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabaseConfiguration.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDebug.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDirectCursorDriver.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteGlobal.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteOpenHelper.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteProgram.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteQuery.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteQueryBuilder.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteSession.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteStatement.java
+A	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteStatementInfo.java
+A	sqlite-android/src/main/jni/Android.mk
+A	sqlite-android/src/main/jni/Application.mk
+A	sqlite-android/src/main/jni/sqlite/ALog-priv.h
+A	sqlite-android/src/main/jni/sqlite/Android.mk
+A	sqlite-android/src/main/jni/sqlite/CursorWindow.cpp
+A	sqlite-android/src/main/jni/sqlite/CursorWindow.h
+A	sqlite-android/src/main/jni/sqlite/Errors.h
+A	sqlite-android/src/main/jni/sqlite/JNIHelp.cpp
+A	sqlite-android/src/main/jni/sqlite/JNIHelp.h
+A	sqlite-android/src/main/jni/sqlite/JNIString.cpp
+A	sqlite-android/src/main/jni/sqlite/JniConstants.cpp
+A	sqlite-android/src/main/jni/sqlite/JniConstants.h
+A	sqlite-android/src/main/jni/sqlite/README
+A	sqlite-android/src/main/jni/sqlite/ScopedLocalRef.h
+A	sqlite-android/src/main/jni/sqlite/android_database_CursorWindow.cpp
+A	sqlite-android/src/main/jni/sqlite/android_database_SQLiteCommon.cpp
+A	sqlite-android/src/main/jni/sqlite/android_database_SQLiteCommon.h
+A	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+A	sqlite-android/src/main/jni/sqlite/android_database_SQLiteDebug.cpp
+A	sqlite-android/src/main/jni/sqlite/android_database_SQLiteGlobal.cpp
+A	sqlite-android/src/main/res/values/strings.xml

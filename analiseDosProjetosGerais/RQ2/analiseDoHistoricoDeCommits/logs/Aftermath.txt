@@ -1,0 +1,169 @@
+ee904fe;Prepare next development version.
+M	gradle.properties
+
+de71d96;Prepare version 0.3.1
+M	README.md
+M	gradle.properties
+
+740858f;Merge pull request #19 from MichaelEvans/update_build_tools
+a5d4d89;Update build tools and gradle versions
+M	.travis.yml
+M	aftermath-processor/build.gradle
+M	aftermath/build.gradle
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/build.gradle
+
+3dfc8de;Merge pull request #18 from MichaelEvans/gradle_push
+43cb8c7;Update method of pushing artifacts
+M	aftermath-annotations/build.gradle
+A	aftermath-annotations/gradle.properties
+M	aftermath-processor/build.gradle
+A	aftermath-processor/gradle.properties
+M	aftermath/build.gradle
+A	aftermath/gradle.properties
+M	gradle.properties
+A	gradle/gradle-mvn-push.gradle
+
+71cbcd1;Prepare next development version.
+M	gradle.properties
+
+f2314ae;Prepare Release 0.3.0
+M	README.md
+M	gradle.properties
+
+4d141d6;Merge pull request #15 from mariusc83/permission_request_annotation
+40ea0ba;OnRequestPermissionResult annotation added
+A	aftermath-annotations/src/main/java/org/michaelevans/aftermath/OnRequestPermissionResult.java
+M	aftermath-processor/src/main/java/org/michaelevans/aftermath/AftermathProcessor.java
+M	aftermath-processor/src/main/java/org/michaelevans/aftermath/BindingClass.java
+M	aftermath-processor/src/test/java/org/michaelevans/aftermath/AftermathProcessorTest.java
+M	aftermath/src/main/java/org/michaelevans/aftermath/Aftermath.java
+R057	aftermath/src/main/java/org/michaelevans/aftermath/IOnActivityForResult.java	aftermath/src/main/java/org/michaelevans/aftermath/IAftermathDelegate.java
+M	sample/build.gradle
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/org/michaelevans/aftermath.sample/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/values/strings.xml
+
+c48d221;Merge pull request #12 from burntcookie90/feature/control-flow-fix
+1750e3a;change list of .iml to *.iml
+M	.gitignore
+
+a05890b;use if/elseif instead of individual if blocks for each request code
+M	.gitignore
+M	aftermath-processor/src/main/java/org/michaelevans/aftermath/BindingClass.java
+
+73defde;Merge pull request #10 from MichaelEvans/three_modules
+ef0d149;Move to three module setup
+M	.travis.yml
+A	aftermath-annotations/.gitignore
+A	aftermath-annotations/build.gradle
+R100	aftermath/src/main/java/org/michaelevans/aftermath/OnActivityResult.java	aftermath-annotations/src/main/java/org/michaelevans/aftermath/OnActivityResult.java
+M	aftermath-processor/build.gradle
+M	aftermath-processor/src/main/java/org/michaelevans/aftermath/AftermathProcessor.java
+M	aftermath-processor/src/main/java/org/michaelevans/aftermath/BindingClass.java
+M	aftermath-processor/src/test/java/org/michaelevans/aftermath/AftermathProcessorTest.java
+M	aftermath/build.gradle
+M	aftermath/src/main/java/org/michaelevans/aftermath/Aftermath.java
+A	aftermath/src/main/java/org/michaelevans/aftermath/IOnActivityForResult.java
+M	build.gradle
+M	sample/build.gradle
+M	sample/src/main/res/values/strings.xml
+M	settings.gradle
+
+e3bc7dc;Merge pull request #6 from MichaelEvans/instrumentation_tests
+fda59f9;Add annotation processor unit test
+M	aftermath-processor/build.gradle
+A	aftermath-processor/src/test/java/org/michaelevans/aftermath/AftermathProcessorTest.java
+
+4a14779;Add instrumentation tests to sample
+M	sample/build.gradle
+D	sample/src/androidTest/java/org/michaelevans/aftermath/ApplicationTest.java
+A	sample/src/androidTest/java/org/michaelevans/aftermath/MainActivityTest.java
+M	sample/src/main/java/org/michaelevans/aftermath.sample/MainActivity.java
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/values/strings.xml
+
+56fd018;Merge pull request #7 from MichaelEvans/proguard
+4982b5d;Bundle proguard rules inside the api module
+M	aftermath/build.gradle
+A	aftermath/consumer-proguard-rules.pro
+
+c339619;Merge pull request #5 from MichaelEvans/travis_run_instrumentation_tests
+848f52e;Run emulator with Travis
+M	.travis.yml
+
+98a67ec;Add Android Arsenal badge
+M	README.md
+
+8624b61;Add Travis CI badge to README
+M	README.md
+
+46c9aa7;Merge pull request #4 from MichaelEvans/travis_ci
+adf04ec;Add Travis CI config
+A	.travis.yml
+
+d89a537;Update README to show setup instructions
+M	README.md
+
+6828df4;prepare for next development iteration
+M	gradle.properties
+
+4306f28;prepare release 0.1.0
+M	aftermath-processor/build.gradle
+M	aftermath/build.gradle
+M	gradle.properties
+
+550b0ed;set up gradle for publishing
+M	aftermath-processor/build.gradle
+M	aftermath/build.gradle
+M	build.gradle
+M	gradle.properties
+
+1276107;Remove unused sample resources
+D	sample/src/main/res/menu/menu_main.xml
+M	sample/src/main/res/values/strings.xml
+
+113e6fc;Add README
+A	README.md
+
+765827b;added License
+A	LICENSE.txt
+
+35b9595;initial commit
+A	.gitignore
+A	aftermath-processor/.gitignore
+A	aftermath-processor/build.gradle
+A	aftermath-processor/src/main/java/org/michaelevans/aftermath/AftermathProcessor.java
+A	aftermath-processor/src/main/java/org/michaelevans/aftermath/BindingClass.java
+A	aftermath/.gitignore
+A	aftermath/build.gradle
+A	aftermath/proguard-rules.pro
+A	aftermath/src/main/AndroidManifest.xml
+A	aftermath/src/main/java/org/michaelevans/aftermath/Aftermath.java
+A	aftermath/src/main/java/org/michaelevans/aftermath/OnActivityResult.java
+A	build.gradle
+A	checkstyle.xml
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	sample/.gitignore
+A	sample/build.gradle
+A	sample/proguard-rules.pro
+A	sample/src/androidTest/java/org/michaelevans/aftermath/ApplicationTest.java
+A	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/org/michaelevans/aftermath.sample/MainActivity.java
+A	sample/src/main/res/layout/activity_main.xml
+A	sample/src/main/res/menu/menu_main.xml
+A	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	sample/src/main/res/values-w820dp/dimens.xml
+A	sample/src/main/res/values/dimens.xml
+A	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/values/styles.xml
+A	settings.gradle

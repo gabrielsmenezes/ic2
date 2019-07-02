@@ -1,0 +1,1072 @@
+4f97c76;:bento: update mongodb setting
+A	netty-mybatis-mongodb/src/main/java/com/sanshengshui/nosql/dao/DeviceRepository.java
+A	netty-mybatis-mongodb/src/main/java/com/sanshengshui/nosql/entity/Device.java
+M	netty-mybatis-mongodb/src/main/resources/application.yml
+
+b4795b5;:heavy_minus_sign: remove unused dependencies
+M	netty-mybatis-mongodb/pom.xml
+
+ac2053b;:wrench: update datasource setting
+M	netty-jpa-mysql/src/main/resources/application.yml
+
+da72174;:bento: add sql.txt
+A	netty-jpa-mysql/doc/sql.txt
+
+a0328d4;:bento: add application.yml
+A	netty-mybatis-mongodb/src/main/resources/application.yml
+
+8adff77;:pencil: update README.md
+M	README.md
+
+a6dc81c;:beers: complete netty-jpa-mysql
+M	netty-jpa-mysql/pom.xml
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/netty/NettServer.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/netty/NettyServerHandler.java
+
+1524cf9;:beers: add contents for netty-jpa-mysql模块
+M	netty-jpa-mysql/pom.xml
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/netty/NettServer.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/netty/NettyServerHandler.java
+M	netty-jpa-mysql/src/main/resources/application.yml
+
+003a446;Removing code or files  TestController
+D	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/controller/TestController.java
+
+6a5519c;:heavy_minus_sign: remove spring-boot-starter-web dependency
+M	netty-jpa-mysql/pom.xml
+
+bdba6d6;:heavy_plus_sign: 为netty-mybatis-mongodb工程添加依赖
+M	netty-mybatis-mongodb/pom.xml
+
+8a5503d;Merge remote-tracking branch 'origin/master'
+29298c9;:heavy_plus_sign: 为netty-mybatis-mongodb工程添加依赖
+M	netty-mybatis-mongodb/pom.xml
+
+07d703b;:beers: 编写netty之kafka工程
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/controller/TestController.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/device/DeviceService.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/device/DeviceServiceImpl.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/domain/Device.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/ModelConstants.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/sql/DeviceEntity.java
+
+9256ef1;:beers: 编写netty之kafka工程
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/DaoUtil.java
+D	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/NoSqlDaoConfig.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/device/DeviceDao.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/BaseEntity.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/BaseSqlEntity.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/ModelConstants.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/ToData.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/sql/DeviceEntity.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/sql/Device/DeviceRepository.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/sql/Device/JpaDeviceDao.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/sql/JpaAbstractDao.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/sql/JpaAbstractDaoListeningExecutorService.java
+D	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/util/NoSqlDao.java
+M	netty-jpa-mysql/src/main/resources/application.yml
+
+81e9c42;:card_file_box: 数据库持久化操作
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/domain/Device.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/ModelConstants.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/sql/JpaAbstractDao.java
+
+600d83d;:pencil: 美化README文档
+M	README.md
+
+b6fe56e;:pencil: update netty之用netty实现IOT文档
+M	README.md
+
+448bd8b;:pencil: update netty之用netty实现IM文档
+M	README.md
+
+1d99880;:pencil: update netty之用netty实现Rpc文档
+M	README.md
+
+f8cc224;:chart_with_upwards_trend: 添加集成测试工具travis CI工具
+A	.travis.yml
+
+76fe94c;:beers: 添加数据持久化逻辑
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/device/DeviceDao.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/device/DeviceService.java
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/sql/DeviceEntity.java
+
+6b98bea;:beers: 添加编译器1.8版本
+M	netty-jpa-mysql/pom.xml
+
+17d95ae;:beers: 设备数据库表持久化操作
+M	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/device/DeviceDao.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/ModelConstants.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/entity/sql/DeviceEntity.java
+
+b32e6f2;:beers: 数据持久化操作!
+M	netty-jpa-mysql/pom.xml
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/Dao.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/JpaDaoConfig.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/NettyPersistenceApplication.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/NoSqlDaoConfig.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/device/DeviceDao.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/domain/Device.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/util/NoSqlDao.java
+A	netty-jpa-mysql/src/main/java/com/sanshengshui/persistence/util/SqlDao.java
+A	netty-jpa-mysql/src/main/resources/application.yml
+
+bd92adf;:lipstick: 优化README.md文件
+M	README.md
+
+0e59f98;:beers: 修改README.md文件
+M	pom.xml
+
+9fc245f;:sparkles: netty之mybaits持久化数据之mongodb中!
+A	netty-mybatis-mongodb/pom.xml
+M	pom.xml
+
+4e3902e;:sparkles: 添加netty-jpa-mysql示例演示!
+A	netty-jpa-mysql/pom.xml
+M	pom.xml
+
+d082582;:memo: 修改README.md文档
+M	README.md
+
+c1ddc4c;:memo: 撰写Netty-RPC,Bolt私有协议博客
+M	README.md
+
+bae73fa;:memo: 撰写Netty-IOT拓展实践博客
+M	README.md
+
+232bf3d;:lipstick: 更新README.md 界面图
+M	README.md
+
+20e912f;:fire: 移除一些不必要的代码和夯余文件
+M	netty-im/pom.xml
+D	netty-im/src/main/java/com/sanshengshui/im/NettyImApplication.java
+M	netty-im/src/main/java/com/sanshengshui/im/protocol/request/GroupMessageRequestPacket.java
+M	netty-im/src/main/java/com/sanshengshui/im/protocol/request/MessageRequestPacket.java
+M	netty-im/src/main/java/com/sanshengshui/im/session/Session.java
+D	netty-im/src/test/java/com/sanshengshui/im/NettyImApplicationTests.java
+
+b6a1d96;:bug: 移除无参数构造的问题
+M	netty-im/src/main/java/com/sanshengshui/im/protocol/request/GroupMessageRequestPacket.java
+M	netty-im/src/main/java/com/sanshengshui/im/protocol/request/MessageRequestPacket.java
+M	netty-im/src/main/java/com/sanshengshui/im/session/Session.java
+
+27686e6;:bug: 修复jar包引入错误
+M	netty-im/src/main/java/com/sanshengshui/im/codec/PacketCodecHandler.java
+M	netty-im/src/main/java/com/sanshengshui/im/codec/PacketDecoder.java
+M	netty-im/src/main/java/com/sanshengshui/im/codec/PacketEncoder.java
+
+5036308;:construction: netty-im代码基本完成
+A	netty-im/src/main/java/com/sanshengshui/im/attribute/Attributes.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/NettyClient.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/console/ConsoleCommand.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/console/ConsoleCommandManager.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/console/CreateGroupConsoleCommand.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/console/JoinGroupConsoleCommand.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/console/ListGroupMembersConsoleCommand.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/console/LoginConsoleCommand.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/console/LogoutConsoleCommand.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/console/QuitGroupConsoleCommand.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/console/SendToGroupConsoleCommand.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/console/SendToUserConsoleCommand.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/handler/CreateGroupResponseHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/handler/GroupMessageResponseHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/handler/HeartBeatTimerHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/handler/JoinGroupResponseHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/handler/ListGroupMembersResponseHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/handler/LoginResponseHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/handler/LogoutResponseHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/handler/MessageResponseHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/client/handler/QuitGroupResponseHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/codec/PacketCodecHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/codec/PacketDecoder.java
+A	netty-im/src/main/java/com/sanshengshui/im/codec/PacketEncoder.java
+A	netty-im/src/main/java/com/sanshengshui/im/codec/Spliter.java
+A	netty-im/src/main/java/com/sanshengshui/im/handler/IMIdleStateHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/Packet.java
+M	netty-im/src/main/java/com/sanshengshui/im/protocol/PacketCodec.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/command/Command.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/request/CreateGroupRequestPacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/request/GroupMessageRequestPacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/request/HeartBeatRequestPacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/request/JoinGroupRequestPacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/request/ListGroupMembersRequestPacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/request/LoginRequestPacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/request/LogoutRequestPacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/request/MessageRequestPacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/request/QuitGroupRequestPacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/response/CreateGroupResponsePacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/response/GroupMessageResponsePacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/response/HeartBeatResponsePacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/response/JoinGroupResponsePacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/response/ListGroupMembersResponsePacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/response/LoginResponsePacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/response/LogoutResponsePacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/response/MessageResponsePacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/response/QuitGroupResponsePacket.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/NettyServer.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/AuthHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/CreateGroupRequestHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/GroupMessageRequestHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/HeartBeatRequestHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/IMHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/JoinGroupRequestHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/ListGroupMembersRequestHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/LoginRequestHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/LogoutRequestHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/MessageRequestHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/server/handler/QuitGroupRequestHandler.java
+A	netty-im/src/main/java/com/sanshengshui/im/session/Session.java
+A	netty-im/src/main/java/com/sanshengshui/im/util/IDUtil.java
+A	netty-im/src/main/java/com/sanshengshui/im/util/SessionUtil.java
+
+ae694d5;:heavy_plus_sign: lombok添加
+M	netty-im/pom.xml
+
+d1b54b4;:beers: 添加IM序列化算法
+M	netty-im/pom.xml
+A	netty-im/src/main/java/com/sanshengshui/im/protocol/PacketCodec.java
+D	netty-im/src/main/java/com/sanshengshui/im/serialization/api/SerializerType.java
+A	netty-im/src/main/java/com/sanshengshui/im/serialize/Serializer.java
+A	netty-im/src/main/java/com/sanshengshui/im/serialize/SerializerAlgorithm.java
+A	netty-im/src/main/java/com/sanshengshui/im/serialize/impl/JSONSerializer.java
+
+c27a86d;:whale: 为netty-iot添加docker-maven插件构建文件
+M	netty-iot/pom.xml
+M	netty-iot/src/main/docker/Dockerfile
+
+7ea7089;:whale: 为netty-iot添加Dockerfile镜像构建文件
+A	netty-iot/src/main/docker/Dockerfile
+
+8695554;Merge remote-tracking branch 'origin/master'
+7bf22f6;:bulb: 实体类注释!
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/ProtocolProcess.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubAck.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubComp.java
+
+b72da3d;:bulb: 添加注释
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/session/GrozaSessionStoreServiceImpl.java
+
+210e9ed;:bulb: 实体类注释!
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/message/RetainMessageStore.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/serialize/GrozaSerializer.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/session/GrozaSessionStoreService.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/subscribe/GrozaSubscribeStoreService.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/subscribe/SubscribeStore.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/config/RedisCacheAutoConfiguration.java
+
+fccd91a;:bento: 添加docker配置文件
+M	netty-iot/pom.xml
+
+e981c6a;:boom: kafka代理消息
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/message/GrozaKafkaService.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/ProtocolProcess.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Publish.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/kafka/KafkaServiceImpl.java
+
+de59fcb;kafka内部消息添加！
+A	netty-iot/src/main/java/com/sanshengshui/iot/internal/InternalMessage.java
+
+86c5091;:bento: 添加kafka配置文件
+M	netty-iot/src/main/resources/application.yml
+
+0448f1f;:heavy_plus_sign: 添加kafka依赖
+M	netty-iot/pom.xml
+
+a9ec444;redis HyperLogLog测试
+M	netty-iot/src/main/java/com/sanshengshui/iot/web/AuthApiController.java
+A	netty-iot/src/test/java/com/sanshengshui/iot/RedisTests.java
+
+8198d8a;添加图片
+M	README.md
+A	pic/545937618.jpg
+
+7d3362f;:fire: 移除不必要的图片
+D	"pic/Netty\345\256\236\347\216\260\351\253\230\346\200\247\350\203\275IOT\346\234\215\345\212\241\345\231\250(Groza)\344\271\213\347\262\276\345\260\275\344\273\243\347\240\201\347\257\207\344\270\255.md"
+D	pic/blueprint-company-concept-7366.jpg
+D	pic/mqtt.png
+D	pic/netty-helloworld.png
+D	pic/netty-http.png
+D	pic/netty-iot.png
+D	pic/netty-springboot-protobuf.png
+
+e51925c;:memo: 文档编写
+M	README.md
+
+6fa80bc;新增文章
+A	"pic/Netty\345\256\236\347\216\260\351\253\230\346\200\247\350\203\275IOT\346\234\215\345\212\241\345\231\250(Groza)\344\271\213\347\262\276\345\260\275\344\273\243\347\240\201\347\257\207\344\270\255.md"
+A	pic/blueprint-company-concept-7366.jpg
+
+f1c8eb1;:fire: 移除不必要的代码
+D	CODE_OF_CONDUCT.md
+D	CONTRIBUTING.md
+D	PULL_REQUEST_TEMPLATE.md
+
+2cf6c9a;:fire: 移除不必要的代码
+M	README.md
+
+392d411;修正完毕
+M	README.md
+
+722b502;添加认证图片
+A	pic/LICENSE.png
+
+6be981e;修正
+M	README.md
+
+432ee17;修改UI
+M	README.md
+
+53ae03e;修改UI
+M	README.md
+
+b06c3aa;Merge pull request #1 from sanshengshui/add-code-of-conduct-1
+0dbf2ab;Create CODE_OF_CONDUCT.md
+A	CODE_OF_CONDUCT.md
+
+3e49152;Create CONTRIBUTING.md
+A	CONTRIBUTING.md
+
+ad65e98;Update PULL_REQUEST_TEMPLATE.md
+M	PULL_REQUEST_TEMPLATE.md
+
+b5cc616;Create PULL_REQUEST_TEMPLATE.md
+A	PULL_REQUEST_TEMPLATE.md
+
+c74153c;Update issue templates
+A	.github/ISSUE_TEMPLATE/bug_report.md
+A	.github/ISSUE_TEMPLATE/feature_request.md
+
+3cf7c43;:fire: 移除不必要的代码
+D	netty-iot/src/main/java/com/sanshengshui/iot/auth/util/PwdUtil.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/web/AuthApiController.java
+A	netty-iot/src/main/resources/banner.txt
+
+18bfe48;:pencil2: 添加web认证用户名和密码接口
+M	netty-iot/src/main/java/com/sanshengshui/iot/web/AuthApiController.java
+
+8dec7aa;:pencil2: 添加web认证用户名和密码接口
+A	netty-iot/src/main/java/com/sanshengshui/iot/web/AuthApiController.java
+
+3d683b8;:heavy_plus_sign: 添加web依赖包
+M	netty-iot/pom.xml
+
+17842f8;:lipstick: 修改mqtt工程的工程状态
+M	README.md
+
+162bd9d;调试
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/cache/GrozaSubscribeNotWildcardCache.java
+
+ca67f30;添加完整处理
+M	netty-iot/src/main/java/com/sanshengshui/iot/server/MqttTransportHandler.java
+
+6f87aab;:construction: 完成绝大部分的mqtt功能
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PingReq.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/ProtocolProcess.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubAck.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubComp.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubRec.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubRel.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Publish.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Subscribe.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/UnSubscribe.java
+
+1acd096;:construction: 完成遗嘱消息和上线同一个ClientId挤掉的的协议要求
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/session/SessionStore.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/DisConnect.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/ProtocolProcess.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Publish.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/session/GrozaSessionStoreServiceImpl.java
+M	netty-iot/src/test/java/com/sanshengshui/iot/MqttTests.java
+
+b0c05b8;:bug: 修改一个连接认证bug
+M	netty-iot/src/main/java/com/sanshengshui/iot/auth/service/AuthServiceImpl.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+
+ecef802;:construction: MQTT连接操作完成
+M	netty-iot/src/main/java/com/sanshengshui/iot/NettyIotApplication.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/config/RedisCacheAutoConfiguration.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/server/MqttServer.java
+D	netty-iot/src/main/java/com/sanshengshui/iot/server/MqttServerInitializer.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/server/MqttTransportHandler.java
+
+e8fe097;:construction:
+M	netty-iot/src/main/java/com/sanshengshui/iot/server/MqttTransportHandler.java
+
+13ee9cf;:bento: 添加mqtt配置文件和实现启动项
+M	netty-iot/pom.xml
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/server/MqttServer.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/server/MqttServerInitializer.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/server/MqttTransportHandler.java
+M	netty-iot/src/main/resources/application.yml
+
+138b7a9;:memo: 手撕MQTT协议
+M	README.md
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/ProtocolProcess.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/UnSubscribe.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/message/MessageIdServiceImpl.java
+
+ca664f6;:camera_flash: 增加MQTT图片
+M	README.md
+A	pic/mqtt.png
+
+7b60073;:camera_flash: 增加MQTT图片
+M	README.md
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PingReq.java
+
+2c14474;:beers: 剩余协议处理
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Publish.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Subscribe.java
+
+e3357fc;:beers: 取消订阅
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/UnSubscribe.java
+
+a94ec7b;:beers: 发布收到
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubRec.java
+
+245bae8;:beers: 发布释放
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubRel.java
+
+dcea152;:beers: PUBCOMP连接处理
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubAck.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubComp.java
+
+44fadec;:beers: 断开连接DISCONNECT处理
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/DisConnect.java
+
+06225ff;:beers: 处理连接请求
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PingReq.java
+
+87f1b30;:beers: 沉迷于代码
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/subscribe/SubscribeStoreServiceImpl.java
+
+c482797;:beers: 沉迷于代码
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PingReq.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/ProtocolProcess.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubAck.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubComp.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/PubRel.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Publish.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Subscribe.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/UnSubscribe.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/message/DupPubRelMessageStoreServiceImpl.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/message/RetainMessageStoreServiceImpl.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/subscribe/SubscribeStoreServiceImpl.java
+
+fe180ff;:beers: 沉迷于代码
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/message/DupPubRelMessageStore.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/cache/GrozaDupPubRelMessageCache.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/cache/GrozaDupPublishMessageCache.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/cache/GrozaRetainMessageCache.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/cache/GrozaSubscribeNotWildcardCache.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/cache/GrozaSubscribeWildcardCache.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/message/DupPubRelMessageStoreServiceImpl.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/message/DupPublishMessageStoreServiceImpl.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/message/MessageIdServiceImpl.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/message/RetainMessageStoreServiceImpl.java
+
+87a0af6;:white_check_mark: 添加测试
+M	netty-iot/src/test/java/com/sanshengshui/iot/MqttTests.java
+
+b1c1508;:building_construction: 提交
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/session/SessionStore.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/DisConnect.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/cache/GrozaDupPublishMessageCache.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/session/GrozaSessionStoreServiceImpl.java
+M	netty-iot/src/test/java/com/sanshengshui/iot/MqttTests.java
+
+fd2a5a4;:building_construction: 改变工程结构
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/session/SessionStore.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/cache/GrozaDupPublishMessageCache.java
+A	netty-iot/src/test/java/com/sanshengshui/iot/MqttTests.java
+D	netty-mqtt/pom.xml
+D	netty-mqtt/src/main/java/com/sanshengshui/mqtt/NettyMqttApplication.java
+D	netty-mqtt/src/main/resources/application.properties
+M	pom.xml
+
+a7d8f43;:building_construction: 改变工程结构
+D	netty-mqtt-coap/coap/src/main/java/com/sanshengshui/coap/CoapApp.java
+D	netty-mqtt-coap/coap/src/main/java/com/sanshengshui/coap/config.java
+D	netty-mqtt-coap/coap/src/test/java/com/sanshengshui/nettymqttcoap/coap/CoapApplicationTests.java
+D	netty-mqtt-coap/mqtt/pom.xml
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttApp.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTopic.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportHandler.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportServerInitializer.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportService.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/handler/MqttHandler.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Connect.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/DisConnect.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PingReq.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/ProtocolProcess.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubAck.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubComp.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubRec.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubRel.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Publish.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Subscribe.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/UnSubscribe.java
+D	netty-mqtt-coap/mqtt/src/main/resources/application.yml
+D	netty-mqtt-coap/mqtt/src/main/resources/keystore/auth-private.key
+D	netty-mqtt-coap/pom.xml
+R075	netty-mqtt-coap/coap/pom.xml	netty-mqtt/pom.xml
+A	netty-mqtt/src/main/java/com/sanshengshui/mqtt/NettyMqttApplication.java
+R100	netty-mqtt-coap/coap/src/main/resources/application.properties	netty-mqtt/src/main/resources/application.properties
+M	pom.xml
+
+524da1e;:rocket: mqtt心跳请求处理
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PingReq.java
+
+d0a0dee;:rocket: mqtt断开处理
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Connect.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/DisConnect.java
+
+e73a4f7;:loud_sound: 增加日志处理
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Connect.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/DisConnect.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PingReq.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubAck.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubComp.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubRec.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubRel.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Publish.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Subscribe.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/UnSubscribe.java
+
+08e9b35;:rocket: mqtt协议处理类
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/handler/MqttHandler.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Connect.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/DisConnect.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PingReq.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/ProtocolProcess.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubAck.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubComp.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubRec.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubRel.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Publish.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Subscribe.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/UnSubscribe.java
+
+28ca646;:beers: 简述RPC实现原理
+M	README.md
+
+a061c9c;:beers: mqtt协议处理逻辑
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportHandler.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/auth/Service/AuthServiceImpl.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/auth/util/PwdUtil.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/auth/util/RsaKeyUtil.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/common/auth/GrozaAuthService.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/common/session/GrozaSessionStoreService.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/common/session/SessionStore.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/config/RedisCacheAutoConfiguration.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Connect.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/DisConnect.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PingReq.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/ProtocolProcess.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubAck.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubComp.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubRec.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/PubRel.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Publish.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Subscribe.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/UnSubscribe.java
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/store/session/GrozaSessionStoreServiceImpl.java
+M	netty-mqtt-coap/mqtt/src/main/resources/application.yml
+D	netty-mqtt-coap/mqtt/src/test/java/com/sanshengshui/mqtt/SpringBootLettuceRedisApplicationTests.java
+D	netty-mqtt-coap/mqtt/src/test/java/com/sanshengshui/mqtt/User.java
+
+980d32c;:memo: 更新netty-springboot-protobuf流程图
+M	README.md
+A	pic/netty-springboot-protobuf.png
+
+5ebb755;:lipstick: 更新README.md样式
+M	README.md
+R100	pic/netty-http .png	pic/netty-http.png
+
+1c68828;:lipstick: 更新README.md样式
+M	README.md
+A	pic/netty-http .png
+D	pic/netty-http.png
+A	pic/netty-iot.png
+
+8d31f40;:lipstick: 更新README.md样式
+M	README.md
+A	pic/netty-http.png
+
+27d9b37;修改一下
+M	README.md
+
+83fb227;修改一下
+M	README.md
+
+bbac9a2;添加水平分割线
+M	README.md
+A	pic/horizon.png
+
+0a20bfb;:beers:
+M	README.md
+
+d6d232c;:lipstick: 添加netty-helloworld交互图
+M	README.md
+
+38ffc2e;:lipstick: 添加netty-helloworld交互图
+M	README.md
+A	pic/netty-helloworld.png
+
+0c22e82;:rocket: 完善代码
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/message/DupPubRelMessageStore.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/message/DupPublishMessageStore.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/message/GrozaDupPubRelMessageStoreService.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/message/GrozaDupPublishMessageStoreService.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/message/GrozaMessageIdService.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/message/GrozaRetainMessageStoreService.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/message/RetainMessageStore.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/session/SessionStore.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+
+d2c8245;:boom: IOT高性能服务器实现之路
+M	README.md
+A	netty-iot/pom.xml
+M	netty-iot/src/main/java/com/sanshengshui/iot/common/session/SessionStore.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/subscribe/GrozaSubscribeStoreService.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/subscribe/SubscribeStore.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+
+dda7f73;:boom: 重大Netty-IOT提交
+A	netty-iot/src/main/java/com/sanshengshui/iot/NettyIotApplication.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/auth/service/AuthServiceImpl.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/auth/util/PwdUtil.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/auth/util/RsaKeyUtil.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/auth/GrozaAuthService.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/serialize/GrozaSerializer.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/session/GrozaSessionStoreService.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/common/session/SessionStore.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/config/RedisCacheAutoConfiguration.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/store/session/GrozaSessionStoreServiceImpl.java
+A	netty-iot/src/main/resources/application.yml
+A	netty-iot/src/main/resources/keystore/auth-private.key
+A	netty-iot/src/test/java/com/sanshengshui/iot/GrozaSerializerTests.java
+A	netty-iot/src/test/java/com/sanshengshui/iot/NettyIotApplicationTests.java
+A	netty-iot/src/test/java/com/sanshengshui/iot/User.java
+M	netty-mqtt-coap/coap/pom.xml
+A	netty-mqtt-coap/coap/src/main/java/com/sanshengshui/coap/config.java
+M	netty-mqtt-coap/mqtt/pom.xml
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/config/RedisCacheAutoConfiguration.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/store/session/GrozaSessionStoreServiceImpl.java
+M	netty-mqtt-coap/mqtt/src/main/resources/application.yml
+A	netty-mqtt-coap/mqtt/src/test/java/com/sanshengshui/mqtt/SpringBootLettuceRedisApplicationTests.java
+A	netty-mqtt-coap/mqtt/src/test/java/com/sanshengshui/mqtt/User.java
+M	pom.xml
+
+cb201fa;:heavy_plus_sign: 添加redis依赖
+M	netty-mqtt-coap/mqtt/pom.xml
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/common/session/GrozaSessionStoreService.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/common/session/SessionStore.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Connect.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/store/session/GrozaSessionStoreServiceImpl.java
+
+54a98d6;:beers: 添加用户名和密码工具类
+M	netty-mqtt-coap/mqtt/pom.xml
+D	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/auth/AuthService.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/auth/Service/AuthServiceImpl.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/auth/util/PwdUtil.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/auth/util/RsaKeyUtil.java
+A	netty-mqtt-coap/mqtt/src/main/resources/keystore/auth-private.key
+D	netty-mqtt-coap/mqtt/src/test/java/com/sanshengshui/nettymqttcoap/mqtt/MqttApplicationTests.java
+
+7b1c0a0;:beers: 添加用户名和密码认证服务
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/auth/AuthService.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/common/auth/GrozaAuthService.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Connect.java
+
+e4d61ac;:bento: 修改MQTT Broker服务器的连接逻辑
+M	netty-kafka/src/main/java/com/sanshengshui/kafka/kafka/CallbackSerializer.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/protocol/Connect.java
+
+6710fe5;:ok_hand: 完全完成netty-http工程
+M	README.md
+M	netty-http/src/main/java/com/sanshengshui/netty/HttpHelloWorldServerHandler.java
+
+079a213;:ok_hand: 完成netty-http工程
+M	netty-http/src/main/java/com/sanshengshui/netty/HttpHelloWorldServerHandler.java
+M	netty-http/src/main/java/com/sanshengshui/netty/pojo/User.java
+
+21c3f5d;:ok_hand: 添加pojo对象
+M	netty-http/pom.xml
+A	netty-http/src/main/java/com/sanshengshui/netty/pojo/User.java
+
+96d5209;:ok_hand: 添加netty-http fastjson序列化方式
+A	netty-http/src/main/java/com/sanshengshui/netty/serialize/Serializer.java
+A	netty-http/src/main/java/com/sanshengshui/netty/serialize/impl/JSONSerializer.java
+
+833aea5;:arrow_up: 升级fastjson版本
+M	netty-http/pom.xml
+
+d4d9900;:rocket: 添加四种序列化方式
+A	netty-im/src/main/java/com/sanshengshui/im/serialization/api/SerializerType.java
+
+08cc89c;:heavy_plus_sign: 添加kyro依赖
+M	netty-im/pom.xml
+
+3d5d335;:heavy_plus_sign: 添加hessian依赖
+M	netty-im/pom.xml
+R089	netty-im/src/main/java/com/sanshengshui/nettyim/NettyImApplication.java	netty-im/src/main/java/com/sanshengshui/im/NettyImApplication.java
+R090	netty-im/src/test/java/com/sanshengshui/nettyim/NettyImApplicationTests.java	netty-im/src/test/java/com/sanshengshui/im/NettyImApplicationTests.java
+
+f39889b;:heavy_plus_sign: 添加Protostuff,netty依赖
+M	netty-im/pom.xml
+
+158075e;:memo: Gatling简单测试SpringBoot
+M	README.md
+
+7273da2;:memo: Gatling简单测试SpringBoot
+D	"markdown/\350\264\237\350\275\275\357\274\214\346\200\247\350\203\275\346\265\213\350\257\225\345\267\245\345\205\267-Gatling.md"
+
+d8aa53d;:sparkles: 添加测试工具Gatling的基础介绍
+M	README.md
+
+c4f42cf;:lipstick: 更新README.md样式问题
+M	README.md
+M	"markdown/\350\264\237\350\275\275\357\274\214\346\200\247\350\203\275\346\265\213\350\257\225\345\267\245\345\205\267-Gatling.md"
+
+4beef03;:pencil2: 完成负载,性能测试工具-Gatling的介绍
+M	README.md
+M	"markdown/\350\264\237\350\275\275\357\274\214\346\200\247\350\203\275\346\265\213\350\257\225\345\267\245\345\205\267-Gatling.md"
+
+602eb33;:pencil2: 修正Maven文档上的问题
+M	"markdown/\350\264\237\350\275\275\357\274\214\346\200\247\350\203\275\346\265\213\350\257\225\345\267\245\345\205\267-Gatling.md"
+
+4a6b481;:pencil2: 修改一些排版上的问题
+M	"markdown/\350\264\237\350\275\275\357\274\214\346\200\247\350\203\275\346\265\213\350\257\225\345\267\245\345\205\267-Gatling.md"
+
+62850a9;:memo: 增加HTTP,MQTT负载和性能测试工具Gatling
+M	README.md
+A	"markdown/\350\264\237\350\275\275\357\274\214\346\200\247\350\203\275\346\265\213\350\257\225\345\267\245\345\205\267-Gatling.md"
+
+1100a98;:memo: 完善README.md文档
+M	README.md
+A	pic/Middleware.jpg
+
+1c03540;:rocket: 添加netty之用netty实现IM功能(物联网,推送皆可！)
+A	netty-im/pom.xml
+A	netty-im/src/main/java/com/sanshengshui/nettyim/NettyImApplication.java
+A	netty-im/src/main/resources/application.properties
+A	netty-im/src/test/java/com/sanshengshui/nettyim/NettyImApplicationTests.java
+M	pom.xml
+
+08e150a;:rocket: 添加以netty为通讯框架实现RPC
+M	.gitignore
+A	netty-rpc/pom.xml
+A	netty-rpc/src/main/java/com/sanshengshui/rpc/NettyRpcApplication.java
+A	netty-rpc/src/main/resources/application.properties
+A	netty-rpc/src/test/java/com/sanshengshui/rpc/NettyRpcApplicationTests.java
+M	pom.xml
+
+39aff4b;:white_check_mark: 添加测试
+M	README.md
+M	netty-springboot-protobuf/pom.xml
+M	netty-springboot-protobuf/src/main/java/com/sanshengshui/netty/server/NettyServer.java
+M	netty-springboot-protobuf/src/main/resources/application.yml
+M	netty-springboot-protobuf/src/test/java/com/sanshengshui/nettyspringbootprotostuff/NettySpringbootProtostuffApplicationTests.java
+M	pom.xml
+
+5801ebc;:fire: 删除图片
+D	pic/netty-helloworld/Profiles.png
+D	pic/netty-helloworld/redisError.png
+D	"pic/netty-helloworld/\351\200\211\345\214\272_001.png"
+D	"pic/netty-helloworld/\351\200\211\345\214\272_002.png"
+
+b99c9ef;:fire: 删除markdown
+D	markdown/Netty.md
+D	"markdown/\350\257\255\350\250\200\346\214\207\345\215\227\357\274\210proto3\357\274\211.md"
+
+e659bfb;:fire: 删除README文档
+M	README.md
+
+5bcbb7f;:bulb: 文档README修改
+M	README.md
+
+ec66458;:bulb: 文档README撰写
+M	README.md
+
+82eb115;:bulb: 文档README撰写
+M	README.md
+
+5bef091;:memo: 文档重新提交
+M	"markdown/\350\257\255\350\250\200\346\214\207\345\215\227\357\274\210proto3\357\274\211.md"
+
+9ffed9b;:memo: 文档修改
+M	markdown/Netty.md
+
+a4068eb;:memo: 图片添加
+A	pic/netty-helloworld/Profiles.png
+A	pic/netty-helloworld/redisError.png
+A	"pic/netty-helloworld/\351\200\211\345\214\272_001.png"
+A	"pic/netty-helloworld/\351\200\211\345\214\272_002.png"
+D	pic/protobuf.jpg
+
+61b6110;:truck: 添加2篇文章
+A	markdown/Netty.md
+A	"markdown/\350\257\255\350\250\200\346\214\207\345\215\227\357\274\210proto3\357\274\211.md"
+
+5b2834a;:truck: README.md添加工程未来规划篇
+M	README.md
+
+a7c1d20;:memo: README.md文件中添加 netty之 netty 整合 Kafka producer
+M	README.md
+
+bca323c;Writing docs. netty 之 telnet HelloWorld 详解
+M	README.md
+
+5b06f0f;:construction: 对代码进行一些调试与部署,解决一些已知的bug
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttApp.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportHandler.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportServerInitializer.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportService.java
+M	netty-mqtt-coap/mqtt/src/main/resources/application.yml
+
+8138042;:construction: protobuf kafka初步完成
+M	netty-kafka/src/main/java/com/sanshengshui/kafka/NettyKafkaApplication.java
+A	netty-kafka/src/main/java/com/sanshengshui/kafka/controller/DemoController.java
+A	netty-kafka/src/main/java/com/sanshengshui/kafka/kafka/Adapter.java
+A	netty-kafka/src/main/java/com/sanshengshui/kafka/kafka/CallbackDeserializer.java
+A	netty-kafka/src/main/java/com/sanshengshui/kafka/kafka/CallbackSerializer.java
+A	netty-kafka/src/main/java/com/sanshengshui/kafka/kafka/Receiver.java
+A	netty-kafka/src/main/java/com/sanshengshui/kafka/kafka/Sender.java
+A	netty-kafka/src/main/java/com/sanshengshui/kafka/service/DemoService.java
+A	netty-kafka/src/main/java/com/sanshengshui/kafka/service/DemoServiceImpl.java
+A	netty-kafka/src/main/proto/helloworld.proto
+M	netty-kafka/src/main/resources/application.yml
+
+df49b71;:building_construction: 更改项目目录和结构
+M	netty-kafka/pom.xml
+A	netty-mqtt-coap/coap/src/test/java/com/sanshengshui/nettymqttcoap/coap/CoapApplicationTests.java
+A	netty-mqtt-coap/mqtt/src/test/java/com/sanshengshui/nettymqttcoap/mqtt/MqttApplicationTests.java
+
+bfe85d3;:heavy_plus_sign: netty-kafka添加依赖
+M	netty-kafka/pom.xml
+
+32a82e4;Merge remote-tracking branch 'origin/master'
+1bbff25;配置kafka 启动端口
+D	netty-kafka/src/main/resources/application.properties
+A	netty-kafka/src/main/resources/application.yml
+
+1f8ce4f;:loud_sound: 添加日志
+M	netty-http/src/main/java/com/sanshengshui/netty/HttpHelloWorldServerHandler.java
+
+71e6b06;:alembic: 增加Http post方法处理
+M	netty-http/pom.xml
+M	netty-http/src/main/java/com/sanshengshui/netty/HttpHelloWorldServerHandler.java
+
+14ced7b;重新部署功能
+M	netty-http/pom.xml
+M	netty-http/src/main/java/com/sanshengshui/netty/HttpHelloWorldServer.java
+M	netty-http/src/main/java/com/sanshengshui/netty/HttpHelloWorldServerHandler.java
+M	netty-http/src/main/java/com/sanshengshui/netty/HttpHelloWorldServerInitializer.java
+
+dc5829c;:heavy_minus_sign: 减少http-codec依赖
+M	netty-http/pom.xml
+
+85bb4b6;Writing code drunkenly. 添加mqtt消息处理类
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportHandler.java
+
+653fb1e;:rocket: netty之 netty 整合 Kafka producer
+M	.gitignore
+A	netty-kafka/pom.xml
+A	netty-kafka/src/main/java/com/sanshengshui/kafka/NettyKafkaApplication.java
+A	netty-kafka/src/main/resources/application.properties
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportHandler.java
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportServerInitializer.java
+M	pom.xml
+
+ca888bf;:pencil2: mqtt服务器优雅的关闭
+M	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportService.java
+
+5248502;netty实现mqtt服务器
+A	netty-mqtt-coap/coap/src/main/java/com/sanshengshui/coap/CoapApp.java
+A	netty-mqtt-coap/coap/src/main/resources/application.properties
+M	netty-mqtt-coap/mqtt/pom.xml
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttApp.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTopic.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportHandler.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportServerInitializer.java
+A	netty-mqtt-coap/mqtt/src/main/java/com/sanshengshui/mqtt/MqttTransportService.java
+A	netty-mqtt-coap/mqtt/src/main/resources/application.yml
+
+3de88aa;撰写文档
+M	README.md
+
+2b3e9b7;完成编辑
+M	README.md
+A	pic/protobuf.jpg
+
+a49bae6;netty-springboot-protobuf项目结构
+M	README.md
+
+32a4a94;看看效果
+M	README.md
+
+d8a0ba3;更新README文档
+M	README.md
+
+44182bc;更新README文档
+M	README.md
+
+3ae8a61;:sparkles: netty实现mqtt coap服务器工程
+M	pom.xml
+
+85c1cd2;netty实现mqtt coap服务器工程
+M	.gitignore
+A	netty-mqtt-coap/coap/pom.xml
+A	netty-mqtt-coap/mqtt/pom.xml
+M	netty-mqtt-coap/pom.xml
+
+bdcc84e;更改并新增 netty实现mqtt coap服务器
+M	.gitignore
+A	netty-mqtt-coap/pom.xml
+R097	netty-springboot-protostuff/pom.xml	netty-springboot-protobuf/pom.xml
+R100	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/NettyClientApp.java	netty-springboot-protobuf/src/main/java/com/sanshengshui/netty/NettyClientApp.java
+R100	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/NettyServerApp.java	netty-springboot-protobuf/src/main/java/com/sanshengshui/netty/NettyServerApp.java
+R100	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClient.java	netty-springboot-protobuf/src/main/java/com/sanshengshui/netty/client/NettyClient.java
+R100	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClientHandler.java	netty-springboot-protobuf/src/main/java/com/sanshengshui/netty/client/NettyClientHandler.java
+R100	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClientInitializer.java	netty-springboot-protobuf/src/main/java/com/sanshengshui/netty/client/NettyClientInitializer.java
+R100	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServer.java	netty-springboot-protobuf/src/main/java/com/sanshengshui/netty/server/NettyServer.java
+R100	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServerHandler.java	netty-springboot-protobuf/src/main/java/com/sanshengshui/netty/server/NettyServerHandler.java
+R100	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServerInitializer.java	netty-springboot-protobuf/src/main/java/com/sanshengshui/netty/server/NettyServerInitializer.java
+R100	netty-springboot-protostuff/src/main/proto/user.proto	netty-springboot-protobuf/src/main/proto/user.proto
+R100	netty-springboot-protostuff/src/main/resources/application.yml	netty-springboot-protobuf/src/main/resources/application.yml
+R100	netty-springboot-protostuff/src/test/java/com/sanshengshui/nettyspringbootprotostuff/NettySpringbootProtostuffApplicationTests.java	netty-springboot-protobuf/src/test/java/com/sanshengshui/nettyspringbootprotostuff/NettySpringbootProtostuffApplicationTests.java
+M	pom.xml
+
+9475623;:lock: 修复线程安全问题
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClientHandler.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServerHandler.java
+
+d2a86e9;:art: 优化所有的代码风格,使其更优雅!
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/NettyClientApp.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/NettyServerApp.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClient.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClientHandler.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClientInitializer.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServer.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServerHandler.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServerInitializer.java
+M	netty-springboot-protostuff/src/main/resources/application.yml
+
+259d7fd;从资源文件夹中读取启动信息
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServer.java
+M	netty-springboot-protostuff/src/main/resources/application.yml
+
+e6bb534;去除System,用lombok的slf4j来替代
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClient.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClientHandler.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServerHandler.java
+M	pom.xml
+
+5396691;:rocket: netty整合springboot并使用protobuf进行传输
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/NettyClientApp.java
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/NettyServerApp.java
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClient.java
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClientHandler.java
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/client/NettyClientInitializer.java
+M	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServer.java
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServerHandler.java
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServerInitializer.java
+
+a617a4f;编译成功
+M	netty-springboot-protostuff/pom.xml
+D	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/protobuf/user.proto
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/server/NettyServer.java
+A	netty-springboot-protostuff/src/main/proto/user.proto
+
+34e9130;:heavy_plus_sign: grpc优雅的方法:将proto文件转成java类
+M	netty-springboot-protostuff/pom.xml
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/protobuf/user.proto
+
+31de475;:heavy_plus_sign: 增加protobuf-java依赖
+M	netty-springboot-protostuff/pom.xml
+D	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/NettyServerApp.java
+D	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/protostuff/ProtoStuffSerializerUtil.java
+D	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/protostuff/User.java
+M	netty-springboot-protostuff/src/test/java/com/sanshengshui/nettyspringbootprotostuff/NettySpringbootProtostuffApplicationTests.java
+
+233d9e5;:white_check_mark: 添加protostuff单元测试
+A	netty-springboot-protostuff/src/test/java/com/sanshengshui/nettyspringbootprotostuff/NettySpringbootProtostuffApplicationTests.java
+
+a8c1dbf;使用protostuff序列化实体数据
+M	netty-springboot-protostuff/pom.xml
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/NettyServerApp.java
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/protostuff/ProtoStuffSerializerUtil.java
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/netty/protostuff/User.java
+D	netty-springboot-protostuff/src/main/java/com/sanshengshui/nettyspringbootprotostuff/NettySpringbootProtostuffApplication.java
+
+a2d1f62;netty整合springboot并整合protostuff进行数据传输
+M	.gitignore
+A	netty-springboot-protostuff/pom.xml
+A	netty-springboot-protostuff/src/main/java/com/sanshengshui/nettyspringbootprotostuff/NettySpringbootProtostuffApplication.java
+A	netty-springboot-protostuff/src/main/resources/application.yml
+M	pom.xml
+
+a917014;netty实现高性能http服务器 README文档撰写
+M	README.md
+
+c27b5d1;netty实现高性能http服务器
+M	.gitignore
+A	netty-http/pom.xml
+A	netty-http/src/main/java/com/sanshengshui/netty/HttpHelloWorldServer.java
+A	netty-http/src/main/java/com/sanshengshui/netty/HttpHelloWorldServerHandler.java
+A	netty-http/src/main/java/com/sanshengshui/netty/HttpHelloWorldServerInitializer.java
+M	pom.xml
+
+03c4ff3;修正一下
+M	README.md
+
+30e97ad;netty-learning-example 中 netty hello world实践篇添加
+M	README.md
+
+addae8d;:pencil2: 修复netty-helloworld客户端的一个错误
+M	netty-helloworld/src/main/java/com/sanshengshui/netty/client/ClientHandler.java
+
+3c420f9;:rocket: netty-helloworld客户端功能完成
+A	netty-helloworld/src/main/java/com/sanshengshui/netty/client/Client.java
+A	netty-helloworld/src/main/java/com/sanshengshui/netty/client/ClientHandler.java
+A	netty-helloworld/src/main/java/com/sanshengshui/netty/client/ClientInitializer.java
+M	netty-helloworld/src/main/java/com/sanshengshui/netty/server/Server.java
+
+845ed5b;:rocket: netty-helloworld服务端功能完成
+D	netty-helloworld/src/main/java/com/sanshengshui/netty/ServerHandler.java
+R052	netty-helloworld/src/main/java/com/sanshengshui/netty/Server.java	netty-helloworld/src/main/java/com/sanshengshui/netty/server/Server.java
+A	netty-helloworld/src/main/java/com/sanshengshui/netty/server/ServerHandler.java
+A	netty-helloworld/src/main/java/com/sanshengshui/netty/server/ServerInitializer.java
+
+4c5d9fd;Delete misc.xml
+D	.idea/misc.xml
+
+ace66ec;Delete let_netty_easy.iml
+D	let_netty_easy.iml
+
+1f2e151;netty 之 helloworld入门篇
+M	.gitignore
+A	netty-helloworld/pom.xml
+A	netty-helloworld/src/main/java/com/sanshengshui/netty/Server.java
+A	netty-helloworld/src/main/java/com/sanshengshui/netty/ServerHandler.java
+M	pom.xml
+
+91af706;:memo: 添加README.md文档和LICENSE文件
+A	.gitignore
+D	.idea/compiler.xml
+A	LICENSE
+A	README.md
+
+cf847e3;:tada: 让我一起学习Netty
+A	.idea/compiler.xml
+A	.idea/misc.xml
+A	let_netty_easy.iml
+A	pom.xml

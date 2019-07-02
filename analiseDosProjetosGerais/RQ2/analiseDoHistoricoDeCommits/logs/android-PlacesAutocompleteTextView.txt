@@ -1,0 +1,472 @@
+77bbbae;Merge pull request #76 from seatgeek/stephen-remove-kotlin
+9785682;Remove unused kotlin dependency
+M	build.gradle
+M	demo-app/build.gradle
+M	placesautocomplete/build.gradle
+
+b6cf5d9;Merge pull request #72 from tpincumbe/master
+12aa118;Downgraded mockito back to 1.10.19. Upgrade OkHttp to 3.10.0. Added Kotlin support.
+M	demo-app/build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	placesautocomplete/build.gradle
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/OkHttpPlacesHttpClient.java
+
+df2e4f5;Updated travis file to accept android sdk 27
+M	.travis.yml
+
+e774f3b;Updated gradle files.
+M	build.gradle
+M	demo-app/build.gradle
+M	gradle.properties
+M	placesautocomplete/build.gradle
+
+9cd7841;Merge pull request #70 from erikswed/master
+2a64eab;This Fixes memory leak when OkHttpPlacesHttpClient never closes the OkHttp Response. In the demo app the PlacesHttpClientResolver does not select OkHttpPlacesHttpClient so this error does not show in demo app.
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/OkHttpPlacesHttpClient.java
+
+b6ea2c5;This Fixes memory leak when OkHttpPlacesHttpClient never closes the OkHttp Response. In the demo app the PlacesHttpClientResolver does not select OkHttpPlacesHttpClient so this error does not show in demo app.
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/OkHttpPlacesHttpClient.java
+
+8322201;Updated gradle to work with Android Studio 3.0. Updated dependencies. Updated Travis.
+M	.travis.yml
+M	build.gradle
+M	demo-app/build.gradle
+M	demo-app/src/main/java/com/seatgeek/placesautocompletedemo/PlacesAutocompleteActivity.java
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	placesautocomplete/build.gradle
+
+6d727ff;Merge pull request #64 from erikswed/master
+d0bca1d;Fix 2 for PR #64 - Adding the clear "X" button so user can clear text.
+M	demo-app/src/main/java/com/seatgeek/placesautocompletedemo/PlacesAutocompleteActivity.java
+M	placesautocomplete/build.gradle
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+
+ece2a5f;Fix for PR #64 - Adding the clear "X" button so user can clear text.
+M	demo-app/src/main/java/com/seatgeek/placesautocompletedemo/PlacesAutocompleteActivity.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+
+59b88a1;Adding the clear "X" button so user can clear text.
+M	README.md
+M	demo-app/src/main/java/com/seatgeek/placesautocompletedemo/PlacesAutocompleteActivity.java
+M	demo-app/src/main/res/layout/activity_places_autocomplete.xml
+A	demo-app/src/main/res/menu/menu_main.xml
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+A	placesautocomplete/src/main/res/drawable/ic_clear_black_24dp.xml
+M	placesautocomplete/src/main/res/values/pacv_attrs.xml
+
+acf857b;Merge pull request #51 from seatgeek/pr-extract_mode_fix
+a77526d;Add tools to Travis components
+M	.travis.yml
+
+4981630;Update versions for Travis
+M	.travis.yml
+M	gradle.properties
+
+446b212;Make demo app AppCompat compatible and extend AppCompatAutocompleteTextView
+M	demo-app/src/main/java/com/seatgeek/placesautocompletedemo/PlacesAutocompleteActivity.java
+M	demo-app/src/main/res/values/styles.xml
+M	gradle.properties
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+
+1d51ccc;Merge pull request #52 from seatgeek/stephen-version-0.3
+80e34d6;Fix spelling error
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+
+19a734a;Prepare version 0.3-SNAPSHOT.
+M	CHANGELOG.md
+M	README.md
+M	gradle.properties
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AutocompleteResultType.java
+
+52ce452;Remove explicit support-v4 dependency
+M	placesautocomplete/build.gradle
+
+14da7e3;Update versions and add in override from TextInputEditText to fix extract mode hint
+M	demo-app/build.gradle
+M	demo-app/src/main/res/layout/activity_places_autocomplete.xml
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+M	placesautocomplete/build.gradle
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+
+f64adcb;Merge pull request #37 from qtmspin/master
+aef2889;Corrected code
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+
+ae17ae3;Added no type support
+M	demo-app/src/main/res/layout/activity_places_autocomplete.xml
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AutocompleteResultType.java
+M	placesautocomplete/src/main/res/values/pacv_attrs.xml
+
+7d63200;Update to version 0.2
+A	CHANGELOG.md
+M	README.md
+M	gradle.properties
+
+386488a;Merge pull request #22 from seatgeek/history-file-not-found
+77350e7;Remove file separator.
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/DefaultAutocompleteHistoryManager.java
+
+9ced768;Merge pull request #21 from seatgeek/fix-custom-adapter
+9ea6ffb;Ensure we're creating proper dirs for history file. Return collections.emptyList() instead of throwing FNF since that's the expected behavior. Closes #14
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/DefaultAutocompleteHistoryManager.java
+
+adbe1f9;Make the AbstractPlacesAutocompleteAdapter constructor public. Closes #11
+M	demo-app/src/main/res/layout/activity_places_autocomplete.xml
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/AbstractPlacesAutocompleteAdapter.java
+
+dea8474;Merge pull request #20 from seatgeek/update-powered-by-google
+f12ee8c;Update powered by Google attribution images. Closes #15
+A	placesautocomplete/src/main/res/drawable-hdpi/pacv_powered_by_google_on_non_white.png
+M	placesautocomplete/src/main/res/drawable-hdpi/pacv_powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable-ldpi/pacv_powered_by_google_on_non_white.png
+M	placesautocomplete/src/main/res/drawable-ldpi/pacv_powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable-mdpi/pacv_powered_by_google_on_non_white.png
+M	placesautocomplete/src/main/res/drawable-mdpi/pacv_powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable-xhdpi/pacv_powered_by_google_on_non_white.png
+M	placesautocomplete/src/main/res/drawable-xhdpi/pacv_powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable-xxhdpi/pacv_powered_by_google_on_non_white.png
+M	placesautocomplete/src/main/res/drawable-xxhdpi/pacv_powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable-xxxhdpi/pacv_powered_by_google_on_non_white.png
+M	placesautocomplete/src/main/res/drawable-xxxhdpi/pacv_powered_by_google_on_white.png
+M	placesautocomplete/src/main/res/drawable/pacv_popup_background_white.xml
+
+46d2468;Update sonatype auth.
+M	.travis.yml
+
+0104e9a;Merge pull request #17 from re3lex/feature
+b3cabd4;fix as per review: set languageCode in setApi() method
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+
+0a48001;Merge pull request #8 from jpetitto/jpetitto-android-json
+0d7bc3a;Add support for Android JSON parsing
+M	placesautocomplete/build.gradle
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/AndroidPlacesApiJsonParser.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/GsonPlacesApiJsonParser.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponent.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AlternativePlaceId.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/DateTimePair.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/OpenHours.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/OpenPeriod.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceDetails.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceGeometry.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceLocation.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacePhoto.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceReview.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/RatingAspect.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/util/ResourceUtils.java
+A	placesautocomplete/src/test/java/com/seatgeek/placesautocomplete/json/AndroidPlacesApiJsonParserTest.java
+A	placesautocomplete/src/test/java/com/seatgeek/placesautocomplete/json/AndroidPlacesApiJsonWriterTest.java
+
+cd0b7e6;changes as per review
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+M	placesautocomplete/src/main/res/values/pacv_attrs.xml
+
+7dde9cc;support providing language code using corresponding attribute fix usage of parameter for minSDKVersion in demo-app module
+M	demo-app/build.gradle
+M	demo-app/src/main/res/layout/activity_places_autocomplete.xml
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+M	placesautocomplete/src/main/res/values/pacv_attrs.xml
+
+347df1f;use getLanguage() as per google guide
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+
+725e28f;Revert "Merge branch 'master' into support_parcels"
+M	demo-app/build.gradle
+M	gradle.properties
+
+5bf85ad;Revert "support parcelable AddresComponet"
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponent.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponentType.java
+
+485b230;Revert "use getLanguage() as per google guidelines"
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+
+a9a630f;use getLanguage() as per google guidelines
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+
+307401a;Merge branch 'master' into support_parcels
+0d85002;fix gradle building
+M	demo-app/build.gradle
+M	gradle.properties
+
+129d694;support parcelable AddresComponet
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponent.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponentType.java
+
+a7cd3b3;Retrieve PlaceDetails using device's language
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+
+6c3c6b8;Update readme with proper link for api key generation
+M	README.md
+
+9575cc4;Merge pull request #6 from seatgeek/android-arsenal
+e8d5e39;Add android arsenal badge
+M	README.md
+
+41355fc;Fix typo in readme
+M	README.md
+
+587163a;Fixing ref'd repo name in deploy script
+M	buildscripts/deploy_snapshot.sh
+
+796a604;Switch to public travis for build status
+M	README.md
+
+4a83a3f;Fix badge
+M	README.md
+
+7c81ff2;Update gif
+M	demo-app/src/main/res/layout/activity_places_autocomplete.xml
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+M	resources/autocomplete.gif
+
+b6001cd;Update URL casing
+M	README.md
+M	gradle.properties
+M	placesautocomplete/gradle.properties
+
+8066de3;Typos, etc.
+M	README.md
+
+08b8c03;Fix issue with README layout
+M	README.md
+
+d502d0d;Javadocs.
+M	README.md
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/DetailsCallback.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/OnPlaceSelectedListener.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/AbstractPlacesAutocompleteAdapter.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/AutocompleteHistoryManager.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AutocompleteResultType.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/PlacesHttpClientResolver.java
+
+d7e830a;Finalized README updates.
+M	README.md
+
+da67355;Fix code formatting in list.
+M	README.md
+
+66e2040;Try again with list.
+M	README.md
+
+73274f6;SO says this will fix the list.
+M	README.md
+
+09f3d36;Table fix.
+M	README.md
+
+12fcb99;At a loss on what to do here rn... github markdown is not playing nice... renders perfectly in atom.
+M	README.md
+
+fa490b9;List fix try two. Markdown, uhg.
+M	README.md
+
+e777bb1;List fix attempt 2
+M	README.md
+
+e1e391a;Use hardocded list numbers. Sigh.
+M	README.md
+
+2279bac;Fix list formatting issue on README
+M	README.md
+
+75823d8;First pass at a README and abstracting the HistoryManager into an interface.
+M	README.md
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/AutocompleteHistoryManager.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/DefaultAutocompleteHistoryManager.java
+M	placesautocomplete/src/main/res/values/pacv_strings.xml
+
+3370cfd;Add gif to readme
+M	README.md
+A	resources/autocomplete.gif
+
+2a5416a;Remove unneeded allProjects blocks and unneeded repositories.
+M	build.gradle
+M	demo-app/build.gradle
+M	placesautocomplete/build.gradle
+
+9c8e7a0;Clean up resource prefixes and add implementation for demo application. Closes #1 Closes #3
+M	demo-app/build.gradle
+D	demo-app/src/androidTest/java/com/sddamico/placesautocompletedemo/ApplicationTest.java
+M	demo-app/src/main/AndroidManifest.xml
+D	demo-app/src/main/java/com/sddamico/placesautocompletedemo/PlacesAutocompleteActivity.java
+A	demo-app/src/main/java/com/seatgeek/placesautocompletedemo/PlacesAutocompleteActivity.java
+A	demo-app/src/main/java/com/seatgeek/placesautocompletedemo/TestPlacesAutocompleteAdapter.java
+A	demo-app/src/main/res/drawable/spacer_sixteen_dp.xml
+M	demo-app/src/main/res/layout/activity_places_autocomplete.xml
+A	demo-app/src/main/res/layout/places_autocomplete_item.xml
+D	demo-app/src/main/res/menu/menu_places_autocomplete.xml
+D	demo-app/src/main/res/values-v21/styles.xml
+D	demo-app/src/main/res/values/dimens.xml
+M	demo-app/src/main/res/values/strings.xml
+M	demo-app/src/main/res/values/styles.xml
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/DefaultAutocompleteAdapter.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/PlacesApiFilter.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/AutocompleteHistoryManager.java
+R100	placesautocomplete/src/main/res/drawable-hdpi/powered_by_google_on_white.png	placesautocomplete/src/main/res/drawable-hdpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable-ldpi/powered_by_google_on_white.png	placesautocomplete/src/main/res/drawable-ldpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable-mdpi/powered_by_google_on_white.png	placesautocomplete/src/main/res/drawable-mdpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable-xhdpi/powered_by_google_on_white.png	placesautocomplete/src/main/res/drawable-xhdpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable-xxhdpi/powered_by_google_on_white.png	placesautocomplete/src/main/res/drawable-xxhdpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable-xxxhdpi/powered_by_google_on_white.png	placesautocomplete/src/main/res/drawable-xxxhdpi/pacv_powered_by_google_on_white.png
+M	placesautocomplete/src/main/res/drawable/pacv_popup_background_white.xml
+R100	placesautocomplete/src/main/res/layout/pac_maps_autocomplete_item.xml	placesautocomplete/src/main/res/layout/pacv_maps_autocomplete_item.xml
+R050	placesautocomplete/src/main/res/values/attrs.xml	placesautocomplete/src/main/res/values/pacv_attrs.xml
+A	placesautocomplete/src/main/res/values/pacv_strings.xml
+R071	placesautocomplete/src/main/res/values/styles.xml	placesautocomplete/src/main/res/values/pacv_styles.xml
+D	placesautocomplete/src/main/res/values/strings.xml
+
+fd3bb08;Add initial demo app, enable configuring library versions from gradle.properties
+A	demo-app/.gitignore
+A	demo-app/build.gradle
+A	demo-app/proguard-rules.pro
+A	demo-app/src/androidTest/java/com/sddamico/placesautocompletedemo/ApplicationTest.java
+A	demo-app/src/main/AndroidManifest.xml
+A	demo-app/src/main/java/com/sddamico/placesautocompletedemo/PlacesAutocompleteActivity.java
+A	demo-app/src/main/res/layout/activity_places_autocomplete.xml
+A	demo-app/src/main/res/menu/menu_places_autocomplete.xml
+A	demo-app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	demo-app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	demo-app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	demo-app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	demo-app/src/main/res/values-v21/styles.xml
+A	demo-app/src/main/res/values-w820dp/dimens.xml
+A	demo-app/src/main/res/values/dimens.xml
+A	demo-app/src/main/res/values/strings.xml
+A	demo-app/src/main/res/values/styles.xml
+M	gradle.properties
+M	placesautocomplete/build.gradle
+M	settings.gradle
+
+e90ab45;Ensure usage of proper versionName and versionCode.
+M	placesautocomplete/build.gradle
+
+9d565f6;Delete unused files
+D	placesautocomplete/.gitignore
+D	placesautocomplete/.travis.yml
+D	placesautocomplete/proguard-rules.pro
+
+51eba11;Various code cleanups
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/DetailsCallback.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/OnPlaceSelectedListener.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApiBuilder.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/PlacesApiFilter.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/async/BackgroundExecutorService.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/async/BackgroundJob.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/AutocompleteHistoryManager.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/GsonPlacesApiJsonParser.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/PlacesApiJsonParser.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AutocompleteResultType.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/AbstractPlacesHttpClient.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/HttpUrlConnectionMapsHttpClient.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/OkHttpPlacesHttpClient.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/PlacesHttpClient.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/ResponseHandler.java
+M	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/util/ArrayAdapterDelegate.java
+
+a2e7de7;Use correct gradle commands for assemble.
+M	.travis.yml
+
+50bc532;Fix build tools version.
+M	placesautocomplete/build.gradle
+
+994b657;Add build status badge
+M	README.md
+
+0ff01c5;Add travis config
+A	.travis.yml
+M	placesautocomplete/build.gradle
+
+c831440;Initial code drop.
+A	.gitignore
+A	LICENSE.txt
+A	README.md
+A	RELEASING.md
+A	build.gradle
+A	buildscripts/deploy_snapshot.sh
+A	gradle.properties
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+A	placesautocomplete/.gitignore
+A	placesautocomplete/.travis.yml
+A	placesautocomplete/build.gradle
+A	placesautocomplete/gradle.properties
+A	placesautocomplete/proguard-rules.pro
+A	placesautocomplete/src/main/AndroidManifest.xml
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/Constants.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/DetailsCallback.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/OnPlaceSelectedListener.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlaceDetailsLoadingFailure.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApiBuilder.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/AbstractPlacesAutocompleteAdapter.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/DefaultAutocompleteAdapter.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/PlacesApiFilter.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/async/BackgroundExecutorService.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/async/BackgroundJob.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/AutocompleteHistoryManager.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/OnHistoryUpdatedListener.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/AndroidPlacesApiJsonParser.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/GsonPlacesApiJsonParser.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/JsonParserResolver.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/JsonParsingException.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/JsonWritingException.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/PlacesApiJsonParser.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponent.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponentType.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AlternativePlaceId.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AutocompleteResultType.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/DateTimePair.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/DescriptionTerm.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/MatchedSubstring.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/OpenHours.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/OpenPeriod.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/Place.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceDetails.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceGeometry.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceLocation.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacePhoto.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceReview.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceScope.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceType.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacesApiException.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacesApiResponse.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacesAutocompleteResponse.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacesDetailsResponse.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/Status.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/AbstractPlacesHttpClient.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/HttpUrlConnectionMapsHttpClient.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/OkHttpPlacesHttpClient.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/PlacesHttpClient.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/PlacesHttpClientResolver.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/ResponseHandler.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/util/ArrayAdapterDelegate.java
+A	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/util/LocationUtils.java
+A	placesautocomplete/src/main/res/drawable-hdpi/powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable-ldpi/powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable-mdpi/powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable-xhdpi/powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable-xxhdpi/powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable-xxxhdpi/powered_by_google_on_white.png
+A	placesautocomplete/src/main/res/drawable/pacv_popup_background_white.xml
+A	placesautocomplete/src/main/res/layout/pac_maps_autocomplete_item.xml
+A	placesautocomplete/src/main/res/values/attrs.xml
+A	placesautocomplete/src/main/res/values/strings.xml
+A	placesautocomplete/src/main/res/values/styles.xml
+A	settings.gradle

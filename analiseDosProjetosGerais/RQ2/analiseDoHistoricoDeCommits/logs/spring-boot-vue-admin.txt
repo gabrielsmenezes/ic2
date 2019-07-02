@@ -1,0 +1,912 @@
+381aa5a;Upgrade webpack-dev-server to version 3.1.11
+M	app/package.json
+
+0b67486;update RSAUtils
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+
+88292cb;Merge pull request #8 from eesc88/master
+d5e526d;发布问题修复
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+
+2146a2b;fix role page limit
+M	api/api.iml
+M	api/pom.xml
+M	api/src/main/java/com/zoctan/api/controller/PermissionController.java
+M	api/src/main/java/com/zoctan/api/controller/RoleController.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+A	api/src/main/java/com/zoctan/api/dto/RoleWithPermission.java
+M	api/src/main/java/com/zoctan/api/mapper/PermissionMapper.java
+M	api/src/main/java/com/zoctan/api/mapper/RoleMapper.java
+A	api/src/main/java/com/zoctan/api/model/Handle.java
+M	api/src/main/java/com/zoctan/api/model/Resource.java
+M	api/src/main/java/com/zoctan/api/model/Role.java
+A	api/src/main/java/com/zoctan/api/model/RoleWithResource.java
+M	api/src/main/java/com/zoctan/api/service/PermissionService.java
+M	api/src/main/java/com/zoctan/api/service/RoleService.java
+M	api/src/main/java/com/zoctan/api/service/impl/PermissionServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/RoleServiceImpl.java
+M	api/src/main/resources/mapper/PermissionMapper.xml
+M	api/src/main/resources/mapper/RoleMapper.xml
+M	app/package-lock.json
+M	app/src/views/role/index.vue
+
+72de127;debug role controller
+M	README.md
+M	api/README.md
+M	api/src/main/java/com/zoctan/api/controller/PermissionController.java
+M	api/src/main/java/com/zoctan/api/controller/RoleController.java
+M	api/src/main/java/com/zoctan/api/controller/UserController.java
+M	api/src/main/java/com/zoctan/api/core/config/WebMvcConfig.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+M	api/src/main/java/com/zoctan/api/mapper/RoleMapper.java
+M	api/src/main/java/com/zoctan/api/model/Resource.java
+M	api/src/main/java/com/zoctan/api/service/RoleService.java
+M	api/src/main/java/com/zoctan/api/service/impl/RoleServiceImpl.java
+
+00f37b9;update readme
+M	README.md
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+M	api/src/main/java/com/zoctan/api/service/UserService.java
+
+adc7ec3;add log to exception resolver & fix status code
+M	api/src/main/java/com/zoctan/api/core/config/WebSecurityConfig.java
+M	api/src/main/java/com/zoctan/api/core/exception/ExceptionResolver.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/main/resources/application-prod.properties
+M	api/src/main/resources/application-test.properties
+M	api/src/main/resources/application.properties
+
+baa3968;update readme
+M	README.md
+D	README/.fuse_hidden0000bfc400000001
+
+b9cb3be;change "web" folder to "app" & add annotation for font-end
+A	README/.fuse_hidden0000bfc400000001
+M	README/4.png
+
+7915520;change "web" folder to "app" & add annotation for font-end
+M	README.md
+A	README/4.png
+M	api/resetDB.sh
+M	api/src/main/java/com/zoctan/api/controller/UserController.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtUtil.java
+M	api/src/main/java/com/zoctan/api/mapper/UserMapper.java
+M	api/src/main/java/com/zoctan/api/model/User.java
+M	api/src/main/java/com/zoctan/api/service/UserService.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserServiceImpl.java
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/main/resources/application-prod.properties
+M	api/src/main/resources/application-test.properties
+M	api/src/main/resources/mapper/UserMapper.xml
+M	api/src/test/resources/dev/sql/permission.sql
+M	api/src/test/resources/dev/sql/role.sql
+M	api/src/test/resources/dev/sql/role_permission.sql
+M	api/src/test/resources/dev/sql/user.sql
+M	api/src/test/resources/dev/sql/user_role.sql
+A	app/.babelrc
+R060	web/.editorconfig	app/.editorconfig
+A	app/.eslintignore
+A	app/.eslintrc.js
+A	app/.gitignore
+R080	web/.postcssrc.js	app/.postcssrc.js
+A	app/README.md
+R074	web/build/build.js	app/build/build.js
+R098	web/build/check-versions.js	app/build/check-versions.js
+R066	web/build/utils.js	app/build/utils.js
+A	app/build/vue-loader.conf.js
+R053	web/build/webpack.base.conf.js	app/build/webpack.base.conf.js
+A	app/build/webpack.dev.conf.js
+R065	web/build/webpack.prod.conf.js	app/build/webpack.prod.conf.js
+R073	web/config/dev.env.js	app/config/dev.env.js
+A	app/config/index.js
+A	app/config/prod.env.js
+A	app/config/test.env.js
+R100	web/favicon.ico	app/favicon.ico
+A	app/index.html
+A	app/package-lock.json
+A	app/package.json
+R070	web/src/App.vue	app/src/App.vue
+R100	web/src/api/role.js	app/src/api/role.js
+R100	web/src/api/user.js	app/src/api/user.js
+R100	web/src/assets/401_images/401.gif	app/src/assets/401Images/401.gif
+R100	web/src/assets/404_images/404.png	app/src/assets/404Images/404.png
+R100	web/src/assets/404_images/404_cloud.png	app/src/assets/404Images/404cloud.png
+R088	web/src/components/Hamburger/index.vue	app/src/components/Hamburger/index.vue
+A	app/src/components/Icon-svg/index.vue
+R100	web/src/icons/index.js	app/src/icons/index.js
+R100	web/src/icons/svg/dashboard.svg	app/src/icons/svg/dashboard.svg
+R100	web/src/icons/svg/eye.svg	app/src/icons/svg/eye.svg
+R100	web/src/icons/svg/password.svg	app/src/icons/svg/password.svg
+R100	web/src/icons/svg/permission.svg	app/src/icons/svg/permission.svg
+R100	web/src/icons/svg/username.svg	app/src/icons/svg/username.svg
+R094	web/src/main.js	app/src/main.js
+R100	web/src/permission.js	app/src/permission.js
+R100	web/src/router/_import_development.js	app/src/router/_import_development.js
+R100	web/src/router/_import_production.js	app/src/router/_import_production.js
+R100	web/src/router/index.js	app/src/router/index.js
+R091	web/src/store/getters.js	app/src/store/getters.js
+R100	web/src/store/index.js	app/src/store/index.js
+R096	web/src/store/modules/app.js	app/src/store/modules/app.js
+R100	web/src/store/modules/permission.js	app/src/store/modules/permission.js
+R094	web/src/store/modules/user.js	app/src/store/modules/user.js
+R100	web/src/styles/element-variables.scss	app/src/styles/element-variables.scss
+R100	web/src/styles/index.scss	app/src/styles/index.scss
+R100	web/src/styles/mixin.scss	app/src/styles/mixin.scss
+R100	web/src/utils/hasPermission.js	app/src/utils/hasPermission.js
+R100	web/src/utils/index.js	app/src/utils/index.js
+R088	web/src/utils/request.js	app/src/utils/request.js
+R100	web/src/utils/token.js	app/src/utils/token.js
+R100	web/src/utils/validate.js	app/src/utils/validate.js
+R073	web/src/views/dashboard/index.vue	app/src/views/dashboard/index.vue
+R078	web/src/views/errorPage/401.vue	app/src/views/errorPage/401.vue
+R095	web/src/views/errorPage/404.vue	app/src/views/errorPage/404.vue
+R082	web/src/views/layout/Layout.vue	app/src/views/layout/Layout.vue
+R050	web/src/views/layout/components/AppMain.vue	app/src/views/layout/components/AppMain.vue
+R062	web/src/views/layout/components/Levelbar.vue	app/src/views/layout/components/Levelbar.vue
+R076	web/src/views/layout/components/Navbar.vue	app/src/views/layout/components/Navbar.vue
+R081	web/src/views/layout/components/Sidebar/SidebarItem.vue	app/src/views/layout/components/Sidebar/SidebarItem.vue
+R060	web/src/views/layout/components/Sidebar/index.vue	app/src/views/layout/components/Sidebar/index.vue
+R100	web/src/views/layout/components/index.js	app/src/views/layout/components/index.js
+R063	web/src/views/login/index.vue	app/src/views/login/index.vue
+R071	web/src/views/role/index.vue	app/src/views/role/index.vue
+R073	web/src/views/user/index.vue	app/src/views/user/index.vue
+A	app/src/views/userCenter/index.vue
+R100	web/static/.gitkeep	app/static/.gitkeep
+A	app/test/e2e/custom-assertions/elementCount.js
+A	app/test/e2e/nightwatch.conf.js
+A	app/test/e2e/runner.js
+A	app/test/e2e/specs/test.js
+A	app/test/unit/.eslintrc
+A	app/test/unit/jest.conf.js
+A	app/test/unit/setup.js
+A	app/test/unit/specs/HelloWorld.spec.js
+D	web/.babelrc
+D	web/.eslintignore
+D	web/.eslintrc.js
+D	web/.gitignore
+D	web/.idea/.name
+D	web/.idea/inspectionProfiles/Project_Default.xml
+D	web/.idea/misc.xml
+D	web/.idea/modules.xml
+D	web/.idea/vcs.xml
+D	web/.idea/web.iml
+D	web/.idea/workspace.xml
+D	web/build/dev-client.js
+D	web/build/dev-server.js
+D	web/build/vue-loader.conf.js
+D	web/build/webpack.dev.conf.js
+D	web/config/index.js
+D	web/config/prod.env.js
+D	web/index.html
+D	web/package-lock.json
+D	web/package.json
+D	web/src/components/Icon-svg/index.vue
+D	web/src/views/userCenter/index.vue
+
+e92f814;make new bug...
+D	vue/index.html
+D	vue/src/App.vue
+D	vue/src/components/Hamburger/index.vue
+D	vue/src/utils/date.js
+D	vue/src/utils/index.js
+D	vue/src/views/layout/Layout.vue
+R100	vue/.babelrc	web/.babelrc
+R100	vue/.editorconfig	web/.editorconfig
+R100	vue/.eslintignore	web/.eslintignore
+R099	vue/.eslintrc.js	web/.eslintrc.js
+R100	vue/.gitignore	web/.gitignore
+A	web/.idea/.name
+A	web/.idea/inspectionProfiles/Project_Default.xml
+A	web/.idea/misc.xml
+A	web/.idea/modules.xml
+A	web/.idea/vcs.xml
+A	web/.idea/web.iml
+A	web/.idea/workspace.xml
+R100	vue/.postcssrc.js	web/.postcssrc.js
+R100	vue/build/build.js	web/build/build.js
+R100	vue/build/check-versions.js	web/build/check-versions.js
+R100	vue/build/dev-client.js	web/build/dev-client.js
+R100	vue/build/dev-server.js	web/build/dev-server.js
+R092	vue/build/utils.js	web/build/utils.js
+R100	vue/build/vue-loader.conf.js	web/build/vue-loader.conf.js
+R094	vue/build/webpack.base.conf.js	web/build/webpack.base.conf.js
+R100	vue/build/webpack.dev.conf.js	web/build/webpack.dev.conf.js
+R100	vue/build/webpack.prod.conf.js	web/build/webpack.prod.conf.js
+R057	vue/config/dev.env.js	web/config/dev.env.js
+R100	vue/config/index.js	web/config/index.js
+R100	vue/config/prod.env.js	web/config/prod.env.js
+R100	vue/favicon.ico	web/favicon.ico
+A	web/index.html
+A	web/package-lock.json
+R098	vue/package.json	web/package.json
+A	web/src/App.vue
+R100	vue/src/api/role.js	web/src/api/role.js
+R100	vue/src/api/user.js	web/src/api/user.js
+R100	vue/src/assets/401_images/401.gif	web/src/assets/401_images/401.gif
+R100	vue/src/assets/404_images/404.png	web/src/assets/404_images/404.png
+R100	vue/src/assets/404_images/404_cloud.png	web/src/assets/404_images/404_cloud.png
+A	web/src/components/Hamburger/index.vue
+R100	vue/src/components/Icon-svg/index.vue	web/src/components/Icon-svg/index.vue
+R100	vue/src/icons/index.js	web/src/icons/index.js
+R100	vue/src/icons/svg/dashboard.svg	web/src/icons/svg/dashboard.svg
+R100	vue/src/icons/svg/eye.svg	web/src/icons/svg/eye.svg
+R100	vue/src/icons/svg/password.svg	web/src/icons/svg/password.svg
+R100	vue/src/icons/svg/permission.svg	web/src/icons/svg/permission.svg
+R100	vue/src/icons/svg/username.svg	web/src/icons/svg/username.svg
+R092	vue/src/main.js	web/src/main.js
+R100	vue/src/permission.js	web/src/permission.js
+R063	vue/src/router/_import_development.js	web/src/router/_import_development.js
+R100	vue/src/router/_import_production.js	web/src/router/_import_production.js
+R082	vue/src/router/index.js	web/src/router/index.js
+R100	vue/src/store/getters.js	web/src/store/getters.js
+R100	vue/src/store/index.js	web/src/store/index.js
+R100	vue/src/store/modules/app.js	web/src/store/modules/app.js
+R100	vue/src/store/modules/permission.js	web/src/store/modules/permission.js
+R097	vue/src/store/modules/user.js	web/src/store/modules/user.js
+R100	vue/src/styles/element-variables.scss	web/src/styles/element-variables.scss
+R095	vue/src/styles/index.scss	web/src/styles/index.scss
+R100	vue/src/styles/mixin.scss	web/src/styles/mixin.scss
+R100	vue/src/utils/hasPermission.js	web/src/utils/hasPermission.js
+A	web/src/utils/index.js
+R100	vue/src/utils/request.js	web/src/utils/request.js
+R100	vue/src/utils/token.js	web/src/utils/token.js
+R100	vue/src/utils/validate.js	web/src/utils/validate.js
+R099	vue/src/views/dashboard/index.vue	web/src/views/dashboard/index.vue
+R100	vue/src/views/errorPage/401.vue	web/src/views/errorPage/401.vue
+R099	vue/src/views/errorPage/404.vue	web/src/views/errorPage/404.vue
+A	web/src/views/layout/Layout.vue
+R091	vue/src/views/layout/components/AppMain.vue	web/src/views/layout/components/AppMain.vue
+R087	vue/src/views/layout/components/Levelbar.vue	web/src/views/layout/components/Levelbar.vue
+R094	vue/src/views/layout/components/Navbar.vue	web/src/views/layout/components/Navbar.vue
+R074	vue/src/views/layout/components/Sidebar/SidebarItem.vue	web/src/views/layout/components/Sidebar/SidebarItem.vue
+R090	vue/src/views/layout/components/Sidebar/index.vue	web/src/views/layout/components/Sidebar/index.vue
+R100	vue/src/views/layout/components/index.js	web/src/views/layout/components/index.js
+R091	vue/src/views/login/index.vue	web/src/views/login/index.vue
+R088	vue/src/views/role/index.vue	web/src/views/role/index.vue
+R090	vue/src/views/user/index.vue	web/src/views/user/index.vue
+R091	vue/src/views/userCenter/index.vue	web/src/views/userCenter/index.vue
+R100	vue/static/.gitkeep	web/static/.gitkeep
+
+f9ca3cd;add @EnableTransactionManagement(proxyTargetClass = true) to fix jdk dynamic proxy error
+M	api/src/main/java/com/zoctan/api/Application.java
+M	api/src/main/java/com/zoctan/api/controller/UserController.java
+M	api/src/main/java/com/zoctan/api/core/ProjectConstant.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+M	api/src/main/java/com/zoctan/api/core/service/AbstractService.java
+M	api/src/main/java/com/zoctan/api/core/service/Service.java
+M	api/src/main/java/com/zoctan/api/mapper/PermissionMapper.java
+M	api/src/main/java/com/zoctan/api/mapper/RoleMapper.java
+M	api/src/main/java/com/zoctan/api/mapper/RolePermissionMapper.java
+M	api/src/main/java/com/zoctan/api/mapper/UserMapper.java
+M	api/src/main/java/com/zoctan/api/model/Role.java
+M	api/src/main/java/com/zoctan/api/service/PermissionService.java
+M	api/src/main/java/com/zoctan/api/service/RoleService.java
+M	api/src/main/java/com/zoctan/api/service/UserRoleService.java
+M	api/src/main/java/com/zoctan/api/service/UserService.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserServiceImpl.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/main/resources/mapper/PermissionMapper.xml
+M	api/src/test/java/CodeGenerator.java
+M	api/src/test/java/JasyptStringEncryptor.java
+M	api/src/test/java/PasswordEncryptor.java
+M	api/src/test/java/com/zoctan/api/BaseControllerTest.java
+M	api/src/test/java/com/zoctan/api/RSASignTest.java
+M	api/src/test/resources/generator/template/controller-restful.ftl
+M	api/src/test/resources/generator/template/controller.ftl
+M	api/src/test/resources/generator/template/service-impl.ftl
+M	api/src/test/resources/generator/template/service.ftl
+
+a1aa563;delete null used code & reids & cache(tmp test)
+M	api/api.iml
+M	api/pom.xml
+M	api/src/main/java/com/zoctan/api/Application.java
+M	api/src/main/java/com/zoctan/api/controller/PermissionController.java
+M	api/src/main/java/com/zoctan/api/controller/RoleController.java
+M	api/src/main/java/com/zoctan/api/controller/UserController.java
+M	api/src/main/java/com/zoctan/api/controller/UserRoleController.java
+M	api/src/main/java/com/zoctan/api/core/ProjectConstant.java
+D	api/src/main/java/com/zoctan/api/core/config/RedisConfig.java
+D	api/src/main/java/com/zoctan/api/core/config/Swagger2Config.java
+M	api/src/main/java/com/zoctan/api/core/config/ValidatorConfig.java
+M	api/src/main/java/com/zoctan/api/core/config/WebMvcConfig.java
+M	api/src/main/java/com/zoctan/api/core/config/WebSecurityConfig.java
+M	api/src/main/java/com/zoctan/api/core/exception/ExceptionResolver.java
+M	api/src/main/java/com/zoctan/api/core/exception/ServiceException.java
+A	api/src/main/java/com/zoctan/api/core/jwt/JWTSetting.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationEntryPoint.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtUtil.java
+M	api/src/main/java/com/zoctan/api/core/mapper/MyMapper.java
+M	api/src/main/java/com/zoctan/api/core/response/Result.java
+M	api/src/main/java/com/zoctan/api/core/response/ResultGenerator.java
+M	api/src/main/java/com/zoctan/api/core/service/AbstractService.java
+M	api/src/main/java/com/zoctan/api/core/service/Service.java
+M	api/src/main/java/com/zoctan/api/mapper/PermissionMapper.java
+M	api/src/main/java/com/zoctan/api/mapper/RoleMapper.java
+M	api/src/main/java/com/zoctan/api/mapper/RolePermissionMapper.java
+M	api/src/main/java/com/zoctan/api/mapper/UserMapper.java
+M	api/src/main/java/com/zoctan/api/mapper/UserRoleMapper.java
+M	api/src/main/java/com/zoctan/api/model/Permission.java
+M	api/src/main/java/com/zoctan/api/model/Resource.java
+M	api/src/main/java/com/zoctan/api/model/Role.java
+M	api/src/main/java/com/zoctan/api/model/RolePermission.java
+M	api/src/main/java/com/zoctan/api/model/User.java
+M	api/src/main/java/com/zoctan/api/model/UserRole.java
+M	api/src/main/java/com/zoctan/api/service/RolePermissionService.java
+M	api/src/main/java/com/zoctan/api/service/RoleService.java
+M	api/src/main/java/com/zoctan/api/service/UserRoleService.java
+M	api/src/main/java/com/zoctan/api/service/UserService.java
+M	api/src/main/java/com/zoctan/api/service/impl/PermissionServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/RolePermissionServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/RoleServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserDetailsServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserRoleServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserServiceImpl.java
+D	api/src/main/java/com/zoctan/api/util/Base64Util.java
+D	api/src/main/java/com/zoctan/api/util/DateUtil.java
+D	api/src/main/java/com/zoctan/api/util/IdUtil.java
+M	api/src/main/java/com/zoctan/api/util/IpUtil.java
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+D	api/src/main/java/com/zoctan/api/util/RedisUtil.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/test/resources/dev/sql/user.sql
+
+02c9687;update
+M	README.md
+M	vue/src/main.js
+
+00f9b45;update readme, update code
+M	README.md
+M	api/README.md
+M	api/src/main/java/com/zoctan/api/service/impl/UserServiceImpl.java
+
+0d4ffd0;update
+M	api/src/main/java/com/zoctan/api/controller/UserController.java
+M	api/src/main/java/com/zoctan/api/core/config/RedisConfig.java
+M	api/src/main/java/com/zoctan/api/core/config/WebMvcConfig.java
+M	api/src/main/java/com/zoctan/api/core/config/WebSecurityConfig.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationEntryPoint.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtUtil.java
+M	api/src/main/java/com/zoctan/api/core/service/AbstractService.java
+M	api/src/main/java/com/zoctan/api/service/impl/RoleServiceImpl.java
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+M	api/src/main/java/com/zoctan/api/util/RedisUtil.java
+
+593113f;u
+M	api/README.md
+
+732aaf6;update
+M	README.md
+
+67e76f2;u
+M	README.md
+
+db32737;u
+M	README.md
+
+5c6fbdd;update
+M	api/README.md
+M	api/src/main/java/com/zoctan/api/controller/PermissionController.java
+M	api/src/main/java/com/zoctan/api/controller/RoleController.java
+M	api/src/main/java/com/zoctan/api/controller/UserController.java
+M	api/src/main/java/com/zoctan/api/core/config/RedisConfig.java
+M	api/src/main/java/com/zoctan/api/core/config/ValidatorConfig.java
+M	api/src/main/java/com/zoctan/api/core/config/WebMvcConfig.java
+M	api/src/main/java/com/zoctan/api/core/exception/ExceptionResolver.java
+D	api/src/main/java/com/zoctan/api/core/exception/UtilException.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtUtil.java
+M	api/src/main/java/com/zoctan/api/core/response/Result.java
+M	api/src/main/java/com/zoctan/api/core/service/AbstractService.java
+M	api/src/main/java/com/zoctan/api/core/service/Service.java
+M	api/src/main/java/com/zoctan/api/model/Resource.java
+M	api/src/main/java/com/zoctan/api/service/impl/PermissionServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/RolePermissionServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/RoleServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserDetailsServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserRoleServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserServiceImpl.java
+M	api/src/main/java/com/zoctan/api/util/Base64Util.java
+M	api/src/main/java/com/zoctan/api/util/DateUtil.java
+M	api/src/main/java/com/zoctan/api/util/IdUtil.java
+M	api/src/main/java/com/zoctan/api/util/IpUtil.java
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+R099	api/src/main/java/com/zoctan/api/core/redis/RedisUtil.java	api/src/main/java/com/zoctan/api/util/RedisUtil.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/test/java/CodeGenerator.java
+M	api/src/test/java/com/zoctan/api/UserControllerTest.java
+M	api/src/test/resources/generator/template/service-impl.ftl
+
+52cc7e6;update readme
+M	README.md
+
+2f1dd0d;u
+M	README.md
+
+f50ee17;u
+M	api/README.md
+
+cfdf15b;u
+M	README.md
+M	api/README.md
+
+3c01573;u
+M	README.md
+
+edff152;u
+M	README.md
+
+293bf5b;u
+M	README.md
+A	README/1.png
+A	README/2.png
+A	README/3.png
+M	api/README.md
+M	api/src/main/java/com/zoctan/api/controller/PermissionController.java
+M	api/src/main/java/com/zoctan/api/controller/RoleController.java
+M	api/src/main/java/com/zoctan/api/controller/UserController.java
+M	api/src/main/java/com/zoctan/api/core/config/RedisConfig.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+M	api/src/main/java/com/zoctan/api/mapper/PermissionMapper.java
+M	api/src/main/java/com/zoctan/api/service/PermissionService.java
+M	api/src/main/java/com/zoctan/api/service/impl/PermissionServiceImpl.java
+M	api/src/main/resources/mapper/PermissionMapper.xml
+M	api/src/test/java/CodeGenerator.java
+M	vue/src/api/role.js
+
+57cdbe5;u
+M	api/README.md
+
+2a6fb32;u
+M	api/README.md
+
+759158b;u
+M	README.md
+M	api/README.md
+
+a116e2e;u
+M	README.md
+M	api/README.md
+
+5adb7c2;u
+M	README.md
+M	api/README.md
+A	api/README/database.png
+A	api/README/permission.png
+A	api/README/role.png
+A	api/README/role_permission.png
+A	api/README/user.png
+A	api/README/user_role.png
+M	api/src/main/java/com/zoctan/api/core/config/WebSecurityConfig.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserDetailsServiceImpl.java
+
+429c777;u
+M	README.md
+
+b90fabf;first release
+M	api/src/main/java/com/zoctan/api/controller/UserController.java
+M	api/src/test/java/PasswordEncryptor.java
+M	api/src/test/resources/dev/sql/user.sql
+M	vue/index.html
+M	vue/package.json
+M	vue/src/App.vue
+M	vue/src/api/user.js
+M	vue/src/components/Hamburger/index.vue
+M	vue/src/permission.js
+M	vue/src/store/modules/user.js
+M	vue/src/utils/request.js
+M	vue/src/views/dashboard/index.vue
+M	vue/src/views/errorPage/401.vue
+M	vue/src/views/errorPage/404.vue
+M	vue/src/views/layout/Layout.vue
+M	vue/src/views/layout/components/AppMain.vue
+D	vue/src/views/layout/components/LevelBar.vue
+A	vue/src/views/layout/components/Levelbar.vue
+R064	vue/src/views/layout/components/NavBar.vue	vue/src/views/layout/components/Navbar.vue
+M	vue/src/views/layout/components/Sidebar/SidebarItem.vue
+M	vue/src/views/layout/components/Sidebar/index.vue
+M	vue/src/views/layout/components/index.js
+M	vue/src/views/login/index.vue
+M	vue/src/views/role/index.vue
+M	vue/src/views/user/index.vue
+M	vue/src/views/userCenter/index.vue
+
+514800f;update
+M	api/src/main/java/com/zoctan/api/Application.java
+M	api/src/main/java/com/zoctan/api/controller/PermissionController.java
+M	api/src/main/java/com/zoctan/api/controller/RoleController.java
+M	api/src/main/java/com/zoctan/api/core/config/WebMvcConfig.java
+M	api/src/main/java/com/zoctan/api/mapper/RoleMapper.java
+M	api/src/main/java/com/zoctan/api/mapper/RolePermissionMapper.java
+M	api/src/main/java/com/zoctan/api/model/Resource.java
+M	api/src/main/java/com/zoctan/api/model/Role.java
+M	api/src/main/java/com/zoctan/api/service/RoleService.java
+M	api/src/main/java/com/zoctan/api/service/impl/RoleServiceImpl.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/main/resources/mapper/PermissionMapper.xml
+M	api/src/main/resources/mapper/RoleMapper.xml
+M	api/src/main/resources/mapper/RolePermissionMapper.xml
+M	api/src/main/resources/mapper/UserRoleMapper.xml
+M	api/src/test/resources/dev/sql/role_permission.sql
+M	api/src/test/resources/dev/sql/user_role.sql
+M	api/src/test/resources/generator/template/controller.ftl
+M	vue/src/api/role.js
+M	vue/src/api/user.js
+M	vue/src/router/index.js
+M	vue/src/store/getters.js
+A	vue/src/utils/date.js
+M	vue/src/utils/request.js
+M	vue/src/views/dashboard/index.vue
+M	vue/src/views/layout/components/NavBar.vue
+M	vue/src/views/layout/components/Sidebar/index.vue
+M	vue/src/views/layout/components/index.js
+M	vue/src/views/login/index.vue
+M	vue/src/views/role/index.vue
+M	vue/src/views/user/index.vue
+A	vue/src/views/userCenter/index.vue
+
+aeba273;u
+M	api/src/main/java/com/zoctan/api/controller/PermissionController.java
+M	api/src/main/java/com/zoctan/api/controller/RoleController.java
+D	api/src/main/java/com/zoctan/api/controller/RolePermissionController.java
+M	api/src/main/java/com/zoctan/api/service/PermissionService.java
+D	vue/src/api/permission.js
+M	vue/src/api/role.js
+M	vue/src/views/role/index.vue
+M	vue/src/views/user/index.vue
+
+78affab;u
+M	api/src/main/java/com/zoctan/api/controller/PermissionController.java
+M	api/src/main/java/com/zoctan/api/mapper/PermissionMapper.java
+A	api/src/main/java/com/zoctan/api/model/Resource.java
+M	api/src/main/java/com/zoctan/api/service/PermissionService.java
+M	api/src/main/java/com/zoctan/api/service/impl/PermissionServiceImpl.java
+M	api/src/main/resources/mapper/PermissionMapper.xml
+M	vue/src/main.js
+M	vue/src/store/getters.js
+M	vue/src/store/modules/user.js
+M	vue/src/utils/validate.js
+M	vue/src/views/dashboard/index.vue
+M	vue/src/views/login/index.vue
+M	vue/src/views/role/index.vue
+M	vue/src/views/user/index.vue
+
+f021746;update
+R061	api/src/main/java/com/zoctan/api/controller/AuthController.java	api/src/main/java/com/zoctan/api/controller/PermissionController.java
+M	api/src/main/java/com/zoctan/api/controller/RoleController.java
+R058	api/src/main/java/com/zoctan/api/controller/RoleAuthController.java	api/src/main/java/com/zoctan/api/controller/RolePermissionController.java
+M	api/src/main/java/com/zoctan/api/controller/UserController.java
+M	api/src/main/java/com/zoctan/api/controller/UserRoleController.java
+M	api/src/main/java/com/zoctan/api/core/exception/ExceptionResolver.java
+M	api/src/main/java/com/zoctan/api/core/exception/ServiceException.java
+M	api/src/main/java/com/zoctan/api/core/exception/UtilException.java
+M	api/src/main/java/com/zoctan/api/core/mapper/MyMapper.java
+M	api/src/main/java/com/zoctan/api/core/response/ResultGenerator.java
+R055	api/src/main/java/com/zoctan/api/mapper/AuthMapper.java	api/src/main/java/com/zoctan/api/mapper/PermissionMapper.java
+D	api/src/main/java/com/zoctan/api/mapper/RoleAuthMapper.java
+M	api/src/main/java/com/zoctan/api/mapper/RoleMapper.java
+A	api/src/main/java/com/zoctan/api/mapper/RolePermissionMapper.java
+R072	api/src/main/java/com/zoctan/api/model/Auth.java	api/src/main/java/com/zoctan/api/model/Permission.java
+M	api/src/main/java/com/zoctan/api/model/Role.java
+R068	api/src/main/java/com/zoctan/api/model/RoleAuth.java	api/src/main/java/com/zoctan/api/model/RolePermission.java
+M	api/src/main/java/com/zoctan/api/model/User.java
+R054	api/src/main/java/com/zoctan/api/service/AuthService.java	api/src/main/java/com/zoctan/api/service/PermissionService.java
+R051	api/src/main/java/com/zoctan/api/service/RoleAuthService.java	api/src/main/java/com/zoctan/api/service/RolePermissionService.java
+M	api/src/main/java/com/zoctan/api/service/RoleService.java
+M	api/src/main/java/com/zoctan/api/service/UserRoleService.java
+R053	api/src/main/java/com/zoctan/api/service/impl/AuthServiceImpl.java	api/src/main/java/com/zoctan/api/service/impl/PermissionServiceImpl.java
+R050	api/src/main/java/com/zoctan/api/service/impl/RoleAuthServiceImpl.java	api/src/main/java/com/zoctan/api/service/impl/RolePermissionServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/RoleServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserDetailsServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserRoleServiceImpl.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserServiceImpl.java
+D	api/src/main/resources/mapper/AuthMapper.xml
+A	api/src/main/resources/mapper/PermissionMapper.xml
+M	api/src/main/resources/mapper/RoleMapper.xml
+R050	api/src/main/resources/mapper/RoleAuthMapper.xml	api/src/main/resources/mapper/RolePermissionMapper.xml
+M	api/src/main/resources/mapper/UserMapper.xml
+M	api/src/test/java/CodeGenerator.java
+D	api/src/test/resources/dev/sql/auth.sql
+A	api/src/test/resources/dev/sql/permission.sql
+M	api/src/test/resources/dev/sql/role.sql
+R060	api/src/test/resources/dev/sql/role_auth.sql	api/src/test/resources/dev/sql/role_permission.sql
+M	api/src/test/resources/dev/sql/user.sql
+M	api/src/test/resources/dev/sql/user_role.sql
+M	vue/favicon.ico
+A	vue/src/api/permission.js
+M	vue/src/api/role.js
+M	vue/src/main.js
+M	vue/src/permission.js
+M	vue/src/router/index.js
+M	vue/src/store/getters.js
+M	vue/src/store/modules/permission.js
+M	vue/src/store/modules/user.js
+M	vue/src/utils/hasPermission.js
+M	vue/src/utils/token.js
+M	vue/src/views/dashboard/index.vue
+R083	vue/src/views/layout/components/Levelbar.vue	vue/src/views/layout/components/LevelBar.vue
+R092	vue/src/views/layout/components/Navbar.vue	vue/src/views/layout/components/NavBar.vue
+M	vue/src/views/layout/components/index.js
+M	vue/src/views/login/index.vue
+M	vue/src/views/role/index.vue
+M	vue/src/views/user/index.vue
+
+e9318b0;u
+R100	api/importSQL.sh	api/resetDB.sh
+M	api/src/main/java/com/zoctan/api/controller/UserController.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+M	api/src/main/java/com/zoctan/api/model/User.java
+M	api/src/main/java/com/zoctan/api/service/impl/UserServiceImpl.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/main/resources/application-prod.properties
+M	api/src/main/resources/application-test.properties
+M	api/src/main/resources/mapper/UserMapper.xml
+M	api/src/test/resources/dev/sql/role.sql
+M	api/src/test/resources/dev/sql/role_auth.sql
+M	api/src/test/resources/dev/sql/user_role.sql
+M	api/src/test/resources/generator/template/controller-restful.ftl
+M	vue/src/api/role.js
+M	vue/src/api/user.js
+M	vue/src/main.js
+R093	vue/src/utils/fetch.js	vue/src/utils/request.js
+M	vue/src/utils/validate.js
+M	vue/src/views/layout/components/Levelbar.vue
+M	vue/src/views/layout/components/Sidebar/SidebarItem.vue
+M	vue/src/views/layout/components/Sidebar/index.vue
+M	vue/src/views/role/index.vue
+M	vue/src/views/user/index.vue
+
+535f278;u
+M	api/src/main/resources/application-dev.properties
+M	vue/src/store/modules/app.js
+M	vue/src/utils/token.js
+M	vue/src/views/user/index.vue
+
+10d84ba;u
+M	vue/src/views/login/index.vue
+M	vue/src/views/user/index.vue
+
+375e8ce;u
+M	vue/src/views/login/index.vue
+M	vue/src/views/user/index.vue
+
+6db6ff9;update
+M	api/src/main/resources/banner.txt
+M	vue/src/App.vue
+M	vue/src/api/user.js
+A	vue/src/assets/401_images/401.gif
+M	vue/src/components/Hamburger/index.vue
+M	vue/src/icons/index.js
+D	vue/src/icons/svg/404.svg
+D	vue/src/icons/svg/EXCEL.svg
+D	vue/src/icons/svg/QQ.svg
+D	vue/src/icons/svg/bug.svg
+D	vue/src/icons/svg/c.svg
+A	vue/src/icons/svg/dashboard.svg
+D	vue/src/icons/svg/email.svg
+R100	vue/src/icons/svg/yanjing.svg	vue/src/icons/svg/eye.svg
+D	vue/src/icons/svg/from.svg
+D	vue/src/icons/svg/icons.svg
+R100	vue/src/icons/svg/mima.svg	vue/src/icons/svg/password.svg
+R100	vue/src/icons/svg/quanxian.svg	vue/src/icons/svg/permission.svg
+D	vue/src/icons/svg/shouce.svg
+D	vue/src/icons/svg/tab.svg
+D	vue/src/icons/svg/table.svg
+D	vue/src/icons/svg/theme.svg
+D	vue/src/icons/svg/tubiao.svg
+D	vue/src/icons/svg/tuozhuai.svg
+R100	vue/src/icons/svg/yonghuming.svg	vue/src/icons/svg/username.svg
+D	vue/src/icons/svg/weixin.svg
+D	vue/src/icons/svg/wujiaoxing.svg
+D	vue/src/icons/svg/xinrenzhinan.svg
+D	vue/src/icons/svg/zonghe.svg
+D	vue/src/icons/svg/zujian.svg
+M	vue/src/main.js
+M	vue/src/permission.js
+M	vue/src/router/index.js
+M	vue/src/store/modules/user.js
+M	vue/src/styles/index.scss
+M	vue/src/styles/mixin.scss
+M	vue/src/utils/fetch.js
+M	vue/src/utils/index.js
+D	vue/src/views/404.vue
+M	vue/src/views/dashboard/index.vue
+A	vue/src/views/errorPage/401.vue
+A	vue/src/views/errorPage/404.vue
+M	vue/src/views/layout/Layout.vue
+D	vue/src/views/layout/Navbar.vue
+D	vue/src/views/layout/SidebarItem.vue
+R087	vue/src/views/layout/AppMain.vue	vue/src/views/layout/components/AppMain.vue
+R053	vue/src/views/layout/Levelbar.vue	vue/src/views/layout/components/Levelbar.vue
+A	vue/src/views/layout/components/Navbar.vue
+A	vue/src/views/layout/components/Sidebar/SidebarItem.vue
+R100	vue/src/views/layout/Sidebar.vue	vue/src/views/layout/components/Sidebar/index.vue
+R073	vue/src/views/layout/index.js	vue/src/views/layout/components/index.js
+M	vue/src/views/login/index.vue
+D	vue/src/views/page/form.vue
+R100	vue/src/views/admin/role/index.vue	vue/src/views/role/index.vue
+R078	vue/src/views/admin/user/index.vue	vue/src/views/user/index.vue
+
+e7eab7c;update
+M	vue/config/prod.env.js
+M	vue/package.json
+D	vue/src/icons/svg/a.svg
+D	vue/src/icons/svg/b.svg
+M	vue/src/router/index.js
+
+a136596;init
+A	.gitignore
+A	README.md
+A	api/.gitignore
+A	api/README.md
+A	api/api.iml
+A	api/importSQL.sh
+A	api/pom.xml
+A	api/src/main/java/com/zoctan/api/Application.java
+A	api/src/main/java/com/zoctan/api/controller/AuthController.java
+A	api/src/main/java/com/zoctan/api/controller/RoleAuthController.java
+A	api/src/main/java/com/zoctan/api/controller/RoleController.java
+A	api/src/main/java/com/zoctan/api/controller/UserController.java
+A	api/src/main/java/com/zoctan/api/controller/UserRoleController.java
+A	api/src/main/java/com/zoctan/api/core/ProjectConstant.java
+A	api/src/main/java/com/zoctan/api/core/config/RedisConfig.java
+A	api/src/main/java/com/zoctan/api/core/config/Swagger2Config.java
+A	api/src/main/java/com/zoctan/api/core/config/ValidatorConfig.java
+A	api/src/main/java/com/zoctan/api/core/config/WebMvcConfig.java
+A	api/src/main/java/com/zoctan/api/core/config/WebSecurityConfig.java
+A	api/src/main/java/com/zoctan/api/core/exception/ExceptionResolver.java
+A	api/src/main/java/com/zoctan/api/core/exception/ServiceException.java
+A	api/src/main/java/com/zoctan/api/core/exception/UtilException.java
+A	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationEntryPoint.java
+A	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+A	api/src/main/java/com/zoctan/api/core/jwt/JwtUtil.java
+A	api/src/main/java/com/zoctan/api/core/mapper/MyMapper.java
+A	api/src/main/java/com/zoctan/api/core/redis/RedisUtil.java
+A	api/src/main/java/com/zoctan/api/core/response/Result.java
+A	api/src/main/java/com/zoctan/api/core/response/ResultGenerator.java
+A	api/src/main/java/com/zoctan/api/core/service/AbstractService.java
+A	api/src/main/java/com/zoctan/api/core/service/Service.java
+A	api/src/main/java/com/zoctan/api/mapper/AuthMapper.java
+A	api/src/main/java/com/zoctan/api/mapper/RoleAuthMapper.java
+A	api/src/main/java/com/zoctan/api/mapper/RoleMapper.java
+A	api/src/main/java/com/zoctan/api/mapper/UserMapper.java
+A	api/src/main/java/com/zoctan/api/mapper/UserRoleMapper.java
+A	api/src/main/java/com/zoctan/api/model/Auth.java
+A	api/src/main/java/com/zoctan/api/model/Role.java
+A	api/src/main/java/com/zoctan/api/model/RoleAuth.java
+A	api/src/main/java/com/zoctan/api/model/User.java
+A	api/src/main/java/com/zoctan/api/model/UserRole.java
+A	api/src/main/java/com/zoctan/api/service/AuthService.java
+A	api/src/main/java/com/zoctan/api/service/RoleAuthService.java
+A	api/src/main/java/com/zoctan/api/service/RoleService.java
+A	api/src/main/java/com/zoctan/api/service/UserRoleService.java
+A	api/src/main/java/com/zoctan/api/service/UserService.java
+A	api/src/main/java/com/zoctan/api/service/impl/AuthServiceImpl.java
+A	api/src/main/java/com/zoctan/api/service/impl/RoleAuthServiceImpl.java
+A	api/src/main/java/com/zoctan/api/service/impl/RoleServiceImpl.java
+A	api/src/main/java/com/zoctan/api/service/impl/UserDetailsServiceImpl.java
+A	api/src/main/java/com/zoctan/api/service/impl/UserRoleServiceImpl.java
+A	api/src/main/java/com/zoctan/api/service/impl/UserServiceImpl.java
+A	api/src/main/java/com/zoctan/api/util/Base64Util.java
+A	api/src/main/java/com/zoctan/api/util/DateUtil.java
+A	api/src/main/java/com/zoctan/api/util/IdUtil.java
+A	api/src/main/java/com/zoctan/api/util/IpUtil.java
+A	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+A	api/src/main/resources/application-dev.properties
+A	api/src/main/resources/application-prod.properties
+A	api/src/main/resources/application-test.properties
+A	api/src/main/resources/application.properties
+A	api/src/main/resources/banner.txt
+A	api/src/main/resources/mapper/AuthMapper.xml
+A	api/src/main/resources/mapper/RoleAuthMapper.xml
+A	api/src/main/resources/mapper/RoleMapper.xml
+A	api/src/main/resources/mapper/UserMapper.xml
+A	api/src/main/resources/mapper/UserRoleMapper.xml
+A	api/src/main/resources/rsa/private-key.pem
+A	api/src/main/resources/rsa/public-key.pem
+A	api/src/test/java/CodeGenerator.java
+A	api/src/test/java/JasyptStringEncryptor.java
+A	api/src/test/java/PasswordEncryptor.java
+A	api/src/test/java/com/zoctan/api/BaseControllerTest.java
+A	api/src/test/java/com/zoctan/api/RSASignTest.java
+A	api/src/test/java/com/zoctan/api/UserControllerTest.java
+A	api/src/test/resources/dev/sql/auth.sql
+A	api/src/test/resources/dev/sql/role.sql
+A	api/src/test/resources/dev/sql/role_auth.sql
+A	api/src/test/resources/dev/sql/user.sql
+A	api/src/test/resources/dev/sql/user_role.sql
+A	api/src/test/resources/generator/template/controller-restful.ftl
+A	api/src/test/resources/generator/template/controller.ftl
+A	api/src/test/resources/generator/template/service-impl.ftl
+A	api/src/test/resources/generator/template/service.ftl
+A	vue/.babelrc
+A	vue/.editorconfig
+A	vue/.eslintignore
+A	vue/.eslintrc.js
+A	vue/.gitignore
+A	vue/.postcssrc.js
+A	vue/build/build.js
+A	vue/build/check-versions.js
+A	vue/build/dev-client.js
+A	vue/build/dev-server.js
+A	vue/build/utils.js
+A	vue/build/vue-loader.conf.js
+A	vue/build/webpack.base.conf.js
+A	vue/build/webpack.dev.conf.js
+A	vue/build/webpack.prod.conf.js
+A	vue/config/dev.env.js
+A	vue/config/index.js
+A	vue/config/prod.env.js
+A	vue/favicon.ico
+A	vue/index.html
+A	vue/package.json
+A	vue/src/App.vue
+A	vue/src/api/role.js
+A	vue/src/api/user.js
+A	vue/src/assets/404_images/404.png
+A	vue/src/assets/404_images/404_cloud.png
+A	vue/src/components/Hamburger/index.vue
+A	vue/src/components/Icon-svg/index.vue
+A	vue/src/icons/index.js
+A	vue/src/icons/svg/404.svg
+A	vue/src/icons/svg/EXCEL.svg
+A	vue/src/icons/svg/QQ.svg
+A	vue/src/icons/svg/a.svg
+A	vue/src/icons/svg/b.svg
+A	vue/src/icons/svg/bug.svg
+A	vue/src/icons/svg/c.svg
+A	vue/src/icons/svg/email.svg
+A	vue/src/icons/svg/from.svg
+A	vue/src/icons/svg/icons.svg
+A	vue/src/icons/svg/mima.svg
+A	vue/src/icons/svg/quanxian.svg
+A	vue/src/icons/svg/shouce.svg
+A	vue/src/icons/svg/tab.svg
+A	vue/src/icons/svg/table.svg
+A	vue/src/icons/svg/theme.svg
+A	vue/src/icons/svg/tubiao.svg
+A	vue/src/icons/svg/tuozhuai.svg
+A	vue/src/icons/svg/weixin.svg
+A	vue/src/icons/svg/wujiaoxing.svg
+A	vue/src/icons/svg/xinrenzhinan.svg
+A	vue/src/icons/svg/yanjing.svg
+A	vue/src/icons/svg/yonghuming.svg
+A	vue/src/icons/svg/zonghe.svg
+A	vue/src/icons/svg/zujian.svg
+A	vue/src/main.js
+A	vue/src/permission.js
+A	vue/src/router/_import_development.js
+A	vue/src/router/_import_production.js
+A	vue/src/router/index.js
+A	vue/src/store/getters.js
+A	vue/src/store/index.js
+A	vue/src/store/modules/app.js
+A	vue/src/store/modules/permission.js
+A	vue/src/store/modules/user.js
+A	vue/src/styles/element-variables.scss
+A	vue/src/styles/index.scss
+A	vue/src/styles/mixin.scss
+A	vue/src/utils/fetch.js
+A	vue/src/utils/hasPermission.js
+A	vue/src/utils/index.js
+A	vue/src/utils/token.js
+A	vue/src/utils/validate.js
+A	vue/src/views/404.vue
+A	vue/src/views/admin/role/index.vue
+A	vue/src/views/admin/user/index.vue
+A	vue/src/views/dashboard/index.vue
+A	vue/src/views/layout/AppMain.vue
+A	vue/src/views/layout/Layout.vue
+A	vue/src/views/layout/Levelbar.vue
+A	vue/src/views/layout/Navbar.vue
+A	vue/src/views/layout/Sidebar.vue
+A	vue/src/views/layout/SidebarItem.vue
+A	vue/src/views/layout/index.js
+A	vue/src/views/login/index.vue
+A	vue/src/views/page/form.vue
+A	vue/static/.gitkeep
+
+3869f1a;Initial commit
+A	LICENSE

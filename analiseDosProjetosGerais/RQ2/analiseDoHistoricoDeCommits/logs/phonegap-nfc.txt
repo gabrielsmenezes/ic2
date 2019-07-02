@@ -1,0 +1,1640 @@
+aa92afc;1.0.3
+M	CHANGES.txt
+M	package.json
+M	plugin.xml
+
+e6517e1;Remove ES6 syntax from phonegap-nfc.js Fixes #325
+M	README.md
+A	tests/package.json
+M	tests/plugin.xml
+M	tests/tests.js
+M	www/phonegap-nfc.js
+
+a1d7b3b;1.0.2
+M	CHANGES.txt
+M	package.json
+M	plugin.xml
+
+63043c3;channel
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+b7ba46a;Merge branch 'reader-mode-merge'
+c4a550e;resolve merge conflicts
+1864383;Update README.md
+M	README.md
+
+75eb7e2;Update README.md
+M	README.md
+
+1426b40;Update README.md
+M	README.md
+
+acaf4fe;documentation. handle no nfc and nfc disabled.
+M	README.md
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+3d54726;add es6 to jshint config, remove strict mode cleanup jshint errors See #325
+M	www/phonegap-nfc.js
+
+eb20f33;1.0.1
+M	CHANGES.txt
+M	package.json
+M	plugin.xml
+
+f817cb5;Merge pull request #324 from chariotsolutions/first-scan
+50f58da;NFC events not firing on first scan  Fixes #217 (and others) 1. Don't start the NFC foreground dispatching if no listeners have been added 2. Restart the NFC foreground dispatching any time the intent filters or tech lists are modified
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+a3a9659;Merge pull request #323 from chariotsolutions/channel
+3ebba8e;replace webView.sendJavascript with channel
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+fa113e8;channel sends messages
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+db79d63;disable reader mode
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+1e3bc65;return ndef when available
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+ca1e807;first pass, reads a tag
+M	plugin.xml
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+77bf918;Merge pull request #322 from chariotsolutions/issue-257
+617a7e3;update readme
+M	README.md
+
+53e304d;fix removeFromTechList implementation, restart NFC after removing listeners to reload the filters
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+e4002a8;Address Android Studio warning and suggestions
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+eb1e6bf;reformat with Android Studio
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+434c7c7;spelling
+M	www/phonegap-nfc.js
+
+f933cc8;Update README.md
+M	README.md
+
+35ad274;Update README.md
+M	README.md
+
+83c7ade;1.0.0
+M	CHANGES.txt
+M	package.json
+M	plugin.xml
+
+73b96a4;Merge pull request #321 from chariotsolutions/tagtech
+fd65cd7;readme
+M	README.md
+
+abe2181;support more tag technologies for transceive fixes #320
+M	README.md
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+b1a4b66;Merge pull request #319 from chariotsolutions/isodep
+d929302;ISO-DEP implementation fixes #130
+M	README.md
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+d59df79;borrow code from https://github.com/as-eldlc/phonegap-nfc-isodep which was forked from https://github.com/jalbersol/phonegap-nfc See #130
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+1d3ed8b;0.7.3
+M	CHANGES.txt
+M	package.json
+M	plugin.xml
+
+9746086;0.7.2
+M	CHANGES.txt
+M	package.json
+M	plugin.xml
+
+6047ac0;Merge pull request #288 from andreamaioli/patch-1
+fdba79f;0.7.1
+M	CHANGES.txt
+M	README.md
+M	package.json
+M	plugin.xml
+
+cf4a7c0;Merge pull request #285 from progamma/master
+266debb;Merge pull request #1 from andreamaioli/patch-2
+048f45b;Added WKWebView compatibility
+M	src/ios/NfcPlugin.m
+
+0c72762;Added WKWebView compatibility
+M	src/ios/NfcPlugin.h
+
+e6c3473;Merge pull request #1 from progamma/andreamaioli-auto-add-entitlements
+b21f238;Update plugin.xml
+M	plugin.xml
+
+9edd918;0.7.0
+M	CHANGES.txt
+M	LICENSE.txt
+M	package.json
+
+275178f;Entitlement is set in Xcode
+M	plugin.xml
+D	src/ios/nfc.entitlements
+
+89c1bbb;Update README.md
+M	README.md
+
+63f5c35;Merge pull request #280 from chariotsolutions/ios
+9fc269a;Merge branch 'master' into ios
+594bd90;Update README.md
+M	README.md
+
+c487da2;iOS install instructions
+M	README.md
+
+16781cb;Update README.md
+M	README.md
+
+be9a54c;Add support for iOS 11
+M	README.md
+M	package.json
+M	plugin.xml
+A	src/ios/NfcPlugin.h
+A	src/ios/NfcPlugin.m
+A	src/ios/nfc.entitlements
+M	www/phonegap-nfc.js
+
+c300bac;Update README.md
+M	README.md
+
+293e97a;Update README.md
+M	README.md
+
+7e1c24f;Merge pull request #219 from homer-jay/patch-2
+9782e2b;Merge pull request #231 from Chuckytuh/patch-1
+7393251;fixes #224
+M	README.md
+
+8b19977;Fixed java.util.ConcurrentModificationException
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+ccd39de;.
+M	doc/GettingStartedPhoneGapBuild.md
+
+d5b3097;phonegap build
+A	doc/GettingStartedPhoneGapBuild.md
+A	doc/phonegap_build.png
+
+f9d1fb3;fixed language code field length detection
+M	www/phonegap-nfc.js
+
+09d50cd;Update README.md
+M	README.md
+
+c6971b0;0.6.6
+M	CHANGES.txt
+M	package.json
+M	plugin.xml
+
+b31f51f;Update README.md
+M	README.md
+
+1ce0496;Update README.md
+M	README.md
+
+4fd21e4;Update README.md
+M	README.md
+
+6f70b14;Update README.md
+M	README.md
+
+2d128c2;Update plugin.xml
+M	plugin.xml
+
+cd51c44;Update README.md
+M	README.md
+
+653bf5d;Update README.md
+M	README.md
+
+abdcad2;Update README.md
+M	README.md
+
+9f3018e;doc
+M	CHANGES.txt
+M	README.md
+
+faaf295;windows - NDEF event cancels Tag event
+M	src/windows/nfc-plugin.js
+
+1029633;windows addTagDiscoveredListener (fires 2 events)
+M	src/windows/nfc-plugin.js
+
+4c8aa5b;exports
+M	src/windows/nfc-plugin.js
+
+5d75a10;Better errors when no NFC
+M	src/windows/nfc-plugin.js
+
+91749f3;rename win and fail to success and failure fire javascript ndef event directly from plugin code
+M	src/windows/nfc-plugin.js
+
+12cd97e;tabs to spaces (again)
+M	src/windows/nfc-plugin.js
+
+3871bf4;resolve conflicts
+e3c2759;reuse NDEF encoded and decoding from www/phonegap-nfc.js
+M	src/windows/nfc-plugin.js
+
+7d3aee7;tabs to spaces
+M	src/windows/nfc-plugin.js
+
+676fd25;implement nfc.showSettings for windows
+M	src/windows/nfc-plugin.js
+
+a841721;add ndefMessage to tag in events fixes #215
+M	src/windows/nfc-plugin.js
+
+d32d135;Update GettingStartedCLI.md
+M	doc/GettingStartedCLI.md
+
+4107730;Create GettingStartedBlackBerry10.md
+A	doc/GettingStartedBlackBerry10.md
+
+6f5cf2d;0.6.5
+M	package.json
+M	plugin.xml
+
+2c0ac11;showSettings see #147
+M	CHANGES.txt
+M	www/phonegap-nfc-blackberry.js
+
+8e4b7d8;new package name
+M	www/phonegap-nfc-blackberry.js
+
+e2f3e64;showSettings Fixes #147
+M	README.md
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+508a544;0.6.4
+M	CHANGES.txt
+M	LICENSE.txt
+M	package.json
+M	plugin.xml
+
+ad595e5;Merge pull request #210 from gonzalo123/master
+7fa7e92;remove import to allow compile
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+5613021;move to npm drop support for cordova 2.9
+M	CHANGES.txt
+D	INSTALL.md
+M	README.md
+D	doc/GettingStarted.md
+M	doc/GettingStartedCLI.md
+A	package.json
+M	plugin.xml
+
+ce04101;Merge pull request #205 from resonantbreath/master
+fcdf6aa;remove Dummy.java file, support only Cordova 3.0+
+M	plugin.xml
+D	src/android/org/apache/cordova/api/Dummy.java
+
+a00100b;Update README.md
+M	README.md
+
+7a72940;Update README.md
+M	README.md
+
+d0fd8c8;0.6.2
+M	CHANGES.txt
+M	plugin.xml
+
+e289bf5;Merge pull request #182 from jlkalberer/master
+ec33cca;Merge pull request #180 from lezardrouge/master
+3e953c9;Correctly call success callback after write/share.
+M	src/windows/nfc-plugin.js
+
+2bd51a6;Tested all methods in new plugin.  Should be complete.
+M	src/windows/nfc-plugin.js
+
+acee409;Merge pull request #1 from lezardrouge/lezardrouge-patch-1
+a574431;Update README.md
+M	README.md
+
+1fe0bc1;Finished coding plugin. Needs to be tested with actual hardware.
+M	plugin.xml
+M	src/windows/nfc-plugin.js
+
+385aa9b;Plugin will now init on windows platforms.
+M	src/windows/nfc-plugin.js
+M	www/phonegap-nfc.js
+
+9a7ad42;...
+M	src/windows/nfc-plugin.js
+
+15526ff;Fixing js errors.
+M	src/windows/nfc-plugin.js
+
+93be4cb;Fixing plugin export.
+M	plugin.xml
+M	src/windows/nfc-plugin.js
+
+eb887ac;Fixing capabilities.
+M	plugin.xml
+
+52aba20;Porting existing WP8 code to WinJS
+M	plugin.xml
+A	src/windows/nfc-plugin.js
+
+9abdc73;update nfc.share for BB 10.2 fixed #172
+M	www/phonegap-nfc-blackberry.js
+
+3d9fb0a;Merge pull request #171 from JohnMcLear/patch-1
+b9bb11f;Fix link
+M	README.md
+
+9b8ccbd;Update NfcPlugin.java
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+7f23c90;0.6.1
+M	CHANGES.txt
+M	plugin.xml
+
+763a29a;tnfToString fixes #145
+M	www/phonegap-nfc.js
+
+1d4f491;Merge branch 'master' of github.com:chariotsolutions/phonegap-nfc
+343c50e;Add AAR helper method androidApplicationRecord.
+M	README.md
+M	www/phonegap-nfc.js
+
+cf2a0d6;Update README.md
+M	README.md
+
+278095b;check if nfc is enabled fixes #146
+M	README.md
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+976dda4;Merge pull request #154 from didlich/0.5.1-statecheck
+00678be;Merge pull request #152 from jakobwitte/patch-2
+eccb331;rename getStatus to enabled
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+5cf36bb;added method to get current nfc status
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+1911a55;Moved <js-module> inside <platform> to only include phonegap-nfc.js on supported platforms.
+M	plugin.xml
+
+3aa1298;re-add callbacks for remove methods. Fixes #148
+M	README.md
+M	www/phonegap-nfc.js
+
+6cf94a1;Merge pull request #149 from jakobwitte/patch-1
+64e4912;Merge branch 'master' of https://github.com/don/phonegap-nfc
+48c81bf;Fixed bug in phonegap-nfc.js with missing callback parameter in removeNdefListener().
+M	www/phonegap-nfc.js
+
+3376799;Link to Ionic demo
+M	README.md
+
+be00976;fix markdown broken by merge
+M	README.md
+
+2d8a503;Merge pull request #143 from warriorkitty/patch-1
+75205f3;Cordova new url
+M	doc/GettingStartedCLI.md
+
+dada655;remove original callback from remove*Listener methods. Fixes #142
+M	CHANGES.txt
+M	README.md
+M	plugin.xml
+M	www/phonegap-nfc.js
+
+de13d26;previously
+M	README.md
+
+aa51dc1;Merge pull request #141 from lucasconstantino/patch-1
+dc00a3f;Added listener removal methods to README.
+M	README.md
+
+f7926b3;0.5.1
+M	CHANGES.txt
+M	plugin.xml
+
+2dd71e6;fix link
+M	README.md
+
+19015e3;move lock off webcore thread
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+cde6a24;nfc.makeReadOnly Fixes #6
+M	README.md
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+bca7579;readme
+M	README.md
+
+e8f1b89;Better encoding and decoding of UTF-8 strings. Fixes #102
+M	README.md
+M	tests/tests.js
+M	www/phonegap-nfc.js
+
+d9c11c7;failing tests
+A	tests/plugin.xml
+A	tests/tests.js
+
+37b3b7d;0.5.0
+M	CHANGES.txt
+M	plugin.xml
+
+9b05fb1;indent
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+ab28637;use wildcard import for cordova to support 3.x and 2.9 since the package names changed with 3.x
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+8197798;re-add fix for #125
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+8c1a31f;Merge pull request #129 from AxelNennker/master
+f0a6188;added section about removeNdefListener
+M	README.md
+
+65cd4f5;implement the rest of the missing remove methods
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+6d4c8f1;Implement removeMimeType
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+07156ff;Merge pull request #126 from mletynski/master
+98822c1;#125 Disable foreground dispatching
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+abe7cf7;0.4.9
+M	CHANGES.txt
+M	plugin.xml
+
+5908153;Update README.md
+M	README.md
+
+2eff1ca;handleNfcFromIntentFilter is android only
+M	www/phonegap-nfc.js
+
+9a13e45;Merge remote-tracking branch 'upstream/master'
+921802d;helper function fixes #103
+M	www/phonegap-nfc.js
+
+1fbe250;Update README.md
+M	README.md
+
+fe98fa2;Merge pull request #117 from asgeo1/ios-fix
+8d40ea7;Prevent annoying 'NfcPlugin not found' console messages on iOS
+M	www/phonegap-nfc.js
+
+2b9b57c;add repository info
+M	plugin.xml
+
+5ef7bd2;0.4.8
+M	CHANGES.txt
+M	plugin.xml
+
+c6bb026;formatting
+M	README.md
+
+535289b;update docs see #72
+M	README.md
+
+18b910a;Fixes #71
+M	README.md
+
+683b1bd;Merge pull request #112 from didlich/master
+0ce6c2b;Merge pull request #114 from don/issue105-onload
+159a847;onload fixes #105
+M	plugin.xml
+
+05e518f;Merge pull request #113 from don/issue110
+1f919a2;handle IllegalArgumentException when app is terminating during plugin init
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+866285c;replaced Java null by JSONObject.NULL as recommended in JSON libraray, because of compiler problem
+M	src/android/src/com/chariotsolutions/nfc/plugin/Util.java
+
+f0b60f2;Update required software list
+M	doc/GettingStartedCLI.md
+
+4be9b5a;0.4.7
+A	CHANGES.txt
+M	README.md
+M	plugin.xml
+
+9348723;plugin.xml
+M	plugin.xml
+
+3d197b9;remove ant for android, only cordova cli and plugman are supported
+D	VERSION
+D	build.xml
+D	src/android/build.xml
+
+b67eba4;revise
+M	src/webworks/build.xml
+
+41c7a47;documentation
+M	README.md
+
+cfec247;documentation
+M	README.md
+
+df98bee;documentation
+M	README.md
+
+7d6d33e;documentation
+M	README.md
+
+9283f10;Merge pull request #104 from don/BlackBerry10
+34f111f;bb10 implementation
+M	src/blackberry10/index.js
+M	www/phonegap-nfc-blackberry.js
+M	www/phonegap-nfc.js
+
+ed6080c;first pass for BB10 / Cordova 3.1
+M	plugin.xml
+A	src/blackberry10/index.js
+A	www/phonegap-nfc-blackberry.js
+D	www/phonegap-nfc-qnx.js
+M	www/phonegap-nfc.js
+
+25cdd5a;0.4.6
+M	VERSION
+M	plugin.xml
+
+ab7729a;link to Android docs
+M	README.md
+
+a8acb77;Merge branch 'master' of github.com:chariotsolutions/phonegap-nfc
+6f5a300;document nfc.handover fixes #101
+M	README.md
+
+aaaf7c5;default payload if not supplied for Android compatibility
+M	www/phonegap-nfc.js
+
+d935c40;adjust absoluteUriRecord to meet the spec
+M	www/phonegap-nfc.js
+
+5a697eb;Update README.md
+M	README.md
+
+25b599b;Update INSTALL.md
+M	INSTALL.md
+
+13454ed;Update GettingStartedCLI.md
+M	doc/GettingStartedCLI.md
+
+af2da5b;Update GettingStarted.md
+M	doc/GettingStarted.md
+
+a52467f;Update for Cordova 2.9
+M	doc/GettingStarted.md
+
+e05a917;add license file (also in README)
+A	LICENSE.txt
+M	README.md
+
+4b826c0;support 3.0 (org.apache.cordova.api removed)
+M	plugin.xml
+A	src/android/org/apache/cordova/api/Dummy.java
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+b9361d1;rename wp-package CB-4453
+M	plugin.xml
+
+f8082ce;wp8
+M	plugin.xml
+
+10e4656;update cli instructions
+M	doc/GettingStartedCLI.md
+
+69c6c7c;license in manifest
+M	plugin.xml
+
+a13fc41;fix manifest, bump version for phonegap build
+M	VERSION
+M	plugin.xml
+
+3e2a772;undeprecate bytesToString and stringToBytes
+M	www/phonegap-nfc.js
+
+f51b97b;handle bad URI scheme
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+83a4ff1;javascript for beam
+M	www/phonegap-nfc.js
+
+88db97e;Merge pull request #94 from don/handover
+8d0bd6d;initial support for Android Beam
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+8305111;some js improvements from ndef-js
+M	www/phonegap-nfc.js
+
+84c9281;update example for nfc.share and nfc.write
+M	README.md
+
+8ec235b;Merge pull request #93 from don/share_callback
+1f5f9a5;nfc.share() calls success when message is sent to a peer. See #74.
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+7f9cea8;0.4.4
+M	VERSION
+M	plugin.xml
+
+b8f04f6;bug fix for javascript version of decodeMessage
+M	www/phonegap-nfc.js
+
+20bfb5d;Update GettingStarted.md
+M	doc/GettingStarted.md
+
+7e445b9;Merge remote-tracking branch 'upstream/master'
+6ac07bf;fixes #87
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+1f54b4b;Merge pull request #90 from JohnMcLear/patch-1
+cee74a4;Did this really work before?
+M	README.md
+
+3bae593;use other version
+D	doc/CordovaCLI.md
+
+9604451;Update README.md
+M	README.md
+
+816710d;Update GettingStartedCLI.md
+M	doc/GettingStartedCLI.md
+
+8aeb2c1;Update GettingStarted.md
+M	doc/GettingStarted.md
+
+0fee8f6;Update GettingStarted.md
+M	doc/GettingStarted.md
+
+2657a51;Update GettingStartedCLI.md
+M	doc/GettingStartedCLI.md
+
+e0b32b1;Update GettingStartedCLI.md
+M	doc/GettingStartedCLI.md
+
+3a9915a;Merge branch 'master' of github.com:don/phonegap-nfc
+a991657;Update README.md
+M	README.md
+
+fbc1663;Update INSTALL.md
+M	INSTALL.md
+
+1be5ed7;Update INSTALL.md
+M	INSTALL.md
+
+b8f4b14;oops
+M	doc/CordovaCLI.md
+
+a9ee444;more docs
+A	doc/CordovaCLI.md
+M	doc/GettingStarted.md
+A	doc/GettingStartedCLI.md
+
+6382e93;remove unnecessary step
+M	doc/GettingStarted.md
+
+bfb8a9c;Merge pull request #89 from don/js-module
+49917e2;switch to js-module so phonegap-nfc.js does not need to be manually added to index.html
+M	plugin.xml
+M	www/phonegap-nfc.js
+
+1bf18b9;Merge pull request #88 from don/cordova-2.8
+9c596cf;Merge branch 'cordova-2.8' of github.com:don/phonegap-nfc into cordova-2.8
+218ab0c;smaller images
+M	doc/read_tag_1_basic_app.png
+M	doc/read_tag_2_dump_tag.png
+M	doc/read_tag_3_payload_as_string.png
+
+73a5299;Fix markdown
+M	doc/GettingStarted.md
+
+ca91526;markdown
+A	doc/GettingStarted.md
+
+1ce0340;markdown
+D	GettingStarted.md
+D	doc/GettingStarted.txt
+
+ba268d5;markdown
+A	GettingStarted.md
+
+e44cb66;getting started documentation
+A	doc/GettingStarted.txt
+A	doc/read_tag_1_basic_app.png
+A	doc/read_tag_2_dump_tag.png
+A	doc/read_tag_3_payload_as_string.png
+
+a64cf76;cordova-2.8.0 compatible plugin.xml, bump version
+M	VERSION
+M	plugin.xml
+
+a7a8130;Update INSTALL.md
+M	INSTALL.md
+
+eb47be3;Update manual install instructions for Android
+M	INSTALL.md
+
+062dd3b;Update INSTALL.md
+M	INSTALL.md
+
+542dc37;Update instructions
+M	INSTALL.md
+
+5894f9a;Merge pull request #77 from don/wp8-callbacks
+597084a;fix callbacks
+M	src/windows-phone-8/NfcPlugin.cs
+
+e838848;Update Windows Phone instructions
+M	INSTALL.md
+
+e384d10;jshint
+M	www/phonegap-nfc-qnx.js
+
+9f3c118;tabs to spaces
+M	www/phonegap-nfc-qnx.js
+
+f1d5a38;cordova-2.5.0
+M	README.md
+M	src/android/build.xml
+
+ac48c36;Merge pull request #70 from don/bb-share
+ddb9e58;share and unshare for BB10, fixes #69
+M	README.md
+M	www/phonegap-nfc-qnx.js
+
+f59c890;Merge pull request #67 from ronnied/master
+e65fa78;Fixed enableForegroundDispatch bug by ensuring application is active.
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+5889363;Merge remote-tracking branch 'upstream/master'
+e59ee2a;improve record helpers
+M	www/phonegap-nfc.js
+
+f92eb19;add NDEF encoding and decoding methods
+M	plugin.xml
+M	www/phonegap-nfc.js
+
+6769aa3;BB10 does not support nfc.write
+M	README.md
+
+1b6cbbb;0.4.3-SNAPSHOT
+M	VERSION
+
+8bb3935;ndef.uriRecord create TNF_WELL_KNOWN, RTD_URI instead of TNF_ABSOLUTE_URI
+M	www/phonegap-nfc.js
+
+ee219e2;0.4.2
+M	VERSION
+
+b44ee72;Update README.md
+M	README.md
+
+3435582;Fixes #59
+M	README.md
+
+b6b3107;Update INSTALL.md
+M	INSTALL.md
+
+b9f8210;Update INSTALL.md
+M	INSTALL.md
+
+12ea589;Update INSTALL.md
+M	INSTALL.md
+
+5f56107;Update INSTALL.md
+M	INSTALL.md
+
+1aefdcb;Update INSTALL.md
+M	INSTALL.md
+
+f1d32d5;Update INSTALL.md
+M	INSTALL.md
+
+451ddca;Update README.md
+M	README.md
+
+cc48842;Update README.md
+M	README.md
+
+2c53d44;Update README.md
+M	README.md
+
+c612574;Update README.md
+M	README.md
+
+41e6315;Update README.md
+M	README.md
+
+524716c;Update README.md
+M	README.md
+
+c4ecb12;Update README.md
+M	README.md
+
+3136e71;More NDEF
+M	README.md
+
+8c8d40e;Updating NDEF documentation
+M	README.md
+
+2418dee;adjust markdown for readability(?)
+M	README.md
+
+491f018;updating documentation
+A	INSTALL.md
+M	README.md
+
+6efd9a2;Merge pull request #60 from don/bb10-ndef-vs-tag
+c7bfa40;Switch BB10 from tag event to ndef event fixes #55
+M	www/phonegap-nfc-qnx.js
+
+f4915cd;Merge pull request #56 from don/windows-phone-8
+5defd3f;clean up Ndef, add NfcTag
+M	src/windows-phone-8/Ndef.cs
+M	src/windows-phone-8/NfcPlugin.cs
+
+f24930a;refactoring Ndef code to a separate class
+A	src/windows-phone-8/Ndef.cs
+M	src/windows-phone-8/NfcPlugin.cs
+
+5a3dd22;handle longer records (sr=false), record ids and TNF_EMPTY
+M	src/windows-phone-8/NfcPlugin.cs
+
+d1a3b2b;NDEF_FORMATABLE tags return the tag ID in the JSON.  Fixes #47.
+M	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+d71a132;fix reading ndef
+M	src/windows-phone-8/NfcPlugin.cs
+
+1fbc5f0;fix json for tag, note: decoded tag is still broken
+M	src/windows-phone-8/NfcPlugin.cs
+
+4eda7c1;windows phone 8 first pass
+M	src/windows-phone-8/NfcPlugin.cs
+M	www/phonegap-nfc.js
+
+de97f29;js errors
+M	www/phonegap-nfc.js
+
+b570712;nfc.fireTagEvent
+A	src/windows-phone-8/NfcPlugin.cs
+M	www/phonegap-nfc.js
+
+f18e7c6;replace pluginstall with plugman
+M	README.md
+M	plugin.xml
+
+1b697da;Merge pull request #52 from don/directories
+01f30bb;directory structure for plugin spec
+M	build.xml
+R097	android/build.xml	src/android/build.xml
+R100	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java	src/android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+R100	android/src/com/chariotsolutions/nfc/plugin/Util.java	src/android/src/com/chariotsolutions/nfc/plugin/Util.java
+R094	webworks/build.xml	src/webworks/build.xml
+R100	webworks/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java	src/webworks/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+R100	webworks/src/com/chariotsolutions/nfc/plugin/Util.java	src/webworks/src/com/chariotsolutions/nfc/plugin/Util.java
+
+7fa87cf;remove symlink
+D	src/android
+
+97dacc0;Merge pull request #51 from don/android-14
+17cf477;android-14
+M	android/build.xml
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+88e0433;TagWriterException no longer exists
+M	plugin.xml
+
+eebab9a;Merge pull request #50 from don/p2p-android-14
+5453016;NDEF_PUSH_DISABLED
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+c9f05e3;replace enableForegroundNdefPush with setNdefPushMessage
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+70d6ae5;fix createUri closes #48
+M	www/phonegap-nfc.js
+
+dec71e9;more documentation about BB10 filters
+M	README.md
+
+599f34c;Merge pull request #49 from don/bb10
+7dfc8fd;rename variables
+M	www/phonegap-nfc-qnx.js
+
+c7ccc26;remove getType and getPayload
+M	www/phonegap-nfc-qnx.js
+
+9b07616;decodeNdefRecord
+M	www/phonegap-nfc-qnx.js
+
+2dfe3b9;improve BlackBerry instructions
+M	README.md
+
+2a0173d;cordova-2.3.0
+M	android/build.xml
+
+af8f5e5;Merge pull request #43 from don/erase-tag
+cc1a45c;Merge pull request #44 from m00sey/master
+1c90368;Adding lost invocations to success()
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+9b40364;merge changes from master
+c9b8718;helper for empty record
+M	www/phonegap-nfc.js
+
+6ce5749;erase tag
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+b4b76f9;Merge pull request #42 from m00sey/master
+8e3812f;Moved writes off the WebCore Thread
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+3d3b597;Moving tag read/writes off the Cordova WebCore thread.
+117a0cd;eraseTag
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+04b599f;pass empty array as data for erase, since it's implemented with writeTag
+M	www/phonegap-nfc.js
+
+e8af4e5;Pushing tag writes off the Cordova WebCore thread
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+e3968bc;Merge pull request #41 from don/cleanup_execute
+1d5bf3f;ant needs cordova 2.2.0
+M	android/build.xml
+
+4a889aa;cleanup execute method #39
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+3224d7a;Merge pull request #35 from don/2.2.0-android
+bee882b;cleanup
+M	README.md
+M	plugin.xml
+
+0efeff9;phonegap-2.2.0 android
+M	README.md
+M	VERSION
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+M	www/phonegap-nfc.js
+
+d27e4ec;plugin.xml for pluginstall
+A	plugin.xml
+
+b6de8e7;symlink for pluginstall
+A	src/android
+
+528f9c8;Merge pull request #32 from gtanner/master
+2b03b33;Merge pull request #28 from mzabaluev/build-fix
+54f5f13;Added BlackBerry 10 install steps
+M	README.md
+
+5c87411;added bb10 support for reading tags
+M	build.xml
+A	www/phonegap-nfc-qnx.js
+
+3bdfcb1;Clamp the javac target version to 1.6
+M	android/build.xml
+
+cf8d694;Replaced subdirectory ant exec tasks with ant tasks
+M	build.xml
+
+5ba46c0;Merge pull request #23 from don/cordova-1.9
+1e9e32d;0.4.1
+M	VERSION
+
+02dafbc;android changes for cordova-1.9.0
+M	VERSION
+M	android/build.xml
+M	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+90bff3c;update documentation for webworks
+M	README.md
+
+a7e9c7c;Merge pull request #18 from don/blackberry
+5a8fef1;0.4.0
+M	VERSION
+
+2a57a1e;;
+M	www/phonegap-nfc.js
+
+91bc2f5;new webworks methods
+M	www/phonegap-nfc.js
+
+779cd7a;webworks
+A	android/build.xml
+R100	src/com/chariotsolutions/nfc/plugin/NfcPlugin.java	android/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+R100	src/com/chariotsolutions/nfc/plugin/TagWriteException.java	android/src/com/chariotsolutions/nfc/plugin/TagWriteException.java
+R100	src/com/chariotsolutions/nfc/plugin/Util.java	android/src/com/chariotsolutions/nfc/plugin/Util.java
+M	build.xml
+A	webworks/build.xml
+A	webworks/src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+A	webworks/src/com/chariotsolutions/nfc/plugin/Util.java
+R100	phonegap-nfc.js	www/phonegap-nfc.js
+
+e9ae93c;Merge pull request #17 from don/tag_id
+481e7a7;add tag id and tag techTypes to JSON representation of the tag
+M	VERSION
+M	src/com/chariotsolutions/nfc/plugin/Util.java
+
+c922b3b;0.3.0
+M	VERSION
+
+d413433;cordova.jar
+M	build.xml
+
+95bb7c8;Merge pull request #15 from don/cordova
+d8bf7c6;tabs to spaces
+M	phonegap-nfc.js
+
+8095353;missing var
+M	phonegap-nfc.js
+
+12e2c5c;replace PhoneGap with cordova
+M	phonegap-nfc.js
+
+dfe1c17;reformat
+M	phonegap-nfc.js
+
+a36cd39;update docs
+M	README.md
+
+6d156c3;fix refactoring mishap
+M	phonegap-nfc.js
+
+9be844a;minor cleanup
+M	src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+4205e67;Clean up ((Activity)ctx) mess.  Handle null NfcAdapter more gracefully Issue #14
+M	src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+64a8105;cordova-1.6.1
+M	build.xml
+
+3179d5b;remove old plugin impl
+D	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+584b8b8;spelling
+M	README.md
+
+d639606;duct tape to make plugin with cordova
+M	.gitignore
+M	VERSION
+M	build.xml
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+M	src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+a4fcfb7;Merge pull request #12 from zonpantli/ICS-workaround
+c2bdb24;workaround for ICS bug of sometimes returning null from mTag.getTagService()
+M	src/com/chariotsolutions/nfc/plugin/Util.java
+
+6644e82;0.2.0
+M	VERSION
+
+a26cd85;SNAPSHOT version and readme corrections
+M	README.md
+M	VERSION
+
+0de3034;renamed
+R100	src/com/chariotsolutions/nfc/plugin/NFCPlugin.java	src/com/chariotsolutions/nfc/plugin/NfcPlugin.java
+
+3d93ed9;Merge pull request #11 from lhl/tag-support
+M	phonegap-nfc.js
+
+99daae8;catching up with namespace changes used internally
+M	phonegap-nfc.js
+
+515ddd4;missing ,
+M	phonegap-nfc.js
+
+6d26cb4;re-adding NdefPlugin complete with warning, moved more JS function to nfc namespace - Major Changes
+M	README.md
+M	VERSION
+M	phonegap-nfc.js
+M	src/com/chariotsolutions/nfc/plugin/NFCPlugin.java
+A	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+M	src/com/chariotsolutions/nfc/plugin/Util.java
+
+e0e0478;introducing 'tag listener' and reformated for 0.1.5
+M	README.md
+
+c20d644;seperated ndef and vanilla util functions into different namespaces - bumped version to 0.1.5
+M	VERSION
+M	phonegap-nfc.js
+
+d709a7c;rename from ndef to nfc
+M	phonegap-nfc.js
+R099	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java	src/com/chariotsolutions/nfc/plugin/NFCPlugin.java
+M	src/com/chariotsolutions/nfc/plugin/Util.java
+
+fe714da;support for catching the default TAG_DISCOVERED event
+M	VERSION
+M	build.xml
+M	phonegap-nfc.js
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+M	src/com/chariotsolutions/nfc/plugin/Util.java
+
+1ed46d9;0.1.3
+M	VERSION
+
+b58c03d;Use a  combination of Ndef and NfcAdapter.EXTRA_NDEF_MESSAGES to parse message contents since Ndef is null for peer-to-peer messages.
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+92ccdd2;Handle null ndef gracefully
+M	src/com/chariotsolutions/nfc/plugin/Util.java
+
+8b2c4d6;need savedIntent to write tags
+M	VERSION
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+e20280d;0.1.1
+M	VERSION
+
+ca80899;handle null message
+M	src/com/chariotsolutions/nfc/plugin/Util.java
+
+5cf96b7;reformat
+M	phonegap-nfc.js
+
+b96c521;document event, fix event type ndef-formatable
+M	README.md
+M	phonegap-nfc.js
+
+d7859d4;Fix spelling for formatable.  Change event type from ndef-unformatted to ndef-formatable
+M	README.md
+M	phonegap-nfc.js
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+ed6f28b;handle unformatted tags
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+4f1d6d7;cleanup
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+3413662;Don't pass intent to parseMessage.  Reposition code to kill intents from history
+M	phonegap-nfc.js
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+9d835b3;use Ndef to parse message and return meta data.  Fire javascript event from java and remove from navigator.nfc.  Add PhoneGap.addConstructor() and init function to initialize the plugins instead of load-on-startup="true" in plugins.xml.  We no longer need https://github.com/phonegap/phonegap-android/pull/177
+M	phonegap-nfc.js
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+M	src/com/chariotsolutions/nfc/plugin/Util.java
+
+b3be7e8;launching app from onPause()
+M	README.md
+
+ca0b613;ignore the recycled intent when app is launched from history
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+b4cb84e;saveIntent and better logging
+M	VERSION
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+af334d2;link to download page
+M	README.md
+
+93bedea;v0.1.0
+M	VERSION
+
+3da020a;undo c5e3a9ea2d8799d066a675afd8195d44f2881459
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+28723d8;phonegap-1.0.0rc2
+M	build.xml
+
+c5e3a9e;refined message parsing and plugin lifecycle. Closes #2
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+d08ccfd;build script
+M	.gitignore
+A	VERSION
+M	build.xml
+D	phonegap-nfc.jar
+
+1416a19;nfc.eraseTag()
+M	README.md
+
+533f8fb;move JSON to NDEF conversion code to Util
+M	phonegap-nfc.jar
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+A	src/com/chariotsolutions/nfc/plugin/Util.java
+
+9568833;reformat (and get rid of trailing whitespace)
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+3ecd2ef;tabs to spaces
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+1206a30;Fire event when reading an tag with no messages Fixes Issue #5
+M	phonegap-nfc.jar
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+14da40e;cleaned up the initialize
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+ff08ece;refactoring fun
+M	phonegap-nfc.jar
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+A	src/com/chariotsolutions/nfc/plugin/TagWriteException.java
+
+c360f3e;remove unused queuedIntents
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+bda07b5;Merge branch 'eraseTag'
+a1ec9df;new binary with fix for Issue #4
+M	phonegap-nfc.jar
+
+6e92010;return plugin result from writeTag
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+1d339fa;eraseTag
+M	phonegap-nfc.js
+
+205cc3f;ignore
+M	.gitignore
+
+727971e;remove empty section
+M	README.md
+
+f2116cb;rebuild jar
+M	phonegap-nfc.jar
+
+835f6c0;update documentation
+M	README.md
+
+924a524;peer-to-peer shareTag and unshareTag
+M	phonegap-nfc.jar
+M	phonegap-nfc.js
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+93bd333;remove eclipse
+D	.classpath
+M	.gitignore
+D	.project
+D	build.properties
+M	phonegap-nfc.jar
+
+72ce833;include default values for properties
+M	build.xml
+
+5414ab6;new jar
+M	phonegap-nfc.jar
+
+1b84f78;cleanup, remove reader-demo
+M	build.xml
+
+2ed009b;phonegap 1.0.0rc1
+M	build.properties
+
+fe49613;phonegap 1.0.0rc1
+M	.classpath
+
+664e5d9;reader demo moved to https://github.com/don/phonegap-nfc-reader
+D	reader-demo/.classpath
+D	reader-demo/.project
+D	reader-demo/AndroidManifest.xml
+D	reader-demo/assets/www/index.html
+D	reader-demo/assets/www/phonegap.0.9.5.js
+D	reader-demo/default.properties
+D	reader-demo/gen/com/chariotsolutions/nfc/demo/R.java
+D	reader-demo/res/layout/main.xml
+D	reader-demo/res/values/strings.xml
+D	reader-demo/src/com/chariotsolutions/nfc/demo/NdefDemo.java
+
+683a846;addService is replaced by plugins.xml
+M	phonegap-nfc.js
+
+d8da7d9;Merge branch 'master' of github.com:chariotsolutions/phonegap-nfc
+7088bd6;rename NdefPlugin navigator.nfc
+M	phonegap-nfc.jar
+
+90e8bee;rename NdefPlugin navigator.nfc
+M	phonegap-nfc.js
+M	reader-demo/.classpath
+M	reader-demo/assets/www/index.html
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+d7f8854;fixing flag
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+c2abd1a;fixed
+M	build.properties
+
+9302165;refactored the init of all the lists/filters used, messy
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+f8f4d8a;refactored the init of all the lists/filters used, messy
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+b9d19da;src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+M	build.properties
+M	phonegap-nfc.jar
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+22c9da0;merged
+5662b30;ifoo
+M	build.properties
+
+0b94769;fix default path
+M	build.properties
+
+78fcf33;peer to peer (without onPause or onResume)
+M	phonegap-nfc.jar
+M	phonegap-nfc.js
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+c7e4059;convert tabs to spaces
+M	README.md
+M	build.properties
+M	reader-demo/AndroidManifest.xml
+M	reader-demo/assets/www/index.html
+M	reader-demo/src/com/chariotsolutions/nfc/demo/NdefDemo.java
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+0358019;new build
+M	phonegap-nfc.jar
+
+2aa3809;scanning fails unless an NdefListener or NdefFormattableListener is added
+M	reader-demo/assets/www/index.html
+
+209c8ee;record.payload[0]
+M	reader-demo/assets/www/index.html
+
+45a0ce4;merge with github master
+ef939fb;more cleanup
+M	reader-demo/assets/www/index.html
+
+2acbfb5;refactoring client
+M	reader-demo/assets/www/index.html
+
+b7e463b;latest build
+M	phonegap-nfc.jar
+
+2eb788e;updates for getting started with the plugin
+M	README.md
+
+90fda59;new build commands
+M	build.xml
+
+bf8e4ca;added ndef and ndefformatable listeners to demo
+M	reader-demo/assets/www/index.html
+
+4bb8745;removed unused imports
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+50f6ba3;removed vibrate from write, should be moved to js
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+d6b2301;now firing events for tags which match tech filters for ndef and ndefformatable
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+edbded9;remove old unused functions
+M	phonegap-nfc.js
+
+42965f9;merge api changes, build is f'd
+0c51fd3;cleaned up javascript API a bit
+M	phonegap-nfc.js
+M	reader-demo/assets/www/index.html
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+75add94;last round of faffing with builds
+M	.classpath
+M	.gitignore
+M	build.properties
+M	phonegap-nfc.jar
+D	phonegap.jar
+M	reader-demo/.classpath
+A	reader-demo/gen/com/chariotsolutions/nfc/demo/R.java
+D	reader-demo/libs/phonegap.jar
+
+bb9a36b;changes to work with latest phonegap-android changes
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+c90a1e9;another fix to build
+M	build.xml
+
+6ae1188;twaking build process
+M	.gitignore
+M	build.properties
+M	build.xml
+M	phonegap-nfc.jar
+
+abb4367;modifications to get to build (need to fix this...)
+M	.classpath
+M	.project
+M	build.properties
+M	phonegap-nfc.jar
+
+25131eb;default to demo
+M	build.xml
+
+4e00139;this is in the demo
+D	src/com/chariotsolutions/nfc/demo/NdefDemo.java
+
+93c9b6c;Merge branch 'master' of github.com:chariotsolutions/phonegap-nfc
+4a2313c;build properties and class path for eclipse
+M	.classpath
+M	.gitignore
+A	build.properties
+
+a3e00eb;Merge branch 'master' of github.com:chariotsolutions/phonegap-nfc
+fa3cd22;basic write support (needs cleanup)
+M	phonegap-nfc.js
+M	reader-demo/assets/www/index.html
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+03ab274;new build
+M	phonegap-nfc.jar
+
+edcd2b0;no more updates to claspath
+M	.gitignore
+
+a64df21;entries for phonegap/android libs
+A	.classpath
+
+8ce7b8d;removing build.properties
+M	.gitignore
+D	build.properties
+
+644d463;phonegap-nfc libs should be put in place using ant, don't want them in git twice
+M	.gitignore
+D	reader-demo/assets/www/phonegap-nfc.js
+
+c6df12a;new ant build for demos
+M	.gitignore
+A	.project
+A	build.properties
+M	build.xml
+M	phonegap-nfc.jar
+A	phonegap.jar
+T	reader-demo/assets/www/phonegap-nfc.js
+
+9f09cf9;removing 9.5 phonegap
+D	phonegap.jar
+
+4fcc096;merging for potential change to phonegap-android plugin lifecycle events
+61e744c;restructing for better demos and builds
+D	.project
+
+d92b2c0;restructing for better demos and builds
+A	.project
+A	build.xml
+A	phonegap-nfc.jar
+A	phonegap.jar
+A	reader-demo/libs/phonegap.jar
+A	reader-demo/src/com/chariotsolutions/nfc/demo/NdefDemo.java
+
+38cc2d3;restructing for better demos and builds
+M	.gitignore
+A	reader-demo/.classpath
+A	reader-demo/.project
+A	reader-demo/default.properties
+M	src/com/chariotsolutions/nfc/plugin/DroidGapWithNfc.java
+
+24ca74a;improve json message
+M	reader-demo/assets/www/index.html
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+58a6fe9;Found: Missing AndroidManifest.xml
+A	reader-demo/AndroidManifest.xml
+
+a769535;Removed fourth step to extend DroidGapWithNfc since it no longer exists
+M	README.md
+
+45fdb92;now using pause/resume/newintent events from PhoneGap
+A	reader-demo/assets/www/phonegap-nfc.js
+M	src/com/chariotsolutions/nfc/demo/NdefDemo.java
+D	src/com/chariotsolutions/nfc/plugin/DroidGapWithNfc.java
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+047e16d;Allowing registration of 'other' events. Fire new events for ndef and ndefformatable
+M	phonegap-nfc.js
+D	reader-demo/AndroidManifest.xml
+M	reader-demo/assets/www/index.html
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+0da9964;writing
+M	README.md
+D	phonegap-nfc.jar
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+759fb3c;renamed phonegap nfc js
+R100	phonegap.nfc.js	phonegap-nfc.js
+M	reader-demo/assets/www/index.html
+
+e5b2674;tidying
+M	README.md
+
+a7162d4;Hopefully a clearer readme now
+M	README.md
+
+a34f94e;new version including write
+M	phonegap-nfc.jar
+
+7dcd397;removed unused css file
+D	reader-demo/assets/www/master.css
+
+522e68a;restructuring
+R100	assets/www/phonegap.nfc.js	phonegap.nfc.js
+R100	AndroidManifest.xml	reader-demo/AndroidManifest.xml
+R100	assets/www/index.html	reader-demo/assets/www/index.html
+R100	assets/www/master.css	reader-demo/assets/www/master.css
+R100	assets/www/phonegap.0.9.5.js	reader-demo/assets/www/phonegap.0.9.5.js
+R100	res/layout/main.xml	reader-demo/res/layout/main.xml
+R100	res/values/strings.xml	reader-demo/res/values/strings.xml
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+cd44d9e;missed a toast to log
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+80e7a36;removed overwritting tag call
+M	assets/www/index.html
+
+f201d86;Removed toast notifcations, all error now return plugin results
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+83f04c9;overwrite tag after reading (for testing)
+M	assets/www/index.html
+
+4bdd22d;add write support (for tags with our mimeType)
+M	assets/www/phonegap.nfc.js
+M	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+7c67fdd;rename NdefReaderPlugin to NdefPlugin
+M	AndroidManifest.xml
+M	assets/www/index.html
+M	assets/www/phonegap.nfc.js
+R081	src/com/chariotsolutions/nfc/demo/NfcReaderDemo.java	src/com/chariotsolutions/nfc/demo/NdefDemo.java
+M	src/com/chariotsolutions/nfc/plugin/DroidGapWithNfc.java
+R097	src/com/chariotsolutions/nfc/plugin/NdefReaderPlugin.java	src/com/chariotsolutions/nfc/plugin/NdefPlugin.java
+
+33f9ef4;fixed path
+M	phonegap-nfc.jar
+
+5fc865c;updated readme with jar details
+M	README.md
+
+5c61773;license
+M	README.md
+
+9e8fc56;jar for release
+A	phonegap-nfc.jar
+
+a2c56fa;ignoring makefile
+M	.gitignore
+
+7bd922b;fixed event type
+M	README.md
+
+5b1edea;fixed event type
+M	README.md
+
+0259649;removed import
+M	src/com/chariotsolutions/nfc/plugin/DroidGapWithNfc.java
+
+955e6ca;Merge branch 'master' of github.com:chariotsolutions/phonegap-nfc
+8b8eac9;reset intent after saving
+M	src/com/chariotsolutions/nfc/plugin/DroidGapWithNfc.java
+
+0d6c575;removed stray log statement
+M	src/com/chariotsolutions/nfc/plugin/DroidGapWithNfc.java
+
+15a44b3;Initial import
+A	.gitignore
+A	AndroidManifest.xml
+A	README.md
+A	assets/www/index.html
+A	assets/www/master.css
+A	assets/www/phonegap.0.9.5.js
+A	assets/www/phonegap.nfc.js
+A	res/layout/main.xml
+A	res/values/strings.xml
+A	src/com/chariotsolutions/nfc/demo/NfcReaderDemo.java
+A	src/com/chariotsolutions/nfc/plugin/DroidGapWithNfc.java
+A	src/com/chariotsolutions/nfc/plugin/NdefReaderPlugin.java

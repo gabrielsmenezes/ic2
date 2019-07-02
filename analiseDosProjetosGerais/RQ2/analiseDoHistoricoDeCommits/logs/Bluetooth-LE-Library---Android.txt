@@ -1,0 +1,1048 @@
+8871fc5;Merge pull request #25 from alt236/release/app_v1_1_1
+e5ed6f1;Preparing for App relase v1.1.1
+M	README.md
+M	sample_app/build.gradle
+
+e838cac;Merge pull request #24 from alt236/bugfix/dont-ask-for-location-permission-pre-API23
+ebc44c7;App no longer tries to ask for COARSE_LOCATION permission pre API 23 as it is not needed
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/MainActivity.java
+
+f2f9ac3;Bumped app version, updated manifest and README
+M	README.md
+A	image_assets/feature_graphic.png
+A	image_assets/screenshots/phone_screenshot_1.png
+A	image_assets/screenshots/phone_screenshot_2.png
+A	image_assets/screenshots/phone_screenshot_3.png
+A	image_assets/screenshots/phone_screenshot_4.png
+R100	sample_app/web_hi_res_512.png	image_assets/web_hi_res_512.png
+M	sample_app/build.gradle
+M	sample_app/src/main/AndroidManifest.xml
+D	screenshots/screenshot_1.png
+D	screenshots/screenshot_1_full.png
+D	screenshots/screenshot_2.png
+D	screenshots/screenshot_2_full.png
+D	screenshots/screenshot_3.png
+D	screenshots/screenshot_3_full.png
+D	screenshots/screenshot_4.png
+D	screenshots/screenshot_4_full.png
+
+be2583c;Merge pull request #21 from alt236/app-material-redisign-and-optimisations
+0d10857;Bumped tools to 2.2.3
+D	.idea/.name
+D	.idea/encodings.xml
+M	.idea/gradle.xml
+D	.idea/inspectionProfiles/Project_Default.xml
+D	.idea/inspectionProfiles/profiles_settings.xml
+M	.idea/misc.xml
+M	.idea/vcs.xml
+M	bluetooth-le-library.iml
+M	build.gradle
+M	library/library.iml
+M	sample_app/sample_app.iml
+
+47a4c12;Added unit tests for BluetoothLeDeviceStore.java
+M	sample_app/build.gradle
+M	sample_app/src/main/java/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+A	sample_app/src/test/java/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStoreTest.java
+
+81d984e;The dound device list is now implemented as a recyclerview.
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/common/recyclerview/BaseRecyclerViewAdapter.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/common/recyclerview/RecyclerViewBinderCore.java
+D	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/DeviceListAdapter.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/DeviceRecyclerAdapter.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/MainActivity.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/RecyclerViewCoreFactory.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/recyclerview/binder/CommonBinding.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/recyclerview/binder/IBeaconBinder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/recyclerview/binder/LeDeviceBinder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/recyclerview/holder/CommonDeviceHolder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/recyclerview/holder/IBeaconHolder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/recyclerview/holder/LeDeviceHolder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/recyclerview/model/IBeaconItem.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/recyclerview/model/LeDeviceItem.java
+M	sample_app/src/main/res/layout/activity_main.xml
+R070	sample_app/src/main/res/layout/list_item_device.xml	sample_app/src/main/res/layout/list_item_device_ibeacon.xml
+A	sample_app/src/main/res/layout/list_item_device_le.xml
+A	sample_app/src/main/res/layout/viewpart_list_item_device_common.xml
+
+a7312ad;Added circle.yml
+A	circle.yml
+
+9ba9f27;Updated app icon (again)
+M	sample_app/src/main/res/mipmap-hdpi/ic_launcher.png
+M	sample_app/src/main/res/mipmap-mdpi/ic_launcher.png
+M	sample_app/src/main/res/mipmap-xhdpi/ic_launcher.png
+M	sample_app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+M	sample_app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	sample_app/web_hi_res_512.png
+
+3a234b8;Fixed crash when selecting GATT service
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/control/DeviceControlActivity.java
+
+1d3dd85;Updated the app icon
+D	sample_app/ic_launcher-web.png
+M	sample_app/src/main/AndroidManifest.xml
+D	sample_app/src/main/res/drawable-hdpi/ic_launcher.png
+D	sample_app/src/main/res/drawable-mdpi/ic_launcher.png
+D	sample_app/src/main/res/drawable-xhdpi/ic_launcher.png
+D	sample_app/src/main/res/drawable-xxhdpi/ic_launcher.png
+A	sample_app/src/main/res/mipmap-hdpi/ic_launcher.png
+A	sample_app/src/main/res/mipmap-mdpi/ic_launcher.png
+A	sample_app/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	sample_app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	sample_app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+A	sample_app/web_hi_res_512.png
+
+1639e1a;Updated share and bluetooth icons
+M	sample_app/src/main/res/drawable-hdpi/ic_action_share.png
+A	sample_app/src/main/res/drawable-hdpi/ic_bluetooth.png
+M	sample_app/src/main/res/drawable-mdpi/ic_action_share.png
+A	sample_app/src/main/res/drawable-mdpi/ic_bluetooth.png
+M	sample_app/src/main/res/drawable-xhdpi/ic_action_share.png
+M	sample_app/src/main/res/drawable-xhdpi/ic_bluetooth.png
+M	sample_app/src/main/res/drawable-xxhdpi/ic_action_share.png
+A	sample_app/src/main/res/drawable-xxhdpi/ic_bluetooth.png
+A	sample_app/src/main/res/drawable-xxxhdpi/ic_action_share.png
+A	sample_app/src/main/res/drawable-xxxhdpi/ic_bluetooth.png
+M	sample_app/src/main/res/layout/list_item_device.xml
+
+ef5b843;Fixed bug where the device class name was returned instead of the major class name
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/model/DeviceInfoItem.java
+
+6f09234;Fixed CSV sharing
+M	sample_app/src/main/java/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/common/Navigation.java
+R088	sample_app/src/main/java/uk/co/alt236/btlescan/util/CsvWriterHelper.java	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/CsvWriterHelper.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/MainActivity.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/Sharer.java
+M	sample_app/src/main/res/values/strings.xml
+
+7f15ea3;We now have a "connecting" state in the ControlActivity.
+M	sample_app/src/main/java/uk/co/alt236/btlescan/services/BluetoothLeService.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/control/DeviceControlActivity.java
+M	sample_app/src/main/res/values/strings.xml
+
+727f2d8;Moved the list adapter creation out of DeviceControlActivity
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/control/DeviceControlActivity.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/control/GattDataAdapterFactory.java
+
+b54a56b;Updated app colours and margins between sections
+M	sample_app/src/main/res/layout/list_item_view_adrecord.xml
+M	sample_app/src/main/res/layout/list_item_view_device_info.xml
+M	sample_app/src/main/res/layout/list_item_view_header.xml
+M	sample_app/src/main/res/layout/list_item_view_ibeacon_details.xml
+M	sample_app/src/main/res/layout/list_item_view_rssi_info.xml
+M	sample_app/src/main/res/layout/list_item_view_textview.xml
+M	sample_app/src/main/res/values-v21/styles.xml
+M	sample_app/src/main/res/values/colors.xml
+M	sample_app/src/main/res/values/dimens.xml
+M	sample_app/src/main/res/values/styles.xml
+
+e43bfc1;Added navigation class to abstract activity launching
+M	sample_app/sample_app.iml
+M	sample_app/src/main/AndroidManifest.xml
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/common/Navigation.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/control/DeviceControlActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/DeviceDetailsActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/MainActivity.java
+
+e9c2f0d;The extras in BluetoothLeService are now properly unique
+M	sample_app/src/main/java/uk/co/alt236/btlescan/services/BluetoothLeService.java
+
+65b597a;Now using EasyCursor off maven instead of the bundled jar
+M	sample_app/build.gradle
+D	sample_app/libs/EasyCursor-0.1.1.jar
+
+92d6ee5;Removed merge adapter, details screen now uses a recyclerview
+M	library/library.iml
+M	sample_app/build.gradle
+M	sample_app/sample_app.iml
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/common/recyclerview/BaseRecyclerViewAdapter.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/common/recyclerview/BaseViewBinder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/common/recyclerview/BaseViewHolder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/common/recyclerview/RecyclerViewBinderCore.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/common/recyclerview/RecyclerViewItem.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/control/DeviceControlActivity.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/DetailsRecyclerAdapter.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/DeviceDetailsActivity.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/RecyclerViewCoreFactory.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/binder/AdRecordBinder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/binder/DeviceInfoBinder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/binder/HeaderBinder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/binder/IBeaconBinder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/binder/RssiBinder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/binder/TextBinder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/holder/AdRecordHolder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/holder/DeviceInfoHolder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/holder/HeaderHolder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/holder/IBeaconHolder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/holder/RssiInfoHolder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/holder/TextHolder.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/model/AdRecordItem.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/model/DeviceInfoItem.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/model/HeaderItem.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/model/IBeaconItem.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/model/RssiItem.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/recyclerview/model/TextItem.java
+M	sample_app/src/main/res/layout/activity_details.xml
+M	sample_app/src/main/res/layout/list_item_view_header.xml
+M	sample_app/src/main/res/layout/list_item_view_textview.xml
+
+54d0caf;Rearranged app packages and started splitting classes
+M	.idea/misc.xml
+M	sample_app/sample_app.iml
+M	sample_app/src/main/AndroidManifest.xml
+R088	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceControlActivity.java	sample_app/src/main/java/uk/co/alt236/btlescan/ui/control/DeviceControlActivity.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/ui/control/Exporter.java
+R098	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java	sample_app/src/main/java/uk/co/alt236/btlescan/ui/details/DeviceDetailsActivity.java
+R096	sample_app/src/main/java/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/DeviceListAdapter.java
+R097	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DialogFactory.java	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/DialogFactory.java
+R093	sample_app/src/main/java/uk/co/alt236/btlescan/activities/MainActivity.java	sample_app/src/main/java/uk/co/alt236/btlescan/ui/main/MainActivity.java
+M	sample_app/src/main/res/layout/activity_main.xml
+
+ec33fd7;Materialized the UI, added runtme permissions support, now compiling against 24
+M	.idea/compiler.xml
+A	.idea/encodings.xml
+M	.idea/gradle.xml
+M	.idea/inspectionProfiles/Project_Default.xml
+M	.idea/misc.xml
+A	.idea/runConfigurations.xml
+D	.idea/runConfigurations/Run_Android_Tests.xml
+D	.idea/runConfigurations/Run_JUnit_Tests.xml
+D	.idea/runConfigurations/Run_Sample_App.xml
+A	Bluetooth-LE-Library---Android.iml
+M	bluetooth-le-library.iml
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	library/library.iml
+M	sample_app/build.gradle
+M	sample_app/sample_app.iml
+M	sample_app/src/main/AndroidManifest.xml
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+A	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DialogFactory.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/MainActivity.java
+M	sample_app/src/main/res/layout/activity_gatt_services.xml
+M	sample_app/src/main/res/layout/activity_main.xml
+A	sample_app/src/main/res/layout/dialog_textview.xml
+M	sample_app/src/main/res/layout/list_item_view_header.xml
+D	sample_app/src/main/res/values-v11/styles.xml
+D	sample_app/src/main/res/values-v14/styles.xml
+A	sample_app/src/main/res/values-v21/styles.xml
+M	sample_app/src/main/res/values/colors.xml
+M	sample_app/src/main/res/values/strings.xml
+M	sample_app/src/main/res/values/styles.xml
+
+c6cece6;Merge pull request #13 from ravidsrk/patch-1
+1647ca1;Added code syntax highlighting to Readme
+M	README.md
+
+112bc00;Merge pull request #12 from orthographic-pedant/spell_check/advertisement
+f483a0e;Fixed typographical error, changed advertisment to advertisement in README.
+M	README.md
+
+51c9e5c;Merge branch 'master' of github.com:alt236/Bluetooth-LE-Library---Android
+28f694f;Merge branch 'move-to-android-studio'
+6946d05;Ready to release v1.0.0
+M	README.md
+M	library/build.gradle
+M	library/library.iml
+M	sample_app/sample_app.iml
+
+8c0c0b4;Finalising before merging
+M	.idea/inspectionProfiles/Project_Default.xml
+M	library/build.gradle
+M	library/library.iml
+M	library/src/main/AndroidManifest.xml
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecord.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconManufacturerData.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolver.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/ByteUtils.java
+D	library/src/main/res/drawable-hdpi/ic_launcher.png
+D	library/src/main/res/drawable-mdpi/ic_launcher.png
+D	library/src/main/res/drawable-xhdpi/ic_launcher.png
+D	library/src/main/res/drawable-xxhdpi/ic_launcher.png
+D	library/src/main/res/values-v11/styles.xml
+D	library/src/main/res/values-v14/styles.xml
+D	library/src/main/res/values/strings.xml
+D	library/src/main/res/values/styles.xml
+M	sample_app/build.gradle
+M	sample_app/sample_app.iml
+M	sample_app/src/main/AndroidManifest.xml
+M	sample_app/src/main/res/layout/list_item_device.xml
+M	sample_app/src/main/res/values/strings.xml
+
+459eb1d;Starting to abstract more so we can support more beacon types
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+A	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/BeaconManufacturerData.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/BeaconType.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/BeaconUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconDevice.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconManufacturerData.java
+M	library/src/test/java/uk/co/alt236/bluetoothlelib/device/beacon/BeaconUtilsTest.java
+A	library/src/test/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconManufacturerDataTest.java
+M	library/src/test/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconUtilsTest.java
+M	library/src/test/java/uk/co/alt236/bluetoothlelib/util/AdRecordUtilsTest.java
+M	library/src/test/java/uk/co/alt236/bluetoothlelib/util/ByteUtilsTest.java
+
+cb43be7;added BeaconDevice Interface
+A	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/BeaconDevice.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconDevice.java
+
+201e4a6;Started making the library less bound to ibeacons
+M	README.md
+A	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/BeaconType.java
+A	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/BeaconUtils.java
+A	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconConstants.java
+R092	library/src/main/java/uk/co/alt236/bluetoothlelib/device/IBeaconDevice.java	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconDevice.java
+R060	library/src/main/java/uk/co/alt236/bluetoothlelib/util/IBeaconDistanceDescriptor.java	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconDistanceDescriptor.java
+R093	library/src/main/java/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconManufacturerData.java
+R059	library/src/main/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java	library/src/main/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconUtils.java
+A	library/src/test/java/uk/co/alt236/bluetoothlelib/device/beacon/BeaconUtilsTest.java
+R068	library/src/test/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtilsTest.java	library/src/test/java/uk/co/alt236/bluetoothlelib/device/beacon/ibeacon/IBeaconUtilsTest.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+
+4e17365;We can now list supported bluetooth services
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+A	library/src/main/java/uk/co/alt236/bluetoothlelib/device/BluetoothService.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+M	sample_app/src/main/res/layout/list_item_view_device_info.xml
+M	sample_app/src/main/res/values/strings.xml
+
+eae8e9c;Added Bluetooth Major Class resolver
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/BluetoothClassResolver.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+M	sample_app/src/main/res/layout/list_item_view_device_info.xml
+M	sample_app/src/main/res/values/strings.xml
+
+ab6997b;We are now using AppCompat and support Material
+M	build.gradle
+M	library/library.iml
+M	sample_app/build.gradle
+D	sample_app/libs/android-support-v4.jar
+D	sample_app/libs/butterknife-4.0.1.jar
+D	sample_app/libs/merge-1.0.1.jar
+D	sample_app/libs/sacklist-1.0.0.jar
+M	sample_app/sample_app.iml
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceControlActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/MainActivity.java
+M	sample_app/src/main/res/menu/details.xml
+M	sample_app/src/main/res/menu/gatt_services.xml
+M	sample_app/src/main/res/menu/main.xml
+M	sample_app/src/main/res/values-v11/styles.xml
+M	sample_app/src/main/res/values-v14/styles.xml
+M	sample_app/src/main/res/values/styles.xml
+
+262fa72;Bumping versions and updating README
+M	README.md
+M	build.gradle
+M	library/build.gradle
+M	sample_app/build.gradle
+
+f68b2f5;Fix for #9 (Some issue in GattAttributeResolver)
+M	.gitignore
+M	documents/Bluetooth_UUIDs.ods
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolver.java
+A	library/src/test/java/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolverTest.java
+
+31f191b;Fix for #5 (IBeaconManufacturerData.calculateUUIDString(byte[]) bug)
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+M	library/src/test/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtilsTest.java
+
+33f2a26;Added some IBeaconUtils tests
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+A	library/src/test/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtilsTest.java
+
+70169dc;More tests and general code cleanup
+A	.idea/runConfigurations/Run_Android_Tests.xml
+A	.idea/runConfigurations/Run_JUnit_Tests.xml
+A	.idea/runConfigurations/Run_Sample_App.xml
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/AdRecordUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/ByteUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+A	library/src/test/java/uk/co/alt236/bluetoothlelib/util/AdRecordUtilsTest.java
+
+4fcbc7c;Java 7-ness
+M	.idea/misc.xml
+M	library/build.gradle
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecordStore.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/CompanyIdentifierResolver.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolver.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/AdRecordUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/ByteUtils.java
+M	sample_app/build.gradle
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceControlActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+
+9c04515;Added some tests around ByteUtils
+M	library/build.gradle
+M	library/library.iml
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/ByteUtils.java
+A	library/src/test/java/uk/co/alt236/bluetoothlelib/util/ByteUtilsTest.java
+M	sample_app/sample_app.iml
+
+53138d5;Full code reformat
+M	library/src/main/AndroidManifest.xml
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/IBeaconDevice.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecord.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecordStore.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/BluetoothClassResolver.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/CompanyIdentifierResolver.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolver.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/AdRecordUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/ByteUtils.java
+A	library/src/main/java/uk/co/alt236/bluetoothlelib/util/IBeaconDistanceDescriptor.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/LimitedLinkHashMap.java
+M	sample_app/src/main/AndroidManifest.xml
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceControlActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/MainActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/services/BluetoothLeService.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/BluetoothLeScanner.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/BluetoothUtils.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/Constants.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/CsvWriterHelper.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/TimeFormatter.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/UtcDateFormatter.java
+M	sample_app/src/main/res/layout/actionbar_progress_indeterminate.xml
+M	sample_app/src/main/res/layout/activity_details.xml
+M	sample_app/src/main/res/layout/activity_gatt_services.xml
+M	sample_app/src/main/res/layout/activity_main.xml
+M	sample_app/src/main/res/layout/list_item_device.xml
+M	sample_app/src/main/res/layout/list_item_view_adrecord.xml
+M	sample_app/src/main/res/layout/list_item_view_device_info.xml
+M	sample_app/src/main/res/layout/list_item_view_header.xml
+M	sample_app/src/main/res/layout/list_item_view_ibeacon_details.xml
+M	sample_app/src/main/res/layout/list_item_view_rssi_info.xml
+M	sample_app/src/main/res/layout/list_item_view_textview.xml
+M	sample_app/src/main/res/menu/details.xml
+M	sample_app/src/main/res/menu/gatt_services.xml
+M	sample_app/src/main/res/menu/main.xml
+M	sample_app/src/main/res/values/colors.xml
+
+5f55a3e;Fixed some static analysis issues
+M	build.gradle
+D	library/project.properties
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecord.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/AdRecordUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/ByteUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+D	sample_app/project.properties
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceControlActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/MainActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/BluetoothUtils.java
+
+56e27ff;finalised things that could be final
+A	.idea/inspectionProfiles/Project_Default.xml
+A	.idea/inspectionProfiles/profiles_settings.xml
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/IBeaconDevice.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecord.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecordStore.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/BluetoothClassResolver.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/CompanyIdentifierResolver.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolver.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/AdRecordUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/ByteUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+M	library/src/main/java/uk/co/alt236/bluetoothlelib/util/LimitedLinkHashMap.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceControlActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/activities/MainActivity.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/services/BluetoothLeService.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/BluetoothLeScanner.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/BluetoothUtils.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/CsvWriterHelper.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/TimeFormatter.java
+M	sample_app/src/main/java/uk/co/alt236/btlescan/util/UtcDateFormatter.java
+
+67bc13a;Migrated project from Eclipse to Android Studio
+M	.gitignore
+A	.idea/.name
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/gradle.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/vcs.xml
+A	LICENSE-2.0.html
+A	bluetooth-le-library.iml
+A	build.gradle
+A	dist/BluetoothLeLibrary-0.0.1-javadoc.jar
+A	dist/BluetoothLeLibrary-0.0.1.jar
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+D	library/.classpath
+M	library/.gitignore
+D	library/.project
+D	library/.settings/org.eclipse.jdt.core.prefs
+A	library/build.gradle
+D	library/build.xml
+A	library/library.iml
+D	library/libs/android-support-v4.jar
+R062	library/proguard-project.txt	library/proguard-rules.pro
+R100	library/AndroidManifest.xml	library/src/main/AndroidManifest.xml
+R100	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java	library/src/main/java/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+R093	library/src/uk/co/alt236/bluetoothlelib/device/IBeaconDevice.java	library/src/main/java/uk/co/alt236/bluetoothlelib/device/IBeaconDevice.java
+R100	library/src/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecord.java	library/src/main/java/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecord.java
+R100	library/src/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecordStore.java	library/src/main/java/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecordStore.java
+R096	library/src/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java	library/src/main/java/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+R100	library/src/uk/co/alt236/bluetoothlelib/resolvers/BluetoothClassResolver.java	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/BluetoothClassResolver.java
+R100	library/src/uk/co/alt236/bluetoothlelib/resolvers/CompanyIdentifierResolver.java	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/CompanyIdentifierResolver.java
+R100	library/src/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolver.java	library/src/main/java/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolver.java
+R100	library/src/uk/co/alt236/bluetoothlelib/util/AdRecordUtils.java	library/src/main/java/uk/co/alt236/bluetoothlelib/util/AdRecordUtils.java
+R100	library/src/uk/co/alt236/bluetoothlelib/util/ByteUtils.java	library/src/main/java/uk/co/alt236/bluetoothlelib/util/ByteUtils.java
+R089	library/src/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java	library/src/main/java/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+R100	library/src/uk/co/alt236/bluetoothlelib/util/LimitedLinkHashMap.java	library/src/main/java/uk/co/alt236/bluetoothlelib/util/LimitedLinkHashMap.java
+R100	library/res/drawable-hdpi/ic_launcher.png	library/src/main/res/drawable-hdpi/ic_launcher.png
+R100	library/res/drawable-mdpi/ic_launcher.png	library/src/main/res/drawable-mdpi/ic_launcher.png
+R100	library/res/drawable-xhdpi/ic_launcher.png	library/src/main/res/drawable-xhdpi/ic_launcher.png
+R100	library/res/drawable-xxhdpi/ic_launcher.png	library/src/main/res/drawable-xxhdpi/ic_launcher.png
+R100	library/res/values-v11/styles.xml	library/src/main/res/values-v11/styles.xml
+R100	library/res/values-v14/styles.xml	library/src/main/res/values-v14/styles.xml
+R100	library/res/values/strings.xml	library/src/main/res/values/strings.xml
+R100	library/res/values/styles.xml	library/src/main/res/values/styles.xml
+D	sample_app/.classpath
+D	sample_app/.factorypath
+M	sample_app/.gitignore
+D	sample_app/.project
+D	sample_app/.settings/org.eclipse.jdt.apt.core.prefs
+D	sample_app/.settings/org.eclipse.jdt.core.prefs
+A	sample_app/build.gradle
+R062	sample_app/proguard-project.txt	sample_app/proguard-rules.pro
+A	sample_app/sample_app.iml
+R100	sample_app/AndroidManifest.xml	sample_app/src/main/AndroidManifest.xml
+R100	sample_app/src/uk/co/alt236/btlescan/activities/DeviceControlActivity.java	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceControlActivity.java
+R100	sample_app/src/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java	sample_app/src/main/java/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+R100	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java	sample_app/src/main/java/uk/co/alt236/btlescan/activities/MainActivity.java
+R100	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java	sample_app/src/main/java/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+R100	sample_app/src/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java	sample_app/src/main/java/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+R100	sample_app/src/uk/co/alt236/btlescan/services/BluetoothLeService.java	sample_app/src/main/java/uk/co/alt236/btlescan/services/BluetoothLeService.java
+R100	sample_app/src/uk/co/alt236/btlescan/util/BluetoothLeScanner.java	sample_app/src/main/java/uk/co/alt236/btlescan/util/BluetoothLeScanner.java
+R100	sample_app/src/uk/co/alt236/btlescan/util/BluetoothUtils.java	sample_app/src/main/java/uk/co/alt236/btlescan/util/BluetoothUtils.java
+R100	sample_app/src/uk/co/alt236/btlescan/util/Constants.java	sample_app/src/main/java/uk/co/alt236/btlescan/util/Constants.java
+R100	sample_app/src/uk/co/alt236/btlescan/util/CsvWriterHelper.java	sample_app/src/main/java/uk/co/alt236/btlescan/util/CsvWriterHelper.java
+R100	sample_app/src/uk/co/alt236/btlescan/util/TimeFormatter.java	sample_app/src/main/java/uk/co/alt236/btlescan/util/TimeFormatter.java
+R100	sample_app/src/uk/co/alt236/btlescan/util/UtcDateFormatter.java	sample_app/src/main/java/uk/co/alt236/btlescan/util/UtcDateFormatter.java
+R100	sample_app/res/drawable-hdpi/ic_action_share.png	sample_app/src/main/res/drawable-hdpi/ic_action_share.png
+R100	sample_app/res/drawable-hdpi/ic_launcher.png	sample_app/src/main/res/drawable-hdpi/ic_launcher.png
+R100	sample_app/res/drawable-mdpi/ic_action_share.png	sample_app/src/main/res/drawable-mdpi/ic_action_share.png
+R100	sample_app/res/drawable-mdpi/ic_launcher.png	sample_app/src/main/res/drawable-mdpi/ic_launcher.png
+R100	sample_app/res/drawable-xhdpi/ic_action_share.png	sample_app/src/main/res/drawable-xhdpi/ic_action_share.png
+R100	sample_app/res/drawable-xhdpi/ic_bluetooth.png	sample_app/src/main/res/drawable-xhdpi/ic_bluetooth.png
+R100	sample_app/res/drawable-xhdpi/ic_bluetooth_on.png	sample_app/src/main/res/drawable-xhdpi/ic_bluetooth_on.png
+R100	sample_app/res/drawable-xhdpi/ic_device_ibeacon.png	sample_app/src/main/res/drawable-xhdpi/ic_device_ibeacon.png
+R100	sample_app/res/drawable-xhdpi/ic_launcher.png	sample_app/src/main/res/drawable-xhdpi/ic_launcher.png
+R100	sample_app/res/drawable-xxhdpi/ic_action_share.png	sample_app/src/main/res/drawable-xxhdpi/ic_action_share.png
+R100	sample_app/res/drawable-xxhdpi/ic_launcher.png	sample_app/src/main/res/drawable-xxhdpi/ic_launcher.png
+R100	sample_app/res/layout/actionbar_progress_indeterminate.xml	sample_app/src/main/res/layout/actionbar_progress_indeterminate.xml
+R100	sample_app/res/layout/activity_details.xml	sample_app/src/main/res/layout/activity_details.xml
+R100	sample_app/res/layout/activity_gatt_services.xml	sample_app/src/main/res/layout/activity_gatt_services.xml
+R100	sample_app/res/layout/activity_main.xml	sample_app/src/main/res/layout/activity_main.xml
+R100	sample_app/res/layout/list_item_device.xml	sample_app/src/main/res/layout/list_item_device.xml
+R100	sample_app/res/layout/list_item_view_adrecord.xml	sample_app/src/main/res/layout/list_item_view_adrecord.xml
+R100	sample_app/res/layout/list_item_view_device_info.xml	sample_app/src/main/res/layout/list_item_view_device_info.xml
+R100	sample_app/res/layout/list_item_view_header.xml	sample_app/src/main/res/layout/list_item_view_header.xml
+R100	sample_app/res/layout/list_item_view_ibeacon_details.xml	sample_app/src/main/res/layout/list_item_view_ibeacon_details.xml
+R100	sample_app/res/layout/list_item_view_rssi_info.xml	sample_app/src/main/res/layout/list_item_view_rssi_info.xml
+R100	sample_app/res/layout/list_item_view_textview.xml	sample_app/src/main/res/layout/list_item_view_textview.xml
+R100	sample_app/res/menu/details.xml	sample_app/src/main/res/menu/details.xml
+R100	sample_app/res/menu/gatt_services.xml	sample_app/src/main/res/menu/gatt_services.xml
+R100	sample_app/res/menu/main.xml	sample_app/src/main/res/menu/main.xml
+R100	sample_app/res/values-sw600dp/dimens.xml	sample_app/src/main/res/values-sw600dp/dimens.xml
+R100	sample_app/res/values-sw720dp-land/dimens.xml	sample_app/src/main/res/values-sw720dp-land/dimens.xml
+R100	sample_app/res/values-v11/styles.xml	sample_app/src/main/res/values-v11/styles.xml
+R100	sample_app/res/values-v14/styles.xml	sample_app/src/main/res/values-v14/styles.xml
+R100	sample_app/res/values/colors.xml	sample_app/src/main/res/values/colors.xml
+R100	sample_app/res/values/dimens.xml	sample_app/src/main/res/values/dimens.xml
+R100	sample_app/res/values/strings.xml	sample_app/src/main/res/values/strings.xml
+R100	sample_app/res/values/styles.xml	sample_app/src/main/res/values/styles.xml
+A	settings.gradle
+
+e838503;Merge pull request #3 from xrmx/patch-1
+bcfaa21;Add instructions for creating local.properties
+M	README.md
+
+cc58a76;Preparing for releasing app v0.0.3
+M	README.md
+M	sample_app/AndroidManifest.xml
+M	screenshots/screenshot_1.png
+A	screenshots/screenshot_1_full.png
+M	screenshots/screenshot_2.png
+A	screenshots/screenshot_2_full.png
+M	screenshots/screenshot_3.png
+A	screenshots/screenshot_3_full.png
+A	screenshots/screenshot_4.png
+A	screenshots/screenshot_4_full.png
+
+4792282;Externalised strings
+M	sample_app/res/layout/activity_main.xml
+M	sample_app/res/layout/list_item_view_device_info.xml
+M	sample_app/res/layout/list_item_view_ibeacon_details.xml
+M	sample_app/res/layout/list_item_view_rssi_info.xml
+M	sample_app/res/values/strings.xml
+
+b0d65c0;Added GATT Services Exporter
+M	sample_app/res/menu/gatt_services.xml
+M	sample_app/res/values/strings.xml
+M	sample_app/src/uk/co/alt236/btlescan/activities/DeviceControlActivity.java
+M	sample_app/src/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+M	sample_app/src/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+
+131ab06;Started rewriting the Gatt Screen UI
+M	sample_app/res/layout/activity_gatt_services.xml
+M	sample_app/res/layout/list_item_view_adrecord.xml
+M	sample_app/res/values/strings.xml
+M	sample_app/src/uk/co/alt236/btlescan/activities/DeviceControlActivity.java
+M	sample_app/src/uk/co/alt236/btlescan/services/BluetoothLeService.java
+
+cf48721;Making the Device Details activity pretty
+A	sample_app/libs/merge-1.0.1.jar
+A	sample_app/libs/sacklist-1.0.0.jar
+M	sample_app/res/layout/activity_details.xml
+A	sample_app/res/layout/list_item_view_adrecord.xml
+A	sample_app/res/layout/list_item_view_device_info.xml
+A	sample_app/res/layout/list_item_view_header.xml
+A	sample_app/res/layout/list_item_view_ibeacon_details.xml
+A	sample_app/res/layout/list_item_view_rssi_info.xml
+A	sample_app/res/layout/list_item_view_textview.xml
+M	sample_app/res/values/strings.xml
+M	sample_app/res/values/styles.xml
+M	sample_app/src/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+
+e28d698;Preparing to relase v0.0.2
+M	README.md
+M	library/AndroidManifest.xml
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+M	sample_app/AndroidManifest.xml
+
+e79b3f8;Synchonised access to the RssiLog
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+M	library/src/uk/co/alt236/bluetoothlelib/util/LimitedLinkHashMap.java
+
+e8db168;Tidy up
+M	library/src/uk/co/alt236/bluetoothlelib/device/IBeaconDevice.java
+
+1536586;Added some Estimote Specific UUIDs
+M	documents/Bluetooth_UUIDs.ods
+M	library/src/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolver.java
+
+fab98f5;Fix for concurrent modification exception when getting running average RSSI
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+
+bfcd23e;The iBeaconDevice constructors will now throw an exception if the passed device is not an iBeacon
+M	library/src/uk/co/alt236/bluetoothlelib/device/IBeaconDevice.java
+
+4fca9ed;README fixes
+M	README.md
+
+d14e4f8;Fixes on CSV exporting
+M	sample_app/res/values/strings.xml
+M	sample_app/src/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+A	sample_app/src/uk/co/alt236/btlescan/util/TimeFormatter.java
+A	sample_app/src/uk/co/alt236/btlescan/util/UtcDateFormatter.java
+
+7f0d583;Added build.xml and added the `dist` directory to gitignore
+M	README.md
+D	documents/.~lock.COMPANY_IDENTIFIERS.ods#
+M	library/.gitignore
+A	library/build.xml
+
+fc69b6d;Started using an EasyObjectCursor to avoid the screen jumping up and down
+A	sample_app/libs/EasyCursor-0.1.1.jar
+M	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+M	sample_app/src/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+
+df3e945;Added additional CSV fields for iBeacons
+M	sample_app/src/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+
+96df6d5;Added share button to share device info
+A	sample_app/res/drawable-hdpi/ic_action_share.png
+A	sample_app/res/drawable-mdpi/ic_action_share.png
+A	sample_app/res/drawable-xhdpi/ic_action_share.png
+A	sample_app/res/drawable-xxhdpi/ic_action_share.png
+M	sample_app/res/layout/activity_main.xml
+M	sample_app/res/menu/main.xml
+M	sample_app/res/values/strings.xml
+M	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java
+M	sample_app/src/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+A	sample_app/src/uk/co/alt236/btlescan/util/CsvWriterHelper.java
+
+e207f1a;Added about dialog in sample app
+M	README.md
+M	sample_app/res/menu/main.xml
+M	sample_app/res/values/strings.xml
+M	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java
+
+e483973;Updated README and screenshots
+M	README.md
+M	screenshots/screenshot_1.png
+M	screenshots/screenshot_2.png
+M	screenshots/screenshot_3.png
+
+6ef451f;Updated Manifests for release
+M	library/AndroidManifest.xml
+M	sample_app/AndroidManifest.xml
+
+ab5b1f8;data update
+M	documents/COMPANY_IDENTIFIERS.ods
+
+9cd3b20;Made the iBeacon check more generic
+M	library/src/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+
+680a630;Added more screenshots
+M	README.md
+A	screenshots/screenshot_2.png
+A	screenshots/screenshot_3.png
+
+61b4681;Minor UI tweaks
+M	sample_app/AndroidManifest.xml
+R094	sample_app/src/uk/co/alt236/btlescan/activities/DetailsActivity.java	sample_app/src/uk/co/alt236/btlescan/activities/DeviceDetailsActivity.java
+M	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java
+
+f608d61;updated README
+M	README.md
+
+c4fa839;Added screenshot
+A	screenshots/screenshot_1.png
+
+f17ed8c;Added a big TODO for later
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+
+af22e1a;Added README
+A	README.md
+
+df90eec;Added Company Identifier resolver and updated UUIDs
+A	documents/.~lock.COMPANY_IDENTIFIERS.ods#
+M	documents/Bluetooth_UUIDs.ods
+A	documents/COMPANY_IDENTIFIERS.ods
+A	library/src/uk/co/alt236/bluetoothlelib/resolvers/CompanyIdentifierResolver.java
+M	library/src/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolver.java
+
+f30cb50;Added some more javadoc
+M	library/src/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecordStore.java
+M	library/src/uk/co/alt236/bluetoothlelib/util/ByteUtils.java
+M	library/src/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+
+a0aa259;Added some javadoc
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+M	library/src/uk/co/alt236/bluetoothlelib/device/IBeaconDevice.java
+M	library/src/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+
+96af55a;Moved the Bluetooth Class Resolver into its own class
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+A	library/src/uk/co/alt236/bluetoothlelib/resolvers/BluetoothClassResolver.java
+
+9872cd2;Changed the code to use the Lib bundled GATT attribute Resolver
+M	sample_app/src/uk/co/alt236/btlescan/activities/DeviceControlActivity.java
+M	sample_app/src/uk/co/alt236/btlescan/services/BluetoothLeService.java
+D	sample_app/src/uk/co/alt236/btlescan/util/SampleGattAttributes.java
+
+9b6f9b1;Added an Extended GATT UUID resolver
+A	documents/Bluetooth_UUIDs.ods
+A	library/src/uk/co/alt236/bluetoothlelib/resolvers/GattAttributeResolver.java
+
+a5ee9dd;Added the Gatt Services code from the Google Example
+M	sample_app/AndroidManifest.xml
+A	sample_app/res/layout/activity_gatt_services.xml
+A	sample_app/res/menu/details.xml
+A	sample_app/res/menu/gatt_services.xml
+M	sample_app/res/values/strings.xml
+M	sample_app/src/uk/co/alt236/btlescan/activities/DetailsActivity.java
+A	sample_app/src/uk/co/alt236/btlescan/activities/DeviceControlActivity.java
+A	sample_app/src/uk/co/alt236/btlescan/services/BluetoothLeService.java
+A	sample_app/src/uk/co/alt236/btlescan/util/SampleGattAttributes.java
+
+c4023bb;Removed RadarView and any references
+M	sample_app/res/layout/activity_main.xml
+M	sample_app/res/values/colors.xml
+M	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+D	sample_app/src/uk/co/alt236/btlescan/views/RadarView.java
+
+e2294ca;Updated the UI to support the runing average
+M	sample_app/res/layout/list_item_device.xml
+A	sample_app/res/values/colors.xml
+M	sample_app/res/values/strings.xml
+M	sample_app/src/uk/co/alt236/btlescan/activities/DetailsActivity.java
+M	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+R084	sample_app/src/uk/co/alt236/btlescan/util/BluetoothLeDeviceStore.java	sample_app/src/uk/co/alt236/btlescan/containers/BluetoothLeDeviceStore.java
+A	sample_app/src/uk/co/alt236/btlescan/util/Constants.java
+
+83ee1ea;Added running average for RSSI
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+M	library/src/uk/co/alt236/bluetoothlelib/device/IBeaconDevice.java
+A	library/src/uk/co/alt236/bluetoothlelib/util/LimitedLinkHashMap.java
+
+30fa8ea;Re-jigging the list generation in preparation of sliding window rssi calculation
+M	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java
+A	sample_app/src/uk/co/alt236/btlescan/util/BluetoothLeDeviceStore.java
+
+ad25dfc;Started working on RadarView
+M	sample_app/res/layout/activity_main.xml
+M	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java
+A	sample_app/src/uk/co/alt236/btlescan/views/RadarView.java
+
+bd57a59;Started using the new iBeacon class
+A	library/src/uk/co/alt236/bluetoothlelib/device/IBeaconDevice.java
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+
+3f333df;Created an iBeaconDevice object
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+M	library/src/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+M	library/src/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+
+7546813;Added more information in the list item
+M	sample_app/res/layout/list_item_device.xml
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+
+366f413;Exposed timestamp
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+
+f08a561;Added proximity descriptor
+M	library/src/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+M	sample_app/res/layout/list_item_device.xml
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+
+8c03f29;Added Distance calculation but it is off.
+M	library/src/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+
+27c0620;Fixed UUID calculation
+M	library/src/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+
+0984883;Added timestamp
+M	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java
+
+f5b9d5e;Working on the list UI
+M	sample_app/res/layout/list_item_device.xml
+M	sample_app/res/values/strings.xml
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+
+e21d05a;Added new icon for iBeacons
+R100	sample_app/res/drawable-xhdpi/ic_bluetooth_ibeacon.png	sample_app/res/drawable-xhdpi/ic_bluetooth_on.png
+A	sample_app/res/drawable-xhdpi/ic_device_ibeacon.png
+M	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+
+b3399fa;Added some javadoc
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+M	library/src/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+
+d59f8de;Removed transient keyword from RSSI and timestamp variables
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+
+a631cf2;Added timestamp to the BluetoothLeDevice
+M	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+
+cb6e9db;Split the project into a library and sample app
+A	library/.classpath
+A	library/.gitignore
+A	library/.project
+A	library/.settings/org.eclipse.jdt.core.prefs
+A	library/AndroidManifest.xml
+A	library/ic_launcher-web.png
+R100	libs/android-support-v4.jar	library/libs/android-support-v4.jar
+R100	proguard-project.txt	library/proguard-project.txt
+A	library/project.properties
+A	library/res/drawable-hdpi/ic_launcher.png
+A	library/res/drawable-mdpi/ic_launcher.png
+A	library/res/drawable-xhdpi/ic_launcher.png
+A	library/res/drawable-xxhdpi/ic_launcher.png
+R100	res/values-v11/styles.xml	library/res/values-v11/styles.xml
+R100	res/values-v14/styles.xml	library/res/values-v14/styles.xml
+A	library/res/values/strings.xml
+R100	res/values/styles.xml	library/res/values/styles.xml
+R097	src/uk/co/alt236/btlescan/containers/BluetoothLeDevice.java	library/src/uk/co/alt236/bluetoothlelib/device/BluetoothLeDevice.java
+R099	src/uk/co/alt236/btlescan/containers/AdRecord.java	library/src/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecord.java
+R096	src/uk/co/alt236/btlescan/containers/AdRecordStore.java	library/src/uk/co/alt236/bluetoothlelib/device/adrecord/AdRecordStore.java
+R086	src/uk/co/alt236/btlescan/containers/ManufacturerDataIBeacon.java	library/src/uk/co/alt236/bluetoothlelib/device/mfdata/IBeaconManufacturerData.java
+R096	src/uk/co/alt236/btlescan/util/AdRecordUtils.java	library/src/uk/co/alt236/bluetoothlelib/util/AdRecordUtils.java
+R097	src/uk/co/alt236/btlescan/util/ByteUtils.java	library/src/uk/co/alt236/bluetoothlelib/util/ByteUtils.java
+R089	src/uk/co/alt236/btlescan/util/IBeaconUtils.java	library/src/uk/co/alt236/bluetoothlelib/util/IBeaconUtils.java
+R100	.classpath	sample_app/.classpath
+R100	.factorypath	sample_app/.factorypath
+A	sample_app/.gitignore
+R100	.project	sample_app/.project
+R100	.settings/org.eclipse.jdt.apt.core.prefs	sample_app/.settings/org.eclipse.jdt.apt.core.prefs
+R100	.settings/org.eclipse.jdt.core.prefs	sample_app/.settings/org.eclipse.jdt.core.prefs
+R100	AndroidManifest.xml	sample_app/AndroidManifest.xml
+R100	ic_launcher-web.png	sample_app/ic_launcher-web.png
+A	sample_app/libs/android-support-v4.jar
+R100	libs/butterknife-4.0.1.jar	sample_app/libs/butterknife-4.0.1.jar
+A	sample_app/proguard-project.txt
+R093	project.properties	sample_app/project.properties
+R100	res/drawable-hdpi/ic_launcher.png	sample_app/res/drawable-hdpi/ic_launcher.png
+R100	res/drawable-mdpi/ic_launcher.png	sample_app/res/drawable-mdpi/ic_launcher.png
+R100	res/drawable-xhdpi/ic_bluetooth.png	sample_app/res/drawable-xhdpi/ic_bluetooth.png
+R100	res/drawable-xhdpi/ic_bluetooth_ibeacon.png	sample_app/res/drawable-xhdpi/ic_bluetooth_ibeacon.png
+R100	res/drawable-xhdpi/ic_launcher.png	sample_app/res/drawable-xhdpi/ic_launcher.png
+R100	res/drawable-xxhdpi/ic_launcher.png	sample_app/res/drawable-xxhdpi/ic_launcher.png
+R100	res/layout/actionbar_progress_indeterminate.xml	sample_app/res/layout/actionbar_progress_indeterminate.xml
+R100	res/layout/activity_details.xml	sample_app/res/layout/activity_details.xml
+R100	res/layout/activity_main.xml	sample_app/res/layout/activity_main.xml
+R100	res/layout/list_item_device.xml	sample_app/res/layout/list_item_device.xml
+R100	res/menu/main.xml	sample_app/res/menu/main.xml
+R100	res/values-sw600dp/dimens.xml	sample_app/res/values-sw600dp/dimens.xml
+R100	res/values-sw720dp-land/dimens.xml	sample_app/res/values-sw720dp-land/dimens.xml
+A	sample_app/res/values-v11/styles.xml
+A	sample_app/res/values-v14/styles.xml
+R100	res/values/dimens.xml	sample_app/res/values/dimens.xml
+R100	res/values/strings.xml	sample_app/res/values/strings.xml
+A	sample_app/res/values/styles.xml
+R082	src/uk/co/alt236/btlescan/activities/DetailsActivity.java	sample_app/src/uk/co/alt236/btlescan/activities/DetailsActivity.java
+R098	src/uk/co/alt236/btlescan/activities/MainActivity.java	sample_app/src/uk/co/alt236/btlescan/activities/MainActivity.java
+R096	src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java	sample_app/src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+R100	src/uk/co/alt236/btlescan/util/BluetoothLeScanner.java	sample_app/src/uk/co/alt236/btlescan/util/BluetoothLeScanner.java
+R100	src/uk/co/alt236/btlescan/util/BluetoothUtils.java	sample_app/src/uk/co/alt236/btlescan/util/BluetoothUtils.java
+
+cad6427;Started correcting the iBeacon data display
+M	res/layout/activity_details.xml
+M	src/uk/co/alt236/btlescan/activities/DetailsActivity.java
+M	src/uk/co/alt236/btlescan/containers/ManufacturerDataIBeacon.java
+M	src/uk/co/alt236/btlescan/util/ByteUtils.java
+
+78c0456;Can now parse IBeacon Manufacturer data (need to flip the byte order of a few fields)
+M	src/uk/co/alt236/btlescan/containers/ManufacturerDataIBeacon.java
+M	src/uk/co/alt236/btlescan/util/ByteUtils.java
+
+39d7b9a;Working on exposing the iBeacon Manufacturer specific data
+M	src/uk/co/alt236/btlescan/activities/DetailsActivity.java
+M	src/uk/co/alt236/btlescan/containers/ManufacturerDataIBeacon.java
+M	src/uk/co/alt236/btlescan/util/AdRecordUtils.java
+M	src/uk/co/alt236/btlescan/util/ByteUtils.java
+
+851c0cc;Started work on the iBeacon Manufacturer Data parsing
+M	src/uk/co/alt236/btlescan/containers/ManufacturerDataIBeacon.java
+
+222d249;The list will no longer clear once we open the details activity
+M	src/uk/co/alt236/btlescan/activities/MainActivity.java
+
+4b92e54;Made a couple of methods static
+D	.apt_generated/uk/co/alt236/btlescan/MainActivity$$ViewInjector.java
+M	src/uk/co/alt236/btlescan/activities/DetailsActivity.java
+
+103df3e;Refactored generic byte-related code out of AdRecordsUtil
+M	src/uk/co/alt236/btlescan/activities/DetailsActivity.java
+M	src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+M	src/uk/co/alt236/btlescan/containers/BluetoothLeDevice.java
+M	src/uk/co/alt236/btlescan/util/AdRecordUtils.java
+A	src/uk/co/alt236/btlescan/util/ByteUtils.java
+R096	src/uk/co/alt236/btlescan/util/ManufacturerDataParser.java	src/uk/co/alt236/btlescan/util/IBeaconUtils.java
+
+0400f11;We can now recognise iBeacons (need to check how correct this is)
+A	res/drawable-xhdpi/ic_bluetooth.png
+A	res/drawable-xhdpi/ic_bluetooth_ibeacon.png
+M	res/layout/list_item_device.xml
+M	src/uk/co/alt236/btlescan/activities/DetailsActivity.java
+M	src/uk/co/alt236/btlescan/activities/MainActivity.java
+M	src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+M	src/uk/co/alt236/btlescan/containers/AdRecord.java
+M	src/uk/co/alt236/btlescan/containers/AdRecordStore.java
+M	src/uk/co/alt236/btlescan/containers/BluetoothLeDevice.java
+A	src/uk/co/alt236/btlescan/containers/ManufacturerDataIBeacon.java
+R097	src/uk/co/alt236/btlescan/containers/AdRecordUtils.java	src/uk/co/alt236/btlescan/util/AdRecordUtils.java
+A	src/uk/co/alt236/btlescan/util/ManufacturerDataParser.java
+
+1e112bc;Expanded the details screen
+M	src/uk/co/alt236/btlescan/activities/DetailsActivity.java
+
+3086b29;We are now properly treating the sign of bytes
+M	src/uk/co/alt236/btlescan/containers/AdRecordUtils.java
+
+4b2116c;Added details activity
+M	AndroidManifest.xml
+A	res/layout/activity_details.xml
+A	src/uk/co/alt236/btlescan/activities/DetailsActivity.java
+R058	src/uk/co/alt236/btlescan/MainActivity.java	src/uk/co/alt236/btlescan/activities/MainActivity.java
+
+596d330;Added classloaders to the Bundles
+M	src/uk/co/alt236/btlescan/containers/AdRecord.java
+M	src/uk/co/alt236/btlescan/containers/AdRecordStore.java
+M	src/uk/co/alt236/btlescan/containers/BluetoothLeDevice.java
+
+827e3ba;Made the containers parcelable
+M	src/uk/co/alt236/btlescan/containers/AdRecord.java
+M	src/uk/co/alt236/btlescan/containers/AdRecordStore.java
+M	src/uk/co/alt236/btlescan/containers/AdRecordUtils.java
+M	src/uk/co/alt236/btlescan/containers/BluetoothLeDevice.java
+
+cc18c86;Made sure that the scanning no longer auto-starts
+M	res/layout/activity_main.xml
+M	src/uk/co/alt236/btlescan/MainActivity.java
+
+916dab0;This is mostly working now...
+A	res/layout/actionbar_progress_indeterminate.xml
+A	res/layout/list_item_device.xml
+M	res/menu/main.xml
+M	res/values/strings.xml
+M	src/uk/co/alt236/btlescan/MainActivity.java
+A	src/uk/co/alt236/btlescan/adapters/LeDeviceListAdapter.java
+M	src/uk/co/alt236/btlescan/containers/AdRecord.java
+M	src/uk/co/alt236/btlescan/containers/AdRecordUtils.java
+M	src/uk/co/alt236/btlescan/containers/BluetoothLeDevice.java
+M	src/uk/co/alt236/btlescan/util/BluetoothLeScanner.java
+
+ea0d9a6;Trying to debug EIR parsing
+M	.gitignore
+M	src/uk/co/alt236/btlescan/MainActivity.java
+M	src/uk/co/alt236/btlescan/containers/AdRecord.java
+M	src/uk/co/alt236/btlescan/containers/AdRecordStore.java
+M	src/uk/co/alt236/btlescan/containers/AdRecordUtils.java
+
+a738bcc;First commit
+A	.apt_generated/uk/co/alt236/btlescan/MainActivity$$ViewInjector.java
+A	.classpath
+A	.factorypath
+A	.gitignore
+A	.project
+A	.settings/org.eclipse.jdt.apt.core.prefs
+A	.settings/org.eclipse.jdt.core.prefs
+A	AndroidManifest.xml
+A	ic_launcher-web.png
+A	libs/android-support-v4.jar
+A	libs/butterknife-4.0.1.jar
+A	proguard-project.txt
+A	project.properties
+A	res/drawable-hdpi/ic_launcher.png
+A	res/drawable-mdpi/ic_launcher.png
+A	res/drawable-xhdpi/ic_launcher.png
+A	res/drawable-xxhdpi/ic_launcher.png
+A	res/layout/activity_main.xml
+A	res/menu/main.xml
+A	res/values-sw600dp/dimens.xml
+A	res/values-sw720dp-land/dimens.xml
+A	res/values-v11/styles.xml
+A	res/values-v14/styles.xml
+A	res/values/dimens.xml
+A	res/values/strings.xml
+A	res/values/styles.xml
+A	src/uk/co/alt236/btlescan/MainActivity.java
+A	src/uk/co/alt236/btlescan/containers/AdRecord.java
+A	src/uk/co/alt236/btlescan/containers/AdRecordStore.java
+A	src/uk/co/alt236/btlescan/containers/AdRecordUtils.java
+A	src/uk/co/alt236/btlescan/containers/BluetoothLeDevice.java
+A	src/uk/co/alt236/btlescan/util/BluetoothLeScanner.java
+A	src/uk/co/alt236/btlescan/util/BluetoothUtils.java

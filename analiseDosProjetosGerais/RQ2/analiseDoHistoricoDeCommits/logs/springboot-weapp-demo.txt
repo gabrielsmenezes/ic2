@@ -1,0 +1,205 @@
+c843e2b;Update pom.xml
+M	pom.xml
+
+a7637e2;Update UploadController.java
+M	src/main/java/com/weapp/controller/UploadController.java
+
+86c3ac0;Update README.md
+M	README.md
+
+2c3e856;图片文件路径映射
+M	src/main/java/com/weapp/controller/UploadController.java
+A	src/main/java/com/weapp/webconfig/WebConfigurer.java
+
+778dbb6;更新日志
+M	README.md
+
+7deb25b;拦截器记录接口访问日志存储到mongodb
+M	src/main/java/com/weapp/entity/auth/AccessLog.java
+M	src/main/java/com/weapp/interceptor/ApiInterceptor.java
+A	src/main/java/com/weapp/service/AccessLogService.java
+
+da55889;添加注释
+M	src/main/java/com/weapp/controller/WxAuthController.java
+M	src/main/java/com/weapp/controller/WxClubController.java
+M	src/main/java/com/weapp/service/WxClubService.java
+M	src/main/resources/application.properties
+
+7d1bf50;小程序Club
+M	README.md
+M	pom.xml
+M	src/main/java/com/weapp/Application.java
+M	src/main/java/com/weapp/SwaggerConfig.java
+M	src/main/java/com/weapp/common/aes/AES.java
+M	src/main/java/com/weapp/common/constant/ApiConstant.java
+M	src/main/java/com/weapp/common/util/HttpRequest.java
+A	src/main/java/com/weapp/common/util/MongoPageable.java
+M	src/main/java/com/weapp/controller/WxAuthController.java
+A	src/main/java/com/weapp/controller/WxClubController.java
+A	src/main/java/com/weapp/entity/wxclub/Article.java
+M	src/main/java/com/weapp/listener/ApiServletContextListener.java
+A	src/main/java/com/weapp/repository/WxClubRepository.java
+A	src/main/java/com/weapp/service/WxClubService.java
+M	src/main/resources/application.properties
+
+70f730e;1.小程序code换取session_key和openid;2.小程序登录用户敏感数据解密
+M	README.md
+M	src/main/java/com/weapp/Application.java
+M	src/main/java/com/weapp/common/aes/AES.java
+M	src/main/java/com/weapp/controller/BaseController.java
+M	src/main/java/com/weapp/controller/WxAuthController.java
+M	src/main/java/com/weapp/websocket/WebSocketHandshakeInterceptor.java
+
+8daae37;配置Https
+M	pom.xml
+M	src/main/java/com/weapp/Application.java
+D	src/main/java/com/weapp/Swagger2.java
+A	src/main/java/com/weapp/SwaggerConfig.java
+R099	src/main/java/com/weapp/common/HttpRequest.java	src/main/java/com/weapp/common/util/HttpRequest.java
+M	src/main/java/com/weapp/controller/AppUserController.java
+M	src/main/java/com/weapp/controller/BaseController.java
+M	src/main/java/com/weapp/listener/ApiServletContextListener.java
+M	src/main/java/com/weapp/service/WxService.java
+M	src/main/resources/application.properties
+
+74abd93;添加swagger2
+M	pom.xml
+M	src/main/java/com/weapp/Application.java
+A	src/main/java/com/weapp/Swagger2.java
+M	src/main/java/com/weapp/controller/AppUserController.java
+M	src/main/java/com/weapp/controller/UploadController.java
+M	src/main/java/com/weapp/controller/WxAuthController.java
+M	src/main/resources/application.properties
+M	src/test/java/com/weapp/ApplicationTest.java
+
+d206af3;修改配置
+M	src/main/resources/application.properties
+
+d5890d3;添加redis缓存
+M	README.md
+M	pom.xml
+M	src/main/java/com/weapp/Application.java
+A	src/main/java/com/weapp/common/HttpRequest.java
+A	src/main/java/com/weapp/common/aes/AES.java
+M	src/main/java/com/weapp/common/constant/ApiConstant.java
+A	src/main/java/com/weapp/common/properties/WxAuth.java
+A	src/main/java/com/weapp/controller/WxAuthController.java
+A	src/main/java/com/weapp/redis/MyRedisCacheConfig.java
+A	src/main/java/com/weapp/redis/RedisUtil.java
+A	src/main/java/com/weapp/service/WxService.java
+M	src/main/resources/application.properties
+M	src/main/resources/error_code.properties
+
+2654522;1.重新http测试接口和上传文件接口；2.统一接口返回状态码和格式
+M	README.md
+M	src/main/java/com/weapp/Application.java
+M	src/main/java/com/weapp/controller/AppUserController.java
+A	src/main/java/com/weapp/controller/BaseController.java
+A	src/main/java/com/weapp/controller/UploadController.java
+M	src/main/java/com/weapp/interceptor/ApiInterceptor.java
+M	src/main/resources/application.properties
+M	src/main/resources/error_code.properties
+
+54740d1;移除WxController,添加api接口权限
+M	src/main/java/com/weapp/Application.java
+M	src/main/java/com/weapp/common/constant/ApiConstant.java
+M	src/main/java/com/weapp/controller/AppUserController.java
+D	src/main/java/com/weapp/controller/WxController.java
+M	src/main/java/com/weapp/entity/auth/ApiInfo.java
+M	src/main/java/com/weapp/entity/auth/AppKey.java
+M	src/main/java/com/weapp/interceptor/ApiInterceptor.java
+M	src/main/java/com/weapp/interceptor/ApiWebConfigure.java
+M	src/main/java/com/weapp/listener/ApiServletContextListener.java
+M	src/main/java/com/weapp/repository/ApiInfoRepository.java
+M	src/main/java/com/weapp/repository/AppKeyRepository.java
+M	src/main/resources/application.properties
+M	src/test/java/com/weapp/ApplicationTest.java
+
+b27bcd8;添加接口拦截规则
+A	src/main/java/com/weapp/aop/ApiAspect.java
+A	src/main/java/com/weapp/service/ApiInfoService.java
+A	src/main/java/com/weapp/service/AppKeyService.java
+A	src/main/resources/error_code.properties
+A	src/test/resources/application-test.properties
+
+0f24838;添加拦截器,WebListner
+M	src/main/java/com/weapp/Application.java
+M	src/main/java/com/weapp/controller/AppUserController.java
+R050	src/main/java/com/weapp/entity/auth/Apis.java	src/main/java/com/weapp/entity/auth/ApiInfo.java
+A	src/main/java/com/weapp/interceptor/ApiInterceptor.java
+A	src/main/java/com/weapp/interceptor/ApiWebConfigure.java
+A	src/main/java/com/weapp/listener/ApiServletContextListener.java
+A	src/main/java/com/weapp/repository/AccessLogRepository.java
+A	src/main/java/com/weapp/repository/ApiInfoRepository.java
+M	src/main/java/com/weapp/repository/AppKeyRepository.java
+M	src/main/resources/application.properties
+
+0def50f;添加api访问权限相关类
+M	src/main/java/com/weapp/Application.java
+A	src/main/java/com/weapp/common/annotation/Api.java
+A	src/main/java/com/weapp/common/constant/ApiConstant.java
+A	src/main/java/com/weapp/controller/AppUserController.java
+A	src/main/java/com/weapp/entity/auth/AccessLog.java
+A	src/main/java/com/weapp/entity/auth/Apis.java
+M	src/main/java/com/weapp/entity/auth/AppKey.java
+
+4d46840;使用mongoDB作为存储层
+M	pom.xml
+M	src/main/java/com/weapp/Application.java
+A	src/main/java/com/weapp/entity/app/TUser.java
+A	src/main/java/com/weapp/entity/auth/AppKey.java
+A	src/main/java/com/weapp/repository/AppKeyRepository.java
+M	src/main/resources/application.properties
+M	src/test/java/com/weapp/ApplicationTest.java
+
+fde35bf;更新README
+M	README.md
+
+568b8d8;修改README
+M	README.md
+
+1ba5d4a;修改长连接bug
+M	README.md
+M	src/main/java/com/weapp/Application.java
+M	src/main/java/com/weapp/controller/WxController.java
+M	src/main/java/com/weapp/websocket/ChatWebSocketHandler.java
+M	src/main/resources/application.properties
+
+cce39c4;添加测试类
+A	src/test/java/com/weapp/ApplicationTest.java
+
+4934f8c;修改spring扫描包
+M	src/main/java/com/weapp/Application.java
+
+4e4b37b;添加注释
+M	README.md
+M	src/main/java/com/weapp/Application.java
+M	src/main/java/com/weapp/websocket/ChatWebSocketHandler.java
+
+efd299e;修改长连接请求参数
+M	README.md
+M	src/main/java/com/weapp/websocket/WebSocketHandshakeInterceptor.java
+
+eb32524;更新README
+M	README.md
+M	src/main/java/com/weapp/controller/WxController.java
+M	src/main/java/com/weapp/websocket/WebSocketConfig.java
+
+1432b8a;Create README.md
+A	README.md
+
+b13cdb1;Delete README.md
+D	README.md
+
+d7e9715;init project
+A	pom.xml
+A	src/main/java/com/weapp/Application.java
+A	src/main/java/com/weapp/controller/WxController.java
+A	src/main/java/com/weapp/websocket/ChatWebSocketHandler.java
+A	src/main/java/com/weapp/websocket/WebSocketConfig.java
+A	src/main/java/com/weapp/websocket/WebSocketHandshakeInterceptor.java
+A	src/main/resources/application.properties
+A	src/main/resources/log4j.properties
+
+f7e02a1;first commit
+A	README.md

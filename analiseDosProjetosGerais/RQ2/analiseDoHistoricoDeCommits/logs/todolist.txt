@@ -1,0 +1,1554 @@
+01e62b0;v0.2.38 完成前端重构,增加completed获取
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/resources/static/public/css/todos.css
+M	src/main/ts/app.d.ts
+M	src/main/ts/app.tsx
+M	src/main/ts/components/task.tsx
+M	src/main/ts/model/manager.ts
+
+0e02c9b;v0.2.37 重构frontend react, 通过TaskManager完成协调工作
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/ts/app.d.ts
+M	src/main/ts/app.tsx
+M	src/main/ts/components/task.tsx
+A	src/main/ts/model/manager.ts
+M	src/main/ts/model/task.ts
+
+065010c;v0.2.36 more completed tasks by page
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/public/css/todos.css
+M	src/main/ts/app.d.ts
+M	src/main/ts/app.tsx
+
+82e9df0;add nginx script (SSL) add redis-cli flushall
+M	script/todolist-update
+A	script/todolist.nginx
+
+21921fd;api page size = 10
+M	src/main/java/cn/nonocast/service/TaskService.java
+
+e64e248;v0.2.35 fix login CDN auto
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/resources/templates/admin/login.ftl
+M	src/main/resources/templates/user/login.ftl
+M	src/main/resources/templates/user/wechat.ftl
+
+6377192;v0.2.34 fix admin CDN auto
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/resources/templates/admin/_layout/master.ftl
+
+608c4b6;Merge remote-tracking branch 'origin/master'
+833beb8;v0.2.33 migrate to https 1. add nginx.conf 2. cdn //
+M	CHANGELOG.txt
+M	src/main/resources/templates/home/index.ftl
+
+134140d;v0.2.33 migrate to https 1. add nginx.conf 2. cdn //
+M	CHANGELOG.txt
+
+8560804;v0.2.32 1. fix 增加@JsonView(ModelBase.API.class)一致json输出, 暂时未能解决redis deserialize Page, 所以还是采用User/TaskSummary+List
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/WebConfig.java
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+M	src/main/java/cn/nonocast/api/vm/TaskSummary.java
+M	src/main/java/cn/nonocast/api/vm/UserSummary.java
+M	src/main/java/cn/nonocast/model/ModelBase.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/ts/app.tsx
+
+15604d8;v0.2.31 fix bug: add UserSummary(APIViewModel) to protected User(Model)
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/api/vm/TaskSummary.java
+A	src/main/java/cn/nonocast/api/vm/UserSummary.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/resources/application.properties
+
+e26fc99;v0.2.30 hide user password in TaskSummary.User
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/model/User.java
+
+b58515e;v0.2.29 fix User json property
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/model/User.java
+
+d784541;v0.2.28 completed按创建时间逆序排列
+A	API.txt
+M	CHANGELOG.txt
+M	SETUP.txt
+A	package.json
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/CHANGELOG
+
+1cf76bd;v0.2.28 completed按创建时间逆序排列
+M	src/main/ts/app.tsx
+
+fe82532;v0.2.28 completed按创建时间逆序排列
+M	CHANGELOG.txt
+
+8155fc0;v0.2.27 fix api/Tasks belongsToName is null task按时间逆序排列
+M	CHANGELOG.txt
+M	README.md
+A	SETUP.txt
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/resources/application.properties
+M	src/main/ts/app.tsx
+
+4d0c119;v0.2.26 fix category spelling
+M	src/main/java/cn/nonocast/api/Form/TaskForm.java
+
+f06180c;v0.2.26 find taskSummary 完成react page第一个版本
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+A	src/main/java/cn/nonocast/api/vm/TaskSummary.java
+M	src/main/java/cn/nonocast/model/ModelBase.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/public/css/todos.css
+M	src/main/ts/app.d.ts
+M	src/main/ts/app.tsx
+M	src/main/ts/components/task.tsx
+M	src/main/ts/model/task.ts
+
+4e4b044;v0.2.25 frontend: 增加task分类界面
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/form/TaskForm.java
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+M	src/main/java/cn/nonocast/controller/HomeController.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/resources/application.properties
+M	src/main/resources/templates/home/index.ftl
+M	src/main/ts/app.d.ts
+M	src/main/ts/app.tsx
+M	src/main/ts/model/task.ts
+M	typings.json
+M	webpack.config.js
+
+4ff5879;Merge remote-tracking branch 'origin/master'
+83c89ac;v0.2.23 1. apply Ge UI
+M	CHANGELOG.txt
+M	src/main/resources/application-dev.properties
+M	src/main/resources/application.properties
+A	src/main/resources/static/public/css/todos.css
+A	src/main/resources/static/public/misc/checkbox-checked.svg
+A	src/main/resources/static/public/misc/checkbox-default.svg
+A	src/main/resources/static/public/misc/user-10308319.png
+M	src/main/resources/templates/home/index.ftl
+M	src/main/ts/app.tsx
+
+14afec3;v0.2.23 1. apply Ge UI
+M	CHANGELOG.txt
+M	src/main/resources/application-dev.properties
+M	src/main/resources/application.properties
+A	src/main/resources/static/public/css/todos.css
+A	src/main/resources/static/public/misc/checkbox-checked.svg
+A	src/main/resources/static/public/misc/checkbox-default.svg
+A	src/main/resources/static/public/misc/user-10308319.png
+M	src/main/resources/templates/home/index.ftl
+M	src/main/ts/app.tsx
+
+52d9a79;v0.2.22 fix User.role加上JsonView进行序列化, 否则无法访问/admin
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/resources/application-dev.properties
+M	src/main/resources/application.properties
+M	src/main/ts/app.tsx
+
+d62d4e4;fix
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/service/UserService.java
+M	src/main/ts/app.tsx
+
+8ccabd2;disable cache...
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/cache/CacheConfig.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+M	src/main/resources/application-dev.properties
+
+1e44896;v0.2.21 1. 通过扩展RedisCacheManger实现根据cacheName控制new RedisCache参数 2. add redis cacheable 3. 重构controller-service-repository, 控制层次, 制作cache
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/admin/controller/AdminController.java
+A	src/main/java/cn/nonocast/repository/AccessTokenRepository.java
+M	src/main/java/cn/nonocast/security/ApiAuthenticationUserDetailsService.java
+M	src/main/java/cn/nonocast/service/AccessTokenService.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/java/cn/nonocast/service/UserService.java
+M	src/main/resources/application.properties
+M	src/main/resources/templates/admin/token/index.ftl
+M	src/main/ts/app.tsx
+
+8f2b61e;add redis cache
+M	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/java/cn/nonocast/service/UserService.java
+
+c619b09;refactor service layer
+M	CHANGELOG.txt
+M	README.md
+M	build.gradle
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/WebConfig.java
+M	src/main/java/cn/nonocast/admin/controller/AdminController.java
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+M	src/main/java/cn/nonocast/admin/controller/UserController.java
+R059	src/main/java/cn/nonocast/api/controller/TokenController.java	src/main/java/cn/nonocast/api/controller/AccessTokenController.java
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+M	src/main/java/cn/nonocast/cache/AppCacheManager.java
+M	src/main/java/cn/nonocast/cache/CacheConfig.java
+D	src/main/java/cn/nonocast/cache/Hello.java
+D	src/main/java/cn/nonocast/cache/HelloService.java
+D	src/main/java/cn/nonocast/cache/World.java
+M	src/main/java/cn/nonocast/controller/HomeController.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+A	src/main/java/cn/nonocast/model/AccessToken.java
+D	src/main/java/cn/nonocast/model/Token.java
+M	src/main/java/cn/nonocast/repository/UserRepository.java
+M	src/main/java/cn/nonocast/security/ApiAuthenticationUserDetailsService.java
+M	src/main/java/cn/nonocast/security/ApiPreAuthenticationFilter.java
+M	src/main/java/cn/nonocast/security/CustomUserService.java
+A	src/main/java/cn/nonocast/service/AccessTokenService.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+D	src/main/java/cn/nonocast/service/TokenService.java
+M	src/main/java/cn/nonocast/service/UserService.java
+M	src/main/resources/templates/admin/backup/index.ftl
+M	src/main/resources/templates/home/index.ftl
+M	src/main/ts/app.tsx
+
+32977d1;通过扩展RedisCacheManger实现根据cacheName控制new RedisCache参数
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/TodolistApplication.java
+A	src/main/java/cn/nonocast/cache/AppCacheManager.java
+M	src/main/java/cn/nonocast/cache/CacheConfig.java
+A	src/main/java/cn/nonocast/cache/Hello.java
+A	src/main/java/cn/nonocast/cache/HelloService.java
+A	src/main/java/cn/nonocast/cache/World.java
+
+6955b4b;add task cacheable
+M	CHANGELOG.txt
+D	src/main/java/cn/nonocast/api/controller/CommentController.java
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+D	src/main/java/cn/nonocast/cache/User.java
+D	src/main/java/cn/nonocast/model/Comment.java
+M	src/main/java/cn/nonocast/model/Token.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+
+e91e73f;add redis cacheable (undone)
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+A	src/main/java/cn/nonocast/cache/CacheConfig.java
+A	src/main/java/cn/nonocast/cache/User.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/repository/UserRepository.java
+M	src/main/java/cn/nonocast/security/ApiAuthenticationUserDetailsService.java
+M	src/main/java/cn/nonocast/security/CustomUserService.java
+M	src/main/resources/application.properties
+M	src/main/ts/app.tsx
+
+b305c7e;v0.2.20 1. database import and export 2. admin增加backup management
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/TodolistApplication.java
+A	src/main/java/cn/nonocast/admin/controller/BackupController.java
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+M	src/main/java/cn/nonocast/controller/Advice.java
+A	src/main/java/cn/nonocast/model/BackupEntry.java
+A	src/main/java/cn/nonocast/service/BackupService.java
+A	src/main/java/cn/nonocast/tag/FileSizeMethod.java
+M	src/main/resources/application-dev.properties
+M	src/main/resources/application-prod.properties
+M	src/main/resources/application.properties
+M	src/main/resources/db/CHANGELOG
+M	src/main/resources/static/private/script/admin.coffee
+M	src/main/resources/templates/admin/_layout/master.ftl
+A	src/main/resources/templates/admin/backup/index.ftl
+M	src/main/resources/templates/admin/task/index.ftl
+A	src/main/resources/templates/lib/common.ftl
+M	src/main/ts/app.tsx
+
+49d6ede;v0.2.19 fix task title binding
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/ts/app.tsx
+M	src/main/ts/components/task.tsx
+
+4f58f9d;v0.2.18 1. fix setState异步改变this.state,所以需要setState(..., callback); 2. 增加task status changed
+M	CHANGELOG.txt
+D	package.json
+M	src/main/java/cn/nonocast/admin/form/TaskForm.java
+M	src/main/java/cn/nonocast/api/Form/TaskForm.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/resources/application.properties
+M	src/main/ts/app.d.ts
+M	src/main/ts/app.tsx
+M	src/main/ts/components/task.tsx
+A	src/main/ts/model/task.ts
+
+0623072;v0.2.17 1. react增加task edit 2. task belongsTo改为LAZY 3. try-catch ApiAuthenticationUserDetails
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/security/ApiAuthenticationUserDetailsService.java
+M	src/main/java/cn/nonocast/social/Wechat.java
+M	src/main/resources/application-dev.properties
+M	src/main/resources/application.properties
+A	src/main/resources/static/public/favicon.ico
+M	src/main/resources/templates/home/index.ftl
+M	src/main/ts/app.d.ts
+M	src/main/ts/app.tsx
+M	src/main/ts/components/task.tsx
+M	typings.json
+M	webpack.config.js
+
+1747372;v0.2.16 fix bugs
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/security/ApiPreAuthenticationFilter.java
+M	src/main/resources/application.properties
+M	src/main/ts/app.tsx
+R088	src/main/ts/components/todoitem.tsx	src/main/ts/components/task.tsx
+M	tsconfig.json
+
+d59b8b9;v0.2.15 1. react增加log version
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/ts/app.tsx
+
+4d05447;v0.2.14 1. 增加task删除
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+A	src/main/java/cn/nonocast/misc/EmptyJsonResponse.java
+M	src/main/resources/application.properties
+M	src/main/ts/app.d.ts
+M	src/main/ts/app.tsx
+M	src/main/ts/components/todoitem.tsx
+M	src/main/ts/misc/utils.ts
+
+2130d6b;v0.2.13 1. rest api exception handle
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/api/Form/TaskForm.java
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+M	src/main/resources/application.properties
+M	src/main/ts/app.tsx
+
+20c5a9d;fix .idea
+M	.gitignore
+
+5cd3ba0;v0.2.12
+M	.gitignore
+D	.gradle/2.14.1/taskArtifacts/cache.properties
+D	.gradle/2.14.1/taskArtifacts/cache.properties.lock
+D	.gradle/2.14.1/taskArtifacts/fileHashes.bin
+D	.gradle/2.14.1/taskArtifacts/fileSnapshots.bin
+D	.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin
+D	.gradle/2.14.1/taskArtifacts/taskArtifacts.bin
+D	.gradle/2.5/taskArtifacts/cache.properties
+D	.gradle/2.5/taskArtifacts/cache.properties.lock
+D	.gradle/2.5/taskArtifacts/fileHashes.bin
+D	.gradle/2.5/taskArtifacts/fileSnapshots.bin
+D	.gradle/2.5/taskArtifacts/outputFileStates.bin
+D	.gradle/2.5/taskArtifacts/taskArtifacts.bin
+D	.gradle/2.8/taskArtifacts/cache.properties
+D	.gradle/2.8/taskArtifacts/cache.properties.lock
+D	.gradle/2.8/taskArtifacts/fileHashes.bin
+D	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+D	.gradle/2.8/taskArtifacts/outputFileStates.bin
+D	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+D	.idea/.name
+D	.idea/codeStyleSettings.xml
+D	.idea/compiler.xml
+D	.idea/copyright/profiles_settings.xml
+D	.idea/dictionaries/nonocast.xml
+D	.idea/encodings.xml
+D	.idea/gradle.xml
+D	.idea/inspectionProfiles/Project_Default.xml
+D	.idea/inspectionProfiles/profiles_settings.xml
+D	.idea/libraries/Gradle__antlr_antlr_2_7_7.xml
+D	.idea/libraries/Gradle__aopalliance_aopalliance_1_0.xml
+D	.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_1_7.xml
+D	.idea/libraries/Gradle__ch_qos_logback_logback_core_1_1_7.xml
+D	.idea/libraries/Gradle__com_fasterxml_classmate_1_1_0.xml
+D	.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_6_6.xml
+D	.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_6_6.xml
+D	.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_6_6.xml
+D	.idea/libraries/Gradle__com_google_guava_guava_19_0.xml
+D	.idea/libraries/Gradle__dom4j_dom4j_1_6_1.xml
+D	.idea/libraries/Gradle__javax_transaction_javax_transaction_api_1_2.xml
+D	.idea/libraries/Gradle__javax_validation_validation_api_1_1_0_Final.xml
+D	.idea/libraries/Gradle__junit_junit_4_12.xml
+D	.idea/libraries/Gradle__mysql_mysql_connector_java_5_1_38.xml
+D	.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_0.xml
+D	.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_0_33.xml
+D	.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_0_33.xml
+D	.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_33.xml
+D	.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_33.xml
+D	.idea/libraries/Gradle__org_apache_tomcat_tomcat_jdbc_8_0_33.xml
+D	.idea/libraries/Gradle__org_apache_tomcat_tomcat_juli_8_0_33.xml
+D	.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_9.xml
+D	.idea/libraries/Gradle__org_freemarker_freemarker_2_3_23.xml
+D	.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml
+D	.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml
+D	.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml
+D	.idea/libraries/Gradle__org_hibernate_hibernate_core_4_3_11_Final.xml
+D	.idea/libraries/Gradle__org_hibernate_hibernate_entitymanager_4_3_11_Final.xml
+D	.idea/libraries/Gradle__org_hibernate_hibernate_validator_5_2_4_Final.xml
+D	.idea/libraries/Gradle__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml
+D	.idea/libraries/Gradle__org_javassist_javassist_3_18_1_GA.xml
+D	.idea/libraries/Gradle__org_jboss_jandex_1_1_0_Final.xml
+D	.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_0_Final.xml
+D	.idea/libraries/Gradle__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml
+D	.idea/libraries/Gradle__org_mockito_mockito_core_1_10_19.xml
+D	.idea/libraries/Gradle__org_objenesis_objenesis_2_1.xml
+D	.idea/libraries/Gradle__org_slf4j_jcl_over_slf4j_1_7_21.xml
+D	.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_21.xml
+D	.idea/libraries/Gradle__org_slf4j_log4j_over_slf4j_1_7_21.xml
+D	.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_21.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_devtools_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_freemarker_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_security_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_validation_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_1_3_5_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_data_spring_data_commons_1_11_4_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_1_9_4_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_security_spring_security_config_4_0_4_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_security_spring_security_core_4_0_4_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_security_spring_security_web_4_0_4_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_aop_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_aspects_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_beans_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_context_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_context_support_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_core_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_expression_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_jdbc_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_orm_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_test_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_tx_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_web_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_springframework_spring_webmvc_4_2_6_RELEASE.xml
+D	.idea/libraries/Gradle__org_webjars_bootstrap_3_3_6.xml
+D	.idea/libraries/Gradle__org_webjars_coffee_script_1_10_0.xml
+D	.idea/libraries/Gradle__org_webjars_font_awesome_4_6_3.xml
+D	.idea/libraries/Gradle__org_webjars_highcharts_4_2_5.xml
+D	.idea/libraries/Gradle__org_webjars_jquery_2_2_4.xml
+D	.idea/libraries/Gradle__org_webjars_lodash_4_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_alter_0_2_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_amdefine_0_1_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_ansi_regex_2_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_ansi_styles_2_2_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_ast_traverse_0_1_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_ast_types_0_8_5.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_core_5_8_19.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_constant_folding_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_dead_code_elimination_1_0_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_eval_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_inline_environment_variables_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_jscript_1_0_4.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_member_expression_literals_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_property_literals_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_proto_to_assign_1_0_3.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_react_constant_elements_1_0_3.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_react_display_name_1_0_3.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_remove_console_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_remove_debugger_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_runtime_1_0_7.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_undeclared_variables_check_1_0_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_undefined_to_void_1_1_6.xml
+D	.idea/libraries/Gradle__org_webjars_npm_babylon_5_8_23.xml
+D	.idea/libraries/Gradle__org_webjars_npm_balanced_match_0_2_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_bluebird_2_10_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_brace_expansion_1_1_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_breakable_1_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_chalk_1_1_3.xml
+D	.idea/libraries/Gradle__org_webjars_npm_commander_2_5_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_commoner_0_10_3.xml
+D	.idea/libraries/Gradle__org_webjars_npm_concat_map_0_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_convert_source_map_1_1_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_core_js_0_9_11.xml
+D	.idea/libraries/Gradle__org_webjars_npm_debug_2_2_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_defs_1_1_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_detect_indent_3_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_escape_string_regexp_1_0_4.xml
+D	.idea/libraries/Gradle__org_webjars_npm_esprima_fb_15001_1_0_dev_harmony_fb.xml
+D	.idea/libraries/Gradle__org_webjars_npm_esutils_2_0_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_fs_readdir_recursive_0_1_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_get_stdin_4_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_glob_4_2_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_globals_6_4_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_graceful_fs_3_0_7.xml
+D	.idea/libraries/Gradle__org_webjars_npm_has_ansi_2_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_home_or_tmp_1_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_iconv_lite_0_4_13.xml
+D	.idea/libraries/Gradle__org_webjars_npm_inflight_1_0_4.xml
+D	.idea/libraries/Gradle__org_webjars_npm_inherits_2_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_install_0_1_8.xml
+D	.idea/libraries/Gradle__org_webjars_npm_is_finite_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_is_integer_1_0_4.xml
+D	.idea/libraries/Gradle__org_webjars_npm_is_nan_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_js_tokens_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_jsesc_0_5_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_left_pad_0_0_3.xml
+D	.idea/libraries/Gradle__org_webjars_npm_leven_1_0_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_line_numbers_0_2_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_lodash_3_10_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_minimatch_2_0_10.xml
+D	.idea/libraries/Gradle__org_webjars_npm_minimist_1_2_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_mkdirp_0_5_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_ms_0_7_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_number_is_nan_1_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_once_1_3_3.xml
+D	.idea/libraries/Gradle__org_webjars_npm_os_tmpdir_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_output_file_sync_1_1_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_path_exists_1_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_path_is_absolute_1_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_private_0_1_6.xml
+D	.idea/libraries/Gradle__org_webjars_npm_q_1_1_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_recast_0_10_25.xml
+D	.idea/libraries/Gradle__org_webjars_npm_regenerate_1_2_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_regenerator_0_8_34.xml
+D	.idea/libraries/Gradle__org_webjars_npm_regexpu_1_1_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_regjsgen_0_2_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_regjsparser_0_1_4.xml
+D	.idea/libraries/Gradle__org_webjars_npm_repeating_1_1_3.xml
+D	.idea/libraries/Gradle__org_webjars_npm_resolve_1_1_7.xml
+D	.idea/libraries/Gradle__org_webjars_npm_shebang_regex_1_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_simple_fmt_0_1_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_simple_is_0_2_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_slash_1_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_source_map_0_4_4.xml
+D	.idea/libraries/Gradle__org_webjars_npm_source_map_support_0_2_10.xml
+D	.idea/libraries/Gradle__org_webjars_npm_stable_0_1_5.xml
+D	.idea/libraries/Gradle__org_webjars_npm_stringmap_0_2_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_stringset_0_2_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_strip_ansi_3_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_strip_json_comments_1_0_4.xml
+D	.idea/libraries/Gradle__org_webjars_npm_supports_color_2_0_0.xml
+D	.idea/libraries/Gradle__org_webjars_npm_through_2_3_8.xml
+D	.idea/libraries/Gradle__org_webjars_npm_to_fast_properties_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_trim_right_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_try_resolve_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_tryor_0_1_2.xml
+D	.idea/libraries/Gradle__org_webjars_npm_user_home_1_1_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_wrappy_1_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_xtend_4_0_1.xml
+D	.idea/libraries/Gradle__org_webjars_npm_yargs_1_3_3.xml
+D	.idea/libraries/Gradle__org_webjars_react_15_2_1.xml
+D	.idea/libraries/Gradle__org_yaml_snakeyaml_1_16.xml
+D	.idea/libraries/Gradle__xml_apis_xml_apis_1_0_b2.xml
+D	.idea/misc.xml
+D	.idea/modules.xml
+D	.idea/sqldialects.xml
+D	.idea/typescript-compiler.xml
+D	.idea/uiDesigner.xml
+D	.idea/vcs.xml
+D	.idea/workspace.xml
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+M	src/main/java/cn/nonocast/admin/controller/UserController.java
+R094	src/main/java/cn/nonocast/form/LoginForm.java	src/main/java/cn/nonocast/admin/form/LoginForm.java
+R096	src/main/java/cn/nonocast/form/TaskForm.java	src/main/java/cn/nonocast/admin/form/TaskForm.java
+R097	src/main/java/cn/nonocast/form/UserForm.java	src/main/java/cn/nonocast/admin/form/UserForm.java
+A	src/main/java/cn/nonocast/api/Form/TaskForm.java
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+R094	src/main/java/cn/nonocast/form/FormBase.java	src/main/java/cn/nonocast/base/FormBase.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+M	src/main/resources/application.properties
+M	src/main/ts/app.tsx
+M	src/main/ts/misc/utils.ts
+D	todolist.iml
+
+c7961fb;v0.2.11 webjars改为bootcdn.cn
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/resources/templates/admin/_layout/master.ftl
+M	src/main/resources/templates/admin/login.ftl
+M	src/main/resources/templates/user/login.ftl
+
+c287438;v0.2.10 webpack去掉jquery, bundle.js控制在10k以内
+M	webpack.config.js
+
+5e2a08c;v0.2.10 webpack去掉jquery, bundle.js控制在10k以内
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	webpack.config.js
+
+efaee94;fix
+M	.idea/workspace.xml
+
+976da9e;Merge remote-tracking branch 'origin/master'
+dff5812;v0.2.9 bootcdn.cn对react和jquery加速
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/resources/templates/home/index.ftl
+M	src/main/ts/components/todoitem.tsx
+
+f207fd1;v0.2.9 bootcdn.cn对react和jquery加速
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/resources/templates/home/index.ftl
+M	src/main/ts/components/todoitem.tsx
+
+21c3417;v0.2.8 1. api token auth 2. 添加测试数据 3. user增加到task的链接 4. 整合react和api/tasks
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/api/controller/TaskController.java
+A	src/main/java/cn/nonocast/controller/HomeController.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+M	src/main/java/cn/nonocast/security/ApiAuthenticationUserDetailsService.java
+M	src/main/java/cn/nonocast/security/ApiPreAuthenticationFilter.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/schema.sql
+M	src/main/resources/templates/admin/login.ftl
+M	src/main/resources/templates/admin/user/index.ftl
+M	src/main/resources/templates/home/index.ftl
+M	src/main/resources/templates/user/login.ftl
+M	src/main/ts/app.tsx
+M	src/main/ts/misc/constants.ts
+D	src/main/ts/model.ts
+M	tsconfig.json
+
+f0e37fe;v0.2.7 fix task编辑时无法显示form.belongsTo, 把@NotNull去掉就好了
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+M	src/main/java/cn/nonocast/form/TaskForm.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/resources/application.properties
+M	src/main/resources/templates/admin/task/edit.ftl
+
+36dae58;remove typings files
+M	.idea/workspace.xml
+M	CHANGELOG.txt
+D	typings/globals/jquery/index.d.ts
+D	typings/globals/jquery/typings.json
+D	typings/globals/react-addons-create-fragment/index.d.ts
+D	typings/globals/react-addons-create-fragment/typings.json
+D	typings/globals/react-addons-css-transition-group/index.d.ts
+D	typings/globals/react-addons-css-transition-group/typings.json
+D	typings/globals/react-addons-linked-state-mixin/index.d.ts
+D	typings/globals/react-addons-linked-state-mixin/typings.json
+D	typings/globals/react-addons-perf/index.d.ts
+D	typings/globals/react-addons-perf/typings.json
+D	typings/globals/react-addons-pure-render-mixin/index.d.ts
+D	typings/globals/react-addons-pure-render-mixin/typings.json
+D	typings/globals/react-addons-test-utils/index.d.ts
+D	typings/globals/react-addons-test-utils/typings.json
+D	typings/globals/react-addons-transition-group/index.d.ts
+D	typings/globals/react-addons-transition-group/typings.json
+D	typings/globals/react-addons-update/index.d.ts
+D	typings/globals/react-addons-update/typings.json
+D	typings/globals/react-dom/index.d.ts
+D	typings/globals/react-dom/typings.json
+D	typings/globals/react-global/index.d.ts
+D	typings/globals/react-global/typings.json
+D	typings/globals/react/index.d.ts
+D	typings/globals/react/typings.json
+D	typings/index.d.ts
+
+02b4181;ignore typings folder
+M	.gitignore
+A	.idea/codeStyleSettings.xml
+A	.idea/dictionaries/nonocast.xml
+M	.idea/gradle.xml
+M	.idea/inspectionProfiles/Project_Default.xml
+A	.idea/libraries/Gradle__org_webjars_highcharts_4_2_5.xml
+A	.idea/libraries/Gradle__org_webjars_lodash_4_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_alter_0_2_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_amdefine_0_1_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_ansi_regex_2_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_ansi_styles_2_2_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_ast_traverse_0_1_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_ast_types_0_8_5.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_core_5_8_19.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_constant_folding_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_dead_code_elimination_1_0_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_eval_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_inline_environment_variables_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_jscript_1_0_4.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_member_expression_literals_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_property_literals_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_proto_to_assign_1_0_3.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_react_constant_elements_1_0_3.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_react_display_name_1_0_3.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_remove_console_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_remove_debugger_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_runtime_1_0_7.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_undeclared_variables_check_1_0_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babel_plugin_undefined_to_void_1_1_6.xml
+A	.idea/libraries/Gradle__org_webjars_npm_babylon_5_8_23.xml
+A	.idea/libraries/Gradle__org_webjars_npm_balanced_match_0_2_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_bluebird_2_10_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_brace_expansion_1_1_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_breakable_1_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_chalk_1_1_3.xml
+A	.idea/libraries/Gradle__org_webjars_npm_commander_2_5_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_commoner_0_10_3.xml
+A	.idea/libraries/Gradle__org_webjars_npm_concat_map_0_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_convert_source_map_1_1_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_core_js_0_9_11.xml
+A	.idea/libraries/Gradle__org_webjars_npm_debug_2_2_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_defs_1_1_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_detect_indent_3_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_escape_string_regexp_1_0_4.xml
+A	.idea/libraries/Gradle__org_webjars_npm_esprima_fb_15001_1_0_dev_harmony_fb.xml
+A	.idea/libraries/Gradle__org_webjars_npm_esutils_2_0_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_fs_readdir_recursive_0_1_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_get_stdin_4_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_glob_4_2_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_globals_6_4_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_graceful_fs_3_0_7.xml
+A	.idea/libraries/Gradle__org_webjars_npm_has_ansi_2_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_home_or_tmp_1_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_iconv_lite_0_4_13.xml
+A	.idea/libraries/Gradle__org_webjars_npm_inflight_1_0_4.xml
+A	.idea/libraries/Gradle__org_webjars_npm_inherits_2_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_install_0_1_8.xml
+A	.idea/libraries/Gradle__org_webjars_npm_is_finite_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_is_integer_1_0_4.xml
+A	.idea/libraries/Gradle__org_webjars_npm_is_nan_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_js_tokens_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_jsesc_0_5_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_left_pad_0_0_3.xml
+A	.idea/libraries/Gradle__org_webjars_npm_leven_1_0_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_line_numbers_0_2_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_lodash_3_10_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_minimatch_2_0_10.xml
+A	.idea/libraries/Gradle__org_webjars_npm_minimist_1_2_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_mkdirp_0_5_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_ms_0_7_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_number_is_nan_1_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_once_1_3_3.xml
+A	.idea/libraries/Gradle__org_webjars_npm_os_tmpdir_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_output_file_sync_1_1_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_path_exists_1_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_path_is_absolute_1_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_private_0_1_6.xml
+A	.idea/libraries/Gradle__org_webjars_npm_q_1_1_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_recast_0_10_25.xml
+A	.idea/libraries/Gradle__org_webjars_npm_regenerate_1_2_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_regenerator_0_8_34.xml
+A	.idea/libraries/Gradle__org_webjars_npm_regexpu_1_1_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_regjsgen_0_2_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_regjsparser_0_1_4.xml
+A	.idea/libraries/Gradle__org_webjars_npm_repeating_1_1_3.xml
+A	.idea/libraries/Gradle__org_webjars_npm_resolve_1_1_7.xml
+A	.idea/libraries/Gradle__org_webjars_npm_shebang_regex_1_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_simple_fmt_0_1_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_simple_is_0_2_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_slash_1_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_source_map_0_4_4.xml
+A	.idea/libraries/Gradle__org_webjars_npm_source_map_support_0_2_10.xml
+A	.idea/libraries/Gradle__org_webjars_npm_stable_0_1_5.xml
+A	.idea/libraries/Gradle__org_webjars_npm_stringmap_0_2_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_stringset_0_2_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_strip_ansi_3_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_strip_json_comments_1_0_4.xml
+A	.idea/libraries/Gradle__org_webjars_npm_supports_color_2_0_0.xml
+A	.idea/libraries/Gradle__org_webjars_npm_through_2_3_8.xml
+A	.idea/libraries/Gradle__org_webjars_npm_to_fast_properties_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_trim_right_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_try_resolve_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_tryor_0_1_2.xml
+A	.idea/libraries/Gradle__org_webjars_npm_user_home_1_1_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_wrappy_1_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_xtend_4_0_1.xml
+A	.idea/libraries/Gradle__org_webjars_npm_yargs_1_3_3.xml
+A	.idea/libraries/Gradle__org_webjars_react_15_2_1.xml
+A	.idea/typescript-compiler.xml
+M	.idea/workspace.xml
+M	todolist.iml
+
+2562ca4;v0.2.6 apply todolist style
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/ts/app.tsx
+M	src/main/ts/components/todoitem.tsx
+
+0b6d8fe;add typings files
+A	.gradle/2.14.1/taskArtifacts/cache.properties
+A	.gradle/2.14.1/taskArtifacts/cache.properties.lock
+A	.gradle/2.14.1/taskArtifacts/fileHashes.bin
+A	.gradle/2.14.1/taskArtifacts/fileSnapshots.bin
+A	.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin
+A	.gradle/2.14.1/taskArtifacts/taskArtifacts.bin
+A	typings/globals/jquery/index.d.ts
+A	typings/globals/jquery/typings.json
+A	typings/globals/react-addons-create-fragment/index.d.ts
+A	typings/globals/react-addons-create-fragment/typings.json
+A	typings/globals/react-addons-css-transition-group/index.d.ts
+A	typings/globals/react-addons-css-transition-group/typings.json
+A	typings/globals/react-addons-linked-state-mixin/index.d.ts
+A	typings/globals/react-addons-linked-state-mixin/typings.json
+A	typings/globals/react-addons-perf/index.d.ts
+A	typings/globals/react-addons-perf/typings.json
+A	typings/globals/react-addons-pure-render-mixin/index.d.ts
+A	typings/globals/react-addons-pure-render-mixin/typings.json
+A	typings/globals/react-addons-test-utils/index.d.ts
+A	typings/globals/react-addons-test-utils/typings.json
+A	typings/globals/react-addons-transition-group/index.d.ts
+A	typings/globals/react-addons-transition-group/typings.json
+A	typings/globals/react-addons-update/index.d.ts
+A	typings/globals/react-addons-update/typings.json
+A	typings/globals/react-global/index.d.ts
+A	typings/globals/react-global/typings.json
+
+9c3103d;v0.2.5 增加api/task db -> v0.1.7 增加react skeleton
+M	CHANGELOG.txt
+M	package.json
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+R096	src/main/java/cn/nonocast/api/CommentController.java	src/main/java/cn/nonocast/api/controller/CommentController.java
+A	src/main/java/cn/nonocast/api/controller/TaskController.java
+R098	src/main/java/cn/nonocast/api/TokenController.java	src/main/java/cn/nonocast/api/controller/TokenController.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/security/ApiAuthenticationEntryPoint.java
+A	src/main/java/cn/nonocast/security/ApiAuthenticationUserDetailsService.java
+A	src/main/java/cn/nonocast/security/ApiPreAuthenticationFilter.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/CHANGELOG
+M	src/main/resources/db/schema.sql
+A	src/main/resources/static/public/css/todomvc.css
+M	src/main/resources/templates/home/index.ftl
+A	src/main/ts/app.d.ts
+A	src/main/ts/app.tsx
+D	src/main/ts/components/Hello.tsx
+A	src/main/ts/components/todoitem.tsx
+D	src/main/ts/index.tsx
+A	src/main/ts/misc/constants.ts
+A	src/main/ts/misc/utils.ts
+A	src/main/ts/model.ts
+M	tsconfig.json
+M	typings.json
+M	typings/index.d.ts
+M	webpack.config.js
+
+ea99455;gradle: add webpack task
+M	build.gradle
+
+365db42;ignore with node_moudles
+M	.gitignore
+
+4023e8d;Merge remote-tracking branch 'origin/master'
+2878734;v0.2.4 add some typing files
+A	typings/globals/react-dom/index.d.ts
+A	typings/globals/react-dom/typings.json
+A	typings/globals/react/index.d.ts
+A	typings/globals/react/typings.json
+A	typings/index.d.ts
+
+7d1f81a;Update README.md
+M	README.md
+
+1c11562;v0.2.4 add ts/react/webpack stack
+M	CHANGELOG.txt
+A	package.json
+M	src/main/resources/application.properties
+M	src/main/resources/templates/home/index.ftl
+A	src/main/ts/components/Hello.tsx
+A	src/main/ts/index.tsx
+A	tsconfig.json
+A	typings.json
+A	webpack.config.js
+
+19c8175;v.0.2.3 调整结构,为typescript/react作准备
+M	CHANGELOG.txt
+M	gradle/wrapper/gradle-wrapper.properties
+M	src/main/java/cn/nonocast/controller/UserController.java
+M	src/main/java/cn/nonocast/service/TokenService.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/private/script/admin.coffee
+D	src/main/resources/static/public/script/common.coffee
+D	src/main/resources/static/public/script/user.coffee
+R097	src/main/resources/templates/layout/admin.ftl	src/main/resources/templates/admin/_layout/master.ftl
+M	src/main/resources/templates/admin/console.ftl
+M	src/main/resources/templates/admin/task/edit.ftl
+M	src/main/resources/templates/admin/task/index.ftl
+M	src/main/resources/templates/admin/token/index.ftl
+M	src/main/resources/templates/admin/user/edit.ftl
+M	src/main/resources/templates/admin/user/index.ftl
+A	src/main/resources/templates/home/index.ftl
+D	src/main/resources/templates/layout/user.ftl
+D	src/main/resources/templates/user/home.ftl
+
+86ba014;v0.2.2 1. api token supported
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/controller/AdminController.java
+A	src/main/java/cn/nonocast/api/CommentController.java
+A	src/main/java/cn/nonocast/api/TokenController.java
+A	src/main/java/cn/nonocast/model/Comment.java
+A	src/main/java/cn/nonocast/model/Token.java
+A	src/main/java/cn/nonocast/security/ApiAuthenticationEntryPoint.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+A	src/main/java/cn/nonocast/service/TokenService.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/schema.sql
+M	src/main/resources/static/private/script/admin.coffee
+A	src/main/resources/static/public/script/user.coffee
+M	src/main/resources/templates/admin/login.ftl
+M	src/main/resources/templates/admin/task/index.ftl
+A	src/main/resources/templates/admin/token/index.ftl
+M	src/main/resources/templates/index.ftl
+M	src/main/resources/templates/layout/admin.ftl
+A	src/main/resources/templates/layout/user.ftl
+M	src/main/resources/templates/user/home.ftl
+M	src/main/resources/templates/user/login.ftl
+M	src/main/resources/templates/user/register.ftl
+M	src/main/resources/templates/user/wechat.ftl
+
+6a316ed;v0.2.1 1. first react page
+M	.gradle/2.8/taskArtifacts/cache.properties.lock
+M	.gradle/2.8/taskArtifacts/fileHashes.bin
+M	.gradle/2.8/taskArtifacts/fileSnapshots.bin
+M	.gradle/2.8/taskArtifacts/outputFileStates.bin
+M	.gradle/2.8/taskArtifacts/taskArtifacts.bin
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/resources/application.properties
+M	src/main/resources/templates/admin/task/edit.ftl
+M	src/main/resources/templates/user/home.ftl
+
+c712ee5;v0.2.0 1. null or size (validator annotation) @Pattern(regexp="(^$|.{6,20})")
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+M	src/main/java/cn/nonocast/form/TaskForm.java
+M	src/main/java/cn/nonocast/form/UserForm.java
+M	src/main/resources/application.properties
+
+4f6fa1c;v0.1.40 1. task: 选择用户
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+M	src/main/java/cn/nonocast/form/TaskForm.java
+M	src/main/resources/application.properties
+M	src/main/resources/templates/admin/task/edit.ftl
+
+4e77a29;v0.1.39 1. 增加delete user & task
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+M	src/main/java/cn/nonocast/admin/controller/UserController.java
+M	src/main/java/cn/nonocast/form/TaskForm.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/repository/UserRepository.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/private/script/admin.coffee
+M	src/main/resources/static/private/script/tasks.coffee
+M	src/main/resources/static/private/script/users.coffee
+M	src/main/resources/templates/admin/task/edit.ftl
+M	src/main/resources/templates/admin/task/index.ftl
+M	src/main/resources/templates/admin/user/edit.ftl
+M	src/main/resources/templates/admin/user/index.ftl
+
+f3e21d1;v0.1.38 1. fix $.app.params 解析,需要decodeUrlComponent 2. 支持sort=createdAt,desc
+M	CHANGELOG.txt
+M	src/main/resources/application.properties
+M	src/main/resources/static/private/script/admin.coffee
+M	src/main/resources/static/private/script/tasks.coffee
+M	src/main/resources/static/private/script/users.coffee
+M	src/main/resources/static/public/script/common.coffee
+M	src/main/resources/templates/admin/task/index.ftl
+
+aa94189;v0.1.37 1. search: add clear button     Clear Button in Bootstrap Input Group Component     https://www.thewebflash.com/clear-button-in-bootstrap-input-group-component/ 2. task: 去掉topmost和zindex, 改为priority
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+M	src/main/java/cn/nonocast/admin/controller/UserController.java
+M	src/main/java/cn/nonocast/form/TaskForm.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/repository/UserRepository.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/CHANGELOG
+M	src/main/resources/db/schema.sql
+A	src/main/resources/static/private/script/tasks.coffee
+M	src/main/resources/static/private/script/users.coffee
+M	src/main/resources/static/public/css/admin.css
+M	src/main/resources/static/public/script/common.coffee
+M	src/main/resources/templates/admin/task/edit.ftl
+M	src/main/resources/templates/admin/task/index.ftl
+M	src/main/resources/templates/admin/user/index.ftl
+
+cfa3d54;v0.1.36 1. fix task new & edit
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/CHANGELOG
+M	src/main/resources/db/schema.sql
+M	src/main/resources/templates/admin/task/index.ftl
+
+53a3c9e;v0.1.35 1. add form.error message 2. extract FormBase 3. add task new & edit 4. spring.ftl     https://svn.apache.org/repos/asf/qpid/tags/pre-M1/java/java/management/core/lib/spring/spring.ftl
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/admin/controller/TaskController.java
+M	src/main/java/cn/nonocast/admin/controller/UserController.java
+A	src/main/java/cn/nonocast/form/FormBase.java
+A	src/main/java/cn/nonocast/form/TaskForm.java
+M	src/main/java/cn/nonocast/form/UserForm.java
+M	src/main/java/cn/nonocast/misc/PrePersistUtil.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/schema.sql
+M	src/main/resources/static/private/script/admin.coffee
+A	src/main/resources/templates/admin/task/edit.ftl
+M	src/main/resources/templates/admin/task/index.ftl
+M	src/main/resources/templates/admin/user/edit.ftl
+M	src/main/resources/templates/admin/user/index.ftl
+M	src/main/resources/templates/layout/admin.ftl
+
+4d985b2;v0.1.34 fix edit page bugs
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/form/UserForm.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/schema.sql
+M	src/main/resources/templates/admin/user/edit.ftl
+D	src/main/resources/templates/admin/user/result.ftl
+
+d4e1c19;v0.1.34 fix edit page bugs
+M	src/main/java/cn/nonocast/admin/controller/UserController.java
+
+2527d0a;v0.1.33 1. 通过@ControllerAdvice将freemarker method加入model    http://blog.codeleak.pl/2013/11/controlleradvice-improvements-in-spring.html    http://blog.csdn.net/a67474506/article/details/46362783 2. 增加user create & edit 3. refactor admin controllers
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/WebConfig.java
+A	src/main/java/cn/nonocast/admin/controller/AdminController.java
+A	src/main/java/cn/nonocast/admin/controller/TaskController.java
+A	src/main/java/cn/nonocast/admin/controller/UserController.java
+D	src/main/java/cn/nonocast/controller/AdminController.java
+A	src/main/java/cn/nonocast/controller/Advice.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+M	src/main/java/cn/nonocast/form/UserForm.java
+M	src/main/java/cn/nonocast/model/ModelBase.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/java/cn/nonocast/repository/UserRepository.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+A	src/main/java/cn/nonocast/tag/ShortenMethod.java
+M	src/main/resources/application.properties
+R088	src/main/resources/static/public/css/console.css	src/main/resources/static/public/css/admin.css
+A	src/main/resources/static/public/css/form.css
+D	src/main/resources/templates/admin/create_user.ftl
+D	src/main/resources/templates/admin/dba.ftl
+M	src/main/resources/templates/admin/login.ftl
+R100	src/main/resources/templates/admin/tasks.ftl	src/main/resources/templates/admin/task/index.ftl
+A	src/main/resources/templates/admin/user/edit.ftl
+R074	src/main/resources/templates/admin/users.ftl	src/main/resources/templates/admin/user/index.ftl
+R100	src/main/resources/templates/admin/create_user_result.ftl	src/main/resources/templates/admin/user/result.ftl
+M	src/main/resources/templates/layout/admin.ftl
+M	src/main/resources/templates/user/home.ftl
+M	src/main/resources/templates/user/login.ftl
+M	src/main/resources/templates/user/register.ftl
+M	src/main/test/java/cn/nonocast/model/UserTests.java
+
+eeed2f3;v0.1.32 1. add user search 2. 调整登录界面     spring security - cache last name     http://stackoverflow.com/questions/15052860/spring-security-authentication-get-username-without-spring-security-last-userna     Spring boot: failureHandler(...)
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/controller/AdminController.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+A	src/main/java/cn/nonocast/form/LoginForm.java
+M	src/main/java/cn/nonocast/form/UserForm.java
+A	src/main/java/cn/nonocast/security/UserNameCachingAuthenticationFailureHandler.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/private/script/admin.coffee
+M	src/main/resources/static/private/script/users.coffee
+A	src/main/resources/static/public/misc/todolist.jpg
+M	src/main/resources/static/public/script/common.coffee
+A	src/main/resources/templates/admin/console.ftl
+M	src/main/resources/templates/admin/login.ftl
+M	src/main/resources/templates/admin/users.ftl
+M	src/main/resources/templates/index.ftl
+M	src/main/resources/templates/layout/admin.ftl
+M	src/main/resources/templates/lib/auth.ftl
+M	src/main/resources/templates/user/home.ftl
+M	src/main/resources/templates/user/login.ftl
+M	src/main/resources/templates/user/wechat.ftl
+
+2798611;v0.1.31 1. 将task中的status和category改为enum 2. 增加sort & filter 3. admin -> role db:v0.1.4
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/controller/AdminController.java
+M	src/main/java/cn/nonocast/model/ModelBase.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/repository/UserRepository.java
+A	src/main/java/cn/nonocast/service/UserService.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/CHANGELOG
+M	src/main/resources/db/schema.sql
+A	src/main/resources/static/private/script/users.coffee
+A	src/main/resources/static/public/script/common.coffee
+M	src/main/resources/templates/admin/tasks.ftl
+M	src/main/resources/templates/admin/users.ftl
+M	src/main/resources/templates/layout/admin.ftl
+M	src/main/resources/templates/lib/pagination.ftl
+A	src/main/test/java/cn/nonocast/model/UserTests.java
+
+27f22df;v0.1.30 1. refactor resource => public, private 2. admin.coffee 3. add MySQL PROCEDURE create_user 4. 增加pageable     Spring Data Jpa: 分页和排序     http://www.tianmaying.com/tutorial/spring-jpa-page-sort 5. 将SpringMVC分页改为1-based page     java - How to configure PageableHandlerMethodArgumentResolver in spring boot application - Stack Overflow     http://stackoverflow.com/questions/35397912/how-to-configure-pageablehandlermethodargumentresolver-in-spring-boot-applicatio 6. 增加pagnation macro
+M	CHANGELOG.txt
+M	build.gradle
+D	src/main/java/cn/nonocast/TodolistApplicationConfiguration.java
+A	src/main/java/cn/nonocast/WebConfig.java
+M	src/main/java/cn/nonocast/controller/AdminController.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/schema.sql
+A	src/main/resources/static/private/script/admin.coffee
+R100	src/main/resources/static/resources/css/console.css	src/main/resources/static/public/css/console.css
+R100	src/main/resources/static/resources/css/login.css	src/main/resources/static/public/css/login.css
+R100	src/main/resources/static/resources/css/simple-sidebar.css	src/main/resources/static/public/css/simple-sidebar.css
+R100	src/main/resources/static/resources/misc/avatar.png	src/main/resources/static/public/misc/avatar.png
+M	src/main/resources/templates/admin/create_user.ftl
+M	src/main/resources/templates/admin/create_user_result.ftl
+M	src/main/resources/templates/admin/dba.ftl
+M	src/main/resources/templates/admin/login.ftl
+M	src/main/resources/templates/admin/tasks.ftl
+M	src/main/resources/templates/admin/users.ftl
+M	src/main/resources/templates/index.ftl
+M	src/main/resources/templates/layout/admin.ftl
+A	src/main/resources/templates/lib/pagination.ftl
+M	src/main/resources/templates/user/login.ftl
+M	src/main/resources/templates/user/register.ftl
+
+976b369;fix conflict
+M	.idea/misc.xml
+M	.idea/workspace.xml
+M	CHANGELOG.txt
+M	src/main/resources/db/schema.sql
+M	todolist.iml
+
+f5f34a3;v0.1.29
+M	CHANGELOG.txt
+M	src/main/resources/application-prod.properties
+M	src/main/resources/application.properties
+
+3866003;v0.1.28
+M	CHANGELOG.txt
+M	build.gradle
+A	script/push.sh
+M	src/main/resources/application-prod.properties
+M	src/main/resources/application.properties
+
+b0e26d1;v0.1.27
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/resources/application.properties
+
+6e42523;Merge remote-tracking branch 'origin/master'
+484eda4;v0.1.26
+M	CHANGELOG.txt
+M	build.gradle
+A	script/todolist-update
+A	script/todolist.service
+M	src/main/resources/application.properties
+
+0108a7d;v0.1.26
+M	CHANGELOG.txt
+M	build.gradle
+A	script/todolist-update
+A	script/todolist.service
+M	src/main/resources/application.properties
+
+a766b06;v0.1.25
+74f8256;v0.1.25
+A	.idea/compiler.xml
+A	.idea/copyright/profiles_settings.xml
+A	.idea/encodings.xml
+A	.idea/gradle.xml
+A	.idea/libraries/Gradle__antlr_antlr_2_7_7.xml
+A	.idea/libraries/Gradle__aopalliance_aopalliance_1_0.xml
+A	.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_1_7.xml
+A	.idea/libraries/Gradle__ch_qos_logback_logback_core_1_1_7.xml
+A	.idea/libraries/Gradle__com_fasterxml_classmate_1_1_0.xml
+A	.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_6_6.xml
+A	.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_6_6.xml
+A	.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_6_6.xml
+A	.idea/libraries/Gradle__com_google_guava_guava_19_0.xml
+A	.idea/libraries/Gradle__dom4j_dom4j_1_6_1.xml
+A	.idea/libraries/Gradle__javax_transaction_javax_transaction_api_1_2.xml
+A	.idea/libraries/Gradle__javax_validation_validation_api_1_1_0_Final.xml
+A	.idea/libraries/Gradle__junit_junit_4_12.xml
+A	.idea/libraries/Gradle__mysql_mysql_connector_java_5_1_38.xml
+A	.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_0.xml
+A	.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_0_33.xml
+A	.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_0_33.xml
+A	.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_33.xml
+A	.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_33.xml
+A	.idea/libraries/Gradle__org_apache_tomcat_tomcat_jdbc_8_0_33.xml
+A	.idea/libraries/Gradle__org_apache_tomcat_tomcat_juli_8_0_33.xml
+A	.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_9.xml
+A	.idea/libraries/Gradle__org_freemarker_freemarker_2_3_23.xml
+A	.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml
+A	.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml
+A	.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml
+A	.idea/libraries/Gradle__org_hibernate_hibernate_core_4_3_11_Final.xml
+A	.idea/libraries/Gradle__org_hibernate_hibernate_entitymanager_4_3_11_Final.xml
+A	.idea/libraries/Gradle__org_hibernate_hibernate_validator_5_2_4_Final.xml
+A	.idea/libraries/Gradle__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml
+A	.idea/libraries/Gradle__org_javassist_javassist_3_18_1_GA.xml
+A	.idea/libraries/Gradle__org_jboss_jandex_1_1_0_Final.xml
+A	.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_0_Final.xml
+A	.idea/libraries/Gradle__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml
+A	.idea/libraries/Gradle__org_mockito_mockito_core_1_10_19.xml
+A	.idea/libraries/Gradle__org_objenesis_objenesis_2_1.xml
+A	.idea/libraries/Gradle__org_slf4j_jcl_over_slf4j_1_7_21.xml
+A	.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_21.xml
+A	.idea/libraries/Gradle__org_slf4j_log4j_over_slf4j_1_7_21.xml
+A	.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_21.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_devtools_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_freemarker_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_security_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_validation_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_1_3_5_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_data_spring_data_commons_1_11_4_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_1_9_4_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_security_spring_security_config_4_0_4_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_security_spring_security_core_4_0_4_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_security_spring_security_web_4_0_4_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_aop_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_aspects_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_beans_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_context_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_context_support_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_core_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_expression_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_jdbc_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_orm_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_test_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_tx_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_web_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_springframework_spring_webmvc_4_2_6_RELEASE.xml
+A	.idea/libraries/Gradle__org_webjars_bootstrap_3_3_6.xml
+A	.idea/libraries/Gradle__org_webjars_coffee_script_1_10_0.xml
+A	.idea/libraries/Gradle__org_webjars_font_awesome_4_6_3.xml
+A	.idea/libraries/Gradle__org_webjars_jquery_2_2_4.xml
+A	.idea/libraries/Gradle__org_yaml_snakeyaml_1_16.xml
+A	.idea/libraries/Gradle__xml_apis_xml_apis_1_0_b2.xml
+A	.idea/misc.xml
+A	.idea/modules.xml
+A	.idea/vcs.xml
+A	.idea/workspace.xml
+A	todolist.iml
+
+11fe74c;v0.1.25
+M	CHANGELOG.txt
+M	build.gradle
+
+0526d21;Revert "v0.1.24"
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/resources/application-dev.properties
+M	src/main/resources/application-prod.properties
+M	src/main/resources/application.properties
+M	src/main/resources/db/schema.sql
+
+df52dcc;v0.1.24
+622fe88;v0.1.24 1. gradle增加task: publish
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/resources/application-dev.properties
+M	src/main/resources/application-prod.properties
+M	src/main/resources/application.properties
+M	src/main/resources/db/schema.sql
+
+7e05337;v0.1.23 再次出现 org.springframework.dao.DataAccessResourceFailureException 说明v0.1.19没有解决此问题     spring.datasource.test-on-borrow=true     spring.datasource.validation-query=SELECT 1 ref: http://tomaszdziurko.pl/2010/06/solving-com-mysql-jdbc-exceptions-jdbc4-communicationsexception-in-spring-jdbc-based-application/
+M	CHANGELOG.txt
+M	src/main/resources/application-prod.properties
+M	src/main/resources/application.properties
+
+dfee597;v0.1.22
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/resources/application.properties
+
+1bcfd28;Merge remote-tracking branch 'origin/master'
+c22cdd4;v0.1.21
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/controller/AdminController.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+A	src/main/java/cn/nonocast/misc/PrePersistUtil.java
+M	src/main/java/cn/nonocast/model/ModelBase.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/resources/application.properties
+M	src/main/resources/templates/admin/tasks.ftl
+
+7afdde9;v0.1.21
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/controller/AdminController.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+A	src/main/java/cn/nonocast/misc/PrePersistUtil.java
+M	src/main/java/cn/nonocast/model/ModelBase.java
+M	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/repository/TaskRepository.java
+M	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/resources/templates/admin/tasks.ftl
+
+6ef0456;v0.1.20
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/java/cn/nonocast/controller/AdminController.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+R098	src/main/java/cn/nonocast/model/UserForm.java	src/main/java/cn/nonocast/form/UserForm.java
+A	src/main/java/cn/nonocast/model/ModelBase.java
+A	src/main/java/cn/nonocast/model/Task.java
+M	src/main/java/cn/nonocast/model/User.java
+A	src/main/java/cn/nonocast/repository/TaskRepository.java
+A	src/main/java/cn/nonocast/service/TaskService.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/CHANGELOG
+M	src/main/resources/db/schema.sql
+M	src/main/resources/templates/admin/dba.ftl
+A	src/main/resources/templates/admin/tasks.ftl
+M	src/main/resources/templates/admin/users.ftl
+M	src/main/resources/templates/layout/admin.ftl
+M	src/main/resources/templates/user/home.ftl
+
+274acae;v0.1.19
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/java/cn/nonocast/model/UserForm.java
+M	src/main/resources/application-dev.properties
+M	src/main/resources/application-prod.properties
+M	src/main/resources/application.properties
+M	src/main/resources/db/CHANGELOG
+D	src/main/resources/db/data.sql
+M	src/main/resources/db/rebuild.sh
+M	src/main/resources/db/schema.sql
+M	src/main/resources/templates/admin/users.ftl
+
+ac37083;v0.1.18
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/controller/UserController.java
+M	src/main/java/cn/nonocast/model/User.java
+M	src/main/java/cn/nonocast/repository/UserRepository.java
+M	src/main/resources/application.properties
+M	src/main/resources/db/data.sql
+A	src/main/resources/db/rebuild.sh
+M	src/main/resources/db/schema.sql
+M	src/main/resources/templates/admin/users.ftl
+
+6bab497;Merge remote-tracking branch 'origin/master'
+fc55558;update docs
+M	README.md
+
+0929648;update docs
+M	README.md
+
+ca7c7b5;Merge remote-tracking branch 'origin/master'
+c254e93;update docs
+M	README.md
+
+9b70936;update docs
+M	README.md
+
+368a9af;Merge remote-tracking branch 'origin/master'
+1a2074a;Merge remote-tracking branch 'origin/master'
+e22ed7c;Merge remote-tracking branch 'origin/master'
+59cef9a;update docs
+M	README.md
+
+b8ae979;update docs
+M	README.md
+
+af8200e;update docs
+M	README.md
+
+f65eb33;update docs
+M	CHANGELOG.txt
+M	README.md
+
+8727b8f;v0.1.16
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+
+88e1b2d;v0.1.16
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/controller/UserController.java
+M	src/main/resources/application.properties
+M	src/main/resources/templates/user/register.ftl
+
+97077ed;v0.1.15
+M	CHANGELOG.txt
+M	build.gradle
+D	src/main/db/README
+D	src/main/db/data.sql
+D	src/main/db/schema.sql
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/controller/AdminController.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+M	src/main/java/cn/nonocast/model/UserForm.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+A	src/main/java/cn/nonocast/social/Wechat.java
+A	src/main/java/cn/nonocast/social/WechatLoader.java
+A	src/main/java/cn/nonocast/social/WechatSettings.java
+M	src/main/java/cn/nonocast/tag/UserNameMethod.java
+M	src/main/resources/application-dev.properties
+M	src/main/resources/application-prod.properties
+M	src/main/resources/application.properties
+A	src/main/resources/db/CHANGELOG
+A	src/main/resources/db/data.sql
+A	src/main/resources/db/schema.sql
+A	src/main/resources/templates/admin/dba.ftl
+M	src/main/resources/templates/layout/admin.ftl
+A	src/main/resources/templates/user/register.ftl
+A	src/main/resources/templates/user/register_result.ftl
+
+6c97e28;v0.1.13
+M	CHANGELOG.txt
+M	src/main/db/README
+M	src/main/db/data.sql
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+M	src/main/java/cn/nonocast/security/CustomUserService.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+A	src/main/resources/application-dev.properties
+A	src/main/resources/application-prod.properties
+M	src/main/resources/application.properties
+M	src/main/resources/templates/index.ftl
+A	src/main/resources/templates/user/wechat.ftl
+
+4ee19c2;v0.1.10
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/db/data.sql
+M	src/main/db/schema.sql
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/controller/AdminController.java
+M	src/main/java/cn/nonocast/model/User.java
+A	src/main/java/cn/nonocast/model/UserForm.java
+M	src/main/java/cn/nonocast/repository/UserRepository.java
+M	src/main/java/cn/nonocast/security/CustomUserService.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/resources/css/console.css
+M	src/main/resources/templates/admin/create_user.ftl
+A	src/main/resources/templates/admin/create_user_result.ftl
+M	src/main/resources/templates/admin/login.ftl
+M	src/main/resources/templates/admin/users.ftl
+M	src/main/resources/templates/layout/admin.ftl
+M	src/main/resources/templates/lib/auth.ftl
+M	src/main/resources/templates/user/home.ftl
+M	src/main/resources/templates/user/login.ftl
+
+72fe5d4;v0.1.9
+M	CHANGELOG.txt
+M	build.gradle
+M	src/main/java/cn/nonocast/controller/AdminController.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+M	src/main/resources/application.properties
+M	src/main/resources/static/resources/css/console.css
+M	src/main/resources/static/resources/css/simple-sidebar.css
+D	src/main/resources/templates/admin/console.ftl
+A	src/main/resources/templates/admin/create_user.ftl
+M	src/main/resources/templates/admin/login.ftl
+A	src/main/resources/templates/admin/users.ftl
+A	src/main/resources/templates/layout/admin.ftl
+M	src/main/resources/templates/user/login.ftl
+
+a2ab8cc;v0.1.8
+M	CHANGELOG.txt
+M	build.gradle
+A	src/main/db/README
+A	src/main/db/data.sql
+A	src/main/db/schema.sql
+M	src/main/java/cn/nonocast/TodolistApplication.java
+M	src/main/java/cn/nonocast/controller/UserController.java
+A	src/main/java/cn/nonocast/model/User.java
+A	src/main/java/cn/nonocast/repository/UserRepository.java
+A	src/main/java/cn/nonocast/security/CustomUserService.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+M	src/main/resources/application.properties
+M	src/main/resources/templates/admin/login.ftl
+M	src/main/resources/templates/user/home.ftl
+M	src/main/resources/templates/user/login.ftl
+
+2762937;v0.1.7
+M	CHANGELOG.txt
+M	src/main/java/cn/nonocast/TodolistApplicationConfiguration.java
+M	src/main/resources/application.properties
+M	src/main/resources/templates/error.ftl
+
+d19e3cb;v0.1.6
+R074	CHANGELOG.md	CHANGELOG.txt
+M	README.md
+M	src/main/java/cn/nonocast/TodolistApplication.java
+A	src/main/java/cn/nonocast/TodolistApplicationConfiguration.java
+A	src/main/java/cn/nonocast/controller/AdminController.java
+A	src/main/java/cn/nonocast/controller/UserController.java
+M	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+A	src/main/java/cn/nonocast/tag/IsAdminMethod.java
+A	src/main/java/cn/nonocast/tag/UserNameMethod.java
+M	src/main/resources/application.properties
+A	src/main/resources/static/resources/css/console.css
+A	src/main/resources/static/resources/css/login.css
+A	src/main/resources/static/resources/css/simple-sidebar.css
+A	src/main/resources/static/resources/misc/avatar.png
+A	src/main/resources/templates/admin/console.ftl
+A	src/main/resources/templates/admin/login.ftl
+A	src/main/resources/templates/error.ftl
+A	src/main/resources/templates/lib/auth.ftl
+A	src/main/resources/templates/user/home.ftl
+A	src/main/resources/templates/user/login.ftl
+
+10d5b4e;v0.1.5
+M	CHANGELOG.md
+A	build.gradle
+A	src/main/java/cn/nonocast/TodolistApplication.java
+A	src/main/java/cn/nonocast/security/WebSecurityConfiguration.java
+A	src/main/resources/templates/index.ftl
+
+4c74e3b;v0.1.5
+A	src/main/resources/application.properties
+
+5d00542;add osx rules
+M	.gitignore
+
+b6c3895;initial commit
+A	CHANGELOG.md
+
+bd7a7dd;Initial commit
+A	.gitignore
+A	LICENSE
+A	README.md
