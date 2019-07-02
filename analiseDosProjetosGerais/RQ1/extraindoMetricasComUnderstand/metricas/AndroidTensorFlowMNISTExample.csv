@@ -1,0 +1,93 @@
+Kind,Name,AvgCyclomatic,AvgCyclomaticModified,AvgCyclomaticStrict,AvgEssential,AvgLine,AvgLineBlank,AvgLineCode,AvgLineComment,CountClassBase,CountClassCoupled,CountClassCoupledModified,CountClassDerived,CountDeclClass,CountDeclClassMethod,CountDeclClassVariable,CountDeclExecutableUnit,CountDeclFile,CountDeclFunction,CountDeclInstanceMethod,CountDeclInstanceVariable,CountDeclMethod,CountDeclMethodAll,CountDeclMethodDefault,CountDeclMethodPrivate,CountDeclMethodProtected,CountDeclMethodPublic,CountInput,CountLine,CountLineBlank,CountLineCode,CountLineCodeDecl,CountLineCodeExe,CountLineComment,CountOutput,CountPath,CountPathLog,CountSemicolon,CountStmt,CountStmtDecl,CountStmtExe,Cyclomatic,CyclomaticModified,CyclomaticStrict,Essential,Knots,MaxCyclomatic,MaxCyclomaticModified,MaxCyclomaticStrict,MaxEssential,MaxEssentialKnots,MaxInheritanceTree,MaxNesting,MinEssentialKnots,PercentLackOfCohesion,PercentLackOfCohesionModified,RatioCommentToCode,SumCyclomatic,SumCyclomaticModified,SumCyclomaticStrict,SumEssential
+File,"Classifier.java",1,1,1,1,6,0,5,0,,,,,2,0,0,7,,11,11,4,11,,4,0,0,7,,115,24,54,23,19,37,,,,26,39,21,18,,,,,,5,5,5,1,,,1,,,,0,69,11,11,11,7
+File,"DrawModel.java",1,1,1,1,3,0,3,0,,,,,3,0,0,14,,14,14,7,14,,0,3,0,11,,104,23,63,27,20,20,,,,27,45,27,18,,,,,,2,2,2,1,,,1,,,,0,32,15,15,15,14
+File,"DrawRenderer.java",4,4,4,3,29,2,24,3,,,,,1,1,0,1,,1,0,0,1,,0,0,0,1,,58,7,30,15,18,21,,,,23,28,16,12,,,,,,4,4,4,3,,,2,,,,0,70,4,4,4,3
+File,"DrawView.java",1,1,1,1,11,1,9,0,,,,,1,0,0,11,,11,11,9,11,,0,3,0,8,,173,28,116,47,73,29,,,,73,95,47,48,,,,,,5,5,5,3,,,1,,,,0,25,21,21,21,13
+File,"ExampleInstrumentedTest.java",1,1,1,1,6,1,4,1,,,,,1,0,0,1,,1,1,0,1,,0,0,0,1,,42,6,15,12,2,21,,,,9,11,10,1,,,,,,1,1,1,1,,,0,,,,1,40,1,1,1,1
+File,"ExampleUnitTest.java",1,1,1,1,3,0,3,0,,,,,1,0,0,1,,1,1,0,1,,0,0,0,1,,33,4,9,6,1,20,,,,4,6,5,1,,,,,,1,1,1,1,,,0,,,,2,22,1,1,1,1
+File,"MainActivity.java",1,1,1,1,9,0,8,0,,,,,6,0,7,17,,17,17,9,17,,0,7,4,6,,218,46,157,60,96,17,,,,89,112,58,54,,,,,,4,4,4,4,,,1,,,,0,11,22,22,22,20
+File,"TensorFlowImageClassifier.java",1,1,1,1,16,1,11,3,,,,,2,1,3,7,,7,6,8,7,,0,1,0,6,,183,30,105,52,53,50,,,,66,78,42,36,,,,,,5,5,5,1,,,2,,,,0,48,12,12,12,7
+Package,"com",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"com.mindorks",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"com.mindorks.tensorflowexample",1,1,1,1,9,0,8,0,,,,,12,1,10,,5,,36,21,37,,4,8,4,21,,591,110,340,153,171,145,,,,194,246,136,110,,,,,,5,5,5,4,,,2,,,,0,43,47,47,47,36
+Public Interface,"com.mindorks.tensorflowexample.Classifier",0,0,0,0,0,0,0,0,0,0,0,1,,0,0,,,,4,0,4,4,4,0,0,0,,85,18,51,20,19,16,,,,23,36,18,18,,,,,,0,0,0,0,,0,0,,0,0,0,31,0,0,0,0
+Public Class,"com.mindorks.tensorflowexample.Classifier.Recognition",1,1,1,1,6,0,5,0,1,0,0,0,,0,0,,,,7,4,7,7,0,0,0,7,,75,14,45,15,19,16,,,,19,31,13,18,,,,,,5,5,5,1,,1,1,,53,53,0,36,11,11,11,7
+Public Constructor,"com.mindorks.tensorflowexample.Classifier.Recognition.Recognition",,,,,,,,,,,,,,,,,,,,,,,,,,,5,7,0,7,2,4,0,5,1,0,4,5,1,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.Classifier.Recognition.getConfidence",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.Classifier.Recognition.getId",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.Classifier.Recognition.getLocation",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.Classifier.Recognition.getTitle",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.Classifier.Recognition.setLocation",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.Classifier.Recognition.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,4,20,4,16,2,10,0,3,16,1,6,11,2,9,5,5,5,1,0,,,,,0,,1,0,,,0,00,5,5,5,1
+Abstract Method,"com.mindorks.tensorflowexample.Classifier.close",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"com.mindorks.tensorflowexample.Classifier.enableStatLogging",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"com.mindorks.tensorflowexample.Classifier.getStatString",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"com.mindorks.tensorflowexample.Classifier.recognizeImage",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Class,"com.mindorks.tensorflowexample.ExampleInstrumentedTest",1,1,1,1,6,1,4,1,1,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,14,1,7,4,2,6,,,,2,4,3,1,,,,,,1,1,1,1,,1,0,,0,0,0,86,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.ExampleInstrumentedTest.useAppContext",,,,,,,,,,,,,,,,,,,,,,,,,,,0,6,1,4,2,2,1,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,25,1,1,1,1
+Public Class,"com.mindorks.tensorflowexample.ExampleUnitTest",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,10,0,5,3,1,5,,,,1,3,2,1,,,,,,1,1,1,1,,1,0,,0,0,1,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.ExampleUnitTest.addition_isCorrect",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.mindorks.tensorflowexample.MainActivity",1,1,1,1,11,1,9,0,2,3,3,0,,0,7,,,,12,9,12,12,0,7,4,1,,183,39,144,47,96,2,,,,76,99,45,54,,,,,,4,4,4,4,,2,1,,76,71,0,01,16,16,16,15
+Private Method,"com.mindorks.tensorflowexample.MainActivity.initTensorFlowAndLoadModel",,,,,,,,,,,,,,,,,,,,,,,,,,,2,20,0,20,1,16,0,1,1,0,5,8,2,6,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.mindorks.tensorflowexample.MainActivity.initTensorFlowAndLoadModel.(Anon_3)",2,2,2,1,15,0,15,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,17,0,17,0,15,0,,,,4,6,1,5,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"com.mindorks.tensorflowexample.MainActivity.initTensorFlowAndLoadModel.(Anon_3).run",,,,,,,,,,,,,,,,,,,,,,,,,,,7,15,0,15,0,13,0,5,2,0,4,6,1,5,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"com.mindorks.tensorflowexample.MainActivity.makeButtonVisible",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,8,1,5,0,1,1,0,2,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.mindorks.tensorflowexample.MainActivity.makeButtonVisible.(Anon_4)",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.MainActivity.makeButtonVisible.(Anon_4).run",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.mindorks.tensorflowexample.MainActivity.onClearClicked",,,,,,,,,,,,,,,,,,,,,,,,,,,4,7,1,6,1,4,0,4,1,0,4,5,1,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.mindorks.tensorflowexample.MainActivity.onCreate",,,,,,,,,,,,,,,,,,,,,,,,,,,5,30,6,24,2,20,0,12,1,0,14,17,4,13,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.mindorks.tensorflowexample.MainActivity.onCreate.(Anon_1)",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.MainActivity.onCreate.(Anon_1).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.mindorks.tensorflowexample.MainActivity.onCreate.(Anon_2)",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.MainActivity.onCreate.(Anon_2).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.mindorks.tensorflowexample.MainActivity.onDestroy",,,,,,,,,,,,,,,,,,,,,,,,,,,1,9,0,9,1,6,0,2,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.mindorks.tensorflowexample.MainActivity.onDestroy.(Anon_5)",1,1,1,1,3,0,3,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.MainActivity.onDestroy.(Anon_5).run",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.mindorks.tensorflowexample.MainActivity.onDetectClicked",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,3,8,4,5,0,6,2,0,4,6,4,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Protected Method,"com.mindorks.tensorflowexample.MainActivity.onPause",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.mindorks.tensorflowexample.MainActivity.onResume",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.MainActivity.onTouch",,,,,,,,,,,,,,,,,,,,,,,,,,,5,17,3,14,2,11,0,5,4,1,8,12,2,10,4,4,4,4,3,,,,,3,,1,3,,,0,00,4,4,4,4
+Private Method,"com.mindorks.tensorflowexample.MainActivity.processTouchDown",,,,,,,,,,,,,,,,,,,,,,,,,,,9,8,0,8,3,6,0,6,1,0,6,7,3,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.mindorks.tensorflowexample.MainActivity.processTouchMove",,,,,,,,,,,,,,,,,,,,,,,,,,,7,13,2,11,5,9,0,7,1,0,9,10,5,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.mindorks.tensorflowexample.MainActivity.processTouchUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.mindorks.tensorflowexample.TensorFlowImageClassifier",1,1,1,1,18,1,12,4,2,1,1,0,,1,3,,,,5,8,6,6,0,1,0,5,,147,22,92,39,53,35,,,,53,65,29,36,,,,,,5,5,5,1,,1,2,,62,62,0,38,11,11,11,6
+Private Constructor,"com.mindorks.tensorflowexample.TensorFlowImageClassifier.TensorFlowImageClassifier",,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.TensorFlowImageClassifier.close",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.mindorks.tensorflowexample.TensorFlowImageClassifier.create",,,,,,,,,,,,,,,,,,,,,,,,,,,10,53,6,29,14,17,19,19,2,0,17,19,6,13,2,2,2,1,0,,,,,0,,1,0,,,0,66,2,2,2,1
+Public Method,"com.mindorks.tensorflowexample.TensorFlowImageClassifier.enableStatLogging",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.TensorFlowImageClassifier.getStatString",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.TensorFlowImageClassifier.recognizeImage",,,,,,,,,,,,,,,,,,,,,,,,,,,12,45,4,35,5,28,7,12,6,1,22,27,7,20,5,5,5,1,0,,,,,0,,2,0,,,0,20,5,5,5,1
+Anonymous Class,"com.mindorks.tensorflowexample.TensorFlowImageClassifier.recognizeImage.(Anon_1)",1,1,1,1,4,0,3,1,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,6,0,5,0,4,1,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,20,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.TensorFlowImageClassifier.recognizeImage.(Anon_1).compare",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,3,0,2,1,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,33,1,1,1,1
+Package,"com.mindorks.tensorflowexample.view",1,1,1,1,7,0,6,0,,,,,5,1,0,,3,,25,16,26,,0,6,0,20,,335,58,209,89,111,70,,,,123,168,90,78,,,,,,5,5,5,3,,,2,,,,0,33,40,40,40,30
+Public Class,"com.mindorks.tensorflowexample.view.DrawModel",1,1,1,1,3,0,3,0,1,2,2,0,,0,0,,,,9,4,9,9,0,0,0,9,,82,19,60,24,20,5,,,,24,42,24,18,,,,,,2,2,2,1,,1,1,,69,69,0,08,10,10,10,9
+Public Constructor,"com.mindorks.tensorflowexample.view.DrawModel.DrawModel",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"com.mindorks.tensorflowexample.view.DrawModel.Line",1,1,1,1,2,0,2,0,1,1,1,0,,0,0,,,,4,1,4,4,0,2,0,2,,18,4,14,6,4,0,,,,4,9,6,3,,,,,,1,1,1,1,,1,0,,25,25,0,00,4,4,4,4
+Private Constructor,"com.mindorks.tensorflowexample.view.DrawModel.Line.Line",,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.mindorks.tensorflowexample.view.DrawModel.Line.addElem",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawModel.Line.getElem",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawModel.Line.getElemSize",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"com.mindorks.tensorflowexample.view.DrawModel.LineElem",1,1,1,1,4,0,4,0,1,0,0,0,,0,0,,,,1,2,1,1,0,1,0,0,,9,1,8,4,2,0,,,,4,6,4,2,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Private Constructor,"com.mindorks.tensorflowexample.view.DrawModel.LineElem.LineElem",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawModel.addLineElem",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,2,2,0,1,3,1,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawModel.clear",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawModel.endLine",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawModel.getHeight",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawModel.getLine",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawModel.getLineSize",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawModel.getWidth",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawModel.startLine",,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,0,5,1,3,0,5,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.mindorks.tensorflowexample.view.DrawRenderer",4,4,4,3,29,2,24,3,1,3,3,0,,1,0,,,,0,0,1,1,0,0,0,1,,34,2,26,11,18,6,,,,19,24,12,12,,,,,,4,4,4,3,,1,2,,0,0,0,23,4,4,4,3
+Public Static Method,"com.mindorks.tensorflowexample.view.DrawRenderer.renderModel",,,,,,,,,,,,,,,,,,,,,,,,,,,8,29,2,24,10,18,3,7,5,1,19,23,11,12,4,4,4,3,1,,,,,1,,2,1,,,0,12,4,4,4,3
+Public Class,"com.mindorks.tensorflowexample.view.DrawView",1,1,1,1,11,1,9,0,1,2,2,0,,0,0,,,,11,9,11,11,0,3,0,8,,150,25,111,42,73,14,,,,68,90,42,48,,,,,,5,5,5,3,,2,1,,75,61,0,13,21,21,21,13
+Public Constructor,"com.mindorks.tensorflowexample.view.DrawView.DrawView",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawView.calcPos",,,,,,,,,,,,,,,,,,,,,,,,,,,8,10,0,7,1,5,3,2,1,0,5,6,1,5,1,1,1,1,0,,,,,0,,0,0,,,0,43,1,1,1,1
+Private Method,"com.mindorks.tensorflowexample.view.DrawView.createBitmap",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,8,1,5,0,7,2,0,4,6,1,5,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawView.getPixelData",,,,,,,,,,,,,,,,,,,,,,,,,,,3,24,3,16,7,12,5,4,3,0,12,15,8,7,3,3,3,1,1,,,,,0,,1,0,,,0,31,3,3,3,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawView.onDraw",,,,,,,,,,,,,,,,,,,,,,,,,,,8,21,3,18,2,12,0,5,7,1,8,13,2,11,5,5,5,3,2,,,,,2,,1,2,,,0,00,5,5,5,3
+Public Method,"com.mindorks.tensorflowexample.view.DrawView.onPause",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawView.onResume",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.mindorks.tensorflowexample.view.DrawView.releaseBitmap",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,8,1,5,0,4,2,0,4,6,1,5,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawView.reset",,,,,,,,,,,,,,,,,,,,,,,,,,,6,9,0,9,3,6,0,5,2,0,5,7,3,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.mindorks.tensorflowexample.view.DrawView.setModel",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.mindorks.tensorflowexample.view.DrawView.setup",,,,,,,,,,,,,,,,,,,,,,,,,,,4,29,6,21,12,18,2,8,2,0,17,19,12,7,2,2,2,1,0,,,,,0,,1,0,,,0,10,2,2,2,1

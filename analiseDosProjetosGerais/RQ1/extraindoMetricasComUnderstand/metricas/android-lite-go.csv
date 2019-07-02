@@ -1,0 +1,89 @@
+Kind,Name,AvgCyclomatic,AvgCyclomaticModified,AvgCyclomaticStrict,AvgEssential,AvgLine,AvgLineBlank,AvgLineCode,AvgLineComment,CountClassBase,CountClassCoupled,CountClassCoupledModified,CountClassDerived,CountDeclClass,CountDeclClassMethod,CountDeclClassVariable,CountDeclExecutableUnit,CountDeclFile,CountDeclFunction,CountDeclInstanceMethod,CountDeclInstanceVariable,CountDeclMethod,CountDeclMethodAll,CountDeclMethodDefault,CountDeclMethodPrivate,CountDeclMethodProtected,CountDeclMethodPublic,CountInput,CountLine,CountLineBlank,CountLineCode,CountLineCodeDecl,CountLineCodeExe,CountLineComment,CountOutput,CountPath,CountPathLog,CountSemicolon,CountStmt,CountStmtDecl,CountStmtExe,Cyclomatic,CyclomaticModified,CyclomaticStrict,Essential,Knots,MaxCyclomatic,MaxCyclomaticModified,MaxCyclomaticStrict,MaxEssential,MaxEssentialKnots,MaxInheritanceTree,MaxNesting,MinEssentialKnots,PercentLackOfCohesion,PercentLackOfCohesionModified,RatioCommentToCode,SumCyclomatic,SumCyclomaticModified,SumCyclomaticStrict,SumEssential
+File,"GoUtil.java",2,2,2,1,11,0,9,2,,,,,2,6,4,7,,7,1,0,7,,0,0,0,7,,105,11,76,32,38,18,,,,41,57,30,27,,,,,,5,5,5,1,,,1,,,,0,24,14,14,14,7
+File,"MainActivity.java",1,1,1,1,16,1,12,2,,,,,7,0,0,10,,10,10,5,10,,0,3,0,7,,174,29,117,34,76,28,,,,70,85,38,47,,,,,,6,3,6,1,,,1,,,,0,24,17,14,17,10
+File,"OverloadPolicy.java",1,1,1,1,0,0,0,0,,,,,1,0,0,2,,0,2,5,2,,0,0,0,2,,31,2,8,7,0,21,,,,1,2,2,0,,,,,,1,1,1,1,,,0,,,,2,62,2,2,2,2
+File,"PriorityRunnable.java",1,1,1,1,3,0,3,0,,,,,1,0,0,3,,3,3,1,3,,0,0,1,2,,37,5,13,6,3,19,,,,5,9,6,3,,,,,,1,1,1,1,,,0,,,,1,46,3,3,3,3
+File,"SchedulePolicy.java",1,1,1,1,0,0,0,0,,,,,1,0,0,2,,0,2,2,2,,0,0,0,2,,25,1,5,4,0,19,,,,1,2,2,0,,,,,,1,1,1,1,,,0,,,,3,80,2,2,2,2
+File,"SmartExecutor.java",1,1,1,1,10,0,8,2,,,,,4,3,5,31,,32,29,9,32,,1,1,3,27,,407,43,265,61,165,99,,,,113,173,65,108,,,,,,11,7,11,9,,,3,,,,0,37,59,54,59,39
+Package,"com",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"com.litesuits",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"com.litesuits.go",1,1,1,1,8,0,6,1,,,,,7,3,5,,4,,36,17,39,,1,1,4,33,,500,51,291,78,168,158,,,,120,186,75,111,,,,,,11,7,11,9,,,3,,,,0,54,66,61,66,46
+Public Enum Type,"com.litesuits.go.OverloadPolicy",1,1,1,1,0,0,0,0,1,0,0,0,,0,0,,,,2,5,2,2,0,0,0,2,,13,0,7,6,0,6,,,,0,1,1,0,,,,,,1,1,1,1,,1,0,,,,0,86,2,2,2,2
+Public Method,"com.litesuits.go.OverloadPolicy.valueOf",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.OverloadPolicy.values",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Class,"com.litesuits.go.PriorityRunnable",1,1,1,1,3,0,3,0,2,0,0,0,,0,0,,,,3,1,3,3,0,0,1,2,,20,4,12,5,3,4,,,,4,8,5,3,,,,,,1,1,1,1,,1,0,,0,0,0,33,3,3,3,3
+Protected Constructor,"com.litesuits.go.PriorityRunnable.PriorityRunnable",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.PriorityRunnable.getPriority",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.PriorityRunnable.setPriority",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Enum Type,"com.litesuits.go.SchedulePolicy",1,1,1,1,0,0,0,0,1,0,0,0,,0,0,,,,2,2,2,2,0,0,0,2,,8,0,4,3,0,4,,,,0,1,1,0,,,,,,1,1,1,1,,1,0,,,,1,00,2,2,2,2
+Public Method,"com.litesuits.go.SchedulePolicy.valueOf",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SchedulePolicy.values",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.litesuits.go.SmartExecutor",2,1,2,1,11,0,8,2,2,4,4,0,,3,4,,,,25,8,28,28,0,1,3,24,,383,40,259,55,165,84,,,,107,167,59,108,,,,,,11,7,11,9,,1,3,,80,64,0,32,56,51,56,36
+Public Constructor,"com.litesuits.go.SmartExecutor.SmartExecutor",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"com.litesuits.go.SmartExecutor.SmartExecutor",,,,,,,,,,,,,,,,,,,,,,,,,,,2,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Interface,"com.litesuits.go.SmartExecutor.WrappedRunnable",0,0,0,0,0,0,0,0,1,0,0,1,,0,0,,,,1,0,1,1,1,0,0,0,,3,0,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,2,0,,0,0,0,00,0,0,0,0
+Abstract Method,"com.litesuits.go.SmartExecutor.WrappedRunnable.getRealRunnable",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Method,"com.litesuits.go.SmartExecutor.cancelWaitingTask",,,,,,,,,,,,,,,,,,,,,,,,,,,3,15,0,15,3,9,0,5,4,1,7,12,4,8,4,4,4,1,0,,,,,0,,3,0,,,0,00,4,4,4,1
+Public Static Method,"com.litesuits.go.SmartExecutor.createDefaultThreadPool",,,,,,,,,,,,,,,,,,,,,,,,,,,3,19,1,17,2,14,1,2,1,0,5,7,5,2,1,1,1,1,0,,,,,0,,0,0,,,0,06,1,1,1,1
+Anonymous Class,"com.litesuits.go.SmartExecutor.createDefaultThreadPool.(Anon_1)",1,1,1,1,3,0,3,0,1,0,0,0,,0,1,,,,1,1,1,1,0,0,0,1,,8,1,7,0,6,0,,,,3,4,3,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.createDefaultThreadPool.(Anon_1).newThread",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,0,2,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.execute",,,,,,,,,,,,,,,,,,,,,,,,,,,20,76,3,54,4,42,19,9,25,1,22,33,5,28,11,7,11,9,17,,,,,17,,2,17,,,0,35,11,7,11,9
+Anonymous Class,"com.litesuits.go.SmartExecutor.execute.(Anon_2)",1,1,1,1,5,0,5,0,2,1,1,0,,0,0,,,,2,0,2,2,0,0,0,2,,14,1,13,1,10,0,,,,3,6,2,4,,,,,,1,1,1,1,,1,1,,0,0,0,00,2,2,2,2
+Public Method,"com.litesuits.go.SmartExecutor.execute.(Anon_2).getRealRunnable",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.execute.(Anon_2).run",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,0,7,0,5,0,2,1,0,2,4,1,3,1,1,1,1,0,,,,,0,,1,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.getCoreSize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.getOverloadPolicy",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.getQueueSize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.getRunningSize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.getSchedulePolicy",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.litesuits.go.SmartExecutor.getThreadPool",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.getWaitingSize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.litesuits.go.SmartExecutor.initThreadPool",,,,,,,,,,,,,,,,,,,,,,,,,,,9,9,0,9,1,5,0,4,4,1,2,5,1,4,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"com.litesuits.go.SmartExecutor.isDebug",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Generic Method,"com.litesuits.go.SmartExecutor.newTaskFor",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Generic Method,"com.litesuits.go.SmartExecutor.newTaskFor",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+TypeVariable,"com.litesuits.go.SmartExecutor.newTaskFor.T",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+TypeVariable,"com.litesuits.go.SmartExecutor.newTaskFor.T",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Public Method,"com.litesuits.go.SmartExecutor.printThreadPoolInfo",,,,,,,,,,,,,,,,,,,,,,,,,,,3,13,0,13,1,10,0,11,2,0,5,7,1,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"com.litesuits.go.SmartExecutor.scheduleNext",,,,,,,,,,,,,,,,,,,,,,,,,,,11,42,0,37,3,28,5,11,16,1,15,22,3,19,7,6,7,1,5,,,,,0,,2,0,,,0,14,7,6,7,1
+Public Method,"com.litesuits.go.SmartExecutor.setCoreSize",,,,,,,,,,,,,,,,,,,,,,,,,,,8,18,0,11,1,7,7,4,4,1,4,7,1,6,3,3,3,1,0,,,,,0,,1,0,,,0,64,3,3,3,1
+Public Method,"com.litesuits.go.SmartExecutor.setDebug",,,,,,,,,,,,,,,,,,,,,,,,,,,2,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.setOverloadPolicy",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,1,3,0,1,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.litesuits.go.SmartExecutor.setQueueSize",,,,,,,,,,,,,,,,,,,,,,,,,,,8,19,1,11,1,7,7,4,4,1,4,7,1,6,3,3,3,1,0,,,,,0,,1,0,,,0,64,3,3,3,1
+Public Method,"com.litesuits.go.SmartExecutor.setSchedulePolicy",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,1,3,0,1,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"com.litesuits.go.SmartExecutor.setThreadPool",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.SmartExecutor.submit",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,5,2,3,3,3,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,60,1,1,1,1
+Public Generic Method,"com.litesuits.go.SmartExecutor.submit",,,,,,,,,,,,,,,,,,,,,,,,,,,2,17,0,5,2,3,12,3,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,2,40,1,1,1,1
+Public Generic Method,"com.litesuits.go.SmartExecutor.submit",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,5,2,3,3,3,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,60,1,1,1,1
+Public Generic Method,"com.litesuits.go.SmartExecutor.submit",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+TypeVariable,"com.litesuits.go.SmartExecutor.submit.T",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+TypeVariable,"com.litesuits.go.SmartExecutor.submit.T",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+TypeVariable,"com.litesuits.go.SmartExecutor.submit.T",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Package,"com.litesuits.go.sample",1,1,1,1,16,1,12,2,,,,,7,0,0,,1,,10,5,10,,0,3,0,7,,174,29,117,34,76,28,,,,70,85,38,47,,,,,,6,3,6,1,,,1,,,,0,24,17,14,17,10
+Public Class,"com.litesuits.go.sample.MainActivity",2,1,2,1,34,4,23,7,1,3,3,0,,0,0,,,,4,5,4,4,0,3,0,1,,154,26,100,17,76,28,,,,53,68,21,47,,,,,,6,3,6,1,,2,1,,75,60,0,28,10,7,10,4
+Private Method,"com.litesuits.go.sample.MainActivity.clickTestItem",,,,,,,,,,,,,,,,,,,,,,,,,,,5,91,12,62,7,52,17,8,6,1,31,40,11,29,6,3,6,1,6,,,,,0,,0,0,,,0,27,6,3,6,1
+Anonymous Class,"com.litesuits.go.sample.MainActivity.clickTestItem.(Anon_2)",2,2,2,1,9,0,9,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,11,0,11,0,9,0,,,,4,6,1,5,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"com.litesuits.go.sample.MainActivity.clickTestItem.(Anon_2).run",,,,,,,,,,,,,,,,,,,,,,,,,,,2,9,0,9,0,7,0,5,2,0,4,6,1,5,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Anonymous Class,"com.litesuits.go.sample.MainActivity.clickTestItem.(Anon_3)",1,1,1,1,4,0,4,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,6,0,6,1,5,0,,,,2,3,1,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.litesuits.go.sample.MainActivity.clickTestItem.(Anon_3).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,0,3,0,4,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.litesuits.go.sample.MainActivity.clickTestItem.(Anon_4)",1,1,1,1,4,0,4,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,6,0,6,0,5,0,,,,2,3,1,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.litesuits.go.sample.MainActivity.clickTestItem.(Anon_4).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,0,3,0,4,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.litesuits.go.sample.MainActivity.clickTestItem.(Anon_6)",1,1,1,1,4,0,4,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,6,0,6,1,5,0,,,,2,3,1,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.litesuits.go.sample.MainActivity.clickTestItem.(Anon_6).run",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,0,3,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.litesuits.go.sample.MainActivity.clickTestItem.(for_loop_1).(Anon_5)",1,1,1,1,4,0,4,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,6,0,6,0,5,0,,,,2,3,1,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.litesuits.go.sample.MainActivity.clickTestItem.(for_loop_1).(Anon_5).run",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,0,3,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.litesuits.go.sample.MainActivity.initSmartExecutor",,,,,,,,,,,,,,,,,,,,,,,,,,,4,24,6,10,1,7,8,7,2,0,6,8,1,7,2,2,2,1,0,,,,,0,,1,0,,,0,80,2,2,2,1
+Private Method,"com.litesuits.go.sample.MainActivity.initViews",,,,,,,,,,,,,,,,,,,,,,,,,,,3,12,0,12,1,9,0,7,1,0,5,7,2,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.litesuits.go.sample.MainActivity.initViews.(Anon_1)",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.litesuits.go.sample.MainActivity.initViews.(Anon_1).onItemClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.litesuits.go.sample.MainActivity.onCreate",,,,,,,,,,,,,,,,,,,,,,,,,,,2,12,1,8,1,6,3,6,1,0,6,7,1,6,1,1,1,1,0,,,,,0,,0,0,,,0,38,1,1,1,1
+Package,"com.litesuits.go.utils",2,2,2,1,11,0,9,2,,,,,2,6,4,,1,,1,0,7,,0,0,0,7,,105,11,76,32,38,18,,,,41,57,30,27,,,,,,5,5,5,1,,,1,,,,0,24,14,14,14,7
+Public Class,"com.litesuits.go.utils.GoUtil",2,2,2,1,12,0,9,2,1,1,1,0,,6,4,,,,0,0,6,6,0,0,0,6,,91,8,65,21,38,18,,,,30,46,19,27,,,,,,5,5,5,1,,1,1,,83,83,0,28,12,12,12,6
+Public Static Method,"com.litesuits.go.utils.GoUtil.dialogBuilder",,,,,,,,,,,,,,,,,,,,,,,,,,,4,10,0,10,2,6,0,3,4,1,4,7,2,5,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Static Method,"com.litesuits.go.utils.GoUtil.formatDate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,2,2,0,2,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.litesuits.go.utils.GoUtil.getCoresNumbers",,,,,,,,,,,,,,,,,,,,,,,,,,,5,40,0,29,6,17,11,7,9,1,11,19,5,14,5,5,5,1,2,,,,,0,,1,0,,,0,38,5,5,5,1
+Class,"com.litesuits.go.utils.GoUtil.getCoresNumbers.CpuFilter",2,2,2,1,7,0,6,1,2,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,10,0,9,3,3,1,,,,2,5,2,3,,,,,,2,2,2,1,,1,1,,0,0,0,11,2,2,2,1
+Public Method,"com.litesuits.go.utils.GoUtil.getCoresNumbers.CpuFilter.accept",,,,,,,,,,,,,,,,,,,,,,,,,,,2,7,0,6,1,3,1,3,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,17,2,2,2,1
+Public Static Method,"com.litesuits.go.utils.GoUtil.getProcessorsCount",,,,,,,,,,,,,,,,,,,,,,,,,,,0,6,0,3,1,1,3,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Static Method,"com.litesuits.go.utils.GoUtil.showTips",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.litesuits.go.utils.GoUtil.showTips",,,,,,,,,,,,,,,,,,,,,,,,,,,6,10,0,10,4,7,0,7,1,0,7,8,3,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1

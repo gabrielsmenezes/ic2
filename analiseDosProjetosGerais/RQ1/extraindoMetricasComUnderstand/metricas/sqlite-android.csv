@@ -1,0 +1,873 @@
+Kind,Name,AvgCyclomatic,AvgCyclomaticModified,AvgCyclomaticStrict,AvgEssential,AvgLine,AvgLineBlank,AvgLineCode,AvgLineComment,CountClassBase,CountClassCoupled,CountClassCoupledModified,CountClassDerived,CountDeclClass,CountDeclClassMethod,CountDeclClassVariable,CountDeclExecutableUnit,CountDeclFile,CountDeclFunction,CountDeclInstanceMethod,CountDeclInstanceVariable,CountDeclMethod,CountDeclMethodAll,CountDeclMethodDefault,CountDeclMethodPrivate,CountDeclMethodProtected,CountDeclMethodPublic,CountInput,CountLine,CountLineBlank,CountLineCode,CountLineCodeDecl,CountLineCodeExe,CountLineComment,CountOutput,CountPath,CountPathLog,CountSemicolon,CountStmt,CountStmtDecl,CountStmtExe,Cyclomatic,CyclomaticModified,CyclomaticStrict,Essential,Knots,MaxCyclomatic,MaxCyclomaticModified,MaxCyclomaticStrict,MaxEssential,MaxEssentialKnots,MaxInheritanceTree,MaxNesting,MinEssentialKnots,PercentLackOfCohesion,PercentLackOfCohesionModified,RatioCommentToCode,SumCyclomatic,SumCyclomaticModified,SumCyclomaticStrict,SumEssential
+File,"AbstractCursor.java",1,1,1,1,6,0,5,0,,,,,2,0,1,39,,50,50,11,50,,0,0,4,46,,421,61,295,135,113,65,,,,119,184,90,94,,,,,,5,5,5,4,,,2,,,,0,22,61,61,70,44
+File,"AbstractWindowedCursor.java",1,1,1,1,5,0,4,1,,,,,1,0,0,17,,17,17,1,17,,0,0,4,13,,177,20,93,36,35,64,,,,34,56,23,33,,,,,,2,2,2,1,,,1,,,,0,69,21,21,21,17
+File,"Benchmark.java",1,1,1,1,7,0,7,0,,,,,6,2,7,28,,28,26,9,28,,6,5,0,17,,322,49,256,112,141,17,,,,134,183,101,82,,,,,,4,4,4,1,,,2,,,,0,07,38,38,38,28
+File,"CloseGuard.java",1,1,1,1,9,0,4,4,,,,,3,4,3,9,,10,6,1,10,,1,1,0,8,,234,19,58,23,24,157,,,,22,39,21,18,,,,,,3,3,4,1,,,1,,,,2,71,14,14,16,9
+File,"CursorWindow.java",1,1,1,1,14,0,3,10,,,,,1,18,2,27,,45,27,3,45,,0,19,2,24,,479,40,136,63,44,303,,,,64,96,57,39,,,,,,3,3,4,1,,,1,,,,2,23,31,31,32,27
+File,"CursorWindowAllocationException.java",1,1,1,1,3,0,3,0,,,,,1,0,0,1,,1,1,0,1,,0,0,0,1,,29,2,6,3,1,21,,,,2,4,3,1,,,,,,1,1,1,1,,,0,,,,3,50,1,1,1,1
+File,"CursorWindowTest.java",1,1,1,1,9,0,8,0,,,,,1,0,0,6,,6,6,0,6,,0,1,0,5,,107,16,74,35,41,17,,,,49,56,25,31,,,,,,1,1,1,1,,,0,,,,0,23,6,6,6,6
+File,"DatabaseCursorTest.java",2,2,2,1,21,2,18,1,,,,,3,0,4,19,,19,19,2,19,,0,1,0,18,,510,71,400,143,276,40,,,,290,332,119,213,,,,,,5,5,5,4,,,2,,,,0,10,41,41,41,22
+File,"DatabaseErrorHandler.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,1,1,0,1,,1,0,0,0,,33,4,5,4,0,24,,,,3,4,4,0,,,,,,0,0,0,0,,,0,,,,4,80,0,0,0,0
+File,"DatabaseErrorHandlerTest.java",2,2,2,1,14,0,10,3,,,,,2,0,1,5,,5,5,3,5,,0,0,0,5,,143,15,89,43,39,40,,,,50,62,35,27,,,,,,4,4,4,1,,,2,,,,0,45,11,11,11,5
+File,"DatabaseGeneralTest.java",1,1,1,1,21,1,17,1,,,,,9,4,8,48,,48,44,2,48,,0,9,0,39,,1187,145,941,221,727,110,,,,589,670,171,499,,,,,,13,13,15,5,,,3,,,,0,12,79,79,83,52
+File,"DatabaseLocaleTest.java",1,1,1,1,10,0,9,1,,,,,1,0,1,7,,7,7,1,7,,0,2,0,5,,143,18,106,54,54,24,,,,56,70,38,32,,,,,,3,3,3,1,,,2,,,,0,23,11,11,11,7
+File,"DatabaseStatementTest.java",2,2,2,1,16,1,14,0,,,,,2,0,4,15,,15,15,4,15,,0,2,0,13,,338,50,267,113,167,21,,,,192,225,97,128,,,,,,3,3,3,1,,,1,,,,0,08,30,30,30,15
+File,"DefaultDatabaseErrorHandler.java",4,4,5,1,27,1,18,7,,,,,1,0,1,2,,2,2,0,2,,0,1,0,1,,106,9,48,13,26,49,,,,20,32,13,19,,,,,,6,6,6,1,,,2,,,,1,02,9,9,10,2
+File,"NewDatabasePerformanceTestSuite.java",1,1,1,1,69,2,67,0,,,,,1,1,0,1,,1,0,0,1,,0,0,0,1,,99,7,76,11,64,16,,,,38,40,8,32,,,,,,1,1,1,1,,,0,,,,0,21,1,1,1,1
+File,"NewDatabasePerformanceTests.java",2,2,2,1,11,1,10,0,,,,,33,0,54,65,,65,65,26,65,,0,0,0,65,,1260,255,891,357,528,114,,,,529,712,359,353,,,,,,8,8,8,1,,,2,,,,0,13,150,150,150,65
+File,"RequerySQLiteOpenHelperFactory.java",1,1,1,1,3,0,3,0,,,,,4,0,0,12,,13,13,4,13,,3,0,1,9,,95,22,69,36,17,4,,,,26,44,28,16,,,,,,2,2,2,1,,,1,,,,0,06,13,13,13,12
+File,"SQLiteClosable.java",1,1,1,1,14,0,7,7,,,,,1,0,0,3,,4,4,1,4,,0,0,1,3,,80,7,27,9,11,46,,,,10,18,9,9,,,,,,2,2,2,1,,,1,,,,1,70,5,5,5,3
+File,"SQLiteConnection.java",3,2,3,1,18,0,14,3,,,,,5,35,9,67,,96,61,31,96,,9,61,2,24,,1585,132,1094,307,688,362,,,,514,737,263,474,,,,,,13,10,13,5,,,5,,,,0,33,203,197,224,81
+File,"SQLiteConnectionPool.java",3,3,3,1,21,1,16,4,,,,,4,2,5,40,,38,38,25,40,,1,25,1,13,,1084,111,698,155,459,297,,,,318,477,148,329,,,,,,15,15,16,7,,,5,,,,0,43,139,139,149,63
+File,"SQLiteCursor.java",2,2,2,1,12,0,9,2,,,,,1,1,2,14,,14,13,8,14,,0,1,1,12,,260,34,166,53,91,60,,,,79,115,43,72,,,,,,9,9,10,4,,,3,,,,0,36,33,33,36,20
+File,"SQLiteCursorDriver.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,5,5,0,5,,5,0,0,0,,56,7,9,8,0,40,,,,7,8,8,0,,,,,,0,0,0,0,,,0,,,,4,44,0,0,0,0
+File,"SQLiteCustomExtension.java",2,2,2,1,15,0,7,8,,,,,1,0,0,1,,1,1,2,1,,0,0,0,1,,42,4,12,5,4,26,,,,6,9,5,4,,,,,,2,2,2,1,,,1,,,,2,17,2,2,2,1
+File,"SQLiteCustomFunction.java",1,1,1,1,10,0,6,4,,,,,1,0,0,2,,2,2,3,2,,0,1,0,1,,54,5,19,9,6,30,,,,9,13,7,6,,,,,,2,2,2,1,,,1,,,,1,58,3,3,3,2
+File,"SQLiteDatabase.java",1,1,1,1,18,0,8,10,,,,,12,19,22,114,,129,110,7,129,,24,15,3,87,,2595,191,1101,374,574,1312,,,,443,689,266,423,,,,,,8,8,9,4,,,4,,,,1,19,192,192,203,122
+File,"SQLiteDatabaseConfiguration.java",1,1,1,1,15,0,9,5,,,,,1,1,2,6,,6,5,9,6,,2,1,0,3,,203,23,76,29,40,104,,,,45,57,23,34,,,,,,3,3,3,1,,,1,,,,1,37,11,11,11,6
+File,"SQLiteDebug.java",1,1,1,1,10,0,6,4,,,,,3,4,4,5,,6,2,9,6,,0,2,0,4,,173,23,58,35,21,92,,,,32,43,30,13,,,,,,3,3,3,1,,,2,,,,1,59,7,7,8,5
+File,"SQLiteDirectCursorDriver.java",1,1,1,1,5,0,5,0,,,,,1,0,0,7,,7,7,5,7,,0,0,0,7,,85,11,50,24,17,24,,,,22,32,18,14,,,,,,3,3,3,1,,,2,,,,0,48,9,9,9,7
+File,"SQLiteFunction.java",1,1,1,1,6,0,5,1,,,,,3,12,0,17,,29,17,10,29,,12,3,0,14,,185,29,128,59,47,28,,,,61,86,43,43,,,,,,2,2,3,1,,,2,,,,0,22,21,21,22,17
+File,"SQLiteGlobal.java",1,1,1,1,6,0,3,3,,,,,1,9,2,9,,10,1,0,10,,0,2,0,8,,116,14,39,16,12,63,,,,14,26,15,11,,,,,,2,2,2,1,,,1,,,,1,62,10,10,10,9
+File,"SQLiteOpenHelper.java",2,2,3,1,24,0,12,11,,,,,1,0,2,12,,14,14,8,14,,0,1,1,12,,410,31,171,56,92,208,,,,71,111,39,72,,,,,,18,18,21,4,,,5,,,,1,22,35,35,41,15
+File,"SQLiteProgram.java",2,1,2,1,10,0,6,2,,,,,1,0,1,18,,18,18,6,18,,5,1,4,8,,246,27,144,43,75,75,,,,58,93,35,58,,,,,,7,7,8,1,,,2,,,,0,52,36,34,39,18
+File,"SQLiteQuery.java",1,1,1,1,14,0,9,5,,,,,1,0,1,3,,3,3,1,3,,2,0,0,1,,86,7,41,15,21,38,,,,21,27,13,14,,,,,,3,3,3,3,,,2,,,,0,93,5,5,5,5
+File,"SQLiteQueryBuilder.java",2,2,3,1,28,1,11,15,,,,,1,3,2,19,,19,16,6,19,,0,2,0,17,,612,46,251,86,146,321,,,,118,169,68,101,,,,,,9,9,12,9,,,4,,,,1,28,51,51,62,27
+File,"SQLiteSession.java",2,2,3,1,26,1,13,12,,,,,2,0,3,27,,27,27,11,27,,0,11,0,16,,975,71,399,83,240,546,,,,157,246,61,185,,,,,,10,9,11,4,,,4,,,,1,37,79,76,85,30
+File,"SQLiteStatement.java",1,1,1,1,15,0,9,5,,,,,1,0,0,8,,8,8,0,8,,1,0,0,7,,172,11,92,22,55,69,,,,38,53,15,38,,,,,,2,2,2,1,,,1,,,,0,75,14,14,14,8
+File,"SQLiteStatementInfo.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,0,0,3,0,,0,0,0,0,,40,4,6,5,0,30,,,,4,5,5,0,,,,,,0,0,0,0,,,0,,,,5,00,0,0,0,0
+File,"SQLiteStatementType.java",9,2,9,6,26,0,19,7,,,,,1,1,10,2,,2,1,0,2,,0,1,0,1,,98,6,52,16,42,40,,,,26,31,16,15,,,,,,18,3,18,12,,,1,,,,0,77,19,4,19,13
+Package,"io",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"io.requery",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"io.requery.android",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"io.requery.android.database",1,1,1,1,13,1,10,1,,,,,59,23,76,,14,,259,53,282,,1,35,10,236,,5032,713,3427,1231,2115,908,,,,2035,2543,1042,1501,,,,,,13,13,15,5,,,3,,,,0,26,452,452,467,264
+Public Abstract Class,"io.requery.android.database.AbstractCursor",1,1,1,1,6,0,5,0,2,1,1,1,,0,1,,,,47,10,47,47,0,0,4,43,,387,57,281,121,113,49,,,,105,170,76,94,,,,,,5,5,5,4,,1,2,,87,83,0,17,57,57,66,41
+Public Constructor,"io.requery.android.database.AbstractCursor.AbstractCursor",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Static Class,"io.requery.android.database.AbstractCursor.SelfContentObserver",1,1,1,1,4,0,4,0,1,1,1,0,,0,0,,,,3,1,3,3,0,0,0,3,,24,3,18,8,6,3,,,,6,11,6,5,,,,,,2,2,2,1,,2,1,,33,33,0,17,4,4,4,3
+Public Constructor,"io.requery.android.database.AbstractCursor.SelfContentObserver.SelfContentObserver",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.SelfContentObserver.deliverSelfNotifications",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.SelfContentObserver.onChange",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,6,2,3,0,2,2,0,2,4,2,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Protected Method,"io.requery.android.database.AbstractCursor.checkPosition",,,,,,,,,,,,,,,,,,,,,,,,,,,2,12,0,5,1,2,7,1,2,0,1,3,1,2,2,2,3,1,0,,,,,0,,1,0,,,1,40,2,2,3,1
+Public Method,"io.requery.android.database.AbstractCursor.close",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,3,0,3,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.copyStringToBuffer",,,,,,,,,,,,,,,,,,,,,,,,,,,5,15,0,14,3,10,1,4,3,0,6,9,3,6,3,3,4,1,2,,,,,0,,2,0,,,0,07,3,3,4,1
+Public Method,"io.requery.android.database.AbstractCursor.deactivate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"io.requery.android.database.AbstractCursor.finalize",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,0,8,1,5,0,2,6,1,2,6,1,5,4,4,5,1,1,,,,,0,,2,0,,,0,00,4,4,5,1
+Public Method,"io.requery.android.database.AbstractCursor.getBlob",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.getColumnCount",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.getColumnIndex",,,,,,,,,,,,,,,,,,,,,,,,,,,4,18,1,16,5,11,1,6,6,1,10,14,6,8,4,4,4,3,3,,,,,3,,2,3,,,0,06,4,4,4,3
+Public Method,"io.requery.android.database.AbstractCursor.getColumnIndexOrThrow",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,0,7,2,4,0,2,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.AbstractCursor.getColumnName",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Method,"io.requery.android.database.AbstractCursor.getColumnNames",,,,,,,,,,,,,,,,,,,,,,,,,,,3,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Abstract Method,"io.requery.android.database.AbstractCursor.getCount",,,,,,,,,,,,,,,,,,,,,,,,,,,7,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Abstract Method,"io.requery.android.database.AbstractCursor.getDouble",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Method,"io.requery.android.database.AbstractCursor.getExtras",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Method,"io.requery.android.database.AbstractCursor.getFloat",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Abstract Method,"io.requery.android.database.AbstractCursor.getInt",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Abstract Method,"io.requery.android.database.AbstractCursor.getLong",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Method,"io.requery.android.database.AbstractCursor.getNotificationUri",,,,,,,,,,,,,,,,,,,,,,,,,,,2,5,0,5,1,2,0,1,1,0,1,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.getPosition",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Method,"io.requery.android.database.AbstractCursor.getShort",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Abstract Method,"io.requery.android.database.AbstractCursor.getString",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Abstract Method,"io.requery.android.database.AbstractCursor.getType",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Method,"io.requery.android.database.AbstractCursor.getWantsAllOnMoveCalls",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.isAfterLast",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,2,1,0,,,,,0,,0,0,,,0,00,1,1,2,1
+Public Method,"io.requery.android.database.AbstractCursor.isBeforeFirst",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,2,1,0,,,,,0,,0,0,,,0,00,1,1,2,1
+Public Method,"io.requery.android.database.AbstractCursor.isClosed",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.isFirst",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,2,1,0,,,,,0,,0,0,,,0,00,1,1,2,1
+Public Method,"io.requery.android.database.AbstractCursor.isLast",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,2,2,0,2,1,0,2,3,2,1,1,1,2,1,0,,,,,0,,0,0,,,0,00,1,1,2,1
+Public Abstract Method,"io.requery.android.database.AbstractCursor.isNull",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Method,"io.requery.android.database.AbstractCursor.move",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.moveToFirst",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.moveToLast",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.moveToNext",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.moveToPosition",,,,,,,,,,,,,,,,,,,,,,,,,,,7,28,4,21,3,15,3,4,5,1,10,15,3,12,5,5,5,4,4,,,,,3,,1,3,,,0,14,5,5,5,4
+Public Method,"io.requery.android.database.AbstractCursor.moveToPrevious",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"io.requery.android.database.AbstractCursor.onChange",,,,,,,,,,,,,,,,,,,,,,,,,,,7,18,0,12,1,7,6,2,4,1,3,7,1,6,3,3,4,1,1,,,,,0,,1,0,,,0,50,3,3,4,1
+Protected Method,"io.requery.android.database.AbstractCursor.onDeactivateOrClose",,,,,,,,,,,,,,,,,,,,,,,,,,,6,8,0,7,1,4,1,3,2,0,3,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,14,2,2,2,1
+Public Abstract Method,"io.requery.android.database.AbstractCursor.onMove",,,,,,,,,,,,,,,,,,,,,,,,,,,1,15,0,1,1,0,14,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,14,00,0,0,0,0
+Public Method,"io.requery.android.database.AbstractCursor.registerContentObserver",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.registerDataSetObserver",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.requery",,,,,,,,,,,,,,,,,,,,,,,,,,,6,8,0,8,1,5,0,4,2,0,4,6,1,5,2,2,3,1,0,,,,,0,,1,0,,,0,00,2,2,3,1
+Public Method,"io.requery.android.database.AbstractCursor.respond",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractCursor.setExtras",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,2,2,2,1,0,,,,,0,,0,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.AbstractCursor.setNotificationUri",,,,,,,,,,,,,,,,,,,,,,,,,,,6,19,0,12,1,8,7,7,2,0,6,9,1,8,2,2,2,1,0,,,,,0,,1,0,,,0,58,2,2,2,1
+Public Method,"io.requery.android.database.AbstractCursor.unregisterContentObserver",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,5,1,2,1,1,2,0,1,3,1,2,2,2,2,1,0,,,,,0,,1,0,,,0,20,2,2,2,1
+Public Method,"io.requery.android.database.AbstractCursor.unregisterDataSetObserver",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Class,"io.requery.android.database.AbstractWindowedCursor",1,1,1,1,5,0,4,1,1,2,2,1,,0,0,,,,17,1,17,64,0,0,4,13,,153,17,88,31,35,48,,,,30,52,19,33,,,,,,2,2,2,1,,2,1,,5,0,0,55,21,21,21,17
+Protected Method,"io.requery.android.database.AbstractWindowedCursor.checkPosition",,,,,,,,,,,,,,,,,,,,,,,,,,,8,7,0,7,1,4,0,1,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Protected Method,"io.requery.android.database.AbstractWindowedCursor.clearOrCreateWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,3,13,0,7,1,4,6,3,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,86,2,2,2,1
+Protected Method,"io.requery.android.database.AbstractWindowedCursor.closeWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,3,10,0,6,1,3,4,2,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,67,2,2,2,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.copyStringToBuffer",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.getBlob",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.getDouble",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.getFloat",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.getInt",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.getLong",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.getShort",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.getString",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.getType",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.getWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.hasWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,3,1,1,5,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.isNull",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"io.requery.android.database.AbstractWindowedCursor.onDeactivateOrClose",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.AbstractWindowedCursor.setWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,3,19,0,6,1,3,13,2,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,2,17,2,2,2,1
+Public Class,"io.requery.android.database.CursorWindow",1,1,1,1,14,0,3,10,1,1,1,0,,18,2,,,,27,3,45,49,0,19,2,24,,454,37,130,57,44,287,,,,59,91,52,39,,,,,,3,3,4,1,,2,1,,58,44,2,21,31,31,32,27
+Public Constructor,"io.requery.android.database.CursorWindow.CursorWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,10,18,0,9,1,6,9,7,2,0,4,6,1,5,3,3,4,1,0,,,,,0,,1,0,,,1,00,3,3,4,1
+Public Method,"io.requery.android.database.CursorWindow.allocRow",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,3,1,1,5,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.clear",,,,,,,,,,,,,,,,,,,,,,,,,,,4,12,0,4,1,2,8,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,2,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.copyStringToBuffer",,,,,,,,,,,,,,,,,,,,,,,,,,,7,39,0,8,2,5,31,2,2,0,4,6,2,4,2,2,2,1,0,,,,,0,,1,0,,,3,88,2,2,2,1
+Private Method,"io.requery.android.database.CursorWindow.dispose",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,1,3,0,2,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Protected Method,"io.requery.android.database.CursorWindow.finalize",,,,,,,,,,,,,,,,,,,,,,,,,,,0,7,0,7,1,4,0,2,1,0,2,4,1,3,1,1,1,1,0,,,,,0,,1,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.freeLastRow",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getBlob",,,,,,,,,,,,,,,,,,,,,,,,,,,6,24,0,3,1,1,21,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,7,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getDouble",,,,,,,,,,,,,,,,,,,,,,,,,,,7,26,0,3,1,1,23,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,7,67,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getFloat",,,,,,,,,,,,,,,,,,,,,,,,,,,3,15,0,3,1,1,12,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getInt",,,,,,,,,,,,,,,,,,,,,,,,,,,3,15,0,3,1,1,12,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getLong",,,,,,,,,,,,,,,,,,,,,,,,,,,8,25,0,3,1,1,22,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,7,33,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getName",,,,,,,,,,,,,,,,,,,,,,,,,,,5,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getNumRows",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,0,3,1,1,5,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getShort",,,,,,,,,,,,,,,,,,,,,,,,,,,3,15,0,3,1,1,12,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getStartPosition",,,,,,,,,,,,,,,,,,,,,,,,,,,5,12,0,3,1,1,9,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getString",,,,,,,,,,,,,,,,,,,,,,,,,,,8,29,0,3,1,1,26,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,8,67,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.getType",,,,,,,,,,,,,,,,,,,,,,,,,,,6,20,0,3,1,1,17,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,5,67,1,1,1,1
+Protected Method,"io.requery.android.database.CursorWindow.onAllReferencesReleased",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.putBlob",,,,,,,,,,,,,,,,,,,,,,,,,,,6,11,0,3,1,1,8,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,67,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.putDouble",,,,,,,,,,,,,,,,,,,,,,,,,,,6,12,0,3,1,1,9,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.putLong",,,,,,,,,,,,,,,,,,,,,,,,,,,6,11,0,3,1,1,8,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,67,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.putNull",,,,,,,,,,,,,,,,,,,,,,,,,,,4,10,0,3,1,1,7,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,33,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.putString",,,,,,,,,,,,,,,,,,,,,,,,,,,6,11,0,3,1,1,8,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,67,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.setNumColumns",,,,,,,,,,,,,,,,,,,,,,,,,,,3,14,0,3,1,1,11,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,67,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.setStartPosition",,,,,,,,,,,,,,,,,,,,,,,,,,,2,12,0,3,1,1,9,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindow.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"io.requery.android.database.CursorWindowAllocationException",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,11,0,5,2,1,6,,,,1,3,2,1,,,,,,1,1,1,1,,2,0,,0,0,1,20,1,1,1,1
+Public Constructor,"io.requery.android.database.CursorWindowAllocationException.CursorWindowAllocationException",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"io.requery.android.database.CursorWindowTest",1,1,1,1,9,0,8,0,1,2,2,0,,0,0,,,,6,0,6,6,0,1,0,5,,76,10,65,26,41,1,,,,41,48,17,31,,,,,,1,1,1,1,,1,0,,0,0,0,02,6,6,6,6
+Private Method,"io.requery.android.database.CursorWindowTest.doTestValues",,,,,,,,,,,,,,,,,,,,,,,,,,,2,32,5,26,7,24,1,15,1,0,24,25,7,18,1,1,1,1,0,,,,,0,,0,0,,,0,04,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindowTest.isPerformanceOnly",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindowTest.testConstructorWithEmptyName",,,,,,,,,,,,,,,,,,,,,,,,,,,0,6,0,6,2,4,0,5,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindowTest.testConstructorWithNullName",,,,,,,,,,,,,,,,,,,,,,,,,,,0,6,0,6,2,4,0,5,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindowTest.testConstructor_WithName",,,,,,,,,,,,,,,,,,,,,,,,,,,0,6,0,6,2,4,0,5,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.CursorWindowTest.testValues",,,,,,,,,,,,,,,,,,,,,,,,,,,0,5,0,5,2,3,0,3,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"io.requery.android.database.DatabaseCursorTest",2,2,2,1,23,2,19,1,1,4,4,0,,0,4,,,,17,2,17,17,0,1,0,16,,456,64,369,112,276,24,,,,261,303,90,213,,,,,,5,5,5,4,,1,2,,47,47,0,07,39,39,39,20
+Public Method,"io.requery.android.database.DatabaseCursorTest.isPerformanceOnly",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.DatabaseCursorTest.populateDefaultTable",,,,,,,,,,,,,,,,,,,,,,,,,,,10,7,1,6,1,4,0,1,1,0,4,5,1,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,1,10,2,7,0,10,2,0,6,8,2,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.tearDown",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testBlob",,,,,,,,,,,,,,,,,,,,,,,,,,,3,47,4,39,17,35,4,17,3,0,33,36,18,18,3,3,3,1,1,,,,,0,,2,0,,,0,10,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testCursor1",,,,,,,,,,,,,,,,,,,,,,,,,,,4,62,16,42,6,36,4,16,8,1,34,38,6,32,4,4,4,1,2,,,,,0,,1,0,,,0,10,4,4,4,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testCursor2",,,,,,,,,,,,,,,,,,,,,,,,,,,1,27,3,22,3,16,2,12,8,1,14,18,3,15,4,4,4,1,2,,,,,0,,1,0,,,0,09,4,4,4,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testCursorWindowFailureWhenTooManyCursorWindowsLeftOpen",,,,,,,,,,,,,,,,,,,,,,,,,,,2,30,0,22,4,17,8,8,8,1,14,19,6,13,5,5,5,4,7,,,,,4,,2,3,,,0,36,5,5,5,4
+Public Method,"io.requery.android.database.DatabaseCursorTest.testLargeField",,,,,,,,,,,,,,,,,,,,,,,,,,,1,25,3,22,6,19,0,15,2,0,20,22,7,15,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testManyRowsLong",,,,,,,,,,,,,,,,,,,,,,,,,,,1,24,4,20,4,16,0,10,4,1,16,19,5,14,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testManyRowsTxt",,,,,,,,,,,,,,,,,,,,,,,,,,,1,32,3,28,7,23,2,12,8,1,24,28,9,19,4,4,4,1,0,,,,,0,,1,0,,,0,07,4,4,4,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testManyRowsTxtLong",,,,,,,,,,,,,,,,,,,,,,,,,,,1,36,4,31,7,26,1,13,8,1,27,31,9,22,4,4,4,1,0,,,,,0,,1,0,,,0,03,4,4,4,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testRealColumns",,,,,,,,,,,,,,,,,,,,,,,,,,,1,12,0,12,4,10,0,10,1,0,10,11,4,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testRequery",,,,,,,,,,,,,,,,,,,,,,,,,,,1,11,1,10,2,8,0,8,1,0,8,9,2,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testRequeryWithAlteredSelectionArgs",,,,,,,,,,,,,,,,,,,,,,,,,,,3,38,4,31,5,26,3,11,1,0,18,21,5,16,1,1,1,1,0,,,,,0,,0,0,,,0,10,1,1,1,1
+Anonymous Class,"io.requery.android.database.DatabaseCursorTest.testRequeryWithAlteredSelectionArgs.(Anon_1)",1,1,1,1,11,0,11,0,2,3,3,0,,0,0,,,,1,0,1,1,0,0,0,1,,12,0,12,1,10,0,,,,3,5,2,3,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testRequeryWithAlteredSelectionArgs.(Anon_1).newCursor",,,,,,,,,,,,,,,,,,,,,,,,,,,3,11,0,11,0,9,0,1,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"io.requery.android.database.DatabaseCursorTest.testRequeryWithAlteredSelectionArgs.(Anon_1).newCursor.(Anon_2)",1,1,1,1,4,0,4,0,1,0,0,0,,0,0,,,,1,0,1,79,0,0,0,1,,6,0,6,0,5,0,,,,2,3,1,2,,,,,,1,1,1,1,,4,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testRequeryWithAlteredSelectionArgs.(Anon_1).newCursor.(Anon_2).requery",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,0,3,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testRequeryWithSelection",,,,,,,,,,,,,,,,,,,,,,,,,,,2,16,1,15,3,13,0,11,1,0,12,13,2,11,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseCursorTest.testRequeryWithSelectionArgs",,,,,,,,,,,,,,,,,,,,,,,,,,,2,16,1,15,3,13,0,11,1,0,12,13,2,11,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Interface,"io.requery.android.database.DatabaseErrorHandler",0,0,0,0,0,0,0,0,0,1,1,3,,0,0,,,,1,0,1,1,1,0,0,0,,9,1,3,2,0,5,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,1,67,0,0,0,0
+Abstract Method,"io.requery.android.database.DatabaseErrorHandler.onCorruption",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,1,1,0,5,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,5,00,0,0,0,0
+Public Class,"io.requery.android.database.DatabaseErrorHandlerTest",2,2,2,1,13,0,9,3,1,3,3,0,,0,1,,,,4,3,4,4,0,0,0,4,,94,8,64,19,39,22,,,,29,41,14,27,,,,,,4,4,4,1,,1,2,,25,25,0,34,8,8,8,4
+Public Class,"io.requery.android.database.DatabaseErrorHandlerTest.MyDatabaseCorruptionHandler",3,3,3,1,19,0,15,4,2,3,3,0,,0,0,,,,1,0,1,1,0,0,0,1,,26,0,17,3,11,9,,,,5,9,3,6,,,,,,3,3,3,1,,1,1,,0,0,0,53,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseErrorHandlerTest.MyDatabaseCorruptionHandler.onCorruption",,,,,,,,,,,,,,,,,,,,,,,,,,,5,19,0,15,2,11,4,5,4,1,5,8,2,6,3,3,3,1,2,,,,,0,,1,0,,,0,27,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseErrorHandlerTest.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,5,10,0,10,1,7,0,12,2,0,5,7,1,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.DatabaseErrorHandlerTest.tearDown",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseErrorHandlerTest.testDatabaseIsCorrupt",,,,,,,,,,,,,,,,,,,,,,,,,,,2,33,1,20,4,16,12,11,4,1,11,14,3,11,4,4,4,1,3,,,,,0,,2,0,,,0,60,4,4,4,1
+Public Method,"io.requery.android.database.DatabaseErrorHandlerTest.testNoCorruptionCase",,,,,,,,,,,,,,,,,,,,,,,,,,,2,5,0,4,1,2,1,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,25,1,1,1,1
+Public Class,"io.requery.android.database.DatabaseGeneralTest",1,1,1,1,25,2,20,2,1,5,5,0,,4,8,,,,36,2,40,40,0,9,0,31,,1127,137,905,185,727,94,,,,555,636,137,499,,,,,,13,13,15,5,,1,3,,62,56,0,10,71,71,75,44
+Private Method,"io.requery.android.database.DatabaseGeneralTest.assertPhoneNumberEqual",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,1,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.DatabaseGeneralTest.assertPhoneNumberEqual",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.DatabaseGeneralTest.assertPhoneNumberNotEqual",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,1,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.DatabaseGeneralTest.assertPhoneNumberNotEqual",,,,,,,,,,,,,,,,,,,,,,,,,,,5,4,0,4,2,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.DatabaseGeneralTest.assertThrowsIllegalState",,,,,,,,,,,,,,,,,,,,,,,,,,,2,9,0,9,2,6,0,2,2,0,4,6,2,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.DatabaseGeneralTest.checkNum",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.isPerformanceOnly",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"io.requery.android.database.DatabaseGeneralTest.longForQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,5,12,0,8,2,5,4,4,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,1,0,,,0,50,1,1,1,1
+Public Static Method,"io.requery.android.database.DatabaseGeneralTest.longForQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,4,1,2,4,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Private Method,"io.requery.android.database.DatabaseGeneralTest.phoneNumberCompare",,,,,,,,,,,,,,,,,,,,,,,,,,,8,28,1,27,5,21,0,8,4,1,9,13,3,10,4,4,4,1,1,,,,,0,,2,0,,,0,00,4,4,4,1
+Private Method,"io.requery.android.database.DatabaseGeneralTest.populateDefaultTable",,,,,,,,,,,,,,,,,,,,,,,,,,,7,7,1,6,1,4,0,1,1,0,4,5,1,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.DatabaseGeneralTest.setNum",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,4,10,0,10,2,7,0,12,2,0,6,8,2,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"io.requery.android.database.DatabaseGeneralTest.stringForQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,4,12,0,8,2,5,4,4,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,1,0,,,0,50,1,1,1,1
+Public Static Method,"io.requery.android.database.DatabaseGeneralTest.stringForQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,4,1,2,4,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.tearDown",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testCollateLocalizedForJapanese",,,,,,,,,,,,,,,,,,,,,,,,,,,2,85,9,65,13,55,17,14,44,2,33,45,13,32,13,13,15,5,7,,,,,6,,3,4,,,0,26,13,13,15,5
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testContentValues",,,,,,,,,,,,,,,,,,,,,,,,,,,0,19,2,15,4,13,2,12,1,0,13,14,4,10,1,1,1,1,0,,,,,0,,0,0,,,0,13,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testCopyString",,,,,,,,,,,,,,,,,,,,,,,,,,,3,50,12,38,9,35,0,11,1,0,34,35,9,26,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testCustomFunction",,,,,,,,,,,,,,,,,,,,,,,,,,,1,14,0,14,5,11,0,6,1,0,8,10,6,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"io.requery.android.database.DatabaseGeneralTest.testCustomFunction.(Anon_1)",1,1,1,1,5,0,5,0,2,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,7,0,7,2,6,0,,,,3,4,3,1,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testCustomFunction.(Anon_1).callback",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,5,2,4,0,4,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testCustomFunctionNoReturn",,,,,,,,,,,,,,,,,,,,,,,,,,,1,12,0,11,2,8,1,5,1,0,5,7,3,4,1,1,1,1,0,,,,,0,,0,0,,,0,09,1,1,1,1
+Anonymous Class,"io.requery.android.database.DatabaseGeneralTest.testCustomFunctionNoReturn.(Anon_3)",1,1,1,1,3,0,3,0,2,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testCustomFunctionNoReturn.(Anon_3).callback",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testDefaultDatabaseErrorHandler",,,,,,,,,,,,,,,,,,,,,,,,,,,1,90,5,74,9,63,11,14,384,3,57,67,13,54,10,10,10,1,5,,,,,0,,2,0,,,0,15,10,10,10,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testNewFunction",,,,,,,,,,,,,,,,,,,,,,,,,,,1,13,0,13,4,10,0,6,1,0,7,9,5,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"io.requery.android.database.DatabaseGeneralTest.testNewFunction.(Anon_2)",1,1,1,1,4,0,4,0,2,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,6,0,6,1,5,0,,,,2,3,2,1,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testNewFunction.(Anon_2).callback",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,3,0,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testNewFunctionNoReturn",,,,,,,,,,,,,,,,,,,,,,,,,,,1,11,0,10,2,7,1,5,1,0,4,6,3,3,1,1,1,1,0,,,,,0,,0,0,,,0,10,1,1,1,1
+Anonymous Class,"io.requery.android.database.DatabaseGeneralTest.testNewFunctionNoReturn.(Anon_4)",1,1,1,1,2,0,2,0,2,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,4,0,4,0,3,0,,,,0,1,1,0,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testNewFunctionNoReturn.(Anon_4).callback",,,,,,,,,,,,,,,,,,,,,,,,,,,0,2,0,2,0,1,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testPhoneNumbersEqual",,,,,,,,,,,,,,,,,,,,,,,,,,,2,93,11,72,3,68,10,10,1,0,61,62,3,59,1,1,3,1,0,,,,,0,,0,0,,,0,14,1,1,3,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testPhoneNumbersEqualInternationl",,,,,,,,,,,,,,,,,,,,,,,,,,,0,59,11,31,1,29,17,4,1,0,29,30,1,29,1,1,1,1,0,,,,,0,,0,0,,,0,55,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testSchemaChange1",,,,,,,,,,,,,,,,,,,,,,,,,,,1,14,4,10,3,7,0,6,1,0,8,9,3,6,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testSchemaChange2",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,0,7,2,5,0,6,1,0,5,6,2,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testSchemaChange3",,,,,,,,,,,,,,,,,,,,,,,,,,,2,15,0,15,2,11,0,5,4,1,7,10,2,8,3,3,3,1,1,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testSelectionArgs",,,,,,,,,,,,,,,,,,,,,,,,,,,1,15,0,15,4,13,0,11,1,0,12,13,3,10,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testSemicolonsInStatements",,,,,,,,,,,,,,,,,,,,,,,,,,,1,18,0,16,2,13,2,4,2,0,6,8,2,6,2,2,2,1,1,,,,,0,,1,0,,,0,12,2,2,2,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testSetMaxCacheSize",,,,,,,,,,,,,,,,,,,,,,,,,,,3,14,1,11,2,8,2,5,2,0,6,8,2,6,2,2,2,1,1,,,,,0,,1,0,,,0,18,2,2,2,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testSupportDelete",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,1,7,2,5,0,6,1,0,5,6,2,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testSupportUpdate",,,,,,,,,,,,,,,,,,,,,,,,,,,2,14,1,13,4,11,0,10,1,0,10,11,4,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testTableInfoPragma",,,,,,,,,,,,,,,,,,,,,,,,,,,4,47,6,41,2,38,0,9,2,0,21,23,2,21,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testTokenize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,170,18,151,6,148,1,6,1,0,81,82,6,76,1,1,1,1,0,,,,,0,,0,0,,,0,01,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testTransactions",,,,,,,,,,,,,,,,,,,,,,,,,,,1,82,9,63,1,61,10,9,1,0,57,62,5,57,1,1,1,1,0,,,,,0,,0,0,,,0,16,1,1,1,1
+Anonymous Class,"io.requery.android.database.DatabaseGeneralTest.testTransactions.(Anon_5)",1,1,1,1,2,0,2,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,2,0,2,0,2,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testTransactions.(Anon_5).run",,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,0,2,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"io.requery.android.database.DatabaseGeneralTest.testTransactions.(Anon_6)",1,1,1,1,2,0,2,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,2,0,2,0,2,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testTransactions.(Anon_6).run",,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,0,2,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"io.requery.android.database.DatabaseGeneralTest.testTransactions.(Anon_7)",1,1,1,1,2,0,2,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,2,0,2,0,2,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testTransactions.(Anon_7).run",,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,0,2,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"io.requery.android.database.DatabaseGeneralTest.testTransactions.(Anon_8)",1,1,1,1,2,0,2,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,2,0,2,0,2,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testTransactions.(Anon_8).run",,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,0,2,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testUnionsWithBindArgs",,,,,,,,,,,,,,,,,,,,,,,,,,,1,26,0,25,8,23,1,5,1,0,19,20,6,14,1,1,1,1,0,,,,,0,,0,0,,,0,04,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testUpdate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,13,1,12,4,10,0,10,1,0,10,11,4,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseGeneralTest.testVersion",,,,,,,,,,,,,,,,,,,,,,,,,,,2,5,0,5,1,3,0,3,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"io.requery.android.database.DatabaseLocaleTest",1,1,1,1,10,0,9,1,1,2,2,0,,0,1,,,,7,1,7,7,0,2,0,5,,101,11,87,35,54,8,,,,38,52,20,32,,,,,,3,3,3,1,,1,2,,14,0,0,09,11,11,11,7
+Private Method,"io.requery.android.database.DatabaseLocaleTest.insertStrings",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,1,2,0,1,4,2,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.DatabaseLocaleTest.query",,,,,,,,,,,,,,,,,,,,,,,,,,,6,14,0,14,4,11,0,11,2,0,10,12,4,8,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.DatabaseLocaleTest.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,5,1,3,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseLocaleTest.tearDown",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseLocaleTest.testHoge",,,,,,,,,,,,,,,,,,,,,,,,,,,1,19,1,18,4,14,0,10,4,1,13,17,5,12,3,3,3,1,0,,,,,0,,2,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseLocaleTest.testLocaleInsertOrder",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,5,2,3,0,3,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseLocaleTest.testLocaleenUS",,,,,,,,,,,,,,,,,,,,,,,,,,,2,20,1,16,2,13,7,5,1,0,6,7,2,5,1,1,1,1,0,,,,,0,,0,0,,,0,44,1,1,1,1
+Public Class,"io.requery.android.database.DatabaseStatementTest",2,2,2,1,16,1,14,0,1,5,5,0,,0,4,,,,13,2,13,13,0,1,0,12,,294,43,246,92,167,5,,,,173,206,78,128,,,,,,3,3,3,1,,1,1,,46,46,0,02,26,26,26,13
+Private Static Class,"io.requery.android.database.DatabaseStatementTest.StatementTestThread",2,2,2,1,14,0,13,0,1,3,3,0,,0,0,,,,2,2,2,2,0,1,0,1,,35,3,32,11,21,0,,,,25,30,12,18,,,,,,3,3,3,1,,2,1,,0,0,0,00,4,4,4,2
+Private Constructor,"io.requery.android.database.DatabaseStatementTest.StatementTestThread.StatementTestThread",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,3,0,3,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.StatementTestThread.run",,,,,,,,,,,,,,,,,,,,,,,,,,,2,23,1,22,6,18,0,16,4,1,20,23,8,15,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.isPerformanceOnly",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.DatabaseStatementTest.populateDefaultTable",,,,,,,,,,,,,,,,,,,,,,,,,,,5,7,1,6,1,4,0,1,1,0,4,5,1,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,1,10,2,7,0,10,2,0,6,8,2,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.tearDown",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.testExecuteStatement",,,,,,,,,,,,,,,,,,,,,,,,,,,1,10,1,9,3,7,0,8,1,0,7,8,3,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.testSimpleQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,1,35,5,28,7,22,2,9,4,1,18,21,5,16,3,3,3,1,2,,,,,0,,1,0,,,0,07,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.testSimpleStringBinding",,,,,,,,,,,,,,,,,,,,,,,,,,,1,22,4,18,8,15,0,9,2,0,16,18,9,9,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.testStatementClearBindings",,,,,,,,,,,,,,,,,,,,,,,,,,,1,20,2,18,4,14,0,13,4,1,16,19,6,13,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.testStatementConstraint",,,,,,,,,,,,,,,,,,,,,,,,,,,1,25,3,19,5,16,3,13,2,0,14,16,5,11,2,2,2,1,1,,,,,0,,1,0,,,0,16,2,2,2,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.testStatementLongBinding",,,,,,,,,,,,,,,,,,,,,,,,,,,1,20,2,18,5,14,0,12,4,1,16,19,7,12,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.testStatementMultiThreaded",,,,,,,,,,,,,,,,,,,,,,,,,,,1,13,1,12,4,8,0,6,1,0,6,8,3,5,1,1,1,1,0,,,,,0,,1,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.testStatementMultipleBindings",,,,,,,,,,,,,,,,,,,,,,,,,,,1,25,2,23,8,18,0,16,4,1,20,23,9,14,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.DatabaseStatementTest.testStatementStringBinding",,,,,,,,,,,,,,,,,,,,,,,,,,,1,20,2,18,5,14,0,13,4,1,16,19,7,12,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Class,"io.requery.android.database.DefaultDatabaseErrorHandler",4,4,5,1,27,1,18,7,2,2,2,0,,0,1,,,,2,0,2,2,0,1,0,1,,79,5,41,6,26,33,,,,13,25,6,19,,,,,,6,6,6,1,,1,2,,0,0,0,80,9,9,10,2
+Private Method,"io.requery.android.database.DefaultDatabaseErrorHandler.deleteDatabaseFile",,,,,,,,,,,,,,,,,,,,,,,,,,,4,12,0,11,1,7,1,7,3,0,4,7,1,6,3,3,4,1,2,,,,,0,,1,0,,,0,09,3,3,4,1
+Public Method,"io.requery.android.database.DefaultDatabaseErrorHandler.onCorruption",,,,,,,,,,,,,,,,,,,,,,,,,,,4,42,2,26,2,18,14,6,13,1,8,16,3,13,6,6,6,1,4,,,,,0,,2,0,,,0,54,6,6,6,1
+Public Class,"io.requery.android.database.NewDatabasePerformanceTestSuite",1,1,1,1,69,2,67,0,1,32,32,0,,1,0,,,,0,0,1,1,0,0,0,1,,72,3,69,4,64,0,,,,33,35,3,32,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Static Method,"io.requery.android.database.NewDatabasePerformanceTestSuite.suite",,,,,,,,,,,,,,,,,,,,,,,,,,,1,69,2,67,3,64,0,3,1,0,33,34,2,32,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"io.requery.android.database.NewDatabasePerformanceTests",0,0,0,0,0,0,0,0,1,0,0,0,,0,3,,,,0,0,0,0,0,0,0,0,,1225,248,879,347,526,98,,,,519,702,349,353,,,,,,0,0,0,0,,1,0,,0,0,0,11,0,0,0,0
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.Delete1000",2,2,2,1,9,1,8,0,1,2,2,0,,0,1,,,,2,0,2,5,0,0,0,2,,29,5,21,8,11,3,,,,11,16,8,8,,,,,,2,2,2,1,,3,1,,0,0,0,14,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.Delete1000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,14,3,11,3,8,0,4,2,0,7,9,4,5,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.Delete1000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,2,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.DeleteIndexWhere1000",2,2,2,1,12,1,11,0,1,2,2,0,,0,1,,,,2,1,2,5,0,0,0,2,,36,5,28,11,17,3,,,,18,24,12,12,,,,,,3,3,3,1,,3,1,,0,0,0,11,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.DeleteIndexWhere1000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,20,3,17,5,13,0,5,4,1,13,16,7,9,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.DeleteIndexWhere1000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.DeleteIndexed1000",2,2,2,1,10,1,8,0,1,2,2,0,,0,1,,,,2,0,2,5,0,0,0,2,,30,5,22,8,12,3,,,,12,17,8,9,,,,,,2,2,2,1,,3,1,,0,0,0,14,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.DeleteIndexed1000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,15,3,12,3,9,0,4,2,0,8,10,4,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.DeleteIndexed1000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,2,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.DeleteWhere1000",2,2,2,1,12,1,10,0,1,2,2,0,,0,1,,,,2,1,2,5,0,0,0,2,,35,5,27,11,16,3,,,,17,23,12,11,,,,,,3,3,3,1,,3,1,,0,0,0,11,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.DeleteWhere1000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,19,3,16,5,12,0,5,4,1,12,15,7,8,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.DeleteWhere1000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.InnerJoin100",2,2,2,1,12,1,11,0,1,2,2,0,,0,2,,,,2,0,2,5,0,0,0,2,,36,5,28,10,18,3,,,,15,20,10,10,,,,,,3,3,3,1,,3,1,,0,0,0,11,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InnerJoin100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,21,3,18,4,14,0,4,4,1,12,15,6,9,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InnerJoin100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.InnerJoinNoIndex100",2,2,2,1,13,2,11,0,1,2,2,0,,0,2,,,,2,0,2,5,0,0,0,2,,38,6,29,10,19,3,,,,16,21,10,11,,,,,,3,3,3,1,,3,1,,0,0,0,10,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InnerJoinNoIndex100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,23,4,19,4,15,0,4,4,1,13,16,6,10,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InnerJoinNoIndex100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.InnerJoinOneSide100",2,2,2,1,13,2,11,0,1,2,2,0,,0,2,,,,2,0,2,5,0,0,0,2,,38,6,29,10,19,3,,,,16,21,10,11,,,,,,3,3,3,1,,3,1,,0,0,0,10,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InnerJoinOneSide100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,23,4,19,4,15,0,4,4,1,13,16,6,10,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InnerJoinOneSide100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.Insert1000",2,2,2,1,9,1,8,0,1,2,2,0,,0,1,,,,2,1,2,5,0,0,0,2,,31,5,23,9,12,3,,,,12,17,9,8,,,,,,2,2,2,1,,3,1,,0,0,0,13,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.Insert1000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,14,2,12,3,8,0,5,2,0,7,9,4,5,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.Insert1000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.InsertIndexed1000",2,2,2,1,10,1,9,0,1,2,2,0,,0,1,,,,2,1,2,5,0,0,0,2,,32,5,24,9,13,3,,,,13,18,9,9,,,,,,2,2,2,1,,3,1,,0,0,0,12,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InsertIndexed1000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,15,2,13,3,9,0,5,2,0,8,10,4,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InsertIndexed1000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.InsertInteger10000",2,2,2,1,9,1,8,0,1,2,2,0,,0,1,,,,2,1,2,5,0,0,0,2,,30,4,23,10,13,3,,,,14,19,10,9,,,,,,2,2,2,1,,3,1,,0,0,0,13,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InsertInteger10000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,14,2,12,4,9,0,5,2,0,9,11,5,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InsertInteger10000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.InsertIntegerIndex10000",2,2,2,1,10,1,9,0,1,2,2,0,,0,1,,,,2,1,2,5,0,0,0,2,,31,4,24,10,14,3,,,,15,20,10,10,,,,,,2,2,2,1,,3,1,,0,0,0,12,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InsertIntegerIndex10000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,15,2,13,4,10,0,5,2,0,10,12,5,7,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InsertIntegerIndex10000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.InsertString10000",2,2,2,1,9,1,8,0,1,2,2,0,,0,1,,,,2,1,2,5,0,0,0,2,,30,4,23,10,13,3,,,,14,19,10,9,,,,,,2,2,2,1,,3,1,,0,0,0,13,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InsertString10000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,14,2,12,4,9,0,6,2,0,9,11,5,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InsertString10000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.InsertStringIndexed10000",2,2,2,1,10,1,9,0,1,2,2,0,,0,1,,,,2,1,2,5,0,0,0,2,,31,4,24,10,14,3,,,,15,20,10,10,,,,,,2,2,2,1,,3,1,,0,0,0,12,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InsertStringIndexed10000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,15,2,13,4,10,0,6,2,0,10,12,5,7,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.InsertStringIndexed10000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.PerformanceBase",3,3,3,1,15,2,12,0,1,3,3,31,,0,1,,,,3,2,3,3,0,0,0,3,,58,11,47,13,27,0,,,,22,34,8,26,,,,,,8,8,8,1,,2,2,,33,33,0,00,11,11,11,3
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.PerformanceBase.numberName",,,,,,,,,,,,,,,,,,,,,,,,,,,30,30,8,22,2,16,0,1,54,2,12,20,2,18,8,8,8,1,0,,,,,0,,2,0,,,0,00,8,8,8,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.PerformanceBase.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,34,11,0,11,1,8,0,8,2,0,5,7,1,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.PerformanceBase.tearDown",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.Select100",2,2,2,1,12,1,11,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,38,6,29,12,18,3,,,,18,24,13,11,,,,,,3,3,3,1,,3,1,,0,0,0,10,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.Select100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,19,3,16,5,12,0,5,4,1,12,15,7,8,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.Select100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,1,3,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectIndex100",2,2,2,1,13,1,11,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,39,6,30,12,19,3,,,,19,25,13,12,,,,,,3,3,3,1,,3,1,,0,0,0,10,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectIndex100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,20,3,17,5,13,0,5,4,1,13,16,7,9,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectIndex100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,1,3,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectIndexString100",2,2,2,1,10,1,8,0,1,2,2,0,,0,2,,,,2,0,2,5,0,0,0,2,,31,5,23,9,13,3,,,,13,18,9,9,,,,,,2,2,2,1,,3,1,,0,0,0,13,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectIndexString100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,15,3,12,3,9,0,4,2,0,8,10,4,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectIndexString100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectIndexStringComparison100",2,2,2,1,12,1,10,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,37,6,28,10,17,3,,,,17,23,11,12,,,,,,3,3,3,1,,3,1,,0,0,0,11,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectIndexStringComparison100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,18,3,15,3,11,0,5,4,1,11,14,5,9,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectIndexStringComparison100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,1,3,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectInteger100",2,2,2,1,9,1,8,0,1,2,2,0,,0,2,,,,2,0,2,5,0,0,0,2,,30,5,22,9,12,3,,,,12,17,9,8,,,,,,2,2,2,1,,3,1,,0,0,0,14,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectInteger100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,14,3,11,3,8,0,4,2,0,7,9,4,5,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectInteger100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectInteger10000",2,2,2,1,10,1,9,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,32,4,25,12,15,3,,,,16,21,12,9,,,,,,2,2,2,1,,3,1,,0,0,0,12,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectInteger10000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,15,2,13,5,10,0,4,2,0,10,12,6,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectInteger10000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectIntegerIndex100",2,2,2,1,10,1,8,0,1,2,2,0,,0,2,,,,2,0,2,5,0,0,0,2,,31,5,23,9,13,3,,,,13,18,9,9,,,,,,2,2,2,1,,3,1,,0,0,0,13,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectIntegerIndex100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,15,3,12,3,9,0,4,2,0,8,10,4,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectIntegerIndex100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectIntegerIndexed10000",2,2,2,1,11,2,9,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,35,6,26,12,16,3,,,,17,22,12,10,,,,,,2,2,2,1,,3,1,,0,0,0,12,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectIntegerIndexed10000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,18,4,14,5,11,0,4,2,0,11,13,6,7,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectIntegerIndexed10000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectString100",2,2,2,1,9,1,8,0,1,2,2,0,,0,2,,,,2,0,2,5,0,0,0,2,,30,5,22,9,12,3,,,,12,17,9,8,,,,,,2,2,2,1,,3,1,,0,0,0,14,4,4,4,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectString100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,14,3,11,3,8,0,4,2,0,7,9,4,5,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectString100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringComparison100",2,2,2,1,11,1,10,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,36,6,27,10,16,3,,,,16,22,11,11,,,,,,3,3,3,1,,3,1,,0,0,0,11,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringComparison100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,17,3,14,3,10,0,5,4,1,10,13,5,8,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringComparison100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,1,3,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringContains10000",2,2,2,1,11,2,9,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,35,6,26,10,15,3,,,,16,22,11,11,,,,,,3,3,3,1,,3,1,,0,0,0,12,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringContains10000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,18,4,14,3,10,0,5,4,1,10,13,5,8,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringContains10000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringIndexedContains10000",2,2,2,1,12,2,10,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,37,6,28,11,16,3,,,,17,23,11,12,,,,,,3,3,3,1,,3,1,,0,0,0,11,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringIndexedContains10000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,19,4,15,3,11,0,5,4,1,11,14,5,9,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringIndexedContains10000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringIndexedStartsWith10000",2,2,2,1,12,2,10,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,38,6,29,12,17,3,,,,18,24,12,12,,,,,,3,3,3,1,,3,1,,0,0,0,10,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringIndexedStartsWith10000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,20,4,16,4,12,0,6,4,1,12,15,6,9,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringIndexedStartsWith10000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringStartsWith100",2,2,2,1,13,2,11,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,39,7,29,11,18,3,,,,18,24,12,12,,,,,,3,3,3,1,,3,1,,0,0,0,10,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringStartsWith100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,21,5,16,4,12,0,6,4,1,12,15,6,9,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringStartsWith100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,1,3,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringStartsWith10000",2,2,2,1,12,2,10,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,36,6,27,11,16,3,,,,17,23,12,11,,,,,,3,3,3,1,,3,1,,0,0,0,11,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringStartsWith10000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,19,4,15,4,11,0,6,4,1,11,14,6,8,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectStringStartsWith10000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.SelectSubQIndex100",3,3,3,1,18,2,16,0,1,2,2,0,,0,2,,,,2,1,2,5,0,0,0,2,,50,8,39,13,27,3,,,,24,31,15,16,,,,,,4,4,4,1,,3,1,,0,0,0,08,6,6,6,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectSubQIndex100.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,31,5,26,6,21,0,5,8,1,18,22,9,13,4,4,4,1,0,,,,,0,,1,0,,,0,00,4,4,4,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.SelectSubQIndex100.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,1,3,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.UpdateIndexWhere1000",2,2,2,1,15,2,12,0,1,2,2,0,,0,1,,,,2,2,2,5,0,0,0,2,,42,7,32,13,21,3,,,,22,28,14,14,,,,,,3,3,3,1,,3,1,,0,0,0,09,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.UpdateIndexWhere1000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,25,5,20,6,16,0,7,4,1,16,19,8,11,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.UpdateIndexWhere1000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"io.requery.android.database.NewDatabasePerformanceTests.UpdateWhere1000",2,2,2,1,14,2,12,0,1,2,2,0,,0,1,,,,2,2,2,5,0,0,0,2,,40,6,31,13,20,3,,,,21,27,14,13,,,,,,3,3,3,1,,3,1,,0,0,0,10,5,5,5,2
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.UpdateWhere1000.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,23,4,19,6,15,0,7,4,1,15,18,8,10,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.NewDatabasePerformanceTests.UpdateWhere1000.testRun",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,1,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Package,"io.requery.android.database.benchmark",1,1,1,1,7,0,7,0,,,,,6,2,7,,1,,26,9,28,,6,5,0,17,,322,49,256,112,141,17,,,,134,183,101,82,,,,,,4,4,4,1,,,2,,,,0,07,38,38,38,28
+Public Class,"io.requery.android.database.benchmark.Benchmark",2,2,2,1,20,0,19,0,1,9,9,0,,1,2,,,,5,2,6,6,0,5,0,1,,286,44,240,96,141,2,,,,119,168,86,82,,,,,,4,4,4,1,,1,2,,50,50,0,01,15,15,15,6
+Private Static Class,"io.requery.android.database.benchmark.Benchmark.PlatformSQLite",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,3,0,3,3,0,0,0,3,,15,2,13,6,3,0,,,,3,7,4,3,,,,,,1,1,1,1,,2,0,,0,0,0,00,3,3,3,3
+Public Constructor,"io.requery.android.database.benchmark.Benchmark.PlatformSQLite.PlatformSQLite",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.PlatformSQLite.onCreate",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.PlatformSQLite.onUpgrade",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,0,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Class,"io.requery.android.database.benchmark.Benchmark.Record",1,1,1,1,3,0,3,0,1,0,0,0,,1,5,,,,6,3,7,7,1,0,0,6,,54,15,39,18,19,0,,,,18,26,17,9,,,,,,1,1,1,1,,1,0,,71,61,0,00,7,7,7,7
+Static Method,"io.requery.android.database.benchmark.Benchmark.Record.create",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,2,4,0,5,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.Record.getContent",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.Record.getCreatedTime",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.Record.getId",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.Record.setContent",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.Record.setCreatedTime",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.Record.setId",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Class,"io.requery.android.database.benchmark.Benchmark.RequerySQLite",1,1,1,1,3,0,3,0,1,2,2,0,,0,0,,,,3,0,3,17,0,0,0,3,,17,2,15,8,3,0,,,,3,7,4,3,,,,,,1,1,1,1,,2,0,,0,0,0,00,3,3,3,3
+Public Constructor,"io.requery.android.database.benchmark.Benchmark.RequerySQLite.RequerySQLite",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.RequerySQLite.onCreate",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.RequerySQLite.onUpgrade",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,2,1,0,0,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Class,"io.requery.android.database.benchmark.Benchmark.Statistics",1,1,1,1,4,0,4,0,1,1,1,0,,0,0,,,,6,2,6,6,5,0,0,1,,36,6,30,11,14,0,,,,10,19,11,8,,,,,,2,2,2,1,,1,1,,66,50,0,00,7,7,7,6
+Method,"io.requery.android.database.benchmark.Benchmark.Statistics.average",,,,,,,,,,,,,,,,,,,,,,,,,,,3,7,0,7,2,4,0,2,2,0,3,6,3,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Method,"io.requery.android.database.benchmark.Benchmark.Statistics.read",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"io.requery.android.database.benchmark.Benchmark.Statistics.readAverageMS",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.Statistics.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,2,6,0,6,1,4,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"io.requery.android.database.benchmark.Benchmark.Statistics.write",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"io.requery.android.database.benchmark.Benchmark.Statistics.writeAverageMS",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Class,"io.requery.android.database.benchmark.Benchmark.Trace",1,1,1,1,5,0,4,0,1,1,1,0,,0,0,,,,3,2,3,3,0,0,0,3,,23,3,18,9,8,2,,,,10,14,9,5,,,,,,1,1,1,1,,1,0,,33,16,0,11,3,3,3,3
+Public Constructor,"io.requery.android.database.benchmark.Benchmark.Trace.Trace",,,,,,,,,,,,,,,,,,,,,,,,,,,5,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.Trace.enter",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,3,1,1,1,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,33,1,1,1,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.Trace.exit",,,,,,,,,,,,,,,,,,,,,,,,,,,7,8,0,7,4,5,1,4,1,0,5,6,4,2,1,1,1,1,0,,,,,0,,0,0,,,0,14,1,1,1,1
+Private Static Method,"io.requery.android.database.benchmark.Benchmark.readCursor",,,,,,,,,,,,,,,,,,,,,,,,,,,6,13,0,13,5,9,0,7,3,0,7,10,5,5,3,3,3,1,0,,,,,0,,2,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.benchmark.Benchmark.runBenchmark",,,,,,,,,,,,,,,,,,,,,,,,,,,3,27,3,24,6,19,0,12,5,1,18,22,7,15,4,4,4,1,0,,,,,0,,2,0,,,0,00,4,4,4,1
+Private Method,"io.requery.android.database.benchmark.Benchmark.testAndroidSQLiteRead",,,,,,,,,,,,,,,,,,,,,,,,,,,7,17,0,17,6,13,0,8,2,0,9,12,5,7,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.benchmark.Benchmark.testAndroidSQLiteWrite",,,,,,,,,,,,,,,,,,,,,,,,,,,7,23,0,23,7,19,0,16,2,0,14,17,7,10,2,2,2,1,0,,,,,0,,2,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.benchmark.Benchmark.testRequerySQLiteRead",,,,,,,,,,,,,,,,,,,,,,,,,,,7,18,0,18,7,13,0,8,2,0,9,12,5,7,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.benchmark.Benchmark.testRequerySQLiteWrite",,,,,,,,,,,,,,,,,,,,,,,,,,,7,23,0,23,7,19,0,16,2,0,14,17,7,10,2,2,2,1,0,,,,,0,,2,0,,,0,00,2,2,2,1
+Package,"io.requery.android.database.sqlite",2,2,2,1,17,0,10,6,,,,,51,91,68,,23,,372,150,463,,65,128,14,256,,9486,835,4760,1468,2682,3972,,,,2101,3128,1179,1949,,,,,,18,18,21,12,,,5,,,,0,83,901,875,976,473
+Public Class,"io.requery.android.database.sqlite.CloseGuard",1,1,1,1,10,0,5,4,1,2,2,0,,4,3,,,,4,1,8,8,0,1,0,7,,212,16,55,20,24,141,,,,20,37,19,18,,,,,,3,3,4,1,,1,1,,58,58,2,56,13,13,15,8
+Private Constructor,"io.requery.android.database.sqlite.CloseGuard.CloseGuard",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Class,"io.requery.android.database.sqlite.CloseGuard.DefaultReporter",1,1,1,1,3,0,3,0,2,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,11,0,5,2,1,6,,,,1,3,2,1,,,,,,1,1,1,1,,1,0,,0,0,1,20,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.CloseGuard.DefaultReporter.report",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Interface,"io.requery.android.database.sqlite.CloseGuard.Reporter",0,0,0,0,0,0,0,0,0,0,0,1,,0,0,,,,1,0,1,1,1,0,0,0,,3,0,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.CloseGuard.Reporter.report",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Method,"io.requery.android.database.sqlite.CloseGuard.close",,,,,,,,,,,,,,,,,,,,,,,,,,,3,7,0,3,1,1,4,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.CloseGuard.get",,,,,,,,,,,,,,,,,,,,,,,,,,,3,12,0,6,1,3,6,2,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,1,00,2,2,2,1
+Public Static Method,"io.requery.android.database.sqlite.CloseGuard.getReporter",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.CloseGuard.open",,,,,,,,,,,,,,,,,,,,,,,,,,,6,21,0,10,2,6,11,1,4,1,4,7,2,5,3,3,4,1,1,,,,,0,,1,0,,,1,10,3,3,4,1
+Public Static Method,"io.requery.android.database.sqlite.CloseGuard.setEnabled",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,0,3,1,1,4,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.CloseGuard.setReporter",,,,,,,,,,,,,,,,,,,,,,,,,,,1,10,0,6,1,3,4,1,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,67,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.CloseGuard.warnIfOpen",,,,,,,,,,,,,,,,,,,,,,,,,,,7,17,2,9,3,5,6,1,2,0,3,5,2,3,2,2,3,1,1,,,,,0,,1,0,,,0,67,2,2,3,1
+Public Class,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory",1,1,1,1,3,0,3,0,2,2,2,0,,0,0,,,,3,1,3,3,0,0,0,3,,86,19,63,30,17,4,,,,21,39,23,16,,,,,,1,1,1,1,,1,0,,33,0,0,06,3,3,3,3
+Private Static Class,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackDatabaseErrorHandler",1,1,1,1,3,0,3,0,2,1,1,0,,0,0,,,,2,1,2,2,1,0,0,1,,13,3,10,5,2,0,,,,3,6,4,2,,,,,,1,1,1,1,,1,0,,0,0,0,00,2,2,2,2
+Constructor,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackDatabaseErrorHandler.CallbackDatabaseErrorHandler",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackDatabaseErrorHandler.onCorruption",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Class,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackSQLiteOpenHelper",1,1,1,1,4,0,3,0,1,4,4,0,,0,0,,,,7,2,7,21,1,0,1,5,,46,10,36,16,12,0,,,,13,23,12,11,,,,,,2,2,2,1,,2,1,,42,42,0,00,8,8,8,7
+Constructor,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackSQLiteOpenHelper.CallbackSQLiteOpenHelper",,,,,,,,,,,,,,,,,,,,,,,,,,,6,5,0,5,1,3,0,5,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackSQLiteOpenHelper.createConfiguration",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,2,7,2,4,0,3,2,0,3,6,3,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackSQLiteOpenHelper.onConfigure",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackSQLiteOpenHelper.onCreate",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackSQLiteOpenHelper.onDowngrade",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackSQLiteOpenHelper.onOpen",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.CallbackSQLiteOpenHelper.onUpgrade",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Interface,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.ConfigurationOptions",0,0,0,0,0,0,0,0,0,1,1,0,,0,0,,,,1,0,1,1,1,0,0,0,,3,0,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.ConfigurationOptions.apply",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Constructor,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.RequerySQLiteOpenHelperFactory",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.RequerySQLiteOpenHelperFactory",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.RequerySQLiteOpenHelperFactory.create",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Class,"io.requery.android.database.sqlite.SQLiteClosable",1,1,1,1,14,0,7,7,2,0,0,3,,0,0,,,,4,1,4,4,0,0,1,3,,59,4,25,7,11,30,,,,8,16,7,9,,,,,,2,2,2,1,,1,1,,33,0,1,20,5,5,5,3
+Public Method,"io.requery.android.database.sqlite.SQLiteClosable.acquireReference",,,,,,,,,,,,,,,,,,,,,,,,,,,26,15,0,9,1,5,6,1,2,0,2,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,67,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteClosable.close",,,,,,,,,,,,,,,,,,,,,,,,,,,40,12,0,3,1,1,9,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Protected Abstract Method,"io.requery.android.database.sqlite.SQLiteClosable.onAllReferencesReleased",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,1,1,0,4,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,4,00,0,0,0,0
+Public Method,"io.requery.android.database.sqlite.SQLiteClosable.releaseReference",,,,,,,,,,,,,,,,,,,,,,,,,,,27,15,0,9,2,4,6,2,2,0,3,6,2,4,2,2,2,1,0,,,,,0,,1,0,,,0,67,2,2,2,1
+Public Class,"io.requery.android.database.sqlite.SQLiteConnection",3,2,3,1,20,0,15,4,2,17,17,0,,35,5,,,,44,12,79,79,9,55,1,14,,1539,128,1072,285,688,342,,,,493,716,242,474,,,,,,13,9,13,5,,1,5,,86,62,0,32,155,149,170,64
+Private Static Class,"io.requery.android.database.sqlite.SQLiteConnection.Operation",4,4,5,1,15,0,15,0,1,1,1,0,,0,1,,,,3,8,3,3,0,2,0,1,,62,4,58,17,32,0,,,,29,43,16,27,,,,,,10,10,12,1,,1,3,,58,58,0,00,14,14,16,3
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.Operation.describe",,,,,,,,,,,,,,,,,,,,,,,,,,,12,36,0,36,3,27,0,7,80,2,17,27,4,23,10,10,12,1,4,,,,,0,,3,0,,,0,00,10,10,12,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.Operation.getFormattedStartTime",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.Operation.getStatus",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,1,3,0,1,2,0,2,4,1,3,3,3,3,1,1,,,,,0,,1,0,,,0,00,3,3,3,1
+Private Static Class,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog",2,2,2,1,12,0,11,0,1,3,3,0,,0,3,,,,11,3,11,11,0,4,0,7,,152,13,138,33,91,1,,,,65,99,34,65,,,,,,7,7,8,1,,1,3,,63,54,0,01,27,27,31,11
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.beginOperation",,,,,,,,,,,,,,,,,,,,,,,,,,,18,37,0,36,3,27,1,14,21,1,17,26,4,22,7,7,8,1,3,,,,,0,,3,0,,,0,03,7,7,8,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.describeCurrentOperation",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,0,11,3,7,0,3,2,0,5,8,3,5,2,2,3,1,1,,,,,0,,1,0,,,0,00,2,2,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.dump",,,,,,,,,,,,,,,,,,,,,,,,,,,6,28,1,27,5,22,0,5,3,0,16,20,5,15,4,4,5,1,2,,,,,0,,3,0,,,0,00,4,4,5,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.endOperation",,,,,,,,,,,,,,,,,,,,,,,,,,,9,7,0,7,1,3,0,2,2,0,1,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.endOperationDeferLog",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,2,0,2,1,0,1,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.endOperationDeferLogLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,6,10,0,10,2,7,0,6,2,0,5,7,2,5,2,2,3,1,1,,,,,0,,1,0,,,0,00,2,2,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.failOperation",,,,,,,,,,,,,,,,,,,,,,,,,,,11,8,0,8,2,4,0,2,2,0,2,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.getOperationLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,7,5,0,5,3,3,0,1,1,0,3,4,3,1,2,2,2,1,0,,,,,0,,0,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.logOperation",,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,0,5,1,2,0,1,1,0,1,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.logOperationLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,5,12,0,12,3,8,0,5,3,0,6,9,3,6,3,3,3,1,1,,,,,0,,1,0,,,0,00,3,3,3,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.OperationLog.newOperationCookieLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,2,2,0,2,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Class,"io.requery.android.database.sqlite.SQLiteConnection.PreparedStatement",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,8,0,0,0,0,0,0,,39,7,10,9,0,22,,,,8,9,9,0,,,,,,0,0,0,0,,1,0,,0,0,2,20,0,0,0,0
+Private Class,"io.requery.android.database.sqlite.SQLiteConnection.PreparedStatementCache",2,2,2,1,10,0,10,0,1,2,2,0,,0,0,,,,3,0,3,3,0,0,1,2,,38,2,36,11,21,1,,,,11,20,9,11,,,,,,4,4,4,1,,2,3,,0,0,0,03,7,7,7,3
+Public Constructor,"io.requery.android.database.sqlite.SQLiteConnection.PreparedStatementCache.PreparedStatementCache",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.PreparedStatementCache.dump",,,,,,,,,,,,,,,,,,,,,,,,,,,7,22,0,22,5,17,1,8,4,1,8,13,6,7,4,4,4,1,1,,,,,0,,3,0,,,0,05,4,4,4,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteConnection.PreparedStatementCache.entryRemoved",,,,,,,,,,,,,,,,,,,,,,,,,,,2,7,0,7,2,3,0,2,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Constructor,"io.requery.android.database.sqlite.SQLiteConnection.SQLiteConnection",,,,,,,,,,,,,,,,,,,,,,,,,,,10,12,0,12,3,8,0,10,1,0,7,8,1,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.acquirePreparedStatement",,,,,,,,,,,,,,,,,,,,,,,,,,,14,34,1,28,7,21,5,12,9,1,15,21,7,14,6,6,8,3,3,,,,,2,,2,2,,,0,18,6,6,8,3
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.applyBlockGuardPolicy",,,,,,,,,,,,,,,,,,,,,,,,,,,12,12,0,11,1,6,1,4,4,1,2,6,1,5,4,4,5,1,1,,,,,0,,3,0,,,0,09,4,4,5,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.attachCancellationSignal",,,,,,,,,,,,,,,,,,,,,,,,,,,10,14,2,10,1,6,3,4,3,0,4,7,1,6,3,3,3,1,0,,,,,0,,2,0,,,0,30,3,3,3,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.bindArguments",,,,,,,,,,,,,,,,,,,,,,,,,,,18,46,1,43,6,35,2,9,24,1,20,27,6,21,13,9,13,1,13,,,,,0,,3,0,,,0,05,13,9,13,1
+Private Static Method,"io.requery.android.database.sqlite.SQLiteConnection.canonicalizeSyncMode",,,,,,,,,,,,,,,,,,,,,,,,,,,2,11,0,11,1,8,0,1,4,1,4,6,1,5,4,2,4,1,6,,,,,0,,1,0,,,0,00,4,2,4,1
+Method,"io.requery.android.database.sqlite.SQLiteConnection.close",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"io.requery.android.database.sqlite.SQLiteConnection.collectDbStats",,,,,,,,,,,,,,,,,,,,,,,,,,,3,47,1,34,8,27,12,10,12,1,20,26,9,17,6,6,6,1,3,,,,,0,,3,0,,,0,35,6,6,6,1
+Method,"io.requery.android.database.sqlite.SQLiteConnection.collectDbStatsUnsafe",,,,,,,,,,,,,,,,,,,,,,,,,,,2,7,0,3,1,1,4,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Method,"io.requery.android.database.sqlite.SQLiteConnection.describeCurrentOperationUnsafe",,,,,,,,,,,,,,,,,,,,,,,,,,,2,17,0,3,1,1,14,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,67,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.detachCancellationSignal",,,,,,,,,,,,,,,,,,,,,,,,,,,10,14,2,10,1,6,3,3,3,0,4,7,1,6,3,3,3,1,0,,,,,0,,2,0,,,0,30,3,3,3,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.dispose",,,,,,,,,,,,,,,,,,,,,,,,,,,8,19,1,18,2,12,0,7,6,1,7,12,2,10,4,4,4,1,0,,,,,0,,2,0,,,0,00,4,4,4,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.dump",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,0,3,1,1,6,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,00,1,1,1,1
+Method,"io.requery.android.database.sqlite.SQLiteConnection.dumpUnsafe",,,,,,,,,,,,,,,,,,,,,,,,,,,10,28,2,12,1,8,14,4,4,1,6,9,1,8,3,3,3,1,0,,,,,0,,1,0,,,1,17,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.enableLocalizedCollators",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,5,1,2,0,2,2,0,1,3,1,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.execute",,,,,,,,,,,,,,,,,,,,,,,,,,,14,40,1,28,4,21,11,11,4,1,13,18,3,15,3,3,3,1,1,,,,,0,,3,0,,,0,39,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.executeForBlobFileDescriptor",,,,,,,,,,,,,,,,,,,,,,,,,,,8,51,1,35,7,27,15,13,6,1,15,21,4,17,5,5,5,3,5,,,,,3,,4,3,,,0,43,5,5,5,3
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.executeForChangedRowCount",,,,,,,,,,,,,,,,,,,,,,,,,,,8,48,1,34,6,26,13,13,6,1,15,21,4,17,4,4,4,1,1,,,,,0,,3,0,,,0,38,4,4,4,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.executeForCursorWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,14,81,1,58,15,43,22,18,12,1,24,32,7,25,5,5,5,1,1,,,,,0,,4,0,,,0,38,5,5,5,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId",,,,,,,,,,,,,,,,,,,,,,,,,,,8,44,1,30,5,23,13,12,4,1,13,18,3,15,3,3,3,1,1,,,,,0,,3,0,,,0,43,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.executeForLong",,,,,,,,,,,,,,,,,,,,,,,,,,,13,42,1,28,4,21,13,12,4,1,13,18,3,15,3,3,3,1,1,,,,,0,,3,0,,,0,46,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.executeForString",,,,,,,,,,,,,,,,,,,,,,,,,,,11,42,1,28,4,21,13,12,4,1,13,18,3,15,3,3,3,1,1,,,,,0,,3,0,,,0,46,3,3,3,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteConnection.finalize",,,,,,,,,,,,,,,,,,,,,,,,,,,2,11,1,10,1,6,0,3,2,0,3,6,1,5,2,2,3,1,0,,,,,0,,2,0,,,0,00,2,2,3,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.finalizePreparedStatement",,,,,,,,,,,,,,,,,,,,,,,,,,,5,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.getMainDbStatsUnsafe",,,,,,,,,,,,,,,,,,,,,,,,,,,10,12,0,10,2,7,2,4,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,20,2,2,2,1
+Private Static Method,"io.requery.android.database.sqlite.SQLiteConnection.getTypeOfObject",,,,,,,,,,,,,,,,,,,,,,,,,,,7,30,0,14,1,11,16,1,5,1,5,10,1,9,5,5,9,5,4,,,,,4,,1,4,,,1,14,5,5,9,5
+Public Static Method,"io.requery.android.database.sqlite.SQLiteConnection.hasCodec",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"io.requery.android.database.sqlite.SQLiteConnection.isCacheable",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,1,2,0,1,1,0,1,2,1,1,1,1,2,1,0,,,,,0,,0,0,,,0,00,1,1,2,1
+Method,"io.requery.android.database.sqlite.SQLiteConnection.isPreparedStatementInCache",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.isPrimaryConnection",,,,,,,,,,,,,,,,,,,,,,,,,,,4,7,0,3,1,1,4,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.obtainPreparedStatement",,,,,,,,,,,,,,,,,,,,,,,,,,,8,17,0,17,3,13,0,9,2,0,11,13,2,11,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.onCancel",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Static Method,"io.requery.android.database.sqlite.SQLiteConnection.open",,,,,,,,,,,,,,,,,,,,,,,,,,,6,13,0,13,5,8,0,4,2,0,5,7,2,5,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.open",,,,,,,,,,,,,,,,,,,,,,,,,,,14,35,4,27,5,21,4,14,16,1,18,24,8,16,5,5,5,1,0,,,,,0,,1,0,,,0,15,5,5,5,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.prepare",,,,,,,,,,,,,,,,,,,,,,,,,,,10,59,2,33,5,25,24,10,10,1,15,22,5,17,6,6,6,1,2,,,,,0,,5,0,,,0,73,6,6,6,1
+Method,"io.requery.android.database.sqlite.SQLiteConnection.reconfigure",,,,,,,,,,,,,,,,,,,,,,,,,,,11,49,8,32,10,23,9,11,72,2,18,26,10,16,8,8,8,1,0,,,,,0,,2,0,,,0,28,8,8,8,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.recyclePreparedStatement",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,3,0,3,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.releasePreparedStatement",,,,,,,,,,,,,,,,,,,,,,,,,,,17,22,1,17,1,12,4,6,4,1,5,9,1,8,4,4,4,1,2,,,,,0,,3,0,,,0,24,4,4,4,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.setAutoCheckpointInterval",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,0,9,3,5,0,3,3,0,3,6,3,3,3,3,4,1,0,,,,,0,,2,0,,,0,00,3,3,4,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.setForeignKeyModeFromConfiguration",,,,,,,,,,,,,,,,,,,,,,,,,,,5,9,0,9,3,5,0,2,3,0,3,6,3,3,4,4,4,1,0,,,,,0,,2,0,,,0,00,4,4,4,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.setJournalMode",,,,,,,,,,,,,,,,,,,,,,,,,,,6,38,1,21,3,15,16,3,5,1,5,10,3,7,5,5,5,4,4,,,,,4,,3,4,,,0,76,5,5,5,4
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.setJournalSizeLimit",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,0,9,3,5,0,3,3,0,3,6,3,3,3,3,4,1,0,,,,,0,,2,0,,,0,00,3,3,4,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.setLocaleFromConfiguration",,,,,,,,,,,,,,,,,,,,,,,,,,,8,39,4,29,5,23,6,5,4,1,14,19,4,15,5,5,6,4,4,,,,,4,,2,4,,,0,21,5,5,6,4
+Method,"io.requery.android.database.sqlite.SQLiteConnection.setOnlyAllowReadOnlyOperations",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.setPageSize",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,0,9,3,5,0,4,3,0,3,6,3,3,3,3,4,1,0,,,,,0,,2,0,,,0,00,3,3,4,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.setSyncMode",,,,,,,,,,,,,,,,,,,,,,,,,,,2,7,0,7,2,4,0,4,2,0,2,4,2,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.setWalModeFromConfiguration",,,,,,,,,,,,,,,,,,,,,,,,,,,6,11,0,11,1,7,0,6,3,0,4,7,1,6,3,3,4,1,1,,,,,0,,2,0,,,0,00,3,3,4,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnection.throwIfStatementForbidden",,,,,,,,,,,,,,,,,,,,,,,,,,,10,6,0,6,1,3,0,0,2,0,1,3,1,2,2,2,3,1,0,,,,,0,,1,0,,,0,00,2,2,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnection.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"io.requery.android.database.sqlite.SQLiteConnection.trimSqlForDisplay",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"io.requery.android.database.sqlite.SQLiteConnectionPool",3,3,3,1,23,1,17,5,2,7,7,0,,2,5,,,,35,12,37,37,1,25,1,10,,1046,107,684,141,459,277,,,,304,463,134,329,,,,,,15,15,16,7,,1,5,,82,65,0,40,135,135,145,60
+Enum Type,"io.requery.android.database.sqlite.SQLiteConnectionPool.AcquiredConnectionStatus",1,1,1,1,0,0,0,0,1,0,0,0,,0,0,,,,2,3,2,2,0,0,0,2,,10,2,5,4,0,3,,,,0,1,1,0,,,,,,1,1,1,1,,1,0,,,,0,60,2,2,2,2
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.AcquiredConnectionStatus.valueOf",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.AcquiredConnectionStatus.values",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Class,"io.requery.android.database.sqlite.SQLiteConnectionPool.ConnectionWaiter",0,0,0,0,0,0,0,0,1,1,1,0,,0,0,,,,0,10,0,0,0,0,0,0,,12,0,12,11,0,0,,,,10,11,11,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Private Constructor,"io.requery.android.database.sqlite.SQLiteConnectionPool.SQLiteConnectionPool",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,4,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.acquireConnection",,,,,,,,,,,,,,,,,,,,,,,,,,,4,22,0,4,2,1,18,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,50,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.cancelConnectionWaiterLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,7,27,3,20,3,15,4,5,5,1,11,15,3,12,4,4,5,1,2,,,,,0,,1,0,,,0,20,4,4,5,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.close",,,,,,,,,,,,,,,,,,,,,,,,,,,1,14,0,3,1,1,11,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,67,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.closeAvailableConnectionsAndLogExceptionsLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,1,7,1,4,0,3,2,0,3,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.closeAvailableNonPrimaryConnectionsAndLogExceptionsLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,1,3,0,2,2,0,2,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.closeConnectionAndLogExceptionsLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,10,8,0,8,1,5,1,3,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,12,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.closeExcessConnectionsAndLogExceptionsLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,8,4,4,0,3,2,0,3,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.collectDbStats",,,,,,,,,,,,,,,,,,,,,,,,,,,6,20,2,13,1,7,5,3,8,1,3,10,3,7,4,4,4,1,0,,,,,0,,1,0,,,0,38,4,4,4,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.discardAcquiredConnectionsLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.dispose",,,,,,,,,,,,,,,,,,,,,,,,,,,9,32,5,23,2,16,4,8,9,1,8,14,2,12,5,5,5,1,0,,,,,0,,2,0,,,0,17,5,5,5,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.dump",,,,,,,,,,,,,,,,,,,,,,,,,,,17,57,4,47,4,37,6,8,54,2,21,32,7,25,8,8,8,1,4,,,,,0,,2,0,,,0,13,8,8,8,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.enableLocalizedCollators",,,,,,,,,,,,,,,,,,,,,,,,,,,4,10,0,10,1,6,0,2,2,0,2,5,1,4,2,2,3,1,0,,,,,0,,1,0,,,0,00,2,2,3,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.finalize",,,,,,,,,,,,,,,,,,,,,,,,,,,0,7,0,7,1,4,0,2,1,0,2,4,1,3,1,1,1,1,0,,,,,0,,1,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.finishAcquireConnectionLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,9,13,1,12,2,9,1,5,2,0,6,8,2,6,2,2,2,1,1,,,,,0,,1,0,,,0,08,2,2,2,1
+Private Static Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.getPriority",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,2,2,2,1,0,,,,,0,,0,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.isSessionBlockingImportantConnectionWaitersLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,7,23,2,17,4,11,4,2,5,1,7,11,3,8,5,5,6,5,6,,,,,6,,3,6,,,0,24,5,5,6,5
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.logConnectionPoolBusyLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,9,41,4,37,8,29,0,12,24,1,22,31,10,21,7,7,7,1,1,,,,,0,,3,0,,,0,00,7,7,7,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.markAcquiredConnectionsLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,5,17,0,17,4,11,0,7,7,1,4,11,5,6,5,5,6,1,0,,,,,0,,3,0,,,0,00,5,5,6,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.obtainConnectionWaiterLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,9,17,0,17,3,13,0,9,2,0,11,13,2,11,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.onConnectionLeaked",,,,,,,,,,,,,,,,,,,,,,,,,,,5,28,2,7,1,5,19,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,2,71,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.open",,,,,,,,,,,,,,,,,,,,,,,,,,,2,18,1,8,2,5,10,3,2,0,4,6,2,4,2,2,2,1,0,,,,,0,,1,0,,,1,25,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.open",,,,,,,,,,,,,,,,,,,,,,,,,,,3,10,1,6,1,4,4,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,67,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.openConnectionLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,7,6,0,6,3,3,1,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,17,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.reconfigure",,,,,,,,,,,,,,,,,,,,,,,,,,,16,86,10,48,7,38,29,12,54,2,20,29,4,25,8,8,8,1,1,,,,,0,,2,0,,,0,60,8,8,8,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.reconfigureAllConnectionsLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,8,28,2,26,3,20,2,9,9,1,14,19,4,15,5,5,5,1,2,,,,,0,,2,0,,,0,08,5,5,5,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.recycleConnectionLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,8,17,0,17,2,11,1,5,6,1,6,10,1,9,4,4,4,1,2,,,,,0,,2,0,,,0,06,4,4,4,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.recycleConnectionWaiterLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,0,9,1,7,0,7,1,0,7,8,1,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.releaseConnection",,,,,,,,,,,,,,,,,,,,,,,,,,,8,39,1,26,2,19,12,8,12,1,9,17,2,15,7,7,7,1,3,,,,,0,,2,0,,,0,46,7,7,7,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.setMaxConnectionPoolSizeLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,5,12,0,8,1,5,4,3,2,0,2,4,1,3,2,2,3,1,1,,,,,0,,1,0,,,0,50,2,2,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.shouldYieldConnection",,,,,,,,,,,,,,,,,,,,,,,,,,,6,27,2,14,1,9,11,4,4,1,3,7,1,6,3,3,3,1,1,,,,,0,,1,0,,,0,79,3,3,3,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.throwIfClosedLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,1,3,0,0,2,0,1,3,1,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.tryAcquireNonPrimaryConnectionLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,9,37,1,31,5,21,9,7,16,1,17,24,5,19,7,7,8,6,6,,,,,6,,3,6,,,0,29,7,7,8,6
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.tryAcquirePrimaryConnectionLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,6,23,2,17,2,12,7,6,4,1,8,13,3,10,4,4,4,4,4,,,,,4,,2,4,,,0,41,4,4,4,4
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.waitForConnection",,,,,,,,,,,,,,,,,,,,,,,,,,,15,115,11,93,16,66,14,18,1928,3,42,62,15,47,15,15,16,7,11,,,,,9,,4,7,,,0,15,15,15,16,7
+Anonymous Class,"io.requery.android.database.sqlite.SQLiteConnectionPool.waitForConnection.(Anon_1)",2,2,2,1,7,0,7,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,9,0,9,0,6,0,,,,1,4,1,3,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.waitForConnection.(Anon_1).onCancel",,,,,,,,,,,,,,,,,,,,,,,,,,,2,7,0,7,0,4,0,1,2,0,1,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteConnectionPool.wakeConnectionWaitersLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,13,60,2,52,8,40,8,7,88,2,23,35,8,27,12,12,15,6,8,,,,,7,,5,6,,,0,15,12,12,15,6
+Public Class,"io.requery.android.database.sqlite.SQLiteCursor",2,2,2,1,12,0,9,2,1,7,7,1,,1,2,,,,13,8,14,78,0,1,1,12,,234,30,160,47,91,44,,,,73,109,37,72,,,,,,9,9,10,4,,3,3,,80,74,0,28,33,33,36,20
+Public Constructor,"io.requery.android.database.sqlite.SQLiteCursor.SQLiteCursor",,,,,,,,,,,,,,,,,,,,,,,,,,,4,20,0,9,1,6,11,7,2,0,5,7,1,6,2,2,2,1,0,,,,,0,,1,0,,,1,22,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteCursor.close",,,,,,,,,,,,,,,,,,,,,,,,,,,3,7,0,7,1,4,0,3,1,0,3,5,1,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteCursor.cursorPickFillWindowStartPosition",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,2,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteCursor.deactivate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteCursor.fillWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,11,25,1,20,4,15,4,11,4,1,9,13,3,10,4,4,4,1,2,,,,,0,,3,0,,,0,20,4,4,4,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteCursor.finalize",,,,,,,,,,,,,,,,,,,,,,,,,,,2,14,0,10,1,6,4,3,2,0,3,6,1,5,2,2,2,1,0,,,,,0,,2,0,,,0,40,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteCursor.getColumnIndex",,,,,,,,,,,,,,,,,,,,,,,,,,,6,42,3,36,9,27,3,9,40,2,22,30,11,19,9,9,10,4,4,,,,,3,,3,2,,,0,08,9,9,10,4
+Public Method,"io.requery.android.database.sqlite.SQLiteCursor.getColumnNames",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteCursor.getCount",,,,,,,,,,,,,,,,,,,,,,,,,,,2,6,0,6,1,3,0,2,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteCursor.getDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,2,7,0,3,1,1,4,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteCursor.onMove",,,,,,,,,,,,,,,,,,,,,,,,,,,2,9,1,7,1,4,1,4,2,0,2,4,1,3,2,2,4,1,0,,,,,0,,1,0,,,0,14,2,2,4,1
+Public Method,"io.requery.android.database.sqlite.SQLiteCursor.requery",,,,,,,,,,,,,,,,,,,,,,,,,,,7,27,4,22,1,15,1,11,6,1,9,15,1,14,5,5,5,4,3,,,,,3,,1,3,,,0,05,5,5,5,4
+Public Method,"io.requery.android.database.sqlite.SQLiteCursor.setSelectionArguments",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteCursor.setWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Interface,"io.requery.android.database.sqlite.SQLiteCursorDriver",0,0,0,0,0,0,0,0,0,1,1,1,,0,0,,,,5,0,5,5,5,0,0,0,,31,4,7,6,0,20,,,,5,6,6,0,,,,,,0,0,0,0,,0,0,,0,0,2,86,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteCursorDriver.cursorClosed",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,1,1,0,3,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,3,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteCursorDriver.cursorDeactivated",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,1,1,0,3,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,3,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteCursorDriver.cursorRequeried",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,1,1,0,3,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,3,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteCursorDriver.query",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,1,1,0,7,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,7,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteCursorDriver.setBindArguments",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,1,1,0,4,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,4,00,0,0,0,0
+Public Class,"io.requery.android.database.sqlite.SQLiteCustomExtension",2,2,2,1,15,0,7,8,1,0,0,0,,0,0,,,,1,2,1,1,0,0,0,1,,24,2,11,4,4,11,,,,5,8,4,4,,,,,,2,2,2,1,,1,1,,0,0,1,00,2,2,2,1
+Public Constructor,"io.requery.android.database.sqlite.SQLiteCustomExtension.SQLiteCustomExtension",,,,,,,,,,,,,,,,,,,,,,,,,,,2,15,0,7,1,4,8,3,2,0,3,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,1,14,2,2,2,1
+Public Class,"io.requery.android.database.sqlite.SQLiteCustomFunction",1,1,1,1,10,0,6,4,1,1,1,0,,0,0,,,,2,3,2,2,0,1,0,1,,35,3,18,8,6,14,,,,8,12,6,6,,,,,,2,2,2,1,,1,1,,33,33,0,78,3,3,3,2
+Public Constructor,"io.requery.android.database.sqlite.SQLiteCustomFunction.SQLiteCustomFunction",,,,,,,,,,,,,,,,,,,,,,,,,,,4,18,1,9,2,5,8,4,2,0,4,6,1,5,2,2,2,1,0,,,,,0,,1,0,,,0,89,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteCustomFunction.dispatchCallback",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"io.requery.android.database.sqlite.SQLiteDatabase",1,1,1,1,19,0,8,10,2,20,20,0,,19,21,,,,91,7,110,114,9,15,2,84,,2533,187,1063,336,574,1291,,,,407,653,230,423,,,,,,8,8,9,4,,2,4,,92,80,1,21,188,188,199,118
+Anonymous Class,"io.requery.android.database.sqlite.SQLiteDatabase.(Anon_1)",1,1,1,1,3,0,3,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,1,0,,5,0,5,1,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteDatabase.(Anon_1).initialValue",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,0,2,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Annotation,"io.requery.android.database.sqlite.SQLiteDatabase.ConflictAlgorithm",0,0,0,0,0,0,0,0,0,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,3,0,2,1,0,1,,,,0,1,1,0,,,,,,0,0,0,0,,0,0,,0,0,0,50,0,0,0,0
+Public Interface,"io.requery.android.database.sqlite.SQLiteDatabase.CursorFactory",0,0,0,0,0,0,0,0,0,3,3,2,,0,0,,,,1,0,1,1,1,0,0,0,,8,0,5,4,0,3,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,0,60,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.CursorFactory.newCursor",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,3,0,3,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,1,00,0,0,0,0
+Public Interface,"io.requery.android.database.sqlite.SQLiteDatabase.CustomFunction",0,0,0,0,0,0,0,0,0,0,0,2,,0,0,,,,1,0,1,1,1,0,0,0,,8,0,3,2,0,5,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,1,67,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.CustomFunction.callback",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,1,1,0,5,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,5,00,0,0,0,0
+Public Interface,"io.requery.android.database.sqlite.SQLiteDatabase.Function",0,0,0,0,0,0,0,0,0,2,2,2,,0,1,,,,1,0,1,1,1,0,0,0,,45,3,20,17,1,22,,,,14,17,17,0,,,,,,0,0,0,0,,0,0,,0,0,1,10,0,0,0,0
+Interface,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Args",0,0,0,0,0,0,0,0,0,0,0,1,,0,0,,,,5,0,5,5,5,0,0,0,,7,0,7,6,0,0,,,,5,6,6,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Args.getBlob",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Args.getDouble",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Args.getInt",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Args.getLong",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Args.getString",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Interface,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Result",0,0,0,0,0,0,0,0,0,0,0,1,,0,0,,,,7,0,7,7,7,0,0,0,,9,0,9,8,0,0,,,,7,8,8,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Result.set",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Result.set",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Result.set",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Result.set",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Result.set",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Result.setError",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.Result.setNull",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"io.requery.android.database.sqlite.SQLiteDatabase.Function.callback",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,1,1,0,5,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,5,00,0,0,0,0
+Public Annotation,"io.requery.android.database.sqlite.SQLiteDatabase.OpenFlags",0,0,0,0,0,0,0,0,0,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,3,0,2,1,0,1,,,,0,1,1,0,,,,,,0,0,0,0,,0,0,,0,0,0,50,0,0,0,0
+Private Constructor,"io.requery.android.database.sqlite.SQLiteDatabase.SQLiteDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,5,7,0,7,3,3,0,4,1,0,3,4,1,3,2,2,2,1,0,,,,,0,,0,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.addCustomFunction",,,,,,,,,,,,,,,,,,,,,,,,,,,10,25,2,13,2,9,10,5,2,0,6,9,2,7,2,2,2,1,1,,,,,0,,1,0,,,0,77,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.addFunction",,,,,,,,,,,,,,,,,,,,,,,,,,,5,12,0,3,1,1,9,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.addFunction",,,,,,,,,,,,,,,,,,,,,,,,,,,10,26,2,13,2,9,11,5,2,0,6,9,2,7,2,2,2,1,1,,,,,0,,1,0,,,0,85,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.beginTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,6,24,0,3,1,1,21,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,7,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteDatabase.beginTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,8,9,0,9,1,6,1,5,1,0,3,5,1,4,1,1,1,1,0,,,,,0,,1,0,,,0,11,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.beginTransactionDeferred",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.beginTransactionNonExclusive",,,,,,,,,,,,,,,,,,,,,,,,,,,1,23,0,3,1,1,20,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,6,67,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.beginTransactionWithListener",,,,,,,,,,,,,,,,,,,,,,,,,,,2,28,0,3,1,1,25,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,8,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.beginTransactionWithListenerDeferred",,,,,,,,,,,,,,,,,,,,,,,,,,,2,11,0,4,2,1,7,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,75,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.beginTransactionWithListenerNonExclusive",,,,,,,,,,,,,,,,,,,,,,,,,,,2,28,0,4,2,1,24,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,6,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.blobFileDescriptorForQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,2,14,0,8,2,5,6,4,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,1,0,,,0,75,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.blobFileDescriptorForQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,3,11,0,5,2,2,6,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,1,20,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteDatabase.collectDbStats",,,,,,,,,,,,,,,,,,,,,,,,,,,4,7,0,7,1,3,0,1,2,0,1,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.compileStatement",,,,,,,,,,,,,,,,,,,,,,,,,,,16,22,0,8,1,5,14,4,1,0,3,5,1,4,1,1,1,1,0,,,,,0,,1,0,,,1,75,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.create",,,,,,,,,,,,,,,,,,,,,,,,,,,5,16,0,4,1,2,12,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Method,"io.requery.android.database.sqlite.SQLiteDatabase.createSession",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,8,2,4,0,3,1,0,4,6,2,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.delete",,,,,,,,,,,,,,,,,,,,,,,,,,,7,27,0,14,3,10,13,7,1,0,5,8,2,6,2,2,2,1,0,,,,,0,,2,0,,,0,93,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.delete",,,,,,,,,,,,,,,,,,,,,,,,,,,4,27,0,14,3,10,13,7,1,0,5,8,2,6,2,2,2,1,0,,,,,0,,2,0,,,0,93,2,2,2,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.deleteDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,2,33,2,24,6,16,7,6,6,1,12,18,7,11,4,4,4,1,0,,,,,0,,1,0,,,0,29,4,4,4,1
+Anonymous Class,"io.requery.android.database.sqlite.SQLiteDatabase.deleteDatabase.(Anon_2)",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,1,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.deleteDatabase.(Anon_2).accept",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.disableWriteAheadLogging",,,,,,,,,,,,,,,,,,,,,,,,,,,7,26,2,15,1,10,9,4,3,0,6,10,1,9,3,3,3,1,2,,,,,0,,1,0,,,0,60,3,3,3,1
+Private Method,"io.requery.android.database.sqlite.SQLiteDatabase.dispose",,,,,,,,,,,,,,,,,,,,,,,,,,,7,24,3,21,2,12,0,5,9,1,7,14,2,12,5,5,5,1,0,,,,,0,,2,0,,,0,00,5,5,5,1
+Private Method,"io.requery.android.database.sqlite.SQLiteDatabase.dump",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,0,8,1,4,0,2,2,0,2,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.dumpAll",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,0,5,1,2,4,2,2,0,1,4,2,2,2,2,2,1,0,,,,,0,,1,0,,,0,80,2,2,2,1
+Method,"io.requery.android.database.sqlite.SQLiteDatabase.enableLocalizedCollators",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.enableWriteAheadLogging",,,,,,,,,,,,,,,,,,,,,,,,,,,8,103,4,23,1,16,76,8,5,1,10,16,1,15,5,5,5,4,4,,,,,3,,1,3,,,3,30,5,5,5,4
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.endTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,5,12,0,8,1,5,4,4,1,0,3,5,1,4,1,1,1,1,0,,,,,0,,1,0,,,0,50,1,1,1,1
+Private Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.ensureFile",,,,,,,,,,,,,,,,,,,,,,,,,,,4,17,0,15,2,9,2,5,6,1,4,9,2,7,5,5,6,1,1,,,,,0,,3,0,,,0,13,5,5,6,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.execSQL",,,,,,,,,,,,,,,,,,,,,,,,,,,74,22,0,3,1,1,19,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,6,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.execSQL",,,,,,,,,,,,,,,,,,,,,,,,,,,5,49,0,6,1,3,43,1,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,7,17,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteDatabase.executeSql",,,,,,,,,,,,,,,,,,,,,,,,,,,4,13,0,13,2,9,0,6,1,0,5,8,2,6,1,1,1,1,0,,,,,0,,2,0,,,0,00,1,1,1,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteDatabase.finalize",,,,,,,,,,,,,,,,,,,,,,,,,,,0,7,0,7,1,4,0,2,1,0,2,4,1,3,1,1,1,1,0,,,,,0,,1,0,,,0,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.findEditTable",,,,,,,,,,,,,,,,,,,,,,,,,,,3,22,1,14,3,10,7,4,4,1,6,10,3,7,4,4,8,4,5,,,,,5,,2,5,,,0,50,4,4,8,4
+Private Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.getActiveDatabases",,,,,,,,,,,,,,,,,,,,,,,,,,,3,7,0,7,2,4,0,3,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.getAttachedDbs",,,,,,,,,,,,,,,,,,,,,,,,,,,5,40,2,25,3,17,14,8,5,1,9,16,3,13,4,4,4,1,1,,,,,0,,3,0,,,0,56,4,4,4,1
+Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.getDbStats",,,,,,,,,,,,,,,,,,,,,,,,,,,1,11,0,7,2,4,4,3,2,0,3,6,3,3,2,2,2,1,0,,,,,0,,1,0,,,0,57,2,2,2,1
+Method,"io.requery.android.database.sqlite.SQLiteDatabase.getLabel",,,,,,,,,,,,,,,,,,,,,,,,,,,5,9,0,5,1,2,4,1,1,0,1,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,80,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.getMaximumSize",,,,,,,,,,,,,,,,,,,,,,,,,,,0,9,0,4,2,2,5,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,1,25,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.getPageSize",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,3,1,1,5,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.getPath",,,,,,,,,,,,,,,,,,,,,,,,,,,8,10,0,5,1,2,5,1,1,0,1,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Method,"io.requery.android.database.sqlite.SQLiteDatabase.getThreadDefaultConnectionFlags",,,,,,,,,,,,,,,,,,,,,,,,,,,8,15,0,8,3,5,7,2,2,0,3,5,2,3,3,3,3,1,0,,,,,0,,1,0,,,0,88,3,3,3,1
+Method,"io.requery.android.database.sqlite.SQLiteDatabase.getThreadSession",,,,,,,,,,,,,,,,,,,,,,,,,,,10,20,0,3,1,1,18,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,6,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.getVersion",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,3,1,1,5,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.hasCodec",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.inTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,0,13,0,8,1,5,5,5,1,0,3,5,1,4,1,1,1,1,0,,,,,0,,1,0,,,0,62,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.insert",,,,,,,,,,,,,,,,,,,,,,,,,,,12,24,0,8,1,5,16,3,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,2,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.insert",,,,,,,,,,,,,,,,,,,,,,,,,,,3,17,0,4,2,1,13,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,25,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.insertOrThrow",,,,,,,,,,,,,,,,,,,,,,,,,,,4,21,0,4,2,1,17,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,25,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.insertWithOnConflict",,,,,,,,,,,,,,,,,,,,,,,,,,,10,62,2,40,8,32,20,12,5,1,25,32,7,25,7,7,8,1,1,,,,,0,,3,0,,,0,50,7,7,8,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.isDatabaseIntegrityOk",,,,,,,,,,,,,,,,,,,,,,,,,,,5,48,1,32,4,23,15,11,12,1,14,23,5,18,6,6,6,3,6,,,,,4,,4,3,,,0,47,6,6,6,3
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.isDbLockedByCurrentThread",,,,,,,,,,,,,,,,,,,,,,,,,,,1,20,0,8,1,5,12,5,1,0,3,5,1,4,1,1,1,1,0,,,,,0,,1,0,,,1,50,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.isInMemoryDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,2,11,0,5,1,2,6,2,1,0,1,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,1,20,1,1,1,1
+Private Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.isMainThread",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,4,2,2,2,3,1,0,2,3,2,1,1,1,2,1,0,,,,,0,,0,0,,,0,50,1,1,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.isOpen",,,,,,,,,,,,,,,,,,,,,,,,,,,8,10,0,5,1,2,5,1,1,0,1,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.isReadOnly",,,,,,,,,,,,,,,,,,,,,,,,,,,3,10,0,5,1,2,5,2,1,0,1,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteDatabase.isReadOnlyLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.isWriteAheadLoggingEnabled",,,,,,,,,,,,,,,,,,,,,,,,,,,4,15,1,6,1,3,8,2,1,0,2,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.longForQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,7,12,0,8,2,5,4,4,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,1,0,,,0,50,1,1,1,1
+Private Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.longForQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,4,1,2,4,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.needUpgrade",,,,,,,,,,,,,,,,,,,,,,,,,,,1,9,0,3,1,1,6,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,00,1,1,1,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteDatabase.onAllReferencesReleased",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"io.requery.android.database.sqlite.SQLiteDatabase.onCorruption",,,,,,,,,,,,,,,,,,,,,,,,,,,4,7,0,4,1,2,3,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,75,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteDatabase.open",,,,,,,,,,,,,,,,,,,,,,,,,,,8,18,0,18,1,13,0,7,5,1,7,11,1,10,4,4,5,1,2,,,,,0,,2,0,,,0,00,4,4,5,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.openDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,4,18,0,5,3,1,13,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,60,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.openDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,7,27,0,9,6,4,18,4,1,0,4,5,3,2,1,1,1,1,0,,,,,0,,0,0,,,2,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.openDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,4,24,0,7,4,3,17,3,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,2,43,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteDatabase.openInner",,,,,,,,,,,,,,,,,,,,,,,,,,,6,11,1,10,1,6,0,4,1,0,4,7,1,6,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.openOrCreateDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,6,7,0,4,2,1,3,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,75,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.openOrCreateDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,2,6,0,3,1,1,3,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.openOrCreateDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,3,1,1,3,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query",,,,,,,,,,,,,,,,,,,,,,,,,,,49,35,1,6,3,2,29,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,83,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query",,,,,,,,,,,,,,,,,,,,,,,,,,,11,37,0,6,3,2,31,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,5,17,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query",,,,,,,,,,,,,,,,,,,,,,,,,,,10,40,0,6,3,2,34,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,5,67,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query",,,,,,,,,,,,,,,,,,,,,,,,,,,8,37,1,6,3,2,30,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,5,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query",,,,,,,,,,,,,,,,,,,,,,,,,,,1,10,0,3,1,1,7,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query",,,,,,,,,,,,,,,,,,,,,,,,,,,2,12,0,3,1,1,9,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query",,,,,,,,,,,,,,,,,,,,,,,,,,,1,10,0,3,1,1,7,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query",,,,,,,,,,,,,,,,,,,,,,,,,,,3,24,0,14,2,10,10,2,2,0,5,8,3,5,2,2,2,1,1,,,,,0,,1,0,,,0,71,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query",,,,,,,,,,,,,,,,,,,,,,,,,,,2,20,0,10,1,7,10,3,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Anonymous Class,"io.requery.android.database.sqlite.SQLiteDatabase.query.(Anon_3)",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query.(Anon_3).onCancel",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"io.requery.android.database.sqlite.SQLiteDatabase.query.(Anon_4)",1,1,1,1,5,0,5,0,2,4,4,0,,0,0,,,,1,0,1,1,0,0,0,1,,7,0,7,0,6,0,,,,2,3,1,2,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.query.(Anon_4).newCursor",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,0,4,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.queryNumEntries",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,3,1,1,5,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.queryNumEntries",,,,,,,,,,,,,,,,,,,,,,,,,,,2,11,0,3,1,1,8,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,67,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.queryNumEntries",,,,,,,,,,,,,,,,,,,,,,,,,,,5,16,0,4,2,2,12,3,1,0,2,3,2,1,2,2,2,1,0,,,,,0,,0,0,,,3,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.queryWithFactory",,,,,,,,,,,,,,,,,,,,,,,,,,,10,39,0,7,4,2,32,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,57,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.queryWithFactory",,,,,,,,,,,,,,,,,,,,,,,,,,,14,50,1,14,6,8,35,6,1,0,4,6,2,4,1,1,1,1,0,,,,,0,,1,0,,,2,50,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.rawQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,21,12,0,3,1,1,9,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.rawQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,3,16,0,4,2,1,12,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.rawQueryWithFactory",,,,,,,,,,,,,,,,,,,,,,,,,,,5,16,0,5,3,1,11,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,20,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.rawQueryWithFactory",,,,,,,,,,,,,,,,,,,,,,,,,,,14,27,0,13,5,8,14,5,1,0,4,6,2,4,2,2,2,1,0,,,,,0,,1,0,,,1,08,2,2,2,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.releaseMemory",,,,,,,,,,,,,,,,,,,,,,,,,,,0,9,0,3,1,1,6,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.reopenReadWrite",,,,,,,,,,,,,,,,,,,,,,,,,,,7,30,2,16,2,11,13,5,3,0,7,11,2,9,3,3,3,1,2,,,,,0,,1,0,,,0,81,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.replace",,,,,,,,,,,,,,,,,,,,,,,,,,,6,24,0,9,1,6,15,3,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,1,67,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.replaceOrThrow",,,,,,,,,,,,,,,,,,,,,,,,,,,4,21,0,5,2,2,16,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,20,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.setForeignKeyConstraintsEnabled",,,,,,,,,,,,,,,,,,,,,,,,,,,6,46,2,15,1,10,29,4,3,0,6,10,1,9,3,3,3,1,2,,,,,0,,1,0,,,1,93,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.setLocale",,,,,,,,,,,,,,,,,,,,,,,,,,,7,27,2,16,2,11,9,4,4,1,7,11,2,9,3,3,3,1,1,,,,,0,,1,0,,,0,56,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.setMaxSqlCacheSize",,,,,,,,,,,,,,,,,,,,,,,,,,,8,32,2,17,2,12,13,4,4,1,7,11,2,9,3,3,4,1,1,,,,,0,,1,0,,,0,76,3,3,4,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.setMaximumSize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,17,0,9,4,6,8,3,2,0,5,7,4,3,2,2,2,1,0,,,,,0,,1,0,,,0,89,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.setPageSize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,10,0,3,1,1,7,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.setTransactionSuccessful",,,,,,,,,,,,,,,,,,,,,,,,,,,6,17,0,8,1,5,9,4,1,0,3,5,1,4,1,1,1,1,0,,,,,0,,1,0,,,1,12,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.setVersion",,,,,,,,,,,,,,,,,,,,,,,,,,,7,8,0,3,1,1,5,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.stringForQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,2,12,0,8,2,5,4,4,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,1,0,,,0,50,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDatabase.stringForQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,4,1,2,4,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteDatabase.throwIfNotOpenLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,13,6,0,6,1,3,0,0,2,0,1,3,1,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.update",,,,,,,,,,,,,,,,,,,,,,,,,,,8,16,0,3,1,1,13,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.update",,,,,,,,,,,,,,,,,,,,,,,,,,,8,59,3,41,8,31,15,13,24,1,24,33,8,25,8,8,9,1,0,,,,,0,,3,0,,,0,37,8,8,9,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.updateWithOnConflict",,,,,,,,,,,,,,,,,,,,,,,,,,,8,59,3,41,8,31,15,13,24,1,24,33,8,25,8,8,9,1,0,,,,,0,,3,0,,,0,37,8,8,9,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.validateSql",,,,,,,,,,,,,,,,,,,,,,,,,,,3,14,0,4,1,2,10,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,50,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteDatabase.yieldIfContendedHelper",,,,,,,,,,,,,,,,,,,,,,,,,,,4,8,0,8,1,5,0,5,1,0,3,5,1,4,1,1,1,1,0,,,,,0,,1,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.yieldIfContendedSafely",,,,,,,,,,,,,,,,,,,,,,,,,,,0,11,0,3,1,1,9,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabase.yieldIfContendedSafely",,,,,,,,,,,,,,,,,,,,,,,,,,,1,14,0,3,1,1,12,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,00,1,1,1,1
+Public Class,"io.requery.android.database.sqlite.SQLiteDatabaseConfiguration",1,1,1,1,15,0,9,5,1,2,2,0,,1,2,,,,5,9,6,6,2,1,0,3,,179,20,71,24,40,88,,,,40,52,18,34,,,,,,3,3,3,1,,1,1,,64,42,1,24,11,11,11,6
+Constructor,"io.requery.android.database.sqlite.SQLiteDatabaseConfiguration.SQLiteDatabaseConfiguration",,,,,,,,,,,,,,,,,,,,,,,,,,,5,14,1,8,1,5,5,4,2,0,4,6,1,5,2,2,2,1,0,,,,,0,,1,0,,,0,62,2,2,2,1
+Public Constructor,"io.requery.android.database.sqlite.SQLiteDatabaseConfiguration.SQLiteDatabaseConfiguration",,,,,,,,,,,,,,,,,,,,,,,,,,,5,20,2,10,1,7,8,8,2,0,6,8,1,7,2,2,2,1,0,,,,,0,,1,0,,,0,80,2,2,2,1
+Public Constructor,"io.requery.android.database.sqlite.SQLiteDatabaseConfiguration.SQLiteDatabaseConfiguration",,,,,,,,,,,,,,,,,,,,,,,,,,,8,19,0,10,5,4,9,3,1,0,4,5,1,4,1,1,1,1,0,,,,,0,,0,0,,,0,90,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDatabaseConfiguration.isInMemoryDb",,,,,,,,,,,,,,,,,,,,,,,,,,,10,7,0,3,1,1,4,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Private Static Method,"io.requery.android.database.sqlite.SQLiteDatabaseConfiguration.stripPathForLogs",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,1,3,0,4,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Method,"io.requery.android.database.sqlite.SQLiteDatabaseConfiguration.updateParametersFrom",,,,,,,,,,,,,,,,,,,,,,,,,,,12,26,1,19,1,15,6,7,4,1,12,15,1,14,3,3,3,1,0,,,,,0,,1,0,,,0,32,3,3,3,1
+Public Class,"io.requery.android.database.sqlite.SQLiteDebug",1,1,1,1,11,0,5,5,1,2,2,0,,4,4,,,,1,0,5,5,0,2,0,3,,148,19,53,30,21,76,,,,28,39,26,13,,,,,,3,3,3,1,,1,2,,0,0,1,43,6,6,7,4
+Public Static Class,"io.requery.android.database.sqlite.SQLiteDebug.DbStats",1,1,1,1,8,0,8,0,1,0,0,0,,0,0,,,,1,5,1,1,0,0,0,1,,28,5,15,8,5,8,,,,10,12,7,5,,,,,,1,1,1,1,,1,0,,0,0,0,53,1,1,1,1
+Public Constructor,"io.requery.android.database.sqlite.SQLiteDebug.DbStats.DbStats",,,,,,,,,,,,,,,,,,,,,,,,,,,7,8,0,8,2,5,0,6,1,0,5,6,1,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"io.requery.android.database.sqlite.SQLiteDebug.PagerStats",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,4,0,0,0,0,0,0,,30,3,6,5,0,21,,,,4,5,5,0,,,,,,0,0,0,0,,1,0,,0,0,3,50,0,0,0,0
+Private Constructor,"io.requery.android.database.sqlite.SQLiteDebug.SQLiteDebug",,,,,,,,,,,,,,,,,,,,,,,,,,,0,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDebug.dump",,,,,,,,,,,,,,,,,,,,,,,,,,,2,15,1,9,2,5,5,2,3,0,3,7,3,4,3,3,3,1,0,,,,,0,,2,0,,,0,56,3,3,3,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDebug.getDatabaseInfo",,,,,,,,,,,,,,,,,,,,,,,,,,,0,10,0,6,2,4,4,4,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,67,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteDebug.shouldLogSlowQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,2,18,0,5,3,3,13,3,1,0,2,3,2,1,1,1,2,1,0,,,,,0,,0,0,,,2,60,1,1,2,1
+Public Class,"io.requery.android.database.sqlite.SQLiteDirectCursorDriver",1,1,1,1,5,0,5,0,2,6,6,0,,0,0,,,,7,5,7,7,0,0,0,7,,63,8,47,21,17,8,,,,19,29,15,14,,,,,,3,3,3,1,,1,2,,68,68,0,17,9,9,9,7
+Public Constructor,"io.requery.android.database.sqlite.SQLiteDirectCursorDriver.SQLiteDirectCursorDriver",,,,,,,,,,,,,,,,,,,,,,,,,,,5,7,0,7,2,4,0,5,1,0,4,5,1,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDirectCursorDriver.cursorClosed",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,2,1,0,1,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,50,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDirectCursorDriver.cursorDeactivated",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,2,1,0,1,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,50,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDirectCursorDriver.cursorRequeried",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,2,1,0,1,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,50,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDirectCursorDriver.query",,,,,,,,,,,,,,,,,,,,,,,,,,,7,17,1,16,3,11,0,6,3,0,8,11,3,8,3,3,3,1,2,,,,,0,,2,0,,,0,00,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDirectCursorDriver.setBindArguments",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteDirectCursorDriver.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"io.requery.android.database.sqlite.SQLiteFunction",1,1,1,1,18,1,10,6,1,3,3,0,,12,0,,,,3,6,15,15,12,1,0,2,,183,28,127,58,47,28,,,,60,85,42,43,,,,,,2,2,2,1,,1,2,,61,38,0,22,5,5,5,3
+Private Static Class,"io.requery.android.database.sqlite.SQLiteFunction.MyArgs",1,1,1,1,4,0,3,0,2,1,1,0,,0,0,,,,6,2,6,6,0,1,0,5,,39,7,32,14,10,0,,,,9,17,9,8,,,,,,2,2,3,1,,1,1,,50,8,0,00,7,7,8,6
+Private Method,"io.requery.android.database.sqlite.SQLiteFunction.MyArgs.checkArg",,,,,,,,,,,,,,,,,,,,,,,,,,,7,9,1,8,1,5,0,1,2,0,2,4,1,3,2,2,3,1,0,,,,,0,,1,0,,,0,00,2,2,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyArgs.getBlob",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyArgs.getDouble",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyArgs.getInt",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyArgs.getLong",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyArgs.getString",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Class,"io.requery.android.database.sqlite.SQLiteFunction.MyResult",1,1,1,1,4,0,4,0,2,1,1,0,,0,0,,,,8,2,8,8,0,1,0,7,,51,8,43,18,16,0,,,,18,28,11,17,,,,,,2,2,2,1,,1,1,,50,6,0,00,9,9,9,8
+Private Method,"io.requery.android.database.sqlite.SQLiteFunction.MyResult.checkSet",,,,,,,,,,,,,,,,,,,,,,,,,,,8,4,0,4,1,2,0,1,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyResult.set",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyResult.set",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyResult.set",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyResult.set",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyResult.set",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyResult.setError",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteFunction.MyResult.setNull",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"io.requery.android.database.sqlite.SQLiteFunction.SQLiteFunction",,,,,,,,,,,,,,,,,,,,,,,,,,,6,22,1,11,3,6,10,5,2,0,5,7,1,6,2,2,2,1,0,,,,,0,,1,0,,,0,91,2,2,2,1
+Public Constructor,"io.requery.android.database.sqlite.SQLiteFunction.SQLiteFunction",,,,,,,,,,,,,,,,,,,,,,,,,,,3,14,0,4,2,1,10,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,50,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteFunction.dispatchCallback",,,,,,,,,,,,,,,,,,,,,,,,,,,7,19,3,16,1,12,0,8,2,0,9,12,1,11,2,2,2,1,0,,,,,0,,2,0,,,0,00,2,2,2,1
+Public Class,"io.requery.android.database.sqlite.SQLiteGlobal",1,1,1,1,6,0,3,3,1,0,0,0,,9,2,,,,1,0,10,10,0,2,0,8,,91,11,37,14,12,43,,,,12,24,13,11,,,,,,2,2,2,1,,1,1,,88,88,1,16,10,10,10,9
+Private Constructor,"io.requery.android.database.sqlite.SQLiteGlobal.SQLiteGlobal",,,,,,,,,,,,,,,,,,,,,,,,,,,0,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteGlobal.getDefaultJournalMode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteGlobal.getDefaultPageSize",,,,,,,,,,,,,,,,,,,,,,,,,,,3,11,0,8,1,4,3,3,2,0,2,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,38,2,2,2,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteGlobal.getDefaultSyncMode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteGlobal.getJournalSizeLimit",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteGlobal.getWALAutoCheckpoint",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteGlobal.getWALConnectionPoolSize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteGlobal.getWALSyncMode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,3,1,1,3,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteGlobal.releaseMemory",,,,,,,,,,,,,,,,,,,,,,,,,,,1,9,0,3,1,1,6,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,00,1,1,1,1
+Public Abstract Class,"io.requery.android.database.sqlite.SQLiteOpenHelper",2,2,3,1,24,0,12,11,2,6,6,2,,0,2,,,,14,8,14,14,0,1,1,12,,384,28,164,49,92,192,,,,65,105,33,72,,,,,,18,18,21,4,,1,5,,81,59,1,17,35,35,41,15
+Public Constructor,"io.requery.android.database.sqlite.SQLiteOpenHelper.SQLiteOpenHelper",,,,,,,,,,,,,,,,,,,,,,,,,,,5,19,0,6,4,1,13,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,17,1,1,1,1
+Public Constructor,"io.requery.android.database.sqlite.SQLiteOpenHelper.SQLiteOpenHelper",,,,,,,,,,,,,,,,,,,,,,,,,,,7,29,1,11,4,6,17,6,2,0,6,8,1,7,2,2,2,1,0,,,,,0,,1,0,,,1,55,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.close",,,,,,,,,,,,,,,,,,,,,,,,,,,3,11,1,7,1,4,3,3,4,1,3,6,1,5,3,3,4,1,0,,,,,0,,1,0,,,0,43,3,3,4,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.createConfiguration",,,,,,,,,,,,,,,,,,,,,,,,,,,4,13,0,4,2,1,9,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,25,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked",,,,,,,,,,,,,,,,,,,,,,,,,,,17,95,9,84,13,63,2,24,589,3,35,54,9,45,18,18,21,4,10,,,,,4,,5,4,,,0,02,18,18,21,4
+Public Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.getDatabaseName",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,0,3,1,1,4,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.getReadableDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,0,23,0,5,1,2,18,2,1,0,1,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,3,60,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.getWritableDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,2,24,0,5,1,2,19,2,1,0,1,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,3,80,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.onConfigure",,,,,,,,,,,,,,,,,,,,,,,,,,,1,18,0,1,1,0,17,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,17,00,1,1,1,1
+Public Abstract Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.onCreate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,0,1,1,0,6,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,6,00,0,0,0,0
+Public Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.onDowngrade",,,,,,,,,,,,,,,,,,,,,,,,,,,3,20,0,4,1,2,16,0,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,4,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.onOpen",,,,,,,,,,,,,,,,,,,,,,,,,,,1,14,0,1,1,0,13,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,13,00,1,1,1,1
+Public Abstract Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.onUpgrade",,,,,,,,,,,,,,,,,,,,,,,,,,,1,21,0,1,1,0,20,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,20,00,0,0,0,0
+Public Method,"io.requery.android.database.sqlite.SQLiteOpenHelper.setWriteAheadLoggingEnabled",,,,,,,,,,,,,,,,,,,,,,,,,,,3,25,0,14,1,8,11,5,4,1,3,8,1,7,4,4,6,1,1,,,,,0,,3,0,,,0,79,4,4,6,1
+Public Abstract Class,"io.requery.android.database.sqlite.SQLiteProgram",2,1,2,1,10,0,6,2,2,4,4,2,,0,1,,,,18,6,18,22,5,1,4,8,,221,23,139,38,75,59,,,,54,89,31,58,,,,,,7,7,8,1,,2,2,,84,70,0,42,36,34,39,18
+Constructor,"io.requery.android.database.sqlite.SQLiteProgram.SQLiteProgram",,,,,,,,,,,,,,,,,,,,,,,,,,,18,42,4,38,5,31,0,13,12,1,18,23,4,19,7,5,8,1,2,,,,,0,,2,0,,,0,00,7,5,8,1
+Private Method,"io.requery.android.database.sqlite.SQLiteProgram.bind",,,,,,,,,,,,,,,,,,,,,,,,,,,8,8,0,8,1,5,0,1,2,0,2,4,1,3,2,2,3,1,0,,,,,0,,1,0,,,0,00,2,2,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteProgram.bindAllArgsAsStrings",,,,,,,,,,,,,,,,,,,,,,,,,,,8,12,0,7,1,3,5,1,3,0,3,6,2,4,3,3,3,1,0,,,,,0,,2,0,,,0,71,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteProgram.bindBlob",,,,,,,,,,,,,,,,,,,,,,,,,,,3,13,0,6,1,3,7,1,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,1,17,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteProgram.bindDouble",,,,,,,,,,,,,,,,,,,,,,,,,,,4,10,0,3,1,1,7,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteProgram.bindLong",,,,,,,,,,,,,,,,,,,,,,,,,,,9,10,0,3,1,1,7,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteProgram.bindNull",,,,,,,,,,,,,,,,,,,,,,,,,,,2,9,0,3,1,1,6,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteProgram.bindObject",,,,,,,,,,,,,,,,,,,,,,,,,,,2,28,0,20,2,16,8,8,7,1,8,15,2,13,7,7,8,1,6,,,,,0,,2,0,,,0,40,7,7,8,1
+Public Method,"io.requery.android.database.sqlite.SQLiteProgram.bindString",,,,,,,,,,,,,,,,,,,,,,,,,,,9,13,0,6,1,3,7,1,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,1,17,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteProgram.clearBindings",,,,,,,,,,,,,,,,,,,,,,,,,,,4,8,0,5,1,2,3,1,2,0,1,3,1,2,2,2,2,1,0,,,,,0,,1,0,,,0,60,2,2,2,1
+Method,"io.requery.android.database.sqlite.SQLiteProgram.getBindArgs",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"io.requery.android.database.sqlite.SQLiteProgram.getColumnNames",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteProgram.getConnectionFlags",,,,,,,,,,,,,,,,,,,,,,,,,,,9,4,0,3,1,1,1,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,33,1,1,1,1
+Method,"io.requery.android.database.sqlite.SQLiteProgram.getDatabase",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteProgram.getSession",,,,,,,,,,,,,,,,,,,,,,,,,,,8,4,0,3,1,1,1,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,33,1,1,1,1
+Method,"io.requery.android.database.sqlite.SQLiteProgram.getSql",,,,,,,,,,,,,,,,,,,,,,,,,,,10,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteProgram.onAllReferencesReleased",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"io.requery.android.database.sqlite.SQLiteProgram.onCorruption",,,,,,,,,,,,,,,,,,,,,,,,,,,8,4,0,3,1,1,1,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,33,1,1,1,1
+Public Class,"io.requery.android.database.sqlite.SQLiteQuery",1,1,1,1,14,0,9,5,1,3,3,0,,0,1,,,,3,1,3,25,2,0,0,1,,60,4,34,8,21,22,,,,14,20,6,14,,,,,,3,3,3,3,,3,2,,33,33,0,65,5,5,5,5
+Constructor,"io.requery.android.database.sqlite.SQLiteQuery.SQLiteQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,0,5,2,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"io.requery.android.database.sqlite.SQLiteQuery.fillWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,9,36,0,21,1,17,15,11,3,0,9,12,1,11,3,3,3,3,5,,,,,3,,2,3,,,0,71,3,3,3,3
+Public Method,"io.requery.android.database.sqlite.SQLiteQuery.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"io.requery.android.database.sqlite.SQLiteQueryBuilder",2,2,3,1,28,1,11,15,1,2,2,0,,3,2,,,,16,6,19,19,0,2,0,17,,578,42,237,72,146,305,,,,105,156,55,101,,,,,,9,9,12,9,,1,4,,83,64,1,29,51,51,62,27
+Public Constructor,"io.requery.android.database.sqlite.SQLiteQueryBuilder.SQLiteQueryBuilder",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.appendClause",,,,,,,,,,,,,,,,,,,,,,,,,,,5,6,0,6,1,3,0,2,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.appendColumns",,,,,,,,,,,,,,,,,,,,,,,,,,,4,19,2,13,3,8,4,1,4,1,7,11,4,7,4,4,4,1,0,,,,,0,,3,0,,,0,31,4,4,4,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.appendWhere",,,,,,,,,,,,,,,,,,,,,,,,,,,2,18,0,9,1,5,9,3,4,1,3,6,1,5,3,3,3,1,0,,,,,0,,1,0,,,1,00,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.appendWhereEscapeString",,,,,,,,,,,,,,,,,,,,,,,,,,,2,19,0,9,1,5,10,4,4,1,3,6,1,5,3,3,3,1,0,,,,,0,,1,0,,,1,11,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.buildQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,11,56,5,22,6,15,29,6,6,1,10,14,4,10,4,4,6,1,0,,,,,0,,2,0,,,1,32,4,4,6,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.buildQueryString",,,,,,,,,,,,,,,,,,,,,,,,,,,12,58,3,29,4,21,26,8,16,1,15,20,2,18,5,5,8,1,1,,,,,0,,1,0,,,0,90,5,5,8,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.buildUnionQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,5,29,1,14,4,10,14,4,3,0,10,13,5,8,4,4,4,1,0,,,,,0,,2,0,,,1,00,4,4,4,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.buildUnionSubQuery",,,,,,,,,,,,,,,,,,,,,,,,,,,9,69,2,28,12,16,41,4,4,1,9,13,5,8,4,4,5,1,2,,,,,0,,2,0,,,1,46,4,4,5,1
+Private Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.computeProjection",,,,,,,,,,,,,,,,,,,,,,,,,,,6,49,6,40,10,31,3,11,10,1,22,31,11,20,9,9,12,9,7,,,,,7,,4,7,,,0,07,9,9,12,9
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.getTables",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,3,1,1,5,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.query",,,,,,,,,,,,,,,,,,,,,,,,,,,7,36,0,6,3,2,31,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,5,17,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.query",,,,,,,,,,,,,,,,,,,,,,,,,,,8,38,0,6,3,2,32,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,5,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.query",,,,,,,,,,,,,,,,,,,,,,,,,,,16,67,3,22,7,15,44,8,5,1,6,10,3,7,4,4,6,1,1,,,,,0,,1,0,,,2,00,4,4,6,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.setCursorFactory",,,,,,,,,,,,,,,,,,,,,,,,,,,1,10,0,3,1,1,7,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,33,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.setDistinct",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,3,1,1,5,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.setProjectionMap",,,,,,,,,,,,,,,,,,,,,,,,,,,1,14,0,3,1,1,11,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,67,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.setStrict",,,,,,,,,,,,,,,,,,,,,,,,,,,1,24,0,3,1,1,21,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,7,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteQueryBuilder.setTables",,,,,,,,,,,,,,,,,,,,,,,,,,,1,11,0,3,1,1,8,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,2,67,1,1,1,1
+Public Class,"io.requery.android.database.sqlite.SQLiteSession",2,2,3,1,26,1,13,12,1,6,6,0,,0,3,,,,27,6,27,27,0,11,0,16,,942,68,389,73,240,526,,,,149,238,53,185,,,,,,10,9,11,4,,1,4,,78,36,1,35,79,76,85,30
+Public Constructor,"io.requery.android.database.sqlite.SQLiteSession.SQLiteSession",,,,,,,,,,,,,,,,,,,,,,,,,,,2,12,1,6,1,3,5,2,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,83,2,2,2,1
+Private Static Class,"io.requery.android.database.sqlite.SQLiteSession.Transaction",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,5,0,0,0,0,0,0,,7,0,7,6,0,0,,,,5,6,6,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.acquireConnection",,,,,,,,,,,,,,,,,,,,,,,,,,,15,10,0,10,2,6,1,4,2,0,4,6,1,5,2,2,2,1,0,,,,,0,,1,0,,,0,10,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.beginTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,6,40,0,8,4,3,32,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,4,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.beginTransactionUnchecked",,,,,,,,,,,,,,,,,,,,,,,,,,,11,52,3,44,4,31,12,8,128,2,15,25,2,23,10,9,10,1,4,,,,,0,,4,0,,,0,27,10,9,10,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.endTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,4,26,1,5,1,3,20,2,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,4,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.endTransactionUnchecked",,,,,,,,,,,,,,,,,,,,,,,,,,,11,46,5,41,5,30,5,8,64,2,16,26,5,21,9,9,11,1,4,,,,,0,,3,0,,,0,12,9,9,11,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.execute",,,,,,,,,,,,,,,,,,,,,,,,,,,6,30,2,15,2,9,16,4,4,1,5,9,1,8,3,3,3,1,1,,,,,0,,1,0,,,1,07,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.executeForBlobFileDescriptor",,,,,,,,,,,,,,,,,,,,,,,,,,,6,35,2,16,2,10,20,5,4,1,5,9,1,8,3,3,3,1,1,,,,,0,,1,0,,,1,25,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.executeForChangedRowCount",,,,,,,,,,,,,,,,,,,,,,,,,,,6,33,2,16,2,10,18,5,4,1,5,9,1,8,3,3,3,1,1,,,,,0,,1,0,,,1,12,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.executeForCursorWindow",,,,,,,,,,,,,,,,,,,,,,,,,,,10,50,2,24,5,14,27,6,8,1,7,12,1,11,4,4,4,1,1,,,,,0,,1,0,,,1,12,4,4,4,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.executeForLastInsertedRowId",,,,,,,,,,,,,,,,,,,,,,,,,,,6,33,2,16,2,10,18,5,4,1,5,9,1,8,3,3,3,1,1,,,,,0,,1,0,,,1,12,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.executeForLong",,,,,,,,,,,,,,,,,,,,,,,,,,,6,32,2,15,2,9,18,5,4,1,5,9,1,8,3,3,3,1,1,,,,,0,,1,0,,,1,20,3,3,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.executeForString",,,,,,,,,,,,,,,,,,,,,,,,,,,6,32,2,15,2,9,18,5,4,1,5,9,1,8,3,3,3,1,1,,,,,0,,1,0,,,1,20,3,3,3,1
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.executeSpecial",,,,,,,,,,,,,,,,,,,,,,,,,,,14,45,3,21,3,16,21,6,8,1,10,13,2,11,5,3,5,1,6,,,,,0,,1,0,,,1,00,5,3,5,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.hasConnection",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,3,1,1,5,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.hasNestedTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,3,1,1,5,1,1,0,1,2,1,1,1,1,2,1,0,,,,,0,,0,0,,,1,67,1,1,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.hasTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,3,1,1,5,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.obtainTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,5,14,0,14,2,11,0,7,2,0,9,11,2,9,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.prepare",,,,,,,,,,,,,,,,,,,,,,,,,,,7,41,2,15,2,9,27,4,4,1,5,9,1,8,3,3,3,1,0,,,,,0,,1,0,,,1,80,3,3,3,1
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.recycleTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,3,0,3,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.releaseConnection",,,,,,,,,,,,,,,,,,,,,,,,,,,13,11,0,11,1,7,1,3,2,0,4,7,1,6,2,2,2,1,0,,,,,0,,2,0,,,0,09,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.setTransactionSuccessful",,,,,,,,,,,,,,,,,,,,,,,,,,,2,21,1,5,1,3,15,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,3,00,1,1,1,1
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.throwIfNestedTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,6,1,3,0,1,2,0,1,3,1,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.throwIfNoTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,1,3,0,0,2,0,1,3,1,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.throwIfTransactionMarkedSuccessful",,,,,,,,,,,,,,,,,,,,,,,,,,,5,7,0,7,1,4,0,0,2,0,1,3,1,2,2,2,3,1,0,,,,,0,,1,0,,,0,00,2,2,3,1
+Public Method,"io.requery.android.database.sqlite.SQLiteSession.yieldTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,9,72,2,19,2,13,52,5,5,1,7,11,1,10,4,4,6,4,4,,,,,4,,2,4,,,2,74,4,4,6,4
+Private Method,"io.requery.android.database.sqlite.SQLiteSession.yieldTransactionUnchecked",,,,,,,,,,,,,,,,,,,,,,,,,,,9,27,4,22,5,15,3,6,8,1,9,14,4,10,5,5,5,1,2,,,,,0,,2,0,,,0,14,5,5,5,1
+Public Class,"io.requery.android.database.sqlite.SQLiteStatement",1,1,1,1,15,0,9,5,2,2,2,0,,0,0,,,,8,0,8,30,1,0,0,7,,146,8,85,15,55,53,,,,32,47,9,38,,,,,,2,2,2,1,,3,1,,0,0,0,62,14,14,14,8
+Constructor,"io.requery.android.database.sqlite.SQLiteStatement.SQLiteStatement",,,,,,,,,,,,,,,,,,,,,,,,,,,10,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"io.requery.android.database.sqlite.SQLiteStatement.execute",,,,,,,,,,,,,,,,,,,,,,,,,,,8,17,0,11,1,8,6,8,2,0,5,7,1,6,2,2,2,1,1,,,,,0,,1,0,,,0,55,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteStatement.executeInsert",,,,,,,,,,,,,,,,,,,,,,,,,,,3,20,0,12,1,9,8,9,2,0,5,7,1,6,2,2,2,1,3,,,,,0,,1,0,,,0,67,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteStatement.executeUpdateDelete",,,,,,,,,,,,,,,,,,,,,,,,,,,6,19,0,12,1,9,7,9,2,0,5,7,1,6,2,2,2,1,3,,,,,0,,1,0,,,0,58,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteStatement.simpleQueryForBlobFileDescriptor",,,,,,,,,,,,,,,,,,,,,,,,,,,2,20,0,12,1,9,8,9,2,0,5,7,1,6,2,2,2,1,3,,,,,0,,1,0,,,0,67,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteStatement.simpleQueryForLong",,,,,,,,,,,,,,,,,,,,,,,,,,,4,20,0,12,1,9,8,9,2,0,5,7,1,6,2,2,2,1,3,,,,,0,,1,0,,,0,67,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteStatement.simpleQueryForString",,,,,,,,,,,,,,,,,,,,,,,,,,,5,20,0,12,1,9,8,9,2,0,5,7,1,6,2,2,2,1,3,,,,,0,,1,0,,,0,67,2,2,2,1
+Public Method,"io.requery.android.database.sqlite.SQLiteStatement.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"io.requery.android.database.sqlite.SQLiteStatementInfo",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,3,0,0,0,0,0,0,,21,2,5,4,0,14,,,,3,4,4,0,,,,,,0,0,0,0,,1,0,,0,0,2,80,0,0,0,0
+Class,"io.requery.android.database.sqlite.SQLiteStatementType",9,2,9,6,26,0,19,7,1,0,0,0,,1,10,,,,1,0,2,2,0,1,0,1,,77,3,50,14,42,24,,,,24,29,14,15,,,,,,18,3,18,12,,1,1,,0,0,0,48,19,4,19,13
+Private Constructor,"io.requery.android.database.sqlite.SQLiteStatementType.SQLiteStatementType",,,,,,,,,,,,,,,,,,,,,,,,,,,0,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"io.requery.android.database.sqlite.SQLiteStatementType.getSqlStatementType",,,,,,,,,,,,,,,,,,,,,,,,,,,15,50,0,36,2,32,14,5,12,1,14,17,2,15,18,3,18,12,56,,,,,56,,1,56,,,0,39,18,3,18,12

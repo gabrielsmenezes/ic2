@@ -1,0 +1,67 @@
+Kind,Name,AvgCyclomatic,AvgCyclomaticModified,AvgCyclomaticStrict,AvgEssential,AvgLine,AvgLineBlank,AvgLineCode,AvgLineComment,CountClassBase,CountClassCoupled,CountClassCoupledModified,CountClassDerived,CountDeclClass,CountDeclClassMethod,CountDeclClassVariable,CountDeclExecutableUnit,CountDeclFile,CountDeclFunction,CountDeclInstanceMethod,CountDeclInstanceVariable,CountDeclMethod,CountDeclMethodAll,CountDeclMethodDefault,CountDeclMethodPrivate,CountDeclMethodProtected,CountDeclMethodPublic,CountInput,CountLine,CountLineBlank,CountLineCode,CountLineCodeDecl,CountLineCodeExe,CountLineComment,CountOutput,CountPath,CountPathLog,CountSemicolon,CountStmt,CountStmtDecl,CountStmtExe,Cyclomatic,CyclomaticModified,CyclomaticStrict,Essential,Knots,MaxCyclomatic,MaxCyclomaticModified,MaxCyclomaticStrict,MaxEssential,MaxEssentialKnots,MaxInheritanceTree,MaxNesting,MinEssentialKnots,PercentLackOfCohesion,PercentLackOfCohesionModified,RatioCommentToCode,SumCyclomatic,SumCyclomaticModified,SumCyclomaticStrict,SumEssential
+File,"Directions.java",1,1,1,1,4,1,3,0,,,,,3,0,0,7,,3,7,9,7,,0,1,0,6,,55,17,38,18,14,0,,,,17,27,17,10,,,,,,4,4,4,1,,,3,,,,0,00,11,11,11,7
+File,"Legs.java",2,2,2,1,7,1,6,0,,,,,1,0,0,5,,5,5,3,5,,0,1,0,4,,59,15,44,18,19,0,,,,23,34,19,15,,,,,,6,6,6,1,,,3,,,,0,00,10,10,10,5
+File,"Navigator.java",2,1,2,1,12,0,8,3,,,,,3,0,0,15,,16,16,16,16,,0,2,2,12,,248,37,165,62,88,47,,,,89,121,59,62,,,,,,7,7,7,3,,,3,,,,0,28,33,29,33,17
+File,"Route.java",2,2,2,1,10,1,8,0,,,,,1,0,0,11,,11,11,9,11,,0,1,0,10,,145,36,109,40,54,0,,,,54,85,44,41,,,,,,18,18,19,1,,,5,,,,0,00,28,28,29,11
+File,"Steps.java",2,2,2,1,8,0,7,0,,,,,1,0,0,10,,10,10,7,10,,0,2,0,8,,119,24,92,34,51,3,,,,53,71,34,37,,,,,,7,7,7,1,,,2,,,,0,03,21,21,21,10
+Package,"com",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"com.tyczj",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"com.tyczj.mapnavigator",2,2,2,1,9,1,7,1,,,,,9,0,0,,5,,49,44,49,,0,7,2,40,,626,129,448,172,226,50,,,,236,338,173,165,,,,,,18,18,19,3,,,5,,,,0,11,103,99,104,50
+Public Class,"com.tyczj.mapnavigator.Directions",2,2,2,1,10,2,7,0,1,1,1,0,,0,0,,,,3,2,3,3,0,1,0,2,,47,14,33,13,14,0,,,,12,22,12,10,,,,,,4,4,4,1,,1,3,,33,16,0,00,7,7,7,3
+Public Enum Type,"com.tyczj.mapnavigator.Directions.Avoid",1,1,1,1,0,0,0,0,1,0,0,0,,0,0,,,,2,3,2,2,0,0,0,2,,3,0,3,2,0,0,,,,0,1,1,0,,,,,,1,1,1,1,,1,0,,,,0,00,2,2,2,2
+Public Method,"com.tyczj.mapnavigator.Directions.Avoid.valueOf",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Directions.Avoid.values",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"com.tyczj.mapnavigator.Directions.Directions",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,2,6,1,3,0,3,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Enum Type,"com.tyczj.mapnavigator.Directions.DrivingMode",1,1,1,1,0,0,0,0,1,0,0,0,,0,0,,,,2,4,2,2,0,0,0,2,,3,0,3,2,0,0,,,,0,1,1,0,,,,,,1,1,1,1,,1,0,,,,0,00,2,2,2,2
+Public Method,"com.tyczj.mapnavigator.Directions.DrivingMode.valueOf",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Directions.DrivingMode.values",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Directions.getRoutes",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.tyczj.mapnavigator.Directions.parseDirections",,,,,,,,,,,,,,,,,,,,,,,,,,,4,19,5,14,4,9,0,7,4,1,7,11,5,6,4,4,4,1,1,,,,,0,,3,0,,,0,00,4,4,4,1
+Public Class,"com.tyczj.mapnavigator.Legs",2,2,2,1,7,1,6,0,1,1,1,0,,0,0,,,,5,3,5,5,0,1,0,4,,51,12,39,13,19,0,,,,18,29,14,15,,,,,,6,6,6,1,,1,3,,53,40,0,00,10,10,10,5
+Public Constructor,"com.tyczj.mapnavigator.Legs.Legs",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Legs.getLegDistance",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Legs.getLegDuration",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Legs.getSteps",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.tyczj.mapnavigator.Legs.parseSteps",,,,,,,,,,,,,,,,,,,,,,,,,,,4,26,5,21,5,14,0,10,13,1,10,16,6,10,6,6,6,1,1,,,,,0,,3,0,,,0,00,6,6,6,1
+Public Class,"com.tyczj.mapnavigator.Navigator",1,1,1,1,9,0,5,3,1,4,4,0,,0,0,,,,13,16,13,13,0,2,0,11,,226,32,148,45,88,47,,,,72,104,42,62,,,,,,7,3,7,1,,1,1,,90,90,0,32,19,15,19,13
+Public Constructor,"com.tyczj.mapnavigator.Navigator.Navigator",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Interface,"com.tyczj.mapnavigator.Navigator.OnPathSetListener",0,0,0,0,0,0,0,0,0,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,3,0,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Public Abstract Method,"com.tyczj.mapnavigator.Navigator.OnPathSetListener.onPathSetListener",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Private Class,"com.tyczj.mapnavigator.Navigator.PathCreator",7,7,7,2,32,5,27,0,1,4,4,0,,0,0,,,,2,0,2,2,0,0,2,0,,72,14,58,13,40,1,,,,25,40,11,29,,,,,,7,7,7,3,,2,3,,0,0,0,02,14,14,14,4
+Protected Method,"com.tyczj.mapnavigator.Navigator.PathCreator.doInBackground",,,,,,,,,,,,,,,,,,,,,,,,,,,10,41,8,33,8,25,1,12,36,2,14,21,7,14,7,7,7,3,4,,,,,3,,2,3,,,0,03,7,7,7,3
+Protected Method,"com.tyczj.mapnavigator.Navigator.PathCreator.onPostExecute",,,,,,,,,,,,,,,,,,,,,,,,,,,7,24,3,21,2,15,0,8,11,1,11,18,3,15,7,7,7,1,2,,,,,0,,3,0,,,0,00,7,7,7,1
+Public Method,"com.tyczj.mapnavigator.Navigator.findDirections",,,,,,,,,,,,,,,,,,,,,,,,,,,1,13,0,4,1,2,9,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,2,25,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Navigator.getDirections",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,0,3,1,1,4,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Navigator.getEndPoint",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,0,3,1,1,4,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Navigator.getPathLines",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Navigator.getStartPoint",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,0,3,1,1,4,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,33,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Navigator.setMode",,,,,,,,,,,,,,,,,,,,,,,,,,,3,42,2,30,1,26,10,3,15,1,16,19,1,18,7,3,7,1,13,,,,,0,,1,0,,,0,33,7,3,7,1
+Public Method,"com.tyczj.mapnavigator.Navigator.setOnPathSetListener",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Navigator.setPathBorderColor",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Navigator.setPathColor",,,,,,,,,,,,,,,,,,,,,,,,,,,1,13,0,3,1,1,10,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,3,33,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Navigator.setPathLineWidth",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,3,1,1,5,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Private Method,"com.tyczj.mapnavigator.Navigator.showBorderPath",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,6,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.tyczj.mapnavigator.Navigator.showPath",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,6,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.tyczj.mapnavigator.Route",2,2,2,1,10,1,8,0,1,2,2,0,,0,0,,,,11,9,11,11,0,1,0,10,,134,32,102,33,54,0,,,,47,78,37,41,,,,,,18,18,19,1,,1,5,,81,72,0,00,28,28,29,11
+Public Constructor,"com.tyczj.mapnavigator.Route.Route",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Route.getDistance",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Route.getDuration",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Route.getEndAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Route.getEndLocation",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Route.getLegs",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Route.getMapBounds",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Route.getPath",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Route.getStartAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Route.getStartLocation",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.tyczj.mapnavigator.Route.parseRoute",,,,,,,,,,,,,,,,,,,,,,,,,,,5,80,19,61,13,42,0,19,4537,4,28,48,17,31,18,18,19,1,1,,,,,0,,5,0,,,0,00,18,18,19,1
+Public Class,"com.tyczj.mapnavigator.Steps",2,2,2,1,8,0,7,0,1,0,0,0,,0,0,,,,10,7,10,10,0,2,0,8,,110,20,87,29,51,3,,,,48,66,29,37,,,,,,7,7,7,1,,1,2,,78,68,0,03,21,21,21,10
+Public Constructor,"com.tyczj.mapnavigator.Steps.Steps",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.tyczj.mapnavigator.Steps.decodePoly",,,,,,,,,,,,,,,,,,,,,,,,,,,3,28,1,25,7,22,2,3,2,0,19,21,7,14,6,6,6,1,0,,,,,0,,2,0,,,0,08,6,6,6,1
+Public Method,"com.tyczj.mapnavigator.Steps.getEndStepPosition",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Steps.getSpetLinePoints",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Steps.getStepDistance",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Steps.getStepDuration",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Steps.getStepInstructions",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Steps.getStepStartPosition",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.tyczj.mapnavigator.Steps.getStepTravelMode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.tyczj.mapnavigator.Steps.parseStep",,,,,,,,,,,,,,,,,,,,,,,,,,,3,36,7,28,6,20,1,12,33,2,13,20,6,14,7,7,7,1,1,,,,,0,,2,0,,,0,04,7,7,7,1

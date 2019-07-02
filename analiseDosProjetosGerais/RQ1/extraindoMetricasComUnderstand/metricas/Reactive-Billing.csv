@@ -1,0 +1,315 @@
+Kind,Name,AvgCyclomatic,AvgCyclomaticModified,AvgCyclomaticStrict,AvgEssential,AvgLine,AvgLineBlank,AvgLineCode,AvgLineComment,CountClassBase,CountClassCoupled,CountClassCoupledModified,CountClassDerived,CountDeclClass,CountDeclClassMethod,CountDeclClassVariable,CountDeclExecutableUnit,CountDeclFile,CountDeclFunction,CountDeclInstanceMethod,CountDeclInstanceVariable,CountDeclMethod,CountDeclMethodAll,CountDeclMethodDefault,CountDeclMethodPrivate,CountDeclMethodProtected,CountDeclMethodPublic,CountInput,CountLine,CountLineBlank,CountLineCode,CountLineCodeDecl,CountLineCodeExe,CountLineComment,CountOutput,CountPath,CountPathLog,CountSemicolon,CountStmt,CountStmtDecl,CountStmtExe,Cyclomatic,CyclomaticModified,CyclomaticStrict,Essential,Knots,MaxCyclomatic,MaxCyclomaticModified,MaxCyclomaticStrict,MaxEssential,MaxEssentialKnots,MaxInheritanceTree,MaxNesting,MinEssentialKnots,PercentLackOfCohesion,PercentLackOfCohesionModified,RatioCommentToCode,SumCyclomatic,SumCyclomaticModified,SumCyclomaticStrict,SumEssential
+File,"App.java",1,1,1,1,5,0,5,0,,,,,2,0,0,2,,2,2,0,2,,0,0,0,2,,22,3,16,8,5,3,,,,8,11,8,3,,,,,,1,1,1,1,,,0,,,,0,19,2,2,2,2
+File,"ApplicationTest.java",1,1,1,1,3,0,3,0,,,,,1,0,0,1,,1,1,0,1,,0,0,0,1,,13,2,8,5,1,3,,,,4,6,5,1,,,,,,1,1,1,1,,,0,,,,0,38,1,1,1,1
+File,"BaseObservable.java",1,1,1,1,10,1,7,1,,,,,3,0,0,7,,8,8,5,8,,1,1,1,5,,114,21,80,37,36,13,,,,49,61,35,26,,,,,,3,3,3,1,,,1,,,,0,16,10,10,10,7
+File,"BillingService.java",2,2,3,1,16,3,13,0,,,,,1,0,1,6,,6,6,2,6,,0,0,0,6,,136,32,101,44,57,3,,,,71,87,46,41,,,,,,6,6,8,3,,,2,,,,0,03,15,15,19,8
+File,"BillingServiceObservable.java",1,1,1,1,3,0,3,0,,,,,1,1,0,3,,3,2,0,3,,0,1,1,1,,26,7,19,11,4,0,,,,10,14,10,4,,,,,,1,1,1,1,,,0,,,,0,00,3,3,3,3
+File,"ConsumePurchaseObservable.java",1,1,1,1,5,0,5,0,,,,,1,1,0,3,,3,2,1,3,,0,1,1,1,,35,8,27,14,8,0,,,,15,20,13,7,,,,,,2,2,2,1,,,1,,,,0,00,4,4,4,3
+File,"GetBuyIntentObservable.java",1,1,1,1,11,0,10,0,,,,,1,1,0,3,,3,2,5,3,,0,0,2,1,,64,10,54,31,17,0,,,,34,40,24,16,,,,,,3,3,3,1,,,1,,,,0,00,5,5,5,3
+File,"GetBuyIntentResponse.java",1,1,1,1,3,0,3,0,,,,,1,0,0,2,,2,2,1,2,,0,0,0,2,,20,5,12,6,3,3,,,,6,9,6,3,,,,,,1,1,1,1,,,0,,,,0,25,2,2,2,2
+File,"GetPurchasesObservable.java",1,1,1,1,5,0,5,0,,,,,1,1,0,3,,3,2,2,3,,0,0,2,1,,47,9,32,18,9,6,,,,19,24,16,8,,,,,,2,2,2,1,,,1,,,,0,19,4,4,4,3
+File,"GetPurchasesResponse.java",1,1,1,1,3,0,3,0,,,,,2,0,0,7,,7,7,5,7,,0,0,0,7,,53,13,37,17,11,3,,,,19,28,17,11,,,,,,1,1,1,1,,,0,,,,0,08,7,7,7,7
+File,"GetSkuDetailsObservable.java",1,1,1,1,5,0,5,0,,,,,1,1,0,3,,3,2,2,3,,0,0,2,1,,38,6,32,18,9,0,,,,19,24,16,8,,,,,,2,2,2,1,,,1,,,,0,00,4,4,4,3
+File,"GetSkuDetailsResponse.java",1,1,1,1,3,0,3,0,,,,,1,0,0,2,,2,2,1,2,,0,0,0,2,,22,6,13,7,3,3,,,,7,10,7,3,,,,,,1,1,1,1,,,0,,,,0,23,2,2,2,2
+File,"InventoryAdapter.java",1,1,1,1,4,0,4,0,,,,,4,0,0,7,,8,8,4,8,,1,0,0,7,,62,13,49,26,16,0,,,,24,34,24,10,,,,,,1,1,1,1,,,0,,,,0,00,7,7,7,7
+File,"InventoryFragment.java",1,1,1,1,9,0,8,0,,,,,12,0,0,21,,21,21,4,21,,0,6,0,15,,210,30,174,50,100,6,,,,76,103,56,47,,,,,,2,2,2,1,,,1,,,,0,03,26,26,26,21
+File,"InventoryRowView.java",1,1,1,1,7,1,6,0,,,,,1,0,0,2,,2,2,2,2,,0,0,0,2,,39,10,26,18,8,3,,,,20,23,18,5,,,,,,1,1,1,1,,,0,,,,0,12,2,2,2,2
+File,"IsBillingSupportedObservable.java",1,1,1,1,5,0,5,0,,,,,1,1,0,3,,3,2,1,3,,0,1,1,1,,36,8,28,15,8,0,,,,16,21,14,7,,,,,,2,2,2,1,,,1,,,,0,00,4,4,4,3
+File,"Logger.java",1,1,1,1,3,0,2,1,,,,,2,0,0,1,,2,2,1,2,,1,0,0,1,,11,2,8,5,2,1,,,,3,5,5,0,,,,,,1,1,1,1,,,0,,,,0,12,1,1,1,1
+File,"MainActivity.java",1,1,1,1,15,3,12,0,,,,,2,0,0,2,,2,2,0,2,,0,0,1,1,,37,8,29,14,17,0,,,,19,22,14,8,,,,,,1,1,1,1,,,0,,,,0,00,2,2,2,2
+File,"Purchase.java",1,1,1,1,3,0,3,0,,,,,1,0,0,9,,9,9,8,9,,0,0,0,9,,59,11,45,19,16,3,,,,25,35,19,16,,,,,,1,1,1,1,,,0,,,,0,07,9,9,9,9
+File,"PurchaseFlowService.java",2,2,2,1,10,1,9,0,,,,,3,0,0,6,,6,6,4,6,,3,0,0,3,,98,19,76,27,43,3,,,,42,56,28,28,,,,,,4,4,4,1,,,2,,,,0,04,13,13,13,6
+File,"PurchaseParser.java",2,2,2,1,22,2,20,0,,,,,1,1,0,1,,1,0,0,1,,0,0,0,1,,35,5,27,8,16,3,,,,11,14,8,6,,,,,,2,2,2,1,,,1,,,,0,11,2,2,2,1
+File,"PurchaseResponse.java",1,1,1,1,3,0,3,0,,,,,1,0,0,7,,7,7,5,7,,0,0,0,7,,51,11,37,17,12,3,,,,20,28,16,12,,,,,,1,1,2,1,,,0,,,,0,08,7,7,8,7
+File,"PurchaseState.java",1,1,1,1,1,0,1,0,,,,,1,0,0,4,,2,4,4,4,,1,0,0,3,,19,5,11,6,2,3,,,,5,7,5,2,,,,,,1,1,1,1,,,0,,,,0,27,4,4,4,4
+File,"PurchaseStateParser.java",4,2,4,1,12,0,12,0,,,,,1,1,0,1,,1,0,0,1,,0,0,0,1,,23,4,16,4,9,3,,,,6,9,4,5,,,,,,4,2,4,1,,,1,,,,0,19,4,2,4,1
+File,"PurchaseType.java",1,1,1,1,1,0,1,0,,,,,1,0,0,4,,2,4,3,4,,1,0,0,3,,18,4,11,6,2,3,,,,5,7,5,2,,,,,,1,1,1,1,,,0,,,,0,27,4,4,4,4
+File,"PurchaseTypeParser.java",3,3,3,3,9,0,9,0,,,,,1,1,0,1,,1,0,0,1,,0,0,0,1,,20,4,13,4,6,3,,,,5,9,4,5,,,,,,3,3,3,3,,,1,,,,0,23,3,3,3,3
+File,"ReactiveBilling.java",1,1,1,1,5,0,4,0,,,,,1,4,2,15,,15,11,2,15,,3,0,0,12,,149,27,106,57,33,16,,,,50,71,44,27,,,,,,3,3,3,1,,,2,,,,0,15,19,19,19,15
+File,"ReactiveBillingShadowActivity.java",1,1,1,1,7,1,6,0,,,,,1,0,1,7,,7,7,1,7,,0,1,6,0,,90,19,58,23,25,14,,,,27,39,17,22,,,,,,2,2,2,1,,,1,,,,0,24,11,11,11,7
+File,"Response.java",1,1,1,1,3,0,3,0,,,,,1,0,0,3,,3,3,1,3,,0,0,0,3,,21,5,13,6,3,3,,,,5,9,6,3,,,,,,1,1,1,1,,,0,,,,0,23,3,3,3,3
+File,"ShopAdapter.java",1,1,1,1,4,0,4,0,,,,,4,0,0,7,,8,8,3,8,,1,0,0,7,,64,15,49,25,16,0,,,,24,34,23,11,,,,,,1,1,1,1,,,0,,,,0,00,7,7,7,7
+File,"ShopFragment.java",1,1,1,1,12,0,11,0,,,,,14,0,0,24,,24,24,5,24,,0,6,0,18,,274,37,227,56,142,10,,,,100,138,63,75,,,,,,3,3,3,1,,,1,,,,0,04,37,37,38,24
+File,"ShopRowView.java",1,1,1,1,6,0,6,0,,,,,1,0,0,2,,2,2,3,2,,0,0,0,2,,35,7,25,15,8,3,,,,19,22,15,7,,,,,,1,1,1,1,,,0,,,,0,12,2,2,2,2
+File,"SkuDetails.java",1,1,1,1,3,0,3,0,,,,,1,0,0,8,,8,8,7,8,,0,0,0,8,,59,16,40,17,14,3,,,,22,31,17,14,,,,,,1,1,1,1,,,0,,,,0,07,8,8,8,8
+File,"SkuDetailsParser.java",2,2,2,1,18,1,17,0,,,,,1,1,0,1,,1,0,0,1,,0,0,0,1,,31,5,23,7,13,3,,,,8,11,7,4,,,,,,2,2,2,1,,,1,,,,0,13,2,2,2,1
+File,"TabsAdapter.java",1,1,1,1,5,0,5,0,,,,,2,0,0,7,,8,8,1,8,,1,0,0,7,,70,13,57,25,23,0,,,,24,35,20,15,,,,,,3,2,3,1,,,1,,,,0,00,11,9,11,7
+File,"Utils.java",10,2,10,1,36,1,35,0,,,,,1,1,0,1,,1,0,0,1,,0,0,0,1,,44,3,38,4,31,3,,,,22,25,4,21,,,,,,10,2,10,1,,,1,,,,0,08,10,2,10,1
+Package,"com",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"com.github",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"com.github.lukaspili",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"com.github.lukaspili.reactivebilling",1,1,1,1,8,1,6,0,,,,,9,4,4,,6,,33,10,37,,7,1,6,23,,497,101,357,161,161,40,,,,197,264,145,119,,,,,,6,6,8,3,,,2,,,,0,11,60,60,64,38
+Public Class,"com.github.lukaspili.reactivebilling.ApplicationTest",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,7,0,4,2,1,3,,,,1,3,2,1,,,,,,1,1,1,1,,2,0,,0,0,0,75,1,1,1,1
+Public Constructor,"com.github.lukaspili.reactivebilling.ApplicationTest.ApplicationTest",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.BillingService",2,2,3,1,16,3,13,0,1,10,10,0,,0,1,,,,6,2,6,6,0,0,0,6,,114,28,83,26,57,3,,,,53,69,28,41,,,,,,6,6,8,3,,1,2,,0,0,0,04,15,15,19,8
+Public Constructor,"com.github.lukaspili.reactivebilling.BillingService.BillingService",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.BillingService.consumePurchase",,,,,,,,,,,,,,,,,,,,,,,,,,,5,7,1,6,2,4,0,7,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.BillingService.getBuyIntent",,,,,,,,,,,,,,,,,,,,,,,,,,,7,15,4,11,4,8,0,10,2,0,7,9,4,5,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.BillingService.getPurchases",,,,,,,,,,,,,,,,,,,,,,,,,,,6,27,5,22,7,17,0,15,4,1,14,18,8,10,4,4,6,1,1,,,,,0,,2,0,,,0,00,4,4,6,1
+Public Method,"com.github.lukaspili.reactivebilling.BillingService.getSkuDetails",,,,,,,,,,,,,,,,,,,,,,,,,,,6,38,9,29,6,21,0,17,10,1,19,25,7,18,6,6,8,3,2,,,,,2,,2,2,,,0,00,6,6,8,3
+Public Method,"com.github.lukaspili.reactivebilling.BillingService.isBillingSupported",,,,,,,,,,,,,,,,,,,,,,,,,,,5,7,1,6,2,4,0,8,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Interface,"com.github.lukaspili.reactivebilling.Logger",0,0,0,0,0,0,0,0,0,0,0,2,,0,0,,,,1,1,1,1,1,0,0,0,,9,1,7,4,2,1,,,,2,4,4,0,,,,,,0,0,0,0,,0,0,,0,0,0,14,0,0,0,0
+Anonymous Class,"com.github.lukaspili.reactivebilling.Logger.(Anon_1)",1,1,1,1,3,0,2,1,2,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,4,0,3,1,2,1,,,,0,1,1,0,,,,,,1,1,1,1,,1,0,,0,0,0,33,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.Logger.(Anon_1).log",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,2,0,1,1,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,50,1,1,1,1
+Abstract Method,"com.github.lukaspili.reactivebilling.Logger.log",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Class,"com.github.lukaspili.reactivebilling.PurchaseFlowService",2,2,2,1,11,1,10,0,1,5,5,0,,0,0,,,,4,4,4,4,3,0,0,1,,82,15,64,15,43,3,,,,30,44,16,28,,,,,,4,4,4,1,,1,2,,62,62,0,05,9,9,9,4
+Anonymous Class,"com.github.lukaspili.reactivebilling.PurchaseFlowService.(Anon_1)",2,2,2,1,8,1,7,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,10,1,9,1,7,0,,,,3,5,1,4,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.PurchaseFlowService.(Anon_1).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,1,7,0,5,0,4,2,0,3,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.PurchaseFlowService.(Anon_2)",2,2,2,1,8,1,7,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,10,1,9,0,7,0,,,,3,5,1,4,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.PurchaseFlowService.(Anon_2).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,1,7,0,5,0,4,2,0,3,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Constructor,"com.github.lukaspili.reactivebilling.PurchaseFlowService.PurchaseFlowService",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"com.github.lukaspili.reactivebilling.PurchaseFlowService.getObservable",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"com.github.lukaspili.reactivebilling.PurchaseFlowService.onActivityResult",,,,,,,,,,,,,,,,,,,,,,,,,,,7,24,3,21,5,16,0,8,6,1,11,15,5,10,4,4,4,1,2,,,,,0,,2,0,,,0,00,4,4,4,1
+Public Method,"com.github.lukaspili.reactivebilling.PurchaseFlowService.startFlow",,,,,,,,,,,,,,,,,,,,,,,,,,,7,17,4,13,2,9,0,6,4,1,7,10,2,8,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Class,"com.github.lukaspili.reactivebilling.ReactiveBilling",1,1,1,1,5,0,4,0,1,9,9,0,,4,2,,,,11,2,15,15,3,0,0,12,,123,21,86,37,33,16,,,,30,51,24,27,,,,,,3,3,3,1,,1,2,,75,68,0,19,19,19,19,15
+Constructor,"com.github.lukaspili.reactivebilling.ReactiveBilling.ReactiveBilling",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.consumePurchase",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.getBillingService",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.getInstance",,,,,,,,,,,,,,,,,,,,,,,,,,,9,6,0,6,1,3,0,5,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Static Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.getLogger",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.getPurchaseFlowService",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.getPurchases",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,2,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.getPurchases",,,,,,,,,,,,,,,,,,,,,,,,,,,5,4,0,4,2,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.getSkuDetails",,,,,,,,,,,,,,,,,,,,,,,,,,,4,9,0,9,3,5,0,5,2,0,4,6,2,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.getSkuDetails",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,2,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.isBillingSupported",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.log",,,,,,,,,,,,,,,,,,,,,,,,,,,24,21,4,14,3,10,3,11,3,0,7,11,4,7,3,3,3,1,0,,,,,0,,2,0,,,0,21,3,3,3,1
+Public Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.purchaseFlow",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.setLogger",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.ReactiveBilling.startPurchase",,,,,,,,,,,,,,,,,,,,,,,,,,,7,6,0,6,3,2,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.ReactiveBillingShadowActivity",1,1,1,1,7,1,6,0,1,2,2,0,,0,1,,,,7,1,7,7,0,1,6,0,,81,16,52,17,25,14,,,,21,33,11,22,,,,,,2,2,2,1,,2,1,,42,14,0,27,11,11,11,7
+Private Method,"com.github.lukaspili.reactivebilling.ReactiveBillingShadowActivity.handleIntent",,,,,,,,,,,,,,,,,,,,,,,,,,,5,12,2,10,2,7,0,6,2,0,5,7,2,5,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Protected Method,"com.github.lukaspili.reactivebilling.ReactiveBillingShadowActivity.onActivityResult",,,,,,,,,,,,,,,,,,,,,,,,,,,5,10,2,8,1,5,1,5,2,0,4,6,1,5,2,2,2,1,1,,,,,0,,1,0,,,0,12,2,2,2,1
+Protected Method,"com.github.lukaspili.reactivebilling.ReactiveBillingShadowActivity.onCreate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,9,2,7,1,4,0,4,2,0,3,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Protected Method,"com.github.lukaspili.reactivebilling.ReactiveBillingShadowActivity.onDestroy",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.github.lukaspili.reactivebilling.ReactiveBillingShadowActivity.onNewIntent",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.github.lukaspili.reactivebilling.ReactiveBillingShadowActivity.onRestoreInstanceState",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.github.lukaspili.reactivebilling.ReactiveBillingShadowActivity.onSaveInstanceState",,,,,,,,,,,,,,,,,,,,,,,,,,,2,7,1,6,1,3,0,2,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Package,"com.github.lukaspili.reactivebilling.model",1,1,1,1,3,0,3,0,,,,,4,0,0,,4,,25,22,25,,2,0,0,23,,155,36,107,48,34,12,,,,57,80,46,34,,,,,,1,1,1,1,,,0,,,,0,11,25,25,25,25
+Public Class,"com.github.lukaspili.reactivebilling.model.Purchase",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,9,8,9,9,0,0,0,9,,57,10,44,18,16,3,,,,24,34,18,16,,,,,,1,1,1,1,,1,0,,77,77,0,07,9,9,9,9
+Public Constructor,"com.github.lukaspili.reactivebilling.model.Purchase.Purchase",,,,,,,,,,,,,,,,,,,,,,,,,,,9,10,0,10,1,8,0,9,1,0,8,9,1,8,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.Purchase.getDeveloperPayload",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.Purchase.getOrderId",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.Purchase.getPackageName",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.Purchase.getProductId",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.Purchase.getPurchaseState",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.Purchase.getPurchaseTime",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.Purchase.getPurchaseToken",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.Purchase.isAutoRenewing",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Enum Type,"com.github.lukaspili.reactivebilling.model.PurchaseState",1,1,1,1,1,0,1,0,1,0,0,0,,0,0,,,,4,4,4,4,1,0,0,3,,17,4,10,5,2,3,,,,4,6,4,2,,,,,,1,1,1,1,,1,0,,,,0,30,4,4,4,4
+Constructor,"com.github.lukaspili.reactivebilling.model.PurchaseState.PurchaseState",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.PurchaseState.getValue",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.PurchaseState.valueOf",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.PurchaseState.values",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Enum Type,"com.github.lukaspili.reactivebilling.model.PurchaseType",1,1,1,1,1,0,1,0,1,0,0,0,,0,0,,,,4,3,4,4,1,0,0,3,,16,3,10,5,2,3,,,,4,6,4,2,,,,,,1,1,1,1,,1,0,,,,0,30,4,4,4,4
+Constructor,"com.github.lukaspili.reactivebilling.model.PurchaseType.PurchaseType",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.PurchaseType.getIdentifier",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.PurchaseType.valueOf",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.PurchaseType.values",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.model.SkuDetails",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,8,7,8,8,0,0,0,8,,57,15,39,16,14,3,,,,21,30,16,14,,,,,,1,1,1,1,,1,0,,75,75,0,08,8,8,8,8
+Public Constructor,"com.github.lukaspili.reactivebilling.model.SkuDetails.SkuDetails",,,,,,,,,,,,,,,,,,,,,,,,,,,8,9,0,9,1,7,0,8,1,0,7,8,1,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.SkuDetails.getDescription",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.SkuDetails.getPrice",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.SkuDetails.getPriceAmountMicros",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.SkuDetails.getPriceCurrencyCode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.SkuDetails.getProductId",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.SkuDetails.getPurchaseType",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.model.SkuDetails.getTitle",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Package,"com.github.lukaspili.reactivebilling.observable",1,1,1,1,7,0,6,0,,,,,9,6,0,,7,,20,16,26,,1,4,10,11,,360,69,272,144,91,19,,,,162,204,128,76,,,,,,3,3,3,1,,,1,,,,0,07,34,34,34,25
+Public Abstract Generic Class,"com.github.lukaspili.reactivebilling.observable.BaseObservable",1,1,1,1,14,1,10,2,2,3,3,6,,0,0,,,,4,3,4,4,1,1,1,1,,95,18,64,21,36,13,,,,33,45,19,26,,,,,,3,3,3,1,,1,1,,55,44,0,20,5,5,5,3
+Constructor,"com.github.lukaspili.reactivebilling.observable.BaseObservable.BaseObservable",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Class,"com.github.lukaspili.reactivebilling.observable.BaseObservable.Connection",1,1,1,1,9,0,6,2,2,3,3,0,,0,0,,,,3,2,3,3,0,0,0,3,,37,6,25,9,12,6,,,,12,17,7,10,,,,,,2,2,2,1,,1,1,,33,33,0,24,4,4,4,3
+Public Constructor,"com.github.lukaspili.reactivebilling.observable.BaseObservable.Connection.Connection",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.observable.BaseObservable.Connection.onServiceConnected",,,,,,,,,,,,,,,,,,,,,,,,,,,5,19,2,11,2,8,6,8,2,0,6,8,2,6,2,2,2,1,1,,,,,0,,1,0,,,0,55,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.observable.BaseObservable.Connection.onServiceDisconnected",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,1,2,0,4,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+TypeVariable,"com.github.lukaspili.reactivebilling.observable.BaseObservable.T",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Public Method,"com.github.lukaspili.reactivebilling.observable.BaseObservable.call",,,,,,,,,,,,,,,,,,,,,,,,,,,5,37,5,25,4,20,7,13,4,1,14,18,5,13,3,3,3,1,1,,,,,0,,1,0,,,0,28,3,3,3,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.observable.BaseObservable.call.(Anon_1)",1,1,1,1,4,0,4,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,6,0,6,0,5,0,,,,2,3,1,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.observable.BaseObservable.call.(Anon_1).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,0,3,0,4,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.github.lukaspili.reactivebilling.observable.BaseObservable.deliverBillingService",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,1,2,0,4,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Abstract Method,"com.github.lukaspili.reactivebilling.observable.BaseObservable.onBillingServiceReady",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Class,"com.github.lukaspili.reactivebilling.observable.BillingServiceObservable",1,1,1,1,3,0,3,0,1,1,1,0,,1,0,,,,2,0,3,7,0,1,1,1,,16,3,13,5,4,0,,,,4,8,4,4,,,,,,1,1,1,1,,2,0,,0,0,0,00,3,3,3,3
+Private Constructor,"com.github.lukaspili.reactivebilling.observable.BillingServiceObservable.BillingServiceObservable",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.github.lukaspili.reactivebilling.observable.BillingServiceObservable.create",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.github.lukaspili.reactivebilling.observable.BillingServiceObservable.onBillingServiceReady",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.observable.ConsumePurchaseObservable",1,1,1,1,5,0,5,0,1,1,1,0,,1,0,,,,2,1,3,7,0,1,1,1,,23,4,19,6,8,0,,,,7,12,5,7,,,,,,2,2,2,1,,2,1,,33,0,0,00,4,4,4,3
+Private Constructor,"com.github.lukaspili.reactivebilling.observable.ConsumePurchaseObservable.ConsumePurchaseObservable",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.github.lukaspili.reactivebilling.observable.ConsumePurchaseObservable.create",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.github.lukaspili.reactivebilling.observable.ConsumePurchaseObservable.onBillingServiceReady",,,,,,,,,,,,,,,,,,,,,,,,,,,4,8,0,8,1,5,0,4,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"com.github.lukaspili.reactivebilling.observable.GetBuyIntentObservable",1,1,1,1,11,0,10,0,1,6,6,0,,1,0,,,,2,5,3,7,0,0,2,1,,46,6,40,17,17,0,,,,20,26,10,16,,,,,,3,3,3,1,,2,1,,33,0,0,00,5,5,5,3
+Protected Constructor,"com.github.lukaspili.reactivebilling.observable.GetBuyIntentObservable.GetBuyIntentObservable",,,,,,,,,,,,,,,,,,,,,,,,,,,7,8,0,8,1,6,0,7,1,0,6,7,1,6,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.github.lukaspili.reactivebilling.observable.GetBuyIntentObservable.create",,,,,,,,,,,,,,,,,,,,,,,,,,,7,8,0,8,6,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.github.lukaspili.reactivebilling.observable.GetBuyIntentObservable.onBillingServiceReady",,,,,,,,,,,,,,,,,,,,,,,,,,,8,17,2,15,2,10,0,10,3,0,8,11,2,9,3,3,3,1,2,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Class,"com.github.lukaspili.reactivebilling.observable.GetPurchasesObservable",1,1,1,1,5,0,5,0,1,2,2,0,,1,0,,,,2,2,3,7,0,0,2,1,,33,5,22,8,9,6,,,,9,14,6,8,,,,,,2,2,2,1,,2,1,,33,0,0,27,4,4,4,3
+Protected Constructor,"com.github.lukaspili.reactivebilling.observable.GetPurchasesObservable.GetPurchasesObservable",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.github.lukaspili.reactivebilling.observable.GetPurchasesObservable.create",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,2,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.github.lukaspili.reactivebilling.observable.GetPurchasesObservable.onBillingServiceReady",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,0,8,1,5,0,4,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"com.github.lukaspili.reactivebilling.observable.GetSkuDetailsObservable",1,1,1,1,5,0,5,0,1,2,2,0,,1,0,,,,2,2,3,7,0,0,2,1,,26,4,22,8,9,0,,,,9,14,6,8,,,,,,2,2,2,1,,2,1,,33,0,0,00,4,4,4,3
+Protected Constructor,"com.github.lukaspili.reactivebilling.observable.GetSkuDetailsObservable.GetSkuDetailsObservable",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.github.lukaspili.reactivebilling.observable.GetSkuDetailsObservable.create",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,2,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.github.lukaspili.reactivebilling.observable.GetSkuDetailsObservable.onBillingServiceReady",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,0,8,1,5,0,4,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"com.github.lukaspili.reactivebilling.observable.IsBillingSupportedObservable",1,1,1,1,5,0,5,0,1,2,2,0,,1,0,,,,2,1,3,7,0,1,1,1,,23,4,19,6,8,0,,,,7,12,5,7,,,,,,2,2,2,1,,2,1,,33,0,0,00,4,4,4,3
+Private Constructor,"com.github.lukaspili.reactivebilling.observable.IsBillingSupportedObservable.IsBillingSupportedObservable",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"com.github.lukaspili.reactivebilling.observable.IsBillingSupportedObservable.create",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Method,"com.github.lukaspili.reactivebilling.observable.IsBillingSupportedObservable.onBillingServiceReady",,,,,,,,,,,,,,,,,,,,,,,,,,,4,8,0,8,1,5,0,4,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Package,"com.github.lukaspili.reactivebilling.parser",2,2,2,1,15,0,14,0,,,,,4,4,0,,4,,0,0,4,,0,0,0,4,,109,18,79,23,44,12,,,,30,43,23,20,,,,,,4,3,4,3,,,1,,,,0,15,11,9,11,6
+Public Class,"com.github.lukaspili.reactivebilling.parser.PurchaseParser",2,2,2,1,22,2,20,0,1,3,3,0,,1,0,,,,0,0,1,1,0,0,0,1,,28,3,22,3,16,3,,,,6,9,3,6,,,,,,2,2,2,1,,1,1,,0,0,0,14,2,2,2,1
+Public Static Method,"com.github.lukaspili.reactivebilling.parser.PurchaseParser.parse",,,,,,,,,,,,,,,,,,,,,,,,,,,4,22,2,20,2,16,0,8,2,0,6,8,2,6,2,2,2,1,2,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"com.github.lukaspili.reactivebilling.parser.PurchaseStateParser",4,2,4,1,12,0,12,0,1,1,1,0,,1,0,,,,0,0,1,1,0,0,0,1,,19,2,14,2,9,3,,,,4,7,2,5,,,,,,4,2,4,1,,1,1,,0,0,0,21,4,2,4,1
+Public Static Method,"com.github.lukaspili.reactivebilling.parser.PurchaseStateParser.parse",,,,,,,,,,,,,,,,,,,,,,,,,,,5,12,0,12,1,9,0,1,4,1,4,6,1,5,4,2,4,1,6,,,,,0,,1,0,,,0,00,4,2,4,1
+Public Class,"com.github.lukaspili.reactivebilling.parser.PurchaseTypeParser",3,3,3,3,9,0,9,0,1,1,1,0,,1,0,,,,0,0,1,1,0,0,0,1,,16,2,11,2,6,3,,,,3,7,2,5,,,,,,3,3,3,3,,1,1,,0,0,0,27,3,3,3,3
+Public Static Method,"com.github.lukaspili.reactivebilling.parser.PurchaseTypeParser.parse",,,,,,,,,,,,,,,,,,,,,,,,,,,4,9,0,9,1,6,0,2,3,0,3,6,1,5,3,3,3,3,2,,,,,2,,1,2,,,0,00,3,3,3,3
+Public Class,"com.github.lukaspili.reactivebilling.parser.SkuDetailsParser",2,2,2,1,18,1,17,0,1,2,2,0,,1,0,,,,0,0,1,1,0,0,0,1,,24,2,19,3,13,3,,,,4,7,3,4,,,,,,2,2,2,1,,1,1,,0,0,0,16,2,2,2,1
+Public Static Method,"com.github.lukaspili.reactivebilling.parser.SkuDetailsParser.parse",,,,,,,,,,,,,,,,,,,,,,,,,,,2,18,1,17,2,13,0,5,2,0,4,6,2,4,2,2,2,1,2,,,,,0,,1,0,,,0,00,2,2,2,1
+Package,"com.github.lukaspili.reactivebilling.response",1,1,1,1,3,0,3,0,,,,,6,0,0,,5,,21,13,21,,0,0,0,21,,167,40,112,53,32,15,,,,57,84,52,32,,,,,,1,1,2,1,,,0,,,,0,13,21,21,22,21
+Public Class,"com.github.lukaspili.reactivebilling.response.GetBuyIntentResponse",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,2,1,2,5,0,0,0,2,,16,3,10,4,3,3,,,,4,7,4,3,,,,,,1,1,1,1,,2,0,,0,0,0,30,2,2,2,2
+Public Constructor,"com.github.lukaspili.reactivebilling.response.GetBuyIntentResponse.GetBuyIntentResponse",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.GetBuyIntentResponse.getIntent",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.response.GetPurchasesResponse",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,3,2,3,6,0,0,0,3,,47,10,34,14,11,3,,,,16,25,14,11,,,,,,1,1,1,1,,2,0,,33,33,0,09,3,3,3,3
+Public Constructor,"com.github.lukaspili.reactivebilling.response.GetPurchasesResponse.GetPurchasesResponse",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"com.github.lukaspili.reactivebilling.response.GetPurchasesResponse.PurchaseResponse",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,4,3,4,4,0,0,0,4,,24,5,19,8,6,0,,,,9,14,8,6,,,,,,1,1,1,1,,1,0,,50,50,0,00,4,4,4,4
+Public Constructor,"com.github.lukaspili.reactivebilling.response.GetPurchasesResponse.PurchaseResponse.PurchaseResponse",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.GetPurchasesResponse.PurchaseResponse.getProductId",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.GetPurchasesResponse.PurchaseResponse.getPurchase",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.GetPurchasesResponse.PurchaseResponse.getSignature",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.GetPurchasesResponse.getContinuationToken",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.GetPurchasesResponse.getList",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.response.GetSkuDetailsResponse",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,2,1,2,5,0,0,0,2,,16,3,10,4,3,3,,,,4,7,4,3,,,,,,1,1,1,1,,2,0,,0,0,0,30,2,2,2,2
+Public Constructor,"com.github.lukaspili.reactivebilling.response.GetSkuDetailsResponse.GetSkuDetailsResponse",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.GetSkuDetailsResponse.getList",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.response.PurchaseResponse",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,7,5,7,10,0,0,0,7,,45,8,34,14,12,3,,,,17,25,13,12,,,,,,1,1,2,1,,2,0,,68,68,0,09,7,7,8,7
+Public Constructor,"com.github.lukaspili.reactivebilling.response.PurchaseResponse.PurchaseResponse",,,,,,,,,,,,,,,,,,,,,,,,,,,8,8,0,8,1,6,0,7,1,0,6,7,1,6,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.PurchaseResponse.getExtras",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.PurchaseResponse.getPurchase",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.PurchaseResponse.getPurchaseData",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.PurchaseResponse.getSignature",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.PurchaseResponse.isCancelled",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.PurchaseResponse.isSuccess",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,2,1,0,,,,,0,,0,0,,,0,00,1,1,2,1
+Public Class,"com.github.lukaspili.reactivebilling.response.Response",1,1,1,1,3,0,3,0,1,0,0,4,,0,0,,,,3,1,3,3,0,0,0,3,,19,4,12,5,3,3,,,,4,8,5,3,,,,,,1,1,1,1,,1,0,,0,0,0,25,3,3,3,3
+Public Constructor,"com.github.lukaspili.reactivebilling.response.Response.Response",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.Response.getResponseCode",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.response.Response.isSuccess",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Package,"com.github.lukaspili.reactivebilling.sample",2,1,2,1,9,0,9,0,,,,,7,1,0,,4,,12,1,13,,1,0,1,11,,173,27,140,51,76,6,,,,73,93,46,47,,,,,,10,2,10,1,,,1,,,,0,04,25,15,25,12
+Public Class,"com.github.lukaspili.reactivebilling.sample.App",1,1,1,1,8,0,8,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,15,1,11,3,5,3,,,,3,6,3,3,,,,,,1,1,1,1,,2,0,,0,0,0,27,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.App.onCreate",,,,,,,,,,,,,,,,,,,,,,,,,,,0,8,0,8,1,5,0,2,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.App.onCreate.(Anon_1)",1,1,1,1,3,0,3,0,2,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,4,0,4,0,3,0,,,,1,2,1,1,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.App.onCreate.(Anon_1).log",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.sample.MainActivity",1,1,1,1,25,5,20,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,1,0,,29,6,23,8,17,0,,,,13,16,8,8,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Protected Method,"com.github.lukaspili.reactivebilling.sample.MainActivity.onCreate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,25,5,20,6,17,0,9,1,0,13,15,7,8,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.MainActivity.onCreate.(Anon_1)",1,1,1,1,6,1,5,0,1,3,3,0,,0,0,,,,1,0,1,1,0,0,0,1,,8,1,7,1,6,0,,,,3,4,2,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.MainActivity.onCreate.(Anon_1).onTabSelected",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,1,5,1,4,0,4,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.sample.TabsAdapter",1,1,1,1,5,0,5,0,1,2,2,0,,0,0,,,,7,1,7,7,0,0,0,7,,58,10,48,17,23,0,,,,16,27,12,15,,,,,,3,2,3,1,,2,1,,57,57,0,00,11,9,11,7
+Public Interface,"com.github.lukaspili.reactivebilling.sample.TabsAdapter.Tab",0,0,0,0,0,0,0,0,0,0,0,2,,0,0,,,,1,0,1,1,1,0,0,0,,4,1,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Abstract Method,"com.github.lukaspili.reactivebilling.sample.TabsAdapter.Tab.didFocus",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Constructor,"com.github.lukaspili.reactivebilling.sample.TabsAdapter.TabsAdapter",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.TabsAdapter.destroyItem",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.TabsAdapter.getCount",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.TabsAdapter.getItem",,,,,,,,,,,,,,,,,,,,,,,,,,,1,10,0,10,1,7,0,1,3,0,3,5,1,4,3,2,3,1,3,,,,,0,,1,0,,,0,00,3,2,3,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.TabsAdapter.getPageTitle",,,,,,,,,,,,,,,,,,,,,,,,,,,1,10,0,10,1,7,0,1,3,0,3,5,1,4,3,2,3,1,3,,,,,0,,1,0,,,0,00,3,2,3,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.TabsAdapter.getRegisteredFragment",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.TabsAdapter.instantiateItem",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,2,3,0,3,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.sample.Utils",10,2,10,1,36,1,35,0,1,0,0,0,,1,0,,,,0,0,1,1,0,0,0,1,,42,2,37,3,31,3,,,,21,24,3,21,,,,,,10,2,10,1,,1,1,,0,0,0,08,10,2,10,1
+Public Static Method,"com.github.lukaspili.reactivebilling.sample.Utils.getMessage",,,,,,,,,,,,,,,,,,,,,,,,,,,4,36,1,35,2,31,0,2,10,1,21,23,2,21,10,2,10,1,45,,,,,0,,1,0,,,0,00,10,2,10,1
+Package,"com.github.lukaspili.reactivebilling.sample.inventory",1,1,1,1,8,0,7,0,,,,,17,0,0,,3,,31,10,31,,1,6,0,24,,311,53,249,94,124,9,,,,120,160,98,62,,,,,,2,2,2,1,,,1,,,,0,04,35,35,35,30
+Public Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter",1,1,1,1,4,0,4,0,1,4,4,0,,0,0,,,,5,3,5,5,0,0,0,5,,49,9,40,18,16,0,,,,16,26,16,10,,,,,,1,1,1,1,,2,0,,66,66,0,00,5,5,5,5
+Interface,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.DidClickItem",0,0,0,0,0,0,0,0,0,1,1,1,,0,0,,,,1,0,1,1,1,0,0,0,,3,0,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Abstract Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.DidClickItem.onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Static Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.ViewHolder",1,1,1,1,4,0,4,0,1,1,1,0,,0,0,,,,1,1,1,1,0,0,0,1,,8,1,7,3,2,0,,,,3,5,3,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Constructor,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.ViewHolder.ViewHolder",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.bind",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.bind",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.getItemCount",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.onBindViewHolder",,,,,,,,,,,,,,,,,,,,,,,,,,,5,10,0,10,2,7,0,3,1,0,4,6,3,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.onBindViewHolder.(Anon_1)",1,1,1,1,3,0,3,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.onBindViewHolder.(Anon_1).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryAdapter.onCreateViewHolder",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,4,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment",1,1,1,1,14,1,13,0,2,7,7,0,,0,0,,,,10,4,10,10,0,6,0,4,,177,25,146,22,100,6,,,,48,75,28,47,,,,,,2,2,2,1,,2,1,,82,82,0,04,13,13,13,10
+Private Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.consume",,,,,,,,,,,,,,,,,,,,,,,,,,,2,17,0,17,1,13,0,9,1,0,3,6,3,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.consume.(Anon_10)",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.consume.(Anon_10).call",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.consume.(Anon_9)",1,1,1,1,3,0,3,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.consume.(Anon_9).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didFailConsumePurchase",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,1,2,1,0,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didFailGetPurchases",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,1,2,1,0,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didFocus",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,1,2,0,4,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didSucceedConsumePurchase",,,,,,,,,,,,,,,,,,,,,,,,,,,2,25,2,22,3,16,1,11,2,0,9,12,4,8,2,2,2,1,1,,,,,0,,0,0,,,0,05,2,2,2,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didSucceedConsumePurchase.(Anon_11)",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,4,0,4,0,3,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didSucceedConsumePurchase.(Anon_11).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didSucceedGetPurchases",,,,,,,,,,,,,,,,,,,,,,,,,,,2,21,0,20,1,15,1,9,2,0,4,8,3,5,2,2,2,1,1,,,,,0,,1,0,,,0,05,2,2,2,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didSucceedGetPurchases.(Anon_7)",1,1,1,1,3,0,3,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didSucceedGetPurchases.(Anon_7).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didSucceedGetPurchases.(Anon_8)",1,1,1,1,3,0,3,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.didSucceedGetPurchases.(Anon_8).call",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.load",,,,,,,,,,,,,,,,,,,,,,,,,,,5,23,1,22,1,18,0,11,1,0,8,13,3,10,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.load.(Anon_5)",2,2,2,1,5,0,5,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,7,0,7,0,6,0,,,,3,5,1,4,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.load.(Anon_5).call",,,,,,,,,,,,,,,,,,,,,,,,,,,2,5,0,5,0,4,0,3,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.load.(Anon_6)",2,2,2,1,5,0,5,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,7,0,7,0,6,0,,,,3,5,1,4,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.load.(Anon_6).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,5,0,4,0,3,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onActivityCreated",,,,,,,,,,,,,,,,,,,,,,,,,,,4,38,4,34,1,28,0,8,1,0,12,17,5,12,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onActivityCreated.(Anon_1)",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onActivityCreated.(Anon_1).onRefresh",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onActivityCreated.(Anon_2)",1,1,1,1,18,0,18,0,2,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,20,0,20,0,17,0,,,,4,7,3,4,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onActivityCreated.(Anon_2).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,18,0,18,0,15,0,10,1,0,4,7,3,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onActivityCreated.(Anon_2).onClick.(Anon_3)",1,1,1,1,4,0,4,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,2,3,1,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onActivityCreated.(Anon_2).onClick.(Anon_3).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,0,3,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onActivityCreated.(Anon_2).onClick.(Anon_4)",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,4,0,4,0,3,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onActivityCreated.(Anon_2).onClick.(Anon_4).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onCreateView",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,1,5,1,3,0,5,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryFragment.onDestroy",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,1,7,1,4,0,3,2,0,3,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryRowView",1,1,1,1,7,1,6,0,1,1,1,0,,0,0,,,,2,2,2,2,0,0,0,2,,25,6,16,8,8,3,,,,10,13,8,5,,,,,,1,1,1,1,,2,0,,0,0,0,19,2,2,2,2
+Public Constructor,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryRowView.InventoryRowView",,,,,,,,,,,,,,,,,,,,,,,,,,,2,7,1,6,2,4,0,6,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.inventory.InventoryRowView.bind",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,2,6,3,4,0,6,1,0,4,5,3,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Package,"com.github.lukaspili.reactivebilling.sample.shop",1,1,1,1,10,0,9,0,,,,,19,0,0,,3,,34,11,34,,1,6,0,27,,373,59,301,96,166,13,,,,143,194,101,93,,,,,,3,3,3,1,,,1,,,,0,04,46,46,47,33
+Public Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter",1,1,1,1,5,0,4,0,1,4,4,0,,0,0,,,,5,2,5,5,0,0,0,5,,51,11,40,17,16,0,,,,16,26,15,11,,,,,,1,1,1,1,,2,0,,60,60,0,00,5,5,5,5
+Interface,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.DidClickItem",0,0,0,0,0,0,0,0,0,1,1,1,,0,0,,,,1,0,1,1,1,0,0,0,,3,0,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Abstract Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.DidClickItem.onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Protected Static Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.ViewHolder",1,1,1,1,4,0,4,0,1,1,1,0,,0,0,,,,1,1,1,1,0,0,0,1,,8,1,7,3,2,0,,,,3,5,3,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Constructor,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.ViewHolder.ViewHolder",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.bind",,,,,,,,,,,,,,,,,,,,,,,,,,,2,6,1,5,1,3,0,7,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.bind",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.getItemCount",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.onBindViewHolder",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,1,10,2,7,0,3,1,0,4,6,3,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.onBindViewHolder.(Anon_1)",1,1,1,1,3,0,3,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.onBindViewHolder.(Anon_1).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopAdapter.onCreateViewHolder",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,4,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment",1,1,1,1,18,1,16,0,2,9,9,0,,0,0,,,,11,5,11,11,0,6,0,5,,241,33,198,27,142,10,,,,71,109,34,75,,,,,,3,3,3,1,,2,1,,80,80,0,05,16,16,16,11
+Private Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.didFailGetSkuDetails",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,1,2,1,0,0,0,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.didFailStartPurchase",,,,,,,,,,,,,,,,,,,,,,,,,,,3,14,1,13,1,10,0,12,1,0,3,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.didFailStartPurchase.(Anon_12)",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,4,0,4,0,3,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.didFailStartPurchase.(Anon_12).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.didFocus",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,1,2,0,4,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.didPurchase",,,,,,,,,,,,,,,,,,,,,,,,,,,2,27,2,25,3,19,0,17,3,0,11,15,4,11,3,3,3,1,2,,,,,0,,0,0,,,0,00,3,3,3,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.didPurchase.(Anon_13)",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,4,0,4,0,3,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.didPurchase.(Anon_13).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.didSucceedGetSkuDetails",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,7,1,4,1,6,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,14,2,2,2,1
+Private Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.load",,,,,,,,,,,,,,,,,,,,,,,,,,,4,23,1,22,1,18,0,11,1,0,8,13,3,10,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.load.(Anon_8)",2,2,2,1,5,0,5,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,7,0,7,0,6,0,,,,3,5,1,4,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.load.(Anon_8).call",,,,,,,,,,,,,,,,,,,,,,,,,,,2,5,0,5,0,4,0,3,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.load.(Anon_9)",2,2,2,1,5,0,5,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,7,0,7,0,6,0,,,,3,5,1,4,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.load.(Anon_9).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,5,0,4,0,3,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated",,,,,,,,,,,,,,,,,,,,,,,,,,,4,76,6,68,2,57,2,16,1,0,23,34,9,25,1,1,1,1,0,,,,,0,,0,0,,,0,03,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_1)",1,1,1,1,3,0,3,0,1,1,1,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,1,2,1,1,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_1).onRefresh",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,0,2,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_2)",1,1,1,1,19,0,19,0,2,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,21,0,21,0,18,0,,,,5,8,3,5,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_2).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,1,19,0,19,0,16,0,9,1,0,5,8,3,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_2).onClick.(Anon_3)",1,1,1,1,4,0,4,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,2,3,1,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_2).onClick.(Anon_3).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,0,3,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_2).onClick.(Anon_4)",1,1,1,1,4,0,4,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,5,0,5,0,4,0,,,,2,3,1,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_2).onClick.(Anon_4).onClick",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,0,3,0,2,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_5)",2,2,3,1,24,1,21,2,1,3,3,0,,0,0,,,,1,0,1,1,0,0,0,1,,26,1,23,1,19,2,,,,6,10,3,7,,,,,,2,2,3,1,,2,1,,0,0,0,09,2,2,3,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_5).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,24,1,21,1,17,2,18,2,0,6,10,3,7,2,2,3,1,1,,,,,0,,1,0,,,0,10,2,2,3,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_5).call.(Anon_6)",2,2,2,1,8,0,7,1,1,3,3,0,,0,0,,,,1,0,1,1,0,0,0,1,,10,0,9,0,7,1,,,,2,4,1,3,,,,,,2,2,2,1,,2,1,,0,0,0,11,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_5).call.(Anon_6).call",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,7,0,5,1,4,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,14,2,2,2,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_7)",2,2,2,1,4,0,4,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,6,0,6,0,5,0,,,,2,4,1,3,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onActivityCreated.(Anon_7).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,0,3,0,2,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onCreateView",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,1,5,1,3,0,5,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onDestroy",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,1,7,1,4,0,3,2,0,3,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.onDestroyView",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,1,7,1,4,0,3,2,0,3,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.purchaseSkuDetails",,,,,,,,,,,,,,,,,,,,,,,,,,,4,30,3,25,2,20,2,16,1,0,8,14,4,10,1,1,1,1,0,,,,,0,,0,0,,,0,08,1,1,1,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.purchaseSkuDetails.(Anon_10)",3,3,3,1,10,1,7,2,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,12,1,9,0,7,2,,,,2,5,1,4,,,,,,3,3,3,1,,2,1,,0,0,0,22,3,3,3,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.purchaseSkuDetails.(Anon_10).call",,,,,,,,,,,,,,,,,,,,,,,,,,,1,10,1,7,0,5,2,3,3,0,2,5,1,4,3,3,3,1,2,,,,,0,,1,0,,,0,29,3,3,3,1
+Anonymous Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.purchaseSkuDetails.(Anon_11)",2,2,2,1,4,0,4,0,1,2,2,0,,0,0,,,,1,0,1,1,0,0,0,1,,6,0,6,0,5,0,,,,2,4,1,3,,,,,,2,2,2,1,,2,1,,0,0,0,00,2,2,2,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopFragment.purchaseSkuDetails.(Anon_11).call",,,,,,,,,,,,,,,,,,,,,,,,,,,0,4,0,4,0,3,0,3,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"com.github.lukaspili.reactivebilling.sample.shop.ShopRowView",1,1,1,1,6,0,6,0,1,1,1,0,,0,0,,,,2,3,2,2,0,0,0,2,,24,4,17,7,8,3,,,,11,14,7,7,,,,,,1,1,1,1,,2,0,,0,0,0,18,2,2,2,2
+Public Constructor,"com.github.lukaspili.reactivebilling.sample.shop.ShopRowView.ShopRowView",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,1,7,2,5,0,7,1,0,5,6,2,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"com.github.lukaspili.reactivebilling.sample.shop.ShopRowView.bind",,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1

@@ -1,0 +1,936 @@
+Kind,Name,AvgCyclomatic,AvgCyclomaticModified,AvgCyclomaticStrict,AvgEssential,AvgLine,AvgLineBlank,AvgLineCode,AvgLineComment,CountClassBase,CountClassCoupled,CountClassCoupledModified,CountClassDerived,CountDeclClass,CountDeclClassMethod,CountDeclClassVariable,CountDeclExecutableUnit,CountDeclFile,CountDeclFunction,CountDeclInstanceMethod,CountDeclInstanceVariable,CountDeclMethod,CountDeclMethodAll,CountDeclMethodDefault,CountDeclMethodPrivate,CountDeclMethodProtected,CountDeclMethodPublic,CountInput,CountLine,CountLineBlank,CountLineCode,CountLineCodeDecl,CountLineCodeExe,CountLineComment,CountOutput,CountPath,CountPathLog,CountSemicolon,CountStmt,CountStmtDecl,CountStmtExe,Cyclomatic,CyclomaticModified,CyclomaticStrict,Essential,Knots,MaxCyclomatic,MaxCyclomaticModified,MaxCyclomaticStrict,MaxEssential,MaxEssentialKnots,MaxInheritanceTree,MaxNesting,MinEssentialKnots,PercentLackOfCohesion,PercentLackOfCohesionModified,RatioCommentToCode,SumCyclomatic,SumCyclomaticModified,SumCyclomaticStrict,SumEssential
+File,"AES.java",1,1,1,1,3,0,3,0,,,,,2,9,0,11,,9,2,2,11,,0,1,0,10,,65,14,51,21,21,0,,,,22,35,20,15,,,,,,3,3,3,1,,,1,,,,0,00,13,13,13,11
+File,"AESTest.java",2,2,2,1,8,0,8,0,,,,,1,0,0,4,,4,4,2,4,,0,0,0,4,,62,10,48,25,26,4,,,,14,27,19,8,,,,,,2,2,2,1,,,1,,,,0,08,8,8,8,4
+File,"AddressCreator.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,2,2,0,2,,2,0,0,0,,6,1,5,4,0,0,,,,3,4,4,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+File,"AddressCreatorManager.java",5,5,5,4,14,1,13,0,,,,,1,1,0,1,,1,0,0,1,,0,0,0,1,,32,6,26,14,9,0,,,,16,21,14,7,,,,,,5,5,5,4,,,2,,,,0,00,5,5,5,4
+File,"AddressCreatorTest.java",1,1,1,1,13,2,11,0,,,,,1,0,0,3,,3,3,0,3,,0,0,0,3,,63,14,46,18,24,3,,,,35,39,15,24,,,,,,1,1,1,1,,,0,,,,0,07,3,3,3,3
+File,"BIP44Util.java",4,4,4,2,11,0,10,0,,,,,1,2,8,2,,2,0,0,2,,0,0,0,2,,44,8,36,18,22,0,,,,21,29,19,10,,,,,,4,4,5,3,,,2,,,,0,00,8,8,9,4
+File,"BitcoinAddressCreator.java",1,1,1,1,5,0,5,0,,,,,1,0,0,3,,3,3,1,3,,0,0,0,3,,33,6,27,15,9,0,,,,14,19,13,6,,,,,,2,2,3,1,,,1,,,,0,00,4,4,5,3
+File,"BitcoinTransaction.java",1,1,1,1,11,1,9,0,,,,,2,0,1,34,,34,34,17,34,,0,1,0,33,,501,85,390,154,233,29,,,,250,319,162,157,,,,,,18,18,18,1,,,4,,,,0,07,66,66,66,34
+File,"BitcoinTransactionTest.java",1,1,1,1,38,6,28,3,,,,,1,1,1,6,,6,5,0,6,,0,1,0,5,,278,51,202,65,157,25,,,,110,120,54,66,,,,,,2,2,2,1,,,1,,,,0,12,9,9,9,6
+File,"ByteUtil.java",1,1,1,1,5,0,5,0,,,,,1,3,0,3,,3,0,0,3,,0,1,0,2,,25,4,21,8,9,0,,,,11,16,8,8,,,,,,3,3,3,3,,,2,,,,0,00,5,5,5,5
+File,"ByteUtilTest.java",2,2,2,1,25,2,23,0,,,,,1,0,0,2,,2,2,0,2,,0,0,0,2,,69,11,55,14,37,3,,,,9,16,12,4,,,,,,2,2,2,1,,,1,,,,0,05,4,4,4,2
+File,"CachedDerivedKey.java",1,1,1,1,4,0,4,0,,,,,1,0,0,3,,3,3,2,3,,0,1,0,2,,27,7,20,9,6,0,,,,10,15,9,6,,,,,,2,2,3,1,,,1,,,,0,00,4,4,5,3
+File,"ChainId.java",0,0,0,0,0,0,0,0,,,,,1,0,9,0,,0,0,0,0,,0,0,0,0,,17,4,12,11,9,1,,,,10,11,11,0,,,,,,0,0,0,0,,,0,,,,0,08,0,0,0,0
+File,"ChainType.java",2,2,4,1,5,0,5,0,,,,,1,1,3,1,,1,0,0,1,,0,0,0,1,,14,3,11,6,5,0,,,,5,8,6,2,,,,,,2,2,4,1,,,1,,,,0,00,2,2,4,1
+File,"CipherParams.java",1,1,1,1,5,0,4,0,,,,,1,0,0,6,,6,6,1,6,,1,0,0,5,,53,12,38,17,12,3,,,,14,24,14,10,,,,,,4,4,4,3,,,1,,,,0,08,11,11,11,8
+File,"Crypto.java",1,1,2,1,6,0,6,0,,,,,1,4,4,33,,33,29,7,33,,3,6,0,24,,309,64,240,98,122,5,,,,108,158,81,77,,,,,,14,14,14,8,,,2,,,,0,02,62,62,67,44
+File,"CryptoTest.java",1,1,1,1,14,1,12,0,,,,,1,0,0,10,,10,10,2,10,,0,0,0,10,,191,34,152,53,105,5,,,,113,128,44,84,,,,,,3,3,3,1,,,1,,,,0,03,14,14,14,10
+File,"DateUtil.java",1,1,1,1,4,0,4,0,,,,,1,1,0,1,,1,0,0,1,,0,0,0,1,,11,2,9,6,2,0,,,,5,7,6,1,,,,,,1,1,1,1,,,0,,,,0,00,1,1,1,1
+File,"EOSECDSASigner.java",2,2,3,1,20,3,13,3,,,,,1,0,0,7,,7,7,3,7,,0,0,3,4,,185,36,119,61,63,32,,,,73,90,56,34,,,,,,6,6,7,4,,,4,,,,0,27,20,20,24,12
+File,"EOSKey.java",1,1,1,1,4,0,4,0,,,,,1,3,0,8,,8,5,0,8,,1,0,2,5,,57,13,43,23,16,1,,,,25,34,23,11,,,,,,1,1,1,1,,,0,,,,0,02,8,8,8,8
+File,"EOSKeystore.java",1,1,1,1,6,0,5,0,,,,,4,4,6,41,,41,37,12,41,,0,5,0,36,,374,76,296,122,138,2,,,,156,232,124,108,,,,,,9,9,10,3,,,5,,,,0,01,67,67,72,45
+File,"EOSSign.java",1,1,1,1,10,0,9,0,,,,,1,5,0,5,,5,0,0,5,,0,3,0,2,,80,13,66,40,36,1,,,,49,58,40,18,,,,,,4,4,5,3,,,2,,,,0,02,8,8,9,7
+File,"EOSTransaction.java",1,1,1,1,7,1,6,0,,,,,2,0,0,8,,8,8,4,8,,0,0,0,8,,96,24,72,39,33,0,,,,43,58,39,19,,,,,,4,4,4,1,,,3,,,,0,00,11,11,11,8
+File,"EOSWalletTest.java",1,1,1,1,18,2,15,0,,,,,1,0,3,17,,17,17,0,17,,0,1,0,16,,402,63,320,147,219,19,,,,240,269,132,137,,,,,,5,5,5,1,,,2,,,,0,06,27,27,27,17
+File,"ETHAddressValidator.java",2,2,3,2,10,0,8,1,,,,,1,0,3,4,,4,4,1,4,,0,2,0,2,,75,17,50,22,25,8,,,,27,38,21,17,,,,,,4,4,7,4,,,3,,,,0,16,10,10,15,9
+File,"EncMnemonicKeystore.java",1,1,1,1,3,0,3,0,,,,,1,0,0,2,,6,6,0,6,,6,0,0,0,,23,6,17,12,3,0,,,,11,14,12,2,,,,,,1,1,1,1,,,0,,,,0,00,2,2,2,2
+File,"EncPair.java",1,1,1,1,3,0,3,0,,,,,1,0,0,4,,4,4,2,4,,0,0,0,4,,23,6,17,8,4,0,,,,7,12,8,4,,,,,,1,1,1,1,,,0,,,,0,00,4,4,4,4
+File,"EthereumAddressCreator.java",1,1,1,1,4,0,4,0,,,,,1,0,4,5,,5,5,0,5,,0,2,0,3,,51,13,38,27,15,0,,,,24,30,25,5,,,,,,1,1,1,1,,,0,,,,0,00,5,5,5,5
+File,"EthereumSign.java",1,1,2,1,13,1,10,1,,,,,1,8,0,8,,8,0,0,8,,1,2,0,5,,145,28,99,53,59,18,,,,64,80,53,27,,,,,,4,4,6,3,,,2,,,,0,18,15,15,19,10
+File,"EthereumSignTest.java",2,2,2,1,13,0,12,0,,,,,1,0,0,7,,7,7,2,7,,0,0,0,7,,156,23,129,85,65,4,,,,83,102,80,22,,,,,,6,6,6,5,,,4,,,,0,03,15,15,15,11
+File,"EthereumTransaction.java",1,1,1,1,6,0,5,0,,,,,1,1,0,13,,13,12,6,13,,4,1,0,8,,134,28,96,46,45,10,,,,59,76,44,32,,,,,,3,3,5,1,,,1,,,,0,10,16,16,18,13
+File,"EthereumTransactionTest.java",1,1,1,1,6,0,6,0,,,,,1,2,0,6,,6,4,0,6,,0,2,0,4,,70,14,54,27,25,2,,,,23,30,23,7,,,,,,1,1,1,1,,,0,,,,0,04,6,6,6,6
+File,"ExampleInstrumentedTest.java",1,1,1,1,6,1,4,1,,,,,1,0,0,1,,1,1,0,1,,0,0,0,1,,26,5,15,12,2,6,,,,9,11,10,1,,,,,,1,1,1,1,,,0,,,,0,40,1,1,1,1
+File,"ExampleUnitTest.java",1,1,1,1,3,0,3,0,,,,,1,0,0,1,,1,1,0,1,,0,0,0,1,,17,3,9,6,1,5,,,,4,6,5,1,,,,,,1,1,1,1,,,0,,,,0,56,1,1,1,1
+File,"ExportableKeystore.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,0,0,0,0,,0,0,0,0,,4,1,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+File,"HDMnemonicKeystore.java",1,1,1,1,5,0,5,0,,,,,2,1,3,19,,19,18,6,19,,0,0,0,19,,184,35,145,80,62,4,,,,87,112,75,37,,,,,,5,5,5,1,,,1,,,,0,03,26,26,26,19
+File,"Hash.java",1,1,1,1,8,0,7,0,,,,,1,9,0,9,,9,0,0,9,,0,2,0,7,,103,21,82,38,42,0,,,,54,70,41,29,,,,,,5,5,6,1,,,2,,,,0,00,15,15,16,9
+File,"HashTest.java",2,2,2,1,15,1,14,0,,,,,1,0,0,4,,4,4,1,4,,0,0,0,4,,89,14,71,29,44,4,,,,25,37,26,11,,,,,,3,3,3,1,,,2,,,,0,06,8,8,8,4
+File,"IMTKeystore.java",1,1,1,1,3,0,3,0,,,,,1,0,0,3,,3,3,1,3,,0,0,0,3,,24,6,18,11,3,0,,,,8,12,9,3,,,,,,1,1,1,1,,,0,,,,0,00,3,3,3,3
+File,"Identity.java",1,1,1,1,11,0,10,0,,,,,1,4,3,23,,23,19,2,23,,2,7,0,14,,340,50,287,124,184,3,,,,201,241,124,117,,,,,,5,4,5,3,,,2,,,,0,01,41,39,41,25
+File,"IdentityKeystore.java",1,1,1,1,5,0,4,0,,,,,1,0,1,18,,18,18,8,18,,0,0,0,18,,167,39,124,76,50,4,,,,82,101,72,29,,,,,,3,3,3,1,,,0,,,,0,03,20,20,20,18
+File,"IdentityTest.java",1,1,1,1,17,1,14,1,,,,,1,0,0,9,,9,9,0,9,,0,0,0,9,,197,32,149,65,104,17,,,,105,119,56,63,,,,,,2,2,2,1,,,1,,,,0,11,12,12,12,9
+File,"KDFParams.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,3,3,1,3,,3,0,0,0,,19,7,9,8,1,3,,,,6,7,7,0,,,,,,0,0,0,0,,,0,,,,0,33,0,0,0,0
+File,"Keccak.java",3,2,3,1,16,1,15,0,,,,,1,1,3,25,,25,24,5,25,,3,14,0,8,,461,59,392,80,307,12,,,,262,324,77,247,,,,,,16,16,16,7,,,4,,,,0,03,75,70,77,39
+File,"KeyPair.java",1,1,1,1,3,0,3,0,,,,,1,0,0,8,,8,8,2,8,,0,0,0,8,,48,12,36,16,12,0,,,,15,26,14,12,,,,,,3,3,5,3,,,1,,,,0,00,10,10,12,10
+File,"Keystore.java",1,1,1,1,3,0,3,0,,,,,1,0,0,9,,9,9,3,9,,0,0,0,9,,59,20,36,17,9,3,,,,16,26,17,9,,,,,,1,1,1,1,,,0,,,,0,08,9,9,9,9
+File,"KeystoreStorage.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,1,1,0,1,,1,0,0,0,,11,3,5,4,0,3,,,,3,4,4,0,,,,,,0,0,0,0,,,0,,,,0,60,0,0,0,0
+File,"KeystoreTest.java",2,2,2,1,32,3,28,0,,,,,1,0,0,5,,5,5,0,5,,0,0,0,5,,210,30,177,57,124,3,,,,113,130,51,79,,,,,,4,4,4,1,,,3,,,,0,02,12,12,12,5
+File,"LegacyEOSKeystore.java",1,1,1,1,6,0,6,0,,,,,1,1,0,4,,4,3,0,4,,0,0,0,4,,51,10,41,23,17,0,,,,27,33,21,12,,,,,,3,3,3,1,,,1,,,,0,00,6,6,6,4
+File,"LocalFileStorage.java",1,1,1,1,3,0,3,0,,,,,1,0,0,1,,1,1,0,1,,0,0,0,1,,16,4,9,6,1,3,,,,4,6,5,1,,,,,,1,1,1,1,,,0,,,,0,33,1,1,1,1
+File,"Messages.java",0,0,0,0,0,0,0,0,,,,,1,0,53,0,,0,0,0,0,,0,0,0,0,,83,27,56,55,53,0,,,,54,55,55,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+File,"Metadata.java",1,1,1,1,3,0,3,0,,,,,1,0,13,25,,25,25,10,25,,0,0,0,25,,160,38,121,56,54,1,,,,64,91,54,37,,,,,,2,2,2,1,,,1,,,,0,01,26,26,26,25
+File,"MetadataValidator.java",2,2,2,1,10,0,10,0,,,,,1,0,0,3,,3,3,2,3,,0,0,0,3,,57,13,41,19,20,3,,,,24,32,18,14,,,,,,5,5,5,1,,,2,,,,0,07,7,7,7,3
+File,"MnemonicAndPath.java",1,1,1,1,3,0,3,0,,,,,1,0,0,3,,3,3,2,3,,0,0,0,3,,19,4,15,7,4,0,,,,7,11,7,4,,,,,,1,1,1,1,,,0,,,,0,00,3,3,3,3
+File,"MnemonicUtil.java",2,2,2,1,7,0,7,0,,,,,1,3,0,3,,3,0,0,3,,0,1,0,2,,37,7,30,9,15,0,,,,13,19,9,10,,,,,,4,4,4,3,,,1,,,,0,00,8,8,8,5
+File,"MnemonicUtilTest.java",1,1,1,1,8,0,7,0,,,,,1,0,0,6,,6,6,1,6,,0,0,0,6,,88,16,67,35,35,5,,,,43,51,28,23,,,,,,2,2,2,1,,,1,,,,0,07,7,7,7,6
+File,"Multihash.java",1,1,1,1,4,0,4,0,,,,,2,4,2,17,,15,13,11,17,,1,2,0,14,,130,22,108,51,49,1,,,,58,83,43,40,,,,,,3,3,3,1,,,1,,,,0,01,24,24,25,17
+File,"MultihashTest.java",2,2,2,1,19,1,17,1,,,,,1,0,0,1,,1,1,0,1,,0,0,0,1,,34,4,26,13,12,4,,,,10,14,12,2,,,,,,2,2,2,1,,,1,,,,0,15,2,2,2,1
+File,"MyHMacDSAKCalculator.java",1,1,1,1,18,5,12,0,,,,,1,0,1,6,,6,6,5,6,,0,1,0,5,,141,44,92,32,60,5,,,,70,81,32,49,,,,,,3,3,3,1,,,1,,,,0,05,10,10,10,6
+File,"Network.java",1,1,1,1,3,0,3,0,,,,,1,0,4,2,,2,2,1,2,,0,0,0,2,,22,5,14,9,6,3,,,,8,11,9,2,,,,,,1,1,1,1,,,0,,,,0,21,2,2,2,2
+File,"NumericUtil.java",2,2,2,1,9,0,8,0,,,,,1,20,2,20,,20,0,0,20,,0,2,0,18,,227,41,181,54,105,5,,,,94,140,59,81,,,,,,4,4,6,3,,,2,,,,0,03,43,43,48,24
+File,"NumericUtilTest.java",1,1,1,1,16,0,15,0,,,,,1,0,0,14,,14,14,0,14,,0,0,0,14,,270,25,242,72,171,3,,,,77,112,62,50,,,,,,6,6,6,5,,,4,,,,0,01,26,26,26,18
+File,"PBKDF2Crypto.java",1,1,1,1,7,0,7,0,,,,,1,1,1,3,,3,2,0,3,,1,0,0,2,,43,8,32,18,15,3,,,,21,26,17,9,,,,,,2,2,2,1,,,1,,,,0,09,4,4,4,3
+File,"PBKDF2Params.java",1,1,2,1,5,0,5,0,,,,,1,1,2,13,,13,12,4,13,,0,0,0,13,,104,19,82,30,40,3,,,,36,56,27,29,,,,,,8,8,8,6,,,1,,,,0,04,23,23,26,18
+File,"PBKDFTest.java",2,2,2,1,8,0,8,0,,,,,1,0,0,1,,1,1,1,1,,0,0,0,1,,29,5,20,14,7,4,,,,12,16,13,3,,,,,,2,2,2,1,,,1,,,,0,20,2,2,2,1
+File,"PrivateKeyValidator.java",2,2,3,1,12,0,10,1,,,,,1,0,0,2,,2,2,1,2,,0,0,0,2,,47,9,31,14,14,7,,,,15,21,13,8,,,,,,4,4,6,1,,,2,,,,0,23,5,5,7,2
+File,"RLPTestCase.java",1,1,1,1,3,0,3,0,,,,,1,0,0,4,,4,4,2,4,,0,0,0,4,,26,6,17,8,4,3,,,,7,12,8,4,,,,,,1,1,1,1,,,0,,,,0,18,4,4,4,4
+File,"ResourcesManager.java",2,2,2,1,9,0,9,0,,,,,1,2,0,2,,2,0,0,2,,0,0,0,2,,47,10,34,20,12,3,,,,22,27,20,7,,,,,,2,2,2,1,,,1,,,,0,09,4,4,4,2
+File,"RlpEncoder.java",2,2,2,1,10,0,10,0,,,,,1,6,2,6,,6,0,0,6,,0,5,0,1,,87,13,68,19,44,6,,,,31,46,21,25,,,,,,3,3,6,3,,,2,,,,0,09,13,13,16,10
+File,"RlpEncoderTest.java",2,2,2,2,14,1,12,0,,,,,1,0,0,4,,4,3,0,3,,0,2,0,1,,78,15,60,30,31,3,,,,36,47,30,17,,,,,,6,6,6,5,,,3,,,,0,05,10,10,10,8
+File,"RlpList.java",1,1,1,1,3,0,3,0,,,,,1,0,0,3,,3,3,1,3,,0,0,0,3,,23,5,15,8,3,3,,,,7,11,8,3,,,,,,1,1,1,1,,,0,,,,0,20,3,3,3,3
+File,"RlpString.java",1,1,1,1,5,0,4,0,,,,,1,5,1,9,,9,4,1,9,,0,1,0,8,,71,15,52,19,22,5,,,,20,34,17,17,,,,,,3,3,4,3,,,2,,,,0,10,13,13,14,13
+File,"RlpType.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,0,0,0,0,,0,0,0,0,,7,1,3,2,0,3,,,,1,2,2,0,,,,,,0,0,0,0,,,0,,,,1,00,0,0,0,0
+File,"SCryptCrypto.java",1,1,1,1,8,0,8,0,,,,,1,1,1,3,,3,2,0,3,,0,0,0,3,,47,10,34,20,18,3,,,,22,27,19,8,,,,,,2,2,2,1,,,1,,,,0,09,4,4,4,3
+File,"SCryptParams.java",1,1,1,1,5,0,5,0,,,,,1,1,3,15,,15,14,5,15,,0,0,0,15,,116,20,93,34,46,3,,,,43,66,31,35,,,,,,8,8,8,7,,,1,,,,0,03,24,24,28,21
+File,"SampleKey.java",0,0,0,0,0,0,0,0,,,,,1,0,22,0,,0,0,0,0,,0,0,0,0,,44,10,31,29,23,3,,,,26,27,27,0,,,,,,0,0,0,0,,,0,,,,0,10,0,0,0,0
+File,"ScryptTest.java",2,2,2,1,7,0,7,0,,,,,1,0,0,1,,1,1,1,1,,0,0,0,1,,30,8,18,13,6,4,,,,9,13,11,2,,,,,,2,2,2,1,,,1,,,,0,22,2,2,2,1
+File,"SegWitBitcoinAddressCreator.java",1,1,1,1,5,0,5,0,,,,,1,0,0,5,,5,5,1,5,,0,1,0,4,,51,8,43,24,15,0,,,,24,32,22,10,,,,,,3,3,4,1,,,2,,,,0,00,7,7,8,5
+File,"SegWitWalletTest.java",2,2,2,1,30,2,27,0,,,,,1,0,0,3,,3,3,0,3,,0,0,0,3,,131,15,115,64,71,1,,,,96,103,62,41,,,,,,3,3,3,1,,,2,,,,0,01,7,7,7,3
+File,"SignatureData.java",1,1,1,1,6,0,5,0,,,,,1,0,0,7,,7,7,3,7,,0,0,0,7,,67,12,52,21,23,3,,,,25,37,18,19,,,,,,5,5,6,5,,,1,,,,0,06,11,11,12,11
+File,"StorageTest.java",3,3,3,1,40,3,36,1,,,,,1,0,0,8,,8,8,0,8,,0,1,0,7,,372,42,319,92,256,11,,,,250,280,89,191,,,,,,5,5,5,3,,,3,,,,0,03,27,27,27,10
+File,"TokenCoreTour.java",1,1,1,1,17,1,15,0,,,,,1,1,0,5,,5,4,0,5,,0,1,0,4,,117,17,100,44,68,0,,,,61,67,36,31,,,,,,1,1,1,1,,,0,,,,0,00,5,5,5,5
+File,"TokenException.java",1,1,1,1,3,0,3,0,,,,,1,0,1,2,,2,2,0,2,,0,0,0,2,,14,4,10,5,3,0,,,,4,7,5,2,,,,,,1,1,1,1,,,0,,,,0,00,2,2,2,2
+File,"TransactionSigner.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,1,1,0,1,,1,0,0,0,,7,2,5,4,0,0,,,,3,4,4,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+File,"TxMultiSignResult.java",1,1,1,1,3,0,3,0,,,,,1,0,0,5,,5,5,2,5,,0,0,0,5,,30,8,22,10,6,0,,,,10,16,10,6,,,,,,1,1,1,1,,,0,,,,0,00,5,5,5,5
+File,"TxSignResult.java",1,1,1,1,3,0,3,0,,,,,1,0,0,8,,8,8,3,8,,0,0,0,8,,46,10,33,13,11,3,,,,15,24,13,11,,,,,,1,1,1,1,,,0,,,,0,09,8,8,8,8
+File,"V3Ignore.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,5,5,0,5,,0,0,0,5,,28,7,18,17,0,3,,,,10,11,11,0,,,,,,0,0,0,0,,,0,,,,0,17,0,0,0,0
+File,"V3Keystore.java",2,2,2,1,9,0,9,0,,,,,1,1,1,4,,4,3,0,4,,0,0,0,4,,72,10,59,27,27,3,,,,38,47,26,21,,,,,,6,6,6,1,,,2,,,,0,05,10,10,10,4
+File,"V3MnemonicKeystore.java",1,1,1,1,5,0,5,0,,,,,1,1,1,8,,8,7,2,8,,0,1,0,7,,87,19,65,38,25,3,,,,43,52,34,18,,,,,,2,2,2,1,,,0,,,,0,05,9,9,9,8
+File,"Validator.java",0,0,0,0,0,0,0,0,,,,,1,0,0,0,,1,1,0,1,,1,0,0,0,,9,2,4,3,0,3,,,,2,3,3,0,,,,,,0,0,0,0,,,0,,,,0,75,0,0,0,0
+File,"ValidatorTest.java",4,4,4,1,29,3,25,0,,,,,1,0,0,6,,6,6,0,6,,0,0,0,6,,222,32,184,54,121,6,,,,103,133,50,83,,,,,,5,5,5,1,,,2,,,,0,03,24,24,24,6
+File,"WIFValidator.java",2,2,2,1,7,0,7,0,,,,,1,0,0,3,,3,3,3,3,,0,0,0,3,,44,6,35,15,15,3,,,,20,26,14,12,,,,,,4,4,5,1,,,1,,,,0,09,6,6,7,3
+File,"Wallet.java",1,1,1,1,6,0,5,0,,,,,1,0,0,19,,19,19,1,19,,5,0,0,14,,162,29,133,47,60,0,,,,61,95,47,48,,,,,,4,4,4,3,,,2,,,,0,00,33,33,35,27
+File,"WalletKeystore.java",1,1,1,1,2,0,2,0,,,,,1,0,0,3,,4,4,1,4,,0,0,0,4,,17,5,12,7,3,0,,,,6,10,7,3,,,,,,1,1,1,1,,,0,,,,0,00,3,3,3,3
+File,"WalletManager.java",2,2,2,1,10,0,8,0,,,,,1,34,3,35,,35,1,0,35,,5,9,0,21,,455,69,360,141,207,26,,,,201,283,143,140,,,,,,11,11,12,5,,,5,,,,0,07,80,78,84,42
+File,"WalletManagerTest.java",1,1,1,1,14,1,12,0,,,,,1,0,1,12,,12,12,2,12,,0,0,0,12,,250,46,201,83,143,3,,,,107,122,60,62,,,,,,2,2,2,1,,,1,,,,0,01,14,14,14,12
+File,"WalletSupport.java",2,2,2,1,10,0,10,0,,,,,1,0,1,2,,2,2,0,2,,0,0,0,2,,45,8,37,21,15,0,,,,24,31,20,11,,,,,,3,3,3,1,,,1,,,,0,00,5,5,5,2
+Package,"org",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"org.consenlabs",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"org.consenlabs.tokencore",1,1,1,1,4,0,3,0,,,,,2,0,0,,2,,2,0,2,,0,0,0,2,,43,8,24,18,3,11,,,,13,17,15,2,,,,,,1,1,1,1,,,0,,,,0,46,2,2,2,2
+Public Class,"org.consenlabs.tokencore.ExampleInstrumentedTest",1,1,1,1,6,1,4,1,1,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,14,1,7,4,2,6,,,,2,4,3,1,,,,,,1,1,1,1,,1,0,,0,0,0,86,1,1,1,1
+Public Method,"org.consenlabs.tokencore.ExampleInstrumentedTest.useAppContext",,,,,,,,,,,,,,,,,,,,,,,,,,,0,6,1,4,2,2,1,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,25,1,1,1,1
+Public Class,"org.consenlabs.tokencore.ExampleUnitTest",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,10,0,5,3,1,5,,,,1,3,2,1,,,,,,1,1,1,1,,1,0,,0,0,1,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.ExampleUnitTest.addition_isCorrect",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Package,"org.consenlabs.tokencore.foundation",0,0,0,0,0,0,0,0,,,,,0,0,0,,0,,0,0,0,,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,,0,,,,0,00,0,0,0,0
+Package,"org.consenlabs.tokencore.foundation.crypto",1,1,1,1,8,0,7,0,,,,,20,31,16,,18,,132,45,163,,12,25,0,126,,1908,337,1513,570,877,61,,,,836,1123,510,613,,,,,,16,16,16,8,,,4,,,,0,04,295,290,311,198
+Public Class,"org.consenlabs.tokencore.foundation.crypto.AES",1,1,1,1,4,0,4,0,1,1,1,0,,9,0,,,,0,0,9,9,0,1,0,8,,59,12,47,17,21,0,,,,18,31,16,15,,,,,,3,3,3,1,,1,1,,0,0,0,00,11,11,11,9
+Public Enum Type,"org.consenlabs.tokencore.foundation.crypto.AES.AESType",1,1,1,1,0,0,0,0,1,0,0,0,,0,0,,,,2,2,2,2,0,0,0,2,,3,0,3,2,0,0,,,,0,1,1,0,,,,,,1,1,1,1,,1,0,,,,0,00,2,2,2,2
+Public Method,"org.consenlabs.tokencore.foundation.crypto.AES.AESType.valueOf",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.AES.AESType.values",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.AES.decryptByCBC",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.AES.decryptByCBCNoPadding",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.AES.decryptByCTR",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.AES.decryptByCTRNoPadding",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.foundation.crypto.AES.doAES",,,,,,,,,,,,,,,,,,,,,,,,,,,15,19,1,18,6,13,0,5,4,1,10,13,6,7,3,3,3,1,2,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.AES.encryptByCBC",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.AES.encryptByCBCNoPadding",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.AES.encryptByCTR",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.AES.encryptByCTRNoPadding",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.AESTest",2,2,2,1,8,0,8,0,1,2,2,0,,0,0,,,,4,2,4,4,0,0,0,4,,54,6,44,21,26,4,,,,10,23,15,8,,,,,,2,2,2,1,,1,1,,50,50,0,09,8,8,8,4
+Public Method,"org.consenlabs.tokencore.foundation.crypto.AESTest.doCBCDecrypt",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,8,3,5,0,4,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.AESTest.doCBCEncrypt",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,8,3,5,0,4,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.AESTest.doCTRDecrypt",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,8,3,5,0,4,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.AESTest.doCTREncrypt",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,8,3,5,0,4,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.CipherParams",1,1,1,1,5,0,4,0,1,2,2,0,,0,0,,,,6,1,6,6,1,0,0,5,,45,9,33,12,12,3,,,,9,19,9,10,,,,,,4,4,4,3,,1,1,,50,16,0,09,11,11,11,8
+Constructor,"org.consenlabs.tokencore.foundation.crypto.CipherParams.CipherParams",,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CipherParams.equals",,,,,,,,,,,,,,,,,,,,,,,,,,,2,14,3,11,2,7,0,3,3,0,4,7,2,5,4,4,4,3,2,,,,,2,,1,2,,,0,00,4,4,4,3
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CipherParams.getIv",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CipherParams.hashCode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,3,1,0,1,2,1,1,2,2,2,1,0,,,,,0,,0,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CipherParams.setIv",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CipherParams.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,2,0,2,2,0,1,3,1,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Generic Class,"org.consenlabs.tokencore.foundation.crypto.Crypto",1,1,2,1,6,0,6,0,1,11,11,2,,4,4,,,,29,7,33,33,3,6,0,24,,286,60,221,79,122,5,,,,97,147,70,77,,,,,,14,14,14,8,,1,2,,84,66,0,02,62,62,67,44
+Constructor,"org.consenlabs.tokencore.foundation.crypto.Crypto.Crypto",,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+TypeVariable,"org.consenlabs.tokencore.foundation.crypto.Crypto.T",0,0,0,0,0,0,0,0,2,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.cacheDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,5,4,0,4,2,2,0,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.clearCachedDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.createCrypto",,,,,,,,,,,,,,,,,,,,,,,,,,,10,24,7,17,7,14,0,17,2,0,13,15,7,8,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.createPBKDF2Crypto",,,,,,,,,,,,,,,,,,,,,,,,,,,13,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.createPBKDF2CryptoWithKDFCached",,,,,,,,,,,,,,,,,,,,,,,,,,,10,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.createSCryptCrypto",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.decrypt",,,,,,,,,,,,,,,,,,,,,,,,,,,8,7,1,6,4,4,0,7,1,0,4,5,4,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.decrypt",,,,,,,,,,,,,,,,,,,,,,,,,,,7,9,1,8,2,5,0,5,2,0,3,5,2,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.decryptEncPair",,,,,,,,,,,,,,,,,,,,,,,,,,,11,5,0,5,3,3,0,6,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.deriveEncPair",,,,,,,,,,,,,,,,,,,,,,,,,,,12,11,2,9,5,7,0,7,1,0,7,8,5,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.encrypt",,,,,,,,,,,,,,,,,,,,,,,,,,,7,10,2,8,2,5,0,5,2,0,3,5,2,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.equals",,,,,,,,,,,,,,,,,,,,,,,,,,,5,38,2,36,2,27,0,5,8,1,9,17,2,15,14,14,14,8,7,,,,,7,,1,7,,,0,00,14,14,14,8
+Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.generateDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.getCachedDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,3,1,1,5,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.getCachedDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,6,10,1,9,2,5,0,3,3,0,3,6,2,4,3,3,3,3,2,,,,,2,,2,2,,,0,00,3,3,3,3
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.getCipher",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.getCipherparams",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.getCiphertext",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.getKdf",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.getKdfparams",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.getMac",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.getValidDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,6,13,1,12,5,9,0,8,3,0,7,10,5,5,3,3,3,3,2,,,,,2,,1,2,,,0,00,3,3,3,3
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.hashCode",,,,,,,,,,,,,,,,,,,,,,,,,,,4,9,0,9,2,7,0,5,1,0,7,8,2,6,7,7,7,1,0,,,,,0,,0,0,,,0,00,7,7,7,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.setCachedDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.setCipher",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.setCipherparams",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.setCiphertext",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.setKdf",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.setKdfparams",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.setMac",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,10,11,2,9,1,6,0,5,2,0,3,5,1,4,2,2,7,1,0,,,,,0,,1,0,,,0,00,2,2,7,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Crypto.verifyPassword",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,0,8,1,5,0,2,2,0,3,5,1,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.CryptoTest",1,1,1,1,14,1,12,0,1,12,12,0,,0,0,,,,10,2,10,10,0,0,0,10,,176,29,142,43,105,5,,,,103,118,34,84,,,,,,3,3,3,1,,1,1,,35,35,0,04,14,14,14,10
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CryptoTest.testCacheIsInUsed",,,,,,,,,,,,,,,,,,,,,,,,,,,2,13,1,12,4,9,0,10,2,0,10,12,5,7,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CryptoTest.testCacheIsInUsedWhenCreateWithCache",,,,,,,,,,,,,,,,,,,,,,,,,,,2,11,0,11,4,8,0,9,2,0,9,11,5,6,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CryptoTest.testCreateAndDestroyCacheDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,17,1,14,2,12,2,7,1,0,12,13,2,11,1,1,1,1,0,,,,,0,,0,0,,,0,14,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CryptoTest.testCreatePBKDF2Crypto",,,,,,,,,,,,,,,,,,,,,,,,,,,7,21,3,18,3,16,0,17,1,0,16,17,3,14,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CryptoTest.testDecrypt",,,,,,,,,,,,,,,,,,,,,,,,,,,6,10,1,9,3,7,0,6,1,0,7,8,3,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CryptoTest.testDecryptSCryptCrypto",,,,,,,,,,,,,,,,,,,,,,,,,,,8,24,5,19,3,17,0,18,1,0,17,18,3,15,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CryptoTest.testDeriveAndDecryptEncPair",,,,,,,,,,,,,,,,,,,,,,,,,,,7,12,2,10,3,8,0,9,1,0,8,9,3,6,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CryptoTest.testDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,9,1,8,3,6,0,8,1,0,6,7,3,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CryptoTest.testValidate",,,,,,,,,,,,,,,,,,,,,,,,,,,5,10,0,10,2,8,0,6,1,0,8,9,2,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.CryptoTest.testVerifyPasswordCachedDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,6,19,3,16,2,12,0,6,4,1,8,11,2,9,3,3,3,1,2,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.EncPair",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,4,2,4,4,0,0,0,4,,21,5,16,7,4,0,,,,6,11,7,4,,,,,,1,1,1,1,,1,0,,50,50,0,00,4,4,4,4
+Public Method,"org.consenlabs.tokencore.foundation.crypto.EncPair.getEncStr",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.EncPair.getNonce",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.EncPair.setEncStr",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.EncPair.setNonce",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.Hash",1,1,1,1,8,0,7,0,1,5,5,0,,9,0,,,,0,0,9,9,0,2,0,7,,85,17,68,24,42,0,,,,40,56,27,29,,,,,,5,5,6,1,,1,2,,0,0,0,00,15,15,16,9
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Hash.generateMac",,,,,,,,,,,,,,,,,,,,,,,,,,,6,8,2,6,2,4,0,3,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Hash.hmacSHA256",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,1,10,3,7,0,5,2,0,5,7,3,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Hash.keccak256",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,3,3,0,4,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Hash.keccak256",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.foundation.crypto.Hash.keccak256",,,,,,,,,,,,,,,,,,,,,,,,,,,4,7,2,5,2,3,0,5,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Hash.merkleHash",,,,,,,,,,,,,,,,,,,,,,,,,,,5,23,3,20,6,14,0,8,12,1,16,21,9,12,5,5,6,1,0,,,,,0,,2,0,,,0,00,5,5,6,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Hash.sha256",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,3,3,0,4,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Hash.sha256",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.foundation.crypto.Hash.sha256",,,,,,,,,,,,,,,,,,,,,,,,,,,5,9,0,9,2,6,0,5,2,0,4,6,2,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.HashTest",2,2,2,1,15,1,14,0,1,2,2,0,,0,0,,,,4,1,4,4,0,0,0,4,,79,10,65,23,44,4,,,,19,31,20,11,,,,,,3,3,3,1,,1,2,,75,75,0,06,8,8,8,4
+Public Method,"org.consenlabs.tokencore.foundation.crypto.HashTest.testCalcMerkleRoot",,,,,,,,,,,,,,,,,,,,,,,,,,,0,19,0,19,5,14,0,4,3,0,7,11,6,5,3,3,3,1,0,,,,,0,,2,0,,,0,00,3,3,3,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.HashTest.testGenerateMac",,,,,,,,,,,,,,,,,,,,,,,,,,,0,28,3,25,6,20,0,4,2,0,5,8,6,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.HashTest.testKeccak256",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,5,1,2,0,2,2,0,1,4,2,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.HashTest.testSha256",,,,,,,,,,,,,,,,,,,,,,,,,,,0,8,1,7,4,5,0,5,1,0,5,6,4,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Interface,"org.consenlabs.tokencore.foundation.crypto.KDFParams",0,0,0,0,0,0,0,0,0,0,0,3,,0,0,,,,3,1,3,3,3,0,0,0,,13,3,7,6,1,3,,,,4,5,5,0,,,,,,0,0,0,0,,0,0,,0,0,0,43,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.foundation.crypto.KDFParams.getDklen",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.foundation.crypto.KDFParams.getSalt",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.foundation.crypto.KDFParams.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Class,"org.consenlabs.tokencore.foundation.crypto.Keccak",3,2,3,1,16,1,15,0,1,0,0,0,,1,3,,,,24,5,25,25,3,14,0,8,,456,57,389,77,307,12,,,,259,321,74,247,,,,,,16,16,16,7,,1,4,,75,49,0,03,75,70,77,39
+Constructor,"org.consenlabs.tokencore.foundation.crypto.Keccak.Keccak",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.foundation.crypto.Keccak.Keccak",,,,,,,,,,,,,,,,,,,,,,,,,,,7,7,0,7,1,5,0,6,1,0,5,6,1,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.digest",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.digest",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.digest",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,2,4,0,5,1,0,4,5,2,3,2,2,2,1,0,,,,,0,,0,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.digest",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.digest",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.digest",,,,,,,,,,,,,,,,,,,,,,,,,,,7,85,5,80,15,69,1,8,103,2,52,65,15,50,16,16,16,7,7,,,,,7,,4,7,,,0,01,16,16,16,7
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.digestArray",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.digestArray",,,,,,,,,,,,,,,,,,,,,,,,,,,2,5,0,5,2,3,0,2,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.digestSize",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.keccak",,,,,,,,,,,,,,,,,,,,,,,,,,,6,103,11,86,6,79,6,1,1,0,82,83,6,77,3,3,3,1,0,,,,,0,,2,0,,,0,07,3,3,3,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.pad",,,,,,,,,,,,,,,,,,,,,,,,,,,4,10,0,10,1,7,0,3,2,0,6,8,1,7,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.rateSize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.rateSizeBitsFor",,,,,,,,,,,,,,,,,,,,,,,,,,,2,20,0,18,1,15,2,1,7,1,7,9,1,8,7,2,7,1,21,,,,,0,,1,0,,,0,11,7,2,7,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.reset",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.reset",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.reset",,,,,,,,,,,,,,,,,,,,,,,,,,,6,14,2,12,1,10,0,5,8,1,9,13,2,11,4,4,5,1,0,,,,,0,,1,0,,,0,00,4,4,5,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.squeeze",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.update",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.update",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.update",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.update",,,,,,,,,,,,,,,,,,,,,,,,,,,6,87,9,77,16,68,2,6,177,2,51,64,16,48,16,16,16,6,5,,,,,5,,4,5,,,0,03,16,16,16,6
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Keccak.updateBits",,,,,,,,,,,,,,,,,,,,,,,,,,,8,34,3,30,5,25,1,2,34,2,18,26,5,21,8,8,9,4,3,,,,,3,,2,3,,,0,03,8,8,9,4
+Public Class,"org.consenlabs.tokencore.foundation.crypto.Multihash",1,1,1,1,5,0,5,0,1,1,1,0,,3,1,,,,10,2,13,13,0,2,0,11,,118,19,99,42,49,1,,,,49,74,34,40,,,,,,3,3,3,1,,1,1,,61,15,0,01,19,19,20,13
+Public Constructor,"org.consenlabs.tokencore.foundation.crypto.Multihash.Multihash",,,,,,,,,,,,,,,,,,,,,,,,,,,10,8,0,8,1,6,0,3,4,1,4,7,1,6,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Constructor,"org.consenlabs.tokencore.foundation.crypto.Multihash.Multihash",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,1,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,33,1,1,1,1
+Private Constructor,"org.consenlabs.tokencore.foundation.crypto.Multihash.Multihash",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,4,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Enum Type,"org.consenlabs.tokencore.foundation.crypto.Multihash.Type",1,1,1,1,2,0,2,0,1,0,0,0,,1,1,,,,3,9,4,4,1,0,0,3,,28,4,24,13,8,0,,,,8,13,6,7,,,,,,2,2,2,1,,1,1,,,,0,00,5,5,5,4
+Constructor,"org.consenlabs.tokencore.foundation.crypto.Multihash.Type.Type",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.Type.lookup",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,3,0,3,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.Type.valueOf",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.Type.values",,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.deserialize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,8,5,6,0,5,1,0,6,7,5,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.equals",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,3,0,2,2,0,2,4,1,3,2,2,3,1,1,,,,,0,,1,0,,,0,00,2,2,3,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.fromBase58",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.fromHex",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,8,2,6,0,6,4,1,6,9,3,6,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.hashCode",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.serialize",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.toBase58",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.toBytes",,,,,,,,,,,,,,,,,,,,,,,,,,,7,7,0,7,2,5,0,2,1,0,5,6,2,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.toHex",,,,,,,,,,,,,,,,,,,,,,,,,,,2,10,0,10,4,7,0,2,2,0,8,10,5,5,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.Multihash.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.MultihashTest",2,2,2,1,19,1,17,1,1,4,4,0,,0,0,,,,1,0,1,1,0,0,0,1,,25,1,20,7,12,4,,,,4,8,6,2,,,,,,2,2,2,1,,1,1,,0,0,0,20,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.MultihashTest.testMultihashSha",,,,,,,,,,,,,,,,,,,,,,,,,,,1,19,1,17,5,12,1,5,2,0,4,7,5,2,2,2,2,1,0,,,,,0,,1,0,,,0,06,2,2,2,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Crypto",1,1,1,1,7,0,7,0,1,4,4,0,,1,1,,,,2,0,3,36,1,0,0,2,,33,5,25,11,15,3,,,,14,19,10,9,,,,,,2,2,2,1,,2,1,,0,0,0,12,4,4,4,3
+Constructor,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Crypto.PBKDF2Crypto",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Crypto.createPBKDF2Crypto",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,8,4,6,0,7,1,0,6,7,4,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Crypto.generateDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,10,1,9,3,6,0,10,2,0,5,7,3,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params",1,1,2,1,5,0,5,0,2,2,2,0,,1,2,,,,12,4,13,13,0,0,0,13,,97,16,78,26,40,3,,,,32,52,23,29,,,,,,8,8,8,6,,1,1,,63,55,0,04,23,23,26,18
+Public Constructor,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.PBKDF2Params",,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.createPBKDF2Params",,,,,,,,,,,,,,,,,,,,,,,,,,,4,7,0,7,2,5,0,5,1,0,5,6,2,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.equals",,,,,,,,,,,,,,,,,,,,,,,,,,,3,24,2,22,2,15,0,4,6,1,7,13,2,11,8,8,8,6,5,,,,,5,,1,5,,,0,00,8,8,8,6
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.getC",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.getDklen",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.getPrf",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.getSalt",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.hashCode",,,,,,,,,,,,,,,,,,,,,,,,,,,2,7,0,7,2,5,0,4,1,0,5,6,2,4,3,3,3,1,0,,,,,0,,0,0,,,0,00,3,3,3,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.setC",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.setDklen",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.setPrf",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.setSalt",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDF2Params.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,0,5,1,2,0,2,2,0,1,3,1,2,2,2,5,1,0,,,,,0,,1,0,,,0,00,2,2,5,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.PBKDFTest",2,2,2,1,8,0,8,0,1,1,1,0,,0,0,,,,1,1,1,1,0,0,0,1,,19,2,13,7,7,4,,,,5,9,6,3,,,,,,2,2,2,1,,1,1,,0,0,0,31,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.PBKDFTest.derive",,,,,,,,,,,,,,,,,,,,,,,,,,,1,8,0,8,3,5,0,7,2,0,4,7,4,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.SCryptCrypto",1,1,1,1,8,0,8,0,1,4,4,0,,1,1,,,,2,0,3,36,0,0,0,3,,36,5,28,14,18,3,,,,16,21,13,8,,,,,,2,2,2,1,,2,1,,0,0,0,11,4,4,4,3
+Public Constructor,"org.consenlabs.tokencore.foundation.crypto.SCryptCrypto.SCryptCrypto",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.SCryptCrypto.createSCryptCrypto",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,8,4,6,0,7,1,0,6,7,4,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptCrypto.generateDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,12,0,12,6,9,0,9,2,0,7,9,6,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.SCryptParams",1,1,1,1,5,0,5,0,2,2,2,0,,1,3,,,,14,5,15,15,0,0,0,15,,109,17,89,30,46,3,,,,39,62,27,35,,,,,,8,8,8,7,,1,1,,64,61,0,03,24,24,28,21
+Public Constructor,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.SCryptParams",,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.createSCryptParams",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,0,8,2,6,0,6,1,0,6,7,2,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.equals",,,,,,,,,,,,,,,,,,,,,,,,,,,5,25,2,23,2,15,0,3,7,1,8,15,2,13,8,8,8,7,6,,,,,6,,1,6,,,0,00,8,8,8,7
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.getDklen",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.getN",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.getP",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.getR",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.getSalt",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.hashCode",,,,,,,,,,,,,,,,,,,,,,,,,,,4,8,0,8,2,6,0,3,1,0,6,7,2,5,2,2,2,1,0,,,,,0,,0,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.setDklen",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.setN",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.setP",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.setR",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.setSalt",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.SCryptParams.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,6,5,0,5,1,2,0,2,2,0,1,3,1,2,2,2,6,1,0,,,,,0,,1,0,,,0,00,2,2,6,1
+Public Class,"org.consenlabs.tokencore.foundation.crypto.ScryptTest",2,2,2,1,7,0,7,0,1,1,1,0,,0,0,,,,1,1,1,1,0,0,0,1,,17,1,12,7,6,4,,,,3,7,5,2,,,,,,2,2,2,1,,1,1,,0,0,0,33,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.crypto.ScryptTest.derive",,,,,,,,,,,,,,,,,,,,,,,,,,,1,7,0,7,3,4,0,6,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Package,"org.consenlabs.tokencore.foundation.rlp",1,1,1,1,7,0,6,0,,,,,6,11,3,,6,,14,4,25,,0,8,0,17,,292,55,215,86,104,23,,,,102,152,86,66,,,,,,6,6,6,5,,,3,,,,0,11,43,43,47,38
+Public Class,"org.consenlabs.tokencore.foundation.rlp.RLPTestCase",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,4,2,4,4,0,0,0,4,,23,4,16,7,4,3,,,,6,11,7,4,,,,,,1,1,1,1,,1,0,,50,50,0,19,4,4,4,4
+Public Method,"org.consenlabs.tokencore.foundation.rlp.RLPTestCase.getIn",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.rlp.RLPTestCase.getOut",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.rlp.RLPTestCase.setIn",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.rlp.RLPTestCase.setOut",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.foundation.rlp.RlpEncoder",2,2,2,1,10,0,10,0,1,4,4,0,,6,2,,,,0,0,6,6,0,5,0,1,,80,10,64,15,44,6,,,,27,42,17,25,,,,,,3,3,6,3,,1,2,,0,0,0,09,13,13,16,10
+Public Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpEncoder.encode",,,,,,,,,,,,,,,,,,,,,,,,,,,4,7,0,7,1,4,0,3,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpEncoder.encode",,,,,,,,,,,,,,,,,,,,,,,,,,,6,22,1,21,4,18,0,3,3,0,11,14,4,10,3,3,6,3,2,,,,,2,,1,2,,,0,00,3,3,6,3
+Private Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpEncoder.encodeList",,,,,,,,,,,,,,,,,,,,,,,,,,,3,12,0,12,3,8,0,6,3,0,5,9,4,5,3,3,3,1,1,,,,,0,,2,0,,,0,00,3,3,3,1
+Private Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpEncoder.encodeString",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpEncoder.toByteArray",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,8,1,6,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpEncoder.toMinimalByteArray",,,,,,,,,,,,,,,,,,,,,,,,,,,3,11,2,9,2,5,0,3,3,0,5,8,3,5,3,3,3,3,3,,,,,3,,2,3,,,0,00,3,3,3,3
+Public Class,"org.consenlabs.tokencore.foundation.rlp.RlpEncoderTest",3,3,3,2,17,2,14,1,1,7,7,0,,0,0,,,,3,0,3,3,0,2,0,1,,57,9,45,15,31,3,,,,21,32,15,17,,,,,,6,6,6,5,,1,3,,0,0,0,07,10,10,10,8
+Private Method,"org.consenlabs.tokencore.foundation.rlp.RlpEncoderTest.buildRLPType",,,,,,,,,,,,,,,,,,,,,,,,,,,2,22,1,21,3,15,0,11,6,1,8,15,4,11,6,6,6,5,5,,,,,5,,3,5,,,0,00,6,6,6,5
+Private Method,"org.consenlabs.tokencore.foundation.rlp.RlpEncoderTest.loadRLPTestCases",,,,,,,,,,,,,,,,,,,,,,,,,,,3,17,5,12,5,9,0,6,2,0,7,9,5,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.rlp.RlpEncoderTest.testEthereumRLPTests",,,,,,,,,,,,,,,,,,,,,,,,,,,1,12,0,9,5,7,3,2,1,0,6,7,5,2,1,1,1,1,0,,,,,0,,0,0,,,0,33,2,2,2,2
+Lambda Method,"org.consenlabs.tokencore.foundation.rlp.RlpEncoderTest.testEthereumRLPTests.(lambda_expr_1)",,,,,,,,,,,,,,,,,,,,,,,,,,,2,6,0,6,3,5,0,7,1,0,4,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.foundation.rlp.RlpList",1,1,1,1,3,0,3,0,2,0,0,0,,0,0,,,,3,1,3,3,0,0,0,3,,18,3,12,5,3,3,,,,4,8,5,3,,,,,,1,1,1,1,,1,0,,0,0,0,25,3,3,3,3
+Public Constructor,"org.consenlabs.tokencore.foundation.rlp.RlpList.RlpList",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.foundation.rlp.RlpList.RlpList",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.rlp.RlpList.getValues",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.foundation.rlp.RlpString",1,1,1,1,5,0,4,0,2,0,0,0,,5,1,,,,4,1,9,9,0,1,0,8,,65,12,49,16,22,5,,,,17,31,14,17,,,,,,3,3,4,3,,1,2,,55,11,0,10,13,13,14,13
+Private Constructor,"org.consenlabs.tokencore.foundation.rlp.RlpString.RlpString",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpString.create",,,,,,,,,,,,,,,,,,,,,,,,,,,6,13,0,12,2,8,2,5,3,0,4,7,2,5,3,3,3,3,2,,,,,2,,2,2,,,0,17,3,3,3,3
+Public Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpString.create",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpString.create",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpString.create",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.rlp.RlpString.create",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.rlp.RlpString.equals",,,,,,,,,,,,,,,,,,,,,,,,,,,2,12,2,10,2,6,0,3,3,0,4,7,2,5,3,3,4,3,2,,,,,2,,1,2,,,0,00,3,3,4,3
+Public Method,"org.consenlabs.tokencore.foundation.rlp.RlpString.getBytes",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.rlp.RlpString.hashCode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Interface,"org.consenlabs.tokencore.foundation.rlp.RlpType",0,0,0,0,0,0,0,0,0,0,0,2,,0,0,,,,0,0,0,0,0,0,0,0,,5,0,2,1,0,3,,,,0,1,1,0,,,,,,0,0,0,0,,0,0,,0,0,1,50,0,0,0,0
+Package,"org.consenlabs.tokencore.foundation.utils",1,1,2,1,11,0,10,0,,,,,8,27,2,,8,,25,3,52,,0,5,0,47,,754,113,625,207,380,16,,,,262,376,193,183,,,,,,6,6,6,5,,,4,,,,0,03,98,98,104,64
+Public Class,"org.consenlabs.tokencore.foundation.utils.ByteUtil",1,1,1,1,5,0,5,0,1,0,0,0,,3,0,,,,0,0,3,3,0,1,0,2,,21,2,19,6,9,0,,,,9,14,6,8,,,,,,3,3,3,3,,1,2,,0,0,0,00,5,5,5,5
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.ByteUtil.concat",,,,,,,,,,,,,,,,,,,,,,,,,,,18,5,0,5,2,3,0,3,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.foundation.utils.ByteUtil.trimLeadingBytes",,,,,,,,,,,,,,,,,,,,,,,,,,,4,9,0,9,2,5,0,2,3,0,5,7,2,5,3,3,3,3,2,,,,,2,,2,2,,,0,00,3,3,3,3
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.ByteUtil.trimLeadingZeroes",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.foundation.utils.ByteUtilTest",2,2,2,1,25,2,23,0,1,1,1,0,,0,0,,,,2,0,2,2,0,0,0,2,,62,8,51,10,37,3,,,,5,12,8,4,,,,,,2,2,2,1,,1,1,,0,0,0,06,4,4,4,2
+Public Method,"org.consenlabs.tokencore.foundation.utils.ByteUtilTest.testConcat",,,,,,,,,,,,,,,,,,,,,,,,,,,0,31,3,28,4,23,0,2,2,0,3,6,4,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.ByteUtilTest.testTrimLeadingZeroes",,,,,,,,,,,,,,,,,,,,,,,,,,,0,20,1,19,3,14,0,2,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.foundation.utils.CachedDerivedKey",1,1,1,1,4,0,4,0,1,2,2,0,,0,0,,,,3,2,3,3,0,1,0,2,,21,4,17,6,6,0,,,,7,12,6,6,,,,,,2,2,3,1,,1,1,,33,33,0,00,4,4,5,3
+Public Constructor,"org.consenlabs.tokencore.foundation.utils.CachedDerivedKey.CachedDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,1,2,0,4,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.CachedDerivedKey.getDerivedKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,1,3,0,3,2,0,2,4,1,3,2,2,3,1,1,,,,,0,,1,0,,,0,00,2,2,3,1
+Private Method,"org.consenlabs.tokencore.foundation.utils.CachedDerivedKey.hash",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,4,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.foundation.utils.DateUtil",1,1,1,1,4,0,4,0,1,0,0,0,,1,0,,,,0,0,1,1,0,0,0,1,,6,0,6,3,2,0,,,,2,4,3,1,,,,,,1,1,1,1,,1,0,,0,0,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.DateUtil.getUTCTime",,,,,,,,,,,,,,,,,,,,,,,,,,,5,4,0,4,2,2,0,4,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.foundation.utils.MnemonicUtil",2,2,2,1,7,0,7,0,1,3,3,0,,3,0,,,,0,0,3,3,0,1,0,2,,29,4,25,4,15,0,,,,8,14,4,10,,,,,,4,4,4,3,,1,1,,0,0,0,00,8,8,8,5
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.MnemonicUtil.randomMnemonicCodes",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.foundation.utils.MnemonicUtil.toMnemonicCodes",,,,,,,,,,,,,,,,,,,,,,,,,,,4,9,0,9,1,6,0,3,3,0,3,5,1,4,3,3,3,3,3,,,,,3,,1,3,,,0,00,3,3,3,3
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.MnemonicUtil.validateMnemonics",,,,,,,,,,,,,,,,,,,,,,,,,,,16,11,0,11,1,8,0,2,4,1,4,6,1,5,4,4,4,1,6,,,,,0,,1,0,,,0,00,4,4,4,1
+Public Class,"org.consenlabs.tokencore.foundation.utils.MnemonicUtilTest",1,1,1,1,8,0,7,0,1,4,4,0,,0,0,,,,6,1,6,6,0,0,0,6,,73,11,57,25,35,5,,,,33,41,18,23,,,,,,2,2,2,1,,1,1,,33,33,0,09,7,7,7,6
+Public Method,"org.consenlabs.tokencore.foundation.utils.MnemonicUtilTest.testMnemonicBadChecksumException",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,0,8,3,6,1,6,1,0,6,7,3,4,1,1,1,1,0,,,,,0,,0,0,,,0,12,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.MnemonicUtilTest.testMnemonicBadWordException",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,0,8,3,6,1,6,1,0,6,7,3,4,1,1,1,1,0,,,,,0,,0,0,,,0,12,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.MnemonicUtilTest.testMnemonicLongLengthException",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,1,8,3,6,0,6,1,0,6,7,3,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.MnemonicUtilTest.testMnemonicShortLengthException",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,1,8,3,6,0,6,1,0,6,7,3,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.MnemonicUtilTest.testRandomMnemonicCodes",,,,,,,,,,,,,,,,,,,,,,,,,,,0,6,0,6,2,4,0,5,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.MnemonicUtilTest.testValidateMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,1,10,1,9,2,6,0,5,2,0,4,6,2,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.foundation.utils.NumericUtil",2,2,2,1,9,0,8,0,1,0,0,0,,20,2,,,,0,0,20,20,0,2,0,18,,215,37,173,46,105,5,,,,86,132,51,81,,,,,,4,4,6,3,,1,2,,0,0,0,03,43,43,48,24
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.beBigEndianHex",,,,,,,,,,,,,,,,,,,,,,,,,,,5,7,1,6,1,3,0,3,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.beLittleEndianHex",,,,,,,,,,,,,,,,,,,,,,,,,,,2,7,1,6,1,3,0,3,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.bigIntegerToBytesWithZeroPadded",,,,,,,,,,,,,,,,,,,,,,,,,,,9,22,3,19,6,13,0,3,4,1,12,15,6,9,3,3,3,1,1,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.bigIntegerToHex",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.bigIntegerToHexWithZeroPadded",,,,,,,,,,,,,,,,,,,,,,,,,,,3,16,2,14,3,10,0,5,6,1,6,10,3,7,4,4,4,1,1,,,,,0,,1,0,,,0,00,4,4,4,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.bytesToBigInteger",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.bytesToBigInteger",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.bytesToHex",,,,,,,,,,,,,,,,,,,,,,,,,,,49,12,2,10,2,6,0,4,3,0,4,8,3,5,3,3,3,1,1,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.bytesToInt",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.cleanHexPrefix",,,,,,,,,,,,,,,,,,,,,,,,,,,8,7,0,7,1,4,0,3,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.generateRandomBytes",,,,,,,,,,,,,,,,,,,,,,,,,,,11,5,0,5,2,3,0,2,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.hasHexPrefix",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,3,1,0,,,,,0,,0,0,,,0,00,1,1,3,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.hexToBigInteger",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,2,2,0,2,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.hexToBytes",,,,,,,,,,,,,,,,,,,,,,,,,,,50,26,4,22,5,15,0,5,5,1,14,18,6,12,4,4,4,1,2,,,,,0,,1,0,,,0,00,4,4,4,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.hexToBytesLittleEndian",,,,,,,,,,,,,,,,,,,,,,,,,,,3,13,0,13,4,9,0,3,3,0,9,12,5,7,3,3,3,1,1,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.intToBytes",,,,,,,,,,,,,,,,,,,,,,,,,,,4,15,1,14,3,9,0,5,6,1,6,11,4,7,4,4,4,3,2,,,,,2,,2,2,,,0,00,4,4,4,3
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.isValidHex",,,,,,,,,,,,,,,,,,,,,,,,,,,3,20,2,13,2,8,5,5,5,1,5,9,2,7,4,4,6,3,2,,,,,2,,1,2,,,0,38,4,4,6,3
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.prependHexPrefix",,,,,,,,,,,,,,,,,,,,,,,,,,,4,7,0,7,1,4,0,3,2,0,2,4,1,3,2,2,3,1,1,,,,,0,,1,0,,,0,00,2,2,3,1
+Public Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.reverseBytes",,,,,,,,,,,,,,,,,,,,,,,,,,,4,9,0,9,3,6,0,2,2,0,7,9,4,5,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Static Method,"org.consenlabs.tokencore.foundation.utils.NumericUtil.reverseHex",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,2,3,0,4,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest",1,1,1,1,16,0,15,0,1,1,1,0,,0,0,,,,14,0,14,14,0,0,0,14,,260,20,237,67,171,3,,,,72,107,57,50,,,,,,6,6,6,5,,1,4,,0,0,0,01,26,26,26,18
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testBeBigEndian",,,,,,,,,,,,,,,,,,,,,,,,,,,0,19,0,19,3,14,0,2,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testBigIntToBytesPadded",,,,,,,,,,,,,,,,,,,,,,,,,,,0,9,1,8,5,6,0,2,1,0,6,7,5,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testBigIntToHexStringNoPrefix",,,,,,,,,,,,,,,,,,,,,,,,,,,0,8,0,8,5,6,0,3,1,0,6,7,5,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testBigIntToHexStringWithZeroPadded",,,,,,,,,,,,,,,,,,,,,,,,,,,0,18,1,17,3,12,0,3,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testBytesToBigInteger",,,,,,,,,,,,,,,,,,,,,,,,,,,0,8,0,8,5,6,0,3,1,0,6,7,5,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testBytesToHexString",,,,,,,,,,,,,,,,,,,,,,,,,,,0,23,0,23,3,19,0,2,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testBytesToHexStringNoPrefix",,,,,,,,,,,,,,,,,,,,,,,,,,,0,8,0,8,5,6,0,2,1,0,6,7,5,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testBytesToHexWithoutPrefix",,,,,,,,,,,,,,,,,,,,,,,,,,,0,23,0,23,3,19,0,2,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testCleanHexPrefix",,,,,,,,,,,,,,,,,,,,,,,,,,,0,20,1,19,3,14,0,2,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testGenerateRandomBytes",,,,,,,,,,,,,,,,,,,,,,,,,,,1,16,0,16,3,10,0,4,9,1,12,19,7,12,6,6,6,5,1,,,,,1,,4,1,,,0,00,6,6,6,5
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testHexToBigInteger",,,,,,,,,,,,,,,,,,,,,,,,,,,0,10,0,10,6,8,0,3,1,0,8,9,6,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testHexToBytes",,,,,,,,,,,,,,,,,,,,,,,,,,,0,28,1,27,3,23,0,2,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testIsValidHex",,,,,,,,,,,,,,,,,,,,,,,,,,,0,16,0,16,2,14,0,3,1,0,14,15,2,13,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.foundation.utils.NumericUtilTest.testPrependHexPrefix",,,,,,,,,,,,,,,,,,,,,,,,,,,0,20,1,19,3,14,0,2,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Package,"org.consenlabs.tokencore.testutils",1,1,1,1,7,0,7,0,,,,,2,2,0,,2,,1,0,3,,0,0,0,3,,63,14,43,26,13,6,,,,26,33,25,8,,,,,,2,2,2,1,,,1,,,,0,14,5,5,5,3
+Public Class,"org.consenlabs.tokencore.testutils.LocalFileStorage",1,1,1,1,3,0,3,0,2,0,0,0,,0,0,,,,1,0,1,1,0,0,0,1,,9,0,6,3,1,3,,,,1,3,2,1,,,,,,1,1,1,1,,1,0,,0,0,0,50,1,1,1,1
+Public Method,"org.consenlabs.tokencore.testutils.LocalFileStorage.getKeystoreDir",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.testutils.ResourcesManager",2,2,2,1,9,0,9,0,1,0,0,0,,2,0,,,,0,0,2,2,0,0,0,2,,28,5,20,6,12,3,,,,8,13,6,7,,,,,,2,2,2,1,,1,1,,0,0,0,15,4,4,4,2
+Public Static Method,"org.consenlabs.tokencore.testutils.ResourcesManager.loadTestJSON",,,,,,,,,,,,,,,,,,,,,,,,,,,3,10,0,10,3,7,0,3,2,0,5,7,3,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.testutils.ResourcesManager.readFileContent",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,1,8,2,5,0,8,2,0,3,5,2,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Package,"org.consenlabs.tokencore.wallet",1,1,1,1,14,1,12,0,,,,,12,39,33,,12,,95,5,134,,13,19,0,102,,2526,384,2057,861,1350,86,,,,1375,1641,800,841,,,,,,11,11,12,5,,,5,,,,0,04,251,247,257,152
+Public Class,"org.consenlabs.tokencore.wallet.EOSWalletTest",1,1,1,1,18,2,15,0,1,22,22,0,,0,3,,,,17,0,17,19,0,1,0,16,,357,56,282,109,219,19,,,,202,231,94,137,,,,,,5,5,5,1,,2,2,,0,0,0,07,27,27,27,17
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.accountName",,,,,,,,,,,,,,,,,,,,,,,,,,,8,40,4,36,7,30,0,11,16,1,22,27,7,20,5,5,5,1,4,,,,,0,,1,0,,,0,00,5,5,5,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.compatibilityV3Sign",,,,,,,,,,,,,,,,,,,,,,,,,,,4,18,1,17,8,15,0,15,1,0,15,16,8,8,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.eosMetadata",,,,,,,,,,,,,,,,,,,,,,,,,,,12,7,0,7,2,5,0,5,1,0,5,6,2,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.eosSignTransactions",,,,,,,,,,,,,,,,,,,,,,,,,,,4,22,5,15,7,13,2,13,1,0,13,14,7,7,1,1,1,1,0,,,,,0,,0,0,,,0,13,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.exportWalletPrvKeys",,,,,,,,,,,,,,,,,,,,,,,,,,,3,9,2,7,4,5,0,9,1,0,5,6,4,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.generatePrvPubKey",,,,,,,,,,,,,,,,,,,,,,,,,,,3,19,3,14,8,12,2,9,1,0,12,13,8,5,1,1,1,1,0,,,,,0,,0,0,,,0,14,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.importEOSWalletByMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,5,20,4,16,5,14,0,20,1,0,14,15,5,10,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.importEOSWalletByMnemonicMultiPermissions",,,,,,,,,,,,,,,,,,,,,,,,,,,4,21,2,14,6,12,5,13,1,0,12,13,6,7,1,1,1,1,0,,,,,0,,0,0,,,0,36,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.importEOSWalletByPrvKeysShouldFailedWhenDerivedPubKeyNotSame",,,,,,,,,,,,,,,,,,,,,,,,,,,5,26,3,22,5,19,1,9,2,0,17,19,5,14,2,2,2,1,1,,,,,0,,1,0,,,0,05,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.importEOSWalletBySinglePrvKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,43,5,35,8,32,3,18,2,0,31,34,9,25,2,2,2,1,0,,,,,0,,1,0,,,0,09,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.importEOSWalletFailedWhenDerivedPubKeyNotSame",,,,,,,,,,,,,,,,,,,,,,,,,,,6,21,3,17,3,14,1,8,2,0,12,14,3,11,2,2,2,1,1,,,,,0,,1,0,,,0,06,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.importEOSWalletWhenHasEmptyAddressWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,4,2,2,2,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,50,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.serializeToBinary",,,,,,,,,,,,,,,,,,,,,,,,,,,1,18,2,16,4,13,0,8,2,0,11,13,4,9,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.sighHashTest",,,,,,,,,,,,,,,,,,,,,,,,,,,0,5,1,4,3,2,0,2,1,0,2,3,3,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.signTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,0,11,6,9,0,10,1,0,9,10,6,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.testEOSSign",,,,,,,,,,,,,,,,,,,,,,,,,,,1,15,0,15,6,10,0,15,3,0,8,11,6,5,3,3,3,1,1,,,,,0,,2,0,,,0,00,3,3,3,1
+Public Method,"org.consenlabs.tokencore.wallet.EOSWalletTest.testLegacyEOSExport",,,,,,,,,,,,,,,,,,,,,,,,,,,6,11,0,11,5,9,0,10,1,0,9,10,5,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.Identity",1,1,1,1,11,0,10,0,1,23,23,0,,4,3,,,,19,2,23,23,2,7,0,14,,300,45,252,89,184,3,,,,166,206,89,117,,,,,,5,4,5,3,,1,2,,68,46,0,01,41,39,41,25
+Private Constructor,"org.consenlabs.tokencore.wallet.Identity.Identity",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,1,3,0,5,2,0,2,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Constructor,"org.consenlabs.tokencore.wallet.Identity.Identity",,,,,,,,,,,,,,,,,,,,,,,,,,,5,7,0,7,2,5,0,8,1,0,5,6,2,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Identity.addWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,7,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.Identity.createIdentity",,,,,,,,,,,,,,,,,,,,,,,,,,,9,12,0,12,4,10,0,10,1,0,10,11,4,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Identity.decryptDataFromIPFS",,,,,,,,,,,,,,,,,,,,,,,,,,,7,46,7,39,17,34,0,21,6,1,30,34,17,17,4,4,4,1,1,,,,,0,,2,0,,,0,00,4,4,4,1
+Public Method,"org.consenlabs.tokencore.wallet.Identity.deleteIdentity",,,,,,,,,,,,,,,,,,,,,,,,,,,11,10,1,9,1,5,0,5,4,1,3,6,1,5,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Private Method,"org.consenlabs.tokencore.wallet.Identity.deriveBitcoinWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,11,18,1,17,4,13,0,16,2,0,12,14,4,10,4,4,4,1,1,,,,,0,,1,0,,,0,00,4,4,4,1
+Private Method,"org.consenlabs.tokencore.wallet.Identity.deriveEOSWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,5,9,0,9,3,7,0,11,1,0,7,8,3,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.wallet.Identity.deriveEthereumWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,6,9,0,9,3,7,0,11,1,0,7,8,3,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Identity.deriveWallets",,,,,,,,,,,,,,,,,,,,,,,,,,,5,25,1,24,5,19,0,13,5,1,14,18,6,12,5,3,5,1,6,,,,,0,,2,0,,,0,00,5,3,5,1
+Method,"org.consenlabs.tokencore.wallet.Identity.encryptDataToIPFS",,,,,,,,,,,,,,,,,,,,,,,,,,,9,34,6,28,14,26,0,14,1,0,26,27,14,13,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Identity.encryptDataToIPFS",,,,,,,,,,,,,,,,,,,,,,,,,,,1,5,0,5,3,3,0,4,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Identity.exportIdentity",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.wallet.Identity.flush",,,,,,,,,,,,,,,,,,,,,,,,,,,6,10,0,10,3,7,0,4,2,0,5,7,3,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.wallet.Identity.getCurrentIdentity",,,,,,,,,,,,,,,,,,,,,,,,,,,8,8,0,8,1,4,0,3,2,0,2,5,1,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.Identity.getIdentifier",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Identity.getIpfsId",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Identity.getMetadata",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Identity.getWallets",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.Identity.recoverIdentity",,,,,,,,,,,,,,,,,,,,,,,,,,,15,13,0,13,5,10,0,11,1,0,10,11,4,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"org.consenlabs.tokencore.wallet.Identity.removeWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,4,12,1,11,2,7,0,7,3,0,7,9,2,7,3,3,3,3,2,,,,,2,,2,2,,,0,00,3,3,3,3
+Public Method,"org.consenlabs.tokencore.wallet.Identity.signAuthenticationMessage",,,,,,,,,,,,,,,,,,,,,,,,,,,6,6,0,6,4,4,0,7,1,0,4,5,4,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.wallet.Identity.tryLoadFromFile",,,,,,,,,,,,,,,,,,,,,,,,,,,5,12,0,12,5,9,0,5,2,0,6,8,4,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.wallet.IdentityTest",1,1,1,1,17,1,14,1,1,10,10,0,,0,0,,,,9,0,9,11,0,0,0,9,,181,28,137,53,104,17,,,,93,107,44,63,,,,,,2,2,2,1,,2,1,,0,0,0,12,12,12,12,9
+Public Method,"org.consenlabs.tokencore.wallet.IdentityTest.testCreateIdentity",,,,,,,,,,,,,,,,,,,,,,,,,,,6,17,4,13,4,11,0,14,1,0,11,12,4,8,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.IdentityTest.testCreateIdentitySegWitOnMainNet",,,,,,,,,,,,,,,,,,,,,,,,,,,4,29,6,11,6,9,12,10,1,0,9,10,6,4,1,1,1,1,0,,,,,0,,0,0,,,1,09,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.IdentityTest.testDeleteIdentity",,,,,,,,,,,,,,,,,,,,,,,,,,,8,12,1,11,2,8,0,8,2,0,6,8,2,6,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.IdentityTest.testExportIdentity",,,,,,,,,,,,,,,,,,,,,,,,,,,8,11,0,11,2,8,0,6,2,0,6,8,2,6,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.IdentityTest.testIPFSData",,,,,,,,,,,,,,,,,,,,,,,,,,,5,18,1,16,5,12,2,5,2,0,5,8,5,3,2,2,2,1,0,,,,,0,,1,0,,,0,12,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.IdentityTest.testRecoverIdentityOnMainnet",,,,,,,,,,,,,,,,,,,,,,,,,,,5,17,1,16,6,14,0,12,1,0,14,15,6,9,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.IdentityTest.testRecoverIdentityOnTestnet",,,,,,,,,,,,,,,,,,,,,,,,,,,5,17,1,16,6,14,0,12,1,0,14,15,6,9,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.IdentityTest.testRecoverIdentitySegWitOnMainNet",,,,,,,,,,,,,,,,,,,,,,,,,,,5,17,1,16,6,14,0,12,1,0,14,15,6,9,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.IdentityTest.testRecoverIdentitySegWitOnTestNet",,,,,,,,,,,,,,,,,,,,,,,,,,,5,17,1,16,6,14,0,12,1,0,14,15,6,9,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Interface,"org.consenlabs.tokencore.wallet.KeystoreStorage",0,0,0,0,0,0,0,0,0,0,0,1,,0,0,,,,1,0,1,1,1,0,0,0,,3,0,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.wallet.KeystoreStorage.getKeystoreDir",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Class,"org.consenlabs.tokencore.wallet.SampleKey",0,0,0,0,0,0,0,0,1,1,1,0,,0,22,,,,0,0,0,0,0,0,0,0,,38,8,27,25,23,3,,,,22,23,23,0,,,,,,0,0,0,0,,1,0,,0,0,0,11,0,0,0,0
+Public Class,"org.consenlabs.tokencore.wallet.SegWitWalletTest",2,2,2,1,30,2,27,0,1,13,13,0,,0,0,,,,3,0,3,5,0,0,0,3,,98,10,87,36,71,1,,,,68,75,34,41,,,,,,3,3,3,1,,2,2,,0,0,0,01,7,7,7,3
+Public Method,"org.consenlabs.tokencore.wallet.SegWitWalletTest.p2sh_p2wpkhAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,1,25,2,22,9,17,1,19,3,0,18,20,10,10,3,3,3,1,1,,,,,0,,2,0,,,0,05,3,3,3,1
+Public Method,"org.consenlabs.tokencore.wallet.SegWitWalletTest.testSameMnemonicSwitchOverrideIdentity",,,,,,,,,,,,,,,,,,,,,,,,,,,10,17,1,16,4,13,0,12,2,0,11,13,4,9,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.SegWitWalletTest.transactionSignTest",,,,,,,,,,,,,,,,,,,,,,,,,,,2,48,4,44,19,41,0,22,2,0,39,41,19,22,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.wallet.StorageTest",3,3,3,1,40,3,36,1,1,9,9,0,,0,0,,,,8,0,8,10,0,1,0,7,,344,34,299,72,256,11,,,,230,260,69,191,,,,,,5,5,5,3,,2,3,,0,0,0,04,27,27,27,10
+Private Method,"org.consenlabs.tokencore.wallet.StorageTest.readFileContent",,,,,,,,,,,,,,,,,,,,,,,,,,,8,20,0,20,4,14,0,5,3,0,8,13,4,9,5,5,5,1,3,,,,,0,,2,0,,,0,00,5,5,5,1
+Public Method,"org.consenlabs.tokencore.wallet.StorageTest.testGenerateIdentityKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,8,37,2,35,7,30,0,11,10,1,25,31,8,23,5,5,5,3,3,,,,,3,,2,1,,,0,00,5,5,5,3
+Public Method,"org.consenlabs.tokencore.wallet.StorageTest.testImportBTCWalletFromMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,12,36,4,31,8,26,1,13,4,1,23,27,9,18,4,4,4,1,2,,,,,0,,3,0,,,0,03,4,4,4,1
+Public Method,"org.consenlabs.tokencore.wallet.StorageTest.testImportBTCWalletFromPrivate",,,,,,,,,,,,,,,,,,,,,,,,,,,11,34,3,31,7,26,0,16,4,1,23,27,8,19,4,4,4,1,2,,,,,0,,3,0,,,0,00,4,4,4,1
+Public Method,"org.consenlabs.tokencore.wallet.StorageTest.testImportETHWalletFromKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,9,27,2,25,7,22,0,14,2,0,20,22,7,15,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.StorageTest.testImportETHWalletFromMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,10,27,2,25,7,22,0,12,2,0,20,22,7,15,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.StorageTest.testImportETHWalletFromPrivate",,,,,,,,,,,,,,,,,,,,,,,,,,,9,27,2,25,7,22,0,13,2,0,20,22,7,15,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.StorageTest.testRestoreFromFiles",,,,,,,,,,,,,,,,,,,,,,,,,,,14,115,10,98,17,94,7,39,3,0,91,95,18,77,3,3,3,1,1,,,,,0,,2,0,,,0,07,3,3,3,1
+Public Class,"org.consenlabs.tokencore.wallet.TokenCoreTour",1,1,1,1,17,1,15,0,1,13,13,0,,1,0,,,,4,0,5,7,0,1,0,4,,97,13,84,28,68,0,,,,45,51,20,31,,,,,,1,1,1,1,,2,0,,0,0,0,00,5,5,5,5
+Public Method,"org.consenlabs.tokencore.wallet.TokenCoreTour.bitcoinTransactionSignExample",,,,,,,,,,,,,,,,,,,,,,,,,,,7,12,1,11,5,9,0,9,1,0,8,9,4,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.TokenCoreTour.createBTCHDWalletExample",,,,,,,,,,,,,,,,,,,,,,,,,,,6,12,0,12,3,10,0,9,1,0,10,11,3,8,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.TokenCoreTour.createEthereumWalletExample",,,,,,,,,,,,,,,,,,,,,,,,,,,5,18,2,16,5,14,0,14,1,0,10,11,4,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.wallet.TokenCoreTour.createMultiUXTOOnTestnet",,,,,,,,,,,,,,,,,,,,,,,,,,,1,29,3,26,4,24,0,3,1,0,7,8,3,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.TokenCoreTour.signEthereumTransactionExample",,,,,,,,,,,,,,,,,,,,,,,,,,,5,14,1,13,6,11,0,10,1,0,10,11,5,6,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.Wallet",1,1,1,1,6,0,5,0,1,17,17,0,,0,0,,,,19,1,19,19,5,0,0,14,,137,24,113,27,60,0,,,,41,75,27,48,,,,,,4,4,4,3,,1,2,,0,0,0,00,33,33,35,27
+Public Constructor,"org.consenlabs.tokencore.wallet.Wallet.Wallet",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.decryptMainKey",,,,,,,,,,,,,,,,,,,,,,,,,,,10,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.decryptPrvKeyFor",,,,,,,,,,,,,,,,,,,,,,,,,,,4,8,1,7,2,4,0,3,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Method,"org.consenlabs.tokencore.wallet.Wallet.delete",,,,,,,,,,,,,,,,,,,,,,,,,,,14,3,0,3,1,1,0,5,1,0,1,2,1,1,1,1,2,1,0,,,,,0,,0,0,,,0,00,1,1,2,1
+Method,"org.consenlabs.tokencore.wallet.Wallet.exportKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,9,17,1,16,2,11,0,6,5,1,6,10,2,8,4,4,4,3,3,,,,,3,,2,3,,,0,00,4,4,4,3
+Method,"org.consenlabs.tokencore.wallet.Wallet.exportMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,6,9,0,9,4,6,0,4,2,0,5,7,4,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.exportPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,12,11,0,11,2,7,0,7,3,0,4,7,2,5,3,3,4,3,3,,,,,3,,2,3,,,0,00,3,3,4,3
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.exportPrivateKeys",,,,,,,,,,,,,,,,,,,,,,,,,,,5,9,0,9,1,6,0,4,3,0,3,6,1,5,3,3,3,3,2,,,,,2,,1,2,,,0,00,3,3,3,3
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.getAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,17,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.getCreatedAt",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.getEncXPub",,,,,,,,,,,,,,,,,,,,,,,,,,,7,6,0,6,1,3,0,2,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.getId",,,,,,,,,,,,,,,,,,,,,,,,,,,15,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.getKeyPathPrivates",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,2,9,1,6,0,4,3,0,3,6,1,5,3,3,3,3,2,,,,,2,,1,2,,,0,00,3,3,3,3
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.getKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.getMetadata",,,,,,,,,,,,,,,,,,,,,,,,,,,9,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"org.consenlabs.tokencore.wallet.Wallet.hasMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.newReceiveAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,7,7,0,7,1,4,0,3,2,0,2,4,1,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.Wallet.setAccountName",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,1,3,0,2,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Method,"org.consenlabs.tokencore.wallet.Wallet.verifyPassword",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.WalletManager",2,2,2,1,10,0,8,0,1,25,25,0,,34,3,,,,1,0,35,35,5,9,0,21,,404,62,316,97,207,26,,,,157,239,99,140,,,,,,11,11,12,5,,1,5,,84,38,0,08,80,78,84,42
+Private Constructor,"org.consenlabs.tokencore.wallet.WalletManager.WalletManager",,,,,,,,,,,,,,,,,,,,,,,,,,,0,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.changePassword",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,3,3,0,3,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Static Method,"org.consenlabs.tokencore.wallet.WalletManager.cleanKeystoreDirectory",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.clearKeystoreMap",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Static Method,"org.consenlabs.tokencore.wallet.WalletManager.createWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,5,6,0,6,2,4,0,6,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.wallet.WalletManager.deleteDir",,,,,,,,,,,,,,,,,,,,,,,,,,,2,12,0,12,3,7,0,4,4,1,4,9,4,5,4,4,4,4,4,,,,,4,,3,4,,,0,00,4,4,4,4
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.exportKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,2,2,0,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.exportMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,2,2,0,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.exportPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,2,2,0,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.exportPrivateKeys",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,2,2,0,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.wallet.WalletManager.findKeystoreByAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,5,16,4,12,1,7,0,7,6,1,4,10,2,8,5,5,6,5,5,,,,,5,,2,5,,,0,00,5,5,6,5
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.findWalletByAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,6,7,0,7,2,4,0,3,2,0,3,5,2,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Static Method,"org.consenlabs.tokencore.wallet.WalletManager.findWalletById",,,,,,,,,,,,,,,,,,,,,,,,,,,6,8,0,8,2,5,0,3,2,0,3,5,2,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.findWalletByKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,4,7,1,6,4,4,0,5,1,0,4,5,4,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.findWalletByMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,8,18,2,16,7,12,0,18,4,1,10,13,7,6,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.findWalletByPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,6,8,0,8,3,5,0,9,2,0,4,6,3,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Static Method,"org.consenlabs.tokencore.wallet.WalletManager.flushWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,8,16,2,14,3,10,0,12,3,0,7,10,3,7,3,3,3,1,1,,,,,0,,2,0,,,0,00,3,3,3,1
+Static Method,"org.consenlabs.tokencore.wallet.WalletManager.generateWalletFile",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Static Method,"org.consenlabs.tokencore.wallet.WalletManager.getDefaultKeyDirectory",,,,,,,,,,,,,,,,,,,,,,,,,,,6,7,0,7,2,4,0,4,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.importWalletFromKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,14,18,2,16,3,12,0,12,6,1,7,11,3,8,4,4,4,1,2,,,,,0,,2,0,,,0,00,4,4,4,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.importWalletFromMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,25,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.importWalletFromMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,15,32,2,18,3,15,12,11,8,1,10,13,3,10,5,3,5,1,3,,,,,0,,1,0,,,0,67,5,3,5,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.importWalletFromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,16,6,0,6,3,4,0,5,1,0,4,5,3,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.importWalletFromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,8,7,0,4,2,2,3,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,75,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.importWalletFromPrivateKeys",,,,,,,,,,,,,,,,,,,,,,,,,,,9,11,0,8,2,5,3,6,2,0,4,6,2,4,2,2,2,1,0,,,,,0,,1,0,,,0,38,2,2,2,1
+Private Static Method,"org.consenlabs.tokencore.wallet.WalletManager.mustFindKeystoreById",,,,,,,,,,,,,,,,,,,,,,,,,,,4,8,1,7,2,4,0,3,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.mustFindWalletById",,,,,,,,,,,,,,,,,,,,,,,,,,,10,5,0,5,2,3,0,4,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Static Method,"org.consenlabs.tokencore.wallet.WalletManager.persistWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,6,5,0,5,2,3,0,4,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.removeWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,5,10,0,10,2,6,0,7,4,1,4,7,2,5,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.scanWallets",,,,,,,,,,,,,,,,,,,,,,,,,,,7,37,2,35,7,27,0,18,17,1,15,27,8,19,11,11,12,1,6,,,,,0,,5,0,,,0,00,11,11,12,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.setAccountName",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,2,3,0,5,1,0,3,4,2,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.WalletManager.switchBTCWalletMode",,,,,,,,,,,,,,,,,,,,,,,,,,,7,27,3,23,8,18,1,23,6,1,15,19,8,11,4,4,4,1,2,,,,,0,,1,0,,,0,04,4,4,4,1
+Private Static Generic Method,"org.consenlabs.tokencore.wallet.WalletManager.unmarshalKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,9,13,0,13,3,9,0,4,2,0,8,10,3,7,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+TypeVariable,"org.consenlabs.tokencore.wallet.WalletManager.unmarshalKeystore.T",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,3,0,,0,0,0,00,0,0,0,0
+Private Static Method,"org.consenlabs.tokencore.wallet.WalletManager.validateKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,8,18,3,15,4,11,0,11,8,1,8,12,4,8,4,4,6,1,0,,,,,0,,1,0,,,0,00,4,4,6,1
+Private Static Method,"org.consenlabs.tokencore.wallet.WalletManager.writeToFile",,,,,,,,,,,,,,,,,,,,,,,,,,,6,9,0,9,2,6,0,3,2,0,4,6,2,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Class,"org.consenlabs.tokencore.wallet.WalletManagerTest",1,1,1,1,14,1,12,0,1,10,10,0,,0,1,,,,12,2,12,14,0,0,0,12,,226,42,184,66,143,0,,,,90,105,43,62,,,,,,2,2,2,1,,2,1,,80,80,0,00,14,14,14,12
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.changePassword",,,,,,,,,,,,,,,,,,,,,,,,,,,4,15,3,12,5,10,0,11,1,0,8,9,4,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.exportKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,2,9,4,7,0,8,1,0,5,6,3,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.exportMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,1,10,5,8,0,8,1,0,6,7,4,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.exportPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,8,12,1,11,3,9,0,7,1,0,9,10,3,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.findWalletByKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,0,8,3,6,0,6,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.importDuplicate",,,,,,,,,,,,,,,,,,,,,,,,,,,7,24,5,19,4,16,0,8,2,0,8,10,3,7,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.importKeyStore",,,,,,,,,,,,,,,,,,,,,,,,,,,6,12,2,10,3,8,0,7,1,0,6,7,2,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.importMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,10,29,5,24,4,21,0,7,2,0,13,15,3,12,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.importPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,5,14,2,12,4,10,0,11,1,0,6,7,3,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.removeWallet",,,,,,,,,,,,,,,,,,,,,,,,,,,4,9,0,9,4,7,0,7,1,0,5,6,3,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.switchBTCModel",,,,,,,,,,,,,,,,,,,,,,,,,,,7,13,0,13,6,11,0,8,1,0,11,12,6,6,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletManagerTest.testMnemonicOtherAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,4,11,1,10,4,7,0,6,1,0,6,7,3,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.WalletSupport",2,2,2,1,10,0,10,0,1,4,4,9,,0,1,,,,2,0,2,2,0,0,0,2,,29,4,25,9,15,0,,,,12,19,8,11,,,,,,3,3,3,1,,1,1,,0,0,0,00,5,5,5,2
+Public Method,"org.consenlabs.tokencore.wallet.WalletSupport.setUp",,,,,,,,,,,,,,,,,,,,,,,,,,,2,12,1,11,2,8,0,10,2,0,6,8,2,6,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.WalletSupport.tearDown",,,,,,,,,,,,,,,,,,,,,,,,,,,1,9,0,9,3,6,0,3,3,0,5,9,4,5,3,3,3,1,1,,,,,0,,1,0,,,0,00,3,3,3,1
+Package,"org.consenlabs.tokencore.wallet.address",1,1,1,1,7,0,6,0,,,,,6,1,4,,6,,18,2,19,,2,3,0,14,,236,48,185,102,72,3,,,,116,145,93,52,,,,,,5,5,5,4,,,2,,,,0,02,24,24,26,20
+Public Interface,"org.consenlabs.tokencore.wallet.address.AddressCreator",0,0,0,0,0,0,0,0,0,0,0,3,,0,0,,,,2,0,2,2,2,0,0,0,,4,0,4,3,0,0,,,,2,3,3,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.wallet.address.AddressCreator.fromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.wallet.address.AddressCreator.fromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Class,"org.consenlabs.tokencore.wallet.address.AddressCreatorManager",5,5,5,4,14,1,13,0,1,8,8,0,,1,0,,,,0,0,1,1,0,0,0,1,,18,3,15,3,9,0,,,,5,10,3,7,,,,,,5,5,5,4,,1,2,,0,0,0,00,5,5,5,4
+Public Static Method,"org.consenlabs.tokencore.wallet.address.AddressCreatorManager.getInstance",,,,,,,,,,,,,,,,,,,,,,,,,,,13,14,1,13,2,9,0,6,4,1,5,9,2,7,5,5,5,4,4,,,,,4,,2,4,,,0,00,5,5,5,4
+Public Class,"org.consenlabs.tokencore.wallet.address.AddressCreatorTest",1,1,1,1,13,2,11,0,1,9,9,0,,0,0,,,,3,0,3,3,0,0,0,3,,51,10,38,10,24,3,,,,27,31,7,24,,,,,,1,1,1,1,,1,0,,0,0,0,08,3,3,3,3
+Public Method,"org.consenlabs.tokencore.wallet.address.AddressCreatorTest.testGenerateBTCAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,5,14,3,11,2,8,0,6,1,0,9,10,2,8,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.address.AddressCreatorTest.testGenerateBTCP2WPKHAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,5,14,3,11,2,8,0,6,1,0,9,10,2,8,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.address.AddressCreatorTest.testGenerateETHAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,3,12,1,11,2,8,0,6,1,0,9,10,2,8,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.address.BitcoinAddressCreator",1,1,1,1,5,0,5,0,2,1,1,0,,0,0,,,,3,1,3,3,0,0,0,3,,26,4,22,10,9,0,,,,9,14,8,6,,,,,,2,2,3,1,,1,1,,0,0,0,00,4,4,5,3
+Public Constructor,"org.consenlabs.tokencore.wallet.address.BitcoinAddressCreator.BitcoinAddressCreator",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.address.BitcoinAddressCreator.fromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,3,10,0,10,3,6,0,8,2,0,5,7,3,4,2,2,3,1,1,,,,,0,,1,0,,,0,00,2,2,3,1
+Public Method,"org.consenlabs.tokencore.wallet.address.BitcoinAddressCreator.fromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,2,2,0,4,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.address.EthereumAddressCreator",1,1,1,1,4,0,4,0,2,2,2,0,,0,4,,,,5,0,5,5,0,2,0,3,,36,7,29,18,15,0,,,,15,21,16,5,,,,,,1,1,1,1,,1,0,,0,0,0,00,5,5,5,5
+Private Method,"org.consenlabs.tokencore.wallet.address.EthereumAddressCreator.fromECKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,2,2,0,4,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.address.EthereumAddressCreator.fromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,2,2,0,4,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.address.EthereumAddressCreator.fromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,5,4,0,4,2,2,0,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.address.EthereumAddressCreator.fromPublicKey",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,2,2,0,3,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.wallet.address.EthereumAddressCreator.publicKeyToAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,3,3,0,4,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.address.SegWitBitcoinAddressCreator",1,1,1,1,5,0,5,0,2,3,3,0,,0,0,,,,5,1,5,5,0,1,0,4,,39,6,33,14,15,0,,,,14,22,12,10,,,,,,3,3,4,1,,1,2,,19,0,0,00,7,7,8,5
+Public Constructor,"org.consenlabs.tokencore.wallet.address.SegWitBitcoinAddressCreator.SegWitBitcoinAddressCreator",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.wallet.address.SegWitBitcoinAddressCreator.calcSegWitAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,2,2,0,7,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.address.SegWitBitcoinAddressCreator.fromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,13,0,13,3,8,0,10,3,0,6,9,3,6,3,3,4,1,1,,,,,0,,2,0,,,0,00,3,3,4,1
+Public Method,"org.consenlabs.tokencore.wallet.address.SegWitBitcoinAddressCreator.fromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,0,4,2,2,0,4,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.address.SegWitBitcoinAddressCreator.fromPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,2,2,0,7,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Package,"org.consenlabs.tokencore.wallet.keystore",1,1,1,1,6,0,6,0,,,,,17,8,12,,13,,118,33,126,,6,6,0,114,,1300,264,1011,489,461,25,,,,598,782,461,321,,,,,,9,9,10,3,,,5,,,,0,02,167,167,172,120
+Public Class,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore",2,2,2,1,9,1,8,0,2,14,14,0,,4,3,,,,14,3,18,34,0,5,0,13,,339,71,266,92,138,2,,,,126,202,94,108,,,,,,9,9,10,3,,4,5,,77,59,0,01,42,42,44,20
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.EOSKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Constructor,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.EOSKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,14,41,9,32,5,25,0,30,24,1,20,28,7,21,7,7,7,1,0,,,,,0,,2,0,,,0,00,7,7,7,1
+Private Constructor,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.EOSKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,12,25,5,20,3,16,0,25,4,1,14,17,3,14,4,4,4,1,0,,,,,0,,1,0,,,0,00,4,4,4,1
+Public Static Class,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPath",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,5,2,5,5,0,0,0,5,,25,5,20,8,6,0,,,,8,14,8,6,,,,,,1,1,1,1,,1,0,,40,40,0,00,5,5,5,5
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPath.KeyPath",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPath.getPath",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPath.getPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPath.setPath",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPath.setPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate",1,1,1,1,3,0,3,0,1,1,1,0,,0,3,,,,10,4,10,10,0,0,0,10,,52,11,41,18,15,0,,,,19,30,18,12,,,,,,1,1,1,1,,1,0,,70,70,0,00,10,10,10,10
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate.KeyPathPrivate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate.KeyPathPrivate",,,,,,,,,,,,,,,,,,,,,,,,,,,5,6,0,6,1,4,0,5,1,0,4,5,1,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate.getDerivedMode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate.getEncPrivate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate.getPath",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate.getPublicKey",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate.setDerivedMode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate.setEncPrivate",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate.setPath",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.KeyPathPrivate.setPublicKey",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.PermissionObject",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,8,3,8,8,0,0,0,8,,45,9,36,15,13,0,,,,14,25,13,12,,,,,,3,3,6,3,,1,1,,50,50,0,00,10,10,13,10
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.PermissionObject.equals",,,,,,,,,,,,,,,,,,,,,,,,,,,4,8,0,8,2,6,0,3,3,0,4,7,2,5,3,3,6,3,2,,,,,2,,1,2,,,0,00,3,3,6,3
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.PermissionObject.getParent",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.PermissionObject.getPermission",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.PermissionObject.getPublicKey",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.PermissionObject.hashCode",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,1,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.PermissionObject.setParent",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.PermissionObject.setPermission",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.PermissionObject.setPublicKey",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.calcAllDefaultKeys",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,2,6,4,4,0,5,1,0,4,5,4,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.calcDefaultKeys",,,,,,,,,,,,,,,,,,,,,,,,,,,4,10,1,9,4,6,0,7,2,0,5,8,5,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.changePassword",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.create",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.create",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.create",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.decryptPrivateKeyFor",,,,,,,,,,,,,,,,,,,,,,,,,,,8,13,0,13,2,8,0,4,6,1,5,10,3,7,4,4,4,3,2,,,,,2,,2,2,,,0,00,4,4,4,3
+Private Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.derivedKeyPath",,,,,,,,,,,,,,,,,,,,,,,,,,,13,25,1,24,6,15,0,12,18,1,8,19,9,10,9,9,10,1,0,,,,,0,,5,0,,,0,00,9,9,10,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.exportPrivateKeys",,,,,,,,,,,,,,,,,,,,,,,,,,,6,14,0,14,5,11,0,11,2,0,10,13,6,7,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.getEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.getKeyPathPrivates",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.getMnemonicPath",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.setAccountName",,,,,,,,,,,,,,,,,,,,,,,,,,,6,9,0,9,1,5,0,5,4,1,3,6,1,5,3,3,4,1,0,,,,,0,,1,0,,,0,00,3,3,4,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.setEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.EOSKeystore.setKeyPathPrivates",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Interface,"org.consenlabs.tokencore.wallet.keystore.EncMnemonicKeystore",1,1,1,1,3,0,3,0,0,2,2,4,,0,0,,,,6,0,6,6,6,0,0,0,,16,3,13,8,3,0,,,,7,10,8,2,,,,,,1,1,1,1,,0,0,,0,0,0,00,2,2,2,2
+Method,"org.consenlabs.tokencore.wallet.keystore.EncMnemonicKeystore.createEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,2,2,0,5,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"org.consenlabs.tokencore.wallet.keystore.EncMnemonicKeystore.decryptMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,4,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Abstract Method,"org.consenlabs.tokencore.wallet.keystore.EncMnemonicKeystore.getCrypto",,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.wallet.keystore.EncMnemonicKeystore.getEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.wallet.keystore.EncMnemonicKeystore.getMnemonicPath",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.wallet.keystore.EncMnemonicKeystore.setEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Interface,"org.consenlabs.tokencore.wallet.keystore.ExportableKeystore",0,0,0,0,0,0,0,0,0,0,0,2,,0,0,,,,0,0,0,0,0,0,0,0,,2,0,2,1,0,0,,,,0,1,1,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Public Class,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore",1,1,1,1,6,0,6,0,2,11,11,0,,1,3,,,,13,4,14,30,0,0,0,14,,151,30,117,52,62,4,,,,59,84,47,37,,,,,,5,5,5,1,,4,1,,80,72,0,03,21,21,21,14
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.HDMnemonicKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.HDMnemonicKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,12,30,3,27,7,23,0,42,4,1,20,23,7,16,5,5,5,1,1,,,,,0,,1,0,,,0,00,5,5,5,1
+Public Static Class,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.Info",1,1,1,1,3,0,2,0,1,0,0,0,,0,0,,,,5,2,5,5,0,0,0,5,,24,6,18,8,6,0,,,,6,12,8,4,,,,,,1,1,1,1,,1,0,,60,60,0,00,5,5,5,5
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.Info.Info",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,1,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.Info.getCurve",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.Info.getPurpuse",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.Info.setCurve",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.Info.setPurpuse",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.changePassword",,,,,,,,,,,,,,,,,,,,,,,,,,,6,5,0,5,3,3,0,6,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.create",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.getEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.getEncryptXPub",,,,,,,,,,,,,,,,,,,,,,,,,,,5,13,1,12,6,9,0,7,2,0,7,9,6,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.getInfo",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.getMnemonicPath",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.getXpub",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.newReceiveAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,6,11,0,11,5,8,0,11,2,0,6,8,5,3,3,3,3,1,1,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.setEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.setInfo",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.setMnemonicPath",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.HDMnemonicKeystore.setXpub",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Class,"org.consenlabs.tokencore.wallet.keystore.IMTKeystore",1,1,1,1,3,0,3,0,1,1,1,4,,0,0,,,,3,1,3,16,0,0,0,3,,17,3,14,7,3,0,,,,4,8,5,3,,,,,,1,1,1,1,,3,0,,33,33,0,00,3,3,3,3
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.IMTKeystore.IMTKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IMTKeystore.getMetadata",,,,,,,,,,,,,,,,,,,,,,,,,,,10,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IMTKeystore.setMetadata",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore",1,1,1,1,5,0,4,0,2,10,10,0,,0,1,,,,18,8,18,27,0,0,0,18,,137,34,99,51,50,4,,,,57,76,47,29,,,,,,3,3,3,1,,2,0,,84,84,0,04,20,20,20,18
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.IdentityKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,1,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.IdentityKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,6,45,10,34,20,32,1,42,1,0,32,33,20,13,3,3,3,1,0,,,,,0,,0,0,,,0,03,3,3,3,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.getEncAuthKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.getEncKey",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.getEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.getIdentifier",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.getIpfsId",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.getMetadata",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.getMnemonicPath",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.getWalletIDs",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.setEncAuthKey",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.setEncKey",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.setEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.setIdentifier",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.setIpfsId",,,,,,,,,,,,,,,,,,,,,,,,,,,1,4,1,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.setMetadata",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.setMnemonicPath",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.IdentityKeystore.setWalletIDs",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Class,"org.consenlabs.tokencore.wallet.keystore.Keystore",1,1,1,1,3,0,3,0,1,1,1,2,,0,0,,,,9,3,9,9,0,0,0,9,,44,9,32,13,9,3,,,,12,22,13,9,,,,,,1,1,1,1,,1,0,,74,66,0,09,9,9,9,9
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.Keystore.Keystore",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,4,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.Keystore.decryptCiphertext",,,,,,,,,,,,,,,,,,,,,,,,,,,10,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.Keystore.getCrypto",,,,,,,,,,,,,,,,,,,,,,,,,,,10,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.Keystore.getId",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.Keystore.getVersion",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.Keystore.setCrypto",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.Keystore.setId",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.Keystore.setVersion",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.Keystore.verifyPassword",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.keystore.KeystoreTest",2,2,2,1,32,3,28,0,1,16,16,0,,0,0,,,,5,0,5,7,0,0,0,5,,176,22,151,31,124,3,,,,87,104,25,79,,,,,,4,4,4,1,,2,3,,0,0,0,02,12,12,12,5
+Public Method,"org.consenlabs.tokencore.wallet.keystore.KeystoreTest.testHDMnemonicKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,9,28,2,26,6,22,0,22,2,0,18,21,5,16,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.KeystoreTest.testImportKeystoreWhichContainsInvalidPK",,,,,,,,,,,,,,,,,,,,,,,,,,,6,40,2,38,4,34,0,7,4,1,10,13,3,10,3,3,3,1,2,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.KeystoreTest.testKeystoreValid",,,,,,,,,,,,,,,,,,,,,,,,,,,4,30,5,25,7,19,0,17,4,1,13,19,8,11,4,4,4,1,2,,,,,0,,3,0,,,0,00,4,4,4,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.KeystoreTest.testV3Keystore",,,,,,,,,,,,,,,,,,,,,,,,,,,12,45,6,39,5,35,0,22,2,0,32,35,5,30,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.KeystoreTest.testV3MnemonicKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,5,17,1,16,3,14,0,19,1,0,14,15,3,12,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.keystore.LegacyEOSKeystore",1,1,1,1,6,0,6,0,1,6,6,0,,1,0,,,,3,0,4,24,0,0,0,4,,35,6,29,11,17,0,,,,16,22,10,12,,,,,,3,3,3,1,,5,1,,0,0,0,00,6,6,6,4
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.LegacyEOSKeystore.LegacyEOSKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,0,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.LegacyEOSKeystore.LegacyEOSKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,9,13,1,12,2,9,0,15,2,0,8,10,2,8,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Static Method,"org.consenlabs.tokencore.wallet.keystore.LegacyEOSKeystore.create",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.LegacyEOSKeystore.exportPrivateKeys",,,,,,,,,,,,,,,,,,,,,,,,,,,2,9,0,9,5,7,0,8,1,0,7,8,5,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Class,"org.consenlabs.tokencore.wallet.keystore.V3Ignore",0,0,0,0,0,0,0,0,1,2,2,0,,0,0,,,,5,0,5,5,0,0,0,5,,20,4,13,12,0,3,,,,5,6,6,0,,,,,,0,0,0,0,,1,0,,0,0,0,23,0,0,0,0
+Public Abstract Method,"org.consenlabs.tokencore.wallet.keystore.V3Ignore.getEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Abstract Method,"org.consenlabs.tokencore.wallet.keystore.V3Ignore.getEncXPub",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Abstract Method,"org.consenlabs.tokencore.wallet.keystore.V3Ignore.getMetadata",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Abstract Method,"org.consenlabs.tokencore.wallet.keystore.V3Ignore.getMnemonicIndex",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Abstract Method,"org.consenlabs.tokencore.wallet.keystore.V3Ignore.getMnemonicPath",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Class,"org.consenlabs.tokencore.wallet.keystore.V3Keystore",2,2,2,1,9,0,9,0,2,10,10,1,,1,1,,,,3,0,4,20,0,0,0,4,,51,5,43,11,27,3,,,,22,31,10,21,,,,,,6,6,6,1,,4,2,,0,0,0,07,10,10,10,4
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.V3Keystore.V3Keystore",,,,,,,,,,,,,,,,,,,,,,,,,,,12,24,0,24,3,19,0,28,4,1,15,19,3,16,6,6,6,1,3,,,,,0,,2,0,,,0,00,6,6,6,1
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.V3Keystore.V3Keystore",,,,,,,,,,,,,,,,,,,,,,,,,,,0,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.V3Keystore.changePassword",,,,,,,,,,,,,,,,,,,,,,,,,,,7,10,0,10,3,6,0,7,2,0,5,7,3,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.wallet.keystore.V3Keystore.create",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.keystore.V3MnemonicKeystore",1,1,1,1,5,0,5,0,3,8,8,0,,1,1,,,,7,2,8,24,0,1,0,7,,66,14,49,22,25,3,,,,27,36,18,18,,,,,,2,2,2,1,,4,0,,56,37,0,06,9,9,9,8
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.V3MnemonicKeystore.V3MnemonicKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Constructor,"org.consenlabs.tokencore.wallet.keystore.V3MnemonicKeystore.V3MnemonicKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,10,20,3,17,5,15,0,32,1,0,15,16,5,11,2,2,2,1,0,,,,,0,,0,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.V3MnemonicKeystore.changePassword",,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,0,5,3,3,0,7,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.keystore.V3MnemonicKeystore.create",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.V3MnemonicKeystore.getEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.V3MnemonicKeystore.getMnemonicPath",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.V3MnemonicKeystore.setEncMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.V3MnemonicKeystore.setMnemonicPath",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Class,"org.consenlabs.tokencore.wallet.keystore.WalletKeystore",1,1,1,1,2,0,2,0,1,0,0,2,,0,0,,,,4,1,4,13,0,0,0,4,,15,4,11,6,3,0,,,,5,9,6,3,,,,,,1,1,1,1,,2,0,,33,33,0,00,3,3,3,3
+Public Constructor,"org.consenlabs.tokencore.wallet.keystore.WalletKeystore.WalletKeystore",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Abstract Method,"org.consenlabs.tokencore.wallet.keystore.WalletKeystore.changePassword",,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Method,"org.consenlabs.tokencore.wallet.keystore.WalletKeystore.getAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,9,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.keystore.WalletKeystore.setAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Package,"org.consenlabs.tokencore.wallet.model",1,1,1,1,3,0,3,0,,,,,9,3,91,,9,,40,15,43,,0,0,0,43,,421,105,311,183,168,5,,,,188,249,180,69,,,,,,4,4,5,3,,,2,,,,0,02,53,53,58,47
+Public Class,"org.consenlabs.tokencore.wallet.model.BIP44Util",4,4,4,2,11,0,10,0,1,1,1,0,,2,8,,,,0,0,2,2,0,0,0,2,,36,5,31,13,22,0,,,,16,24,14,10,,,,,,4,4,5,3,,1,2,,0,0,0,00,8,8,9,4
+Public Static Method,"org.consenlabs.tokencore.wallet.model.BIP44Util.generatePath",,,,,,,,,,,,,,,,,,,,,,,,,,,7,15,1,14,3,10,0,13,4,1,6,11,4,7,4,4,5,3,2,,,,,2,,2,1,,,0,00,4,4,5,3
+Public Static Method,"org.consenlabs.tokencore.wallet.model.BIP44Util.getBTCMnemonicPath",,,,,,,,,,,,,,,,,,,,,,,,,,,8,7,0,7,1,4,0,2,2,0,2,4,1,3,4,4,4,1,1,,,,,0,,1,0,,,0,00,4,4,4,1
+Public Class,"org.consenlabs.tokencore.wallet.model.ChainId",0,0,0,0,0,0,0,0,1,0,0,0,,0,9,,,,0,0,0,0,0,0,0,0,,15,3,11,10,9,1,,,,9,10,10,0,,,,,,0,0,0,0,,1,0,,0,0,0,09,0,0,0,0
+Public Class,"org.consenlabs.tokencore.wallet.model.ChainType",2,2,4,1,5,0,5,0,1,2,2,0,,1,3,,,,0,0,1,1,0,0,0,1,,12,2,10,5,5,0,,,,4,7,5,2,,,,,,2,2,4,1,,1,1,,0,0,0,00,2,2,4,1
+Public Static Method,"org.consenlabs.tokencore.wallet.model.ChainType.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,6,5,0,5,1,2,0,2,2,0,1,3,1,2,2,2,4,1,0,,,,,0,,1,0,,,0,00,2,2,4,1
+Public Class,"org.consenlabs.tokencore.wallet.model.KeyPair",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,8,2,8,8,0,0,0,8,,44,10,34,14,12,0,,,,13,24,12,12,,,,,,3,3,5,3,,1,1,,37,37,0,00,10,10,12,10
+Public Constructor,"org.consenlabs.tokencore.wallet.model.KeyPair.KeyPair",,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.model.KeyPair.KeyPair",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.KeyPair.equals",,,,,,,,,,,,,,,,,,,,,,,,,,,3,7,0,7,2,5,0,3,3,0,4,7,2,5,3,3,5,3,2,,,,,2,,1,2,,,0,00,3,3,5,3
+Public Method,"org.consenlabs.tokencore.wallet.model.KeyPair.getPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.KeyPair.getPublicKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.KeyPair.hashCode",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,1,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.KeyPair.setPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.KeyPair.setPublicKey",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.model.Messages",0,0,0,0,0,0,0,0,1,0,0,0,,0,53,,,,0,0,0,0,0,0,0,0,,81,26,55,54,53,0,,,,53,54,54,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Public Class,"org.consenlabs.tokencore.wallet.model.Metadata",1,1,1,1,3,0,3,0,2,2,2,0,,0,13,,,,25,10,25,25,0,0,0,25,,153,35,117,52,54,1,,,,60,87,50,37,,,,,,2,2,2,1,,1,1,,86,86,0,01,26,26,26,25
+Public Constructor,"org.consenlabs.tokencore.wallet.model.Metadata.Metadata",,,,,,,,,,,,,,,,,,,,,,,,,,,20,2,0,2,1,0,0,1,1,0,0,1,1,0,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.model.Metadata.Metadata",,,,,,,,,,,,,,,,,,,,,,,,,,,24,8,1,7,1,5,0,7,1,0,5,6,1,5,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.model.Metadata.Metadata",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,0,8,1,6,0,8,1,0,6,7,1,6,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.clone",,,,,,,,,,,,,,,,,,,,,,,,,,,2,11,1,10,2,7,0,4,2,0,5,7,2,5,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.getBackup",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.getChainType",,,,,,,,,,,,,,,,,,,,,,,,,,,16,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.getMode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.getName",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.getNetwork",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.getPasswordHint",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.getSegWit",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.getSource",,,,,,,,,,,,,,,,,,,,,,,,,,,15,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.getTimestamp",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.getWalletType",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.isMainNet",,,,,,,,,,,,,,,,,,,,,,,,,,,14,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.setBackup",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.setChainType",,,,,,,,,,,,,,,,,,,,,,,,,,,19,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.setMode",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.setName",,,,,,,,,,,,,,,,,,,,,,,,,,,9,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.setNetwork",,,,,,,,,,,,,,,,,,,,,,,,,,,13,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.setPasswordHint",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.setSegWit",,,,,,,,,,,,,,,,,,,,,,,,,,,16,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.setSource",,,,,,,,,,,,,,,,,,,,,,,,,,,36,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.setTimestamp",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Metadata.setWalletType",,,,,,,,,,,,,,,,,,,,,,,,,,,12,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.model.MnemonicAndPath",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,3,2,3,3,0,0,0,3,,17,3,14,6,4,0,,,,6,10,6,4,,,,,,1,1,1,1,,1,0,,33,33,0,00,3,3,3,3
+Public Constructor,"org.consenlabs.tokencore.wallet.model.MnemonicAndPath.MnemonicAndPath",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.MnemonicAndPath.getMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.MnemonicAndPath.getPath",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.model.Network",1,1,1,1,3,0,3,0,1,0,0,0,,0,4,,,,2,1,2,2,0,0,0,2,,19,3,13,8,6,3,,,,7,10,8,2,,,,,,1,1,1,1,,1,0,,0,0,0,23,2,2,2,2
+Public Constructor,"org.consenlabs.tokencore.wallet.model.Network.Network",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.model.Network.isMainnet",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.model.TokenException",1,1,1,1,3,0,3,0,1,0,0,0,,0,1,,,,2,0,2,2,0,0,0,2,,12,3,9,4,3,0,,,,3,6,4,2,,,,,,1,1,1,1,,2,0,,0,0,0,00,2,2,2,2
+Public Constructor,"org.consenlabs.tokencore.wallet.model.TokenException.TokenException",,,,,,,,,,,,,,,,,,,,,,,,,,,47,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.model.TokenException.TokenException",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Package,"org.consenlabs.tokencore.wallet.transaction",1,1,1,1,11,1,9,0,,,,,17,20,3,,15,,109,45,129,,7,11,5,106,,1993,391,1474,673,832,133,,,,902,1129,651,478,,,,,,18,18,18,5,,,4,,,,0,09,208,208,220,145
+Public Class,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction",2,2,2,1,19,2,15,1,2,10,10,0,,0,1,,,,17,10,17,17,0,1,0,16,,462,82,354,118,233,29,,,,214,283,126,157,,,,,,18,18,18,1,,1,4,,79,73,0,08,49,49,49,17
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.BitcoinTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,13,11,1,10,1,7,0,7,2,0,6,8,1,7,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Class,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO",1,1,1,1,4,0,4,0,1,0,0,0,,0,0,,,,17,7,17,17,0,0,0,17,,97,17,80,26,37,0,,,,35,53,25,28,,,,,,1,1,1,1,,1,0,,71,71,0,00,17,17,17,17
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.UTXO",,,,,,,,,,,,,,,,,,,,,,,,,,,6,8,0,8,1,6,0,7,1,0,6,7,1,6,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.UTXO",,,,,,,,,,,,,,,,,,,,,,,,,,,7,9,0,9,1,7,0,8,1,0,7,8,1,7,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.getAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.getAmount",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.getDerivedPath",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.getScriptPubKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.getSequence",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.getTxHash",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.getVout",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.setAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.setAmount",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.setDerivedPath",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.setScriptPubKey",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.setSequence",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.setTxHash",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.setVout",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.UTXO.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,7,11,0,11,1,9,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.collectPrvKeysAndAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,10,30,2,28,12,23,0,30,5,1,18,23,13,10,5,5,5,1,2,,,,,0,,2,0,,,0,00,5,5,5,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.getAmount",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.getChangeIdx",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.getFee",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.getMemo",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.getOutputs",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.getTo",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.setAmount",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.setChangeIdx",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.setFee",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.setMemo",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.setOutputs",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.setTo",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.signSegWitTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,17,178,26,129,39,108,26,42,3208,4,103,121,45,76,18,18,18,1,2,,,,,0,,4,0,,,0,20,18,18,18,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.signTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,11,59,10,47,14,36,2,39,160,2,28,40,17,23,11,11,11,1,3,,,,,0,,3,0,,,0,04,11,11,11,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransaction.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,6,10,0,10,1,8,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransactionTest",1,1,1,1,38,6,28,3,1,14,14,0,,1,1,,,,5,0,6,8,0,1,0,5,,253,46,182,45,157,25,,,,90,100,34,66,,,,,,2,2,2,1,,2,1,,0,0,0,14,9,9,9,6
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransactionTest.bitcoinSegwitSign",,,,,,,,,,,,,,,,,,,,,,,,,,,10,69,10,52,6,47,7,16,2,0,29,31,6,25,2,2,2,1,1,,,,,0,,1,0,,,0,13,2,2,2,1
+Private Static Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransactionTest.createSingleUXTOOnMainnet",,,,,,,,,,,,,,,,,,,,,,,,,,,1,14,3,11,4,9,0,3,1,0,4,5,3,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransactionTest.testSignMultiUTXOSegWitTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,5,25,1,24,7,22,0,11,1,0,13,14,6,8,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransactionTest.testSignTxByHDWalletOnTestnet",,,,,,,,,,,,,,,,,,,,,,,,,,,9,54,7,46,8,43,1,11,2,0,19,21,6,15,2,2,2,1,1,,,,,0,,1,0,,,0,02,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransactionTest.testSignTxByWIFWalletOnMainnet",,,,,,,,,,,,,,,,,,,,,,,,,,,5,28,6,9,5,7,13,8,1,0,7,8,5,3,1,1,1,1,0,,,,,0,,0,0,,,1,44,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.BitcoinTransactionTest.testSignTxByWIFWalletOnTestnet",,,,,,,,,,,,,,,,,,,,,,,,,,,8,43,11,31,7,28,1,12,2,0,17,19,6,13,2,2,2,1,1,,,,,0,,1,0,,,0,03,2,2,2,1
+Public Class,"org.consenlabs.tokencore.wallet.transaction.EOSECDSASigner",2,2,3,1,20,3,13,3,1,0,0,0,,0,0,,,,7,3,7,7,0,0,3,4,,164,32,102,44,63,32,,,,56,73,39,34,,,,,,6,6,7,4,,1,4,,66,66,0,31,20,20,24,12
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.EOSECDSASigner.EOSECDSASigner",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,3,1,1,5,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,1,67,1,1,1,1
+Protected Method,"org.consenlabs.tokencore.wallet.transaction.EOSECDSASigner.calculateE",,,,,,,,,,,,,,,,,,,,,,,,,,,5,10,1,9,4,6,0,3,2,0,5,7,4,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Protected Method,"org.consenlabs.tokencore.wallet.transaction.EOSECDSASigner.createBasePointMultiplier",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSECDSASigner.generateSignature",,,,,,,,,,,,,,,,,,,,,,,,,,,5,56,9,37,14,26,12,19,5,1,24,28,14,14,6,6,7,3,2,,,,,2,,4,2,,,0,32,6,6,7,3
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSECDSASigner.init",,,,,,,,,,,,,,,,,,,,,,,,,,,4,20,3,17,5,11,0,6,3,0,7,10,3,7,3,3,4,1,2,,,,,0,,2,0,,,0,00,3,3,4,1
+Protected Method,"org.consenlabs.tokencore.wallet.transaction.EOSECDSASigner.initSecureRandom",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,3,3,3,1,0,,,,,0,,0,0,,,0,00,3,3,3,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSECDSASigner.verifySignature",,,,,,,,,,,,,,,,,,,,,,,,,,,5,42,9,25,14,17,8,16,4,1,14,18,11,7,4,4,6,4,3,,,,,3,,1,3,,,0,32,4,4,6,4
+Public Class,"org.consenlabs.tokencore.wallet.transaction.EOSKey",1,1,1,1,4,0,4,0,1,1,1,0,,3,0,,,,5,0,8,8,1,0,2,5,,45,10,34,14,16,1,,,,16,25,14,11,,,,,,1,1,1,1,,2,0,,0,0,0,03,8,8,8,8
+Protected Constructor,"org.consenlabs.tokencore.wallet.transaction.EOSKey.EOSKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Protected Constructor,"org.consenlabs.tokencore.wallet.transaction.EOSKey.EOSKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.transaction.EOSKey.fromPrivate",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,3,1,1,1,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,33,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.transaction.EOSKey.fromWIF",,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"org.consenlabs.tokencore.wallet.transaction.EOSKey.getECKey",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSKey.getPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSKey.getPublicKeyAsHex",,,,,,,,,,,,,,,,,,,,,,,,,,,6,12,1,11,6,9,0,8,1,0,9,10,6,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.transaction.EOSKey.privateToPublicKey",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.transaction.EOSSign",1,1,1,1,10,0,9,0,1,7,7,0,,5,0,,,,0,0,5,5,0,3,0,2,,62,9,52,26,36,1,,,,35,44,26,18,,,,,,4,4,5,3,,1,2,,0,0,0,02,8,8,9,7
+Private Static Method,"org.consenlabs.tokencore.wallet.transaction.EOSSign.eosSign",,,,,,,,,,,,,,,,,,,,,,,,,,,4,7,0,7,4,5,0,6,1,0,5,6,4,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.wallet.transaction.EOSSign.serialEOSSignature",,,,,,,,,,,,,,,,,,,,,,,,,,,4,10,0,10,5,8,0,8,1,0,8,9,5,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.transaction.EOSSign.sign",,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,0,6,3,4,0,10,1,0,4,5,3,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.transaction.EOSSign.sign",,,,,,,,,,,,,,,,,,,,,,,,,,,3,7,0,7,4,5,0,10,1,0,5,6,4,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.wallet.transaction.EOSSign.signAsRecoverable",,,,,,,,,,,,,,,,,,,,,,,,,,,6,23,3,19,8,14,1,10,6,1,13,17,9,8,4,4,5,3,2,,,,,2,,2,2,,,0,05,4,4,5,3
+Public Class,"org.consenlabs.tokencore.wallet.transaction.EOSTransaction",1,1,1,1,12,2,10,0,2,10,10,0,,0,0,,,,4,2,4,4,0,0,0,4,,84,21,63,30,33,0,,,,34,49,30,19,,,,,,4,4,4,1,,1,3,,50,50,0,00,7,7,7,4
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.EOSTransaction.EOSTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.EOSTransaction.EOSTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Class,"org.consenlabs.tokencore.wallet.transaction.EOSTransaction.ToSignObj",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,4,2,4,4,0,0,0,4,,20,4,16,7,4,0,,,,6,11,7,4,,,,,,1,1,1,1,,1,0,,50,50,0,00,4,4,4,4
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSTransaction.ToSignObj.getPublicKeys",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSTransaction.ToSignObj.getTxHex",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSTransaction.ToSignObj.setPublicKeys",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSTransaction.ToSignObj.setTxHex",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSTransaction.signTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,5,13,3,10,5,8,0,10,1,0,8,9,5,4,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EOSTransaction.signTransactions",,,,,,,,,,,,,,,,,,,,,,,,,,,9,32,7,25,11,19,0,15,4,1,16,22,13,9,4,4,4,1,1,,,,,0,,3,0,,,0,00,4,4,4,1
+Public Class,"org.consenlabs.tokencore.wallet.transaction.EthereumSign",1,1,2,1,13,1,10,1,1,5,5,0,,8,0,,,,0,0,8,8,1,2,0,5,,123,20,85,39,59,18,,,,50,66,39,27,,,,,,4,4,6,3,,1,2,,0,0,0,21,15,15,19,10
+Private Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSign.dataToBytes",,,,,,,,,,,,,,,,,,,,,,,,,,,4,9,0,9,2,5,0,5,2,0,4,6,2,4,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSign.ecRecover",,,,,,,,,,,,,,,,,,,,,,,,,,,4,10,1,9,6,7,0,8,1,0,7,8,6,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSign.personalSign",,,,,,,,,,,,,,,,,,,,,,,,,,,5,8,0,8,6,6,0,8,1,0,6,7,6,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSign.recoverAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,3,8,0,8,2,5,0,3,2,0,3,5,2,3,2,2,2,1,1,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSign.sign",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,4,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSign.signAsRecoverable",,,,,,,,,,,,,,,,,,,,,,,,,,,5,27,5,20,8,15,2,8,6,1,13,17,9,8,4,4,5,3,2,,,,,2,,2,2,,,0,10,4,4,5,3
+Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSign.signMessage",,,,,,,,,,,,,,,,,,,,,,,,,,,6,5,0,5,3,3,0,4,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSign.signedMessageToKey",,,,,,,,,,,,,,,,,,,,,,,,,,,4,38,4,21,10,17,13,12,4,1,13,16,9,7,3,3,6,1,0,,,,,0,,1,0,,,0,62,3,3,6,1
+Public Class,"org.consenlabs.tokencore.wallet.transaction.EthereumSignTest",2,2,2,1,13,0,12,0,1,7,7,0,,0,0,,,,7,2,7,7,0,0,0,7,,118,17,97,53,65,4,,,,51,70,48,22,,,,,,6,6,6,5,,1,4,,50,50,0,04,15,15,15,11
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSignTest.testECRecover",,,,,,,,,,,,,,,,,,,,,,,,,,,2,8,0,8,4,6,0,6,1,0,6,7,4,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSignTest.testECSign",,,,,,,,,,,,,,,,,,,,,,,,,,,2,4,0,4,2,2,0,2,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSignTest.testLongTextECSignShouldReturnNormalSignature",,,,,,,,,,,,,,,,,,,,,,,,,,,1,9,0,9,4,6,0,4,2,0,7,9,5,4,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSignTest.testPersonalSign",,,,,,,,,,,,,,,,,,,,,,,,,,,2,10,0,10,4,6,0,3,2,0,3,6,4,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSignTest.testShortTextECSignShouldReturnNormalSignature",,,,,,,,,,,,,,,,,,,,,,,,,,,1,6,0,6,4,4,0,2,1,0,4,5,4,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSignTest.testSignMessage",,,,,,,,,,,,,,,,,,,,,,,,,,,1,14,1,13,3,9,0,8,2,0,2,5,3,2,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumSignTest.testTransactionTest",,,,,,,,,,,,,,,,,,,,,,,,,,,1,41,4,36,22,30,1,18,7,1,25,32,23,9,6,6,6,5,2,,,,,2,,4,2,,,0,03,6,6,6,5
+Public Class,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction",1,1,1,1,6,0,5,0,2,10,10,0,,1,0,,,,12,6,13,13,4,1,0,8,,118,24,84,34,45,10,,,,47,64,32,32,,,,,,3,3,5,1,,1,1,,84,53,0,12,16,16,18,13
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.EthereumTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,10,12,1,11,2,7,0,8,2,0,6,8,1,7,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.asRlpValues",,,,,,,,,,,,,,,,,,,,,,,,,,,3,31,6,21,4,17,4,18,4,1,14,17,4,13,3,3,5,1,1,,,,,0,,1,0,,,0,19,3,3,5,1
+Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.calcTxHash",,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,0,3,1,1,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.createEip155SignatureData",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,1,4,2,2,0,5,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.encodeToRLP",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,3,3,0,4,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.getData",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.getGasLimit",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.getGasPrice",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.getNonce",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.getTo",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.getValue",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.signTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,5,9,1,8,5,6,0,6,1,0,6,7,5,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransaction.signTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,1,5,3,3,0,6,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.transaction.EthereumTransactionTest",1,1,1,1,6,0,6,0,1,5,5,0,,2,0,,,,4,0,6,6,0,2,0,4,,54,9,43,16,25,2,,,,12,19,12,7,,,,,,1,1,1,1,,1,0,,0,0,0,05,6,6,6,6
+Private Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransactionTest.createEip155RawTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,1,4,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Static Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransactionTest.createEtherTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,3,0,3,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransactionTest.testETCTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,0,7,1,5,2,3,1,7,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,20,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransactionTest.testEip155Encode",,,,,,,,,,,,,,,,,,,,,,,,,,,0,7,0,7,2,5,0,6,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransactionTest.testEip155Transaction",,,,,,,,,,,,,,,,,,,,,,,,,,,0,10,1,8,2,6,1,7,1,0,2,3,2,1,1,1,1,1,0,,,,,0,,0,0,,,0,12,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.EthereumTransactionTest.testEtherTransactionAsRlpValues",,,,,,,,,,,,,,,,,,,,,,,,,,,0,6,0,6,3,4,0,9,1,0,4,5,3,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.transaction.MyHMacDSAKCalculator",1,1,1,1,18,5,12,0,2,0,0,0,,0,1,,,,6,5,6,6,0,1,0,5,,129,41,83,23,60,5,,,,61,72,23,49,,,,,,3,3,3,1,,1,1,,53,53,0,06,10,10,10,6
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.MyHMacDSAKCalculator.MyHMacDSAKCalculator",,,,,,,,,,,,,,,,,,,,,,,,,,,3,10,0,5,1,3,5,5,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,1,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.wallet.transaction.MyHMacDSAKCalculator.bitsToInt",,,,,,,,,,,,,,,,,,,,,,,,,,,5,9,2,7,2,4,0,3,2,0,3,5,2,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.MyHMacDSAKCalculator.init",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,0,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.MyHMacDSAKCalculator.init",,,,,,,,,,,,,,,,,,,,,,,,,,,7,52,19,33,6,30,0,12,2,0,29,31,6,25,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.MyHMacDSAKCalculator.isDeterministic",,,,,,,,,,,,,,,,,,,,,,,,,,,0,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.MyHMacDSAKCalculator.nextK",,,,,,,,,,,,,,,,,,,,,,,,,,,6,35,11,24,5,20,0,9,4,1,18,21,5,16,3,3,3,1,0,,,,,0,,1,0,,,0,00,3,3,3,1
+Public Class,"org.consenlabs.tokencore.wallet.transaction.SignatureData",1,1,1,1,6,0,5,0,1,1,1,0,,0,0,,,,7,3,7,7,0,0,0,7,,61,9,49,18,23,3,,,,22,34,15,19,,,,,,5,5,6,5,,1,1,,42,28,0,06,11,11,12,11
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.SignatureData.SignatureData",,,,,,,,,,,,,,,,,,,,,,,,,,,11,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.SignatureData.equals",,,,,,,,,,,,,,,,,,,,,,,,,,,4,18,2,16,2,10,0,3,5,1,6,11,2,9,5,5,6,5,4,,,,,4,,1,4,,,0,00,5,5,6,5
+Public Method,"org.consenlabs.tokencore.wallet.transaction.SignatureData.getR",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.SignatureData.getS",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.SignatureData.getV",,,,,,,,,,,,,,,,,,,,,,,,,,,7,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.SignatureData.hashCode",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,2,4,0,2,1,0,4,5,2,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.SignatureData.toString",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,3,3,0,6,1,0,3,4,3,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Interface,"org.consenlabs.tokencore.wallet.transaction.TransactionSigner",0,0,0,0,0,0,0,0,0,2,2,3,,0,0,,,,1,0,1,1,1,0,0,0,,3,0,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.wallet.transaction.TransactionSigner.signTransaction",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Class,"org.consenlabs.tokencore.wallet.transaction.TxMultiSignResult",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,5,2,5,5,0,0,0,5,,26,6,20,8,6,0,,,,8,14,8,6,,,,,,1,1,1,1,,1,0,,40,40,0,00,5,5,5,5
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.TxMultiSignResult.TxMultiSignResult",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.TxMultiSignResult.getSigned",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.TxMultiSignResult.getTxHash",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.TxMultiSignResult.setSigned",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.TxMultiSignResult.setTxHash",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Class,"org.consenlabs.tokencore.wallet.transaction.TxSignResult",1,1,1,1,3,0,3,0,1,0,0,0,,0,0,,,,8,3,8,8,0,0,0,8,,43,8,32,12,11,3,,,,14,23,12,11,,,,,,1,1,1,1,,1,0,,54,54,0,09,8,8,8,8
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.TxSignResult.TxSignResult",,,,,,,,,,,,,,,,,,,,,,,,,,,5,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.transaction.TxSignResult.TxSignResult",,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.TxSignResult.getSignedTx",,,,,,,,,,,,,,,,,,,,,,,,,,,8,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.TxSignResult.getTxHash",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.TxSignResult.getWtxID",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.TxSignResult.setSignedTx",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.TxSignResult.setTxHash",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.transaction.TxSignResult.setWtxID",,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,0,3,1,1,0,1,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Package,"org.consenlabs.tokencore.wallet.validators",2,2,3,1,16,1,14,0,,,,,6,0,3,,6,,19,7,19,,1,2,0,16,,454,79,345,127,195,30,,,,191,253,119,134,,,,,,5,5,7,4,,,3,,,,0,09,52,52,60,23
+Public Class,"org.consenlabs.tokencore.wallet.validators.ETHAddressValidator",2,2,3,2,10,0,8,1,2,4,4,0,,0,3,,,,4,1,4,4,0,2,0,2,,61,11,42,14,25,8,,,,19,30,13,17,,,,,,4,4,7,4,,1,3,,50,50,0,19,10,10,15,9
+Public Constructor,"org.consenlabs.tokencore.wallet.validators.ETHAddressValidator.ETHAddressValidator",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Private Method,"org.consenlabs.tokencore.wallet.validators.ETHAddressValidator.isValidAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,5,13,1,9,1,6,3,5,3,0,3,6,1,5,3,3,5,3,2,,,,,2,,1,2,,,0,33,3,3,5,3
+Public Method,"org.consenlabs.tokencore.wallet.validators.ETHAddressValidator.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,3,6,0,6,1,3,0,3,2,0,2,4,1,3,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Private Method,"org.consenlabs.tokencore.wallet.validators.ETHAddressValidator.validateChecksumAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,2,20,2,16,4,11,2,14,4,1,9,13,5,8,4,4,7,4,4,,,,,4,,3,4,,,0,12,4,4,7,4
+Public Class,"org.consenlabs.tokencore.wallet.validators.MetadataValidator",2,2,2,1,10,0,10,0,2,2,2,0,,0,0,,,,3,2,3,3,0,0,0,3,,42,5,34,13,20,3,,,,18,26,12,14,,,,,,5,5,5,1,,1,2,,16,16,0,09,7,7,7,3
+Public Constructor,"org.consenlabs.tokencore.wallet.validators.MetadataValidator.MetadataValidator",,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.validators.MetadataValidator.MetadataValidator",,,,,,,,,,,,,,,,,,,,,,,,,,,3,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.validators.MetadataValidator.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,4,25,2,23,7,17,0,11,10,1,13,18,7,11,5,5,5,1,0,,,,,0,,2,0,,,0,00,5,5,5,1
+Public Class,"org.consenlabs.tokencore.wallet.validators.PrivateKeyValidator",2,2,3,1,12,0,10,1,2,3,3,0,,0,0,,,,2,1,2,2,0,0,0,2,,36,4,25,8,14,7,,,,9,15,7,8,,,,,,4,4,6,1,,1,2,,0,0,0,28,5,5,7,2
+Public Constructor,"org.consenlabs.tokencore.wallet.validators.PrivateKeyValidator.PrivateKeyValidator",,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,0,3,1,1,0,2,1,0,1,2,1,1,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.validators.PrivateKeyValidator.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,9,21,1,18,4,13,2,9,5,1,7,11,4,7,4,4,6,1,1,,,,,0,,2,0,,,0,11,4,4,6,1
+Public Generic Interface,"org.consenlabs.tokencore.wallet.validators.Validator",0,0,0,0,0,0,0,0,0,0,0,4,,0,0,,,,1,0,1,1,1,0,0,0,,3,0,3,2,0,0,,,,1,2,2,0,,,,,,0,0,0,0,,0,0,,0,0,0,00,0,0,0,0
+TypeVariable,"org.consenlabs.tokencore.wallet.validators.Validator.T",0,0,0,0,0,0,0,0,1,0,0,0,,0,0,,,,0,0,0,0,0,0,0,0,,0,0,0,0,0,0,,,,0,0,0,0,,,,,,0,0,0,0,,1,0,,0,0,0,00,0,0,0,0
+Abstract Method,"org.consenlabs.tokencore.wallet.validators.Validator.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,,,,,0,,0,0,,,0,00,0,0,0,0
+Public Class,"org.consenlabs.tokencore.wallet.validators.ValidatorTest",4,4,4,1,29,3,25,0,1,12,12,0,,0,0,,,,6,0,6,8,0,0,0,6,,194,27,163,33,121,4,,,,82,112,29,83,,,,,,5,5,5,1,,2,2,,0,0,0,02,24,24,24,6
+Public Method,"org.consenlabs.tokencore.wallet.validators.ValidatorTest.testImportingValidationPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,3,13,1,12,6,9,0,14,2,0,10,12,7,5,2,2,2,1,0,,,,,0,,1,0,,,0,00,2,2,2,1
+Public Method,"org.consenlabs.tokencore.wallet.validators.ValidatorTest.testValidETHAddress",,,,,,,,,,,,,,,,,,,,,,,,,,,2,29,2,27,6,19,0,5,9,1,8,15,6,9,5,5,5,1,2,,,,,0,,2,0,,,0,00,5,5,5,1
+Public Method,"org.consenlabs.tokencore.wallet.validators.ValidatorTest.testValidateImportingMnemonic",,,,,,,,,,,,,,,,,,,,,,,,,,,11,29,2,27,4,20,0,8,9,1,11,18,5,13,5,5,5,1,2,,,,,0,,2,0,,,0,00,5,5,5,1
+Public Method,"org.consenlabs.tokencore.wallet.validators.ValidatorTest.testValidateImportingPrivateKey",,,,,,,,,,,,,,,,,,,,,,,,,,,5,22,4,18,4,13,0,8,3,0,7,11,4,7,3,3,3,1,1,,,,,0,,2,0,,,0,00,3,3,3,1
+Public Method,"org.consenlabs.tokencore.wallet.validators.ValidatorTest.testValidateMetadata",,,,,,,,,,,,,,,,,,,,,,,,,,,6,56,7,49,4,43,0,10,16,1,35,40,4,36,5,5,5,1,4,,,,,0,,1,0,,,0,00,5,5,5,1
+Public Method,"org.consenlabs.tokencore.wallet.validators.ValidatorTest.testValidateWIF",,,,,,,,,,,,,,,,,,,,,,,,,,,6,26,4,22,2,17,0,6,8,1,11,15,2,13,4,4,4,1,3,,,,,0,,1,0,,,0,00,4,4,4,1
+Public Class,"org.consenlabs.tokencore.wallet.validators.WIFValidator",2,2,2,1,7,0,7,0,2,2,2,0,,0,0,,,,3,3,3,3,0,0,0,3,,34,3,28,8,15,3,,,,13,19,7,12,,,,,,4,4,5,1,,1,1,,11,11,0,11,6,6,7,3
+Public Constructor,"org.consenlabs.tokencore.wallet.validators.WIFValidator.WIFValidator",,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,0,4,1,2,0,3,1,0,2,3,1,2,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Constructor,"org.consenlabs.tokencore.wallet.validators.WIFValidator.WIFValidator",,,,,,,,,,,,,,,,,,,,,,,,,,,3,5,0,5,1,3,0,4,1,0,3,4,1,3,1,1,1,1,0,,,,,0,,0,0,,,0,00,1,1,1,1
+Public Method,"org.consenlabs.tokencore.wallet.validators.WIFValidator.validate",,,,,,,,,,,,,,,,,,,,,,,,,,,8,13,0,13,1,9,0,5,6,1,5,8,1,7,4,4,5,1,3,,,,,0,,1,0,,,0,00,4,4,5,1
