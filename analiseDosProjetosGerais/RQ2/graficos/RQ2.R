@@ -24,14 +24,14 @@ ggsave("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ2/graficos/lifet
 
 ###### Versoes atual do framework Android
 
-subtipos = rep(c("TargetSdk", "MinSdk"), each=14)
+subtipos = rep(c("TargetSdk", "MinSdk"), each=13)
 
-apiLevel <- rep( c("14","15","16","17","18","19","21", "22", "23", "24", "25", "26", "27", "28"), 2 )
+apiLevel <- rep( c("11","14","15","16","19","21","22","23","24","25","26","27","28"), 2 )
 
 
 
-values <-c(1,2,2,4,4,11,9,13,37,10,19,16,17,27,
-           49,27,18,7,4,15,9,0,0,0,0,1,1,1)
+values <-c(12,70,35,24,17,83,0,30,0,0,4,1,0,
+           0,1,0,0,16,13,23,58,21,19,124,18,35)
 
 
 df2 <- data.frame(supp=subtipos,dose=apiLevel,len=values)
@@ -50,7 +50,7 @@ ggsave("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ2/graficos/andro
 ######## Versoes do spring
 springVersion <- c("1.X.X", "2.0.X", "2.1.X")
 
-values <-c(50,20,30)
+values <-c(90,16,32)
 
 df2 <- data.frame(dose=springVersion,
                   len=values)
