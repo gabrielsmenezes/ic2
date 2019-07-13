@@ -1,0 +1,864 @@
+edd6ac192fcc2fcc73d9b59fe427fd380ee1b73c;2016-02-05 16:19:37 +0100;Initial commit
+97bcb3418f1ead79d9a0e6e49c498daa3e2463e8;2016-02-05 16:27:26 +0100;Update the readme
+7d11a9894ac7d7dce47e1905df94a3251ed48f2a;2016-02-05 16:54:07 +0100;Add warning message
+6a5a55511d23cb794d78e72345ac0f5a0db6796f;2016-02-06 08:15:23 +0100;Update startup message, to match the standard JHipster message
+dcb8b813ad5688b4d4dd4c4b9a5bf16927612c91;2016-02-11 12:29:34 +0100;add an embedded spring cloud config server
+cb8fb559d668abc08d185c23b371f6ba9105cfee;2016-02-11 13:53:54 +0100;store centralized config in files instead of git
+67e89cca7e9eaa200eef5029b8fcadff3492693a;2016-02-11 14:06:22 +0100;correct spring cloud config server version in pom
+74b25cf2c50851d5caf716c85bd05031a1edac1e;2016-02-12 13:48:33 +0100;Correct name
+651d82d5b804de861cfe9388f3474a50f0007821;2016-02-12 14:18:16 +0100;fix yml indentation and remove bootstrap option
+0422c873b02874f2d4f994e33d3dbce24cdbce3a;2016-02-12 14:22:31 +0100;fixing merge conflicts with master
+4433a385cd30385661b36e66130fef760dd27914;2016-02-12 16:22:15 +0100;added a config server status property for the gateway
+aebda6b96b5e02f2f70a8e10cb94ae784a1e76a9;2016-02-12 16:35:35 +0100;Merge pull request #3 from PierreBesson/add-embedded-spring-cloud-config-server
+9cfbae9ab37861a3bdcbaeb62a6ff23011e41929;2016-02-15 08:24:12 +0100;Add maven wrapper
+5d9a6f7e387956c171331539cb67440530e92e50;2016-02-15 15:00:35 +0100;use spring-cloud-netflix-eureka-server in pom
+ac8fa6a446ddda9f374b6b5c7a90cee24eb5e316;2016-02-15 15:06:44 +0100;Merge pull request #6 from PierreBesson/fix-jar-startup
+36592f1e9aae0d26d10862bed23945cb1f499a55;2016-02-15 19:29:00 +0100;Upgrade maven to 3.3.9
+c0b504ae7759c785ba7271a7bbf29a0986fa3306;2016-02-16 13:36:08 +0100;Merge pull request #5 from pascalgrimaud/maven-wrapper
+3e69c1dcf077e160f1baa4ce82a4606b2feed570;2016-02-15 08:33:23 +0100;Add Dockerfile to build Docker image
+58d84ce91c26e1bc280636a1bab50c7fd1e8e0f7;2016-02-16 22:39:58 +0100;Merge pull request #7 from pascalgrimaud/docker
+c8603e2b376ded0aa99e82761a1c8a2d6f59c9f6;2016-02-16 23:09:37 +0100;Update the project to be closer to a normal JHipster project
+11a235ed4ccb24c9c29e7e2a71b62c6de645f3a5;2016-02-16 23:10:00 +0100;Merge branch 'master' of https://github.com/jhipster/jhipster-registry
+682e6d5b17b99f1c794bd70bf3ff4e9faf48c445;2016-02-19 00:08:54 +0100;Updated README
+4cc3f4e565252645e19211ff378c845a8c9bba20;2016-02-24 11:07:53 +0100;add dev and prod profiles configuration to pom.xml so that they can be started from the IDE
+fd17d6bec21aa39eefdac25b693fbca1bd9dcf5e;2016-02-24 11:11:56 +0100;add a sample git config to application-prod.yml so that the prod profile automatically use the config from the registry's github
+2f2090cbb6879a404cd2092eec235bd92d75ad36;2016-02-24 11:42:07 +0100;Merge pull request #8 from PierreBesson/prod-profile
+fc0d0be2fb2f698b0df5c6e548c3f71edef732e9;2016-02-24 11:44:24 +0100;allow passing the profile to the docker image via the SPRING_PROFILES env variable
+71e1b4931578f6c9998696a293101307342c3b6d;2016-02-24 12:02:30 +0100;Merge pull request #10 from PierreBesson/use-env-profile-dockerfile
+13a4fe1f5aa07b1e84bbe17bfbb8686626328414;2016-02-24 22:21:22 +0100;Add some comments and links about eureka.server.* properties to application.yml
+6103b215c2ef00c22266148f0f5dd107f1d507a2;2016-02-24 23:59:34 +0100;Merge pull request #12 from gmarziou/doc-yaml
+13bde59881440d47e597b14f744e43a3f388051e;2016-02-25 00:46:19 +0100;Allow maven to containerize the application
+374af115b9f0d8bfffd3bf1c180ab93c01d60031;2016-02-25 14:15:52 +0100;Merge pull request #13 from pascalgrimaud/dockerfile-for-dev
+62d61b268ecf378b889ff52894184fe03985e0a6;2016-02-26 17:08:45 +0100;Migrate the Registry to a war file, and add a JHipster .yo-rc.json config file, so the Registry works like any JHipster application
+33b150d5d503223eb43d055a7a72dfe2b71c159f;2016-03-01 10:43:47 +0100;Update to use the latest Spring Boot version, and migrate to Undertow
+edb186403d006777444882653fc083331fe01147;2016-03-03 20:46:48 +0100;Change logo to have JHipster
+f43a2b57444ec5159ee68b29caefc84a608c80fc;2016-03-05 17:47:12 +0100;Use openjdk8 and remove non official link
+ed2b1c5ab510009461cf1d909a5349566d161ecf;2016-03-05 22:44:48 +0100;Use dev profile for the dev Dockerfile
+2ad6f5617f7ed898ce065e1ae4eb981898c771a2;2016-03-06 09:34:08 +0100;Merge pull request #17 from pascalgrimaud/alpine-openjdk8
+b72fc189705f12337eb4a3e55eec57a98e149f31;2016-03-06 14:57:55 +0100;Migrate back from Undertow to Tomcat
+561c3e7cb2ab6e9947b30da87936891f8156a296;2016-03-06 12:34:54 -0500;exclude servlet-api 2.5 jar from eureka server dependency
+560910141feb20545906dee5998c3f745a71c4c0;2016-03-06 18:47:45 +0100;Merge pull request #19 from jhulick/master
+a4d4d9d52424b942dd1fdc24997bca9def5cdee1;2016-03-06 14:15:35 -0500;setup spring-cloud as parent instead of spring-boot, and add spring-boot plugin
+af2a7a0253af80a42249c67b049007a541656a5b;2016-03-06 22:42:13 -0500;setup spring-cloud as pom parent instead of spring-boot, and use Brixton.BUILD-SNAPSHOT release train
+2c0b856f64bf62b65307c322edd4455debffde44;2016-03-07 15:59:49 +0100;Merge pull request #20 from jhulick/master
+c9f4087f1fe22746abcaa351209b4906aa7935b5;2016-03-11 16:40:42 +0100;Use fixed version and not snapshot
+3952900cd58c41be24b67ccbca301b012b858de0;2016-03-15 14:36:59 +0800;Update app name so that its in line with jhipster
+260c9fa7cdc31aa049ebb7a9362a1f868fb075d8;2016-03-17 15:00:37 +0100;update default central-config following changes to the main generator
+04da20cb81a36b53a33238521dcdb766a2e3d533;2016-03-17 16:30:19 +0100;add docker environment variables for specifying git config source
+7bc3d673a5c59eb7a7ca9d27136552d190e5fd70;2016-03-17 16:45:18 +0100;Merge pull request #24 from PierreBesson/prod-env-vars
+f76ae1b2f5518f270099cc14fed99d58bd81d897;2016-03-17 16:47:49 +0100;Merge pull request #23 from PierreBesson/default-central-config
+32a84012331cc24bbad06a5a3c2152036d42975a;2016-03-17 16:48:02 +0100;Merge pull request #21 from deepu105/patch-1
+f83c7d0af2076695eecbdfa54b34d61360baf5bd;2016-03-18 16:29:03 +0100;add trailing slash to configserver.status so that the yaml file is displayed correctly in browsers
+1f891fb9c788788dde2ec127f524a4962a86f2c6;2016-03-18 16:49:35 +0100;Merge pull request #27 from PierreBesson/fix-config-server-yml
+eadb339ab8491b106ab36a31f9dfe43a3376b6ea;2016-03-20 23:11:53 +0100;Fix default spring profiles active, which can now be overwritten
+2392d0e4328362e8b9a8b3b0fac1440696d5c276;2016-03-21 11:11:57 +0100;Merge pull request #28 from pascalgrimaud/fix-spring-profiles-active
+d1896c4355560a27239e4a17116fa4aef486e86a;2016-03-21 11:53:51 +0100;Add native profile by default when running in dev mode
+fd70acabffc34984d12cdc5317e29b45a7292caa;2016-03-21 13:34:39 +0100;By default, the registry starts with "prod,native" profiles
+91250f4ce72d4487d6dd82f32b8ac9efe8f03436;2016-03-21 13:34:49 +0100;Removed info logging
+ebed4dfdbbdf4299c1fb8278b4bd3986b515dc70;2016-03-21 13:52:19 +0100;Set also prod,native in Dockerfile and Maven pom
+b0e97058063d17f89ca8749f07cd75e084b1d625;2016-03-23 10:23:50 +0100;remove README instructions that have been moved to the docs
+2985299735c6e01ec8e8c87df4e194d459094ea0;2016-03-23 10:29:50 +0100;add a link to spring cloud config website
+636fed3c86fa9d99fb8283abc849de051d992a34;2016-03-23 10:41:35 +0100;Merge pull request #29 from PierreBesson/move-readme-to-docs
+9b2ecd2d3716343e392a46197975ab14bfbdbd36;2016-03-23 12:08:58 +0100;Added license
+05310b2a7511f8efe0d3c927fd251fca1bd37cde;2016-03-23 12:09:03 +0100;Merge branch 'master' of https://github.com/jhipster/jhipster-registry
+8441a2ec7bd20e1b35c625bcb5e486d794b5183e;2016-03-23 15:23:59 +0100;Migrate to Alpine JDK image
+accd853e2bfd45a981a2fd39ad9f19ebdfba1e33;2016-03-24 10:14:58 +0100;update README to credit Spring Cloud Netflix
+00442b6b73f9086fa349d418d9f2d3412611d8f5;2016-03-24 12:13:48 +0100;Merge pull request #30 from PierreBesson/credit-spring-cloud-netflix
+6639f3d2fdee3810cee1b95c125279bba5a28508;2016-03-29 10:29:21 -0500;Added a Procfile for Heroku
+13b479a855f90776873d2e32848dd4fcc27816f3;2016-03-29 15:14:25 -0500;Added an app.json and security to the Procfile
+0bf5478958a84859c0760e16d48c2283eb8f4ea6;2016-03-29 15:17:32 -0500;Updated readme with Heroku button
+a9da3029e1a3a27bc920ca100bbe5f99722dc56e;2016-03-29 23:46:06 +0200;Merge pull request #31 from jkutner/master
+d7860ccc873871116bcf1511845ac889b211417d;2016-03-29 17:08:14 -0500;Added a default value for JHIPSTER_PASSWORD
+2f295228f240eb4a6659bb59af591789624e0f5b;2016-03-29 17:12:00 -0500;Updated readme with beter Heroku description
+a92d332b2b874bc701cf2fa2ac88f1de9ce27d84;2016-03-30 00:14:42 +0200;Merge pull request #32 from jkutner/master
+5cacf82a9099d2dbff897c761040e454f4bcb99c;2016-03-30 10:39:33 +0200;update spring cloud version to Brixton.RC1
+0f0b5426ea893c7ffb98e74bc71fa6e53ca1b87b;2016-03-30 19:18:21 +0200;Merge pull request #33 from PierreBesson/brixton-rc1
+d38b725485d077ee90d3c90826e4b76b91d3767e;2016-04-12 00:11:07 +0200;Update Spring Cloud to Brixton.RC1
+57cdeb10e86860b7907266f51585113ac8102291;2016-04-12 00:12:53 +0200;Merge branch 'master' of https://github.com/jhipster/jhipster-registry
+f960637710027471ea2898143d32a861cf0ff40b;2016-04-15 16:27:22 +0200;Use the "native" profile, as mentioned in the doc
+fbb576fdc34bd2320b79678d1207267a814fc00e;2016-04-17 15:59:39 -0400;Add build step to use dev profile
+f7e1fd27e19b0b4a88e39381843f5fc60879e286;2016-04-18 17:06:05 +0200;Merge pull request #38 from jd-carroll/issue-37
+61ce9102831ffda49a3871dc795778f4b69d6f6d;2016-04-18 18:07:31 +0200;Add a default JWT token (for testing only!)
+1a4ab4a92522066b714329efe3c068de2fd5b4b7;2016-04-18 18:18:32 +0200;Add a default JWT token (for testing only!)
+108486cac63318ba6e9558caeb75fcb242db2a74;2016-04-18 18:23:41 +0200;Add a default JWT token (for testing only!)
+a44d9941ad53744f0d69e3230b82d9ba5b3da834;2016-04-19 14:24:19 +0200;Migrate to JRE
+f7bfad35b5186d2646c501b3e52e78bf326f3586;2016-04-19 14:31:10 +0200;Revert last commit as the JDK is needed to compile the project
+827d0fd012b314e385e8ecdcf65b76805ab00247;2016-04-20 12:03:14 +0200;Fix version for release, and correct the Spring Cloud import
+6d465feea9448f88b155edf13eb474c0eaade43b;2016-04-20 12:33:42 +0200;Correct dependencies (and correct WAR build)
+6f5410e4fcaed409c71648e213ce06cc6b8ecec8;2016-04-25 11:46:37 +0200;update spring cloud dependencies to Brixton.RC2
+8f2b5662735cf67d43364bf5cc8953047215f4a6;2016-04-25 11:55:11 +0200;Merge pull request #43 from PierreBesson/update-sprincloud-brixton-rc2
+447d1d2d4aa28d1c0491ec125fc68515737bb494;2016-04-29 22:25:54 +0200;Secure the registry and add AngularJS UI
+c0656bfd7aa0cc4f42b72867538c21b3a96b4491;2016-04-29 22:27:12 +0200;Merge branch 'master' into develop
+aaaf6bb83d27647e7918b723780a29e643750911;2016-04-30 11:24:18 +0200;Add basic application configuration details
+8120a9a82f4aab3b23a582fab0f5c4d0cdc1eff6;2016-05-02 22:31:57 +0200;Add Gzip compression in production
+499db172e1dc66436ba353a4a4e52893db57d854;2016-05-02 22:32:15 +0200;Add JS tests and production build for JS
+35311b8d94630b477aae4dba46487b9efb42f36c;2016-05-02 22:36:55 +0200;Remove log
+e802fdaa461a8ab912c500e0de43435e10a433cc;2016-05-02 22:37:11 +0200;Add logout button
+550516a222785a6ab3db1964bdca85f837e45267;2016-05-02 23:24:46 +0200;Add SSH public key page
+5a21ee0d136df323b838a33f5730ba5bb7877020;2016-05-02 23:41:48 +0200;Applications and profiles are variables
+6222d4e6d0226670b78c1b66b95d1a81be05c9fd;2016-05-02 23:45:27 +0200;Wording
+50452b075ceaa0ab7c488d6be11476b8fcf6a17e;2016-05-03 11:00:41 +0200;Add travis build
+e35619534cc75d56617a33d9e91ede4e5866a2e0;2016-05-03 11:05:30 +0200;Add travis build information in readme
+bb8bebc0d677d4c54f364071efb233c67d67e51b;2016-05-03 11:11:14 +0200;Fix travis url
+a6809ee9fb238e27b063fa261ba977fd76e17b67;2016-05-03 11:12:24 +0200;Fix wrong travis url
+eb6496d6b034a366fe1240f970764a54e46b7ad0;2016-05-03 11:25:58 +0200;Merge pull request #46 from pascalgrimaud/travis-build
+c6c9868e0aad03e76fed85a67c1ca06b48753d9a;2016-05-03 12:05:43 +0200;Try to correct #47
+6966ad3a7a5420a08ae10c9ba3ed105466c7d9b1;2016-05-03 12:06:31 +0200;Migrate to yeoman frontend plugin
+5695292a33af86da90db454af1c0ef01f1d2401b;2016-05-03 12:05:43 +0200;Try to correct #47
+c07b8b77fb9c92164f79de14ad51b19794edde78;2016-05-03 12:10:58 +0200;Add OpenSSH to the Docker image
+e5edf1dc3cd1fb38af840b5ca5988c54331c55ea;2016-05-03 12:17:11 +0200;Merge branch 'master' into develop
+e3749609adccbec66dbfe0ee879a58cf3e255bdd;2016-05-03 12:53:10 +0200;Add SSH documentation
+d1b2b24570d0c0f8b507c9c49c73875b19e2d3e2;2016-05-03 15:46:38 +0200;Update Spring configuration
+6075d24850fe87bc3dc00671459288aeb5db054c;2016-05-03 16:24:06 +0200;correct git ssh setup docs
+6e5bdf65057bfd7d1447571f3af0db54ea347406;2016-05-03 18:06:39 +0200;New application instances page
+501019a3142debe756ac533c77630de1745dbc18;2016-05-03 23:10:21 +0200;Add the lease history screen
+46ca6b3fed2d8ae04973c8fcf34394fc5707e3b3;2016-05-03 23:19:00 +0200;Correct ordering of elements
+1ca4192da3abedfbb46cff1a1592b044b39b14a3;2016-05-04 00:01:00 +0200;Add the replica page
+823106a0a2d1099872b9fb98c30ed915f0cdd178;2016-05-04 12:03:20 +0800;reorder dependencies
+bb895b589a862629a8cb0ba01a5c01b15249c56a;2016-05-04 12:22:01 +0800;gulp improvements
+32490239c02af0e535892c2500dfe4bdb48ba2df;2016-05-04 12:41:22 +0800;polish
+d90595d259bfa1227a72cb7dfd207cd72bbf611d;2016-05-04 12:45:00 +0800;fix state highlights
+beb6c0bdcfd76a9911529a31c2f49b3d9405a1dc;2016-05-04 12:59:08 +0800;add bower bootswatch theme flatly
+3ff97e58ca59ea809247b13402563fe6ca53f957;2016-05-04 14:39:36 +0800;add highlight js for code highlight
+60893b499e60fd5e03d07c03763b6af191b62804;2016-05-04 08:42:08 +0200;Merge pull request #48 from PierreBesson/amend-ssh-docs
+987a41ebd7cc05376ab10a759c12523c68c9856d;2016-05-04 14:51:02 +0800;merge upstream
+f9d90a024418b85f5d42f1f849b6ae8aad145c1e;2016-05-04 14:52:16 +0800;polish
+d03281f6dcac474aaf3677adf0b584fa486b3b30;2016-05-04 09:13:29 +0200;Merge pull request #51 from deepu105/develop
+0668e149b30f5934a181f093401a6ddd44aa29b0;2016-05-04 16:14:09 +0800;add show more button
+de528f666aee65cb63a02ce03df812a8f0daf8cb;2016-05-04 16:23:06 +0800;add logo
+3cdca7312935d58f5b987f110764d9ecec62c457;2016-05-04 16:58:24 +0800;polish
+ea72702728f261cc91199f60edbc30dcde02018c;2016-05-04 17:01:10 +0800;set default profile to dev
+01ba9a86dcb7670c0852d7b02bdf8404f094b4ee;2016-05-04 11:03:12 +0200;Merge pull request #52 from deepu105/ui-polish
+011c0e505128a37c8c263dd4c0b8378169362c36;2016-05-04 17:20:34 +0800;polish
+05dfcb17846e87684079e69fa55ad9a5c9499e63;2016-05-04 12:21:25 +0200;Merge pull request #53 from deepu105/ui-polish
+8db193f17bd7605a2749f355fcaf1bcb800ae2ca;2016-05-04 12:38:47 +0200;Correct logo size, so it's in the menu, and remove the home menu (which is now useless)
+2957e5d52fcc730b7ec3e86c24d851e465bfdf51;2016-05-04 16:24:29 +0200;Add replication configuration & documentation
+8ef7b9691fb33211256f3be8ccf44190a3a7486b;2016-05-04 16:28:39 +0200;Heroku must be in "dev" mode by default, as it can't run npm/gulp and do a production build.
+04633940b5c82fe081d3c31c7d824983eae46856;2016-05-04 17:20:29 +0200;Add ELK monitoring
+742cbf6c392f3502b15d62db4b973d97ae4d6d50;2016-05-04 20:14:42 +0200;Add password
+328f0c96dedf56db5d67f763507a08dc1c10d67e;2016-05-04 20:15:19 +0200;Used text without variables, so it doesn't have to be resolved
+80c5df52830c45aafc8f5c5984a141a50337b21e;2016-05-05 18:04:59 +0800;update logo
+1f4787ce94579004814e076a607b201004bcfaaa;2016-05-06 10:12:10 +0200;Merge pull request #55 from deepu105/develop
+ca7af00a64739ea029eafe6bac35a885988859dd;2016-05-06 14:48:06 +0200;Secure the actuator endpoints behind /management
+ef4f01c77544c84fb1cfaa5e7c7f2b00fa4410fa;2016-05-06 15:37:34 +0200;JHipster Registry version 2.0.0 release
+dece4c9ec18eb3583abb860e638759a1645a0252;2016-05-06 15:45:20 +0200;Increase max password size so it works with the default Heroku-generated password of 64 characters
+43200191a2e670f75ab9d0046c28a7b86787c0fe;2016-05-06 17:52:03 +0200;Update the Heroku documentation, now the Registry is secured
+d48943948c0098ae9e73a6b623e072b513761b1d;2016-05-06 17:52:15 +0200;Merge branch 'develop'
+67637544843247ef6acc692b92c592809d18800f;2016-05-10 16:10:32 +0800;add home page widgets
+02631871e4eb8580daf20847507af0885513d924;2016-05-10 17:19:02 +0800;add home page widgets polish
+6d00368fafb530608248404520136a5fc7615774;2016-05-10 17:19:21 +0800;add status directive
+5c218be1d4d7e7f4d3de30f03a29ce8cadb40cdb;2016-05-10 17:25:08 +0800;add home link
+931cbd8b82f823c206ffb12895c50c5826396ef8;2016-05-10 19:44:56 +0800;fix tests
+a945796f1450881cbe3c270c291c39a47d47b22c;2016-05-10 17:37:38 +0200;Merge pull request #57 from deepu105/develop
+db4ab1ae823d1e320d36d561d76d73481f3891bb;2016-05-12 15:43:43 +0200;Wording
+21fe0821b73bfac217aaf6a46c5fd34ec8145be2;2016-05-13 16:00:16 +0200;Update Spring Boot, Spring Security, Spring Cloud versions
+6f3ded95ecedeb5e0231c68918f2855543bfcceb;2016-05-13 16:20:46 +0200;Merge branch 'develop'
+6fca378cc22a88ad90f18975a58d61445ee6f867;2016-06-09 19:14:15 +0200;update client dependencies
+1796cb2c6aeebd6098e43bd5dbaa27c303288ba1;2016-06-09 20:02:39 +0200;Update server dependencies
+02013844cbc7e381daee097837083d5b0d4eae59;2016-06-09 20:43:17 +0200;Correct update errors
+d0ab0b7da02a396cda8c00ad057b7f98bd090112;2016-06-10 14:20:01 +0200;Correct Docker image name
+b5544591de0af460c5112efce8f4ff3d26272f7e;2016-06-15 13:48:55 +0200;upgrade Spring Cloud to Brixton SR1
+1221610c8f365a8d93575f6b1ac4963ceac4c92c;2016-06-15 14:24:29 +0200;Merge pull request #60 from PierreBesson/brixton-sr1
+3392f8ee5e585bbda907e3c4a971d59bb3f1719e;2016-06-19 23:15:09 +0200;Merge branch 'develop'
+49c5546ae12bdbdda1649c967f8a640f725e9d45;2016-06-23 08:00:27 +0200;Upgrade gulp-angular-templatecache from 1.8.0 to 1.9.0
+76510c61b1a197b2e43bd5dcec1c9a7e94d837be;2016-06-23 10:11:04 +0200;Merge pull request #62 from pascalgrimaud/fix-gulp-angular-templatecache
+b5c3557d8d3504cfa02b64183b086796a83507ff;2016-07-04 09:08:35 +0200;Make the dockerfile for development, consistent with the main Dockerfile
+78eaff82da1dc8a183856fdfb49e4ad806f748e2;2016-07-04 10:51:09 +0200;Merge pull request #66 from pascalgrimaud/consistent-dockerfile-dev
+55e61940090c821ff8f0b8804632c8a3d315b350;2016-07-04 17:26:53 +0200;Update Spring Cloud to the latest version
+0df3a874f70ca66e8459231c76e5944e398f88c8;2016-07-04 17:27:04 +0200;Merge branch 'develop' of https://github.com/jhipster/jhipster-registry into develop
+7a9a5b4352295db98c40223e3a5449838f2e8995;2016-07-08 14:02:05 +0200;setup the dev profile to include the native profile
+87d6b4918efe5c5192532d3632e6fb72e348c94a;2016-07-08 14:06:10 +0200;add config source info (type and location) on the Configuration page
+4d647fef8f85f9ecc0d3229bd658f7953a297bf2;2016-07-08 14:30:34 +0200;allow changing the git label on the configuration page
+e0c050de241a83dee01d14a985e6cb511a582c93;2016-07-08 18:21:48 +0200;enable autocomplete of the application name in the configuration page
+b544b4418b3b8891f097f57321b1b8eb00f57462;2016-07-13 16:26:52 +0200;update Spring Cloud to Brixton SR3
+ac51a5e7970526515ec737d38b5972225e658f69;2016-07-20 23:17:05 +0200;Update version numbers
+deb56c942d8927a55f8c05df6d939c8fe9048d4f;2016-07-20 23:28:14 +0200;Update application version
+bc7c718571a902bdd09554c1dbdebba27b483905;2016-07-20 23:28:25 +0200;Update Spring Boot version
+751101c9f1f60bc2dc8c2c8a658e42060cba3bc9;2016-07-20 23:42:30 +0200;Merge branch 'develop'
+da4d61025cbd5f9adada86d724c7e3d6b3acbce9;2016-07-28 20:55:48 -0500;Update README.md
+2fb581100da1a132ab3d7d9799ba1ee3e371fe30;2016-07-29 08:12:55 +0200;Merge pull request #72 from jkutner/patch-1
+3b9543aa7265ee4a355623c2f3fe0b179b7f103c;2016-07-29 11:17:10 -0700;import fonts from the correct folder
+3ee4f983730ccb42017b9278ed3c8626fd6580e9;2016-08-02 11:34:25 +0200;Merge pull request #67 from PierreBesson/config-page-improvements
+b617cf3c94e4bab7123a6d7da4418c8b9cb892dd;2016-08-02 11:34:37 +0200;Merge pull request #68 from PierreBesson/develop
+e355e6cd44fabc97b5fef3063270cf01e8ccf60b;2016-08-02 11:34:46 +0200;Merge pull request #73 from ruddell/package-glyphicons
+d9f421fa3668440fcd351f67a364e91ba69e095f;2016-08-05 15:21:36 +0200;upgrade to Spring Boot 1.4.0
+6172e6c2de1fdd0ddc6d1f696e0e98e8e7de8693;2016-08-05 15:22:37 +0200;Merge branch 'develop' of https://github.com/jhipster/jhipster-registry into develop
+b834e7b1af754083ec3db363608f3cdf8e5a862a;2016-08-17 16:34:58 +0200;Merge branch 'develop'
+10ebfbb6939c3439f5211830d676d46963b21954;2016-08-17 16:41:26 +0200;JHipster v2.4.0 release
+b80601e7f916b4e9c89b002dad08b0fa84dddede;2016-08-17 11:09:15 -0500;Use a custom password for Heroku instead of the autogenerated
+1e999ee20e037df6656c0ddf75bbd8db40e435e5;2016-08-17 18:33:07 +0200;Merge pull request #74 from jkutner/master
+5a8fcbf452390b27c68f4a00098d32747ee9532d;2016-08-19 11:18:35 +0200;Update WebConfiguration from JHipster release 3.6.1
+88765833df7f4db9f6daf103c8b4c3193f980524;2016-08-26 10:40:19 -0500;Updated app.json
+5ba34adeeb3a1644851fea88f0827ab8d1167cbe;2016-08-26 18:45:03 +0200;Merge pull request #75 from jkutner/master
+8f561cbf2c82238c5d6893fcb00f7951a1a83275;2016-09-02 09:58:13 +0200;test migration to Undertow
+c09158f4cdfea32ee92dea991f694469f9faf1e7;2016-09-02 09:58:49 +0200;Merge branch 'master' into develop
+927fce3458252be3f4a49828c2a64613e9fa6a27;2016-09-05 17:17:01 +0200;upgrade to brixton sr5
+474e2c53fb34e0f034a9843411adf399ca327153;2016-09-05 18:22:33 +0200;Merge pull request #78 from PierreBesson/brixton-sr5
+3336283640c32ea0337740d4fb413ddc03ae1e08;2016-09-06 10:19:31 +0200;fix autocomplete for services in configuration screen (Application field)
+13dc5d58226ae5914cb9a91b5ccd0360e646ed45;2016-09-06 16:54:59 +0200;Merge pull request #80 from 040796/fix-autocomplete
+3757e485fb258b90358d0026cdfbc49939abd805;2016-09-08 12:40:17 -0700;fix ssh git setup example
+850175dce22bc0982eb4dac62c5ab55b7560365d;2016-09-09 08:42:20 +0200;Merge pull request #81 from ruddell/fix-ssh-setup
+168fd9f7fff07a5418c31b8cd4344009efec23d5;2016-09-11 19:27:18 +0200;Merge branch 'develop'
+0b2486438716fff16f036d6d71b96d1556ac787d;2016-09-11 19:32:42 +0200;Fix wrong import & documentation
+471305d8337ed0ced0b9f36333c3b9200216f9a7;2016-09-11 19:35:25 +0200;v2.5.0 release
+0c90b938b3e4f5683768f136fdad098eed5cc4e9;2016-09-13 10:55:18 +0200;migrate the java docker image from _/java to _/openjdk
+63aeb261e37b042498deb1388aa9fefef0578250;2016-09-13 11:37:28 +0200;use the jdk image for the root Dockerfile so that it can correctly build
+f2c9d5474d31faac725a35854753de1dc1d740fc;2016-09-27 08:18:08 +0200;Change enable-self-preservation to false - the evict task will unregister the services properly - see https://github.com/jhipster/generator-jhipster/issues/3654
+c86cba1eb4cf4ef7c1be2d9ba469279a42565b63;2016-09-27 09:27:01 +0200;Merge pull request #84 from pascalgrimaud/enable-self-preservation-false
+7701f456c71d839208fb5111cc4d3cea74ad3ce9;2016-10-10 16:22:04 -0400;Update to Spring Boot 1.4.1
+265f08869c5d0af6d7fbe66fb3af152192bbd445;2016-10-10 16:22:29 -0400;Merge branch 'develop'
+334109e664fd227a6ffe00db41213e609f0869ed;2016-10-10 17:26:47 -0400;v2.5.2 release, with constant increment that was forgotten in 2.5.1
+4e15bc7bb30c56a2c8c26418af20df2d2d6d66e5;2016-10-26 11:04:51 +0200;Merge pull request #82 from PierreBesson/migrate-docker-openjdk
+9e5321152c188f462bc6ea39a8c16cd3bfe988fb;2016-10-28 12:15:58 +0200;Release 2.5.3
+3ecc76ecec9a70a4402d69c4e6a539d799bd4327;2016-11-14 21:45:21 +0100;Update Spring Boot version
+5092f601791afab7ad6dda84025c514b6d68e9d0;2016-11-14 21:46:18 +0100;Release 2.5.4
+11be8f88854777654430ff9073c4b1f68ddbe252;2016-11-29 23:40:40 +0100;Upgrade Spring Cloud to Brixton SR7
+49592faae0771a4c245394afe2e6a3e3c777a417;2016-11-30 07:57:41 +0100;Merge pull request #88 from pascalgrimaud/brixton-sr7
+9738108ac20f579e6ff9fe0096bb5e0a51052db9;2016-11-30 08:02:59 +0100;Release v2.5.5
+a854189f92f2716b0f96580ff55f240f4d53096d;2016-12-14 08:21:23 +0100;Improve the Docker image - Reduce the size of the Docker image by removing the touch - Reduce the number of layer - Travis: display information about the images - Travis: test with curl
+1cdf942ea80d068ac418c23a3691d55f9b3198ff;2016-12-14 21:30:20 +0100;Clear cache in Docker image and add color when starting the application
+647af07e0728335efd5aca732fde2753322444ed;2016-12-14 21:31:16 +0100;Update the Dockerfile in dev, to be consistent with the main Dockerfile
+de6a5b1ee8537c6e89518cb4a5146615256344a8;2016-12-14 22:20:24 +0100;Use Spring 4.3 composed annotations for RequestMapping
+234f142e87188ae1e57d071ab718657e9cca1cc4;2016-12-14 22:46:56 +0100;Merge pull request #91 from pascalgrimaud/spring-composed-annotations
+691245c8890f96535d87c1af0711f154ffdc75e3;2016-12-14 22:47:12 +0100;Merge pull request #90 from pascalgrimaud/improve-docker-image
+e98516473cce0dba9dde884d0fc0aac63d3ffa45;2016-12-21 22:29:51 +0100;Remove warnings for Websockets (which we don’t use!)
+68b608bbe75810ef00313e13952ce9d269ada1cb;2016-12-21 22:30:07 +0100;Release v2.5.6
+9ec58e80e35c1d6d49ba5abdeb2528fa3a32a2d2;2016-12-21 22:33:38 +0100;Update constants
+9e66002af1a03986e3212b35cf8c04ec941add90;2016-12-23 11:17:23 +0100;Upgrade to Spring Boot 1.4.3
+482ded071502d42b6cb29449e46a018fc6616504;2016-12-23 11:18:29 +0100;Better display of Spring Profiles when the application is starting
+7cb2d8e5924966868453ea4380efb9affa4cde5e;2016-12-23 13:48:04 +0100;Merge pull request #93 from pascalgrimaud/spring-boot-1.4.3
+0a5be4bb305e34ad5770d6421128331d5010185f;2016-12-23 17:06:19 +0100;Revert to spring boot 1.4.2
+c298e706fb73879c5dabfedb759b42f136321142;2016-12-23 18:09:19 +0100;Merge pull request #94 from pascalgrimaud/revert-to-spring-boot-1.4.2
+82ce0a654b955a44751f532aaaba774d3184f835;2016-12-26 16:50:53 +0100;Migration to Spring Boot 1.4.3
+c5d3a546308c443be89d14a6a545ede5c2d8ed09;2016-12-26 16:55:07 +0100;Release 2.5.7
+7ecd3bdc7c4906ec023ae03f302b85077edb56bc;2017-01-27 17:14:50 +0100;upgrade to Spring Boot 1.4.4
+a41fc2da7f1269c53db799260b91e415d54ddf61;2017-01-27 22:21:33 +0100;Release 2.5.8
+2cbf973f88ac8fa1d2db480fe0e3029f934f1ba1;2017-02-15 12:49:39 +0200;fix ide warnings
+c64f965bd828f112bc122979d71234f21b0831af;2017-02-15 13:05:40 +0200;fix ide warnings
+14aa0dca47d516db92497a8ca2edc604ddaa828a;2017-02-15 13:32:57 +0100;Merge pull request #95 from delverdev/master
+45ce5e9e4ecbef3f710c98b45b2be9ef34c81d00;2017-02-16 01:22:54 +0100;Add new JHipster banner
+2b5d3a4bdeb0bc01568d520d8d02935d1dec4f89;2017-02-16 08:54:27 +0100;Merge pull request #96 from pascalgrimaud/new-logo
+57a0d85e64d0d7bf06ecc32a49d629967c38b51a;2017-02-24 14:54:50 +0100;Update to JH4 in progress... Actual problem : Cannot reconnect after disconnect.
+d713b8d8ec78ece77d0dc07f28e72e8fbfb496d1;2017-02-27 14:21:46 +0100;Update to JH4 almost OK. Being checked.
+daec525ac7ceaaecedd226aa0aa4cb8316682bc1;2017-02-27 16:36:24 +0100;Remove Lambda warning
+4a7df8b7f4e04fe633a53ea29439ed4ca2c0c8b6;2017-02-27 16:26:00 +0000;add webpack config files
+79853bbed2a804275522fa662d907d1e352b5862;2017-02-27 16:28:38 +0000;update package.json
+6bc1764f59bcdffe95858e2f72e5ac58998c0b66;2017-02-27 16:37:53 +0000;add tslint.json
+d61431bc1ecd332c3ec1dc47d046ad97d571d8ba;2017-02-27 16:38:29 +0000;add tsconfig.json
+b74451846ae055b2bbe7d53ffd929b6f3fc9554f;2017-02-27 16:40:56 +0000;delete eslint files
+9bdc5ffb9cd84981ef3fee4e313f2edd515d9375;2017-02-27 16:46:36 +0000;delete bower files
+33a2dca84bb5f309e3d64308e45a547afcb4a2d4;2017-02-27 16:58:28 +0000;add blocks:config module
+0960ccb7cb53b85af229b1e4d14c8d7d20790aa6;2017-02-27 16:59:06 +0000;add blocks:interceptor module
+e5137206d6ccd92fc8bb1728adaaab3f7acc72b2;2017-02-27 17:02:33 +0000;add shared module
+2deb360c638a4a478077bd0d95af806085ada596;2017-02-27 17:03:02 +0000;add updated login module
+c0e756e2f42d7eb5ef51e16de4e42b9f1f605300;2017-02-27 17:13:09 +0000;update home module to Angular
+2caaeacda123435c65e9e4e0c27fcda5298aec80;2017-02-27 17:15:49 +0000;add footer layout
+db2b4819947006e97e738227c7e1017b00f334c5;2017-02-27 17:16:26 +0000;update navbar layout to Angular
+b4c11ad1bc986ea7f8f51c1d06542142b9128f51;2017-02-27 17:18:13 +0000;update layouts module
+8745feb0cf8056fe777f6e3e60dc13b46fc76bde;2017-02-28 10:29:08 +0000;add webpack profile to pom.xml
+a3a9aa0fbf031d43f1c3106385f1ec3f7b14517f;2017-02-28 10:29:55 +0000;change webpack.dev proxy target port
+82cfc28461492c4c7213ea4018b8a8c4663490b1;2017-02-28 10:30:27 +0000;update index.html
+47098fd2ba2de5d3def90f7a94064590c58f498a;2017-02-28 10:44:01 +0000;update admin:health module
+0db0beafabb2aa847a8672aa931514c6d20bc602;2017-02-28 10:46:47 +0000;update admin module
+256a22974987a1d25c012291d0bf3fa36dc80150;2017-02-28 10:49:36 +0000;add applications module
+fb9fe45c3793a1f11e5c52882e36973c470234f8;2017-02-28 10:55:50 +0000;upgrade shared:alert module
+4c75d6cb063cd7810acfb9f00bc64a5a47560117;2017-02-28 10:59:25 +0000;upgrade AuthServerProvider service
+7c023f3869a2b7214413660bb3051975cc00989c;2017-02-28 11:05:21 +0000;upgrade AuthService
+a01046c9163b94d1772a78bfdf61681affc99689;2017-02-28 11:06:09 +0000;upgrade LoginService to use JWT
+51a265c6d4d6d3ae9e1176242c2c672e3f555c66;2017-02-28 11:23:31 +0000;delete AuthServiceProvider (HTTP auth)
+61d43077c96ea7da31971b59c816538b9b88ef63;2017-02-28 11:32:46 +0000;upgrade blocks:interceptor module (JWT)
+fc643d30bd70995f285572f51fb87568aea42974;2017-02-28 11:33:09 +0000;upgrade shared module
+e3119b96c0d8c0d473c26acfec742676f614a30b;2017-02-28 11:35:45 +0000;upgrade layouts:error module
+1d38b69b682b568987ccdfa1d4388b037cc986fc;2017-02-28 11:36:45 +0000;add layouts:profiles module
+807b77bdfe7564217b5ebd0d087b12c53b733ced;2017-02-28 11:37:03 +0000;add layouts:profiles module
+277fcb9f9e7b2313575c49fdcc8c47e10db7463a;2017-02-28 11:37:33 +0000;upgrade app to Angular 2
+c52d12c4c0d75e206e90f0de9f35f21ac2df2424;2017-02-28 11:37:58 +0000;add bootswatch flatly theme
+1c964c5cc0ced64407550c24fa9d44896503b7ab;2017-02-28 11:45:20 +0000;fix webpack profile frontend maven version
+960cca7019a815321d41f9a1273c952b7f67b7f7;2017-02-28 14:50:47 +0100;update to JH4.0.6
+c781e3a6378d8c2d77f539fc08d7e5ea8cfd1f14;2017-03-02 17:19:04 +0000;add swagger index.html
+8a999d5196262899ab94091acae20e7f8e6c4234;2017-03-03 09:52:01 +0000;upgrade karma config and tests
+bf2b07eb316523d370e6cd84f18e3f504757a062;2017-03-03 09:52:18 +0000;delete yarn.lock
+c3bbb08a59c58db724d9d05f5b4de0d499e21f96;2017-03-03 09:52:40 +0000;add HomeComponent karma test
+6216589afe58a67d113c37e151c37def7c44b60c;2017-03-03 09:53:15 +0000;upgrade package.json from jh-4.0.5 to jh-4.0.6
+3ee9006664a731b380e0c18b3a0305a5297e19db;2017-03-03 09:59:26 +0000;polish HomeComponent karma test
+d3c53e65da014e18a6454ee0132bc7ebff83534a;2017-02-27 16:26:00 +0000;add webpack config files
+8ae55f737ecb552506064f238f37fa524574386d;2017-02-27 16:28:38 +0000;update package.json
+bd6a4ed0721bf5d7605b9677178a31511c73db49;2017-02-27 16:37:53 +0000;add tslint.json
+816f668f7018b89b8c89cbbf98ecca2ff6b4ed78;2017-02-27 16:38:29 +0000;add tsconfig.json
+abb9e4be2f8290d11737574b67396651c903064d;2017-02-27 16:40:56 +0000;delete eslint files
+941abcef95d02094be83be9ddf32ed12310bd909;2017-02-27 16:46:36 +0000;delete bower files
+a16ad022813019af450b2fb1339a76f4c45acdb8;2017-02-27 16:58:28 +0000;add blocks:config module
+12a72b4217ef5ca7a911b776904ee0382f6161e8;2017-02-27 16:59:06 +0000;add blocks:interceptor module
+308f61550a8538386e03e15b39460b9c46919533;2017-02-27 17:02:33 +0000;add shared module
+8c32b777cc20a77586b8c625ed0e056773003274;2017-02-27 17:03:02 +0000;add updated login module
+7122f33e369a15e6b1a38f42137332f81da31596;2017-02-27 17:13:09 +0000;update home module to Angular
+fb2fd25280ba3437b08913b24b55f0964234669f;2017-02-27 17:15:49 +0000;add footer layout
+f58fa881726945080e6d8085df3d1a7d2d22950d;2017-02-27 17:16:26 +0000;update navbar layout to Angular
+6adf4fed6925d5e704d3a9d8c1a67a48c0012db6;2017-02-27 17:18:13 +0000;update layouts module
+8f3fce8c5b1d9e6fa76e8657f8c76b24b252ce6e;2017-02-28 10:29:08 +0000;add webpack profile to pom.xml
+b58dda1d1018ccdb5c5b13e50638fbef23d3b770;2017-02-28 10:29:55 +0000;change webpack.dev proxy target port
+0f965ff5b0175a98910b0b81f90cca49fd98588c;2017-02-28 10:30:27 +0000;update index.html
+b8a81d390eada6ab4e153873ad8e7310e21874e5;2017-02-28 10:44:01 +0000;update admin:health module
+59c92fc2259973181474e05b51467df772d2f69c;2017-02-28 10:46:47 +0000;update admin module
+9a21bcb290446a3dd74e8066f48c39b75527ec0b;2017-02-28 10:49:36 +0000;add applications module
+cebd788b0d291189fc17890452b19e3adb0a56e3;2017-02-28 10:55:50 +0000;upgrade shared:alert module
+686bada9ed8ad3f65b7b8e84d6d7996913edf237;2017-02-28 10:59:25 +0000;upgrade AuthServerProvider service
+d27bdcd8e5665bd2017f8f1e61c67dfa777da310;2017-02-28 11:05:21 +0000;upgrade AuthService
+ccc9abf4d85509e695ac347beb7708d26531968e;2017-02-28 11:06:09 +0000;upgrade LoginService to use JWT
+315049910b3194b61542d8f95acc46640c67f2a0;2017-02-28 11:23:31 +0000;delete AuthServiceProvider (HTTP auth)
+e70d56b79f43b1bb68e98c2f91a7db8ab6740958;2017-02-28 11:32:46 +0000;upgrade blocks:interceptor module (JWT)
+731487382efb51e8a5db2846f8e3d8818b7c8c4b;2017-02-28 11:33:09 +0000;upgrade shared module
+5e578371085b59538fe60249a2245e6675613930;2017-02-28 11:35:45 +0000;upgrade layouts:error module
+9a75eb1799ee35b505d8cd0da8e9e6feb57ff9a7;2017-02-28 11:36:45 +0000;add layouts:profiles module
+ae1282f536274d991768195dcccd06cc865d5658;2017-02-28 11:37:03 +0000;add layouts:profiles module
+85a2f59e7d2123d9ab6bc473874689f4d4535c48;2017-02-28 11:37:33 +0000;upgrade app to Angular 2
+2fbd3be58460ccbfd4856fa9fa64414abc9736cd;2017-02-28 11:37:58 +0000;add bootswatch flatly theme
+506d2eb8f3d21e73450286ebbdcecd71a54cd387;2017-03-02 17:19:04 +0000;add swagger index.html
+c3ea09419ed38fe25f0aae3ec5bcc60f2b86cdf7;2017-03-03 09:52:01 +0000;upgrade karma config and tests
+5c0394d53c9e41e68a80312f614416f9616dcccf;2017-03-03 09:52:18 +0000;delete yarn.lock
+a2475e822bb89c7cd3b4278f461b26818442f4d7;2017-03-03 09:52:40 +0000;add HomeComponent karma test
+38a9dd07333777eb43f55114752253c997a71b67;2017-03-03 09:53:15 +0000;upgrade package.json from jh-4.0.5 to jh-4.0.6
+285a0b19c9a020177c2e454efce8a2ff5d5bfba0;2017-03-03 09:59:26 +0000;polish HomeComponent karma test
+27755e2c7c2871fff9541935d8a0e2c6c143eba3;2017-03-03 17:06:44 +0100;Reference the @PierreBesson 's review
+e4cea92055c8bef0f1b30fe0a44246cf5833be45;2017-03-03 17:03:55 +0000;hide rounded corners in navbar
+b38d7b0790570d62a31c5827d69e1478b6040b82;2017-03-03 17:04:24 +0000;fix hidden login modal-dialog problem
+a0777a1d22180604a948d2ecb55b60c015412d25;2017-03-03 17:11:36 +0000;Merge remote-tracking branch 'origin/angular-2' into angular-2
+9476f4b3693d5967d7fb9ae81288a84c74fbd4b2;2017-03-07 11:37:14 +0000;polish HomeComponent
+3356b26a85e92ab21163552459a2663c6a16f997;2017-03-07 16:35:42 +0100;Add Junit tests
+fb8079a49c09e37cdd2501b0824b73c32a71d0c8;2017-03-07 16:13:00 +0000;polish NavBar
+f7924ac5cbf7099eb033f9bdf7a442a9516cafe5;2017-03-07 16:15:25 +0000;fix applications module
+44fd80e12b40d08cf2654d129ea893730bc16ef4;2017-03-07 16:23:42 +0000;polish applications module
+6d0c61b3a5091ce51cd0e807e5d8b20e289190a7;2017-03-07 16:36:52 +0000;add ApplicationsComponent karma test
+563f023ea64113374635db6f698cc1647b5d4632;2017-03-07 17:42:03 +0000;fix HomeComponent unit test
+3abf5701b1f88abbd7b2aa8b18e5cfe596c32b6d;2017-03-08 10:39:28 +0100;Delete duplicate SecurityConfiguration file
+c5f8f2990ff2fd7ac8f424aa030c2530029f4c9a;2017-03-08 11:37:36 +0100;Enable JUnit tests with Travis
+c59d4ffa651018310989f3603f20e6f6a3060424;2017-03-09 12:02:45 +0100;Remove maven line in travis.yml
+2a0d0c6d5dde7721b3e913349b0ae93887ca81fc;2017-03-10 15:55:19 +0100;add new tests and optimize imports
+7e658459365976db9c97b8531dc23908e0166376;2017-03-10 16:54:58 +0100;Merge pull request #100 from JulienMrgrd/UpgradeJH4_Back
+f7f79040dca0ddd41ee800020177c370ab3f924f;2017-03-12 14:16:58 +0000;change footer content
+61627fdcdca26861972745db62aacf47cceaca02;2017-03-12 22:33:42 +0000;add history module
+984ef1c59e6dd4fda42dcde5559924c1b8663b64;2017-03-12 22:34:05 +0000;fix CSS active tab problem
+40895715327f7e2d8c13a5ac4aad8261b72d5a33;2017-03-12 22:49:43 +0000;polish
+edeb1f577c8beb36dc401512499276fd2e7a4d7a;2017-03-16 11:35:13 +0000;add date format pipe
+8ab0f644c6775684d965e753115a42aea4ebdd75;2017-03-16 11:36:52 +0000;upgrade replicas module to Angular 2
+a865b6a4975893a7b6a53136d00296130a0dc942;2017-03-16 11:58:04 +0000;Merge branch 'ng2-applications' into angular-2
+03420d3c64c1fac90b407790f49b7b937aa3932a;2017-03-18 10:35:52 +0100;Use `defaultZone` as `default-zone` doesn’t work
+9be017eaa1275e03a19e668692d87c42aa3b8982;2017-03-20 16:10:30 +0100;Lower Eureka timeouts
+f41e6de334fd8ce4096167b813ecb59de53c6d94;2017-03-20 16:10:42 +0100;Upgrade to the latest Spring Cloud
+a6bed82620c6b52627cba59496d39171c38a4290;2017-03-20 16:38:41 +0100;Release v2.6.0
+f6d3f5737fef5887b5f1019e210a1b35f5fe8f88;2017-03-21 16:10:16 +0100;Merge branch 'master' into develop
+561a1c1335faddf25d718a1473188e47ccce4287;2017-03-21 16:55:06 +0100;The Registry configures itself with the Spring Cloud Config server, allowing to share the JWT secret with the apps
+47f93f032df023c86850734599d7f89b419b03e4;2017-03-21 17:56:29 +0100;Correct configuration names
+bbed4818b61acc57c7cdecf6cd7ff0edb0568729;2017-03-21 17:56:44 +0100;Correct URLs
+3201718134d1b992673b945e4979d8cbca8c4fa1;2017-03-23 19:00:00 +0100;Add a service to automatically add/remove Zuul proxies on each separate service instance, so they can be monitored through the UI
+73e40cdfc1668399591d6518c23a5b8d5c60e25d;2017-03-23 19:23:40 +0100;Remove useless comment
+b3b3d374cf55965eaa74dd738d5207bdcbb55d7b;2017-03-23 19:25:53 +0100;Better log message
+0828ff0000f02e500345e1539029f13afb12afab;2017-03-23 19:26:09 +0100;Removed method that was only used once
+8b2a36db60cdce9f2b6eaecf5a49218ac1060cde;2017-03-23 19:28:10 +0100;Documentation
+04c0e0c9fa3ccd29cee2619d0b416e3ff054cae8;2017-03-23 19:34:00 +0100;Refactored configuration file
+8a06daef023d083f6ce9e50e481a1518edf624e2;2017-03-24 17:57:15 +0100;remove unneeded /tmp volume in dockerfiles
+e4582ffca93546055619aca4704105d2f8b134da;2017-03-26 15:57:26 +0100;polish
+3a25428ffc58d23deface7504f59edbf0366f578;2017-03-26 20:42:54 +0100;add config module
+fc0a3ac2bb2f2a325238f4d11751517da4e272ff;2017-03-26 21:09:00 +0100;fix HistoryComponent loop
+d73a957ea4a0d4865bf6454cfdb6244551dab67e;2017-03-27 07:09:34 +0100;add HistoryComponent unit test
+f7c474b6f8fa7412e6b4ac437dab3f58de192894;2017-03-27 07:21:39 +0100;polish
+1d4e86ac55c44a7d061b9d1d43b7b322883f4d92;2017-03-27 07:41:43 +0100;add SSH module
+ec836e159c1f51b650500373b8654aa3030cebc7;2017-03-27 07:48:15 +0100;polish navbar
+e4614c5b3c5177cc3be9cfdcc5b46f734b1e20de;2017-03-29 08:42:35 +0200;Merge pull request #101 from mohamed2a/angular-2
+70d9167e015e25aab2af00b39b9b8a0bc18fac6e;2017-03-30 11:48:05 +0200;issue #99 Zuul routes OK and Health page OK
+481bd4b9c393e32c1d8acd435c4252e0884be313;2017-03-30 17:42:14 +0200;issue #99 refresh when switching, fill routes status, remove warnings
+f7978f9a5ff0655b1637f4e5cfd0d57ecf2a714e;2017-03-31 16:08:39 +0200;issue #99 rename packages, add css, minor front changes (health page)
+a6ecbcaee3b3f6f196dd1da374c636ec7e4b237d;2017-03-31 16:18:11 +0200;issue #99 metrics page OK
+0dcfa09258721ce714d1258061389e816f3fb0b9;2017-04-04 14:43:16 +0200;issue #99 add apps metadata and add services instances in routes
+e25c96884600071ec29b8358c722b7a892502022;2017-04-06 18:02:22 +0200;issue #99 logs page OK, remove warnings, renamed css files, minor fixes
+ec4893c86afb30d53857bc145f6f77fdf1a35b5f;2017-04-10 15:58:16 +0200;issue #99 configuration page OK
+e4cbf838c89a0d8a807774f34c04c13bcce9107d;2017-04-10 15:58:55 +0200;issue #99 rename duplicate "configuration" pages names (Spring Cloud Configuration : old = "Configuration", now = "Cloud config")
+2a59d579202cc1372504e4db3f4a6543b09f4fc4;2017-04-11 11:36:08 +0200;Fix Routes NavBar
+32184cb45adf63149f940461231dfb86cf0574d3;2017-04-11 14:14:46 +0200;Starting angular4 upgrade
+a9ee0b87d57f807c97741b52a280b69b4b1fb143;2017-04-11 16:57:51 +0200;Merge pull request #107 from JulienMrgrd/monitoringServicesZuul
+e786294e9eda9d43d9d1d447c09df6ed8c6e92df;2017-04-11 16:58:03 +0200;Merge pull request #105 from PierreBesson/remove-dockerfile-tmp-volume
+42a6c651551de37ec3fb62d24cd72da446072bac;2017-04-11 21:26:40 +0200;Merge pull request #110 from g-boy05/ng-polish-route
+0cd715442e29ccd3e0c14044eefe6d8eb45d7b01;2017-04-12 13:11:19 +0200;Revert "Fix Routes NavBar"
+31fc2b0cf065cbc10614e94834ffdf1ba7696ca0;2017-04-12 14:10:32 +0200;Fix Yarn test
+e2d5bc46a8eb139c65ddf0284010642efda91363;2017-04-12 14:59:43 +0200;Merge branch 'develop' of https://github.com/jhipster/jhipster-registry into angular4
+9b8dd674dbcd94a709d54760c70a9835485b135a;2017-04-12 17:50:40 +0200;All pages in Angular 4 except Home and Applications
+eae0a203a9e85487b286a0870d487d73d07173d2;2017-04-12 17:59:10 +0200;All pages in Angular 4 except Home and Applications (fix pom.xml)
+20475653c3ae99a2752f6aa958202ddb0c29e8e1;2017-04-13 10:22:20 +0200;Reformat *.ts and *.css files
+334c56a20d8fd40ef0cf985d8a9994d5333740fd;2017-04-13 11:37:13 +0200;All pages in Angular 4 except Home and Applications (fix pom.xml)
+3e4fbf057ad92409f9af2e17a90d690dfaf1c754;2017-04-13 14:26:21 +0200;Merge pull request #113 from JulienMrgrd/yarnTest
+b3c1be4f2d220e65b323e9dc6a9086d418389181;2017-04-13 16:11:20 +0200;upgrade Applications page
+2d6cd8f2b0a5c09bcbbb38eea5918bde29059060;2017-04-13 16:52:45 +0200;upgrade entire front, based on a generated Gateway with Ang4 in JH4.2.0
+25025edf97095ff58bae043d37858c0dcae402b2;2017-04-13 18:18:56 +0200;Home page OK, somes CSS changes and refactoring
+b9aab5f21c14a36573f1844895679b5195aa48d9;2017-04-14 10:32:58 +0200;Change code format and fix const for yarn test (due to Angular4)
+230b123c3f0913de754341138f6f5ecc0a000ad1;2017-04-14 10:44:00 +0200;minor fix
+b7c3035ec27b8e3245df8f7abf3a76ef82385640;2017-04-14 10:45:43 +0200;minor fix
+7a06d5a9b3094c283a320572e255bd5a9988da9b;2017-04-14 15:53:39 +0200;minor enhancements and ng-bootstrap alpha-22 -> alpha-23
+187d9e468ba16e67b3b23b9836fb352fb171f3e0;2017-04-15 13:42:37 +0200;Upgrade with latest generator
+a16766a072d0246a6f04a7e6a06744914f5d3cc6;2017-04-15 13:47:00 +0200;Upgrade with latest generator
+9b0192e479ac2710e692c530773572fd8de723bd;2017-04-15 13:48:08 +0200;Merge branch 'JulienMrgrd-angular4' into develop
+3926fe208fa93481289b6a3c1a6cbf3b9386e55f;2017-04-15 14:06:22 +0200;switch to sass
+aa11c18fbec001d6a73e5e8d8700c47c78e6ee31;2017-04-15 18:53:06 +0200;refactor code
+6e5b4f09daf3c98062bba105abd8a61657d3e8b3;2017-04-15 20:00:54 +0200;fix cyclic dep issue
+a346e036cde804303beaeadc9acfa2397e522dbc;2017-04-15 20:18:51 +0200;Polish
+e755e63f885c9da8c84a585e0597a2b70db00aae;2017-04-15 22:02:04 +0200;Fix issues with refactor
+ecfc5222ecdb70fd9a0a7ab08ce2e42303a7621a;2017-04-16 12:07:37 +0200;fix tests
+106764c194ad9771d25143769f56fa1935b8df02;2017-04-16 16:08:57 +0200;make routes reusable components
+4731143c1db5f57a74c3ad4352e66ca9c8f49db3;2017-04-16 16:22:19 +0200;polish
+3efc9b4617c37c3d82bf2eadf655622afe650d3a;2017-04-16 16:31:02 +0200;fix tests
+9eaaab166111b39299984916887b814e1877f60b;2017-04-20 09:56:48 +0200;delete unused CSS
+acaec68b75c347c324164e09bc8cad9b92e6aee3;2017-04-20 10:07:53 +0200;issue #99 dropdown list to select instances (add custom pipe 'groupBy')
+1969765e38086b8c220a6a9690a844dd8db3b407;2017-04-20 10:19:10 +0200;remove warnings and polish
+28a3b749ffff1d4e99513d9ab0114a4664a4adda;2017-04-20 16:12:20 +0200;Dropdown list routes with search box
+6e8c4915cc10d0af0eb7cb0a2e97e5ab8cdbe06d;2017-04-21 11:41:03 +0200;fix CSS issues on Firefox
+193045dad1b6cac4f3c263a54513ede747c0ac06;2017-04-21 14:33:07 +0200;PR #120 rename and refactor pipe, change progress color (too bright)
+571d0c8566ac60dab27f2909a49c96234010684c;2017-04-21 15:52:27 +0200;Merge pull request #120 from JulienMrgrd/monitoringServicesZuul
+9ff0892dee6f31ea72fe226847d961d401682251;2017-04-21 17:10:11 +0200;polish [ci skip]
+4eb6c0afe99d260ba283c2795aa076b1dfa949d8;2017-04-21 21:04:03 +0200;Use code-block to display configuration
+ccd20443bee40a01014f4b20f7b3ead2a87f715a;2017-04-22 15:45:31 +0200;Merge pull request #121 from pascalgrimaud/display-configuration-with-code-block
+4494889f3490da00973e6360386588b1c518d580;2017-04-24 17:41:46 +0200;fix view bug in Chrome & polish routes component
+5e525c3f9451f3d0d56f0b1c26581daebcb2cdba;2017-04-24 18:03:44 +0200;Merge pull request #122 from JulienMrgrd/monitoringServicesZuul
+58be779179481a65de256866f69b70dda9f66107;2017-04-27 17:58:04 +0200;Remove wrong prerequisites
+157c84f94a15432f7e16161274d0d5db94fe2035;2017-04-27 13:12:31 -0500;Add the Node.js buildpack to the Heroku app.json
+cfcaec63bdd094be84aa6580e9aad15b75bb775d;2017-04-27 14:28:33 -0500;Move webpack tests to test phase
+bd63904f31f4f551efe0a60d5b05895c3b1d1681;2017-04-28 11:03:50 +0200;Merge pull request #126 from jkutner/develop
+ab74bbac41030c774620cbb6e1314d239641d5d0;2017-04-28 12:22:49 +0200;Add refresh timer, memorizes choices and avoid some inconsistencies
+9508ba505509488b861bb6a448f1d808aa6e8b02;2017-04-28 14:33:07 +0200;PR #124 Changes following @deepu105 code review
+b83cfc01c84c23c3bf8c352eeb2ffcb525936055;2017-04-28 15:11:12 +0200;Replace element selector by class selector
+7fb0cf513d8dcfe07ef2686848eb2f2cbb5f9c70;2017-04-28 17:00:04 +0200;Reorder navbar menus
+fda0a16a33ce5dfc53a7551f04837a35f5e5cda9;2017-04-28 17:00:19 +0200;Move inner class (and also junit tests)
+61156f255cbb1158be1474496f6625058ea8e346;2017-04-28 20:44:02 +0200;Merge pull request #128 from JulienMrgrd/orderNavbar
+8aebc08c83f305c9fc90aea113f1ce68a1bff640;2017-04-28 20:46:14 +0200;Merge pull request #124 from JulienMrgrd/monitoringServicesZuul
+24cf8db48f504c737f9db0a8c59cb3f84f158865;2017-04-30 00:02:40 +0200;Fix Docker build with Angular
+f74e9ec2c7f1a55102a3fd9593f0a0add375437b;2017-04-30 10:28:36 +0200;Merge pull request #127 from jkutner/webpack-tests
+5c8ad3b734b8624b59e4f7943dbbfbe2f70ccc88;2017-04-30 10:28:59 +0200;Merge pull request #129 from pascalgrimaud/fix-automated-docker-build
+eb7a7b6325b0c6e2fdd767d687173a1a1e0d49f8;2017-05-04 10:46:16 +0200;new Refresh component
+6afe221b90cd755e0c20a7c0118e82b04637c519;2017-05-04 15:30:04 +0200;@Deepu105's review and little bit darker dropdown-divider
+918feecb615ae93f89edc9af1f0bbebf5f2517ee;2017-05-04 18:38:14 +0200;Merge pull request #131 from JulienMrgrd/refreshComponent
+0b2720d200ed9b3ea75fcb7fbcd04865c118765a;2017-05-04 21:20:09 +0200;Correct the URL so it is clickable
+b6c3684fb43c7636d312893f75948578ccf801b1;2017-05-05 10:37:01 +0200;Fix #132
+7f21ad62825b866c76d6965024e04725f40b99fb;2017-05-05 10:39:37 +0200;remove warnings
+6376a8e622f0ee02038074b80dd6df87b36542ae;2017-05-05 17:38:44 +0200;fix #132 spring cloud page
+81575c3a53f00dc400c1a4fbcf543c6e6db1e3bd;2017-05-05 19:53:09 +0200;Merge pull request #133 from JulienMrgrd/developAndBugFixing
+92231eca8a39a89de4606e8c7df312a57a6853b1;2017-05-07 00:13:58 +0200;Prepare for 3.0.0 release
+3657909e4fd6881d574e62b9f3d81ec2a9dd852c;2017-05-07 00:14:22 +0200;Fix unit tests
+816bcf462c93f11ea575c8c0d4d87f754b5d49aa;2017-05-07 00:14:30 +0200;Formatting
+1aad7b154f550597a925b1da242b2cd1801c7ebe;2017-05-07 09:20:04 +0200;Correct the license, using the one from jhipster/generator-jhipster
+cf63eb076b8ddcf78b0b3ae8faf6b6049925069e;2017-05-07 09:49:25 +0200;Use the new https://github.com/jhipster/jhipster-registry-sample-config for storing the sample Spring Cloud configuration
+da29f59f868c2ad36b10a8b3585e5d4ebad8339b;2017-05-08 13:35:03 +0200;Merge branch 'develop'
+dab31b37a7721ebabac91f82633c2900cefd9e3e;2017-05-08 19:35:40 -0500;Added logo to app.json
+5e9276eb345359df5267051fb00937ceb52e80e7;2017-05-09 18:04:12 +0200;Merge pull request #136 from jkutner/master
+f5df7382b4ea038cd5766084699b598413b39845;2017-05-11 09:48:31 +0200;Stop checking the password length as it doesn’t make sense here
+1c4cb3ee3c3e3807dcc7cd567be12683575d0610;2017-05-11 09:48:39 +0200;Merge branch 'master' of https://github.com/jhipster/jhipster-registry
+8ed533047106b84bf6273aff92d353b4edac16c9;2017-05-12 16:46:30 +0200;fix Metrics page that reload the entire content, and add updating config
+65b78067d64069d0fd7685fa3bf5f48ed58cb674;2017-05-12 16:58:24 +0200;update Registry with Generator updates (ngxinfinitescroll, authservice,...)
+15a30a19b766cca87885cbe8cafceecd6cbfdf74;2017-05-12 16:58:47 +0200;fix empty Home page
+1bbe180bb5b11dfc0e76e599baf36d9864702a5c;2017-05-13 00:24:16 +0200;Merge pull request #141 from JulienMrgrd/newGeneratorUpdates
+c898deebf11e02070e280d8c547f9feee5656afe;2017-05-13 00:25:07 +0200;Merge pull request #138 from JulienMrgrd/developAndBugFixing
+a83349361cbd468809b795089926056b81889654;2017-05-15 18:19:19 +0200;Remove unused dependencies
+51172dd2a35e33ad80712d3958adb95c60822f6c;2017-05-15 18:19:30 +0200;Update Yarn dependencies
+9c7e41bcb56a04a52aebd7f0204d068985649c5b;2017-05-15 18:19:56 +0200;Improve the documentation and warnings when Spring Cloud Config is not correctly set up
+2470c48e1fcede7bff183a863ac9ee7718a694e6;2017-05-15 18:20:58 +0200;Merge branch 'develop'
+08c8b884b202819a3e94e06b92b0d2986632d7a2;2017-05-15 18:30:29 +0200;Remove password tests as validation was removed for Heroku
+ba78bf89d5a2d2bf330cc0f7b2052b8db5c9c037;2017-05-15 18:34:22 +0200;Release v3.0.1
+7ff20877cc50ff299ec87ad5d8547c56a8236302;2017-06-19 16:50:22 +0200;Change security filters to protect config endpoints
+2f16d3dd8efd38933a9521f70cd02ea303b33ec1;2017-06-19 17:51:47 +0200;Update dependencies
+7224732d11b8444fed59e21bb602eb2d7cefc254;2017-06-19 17:52:16 +0200;Configure the Eureka client to use its own local server, with security enabled
+c6ca4ed185ce1edccd09e1153f38018b6a357b65;2017-06-19 19:00:26 +0200;Release v3.0.2
+e88b65e260652669c8eef1d6d2e331bba11c75e0;2017-06-22 13:59:29 +0200;Update config.component.html
+eb821c5c9495a063bdee4fadf0a49e3c053e2d87;2017-06-22 14:18:22 +0200;Merge pull request #154 from JulienMrgrd/is-not-native
+5173797d52d0bff151d32dc952dca860ed4ff259;2017-06-22 15:28:02 -0700;properly display config git repo and search locations
+1f1897c0ea0e99ca28ba23dd0bbcc50b28a41338;2017-06-23 08:25:19 +0200;Merge pull request #155 from ruddell/fix-git-display
+959b2c6d3f4166f46dfe6d50f85d1515a6d6c855;2017-06-23 17:18:06 +0200;Release v3.0.3
+1d44e19e9099abff27217eec9bcda28d94d0ba92;2017-06-26 17:46:03 +0200;improve show-more/show-less dropdown
+ee81aa1dc65cca6613f39f1ec4c035760911e71b;2017-06-26 17:49:07 +0200;add encryption screen to encrypt/decrypt values using the Spring Cloud Config server API
+01692e8755ea28b87984dc833205f593873c192a;2017-06-26 18:47:28 +0200;minor fixes the encryption screen template
+0d37d0fe511a844fb4db3b8c76ae7910026e4ae0;2017-06-27 00:16:48 +0200;Fix refresh in Eureka Instances screen
+82c5e95c8a721cc79337708f7b4dd4651da5ee51;2017-06-27 14:08:32 +0200;add spacing around encrypt/decrypt textarea
+1ac2b30ed21d87322b14c109adc5e7719c4e7f2f;2017-06-28 08:05:15 +0200;Fix refresh in Eureka History screen
+746d922ed32bb6e1afc8d2fbdaf79507d238539b;2017-06-28 08:31:14 +0200;Sort data with reverse in Eureka History screen
+2d08d70642e11083bba3d9fc64c38310dcae7a48;2017-06-28 11:13:47 +0200;comment the encrypt.key property so that the encryption features are disabled by default
+ebab5bdf67fd4af864ad6e197adaca12aa486958;2017-07-07 15:03:51 +0200;Merge pull request #159 from pascalgrimaud/dev-fix-refresh
+00ce2b6cbf21b4f8dee07ea20ddb9b5ffa80e8db;2017-06-30 11:02:10 +0200;improve config display with, properties, yaml, json and table alternative display
+8715023142a2d89a7edc4e65b140cfc6a8a755cf;2017-07-07 18:24:35 +0200;add missing nativeSearchLocation and gitSearchLocation fields in ProfileService that prevented the configuration source location to be displayed in the cloud config screen
+f54b12f029ca153f57d13aa80b763bc6cc9ebeee;2017-07-07 18:01:28 +0000;Merge pull request #161 from PierreBesson/improve-config-display
+b3f2922df1710304dcd132d6c4b277c5ebbb032f;2017-07-09 06:03:16 +0000;Merge pull request #160 from PierreBesson/encryption-screen
+68b43faeb0751828188f1239859e1332e6cb4ca7;2017-07-10 11:24:17 +0200;Release v3.1.0
+ba31c167f5d3894f507b7b3854f1371f4217ddab;2017-07-13 20:02:58 +0530;K8s configMap refresh
+085439b9c33c5a84746d39c473f1ec8c10b78a63;2017-07-16 23:36:09 +0200;Add logfile page to view logs
+9801e3a6fc57804c0a845cf40f1f42f59adc3ae6;2017-07-18 23:14:52 +0200;Remove double id in html
+2ddb176ac139091806158554ac57e2843e766fda;2017-07-19 14:18:40 +0200;enable logfile management endpoints for all apps in central-config
+dc709c8b2e5a687e23a09164800735d08d1d48e6;2017-07-24 12:34:31 +0200;simplify route links to clarify logs vs loggers
+774b246da2ed7ddfe27adb5e4e0c8859f2b774cc;2017-07-24 12:36:21 +0200;improve the logs viewer screen styling and add bottom/top links
+55dc94856e1fd265001a5361d8a51bd8518d0211;2017-07-24 17:06:44 +0200;fix bootstrap startup spring profiles
+9e7807c85498b2dcc01359f57e82c20450c8b940;2017-07-24 19:32:34 +0200;Merge pull request #169 from PierreBesson/fix-bootstrap-profiles
+16352bb843d43b0b1cdf4c267a7d19349668843d;2017-07-25 11:07:44 +0200;improve positionning of the top and bottom buttons
+89434c5f0150aae348e45506f70176f6653d902d;2017-08-02 16:16:03 +0200;replace the :arrow_up: and :arrow_down: utf8 chars by their fontawesome version
+c9dfba45cbc769df47d00fc3a3cccc1b120e60c4;2017-08-02 16:47:18 +0200;Merge pull request #168 from PierreBesson/logfile
+42dbff3a9afcdd9cbd3aa2a9f42766a20702fcdc;2017-08-04 08:17:03 +0200;Fix docker build with dev profile
+288faf8f5c78588f2f80b008e111b095e8fe4db6;2017-05-31 14:07:13 +0200;docker: use multi-stage builds to reduce image size
+937fff2fffb57f54b80239a0b47a15fcd5f630d5;2017-08-23 09:14:56 +0530;upgrade to 1.1.9 lib version
+5a0d2354189386a5583381de6486d2f8a6e0130f;2017-08-23 08:47:18 +0200;Merge pull request #163 from srinivasa-vasu/registry_k8s_oc_v1.0
+fc42fa87958c4b43e966c3b982864bbfac8e22ed;2017-08-24 17:37:02 +0200;add .dockerignore to speed up local build context creation
+85ef66283b60aff3a43b1bd503dc228ae64652a0;2017-08-24 17:37:45 +0200;Merge pull request #173 from pascalgrimaud/docker-multi-stage-builds
+363deb9ea72ec95a6b54f2068128732a9d4c021c;2017-08-24 17:44:38 +0200;add docker hub badge
+c07521363e6d369ccdb5967f0cf2f1beb82616a8;2017-08-25 11:10:23 +0200;Merge pull request #174 from PierreBesson/dockerignore
+9cd1f224afb6bf035c8e782a02a690a8f974cbc0;2017-09-05 11:19:38 +0200;Add contributing guidelines and templates
+6f8768fff888bec53217f0bbc27ddc2d9fa94d1d;2017-09-09 10:40:35 +0700;Should use prod profile config when in prod
+69288a1dbd0efdd1abcb19027614aee13d4f7728;2017-09-09 09:47:54 +0200;Merge pull request #178 from maivantan1992/master
+93018f071f12679eded309817ec5f67864d09200;2017-09-12 10:59:46 +0200;Merge pull request #171 from pascalgrimaud/docker-build-in-dev
+26e1d8f4f054d0391b842dea5cbea2487aea78f6;2017-09-12 11:01:55 +0200;Merge branch 'master' into develop
+e16444173441eaf47d8bc48cc70e6e6b0f5e28a4;2017-09-12 11:15:38 +0200;Release v3.1.1
+6caa0550d64ec9fcc25a6609321439f04089f470;2017-09-12 11:29:43 +0200;update to the new www.jhipster.tech URL
+9a06c0d92095e0bca7c21c60a7649e3f329f721f;2017-09-13 09:26:19 +0200;add Doc API
+ade5e226680f519d32512fa9224f65dbaf7c227f;2017-09-13 09:42:17 +0200;changed lib to swagger-ui.min.js
+864cc860218b4c449a7cb2f9cc00427aff3f3904;2017-09-13 15:46:15 +0200;Revert "fix bootstrap startup spring profiles"
+b870b253344193d19864a0e0f31ea11cf7d56042;2017-09-13 16:07:17 +0200;Release v3.1.2
+9bc269fa0de87758e5b833f060654dc72789e591;2017-09-13 17:23:02 +0200;add Bean SwaggerBasePathRewritingFilter
+13e475a36babee212163540ec6dab940861aa038;2017-09-14 10:26:10 +0200;fixed access denied on API doc
+69b6f46bc68477e7236d272a07ea831c4d02425f;2017-09-19 17:51:41 +0200;Merge pull request #180 from RedFroggy/feature/doc-api
+b434bc1d9a94ebaf27fa1d225c9eccaf9dcc582c;2017-09-20 14:28:40 +0200;Update css and styles to prevent white on white
+f751c3dae111aa2ee6ea8b987dfd96f420f72a56;2017-09-26 17:06:08 +0200;remove sprinfox explicit version as it can causes dependency issues to have it here
+996f1f05d46f1182e9500786542fa1ccaa20a434;2017-10-11 08:24:18 +0200;Merge remote-tracking branch 'upstream/master' into develop
+65d88493f52fd9bca89b87cb12b39edeeea0747f;2017-10-11 08:29:53 +0200;Travis: sleep to 45 before curling
+11aa8d60b8bfe4c030d995343215f83a631cc76b;2017-10-11 08:41:31 +0200;Merge pull request #187 from pascalgrimaud/travis-sleep-more
+e2f088fc96c2bd8cfb39e42c0fb173575c1b99b9;2017-10-11 08:48:33 +0200;Indentation
+2ee2d181b671a738cfe215012e425e7669a8b77d;2017-10-11 08:48:53 +0200;Use jhipster-dependencies
+b1238b12165130f289e647553fb818618773d731;2017-10-11 08:48:54 +0200;Remove cc profile
+e4ab3fbb80a48563dfc38bec6da41e22bb1b214d;2017-10-11 09:35:14 +0200;Consolidate some plugin configuration
+1e8323305cbf4063e9d6339714f56c268027bc3b;2017-10-13 13:42:23 +0200;Create /target directory and give rights to it
+8f14776201861e6f440d6cfd22ae526ab98e4a13;2017-10-16 22:47:59 +0200;Bump jhipster-dependencies to 0.0.5
+cdb1d72e8cfd5efbb4da0ee68e4b908887fe2bc6;2017-10-18 08:28:32 +0200;Fix version in navbar, which is not displayed in prod
+a4cfb962bcabf45f2026819e7a15719e9908a2d1;2017-10-18 13:30:37 +0200;Merge pull request #188 from erikkemperman/jhipster-deps
+595a020f19ab0af034f52f48ceeffecfdf117225;2017-10-18 13:31:03 +0200;Merge pull request #191 from pascalgrimaud/fix-navbar-version
+b29217e5bddb9cd4a9ea947b209bb93a9b734c1f;2017-10-18 13:35:43 +0200;Merge pull request #190 from hufon/master
+9fd35dfd641b98780fda556d9797fd70fbd20ad6;2017-10-18 16:11:34 +0200;move target directory creation to second stage o docker build
+bb49e3a69e001b00fdf5bbc82ef97e7b20bbe1f4;2017-10-19 16:11:37 +0200;Merge pull request #192 from PierreBesson/fix-pr-190
+548068572300c3c497988594828fc4989050fbda;2017-10-19 17:59:50 +0200;Add a "oauth2" Spring profile and start OIDC support
+146c639203a2a6f5350bb93aa187f3cf5c069cd4;2017-10-20 14:04:06 +0200;Allow log in using OIDC
+89591e0ddf7409aa9bb026599fbeea0cf965688f;2017-10-20 16:57:35 +0200;Avoids package-info.java erros in Eclipse
+ccaa868361b88bc9c029f974b3f54b365200d051;2017-10-21 11:17:48 +0200;Add OAuth2 to Zuul requests, and improve OAuth2 intergration
+91c1552961fc81f27fee12b2170c81a26628e7b6;2017-10-22 20:07:26 +0200;Merge branch 'master' into oidc-support
+fc08ef33be4528ddcbddf98c82f77429df5f0aae;2017-10-22 21:11:43 +0200;Correct getAccount() method to work both for OIDC and JWT
+7649580c98aa8dd71d090948b99072dedb4932d0;2017-10-23 09:23:22 -0700;use relative instead of absolute path for context paths and proxies
+c4000818610a9a2e0b291e7c78463d8505f5af96;2017-10-23 19:09:57 +0200;Correct logger
+9880e25624baa02f1531e6cfa457a36cf9344387;2017-10-24 00:41:51 +0200;Add basic authent and finish OIDC configuration
+684df0639e197200e6f0d56335254bfae5d4744d;2017-10-24 00:47:00 +0200;Release v3.2.0
+f5daa27305382da90bae68c735455d9dc437530d;2017-10-24 01:21:52 +0200;Correct unit tests
+dc314780756cc857a01d53fd4a0d94708e7fdfd6;2017-10-24 01:23:03 +0200;Release v3.2.1
+509fe489950cd49d496a81aa66f71d0ac1c1165c;2017-10-24 01:31:10 +0200;Merge pull request #197 from ruddell/relative-base-href
+fa9cd11a83cfe7aa9810f5fdadb50acc9e253257;2017-10-24 01:31:47 +0200;Merge pull request #194 from Tcharl/patch-1
+5155c849fb30ee2cfe7b31a75ffb880a310c1ce1;2017-10-26 18:21:52 +0200;Force authentication on the Zuul routes
+bc5c286b5e19b8140d7b53b209b23cd28dd7df78;2017-10-27 13:53:51 +0200;remove "/config/" path from swagger regex to prevent an issue with the current version of springfox fix #185
+25fa2278a456030d5d39940326b40640210874f6;2017-10-27 14:13:33 +0200;upgrade yarn and the frontend maven plugin fix #195
+dc13ed85b3a3ae0e8dce6e39616722b7a1221d63;2017-10-27 14:23:31 +0200;Merge pull request #199 from PierreBesson/upgrade-yarn-frontend-plugin
+95777a3bd938371e81297c1019888f372497a90f;2017-10-27 14:25:20 +0200;Merge branch 'master' into develop
+0f565abe5c4275bab326a3a0c46bc9f14b483f7d;2017-10-27 14:36:52 +0200;Merge pull request #198 from PierreBesson/fix-registry-random-failure-swagger
+a8167c1cb4e9dd2f9bd3fb322b164b12323fd345;2017-10-27 14:44:45 +0200;Revert  #198
+1203686a31a382cfdacad66e941f15bb5f7d0a64;2017-10-27 15:04:45 +0200;Release v3.2.2
+61d6a0f56ecf80e51a51da4ecdcb7c5e3846e1fa;2017-10-27 15:27:38 +0200;Fix front-end tests
+0a717bdc05e95bdfb526bdc0afbabb762ef4a0bd;2017-10-27 15:29:18 +0200;Release v3.2.3
+34dc15b60015797b333664033e8b3de3ff4c2b3d;2017-10-31 10:17:00 +0100;OIDC : custom session cookie name
+c6288d6c2453d8536cb37bf0cfa24a1ae09c9a04;2017-11-01 21:48:24 +0100;Merge pull request #201 from SebastienRene/develop
+685b77ed4c55961394339e237d58123e5ce5cb08;2017-11-20 20:56:48 +0100;Update README.md
+b4815325c446dbca474cddb645f379cca6299577;2017-11-24 16:47:44 +0100;add JAVA_OPTS to Dockerfile
+52de6a1c5de9f47fcadadc07d461cb6dcecb34c5;2017-11-24 22:51:47 +0100;fixing typo
+162b113ae936d1674552f33fb32907abfbc401b3;2017-11-27 08:45:33 +0100;Merge pull request #210 from xetys/xetys-patch-1
+1c1f0d64ce1cd521a4da12210c9014aacc7db9b4;2017-11-27 08:49:31 +0100;Add JAVA_OPTS to Dockerfile for Docker Hub
+2d6b63367dfbbf19d3908a0e9c652307f40df313;2017-11-27 08:51:46 +0100;Move ADD/COPY to end of Dockerfile
+fbb2643b1cf080aa08fafe766991875b02ab20ea;2017-11-27 09:27:06 +0100;Fix syntax in CMD
+fb57a6dbfcc6558544832e2123d8671406fd0900;2017-11-27 17:54:39 +0100;disable auto-proxy in frontend plugin in some cases see: https://github.com/jhipster/generator-jhipster/issues/6736
+aaa167ccb67c49799336e324b78d20630164a4c0;2017-11-27 17:59:51 +0100;fix spring cloud config server version to 1.2.3.RELEASE
+3910ace1c050e8b2b2711b226c5c4ccf99d02114;2017-11-27 22:08:58 +0100;Merge pull request #214 from PierreBesson/fix-spring-cloud-server-version
+aa40a4bc5703e585b8b346e6720bb67e32d2982b;2017-11-27 22:09:35 +0100;Merge pull request #213 from PierreBesson/disable-autoproxy-frontend-plugin
+ff3ee2fa09f8f1fd1d933a7f46497912af320106;2017-11-27 22:16:56 +0100;Merge branch 'master' into develop
+bc237f2c1ed4c9119dff5672ef4df3e1f150c3ea;2017-12-05 15:47:03 +0100;Update to jhipster-dependencies 0.1.4
+c4972022d3e48cb0a41d3080e9e123c835a79bfc;2017-12-05 16:42:45 +0100;Upgrade mapstruct to 1.2.0.Final
+2c4bbbe343b810f229cdc114f1e64717455b3ced;2017-12-05 18:33:32 +0100;Merge pull request #216 from erikkemperman/develop
+fadf2a823be71ef814c2035de787c843243586d8;2017-12-07 15:18:55 +0100;Merge pull request #211 from pascalgrimaud/improve-dockerfile
+ea172f2b3d627cd994f2d1ee137c858b8e69ce14;2017-12-09 17:48:10 -0500;secure endpoints when using OIDC auth
+a64630e831611c79f2e1e5e0c15a203c9b32f31e;2017-12-10 23:53:35 +0100;Merge pull request #219 from ruddell/secure-oidc
+7c018101dd55bd5ca3a55ffa1bfd5edf0cf54ecd;2017-12-12 14:23:20 +0100;update links
+2761304974505122329ae7927d3f8eb61dd00953;2017-12-12 14:23:29 +0100;Merge branch 'master' of https://github.com/jhipster/jhipster-registry
+0e6eeb56992b409f76456fa01dbf07a27f46ab7d;2017-12-30 16:58:03 +0100;Merge branch 'develop'
+4448fdfbcf664576b748bec009832d4bed3215a7;2017-12-30 17:23:57 +0100;Release v3.2.4
+65d425b096c8cfb6118759cfee379c116523549d;2018-01-04 00:55:36 +0100;Update copyright for 2018
+7e9fa690c30b4558f8520b3c4bddec444b0df42f;2018-01-16 11:03:27 -0500;update node and yarn versions to match generator-jhipster
+da518381d76d884212d2a340fbae7f38def2c81b;2018-01-17 11:51:28 -0500;install make into openjdk image while building
+6160a5bee629a5c01305ec3a88df1901bb3f592c;2018-01-17 12:35:46 -0500;remove double docker install on travis
+6e19b7af4f049983e7e76ae29c55a6ccab431196;2018-01-17 20:34:27 +0100;Merge pull request #227 from ruddell/remove-double-docker-install
+c650724d64205d3712be323f8f67ef50da0b6c91;2018-01-17 20:35:22 +0100;Merge pull request #226 from ruddell/upgrade-node-version
+c25d14e95d1ef945786daf4633524e510d1d5550;2018-01-17 20:41:11 +0100;Merge branch 'develop'
+2080d00bf2978a900f7d75d79e82f0b6408942f6;2018-01-18 18:13:45 +0100;Update footer.component.html
+99ba126a3acd412c9880b5e5dd2ade6ba80541f2;2018-01-18 18:14:04 +0100;Update footer.component.html
+d1cb65789d51a4a08c567c3eaeeb5e6814c7aede;2018-01-19 00:53:02 +0530;solve refresh status issue in Administration tab
+1d20fb80091b03b5421d0398ed74979c9d6bcb4f;2018-01-18 21:56:00 +0100;Merge pull request #230 from katiyar-alok/master
+4790e4b30edaa1cb02512ce99b9f7d8e95fd87e7;2018-01-22 09:26:59 +0100;Open /management/health route
+bbbc40742d1e5ca95e9841e1973482276b9d4de7;2018-01-24 10:17:51 +0100;Merge pull request #234 from c-robin/master
+d322ad4ca47ecab0faa76e45e7e430505716655d;2018-01-27 11:56:54 +0100;Merge remote-tracking branch 'upstream/master' into upgrade-angular5
+853c20f20baa4c7d682536aa44f8decd2d7399fe;2018-01-27 11:59:32 +0100;Upgrade .yo-rc.json configuration file
+8327abc19683be7815e9a7e152ecb514b88f3d64;2018-01-27 19:56:00 +0100;Upgrade to Angular5 and some others dependencies
+01d708498ff303e2120a1fa60a7d84a9a1682f0e;2018-01-28 19:52:29 +0100;Fix navbar
+88b583fd201d25befb9dd289be0a669fa08bfab0;2018-01-28 19:56:44 +0100;Fix card-header color in home page
+a63d9f46718d05af34e9a3e193fac58f53d2d5f8;2018-01-28 20:58:06 +0100;Fix route selector and refresh selector
+f9211bb2976e7d246093b5716c423bbad2a3f062;2018-01-29 08:24:27 +0100;Fix Tabset by using ng-template
+4b6937437e5c4d56c63c626e43c8f567f4d7bf72;2018-01-29 08:24:52 +0100;Fix color for card-header, to be consistent with other colors
+b366a941db5993daf1e1247b32eb8d54c75d1a87;2018-01-29 08:30:13 +0100;Use ngx-cookie instead of a deprecated angular2-cookie
+5dd5e432ce1a52ad149ac744486e7b1c08df8dce;2018-01-29 08:34:23 +0100;Polish
+056e24f069264b2a05e45b164d3b6f1817bea26c;2018-01-29 21:11:23 +0100;Fix lint
+f537c18fd7e77460c331021a7c6cd1ecd5d5ae98;2018-01-29 22:53:15 +0100;Fix tests
+f193f3b6538154d18e96f73506165e6ca9585be8;2018-02-01 06:39:39 +0100;Fix yarn test
+d24c69908511080db9a8d74f5fe1ce8aefcb2ed8;2018-02-01 20:32:18 +0100;Polish
+18a69a1fbb487538f588528222bc0be135b3da16;2018-02-06 15:38:28 +0100;Merge pull request #239 from pascalgrimaud/upgrade-angular5
+f35fafa81f599f4e15fe118248f79a1f4b96b970;2018-02-06 17:21:07 +0100;1Mb is 1024 bits
+0c946b4d5a6146f13254c4abeef270e5388b0d1a;2018-02-17 18:38:09 +0100;Fix refresh and route selector
+014ed87d7bf174ca6cc1a6efce7b732905922593;2018-02-18 09:34:29 +0100;Indent
+ae1ef400f0229fc1967b0c21ad86b3b91982f736;2018-02-18 10:33:44 +0100;Remove link to register and forgot password in login page
+e30cf94b8895f3fc36b38df8ad2fb39fedeecdb8;2018-02-24 23:08:30 +0100;Merge pull request #240 from pascalgrimaud/develop-fix-selector
+a468b4557742e723d2ba8cb9c2356286cb797b89;2018-02-24 23:08:45 +0100;Merge pull request #241 from pascalgrimaud/develop-sign-in
+50e6ae4875e53360d23cfc55fb52987e5b7de232;2018-02-23 07:55:41 +0100;Start the migration to Spring Boot 2
+bc89597a62adf3223190ef392cbea2be7bf1a523;2018-02-23 08:28:34 +0100;Fix roles in configuration
+3214313e99b166220646e1ab5ba0f68b78edf6a1;2018-02-23 08:28:52 +0100;Fix Zuul Routes
+474dc47d174a7b2f7d4075608c5aa77a36583396;2018-02-23 08:42:57 +0100;Update the user password configuration for Heroku
+35e4c857eae76989c0851d4cb4a3366c336ceb59;2018-02-23 23:39:48 +0100;Fix tests
+e2fd40fef418e0dd7c3d4ff63f48ae9a3eaee6d1;2018-02-24 12:36:48 +0100;Polish
+36850d7c84392469401540f3a327bc2f04bb5ca1;2018-02-24 12:42:05 +0100;Update config to spring.security.user.*
+8bbdcad545050c09c9f809f0e056b21f1c774e77;2018-02-24 23:20:27 +0100;Fix OAuth2 configuration to use jwk.key-set-uri
+b3ad30e9a1d0b998ff2ccccf6bbb92410311015f;2018-02-25 00:02:50 +0100;Remove jackson.serialization.write_dates_as_timestamps property
+3a07be4dda04189ed690489eefb3f6dd761d4b9d;2018-02-25 10:57:48 +0100;Remove console log
+b6dc217a24f87307da2ccb29214a3b4b7275a7ec;2018-02-25 10:58:08 +0100;Update to Spring Boot RC2
+43baa32b375bf9eb14da64a8607ea393676c4943;2018-02-25 11:38:17 +0100;Use spring-cloud-starter-netflix-spectator 2.0.0.BUILD-SNAPSHOT
+e05b2ff9f3bee803a5a28cb3a739ccbab84d1860;2018-02-18 10:13:18 +0100;Add selector to home page
+3cf7869b9116fd4431aa3c4bf251f17b26ef969e;2018-02-25 16:23:15 +0100;Fix Health page and Health modal
+6bff2eb0829e84d6a5fd35c263619dab5fd9141d;2018-02-25 16:47:31 +0100;Rename app to Application
+cc77fbc9413de9d64519a77d107d997f4b783bc9;2018-02-25 17:16:40 +0100;Add default values for eureka.datacenter and eureka.environment
+0c45e01f3ddbbcd66ff5c769f10b2a991c0da213;2018-02-26 22:17:11 +0100;Update jhipster-dependencies
+fd196444a783869dc0f70099b876e95e68bfa916;2018-02-26 22:27:01 +0100;Fix configuration page
+181307eaa032164d803040dc0be89cf9b1551004;2018-02-26 23:22:33 +0100;Fix configuration page for Spring Boot 1
+931a228bd77f8afeedf28f046cb02a9d29aeb1b0;2018-02-27 22:47:42 +0100;Merge pull request #244 from pascalgrimaud/develop-spring-boot-2
+fff3348d46fd5fd52980561e0ad4c0a33efd3f9f;2018-03-02 14:04:08 +0100;Fix configuration for OAuth2
+d6f370c2b71f621679cba903e99b1106fedf8aea;2018-03-02 19:57:33 +0100;OAuth2: remove deprecated properties
+e9a7efcc425ffca55a9383643ba5ac0cf316a859;2018-03-03 15:20:08 +0100;Upgrade to Spring Boot 2.0.0.RELEASE
+356b92077eaaf04d900011bbb921ce2314dcfc03;2018-03-03 18:23:00 +0100;Make the health page compatible with Spring Boot 1
+d59385243b19fb2d8ffa0f5c77ef0ec26f5773a3;2018-03-04 15:48:26 +0100;Merge pull request #249 from pascalgrimaud/develop-fix-health-page-for-spring-boot-1
+81c6ab23ab997edb7efd5c187b2fa00c36ed9075;2018-03-04 15:48:43 +0100;Merge pull request #245 from pascalgrimaud/develop-add-selector-to-home
+454a835d414ddbd4b39e5724474aef7f691afe57;2018-03-04 15:49:04 +0100;Merge pull request #247 from pascalgrimaud/develop-fix-oauth2
+39befe3fa1a6a00872e6ae975e468f319406f659;2018-03-04 15:49:22 +0100;Merge pull request #248 from pascalgrimaud/upgrade-to-spring-boot-2.0.0.RELEASE
+88ec7b58c1362c8b541976d73cc88d713cf79d4e;2018-03-04 01:23:51 +0100;Migrate to latest code of generator-jhipster
+b4bb343f848e2b75d8cf6cde4da8d18139e3ab6f;2018-03-04 22:04:50 +0100;Fix some issues, to return responseType text
+7fbd1317b436d555c3e1dc3df8207339f846bda4;2018-03-04 22:13:48 +0100;Clean import and use Rx/Observable
+b1716284b7c97be00b74c8aaa9a7002526d13742;2018-03-04 22:21:43 +0100;Launch prettier
+ed27491b2c9ca92ebd7afd8e6c991ef0c782133b;2018-03-04 23:12:04 +0100;Clean import
+77717196888542577da09be3edc27daaaff96f4e;2018-03-04 23:37:43 +0100;Fix selector
+f2ee86b9e962a499c135d53003495db6bc5b5510;2018-03-04 23:42:40 +0100;Allow management logfile
+4b554ad647cef470846a2e15b69fde6c7d41a1e8;2018-03-05 19:31:30 +0100;Fix configuration page
+dd33fc70f9be4749b8b72067dcebd73f9c9d705f;2018-03-09 07:54:32 +0100;Fix compilation in prod, and move filter from html to component
+97883d07ae7fb8100510dc4eb141701c2a045bfd;2018-03-06 12:12:20 -0300;apply code conventions
+2b92175cd18479e27eaa3fdc5dc221ca097f9b27;2018-03-10 14:08:24 +0100;Merge pull request #251 from pascalgrimaud/develop-http-client
+107fd7b40901babad12918f7c04bcc43b4eb1182;2018-03-11 18:36:53 +0100;Merge pull request #252 from Zalimben/apply-code-conventions
+2c6ff90c641bf892ba3db21e3e514117f3318d6c;2018-03-12 00:38:41 +0100;Fix ngOnDestroy for Home Page
+61755eace318901ea65c13bb9d735cd67946ef0b;2018-03-15 08:21:03 +0100;Fix yarn start and improve webpack configuration
+9502bda7d5129cc171a5507300916107148c8048;2018-03-15 13:03:24 +0100;Merge pull request #254 from pascalgrimaud/develop-fix-webpack
+78fec1d86d50f47bc3d3275d62289c86056eeb24;2018-03-15 13:03:34 +0100;Merge pull request #253 from pascalgrimaud/fix-ngOnDestroy-for-home-page
+3c2ef2e1c4feb1023afa7498af7d2c3c7989cab2;2018-03-15 16:08:18 +0100;use the latest jhipster-dependencies
+b04b52877ad53777c7121098e6a91203f1926dfc;2018-03-18 21:21:47 +0100;Fix Admin pages for OAuth2
+063bf025e05cb95492b97534e1f04ad22523827e;2018-03-19 22:34:54 +0100;Fix Swagger for OAuth2
+51035608f0ed232ad0e7bbef02ff6c9d87c53737;2018-03-20 13:57:06 +0100;Merge pull request #257 from pascalgrimaud/develop-fix-swagger-for-oauth2
+8effd5f7648d37cc3e63117a369a21a5148c1fca;2018-03-20 13:57:28 +0100;Merge pull request #255 from pascalgrimaud/develop-fix-oauth2-admin-pages
+f70cd46eeac48f68007735f52ef48e8ae4d10255;2018-03-27 15:16:59 +0200;Fix local Docker build
+3b4a6e3076a2287c01556b523e5df563a662fdfa;2018-03-27 15:17:19 +0200;Upgrade to the new jhipster-dependencies
+a7d24641de4daa8a3179ec9603b76cfd4ec93771;2018-03-31 10:21:07 +0200;Fix Webpack Warning and upgrade some lib
+688056214cb42b17a862e12f4fc9846f18b47a96;2018-03-31 10:32:23 +0200;Add security methods checks
+1dc4772b522ac11977840d21eaeb15a7accd5eba;2018-03-31 11:23:06 +0200;Merge pull request #258 from pascalgrimaud/develop-fix-wp-warning
+1c4865d245e7a12468b548ba733e1bc679fb831f;2018-03-31 11:24:06 +0200;Merge pull request #259 from pascalgrimaud/develop-security-checks
+c1a0c99ee92021181815b7be28bade470dd24af5;2018-04-06 00:06:56 +0200;Upgrade to Spring Boot 1.5.11
+23440b2af969062d27d0fd8311631bc5c980a1dc;2018-04-06 00:07:22 +0200;Release v3.2.5
+77db4161e0abf85fcadf9cfe5859754cd103cc19;2018-04-06 00:24:04 +0200;Upgrade to Spring Boot 2.0.1
+c7df1479cd00b47adba2270703f9f8513bb99470;2018-04-06 00:54:19 +0200;Revert "Upgrade to Spring Boot 2.0.1"
+791988c4cb7d945b8d9fe9ff22d28a7e0811b639;2018-04-06 00:54:45 +0200;Revert "Upgrade to Spring Boot 1.5.11"
+bf7f192adbd1460c9025a134fcc3a1285f2035ed;2018-04-06 00:56:10 +0200;Release v3.2.6
+5e18627a5bcf12e4b2b87de9d26be34ff17af888;2018-04-20 17:06:21 +0700;Only forward metric log to logstash
+2685d9f47e2746d0117597b4fed12d4c732c01cd;2018-05-07 17:24:08 +0700;Update log config to latest of main generation
+984c3f8eeddd7e12fa3c156444ddcf8cafee29af;2018-05-07 14:12:40 +0200;Merge pull request #263 from coderla/master
+1cee80a175e164f0c1f3b587f9facf213fa25a65;2018-05-18 09:16:55 -0500;Set node and yarn version in package.json engines
+f8eb3e1d77c5d34642769f2472bb9a875956c324;2018-05-18 22:55:28 +0200;Merge pull request #270 from jkutner/master
+62efc0a92ed1fd6e5dbcf41cf6ee0bf4e69075df;2018-06-14 18:49:40 +0800;Matching with other micro service TokenProvider,
+67863a36018ed6f03418c68b52d26b0f477dc858;2018-06-15 09:03:46 +0800;generate secretKey
+15b29434ad457441e1cb2228a70640fdd89effab;2018-06-19 21:40:28 +0200;fix encryption screen
+8532a55afcb69680dccd2d127c75030c8b371a3e;2018-06-19 21:45:37 +0200;Merge pull request #272 from gemron/patch-1
+e72312f674ba2305efd564422a7d47f97bc7bacd;2018-06-19 22:13:34 +0200;Merge pull request #273 from PierreBesson/fix-encryption-screen
+1b5a5850dbb4fc726dc8475a85cc5b1ccd9627cf;2018-06-19 22:30:09 +0200;remove unused import
+c8c73b09cc56f255108f094038841edc77901852;2018-06-19 23:19:47 +0200;Quick upgrade to JHipster 5 with the new stable Spring Cloud Finchley
+e4dd8869a28763b8a28cae581b4e380627803725;2018-06-19 23:27:19 +0200;add version for Maven frontend plugin
+12b028507fc7b4e6a215d787e52468b012eee5d1;2018-06-20 00:54:58 +0200;Revert "Matching with other micro service TokenProvider"
+1d68219b3f31927585d8fea38d518668bb2d9622;2018-06-20 10:35:44 +0200;Merge pull request #274 from jhipster/revert-272-patch-1
+5ce2dae272ba2643b0116b5af119a7adeac12505;2018-06-20 10:40:11 +0200;Use base64 to encode the JWT token
+454f1d4b160f1f3a74e0de51fbc036cdcfa74ebf;2018-06-20 11:23:35 +0200;Merge from develop branch
+4851b43a2f9b02fb08e334a71c49411ce7784a15;2018-06-20 11:34:29 +0200;upgrade to Yarn 1.7.0
+f8735e41cb5cbea93040b29185822a2ddb5b14f8;2018-06-20 11:49:31 +0200;Configure the default JWT secret key and add a warning if it is not modified in production
+32e522bed3384d6d824ee8163c2d3f013614ef81;2018-06-20 11:56:34 +0200;Merge branch 'develop'
+103990378059c0be2666a6fd1c5dd4d38204a20a;2018-06-20 12:02:13 +0200;release v3.3.0
+6d13c4dced0fe1b07aaa4ebbc06fe18146ac3577;2018-06-22 17:47:32 +0800;Fix the problem that 'command run webpack:build not found' fix issue #275
+1ed928922c1c0f091e1218e80d28145a22fa393c;2018-06-22 12:04:36 +0200;Merge pull request #276 from xiaoshao/master
+d9776f569074ef982361a66fa72075f7c2d52237;2018-06-23 19:36:38 +0200;fixing UAA management proxying, first working state
+0a7c2f1684540665fdc47c95264c86ca6c3a0ce2;2018-06-23 20:27:01 +0200;implement client credentials flow for management endpoints to UAA microservices
+59deb093b9e03b64beaf7fd2032b873d50107a7f;2018-07-10 11:54:38 +0200;switch to composite mode for defining the configserver sources
+819921bbde5ae271f426e10cffb53fbdb89d7b63;2018-07-10 15:09:25 +0200;display multiple composite configuration sources in config server page
+a5890008bc7b81d04a7759550db854748ba898dd;2018-07-10 15:10:57 +0200;remove native profile from procfile
+b9a278cce531b2314763559d5fe667383e045799;2018-07-10 15:15:04 +0200;remove native profile from Dockerfile
+e185e5ec4932b62519710ffffb70fa6d98b6c234;2018-07-10 15:36:39 +0200;polish composite properties
+a90679b702bad420a60089cfcf1a489081eb318a;2018-07-10 15:50:01 +0200;display config source properties as json
+d64d1cc6eb16b5e0db135c7a074c335e07eba92b;2018-07-10 16:49:14 +0200;Update prod configuration for configserver (#1)
+2f7b3c5bc6a6daafe40350164f2cdad680ac1b8a;2018-07-10 18:08:04 +0200;Merge pull request #282 from PierreBesson/configserver-composite
+44494b14c94f413624db5beba20d957b1abe736a;2018-07-10 18:42:30 +0200;update pom version to 4.0.0
+44b6366e0dae559d2a15fd325057ea0a31376bf9;2018-07-30 14:45:49 +0800;fix issue with MetricsMarkerLogbackFilter
+4f15563ef1b408340d7b1ead1c7efb5d88a0a34b;2018-07-30 15:07:29 +0800;set marker
+823ff241d8786be539b19182d9fe66af9becbf85;2018-07-30 16:17:18 +0200;Merge pull request #284 from lmbai/master
+73acdb638f2ecf255bba82c6cf95ed15d2bf2df0;2018-08-04 11:13:18 +0200;Upgrade version in package.json: 4.0.0
+6a87ddfa01d200da9f9c54643baa4cfa611ee091;2018-08-06 18:14:19 +0200;Merge pull request #287 from pascalgrimaud/upgrade-version-package-json
+3ed70347a001128979194753f742e92df4db1945;2018-08-30 14:41:25 +0200;Update to the new JJWT release, with the base64-secret token
+0f6c9a7dcdd73aa738b0056b5a3a0674ad2907b8;2018-08-30 14:56:54 +0200;Release v4.0.1
+866664cecf992e4169d2d6505f6a41a846342438;2018-09-06 17:28:46 +0200;check for base64-secret
+824a31e510d45e49c27d80b2feeb041375c74ea8;2018-09-07 21:21:04 +0200;Merge pull request #278 from xetys/uaa-mgmt
+0418e5e3ad77e5ab8ec3edab7de1c444c74e3740;2018-09-12 17:54:28 +0200;switch to https url
+b16290811cda20b67899fd49fb4b057b7040c5e7;2018-09-12 18:58:25 +0200;Improve secret key management
+4d3a68adcd9033e18c85276abb428b08ba831d4f;2018-09-12 23:54:21 +0200;Force the user to configure a secret key
+39dfbc7621595b645c5a8f2a376a3ce0ba6e55d7;2018-09-12 22:33:31 -0700;only fetch registry when using uaa
+354092c6ac1b00af407bb8cd280fe97614489128;2018-09-14 17:02:57 +0200;Release v4.0.2
+9ba34559b2b629d21d69618e26ebbd8bc4724c50;2018-09-17 11:00:49 +0200;Merge pull request #293 from ruddell/disable-fetch-registry-jwt
+3c8ed6df2b7d5c9662b99e1c01a2278b233c2b9c;2018-09-17 11:01:31 +0200;Merge branch 'master' into develop
+58857ddad04242ecd21826ebb74b274f86de5185;2018-09-17 15:53:36 +0200;Release v4.0.3
+bd7710e094a286d0cd6612db3f5d712406d6bdf6;2018-09-20 12:46:25 -0500;Optimize default Java and Spring options on Heroku for best boot time
+ef156904f624b3f8fff9dc7f1057a0b1b12c2bf3;2018-09-20 20:28:46 -0500;Merge pull request #297 from jkutner/heroku-java-opts
+ba9b92fa4f25dcfa3170e6466d79aeb935bc9f5b;2018-09-28 21:24:38 +0200;Fix Swagger UI for Microservices
+69b4ace941c6c366653a621fc4a81c5d06abf1ed;2018-09-29 18:42:20 +0200;Merge pull request #300 from pascalgrimaud/swagger-fix-access-to-microservices-gzip
+5ffb05b45f7caabceda423b148a0d87e785352b3;2018-10-05 09:31:17 +0200;Add curl in the docker image to fix Problem to configure docker health check #301
+411abec1e02843c399bd8a06a2355748f90c9f1b;2018-10-07 09:38:37 +0200;Fix decryption in Encryption UI
+9d1bcea9443807d84126e6ccbb0c44102b7e9c77;2018-10-07 12:40:28 +0200;Merge pull request #302 from dami1c/patch-1
+7ed11d43bd79da08699b30934fb11f5d06b7fc07;2018-10-07 13:59:59 +0200;Merge pull request #303 from axelhodler/fix_decryption_in_ui
+75e9fd131b6f8dde6e05eefc3fc2b8be888b1309;2018-10-07 14:03:47 +0200;Release v4.0.4
+3c0b4fccfeff6dcbe73d03a95125b9a62d80ef81;2018-10-10 18:09:50 +0200;Increase peer node read timeout
+e2271af35ee651e7a78474150858cc6a8af6ff44;2018-10-12 11:31:06 +0200;Merge pull request #304 from pascalgrimaud/increase-peer-node-read-timeout-ms
+5d9c88e6da7e05a924f762554f550d7184504a42;2018-10-15 07:45:51 +0200;Fix refresh at 1st display
+07bd9c2b16e9fdff6c1759b24ab6b017cd099ad0;2018-10-15 13:49:24 +0200;Merge pull request #306 from pascalgrimaud/fix-refresh-at-1st-display
+125c1929d9a6162385b0beff12f30314bf0f2caf;2018-10-15 08:27:41 -0500;Updated app.json to use jhipster registry buildpack
+3622435408f963c3fa428d4941816bc0f4326ae2;2018-10-15 16:47:32 +0200;Add JHipster Code of Conduct
+3918a567738cdf0ee78adcfc19536eaee3c0a7ef;2018-10-15 16:47:36 +0200;Merge branch 'master' of https://github.com/jhipster/jhipster-registry
+de319531722fa3dd3743b122baacfd6c08563419;2018-10-15 21:13:48 +0200;Release v4.0.5
+c3caf2eff3e8503cfaaa53b2dd21439312d25e77;2018-10-16 11:11:19 +0200;Merge pull request #307 from jkutner/master
+86052b044341d526cb1bd25c9d5815e8c2b79e36;2018-10-16 11:12:52 +0200;Update version and buildpack
+8c21c43652afbfb5dca238e9bfb998bbf798e340;2018-10-16 08:10:43 -0500;Rollback to registry version 4.0.4 in app.json
+b33c3ee518d04070214f4691548099b626284ef8;2018-10-16 15:16:23 +0200;Merge pull request #308 from jkutner/master
+911f93b3c5c5b8db55cb491d7580b3933c1104e2;2018-10-16 15:23:38 +0200;Improve documentation, to configure the logfile
+3cbc5d6c9640a7bf57e56ef962ce9cbceb67e441;2018-11-02 14:38:13 +0100;update to the latest JHipster dependencies
+7130a02588a97859b6002b6dffa1e6b401703741;2018-11-02 15:08:38 +0100;JHipster release v4.0.6
+8c42841d59edd37c63dc0ccfd4748295a136c431;2018-11-02 15:24:10 +0100;Upgrade to Spring Boot 2.0.6 for the plugins
+1103a66c0d5629b250aedd407ae821adda4ec1de;2018-11-02 12:55:04 -0500;Update app.json
+0db473de06b4615cf0cfb0f73f3f2c79e189a26d;2018-11-02 20:11:25 +0100;Merge pull request #310 from jhipster/jkutner-patch-1
+9924a73a1abf1a3979044c54e06db67f0a36b0c1;2018-11-13 19:46:58 +0800;fix-metrics-threads-view-error
+4dbed342de305fd53f62983b72cdeb08be4acac5;2018-11-14 14:51:54 +0100;use tokenServiceId from JHipster properties instead of hard coded string literal
+bebfdd21d888d8f74efbc3e76c47dcfbbe4170c1;2018-11-15 17:09:04 +0100;add uaa as default token-service-id to config
+027ff719ba2c7fb37188deb9bb440520ebb472c9;2018-11-17 23:46:46 +0100;extracts the 'refresh now' button on top
+88a375b3d1991eb1aa1e8279d995733d881fab3a;2018-11-18 19:21:20 +0100;Merge pull request #312 from bro0k/master
+4eac15312faefe64634f05fb99b80c14900ecb4c;2018-11-17 23:46:46 +0100;extracts the 'refresh now' button on top
+c992830840a3d987b2061f9cc0c2167599b01a47;2018-11-19 10:52:32 +0100;fix unconsistent button sizes
+cfc5f8635321b76d3418254a602882dc3c3c73fa;2018-11-19 10:55:46 +0100;Merge branch 'refresh-button' of github.com:xetys/jhipster-registry into refresh-button
+00db36611da5fc7aaf9d5372aa90f2465d80c0c4;2018-11-22 10:51:14 +0100;Merge pull request #314 from xetys/fix-313
+6175c2cc2739cf1ac25cb2484c858cdcca0bf08b;2019-01-01 18:33:17 +0100;Update license for 2019
+064970bb737744c38c0efcddc7599d43fa891ad1;2019-01-01 18:55:48 +0100;Merge branch 'master' of https://github.com/jhipster/jhipster-registry
+7fdc9e2a7621a8fd0a59aa7afa80331477c513b0;2019-01-08 07:15:02 +0100;change sensitiveHeaders in ZuulRouteDTO
+7d82a371550bfa60b374bb2676977bc2b489e0d5;2019-01-10 10:14:38 +0100;chore: update travis.yml sleep value
+79c90454163cc7c7d82c5cd5697b459fdf7e3248;2019-01-23 14:04:38 +0100;switch to micrometer
+6c939c7a2eabfa604d19bf0777e4aa3788696373;2019-01-23 14:07:27 +0100;update jhipster-dependencies version
+c2f81b3d4a272337d905e49132badc240b76ba7a;2019-01-23 14:13:30 +0100;remove unused function
+3f7f8a1cf721e97e68d177b3182bcf627b8b4da6;2019-01-23 17:47:28 +0100;fix bug if metrics.endpointsRequests is missing
+71a2e0690540152cd48bd9bad417e33d94c9797c;2019-01-23 18:02:38 +0100;fix failing test
+c922064c3b9478f7711bd797db860ee5dc3edae2;2019-01-27 16:37:28 +0200;move oauth2 attributes to config
+e8510dc2e12903146ad4013425f09cd7276d2c7a;2019-01-28 15:19:18 +0100;Merge pull request #325 from clement26695/switch-micrometer
+d125807b3a38e4320ea9400347405421d647d145;2019-01-28 17:15:05 +0100;Release v4.1.0
+ddb13c7b40d3e1ab3454bf7b10ef668e3e28d63c;2019-01-29 10:34:58 +0100;fix metrics empty objects
+13ab64ec659796b00e5b02dbd2bb96c61108e99f;2019-01-29 11:08:20 +0100;Merge pull request #322 from MetalMiner/patch-#292
+0c10393a8ee54743966c7f4835fd8cf48ab84544;2019-01-29 11:11:35 +0100;Merge pull request #328 from clement26695/fix-metrics-empty-objects
+f2f3ef04cb26f7e45e04978d09556b71378ae624;2019-01-29 15:44:15 +0100;Release v4.1.1
+b5aa20fdc5e36ed81c7e52dabb50d6c64fb29b4b;2019-01-31 11:16:05 +0100;moved getActiveRefreshTime() to template
+66e30324d479b8f2c6c6070f12dcf298b633ff4c;2019-02-12 17:10:51 +0100;Merge pull request #316 from xetys/refresh-button
+4fae924fdf5afd35be575ada214993f6d6a89602;2019-02-14 22:17:47 -0800;secure eureka and config api paths for oauth2 and basic auth
+c038762350c412a8fe4bd98e06d7e0fcba91ecdc;2019-03-06 16:12:05 +0100;Merge pull request #331 from ruddell/secure-oauth-api
+0d339c58e5f3a53747c7e3a5502561ef50cd3ba4;2019-03-09 12:52:18 -0700;Upgrade to JHipster 6 and Spring Security 5.1
+7885dc9b00b25218d6d76e48287d2dbead52ebcc;2019-03-09 15:30:20 -0700;Fix prod profile
+bcf22479b95cd4839e490ab0a7384153d2dd5154;2019-03-09 16:00:16 -0700;Add snapshot repo
+01b110ece04edf9dde7fa4568bf09d2dc32b3e1f;2019-03-16 02:52:32 +0530;Fix CORS configuration integration with spring security to ensure it's applied before all web requests
+76a6efc932ef0a9b34ff0dad83653d422bb301c5;2019-03-18 19:25:08 +0530;Enable Cors support in Oauth2 flow, add deny configuration
+9174906f36b45369a5fc8ad59dc33c2a65e391ae;2019-03-18 20:13:11 +0530;Enable Cors support in Oauth2 resource server
+41efd4facd2d2b80746d0a5329d15ad4d4cbb18e;2019-03-18 11:27:47 -0700;enable basic auth for OAuth2 profile
+452728a168337d22286225832f254007ba939da3;2019-03-25 08:33:59 +0100;Merge pull request #337 from ruddell/oauth2-basic-auth
+2938ed7ac9139cd15338dbe6b183d41068298129;2019-03-26 12:48:13 -0600;Polishing
+a0348d32af2e68b15ba3f35eab517a2f641d3498;2019-03-26 13:19:56 -0600;Oh, YAML...
+1e70473ecaefef6dc5d19c0a55180aeee2165850;2019-03-26 13:36:47 -0600;Only enable AuthorizationHeaderUtil with OAuth profile
+bd28dfbab6f8a419eb60609b43ddd8622128556b;2019-03-26 13:47:20 -0600;Only enable OAuth2InterceptedFeignConfiguration with OAuth profile
+58d8e007dca524f9a83bb25a044db8761788ad3f;2019-03-28 16:24:47 +0100;update jhipster-dependencies and spring-boot versions
+bd0e74d7b04ee6d031e0f8f15c6278a8e0aafb00;2019-03-28 16:25:55 +0100;fix: don't break metrics page if some gc information is missing
+b66d07c923593f176bcdb15835ac4a23bfe1d453;2019-04-01 15:05:41 +0200;Merge pull request #335 from vishal423/enable-cors-eureka
+5f3eb5aec3067945c4693a28e33ab8e7b7b941e5;2019-04-04 11:31:33 +0200;Merge pull request #327 from Segasec/move-oauth2-attributes-to-config
+4fc388fa3c53a51931c33426d4f26cf4ae6a8ddd;2019-04-04 11:51:26 +0200;Fix aspect
+47d4b7aee069cefa3f3bddd69553960f6fa73550;2019-04-04 11:51:39 +0200;Fix deprecation warnings
+04f3238054c367ea588f62d62eec15d9211ecb92;2019-04-04 13:30:42 +0200;Revert "Fix deprecation warnings"
+ce20a18e43981f69316115efe0486e35c9ab82b9;2019-04-04 13:49:09 +0200;Merge branch 'update-jhipster-dependencies-version' of https://github.com/clement26695/jhipster-registry into clement26695-update-jhipster-dependencies-version
+93898ee0cf7c4ac1ac1c42460cf1ae86e1d89b6b;2019-04-04 11:51:39 +0200;Fix deprecation warnings
+a41fe020a5fe26c4bd16a16e8d5a774a55e520c5;2019-04-04 14:26:24 +0200;Add snapshot repository
+3192981f0932cdabaeea96d56597df1ac04a3313;2019-04-04 14:35:28 +0200;Merge pull request #334 from jhipster/spring-security-5.1
+d6d0edd8c7f0cd532a3121570429fe6a354b36b1;2019-04-04 14:47:00 +0200;Merge branch 'master' into develop
+36c57451e8136ec71fa79754ab1cee14ecb8cbe6;2019-04-10 11:09:53 -0600;Fix OAuth 2.0 Login
+9acba388f58d111074501da558d3632d93426f3b;2019-04-10 11:10:14 -0600;Remove files
+83d9cfc9b16420d260033b6b09371307940a7918;2019-04-13 18:59:50 +0100;Update apache maven to 3.6.1
+36848c77d72be289f879a81c8f8d7fd9902a73e3;2019-04-13 20:13:22 +0100;Fix maven repo
+15fdc7a4abb5ace34a13177bc9f7ae48ad68608b;2019-04-13 22:44:39 +0100;Merge pull request #345 from DanielFran/mvn_3.6.1
+e3d87679c2fd0093440173fdce323bd051c563dd;2019-04-22 23:46:18 +0200;Upgrade to JUnit 5 Fix #9498
+93fe8d1b34d6a6d03a6466ef7309dd19f65160af;2019-04-25 10:02:56 +0530;Upgrade to Keycloak 6, among other upgrades
+f452a58c6d8e02813a494cb267409b05d0001b9b;2019-04-25 11:27:24 +0530;Change app to jhipster-registry
+baebe244df3c4666f797be9fdf059bec0b244db9;2019-04-25 14:05:06 +0200;Metrics: Remove invalid character from uri Fix #332
+984e4f42e62bc03e2345d2553548e97b1b9540c5;2019-04-26 04:02:22 +0530;fix oauth2 login issue
+d77776e32883f09c5b6486ddda284087e9525959;2019-04-26 10:47:11 +0200;Merge pull request #346 from juliensadaoui/junit5
+579621bd0604f0b5457cc2e8476c4844d1b013b8;2019-04-26 10:47:45 +0200;Merge pull request #348 from juliensadaoui/fix-metrics-route
+b2b1614864b45043a064c05f4b17f9959f692933;2019-04-26 17:37:44 +0530;Fix log message
+10f6bc51c26a17b9964877bcabc97f72006401d7;2019-04-26 19:44:54 +0530;Fix basic auth login issue
+2eeac55c0402c250958423b96ff6d9785fbe7c35;2019-04-26 23:24:06 +0530;Fix basic auth and logout
+c8527adc5973fa7d358fc80c17a7ab191d7510e3;2019-04-26 23:39:37 +0530;Fix client compilation
+623a44610bf4875ba704cd2bc7e548d6eb40a4db;2019-04-27 09:45:10 +0400;Fix LogoutResourceTest so it activates oauth2 profile
+f13136580865019b9b00f5799aaa2ee6e303d49d;2019-04-29 07:28:14 -0700;Fix OAuth Login and add global logout (#352)
+9987e859e31e18ca91c2fb60effc9b4ff014af7b;2019-04-29 10:36:43 -0600;Update client dependencies
+fc55320e50f23adca85e833f72ad946bdb980e54;2019-04-29 11:14:04 -0600;Update dependencies and sync with JHipster 6
+186d80456cb4c59678ea7a0c37e26fbbdcc8e039;2019-04-30 11:13:03 +0200;Merge branch 'master' into develop
+001f4de3dcb1d28f93eccb23f87f5cf22fc4e239;2019-04-30 11:13:18 +0200;Merge pull request #354 from jhipster/sync-with-jhipster6
+1b0e3af5925443d159ba89049b4c25934461b9a6;2019-04-30 11:14:02 +0200;Merge branch 'develop' of https://github.com/jhipster/jhipster-registry into develop
+1005b0f142ab3e15309790684aa59d82e7fa8bc5;2019-04-30 11:21:18 +0200;Fix pom.xml
+acfb5fca72191957e0e55985b8dfb7a1d51a1f56;2019-04-30 11:47:22 +0200;Fix lint
+947310d7e2c7f4a19f40a671eb9f9952e348e913;2019-04-30 09:56:41 -0600;Fix UI build process and upgrade Font Awesome
+81be59b3cf9871fbe4d94d407de9f561175de24f;2019-04-30 10:39:17 -0600;Fix whitespacing and adjust login modal to match JHipster 6
+6c2bb34fe39f5ac092aef9fbc84fb2034edbea58;2019-04-30 10:54:37 -0600;Fix code listing
+0ab4a5f0fb7a16bf325213ff718c5c89f9772320;2019-04-30 10:56:55 -0600;Disable webpack logging for CI
+93bf1707076d886bfbbc9003a01578cc8811cdfb;2019-04-30 12:22:29 -0600;Fix webapp.manifest
+f6f8f6207a364ca65fd5f6f29216cf6747ee59d3;2019-04-30 12:37:01 -0600;Attempt to fix npm test
+b28493cecf97255e9cad32279523b017564e58a6;2019-04-30 16:44:34 -0600;Fix npm test
+174c1831d4ed5b10ea11feb22e328e2f2fa76079;2019-04-30 16:50:35 -0600;Add postcss config
+515a959c92ec149cad2b58ccedf5ddbd5ecda92a;2019-04-30 16:58:52 -0600;Fix Dockerfile
+53bf087abfbcd24aea5198b4cb2bfd12e60b2493;2019-04-30 17:11:49 -0600;Replace apk with apt-get
+49beedd9e5df0fe75dcb5328f733d53d3cc4595d;2019-04-30 17:59:05 -0600;Revert attempt to use Docker 11
+5ec8d34b80c011fcd6206d704fedda29223d29be;2019-04-30 18:34:03 -0600;Attempt to fix webpack logs
+8dcbd25a310e335ce0aa424bd2106966627193c2;2019-05-01 06:30:42 -0600;Fix UI build process and upgrade Font Awesome (#355)
+7a7fa6eb1e1172fbb85dbf5b27cd3f875cb8e120;2019-05-02 12:52:34 +0200;Use the JHipster Dependencies 3.0.1 stable release
+25ef78bda3f19896706283d253c70842db3bb48b;2019-05-02 12:57:45 +0200;Release v5.0.0
+05ae311b1a23c41d142826061a0783f0432c5571;2019-05-17 17:16:18 +0200;put back io.dropwizard.metrics dependency to enable log reporter
+00e29bcfe21cbae25b76960994724a10ee330b31;2019-05-18 16:47:46 -0600;put back io.dropwizard.metrics dependency to enable log reporter (#357)
+7281d2e0e780f3f42ba95bc670509e62843aa425;2019-05-19 09:49:54 +0200;Release v5.0.1
+2d5b8fa50826a31bc7f1243d939d176f22ab3821;2019-05-19 09:59:54 +0200;Change version for develop: 5.0.2-SNAPSHOT
+fa3a8c25b9962a7fabe13696d0d71ddd43969357;2019-05-21 22:03:19 +0200;Set up CI with Azure Pipelines (#358)
+77ebbbc34bfc288feff0582c7048621273caa686;2019-05-22 09:49:41 +0200;add Azure pipeline badge
+6d1fbabf55824330554e62df26d7442480aebb68;2019-06-04 15:17:49 +0200;Use Spring Boot loggers actuator endpoint
+3fc55cf236743aa68751b9064e32e3ca918d80cc;2019-06-04 17:28:32 +0200;Merge pull request #360 from clement26695/add-azure-badge
+b8081920fdc12a35b1328c73fbec595a84e70e63;2019-06-05 08:12:36 +0200;Merge pull request #364 from clement26695/fix-363
+c84402ede602fcb075ca6c661c69b25883659247;2019-06-04 17:09:51 +0200;feat: changes loggers for all instance of the same microservice
+3ef1962033e66d08962b261b4022614d9ad3a4d7;2019-06-07 09:41:48 +0200;clarify variables name
+40530b529c008fd8593a9a3080075d3965eac934;2019-06-10 20:37:43 +0200;Merge pull request #365 from clement26695/feat-loggers
+5f6710fe7ba45f528b763594dca97fb51480d4ee;2019-06-10 20:50:17 +0200;Add missing icons
+f4c0107988bf2c8f50ac99f6608ad9a4220c34ef;2019-06-11 11:24:02 +0200;Merge pull request #366 from pascalgrimaud/missing-icons
+0b1bac277f1a6664d0afaba7f158c6612c54541c;2019-06-11 11:33:28 +0200;Release v5.0.2

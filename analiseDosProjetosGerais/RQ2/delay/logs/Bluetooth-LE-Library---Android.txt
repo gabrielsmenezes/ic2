@@ -1,0 +1,123 @@
+a738bcc38e6174cbed245a8471d77887f55fa7c0;2014-03-09 23:00:00 +0000;First commit
+ea0d9a6d72257ea6fc4096170465c5ead128fe80;2014-03-09 23:17:43 +0000;Trying to debug EIR parsing
+916dab0e7a51df944d17576e10988325b1a197ae;2014-03-10 00:21:29 +0000;This is mostly working now...
+cc18c86b80eab64170b6deaac4bfd69c66f548c7;2014-03-10 00:29:10 +0000;Made sure that the scanning no longer auto-starts
+827e3ba19c0faecfe47f141283a75999d60e275d;2014-03-10 13:07:56 +0000;Made the containers parcelable
+596d3309ba9bc078f3e4e7b8d369c5f22d55da3f;2014-03-10 13:52:05 +0000;Added classloaders to the Bundles
+4b2116c060f12eb951efa69dc380d0248b86cd2b;2014-03-10 13:56:58 +0000;Added details activity
+3086b2982d7ac8e69f35dde5f68822486a97b348;2014-03-10 16:22:47 +0000;We are now properly treating the sign of bytes
+1e112bc6efbd3d946672efcfea83de805d08caf6;2014-03-10 18:45:45 +0000;Expanded the details screen
+0400f11f594e733bd78b2730c494fd9599d4d31b;2014-03-10 19:34:53 +0000;We can now recognise iBeacons (need to check how correct this is)
+103df3e66e26cd4549640cdf4011fe6a87a6b9af;2014-03-10 19:38:35 +0000;Refactored generic byte-related code out of AdRecordsUtil
+4b92e544b10e0db449606de91b9f66cae172c511;2014-03-10 19:39:36 +0000;Made a couple of methods static
+222d249de886a7f19b9fd35f440a80b28135c69a;2014-03-10 19:41:37 +0000;The list will no longer clear once we open the details activity
+851c0ccf724151e862f391e92423a1229c16c738;2014-03-10 20:04:35 +0000;Started work on the iBeacon Manufacturer Data parsing
+39d7b9a88212f1b66379d316ec99090e681396a5;2014-03-11 11:29:08 +0000;Working on exposing the iBeacon Manufacturer specific data
+78c04568de7553b58acc77b7487bb3b10303875c;2014-03-11 12:57:39 +0000;Can now parse IBeacon Manufacturer data (need to flip the byte order of a few fields)
+cad6427b49c2e3594f875be63ee18ce9a1f098b7;2014-03-11 16:22:29 +0000;Started correcting the iBeacon data display
+cb6e9db082c307a0f9d58374fbea374d0125fa30;2014-03-11 17:08:17 +0000;Split the project into a library and sample app
+a631cf2f816d259b9443f1a6a0d06e9312753902;2014-03-11 17:33:20 +0000;Added timestamp to the BluetoothLeDevice
+d59f8dede07695124d4dfbc938c2e0f923b1c488;2014-03-11 17:35:37 +0000;Removed transient keyword from RSSI and timestamp variables
+b3399fa539ff424a8179a50c3bbc0eed3e6faf10;2014-03-11 20:45:18 +0000;Added some javadoc
+e21d05a9e00a947c7fb2ffc6202ba47b77da777a;2014-03-12 00:23:56 +0000;Added new icon for iBeacons
+f5b9d5e674cbd3f5b281ae6edef1cc6bc45ce8ce;2014-03-12 23:49:42 +0000;Working on the list UI
+09848838f2c566a8421294562d16e72c7121b809;2014-03-13 20:21:11 +0000;Added timestamp
+27c06208e1f6fce64476ca1c8e3ac4f21e159887;2014-03-14 17:30:30 +0000;Fixed UUID calculation
+8c03f29c32304551f263e6f52b0131505ca75ef9;2014-03-14 17:37:21 +0000;Added Distance calculation but it is off.
+f08a561e7e117d21505b98169f94210e14d60469;2014-03-14 18:00:01 +0000;Added proximity descriptor
+366f4139cbdf90baf022f167ddb5f508c11f854a;2014-03-15 21:27:15 +0000;Exposed timestamp
+7546813f1ba8855887df1694053ee07647a1f58e;2014-03-15 21:28:24 +0000;Added more information in the list item
+3f333df4971b24f413b80a7b0ae269c0844127a2;2014-03-15 23:39:19 +0000;Created an iBeaconDevice object
+bd57a59d5a3cdf3dfa31c6cb03ec824a651975d0;2014-03-16 23:13:23 +0000;Started using the new iBeacon class
+ad25dfc57cb7424cd462d55cde8407323974babe;2014-03-17 00:39:56 +0000;Started working on RadarView
+30fa8eaaee34d95bcf91b4c7db817390589c5892;2014-03-17 18:56:19 +0000;Re-jigging the list generation in preparation of sliding window rssi calculation
+83ee1eab6627bf9ef8b4d832d7ed391441ac6eb3;2014-03-18 15:22:13 +0000;Added running average for RSSI
+e2294ca926345f16b0f179b7e0d56e8d2cc4c446;2014-03-18 15:23:14 +0000;Updated the UI to support the runing average
+c4023bbd5de89bae4e173196c62cd0b47e17f9c6;2014-03-18 15:51:54 +0000;Removed RadarView and any references
+a5ee9dd3d4511a8c9d284f936caa9a04d63acb31;2014-03-18 17:07:25 +0000;Added the Gatt Services code from the Google Example
+9b6f9b1960a613788496fce22481bd009ec34acb;2014-03-18 19:42:57 +0000;Added an Extended GATT UUID resolver
+9872cd2f60ea3515cffdaaaeb860af74e877d2d5;2014-03-18 19:43:32 +0000;Changed the code to use the Lib bundled GATT attribute Resolver
+96af55a42b20decd7027c9940cae5a5ff177ccb6;2014-03-18 19:46:50 +0000;Moved the Bluetooth Class Resolver into its own class
+a0aa2596068c353bbfb6e1fa5ff4f2c24f9282f9;2014-03-20 11:45:02 +0000;Added some javadoc
+f30cb50f3c5e567e3a5870cf260280922f6dae2f;2014-03-20 12:28:25 +0000;Added some more javadoc
+df90eecdecaf0a0831ca496d17f64d1acce049c9;2014-03-20 16:16:39 +0000;Added Company Identifier resolver and updated UUIDs
+af22e1a7f7686bbf46c6339d1e12ffc6f16e61ba;2014-03-20 17:26:31 +0000;Added README
+f17ed8cf40f97edbf1b5e6f249e292f1e2f522cb;2014-03-20 17:58:07 +0000;Added a big TODO for later
+c4fa8392a83dd048f8af0e9ddb19b35a4a121fc2;2014-03-20 18:00:13 +0000;Added screenshot
+f608d610d55483399b3fc49f23bed8baa4305301;2014-03-20 18:01:19 +0000;updated README
+61b468178b07598ccdf20d18e2e3100efafc66bc;2014-03-20 18:52:02 +0000;Minor UI tweaks
+680a6302446af6834f4e17ed792ad30f07fb2ca1;2014-03-20 18:53:14 +0000;Added more screenshots
+9cd3b20899b2efb3a5fb4897b933548fb59fcbf7;2014-03-20 18:54:03 +0000;Made the iBeacon check more generic
+ab5b1f8641b63c4a49c5f204dfc332b64a5171b3;2014-03-20 18:54:15 +0000;data update
+6ef451fe05ddecd27d7f2f57d630446872f64f5b;2014-03-27 16:56:23 +0000;Updated Manifests for release
+e48397328854231987f4c852233c8567a50f9dcc;2014-03-27 17:44:55 +0000;Updated README and screenshots
+e207f1ae7344464d25cb8698e87b18fae0470049;2014-03-27 18:31:39 +0000;Added about dialog in sample app
+96df6d51fcbcbeffed7c9dd1eff6ad0a312f4af3;2014-04-09 15:53:41 +0100;Added share button to share device info
+df3e94538352ad7025550a0ea05562c9046d13b5;2014-04-09 16:25:28 +0100;Added additional CSV fields for iBeacons
+fc69b6daa678396c7bce62fc6c9098b3623bb7e1;2014-04-09 16:54:16 +0100;Started using an EasyObjectCursor to avoid the screen jumping up and down
+7f0d5838eb5fb13fae498221365532d8aaaf7e93;2014-04-16 08:32:37 +0100;Added build.xml and added the `dist` directory to gitignore
+d14e4f85d76b74790b9d790d6a782a151d7ef2a1;2014-04-16 09:09:16 +0100;Fixes on CSV exporting
+4fca9ed8f2449ec867a1d8cd34021e34d653439c;2014-04-16 09:12:23 +0100;README fixes
+bfcd23eca4076fe69bc1fa825c1b1847374d775d;2014-04-24 12:01:15 +0100;The iBeaconDevice constructors will now throw an exception if the passed device is not an iBeacon
+fab98f542310f25193d4e69766e420ed44057995;2014-04-24 12:35:33 +0100;Fix for concurrent modification exception when getting running average RSSI
+15365865461c1912b2ff8fe3dce5837c276cc63c;2014-04-24 12:39:23 +0100;Added some Estimote Specific UUIDs
+e8db1685d82b1ab6ab8926c140597ab2b8f21c42;2014-04-24 14:41:29 +0100;Tidy up
+e79b3f8c3d87deaa9cde3ed3865f9949bbfaec59;2014-04-24 15:45:29 +0100;Synchonised access to the RssiLog
+e28d698ba9096e8a4dc44ab0141f794bf275feb3;2014-04-24 16:08:42 +0100;Preparing to relase v0.0.2
+cf48721d779954b0c37183393952c14cc0a9d4cc;2014-04-25 12:55:25 +0100;Making the Device Details activity pretty
+131ab06bfb0f8da251d3cb508b797319d753b291;2014-04-28 16:42:12 +0100;Started rewriting the Gatt Screen UI
+b0d65c08dd761c3a2df5dc35bddd1072964dedd3;2014-04-28 17:39:31 +0100;Added GATT Services Exporter
+4792282b59d46787d06a1fd19abc5a7fea8a857a;2014-04-28 17:54:11 +0100;Externalised strings
+cc58a76bc655988578e182ef9368b09c6b52ec58;2014-04-28 18:04:18 +0100;Preparing for releasing app v0.0.3
+bcfaa21fad2803e885bc84749f914d7c7b33797b;2014-08-27 11:16:16 +0200;Add instructions for creating local.properties
+e838503792b9b9dcce30304f8188a411617e4eaf;2014-08-27 17:54:59 +0100;Merge pull request #3 from xrmx/patch-1
+67bc13a9c26c53f22a54b78019cc5fb3819e831e;2015-07-03 14:22:13 +0100;Migrated project from Eclipse to Android Studio
+56e27ffab16ae983ef6164e0b341d6ac9c6384d7;2015-07-03 14:32:19 +0100;finalised things that could be final
+5f55a3ea452fef9f480d30a1a3890b42ff9507af;2015-07-03 14:43:54 +0100;Fixed some static analysis issues
+53138d5462fc0616c0f4d2f5aa79ede13cfef111;2015-07-03 14:52:14 +0100;Full code reformat
+9c04515a3436d40c0db82a655f60ed7faae04095;2015-07-03 15:29:55 +0100;Added some tests around ByteUtils
+4fcbc7c468b2bc2147ded49670e43669593e6bce;2015-07-03 16:53:20 +0100;Java 7-ness
+70169dc0b7e2c91083e7c44438a18321b1dac41e;2015-07-03 17:50:24 +0100;More tests and general code cleanup
+33f2a265f724d84d3320ae7b09e1b01cffb02ea0;2015-07-03 18:06:10 +0100;Added some IBeaconUtils tests
+31f191b69528e37d2d4c84116c3c298176243565;2015-07-03 18:16:21 +0100;Fix for #5 (IBeaconManufacturerData.calculateUUIDString(byte[]) bug)
+f68b2f59507ebffb1b767655397b1c04487d546e;2015-07-13 14:53:55 +0100;Fix for #9 (Some issue in GattAttributeResolver)
+262fa72910d31a61dc36f05f25a7a6c4222076e7;2015-07-13 15:06:08 +0100;Bumping versions and updating README
+ab6997b5af501affce5ae0b999f2ccf1a4674c48;2015-07-13 16:04:39 +0100;We are now using AppCompat and support Material
+eae8e9c7761ebbfc63695af71de790d02ff94f7e;2015-07-13 16:36:17 +0100;Added Bluetooth Major Class resolver
+4e173659e9a310b7eb0eba3d397875fc4115b2cf;2015-07-13 17:13:06 +0100;We can now list supported bluetooth services
+201e4a6129a593b0d4176dfc4bb229898b1f1cde;2015-07-13 17:34:18 +0100;Started making the library less bound to ibeacons
+cb43be74ef4f16b00ecf84c4e6b469deac678b5c;2015-07-13 18:08:59 +0100;added BeaconDevice Interface
+459eb1d2d484b4711f5c6e84fe408aafde3e1c7e;2015-07-14 14:01:32 +0100;Starting to abstract more so we can support more beacon types
+8c0c0b4ebe06a8aa1d0daef35300311b7694a8a5;2015-07-14 15:04:31 +0100;Finalising before merging
+6946d05e9cbe05e1d44e214f8b10a816f5e119ca;2015-07-14 17:11:45 +0100;Ready to release v1.0.0
+28f694f14bac2e7c805bdb0f13bd60bc92c5c9eb;2015-07-14 17:14:40 +0100;Merge branch 'move-to-android-studio'
+51c9e5ca90aefb465ae95feee802971214bd5fab;2015-07-14 17:18:04 +0100;Merge branch 'master' of github.com:alt236/Bluetooth-LE-Library---Android
+f483a0e24a1bcaedb602684779b520b4689337f4;2015-09-30 17:08:24 -0400;Fixed typographical error, changed advertisment to advertisement in README.
+112bc0005456750fbb74eac55c1b6c8092ffdcf2;2015-10-01 10:13:09 +0100;Merge pull request #12 from orthographic-pedant/spell_check/advertisement
+1647ca1ec2715c29f8c400a72708c4f405c13537;2016-02-20 21:29:31 +0530;Added code syntax highlighting to Readme
+c6cece6acc08ea0666715371ccfd373346b1e74b;2016-02-20 20:51:00 +0000;Merge pull request #13 from ravidsrk/patch-1
+ec33fd7618ecb326e2b999706ebe57b2822bdf70;2016-08-24 14:39:26 +0100;Materialized the UI, added runtme permissions support, now compiling against 24
+54d0caf6c8e347b2029515d2bd735a29ede7d61b;2016-08-24 16:23:22 +0100;Rearranged app packages and started splitting classes
+92d6ee52413b0ffda57494ef92dab6a958efd4f9;2016-08-30 18:05:44 +0100;Removed merge adapter, details screen now uses a recyclerview
+65b597ab294ad052089860056378f61142e97209;2016-08-30 18:14:26 +0100;Now using EasyCursor off maven instead of the bundled jar
+e9c2f0d48659308a298d1499635649909210376e;2016-08-31 13:16:14 +0100;The extras in BluetoothLeService are now properly unique
+e43bfc1b82472d462cac6eb78ea82d6ab5116182;2016-08-31 17:50:31 +0100;Added navigation class to abstract activity launching
+b54a56b15b0d5f3148e415baf8dbcf32505ec485;2016-08-31 17:51:24 +0100;Updated app colours and margins between sections
+727f2d89532f7efccb3f4401f4803dba752a71ed;2016-08-31 18:04:17 +0100;Moved the list adapter creation out of DeviceControlActivity
+7f15ea3d1e9f5b55931c1263e3744ac68e4f5831;2016-08-31 19:09:38 +0100;We now have a "connecting" state in the ControlActivity.
+6f092344f5bebfdc1fc6a67761e7db1f93ccb4ab;2016-08-31 19:56:09 +0100;Fixed CSV sharing
+ef5b84387f10a597d43907066e8a17d7c15ab907;2016-08-31 20:19:18 +0100;Fixed bug where the device class name was returned instead of the major class name
+1639e1a22df59234cc26269b7bb9baefc800a154;2016-08-31 20:21:31 +0100;Updated share and bluetooth icons
+1d3dd85eeb8e91c4937c55908d1a626f6deb8c69;2016-08-31 20:35:59 +0100;Updated the app icon
+3a234b8080c128307687d34f6bf02bbbac59dc14;2016-09-04 20:42:48 +0100;Fixed crash when selecting GATT service
+9ba9f2728b08acd6171d85e10a09fb015ddc5bbe;2016-09-04 20:50:37 +0100;Updated app icon (again)
+a7312ad51cdcd86f4aedbcd38b3001304aaed899;2017-01-17 17:07:16 +0000;Added circle.yml
+81d984efac1bc06618794c1e63093538ab22ebe6;2017-01-17 17:31:53 +0000;The dound device list is now implemented as a recyclerview.
+47a4c124f64b70e90e6eb3b6062e81438e4088fb;2017-01-19 17:11:21 +0000;Added unit tests for BluetoothLeDeviceStore.java
+0d1085730bb0a42995ccd39adcb78cca6d0226ff;2017-01-19 17:15:49 +0000;Bumped tools to 2.2.3
+be2583ce4e21387074e0305e213c1a2280d445e0;2017-01-19 17:24:06 +0000;Merge pull request #21 from alt236/app-material-redisign-and-optimisations
+f2f9ac38f4fbb4d48bc31bc5779e78899006a92e;2017-01-24 16:37:01 +0000;Bumped app version, updated manifest and README
+ebc44c7537d5ae774ac4fe1ee756865e2c152f95;2017-02-03 12:09:20 +0000;App no longer tries to ask for COARSE_LOCATION permission pre API 23 as it is not needed
+e838cacad1de1bee7096d0b27e1e74167367b845;2017-02-03 12:12:48 +0000;Merge pull request #24 from alt236/bugfix/dont-ask-for-location-permission-pre-API23
+e5ed6f1dbbe08ca5a4a08ffc769dedeb8fbaeeab;2017-02-03 12:16:08 +0000;Preparing for App relase v1.1.1
+8871fc5d20a8a82d966e659119c9a185f3d8d95b;2017-02-03 12:32:30 +0000;Merge pull request #25 from alt236/release/app_v1_1_1

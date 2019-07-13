@@ -1,0 +1,615 @@
+7bed091f611f76a30a71938b1e122c10c0856938;2015-03-14 14:04:18 -0600;Initial Commit
+0bc02aa6f8564ee003fc6db5ff3898d199d371c7;2015-03-16 21:50:36 -0600;Updated the EmMediaProgressEvent to be reused to avoid rapid garbage collection
+3b9deeadb730f05b990f63ed47659f0e7da88e10;2015-03-16 22:05:42 -0600;Minor update to the EMNotification to make the service intent actions unique to this library
+21be918301207a5a8e478ca63d40d50043debdec;2015-03-19 20:30:49 -0600;Minor name changes. Added a basic audio service example for the EMAudioPlayer and EMNotification.
+38759b139adf4e2cd7134b867d19bfac6385b940;2015-03-19 20:33:25 -0600;Fixed a missing word
+415937a5426340d30bcb5f3db1791c3cb62e4a02;2015-03-19 21:13:40 -0600;Fixed an issue where the DefaultControls would hide after a seek when paused. Added video shutters to the sides in addition to the top and bottom shutters.
+0db12d46af2cbcd6977f881c716c6f529a689908;2015-03-20 18:55:48 -0600;Updated versions in preparation for v1.0.0 release
+ff21932ba224d1a0e5827b33a952457d10bd4554;2015-03-20 20:08:54 -0600;Updated repositories.
+0284a267e9a861de45214a33e90b4281c7ef450c;2015-03-21 09:26:36 -0600;Prepared for the next release. Updated the Readme
+269480ca752b808460f56050d661350208c48014;2015-03-21 10:41:03 -0600;Added a method for generating the javadoc and sources jars.
+f1cc0c0bae3ed737053a6787f74f5f25cfaaf3c1;2015-03-24 17:50:11 -0600;Increased the leeway between the stop point and calling the completion listener (and bus event). Fixed an issue where the completion bus event wouldn't get called if the completion listener was null.
+199c69605a68cab899185e6e4c2aba885bc6c8cb;2015-04-07 11:37:20 -0600;Updated the library to build off the jcenter release of the exoplayer
+bea9abd47416878241deb23d19bf8822d71b2b22;2015-04-12 08:19:40 -0600;Updated the ExoPlayer version (patch release) and changed the release version to 1.0.1
+4857f1bb0a183fbac0cb2ffccf36339abd9f3ece;2015-04-12 09:17:51 -0600;Added a bintray upload library to simplify publication. Fixed the README version
+f7c638bbe9f38dbeb171b4bbec68444fa7a2af2f;2015-04-23 20:31:16 -0600;Added an example for fullscreen videos.
+f68b319a7e0cfb7a0476ea88bea82fafdcd274c3;2015-04-25 14:22:32 -0600;Updated the library to have a LockScreen utility to simplify media playback controls on the LockScreen. Added a Playlist Service and Manager to simplify playing collections of media. Other minor updates.
+9d98598f390cb717795f0525561e4813b6a99bab;2015-04-25 15:24:06 -0600;Updated the required methods in EMPlaylistService and EmPlaylistManager
+ad22bd54a9aa033c14c8c28ed55b7b628c3e7c30;2015-04-25 19:13:41 -0600;Minor updates to the Playlist manager and service. Updated the demo app to use the new playlist service and manager.
+2ef56de0ab001baf7721e3a13fae2bc8c14f2c37;2015-04-26 10:45:09 -0600;Renamed the Allowed Type event to follow the naming convention of the other events.
+744bb17602289b7f6668d6ea963b81227a43f8e4;2015-04-26 13:48:19 -0600;Fixed an issue where the Android VideoView (<API 16) wouldn't correctly call the onClick events.
+daa1237849c4d5203d54bbf45e69ee7cdbd2d196;2015-04-26 13:59:20 -0600;Fixed an issue where the EMVideoView shutters wouldn't listen for clicks (touch evens) to show the default controls
+e5437ddfd2ef1d6b53f42f05e0a34386c6559875;2015-04-27 13:34:37 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into playlist_support
+95f82172dd6da055f954432de0919edd1e79ce4c;2015-04-27 17:13:17 -0600;Updated the Demo to actually load the playlist item images. Fixed the Lock Screen so it actually shows up correctly. Added a receiver to handle the lock screen controls
+7a7fc6f013f012d9dd6bb2b2af78ad4f3e4166fe;2015-05-03 13:56:35 -0600;Major refactoring of the EMPlaylistService and EMPlaylistManager to provide full functionality without Otto bus events. Updated the Demo to use the new paradigm for the service.
+220987e136846159da09fcd22783c2f98032c123;2015-05-05 20:39:24 -0600;Modified the PlaylistManager/Service to have references to eachother for easier communication
+5a2cac460eadc9f16bed3335b1b8118ead68ede3;2015-05-06 16:50:23 -0600;Updated the PlaylistService to correctly register the audio player with a bus if one is given. Updated the PlaylistService to correctly remember if a bus is registered.
+13138911fba9c3786520b116598151053ece5b9f;2015-05-08 13:47:29 -0600;Updated the EventSubscriptionProvider to be  a member class
+229580a9b7150d2571a7053976ceed6fb472e76f;2015-05-08 18:16:43 -0600;Updated the gradle plugin version Updated playlist service to register and unregister the bus
+72f678e3bd9d92944d086b65e6e1eab59808c97e;2015-05-08 18:22:22 -0600;Added note for proguard
+6278dafb0f5a0c15dfe5b88a0cbe21fa3fbb8b3c;2015-05-11 16:32:56 -0600;Fixed a seek bus event
+d765e310400de517a902057949bc2e01b7a9a59d;2015-05-13 11:10:07 -0600;Minor updates
+8081f9e19565ba03452dc8b7be50821d6685b78f;2015-05-13 21:29:18 -0600;Added comments to the EMPlaylistService to not what each function does.
+9434d74e65f86c9985a58e2876ef437255289efc;2015-05-14 08:48:07 -0600;Merge pull request #2 from brianwernick/playlist_support
+430c981186ab004f79c9b9a0bd8859429d775cb8;2015-05-14 19:08:51 -0600;Updated the ReadME
+5a917eaec74d093e83d679a6c1ce2bab52b4a134;2015-05-27 08:54:12 -0600;Updated the Repeater and Stopwatch to be able to run on a separate thread from the creation.
+1b742e57a03377b02d244a6b8dda0fc8c3ff483d;2015-05-30 14:04:54 -0600;Updated the library version to 2.1.0 Updated dependency versions
+4392246b296852385c3dfed4bd7aa51cd21e51b0;2015-05-30 15:59:31 -0600;Updated the Renderers to work with the new ExoPlayer changes
+3531d5ce2ff6cc92928d6c0ce8a321b19ca7561c;2015-05-31 19:34:03 -0600;Updated EMVideoView and EMAudioPlayer issues with the changed renderers and ExoPlayer APIs
+f083fd57ab7619dddd986ce7db64925adb51ecfe;2015-06-09 15:14:14 -0600;Fixed an issue where the downloadedMediaUrl wasn't being used when an item was downloaded
+753a798be8b70909f16a450d278168f918dfedca;2015-06-09 15:16:58 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into exoplayer_update
+f4ea3a6c722113c7c99fbc005e8d147e473b05a6;2015-06-09 16:41:06 -0600;Fixed an issue where the default fallback extractor would always be MP4.
+d64a6f63d0a16e11425b020141aa231819ca6b04;2015-06-09 16:46:29 -0600;Merge pull request #3 from brianwernick/exoplayer_update
+d7ecb1efcdef55b6c1e293bf6da40bfef69d4af5;2015-06-11 09:38:05 -0600;Updated the default video controls and the big notification buttons to be the correct minimum size (44dp) and have correct spacing.
+b05873d6cd95581978b3cc0f67623e6c087d229b;2015-06-17 16:43:15 -0600;Fixed an issue that was causing the playback notification to pop when the media changes
+c8219cab0e7a7cb0a0467a660101971fffe3a571;2015-06-18 16:23:07 -0600;Updated the PlaylistService to better allow extensibility. Updated the MediaUtil to include the mimeType in addition to the extensions for MediaTypes Fixed issues in the StopWatch
+066fadc086735f51994683f42e2fb6e7a900d266;2015-06-19 10:04:16 -0600;Added the ability to set the StopWatch time
+6e1070295984e473e75df72b1cc3db1c5a976c26;2015-06-19 13:02:27 -0600;Updated the notification layout
+645d180c36f9e92621d33f38d1a3de467cf5bc50;2015-06-22 08:37:01 -0600;Added a secondary image to the EMNotification. Updated the image margin for the Notification
+0742b8b885786aadfac6d9ef2ce94e1deba995c2;2015-06-22 10:57:03 -0600;Minor size changes to the notification images. Added a method to determine if general media is playing
+4a91640d57c808ef4b54e83939e6362c7040ffda;2015-06-22 15:15:19 -0600;Updated the version to 2.2.0 since the changes are more than bug fixes. Increased the visibility of the DefaultControls to better allow extending the EMVideoView
+f63fbdf5fc1118f9982eea4e5fbc9816018bc141;2015-06-22 15:53:48 -0600;Added increased playlist support for the EMVideoView
+63296bd1c84b258ccec0a2eb294d40c6ffa5e449;2015-06-23 12:35:45 -0600;Updated the service to stop without having to force it
+dec251691157b020de544aa198f67d308e3ff18d;2015-06-23 16:25:23 -0600;Minor updates to increase extension usefulness
+d3bf0458740fd36560c6b665010140fd7f650529;2015-06-24 08:26:46 -0600;Updated the way the progress is shown to better allow extending the VideoView with DefaultControls enabled
+25c930efc21f543d05bf7a163c2caffab7e66348;2015-06-24 09:49:53 -0600;Added additional null checks to the EMPlaylistService
+8c0a25c957c56dc5a72255c681a81a795adb09b3;2015-06-24 11:26:58 -0600;Fixed an issue where audio playback could start when playing a video using the PlaylistManager and PlaylistService
+e6505bcb3d63d8951d30af754132a5fb9912ebbc;2015-06-24 13:25:17 -0600;Updated the version in the ReadMe
+4efa547141dc94523465baf6dbc174a4eb1ebb63;2015-06-25 10:59:19 -0600;Fixed an issue where the play/pause image wouldn't be updated immediately
+69e987d4d9348822241421c832ea32874f148758;2015-06-25 14:17:43 -0600;fixed button centering issues
+a3e4d4308a3ec65ff29d6a177b234992e5c17749;2015-06-25 14:41:57 -0600;Updated the DefaultControls to allow an extending class (of EMVideoView) to monitor seek events
+ce0d896666592a63530766f8cb4384af8ede0597;2015-06-25 15:24:23 -0600;updated the DefaultControls to only update the duration view if the new duration isn't the same as the current
+8ff1cc7210f5dea1c1dd8afb184f946331022c28;2015-06-25 15:30:31 -0600;updated the README version
+d7a538f27f35ae4a878ecd93a0b309bd3c32f03a;2015-07-02 14:17:30 -0600;Fixed an issue where the EMVideoView DefaultControls were consuming the only fitsSystemWindow instance.
+88196e6d6d01e6cd2e1a251d8a3036a5e7d250e8;2015-07-04 17:34:53 -0600;Added an attribute to enable the default controls for the EMVideoView
+f4c3aa30daf7b0226263d79e4d58d6bb32e9ed53;2015-07-04 18:25:19 -0600;Updated the DefaultControls to use tinting for the button drawables
+d1288d83a759956dbbe291d9bcfed433c1a09648;2015-07-04 18:35:03 -0600;Removed unused drawables
+5db4bba7551e4b33f3a2d4bf43c689ff04ab9e51;2015-07-14 14:57:12 -0400;Allow the caller to define the default MediaType
+f57dd6bd31b351611fd7d4d3c1abea934834b5eb;2015-07-14 13:17:12 -0600;Merge pull request #4 from n-i-x/master
+95db684db89eaf7ce92c878b125830144e56966b;2015-07-14 13:47:56 -0600;Updated the EMVideoView to have the ability to specify the media type like the audio player. Minor EMAudioPlayer reorganization
+706a0831fb71afceff0e07a7a13fcbe27f4c5d34;2015-07-18 18:36:00 -0600;Updated the ExoPlayer version to 1.4.1 Incremented library version to 2.2.3
+96df113ae5837ddcd60608eab9b030bc90c804db;2015-07-21 16:51:27 -0600;Updated the library dependencies
+ca61745d6d832bdd76c93211b1dd32f27dc35731;2015-07-21 16:52:57 -0600;Merge pull request #5 from brianwernick/exoplayer_1_4_1
+9d121c4d2e1c40b2adaee3d08924042bd77612ed;2015-07-24 09:52:17 -0600;Fixed inconsistencies in the event variable availability
+4c03e1246fac53c0e435bc3960594827ec0cedce;2015-07-24 09:53:56 -0600;Fixed errors caused by the updates
+ddec42cf6d6a6f28fa463c08f8732d05f44fa4e3;2015-07-24 09:54:42 -0600;Merge pull request #6 from brianwernick/event_updates
+988162f4c643cd4a8e312ebc8bb0ca96cc693d59;2015-07-24 10:57:16 -0600;Moved the time formatting from the DefaultControls in to a utility class
+f7d6101dbaa4c83bd883c45021ffb81e08cb1352;2015-07-25 12:06:35 -0600;Added images and a layout design for supporting Android TV in the default controls.
+80018a261de0dea50f7f557a6f0eac451b2f6fd4;2015-07-26 11:15:25 -0600;Minor fixes to the layout Updated the DefaultControls to provide the standard customization for the rewind and fast forward buttons.`
+37132cb52581110e75c8388c4e0725a00febe223;2015-07-26 12:15:00 -0600;Protocol updates between ExoMedia and ExoPlayer
+a301647571d6dbbbf17a4a7c016f66eb356eae24;2015-07-27 09:55:52 -0600;Update README.md
+b979a9088eb812bdd9c8086393300d1975935112;2015-07-27 11:35:08 -0600;Update README.md
+9131fad8927877377eb5e120f421ec26a81f1f32;2015-07-27 17:04:32 -0600;Modified the EMExoPlayer to more closely match the demo provided in ExoPlayer
+583c28d44ea0125ff394a31e986658a3d8a3a460;2015-07-27 19:11:35 -0600;Added more supported extractor types. Cross compared the ExoPlayers DemoPlayer and the EMExoPlayer, fixing any inconsistencies.
+a4c1a52c192f7371bff5cc742344ad4ff1913a8a;2015-07-27 19:49:21 -0600;Minor render builder update
+895a7037e9c701abbf241cf78714e00187bc987d;2015-07-27 19:53:01 -0600;Finally found the culprit
+2da2c9307b2637b1e4b5ba18ee84caa03ed6931d;2015-07-27 19:53:48 -0600;Finally found the culprit
+850a28178bd20efef61bc5e1426ab246a583b61d;2015-07-27 19:55:21 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into playback_fix
+e98a47e8410148059eaf50aa06e8c960b6ecedaf;2015-07-27 19:55:54 -0600;Merge pull request #7 from brianwernick/playback_fix
+c9c3e4c91e2cf63edd7ac01c6b6fe435db320a49;2015-07-27 19:56:55 -0600;Minor Readme update
+10fff07fe3238dbc7265a008e342e79fe6edb13f;2015-07-30 20:37:21 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into leanback_default_controls
+835bdc61df916f9e2e0a72f21b912442315e18eb;2015-07-30 20:48:16 -0600;Added device check. Moved the default controls to the widget package.
+9f27e3298c39e3e15cd26c35fdbfd449a4d9191d;2015-07-30 21:56:13 -0600;Abstracted the DefaultControls to allow for better customizations between mobile and TV layouts
+1e588735ab625055d50dff0652002e7d8e6967c9;2015-07-30 22:08:34 -0600;Fixed an issue where the play/pause buttons were incorrectly hidden
+d05dbf7d3a36c35d539951642f33190bd0a3574d;2015-08-01 13:54:32 -0600;Minor cleanup for the DefaultControls. Added comments to the DefaultControls classes
+f8279bcc6823d3f7f511b7e0d6fc5c55fe6d49eb;2015-08-06 11:00:09 -0600;Updated to the most recent version of the ExoPlayer
+3759c0ad6b2c5af0ac0f4d7dabeb814969024f7e;2015-08-06 14:27:14 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into leanback_default_controls
+e60447954f0d1c4574ed0643548063d88a852d14;2015-08-06 15:07:05 -0600;Removed the Otto dependency and instead use a generic interface for even buses
+8089a5f0f7c0dc7925b75c21803a277eff7885a0;2015-08-06 16:01:46 -0600;Added invokeRepeat and invokeShuffle to the playlist manager. Updated comments.
+5c9c6b6e60be957cb79b9fa971f6428f09013f55;2015-08-06 16:05:24 -0600;Minor style update
+97fe3bc10bcb88d406ac12955e58344e4f668ae3;2015-08-06 16:52:46 -0600;Fixed an oddity where the user would have to provide the mediaServiceClass even though it was already provided in the playlist manager
+ebb57f4a4b8a13bd8117649b68d7ed562ac46929;2015-08-06 17:04:34 -0600;Added a check for null values
+d195ec12be4a37f03d27866f5c1ec1a9f654f520;2015-08-06 18:39:45 -0600;Updated the playlist manager to have a constructor that allows passing the Application in cases where getApplication isn't ready such as injection
+c6e5bb257f2a61f3b74213bb0d45dd8e9b6c8098;2015-08-07 11:16:56 -0600;Updated the Readme
+fe1bd78b16ac5c21c10cc1399eea2e8d05ca05b7;2015-08-07 11:18:01 -0600;Merge pull request #8 from brianwernick/event_bus_abstraction
+35c54008146f84c9ca8619224739e5b7e0063ce3;2015-08-07 20:29:36 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into leanback_default_controls
+5bbab6cee4140f22f7a1b2907b9289bf35a8e482;2015-08-07 20:31:24 -0600;Fixed merge conflicts
+cf9c0169709fc192a6a56543bc59b18f08157fce;2015-08-16 11:25:12 -0600;Updates to the notification and lockscreen to allow for more standardized media playback display. Cleanup of the MediaControlsReceiver.
+b1866d6f2f868d48953e36789d594d23e9a7b50b;2015-08-16 12:03:56 -0600;Fixed an issue where the media controls receiver wouldn't have the event information when sending a serialized Class instead of the class name.
+2aa64818b57a408da2f52c01498af4d5c6f8c559;2015-08-16 12:06:58 -0600;Fixed an issue where the lockscreen controls wouldn't be updated correctly
+038f62cad1fc94e834cf11242afb6d37c092106f;2015-08-16 12:08:07 -0600;Merge pull request #10 from brianwernick/lockscreen_fixes
+622bae005d788776282d281327f2d6a5cfd5571b;2015-08-18 11:24:44 -0600;Removed ProGuard rules
+21834fdac93e214ed5d8e4f3d7fd317951735ef5;2015-08-20 10:21:32 -0600;Updated the support library versions
+69f9dac3e317e4a94d6e2ed97af903982d4153ae;2015-08-20 10:25:28 -0600;Updated ReadMe
+23695311d93ff09c51240803ee49bb1347b86b72;2015-08-25 22:02:05 -0600;Added a custom small notification to allow basic playback control on the lockscreen of Lollipop+ devices, and without expanding the notification. Fixed an issue where the notification image wasn't updating correctly
+0d0363d338b8fef85e65b4978a09d36303dc615f;2015-08-26 08:56:10 -0600;Added next and previous buttons to the custom notification
+494ffc1d76d40a40660512a11b6a8ada921b4ce4;2015-08-26 09:11:08 -0600;minor big notification padding updates
+c8c99a584a51acea3325b62f2140f966842064af;2015-08-26 09:12:40 -0600;Merge pull request #11 from brianwernick/custom_small_notification
+185cae826a4f0d4e0ddda8fd77a411db7b39e69a;2015-08-26 09:13:45 -0600;Updated the ReadMe
+99a33b8428a5f4020067b9b32d3ffa77c35b38bb;2015-08-26 09:43:32 -0600;Fixed javadoc issues due to java 8
+ebeab9dd42648b961510ac1e6e8388dc1e69fdf7;2015-08-26 13:08:48 -0600;Added the ability to swipe the notification away when not playing media
+69a65f0e743206cea103aa705c0559b42b6ee45d;2015-09-09 09:32:25 +0800;fix regex for some m3u8 url cases.
+7b8802b47e2fc2feffc18b80c7112deb9e89ba88;2015-09-09 09:33:47 -0600;Merge pull request #14 from daimajia/master
+9ec42c6163515e585a5a1428f578ae7f88efae9d;2015-09-12 09:32:13 -0600;Fixed an issue where the large notification was no longer clickable (to launch the passed pending intent) Fixed an issue on API 10 devices where a drawable resource couldn't be found
+0e810feb8a856077764a3a91e87aa3aa4672202b;2015-09-12 09:34:24 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into notification_enhancements
+51de7a1d0da50d0119a6bb0c3a7d2f2b5d74468d;2015-09-12 10:21:38 -0600;Updated the notification to be dismissable when audio isn't playing.
+b545882dfa6e86382ff4c7ff9b9bc7565bf75330;2015-09-12 10:23:04 -0600;Merge pull request #16 from brianwernick/notification_enhancements
+51dc67d43ce9048ebbbe975801f0432f55c4bd01;2015-09-12 10:23:41 -0600;Merge branch 'leanback_default_controls' of https://github.com/brianwernick/ExoMedia into leanback_default_controls
+107822e83578a29e4d29225d753c6eeef55deb9f;2015-09-12 10:31:07 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into leanback_default_controls
+7239ebc2cf310d65bbe0e04593692bef32c08937;2015-09-12 10:39:37 -0600;Suppressed warning in the FitsSystemWindowRelativeLayout
+6be4eedae606c5001258b952110b5b7989252586;2015-09-12 10:48:58 -0600;Updated dependency versions incremented build number for the next release
+cd3f3654d03d47aa38a23589ddf8d220106ddc0f;2015-09-13 10:31:26 -0600;Fixed Leanback controls sizing Added an indicator to the selected position
+4328fb59d3ad7572bce5d40f990de8c3b07873f7;2015-09-16 12:36:41 -0600;Fixed an issue where media playback wouldn't redirect between http and https
+88206bb358bbffe9a0a9f82e4b7253bd4a7b2939;2015-09-16 12:49:45 -0600;Merge branches 'leanback_default_controls' and 'master' of https://github.com/brianwernick/ExoMedia into leanback_default_controls
+99486f28f8824dbc74d9d361ac6cbbd01626036d;2015-09-16 13:18:24 -0600;Minor updates to the Leanback controls
+aefb763615c2edfd35c21f6d2fbe6710e8d0b0d6;2015-09-18 17:02:33 -0600;Fixed audio focus handoff issues
+ee75ba9c1d650e952308ab8fe625d0c6b82eb6d5;2015-09-19 13:49:55 -0600;Updated the Readme to reference the new version
+05f3a0744f15774249da0931c11cf98d7024e691;2015-09-25 11:38:16 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into leanback_default_controls
+5ce2a60fbfb45b8085bfbc08c443121be6ea7fd6;2015-09-25 11:39:15 -0600;Merged changes from Master. Added a Method to resolve resourceId's from references
+359bc60642051655abf3f584790041cbddb630ac;2015-09-29 18:58:20 -0600;Updated README Converted to work with the ExoPlayer 1.5.0 release
+7643f3f96e66469bdae836adcab037aa73986fcd;2015-09-30 09:14:45 -0600;Fixed an NPE in the EMPlaylistService Updated the Demo application to correctly close the AudioPlayerActivity when the service is stopped
+534498d7077200e311516a374d19d499abf2dd2b;2015-09-30 09:24:23 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into exoplayer_1_5_update
+c71ea5269cbc9f2e83582b990ed5056ed54d48d6;2015-09-30 09:34:59 -0600;Fixed NPE
+a13bf58c8737df2dc00f7301581afc9f189d362f;2015-09-30 09:35:51 -0600;minor cleanup
+c467b11abd87f3b041b1fee368451b30ee2d3298;2015-09-30 09:44:25 -0600;Video Listener update
+b1b3fd038ba0356fe3812b5c07021dc9f4e87f60;2015-09-30 09:44:53 -0600;Merge pull request #19 from brianwernick/exoplayer_1_5_update
+810db282f2d2c04fbe2b2a083963e5c83d128a2e;2015-09-30 10:41:56 -0600;Incremented version
+06d63e6b683df57eaa503f352d18f3de35dd1058;2015-09-30 10:42:03 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia
+ac679b998af122bb6392c049c4684abe5d6eb373;2015-10-01 16:11:37 -0600;Increated method visibility
+4a1b3f7757b553fb7e1339ad7e3837c85d1ffc90;2015-10-03 12:09:50 -0600;Increased PlaylistManager and PlaylistService visibilities to allow for complete overriding.
+084271cf426fb8aadd1337ad250e3f6474c73796;2015-10-03 12:34:46 -0600;Added basic support for custom media types in the PlaylistManager and PlaylistService
+44140038ed5e162fadbfb3ba8f3cad2fbcfc3bf7;2015-10-03 16:38:32 -0600;Updated the method documentation. Cleaned up duplicate references to a MediaType
+7f4c0056d5f9e3d16063a5f0bd87fc66701e43bb;2015-10-03 17:17:12 -0600;Updated the notifications to correctly use title, album, and artist fields.
+ed821b8458c12089af501bc0881e5ff1a87efe22;2015-10-04 09:28:15 -0600;Next/Previous will now keep the previous playback state
+1fd7a31fb943a8c775f42d479dc3f29ee51c21e0;2015-10-04 09:35:35 -0600;minor cleanup
+e24258382dcba215836f9d2f7afcfb87abfcc265;2015-10-04 10:18:38 -0600;Added a listener to key events to handle remote input
+66c145f59e1931dc224ccb80041e40ab0b36384e;2015-10-04 10:18:44 -0600;Merge remote-tracking branch 'origin/leanback_default_controls' into leanback_default_controls
+8c6314d8b14a5be5deadc1745115c3b28f7e9649;2015-10-04 10:19:43 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into leanback_default_controls
+8a80ea2e3d10f8e72f23faa73d0558f71fd98e8f;2015-10-04 14:55:14 -0600;Updated the Leanback controls to correctly listen to remote events for changing focus and performing correct playback interactions.
+9e1709c87143f16c9759fb005c16f9774d29faff;2015-10-05 10:56:27 -0600;Fixed the progressbar for DefaultControls leanback to have the correct display style
+dfc6990542a2f8a05ff9cfee1e78c2d51f95254d;2015-10-05 11:07:32 -0600;PR fixes
+fd40874ad3684fc58119859eeb90d2d658e12eb4;2015-10-05 11:07:12 -0600;Merge pull request #20 from brianwernick/leanback_default_controls
+277556032fef330b64b3744f4b9eeeb5d945ba0e;2015-10-05 11:10:00 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into version_prep
+42c4998c002e46bc0ac78e62d17f48251a0f895c;2015-10-05 11:25:44 -0600;minor update to the default controls overlay spacing
+6e130751952c769c7a3bb556506cbebcbdf56fb5;2015-10-05 11:50:10 -0600;Replaced the png images with vector drawables
+d9de1524165128392485ae38953aedd464ec68ed;2015-10-05 11:52:31 -0600;Merge pull request #21 from brianwernick/version_prep
+c5dd880c3ab4b31e88b15411f8078530c886dd9c;2015-10-05 11:54:12 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into drawable_updates
+f411d954def8c304792c5238f216a998de2ab668;2015-10-05 11:56:57 -0600;Removed errant drawable add
+e16994df3078ea90183cc8319d96adaee58d7f40;2015-10-05 11:57:11 -0600;Merge pull request #22 from brianwernick/drawable_updates
+0565e26251a0234cec85655c94cca11152c9dc69;2015-10-05 12:21:42 -0600;Updated Javadoc tags. Updated the version to 2.4.0
+1dc3d1463a0e8009e85b87730fbd442c5f997f5a;2015-10-20 15:38:28 -0600;Updated the getResolvedResourceId method in EMResourceUtil to be static
+d9627351445da68e157e4535957c9c89aa788400;2015-10-29 14:09:09 -0600;Updated dependencies
+c2f4c7cb7ecbd9c35717814a34a006cffd173be4;2015-10-29 14:14:17 -0600;Merge pull request #27 from brianwernick/exoplayer_update
+251c34bb50892fadf4e1d02ee1ad0bb5f0c7709e;2015-11-04 10:39:18 -0700;Fixed an issue where tinting a resource drawable would tint all instances
+55c643e8e8c68f58d3dea641b5ae96626929d94e;2015-11-06 15:44:07 -0700;Fixed an issue where the playlist service would crash due to an NPE if setupForeground was called in the incorrect order
+9053c4ce81a6959fa9a27c0345e8308d196d5e5d;2015-11-06 15:53:06 -0700;Fixed method return annotated types
+89aaad8f3f75f84c5ac29193f2704a35b99fa3cc;2015-11-06 16:14:06 -0700;Fixed wakelock issues
+ac950d9d6a21a24116482b6dd0fe57b4558ebeb9;2015-11-07 08:43:25 -0700;Added the ability to stop a VideoView from releasing resources in onDetachedFromWindow
+df8257dd8a1172d2513ec6992a5d125da7cc0f19;2015-11-07 08:57:41 -0700;Updated readme
+f4450f22cf772e4b3209ca04c8cf79ee36787e8e;2015-11-09 17:10:34 -0700;Update README.md
+e769e5f63af8e748a82e5ea54f755e8ee5a2648d;2015-11-15 12:01:50 -0700;Minor dependency updates
+797f23f067b1774f5bab37abc13213c834cb1662;2015-11-15 13:04:51 -0700;Fixed an issue where FitsSystemWindowRelativeLayout wouldn't correctly resize when switching between HIDE_NAVIGATION in landscape and VISIBLE in portrait
+ae6e1a6005f9af3ddffdfb187ff9af88cdf12802;2015-11-15 13:30:42 -0700;Minor EMVideoView reorganization
+769c359154ddd1cd5e09a934a3c3d3b9e40785aa;2015-11-19 15:04:44 -0700;Added more Null checks around the Notification and Lock screen in the Playlist Service
+0d346eea9ba781950c59023bdf20c5c91b9e9e69;2015-11-19 15:04:51 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia
+b9fb17fa7cd69fff6395355617500ea4c0f41373;2015-11-21 08:48:43 -0700;Fixed an issue where the preview image on the EMVideoView would hide when playback was ready instead of when playback started.
+5c7957e1800e8fbb714fe663ba67978b38781082;2015-11-21 08:49:52 -0700;Merge pull request #38 from brianwernick/issue_35
+01bbaa497240e662aa58fd346a8df27eaf2f345f;2015-11-21 09:03:03 -0700;Fixed completion notification issues
+5b3dffb1ff4eede15d4d779f193128acd844d703;2015-11-21 09:03:36 -0700;Merge pull request #39 from brianwernick/issue_36
+7e67530abf898a2adb3bbe18f7d2709ad3efced9;2015-11-25 08:31:11 -0700;Fixed an issue where the Notification would encounter a NullPointerException on API 15 devices.
+83f421b4f80c93ca35277d3edee39e935876ae67;2015-11-25 08:38:40 -0700;Updated patch version
+3e1495f68035996e4c7c95be181468e80b5fcc5e;2015-12-18 09:41:50 -0700;Updated to the new version of exoplayer (1.5.3)
+0bf490df958c217e1fd0314b1ab48bddc25158a6;2015-12-25 22:56:31 +0100;Make RenderBuilder for HLS async
+a88d297a8dcbdb9e69ca94351396b95ba2eb2362;2015-12-25 23:05:50 +0100;Add setVideoURI with RenderBuilder as argument for advanced usage
+cb76107c4c9d1ea460800b8a54883304b23acb41;2015-12-25 22:57:58 +0100;Add RenderBuilder for DASH support
+e4b18e95ca494d2b823c5af06b4641801c9e0a57;2015-12-26 08:50:36 -0700;Merge pull request #50 from se-bastiaan/feature/async-hls
+43c5d01824c9decf1da0495013e28c62bb6df14b;2015-12-26 08:52:15 -0700;Merge pull request #51 from se-bastiaan/feature/advanced-setvideouri
+12f8fcb596d7ccde31c0d0df3b67cc0eead16637;2015-12-26 09:01:13 -0700;Merge pull request #52 from se-bastiaan/feature/dashrenderbuilder
+787b8940c4dc3e8dbf3a082f306ee2656fc4a0ad;2015-12-26 09:39:08 -0700;Updated the Dash and HLS RenderBuilders to follow the same architecture and code layout
+3313f0658164803618a1a4fd5e87c88d056daf2c;2015-12-26 09:51:17 -0700;Minor cleanup to standardize the audio and video source type determination
+210f42f5db1e7b66d53d45d822f9181150211524;2015-12-26 09:56:03 -0700;Added the ability to specify the RenderBuilder for the EMAudioPlayer to match the EMVideoView
+d3324e26e1a13640e77e0c09d5056683dc4c28ec;2015-12-26 10:36:17 -0700;Fixed a DASH rendering issue
+b150a2241196df6536c9577a91d0956f6f723329;2015-12-27 10:42:34 -0700;Updated the demo app to allow selection of different video types
+ee8e55e9877595fbab6030153ddcd3b709836f56;2015-12-27 13:06:27 -0700;Updated the designs for the default controls (mobile) and updated the visibility animations
+3f02c3223c3ce9ac2c6140ee4dc7af96bcf1b2b1;2015-12-27 13:32:43 -0700;Removed the EMEventBus to simplify interactions and reduce code paths
+b66f453602be178fb281aa576ecc28b4762a29ab;2015-12-27 13:47:01 -0700;Removed the passthrough methods in EMVideoView for the default controls
+cfa88eba4dc325252cdfec4939e5deabf973b75d;2015-12-25 23:01:37 +0100;Add RenderBuilder for Smooth Streaming support
+291fdb312ec952a456de13c1f3bd605069d4b972;2015-12-28 01:23:07 +0100;Use EMMediaCodecAudioTrackRenderer in HLS and Dash RenderBuilder
+739b1e611f0908294ea60341c118de40b5638aa5;2015-12-28 01:25:44 +0100;Use EMMediaCodecAudioTrackRenderer in HLS and Dash RenderBuilder
+eafd9612bef2d74f0e77ad9030b6e29cf78599a7;2015-12-28 01:29:01 +0100;Use base ExtractorSampleSource instead of MediaType to detect extractor
+69206860cf1c66ae8944178052ed9cf6acf51557;2015-12-27 17:53:42 -0700;Merge pull request #54 from se-bastiaan/feature/emaudiocodec
+f050adc62b30a89d585aacdfbc34006939c626a2;2015-12-27 17:55:23 -0700;Merge pull request #53 from se-bastiaan/feature/smoothstreamrenderbuilder
+02f2157c88d02097a201f1f5b52f3cd7aded4536;2015-12-27 17:59:14 -0700;Merge pull request #55 from se-bastiaan/feature/dynamic-extractor
+864ba63535d7904e43a231afc18c4e003313d452;2015-12-28 02:50:39 +0100;More advanced demo with multiple video sources and types
+fa7c53a974e7e4b3cd70587d0243c908e6ea4f8a;2015-12-27 19:35:54 -0700;Merge pull request #56 from se-bastiaan/feature/extensive-videodemo
+cafc23ade0d0b4caf8c5a8a8ad1577ac507d8dcf;2015-12-27 20:23:12 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia
+91dd7497f3700820537ecdea0a151f027165ab43;2015-12-27 20:24:03 -0700;Fixed Merge conflicts. Standardized the organization of the Renderers.
+b297bbf38686149f068e7c08fed1b4afd913ba62;2015-12-27 20:26:52 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+b7192efef9b9c7ee6bfed9ea2e6b4a7c611db6f9;2015-12-27 20:39:16 -0700;Added Smooth Stream to the Audio Player
+2731a8fe95c405a55228ecf05edb198e101ae2a6;2015-12-28 07:58:37 -0600;Fix comparison when determining if device is CTS compliant
+341f51ea766a7b749cae27f21fe1abd7caa02931;2015-12-28 09:23:25 -0700;Merge pull request #58 from JayNewstrom/comparison-fix
+6a39006f3773b96793569c6831cca55fe368148a;2015-12-28 17:23:56 +0100;Mix possible memory leak
+1d702a5202138948d32957755f365babcd9adb59;2015-12-28 18:05:13 +0100;Improve .gitignore
+fb9cc8b8ac4c768499616186407efb603f2f5141;2015-12-28 10:06:26 -0700;Merge pull request #61 from se-bastiaan/feature/gitignore
+0b0a80ee8c25ba33e62d2640116f92514a08a260;2015-12-28 10:07:13 -0700;Merge pull request #60 from se-bastiaan/patch-1
+020f46395eb8e165a50dac94cdeee0883518b47f;2015-12-28 12:07:32 -0700;Fixed issues around the EMVideoView shutters
+e15b9d5786e83a20068169111bc93d5ee99bf183;2015-12-28 12:07:41 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia
+545b44a69ca88ca8440206af2292ef0a287494ca;2015-12-28 12:40:49 -0700;Fixed issues around the EMVideoView shutters
+bf64708ab2ff4f2b33b80dd2220c1a9170d76caa;2015-12-28 12:41:05 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+c41f3bcc22dce57aa4635b7c1e1dcc959229e6d8;2016-01-01 10:49:01 -0700;Updated Copyrights. Fixed a few issues where resoruces weren't correctly being released
+8800783bda7f8fcb1546a99c9874faa1e220c738;2016-01-01 11:14:52 -0700;Updated the EMNotification to not reuse RemoteViews due to an issue where Bitmaps wouldn't be released
+52b2457ef3d4a26dc83a23538c052b82a9bb1ddf;2016-01-01 11:31:59 -0700;Updated library version to 2.5.0
+b637cf8c19937aa87d44cbdedffe0b21c196b308;2016-01-01 11:48:57 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+a3f39da4ed7f7b222c621d524ff5ffc9d124db0b;2016-01-09 14:51:43 -0700;Updated the Version to 2.5.1
+3b65ce197956c38801927ac8c123205bfab3255d;2016-01-09 15:39:36 -0700;Fixed an EMVideoView shutter size issue
+1ef69c73f770669ce96c3f4ea16b4943962b200a;2016-01-09 15:43:28 -0700;Merge pull request #67 from brianwernick/shutter_fixes
+a50432c0332705085029910900b57886a95c780d;2016-01-09 15:44:21 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+53ac8eca1f3333672248684871e6966c5e8c520d;2016-01-11 15:28:47 -0700;Fixed an issue where the FitsSystemWindowRelativeLayout would incorrectly remove insets on devices where the system navigation bar wouldn't change sides.
+262635f714f120880a2f4ea1a897d642b8c62266;2016-01-11 15:29:20 -0700;Merge branches '3.0' and 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+5916087e6b9c920aa06ee5e5df9225b70bcb8701;2016-01-12 08:24:29 -0700;Fixed minor layout issues with the video view layouts
+82e744e5e334cfa3fdee87efb88b5a8bebe1bcd6;2016-01-16 18:25:03 -0700;Removed Playlist support from ExoMedia directly. Removed unused resources. Started integrating the new external library for playlist support.
+9ec1ea797ceff6da4afcae2832371bbd0f9a74eb;2016-01-17 11:34:18 -0700;Fixed the demo. Completely removed the playlist support (since it is now a different library) Updated the README and version
+5900a160ece5da19ffb582e052e075472d1b18c5;2016-01-17 20:32:41 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into library_separation
+ecc77d87ebdc59db4167f80fe0f24ac04af08fbd;2016-01-17 20:40:12 -0700;Minor cleanup
+6f61e0d85842c0947e272048aef89f5873be00e9;2016-01-18 16:03:02 -0700;MediaType fixes
+b8a06897f808ae5f914c1b44b3325832e1747727;2016-01-20 10:29:30 -0700;Fixed an issue where the notification PendingIntent wasn't updated when the notification was
+6976d2eeb18ca4509186c263283a6ac516b510ec;2016-01-23 09:51:43 -0700;Updated the gradle wrapper to 2.10
+94f11e290860df9cb647ed33c74833c2e394d260;2016-01-23 11:22:33 -0700;Updated to match the current PlaylistCore implmementations
+2ed83ad53ada578eab185d2e0821af4584a4cf1a;2016-01-24 08:55:44 -0700;Minor variable renaming
+c57154edeaa682a5b9434f26901edd289af303ea;2016-01-24 08:56:01 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+76d269da532c4635d8a95c1ecd1c430d2ab29fa4;2016-01-24 08:56:38 -0700;Merge branch '3.0' of https://github.com/brianwernick/ExoMedia into 3.0
+de4a4e723893db265d8bf7cf4348f15f87932042;2016-01-24 09:45:16 -0700;Updated to ExoPlayer 1.5.4
+58ba8494e9e200d24f7745e037c6fe97a58127db;2016-01-24 09:56:17 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+6e6dd7f5badd327fe7f94040afe33333220e9725;2016-01-24 10:00:07 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into library_separation
+dddc4b28155ad26baf33c24d152c50201454784d;2016-01-24 10:00:31 -0700;fixed merge issues
+cdf4f743de24b3692adc7b415b3d7ace195a6475;2016-01-24 10:15:38 -0700;Fixed previous vector assets
+3d7c633895afe9d82342bed40550946bcfe2edad;2016-01-25 15:45:44 -0700;Fixed wrong stored state for the notifications
+a9b92107c44ebfdffd1410f6c1201ff4f9b9da0e;2016-01-25 15:45:51 -0700;Merge remote-tracking branch 'origin/master'
+d29e63121106bc35bb1f54592c884185938c9207;2016-01-27 13:35:07 -0700;Fixed an issue where the next button would become very small on screens where the specified padding wouldn't fit correctly
+1d910a0a89dac4271407ac693cdc07b7459b4f3e;2016-01-29 19:22:13 -0700;Minor fixes
+16a0ebaa55347b68e82d1116dfb437a143e59111;2016-01-29 19:30:51 -0700;Added the ability to specify the EMProgressCallback in the EMAudioPlayer and EMVideoView before starting the poll repeater. Fixed inconsistent poll methods between the EMAudioPlayer and EMVideoView
+f7f52962ce2a4472e14d8e376b7ba64f87e2cd42;2016-02-01 00:37:41 -0800;Allow specification of audio stream type.
+c46e58677a837c1f2a8e59a651954d4a6d440728;2016-02-01 08:31:08 -0700;Merge pull request #77 from jarrodholliday/master
+142e02b68396e31e24a585d2b39379ed12f02a15;2016-02-01 16:08:15 -0700;Updated the EMAudioPlayer to use the stream type for the ExoPlayer
+bc7991fe1ec337bb6027ee95a22d5436681c9d3a;2016-02-01 15:36:53 -0800;Use TextureView instead of SurfaceView
+a05a1772f9eb6ba8886cbbca49dbea8c129d69f9;2016-02-01 15:41:20 -0800;Simpler surface handling
+e8637b56bb593d8c9956a33224a1f12ff9a8609b;2016-02-01 17:10:45 -0800;Address comments
+93eb0d93fc1ef9a9d75281c3de2dca4444c90a31;2016-02-01 17:28:52 -0800;Add back black default
+0cf8bcbcdff3e10d315e22257fa996047b032bc5;2016-02-01 18:30:29 -0700;Merge pull request #79 from hzsweers/z/textureview
+f8c06a5e5f441bb78129d4a988cafc0c927d7446;2016-02-02 08:43:37 -0700;Merge branch '3.0' of https://github.com/brianwernick/ExoMedia into 3.0
+15ec857252556f7bbbab4f1306bc7ef114197365;2016-02-02 08:44:50 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+9fb2d30a199b4a36bc09f087129e0d4b8b912165;2016-02-02 08:49:22 -0700;Fixed merge issues
+94eb1f69346a7995a754504871050eb35a3d992e;2016-02-02 08:53:16 -0700;Annotated methods calling API 14+ methods to suppress warnings
+b5b9c6a7b343dad813bc7713125b673f23360097;2016-02-02 08:55:04 -0700;Merge branches '3.0' and 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+7dd52f4ec41de564aaf8d03dcb2d30fd42abdbbf;2016-02-02 09:03:20 -0700;Merge branch '3.0' of https://github.com/brianwernick/ExoMedia into library_separation
+4e79ff7aedb466c8086598ed229fc4d8e9d1b823;2016-02-02 09:03:27 -0700;Fixed merge issues
+0998d34898dbf806401acce04bd9ed8399c8084d;2016-02-02 09:13:58 -0700;Updated the README for 2.5.3
+3d5d6628ef95d16a7e28cb0fabd7d28781ca5799;2016-02-02 14:09:09 -0800;Fix memory leak with the created surface
+f76bc68442f072b5c65f740f4dd60772b6736bd1;2016-02-02 17:33:56 -0700;Merge pull request #81 from hzsweers/z/fix_mem_leak
+250cd40e6563aecb27f8104c6e6411189fa34a64;2016-02-03 08:06:38 -0700;Updated the ExoPlayer version to 1.5.5
+1d21a83dc524ea1928466db289259568ab6e8126;2016-02-03 18:02:20 -0700;Updated the Demo VideoPlayerActivity to correctly pause the video when the app is placed in the background
+cd134e546db77dd6e2dee64fb36f71ceb2e5b9fc;2016-02-03 18:32:06 -0700;Added attribution to the ExoPlayer
+d8eb83831f68c696da7e9c19387a6916801e8b1c;2016-02-03 18:32:24 -0700;Merge remote-tracking branch 'origin/library_separation' into library_separation
+b3fff62714a0081ae00b537a0b1b827abf324b4d;2016-02-04 08:20:23 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia
+2b8e022a1761c928877e34991a1c62630f2e44cd;2016-02-05 21:27:43 -0700;Updated links to the website and javadoc
+95d864c7684a75eef8efe2a25b845afe5aa0d823;2016-02-05 21:32:12 -0700;Reverted changes to the readme
+186dcf9ccf60e20b905a45e80fe2281a6d1815ef;2016-02-06 17:25:11 -0700;Merge pull request #90 from brianwernick/library_separation
+b540faa1043c4d0f78bb3eaa3fef9c92eac8e4f4;2016-02-06 18:56:04 -0700;Minor updates
+605a37d2b00360cf64095f279fac6c07c84af7fa;2016-02-07 10:38:42 -0700;Package structure update. Added an abstraction layer to the playback implementations for the EMVideoView
+bd6ad24e8ce56ff7d6b3b55502e3589b4764b07c;2016-02-07 10:52:46 -0700;Fixed crashes with the previous changes
+cbecb52ae155045362b32d99c625e6749708b9c1;2016-02-07 10:54:57 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+00f545559feb6885cdd3e50e31f263ae7ede8826;2016-02-07 11:18:23 -0700;Updated how the VideoPlayer controls are specified. Updated the DefaultControls to be VideoControls
+1110b1ef52f695bc43a73cac8ec85b63d8844e24;2016-02-08 18:18:50 -0700;Cleaned up the EMAudioPlayer to use an Interface like we use for the EMVideoView
+9682dd0335db60a29fdc374daeb3bb71bd14dab0;2016-02-08 18:28:16 -0700;Removed the now unused defaultMediaType when constructing RenderBuilders. Removed the unused MediaType
+39f61d506221971a91f412576ca5780afb6876ab;2016-02-08 18:29:38 -0700;Minor package update
+9240cbf13e0cddcc1842c866a238ac01ee349ffc;2016-02-08 18:38:40 -0700;migrated minor logic in to the implementation classes
+3df369b2dd09b583a26a80f8eccc433aaf5e325d;2016-02-08 19:25:14 -0700;Fixed an issue where the shutters were sized incorrectly when the EMVideoViews size was changed
+2b4361d5f6aab3f1374dbeaabb7161eeb0ebb1a2;2016-02-09 07:58:00 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia
+84e9b8825e3830a649e338a6599737f38faf1067;2016-02-09 08:02:20 -0700;Updated the README for 2.5.4
+e022f135b891bce80142cd1b54ed679e188a70bb;2016-02-09 15:17:18 -0700;Merge branches '3.0' and 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+8d494e61ecf5101f3232795e7293686b1fe76516;2016-02-09 15:17:27 -0700;Fixed merge issue
+e5735068a262be62f72c62d19a27f0cadb5ef1f9;2016-02-09 23:03:31 -0500;Allow overriding the VideoViewApi implementation
+2666cfbc68c41e4add9a01003ce55ef651b296e7;2016-02-10 00:50:42 -0500;Only needs one EMVideoView layout
+bfe91bfb9416b69afc83b972e8a0859e7697dbc2;2016-02-10 08:19:35 -0700;Merge pull request #95 from eygraber/3.0
+49b6a9cc31b64fd13c5912bb838c57ebc24e587c;2016-02-10 18:07:20 -0700;Updated VideoViewApi implementation retrieval to allow for easier reading and explicit documentation. Updated private methods and variables in the EMVideoView to be protected for fully supporting extension
+63e3ed876d3ea48b755558dfa6120bcb821a06fd;2016-02-10 19:35:16 -0700;Merge pull request #100 from brianwernick/structural_updates
+911c5b68d2aee90ed76a28945bc0c73562c93913;2016-02-11 17:13:53 -0700;Updated VideoControls method and variable visibilities
+99dafa147de68a4626f74899b2b39c732113cacf;2016-02-11 17:19:02 -0700;Added the ability to specify additional children next to the progress bars in the VideoControlsMobile
+62eb4a1d7ee158ce66e55447bc99e1fc3b3e3d99;2016-02-13 13:32:59 -0700;Updated the MinSDK to 14. Added a TextureView backed "Native" VideoView
+639d55ae283a2ee73932b35bf00e1df3650823b6;2016-02-14 09:15:32 -0700;Fixed position parameter and return type inconsistencies (long vs int)
+4f45881ebf156f7f3f3888421c639dcf75c35b1d;2016-02-17 17:41:05 -0700;Fixed an issue where the stopPlayback methods wouldn't call the stop function for the ExoPlayer
+98f9b77ee754de8aee4e9b0fcff31c602881b552;2016-02-17 17:43:25 -0700;Updated the stopPlayback methods to correctly call stop from the ExoPlayer (via the EMExoPlayer)
+57f39a2a875ada75ef6f6d5998d72cde3bcc3169;2016-02-20 11:23:33 -0700;Added null checks, minor helper cleanup to avoid null cases
+bcb2fce7c699cade31bf22773a2e0564648f09e9;2016-02-20 11:24:25 -0700;Merge pull request #114 from brianwernick/issue_110
+014052cb41903ff308ed677c883157617d0a38eb;2016-02-20 17:07:37 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+db7f8c65ad40e5c2d63eeffcff2e95280980a640;2016-02-20 17:10:02 -0700;Fixed merge conflict
+e3920cb3a35796406bd81725f5f8fd1bc8c434f8;2016-02-21 13:43:26 -0700;Updated version to 2.5.5
+831684c1ec8d4d4ce228446d3cf8eaa5ae839c1e;2016-02-27 11:51:21 -0700;Updated Support library and ExoPlayer versions (23.2.0 and 1.5.6)
+13cd61ed547403fb8bf6a2a76d08ec277171f6ae;2016-02-27 12:30:01 -0700;Added Deprecation warnings and links to the PlaylistCore
+42bcdf93ca01839657783a900d0126f84dcd834c;2016-02-27 12:31:36 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+810d74c6bdc44b2e7b1ae4406b28a60166604c4d;2016-02-27 12:36:25 -0700;Minor update to the ReadMe
+db170a02e70e79edefc3cf8b459b55eac974d332;2016-02-27 17:43:19 -0700;Updated the  listener interfaces to use custom ones instead of the MediaPlayer ones Fixed the Demo to use the new listener interfaces with the PlaylistCore playlist support
+de481d05246594cedf6ac66f045e6c01b766563b;2016-02-27 17:45:50 -0700;Merge pull request #120 from brianwernick/issue_98
+708f454df80e626f13feeae71bffcd6cfd7bb99e;2016-02-27 18:04:50 -0700;Updated the EMVideoView to correctly keep the screen on when playing a video
+2953ee1c017f4b429fb39713c10af6acd4d07795;2016-02-27 18:05:53 -0700;Merge pull request #121 from brianwernick/issue_84
+252c82ab65fa317ce51859a45994995a7dcb7580;2016-02-28 13:31:16 -0700;Minor cleanup and fixes for the video playback
+1b3e8cb4425ce3748c0ac2534e2bb4265e77c117;2016-03-02 20:36:41 -0700;Created an issue template
+d7e9b5212332f3edbdcf2883f11a765cc10674ba;2016-03-02 20:42:58 -0700;created pr template
+760e7fb946e8d51a514246d63ce5277326706633;2016-03-02 20:44:34 -0700;minor update to the issue template
+57c8b6be7d55c224342ccafacd73ce48c6329c08;2016-03-02 20:45:00 -0700;Merge pull request #129 from brianwernick/tempates
+6ca4779f33e3836abe9e3c7ac2d26936b2eb767b;2016-03-03 18:01:01 -0700;Updated the functionality of the onPlaybackEnded internal calls to not clean up.
+9edb4c1bf1b6b925ade70775407e6efca80b3b85;2016-03-06 12:10:50 -0700;Simplified the VideoControls workflow and interactions
+957aa7af9333214aa6833df49a14590c778d55a2;2016-03-07 17:13:40 -0500;Added a method to allow restarting media playback
+0286955301dafeacfb95c8cfe6fe9657b4697aec;2016-03-08 00:08:38 -0500;Allow the default DataSource to be overridden
+16e4863668f5feaf4c31c183337c5fb0bfe2cb5d;2016-03-08 13:17:54 -0700;Merge pull request #123 from eygraber/override_data_source
+8092f637b465982b64c465632f20308f89d56cc8;2016-03-08 15:01:45 -0700;Merge pull request #131 from eygraber/replay
+f009e026cb1267350b3911da31e619bc2d8ca588;2016-03-09 00:38:13 -0500;Fix javadoc errors
+0346aae4d174a12dd5f6b1bbeafe513f391b1acf;2016-03-09 08:33:05 -0700;Merge pull request #133 from eygraber/javadoc_fix
+2f2f7c46424e8af2f1aae580f1654e9793f042ab;2016-03-09 01:35:29 -0500;ExoPlayer can be in STATE_ENDED when onCompletion is called
+056d614eebe05a8fdbecc2b685b9b0c6e57ea270;2016-03-09 08:43:26 -0700;Merge pull request #135 from eygraber/state_ended_fix
+03c9837097e9952ff7ea2e2a337e2ec06591a7a6;2016-03-10 18:37:38 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+22afaf8e0f428c02b1ec4c977d98c2f8293af1e1;2016-03-10 18:37:49 -0700;Merge branch '3.0' of https://github.com/brianwernick/ExoMedia into 3.0
+e13cd34d4c13099eff72027d3a1a0eaf5edfd58b;2016-03-10 19:01:40 -0700;Fixed an issue where the native video view would start playback when the surface size changed, even if play wasn't requested
+66a5e58a5faffb8f5a0d253623e515921c1b70cf;2016-03-10 19:05:17 -0700;Merge pull request #138 from brianwernick/issue_130
+ca6448ffbbe2a3ad74d14b9329b3894f42f35815;2016-03-10 19:21:19 -0700;Updated the RenderBuilders ability to be extended
+e17127ad2dbdd18a91f3088842bb95de11c14df5;2016-03-10 19:34:36 -0700;Merge branches '3.0' and 'video_controls_architecture' of https://github.com/brianwernick/ExoMedia into video_controls_architecture
+3e82be0ebd1a46d1bd1ee13e8ec377a542dc90f5;2016-03-13 13:19:38 -0600;Fixed confusing naming for the VideoTextureView (now AspectTextureView as it was confused with TextureVideoView often) Fixed incorrect state changing in the TextureVideoView
+d557fa6d5b771bc47027bc8c3bdfce21cd941c76;2016-03-13 13:26:27 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into listener_mux_cleanup
+430e15346ee4a9d487b66367d1e4b51d4139fcf1;2016-03-13 13:26:37 -0600;Merge branch '3.0' of https://github.com/brianwernick/ExoMedia into listener_mux_cleanup
+a2cb521ea6fd784a3ab2712b602a7c832975368f;2016-03-13 13:29:32 -0600;reverted minor change
+089ecaa5ef98122d8dbf3916ae31b10b0a0c348b;2016-03-13 13:30:58 -0600;Merge pull request #140 from brianwernick/listener_mux_cleanup
+acb045ab3360a89273ddb0cd5ec12a1fef1da213;2016-03-13 13:31:50 -0600;Merge branches '3.0' and 'video_controls_architecture' of https://github.com/brianwernick/ExoMedia into video_controls_architecture
+694c551e399bd28b178e7d6c260f9b30746c6941;2016-03-13 13:56:49 -0600;Updated the VideoControls to correctly poll for progress
+0d0fc02de4b0507db20eab490b865a903fe8e4aa;2016-03-13 14:00:18 -0600;Merge pull request #141 from brianwernick/video_controls_architecture
+cf0a9ef702500c7a7e951e7d903ef3f139bfb728;2016-03-15 19:34:46 -0600;Added a simple state storage which allows the EMExoPlayer to know when to inform listeners of seek completion
+4c0e8bcb93097932d6463b7f579ef4f3c0de67f5;2016-03-15 19:37:07 -0600;Merge pull request #142 from brianwernick/listener_architecture
+16414d2d98982450b9d10e1357f54ecf1790538f;2016-03-17 08:51:55 -0600;Updated dependency versions. Fixed a bug in the Demo app where selecting a different audio item after one has already been played would replay the previous selection
+351297542a351ba3183de6fe0a9767c079165db3;2016-03-17 08:59:21 -0600;Updated dependency versions. Fixed a bug in the Demo app where selecting a different audio item after one has already been played would replay the previous selection
+f1b276b42f877b07f32cf65e4c75717e5047b316;2016-03-18 17:20:37 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+ffff13707903a1e3ca2cc04bb56b724624d80733;2016-03-18 17:20:52 -0600;Merge branch '3.0' of https://github.com/brianwernick/ExoMedia into 3.0
+11d5d7cbe086c2e9e9b63086b94afb77fe9f5e37;2016-03-18 19:28:18 -0600;Fixed issues with the seek completion not being informed from the EMExoPlayer
+5dc963c8f49aa9e6bef318118e97e859b22979a4;2016-03-23 10:45:21 -0600;Updated the README for 2.5.6
+93974fcb9f09a4ef7945d88b6265a4e390e6ee82;2016-03-26 10:48:24 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+262e8518cef9dac8b32f38d8e67dd987f0c7a182;2016-03-26 12:12:19 -0600;Added the ability to retrieve available media tracks
+7a3ff72bbb472d3978b4e47719ae967d44926488;2016-03-26 12:18:31 -0600;Added the ability to specify the track selection
+d0664c4f9cd7e30b21f1f78d8e233f04858243cb;2016-03-26 12:23:13 -0600;Merge pull request #153 from brianwernick/issue_126
+f273816ba56890c36774a4902e46b6d2fd3375af;2016-03-30 20:14:53 -0600;Setup the architecture for specifying video scaling Added basic video scale types
+43faebf73cac912e10514b38bbe721c0f80be45f;2016-03-30 20:14:53 -0600;Setup the architecture for specifying video scaling Added basic video scale types
+fb0c0ae99d8ac00117981f7b2345323acfe66d05;2016-03-31 21:31:37 -0600;Updated the MediaService to set the text on the VideoControls
+4d07c817a70fdc14a90007612d8b26265adf0a1d;2016-04-02 09:10:07 -0600;Updated the ExoVideoView and NativeVideoView to use the same TextureView sizing calculations.
+71ee7850eb4f742a815133b41c363c42bdb5ee78;2016-04-02 09:14:13 -0600;Merge branch 'issue_80' of https://github.com/brianwernick/ExoMedia into issue_80
+15d6d97dbf2d04b0a8cdbdeebaf9a262184fcddd;2016-04-02 09:30:44 -0600;Merge branch 'sizing_standardization' of https://github.com/brianwernick/ExoMedia into issue_80
+a67ebe8f7e5bbdead50d9beda33ce9e42be8be04;2016-04-03 09:28:49 -0600;Updated the MatrixManager to apply the correct transformations
+e51e360e5b4febf7469e5b49d7261beecee15a45;2016-04-03 09:34:15 -0600;Merge pull request #158 from brianwernick/issue_80
+323d229a069826c22b05c1fefe4ff50403cd5039;2016-04-03 10:01:26 -0600;Issue 82
+77d212da648c69928c3e806068b933b455500fc7;2016-04-07 10:46:09 -0400;Fix a ViewTreeObserverLeak
+dcc73cad4b014fb1d3ff1150c9e884b8a061b2d9;2016-04-07 15:33:34 -0400;Add option to not calculate ResizingTextureView size based on aspect ratio (#165)
+ea7ff1d886789ac963703e903c08fa2aee478f4c;2016-04-08 13:16:50 -0400;Fix underlying scaling issues (#168)
+463a02992ecabaf0c7c17b0446c520707b8e291c;2016-04-08 15:24:41 -0400;Use FIT_CENTER for the default scale (#172)
+49f9d7ac624be326b001f9a6dfbe6dae68adbffb;2016-04-08 16:05:46 -0400;Add a flag that prevents multiple stops (#173)
+68cec5f34be12771f9b02b48af95ec560e3a0608;2016-04-08 16:06:44 -0400;Update android plugin to 2.0 (#174)
+54dc29816af4653d92aebefc70169e2a4a86282a;2016-04-09 11:56:20 -0600;Removed the audio focus mechanism from the TextureVideoView to be consistent with the EMVideoView.
+69664168956c46fd1bf805acb7af877f7a236027;2016-04-09 18:28:22 -0600;Minor cleanup of the ResizingTextureView Added JavaDoc to the ResizingTextureView
+cd3ef1c686d43cf5a232da4231c6c529e71b85ce;2016-04-10 09:00:28 -0600;Issue 107 (#177)
+c45366b4715c6e5e5054c50a9ecaea85163cf185;2016-04-14 18:19:20 -0600;Updated versions
+2d7acaa17bf10e8b5153142e6a399654054a57fb;2016-04-14 18:19:54 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+920d7ce89609c05ec4c7f9a8e1946ec38f3008b0;2016-04-14 19:28:12 -0600;Updated structure of the demo apps sample data
+7c277597c5ea5616207c4375b99d0be72e79ef99;2016-04-14 19:39:47 -0600;Updated the Readme to reference the 3.0.0-preview1
+2ff4843f0905f80a7abe0fe346d8652b6e7091ca;2016-04-14 19:41:18 -0600;Added the preview as a gradle option
+30151f4aaebaffd5a35e4f162c720b3ba20c254f;2016-04-14 21:17:30 -0600;Updated attribution section
+fd332a5c1e67114e3cd592bedf05ba755eaffaa7;2016-04-21 14:32:32 -0400;Guard against a potential NPE
+ede034fefe698e7297d8fcefa441c170a9463c5b;2016-04-21 12:42:44 -0600;Merge pull request #183 from eygraber/surface_texture_npe
+f3b300dadf5de70b6949a178d481a514a3264332;2016-04-24 09:41:42 -0600;Updated the build tools version
+1b8e06e4d4fac4b056c6cc57e297c108515c6fc1;2016-04-26 19:24:06 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.0
+033dbc6f048d281c4eb488f09eb0d0bd94e8fca7;2016-04-26 19:24:17 -0600;Updated the build tools version
+d5a5d6e01cd3ca0226467d67da1925329a549515;2016-04-26 19:34:28 -0600;Merge pull request #187 from brianwernick/3.0
+a6d37aa1a48f885a1c81a6451d6e7503eeaf9d1d;2016-04-26 19:35:31 -0600;Fixed minor merge issue
+f3a2ed4cfb2955f542a90d33fc719d0c39a6c646;2016-04-26 19:35:31 -0600;Fixed minor merge issue
+45ac548b85a1d89ff5d8b6deacb84660625aaf63;2016-04-26 19:37:11 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia
+7ca0e2c2ee6b764e905141deac9c96a9ffc5c45b;2016-04-28 18:13:47 +0200;Update README
+8efdbd3950e7a1b628eb50342b399683114c5bfb;2016-04-28 10:20:05 -0600;Merge pull request #189 from martinothamar/master
+b1d61a2104dea1d6db7ee0fc965a33741444e89f;2016-04-30 13:55:03 -0600;Issue 127 (#191)
+2adde63e2fe2a3384487d835c2462afc2583efa0;2016-05-04 09:56:54 -0600;Hide video controls text (#194)
+b7ee3cc9f1989dc3a750228962e2ffb12214f95c;2016-05-04 12:57:36 -0600;Issue 152 (#195)
+3b2077506a612ab76696e2de8c5ebc4eef5b3ab8;2016-05-06 09:05:54 -0600;Minor updates for 3.0 mentions in README
+b58d0ca456762f54897a5ae306c3570c279d1d32;2016-05-07 09:01:29 -0600;Fixes a crash on devices below Jellybean due to an incorrect call with a layout listener (#200)
+1a5025379aabb7da4bb2bb06d9e6bc1feddb9842;2016-05-07 09:45:57 -0600;Updated comments and minor formatting cleanup
+d94539cc6ce61ecbe37d4e3aec698381d3afa220;2016-05-16 18:10:40 -0600;Updated the support library version to 23.4.0 Updated ExoPlayer to 1.5.8
+0f4690adfccba450b0e3feedce6ae0c80c9467f2;2016-05-18 09:25:28 -0600;Fixed surface release ordering
+75c0bafaa7791edbeaee02cf7a822fce7a38d2b7;2016-05-21 11:18:15 -0600;Updated the EMAudioPlayer to correctly use a seekTo time specified before the media is prepared (#208)
+9683cd6f0b40628419d6f340164243a3785bd611;2016-05-21 12:23:23 -0600;Updated the media source type determination (for ExoPlayer backed implementations) to use a more ruggedized comparison (#209)
+eebe5243e024cf91f461afd26ab5e35b2cb1419b;2016-05-21 17:52:35 -0600;Removed the EMVideoView shutters as they are no longer necessary (#211)
+660d71cef38a76b07e666822e6933f085709692e;2016-05-24 07:32:53 -0600;Updated Readme to point to the preview 2
+54e28cf883f6f2dc93be30b66d387131965de065;2016-05-29 13:31:56 -0600;Fixed a crash on Kindle devices due to incorrect API implementation (on their part)
+402d6ff1a3ef7c16e0684d59fbab48e04e2a15e3;2016-05-29 14:37:05 -0600;Cleaned up the check for ExoPlayer support (#218)
+85f533041ee16f32ad9342ae34840f9fbb7e50cf;2016-05-29 14:40:29 -0600;Updated the Readme to point to the preview3
+e9db3c11ca7ca6f0809dd619d2f7075a2e1b1991;2016-05-30 09:09:19 -0600;Fixed an issue in the matrix manager where the width and height were being incorrectly compared
+926cc5a90073000964be9fec16617e6f5cc7c0cb;2016-05-31 18:33:43 -0600;Removed the swapping of width and height for the intrinsic  video size (#221)
+2ed05c050cc6d25e39b76df84ca8087847101792;2016-05-31 18:56:49 -0600;Added VideoControls integration in the PlaylistManager demo. Reverted the static time size fields in the VideoControlsMobile as it was unpleasing
+beef356ff95f73d997eb00072e3c06a987d15975;2016-06-01 09:19:22 -0600;Fixes Issue #224 (#225)
+3623773982208edca01221f71c67ae1d375f04e3;2016-06-02 19:46:16 +0300;* Fixes rotation scaling and
+d6d69bce469f0e09d49b7e1baa2088dbfa0668da;2016-06-02 15:35:03 -0600;* Updated the MatrixManager to store requested changes (rotation, scale) when we cannot apply them immediately. * Cleaned up the workflow for the MatrixManager interaction
+11b28992d4f819902b63949fe2cf54720edb172f;2016-06-12 10:09:36 -0600;Fixes Issue 210 (#242)
+0652cae9536b4b250d649f5fca269d5e502622e1;2016-06-12 10:21:11 -0600;Updated the Demo VideoPlayerActivity to correctly finish when the service is stopped
+108c8e860b9e81ae581f2afe164e5a404b47cd98;2016-06-12 11:23:52 -0600;Updated the RenderBuilders to match what is provided in the ExoPlayer demo
+b2a7ec85b149852aa8c45c0acb50e5498344ebb1;2016-06-14 19:16:32 -0600;Updated the ExoPlayer version to 1.5.9
+dcd5d242a17864f3d7dc265533b3e2e8c551f65d;2016-06-14 19:50:50 -0600;Minor update to the Issue and PR templates
+4b56d28cf1f872331abc62dae487ff8f6837a361;2016-06-15 18:29:52 -0600;Fixed miscellaneous issues with the VideoControlsLeanback
+b1a10f326c6df6b9b88938c46923c84950430f69;2016-06-18 15:47:16 -0600;Updated the `VideoControls` animations to use material interpolators
+20e0bf918bb9be806b6c7eee5e37434a2ceb77ba;2016-06-18 16:13:05 -0600;* Updated the support library to `24.0.0` * Updated the README to indicate the new `3.0.0` version
+5360698533bdc461f4226e7ba977dd8c4cdb1f63;2016-06-20 19:23:57 -0600;* Updated the EMVideoView to play nicer with the updated layout editor in AndroidStudio 2.2
+6161cc792bca48d07fbfb5a7def69d21f341fc8e;2016-06-27 10:45:32 -0600;Minor fixes to the VideoControls
+d7c63bbfb7671ac2afb0ca64807e751ac1e8f371;2016-06-27 12:14:13 -0600;* Updated AppCompat versions to 24.0.0 * Fixed an occasional resource leak in the EMVideoView
+da1e61a08208d73fd42500d9d0119f1839fc3040;2016-06-27 12:18:42 -0600;* Updated version to 3.0.1
+109441bf831dff6c1149eaa970260cbdb919f530;2016-07-05 13:43:11 -0600;EMVideoView SurfaceView/TextureView backing (#272)
+faefcac948535d2ba970c8141c6c75eecd3ca44d;2016-07-06 14:43:20 -0600;Removed the temporary `penaltyDeath()` in the demo app
+72ce9bb65bc335a6cd7add83d14533416e2b03e2;2016-07-11 14:38:15 -0600;Fixes Issue 243 (#279)
+ddd5e14c28d9ef245fd7746503cc124ad64c5a91;2016-07-11 14:44:56 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.1.0
+273293a35169ec4ccc3ba8640fdd420a89644278;2016-08-17 16:49:06 -0600;* Updated support library version * Updated gradle version
+8ef63b1671a87ce2f029c31db2562724663beb34;2016-08-17 16:55:28 -0600;* Updated ExoPlayer to 1.5.10
+c00dfaf08c34cd0ab7af2becb4f06619fc234844;2016-08-17 16:58:20 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.1.0
+ed9aca1e11e2fe2a8b9078f46bd1b8bb587bb01d;2016-08-18 08:12:08 -0600;Fixes issue #296, incorrect available track count (#298)
+e6c072c0ffbc5efab854da422aab2ba89eb99a9d;2016-08-22 17:14:13 -0600;Updated version to 3.0.2
+da8f5d67ec7ecb85e7673bb3aba36097908f02ad;2016-08-28 09:45:47 -0600;Updated the gradle wrapper configuration
+27150eab728b1590dd622c7b345a813a7ffb0977;2016-08-28 09:46:09 -0600;Merge branches '3.1.0' and 'master' of https://github.com/brianwernick/ExoMedia into 3.1.0
+a8be278047143d8df5f0b4b9d46b3f2f6321bfae;2016-09-07 09:12:21 -0600;Updated the support library version to `24.2.0`
+30c2ee31597511d20e8391a4055290ab6a6aaf20;2016-09-07 09:43:30 -0600;Fixed a memory leak in the VideoControls (#307)
+87472a54c51d9e6a2e8b90c5f0f25e24fdd5b959;2016-09-14 18:18:21 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.1.0
+c518708a8e8578893f4832031385361ab62941b5;2016-09-14 18:29:12 -0600;Fixed a memory leak in the `EMExoPlayer` listeners (#310)
+17eeb2121af23fa0300ff285ef4072b0832c2b08;2016-09-14 18:33:52 -0600;Updated ExoPlayer to `1.5.11`
+102188aece92e1ecf358172012e3a686368e84c8;2016-09-14 18:34:04 -0600;Merge branches '3.1.0' and 'master' of https://github.com/brianwernick/ExoMedia into 3.1.0
+330f5c54afd26f07232e1cf0f824c68874f81076;2016-09-15 10:27:25 -0600;Updated version to `3.0.3`
+21c025ecfc2e6d4256e9e23647527225f6d61b41;2016-09-16 17:17:37 +0200;Fix NullPointerException when getting MediaSourceType form an empty path (#312)
+d60e93a0a15831cafa5e3b06c971f4f28e1c5dfd;2016-09-18 16:25:48 -0600;Merge branches '3.1.0' and 'master' of https://github.com/brianwernick/ExoMedia into 3.1.0
+207df5d558c0c436d6314d2e50661ed915336174;2016-09-18 16:26:41 -0600;Updated the support library version to `24.2.1`
+61306a7243a50133b1881018959273679e428151;2016-09-18 17:28:48 -0600;Updated the default controls to use support vector drawables instead of the png generation (#313)
+299f6fc119eae580e25c004bc2db0c8969b4c10c;2016-09-18 17:55:35 -0600;Added methods to set drawables for the `VideoControls` (#315)
+c5ecb2f0232f2765dfdf5d2090928690fb1cb503;2016-09-22 09:17:57 -0600;Allow Custom MediaPlayerApi - Currently you are forced to use either ExoMediaPlayer or NativeMediaPlayer (#319)
+86390d4038e1a23472d7c4d4e4e2a95f24766bc0;2016-09-23 11:00:44 -0600;Updated dependencies
+bf9305180056a3613e0b68324eeffdefebcc5931;2016-09-23 12:24:21 -0600;Fixed issue 263 where the EMExoPlayer wouldn't report buffer changes (#321)
+c0c0d9c634f6dd9cec5a3d5895c513c7feb31842;2016-09-23 12:37:31 -0600;Removed the id3 render from `RenderBuilder` as ExoPlayer only supports it in the HLS format (#322)
+99775f4f40fbda6945e4e8e3b8fb5639ae5dc57c;2016-09-24 12:06:47 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.1.0
+d5cf837b17dbcc1051ee1f1afa1cf35e0c0af39c;2016-09-24 12:44:45 -0600;Updated Readme for `3.0.4` release
+b4e2e51582213df2e22a4e9fbf4c4a1ad5fc654b;2016-09-24 12:49:16 -0600;Merge branches '3.1.0' and 'master' of https://github.com/brianwernick/ExoMedia into 3.1.0
+636c11d5d1c3b6d9dae9a2d26bdee3acae86fbe1;2016-09-24 15:09:10 -0600;Added audio focus handling to the EMVideoView (#323)
+71783a3fc000ccfb8f0f2aa35168323a412b7574;2016-09-26 11:06:48 -0600;Updated to `3.0.5` to mitigate a `pom` publication issue in `3.0.4`
+e5310348dfbd7734420d8bf40e76bf366ed90ca8;2016-09-26 11:17:00 -0600;Updated the bintray release library to `0.3.4`
+039c22cd2201bd26e1ee1d9a41889a8c37d9869e;2016-10-18 19:32:32 +0200;Fix reversed code in methods VideoControlsLeanback.LeanbackInternalListener::onRewindClicked / onFastForwardClicked (#337)
+8a43921b48da56491338e5f9c67494044c5b0a4f;2016-10-29 11:56:43 -0600;updated the gradle build tools version to `2.2.2`
+c62ca6cccdac3d162bd47a31d16868730472d5f8;2016-10-31 19:55:23 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into 3.1.0
+bf733b70f22134b69527a938c0090698563265eb;2016-10-31 20:17:57 -0600;Updated support libraries and build tools to  `25.0.0` Updated the compileSdkVersion and targetSdkVersion to 25 Updated to ExoPlayer `1.5.12` Updated ExoMedia version to `3.1.0`
+a2b8b285837337d056a5ddc61e75c33805280578;2016-10-31 20:29:42 -0600;Updated the demo app to indicate a video playback error
+06c39eff0c04eab265b80ee316f202649364c93c;2016-11-06 11:15:48 -0700;Merge pull request #348 from brianwernick/3.1.0
+e56e98943585d1ad6fb128519bc55ff71ba66426;2016-11-06 11:55:31 -0700;Fixed an issue where the `OnSeekCompletionListener` wasn't always correctly informed. Updated the VideoControlsLeanback to correctly handle the back button when in loading states
+2b3d7bca106bfd6aa6e5343a2c1166b3c9ee1e09;2016-11-06 11:56:38 -0700;Merge pull request #349 from brianwernick/issue_338
+d7d45b86cc23bab7315c249455844f3ea1a1ef25;2016-11-06 12:10:31 -0700;Updated the README to indicate the `3.1.0` release Fixed javadoc issues
+4aedfdc9b5c2ced690b920fa4f54a83bccdb260b;2016-12-06 02:24:38 +0900;Update README (#360)
+3491dca0096b6143c5e8e49808274f7c782e47e5;2016-12-06 10:20:34 -0700;updated dependency versions
+60dc1b4c7847e40ee115dc63be473dc8088f735a;2016-12-06 10:20:38 -0700;Merge branch 'master' of https://github.com/brianwernick/ExoMedia
+ef16277fb6995c21db50fc610f1b5c66309a4924;2016-12-15 09:02:21 -0700;updated dependency versions
+cefeb787fa303e40f5ab72de22cb3891bedfcfe8;2016-12-20 21:49:09 +0200;#353 potential fix (#368)
+81b2fe8b742eefe3cd940ba84e9f82d9daf5f2d2;2017-01-04 09:41:22 -0700;Fixed an issue where the `measureBasedOnAspectRatio` was different between the `ResizingTextureView` and `ResizingSurfaceView`
+866ec0280718ae12a4182b8e67c89dff568c7a35;2017-01-04 11:17:32 -0700;EMVideoView now respects attributes videoViewApiImpl and videoViewApiImplLegacy appropriately. (#378)
+1e5dd77e83e3d2ab4d2862a487e73c9342c2e32e;2017-01-04 17:20:47 -0700;Issue 264 (#379)
+df97e585270cc5f9dd1b3150827f8321dbb07074;2017-01-08 09:41:09 -0700;Updated the version to 3.1.1
+a563becec68aeb015a32717f4401f3dca4e93244;2017-02-15 18:58:51 -0200;Updated NativeVideoDelegate to correctly reset (#401)
+f4e45f1e698a01e68fedd7533f89993139e37f20;2017-02-19 12:13:33 -0700;Fixed scaling issues in the SurfaceView backing
+7610ff0e5060a064e64224693a12ba89b0a44390;2017-01-24 11:04:59 -0700;Added access to set the playback speed for API 23 and greater devices.
+2325831779fbcf9c7c672575395ce146abccca51;2017-01-26 12:27:34 -0700;Updated the ExoPlayer to V2 (#386)
+06dd9a9deed1a5db9d940fe578fdc1c61333f803;2017-01-26 13:07:38 -0700;Removed Deprecated classes and the `EM` prefixes (#387)
+ac56b8b00de69df9869fb16885febdb5e4b75ede;2017-01-26 15:32:08 -0700;Updated position and duration calls to use long instead of int (#388)
+33afb15933c0689a674da3bf7fb81b9495c44c53;2017-01-27 09:37:28 -0700;Removed the set*ImageResource methods in favor of the set*Drawable methods (#389)
+ceab42bd98b1fffd1426e4d90b15d027f928e622;2017-01-27 15:39:42 -0700;Fixed some missed naming updates in the VideoControls Updated the naming for the internal ExoMediaPlayer and NativeMediaPlayer to be *AudioPlayer Updated the naming for the internal EMExoPlayer to be ExoMediaPlayer
+4783d19a289ecb43f2165feb052a531694328733;2017-01-27 15:47:09 -0700;Updated resource naming and removed unused resources
+6990411b79977bf18fee120f899ce927390d57f1;2017-01-30 18:32:16 -0700;Updated the support libraries
+1de06de814a53698b74cf7b2ca68a797230021e2;2017-01-31 18:22:16 -0700;Updated the ExoPlayer version to 2.2.0
+50a44a96492d46b74b8bce696d119c76ec6d6cde;2017-02-03 17:29:32 -0700;minor updates
+85956f21ab2bee7a38227629307ffe653ef1d959;2017-02-03 17:49:58 -0700;Added exceptional information to the `onErrorListener` (#391)
+9eca1f2fbea1282c676b901dfb8dff734a9372d2;2017-02-03 18:03:58 -0700;Updated the samples with new items
+4953bb43b93e1874a97c06fd813585e1643f0374;2017-02-05 10:46:26 -0700;Updated the readme to point to the 4.0.0 preview 1
+e71f579f73ef05bb7dc0672aeff6858bb8d4212c;2017-02-07 15:34:47 -0700;Added an way to provide the default data source to use for media sources (#395)
+104d08613a174b8237bb9f2e35472a3e9c2c06ad;2017-02-07 15:51:41 -0700;stopped the demo gradle from failing the build due to lint warnings
+7a414bf2f99b7d29bf371cf3063df36b8164b50a;2017-02-13 13:36:11 -0800;Bring progressPollRepeater setup inline with its cleanup (#398)
+c5608b9808867dc9fa4a537cf3cdff5605f27e46;2017-02-19 11:44:37 -0700;Re-Added the DRM paths that were removed with the RenderBuilders (#404)
+92665e1a1da3dac17b764802d4f7b4a30853ba3d;2017-02-19 12:01:57 -0700;Fixes Issue #371 (#405)
+527fc73279f21a166627580940b1d468479de2cc;2017-02-19 12:41:36 -0700;Updated the Gradle wrapper and bintray-release versions
+f91ee1f0142807e0dbbd86599204cc9d25e406da;2017-02-19 12:58:41 -0700;Updated readme to point to the 4.0.0-preview2
+df20d0d138353a0d3cfd17993758d51fc49bebba;2017-02-19 18:18:30 -0700;Fixed a scaling issue in the SurfaceView on older devices
+d29c287d46fc87aef4de2b3ea6ab82e135331ea4;2017-02-20 17:37:33 -0700;Removed the AudioCapabilities Listener as dynamically updating the renderers isn't natively supported by the ExoPlayer
+ba22a0406a0dcbe9737c1d62ae2215a9c945ccbc;2017-02-20 18:01:35 -0700;Minor cleanup
+7502f65e56ab853d1303f6ada5ecbb37b53be186;2017-03-05 11:44:50 -0700;Updated the support library version to `25.2.0`
+71b66f612e6628863291085caa55df834ee96916;2017-03-17 20:08:33 -0600;Updated the Support library to `25.3.0` Updated the ExoPlayer to `2.3.0`
+c8e0f10da6cffe8d443f6314eb54ab87c8fe8777;2017-03-18 15:28:01 -0600;Fixed Issue #409 (loading not showing when seeking video)
+e8599e2eb55104a1b8705a436be4210281872077;2017-03-18 15:37:24 -0600;Updated the Readme to point to the preview3
+6a0c5d2070bb4b646b2846f0e97d554c90bf9457;2017-03-31 16:59:56 -0600;Added the ScaleType as an xml attribute on the VideoView
+edea5325233835b1d2f8e76e6209cb588a3e795d;2017-04-01 09:26:34 -0600;Added a callback for video size changes (#419)
+9ae4e78b647ed3bdd272da82d395b7bc18c02dd0;2017-04-01 10:11:03 -0600;Updated the VideoView to leave the final frame intact when a video has played to completion (#420)
+1e6fb46a37b99aa8b7f8dd224e597a919e7afcdb;2017-04-02 16:23:09 -0600;Updated the VideoView to toggle the video controls on tap instead of just showing
+e9dfb5c96e60efb7d533f6bd4343ac47be38fcc3;2017-04-02 16:46:40 -0600;Added the measureBasedOnAspectRatio flag as an xml attribute
+22d275b15d59f5beec738be93b8a89cfe87210a9;2017-04-02 17:39:58 -0600;Fixed a state issue that was causing the seek completion to not always be informed (#424)
+912aa3a8d609bca38670a8b347b84f569fbdadc6;2017-04-04 09:45:27 -0600;Added the ability to specify buffer lengths for the ExoPlayer via `ExoMedia.setLoadControl()` (#426)
+4b4aeda6fe04baa331363f9614d279a4b9062615;2017-04-05 17:32:06 -0600;Updated the VideoControls to just disable the previous, next, play/pause buttons when seeking (instead of hiding the controls view)
+c85275cf1df69c5695704e83c7dd6ad4d8456867;2017-04-11 11:01:56 -0600;  * Updated the ExoPlayer version to `2.3.1`   * Updated the support library to `25.3.1`
+b43c88e6ea022a3a9377e6bd1770e6963c1c985b;2017-04-11 11:04:32 -0600;Updated the README to point to the preview4
+4ee7798f2aa77ebd105e23ec90f81a38217754cb;2017-04-21 21:13:02 +0300;Fix AudioManager context leak (#434)
+653a813c12b43dbc143e7abc35aab64705c26690;2017-04-23 11:03:49 -0600;Updated the demo to use Glide instead of Picasso
+33c8212c522c445e5a59a31bc9b44d35479c1650;2017-04-26 09:04:47 -0600;Added the ability to specify the hide delay for the VideoControls (#438)
+021c7cc5175da673700edb7897ffbfd8b1e5328d;2017-04-26 12:59:50 -0600;Updated the ExoPlayer version to `2.4.0`
+c62ec809f0b325c07f317ac945e296f482c5d637;2017-04-26 12:59:54 -0600;Merge branch 'dev_v4' of https://github.com/brianwernick/ExoMedia into dev_v4
+997f05e03ce320bbacd7e537a8f769b4207f73ba;2017-04-26 18:38:31 -0600;Prepped for the official 4.0 release
+f53669e90645030814980b0af9fb78a3bc396d5e;2017-04-27 14:58:48 -0600;Merge pull request #439 from brianwernick/dev_v4
+6f9891329997ccfdf29e8f330bf284cadeb9030a;2017-04-30 18:07:09 -0600;minor Readme updates
+76f40d15e79611a734ad6acdaf43e117a06f410b;2017-05-03 08:35:16 -0600;Updated video samples
+0f2f8304d88bbec1f4c124995e9e1893ebbb8b8f;2017-05-12 04:32:28 +0530;[Comment Cleanup] Comments mention "Picasso Image Loader Class" (#448)
+052bf8c89d85a14889da3f1e1c12a87215dbd7cd;2017-05-11 18:14:32 -0600;[#444] Fixes onPrepared and getDuration (#449)
+12cc3456918e3339144d156acd1bbaa45602a5dc;2017-05-11 18:39:49 -0600;[#447] Fixes Adaptive quality updates (#450)
+4c69b5cbe4c46d570e6de7f80d8d9ef053052906;2017-05-11 18:43:56 -0600;Updated the version to `4.0.1`
+2937680aedef9f8a3328bdbf743e5267008c5d26;2017-05-17 15:45:09 -0600;Updated the gradle wrapper to 3.5
+cc769000201c2f46101309b263ff21dff8c458b4;2017-05-22 16:01:14 -0600;Fixed Repeater and StopWatch field and function visibilities
+476e3f27edce63fb31fe26a55b6d442f2bdfb716;2017-05-23 16:32:27 +0300;#458 ExoMediaPlayer setAudioStreamType (#459)
+2242c2e7c6ffd88df6f370f3d1192663313549e1;2017-05-23 07:41:03 -0600;Updated version to `4.0.2`
+530ad8307b50023cb059e4524215290a42346657;2017-05-28 14:32:27 -0600;Added a custom icon for the demo app
+b784eb8f3a188c0cbe71db76b17a54431e9b03c6;2017-05-28 14:36:10 -0600;added the demo vector icon
+811e9e856eb234479aad51ba8a60b8341d7e0706;2017-06-24 09:24:39 -0600;Updated dependencies
+b71ebcb75aefb91ab0f48631e7344d0d15798434;2017-07-09 11:07:41 -0600;Updated the ExoPlayer version
+4f82e384e1823a1ae2ea9e36a9c9b7fa3419949f;2017-07-10 12:12:53 -0600;Fixed an issue where setting the `ListenerMux` multiple times on an ExoPlayer backed implementation wouldn't remove the old one
+99940362ee0e272617926a0976dc3408cb367f10;2017-07-19 09:08:34 -0600;Updated the version to `4.0.3`
+2b55a23bc05fe35367c7202c5096469a1c0e9f21;2017-08-08 13:54:23 -0600;Updated dependency versions (#501)
+652237958db6bc7dd9c8cf922859d03f5f039f5c;2017-08-14 08:37:15 -0600;Deprecated the HttpDataSourceFactoryProvider in favor of the more permissive and aptly named DataSourceFactoryProvider
+dff7b531bb3d55480e5d2f8e893910dbfe833475;2017-08-14 08:40:04 -0600;Deprecated the HttpDataSourceFactoryProvider in favor of the more permissive and aptly named DataSourceFactoryProvider (#504)
+58a033f1f28a5f6062cda13f827345bf1f992ddd;2017-08-14 08:40:15 -0600;Merge branch 'master' of https://github.com/brianwernick/ExoMedia
+c611808b8c2fce1d9799ce5f81e0940a6017b8a1;2017-08-16 09:31:42 -0600;Fixed a generics mismatch (`? super E` instead of the expected `? extends E`) in registering Renderers
+2515f31df8dd5a6f0b93c2e5efe3277fc03036ad;2017-09-11 21:10:18 -0600;Updated ExoPlayer to 2.5.2
+1f685af75f16ae11b47883ce332df4f9eee44e46;2017-09-11 21:29:26 -0600;Updated the VideoView's audio focus to handle transient losses more appropriately (#511)
+6d75546d50f097033b8dbd1766132480c1e08db3;2017-10-05 14:15:32 -0600;Added a `getBitmap()` method to the VideoView
+d49a09b2d6fea80bb8d0aa171e59cffb068f8129;2017-10-06 14:52:02 -0600;Updated the support library to `26.1.0`, ExoPlayer to `r2.5.3`, and the build tools to the `3.0.0` beta
+1bd4e7b8e9d80f740e993bd301d1973ba3b23b66;2017-10-26 10:48:33 -0600;dependency updates
+5fc2224651c0be4dfa9dc2f36c09d3e3f4b1d323;2017-10-28 10:32:46 -0600;Updated SDK to 27
+c1898761b14b1b501ee6da1b9ca495e1a02d1036;2017-11-07 08:36:11 -0700;Updated ExoMediaPlayer deprecated calls
+ba3ee0e196a91e99c45d6c13fb10ba484087af38;2017-11-07 17:38:16 -0700;Fixed an issue on SDK 21+ causing scaling to not be applied to SurfaceView implementations correctly (#529)
+735e92ff83ce63baf52e2db23e51d3a4dc4e36ed;2017-11-24 09:27:26 -0700;Updated to ExoPlayer 2.6.0 (#535)
+ef46d9f08f427f808f0e52f5451794bdc4e21740;2017-12-02 12:09:57 -0700;Fixed an issue where the onCompletion listener would incorrectly get called. Fixed the demo mode on Oreo Updated the version number to 4.1.0
+1a18a878a9a9db8bce024bd0ca2148fde68bee54;2017-12-02 12:40:57 -0700;Added a FIT_XY option to the scale type (#538)
+f3d2a6d3fc75aa2182ac13f805f74c43dc29ab8c;2017-12-02 12:43:21 -0700;Reverted accidental demo video_player scale type
+626d5ddce40cf933b2562bed824d5714f4ecc650;2017-12-08 10:30:30 -0700;Fixed an issue with surfaceview video display
+66ee50eb1a1b0b0e14c5ab85db89a7cbf5f40e9d;2017-12-08 10:51:25 -0700;Updated the Readme version to 4.1.0
+2f9cf6186999c4db5334289d8ba2f71494d45351;2017-12-09 10:09:01 -0700;Updated the PlaylistCore version to 2.0.0 in the demo app
+04952f77595ae8a2651865880acdcc2327db3f96;2018-01-22 09:06:21 -0700;Fixed an issue (#541) where incorrect track indexes were being used (#562)
+d8f23668a0d99d585cd6cfb91d37c5ef5d438c76;2018-02-22 10:14:17 -0700;Updated the ExoPlayer version to 2.7.0
+fbce6faf38fdebe61cefcbaab2d72e8527a1394e;2018-02-22 12:55:55 -0700;Fixed an ExoPlayer 2.7.0 issue
+9f151d903609c7514269f32b75d1eb84533613eb;2018-02-23 23:24:46 +0530;'compile' will be deprecated soon (#570)
+07f03c7779ac13d833710266e46b469e7eafb7ad;2018-03-30 16:59:10 +0200;Fix javadoc issues (#587)
+1e89b5f91a3968d778904051b0529c4339d7f63f;2018-03-30 17:47:21 -0600;Updated the support lib versions to 27.1.0, updated android build tools to 3.1.0, and fixed a demo app warning (#588)
+ba9058721836a1833372a7b119a72b39f482c5ae;2018-03-30 19:01:18 -0600;Added the ability to specify the repeat mode for media playback (#589)
+9d0955cc32e43b92dcc12a7fc386e64322e4f93a;2018-03-30 19:22:35 -0600;Updated the pre-provided MediaSourceProviders to include a period in the loose comparison regex (#590)
+b0427a0c674cb1fcd1221f6abd36b78b6ec0b0f2;2018-03-30 20:10:57 -0600;Added the ability to get the current volume of the media (#591)
+445a1c8a99b8344c00ba6f9baefc0951deb0858e;2018-04-03 20:13:32 -0600;Updated the demo app icon to correctly handle adaptive icons (#592)
+cbdf0ee2637d4345df13ff9cfd199d18005811cc;2018-04-04 17:12:50 +0300;Fix video pixel aspect ratio (#594)
+4276f6766bfbfd1e239b675ddfd83124c652ec4d;2018-04-04 08:45:09 -0600;Updated ExoPlayer to `2.7.3` from `2.7.2`
+7433b8805e9e81d8e100cef6e1f539ec0840690c;2018-04-10 18:23:04 -0600;Updated the Android build tools and support library versions
+f5542b4bdf40565e03ce44850a27bac942187e9e;2018-04-25 11:59:25 -0600;Added the ability to disable renderers (e.g. audio)
+0759ff51b5603f6827ca613af788f4a245aa6407;2018-05-01 15:02:42 -0600;Fixed a demo app issue in the fullscreen video player where the system UI would get in to an inconsistent state with the video controls visibility
+336b08167e6504aef9d154d710f7bc71342207ab;2018-05-07 10:21:22 -0600;Added the ability to get the current playback speed (rate). Updated the Override position (StopWatch) to handle the playback speed (rate)
+1b3d652c5e4f32d33e27550cd0f24072ff9ccbe2;2018-05-07 11:27:41 -0600;Added the ability to specify a uri scheme in the MediaSourceProvider
+cd21a32fa9e7e7eb05d65d86599a1564c1b1eda7;2018-05-07 15:13:13 -0600;Updated the VideoControls to use an interface instead of the abstract class (#610)
+2202fb3e29aa9b8336d8c267b2dabab7ef0c3f3a;2018-05-07 15:17:55 -0600;Fixed an issue where the VideoControls wouldn't correctly abide by the size of the OS navigation controls when on the left side of the screen.
+71cc18a9be85fabecb36e591d9c39c1f5a00f65c;2018-05-08 09:45:52 -0600;Updated the VideoView and AudioPlayer with the ability to get Timeline.Window information to help determine live/vod differences (#611)
+c3e27a71af7b9e90d7d0ea803a6a0bbee35e89b3;2018-05-08 11:59:38 -0600;Updated the leanback styles (#613)
+4a143873303492045a4086592c2141755458eddd;2018-05-08 15:02:59 -0600;Updated the Copyrights to use `ExoMedia Contributors` instead of `Brian Wernick` as that wasn't always accurate
+9336f854d87caca64bc631642904636362a79f3d;2018-05-08 15:54:25 -0600;Added a basic contributing file
+5d36323f83c36cb7e494da9bbfaca90b4327a8a4;2018-05-09 09:32:57 -0600;Updated to ExoPlayer `2.8.0`
+725d993535c4978ef408ae17c9bd3e6a09503e67;2018-05-09 13:08:54 -0600;Updated the Version to `4.2.0`
+85076ec095e35bda8a8eb7dd3ce99e3832aaa3bc;2018-05-29 10:16:17 -0600;Fixed the `seekTo` and `getCurrentPosition` functionality to pay attention to multi-window media sources. Updated ExoPlayer to `2.8.1` (from `2.8.0`)
+18404e57fb483f5318b76a46f578358f07988b36;2018-07-20 14:54:17 -0600;Add getter to ExoMediaPlayer for the ExoPlayer (#633)
+871d0d7e1034bc44ff14cbe76adb62a9e422ae2f;2018-07-24 19:35:08 -0600;Updated the track selection to include the group index (#634)
+b2b316ebbd224248902ed20bbfe2aa482b9153af;2018-07-24 19:59:46 -0600;Updated the version to `4.2.2`
+4d41c789971532a070efe618489d8f6190c777d4;2018-07-27 10:27:52 -0600;Add getter to ExoMediaPlayer for the BandwidthMeter for gathering analytics (#635)
+c5d2b0af7e64c2262813d06df5d96897d29375d5;2018-07-31 14:48:39 -0600;Add support for AnalyticsCollector and AnalyticsListener (#637)
+295267a532c9f0061bc5d1d0926d5e06cbfbcf24;2018-08-03 18:25:50 -0600;Fixed NPE in DrmSessionManager and the AnaltyicsCollector (#640)
+6da1f1212758acfb53cd1a053a4944c11a73457e;2018-08-06 09:04:55 -0600;Updated version to `4.2.3`
+120cfcdb5aab77cd5d12b55b350fbbe22d4e4903;2018-09-19 18:36:30 +0300;#541 fix exo player track index calculation for the exo media renderer type such as it is not a constant value (#653)
+a406e5d38be0d87aa8286681ae770abcb53c7057;2018-09-20 19:39:45 -0600;Updated the ExoPlayer version to 2.8.4
+d2aa5296bc1b186932a11889fa8b2646f33ad43b;2018-09-26 21:14:43 -0600;Added a `getSelectedTrackIndex` method that takes the `groupIndex`, deprecating the original that assumes group 0 (#657)
+c5625fe39ed08ce0c5921b85c6ac9912603ea725;2018-10-01 17:44:03 -0600;Updated the ExoPlayer to 2.9.0 (#660)
+bfac4611f6ff4f70c044458e4d057da77a113f01;2018-10-01 18:06:43 -0600;Added `getSelectedTrackIndex` to the `VideoView` and `AudioPlayer` (#661)
+c576d11c733ac9468a5c26ee134669243f8add9e;2018-10-13 17:40:30 -0700;issue#663: Fix leanback controls show/hide animation during trickplay (#664)
+c3b9ffc5ec65287ddffc7c882cdcd468f2a6bf51;2018-10-20 17:55:52 +0300;Add support of multiple renderers of the same type (#665)
+ce449741a31b96db15362033a358cee7bef84dad;2018-10-22 09:10:20 -0600;Updated the library publication to use the bintray plugin directly instead of the novoda wrapper (#667)
+de1e188988cc1a1c309751826e5cfa697b753e8e;2018-11-08 10:25:22 -0700;Add FOREGROUND_SERVICE permission to the library #671 (#672)
+89b96b80e06933b30b6f71c70f2e5880c7dcacb6;2018-11-12 23:37:43 +0800;bump exoplayer version to 2.9.1 (#674)
+c0f4bc3a98cea8c10ee47bcc8788ba3a30081570;2018-11-16 19:06:56 -0700;Added Captions example to the sample. (#670)
+dea8b6cce48f29d098dfc51df580a6c4a05a055d;2018-11-17 17:35:27 -0700;Updated version to `4.3.0`
+5a9043886faf3e60ac15e9632cdf5757607f4e49;2018-12-05 08:46:15 +0800;issue#678 Optimize the update for current timestamp (#679)
+80985d70ec7a359d54b04ddc48d30dd1dd341e0a;2018-12-04 19:18:03 -0700;Convert Demo to Kotlin (#681)
+bbb1058098b1f5fe4c31e0e51567066e0e2b17d9;2019-03-20 17:48:21 +0100;Update AudioFocusHelper for Android O and newer (#690)
+759adcf670882a057df1236850d406a1f783f08a;2019-04-08 21:37:46 +0200;Update ExoPlayer to 2.9.6 (#692)

@@ -1,0 +1,293 @@
+3a4a104ceadc7b4bdfc88b00e5c2dc28740109f5;2011-03-25 16:36:23 +0100;Created a readme
+4304cf3d85c473ac62538aff300ecf240968fb88;2011-03-25 16:39:46 +0100;Initial source tree commit
+176e36be6a61404e370bdb4d22109c0bc2ac7daa;2011-03-25 16:44:19 +0100;Nicer readme
+590609a926c386c98e9ebc383773a25226d4f9dc;2011-03-25 17:00:12 +0100;Nicer readme.
+811e54365dd3455c4b4939233a45a11645916b10;2011-03-25 17:13:47 +0100;Added a link to examples.
+c2525e0d0e6163801360ec88d50f236181f99792;2011-03-26 02:03:31 +0100;Created an example application for pitch tracking: Utter Asteriks.
+1dc291294e3dddd36cf54e05af71e101b8779334;2011-03-28 09:25:49 +0200;Other UtterAsteriks pattern.
+9e4a7f542e5d75055f4dc75bf921069d38b41b61;2011-03-31 10:55:09 +0200;Small cosmetic changes.
+961ab4a42cf1ee2de6db224b693e4a9bac128e2c;2011-09-23 16:14:33 +0200;First draft of an Goertzel implementation
+bdf164447e6623caa847e9f6016e6337e78d2155;2011-09-23 16:16:27 +0200;Change to default YIN block size: allows lower detectable frequency. Other small changes
+2bf4f9e9ade5e42e069e5a5d7dc28ce06e375e24;2011-09-23 17:14:54 +0200;Goertzel
+e4728bde4a3d9c88fcf709117667b5ed1732c963;2011-09-26 17:40:21 +0200;Extended the Goertzel algorithm functionality and coded a UI example of DTMF using Goertzel.
+7024f46b0c796b4821dc32a793bb701d52f9f2eb;2011-09-27 10:21:22 +0200;Added comments to the Goertzel code. Sanitized the Goertzel, DTMF unit test. Cleanup
+af73cf4a1a8964ba3dfe96165b788bc084baa57a;2011-10-21 10:49:36 -0400;Added DTMF.java: an utility class to generate Dual-tone multi-frequency (DTMF) signaling tones.  This class also contains a list of valid DTMF frequencies and characters.
+4526fd9aa77d35a4011ab1afda9ada7d1dcf3651;2011-11-25 15:51:53 +0100;Changes to Utter Asterisk
+ac3e813b382dda78d301a7490b28f1eae9192383;2011-11-25 15:52:12 +0100;Merge branch 'master' of github.com:JorenSix/TarsosDSP
+4920a99366d4aa347b53290ec8246e35e2e4859e;2011-11-29 14:39:25 +0100;Included a graph in the sound/silence detector
+ac115eb0d50012b1dd538c06aaca04303991fd4e;2011-11-29 14:39:55 +0100;Added a test file for utter asterisk.
+a22dc16baeebfd5f79cb1e1c0968f3dbdc787131;2011-11-29 16:40:17 +0100;Changed buffersize to improve pitch detection in the lower range...
+622e25d78c828201ffcb389b15fcbe8bd4a6ae28;2011-12-15 14:56:11 +0100;Renamed some examples. Added a scroll pane to InputPanel to allow a large list of audio devices.
+031629245fdb30db08da0a25ea69fe2f1efa1bdc;2011-12-15 14:59:29 +0100;Added ANT-buid files to build executable JAR-files for the examples. Some resources are skipped automatically, the source files are include in the jar-files.
+b7b1a8ecab704c03fcf9386b5466ed05165e67e8;2011-12-15 15:15:40 +0100;Added a title to the Goertzel DTMF endocoding-decoding application. Created a build file for the Goertzel application.
+b760af16763a18cc5d3af51f170eb957add6f08a;2011-12-15 15:41:08 +0100;Expanded the readme file.
+71b8717bea47c40483ec5a42caeca5f9c4ed7aa3;2012-02-03 17:13:08 +0100;First stab at WSOLA implementation
+ba83748fd6f7b70a9f30e710a8ed33ddaec28d53;2012-02-06 15:50:29 +0100;Changes to support WSOLA features + new time stretch example.
+fdae808580ea7a6312330477f43e90627fe795a4;2012-02-06 15:51:39 +0100;Changed script to build time stretcher example application.
+69c0d3b6c38f0d214c2d91040bc136abecfa467b;2012-02-09 11:00:41 +0100;Small change to WSOLA algorithm, implementation of spectrogram example
+0fc5890d4c83a99804a559da4031df4651e2f05c;2012-02-14 14:53:37 +0100;Housekeeping, moved WSOLA implementation, added some comments
+6266ad3364a45afc98e2d284549bef38449a1a77;2012-02-14 14:54:34 +0100;Spectrogram example changes, build script updated
+84ddac866f60c94b7d4abd5765eb35272ac3f858;2012-02-14 14:56:38 +0100;Added a prefix to each file with credits, affiliation.
+e631f1b68fc33a661264bb4da88e0491635d268f;2012-02-14 15:49:08 +0100;Added a command line interface for the time stretch application.
+5964c0eb43e5bdf6e17c7d1edb33e4d3874bc804;2012-02-14 15:49:36 +0100;Changed the readme a bit to include more links to example applications.
+2270ef8436c2465d84691ab216019f844f334c51;2012-02-16 16:52:02 +0100;Added a simple volume (gain) audio processor, basically to control the volume or gain of the audio, not much else you can do with it. It certainly does not fetch beers automatically or anything else remotely usefull.
+4f17f11a8c6120b6dfb5f0398577ac57eb37bcfa;2012-02-17 14:43:37 +0100;moved pitchprocessor
+85709b3e7250ebcd3c95dd50a06d4d3ca7557311;2012-02-17 14:44:12 +0100;Added package level info for filters package.
+b01703655c24489ad0346684e55763060bc352ac;2012-02-17 14:45:12 +0100;Small changes to examples
+9f9590761b56a89b52d98a2fb682d017d35b59f0;2012-02-17 14:45:56 +0100;Added an echo (delay) effect to the library.
+dd4ba9566d2893816e8f948485a7ba919d57f4b1;2012-02-22 10:53:40 +0100;Redesign of audio dispatching, allows for dynamic buffer sizes through the pipeline, eliminates the need for FloatConvertor, all in all a big improvement. Refectoring is not completely done.
+91bfc5922f7bd349652ea2e551661794859f1f0e;2012-02-22 15:09:48 +0100;Refactoring to support the new API based around the AudioEvent object.
+b681ca4c9d2367dddbd182a09ba3ae8d53043f5d;2012-02-24 14:57:49 +0100;As an example of the capabilities of TarsosDSP an Advanced Audio Player was developed which includes, next to the normal playback utilities, a time stretching (WSOLA) feature.
+0fc9c8e016f32c2e6a8144f83fa56e72a692c16b;2012-02-28 21:44:52 +0100;Changed FFT implementation to allow any buffer size.
+6dab8ec8d9da4a71576f58e446ce452304925e83;2012-03-01 12:00:36 +0100;Added some more credits to the readme
+7907fefa2e09058df7cfcba61a60a653bad10fef;2012-03-08 22:24:45 +0100;Oscilloscope example implemented
+77c0be38c9690a82b7957496dd7d4f11a8314cfb;2012-03-09 10:00:54 +0100;Started swipe implementation
+7c0115fc1aae6ff7db7f1f61920a709412c741a9;2012-03-09 10:02:16 +0100;Better attribuation of filter code, new bandpass filter
+8654646ca74a0108290862c12104c15d5f339041;2012-03-09 10:02:39 +0100;Small cosmetic changes
+1d592fa4c78143ca8b406b7fbd05a4865bfe4f1d;2012-03-09 10:08:33 +0100;Updated header message
+5801dd0ae73a2c43e210f4c9b621024f8835f5f6;2012-03-09 10:12:11 +0100;Now correctly updated the header message...
+794077aed99258b4584e89998ad9ec6fd96ed83d;2012-03-09 10:16:05 +0100;Oscilloscope example build file created.
+5619a8cd1a6e410cb31004db3783ec94c31ce2c4;2012-03-14 10:25:31 +0100;Added an implementation of a pitch estimation algorithm: 'Real-Time Time Domain Pitch Tracking Using Wavelets'. The code is based on the dywapitchtrack library by Antoine Schmitt which is MIT Licenced. Some unit tests and test files are added as well.
+c575310328954df311fb27316687561658133749;2012-03-14 11:07:49 +0100;Added credits for the Dynamic Wavlet pitch detection implementation. Some small tweaks to the algorithm.
+613c0b52b7fa6d1e77179dcea6582fcda61fadde;2012-03-14 11:10:03 +0100;Corrected the URL for the Dynamic Wavelet paper.
+6a854c0f03ead2f1d1e6d553982cbb82126ed22d;2012-03-23 12:17:25 +0100;Included more credits
+598191b14368b4c2d1b28aa4f0a5034ed4c58aff;2012-03-28 10:55:52 +0200;Fixed link in readme.
+cf7ffc8c78aef8bceaa6d587ebe9604c850af482;2012-04-23 17:10:06 +0200;Modified the build procedure to include version numbering and multiple tasks in one build file. Also changed the README.
+3a3a88c6b77a08fa91c5e70303d73fb6d3930ecd;2012-04-23 17:36:56 +0200;Included getting started in the README.
+3096400351686324fb315f2ada5c7b8eb2c8a46c;2012-04-25 09:11:35 +0200;Updated readme, build file and fixed some javadoc errors.
+6fc7eb664f32fb81e61d406535e18d3298e24e62;2012-04-27 14:47:44 +0200;Change to version 1.1: modified the way audiodispatcher stops, added StopAudioProcessor. Small changes to the Goertzel implementation
+304d9ca27018332fe6fd75587cf84252aa9180ff;2012-05-09 10:08:37 -0700;Updated pitchdetector example: now the algorithm can be changed with the user interface. See issue 3.
+14d682583d061eb821bd92e90fd7874a06655e76;2012-06-04 08:44:05 +0200;Small change to DTMF class
+c4067aa5449cd1a677ed8fa5088952344104ed43;2012-06-04 08:44:33 +0200;Included information about wavelet pitch tracker
+7661079f0ca854c11426da2f78f14611739b21df;2012-06-04 08:55:00 +0200;A fast YIN implementation by Matthias Mauch. The optimisation is done by using an FFT in the difference calculation step.
+1a1fe0cff87ee14096d18f80c12d01a886d644f0;2012-06-04 10:02:22 +0200;Added Matthias Mauch to the credits of the readme.
+8139b0c9b89fa948e302a2f0a0d97df3f8523686;2012-06-04 10:03:57 +0200;Updated the fast YIN implementation to reuse some arrays. Modified the unit test to support fast YIN.
+64a13cedd079416285e0acffcdab399de375716c;2012-06-04 11:27:42 +0200;Extended unit tests for pitch estimators.
+97240c838576e499a2223d5af39cb9e3689cd5b3;2012-06-04 11:29:21 +0200;Added a new pitch estimator: an Average Magnitude Difference (AMDF) implementation by Eder de Souza.
+aaa7a425a34e88b989d2dcc642894d727535ae7a;2012-06-04 11:40:55 +0200;Updated credits in readme and AMDF implementation.
+edcaecf0ccd0c52763485eb04ae2ccc01544c0ea;2012-06-04 14:37:04 +0200;Tweaked pitch detector tests. Started with refactoring to include more results form the pitch detectors. RMS calculation added to audio event.
+ac2e74b4ae3dbe894fa5fb9609bd830feb2c4a64;2012-06-05 10:59:10 +0200;Version 1.2 created. PitchDetectionHandler has a more usefull interface now. Every pitch detector now returns a pitch, probability and is pitched boolean. Refactored the examples and code accordingly.
+c138c2dbb6bc6019bd8cda1c84703b37e44f69d2;2012-06-08 08:59:35 +0200;Added version 1.2 info in the changelog.
+bd19bb6465525946274a7f787291cb6a9b1b9e50;2012-06-08 09:00:12 +0200;Fixed bug in selecting pitch extractor.
+3637d6e4455f8b0d343fa5696ebdc95dd767ee07;2012-06-25 17:21:34 +0200;Added a copy constructor to PitchDetectionResult, since objects from this class are frequently reused for performance reasons.
+d4fa60dbc7f204c20a5f16cc384993b449b12c2f;2012-07-10 13:46:14 +0200;Started MFCC implementation, currently not functioning.
+8250e42c860c7d8d9a41ebc3227e7fc037032484;2012-07-10 15:27:46 +0200;Added unit test for mfcc class.
+f1d0f1ecc10794f2b4f26ee2455f34f1240185ed;2012-08-21 09:47:48 +0200;Unit tests fixed.
+120d7ae0afa0b6e8b281ccb1179910a47500c84e;2012-08-21 14:40:54 +0200;Added an envelope folower (detector) implementation to the TarsosDSP library.
+84b6b02c6aa4068d17f05950b5ac9fc7fe7c6fb7;2012-08-21 14:41:47 +0200;Small changes to the MFCC implementation.
+942d5ce868ae28c78b6dc709d9d5f8d515a25de9;2012-08-21 14:42:44 +0200;With the new junit Ant task it is possible to execute the unit tests.
+87e35b0ad687386d569a9891cef36eadaecc7ee5;2012-08-22 10:52:56 +0200;Changelog updated.
+dc6135a2274e559fba620e51599715bbecc37c5d;2012-08-22 10:53:19 +0200;Comments for the EnvelopeFollower.
+72f9bb35317b0de7b15c94013be09d6d5ea1dd90;2012-08-30 15:10:30 +0200;Updated links in readme to TarsosDSP version 1.2.
+def52595f50f53f12d34a8fb8aa50d7b85a9407f;2012-08-30 16:39:30 +0200;Updated links in readme to latest TarsosDSP release.
+5f58691d980a5bdf2f6f6fcb00a9d1bb606f8400;2012-09-17 11:22:39 +0200;Implemented a synthesis engine
+e7b372258286b3c9414f436eaf9cdb7bbcedc6d4;2012-09-17 11:27:37 +0200;Started working on maven build file.
+095f13ed9168e304bc7b556febc3c7fe96646ad4;2012-09-19 10:22:54 +0200;Implemented an amplitude LFO and updated the synthesis example to a somewhat more interesting example.
+ae767553e5d8180c0df6376dcbb0173072219774;2012-09-19 10:36:18 +0200;Changed the header for each source file
+8641a143f249a0e61612a576f1ced0bea628b54d;2012-09-19 10:37:06 +0200;Changelog for TarsosDSP 1.3 updated.
+21220241d98c9c5d204d7cbc8f893dc023e7c279;2012-09-19 10:38:03 +0200;Added two examples to the build file.
+8dd110a52cb8331139436e6b93e139eadfea8226;2012-09-19 10:42:39 +0200;Cosmetic changes to the readme file.
+3954f7c9b87637c833d74710b13b5e2e8d95cefe;2012-09-19 10:44:13 +0200;Cosmetic changes to the readme file.
+e4450c42c2cad9c3f1d3d352905456711b8d9dfe;2012-09-19 10:45:19 +0200;Cosmetic changes to the readme file.
+62be419f8a15ac07db88d6f2c89c0154c8b08675;2012-09-19 10:45:59 +0200;Cosmetic changes to the readme file.
+2c0ed1f0f07af7e41008362ae23653164777ea0e;2012-09-19 11:13:46 +0200;Cosmetic changes to the readme file.
+5922d71c6f44c4f7d6718c8d42bb1bae329adbc3;2012-09-19 11:16:06 +0200;A script to update the github TarsosDSP page automatically.
+836a3b5903c4f578cc2c9ed0aa5867153b6a9c33;2012-09-19 11:40:40 +0200;Added new examples to the readme file, some cleanup.
+ce24a0d2f74420eb4c65cb027bfb1fc73e6fb062;2012-09-19 11:41:56 +0200;Included deploy script and header and footer for the github pages website.
+e3d4b6cd96be641b344bbeea029e58e3647571b5;2012-09-19 11:47:36 +0200;Removed header and footer.
+8d7437e56b70a68d278b1b4eab075823efec0847;2012-09-28 14:47:22 +0200;Updated the command line interface for the time stretch example.
+2a6e81d229b0e1a8e3ed412d163b162947fdd68b;2012-10-31 14:39:47 +0100;Added an implementation of a sample rate transposer, together with tests and example. In the background code from the libresample4j is used
+2a7f6c58615ba4a2723a2fb296dd4eaf23e2dbd3;2012-11-01 20:54:27 +0100;Bump to 1.4, changed readme and build scripts to include pitch shifting example.
+6bd64c10914766d725b2fb433df53a41b314f1fe;2012-11-05 16:11:44 +0100;Deploy script now creates links to latest examples. Readme updated with info about libresample4j. Pitchshiftingexample now includes real-time microphone input support
+0e5f9c497a652f55b564b70f9260529a5de85f8f;2012-11-05 16:12:22 +0100;Implementation of a multichannel to mono converter.
+6f2aab1a29e76893ada132abee288d51df6e5e1b;2012-11-08 11:40:59 +0100;Updated TarsosDSP description.
+207ce0926f8b276194f5be143284d72eb3a9db52;2012-11-14 11:11:34 +0100;Added a ruby script to prepend files with a uniform header.
+ce08944ffe552fad62bd16922270af6ce5f3fea0;2012-11-14 11:12:40 +0100;Modified the header with info about TarsosDSP on each source code file.
+148f3887734e06b102f1301e4e4d38666bee6fae;2012-11-19 15:00:27 +0100;Updated index html file.
+69661d94aaa1b0497d9eb876c428f25e11a53306;2012-11-19 15:01:17 +0100;Updated readme update script
+e2db23a26a738254e0e75e80eaf1792c3ccb7444;2012-11-19 15:13:03 +0100;Manual location change.
+0af115e11216926941060251f31a9a5cde7f3475;2012-11-30 10:23:45 +0100;Option to start with audio dispatcher with default microphone added.
+45fe310e3b65ed7e0cab3a9bbc88e533341ee3b1;2012-11-30 12:13:24 +0100;Nightly build files added.
+d842769b8dcb222f6ba694d4015b100a447bb2ae;2012-12-13 15:41:53 +0100;Created a new example: it shows how an audio file can be loaded and a part of it used to phase vocode (pitch shifted and time stretched), e.g. to create a sample database in an arbitrary tone scale.
+c24850ab10de4406d9d291043e4c2242e2b5c071;2012-12-19 16:30:08 +0100;Created a new example application that resynthesizes pitch annotations. Small change to the envelope follower was needed.
+3d3ac98fd5a0d10934627f735e74e7c7ce0e7e33;2012-12-20 15:09:49 +0100;Added an optional median filter.
+96421a934ed3cdc12c4e6aea3dfdaa40903b507b;2012-12-21 16:27:45 +0100;Catify example
+0e33276940c6328a3ab2a4698b5b6a139d029449;2012-12-21 16:33:18 +0100;Build script catify
+8d275f8c2dedae3daab0f31cf13b40e32429f554;2013-01-14 13:28:21 +0100;Modified build file, ensuring that only the needed files are included in the example-jar-files.
+b44450b209eb55b4bcac5fd5fe6fed088bcda0f7;2013-01-14 13:29:33 +0100;Added the option to render a midi file with audio samples other than the default sample, also bugfixes.
+323ae8fccb082edf1845352e617627d2ccd16b98;2013-02-04 11:59:43 +0100;Implemented a Flanger Effect, created an example application that demonstrates the effect.
+1f8711e476a76a44bc4a921025dfc5d697497d4c;2013-03-19 01:44:02 +0400;Fix charset in the titles of input devices
+9c151cec330f71a890a35808f5e4355d896f65d3;2013-03-19 01:50:53 +0400;Revert "Fix charset in the titles of input devices"
+4d90cd93a413a19c611efc29191584f22b6251fc;2013-03-19 01:58:15 +0400;fix the non-latin characters bug
+480817df2f36cedd5434ddf11aee6c3a60bd968f;2013-03-20 00:25:30 +0400;added the .gitignore
+fed87662444b0740bb818690fb871a1db35edf23;2013-03-22 08:55:32 -0700;Merge pull request #6 from rikkimongoose/master
+04c5dad7363879d7393d363fb807796a61fce229;2013-03-27 11:00:02 +0100;Added support for window functions in the fft class. Numerous windowfunctions are provided by Minim. Thanks to Damien Di Fede and Corban Brook.
+ca67565efcf969ee75afd1d8f56f722bf4f35f79;2013-03-27 11:00:27 +0100;Build scripts update
+8a088f02b1159e421b1f601a8ad6c92484730a8a;2013-03-27 11:02:00 +0100;Merge branch 'master' of github.com:JorenSix/TarsosDSP
+e32a3e8a51cc373fa31584f9ed76126b2b6ee060;2013-03-27 11:04:43 +0100;Updated gitignore to ignore some binaries
+0bfc56ae274cc8ed53d33508b494b63f7a948afe;2013-03-30 20:53:22 +0400;Move to MVN
+1c3a069920fa2d16a040af5117ccb53a74103f36;2013-03-30 21:05:38 +0400;.gitignore for maven
+fcb6848a6e4479f7272f9fcdffa2ae7282f523f4;2013-03-30 21:44:44 +0400;add docs
+810b22c8ff137bb9a8a101ec5bdc9f2d7eeddb1c;2013-03-30 23:49:31 +0400;Update README.textile
+baf9e08bde5ee8947f231384b74163fdb8362e91;2013-04-01 23:35:51 +0400;add the javadoc support
+86220d72c8bb52523abd200bea0e308f7a01fbee;2013-04-22 09:20:16 +0200;Merged branches
+4c8fc69b545cbbe32a7412926db94193ef0d8812;2013-04-22 09:30:07 +0200;Added window functions
+2b899b8496b44159660257bdc1591f4e6fd05f9d;2013-04-22 09:30:55 +0200;Removed source from non maven compatible place.
+2d421826032bccacdddcc3fc2c23524f4d776103;2013-04-22 09:34:48 +0200;Merge .gitignore
+757d6c9de3c68be6b61c58f4c66589569ae2cb6e;2013-04-30 11:04:24 +0200;Removed html version of readme file
+331a9064e36aa8a5a571bccee48867b5ec46d12f;2013-04-30 11:11:54 +0200;Included ant build files to allow nightly build.
+49ba9e0c771fdbd1dbff6b83f8054204b6ea3345;2013-04-30 11:20:26 +0200;Version to modified to 1.5
+604d5619aa0bd7da39f465cb5f88eb28d4794730;2013-04-30 12:17:15 +0200;Updated build scripts to reflect source code location changes
+d4fecb3bf07ca0e8a0522e76d31fe14020d66434;2013-04-30 12:18:58 +0200;Readme updates to reflect maven changes
+5885031f798316b4b95950846f551edca2d25ab8;2013-04-30 12:19:31 +0200;Do not put symlinks in scm
+85797bef4a47f4dbe4c5e880c8e0873b6f8f590e;2013-04-30 12:19:50 +0200;Added a description to the pom file
+18ec5902305245ad23698cf145f22561ff22064e;2013-05-05 08:50:20 +0100;changed depedency to TarsosDSP 1.5
+6fa34d0236782b0ac7a104b8221afd166f8b9acc;2013-05-07 17:07:16 +0200;Readme update and pom descriptions
+65cef392cd96c456476a9cb849d5391330aacae8;2013-05-07 17:10:04 +0200;Added the beatroot onset detector, with unit test
+6738d249b49df7d049b79512a6bb42e39b1ed3ca;2013-05-07 17:10:50 +0200;Ignore tests symlink
+2f0289a6c78217962e86ddab2e14ea0f98187825;2013-05-07 08:11:39 -0700;Merge pull request #8 from ptigas/master
+65626ca726996b995621fe25305feef8f8e0e54f;2013-06-03 16:04:16 +0200;Added a complex domain onset detector.
+2c20f25dd429109b99952624d18863c063bdfe54;2013-06-03 16:04:43 +0200;Merge branch 'master' of github.com:JorenSix/TarsosDSP
+87543c39d54bf6de4387589529d59da08c20d060;2013-06-10 16:02:35 +0200;Cleanup of beatroot onset detector, removed the second fft class, refactoring.
+d8ea2ecb8b46bf0e42c66a93fac6a2febed2527a;2013-06-11 15:47:24 +0200;Moved fft utility classes to seperate package. Refactored onset detection algorithms, added test cases. Finished beatroot tempo induction method integration. Moved peak picking and biquad filter to util package.
+a3a482d13244840afcfadd49ecfc2f71bca47199;2013-06-11 16:18:49 +0200;TarsosDSP 1.6 release, updated readme and build script.
+ef720d62cb9c18dfb0d49b923ff83c2d63949819;2013-06-24 10:37:45 +0200;Modified build file to inlcude debug symbols. Extended POM file for maven central repository commit.
+ee9275685b20ecb2184678620cbc174b1409fd0b;2013-06-25 12:24:49 +0200;Added beat and onset features to the CLI feature extractor.
+8b15e70f7b0f45c6039ba8d9d0777007d73d7701;2013-06-26 11:17:08 +0200;Small changes to the audio player example
+5b5ed7955e8a0587a8bc2ad1aa20fe6a1db894ad;2013-06-26 11:18:27 +0200;Added an implementation of the Constant-Q transform, a more musically meaningful way to represent a signal in the frequency domain.
+4bb7984f67580c66ae1182e0ac4f7f569e0311fb;2013-06-26 11:26:47 +0200;Added information about the Constant-Q transform
+a038ada5c0a6541a92928ecb2f3dc7b8ee6a9ca7;2013-06-27 16:28:47 +0200;Example for constant q audio player
+d6e1eeb491f8391c2cd99f1363ffe94329bee527;2013-08-12 13:41:26 +0200;Fixed bug in AudioEvent.java. In function calculateRMS line 169 shoudle be rms += instead of rms =+
+2428d6808c35b4cd4e486c716add40496397d9e3;2013-08-12 05:08:34 -0700;Merge pull request #13 from shadielhajj/master
+b57b208e4f396a528a632d305657fd38cb3794a8;2013-08-14 11:49:50 +0200;update TarsosDSP jar-file
+0c9d4276e78ca746f8051e154cd2b5eca9ab9536;2013-08-14 11:50:40 +0200;Merge branch 'master' of https://github.com/JorenSix/TarsosDSP
+54d44f0df2882112c4c3b7130fa3adacdc037250;2013-08-14 16:22:26 +0200;Update MFCC klasse + Autocorrelatie: werken nu volledig via AudioDispatcher
+88c0f60769d235eaafc20f77313d19485b32be1a;2013-08-14 16:24:24 +0200;update testklasse MFCC
+ca0cc8eb915c04f3221a63cdad6061a8d06beac2;2013-08-14 16:49:18 +0200;update MFCCTest klasse
+8864f980379cf4c9de0bc51bc8510bfef91bd5af;2013-08-21 13:52:57 +0200;update CQT & MFCC
+87e7a5b0bcb2887db607e5b297db83c16e82bdf6;2013-08-21 13:53:57 +0200;update CQTExample
+e8d5b7e22cdbcf9f58635a194fcd0e6cbb3690fe;2013-09-05 13:43:33 +0200;Removed framesize from constructor, either framesize or minimum frequency can be defined, not both.
+8f639ae565baee4486a4cf3d5396f17380060d6a;2013-09-05 13:47:54 +0200;Added license info to repo and readme.
+1c3736f39380a13bbcb4fca9f5a6fc455dd28f90;2013-10-08 14:24:44 +0200;Initial commit of visualization panels. Also included is a modified constant q visualization example.
+47f6d107e1df15104dc929a5fb416ce905932290;2013-10-10 11:57:58 +0200;Added file used in unit tests.
+ba1614b9ba1c8401140f58fe50e713452c2506db;2013-10-22 15:37:32 +0200;Reverted back to ANT only build system. This to maintain uniformity with other Tarsos projects.
+cda613a52fcfc19071a7f98c2f975224999cbecc;2013-10-22 15:47:07 +0200;Simplified build system. Updated readme to reflect recent changes to the build system.
+6e7aaf56c32a19ebd4f3f530d6724d67faddf876;2013-10-22 15:50:37 +0200;Removed incorrect info
+9f27b93739c0a590571834b5fe09b56a5fe4fe7f;2013-11-19 11:56:06 +0100;Updated the UI example with select to zoom functionality.
+bc7478c79dc1c736c0155c6a2ecba27a43918b69;2013-11-20 11:37:04 +0100;Simplified linkedpanel, modularized zoom, selection, drag behaviour.
+f532284b54fb66dddb18f72e7d35411d6950d55f;2013-11-20 11:51:12 +0100;Added a minimum size to LinkedPanel
+fb8f0c5c9ad577ae38639f86f456fa6a320c92a1;2013-12-09 15:24:12 +0100;Moved the ui elements from examples to the main source tree.
+4edccf486a41d28c9a1f04ec5ffc49268a09efbe;2013-12-09 15:28:41 +0100;Fixed conflicts
+e7d0412983cc59e843c9fa9002be1034950da490;2013-12-09 15:34:07 +0100;Fixed merge conflicts.
+fdac64283b391de6f7e42fcbc2bf586b61a80750;2014-01-14 14:18:45 +0100;Updated Constant-Q audio player
+0bb104df13d141513990f5298d8e3e6c1bf2e0da;2014-01-14 14:31:11 +0100;Added AES paper to readme + cosmetic changes.
+b2f3e135c663cc1c49e7248bb1cc388a58f46cb4;2014-01-15 16:15:52 +0100;Added libav decoding pipe option to support mp3 and other formats. Some small utility functions added. Added link to TarsosDSP paper in the readme.
+be3cc360ce3fd688042020f994701291f13bb101;2014-02-10 10:07:09 +0100;Included includeantruntime into javac calls.
+b34202a1d650629ef471f509e1f947c7bfd33609;2014-02-10 10:07:59 +0100;Included audio format decoding via piped command.
+d72da058e26c290228409ea1e2640788347a2734;2014-02-10 10:10:31 +0100;Included PitchConverter into Util package.
+ed0dc6c29452fd77920d118b91b871bb24ea17a6;2014-02-10 10:32:56 +0100;Changed gitignore to include resource files
+4ecc540c6c142145839b5d1296a461082363a8fc;2014-02-10 10:33:12 +0100;Updated nightly deploy script
+742ee1a9b3316c7e0210c9b793a4ad1ae9a824fd;2014-03-07 17:34:31 +0100;Spectral peak follower
+aec22a23adb2835dc85967da0c9653b1047efc63;2014-04-08 11:13:16 +0200;Renamed some files
+2b62f48c38496071e4d9143f94695b8a9242b987;2014-04-08 11:14:26 +0200;Changes involving spectral peak extraction
+f24079b5603c4bfddc375256790e2d2a87e3141c;2014-04-15 17:03:38 +0200;Small changes to the spectral peaks example + build file
+0673c2857af0e510b0301323c2b71b8981f62027;2014-04-15 17:04:04 +0200;added a speech/music discriminator
+ba98964c8ddb39a472524ce90f176e42279b3019;2014-04-17 11:04:18 +0200;Added a zero crossing rate processor.
+b4b469dd7b159d68a9d34296b6780592d71ea8fb;2014-04-17 11:14:56 +0200;Commit of incomplete dissonance examples
+df01296a8b8f18d8865af1bf009d767795cd7b83;2014-08-08 11:41:03 +0200;Packages renamed
+1ba442e72518a81198edf2e115f13a8b93c8f148;2014-08-08 11:42:31 +0200;Included JUnit libs.
+caa414c5a1b1cabb75e01a6fdfbe5f6038f380b7;2014-08-08 11:43:22 +0200;Updated readme and build file for v1.9 changes.
+859278041eb6753345d36f639854c9715c858c7f;2014-08-08 11:43:55 +0200;Added a Haar Wavelet Transform algorithm.
+9f994f998c609cccc2feea5673f282d0bb0552a1;2014-08-08 11:45:50 +0200;Changed package names.
+b529924dcf4dc9f1c154f141337e6e8cc19dfc82;2014-08-08 11:46:16 +0200;Added decoder log to ignore file
+80c1a9b58c12e7b3c3604986d78648b4c778e456;2014-08-08 11:47:04 +0200;Removed incomplete speech-music discriminator.
+ca1371d0415c6a218cd82332f781ad341ee86c8b;2014-08-08 15:14:04 +0200;Added a bit depth compressor.
+0faad7bdba2568c8d473dc9fb5b81b254fba6737;2014-08-08 15:19:46 +0200;Added a lossy audio compression example using the Haar Transform.
+bb98eeb93c9cf5dd365dea05d33483a1b1c4a725;2014-08-11 13:49:47 +0200;Cleaned examples
+3038afd73e65023f65f1ea9619f493377c129c8c;2014-08-13 15:11:57 +0200;Version 2.0 includes out-of-the-box support for Android
+4a1bc3816072ea31bccb9b49cb84e486a0f8c222;2014-08-13 15:18:18 +0200;Fixed build order.
+a58d4018536577421b778c6f32e4147e098fc388;2014-08-14 13:23:37 +0200;Moved AudioPlayer to be.tarsos.dsp.io.jvm. Some refactoring. Also improved comments.
+f86f45d986fbab17c2b3fbbc9880270dafe8f422;2014-08-21 15:34:22 +0200;Recource loading fixed
+c46c98a90a31a3bb56078c567a5468a52b0b1dca;2014-09-01 13:29:10 +0200;Fixed the bug that limited the use of Goertzel to DTMF frequencies, now any array of frequencies is allowed. Thanks to T
+2074a28d5b4e16552a54f5660f56203aedd45de1;2014-09-01 16:54:08 +0200;Implemented a Goertzel algorithm generalized to non-integer multiples of fundamental frequency
+7d6ecc949519e8bf4efbd3971c4ccdaf8e7210e3;2014-09-04 10:04:25 +0200;Added lifting scheme wavelet implementation by Ian Kaplan. Moved Generalized Goertzel test to test directory, small changel all around.
+a2a9b000563e568577d4f94a1690590385b4cea2;2014-09-05 17:49:38 +0200;Implemented a wavelet scalogram
+c1e099ed1dacdd6b0ebf6bf406810727c3682167;2014-10-01 10:38:17 +0200;Fix to handle last audio buffer in stream correctly
+7b4d2776966be5f5812cbc6faeab97853a9bd6ce;2014-10-07 17:06:27 +0200;Removed unneeded newline print.
+80b2b6bba234e5b3ba187a9a376761033f7c5178;2014-10-23 17:49:08 +0200;Some undefined changes
+a6fe784432d9f80fc0fab999bf364f82f3f5a04e;2014-11-12 13:13:48 +0100;Fixed duplicate calculate filterbanks call. Added new window type.
+c6b9e9912b2800fc2608da7b505534d2c4f3f1dd;2014-11-14 10:02:07 +0100;Added microphone dispatcher, renamed method to access default mic.
+4e3a6de9a72379d99e66c977db134256a7b20bc3;2014-12-16 13:57:37 +0100;Unfinished parabolic interpolation implementation
+958eecd2c82045e83f3bca53d852ea797273a125;2014-12-16 13:58:39 +0100;Small fix in example, samples are saved only when the checkbox is enabled.
+9001b89d3f412c3a8c26e0e9a74d54fd6da73ad5;2014-12-16 13:59:07 +0100;I/O classes for MaxMSP, Pure Data externals
+e9622ba11d695dec4ffba94799d86bf06c94de84;2015-03-02 14:29:08 +0100;Updated ui classes for better automatic scaling
+664ff1da25484bb859c6410214faee4c1606e945;2015-03-02 14:29:31 +0100;FFT documentation improved
+33f556c1bdccc069d795686d15d97bf8bb8dc149;2015-03-02 14:30:12 +0100;First working version of an SFT pitch shifter
+ebd8b0ebcc87f80f1c98a9070ca9e338f2bfbcf1;2015-03-02 14:37:24 +0100;Updated pitch shifting documentation
+6583941ce2c102a0c0a411b5789e4e7048a5a364;2015-03-03 12:50:33 +0100;Added a getFrameLength() method to AudioEvent
+65ba47faf9b551433c3e2929384d258e3d0c3243;2015-03-03 13:57:55 +0100;Removed dead symlink
+e2898c262de79aca685204cad9c0e4c0ccfc9d5f;2015-03-03 14:24:11 +0100;Modified souce code structure. Now all source code can be found in src.
+48dbe5c7ab49c1428fe58bfb57c76cdae33ecb83;2015-03-03 15:16:21 +0100;Removed test code from STFT pitch shifter.
+ded4d45cc750819da1247e8d86fea8e484c31d1d;2015-03-04 18:01:13 +0100;A cleaner implementation of the AudioDispatcher, should get rid of some bugs.
+00befb0e6c5a0864c528974db25415808a92beda;2015-03-04 18:01:45 +0100;Experimental not ignored any more
+6721a1f2a862a565b3a53554d1f6186cb71ff74e;2015-03-04 18:02:17 +0100;Removed unneeded vars.
+b76869809ce38f4c238d2b3984c5bc7ab7ade7c7;2015-03-12 14:15:56 +0100;Further work on the new Audio Dispatcher
+a4a190145a568519d325bac0ce93d96037495df5;2015-03-12 14:19:24 +0100;Made audio event dBSPL level public
+a74e4ada203f17ef99cbc71e5a8744957b37ed7b;2015-03-25 10:01:38 +0100;Refactored AudioDispatcher, AudioEvent. The changes warrant a version bump.
+aa64cb39043771a39cb7a880d0164da654c15f03;2015-03-25 13:33:07 +0100;Merge request from sinoohe.
+4221c5e54c9316defd7f6fc5a6228bf7273f10f6;2015-04-13 16:41:54 +0200;Updates to spectral peak detection
+2115e78d81f55c0a40621bd0cbbc6da9c76d06d0;2015-04-30 15:36:52 +0200;Bug fix in flanger implementation by Hans Bickel. Should prevent clicks.
+227f7d1019696f1181fae9c0f88fcf15b1de47d8;2015-05-19 08:17:21 -0600;Fixed a bug with closing an unfed AudioDispatcher.
+9f5dfadf9efa32b691b5813e6ce234bdfeb317e8;2015-05-19 16:19:44 +0200;Small modifications to the examples and readme file
+1c713b67b459927bd1039bd3b35872189e1cd136;2015-05-19 16:50:29 +0200;Merge pull request #46 from amikhalev/master
+a566942f239149dba6bf5ac311068fa8cedd0cc2;2015-05-19 16:52:34 +0200;Merge branch 'master' of github.com:JorenSix/TarsosDSP
+3ab3a1588cf9a4246ecfe5bf4306eeade3d57a24;2015-05-19 18:02:25 -0600;Added a way to play audio on Android.
+05c4ce46745c55829a6a99efd60e3e4c3670d6b8;2015-05-20 09:42:10 +0200;Merge pull request #47 from amikhalev/added-android-audio-player
+692a0a178ffc4f38373f575b47b4453b344898f2;2015-05-24 15:47:38 +0200;AudioDispatcherFactory should throw exception
+703f5dc4a5dbce42818d22efaff0f5924a3f1a62;2015-05-28 15:40:44 +0200;Merge pull request #48 from mareklat/patch-1
+c17252a6add5f6d2d04dc635b8f6c2b5a3ac52f3;2015-07-06 18:57:46 +0100;Updated README with correct link to pitch shifting example
+2c98a791e4206c520a3413a1b7b59739e7aac200;2015-07-07 09:32:45 +0200;Merge pull request #54 from stevewillcock/master
+9b4eab051342ec03ba944089024ab51be5a4f9e6;2015-07-09 12:06:00 +0200;Improved pipe decoder, now an exception is thrown when ffmpeg is not found. Befor the exception is thrown the system tries to download and use a static build of ffmpeg automatically. This makes the pipe decoder work automatically on most desktop systems: Windows (x64, x32), Linux (x32, x64) and Mac OS X.
+dabf13afe41e41bb1ba22c44adf4ec4f88cd8eb6;2015-07-16 15:21:26 +0200;Updates to support decoding audio with ffmpeg on Android
+a4d3561351a73ecb35de7202e0914210aa164338;2015-07-17 10:16:56 +0200;Improved compatibility with previous API releases, now compatible with API level 16+
+7961aa6d32a2e63e076a604f463a492d1ec4a8e0;2015-08-05 11:12:19 +0200;Modified the audio dispatcher to allow adding processors at runtime
+cb5c8dd677e87f732c42ee6f2be73a2d0b8904de;2015-08-07 13:48:11 +0200;More android/gradle info
+dd31e480085d7262b85d9540f65dabcb623f54da;2015-08-07 13:48:47 +0200;Formatting fix.
+bd954895ed011103cbf6a05e57cf07d96109c906;2015-09-01 09:44:17 +0200;Changes to pipe decoder, added a fade in and out
+e8e4f3cf6114cecf72d74915f5703eea033e1cfb;2015-09-01 09:56:44 +0200;Update to 2.3
+9bb8465d6a1824d6a1c781d7ee82b376ada1f2a9;2015-09-01 10:35:26 +0200;Update to clean task
+1cc7fd49533e9d3525be4c8320fe42c1c21f062c;2015-09-01 10:54:47 +0200;Removed unused var.
+9c28496a41e0dbc7b5c8c71d84d247ed29e05936;2015-09-10 10:11:53 +0200;Fix for android compatibility (source level ant build)
+71ae353871a75d916a642dbb7377fead9d175a68;2015-09-10 10:12:15 +0200;More info on missing ffmpeg for android
+961ce07454955f3482177f292b6a0b386c6bb962;2015-10-22 13:58:36 +0200;Included warning about beat root spectral flux onset detector
+d16fc4c6049832235a1a9e9db61b306114797e7d;2016-01-26 13:31:26 +0100;Fixed FFT pitch shifter
+8a859d7339c27083475fa172d069b0d7d89a7cdf;2016-01-26 17:05:45 +0100;working pitch shifter version
+8bdddd83ed0a9c961c82781a75a6b4b27c217ec8;2016-01-26 18:00:44 +0100;Finished time stretching with pitch shift example
+591ca722f5c154e6481619bdd02abe04a23f0e7a;2016-01-29 15:31:24 +0100;Granulator included
+fcf242f9f63bf42f181fc73cffaef7114f639eeb;2016-02-09 10:57:51 +0100;Audio Generator includes sample rate
+91e534c081b9fdbc3089748e6644cc22984bc806;2016-02-09 10:58:09 +0100;Multiply operation
+a3a482ac0e7f2337d16aff2badc99ebab1bbf128;2016-02-09 10:58:40 +0100;Expose buffer size
+bdf2c4ffcfee46a2a6bea07f9e634450692d7e1d;2016-02-09 11:05:19 +0100;Various changes
+fa8de476a13b16b2ac1398905240efecdeacac90;2016-04-07 15:23:51 +0200;Changes to domain name
+6415d7af4911eaa3702b593648022cf41a109b64;2016-05-21 03:40:30 +0300;Fixed CPU Architecture cheking for AndroidFFMPEGLocator
+a81e4639ccce2cd36b9eee9dea3581849f0dbbc1;2016-05-31 08:58:42 +0200;Merge pull request #82 from JuzTosS/master
+721a48c541fc6a110f7669aee55ebfc9f6058ab9;2016-07-03 14:29:43 +1200;AndroidAudioPlayer exception incorrect formatting
+a42666de18a5485f01791db038c543df07876983;2016-07-12 14:34:21 +0200;Merge pull request #87 from edeetee/patch-1
+c2ab24c05764f6f8ca3db3b593e56317d38db5ec;2016-07-19 17:19:41 +1200;fix tests path
+4e429e94dd84e50eaa337892c4846162736bc046;2016-07-26 15:51:32 +0200;Granulator update
+351f4a7165665603b6d4f55fb5353c8c8b4478c7;2016-08-10 15:43:00 +0200;Merge pull request #94 from mpollmeier/master
+e9bb33dbe8f6678c32b0344f4367ceb383220748;2016-08-10 16:35:21 +0200;FFT multiply fix by perfecthu
+3426e182b2931d7f7f12a15ae3b47a7ee6227a69;2016-12-08 16:12:37 +0100;Now possible to select audio parts using the ffmpeg pipe decoder (start and duration)
+8fe32e8e1a51e9bcd799211fe152329474f7868e;2016-12-09 17:57:52 -0500;Fix spelling mistake in McLeodPitchMethod class.
+e3dbbfff6b28598bd00dde27fc63017e5eeeccb5;2016-12-10 07:31:57 +0100;Update McLeodPitchMethod.java
+81994bea8e247b68171ff97a5b56469d90c045d1;2017-03-03 09:14:46 +0100;Merge pull request #105 from ColdSauce/master
+4a74e6b15837631d1f590d0e519b4405421d58b6;2017-03-03 09:15:18 +0100;Merge pull request #106 from ritschwumm/patch-1
+dcf19e690bc4bb3b66ae50afe676a0dff12dc445;2017-03-06 11:42:01 +0100;Change quote for windows compatibility
+3b4884cfbee44c1e34431bc3c8d42dd3227d9978;2017-03-06 11:42:17 +0100;Merge branch 'master' of github.com:JorenSix/TarsosDSP
+6ab4d3091f6532aaa2f11c6a8668ab7578d68359;2017-04-18 11:03:52 +0200;Update overlap offset value after rate transposing to match new buffer size.
+85432209ee6d12a9667daefd448c622b66c93350;2017-04-20 15:58:58 +0200;Made fft non final
+2d590d64f356605fe8b2956ea1c46a62b0ed7c1f;2017-04-21 15:51:51 +0200;Merge pull request #121 from gerriet-hinrichs/RateTransposer/OverlapOffsetFix
+c3310d5dc9f360a9419c7d1906fe97800bd6e19a;2017-10-18 09:07:53 +0200;Fix FFMPEGDownloader to download using HTTPS
+c26e5004e203ee79be1ec25c2603b1f11b69d276;2017-10-24 13:57:51 +0200;Merge pull request #133 from xGamingDudex/patch-1
+1e9fb988c8f2288cb55ac9a9b38c4e1f7e7a7be6;2018-11-29 19:15:06 -0800;Update README.textile
+184ce22985ca3b23664dd49ac9f571b42746b406;2019-03-26 10:15:39 +0100;Merge pull request #157 from mikeperrotta/patch-1

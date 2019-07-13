@@ -1,0 +1,74 @@
+401288aa6c505e4ff82b191548b203a072526581;2018-11-14 15:32:30 +0100;Setup new project structure in preparation for 2.0
+36616e39510ed89d7af2dfed80cfae3c78aa8f5c;2018-11-14 16:34:01 +0100;Setup sample project
+099e233bae7d45f4b2f03fb42ff812ef4b11b72c;2018-11-14 16:45:20 +0100;Fixed issue with pom.xml of sample application
+959a71af16eb317617efc77218db1469cc69bdaf;2018-11-14 17:20:00 +0100;Added a main function
+7ec9cb9f7b2d5618d588f6f3521a6ec78bc6a023;2018-11-15 13:52:48 +0100;Added auto-configuration
+f0dbe3ebc8d93925f5b323d519000cf1d68f64e9;2018-11-15 14:47:50 +0100;Updated simple sample to work with Eureka
+d9a1781ed1231b468fee1ad73b6c7184a8ea3100;2018-11-15 17:10:33 +0100;Added implementation of the landscape watcher
+75fc8cdb4e68cfca6c9b83ff8b411db32a449f7a;2018-11-16 13:54:03 +0100;Added `ServiceInstanceWrapper`. This is used to have a standardized equals/hashcode implementation.
+3e95c36a8f8cb4ed3ffe6ea7c1ac57b150e19c28;2018-11-16 14:34:00 +0100;Don't take the metadata into consideration for uniqueness.
+b3ad92b16aa2a6b6eb3af75c0069711d6a4aade3;2018-11-22 15:49:55 +0100;Added integration test
+b72c90e691fc40a2d2914dd2cd0ba1f98d990eef;2018-11-24 13:22:13 +0200;Removed unnecessary @EnableMicroservicesDashboardServer
+7118366dde70f660b63064f2662b130d12d7b3e3;2018-11-24 13:29:02 +0200;Added checkstyle rules & .editorconfig
+e067575a6352e1a98ad936bd0509e797a1fe3273;2018-11-24 17:56:10 +0200;Removed @EnableMicroservicesDashboardServer
+bd391d514c5d1f3eef5ed926f0b26e739d979865;2018-12-17 21:48:41 +0100;Added a very basic Health Aggregator (#64)
+3897aa6793edfd18a53ffb0028711c8eb26621ca;2019-01-21 21:38:06 +0100;Added issue templates
+c4e58ef837e127768770ad283fd2939677c43cc3;2019-01-26 17:32:54 +0100;Upgraded to latest and greatest (#75)
+f3d38305b99fe7b514c26bd37715ab6f7ea2b605;2019-02-14 19:06:53 +0100;Added PR templates
+cd9cb14186c00d6d43f01d053b3e05261f373b27;2019-02-14 21:08:35 +0100;Updated project structure
+8192d52401238c8ec9e7a899bea95d98a6a8ca55;2019-02-15 13:58:09 +0100;Added auto-documentation infrastructure
+35fcd630abd78b630ee305018f8e64e4a6602612;2019-02-15 14:15:40 +0100;Fixed CircleCI script
+829e965872b4a3078b83762236a180dddfd9c3da;2019-02-15 14:33:17 +0100;Fixed GitHub Pages script
+a14d7fccb192414f1c0438efe3cbb5e2ecc25361;2019-02-15 14:35:21 +0100;Fixed CircleCI script
+042f556af95c0d5c08e1f7279041757af7b95928;2019-02-15 14:53:36 +0100;Fixed CircleCI script
+98244ce8f28f33e1d729d04e74b502c44bb32606;2019-02-15 23:38:47 +0100;Updated code conventions and checkstyle
+03cf4365860fa13e2dfb7d448304e6ff2b34cee1;2019-02-15 23:42:00 +0100;Fixed typo in URL in README
+88ec1a1889719697855fff1e9991610c6d31ec2c;2019-02-16 00:11:12 +0100;Switched CircleCI build from VM to container
+e815894e195a428b6f0d5e715328ed8006dd02ff;2019-02-16 00:13:19 +0100;Switched container image
+759f637c7ae4eac33a7c77375fc275ff86161eb9;2019-02-16 01:04:22 +0100;Fixed ghpages.sh
+13d45f63c461a4ec3c77593d7a8086e1b16aac69;2019-02-18 19:14:05 +0100;Introducing the catalog - keeps track of all known applications and their instances in the environment
+b03f73ac02b3759403808e6f0b0a0638833233ee;2019-02-18 19:52:31 +0100;Refactored `HealthAggregator` to `ApplicationInstanceHealthWatcher`
+278b24bc54d1a1dd1ee99665add12fe533c58cf8;2019-02-19 11:12:14 +0100;Moved `LandscapeWatcher`
+5db7f3ff1104b8271e39db1c02375c99ef11de46;2019-02-19 13:43:48 +0100;Added `ApplicationInstanceRepository`
+ca46f739bacecb45ad29bd0469312b59b993a7ad;2019-02-19 14:24:05 +0100;Implemented `ApplicationInstanceRepository`
+6b39d9144f09998fa5585140be2311a574213929;2019-02-19 14:55:46 +0100;Changed event on which the health of an application instance should be retrieved
+b8c2b7263f66b18e6d3c8bf815fb9626fffe14d9;2019-02-19 15:03:42 +0100;Fixed all checktyle issues
+bacfa9160718ed5118dc73c76260787062c659ad;2019-02-19 15:05:27 +0100;Updated all ASF license headers
+4432340e3ae8e6c133816cd4809e92f900a7c04c;2019-02-19 15:13:29 +0100;Divided auto-configuration across multiple configuration classes
+4cefc64eb80e742fb7c191242631739cc3832aa7;2019-02-19 16:27:05 +0100;Added possibility to filter out discovered applications and instances
+13322668095bd8f296eebe7eb6bc52ed197ecfb4;2019-02-19 17:52:19 +0100;Added setup for deploying snapshot builds
+29a524edbdabcdd159bf14166b12d70a8f345096;2019-02-20 14:39:25 +0100;Added basic implementation of the catalog
+48f0b7d14cc66df2cbcfcc7fd0184ba2aafc247d;2019-02-20 14:53:23 +0100;Added basic implementation of the catalog service
+a257926c8bd5df44dfef7847bcfac0ccdcdb665d;2019-02-20 14:56:59 +0100;Removed obsolete events
+b1fe379e7e3ba901f65fccdedeef722f2c716b0e;2019-02-20 15:01:57 +0100;Check if the application instance health watcher receives additional details
+eadc0cb7523187c2562772f9ad53ee6d0f7c3de5;2019-02-20 16:56:08 +0100;Update the application instance's health status when retrieved
+7516f41c128dfd48e00de6564dfed13f9f80b480;2019-02-20 21:13:43 +0100;Fixed issue where a wrong event was dispatched when updating an application instance's health status
+bd2e2efb44abf70364b952dcd4ecfe004e13e06f;2019-02-20 21:16:57 +0100;A newly created application instance should always have an unknown health status
+3dd64eb7905170be2ff0489b811c9a11fe6af964;2019-02-20 21:19:27 +0100;Added possibility to save the actuator endpoints
+81cd74f8c5d2fe20fc52bdc60b6809093729d3ac;2019-02-20 21:39:43 +0100;Use the dynamic URI for the health actuator endpoint instead of the hardcoded one
+7942e2726ea83b3ba60363184c26290446724c2e;2019-02-20 21:42:56 +0100;Spread the retrieval/creation of application instances across multiple threads
+2527ac0f5cf50872d8ccbe35d4ede5b9cf457df1;2019-02-20 23:05:52 +0100;Enabled async and scheduling
+a1901026fb0251f26408a28b4a3fa14e3e8515c8;2019-02-20 23:29:46 +0100;Fixed wrong comparison
+95e443564ca99b91df96ea0a8521d11ee9607349;2019-02-20 23:38:14 +0100;No reason to discover the landscape at startup. Let the discovery client(s) connect first to the registry|ies
+179e022545772eb685b14747b89790329fc541cb;2019-02-21 23:04:16 +0100;Added discovery of actuator endpoints
+e62a9d4ff3b82e0baa2074c9a0228dea218361d1;2019-02-22 13:39:24 +0100;Fixed problems introduced with refactoring
+0c64df75a9ad0cb020afe06a91873e246fb2fba6;2019-02-22 13:43:09 +0100;Added test in case there is no "_links" element in the json body
+5949c66de21a3f9a6569bd263a50e14e55b26197;2019-02-23 01:44:37 +0100;The catalog will act as the read model of the whole system
+9999c8925dbd1e7daa45d58b6aa79dc0b8172932;2019-02-23 15:24:11 +0100;Added missing beans to configuration
+f50dc7ccbdaaa8e21932d74aa20b1682be58c65e;2019-02-23 16:01:05 +0100;Added HTTP endpoints to get an overview of the environment
+063af97cb7d95003e17f432da972c9e58fc2b020;2019-02-23 18:59:51 +0100;Don't check the health of deleted instances
+65b8b178bcd230a01aa6e4f974120873e91ea8c2;2019-02-23 20:28:31 +0100;Added commands
+9036ed31fb0df49f971c2702239d17e5c00876b8;2019-02-23 20:57:27 +0100;Added fallback in case something goes wrong while discovering the actuator endpoints
+ab219fe5772fc457c43b46eda664114ca750dca2;2019-02-24 03:34:24 +0100;Added ExchangeFilterFunctions to authenticate against secured resources
+dadc4617d25c44d16b64c015a996ee862c8954f5;2019-02-24 15:14:44 +0100;Enabled configuration properties OAuth2ClientProperties
+17514a560ec3fec3bb407142a5e2bc38426170eb;2019-02-24 15:28:22 +0100;Throw a WebClientResponseException when the HTTP status is 4xx or 5xx
+64d4ccca2456c3134f9de75c2a866246362e6cf5;2019-02-24 16:58:27 +0100;Moved creation of machine-to-machine-web-client to CommonConfiguration
+7db0d61a77d84b23461047aac8477256ab687e02;2019-02-24 17:06:33 +0100;Added missing security test for basic auth filter
+80a44dce7df4238a02b588237699b13086989ae8;2019-02-24 18:31:29 +0100;Discover the actuator endpoints after the application instance is created
+280727433241d857a0430d33b8a25c57469bb95d;2019-02-24 19:04:53 +0100;Added additional tests
+41bb9db6b801f16139baea79221f75c0e3fb89e3;2019-02-25 22:02:58 +0100;Fixed a pom issue and added some ignores
+fec771fa85aa377a4e2d004511444de619557e54;2019-02-25 23:37:19 +0100;Updated project structure to reflect ordina-jworks/microservices-dashboard-server/issues/82
+2205900fb55c03d7bfd843acdbb36fe54c4bea3e;2019-03-01 17:48:56 +0100;Fixed some dangling references (ordina-jworks/microservices-dashboard-server/issues/82)
+fec37797e19bc094ee5f34829f0738204ea62e23;2019-03-26 13:59:44 +0100;Updated reference documentation
+c9b7ef761a3f5ea6404452fae4a539c2bf724c8f;2019-03-26 14:09:06 +0100;Fixed failing test
+740829c59084146d69118004f0f9adfd5c0d3aca;2019-03-26 14:29:26 +0100;Updated deploy key

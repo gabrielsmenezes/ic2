@@ -1,0 +1,63 @@
+62152281500953972bf9a55cef8d4e643c0463bc;2017-09-16 15:45:34 -0400;Initial commit
+9059e365688405bc8cfd706cf6ce336308a41c89;2017-09-16 15:50:58 -0400;initial commit
+8621d5870a53ca5459ab535f6c679024f85cd595;2017-09-16 15:54:19 -0400;update readme
+e02bd84edf3a0877a905df1cb57c387e45877541;2017-09-16 21:02:37 -0400;integrate android-priority-jobqueue
+e1118c33976b68bd42ebf7584dda3ef1e5789326;2017-09-16 22:56:37 -0400;set up job manager and services
+217d4318db09cbac2b3e6fabb030c14dbbb3bb69;2017-09-16 23:06:41 -0400;declare services in AndroidManifest.xml
+b59a081f1eba06b10fde4a75e189ac83cee8709f;2017-09-17 13:11:29 -0400;add add/sync/update chain
+5bc7b5aae8d597dc8afc77ce0035811420f40632;2017-09-17 23:32:27 -0400;add recycler view for displaying comments
+35c6da293a189e9fa7488d6305d8a4fb68335f07;2017-09-18 14:31:11 -0400;let repository be the only source of truth for comments
+609978a1fbeed4c852ab928fd2824c84741d06a6;2017-09-18 23:00:16 -0400;add EventBus and hook up to UI
+3e7ba81bbdd32a599320f20db963e731858768be;2017-09-19 10:21:15 -0400;rename sync job and add remote exception
+7867300f45f8741b3376c1060e8fbb3f7ab28a56;2017-09-20 00:25:30 -0400;integrate Room db
+74722ec789b798a55a926da5cb3bcd426aabb8a1;2017-09-20 19:50:11 -0400;implement remote Retrofit call to sync comments
+b2e12f3b53eff8e5b9610f0e87deaeaee85d29cf;2017-09-20 21:21:04 -0400;make retrofit call sync and move base api url def to gradle config
+08f6dac09e70b04bea72ddcb6d5c676ef6753fa8;2017-09-20 23:17:46 -0400;add local delete on job cancellation
+a81c73cd737e9b539eb469e12cec903ab1f799f6;2017-09-22 11:01:10 -0400;persisting job
+cd9317b7036a53117f3457b55941165330faf0ea;2017-09-22 20:20:02 -0400;update README
+88849274d8096ab97988a415056a59882be44fb3;2017-09-22 21:59:43 -0400;model api cleanup
+07d3b96e1b50df9f2102cf4c5d7343450c9d0fd8;2017-09-23 16:43:34 -0400;add SyncCommentLifecycleObserver
+b6753738212ee58920c53a500cd1aa225dad5584;2017-09-23 18:06:01 -0400;use Flowable for db query
+09c1e2b69c3de2ddb327e0b37d427331896c6e32;2017-09-23 19:23:49 -0400;extend AppCompatActivity
+0cc84e135343e9cd0ad605e9e2cf5a1f12d35a31;2017-09-25 21:26:13 -0400;moved comment sync func to domain layer
+321df9e45e69b6def019a295726ed5c3e8ebba72;2017-09-26 10:30:00 -0400;use RxJava instead of EventBus
+f3deb2f57b5c472eb0749f2d0a7d0d0c7598e385;2017-09-26 18:38:57 -0400;re-organize packages, abstract repositories
+44ad230b0d83936d74d9746954be5c0724971655;2017-09-28 13:53:09 -0400;extract customLogger into a member var
+d461dab54e456c0162a24700f30e6a93ec7ab820;2017-09-29 12:05:12 -0400;add screenshot
+561c726b3ad0191c0e5ba2c2edf8b1a86ed76d1c;2017-09-29 12:09:45 -0400;make readme clearer
+bafb01eff6bc55fbfcef7903ec4073f9d5566bc6;2017-09-30 09:35:10 -0400;hide implememtation detail of SyncCommentRxBus
+ddc450e6c762ce33c59199656a17748966256c69;2017-09-30 22:41:20 -0400;add quality checks: pmd, checkstyle, findbugs
+8b77948bf98dd0eeaf3ca6ef76156344f9bafad7;2017-09-30 22:49:45 -0400;revert buildToolsVersion
+766a9c5d56283b749ff32da18aadc70c4d6f8cff;2017-10-01 10:07:23 -0400;update quality checks doc
+f8c17faa7576cea3d14761496748ed37a5fc0385;2017-10-01 20:07:48 -0400;update quality checks group name
+bda6231c00b71353689fc396946d224762dd975a;2017-10-01 23:54:04 -0400;update JobManagerFactory to return singleton JobManager
+0439b300c30d4e76df4cf1aae98ad35747a157bd;2017-10-02 11:26:47 -0400;update readme with branch breakdown
+73ac545ceac1fa92f7cf0a15d136d1de9730c8cb;2017-10-02 11:57:05 -0400;remove unused
+6308c4bf9aa2998935c0ba6c3e4ff2863878a171;2017-10-02 12:03:21 -0400;update README to reference branch sync-in-background
+0ca3e9bfa37071405d06390064e19a16a1c64b3b;2017-10-02 15:43:00 -0400;remove SchedulersFacade abstraction
+8862bd8529176fc71e78742cdefcebd663fbc2ef;2017-10-02 15:59:26 -0400;use method reference to update data on RecyclerViewAdapter
+430f97f5c266296fc519616fd2171c18fdde9eb1;2017-10-03 11:27:56 -0400;rename public comments lookup in ViewModel
+1041c399d167515fa94ca0111a3cf52c313ae5ef;2017-10-03 21:45:16 -0400;use method references
+2612be0b1be1d4371bd85c56afad9ad8d8d9082a;2017-10-10 09:52:41 -0400;add article link to readme
+006a08539c3a0bcc9675c8be5f44c03db9f3b329;2017-10-12 11:18:02 +0800;Update Android Gradle plugin to 3.0.0-beta7
+14d9c069782bd326eb4ee9d2e8b5e1f266bcbe8d;2017-10-12 13:08:09 +0800;Update build tools to 26.0.2
+71312434a6f8638f325b027c493407da079ef569;2017-10-12 11:15:47 +0800;Update Gradle wrapper to 4.2.1
+e41d052cf815bac50593db8400f9371ccb994aa4;2017-10-12 13:42:11 +0800;Use implementation instead of compile
+b8a9d84f886c2bba78d0cba4648be7d466ee2ab5;2017-10-12 10:49:39 -0400;Merge pull request #1 from friederbluemle/update-gradle-wrapper
+04529d2eb592bb705949162da7d63cb928c7a256;2017-10-14 19:34:05 -0400;introduce RxLint
+f3ae3bc8e441ac3cd87d763718b4904361941b4b;2017-10-15 11:14:17 -0400;update android gradle plugin
+c17a83912eba8064e807d9e4f8122d0a82753420;2017-10-16 15:48:45 +0800;Update play-services to 11.4.2
+49a067cea4a8b5d445a36c75e500031da7fd1983;2017-10-16 10:32:39 -0400;Merge pull request #2 from friederbluemle/update-play-services
+2194092d893131386f8734e4b70f4bfd54660ab8;2017-10-20 17:24:23 -0400;remove RECEIVE_BOOT_COMPLETED permission
+0b14d00abaf665bd98f4bec03d3f8ab7b474beb1;2017-10-22 22:02:32 -0400;Revert "remove RECEIVE_BOOT_COMPLETED permission"
+0efcc0ef6d064b00103976084ce28f7e743e28eb;2017-10-16 22:47:20 +0800;Update compile and targetSdkVersion to 26
+a45b4ac1a8105be42c92b51c24c3d4ed776f33a1;2017-10-31 23:16:09 +0800;Update Gradle wrapper to 4.3
+73264b49390577a5c4f76c4662821a98af0940d3;2017-10-30 20:50:56 +0800;Update Android Gradle plugin to 3.0.0
+6e9da3900521c73a7089044acaadf9f1a933a9c8;2017-10-30 20:50:21 +0800;Update lifecycle and room to 1.0.0-rc1
+e24c448cd7b8619f3543b501f96b2775649bfba0;2017-11-01 09:47:06 -0400;Merge pull request #4 from friederbluemle/update-project
+b7dc880827b1efd28efc5ba0b84c66b79bf878c8;2017-11-29 17:12:02 -0500;Update Android plugin for Gradle to 3.0.1
+e0467e63018b508b11d52f311f7de411fdbbf434;2017-11-29 17:14:36 -0500;fix merge conflict
+573a957b85642b04796301fff0a67810f4032d18;2018-01-24 11:26:21 -0500;adopt jsonplaceholder remote call api changes
+b0d45cbec55e1d1d6126bee74d6f431d1bba7390;2018-01-24 11:34:06 -0500;Merge pull request #7 from jshvarts/udjust-json-api
+a1f229552640be81bd7b1b30b8f35bc2a872198b;2018-01-28 11:45:33 -0500;add android weekly badge
+d2f099b81fa7a80b10d4110aea5dfdcec14042ad;2018-01-28 11:55:54 -0500;Merge pull request #9 from jshvarts/android-weekly-badge

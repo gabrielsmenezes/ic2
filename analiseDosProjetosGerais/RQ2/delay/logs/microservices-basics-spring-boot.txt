@@ -1,0 +1,34 @@
+5018d40adfd922a5707ad872d75ab3ae87fdc643;2017-04-24 17:02:42 +0530;Initial working setup for config and discovery server with Spring boot 1.5.3
+6d093d4d3e9811f39b6ca781df29651273503558;2017-04-26 13:16:45 +0530;Got auth server to work
+40c6f59f9dc8955a89bb996fae818cf8e521c5ad;2017-04-28 20:53:28 +0530;Added rest of the projects and JWT tokens - /login still NOT redirecting to OAuth authentication page
+546317e1a65cff0ba619dceac90389a61a16dd63;2017-05-14 00:54:29 +0530;Fixed the issues with redirection to OAuth2 login endpoint.
+116ef0a7fb25e71f6eb607bf2d25ebc0770250a5;2017-05-15 19:36:33 +0530;Fixed issue with ribbon client not being able to call Comments service - need loadbalancer client for being able to understand eureka mappings
+9ca4218b087dacd20142e3eaf20c9e904aba26c4;2017-05-17 14:08:25 +0530;Fixed issue with tomcat root redirection if you don’t have “/“ after the context root
+c0b34fbc3aa82e7e688fed1eb72e04f26be53e48;2017-05-22 16:43:47 +0530;Added all the oauth2 grants
+304cf85abb28ced7fd1d06c2473a97ba48666727;2017-06-01 14:56:46 +0530;Changes to get the application to work on Docker
+bc61ed4a0264c59c955a8fd592eb547b751b93d3;2017-06-02 17:30:24 +0530;Docker changes to start applications based on run shell script
+7c2f6461c5ac6a32c9c516721fdbbecf3369591f;2017-06-06 14:47:29 +0530;Added mysql client and other checks for container ordering
+9c62fbaf99a9487840fbd49a3d8734625dff72d4;2017-06-08 18:12:11 +0530;Added affinity for other services
+41fe8dce68dfb92a8b999ffa7d8ec83a2026990a;2017-06-20 16:19:22 +0530;Fixed issue with manually having to set the access token in the call to comments service
+9332794d42352e1aedb89dbe248d1bf8c6724158;2017-06-23 16:35:20 +0530;Got the task-webservice test to use OAuth2 mock token without re-direction
+a91320dac2bc6dd5d73efc64cf5c7ed1b815e3fa;2017-06-23 16:44:02 +0530;Moved the default clientId to the annotation
+5dbe43d17fc7bf1ce5518b50a3cf8604822f3ed3;2017-06-28 19:21:10 +0530;Got the provider test case to run, the consumer test case is failing because of service discovery
+70a07710bb65d7177b0ab0736d972b37d469d86f;2017-06-30 16:50:30 +0530;Fixed the producer side test - the contract was expecting the content-Type header
+6f91184d8e2ca1afa0a757ec8cb763d040a2032f;2017-06-30 19:38:16 +0530;Got sleuth to work
+dbc075782c5cfa0cd8aecef3f09b045d9f9a7f45;2017-07-03 14:24:30 +0530;Zipkin tracing enabled
+3747c2ada373efd499ef4ac6cb240a72d712bc58;2017-07-10 12:46:36 +0530;1. Fixed issue with hardcoded path in clean.doFirst 2. Removed the additional class and test method for the Base class on the producer side
+bd8bee3481d33cc38a2715f3e31f5389b8cc0e08;2017-07-17 19:04:30 +0530;Updated README for all individual projects and added custom public-private key pair.
+66307156087174b839d53905d86895eac590c778;2017-07-18 18:32:36 +0530;Updated top-level README, build files and changes for docker orchestration
+60fe6e778aa6e31ab6665cd3501e3c0dc9450671;2018-07-08 23:04:46 +0530;Fixed some formatting issues
+0268462138a87b5efacc06e11415c96be0ff54e9;2018-11-16 16:40:45 +0530;Upgrade to Spring boot 1.5.6
+0d8ce10a0bc6c5ec1283268d5feee0ad7a8ec3a7;2018-12-02 16:16:54 -0700;Fix minor typo
+ef883f6acddedf8b4196e503deb8d302715bbdb8;2018-12-03 08:19:48 -0700;Rename png, removing spaces
+25d1bcee50847ec740ad9ad457472870decb471a;2018-12-03 08:22:01 -0700;Change decentralized image link.
+ad328af7ff2127fa794f2b23b60fae74c99698b0;2018-12-03 08:24:41 -0700;Rename png, removing spaces
+900b19fa4df961484bff216b78dfecaf74e207e5;2018-12-03 08:24:51 -0700;Merge branch 'master' of github.com:stevewallone/microservices-basics-spring-boot
+df2e5465f1592f0c998d1cdd69eac5454ecfbd57;2018-12-03 08:28:17 -0700;Remove spaces from OAuth2 png name
+efe928f20c52ea6568024d694aba4ec7174d30e3;2018-12-19 19:48:16 +0530;Consolidated swagger usage so that all services are available through swagger once OAuth2 authentication is done through auth-server
+277f41372de652d2a8641ff8bd994a1a0bc44d50;2018-12-20 10:52:03 +0530;Merge pull request #14 from stevewallone/master
+2fa7b515f5fdd4480ace46aaed021098340ea736;2018-12-20 10:52:49 +0530;Merge pull request #13 from stevewallone/patch-1
+9e668057dce69fce7c891f46a8d8d6f95b220d0e;2018-12-20 10:53:23 +0530;Merge pull request #10 from 1singhmanmeet/patch-1
+cd3ba1c1b385aee902ac40f0d5f1678004ba4022;2018-12-20 13:45:51 +0530;Merge branch 'master' of https://github.com/anilallewar/microservices-basics-spring-boot

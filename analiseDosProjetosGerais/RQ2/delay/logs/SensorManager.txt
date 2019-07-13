@@ -1,0 +1,309 @@
+9fab821cd8f051607fea059005eaa2e4fdc1636b;2012-09-24 12:55:59 +0100;First commit
+0af9594895223d5e652c64fa21d37e844e3a9709;2012-09-24 13:42:13 +0100;Code transfer
+c671b2df67540df237e124650d5c934d7384943b;2012-09-24 13:44:52 +0100;Added readme
+75d3939914e6a7395d9bbf9443d65503b1474c6e;2012-09-25 13:09:03 +0100;Remove app context, sensors check for their permission
+9e93b2dfc56dd626a3972bdee05b27f1a8e5d049;2012-09-26 16:01:06 +0100;adaptive sensing
+9a0272e55023b54effc42892266431238e3f529f;2012-10-05 11:27:05 +0100;Removed dependence on service
+405bc1c3bbc431c31fd5eeda070c5287ee048cbb;2012-10-08 10:41:18 +0100;Updated sensor manager interface
+9163836dacc28bcad1f44a73a2ef764870139d9e;2012-10-08 11:47:24 +0100;Added exception throwing into sensor constructors
+82bcbcb7c456ee7d021aa19790591a454f848776;2012-10-08 12:19:42 +0100;Refactoring sensor tasks
+ab9d455d7c5c5a0c61d0a570d77c7e6871641ed0;2012-10-08 13:27:14 +0100;Pub/Sub methods for sensor manager
+729259de18ea793dde4235b74f8f5c397fa3db60;2012-10-08 14:04:43 +0100;Added task starting/stopping on subscription registrations
+9d004b2bbbbfe05d5e4d7629020f76a20c2950fa;2012-10-08 14:44:46 +0100;Removing constants, temporarily removing mic sensor
+a6949eb25ca480a44bd44d1c427b84eb9e8ac28a;2012-10-08 14:46:16 +0100;Removing more uneccessary constants
+7f9fbd06f6f019f3fb1cbfe09e1917b22939c755;2012-10-08 14:56:29 +0100;Refactoring to remove Utilities.java
+4dc09cb57dda9f0a95c82b69744de2b1382ca9c3;2012-10-08 14:56:43 +0100;Removing utilities
+f5ddd920d00c29faa4744caf1c3b20d134ce17c4;2012-10-18 14:48:03 +0100;bug fixes, cleanup, project setup files
+c91bfec702a378af914847eb18e7850e72434482;2012-10-18 22:16:14 +0100;bug fixes, mic support, minor edits
+a2bfec67382f2af98d3e7427731e18fd14dda6e2;2012-10-21 18:53:37 +0100;Interface update with methods that need implementing
+b628ae5f5c371774666b2397451628bd1eba59cd;2012-10-21 19:05:14 +0100;Added comments
+4d01a8799dc50ee3b9836f50b7ce9d641b5d820a;2012-10-22 10:35:11 +0100;pull sensor task: changed the order of sense sleep cycles.
+feb1ce4608196c0aa45ea34387c396190392d35d;2012-10-22 10:58:50 +0100;Capitalised sensor names
+97df763cfa5011c5d8b5a5319419bb0f38e796ad;2012-10-22 12:20:16 +0100;Sensor Manager, implemented get current sensor data
+e66ade28c5e2933345470a7f69e905fe5cc257e1;2012-10-22 19:09:35 +0100;adaptive sensing, added more methods to sensor manager interface
+629db8b2e025f1b89092fbc3447bf76251533d65;2012-10-22 21:14:19 +0100;removed JSON dependencies
+b9f0a6f4df5b4ac94552201b0e5ba473d1e7ef3e;2012-10-22 21:34:57 +0100;code refactoring
+372705ec33ddf395e11f53a7efc3a1b28ad4f0dc;2012-10-23 13:42:22 +0100;Updated Interface
+d971c2d15edcd72549d0791284e1a47b56bafc3a;2012-10-23 13:45:16 +0100;Added config get method
+8b1e6ccc36075b8a90b7ef5af446f7126f6537b7;2012-10-23 20:24:10 +0100;adaptive sensing, sensor config, refactoring
+7d191209847ea8632339ac96a4dd627ddb6c5326;2012-10-24 15:29:04 +0100;Added sensor enabled constant
+bb7d60c4c288fc053b4c9ead71d54ac41056e48b;2012-10-24 16:32:18 +0100;Rollback
+784d27a9384f30695961de1b31cdde8565e19db8;2012-10-24 16:42:43 +0100;Stop sensor moved to AsyncTask
+4e6843d4df56a9d48c6ff3ff53ad30280fafc166;2012-10-25 10:39:54 +0100;removed sensor manager startSensorManager method
+9206354bfbdaf34c49985b10de79d7585be54a58;2012-10-25 11:06:14 +0100;AbstractSensorTask bug fix.
+dd23673451dbf850c291594310f2de1fbba98910;2012-10-26 14:32:30 +0100;error checks.
+c99238fb41af3b971f2c8b6d296fca18f2e4a02e;2012-10-27 11:25:00 +0100;added get methods in sensor data classes.
+eefe2758824b312457c639c86f5eb9d1653d5e95;2012-10-27 15:44:40 +0100;Added sense length variable to accelerometer/microphone
+a2b41c3a8dffd4e0f65c46d215ef2fa8caefd684;2012-10-29 12:37:51 +0000;Removed test mode constant
+aaf9aebf3da00ede4036c9bb89f07073bab0888b;2012-10-29 14:17:41 +0000;sensor data requires sensor config object in its constructor.
+f63632e2822e70b730b9d7f865c21dcb315a2f4a;2012-10-29 14:26:31 +0000;renamed sleep window length sensor config parameter.
+6b3f80793ac9f4e4a051002771a0fd7a209a09e1;2012-10-29 14:39:46 +0000;removed sleep interval from sensor config in the case of one-off sensor data query getCurrentSensorData().
+1ba330e9d46986f9c52386f229be201d97dc20c7;2012-10-29 14:59:37 +0000;added support to specify location accuracy.
+a80eb08c08ea45a52391da3c29e52ab5467b74e8;2012-10-29 16:11:24 +0000;notify listeners on battery level crossing a predefined threshold.
+765d21e9ab7a0ccd423276217022fe149922802a;2012-10-29 16:20:51 +0000;refactoring
+53ed719231c06266827f868592d2dd8245b09dac;2012-10-29 21:36:15 +0000;removed wake lock permission.
+ff3abaa40612d290b2b220cbfad49e915356c64e;2012-10-29 21:39:00 +0000;minor edit.
+fbb2ffd0d652b54f03b0f732dc77b6da0204a6cc;2012-10-29 22:44:44 +0000;Updated interface
+0a08c879e5c8a55e0c72cea6fa93ec150a9174a9;2012-10-30 16:14:15 +0000;bug fix: low battery threshold notification.
+c004d9a4a22ff99f7a9237afe80a56a67106fa6d;2012-10-30 17:10:01 +0000;Starting to implement global config
+0185cb696ad49e4865713aa5f2b000afeb1747ae;2012-10-30 17:15:34 +0000;Implementing global config
+7e385e622526517ad599bdc6dfea0b5be37784e6;2012-10-30 17:22:55 +0000;Finishing global config
+0495507946787d8786e2187669363736131fe4af;2012-10-30 21:06:00 +0000;added acquire wake lock config
+9520b7c006862bf5671fc3a2d7ce1d8a056d24bc;2012-10-30 21:13:10 +0000;wake lock permission check.
+7049320c15897c1535ebff137aef7327a6d9b862;2012-10-31 13:33:31 +0000;Pause / Unpause start
+ef2eda7abce6a210ba6f106ea888160bf6d08efc;2012-10-31 14:03:18 +0000;made subscription list methods thread safe
+505fd198d11ecbfd1b5629745792dabe08b129e8;2012-10-31 14:24:54 +0000;implemented pause/unpause.
+ce97b2ce2ab3f06af9657b84e5659cbfd6e14d53;2012-11-01 11:22:38 +0000;Fixing merge conflict
+9b9fcb389ce9600960737b95217d4d462d99d549;2012-11-01 18:47:43 +0000;Added simple classifiers
+7b5b5ab5b2efa3b619bbe95a79640dc8b396e25e;2012-11-06 12:00:51 +0000;Adding connection state (push) sensor
+fd0f2c697386bdb08b5fc6cb02f35faf6a710832;2012-11-06 15:54:26 +0000;Updated connection state classifier
+c1b3f63753df4acca06e87d95f781243a98c69e6;2012-11-10 12:22:08 +0000;Added license
+8d37fd2b1385cdaa436d9973d25e3c036d584e84;2012-11-10 12:25:05 +0000;Added license to manifest
+cd5dc7704327660d04abf531aa2bf12235d57ac3;2012-11-11 17:45:17 +0000;Removing unused res/*
+d424c7b2bbbc9d9ccf435305fd1bf8e8ec5dfd85;2012-11-17 17:44:44 -0500;Add null check
+1406cc0481f0075c664b331efb4b6a96ee4202ba;2012-11-19 08:30:39 +0000;Added data getter methods
+591767c3a546d6fe59a2282a849996e8e0373aa9;2012-11-19 10:26:39 +0000;Removing getDataString() methods (replacing with Data Formatter)
+7c7b962c818cf3c944ad6ef3e5c25075b965da1c;2012-11-19 21:45:32 +0000;bug fix, get post sense sleep value.
+dfa77ee1a2a3a08e39b5202cd6b29c92d8cbc291;2012-12-01 20:24:18 +0000;Bug fix (sensor name)
+2854a3ddee52b042c7a04187adf8f8aca6c47d46;2012-12-06 21:28:01 +0000;Require battery permission only for pub/sub
+187112e3c6af92a94c597a9fe265ebe2b74d276f;2012-12-12 16:07:44 +0000;Removing logger
+abb6d3f6d05fb46ce264dd2f44c4eb12a7fa5eec;2012-12-12 16:22:15 +0000;Bug fix
+484c5fb568ba5bcf13c78cb5312c9a7e6b5a92da;2012-12-16 19:12:40 +0100;Update
+2de629bbb19038a7aad08c229d80e6e097574d94;2012-12-17 10:12:37 +0100;Minor cleanup
+fff9989c521c17074ddd6c78e074b8a8afe20893;2012-12-17 10:26:31 +0100;Removing log message
+a35ce65f9040b54ec28455c2a07dff20eae1857f;2013-01-10 15:49:12 +0000;bluetooth and wifi sensor sampling is defined in terms of number of scans
+5f2e500ada8a1b18bd31f02c12d0fb85be2d015f;2013-01-10 17:10:38 +0000;adaptive sensing bug fix
+4d0d3549c75731a60a96b9fd14851535747b3c67;2013-01-11 11:42:06 +0000;added timestamps to the accelerometer data. added DeviceInfo class to query device info such as manufacturer, model etc.
+1d7c0fb150c737521d33c6723d29b29f8e129972;2013-01-22 21:27:31 +0000;added the following - configurable accelerometer sampling delay - microphone sensor data format changed to use arrays - added timestamps to mic data
+5f5a6035d0f25593c39e3434c45ae614b1a854e2;2013-01-24 12:45:49 +0000;bug fixes + added new config parameter for the accelerometer to control the hardware sampling rate
+1c165b89ec41632c8693cd1de3970843fd695de6;2013-02-06 14:33:35 +0100;Added tutorial link
+0b7be49949a049edcb90df26da4d277402f37a4e;2013-02-12 00:33:03 +0000;Adding constructor to allow object to be rebuilt from JSON
+313b7b32930a7497252572718fdf2bc1833c83dd;2013-02-12 15:09:42 +0000;added new class to store wifi scan results
+17d63ce1dadcf7485419dbcf8f0a74669e66c9a1;2013-02-12 22:17:07 +0000;bug fixes
+bce7f27c03a697eec5768a2f58aebb06a29056de;2013-02-14 15:41:15 +0000;bug fix.
+d0068edab4b04587a7f122ed1b1b0567daeee411;2013-02-14 16:37:56 +0000;bug fixes.
+b956f527c95766b74cd2f039e6e91a4be4aa1f6c;2013-02-18 09:43:36 +0000;bug fix
+dcd56e9b114a7e5062e3c7b4829fd94672c34ec1;2013-02-20 23:33:33 +0000;added new sensor (ApplicationSensor) to capture the active application and the recently accessed applications.
+561f000fe26efdc901d28d077bb43e7d82c9b3cd;2013-02-22 12:09:40 +0000;List limit
+68a5644765ce1720b6506ec0d2c9a7bf2f6efa49;2013-02-22 12:17:38 +0000;microphonesensor bug fix
+bba68e618841767a284fdabd8037b3e04562ff15;2013-02-26 16:39:03 +0000;Renaming constants file
+b367a08f1c45d9b4eb7c089aaf0286b73903c96a;2013-02-28 19:00:51 +0000;Updating app sleep length to 5 mins
+3e9bbf13ddcd3ba1c0fcf8c62be04da67b16e85c;2013-03-04 15:28:06 +0000;wake lock - bug fix
+f69b3aec3fa08b179616da05b1f1f31606fa0c19;2013-03-04 15:44:55 +0000;wake lock - bug fix
+faa48afa43d72ea492b42f00d09535c80e88182f;2013-03-26 18:51:25 +0000;Starting to move sensor construction to processor package
+4706a6d25559eefaf2acc3b805341eddcc7adee3;2013-03-27 10:43:11 +0000;Bug fix
+6f8d701f92ad21feda5bd4e65d77096bb0d68282;2013-03-27 21:32:29 +0000;Extracting to processors
+8e3651ee46d61a6f53e1fe18af4e7ec566e30799;2013-03-28 11:09:47 +0000;Finishing push processors
+ac4a2f135bf8d08ae04a19217b8f6374089b408c;2013-03-28 12:16:52 +0000;Updating setters
+3e8e05c228257b88ba41934f683342f8ddf41b76;2013-03-28 16:17:24 +0000;changed sensor data classes for pull sensors and added place-holder classes for pull sensor processors
+6158101806a9742bfcfaf18daa7930a47a37fe44;2013-03-29 12:37:37 +0000;added processors for pull sensors
+7f4845c565481cb55902a0bf52faba2db28cbb94;2013-03-29 12:42:15 +0000;minor edits
+82447f9e90d63fd4fea17b19bf9643bd7909d60d;2013-04-02 13:40:57 +0100;Adding exception throwing
+08749ee201b03522cea86bde761ee70961996843;2013-04-18 10:19:13 +0100;added a method in ESSensorManager to return the app context.
+991127a9474c2cf8ca8d5afd8f72a4e57cda7fc4;2013-04-18 17:40:55 +0100;Updating processors to have access to the app's context
+04fefabc2a99cfa66d548fe2fec3798abca87485;2013-04-18 17:42:09 +0100;Preliminary implementation of SMS text analysis
+55a5909b16cbb79b2471be5d01cc32503ad6f5f6;2013-04-18 18:13:49 +0100;Re-organised sensor config keys/default values
+cd76553ed06ab3c7d0c04417505db3ccfdbd80b9;2013-04-19 06:57:49 +0100;reorganised pullsensorconfig
+f5bae8a577a8ee540ab457f05431e65f0c36bcde;2013-04-19 12:41:19 +0100;adding missing processor
+a6457ff26290f2bd767afeb03280f34e0abd0876;2013-04-25 16:26:56 +0100;Adding to manifest
+a87a7cdfa4cc8cfdafb1f0a9a856d57e87d7d623;2013-04-25 19:59:49 +0100;Making word category generic
+1e354630fbd549d049b09cc655cd1fb3c6efef60;2013-05-09 08:42:08 +0100;fixing phone state null pointers
+4364ddbf3d9fb2d1bfb8119c0f0b466326f4c2bc;2013-05-09 08:45:27 +0100;catching microphone run time exception
+972cf1bb020c33cb4b5dfa81b24941838fe9cf15;2013-05-09 09:35:30 +0100;bug fixes
+c7bdf536fbd6038cec83c61ae7093959a7e0d675;2013-05-12 17:09:30 +0100;SMS NullPointer bug fix
+bbd9e7e6206864503144f1ef7e3b8d717cf3d9be;2013-05-12 17:34:35 +0100;Refactoring microphone sensor
+fd5377ed3719c355e4d92ea545d13a17c6be4539;2013-05-13 12:54:23 +0100;Revert "Refactoring microphone sensor"
+be73a07869c5e8c70d67caa44ca436bb41111d1f;2013-05-13 12:54:24 +0100;Revert "SMS NullPointer bug fix"
+a044dc421a74a2cdc1d68ab6fbab9065fe441b5e;2013-05-13 12:54:24 +0100;Revert "bug fixes"
+32d0c132cd40472ccbf90e0fcbdbd1f8760e5d37;2013-05-13 12:54:24 +0100;Revert "catching microphone run time exception"
+aa203d5230d9b1022b1356ba314e829a4c7d6d86;2013-05-13 12:54:25 +0100;Revert "fixing phone state null pointers"
+d9815141c4807532bbd4cfd22de055383ea51eea;2013-05-13 12:54:25 +0100;Revert "Making word category generic"
+a44b2ceb7e97b6ba615229d35696c02db26cfefd;2013-05-13 12:54:26 +0100;Revert "Adding to manifest"
+efec6ae0e1ed98265dfa5761be9d773b526ceda0;2013-05-13 12:54:26 +0100;Revert "adding missing processor"
+38c4f1b208c69c9115f44294e88141c8d70492a2;2013-05-13 12:54:26 +0100;Revert "reorganised pullsensorconfig"
+9f74674281bcc48f4ca9241c0e7601d3bd9755b1;2013-05-13 12:54:27 +0100;Revert "Re-organised sensor config keys/default values"
+de6962ededd9fdd3d8fc482e29df45daec8388b3;2013-05-13 12:54:28 +0100;Revert "Preliminary implementation of SMS text analysis"
+b7a72de8c2441ccc60cc48c97faa2cd162ea5c98;2013-05-13 12:54:28 +0100;Revert "Updating processors to have access to the app's context"
+fd300f8d9e7f2ccfa440b545d4ed4a0b6b969cc4;2013-05-13 12:54:28 +0100;Revert "added a method in ESSensorManager to return the app context."
+1491a016c3c962ce33baadbe1f1d64ebb61b9156;2013-05-13 12:54:29 +0100;Revert "Adding exception throwing"
+009a305a2da9eecffe4ee8208846634f0367b808;2013-05-13 12:54:29 +0100;Revert "minor edits"
+2fdcd861dae7b730891c71747247108366eb7d27;2013-05-13 12:54:30 +0100;Revert "added processors for pull sensors"
+90958215c9d97100d1a3809187b362aac577a3b0;2013-05-13 12:54:31 +0100;Revert "changed sensor data classes for pull sensors and added place-holder classes for pull sensor processors"
+082560d676f770543cfc1ea42f9e476b2880ccac;2013-05-13 12:54:32 +0100;Revert "Updating setters"
+571356de177d6ff0799e7e178886502f118ea598;2013-05-13 12:54:32 +0100;Revert "Finishing push processors"
+8b22357928aea946f27a3a1a81c2d4e0a19cef05;2013-05-13 12:54:33 +0100;Revert "Extracting to processors"
+1dfdf746a4222db00755acbff94105604125aeb8;2013-05-13 12:54:34 +0100;Revert "Bug fix"
+26283b2adcb9d61d145797d5f44036147a736998;2013-05-13 12:54:34 +0100;Revert "Starting to move sensor construction to processor package"
+558b7b0bb32436334de67621c1b96ed909301247;2013-05-13 12:55:06 +0100;Update ignore
+b9ad8966439fbbc1bb5f7b467f35c437423293ea;2013-05-13 13:10:43 +0100;Microphone sensor bug fixes
+8787f10a8e861280eed2e2f615d00e35ab11531f;2013-05-13 16:19:01 +0100;adding data processors and refactored code
+a8926826cfd7eaf87f319791bc67fd285b75536a;2013-05-14 23:29:34 +0100;adding missing screen processor code
+c51f0018aa7680e83059178d261e06eb5c15722d;2013-05-14 23:30:38 +0100;refactor
+4040595511c5ed034a65cf27255df01a519fe9ce;2013-05-16 14:25:49 +0100;update .gitignore
+9493e6ec24a237004e9179befed51fa66331e52f;2013-05-17 22:50:30 +0100;implemented pull sensor model for sms and call log sensors based on content readers
+d0ec365052c489de83cf4e13106761102835357a;2013-05-17 22:59:57 +0100;implemented pull sensor model for sms and call log sensors based on content readers
+414f1a80ddc2dd548aec07cbab4549d4d810d35e;2013-05-18 07:57:33 +0100;updated sms and call-log pull sensors
+7b7790763b288a849094a1f0d8f35579264eef2f;2013-05-18 08:17:02 +0100;updated permissions
+0b013a8c1fdfb307ba917da72826b93d76f7f89f;2013-05-19 08:26:14 +0100;updated: ContentReaderSensor
+576e4465e575ef381f690af051422a6c42bb41bb;2013-05-20 09:31:25 +0100;bug fix: location sensor
+3de11d743cdbd05e26875f71e2682a56bbe4db14;2013-05-20 09:56:10 +0100;error catching
+8a73938de732efaff1c891f59028a3d73c7453f8;2013-05-20 18:50:13 +0100;Merge branch 'dev'
+c7e175720607952abd8c35631f1238fb25ef6e58;2013-05-20 18:58:37 +0100;resolve config variable move
+937b3b9021e1ef8801ea84e800b4b79da906d5e3;2013-05-20 20:30:45 +0100;refactored content readers (processors + data)
+226162ad14fdd2b2220f86a267127f58fe1f02fe;2013-05-21 14:01:08 +0100;wrapping location start sense in try/catch
+07214393cac903ebe0b40cc9eb4b21f6c1264aa0;2013-05-21 18:17:26 +0100;added try-catch-exception checks.
+e2c7cafaf2476072b300c6f2af56d0c2f79a4ad0;2013-05-24 14:45:49 +0100;extracting config keys as constants
+3cd8e3dee15e46cc8d3f69ee8f402d34e7fffd03;2013-07-09 11:11:00 +0100;camera sensor.
+ed9ad78eb4968b3eeca3b081d355e599ed67e870;2013-09-24 12:06:27 +0100;Refactoring support for SMS word-category mapping
+cc3cc25a52854840ec8c854781d41e587ab20b49;2013-09-30 10:43:38 +0100;added message type field to push SMS sensor.
+ef6071d6462496d80e319495cda4c99dd2a9836d;2013-11-05 13:41:26 +0000;making log.d's optional
+8f3610ecdbe840533aa10b6c1bff3e16269ebee4;2013-11-05 14:29:18 +0000;making log more readable
+3910856d2dab2077d327fad4c16a90d86745cd80;2013-11-05 17:35:25 +0000;splitting call/sms content processors
+08f0ad9a8e2fc3d8b8bbe4e83d0e913fd0a9b607;2013-11-05 17:41:16 +0000;splitting content data types
+584432fb3e35d6ebcfeaf865ad907797e2588817;2013-11-06 11:21:23 +0000;adding types to call content processor
+5f78f5c110bcd404637f854ca1940be53204b29c;2013-11-13 11:12:40 +0000;Splitting ContentReader into SMS and Call specific types
+b97e887c5f4de27c072004a5d0581695594f4aef;2013-11-13 11:12:54 +0000;Improving error messages
+ec1244b357423b64bbfaa6e6ac339c7ed38bc8df;2014-01-08 12:14:14 +0000;Fixing time stamps/typos
+7220b83331fa30ae0b665d41f47276addfc47d7a;2014-02-26 12:51:02 +0000;Renaming variables (they are defaults)
+27e66ccc6a05b4a25238baec309d43360afe5411;2014-02-26 12:51:10 +0000;Update ignore
+e087e9baa161ccb090ec0fe25ac0777bdd8b0e03;2014-02-26 12:51:42 +0000;Adding local-time-when-sensed to both content reader sensors (untested)
+a385c39666cc7eed99a26badb2151b107d2a4a21;2014-02-27 11:54:12 +0000;Adding control over microphone sensing
+71462f939b738ba5f89ba386fa601cedfe732e17;2014-02-28 11:44:36 +0000;Microphone code formatting & refactoring
+64f1fe5d17c49e2965a67c238286fdaa023ac93b;2014-03-14 14:59:05 +0000;adding petko to readme
+dffd1ce53ffd000fda3365af4be675d1a9cdf84b;2014-03-14 17:36:14 +0000;Renaming Audio* to Microphone*
+9746216dd7839928abdc39f879ac9492be9a5e6d;2014-03-14 17:36:26 +0000;Adding support for keeping audio recordings
+13fce2282b930615025dbc5549274a58a1b0355e;2014-03-27 14:43:15 +0000;Adding support for keeping image files (via AbstractMediaSensor)
+50ce2c9dd2b762c10e1c19b350e549b747a2fa81;2014-03-27 14:52:19 +0000;Refactoring config
+5a336b831e59a00ab12b45a4898df80efd930a41;2014-03-27 15:05:15 +0000;Refactoring sensor-config default values
+227f587f31b82a56be0b4b246a1a93671dd19f16;2014-03-27 15:48:13 +0000;updating readme
+ee5e9fd9711cc1bf0fbce3790004a96526baf1e2;2014-03-27 16:12:04 +0000;More refactoring of config
+5e5621391d253ed5cf78ae81c8dc513e73578f78;2014-03-27 16:24:50 +0000;Bug fix
+b276ccede758ed0bac83cb5b4cecaeb9da9a9468;2014-03-31 15:56:05 +0100;Config param type fix
+79c1d39083f98d2d5bf74cefe8cd8c39522edc7a;2014-03-31 16:14:37 +0100;Permission update
+f556a379e3cb8298418e6cfc5acda8d12ce7dd50;2014-04-08 18:11:26 +0100;Refactoring application sensor
+bb402d1e9b8481ce287a82e290f5eee2647069c0;2014-04-08 18:11:43 +0100;Adding app data obj
+d432b15b6cc1f0d2adc631961b01bb036cc6a12d;2014-04-23 09:24:17 +0100;fixing permissions & clarifying permission exception
+0837a831c7d3cf77e76545e5f478be1767604195;2014-04-24 11:23:02 +0100;refactor strings
+68e35570cbdc12d84be94aaebe9e1b5d94fc6722;2014-04-24 15:58:01 +0100;reline
+aa1e91a365145903ba4f8acf08baeea64c91c2ce;2014-04-25 17:01:19 +0100;fix battery sensing on API 19
+b7e405bd83cc7591bcf69fef8b93b103a278def0;2014-05-20 11:44:07 +0100;adding jar to bin directory
+ba9fc288398872f475341c8e0e9a66735c326462;2014-06-03 10:43:52 +0100;removing unused
+9ce10e0dc857d2f6a3acdde9116d50d77c6ff18e;2014-06-03 10:44:09 +0100;refactor permission constants
+13efbaa74c65a37e0b37476255997236d1ebff84;2014-06-03 14:07:09 +0100;updating jar
+cec96ba8c1073fbb68b1bae84ff79f56bf7b862f;2014-06-03 17:26:43 +0200;Add PhoneRadio sensor.
+b34f15309293abe5fe14256053b93e2751bcd221;2014-06-04 18:55:55 +0200;Added push sensor for connectionStrength
+a2eda9eef62513ba532ec418237b9be94a9f0f57;2014-06-10 11:58:55 +0200;Add unregister for bluetooth BroadcastReceiver
+95dcd951b8cd63ef5b59800d4ff64312c4740ac5;2014-06-11 10:14:28 +0100;add gyroscope (from @sibeliusseraphini)
+0effc0f25c36e713780fac00a4004de3395368b1;2014-06-11 10:23:27 +0100;refactor (AbstractMotionSensor)
+3842de2546a097c68994c8d04a48debfb7771b10;2014-06-11 10:29:56 +0100;refactor (MotionSensorConfig)
+28e577e22667b32debafad7f00b9c816ab9a95a8;2014-06-11 10:46:42 +0100;update read me
+9bfe283d11560f9ac28f26a82fcb58e387099785;2014-06-11 10:53:08 +0100;add license headers
+4ebb7cf7f29948fdab29313cadf9fb610431df52;2014-06-11 12:59:37 +0100;add light sensor (from @sibeliusseraphini), untested
+9ce6557e0d8838bcbdcdb61b65e9255c3d831a6e;2014-06-11 13:38:26 +0100;add light sensor
+b020028afee8588bf4a9bc07133c5b671b2bc64a;2014-06-11 13:42:09 +0100;remove unused
+fdb7de53e106cfd088c928b2df12552872b068f0;2014-06-11 13:44:48 +0100;add missing app/task permission
+4c54e1f2b6d0e617529a18193bb3c01eef7d6473;2014-06-11 14:32:22 +0100;camera runtime exception
+06d42cfcf71042090ff9e5ac44473532a7c20130;2014-06-11 14:34:29 +0100;removing email (use the mailing list!)
+d14bb814350f3f08f0058f87f622e99cda6ba567;2014-06-11 23:02:34 -0700;Add unregister for bluetooth BroadcastReceiver
+46cb46b068464783c9711de103723e14d064335f;2014-06-11 23:59:54 -0700;Solved the Leaked IntentReceiver for the bluetooth sensor
+7b14e37dd3e81d60947216c7765d4770f7e67d0f;2014-06-12 12:08:02 +0100;Merge pull request #7 from sibeliusseraphini/master
+073273a447ac22a359d3120cefdceb5f3a638c2f;2014-06-12 14:50:57 +0200;Simplified ConnectionStrength
+510084b9f5cf87300d8c2dd4a540472d98b15a26;2014-06-17 09:08:18 +0200;fixed Bug in ConnectionStrenght and Suuport for new bluetooth interface
+e3c598024b44772969dc8d8ff0b05f466724dca1;2014-06-17 09:49:59 +0200;Merge remote-tracking branch 'nlathia/master'
+d2d92e1d83d18bd5940792105118ea83da6a53d9;2014-06-17 09:52:22 +0200;Updated jar. Fixing minor typo in the merge
+7231f9702bbd362d1bfcd2de37a218400187f1cd;2014-06-17 10:40:24 +0200;Fixed .gitignore for bin/classes
+7741a529927a71fdb77972cf94a9786103852b60;2014-06-18 11:45:16 +0100;updating readme markup
+982bf2350c77eb61c64c8cc4e45e8ef07d62a3da;2014-06-18 11:46:44 +0100;typo and spacing fix
+cf9ac242c9719da9d1c1f635906a63485199d50b;2014-06-17 11:44:40 +0200;Added support for list of locations
+a6ff33a65139afd6886e71f50c140681911febac;2014-06-17 17:18:04 +0200;Cleaning For locationList support
+b7153e4c20a687649e60dbc0a163767aeda64d02;2014-06-25 12:00:31 +0200;Added PassiveLocationSensor
+5294c5431bf46c02cb32a31df7f378b0e15ca832;2014-06-25 12:14:27 +0200;Looper bug
+eb385c5489dd5b0126ac0a4cee0df64e43e25fb1;2014-06-25 16:54:30 +0200;Debugging passive location sensor
+3bef2f8a0192431839ddf3e4c7f44979b86fd924;2014-06-26 11:06:42 +0200;Added config for passive location, removed some Log call
+e74cce9049745083bc55c15b5db6389ea28cc01b;2014-06-26 13:58:08 +0100;linking usernames to github profiles
+d0d460f7079dad614e131e686b7765cb1427eeac;2014-06-27 10:47:30 +0200;Fixing config bug in Passive Location
+03edaee2affb1e44ad589f25bd5c7d48bef0baeb;2014-06-27 15:04:00 +0200;Fixed copyright
+d732261329a04b9a8c84a2b7e11c0f28537c4102;2014-06-30 14:50:06 +0100;Merge pull request #8 from PuckCh/master
+4019f5d06a0deb3240d57405cae76898b5ffab95;2014-06-30 15:13:54 +0100;adding Idiap contributors, starting to move docs over
+b1c377c04e4deddc36865fd3cae324d72d5a11d0;2014-06-30 15:17:51 +0100;adding docs dir
+aa137a41f8154d01d3f975b46b8dece7c14b9754;2014-06-30 15:31:36 +0100;Update research.md
+39079ffc040247209af4a93764a68ca70991507c;2014-06-30 15:38:40 +0100;Update README.md
+d46a08e8908e6568b930c14aa21c9dedbc09c959;2014-06-30 15:44:10 +0100;Update and rename introduction.md to README.md
+acf4de92ffafa93f1e03cc6500a0b4ba3d9f6370;2014-06-30 15:49:30 +0100;add apps md
+82c8de2ef178faa1c16f3c0d29969a711379b1f9;2014-06-30 15:57:19 +0100;Update README.md
+eb55fa3d491be1d4b3f242578dad5f4eef1e7b56;2014-07-01 10:49:27 +0100;Update README / push sensors
+70a09368777cd79f38fd3448235bc102e5351ea5;2014-07-01 10:58:35 +0100;Update README / pull sensors
+080e5ef309a6ee31d04a6ece6a03e886a6682cba;2014-07-01 11:21:52 +0100;Update README / link to usage
+8d7092bdcbcf5fe97cc141cf379f4d83fd3444ed;2014-07-01 11:49:00 +0100;Update usage.md / transfer from Google doc
+a6d92650d3b06e36166ebd95b70e0569746cdc2e;2014-07-01 11:50:29 +0100;Update usage.md / Accelerometer permissions
+a07a8a10e58acb55d91206dfaef8b4fa71bdf2e7;2014-07-01 15:51:50 +0100;Update README / link to ubhave
+b6d615910bdbbb2106e34404dabe5bd199cf978b;2014-07-01 16:00:50 +0100;Update usage.md / access sensor data
+40d399f9bb8129c828206488faf87a7391b6bc5e;2014-07-01 12:04:08 +0100;fix potential null pointer in location lists
+d54871bf79f4be5e832708bbe89b1f4785c8ba41;2014-07-01 12:04:30 +0100;ignoring cache files
+05e79bc3a241a19e31d295044e6d152a85736c58;2014-07-01 12:10:21 +0100;refactor
+a63dba6e805227ec8ff685a54c2ac4e32afd64f0;2014-07-01 13:14:00 +0100;updated jar
+75482a85ab279437f4dbec6ba7239c3e7c59a133;2014-07-03 14:15:33 +0100;update jar
+4134dae4dd11eb2bf06a916f867eab782a366aee;2014-09-01 14:55:15 +0100;Adding SenSocial paper
+c2311cbd031b251ce002590a9e5ff75c4e7b1391;2014-08-12 13:36:28 +0100;adding bluetooth state/force enable as config
+44f1f46bd8ebac6ebecc374c7d73cd0dc447b085;2014-09-01 15:10:07 +0100;draft of environment sensors
+8a10e369188a3d80567e7bd236c034184147416e;2014-09-01 15:11:15 +0100;simplify namespace
+f4a30a5423fe80d03c058fccd829950aeaebdaa2;2014-09-01 15:11:53 +0100;fix config bug
+3c521a0fbb29bd87788519833a01c61382200f23;2014-09-01 15:17:16 +0100;simplify namespace
+700456e528cd001165f543d2ba572260ecad8990;2014-09-01 15:42:08 +0100;adding environment sensor processors/data
+822159ac48cb1a9a51ea229a19b6bbef9a2e63aa;2014-09-01 15:43:36 +0100;remove unused exception codes
+c21edf18dd545bfdb0055926c258ecfc0521c1a9;2014-09-01 16:36:38 +0100;simplify getSensor() calls
+6a936d2551c8382de238ed8c8c94a70779dc0e11;2014-09-01 17:42:45 +0100;refactor utils with enum
+8349a7858cfeab62557afbccf4c230e4031f42a6;2014-09-01 17:51:45 +0100;adding group checks
+eb4869e8a2c2c5b9ef15eede11d3d7496770a71f;2014-09-01 18:30:21 +0100;refactor ambient processors
+ac2a62d7d29d8f4734fe84a14641db0f4fecca46;2014-09-01 18:56:49 +0100;updating jar
+afa64d18516a7df59fe83ca8f2047a9e0879086e;2014-09-01 18:58:47 +0100;adding environment sensors
+de0c7fa160e82e4fc8bd7c4ed881a8ce081e0992;2014-09-02 11:18:47 +0100;updating exception message
+be27a021aace0b7a7cd21e18f4f8f69d44e0851c;2014-09-02 11:19:06 +0100;exception message when sensor is missing from device
+05f103ee1d9025d1b4f8a44fc3cf20b758979547;2014-09-02 11:19:28 +0100;local bluetooth test
+53547cd9961f9eb50766b74814ed4cf98eecfd2d;2014-09-02 11:19:34 +0100;add @TargetApi
+72ece6c9e1a5636d6d3d7966cb7f05ee2371054e;2014-09-03 11:03:07 +0100;replace TODO comments
+23993608802fc2143a32ff04626d1650c01dc2e5;2014-09-17 12:55:30 +0100;tutorial docs, first commit
+e93dc40e6e60ca3047da50b338562c634ff5be36;2014-09-17 13:32:01 +0100;Refactor motion data & add magnetic field
+e03482cc1dcfd9318ab35ab12be0eadf2f729c2e;2014-09-17 13:32:21 +0100;Refactor motion processing & add magnetic field
+9abe347af2b7be9b9db19ff2d9b974313e22529a;2014-09-17 13:32:43 +0100;Missed accel/gyro processor commit
+1677547f7c8c257388119078630534b8ec5ebf43;2014-09-17 13:33:07 +0100;Refactor motion sensors & add mag field
+46ed2e8dfa83587d6ff5f1abeb728cb83a6b8a25;2014-09-17 13:50:15 +0100;Update contributing.md
+8aa091beae9182bd09c07a9d530df181b49cd25c;2014-09-17 13:50:49 +0100;updating jar
+7c6c37efa49835f0887269f3e24c10da1eb0f8af;2014-09-17 13:51:06 +0100;Merge branch 'master' of https://github.com/nlathia/SensorManager
+656d177657bb7448af502d7ac8d07afd4492497d;2014-09-22 14:17:13 +0100;adding missing processor
+2976b57c3ac20b48ff9dabf5548682241a1dc2ff;2014-09-22 14:17:47 +0100;minor refactoring
+dbd39dee3d91c370bd32ac7bd2a3f9c8f1df573d;2014-11-03 14:51:04 +0000;Make call/sms log sensing configurable by date
+92cb2af9a20ad37150181b03591e2f5083ac3f34;2014-12-12 16:34:27 +0000;Fix config & prepare for extracting feature data
+95873f23d24d489748efa0e57e90b87571e8b771;2014-12-22 09:35:01 +0000;Add SensorConfig to data classifiers
+a3b3cbe7425be196d118084a924e8b98cd17a08c;2015-01-14 20:04:32 +0000;Remove logging
+caaa47cca86054648197a6ac3dd2bdeb2c51aed2;2015-01-14 20:04:52 +0000;Add bin dir
+59a747cf3f130e915c80016ff2974734c65a29f4;2015-02-20 12:56:08 +0000;New jar file
+d5ea2fe90109a0ba0f4c137d91217bb1ad3c3870;2015-03-27 09:24:52 +0000;Updating sdk in manifest
+b7fda731936319ff644020b2ccbd5c846ec232f0;2015-04-02 09:05:22 +0100;Add latest jar
+c6b602255c1692236c083187f6cb28a2bc0f50d7;2015-04-05 15:00:13 +0100;Latest jar
+086ca3bcade7e8f3c4ef3909dabb9302fd1f3925;2015-05-25 19:39:16 +0200;Fix global config var visibility
+b58f09967398f1c3020dbc8141b6b15d56222488;2015-05-25 21:29:25 +0200;Set config params to final
+7361c2968ae909afa40292965f5c745bff6eb5d8;2015-06-08 17:10:21 +0100;Add new jar
+12bab8b95249f928721ccfd0841e2bbc8ca55a21;2015-06-30 17:03:18 +0100;Upgrade to min sdk 19
+742308f089e95e1f60dc3631be0f7578ab01e0bc;2015-06-30 17:05:02 +0100;Minor refactoring
+9f863130909701f134ee938e451ad03370446d72;2015-06-30 17:05:27 +0100;Fix Issue #12
+39918eb3436ece0a6f9d39e8bf46ba57eb16c6f0;2015-06-30 17:15:08 +0100;Remove broken camera sensor
+af4c29bae9a547b8ed8d6dcc899749d8153ca00b;2015-07-01 14:54:18 +0100;Add step counter sensor
+b2a9fefd04272740243b1ffb5e3c622e9556e92a;2015-07-01 16:35:09 +0100;Add new fields to step counter, other minor
+50590f0005a7ec82171a301f2c7551f4b92f9160;2015-07-03 09:46:34 +0100;Add jar file
+ed58cc02ba50fbc4f86aca7eff33fa52e993fb44;2015-07-07 16:27:29 +0100;Make number hashing static
+709f1da71dc3e93229dbc7294eff50a5089b8090;2015-08-05 14:50:22 +0100;Remove application sensor
+6f5e1cb5b5e2c55f65d26131e4708f9172b509cf;2015-08-05 14:50:37 +0100;Add interaction log data
+017a932444d71801309aadeea458a6107fa5af33;2015-08-05 14:50:52 +0100;Remove application sensor
+5ba90f52f76d81bc3478a54ce42f473a8e4df7e5;2015-08-11 10:55:54 +0100;Update README.md
+1a217b2df4ebd21f1d9dc35f9f24cbe5e5aa6040;2015-08-11 10:56:38 +0100;Remove local docs
+b1c8dc09f591a5202abdc39cf02263fe706b0659;2015-08-11 10:56:41 +0100;Merge branch 'master' of https://github.com/emotionsense/SensorManager
+717e3da55cf5f9714498cd7d156580367d987027;2015-08-11 11:28:05 +0100;Moving project to Android Studio
+0d4c3b8f6cc240dcd79142812a61324ab381c0fa;2015-08-11 11:57:16 +0100;Delete local.properties
+52595bd7771f68bd9a518864f776941ca0b1dd1b;2015-08-11 13:16:44 +0100;Move project to gradle
+b09cc57cb9a97d1105da06e00fa133fa496a1940;2015-08-12 18:45:09 +0100;Fix gradle
+d5750b8d9fbf68df0a19eb9510e2d28d80d67a64;2015-08-18 16:48:35 +0100;Backup
+0772ca6d467fd2209bcde5060e0f3b9fb1cf55c6;2016-01-08 00:06:50 +0100;Downgrade to support Android 4+
+6501f2260a2bc3b2905992b084a2164d992fadcb;2016-01-18 15:32:02 +0000;Upgrade gradle build version
+a557d69edca71ef40ae6018ba341e73dee5067ea;2016-01-18 16:08:20 +0000;Fix gradle build errors
+1708cd69395ac8e4d2451f70246dfb2ff04f707e;2016-04-20 17:32:22 +0100;Remove old sensors

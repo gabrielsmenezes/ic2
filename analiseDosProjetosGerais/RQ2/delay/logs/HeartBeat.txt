@@ -1,0 +1,650 @@
+572f08976f230f9b08788a76643e0ac8c2e70713;2015-06-11 09:48:37 +0800;Initial commit
+d76c9339ba9f1ca35091d6d7fc4e796a53ad3db3;2015-06-11 10:06:41 +0800;init
+51e25f249b9c68ae0b16e4a00696c5f83013404c;2015-06-11 12:11:20 +0800;UI.
+350fae88ff5687eb8cd236e8be13295fac660a2f;2015-06-11 12:15:17 +0800;database
+ef2911f57d2c6a283f3ce69e0cb453133f44b9a9;2015-06-11 12:16:15 +0800;base UI.
+fa4030034b7c9f34ded60bf959c1bbfa503a2891;2015-06-12 15:57:07 +0800;add event activity.
+cc4c8d0886138ee48de67f2de43c418f23bbaa2d;2015-06-12 15:58:01 +0800;click FAB start AddEventActivity.
+a614bc82a1907a166fc89fb4a366b48db323b554;2015-06-12 15:58:15 +0800;add resources.
+b36a2a96f8d2fb422828df59bcee663104cfe2c6;2015-06-12 19:49:46 +0800;fab add event implement.
+46897c0a91a840309bec30a798cd165e3199c1cf;2015-06-12 19:50:25 +0800;api of save event to DB.
+057dc21df80c8a8e7530af792d76c8a8f2db999a;2015-06-12 19:51:03 +0800;Event model.
+34de5d0653897dc3ba96fc311c4632910604d043;2015-06-12 19:52:22 +0800;EventListFragment: a Fragment contains RecyclerView which consist of CardViews.
+c690a24eb3b3316e733d89fae9153526d3505c59;2015-06-12 19:52:44 +0800;An API querying all event from DB.
+0dca9d0a67f46699c80abbd308724999134f3dbd;2015-06-12 19:53:25 +0800;update resources.
+a530798e9e9e15f21ddbdcd042e35fa603dff855;2015-06-12 19:53:36 +0800;Bug fixes.
+01b51f121725c5924b43bee7089971e8b12e9677;2015-06-12 19:53:50 +0800;add Fragment to MainActivity.
+23a0f5175b0043b1b0dd8200c176009ed91bfb59;2015-06-13 14:09:13 +0800;add a new Activity: EventDetailActivity
+82563dee8f7242fe0ddab397904c476ef189aed0;2015-06-13 14:09:49 +0800;add event id to Event model.
+980a834f0624261ccf869c3a825be2550d8fb32e;2015-06-13 21:32:39 +0800;activity_event_detail.xml: add RecyclerView of thought timeaxis.
+491f79fe6f87aba7bfa5676ab9dd0ca486a16558;2015-06-13 21:33:35 +0800;EventDetailActivity.java: read DB to fetch Event details and update UI.
+192b6f2efa79259b30cdb85abdce938d64112922;2015-06-13 21:34:15 +0800;FixedHeightScrollingViewBehavior.java: Bug fix of Design Support Library.
+f0b11e76e8a527268e5c3b779c78129611d9506f;2015-06-13 21:35:00 +0800;GetOneEventApi.java: get one event detail from DB.
+4be822293b72401d4f6b5a03ac19da2b1dc82805;2015-06-13 21:35:49 +0800;item_thought_timeaxis.cml: time axis item layout.
+fa39e4a35d278a2ba5714ab4e179458e8391e8a1;2015-06-13 21:36:12 +0800;ThoughtTimeaxisAdapter.java: time axis adapter.
+896e1bc0e9d6f21a6bffab96213b43d8d32a2795;2015-06-13 21:36:21 +0800;update resources.
+c622975f4f1e369ca112c623e84e5a326667e622;2015-06-14 12:24:34 +0800;update event model: now Thought JSONArray consist of {String thought; int timestamp}
+510737bc62518d9cbda401c240158946690a48f2;2015-06-14 12:25:01 +0800;item_thought_timeaxis.xml: add a TextView to show time.
+a194baa7a4a8b0f4091854ef574370ee26f386fe;2015-06-14 12:25:22 +0800;AddEventActivity.java: handle exception.
+6ce678e413a2a4089e6328f36d5d501003032f81;2015-06-14 13:23:01 +0800;TimeUtils.java: parse time to String such as "xxx minutes ago".
+78c04d2b6be4236a64680888337b2241a75eecb5;2015-06-14 13:23:30 +0800;ThoughtTimeaxisAdapter.java: use TimeUtils.
+a1a575bd770d39c36bc9086c1ff8b47c67f99d8d;2015-06-14 15:31:30 +0800;activity_event_detail.xml: add fab to add new thought.
+319f74e9b66a4870214e08c410fa6a47d000684b;2015-06-14 15:32:00 +0800;AddThoughtApi.java: a new Api to add new thought to a event.
+0e8d1e0f2b156123a3e80d53b2ac246aaa7c1fb3;2015-06-14 15:33:06 +0800;NewThoughtDialog: a dialog to add new thought.
+f719f9557477eef1d6dd7d1de81209f01ff7ef1a;2015-06-14 15:33:54 +0800;EventDetailActivity.java: handle fab click to open dialog to add new thought.
+6a1e1021be331ba8022836f6f252bd3735bcd0a1;2015-06-14 15:34:11 +0800;update resources.
+a403b41814471606b347c1fd175002151c31773a;2015-06-16 11:07:48 +0800;EventListAdapter.java: show time on the Event list.
+cc06436214de2692208c921096f9134cc8687062;2015-06-16 11:08:27 +0800;Bug fix: using getLong() instead of getInt() to fetch timestamp from DB.
+72441339b68a711743ec9394bcdc2b4a70ca61de;2015-06-16 11:14:03 +0800;ThoughtTimeaxisAdapter.java: fix index of thought.
+dbaaaf2052ffe65c164274dd84f1325d9b996c7f;2015-06-16 11:23:25 +0800;item_thought_timeaxis.xml: bug fix and optimize.
+e5f60b652a52f93d7e38b74a348fa967878a2d98;2015-06-16 11:32:28 +0800;DialogAsyncTask.java: wrap ProgressDialog into a AsyncTask.
+acc9225b626d324b7ecf9f3448b9566d4541d87e;2015-06-16 11:32:28 +0800;DialogAsyncTask.java: wrap ProgressDialog into a AsyncTask.
+52d5ad8aef0eaf0630ea46d5ad54b4adcb89458c;2015-06-16 11:35:11 +0800;Merge remote-tracking branch 'origin/master'
+5cb017385024eb22291cdd49db787355ca4a5032;2015-06-16 11:50:02 +0800;AddEventActivity.java: show a progress dialog when add new event.
+f81edd0f7f63bc7653396532cef81018d35ed426;2015-06-16 12:20:50 +0800;EventListFragment.java: use a public method to update list.
+ad084ff271be9fe8e7a5e1f43eedb95b4c7c4d28;2015-06-16 12:21:39 +0800;MainActivity.java: autorefresh event list fragment when finishing adding a new event.
+686498013212363fe8398faf2a72a94fea355d5b;2015-06-16 15:06:28 +0800;Thoughts.java: new model.
+ccfc5275746eedf3b5805e70e2b25e458cc316dd;2015-06-16 15:06:40 +0800;Event.java: use new model.
+b2af7fa1f86798b57c25ed54bc9c22631455c95f;2015-06-16 15:07:14 +0800;use new model.
+2ec14de31ebf3031053b5cb49b0062ddb9d6df3e;2015-06-16 16:30:17 +0800;TagView: modify from kaedea/Android-Cloud-TagView-Plus.
+f4194c493b7452a827f64ff457d679cf8de03e18;2015-06-16 16:30:58 +0800;AddEventActivity.java: use TagView, more work needed.
+18688f9f63536496ddd4aa4394d77b360ecad205;2015-06-16 16:31:08 +0800;update resources.
+95c2c202daee3b8bb6b7c246136c037e89a31859;2015-06-16 17:51:47 +0800;EventTable.java: remove labels field.
+04781cc62492b66d54194169f12ad712c11c5a36;2015-06-17 17:52:33 +0800;AddEventActivity.java: Tag listener.
+cde5f757064522a8fc1f61c121c0c878f65a0aac;2015-06-17 17:53:19 +0800;BaseDBApi.java: save Context as field.
+656dc2edadca02c8319af378f053bcacecb64f5a;2015-06-17 17:54:01 +0800;NewLabelDialog.java: a dialog to add new label.
+e6a069deed31483fae68bbc9e372f34388ddff04;2015-06-17 17:54:32 +0800;TagView.java: add a clear method.
+94b0ea7b2b9d48573d8c88f76047250c83467b3d;2015-06-17 18:54:48 +0800;AddEventActivity.java: now add envent, label and their relationship.
+add452753fcd23bb4c295989958fa8c3ef695dd5;2015-06-17 18:55:34 +0800;AddEventApi.java: add a method to query the id of the latest add event.
+8191873c90f38a9f592dd1d42a2258c456820ca9;2015-06-17 18:55:53 +0800;AddEventLabelRelationApi.java
+ffd786df148a6fd1d02c85b8ae52736ee48c6a59;2015-06-17 18:56:07 +0800;AddLabelsApi.java
+aae0bfddeb1994d129afb1a7b9c1cb44d34d779a;2015-06-17 18:56:42 +0800;DatabaseHelper.java: add EventLabelRelation model.
+e53e9c3d8c0b0daac04d3ee10e7360a00e09a6e3;2015-06-17 18:56:56 +0800;EventLabelRelationTable.java
+26cea756e72cba2916cc04d9cceb9d997a6d3fed;2015-06-17 18:57:18 +0800;HasLabelApi: if database has the label, then return its key.
+66aba6344e674f5642b7b53443555267882a6d30;2015-06-18 12:40:27 +0800;AddEventApi.java: bug fix.
+2169c4b86f1b5e1720d1b3f749501e0a082abb00;2015-06-18 12:40:54 +0800;EventListAdapter.java: show TagView.
+ad0d6722fb13b71ea4be6aabd06ff963a190d4c8;2015-06-18 12:41:12 +0800;update resources.
+c9159cd77b62a1a63e38682bfb3b4662b8aa972b;2015-06-18 12:41:35 +0800;GetLabelsByEventKeyApi.java: new Api.
+31d28e62f97e43bef0d6ec6404e44e40de6a5cf8;2015-06-20 22:21:39 +0800;activity_add_event.xml: recent TagView.
+ff0203ad9c912b68e39a4302575163b6623fbee2;2015-06-20 22:22:10 +0800;AddEventActivity.java: recent Tagview.
+f4113a53cc82ade41767b0b9df4f954c7ff35461;2015-06-20 22:22:30 +0800;GetAllLabelApi.java.
+e34a6c59cba1305391c3f9ce296d50eee12bd8ee;2015-06-20 22:22:45 +0800;GetLabelsAndFreqApi.java.
+a82ca09e4b117c35250edd66e5bd9d973b8c7c5d;2015-06-20 22:23:01 +0800;GetOneLabelApi.java.
+d0156026740fba7705c88499740cb362c4a12d62;2015-06-20 22:23:22 +0800;resources.
+7f41058dd0890808106d00e96bab0cd0b86e2d49;2015-06-21 00:43:26 +0800;EventListAdapter.java: remove TagView from Taglist.
+ba16b28b39e8ca7df5469cd9a50ec1bc11a67e15;2015-06-21 00:44:03 +0800;code refracting.
+e72bf6d5cd79ab454b0d86ecc31d7cded3247f34;2015-06-21 16:10:35 +0800;EventDetailActivity.java: add time and tag display.
+dc73b1e848a11e5d6d1b732acba39c4aa7bd64bf;2015-06-21 16:11:05 +0800;EventListAdapter.java: remove unused code.
+66b522f990d6289cbf92b8f5953da7eda5b967dc;2015-06-21 16:11:34 +0800;GetOneEventApi.java: fix timestamp.
+8926f7bb5b71732aee690882423e733ab6f4f1f3;2015-06-21 18:01:58 +0800;AddEventActivity.java: use new Api.
+38ed10dbdeb86bf3a5b7761b490e46862c609c7f;2015-06-21 18:03:03 +0800;AddEventApi.java: fit new Event model.
+6e91e62916ba89dc572974b6cbde7799d3b0a312;2015-06-21 18:03:35 +0800;AddEventThoughtRelationApi.java: new Api.
+727b4246e914e281c8184d699c39e81468dc596a;2015-06-21 18:04:04 +0800;AddThoughtApi.java: fit new Thought model.
+027adeae6aadcd2bda9fa235fe01dc2fe80afc79;2015-06-21 18:04:37 +0800;BaseDBApi.java: add method returns the id inserted.
+f6605b63dc44a5168638b951cbaff86a80a34d9a;2015-06-21 18:05:25 +0800;DatabaseHelper.java: add new models.
+a1f9f60b39770f89533eb4c1d8881bbde1e11390;2015-06-21 18:06:06 +0800;Event.java: remove Thoughts filed (moving to a separate table).
+72ad81446d74922b1915cf6771b4fdd1b4ee90a8;2015-06-21 18:06:30 +0800;EventDetailActivity.java: use new Api.
+e9ca42709b58d4d028137310c15e3cca0066d1f5;2015-06-21 18:06:59 +0800;EventListAdapter.java: use new Api.
+716d654227fe9aed0cce05738fbadf86667b1616;2015-06-21 18:07:26 +0800;EventsTable.java: remove thoughts in Event table.
+41402705433827854162df0eabb05f8ef952c487;2015-06-21 18:07:45 +0800;EventThoughtRelationTable.java: new Api
+72abc063b7d0b6a7aa8b9c54982c80aaaeecb845;2015-06-21 18:08:06 +0800;GetAllEventApi.java: fit new model.
+d65b3db986b45750192e224cc791a604f69c204a;2015-06-21 18:08:56 +0800;GetAllThoughtApi.java: new Api.
+be6c5faf130071561e2c078d108e141ce5a1d8ee;2015-06-21 18:09:17 +0800;GetOneEventApi.java: fit new model.
+cd795941c94e0f452bcf8e7cf44a10139a4de949;2015-06-21 18:09:46 +0800;NewThoughtDialog.java: remove unused code.
+3b1536efa3efa3e3b60f0d69ef8fce63deef8272;2015-06-21 18:10:06 +0800;ThoughtCountByEventApi.java: new Api.
+9ae9f22235a6c147d1aeddf8712ccedec39fd3c3;2015-06-21 18:10:37 +0800;Thoughts.java: model refactoring.
+7ef84b8f81c2cb81a4e22fb4b8769f6322e80238;2015-06-21 18:10:56 +0800;ThoughtsTable.java: new table.
+f2abd54540e9924c9c14c18809fc1daa0c10b523;2015-06-21 18:11:25 +0800;ThoughtTimeaxisAdapter.java: remove unused code.
+814bb97c9f62fde9edf7ae56b9559a4354e209cd;2015-06-21 18:11:52 +0800;item_event_card.xml: adjust layout.
+0d6767739533b7c3a3bf0168a95a525b0395d80f;2015-06-22 20:48:46 +0800;TagView.java: add a extra information field in TagView.
+d3f51138ec7e3a9a0a5b432308f0b330b8f27106;2015-06-22 20:49:18 +0800;AddEventActivity.java: put label count to extra information of TagView.
+641c12272feb02faa19eb5bc8ad520a000847f84;2015-06-22 21:16:59 +0800;AddEventActivity.java: recent Label add works.
+c6c832a34a0a53969d6c2703f08786ec3b92075b;2015-06-22 21:34:03 +0800;MainActivity.java: init toolbar and navigation view.
+9e2f392fa95de5f25f6d742bd1b31a32197d53d9;2015-06-22 22:35:18 +0800;update resources.
+edc1a33e3f3e174fe34455de01fa053f5e43524b;2015-06-23 22:23:11 +0800;MainAcivity.java: navigationView listener.
+c49fa2d1771bc37201bc641b15193efde09c2dc9;2015-06-23 22:56:04 +0800;EventTodayFragment.java: add a new Fragment.
+135c3ad6365034d33e88d307a607dbee5512858e;2015-06-24 17:26:38 +0800;code fixes.
+672fb4fe0360a50dd5ca6ac91dd40f1ee4155e42;2015-06-24 17:27:11 +0800;GetTodayEventApi.java: new API.
+ad6c2632422e81177d6c0a781df46f01934916a9;2015-06-24 17:27:28 +0800;EventTodayFragment.java: show event today.
+09109980fce2d888fdcb19772146c7e05a9fa481;2015-06-24 18:42:28 +0800;EventTodayFragment.java: show today infos.
+513efefb77e92a7164db1263562cc26b655cf880;2015-06-24 18:42:51 +0800;GetThoughtTodayCountApi.java: new Api.
+2c1afd4949f69d2343f017017eedd40ddcd757b8;2015-06-24 18:43:14 +0800;GetTodayEventApi.java: remove log codes.
+e4950e7c141c667b9e0be4c6690304124f4abf57;2015-06-26 18:21:36 +0800;CloudView.java: Cloud Tag View.
+43d5ca655c2eeb56158e50918ccc8f42a548f107;2015-06-26 18:24:17 +0800;LabelCloudFragment.java: new Fragment showing cloud tag.
+061bbf6e9b98b51c7d2c07c9a4d117de727f5b24;2015-06-26 18:25:16 +0800;MainActivity.java: add navigation item for LabelCloudFragment.
+7ad889eb6b93abd931d146bb9daae54d4c95b132;2015-06-26 18:25:27 +0800;update resources.
+687106bfbe5162a90503dcc19d6f7f5be78bbe13;2015-06-26 18:59:44 +0800;CloudView.java: size computing.
+f277eec791d829b8f143f12ce3c411648af162a1;2015-06-26 19:33:28 +0800;CloudView.java: color change by freq.
+7a690c2b3b975b6565c311722c2045e00a6d0f19;2015-06-27 19:25:07 +0800;LabelDetailActivity.java: new Activity.
+56902d19f32b1b2ea306e7d61027de35160a12df;2015-06-27 19:25:41 +0800;EventDetailActivity.java: click tag open LabelDetailActivity.java.
+984d450b2d6661148f2f44927d797b78e60cdca8;2015-06-27 20:38:35 +0800;GetEventByLabelKeyApi.java: new api.
+3b65fab8feb352ed5854c849a14be95d73dc1aa6;2015-06-27 20:39:14 +0800;LabelDetailActivity.java: display events under the label.
+ca298f90352bdf1c616314dbb56c82fdb6632dd7;2015-06-27 20:40:30 +0800;EventDetailActivity.java: now not call finish() when clicking tag.
+c826a686329c8e162bc325f3782daf708fc21e6b;2015-06-27 22:37:50 +0800;CloudView.java: add a callback function.
+44e9da60c7cd0694fff8390419adec4fde160263;2015-06-27 22:38:20 +0800;LabelCloudFragment.java: click Label goto LabelDetailActivity.
+03d25e8e1b74e8c0782b22b78cbfe67b731def15;2015-06-28 18:01:58 +0800;SettingFragment.java: a new Fragment displaying setting info.
+7db35d09cba4ddbadf5be4dba60be79b53aff2c5;2015-06-28 18:02:35 +0800;SettingsActivity.java: new Activity contains SettingsFragment.
+4c6734db04fe4d1a197b30db34dd23d11dd9a1be;2015-06-28 18:03:11 +0800;ImageTable.java: a new model to store images. not working now.
+14836d80820913f3eddf001348fa0ed262cfeff7;2015-06-28 18:03:47 +0800;EventImageRelationTable.java: a model to store relationship between events and iamges. not working now.
+3543db1c642bd696e52cb267077a71ffefa93234;2015-06-28 18:06:08 +0800;DatabaseHelper.java: add create of two new table.
+51529f3788878a79eda1f32b20a826872821cbd8;2015-06-28 18:06:38 +0800;MainActivity.java: click settings menu opening SettingsActivity.
+9ea3b3e5032edc20c2938faa2b28f42494ba2b35;2015-06-28 18:06:48 +0800;Update resources.
+1b05d37881eb06a78960a70d6d1bd5d1c6a2d408;2015-06-29 22:43:15 +0800;DatabaseHelper.java: update database to add image tables.
+44aa230d42432625517b35140ffa96ae76b1ea3e;2015-06-30 21:53:47 +0800;AddEventActivity.java: open the system gallery.
+240488fd7ba7ac44e9a521c4ffca65e7d4779656;2015-06-30 22:57:22 +0800;build.gradle: use glide library.
+5389ada6530e17f7178a4183f45f7ecd38626252;2015-06-30 22:57:41 +0800;AddEventActivity.java: use glide library show image.
+28d2824a597ea8a9dfe5958afefc05978f78fc6b;2015-07-01 22:08:39 +0800;AddImageApi.java: new api.
+3c8e9e49601c622b37b82b8079806e55015b0f95;2015-07-01 22:08:52 +0800;AddThoughtApi.java: new api.
+6d0b71b6de97718b7b04656e2af583a9ca4596a7;2015-07-01 22:09:17 +0800;AddEventActivity.java: save added image to DB.
+0985de4ae90bb86f2cc6ba22c244de755079bd5e;2015-07-01 22:09:32 +0800;update sources.
+2fd36494c42645953d7246c3edae305e02cd1057;2015-07-01 22:30:01 +0800;GetImageByEventKeyApi.java: new api.
+ae1795eb0054ffe19d4cd69c8c1d7e3297454085;2015-07-01 22:30:35 +0800;EventDetailActivity.java: show image if having one.
+7606354ad288d760172d3d2b2af988ab223631d8;2015-07-01 22:34:50 +0800;AddEventActivity.java: bug fix.
+5ecaed6b4ad45182ee65862b38d9faca1844243f;2015-07-01 22:38:13 +0800;reverse event time order.
+d00bbe1500d76cb36ffb4e66832b4cb58dfdbe8f;2015-07-01 22:49:16 +0800;fix back problem in Activities.
+4168e137a22eb0662d8f9c3424e577c96ea6fcd4;2015-07-01 22:51:52 +0800;GetTodayEventApi.java: reverse time order.
+a90c1f903683ccde96fee91289fb7b316489d818;2015-07-02 12:36:22 +0800;LabelCloudFragment.java: wrap update process to a function.
+502a9ce5fb1a1f191a6e73a90cd5d7972fce168b;2015-07-02 12:36:51 +0800;MainActivity.java: update every fragment after adding a new event.
+497f67233ba12784c3010d3fdcdb8df0337239ef;2015-07-02 12:43:31 +0800;update README with new App name.
+400da52f1a0f99ce309108e48706cc34b945ffce;2015-07-02 13:05:57 +0800;App rename.
+116a4900a9f3236f329d5b607f6915b74b3e3b3c;2015-07-02 15:03:00 +0800;ScrollingFABBehavior.java: hide FAB.
+36f7c93220a6e2a4c792f792274fa27dc6c9486d;2015-07-02 15:09:35 +0800;ScrollingFABBehavior.java: does not work.
+ed561c1fb8a7bcfd6ce5cab207250960b358772a;2015-07-03 13:35:06 +0800;remove old icon.
+108e4afafaca9bf4859cf39e373bb2f76a6cbf9e;2015-07-03 13:36:24 +0800;add new icon.
+51c773135b7cf6edfc66b1024e8dbbbc52bd9728;2015-07-03 14:11:23 +0800;CloudView.java: bux fix.
+99a05e9788380f9537a90bed7d2c36e780d33ea4;2015-07-03 14:11:38 +0800;remove old header image.
+a3fb53bf844c711082864c89f1797f4b705f9aa1;2015-07-03 14:42:39 +0800;adjust layouts.
+766ffa4dcd2a716d04604011d24a4dd5fb51c4b9;2015-07-03 14:42:52 +0800;add new header image.
+e615ef59ee6fd06f6ce9198345f66660039a9d55;2015-07-03 15:16:25 +0800;adjust layout.
+30768127dca5259ce74386a09395453722fd6e1c;2015-07-06 12:04:23 +0800;use new icon.
+a21950bf651dadf147d2ce521d0ca62ba700d3ad;2015-07-06 13:19:10 +0800;adjust theme.
+81b3922642598eb5cf6754a03fa1cc89eb14a061;2015-07-08 10:01:55 +0800;AddEventApi.java: remove unused code.
+cf033c60afaecf30f8a305ea4dab7e68e1815f38;2015-07-08 10:14:40 +0800;AddLabel.java: directly return key in insertLabel function.
+b0d34e306dfd39e6600a2cb4e825da5d3930ee24;2015-07-08 11:48:44 +0800;update README
+2eb5de03b5ff3f5b40d63aca6ad825caf9a9c01d;2015-07-08 11:51:19 +0800;fix email in README
+1706c7c9fa602df0f3e1a9d43234be90971fcf75;2015-07-09 08:26:53 +0800;DeleteThoughtByKeyApi.java: new api.
+0a84d3b85a99f4753dc9a7086fdcdf08e9efb3d8;2015-07-09 08:27:31 +0800;resources of EditThoughtDialog.
+d9b5a748817ffff831929b6b20053a07c11c7918;2015-07-09 08:27:56 +0800;EditThoughtDialog.java: a dialog editing thoughts.
+e94df2715b47d892bc446d805dc1883f9cbb5509;2015-07-09 08:28:31 +0800;Thoughts.java: add a field to store key.
+88b64d4b7d5bf828e6cf17aaa2459acb9d3a67d9;2015-07-09 08:28:48 +0800;UpdateThoughtApi.java: new api.
+91f2275f587e183abcd9c17f8e033fe873da8762;2015-07-09 08:28:59 +0800;update resources.
+7a13214e1a40a51e3bdc7d7923a01337376db316;2015-07-09 08:29:34 +0800;GetAllThoughtApi.java: query key(id) from DB.
+d4221d227c751dd151cec781fe72262a42a92bd7;2015-07-09 08:30:29 +0800;ThoughtTimeaxisAdapter.java: handle long click of item, opening EditThoughtDialog.
+0c21035fb5c8011e5cf2d97010ff495d4919f0f6;2015-07-10 10:44:41 +0800;Label.java: new model represents label(tag).
+8a79e7953fdd6da58b53b0fe234c3b0993f54b6c;2015-07-10 13:11:01 +0800;DeleteEventLabelRelationApi.java: new api.
+c7b1ca15869a719bae693e54ad461ef572f80253;2015-07-10 13:11:21 +0800;DeleteLabelIfNoUseApi.java: new api.
+426eac15d9da669bbf8a437f5a2d58cc6410d468;2015-07-10 13:13:41 +0800;GetLabelKeysByEventKeyApi.java: separated from GetLabelsByEventKeyApi.
+f831ded2374bf1e90d229078738e00b99f695c0c;2015-07-10 13:13:59 +0800;UpdateEventApi.java: new api.
+13c6a5d2f412c22a710dc3abf95b065238e92d0f;2015-07-10 13:43:43 +0800;EventDetailActivity.java: long click open EditEventDialog, setResult to MainActivity if event has modified.
+ec7a37fd0a21fd9d891a62719d27db0c93c27dce;2015-07-10 13:44:13 +0800;AddEventActivity.java: avoid adding duplicated labels.
+cf54d39574555944ab742e396b697a8921433a30;2015-07-10 13:44:51 +0800;AddLabelsApi.java: add a constructor for single String.
+9e8d1a3edd8aca081c346798b220d41a9cbfbf20;2015-07-10 13:45:24 +0800;EditEventDialog.java: a dialog for editing event.
+3e80b46e1caa5ec4aaf915498192a830ceaa7f78;2015-07-10 13:45:47 +0800;EventListAdapter.java: startActivityForResult.
+de354e00781d35e3f9bc32c2d594d317ea97d245;2015-07-10 13:46:29 +0800;GetLabelsByEventKeyApi.java: separate codes to GetLabelKeysByEventKeyApi.
+9db54224f017fa0efc558b30472d31609841d995;2015-07-10 13:46:52 +0800;MainActivity.java: handle result from EventDetailActivity.
+1b78e1f8af2144e0f783c21b59a33aacf05d0bae;2015-07-10 13:47:01 +0800;update resources.
+7bab1dad65921c5af332e701c9ae5d976c42b017;2015-07-10 15:07:33 +0800;DeleteEventByKeyApi.java: new api.
+8794eb73c683b4d432a0b7abba800cb3e2c58a04;2015-07-10 15:08:49 +0800;EditEventDialog.java: handle remove event. bug fix: add label which already existed.
+a230dca18439bc9dcd12f0d88a03e359a34ea047;2015-07-10 15:09:16 +0800;EventDetailActivity.java: update tagView as well.
+a76962f60509412f125539df1e070f9e35facb14;2015-07-10 15:09:48 +0800;EventTodayFragment.java: getActivity() cause null exception?
+1a05e9ee0f4d5fb8f3227d74d341024c85249c70;2015-07-10 22:28:33 +0800;DeleteImageByEventKeyApi.java: new api.
+7e035c13352a6d30be87670563e01d76f676b77d;2015-07-10 22:29:04 +0800;EditEventDialog.java: remove image and event-image relation when removing event.
+6dc4235486716c1d0deffd6e12f9273b8a1d886c;2015-07-10 22:44:06 +0800;DeleteThoughtsByEventKeyApi.java: new api.
+81dcf131ed534857e3df6c9962429075c6e1a789;2015-07-10 22:44:57 +0800;EditEventDialog: delete thought and event-thought relation when removing event.
+b7fca13284fc7fcc59854bba88161494f1e161d2;2015-07-11 02:10:40 +0800;AddCrashApi.java: new api.
+db2843f7ee97d4c4b1b8d07de01ba3eb204ac83e;2015-07-11 02:10:54 +0800;CrashHandler.java.
+76dd4ad516783f20a8cdc905eaeae1b70e20f58a;2015-07-11 02:11:14 +0800;CrashTable.java: new DB table.
+0714c9412279f0da8afcb2513801e8a407dd8ea9;2015-07-11 02:11:33 +0800;DatabaseHelper.java: update db version to 3.
+437364effd2b70872efe334943542180170b096d;2015-07-11 03:49:39 +0800;build.gradle: update version to 0.6.
+34e53623fab27615f127b3845d7b0907ff239094;2015-07-11 03:49:58 +0800;Crash.java: new model.
+9f7f307d69caf37e6550d5bf1ddae2d587781cf6;2015-07-11 03:50:19 +0800;CrashDetailActivity.java.
+513528edfce314a3d9c1627bc10fe9ce5156d1ce;2015-07-11 03:50:42 +0800;CrashListActivity.java.
+cbe8dc11664c1b56171078666ed1e8510e4b8470;2015-07-11 03:50:56 +0800;CrashHandler.java.
+139cbb135f3783e587415878b07d173527177e77;2015-07-11 03:51:09 +0800;CrashListAdapter.java.
+e0c22c5607594a57593faedeebcc150671354ae4;2015-07-11 03:51:36 +0800;CrashTable.java.
+9c252f5b59891d7b9b5d1a073ea5c6352cab3179;2015-07-11 03:51:53 +0800;GetAllCrashesApi.java: new api.
+ecdba4be1c5098297ff5014886d2c5301757a60a;2015-07-11 04:03:12 +0800;MainActivity.java: use CrashHandler.
+cd227e0312de9112010853fa337ac026af7d8de3;2015-07-11 04:03:43 +0800;SettingsFragment.java: add crash report preference.
+8ecb3f1dfb99aeec902fce33388d57871c2173e3;2015-07-11 04:03:54 +0800;update resources.
+18910076fb5e986cea3c4ebab7646c487e9a9ff8;2015-07-11 04:25:09 +0800;CrashDetailActivity.java: copy to clipboard and share text.
+3b8f8c7844918bf627645b99ab3da22ec5e2695f;2015-07-11 04:25:22 +0800;update resources.
+732d5aa5d9f964eef4f1e3730651af4293b6fde4;2015-07-11 04:30:30 +0800;GetAllEventApi.java: Bug fixed.
+f736226241ad0eaca7eaa6301181c4fd7ac078bc;2015-07-11 17:57:35 +0800;SettingsFragment.java: add email.
+2a02451d60f1c1fc93e2c268f46ed54097b87e74;2015-07-11 18:21:12 +0800;change log
+8f50db3d0b5babddd13b6f518287a66b20c8ec4e;2015-07-11 20:58:51 +0800;update download link
+3af01e11753d0f0b3ac1f842bcaf5060a6ebacee;2015-07-12 11:20:43 +0800;GetLabelKeysByEventKeyApi.java: bug fix, null exception when removing a no-label event.
+a3c76b63ee839ffb2952840f3cc54b3a9cd1597e;2015-07-12 11:59:07 +0800;GetAllThoughtApi.java: fix bug: null exception when a event removed all its thoughts.
+c874f6ae336dc26e03dd9bdb4a7847ecae7880cb;2015-07-12 11:59:28 +0800;build.gradle: v0.6.1
+9704c5ffeee34e38d92ba4101785ed1b0d5dad7a;2015-07-12 12:06:50 +0800;update changelog
+bbafe049c00ffd6ab477bfe167c867cdc6e5cbaf;2015-07-12 12:33:30 +0800;update download link
+d6fc01c35e8246f7098beff1818c4d4eeb422a79;2015-07-16 11:52:17 +0800;build.gradle: use new library MPAndroidChart.
+deeb611e8a8a85ac478abf726fce6568e11f065d;2015-07-16 11:52:56 +0800;MainActivity.java: add new drawer item.
+bb13713b8b9f3f5fa8b63bc24c156f17891d6c9c;2015-07-16 11:53:27 +0800;fix background color in fragments.
+0b4cb825b6c1e0d163abb40998067f7272c44594;2015-07-16 11:54:32 +0800;StatisticsFragment.java: create and finished conbinedChart.
+ec4e5c9b0c301123212a1493e467ef194abf0ecc;2015-07-16 11:55:03 +0800;GetCountByNameApi.java: new API.
+6ebe70d428255a8d2dea860e79d665a1007c8305;2015-07-16 11:55:19 +0800;GetCountSpecDayApi.java: new API.
+c4d717997cc84dbb86ce5f8e070754ed286bf6d0;2015-07-16 11:55:30 +0800;update resources.
+d7630cf837d7d38705a5a093fcb4c13aa58b4752;2015-07-16 11:55:50 +0800;TimeUtils.java: add 2 static methods.
+a374a46396b7d84d06f9ce14de2bdf66045df146;2015-07-17 04:38:31 +0800;CloudView.java: fixed onMeasure().
+942e86eefa05fe78ed5827664722707dafd311ec;2015-07-17 04:39:32 +0800;StatisticsFragment.java: use PieChart and use AsyncTask to do DB relative operations.
+86f06a5079de1f0c2fee853e15af985a1963a26b;2015-07-17 04:39:46 +0800;update resources.
+630f0dbadbaeae05bb17c102564262fbfe13d74f;2015-07-17 13:12:46 +0800;StatisticsFragment.java: control the length of averageCount.
+f7ab0bf2bd4ad93621b2b2fdef43650823a035b5;2015-07-17 16:09:31 +0800;CloudView.java: Bug fix.
+8753762185a71f2ddac99fcefd1c0f79d762b58b;2015-07-17 16:10:06 +0800;StatisticsFragment.java: fix fc when DB empty.
+beaa8915740959d7cdc980c8ec41ce0eb1d2c1aa;2015-07-17 16:10:34 +0800;versionName 0.7
+7fe5f561eb2f3c4a3b0fca7462cd85256e78c875;2015-07-17 16:44:09 +0800;Update Changelog
+1508b25782c3d34fea8ead607aaac3e61fcb285c;2015-07-22 15:20:47 +0800;MainActivity.java: add SearchBox.
+f53259e2be20f2a47835c12221f2cb7541fae2d3;2015-07-22 15:21:09 +0800;SearchResultActivity.java: new Activity.
+79a318b5a4f5f8f7c822117ef468334bc12da7f8;2015-07-22 15:21:27 +0800;update resources.
+c95e93f3a9f68b489a26ffa20980b89979325c30;2015-07-22 15:55:04 +0800;EventSearchApi.java: new api.
+1c998b532a3f7edff1ecf0649880cbdc093be45b;2015-07-22 15:56:01 +0800;SearchResultActivity.java: call EventSearchApi.java to search.
+91033fabe7cdf7c1e4cf95c234211db7231dae4d;2015-07-22 16:25:24 +0800;MainActivity.java: search history.
+4c913d905454a124397315f4df1c7fceaf82d7af;2015-07-22 16:28:53 +0800;StatisticsFragment.java: fix bug4.
+39f45265ce57bd0997f5507c65b4cf7ecf17b0dd;2015-07-24 11:28:35 +0800;LabelDetailActivity.java: add hint information.
+f2046c5618df6c03b89cc12e66e218d90751e896;2015-07-24 11:28:53 +0800;TimeUtils.java: add a helper function.
+f555ae8aa55c6ae52187689247a20cb0743ed8d1;2015-07-24 11:29:03 +0800;update resources.
+96de8cd89f1f4992e0d659363c05716f727ea10c;2015-07-24 13:56:54 +0800;LabelDetailActivity.java: fix wrong latest time.
+a0ce6af65ba045af66d02248e45cff58a8ede078;2015-07-24 13:57:19 +0800;TimeUtils.java: show date after MS_FOUR_DAYS.
+112c849c3a20ff7eea98b63be059054378faf3f8;2015-07-24 13:57:38 +0800;update version to 0.7.2
+8583e8105653a10b2639f7cbb5ae4102eea04875;2015-07-24 14:22:57 +0800;update changelog.
+7438af62caec5c0d66fc8de7f858455d7f299d5f;2015-07-29 15:34:35 +0800;add pattern library.
+079522be6a84d30928dd61b1e3a04b11ed6c1da0;2015-07-29 15:34:57 +0800;PatternActivity.java.
+297e13e0223938ed9712d1af97cc2392fd589b90;2015-07-29 15:35:21 +0800;SettingsFragment.java: add Preference for pattern.
+de4edb7b48e5a07ec52c704e4fcb002dda7fb626;2015-07-29 15:35:30 +0800;update resources.
+7f21ba027e943ffab64d6146809339911f885118;2015-07-29 16:49:45 +0800;SettingsFragment.java: option when pattern has set.
+2d6f9669567fa5affe36016ca48bb773f63ed274;2015-07-29 17:19:20 +0800;PatternActivity.java: pattern cancel.
+a1ce966a956d4c79f044c298cd4ddbd797d99d05;2015-07-29 17:20:08 +0800;SettingsFragment.java: update when back from PatternActivity.
+c940bd306ed0f0a9beb4e3f8e28b1317bc1614a5;2015-07-29 17:20:19 +0800;update resources.
+50a7d61a94331e7b1396916580bc388f2e28fc93;2015-07-29 23:18:22 +0800;PatternActivity.java: modify pattern.
+464c8a9e4f27d99271a03cedb8d1c021773e9de0;2015-07-30 00:15:47 +0800;EntryActivity.java.
+a533920b250cc526d9cd8cc1fd2ac8255e5fe8b0;2015-07-30 00:16:18 +0800;PatternActivity.java: verify pattern.
+e2145de9639de403772d8a04d9c1358d1ab90515;2015-07-30 00:16:25 +0800;update resources.
+b76f54e1e3e55f894786b787c9de203c0d35130b;2015-07-30 15:00:15 +0800;using back design 22.2.0.
+e47edc3568a770409c56881fbb742b1ba7f16e2e;2015-07-30 15:26:14 +0800;TimeUtils.java: fix cast bug in countDaysBetween.
+7e7e89eaad78ea7b4cb3c2bbd8c96a1d499a456d;2015-07-30 15:26:33 +0800;make cards more close.
+d796c441580ecf7db1db88fa07329feedf3d8f87;2015-07-30 15:26:48 +0800;update version to 0.7.3
+66c9366771dd9fe44affd1e1baf97fb35a725449;2015-07-30 15:34:00 +0800;SettingsFragment.java: fix a string description.
+6079d4b505527f5d59d257f59dd1ad9aa48b61e5;2015-07-31 16:38:18 +0800;changelog of 0.7.3
+4935c8c14fffc2b6b93702350b4a12dccfc50ecb;2015-08-02 15:18:58 +0800;activity_main.xml: remove DrawerLayout.
+4ff8a60e128b1ec55ac9d385b5c8a46d3ceaa672;2015-08-02 15:19:42 +0800;include_activity_main.xml: use TabLayout and ViewPager.
+4c060d34010aa32ab11e774c9e76c2a806cafc5d;2015-08-02 15:19:59 +0800;styles.xml: add AppTabTextAppearance.
+8c60bc27cf30fa1ff4980272de68307ac99725dd;2015-08-02 15:25:01 +0800;MainActivity.java: use new Tablayout with ViewPager.
+4efa7ac437dce9db9912aa0d668c600559468a01;2015-08-02 16:22:47 +0800;MainActivity.java: tab icon color add transparent.
+fca1599fd0f154e0115e9330266111b614547e90;2015-08-02 17:13:03 +0800;EventListFragment.java: show hint image when list is empty.
+904e73642408ee64039c4a2008f63cc45174cff9;2015-08-02 17:36:55 +0800;LabelCloudFragment.java: show hint when labels is empty.
+1c98676c87b680fd6abc4a8ebdf13bd3a82d640a;2015-08-02 17:37:15 +0800;MainActivity.java: fix getDrawable.
+c79be2f7bf40d189d39338a4050a3636f82adbd9;2015-08-02 17:37:23 +0800;update resources.
+6489554f5aa1ad28b66d70f109ef555c6b904bd2;2015-08-03 12:39:03 +0800;EventTodayFragment.java: show when empty.
+130ea6396014a7fed5e7488a46a3e5f07ab95e5c;2015-08-03 12:39:13 +0800;update resources.
+5fc3714519e36d10f1d53ee01cc73bf53eba9da4;2015-08-03 13:00:44 +0800;SearchResultActivity.java: show hint when empty.
+559eefb65701a9b2a7d4d2facbf18fc3fa62e7e5;2015-08-03 14:02:36 +0800;Settings.xml: add a ListPreference to set time axis sorting order.
+8250eb740a6d2367116d0cab5864499f0af3933e;2015-08-03 14:02:55 +0800;Thoughts.java: add reverse() method.
+62a28f78338b4ae5942d5b801e4920c6230dc049;2015-08-03 14:03:44 +0800;ThoughtTimeaxisAdapter.java: read SP to set index by time_axis_sorting order.
+4d4e6105c9b9f14b019b757e5b3bff727244e14b;2015-08-03 14:04:24 +0800;GetAllThoughtApi.java: reverse if time_axis_sorting SP is set.
+9084c75e5ae38a9d2757f66b769bfa784fb05b61;2015-08-05 16:17:13 +0800;add 2 background images.
+ae55b20d3eb9b97b71edf97f1f6eb4dccf388ecd;2015-08-05 16:19:51 +0800;use new icon.
+06cf4fa8fd74c2d76b040636b7065f9fa28effb1;2015-08-05 17:42:53 +0800;icon too small.
+f465f15ce4b5dd3c52b22bf3fbeffb318180f29d;2015-08-05 17:48:57 +0800;make icon bigger.
+26c07a6eef3bb5daec1d6f93d23549295419d309;2015-08-05 17:50:04 +0800;make icon bigger.
+a655a46b692530350db725b056883159692ba81c;2015-08-07 12:20:43 +0800;activity_settings.xml: fix toolbar.
+10c4afbeba384bd2c96116c357454a1c90f6e21e;2015-08-07 12:20:57 +0800;update resources.
+134f0e90b8a9c9f9a5f1258792e8decde34aba32;2015-08-07 12:21:33 +0800;update version to 0.7.4.
+0be79d5d429e5a54e1f192816d0b866b5e0e92a8;2015-08-07 12:36:53 +0800;changelog update.
+f10df126195b525761f8b8e8db1f20f6ffe27ac0;2015-08-10 22:22:57 +0800;SettingsFragment.java: add Preferences for back up.
+b86af19a04ccbd23c063dcc6ffe01161e12d63ad;2015-08-10 23:27:57 +0800;BackupManager.java: backup database.
+0bf928f5623bff206f63c2a06b658ddda288225f;2015-08-11 14:55:03 +0800;AndroidManifest.xml: introducing a permission.
+c007a0d1d4d8ad3b8a6f896e0643a5f4db4e36a6;2015-08-11 14:55:35 +0800;BackupManager.java: backup and restore.
+18f313bba4fbbaacffd8c3ec4b9f59fb596a80a5;2015-08-11 14:56:10 +0800;SettingsFragment and SettingActivity: Preferences for backup and restore.
+dd6a8825c46fa80d6e0c45df1399496a60adcee3;2015-08-11 14:57:08 +0800;TimeUtils.java: add getDate.
+86bfe4cecf62e5ff33916764c424b0f9c4929697;2015-08-11 14:57:18 +0800;update resources.
+33f310f543c2e37185608acc1b46c91e8818142c;2015-08-12 02:26:51 +0800;FileDES.java: backup file encryption.
+7aee33ec91a641b8975202fcee06ac2a7bfba5a3;2015-08-12 02:27:28 +0800;BackupManager.java: use encryption in backup process.
+32a8219dd4d8023cc66b3f92c064cde4a401463b;2015-08-12 17:33:58 +0800;FileDES.java: remove unused codes.
+953a63a51d9fe0a6221178d359619f12dd20e1e9;2015-08-16 17:17:02 +0800;EventTodayFragment: use new background image.
+97848656db69687a513ed568cb7bf2ffab3aff48;2015-08-16 17:17:23 +0800;update icon.
+bdaffb19164cf569ae1e27117e77504fcbd75a24;2015-08-16 17:17:39 +0800;update version to 0.7.5.
+bcf5a28dcf80545b79471ddb07d3903965ecffb4;2015-08-16 17:51:02 +0800;update setting.
+2520bd0e97cfa7f32cc022b6ca519c37fc40f5f3;2015-08-16 17:51:10 +0800;update changelog.
+c76fefeba1f323922ebee47c21ff3121d450b80d;2015-08-19 23:51:54 +0800;strings.xml: Chinese translation.
+3084eb2e07b86a71977f2051e3813a65c4aa51ed;2015-08-20 01:06:55 +0800;strings.xml: English translation.
+5c58b7332d7cf484e2a4f6df5d8751593f2350db;2015-08-20 01:27:11 +0800;strings.xml: English translation fix.
+a57440d3edfcfbad2790ae4b969a300c8a615593;2015-08-21 14:42:05 +0800;TimeUtils.java: change date format to suit for English.
+b69c9f4e2f0970d5b3797d590c967ed848e71d53;2015-08-21 14:42:20 +0800;Translation fixes.
+18490095939ee69a116630e2326175fe3b79fbe8;2015-08-21 14:42:57 +0800;StatisticsFragment.java: replace hardcoded string.
+89a739e4815b4a00579844d47518be3089968ce7;2015-08-21 14:43:08 +0800;update Readme.
+789b3cd8382924c7f363eaa4a04a0f90c7489d0b;2015-08-21 15:05:42 +0800;translation fix.
+1b00d92d25c4fbd76c1ff0c3950df342c1277847;2015-08-21 15:05:57 +0800;add license.
+0015df434dcd43783d46002f8eda6ff06b0a65b5;2015-08-21 16:01:41 +0800;translation fix.
+225578d9a2c90c158c181d393995e56c08503a8c;2015-08-21 16:01:59 +0800;update version to v0.7.6.
+31b0d8b881636f49e90b036b314650791574981b;2015-08-21 16:25:37 +0800;update changelog.
+c0adb5fc951bee73dca3f87ba799569c175490dc;2015-08-21 16:25:47 +0800;update screenshot.
+dd2f42421c1c07c415d9e9f748de5dc6c6d4c7fc;2015-08-23 15:06:49 +0800;fragment_event_today.xml: fix text gravity.
+c8d7aa016a1924993c1f18c503b122a31f79f59d;2015-08-23 15:33:41 +0800;SettingsFragment.java: clicking email opens email APP if has one.
+be56974f34a1cea68a346a69b09a628951592b77;2015-08-26 22:35:10 +0800;GalleryActivity.
+f0d8580f903e46568dbf7b8e89f71ad138c2052a;2015-08-28 01:44:41 +0800;AddEventActivity.java: fix Storage Access Framework problem in API19+
+c1cef884136467674e36e66a65b2d1495ef0f4bc;2015-08-28 01:45:21 +0800;update gradle.
+cda14ec8501955b2e44ae8046ade04ff0e3c7dcd;2015-08-28 01:45:53 +0800;activity_gallery.xml: fix include layout.
+e51aa80195b04b23002d3e87e1324e1031f44b71;2015-08-28 02:22:45 +0800;EventDetailActivity.java: check if uri is valid.
+ff1e732cbaab7664ecb58ee7a671fc8afb2205f5;2015-08-28 02:23:03 +0800;update resources.
+462cd10ef15ec591255dae4577d1f1c2f7615729;2015-08-28 02:24:09 +0800;GalleryActivity.java: show image.
+370a670183e6afb4f67822ef15edec14c4a4c3db;2015-08-28 16:08:00 +0800;EventDetailActivity.java: 1. add image when event has no image. 2. click to show full image if event has a event. 3. remove when the uri of event is not valid.
+5c8d84651c5b947f5a5b9ed7162f5e5daacb7ffa;2015-08-28 16:08:25 +0800;update version to 0.7.7
+fb2703ea116f0a0de2f9844966bf91cd7b430791;2015-08-28 16:39:10 +0800;update changelog.
+9b70d949ae988115d2a19c4aebfaa291dd0945cd;2015-09-08 23:02:42 +0800;AddEventActivity.java: now save path into DB.
+e5220705e0cc00360ea333d5e99b67a977e9246d;2015-09-08 23:03:48 +0800;DatabaseHelper.java: add new table and convert item in image table when upgrade.
+772c98c5e192571eff7ba5d9bbbc042ae601e19a;2015-09-08 23:04:07 +0800;DeleteImageByImageKeyApi.java.
+5d946adeb82e7723e98741e30d03dbfbdba3d26b;2015-09-08 23:04:46 +0800;EventDetailActivity.java: remove unused code and save path into db.
+d772d431460ed8c496b2b5fd852c63ed758d4bbc;2015-09-08 23:05:10 +0800;FileUtils.java: add a function uriToPath.
+06f88288a88e1862eb401617b9da3c001198b1b0;2015-09-08 23:05:38 +0800;GalleryActivity.java: set toolBar background color.
+cc27ec7c41bff7bf70416e71f603dd5ee1d701d9;2015-09-08 23:06:15 +0800;ImageUriUpgradeApi.java: convert uri to path when upgrade.
+f2149cc39eec1936d3cc1c5e8b251e28d1299635;2015-09-08 23:07:28 +0800;TagView.java: add comments.
+03007ebc5d67c2b75977e5a93c8e0ad71d8f7321;2015-09-08 23:07:43 +0800;ThoughtResTable.java: new table.
+a2a9040e1d8b29864ac0f19f2e3ad0481b46f423;2015-09-08 23:07:53 +0800;update resources.
+61c9e4a5ed2ae19eea870e130eff47ae5b93b129;2015-09-09 16:51:30 +0800;update version to 0.7.8.
+1a1860bd117c5247fa2594d3d74547a089924e94;2015-09-09 16:51:45 +0800;update ChangeLog.
+56c02c1486e5f413972dc10722f0e42ceb19ce62;2015-09-15 14:15:27 +0800;AddEditThoughtActivity.java: merge NewThoughtDialog and EditThoughtDialog into this one.
+65fb54e557da60167c5e79a71a554c97d6662d78;2015-09-15 14:15:53 +0800;AddThoughtApi.java: add thought resource.
+c2c18cf9d30ddd7bcbebde467afee095c6359c58;2015-09-15 14:16:40 +0800;NewThoughtDialog.java: delete in the future.
+207dfa92de470ec1fdd1dfd8ea1da79b090cc41e;2015-09-15 14:17:18 +0800;EventDetailActivity.java: now use AddEditThoughtActivity to add new thoughts.
+e8cdceae8215435ec66e059faeb9a45a90386cd8;2015-09-15 14:17:53 +0800;GetAllThoughtApi.java: get resources of thoughts.
+cf4215087aa4c30ea596e6fd9a9360346d6818f8;2015-09-15 14:18:10 +0800;GetThoughtResByKey.java.
+cf6c149a57b8e24f398814472caddc1462b76c4f;2015-09-15 14:18:46 +0800;item_thought_timeaxis.xml: now contains image.
+e5f87870746a71eb9914219dbea9bdcc8bec6d8a;2015-09-15 14:19:14 +0800;Thoughts.java: resource in Thought.
+2be5976e2b073f75e5461c99fc817da0dccc7e3c;2015-09-15 14:19:45 +0800;ThoughtTimeaxisAdapter.java: add ImageView in ViewHolder.
+cf3e738b7db41fa1bf5a25c153b6148a122fe4ae;2015-09-15 14:19:56 +0800;update resources.
+b5fbea1f5fbac9c2b93a56b7fbb03827872935cc;2015-09-15 14:20:26 +0800;AddEventActivity.java: use new AddThoughtApi.
+e3fcd05ade6ab0e0147f184b661c6ad504ba7dc1;2015-09-17 13:09:13 +0800;AddEditThoughtActivity.java: finish thought editing.
+90d2ed92e2d08104c7277777d7360a37a5c0cfa6;2015-09-17 13:09:37 +0800;AddThoughtResByKeyApi.java: new API.
+2bfa1700713bdbc7dc075fad4665445b43b09362;2015-09-17 13:10:56 +0800;DeleteThoughtByKeyApi.java: delete thought_res table as well.
+e90a8cf6ec4f79581d896befb8cde8acd208e7be;2015-09-17 13:11:57 +0800;ThoughtTimeaxisAdapter.java: show image if thought has one.
+ca5d99bd22f51f6c5e8da81a00e11f79e2559c75;2015-09-17 13:12:27 +0800;GalleryActivity.java: show image from a path.
+0351e22dbed03f3a066f1faa1cfd87c94e4cc22b;2015-09-17 13:13:18 +0800;Thoughts.java: add a few methods.
+6621d3fa9ff439346c2e44fbbe3a7ad4d1479d09;2015-09-17 13:13:36 +0800;UpdateThoughtResByKey.java: new API.
+024cbc1ff001aa0d8e7f43f209d095b3fbd3913d;2015-09-17 13:13:51 +0800;update resource.
+e77711db88d1cd92046570619d2ed2e11e004cde;2015-09-17 13:26:23 +0800;update changelog.
+b474e29374f8ee02f6cfda9d84c3fe25497f938b;2015-09-17 14:35:18 +0800;Forget to update app version LOL.
+91af570427489b4ad12760c79cdfabbb574dead8;2015-09-17 14:35:47 +0800;Fix code for upgrading support library.
+e3071c3bea19b934ff06df50e718a7acd4a2c06a;2015-09-23 13:01:52 +0800;update resources.
+fd58f2399f1f7aa1f3ab96fd8d0c15f3d0a8f633;2015-09-23 13:03:46 +0800;EventDetailActivity.java: generate long image from event. The function has 150+ lines, shitty but works.
+5869c7c7318f3bf7225285ef6fd86aac25b64b1d;2015-09-23 13:04:38 +0800;FileUtils.java: saveLongImage.
+eb000cc222f8d0db7e922ed0f8c2a6a517017a87;2015-09-23 13:04:57 +0800;update resources.
+959523dad8508c70b521345760489a754392471e;2015-09-24 12:05:47 +0800;EventDetailActivity.java: long image code refactoring.
+bf793a19c84c889ad6eac755718a0a8f481e6ede;2015-09-24 14:58:10 +0800;EventDetailActivity.java: wrap long-image generating code into AsyncTask, but no egg use. LOL
+9a69ecc20285b6713a16db08ff35012277e855cc;2015-09-24 14:58:21 +0800;update resources.
+84fd84c40ab50843b7105bdf826fac502af55bcd;2015-09-24 22:53:55 +0800;EventDetailActivity.java: 1.Logo layout 2.bitmap rotation 3. update gallery.
+521dd2de89b353d39a1f416a378e7a68ae49cc4b;2015-09-25 12:29:18 +0800;EventDetailActivity.java: Fix thought image height when generating long image.
+cc6bf6c91d4b45b31e31098f9771bc621bd678af;2015-09-25 12:49:51 +0800;AddEditThoughtActivity.java: fix the situation updating only the thought of a has-image thought.
+7873f70dc128cf51dc6bbbd21bbc392ca9230689;2015-09-25 14:26:21 +0800;update version to v0.8.0.
+a896091b0aebe69f3ea1845e2f31bfc7b5df69e0;2015-09-29 20:56:32 +0800;AddEditThoughtActivity.java: press back twice to exit Activity.
+96ed378c6310ed65c0facc97d7403ba575d2909e;2015-09-29 20:56:53 +0800;AddEventActivity.java: press back twice to exit Activity.
+d388809514d2592958b7b3624358c16fbc9346e2;2015-09-29 20:57:08 +0800;update resources.
+43ff5fa287cb11b106a8582466e36a6d5b38ef23;2015-09-30 11:37:19 +0800;TagView.java: fix FC in 4.0.4.
+df3c399cef9a819ed0a3f2738b0b4ffd7a2220cd;2015-09-30 13:08:59 +0800;SettingsFragment.java: add donate preference.
+805017a4702fa1339ed3032ea99464b2b83cab67;2015-09-30 13:55:24 +0800;update version to 0.8.1.
+944d462ab6a39de19907e8d6fea5cb6eb8f916e6;2015-09-30 14:07:36 +0800;update changelog.
+25d9aa09721de04d491017a202c51895f152a663;2015-10-09 17:58:21 +0800;changelog date fix.
+295e6ffb1a3cafd3f622654a4db944dca0fbaa52;2015-10-09 17:59:45 +0800;EntryActivity.java: create a tutorial when new user first use.
+0871f890aec4614ededc38dd75f1b978af7303aa;2015-10-09 18:00:06 +0800;update resources.
+ea54373ee42027e7663ecdc16b09ad043cc0dead;2015-10-12 15:50:36 +0800;GalleryActivity fullscreen.
+e05fd6313f2bb7c5e0d80def6072f7ea41bb3c66;2015-10-12 15:50:48 +0800;update resources.
+e39e6e6220743436983753dd08125edf3e7bb56b;2015-10-12 15:50:57 +0800;update version.
+2a609c6547adb5ed62f4a566c02416851230f0c6;2015-10-12 16:15:43 +0800;changelog.
+055b3abcc7f184e949e5b2eafa05c7c5066744da;2015-10-14 14:05:31 +0800;EventListAdapter.java: add ImageView.
+bb87f7e05f0ab31758ecae6ac89f74216e3b9b5a;2015-10-14 14:06:51 +0800;item_event_card.xml: add ImageView.
+d11700c2a456708c3e0bd9c1a2b6b47b0e002970;2015-10-14 14:07:21 +0800;EventListFragment.java: use StaggeredGridLayoutManager.
+038040cf6db2c0c0d1f55c18340b006b08e6c0d7;2015-10-14 15:16:48 +0800;EventListFragment.java: switch LayoutManager between List and Staggered.
+56987159582d4af69d2c0e8a1def901c3e5b11c8;2015-10-14 15:17:00 +0800;update resources.
+d6c786496920fd62f61b8f1fdca66b9ed1070d65;2015-10-14 15:32:51 +0800;EventListFragment.java: save view mode in SP.
+ad3f201b169698bedae7359095e1491e9917a222;2015-10-15 09:30:26 +0800;EventListAdapter.java: adjust layout.
+c7de09dd067faf6c621a7e01c51d469f59ba9b41;2015-10-15 10:48:57 +0800;update resources.
+5c864a5e1b75f280bc01bfa43e73cbe9fe291f12;2015-10-17 13:25:50 +0800;update resources.
+ba3d1d3a3e3681a6d2b77b891482ccf644a4e602;2015-10-17 13:27:09 +0800;CloudView.java: [bug fixed] tag not showing when there's only one.
+66ee57beb242c347acacdfc1a333ca24788073de;2015-10-17 13:27:38 +0800;GetLabelsAndFreqApi.java: remove log.
+00ca5b2a12c57de3c775e724246b11ac33bd5314;2015-10-17 13:29:35 +0800;AddEventActivity.java: goto EventDetailActivity.java after adding.
+3ab7307045e321a9e925cf80f7ac4e490e16bd81;2015-10-17 13:29:54 +0800;menu_event_detail.xml: use new icon of long image.
+1c133cd2c37f12062b450050a79a8e928b1bb9bd;2015-10-17 13:30:05 +0800;update version to 0.8.3.
+70746cec78d37190a549fdfc629666a922b5a738;2015-10-17 13:47:39 +0800;update changelog.
+457dcf6ea0117a63c9beb7ef6ad19cc8fa815a12;2015-10-17 15:09:19 +0800;EventListFragment.java: [Bug fixed] event list duplicated adding.
+db48ff9f13acb938be9829d3076ee72e348f2f03;2015-10-17 15:10:32 +0800;update version to 0.8.3.1.
+5cdfed376cf5c95a3cc02e99c0acf765761c71a6;2015-10-17 15:12:44 +0800;update changelog.
+24d6d0dd190d4d656f89e2273c5e696debea6169;2015-10-22 17:54:56 +0800;BaseActivity.java: set and update Theme.
+437a14953669c7dab16021a5875d73b40f6a7a09;2015-10-22 17:55:22 +0800;add test theme.
+fa4b04c83eeed52eaf51125e5af597c53efac792;2015-10-22 17:55:57 +0800;SettingFragment.java: add change theme preference.
+a54b216a08bf1c4793f9a324eab827abb15239b5;2015-10-22 17:56:19 +0800;ThemeUtils.java: manage themes.
+d97cba234dbdac5b1969a585e7bb8c200115b77a;2015-10-22 18:03:04 +0800;Activities now extend BaseActivity.
+a9b6788589f51f6478edc096be3e28e59717837d;2015-10-22 18:03:25 +0800;circle_timeaxis.xml: use theme's colorPrimary.
+31a0bb6c07bcd80d966ca33520752fb8bc03330f;2015-10-22 18:18:11 +0800;TagView.java: add a new attr label_background.
+4b95014ec581152af4fc1e78d8db1f529f521ff3;2015-10-22 18:18:38 +0800;set label background to colorAccent.
+61902f2aa6b91f29586dd6ff615c3195ad50e89a;2015-10-24 11:54:27 +0800;circle_timeaxis.xml: fix xml drawable bug.
+4dc5a8e7c995df1a4829d15175ebaf6082e15743;2015-10-24 12:54:52 +0800;ThemeUtils.java: now have 7 themes.
+ac2b7c653cf9f76055abde433eef6fa63723b1ca;2015-10-24 13:05:51 +0800;update version to 0.8.4.
+b26d7f5753435f42b57f3750fdcafaf3191064cc;2015-10-24 13:10:27 +0800;update changelog.
+82171c2569cab649c28b64dfbf1f7de6586a706f;2015-10-26 16:24:58 +0800;styles.xml: v21.
+a1cf05fe70059f03bd1cea003dc32526bd188b70;2015-10-27 18:06:58 +0800;add touch effect to cards.
+b09807a9bcd494f0e0d24489c7793b4a8a796ce9;2015-10-27 18:42:31 +0800;EventListAdapter.java: long press to remove event.
+1eac7f7fa99f37d5962a961fe265325df95d43f3;2015-10-28 14:30:07 +0800;DataManager.java: introduce a singleton.
+ce12ceb341df7ab06b630c72edb9a60998dd0da6;2015-10-28 14:31:54 +0800;AddEventActivity.java: tell DataManager when event added.
+50e27f9b2a8ae0bdea2b2755ab55246d9f45a0e0;2015-10-28 14:32:42 +0800;DatabaseHelper.java: make constructor private.
+0120f52378c81514fa508192673dd19ffe375fd9;2015-10-28 14:34:42 +0800;EditEventDialog.java: tell DataManager if event update or delete.
+7446d6f8511f45c2145437e73ff5047e0d79f9f3;2015-10-28 14:35:23 +0800;EntryActivity.java: DataManager reload when tutorial created.
+4d2d17790314b49146ee8987856972f7fd8f5418;2015-10-28 14:36:06 +0800;EventDetailActivity.java: remove unused code.
+c3e627e51a5ec2de7bb388b81462f9663c8a20ac;2015-10-28 14:36:45 +0800;EventListAdapter.java: tell DataManager to delete event.
+1fa130c0528be624fe9ddc4b0eb9113df5d57069;2015-10-28 14:37:25 +0800;EventListFragment.java: get data from DataManager.
+df859da4c4fa504fe0604ddf1409d9c88dffec69;2015-10-28 14:38:02 +0800;EventTodayFragment.java: get data from DataManager.
+f8a1949a108c9b2f4b6ac4245922a991dc12e3bb;2015-10-28 14:38:40 +0800;GetTodayEventApi.java: return empty list if has no data.
+6f8b0a05fb2ea65067e494b30d139c55b738f144;2015-10-28 14:39:24 +0800;MainActivity.java: remove Fragment list.
+051e9d509adf2c66c23a57c52f3edf49276c0cd1;2015-10-29 12:34:52 +0800;TodayEventAdapter.java: add a header to RecyclerView to show hint info.
+3aaf003916fcac8444d25936b95040c68fcf4458;2015-10-29 12:35:24 +0800;GetThoughtTodayCountApi.java: return 0 if nothing found.
+c8da3d8391dbb12311490880f7b13a0ee466c1a5;2015-10-29 12:36:00 +0800;EventTodayFragment.java: remove unused code.
+e70deffbf35eb18a8d54019e085596a847a648fe;2015-10-29 12:36:44 +0800;DataManager.java: use TodayEventAdapter to today event list.
+f627e9ace52bb7e7003f5caeef963dc141927afe;2015-10-31 21:53:13 +0800;TimeUtils.java: add a new function getToday.
+c64a4b14d26b1544285cfc95f25c3c5cd6879ba6;2015-10-31 21:53:46 +0800;DataManager.java: check if new day begins.
+b66059badd9e28c94ec9fea167e444b7acf76b38;2015-10-31 21:55:02 +0800;EventListFragment.java: check new day by DataManager on onResume.
+effbe41d5fce3d085ea53957d7c098cff0b2cbfa;2015-10-31 21:55:22 +0800;EventTodayFragment.java: check new day by DataManager on onResume.
+7b1ee667e18b192a4b26c56d1c4217a2abdfbd35;2015-11-01 14:58:33 +0800;update version to v0.8.5
+76cf0333c40ad49fcc0ada3f6505412f4d7ed3c5;2015-11-01 14:59:22 +0800;update changelog.
+888ca28347238ab2967a20390629b806d336f2f0;2015-11-04 16:08:22 +0800;GalleryActivity.java: image zoom.
+fcbbed6a129d269a59aa2ef04d3fb950632b3d97;2015-11-04 16:27:36 +0800;GalleryActivity.java: tap to close.
+d3291746d1fc52ecd2401ca1f29100e206de8495;2015-11-06 13:54:39 +0800;EventDetailActivity.java: fix time point in long image.
+46e3f88fde0e50ae2b33280501db0693b17619f1;2015-11-07 09:36:02 +0800;EntryActivity.java: add a condition to tell if first use.
+3b6c465e6bd025fa5dd4131afa132e0d84965abc;2015-11-07 09:36:33 +0800;AndroidManifest.xml: launchmode of AddEventActivity.
+dc3065512a06a40a36a33cf617708f09709285cf;2015-11-07 09:46:12 +0800;version to 0.8.6.
+07b7b04e567976bc820fb32ff652115ee1dea1ba;2015-11-07 09:46:20 +0800;update changelog.
+674eb8389bf7139d9a800bd66a56bda75fb74132;2015-11-08 21:18:35 +0800;EventDetailActivity.java: fix event card background of the long image.
+ca495ee7947c08a10631940e7034225067183ff5;2015-11-08 21:26:35 +0800;SettingsFragment.java: reload data when data restored.
+74f702e70e7ff3eecc4761188310dd71f91cd89a;2015-11-09 11:12:58 +0800;Manifest: windowSoftInputMode of AddEditThoughtActivity.
+bf4daf191675c381940fbdbbf8c68c51e1246e10;2015-11-09 11:14:03 +0800;AddEditThoughtActivity.java: move add image button to the bottom.
+704673f1947fd9589323f49fc1f0f1057726c4c5;2015-11-09 16:56:51 +0800;UpdateImageByKeyApi.java: a new api.
+35f1798745fd59b64947236890d085cf28456d47;2015-11-09 16:57:15 +0800;use butterknife.
+88915b7bdc116e35aa76d3d2251f9be843b32821;2015-11-09 16:57:26 +0800;remove unused code.
+cf8289b9a44e4f47fbd0ffa18d012fcec8b777ee;2015-11-09 16:58:23 +0800;AddEventActivity.java: now event editing is in this Activity, too.
+507f8ed60373ffb857488e7f8ed24aa0898b2ebd;2015-11-09 16:59:00 +0800;EventDetailActivity.java: update event when onResume.
+a6d1d8491b346ef40ed615a7bc783673d288a9d8;2015-11-09 16:59:28 +0800;EventListAdapter.java: long click to edit the event.
+a04fb8c035e524a92e74b9d732840fc6041ce039;2015-11-09 16:59:36 +0800;update resources.
+12a33f5ce2332fca187a972c9aca129054221be4;2015-11-10 18:26:59 +0800;drop these APIs.
+529b51740eb74073d476a335b0d3f9ba9b7abbb7;2015-11-10 18:27:14 +0800;drop this API.
+bdf9edfb5821466f06c9ca7b211679adee2709fc;2015-11-11 00:09:51 +0800;drop APIs.
+bec59d4fcfdf4b72d2cd7446bbc2dccd326b3657;2015-11-11 15:23:57 +0800;Drop APIs.
+d3e5c83d7d0a8d346f9f9d82e766c8a53995f6a3;2015-11-11 17:01:32 +0800;Drop APIs.
+05a75a3e84d933e681e7cd02512799de4174909f;2015-11-12 13:35:39 +0800;drop 2 dialogs.
+a28b1d89aef569546e5ec50737e90cc853097e3f;2015-11-12 13:36:25 +0800;DatabaseUtils.java: common database methods.
+1f1dfe837f3a55a27e0e673031062505fcdac39d;2015-11-12 13:37:20 +0800;EventUtils.java: substitute to event related APIs.
+0cc87161b63b3250e28975a9c60c58b73fb66def;2015-11-12 13:37:39 +0800;ImageUtils.java: substitute to imgae related APIs.
+3a479a1f59c13e8ce8a22ec02479e21662325dde;2015-11-12 13:38:32 +0800;LabelUtils.java: substitute to label related APIs.
+99089c0f39a17bf0510e19b35be2e93188048d55;2015-11-12 13:39:01 +0800;ThoughtUtils.java: substitute to thought related APIs.
+06339b3cbbe78786f54c73d478929a17ec3eb368;2015-11-12 13:39:44 +0800;model changes.
+cc1670872ba5ed006d92042a3d7ca832a7990c3d;2015-11-12 13:40:03 +0800;new eventManagers.
+6562d9228860c5cfb498b19b9f4ed8944f97a1a7;2015-11-12 13:40:36 +0800;DataManager.java: use new eventManager and new utils.
+e444cc27740edfbc026a108692345265595f3afc;2015-11-12 13:42:03 +0800;use new utils.
+52053af5d6283171b846a9b45efdab7d5b141722;2015-11-12 14:02:18 +0800;EventDetailActivity.java: fix long image.
+4863d1d2615281d491a937e20a9d636d326153c0;2015-11-12 14:23:49 +0800;EventDetailActivity.java: fix card background color in long image.
+68e542c0a04c4689ff501fa07b20ac29e323691f;2015-11-13 11:22:04 +0800;EventUtils.java: remove debug log.
+d59a44f19abbb9c51f43173480ed2173e0cc2b15;2015-11-13 12:22:13 +0800;Event.java: override toString.
+689417aa490e1a1a30b37d9c1cc996fb59b4c3a8;2015-11-13 12:22:53 +0800;LabelUtils.java: fix bug: add label duplicated.
+4cd44719ca9523b320a3540270512466468bd7d5;2015-11-16 14:19:19 +0800;TriDrawable.java: a custom drawable.
+91b832a4b574dc9b3e74184fd8ace370d8cf40c4;2015-11-16 14:20:01 +0800;MDHeaderView.java: a Material Design header view shows several triangles.
+f49f2f15ead80e4e97f061a39b97661f22ffc66b;2015-11-16 14:34:43 +0800;AddEventActivity.java: switch between MDHeaderView and ImageView.
+8ca751233942cf7f45bc0af98d08e9a25d638fa9;2015-11-16 15:23:40 +0800;EventDetailActivity.java: use new MDHeaderView.
+d1751e40d52fceedde59fab96b5952e5c5c1baa2;2015-11-16 15:24:07 +0800;ThoughtTimeaxisAdapter.java: add a setData method.
+6ec0ceccdb46daeb589c01917e0ef8221caaaf03;2015-11-16 15:24:20 +0800;remove unused resources.
+8860325a6d00b17799038f35806e35bcc0b59a33;2015-11-17 18:01:22 +0800;ThoughtUtils.java: bug fix.
+820737fe8e20679dc0b65277172c9dcc00599169;2015-11-17 18:01:40 +0800;dialog_edit_thought.xml: remove unused item.
+5d451aa2fceecafa358f7517d91806c5132506c2;2015-11-17 18:02:08 +0800;AddEditThoughtActivity.java: bug fix.
+894c96cfc23eb3e1d95b74d02f4844f2e857a19f;2015-11-17 18:08:01 +0800;EventDetailActivity.java: time axis data reload.
+2485bb1935fb6c82e4def36cc64b66d4819ae79b;2015-11-18 12:02:05 +0800;DataManager.java: bug fix in deleteEvent.
+7fdafd807750d4d8807198ede40dd0b1820aeec5;2015-11-18 20:36:55 +0800;change TriDrawable to TriView.
+84aaac5d35a4965717103ccf1c7be98d8e3f1a54;2015-11-18 20:37:39 +0800;MDHeaderView.java: now extends ViewGroup.
+ac9df7df701910e6c8da78b7f485b9af45057e22;2015-11-18 20:37:57 +0800;attrs for TriView.
+fdf7ea334509a80871cda38402cdbce4e34c5677;2015-11-19 12:18:17 +0800;MDHeaderView.java: add animation.
+728aad7782bcbec1d88ae376438e845057fc0439;2015-11-22 15:29:32 +0800;update version to v0.8.7.
+60e88a742b4fdd53af867fe64805398acdfb3984;2015-11-22 15:29:47 +0800;update changelog.
+da85ec908d12316dc3d2af57c83e6992acbeaa63;2015-11-22 16:19:24 +0800;update changelog.
+5180075b7529b83eb173afdf51db403ffeb8a93e;2015-11-30 15:45:53 +0800;update build.gradle.
+1bcc9f643442099a6fbd35eecb0f4b63ce49d9ad;2015-11-30 15:57:08 +0800;v21/style.xml: set navigationBarColor to black.
+37edc603d6d3f58c9934c5898c108bbed9ab25d1;2015-11-30 16:22:40 +0800;SettingsFragment.java: change intent type of restore.
+c943fe7cdb0923fde3ce6fb59f250b85a7aaea83;2015-11-30 17:33:18 +0800;EntryActivity.java: remove outdated tutorial.
+4a4ced5d800268e0bd28cedd0343e233f541e11d;2015-12-01 14:23:26 +0800;adjust layout of list item.
+9c5ca4cc629540e993084fbe5363b381e52ec349;2015-12-01 15:21:00 +0800;adjust layout of event detail page.
+ad64abe85504876f036954f3fe0dd089d095cb4b;2015-12-02 08:46:19 +0800;adjust layout of event detail activity.
+5b21b7432fceb950e019c929fb2d06848a4bfa12;2015-12-02 09:58:13 +0800;SettingsFragment.java: use snackbar instead of toast.
+84a249128dde41ff626d7497c8d4a2991b22374b;2015-12-05 12:08:03 +0800;build.gradle: update gradle.
+5666d384e4f20d141279924a70f810155a82e75b;2015-12-05 12:09:46 +0800;TodayManager.java: bug fix, today events not be updated when a day past.
+cbb0abff2dde0d6179a758dee3bbaf10caaa2a81;2015-12-05 12:11:08 +0800;EventTodayFragment.java: code refactoring.
+c3ea8da7b4421a27ba63d052a6fd249dfb3f4a2e;2015-12-05 12:16:50 +0800;EventDetailActivity.java: remove unused code.
+48f3e6d6bc33c5125f4bb1c56f6bad4e56f5df04;2015-12-05 13:57:11 +0800;update version to v0.8.8.
+283ed5e71b7a3dc739598e44ed3dbb4e4d2ab13f;2015-12-05 14:07:16 +0800;update changelog.
+66e77e6d1658b981473841ff6d0c510ae9d36107;2015-12-08 14:16:02 +0800;MainActivity: remove unused code.
+80cd096574073d3aea54f0f5e0e640971d48f992;2015-12-08 14:45:14 +0800;LabelCloudFragment.java: use butter knife.
+b9e2bbe4091f55ab2e71348e6148e71ac17891fd;2015-12-09 15:10:48 +0800;DataManager.java: add method getEventManager.
+e9c1c3393c45a51b35eaf01521d1a87a2ed349f6;2015-12-09 15:11:10 +0800;StopWatch.java: measure code time usage.
+3996aa70ef35e6c7c321489966dc7413e0e708e4;2015-12-09 15:12:05 +0800;StatisticsFragment.java: split one AsyncTask to many.
+cb2362c449e1fba3d4580af0a27653ff123f12a9;2015-12-09 15:37:35 +0800;ThoughtUtils.java: now getEventCount use true sql count.
+96f987dec67ddbe9b61651fdd14425a43383c71b;2015-12-09 16:06:12 +0800;MainActivity.java: now use FragmentStatePagerAdapter.
+95c3e15cd722ff589927b3b74ea280938809c9f0;2015-12-09 16:13:40 +0800;LabelUtils.java: getFreq use sql count.
+4453a3d723420c5c8ff943aeb0a1c12d48fa6a62;2015-12-12 13:33:56 +0800; StatisticsFragment.java: cancel tasks onStop.
+c2cd77fefa46f7cdf912d04f0cad81d6fc50163a;2015-12-12 13:35:52 +0800;EventDetailActivity.java: bug fix the height of long-image large than need.
+f813f10ddaaaa5d7838029995e24ae24dfe4348a;2015-12-12 14:24:42 +0800;HintSearchBox.java: a hack of SearchBox to add a hint to the EditText.
+cce2fe6aa57b412f51bfbeda5eafeded709141ec;2015-12-12 15:17:03 +0800;EventDetailActivity.java: fix long image.
+e75d24b817dda4e8bd2c9f95fd403795ca03ad4e;2015-12-14 13:26:04 +0800;update version to v0.8.9.
+23f7df97d80a7f3d7b070e3112e5dd8f9363f2b7;2015-12-16 14:32:33 +0800;Add a new Activity HelpCenterActivity.
+fb4147a5df0fc467293af8e0653d7c8985dcee45;2015-12-16 14:33:17 +0800;HelpListAdapter.java: adapter of RecyclerView in HelpCenterActivity.
+94005d87234c47eafe18cdb36e4015ac387fdc0a;2015-12-16 14:33:42 +0800;MainActivity.java: add a menu item to HelpCenterActivity.
+bce5297d246014f431101bcdd300321ab7c66f1c;2015-12-16 17:06:15 +0800;HelpCenterDetailActivity.java: new Activity to show help article.
+68bd2f1756fe4fa7e9768afc01cd4481182f6e61;2015-12-16 17:06:42 +0800;HelpListAdapter.java: item click.
+08d822f65792bdbc3ada4abb00aa5ec6f5020df5;2015-12-16 17:07:08 +0800;update a help article.
+2576657cf0739926ebe1871e94483b5d92f9aa68;2015-12-18 17:06:09 +0800;DatabaseUtils.java: add 2 method queryAllOrderDesc and queryOrderDesc.
+d7c3a2868da58dba4388e8324cc667ffc13b6d4e;2015-12-18 17:07:52 +0800;AddEventActivity.java: now event time can be changed.
+f1b7ee55012732477c2750724159729cd51bcb0d;2015-12-18 17:09:36 +0800;BaseEventManager.java: now consider the condition of timestamp can be changed.
+9d05409ce681520745ea7ac11ef69b406800858b;2015-12-18 17:10:36 +0800;EntryActivity.java: fit new addEvent method.
+bb15fdc984a530c0d1c1d3ca904928811fdb0db3;2015-12-18 17:11:22 +0800;EventDetailActivity.java: update time in onResume.
+241e58c8094d17fdd70f2cb2c6a7375a362d9920;2015-12-18 17:12:10 +0800;EventUtils.java: now consider the condition of timestamp can be changed.
+171d3beb63091cea4ccc7de5e3a13a324a40e87a;2015-12-18 17:12:43 +0800;TimeUtils.java: add several methods.
+11f0042313359ca42429f7772e32354647d386ae;2015-12-18 17:13:18 +0800;TodayManager.java: add and update now just reload.
+891c72685e529d0235cbc45f52e297c3603ec3a1;2015-12-18 17:13:37 +0800;update resources.
+a48622c882ede02046c95e4cf29a70bf33d167e2;2015-12-21 15:57:06 +0800;AddEditThoughtActivity.java: now the time of the thought can be modified.
+394aec442f57072d72576fe3bda85d3958f694cc;2015-12-21 15:58:06 +0800;AddEventActivity.java: if the new event has the create time in the past, then the first thought use the past time.
+b59b3ce2d2e650ef2d9d6fbf1824623e76326032;2015-12-21 15:58:50 +0800;Thoughts.java: now the add method considers the time order.
+bf669382b0015d2368dbff6f9315d7cb2e5e3000;2015-12-21 15:59:45 +0800;ThoughtTimeaxisAdapter.java: put timestamp into intent when long clicking a thought.
+c61055091fc212da0b735685302a2206c8d410a4;2015-12-21 16:00:46 +0800;ThoughtUtils.java: add 2 methods addThought and updateThought use timestamp as a parameter.
+169a98b3837ad4e2ca311d09e60ce2d09f608558;2015-12-29 15:53:42 +0800;add 2 new help articles.
+f1f55829f3892ca15ee2bba24441668bb566b695;2015-12-29 15:54:44 +0800;HelpCenterActivity.java: add 2 articles and adjust layout.
+9ede6f128633974dc599748bf0639a95127a5326;2015-12-29 16:22:27 +0800;update version to v0.9.0.
+6da12303096186ee01c8729a47a58e069581537d;2016-01-09 00:43:58 +0800;Add theme for dialogs.
+f51271b663286b87bc0da7024eb486356a58b83b;2016-01-09 00:44:37 +0800;ThemeUtils.java: add a method called getCurrentDialogTheme.
+36a671d02979bf3e7ecab3fb17b12c63a5fa9908;2016-01-09 00:45:31 +0800;AddEventActivity.java: use new add-label dialog.
+fe0af8fe317280569458e8988f1903982cd327cc;2016-01-09 00:46:48 +0800;delete NewLabelDialog.
+ace338331c495b216af869357c04addbb6ede0d0;2016-01-09 01:28:23 +0800;LabelDetailActivity.java: remove unused code.
+c11f50042d38e0605f7c82885ea22a2ed1175867;2016-01-09 01:31:05 +0800;EventUtils.java: now the getEvents method is ordered by timestamp.
+36d419b31a05ec257114208db3710961ea34ce14;2016-01-09 01:31:26 +0800;LabelUtils.java: remove unused code.
+b2af06b8b5c54d97cbac5d185bb6f4a405615ba1;2016-01-13 23:54:56 +0800;AndroidManifest.xml: android:exported="true" for ContentProvider.
+f3fb70cc86cff543504d8d0316903665f2fecf6d;2016-01-13 23:55:10 +0800;update build.gradle.
+7f5e4bac5f40d71e3626d1f0c86794b710f909a8;2016-01-13 23:56:06 +0800;Constant.java: URIs for ContentProvider.
+5f8bf8b3d415d661ec99fd48a2afe0969166086f;2016-01-13 23:56:39 +0800;HeartBeatContentProvider.java: HeartBeat ContentProvider.
+38ebf9c24ea5572be4ff5ac329659a5974c7e875;2016-01-13 23:58:08 +0800;ProviderEventDelegate.java: delegate for event related methods in ContentProvider. (with an interface IProviderEventDelegate)
+275abc4d1dead9b2baaf72e98782c1cf3245ca91;2016-01-13 23:58:52 +0800;MainActivity.java: adjust to fit persistentsearch 1.1.0.
+3ea272047fd2db26493f1f11f00e42b3b212577f;2016-01-16 00:46:20 +0800;update version to 0.9.1.
+4b072fc32e79ce104f3fb667237ff528352dadd9;2016-01-16 00:50:23 +0800;update changelog.
+23d5266cec2b6ab088ee8be64cfd17c0b5f73de6;2016-01-24 23:13:14 +0800;Android Studio Preview updated again, with no doubt the Instant Run still sucking!
+f44857928e9690095a6e2b19f800b1eb220a4681;2016-01-24 23:13:51 +0800;TimeUtils.java: add useful method.
+13e6e741ab30a742969e5c3fcbfc0f75d96e4c6e;2016-01-24 23:20:20 +0800;DayCard.java: DayCard is a new model, it contains the events in a given day!
+7dc8af90889cee9005efb4953ea03f286cb150a8;2016-01-24 23:21:13 +0800;DayCardEventAdapter.java: the new event list, actually is DayCard list.
+56606eb6f73b4dc165b4b712b59d9e5280906995;2016-01-24 23:21:49 +0800;EventManager.java: now use DayCard.
+168a93aa451681711ac649717a278ba2327d91f5;2016-01-24 23:22:30 +0800;DataManager.java: now use DayCardEventAdapter.
+e28fa729d71e23f635499d7f8ace433f25581252;2016-01-24 23:22:40 +0800;update resources.
+209ce80dac56b79d2de8791dd10a4de1812fe3fd;2016-01-25 11:37:07 +0800;DayCardEventAdapter.java: item long clicked.
+9ecd0af3458ac63863ad1e1b6608e2aabf9291ac;2016-01-25 11:50:26 +0800;fix #7.
+6eaae7cd5aa6559d90f462aa538fc74bee921023;2016-01-25 12:51:05 +0800;EventManager.java: bug fix in parseData.
+13392e887bbe1f4e696d648ab57f32dc142b47bb;2016-01-26 13:38:13 +0800;settings.java: add a setting fot time format.
+a469e4fa87323a55f2fbe8ca6c9d3b4eb10d642f;2016-01-26 13:38:48 +0800;TimeUtils.java: parseTime read setting first.
+335aa5e6470076d83630f65fd44a15a61e2c0e65;2016-01-26 13:39:10 +0800;update resources.
+9b46a06d27b43da576290e01dafaae3a8794f938;2016-01-30 22:41:58 +0800;ContentProvider: add a new method, getting event by id.
+0bec53dd6640943fb95bea8b35f079de288f31a2;2016-01-31 02:15:17 +0800;ProviderThoughtDelegate: delegate for thought related methods.
+b6753ad25572e2ca2da7e8260c20041c6ab8f278;2016-01-31 02:16:08 +0800;HeartBeatContentProvider.java: add thought related ContentProvider methods.
+539d6cdf877e8df2035348fa350178fcff635bcb;2016-02-02 17:30:08 +0800;DayCardEventAdapter.java: move layout inflating into a AsyncTask. Now such list very smooth!!!!! smooth! smooth! smooth!
+368104a2b29fbf31226713aab59145792bcc9459;2016-02-02 17:30:30 +0800;update resources.
+b555f305933850184b2ae19e52643aa3bc81c5b3;2016-03-23 18:26:39 +0800;DayCardEventAdapter: remove item time from the list.
+cd14fe304c9dde2a1841a290c8f7a24b4dada6cb;2016-03-23 18:27:03 +0800;remove ic_launcher-web.png
+b70a0daceef012101b5f0022e9e88f5870438986;2016-03-23 18:27:21 +0800;update resouece.
+9ff54dd0dcfa2e72cc9f9b843087eea6934d7138;2016-03-23 18:27:28 +0800;update changelog.
+351d04526f6ba79be40b9552d6baf4624f0bc09d;2016-03-25 14:07:57 +0800;DataManager: speed up isEventEmpty method.
+79f5c1179947e05500032fd02c7601a685d9164c;2016-03-25 14:09:13 +0800;EntryActivity: now only use one method from DataManager.
+e8c241bbcf50875c16266a9c362896564594135c;2016-03-25 14:46:22 +0800;EventListFragment: load data async.
+f9e4f111b2a1f1997344298e11879b13307bc29a;2016-03-25 15:44:29 +0800;use library multi-image-selector
+6ee3fa63b51444831d9f38ce9494b80f80dbce26;2016-03-25 17:06:21 +0800;GalleryUtils: util for picking up images.
+b5f930575d5e0b133e9ceb8c8434c1a141f9f536;2016-03-25 17:07:14 +0800;EventDetailActivity: using GalleryUtils.
+01ad9f3bc5cc4423f6baea225f719b5d02bc0c0c;2016-03-25 17:24:58 +0800;GalleryUtils: methods adjust.
+539f8b5d42220a18ff35a518757d2cdeb82b7457;2016-03-25 17:25:45 +0800;EventDetailActivity.java: modify onActivityResult.
+b1c57514e9478131c6f6e5deee26024a3c299399;2016-03-25 17:26:08 +0800;AddEventActivity: use new GalleryUtils.
+057f7221a89bc2be7dbc02e8002793b153a7c9e6;2016-03-25 17:26:21 +0800;update resources.
+fff7e490594cef1a334198a0b0174331f72e3054;2016-03-25 17:35:20 +0800;AddEventActivity: remove unused code.
+ec7a7dda088c1a9555047cec217069f58222308b;2016-03-25 17:35:41 +0800;AddEditThoughtActivity: use new GalleryUtils.
+0da0232374d23544678b19ab81cb013a81359b37;2016-04-01 13:41:47 +0800;update version to v0.9.3
+58d1870f490d6842efaaeefafce5c955cbbcdd69;2016-04-01 13:49:31 +0800;update change log.
+ca0630c72a945843dd4f9d4b0b4c2504759a880e;2016-04-01 14:59:07 +0800;FileUtils: add several helper functions.
+234888b396a0f48af883bce888adc2c24eb5f4ec;2016-04-01 14:59:36 +0800;BackupManager: DB backup to HeartBeat/backup.
+9febb84d77bfd7d5afd53acf5125e43dac93978e;2016-04-01 14:59:49 +0800;update resources.
+61d255d7f6a0f1e2e89f01ed932778edb9ec608c;2016-04-01 15:18:50 +0800;FileUtils: add a helper function.
+6c53109c5689ca9291866742d8bb4851af7770e9;2016-04-10 21:34:53 +0800;MainActivity: request permission on 6.0+ systems.
+2a5a78c0cdcb52a971b420d33dbad5f2311ad264;2016-04-13 22:59:15 +0800;fix #8.
+4d6ebc20ff953338df094e4b9298ed8df596b121;2016-04-13 23:45:50 +0800;GalleryUtils: add a method getImagePath.
+e6b465fb65e634638423eb81a4d149cc309b5086;2016-04-13 23:46:21 +0800;use new method getImagePath to get image path.
+7b0256f06b961a701d75a66e62b33a972a426841;2016-04-13 23:49:07 +0800;update resources.
+033ac379eb411b19523da44cd941729250f1e355;2016-04-14 21:48:06 +0800;GalleryUtils: save new added images under heartbeat directory.
+b41af785a2c3ace1f4570d5c15079fe94407dcff;2016-04-14 22:59:52 +0800;GalleryUtils: only save filename to DB.
+2facd0627d30241d1b66aafe09485cc5f84ef03f;2016-04-15 00:27:00 +0800;EntryActivity: add a layout.
+bf28bb70e6b036ccf3079e70a53ca66c6c05d370;2016-04-15 17:11:12 +0800;ImageUtils: add some method.
+8235cc2704ddd5903b3b57f866e0a326b84f42ab;2016-04-15 17:11:52 +0800;FileUtils: copyImageToHeartBeat method.
+4a431f598a95b8f16e1524f92c59ac2f8ba2f90a;2016-04-15 17:12:22 +0800;GalleryUtils: use helper method.
+66274ee69e21cb12cd82e9b2d77b75b2559e34d9;2016-04-15 17:12:57 +0800;EntryActivity: transfer gallery.
+dbbdfb3a1b6c4be36bf282f6a06da46447e51438;2016-04-15 17:13:24 +0800;BackupManager: needTransGallery method.
+268ce6f91135e1345522f84978e41cb081b1b9bd;2016-04-15 17:13:54 +0800;ThoughtUtils: add queryThoughtRes method.
+eed4ac88859fe3022bb7a3fbd7ff1a9de2d13075;2016-04-15 17:14:09 +0800;update resources.
+2b4d6a48bb79504052fcd06217e1a5d749345f21;2016-04-15 17:41:25 +0800;EntryActivity: Backup database first.
+1a074c8fc71d1aa1e011252532b95f17cdde5c2d;2016-04-15 17:41:58 +0800;EventListFragment: use list LayoutManager first.
+eab018c1af3d97fd525d6b059d4353680e836edb;2016-04-16 13:49:13 +0800;update donate list.
+9f8540987823cbd68e6d5b50873574d3043732b7;2016-04-16 14:15:22 +0800;update version to v0.9.4.
+1074c7b22197268e792bb1387655587dbce96d2e;2016-04-16 14:35:36 +0800;update changelog.
+b27e49e5ed5b3370815d336d5152edc1fca4e424;2016-04-18 16:34:46 +0800;use leakcanary.
+1dc035de04a867e8fd0dd163bd1809f9e1218282;2016-04-18 16:40:08 +0800;DatabaseUtils: fix memory leak.
+db63cffa5ce40e414a871a88b022438cc180dda7;2016-04-21 14:44:41 +0800;FileUtils: generateBackupAllZip.
+0905722ff5b8f77b637a4ffb1d3b6a65f80f653f;2016-04-21 14:45:04 +0800;BackupManager: backupAll.
+ad20aefb072977dc75a5832dd05033d3012d6d5c;2016-04-21 14:45:45 +0800;BackupAllTask: a AsyncTask for backing up all the data.
+fabeb066107a96082607009e7138f0cd735330d0;2016-04-21 14:46:12 +0800;SettingsFragment: new preference for backup all the data.
+10c71660a3199f8cd1524147be285e5db1002c3b;2016-04-21 14:46:24 +0800;update resources.
+0ad1a1129fa480a54eb72039e720e7ebdbde239e;2016-04-22 22:02:09 +0800;FileDES: add a new method doDecryptFileNotClose.
+a7345ab5f43b049a59059cad2d7c33f9d49cfd58;2016-04-22 22:04:31 +0800;BackupManager: add a new method restoreAll.
+7d7bea5f8a82d00f5f38567326b8e216949602ea;2016-04-22 22:04:54 +0800;FileUtils: add a new method detectFileType.
+776ddcb3f4349f74b30ecd7dcefcf7f183135377;2016-04-22 22:05:22 +0800;RestoreAllTask: a AsyncTask to restore all the data.
+ca7eac9ac7efb81e82436e30e964658d819111dd;2016-04-22 22:05:52 +0800;SettingsFragment: add a restore all preference.
+2d14c208442fc2ac672daa9868548cd3649edf40;2016-04-22 22:06:32 +0800;update resources.
+79bf12578ea0fbfee79386c33590d73b72763ee1;2016-04-25 16:03:58 +0800;SettingFragment: add licenses.
+c08eebb5d93be0c6d741d19ad66102a7085da9aa;2016-04-25 16:51:29 +0800;SettingsFragment: add License preferences.
+6ca95fc88f3ff4b3877cdce955feb336d8dcc3b6;2016-04-25 17:17:53 +0800;EventDetailActivity: fix #9
+a1b738399d0403202e84d881867cd3557a5d45a6;2016-04-25 17:29:28 +0800;strings: mark backup all and restore all as experiment.
+98a2cb890ab238fa97d8459347180f6a0f7b87c5;2016-04-25 20:38:44 +0800;update version to v0.9.5.
+bb5aa4f596960205c1c241a4bc49091fdc7a80ea;2016-04-25 20:52:21 +0800;update changelog.
+744be8af1bd3936e4fb9b47ccbce0f1fa1af5043;2016-04-26 15:13:50 +0800;HeartBeatWidgetProvider: HeartBeat widget.
+2a6887ab31ec87fc81f56815c95331b889f43811;2016-04-26 15:14:02 +0800;update resources.
+e1e596e2ca2f711ce5c2f5416639d1a9eee75a14;2016-04-26 15:24:06 +0800;HeartBeatWidgetProvider: show count of events and thoughts.
+f6440cd3df142adca400b6423745473b5463c927;2016-04-27 17:09:31 +0800;EventDetailActivity: status bar transparent in Lollipop.
+8e61b4929450c596a21c5df2c4545c74d9b095e3;2018-10-14 11:23:33 +0800;Update README.md

@@ -1,0 +1,499 @@
+d6fecbd23c49b7af459fbde67d40e09a5a2760cc;2015-04-22 10:42:27 +0530;Just after generating the project using Spring Starter Project Wizard
+511dce00831656a1a783400a80513e2d6b2c81d6;2015-04-22 12:04:16 +0530;Working with the minimal spring-sample-app
+08cc4c92c09c3733d079b69fa761c77ae67b90aa;2015-04-22 17:16:06 +0530;Signup working
+8e732725220c03760a1169e34b337e8e11bbb84e;2015-05-01 12:15:57 +0530;some improvements
+0be7974a84a75552a99d33bdf0468aa7addf8adb;2015-05-05 18:08:38 +0530;Login working
+af6d612ccf79829e39cc6ff61a2b6d2413b4b017;2015-05-06 14:04:30 +0530;Security config - set success handler and failure handler
+34f2475e4dfc6144bc6e800e2d52249f1d0a6fb2;2015-05-06 17:15:21 +0530;SecurityConfig refined
+259a90836914540ee34ae6aad4bf2bfc988a2002;2015-05-06 18:56:25 +0530;Added logout success handler
+3b10ed0a90fe5f571a58630d5c71e86fc575fa66;2015-05-12 07:07:31 +0530;Getting logging in remembered across requests
+bc2099691dfa5523a7fc944b43d4b294397868ec;2015-05-15 18:26:47 +0530;Simplified JSR-303 validation handling by introducing FieldError and Java 8 features
+550ccb68b9e16f9bd9c7574f8a09853bb3b35307;2015-05-18 18:16:09 +0530;Refined signup process; sent verification mail
+0dd03153cc53adab2706db1956c786f53b3994c5;2015-05-18 18:47:07 +0530;Generic SignupController working
+cb22848b314e81ff5f44301d760731a3dbb2ad56;2015-05-18 19:26:13 +0530;Refactoring for generics etc. halfway
+5a47b22bbfac14d74e6666580510d0df76db9ac5;2015-05-19 13:36:12 +0530;Refactored
+55930f77b90c29bbd629a245db7753e3bc7f9f0b;2015-05-19 17:03:29 +0530;Made SignupForm not abstract
+959c0a88f3f6041ebf17632a817508b2f3bbfc14;2015-05-20 19:13:34 +0530;Onto Captcha
+dcee85f087317a1e09fc6bde266e47ae13d1d8e9;2015-05-21 18:16:36 +0530;Captcha coded
+ed45e43026916c159a9874eea50b6000bd19a197;2015-05-25 13:45:55 +0530;Method Security: handling authorization
+d2a8c38df379344cd27c1e344726ba2bf32d179a;2015-05-25 17:09:12 +0530;Configured "remember me"
+1bc112bec92d5430f0a4d1619add2862ce08f761;2015-05-25 18:30:57 +0530;Creating an ADMIN on startup
+ba19dd5330c7e5161eba396c3cc4463f4d6bfe49;2015-05-26 12:46:05 +0530;Coded logging in the user automatically after sign up
+03db486c371f0b27903a847eb17f0764bccb5717;2015-05-26 18:58:17 +0530;Onto ADMIN screen
+c78f5cf972505f82b171efbd4c16b2b34b41afae;2015-05-27 16:28:05 +0530;Coded FormException for manual handling of form errors
+0c3a196a59841014d4875de29dd74dd9467fdbe1;2015-05-27 16:30:03 +0530;FormException - removed a line I had added for testing LocaleContextHolder
+5c370256a9bf8bef88593f214ebbc44127139bf3;2015-05-27 19:03:33 +0530;Onto coding switch user, but not working
+d09afd0935ac396002885e37679c9e8f937b4a5c;2015-06-01 17:35:42 +0530;CSRF implemented
+7d79c85522fdcecf811587fb46412eb4b8214fb8;2015-06-01 18:51:44 +0530;Made the Id of SaUser generic - from Long to ID
+b072135a505c14a7614424a60ee4a2f30bfcc313;2015-06-02 16:51:18 +0530;JPA Auditing coded
+619d340644d6bfbbe4849473f8fd34ba86ab8395;2015-06-03 17:35:40 +0530;Verifying user coded.
+55e471cdace6f48c90aeb090a500d9b7552dfaf9;2015-06-08 15:29:48 +0530;Coded Forgot Password
+22cbc4c70e39683045d8a5bf969983e5d07f1146;2015-06-08 20:42:31 +0530;Coded Reset Password
+648582941456f21d38119f5d8b4e2901cc0c395d;2015-06-09 17:15:31 +0530;Onto view profile
+f0aece3ec16b192949e68a357151f3635dfea7f2;2015-06-10 13:21:08 +0530;Coded view profile
+d321209b4b6a8fb6198854a6bd6e50f14cb3153c;2015-06-10 17:04:05 +0530;Switch User working
+2510c1be133071a1e6361a4b1377320e9353832e;2015-06-15 17:42:14 +0530;Implemented PermissionEvaluator (hasPermission); onto @Validated
+347e201740e4d105536ddaaf9ead47a7e33e01f5;2015-06-16 13:10:43 +0530;Edit user coded
+4b9276627be063deedb5f6a0d80f2973884383d4;2015-06-17 10:24:37 +0530;Separated SaEntity and VersionedEntity; Created packages
+ad971c91fd48e92ac5b43289f7a5a127bbb9bafa;2015-06-17 10:25:35 +0530;Separated SaEntity and VersionedEntity; created new packages
+6012212ef0d55182055dcc061e171fe0d390d867;2015-06-17 13:23:32 +0530;Used validation groups to eliminate SignupForm
+e07ec7ca7dca70190add4ccc08de7a4bfda4896a;2015-06-17 13:48:11 +0530;Role -> SaRole, MyRole
+a9532837788a4e78ba22de2281a8ec62163a39e3;2015-06-17 17:03:16 +0530;Removed UserDto
+89f51e598487371710d94d055182eb10938308b4;2015-06-17 18:11:47 +0530;Moved the "name" field to the sample application. Also added VersionException
+9dae03ca3a2fbc117b36af754965915738ccc6bd;2015-06-19 19:06:36 +0530;Spring Boot 1.3 DevTools
+3606f134c11009fb59ded06a333fbe6016ab371a;2015-06-22 10:41:26 +0530;Refactored ContextDto -> PublicProperties
+35d79ba847643aca7bcdeb001a7f4ac51e629e73;2015-06-22 17:41:33 +0530;Coded Change password; Introduced MultiErrorException; @RetypePassword JSR-303 class level validation
+02371e39bca41899d943497c08529efb400ec2d8;2015-06-23 12:35:21 +0530;BaseUser is now UserDetailsImpl
+5c7a0a5a7f18a03afdfe84cbc940a037e9de184d;2015-06-23 13:08:41 +0530;Refined UniqueEmail
+a360136378aab8f01799a306830cbba76ae118bf;2015-06-24 14:03:05 +0530;POST -> patch; onto afterCommit
+88fed23596ff4ec5926a85e8fa22effd9a74342a;2015-06-26 10:22:21 +0530;Refractoring related to domain model and user
+996af99ee702c4cbf8d5bbb44a98afe7e2ba56b2;2015-06-26 17:12:50 +0530;Refactoring on
+efcf0643616b1c12781c4f049cdb8c4283b1d34e;2015-06-26 23:00:42 +0530;More refactoring
+1a8d6f8407b8026cdf70158cb9ce2b320b411e50;2015-06-28 12:49:49 +0530;More refactoring
+d05754a676544ed9dc41a41ef4439d01286f274f;2015-06-29 10:55:46 +0530;Fixed the refreshing of the name of the loggeding user at the client side after updating it
+257e6a4f460835df26368897bb369e46251c4a38;2015-06-29 11:16:34 +0530;Changed csrf token name to X-XSRF-TOKEN
+127f0be6154db18c9f6323b9ec3fa4b0f37ecb5c;2015-06-29 12:50:09 +0530;Http403ForbiddenEntryPoint to prevent redirection to login page when someone tries to access a restricted page
+e994fe3f083038402251798e4269bbdfa15390cf;2015-06-29 12:59:45 +0530;userForClient in LogoutSuccessHandler
+f8ede954188f6ac035a9089a20f528238443f718;2015-06-30 09:56:47 +0530;made JSON_PREFIX constant
+6ea64da4c8fa9b9a4da208d28625a860cca134c3;2015-06-30 18:48:43 +0530;Made captcha enable/disable
+97353a48403485f1d33bd55479390079a97c0237;2015-07-01 12:37:14 +0530;Moved @Enable... to the sample application
+fd11b7cfc84358157ea2578ef318dd77b68bd737;2015-07-01 12:39:59 +0530;Just organized import on a file
+cbaa880f7eec13cc1a6ecf7ae808426ea7a34e1a;2015-07-03 06:05:51 +0530;Refactoring
+76765fbf337ba743c03112feeee1574197aba4b2;2015-07-03 14:33:52 +0530;More refactoring
+a02faa7f598be440226c4fc077584a3517655fd8;2015-07-03 18:14:33 +0530;Refactoring
+76c90f8b902358cb1da848aae7593102065dbb4c;2015-07-04 08:34:30 +0530;Refactoring
+ceb4afd88224dd0463ce33331c4cd76b333c75e7;2015-07-06 10:29:05 +0530;Changed the constraint validation property path to include the entire path
+9a176261e2f0d252369653c9eae329a5639c28b8;2015-07-06 10:37:59 +0530;Changed from error collection to list
+6890017f5d003fdad21d3eeb352ce2a95901e7eb;2015-07-06 19:05:22 +0530;Refactoring - @ConditionalOnProperty etc.
+63a8b1869343e7ae02086352eb93ca3f620d434a;2015-07-06 20:52:44 +0530;Onto refactoring properties
+ee28713a5a044bd589b709497615ea7ce8898a2a;2015-07-07 06:57:22 +0530;Renamed to spring-lemon
+ea406d163c869f25a9f917e928c91018907a3ada;2015-07-07 10:12:51 +0530;A couple of renames
+3fb5a4ad2a634cfdd445f3dae577051132a0e0c2;2015-07-07 11:56:56 +0530;Refactored properties
+2e207781ddef6f4d375bcddfc9a780e203323827;2015-07-07 12:50:08 +0530;One rename
+452d958b5717c3778cedcc639c4d50ff60303a65;2015-07-07 17:03:36 +0530;Refinement
+f0a00eeb9bfd002fda342a72e5fdc1e170306447;2015-07-07 20:39:44 +0530;Create README.md
+98edb571185bd304dd348fdbe6829a4ee0653a7d;2015-07-07 20:58:53 +0530;Update to README.md
+ff0ace96427156965fc7b005b349efb53796ad9f;2015-07-07 21:07:11 +0530;Brought here @EnableTransactionManagement, @EnableJpaAuditing and @EnableAsync
+55539d1e4272554d3f4b27f90c1d4e4fbf9d8ebf;2015-07-08 07:56:01 +0530;Updating README.md
+ca55f5601af12625768e50dec0570e694e499b07;2015-07-08 16:00:11 +0530;Better message keys
+5666d45aa23dac972e2e313edafc9e6b063172c6;2015-07-08 18:24:39 +0530;Coded log messages
+c424295ae45f18e16809cd71c2e5402497bfffd5;2015-07-10 13:48:34 +0530;FieldError refactoring
+c0171f79f1edaa5a3356ddfcc2adf60b69c791e8;2015-07-11 19:36:02 +0530;Refactoring
+0a563683c253568b3f3620c171a1d09dcf0eadf8;2015-07-12 08:21:29 +0530;Refactorings
+1a537db579f6a59d6f6f1ab56fbd826093964bdd;2015-07-12 13:25:49 +0530;Refactoring
+2737c68b59ceda435c63262ab6029a4bb25001a3;2015-07-13 19:03:01 +0530;Seven tests working
+ea8b6a10d4e04cc5ed1740d1772549179e9082a5;2015-07-14 10:59:33 +0530;renamed loggedIn to user
+2341780c74c784fa5ecae263eaa54d7d2cdd84e2;2015-07-14 12:56:57 +0530;Made onStartup public
+ffc7f41ccd2a384d7813d8107b8ec27ad62a55be;2015-07-16 13:11:04 +0530;code improvements
+161acb078555ee6ad492d151df3cdfbef58d8ae8;2015-07-16 16:28:49 +0530;0.7.1
+4d3bd28ead5dea23588e6a759e4f7f02c5db9415;2015-07-17 19:07:17 +0530;0.8.0
+551afe242af4086dcb977499b8de5139f317be10;2015-07-18 19:53:33 +0530;readme changes
+136db2f4c621c676547291aa05783da8b4102da3;2015-07-18 21:24:43 +0530;readme
+40bab38b72b5bb0b6384cbe6d588ebdd330ff5c0;2015-07-19 18:19:27 +0530;README and LICENSE
+8a70dcdf06e6932c9fb3ee234d4f9c70b9cb17dc;2015-07-20 10:08:46 +0530;Including FieldError in code, and other improvements
+820b16d0220100baf50602c0e7b789f6ac0c07df;2015-07-20 17:01:51 +0530;improvements
+086e3080596db3ff91368b58b7bf99d662a7ff77;2015-07-21 13:54:40 +0530;Some refactoring, introduced goodUser and goodAdmin
+373d7af84e7ee6e05185676939b970ad1ae51c59;2015-07-21 17:36:47 +0530;Refactoring
+c921555de6aeac509102da9100278ea368c58e3d;2015-07-22 17:29:16 +0530;Refactoring
+595517b55b1db34f9318072735af8322aa80f0bf;2015-07-23 07:52:48 +0530;Coded a constructor for changePasswordForm
+1af8a47a29611a83fd9959219188e1727721f880;2015-07-25 19:04:39 +0530;Refactoring
+28063bac12c3c1553e7521a0eec6dd1d577e49c8;2015-07-28 13:16:34 +0530;Changed verification process - now user must have logged in
+4452e4cdd288dcbb39dcd3dbcf5e65dc3f88a13f;2015-07-28 14:14:37 +0530;Did some improvements
+3bcddac0d33e7e9659f2412322163ceb883f91aa;2015-07-29 12:55:41 +0530;Made the controller abstract
+7df3b07c50fa9467fdd1aa27acd67eb39d33c23a;2015-07-31 09:25:00 +0530;Simplified JsonPrefix for JSON vulnerability
+eed52d2d38fb3925529483c35b7d3cd841c86b2f;2015-07-31 18:28:20 +0530;Refactoring
+23f120903dde33a23e410f5fca4a02066e74cfaa;2015-08-02 10:15:38 +0530;Improvements
+c5a39428e12f0dd548581a9455f3126b262c5729;2015-08-03 11:40:15 +0530;Proper indentation
+6080a939633433fe10d893a9d62be27edd6de59f;2015-08-03 12:44:01 +0530;ChangePasswordTests related changes
+2b55773f93065efb153e49c5408587569a70242f;2015-08-03 15:23:48 +0530;Made POSTS to PATCH for idempotent requests to existing resource
+94895980f49ac85dec6c646f931e89d292239b04;2015-08-03 19:25:39 +0530;Resend verification mail coded
+357bcb06c2f807c510d0717f62f46a31b2fb09da;2015-08-04 17:10:58 +0530;Improvements
+a94b830073afda010def17f0396f1c101fa61594;2015-08-05 11:38:09 +0530;Fixed hasRole etc.
+1579d914ad8eb1c38c76457a61ba50f3f178b967;2015-08-05 16:18:43 +0530;Improvements
+3293fc9ace080fc07eb53a7e59036e096409e3ad;2015-08-06 13:27:22 +0530;Improvements
+ce182243a8fc581871105661002a0289477ec9e0;2015-08-06 13:41:58 +0530;Removed getBean from Login and Logout handlers
+364241eb271d7567cd20b30e7211252da34aca4b;2015-08-07 16:56:21 +0530;Improvements
+50d37aa199d6a28b49274e1c5b445f4786095799;2015-08-08 18:48:32 +0530;Renamed LemonMailAutoConfiguration
+1ab914e7d5a92c3b8be1ed3cf1eaa8a8e2f90cee;2015-08-09 16:42:21 +0530;improvements
+2df3b8ffc812e91c9cec21e3c442b9ad64ea41b9;2015-08-09 19:04:19 +0530;indenting
+0e472c2182db885815bf613e277982b8e40377f1;2015-08-10 16:12:53 +0530;Java 8 - made reporitory methods return Optional
+e5e09f731dc2a6778daf93ae5cf396581b974d5c;2015-08-10 16:42:39 +0530;Java 8 path variable in place
+208f877ccd3456507eaa7ece37627d8731838d9c;2015-08-11 10:55:25 +0530;Indention improvements
+232fad98f1929c1f0e321dd32776b9f8423d2090;2015-08-11 17:12:45 +0530;Onto changing email
+699a9c543d308f60d2789aa862176bc671db1fd0;2015-08-12 13:28:48 +0530;Coded changing email
+77abdacd1aaa113bdbd89be9f8a61328b6edcdf0;2015-08-12 13:42:48 +0530;improved the look of afterCommit lambda expressions
+efacd93d2e0b50ff84f5843b8382da486ce99496;2015-08-12 19:27:23 +0530;Coded change password
+ee72141e93c2fe8964d983b5c2799ba4ca12c9fb;2015-08-14 14:43:15 +0530;indentation
+c0c96f668d69490184929c674798ad22bce97039;2015-08-14 22:17:48 +0530;proper indentation
+72cdc1d3b91641969687170c2f6f1518aa299387;2015-08-15 19:16:55 +0530;Proper indentation
+2493a32e77aeb90614f943e31e4abc1158adad00;2015-08-17 11:25:53 +0530;Refactored pom.xml; made everything provided
+518e3f33a0f95365a3731ff533a394184687e23c;2015-08-17 16:31:29 +0530;Cors configuration as per Spring boot 1.3
+99a4007051833c9f3fe012ced046208eedef00a1;2015-08-18 09:45:23 +0530;SimpleCorsFilter is broken
+c6be1421b2e3805b3f3e8b1a6c590bfaf787bb84;2015-08-18 18:30:06 +0530;Cors enhanced
+ae0885006ee5cac65eaf2cee5833a861ee13fdda;2015-08-18 19:01:02 +0530;Onto change password
+16e8ef43830d0858be59440cc4bc99d705e41d3e;2015-08-19 12:29:20 +0530;Coded logging after change password; now many functions return no body after logging out.
+9427e0522d6f2135f237dce20d2af85af4f98f05;2015-08-19 13:18:38 +0530;Fixed SimpleCorsFilter for SwitchUser
+e90443d0d740fc8752f77a30c73ef43bfbd5f2fc;2015-08-19 16:21:58 +0530;Onto internal doc
+1a3997bf81c6a3f8737cff16ce8331d62f871ac1;2015-08-25 16:54:39 +0530;Onto internal documentation
+509298ba13579361a9dcdea4a08bad3071d8edbe;2015-08-26 11:43:19 +0530;setUsername introduced; Onto internal documentation
+1794b488100dd9726e9f0f3a1981d36a1bc2bc59;2015-08-26 12:45:00 +0530;Internal documentation
+062b9b41a97b16184401747effdb458d5673b853;2015-08-26 13:02:22 +0530;Onto internal doc
+c506f6eee38c364bc75a025c236fa1c6d1010ea5;2015-08-26 17:28:54 +0530;Onto internal documentation
+3a00e1e337ace4115d7b7d12f7d20e8458941fcf;2015-08-26 17:52:56 +0530;Refactored CSRF Filter
+2fe3e92684a824bd4968f2243faa8072ecdddde4;2015-08-31 11:37:49 +0530;Put StringUtils version in pom.xml
+dd0eda9f75d3e1bf7443d845f69c1e451fc2029d;2015-08-31 13:05:56 +0530;Buffered authorities
+77c29778f5bdcea344b458c3ff96eccb6ea66319;2015-08-31 13:39:38 +0530;Refactored security configuration code so that they can be overridden easily
+32f9f2776e3e5b2b2baeca6f5c4d291c6024c4b6;2015-08-31 17:09:25 +0530;Onto refactoring and internal documentation
+8846ca3f93d87eb73606bd3a3dc81df4a777349e;2015-09-01 13:12:24 +0530;Internal documentation completed
+8f0d936d14ad1d3f2c834d02a6fcca3171bc68e3;2015-09-11 22:10:18 +0530;Updated readme
+d727bea2b1297deca3de357f181a2ab17da236c7;2015-09-13 12:09:52 +0530;Updated to 1.3.0.M5
+6cd9558b8a0cd4827bf86eac26b09d4e526d0a6b;2015-09-14 19:54:15 +0530;Some improvements
+746ae1b6313091b7adc56eb7bb6e09124356d14e;2015-09-19 19:24:14 +0530;A couple of comments
+ff027c87f666f3841d0d53c68e767e3e9f28f9f3;2015-09-21 13:43:43 +0530;Fixed CSRF
+d2dea676394cc8c468ae83b9203b6f7e81a78676;2015-09-21 17:34:01 +0530;Made all PATCH to POST
+e2880ac592b87d2fcaf7af2e67b4297cb84159db;2015-09-24 12:34:14 +0530;computeAuthorities now has Java 8 code
+4556825043e4acfeec14f880b66acf085cfe5039;2015-09-25 17:09:01 +0530;Indentation etc.
+4e19845b0eba8887d17b203ae77c2130ae440251;2015-09-30 11:43:19 +0530;Comment improvements
+599a1bfbe5764f3732e2827a6d5350d3389e22f3;2015-10-01 14:34:05 +0530;Updated version to 0.8.2
+b37077eb1eba64a9080bbae2792cb2d86db93eb6;2015-10-01 16:28:49 +0530;Renamed CsrfCookieFilter to LemonCsrfFilter
+179c6bd2f9ac02d2b908a18f47991514e954fc65;2015-10-03 18:55:41 +0530;Removed httpOnly=true from LemonCsrfFilter
+3c8a7b2b37c5f79dbad87234aab399895992b0da;2015-10-04 07:44:11 +0530;Renamed SimpleCorsFilter to LemonCorsFilter
+319280862271cf0a703d1012dbc3eaabbde664f9;2015-10-04 16:48:33 +0530;Trimmed Access-Control-Allow-Headers. Kept only the custom ones. I.e., removed "origin", "content-type", "accept"
+e2134ed559735145eef5536d0b7989f500a6ab40;2015-10-04 18:42:59 +0530;CorsFilter improvements
+6a5f269805fcf8be95b990ac7fda2b8b560ed0d3;2015-10-05 14:02:33 +0530;Signup now returns 201; CORS allowHeader and exposeHeader properties now cover more headers; removed {} from exception handlers
+ef9a0057e0869d492a6313f18df56ceb64530261;2015-10-08 12:40:43 +0530;Trimmed some comments
+330bce7d052ff820a077ceef4de6f59ba1cb0b00;2015-10-09 19:01:02 +0530;Tiny improvements
+29a4db217df88f60fe7058e702523c24acee7e27;2015-10-10 13:01:46 +0530;Organized imports
+50a5a339676880118e540a18c41c23ccfec6cd7a;2015-10-25 11:14:20 +0530;Upgraded to Spring Boot 1.3.0.RC1; version now 0.8.3
+22f9e5afad5d893524a21b786a9763764a23b75f;2015-10-28 18:11:14 +0530;Tiny change
+1e3345eefe5cba895a25ea503668b16e9ae3ce46;2015-11-01 17:25:57 +0530;Updated README
+9ed606e5590f0206a6b4796530abdac03eafecc1;2015-11-01 17:46:06 +0530;Updated README
+8e10478f2b78cd13c763b0829d4ac4f0f351b944;2015-11-01 17:58:28 +0530;Updated README
+968fcf3f1c21a7466912b1d6a78e9f0b12041e27;2015-11-05 21:32:38 +0530;README improvements
+e1668d65ef621432c169e0d330896cea346c1905;2015-11-06 16:49:54 +0530;README updated
+a820e10a90026a9cd7d7d3681897e4e0711980cf;2015-11-07 13:37:32 +0530;Updated README
+26354864fec1afb44b5cdaf650d7b8bfa7d92337;2015-11-12 12:48:48 +0530;Updated README.md
+0b613b6e93177ef7f4d1b5b37d0000958000f803;2015-11-12 13:24:53 +0530;Updated READEME
+c517a5615f99db11b7f79416c30d96533bbd0d13;2015-11-12 13:29:03 +0530;Updated README
+097c386bffebbdaaf2d7b51ae59caae2dcc7c1bf;2015-11-12 13:30:57 +0530;Updated README
+ec5426cd546e2df3cba4f729f62114ab4bcaa268;2015-11-12 13:34:21 +0530;Updated README
+b07f62ac3ca4c1d6cffedfb5a0765bcca0b594ba;2015-11-12 13:38:29 +0530;Updated README
+5743691deca322bc65b7e8038be1a27645582552;2015-11-12 13:39:35 +0530;Fixed README
+5eea9435bfcd2dd5e5fccb231a40a17dd0239e79;2015-11-12 13:43:51 +0530;Fixed README
+b4762ca1a645424160e1ab54d2bb230eb0d1dabc;2015-11-12 13:45:50 +0530;Fixed README
+678db0512a75a6094061b58cf12bc46ad9e401a6;2015-11-12 13:48:42 +0530;Fixed README
+3151f90c1fbeefab8ae9003e85fcf823845eacad;2015-11-12 13:51:53 +0530;Fixed README.md
+d13c25db780311d3823fb56c5bc5527e8153bb6b;2015-11-17 22:03:45 +0530;Removed offer
+e18bb6806c241f3304c6a9862412bea2cd5fd8d6;2015-11-18 10:16:09 +0530;Updated for Spring Boot 1.3.0.RELEASE
+ab07835e7b712d381c781f557aae8b8069c73508;2015-11-18 10:20:50 +0530;Merge branch '0.8'
+3964cd12b31f36e7d463908a93c170b474d77f2b;2015-11-19 11:14:40 +0530;Updated README - Releases section.
+b436c6fed0591e0403c0cc1e38a9a24d5556c3b2;2015-11-27 12:16:14 +0530;Updated README
+088cb810a1ad35a4f57edbb4c39a873581427496;2015-12-01 16:17:44 +0530;Updated README - put link to the getting started video tutorial
+1b6c9a73f4c8a4ae39f3a89a37babc2f363f3843;2015-12-02 17:09:37 +0530;0.8.5 - simplified pom.xml; removed "provided"
+b69c1901f05ce17465b2b7f2b245c75adc9fc1f3;2015-12-02 18:08:56 +0530;Merge branch '0.8'
+8b69aab73be9d271750afb5559afb50af7d46355;2015-12-12 18:16:14 +0530;Updated README
+57e6e66306b54246dbd816d22fa1531b8d6a9c97;2016-03-02 09:17:41 +0530;Added mentoring etc.
+102a492c35f69b728c6e71b95713168295418dd2;2016-05-06 12:42:07 +0530;For avoiding BeanCurrentlyInCreationException error, made the injection of the LemonService to AuthenticationSuccessHandler as @Lazy ( See http://stackoverflow.com/questions/36990328 )
+5cb41d0cc266e08259f792be855f8d9ff41d7249;2016-05-20 05:27:00 +0530;Updated README.md
+0eb2c06bb1414ffb9f3620c8d2edde0a43648c85;2016-07-31 18:23:59 +0530;Onto migrating to Spring Boot 1.4
+268e9068cc1d4668353f2e9bfea88989077e6321;2016-07-31 18:58:50 +0530;Spring Boot 1.4 update - tests are passing
+8f982903dfc95df93e90042b668b09e24615bbc8;2016-07-31 19:29:51 +0530;Removed @EnableWebSecurity
+8ea841321438788e168a9b1f610b5055150b8561;2016-08-01 19:03:55 +0530;Updated README
+12cf388c19f89ae4c755cbd7c4f749b72d0053e1;2017-01-15 13:12:38 +0530;New version 0.11
+d3123d514549399b2e8cefb68bec49c89376206c;2017-02-11 05:43:47 +0530;Removed ValidationConfig
+0a4d156fa55e31ea9cd7764ae813c9e016527c1b;2017-02-13 16:38:23 +0530;Introduced JsonView when signing up for preventing malicious injection
+753dcda33d0f8368ea48fba080f363a23eab8293;2017-03-06 07:12:25 +0530;Fix - added SignupView to captchaResponse, removed oauth2 from pom for now
+15fc18d06254954c00ada572ef0adbad3019dd0f;2017-03-06 08:58:58 +0530;Introduced CookieCsrfTokenRepository instead of our custom filter
+9fb8fd3bea9ad1821fe8e5dd5d6993df4afe4aaa;2017-03-06 13:23:29 +0530;Added @Validated to LemonProperties
+463cfb29a3280dd7cfa607e23bf1e9bab94f9557;2017-03-06 13:25:02 +0530;Added @Validated to LemonProperties
+f10af77bc932fca2ca6894e9a1940ced9afafb54;2017-03-06 17:20:06 +0530;Tweaked a few end-points to look more RESTful
+da0a3727e99c81e7ba183329665aa30316d2864d;2017-03-06 17:36:44 +0530;Improved MultiErrorException.of - made it return a supplier
+3125ca9a85efd4d37408e57a8fa2db78e5b8b667;2017-03-06 18:20:51 +0530;Removed a couple of redundant "abstract"
+a63db2c2d59262c56661cd01788d5337301a2b0c;2017-03-08 12:19:12 +0530;Some tiny improvements
+e77fd7fa85e8a6af22f75513e1c4d2627ebeea42;2017-03-11 19:00:25 +0530;Onto social login
+1e3582aa008ce853f4bb514d48fce8a4ca6dde8f;2017-03-12 14:05:49 +0530;Halfway onto coding social login - committing for backup
+0ef1cc93f041c73793b1846584496671fd2d3468;2017-03-12 17:48:39 +0530;Facebook SignUp/SignIn seems to be working
+eac48ca504a9855c1c4e9ae35e0c22c0b73f0dac;2017-03-12 18:37:02 +0530;Optimized imports
+f4d1ffcd40b89dddc5c4426f0f2d213ed3cfb11f;2017-03-13 07:33:26 +0530;Made social login popup-window work
+8f9c536a105cda5cae110bc28c127335af1ea731;2017-03-13 11:07:21 +0530;Added rememberMe feature to social login
+0dc371ff84bf4f4efa70362ba0cc2d5c8462da7c;2017-03-13 14:15:57 +0530;Onto custom token authentication
+69339a2c61aee6656a69c12da9ccafba198de760;2017-03-13 17:21:14 +0530;Existing tests passing
+f1ecfa29224d16ea9964d50a4a261886966aff01;2017-03-13 19:17:00 +0530;Fixed TokenAuthenticationFilter
+106d0f954cfed38793d2661b1bde141953c08ae2;2017-03-13 21:49:06 +0530;Changed LemonAuthenticationFilter to inherit from GenericFilterBean
+9ca6238406d152a81ae799bfdc1f09f0afce36bf;2017-03-13 21:54:49 +0530;Back from GenericFilterBean to to AbstractAuthenticationProcessingFilter
+acf9e795104e659714a8493691fa37b007ec6c43;2017-03-15 14:28:01 +0530;Onto refactoring error handling
+26f1e5db880445d32ad18ecd94cf5820a59a73c9;2017-03-15 16:07:53 +0530;Added more exception handlers
+56cee086a9bac54646bced79b18deb7fa24f83ca;2017-03-15 16:37:17 +0530;Fixed MultiErrorExceptionHandller
+397d0e0c9c6cab5b53be8e2936b2349f266f46a7;2017-03-15 17:01:14 +0530;Fixed duplicate handler issue
+2562c08d099500686541894d1e07e627eafeda6a;2017-03-15 17:28:01 +0530;Back to GenericFilterBean for LemonTokenAuthenticationFilter
+73a941980ee926a1199c013b00dcc943f1215ed1;2017-03-16 15:48:06 +0530;Introduced auto configuration; added extensive logging for bean creation and injection
+22512bc2f99e2289841cb95282b27e6961b80e88;2017-03-17 05:37:08 +0530;Using constructor injection
+6ec9eaff2caad950cd75b3a1fec12b9ac187a21c;2017-03-17 07:24:28 +0530;Made LemonAutoConfiguration Beans replace component scanning
+315bb810d0ca9478058544cac93724060aa28dbe;2017-03-17 16:01:10 +0530;Added end-points for creating and removing token
+d4c7836259e3eb88e6a5a83b683af7c6ba61a932;2017-03-17 19:30:20 +0530;Midway introducing JSON patching
+1286a11ed14e2aed82bb8e37dd8c9ed76f1b9525;2017-03-18 17:33:37 +0530;Removed the need of MyTokenAuthenticationFilter
+fb4d0cde25ff5982dae15c80f2d5e82b56297d29;2017-03-18 19:11:38 +0530;Refactored PrincipalExtractors etc.
+d0a8ee3f58b27909cf405c66dce1d187d9901193;2017-03-22 05:35:42 +0530;Added objectMapper to MappingJackson2HttpMessageConverter instantiation
+fecbbea98b285d8d677107d2da256c363f311e5b;2017-03-25 07:13:25 +0530;Some improvements
+cbab05e1f9e91cf8802928cb5f7d00f01299b502;2017-03-27 19:12:32 +0530;Renamed "token" to "apiKey"
+d61f269c46deb778893733562027cbb1ba0e93af;2017-03-28 13:51:12 +0530;Some cleanup
+9dcfc61442c9beee843b0be6cf4be43665b868b9;2017-03-28 20:19:38 +0530;Introduced session creation policy
+4447c1a39d41c3e24e1b5acdc01bfaa4ece5e786;2017-03-29 13:36:40 +0530;Renamed some properties and variables for better readability
+0621f0bd99333821ce3f585350f75bc6cff8c8f2;2017-04-02 13:38:20 +0530;Changed version to SNAPSHOT, etc.
+10e8635f435b778b37f8ce45334e420e5182be9c;2017-04-03 17:10:07 +0530;Changed group id
+c064465a81cf2bb2ab5f8651354cab155da2d1b5;2017-04-05 06:59:33 +0530;Fixed injection error
+4939aca7f918e5248f82b30e2595651a5b822800;2017-05-14 05:54:44 +0530;Renamed LemonUtil to LemonUtils
+33b854d01ca9e1755568d70535d3a719cd47ec58;2017-05-14 19:40:06 +0530;Tiny improvements
+26b5c6bbcb77825a36be689f29c571b6af06f7fc;2017-05-17 19:30:53 +0530;Updated to Boot 1.5.3
+e8b55b8f3f8cd23cd0260c3a0e6c927200ffd073;2017-05-18 17:21:14 +0530;README updates
+9c8fced5a2d2770fb4dc5404165d9078aa0ef2db;2017-05-20 13:33:34 +0530;Enhanced README
+4a9300761b3794965dff26371384c1156efeffe4;2017-05-21 21:20:24 +0530;Fixed README
+309d4a042d4f1203ed02f0b6581bafc8b68f3a62;2017-05-21 21:22:36 +0530;Fixed README
+fd8fcc90ff067eeb025d41c15cefd2a4dec382c8;2017-05-22 21:22:34 +0530;Updated README getting started url
+ab91bc69f5549a3f5cccef08f067429f674c0121;2017-05-22 21:27:38 +0530;Updated README
+fb8c15756a4d25749aa09e3e4f0534695877716a;2017-05-23 12:42:54 +0530;Enhanced README
+2684d5409fc8c82ef1ec7fe51b8e3180c11ccdf9;2017-05-23 12:58:25 +0530;Enhanced README
+2c1b5812c437aa26339a743d8039f389f33d2d72;2017-05-23 12:59:36 +0530;Enhanced README
+b3b4c296b0d247100b3d38baaed0f6756eeb345b;2017-05-23 13:02:56 +0530;Updated README
+f23cf4eefc8f3e74302d6cee600726a9b26d4e07;2017-05-25 14:08:54 +0530;Added in README link to getting started video tutorial
+383902fdee912112f7b4508941dd3f043b6cc24f;2017-10-06 20:23:53 +0530;Added pre-order message
+2406720573a354cc5b3aafb30ea69c1328ee25a9;2017-12-10 22:14:39 +0530;Migrating to Spring Boot 2.0 halfway
+7eb416d4afb9ca0b8c40e86179cc2ed0b85d000c;2017-12-15 21:32:21 +0530;Midway migrating to Spring Boot 2
+2237a24394af10897c831d5d82170f7dcf433491;2017-12-31 17:53:31 +0530;Oauth2Login seems to be working, but need to override DefaultOAuth2UserService and OidcUserService
+5d9d9c01df5cb7fa5297fc9c00c924ff66c16b98;2018-01-13 11:53:04 +0530;Coded LemonOidcUserService - interim commit
+98cfb562d946665f2e30df52b04638ca12b5cace;2018-01-13 14:32:41 +0530;Halfway - next task - separate out UserDetails and AbstractUser
+c6f712676ca4f79b11fcf2a11943ac517b396581;2018-01-13 22:43:32 +0530;Midway migrating to LemonPrincipal
+7e360251e53b156d0451634ccf9a51e1e1d4ac5d;2018-01-14 08:33:40 +0530;Separated principal from User
+ddf6f4cd55998731377d5ee6d0dff6e07e3753c3;2018-01-14 15:20:10 +0530;Fixed some configuration etc.
+451ba90bb716c3c9752f130ade3652e0bd706849;2018-01-14 17:07:33 +0530;Got facebook login working
+c8396e048ef07c057416dc45d778cae199b43738;2018-01-20 21:28:08 +0530;CoocieOAuth2AuthorizationRequestRepository seems to be working; but ...
+6b0bcfd7b0e181d51064641277643384dce8f414;2018-01-21 17:33:56 +0530;Enabled stateless oauth2 authentication using cookie repository and nonce
+18eb9281bdb7950b86eba78a67ac74bdfbe036f8;2018-02-09 21:15:38 +0530;Login with nonce now returns Lemon-Authorization header
+8627b2aacf37499329e13db45bbf9ddb9a1f1b31;2018-02-10 07:20:45 +0530;Added JWT authentication
+f648a9c2787966884957031695c87429dfedf0e5;2018-02-10 07:50:00 +0530;Created an endpoint POST /fetch-new-token?expirationMilli=22344422
+a140e7b97862cf6fa87c855ff98ea91baa2db317;2018-02-10 22:20:35 +0530;Expires token if email or password changes
+1b3aa9449c6637fa8aa393e890403d1a4ee80556;2018-02-11 12:44:24 +0530;POST /login now returns a token
+99a9cc0fe82ed37320a90636c231c96fa10b0802;2018-02-11 12:50:15 +0530;Some cleanup - STATELESS, remember-me etc.
+758d03f7431b8432e7c12a3a093f65775ce6f3c0;2018-02-11 12:59:12 +0530;Replaced all PK with ID
+408749c6444f2909bef2adb9b8f254eed07e9a06;2018-02-11 13:02:13 +0530;Removed API Key related functionality
+3604ec0d864abeeea7f52f6cdd5192c9c5464fc2;2018-02-11 13:54:17 +0530;Some more cleanup
+95faee58d92718ff324da23974af24f0609edbe4;2018-02-11 17:21:30 +0530;Did some fixes to make the application run
+019a2959aa713f1740be422b222da36ab65d471b;2018-02-11 20:05:56 +0530;Onto refactroring error handling
+a4dbd2efb9c588aa89443b67785c3c003eeb1e11;2018-02-12 08:14:48 +0530;Refactoring error handling seems to be complete
+9b6940422e043febb099a6fd4337aead4af8bf47;2018-02-12 08:15:19 +0530;Refactoring error handling seems to be complete
+7cdbaa422d5b67835aee203fc292a8e6327bd178;2018-02-15 08:11:04 +0530;Added some comments etc.
+c8a524764006d92aaa7241cf1179deae7460d4ac;2018-02-15 08:33:25 +0530;Added a comment to ErrorResponse
+af6d3e11437a513882eb265efececebc6b46696e;2018-02-17 00:31:11 +0530;Halfway introducing custom validator
+2c1ef25928954daf4b241e99cb76215611d8e9e6;2018-02-17 10:52:05 +0530;Reverted validation experiments
+3089736a1458a2582821fbe2593f76d2eddf46d4;2018-02-17 10:53:28 +0530;Deleted LemonForm, LemonValidator
+77979c14cf7b8dc1b75db9ea6e32c197b29039ef;2018-02-17 10:58:08 +0530;Cleaned up validators
+b2a5594932e06d81e9e75859d37a82c3febc5913;2018-02-17 18:04:35 +0530;Added some comments
+9d43d41fbbd3a7bc5d6560ba822047cc506cd090;2018-02-17 20:08:57 +0530;JJWT out, nimbus in
+e810bee3317597330b5a3a4a9d24b004ab7c43aa;2018-02-18 09:45:06 +0530;Fixed JWE secret key, coded unit tests
+ceaa4382a5b21a0ea636defb78a839a62fef8648;2018-02-22 09:48:59 +0530;Made changes needed after introducing MockMvc testing
+0dfcdf510b2bf3bd8f498b1000ae21d4cc0463c1;2018-02-23 12:15:03 +0530;Fixed security configuration for using JwtAuthenticationProvider
+b67dda2473bc247dff22e6144da38900d6328419;2018-02-23 12:22:24 +0530;Fixed null pointer exception in LemonErrorAttributes
+c2744bc3c6aec91e614d905e8af07b5a68e7240a;2018-02-23 14:17:43 +0530;LemonUtils.login would now eraseCredentials
+3b2b2c4602158347d2ba7463c6483b5478c64a22;2018-02-23 16:37:13 +0530;Some response fixes caused by statelessness
+d96f81774d31d6ccc102c12700e019cfd381628b;2018-02-23 18:15:17 +0530;Removed verificationCode from AbstractUser in favor of using jwt token
+2b9171d9521686983ab8c417bd0519bb6cad585e;2018-02-23 18:41:14 +0530;Removed forgotPasswordCode in favor of jwt token
+bbbe4801122011f2f8ae8c9ae0ba59fae60255f4;2018-02-23 18:56:27 +0530;Removed changeEmailCode in favor of jwt tokens
+a7633b218511b5ddb2e00eacf5d233dba04c7d55;2018-02-23 19:28:31 +0530;Sending new tokens after user updates
+86b0c54a408c3d16086caa13b08b1c19614c1a82;2018-02-24 00:05:38 +0530;Exception handling enhancements
+cd7cd221f3006d5b8b7e1a55637fa911b1cf9df7;2018-02-24 13:23:27 +0530;Removed SwitchUserFilter and did some other enhancements
+c3de1b989712237770491ff5dbefcfa3de4ba519;2018-02-24 14:00:06 +0530;Removed all getOne
+48e0acd1bd3ff28b27bb545da3db904254a81613;2018-02-25 05:20:38 +0530;Moved notFoundSupplier to LemonUtils
+bfbe2041bb1af6fd9bec343ae18b2e9196b99786;2018-02-25 09:07:01 +0530;Jwt audience parsing fix, and other tweaks
+617ac633ad990edbe8749ed14643cce93dbc6848;2018-02-25 13:20:37 +0530;Coded ensureUpToDate
+e143ac3d9a193a7f9868dbed7527a48e5bee6c95;2018-02-25 17:19:39 +0530;Better urls
+569d900661adad8b88fb4367b787ef675a1c99c6;2018-02-25 18:11:11 +0530;Retype password validatior now demos multiple errors
+4df508cdc0e5d071bbc4c673da209991c8f0c986;2018-02-25 20:33:26 +0530;Fetch user related refactoring
+8c381e811cf60c4338715e8b7043a29961fe9fb8;2018-02-26 08:21:05 +0530;Added resource to string method to LemonUtils
+3e24c6c8bbb3474b0467405528e485ac13922b1d;2018-02-26 19:08:21 +0530;Moved sending mail to makeUnverified
+8401c1932a1cadc9bf0afb555725be430234cbf8;2018-02-27 07:58:17 +0530;Fixed password change
+0596519f47dc483d36bf634f15460668c335b6fd;2018-02-28 08:08:44 +0530;Multiple fixes
+42300acc233f1a6d9626fefa838735d173a50953;2018-02-28 21:40:51 +0530;Nonce related fixes
+2ba63ae030607f9bad0f87b8966cf2445cf2773c;2018-03-01 09:11:43 +0530;Some fixes for passing all the tests
+5848be18d1ac742ddfa9ad794b932983b99cd90d;2018-03-01 10:10:49 +0530;Some fixes to make credential update work
+4ef6ca8416faa20f63eb87e20e97c9086e26ea48;2018-03-02 07:10:22 +0530;Nimbus JWT iss issue - moved to lemon-iat long
+de7b22c2999babbc3aa1fe1bdbab31a58c4d7816;2018-03-02 07:18:35 +0530;Adjusted tests after introducing lemon-iat
+6df906941040c70b9a862421d6f94688a68ed6d8;2018-03-02 19:23:15 +0530;Tiny fixes
+11e70cfbb970f2c3a2e6d12b6c8675666acd5df7;2018-03-02 22:29:40 +0530;Spring boot version updated to 2.0.0.RELEASE
+fc669092a7b6494424c048376de5c60141ef6ba4;2018-03-03 12:05:34 +0530;Made the token filter a bean so that ErrorController works in case of wrong token.
+42a231e28ad9c8c023ba233675d3a5bd3ea66fea;2018-03-04 08:41:34 +0530;Added auth headers to cors allow/expose
+a71ede6bcef6a1caa5a1f3ca2f712cbd30240102;2018-03-04 18:03:49 +0530;Made SpringLemonOAuth2AuthorizationRequest cokie expire after one minute
+d64c98ab0aabc74fa1e25145dc88d6afe895b39e;2018-03-04 18:53:12 +0530;Removed nonce
+ad9ffc2fcadce4338c8ffc9688db5d0115c232db;2018-03-05 08:22:40 +0530;Introduced lemon_redirect_uri and coded cookie deletion in success/failure handlers
+2e4b15cab783b8db3a366ebb8c3b29301e9dd723;2018-03-05 12:04:40 +0530;Introduced oauth2AuthenticationSuccessUrl property
+1ee9e4415dab5d9a4f83b8b66471fc6ec7141342;2018-03-16 21:04:11 +0530;Update user endpoint would now return updated user object but loggedIn users's token
+8e1a232a15e7c5ea94587dd124aa14a8c0c56088;2018-03-16 21:24:03 +0530;Fixes in update user - hid confidential fields from response
+ffa310444672e2098a6afda523451c558a64b6bd;2018-03-16 21:51:10 +0530;Fixed update user to return SpringUser of changed user
+8ea521d6485702c2edb4bd5221437abd32149ae0;2018-03-17 17:48:02 +0530;Changed fetch-token API
+910774c6ceeb3f9c0e5910aa3229261a082091a8;2018-03-19 05:20:44 +0530;-parameter flag now default
+e34a2a9bf793fbe917795f06bfe7fe6f58b43e79;2018-03-19 06:40:23 +0530;Get context and fetch token changes
+e77e24ec3cf4cf06791351cf34b5257fcc3acc95;2018-03-19 14:19:21 +0530;JavaDoc enhancements
+6b657fab49c0c2208b8691ccf7b568839ecf09c9;2018-03-19 16:32:15 +0530;Onto JavaDoc
+ca42523f2cac95e38101c448a59facd134fdc1c5;2018-03-19 17:27:16 +0530;Configured CORS the new way
+eeb155dcbe987c3a865fd973d01ba7925f0b5482;2018-03-19 17:27:27 +0530;Configured CORS the new way
+9a11b051648509d3ab970477c2693c9fee72caf1;2018-03-23 06:50:23 +0530;Encaptulated SmtpMailSender's MessageingException in a RuntimeException
+dda3ab2ff8d56720f8684a054dc2b24586227258;2018-03-23 07:37:55 +0530;Introduced LemonMailData
+42f299b107fdde4a6cafd1a9e242d7eb82b8fc7f;2018-04-02 10:00:49 +0530;Renamed SpringUser to UserDto
+c7d13f0c7fe934c734c5bcf8f99030bca4fc3b38;2018-04-02 13:25:42 +0530;Removed stale comments; enhanced comments for JavaDocs
+0bf77032e04f1031ec119bc9b34990cf4104a5c7;2018-04-02 13:31:15 +0530;Cleaned pom.xml
+ad75153b06ac1e1843b0657c47887ed7941d1bf2;2018-04-04 10:34:04 +0530;Fixed LemonTokenAuthenticationFilter configuration
+385225b5e2bb19f34c4f0efdb7b8af9e8596b0aa;2018-04-04 11:42:04 +0530;Spring Lemon 1.0.0.M2
+c1ae35668b1a6c1a9d5612d890ce3f17fbd87af1;2018-04-04 12:39:29 +0530;Updated README
+74e232806cd3664b9ffbf338e0ed819e013324a2;2018-04-04 13:01:34 +0530;Updated README
+83f7ad1d15e82d59798fb42ed997ddce09f09dff;2018-04-04 13:01:54 +0530;Updated README
+ad5490d2befab607757e1a5f8e5c0fb6add17e4e;2018-04-04 17:12:27 +0530;Updated README
+3ecde5b719482c2cf26c7fdda5c2f6e5a41ef4d0;2018-04-04 17:22:00 +0530;Updated README
+ceda299711bf80629128a2d15d7541eaf5e0d4e5;2018-04-04 17:29:24 +0530;Updated README
+6de50ff716072db81488f14d171c7eeb809637d4;2018-04-05 18:34:23 +0530;Updated README
+d48f83799fd335eab7db915cf1ddc75078cfa76c;2018-04-05 18:36:15 +0530;Updated README
+8e3a174390e2944247d5851651715f6dba61005d;2018-04-05 18:43:54 +0530;Updated README
+be60d782b9e3cb32b6a2cff0aca592c7118726cf;2018-04-05 18:46:09 +0530;Updated README
+4982a678447e254bef130193e9fe12d0ef89b943;2018-04-05 19:02:23 +0530;Updated README
+6e0faade21da58306a3ab5dc03231eda406ce9e6;2018-04-05 19:28:34 +0530;Updated README
+24304024551e94c6fb71124d9feb527af963d626;2018-04-10 10:22:50 +0530;Updated README
+9616d187c8ebbda17880092255caf83a5a992456;2018-05-08 13:29:15 +0530;A couple of comment updates
+d64225dbcfbbac5f830004b0870b804bbc43037a;2018-05-16 22:14:00 +0530;Getting started tutorial pointed to teachable
+b20e6245aa3e1a4e00ae112dc35c0bb0e742f002;2018-05-17 18:34:07 +0530;Updated README
+c7e60010740473371a64311410aec32c52bafcd9;2018-05-21 07:00:22 +0530;Added in README link to new tutorial
+5baa885b3fa330e291f379bb1b25cc826febb848;2018-05-21 07:00:22 +0530;Added in README link to new tutorial
+b12c8c68b334df229255f6b9067517c1d310e65d;2018-05-21 07:06:38 +0530;Merge branch 'master' of https://github.com/naturalprogrammer/spring-lemon.git
+550dffce0bb92a38639d394222b41ec54cdcf461;2018-05-22 08:15:46 +0530;TokenAuthentictionFilter no more a bean
+709fb210e8d2310c6fc1db1d0a85b2d2b5728a18;2018-05-24 17:08:13 +0530;Some simplifications
+945bab000d3c68bcbd8a393a38f5de67ae2230e8;2018-05-26 16:58:08 +0530;Tiny cleanups
+e6837a04607bd5d6a216e10344738c03b0859f9c;2018-06-16 13:02:11 +0530;Made MultiErrorException look a bit cleaner
+289d01377a9277630b08d5b0cda7279d85f48bb3;2018-06-17 19:14:43 +0530;Some cleanup
+44695f206ad20dc4a8708985fc489cf81d2bd109;2018-06-18 19:37:11 +0530;Added @ResponseStatus to VersionException
+02524db1f042dcaff28ff3d2378b8995bcc4bb31;2018-06-19 07:37:52 +0530;Updated README.md
+475f4e25317ec41bf7ea5bea9479459240107877;2018-06-19 07:54:03 +0530;Replaced - with — in README.md
+d18a3044767c9cd269add4c0336570fd4b205733;2018-07-07 17:57:02 +0530;Made multi-module - first commit
+9c9d40768dfb57e6e342fc5a166b29d42bb02850;2018-07-07 18:12:16 +0530;Testing jitpack with multi-module setting
+572932aa17fbd360cacf7acfaf9b3597f110c127;2018-07-08 06:43:19 +0530;Mid way onto multi-module; committing for backup
+f1f6b346ea83268452468719470b5617b432c7f5;2018-07-08 12:24:52 +0530;Multiple module working
+3c02f621500361421b4af56c62f0af08f308b876;2018-07-08 13:39:57 +0530;Created mongo related modules
+c0b9892f4562641d81acbf13a5e9387f7c45d49b;2018-07-09 08:32:19 +0530;Midway driving fast
+3083d34577298b393c5a96ce14dd9548f29f228a;2018-07-09 08:36:36 +0530;Midway driving fast
+22aedc45fdc1033bb06d7e10ed9bf373911e8f23;2018-07-09 08:45:11 +0530;Renamed from mongo to reactive
+844dceb568a6a7dec53a22bfe3a8c103b9a4628c;2018-07-09 10:34:47 +0530;Reactive exception handling taken care
+d6d0b0c857267f553a8912a39a77ec7f3be66402;2018-07-09 12:43:48 +0530;Reactive form login working
+d744836b4d7a3897430acd37e3245af002eaba27;2018-07-09 18:05:16 +0530;Moved security DTOs to commons; used lombok on those
+35314e91ac22efb4a1c39fa305739ae16819a2b1;2018-07-09 18:05:16 +0530;Moved security DTOs to commons; used lombok on those
+c6dbbf62c19b562804ab8b89430400019e0c456c;2018-07-09 18:09:17 +0530;Merge branch 'multi-module' of https://github.com/naturalprogrammer/spring-lemon.git into multi-module
+31d75c126eb7aa297132a288aa57bf2576d87f80;2018-07-09 19:34:22 +0530;Coded LemonReactiveUserDetailsService
+c63be56beac6ad54ae9a780941afaf7e568e391b;2018-07-10 12:56:41 +0530;Saving (signup) and login working
+8e814b3cfdb18f9de5debe93a86b5bfa8c22ee38;2018-07-10 13:26:40 +0530;Moved JwtService and LemonProperties up to common module
+b20f620f0fc95c3ae6ac607b71366d07bc1f36ab;2018-07-10 17:27:50 +0530;JWT working
+d16cd2b3f86a1612d61542ddd93404998ef9e3b9;2018-07-10 17:35:53 +0530;Moved mail package up to commons
+8b69290be8411144e4823cc7e822e2991c16b4ab;2018-07-10 19:16:18 +0530;A working version of getContext
+71495d119bf68fc0f08a5aaadd83c54a10cb5623;2018-07-10 19:41:13 +0530;A better getContext
+efe4808f62502a2f48e3237015c2a4e99cd885bf;2018-07-12 12:06:44 +0530;Reactive signup started working
+1ada8fefb0a95c12bd7f637ad3c9ce6720904fa2;2018-07-12 16:05:15 +0530;Coded UniqueEmsil validator
+e51c3237de82e6e2a2376b01e065f182af17cf9a;2018-07-12 16:40:56 +0530;Validation group and JsonView working
+49ff61eeee2306f271f2017f3bc7b6ef4c2604f6;2018-07-12 17:12:06 +0530;Coded WebExchangeBindExceptionHandler
+c58e00f322b131a8756a61ed7acc916d882c9070;2018-07-12 19:32:46 +0530;Midway Reactive JWT Authentication
+c2677c818286d5c7f568739de17f36aa8d193fe9;2018-07-13 08:26:58 +0530;Added JWT token authentication to reactive project
+b6c59087cc73672a2daaac3b6e75485d6a4be9ef;2018-07-13 18:59:38 +0530;Method security (Permission evaluator) etc.
+273f254806c9e067e40c91c94e39bf9444f6cdab;2018-07-16 09:18:14 +0530;Coded up to reactive update user
+514640ab4c010648af1cae38d157179219a7b337;2018-07-16 14:00:06 +0530;Fixed #21: validating updated user
+e19e5a51c3fd929cb164cbc6927a25593ef59d3e;2018-07-17 07:58:12 +0530;Reactive change password coded
+d4794898befe385d550cfa6148e26c29ec2cb2c0;2018-07-17 08:12:52 +0530;Reactive requestEmailChange coded
+7a6c5f4d78a7d73fd7582dea2d34aafece545a08;2018-07-17 09:35:12 +0530;Coded reactive change email feature
+8e8bcf2fcb6440a0bb2d54ea8a4ca95eb10ee5c3;2018-07-17 11:32:59 +0530;Fixed all reactive @RequestParam
+678ea00bb03e9c076f50d832dffc5949be7f50c5;2018-07-17 11:49:48 +0530;Coded reactive fetch-new-auth-token
+319cc02c9d4a75deac95c4c8100942646ab85705;2018-07-17 11:56:27 +0530;Made login page overrideable
+58e1f4d915d03dc3c1206ba79445cc06005ff7a7;2018-07-17 11:56:58 +0530;made login page overrideable
+90dd071ec0c44fd995714cbfadf3ab2b0cb6e1b1;2018-07-17 13:26:26 +0530;Added the fixed AngularJS project
+27bb2be5d99d23b90aef9f86a0aecc812eff9363;2018-07-17 16:07:04 +0530;Fixed test cases
+67fd9986adf053d9b9080c1e47c5f774574420d6;2018-07-17 20:43:32 +0530;Updated README.md and Postman collection
+f4af2c429584c601de7583398407ff47baff78bd;2018-07-18 07:21:49 +0530;Removed reference to JavaDoc
+e859b2c8c38f2057bf57b9feebad4e884b579a92;2018-07-18 07:30:08 +0530;Fixed links
+6f3aa1655d110f5260585730b1aa6e1093e4f6b4;2018-07-18 11:27:07 +0530;Updated README
+cec24f27efa383d72d94bdc64e7f057d5d8eee59;2018-07-18 11:38:10 +0530;Updated README
+44545cb338735e2b57b93d647e13502ad109f79f;2018-07-20 21:19:39 +0530;Beginning to code reactive tests
+a4a6c95e531bd43adf099116668f968409649f28;2018-07-20 22:13:27 +0530;First reactive test case passing
+2c0f5fc128247172f1adc7440016b7946eba0d1e;2018-07-21 08:56:23 +0530;Refined login controller code for credential erasing
+e9811ca37ec42542fefe558d2c05313dbcd5f5cc;2018-07-21 11:21:24 +0530;Changed JWT errors from 403 to 401
+41121990dfa4bc96f7c6790638d799927ff4377a;2018-07-21 11:42:55 +0530;Login tests coded
+24d24376ea450e2b757d2ebeb8dea37abfe6e82f;2018-07-21 16:06:06 +0530;Reactive BasicTests coded
+c71dca9c979d4a0195f59c33a15a06e154dcf381;2018-07-21 16:49:39 +0530;Coded reactive ChangeEmailTests
+ad820de640f4ed419ba6d8432a5c3c220dbbbb8f;2018-07-21 21:50:04 +0530;Coded Reactive ChangePasswordTests
+31948deb3a9081ef69f0b3343e2a1bf0b923e8b6;2018-07-22 10:13:06 +0530;Refactored getting current user
+89711f16e7ee66336032778bbb6d43a346f99a36;2018-07-22 13:23:43 +0530;Coded reactive FetchNewTokenTests
+9d57f6f2a6487f20b445e89c8a468ac9139d44f2;2018-07-22 18:27:21 +0530;RequestEmailChangeTests coded for WebFlux
+b64208f81aedc0c497e80fe0c65c4b1b3189b5fc;2018-07-22 21:47:33 +0530;Coded reactive SignupTests
+44247fb39de8a5ea4a37c70e99950f12a0269ba3;2018-07-23 09:45:40 +0530;Onto reactive UpdateUserTests
+fc4a711857e713e8b720a2f97e1001eb80f1c6b6;2018-07-23 13:30:19 +0530;Coded reactive update user tests
+97188d3be8fec643dfa5ea3031a0fd7407021963;2018-07-23 15:42:56 +0530;Coded reactive verification tests
+250f75032fd409c35e0e8bae3d82fab4789a5653;2018-07-23 17:51:20 +0530;Added captcha to reactive project, etc.
+c0ebb4e50f3733125d662bf752bed45d81c9cb02;2018-07-23 18:16:16 +0530;Coded #20: Replace all LecUtils.TOKEN_REQUEST_HEADER_NAME with HttpHeaders.AUTHORIZATION
+40b34bc8879c98fcd4cfc9b3bee429c650fffb4d;2018-07-23 18:43:08 +0530;Fixed #19: Implemented lombok wherever needed
+ed712d467e49ca05baff76876c83d7ad123ca704;2018-07-23 20:17:49 +0530;Fixed #13: Rename AuthenticationSuccessHandler to LemonAuthenticationSuccessHandler
+ca32ddf6e4fa1bae3d06b6f300fc9d1455c49df2;2018-07-23 20:31:16 +0530;Organized imports
+33203ed4a516a462e9614640a9305a254b77a8b6;2018-07-26 11:18:08 +0530;Updated README
+9343d9dfdfbe94047b2237ec05bae276966c0910;2018-07-26 11:21:36 +0530;Updated README
+63929189754c39bb847e72e019762d5051c15188;2018-07-26 11:27:34 +0530;Updated README
+4a4a356884ee56d3eebdfd69994be150cb6b90c3;2018-07-26 11:29:09 +0530;Updated README
+f5c7563d31a4bae0ea91600e42ed8fbd7850937f;2018-08-01 19:57:52 +0530;Updated README
+39baefe021061046fbf00ba28feeb2b550b2a50a;2018-08-02 20:44:20 +0530;Starting 1.0.0.M6
+93b6be088e6be5eb14940f3e5e95f237ec883c1f;2018-08-04 19:59:14 +0530;Tiny enhancements
+c8d6741d21810122d2a34c33db2e4d566b636374;2018-08-04 20:49:32 +0530;Added USER_CLAIM in JwtService
+0d68266de2e56720b21e51a61f7b7aede77e83d5;2018-08-05 09:29:04 +0530;Better exception cause
+f0beec26518bd44f46ff29b687645609514bfacd;2018-08-05 10:26:43 +0530;Better exception name
+0b69f99e569dfd2c1f2329cbff9f08f03323f16d;2018-08-05 13:07:20 +0530;Moved serialize and deserialize to LecUtils
+50d9ae1ead784d2cabc30a92bac9fe037e7f7615;2018-08-05 13:58:50 +0530;Token filter enhancements
+a35dfc156059cc5a00d3cbe64ab795b9fd72a8f4;2018-08-05 17:57:28 +0530;Removed generic param from UserDto
+558744582b4bc29ae5496cfaa03f2d54d24a797f;2018-08-05 19:14:52 +0530;Added reactive end-point for fetching full token
+ab45621d17408773a1a8f27b5e82318299a8acac;2018-08-05 21:10:29 +0530;Created spring-lemon-commons-reactive module
+83f65dc403b727b224da29bcf20802a55d5de437;2018-08-06 12:47:32 +0530;Merged ValidationMessages into messages; full token now not allowed for fetching another full token
+6fa84e14a746dfbf150291b9f98211f1c3337041;2018-08-10 17:34:54 +0530;Updated README
+0dea96923a9a52c9d5bf7211796534f0fa463542;2018-08-11 06:06:09 +0530;Updated README
+0451e6c5719ab3dcea0de1792671912a6d475aaf;2018-08-11 07:22:58 +0530;Updated README
+b7fbaa338ecdc1439e56d6fd80e309aff81bc128;2018-08-12 17:47:43 +0530;Isolated authorizeExchnage so that it can be overridden
+60b6896e3e30dbadb63f778218e6298e06e2611a;2018-08-13 12:48:13 +0530;Updated README
+f69d1c81510e1263ea5f0ce886f420b2fce994be;2018-08-13 12:51:02 +0530;Merge branch 'master' into 1.0
+ee461b867b3c913809be7090a5f44d44f88e4c02;2018-08-31 11:57:27 +0530;Lemon Demo JPA now uses PostgreSQL instead of MySQL
+d07bdb00bf8c3d60c0b2c78e6fc48f5ac2ebcaff;2018-09-24 21:53:00 +0530;Midway creating the spring-lemon-commons-web module
+6117c0d781035d5b759cf3703a3979322a61a57f;2018-09-27 13:53:28 +0530;Segregated LemonSecurityConfig
+6f10a06334d60cfa9fec8f0e804b9f4ff1d5ecd0;2018-09-27 16:51:14 +0530;spring-lemon-commons-web seems to be working
+a21d8a0fc46c1b691a331dd7d50a69184be0a42b;2018-09-27 18:26:49 +0530;Moved currentUser() up
+0451cf4191656c9d6e893533994b363a9436b876;2018-09-29 07:33:07 +0530;Added a couple of modules
+4210511d97bb2751f4fb0b419468db31d674670e;2018-09-29 10:23:54 +0530;Segregated the code properly into the newly added code
+0cb91859c349be3a6b911688c389ea77bb1bc98c;2018-09-29 17:54:32 +0530;Fixed date data types
+2b4e97b58f74b444ff80c7d4c3b3cf05bd509c7f;2018-09-30 20:03:05 +0530;Changed token authentication as discussed in issue #24
+bdad5d67b071e9a748b42f6ba717ffe5fcdef3e7;2018-10-01 22:08:30 +0530;Added end-point for full token, etc.
+9e4122d28bb61ecab58f11042e91e084ac39f490;2018-10-02 11:34:28 +0530;Added test case for not returning password to front-end
+bcdbee1a000c3589521980982ce9d14a6e1e1228;2018-10-13 14:31:56 +0530;Updated README
+a754764864f43e0743c4cc0bba583e9e9894115f;2018-10-13 19:40:59 +0530;Updated README
+beec6568537d3011a586fe80697078a228ea3ec1;2018-10-13 19:58:53 +0530;Moving towards 1.0.0.M8
+f55db64f8a7856ae81a4092292197cce554080cf;2018-10-20 13:16:19 +0530;Changed the exception handler map key to class
+df848c38da2f6981ed458bbadd9f7f0fa129b981;2018-10-20 13:41:18 +0530;Coded ExceptionCodeMaker
+836f8b2daba532a909cfd1a2e742d2213979783a;2018-10-20 20:43:51 +0530;Renamed "exception" to "exceptionId" in error response
+8c45869e756930a82a73482f15951a9f089ce5cb;2018-10-21 09:51:29 +0530;Fixed objectName not getting prefixed before fieldname in ExplicitConstraintViolationException
+499a5f0e2708dd7062b7b17b9afe94f73fac8aec;2018-10-21 16:47:52 +0530;Some improvements to ExplicitConstraintViolationException
+063fe2dba9d94d2de1e49377d2398890942a7626;2018-10-21 18:56:32 +0530;Customized supplying exceptionId
+5b950bb3e1f957cf8fdceba9ab2f3d31bcf8db6c;2018-10-21 19:13:01 +0530;Replaced ExplicitConstraintViolationException with MultiErrorException
+8ded0b90cc46b82301a09b697018219475103945;2018-10-21 19:44:15 +0530;Enhanced manual bean validation exceptionId
+5e28c1c72b727d0121cd947adf057006225a6fdb;2018-10-22 22:00:49 +0530;Fixed login failure handler to have Simple... rather than OAuth2...
+bca5a46b5652c8dfb2ed6666fee99f951ef13c90;2018-10-22 22:16:26 +0530;ExceptionIdMaker now takes care of null exceptions
+0ab8eafeb2349094c21acd918d566d33b1c8b80f;2018-10-23 12:14:05 +0530;Supported seamless integration of custom and bean validation
+3fd2fd31ecf8c6317012ff57a25379ddd113152b;2018-10-25 08:33:00 +0530;Updated README
+272884b8dbeac0332ec533b00c8cea80ef15c9ae;2018-11-11 10:38:45 +0530;Updated version to 1.0.0.M9
+6efee4389cade60e42865ee40530f88ef6144e9d;2018-11-11 19:31:12 +0530;Added AuthTokenService, ExternalTokenService
+203dcb3e3c53a64b7bd331a48f2c6d568dfc8555;2018-11-15 22:46:50 +0530;Added JWS Service
+aad66e37de912daa3a3d7340e82afe2b67d6e6f0;2018-11-15 22:58:01 +0530;Fixed JWT unit tests
+63bc56b44b51e011bb33ed668f1b7283386d71b0;2018-11-16 13:00:13 +0530;Renamed token services
+a624d7f8d193a0c80fe5b1e82d52e2dd4b549b63;2018-11-17 13:55:10 +0530;Just trimmed some spaces
+6076971348a5d1c2c53a29d8d7cffe9dfc0c1f17;2018-11-17 20:01:56 +0530;Changed LemonService.getOAuth2AccountVerified to return flse in case of any errors
+bcc9e303a46214ec4d81c09b6980df1deebfe5cf;2018-11-19 12:44:57 +0530;Moved ensureCorrectVersion from LemonUtils to LecjUtils
+c4ac9e7e010b7a9c23754f69a16eae43900ff60c;2018-11-19 22:03:01 +0530;Onto Spring Boot 2.1.0 update
+751e7d1911bbb0e0173b18eaa2bd3de4df19ecb3;2018-12-02 13:31:56 +0530;Improved replacing RestOperations in LemonOAuth2UserService
+09399662670d337abf26a4d1ecc92b0fdd4ce872;2018-12-02 17:30:27 +0530;Updated CORS configurations
+c67ffc5bf3a7316db8439c245bb86d56fb0ca00b;2018-12-02 17:54:40 +0530;Updated HttpCookieOAuth2AuthorizationRequestRepository to use the new removeAuthorizationRequest(request, response)
+e6ecdc20c525d5c4df8fe7b181ace6c9b4f70cc7;2018-12-02 18:06:39 +0530;Replaced the use of deprecated method with setServerAuthenticationConverter
+ee017adc6c47446bcb9b721de43bdca5dd8363b0;2018-12-02 21:42:00 +0530;Updated Boot 2.1.0 to 2.1.1
+ca2e567e83fb822f30f5f7ca26bd61f4e222397e;2018-12-04 18:02:14 +0530;Started adding OAuth2Login to reactive project
+e71fa3ce4d761b490f10efbffa768fc78a77fa9d;2018-12-15 19:36:13 +0530;Getting prepared for 1.0.0.RC2
+4dbe78ae92cf5d722508b069262f3a0e93c2bafe;2019-02-03 22:56:40 +0530;Fixed lemon-redirect_uri issue (#29)

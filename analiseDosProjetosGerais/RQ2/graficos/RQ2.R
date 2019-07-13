@@ -1,6 +1,7 @@
 library(effsize)
 library(ggplot2)
 library(forcats)
+require(scales)
 
 all=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ2/lifetime/diferencas.csv", sep=",",header=T)
 #----------  RQ2
@@ -65,48 +66,22 @@ p
 ggsave("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ2/graficos/springVersions.pdf", width = 4.5, height = 4.5)
 
 
-
-
-################
-
-p1 <- ggplot(all, aes(factor(all$ecosystem,levels = c("Android","Spring")), all$Commit))
-p1 <- p1 + geom_violin(width=1, trim=TRUE, fill="#87CEFA") + scale_y_log10()
-p1 <- p1 + geom_boxplot(width=0.7,alpha=0.7) + ggtitle("Commits") + xlab("Code Samples") + ylab("Nº of commits (log scale)")
-#[3,]   24  117
-p1 <- p1 + annotate("text", x = 1, y = 18, label = "24", size = 6) + annotate("text", x = 2, y = 145, label = "117", size = 6) 
-p1 + theme(plot.title=element_text(size=20, face = "bold") ,axis.title=element_text(size=18),axis.text=element_text(size=18))
-ggsave("/home/facom/Documents/GIT/Samples/figuras/commits.pdf", width = 4.5, height = 4.5)
+####### Delay to update
 
 
 
-p1 <- ggplot(all, aes(factor(all$ecosystem,levels = c("Android","Spring")), all$Contributor))
-p1 <- p1 + geom_violin(width=1, trim=TRUE, fill="#87CEFA") + scale_y_log10()
-p1 <- p1 + geom_boxplot(width=0.7,alpha=0.7) + ggtitle("Contributors") + xlab("Code Samples") + ylab("Nº of contributors (log scale)")
-#[3,]    1    9
-p1 <- p1 + annotate("text", x = 1, y = 1.2, label = "1", size = 6) + annotate("text", x = 2, y = 10, label = "9", size = 6) 
-p1 + theme(plot.title=element_text(size=20,face="bold") ,axis.title=element_text(size=18),axis.text=element_text(size=18))
-ggsave("/home/facom/Documents/GIT/Samples/figuras/contributors.pdf", width = 4.5, height = 4.5)
+all=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ2/delay/delay.csv", sep=",",header=T)
 
-p1 <- ggplot(all, aes(factor(all$ecosystem,levels = c("Android","Spring")), all$LifetimePerCont))
-p1 <- p1 + geom_violin(width=1, trim=TRUE, fill="#87CEFA") + scale_y_log10()
-p1 <- p1 + geom_boxplot(width=0.7,alpha=0.7) + ggtitle("Lifetime per contributor") + xlab("Code Samples") + ylab("Frequency of contributors (log scale)")
-#[3,] 1027  201
-p1 <- p1 + annotate("text", x = 1, y = 1170, label = "1027", size = 6) + annotate("text", x = 2, y = 225, label = "201", size = 6) 
-p1 + theme(plot.title=element_text(size=20,face="bold") ,axis.title=element_text(size=18),axis.text=element_text(size=18))
-ggsave("/home/facom/Documents/GIT/Samples/figuras/lifetime_contributors.pdf", width = 4.5, height = 4.5)
+p1 <- ggplot(all, aes(factor(all$framework, levels = c("Android", "Spring")), all$delay+0.1)) + 
+  geom_violin(width=1, trim=TRUE,fill="#87CEFA") +
+  scale_y_log10(labels = comma) +
+  geom_boxplot(width=0.6,alpha=0.6) + ggtitle("Samples delay to update") + xlab("General Projects") + ylab("Delay in days (log scale)") +
+  annotate("text", x = 1, y = 100, label = "138", size = 6) + annotate("text", x = 2, y = 7, label = "9", size = 6) +
+  theme(plot.title=element_text(size=16, face = "bold"), axis.title=element_text(size=18),axis.text=element_text(size=18))
 
-p1 <- ggplot(all, aes(factor(all$ecosystem,levels = c("Android","Spring")), all$BC+1))
-p1 <- p1 + geom_violin(width=1, trim=TRUE, fill="#87CEFA") + scale_y_log10()
-p1 <- p1 + geom_boxplot(width=0.7,alpha=0.7) + ggtitle("Breaking Changes") + xlab("Code Samples") + ylab("Breaking Changes (log scale)")
-#[3,]    1  180
-p1 <- p1 + annotate("text", x = 1, y = 1.5, label = "1", size = 6) + annotate("text", x = 2, y = 260, label = "180", size = 6)
-p1 + theme(plot.title=element_text(size=20,face="bold") ,axis.title=element_text(size=18),axis.text=element_text(size=18))
-ggsave("/home/facom/Documents/GIT/Samples/figuras/BC.pdf", width = 4.5, height = 4.5)
+#mediana do android 138
+#mediana do spring 9
 
-p1 <- ggplot(all, aes(factor(all$ecosystem,levels = c("Android","Spring")), all$relativeBC))
-p1 <- p1 + geom_violin(width=1, trim=TRUE, fill="#87CEFA") #+ scale_y_log10()
-p1 <- p1 + geom_boxplot(width=0.7,alpha=0.7) + ggtitle("Relative Breaking Changes") + xlab("Code Samples") + ylab("Percent of BC (log scale)")
-#[3,]  0.00   40
-p1 <- p1 + annotate("text", x = 1, y = 4, label = "0", size = 6) + annotate("text", x = 2, y = 44, label = "40", size = 6)
-p1 + theme(plot.title=element_text(size=20,face="bold") ,axis.title=element_text(size=18),axis.text=element_text(size=18))
-ggsave("/home/facom/Documents/GIT/Samples/figuras/relativeBC.pdf", width = 4.5, height = 4.5)
+p1
+
+ggsave("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ2/graficos/delay_samples2.pdf", width = 4.5, height = 4.5)
