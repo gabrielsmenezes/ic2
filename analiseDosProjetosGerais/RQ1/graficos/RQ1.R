@@ -2,7 +2,7 @@ library(effsize)
 library(ggplot2)
 library(forcats)
 
-all=read.csv("/home/gabriel/Documentos/ic2/extraindoMetricasComUnderstand/metricas.csv", sep=",",header=T)
+all=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ1/extraindoMetricasComUnderstand/metricas.csv", sep=",",header=T)
 
 # -------- Size
 
