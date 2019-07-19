@@ -1,0 +1,58 @@
+msnbc-devices/ExoMedia;98cbcad;Merge pull request #9 from msnbc-devices/exoplayer-update
+msnbc-devices/ExoMedia;904419c;Update to Exoplayer 1.5.16 to fix live streaming issues
+M	library/build.gradle
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/HlsRenderBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/SmoothStreamRenderBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/exoplayer/EMExoPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/listener/Id3MetadataListener.java
+
+msnbc-devices/ExoMedia;b952448;Merge pull request #8 from msnbc-devices/rebuffer
+msnbc-devices/ExoMedia;f6973fb;Shorten rebuffer length to 0
+M	library/src/main/java/com/devbrackets/android/exomedia/exoplayer/EMExoPlayer.java
+
+msnbc-devices/ExoMedia;ee1be39;Merge pull request #7 from msnbc-devices/john
+msnbc-devices/ExoMedia;3cd02ee;Add support for rendering captions injected in HLS stream
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/HlsRenderBuilder.java
+
+msnbc-devices/ExoMedia;89e6d11;Merge pull request #6 from msnbc-devices/john
+msnbc-devices/ExoMedia;b6b59f5;Fix a possible crash from the mediaplayer impl NEWSDEVICE-2550
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+
+msnbc-devices/ExoMedia;72be874;Merge pull request #5 from msnbc-devices/john/force-videoview
+msnbc-devices/ExoMedia;77e5bcb;Add debug flag for forcing videoview NEWSDEVICE-1981
+M	library/src/main/java/com/devbrackets/android/exomedia/util/EMCompatUtil.java
+
+msnbc-devices/ExoMedia;6ed14d5;Merge pull request #4 from msnbc-devices/john
+msnbc-devices/ExoMedia;1d3858e;Merge branch 'master' of https://github.com/brianwernick/ExoMedia into john
+msnbc-devices/ExoMedia;ff65a5e;Merge pull request #3 from msnbc-devices/john
+msnbc-devices/ExoMedia;54cd654;Properly make use of the default media type fallback NEWSDEVICE-501
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+
+msnbc-devices/ExoMedia;253209e;Allow cross-protocol redirects in all renderers NEWSDEVICE-501
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/DashRenderBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/HlsRenderBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/RenderBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/SmoothStreamRenderBuilder.java
+
+msnbc-devices/ExoMedia;10e7ed3;Merge pull request #2 from msnbc-devices/john-nbcnews-branch
+msnbc-devices/ExoMedia;3dc99fc;Fine-tune Exoplayer compat NEWSDEVICE-1440
+M	library/src/main/java/com/devbrackets/android/exomedia/EMAudioPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+A	library/src/main/java/com/devbrackets/android/exomedia/util/EMCompatUtil.java
+M	library/src/main/java/com/devbrackets/android/exomedia/util/EMDeviceUtil.java
+
+msnbc-devices/ExoMedia;b28d602;Expose captions uri and added some null checks NEWSDEVICE-1440
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+
+msnbc-devices/ExoMedia;1bca301;Merge pull request #1 from msnbc-devices/john-nbcnews-branch
+msnbc-devices/ExoMedia;52f7770;Provide support for external captions file NEWSDEVICE-1440
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/DashRenderBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/HlsRenderBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/RenderBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/SmoothStreamRenderBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/service/EMPlaylistService.java
+A	library/src/main/java/com/devbrackets/android/exomedia/type/MediaMimeType.java
+
+msnbc-devices/ExoMedia;9dfb62f;Remove Amazon CTS restriction
+M	library/src/main/java/com/devbrackets/android/exomedia/util/EMDeviceUtil.java

@@ -1,0 +1,3 @@
+fitzoh/spring-security-oauth;2a423e45;Return a more appropriate exception when extraction fails. Currently in the OAuth2ErrorHandler if the extractor encounters an HttpMessageConversionException, that HttpMessageConversionException is thrown and no status code is propogated to the user.  This update catches and ignores HttpMessageConversionExceptions and proceeds with error handling, resulting in the user obtaining a more useful exception.
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/client/http/OAuth2ErrorHandler.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/client/http/OAuth2ErrorHandlerTests.java

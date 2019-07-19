@@ -1,0 +1,28 @@
+vmaleze/java-spring-cloud;48c7db8;Added tests on MongoClient missing dependency
+M	opentracing-spring-cloud-starter/src/test/java/io/opentracing/contrib/spring/cloud/NoDepsTest.java
+
+vmaleze/java-spring-cloud;d8f8b0d;Merge branch 'master' into master
+vmaleze/java-spring-cloud;71e58ab;Fixed indentation and missing copyright header
+M	opentracing-spring-cloud/src/test/java/io/opentracing/contrib/spring/cloud/mongo/MongoTracingAutoConfigurationTest.java
+
+vmaleze/java-spring-cloud;d8c4597;Added tests on classpath profile to make sure mongoClient is not on the classpath if not wanted
+M	opentracing-spring-cloud/src/main/java/io/opentracing/contrib/spring/cloud/mongo/MongoTracingAutoConfiguration.java
+A	opentracing-spring-cloud/src/test/java/io/opentracing/contrib/spring/cloud/mongo/MongoTracingAutoConfigurationTest.java
+
+vmaleze/java-spring-cloud;33d1dc0;Merge branch 'master' into master
+vmaleze/java-spring-cloud;60d04df;Activating MongoTracingConfiguration if a MongoClient class is present
+M	opentracing-spring-cloud/src/main/java/io/opentracing/contrib/spring/cloud/mongo/MongoTracingAutoConfiguration.java
+
+vmaleze/java-spring-cloud;7774a44;Removed all transitive dependencies from the opentracing-mongo-driver
+M	opentracing-spring-cloud/pom.xml
+
+vmaleze/java-spring-cloud;38caa5f;Added mongo info
+M	README.md
+
+vmaleze/java-spring-cloud;bdd80cc;Added Mongo Tracing
+M	opentracing-spring-cloud/pom.xml
+A	opentracing-spring-cloud/src/main/java/io/opentracing/contrib/spring/cloud/mongo/MongoTracingAutoConfiguration.java
+M	opentracing-spring-cloud/src/main/resources/META-INF/additional-spring-configuration-metadata.json
+M	opentracing-spring-cloud/src/main/resources/META-INF/spring.factories
+A	opentracing-spring-cloud/src/test/java/io/opentracing/contrib/spring/cloud/mongo/MongoTracingTest.java
+M	pom.xml

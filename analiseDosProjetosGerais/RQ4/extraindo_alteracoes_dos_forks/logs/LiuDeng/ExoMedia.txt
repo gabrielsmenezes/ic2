@@ -1,0 +1,85 @@
+LiuDeng/ExoMedia;0d47e15;全屏自动跳转之前播放进度
+LiuDeng/ExoMedia;657bfb0;no header
+M	library/src/main/java/com/google/android/exoplayer/ext/okhttp/OkHttpDataSource.java
+
+LiuDeng/ExoMedia;60ea2d1;出错end callback 隐藏loading
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+
+LiuDeng/ExoMedia;2dad505;解决全屏闪退问题
+M	library/src/main/java/com/devbrackets/android/exomedia/EMFullScreenVideoPlayerActivity.java
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/exoplayer/EMExoPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/widget/DefaultControls.java
+
+LiuDeng/ExoMedia;54e68ac;修复video全屏闪退的bug
+M	library/src/main/java/com/devbrackets/android/exomedia/EMFullScreenVideoPlayerActivity.java
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+M	library/src/main/res/layout-v16/fullscreen_video_player_activity.xml
+
+LiuDeng/ExoMedia;7d5b58f;手动释放video view
+M	library/src/main/java/com/devbrackets/android/exomedia/EMFullScreenVideoPlayerActivity.java
+
+LiuDeng/ExoMedia;c9c60b5;demo的修改
+M	demo/src/main/java/com/devbrackets/android/exomediademo/App.java
+M	demo/src/main/java/com/devbrackets/android/exomediademo/ui/activity/StartupActivity.java
+M	demo/src/main/java/com/devbrackets/android/exomediademo/ui/activity/VideoPlayerActivity.java
+
+LiuDeng/ExoMedia;62d4c51;增加重播背景颜色
+M	library/src/main/res/layout/exomedia_exo_view_layout.xml
+
+LiuDeng/ExoMedia;8fbfb42;重播和退出全屏
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/widget/DefaultControls.java
+M	library/src/main/res/drawable/exomedia_ic_exit_fullscreen.xml
+A	library/src/main/res/drawable/exomedia_ic_replay.xml
+M	library/src/main/res/layout/exomedia_exo_view_layout.xml
+A	library/src/main/res/values/strings.xml
+
+LiuDeng/ExoMedia;9dd1985;full screnn
+M	library/src/main/AndroidManifest.xml
+M	library/src/main/java/com/devbrackets/android/exomedia/EMFullScreenVideoPlayerActivity.java
+M	library/src/main/res/values/style.xml
+
+LiuDeng/ExoMedia;c612b05;替换okhttp
+M	library/build.gradle
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/ExtractorRendererBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/builder/HlsRenderBuilder.java
+A	library/src/main/java/com/google/android/exoplayer/ext/okhttp/OkHttpDataSource.java
+A	library/src/main/java/com/google/android/exoplayer/ext/okhttp/OkUriDataSource.java
+
+LiuDeng/ExoMedia;14023ab;1.不退出全屏 2.设置是否是全屏模式
+M	library/src/main/java/com/devbrackets/android/exomedia/EMFullScreenVideoPlayerActivity.java
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+
+LiuDeng/ExoMedia;47f0b1a;add
+A	library/src/main/res/drawable/exomedia_ic__fullscreen.xml
+
+LiuDeng/ExoMedia;e4d43b4;back up full screen and un fullScreenBtn
+M	library/src/main/java/com/devbrackets/android/exomedia/EMFullScreenVideoPlayerActivity.java
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+A	library/src/main/java/com/devbrackets/android/exomedia/event/EMMediaFullscreenEvent.java
+M	library/src/main/java/com/devbrackets/android/exomedia/listener/EMVideoViewControlsCallback.java
+M	library/src/main/java/com/devbrackets/android/exomedia/widget/DefaultControls.java
+A	library/src/main/res/drawable/exomedia_ic_exit_fullscreen.xml
+M	library/src/main/res/layout/exomedia_video_controls_overlay.xml
+
+LiuDeng/ExoMedia;cc2134c;add copy bat
+A	library/copy.bat
+
+LiuDeng/ExoMedia;b418354;memory leak?
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+
+LiuDeng/ExoMedia;e9b4a14;将FullScreenMedia转移到Libary中
+M	.gitignore
+M	demo/src/main/AndroidManifest.xml
+M	demo/src/main/java/com/devbrackets/android/exomediademo/ui/activity/StartupActivity.java
+M	demo/src/main/java/com/devbrackets/android/exomediademo/ui/activity/VideoPlayerActivity.java
+
+LiuDeng/ExoMedia;2d182e1;增加快速启动的fullscreen activity
+M	library/src/main/AndroidManifest.xml
+R076	demo/src/main/java/com/devbrackets/android/exomediademo/ui/activity/FullScreenVideoPlayerActivity.java	library/src/main/java/com/devbrackets/android/exomedia/EMFullScreenVideoPlayerActivity.java
+A	library/src/main/res/layout-v16/fullscreen_video_player_activity.xml
+
+LiuDeng/ExoMedia;ce105b5;支持HLS以外的自检查
+M	library/src/main/java/com/devbrackets/android/exomedia/EMVideoView.java
+A	library/src/main/java/com/devbrackets/android/exomedia/builder/ExtractorRendererBuilder.java

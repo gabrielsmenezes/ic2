@@ -1,0 +1,292 @@
+zhaow7/easymock;5a26713;Upgrade slf4j version since it is now a OSGi component
+M	easymock-integration/pom.xml
+M	easymock-integration/src/test/resources/org/springframework/osgi/test/internal/boot-bundles.properties
+
+zhaow7/easymock;1d2ee03;Upgrade powermock to 1.5.4
+M	easymock-integration/pom.xml
+
+zhaow7/easymock;401e579;Upgrade copyrights to 2014
+M	easymock-classextension/src/main/java/org/easymock/classextension/ConstructorArgs.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/EasyMock.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/EasyMockSupport.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/IMockBuilder.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/IMocksControl.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/internal/MockBuilder.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/internal/MocksClassControl.java
+M	easymock-classextension/src/samples/java/org/easymock/classextension/samples/BasicClassMockTest.java
+M	easymock-classextension/src/samples/java/org/easymock/classextension/samples/ConstructorCalledMockTest.java
+M	easymock-classextension/src/samples/java/org/easymock/classextension/samples/PartialClassMockTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests/MockingTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/ClassExtensionHelperTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/ClassProxyFactoryTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/ConstructorArgsTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/EasyMockClassExtensionTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/EasyMockSupportTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/MockBuilderTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/MockedExceptionTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/MocksControlTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/NopInvocationHandler.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/PartialMockingTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/SerializationTest.java
+M	easymock-integration/src/test/java/org/easymock/itests/InterfaceOnlyTest.java
+M	easymock-integration/src/test/java/org/easymock/itests/OsgiBaseTest.java
+M	easymock-integration/src/test/java/org/easymock/itests/OsgiClassExtensionTest.java
+M	easymock-integration/src/test/java/org/easymock/itests/OsgiTest.java
+M	easymock-integration/src/test/java/org/itests/PowermockTest.java
+M	easymock-integration/src/test/java/org/itests/StaticService.java
+M	easymock/src/main/java/org/easymock/Capture.java
+M	easymock/src/main/java/org/easymock/CaptureType.java
+M	easymock/src/main/java/org/easymock/ConstructorArgs.java
+M	easymock/src/main/java/org/easymock/EasyMock.java
+M	easymock/src/main/java/org/easymock/EasyMockRule.java
+M	easymock/src/main/java/org/easymock/EasyMockRunner.java
+M	easymock/src/main/java/org/easymock/EasyMockSupport.java
+M	easymock/src/main/java/org/easymock/IAnswer.java
+M	easymock/src/main/java/org/easymock/IArgumentMatcher.java
+M	easymock/src/main/java/org/easymock/IExpectationSetters.java
+M	easymock/src/main/java/org/easymock/IMockBuilder.java
+M	easymock/src/main/java/org/easymock/IMocksControl.java
+M	easymock/src/main/java/org/easymock/LogicalOperator.java
+M	easymock/src/main/java/org/easymock/Mock.java
+M	easymock/src/main/java/org/easymock/MockType.java
+M	easymock/src/main/java/org/easymock/TestSubject.java
+M	easymock/src/main/java/org/easymock/internal/AndroidClassProxyFactory.java
+M	easymock/src/main/java/org/easymock/internal/AndroidSupport.java
+M	easymock/src/main/java/org/easymock/internal/ArgumentToString.java
+M	easymock/src/main/java/org/easymock/internal/AssertionErrorWrapper.java
+M	easymock/src/main/java/org/easymock/internal/BridgeMethodResolver.java
+M	easymock/src/main/java/org/easymock/internal/ClassInstantiatorFactory.java
+M	easymock/src/main/java/org/easymock/internal/ClassProxyFactory.java
+M	easymock/src/main/java/org/easymock/internal/DefaultClassInstantiator.java
+M	easymock/src/main/java/org/easymock/internal/EasyMockProperties.java
+M	easymock/src/main/java/org/easymock/internal/EasyMockStatement.java
+M	easymock/src/main/java/org/easymock/internal/ErrorMessage.java
+M	easymock/src/main/java/org/easymock/internal/ExpectedInvocation.java
+M	easymock/src/main/java/org/easymock/internal/ExpectedInvocationAndResult.java
+M	easymock/src/main/java/org/easymock/internal/ExpectedInvocationAndResults.java
+M	easymock/src/main/java/org/easymock/internal/IClassInstantiator.java
+M	easymock/src/main/java/org/easymock/internal/IMocksBehavior.java
+M	easymock/src/main/java/org/easymock/internal/IMocksControlState.java
+M	easymock/src/main/java/org/easymock/internal/IProxyFactory.java
+M	easymock/src/main/java/org/easymock/internal/Injection.java
+M	easymock/src/main/java/org/easymock/internal/InjectionPlan.java
+M	easymock/src/main/java/org/easymock/internal/InjectionTarget.java
+M	easymock/src/main/java/org/easymock/internal/Injector.java
+M	easymock/src/main/java/org/easymock/internal/Invocation.java
+M	easymock/src/main/java/org/easymock/internal/JavaProxyFactory.java
+M	easymock/src/main/java/org/easymock/internal/LastControl.java
+M	easymock/src/main/java/org/easymock/internal/MethodSerializationWrapper.java
+M	easymock/src/main/java/org/easymock/internal/MockBuilder.java
+M	easymock/src/main/java/org/easymock/internal/MockInvocationHandler.java
+M	easymock/src/main/java/org/easymock/internal/MocksBehavior.java
+M	easymock/src/main/java/org/easymock/internal/MocksControl.java
+M	easymock/src/main/java/org/easymock/internal/ObjectMethodsFilter.java
+M	easymock/src/main/java/org/easymock/internal/ObjenesisClassInstantiator.java
+M	easymock/src/main/java/org/easymock/internal/Range.java
+M	easymock/src/main/java/org/easymock/internal/RecordState.java
+M	easymock/src/main/java/org/easymock/internal/ReflectionUtils.java
+M	easymock/src/main/java/org/easymock/internal/ReplayState.java
+M	easymock/src/main/java/org/easymock/internal/Result.java
+M	easymock/src/main/java/org/easymock/internal/Results.java
+M	easymock/src/main/java/org/easymock/internal/RuntimeExceptionWrapper.java
+M	easymock/src/main/java/org/easymock/internal/ThrowableWrapper.java
+M	easymock/src/main/java/org/easymock/internal/UnorderedBehavior.java
+M	easymock/src/main/java/org/easymock/internal/matchers/And.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Any.java
+M	easymock/src/main/java/org/easymock/internal/matchers/ArrayEquals.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Captures.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Compare.java
+M	easymock/src/main/java/org/easymock/internal/matchers/CompareEqual.java
+M	easymock/src/main/java/org/easymock/internal/matchers/CompareTo.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Contains.java
+M	easymock/src/main/java/org/easymock/internal/matchers/EndsWith.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Equals.java
+M	easymock/src/main/java/org/easymock/internal/matchers/EqualsWithDelta.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Find.java
+M	easymock/src/main/java/org/easymock/internal/matchers/GreaterOrEqual.java
+M	easymock/src/main/java/org/easymock/internal/matchers/GreaterThan.java
+M	easymock/src/main/java/org/easymock/internal/matchers/InstanceOf.java
+M	easymock/src/main/java/org/easymock/internal/matchers/LessOrEqual.java
+M	easymock/src/main/java/org/easymock/internal/matchers/LessThan.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Matches.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Not.java
+M	easymock/src/main/java/org/easymock/internal/matchers/NotNull.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Null.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Or.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Same.java
+M	easymock/src/main/java/org/easymock/internal/matchers/StartsWith.java
+M	easymock/src/samples/java/org/easymock/samples/AnnotatedMockWithRuleTest.java
+M	easymock/src/samples/java/org/easymock/samples/AnnotatedMockWithRunnerTest.java
+M	easymock/src/samples/java/org/easymock/samples/BasicClassMockTest.java
+M	easymock/src/samples/java/org/easymock/samples/ClassTested.java
+M	easymock/src/samples/java/org/easymock/samples/Collaborator.java
+M	easymock/src/samples/java/org/easymock/samples/ConstructorCalledMockTest.java
+M	easymock/src/samples/java/org/easymock/samples/ExampleTest.java
+M	easymock/src/samples/java/org/easymock/samples/PartialClassMockTest.java
+M	easymock/src/samples/java/org/easymock/samples/SupportTest.java
+M	easymock/src/samples/java/org/easymock/samples/ThrowableEquals.java
+M	easymock/src/test/java/org/easymock/tests/ArgumentToStringTest.java
+M	easymock/src/test/java/org/easymock/tests/BaseEasyMockRunnerTest.java
+M	easymock/src/test/java/org/easymock/tests/CapturesMatcherTest.java
+M	easymock/src/test/java/org/easymock/tests/CglibTest.java
+M	easymock/src/test/java/org/easymock/tests/ClassInstantiatorFactoryTest.java
+M	easymock/src/test/java/org/easymock/tests/ConstructorTest.java
+M	easymock/src/test/java/org/easymock/tests/DefaultClassInstantiatorTest.java
+M	easymock/src/test/java/org/easymock/tests/ErrorMessageTest.java
+M	easymock/src/test/java/org/easymock/tests/ExpectedMethodCallTest.java
+M	easymock/src/test/java/org/easymock/tests/GenericTest.java
+M	easymock/src/test/java/org/easymock/tests/IMethods.java
+M	easymock/src/test/java/org/easymock/tests/IVarArgs.java
+M	easymock/src/test/java/org/easymock/tests/InvocationTest.java
+M	easymock/src/test/java/org/easymock/tests/LimitationsTest.java
+M	easymock/src/test/java/org/easymock/tests/MatchableArgumentsTest.java
+M	easymock/src/test/java/org/easymock/tests/MethodSerializationWrapperTest.java
+M	easymock/src/test/java/org/easymock/tests/MockClassControlTest.java
+M	easymock/src/test/java/org/easymock/tests/MockNameTest.java
+M	easymock/src/test/java/org/easymock/tests/MockTypeTest.java
+M	easymock/src/test/java/org/easymock/tests/MockingTest.java
+M	easymock/src/test/java/org/easymock/tests/NiceMockControlLongCompatibleReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/NiceMockControlTest.java
+M	easymock/src/test/java/org/easymock/tests/ObjectMethodsTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidDefaultReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidDefaultThrowableTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidRangeTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidStateChangeTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidThrowableTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidUsageTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateMethodCallMissingTest.java
+M	easymock/src/test/java/org/easymock/tests/ReplayStateInvalidCallsTest.java
+M	easymock/src/test/java/org/easymock/tests/ReplayStateInvalidUsageTest.java
+M	easymock/src/test/java/org/easymock/tests/ResultTest.java
+M	easymock/src/test/java/org/easymock/tests/StacktraceTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageCallCountTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageDefaultReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageExpectAndDefaultReturnTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageExpectAndDefaultThrowTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageExpectAndReturnTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageExpectAndThrowTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageFloatingPointReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageLongCompatibleReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageOverloadedDefaultValueTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageOverloadedMethodTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageRangeTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageStrictMockTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageThrowableTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageUnorderedTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageVarargTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageVerifyTest.java
+M	easymock/src/test/java/org/easymock/tests/Util.java
+M	easymock/src/test/java/org/easymock/tests2/AnswerTest.java
+M	easymock/src/test/java/org/easymock/tests2/CallbackAndArgumentsTest.java
+M	easymock/src/test/java/org/easymock/tests2/CallbackTest.java
+M	easymock/src/test/java/org/easymock/tests2/CaptureTest.java
+M	easymock/src/test/java/org/easymock/tests2/ChildEquals.java
+M	easymock/src/test/java/org/easymock/tests2/ClassExtensionHelperTest.java
+M	easymock/src/test/java/org/easymock/tests2/CompareToTest.java
+M	easymock/src/test/java/org/easymock/tests2/ConstraintsToStringTest.java
+M	easymock/src/test/java/org/easymock/tests2/ConstructorArgsTest.java
+M	easymock/src/test/java/org/easymock/tests2/DelegateToTest.java
+M	easymock/src/test/java/org/easymock/tests2/DependencyTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockAnnotationsTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockClassExtensionTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockPropertiesTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockRuleTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockRunnerTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockSupportClassTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockSupportTest.java
+M	easymock/src/test/java/org/easymock/tests2/FilteringRule.java
+M	easymock/src/test/java/org/easymock/tests2/MockBuilderTest.java
+M	easymock/src/test/java/org/easymock/tests2/MockedExceptionTest.java
+M	easymock/src/test/java/org/easymock/tests2/MocksControlTest.java
+M	easymock/src/test/java/org/easymock/tests2/NameTest.java
+M	easymock/src/test/java/org/easymock/tests2/NiceMockTest.java
+M	easymock/src/test/java/org/easymock/tests2/ParentEquals.java
+M	easymock/src/test/java/org/easymock/tests2/PartialMockingTest.java
+M	easymock/src/test/java/org/easymock/tests2/ReflectionUtilsTest.java
+M	easymock/src/test/java/org/easymock/tests2/SerializationTest.java
+M	easymock/src/test/java/org/easymock/tests2/StubTest.java
+M	easymock/src/test/java/org/easymock/tests2/ThreadingTest.java
+M	easymock/src/test/java/org/easymock/tests2/UsageConstraintsTest.java
+M	easymock/src/test/java/org/easymock/tests2/UsageMatchersTest.java
+M	easymock/src/test/java/org/easymock/tests2/UsageStrictMockTest.java
+M	easymock/src/test/java/org/easymock/tests2/UsageTest.java
+M	website/Documentation.html
+M	website/Downloads.html
+M	website/Error.html
+M	website/License.html
+M	website/Links.html
+M	website/ReleaseNotes.html
+M	website/UserComments.html
+M	website/index.html
+
+zhaow7/easymock;850a943;Upgrade Android plugin to 3.8.2
+M	easymock-android-tck/pom.xml
+
+zhaow7/easymock;6f069da;Upgrade Powermock to 1.5.3
+M	easymock-integration/pom.xml
+
+zhaow7/easymock;768a60e;Migrate to android plugin 3.8.1
+M	easymock-android-tck/pom.xml
+M	pom.xml
+
+zhaow7/easymock;99fe339;Missing doc for 3.2
+M	website/Documentation.html
+
+zhaow7/easymock;2532f69;Remove spaces
+M	pom.xml
+
+zhaow7/easymock;fc7f63a;Upgrade Maven version used
+M	build.txt
+
+zhaow7/easymock;35cee6a;Merge pull request #4 from Todderz/qualified-injection
+zhaow7/easymock;4a4f269;Correct test expectation order
+M	easymock/src/test/java/org/easymock/tests2/EasyMockAnnotationsTest.java
+
+zhaow7/easymock;050c40a;Add fieldName qualifier to support injection
+M	easymock/src/main/java/org/easymock/EasyMockSupport.java
+A	easymock/src/main/java/org/easymock/internal/Injection.java
+A	easymock/src/main/java/org/easymock/internal/InjectionPlan.java
+A	easymock/src/main/java/org/easymock/internal/InjectionTarget.java
+A	easymock/src/main/java/org/easymock/internal/Injector.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockAnnotationsTest.java
+
+zhaow7/easymock;e772f49;Documentation for annotation element usage
+M	easymock/src/site/Documentation.html
+
+zhaow7/easymock;2e6793d;Add fieldName element as injection qualifier
+M	easymock/src/main/java/org/easymock/Mock.java
+
+zhaow7/easymock;1feec2d;Fix the easymock github url
+M	website/index.html
+
+zhaow7/easymock;b5c0ba7;Little typo here
+M	easymock/src/main/java/org/easymock/EasyMockSupport.java
+
+zhaow7/easymock;925c718;Upgrade android-maven-plugin
+M	easymock-android-tck/pom.xml
+
+zhaow7/easymock;116e8f9;Upgrade objenesis to 2.1 (#EASYMOCK-130)
+M	easymock/pom.xml
+
+zhaow7/easymock;7acc2a3;Nice 3.7.1 version for OSGi
+M	easymock-integration/pom.xml
+
+zhaow7/easymock;06cceb0;Push the warning down
+M	easymock/src/test/java/org/easymock/tests2/MocksControlTest.java
+
+zhaow7/easymock;13cf701;Rename to have the same naming pattern as the rule
+R092	easymock/src/samples/java/org/easymock/samples/AnnotatedMockTest.java	easymock/src/samples/java/org/easymock/samples/AnnotatedMockWithRunnerTest.java
+
+zhaow7/easymock;02c647a;Documentation for the new runner
+M	easymock/src/site/Documentation.html
+M	easymock/src/site/Documentation_fr.html
+
+zhaow7/easymock;8324c2e;Not an inner class anymore by still by copyright ;-)
+M	easymock/src/main/java/org/easymock/internal/EasyMockStatement.java
+
+zhaow7/easymock;c607dc3;Configure lifecycle for dependency plugin
+M	easymock-test-deploy/pom.xml
+
+zhaow7/easymock;73c6753;Merge pull request #2 from Todderz/simple-rule

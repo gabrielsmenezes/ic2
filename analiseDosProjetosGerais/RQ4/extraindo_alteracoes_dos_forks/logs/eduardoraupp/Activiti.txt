@@ -1,0 +1,25 @@
+eduardoraupp/Activiti;7ebcb2701;The code commited in here is just to make the code cleaner than currently. We are looking for clean code and quality and I am going to sweep all the code looking for better quality than figured it.
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/DeleteTaskCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/DispatchEventCommand.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetBpmnModelCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetDeploymentResourceCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetDeploymentResourceNamesCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetEventLogEntriesCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetExecutionVariableCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetExecutionVariablesCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetHistoricIdentityLinksForTaskCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetIdentityLinksForProcessDefinitionCmd.java
+
+eduardoraupp/Activiti;05a624365;Merge branch 'master' of https://github.com/Activiti/Activiti
+eduardoraupp/Activiti;a79414be6;Merge branch 'master' of https://github.com/Activiti/Activiti
+eduardoraupp/Activiti;588dfeaaf;Merge branch 'master' of https://github.com/eduardoraupp/Activiti
+eduardoraupp/Activiti;44deade5b;The layout code is too messy, too couple and low cohesion. So thinking how make it better I refactored the request flowElement to a command pattern, encapsulating it in differents classes.
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/parser/ExtensionElementsParser.java
+M	modules/activiti-bpmn-layout/src/main/java/org/activiti/bpmn/BpmnAutoLayout.java
+A	modules/activiti-bpmn-layout/src/main/java/org/activiti/layout/flow/FlowCommand.java
+A	modules/activiti-bpmn-layout/src/main/java/org/activiti/layout/flow/FlowControl.java
+A	modules/activiti-bpmn-layout/src/main/java/org/activiti/layout/flow/HandleActivity.java
+A	modules/activiti-bpmn-layout/src/main/java/org/activiti/layout/flow/HandleEventFlow.java
+A	modules/activiti-bpmn-layout/src/main/java/org/activiti/layout/flow/HandleGatewayVertex.java
+A	modules/activiti-bpmn-layout/src/main/java/org/activiti/layout/flow/HandleSequenceFlow.java
+A	modules/activiti-bpmn-layout/src/main/java/org/activiti/layout/flow/HandleSubProcess.java

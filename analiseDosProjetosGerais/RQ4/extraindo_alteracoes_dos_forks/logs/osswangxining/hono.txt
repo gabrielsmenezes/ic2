@@ -1,0 +1,107 @@
+osswangxining/hono;82e8bd3;analysis-action
+A	analysis-action/.springBeans
+A	analysis-action/pom.xml
+A	analysis-action/readme.md
+A	analysis-action/src/main/fabric8/hono-streaming-analysis-dc.yml
+A	analysis-action/src/main/fabric8/hono-streaming-analysis-insecure-route.yml
+A	analysis-action/src/main/fabric8/hono-streaming-analysis-route.yml
+A	analysis-action/src/main/fabric8/hono-streaming-analysis-svc.yml
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/ActionEngine.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/Application.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/KafkaConnector.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/KafkaConsumerClient.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/MailAction.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/WebHookAction.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/pojo/Action.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/pojo/ActionElementAdapter.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/pojo/BaseAnalysisElement.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/pojo/BaseAnalysisResultElement.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/pojo/Headers.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/pojo/Mail.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/pojo/Operation.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/pojo/Rule.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/pojo/RuleOutput.java
+A	analysis-action/src/main/java/org/eclipse/hono/analysis/action/pojo/WebHook.java
+A	analysis-action/src/main/resources/application.properties
+A	analysis-action/src/main/resources/banner.txt
+A	analysis-action/src/main/resources/logback-spring.xml
+A	analysis-action/src/main/resources/logback.xml
+A	analysis-action/src/test/java/org/eclipse/hono/tests/action/package-info.java
+M	example/docker/docker-compose.yml
+M	pom.xml
+M	streaming-analysis/.springBeans
+M	streaming-analysis/pom.xml
+M	streaming-analysis/src/main/java/org/eclipse/hono/streaming/analysis/Application.java
+A	streaming-analysis/src/main/java/org/eclipse/hono/streaming/analysis/KafkaConnector.java
+A	streaming-analysis/src/main/java/org/eclipse/hono/streaming/analysis/KafkaConsumerClient.java
+M	streaming-analysis/src/main/resources/banner.txt
+M	streaming-analysis/src/main/resources/logback-spring.xml
+M	tests/pom.xml
+A	tests/src/test/java/org/eclipse/hono/tests/action/KafkaConnector4RuleOutputTest.java
+A	tests/src/test/java/org/eclipse/hono/tests/action/KafkaConnector4WebHookTest.java
+A	tests/src/test/java/org/eclipse/hono/tests/action/Test1.java
+A	tests/src/test/java/org/eclipse/hono/tests/action/WebHookTest.java
+A	tests/src/test/java/org/eclipse/hono/tests/action/action.data.json
+A	tests/src/test/java/org/eclipse/hono/tests/action/ruleoutput.data.json
+M	tests/src/test/java/org/eclipse/hono/tests/kafka/KafkaConnector.java
+M	tests/src/test/java/org/eclipse/hono/tests/kafka/KafkaConsumerClient.java
+A	tests/src/test/java/org/eclipse/hono/tests/mqttserver/CreateDevice.java
+M	tests/src/test/java/org/eclipse/hono/tests/mqttserver/MqttPublishSample2.java
+
+osswangxining/hono;979638e;initiate streaming analysis
+M	example/docker/docker-compose.yml
+
+osswangxining/hono;edd9304;initiate streaming analysis
+M	.gitignore
+A	adapters/mqtt-vertx/.springBeans
+M	adapters/mqtt-vertx/src/main/java/org/eclipse/hono/adapter/mqtt/VertxBasedMqttProtocolAdapter.java
+M	adapters/mqtt-vertx/src/main/resources/logback-spring.xml
+A	docs/architecture.pptx
+A	example/.gitignore
+M	example/docker/docker-compose.yml
+A	example/src/.gitignore
+A	example/src/main/.gitignore
+A	example/src/main/java/.gitignore
+A	example/src/main/java/org/.gitignore
+A	example/src/main/java/org/eclipse/.gitignore
+A	example/src/main/java/org/eclipse/hono/.gitignore
+M	pom.xml
+M	service-base/pom.xml
+A	service-base/src/main/java/org/eclipse/hono/service/kafka/KafkaConnector.java
+A	service-base/src/main/java/org/eclipse/hono/service/kafka/KafkaConsumerClient.java
+A	streaming-analysis/.springBeans
+A	streaming-analysis/pom.xml
+A	streaming-analysis/readme.md
+A	streaming-analysis/src/main/fabric8/hono-streaming-analysis-dc.yml
+A	streaming-analysis/src/main/fabric8/hono-streaming-analysis-insecure-route.yml
+A	streaming-analysis/src/main/fabric8/hono-streaming-analysis-route.yml
+A	streaming-analysis/src/main/fabric8/hono-streaming-analysis-svc.yml
+A	streaming-analysis/src/main/java/org/eclipse/hono/streaming/analysis/AnalyticsEngine.java
+A	streaming-analysis/src/main/java/org/eclipse/hono/streaming/analysis/Application.java
+A	streaming-analysis/src/main/resources/application.properties
+A	streaming-analysis/src/main/resources/banner.txt
+A	streaming-analysis/src/main/resources/logback-spring.xml
+A	tests/.gitignore
+M	tests/pom.xml
+A	tests/src/.gitignore
+A	tests/src/test/.gitignore
+A	tests/src/test/java/.gitignore
+A	tests/src/test/java/org/eclipse/.gitignore
+A	tests/src/test/java/org/eclipse/hono/.gitignore
+A	tests/src/test/java/org/eclipse/hono/tests/kafka/KafkaConnector.java
+A	tests/src/test/java/org/eclipse/hono/tests/kafka/KafkaConsumerClient.java
+R095	tests/src/test/java/org/eclipse/hono/mqttserver/MQTTProtocolTest.java	tests/src/test/java/org/eclipse/hono/tests/mqttserver/MQTTProtocolTest.java
+R096	tests/src/test/java/org/eclipse/hono/mqttserver/MQTTProtocolTest2.java	tests/src/test/java/org/eclipse/hono/tests/mqttserver/MQTTProtocolTest2.java
+R097	tests/src/test/java/org/eclipse/hono/mqttserver/MqttPublishSample.java	tests/src/test/java/org/eclipse/hono/tests/mqttserver/MqttPublishSample.java
+R074	tests/src/test/java/org/eclipse/hono/mqttserver/MqttPublishSample2.java	tests/src/test/java/org/eclipse/hono/tests/mqttserver/MqttPublishSample2.java
+R097	tests/src/test/java/org/eclipse/hono/mqttserver/MqttPublishSample3.java	tests/src/test/java/org/eclipse/hono/tests/mqttserver/MqttPublishSample3.java
+
+osswangxining/hono;7f9ec85;twins
+M	example/docker/docker-compose.yml
+M	example/src/main/java/org/eclipse/hono/example/ExampleReceiver.java
+M	tests/pom.xml
+A	tests/src/test/java/org/eclipse/hono/mqttserver/MQTTProtocolTest.java
+A	tests/src/test/java/org/eclipse/hono/mqttserver/MQTTProtocolTest2.java
+A	tests/src/test/java/org/eclipse/hono/mqttserver/MqttPublishSample.java
+A	tests/src/test/java/org/eclipse/hono/mqttserver/MqttPublishSample2.java
+A	tests/src/test/java/org/eclipse/hono/mqttserver/MqttPublishSample3.java

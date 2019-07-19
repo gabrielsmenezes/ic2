@@ -1,0 +1,127 @@
+savva-k/raven-java;60376127;Updated README.md
+M	README.md
+
+savva-k/raven-java;2d523add;Java code was changed according to Java 6 standards
+M	pom.xml
+M	raven/src/main/java/com/getsentry/raven/DefaultRavenFactory.java
+M	raven/src/main/java/com/getsentry/raven/RavenFactory.java
+M	raven/src/main/java/com/getsentry/raven/buffer/DiskBuffer.java
+M	raven/src/main/java/com/getsentry/raven/config/Lookup.java
+M	raven/src/main/java/com/getsentry/raven/connection/AbstractConnection.java
+M	raven/src/main/java/com/getsentry/raven/context/Context.java
+M	raven/src/main/java/com/getsentry/raven/dsn/Dsn.java
+M	raven/src/main/java/com/getsentry/raven/event/Event.java
+M	raven/src/main/java/com/getsentry/raven/event/EventBuilder.java
+M	raven/src/main/java/com/getsentry/raven/event/helper/ContextBuilderHelper.java
+M	raven/src/main/java/com/getsentry/raven/event/interfaces/HttpInterface.java
+M	raven/src/main/java/com/getsentry/raven/event/interfaces/MessageInterface.java
+M	raven/src/main/java/com/getsentry/raven/event/interfaces/SentryException.java
+M	raven/src/main/java/com/getsentry/raven/jul/SentryHandler.java
+M	raven/src/main/java/com/getsentry/raven/marshaller/json/JsonMarshaller.java
+M	raven/src/main/java/com/getsentry/raven/servlet/RavenServletRequestListener.java
+M	raven/src/main/java/com/getsentry/raven/util/Util.java
+
+savva-k/raven-java;ce9fb76f;Removed unnecessary modules
+M	pom.xml
+D	raven-android/README.md
+D	raven-android/pom.xml
+D	raven-android/src/main/java/com/getsentry/raven/android/AndroidRavenFactory.java
+D	raven-android/src/main/java/com/getsentry/raven/android/Raven.java
+D	raven-android/src/main/java/com/getsentry/raven/android/RavenUncaughtExceptionHandler.java
+D	raven-android/src/main/java/com/getsentry/raven/android/Util.java
+D	raven-android/src/main/java/com/getsentry/raven/android/event/helper/AndroidEventBuilderHelper.java
+D	raven-android/src/test/java/com/getsentry/raven/android/AndroidTest.java
+D	raven-android/src/test/java/com/getsentry/raven/android/RavenIT.java
+D	raven-android/src/test/java/com/getsentry/raven/android/RavenITActivity.java
+D	raven-appengine/README.md
+D	raven-appengine/pom.xml
+D	raven-appengine/src/main/java/com/getsentry/raven/appengine/AppEngineRavenFactory.java
+D	raven-appengine/src/main/java/com/getsentry/raven/appengine/connection/AppEngineAsyncConnection.java
+D	raven-appengine/src/main/java/com/getsentry/raven/appengine/event/helper/AppEngineEventBuilderHelper.java
+D	raven-appengine/src/main/resources/META-INF/services/com.getsentry.raven.RavenFactory
+D	raven-appengine/src/test/java/com/getsentry/raven/appengine/AppEngineRavenFactoryTest.java
+D	raven-appengine/src/test/java/com/getsentry/raven/appengine/connection/AppEngineAsyncConnectionTest.java
+D	raven-appengine/src/test/java/com/getsentry/raven/appengine/event/helper/AppEngineEventBuilderHelperTest.java
+D	raven-appengine/src/test/resources/logback-test.xml
+D	raven-log4j/README.md
+D	raven-log4j/pom.xml
+D	raven-log4j/src/main/java/com/getsentry/raven/log4j/SentryAppender.java
+D	raven-log4j/src/test/java/com/getsentry/raven/log4j/MockUpErrorHandler.java
+D	raven-log4j/src/test/java/com/getsentry/raven/log4j/SentryAppenderCloseTest.java
+D	raven-log4j/src/test/java/com/getsentry/raven/log4j/SentryAppenderDsnTest.java
+D	raven-log4j/src/test/java/com/getsentry/raven/log4j/SentryAppenderEventBuildingTest.java
+D	raven-log4j/src/test/java/com/getsentry/raven/log4j/SentryAppenderFailuresTest.java
+D	raven-log4j/src/test/java/com/getsentry/raven/log4j/SentryAppenderIT.java
+D	raven-log4j/src/test/resources/log4j-integration.properties
+D	raven-log4j/src/test/resources/log4j-test.properties
+D	raven-log4j2/README.md
+D	raven-log4j2/pom.xml
+D	raven-log4j2/src/main/java/com/getsentry/raven/log4j2/SentryAppender.java
+D	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/MockUpErrorHandler.java
+D	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/SentryAppenderCloseTest.java
+D	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/SentryAppenderDsnTest.java
+D	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/SentryAppenderEventBuildingTest.java
+D	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/SentryAppenderFailuresTest.java
+D	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/SentryAppenderIT.java
+D	raven-log4j2/src/test/resources/log4j2-integration.xml
+D	raven-log4j2/src/test/resources/log4j2-test.xml
+D	raven-logback/README.md
+D	raven-logback/pom.xml
+D	raven-logback/src/main/java/com/getsentry/raven/logback/SentryAppender.java
+D	raven-logback/src/test/java/com/getsentry/raven/logback/MockUpLoggingEvent.java
+D	raven-logback/src/test/java/com/getsentry/raven/logback/MockUpStatusPrinter.java
+D	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderCloseTest.java
+D	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderDsnTest.java
+D	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderEventBuildingTest.java
+D	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderEventLevelFilterTest.java
+D	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderFailuresTest.java
+D	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderIT.java
+D	raven-logback/src/test/resources/logback-integration.xml
+D	raven-logback/src/test/resources/logback-test.xml
+
+savva-k/raven-java;6de740a8;Fix EXTRATAGS documentation.
+M	docs/modules/log4j.rst
+M	docs/modules/log4j2.rst
+M	docs/modules/logback.rst
+M	docs/modules/raven.rst
+
+savva-k/raven-java;8651e308;Use /proc/version for kernel information on Android. (thanks JeremR)
+M	raven-android/src/main/java/com/getsentry/raven/android/event/helper/AndroidEventBuilderHelper.java
+
+savva-k/raven-java;5dc44dfa;Bump CHANGES to 8.0.4
+M	CHANGES
+
+savva-k/raven-java;b7b2f230;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+M	raven-android/pom.xml
+M	raven-appengine/pom.xml
+M	raven-log4j/pom.xml
+M	raven-log4j2/pom.xml
+M	raven-logback/pom.xml
+M	raven/pom.xml
+
+savva-k/raven-java;a343f144;[maven-release-plugin] prepare release v8.0.3
+M	pom.xml
+M	raven-android/pom.xml
+M	raven-appengine/pom.xml
+M	raven-log4j/pom.xml
+M	raven-log4j2/pom.xml
+M	raven-logback/pom.xml
+M	raven/pom.xml
+
+savva-k/raven-java;b5caa1c9;Bump docs to 8.0.3
+M	docs/context.rst
+M	docs/modules/android.rst
+M	docs/modules/appengine.rst
+M	docs/modules/log4j.rst
+M	docs/modules/log4j2.rst
+M	docs/modules/logback.rst
+M	docs/modules/raven.rst
+M	docs/usage.rst
+
+savva-k/raven-java;fc6a1dbd;Log correct schema when using HTTP/HTTPS.
+M	raven/src/main/java/com/getsentry/raven/DefaultRavenFactory.java
+
+savva-k/raven-java;01b4dfca;Make Context and User classes serializable. (#393)
+M	raven/src/main/java/com/getsentry/raven/context/Context.java
+M	raven/src/main/java/com/getsentry/raven/event/User.java

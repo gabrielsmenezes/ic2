@@ -1,0 +1,51 @@
+gkatkov/Activiti;140af6041;reverted some files committed by mistake
+M	modules/activiti-json-converter/src/test/java/org/activiti/editor/language/AbstractConverterTest.java
+
+gkatkov/Activiti;1226dfe91;failed to get rid of stateful converters - go back to maps of classes, not instances
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BaseBpmnJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BoundaryEventJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BpmnJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BusinessRuleTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/CallActivityJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/CatchEventJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/EndEventJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/EventGatewayJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/EventSubProcessJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ExclusiveGatewayJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/InclusiveGatewayJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/MailTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ManualTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ParallelGatewayJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ReceiveTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ScriptTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/SequenceFlowJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ServiceTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/StartEventJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/SubProcessJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ThrowEventJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/UserTaskJsonConverter.java
+M	modules/activiti-json-converter/src/test/java/org/activiti/editor/language/AbstractConverterTest.java
+
+gkatkov/Activiti;99d13f15b;refactored ugly static maps
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BaseBpmnJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BoundaryEventJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BpmnJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BusinessRuleTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/CallActivityJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/CatchEventJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/EndEventJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/EventGatewayJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/EventSubProcessJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ExclusiveGatewayJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/InclusiveGatewayJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/MailTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ManualTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ParallelGatewayJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ReceiveTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ScriptTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/SequenceFlowJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ServiceTaskJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/StartEventJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/SubProcessJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ThrowEventJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/UserTaskJsonConverter.java

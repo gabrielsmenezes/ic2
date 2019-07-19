@@ -1,0 +1,42 @@
+MicrophoneBen/SpringBootExamples;7be8526;增加Zookeeper模块，修改Swagger页面字符
+A	hello-world/.gitignore
+A	hello-world/.mvn/wrapper/MavenWrapperDownloader.java
+A	hello-world/.mvn/wrapper/maven-wrapper.jar
+A	hello-world/.mvn/wrapper/maven-wrapper.properties
+A	hello-world/pom.xml
+A	hello-world/src/main/java/com/ghostben/demo/helloworld/HelloWorldApplication.java
+A	hello-world/src/main/resources/application.properties
+A	hello-world/src/test/java/com/ghostben/demo/helloworld/HelloWorldApplicationTests.java
+M	spring-boot-swagger/pom.xml
+M	spring-boot-swagger/src/main/java/io/ymq/swagger/config/SwaggerConfig.java
+R096	spring-boot-swagger/src/main/java/io/ymq/swagger/controller/YmqController.java	spring-boot-swagger/src/main/java/io/ymq/swagger/controller/BenController.java
+M	spring-boot-swagger/src/main/java/io/ymq/swagger/model/User.java
+M	spring-boot-swagger/src/main/resources/static/swagger/swagger.yaml
+M	spring-boot-zookeeper/src/main/resources/application.yml
+
+MicrophoneBen/SpringBootExamples;05cd1bc;Zookeeper && KafKa使用本地局域网服务器进行信息交互
+A	spring-boot-zookeeper/HELP.md
+A	spring-boot-zookeeper/pom.xml
+A	spring-boot-zookeeper/src/main/java/com/ben/springbootzk/SpringBootZkApplication.java
+M	spring-boot-zookeeper/src/main/java/com/ben/springbootzk/config/ZkClient.java
+M	spring-boot-zookeeper/src/main/java/com/ben/springbootzk/controller/ZkController.java
+M	spring-boot-zookeeper/src/main/java/com/ben/springbootzk/service/ZkService.java
+A	spring-boot-zookeeper/src/test/java/com/ben/springbootzk/SpringBootZkApplicationTests.java
+
+MicrophoneBen/SpringBootExamples;3bccd90;Zookeeper && KafKa使用本地局域网服务器进行信息交互
+M	spring-boot-kafka/src/main/resources/application.properties
+A	spring-boot-zookeeper/src/main/java/com/ben/springbootzk/Dto/ZkConfigDto.java
+A	spring-boot-zookeeper/src/main/java/com/ben/springbootzk/config/ZkClient.java
+A	spring-boot-zookeeper/src/main/java/com/ben/springbootzk/controller/ZkController.java
+A	spring-boot-zookeeper/src/main/java/com/ben/springbootzk/service/ZkService.java
+A	spring-boot-zookeeper/src/main/resources/application.yml
+
+MicrophoneBen/SpringBootExamples;b8fcd12;配置KafKa使用集群服务器产生和消费数据
+M	spring-boot-kafka/pom.xml
+A	spring-boot-kafka/src/main/java/io/ymq/controller/KafKaController.java
+A	spring-boot-kafka/src/main/java/io/ymq/entity/User.java
+M	spring-boot-kafka/src/main/java/io/ymq/kafka/MsgConsumer.java
+M	spring-boot-kafka/src/main/java/io/ymq/kafka/MsgProducer.java
+M	spring-boot-kafka/src/main/java/io/ymq/kafka/run/Startup.java
+M	spring-boot-kafka/src/main/resources/application.properties
+M	spring-boot-kafka/src/test/java/io/ymq/kafka/test/BaseTest.java

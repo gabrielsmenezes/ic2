@@ -1,0 +1,247 @@
+tomasz-skonieczny-amg-net/Activiti;a605a5338;Data source switched to JNDI ActivitiDS
+M	modules/activiti-webapp-rest2/src/main/resources/activiti-context.xml
+
+tomasz-skonieczny-amg-net/Activiti;a1cb4a19f;webapp-rest, adding version to pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+
+tomasz-skonieczny-amg-net/Activiti;3ca5c4b5b;Turned off identity tables check
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/db/DbSqlSession.java
+
+tomasz-skonieczny-amg-net/Activiti;ad6d4ed21;webapp-explorer, adding version to pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+
+tomasz-skonieczny-amg-net/Activiti;32f31cffe;Data source switched to JNDI ActivitiDS
+M	modules/activiti-webapp-explorer2/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+
+tomasz-skonieczny-amg-net/Activiti;a47fe54f3;Maven artifcat group ids refactoring
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-common-rest/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-diagram-rest/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-explorer/pom.xml
+M	modules/activiti-json-converter/pom.xml
+M	modules/activiti-ldap/pom.xml
+M	modules/activiti-modeler/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-rest/pom.xml
+M	modules/activiti-simple-workflow/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	modules/activiti-webapp-rest2/src/main/resources/db.properties
+M	pom.xml
+
+tomasz-skonieczny-amg-net/Activiti;cae102eb4;Validators refactoring
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/BpmnXMLConverter.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/form/AbstractFormType.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/MailActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/EnumFormType.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/FormTypes.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/ListFormType.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/LongFormType.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/StringFormType.java
+
+tomasz-skonieczny-amg-net/Activiti;66f371ad8;DbSqlSession fix for Activit version number
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/db/DbSqlSession.java
+
+tomasz-skonieczny-amg-net/Activiti;ab42b98fa;New service task type: SMS task
+M	modules/activiti-engine/src/main/java/org/activiti/engine/ProcessEngineConfiguration.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/SmsActivityBehavior.java
+
+tomasz-skonieczny-amg-net/Activiti;f7a991b2e;Model saving rest changed to saveExt
+M	modules/activiti-modeler/src/main/java/org/activiti/rest/editor/application/ModelerServicesInit.java
+A	modules/activiti-modeler/src/main/java/org/activiti/rest/editor/model/ModelSaveExtRestResource.java
+M	modules/activiti-webapp-explorer2/editor/scripts/Plugins/file.js
+M	modules/activiti-webapp-explorer2/src/main/webapp/editor/oryx.debug.js
+
+tomasz-skonieczny-amg-net/Activiti;94b06c2a6;New service task type: SMS task
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/constants/BpmnXMLConstants.java
+M	modules/activiti-bpmn-converter/src/main/resources/org/activiti/impl/bpmn/parser/activiti-bpmn-extensions-5.3.xsd
+M	modules/activiti-bpmn-model/src/main/java/org/activiti/bpmn/model/ServiceTask.java
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/SmsActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/factory/ActivityBehaviorFactory.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/factory/DefaultActivityBehaviorFactory.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/handler/AbstractExternalInvocationBpmnParseHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/handler/SendTaskParseHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/handler/ServiceTaskParseHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/test/TestActivityBehaviorFactory.java
+D	modules/activiti-explorer/src/main/java/amg/activiti/engine/form/ButtonFormType.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/constants/StencilConstants.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BaseBpmnJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BpmnJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ServiceTaskJsonConverter.java
+A	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/SmsTaskJsonConverter.java
+M	modules/activiti-webapp-explorer2/src/main/resources/stencilset.json
+M	modules/activiti-webapp-explorer2/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+A	modules/activiti-webapp-explorer2/src/main/webapp/editor/stencilsets/bpmn2.0/icons/activity/list/type.sms.send.png
+
+tomasz-skonieczny-amg-net/Activiti;4ed036bc0;Adding new form type: button
+A	modules/activiti-explorer/src/main/java/amg/activiti/engine/form/ButtonFormType.java
+M	modules/activiti-webapp-explorer2/src/main/resources/stencilset.json
+M	modules/activiti-webapp-explorer2/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+
+tomasz-skonieczny-amg-net/Activiti;5cbedbc01;Spelling corrections
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessEngineImpl.java
+M	modules/activiti-webapp-explorer2/editor/scripts/Core/main.js
+
+tomasz-skonieczny-amg-net/Activiti;cf24f1a75;Styling  of oryx.debug.js
+M	modules/activiti-webapp-explorer2/src/main/webapp/editor/oryx.debug.js
+
+tomasz-skonieczny-amg-net/Activiti;4031b0710;Reducing header height to 32px
+M	modules/activiti-webapp-explorer2/editor/scripts/Core/main.js
+M	modules/activiti-webapp-explorer2/src/main/webapp/explorer/src/css/custom-style.css
+
+tomasz-skonieczny-amg-net/Activiti;fdb869ed6;Setting commons-dbcp version to 1.4
+M	modules/activiti-webapp-explorer2/pom.xml
+
+tomasz-skonieczny-amg-net/Activiti;7236f0c71;Disabling demo data generator
+M	modules/activiti-webapp-explorer2/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+
+tomasz-skonieczny-amg-net/Activiti;ceab08c88;Wyłączenie demoDataGenerator z activiti
+M	modules/activiti-webapp-explorer2/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+
+tomasz-skonieczny-amg-net/Activiti;75991abee;Hiding activiti-modeler top bar (with exit button)
+M	modules/activiti-webapp-explorer2/editor/scripts/Core/main.js
+
+tomasz-skonieczny-amg-net/Activiti;8d2c2865c;default value column in activiti modeler
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/SerializableType.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/constants/StencilConstants.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BaseBpmnJsonConverter.java
+M	modules/activiti-webapp-explorer2/src/main/resources/stencilset.json
+
+tomasz-skonieczny-amg-net/Activiti;6f1c56bb7;Merge branch 'master' of https://github.com/tomasz-skonieczny-amg-net/Activiti
+tomasz-skonieczny-amg-net/Activiti;85c6c684a;Removed boolean validation
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/BooleanFormType.java
+
+tomasz-skonieczny-amg-net/Activiti;d1b02e988;Proxying BPM process variables for method interception
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/SerializableType.java
+
+tomasz-skonieczny-amg-net/Activiti;9c68abb0e;Variables globally available
+M	modules/activiti-engine/src/main/java/org/activiti/engine/form/AbstractFormType.java
+
+tomasz-skonieczny-amg-net/Activiti;969971bcf;Merge branch 'master' of https://github.com/tomasz-skonieczny-amg-net/Activiti
+tomasz-skonieczny-amg-net/Activiti;570050087;New column in form properties
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/BaseBpmnXMLConverter.java
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/child/FormPropertyParser.java
+M	modules/activiti-bpmn-model/src/main/java/org/activiti/bpmn/model/FormValue.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/form/AbstractFormType.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/form/FormProperty.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/EnumFormType.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/FormPropertyImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/FormTypes.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/ListFormType.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/LongFormType.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/StringFormType.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/constants/StencilConstants.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BaseBpmnJsonConverter.java
+
+tomasz-skonieczny-amg-net/Activiti;cfd3b829e;Deleting demo data from deploy
+M	modules/activiti-webapp-rest2/src/main/resources/activiti-context.xml
+
+tomasz-skonieczny-amg-net/Activiti;ce592c2ea;new dropdown in form properties
+M	modules/activiti-webapp-explorer2/src/main/resources/stencilset.json
+
+tomasz-skonieczny-amg-net/Activiti;52a28a64a;changed validation type
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/EnumFormType.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/ListFormType.java
+
+tomasz-skonieczny-amg-net/Activiti;ce127b958;new FormProperties column
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/constants/BpmnXMLConstants.java
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/BaseBpmnXMLConverter.java
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/child/FormPropertyParser.java
+M	modules/activiti-bpmn-model/src/main/java/org/activiti/bpmn/model/FormProperty.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/DefaultFormHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/FormPropertyHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/FormPropertyImpl.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/constants/StencilConstants.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BaseBpmnJsonConverter.java
+M	modules/activiti-modeler/src/main/java/org/activiti/rest/editor/model/ModelEditorJsonRestResource.java
+M	modules/activiti-modeler/src/main/java/org/activiti/rest/editor/model/ModelSaveRestResource.java
+M	modules/activiti-webapp-explorer2/src/main/resources/stencilset.json
+M	modules/activiti-webapp-explorer2/src/main/webapp/editor/oryx.debug.js
+
+tomasz-skonieczny-amg-net/Activiti;a1ea8906f;Removed ATG Dependencies
+M	modules/activiti-modeler/pom.xml
+M	modules/activiti-modeler/src/main/java/org/activiti/rest/editor/model/ModelEditorJsonRestResource.java
+M	modules/activiti-modeler/src/main/java/org/activiti/rest/editor/model/ModelSaveRestResource.java
+
+tomasz-skonieczny-amg-net/Activiti;0d9d39d1b;Used repository API insead of IBATIS to store and load data
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-engine/src/main/java/org/activiti/engine/NonSerializableFactory.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessEngineImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ModelEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/repository/Model.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Model.xml
+M	modules/activiti-modeler/pom.xml
+M	modules/activiti-modeler/src/main/java/org/activiti/rest/editor/model/ModelEditorJsonRestResource.java
+M	modules/activiti-modeler/src/main/java/org/activiti/rest/editor/model/ModelSaveRestResource.java
+M	modules/activiti-webapp-explorer2/editor/scripts/Core/main.js
+M	modules/activiti-webapp-explorer2/src/main/webapp/WEB-INF/web.xml
+M	modules/activiti-webapp-explorer2/src/main/webapp/editor/oryx.debug.js
+
+tomasz-skonieczny-amg-net/Activiti;983dd355e;Saving ProcessEngine to context
+A	modules/activiti-engine/src/main/java/org/activiti/engine/NonSerializableFactory.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessEngineImpl.java
+
+tomasz-skonieczny-amg-net/Activiti;4b3eb7d84;Get and Save methods for AMG model
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetAMGModelCmd.java
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/SaveAMGModelCmd.java
+
+tomasz-skonieczny-amg-net/Activiti;2108cc4d4;Merge branch 'master' of https://github.com/tomasz-skonieczny-amg-net/Activiti
+tomasz-skonieczny-amg-net/Activiti;828d96c2b;podpięto activiti-modelera do tabeli bpm_web_flow_data
+M	modules/activiti-engine/src/main/java/org/activiti/engine/RepositoryService.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/RepositoryServiceImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/db/DbSqlSession.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/db/DbSqlSessionFactory.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ModelEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ModelEntityManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/repository/Model.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Model.xml
+M	modules/activiti-modeler/src/main/java/org/activiti/rest/editor/model/ModelEditorJsonRestResource.java
+M	modules/activiti-modeler/src/main/java/org/activiti/rest/editor/model/ModelSaveRestResource.java
+
+tomasz-skonieczny-amg-net/Activiti;e3601bf29;Exclusion of xml-api library from dependenies
+M	pom.xml
+
+tomasz-skonieczny-amg-net/Activiti;26dc32892;Exclusion of xml-api library from dependenies
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-modeler/pom.xml
+M	pom.xml
+
+tomasz-skonieczny-amg-net/Activiti;10da44766;New data type added to activity-modeller (list)
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/FormTypes.java
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/ListFormType.java
+M	modules/activiti-engine/src/test/resources/activiti.cfg.xml
+M	modules/activiti-webapp-explorer2/src/main/resources/stencilset.json
+
+tomasz-skonieczny-amg-net/Activiti;3d487ccac;Refreshed readme
+M	README.md
+
+tomasz-skonieczny-amg-net/Activiti;83e35c1ea;Shows xml file, that is currently being parsed in DEBUG mode
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/BpmnXMLConverter.java
+
+tomasz-skonieczny-amg-net/Activiti;cf0d39295;Merge branch 'master' of https://github.com/tomasz-skonieczny-amg-net/Activiti
+tomasz-skonieczny-amg-net/Activiti;e27f04ac4;Adding new activiti-modeler userTask fields: cssClass, radioButtonGroup
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/constants/BpmnXMLConstants.java
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/BaseBpmnXMLConverter.java
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/BpmnXMLConverter.java
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/child/FormPropertyParser.java
+M	modules/activiti-bpmn-model/src/main/java/org/activiti/bpmn/model/FormProperty.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/DefaultFormHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/EnumFormType.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/FormPropertyHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/FormPropertyImpl.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/constants/StencilConstants.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BaseBpmnJsonConverter.java
+M	modules/activiti-webapp-explorer2/src/main/resources/db.properties
+M	modules/activiti-webapp-explorer2/src/main/resources/stencilset.json
+
+tomasz-skonieczny-amg-net/Activiti;3c21fb81f;test commit
+M	README.md

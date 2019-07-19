@@ -1,0 +1,130 @@
+Heapy/TelegramBots;0f58559;Kotlin models.
+A	model/src/main/java/org/telegram/telegrambots/meta/api/objects/PhotoSize.kt
+A	model/src/main/java/org/telegram/telegrambots/meta/api/objects/ResponseParameters.kt
+A	model/src/main/java/org/telegram/telegrambots/meta/api/objects/Update.kt
+A	model/src/main/java/org/telegram/telegrambots/meta/api/objects/User.kt
+A	model/src/main/java/org/telegram/telegrambots/meta/api/objects/UserProfilePhotos.kt
+A	model/src/main/java/org/telegram/telegrambots/meta/api/objects/Venue.kt
+A	model/src/main/java/org/telegram/telegrambots/meta/api/objects/Video.kt
+A	model/src/main/java/org/telegram/telegrambots/meta/api/objects/VideoNote.kt
+A	model/src/main/java/org/telegram/telegrambots/meta/api/objects/Voice.kt
+A	model/src/main/java/org/telegram/telegrambots/meta/api/objects/WebhookInfo.kt
+D	telegrambots-meta/src/main/java/org/telegram/telegrambots/meta/api/objects/ResponseParameters.java
+
+Heapy/TelegramBots;04c9fc6;Documentation.
+A	docs-src/CHANGELOG.adoc
+R100	TelegramBots.wiki/Errors-Handling.md	docs-src/Errors-Handling.md
+R100	TelegramBots.wiki/FAQ.md	docs-src/FAQ.md
+R100	TelegramBots.wiki/Getting-Started.md	docs-src/Getting-Started.md
+R100	TelegramBots.wiki/Handling-Bot-Tokens.md	docs-src/Handling-Bot-Tokens.md
+A	docs-src/MIGRATION.adoc
+R100	TelegramBots.wiki/Using-Http-Proxy.md	docs-src/Using-Http-Proxy.md
+R100	TelegramBots.wiki/abilities/Additional-Examples.md	docs-src/abilities/Additional-Examples.md
+R100	TelegramBots.wiki/abilities/Advanced.md	docs-src/abilities/Advanced.md
+R100	TelegramBots.wiki/abilities/Bot-Recovery.md	docs-src/abilities/Bot-Recovery.md
+R100	TelegramBots.wiki/abilities/Bot-Testing.md	docs-src/abilities/Bot-Testing.md
+R100	TelegramBots.wiki/abilities/Database-Handling.md	docs-src/abilities/Database-Handling.md
+R100	TelegramBots.wiki/abilities/Hello-Ability.md	docs-src/abilities/Hello-Ability.md
+R100	TelegramBots.wiki/abilities/Simple-Example.md	docs-src/abilities/Simple-Example.md
+R100	TelegramBots.wiki/abilities/Using-Replies.md	docs-src/abilities/Using-Replies.md
+A	docs-src/index.adoc
+
+Heapy/TelegramBots;fd2b9f7;Gradle build.
+A	api/build.gradle.kts
+A	bot-polling/build.gradle.kts
+A	bot-webhook/build.gradle.kts
+A	build.gradle.kts
+A	buildSrc/build.gradle.kts
+A	buildSrc/settings.gradle.kts
+A	buildSrc/src/main/kotlin/Libs.kt
+A	buildSrc/src/main/kotlin/Modules.kt
+A	gradle.properties
+A	gradlew
+A	gradlew.bat
+A	model/build.gradle.kts
+A	settings.gradle.kts
+
+Heapy/TelegramBots;8f10873;Cleanup gitignore
+M	.gitignore
+
+Heapy/TelegramBots;bde42c5;MIT -> GPL
+M	README.md
+
+Heapy/TelegramBots;cf6002b;MIT -> GPL
+M	LICENSE
+
+Heapy/TelegramBots;c1c435d;Migrate to gradle from maven.
+D	Bots.ipr
+D	eclipse configuration.md
+D	jetbrains.png
+D	pom.xml
+D	telegrambots-meta/pom.xml
+D	telegrambots/pom.xml
+
+Heapy/TelegramBots;dda9a38;Delete documentation files not applicable to new docs.
+D	TelegramBots.wiki/Changelog.md
+D	TelegramBots.wiki/Home.md
+D	TelegramBots.wiki/How-To-Update.md
+D	TelegramBots.wiki/_Footer.md
+D	TelegramBots.wiki/_Sidebar.md
+
+Heapy/TelegramBots;22f9488;Delete helper modules we not going to port.
+D	telegrambots-abilities/README.md
+D	telegrambots-abilities/pom.xml
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/bot/AbilityBot.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/bot/AbilityWebhookBot.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/bot/BaseAbilityBot.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/db/BackupMap.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/db/DBContext.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/db/MapDBContext.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/db/MapDBVar.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/db/Var.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/objects/Ability.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/objects/Flag.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/objects/Locality.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/objects/MessageContext.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/objects/Privacy.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/objects/Reply.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/sender/DefaultSender.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/sender/MessageSender.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/sender/SilentSender.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/util/AbilityExtension.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/util/AbilityMessageCodes.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/util/AbilityUtils.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/util/Pair.java
+D	telegrambots-abilities/src/main/java/org/telegram/abilitybots/api/util/Trio.java
+D	telegrambots-abilities/src/main/resources/messages.properties
+D	telegrambots-abilities/src/test/java/org/telegram/abilitybots/api/bot/AbilityBotI18nTest.java
+D	telegrambots-abilities/src/test/java/org/telegram/abilitybots/api/bot/AbilityBotTest.java
+D	telegrambots-abilities/src/test/java/org/telegram/abilitybots/api/bot/DefaultBot.java
+D	telegrambots-abilities/src/test/java/org/telegram/abilitybots/api/bot/ExtensionTest.java
+D	telegrambots-abilities/src/test/java/org/telegram/abilitybots/api/db/MapDBContextTest.java
+D	telegrambots-abilities/src/test/java/org/telegram/abilitybots/api/objects/AbilityTest.java
+D	telegrambots-abilities/src/test/java/org/telegram/abilitybots/api/sender/SilentSenderTest.java
+D	telegrambots-abilities/src/test/resources/messages_it_IT.properties
+D	telegrambots-chat-session-bot/README.md
+D	telegrambots-chat-session-bot/pom.xml
+D	telegrambots-chat-session-bot/src/main/java/org/telegram/telegrambots/session/ChatIdConverter.java
+D	telegrambots-chat-session-bot/src/main/java/org/telegram/telegrambots/session/DefaultChatIdConverter.java
+D	telegrambots-chat-session-bot/src/main/java/org/telegram/telegrambots/session/DefaultChatSessionContext.java
+D	telegrambots-chat-session-bot/src/main/java/org/telegram/telegrambots/session/TelegramLongPollingSessionBot.java
+D	telegrambots-extensions/README.md
+D	telegrambots-extensions/pom.xml
+D	telegrambots-extensions/src/main/java/org/telegram/telegrambots/extensions/bots/commandbot/TelegramLongPollingCommandBot.java
+D	telegrambots-extensions/src/main/java/org/telegram/telegrambots/extensions/bots/commandbot/commands/BotCommand.java
+D	telegrambots-extensions/src/main/java/org/telegram/telegrambots/extensions/bots/commandbot/commands/CommandRegistry.java
+D	telegrambots-extensions/src/main/java/org/telegram/telegrambots/extensions/bots/commandbot/commands/DefaultBotCommand.java
+D	telegrambots-extensions/src/main/java/org/telegram/telegrambots/extensions/bots/commandbot/commands/IBotCommand.java
+D	telegrambots-extensions/src/main/java/org/telegram/telegrambots/extensions/bots/commandbot/commands/ICommandRegistry.java
+D	telegrambots-extensions/src/main/java/org/telegram/telegrambots/extensions/bots/commandbot/commands/helpCommand/HelpCommand.java
+D	telegrambots-extensions/src/main/java/org/telegram/telegrambots/extensions/bots/commandbot/commands/helpCommand/IManCommand.java
+D	telegrambots-extensions/src/main/java/org/telegram/telegrambots/extensions/bots/commandbot/commands/helpCommand/ManCommand.java
+D	telegrambots-extensions/src/main/java/org/telegram/telegrambots/extensions/bots/timedbot/TimedSendLongPollingBot.java
+D	telegrambots-spring-boot-starter/README.md
+D	telegrambots-spring-boot-starter/pom.xml
+D	telegrambots-spring-boot-starter/src/main/java/org/telegram/telegrambots/starter/AfterBotRegistration.java
+D	telegrambots-spring-boot-starter/src/main/java/org/telegram/telegrambots/starter/TelegramBotInitializer.java
+D	telegrambots-spring-boot-starter/src/main/java/org/telegram/telegrambots/starter/TelegramBotStarterConfiguration.java
+D	telegrambots-spring-boot-starter/src/main/resources/META-INF/spring.factories
+D	telegrambots-spring-boot-starter/src/test/java/org/telegram/telegrambots/starter/TestTelegramBotStarterConfiguration.java
+D	telegrambots-spring-boot-starter/src/test/java/org/telegram/telegrambots/starter/TestTelegramBotStarterRegistrationHooks.java

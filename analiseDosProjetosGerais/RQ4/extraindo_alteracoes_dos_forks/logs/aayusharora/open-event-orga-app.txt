@@ -1,0 +1,478 @@
+aayusharora/open-event-orga-app;272e3c4;Merge pull request #27 from niranjan94/feature/qrcode-scan
+aayusharora/open-event-orga-app;b714710;Added QR Code scanning
+M	app/pages/event-attendees/event-attendees.html
+M	app/pages/event-attendees/event-attendees.ts
+
+aayusharora/open-event-orga-app;ba873e3;Added barcode scanner dependency
+M	config.xml
+
+aayusharora/open-event-orga-app;6a39ccf;Remove unnecessary comments
+M	app/pages/event-attendees/event-attendees.html
+M	app/pages/event-attendees/event-attendees.ts
+M	app/pages/event-dashboard/event-dashboard.html
+M	app/pages/event-dashboard/event-dashboard.ts
+M	app/pages/events/events.html
+M	app/pages/events/events.ts
+M	app/pages/login/login.html
+
+aayusharora/open-event-orga-app;1f4a945;Fixed updated script
+M	.travis.yml
+M	scripts/update-apk.sh
+
+aayusharora/open-event-orga-app;cedc192;Updated auto update script to use new branch
+M	scripts/update-apk.sh
+
+aayusharora/open-event-orga-app;580cdc9;Update README.md
+M	README.md
+
+aayusharora/open-event-orga-app;1e7aa9b;Merge pull request #26 from niranjan94/upgrade/ionic-2
+aayusharora/open-event-orga-app;dbc176b;Fix peer deps
+A	npm-shrinkwrap.json
+M	package.json
+
+aayusharora/open-event-orga-app;e5aa86e;Updated README and travis configuration
+M	.travis.yml
+M	README.md
+
+aayusharora/open-event-orga-app;3b6ce00;Added attendees list with check in.out
+A	app/pages/event-attendees/event-attendees.html
+A	app/pages/event-attendees/event-attendees.scss
+A	app/pages/event-attendees/event-attendees.ts
+
+aayusharora/open-event-orga-app;7789cc9;Added event dash board
+A	app/pages/event-dashboard/event-dashboard.html
+A	app/pages/event-dashboard/event-dashboard.scss
+A	app/pages/event-dashboard/event-dashboard.ts
+
+aayusharora/open-event-orga-app;48d9342;Added event picker
+A	app/pages/events/events.html
+A	app/pages/events/events.scss
+A	app/pages/events/events.ts
+
+aayusharora/open-event-orga-app;cb34bc0;Added login page
+A	app/pages/login/login.html
+A	app/pages/login/login.scss
+A	app/pages/login/login.ts
+A	app/theme/_helper.scss
+A	app/theme/app.core.scss
+
+aayusharora/open-event-orga-app;c97089e;Added new services to communicate with the API
+A	app/services/attendees.service.ts
+A	app/services/events.service.ts
+A	app/services/helper.service.ts
+A	app/services/login.service.ts
+A	app/services/user.service.ts
+
+aayusharora/open-event-orga-app;ac77d19;Added interfaces for all API responses
+A	app/interfaces/attende.ts
+A	app/interfaces/event.ts
+A	app/interfaces/order.ts
+A	app/interfaces/ticket.ts
+A	app/interfaces/user.ts
+
+aayusharora/open-event-orga-app;594be9d;Added base app
+A	app/app.html
+A	app/app.ts
+A	app/config.ts
+A	app/theme/app.ios.scss
+A	app/theme/app.md.scss
+A	app/theme/app.variables.scss
+A	app/theme/app.wp.scss
+
+aayusharora/open-event-orga-app;dd0339c;Added new resources
+M	resources/android/icon/drawable-hdpi-icon.png
+M	resources/android/icon/drawable-ldpi-icon.png
+M	resources/android/icon/drawable-mdpi-icon.png
+M	resources/android/icon/drawable-xhdpi-icon.png
+M	resources/android/icon/drawable-xxhdpi-icon.png
+M	resources/android/icon/drawable-xxxhdpi-icon.png
+M	resources/android/splash/drawable-land-hdpi-screen.png
+M	resources/android/splash/drawable-land-ldpi-screen.png
+M	resources/android/splash/drawable-land-mdpi-screen.png
+M	resources/android/splash/drawable-land-xhdpi-screen.png
+M	resources/android/splash/drawable-land-xxhdpi-screen.png
+M	resources/android/splash/drawable-land-xxxhdpi-screen.png
+M	resources/android/splash/drawable-port-hdpi-screen.png
+M	resources/android/splash/drawable-port-ldpi-screen.png
+M	resources/android/splash/drawable-port-mdpi-screen.png
+M	resources/android/splash/drawable-port-xhdpi-screen.png
+M	resources/android/splash/drawable-port-xxhdpi-screen.png
+M	resources/android/splash/drawable-port-xxxhdpi-screen.png
+M	resources/icon.png
+M	resources/ios/icon/icon-40.png
+M	resources/ios/icon/icon-40@2x.png
+A	resources/ios/icon/icon-40@3x.png
+M	resources/ios/icon/icon-50.png
+M	resources/ios/icon/icon-50@2x.png
+M	resources/ios/icon/icon-60.png
+M	resources/ios/icon/icon-60@2x.png
+M	resources/ios/icon/icon-60@3x.png
+M	resources/ios/icon/icon-72.png
+M	resources/ios/icon/icon-72@2x.png
+M	resources/ios/icon/icon-76.png
+M	resources/ios/icon/icon-76@2x.png
+A	resources/ios/icon/icon-83.5@2x.png
+M	resources/ios/icon/icon-small.png
+M	resources/ios/icon/icon-small@2x.png
+M	resources/ios/icon/icon-small@3x.png
+M	resources/ios/icon/icon.png
+M	resources/ios/icon/icon@2x.png
+M	resources/ios/splash/Default-568h@2x~iphone.png
+M	resources/ios/splash/Default-667h.png
+M	resources/ios/splash/Default-736h.png
+M	resources/ios/splash/Default-Landscape-736h.png
+M	resources/ios/splash/Default-Landscape@2x~ipad.png
+M	resources/ios/splash/Default-Landscape~ipad.png
+M	resources/ios/splash/Default-Portrait@2x~ipad.png
+M	resources/ios/splash/Default-Portrait~ipad.png
+M	resources/ios/splash/Default@2x~iphone.png
+M	resources/ios/splash/Default~iphone.png
+M	resources/splash.png
+
+aayusharora/open-event-orga-app;3858517;Added typings
+A	typings.json
+A	typings/globals/es6-shim/index.d.ts
+A	typings/globals/es6-shim/typings.json
+A	typings/globals/moment/index.d.ts
+A	typings/globals/moment/typings.json
+A	typings/index.d.ts
+
+aayusharora/open-event-orga-app;36db60f;Upgrade to Ionic 2.x
+D	.bowerrc
+M	.editorconfig
+M	.gitignore
+D	bower.json
+M	config.xml
+M	gulpfile.js
+M	hooks/README.md
+M	hooks/after_prepare/010_add_platform_class.js
+M	ionic.config.json
+M	package.json
+A	tsconfig.json
+A	tslint.json
+M	www/index.html
+D	www/js/app.js
+D	www/js/config.js
+D	www/js/controllers.js
+D	www/js/controllers/events/attendees_controller.js
+D	www/js/controllers/events/dashboard_controller.js
+D	www/js/controllers/events/picker_controller.js
+D	www/js/controllers/login_controller.js
+D	www/js/directives.js
+D	www/js/routes.js
+D	www/js/services.js
+D	www/js/services/events/attendee_check_in_out_service.js
+D	www/js/services/events/load_attendees_service.js
+D	www/js/services/events/load_event_service.js
+D	www/js/services/events/load_events_service.js
+D	www/js/services/login_service.js
+D	www/js/services/verify_token_service.js
+D	www/lib/ionic/fonts/ionicons.eot
+D	www/lib/ionic/fonts/ionicons.svg
+D	www/lib/ionic/fonts/ionicons.ttf
+D	www/lib/ionic/fonts/ionicons.woff
+D	www/lib/ionic/js/ionic-angular.min.js
+D	www/lib/ionic/js/ionic.min.js
+D	www/lib/ionic/scss/_action-sheet.scss
+D	www/lib/ionic/scss/_animations.scss
+D	www/lib/ionic/scss/_backdrop.scss
+D	www/lib/ionic/scss/_badge.scss
+D	www/lib/ionic/scss/_bar.scss
+D	www/lib/ionic/scss/_button-bar.scss
+D	www/lib/ionic/scss/_button.scss
+D	www/lib/ionic/scss/_checkbox.scss
+D	www/lib/ionic/scss/_form.scss
+D	www/lib/ionic/scss/_grid.scss
+D	www/lib/ionic/scss/_items.scss
+D	www/lib/ionic/scss/_list.scss
+D	www/lib/ionic/scss/_loading.scss
+D	www/lib/ionic/scss/_menu.scss
+D	www/lib/ionic/scss/_mixins.scss
+D	www/lib/ionic/scss/_modal.scss
+D	www/lib/ionic/scss/_platform.scss
+D	www/lib/ionic/scss/_popover.scss
+D	www/lib/ionic/scss/_popup.scss
+D	www/lib/ionic/scss/_progress.scss
+D	www/lib/ionic/scss/_radio.scss
+D	www/lib/ionic/scss/_range.scss
+D	www/lib/ionic/scss/_refresher.scss
+D	www/lib/ionic/scss/_reset.scss
+D	www/lib/ionic/scss/_scaffolding.scss
+D	www/lib/ionic/scss/_select.scss
+D	www/lib/ionic/scss/_slide-box.scss
+D	www/lib/ionic/scss/_slides.scss
+D	www/lib/ionic/scss/_spinner.scss
+D	www/lib/ionic/scss/_tabs.scss
+D	www/lib/ionic/scss/_toggle.scss
+D	www/lib/ionic/scss/_transitions.scss
+D	www/lib/ionic/scss/_type.scss
+D	www/lib/ionic/scss/_util.scss
+D	www/lib/ionic/scss/_variables.scss
+D	www/lib/ionic/scss/ionic.scss
+D	www/lib/ionic/scss/ionicons/_ionicons-font.scss
+D	www/lib/ionic/scss/ionicons/_ionicons-icons.scss
+D	www/lib/ionic/scss/ionicons/_ionicons-variables.scss
+D	www/lib/ionic/scss/ionicons/ionicons.scss
+D	www/lib/ionic/version.json
+D	www/lib/ionicuirouter/ionicUIRouter.js
+D	www/scss/_helper.scss
+D	www/scss/app.scss
+D	www/scss/ionic_addons.scss
+D	www/templates/event/attendees.html
+D	www/templates/event/dashboard.html
+D	www/templates/event_picker.html
+D	www/templates/login.html
+D	www/templates/user/profile_modal.html
+
+aayusharora/open-event-orga-app;0bd8598;Remove unnecessary dependencies (#25)
+aayusharora/open-event-orga-app;f9198c6;Update .travis.yml
+M	.travis.yml
+
+aayusharora/open-event-orga-app;3c1fa0a;Add missing SDK and build tools back
+M	.travis.yml
+
+aayusharora/open-event-orga-app;ece57fe;Update .travis.yml
+M	.travis.yml
+
+aayusharora/open-event-orga-app;e15fb1b;Merge pull request #24 from niranjan94/master
+aayusharora/open-event-orga-app;df7aa94;Added attendee list with check in.out functionality
+M	www/js/controllers/events/attendees_controller.js
+M	www/scss/app.scss
+M	www/templates/event/attendees.html
+
+aayusharora/open-event-orga-app;5fbcdda;Added check in and check out service
+A	www/js/services/events/attendee_check_in_out_service.js
+
+aayusharora/open-event-orga-app;3002243;Updated apk upload script
+M	.travis.yml
+A	scripts/update-apk.sh
+D	update-apk.sh
+
+aayusharora/open-event-orga-app;2cd369c;Merge pull request #23 from niranjan94/gsoc/feature/attendees-list
+aayusharora/open-event-orga-app;0cb7d35;Show a searchable list of attendees
+M	gulpfile.js
+A	www/js/controllers/events/attendees_controller.js
+M	www/js/routes.js
+M	www/scss/app.scss
+A	www/templates/event/attendees.html
+M	www/templates/event/dashboard.html
+
+aayusharora/open-event-orga-app;5468faf;Add script for auto uploading app after each test build. (#21)
+M	.travis.yml
+A	update-apk.sh
+
+aayusharora/open-event-orga-app;bb25e15;Optimized gulp watcher
+M	gulpfile.js
+D	scss/ionic.app.scss
+
+aayusharora/open-event-orga-app;c9e86ed;Merge pull request #19 from niranjan94/feature/event-dashboard-progress
+aayusharora/open-event-orga-app;bdc7f57;Removed unused dependencies.
+M	www/js/app.js
+D	www/lib/ionic/css/ionic.css
+D	www/lib/ionic/css/ionic.min.css
+D	www/lib/ionic/js/ionic-angular.js
+D	www/lib/ionic/js/ionic.bundle.js
+D	www/lib/ionic/js/ionic.bundle.min.js
+D	www/lib/ionic/js/ionic.js
+
+aayusharora/open-event-orga-app;703fc0a;Split services and controllers into seperate files
+M	gulpfile.js
+M	package.json
+M	www/js/controllers.js
+A	www/js/controllers/events/dashboard_controller.js
+A	www/js/controllers/events/picker_controller.js
+A	www/js/controllers/login_controller.js
+M	www/js/services.js
+A	www/js/services/events/load_attendees_service.js
+A	www/js/services/events/load_event_service.js
+A	www/js/services/events/load_events_service.js
+A	www/js/services/login_service.js
+A	www/js/services/verify_token_service.js
+
+aayusharora/open-event-orga-app;058b624;Use states for page switching
+M	www/js/config.js
+M	www/js/controllers.js
+M	www/js/services.js
+
+aayusharora/open-event-orga-app;7b33b3e;Added base user profile modal
+A	www/templates/user/profile_modal.html
+
+aayusharora/open-event-orga-app;63fc0d5;Added tickets and attendance progress bars to the dashboard
+M	www/index.html
+M	www/js/controllers.js
+M	www/templates/event/dashboard.html
+
+aayusharora/open-event-orga-app;f7f390a;Save current authenticated user model to localStore
+M	www/js/services.js
+
+aayusharora/open-event-orga-app;71ee824;Added attendance load service and a builder for promise
+M	www/js/services.js
+
+aayusharora/open-event-orga-app;c0b4f12;Set default route to event picker
+M	www/js/routes.js
+
+aayusharora/open-event-orga-app;c8ef9e2;Use gulp to minify and manage all css assets
+M	gulpfile.js
+D	www/css/ionic.app.css
+A	www/scss/_helper.scss
+A	www/scss/app.scss
+A	www/scss/ionic_addons.scss
+
+aayusharora/open-event-orga-app;0c9fec0;Merge pull request #16 from niranjan94/feature/event-chooser
+aayusharora/open-event-orga-app;5278cd1;Merge pull request #17 from niranjan94/patch-1
+aayusharora/open-event-orga-app;c0bc5ae;Added Node.js installation guidelines to the README
+M	README.md
+
+aayusharora/open-event-orga-app;437cd82;Use plain-old localStorage for persisting JWT token
+M	www/js/app.js
+M	www/js/controllers.js
+M	www/js/services.js
+
+aayusharora/open-event-orga-app;18cc0ab;Fixed codestyle
+M	package.json
+
+aayusharora/open-event-orga-app;f9e29d5;A base event dashboard
+M	package.json
+M	www/js/controllers.js
+D	www/templates/dashboard.html
+A	www/templates/event/dashboard.html
+
+aayusharora/open-event-orga-app;16c7a13;Added event picker to select events
+M	www/js/app.js
+M	www/js/controllers.js
+M	www/js/routes.js
+M	www/js/services.js
+A	www/templates/event_picker.html
+
+aayusharora/open-event-orga-app;be239de;Added service to verify token before page load
+M	www/js/services.js
+
+aayusharora/open-event-orga-app;8a537ec;Added ngStorage for localstorage sync with the view
+M	package.json
+M	www/js/app.js
+M	www/js/services.js
+
+aayusharora/open-event-orga-app;811ee8e;Load ionic dependencies via require calls to maintain modularity
+M	package.json
+M	www/index.html
+M	www/js/app.js
+
+aayusharora/open-event-orga-app;8b14a35;Merge pull request #13 from niranjan94/bug/documentation/readme-node-link
+aayusharora/open-event-orga-app;85510ba;Fixed incorrect README link and added technologies to the tech stack
+M	README.md
+
+aayusharora/open-event-orga-app;e856bad;Merge pull request #12 from niranjan94/master
+aayusharora/open-event-orga-app;9a12041;Added browserify assets generation to travis build script
+M	.travis.yml
+
+aayusharora/open-event-orga-app;3167cd3;Updated readme for gulp
+M	README.md
+
+aayusharora/open-event-orga-app;8931dc8;Added basic login
+M	www/js/controllers.js
+M	www/js/directives.js
+M	www/js/routes.js
+M	www/js/services.js
+M	www/templates/login.html
+
+aayusharora/open-event-orga-app;65dc26c;Added jwt authentication handling
+M	www/js/app.js
+
+aayusharora/open-event-orga-app;6f5a5b5;Use built browserify file
+M	www/index.html
+
+aayusharora/open-event-orga-app;4c8a893;Added app configuration
+M	www/js/config.js
+
+aayusharora/open-event-orga-app;aa9e352;Setup browserify
+M	.gitignore
+M	gulpfile.js
+M	package.json
+A	www/js/config.js
+
+aayusharora/open-event-orga-app;e5da2b7;Merge pull request #7 from niranjan94/gsoc/code-cleanup/comments-code-style
+aayusharora/open-event-orga-app;05111db;Removed src/lib from travis cache
+M	.travis.yml
+
+aayusharora/open-event-orga-app;12ef669;Added helper comments and code style enforced
+M	.bowerrc
+M	.editorconfig
+M	.gitignore
+M	bower.json
+M	config.xml
+M	gulpfile.js
+M	hooks/after_prepare/010_add_platform_class.js
+M	ionic.config.json
+M	package.json
+M	www/css/ionic.app.css
+M	www/index.html
+M	www/js/app.js
+M	www/js/controllers.js
+M	www/js/directives.js
+M	www/js/routes.js
+M	www/js/services.js
+
+aayusharora/open-event-orga-app;f214b8a;Merge pull request #3 from niranjan94/master
+aayusharora/open-event-orga-app;ef428a7;Update node, JDK and android sdk versions
+M	.travis.yml
+M	hooks/after_prepare/010_add_platform_class.js
+
+aayusharora/open-event-orga-app;06d6579;Added README, base app setup with a login page
+M	.travis.yml
+M	README.md
+M	ionic.config.json
+M	scss/ionic.app.scss
+A	www/css/ionic.app.css
+D	www/css/style.css
+D	www/img/ionic.png
+M	www/index.html
+M	www/js/app.js
+A	www/js/controllers.js
+A	www/js/directives.js
+A	www/js/routes.js
+A	www/js/services.js
+M	www/lib/ionic/css/ionic.css
+M	www/lib/ionic/css/ionic.min.css
+D	www/lib/ionic/js/angular-ui/angular-ui-router.js
+D	www/lib/ionic/js/angular-ui/angular-ui-router.min.js
+D	www/lib/ionic/js/angular/angular-animate.js
+D	www/lib/ionic/js/angular/angular-animate.min.js
+D	www/lib/ionic/js/angular/angular-resource.js
+D	www/lib/ionic/js/angular/angular-resource.min.js
+D	www/lib/ionic/js/angular/angular-sanitize.js
+D	www/lib/ionic/js/angular/angular-sanitize.min.js
+D	www/lib/ionic/js/angular/angular.js
+D	www/lib/ionic/js/angular/angular.min.js
+M	www/lib/ionic/js/ionic-angular.js
+M	www/lib/ionic/js/ionic-angular.min.js
+M	www/lib/ionic/js/ionic.bundle.js
+M	www/lib/ionic/js/ionic.bundle.min.js
+M	www/lib/ionic/js/ionic.js
+M	www/lib/ionic/js/ionic.min.js
+M	www/lib/ionic/scss/_bar.scss
+M	www/lib/ionic/scss/_button-bar.scss
+M	www/lib/ionic/scss/_button.scss
+M	www/lib/ionic/scss/_items.scss
+M	www/lib/ionic/scss/_mixins.scss
+M	www/lib/ionic/scss/_scaffolding.scss
+M	www/lib/ionic/scss/_tabs.scss
+M	www/lib/ionic/scss/_toggle.scss
+M	www/lib/ionic/scss/_variables.scss
+M	www/lib/ionic/version.json
+A	www/lib/ionicuirouter/ionicUIRouter.js
+A	www/templates/dashboard.html
+A	www/templates/login.html
+
+aayusharora/open-event-orga-app;338caac;Added base travis.yml
+aayusharora/open-event-orga-app;487e793;Create .travis.yml
+A	.travis.yml
+
+aayusharora/open-event-orga-app;38f5b4a;Update README.md
+M	README.md
+
+aayusharora/open-event-orga-app;88dd15b;Merge pull request #2 from gitter-badger/gitter-badge
+aayusharora/open-event-orga-app;f5acd3a;Update README.md
+M	README.md
+
+aayusharora/open-event-orga-app;75c1a0a;Add Gitter badge
+M	README.md

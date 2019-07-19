@@ -1,0 +1,55 @@
+Tangoe/jhipster-registry;d7afc70;Added a new spring property that can be overridden to set the url of the git repo for configuration
+M	src/main/resources/config/bootstrap.yml
+
+Tangoe/jhipster-registry;7d966bf;Added proxy parameter to config for testing
+M	src/main/resources/config/bootstrap.yml
+
+Tangoe/jhipster-registry;99dc837;Remove more JHipster wording, etc.
+M	src/main/webapp/app/home/home.route.ts
+M	src/main/webapp/index.html
+
+Tangoe/jhipster-registry;ee70059;Removed the "Remember Me" and the "Register User" and the "Forgot Password" link on the login page.  Removed the "Remember Me" because it is a security risk.  The password should be passed on each login.  Also removed the "Register user" and the "Forgot Password" because the registry only has one admin user and that password is set at deployment time.  Also, it did not work.
+M	src/main/webapp/app/shared/login/login.component.html
+
+Tangoe/jhipster-registry;33d967e;update favicon
+M	src/main/webapp/favicon.ico
+
+Tangoe/jhipster-registry;4c3bb9b;Changed some text and logo - starting to remove the jhipster branding
+M	src/main/webapp/app/home/home.component.html
+M	src/main/webapp/app/layouts/footer/footer.component.html
+M	src/main/webapp/app/layouts/navbar/navbar.component.html
+M	src/main/webapp/app/layouts/navbar/navbar.scss
+A	src/main/webapp/content/images/logo-tangoe.gif
+
+Tangoe/jhipster-registry;516915b;fixed location of the native config files and we also no longer ingnore the yarn lock file.  By checking i the yarn lock file, everyone will get the exact same versions of the various npm dependencies.
+M	.gitignore
+M	src/main/resources/config/bootstrap.yml
+
+Tangoe/jhipster-registry;92dcc98;Dead code added to remind myself why alt port for mgt calls won't work
+M	src/main/java/io/github/jhipster/registry/service/ZuulUpdaterService.java
+
+Tangoe/jhipster-registry;e39f9fb;don't track yarn.lock
+M	.gitignore
+
+Tangoe/jhipster-registry;a189088;remove the native active profile form the bootstrap.yml
+M	src/main/resources/config/bootstrap.yml
+
+Tangoe/jhipster-registry;f4a64b5;jhipster registry now goes to a git repo: https://bitbucket.org/tangoedevteam/normandy-test-config-jhipster.git
+M	src/main/resources/config/bootstrap.yml
+
+Tangoe/jhipster-registry;609afc4;added prod build batch file and dev run batch file
+A	build-jhipster-registry-prod.bat
+A	run-jhipster-registry-dev.bat
+
+Tangoe/jhipster-registry;2b1963b;added the encrypt key
+M	src/main/resources/config/bootstrap.yml
+
+Tangoe/jhipster-registry;6aa581b;fix issue with swagger
+M	src/main/resources/config/application.yml
+
+Tangoe/jhipster-registry;7a1439b;added fix for jhipster registry not coming up in eclipse - see: https://github.com/jhipster/jhipster-registry/commit/bc5c286b5e19b8140d7b53b209b23cd28dd7df78 and https://github.com/jhipster/jhipster-registry/issues/185
+M	src/main/resources/config/application.yml
+
+Tangoe/jhipster-registry;60e94ef;updated bootstrap and application-dev profile yml files
+M	src/main/resources/config/application-dev.yml
+M	src/main/resources/config/bootstrap.yml

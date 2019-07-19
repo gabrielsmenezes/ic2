@@ -1,0 +1,42 @@
+SlyDen/DSpace;8781410b6;update from upstream
+SlyDen/DSpace;ba926861b;Update the sherpa romeo response to the full response versions schema
+M	dspace-api/src/main/java/org/dspace/app/sherpa/SHERPAPublisher.java
+M	dspace-api/src/main/java/org/dspace/app/sherpa/SHERPAResponse.java
+M	dspace-api/src/main/java/org/dspace/app/sherpa/SHERPAService.java
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/sherpa/sherpa-policy.jsp
+
+SlyDen/DSpace;61c6deeaf;Renamed the sherpa/romeo activation parameter
+M	dspace-jspui/src/main/java/org/dspace/app/webui/submit/step/JSPUploadStep.java
+M	dspace/config/dspace.cfg
+
+SlyDen/DSpace;4a50da555;DS-1633 Sherpa/Romeo integration in the submission upload step
+A	dspace-api/src/main/java/org/dspace/app/sherpa/SHERPAJournal.java
+A	dspace-api/src/main/java/org/dspace/app/sherpa/SHERPAPublisher.java
+A	dspace-api/src/main/java/org/dspace/app/sherpa/SHERPAResponse.java
+A	dspace-api/src/main/java/org/dspace/app/sherpa/SHERPAService.java
+A	dspace-api/src/main/java/org/dspace/app/sherpa/submit/ISSNItemExtractor.java
+A	dspace-api/src/main/java/org/dspace/app/sherpa/submit/MetadataAuthorityISSNExtractor.java
+A	dspace-api/src/main/java/org/dspace/app/sherpa/submit/MetadataValueISSNExtractor.java
+A	dspace-api/src/main/java/org/dspace/app/sherpa/submit/SHERPASubmitConfigurationService.java
+A	dspace-api/src/main/java/org/dspace/app/sherpa/submit/SHERPASubmitService.java
+A	dspace-api/src/main/java/org/dspace/app/util/XMLUtils.java
+M	dspace-api/src/main/resources/Messages.properties
+A	dspace-api/src/main/resources/spring/spring-dspace-addon-sherpa-configuration-services.xml
+A	dspace-api/src/main/resources/spring/spring-dspace-addon-sherpa-services.xml
+A	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SHERPAPublisherPolicyServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/submit/step/JSPUploadStep.java
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+A	dspace-jspui/src/main/webapp/sherpa/css/sherpa.css
+A	dspace-jspui/src/main/webapp/sherpa/image/ajax-loader-big.gif
+A	dspace-jspui/src/main/webapp/sherpa/image/can.gif
+A	dspace-jspui/src/main/webapp/sherpa/image/cannot.gif
+A	dspace-jspui/src/main/webapp/sherpa/image/restricted.gif
+A	dspace-jspui/src/main/webapp/sherpa/image/romeosmall.gif
+A	dspace-jspui/src/main/webapp/sherpa/sherpa-policy.jsp
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+M	dspace/config/dspace.cfg
+A	dspace/config/spring/api/sherpa.xml
+
+SlyDen/DSpace;0d3745bb8;DS-1422 surround the file name with quotes
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/BitstreamReader.java

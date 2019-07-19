@@ -1,0 +1,451 @@
+ManojMadanmohan/Pokemap;46be738;Use stored credentials (#90)
+M	app/src/main/java/com/omkarmoghe/pokemap/views/LoginActivity.java
+
+ManojMadanmohan/Pokemap;7c51936;Searching pokemons (#87)
+M	app/build.gradle
+A	app/src/main/java/com/omkarmoghe/pokemap/models/events/SearchInPosition.java
+M	app/src/main/java/com/omkarmoghe/pokemap/views/MainActivity.java
+M	app/src/main/java/com/omkarmoghe/pokemap/views/map/MapWrapperFragment.java
+M	app/src/main/res/layout/fragment_map_wrapper.xml
+M	app/src/main/res/values/strings.xml
+
+ManojMadanmohan/Pokemap;312a9a6;Login Screen and Google Authentication  (#70)
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+A	app/src/main/java/com/omkarmoghe/pokemap/controllers/net/GoogleManager.java
+A	app/src/main/java/com/omkarmoghe/pokemap/controllers/net/GoogleService.java
+M	app/src/main/java/com/omkarmoghe/pokemap/controllers/net/NianticManager.java
+A	app/src/main/java/com/omkarmoghe/pokemap/controllers/net/NianticService.java
+A	app/src/main/java/com/omkarmoghe/pokemap/views/GoogleAuthActivity.java
+A	app/src/main/java/com/omkarmoghe/pokemap/views/LoginActivity.java
+M	app/src/main/java/com/omkarmoghe/pokemap/views/MainActivity.java
+A	app/src/main/res/drawable/ic_arrow_back_white.xml
+A	app/src/main/res/layout/activity_google_auth.xml
+A	app/src/main/res/layout/activity_login.xml
+M	app/src/main/res/layout/activity_main.xml
+A	app/src/main/res/layout/toolbar.xml
+M	app/src/main/res/values-v21/styles.xml
+M	app/src/main/res/values/strings.xml
+
+ManojMadanmohan/Pokemap;3429842;Update README.md
+M	README.md
+
+ManojMadanmohan/Pokemap;3d692da;Switched To Buses and Threads (#80)
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+D	app/src/main/java/com/omkarmoghe/pokemap/common/AbstractNianticEventListener.java
+D	app/src/main/java/com/omkarmoghe/pokemap/common/Notifier.java
+R092	app/src/main/java/com/omkarmoghe/pokemap/app_preferences/PokemapAppPreferences.java	app/src/main/java/com/omkarmoghe/pokemap/controllers/app_preferences/PokemapAppPreferences.java
+R095	app/src/main/java/com/omkarmoghe/pokemap/app_preferences/PokemapSharedPreferences.java	app/src/main/java/com/omkarmoghe/pokemap/controllers/app_preferences/PokemapSharedPreferences.java
+R098	app/src/main/java/com/omkarmoghe/pokemap/map/LocationManager.java	app/src/main/java/com/omkarmoghe/pokemap/controllers/map/LocationManager.java
+R097	app/src/main/java/com/omkarmoghe/pokemap/network/NetworkRequestLoggingInterceptor.java	app/src/main/java/com/omkarmoghe/pokemap/controllers/net/NetworkRequestLoggingInterceptor.java
+A	app/src/main/java/com/omkarmoghe/pokemap/controllers/net/NianticManager.java
+A	app/src/main/java/com/omkarmoghe/pokemap/models/events/CatchablePokemonEvent.java
+A	app/src/main/java/com/omkarmoghe/pokemap/models/events/IEvent.java
+A	app/src/main/java/com/omkarmoghe/pokemap/models/events/LoginEventResult.java
+A	app/src/main/java/com/omkarmoghe/pokemap/models/events/ServerUnreachableEvent.java
+A	app/src/main/java/com/omkarmoghe/pokemap/models/events/TokenExpiredEvent.java
+D	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+D	app/src/main/java/com/omkarmoghe/pokemap/utils/Varint.java
+R082	app/src/main/java/com/omkarmoghe/pokemap/common/BaseActivity.java	app/src/main/java/com/omkarmoghe/pokemap/views/BaseActivity.java
+R058	app/src/main/java/com/omkarmoghe/pokemap/MainActivity.java	app/src/main/java/com/omkarmoghe/pokemap/views/MainActivity.java
+R097	app/src/main/java/com/omkarmoghe/pokemap/login/RequestCredentialsDialogFragment.java	app/src/main/java/com/omkarmoghe/pokemap/views/login/RequestCredentialsDialogFragment.java
+R065	app/src/main/java/com/omkarmoghe/pokemap/map/MapWrapperFragment.java	app/src/main/java/com/omkarmoghe/pokemap/views/map/MapWrapperFragment.java
+R094	app/src/main/java/com/omkarmoghe/pokemap/settings/SettingsActivity.java	app/src/main/java/com/omkarmoghe/pokemap/views/settings/SettingsActivity.java
+R097	app/src/main/java/com/omkarmoghe/pokemap/settings/SettingsFragment.java	app/src/main/java/com/omkarmoghe/pokemap/views/settings/SettingsFragment.java
+A	app/src/main/res/drawable-mdpi/Thumbs.db
+A	app/src/main/res/drawable-nodpi/p1.png
+A	app/src/main/res/drawable-nodpi/p10.png
+A	app/src/main/res/drawable-nodpi/p100.png
+A	app/src/main/res/drawable-nodpi/p101.png
+A	app/src/main/res/drawable-nodpi/p102.png
+A	app/src/main/res/drawable-nodpi/p103.png
+A	app/src/main/res/drawable-nodpi/p104.png
+A	app/src/main/res/drawable-nodpi/p105.png
+A	app/src/main/res/drawable-nodpi/p106.png
+A	app/src/main/res/drawable-nodpi/p107.png
+A	app/src/main/res/drawable-nodpi/p108.png
+A	app/src/main/res/drawable-nodpi/p109.png
+A	app/src/main/res/drawable-nodpi/p11.png
+A	app/src/main/res/drawable-nodpi/p110.png
+A	app/src/main/res/drawable-nodpi/p111.png
+A	app/src/main/res/drawable-nodpi/p112.png
+A	app/src/main/res/drawable-nodpi/p113.png
+A	app/src/main/res/drawable-nodpi/p114.png
+A	app/src/main/res/drawable-nodpi/p115.png
+A	app/src/main/res/drawable-nodpi/p116.png
+A	app/src/main/res/drawable-nodpi/p117.png
+A	app/src/main/res/drawable-nodpi/p118.png
+A	app/src/main/res/drawable-nodpi/p119.png
+A	app/src/main/res/drawable-nodpi/p12.png
+A	app/src/main/res/drawable-nodpi/p120.png
+A	app/src/main/res/drawable-nodpi/p121.png
+A	app/src/main/res/drawable-nodpi/p122.png
+A	app/src/main/res/drawable-nodpi/p123.png
+A	app/src/main/res/drawable-nodpi/p124.png
+A	app/src/main/res/drawable-nodpi/p125.png
+A	app/src/main/res/drawable-nodpi/p126.png
+A	app/src/main/res/drawable-nodpi/p127.png
+A	app/src/main/res/drawable-nodpi/p128.png
+A	app/src/main/res/drawable-nodpi/p129.png
+A	app/src/main/res/drawable-nodpi/p13.png
+A	app/src/main/res/drawable-nodpi/p130.png
+A	app/src/main/res/drawable-nodpi/p131.png
+A	app/src/main/res/drawable-nodpi/p132.png
+A	app/src/main/res/drawable-nodpi/p133.png
+A	app/src/main/res/drawable-nodpi/p134.png
+A	app/src/main/res/drawable-nodpi/p135.png
+A	app/src/main/res/drawable-nodpi/p136.png
+A	app/src/main/res/drawable-nodpi/p137.png
+A	app/src/main/res/drawable-nodpi/p138.png
+A	app/src/main/res/drawable-nodpi/p139.png
+A	app/src/main/res/drawable-nodpi/p14.png
+A	app/src/main/res/drawable-nodpi/p140.png
+A	app/src/main/res/drawable-nodpi/p141.png
+A	app/src/main/res/drawable-nodpi/p142.png
+A	app/src/main/res/drawable-nodpi/p143.png
+A	app/src/main/res/drawable-nodpi/p144.png
+A	app/src/main/res/drawable-nodpi/p145.png
+A	app/src/main/res/drawable-nodpi/p146.png
+A	app/src/main/res/drawable-nodpi/p147.png
+A	app/src/main/res/drawable-nodpi/p148.png
+A	app/src/main/res/drawable-nodpi/p149.png
+A	app/src/main/res/drawable-nodpi/p15.png
+A	app/src/main/res/drawable-nodpi/p150.png
+A	app/src/main/res/drawable-nodpi/p151.png
+A	app/src/main/res/drawable-nodpi/p152.png
+A	app/src/main/res/drawable-nodpi/p153.png
+A	app/src/main/res/drawable-nodpi/p154.png
+A	app/src/main/res/drawable-nodpi/p16.png
+A	app/src/main/res/drawable-nodpi/p17.png
+A	app/src/main/res/drawable-nodpi/p18.png
+A	app/src/main/res/drawable-nodpi/p19.png
+A	app/src/main/res/drawable-nodpi/p2.png
+A	app/src/main/res/drawable-nodpi/p20.png
+A	app/src/main/res/drawable-nodpi/p21.png
+A	app/src/main/res/drawable-nodpi/p22.png
+A	app/src/main/res/drawable-nodpi/p23.png
+A	app/src/main/res/drawable-nodpi/p24.png
+A	app/src/main/res/drawable-nodpi/p25.png
+A	app/src/main/res/drawable-nodpi/p26.png
+A	app/src/main/res/drawable-nodpi/p27.png
+A	app/src/main/res/drawable-nodpi/p28.png
+A	app/src/main/res/drawable-nodpi/p29.png
+A	app/src/main/res/drawable-nodpi/p3.png
+A	app/src/main/res/drawable-nodpi/p30.png
+A	app/src/main/res/drawable-nodpi/p31.png
+A	app/src/main/res/drawable-nodpi/p32.png
+A	app/src/main/res/drawable-nodpi/p33.png
+A	app/src/main/res/drawable-nodpi/p34.png
+A	app/src/main/res/drawable-nodpi/p35.png
+A	app/src/main/res/drawable-nodpi/p36.png
+A	app/src/main/res/drawable-nodpi/p37.png
+A	app/src/main/res/drawable-nodpi/p38.png
+A	app/src/main/res/drawable-nodpi/p39.png
+A	app/src/main/res/drawable-nodpi/p4.png
+A	app/src/main/res/drawable-nodpi/p40.png
+A	app/src/main/res/drawable-nodpi/p41.png
+A	app/src/main/res/drawable-nodpi/p41f.png
+A	app/src/main/res/drawable-nodpi/p42.png
+A	app/src/main/res/drawable-nodpi/p43.png
+A	app/src/main/res/drawable-nodpi/p44.png
+A	app/src/main/res/drawable-nodpi/p45.png
+A	app/src/main/res/drawable-nodpi/p46.png
+A	app/src/main/res/drawable-nodpi/p47.png
+A	app/src/main/res/drawable-nodpi/p48.png
+A	app/src/main/res/drawable-nodpi/p49.png
+A	app/src/main/res/drawable-nodpi/p5.png
+A	app/src/main/res/drawable-nodpi/p50.png
+A	app/src/main/res/drawable-nodpi/p51.png
+A	app/src/main/res/drawable-nodpi/p52.png
+A	app/src/main/res/drawable-nodpi/p53.png
+A	app/src/main/res/drawable-nodpi/p54.png
+A	app/src/main/res/drawable-nodpi/p55.png
+A	app/src/main/res/drawable-nodpi/p56.png
+A	app/src/main/res/drawable-nodpi/p57.png
+A	app/src/main/res/drawable-nodpi/p58.png
+A	app/src/main/res/drawable-nodpi/p59.png
+A	app/src/main/res/drawable-nodpi/p6.png
+A	app/src/main/res/drawable-nodpi/p60.png
+A	app/src/main/res/drawable-nodpi/p61.png
+A	app/src/main/res/drawable-nodpi/p62.png
+A	app/src/main/res/drawable-nodpi/p63.png
+A	app/src/main/res/drawable-nodpi/p64.png
+A	app/src/main/res/drawable-nodpi/p64f.png
+A	app/src/main/res/drawable-nodpi/p65.png
+A	app/src/main/res/drawable-nodpi/p65f.png
+A	app/src/main/res/drawable-nodpi/p66.png
+A	app/src/main/res/drawable-nodpi/p67.png
+A	app/src/main/res/drawable-nodpi/p68.png
+A	app/src/main/res/drawable-nodpi/p69.png
+A	app/src/main/res/drawable-nodpi/p7.png
+A	app/src/main/res/drawable-nodpi/p70.png
+A	app/src/main/res/drawable-nodpi/p71.png
+A	app/src/main/res/drawable-nodpi/p72.png
+A	app/src/main/res/drawable-nodpi/p73.png
+A	app/src/main/res/drawable-nodpi/p74.png
+A	app/src/main/res/drawable-nodpi/p75.png
+A	app/src/main/res/drawable-nodpi/p76.png
+A	app/src/main/res/drawable-nodpi/p77.png
+A	app/src/main/res/drawable-nodpi/p78.png
+A	app/src/main/res/drawable-nodpi/p79.png
+A	app/src/main/res/drawable-nodpi/p8.png
+A	app/src/main/res/drawable-nodpi/p80.png
+A	app/src/main/res/drawable-nodpi/p81.png
+A	app/src/main/res/drawable-nodpi/p82.png
+A	app/src/main/res/drawable-nodpi/p83.png
+A	app/src/main/res/drawable-nodpi/p84.png
+A	app/src/main/res/drawable-nodpi/p85.png
+A	app/src/main/res/drawable-nodpi/p86.png
+A	app/src/main/res/drawable-nodpi/p87.png
+A	app/src/main/res/drawable-nodpi/p88.png
+A	app/src/main/res/drawable-nodpi/p89.png
+A	app/src/main/res/drawable-nodpi/p9.png
+A	app/src/main/res/drawable-nodpi/p90.png
+A	app/src/main/res/drawable-nodpi/p91.png
+A	app/src/main/res/drawable-nodpi/p92.png
+A	app/src/main/res/drawable-nodpi/p93.png
+A	app/src/main/res/drawable-nodpi/p94.png
+A	app/src/main/res/drawable-nodpi/p95.png
+A	app/src/main/res/drawable-nodpi/p96.png
+A	app/src/main/res/drawable-nodpi/p97.png
+A	app/src/main/res/drawable-nodpi/p98.png
+A	app/src/main/res/drawable-nodpi/p99.png
+M	app/src/main/res/layout/activity_main.xml
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/layout/fragment_map_wrapper.xml
+M	app/src/main/res/menu/menu_main.xml
+R097	app/src/test/java/com/omkarmoghe/pokemap/app_preferences/PokemapSharedPreferencesTest.java	app/src/test/java/com/omkarmoghe/pokemap/controllers/app_preferences/PokemapSharedPreferencesTest.java
+M	build.gradle
+M	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+
+ManojMadanmohan/Pokemap;18d6575;Google Auth Helper (#77)
+M	app/build.gradle
+M	app/src/main/java/com/omkarmoghe/pokemap/MainActivity.java
+M	app/src/main/java/com/omkarmoghe/pokemap/common/AbstractNianticEventListener.java
+M	app/src/main/java/com/omkarmoghe/pokemap/common/Notifier.java
+D	app/src/main/java/com/omkarmoghe/pokemap/network/LoginType.java
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+
+ManojMadanmohan/Pokemap;829aa8a;Merge branch 'comann-dev' into dev
+ManojMadanmohan/Pokemap;e90398b;Merge branch 'dev' of https://github.com/comann/Pokemap into comann-dev
+ManojMadanmohan/Pokemap;cb04041;Bandaids over the pokegoapi release problem.
+M	app/build.gradle
+A	app/src/main/java/com/omkarmoghe/pokemap/network/LoginType.java
+
+ManojMadanmohan/Pokemap;343a1e4;Fix Settings Crash (#67)
+M	app/build.gradle
+M	app/src/main/java/com/omkarmoghe/pokemap/settings/SettingsFragment.java
+
+ManojMadanmohan/Pokemap;4fdd822;Clean up network logging interceptor (#62)
+D	app/src/main/java/com/omkarmoghe/pokemap/network/LoggingInterceptor.java
+A	app/src/main/java/com/omkarmoghe/pokemap/network/NetworkRequestLoggingInterceptor.java
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+
+ManojMadanmohan/Pokemap;eb7c48f;Demonstrates how to use catchable pokemon.
+M	app/src/main/java/com/omkarmoghe/pokemap/MainActivity.java
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+
+ManojMadanmohan/Pokemap;94ca609;Removes a bunch of old code.
+M	app/src/main/java/com/omkarmoghe/pokemap/common/AbstractNianticEventListener.java
+D	app/src/main/java/com/omkarmoghe/pokemap/common/SimplePokemon.java
+D	app/src/main/java/com/omkarmoghe/pokemap/network/LoggingInterceptor.java
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+D	app/src/main/java/com/omkarmoghe/pokemap/network/NianticService.java
+D	app/src/main/proto/pokemon.proto
+
+ManojMadanmohan/Pokemap;801fc66;Adds a bare bones implementation of NianticEventListener for ease of use.
+A	app/src/main/java/com/omkarmoghe/pokemap/common/AbstractNianticEventListener.java
+
+ManojMadanmohan/Pokemap;0c6cf59;Adds PokemonGo object to onLogin listener.
+M	app/src/main/java/com/omkarmoghe/pokemap/common/Notifier.java
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+
+ManojMadanmohan/Pokemap;3ae2637;Adds in CatchablePokemon.
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+
+ManojMadanmohan/Pokemap;e947a49;Adds listeners and a notifier to dispatch notification from the NianticManager.
+A	app/src/main/java/com/omkarmoghe/pokemap/common/Notifier.java
+
+ManojMadanmohan/Pokemap;529527b;Comments out an example of catching nearby pokemon.
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+
+ManojMadanmohan/Pokemap;2ab94b4;Removes all usages of protobufs in the project.. Replaces login with PtcLogin from pokegoapi.
+M	app/build.gradle
+M	app/src/main/java/com/omkarmoghe/pokemap/MainActivity.java
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+M	build.gradle
+
+ManojMadanmohan/Pokemap;d559465;Merge branch 'dev' of https://github.com/omkarmoghe/Pokemap into dev
+ManojMadanmohan/Pokemap;dc8a056;Created a wrapper for shared preference logic (#43)
+M	app/build.gradle
+D	app/src/androidTest/java/com/omkarmoghe/pokemap/ExampleInstrumentedTest.java
+M	app/src/main/java/com/omkarmoghe/pokemap/MainActivity.java
+A	app/src/main/java/com/omkarmoghe/pokemap/app_preferences/PokemapAppPreferences.java
+A	app/src/main/java/com/omkarmoghe/pokemap/app_preferences/PokemapSharedPreferences.java
+M	app/src/main/java/com/omkarmoghe/pokemap/settings/SettingsActivity.java
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/preferences.xml
+D	app/src/test/java/com/omkarmoghe/pokemap/ExampleUnitTest.java
+A	app/src/test/java/com/omkarmoghe/pokemap/app_preferences/PokemapSharedPreferencesTest.java
+
+ManojMadanmohan/Pokemap;236aada;GPLv3 --> AGPLv3 to match python project
+M	LICENSE
+
+ManojMadanmohan/Pokemap;44e28a7;Merge branch 'dev' of https://github.com/omkarmoghe/Pokemap into dev
+ManojMadanmohan/Pokemap;e3455bb;MIT --> GPL
+M	LICENSE
+
+ManojMadanmohan/Pokemap;2f851a7;Update README.md
+M	README.md
+
+ManojMadanmohan/Pokemap;aee2d7e;Update README.md
+M	README.md
+
+ManojMadanmohan/Pokemap;c01624f;Merge branch 'dev' of https://github.com/omkarmoghe/Pokemap into dev
+ManojMadanmohan/Pokemap;5695ce5;back to manual invites fml
+M	README.md
+
+ManojMadanmohan/Pokemap;bf9e823;Add download badge.
+M	README.md
+
+ManojMadanmohan/Pokemap;25f0686;Adds PokeGoApi as Gradle Dependency (#50)
+M	app/build.gradle
+M	app/proguard-rules.pro
+
+ManojMadanmohan/Pokemap;e8889a9;Merge pull request #52 from MikePT28/local
+ManojMadanmohan/Pokemap;e382341;Added missing pre ids to getNeighbors()
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+
+ManojMadanmohan/Pokemap;8a2ba7f;Adds in pro guard with the new pokegoapi causes dexing issues.
+M	app/proguard-rules.pro
+
+ManojMadanmohan/Pokemap;0799118;-Adds in the PokeGoApi as a dependency. Currently pulls from there master branch.
+M	app/build.gradle
+
+ManojMadanmohan/Pokemap;cbdddfa;Automatically deploy artifacts (test 1)
+M	.travis.yml
+
+ManojMadanmohan/Pokemap;e9ac114;Automatically deploy artifact without commit tag (#44)
+M	.travis.yml
+D	scripts/upload_release_to_github.py
+
+ManojMadanmohan/Pokemap;d74b3d3;wau picture
+M	README.md
+
+ManojMadanmohan/Pokemap;ea8e8ef;Updating repo to use .proto file to generate PokemonOuterClass instead of using hard coded value. (#45)
+M	.travis.yml
+M	app/build.gradle
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+D	app/src/main/java/com/omkarmoghe/pokemap/protobuf/PokemonOuterClass.java
+A	app/src/main/proto/pokemon.proto
+
+ManojMadanmohan/Pokemap;8f5d0e8;im at a pre-school reading level apparently
+M	README.md
+
+ManojMadanmohan/Pokemap;b19f103;added todo
+M	README.md
+
+ManojMadanmohan/Pokemap;960c5aa;slack limits gg
+M	README.md
+
+ManojMadanmohan/Pokemap;b11c7d9;Fix chmod (#41)
+M	.travis.yml
+
+ManojMadanmohan/Pokemap;fd101d6;Add $ANDROID_SDK/ to .gitignore. (#40)
+M	.gitignore
+
+ManojMadanmohan/Pokemap;ae9a713;Add Pokestop/Gym Preference (#38)
+M	app/src/main/res/layout/request_credentials_dialog.xml
+M	app/src/main/res/values/colors.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/preferences.xml
+
+ManojMadanmohan/Pokemap;d200b1a;Add automatic *.apk release uploading (#37)
+M	.travis.yml
+A	scripts/upload_release_to_github.py
+
+ManojMadanmohan/Pokemap;4ee7084;ty based mike
+M	README.md
+
+ManojMadanmohan/Pokemap;df030f2;Minor refactor to getLocation() (#36)
+M	app/src/main/java/com/omkarmoghe/pokemap/map/LocationManager.java
+
+ManojMadanmohan/Pokemap;7f1d31b;Null check on location manager (#35)
+M	app/src/main/java/com/omkarmoghe/pokemap/map/LocationManager.java
+
+ManojMadanmohan/Pokemap;f9c4df4;Update .travis.yml
+M	.travis.yml
+
+ManojMadanmohan/Pokemap;0a2516d;Changes to license and aditional components (#34)
+M	.travis.yml
+
+ManojMadanmohan/Pokemap;7c5f7b2;dat automation tho
+M	README.md
+
+ManojMadanmohan/Pokemap;2e3b3ee;spelling is hard
+M	README.md
+
+ManojMadanmohan/Pokemap;1de60c7;slack email signup
+M	README.md
+
+ManojMadanmohan/Pokemap;5adbcda;Display initial dialog to introduce credentials if they are not already present in the app. (#30)
+M	app/src/main/java/com/omkarmoghe/pokemap/MainActivity.java
+A	app/src/main/java/com/omkarmoghe/pokemap/login/RequestCredentialsDialogFragment.java
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+A	app/src/main/res/layout/request_credentials_dialog.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/preferences.xml
+
+ManojMadanmohan/Pokemap;6395e24;fixed #7
+M	app/src/main/java/com/omkarmoghe/pokemap/MainActivity.java
+M	app/src/main/java/com/omkarmoghe/pokemap/map/MapWrapperFragment.java
+
+ManojMadanmohan/Pokemap;eb27bba;MainActivity: When clicking back, the app should close out (#24)
+M	app/src/main/java/com/omkarmoghe/pokemap/MainActivity.java
+
+ManojMadanmohan/Pokemap;c5552ca;Laid some ground work to get the "getPokemons()" method working (#28)
+M	app/src/main/java/com/omkarmoghe/pokemap/common/BaseActivity.java
+M	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+A	app/src/main/java/com/omkarmoghe/pokemap/utils/Varint.java
+
+ManojMadanmohan/Pokemap;ec7ba9d;Revert "travis build check"
+M	.travis.yml
+
+ManojMadanmohan/Pokemap;5398800;travis build check
+M	.travis.yml
+
+ManojMadanmohan/Pokemap;6741856;removed constriant shit
+M	app/build.gradle
+
+ManojMadanmohan/Pokemap;af3e465;changed multiple things, check commit description (#19)
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/omkarmoghe/pokemap/MainActivity.java
+A	app/src/main/java/com/omkarmoghe/pokemap/common/BaseActivity.java
+A	app/src/main/java/com/omkarmoghe/pokemap/common/SimplePokemon.java
+A	app/src/main/java/com/omkarmoghe/pokemap/map/LocationManager.java
+M	app/src/main/java/com/omkarmoghe/pokemap/map/MapWrapperFragment.java
+A	app/src/main/java/com/omkarmoghe/pokemap/network/LoggingInterceptor.java
+A	app/src/main/java/com/omkarmoghe/pokemap/network/NianticManager.java
+A	app/src/main/java/com/omkarmoghe/pokemap/network/NianticService.java
+M	app/src/main/res/values/strings.xml
+M	build.gradle
+
+ManojMadanmohan/Pokemap;d3f53f9;Update README.md
+M	README.md
+
+ManojMadanmohan/Pokemap;cfb2b5c;Update README.md
+M	README.md
+
+ManojMadanmohan/Pokemap;85c7aeb;rolling versions back to 24.0.0 for the time being
+M	app/build.gradle
+
+ManojMadanmohan/Pokemap;a2a12b0;Improve Settings (#20)
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/omkarmoghe/pokemap/settings/SettingsActivity.java
+M	app/src/main/java/com/omkarmoghe/pokemap/settings/SettingsFragment.java
+M	app/src/main/res/layout/activity_settings.xml
+M	app/src/main/res/values/strings.xml
+M	app/src/main/res/xml/preferences.xml

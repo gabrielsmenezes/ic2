@@ -1,0 +1,294 @@
+233moutian/spring-boot-vue-admin;f9c3bd4;修改时区；新增bike模块，已经有restful的CRUD接口
+M	api/api.iml
+M	api/src/main/java/com/zoctan/api/Application.java
+A	api/src/main/java/com/zoctan/api/controller/admin/BikeController.java
+A	api/src/main/java/com/zoctan/api/mapper/BikeMapper.java
+A	api/src/main/java/com/zoctan/api/model/Bike.java
+A	api/src/main/java/com/zoctan/api/service/BikeService.java
+A	api/src/main/java/com/zoctan/api/service/impl/BikeServiceImpl.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/main/resources/application-prod.properties
+M	api/src/main/resources/application-test.properties
+A	api/src/main/resources/mapper/BikeMapper.xml
+M	api/src/test/java/CodeGenerator.java
+
+233moutian/spring-boot-vue-admin;0325536;新增一个用户详细信息的接口
+M	api/src/main/java/com/zoctan/api/controller/admin/UserController.java
+
+233moutian/spring-boot-vue-admin;dbf2289;去除zxing
+M	api/api.iml
+M	api/pom.xml
+D	api/src/test/java/com/zoctan/api/QrcodeTest.java
+
+233moutian/spring-boot-vue-admin;cd0bb05;解决install会出现的问题
+M	api/README.md
+M	api/src/test/java/com/zoctan/api/BaseTest.java
+
+233moutian/spring-boot-vue-admin;1341848;去除无用代码
+M	api/api.iml
+M	api/pom.xml
+D	api/src/main/java/com/zoctan/api/api/RemitApi.java
+D	api/src/main/java/com/zoctan/api/api/pay/Config.java
+D	api/src/main/java/com/zoctan/api/api/pay/Encrypt.java
+D	api/src/main/java/com/zoctan/api/api/pay/HttpUtil.java
+D	api/src/main/java/com/zoctan/api/api/pay/MkEntity.java
+D	api/src/main/java/com/zoctan/api/api/pay/OrderRTO.java
+D	api/src/main/java/com/zoctan/api/api/pay/ParseResponse.java
+D	api/src/main/java/com/zoctan/api/api/pay/PaymentRTO.java
+D	api/src/main/java/com/zoctan/api/api/pay/RequestParam.java
+D	api/src/main/java/com/zoctan/api/api/pay/SignUtil.java
+D	api/src/main/java/com/zoctan/api/api/pay/TestDemo.java
+D	api/src/main/java/com/zoctan/api/api/pay/TestDownload.java
+D	api/src/main/java/com/zoctan/api/controller/webapi/QrcodeController.java
+D	api/src/main/java/com/zoctan/api/core/config/XMLImportConfig.java
+D	api/src/main/java/com/zoctan/api/core/memcache/MemcacheClient.java
+D	api/src/main/java/com/zoctan/api/core/memcache/XMemcacheClientImpl.java
+D	api/src/main/java/com/zoctan/api/mapper/QrcodeMapper.java
+D	api/src/main/java/com/zoctan/api/model/pay/QrcodeItem.java
+D	api/src/main/java/com/zoctan/api/service/QrcodeService.java
+D	api/src/main/java/com/zoctan/api/service/impl/QrcodeServiceImpl.java
+D	api/src/main/resources/application-memcache.xml
+D	api/src/main/resources/mapper/QrcodeMapper.xml
+M	api/src/test/java/com/zoctan/api/BaseTest.java
+M	api/src/test/java/com/zoctan/api/OtherTest.java
+
+233moutian/spring-boot-vue-admin;3d15448;Merge remote-tracking branch 'spring-boot-vue-admin/master'
+233moutian/spring-boot-vue-admin;75af36b;修复打包成jar后无法访问pem文件的问题。
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/test/java/com/zoctan/api/OtherTest.java
+
+233moutian/spring-boot-vue-admin;313e729;修改端口映射
+D	.gitignore
+M	api/src/main/resources/application-dev.properties
+M	app/config/dev.env.js
+M	app/config/prod.env.js
+M	app/config/test.env.js
+
+233moutian/spring-boot-vue-admin;5815ef2;接入activeMQ；
+M	api/pom.xml
+M	api/src/main/java/com/zoctan/api/controller/admin/ExcelController.java
+M	api/src/main/java/com/zoctan/api/core/container/SystemEnums.java
+M	api/src/main/java/com/zoctan/api/service/impl/QrcodeServiceImpl.java
+M	api/src/main/java/com/zoctan/api/util/DateUtilsZXW.java
+M	api/src/main/resources/application-dev.properties
+
+233moutian/spring-boot-vue-admin;b225943;接入redis;并编写其工具类,已测试并写好注释;修改增加二维码的接口;新增获取二维码的接口;增加二维码及其对应的实体和dao操作;新增系统常量类;新增map工具类;新增时间操作工具类.
+M	api/api.iml
+M	api/src/main/java/com/zoctan/api/controller/webapi/QrcodeController.java
+A	api/src/main/java/com/zoctan/api/core/container/Const.java
+A	api/src/main/java/com/zoctan/api/core/container/SystemEnums.java
+M	api/src/main/java/com/zoctan/api/core/redis/JedisUtil.java
+M	api/src/main/java/com/zoctan/api/core/response/ResultGenerator.java
+A	api/src/main/java/com/zoctan/api/mapper/QrcodeMapper.java
+A	api/src/main/java/com/zoctan/api/model/pay/QrcodeItem.java
+M	api/src/main/java/com/zoctan/api/service/QrcodeService.java
+M	api/src/main/java/com/zoctan/api/service/impl/QrcodeServiceImpl.java
+A	api/src/main/java/com/zoctan/api/util/DateUtils.java
+M	api/src/main/java/com/zoctan/api/util/DateUtilsZXW.java
+A	api/src/main/java/com/zoctan/api/util/MapUtil.java
+A	api/src/main/resources/mapper/QrcodeMapper.xml
+M	api/src/test/java/com/zoctan/api/OtherTest.java
+
+233moutian/spring-boot-vue-admin;88dbfae;增加redis及其工具类,具体使用看工具类描述,暂时使用我自己的redis远程库.
+M	api/pom.xml
+A	api/src/main/java/com/zoctan/api/core/config/JedisConfig.java
+A	api/src/main/java/com/zoctan/api/core/redis/JedisUtil.java
+M	api/src/main/java/com/zoctan/api/service/impl/QrcodeServiceImpl.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/test/java/com/zoctan/api/OtherTest.java
+
+233moutian/spring-boot-vue-admin;b4dbf82;回退角色之前的代码,后台已解决分页bug
+M	app/src/views/role/index.vue
+
+233moutian/spring-boot-vue-admin;e05bdf8;修复角色模块分页异常,将之前的一条sql拆成循环查询的方式,不改变接口返回的参数的数据结构.
+M	api/src/main/java/com/zoctan/api/controller/admin/RoleController.java
+M	api/src/main/java/com/zoctan/api/mapper/RoleMapper.java
+M	api/src/main/java/com/zoctan/api/model/Resource.java
+M	api/src/main/java/com/zoctan/api/model/Role.java
+M	api/src/main/java/com/zoctan/api/service/RoleService.java
+M	api/src/main/java/com/zoctan/api/service/impl/RoleServiceImpl.java
+M	api/src/main/resources/mapper/RoleMapper.xml
+M	api/src/main/resources/test.json
+A	api/src/test/java/com/zoctan/api/BaseTest.java
+M	api/src/test/java/com/zoctan/api/OtherTest.java
+A	api/src/test/java/com/zoctan/api/service/RoleServiceTest.java
+
+233moutian/spring-boot-vue-admin;684388f;角色模块不再分页,直接返回全部.
+M	api/src/main/java/com/zoctan/api/controller/admin/RoleController.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+
+233moutian/spring-boot-vue-admin;65ec794;解决资源模块和角色模块分页bug.
+M	app/src/api/permission.js
+M	app/src/views/login/index.vue
+M	app/src/views/permission/index.vue
+M	app/src/views/role/index.vue
+
+233moutian/spring-boot-vue-admin;886ad67;补提交时间参数校验;JwtAuthenticationFilter还原被注释的代码.
+M	api/src/main/java/com/zoctan/api/controller/webapi/QrcodeController.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+M	api/src/main/java/com/zoctan/api/util/DateUtilsZXW.java
+
+233moutian/spring-boot-vue-admin;ececc19;支付项目api导入;新增MemcacheClient工具;控制层分包为后台管理和api接口;新增二维码接收接口,需要进行签名验证;修复访问匿名访问接口出现的异常.
+M	api/api.iml
+M	api/pom.xml
+A	api/src/main/java/com/zoctan/api/api/RemitApi.java
+A	api/src/main/java/com/zoctan/api/api/pay/Config.java
+A	api/src/main/java/com/zoctan/api/api/pay/Encrypt.java
+A	api/src/main/java/com/zoctan/api/api/pay/HttpUtil.java
+A	api/src/main/java/com/zoctan/api/api/pay/MkEntity.java
+A	api/src/main/java/com/zoctan/api/api/pay/OrderRTO.java
+A	api/src/main/java/com/zoctan/api/api/pay/ParseResponse.java
+A	api/src/main/java/com/zoctan/api/api/pay/PaymentRTO.java
+A	api/src/main/java/com/zoctan/api/api/pay/RequestParam.java
+A	api/src/main/java/com/zoctan/api/api/pay/SignUtil.java
+A	api/src/main/java/com/zoctan/api/api/pay/TestDemo.java
+A	api/src/main/java/com/zoctan/api/api/pay/TestDownload.java
+R098	api/src/main/java/com/zoctan/api/controller/ExcelController.java	api/src/main/java/com/zoctan/api/controller/admin/ExcelController.java
+R098	api/src/main/java/com/zoctan/api/controller/PermissionController.java	api/src/main/java/com/zoctan/api/controller/admin/PermissionController.java
+R097	api/src/main/java/com/zoctan/api/controller/RoleController.java	api/src/main/java/com/zoctan/api/controller/admin/RoleController.java
+R099	api/src/main/java/com/zoctan/api/controller/UserController.java	api/src/main/java/com/zoctan/api/controller/admin/UserController.java
+R095	api/src/main/java/com/zoctan/api/controller/UserRoleController.java	api/src/main/java/com/zoctan/api/controller/admin/UserRoleController.java
+A	api/src/main/java/com/zoctan/api/controller/webapi/QrcodeController.java
+M	api/src/main/java/com/zoctan/api/core/config/WebMvcConfig.java
+M	api/src/main/java/com/zoctan/api/core/config/WebSecurityConfig.java
+A	api/src/main/java/com/zoctan/api/core/config/XMLImportConfig.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationEntryPoint.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+A	api/src/main/java/com/zoctan/api/core/memcache/MemcacheClient.java
+A	api/src/main/java/com/zoctan/api/core/memcache/XMemcacheClientImpl.java
+A	api/src/main/java/com/zoctan/api/service/QrcodeService.java
+A	api/src/main/java/com/zoctan/api/service/impl/QrcodeServiceImpl.java
+A	api/src/main/java/com/zoctan/api/util/AssertUtils.java
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+A	api/src/main/java/com/zoctan/api/util/StringHelper.java
+A	api/src/main/java/com/zoctan/api/util/WebUtils.java
+A	api/src/main/resources/application-memcache.xml
+A	api/src/test/java/com/zoctan/api/OtherTest.java
+A	api/src/test/java/com/zoctan/api/QrcodeTest.java
+
+233moutian/spring-boot-vue-admin;707fa1b;Revert "支付项目api导入"
+M	api/pom.xml
+D	api/src/main/java/com/zoctan/api/api/RemitApi.java
+D	api/src/main/java/com/zoctan/api/api/pay/Config.java
+D	api/src/main/java/com/zoctan/api/api/pay/Encrypt.java
+D	api/src/main/java/com/zoctan/api/api/pay/HttpUtil.java
+D	api/src/main/java/com/zoctan/api/api/pay/MkEntity.java
+D	api/src/main/java/com/zoctan/api/api/pay/OrderRTO.java
+D	api/src/main/java/com/zoctan/api/api/pay/ParseResponse.java
+D	api/src/main/java/com/zoctan/api/api/pay/PaymentRTO.java
+D	api/src/main/java/com/zoctan/api/api/pay/RequestParam.java
+D	api/src/main/java/com/zoctan/api/api/pay/SignUtil.java
+D	api/src/main/java/com/zoctan/api/api/pay/TestDemo.java
+D	api/src/main/java/com/zoctan/api/api/pay/TestDownload.java
+
+233moutian/spring-boot-vue-admin;c96d8d7;修改初始化步骤
+M	api/resetDB.sh
+M	api/src/test/resources/dev/sql/admin_dev.sql
+
+233moutian/spring-boot-vue-admin;9143990;支付项目api导入
+M	api/pom.xml
+A	api/src/main/java/com/zoctan/api/api/RemitApi.java
+A	api/src/main/java/com/zoctan/api/api/pay/Config.java
+A	api/src/main/java/com/zoctan/api/api/pay/Encrypt.java
+A	api/src/main/java/com/zoctan/api/api/pay/HttpUtil.java
+A	api/src/main/java/com/zoctan/api/api/pay/MkEntity.java
+A	api/src/main/java/com/zoctan/api/api/pay/OrderRTO.java
+A	api/src/main/java/com/zoctan/api/api/pay/ParseResponse.java
+A	api/src/main/java/com/zoctan/api/api/pay/PaymentRTO.java
+A	api/src/main/java/com/zoctan/api/api/pay/RequestParam.java
+A	api/src/main/java/com/zoctan/api/api/pay/SignUtil.java
+A	api/src/main/java/com/zoctan/api/api/pay/TestDemo.java
+A	api/src/main/java/com/zoctan/api/api/pay/TestDownload.java
+
+233moutian/spring-boot-vue-admin;a5ef5d7;当前数据库数据,比之前多了资源的管理数据
+A	api/src/test/resources/dev/sql/admin_dev.sql
+
+233moutian/spring-boot-vue-admin;6e9526a;Merge remote-tracking branch 'spring-boot-vue-admin/master'
+233moutian/spring-boot-vue-admin;b8c33a0;update 1.png
+A	README/1.png
+
+233moutian/spring-boot-vue-admin;d358ac0;Delete 1.png
+D	README/1.png
+
+233moutian/spring-boot-vue-admin;272b57d;update png
+M	README.md
+
+233moutian/spring-boot-vue-admin;15c5322;update png
+A	README/1.png
+
+233moutian/spring-boot-vue-admin;9283139;Delete 1.png
+D	README/1.png
+
+233moutian/spring-boot-vue-admin;264d227;Delete 1.png
+D	README/1.png
+
+233moutian/spring-boot-vue-admin;4dc35f3;回退为之前修改pem文件的版本
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+M	api/src/main/resources/rsa/private-key.pem
+M	api/src/main/resources/rsa/public-key.pem
+
+233moutian/spring-boot-vue-admin;726b7d5;补充上次push忘记的类
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+
+233moutian/spring-boot-vue-admin;728022f;修改测试启动方法,在linux环境上进行测试
+M	api/src/test/java/com/zoctan/api/UserControllerTest.java
+
+233moutian/spring-boot-vue-admin;f86ddc9;秘钥对的处理还原为之前的文本,因为这个文本是不会去修改的,只能通过改加载秘钥代码的方式来修复此bug
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+M	api/src/main/resources/rsa/private-key.pem
+M	api/src/main/resources/rsa/public-key.pem
+M	api/src/test/java/com/zoctan/api/UserControllerTest.java
+
+233moutian/spring-boot-vue-admin;bed038c;权限资源模块完成增删差改操作
+A	app/src/api/permission.js
+M	app/src/permission.js
+M	app/src/router/index.js
+D	app/src/views/dashboard/index.vue
+A	app/src/views/permission/index.vue
+M	app/src/views/role/index.vue
+
+233moutian/spring-boot-vue-admin;8ff3feb;增加permission的CRUD操作
+M	api/README.md
+M	api/src/main/java/com/zoctan/api/controller/PermissionController.java
+M	api/src/main/resources/application-dev.properties
+
+233moutian/spring-boot-vue-admin;6b780e7;添加注释,完善文档
+M	README.md
+M	api/src/main/java/com/zoctan/api/core/config/WebSecurityConfig.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JWTSetting.java
+M	api/src/main/java/com/zoctan/api/core/jwt/JwtAuthenticationFilter.java
+
+233moutian/spring-boot-vue-admin;59faadf;添加远程数据库;修改端口映射
+M	api/api.iml
+M	api/src/main/resources/application-dev.properties
+
+233moutian/spring-boot-vue-admin;aef43e4;解决部分bug;本地化项目成功,并加入了exl的功能;
+M	api/pom.xml
+M	api/resetDB.sh
+A	api/src/main/java/com/zoctan/api/controller/ExcelController.java
+A	api/src/main/java/com/zoctan/api/model/Article.java
+A	api/src/main/java/com/zoctan/api/util/DateUtilsZXW.java
+M	api/src/main/java/com/zoctan/api/util/RSAUtil.java
+M	api/src/main/resources/application-dev.properties
+M	api/src/main/resources/application.properties
+M	api/src/main/resources/rsa/private-key.pem
+M	api/src/main/resources/rsa/public-key.pem
+A	api/src/main/resources/test.json
+
+233moutian/spring-boot-vue-admin;719be3d;本地化项目成功,并加入了exl的功能
+M	app/package-lock.json
+M	app/package.json
+A	app/src/api/article.js
+A	app/src/components/UploadExcel/index.vue
+M	app/src/router/index.js
+M	app/src/utils/index.js
+A	app/src/vendor/Blob.js
+A	app/src/vendor/Export2Excel.js
+A	app/src/vendor/Export2Zip.js
+A	app/src/views/excel/exportExcel.vue
+A	app/src/views/excel/selectExcel.vue
+A	app/src/views/excel/uploadExcel.vue
+M	app/src/views/layout/components/Sidebar/SidebarItem.vue
+M	app/src/views/layout/components/Sidebar/index.vue
+M	app/src/views/userCenter/index.vue

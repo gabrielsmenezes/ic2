@@ -1,0 +1,103 @@
+hxy1991/nacos;a9a06793;Fixes #240 #826 #827 #828
+M	client/pom.xml
+M	client/src/main/java/com/alibaba/nacos/client/config/NacosConfigService.java
+M	client/src/main/java/com/alibaba/nacos/client/config/http/ServerHttpAgent.java
+M	client/src/main/java/com/alibaba/nacos/client/config/impl/CacheData.java
+M	client/src/main/java/com/alibaba/nacos/client/config/impl/ClientWorker.java
+M	client/src/main/java/com/alibaba/nacos/client/config/impl/EventDispatcher.java
+M	client/src/main/java/com/alibaba/nacos/client/config/impl/Limiter.java
+M	client/src/main/java/com/alibaba/nacos/client/config/impl/LocalConfigInfoProcessor.java
+M	client/src/main/java/com/alibaba/nacos/client/config/impl/ServerListManager.java
+M	client/src/main/java/com/alibaba/nacos/client/config/listener/impl/PropertiesListener.java
+M	client/src/main/java/com/alibaba/nacos/client/config/utils/ConcurrentDiskUtil.java
+M	client/src/main/java/com/alibaba/nacos/client/config/utils/JVMUtil.java
+D	client/src/main/java/com/alibaba/nacos/client/config/utils/LogUtils.java
+M	client/src/main/java/com/alibaba/nacos/client/identify/CredentialService.java
+M	client/src/main/java/com/alibaba/nacos/client/identify/CredentialWatcher.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/Level.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/Logger.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/LoggerFactory.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/JSONArray.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/JSONAware.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/JSONObject.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/JSONStreamAware.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/JSONValue.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/parser/ContainerFactory.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/parser/ContentHandler.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/parser/JSONParser.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/parser/ParseException.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/parser/Yylex.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/json/parser/Yytoken.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/log4j2/Log4j2Logger.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/log4j2/Log4j2LoggerFactory.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/nop/NopLogger.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/nop/NopLoggerFactory.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/option/AbstractActiveOption.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/option/ActivateOption.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/option/Log4j2ActivateOption.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/option/Logback918ActivateOption.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/option/LogbackActivateOption.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/option/LogbackLoggerContextUtil.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/option/Slf4jLog4j2AdapterActivateOption.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/slf4j/Slf4jLogger.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/slf4j/Slf4jLoggerFactory.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/support/AppenderInfo.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/support/ErrorLog.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/support/ILoggerFactory.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/support/LogLog.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/support/LogbackHelper.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/support/LoggerHelper.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/support/LoggerInfo.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/support/LoggerSupport.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/util/FormattingTuple.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/util/MessageFormatter.java
+D	client/src/main/java/com/alibaba/nacos/client/logger/util/MessageUtil.java
+A	client/src/main/java/com/alibaba/nacos/client/logging/AbstractNacosLogging.java
+A	client/src/main/java/com/alibaba/nacos/client/logging/log4j2/Log4J2NacosLogging.java
+A	client/src/main/java/com/alibaba/nacos/client/logging/logback/LogbackNacosLogging.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/NacosNamingService.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/backups/FailoverReactor.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/beat/BeatReactor.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/cache/ConcurrentDiskUtil.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/cache/DiskCache.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/core/Balancer.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/core/EventDispatcher.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/core/HostReactor.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/core/PushReceiver.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/net/HttpClient.java
+M	client/src/main/java/com/alibaba/nacos/client/naming/net/NamingProxy.java
+D	client/src/main/java/com/alibaba/nacos/client/naming/utils/LogUtils.java
+M	client/src/main/java/com/alibaba/nacos/client/utils/EnvUtil.java
+A	client/src/main/java/com/alibaba/nacos/client/utils/LogUtils.java
+M	client/src/main/java/com/alibaba/nacos/client/utils/ParamUtil.java
+A	client/src/main/resources/nacos-log4j2.xml
+A	client/src/main/resources/nacos-logback.xml
+A	common/src/main/java/com/alibaba/nacos/common/util/ClassUtils.java
+R079	config/src/main/java/com/alibaba/nacos/config/server/utils/ResourceUtils.java	common/src/main/java/com/alibaba/nacos/common/util/ResourceUtils.java
+M	pom.xml
+
+hxy1991/nacos;6fff9fd4;Merge branch 'upstream-develop'
+hxy1991/nacos;c17047d1;Merge remote-tracking branch 'upstream/develop' into upstream-develop
+hxy1991/nacos;94cd40a3;Merge branch 'upstream-develop'
+hxy1991/nacos;a1472f26;Merge remote-tracking branch 'upstream/develop' into upstream-develop
+hxy1991/nacos;ec09316a;Merge remote-tracking branch 'upstream/develop' into upstream-develop
+hxy1991/nacos;f29865e5;Merge remote-tracking branch 'upstream/develop' into upstream-develop
+hxy1991/nacos;faea72c6;Merge branch 'upstream-master'
+hxy1991/nacos;ed0f53da;Merge remote-tracking branch 'upstream/develop' into upstream-develop
+hxy1991/nacos;2e1f4680;Merge remote-tracking branch 'upstream/develop' into upstream-develop
+hxy1991/nacos;2c4bdf8f;Merge remote-tracking branch 'upstream/develop' into upstream-develop
+hxy1991/nacos;790c2edc;Merge remote-tracking branch 'upstream/develop' into upstream-develop
+hxy1991/nacos;953c3863;Merge remote-tracking branch 'upstream/develop' into upstream-develop
+hxy1991/nacos;6cd6c8bd;Merge branch 'master' into upstream-develop
+hxy1991/nacos;ea1046f0;Fixes #268
+M	distribution/bin/health-check.sh
+M	distribution/bin/startup.sh
+
+hxy1991/nacos;84b79d6e;Merge branch 'upstream-develop'
+hxy1991/nacos;807133d7;Merge branch 'upstream-develop'
+hxy1991/nacos;2ef7fbec;Fixes #268
+M	distribution/bin/health-check.sh
+
+hxy1991/nacos;d16f86f8;Fixes #268
+A	distribution/bin/health-check.sh
+M	distribution/bin/startup.sh

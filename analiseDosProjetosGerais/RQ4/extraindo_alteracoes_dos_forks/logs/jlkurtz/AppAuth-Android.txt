@@ -1,0 +1,6 @@
+jlkurtz/AppAuth-Android;42b67db;Merge pull request #1 from jlkurtz/feature/keycloak
+jlkurtz/AppAuth-Android;d06169d;Keycloak as IDP and redirect to HTML to acknowledge IDP response. * Two intent filters for redirect activity   * One for initial sign in requiring user interaction   * One for subsequent sign in attempts, while IDP session is active, because Chrome Custom Tab requires user interaction before returning to app * Redirect HTML page for subsequent sign in's
+M	app/AndroidManifest.xml
+M	app/res/raw/auth_config.json
+M	build.gradle
+A	public/LibraryCrawlRedirect.html

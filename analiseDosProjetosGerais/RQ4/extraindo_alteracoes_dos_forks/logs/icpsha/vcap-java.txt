@@ -1,0 +1,58 @@
+icpsha/vcap-java;63bcc4f;Merge remote-tracking branch 'shahulp/virgo'
+icpsha/vcap-java;c856739;Update pom
+M	osgi_autostager/pom.xml
+
+icpsha/vcap-java;c2cc12e;cleaned the test directory
+D	osgi_autostager/src/test/java/com/sap/shahul/readme.txt
+
+icpsha/vcap-java;0f075e6;Lean autostager (only for relational database)
+A	osgi_autostager/pom.xml
+A	osgi_autostager/src/main/java/org/cloudfoundry/osgi/reconfiguration/CloudAutoStagingOsgiBFPostProcessor.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/reconfiguration/AbstractServiceConfigurer.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/reconfiguration/CloudAutoStagingBeanFactoryPostProcessor.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/reconfiguration/CloudAutoStagingRuntimeException.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/reconfiguration/Configurer.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/reconfiguration/PropertyReplacer.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/reconfiguration/data/orm/HibernateConfigurer.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/reconfiguration/data/orm/JpaConfigurer.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/reconfiguration/data/orm/JpaVendorConfigurer.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/reconfiguration/data/relational/DataSourceConfigurer.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/env/AbstractDataSourceServiceInfo.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/env/AbstractServiceInfo.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/env/ApplicationInstanceInfo.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/env/BaseServiceInfo.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/env/CloudEnvironment.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/env/CloudPropertiesFactoryBean.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/env/CloudServiceException.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/env/MysqlServiceInfo.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/env/PostgresqlServiceInfo.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/env/RdbmsServiceInfo.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/service/AbstractCloudServiceFactory.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/service/AbstractDataSourceCreator.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/service/AbstractServiceCreator.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/service/CloudPoolConfiguration.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/service/CloudServicesScanner.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/service/relational/CloudConnectionConfiguration.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/service/relational/CloudDataSourceFactory.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/service/relational/MysqlServiceCreator.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/service/relational/PostgresqlServiceCreator.java
+A	osgi_autostager/src/main/java/org/cloudfoundry/runtime/service/relational/RdbmsServiceCreator.java
+A	osgi_autostager/src/main/resources/META-INF/MANIFEST.MF
+A	osgi_autostager/src/main/resources/META-INF/spring/extender/bundle-context.xml
+A	osgi_autostager/src/test/java/com/sap/shahul/readme.txt
+A	osgi_autostager/src/test/resources/log4j.properties
+
+icpsha/vcap-java;3946af5;Added Eclipse Virgo as framework
+A	plugins/org.cloudfoundry.plugins.common/pom.xml
+A	plugins/org.cloudfoundry.plugins.common/src/main/java/org/cloudfoundry/util/StateFileHelper.java
+A	plugins/org.cloudfoundry.plugins.tomcat/pom.xml
+R063	plugins/tomcat_startup_listener/src/main/java/com/vmware/appcloud/tomcat/AppCloudLifecycleListener.java	plugins/org.cloudfoundry.plugins.tomcat/src/main/java/com/vmware/appcloud/tomcat/AppCloudLifecycleListener.java
+R100	plugins/tomcat_startup_listener/src/main/java/com/vmware/appcloud/tomcat/TomcatStartupListener.java	plugins/org.cloudfoundry.plugins.tomcat/src/main/java/com/vmware/appcloud/tomcat/TomcatStartupListener.java
+A	plugins/org.cloudfoundry.plugins.virgo/pom.xml
+A	plugins/org.cloudfoundry.plugins.virgo/src/main/java/org/cloudfoundry/virgo/startup/VirgoStartupListener.java
+M	plugins/pom.xml
+D	plugins/tomcat_startup_listener/pom.xml
+A	virgo-setup/Rakefile
+A	virgo-setup/resources/config/tomcat-server.xml
+A	virgo-setup/resources/pickup/org.cloudfoundry.plugins.virgo-1.0.jar
+A	virgo-setup/virgo_manifest.yml

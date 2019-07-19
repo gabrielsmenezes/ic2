@@ -1,0 +1,157 @@
+GlennioTech/CustomExoMedia;8934df8;updated ecxo player version to 2.8.3
+M	library/src/main/java/com/devbrackets/android/exomedia/core/exoplayer/ExoMediaPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/renderer/RendererProvider.java
+
+GlennioTech/CustomExoMedia;008be46;going to take pull of fork
+M	demo/build.gradle
+M	library/build.gradle
+
+GlennioTech/CustomExoMedia;753cd44;updated android tools gradle
+M	build.gradle
+
+GlennioTech/CustomExoMedia;4748019;refractoring
+M	library/src/main/AndroidManifest.xml
+M	library/src/main/java/com/devbrackets/android/exomedia/AudioPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ExoMedia.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/api/VideoViewApi.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/audio/ExoAudioPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/exoplayer/ExoMediaPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/renderer/RendererProvider.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/MediaSourceProvider.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/DashMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/HlsMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/SsMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/ResizingSurfaceView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/ResizingTextureView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/exo/ExoSurfaceVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/exo/ExoTextureVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/exo/ExoVideoDelegate.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/mp/NativeSurfaceVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/mp/NativeVideoDelegate.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/scale/MatrixManager.java
+M	library/src/main/java/com/devbrackets/android/exomedia/listener/OnVideoSizeChangedListener.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/FitsSystemWindowRelativeLayout.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/VideoControls.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/VideoControlsLeanback.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/VideoControlsMobile.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/VideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/util/DeviceUtil.java
+M	library/src/main/java/com/devbrackets/android/exomedia/util/MediaSourceUtil.java
+M	library/src/main/java/com/devbrackets/android/exomedia/util/Repeater.java
+M	library/src/main/java/com/devbrackets/android/exomedia/util/ResourceUtil.java
+M	library/src/main/java/com/devbrackets/android/exomedia/util/StopWatch.java
+M	library/src/main/java/com/devbrackets/android/exomedia/util/regexp/GroupInfo.java
+M	library/src/main/java/com/devbrackets/android/exomedia/util/regexp/MatchResult.java
+M	library/src/main/java/com/devbrackets/android/exomedia/util/regexp/Matcher.java
+M	library/src/main/java/com/devbrackets/android/exomedia/util/regexp/Pattern.java
+M	library/src/main/res/color/exomedia_default_controls_button_selector.xml
+M	library/src/main/res/drawable-v21/exomedia_leanback_progress_horizontal.xml
+M	library/src/main/res/drawable-v21/exomedia_leanback_ripple_selector.xml
+M	library/src/main/res/drawable/exomedia_default_controls_interactive_background.xml
+M	library/src/main/res/drawable/exomedia_default_controls_text_background.xml
+M	library/src/main/res/drawable/exomedia_ic_fast_forward_white.xml
+M	library/src/main/res/drawable/exomedia_ic_pause_white.xml
+M	library/src/main/res/drawable/exomedia_ic_play_arrow_white.xml
+M	library/src/main/res/drawable/exomedia_ic_rewind_white.xml
+M	library/src/main/res/drawable/exomedia_ic_skip_next_white.xml
+M	library/src/main/res/drawable/exomedia_ic_skip_previous_white.xml
+M	library/src/main/res/layout-v21/exomedia_default_controls_leanback.xml
+M	library/src/main/res/layout/exomedia_default_controls_mobile.xml
+M	library/src/main/res/layout/exomedia_default_exo_surface_video_view.xml
+M	library/src/main/res/layout/exomedia_default_exo_texture_video_view.xml
+M	library/src/main/res/layout/exomedia_default_native_surface_video_view.xml
+M	library/src/main/res/layout/exomedia_default_native_texture_video_view.xml
+M	library/src/main/res/layout/exomedia_video_view_layout.xml
+M	library/src/main/res/values/attributes.xml
+
+GlennioTech/CustomExoMedia;73312d8;changed user agent to chrome
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/MediaSourceProvider.java
+
+GlennioTech/CustomExoMedia;8445e7f;Fix User-Agent getting overwritten issue
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/DashMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/DefaultMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/HlsMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/MediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/SsMediaSourceBuilder.java
+
+GlennioTech/CustomExoMedia;23d0023;final subs scene complete
+M	library/build.gradle
+D	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/subtitle/CaptionsView.java
+D	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/subtitle/DownloadCallback.java
+D	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/subtitle/DownloadFile.java
+D	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/subtitle/from_exo/CaptionsView.java
+
+GlennioTech/CustomExoMedia;c942737;finally upstream in sync now
+M	library/build.gradle
+M	library/src/main/java/com/devbrackets/android/exomedia/core/exoplayer/ExoMediaPlayer.java
+
+GlennioTech/CustomExoMedia;a54d0e1;removed publish on maven code
+M	library/build.gradle
+
+GlennioTech/CustomExoMedia;7ae55d2;merge
+GlennioTech/CustomExoMedia;7951d68;sunbtitles construcition in progress
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/MediaSourceProvider.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/DefaultMediaSourceBuilder.java
+A	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/subtitle/CaptionsView.java
+A	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/subtitle/DownloadCallback.java
+A	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/subtitle/DownloadFile.java
+A	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/subtitle/from_exo/CaptionsView.java
+A	library/src/main/java/com/devbrackets/android/exomedia/util/regexp/GroupInfo.java
+A	library/src/main/java/com/devbrackets/android/exomedia/util/regexp/MatchResult.java
+A	library/src/main/java/com/devbrackets/android/exomedia/util/regexp/Matcher.java
+A	library/src/main/java/com/devbrackets/android/exomedia/util/regexp/Pattern.java
+M	library/src/main/res/values/dimen.xml
+
+GlennioTech/CustomExoMedia;92360f2;haders support
+M	library/src/main/java/com/devbrackets/android/exomedia/core/api/VideoViewApi.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/exoplayer/ExoMediaPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/MediaSourceProvider.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/DashMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/DefaultMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/HlsMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/MediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/SsMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/exo/ExoSurfaceVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/exo/ExoTextureVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/exo/ExoVideoDelegate.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/mp/NativeSurfaceVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/mp/NativeTextureVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/VideoView.java
+
+GlennioTech/CustomExoMedia;418ed9c;Revert to old commit
+M	build.gradle
+M	demo/src/main/java/com/devbrackets/android/exomediademo/adapter/SampleListAdapter.java
+M	demo/src/main/java/com/devbrackets/android/exomediademo/adapter/StartupListAdapter.java
+M	demo/src/main/java/com/devbrackets/android/exomediademo/ui/activity/AudioPlayerActivity.java
+M	demo/src/main/java/com/devbrackets/android/exomediademo/ui/activity/StartupActivity.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/ListenerMux.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/exoplayer/ExoMediaPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/listener/InternalErrorListener.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/renderer/RendererProvider.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/MediaSourceProvider.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/mp/NativeVideoDelegate.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/scale/MatrixManager.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/FitsSystemWindowRelativeLayout.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/VideoControls.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/VideoControlsLeanback.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/VideoControlsMobile.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/VideoView.java
+
+GlennioTech/CustomExoMedia;cfac369;Merge remote-tracking branch 'upstream/master'
+GlennioTech/CustomExoMedia;8fb053a;support for different video and audio channels
+M	library/build.gradle
+M	library/src/main/java/com/devbrackets/android/exomedia/core/api/VideoViewApi.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/audio/ExoAudioPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/exoplayer/ExoMediaPlayer.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/MediaSourceProvider.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/DashMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/DefaultMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/HlsMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/MediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/source/builder/SsMediaSourceBuilder.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/exo/ExoSurfaceVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/exo/ExoTextureVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/exo/ExoVideoDelegate.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/mp/NativeSurfaceVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/core/video/mp/NativeTextureVideoView.java
+M	library/src/main/java/com/devbrackets/android/exomedia/ui/widget/VideoView.java

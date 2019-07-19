@@ -1,0 +1,1066 @@
+EDUCACAO-LIVRE/DSpace;15cab1342;Correção de links no helper
+M	dspace-jspui/src/main/webapp/help/index.html
+
+EDUCACAO-LIVRE/DSpace;f4d0dd155;Corrigidos todos os links e referencias do help
+A	dspace-jspui/src/main/webapp/help/aval1.png
+A	dspace-jspui/src/main/webapp/help/aval2.png
+A	dspace-jspui/src/main/webapp/help/aval3.png
+A	dspace-jspui/src/main/webapp/help/aval4.png
+A	dspace-jspui/src/main/webapp/help/aval5.png
+A	dspace-jspui/src/main/webapp/help/aval6.png
+A	dspace-jspui/src/main/webapp/help/barr1.jpg
+A	dspace-jspui/src/main/webapp/help/barr1.png
+A	dspace-jspui/src/main/webapp/help/blue-conteudo.svg
+A	dspace-jspui/src/main/webapp/help/bootstrap-educacaolivre.css
+A	dspace-jspui/src/main/webapp/help/buscar1.jpg
+A	dspace-jspui/src/main/webapp/help/buscar1.png
+A	dspace-jspui/src/main/webapp/help/col1.jpg
+A	dspace-jspui/src/main/webapp/help/col1.png
+A	dspace-jspui/src/main/webapp/help/comcol1.jpg
+A	dspace-jspui/src/main/webapp/help/comcol1.png
+A	dspace-jspui/src/main/webapp/help/facets1.jpg
+A	dspace-jspui/src/main/webapp/help/facets1.png
+M	dspace-jspui/src/main/webapp/help/index.html
+A	dspace-jspui/src/main/webapp/help/logo.svg
+A	dspace-jspui/src/main/webapp/help/nav1.png
+A	dspace-jspui/src/main/webapp/help/nav2.png
+A	dspace-jspui/src/main/webapp/help/nav3.png
+A	dspace-jspui/src/main/webapp/help/nav4.png
+A	dspace-jspui/src/main/webapp/help/nav5.png
+A	dspace-jspui/src/main/webapp/help/nav6.png
+A	dspace-jspui/src/main/webapp/help/styles.css
+A	dspace-jspui/src/main/webapp/help/sub1.png
+A	dspace-jspui/src/main/webapp/help/sub2.jpg
+A	dspace-jspui/src/main/webapp/help/sub2.png
+A	dspace-jspui/src/main/webapp/help/sub3.jpg
+A	dspace-jspui/src/main/webapp/help/sub3.png
+A	dspace-jspui/src/main/webapp/help/sub4.jpg
+A	dspace-jspui/src/main/webapp/help/sub4.png
+A	dspace-jspui/src/main/webapp/help/sub5.jpg
+A	dspace-jspui/src/main/webapp/help/sub5.png
+A	dspace-jspui/src/main/webapp/help/sub6.jpg
+A	dspace-jspui/src/main/webapp/help/sub6.png
+A	dspace-jspui/src/main/webapp/help/sub7.jpg
+A	dspace-jspui/src/main/webapp/help/sub7.png
+A	dspace-jspui/src/main/webapp/help/sub8.jpg
+A	dspace-jspui/src/main/webapp/help/sub8.png
+
+EDUCACAO-LIVRE/DSpace;614c769b8;alteracoes do help, acrescentado cabecalho, logo e modificada imagens que agora nao quebram a largura da terra gerando barra de rolagem
+M	dspace-jspui/src/main/webapp/help/index.html
+M	dspace-jspui/src/main/webapp/styles.css
+
+EDUCACAO-LIVRE/DSpace;02d4aa40b;alteracoes no help, menu vertical bootstrap, include e alteracoes de estilo
+M	dspace-jspui/src/main/webapp/help/index.html
+M	dspace-jspui/src/main/webapp/styles.css
+
+EDUCACAO-LIVRE/DSpace;0fe310df2;Torna storedValue igual ao displayValue close #16
+M	dspace/config/input-forms.xml
+
+EDUCACAO-LIVRE/DSpace;b2e9d9226;alteracoes de layout no painel well de comunidades, layout administrativo, problemas de icones no safari desktop e mobile e outros
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/layout/header-submission.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-minimal.jsp
+M	dspace-jspui/src/main/webapp/theme/thrive/static/css/thrive.css
+
+EDUCACAO-LIVRE/DSpace;ed1829fbc;Ao clicar no logo do banco de conteúdos estava apenas recarregando a página e não redirecionando para o home. Isso ocorria porque o href era request.getContextPath(), se estivesse em algum endereço abaixo do / funcionaria, mas no / não. Alterei para: request.getContextPath()/
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+
+EDUCACAO-LIVRE/DSpace;fc97fa8d4;Merge branch 'master' of https://github.com/EDUCACAO-LIVRE/DSpace
+EDUCACAO-LIVRE/DSpace;f6a26e077;Foi resolvido o erro que estava dando ao atualizar o perfil do usuário, quando ele loga no sistema.
+M	dspace-api/src/main/java/org/dspace/authenticate/OauthAuthentication.java
+M	dspace-api/src/main/java/org/dspace/authenticate/oauth/OauthEduLivreServiceImpl.java
+
+EDUCACAO-LIVRE/DSpace;df5cda342;Torna todos input de formulários não obrigatórios.
+M	dspace/config/input-forms.xml
+
+EDUCACAO-LIVRE/DSpace;0e7dfcf8d;Buscando o perfil do usuário (nome, sobrenome e email), criando o eperson com os dados corretos. Toda vez que se autenticar, será atualizado o nome e sobre nome. Adicionei o idioma quando cria o eperson. EL-14
+M	dspace-api/src/main/java/org/dspace/authenticate/OauthAuthentication.java
+M	dspace-api/src/main/java/org/dspace/authenticate/oauth/OauthEduLivreService.java
+M	dspace-api/src/main/java/org/dspace/authenticate/oauth/OauthEduLivreServiceImpl.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/OauthServlet.java
+M	dspace/config/modules/authentication-oauth.cfg
+
+EDUCACAO-LIVRE/DSpace;3d3f4d405;Merge pull request #28 from alanvelasques/master
+EDUCACAO-LIVRE/DSpace;3ae39fe94;Conserto dos links das coleções
+M	dspace-jspui/src/main/webapp/home.jsp
+
+EDUCACAO-LIVRE/DSpace;6389cd598;header-default.jsp Acrescentado o S em Banco de Conteúdos. Adicionado link para home na logo e title do banco Acrescentado barra de busca abaixo do Banco de Conteudos
+M	dspace-jspui/src/main/webapp/display-item.jsp
+M	dspace-jspui/src/main/webapp/display-statistics.jsp
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+M	dspace-jspui/src/main/webapp/theme/thrive/static/css/thrive.css
+
+EDUCACAO-LIVRE/DSpace;728fa5e99;header-default.jsp Acrescentado o S em Banco de Conteúdos. Adicionado link para home na logo e title do banco Acrescentado barra de busca abaixo do Banco de Conteudos
+A	"dspace-jspui/src/main/webapp/theme/thrive/image/C\303\263pia de bg-topo-repeat.png"
+
+EDUCACAO-LIVRE/DSpace;943f1a30f;Retira o menu de alteração do idioma
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+EDUCACAO-LIVRE/DSpace;d4250c14a;Altera qtd de resultados das facetas de 10 para 8
+M	dspace/config/spring/api/discovery.xml
+
+EDUCACAO-LIVRE/DSpace;d159cac64;Inclui traduções para facetas de recurso e perfil
+M	dspace-api/src/main/resources/Messages.properties
+
+EDUCACAO-LIVRE/DSpace;3daa18c2e;Solucionando o problema de encoding html no token. Antes de tratar o token eu uso o  URLDecoder e alterei o decoder de base64 para o Base64.decodeBase64  da apache commons.
+M	dspace-api/src/main/java/org/dspace/authenticate/OauthAuthentication.java
+M	dspace-api/src/main/java/org/dspace/authenticate/oauth/Token.java
+M	dspace-api/src/main/java/org/dspace/authenticate/oauth/TokenInvalidExeption.java
+
+EDUCACAO-LIVRE/DSpace;ec956014e;Merge branch 'master' of https://github.com/EDUCACAO-LIVRE/DSpace
+EDUCACAO-LIVRE/DSpace;3f614a9c0;Quando o usuário efetua o login no portal pelo facebook o token fica com um caracter não ASCII no final, deixando assim o email do usuário incorreto. Ao definir o email do usuário estou removendo todos os caracteres não ASCII, com isso resolve o problema.
+M	dspace-api/src/main/java/org/dspace/authenticate/oauth/Token.java
+
+EDUCACAO-LIVRE/DSpace;149ec4747;Apenas formatação.
+M	dspace/config/input-forms.xml
+
+EDUCACAO-LIVRE/DSpace;fc8300bba;Alterações comumente utilizadas para build
+M	build.properties
+
+EDUCACAO-LIVRE/DSpace;0ce65a18e;Faz o icone do EducacaoLivre apontar para o portal Ao clicar na imagem EducacaoLivre o cliente será direcionado ao portal ao invés do home do próprio projeto.
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+EDUCACAO-LIVRE/DSpace;af65f5030;Autenticação integrada como Portal Educação livre, realizada por OAuth 2.0.
+M	dspace-api/pom.xml
+A	dspace-api/src/main/java/org/dspace/authenticate/OauthAuthentication.java
+A	dspace-api/src/main/java/org/dspace/authenticate/oauth/OauthEduLivreService.java
+A	dspace-api/src/main/java/org/dspace/authenticate/oauth/OauthEduLivreServiceImpl.java
+A	dspace-api/src/main/java/org/dspace/authenticate/oauth/Token.java
+A	dspace-api/src/main/java/org/dspace/authenticate/oauth/TokenInvalidExeption.java
+A	dspace-api/src/main/java/org/dspace/authenticate/oauth/readme.md
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-api/src/main/resources/Messages_pt_BR.properties
+A	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/OauthServlet.java
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+A	dspace/config/modules/authentication-oauth.cfg
+M	dspace/config/modules/authentication.cfg
+
+EDUCACAO-LIVRE/DSpace;ab088facb;Modificações no arquivo de build e dspace.cfg
+M	build.properties
+M	dspace/config/dspace.cfg
+
+EDUCACAO-LIVRE/DSpace;0c508206e;Criação de facetas p/ "tipo de recurso" e "perfil"
+M	dspace/config/spring/api/discovery.xml
+
+EDUCACAO-LIVRE/DSpace;d1aa8664f;Alteração profunda no workflow de submissão
+A	dspace/config/controlled-vocabularies/cpt.xml
+A	dspace/config/controlled-vocabularies/ctd.xml
+M	dspace/config/input-forms.xml
+M	dspace/config/registries/bitstream-formats.xml
+
+EDUCACAO-LIVRE/DSpace;212aef5df;Alterações profundas na interface
+A	dspace-api/src/main/resources/Messages_pt_BR.properties
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/community-home.jsp
+M	dspace-jspui/src/main/webapp/community-list.jsp
+M	dspace-jspui/src/main/webapp/components/login-form.jsp
+M	dspace-jspui/src/main/webapp/discovery/static-sidebar-facet.jsp
+M	dspace-jspui/src/main/webapp/home.jsp
+M	dspace-jspui/src/main/webapp/layout/footer-default.jsp
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/layout/location-bar.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+A	"dspace-jspui/src/main/webapp/theme/thrive/image/Co\314\201pia de bg-topo-repeat.png"
+A	dspace-jspui/src/main/webapp/theme/thrive/image/bg-topo-repeat.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/blue-conteudo.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/box-menu-border-habilidade.jpg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/box-menu-border-matematica.jpg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/box-menu-border-portugues.jpg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/f1.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/icon-habilidade.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/icon-matematica.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/icon-portugues.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-hability-96.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-hability.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-hability.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-math-96.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-math.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-math.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-objects-96.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-objects.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-portuguese-96.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-portuguese.png
+A	dspace-jspui/src/main/webapp/theme/thrive/image/learn-portuguese.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/logo-footer.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/logo-oviin.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/logo-sesi.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/logo-unesco.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/image/logo.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/static/css/bootstrap-educacaolivre.css
+A	dspace-jspui/src/main/webapp/theme/thrive/static/css/font-awesome.css
+A	dspace-jspui/src/main/webapp/theme/thrive/static/css/font-awesome.min.css
+A	dspace-jspui/src/main/webapp/theme/thrive/static/css/thrive.css
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/FontAwesome.otf
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/bootstrap/glyphicons-halflings-regular.eot
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/bootstrap/glyphicons-halflings-regular.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/bootstrap/glyphicons-halflings-regular.ttf
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/bootstrap/glyphicons-halflings-regular.woff
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/bootstrap/glyphicons-halflings-regular.woff2
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/fontawesome-webfont.eot
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/fontawesome-webfont.svg
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/fontawesome-webfont.ttf
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/fontawesome-webfont.woff
+A	dspace-jspui/src/main/webapp/theme/thrive/static/fonts/fontawesome-webfont.woff2
+M	dspace-xmlui/src/main/webapp/static/js/jquery-1.6.2.min.js
+M	dspace-xmlui/src/main/webapp/themes/Classic/lib/jquery-1.6.2.min.js
+M	dspace-xmlui/src/main/webapp/themes/Reference/lib/jquery-1.6.2.min.js
+M	dspace-xmlui/src/main/webapp/themes/template/lib/jquery-1.6.2.min.js
+A	dspace/config/noticias-topo.html
+
+EDUCACAO-LIVRE/DSpace;7bfe5e250;Correção de BUG de submissão de arquivos.
+M	dspace-api/src/main/java/org/dspace/submit/step/UploadStep.java
+
+EDUCACAO-LIVRE/DSpace;cf475bf3f;Alterações de tradução e conversão ao UTF-8 feitas aos textos dos e-mails.
+M	dspace/config/emails/bte_batch_import_error
+M	dspace/config/emails/change_password
+M	dspace/config/emails/export_error
+M	dspace/config/emails/export_success
+M	dspace/config/emails/feedback
+M	dspace/config/emails/flowtask_notify
+M	dspace/config/emails/harvesting_error
+M	dspace/config/emails/internal_error
+M	dspace/config/emails/register
+M	dspace/config/emails/registration_notify
+M	dspace/config/emails/request_item.admin
+M	dspace/config/emails/request_item.author
+M	dspace/config/emails/submit_archive
+M	dspace/config/emails/submit_reject
+M	dspace/config/emails/submit_task
+M	dspace/config/emails/subscription
+M	dspace/config/emails/suggest
+
+EDUCACAO-LIVRE/DSpace;e2dd1089c;[maven-release-plugin] prepare release dspace-5.4
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+EDUCACAO-LIVRE/DSpace;8809150e6;Merge pull request #1116 from arnodb/rest-dto-sanity-5_x
+EDUCACAO-LIVRE/DSpace;1fd272384;Addition of spacing to fix gear icon sticking to results
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/attribute-handlers.xsl
+
+EDUCACAO-LIVRE/DSpace;454f40b3f;DS-2637 Retention of offset when changing the rpp
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/ConfigurableBrowse.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/SearchFacetFilter.java
+
+EDUCACAO-LIVRE/DSpace;f05c9e794;DS-2637 Possibility for users to configure the discovery browse page on the fly
+M	dspace-xmlui-mirage2/src/main/webapp/scripts/browse.js
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/attribute-handlers.xsl
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/preprocess/browse.xsl
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/SearchFacetFilter.java
+
+EDUCACAO-LIVRE/DSpace;56fc41cac;DS-2871 fix viewport meta tag
+M	dspace-xmlui/src/main/webapp/themes/Mirage/lib/xsl/core/page-structure.xsl
+
+EDUCACAO-LIVRE/DSpace;0175e5edf;DS-2871 mobile theme: correct order of imports
+M	dspace-xmlui/src/main/webapp/themes/mobile/readme.txt
+
+EDUCACAO-LIVRE/DSpace;d17886c1c;Merge pull request #1151 from tdonohue/DS-2869
+EDUCACAO-LIVRE/DSpace;06668c363;DS-1207 Stop throwing ResourceNotFoundException for redirects
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/general/PageNotFoundTransformer.java
+
+EDUCACAO-LIVRE/DSpace;4b3a07120;DS-2869: Ensure all Solr queries specify fields to return. Refactor slightly to use global constants for objId fields. Add comments to DiscoverQuery.
+M	dspace-api/src/main/java/org/dspace/discovery/DiscoverQuery.java
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceImpl.java
+
+EDUCACAO-LIVRE/DSpace;50c4a54bd;Remove odd characters from search schema config
+M	dspace/solr/search/conf/schema.xml
+
+EDUCACAO-LIVRE/DSpace;0aabf5d78;DS-2699 Only escape colon-space, not other characters
+M	dspace-jspui/src/main/java/org/dspace/app/webui/discovery/DiscoverUtility.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/DiscoveryUIUtils.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/SidebarFacetsTransformer.java
+
+EDUCACAO-LIVRE/DSpace;04ce6ff2f;Revert "DS-1821 Internationalize the bitstream access icon alt text"
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+M	dspace-xmlui/src/main/webapp/themes/Mirage/lib/xsl/aspect/artifactbrowser/item-view.xsl
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml/General-Handler.xsl
+
+EDUCACAO-LIVRE/DSpace;1f8f6241c;fix /{collection_id}/items to properly process offset  parameter
+M	dspace-rest/src/main/java/org/dspace/rest/CollectionsResource.java
+
+EDUCACAO-LIVRE/DSpace;4a2f392ed;Merge pull request #1122 from arnodb/DS-2831-database-connections-cleanup
+EDUCACAO-LIVRE/DSpace;fac705ec3;Merge pull request #1121 from arnodb/DS-2830-rest-authentication-safety
+EDUCACAO-LIVRE/DSpace;e1263249f;Merge pull request #1146 from tdonohue/DS-2542
+EDUCACAO-LIVRE/DSpace;553b1a72c;Merge pull request #1145 from tdonohue/DS-2736
+EDUCACAO-LIVRE/DSpace;624286520;DS-2737: Escape message keys which are passed in as url params
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+
+EDUCACAO-LIVRE/DSpace;59fa31641;DS-2542: Fix bug for day granularity (from zuki's PR#912)
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DateUntilFilter.java
+
+EDUCACAO-LIVRE/DSpace;58344b610;DS-2736: Ensure all string parameters are escaped in results
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+
+EDUCACAO-LIVRE/DSpace;563d90f7c;[DS-2858] Revert "DS-2424 workaround for bug in xoai library. changed ref to red for Filter in Contexts"
+M	dspace/config/crosswalks/oai/xoai.xml
+
+EDUCACAO-LIVRE/DSpace;131555604;[DS-2865] Upgrade xoai dependency version & groupId
+M	dspace-oai/pom.xml
+
+EDUCACAO-LIVRE/DSpace;fbde10802;Merge pull request #1049 from pmarrone/DS-2744-oai-base-url
+M	dspace-oai/src/main/java/org/dspace/xoai/services/impl/xoai/DSpaceRepositoryConfiguration.java
+M	dspace/config/modules/oai.cfg
+
+EDUCACAO-LIVRE/DSpace;2c59a9dd3;Merge pull request #1132 from tdonohue/DS-2408-5x
+EDUCACAO-LIVRE/DSpace;d307c56d0;DS-2698 Use all result info in browse page cache validity
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/ConfigurableBrowse.java
+
+EDUCACAO-LIVRE/DSpace;1d2b95488;Merge pull request #1007 from ufal/DS-2692
+EDUCACAO-LIVRE/DSpace;69cfc6116;DS-2408: Fix ordering of listeners in web.xml to ensure Kernel always starts before DB migrations. Add comments to others.
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+M	dspace-lni/src/main/webapp/WEB-INF/web.xml
+M	dspace-oai/src/main/webapp/WEB-INF/web.xml
+M	dspace-rdf/src/main/webapp/WEB-INF/web.xml
+M	dspace-rest/src/main/webapp/WEB-INF/web.xml
+M	dspace-sword/src/main/webapp/WEB-INF/web.xml
+M	dspace-swordv2/src/main/webapp/WEB-INF/web.xml
+M	dspace-xmlui/src/main/webapp/WEB-INF/web.xml
+
+EDUCACAO-LIVRE/DSpace;b944ceb11;add left hand variable, 'fileDescription', to catch a value.
+M	dspace-api/src/main/java/org/dspace/submit/step/UploadWithEmbargoStep.java
+
+EDUCACAO-LIVRE/DSpace;9885ed851;DS-2733 Erronous string comparing fix
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+
+EDUCACAO-LIVRE/DSpace;52ce1eb52;Merge pull request #1100 from akotynski/DS-2784
+EDUCACAO-LIVRE/DSpace;deeef4594;Limit requiresIndexing() query to only returning the LAST_INDEXED_FIELD
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceImpl.java
+
+EDUCACAO-LIVRE/DSpace;ad21875ac;[DS-2826] changed arrow characters for navigation to improve legibility, increased the navigation size to be .larger
+M	dspace-xmlui-mirage2/src/main/webapp/styles/classic_mirage_color_scheme/_general.scss
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/attribute-handlers.xsl
+
+EDUCACAO-LIVRE/DSpace;4ee79a3d8;Add the logo setter to the Community DTO
+M	dspace-rest/src/main/java/org/dspace/rest/common/Community.java
+A	dspace-rest/src/test/java/org/dspace/rest/common/TestJAXBSchema.java
+A	dspace-rest/src/test/resources/org/dspace/rest/common/expected_xsd0.xsd
+
+EDUCACAO-LIVRE/DSpace;c01c3af15;DS-2831 connections cleanup and context reuse
+M	dspace-api/src/main/java/org/dspace/event/EventManager.java
+M	dspace-rest/src/main/java/org/dspace/rest/CollectionsResource.java
+
+EDUCACAO-LIVRE/DSpace;f493a475f;DS-2830 add proper synchronization in TokenHolder
+M	dspace-rest/src/main/java/org/dspace/rest/TokenHolder.java
+
+EDUCACAO-LIVRE/DSpace;a3a5f562c;[DS-2706] removing configuration for more lib folders in authority solr config (dist and contrib) to match Discovery/search solr config
+M	dspace/solr/authority/conf/solrconfig.xml
+
+EDUCACAO-LIVRE/DSpace;3479b0a25;[DS-2706] removing more unused lib configurations from authority solr config
+M	dspace/solr/authority/conf/solrconfig.xml
+
+EDUCACAO-LIVRE/DSpace;39289b676;[DS-2706] removing more unused lib configurations from authority solrconfig
+M	dspace/solr/authority/conf/solrconfig.xml
+
+EDUCACAO-LIVRE/DSpace;edf7ea652;removed unused example lib folders from the Authority Solr config
+M	dspace/solr/authority/conf/solrconfig.xml
+
+EDUCACAO-LIVRE/DSpace;2045fee8a;Fixes html5 file upload during workflow (if allowed by configuration).
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+
+EDUCACAO-LIVRE/DSpace;bac9beaff;[DS-2813] fixed NullPointer in submission lookup if pubmed is down.
+M	dspace-api/src/main/java/org/dspace/submit/lookup/PubmedService.java
+
+EDUCACAO-LIVRE/DSpace;569ad5f54;[DS-2502] Correct some dependencies to prevent pulling in servlet-api
+M	dspace-api/pom.xml
+M	pom.xml
+
+EDUCACAO-LIVRE/DSpace;b465f2664;[DS-2591] Fix link to respond.min.js
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/page-structure.xsl
+
+EDUCACAO-LIVRE/DSpace;ad19c3aeb;[DS-2592] Fix OpenUrl description.xml link
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/page-structure.xsl
+
+EDUCACAO-LIVRE/DSpace;34c20d49a;[DS-2790] removed duplicate log4j config lines for Solr
+M	dspace/config/log4j.properties
+
+EDUCACAO-LIVRE/DSpace;eaa08adb6;[DS-2784] jersey version changed to 1.19
+M	dspace-rest/pom.xml
+
+EDUCACAO-LIVRE/DSpace;15f3c247b;DS-2740 Conditionally show publisher for sherpa romeo, if present
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/submit/UploadStep.java
+
+EDUCACAO-LIVRE/DSpace;2a44765f3;Add dc.creator to qdc.xsl output
+M	dspace/config/crosswalks/oai/metadataFormats/qdc.xsl
+
+EDUCACAO-LIVRE/DSpace;87c34f1f1;Add dc.creator to qdc.xsl output
+M	dspace/config/crosswalks/oai/metadataFormats/qdc.xsl
+
+EDUCACAO-LIVRE/DSpace;fce84880b;DS-1924 Include current locale in calculating cache key
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/viewArtifacts/Navigation.java
+
+EDUCACAO-LIVRE/DSpace;50cb865ea;Extend Handle from Resource and use createContext similarly to other *Resource
+M	dspace-rest/src/main/java/org/dspace/rest/HandleResource.java
+
+EDUCACAO-LIVRE/DSpace;a9b8d8bfb;DS-2533 : update version for Eirslett - forntend-maven-plugin
+M	dspace/modules/xmlui-mirage2/pom.xml
+
+EDUCACAO-LIVRE/DSpace;600f680cd;Make the assembly descriptor schema-valid.
+M	dspace/src/main/assembly/src-release.xml
+
+EDUCACAO-LIVRE/DSpace;01d7d060d;[DS-2694] Avoid munging more binary types during release
+M	dspace/src/main/assembly/src-release.xml
+
+EDUCACAO-LIVRE/DSpace;4a6663c2f;[DS-2679] Retain ordering of authors for Google Scholar metatags.
+M	dspace-api/src/main/java/org/dspace/app/util/GoogleMetadata.java
+
+EDUCACAO-LIVRE/DSpace;b3c87b2be;DS-2672 Typos in constants in DOIIdentifierProvider
+M	dspace-api/src/main/java/org/dspace/identifier/DOIIdentifierProvider.java
+M	dspace-api/src/main/java/org/dspace/identifier/doi/DOIOrganiser.java
+M	dspace-api/src/test/java/org/dspace/identifier/DOIIdentifierProviderTest.java
+
+EDUCACAO-LIVRE/DSpace;ac08b6a4e;[maven-release-plugin] prepare for next development iteration
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+EDUCACAO-LIVRE/DSpace;a2f5fe34e;[maven-release-plugin] prepare release dspace-5.3
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+EDUCACAO-LIVRE/DSpace;ace19199e;Updates to license files for 5.3
+M	LICENSE
+M	LICENSES_THIRD_PARTY
+
+EDUCACAO-LIVRE/DSpace;6d9fa2653;Minor fix. Since addBitstream() inherits polices, we need to first remove inherited custom policies
+M	dspace-api/src/main/java/org/dspace/versioning/AbstractVersionProvider.java
+
+EDUCACAO-LIVRE/DSpace;3efe54977;DS-2358: Preserves custom policy rules during versioning
+M	dspace-api/src/main/java/org/dspace/versioning/AbstractVersionProvider.java
+M	dspace-api/src/main/java/org/dspace/versioning/DefaultItemVersionProvider.java
+
+EDUCACAO-LIVRE/DSpace;734744ec4;DS-2571 Fix jumping to value in descending browse
+M	dspace-api/src/main/java/org/dspace/browse/SolrBrowseDAO.java
+
+EDUCACAO-LIVRE/DSpace;829c30bab;change default of findAuthorizedPerformanceOptimize
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+
+EDUCACAO-LIVRE/DSpace;83cb04ed5;move Collection policy optimization property
+M	dspace/config/dspace.cfg
+
+EDUCACAO-LIVRE/DSpace;0911d6029;[DS-2527] Disable collection authorisation enumeration optimisation
+M	dspace/config/dspace.cfg
+
+EDUCACAO-LIVRE/DSpace;9bb703685;closing more span tags
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+
+EDUCACAO-LIVRE/DSpace;e0368f3ad;fixed dots in upper pagination
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+
+EDUCACAO-LIVRE/DSpace;660217c3f;Add a new DSpaceWithdrawnFilter in place of hardcoding in DSpaceAuthorizationFilter. Update configs, and fix bugs.
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceAuthorizationFilter.java
+A	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceWithdrawnFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/NotFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/OrFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/services/impl/database/DSpaceDatabaseQueryResolver.java
+M	dspace-oai/src/main/webapp/static/style.xsl
+M	dspace/config/crosswalks/oai/xoai.xml
+
+EDUCACAO-LIVRE/DSpace;5f13b8cc6;Update XSL stylesheet to display "deleted" status, and correct misspellings
+M	dspace-oai/src/main/webapp/static/style.xsl
+
+EDUCACAO-LIVRE/DSpace;a2caabc79;Fix DS-2593 : Withdrawn items are now given a "tombstone" in OAI-PMH. Also fix Context mgmt issues & authorization code.
+M	dspace-oai/src/main/java/org/dspace/xoai/app/XOAI.java
+M	dspace-oai/src/main/java/org/dspace/xoai/controller/DSpaceOAIDataProvider.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceAuthorizationFilter.java
+
+EDUCACAO-LIVRE/DSpace;cb9710cda;Merge pull request #993 from ufal/DS-2658
+EDUCACAO-LIVRE/DSpace;56abebaec;fixes DS-2658
+M	dspace/config/crosswalks/xhtml-head-item.properties
+
+EDUCACAO-LIVRE/DSpace;0310db74a;DS-2614: Ignore custom resource policies for unfinished items
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeManager.java
+
+EDUCACAO-LIVRE/DSpace;3e1bac69d;Escape special characters in JSPUI queries as well
+M	dspace-jspui/src/main/java/org/dspace/app/webui/discovery/DiscoverUtility.java
+
+EDUCACAO-LIVRE/DSpace;ec86af5a8;Also ensure query escaped in AbstractSearch
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/AbstractSearch.java
+
+EDUCACAO-LIVRE/DSpace;79e111996;Fix DS-2602 and DS-2461 by properly escaping user entered queries
+M	dspace-api/src/main/java/org/dspace/discovery/SearchService.java
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceImpl.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/DiscoveryUIUtils.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/SidebarFacetsTransformer.java
+
+EDUCACAO-LIVRE/DSpace;f4c6f2680;Revert "DS-2461 Escape some colons in queries"
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceImpl.java
+
+EDUCACAO-LIVRE/DSpace;f3487be04;DS-2603: now if the item doesn't have a primary bitstream the value of citation_pdf_url metadata will be a link to the first public bitstream according to the order established by the user.
+M	dspace-api/src/main/java/org/dspace/app/util/GoogleMetadata.java
+
+EDUCACAO-LIVRE/DSpace;87d077097;Merge pull request #979 from bram-atmire/dspace-5_x
+EDUCACAO-LIVRE/DSpace;1c9fa656a;fix the oai index issue when submitter is null
+M	dspace-oai/src/main/java/org/dspace/xoai/app/XOAI.java
+
+EDUCACAO-LIVRE/DSpace;59ff964f4;Fix for DS-2543 cleans the cached OAI responses after doing a full item import with the -c option
+M	dspace-oai/src/main/java/org/dspace/xoai/app/XOAI.java
+
+EDUCACAO-LIVRE/DSpace;10c466188;Merge pull request #955 from Mini-Pillai/DS-2560
+M	dspace-xmlui-mirage2/src/main/webapp/styles/classic_mirage_color_scheme/_general.scss
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/aspect/discovery/discovery.xsl
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/preprocess/discovery.xsl
+
+EDUCACAO-LIVRE/DSpace;afe9c1294;test DSpace build on Travis container infrastructure
+M	.travis.yml
+
+EDUCACAO-LIVRE/DSpace;7a54972ed;Merge pull request #965 from ufal/DS-2620
+EDUCACAO-LIVRE/DSpace;b2cb0ef4d;typo in the word cocoon
+M	dspace-xmlui/src/main/resources/aspects/Submission/submission.js
+
+EDUCACAO-LIVRE/DSpace;5edf641d6;DS-2594 Long file names overlap the second column of item metadata in Mirage 2
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/aspect/artifactbrowser/item-view.xsl
+
+EDUCACAO-LIVRE/DSpace;d9b14a86f;DS-2618: Process mail.server.disabled in test-email
+M	dspace-api/src/main/java/org/dspace/core/Email.java
+
+EDUCACAO-LIVRE/DSpace;7b8fa4963;DS-2598 Correct XPATH for available date in mets format xoai
+M	dspace/config/crosswalks/oai/metadataFormats/mets.xsl
+
+EDUCACAO-LIVRE/DSpace;b5540d599;Merge pull request #951 from mwoodiupui/DS-2590
+EDUCACAO-LIVRE/DSpace;494ff0c4c;[DS-2590] Improved commentary about these obscure problems.
+M	dspace/src/main/assembly/release.xml
+M	dspace/src/main/assembly/src-release.xml
+
+EDUCACAO-LIVRE/DSpace;1c4c8943a;[DS-2590] Roll back problematic upgrade of maven-assembly-plugin
+M	pom.xml
+
+EDUCACAO-LIVRE/DSpace;5cd56fb83;[DS-2590] Fix multiple issues with distributed archives.
+M	dspace/src/main/assembly/release.xml
+M	dspace/src/main/assembly/src-release.xml
+M	pom.xml
+
+EDUCACAO-LIVRE/DSpace;ed89d6b00;DS-2587 Resource policies rptype is null after upgrading
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeManager.java
+
+EDUCACAO-LIVRE/DSpace;19b28f473;[maven-release-plugin] prepare for next development iteration
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+EDUCACAO-LIVRE/DSpace;4a8fdf684;[maven-release-plugin] prepare release dspace-5.2
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+EDUCACAO-LIVRE/DSpace;d040b9dd4;Fix DS-2582: Remove all milliseconds from dates. Refactor code slightly.
+M	dspace-oai/src/main/java/org/dspace/xoai/util/DateUtils.java
+
+EDUCACAO-LIVRE/DSpace;4036bf781;DS-2020 null check & turning _ to / in handles
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceSetSpecFilter.java
+
+EDUCACAO-LIVRE/DSpace;d011e24f7;DS-2529 CSV import bugfix for fields under authority control with a language
+M	dspace-api/src/main/java/org/dspace/app/bulkedit/MetadataImport.java
+
+EDUCACAO-LIVRE/DSpace;0e9f78e9d;Fix for DS-2577. Query for PostgreSQL constraint name. Surround with double quotes if value is $1 or similar.
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/MigrationUtils.java
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/migration/V1_3_9__Drop_constraint_for_DSpace_1_4_schema.java
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/migration/V1_5_9__Drop_constraint_for_DSpace_1_6_schema.java
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/migration/V5_0_2014_09_25__DS_1582_Metadata_For_All_Objects_drop_constraint.java
+
+EDUCACAO-LIVRE/DSpace;254097b2e;[DS-2546] added missing curly brackets
+M	dspace-oai/src/main/java/org/dspace/xoai/util/DateUtils.java
+
+EDUCACAO-LIVRE/DSpace;8049cef23;[DS-2546] Added missing ZULU time zones where applicable
+M	dspace-oai/src/main/java/org/dspace/xoai/util/DateUtils.java
+
+EDUCACAO-LIVRE/DSpace;de842dbf3;[DS-2546] fixes problem in DateUtils parsing
+M	dspace-oai/src/main/java/org/dspace/xoai/util/DateUtils.java
+
+EDUCACAO-LIVRE/DSpace;8bcac5815;minor fix: remove extra colon in string
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+
+EDUCACAO-LIVRE/DSpace;511b78277;[DS-2186] Request item copy doesn't always use RequestItemAuthorExtractor
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/ItemRequestResponseFalseForm.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/ItemRequestResponseTrueForm.java
+
+EDUCACAO-LIVRE/DSpace;dbd019943;[DS-2131] SWORDv2 ingestion fails with NullPointerException when replacing a non archived item
+M	dspace-api/src/main/java/org/dspace/content/packager/AbstractMETSIngester.java
+
+EDUCACAO-LIVRE/DSpace;7d8a9d563;DS-1965: Adds date fields to the form used to edit policies (JSPUI).
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/admin/AuthorizeAdminServlet.java
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-policy-edit.jsp
+
+EDUCACAO-LIVRE/DSpace;2ab6b10a0;Removed unnecessary changes from previous commit.
+M	dspace-rest/src/main/java/org/dspace/rest/common/DSpaceObject.java
+
+EDUCACAO-LIVRE/DSpace;cd7789e8d;Fix of getLink() by returning servlet context.
+M	dspace-rest/src/main/java/org/dspace/rest/Resource.java
+M	dspace-rest/src/main/java/org/dspace/rest/common/DSpaceObject.java
+
+EDUCACAO-LIVRE/DSpace;9287aa891;Quick fix of getLink()
+M	dspace-rest/src/main/java/org/dspace/rest/common/DSpaceObject.java
+
+EDUCACAO-LIVRE/DSpace;a99203382;DS-2551: JSPUI show thumbnails only if user has read permission
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemTag.java
+
+EDUCACAO-LIVRE/DSpace;6ec649df7;DS-2562, fix incorrect if statement.
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/general/HandleAuthorizedMatcher.java
+
+EDUCACAO-LIVRE/DSpace;e9f4e4c2c;[DS-2379] Lists returned by JDOM can't be sort()ed, so use a more cooperative class.
+M	dspace-api/src/main/java/org/dspace/app/launcher/ScriptLauncher.java
+
+EDUCACAO-LIVRE/DSpace;18cc6bb3f;[DS-2379] Sort the list of commands by their names
+M	dspace-api/src/main/java/org/dspace/app/launcher/ScriptLauncher.java
+
+EDUCACAO-LIVRE/DSpace;8094d8fe1;DS-2511: Repaired resource policy endpoints
+M	dspace-rest/src/main/java/org/dspace/rest/BitstreamResource.java
+M	dspace-rest/src/main/java/org/dspace/rest/ItemsResource.java
+M	dspace-rest/src/main/java/org/dspace/rest/common/Bitstream.java
+M	dspace-rest/src/main/java/org/dspace/rest/common/ResourcePolicy.java
+
+EDUCACAO-LIVRE/DSpace;b7a469d53;DS-2575 Ensure pooled/owned workflow task are listed in fixed order
+M	dspace-api/src/main/java/org/dspace/workflow/WorkflowManager.java
+
+EDUCACAO-LIVRE/DSpace;f168c6c33;DS-2461 Escape some colons in queries
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceImpl.java
+
+EDUCACAO-LIVRE/DSpace;981b62d9e;DS-2545: Show collections the user can submits items to only.
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/SelectCollectionTag.java
+
+EDUCACAO-LIVRE/DSpace;2c42d71a6;DS-2544 Delete temp files when exception is encountered
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickImageThumbnailFilter.java
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickPdfThumbnailFilter.java
+
+EDUCACAO-LIVRE/DSpace;ca6bc57c6;[DS-2544] Improve temp file handling for IM thumbnailer
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickImageThumbnailFilter.java
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickPdfThumbnailFilter.java
+
+EDUCACAO-LIVRE/DSpace;0f0be17d0;[DS-2549] Render Repo identifier / Sample identifier on Identify page
+M	dspace-oai/src/main/webapp/static/style.xsl
+
+EDUCACAO-LIVRE/DSpace;5e5a7922d;Fix a bug in the "Jump to" browse feature
+M	dspace-api/src/main/java/org/dspace/browse/SolrBrowseDAO.java
+
+EDUCACAO-LIVRE/DSpace;bb4cb3937;Remove box styling for file upload in Mirage 2
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/forms.xsl
+
+EDUCACAO-LIVRE/DSpace;a257f516f;DS-2449 Restore template item label for Mirage 2
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/forms.xsl
+
+EDUCACAO-LIVRE/DSpace;9d8284d85;[DS-2212] Ignore _version_ field when sharding solr stats
+M	dspace-api/src/main/java/org/dspace/statistics/SolrLogger.java
+
+EDUCACAO-LIVRE/DSpace;57efa4f62;[DS-2423] Added oai overlays to classpath to ensure that oai command line tools work (like clean-cache)
+M	dspace/bin/dspace
+M	dspace/bin/dspace.bat
+
+EDUCACAO-LIVRE/DSpace;5b5f44085;[DS-2423] changed arcitecture of DSpace filters. Removed need for @Autowire because filters are not handled by spring.
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceAtLeastOneMetadataFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceAuthorizationFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceMetadataExistsFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/services/impl/xoai/BaseDSpaceFilterResolver.java
+M	dspace-oai/src/test/java/org/dspace/xoai/tests/unit/services/impl/database/DSpaceDatabaseQueryResolverTest.java
+
+EDUCACAO-LIVRE/DSpace;46ce2741b;[DS-2423] changed tests for OAI-interface to autowire the Filters.
+M	dspace-oai/src/test/java/org/dspace/xoai/tests/unit/services/impl/database/DSpaceDatabaseQueryResolverTest.java
+
+EDUCACAO-LIVRE/DSpace;0b799fc88;[DS-2423] Added possibility to create additional Filter for DSpace OAI-PMH interface
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceAtLeastOneMetadataFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceAuthorizationFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceMetadataExistsFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/services/impl/xoai/BaseDSpaceFilterResolver.java
+
+EDUCACAO-LIVRE/DSpace;04b57a60b;[DS-2486] Increase robustness, improve directory delete behaviour
+M	dspace-api/src/main/java/org/dspace/util/SolrImportExport.java
+
+EDUCACAO-LIVRE/DSpace;02b431404;Disable version check when importing temporary stats data
+M	dspace-api/src/main/java/org/dspace/util/SolrImportExport.java
+
+EDUCACAO-LIVRE/DSpace;3d79fa76a;Make import/export of temporary core more robust
+M	dspace-api/src/main/java/org/dspace/util/SolrImportExport.java
+
+EDUCACAO-LIVRE/DSpace;ca1803ae9;Use stats component to get minimum date
+M	dspace-api/src/main/java/org/dspace/util/SolrImportExport.java
+
+EDUCACAO-LIVRE/DSpace;9046ec21d;Export monthly batches to limit the number of docs to sort
+M	dspace-api/src/main/java/org/dspace/util/SolrImportExport.java
+
+EDUCACAO-LIVRE/DSpace;b30654e3d;DS-2486 Add Solr import/export to launcher.xml
+M	dspace/config/launcher.xml
+
+EDUCACAO-LIVRE/DSpace;ee19e11e6;DS-2486 New scripts to export/clear/import solr indexes
+A	dspace-api/src/main/java/org/dspace/util/SolrImportExport.java
+A	dspace-api/src/main/java/org/dspace/util/SolrImportExportException.java
+
+EDUCACAO-LIVRE/DSpace;a990c9795;DS-2486 Add UUID processing to CSV, JSON update handlers too
+M	dspace/solr/statistics/conf/solrconfig.xml
+
+EDUCACAO-LIVRE/DSpace;56816b13b;Merge pull request #926 from tuub/DS-2550-dspace-5_x
+EDUCACAO-LIVRE/DSpace;b414aaa19;DS-2550: fix ImageMagick/Ghostscript problems with transparent pdfs
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickThumbnailFilter.java
+M	dspace/config/dspace.cfg
+
+EDUCACAO-LIVRE/DSpace;1a1ae35ec;DS-2218: Unable to use command "update-handle-prefix"
+M	dspace-api/src/main/java/org/dspace/handle/UpdateHandlePrefix.java
+
+EDUCACAO-LIVRE/DSpace;1029f393e;Fix passing parameters LIMIT and OFFSET to sql query in the method getItems() for oracle
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+
+EDUCACAO-LIVRE/DSpace;c1039dfe2;Fix passing parameters LIMIT/OFFSET to sql query in the findAll()
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+
+EDUCACAO-LIVRE/DSpace;cc96646e3;DS-2474 METS format in OAI includes only the first author
+M	dspace/config/crosswalks/oai/metadataFormats/mets.xsl
+
+EDUCACAO-LIVRE/DSpace;d2ad7c81d;DS-2491 set deletedRecord=transient in OAI Identify
+M	dspace-oai/src/main/java/org/dspace/xoai/services/impl/xoai/DSpaceRepositoryConfiguration.java
+
+EDUCACAO-LIVRE/DSpace;00e9c1131;DS-2531 New entries for the robots hostname list
+M	dspace/config/spiders/agents/example
+
+EDUCACAO-LIVRE/DSpace;77cc9abe4;fix year and capitalization in displayed copyright
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/page-structure.xsl
+M	dspace-xmlui/src/main/webapp/themes/Mirage/lib/xsl/core/page-structure.xsl
+
+EDUCACAO-LIVRE/DSpace;91018bfe0;Merge pull request #909 from mwoodiupui/DS-2518-5x
+EDUCACAO-LIVRE/DSpace;7f9bcb283;Repair testing environment, enable real unit tests, add test of metadata crosswalking.
+M	dspace-api/src/test/java/org/dspace/identifier/EZIDIdentifierProviderTest.java
+
+EDUCACAO-LIVRE/DSpace;ae11c1c79;Add location metadata so that the DOI actually resolves properly.
+M	dspace-api/src/main/java/org/dspace/identifier/EZIDIdentifierProvider.java
+
+EDUCACAO-LIVRE/DSpace;9cd5fa596;Fix for DS-2482 adds the attribute dspace.community or dspace.collection to the search and browse request if we browse or search a community or collection
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/HandleServlet.java
+
+EDUCACAO-LIVRE/DSpace;e10b10224;[DS-2532] botness of a visit is not properly logged when a location cannot be determined
+M	dspace-api/src/main/java/org/dspace/statistics/SolrLogger.java
+
+EDUCACAO-LIVRE/DSpace;e08886ae0;Merge pull request #898 from tuub/DS-2403-dspace-5_x
+EDUCACAO-LIVRE/DSpace;df3ffcf7f;DS-2403: Resolves DS-2403 and reduce logging of RDFConsumer.
+M	dspace-api/src/main/java/org/dspace/rdf/RDFConsumer.java
+M	dspace/config/dspace.cfg
+
+EDUCACAO-LIVRE/DSpace;0c77f7be9;[DS-2513] Improve multipart header parsing
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/servlet/multipart/DSpaceMultipartParser.java
+
+EDUCACAO-LIVRE/DSpace;cdc8e3144;DS-2514 Packaged version of html5shiv.js is missing "main" element
+M	dspace-jspui/src/main/webapp/static/js/html5shiv.js
+
+EDUCACAO-LIVRE/DSpace;92847079d;Updated README.md
+M	dspace-rest/README.md
+
+EDUCACAO-LIVRE/DSpace;b023c3694;Updated README.md
+M	dspace-rest/README.md
+
+EDUCACAO-LIVRE/DSpace;aee3b0b71;Updated README.md
+M	dspace-rest/README.md
+
+EDUCACAO-LIVRE/DSpace;d0c8afb60;DS-2424 workaround for bug in xoai library. changed ref to red for Filter in Contexts
+M	dspace/config/crosswalks/oai/xoai.xml
+
+EDUCACAO-LIVRE/DSpace;e9c14bbce;DS-2501 fix SQL in REST /items/find-by-metadata-field
+M	dspace-rest/src/main/java/org/dspace/rest/ItemsResource.java
+
+EDUCACAO-LIVRE/DSpace;2eca19daa;[DS-2493] "View more" link is shown even when there aren't more items.
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/AbstractRecentSubmissionTransformer.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/CollectionRecentSubmissions.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/CommunityRecentSubmissions.java
+
+EDUCACAO-LIVRE/DSpace;bcc7a75ba;DS-2483 : Fix mispelling of "sword.compatibility"
+M	dspace/config/modules/authentication-shibboleth.cfg
+
+EDUCACAO-LIVRE/DSpace;19222e934;DS-2477 : Ensure distribution packages alwasy get created with Unix (LF) line endings
+M	dspace/src/main/assembly/release.xml
+M	dspace/src/main/assembly/src-release.xml
+
+EDUCACAO-LIVRE/DSpace;8124a6173;[maven-release-plugin] prepare for next development iteration
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+EDUCACAO-LIVRE/DSpace;09007146d;[maven-release-plugin] prepare release dspace-5.1
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+EDUCACAO-LIVRE/DSpace;e715c6440;Updates to LICENSES_THIRD_PARTY for 5.1
+M	LICENSES_THIRD_PARTY
+
+EDUCACAO-LIVRE/DSpace;53ff4510a;[DS-2044] fix cross-site scripting vulnerability and minor related issue (verbose error output, avoid NPE on JSP during an attack)
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/AbstractBrowserServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/BrowserServlet.java
+M	dspace-jspui/src/main/webapp/controlledvocabulary/search.jsp
+M	dspace-jspui/src/main/webapp/search/advanced.jsp
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+M	dspace-jspui/src/main/webapp/search/results.jsp
+
+EDUCACAO-LIVRE/DSpace;495031001;DS-2278 : Fix two issues in XMLUI which block proper 404 Page Not Found pages from displaying for some URL patterns
+M	dspace-xmlui/src/main/java/org/dspace/springmvc/ResourceIdentifierController.java
+M	dspace-xmlui/src/main/webapp/sitemap.xmap
+
+EDUCACAO-LIVRE/DSpace;97e89384f;Don't close the current sitemap if we never opened one
+M	dspace-api/src/main/java/org/dspace/app/sitemap/AbstractGenerator.java
+
+EDUCACAO-LIVRE/DSpace;72913cda7;Fix for DS-2419 JSP UI ignores authorization.admin.usage. Just an incomplete name for the configuration parameter which determines the accessibility of usage statistics.
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/DisplayStatisticsServlet.java
+
+EDUCACAO-LIVRE/DSpace;03097aaa3;DS-2448 - Fix for JSPUI path traversal issue from Pascal-Nicolas Becker
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/HandleServlet.java
+
+EDUCACAO-LIVRE/DSpace;f6d3f67b5;Add in missing imports from previous commit
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/community-home.jsp
+
+EDUCACAO-LIVRE/DSpace;62e0ac462;DS-1702 add code to prevent XSS attach on recent submission
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/community-home.jsp
+M	dspace-jspui/src/main/webapp/home.jsp
+
+EDUCACAO-LIVRE/DSpace;54310b014;fixed formatting
+M	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+
+EDUCACAO-LIVRE/DSpace;beaf54f62;added synchroniztion for ArrayLists: agents and domains
+M	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+
+EDUCACAO-LIVRE/DSpace;114f1e098;XMLUI path bug fixes and security fixes for DS-2445 DS-2130 DS-1896
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/ConcatenationReader.java
+A	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/SafeResourceReader.java
+M	dspace-xmlui/src/main/webapp/sitemap.xmap
+
+EDUCACAO-LIVRE/DSpace;1fdfe05c4;clarified the test expression, as a kindness to future generations
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/ControlPanel.java
+
+EDUCACAO-LIVRE/DSpace;9c1f91d40;added back null handling, which I inadevertently dropped in favor of emptystring handling
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/ControlPanel.java
+
+EDUCACAO-LIVRE/DSpace;39711b332;[DS-2034] refactored notnull method to notempty, at the suggestion of mhwood
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/ControlPanel.java
+
+EDUCACAO-LIVRE/DSpace;6cfda147b;[DS-2034] added emptystring handling to the notnull method in ControlPanel.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/ControlPanel.java
+
+EDUCACAO-LIVRE/DSpace;eabdc610a;Merge pull request #857 from tdonohue/DS-2427
+EDUCACAO-LIVRE/DSpace;da74f5aa7;Add back in missing "canonicalize()" for Oracle
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseUtils.java
+
+EDUCACAO-LIVRE/DSpace;14c575a7c;Fix DS-2427 for 5.1 by consolidating problematic code into DatabaseUtils.getSchemaName() so that it can be replaced easily in future. Also cleaned up config comments
+M	build.properties
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseManager.java
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseUtils.java
+M	dspace/config/dspace.cfg
+
+EDUCACAO-LIVRE/DSpace;d8c8d28c1;[DS-2438] fixed problem with immense metadata values for oai solr core
+M	dspace/solr/oai/conf/schema.xml
+
+EDUCACAO-LIVRE/DSpace;bf56f1f7e;DS-640: Fixes Internal System Error if browse index is missing in JSPUI.
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/BrowserServlet.java
+
+EDUCACAO-LIVRE/DSpace;8046d154e;DS-2435: JSPUI send 400 Bad Request for unexisting browse index.
+M	dspace-api/src/main/java/org/dspace/browse/BrowserScope.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/AbstractBrowserServlet.java
+
+EDUCACAO-LIVRE/DSpace;589117e20;Add canonicalize for "db.schema" property
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseManager.java
+
+EDUCACAO-LIVRE/DSpace;e9e5423f9;[DS-2425] fixed typos in xoai.xml
+M	dspace/config/crosswalks/oai/xoai.xml
+
+EDUCACAO-LIVRE/DSpace;c08f447ce;ResumptionToken link for other verbs
+M	dspace-oai/src/main/webapp/static/style.xsl
+
+EDUCACAO-LIVRE/DSpace;cf2517515;[maven-release-plugin] prepare for next development iteration
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml

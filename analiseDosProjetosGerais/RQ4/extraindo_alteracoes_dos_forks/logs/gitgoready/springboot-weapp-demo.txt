@@ -1,0 +1,6 @@
+gitgoready/springboot-weapp-demo;0f508f4;使swagger可用，   添加webconfig使swagger页面可显示，   修改swaggerconfig为pathMapping("")使swagger调用可用   修改ApiInterceptor  prehandle使swagger调用不被过滤 去除了https，因内置tomcat无法读取jar包内tls文件   appid选为无appid才可
+M	pom.xml
+M	src/main/java/com/weapp/Application.java
+M	src/main/java/com/weapp/SwaggerConfig.java
+M	src/main/java/com/weapp/interceptor/ApiInterceptor.java
+M	src/main/resources/application.properties

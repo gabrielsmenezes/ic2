@@ -1,0 +1,24 @@
+HortonGou/WebViewJavascriptBridge;fb99598;合并safewebview 修复4.2之后几个版本的webview兼容安全问题 这部分仍旧有BUG不推荐使用
+M	library/build.gradle
+A	library/src/main/java/com/gzsll/jsbridge/SafeWebView.java
+A	library/src/main/java/com/gzsll/jsbridge/SafeWebViewClient.java
+A	library/src/main/java/com/gzsll/jsbridge/WVJBSafeWebView.java
+A	library/src/main/java/com/gzsll/jsbridge/WVJBSafeWebViewClient.java
+A	library/src/main/java/com/gzsll/jsbridge/WVJBStringHandler.java
+M	library/src/main/res/values/strings.xml
+
+HortonGou/WebViewJavascriptBridge;34be60a;加入默认的json解析回调
+A	library/src/main/java/com/gzsll/jsbridge/JavascriptCallback.java
+A	library/src/main/java/com/gzsll/jsbridge/WVBridgeJSONObjectHandler.java
+A	library/src/main/java/com/gzsll/jsbridge/WVJBHandler.java
+A	library/src/main/java/com/gzsll/jsbridge/WVJBResponseCallback.java
+M	library/src/main/java/com/gzsll/jsbridge/WVJBWebViewClient.java
+
+HortonGou/WebViewJavascriptBridge;166acc5;修复BUG json中含有转义后的json字符串时解析失败无法接受数据 加入文件特征验证，防止加载非法修改后的access文件中的js代码
+M	library/src/main/java/com/gzsll/jsbridge/WVJBWebView.java
+
+HortonGou/WebViewJavascriptBridge;d5f971d;添加必要的注释
+M	library/src/main/java/com/gzsll/jsbridge/WVJBConstants.java
+
+HortonGou/WebViewJavascriptBridge;aae1317;抽象webview 允许多种webview实现
+A	library/src/main/java/com/gzsll/jsbridge/IWebView.java

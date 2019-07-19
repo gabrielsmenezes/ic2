@@ -1,0 +1,9 @@
+huadong/dubbo-ops;f031312;1. allow use SERVER_HOST and SERVER_PORT from ENV. 2. prepend JAVA_OPTS from ENV. 3. if $1="run", keep alive check loop, which will be friendly to docker.
+M	dubbo-monitor-simple/src/main/resources/META-INF/assembly/bin/start.sh
+
+huadong/dubbo-ops;5410723;1. Fix no Applications, Services, Hosts menu entries.    Bug: the container will invoke the jetty extension in dubbo-2.6.0.jar. 2. Fix no charts: property resolves only the first depth reference    in configuration file dubbo.properties.
+M	dubbo-monitor-simple/src/main/resources/META-INF/dubbo/internal/com.alibaba.dubbo.container.Container
+M	dubbo-monitor-simple/src/main/resources/conf/dubbo.properties
+
+huadong/dubbo-ops;9e2b9a5;1. Fix no log output by adding package dependency of slf4j-log4j12. 2. Fix ClassNotfoundException for javax.servlet.xxx
+M	dubbo-monitor-simple/pom.xml

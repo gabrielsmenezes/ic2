@@ -1,0 +1,210 @@
+OpenConext/spring-security-oauth;e87eeeb5;merged with upstream
+OpenConext/spring-security-oauth;a32b2758;Reduce logging severity in TokenEndpoint
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/TokenEndpoint.java
+
+OpenConext/spring-security-oauth;09752393;Polish #1162 Add support for Elliptic Curve JWK signatures
+M	spring-security-oauth2/pom.xml
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/EllipticCurveJwkDefinition.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkDefinitionSource.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkSetConverter.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkDefinitionSourceITest.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkSetConverterTest.java
+
+OpenConext/spring-security-oauth;7ddbf1ed;Add support for Elliptic Curve JWK signatures
+M	spring-security-oauth2/pom.xml
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/EllipticCurveJwkDefinition.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkAttributes.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkDefinition.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkDefinitionSource.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkSetConverter.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkSetConverterTest.java
+
+OpenConext/spring-security-oauth;05022d73;Update to 2.3.0.BUILD-SNAPSHOT
+M	pom.xml
+M	samples/oauth/sparklr/pom.xml
+M	samples/oauth/tonr/pom.xml
+M	samples/oauth2/sparklr/pom.xml
+M	samples/oauth2/tonr/pom.xml
+M	samples/pom.xml
+M	spring-security-oauth/pom.xml
+M	spring-security-oauth2/pom.xml
+M	tests/annotation/approval/pom.xml
+M	tests/annotation/client/pom.xml
+M	tests/annotation/common/pom.xml
+M	tests/annotation/custom-authentication/pom.xml
+M	tests/annotation/custom-grant/pom.xml
+M	tests/annotation/form/pom.xml
+M	tests/annotation/jaxb/pom.xml
+M	tests/annotation/jdbc/pom.xml
+M	tests/annotation/jpa/pom.xml
+M	tests/annotation/jwt/pom.xml
+M	tests/annotation/mappings/pom.xml
+M	tests/annotation/multi/pom.xml
+M	tests/annotation/pom.xml
+M	tests/annotation/resource/pom.xml
+M	tests/annotation/ssl/pom.xml
+M	tests/annotation/vanilla/pom.xml
+M	tests/pom.xml
+M	tests/xml/approval/pom.xml
+M	tests/xml/client/pom.xml
+M	tests/xml/common/pom.xml
+M	tests/xml/form/pom.xml
+M	tests/xml/jdbc/pom.xml
+M	tests/xml/jwt/pom.xml
+M	tests/xml/mappings/pom.xml
+M	tests/xml/pom.xml
+M	tests/xml/vanilla/pom.xml
+
+OpenConext/spring-security-oauth;c6facd8d;Revert to snapshots spring-security-jwt
+M	spring-security-jwt/pom.xml
+
+OpenConext/spring-security-oauth;da423bee;Release jwt1.0.9.RELEASE
+M	spring-security-jwt/pom.xml
+
+OpenConext/spring-security-oauth;71810abc;Polish #1161 Add Elliptic Curve verification support for spring-security-jwt
+M	spring-security-jwt/src/main/java/org/springframework/security/jwt/crypto/sign/EllipticCurveKeyHelper.java
+A	spring-security-jwt/src/main/java/org/springframework/security/jwt/crypto/sign/EllipticCurveSignatureHelper.java
+M	spring-security-jwt/src/main/java/org/springframework/security/jwt/crypto/sign/EllipticCurveVerifier.java
+M	spring-security-jwt/src/test/java/org/springframework/security/jwt/crypto/sign/EllipticCurveVerifierTests.java
+
+OpenConext/spring-security-oauth;a23fffc2;Add Elliptic Curve verification support for spring-security-jwt
+A	spring-security-jwt/src/main/java/org/springframework/security/jwt/crypto/sign/EllipticCurveKeyHelper.java
+A	spring-security-jwt/src/main/java/org/springframework/security/jwt/crypto/sign/EllipticCurveVerifier.java
+A	spring-security-jwt/src/test/java/org/springframework/security/jwt/crypto/sign/EllipticCurveVerifierTests.java
+
+OpenConext/spring-security-oauth;3fa5e195;Next development version
+M	pom.xml
+M	samples/oauth/sparklr/pom.xml
+M	samples/oauth/tonr/pom.xml
+M	samples/oauth2/sparklr/pom.xml
+M	samples/oauth2/tonr/pom.xml
+M	samples/pom.xml
+M	spring-security-oauth/pom.xml
+M	spring-security-oauth2/pom.xml
+M	tests/annotation/approval/pom.xml
+M	tests/annotation/client/pom.xml
+M	tests/annotation/common/pom.xml
+M	tests/annotation/custom-authentication/pom.xml
+M	tests/annotation/custom-grant/pom.xml
+M	tests/annotation/form/pom.xml
+M	tests/annotation/jaxb/pom.xml
+M	tests/annotation/jdbc/pom.xml
+M	tests/annotation/jpa/pom.xml
+M	tests/annotation/jwt/pom.xml
+M	tests/annotation/mappings/pom.xml
+M	tests/annotation/multi/pom.xml
+M	tests/annotation/pom.xml
+M	tests/annotation/resource/pom.xml
+M	tests/annotation/ssl/pom.xml
+M	tests/annotation/vanilla/pom.xml
+M	tests/pom.xml
+M	tests/xml/approval/pom.xml
+M	tests/xml/client/pom.xml
+M	tests/xml/common/pom.xml
+M	tests/xml/form/pom.xml
+M	tests/xml/jdbc/pom.xml
+M	tests/xml/jwt/pom.xml
+M	tests/xml/mappings/pom.xml
+M	tests/xml/pom.xml
+M	tests/xml/vanilla/pom.xml
+
+OpenConext/spring-security-oauth;6167209c;Release version 2.2.1.RELEASE
+M	pom.xml
+M	samples/oauth/sparklr/pom.xml
+M	samples/oauth/tonr/pom.xml
+M	samples/oauth2/sparklr/pom.xml
+M	samples/oauth2/tonr/pom.xml
+M	samples/pom.xml
+M	spring-security-oauth/pom.xml
+M	spring-security-oauth2/pom.xml
+M	tests/annotation/approval/pom.xml
+M	tests/annotation/client/pom.xml
+M	tests/annotation/common/pom.xml
+M	tests/annotation/custom-authentication/pom.xml
+M	tests/annotation/custom-grant/pom.xml
+M	tests/annotation/form/pom.xml
+M	tests/annotation/jaxb/pom.xml
+M	tests/annotation/jdbc/pom.xml
+M	tests/annotation/jpa/pom.xml
+M	tests/annotation/jwt/pom.xml
+M	tests/annotation/mappings/pom.xml
+M	tests/annotation/multi/pom.xml
+M	tests/annotation/pom.xml
+M	tests/annotation/resource/pom.xml
+M	tests/annotation/ssl/pom.xml
+M	tests/annotation/vanilla/pom.xml
+M	tests/pom.xml
+M	tests/xml/approval/pom.xml
+M	tests/xml/client/pom.xml
+M	tests/xml/common/pom.xml
+M	tests/xml/form/pom.xml
+M	tests/xml/jdbc/pom.xml
+M	tests/xml/jwt/pom.xml
+M	tests/xml/mappings/pom.xml
+M	tests/xml/pom.xml
+M	tests/xml/vanilla/pom.xml
+
+OpenConext/spring-security-oauth;fb2649b4;Improve logging in TokenEndpoint
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/TokenEndpoint.java
+
+OpenConext/spring-security-oauth;86aeb5ba;Fix sslOnly in AuthorizationServerSecurityConfigurer
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configurers/AuthorizationServerSecurityConfigurer.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/annotation/AuthorizationServerConfigurationTests.java
+
+OpenConext/spring-security-oauth;528465c0;Remove logging of form data in OAuth2AuthTokenCallback
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/client/token/OAuth2AccessTokenSupport.java
+
+OpenConext/spring-security-oauth;3c902ff7;Return generic message when error code 'server_error'
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/error/DefaultWebResponseExceptionTranslator.java
+A	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/error/DefaultWebResponseExceptionTranslatorTests.java
+
+OpenConext/spring-security-oauth;62c4a29a;Disable spring5 travis build
+M	.travis.yml
+
+OpenConext/spring-security-oauth;f82f50db;Ignore unsupported JWK types when parsing JWK set
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkSetConverter.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkSetConverterTest.java
+
+OpenConext/spring-security-oauth;a556c1d4;Merge remote-tracking branch 'upstream/master'
+OpenConext/spring-security-oauth;36ce83ae;Fetched and merged upstream
+OpenConext/spring-security-oauth;9370b358;Merge branch 'master' of https://github.com/spring-projects/spring-security-oauth
+OpenConext/spring-security-oauth;5bb441b5;Support for other response types then code & token
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerEndpointsConfiguration.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configurers/AuthorizationServerEndpointsConfigurer.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/xml/AuthorizationServerBeanDefinitionParser.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/AbstractEndpoint.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/AuthorizationEndpoint.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/TokenEndpoint.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/AuthorizationRequestViewResolver.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/CompositeCustomResponseTypesHandler.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/CompositeResponseTypesHandler.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/CustomResponseTypesHandler.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/DefaultAuthorizationRequestViewResolver.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/DefaultResponseTypesHandler.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/NoopCustomResponseTypesHandler.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/ResponseTypesHandler.java
+M	spring-security-oauth2/src/main/resources/org/springframework/security/oauth2/spring-security-oauth2-2.0.xsd
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/annotation/AuthorizationServerConfigurationTests.java
+A	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/xml/AuthorizationServerAuthorizationRequestViewResolverParserTests.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/xml/AuthorizationServerBeanDefinitionParserTests.java
+D	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/xml/AuthorizationServerCustomResponseTypesParserTests.java
+A	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/xml/AuthorizationServerResponseTypesParserTests.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/endpoint/AuthorizationEndpointTests.java
+A	spring-security-oauth2/src/test/resources/org/springframework/security/oauth2/config/xml/authorization-server-authorization-request-view-resolver.xml
+R069	spring-security-oauth2/src/test/resources/org/springframework/security/oauth2/config/xml/authorization-server-custom-response-types-handler.xml	spring-security-oauth2/src/test/resources/org/springframework/security/oauth2/config/xml/authorization-server-response-types-handler.xml
+
+OpenConext/spring-security-oauth;8eccbd50;Merge branch 'master' into feature/support-non-oauth2-response-types-refactored
+OpenConext/spring-security-oauth;12606ead;Support for other response types then code & token
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerEndpointsConfiguration.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configurers/AuthorizationServerEndpointsConfigurer.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/xml/AuthorizationServerBeanDefinitionParser.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/AuthorizationEndpoint.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/CompositeCustomResponseTypesHandler.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/CustomResponseTypesHandler.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/response/NoopCustomResponseTypesHandler.java
+M	spring-security-oauth2/src/main/resources/org/springframework/security/oauth2/spring-security-oauth2-2.0.xsd
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/annotation/AuthorizationServerConfigurationTests.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/xml/AuthorizationServerBeanDefinitionParserTests.java
+A	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/xml/AuthorizationServerCustomResponseTypesParserTests.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/endpoint/AuthorizationEndpointTests.java
+A	spring-security-oauth2/src/test/resources/org/springframework/security/oauth2/config/xml/authorization-server-custom-response-types-handler.xml

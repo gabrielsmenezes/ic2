@@ -1,0 +1,7 @@
+gemvara/Activiti;ee7b213c4;Added support for filtering tasks by process instance as well as assignee, owner, involved, candidate, candidate-group, etc… Added support for filtering tasks by process instance / task list by candidate-groups (a list of groups delimited by a pipe) Added support for filtering tasks by process instance / task list by candidate-group-user-id (does an internal search for all possible groups the user id is associated with)
+M	modules/activiti-rest/src/main/java/org/activiti/rest/api/process/ProcessInstanceTaskResource.java
+M	modules/activiti-rest/src/main/java/org/activiti/rest/api/task/TasksResource.java
+
+gemvara/Activiti;3e6d64011;Changed user and group creation methods to use the POST http method instead of PUT to match the user guide
+M	modules/activiti-rest/src/main/java/org/activiti/rest/api/identity/GroupCreateResource.java
+M	modules/activiti-rest/src/main/java/org/activiti/rest/api/identity/UserCreateResource.java

@@ -1,0 +1,5 @@
+hervold/S3Mock;995bfd0;reverted
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java
+
+hervold/S3Mock;d3952e0;fixed problem arising when clients omit the slash after the bucket name, notably true of rclone. eg, http://example.com/bucket/?prefix=x always worked, but http://example.com/bucket?prefix=x would throw an exception.
+M	server/src/main/java/com/adobe/testing/s3mock/FileStoreController.java

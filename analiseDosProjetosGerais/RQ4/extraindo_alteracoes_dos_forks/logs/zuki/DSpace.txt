@@ -1,0 +1,109 @@
+zuki/DSpace;e3c858c5e;Merge remote-tracking branch 'upstream/master'
+zuki/DSpace;7d7a592cb;fixed a bug when search error is occuring
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+
+zuki/DSpace;b71e36214;Merge remote-tracking branch 'upstream/master'
+zuki/DSpace;cb150972b;Merge branch 'master' of github.com:zuki/DSpace
+zuki/DSpace;97d218ae5;Merge remote-tracking branch 'upstream/master'
+zuki/DSpace;2c5c00319;Merge remote-tracking branch 'upstream/master'
+zuki/DSpace;9286d62d2;Merged branch 'select-collection'
+zuki/DSpace;e3fbba61c;Select the collection already selected in the previous operation
+A	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/SelectCollectionTag.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/submit/step/JSPStartSubmissionLookupStep.java
+M	dspace-jspui/src/main/webapp/WEB-INF/dspace-tags.tld
+M	dspace-jspui/src/main/webapp/static/js/submission-lookup.js
+M	dspace-jspui/src/main/webapp/submit/start-lookup-submission.jsp
+
+zuki/DSpace;eccd8ad50;Set selected collection_id to item's details window
+M	dspace-jspui/src/main/webapp/static/js/submission-lookup.js
+M	dspace-jspui/src/main/webapp/submit/start-lookup-submission.jsp
+
+zuki/DSpace;ebcd8a2a8;Merge branch 'select-collection'
+zuki/DSpace;eb21857f1;Select the collection already selected in the previous operation
+A	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/SelectCollectionTag.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/submit/step/JSPStartSubmissionLookupStep.java
+M	dspace-jspui/src/main/webapp/WEB-INF/dspace-tags.tld
+M	dspace-jspui/src/main/webapp/submit/start-lookup-submission.jsp
+
+zuki/DSpace;be66fe879;fixed unmerged file
+M	dspace-api/src/main/java/org/dspace/submit/lookup/CiNiiService.java
+
+zuki/DSpace;d3a70db4f;merge upstream/master
+zuki/DSpace;b68f0204a;Added bulletin function
+A	dspace/modules/additions/src/main/java/jp/zuki_ebetsu/dspace/util/ItemUtility.java
+A	dspace/modules/additions/src/main/java/org/dspace/content/Collection.java
+A	dspace/modules/additions/src/main/java/org/dspace/content/Community.java
+A	dspace/modules/additions/src/main/java/org/dspace/content/DCDate.java
+A	dspace/modules/jspui/src/main/java/jp/zuki_ebetsu/dspace/app/webui/servlet/BulletinServlet.java
+A	dspace/modules/jspui/src/main/java/org/dspace/app/webui/servlet/admin/EditCommunitiesServlet.java
+A	dspace/modules/jspui/src/main/webapp/WEB-INF/web.xml
+A	dspace/modules/jspui/src/main/webapp/bulletins/issue.jsp
+A	dspace/modules/jspui/src/main/webapp/bulletins/issues-list.jsp
+A	dspace/modules/jspui/src/main/webapp/tools/edit-community.jsp
+
+zuki/DSpace;d20848078;Applied DS-1780
+M	dspace-api/src/main/java/org/dspace/submit/lookup/ArXivFileDataLoader.java
+M	dspace-api/src/main/java/org/dspace/submit/lookup/CrossRefFileDataLoader.java
+M	dspace-api/src/main/java/org/dspace/submit/lookup/PubmedFileDataLoader.java
+
+zuki/DSpace;3b98b797d;Merge branch 'DS-1797'
+zuki/DSpace;0634e3ae6;Merge branch 'DS-1792'
+zuki/DSpace;e92a79e1a;merge DS-1790
+zuki/DSpace;72485b32b;applied EKT-DS-1777
+zuki/DSpace;16db683b6;Fixed a wrong conditional expression
+M	dspace-api/src/main/java/org/dspace/submit/lookup/DSpaceWorkspaceItemOutputGenerator.java
+
+zuki/DSpace;561abdd12;Added a new modifier LanguageCondeModifier
+A	dspace-api/src/main/java/org/dspace/submit/lookup/LanguageCodeModifier.java
+M	dspace/config/spring/api/bte.xml
+
+zuki/DSpace;dd9ab91f3;Fixed bugs and edited inadequate configs
+M	dspace-api/src/main/java/org/dspace/submit/lookup/CrossRefFileDataLoader.java
+M	dspace-api/src/main/java/org/dspace/submit/lookup/PubmedUtils.java
+M	dspace/config/spring/api/bte.xml
+
+zuki/DSpace;9c8b538d9;remove warning in LanguageCodeModifier
+M	dspace-api/src/main/java/org/dspace/submit/lookup/LanguageCodeModifier.java
+
+zuki/DSpace;e16f66beb;fix 'BTE to DSpace' configuration
+M	dspace/config/spring/api/bte.xml
+
+zuki/DSpace;7c3fa03b3;fix crossref BTE configuration
+M	dspace-api/src/main/java/org/dspace/submit/lookup/CrossRefUtils.java
+M	dspace/config/spring/api/bte.xml
+
+zuki/DSpace;17062e7df;fix pubmed BTE configuration
+M	dspace-api/src/main/java/org/dspace/submit/lookup/PubmedUtils.java
+M	dspace/config/spring/api/bte.xml
+
+zuki/DSpace;8682002a0;fix arxiv BTE configuration
+M	dspace-api/src/main/java/org/dspace/submit/lookup/ArxivUtils.java
+M	dspace/config/spring/api/bte.xml
+
+zuki/DSpace;8c5144528;Merge branch 'DS-1777' of https://github.com/zuki/DSpace into DS-1777
+zuki/DSpace;43468acc8;Added a new dataloader for CiNii Article
+A	dspace-api/src/main/java/org/dspace/submit/lookup/CiNiiFileDataLoader.java
+A	dspace-api/src/main/java/org/dspace/submit/lookup/CiNiiOnlineDataLoader.java
+A	dspace-api/src/main/java/org/dspace/submit/lookup/CiNiiService.java
+A	dspace-api/src/main/java/org/dspace/submit/lookup/CiNiiUtils.java
+M	dspace-api/src/main/java/org/dspace/submit/lookup/SubmissionLookupDataLoader.java
+M	dspace-api/src/main/resources/Messages.properties
+A	dspace-jspui/src/main/webapp/image/submission-lookup-small-cinii-error.jpg
+A	dspace-jspui/src/main/webapp/image/submission-lookup-small-cinii.jpg
+M	dspace/config/modules/submission-lookup.cfg
+M	dspace/config/spring/api/bte.xml
+
+zuki/DSpace;655a6695b;Fixed a typo
+M	dspace/config/spring/api/bte.xml
+
+zuki/DSpace;6219d4d88;Fixed a wrong conditional expression
+M	dspace-api/src/main/java/org/dspace/submit/lookup/DSpaceWorkspaceItemOutputGenerator.java
+
+zuki/DSpace;6abc11be4;Added a new modifier LanguageCondeModifier
+A	dspace-api/src/main/java/org/dspace/submit/lookup/LanguageCodeModifier.java
+M	dspace/config/spring/api/bte.xml
+
+zuki/DSpace;607d6da03;Fixed bugs and edited inadequate configs
+M	dspace-api/src/main/java/org/dspace/submit/lookup/CrossRefFileDataLoader.java
+M	dspace-api/src/main/java/org/dspace/submit/lookup/PubmedUtils.java
+M	dspace/config/spring/api/bte.xml

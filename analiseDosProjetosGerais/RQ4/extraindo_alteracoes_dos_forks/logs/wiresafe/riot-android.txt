@@ -1,0 +1,567 @@
+wiresafe/riot-android;b1d8fbce;Updated package name and applicaiton Id. New google-services.json file added.Playstore release version 1.0.1
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	vector/build.gradle
+M	vector/src/app/AndroidManifest.xml
+A	vector/src/app/google-services (prod-im).json
+M	vector/src/app/google-services.json
+R099	vector/src/app/java/venturetrac/wiresafe/ga/Analytics.java	vector/src/app/java/newventure/wiresafe/ga/Analytics.java
+R097	vector/src/app/java/venturetrac/wiresafe/ga/GAHelper.java	vector/src/app/java/newventure/wiresafe/ga/GAHelper.java
+R096	vector/src/app/java/venturetrac/wiresafe/gcm/GCMHelper.java	vector/src/app/java/newventure/wiresafe/gcm/GCMHelper.java
+R096	vector/src/app/java/venturetrac/wiresafe/gcm/MatrixGcmListenerService.java	vector/src/app/java/newventure/wiresafe/gcm/MatrixGcmListenerService.java
+R095	vector/src/app/java/venturetrac/wiresafe/gcm/MatrixInstanceIDListenerService.java	vector/src/app/java/newventure/wiresafe/gcm/MatrixInstanceIDListenerService.java
+M	vector/src/appfdroid/AndroidManifest.xml
+M	vector/src/appfdroid/java/im/vector/ga/GAHelper.java
+M	vector/src/appfdroid/java/im/vector/gcm/GCMHelper.java
+M	vector/src/main/AndroidManifest.xml
+R096	vector/src/main/java/venturetrac/wiresafe/ErrorListener.java	vector/src/main/java/newventure/wiresafe/ErrorListener.java
+R097	vector/src/main/java/venturetrac/wiresafe/EventEmitter.java	vector/src/main/java/newventure/wiresafe/EventEmitter.java
+R099	vector/src/main/java/venturetrac/wiresafe/LoginHandler.java	vector/src/main/java/newventure/wiresafe/LoginHandler.java
+R098	vector/src/main/java/venturetrac/wiresafe/Matrix.java	vector/src/main/java/newventure/wiresafe/Matrix.java
+R099	vector/src/main/java/venturetrac/wiresafe/MyPresenceManager.java	vector/src/main/java/newventure/wiresafe/MyPresenceManager.java
+R098	vector/src/main/java/venturetrac/wiresafe/PhoneNumberHandler.java	vector/src/main/java/newventure/wiresafe/PhoneNumberHandler.java
+R099	vector/src/main/java/venturetrac/wiresafe/PublicRoomsManager.java	vector/src/main/java/newventure/wiresafe/PublicRoomsManager.java
+R099	vector/src/main/java/venturetrac/wiresafe/RegistrationManager.java	vector/src/main/java/newventure/wiresafe/RegistrationManager.java
+R099	vector/src/main/java/venturetrac/wiresafe/UnrecognizedCertHandler.java	vector/src/main/java/newventure/wiresafe/UnrecognizedCertHandler.java
+R097	vector/src/main/java/venturetrac/wiresafe/VectorApp.java	vector/src/main/java/newventure/wiresafe/VectorApp.java
+R097	vector/src/main/java/venturetrac/wiresafe/ViewedRoomTracker.java	vector/src/main/java/newventure/wiresafe/ViewedRoomTracker.java
+R099	vector/src/main/java/venturetrac/wiresafe/activity/AccountCreationActivity.java	vector/src/main/java/newventure/wiresafe/activity/AccountCreationActivity.java
+R099	vector/src/main/java/venturetrac/wiresafe/activity/AccountCreationCaptchaActivity.java	vector/src/main/java/newventure/wiresafe/activity/AccountCreationCaptchaActivity.java
+R099	vector/src/main/java/venturetrac/wiresafe/activity/CommonActivityUtils.java	vector/src/main/java/newventure/wiresafe/activity/CommonActivityUtils.java
+R096	vector/src/main/java/venturetrac/wiresafe/activity/CountryPickerActivity.java	vector/src/main/java/newventure/wiresafe/activity/CountryPickerActivity.java
+R099	vector/src/main/java/venturetrac/wiresafe/activity/FallbackLoginActivity.java	vector/src/main/java/newventure/wiresafe/activity/FallbackLoginActivity.java
+R096	vector/src/main/java/venturetrac/wiresafe/activity/FirebaseLoginActivity.java	vector/src/main/java/newventure/wiresafe/activity/FirebaseLoginActivity.java
+R097	vector/src/main/java/venturetrac/wiresafe/activity/HistoricalRoomsActivity.java	vector/src/main/java/newventure/wiresafe/activity/HistoricalRoomsActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/InComingCallActivity.java	vector/src/main/java/newventure/wiresafe/activity/InComingCallActivity.java
+R099	vector/src/main/java/venturetrac/wiresafe/activity/IntegrationManagerActivity.java	vector/src/main/java/newventure/wiresafe/activity/IntegrationManagerActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/JitsiCallActivity.java	vector/src/main/java/newventure/wiresafe/activity/JitsiCallActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/JoinScreenActivity.java	vector/src/main/java/newventure/wiresafe/activity/JoinScreenActivity.java
+R096	vector/src/main/java/venturetrac/wiresafe/activity/LanguagePickerActivity.java	vector/src/main/java/newventure/wiresafe/activity/LanguagePickerActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/LockScreenActivity.java	vector/src/main/java/newventure/wiresafe/activity/LockScreenActivity.java
+R099	vector/src/main/java/venturetrac/wiresafe/activity/LoginActivity.java	vector/src/main/java/newventure/wiresafe/activity/LoginActivity.java
+R097	vector/src/main/java/venturetrac/wiresafe/activity/MXCActionBarActivity.java	vector/src/main/java/newventure/wiresafe/activity/MXCActionBarActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/PhoneNumberAdditionActivity.java	vector/src/main/java/newventure/wiresafe/activity/PhoneNumberAdditionActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/PhoneNumberVerificationActivity.java	vector/src/main/java/newventure/wiresafe/activity/PhoneNumberVerificationActivity.java
+R091	vector/src/main/java/venturetrac/wiresafe/activity/RiotAppCompatActivity.java	vector/src/main/java/newventure/wiresafe/activity/RiotAppCompatActivity.java
+R091	vector/src/main/java/venturetrac/wiresafe/activity/RiotBaseActivity.java	vector/src/main/java/newventure/wiresafe/activity/RiotBaseActivity.java
+R097	vector/src/main/java/venturetrac/wiresafe/activity/RoomDirectoryPickerActivity.java	vector/src/main/java/newventure/wiresafe/activity/RoomDirectoryPickerActivity.java
+R097	vector/src/main/java/venturetrac/wiresafe/activity/SplashActivity.java	vector/src/main/java/newventure/wiresafe/activity/SplashActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/VectorBaseSearchActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorBaseSearchActivity.java
+R099	vector/src/main/java/venturetrac/wiresafe/activity/VectorCallViewActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorCallViewActivity.java
+R097	vector/src/main/java/venturetrac/wiresafe/activity/VectorFakeRoomPreviewActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorFakeRoomPreviewActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/VectorHomeActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorHomeActivity.java
+R099	vector/src/main/java/venturetrac/wiresafe/activity/VectorMediasPickerActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorMediasPickerActivity.java
+R096	vector/src/main/java/venturetrac/wiresafe/activity/VectorMediasViewerActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorMediasViewerActivity.java
+R099	vector/src/main/java/venturetrac/wiresafe/activity/VectorMemberDetailsActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorMemberDetailsActivity.java
+R095	vector/src/main/java/venturetrac/wiresafe/activity/VectorPublicRoomsActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorPublicRoomsActivity.java
+R099	vector/src/main/java/venturetrac/wiresafe/activity/VectorRoomActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorRoomActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/VectorRoomCreationActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorRoomCreationActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/VectorRoomDetailsActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorRoomDetailsActivity.java
+R097	vector/src/main/java/venturetrac/wiresafe/activity/VectorRoomInviteMembersActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorRoomInviteMembersActivity.java
+R093	vector/src/main/java/venturetrac/wiresafe/activity/VectorSettingsActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorSettingsActivity.java
+R097	vector/src/main/java/venturetrac/wiresafe/activity/VectorSharedFilesActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorSharedFilesActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/activity/VectorUnifiedSearchActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorUnifiedSearchActivity.java
+R096	vector/src/main/java/venturetrac/wiresafe/activity/VectorUniversalLinkActivity.java	vector/src/main/java/newventure/wiresafe/activity/VectorUniversalLinkActivity.java
+R097	vector/src/main/java/venturetrac/wiresafe/activity/WidgetActivity.java	vector/src/main/java/newventure/wiresafe/activity/WidgetActivity.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/AbsAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/AbsAdapter.java
+R097	vector/src/main/java/venturetrac/wiresafe/adapters/AbsFilterableAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/AbsFilterableAdapter.java
+R097	vector/src/main/java/venturetrac/wiresafe/adapters/AdapterSection.java	vector/src/main/java/newventure/wiresafe/adapters/AdapterSection.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/AdapterUtils.java	vector/src/main/java/newventure/wiresafe/adapters/AdapterUtils.java
+R096	vector/src/main/java/venturetrac/wiresafe/adapters/AutoCompletedUserAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/AutoCompletedUserAdapter.java
+R097	vector/src/main/java/venturetrac/wiresafe/adapters/CountryAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/CountryAdapter.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/HomeRoomAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/HomeRoomAdapter.java
+R094	vector/src/main/java/venturetrac/wiresafe/adapters/ImageCompressionDescription.java	vector/src/main/java/newventure/wiresafe/adapters/ImageCompressionDescription.java
+R096	vector/src/main/java/venturetrac/wiresafe/adapters/ImageSizesAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/ImageSizesAdapter.java
+R096	vector/src/main/java/venturetrac/wiresafe/adapters/InvitationViewHolder.java	vector/src/main/java/newventure/wiresafe/adapters/InvitationViewHolder.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/KnownContactsAdapterSection.java	vector/src/main/java/newventure/wiresafe/adapters/KnownContactsAdapterSection.java
+R097	vector/src/main/java/venturetrac/wiresafe/adapters/LanguagesAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/LanguagesAdapter.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/ParticipantAdapterItem.java	vector/src/main/java/newventure/wiresafe/adapters/ParticipantAdapterItem.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/PeopleAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/PeopleAdapter.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/PublicRoomsAdapterSection.java	vector/src/main/java/newventure/wiresafe/adapters/PublicRoomsAdapterSection.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/RoomAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/RoomAdapter.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/RoomDirectoryAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/RoomDirectoryAdapter.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/RoomViewHolder.java	vector/src/main/java/newventure/wiresafe/adapters/RoomViewHolder.java
+R099	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMediasViewerAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorMediasViewerAdapter.java
+R097	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMemberDetailsAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorMemberDetailsAdapter.java
+R099	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMemberDetailsDevicesAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorMemberDetailsDevicesAdapter.java
+R099	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMessagesAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorMessagesAdapter.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMessagesAdapterHelper.java	vector/src/main/java/newventure/wiresafe/adapters/VectorMessagesAdapterHelper.java
+R099	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMessagesAdapterMediasHelper.java	vector/src/main/java/newventure/wiresafe/adapters/VectorMessagesAdapterMediasHelper.java
+R099	vector/src/main/java/venturetrac/wiresafe/adapters/VectorParticipantsAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorParticipantsAdapter.java
+R097	vector/src/main/java/venturetrac/wiresafe/adapters/VectorPublicRoomsAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorPublicRoomsAdapter.java
+R092	vector/src/main/java/venturetrac/wiresafe/adapters/VectorReadReceiptsAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorReadReceiptsAdapter.java
+R097	vector/src/main/java/venturetrac/wiresafe/adapters/VectorRoomCreationAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorRoomCreationAdapter.java
+R099	vector/src/main/java/venturetrac/wiresafe/adapters/VectorRoomDetailsMembersAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorRoomDetailsMembersAdapter.java
+R099	vector/src/main/java/venturetrac/wiresafe/adapters/VectorRoomSummaryAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorRoomSummaryAdapter.java
+R096	vector/src/main/java/venturetrac/wiresafe/adapters/VectorRoomsSelectionAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorRoomsSelectionAdapter.java
+R098	vector/src/main/java/venturetrac/wiresafe/adapters/VectorSearchFilesListAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorSearchFilesListAdapter.java
+R097	vector/src/main/java/venturetrac/wiresafe/adapters/VectorSearchMessagesListAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorSearchMessagesListAdapter.java
+R095	vector/src/main/java/venturetrac/wiresafe/adapters/VectorUnifiedSearchFragmentPagerAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorUnifiedSearchFragmentPagerAdapter.java
+R099	vector/src/main/java/venturetrac/wiresafe/adapters/VectorUnknownDevicesAdapter.java	vector/src/main/java/newventure/wiresafe/adapters/VectorUnknownDevicesAdapter.java
+R096	vector/src/main/java/venturetrac/wiresafe/car/CarBroadcastReceiver.java	vector/src/main/java/newventure/wiresafe/car/CarBroadcastReceiver.java
+R099	vector/src/main/java/venturetrac/wiresafe/contacts/Contact.java	vector/src/main/java/newventure/wiresafe/contacts/Contact.java
+R099	vector/src/main/java/venturetrac/wiresafe/contacts/ContactsManager.java	vector/src/main/java/newventure/wiresafe/contacts/ContactsManager.java
+R099	vector/src/main/java/venturetrac/wiresafe/contacts/PIDsRetriever.java	vector/src/main/java/newventure/wiresafe/contacts/PIDsRetriever.java
+R098	vector/src/main/java/venturetrac/wiresafe/db/VectorContentProvider.java	vector/src/main/java/newventure/wiresafe/db/VectorContentProvider.java
+R097	vector/src/main/java/venturetrac/wiresafe/fragments/AbsHomeFragment.java	vector/src/main/java/newventure/wiresafe/fragments/AbsHomeFragment.java
+R097	vector/src/main/java/venturetrac/wiresafe/fragments/FavouritesFragment.java	vector/src/main/java/newventure/wiresafe/fragments/FavouritesFragment.java
+R098	vector/src/main/java/venturetrac/wiresafe/fragments/HomeFragment.java	vector/src/main/java/newventure/wiresafe/fragments/HomeFragment.java
+R095	vector/src/main/java/venturetrac/wiresafe/fragments/ImageSizeSelectionDialogFragment.java	vector/src/main/java/newventure/wiresafe/fragments/ImageSizeSelectionDialogFragment.java
+R097	vector/src/main/java/venturetrac/wiresafe/fragments/PeopleFragment.java	vector/src/main/java/newventure/wiresafe/fragments/PeopleFragment.java
+R097	vector/src/main/java/venturetrac/wiresafe/fragments/RoomsFragment.java	vector/src/main/java/newventure/wiresafe/fragments/RoomsFragment.java
+R098	vector/src/main/java/venturetrac/wiresafe/fragments/VectorMessageListFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorMessageListFragment.java
+R096	vector/src/main/java/venturetrac/wiresafe/fragments/VectorMessagesFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorMessagesFragment.java
+R096	vector/src/main/java/venturetrac/wiresafe/fragments/VectorPublicRoomsListFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorPublicRoomsListFragment.java
+R095	vector/src/main/java/venturetrac/wiresafe/fragments/VectorReadReceiptsDialogFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorReadReceiptsDialogFragment.java
+R098	vector/src/main/java/venturetrac/wiresafe/fragments/VectorRecentsListFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorRecentsListFragment.java
+R098	vector/src/main/java/venturetrac/wiresafe/fragments/VectorRoomDetailsMembersFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorRoomDetailsMembersFragment.java
+R099	vector/src/main/java/venturetrac/wiresafe/fragments/VectorRoomSettingsFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorRoomSettingsFragment.java
+R098	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSearchMessagesListFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorSearchMessagesListFragment.java
+R095	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSearchPeopleListFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorSearchPeopleListFragment.java
+R099	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSearchRoomFilesListFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorSearchRoomFilesListFragment.java
+R094	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSearchRoomsFilesListFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorSearchRoomsFilesListFragment.java
+R095	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSearchRoomsListFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorSearchRoomsListFragment.java
+R099	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSettingsPreferencesFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorSettingsPreferencesFragment.java
+R097	vector/src/main/java/venturetrac/wiresafe/fragments/VectorUnknownDevicesFragment.java	vector/src/main/java/newventure/wiresafe/fragments/VectorUnknownDevicesFragment.java
+R096	vector/src/main/java/venturetrac/wiresafe/fragments/WireTransferFragment.java	vector/src/main/java/newventure/wiresafe/fragments/WireTransferFragment.java
+R099	vector/src/main/java/venturetrac/wiresafe/gcm/GcmRegistrationManager.java	vector/src/main/java/newventure/wiresafe/gcm/GcmRegistrationManager.java
+R099	vector/src/main/java/venturetrac/wiresafe/listeners/IMessagesAdapterActionsListener.java	vector/src/main/java/newventure/wiresafe/listeners/IMessagesAdapterActionsListener.java
+R096	vector/src/main/java/venturetrac/wiresafe/preference/AddressPreference.java	vector/src/main/java/newventure/wiresafe/preference/AddressPreference.java
+R095	vector/src/main/java/venturetrac/wiresafe/preference/ProgressBarPreference.java	vector/src/main/java/newventure/wiresafe/preference/ProgressBarPreference.java
+R095	vector/src/main/java/venturetrac/wiresafe/preference/RoomAvatarPreference.java	vector/src/main/java/newventure/wiresafe/preference/RoomAvatarPreference.java
+R096	vector/src/main/java/venturetrac/wiresafe/preference/UserAvatarPreference.java	vector/src/main/java/newventure/wiresafe/preference/UserAvatarPreference.java
+R099	vector/src/main/java/venturetrac/wiresafe/preference/VectorCustomActionEditTextPreference.java	vector/src/main/java/newventure/wiresafe/preference/VectorCustomActionEditTextPreference.java
+R096	vector/src/main/java/venturetrac/wiresafe/preference/VectorDividerCategory.java	vector/src/main/java/newventure/wiresafe/preference/VectorDividerCategory.java
+R097	vector/src/main/java/venturetrac/wiresafe/preference/VectorListPreference.java	vector/src/main/java/newventure/wiresafe/preference/VectorListPreference.java
+R097	vector/src/main/java/venturetrac/wiresafe/preference/VectorPreferenceCategory.java	vector/src/main/java/newventure/wiresafe/preference/VectorPreferenceCategory.java
+R098	vector/src/main/java/venturetrac/wiresafe/preference/VectorSwitchPreference.java	vector/src/main/java/newventure/wiresafe/preference/VectorSwitchPreference.java
+R095	vector/src/main/java/venturetrac/wiresafe/receiver/DismissNotificationReceiver.java	vector/src/main/java/newventure/wiresafe/receiver/DismissNotificationReceiver.java
+R095	vector/src/main/java/venturetrac/wiresafe/receiver/HeadsetConnectionReceiver.java	vector/src/main/java/newventure/wiresafe/receiver/HeadsetConnectionReceiver.java
+R091	vector/src/main/java/venturetrac/wiresafe/receiver/VectorBootReceiver.java	vector/src/main/java/newventure/wiresafe/receiver/VectorBootReceiver.java
+R098	vector/src/main/java/venturetrac/wiresafe/receiver/VectorRegistrationReceiver.java	vector/src/main/java/newventure/wiresafe/receiver/VectorRegistrationReceiver.java
+R098	vector/src/main/java/venturetrac/wiresafe/receiver/VectorUniversalLinkReceiver.java	vector/src/main/java/newventure/wiresafe/receiver/VectorUniversalLinkReceiver.java
+R099	vector/src/main/java/venturetrac/wiresafe/services/EventStreamService.java	vector/src/main/java/newventure/wiresafe/services/EventStreamService.java
+R099	vector/src/main/java/venturetrac/wiresafe/store/LoginStorage.java	vector/src/main/java/newventure/wiresafe/store/LoginStorage.java
+R097	vector/src/main/java/venturetrac/wiresafe/util/AuthClass.java	vector/src/main/java/newventure/wiresafe/util/AuthClass.java
+R099	vector/src/main/java/venturetrac/wiresafe/util/BugReporter.java	vector/src/main/java/newventure/wiresafe/util/BugReporter.java
+R099	vector/src/main/java/venturetrac/wiresafe/util/BugReporterMultipartBody.java	vector/src/main/java/newventure/wiresafe/util/BugReporterMultipartBody.java
+R098	vector/src/main/java/venturetrac/wiresafe/util/CallUtilities.java	vector/src/main/java/newventure/wiresafe/util/CallUtilities.java
+R099	vector/src/main/java/venturetrac/wiresafe/util/Connectivity.java	vector/src/main/java/newventure/wiresafe/util/Connectivity.java
+R097	vector/src/main/java/venturetrac/wiresafe/util/CountryPhoneData.java	vector/src/main/java/newventure/wiresafe/util/CountryPhoneData.java
+R098	vector/src/main/java/venturetrac/wiresafe/util/EventGroup.java	vector/src/main/java/newventure/wiresafe/util/EventGroup.java
+R096	vector/src/main/java/venturetrac/wiresafe/util/MatrixLinkMovementMethod.java	vector/src/main/java/newventure/wiresafe/util/MatrixLinkMovementMethod.java
+R097	vector/src/main/java/venturetrac/wiresafe/util/MatrixURLSpan.java	vector/src/main/java/newventure/wiresafe/util/MatrixURLSpan.java
+R098	vector/src/main/java/venturetrac/wiresafe/util/NotificationUtils.java	vector/src/main/java/newventure/wiresafe/util/NotificationUtils.java
+R099	vector/src/main/java/venturetrac/wiresafe/util/PhoneNumberUtils.java	vector/src/main/java/newventure/wiresafe/util/PhoneNumberUtils.java
+R099	vector/src/main/java/venturetrac/wiresafe/util/PreferencesManager.java	vector/src/main/java/newventure/wiresafe/util/PreferencesManager.java
+R096	vector/src/main/java/venturetrac/wiresafe/util/RageShake.java	vector/src/main/java/newventure/wiresafe/util/RageShake.java
+R098	vector/src/main/java/venturetrac/wiresafe/util/ReadMarkerManager.java	vector/src/main/java/newventure/wiresafe/util/ReadMarkerManager.java
+R098	vector/src/main/java/venturetrac/wiresafe/util/ResourceUtils.java	vector/src/main/java/newventure/wiresafe/util/ResourceUtils.java
+R095	vector/src/main/java/venturetrac/wiresafe/util/RiotEventDisplay.java	vector/src/main/java/newventure/wiresafe/util/RiotEventDisplay.java
+R098	vector/src/main/java/venturetrac/wiresafe/util/RoomDirectoryData.java	vector/src/main/java/newventure/wiresafe/util/RoomDirectoryData.java
+R099	vector/src/main/java/venturetrac/wiresafe/util/RoomUtils.java	vector/src/main/java/newventure/wiresafe/util/RoomUtils.java
+R099	vector/src/main/java/venturetrac/wiresafe/util/SharedDataItem.java	vector/src/main/java/newventure/wiresafe/util/SharedDataItem.java
+R098	vector/src/main/java/venturetrac/wiresafe/util/SlashComandsParser.java	vector/src/main/java/newventure/wiresafe/util/SlashComandsParser.java
+R097	vector/src/main/java/venturetrac/wiresafe/util/SlidableMediaInfo.java	vector/src/main/java/newventure/wiresafe/util/SlidableMediaInfo.java
+R098	vector/src/main/java/venturetrac/wiresafe/util/StickySectionHelper.java	vector/src/main/java/newventure/wiresafe/util/StickySectionHelper.java
+R088	vector/src/main/java/venturetrac/wiresafe/util/ThemeUtils.java	vector/src/main/java/newventure/wiresafe/util/ThemeUtils.java
+R099	vector/src/main/java/venturetrac/wiresafe/util/VectorCallSoundManager.java	vector/src/main/java/newventure/wiresafe/util/VectorCallSoundManager.java
+R099	vector/src/main/java/venturetrac/wiresafe/util/VectorMarkdownParser.java	vector/src/main/java/newventure/wiresafe/util/VectorMarkdownParser.java
+R098	vector/src/main/java/venturetrac/wiresafe/util/VectorRoomMediasSender.java	vector/src/main/java/newventure/wiresafe/util/VectorRoomMediasSender.java
+R099	vector/src/main/java/venturetrac/wiresafe/util/VectorUtils.java	vector/src/main/java/newventure/wiresafe/util/VectorUtils.java
+R097	vector/src/main/java/venturetrac/wiresafe/view/ActiveWidgetsBanner.java	vector/src/main/java/newventure/wiresafe/view/ActiveWidgetsBanner.java
+R099	vector/src/main/java/venturetrac/wiresafe/view/DrawerScrollView.java	vector/src/main/java/newventure/wiresafe/view/DrawerScrollView.java
+R095	vector/src/main/java/venturetrac/wiresafe/view/EmptyViewItemDecoration.java	vector/src/main/java/newventure/wiresafe/view/EmptyViewItemDecoration.java
+R096	vector/src/main/java/venturetrac/wiresafe/view/HomeSectionView.java	vector/src/main/java/newventure/wiresafe/view/HomeSectionView.java
+R098	vector/src/main/java/venturetrac/wiresafe/view/RecentMediaLayout.java	vector/src/main/java/newventure/wiresafe/view/RecentMediaLayout.java
+R099	vector/src/main/java/venturetrac/wiresafe/view/RecentsExpandableListView.java	vector/src/main/java/newventure/wiresafe/view/RecentsExpandableListView.java
+R098	vector/src/main/java/venturetrac/wiresafe/view/SectionView.java	vector/src/main/java/newventure/wiresafe/view/SectionView.java
+R096	vector/src/main/java/venturetrac/wiresafe/view/SimpleDividerItemDecoration.java	vector/src/main/java/newventure/wiresafe/view/SimpleDividerItemDecoration.java
+R096	vector/src/main/java/venturetrac/wiresafe/view/UnreadCounterBadgeView.java	vector/src/main/java/newventure/wiresafe/view/UnreadCounterBadgeView.java
+R098	vector/src/main/java/venturetrac/wiresafe/view/VectorAutoCompleteTextView.java	vector/src/main/java/newventure/wiresafe/view/VectorAutoCompleteTextView.java
+R099	vector/src/main/java/venturetrac/wiresafe/view/VectorCircularImageView.java	vector/src/main/java/newventure/wiresafe/view/VectorCircularImageView.java
+R098	vector/src/main/java/venturetrac/wiresafe/view/VectorOngoingConferenceCallView.java	vector/src/main/java/newventure/wiresafe/view/VectorOngoingConferenceCallView.java
+R096	vector/src/main/java/venturetrac/wiresafe/view/VectorPendingCallView.java	vector/src/main/java/newventure/wiresafe/view/VectorPendingCallView.java
+R097	vector/src/main/java/venturetrac/wiresafe/view/VideoRecordProgressView.java	vector/src/main/java/newventure/wiresafe/view/VideoRecordProgressView.java
+R091	vector/src/main/java/venturetrac/wiresafe/view/VideoRecordView.java	vector/src/main/java/newventure/wiresafe/view/VideoRecordView.java
+R098	vector/src/main/java/venturetrac/wiresafe/widgets/Widget.java	vector/src/main/java/newventure/wiresafe/widgets/Widget.java
+R098	vector/src/main/java/venturetrac/wiresafe/widgets/WidgetContent.java	vector/src/main/java/newventure/wiresafe/widgets/WidgetContent.java
+R096	vector/src/main/java/venturetrac/wiresafe/widgets/WidgetsApi.java	vector/src/main/java/newventure/wiresafe/widgets/WidgetsApi.java
+R099	vector/src/main/java/venturetrac/wiresafe/widgets/WidgetsManager.java	vector/src/main/java/newventure/wiresafe/widgets/WidgetsManager.java
+R097	vector/src/main/java/venturetrac/wiresafe/widgets/WidgetsRestClient.java	vector/src/main/java/newventure/wiresafe/widgets/WidgetsRestClient.java
+M	vector/src/main/res/layout/activity_callview.xml
+M	vector/src/main/res/layout/activity_home.xml
+M	vector/src/main/res/layout/activity_vector_medias_picker.xml
+M	vector/src/main/res/layout/activity_vector_room.xml
+M	vector/src/main/res/layout/adapter_item_public_room_view.xml
+M	vector/src/main/res/layout/adapter_item_room_invite.xml
+M	vector/src/main/res/layout/adapter_item_vector_add_participants.xml
+M	vector/src/main/res/layout/dialog_invite_by_id.xml
+M	vector/src/main/res/layout/fragment_home.xml
+M	vector/src/main/res/layout/fragment_vector_recents_list.xml
+M	vector/src/main/res/layout/item_user_auto_complete.xml
+M	vector/src/main/res/layout/vector_adapter_member_details_items.xml
+M	vector/src/main/res/layout/vector_home_menu_header.xml
+M	vector/src/main/res/layout/vector_message_merge_avatar_list.xml
+M	vector/src/main/res/layout/vector_settings_round_avatar.xml
+M	vector/src/main/res/layout/video_record_view.xml
+M	vector/src/main/res/xml/vector_room_settings_preferences.xml
+M	vector/src/main/res/xml/vector_settings_preferences.xml
+
+wiresafe/riot-android;7320fb6a;Added keystore file and keystore propertied to git
+A	keystore.properties
+M	vector/build.gradle
+A	venturetrac_keystore.jks
+
+wiresafe/riot-android;3f9083a9;gradle version updated
+M	build.gradle
+M	vector/src/main/java/venturetrac/wiresafe/ErrorListener.java
+M	vector/src/main/java/venturetrac/wiresafe/Matrix.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/CommonActivityUtils.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/LoginActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/SplashActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/VectorHomeActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/VectorUniversalLinkActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/fragments/VectorRecentsListFragment.java
+M	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSettingsPreferencesFragment.java
+
+wiresafe/riot-android;1f8039f6;Login: Add firebase pre-built UI, Add firebase pre-built login functionality
+M	build.gradle
+M	vector/build.gradle
+M	vector/src/main/AndroidManifest.xml
+A	vector/src/main/java/venturetrac/wiresafe/activity/FirebaseLoginActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/LoginActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/VectorHomeActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/VectorSharedFilesActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/receiver/VectorRegistrationReceiver.java
+M	vector/src/main/java/venturetrac/wiresafe/receiver/VectorUniversalLinkReceiver.java
+M	vector/src/main/res/layout/activity_vector_login.xml
+M	vector/src/main/res/values/donottranslate.xml
+M	vector/src/main/res/values/styles.xml
+
+wiresafe/riot-android;11f83847;Update alert for users who are not member of any group
+M	build.gradle
+M	vector/src/main/java/venturetrac/wiresafe/fragments/WireTransferFragment.java
+M	vector/src/main/res/values/donottranslate.xml
+
+wiresafe/riot-android;bdcd1f75;UAT build code push
+M	build.gradle
+M	vector/src/main/java/venturetrac/wiresafe/activity/LoginActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/VectorHomeActivity.java
+
+wiresafe/riot-android;88c9efd8;1) Add firebase google sign in, 2) Update home server and identity server, 3) Update login ui
+M	build.gradle
+M	vector/build.gradle
+M	vector/src/main/java/venturetrac/wiresafe/LoginHandler.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/LoginActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/VectorHomeActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/VectorRoomActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSettingsPreferencesFragment.java
+A	vector/src/main/java/venturetrac/wiresafe/util/Connectivity.java
+M	vector/src/main/java/venturetrac/wiresafe/util/VectorUtils.java
+M	vector/src/main/res/layout/activity_vector_login.xml
+A	vector/src/main/res/layout/activity_vector_login_firebase.xml
+M	vector/src/main/res/values/donottranslate.xml
+
+wiresafe/riot-android;74a72d7f;1. Add matrix login if firebase fails, for already existing users, 2. Update server url, 3. resources and icons change to wiresafe from riot
+M	build.gradle
+M	vector/build.gradle
+M	vector/src/main/java/venturetrac/wiresafe/activity/AccountCreationActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/AccountCreationCaptchaActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/FallbackLoginActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/LoginActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/activity/VectorHomeActivity.java
+M	vector/src/main/java/venturetrac/wiresafe/gcm/GcmRegistrationManager.java
+M	vector/src/main/java/venturetrac/wiresafe/services/EventStreamService.java
+A	vector/src/main/java/venturetrac/wiresafe/util/AuthClass.java
+A	vector/src/main/res/drawable-hdpi/ic_chat_black_24dp.png
+A	vector/src/main/res/drawable-mdpi/ic_chat_black_24dp.png
+A	vector/src/main/res/drawable-xhdpi/ic_chat_black_24dp.png
+A	vector/src/main/res/drawable-xxhdpi/ic_chat_black_24dp.png
+M	vector/src/main/res/drawable-xxhdpi/logo.png
+A	vector/src/main/res/drawable-xxxhdpi/ic_chat_black_24dp.png
+R100	vector/src/main/res/drawable/riot_splash.gif	vector/src/main/res/drawable/wiresafe_splash.gif
+M	vector/src/main/res/layout/vector_activity_splash.xml
+M	vector/src/main/res/menu/vector_home_sliding_menu.xml
+M	vector/src/main/res/values-de/strings.xml
+M	vector/src/main/res/values-es-rMX/strings.xml
+M	vector/src/main/res/values-es/strings.xml
+M	vector/src/main/res/values-eu/strings.xml
+M	vector/src/main/res/values-fi/strings.xml
+M	vector/src/main/res/values-fr/strings.xml
+M	vector/src/main/res/values-hu/strings.xml
+M	vector/src/main/res/values-id/strings.xml
+M	vector/src/main/res/values-it/strings.xml
+M	vector/src/main/res/values-lv/strings.xml
+M	vector/src/main/res/values-nl/strings.xml
+M	vector/src/main/res/values-pl/strings.xml
+M	vector/src/main/res/values-pt-rBR/strings.xml
+M	vector/src/main/res/values-pt/strings.xml
+M	vector/src/main/res/values-ru/strings.xml
+M	vector/src/main/res/values-uk/strings.xml
+M	vector/src/main/res/values-zh-rCN/strings.xml
+M	vector/src/main/res/values/donottranslate.xml
+M	vector/src/main/res/values/strings.xml
+
+wiresafe/riot-android;49bd6ebc;Add firebase login/registration, Change password updated with firebase, Phone number otp service handling with firebase
+M	build.gradle
+M	vector/build.gradle
+M	vector/src/app/AndroidManifest.xml
+R050	google-services.json	vector/src/app/google-services (devl).json
+A	vector/src/app/google-services (prod).json
+M	vector/src/app/google-services.json
+R099	vector/src/app/java/im/vector/ga/Analytics.java	vector/src/app/java/venturetrac/wiresafe/ga/Analytics.java
+R097	vector/src/app/java/im/vector/ga/GAHelper.java	vector/src/app/java/venturetrac/wiresafe/ga/GAHelper.java
+R096	vector/src/app/java/im/vector/gcm/GCMHelper.java	vector/src/app/java/venturetrac/wiresafe/gcm/GCMHelper.java
+R096	vector/src/app/java/im/vector/gcm/MatrixGcmListenerService.java	vector/src/app/java/venturetrac/wiresafe/gcm/MatrixGcmListenerService.java
+R095	vector/src/app/java/im/vector/gcm/MatrixInstanceIDListenerService.java	vector/src/app/java/venturetrac/wiresafe/gcm/MatrixInstanceIDListenerService.java
+M	vector/src/appfdroid/AndroidManifest.xml
+M	vector/src/appfdroid/java/im/vector/ga/GAHelper.java
+M	vector/src/appfdroid/java/im/vector/gcm/GCMHelper.java
+M	vector/src/main/AndroidManifest.xml
+R096	vector/src/main/java/im/vector/ErrorListener.java	vector/src/main/java/venturetrac/wiresafe/ErrorListener.java
+R097	vector/src/main/java/im/vector/EventEmitter.java	vector/src/main/java/venturetrac/wiresafe/EventEmitter.java
+R099	vector/src/main/java/im/vector/LoginHandler.java	vector/src/main/java/venturetrac/wiresafe/LoginHandler.java
+R098	vector/src/main/java/im/vector/Matrix.java	vector/src/main/java/venturetrac/wiresafe/Matrix.java
+R099	vector/src/main/java/im/vector/MyPresenceManager.java	vector/src/main/java/venturetrac/wiresafe/MyPresenceManager.java
+R098	vector/src/main/java/im/vector/PhoneNumberHandler.java	vector/src/main/java/venturetrac/wiresafe/PhoneNumberHandler.java
+R099	vector/src/main/java/im/vector/PublicRoomsManager.java	vector/src/main/java/venturetrac/wiresafe/PublicRoomsManager.java
+R099	vector/src/main/java/im/vector/RegistrationManager.java	vector/src/main/java/venturetrac/wiresafe/RegistrationManager.java
+R099	vector/src/main/java/im/vector/UnrecognizedCertHandler.java	vector/src/main/java/venturetrac/wiresafe/UnrecognizedCertHandler.java
+R097	vector/src/main/java/im/vector/VectorApp.java	vector/src/main/java/venturetrac/wiresafe/VectorApp.java
+R097	vector/src/main/java/im/vector/ViewedRoomTracker.java	vector/src/main/java/venturetrac/wiresafe/ViewedRoomTracker.java
+R099	vector/src/main/java/im/vector/activity/AccountCreationActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/AccountCreationActivity.java
+R099	vector/src/main/java/im/vector/activity/AccountCreationCaptchaActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/AccountCreationCaptchaActivity.java
+R099	vector/src/main/java/im/vector/activity/CommonActivityUtils.java	vector/src/main/java/venturetrac/wiresafe/activity/CommonActivityUtils.java
+R096	vector/src/main/java/im/vector/activity/CountryPickerActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/CountryPickerActivity.java
+R099	vector/src/main/java/im/vector/activity/FallbackLoginActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/FallbackLoginActivity.java
+R097	vector/src/main/java/im/vector/activity/HistoricalRoomsActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/HistoricalRoomsActivity.java
+R098	vector/src/main/java/im/vector/activity/InComingCallActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/InComingCallActivity.java
+R099	vector/src/main/java/im/vector/activity/IntegrationManagerActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/IntegrationManagerActivity.java
+R098	vector/src/main/java/im/vector/activity/JitsiCallActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/JitsiCallActivity.java
+R098	vector/src/main/java/im/vector/activity/JoinScreenActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/JoinScreenActivity.java
+R096	vector/src/main/java/im/vector/activity/LanguagePickerActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/LanguagePickerActivity.java
+R098	vector/src/main/java/im/vector/activity/LockScreenActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/LockScreenActivity.java
+R095	vector/src/main/java/im/vector/activity/LoginActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/LoginActivity.java
+R097	vector/src/main/java/im/vector/activity/MXCActionBarActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/MXCActionBarActivity.java
+R098	vector/src/main/java/im/vector/activity/PhoneNumberAdditionActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/PhoneNumberAdditionActivity.java
+R098	vector/src/main/java/im/vector/activity/PhoneNumberVerificationActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/PhoneNumberVerificationActivity.java
+R091	vector/src/main/java/im/vector/activity/RiotAppCompatActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/RiotAppCompatActivity.java
+R091	vector/src/main/java/im/vector/activity/RiotBaseActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/RiotBaseActivity.java
+R097	vector/src/main/java/im/vector/activity/RoomDirectoryPickerActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/RoomDirectoryPickerActivity.java
+R097	vector/src/main/java/im/vector/activity/SplashActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/SplashActivity.java
+R098	vector/src/main/java/im/vector/activity/VectorBaseSearchActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorBaseSearchActivity.java
+R099	vector/src/main/java/im/vector/activity/VectorCallViewActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorCallViewActivity.java
+R097	vector/src/main/java/im/vector/activity/VectorFakeRoomPreviewActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorFakeRoomPreviewActivity.java
+R098	vector/src/main/java/im/vector/activity/VectorHomeActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorHomeActivity.java
+R099	vector/src/main/java/im/vector/activity/VectorMediasPickerActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorMediasPickerActivity.java
+R096	vector/src/main/java/im/vector/activity/VectorMediasViewerActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorMediasViewerActivity.java
+R099	vector/src/main/java/im/vector/activity/VectorMemberDetailsActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorMemberDetailsActivity.java
+R095	vector/src/main/java/im/vector/activity/VectorPublicRoomsActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorPublicRoomsActivity.java
+R099	vector/src/main/java/im/vector/activity/VectorRoomActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorRoomActivity.java
+R098	vector/src/main/java/im/vector/activity/VectorRoomCreationActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorRoomCreationActivity.java
+R098	vector/src/main/java/im/vector/activity/VectorRoomDetailsActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorRoomDetailsActivity.java
+R097	vector/src/main/java/im/vector/activity/VectorRoomInviteMembersActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorRoomInviteMembersActivity.java
+R093	vector/src/main/java/im/vector/activity/VectorSettingsActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorSettingsActivity.java
+R097	vector/src/main/java/im/vector/activity/VectorSharedFilesActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorSharedFilesActivity.java
+R098	vector/src/main/java/im/vector/activity/VectorUnifiedSearchActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorUnifiedSearchActivity.java
+R096	vector/src/main/java/im/vector/activity/VectorUniversalLinkActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/VectorUniversalLinkActivity.java
+R097	vector/src/main/java/im/vector/activity/WidgetActivity.java	vector/src/main/java/venturetrac/wiresafe/activity/WidgetActivity.java
+R098	vector/src/main/java/im/vector/adapters/AbsAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/AbsAdapter.java
+R097	vector/src/main/java/im/vector/adapters/AbsFilterableAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/AbsFilterableAdapter.java
+R097	vector/src/main/java/im/vector/adapters/AdapterSection.java	vector/src/main/java/venturetrac/wiresafe/adapters/AdapterSection.java
+R098	vector/src/main/java/im/vector/adapters/AdapterUtils.java	vector/src/main/java/venturetrac/wiresafe/adapters/AdapterUtils.java
+R096	vector/src/main/java/im/vector/adapters/AutoCompletedUserAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/AutoCompletedUserAdapter.java
+R097	vector/src/main/java/im/vector/adapters/CountryAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/CountryAdapter.java
+R098	vector/src/main/java/im/vector/adapters/HomeRoomAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/HomeRoomAdapter.java
+R094	vector/src/main/java/im/vector/adapters/ImageCompressionDescription.java	vector/src/main/java/venturetrac/wiresafe/adapters/ImageCompressionDescription.java
+R096	vector/src/main/java/im/vector/adapters/ImageSizesAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/ImageSizesAdapter.java
+R096	vector/src/main/java/im/vector/adapters/InvitationViewHolder.java	vector/src/main/java/venturetrac/wiresafe/adapters/InvitationViewHolder.java
+R098	vector/src/main/java/im/vector/adapters/KnownContactsAdapterSection.java	vector/src/main/java/venturetrac/wiresafe/adapters/KnownContactsAdapterSection.java
+R097	vector/src/main/java/im/vector/adapters/LanguagesAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/LanguagesAdapter.java
+R098	vector/src/main/java/im/vector/adapters/ParticipantAdapterItem.java	vector/src/main/java/venturetrac/wiresafe/adapters/ParticipantAdapterItem.java
+R098	vector/src/main/java/im/vector/adapters/PeopleAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/PeopleAdapter.java
+R098	vector/src/main/java/im/vector/adapters/PublicRoomsAdapterSection.java	vector/src/main/java/venturetrac/wiresafe/adapters/PublicRoomsAdapterSection.java
+R098	vector/src/main/java/im/vector/adapters/RoomAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/RoomAdapter.java
+R098	vector/src/main/java/im/vector/adapters/RoomDirectoryAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/RoomDirectoryAdapter.java
+R098	vector/src/main/java/im/vector/adapters/RoomViewHolder.java	vector/src/main/java/venturetrac/wiresafe/adapters/RoomViewHolder.java
+R099	vector/src/main/java/im/vector/adapters/VectorMediasViewerAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMediasViewerAdapter.java
+R097	vector/src/main/java/im/vector/adapters/VectorMemberDetailsAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMemberDetailsAdapter.java
+R099	vector/src/main/java/im/vector/adapters/VectorMemberDetailsDevicesAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMemberDetailsDevicesAdapter.java
+R099	vector/src/main/java/im/vector/adapters/VectorMessagesAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMessagesAdapter.java
+R098	vector/src/main/java/im/vector/adapters/VectorMessagesAdapterHelper.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMessagesAdapterHelper.java
+R099	vector/src/main/java/im/vector/adapters/VectorMessagesAdapterMediasHelper.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorMessagesAdapterMediasHelper.java
+R099	vector/src/main/java/im/vector/adapters/VectorParticipantsAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorParticipantsAdapter.java
+R097	vector/src/main/java/im/vector/adapters/VectorPublicRoomsAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorPublicRoomsAdapter.java
+R092	vector/src/main/java/im/vector/adapters/VectorReadReceiptsAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorReadReceiptsAdapter.java
+R097	vector/src/main/java/im/vector/adapters/VectorRoomCreationAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorRoomCreationAdapter.java
+R099	vector/src/main/java/im/vector/adapters/VectorRoomDetailsMembersAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorRoomDetailsMembersAdapter.java
+R099	vector/src/main/java/im/vector/adapters/VectorRoomSummaryAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorRoomSummaryAdapter.java
+R096	vector/src/main/java/im/vector/adapters/VectorRoomsSelectionAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorRoomsSelectionAdapter.java
+R098	vector/src/main/java/im/vector/adapters/VectorSearchFilesListAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorSearchFilesListAdapter.java
+R097	vector/src/main/java/im/vector/adapters/VectorSearchMessagesListAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorSearchMessagesListAdapter.java
+R095	vector/src/main/java/im/vector/adapters/VectorUnifiedSearchFragmentPagerAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorUnifiedSearchFragmentPagerAdapter.java
+R099	vector/src/main/java/im/vector/adapters/VectorUnknownDevicesAdapter.java	vector/src/main/java/venturetrac/wiresafe/adapters/VectorUnknownDevicesAdapter.java
+R096	vector/src/main/java/im/vector/car/CarBroadcastReceiver.java	vector/src/main/java/venturetrac/wiresafe/car/CarBroadcastReceiver.java
+R099	vector/src/main/java/im/vector/contacts/Contact.java	vector/src/main/java/venturetrac/wiresafe/contacts/Contact.java
+R099	vector/src/main/java/im/vector/contacts/ContactsManager.java	vector/src/main/java/venturetrac/wiresafe/contacts/ContactsManager.java
+R099	vector/src/main/java/im/vector/contacts/PIDsRetriever.java	vector/src/main/java/venturetrac/wiresafe/contacts/PIDsRetriever.java
+R098	vector/src/main/java/im/vector/db/VectorContentProvider.java	vector/src/main/java/venturetrac/wiresafe/db/VectorContentProvider.java
+R097	vector/src/main/java/im/vector/fragments/AbsHomeFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/AbsHomeFragment.java
+R097	vector/src/main/java/im/vector/fragments/FavouritesFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/FavouritesFragment.java
+R098	vector/src/main/java/im/vector/fragments/HomeFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/HomeFragment.java
+R095	vector/src/main/java/im/vector/fragments/ImageSizeSelectionDialogFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/ImageSizeSelectionDialogFragment.java
+R097	vector/src/main/java/im/vector/fragments/PeopleFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/PeopleFragment.java
+R097	vector/src/main/java/im/vector/fragments/RoomsFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/RoomsFragment.java
+R098	vector/src/main/java/im/vector/fragments/VectorMessageListFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorMessageListFragment.java
+R096	vector/src/main/java/im/vector/fragments/VectorMessagesFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorMessagesFragment.java
+R096	vector/src/main/java/im/vector/fragments/VectorPublicRoomsListFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorPublicRoomsListFragment.java
+R095	vector/src/main/java/im/vector/fragments/VectorReadReceiptsDialogFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorReadReceiptsDialogFragment.java
+R098	vector/src/main/java/im/vector/fragments/VectorRecentsListFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorRecentsListFragment.java
+R098	vector/src/main/java/im/vector/fragments/VectorRoomDetailsMembersFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorRoomDetailsMembersFragment.java
+R099	vector/src/main/java/im/vector/fragments/VectorRoomSettingsFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorRoomSettingsFragment.java
+R098	vector/src/main/java/im/vector/fragments/VectorSearchMessagesListFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSearchMessagesListFragment.java
+R095	vector/src/main/java/im/vector/fragments/VectorSearchPeopleListFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSearchPeopleListFragment.java
+R099	vector/src/main/java/im/vector/fragments/VectorSearchRoomFilesListFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSearchRoomFilesListFragment.java
+R094	vector/src/main/java/im/vector/fragments/VectorSearchRoomsFilesListFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSearchRoomsFilesListFragment.java
+R095	vector/src/main/java/im/vector/fragments/VectorSearchRoomsListFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSearchRoomsListFragment.java
+R097	vector/src/main/java/im/vector/fragments/VectorSettingsPreferencesFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorSettingsPreferencesFragment.java
+R097	vector/src/main/java/im/vector/fragments/VectorUnknownDevicesFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/VectorUnknownDevicesFragment.java
+R096	vector/src/main/java/im/vector/fragments/WireTransferFragment.java	vector/src/main/java/venturetrac/wiresafe/fragments/WireTransferFragment.java
+R099	vector/src/main/java/im/vector/gcm/GcmRegistrationManager.java	vector/src/main/java/venturetrac/wiresafe/gcm/GcmRegistrationManager.java
+R099	vector/src/main/java/im/vector/listeners/IMessagesAdapterActionsListener.java	vector/src/main/java/venturetrac/wiresafe/listeners/IMessagesAdapterActionsListener.java
+R096	vector/src/main/java/im/vector/preference/AddressPreference.java	vector/src/main/java/venturetrac/wiresafe/preference/AddressPreference.java
+R095	vector/src/main/java/im/vector/preference/ProgressBarPreference.java	vector/src/main/java/venturetrac/wiresafe/preference/ProgressBarPreference.java
+R095	vector/src/main/java/im/vector/preference/RoomAvatarPreference.java	vector/src/main/java/venturetrac/wiresafe/preference/RoomAvatarPreference.java
+R096	vector/src/main/java/im/vector/preference/UserAvatarPreference.java	vector/src/main/java/venturetrac/wiresafe/preference/UserAvatarPreference.java
+R099	vector/src/main/java/im/vector/preference/VectorCustomActionEditTextPreference.java	vector/src/main/java/venturetrac/wiresafe/preference/VectorCustomActionEditTextPreference.java
+R096	vector/src/main/java/im/vector/preference/VectorDividerCategory.java	vector/src/main/java/venturetrac/wiresafe/preference/VectorDividerCategory.java
+R097	vector/src/main/java/im/vector/preference/VectorListPreference.java	vector/src/main/java/venturetrac/wiresafe/preference/VectorListPreference.java
+R097	vector/src/main/java/im/vector/preference/VectorPreferenceCategory.java	vector/src/main/java/venturetrac/wiresafe/preference/VectorPreferenceCategory.java
+R098	vector/src/main/java/im/vector/preference/VectorSwitchPreference.java	vector/src/main/java/venturetrac/wiresafe/preference/VectorSwitchPreference.java
+R095	vector/src/main/java/im/vector/receiver/DismissNotificationReceiver.java	vector/src/main/java/venturetrac/wiresafe/receiver/DismissNotificationReceiver.java
+R095	vector/src/main/java/im/vector/receiver/HeadsetConnectionReceiver.java	vector/src/main/java/venturetrac/wiresafe/receiver/HeadsetConnectionReceiver.java
+R091	vector/src/main/java/im/vector/receiver/VectorBootReceiver.java	vector/src/main/java/venturetrac/wiresafe/receiver/VectorBootReceiver.java
+R098	vector/src/main/java/im/vector/receiver/VectorRegistrationReceiver.java	vector/src/main/java/venturetrac/wiresafe/receiver/VectorRegistrationReceiver.java
+R098	vector/src/main/java/im/vector/receiver/VectorUniversalLinkReceiver.java	vector/src/main/java/venturetrac/wiresafe/receiver/VectorUniversalLinkReceiver.java
+R099	vector/src/main/java/im/vector/services/EventStreamService.java	vector/src/main/java/venturetrac/wiresafe/services/EventStreamService.java
+R099	vector/src/main/java/im/vector/store/LoginStorage.java	vector/src/main/java/venturetrac/wiresafe/store/LoginStorage.java
+R099	vector/src/main/java/im/vector/util/BugReporter.java	vector/src/main/java/venturetrac/wiresafe/util/BugReporter.java
+R099	vector/src/main/java/im/vector/util/BugReporterMultipartBody.java	vector/src/main/java/venturetrac/wiresafe/util/BugReporterMultipartBody.java
+R098	vector/src/main/java/im/vector/util/CallUtilities.java	vector/src/main/java/venturetrac/wiresafe/util/CallUtilities.java
+R097	vector/src/main/java/im/vector/util/CountryPhoneData.java	vector/src/main/java/venturetrac/wiresafe/util/CountryPhoneData.java
+R098	vector/src/main/java/im/vector/util/EventGroup.java	vector/src/main/java/venturetrac/wiresafe/util/EventGroup.java
+R096	vector/src/main/java/im/vector/util/MatrixLinkMovementMethod.java	vector/src/main/java/venturetrac/wiresafe/util/MatrixLinkMovementMethod.java
+R097	vector/src/main/java/im/vector/util/MatrixURLSpan.java	vector/src/main/java/venturetrac/wiresafe/util/MatrixURLSpan.java
+R098	vector/src/main/java/im/vector/util/NotificationUtils.java	vector/src/main/java/venturetrac/wiresafe/util/NotificationUtils.java
+R099	vector/src/main/java/im/vector/util/PhoneNumberUtils.java	vector/src/main/java/venturetrac/wiresafe/util/PhoneNumberUtils.java
+R099	vector/src/main/java/im/vector/util/PreferencesManager.java	vector/src/main/java/venturetrac/wiresafe/util/PreferencesManager.java
+R096	vector/src/main/java/im/vector/util/RageShake.java	vector/src/main/java/venturetrac/wiresafe/util/RageShake.java
+R098	vector/src/main/java/im/vector/util/ReadMarkerManager.java	vector/src/main/java/venturetrac/wiresafe/util/ReadMarkerManager.java
+R098	vector/src/main/java/im/vector/util/ResourceUtils.java	vector/src/main/java/venturetrac/wiresafe/util/ResourceUtils.java
+R095	vector/src/main/java/im/vector/util/RiotEventDisplay.java	vector/src/main/java/venturetrac/wiresafe/util/RiotEventDisplay.java
+R098	vector/src/main/java/im/vector/util/RoomDirectoryData.java	vector/src/main/java/venturetrac/wiresafe/util/RoomDirectoryData.java
+R099	vector/src/main/java/im/vector/util/RoomUtils.java	vector/src/main/java/venturetrac/wiresafe/util/RoomUtils.java
+R099	vector/src/main/java/im/vector/util/SharedDataItem.java	vector/src/main/java/venturetrac/wiresafe/util/SharedDataItem.java
+R098	vector/src/main/java/im/vector/util/SlashComandsParser.java	vector/src/main/java/venturetrac/wiresafe/util/SlashComandsParser.java
+R097	vector/src/main/java/im/vector/util/SlidableMediaInfo.java	vector/src/main/java/venturetrac/wiresafe/util/SlidableMediaInfo.java
+R098	vector/src/main/java/im/vector/util/StickySectionHelper.java	vector/src/main/java/venturetrac/wiresafe/util/StickySectionHelper.java
+R088	vector/src/main/java/im/vector/util/ThemeUtils.java	vector/src/main/java/venturetrac/wiresafe/util/ThemeUtils.java
+R099	vector/src/main/java/im/vector/util/VectorCallSoundManager.java	vector/src/main/java/venturetrac/wiresafe/util/VectorCallSoundManager.java
+R099	vector/src/main/java/im/vector/util/VectorMarkdownParser.java	vector/src/main/java/venturetrac/wiresafe/util/VectorMarkdownParser.java
+R098	vector/src/main/java/im/vector/util/VectorRoomMediasSender.java	vector/src/main/java/venturetrac/wiresafe/util/VectorRoomMediasSender.java
+R099	vector/src/main/java/im/vector/util/VectorUtils.java	vector/src/main/java/venturetrac/wiresafe/util/VectorUtils.java
+R097	vector/src/main/java/im/vector/view/ActiveWidgetsBanner.java	vector/src/main/java/venturetrac/wiresafe/view/ActiveWidgetsBanner.java
+R099	vector/src/main/java/im/vector/view/DrawerScrollView.java	vector/src/main/java/venturetrac/wiresafe/view/DrawerScrollView.java
+R095	vector/src/main/java/im/vector/view/EmptyViewItemDecoration.java	vector/src/main/java/venturetrac/wiresafe/view/EmptyViewItemDecoration.java
+R096	vector/src/main/java/im/vector/view/HomeSectionView.java	vector/src/main/java/venturetrac/wiresafe/view/HomeSectionView.java
+R098	vector/src/main/java/im/vector/view/RecentMediaLayout.java	vector/src/main/java/venturetrac/wiresafe/view/RecentMediaLayout.java
+R099	vector/src/main/java/im/vector/view/RecentsExpandableListView.java	vector/src/main/java/venturetrac/wiresafe/view/RecentsExpandableListView.java
+R098	vector/src/main/java/im/vector/view/SectionView.java	vector/src/main/java/venturetrac/wiresafe/view/SectionView.java
+R096	vector/src/main/java/im/vector/view/SimpleDividerItemDecoration.java	vector/src/main/java/venturetrac/wiresafe/view/SimpleDividerItemDecoration.java
+R096	vector/src/main/java/im/vector/view/UnreadCounterBadgeView.java	vector/src/main/java/venturetrac/wiresafe/view/UnreadCounterBadgeView.java
+R098	vector/src/main/java/im/vector/view/VectorAutoCompleteTextView.java	vector/src/main/java/venturetrac/wiresafe/view/VectorAutoCompleteTextView.java
+R099	vector/src/main/java/im/vector/view/VectorCircularImageView.java	vector/src/main/java/venturetrac/wiresafe/view/VectorCircularImageView.java
+R098	vector/src/main/java/im/vector/view/VectorOngoingConferenceCallView.java	vector/src/main/java/venturetrac/wiresafe/view/VectorOngoingConferenceCallView.java
+R096	vector/src/main/java/im/vector/view/VectorPendingCallView.java	vector/src/main/java/venturetrac/wiresafe/view/VectorPendingCallView.java
+R097	vector/src/main/java/im/vector/view/VideoRecordProgressView.java	vector/src/main/java/venturetrac/wiresafe/view/VideoRecordProgressView.java
+R091	vector/src/main/java/im/vector/view/VideoRecordView.java	vector/src/main/java/venturetrac/wiresafe/view/VideoRecordView.java
+R098	vector/src/main/java/im/vector/widgets/Widget.java	vector/src/main/java/venturetrac/wiresafe/widgets/Widget.java
+R098	vector/src/main/java/im/vector/widgets/WidgetContent.java	vector/src/main/java/venturetrac/wiresafe/widgets/WidgetContent.java
+R096	vector/src/main/java/im/vector/widgets/WidgetsApi.java	vector/src/main/java/venturetrac/wiresafe/widgets/WidgetsApi.java
+R099	vector/src/main/java/im/vector/widgets/WidgetsManager.java	vector/src/main/java/venturetrac/wiresafe/widgets/WidgetsManager.java
+R097	vector/src/main/java/im/vector/widgets/WidgetsRestClient.java	vector/src/main/java/venturetrac/wiresafe/widgets/WidgetsRestClient.java
+M	vector/src/main/res/layout/activity_callview.xml
+M	vector/src/main/res/layout/activity_home.xml
+M	vector/src/main/res/layout/activity_vector_login.xml
+M	vector/src/main/res/layout/activity_vector_medias_picker.xml
+M	vector/src/main/res/layout/activity_vector_room.xml
+M	vector/src/main/res/layout/adapter_item_public_room_view.xml
+M	vector/src/main/res/layout/adapter_item_room_invite.xml
+M	vector/src/main/res/layout/adapter_item_vector_add_participants.xml
+M	vector/src/main/res/layout/dialog_invite_by_id.xml
+M	vector/src/main/res/layout/fragment_home.xml
+M	vector/src/main/res/layout/fragment_vector_recents_list.xml
+M	vector/src/main/res/layout/item_user_auto_complete.xml
+M	vector/src/main/res/layout/vector_adapter_member_details_items.xml
+M	vector/src/main/res/layout/vector_home_menu_header.xml
+M	vector/src/main/res/layout/vector_message_merge_avatar_list.xml
+M	vector/src/main/res/layout/vector_settings_round_avatar.xml
+M	vector/src/main/res/layout/video_record_view.xml
+M	vector/src/main/res/values/donottranslate.xml
+M	vector/src/main/res/values/strings.xml
+M	vector/src/main/res/xml/vector_room_settings_preferences.xml
+M	vector/src/main/res/xml/vector_settings_preferences.xml
+
+wiresafe/riot-android;46a9eafc;Add send wwire transfer form, Add Option for selecting chat room from wire transfer form, Send details into selected chat room, Change app name/app icon, Changed logo in login/launch screen
+M	build.gradle
+M	google-services.json
+M	vector/build.gradle
+A	vector/libs/material-spinner-1.2.1.aar
+M	vector/src/app/AndroidManifest.xml
+M	vector/src/app/google-services.json
+M	vector/src/main/AndroidManifest.xml
+A	vector/src/main/ic_launcher-web.png
+M	vector/src/main/java/im/vector/RegistrationManager.java
+M	vector/src/main/java/im/vector/activity/LoginActivity.java
+M	vector/src/main/java/im/vector/activity/VectorHomeActivity.java
+M	vector/src/main/java/im/vector/activity/VectorRoomActivity.java
+A	vector/src/main/java/im/vector/fragments/WireTransferFragment.java
+M	vector/src/main/java/im/vector/util/NotificationUtils.java
+M	vector/src/main/java/im/vector/util/VectorUtils.java
+A	vector/src/main/res/drawable-hdpi-v11/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-hdpi-v9/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-hdpi/back_button_image.png
+A	vector/src/main/res/drawable-hdpi/ic_account_balance_black_24dp.png
+A	vector/src/main/res/drawable-hdpi/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-mdpi-v11/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-mdpi-v9/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-mdpi/back_button_image.png
+A	vector/src/main/res/drawable-mdpi/ic_account_balance_black_24dp.png
+A	vector/src/main/res/drawable-mdpi/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-xhdpi-v11/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-xhdpi-v9/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-xhdpi/back_button_image.png
+A	vector/src/main/res/drawable-xhdpi/ic_account_balance_black_24dp.png
+A	vector/src/main/res/drawable-xhdpi/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-xxhdpi-v11/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-xxhdpi-v9/ic_wiresafe_notification.png
+A	vector/src/main/res/drawable-xxhdpi/back_button_image.png
+A	vector/src/main/res/drawable-xxhdpi/ic_account_balance_black_24dp.png
+A	vector/src/main/res/drawable-xxhdpi/ic_wiresafe_notification.png
+M	vector/src/main/res/drawable-xxhdpi/logo_login.png
+A	vector/src/main/res/drawable-xxxhdpi/back_button_image.png
+A	vector/src/main/res/drawable-xxxhdpi/ic_account_balance_black_24dp.png
+A	vector/src/main/res/drawable/button_wire_transfer.xml
+A	vector/src/main/res/layout/fragment_wire_transfer.xml
+M	vector/src/main/res/layout/vector_activity_splash.xml
+M	vector/src/main/res/menu/bottom_navigation_main.xml
+A	vector/src/main/res/mipmap-hdpi/ic_launcher.png
+A	vector/src/main/res/mipmap-mdpi/ic_launcher.png
+A	vector/src/main/res/mipmap-xhdpi/ic_launcher.png
+A	vector/src/main/res/mipmap-xxhdpi/ic_launcher.png
+A	vector/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+M	vector/src/main/res/values-v21/styles.xml
+M	vector/src/main/res/values/colors.xml
+M	vector/src/main/res/values/donottranslate.xml
+M	vector/src/main/res/values/styles.xml

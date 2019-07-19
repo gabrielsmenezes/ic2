@@ -1,0 +1,79 @@
+gazman-sdk/sqlite-android;a727edb;Removed iml file
+M	.gitignore
+D	sqlite.iml
+
+gazman-sdk/sqlite-android;cc65090;Converted to a library only repo and switched to Java 8
+M	.gitignore
+D	.travis.yml
+D	CHANGELOG.md
+D	CONTRIBUTING.md
+D	LICENSE
+D	README.md
+M	build.gradle
+D	gradle/wrapper/gradle-wrapper.jar
+D	gradle/wrapper/gradle-wrapper.properties
+D	gradlew
+D	gradlew.bat
+R100	sqlite-android/proguard-rules.pro	proguard-rules.pro
+D	settings.gradle
+D	sqlite-android/.gitignore
+D	sqlite-android/build.gradle
+D	sqlite-android/src/main/AndroidManifest.xml
+A	sqlite.iml
+R100	sqlite-android/src/androidTest/java/io/requery/android/database/CursorWindowTest.java	src/androidTest/java/io/requery/android/database/CursorWindowTest.java
+R100	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseCursorTest.java	src/androidTest/java/io/requery/android/database/DatabaseCursorTest.java
+R100	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseErrorHandlerTest.java	src/androidTest/java/io/requery/android/database/DatabaseErrorHandlerTest.java
+R100	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseGeneralTest.java	src/androidTest/java/io/requery/android/database/DatabaseGeneralTest.java
+R100	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseLocaleTest.java	src/androidTest/java/io/requery/android/database/DatabaseLocaleTest.java
+R100	sqlite-android/src/androidTest/java/io/requery/android/database/DatabaseStatementTest.java	src/androidTest/java/io/requery/android/database/DatabaseStatementTest.java
+R100	sqlite-android/src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTestSuite.java	src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTestSuite.java
+R100	sqlite-android/src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTests.java	src/androidTest/java/io/requery/android/database/NewDatabasePerformanceTests.java
+R100	sqlite-android/src/androidTest/java/io/requery/android/database/benchmark/Benchmark.java	src/androidTest/java/io/requery/android/database/benchmark/Benchmark.java
+A	src/main/AndroidManifest.xml
+R096	sqlite-android/src/main/java/io/requery/android/database/AbstractCursor.java	src/main/java/io/requery/android/database/AbstractCursor.java
+R100	sqlite-android/src/main/java/io/requery/android/database/AbstractWindowedCursor.java	src/main/java/io/requery/android/database/AbstractWindowedCursor.java
+R099	sqlite-android/src/main/java/io/requery/android/database/CursorWindow.java	src/main/java/io/requery/android/database/CursorWindow.java
+R100	sqlite-android/src/main/java/io/requery/android/database/CursorWindowAllocationException.java	src/main/java/io/requery/android/database/CursorWindowAllocationException.java
+R100	sqlite-android/src/main/java/io/requery/android/database/DatabaseErrorHandler.java	src/main/java/io/requery/android/database/DatabaseErrorHandler.java
+R100	sqlite-android/src/main/java/io/requery/android/database/DefaultDatabaseErrorHandler.java	src/main/java/io/requery/android/database/DefaultDatabaseErrorHandler.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/CloseGuard.java	src/main/java/io/requery/android/database/sqlite/CloseGuard.java
+R098	sqlite-android/src/main/java/io/requery/android/database/sqlite/RequerySQLiteOpenHelperFactory.java	src/main/java/io/requery/android/database/sqlite/RequerySQLiteOpenHelperFactory.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteClosable.java	src/main/java/io/requery/android/database/sqlite/SQLiteClosable.java
+R099	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnection.java	src/main/java/io/requery/android/database/sqlite/SQLiteConnection.java
+R098	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteConnectionPool.java	src/main/java/io/requery/android/database/sqlite/SQLiteConnectionPool.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCursor.java	src/main/java/io/requery/android/database/sqlite/SQLiteCursor.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCursorDriver.java	src/main/java/io/requery/android/database/sqlite/SQLiteCursorDriver.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCustomExtension.java	src/main/java/io/requery/android/database/sqlite/SQLiteCustomExtension.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteCustomFunction.java	src/main/java/io/requery/android/database/sqlite/SQLiteCustomFunction.java
+R098	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java	src/main/java/io/requery/android/database/sqlite/SQLiteDatabase.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDatabaseConfiguration.java	src/main/java/io/requery/android/database/sqlite/SQLiteDatabaseConfiguration.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDebug.java	src/main/java/io/requery/android/database/sqlite/SQLiteDebug.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteDirectCursorDriver.java	src/main/java/io/requery/android/database/sqlite/SQLiteDirectCursorDriver.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteFunction.java	src/main/java/io/requery/android/database/sqlite/SQLiteFunction.java
+R098	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteGlobal.java	src/main/java/io/requery/android/database/sqlite/SQLiteGlobal.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteOpenHelper.java	src/main/java/io/requery/android/database/sqlite/SQLiteOpenHelper.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteProgram.java	src/main/java/io/requery/android/database/sqlite/SQLiteProgram.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteQuery.java	src/main/java/io/requery/android/database/sqlite/SQLiteQuery.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteQueryBuilder.java	src/main/java/io/requery/android/database/sqlite/SQLiteQueryBuilder.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteSession.java	src/main/java/io/requery/android/database/sqlite/SQLiteSession.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteStatement.java	src/main/java/io/requery/android/database/sqlite/SQLiteStatement.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteStatementInfo.java	src/main/java/io/requery/android/database/sqlite/SQLiteStatementInfo.java
+R100	sqlite-android/src/main/java/io/requery/android/database/sqlite/SQLiteStatementType.java	src/main/java/io/requery/android/database/sqlite/SQLiteStatementType.java
+R100	sqlite-android/src/main/jni/Android.mk	src/main/jni/Android.mk
+R100	sqlite-android/src/main/jni/Application.mk	src/main/jni/Application.mk
+R100	sqlite-android/src/main/jni/sqlite/ALog-priv.h	src/main/jni/sqlite/ALog-priv.h
+R100	sqlite-android/src/main/jni/sqlite/Android.mk	src/main/jni/sqlite/Android.mk
+R100	sqlite-android/src/main/jni/sqlite/CursorWindow.cpp	src/main/jni/sqlite/CursorWindow.cpp
+R100	sqlite-android/src/main/jni/sqlite/CursorWindow.h	src/main/jni/sqlite/CursorWindow.h
+R100	sqlite-android/src/main/jni/sqlite/Errors.h	src/main/jni/sqlite/Errors.h
+R100	sqlite-android/src/main/jni/sqlite/JNIHelp.cpp	src/main/jni/sqlite/JNIHelp.cpp
+R100	sqlite-android/src/main/jni/sqlite/JNIHelp.h	src/main/jni/sqlite/JNIHelp.h
+R100	sqlite-android/src/main/jni/sqlite/JNIString.cpp	src/main/jni/sqlite/JNIString.cpp
+R100	sqlite-android/src/main/jni/sqlite/README	src/main/jni/sqlite/README
+R100	sqlite-android/src/main/jni/sqlite/android_database_CursorWindow.cpp	src/main/jni/sqlite/android_database_CursorWindow.cpp
+R100	sqlite-android/src/main/jni/sqlite/android_database_SQLiteCommon.cpp	src/main/jni/sqlite/android_database_SQLiteCommon.cpp
+R100	sqlite-android/src/main/jni/sqlite/android_database_SQLiteCommon.h	src/main/jni/sqlite/android_database_SQLiteCommon.h
+R100	sqlite-android/src/main/jni/sqlite/android_database_SQLiteConnection.cpp	src/main/jni/sqlite/android_database_SQLiteConnection.cpp
+R100	sqlite-android/src/main/jni/sqlite/android_database_SQLiteDebug.cpp	src/main/jni/sqlite/android_database_SQLiteDebug.cpp
+R100	sqlite-android/src/main/jni/sqlite/android_database_SQLiteFunction.cpp	src/main/jni/sqlite/android_database_SQLiteFunction.cpp
+R100	sqlite-android/src/main/jni/sqlite/android_database_SQLiteGlobal.cpp	src/main/jni/sqlite/android_database_SQLiteGlobal.cpp

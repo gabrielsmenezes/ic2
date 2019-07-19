@@ -1,0 +1,481 @@
+CainBrianJ/MOspace;73cdb716c;Merge pull request #3 from umlso/lso-1149-fix-typo
+CainBrianJ/MOspace;9da472ae9;changed case of search.index.31-upcased MARC, to match the case of the actual metadata field
+M	dspace/config/dspace.cfg
+
+CainBrianJ/MOspace;426714c3e;Merge pull request #2 from umlso/mospace-configuration-refactor-2
+CainBrianJ/MOspace;09c8e0de4;re #1135 enabled webui.browse.metadata.case-insensitive
+M	dspace/config/dspace.cfg
+
+CainBrianJ/MOspace;47e04e6c6;re #1149, added dc.contributor.faculty and marc.990.indexed to all requested indexes
+M	dspace/config/dspace.cfg
+
+CainBrianJ/MOspace;7a11d6782;re #1033, replaced wildcard with explicit dc.description fields, to drop dc.description.provenance from the keyword index
+M	dspace/config/dspace.cfg
+
+CainBrianJ/MOspace;628bfb9fa;Merge pull request #1 from umlso/lso-1154-add-nailgun-to-additions
+CainBrianJ/MOspace;1929efd07;re #1154 added nailgun-server as a dependency in the additions module of DSpace
+M	dspace/modules/additions/pom.xml
+
+CainBrianJ/MOspace;526daee5c;adding corresponding messages.xml changes for lso #1146, updating SHA for dri2xhtml-osu submodule
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;bf23606e9;updating dri2xhtml-osu submodule hash
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;0b7aff9ab;added optional parameter for ScriptLauncher so you can feed it a safer config file
+M	dspace-api/src/main/java/org/dspace/app/launcher/ScriptLauncher.java
+A	dspace/bin/safe-dspace
+R100	dspace/config/launcher-live.xml	dspace/config/launcher-safe.xml
+M	dspace/src/main/config/build.xml
+
+CainBrianJ/MOspace;729931790;added back the commented code to launcher.xml so mospace-vagrant can work again, tweaked build.xml to call copy_launcher-live_config target during the install_code target, so it works on fresh_install
+M	dspace/config/launcher.xml
+M	dspace/src/main/config/build.xml
+
+CainBrianJ/MOspace;3154d57fd;added a new launcher-live.xml config, and modified the ant build.xml file to install it when run on lso-digital-tc1
+A	dspace/config/launcher-live.xml
+
+CainBrianJ/MOspace;41755547d;changing submodules from SSH URLs to HTTPS URLS (so Travis-CI will work better, and to make vagrant-MOspace easier to set up)
+M	.gitmodules
+
+CainBrianJ/MOspace;b32f66338;LSO#1139 disabled setup-database and clean-database in launcher.xml
+M	dspace/config/launcher.xml
+
+CainBrianJ/MOspace;5b57ba984;dropping dspace-rest-hedtek and dspace-rest-wijiti, no longer testing them
+M	.gitmodules
+D	dspace-rest-hedtek
+D	dspace-rest-wijiti
+
+CainBrianJ/MOspace;0ae373b0e;changed link to Collection Development policy on about page.
+M	dspace/config/pages/about.xml
+
+CainBrianJ/MOspace;e7be45d7a;enabling search statistics visibility
+M	dspace/config/modules/usage-statistics.cfg
+
+CainBrianJ/MOspace;63d00c96c;Merge branch 'mospace_iteration3' of github.com:umlso/MOspace into mospace_iteration3
+CainBrianJ/MOspace;051cea2a4;re #1093 adding assetstore.dir and mail.admin to build.properties
+M	build.properties
+M	dspace/config/dspace.cfg
+
+CainBrianJ/MOspace;f8bbae092;adding .travis.yml config for travis-ci continuous integration
+A	.travis.yml
+
+CainBrianJ/MOspace;c62bb49fc;re #1092: added a configuration for mail.umkc.edu to authentication-shibboleth.cfg
+M	dspace/config/modules/authentication-shibboleth.cfg
+
+CainBrianJ/MOspace;2722f3c1b;Merge branch 'mospace_iteration3' of github.com:umlso/MOspace into mospace_iteration3
+CainBrianJ/MOspace;7e22f552b;merging #1063 to iteration 3, may possibly help address #1092
+M	dspace/config/modules/authentication-shibboleth.cfg
+
+CainBrianJ/MOspace;e6f785e05;re #1089 adding our GA key to dspace.cfg
+M	dspace/config/dspace.cfg
+
+CainBrianJ/MOspace;28c8c719f;re #1063 added ability to use more than one roleheader, still testing, but looks good so far
+M	dspace-api/src/main/java/org/dspace/authenticate/ShibAuthentication.java
+M	dspace/config/modules/authentication-shibboleth.cfg
+
+CainBrianJ/MOspace;a25974c5b;turning on anonymous access to usage statistics, I missed this new config file, re #1073
+M	dspace/config/modules/usage-statistics.cfg
+
+CainBrianJ/MOspace;42e6b101f;bringing submodule static up to date
+M	dspace-xmlui/src/main/webapp/static
+
+CainBrianJ/MOspace;9546aa994;Merge branch 'make_debug_config_safer' into mospace_iteration3
+CainBrianJ/MOspace;4284ae239;modifying assembly.xml to allow for Maven filtering of log4j.properties
+M	dspace/src/main/assembly/assembly.xml
+
+CainBrianJ/MOspace;b0e5c32e1;re #1059 changed shib athentication plugin config to use the EMAIL header instead of SHIB-EP-SCOPED-AFFILIATION for determining roles
+M	dspace/config/modules/authentication-shibboleth.cfg
+
+CainBrianJ/MOspace;7a0c204b0;typo fix in README
+M	README
+
+CainBrianJ/MOspace;48dfa2070;modifying README to incorporate MOspace info
+M	README
+
+CainBrianJ/MOspace;841115215;first attempt at adding new properties for setting loglevel, work in progress
+M	build.properties
+M	dspace/config/dspace.cfg
+M	dspace/config/log4j.properties
+
+CainBrianJ/MOspace;159f229bd;re #1078 commented out byterange-request code, stability issues, as promised, oh well
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/BitstreamReader.java
+
+CainBrianJ/MOspace;b7d485199;re #993 revising help.xml to add content requested by MST
+M	dspace/config/pages/help.xml
+
+CainBrianJ/MOspace;f17a0cbc3;Merge branch 'lso1045-add-static-pages-aspect' into mospace_iteration3
+CainBrianJ/MOspace;f4842278d;bringing submodules up to date for this branch
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;d9374507c;bringing submodules up to date for this branch
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;999d65276;bringing dri2xhtml-osu submodule up to date
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;4674ec313;change image paths to use the images in the static folder
+M	dspace/config/pages/help.xml
+
+CainBrianJ/MOspace;d52f7ece8;re #1045 restoring display of static files, somewhat working, except the page titles are wrong
+M	dspace-xmlui/src/main/resources/aspects/BrowseArtifacts/sitemap.xmap
+M	dspace-xmlui/src/main/webapp/static
+
+CainBrianJ/MOspace;cb4d4cd55;added .DS_Store files to .gitignore
+M	.gitignore
+
+CainBrianJ/MOspace;6353ad948;bringing submodules up to date
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;5dba4b73d;updating static submodule
+M	dspace-xmlui/src/main/webapp/static
+
+CainBrianJ/MOspace;8573b8523;merged mwoodiupui's DS-1083 branch
+CainBrianJ/MOspace;9852b5604;bringing static submodule up to date
+M	dspace-xmlui/src/main/webapp/static
+
+CainBrianJ/MOspace;94c1879cc;revising language codes and adding Korean to to input-forms.xml, re #922
+M	dspace/config/input-forms.xml
+
+CainBrianJ/MOspace;41c3e5ebf;bringing submodules up to date
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;2fd40a24b;patching ShibAuthentication.java with patch from DS-1410
+M	dspace-api/src/main/java/org/dspace/authenticate/ShibAuthentication.java
+
+CainBrianJ/MOspace;aaaecd142;re #1039 increasing gui-item-limit to 10,000
+M	dspace/config/modules/bulkedit.cfg
+
+CainBrianJ/MOspace;ac1afb9bc;enabling advanced embargo re #925, also includes some shibboleth-related configurations
+M	dspace/config/dspace.cfg
+M	dspace/config/item-submission.xml
+M	dspace/config/modules/authentication-shibboleth.cfg
+
+CainBrianJ/MOspace;b518e1416;bringing submodules up to date
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+M	dspace-xmlui/src/main/webapp/themes/snazy
+
+CainBrianJ/MOspace;404d381c0;re: #736, fix logic error in handling multiple values in SHIB-SCOPED-AFFILIATION header, also make minor revisions to help messages to correct for suggested syntax and config file location
+M	dspace-api/src/main/java/org/dspace/authenticate/ShibAuthentication.java
+
+CainBrianJ/MOspace;b7f19472b;bringing submodules up to date
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/snazy
+
+CainBrianJ/MOspace;a852d2a3f;adding Description and Abstract to messages.xml
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+
+CainBrianJ/MOspace;a1cb3a7fa;bringing submodules up to date
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/snazy
+
+CainBrianJ/MOspace;eab61393c;turning on byterange support in BitstreamReader, to enable random seek
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/BitstreamReader.java
+
+CainBrianJ/MOspace;ac41d3c34;taking another DSpace-ism out of messages.xml, bringing dri2xhtml-osu submodule up to date, attempting to set the role config for shib authN, still needs work
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+M	dspace/config/modules/authentication-shibboleth.cfg
+
+CainBrianJ/MOspace;84d5a4266;minor fix to the debug output for ShibAuthentication.java
+M	dspace-api/src/main/java/org/dspace/authenticate/ShibAuthentication.java
+
+CainBrianJ/MOspace;71e1dec9c;merging pull request 141, patch for DS-1205, fixes #948
+CainBrianJ/MOspace;f7cf12082;adding labels to maintain compatibility with OSU's simpleFields.xsl template, also bringing submodules up to date
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;fe6271842;bringing dri2xhtml-osu submodule up to date
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;4087100d9;allowing theme overrides for now, for theme debugging purposes
+M	dspace/config/dspace.cfg
+
+CainBrianJ/MOspace;d3d5e129f;adding group execute permissions to ant build script
+M	dspace/src/main/config/build.xml
+
+CainBrianJ/MOspace;31a3943ba;turning on debugging for now, will need to turn it off before going to production
+M	dspace/config/log4j.properties
+
+CainBrianJ/MOspace;20d834353;brining submodule for dri2xhtml-osu up to date
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;7a237f30b;bringing submodule dri2xhtml-osu up to date
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;286d401d8;bringing theme submodules up to date
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+M	dspace-xmlui/src/main/webapp/themes/snazy
+
+CainBrianJ/MOspace;600fe790d;changing label for theses.discipline to Department, fixes #1021
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+
+CainBrianJ/MOspace;e0537d866;bringing dri2xhtml-osu and snazy theme submodules up to date
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+M	dspace-xmlui/src/main/webapp/themes/snazy
+
+CainBrianJ/MOspace;0a153ebfa;updating .gitignore to current DSpace .gitignore
+M	.gitignore
+
+CainBrianJ/MOspace;37516903c;MOspace usese oracle, peg build.properties to oracle instead of postgresql
+M	build.properties
+
+CainBrianJ/MOspace;20b45b44f;bringing dri2xhtml-osu submodule up to date
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;44423e2a3;bringing submodules up to date
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;dcc3118fb;brining submodules up to date
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+M	dspace-xmlui/src/main/webapp/themes/snazy
+
+CainBrianJ/MOspace;891eef13e;moving Shib configuration to the appropriate config files
+M	dspace/config/dspace.cfg
+M	dspace/config/modules/authentication-shibboleth.cfg
+M	dspace/config/modules/authentication.cfg
+
+CainBrianJ/MOspace;f8abbd008;bringing submodules up to date; adding Shibboleth config to dspace.cfg, though I think it's actually not how it's done these days, may have to migrate to a module config
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+M	dspace/config/dspace.cfg
+
+CainBrianJ/MOspace;2cc93425f;fixing a typo in messages.xml and updating submodules
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;379d3c7de;revising messages.xml to add missing headers from production MOspace, also updating static and dri2xhtml-osu submodules
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+M	dspace-xmlui/src/main/webapp/static
+M	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;a7c5c3903;porting configs and static content from MOspace iteration 2
+M	.gitignore
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+M	dspace-xmlui/src/main/webapp/static
+M	dspace/config/default.license
+M	dspace/config/dspace.cfg
+A	dspace/config/filter_media_skip
+M	dspace/config/news-xmlui.xml
+A	dspace/config/pages/about.xml
+A	dspace/config/pages/add.xml
+A	dspace/config/pages/browse.xml
+A	dspace/config/pages/help.xml
+
+CainBrianJ/MOspace;1e7a4bd21;revising e-mail templates to match existing templates for MOspace
+M	dspace/config/emails/change_password
+M	dspace/config/emails/export_error
+M	dspace/config/emails/export_success
+M	dspace/config/emails/feedback
+M	dspace/config/emails/harvesting_error
+M	dspace/config/emails/internal_error
+M	dspace/config/emails/register
+M	dspace/config/emails/registration_notify
+M	dspace/config/emails/submit_archive
+M	dspace/config/emails/submit_reject
+M	dspace/config/emails/submit_task
+M	dspace/config/emails/subscription
+M	dspace/config/emails/suggest
+
+CainBrianJ/MOspace;6bfa96d32;adding mospace_static as a submodule
+M	.gitmodules
+A	dspace-xmlui/src/main/webapp/static
+
+CainBrianJ/MOspace;1cb34bbf3;updating snazy
+M	dspace-xmlui/src/main/webapp/themes/snazy
+
+CainBrianJ/MOspace;8293b1e29;adding entries for Sublime project files to .gitignore
+M	.gitignore
+
+CainBrianJ/MOspace;6ff23c9d0;adding dri2xhtml-osu as a submodule to support the Snazy theme; also dropping the xmlui static folder in anticipation of adding it back as a submodule
+M	.gitmodules
+D	dspace-xmlui/src/main/webapp/static/css/discovery/discovery-style.css
+D	dspace-xmlui/src/main/webapp/static/css/statisticsElasticSearch/style.css
+D	dspace-xmlui/src/main/webapp/static/icons/feed.png
+D	dspace-xmlui/src/main/webapp/static/js/accessFormUtil.js
+D	dspace-xmlui/src/main/webapp/static/js/advancedAuthorizationsForm.js
+D	dspace-xmlui/src/main/webapp/static/js/bitstream-ordering.js
+D	dspace-xmlui/src/main/webapp/static/js/choice-support.js
+D	dspace-xmlui/src/main/webapp/static/js/discovery/discovery-results.js
+D	dspace-xmlui/src/main/webapp/static/js/discovery/search-controls.js
+D	dspace-xmlui/src/main/webapp/static/js/editItemUtil.js
+D	dspace-xmlui/src/main/webapp/static/js/editPolicyForm.js
+D	dspace-xmlui/src/main/webapp/static/js/jquery-1.4.2.min.js
+D	dspace-xmlui/src/main/webapp/static/js/jquery-1.6.2.min.js
+D	dspace-xmlui/src/main/webapp/static/js/scriptaculous/builder.js
+D	dspace-xmlui/src/main/webapp/static/js/scriptaculous/controls.js
+D	dspace-xmlui/src/main/webapp/static/js/scriptaculous/effects.js
+D	dspace-xmlui/src/main/webapp/static/js/scriptaculous/prototype.js
+D	dspace-xmlui/src/main/webapp/static/js/search-results.js
+D	dspace-xmlui/src/main/webapp/static/js/statisticsElasticSearch/jquery.ui.datepicker-accessible.min.js
+D	dspace-xmlui/src/main/webapp/static/js/statisticsElasticSearch/visualizeData.js
+D	dspace-xmlui/src/main/webapp/static/js/usage-statistics.js
+D	dspace-xmlui/src/main/webapp/static/js/vocabulary-support.js
+D	dspace-xmlui/src/main/webapp/static/robots.txt
+A	dspace-xmlui/src/main/webapp/themes/dri2xhtml-osu
+
+CainBrianJ/MOspace;e91c8620c;adding .sublime-project and .sublime-workspace to .gitignore, to make working with sublime a bit nicer
+M	.gitignore
+
+CainBrianJ/MOspace;3f40b337c;undoing name change for MOspace theme, reverting to Snazy, to keep things simple, also bringing in the two REST-API interfaces as submodules, for future testing
+M	.gitmodules
+A	dspace-rest-hedtek
+A	dspace-rest-wijiti
+A	dspace-swordv2/overlays/org.swordapp.server-2.0.info
+A	dspace-swordv2/overlays/org.swordapp.server-2.0/WEB-INF/web.xml
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+D	dspace-xmlui/src/main/webapp/themes/mospace
+A	dspace-xmlui/src/main/webapp/themes/snazy
+M	dspace/config/xmlui.xconf
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0.info
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/apache-solr-noggit-r1099557.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/apache-solr-solrj-3.5.0.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/commons-codec-1.5.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/commons-csv-1.0-SNAPSHOT-r966014.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/commons-fileupload-1.2.1.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/commons-httpclient-3.1.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/commons-io-1.4.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/commons-lang-2.4.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/geronimo-stax-api_1.0_spec-1.0.1.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/guava-r05.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/jcl-over-slf4j-1.6.1.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/log4j-over-slf4j-1.6.1.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/lucene-analyzers-3.5.0.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/lucene-core-3.5.0.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/lucene-grouping-3.5.0.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/lucene-highlighter-3.5.0.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/lucene-memory-3.5.0.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/lucene-misc-3.5.0.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/lucene-queries-3.5.0.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/lucene-spatial-3.5.0.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/lucene-spellchecker-3.5.0.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/slf4j-api-1.6.1.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/slf4j-jdk14-1.6.1.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/lib/wstx-asl-3.2.7.jar
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/WEB-INF/weblogic.xml
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/_info.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/action.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/analysis.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/analysis.xsl
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/dataimport.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/debug.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/distributiondump.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/favicon.ico
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/form.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/get-file.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/get-properties.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/header.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/index.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/jquery-1.4.3.min.js
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/meta.xsl
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/ping.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/ping.xsl
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/raw-schema.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/registry.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/registry.xsl
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/replication/header.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/replication/index.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/schema.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/solr-admin.css
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/solr_small.png
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/stats.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/stats.xsl
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/tabular.xsl
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/threaddump.jsp
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/admin/threaddump.xsl
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/favicon.ico
+A	dspace/modules/solr/overlays/org.apache.solr.solr-3.5.0/index.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1.info
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/WEB-INF/web.xml
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/WEB-INF/weblogic.xml
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/_info.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/action.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/analysis.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/analysis.xsl
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/dataimport.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/debug.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/distributiondump.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/favicon.ico
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/form.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/get-file.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/get-properties.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/header.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/index.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/jquery-1.4.3.min.js
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/meta.xsl
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/ping.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/ping.xsl
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/raw-schema.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/registry.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/registry.xsl
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/replication/header.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/replication/index.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/schema.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/solr-admin.css
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/solr_small.png
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/stats.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/stats.xsl
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/tabular.xsl
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/threaddump.jsp
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/admin/threaddump.xsl
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/favicon.ico
+A	dspace/modules/solr/overlays/org.dspace.dspace-solr-3.5.0.1/index.jsp
+A	dspace/modules/swordv2/overlays/org.swordapp.server-2.0.info
+A	dspace/modules/swordv2/overlays/org.swordapp.server-2.0/WEB-INF/web.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2.info
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_bg.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_ca.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_ca_ES.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_cs.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_de.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_el.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_es.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_et.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_gl.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_it.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_ja.xml
+A	dspace/modules/xmlui/overlays/org.dspace.dspace-xmlui-lang-3.0.2/i18n/messages_pt_BR.xml
+M	pom.xml
+
+CainBrianJ/MOspace;6cfe5b124;added the OSU Snazy theme as a submodule and renamed it to mospace, this will base the new MOspace theme on the OSU snazy theme see #809
+A	.gitmodules
+A	dspace-xmlui/src/main/webapp/themes/mospace
+
+CainBrianJ/MOspace;cc2d4597f;Merge pull request #175 from tuub/master
+CainBrianJ/MOspace;974da7dc5;Bugfix: use printStackTrace to print a sack trace.
+M	dspace-api/src/main/java/org/dspace/content/crosswalk/XSLTDisseminationCrosswalk.java
+
+CainBrianJ/MOspace;b0117cb67;DS-1459 Testing of dissemination crosswalks
+M	dspace-api/src/main/java/org/dspace/content/crosswalk/XSLTDisseminationCrosswalk.java
+
+CainBrianJ/MOspace;5b47e43aa;Merge pull request #173 from misilot/DS-1457
+CainBrianJ/MOspace;604c845af;Merge pull request #169 from helix84/DS-1455
+CainBrianJ/MOspace;b4e97190d;Merge pull request #168 from helix84/DS-1454
+CainBrianJ/MOspace;332a6d31e;Merge pull request #171 from akonczak/master
+CainBrianJ/MOspace;81079c09b;DS-1457 change jquery source to googleapis
+M	dspace-oai/src/main/webapp/static/style.xsl
+
+CainBrianJ/MOspace;ce9ca8008;[DS-1435] fix for empty schema name for oracle db
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseManager.java
+
+CainBrianJ/MOspace;ee4778bcf;DS-1455 In OAI DOCTYPE tag is displayed on Firefox
+M	dspace-oai/src/main/webapp/static/style.xsl
+
+CainBrianJ/MOspace;34fc83588;DS-1454 Missing type-bind in input-forms.dtd
+M	dspace/config/input-forms.dtd
+
+CainBrianJ/MOspace;44cd50d2e;Merge pull request #166 from lyncode/OAI-ORE-fix
+CainBrianJ/MOspace;f5f71e85b;ORE metadata format fix
+M	dspace/config/crosswalks/oai/metadataFormats/ore.xsl
+
+CainBrianJ/MOspace;4a42776bc;Adds support for read-only contexts that bypass internal DSO cache
+M	dspace-api/src/main/java/org/dspace/core/Context.java

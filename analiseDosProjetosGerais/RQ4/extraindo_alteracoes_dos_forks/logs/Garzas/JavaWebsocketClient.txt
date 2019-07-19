@@ -1,0 +1,60 @@
+Garzas/JavaWebsocketClient;ae76b9f;Merge pull request #1 from Garzas/migrate-to-rx2
+Garzas/JavaWebsocketClient;774fb66;Migrated websocket library to rx2, updated okhttp library
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	websockets-rxjava-example/build.gradle
+A	websockets-rxjava-example/src/main/java/com/appunite/detector/BaseAdapterItem.kt
+D	websockets-rxjava-example/src/main/java/com/appunite/detector/ChangesDetector.java
+A	websockets-rxjava-example/src/main/java/com/appunite/detector/ChangesDetector.kt
+A	websockets-rxjava-example/src/main/java/com/appunite/detector/DefinedViewHolder.kt
+R051	websockets-rxjava-example/src/main/java/com/appunite/detector/SimpleDetector.java	websockets-rxjava-example/src/main/java/com/appunite/detector/SimpleDetector.kt
+A	websockets-rxjava-example/src/main/java/com/appunite/detector/UniversalAdapter.kt
+A	websockets-rxjava-example/src/main/java/com/appunite/detector/ViewHolderManager.kt
+D	websockets-rxjava-example/src/main/java/com/appunite/socket/MainActivity.java
+A	websockets-rxjava-example/src/main/java/com/appunite/socket/MainActivity.kt
+D	websockets-rxjava-example/src/main/java/com/appunite/socket/MainAdapter.java
+A	websockets-rxjava-example/src/main/java/com/appunite/socket/MainAdapter.kt
+D	websockets-rxjava-example/src/main/java/com/appunite/socket/MainPresenter.java
+A	websockets-rxjava-example/src/main/java/com/appunite/socket/MainPresenter.kt
+D	websockets-rxjava-example/src/main/java/com/appunite/websocket/rx/object/GsonObjectSerializer.java
+A	websockets-rxjava-example/src/main/java/com/appunite/websocket/rx/object/GsonObjectSerializer.kt
+D	websockets-rxjava-example/src/main/java/com/example/LoggingObservables.java
+A	websockets-rxjava-example/src/main/java/com/example/LoggingObservables.kt
+D	websockets-rxjava-example/src/main/java/com/example/MoreObservables.java
+A	websockets-rxjava-example/src/main/java/com/example/MoreObservables.kt
+M	websockets-rxjava-example/src/main/java/com/example/OperatorDoOnNext.java
+D	websockets-rxjava-example/src/main/java/com/example/Socket.java
+A	websockets-rxjava-example/src/main/java/com/example/Socket.kt
+R073	websockets-rxjava-example/src/main/java/com/example/SocketConnection.java	websockets-rxjava-example/src/main/java/com/example/SocketConnection.kt
+D	websockets-rxjava-example/src/main/java/com/example/SocketConnectionImpl.java
+A	websockets-rxjava-example/src/main/java/com/example/SocketConnectionImpl.kt
+D	websockets-rxjava-example/src/main/java/com/example/model/ChatMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/ChatMessage.kt
+D	websockets-rxjava-example/src/main/java/com/example/model/DataMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/DataMessage.kt
+D	websockets-rxjava-example/src/main/java/com/example/model/ErrorMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/ErrorMessage.kt
+D	websockets-rxjava-example/src/main/java/com/example/model/Message.java
+A	websockets-rxjava-example/src/main/java/com/example/model/Message.kt
+D	websockets-rxjava-example/src/main/java/com/example/model/PingMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/PingMessage.kt
+D	websockets-rxjava-example/src/main/java/com/example/model/PongMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/PongMessage.kt
+D	websockets-rxjava-example/src/main/java/com/example/model/RegisterMessage.java
+A	websockets-rxjava-example/src/main/java/com/example/model/RegisterMessage.kt
+R062	websockets-rxjava-example/src/main/java/com/example/model/RegisteredMessage.java	websockets-rxjava-example/src/main/java/com/example/model/RegisteredMessage.kt
+M	websockets-rxjava-example/src/main/res/layout/main_activity.xml
+D	websockets-rxjava-example/src/test/java/com/appunite/detector/ChangesDetectorTest.java
+A	websockets-rxjava-example/src/test/java/com/appunite/detector/ChangesDetectorTest.kt
+M	websockets-rxjava-example/src/test/java/com/example/RxObjectWebSocketsRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/RxWebSocketsRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/SocketRealTest.java
+M	websockets-rxjava-example/src/test/java/com/example/SocketTest.java
+M	websockets-rxjava/build.gradle
+M	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxMoreObservables.java
+D	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/RxWebSockets.kt
+D	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/RxObjectWebSockets.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/RxObjectWebSockets.kt
+D	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventMessage.java
+A	websockets-rxjava/src/main/java/com/appunite/websocket/rx/object/messages/RxObjectEventMessage.kt

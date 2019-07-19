@@ -1,0 +1,27 @@
+aaronhuangcn/Activiti;cdf469511;Removed unneeded imports
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/json/SimpleWorkflowJsonConverter.java
+
+aaronhuangcn/Activiti;629f652be;Added read/write of FormDefinition JSON
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/json/SimpleWorkflowJsonConverter.java
+
+aaronhuangcn/Activiti;5cb35eea8;Removing bad import
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/form/FormPropertyDefinition.java
+
+aaronhuangcn/Activiti;a3b857e77;Added cloning of FormPropertyDefinition instances
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/form/DatePropertyDefinition.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/form/FormPropertyDefinition.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/form/ListPropertyDefinition.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/form/NumberPropertyDefinition.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/form/ReferencePropertyDefinition.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/form/TextPropertyDefinition.java
+
+aaronhuangcn/Activiti;0d0186eb2;ACT-1454 Support custom comment types
+M	modules/activiti-engine/src/main/java/org/activiti/engine/TaskService.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/TaskServiceImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/AddCommentCmd.java
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetTaskCommentsByTypeCmd.java
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetTypeCommentsCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/CommentEntityManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/task/Comment.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Comment.xml
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/task/TaskServiceTest.java

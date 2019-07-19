@@ -1,0 +1,108 @@
+PointIO/Activiti;527ca1aa5;Merge pull request #3 from PointIO/WORK-1145-mleber-push-up-missing-methods
+PointIO/Activiti;664817402;WORK-1145 WORK-635 fix oops in the mapping files
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Execution.xml
+
+PointIO/Activiti;00b46dd70;WORK-1145 WORK-635 pull new methods up to interface ProcessInstanceQuery
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessInstanceQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/runtime/ProcessInstanceQuery.java
+
+PointIO/Activiti;b7747314f;Merge pull request #2 from PointIO/WORK-1078-mleber-expand-description-field-for-Blockly
+PointIO/Activiti;06e233b2d;WORK-1078 increase PROCDEF.DESCRIPTION_ to varchar(8000)
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.engine.sql
+
+PointIO/Activiti;c64352635;WORK-1078 increase PROCDEF.DESCRIPTION_ to varchar(8000)
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.engine.sql
+
+PointIO/Activiti;f30e61cc5;Merge pull request #1 from PointIO/WORK-635-mleber-ProcessinstanceQueryInvolvedUserLikeIgnoreCase
+PointIO/Activiti;97c25e732;WORK-635 remove some unneeded annotations. All tests green
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/runtime/InstanceInvolvementTest.java
+
+PointIO/Activiti;7ae943a10;WORK-635 WIP:  nasty typo uncovered by TaskQueryTest fixed
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/TaskQueryImpl.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Task.xml
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/task/TaskQueryTest.java
+
+PointIO/Activiti;9af900bc8;WORK-635 WIP:  TaskQueryTest.java:674 is failing
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Task.xml
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/task/TaskQueryTest.java
+
+PointIO/Activiti;13980041a;WORK-635 WIP: HistoricProcessInstanceTest
+M	modules/activiti-engine/src/main/java/org/activiti/engine/history/HistoricProcessInstanceQuery.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/runtime/InstanceInvolvementTest.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/task/TaskQueryTest.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/history/HistoricProcessInstanceTest.java
+
+PointIO/Activiti;2f241438b;WORK-635 WIP: correct "LikeIgnoreCase" in other mapping files
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Execution.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricProcessInstance.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Task.xml
+
+PointIO/Activiti;4467494a4;WORK-635 WIP: added tests to testHistoricTaskInstanceOrQuery()
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricTaskInstance.xml
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/history/HistoricTaskInstanceTest.java
+
+PointIO/Activiti;879a7e8db;WORK-635 WIP: "Tests run: 1506, Failures: 0" all tests now green. Time to write more tests...see JIRA
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Execution.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricProcessInstance.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricTaskInstance.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Task.xml
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/history/HistoricTaskInstanceTest.java
+
+PointIO/Activiti;09dba1137;WORK-635 WIP: some typos found but test still failing...investigation continues
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/HistoricTaskInstanceQueryImpl.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricTaskInstance.xml
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/history/HistoricTaskInstanceTest.java
+
+PointIO/Activiti;c1dd5d23a;WORK-635 WIP: new tests. At least one is failing; seem to always match even when they shouldn't. Investigating...
+M	modules/activiti-engine/src/main/java/org/activiti/engine/task/TaskInfoQuery.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/history/HistoricTaskInstanceTest.java
+
+PointIO/Activiti;22133fc44;WORK-635 WIP: original tests now compile and run
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ExecutionQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/HistoricProcessInstanceQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/HistoricTaskInstanceQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessInstanceQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/TaskQueryImpl.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/history/HistoricTaskInstanceTest.java
+
+PointIO/Activiti;6107a2337;WORK-635 WIP: HistoricProcessInstance.xml and HistoricTaskInstance.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricProcessInstance.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricTaskInstance.xml
+
+PointIO/Activiti;08061cf1f;WORK-635 WIP: execution.xml and task.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Execution.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Task.xml
+
+PointIO/Activiti;0058e2116;WORK-635 WIP
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/HistoricProcessInstanceQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/HistoricTaskInstanceQueryImpl.java
+
+PointIO/Activiti;d34253895;WORK-635 WIP
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessInstanceQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/TaskQueryImpl.java
+
+PointIO/Activiti;07b5946b1;WORK-635 WIP
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/HistoricProcessInstanceQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/HistoricTaskInstanceQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessInstanceQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/TaskQueryImpl.java
+
+PointIO/Activiti;5100e4f54;WORK-635 initial
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessInstanceQueryImpl.java
+
+PointIO/Activiti;08e8e7ce4;change to activiti to make sql statements involving involvedUser case insensitive to co-ordinate with changes made in workflow as far as tasks go.
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Execution.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricProcessInstance.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricTaskInstance.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Task.xml
+
+PointIO/Activiti;1eb1e4631;Changes to MySql generation scripts to use longtext for variable fields.
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.history.sql
+
+PointIO/Activiti;3576241d0;Merge branch 'work-288'
+PointIO/Activiti;0dd779bf5;work-288 maggie's patch for column sizes
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.history.sql

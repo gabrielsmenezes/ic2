@@ -1,0 +1,87 @@
+bwangfdu/spring-security-oauth;d22d2607;Merge commit '8eedb354ae0015e0f33f0c3d958d9ac84d010721'
+bwangfdu/spring-security-oauth;b06eaee8;Merge commit '3148a7d89a2a5f3349357b32720b745b13afdc69'
+bwangfdu/spring-security-oauth;f08622fb;Revert "Add missed CllipticCurveVerifier in spring-security-jwt and fix some build failure."
+D	spring-security-jwt/src/main/java/org/springframework/security/jwt/crypto/sign/EllipticCurveKeyHelper.java
+D	spring-security-jwt/src/main/java/org/springframework/security/jwt/crypto/sign/EllipticCurveVerifier.java
+D	spring-security-jwt/src/test/java/org/springframework/security/jwt/crypto/sign/EllipticCurveVerifierTests.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkDefinitionSource.java
+
+bwangfdu/spring-security-oauth;cf5999db;Revert "Revert "Enchace device_verification_uri config to support absolute path and related path.""
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DeviceAuthorizationEndpoint.java
+
+bwangfdu/spring-security-oauth;d37137bf;Revert "Enchace device_verification_uri config to support absolute path and related path."
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DeviceAuthorizationEndpoint.java
+
+bwangfdu/spring-security-oauth;e5f973c9;Add missed CllipticCurveVerifier in spring-security-jwt and fix some build failure.
+A	spring-security-jwt/src/main/java/org/springframework/security/jwt/crypto/sign/EllipticCurveKeyHelper.java
+A	spring-security-jwt/src/main/java/org/springframework/security/jwt/crypto/sign/EllipticCurveVerifier.java
+A	spring-security-jwt/src/test/java/org/springframework/security/jwt/crypto/sign/EllipticCurveVerifierTests.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkDefinitionSource.java
+
+bwangfdu/spring-security-oauth;1f402cb6;Merge commit '991899136e06a1c4ba87b9c4172e5ad34891776f' EC JWK support
+bwangfdu/spring-security-oauth;aa88772c;Merge commit 'fed554e6daaf7b086c2d5f22fa7b72494b6ab40f' 2.2.1.RELEASE
+bwangfdu/spring-security-oauth;ceb51e83;Enchace device_verification_uri config to support absolute path and related path.
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DeviceAuthorizationEndpoint.java
+
+bwangfdu/spring-security-oauth;f6cfdd2b;fix path of oauth/user_code
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerEndpointsConfiguration.java
+
+bwangfdu/spring-security-oauth;90bf0519;add a default page for user input user code
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerEndpointsConfiguration.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DeviceUserVerifyEndpoint.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/WhitelabelApprovalEndpoint.java
+
+bwangfdu/spring-security-oauth;1e0ac808;add InMemoryDeviceAuthorizationCodeServices unit test
+A	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/device/InMemoryDeviceAuthorizationCodeServicesTest.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/device/RedisDeviceAuthorizationCodeServicesTest.java
+
+bwangfdu/spring-security-oauth;8bd518f0;add RedisDeviceAuthorizationCodeServices and its unit test a modify on the interface of user grant
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/DeviceAuthorizationCodeServices.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/RandomDeviceAuthorizationCodeServices.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/RedisDeviceAuthorizationCodeServices.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DeviceUserVerifyEndpoint.java
+A	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/device/RedisDeviceAuthorizationCodeServicesTest.java
+
+bwangfdu/spring-security-oauth;500eeddb;fix a granter bug
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/DeviceAuthorizationGranter.java
+
+bwangfdu/spring-security-oauth;a1eb0d80;add DeviceAuthorizationGranter for token grants fix an InMemoryDeviceAuthorizationCodeService bug
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configurers/AuthorizationServerEndpointsConfigurer.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/DeviceAuthorizationGranter.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/InMemoryDeviceAuthorizationCodeServices.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/UserGrantSuccessException.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DeviceUserVerifyEndpoint.java
+
+bwangfdu/spring-security-oauth;67e2ba95;add user verify endpoint fix bugs in device authorize endpoint
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerEndpointsConfiguration.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/DeviceAuthorizationCodeServices.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/InMemoryDeviceAuthorizationCodeServices.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/RandomDeviceAuthorizationCodeServices.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DeviceAuthorizationEndpoint.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DeviceUserVerifyEndpoint.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/WhitelabelApprovalEndpoint.java
+
+bwangfdu/spring-security-oauth;5be3a608;device_authorize interface added
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/common/util/OAuth2Utils.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerEndpointsConfiguration.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerSecurityConfiguration.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/annotation/web/configurers/AuthorizationServerEndpointsConfigurer.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/DeviceAuthorizationCodeServices.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/RandomDeviceAuthorizationCodeServices.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DeviceAuthorizationEndpoint.java
+
+bwangfdu/spring-security-oauth;bde841b2;device authorization code services for device authorization flow
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/AuthorizationPendingException.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/DeviceAuthorizationCodeServices.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/InMemoryDeviceAuthorizationCodeServices.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/RandomDeviceAuthorizationCodeServices.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/device/SlowDownException.java
+
+bwangfdu/spring-security-oauth;99189913;Add support for Elliptic Curve JWK signatures
+M	spring-security-oauth2/pom.xml
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/EllipticCurveJwkDefinition.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkAttributes.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkDefinition.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkDefinitionSource.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkSetConverter.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/jwk/JwkSetConverterTest.java

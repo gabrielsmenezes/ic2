@@ -1,0 +1,48 @@
+geotracsystems/SlyceMessaging;ec343bf;Fix many lint errors and warnings.
+M	build.gradle
+M	slyce-messaging/build.gradle
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/spinner/SpinnerViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/image/FixedAspectRatioImageView.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/text/FontEditText.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/text/FontTextView.java
+M	slyce-messaging/src/main/res/layout/item_message_external_media.xml
+M	slyce-messaging/src/main/res/layout/item_message_external_text.xml
+M	slyce-messaging/src/main/res/layout/item_message_user_media.xml
+M	slyce-messaging/src/main/res/layout/item_message_user_text.xml
+
+geotracsystems/SlyceMessaging;fbeb314;Merge branch 'GGA-110-resource-avatar'
+geotracsystems/SlyceMessaging;1bc516f;Set initials visibility to GONE instead of INVISIBLE
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+
+geotracsystems/SlyceMessaging;4f11683;Change message avatars so resources can be used in addition to urls
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/Message.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+
+geotracsystems/SlyceMessaging;ffa4712;Merge branch 'brett-gga-11-urgent-messages'
+geotracsystems/SlyceMessaging;6c6790f;Change gradle to upload package to nexus
+A	lib_common.gradle
+M	slyce-messaging/build.gradle
+
+geotracsystems/SlyceMessaging;83c324c;Change internal text message to show appropriate priority
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/text/MessageInternalUserTextViewHolder.java
+
+geotracsystems/SlyceMessaging;4d48b3f;Add high priority icon to internal messages
+M	slyce-messaging/src/main/res/layout/item_message_user_text.xml
+
+geotracsystems/SlyceMessaging;6fa8392;Change external text messages to show high priority when appropriate
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/TextMessage.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/externalUser/text/MessageExternalUserTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextViewHolder.java
+
+geotracsystems/SlyceMessaging;172e293;Add high priority icon to external message
+A	slyce-messaging/src/main/res/drawable/ic_high_priority.xml
+M	slyce-messaging/src/main/res/layout/item_message_external_text.xml
+
+geotracsystems/SlyceMessaging;16e2859;Get project to build locally
+M	build.gradle
+M	example/build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+M	local.properties
+M	slyce-messaging/build.gradle

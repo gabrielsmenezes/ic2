@@ -1,0 +1,32 @@
+d3clan/spring-security-oauth;66907c9;Merge branch 'master' of github.com:d3clan/spring-security-oauth
+d3clan/spring-security-oauth;0530e68;SECOAUTH-221 - Support for registering multiple redirect_uri Change to the ClientDetails to allow for a Set<String> of redirect URIs. This is as per OAuth2 v2-23.
+M	.gitignore
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/BaseClientDetails.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/ClientDetails.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/JdbcClientDetailsService.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DefaultRedirectResolver.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/TestClientDetailsServiceBeanDefinitionParser.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/TestJdbcClientDetailsService.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/code/TestDefaultRedirectResolver.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/code/TestExactMatchRedirectResolver.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/endpoint/TestAuthorizationEndpoint.java
+
+d3clan/spring-security-oauth;0aa5515;SECOAUTH-221 - Support for registering multiple redirect_uri Update to include multiple values in the redirect uri column. https://jira.springsource.org/browse/SECOAUTH-221
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/TestJdbcClientDetailsService.java
+
+d3clan/spring-security-oauth;2f6d57d;SECOAUTH-221 - Support for registering multiple redirect_uri Revert the schema for JdbcClientDetailsService to follow the same pattern as scopes. Now uses CSVs saved to a VARCHAR(256) https://jira.springsource.org/browse/SECOAUTH-221
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/JdbcClientDetailsService.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/TestJdbcClientDetailsService.java
+M	spring-security-oauth2/src/test/resources/schema.sql
+
+d3clan/spring-security-oauth;e18e1a1;SECOAUTH-221 - Support for registering multiple redirect_uri Change to the ClientDetails to allow for a Set<String> of redirect URIs. This is as per OAuth2 v2-23.
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/BaseClientDetails.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/ClientDetails.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/JdbcClientDetailsService.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/DefaultRedirectResolver.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/TestClientDetailsServiceBeanDefinitionParser.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/TestJdbcClientDetailsService.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/code/TestDefaultRedirectResolver.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/code/TestExactMatchRedirectResolver.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/endpoint/TestAuthorizationEndpoint.java
+M	spring-security-oauth2/src/test/resources/schema.sql

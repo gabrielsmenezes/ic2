@@ -1,0 +1,64 @@
+ddefrance/Activiti;02a4f88e8;Added a flag to indicate if the service step should add a sequence flow to the previous activity.  This is required for the complete form service task.
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/ServiceStepDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/ServiceStepDefinition.java
+
+ddefrance/Activiti;255fb2077;Added TaskListeners to UserTasks.
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/HumanStepDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/HumanStepDefinition.java
+M	pom.xml
+
+ddefrance/Activiti;412c35e6f;Updated distribution mgmt.
+M	pom.xml
+
+ddefrance/Activiti;39d81acca;Adding the simple workflow module to the root build.
+M	pom.xml
+
+ddefrance/Activiti;c8aa7179d;Added support for specifying a due date and a priority for human tasks.
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/HumanStepDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/AbstractNamedStepDefinition.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/HumanStepDefinition.java
+
+ddefrance/Activiti;9f4eff0e6;Merge pull request #1 from ddefrance/boundary-event
+ddefrance/Activiti;f28444282;Reverting a change I made to the model to support lookups of the join gateway by the forkgateway.  Now we keep a map in the conversion object for this purpose and do not pollute the model with conversion necessities.
+M	modules/activiti-bpmn-model/src/main/java/org/activiti/bpmn/model/ParallelGateway.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/WorkflowDefinitionConversion.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/ParallelStepsDefinitionConverter.java
+
+ddefrance/Activiti;25b83e88a;Fix for nested parallel gateways which were connecting join gateways in lane 1 to fork gateways in lane 2.
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/WorkflowDefinitionConversion.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/ParallelStepsDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/ParallelStepsDefinition.java
+
+ddefrance/Activiti;d9383b191;Added a concept of an explicit end to a parallel instead of making the assumption that the last element in a list is the end of the parallel. This is because some elements may have conditional or boundary event flows which should not be sequenced to the join gateway.  If no explicit end is specified within the steps, then we will use the last element as always.
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/BaseStepDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/ParallelStepsDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/AbstractNamedStepDefinition.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/ListConditionStepDefinition.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/NamedStepDefinition.java
+
+ddefrance/Activiti;ec75abed0;Added support for explicit exclusive gateways.  We could not use the choice step here because we did not want a corresponding fork gateway. Also added the ability to set Ids through the StepDefinitions.  If the id is null, one will be generated as always.  But setting a specific id allows us to build the sequence flows we want explicitly.
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/WorkflowDefinitionConversionFactory.java
+A	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/ExclusiveGatewayStepDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/HumanStepDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/ParallelStepsDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/SequenceFlowStepDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/ServiceStepDefinitionConverter.java
+A	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/ExclusiveGatewayStepDefinition.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/SequenceFlowStepDefinition.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/ServiceStepDefinition.java
+
+ddefrance/Activiti;1f18fc4eb;Added support for explicit sequence flows, BoundaryEvents and Service Tasks to the simple workflow definition.
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/WorkflowDefinitionConversionFactory.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/listener/DefaultWorkflowDefinitionConversionListener.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/BaseStepDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/HumanStepDefinitionConverter.java
+A	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/SequenceFlowStepDefinitionConverter.java
+A	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/ServiceStepDefinitionConverter.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/AbstractNamedStepDefinition.java
+A	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/BoundaryEventStepDefinition.java
+A	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/SequenceFlowStepDefinition.java
+A	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/definition/ServiceStepDefinition.java
+
+ddefrance/Activiti;01e7ee3ae;Fixed a bug where on nested parallel gateways, the  child forkgateway is being flowed to the parent join gateway instead of the child join gateway.
+M	modules/activiti-bpmn-model/src/main/java/org/activiti/bpmn/model/ParallelGateway.java
+M	modules/activiti-simple-workflow/src/main/java/org/activiti/workflow/simple/converter/step/ParallelStepsDefinitionConverter.java

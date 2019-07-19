@@ -1,0 +1,257 @@
+rtyley/TarsosDSP;86c2fc0;Travis and Docker seems weirdly undocumented...
+M	.travis.yml
+
+rtyley/TarsosDSP;10ef798;This dockerfile seemed to have everything I needed...
+A	Dockerfile
+
+rtyley/TarsosDSP;a802348;Docker builds don't seem to find files?! redux
+R100	src/test/java/be/tarsos/dsp/test/resources/4000_samples_of_440Hz_at_44.1kHz.wav	src/test/resources/be/tarsos/dsp/test/resources/4000_samples_of_440Hz_at_44.1kHz.wav
+R100	src/test/java/be/tarsos/dsp/test/resources/CCIR_04221.ogg	src/test/resources/be/tarsos/dsp/test/resources/CCIR_04221.ogg
+R100	src/test/java/be/tarsos/dsp/test/resources/NR45.wav	src/test/resources/be/tarsos/dsp/test/resources/NR45.wav
+R100	src/test/java/be/tarsos/dsp/test/resources/NR45_expected_beats.txt	src/test/resources/be/tarsos/dsp/test/resources/NR45_expected_beats.txt
+R100	src/test/java/be/tarsos/dsp/test/resources/NR45_expected_onsets.txt	src/test/resources/be/tarsos/dsp/test/resources/NR45_expected_onsets.txt
+R100	src/test/java/be/tarsos/dsp/test/resources/NR45_expected_onsets_complex.txt	src/test/resources/be/tarsos/dsp/test/resources/NR45_expected_onsets_complex.txt
+R100	src/test/java/be/tarsos/dsp/test/resources/flute.novib.ff.A4.wav	src/test/resources/be/tarsos/dsp/test/resources/flute.novib.ff.A4.wav
+R100	src/test/java/be/tarsos/dsp/test/resources/flute.novib.ff.B6.wav	src/test/resources/be/tarsos/dsp/test/resources/flute.novib.ff.B6.wav
+R100	src/test/java/be/tarsos/dsp/test/resources/piano.ff.A4.wav	src/test/resources/be/tarsos/dsp/test/resources/piano.ff.A4.wav
+R100	src/test/java/be/tarsos/dsp/test/resources/piano.ff.C3.wav	src/test/resources/be/tarsos/dsp/test/resources/piano.ff.C3.wav
+
+rtyley/TarsosDSP;ac9d095;some debug for the errors in Docker
+M	src/test/java/be/tarsos/dsp/test/TestUtilities.java
+
+rtyley/TarsosDSP;767701a;Some docker containers default to the wrong encoding
+M	build.sbt
+
+rtyley/TarsosDSP;1e545ff;a file generted in tests
+M	.gitignore
+
+rtyley/TarsosDSP;93e3a74;Funk
+M	.travis.yml
+
+rtyley/TarsosDSP;adf6b2f;moo
+M	.travis.yml
+
+rtyley/TarsosDSP;1416978;Blarg ffmpeg blarg
+M	.travis.yml
+
+rtyley/TarsosDSP;bb6f623;Need to get ffmpeg...
+M	.travis.yml
+
+rtyley/TarsosDSP;1edd472;ffmpeg for travis
+M	.travis.yml
+
+rtyley/TarsosDSP;8652249;Ya gotta specifiy the scala version for travis...
+M	.travis.yml
+
+rtyley/TarsosDSP;96d3833;Add travis....!?
+A	.travis.yml
+
+rtyley/TarsosDSP;e1e404a;These BeatRoot tests fail...
+M	src/test/java/be/tarsos/dsp/test/BeatRootTest.java
+
+rtyley/TarsosDSP;5f0a40a;Looks like FFT_PITCH is missing an implementation
+M	src/main/java/be/tarsos/dsp/pitch/PitchProcessor.java
+
+rtyley/TarsosDSP;d851289;Need to give javax.sound it's own JVM
+M	build.sbt
+
+rtyley/TarsosDSP;34276a3;Attempt to get buildable by SBT
+A	build.sbt
+A	project/build.properties
+R100	src/jvm/be/tarsos/dsp/AmplitudeModulatedNoise.java	src/main/java/be/tarsos/dsp/AmplitudeModulatedNoise.java
+R100	src/core/be/tarsos/dsp/AudioDispatcher.java	src/main/java/be/tarsos/dsp/AudioDispatcher.java
+R100	src/core/be/tarsos/dsp/AudioEvent.java	src/main/java/be/tarsos/dsp/AudioEvent.java
+R100	src/core/be/tarsos/dsp/AudioGenerator.java	src/main/java/be/tarsos/dsp/AudioGenerator.java
+R100	src/core/be/tarsos/dsp/AudioProcessor.java	src/main/java/be/tarsos/dsp/AudioProcessor.java
+R100	src/core/be/tarsos/dsp/AutoCorrelation.java	src/main/java/be/tarsos/dsp/AutoCorrelation.java
+R100	src/core/be/tarsos/dsp/BitDepthProcessor.java	src/main/java/be/tarsos/dsp/BitDepthProcessor.java
+R100	src/core/be/tarsos/dsp/ConstantQ.java	src/main/java/be/tarsos/dsp/ConstantQ.java
+R100	src/core/be/tarsos/dsp/DetermineDurationProcessor.java	src/main/java/be/tarsos/dsp/DetermineDurationProcessor.java
+R100	src/core/be/tarsos/dsp/EnvelopeFollower.java	src/main/java/be/tarsos/dsp/EnvelopeFollower.java
+R100	src/core/be/tarsos/dsp/FadeIn.java	src/main/java/be/tarsos/dsp/FadeIn.java
+R100	src/core/be/tarsos/dsp/FadeOut.java	src/main/java/be/tarsos/dsp/FadeOut.java
+R100	src/core/be/tarsos/dsp/GainProcessor.java	src/main/java/be/tarsos/dsp/GainProcessor.java
+R100	src/core/be/tarsos/dsp/MultichannelToMono.java	src/main/java/be/tarsos/dsp/MultichannelToMono.java
+R100	src/core/be/tarsos/dsp/Oscilloscope.java	src/main/java/be/tarsos/dsp/Oscilloscope.java
+R100	src/core/be/tarsos/dsp/PitchShifter.java	src/main/java/be/tarsos/dsp/PitchShifter.java
+R100	src/core/be/tarsos/dsp/SilenceDetector.java	src/main/java/be/tarsos/dsp/SilenceDetector.java
+R100	src/core/be/tarsos/dsp/SpectralPeakProcessor.java	src/main/java/be/tarsos/dsp/SpectralPeakProcessor.java
+R100	src/core/be/tarsos/dsp/StopAudioProcessor.java	src/main/java/be/tarsos/dsp/StopAudioProcessor.java
+R100	src/core/be/tarsos/dsp/WaveformSimilarityBasedOverlapAdd.java	src/main/java/be/tarsos/dsp/WaveformSimilarityBasedOverlapAdd.java
+R100	src/core/be/tarsos/dsp/ZeroCrossingRateProcessor.java	src/main/java/be/tarsos/dsp/ZeroCrossingRateProcessor.java
+R100	src/core/be/tarsos/dsp/beatroot/Agent.java	src/main/java/be/tarsos/dsp/beatroot/Agent.java
+R100	src/core/be/tarsos/dsp/beatroot/AgentList.java	src/main/java/be/tarsos/dsp/beatroot/AgentList.java
+R100	src/core/be/tarsos/dsp/beatroot/BeatRootOnsetEventHandler.java	src/main/java/be/tarsos/dsp/beatroot/BeatRootOnsetEventHandler.java
+R100	src/core/be/tarsos/dsp/beatroot/Event.java	src/main/java/be/tarsos/dsp/beatroot/Event.java
+R100	src/core/be/tarsos/dsp/beatroot/EventList.java	src/main/java/be/tarsos/dsp/beatroot/EventList.java
+R100	src/core/be/tarsos/dsp/beatroot/Induction.java	src/main/java/be/tarsos/dsp/beatroot/Induction.java
+R100	src/core/be/tarsos/dsp/beatroot/Peaks.java	src/main/java/be/tarsos/dsp/beatroot/Peaks.java
+R100	src/core/be/tarsos/dsp/beatroot/package-info.java	src/main/java/be/tarsos/dsp/beatroot/package-info.java
+R100	src/core/be/tarsos/dsp/effects/DelayEffect.java	src/main/java/be/tarsos/dsp/effects/DelayEffect.java
+R100	src/core/be/tarsos/dsp/effects/FlangerEffect.java	src/main/java/be/tarsos/dsp/effects/FlangerEffect.java
+R100	src/core/be/tarsos/dsp/effects/package-info.java	src/main/java/be/tarsos/dsp/effects/package-info.java
+R100	src/core/be/tarsos/dsp/filters/BandPass.java	src/main/java/be/tarsos/dsp/filters/BandPass.java
+R100	src/core/be/tarsos/dsp/filters/HighPass.java	src/main/java/be/tarsos/dsp/filters/HighPass.java
+R100	src/core/be/tarsos/dsp/filters/IIRFilter.java	src/main/java/be/tarsos/dsp/filters/IIRFilter.java
+R100	src/core/be/tarsos/dsp/filters/LowPassFS.java	src/main/java/be/tarsos/dsp/filters/LowPassFS.java
+R100	src/core/be/tarsos/dsp/filters/LowPassSP.java	src/main/java/be/tarsos/dsp/filters/LowPassSP.java
+R100	src/core/be/tarsos/dsp/filters/package-info.java	src/main/java/be/tarsos/dsp/filters/package-info.java
+R100	src/core/be/tarsos/dsp/granulator/Grain.java	src/main/java/be/tarsos/dsp/granulator/Grain.java
+R100	src/core/be/tarsos/dsp/granulator/Granulator.java	src/main/java/be/tarsos/dsp/granulator/Granulator.java
+R100	src/core/be/tarsos/dsp/granulator/OptimizedGranulator.java	src/main/java/be/tarsos/dsp/granulator/OptimizedGranulator.java
+R100	src/core/be/tarsos/dsp/io/PipeDecoder.java	src/main/java/be/tarsos/dsp/io/PipeDecoder.java
+R100	src/core/be/tarsos/dsp/io/PipedAudioStream.java	src/main/java/be/tarsos/dsp/io/PipedAudioStream.java
+R100	src/core/be/tarsos/dsp/io/TarsosDSPAudioFloatConverter.java	src/main/java/be/tarsos/dsp/io/TarsosDSPAudioFloatConverter.java
+R100	src/core/be/tarsos/dsp/io/TarsosDSPAudioFormat.java	src/main/java/be/tarsos/dsp/io/TarsosDSPAudioFormat.java
+R100	src/core/be/tarsos/dsp/io/TarsosDSPAudioInputStream.java	src/main/java/be/tarsos/dsp/io/TarsosDSPAudioInputStream.java
+R100	src/core/be/tarsos/dsp/io/UniversalAudioInputStream.java	src/main/java/be/tarsos/dsp/io/UniversalAudioInputStream.java
+R100	src/jvm/be/tarsos/dsp/io/jvm/AudioDispatcherFactory.java	src/main/java/be/tarsos/dsp/io/jvm/AudioDispatcherFactory.java
+R100	src/jvm/be/tarsos/dsp/io/jvm/AudioPlayer.java	src/main/java/be/tarsos/dsp/io/jvm/AudioPlayer.java
+R100	src/jvm/be/tarsos/dsp/io/jvm/JVMAudioInputStream.java	src/main/java/be/tarsos/dsp/io/jvm/JVMAudioInputStream.java
+R100	src/jvm/be/tarsos/dsp/io/jvm/WaveformWriter.java	src/main/java/be/tarsos/dsp/io/jvm/WaveformWriter.java
+R100	src/jvm/be/tarsos/dsp/io/jvm/package-info.java	src/main/java/be/tarsos/dsp/io/jvm/package-info.java
+R100	src/core/be/tarsos/dsp/io/package-info.java	src/main/java/be/tarsos/dsp/io/package-info.java
+R100	src/core/be/tarsos/dsp/mfcc/DCT.java	src/main/java/be/tarsos/dsp/mfcc/DCT.java
+R100	src/core/be/tarsos/dsp/mfcc/MFCC.java	src/main/java/be/tarsos/dsp/mfcc/MFCC.java
+R100	src/core/be/tarsos/dsp/mfcc/package-info.java	src/main/java/be/tarsos/dsp/mfcc/package-info.java
+R100	src/core/be/tarsos/dsp/onsets/BeatRootSpectralFluxOnsetDetector.java	src/main/java/be/tarsos/dsp/onsets/BeatRootSpectralFluxOnsetDetector.java
+R100	src/core/be/tarsos/dsp/onsets/ComplexOnsetDetector.java	src/main/java/be/tarsos/dsp/onsets/ComplexOnsetDetector.java
+R100	src/core/be/tarsos/dsp/onsets/OnsetDetector.java	src/main/java/be/tarsos/dsp/onsets/OnsetDetector.java
+R100	src/core/be/tarsos/dsp/onsets/OnsetHandler.java	src/main/java/be/tarsos/dsp/onsets/OnsetHandler.java
+R100	src/core/be/tarsos/dsp/onsets/PercussionOnsetDetector.java	src/main/java/be/tarsos/dsp/onsets/PercussionOnsetDetector.java
+R100	src/core/be/tarsos/dsp/onsets/PrintOnsetHandler.java	src/main/java/be/tarsos/dsp/onsets/PrintOnsetHandler.java
+R100	src/core/be/tarsos/dsp/onsets/package-info.java	src/main/java/be/tarsos/dsp/onsets/package-info.java
+R100	src/core/be/tarsos/dsp/package-info.java	src/main/java/be/tarsos/dsp/package-info.java
+R100	src/core/be/tarsos/dsp/pitch/AMDF.java	src/main/java/be/tarsos/dsp/pitch/AMDF.java
+R100	src/core/be/tarsos/dsp/pitch/DTMF.java	src/main/java/be/tarsos/dsp/pitch/DTMF.java
+R100	src/core/be/tarsos/dsp/pitch/DynamicWavelet.java	src/main/java/be/tarsos/dsp/pitch/DynamicWavelet.java
+R100	src/core/be/tarsos/dsp/pitch/FFTPitch.java	src/main/java/be/tarsos/dsp/pitch/FFTPitch.java
+R100	src/core/be/tarsos/dsp/pitch/FastYin.java	src/main/java/be/tarsos/dsp/pitch/FastYin.java
+R100	src/core/be/tarsos/dsp/pitch/GeneralizedGoertzel.java	src/main/java/be/tarsos/dsp/pitch/GeneralizedGoertzel.java
+R100	src/core/be/tarsos/dsp/pitch/Goertzel.java	src/main/java/be/tarsos/dsp/pitch/Goertzel.java
+R100	src/core/be/tarsos/dsp/pitch/McLeodPitchMethod.java	src/main/java/be/tarsos/dsp/pitch/McLeodPitchMethod.java
+R100	src/core/be/tarsos/dsp/pitch/PitchDetectionHandler.java	src/main/java/be/tarsos/dsp/pitch/PitchDetectionHandler.java
+R100	src/core/be/tarsos/dsp/pitch/PitchDetectionResult.java	src/main/java/be/tarsos/dsp/pitch/PitchDetectionResult.java
+R100	src/core/be/tarsos/dsp/pitch/PitchDetector.java	src/main/java/be/tarsos/dsp/pitch/PitchDetector.java
+R100	src/core/be/tarsos/dsp/pitch/PitchProcessor.java	src/main/java/be/tarsos/dsp/pitch/PitchProcessor.java
+R100	src/core/be/tarsos/dsp/pitch/Yin.java	src/main/java/be/tarsos/dsp/pitch/Yin.java
+R100	src/core/be/tarsos/dsp/pitch/package-info.java	src/main/java/be/tarsos/dsp/pitch/package-info.java
+R100	src/core/be/tarsos/dsp/resample/FilterKit.java	src/main/java/be/tarsos/dsp/resample/FilterKit.java
+R100	src/core/be/tarsos/dsp/resample/RateTransposer.java	src/main/java/be/tarsos/dsp/resample/RateTransposer.java
+R100	src/core/be/tarsos/dsp/resample/Resampler.java	src/main/java/be/tarsos/dsp/resample/Resampler.java
+R100	src/core/be/tarsos/dsp/resample/SampleBuffers.java	src/main/java/be/tarsos/dsp/resample/SampleBuffers.java
+R100	src/core/be/tarsos/dsp/resample/SoundTouchRateTransposer.java	src/main/java/be/tarsos/dsp/resample/SoundTouchRateTransposer.java
+R100	src/core/be/tarsos/dsp/resample/package-info.java	src/main/java/be/tarsos/dsp/resample/package-info.java
+R100	src/core/be/tarsos/dsp/synthesis/AmplitudeLFO.java	src/main/java/be/tarsos/dsp/synthesis/AmplitudeLFO.java
+R100	src/core/be/tarsos/dsp/synthesis/NoiseGenerator.java	src/main/java/be/tarsos/dsp/synthesis/NoiseGenerator.java
+R100	src/core/be/tarsos/dsp/synthesis/PitchResyntheziser.java	src/main/java/be/tarsos/dsp/synthesis/PitchResyntheziser.java
+R100	src/core/be/tarsos/dsp/synthesis/SineGenerator.java	src/main/java/be/tarsos/dsp/synthesis/SineGenerator.java
+R100	src/core/be/tarsos/dsp/synthesis/package-info.java	src/main/java/be/tarsos/dsp/synthesis/package-info.java
+R100	src/jvm/be/tarsos/dsp/ui/Axis.java	src/main/java/be/tarsos/dsp/ui/Axis.java
+R100	src/jvm/be/tarsos/dsp/ui/AxisUnit.java	src/main/java/be/tarsos/dsp/ui/AxisUnit.java
+R100	src/jvm/be/tarsos/dsp/ui/CoordinateSystem.java	src/main/java/be/tarsos/dsp/ui/CoordinateSystem.java
+R100	src/jvm/be/tarsos/dsp/ui/LinkedFrame.java	src/main/java/be/tarsos/dsp/ui/LinkedFrame.java
+R100	src/jvm/be/tarsos/dsp/ui/LinkedPanel.java	src/main/java/be/tarsos/dsp/ui/LinkedPanel.java
+R100	src/jvm/be/tarsos/dsp/ui/ViewPort.java	src/main/java/be/tarsos/dsp/ui/ViewPort.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/AmplitudeAxisLayer.java	src/main/java/be/tarsos/dsp/ui/layers/AmplitudeAxisLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/BackgroundLayer.java	src/main/java/be/tarsos/dsp/ui/layers/BackgroundLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/BeatLayer.java	src/main/java/be/tarsos/dsp/ui/layers/BeatLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/ConstantQLayer.java	src/main/java/be/tarsos/dsp/ui/layers/ConstantQLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/DragMouseListenerLayer.java	src/main/java/be/tarsos/dsp/ui/layers/DragMouseListenerLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/FFTLayer.java	src/main/java/be/tarsos/dsp/ui/layers/FFTLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/GeneralizedGoertzelLayer.java	src/main/java/be/tarsos/dsp/ui/layers/GeneralizedGoertzelLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/HorizontalFrequencyAxisLayer.java	src/main/java/be/tarsos/dsp/ui/layers/HorizontalFrequencyAxisLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/Layer.java	src/main/java/be/tarsos/dsp/ui/layers/Layer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/LayerUtilities.java	src/main/java/be/tarsos/dsp/ui/layers/LayerUtilities.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/LegendLayer.java	src/main/java/be/tarsos/dsp/ui/layers/LegendLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/MouseCursorLayer.java	src/main/java/be/tarsos/dsp/ui/layers/MouseCursorLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/PitchContourLayer.java	src/main/java/be/tarsos/dsp/ui/layers/PitchContourLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/Scalogram.java	src/main/java/be/tarsos/dsp/ui/layers/Scalogram.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/SelectionLayer.java	src/main/java/be/tarsos/dsp/ui/layers/SelectionLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/SpectrumLayer.java	src/main/java/be/tarsos/dsp/ui/layers/SpectrumLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/TimeAxisLayer.java	src/main/java/be/tarsos/dsp/ui/layers/TimeAxisLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/TooltipLayer.java	src/main/java/be/tarsos/dsp/ui/layers/TooltipLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/VerticalFrequencyAxisLayer.java	src/main/java/be/tarsos/dsp/ui/layers/VerticalFrequencyAxisLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/WaveFormLayer.java	src/main/java/be/tarsos/dsp/ui/layers/WaveFormLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/ZoomMouseListenerLayer.java	src/main/java/be/tarsos/dsp/ui/layers/ZoomMouseListenerLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/package-info.java	src/main/java/be/tarsos/dsp/ui/layers/package-info.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/pch/PitchClassHistogramLayer.java	src/main/java/be/tarsos/dsp/ui/layers/pch/PitchClassHistogramLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/pch/ScaleLayer.java	src/main/java/be/tarsos/dsp/ui/layers/pch/ScaleLayer.java
+R100	src/jvm/be/tarsos/dsp/ui/layers/pch/package-info.java	src/main/java/be/tarsos/dsp/ui/layers/pch/package-info.java
+R100	src/jvm/be/tarsos/dsp/ui/package-info.java	src/main/java/be/tarsos/dsp/ui/package-info.java
+R100	src/core/be/tarsos/dsp/util/AudioResourceUtils.java	src/main/java/be/tarsos/dsp/util/AudioResourceUtils.java
+R100	src/core/be/tarsos/dsp/util/BiQuadFilter.java	src/main/java/be/tarsos/dsp/util/BiQuadFilter.java
+R100	src/core/be/tarsos/dsp/util/Complex.java	src/main/java/be/tarsos/dsp/util/Complex.java
+R100	src/core/be/tarsos/dsp/util/ConcurrencyUtils.java	src/main/java/be/tarsos/dsp/util/ConcurrencyUtils.java
+R100	src/core/be/tarsos/dsp/util/CubicSplineFast.java	src/main/java/be/tarsos/dsp/util/CubicSplineFast.java
+R100	src/core/be/tarsos/dsp/util/FFMPEGDownloader.java	src/main/java/be/tarsos/dsp/util/FFMPEGDownloader.java
+R100	src/core/be/tarsos/dsp/util/PeakPicker.java	src/main/java/be/tarsos/dsp/util/PeakPicker.java
+R100	src/core/be/tarsos/dsp/util/PitchConverter.java	src/main/java/be/tarsos/dsp/util/PitchConverter.java
+R100	src/core/be/tarsos/dsp/util/fft/BartlettHannWindow.java	src/main/java/be/tarsos/dsp/util/fft/BartlettHannWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/BartlettWindow.java	src/main/java/be/tarsos/dsp/util/fft/BartlettWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/BlackmanHarrisNuttall.java	src/main/java/be/tarsos/dsp/util/fft/BlackmanHarrisNuttall.java
+R100	src/core/be/tarsos/dsp/util/fft/BlackmanWindow.java	src/main/java/be/tarsos/dsp/util/fft/BlackmanWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/CosineWindow.java	src/main/java/be/tarsos/dsp/util/fft/CosineWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/FFT.java	src/main/java/be/tarsos/dsp/util/fft/FFT.java
+R100	src/core/be/tarsos/dsp/util/fft/FloatFFT.java	src/main/java/be/tarsos/dsp/util/fft/FloatFFT.java
+R100	src/core/be/tarsos/dsp/util/fft/GaussWindow.java	src/main/java/be/tarsos/dsp/util/fft/GaussWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/HammingWindow.java	src/main/java/be/tarsos/dsp/util/fft/HammingWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/HannWindow.java	src/main/java/be/tarsos/dsp/util/fft/HannWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/LanczosWindow.java	src/main/java/be/tarsos/dsp/util/fft/LanczosWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/RectangularWindow.java	src/main/java/be/tarsos/dsp/util/fft/RectangularWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/ScaledHammingWindow.java	src/main/java/be/tarsos/dsp/util/fft/ScaledHammingWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/TriangularWindow.java	src/main/java/be/tarsos/dsp/util/fft/TriangularWindow.java
+R100	src/core/be/tarsos/dsp/util/fft/WindowFunction.java	src/main/java/be/tarsos/dsp/util/fft/WindowFunction.java
+R100	src/core/be/tarsos/dsp/util/fft/package-info.java	src/main/java/be/tarsos/dsp/util/fft/package-info.java
+R100	src/core/be/tarsos/dsp/util/package-info.java	src/main/java/be/tarsos/dsp/util/package-info.java
+R100	src/core/be/tarsos/dsp/wavelet/HaarWaveletCoder.java	src/main/java/be/tarsos/dsp/wavelet/HaarWaveletCoder.java
+R100	src/core/be/tarsos/dsp/wavelet/HaarWaveletDecoder.java	src/main/java/be/tarsos/dsp/wavelet/HaarWaveletDecoder.java
+R100	src/core/be/tarsos/dsp/wavelet/HaarWaveletFileReader.java	src/main/java/be/tarsos/dsp/wavelet/HaarWaveletFileReader.java
+R100	src/core/be/tarsos/dsp/wavelet/HaarWaveletFileWriter.java	src/main/java/be/tarsos/dsp/wavelet/HaarWaveletFileWriter.java
+R100	src/core/be/tarsos/dsp/wavelet/HaarWaveletTransform.java	src/main/java/be/tarsos/dsp/wavelet/HaarWaveletTransform.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/Daubechies4Wavelet.java	src/main/java/be/tarsos/dsp/wavelet/lift/Daubechies4Wavelet.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/Daubechies4WaveletCoder.java	src/main/java/be/tarsos/dsp/wavelet/lift/Daubechies4WaveletCoder.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/Daubechies4WaveletDecoder.java	src/main/java/be/tarsos/dsp/wavelet/lift/Daubechies4WaveletDecoder.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/HaarWavelet.java	src/main/java/be/tarsos/dsp/wavelet/lift/HaarWavelet.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/HaarWithPolynomialInterpolationWavelet.java	src/main/java/be/tarsos/dsp/wavelet/lift/HaarWithPolynomialInterpolationWavelet.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/LiftingSchemeBaseWavelet.java	src/main/java/be/tarsos/dsp/wavelet/lift/LiftingSchemeBaseWavelet.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/LiftingSchemeTest.java	src/main/java/be/tarsos/dsp/wavelet/lift/LiftingSchemeTest.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/LineWavelet.java	src/main/java/be/tarsos/dsp/wavelet/lift/LineWavelet.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/PolynomialInterpolation.java	src/main/java/be/tarsos/dsp/wavelet/lift/PolynomialInterpolation.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/PolynomialWavelets.java	src/main/java/be/tarsos/dsp/wavelet/lift/PolynomialWavelets.java
+R100	src/core/be/tarsos/dsp/wavelet/lift/package-info.java	src/main/java/be/tarsos/dsp/wavelet/lift/package-info.java
+R100	src/core/be/tarsos/dsp/wavelet/package-info.java	src/main/java/be/tarsos/dsp/wavelet/package-info.java
+R100	src/core/be/tarsos/dsp/writer/WaveHeader.java	src/main/java/be/tarsos/dsp/writer/WaveHeader.java
+R100	src/core/be/tarsos/dsp/writer/WriterProcessor.java	src/main/java/be/tarsos/dsp/writer/WriterProcessor.java
+R100	src/tests/be/tarsos/dsp/test/PercussionOnsetTest.java	src/test-others/PercussionOnsetTest.java
+R100	src/tests/be/tarsos/dsp/test/WaveformWriterTest.java	src/test-others/WaveformWriterTest.java
+R100	src/tests/be/tarsos/dsp/test/AudioDispatcherTest.java	src/test/java/be/tarsos/dsp/test/AudioDispatcherTest.java
+R100	src/tests/be/tarsos/dsp/test/AudioPlayerTest.java	src/test/java/be/tarsos/dsp/test/AudioPlayerTest.java
+R100	src/tests/be/tarsos/dsp/test/BeatRootTest.java	src/test/java/be/tarsos/dsp/test/BeatRootTest.java
+R100	src/tests/be/tarsos/dsp/test/ComplexOnsetTests.java	src/test/java/be/tarsos/dsp/test/ComplexOnsetTests.java
+R100	src/tests/be/tarsos/dsp/test/CrossCorrelation.java	src/test/java/be/tarsos/dsp/test/CrossCorrelation.java
+R100	src/tests/be/tarsos/dsp/test/EnvelopeFollowerTest.java	src/test/java/be/tarsos/dsp/test/EnvelopeFollowerTest.java
+R096	src/tests/be/tarsos/dsp/test/FFTTest.java	src/test/java/be/tarsos/dsp/test/FFTTest.java
+R100	src/tests/be/tarsos/dsp/test/GeneralizedGoertzelTest.java	src/test/java/be/tarsos/dsp/test/GeneralizedGoertzelTest.java
+R100	src/tests/be/tarsos/dsp/test/GoertzelTest.java	src/test/java/be/tarsos/dsp/test/GoertzelTest.java
+R100	src/tests/be/tarsos/dsp/test/HaarWaveletTransformTest.java	src/test/java/be/tarsos/dsp/test/HaarWaveletTransformTest.java
+R100	src/tests/be/tarsos/dsp/test/ImpulseDetection.java	src/test/java/be/tarsos/dsp/test/ImpulseDetection.java
+R100	src/tests/be/tarsos/dsp/test/MFCCTest.java	src/test/java/be/tarsos/dsp/test/MFCCTest.java
+R100	src/tests/be/tarsos/dsp/test/PitchDetectorTests.java	src/test/java/be/tarsos/dsp/test/PitchDetectorTests.java
+R100	src/tests/be/tarsos/dsp/test/PitchShifterTest.java	src/test/java/be/tarsos/dsp/test/PitchShifterTest.java
+R100	src/tests/be/tarsos/dsp/test/PitchTrackTest.java	src/test/java/be/tarsos/dsp/test/PitchTrackTest.java
+R100	src/tests/be/tarsos/dsp/test/RateTransposerTest.java	src/test/java/be/tarsos/dsp/test/RateTransposerTest.java
+R100	src/tests/be/tarsos/dsp/test/SilenceTest.java	src/test/java/be/tarsos/dsp/test/SilenceTest.java
+R100	src/tests/be/tarsos/dsp/test/TestFilters.java	src/test/java/be/tarsos/dsp/test/TestFilters.java
+R100	src/tests/be/tarsos/dsp/test/TestUtilities.java	src/test/java/be/tarsos/dsp/test/TestUtilities.java
+R100	src/tests/be/tarsos/dsp/test/package-info.java	src/test/java/be/tarsos/dsp/test/package-info.java
+R100	src/tests/be/tarsos/dsp/test/resources/4000_samples_of_440Hz_at_44.1kHz.wav	src/test/java/be/tarsos/dsp/test/resources/4000_samples_of_440Hz_at_44.1kHz.wav
+R100	src/tests/be/tarsos/dsp/test/resources/CCIR_04221.ogg	src/test/java/be/tarsos/dsp/test/resources/CCIR_04221.ogg
+R100	src/tests/be/tarsos/dsp/test/resources/NR45.wav	src/test/java/be/tarsos/dsp/test/resources/NR45.wav
+R100	src/tests/be/tarsos/dsp/test/resources/NR45_expected_beats.txt	src/test/java/be/tarsos/dsp/test/resources/NR45_expected_beats.txt
+R100	src/tests/be/tarsos/dsp/test/resources/NR45_expected_onsets.txt	src/test/java/be/tarsos/dsp/test/resources/NR45_expected_onsets.txt
+R100	src/tests/be/tarsos/dsp/test/resources/NR45_expected_onsets_complex.txt	src/test/java/be/tarsos/dsp/test/resources/NR45_expected_onsets_complex.txt
+R100	src/tests/be/tarsos/dsp/test/resources/flute.novib.ff.A4.wav	src/test/java/be/tarsos/dsp/test/resources/flute.novib.ff.A4.wav
+R100	src/tests/be/tarsos/dsp/test/resources/flute.novib.ff.B6.wav	src/test/java/be/tarsos/dsp/test/resources/flute.novib.ff.B6.wav
+R100	src/tests/be/tarsos/dsp/test/resources/piano.ff.A4.wav	src/test/java/be/tarsos/dsp/test/resources/piano.ff.A4.wav
+R100	src/tests/be/tarsos/dsp/test/resources/piano.ff.C3.wav	src/test/java/be/tarsos/dsp/test/resources/piano.ff.C3.wav

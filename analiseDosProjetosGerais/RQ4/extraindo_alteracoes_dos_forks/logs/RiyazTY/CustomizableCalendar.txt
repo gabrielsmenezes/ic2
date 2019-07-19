@@ -1,0 +1,115 @@
+RiyazTY/CustomizableCalendar;574aa53;Merge pull request #1 from rrinat/non-multiple-selection-fix
+RiyazTY/CustomizableCalendar;25bfff9;добавлен флаг для возможности выбора будущих дней, исправлен выбор в режиме multipleSelection==false, исправлен метод refreshDays.
+M	library/build.gradle
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/interactors/AUCalendar.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/model/Calendar.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/model/CalendarFields.java
+
+RiyazTY/CustomizableCalendar;c8f6937;Увеличить версию до versionCode 2
+M	library/build.gradle
+
+RiyazTY/CustomizableCalendar;414035b;Обновлить ссылки на неиспользуемые объекты CalendarItem
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/interactors/AUCalendar.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/CalendarViewInteractor.java
+
+RiyazTY/CustomizableCalendar;98e5b21;Исправить не соответствия заголовка и календарю в области данных
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/CalendarRecyclerView.java
+
+RiyazTY/CustomizableCalendar;b135100;Решение проблемы с выбором некорректной даты после быстрого переключения месяцев
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/CalendarViewInteractor.java
+
+RiyazTY/CustomizableCalendar;15870c0;Добавлена возможность указания предыдущего года. Обновление месяца в хедере сделано при любом событии скроллирования, а не только при завершении скролла
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/CalendarRecyclerView.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/model/Calendar.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/MainActivity.java
+
+RiyazTY/CustomizableCalendar;4f0a630;Поправлен краш из-за векторный картинки на старых устройствах
+M	library/src/main/res/layout/calendar_cell.xml
+D	sample/src/main/res/drawable/state_range_last.xml
+D	sample/src/main/res/drawable/state_selected.xml
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/layout/c_calendar.xml
+M	sample/src/main/res/layout/calendar_cell_layout.xml
+M	sample/src/main/res/layout/calendar_header.xml
+M	sample/src/main/res/layout/calendar_week_layout.xml
+
+RiyazTY/CustomizableCalendar;251f32f;Выделение текущего дня
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/CalendarViewInteractor.java
+
+RiyazTY/CustomizableCalendar;22804ad;Удалил из gradle joda-time
+M	library/build.gradle
+M	sample/src/test/java/com/molo17/customizablecalendar/sample/ExampleUnitTest.java
+
+RiyazTY/CustomizableCalendar;276b0a5;Убрано выделение даты по умолчаниию
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/MainActivity.java
+
+RiyazTY/CustomizableCalendar;c9d172b;Скролирование на текущий месяц
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/CalendarViewInteractor.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/MainActivity.java
+
+RiyazTY/CustomizableCalendar;b51bd56;Доработал выделение периода
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/interactors/AUCalendar.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/CalendarViewInteractor.java
+
+RiyazTY/CustomizableCalendar;cbe5775;Переключение месяца
+M	library/src/main/java/com/molo17/customizablecalendar/library/model/Calendar.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/CalendarViewInteractor.java
+
+RiyazTY/CustomizableCalendar;6277f1c;joda-time заменена на com.jakewharton.threetenabp
+M	library/build.gradle
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/CalendarViewAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/CalendarRecyclerView.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/MonthGridView.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/components/SubView.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/interactors/AUCalendar.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/interactors/ViewInteractor.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/model/Calendar.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/model/CalendarItem.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/presenter/implementations/CustomizableCalendarPresenterImpl.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/view/MonthView.java
+M	library/src/main/res/values/dimens.xml
+M	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/com/molo17/customizablecalendar/sample/App.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/CalendarViewInteractor.java
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/MainActivity.java
+A	sample/src/main/res/drawable/calendar_header_gradient_bg.xml
+A	sample/src/main/res/drawable/calendar_header_white_bg.xml
+A	sample/src/main/res/drawable/gradient_bg.xml
+A	sample/src/main/res/drawable/ic_chevron_left.xml
+A	sample/src/main/res/drawable/ic_chevron_right.xml
+A	sample/src/main/res/drawable/ic_close.xml
+A	sample/src/main/res/drawable/state_range_first.xml
+A	sample/src/main/res/drawable/state_range_last.xml
+A	sample/src/main/res/drawable/state_range_middle.xml
+A	sample/src/main/res/drawable/state_selected.xml
+M	sample/src/main/res/layout/activity_main.xml
+M	sample/src/main/res/layout/c_calendar.xml
+A	sample/src/main/res/layout/calendar_cell_layout.xml
+M	sample/src/main/res/layout/calendar_header.xml
+A	sample/src/main/res/layout/calendar_month_title_layout.xml
+A	sample/src/main/res/layout/calendar_week_layout.xml
+M	sample/src/main/res/values/colors.xml
+A	sample/src/main/res/values/dimens.xml
+M	sample/src/test/java/com/molo17/customizablecalendar/sample/ExampleUnitTest.java
+
+RiyazTY/CustomizableCalendar;f2bc71b;Удален butterknife
+M	gradle/wrapper/gradle-wrapper.properties
+M	sample/build.gradle
+M	sample/src/main/java/com/molo17/customizablecalendar/sample/MainActivity.java
+
+RiyazTY/CustomizableCalendar;a55b5bf;Удален Rx
+M	build.gradle
+M	library/build.gradle
+M	library/src/main/java/com/molo17/customizablecalendar/library/adapter/MonthAdapter.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/interactors/AUCalendar.java
+M	library/src/main/java/com/molo17/customizablecalendar/library/presenter/implementations/CustomizableCalendarPresenterImpl.java
+M	sample/build.gradle
+
+RiyazTY/CustomizableCalendar;39518c5;Remove allowBackup attribute on AndroidManifest
+M	library/src/main/AndroidManifest.xml

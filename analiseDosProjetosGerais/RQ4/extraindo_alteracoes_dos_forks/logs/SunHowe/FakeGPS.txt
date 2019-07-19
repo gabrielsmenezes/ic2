@@ -1,0 +1,71 @@
+SunHowe/FakeGPS;6fc7886;add tap node
+A	app/src/main/java/com/howegame/behavior/action/Tap.java
+
+SunHowe/FakeGPS;b8181f3;upgrade library version
+M	app/build.gradle
+
+SunHowe/FakeGPS;244b76a;add lombok library and gson library
+M	app/build.gradle
+
+SunHowe/FakeGPS;b120831;remove scriptlibrary module
+D	scriptlibrary/.gitignore
+D	scriptlibrary/build.gradle
+D	scriptlibrary/proguard-rules.pro
+D	scriptlibrary/src/androidTest/java/com/howegame/scriptlibrary/ExampleInstrumentedTest.java
+D	scriptlibrary/src/main/AndroidManifest.xml
+D	scriptlibrary/src/main/java/com/howegame/scriptlibrary/btnode/TestNode.java
+D	scriptlibrary/src/main/res/values/strings.xml
+D	scriptlibrary/src/test/java/com/howegame/scriptlibrary/ExampleUnitTest.java
+M	settings.gradle
+
+SunHowe/FakeGPS;b072009;add volume key code listener. stop script while volume_down key down, and pause/resume script while volume_up key down
+M	app/src/main/java/com/howegame/behavior/ui/ScriptControllerView.java
+
+SunHowe/FakeGPS;ac1cc47;add script controller float window.
+M	app/build.gradle
+M	app/src/main/AndroidManifest.xml
+M	app/src/main/java/com/github/fakegps/ui/MainActivity.java
+A	app/src/main/java/com/howegame/behavior/Blackboard.java
+A	app/src/main/java/com/howegame/behavior/ui/MainActivity.java
+A	app/src/main/java/com/howegame/behavior/ui/ScriptControllerView.java
+A	app/src/main/res/layout/app_main_activity.xml
+A	app/src/main/res/layout/script_controller_layout.xml
+M	app/src/main/res/values/dimens.xml
+M	app/src/main/res/values/strings.xml
+
+SunHowe/FakeGPS;1915d5f;add com.badlogicgames.gdx:gdx-ai:1.8.1 dependence(behavior tree)
+M	build.gradle
+A	scriptlibrary/.gitignore
+A	scriptlibrary/build.gradle
+A	scriptlibrary/proguard-rules.pro
+A	scriptlibrary/src/androidTest/java/com/howegame/scriptlibrary/ExampleInstrumentedTest.java
+A	scriptlibrary/src/main/AndroidManifest.xml
+A	scriptlibrary/src/main/java/com/howegame/scriptlibrary/btnode/TestNode.java
+A	scriptlibrary/src/main/res/values/strings.xml
+A	scriptlibrary/src/test/java/com/howegame/scriptlibrary/ExampleUnitTest.java
+M	settings.gradle
+A	test.tree
+
+SunHowe/FakeGPS;73d80ad;start main activity fix
+M	installSystem.bat
+
+SunHowe/FakeGPS;f69403d;prevent screenshot while joystick show
+M	app/src/main/java/com/github/fakegps/ui/JoyStickView.java
+
+SunHowe/FakeGPS;35a1ec9;after sdk 26, float window should be configured with TYPE_APPLICATION_OVERLAY
+M	app/src/main/java/com/github/fakegps/ui/JoyStickView.java
+
+SunHowe/FakeGPS;954f962;install as sys/app script.
+A	installSystem.bat
+A	installSystem.sh
+
+SunHowe/FakeGPS;bed7d23;use gradle 5.1.1 instead of 2.10
+M	gradle/wrapper/gradle-wrapper.properties
+
+SunHowe/FakeGPS;f07f3cb;upgrade to sdk 28
+M	app/build.gradle
+M	build.gradle
+M	loggerlibrary/build.gradle
+
+SunHowe/FakeGPS;d4d1d4c;飞行模式经度线性插值计算应该调用getLongitude   pr by @imtypist from https://github.com/xiangtailiang/FakeGPS/pull/12/commits/0b6acc6abf00c7ee3c63b0fffdcc66daaae777b4
+M	app/src/main/java/com/github/fakegps/JoyStickManager.java

@@ -1,0 +1,2228 @@
+hellolee/easymock;11292e8;Upgrade junit to 4.12
+M	pom.xml
+
+hellolee/easymock;97be562;Upgrade ASM version to get Java8 support (#EASYMOCK-140)
+M	easymock/pom.xml
+M	easymock/src/test/java/org/easymock/tests/CglibTest.java
+
+hellolee/easymock;ca71c49;Put back using the rule now that it's delivered
+M	website/getting-started.html
+
+hellolee/easymock;d2bc8f3;Upgrade gems versions to match github
+M	website/Gemfile.lock
+
+hellolee/easymock;2bbe257;Fix scripts
+M	deploy-easymock.sh
+M	deploy-website.sh
+
+hellolee/easymock;c3a5a00;Move the commit to also get the website version
+M	deploy-easymock.sh
+
+hellolee/easymock;a0598e8;Upgrade website to version 3.3
+M	website/_config.yml
+M	website/api/allclasses-frame.html
+M	website/api/allclasses-noframe.html
+M	website/api/constant-values.html
+M	website/api/deprecated-list.html
+M	website/api/help-doc.html
+M	website/api/index-all.html
+M	website/api/index.html
+M	website/api/org/easymock/Capture.html
+M	website/api/org/easymock/CaptureType.html
+M	website/api/org/easymock/ConstructorArgs.html
+M	website/api/org/easymock/EasyMock.html
+A	website/api/org/easymock/EasyMockRule.html
+M	website/api/org/easymock/EasyMockRunner.html
+M	website/api/org/easymock/EasyMockSupport.html
+M	website/api/org/easymock/IAnswer.html
+M	website/api/org/easymock/IArgumentMatcher.html
+M	website/api/org/easymock/IExpectationSetters.html
+M	website/api/org/easymock/IMockBuilder.html
+M	website/api/org/easymock/IMocksControl.html
+M	website/api/org/easymock/LogicalOperator.html
+M	website/api/org/easymock/Mock.html
+M	website/api/org/easymock/MockType.html
+M	website/api/org/easymock/TestSubject.html
+M	website/api/org/easymock/class-use/Capture.html
+M	website/api/org/easymock/class-use/CaptureType.html
+M	website/api/org/easymock/class-use/ConstructorArgs.html
+M	website/api/org/easymock/class-use/EasyMock.html
+A	website/api/org/easymock/class-use/EasyMockRule.html
+M	website/api/org/easymock/class-use/EasyMockRunner.html
+M	website/api/org/easymock/class-use/EasyMockSupport.html
+M	website/api/org/easymock/class-use/IAnswer.html
+M	website/api/org/easymock/class-use/IArgumentMatcher.html
+M	website/api/org/easymock/class-use/IExpectationSetters.html
+M	website/api/org/easymock/class-use/IMockBuilder.html
+M	website/api/org/easymock/class-use/IMocksControl.html
+M	website/api/org/easymock/class-use/LogicalOperator.html
+M	website/api/org/easymock/class-use/Mock.html
+M	website/api/org/easymock/class-use/MockType.html
+M	website/api/org/easymock/class-use/TestSubject.html
+M	website/api/org/easymock/internal/AndroidClassProxyFactory.html
+M	website/api/org/easymock/internal/AndroidSupport.html
+M	website/api/org/easymock/internal/ArgumentToString.html
+M	website/api/org/easymock/internal/AssertionErrorWrapper.html
+M	website/api/org/easymock/internal/BridgeMethodResolver.html
+M	website/api/org/easymock/internal/ClassInstantiatorFactory.html
+M	website/api/org/easymock/internal/ClassProxyFactory.MockMethodInterceptor.html
+M	website/api/org/easymock/internal/ClassProxyFactory.html
+M	website/api/org/easymock/internal/DefaultClassInstantiator.html
+M	website/api/org/easymock/internal/EasyMockProperties.html
+A	website/api/org/easymock/internal/EasyMockStatement.html
+M	website/api/org/easymock/internal/ErrorMessage.html
+M	website/api/org/easymock/internal/ExpectedInvocation.html
+M	website/api/org/easymock/internal/ExpectedInvocationAndResult.html
+M	website/api/org/easymock/internal/ExpectedInvocationAndResults.html
+M	website/api/org/easymock/internal/IClassInstantiator.html
+M	website/api/org/easymock/internal/IMocksBehavior.html
+M	website/api/org/easymock/internal/IMocksControlState.html
+M	website/api/org/easymock/internal/IProxyFactory.html
+A	website/api/org/easymock/internal/Injection.html
+A	website/api/org/easymock/internal/InjectionPlan.html
+A	website/api/org/easymock/internal/InjectionTarget.html
+A	website/api/org/easymock/internal/Injector.html
+M	website/api/org/easymock/internal/Invocation.html
+M	website/api/org/easymock/internal/JavaProxyFactory.html
+M	website/api/org/easymock/internal/LastControl.html
+M	website/api/org/easymock/internal/MethodSerializationWrapper.html
+M	website/api/org/easymock/internal/MockBuilder.html
+M	website/api/org/easymock/internal/MockInvocationHandler.html
+M	website/api/org/easymock/internal/MocksBehavior.html
+M	website/api/org/easymock/internal/MocksControl.MockType.html
+M	website/api/org/easymock/internal/MocksControl.html
+M	website/api/org/easymock/internal/ObjectMethodsFilter.html
+M	website/api/org/easymock/internal/ObjenesisClassInstantiator.html
+M	website/api/org/easymock/internal/Range.html
+M	website/api/org/easymock/internal/RecordState.html
+M	website/api/org/easymock/internal/ReflectionUtils.html
+M	website/api/org/easymock/internal/ReplayState.html
+M	website/api/org/easymock/internal/Result.html
+M	website/api/org/easymock/internal/Results.html
+M	website/api/org/easymock/internal/RuntimeExceptionWrapper.html
+M	website/api/org/easymock/internal/ThrowableWrapper.html
+M	website/api/org/easymock/internal/UnorderedBehavior.html
+M	website/api/org/easymock/internal/class-use/AndroidClassProxyFactory.html
+M	website/api/org/easymock/internal/class-use/AndroidSupport.html
+M	website/api/org/easymock/internal/class-use/ArgumentToString.html
+M	website/api/org/easymock/internal/class-use/AssertionErrorWrapper.html
+M	website/api/org/easymock/internal/class-use/BridgeMethodResolver.html
+M	website/api/org/easymock/internal/class-use/ClassInstantiatorFactory.html
+M	website/api/org/easymock/internal/class-use/ClassProxyFactory.MockMethodInterceptor.html
+M	website/api/org/easymock/internal/class-use/ClassProxyFactory.html
+M	website/api/org/easymock/internal/class-use/DefaultClassInstantiator.html
+M	website/api/org/easymock/internal/class-use/EasyMockProperties.html
+A	website/api/org/easymock/internal/class-use/EasyMockStatement.html
+M	website/api/org/easymock/internal/class-use/ErrorMessage.html
+M	website/api/org/easymock/internal/class-use/ExpectedInvocation.html
+M	website/api/org/easymock/internal/class-use/ExpectedInvocationAndResult.html
+M	website/api/org/easymock/internal/class-use/ExpectedInvocationAndResults.html
+M	website/api/org/easymock/internal/class-use/IClassInstantiator.html
+M	website/api/org/easymock/internal/class-use/IMocksBehavior.html
+M	website/api/org/easymock/internal/class-use/IMocksControlState.html
+M	website/api/org/easymock/internal/class-use/IProxyFactory.html
+A	website/api/org/easymock/internal/class-use/Injection.html
+A	website/api/org/easymock/internal/class-use/InjectionPlan.html
+A	website/api/org/easymock/internal/class-use/InjectionTarget.html
+A	website/api/org/easymock/internal/class-use/Injector.html
+M	website/api/org/easymock/internal/class-use/Invocation.html
+M	website/api/org/easymock/internal/class-use/JavaProxyFactory.html
+M	website/api/org/easymock/internal/class-use/LastControl.html
+M	website/api/org/easymock/internal/class-use/MethodSerializationWrapper.html
+M	website/api/org/easymock/internal/class-use/MockBuilder.html
+M	website/api/org/easymock/internal/class-use/MockInvocationHandler.html
+M	website/api/org/easymock/internal/class-use/MocksBehavior.html
+M	website/api/org/easymock/internal/class-use/MocksControl.MockType.html
+M	website/api/org/easymock/internal/class-use/MocksControl.html
+M	website/api/org/easymock/internal/class-use/ObjectMethodsFilter.html
+M	website/api/org/easymock/internal/class-use/ObjenesisClassInstantiator.html
+M	website/api/org/easymock/internal/class-use/Range.html
+M	website/api/org/easymock/internal/class-use/RecordState.html
+M	website/api/org/easymock/internal/class-use/ReflectionUtils.html
+M	website/api/org/easymock/internal/class-use/ReplayState.html
+M	website/api/org/easymock/internal/class-use/Result.html
+M	website/api/org/easymock/internal/class-use/Results.html
+M	website/api/org/easymock/internal/class-use/RuntimeExceptionWrapper.html
+M	website/api/org/easymock/internal/class-use/ThrowableWrapper.html
+M	website/api/org/easymock/internal/class-use/UnorderedBehavior.html
+M	website/api/org/easymock/internal/matchers/And.html
+M	website/api/org/easymock/internal/matchers/Any.html
+M	website/api/org/easymock/internal/matchers/ArrayEquals.html
+M	website/api/org/easymock/internal/matchers/Captures.html
+M	website/api/org/easymock/internal/matchers/Compare.html
+M	website/api/org/easymock/internal/matchers/CompareEqual.html
+M	website/api/org/easymock/internal/matchers/CompareTo.html
+M	website/api/org/easymock/internal/matchers/Contains.html
+M	website/api/org/easymock/internal/matchers/EndsWith.html
+M	website/api/org/easymock/internal/matchers/Equals.html
+M	website/api/org/easymock/internal/matchers/EqualsWithDelta.html
+M	website/api/org/easymock/internal/matchers/Find.html
+M	website/api/org/easymock/internal/matchers/GreaterOrEqual.html
+M	website/api/org/easymock/internal/matchers/GreaterThan.html
+M	website/api/org/easymock/internal/matchers/InstanceOf.html
+M	website/api/org/easymock/internal/matchers/LessOrEqual.html
+M	website/api/org/easymock/internal/matchers/LessThan.html
+M	website/api/org/easymock/internal/matchers/Matches.html
+M	website/api/org/easymock/internal/matchers/Not.html
+M	website/api/org/easymock/internal/matchers/NotNull.html
+M	website/api/org/easymock/internal/matchers/Null.html
+M	website/api/org/easymock/internal/matchers/Or.html
+M	website/api/org/easymock/internal/matchers/Same.html
+M	website/api/org/easymock/internal/matchers/StartsWith.html
+M	website/api/org/easymock/internal/matchers/class-use/And.html
+M	website/api/org/easymock/internal/matchers/class-use/Any.html
+M	website/api/org/easymock/internal/matchers/class-use/ArrayEquals.html
+M	website/api/org/easymock/internal/matchers/class-use/Captures.html
+M	website/api/org/easymock/internal/matchers/class-use/Compare.html
+M	website/api/org/easymock/internal/matchers/class-use/CompareEqual.html
+M	website/api/org/easymock/internal/matchers/class-use/CompareTo.html
+M	website/api/org/easymock/internal/matchers/class-use/Contains.html
+M	website/api/org/easymock/internal/matchers/class-use/EndsWith.html
+M	website/api/org/easymock/internal/matchers/class-use/Equals.html
+M	website/api/org/easymock/internal/matchers/class-use/EqualsWithDelta.html
+M	website/api/org/easymock/internal/matchers/class-use/Find.html
+M	website/api/org/easymock/internal/matchers/class-use/GreaterOrEqual.html
+M	website/api/org/easymock/internal/matchers/class-use/GreaterThan.html
+M	website/api/org/easymock/internal/matchers/class-use/InstanceOf.html
+M	website/api/org/easymock/internal/matchers/class-use/LessOrEqual.html
+M	website/api/org/easymock/internal/matchers/class-use/LessThan.html
+M	website/api/org/easymock/internal/matchers/class-use/Matches.html
+M	website/api/org/easymock/internal/matchers/class-use/Not.html
+M	website/api/org/easymock/internal/matchers/class-use/NotNull.html
+M	website/api/org/easymock/internal/matchers/class-use/Null.html
+M	website/api/org/easymock/internal/matchers/class-use/Or.html
+M	website/api/org/easymock/internal/matchers/class-use/Same.html
+M	website/api/org/easymock/internal/matchers/class-use/StartsWith.html
+M	website/api/org/easymock/internal/matchers/package-frame.html
+M	website/api/org/easymock/internal/matchers/package-summary.html
+M	website/api/org/easymock/internal/matchers/package-tree.html
+M	website/api/org/easymock/internal/matchers/package-use.html
+M	website/api/org/easymock/internal/package-frame.html
+M	website/api/org/easymock/internal/package-summary.html
+M	website/api/org/easymock/internal/package-tree.html
+M	website/api/org/easymock/internal/package-use.html
+M	website/api/org/easymock/package-frame.html
+M	website/api/org/easymock/package-summary.html
+M	website/api/org/easymock/package-tree.html
+M	website/api/org/easymock/package-use.html
+M	website/api/overview-frame.html
+M	website/api/overview-summary.html
+M	website/api/overview-tree.html
+M	website/api/package-list
+D	website/api/resources/background.gif
+D	website/api/resources/tab.gif
+D	website/api/resources/titlebar.gif
+D	website/api/resources/titlebar_end.gif
+A	website/api/script.js
+M	website/api/serialized-form.html
+M	website/api/stylesheet.css
+
+hellolee/easymock;8188cd8;Clean at the beginning to prevent deleting files that are created before the mvn deploy
+M	deploy-easymock.sh
+
+hellolee/easymock;8383421;Move to version 3.3
+M	easymock-android-tck/pom.xml
+M	easymock-bench/pom.xml
+M	easymock-integration/pom.xml
+M	easymock-test-deploy/pom.xml
+M	easymock/pom.xml
+M	pom.xml
+
+hellolee/easymock;fe7fe5c;Upgrade to version 3.0.0 and put findbugs back in the build
+M	pom.xml
+
+hellolee/easymock;e9d8132;Testing the remote deployment doesn't seem to work really well... purge-local-repository is purging the jar and then looking for it... So I'll test only the local
+M	deploy-easymock.sh
+M	easymock-test-deploy/pom.xml
+D	easymock-test-deploy/settings.xml
+
+hellolee/easymock;15ceb60;Ignore versionBackup files
+M	.gitignore
+
+hellolee/easymock;367393e;Disable findbugs. Not working with Java 8
+M	pom.xml
+
+hellolee/easymock;7060dcc;Remove the git diff. Not neede
+M	deploy-easymock.sh
+
+hellolee/easymock;6085fd4;dirname returns dot when in the same directory
+M	deploy-easymock.sh
+
+hellolee/easymock;c31533e;Bad if
+M	deploy-easymock.sh
+
+hellolee/easymock;23a0adb;Remove the sendmail to won't work correctly anyway
+M	deploy-easymock.sh
+
+hellolee/easymock;b89f27e;Curly braces, not parenthesis
+M	deploy-easymock.sh
+
+hellolee/easymock;604f4a8;Tests required variables are set
+M	deploy-easymock.sh
+
+hellolee/easymock;e19750b;Prepare to test deployment
+M	easymock-test-deploy/pom.xml
+M	easymock-test-deploy/settings.xml
+
+hellolee/easymock;9e8f04d;Automate version update
+M	README.md
+M	deploy-easymock.sh
+
+hellolee/easymock;c6d47b0;Upgrade assembly plugin to 2.5.1
+A	ReleaseNotes.txt
+A	easymock-test-deploy/settings.xml
+M	pom.xml
+
+hellolee/easymock;24ec6ba;Pretty complete deployment procedure. Only the nexus stating is missing
+A	deploy-easymock.sh
+
+hellolee/easymock;32435a5;Mail to send to the yahoo group
+A	mail.txt
+
+hellolee/easymock;f0fdb6c;Make sure the script is called from the root directory
+M	deploy-website.sh
+
+hellolee/easymock;14a2d9b;Upgrade assembly plugin to 2.5
+M	pom.xml
+
+hellolee/easymock;0d5a8f8;Release notes will be automatically generated from Jira
+D	ReleaseNotes.txt
+
+hellolee/easymock;ea2dec9;How to run sonar
+M	README.md
+
+hellolee/easymock;be8d867;Replace the Stack by an unsynchronized ArrayList. Not using a Deque since we support Java 5
+M	easymock/src/main/java/org/easymock/internal/LastControl.java
+
+hellolee/easymock;f9cced3;Fix some sonar issues
+M	easymock/src/main/java/org/easymock/Capture.java
+M	easymock/src/main/java/org/easymock/internal/MocksControl.java
+
+hellolee/easymock;b122cad;Add sonar
+M	pom.xml
+
+hellolee/easymock;9c1ccb8;Comments on the parameters needed
+M	start-next-version.sh
+
+hellolee/easymock;0dfae88;Move release notes to root directory
+R100	easymock/ReleaseNotes.txt	ReleaseNotes.txt
+
+hellolee/easymock;6f45d6d;Typo
+M	website/index.html
+
+hellolee/easymock;e89a339;Script to start the next EasyMock version
+A	start-next-version.sh
+
+hellolee/easymock;1499f8c;Add andVoid to chain void calls (#EASYMOCK-135)
+M	easymock/src/main/java/org/easymock/IExpectationSetters.java
+M	easymock/src/main/java/org/easymock/internal/IMocksControlState.java
+M	easymock/src/main/java/org/easymock/internal/MocksControl.java
+M	easymock/src/main/java/org/easymock/internal/RecordState.java
+M	easymock/src/main/java/org/easymock/internal/ReplayState.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateMethodCallMissingTest.java
+M	easymock/src/test/java/org/easymock/tests/ReplayStateInvalidCallsTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageTest.java
+
+hellolee/easymock;7c447ce;Update maven-javadoc-plugin to 2.10.1
+M	pom.xml
+
+hellolee/easymock;4291861;Use a blank target for contributors
+M	pom.xml
+
+hellolee/easymock;594cf1e;Simplify the contributors management, update my timezone and my blog url
+M	easymock-android-tck/pom.xml
+M	easymock-bench/pom.xml
+M	easymock-integration/pom.xml
+M	easymock-test-deploy/pom.xml
+M	easymock/pom.xml
+M	pom.xml
+
+hellolee/easymock;3a4125b;Remove the n at the end of AssertionError
+M	easymock/src/main/java/org/easymock/Capture.java
+
+hellolee/easymock;cfee7d5;Upgrade dependency plugin
+M	easymock-test-deploy/pom.xml
+
+hellolee/easymock;29b057d;Upgrade javadoc plugin
+M	pom.xml
+
+hellolee/easymock;d4276f0;Update build-helper-maven-plugin to 1.9.1
+M	pom.xml
+
+hellolee/easymock;c0c55f4;Factory methods to create a capture (#EASYMOCK-139)
+M	easymock/src/main/java/org/easymock/Capture.java
+M	easymock/src/main/java/org/easymock/EasyMock.java
+M	easymock/src/test/java/org/easymock/tests2/CaptureTest.java
+
+hellolee/easymock;9e1a880;Update exec and bundle plugins
+M	easymock-android-tck/pom.xml
+M	easymock-integration/pom.xml
+M	pom.xml
+
+hellolee/easymock;faefe7b;Remove the documentation from the bundle. The documentation is now online at easymock.org
+M	easymock/src/main/assembly/assembly.xml
+D	easymock/src/site/Documentation.html
+D	easymock/src/site/Documentation_fr.html
+D	easymock/src/site/easymock.css
+
+hellolee/easymock;0383c85;Update IDE documentation
+M	README.md
+
+hellolee/easymock;d508d35;Document how to update the website
+M	README.md
+
+hellolee/easymock;c3cb502;Update the example to use a rule
+M	easymock/src/samples/java/org/easymock/samples/ExampleTest.java
+
+hellolee/easymock;cca3b24;Use the runner since the rule isn't delivered yet (#EASYMOCK-137)
+M	easymock/src/samples/java/org/easymock/samples/ExampleTest.java
+M	website/getting-started.html
+
+hellolee/easymock;771e612;Add echos
+M	deploy-website.sh
+
+hellolee/easymock;e1c8127;Make the file executable
+hellolee/easymock;2f59cf7;new site deployment script
+A	deploy-website.sh
+D	prepare-website.sh
+D	refresh-website.sh
+
+hellolee/easymock;8c19cf4;new site deployment script
+A	deploy-website.sh
+D	prepare-website.sh
+D	refresh-website.sh
+
+hellolee/easymock;da8557a;Upgrade assembly plugin
+M	pom.xml
+
+hellolee/easymock;ba829b1;Add a 404 page to help moving from the old website
+A	website/404.html
+
+hellolee/easymock;7707eac;Upgrade to latest github-pages
+M	website/Gemfile.lock
+M	website/_config.yml
+
+hellolee/easymock;7f968f2;Set the locale everywhere
+M	website/getting-started.html
+M	website/index.html
+M	website/user-guide.html
+
+hellolee/easymock;bd7e616;Fix bad titles
+M	website/index.html
+M	website/user-guide.html
+
+hellolee/easymock;44c6ea1;Add contribution rules
+A	CONTRIBUTING.md
+
+hellolee/easymock;b77486b;Merge branch 'facebook-master'
+hellolee/easymock;6401b80;Merge branch 'master' of github.com:facebook/easymock into facebook-master
+hellolee/easymock;9251b25;add some missing _blank
+M	website/contributors.html
+
+hellolee/easymock;f9a1ed9;Fix url for my website
+M	website/contributors.html
+
+hellolee/easymock;47ae9c1;Upgrade maven-jar-plugin to 2.5
+M	pom.xml
+
+hellolee/easymock;4681a74;Unindent code sections
+M	README.md
+
+hellolee/easymock;1f04cba;Some more markdown
+M	README.md
+
+hellolee/easymock;96d3c07;Convert the concent to markdown
+M	README.md
+
+hellolee/easymock;fdd1dac;Replace clover by jacoco in the documentation
+M	README.md
+
+hellolee/easymock;1869433;maven-compiler-plugin version already defined in dependency management
+M	pom.xml
+
+hellolee/easymock;8eb16c7;Ignore android-maven-plugin for now to prevent warnings in Eclipse
+M	easymock-android-tck/pom.xml
+
+hellolee/easymock;12866fc;IntelliJ is happy but the build doesn't work anymore
+M	pom.xml
+
+hellolee/easymock;70e2f89;Replace clover by jacoco
+M	easymock-android-tck/pom.xml
+M	easymock-integration/pom.xml
+M	easymock-test-deploy/pom.xml
+M	easymock/pom.xml
+M	pom.xml
+
+hellolee/easymock;338adc7;Fix licence headers
+M	easymock-bench/src/main/java/org/easymock/benchmark/EasyMockBenchmark.java
+M	easymock-test-deploy/src/test/java/org/easymock/test/EasyMockTest.java
+
+hellolee/easymock;ee75c70;License must be updated on all modules
+M	README.md
+
+hellolee/easymock;a837800;Upgrade build-helper-maven-plugin to 1.9
+M	pom.xml
+
+hellolee/easymock;7259dd9;Upgrade to JMH 0.9
+M	easymock-bench/pom.xml
+R056	easymock-bench/src/main/java/org/easymock/benchmark/Benchmark.java	easymock-bench/src/main/java/org/easymock/benchmark/EasyMockBenchmark.java
+
+hellolee/easymock;66ba372;Use the new JMH standard for the jar name
+M	easymock-bench/launch.bat
+M	easymock-bench/pom.xml
+
+hellolee/easymock;21981dd;Use a filter running everything
+M	easymock-bench/launch.bat
+
+hellolee/easymock;42d03f1;The package should be org.easymock.benchmark
+M	easymock-bench/src/main/java/org/easymock/benchmark/Benchmark.java
+
+hellolee/easymock;e78ed26;Upgrade exec-maven-plugin to 1.3.1
+M	easymock-android-tck/pom.xml
+
+hellolee/easymock;82bd445;Enable pygments. There's no syntax highlighting otherwise
+M	website/_config.yml
+
+hellolee/easymock;f81bba6;Merge branch 'master' of github.com:easymock/easymock
+hellolee/easymock;582db68;English comments
+M	website/css/main.css
+
+hellolee/easymock;d0ec8db;Do not float the navbar
+M	website/_includes/header.html
+
+hellolee/easymock;c836a3c;Menu reorganization
+M	website/user-guide.html
+
+hellolee/easymock;085af7b;& should be escaped
+M	website/_layouts/default.html
+
+hellolee/easymock;8d2f220;Unused
+D	website/_posts/2014-04-29-sample.markdown
+
+hellolee/easymock;f3c710d;Finish the installation
+M	website/user-guide.html
+
+hellolee/easymock;bf9ce7d;Remove typos
+M	README.md
+
+hellolee/easymock;2fd0fc4;Clean installation
+M	website/user-guide.html
+
+hellolee/easymock;8ead9b2;Escape all < >
+M	website/user-guide.html
+
+hellolee/easymock;f21c3ca;Remove dots are the end of bullet points
+M	website/news.html
+M	website/resources.html
+
+hellolee/easymock;3fa2d17;Remove the project part that is already somewhere else on the site
+M	website/user-guide.html
+
+hellolee/easymock;86e27f4;Remove the project part that is already somewhere else on the site
+M	website/user-guide.html
+
+hellolee/easymock;e16f959;Full content of the getting started
+M	website/getting-started.html
+
+hellolee/easymock;3cdf48c;Use a String instead of a byte array in parameter. Looks nicer
+M	easymock/src/samples/java/org/easymock/samples/AnnotatedMockWithRuleTest.java
+M	easymock/src/samples/java/org/easymock/samples/AnnotatedMockWithRunnerTest.java
+M	easymock/src/samples/java/org/easymock/samples/ClassTested.java
+M	easymock/src/samples/java/org/easymock/samples/ExampleTest.java
+M	easymock/src/samples/java/org/easymock/samples/SupportTest.java
+
+hellolee/easymock;c2675d3;Set EasyMock as title
+M	website/_layouts/default.html
+
+hellolee/easymock;377d148;Other resources
+M	website/_includes/menu.html
+A	website/resources.html
+
+hellolee/easymock;201d8c8;Add mailing list
+M	website/_includes/menu.html
+
+hellolee/easymock;bf80665;Remove alternatives
+M	website/user-guide.html
+
+hellolee/easymock;8069ff8;Add news
+M	website/_includes/menu.html
+A	website/news.html
+
+hellolee/easymock;b3a4d04;Add license
+A	website/license.html
+
+hellolee/easymock;0812f89;Add a fifth quote
+M	website/_includes/footer.html
+
+hellolee/easymock;9d177e1;Add google tracking
+A	website/googlefda9c590a38fa17b.html
+
+hellolee/easymock;d105d82;Select summary tab for issue tracker
+M	website/_includes/menu.html
+
+hellolee/easymock;2dbf0b4;Add missing target blank
+M	website/_includes/menu.html
+
+hellolee/easymock;75588e4;Close the highlight tag correctly
+M	website/getting-started.html
+
+hellolee/easymock;e7d9a23;Use the site variable for version
+M	website/user-guide.html
+
+hellolee/easymock;a11ab39;Add Jérémy's blog
+M	website/contributors.html
+
+hellolee/easymock;38253ad;Add Javadoc
+M	website/_includes/menu.html
+A	website/api/allclasses-frame.html
+A	website/api/allclasses-noframe.html
+A	website/api/constant-values.html
+A	website/api/deprecated-list.html
+A	website/api/help-doc.html
+A	website/api/index-all.html
+A	website/api/index.html
+A	website/api/org/easymock/Capture.html
+A	website/api/org/easymock/CaptureType.html
+A	website/api/org/easymock/ConstructorArgs.html
+A	website/api/org/easymock/EasyMock.html
+A	website/api/org/easymock/EasyMockRunner.html
+A	website/api/org/easymock/EasyMockSupport.html
+A	website/api/org/easymock/IAnswer.html
+A	website/api/org/easymock/IArgumentMatcher.html
+A	website/api/org/easymock/IExpectationSetters.html
+A	website/api/org/easymock/IMockBuilder.html
+A	website/api/org/easymock/IMocksControl.html
+A	website/api/org/easymock/LogicalOperator.html
+A	website/api/org/easymock/Mock.html
+A	website/api/org/easymock/MockType.html
+A	website/api/org/easymock/TestSubject.html
+A	website/api/org/easymock/class-use/Capture.html
+A	website/api/org/easymock/class-use/CaptureType.html
+A	website/api/org/easymock/class-use/ConstructorArgs.html
+A	website/api/org/easymock/class-use/EasyMock.html
+A	website/api/org/easymock/class-use/EasyMockRunner.html
+A	website/api/org/easymock/class-use/EasyMockSupport.html
+A	website/api/org/easymock/class-use/IAnswer.html
+A	website/api/org/easymock/class-use/IArgumentMatcher.html
+A	website/api/org/easymock/class-use/IExpectationSetters.html
+A	website/api/org/easymock/class-use/IMockBuilder.html
+A	website/api/org/easymock/class-use/IMocksControl.html
+A	website/api/org/easymock/class-use/LogicalOperator.html
+A	website/api/org/easymock/class-use/Mock.html
+A	website/api/org/easymock/class-use/MockType.html
+A	website/api/org/easymock/class-use/TestSubject.html
+A	website/api/org/easymock/internal/AndroidClassProxyFactory.html
+A	website/api/org/easymock/internal/AndroidSupport.html
+A	website/api/org/easymock/internal/ArgumentToString.html
+A	website/api/org/easymock/internal/AssertionErrorWrapper.html
+A	website/api/org/easymock/internal/BridgeMethodResolver.html
+A	website/api/org/easymock/internal/ClassInstantiatorFactory.html
+A	website/api/org/easymock/internal/ClassProxyFactory.MockMethodInterceptor.html
+A	website/api/org/easymock/internal/ClassProxyFactory.html
+A	website/api/org/easymock/internal/DefaultClassInstantiator.html
+A	website/api/org/easymock/internal/EasyMockProperties.html
+A	website/api/org/easymock/internal/ErrorMessage.html
+A	website/api/org/easymock/internal/ExpectedInvocation.html
+A	website/api/org/easymock/internal/ExpectedInvocationAndResult.html
+A	website/api/org/easymock/internal/ExpectedInvocationAndResults.html
+A	website/api/org/easymock/internal/IClassInstantiator.html
+A	website/api/org/easymock/internal/IMocksBehavior.html
+A	website/api/org/easymock/internal/IMocksControlState.html
+A	website/api/org/easymock/internal/IProxyFactory.html
+A	website/api/org/easymock/internal/Invocation.html
+A	website/api/org/easymock/internal/JavaProxyFactory.html
+A	website/api/org/easymock/internal/LastControl.html
+A	website/api/org/easymock/internal/MethodSerializationWrapper.html
+A	website/api/org/easymock/internal/MockBuilder.html
+A	website/api/org/easymock/internal/MockInvocationHandler.html
+A	website/api/org/easymock/internal/MocksBehavior.html
+A	website/api/org/easymock/internal/MocksControl.MockType.html
+A	website/api/org/easymock/internal/MocksControl.html
+A	website/api/org/easymock/internal/ObjectMethodsFilter.html
+A	website/api/org/easymock/internal/ObjenesisClassInstantiator.html
+A	website/api/org/easymock/internal/Range.html
+A	website/api/org/easymock/internal/RecordState.html
+A	website/api/org/easymock/internal/ReflectionUtils.html
+A	website/api/org/easymock/internal/ReplayState.html
+A	website/api/org/easymock/internal/Result.html
+A	website/api/org/easymock/internal/Results.html
+A	website/api/org/easymock/internal/RuntimeExceptionWrapper.html
+A	website/api/org/easymock/internal/ThrowableWrapper.html
+A	website/api/org/easymock/internal/UnorderedBehavior.html
+A	website/api/org/easymock/internal/class-use/AndroidClassProxyFactory.html
+A	website/api/org/easymock/internal/class-use/AndroidSupport.html
+A	website/api/org/easymock/internal/class-use/ArgumentToString.html
+A	website/api/org/easymock/internal/class-use/AssertionErrorWrapper.html
+A	website/api/org/easymock/internal/class-use/BridgeMethodResolver.html
+A	website/api/org/easymock/internal/class-use/ClassInstantiatorFactory.html
+A	website/api/org/easymock/internal/class-use/ClassProxyFactory.MockMethodInterceptor.html
+A	website/api/org/easymock/internal/class-use/ClassProxyFactory.html
+A	website/api/org/easymock/internal/class-use/DefaultClassInstantiator.html
+A	website/api/org/easymock/internal/class-use/EasyMockProperties.html
+A	website/api/org/easymock/internal/class-use/ErrorMessage.html
+A	website/api/org/easymock/internal/class-use/ExpectedInvocation.html
+A	website/api/org/easymock/internal/class-use/ExpectedInvocationAndResult.html
+A	website/api/org/easymock/internal/class-use/ExpectedInvocationAndResults.html
+A	website/api/org/easymock/internal/class-use/IClassInstantiator.html
+A	website/api/org/easymock/internal/class-use/IMocksBehavior.html
+A	website/api/org/easymock/internal/class-use/IMocksControlState.html
+A	website/api/org/easymock/internal/class-use/IProxyFactory.html
+A	website/api/org/easymock/internal/class-use/Invocation.html
+A	website/api/org/easymock/internal/class-use/JavaProxyFactory.html
+A	website/api/org/easymock/internal/class-use/LastControl.html
+A	website/api/org/easymock/internal/class-use/MethodSerializationWrapper.html
+A	website/api/org/easymock/internal/class-use/MockBuilder.html
+A	website/api/org/easymock/internal/class-use/MockInvocationHandler.html
+A	website/api/org/easymock/internal/class-use/MocksBehavior.html
+A	website/api/org/easymock/internal/class-use/MocksControl.MockType.html
+A	website/api/org/easymock/internal/class-use/MocksControl.html
+A	website/api/org/easymock/internal/class-use/ObjectMethodsFilter.html
+A	website/api/org/easymock/internal/class-use/ObjenesisClassInstantiator.html
+A	website/api/org/easymock/internal/class-use/Range.html
+A	website/api/org/easymock/internal/class-use/RecordState.html
+A	website/api/org/easymock/internal/class-use/ReflectionUtils.html
+A	website/api/org/easymock/internal/class-use/ReplayState.html
+A	website/api/org/easymock/internal/class-use/Result.html
+A	website/api/org/easymock/internal/class-use/Results.html
+A	website/api/org/easymock/internal/class-use/RuntimeExceptionWrapper.html
+A	website/api/org/easymock/internal/class-use/ThrowableWrapper.html
+A	website/api/org/easymock/internal/class-use/UnorderedBehavior.html
+A	website/api/org/easymock/internal/matchers/And.html
+A	website/api/org/easymock/internal/matchers/Any.html
+A	website/api/org/easymock/internal/matchers/ArrayEquals.html
+A	website/api/org/easymock/internal/matchers/Captures.html
+A	website/api/org/easymock/internal/matchers/Compare.html
+A	website/api/org/easymock/internal/matchers/CompareEqual.html
+A	website/api/org/easymock/internal/matchers/CompareTo.html
+A	website/api/org/easymock/internal/matchers/Contains.html
+A	website/api/org/easymock/internal/matchers/EndsWith.html
+A	website/api/org/easymock/internal/matchers/Equals.html
+A	website/api/org/easymock/internal/matchers/EqualsWithDelta.html
+A	website/api/org/easymock/internal/matchers/Find.html
+A	website/api/org/easymock/internal/matchers/GreaterOrEqual.html
+A	website/api/org/easymock/internal/matchers/GreaterThan.html
+A	website/api/org/easymock/internal/matchers/InstanceOf.html
+A	website/api/org/easymock/internal/matchers/LessOrEqual.html
+A	website/api/org/easymock/internal/matchers/LessThan.html
+A	website/api/org/easymock/internal/matchers/Matches.html
+A	website/api/org/easymock/internal/matchers/Not.html
+A	website/api/org/easymock/internal/matchers/NotNull.html
+A	website/api/org/easymock/internal/matchers/Null.html
+A	website/api/org/easymock/internal/matchers/Or.html
+A	website/api/org/easymock/internal/matchers/Same.html
+A	website/api/org/easymock/internal/matchers/StartsWith.html
+A	website/api/org/easymock/internal/matchers/class-use/And.html
+A	website/api/org/easymock/internal/matchers/class-use/Any.html
+A	website/api/org/easymock/internal/matchers/class-use/ArrayEquals.html
+A	website/api/org/easymock/internal/matchers/class-use/Captures.html
+A	website/api/org/easymock/internal/matchers/class-use/Compare.html
+A	website/api/org/easymock/internal/matchers/class-use/CompareEqual.html
+A	website/api/org/easymock/internal/matchers/class-use/CompareTo.html
+A	website/api/org/easymock/internal/matchers/class-use/Contains.html
+A	website/api/org/easymock/internal/matchers/class-use/EndsWith.html
+A	website/api/org/easymock/internal/matchers/class-use/Equals.html
+A	website/api/org/easymock/internal/matchers/class-use/EqualsWithDelta.html
+A	website/api/org/easymock/internal/matchers/class-use/Find.html
+A	website/api/org/easymock/internal/matchers/class-use/GreaterOrEqual.html
+A	website/api/org/easymock/internal/matchers/class-use/GreaterThan.html
+A	website/api/org/easymock/internal/matchers/class-use/InstanceOf.html
+A	website/api/org/easymock/internal/matchers/class-use/LessOrEqual.html
+A	website/api/org/easymock/internal/matchers/class-use/LessThan.html
+A	website/api/org/easymock/internal/matchers/class-use/Matches.html
+A	website/api/org/easymock/internal/matchers/class-use/Not.html
+A	website/api/org/easymock/internal/matchers/class-use/NotNull.html
+A	website/api/org/easymock/internal/matchers/class-use/Null.html
+A	website/api/org/easymock/internal/matchers/class-use/Or.html
+A	website/api/org/easymock/internal/matchers/class-use/Same.html
+A	website/api/org/easymock/internal/matchers/class-use/StartsWith.html
+A	website/api/org/easymock/internal/matchers/package-frame.html
+A	website/api/org/easymock/internal/matchers/package-summary.html
+A	website/api/org/easymock/internal/matchers/package-tree.html
+A	website/api/org/easymock/internal/matchers/package-use.html
+A	website/api/org/easymock/internal/package-frame.html
+A	website/api/org/easymock/internal/package-summary.html
+A	website/api/org/easymock/internal/package-tree.html
+A	website/api/org/easymock/internal/package-use.html
+A	website/api/org/easymock/package-frame.html
+A	website/api/org/easymock/package-summary.html
+A	website/api/org/easymock/package-tree.html
+A	website/api/org/easymock/package-use.html
+A	website/api/overview-frame.html
+A	website/api/overview-summary.html
+A	website/api/overview-tree.html
+A	website/api/package-list
+A	website/api/resources/background.gif
+A	website/api/resources/tab.gif
+A	website/api/resources/titlebar.gif
+A	website/api/resources/titlebar_end.gif
+A	website/api/serialized-form.html
+A	website/api/stylesheet.css
+D	website/javadoc.html
+
+hellolee/easymock;4504348;Redirect to release notes at Codehaus
+M	website/_includes/menu.html
+D	website/release-notes.html
+
+hellolee/easymock;72de8ab;Slow down the carrousel
+M	website/_includes/footer.html
+
+hellolee/easymock;9a26aa9;Add javadoc menu and rename developers guide to user's guide
+M	website/_includes/menu.html
+A	website/javadoc.html
+R100	website/developer-guide.html	website/user-guide.html
+
+hellolee/easymock;0f347fb;Simplify the getting started for now
+M	website/getting-started.html
+
+hellolee/easymock;ef0ec27;Add version in configuration
+M	website/_config.yml
+M	website/index.html
+
+hellolee/easymock;ab9a33a;Set the real download URL
+M	website/index.html
+
+hellolee/easymock;a651146;Give some air to the text
+M	website/index.html
+
+hellolee/easymock;fa379e4;New slogan
+M	website/index.html
+
+hellolee/easymock;0e40537;Remove language for now
+M	website/_includes/header.html
+
+hellolee/easymock;64138b8;Add maven-jar-plugin in dependency management to help versions-maven-plugin
+M	pom.xml
+
+hellolee/easymock;8ee86e2;Upgrade JMH to 0.8
+M	easymock-bench/pom.xml
+
+hellolee/easymock;97ee65a;My new domain name
+M	easymock/pom.xml
+
+hellolee/easymock;dfea674;Upgrade Powermock to 1.5.5
+M	easymock-integration/pom.xml
+
+hellolee/easymock;c86e495;Add Travis build status
+M	README.md
+
+hellolee/easymock;eddb0e3;Add robot.txt
+A	website/robots.txt
+
+hellolee/easymock;431e264;Replace thanks by acknowledgements
+M	website/contributors.html
+
+hellolee/easymock;225062e;Add contributor page
+M	website/_includes/menu.html
+A	website/contributors.html
+
+hellolee/easymock;d13842d;Change the copyright to EasyMock contributors
+M	website/_includes/footer.html
+
+hellolee/easymock;08b13a1;Themes for each getting started
+M	website/getting-started.html
+
+hellolee/easymock;484babd;Make sure all mocks are not null in @Before
+M	easymock/src/test/java/org/easymock/tests2/EasyMockAnnotationsTest.java
+
+hellolee/easymock;1af1c4c;Fix a series of typos
+M	easymock/src/test/java/org/easymock/tests2/EasyMockAnnotationsTest.java
+
+hellolee/easymock;74452de;Merge branch 'master' of github.com:easymock/easymock
+hellolee/easymock;4f7c88e;Disable pygments
+M	website/_config.yml
+
+hellolee/easymock;2253b52;Improve sidebar on documentation page
+M	website/css/main.css
+M	website/developer-guide.html
+
+hellolee/easymock;ce27708;Improve sidebar on documentation page
+M	website/_layouts/default.html
+M	website/css/main.css
+M	website/developer-guide.html
+
+hellolee/easymock;c1e8d30;Add style on nav sidebar of documentation page
+M	website/_layouts/default.html
+M	website/css/layout.css
+M	website/css/main.css
+M	website/developer-guide.html
+M	website/js/main.js
+
+hellolee/easymock;905cc8d;Reorder sections documentation page ; justify presentation texts on index page
+M	website/_includes/header.html
+A	website/_includes/menu.html
+M	website/css/main.css
+M	website/developer-guide.html
+M	website/index.html
+
+hellolee/easymock;d4efa9e;Add a gemfile to follow our dependencies
+A	website/Gemfile
+A	website/Gemfile.lock
+
+hellolee/easymock;16e940c;No README here required
+D	website/README.md
+
+hellolee/easymock;3ec7e27;Reformat developer-guide page (it was a long long ... long task...)
+M	website/css/main.css
+M	website/developer-guide.html
+
+hellolee/easymock;856a3c7;Add icons and improve style
+M	website/css/github-ribbon.min.css
+M	website/css/layout.css
+M	website/css/main.css
+M	website/developer-guide.html
+A	website/img/easymock-presentation-how.png
+A	website/img/easymock-presentation-what.png
+A	website/img/easymock-presentation-why.png
+M	website/index.html
+
+hellolee/easymock;a9f067c;Change disclaimer label 'version' color
+M	website/css/main.css
+
+hellolee/easymock;9bdc147;Improve design (add navbar top border + new logo on home page)
+M	website/_includes/header.html
+M	website/css/layout.css
+M	website/css/main.css
+M	website/developer-guide.html
+A	website/img/easymock-logo-md.png
+A	website/img/easymock-logo.png
+M	website/index.html
+
+hellolee/easymock;3b3da93;Migrate 'Developer Guide' page ( [i] set variable 'project_version')
+M	website/_layouts/default.html
+M	website/developer-guide.html
+
+hellolee/easymock;e93b459;Add Google Analytics and Disqus (set 'comments: true' in page where you want to add Disqus comments)
+M	website/_layouts/default.html
+M	website/getting-started.html
+
+hellolee/easymock;ec859ab;Initialize Jekyll website
+A	website/LICENSE
+A	website/README.md
+A	website/_config.yml
+A	website/_includes/footer.html
+A	website/_includes/header.html
+A	website/_layouts/default.html
+A	website/_layouts/page.html
+A	website/_posts/2014-04-29-sample.markdown
+A	website/css/bootstrap.min.css
+A	website/css/github-ribbon.min.css
+A	website/css/highlight.css
+A	website/css/layout.css
+A	website/css/main.css
+A	website/css/syntax-android.css
+A	website/developer-guide.html
+A	website/easymock.sublime-project
+A	website/easymock.sublime-workspace
+A	website/fonts/glyphicons-halflings-regular.eot
+A	website/fonts/glyphicons-halflings-regular.svg
+A	website/fonts/glyphicons-halflings-regular.ttf
+A	website/fonts/glyphicons-halflings-regular.woff
+A	website/getting-started.html
+A	website/index.html
+A	website/js/main.js
+A	website/js/vendor/bootstrap.min.js
+A	website/js/vendor/html5-3.6-respond-1.1.0.min.js
+A	website/js/vendor/jquery-1.10.1.min.js
+A	website/js/vendor/prettify.min.js
+A	website/release-notes.html
+
+hellolee/easymock;d50a6f7;Add CNAME file to host the site on github
+A	website/CNAME
+
+hellolee/easymock;22303c2;The site is now in gh-pages
+D	website/Documentation.html
+D	website/Downloads.html
+D	website/EasyMock1_2_1_ClassExtension_Documentation.html
+D	website/EasyMock1_2_ClassExtension_Documentation.html
+D	website/EasyMock1_2_Java1_3_Documentation.html
+D	website/EasyMock1_2_Java1_5_Documentation.html
+D	website/EasyMock2_0_ClassExtension_Documentation.html
+D	website/EasyMock2_0_Documentation.html
+D	website/EasyMock2_2_2_ClassExtension_Documentation.html
+D	website/EasyMock2_2_ClassExtension_Documentation.html
+D	website/EasyMock2_2_Documentation.html
+D	website/EasyMock2_3_ClassExtension_Documentation.html
+D	website/EasyMock2_3_ClassExtension_Documentation_fr.html
+D	website/EasyMock2_3_Documentation.html
+D	website/EasyMock2_3_Documentation_fr.html
+D	website/EasyMock2_3_Documentation_ko.html
+D	website/EasyMock2_4_ClassExtension_Documentation.html
+D	website/EasyMock2_4_ClassExtension_Documentation_fr.html
+D	website/EasyMock2_4_Documentation.html
+D	website/EasyMock2_4_Documentation_fr.html
+D	website/EasyMock2_5_1_ClassExtension_Documentation.html
+D	website/EasyMock2_5_1_ClassExtension_Documentation_fr.html
+D	website/EasyMock2_5_1_Documentation.html
+D	website/EasyMock2_5_1_Documentation_fr.html
+D	website/EasyMock2_5_2_ClassExtension_Documentation.html
+D	website/EasyMock2_5_2_ClassExtension_Documentation_fr.html
+D	website/EasyMock2_5_2_Documentation.html
+D	website/EasyMock2_5_2_Documentation_fr.html
+D	website/EasyMock2_5_ClassExtension_Documentation.html
+D	website/EasyMock2_5_ClassExtension_Documentation_fr.html
+D	website/EasyMock2_5_Documentation.html
+D	website/EasyMock2_5_Documentation_fr.html
+D	website/EasyMock3_0_ClassExtension_Documentation.html
+D	website/EasyMock3_0_ClassExtension_Documentation_fr.html
+D	website/EasyMock3_0_Documentation.html
+D	website/EasyMock3_0_Documentation_fr.html
+D	website/EasyMock3_1_ClassExtension_Documentation.html
+D	website/EasyMock3_1_ClassExtension_Documentation_fr.html
+D	website/EasyMock3_1_Documentation.html
+D	website/EasyMock3_1_Documentation_fr.html
+D	website/EasyMock3_2_ClassExtension_Documentation.html
+D	website/EasyMock3_2_ClassExtension_Documentation_fr.html
+D	website/EasyMock3_2_Documentation.html
+D	website/EasyMock3_2_Documentation_fr.html
+D	website/Error.html
+D	website/License.html
+D	website/Links.html
+D	website/ReleaseNotes.html
+D	website/UserComments.html
+D	website/_config.yml
+D	website/_layouts/default.html
+D	website/api/easymock/2.4/allclasses-frame.html
+D	website/api/easymock/2.4/allclasses-noframe.html
+D	website/api/easymock/2.4/constant-values.html
+D	website/api/easymock/2.4/deprecated-list.html
+D	website/api/easymock/2.4/help-doc.html
+D	website/api/easymock/2.4/index-all.html
+D	website/api/easymock/2.4/index.html
+D	website/api/easymock/2.4/org/easymock/AbstractMatcher.html
+D	website/api/easymock/2.4/org/easymock/ArgumentsMatcher.html
+D	website/api/easymock/2.4/org/easymock/Capture.html
+D	website/api/easymock/2.4/org/easymock/EasyMock.html
+D	website/api/easymock/2.4/org/easymock/IAnswer.html
+D	website/api/easymock/2.4/org/easymock/IArgumentMatcher.html
+D	website/api/easymock/2.4/org/easymock/IExpectationSetters.html
+D	website/api/easymock/2.4/org/easymock/IMocksControl.html
+D	website/api/easymock/2.4/org/easymock/LogicalOperator.html
+D	website/api/easymock/2.4/org/easymock/MockControl.html
+D	website/api/easymock/2.4/org/easymock/package-frame.html
+D	website/api/easymock/2.4/org/easymock/package-summary.html
+D	website/api/easymock/2.4/org/easymock/package-tree.html
+D	website/api/easymock/2.4/overview-tree.html
+D	website/api/easymock/2.4/resources/inherit.gif
+D	website/api/easymock/2.4/serialized-form.html
+D	website/api/easymock/2.4/stylesheet.css
+D	website/api/easymock/2.5.1/allclasses-frame.html
+D	website/api/easymock/2.5.1/allclasses-noframe.html
+D	website/api/easymock/2.5.1/constant-values.html
+D	website/api/easymock/2.5.1/deprecated-list.html
+D	website/api/easymock/2.5.1/help-doc.html
+D	website/api/easymock/2.5.1/index-all.html
+D	website/api/easymock/2.5.1/index.html
+D	website/api/easymock/2.5.1/options
+D	website/api/easymock/2.5.1/org/easymock/AbstractMatcher.html
+D	website/api/easymock/2.5.1/org/easymock/ArgumentsMatcher.html
+D	website/api/easymock/2.5.1/org/easymock/Capture.html
+D	website/api/easymock/2.5.1/org/easymock/CaptureType.html
+D	website/api/easymock/2.5.1/org/easymock/EasyMock.html
+D	website/api/easymock/2.5.1/org/easymock/IAnswer.html
+D	website/api/easymock/2.5.1/org/easymock/IArgumentMatcher.html
+D	website/api/easymock/2.5.1/org/easymock/IExpectationSetters.html
+D	website/api/easymock/2.5.1/org/easymock/IMocksControl.html
+D	website/api/easymock/2.5.1/org/easymock/LogicalOperator.html
+D	website/api/easymock/2.5.1/org/easymock/MockControl.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/AbstractMatcher.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/ArgumentsMatcher.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/Capture.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/CaptureType.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/EasyMock.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/IAnswer.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/IArgumentMatcher.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/IExpectationSetters.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/IMocksControl.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/LogicalOperator.html
+D	website/api/easymock/2.5.1/org/easymock/class-use/MockControl.html
+D	website/api/easymock/2.5.1/org/easymock/package-frame.html
+D	website/api/easymock/2.5.1/org/easymock/package-summary.html
+D	website/api/easymock/2.5.1/org/easymock/package-tree.html
+D	website/api/easymock/2.5.1/org/easymock/package-use.html
+D	website/api/easymock/2.5.1/overview-tree.html
+D	website/api/easymock/2.5.1/package-list
+D	website/api/easymock/2.5.1/packages
+D	website/api/easymock/2.5.1/resources/inherit.gif
+D	website/api/easymock/2.5.1/serialized-form.html
+D	website/api/easymock/2.5.1/stylesheet.css
+D	website/api/easymock/2.5.2/allclasses-frame.html
+D	website/api/easymock/2.5.2/allclasses-noframe.html
+D	website/api/easymock/2.5.2/constant-values.html
+D	website/api/easymock/2.5.2/deprecated-list.html
+D	website/api/easymock/2.5.2/help-doc.html
+D	website/api/easymock/2.5.2/index-all.html
+D	website/api/easymock/2.5.2/index.html
+D	website/api/easymock/2.5.2/org/easymock/AbstractMatcher.html
+D	website/api/easymock/2.5.2/org/easymock/ArgumentsMatcher.html
+D	website/api/easymock/2.5.2/org/easymock/Capture.html
+D	website/api/easymock/2.5.2/org/easymock/CaptureType.html
+D	website/api/easymock/2.5.2/org/easymock/EasyMock.html
+D	website/api/easymock/2.5.2/org/easymock/EasyMockSupport.html
+D	website/api/easymock/2.5.2/org/easymock/IAnswer.html
+D	website/api/easymock/2.5.2/org/easymock/IArgumentMatcher.html
+D	website/api/easymock/2.5.2/org/easymock/IExpectationSetters.html
+D	website/api/easymock/2.5.2/org/easymock/IMocksControl.html
+D	website/api/easymock/2.5.2/org/easymock/LogicalOperator.html
+D	website/api/easymock/2.5.2/org/easymock/MockControl.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/AbstractMatcher.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/ArgumentsMatcher.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/Capture.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/CaptureType.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/EasyMock.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/EasyMockSupport.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/IAnswer.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/IArgumentMatcher.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/IExpectationSetters.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/IMocksControl.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/LogicalOperator.html
+D	website/api/easymock/2.5.2/org/easymock/class-use/MockControl.html
+D	website/api/easymock/2.5.2/org/easymock/package-frame.html
+D	website/api/easymock/2.5.2/org/easymock/package-summary.html
+D	website/api/easymock/2.5.2/org/easymock/package-tree.html
+D	website/api/easymock/2.5.2/org/easymock/package-use.html
+D	website/api/easymock/2.5.2/overview-tree.html
+D	website/api/easymock/2.5.2/package-list
+D	website/api/easymock/2.5.2/resources/inherit.gif
+D	website/api/easymock/2.5.2/serialized-form.html
+D	website/api/easymock/2.5.2/stylesheet.css
+D	website/api/easymock/2.5/allclasses-frame.html
+D	website/api/easymock/2.5/allclasses-noframe.html
+D	website/api/easymock/2.5/constant-values.html
+D	website/api/easymock/2.5/deprecated-list.html
+D	website/api/easymock/2.5/help-doc.html
+D	website/api/easymock/2.5/index-all.html
+D	website/api/easymock/2.5/index.html
+D	website/api/easymock/2.5/org/easymock/AbstractMatcher.html
+D	website/api/easymock/2.5/org/easymock/ArgumentsMatcher.html
+D	website/api/easymock/2.5/org/easymock/Capture.html
+D	website/api/easymock/2.5/org/easymock/CaptureType.html
+D	website/api/easymock/2.5/org/easymock/EasyMock.html
+D	website/api/easymock/2.5/org/easymock/IAnswer.html
+D	website/api/easymock/2.5/org/easymock/IArgumentMatcher.html
+D	website/api/easymock/2.5/org/easymock/IExpectationSetters.html
+D	website/api/easymock/2.5/org/easymock/IMocksControl.html
+D	website/api/easymock/2.5/org/easymock/LogicalOperator.html
+D	website/api/easymock/2.5/org/easymock/MockControl.html
+D	website/api/easymock/2.5/org/easymock/class-use/AbstractMatcher.html
+D	website/api/easymock/2.5/org/easymock/class-use/ArgumentsMatcher.html
+D	website/api/easymock/2.5/org/easymock/class-use/Capture.html
+D	website/api/easymock/2.5/org/easymock/class-use/CaptureType.html
+D	website/api/easymock/2.5/org/easymock/class-use/EasyMock.html
+D	website/api/easymock/2.5/org/easymock/class-use/IAnswer.html
+D	website/api/easymock/2.5/org/easymock/class-use/IArgumentMatcher.html
+D	website/api/easymock/2.5/org/easymock/class-use/IExpectationSetters.html
+D	website/api/easymock/2.5/org/easymock/class-use/IMocksControl.html
+D	website/api/easymock/2.5/org/easymock/class-use/LogicalOperator.html
+D	website/api/easymock/2.5/org/easymock/class-use/MockControl.html
+D	website/api/easymock/2.5/org/easymock/package-frame.html
+D	website/api/easymock/2.5/org/easymock/package-summary.html
+D	website/api/easymock/2.5/org/easymock/package-tree.html
+D	website/api/easymock/2.5/org/easymock/package-use.html
+D	website/api/easymock/2.5/overview-tree.html
+D	website/api/easymock/2.5/package-list
+D	website/api/easymock/2.5/resources/inherit.gif
+D	website/api/easymock/2.5/serialized-form.html
+D	website/api/easymock/2.5/stylesheet.css
+D	website/api/easymock/3.0/allclasses-frame.html
+D	website/api/easymock/3.0/allclasses-noframe.html
+D	website/api/easymock/3.0/constant-values.html
+D	website/api/easymock/3.0/deprecated-list.html
+D	website/api/easymock/3.0/help-doc.html
+D	website/api/easymock/3.0/index-all.html
+D	website/api/easymock/3.0/index.html
+D	website/api/easymock/3.0/org/easymock/Capture.html
+D	website/api/easymock/3.0/org/easymock/CaptureType.html
+D	website/api/easymock/3.0/org/easymock/ConstructorArgs.html
+D	website/api/easymock/3.0/org/easymock/EasyMock.html
+D	website/api/easymock/3.0/org/easymock/EasyMockSupport.html
+D	website/api/easymock/3.0/org/easymock/IAnswer.html
+D	website/api/easymock/3.0/org/easymock/IArgumentMatcher.html
+D	website/api/easymock/3.0/org/easymock/IExpectationSetters.html
+D	website/api/easymock/3.0/org/easymock/IMockBuilder.html
+D	website/api/easymock/3.0/org/easymock/IMocksControl.html
+D	website/api/easymock/3.0/org/easymock/LogicalOperator.html
+D	website/api/easymock/3.0/org/easymock/class-use/Capture.html
+D	website/api/easymock/3.0/org/easymock/class-use/CaptureType.html
+D	website/api/easymock/3.0/org/easymock/class-use/ConstructorArgs.html
+D	website/api/easymock/3.0/org/easymock/class-use/EasyMock.html
+D	website/api/easymock/3.0/org/easymock/class-use/EasyMockSupport.html
+D	website/api/easymock/3.0/org/easymock/class-use/IAnswer.html
+D	website/api/easymock/3.0/org/easymock/class-use/IArgumentMatcher.html
+D	website/api/easymock/3.0/org/easymock/class-use/IExpectationSetters.html
+D	website/api/easymock/3.0/org/easymock/class-use/IMockBuilder.html
+D	website/api/easymock/3.0/org/easymock/class-use/IMocksControl.html
+D	website/api/easymock/3.0/org/easymock/class-use/LogicalOperator.html
+D	website/api/easymock/3.0/org/easymock/package-frame.html
+D	website/api/easymock/3.0/org/easymock/package-summary.html
+D	website/api/easymock/3.0/org/easymock/package-tree.html
+D	website/api/easymock/3.0/org/easymock/package-use.html
+D	website/api/easymock/3.0/overview-tree.html
+D	website/api/easymock/3.0/package-list
+D	website/api/easymock/3.0/resources/inherit.gif
+D	website/api/easymock/3.0/serialized-form.html
+D	website/api/easymock/3.0/stylesheet.css
+D	website/api/easymock/3.1/allclasses-frame.html
+D	website/api/easymock/3.1/allclasses-noframe.html
+D	website/api/easymock/3.1/constant-values.html
+D	website/api/easymock/3.1/deprecated-list.html
+D	website/api/easymock/3.1/help-doc.html
+D	website/api/easymock/3.1/index-all.html
+D	website/api/easymock/3.1/index.html
+D	website/api/easymock/3.1/org/easymock/Capture.html
+D	website/api/easymock/3.1/org/easymock/CaptureType.html
+D	website/api/easymock/3.1/org/easymock/ConstructorArgs.html
+D	website/api/easymock/3.1/org/easymock/EasyMock.html
+D	website/api/easymock/3.1/org/easymock/EasyMockSupport.html
+D	website/api/easymock/3.1/org/easymock/IAnswer.html
+D	website/api/easymock/3.1/org/easymock/IArgumentMatcher.html
+D	website/api/easymock/3.1/org/easymock/IExpectationSetters.html
+D	website/api/easymock/3.1/org/easymock/IMockBuilder.html
+D	website/api/easymock/3.1/org/easymock/IMocksControl.html
+D	website/api/easymock/3.1/org/easymock/LogicalOperator.html
+D	website/api/easymock/3.1/org/easymock/class-use/Capture.html
+D	website/api/easymock/3.1/org/easymock/class-use/CaptureType.html
+D	website/api/easymock/3.1/org/easymock/class-use/ConstructorArgs.html
+D	website/api/easymock/3.1/org/easymock/class-use/EasyMock.html
+D	website/api/easymock/3.1/org/easymock/class-use/EasyMockSupport.html
+D	website/api/easymock/3.1/org/easymock/class-use/IAnswer.html
+D	website/api/easymock/3.1/org/easymock/class-use/IArgumentMatcher.html
+D	website/api/easymock/3.1/org/easymock/class-use/IExpectationSetters.html
+D	website/api/easymock/3.1/org/easymock/class-use/IMockBuilder.html
+D	website/api/easymock/3.1/org/easymock/class-use/IMocksControl.html
+D	website/api/easymock/3.1/org/easymock/class-use/LogicalOperator.html
+D	website/api/easymock/3.1/org/easymock/internal/ArgumentToString.html
+D	website/api/easymock/3.1/org/easymock/internal/AssertionErrorWrapper.html
+D	website/api/easymock/3.1/org/easymock/internal/BridgeMethodResolver.html
+D	website/api/easymock/3.1/org/easymock/internal/ClassExtensionHelper.html
+D	website/api/easymock/3.1/org/easymock/internal/ClassInstantiatorFactory.html
+D	website/api/easymock/3.1/org/easymock/internal/ClassProxyFactory.MockMethodInterceptor.html
+D	website/api/easymock/3.1/org/easymock/internal/ClassProxyFactory.html
+D	website/api/easymock/3.1/org/easymock/internal/DefaultClassInstantiator.html
+D	website/api/easymock/3.1/org/easymock/internal/EasyMockProperties.html
+D	website/api/easymock/3.1/org/easymock/internal/ErrorMessage.html
+D	website/api/easymock/3.1/org/easymock/internal/ExpectedInvocation.html
+D	website/api/easymock/3.1/org/easymock/internal/ExpectedInvocationAndResult.html
+D	website/api/easymock/3.1/org/easymock/internal/ExpectedInvocationAndResults.html
+D	website/api/easymock/3.1/org/easymock/internal/IClassInstantiator.html
+D	website/api/easymock/3.1/org/easymock/internal/IMocksBehavior.html
+D	website/api/easymock/3.1/org/easymock/internal/IMocksControlState.html
+D	website/api/easymock/3.1/org/easymock/internal/IProxyFactory.html
+D	website/api/easymock/3.1/org/easymock/internal/Invocation.html
+D	website/api/easymock/3.1/org/easymock/internal/JavaProxyFactory.html
+D	website/api/easymock/3.1/org/easymock/internal/LastControl.html
+D	website/api/easymock/3.1/org/easymock/internal/MethodSerializationWrapper.html
+D	website/api/easymock/3.1/org/easymock/internal/MockBuilder.html
+D	website/api/easymock/3.1/org/easymock/internal/MockInvocationHandler.html
+D	website/api/easymock/3.1/org/easymock/internal/MocksBehavior.html
+D	website/api/easymock/3.1/org/easymock/internal/MocksControl.MockType.html
+D	website/api/easymock/3.1/org/easymock/internal/MocksControl.html
+D	website/api/easymock/3.1/org/easymock/internal/ObjectMethodsFilter.html
+D	website/api/easymock/3.1/org/easymock/internal/ObjenesisClassInstantiator.html
+D	website/api/easymock/3.1/org/easymock/internal/Range.html
+D	website/api/easymock/3.1/org/easymock/internal/RecordState.html
+D	website/api/easymock/3.1/org/easymock/internal/ReflectionUtils.html
+D	website/api/easymock/3.1/org/easymock/internal/ReplayState.html
+D	website/api/easymock/3.1/org/easymock/internal/Result.html
+D	website/api/easymock/3.1/org/easymock/internal/Results.html
+D	website/api/easymock/3.1/org/easymock/internal/RuntimeExceptionWrapper.html
+D	website/api/easymock/3.1/org/easymock/internal/ThrowableWrapper.html
+D	website/api/easymock/3.1/org/easymock/internal/UnorderedBehavior.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ArgumentToString.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/AssertionErrorWrapper.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/BridgeMethodResolver.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ClassExtensionHelper.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ClassInstantiatorFactory.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ClassProxyFactory.MockMethodInterceptor.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ClassProxyFactory.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/DefaultClassInstantiator.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/EasyMockProperties.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ErrorMessage.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ExpectedInvocation.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ExpectedInvocationAndResult.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ExpectedInvocationAndResults.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/IClassInstantiator.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/IMocksBehavior.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/IMocksControlState.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/IProxyFactory.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/Invocation.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/JavaProxyFactory.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/LastControl.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/MethodSerializationWrapper.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/MockBuilder.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/MockInvocationHandler.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/MocksBehavior.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/MocksControl.MockType.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/MocksControl.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ObjectMethodsFilter.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ObjenesisClassInstantiator.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/Range.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/RecordState.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ReflectionUtils.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ReplayState.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/Result.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/Results.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/RuntimeExceptionWrapper.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/ThrowableWrapper.html
+D	website/api/easymock/3.1/org/easymock/internal/class-use/UnorderedBehavior.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/And.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Any.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/ArrayEquals.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Captures.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Compare.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/CompareEqual.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/CompareTo.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Contains.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/EndsWith.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Equals.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/EqualsWithDelta.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Find.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/GreaterOrEqual.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/GreaterThan.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/InstanceOf.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/LessOrEqual.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/LessThan.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Matches.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Not.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/NotNull.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Null.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Or.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/Same.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/StartsWith.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/And.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Any.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/ArrayEquals.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Captures.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Compare.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/CompareEqual.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/CompareTo.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Contains.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/EndsWith.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Equals.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/EqualsWithDelta.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Find.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/GreaterOrEqual.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/GreaterThan.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/InstanceOf.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/LessOrEqual.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/LessThan.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Matches.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Not.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/NotNull.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Null.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Or.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/Same.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/class-use/StartsWith.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/package-frame.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/package-summary.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/package-tree.html
+D	website/api/easymock/3.1/org/easymock/internal/matchers/package-use.html
+D	website/api/easymock/3.1/org/easymock/internal/package-frame.html
+D	website/api/easymock/3.1/org/easymock/internal/package-summary.html
+D	website/api/easymock/3.1/org/easymock/internal/package-tree.html
+D	website/api/easymock/3.1/org/easymock/internal/package-use.html
+D	website/api/easymock/3.1/org/easymock/package-frame.html
+D	website/api/easymock/3.1/org/easymock/package-summary.html
+D	website/api/easymock/3.1/org/easymock/package-tree.html
+D	website/api/easymock/3.1/org/easymock/package-use.html
+D	website/api/easymock/3.1/overview-frame.html
+D	website/api/easymock/3.1/overview-summary.html
+D	website/api/easymock/3.1/overview-tree.html
+D	website/api/easymock/3.1/package-list
+D	website/api/easymock/3.1/resources/inherit.gif
+D	website/api/easymock/3.1/serialized-form.html
+D	website/api/easymock/3.1/stylesheet.css
+D	website/api/easymock/3.2/allclasses-frame.html
+D	website/api/easymock/3.2/allclasses-noframe.html
+D	website/api/easymock/3.2/constant-values.html
+D	website/api/easymock/3.2/deprecated-list.html
+D	website/api/easymock/3.2/help-doc.html
+D	website/api/easymock/3.2/index-all.html
+D	website/api/easymock/3.2/index.html
+D	website/api/easymock/3.2/org/easymock/Capture.html
+D	website/api/easymock/3.2/org/easymock/CaptureType.html
+D	website/api/easymock/3.2/org/easymock/ConstructorArgs.html
+D	website/api/easymock/3.2/org/easymock/EasyMock.html
+D	website/api/easymock/3.2/org/easymock/EasyMockRunner.html
+D	website/api/easymock/3.2/org/easymock/EasyMockSupport.html
+D	website/api/easymock/3.2/org/easymock/IAnswer.html
+D	website/api/easymock/3.2/org/easymock/IArgumentMatcher.html
+D	website/api/easymock/3.2/org/easymock/IExpectationSetters.html
+D	website/api/easymock/3.2/org/easymock/IMockBuilder.html
+D	website/api/easymock/3.2/org/easymock/IMocksControl.html
+D	website/api/easymock/3.2/org/easymock/LogicalOperator.html
+D	website/api/easymock/3.2/org/easymock/Mock.html
+D	website/api/easymock/3.2/org/easymock/MockType.html
+D	website/api/easymock/3.2/org/easymock/TestSubject.html
+D	website/api/easymock/3.2/org/easymock/class-use/Capture.html
+D	website/api/easymock/3.2/org/easymock/class-use/CaptureType.html
+D	website/api/easymock/3.2/org/easymock/class-use/ConstructorArgs.html
+D	website/api/easymock/3.2/org/easymock/class-use/EasyMock.html
+D	website/api/easymock/3.2/org/easymock/class-use/EasyMockRunner.html
+D	website/api/easymock/3.2/org/easymock/class-use/EasyMockSupport.html
+D	website/api/easymock/3.2/org/easymock/class-use/IAnswer.html
+D	website/api/easymock/3.2/org/easymock/class-use/IArgumentMatcher.html
+D	website/api/easymock/3.2/org/easymock/class-use/IExpectationSetters.html
+D	website/api/easymock/3.2/org/easymock/class-use/IMockBuilder.html
+D	website/api/easymock/3.2/org/easymock/class-use/IMocksControl.html
+D	website/api/easymock/3.2/org/easymock/class-use/LogicalOperator.html
+D	website/api/easymock/3.2/org/easymock/class-use/Mock.html
+D	website/api/easymock/3.2/org/easymock/class-use/MockType.html
+D	website/api/easymock/3.2/org/easymock/class-use/TestSubject.html
+D	website/api/easymock/3.2/org/easymock/internal/AndroidClassProxyFactory.html
+D	website/api/easymock/3.2/org/easymock/internal/AndroidSupport.html
+D	website/api/easymock/3.2/org/easymock/internal/ArgumentToString.html
+D	website/api/easymock/3.2/org/easymock/internal/AssertionErrorWrapper.html
+D	website/api/easymock/3.2/org/easymock/internal/BridgeMethodResolver.html
+D	website/api/easymock/3.2/org/easymock/internal/ClassInstantiatorFactory.html
+D	website/api/easymock/3.2/org/easymock/internal/ClassProxyFactory.MockMethodInterceptor.html
+D	website/api/easymock/3.2/org/easymock/internal/ClassProxyFactory.html
+D	website/api/easymock/3.2/org/easymock/internal/DefaultClassInstantiator.html
+D	website/api/easymock/3.2/org/easymock/internal/EasyMockProperties.html
+D	website/api/easymock/3.2/org/easymock/internal/ErrorMessage.html
+D	website/api/easymock/3.2/org/easymock/internal/ExpectedInvocation.html
+D	website/api/easymock/3.2/org/easymock/internal/ExpectedInvocationAndResult.html
+D	website/api/easymock/3.2/org/easymock/internal/ExpectedInvocationAndResults.html
+D	website/api/easymock/3.2/org/easymock/internal/IClassInstantiator.html
+D	website/api/easymock/3.2/org/easymock/internal/IMocksBehavior.html
+D	website/api/easymock/3.2/org/easymock/internal/IMocksControlState.html
+D	website/api/easymock/3.2/org/easymock/internal/IProxyFactory.html
+D	website/api/easymock/3.2/org/easymock/internal/Invocation.html
+D	website/api/easymock/3.2/org/easymock/internal/JavaProxyFactory.html
+D	website/api/easymock/3.2/org/easymock/internal/LastControl.html
+D	website/api/easymock/3.2/org/easymock/internal/MethodSerializationWrapper.html
+D	website/api/easymock/3.2/org/easymock/internal/MockBuilder.html
+D	website/api/easymock/3.2/org/easymock/internal/MockInvocationHandler.html
+D	website/api/easymock/3.2/org/easymock/internal/MocksBehavior.html
+D	website/api/easymock/3.2/org/easymock/internal/MocksControl.MockType.html
+D	website/api/easymock/3.2/org/easymock/internal/MocksControl.html
+D	website/api/easymock/3.2/org/easymock/internal/ObjectMethodsFilter.html
+D	website/api/easymock/3.2/org/easymock/internal/ObjenesisClassInstantiator.html
+D	website/api/easymock/3.2/org/easymock/internal/Range.html
+D	website/api/easymock/3.2/org/easymock/internal/RecordState.html
+D	website/api/easymock/3.2/org/easymock/internal/ReflectionUtils.html
+D	website/api/easymock/3.2/org/easymock/internal/ReplayState.html
+D	website/api/easymock/3.2/org/easymock/internal/Result.html
+D	website/api/easymock/3.2/org/easymock/internal/Results.html
+D	website/api/easymock/3.2/org/easymock/internal/RuntimeExceptionWrapper.html
+D	website/api/easymock/3.2/org/easymock/internal/ThrowableWrapper.html
+D	website/api/easymock/3.2/org/easymock/internal/UnorderedBehavior.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/AndroidClassProxyFactory.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/AndroidSupport.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ArgumentToString.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/AssertionErrorWrapper.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/BridgeMethodResolver.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ClassInstantiatorFactory.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ClassProxyFactory.MockMethodInterceptor.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ClassProxyFactory.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/DefaultClassInstantiator.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/EasyMockProperties.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ErrorMessage.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ExpectedInvocation.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ExpectedInvocationAndResult.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ExpectedInvocationAndResults.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/IClassInstantiator.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/IMocksBehavior.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/IMocksControlState.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/IProxyFactory.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/Invocation.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/JavaProxyFactory.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/LastControl.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/MethodSerializationWrapper.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/MockBuilder.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/MockInvocationHandler.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/MocksBehavior.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/MocksControl.MockType.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/MocksControl.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ObjectMethodsFilter.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ObjenesisClassInstantiator.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/Range.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/RecordState.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ReflectionUtils.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ReplayState.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/Result.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/Results.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/RuntimeExceptionWrapper.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/ThrowableWrapper.html
+D	website/api/easymock/3.2/org/easymock/internal/class-use/UnorderedBehavior.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/And.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Any.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/ArrayEquals.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Captures.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Compare.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/CompareEqual.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/CompareTo.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Contains.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/EndsWith.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Equals.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/EqualsWithDelta.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Find.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/GreaterOrEqual.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/GreaterThan.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/InstanceOf.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/LessOrEqual.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/LessThan.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Matches.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Not.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/NotNull.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Null.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Or.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/Same.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/StartsWith.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/And.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Any.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/ArrayEquals.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Captures.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Compare.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/CompareEqual.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/CompareTo.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Contains.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/EndsWith.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Equals.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/EqualsWithDelta.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Find.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/GreaterOrEqual.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/GreaterThan.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/InstanceOf.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/LessOrEqual.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/LessThan.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Matches.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Not.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/NotNull.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Null.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Or.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/Same.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/class-use/StartsWith.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/package-frame.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/package-summary.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/package-tree.html
+D	website/api/easymock/3.2/org/easymock/internal/matchers/package-use.html
+D	website/api/easymock/3.2/org/easymock/internal/package-frame.html
+D	website/api/easymock/3.2/org/easymock/internal/package-summary.html
+D	website/api/easymock/3.2/org/easymock/internal/package-tree.html
+D	website/api/easymock/3.2/org/easymock/internal/package-use.html
+D	website/api/easymock/3.2/org/easymock/package-frame.html
+D	website/api/easymock/3.2/org/easymock/package-summary.html
+D	website/api/easymock/3.2/org/easymock/package-tree.html
+D	website/api/easymock/3.2/org/easymock/package-use.html
+D	website/api/easymock/3.2/overview-frame.html
+D	website/api/easymock/3.2/overview-summary.html
+D	website/api/easymock/3.2/overview-tree.html
+D	website/api/easymock/3.2/package-list
+D	website/api/easymock/3.2/resources/background.gif
+D	website/api/easymock/3.2/resources/tab.gif
+D	website/api/easymock/3.2/resources/titlebar.gif
+D	website/api/easymock/3.2/resources/titlebar_end.gif
+D	website/api/easymock/3.2/serialized-form.html
+D	website/api/easymock/3.2/stylesheet.css
+D	website/api/easymockclassextension/2.4/allclasses-frame.html
+D	website/api/easymockclassextension/2.4/allclasses-noframe.html
+D	website/api/easymockclassextension/2.4/constant-values.html
+D	website/api/easymockclassextension/2.4/deprecated-list.html
+D	website/api/easymockclassextension/2.4/help-doc.html
+D	website/api/easymockclassextension/2.4/index-all.html
+D	website/api/easymockclassextension/2.4/index.html
+D	website/api/easymockclassextension/2.4/org/easymock/classextension/ConstructorArgs.html
+D	website/api/easymockclassextension/2.4/org/easymock/classextension/EasyMock.html
+D	website/api/easymockclassextension/2.4/org/easymock/classextension/IMocksControl.html
+D	website/api/easymockclassextension/2.4/org/easymock/classextension/MockClassControl.html
+D	website/api/easymockclassextension/2.4/org/easymock/classextension/package-frame.html
+D	website/api/easymockclassextension/2.4/org/easymock/classextension/package-summary.html
+D	website/api/easymockclassextension/2.4/org/easymock/classextension/package-tree.html
+D	website/api/easymockclassextension/2.4/overview-tree.html
+D	website/api/easymockclassextension/2.4/stylesheet.css
+D	website/api/easymockclassextension/2.5.1/META-INF/LICENSE
+D	website/api/easymockclassextension/2.5.1/META-INF/MANIFEST.MF
+D	website/api/easymockclassextension/2.5.1/META-INF/NOTICE
+D	website/api/easymockclassextension/2.5.1/allclasses-frame.html
+D	website/api/easymockclassextension/2.5.1/allclasses-noframe.html
+D	website/api/easymockclassextension/2.5.1/constant-values.html
+D	website/api/easymockclassextension/2.5.1/deprecated-list.html
+D	website/api/easymockclassextension/2.5.1/help-doc.html
+D	website/api/easymockclassextension/2.5.1/index-all.html
+D	website/api/easymockclassextension/2.5.1/index.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/ConstructorArgs.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/EasyMock.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/IMockBuilder.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/IMocksControl.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/MockClassControl.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/class-use/ConstructorArgs.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/class-use/EasyMock.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/class-use/IMockBuilder.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/class-use/IMocksControl.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/class-use/MockClassControl.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/package-frame.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/package-summary.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/package-tree.html
+D	website/api/easymockclassextension/2.5.1/org/easymock/classextension/package-use.html
+D	website/api/easymockclassextension/2.5.1/overview-tree.html
+D	website/api/easymockclassextension/2.5.1/package-list
+D	website/api/easymockclassextension/2.5.1/resources/inherit.gif
+D	website/api/easymockclassextension/2.5.1/serialized-form.html
+D	website/api/easymockclassextension/2.5.1/stylesheet.css
+D	website/api/easymockclassextension/2.5.2/allclasses-frame.html
+D	website/api/easymockclassextension/2.5.2/allclasses-noframe.html
+D	website/api/easymockclassextension/2.5.2/constant-values.html
+D	website/api/easymockclassextension/2.5.2/deprecated-list.html
+D	website/api/easymockclassextension/2.5.2/help-doc.html
+D	website/api/easymockclassextension/2.5.2/index-all.html
+D	website/api/easymockclassextension/2.5.2/index.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/ConstructorArgs.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/EasyMock.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/EasyMockSupport.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/IMockBuilder.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/IMocksControl.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/MockClassControl.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/class-use/ConstructorArgs.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/class-use/EasyMock.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/class-use/EasyMockSupport.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/class-use/IMockBuilder.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/class-use/IMocksControl.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/class-use/MockClassControl.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/package-frame.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/package-summary.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/package-tree.html
+D	website/api/easymockclassextension/2.5.2/org/easymock/classextension/package-use.html
+D	website/api/easymockclassextension/2.5.2/overview-tree.html
+D	website/api/easymockclassextension/2.5.2/package-list
+D	website/api/easymockclassextension/2.5.2/resources/inherit.gif
+D	website/api/easymockclassextension/2.5.2/serialized-form.html
+D	website/api/easymockclassextension/2.5.2/stylesheet.css
+D	website/api/easymockclassextension/2.5/allclasses-frame.html
+D	website/api/easymockclassextension/2.5/allclasses-noframe.html
+D	website/api/easymockclassextension/2.5/constant-values.html
+D	website/api/easymockclassextension/2.5/deprecated-list.html
+D	website/api/easymockclassextension/2.5/help-doc.html
+D	website/api/easymockclassextension/2.5/index-all.html
+D	website/api/easymockclassextension/2.5/index.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/ConstructorArgs.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/EasyMock.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/IMockBuilder.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/IMocksControl.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/MockClassControl.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/class-use/ConstructorArgs.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/class-use/EasyMock.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/class-use/IMockBuilder.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/class-use/IMocksControl.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/class-use/MockClassControl.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/package-frame.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/package-summary.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/package-tree.html
+D	website/api/easymockclassextension/2.5/org/easymock/classextension/package-use.html
+D	website/api/easymockclassextension/2.5/overview-tree.html
+D	website/api/easymockclassextension/2.5/package-list
+D	website/api/easymockclassextension/2.5/resources/inherit.gif
+D	website/api/easymockclassextension/2.5/serialized-form.html
+D	website/api/easymockclassextension/2.5/stylesheet.css
+D	website/api/easymockclassextension/3.0/allclasses-frame.html
+D	website/api/easymockclassextension/3.0/allclasses-noframe.html
+D	website/api/easymockclassextension/3.0/constant-values.html
+D	website/api/easymockclassextension/3.0/deprecated-list.html
+D	website/api/easymockclassextension/3.0/help-doc.html
+D	website/api/easymockclassextension/3.0/index-all.html
+D	website/api/easymockclassextension/3.0/index.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/ConstructorArgs.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/EasyMock.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/EasyMockSupport.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/IMockBuilder.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/IMocksControl.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/class-use/ConstructorArgs.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/class-use/EasyMock.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/class-use/EasyMockSupport.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/class-use/IMockBuilder.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/class-use/IMocksControl.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/package-frame.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/package-summary.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/package-tree.html
+D	website/api/easymockclassextension/3.0/org/easymock/classextension/package-use.html
+D	website/api/easymockclassextension/3.0/overview-tree.html
+D	website/api/easymockclassextension/3.0/package-list
+D	website/api/easymockclassextension/3.0/resources/inherit.gif
+D	website/api/easymockclassextension/3.0/stylesheet.css
+D	website/api/easymockclassextension/3.1/allclasses-frame.html
+D	website/api/easymockclassextension/3.1/allclasses-noframe.html
+D	website/api/easymockclassextension/3.1/constant-values.html
+D	website/api/easymockclassextension/3.1/deprecated-list.html
+D	website/api/easymockclassextension/3.1/help-doc.html
+D	website/api/easymockclassextension/3.1/index-all.html
+D	website/api/easymockclassextension/3.1/index.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/ConstructorArgs.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/EasyMock.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/EasyMockSupport.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/IMockBuilder.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/IMocksControl.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/class-use/ConstructorArgs.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/class-use/EasyMock.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/class-use/EasyMockSupport.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/class-use/IMockBuilder.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/class-use/IMocksControl.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/internal/MockBuilder.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/internal/MocksClassControl.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/internal/class-use/MockBuilder.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/internal/class-use/MocksClassControl.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/internal/package-frame.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/internal/package-summary.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/internal/package-tree.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/internal/package-use.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/package-frame.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/package-summary.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/package-tree.html
+D	website/api/easymockclassextension/3.1/org/easymock/classextension/package-use.html
+D	website/api/easymockclassextension/3.1/overview-frame.html
+D	website/api/easymockclassextension/3.1/overview-summary.html
+D	website/api/easymockclassextension/3.1/overview-tree.html
+D	website/api/easymockclassextension/3.1/package-list
+D	website/api/easymockclassextension/3.1/resources/inherit.gif
+D	website/api/easymockclassextension/3.1/serialized-form.html
+D	website/api/easymockclassextension/3.1/stylesheet.css
+D	website/api/easymockclassextension/3.2/allclasses-frame.html
+D	website/api/easymockclassextension/3.2/allclasses-noframe.html
+D	website/api/easymockclassextension/3.2/constant-values.html
+D	website/api/easymockclassextension/3.2/deprecated-list.html
+D	website/api/easymockclassextension/3.2/help-doc.html
+D	website/api/easymockclassextension/3.2/index-all.html
+D	website/api/easymockclassextension/3.2/index.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/ConstructorArgs.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/EasyMock.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/EasyMockSupport.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/IMockBuilder.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/IMocksControl.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/class-use/ConstructorArgs.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/class-use/EasyMock.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/class-use/EasyMockSupport.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/class-use/IMockBuilder.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/class-use/IMocksControl.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/internal/MockBuilder.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/internal/MocksClassControl.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/internal/class-use/MockBuilder.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/internal/class-use/MocksClassControl.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/internal/package-frame.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/internal/package-summary.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/internal/package-tree.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/internal/package-use.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/package-frame.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/package-summary.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/package-tree.html
+D	website/api/easymockclassextension/3.2/org/easymock/classextension/package-use.html
+D	website/api/easymockclassextension/3.2/overview-frame.html
+D	website/api/easymockclassextension/3.2/overview-summary.html
+D	website/api/easymockclassextension/3.2/overview-tree.html
+D	website/api/easymockclassextension/3.2/package-list
+D	website/api/easymockclassextension/3.2/resources/background.gif
+D	website/api/easymockclassextension/3.2/resources/tab.gif
+D	website/api/easymockclassextension/3.2/resources/titlebar.gif
+D	website/api/easymockclassextension/3.2/resources/titlebar_end.gif
+D	website/api/easymockclassextension/3.2/serialized-form.html
+D	website/api/easymockclassextension/3.2/stylesheet.css
+D	website/css/bootstrap-theme.css
+D	website/css/bootstrap-theme.css.map
+D	website/css/bootstrap-theme.min.css
+D	website/css/bootstrap.css
+D	website/css/bootstrap.css.map
+D	website/css/bootstrap.min.css
+D	website/easymock.css
+D	website/easymock.gif
+D	website/easymock0.8.zip
+D	website/easymock073.zip
+D	website/favicon.ico
+D	website/fonts/glyphicons-halflings-regular.eot
+D	website/fonts/glyphicons-halflings-regular.svg
+D	website/fonts/glyphicons-halflings-regular.ttf
+D	website/fonts/glyphicons-halflings-regular.woff
+D	website/googlefda9c590a38fa17b.html
+D	website/img/easymock.gif
+D	website/img/logo.gif
+D	website/index.html
+D	website/js/bootstrap.js
+D	website/js/bootstrap.min.js
+D	website/robots.txt
+
+hellolee/easymock;cf4475e;Add the logo image
+A	website/img/logo.gif
+
+hellolee/easymock;4510995;Add EasyMockStatement back since it is still used by the Rule
+A	easymock/src/main/java/org/easymock/internal/EasyMockStatement.java
+
+hellolee/easymock;9ed6011;Deliver _site which is the new site
+M	refresh-website.sh
+
+hellolee/easymock;6ce4a8a;Target my blog
+M	website/_layouts/default.html
+
+hellolee/easymock;60ca1a4;Funnier intro
+M	website/index.html
+
+hellolee/easymock;07e577e;Remove permalink
+M	website/_config.yml
+
+hellolee/easymock;17cf817;Add a default layout
+M	website/Documentation.html
+M	website/Downloads.html
+M	website/License.html
+M	website/Links.html
+M	website/ReleaseNotes.html
+M	website/UserComments.html
+A	website/_layouts/default.html
+M	website/index.html
+
+hellolee/easymock;b891dbb;Use jekyll
+A	website/_config.yml
+
+hellolee/easymock;6d69a33;Add bootstrap 3.1.1. Not used yet
+A	website/css/bootstrap-theme.css
+A	website/css/bootstrap-theme.css.map
+A	website/css/bootstrap-theme.min.css
+A	website/css/bootstrap.css
+A	website/css/bootstrap.css.map
+A	website/css/bootstrap.min.css
+A	website/fonts/glyphicons-halflings-regular.eot
+A	website/fonts/glyphicons-halflings-regular.svg
+A	website/fonts/glyphicons-halflings-regular.ttf
+A	website/fonts/glyphicons-halflings-regular.woff
+A	website/js/bootstrap.js
+A	website/js/bootstrap.min.js
+
+hellolee/easymock;31ebaed;Make sure the injection is done before the @Before (#EASYMOCK-132)
+M	easymock/src/main/java/org/easymock/EasyMockRunner.java
+D	easymock/src/main/java/org/easymock/internal/EasyMockStatement.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockAnnotationsTest.java
+
+hellolee/easymock;34c1132;Ignore _site used by jekyll
+M	.gitignore
+
+hellolee/easymock;95e4083;upgrade JMH to 0.6
+M	easymock-bench/pom.xml
+
+hellolee/easymock;c828369;Add travis build
+A	.travis.yml
+
+hellolee/easymock;75ecf35;Remove the class extension (#EASYMOCK-131)
+D	easymock-classextension/.settings/org.eclipse.jdt.core.prefs
+D	easymock-classextension/.settings/org.eclipse.jdt.ui.prefs
+D	easymock-classextension/LICENSE.txt
+D	easymock-classextension/ReleaseNotes.txt
+D	easymock-classextension/findbugs-exclude.xml
+D	easymock-classextension/pom.xml
+D	easymock-classextension/src/main/assembly/assembly-samples.xml
+D	easymock-classextension/src/main/assembly/assembly-tests.xml
+D	easymock-classextension/src/main/assembly/assembly.xml
+D	easymock-classextension/src/main/java/org/easymock/classextension/ConstructorArgs.java
+D	easymock-classextension/src/main/java/org/easymock/classextension/EasyMock.java
+D	easymock-classextension/src/main/java/org/easymock/classextension/EasyMockSupport.java
+D	easymock-classextension/src/main/java/org/easymock/classextension/IMockBuilder.java
+D	easymock-classextension/src/main/java/org/easymock/classextension/IMocksControl.java
+D	easymock-classextension/src/main/java/org/easymock/classextension/internal/MockBuilder.java
+D	easymock-classextension/src/main/java/org/easymock/classextension/internal/MocksClassControl.java
+D	easymock-classextension/src/samples/java/org/easymock/classextension/samples/BasicClassMockTest.java
+D	easymock-classextension/src/samples/java/org/easymock/classextension/samples/ConstructorCalledMockTest.java
+D	easymock-classextension/src/samples/java/org/easymock/classextension/samples/PartialClassMockTest.java
+D	easymock-classextension/src/site/Documentation.html
+D	easymock-classextension/src/site/Documentation_fr.html
+D	easymock-classextension/src/site/easymock.css
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests/MockingTest.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests/MockingTest.java.rej
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/ClassExtensionHelperTest.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/ClassProxyFactoryTest.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/ConstructorArgsTest.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/EasyMockClassExtensionTest.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/EasyMockSupportTest.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/MockBuilderTest.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/MockedExceptionTest.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/MocksControlTest.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/NopInvocationHandler.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/PartialMockingTest.java
+D	easymock-classextension/src/test/java/org/easymock/classextension/tests2/SerializationTest.java
+M	easymock-integration/pom.xml
+D	easymock-integration/src/test/java/org/easymock/itests/OsgiClassExtensionTest.java
+M	easymock-integration/src/test/java/org/easymock/itests/OsgiTest.java
+M	easymock-test-deploy/pom.xml
+D	easymock-test-deploy/src/test/java/org/easymock/test/EasyMockClassExtensionTest.java
+M	easymock-test-deploy/src/test/java/org/easymock/test/EasyMockTest.java
+M	pom.xml
+
+hellolee/easymock;77cf1ea;Fix javadoc issues
+M	easymock/src/main/java/org/easymock/EasyMock.java
+M	easymock/src/main/java/org/easymock/Mock.java
+
+hellolee/easymock;a316e82;Uncomment the test. It's green so there is not reason that have commented it
+M	easymock/src/test/java/org/easymock/tests/CglibTest.java
+
+hellolee/easymock;95efb20;Remove the version. It wasn't configured correctly (should be true or false) and @version isn't used anyway
+M	pom.xml
+
+hellolee/easymock;113de89;Set a default value on "year" to please IntelliJ
+M	pom.xml
+
+hellolee/easymock;3f61816;Remove the www from url, give some air
+M	pom.xml
+
+hellolee/easymock;7da3476;Use the "all" profile
+M	README.md
+
+hellolee/easymock;d9d53cd;Wildly update all plugins and dependencies versions
+M	easymock-android-tck/pom.xml
+M	easymock-bench/pom.xml
+M	easymock-integration/pom.xml
+M	easymock/pom.xml
+M	pom.xml
+
+hellolee/easymock;3d72c1a;Add a profile containing all modules to help updating the version
+M	pom.xml
+
+hellolee/easymock;36149be;Upgrade to latest API: 19
+M	easymock-android-tck/project.properties
+
+hellolee/easymock;44ab8e1;Add an explicit value to skipTests to please IntelliJ
+M	easymock-android-tck/pom.xml
+
+hellolee/easymock;c898eb7;Set version to 1.6 since that's what Android wants
+M	easymock-android-tck/pom.xml
+
+hellolee/easymock;63d0571;Downgrade the source to 1.6 to please the SupportedSourceVersion in GenerateMicroBenchmarkProcessor
+M	easymock-bench/pom.xml
+
+hellolee/easymock;bec2ea1;Typo in Sonatype
+M	easymock-test-deploy/pom.xml
+
+hellolee/easymock;130bddd;Remove the build.txt since it's now a readme.md
+D	build.txt
+
+hellolee/easymock;6cc294c;How to add the code formatter
+M	README.md
+
+hellolee/easymock;be72c3d;Convert build.txt to a real markdown page
+A	README.md
+
+hellolee/easymock;cef0e9a;Add bench profile
+M	build.txt
+M	pom.xml
+
+hellolee/easymock;c07df8c;More precision about the Android configuration
+M	build.txt
+
+hellolee/easymock;83c5a4f;Upgrade exec-maven-plugin version to 1.3
+M	easymock-android-tck/pom.xml
+
+hellolee/easymock;8fb3852;Skip test exec when skipping tests
+M	easymock-android-tck/pom.xml
+
+hellolee/easymock;6c25cb1;Ignore all eclipse_config directories
+M	.gitignore
+
+hellolee/easymock;88ee317;Upgrade to Android SDK 19
+M	easymock-android-tck/AndroidManifest.xml
+M	easymock-android-tck/pom.xml
+
+hellolee/easymock;b5e576c;Add missing dependency to a jul backport
+M	easymock-integration/pom.xml
+
+hellolee/easymock;cc278f1;Add benchmark
+A	easymock-bench/launch.bat
+A	easymock-bench/pom.xml
+A	easymock-bench/src/main/java/org/easymock/benchmark/Benchmark.java
+
+hellolee/easymock;3ad9a21;Upgrade tools versions
+M	build.txt
+
+hellolee/easymock;0549dbb;Update a bunch of plugins versions
+M	pom.xml
+
+hellolee/easymock;7099919;Upgrade dexmaker
+M	easymock/pom.xml
+
+hellolee/easymock;5a26713;Upgrade slf4j version since it is now a OSGi component
+M	easymock-integration/pom.xml
+M	easymock-integration/src/test/resources/org/springframework/osgi/test/internal/boot-bundles.properties
+
+hellolee/easymock;1d2ee03;Upgrade powermock to 1.5.4
+M	easymock-integration/pom.xml
+
+hellolee/easymock;401e579;Upgrade copyrights to 2014
+M	easymock-classextension/src/main/java/org/easymock/classextension/ConstructorArgs.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/EasyMock.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/EasyMockSupport.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/IMockBuilder.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/IMocksControl.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/internal/MockBuilder.java
+M	easymock-classextension/src/main/java/org/easymock/classextension/internal/MocksClassControl.java
+M	easymock-classextension/src/samples/java/org/easymock/classextension/samples/BasicClassMockTest.java
+M	easymock-classextension/src/samples/java/org/easymock/classextension/samples/ConstructorCalledMockTest.java
+M	easymock-classextension/src/samples/java/org/easymock/classextension/samples/PartialClassMockTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests/MockingTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/ClassExtensionHelperTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/ClassProxyFactoryTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/ConstructorArgsTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/EasyMockClassExtensionTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/EasyMockSupportTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/MockBuilderTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/MockedExceptionTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/MocksControlTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/NopInvocationHandler.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/PartialMockingTest.java
+M	easymock-classextension/src/test/java/org/easymock/classextension/tests2/SerializationTest.java
+M	easymock-integration/src/test/java/org/easymock/itests/InterfaceOnlyTest.java
+M	easymock-integration/src/test/java/org/easymock/itests/OsgiBaseTest.java
+M	easymock-integration/src/test/java/org/easymock/itests/OsgiClassExtensionTest.java
+M	easymock-integration/src/test/java/org/easymock/itests/OsgiTest.java
+M	easymock-integration/src/test/java/org/itests/PowermockTest.java
+M	easymock-integration/src/test/java/org/itests/StaticService.java
+M	easymock/src/main/java/org/easymock/Capture.java
+M	easymock/src/main/java/org/easymock/CaptureType.java
+M	easymock/src/main/java/org/easymock/ConstructorArgs.java
+M	easymock/src/main/java/org/easymock/EasyMock.java
+M	easymock/src/main/java/org/easymock/EasyMockRule.java
+M	easymock/src/main/java/org/easymock/EasyMockRunner.java
+M	easymock/src/main/java/org/easymock/EasyMockSupport.java
+M	easymock/src/main/java/org/easymock/IAnswer.java
+M	easymock/src/main/java/org/easymock/IArgumentMatcher.java
+M	easymock/src/main/java/org/easymock/IExpectationSetters.java
+M	easymock/src/main/java/org/easymock/IMockBuilder.java
+M	easymock/src/main/java/org/easymock/IMocksControl.java
+M	easymock/src/main/java/org/easymock/LogicalOperator.java
+M	easymock/src/main/java/org/easymock/Mock.java
+M	easymock/src/main/java/org/easymock/MockType.java
+M	easymock/src/main/java/org/easymock/TestSubject.java
+M	easymock/src/main/java/org/easymock/internal/AndroidClassProxyFactory.java
+M	easymock/src/main/java/org/easymock/internal/AndroidSupport.java
+M	easymock/src/main/java/org/easymock/internal/ArgumentToString.java
+M	easymock/src/main/java/org/easymock/internal/AssertionErrorWrapper.java
+M	easymock/src/main/java/org/easymock/internal/BridgeMethodResolver.java
+M	easymock/src/main/java/org/easymock/internal/ClassInstantiatorFactory.java
+M	easymock/src/main/java/org/easymock/internal/ClassProxyFactory.java
+M	easymock/src/main/java/org/easymock/internal/DefaultClassInstantiator.java
+M	easymock/src/main/java/org/easymock/internal/EasyMockProperties.java
+M	easymock/src/main/java/org/easymock/internal/EasyMockStatement.java
+M	easymock/src/main/java/org/easymock/internal/ErrorMessage.java
+M	easymock/src/main/java/org/easymock/internal/ExpectedInvocation.java
+M	easymock/src/main/java/org/easymock/internal/ExpectedInvocationAndResult.java
+M	easymock/src/main/java/org/easymock/internal/ExpectedInvocationAndResults.java
+M	easymock/src/main/java/org/easymock/internal/IClassInstantiator.java
+M	easymock/src/main/java/org/easymock/internal/IMocksBehavior.java
+M	easymock/src/main/java/org/easymock/internal/IMocksControlState.java
+M	easymock/src/main/java/org/easymock/internal/IProxyFactory.java
+M	easymock/src/main/java/org/easymock/internal/Injection.java
+M	easymock/src/main/java/org/easymock/internal/InjectionPlan.java
+M	easymock/src/main/java/org/easymock/internal/InjectionTarget.java
+M	easymock/src/main/java/org/easymock/internal/Injector.java
+M	easymock/src/main/java/org/easymock/internal/Invocation.java
+M	easymock/src/main/java/org/easymock/internal/JavaProxyFactory.java
+M	easymock/src/main/java/org/easymock/internal/LastControl.java
+M	easymock/src/main/java/org/easymock/internal/MethodSerializationWrapper.java
+M	easymock/src/main/java/org/easymock/internal/MockBuilder.java
+M	easymock/src/main/java/org/easymock/internal/MockInvocationHandler.java
+M	easymock/src/main/java/org/easymock/internal/MocksBehavior.java
+M	easymock/src/main/java/org/easymock/internal/MocksControl.java
+M	easymock/src/main/java/org/easymock/internal/ObjectMethodsFilter.java
+M	easymock/src/main/java/org/easymock/internal/ObjenesisClassInstantiator.java
+M	easymock/src/main/java/org/easymock/internal/Range.java
+M	easymock/src/main/java/org/easymock/internal/RecordState.java
+M	easymock/src/main/java/org/easymock/internal/ReflectionUtils.java
+M	easymock/src/main/java/org/easymock/internal/ReplayState.java
+M	easymock/src/main/java/org/easymock/internal/Result.java
+M	easymock/src/main/java/org/easymock/internal/Results.java
+M	easymock/src/main/java/org/easymock/internal/RuntimeExceptionWrapper.java
+M	easymock/src/main/java/org/easymock/internal/ThrowableWrapper.java
+M	easymock/src/main/java/org/easymock/internal/UnorderedBehavior.java
+M	easymock/src/main/java/org/easymock/internal/matchers/And.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Any.java
+M	easymock/src/main/java/org/easymock/internal/matchers/ArrayEquals.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Captures.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Compare.java
+M	easymock/src/main/java/org/easymock/internal/matchers/CompareEqual.java
+M	easymock/src/main/java/org/easymock/internal/matchers/CompareTo.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Contains.java
+M	easymock/src/main/java/org/easymock/internal/matchers/EndsWith.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Equals.java
+M	easymock/src/main/java/org/easymock/internal/matchers/EqualsWithDelta.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Find.java
+M	easymock/src/main/java/org/easymock/internal/matchers/GreaterOrEqual.java
+M	easymock/src/main/java/org/easymock/internal/matchers/GreaterThan.java
+M	easymock/src/main/java/org/easymock/internal/matchers/InstanceOf.java
+M	easymock/src/main/java/org/easymock/internal/matchers/LessOrEqual.java
+M	easymock/src/main/java/org/easymock/internal/matchers/LessThan.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Matches.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Not.java
+M	easymock/src/main/java/org/easymock/internal/matchers/NotNull.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Null.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Or.java
+M	easymock/src/main/java/org/easymock/internal/matchers/Same.java
+M	easymock/src/main/java/org/easymock/internal/matchers/StartsWith.java
+M	easymock/src/samples/java/org/easymock/samples/AnnotatedMockWithRuleTest.java
+M	easymock/src/samples/java/org/easymock/samples/AnnotatedMockWithRunnerTest.java
+M	easymock/src/samples/java/org/easymock/samples/BasicClassMockTest.java
+M	easymock/src/samples/java/org/easymock/samples/ClassTested.java
+M	easymock/src/samples/java/org/easymock/samples/Collaborator.java
+M	easymock/src/samples/java/org/easymock/samples/ConstructorCalledMockTest.java
+M	easymock/src/samples/java/org/easymock/samples/ExampleTest.java
+M	easymock/src/samples/java/org/easymock/samples/PartialClassMockTest.java
+M	easymock/src/samples/java/org/easymock/samples/SupportTest.java
+M	easymock/src/samples/java/org/easymock/samples/ThrowableEquals.java
+M	easymock/src/test/java/org/easymock/tests/ArgumentToStringTest.java
+M	easymock/src/test/java/org/easymock/tests/BaseEasyMockRunnerTest.java
+M	easymock/src/test/java/org/easymock/tests/CapturesMatcherTest.java
+M	easymock/src/test/java/org/easymock/tests/CglibTest.java
+M	easymock/src/test/java/org/easymock/tests/ClassInstantiatorFactoryTest.java
+M	easymock/src/test/java/org/easymock/tests/ConstructorTest.java
+M	easymock/src/test/java/org/easymock/tests/DefaultClassInstantiatorTest.java
+M	easymock/src/test/java/org/easymock/tests/ErrorMessageTest.java
+M	easymock/src/test/java/org/easymock/tests/ExpectedMethodCallTest.java
+M	easymock/src/test/java/org/easymock/tests/GenericTest.java
+M	easymock/src/test/java/org/easymock/tests/IMethods.java
+M	easymock/src/test/java/org/easymock/tests/IVarArgs.java
+M	easymock/src/test/java/org/easymock/tests/InvocationTest.java
+M	easymock/src/test/java/org/easymock/tests/LimitationsTest.java
+M	easymock/src/test/java/org/easymock/tests/MatchableArgumentsTest.java
+M	easymock/src/test/java/org/easymock/tests/MethodSerializationWrapperTest.java
+M	easymock/src/test/java/org/easymock/tests/MockClassControlTest.java
+M	easymock/src/test/java/org/easymock/tests/MockNameTest.java
+M	easymock/src/test/java/org/easymock/tests/MockTypeTest.java
+M	easymock/src/test/java/org/easymock/tests/MockingTest.java
+M	easymock/src/test/java/org/easymock/tests/NiceMockControlLongCompatibleReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/NiceMockControlTest.java
+M	easymock/src/test/java/org/easymock/tests/ObjectMethodsTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidDefaultReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidDefaultThrowableTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidRangeTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidStateChangeTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidThrowableTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateInvalidUsageTest.java
+M	easymock/src/test/java/org/easymock/tests/RecordStateMethodCallMissingTest.java
+M	easymock/src/test/java/org/easymock/tests/ReplayStateInvalidCallsTest.java
+M	easymock/src/test/java/org/easymock/tests/ReplayStateInvalidUsageTest.java
+M	easymock/src/test/java/org/easymock/tests/ResultTest.java
+M	easymock/src/test/java/org/easymock/tests/StacktraceTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageCallCountTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageDefaultReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageExpectAndDefaultReturnTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageExpectAndDefaultThrowTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageExpectAndReturnTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageExpectAndThrowTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageFloatingPointReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageLongCompatibleReturnValueTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageOverloadedDefaultValueTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageOverloadedMethodTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageRangeTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageStrictMockTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageThrowableTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageUnorderedTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageVarargTest.java
+M	easymock/src/test/java/org/easymock/tests/UsageVerifyTest.java
+M	easymock/src/test/java/org/easymock/tests/Util.java
+M	easymock/src/test/java/org/easymock/tests2/AnswerTest.java
+M	easymock/src/test/java/org/easymock/tests2/CallbackAndArgumentsTest.java
+M	easymock/src/test/java/org/easymock/tests2/CallbackTest.java
+M	easymock/src/test/java/org/easymock/tests2/CaptureTest.java
+M	easymock/src/test/java/org/easymock/tests2/ChildEquals.java
+M	easymock/src/test/java/org/easymock/tests2/ClassExtensionHelperTest.java
+M	easymock/src/test/java/org/easymock/tests2/CompareToTest.java
+M	easymock/src/test/java/org/easymock/tests2/ConstraintsToStringTest.java
+M	easymock/src/test/java/org/easymock/tests2/ConstructorArgsTest.java
+M	easymock/src/test/java/org/easymock/tests2/DelegateToTest.java
+M	easymock/src/test/java/org/easymock/tests2/DependencyTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockAnnotationsTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockClassExtensionTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockPropertiesTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockRuleTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockRunnerTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockSupportClassTest.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockSupportTest.java
+M	easymock/src/test/java/org/easymock/tests2/FilteringRule.java
+M	easymock/src/test/java/org/easymock/tests2/MockBuilderTest.java
+M	easymock/src/test/java/org/easymock/tests2/MockedExceptionTest.java
+M	easymock/src/test/java/org/easymock/tests2/MocksControlTest.java
+M	easymock/src/test/java/org/easymock/tests2/NameTest.java
+M	easymock/src/test/java/org/easymock/tests2/NiceMockTest.java
+M	easymock/src/test/java/org/easymock/tests2/ParentEquals.java
+M	easymock/src/test/java/org/easymock/tests2/PartialMockingTest.java
+M	easymock/src/test/java/org/easymock/tests2/ReflectionUtilsTest.java
+M	easymock/src/test/java/org/easymock/tests2/SerializationTest.java
+M	easymock/src/test/java/org/easymock/tests2/StubTest.java
+M	easymock/src/test/java/org/easymock/tests2/ThreadingTest.java
+M	easymock/src/test/java/org/easymock/tests2/UsageConstraintsTest.java
+M	easymock/src/test/java/org/easymock/tests2/UsageMatchersTest.java
+M	easymock/src/test/java/org/easymock/tests2/UsageStrictMockTest.java
+M	easymock/src/test/java/org/easymock/tests2/UsageTest.java
+M	website/Documentation.html
+M	website/Downloads.html
+M	website/Error.html
+M	website/License.html
+M	website/Links.html
+M	website/ReleaseNotes.html
+M	website/UserComments.html
+M	website/index.html
+
+hellolee/easymock;850a943;Upgrade Android plugin to 3.8.2
+M	easymock-android-tck/pom.xml
+
+hellolee/easymock;6f069da;Upgrade Powermock to 1.5.3
+M	easymock-integration/pom.xml
+
+hellolee/easymock;768a60e;Migrate to android plugin 3.8.1
+M	easymock-android-tck/pom.xml
+M	pom.xml
+
+hellolee/easymock;99fe339;Missing doc for 3.2
+M	website/Documentation.html
+
+hellolee/easymock;2532f69;Remove spaces
+M	pom.xml
+
+hellolee/easymock;65cddb8;Add support for running with Robolectric.
+M	easymock-android-tck/pom.xml
+M	easymock-android-tck/src/org/easymock/android/AndroidTck.java
+M	easymock/src/main/java/org/easymock/internal/AndroidSupport.java
+
+hellolee/easymock;fc7f63a;Upgrade Maven version used
+M	build.txt
+
+hellolee/easymock;35cee6a;Merge pull request #4 from Todderz/qualified-injection
+hellolee/easymock;4a4f269;Correct test expectation order
+M	easymock/src/test/java/org/easymock/tests2/EasyMockAnnotationsTest.java
+
+hellolee/easymock;050c40a;Add fieldName qualifier to support injection
+M	easymock/src/main/java/org/easymock/EasyMockSupport.java
+A	easymock/src/main/java/org/easymock/internal/Injection.java
+A	easymock/src/main/java/org/easymock/internal/InjectionPlan.java
+A	easymock/src/main/java/org/easymock/internal/InjectionTarget.java
+A	easymock/src/main/java/org/easymock/internal/Injector.java
+M	easymock/src/test/java/org/easymock/tests2/EasyMockAnnotationsTest.java
+
+hellolee/easymock;e772f49;Documentation for annotation element usage
+M	easymock/src/site/Documentation.html
+
+hellolee/easymock;2e6793d;Add fieldName element as injection qualifier
+M	easymock/src/main/java/org/easymock/Mock.java
+
+hellolee/easymock;1feec2d;Fix the easymock github url
+M	website/index.html
+
+hellolee/easymock;b5c0ba7;Little typo here
+M	easymock/src/main/java/org/easymock/EasyMockSupport.java
+
+hellolee/easymock;925c718;Upgrade android-maven-plugin
+M	easymock-android-tck/pom.xml
+
+hellolee/easymock;116e8f9;Upgrade objenesis to 2.1 (#EASYMOCK-130)
+M	easymock/pom.xml
+
+hellolee/easymock;7acc2a3;Nice 3.7.1 version for OSGi
+M	easymock-integration/pom.xml
+
+hellolee/easymock;06cceb0;Push the warning down
+M	easymock/src/test/java/org/easymock/tests2/MocksControlTest.java
+
+hellolee/easymock;13cf701;Rename to have the same naming pattern as the rule
+R092	easymock/src/samples/java/org/easymock/samples/AnnotatedMockTest.java	easymock/src/samples/java/org/easymock/samples/AnnotatedMockWithRunnerTest.java
+
+hellolee/easymock;02c647a;Documentation for the new runner
+M	easymock/src/site/Documentation.html
+M	easymock/src/site/Documentation_fr.html
+
+hellolee/easymock;8324c2e;Not an inner class anymore by still by copyright ;-)
+M	easymock/src/main/java/org/easymock/internal/EasyMockStatement.java
+
+hellolee/easymock;c607dc3;Configure lifecycle for dependency plugin
+M	easymock-test-deploy/pom.xml
+
+hellolee/easymock;73c6753;Merge pull request #2 from Todderz/simple-rule

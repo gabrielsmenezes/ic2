@@ -1,0 +1,30 @@
+hycom-hybris/Activiti;7c18d7655;Changed Users and Groups datasource to Hybris REST Services
+M	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/ActivitiEngineConfiguration.java
+M	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/ApplicationConfiguration.java
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/RESTConfigurator.java
+M	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/ResourceServer.java
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/factory/HybrisGroupManagerFactory.java
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/factory/HybrisUserManagerFactory.java
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/factory/manager/HybrisGroupManager.java
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/factory/manager/HybrisRESTManager.java
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/factory/manager/HybrisUserManager.java
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/factory/manager/wrapper/HybrisGroupManagerWrapper.java
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/factory/manager/wrapper/HybrisUserManagerWrapper.java
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/util/XmlUtil.java
+A	modules/activiti-webapp-rest2/src/main/resources/security.properties
+
+hycom-hybris/Activiti;a5a399ebb;Configured Resource Server to allow only trusted requests with ROLE_ACTIVITIADMIN authority
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/ResourceServer.java
+A	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/SecurityConfiguration.java
+
+hycom-hybris/Activiti;acc3aaff5;ADDED OAUTH2 SECURITY FOR ALL REST ENDPOINTS
+M	.gitignore
+M	modules/activiti-explorer/src/main/java/org/activiti/explorer/ui/task/data/HistoricTaskWrapper.java
+M	modules/activiti-rest/pom.xml
+D	modules/activiti-rest/src/test/java/org/activiti/rest/conf/common/SecurityConfiguration.java
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api-security/src/main/java/activiti/Application.java
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-basic/src/main/java/org/activiti/spring/boot/RestApiAutoConfiguration.java
+M	modules/activiti-webapp-rest2/pom.xml
+D	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/conf/SecurityConfiguration.java
+M	modules/activiti-webapp-rest2/src/main/resources/log4j.properties
+M	pom.xml

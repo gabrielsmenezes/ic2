@@ -1,0 +1,104 @@
+rkreager/SlyceMessaging;7770478;Added functionality for setting own drawables and also keeping track of message IDs if any
+M	slyce-messaging/src/main/java/it/slyce/messaging/listeners/UserClicksAvatarPictureListener.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+
+rkreager/SlyceMessaging;9ac6e9e;Adding in scheme links (currently only for league)
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/listeners/UserClicksAvatarPictureListener.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/Message.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/externalUser/text/MessageExternalUserTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/text/MessageInternalUserTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/spinner/SpinnerItem.java
+A	slyce-messaging/src/main/java/it/slyce/messaging/utils/PatternEditableBuilder.java
+A	slyce-messaging/src/main/res/layout/activity_web_view.xml
+M	slyce-messaging/src/main/res/layout/item_message_external_text.xml
+M	slyce-messaging/src/main/res/layout/item_message_user_text.xml
+
+rkreager/SlyceMessaging;aa17902;Cleanup layouts for text boxes
+M	slyce-messaging/src/main/res/layout/item_message_external_text.xml
+M	slyce-messaging/src/main/res/layout/item_message_user_text.xml
+
+rkreager/SlyceMessaging;ea9e616;clean up text bubble drawable portion
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+
+rkreager/SlyceMessaging;1b0e194;reduced parameters
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+
+rkreager/SlyceMessaging;570995d;fail-safe
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+
+rkreager/SlyceMessaging;07cabe3;Now added error sending message functionality and also defaulting background (which looks very much like League iOS)
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+A	slyce-messaging/src/main/res/drawable/shape_rounded_rectangle_error.xml
+M	slyce-messaging/src/main/res/drawable/shape_rounded_rectangle_gray.xml
+
+rkreager/SlyceMessaging;fa712ae;Enable getting previous messages and sort by date in AsyncTask
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/asyncTasks/AddNewMessageTask.java
+
+rkreager/SlyceMessaging;21a6e8d;Added ability to remove a message from the recycler view #132701775
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/listeners/UserSendsMessageListener.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/Message.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageRecyclerAdapter.java
+
+rkreager/SlyceMessaging;a37399a;Links in text also clickable along with Shayla's changes
+M	slyce-messaging/src/main/java/it/slyce/messaging/view/text/FontTextView.java
+
+rkreager/SlyceMessaging;a08d0eb;Fixed issue that was causing recycler view to change scroll positions every time timestamps were updated
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/DateUtils.java
+
+rkreager/SlyceMessaging;2234d65;convert to new AS version
+M	build.gradle
+M	gradle/wrapper/gradle-wrapper.properties
+
+rkreager/SlyceMessaging;c8f6dcf;handle null exception
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+rkreager/SlyceMessaging;ec85a53;make edit text public
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+
+rkreager/SlyceMessaging;b309939;changes
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+
+rkreager/SlyceMessaging;f138356;changes
+M	slyce-messaging/src/main/java/it/slyce/messaging/SlyceMessagingFragment.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/externalUser/text/MessageExternalUserTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/text/MessageInternalUserTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java
+M	slyce-messaging/src/main/res/drawable/shape_rounded_rectangle_gray.xml
+M	slyce-messaging/src/main/res/drawable/shape_rounded_rectangle_white.xml
+M	slyce-messaging/src/main/res/layout/item_message_external_text.xml
+M	slyce-messaging/src/main/res/layout/item_message_user_text.xml
+
+rkreager/SlyceMessaging;7fd7828;added a username textfield below the avatar photo
+M	example/src/main/java/it/snipsnap/slyce_messaging_example/MainActivity.java
+M	local.properties
+M	slyce-messaging/.DS_Store
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/MessageViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/externalUser/text/MessageExternalUserTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/media/MessageInternalUserViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/internalUser/text/MessageInternalUserTextViewHolder.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/media/MessageMediaItem.java
+M	slyce-messaging/src/main/java/it/slyce/messaging/message/messageItem/master/text/MessageTextItem.java
+M	slyce-messaging/src/main/res/layout/item_message_external_text.xml
+M	slyce-messaging/src/main/res/layout/item_message_user_text.xml
+
+rkreager/SlyceMessaging;7292dae;differentiate between messages from different user ids
+M	slyce-messaging/src/main/java/it/slyce/messaging/utils/MessageUtils.java

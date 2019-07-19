@@ -1,0 +1,395 @@
+knowledgearc/DSpace;80fdd303b;fix pom.xml for dspace-rest
+M	dspace-rest/pom.xml
+
+knowledgearc/DSpace;386cfc29f;Merge tag 'dspace-5.3' of github.com-junwei1229:DSpace/DSpace into dspace-5.3
+M	.travis.yml
+M	LICENSE
+M	LICENSES_THIRD_PARTY
+M	dspace-api/pom.xml
+M	dspace-api/src/main/java/org/dspace/app/bulkedit/MetadataImport.java
+M	dspace-api/src/main/java/org/dspace/app/launcher/ScriptLauncher.java
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickImageThumbnailFilter.java
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickPdfThumbnailFilter.java
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickThumbnailFilter.java
+M	dspace-api/src/main/java/org/dspace/app/util/GoogleMetadata.java
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeManager.java
+M	dspace-api/src/main/java/org/dspace/browse/SolrBrowseDAO.java
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+M	dspace-api/src/main/java/org/dspace/content/packager/AbstractMETSIngester.java
+M	dspace-api/src/main/java/org/dspace/core/Email.java
+M	dspace-api/src/main/java/org/dspace/discovery/SearchService.java
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/handle/UpdateHandlePrefix.java
+M	dspace-api/src/main/java/org/dspace/identifier/EZIDIdentifierProvider.java
+M	dspace-api/src/main/java/org/dspace/rdf/RDFConsumer.java
+M	dspace-api/src/main/java/org/dspace/statistics/SolrLogger.java
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/MigrationUtils.java
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/migration/V1_3_9__Drop_constraint_for_DSpace_1_4_schema.java
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/migration/V1_5_9__Drop_constraint_for_DSpace_1_6_schema.java
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/migration/V5_0_2014_09_25__DS_1582_Metadata_For_All_Objects_drop_constraint.java
+A	dspace-api/src/main/java/org/dspace/util/SolrImportExport.java
+A	dspace-api/src/main/java/org/dspace/util/SolrImportExportException.java
+M	dspace-api/src/main/java/org/dspace/versioning/AbstractVersionProvider.java
+M	dspace-api/src/main/java/org/dspace/versioning/DefaultItemVersionProvider.java
+M	dspace-api/src/main/java/org/dspace/workflow/WorkflowManager.java
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-api/src/test/java/org/dspace/identifier/EZIDIdentifierProviderTest.java
+M	dspace-jspui/pom.xml
+M	dspace-jspui/src/main/java/org/dspace/app/webui/discovery/DiscoverUtility.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemTag.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/SelectCollectionTag.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/HandleServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/admin/AuthorizeAdminServlet.java
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-policy-edit.jsp
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+M	dspace-jspui/src/main/webapp/static/js/html5shiv.js
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-oai/src/main/java/org/dspace/xoai/app/XOAI.java
+M	dspace-oai/src/main/java/org/dspace/xoai/controller/DSpaceOAIDataProvider.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceAtLeastOneMetadataFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceAuthorizationFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceMetadataExistsFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceSetSpecFilter.java
+A	dspace-oai/src/main/java/org/dspace/xoai/filter/DSpaceWithdrawnFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/NotFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/filter/OrFilter.java
+M	dspace-oai/src/main/java/org/dspace/xoai/services/impl/database/DSpaceDatabaseQueryResolver.java
+M	dspace-oai/src/main/java/org/dspace/xoai/services/impl/xoai/BaseDSpaceFilterResolver.java
+M	dspace-oai/src/main/java/org/dspace/xoai/services/impl/xoai/DSpaceRepositoryConfiguration.java
+M	dspace-oai/src/main/java/org/dspace/xoai/util/DateUtils.java
+M	dspace-oai/src/main/webapp/static/style.xsl
+M	dspace-oai/src/test/java/org/dspace/xoai/tests/unit/services/impl/database/DSpaceDatabaseQueryResolverTest.java
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui-mirage2/src/main/webapp/styles/classic_mirage_color_scheme/_general.scss
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/aspect/artifactbrowser/item-view.xsl
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/aspect/discovery/discovery.xsl
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/forms.xsl
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/page-structure.xsl
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/preprocess/discovery.xsl
+M	dspace-xmlui/pom.xml
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/ItemRequestResponseFalseForm.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/ItemRequestResponseTrueForm.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/AbstractRecentSubmissionTransformer.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/AbstractSearch.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/CollectionRecentSubmissions.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/CommunityRecentSubmissions.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/DiscoveryUIUtils.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/SidebarFacetsTransformer.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/general/HandleAuthorizedMatcher.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/servlet/multipart/DSpaceMultipartParser.java
+M	dspace-xmlui/src/main/resources/aspects/Submission/submission.js
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+M	dspace-xmlui/src/main/webapp/themes/Mirage/lib/xsl/core/page-structure.xsl
+M	dspace/bin/dspace
+M	dspace/bin/dspace.bat
+M	dspace/config/crosswalks/oai/metadataFormats/mets.xsl
+M	dspace/config/crosswalks/oai/xoai.xml
+M	dspace/config/crosswalks/xhtml-head-item.properties
+M	dspace/config/dspace.cfg
+M	dspace/config/launcher.xml
+M	dspace/config/modules/authentication-shibboleth.cfg
+M	dspace/config/spiders/agents/example
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	dspace/solr/statistics/conf/solrconfig.xml
+M	dspace/src/main/assembly/release.xml
+M	dspace/src/main/assembly/src-release.xml
+M	pom.xml
+
+knowledgearc/DSpace;084c0edc3;update the item creation from workspaceitem and support the workflow feature once it's set for collection
+D	dspace-rest/src/main/java/org/dspace/content/Item.java
+M	dspace-rest/src/main/java/org/dspace/rest/entities/ItemEntity.java
+
+knowledgearc/DSpace;ca8314b0c;merged the fix for 500 list items error and OAI index issue.
+M	dspace-oai/src/main/java/org/dspace/xoai/app/XOAI.java
+M	dspace-rest/src/main/java/org/dspace/rest/entities/ItemEntityTrim.java
+M	dspace-rest/src/main/java/org/dspace/rest/providers/AbstractBaseProvider.java
+M	dspace-rest/src/main/java/org/dspace/rest/providers/CollectionsProvider.java
+M	dspace-rest/src/main/java/org/dspace/rest/providers/HarvestProvider.java
+M	dspace-rest/src/main/java/org/dspace/rest/providers/SearchProvider.java
+
+knowledgearc/DSpace;3e5488202;Merge tag 'dspace-5.1' of github.com:DSpace/DSpace into dspace-5.0-rest
+knowledgearc/DSpace;09007146d;[maven-release-plugin] prepare release dspace-5.1
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+knowledgearc/DSpace;e715c6440;Updates to LICENSES_THIRD_PARTY for 5.1
+M	LICENSES_THIRD_PARTY
+
+knowledgearc/DSpace;53ff4510a;[DS-2044] fix cross-site scripting vulnerability and minor related issue (verbose error output, avoid NPE on JSP during an attack)
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/AbstractBrowserServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/BrowserServlet.java
+M	dspace-jspui/src/main/webapp/controlledvocabulary/search.jsp
+M	dspace-jspui/src/main/webapp/search/advanced.jsp
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+M	dspace-jspui/src/main/webapp/search/results.jsp
+
+knowledgearc/DSpace;495031001;DS-2278 : Fix two issues in XMLUI which block proper 404 Page Not Found pages from displaying for some URL patterns
+M	dspace-xmlui/src/main/java/org/dspace/springmvc/ResourceIdentifierController.java
+M	dspace-xmlui/src/main/webapp/sitemap.xmap
+
+knowledgearc/DSpace;97e89384f;Don't close the current sitemap if we never opened one
+M	dspace-api/src/main/java/org/dspace/app/sitemap/AbstractGenerator.java
+
+knowledgearc/DSpace;72913cda7;Fix for DS-2419 JSP UI ignores authorization.admin.usage. Just an incomplete name for the configuration parameter which determines the accessibility of usage statistics.
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/DisplayStatisticsServlet.java
+
+knowledgearc/DSpace;03097aaa3;DS-2448 - Fix for JSPUI path traversal issue from Pascal-Nicolas Becker
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/HandleServlet.java
+
+knowledgearc/DSpace;f6d3f67b5;Add in missing imports from previous commit
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/community-home.jsp
+
+knowledgearc/DSpace;bd966e531;add Discover and Statistics endpoints
+A	dspace-rest/src/main/java/org/dspace/rest/providers/DiscoverProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/StatisticsProvider.java
+M	dspace-rest/src/main/java/org/dspace/rest/servlet/DS16DirectServlet.java
+
+knowledgearc/DSpace;62e0ac462;DS-1702 add code to prevent XSS attach on recent submission
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/community-home.jsp
+M	dspace-jspui/src/main/webapp/home.jsp
+
+knowledgearc/DSpace;54310b014;fixed formatting
+M	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+
+knowledgearc/DSpace;beaf54f62;added synchroniztion for ArrayLists: agents and domains
+M	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+
+knowledgearc/DSpace;114f1e098;XMLUI path bug fixes and security fixes for DS-2445 DS-2130 DS-1896
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/ConcatenationReader.java
+A	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/SafeResourceReader.java
+M	dspace-xmlui/src/main/webapp/sitemap.xmap
+
+knowledgearc/DSpace;1fdfe05c4;clarified the test expression, as a kindness to future generations
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/ControlPanel.java
+
+knowledgearc/DSpace;9c1f91d40;added back null handling, which I inadevertently dropped in favor of emptystring handling
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/ControlPanel.java
+
+knowledgearc/DSpace;39711b332;[DS-2034] refactored notnull method to notempty, at the suggestion of mhwood
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/ControlPanel.java
+
+knowledgearc/DSpace;6cfda147b;[DS-2034] added emptystring handling to the notnull method in ControlPanel.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/ControlPanel.java
+
+knowledgearc/DSpace;eabdc610a;Merge pull request #857 from tdonohue/DS-2427
+knowledgearc/DSpace;da74f5aa7;Add back in missing "canonicalize()" for Oracle
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseUtils.java
+
+knowledgearc/DSpace;14c575a7c;Fix DS-2427 for 5.1 by consolidating problematic code into DatabaseUtils.getSchemaName() so that it can be replaced easily in future. Also cleaned up config comments
+M	build.properties
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseManager.java
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseUtils.java
+M	dspace/config/dspace.cfg
+
+knowledgearc/DSpace;d8c8d28c1;[DS-2438] fixed problem with immense metadata values for oai solr core
+M	dspace/solr/oai/conf/schema.xml
+
+knowledgearc/DSpace;bf56f1f7e;DS-640: Fixes Internal System Error if browse index is missing in JSPUI.
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/BrowserServlet.java
+
+knowledgearc/DSpace;8046d154e;DS-2435: JSPUI send 400 Bad Request for unexisting browse index.
+M	dspace-api/src/main/java/org/dspace/browse/BrowserScope.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/AbstractBrowserServlet.java
+
+knowledgearc/DSpace;f4a29c4af;update the rest api call based on v5 core codes.
+M	dspace-api/src/main/java/org/dspace/content/Item.java
+M	dspace-rest/pom.xml
+A	dspace-rest/src/main/java/org/dspace/content/Item.java
+M	dspace-rest/src/main/java/org/dspace/rest/content/ContentHelper.java
+
+knowledgearc/DSpace;0b569af25;Remove the REST API and replaced with ours. Fix the compile issue and conflicts.
+D	dspace-rest/README.md
+M	dspace-rest/pom.xml
+D	dspace-rest/src/main/java/org/dspace/rest/BitstreamResource.java
+D	dspace-rest/src/main/java/org/dspace/rest/CollectionsResource.java
+D	dspace-rest/src/main/java/org/dspace/rest/CommunitiesResource.java
+D	dspace-rest/src/main/java/org/dspace/rest/HandleResource.java
+D	dspace-rest/src/main/java/org/dspace/rest/ItemsResource.java
+D	dspace-rest/src/main/java/org/dspace/rest/Resource.java
+D	dspace-rest/src/main/java/org/dspace/rest/RestIndex.java
+D	dspace-rest/src/main/java/org/dspace/rest/TokenHolder.java
+D	dspace-rest/src/main/java/org/dspace/rest/common/Bitstream.java
+D	dspace-rest/src/main/java/org/dspace/rest/common/CheckSum.java
+D	dspace-rest/src/main/java/org/dspace/rest/common/Collection.java
+D	dspace-rest/src/main/java/org/dspace/rest/common/Community.java
+D	dspace-rest/src/main/java/org/dspace/rest/common/DSpaceObject.java
+D	dspace-rest/src/main/java/org/dspace/rest/common/Item.java
+D	dspace-rest/src/main/java/org/dspace/rest/common/MetadataEntry.java
+D	dspace-rest/src/main/java/org/dspace/rest/common/ResourcePolicy.java
+D	dspace-rest/src/main/java/org/dspace/rest/common/Status.java
+D	dspace-rest/src/main/java/org/dspace/rest/common/User.java
+M	dspace-rest/src/main/java/org/dspace/rest/entities/ItemEntity.java
+D	dspace-rest/src/main/java/org/dspace/rest/exceptions/ContextException.java
+D	dspace-rest/src/main/webapp/WEB-INF/applicationContext.xml
+M	dspace-rest/src/main/webapp/WEB-INF/web.xml
+M	dspace/modules/rest/pom.xml
+
+knowledgearc/DSpace;1906902d5;Merge tag 'dspace-5.0' of https://github.com/DSpace/DSpace into dspace-5.0-rest
+knowledgearc/DSpace;589117e20;Add canonicalize for "db.schema" property
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseManager.java
+
+knowledgearc/DSpace;e9e5423f9;[DS-2425] fixed typos in xoai.xml
+M	dspace/config/crosswalks/oai/xoai.xml
+
+knowledgearc/DSpace;c08f447ce;ResumptionToken link for other verbs
+M	dspace-oai/src/main/webapp/static/style.xsl
+
+knowledgearc/DSpace;cf2517515;[maven-release-plugin] prepare for next development iteration
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-lni/dspace-lni-client/pom.xml
+M	dspace-lni/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/lni/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+knowledgearc/DSpace;28c3a003c;Fix sonatype error.
+M	pom.xml
+
+knowledgearc/DSpace;3ebf67bb2;Merged DSpace REST API
+M	dspace-api/src/main/java/org/dspace/content/Item.java
+A	dspace-rest/pom.xml
+A	dspace-rest/src/main/java/org/azeckoski/reflectutils/transcoders/JSONTranscoder.java
+A	dspace-rest/src/main/java/org/azeckoski/reflectutils/transcoders/XMLTranscoder.java
+A	dspace-rest/src/main/java/org/dspace/rest/content/ContentHelper.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/BitstreamEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/BitstreamEntityId.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/BundleEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/BundleEntityId.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/CollectionEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/CollectionEntityC.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/CollectionEntityId.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/CollectionEntityTrim.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/CollectionEntityTrimC.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/CommunityEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/CommunityEntityId.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/CommunityEntityTrim.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/GroupEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/GroupEntityId.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/GroupEntityTrim.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/HarvestResultsInfoEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/ItemEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/ItemEntityId.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/ItemEntityTrim.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/MetadataEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/MetadataEntityId.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/MetadataFieldEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/PolicyEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/PolicyEntityId.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/SearchResultsInfoEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/StatReport.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/StatsEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/SubmissionEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/UserEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/UserEntityId.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/UserEntityTrim.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/WorkflowEntity.java
+A	dspace-rest/src/main/java/org/dspace/rest/entities/WorkflowEntityId.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/AbstractBaseProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/AbstractRESTProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/BitstreamProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/CollectionsProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/CommunitiesProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/GroupProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/HarvestProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/ItemsProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/SearchProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/StatsProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/SubmissionProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/UserProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/providers/WorkflowProvider.java
+A	dspace-rest/src/main/java/org/dspace/rest/servlet/DS16DirectServlet.java
+A	dspace-rest/src/main/java/org/dspace/rest/util/GenComparator.java
+A	dspace-rest/src/main/java/org/dspace/rest/util/RecentSubmissions.java
+A	dspace-rest/src/main/java/org/dspace/rest/util/RecentSubmissionsException.java
+A	dspace-rest/src/main/java/org/dspace/rest/util/RecentSubmissionsManager.java
+A	dspace-rest/src/main/java/org/dspace/rest/util/RestTest.java
+A	dspace-rest/src/main/java/org/dspace/rest/util/UserRequestParams.java
+A	dspace-rest/src/main/java/org/dspace/rest/util/UtilHelper.java
+A	dspace-rest/src/main/java/org/dspace/rest/util/Utils.java
+A	dspace-rest/src/main/java/org/sakaiproject/entitybus/rest/EntityEncodingManager.java
+A	dspace-rest/src/main/java/org/sakaiproject/entitybus/util/EntityDataUtils.java
+A	dspace-rest/src/main/java/org/sakaiproject/entitybus/util/request/RequestUtils.java
+A	dspace-rest/src/main/resources/bitstream.properties
+A	dspace-rest/src/main/resources/collections.properties
+A	dspace-rest/src/main/resources/communities.properties
+A	dspace-rest/src/main/resources/describe.properties
+A	dspace-rest/src/main/resources/harvest.properties
+A	dspace-rest/src/main/resources/items.properties
+A	dspace-rest/src/main/resources/log4j.properties
+A	dspace-rest/src/main/resources/search.properties
+A	dspace-rest/src/main/resources/stats.properties
+A	dspace-rest/src/main/resources/users.properties
+A	dspace-rest/src/main/webapp/WEB-INF/web.xml
+M	dspace/modules/pom.xml
+A	dspace/modules/rest/pom.xml
+A	dspace/modules/rest/src/main/webapp/.gitignore
+M	pom.xml

@@ -1,0 +1,254 @@
+jonmcewen/raven-java;d132a246;Revert "Move to io.sentry group, sentry-java artifact, 1.0.0 version. (#377)"
+M	CHANGES
+M	LICENSE
+M	README.md
+M	docs/conf.py
+M	docs/config.rst
+M	docs/context.rst
+M	docs/index.rst
+M	docs/modules/android.rst
+M	docs/modules/appengine.rst
+M	docs/modules/index.rst
+M	docs/modules/log4j.rst
+M	docs/modules/log4j2.rst
+M	docs/modules/logback.rst
+M	docs/modules/raven.rst
+M	docs/sentry-doc-config.json
+M	docs/usage.rst
+M	pom.xml
+R086	sentry-android/README.md	raven-android/README.md
+R084	sentry-android/pom.xml	raven-android/pom.xml
+A	raven-android/src/main/java/com/getsentry/raven/android/AndroidRavenFactory.java
+R056	sentry-android/src/main/java/io/sentry/android/Sentry.java	raven-android/src/main/java/com/getsentry/raven/android/Raven.java
+R069	sentry-android/src/main/java/io/sentry/android/SentryUncaughtExceptionHandler.java	raven-android/src/main/java/com/getsentry/raven/android/RavenUncaughtExceptionHandler.java
+R088	sentry-android/src/main/java/io/sentry/android/Util.java	raven-android/src/main/java/com/getsentry/raven/android/Util.java
+R097	sentry-android/src/main/java/io/sentry/android/event/helper/AndroidEventBuilderHelper.java	raven-android/src/main/java/com/getsentry/raven/android/event/helper/AndroidEventBuilderHelper.java
+R073	sentry-android/src/test/java/io/sentry/android/AndroidTest.java	raven-android/src/test/java/com/getsentry/raven/android/AndroidTest.java
+R082	sentry-android/src/test/java/io/sentry/android/SentryIT.java	raven-android/src/test/java/com/getsentry/raven/android/RavenIT.java
+R064	sentry-android/src/test/java/io/sentry/android/SentryITActivity.java	raven-android/src/test/java/com/getsentry/raven/android/RavenITActivity.java
+R085	sentry-appengine/README.md	raven-appengine/README.md
+R080	sentry-appengine/pom.xml	raven-appengine/pom.xml
+R062	sentry-appengine/src/main/java/io/sentry/appengine/AppEngineSentryFactory.java	raven-appengine/src/main/java/com/getsentry/raven/appengine/AppEngineRavenFactory.java
+R091	sentry-appengine/src/main/java/io/sentry/appengine/connection/AppEngineAsyncConnection.java	raven-appengine/src/main/java/com/getsentry/raven/appengine/connection/AppEngineAsyncConnection.java
+R087	sentry-appengine/src/main/java/io/sentry/appengine/event/helper/AppEngineEventBuilderHelper.java	raven-appengine/src/main/java/com/getsentry/raven/appengine/event/helper/AppEngineEventBuilderHelper.java
+A	raven-appengine/src/main/resources/META-INF/services/com.getsentry.raven.RavenFactory
+R061	sentry-appengine/src/test/java/io/sentry/appengine/AppEngineSentryFactoryTest.java	raven-appengine/src/test/java/com/getsentry/raven/appengine/AppEngineRavenFactoryTest.java
+R096	sentry-appengine/src/test/java/io/sentry/appengine/connection/AppEngineAsyncConnectionTest.java	raven-appengine/src/test/java/com/getsentry/raven/appengine/connection/AppEngineAsyncConnectionTest.java
+R096	sentry-appengine/src/test/java/io/sentry/appengine/event/helper/AppEngineEventBuilderHelperTest.java	raven-appengine/src/test/java/com/getsentry/raven/appengine/event/helper/AppEngineEventBuilderHelperTest.java
+R074	sentry-appengine/src/test/resources/logback-test.xml	raven-appengine/src/test/resources/logback-test.xml
+R087	sentry-log4j/README.md	raven-log4j/README.md
+R089	sentry-log4j/pom.xml	raven-log4j/pom.xml
+R082	sentry-log4j/src/main/java/io/sentry/log4j/SentryAppender.java	raven-log4j/src/main/java/com/getsentry/raven/log4j/SentryAppender.java
+R095	sentry-log4j/src/test/java/io/sentry/log4j/MockUpErrorHandler.java	raven-log4j/src/test/java/com/getsentry/raven/log4j/MockUpErrorHandler.java
+R081	sentry-log4j/src/test/java/io/sentry/log4j/SentryAppenderCloseTest.java	raven-log4j/src/test/java/com/getsentry/raven/log4j/SentryAppenderCloseTest.java
+R072	sentry-log4j/src/test/java/io/sentry/log4j/SentryAppenderDsnTest.java	raven-log4j/src/test/java/com/getsentry/raven/log4j/SentryAppenderDsnTest.java
+R089	sentry-log4j/src/test/java/io/sentry/log4j/SentryAppenderEventBuildingTest.java	raven-log4j/src/test/java/com/getsentry/raven/log4j/SentryAppenderEventBuildingTest.java
+R065	sentry-log4j/src/test/java/io/sentry/log4j/SentryAppenderFailuresTest.java	raven-log4j/src/test/java/com/getsentry/raven/log4j/SentryAppenderFailuresTest.java
+R078	sentry-log4j/src/test/java/io/sentry/log4j/SentryAppenderIT.java	raven-log4j/src/test/java/com/getsentry/raven/log4j/SentryAppenderIT.java
+R050	sentry-log4j/src/test/resources/log4j-integration.properties	raven-log4j/src/test/resources/log4j-integration.properties
+R064	sentry-log4j/src/test/resources/log4j-test.properties	raven-log4j/src/test/resources/log4j-test.properties
+R084	sentry-log4j2/README.md	raven-log4j2/README.md
+R089	sentry-log4j2/pom.xml	raven-log4j2/pom.xml
+R083	sentry-log4j2/src/main/java/io/sentry/log4j2/SentryAppender.java	raven-log4j2/src/main/java/com/getsentry/raven/log4j2/SentryAppender.java
+R095	sentry-log4j2/src/test/java/io/sentry/log4j2/MockUpErrorHandler.java	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/MockUpErrorHandler.java
+R082	sentry-log4j2/src/test/java/io/sentry/log4j2/SentryAppenderCloseTest.java	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/SentryAppenderCloseTest.java
+R072	sentry-log4j2/src/test/java/io/sentry/log4j2/SentryAppenderDsnTest.java	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/SentryAppenderDsnTest.java
+R088	sentry-log4j2/src/test/java/io/sentry/log4j2/SentryAppenderEventBuildingTest.java	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/SentryAppenderEventBuildingTest.java
+R066	sentry-log4j2/src/test/java/io/sentry/log4j2/SentryAppenderFailuresTest.java	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/SentryAppenderFailuresTest.java
+R078	sentry-log4j2/src/test/java/io/sentry/log4j2/SentryAppenderIT.java	raven-log4j2/src/test/java/com/getsentry/raven/log4j2/SentryAppenderIT.java
+R063	sentry-log4j2/src/test/resources/log4j2-integration.xml	raven-log4j2/src/test/resources/log4j2-integration.xml
+R062	sentry-log4j2/src/test/resources/log4j2-test.xml	raven-log4j2/src/test/resources/log4j2-test.xml
+R086	sentry-logback/README.md	raven-logback/README.md
+R088	sentry-logback/pom.xml	raven-logback/pom.xml
+R085	sentry-logback/src/main/java/io/sentry/logback/SentryAppender.java	raven-logback/src/main/java/com/getsentry/raven/logback/SentryAppender.java
+R099	sentry-logback/src/test/java/io/sentry/logback/MockUpLoggingEvent.java	raven-logback/src/test/java/com/getsentry/raven/logback/MockUpLoggingEvent.java
+R096	sentry-logback/src/test/java/io/sentry/logback/MockUpStatusPrinter.java	raven-logback/src/test/java/com/getsentry/raven/logback/MockUpStatusPrinter.java
+R084	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderCloseTest.java	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderCloseTest.java
+R077	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderDsnTest.java	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderDsnTest.java
+R085	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderEventBuildingTest.java	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderEventBuildingTest.java
+R090	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderEventLevelFilterTest.java	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderEventLevelFilterTest.java
+R071	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderFailuresTest.java	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderFailuresTest.java
+R078	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderIT.java	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderIT.java
+R070	sentry-logback/src/test/resources/logback-integration.xml	raven-logback/src/test/resources/logback-integration.xml
+R074	sentry-logback/src/test/resources/logback-test.xml	raven-logback/src/test/resources/logback-test.xml
+R056	sentry/README.md	raven/README.md
+R095	sentry/pom.xml	raven/pom.xml
+R089	sentry/src/main/java/io/sentry/DefaultSentryFactory.java	raven/src/main/java/com/getsentry/raven/DefaultRavenFactory.java
+R076	sentry/src/main/java/io/sentry/Sentry.java	raven/src/main/java/com/getsentry/raven/Raven.java
+A	raven/src/main/java/com/getsentry/raven/RavenFactory.java
+R071	sentry/src/main/java/io/sentry/buffer/Buffer.java	raven/src/main/java/com/getsentry/raven/buffer/Buffer.java
+R097	sentry/src/main/java/io/sentry/buffer/DiskBuffer.java	raven/src/main/java/com/getsentry/raven/buffer/DiskBuffer.java
+R097	sentry/src/main/java/io/sentry/config/JndiLookup.java	raven/src/main/java/com/getsentry/raven/config/JndiLookup.java
+R095	sentry/src/main/java/io/sentry/config/Lookup.java	raven/src/main/java/com/getsentry/raven/config/Lookup.java
+R094	sentry/src/main/java/io/sentry/connection/AbstractConnection.java	raven/src/main/java/com/getsentry/raven/connection/AbstractConnection.java
+R091	sentry/src/main/java/io/sentry/connection/AsyncConnection.java	raven/src/main/java/com/getsentry/raven/connection/AsyncConnection.java
+R095	sentry/src/main/java/io/sentry/connection/BufferedConnection.java	raven/src/main/java/com/getsentry/raven/connection/BufferedConnection.java
+R089	sentry/src/main/java/io/sentry/connection/Connection.java	raven/src/main/java/com/getsentry/raven/connection/Connection.java
+R086	sentry/src/main/java/io/sentry/connection/ConnectionException.java	raven/src/main/java/com/getsentry/raven/connection/ConnectionException.java
+R084	sentry/src/main/java/io/sentry/connection/EventSampler.java	raven/src/main/java/com/getsentry/raven/connection/EventSampler.java
+R085	sentry/src/main/java/io/sentry/connection/EventSendFailureCallback.java	raven/src/main/java/com/getsentry/raven/connection/EventSendFailureCallback.java
+R096	sentry/src/main/java/io/sentry/connection/HttpConnection.java	raven/src/main/java/com/getsentry/raven/connection/HttpConnection.java
+R096	sentry/src/main/java/io/sentry/connection/LockdownManager.java	raven/src/main/java/com/getsentry/raven/connection/LockdownManager.java
+R089	sentry/src/main/java/io/sentry/connection/LockedDownException.java	raven/src/main/java/com/getsentry/raven/connection/LockedDownException.java
+R084	sentry/src/main/java/io/sentry/connection/NoopConnection.java	raven/src/main/java/com/getsentry/raven/connection/NoopConnection.java
+R086	sentry/src/main/java/io/sentry/connection/OutputStreamConnection.java	raven/src/main/java/com/getsentry/raven/connection/OutputStreamConnection.java
+R094	sentry/src/main/java/io/sentry/connection/ProxyAuthenticator.java	raven/src/main/java/com/getsentry/raven/connection/ProxyAuthenticator.java
+R095	sentry/src/main/java/io/sentry/connection/RandomEventSampler.java	raven/src/main/java/com/getsentry/raven/connection/RandomEventSampler.java
+R091	sentry/src/main/java/io/sentry/context/Context.java	raven/src/main/java/com/getsentry/raven/context/Context.java
+R084	sentry/src/main/java/io/sentry/context/ContextManager.java	raven/src/main/java/com/getsentry/raven/context/ContextManager.java
+R092	sentry/src/main/java/io/sentry/context/SingletonContextManager.java	raven/src/main/java/com/getsentry/raven/context/SingletonContextManager.java
+R094	sentry/src/main/java/io/sentry/context/ThreadLocalContextManager.java	raven/src/main/java/com/getsentry/raven/context/ThreadLocalContextManager.java
+R099	sentry/src/main/java/io/sentry/dsn/Dsn.java	raven/src/main/java/com/getsentry/raven/dsn/Dsn.java
+R095	sentry/src/main/java/io/sentry/dsn/InvalidDsnException.java	raven/src/main/java/com/getsentry/raven/dsn/InvalidDsnException.java
+A	raven/src/main/java/com/getsentry/raven/environment/RavenEnvironment.java
+R099	sentry/src/main/java/io/sentry/event/Breadcrumb.java	raven/src/main/java/com/getsentry/raven/event/Breadcrumb.java
+R098	sentry/src/main/java/io/sentry/event/BreadcrumbBuilder.java	raven/src/main/java/com/getsentry/raven/event/BreadcrumbBuilder.java
+R074	sentry/src/main/java/io/sentry/event/Breadcrumbs.java	raven/src/main/java/com/getsentry/raven/event/Breadcrumbs.java
+R099	sentry/src/main/java/io/sentry/event/Event.java	raven/src/main/java/com/getsentry/raven/event/Event.java
+R098	sentry/src/main/java/io/sentry/event/EventBuilder.java	raven/src/main/java/com/getsentry/raven/event/EventBuilder.java
+R096	sentry/src/main/java/io/sentry/event/User.java	raven/src/main/java/com/getsentry/raven/event/User.java
+R097	sentry/src/main/java/io/sentry/event/UserBuilder.java	raven/src/main/java/com/getsentry/raven/event/UserBuilder.java
+R092	sentry/src/main/java/io/sentry/event/helper/BasicRemoteAddressResolver.java	raven/src/main/java/com/getsentry/raven/event/helper/BasicRemoteAddressResolver.java
+R065	sentry/src/main/java/io/sentry/event/helper/ContextBuilderHelper.java	raven/src/main/java/com/getsentry/raven/event/helper/ContextBuilderHelper.java
+R081	sentry/src/main/java/io/sentry/event/helper/EventBuilderHelper.java	raven/src/main/java/com/getsentry/raven/event/helper/EventBuilderHelper.java
+R093	sentry/src/main/java/io/sentry/event/helper/ForwardedAddressResolver.java	raven/src/main/java/com/getsentry/raven/event/helper/ForwardedAddressResolver.java
+R085	sentry/src/main/java/io/sentry/event/helper/HttpEventBuilderHelper.java	raven/src/main/java/com/getsentry/raven/event/helper/HttpEventBuilderHelper.java
+R079	sentry/src/main/java/io/sentry/event/helper/RemoteAddressResolver.java	raven/src/main/java/com/getsentry/raven/event/helper/RemoteAddressResolver.java
+R097	sentry/src/main/java/io/sentry/event/interfaces/ExceptionInterface.java	raven/src/main/java/com/getsentry/raven/event/interfaces/ExceptionInterface.java
+R095	sentry/src/main/java/io/sentry/event/interfaces/HttpInterface.java	raven/src/main/java/com/getsentry/raven/event/interfaces/HttpInterface.java
+R086	sentry/src/main/java/io/sentry/event/interfaces/MessageInterface.java	raven/src/main/java/com/getsentry/raven/event/interfaces/MessageInterface.java
+R099	sentry/src/main/java/io/sentry/event/interfaces/SentryException.java	raven/src/main/java/com/getsentry/raven/event/interfaces/SentryException.java
+R087	sentry/src/main/java/io/sentry/event/interfaces/SentryInterface.java	raven/src/main/java/com/getsentry/raven/event/interfaces/SentryInterface.java
+R092	sentry/src/main/java/io/sentry/event/interfaces/StackTraceInterface.java	raven/src/main/java/com/getsentry/raven/event/interfaces/StackTraceInterface.java
+R097	sentry/src/main/java/io/sentry/event/interfaces/UserInterface.java	raven/src/main/java/com/getsentry/raven/event/interfaces/UserInterface.java
+R083	sentry/src/main/java/io/sentry/jul/SentryHandler.java	raven/src/main/java/com/getsentry/raven/jul/SentryHandler.java
+R095	sentry/src/main/java/io/sentry/marshaller/Marshaller.java	raven/src/main/java/com/getsentry/raven/marshaller/Marshaller.java
+R091	sentry/src/main/java/io/sentry/marshaller/json/ExceptionInterfaceBinding.java	raven/src/main/java/com/getsentry/raven/marshaller/json/ExceptionInterfaceBinding.java
+R097	sentry/src/main/java/io/sentry/marshaller/json/HttpInterfaceBinding.java	raven/src/main/java/com/getsentry/raven/marshaller/json/HttpInterfaceBinding.java
+R087	sentry/src/main/java/io/sentry/marshaller/json/InterfaceBinding.java	raven/src/main/java/com/getsentry/raven/marshaller/json/InterfaceBinding.java
+R097	sentry/src/main/java/io/sentry/marshaller/json/JsonMarshaller.java	raven/src/main/java/com/getsentry/raven/marshaller/json/JsonMarshaller.java
+R092	sentry/src/main/java/io/sentry/marshaller/json/MessageInterfaceBinding.java	raven/src/main/java/com/getsentry/raven/marshaller/json/MessageInterfaceBinding.java
+R096	sentry/src/main/java/io/sentry/marshaller/json/StackTraceInterfaceBinding.java	raven/src/main/java/com/getsentry/raven/marshaller/json/StackTraceInterfaceBinding.java
+R090	sentry/src/main/java/io/sentry/marshaller/json/UserInterfaceBinding.java	raven/src/main/java/com/getsentry/raven/marshaller/json/UserInterfaceBinding.java
+A	raven/src/main/java/com/getsentry/raven/servlet/RavenServletContainerInitializer.java
+R073	sentry/src/main/java/io/sentry/servlet/SentryServletRequestListener.java	raven/src/main/java/com/getsentry/raven/servlet/RavenServletRequestListener.java
+R092	sentry/src/main/java/io/sentry/time/Clock.java	raven/src/main/java/com/getsentry/raven/time/Clock.java
+R096	sentry/src/main/java/io/sentry/time/FixedClock.java	raven/src/main/java/com/getsentry/raven/time/FixedClock.java
+R090	sentry/src/main/java/io/sentry/time/SystemClock.java	raven/src/main/java/com/getsentry/raven/time/SystemClock.java
+R099	sentry/src/main/java/io/sentry/util/Base64.java	raven/src/main/java/com/getsentry/raven/util/Base64.java
+R099	sentry/src/main/java/io/sentry/util/Base64OutputStream.java	raven/src/main/java/com/getsentry/raven/util/Base64OutputStream.java
+R099	sentry/src/main/java/io/sentry/util/CircularFifoQueue.java	raven/src/main/java/com/getsentry/raven/util/CircularFifoQueue.java
+R098	sentry/src/main/java/io/sentry/util/Util.java	raven/src/main/java/com/getsentry/raven/util/Util.java
+A	raven/src/main/resources/META-INF/services/com.getsentry.raven.RavenFactory
+A	raven/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer
+R100	sentry/src/main/resources/sentry-build.properties	raven/src/main/resources/raven-build.properties
+R087	sentry/src/test/java/io/sentry/BaseIT.java	raven/src/test/java/com/getsentry/raven/BaseIT.java
+R097	sentry/src/test/java/io/sentry/BaseTest.java	raven/src/test/java/com/getsentry/raven/BaseTest.java
+R090	sentry/src/test/java/io/sentry/ContextTest.java	raven/src/test/java/com/getsentry/raven/ContextTest.java
+R055	sentry/src/test/java/io/sentry/DefaultSentryFactoryTest.java	raven/src/test/java/com/getsentry/raven/DefaultRavenFactoryTest.java
+R052	sentry/src/test/java/io/sentry/SentryFactoryTest.java	raven/src/test/java/com/getsentry/raven/RavenFactoryTest.java
+R078	sentry/src/test/java/io/sentry/SentryTest.java	raven/src/test/java/com/getsentry/raven/RavenTest.java
+R091	sentry/src/test/java/io/sentry/buffer/BufferTest.java	raven/src/test/java/com/getsentry/raven/buffer/BufferTest.java
+R091	sentry/src/test/java/io/sentry/buffer/DiskBufferTest.java	raven/src/test/java/com/getsentry/raven/buffer/DiskBufferTest.java
+R097	sentry/src/test/java/io/sentry/connection/AbstractConnectionTest.java	raven/src/test/java/com/getsentry/raven/connection/AbstractConnectionTest.java
+R090	sentry/src/test/java/io/sentry/connection/AsyncConnectionTest.java	raven/src/test/java/com/getsentry/raven/connection/AsyncConnectionTest.java
+R094	sentry/src/test/java/io/sentry/connection/BufferedConnectionTest.java	raven/src/test/java/com/getsentry/raven/connection/BufferedConnectionTest.java
+R065	sentry/src/test/java/io/sentry/connection/EventSendFailureCallbackTest.java	raven/src/test/java/com/getsentry/raven/connection/EventSendFailureCallbackTest.java
+R095	sentry/src/test/java/io/sentry/connection/HttpConnectionTest.java	raven/src/test/java/com/getsentry/raven/connection/HttpConnectionTest.java
+R086	sentry/src/test/java/io/sentry/connection/OutputStreamConnectionTest.java	raven/src/test/java/com/getsentry/raven/connection/OutputStreamConnectionTest.java
+R089	sentry/src/test/java/io/sentry/connection/RandomEventSamplerTest.java	raven/src/test/java/com/getsentry/raven/connection/RandomEventSamplerTest.java
+R098	sentry/src/test/java/io/sentry/dsn/DsnTest.java	raven/src/test/java/com/getsentry/raven/dsn/DsnTest.java
+R093	sentry/src/test/java/io/sentry/dsn/InitialContextFactory.java	raven/src/test/java/com/getsentry/raven/dsn/InitialContextFactory.java
+A	raven/src/test/java/com/getsentry/raven/environment/RavenEnvironmentTest.java
+R078	sentry/src/test/java/io/sentry/event/BreadcrumbTest.java	raven/src/test/java/com/getsentry/raven/event/BreadcrumbTest.java
+R098	sentry/src/test/java/io/sentry/event/EventBuilderHostnameCacheTest.java	raven/src/test/java/com/getsentry/raven/event/EventBuilderHostnameCacheTest.java
+R099	sentry/src/test/java/io/sentry/event/EventBuilderTest.java	raven/src/test/java/com/getsentry/raven/event/EventBuilderTest.java
+R098	sentry/src/test/java/io/sentry/event/EventTest.java	raven/src/test/java/com/getsentry/raven/event/EventTest.java
+R073	sentry/src/test/java/io/sentry/event/UserTest.java	raven/src/test/java/com/getsentry/raven/event/UserTest.java
+R077	sentry/src/test/java/io/sentry/event/helper/HttpEventBuilderHelperTest.java	raven/src/test/java/com/getsentry/raven/event/helper/HttpEventBuilderHelperTest.java
+R099	sentry/src/test/java/io/sentry/event/interfaces/HttpInterfaceTest.java	raven/src/test/java/com/getsentry/raven/event/interfaces/HttpInterfaceTest.java
+R097	sentry/src/test/java/io/sentry/event/interfaces/MessageInterfaceTest.java	raven/src/test/java/com/getsentry/raven/event/interfaces/MessageInterfaceTest.java
+R096	sentry/src/test/java/io/sentry/event/interfaces/SentryExceptionTest.java	raven/src/test/java/com/getsentry/raven/event/interfaces/SentryExceptionTest.java
+R093	sentry/src/test/java/io/sentry/event/interfaces/StackTraceInterfaceTest.java	raven/src/test/java/com/getsentry/raven/event/interfaces/StackTraceInterfaceTest.java
+R095	sentry/src/test/java/io/sentry/event/interfaces/UserInterfaceTest.java	raven/src/test/java/com/getsentry/raven/event/interfaces/UserInterfaceTest.java
+R090	sentry/src/test/java/io/sentry/helper/RemoteAddressResolverTest.java	raven/src/test/java/com/getsentry/raven/helper/RemoteAddressResolverTest.java
+R086	sentry/src/test/java/io/sentry/jul/SentryHandlerEventBuildingTest.java	raven/src/test/java/com/getsentry/raven/jul/SentryHandlerEventBuildingTest.java
+R077	sentry/src/test/java/io/sentry/jul/SentryHandlerIT.java	raven/src/test/java/com/getsentry/raven/jul/SentryHandlerIT.java
+R097	sentry/src/test/java/io/sentry/marshaller/UncloseableOutputStreamTest.java	raven/src/test/java/com/getsentry/raven/marshaller/UncloseableOutputStreamTest.java
+R090	sentry/src/test/java/io/sentry/marshaller/json/ExceptionInterfaceBindingTest.java	raven/src/test/java/com/getsentry/raven/marshaller/json/ExceptionInterfaceBindingTest.java
+R089	sentry/src/test/java/io/sentry/marshaller/json/HttpInterfaceBindingTest.java	raven/src/test/java/com/getsentry/raven/marshaller/json/HttpInterfaceBindingTest.java
+R098	sentry/src/test/java/io/sentry/marshaller/json/JsonComparisonUtil.java	raven/src/test/java/com/getsentry/raven/marshaller/json/JsonComparisonUtil.java
+R081	sentry/src/test/java/io/sentry/marshaller/json/JsonMarshallerTest.java	raven/src/test/java/com/getsentry/raven/marshaller/json/JsonMarshallerTest.java
+R083	sentry/src/test/java/io/sentry/marshaller/json/MessageInterfaceBindingTest.java	raven/src/test/java/com/getsentry/raven/marshaller/json/MessageInterfaceBindingTest.java
+R088	sentry/src/test/java/io/sentry/marshaller/json/StackTraceInterfaceBindingTest.java	raven/src/test/java/com/getsentry/raven/marshaller/json/StackTraceInterfaceBindingTest.java
+R076	sentry/src/test/java/io/sentry/marshaller/json/UserInterfaceBindingTest.java	raven/src/test/java/com/getsentry/raven/marshaller/json/UserInterfaceBindingTest.java
+R064	sentry/src/test/java/io/sentry/servlet/SentryServletContainerInitializerTest.java	raven/src/test/java/com/getsentry/raven/servlet/RavenServletContainerInitializerTest.java
+R065	sentry/src/test/java/io/sentry/servlet/SentryServletRequestListenerTest.java	raven/src/test/java/com/getsentry/raven/servlet/RavenServletRequestListenerTest.java
+R095	sentry/src/test/java/io/sentry/time/ClockTest.java	raven/src/test/java/com/getsentry/raven/time/ClockTest.java
+R099	sentry/src/test/java/io/sentry/unmarshaller/Base64.java	raven/src/test/java/com/getsentry/raven/unmarshaller/Base64.java
+R099	sentry/src/test/java/io/sentry/unmarshaller/Base64InputStream.java	raven/src/test/java/com/getsentry/raven/unmarshaller/Base64InputStream.java
+R099	sentry/src/test/java/io/sentry/unmarshaller/JsonDecoder.java	raven/src/test/java/com/getsentry/raven/unmarshaller/JsonDecoder.java
+R088	sentry/src/test/java/io/sentry/unmarshaller/JsonUnmarshaller.java	raven/src/test/java/com/getsentry/raven/unmarshaller/JsonUnmarshaller.java
+R051	sentry/src/test/java/io/sentry/unmarshaller/Unmarshaller.java	raven/src/test/java/com/getsentry/raven/unmarshaller/Unmarshaller.java
+R088	sentry/src/test/java/io/sentry/unmarshaller/event/UnmarshalledEvent.java	raven/src/test/java/com/getsentry/raven/unmarshaller/event/UnmarshalledEvent.java
+R085	sentry/src/test/java/io/sentry/unmarshaller/event/interfaces/ExceptionInterface.java	raven/src/test/java/com/getsentry/raven/unmarshaller/event/interfaces/ExceptionInterface.java
+R084	sentry/src/test/java/io/sentry/unmarshaller/event/interfaces/MessageInterface.java	raven/src/test/java/com/getsentry/raven/unmarshaller/event/interfaces/MessageInterface.java
+R094	sentry/src/test/java/io/sentry/unmarshaller/event/interfaces/StackTraceInterface.java	raven/src/test/java/com/getsentry/raven/unmarshaller/event/interfaces/StackTraceInterface.java
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Exception1.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/Exception1.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Exception2.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/Exception2.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Exception3.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/Exception3.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Http1.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/Http1.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Message1.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/Message1.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/StackTrace1.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/StackTrace1.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/StackTrace2.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/StackTrace2.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/StackTrace3.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/StackTrace3.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/User1.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/User1.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testBreadcrumbs.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testBreadcrumbs.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testChecksum.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testChecksum.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testContexts.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testContexts.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testCulprit.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testCulprit.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testEnvironment.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testEnvironment.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testEventId.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testEventId.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraArray.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraArray.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraBoolean.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraBoolean.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraCustomValue.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraCustomValue.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraIterable.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraIterable.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraMap.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraMap.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNull.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraNull.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNullKeyMap.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraNullKeyMap.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNumber.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraNumber.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraObjectKeyMap.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraObjectKeyMap.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraRecursiveArray.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraRecursiveArray.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraRecursiveMap.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraRecursiveMap.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraString.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testExtraString.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testFingerprint.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testFingerprint.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testInterfaceBinding.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testInterfaceBinding.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelDebug.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testLevelDebug.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelError.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testLevelError.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelFatal.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testLevelFatal.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelInfo.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testLevelInfo.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelWarning.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testLevelWarning.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLogger.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testLogger.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testMessage.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testMessage.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testPlatform.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testPlatform.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testRelease.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testRelease.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testSdk.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testSdk.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testServerName.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testServerName.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTags.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testTags.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTimestamp.json	raven/src/test/resources/com/getsentry/raven/marshaller/json/jsonmarshallertest/testTimestamp.json
+A	raven/src/test/resources/jndi.properties
+A	raven/src/test/resources/logging-integration.properties
+R070	sentry/src/test/resources/logging-test.properties	raven/src/test/resources/logging-test.properties
+R100	sentry/src/test/resources/sentry-build.properties	raven/src/test/resources/raven-build.properties
+D	sentry-android/src/main/java/io/sentry/android/AndroidSentryFactory.java
+D	sentry-appengine/src/main/resources/META-INF/services/io.sentry.SentryFactory
+D	sentry/src/main/java/io/sentry/SentryFactory.java
+D	sentry/src/main/java/io/sentry/environment/SentryEnvironment.java
+D	sentry/src/main/java/io/sentry/servlet/SentryServletContainerInitializer.java
+D	sentry/src/main/resources/META-INF/services/io.sentry.SentryFactory
+D	sentry/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer
+D	sentry/src/test/java/io/sentry/environment/SentryEnvironmentTest.java
+D	sentry/src/test/resources/jndi.properties
+D	sentry/src/test/resources/logging-integration.properties
+M	src/checkstyle/suppressions.xml
+A	src/site/site.xml

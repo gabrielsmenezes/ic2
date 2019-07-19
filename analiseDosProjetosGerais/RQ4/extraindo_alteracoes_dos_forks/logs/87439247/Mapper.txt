@@ -1,0 +1,65 @@
+87439247/Mapper;cfd2647;3.3.8
+M	README.md
+M	pom.xml
+M	src/test/java/tk/mybatis/mapper/test/example/TestSelectByExample.java
+M	wiki/Changelog.md
+
+87439247/Mapper;a23c2f9;andIn和andNotIn参数改为Collection
+M	src/main/java/tk/mybatis/mapper/entity/Example.java
+
+87439247/Mapper;42382aa;解决和分页插件PageHelper中orderBy默认属性名相同导致排序的错误
+M	src/main/java/tk/mybatis/mapper/entity/Example.java
+
+87439247/Mapper;a3c510b;解决#107
+M	src/main/java/tk/mybatis/mapper/entity/EntityTable.java
+
+87439247/Mapper;64a2e0b;解决github#12 问题
+M	src/main/java/tk/mybatis/mapper/util/StringUtil.java
+
+87439247/Mapper;eb9a10c;3.3.8-SNAPSHOT
+M	README.md
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/entity/EntityTable.java
+
+87439247/Mapper;9ab9bcf;update
+M	README.md
+
+87439247/Mapper;b3657fd;update
+M	README.md
+M	wiki/Changelog.md
+
+87439247/Mapper;3da5fb8;3.3.7
+M	README.md
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/entity/EntityColumn.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/FieldHelper.java
+M	src/test/java/tk/mybatis/mapper/test/example/TestSelectByExample.java
+M	wiki/Changelog.md
+
+87439247/Mapper;69316ee;通过orderBy方法，使用属性进行排序
+M	src/main/java/tk/mybatis/mapper/entity/Example.java
+M	src/test/java/tk/mybatis/mapper/test/example/TestSelectByExample.java
+
+87439247/Mapper;6a1929e;增加对mybatis-spring 1.2.4版本的支持，兼容之前的版本
+M	README.md
+M	pom.xml
+M	src/main/java/tk/mybatis/spring/mapper/MapperFactoryBean.java
+M	wiki/Changelog.md
+
+87439247/Mapper;4c927b0;更新到3.3.5版本
+M	README.md
+M	pom.xml
+M	wiki/Changelog.md
+
+87439247/Mapper;8f17feb;优化两个`select count`查询，当表只有一个主键的时候，使用`select count(pk)`，其他时候使用`select count(*)`
+M	README.md
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java
+M	src/main/java/tk/mybatis/mapper/provider/ExampleProvider.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseSelectProvider.java
+
+87439247/Mapper;406c1af;* `Example`增加对动态表名支持，通过`setTableName`设置表名 * 在example相关的两个`update`方法中，参数为实体类和`Example`，这个方法只能通过`Example`来设置动态表名，不支持通过实体设置动态表名
+M	README.md
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/entity/Example.java
+M	src/main/java/tk/mybatis/mapper/provider/ExampleProvider.java

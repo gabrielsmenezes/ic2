@@ -1,0 +1,21 @@
+trifork/AppAuth-Android;a7625dd;Fandt en bedre måde at håndtere fejlen, tror jeg
+M	library/java/net/openid/appauth/AuthState.java
+
+trifork/AppAuth-Android;3557940;Exception der antyder at vi har forbrudt os mod brugen af appauth skal bare kastes videre som den er
+M	library/java/net/openid/appauth/AuthState.java
+
+trifork/AppAuth-Android;5de4462;Sikre at vending actions bliver nulstillet i tilfælde af fejl. Vi har set på medicinkortet appen at hvis flere kald er startet og det første fejler, bliver der ikke rydet op i authstate og man får ikke besked om at kaldet er fejlet.
+M	library/build.gradle
+M	library/java/net/openid/appauth/AuthState.java
+
+trifork/AppAuth-Android;a7116a8;Mindre justeringer
+M	library/java/net/openid/appauth/AppAuthConfiguration.java
+M	library/java/net/openid/appauth/browser/BrowserSelector.java
+
+trifork/AppAuth-Android;250a9e2;FMKAPP-260: Udvidet AppAuthServicer således at det er muligt at angive en liste af fallback browsere.
+M	README.md
+M	gradle.properties
+M	library/build.gradle
+M	library/java/net/openid/appauth/AppAuthConfiguration.java
+M	library/java/net/openid/appauth/AuthorizationService.java
+M	library/java/net/openid/appauth/browser/BrowserSelector.java

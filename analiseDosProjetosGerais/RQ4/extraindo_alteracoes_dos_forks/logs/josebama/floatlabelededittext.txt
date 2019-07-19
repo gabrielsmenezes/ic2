@@ -1,0 +1,18 @@
+josebama/floatlabelededittext;2398a63;updated the Gradle files
+M	build.gradle
+M	example/build.gradle
+M	library/build.gradle
+M	settings.gradle
+
+josebama/floatlabelededittext;9b55f05;put the gradle files back to their original state for the pull request
+M	build.gradle
+M	example/build.gradle
+M	library/build.gradle
+
+josebama/floatlabelededittext;af24fda;set the floating hint different from the normal hint The floating hint can be set to be different from the normal hint. Backward compatibility with the previous version has been kept in mind, so if fletFloatingHint is set without setting the fletHint, both would be set. Also, when calling setHint(), if both floatingHint and hint are the same, the original behaviour is kept so both are set. To set the hint without setting the floatingHint when both are the same, setHintNoFloating() must be used due to this backward compatibility.
+M	build.gradle
+M	example/build.gradle
+M	example/src/main/res/layout/activity_main.xml
+M	library/build.gradle
+M	library/res/values/attrs.xml
+M	library/src/com/wrapp/floatlabelededittext/FloatLabeledEditText.java

@@ -1,0 +1,70 @@
+jessy100/frostwire;6650729c;removed unsused imports. last commit for real.
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;db2cfc6c;Fixed the last sonarqube issues
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;c45f512b;Refactored file deletion to JAva.Nio package as sonarqube suggested
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;f42f2d79;did automatic indentation fix
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+M	common/src/main/java/com/frostwire/bittorrent/BTFileHandler.java
+M	common/src/main/java/com/frostwire/bittorrent/BTSettingsManager.java
+M	common/src/main/java/com/frostwire/bittorrent/InnerListener.java
+
+jessy100/frostwire;4b729e85;Moved contents of try catch to a function as sonarqube suggested
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;387d0ea8;Changed function names to adhere to convention
+D	.scannerwork/.sonar_lock
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;595623d9;Changed all throwables to exception as SQ suggested
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;c9ef390d;replaced ToLower().Eqauls() to single call: equalsIgnoreCase()
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;bb8e3930;Reduced complexity of the download function
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;57c77b96;Sonarqube: Return empty array instead of null
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;133137ea;refactored names to adhere to java naming conventions
+A	.scannerwork/.sonar_lock
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;7cf16be4;removed unused imports
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;f06367a9;Added another function to the file handler
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+M	common/src/main/java/com/frostwire/bittorrent/BTFileHandler.java
+
+jessy100/frostwire;3de2b347;Moved Creation of resume file to seperate function to reduce complexity
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;af050822;Moved all file related functions to the BTFileHandlerClass
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+A	common/src/main/java/com/frostwire/bittorrent/BTFileHandler.java
+
+jessy100/frostwire;86eeec30;removed law of demeter violation in InnerListerner (I know this is not the 100% correct way, but fixing it completely would require a complete overhaul of the applicaiton)
+M	common/src/main/java/com/frostwire/bittorrent/InnerListener.java
+
+jessy100/frostwire;c3110deb;Moved all listener related code to Its own class to improve readability of the BTEngine class
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+A	common/src/main/java/com/frostwire/bittorrent/InnerListener.java
+
+jessy100/frostwire;4a276530;Introducted ParseVuzeDownload function to reduce MigrateVuzeDownloads() complexity
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+jessy100/frostwire;6c088b85;Moved the fileparsing to a seperate function te reduce function depth, refactored throwables to exceptions
+M	common/src/main/java/com/frostwire/bittorrent/BTSettingsManager.java
+A	sonar-project.properties
+
+jessy100/frostwire;449d03a2;moved settings to the settingsmanager class to separate concerns
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+A	common/src/main/java/com/frostwire/bittorrent/BTSettingsManager.java

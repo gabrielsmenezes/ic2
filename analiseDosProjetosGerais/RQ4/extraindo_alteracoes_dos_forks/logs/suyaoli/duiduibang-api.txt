@@ -1,0 +1,80 @@
+suyaoli/duiduibang-api;3885049;group detail mybaties
+M	pom.xml
+R100	lib/ddbweb-node-api-sdk.jar	src/lib/ddbweb-node-api-sdk.jar
+M	src/main/java/com/duiduibang/api/controller/GroupController.java
+A	src/main/java/com/duiduibang/api/domain/GroupDetail.java
+A	src/main/java/com/duiduibang/api/domain/OwnCategory.java
+
+suyaoli/duiduibang-api;4799dc5;update
+R082	src/lib/ddbweb-node-api-sdk.jar	lib/ddbweb-node-api-sdk.jar
+M	pom.xml
+A	src/main/java/com/duiduibang/api/config/HttpClientConfiguration.java
+A	src/main/java/com/duiduibang/api/config/JacksonConfig.java
+M	src/main/java/com/duiduibang/api/config/NodeApiConfiguration.java
+M	src/main/java/com/duiduibang/api/config/Swagger2Config.java
+R091	src/main/java/com/duiduibang/api/controller/WxMaUserController.java	src/main/java/com/duiduibang/api/controller/AccountController.java
+A	src/main/java/com/duiduibang/api/controller/GroupController.java
+A	src/main/java/com/duiduibang/api/domain/RecommendGroup.java
+A	src/main/java/com/duiduibang/api/domain/User.java
+A	src/main/java/com/duiduibang/api/domain/UserRelates.java
+A	src/main/java/com/duiduibang/api/utils/HttpClient.java
+
+suyaoli/duiduibang-api;60f6b9d;增加跨域支持
+A	src/main/java/com/duiduibang/api/config/CorsConfiguration.java
+M	src/main/java/com/duiduibang/api/config/Swagger2Config.java
+M	src/main/java/com/duiduibang/api/controller/SmsController.java
+
+suyaoli/duiduibang-api;d910f4e;修改返回值
+M	src/main/java/com/duiduibang/api/config/Swagger2Config.java
+M	src/main/java/com/duiduibang/api/controller/SmsController.java
+
+suyaoli/duiduibang-api;ce9bb0d;rename
+M	pom.xml
+R085	src/main/java/com/github/binarywang/demo/wx/miniapp/WxMaDemoApplication.java	src/main/java/com/duiduibang/api/WxMaDemoApplication.java
+A	src/main/java/com/duiduibang/api/common/CommonResult.java
+A	src/main/java/com/duiduibang/api/common/IErrorCode.java
+A	src/main/java/com/duiduibang/api/common/ResultCode.java
+R093	src/main/java/com/github/binarywang/demo/wx/miniapp/config/NodeApiConfiguration.java	src/main/java/com/duiduibang/api/config/NodeApiConfiguration.java
+R080	src/main/java/com/github/binarywang/demo/wx/miniapp/config/NodeApiProperties.java	src/main/java/com/duiduibang/api/config/NodeApiProperties.java
+R092	src/main/java/com/github/binarywang/demo/wx/miniapp/config/SmsConfiguration.java	src/main/java/com/duiduibang/api/config/SmsConfiguration.java
+R082	src/main/java/com/github/binarywang/demo/wx/miniapp/config/SmsProperties.java	src/main/java/com/duiduibang/api/config/SmsProperties.java
+A	src/main/java/com/duiduibang/api/config/Swagger2Config.java
+R099	src/main/java/com/github/binarywang/demo/wx/miniapp/config/WxMaConfiguration.java	src/main/java/com/duiduibang/api/config/WxMaConfiguration.java
+R094	src/main/java/com/github/binarywang/demo/wx/miniapp/config/WxMaProperties.java	src/main/java/com/duiduibang/api/config/WxMaProperties.java
+R082	src/main/java/com/github/binarywang/demo/wx/miniapp/controller/SmsController.java	src/main/java/com/duiduibang/api/controller/SmsController.java
+R094	src/main/java/com/github/binarywang/demo/wx/miniapp/controller/TestController.java	src/main/java/com/duiduibang/api/controller/TestController.java
+R096	src/main/java/com/github/binarywang/demo/wx/miniapp/controller/WxMaMediaController.java	src/main/java/com/duiduibang/api/controller/WxMaMediaController.java
+R094	src/main/java/com/github/binarywang/demo/wx/miniapp/controller/WxMaUserController.java	src/main/java/com/duiduibang/api/controller/WxMaUserController.java
+R096	src/main/java/com/github/binarywang/demo/wx/miniapp/controller/WxPortalController.java	src/main/java/com/duiduibang/api/controller/WxPortalController.java
+R091	src/main/java/com/github/binarywang/demo/wx/miniapp/error/ErrorController.java	src/main/java/com/duiduibang/api/error/ErrorController.java
+R093	src/main/java/com/github/binarywang/demo/wx/miniapp/error/ErrorPageConfiguration.java	src/main/java/com/duiduibang/api/error/ErrorPageConfiguration.java
+R090	src/main/java/com/github/binarywang/demo/wx/miniapp/service/RedisService.java	src/main/java/com/duiduibang/api/service/RedisService.java
+R089	src/main/java/com/github/binarywang/demo/wx/miniapp/service/impl/RedisServiceImpl.java	src/main/java/com/duiduibang/api/service/impl/RedisServiceImpl.java
+R090	src/main/java/com/github/binarywang/demo/wx/miniapp/utils/JsonUtils.java	src/main/java/com/duiduibang/api/utils/JsonUtils.java
+
+suyaoli/duiduibang-api;65d9d2a;优化
+M	src/main/java/com/github/binarywang/demo/wx/miniapp/controller/SmsController.java
+
+suyaoli/duiduibang-api;2f6504a;add redis 缓存短信验证码
+M	pom.xml
+M	src/main/java/com/github/binarywang/demo/wx/miniapp/controller/SmsController.java
+A	src/main/java/com/github/binarywang/demo/wx/miniapp/service/RedisService.java
+A	src/main/java/com/github/binarywang/demo/wx/miniapp/service/impl/RedisServiceImpl.java
+
+suyaoli/duiduibang-api;1ad1e57;add 短信发送
+M	pom.xml
+A	src/main/java/com/github/binarywang/demo/wx/miniapp/config/SmsConfiguration.java
+A	src/main/java/com/github/binarywang/demo/wx/miniapp/config/SmsProperties.java
+A	src/main/java/com/github/binarywang/demo/wx/miniapp/controller/SmsController.java
+
+suyaoli/duiduibang-api;1b438fc;添加外部包
+M	pom.xml
+A	src/lib/ddbweb-node-api-sdk.jar
+
+suyaoli/duiduibang-api;e15cc98;add node api configuration
+M	pom.xml
+A	src/main/java/com/github/binarywang/demo/wx/miniapp/config/NodeApiConfiguration.java
+A	src/main/java/com/github/binarywang/demo/wx/miniapp/config/NodeApiProperties.java
+A	src/main/java/com/github/binarywang/demo/wx/miniapp/controller/TestController.java
+M	src/main/java/com/github/binarywang/demo/wx/miniapp/controller/WxMaUserController.java
+D	src/main/resources/application.yml.template

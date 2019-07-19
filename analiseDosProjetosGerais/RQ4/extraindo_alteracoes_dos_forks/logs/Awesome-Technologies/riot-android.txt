@@ -1,0 +1,355 @@
+Awesome-Technologies/riot-android;09a478371;Change divider text "groups" to "your groups"
+M	vector/src/caritas/res/values-de/strings.xml
+M	vector/src/caritas/res/values/strings.xml
+
+Awesome-Technologies/riot-android;1d8997bf9;Change color of E2E lock badge for rooms to green
+M	vector/src/main/res/layout/activity_vector_room.xml
+M	vector/src/main/res/layout/adapter_item_room_invite.xml
+M	vector/src/main/res/layout/adapter_item_room_view.xml
+
+Awesome-Technologies/riot-android;2b9b7631e;Prevent adding more than one member when creating a room
+M	vector/src/main/java/im/vector/activity/VectorRoomCreationActivity.java
+
+Awesome-Technologies/riot-android;408621536;Change analytics message for caritas
+M	vector/src/caritas/res/values-de/strings.xml
+M	vector/src/caritas/res/values/strings.xml
+
+Awesome-Technologies/riot-android;4fe0a2205;Set caritas URL and site id for piwik analytics
+M	vector/src/caritas/res/values/config.xml
+M	vector/src/main/java/im/vector/analytics/PiwikAnalytics.kt
+M	vector/src/main/res/values/config.xml
+
+Awesome-Technologies/riot-android;e831b5d70;Prevent download or sharing of media files
+M	vector/src/main/java/im/vector/activity/VectorMediaViewerActivity.java
+D	vector/src/main/res/menu/vector_medias_viewer.xml
+
+Awesome-Technologies/riot-android;f13068bd8;Add caritas variant of icon_notif_important
+A	vector/src/caritas/res/drawable-hdpi/icon_notif_important.png
+A	vector/src/caritas/res/drawable-mdpi/icon_notif_important.png
+A	vector/src/caritas/res/drawable-xhdpi/icon_notif_important.png
+A	vector/src/caritas/res/drawable-xxhdpi/icon_notif_important.png
+A	vector/src/caritas/res/drawable-xxxhdpi/icon_notif_important.png
+
+Awesome-Technologies/riot-android;192b7e2d4;Send photo attachment by default
+M	vector/src/main/java/im/vector/VectorApp.java
+M	vector/src/main/java/im/vector/util/PreferencesManager.java
+
+Awesome-Technologies/riot-android;cd5f481af;Change "Leave conversation" to "Leave group"
+M	vector/src/caritas/res/values-de/strings.xml
+M	vector/src/caritas/res/values/strings.xml
+
+Awesome-Technologies/riot-android;0d26162d8;Update version to 2019.04.0
+M	build.gradle
+
+Awesome-Technologies/riot-android;067c48544;Merge tag 'v0.8.29' into caritas
+Awesome-Technologies/riot-android;6e4126773;Continue on lint errors for release builds
+M	vector/build.gradle
+
+Awesome-Technologies/riot-android;38927b493;Merge tag 'v0.8.24' into caritas
+Awesome-Technologies/riot-android;f6768b4fa;Improve translation for joining groups
+M	vector/src/caritas/res/values-de/strings.xml
+
+Awesome-Technologies/riot-android;a3d7232ea;Adapt caritas colors
+M	vector/src/caritas/res/values/colors.xml
+M	vector/src/main/res/values/theme_light.xml
+
+Awesome-Technologies/riot-android;4c8050e21;Remove caritas variant of theme_light.xml
+M	vector/src/caritas/AndroidManifest.xml
+M	vector/src/caritas/res/values/colors.xml
+D	vector/src/caritas/res/values/theme_light.xml
+
+Awesome-Technologies/riot-android;a88640cd9;Remove themes "black" and "status.im"
+M	vector/src/caritas/res/values/colors.xml
+M	vector/src/debug/res/layout/demo_themes.xml
+M	vector/src/main/java/im/vector/ui/themes/ActivityOtherThemes.kt
+M	vector/src/main/java/im/vector/ui/themes/ThemeUtils.kt
+M	vector/src/main/res/values-de/strings.xml
+D	vector/src/main/res/values-v21/theme_black.xml
+D	vector/src/main/res/values-v21/theme_status.xml
+M	vector/src/main/res/values/array.xml
+M	vector/src/main/res/values/strings.xml
+D	vector/src/main/res/values/theme_black.xml
+D	vector/src/main/res/values/theme_status.xml
+
+Awesome-Technologies/riot-android;a3099ba56;Update version to 2019.03.0
+M	build.gradle
+
+Awesome-Technologies/riot-android;4627a0c43;Set piwik URL to https://piwik.amp.care
+M	vector/src/caritas/res/values/config.xml
+M	vector/src/main/java/im/vector/analytics/PiwikAnalytics.kt
+M	vector/src/main/res/values/config.xml
+
+Awesome-Technologies/riot-android;5a39a7ceb;Hide key backup in settings
+M	vector/src/caritas/res/xml/vector_settings_preferences.xml
+M	vector/src/main/java/im/vector/fragments/VectorSettingsPreferencesFragment.kt
+M	vector/src/main/java/im/vector/util/PreferencesManager.java
+
+Awesome-Technologies/riot-android;9a661882c;Fix dividers in settings activity
+M	vector/src/caritas/res/xml/vector_settings_preferences.xml
+M	vector/src/main/java/im/vector/fragments/VectorSettingsPreferencesFragment.kt
+M	vector/src/main/java/im/vector/util/PreferencesManager.java
+
+Awesome-Technologies/riot-android;e57d4681f;Set bug report url to https://caritas.amp.care/bugreports/submit
+M	vector/build.gradle
+
+Awesome-Technologies/riot-android;9de2202de;Move config strings from "donottranslate.xml" into "config.xml"
+M	vector/src/caritas/AndroidManifest.xml
+R067	vector/src/caritas/res/values/donottranslate.xml	vector/src/caritas/res/values/config.xml
+M	vector/src/main/java/im/vector/push/PushManager.java
+
+Awesome-Technologies/riot-android;de4439b6e;Merge tag 'v0.8.23' into caritas
+Awesome-Technologies/riot-android;33435602e;Remove all languages except German and English
+D	vector/src/main/res/values-ar/strings.xml
+D	vector/src/main/res/values-bg/strings.xml
+D	vector/src/main/res/values-bs/strings.xml
+D	vector/src/main/res/values-ca/strings.xml
+D	vector/src/main/res/values-cs/strings.xml
+D	vector/src/main/res/values-da/strings.xml
+D	vector/src/main/res/values-el/strings.xml
+D	vector/src/main/res/values-eo/strings.xml
+D	vector/src/main/res/values-es-rMX/strings.xml
+D	vector/src/main/res/values-es/strings.xml
+D	vector/src/main/res/values-eu/strings.xml
+D	vector/src/main/res/values-fa/strings.xml
+D	vector/src/main/res/values-fi/strings.xml
+D	vector/src/main/res/values-fr-rCA/strings.xml
+D	vector/src/main/res/values-fr/strings.xml
+D	vector/src/main/res/values-gl/strings.xml
+D	vector/src/main/res/values-hu/strings.xml
+D	vector/src/main/res/values-id/strings.xml
+D	vector/src/main/res/values-in/strings.xml
+D	vector/src/main/res/values-is/strings.xml
+D	vector/src/main/res/values-it/strings.xml
+D	vector/src/main/res/values-ja/strings.xml
+D	vector/src/main/res/values-ko/strings.xml
+D	vector/src/main/res/values-lv/strings.xml
+D	vector/src/main/res/values-nl/strings.xml
+D	vector/src/main/res/values-nn/strings.xml
+D	vector/src/main/res/values-pl/strings.xml
+D	vector/src/main/res/values-pt-rBR/strings.xml
+D	vector/src/main/res/values-pt/strings.xml
+D	vector/src/main/res/values-ru/strings.xml
+D	vector/src/main/res/values-sk/strings.xml
+D	vector/src/main/res/values-sq/strings.xml
+D	vector/src/main/res/values-te/strings.xml
+D	vector/src/main/res/values-th/strings.xml
+D	vector/src/main/res/values-tlh/strings.xml
+D	vector/src/main/res/values-tr/strings.xml
+D	vector/src/main/res/values-uk/strings.xml
+D	vector/src/main/res/values-zh-rCN/strings.xml
+D	vector/src/main/res/values-zh-rTW/strings.xml
+
+Awesome-Technologies/riot-android;8b0d09c83;Remove certain event messages in chats
+M	vector/src/main/java/im/vector/adapters/VectorMessagesAdapterHelper.java
+
+Awesome-Technologies/riot-android;e02cb8eb4;Hide chat member info in header for direct chats
+M	vector/src/main/java/im/vector/activity/VectorRoomActivity.java
+
+Awesome-Technologies/riot-android;ccac4ee46;Change preview button to now join room and skip preview activity
+M	vector/src/main/java/im/vector/activity/VectorHomeActivity.java
+M	vector/src/main/java/im/vector/adapters/AbsAdapter.java
+M	vector/src/main/java/im/vector/adapters/RoomInvitationViewHolder.java
+M	vector/src/main/java/im/vector/fragments/AbsHomeFragment.java
+M	vector/src/main/res/layout/adapter_item_room_invite.xml
+
+Awesome-Technologies/riot-android;8adf2b42c;Update chat settings
+M	vector/src/main/java/im/vector/fragments/VectorRoomSettingsFragment.java
+M	vector/src/main/res/xml/vector_room_settings_preferences.xml
+
+Awesome-Technologies/riot-android;fd8d3a9e9;Hide edit option menu item in direct chat details
+M	vector/src/main/java/im/vector/fragments/VectorRoomDetailsMembersFragment.java
+
+Awesome-Technologies/riot-android;6914dd636;Hide add member button in direct chat member list
+M	vector/src/main/java/im/vector/fragments/VectorRoomDetailsMembersFragment.java
+
+Awesome-Technologies/riot-android;e0f4695d1;Hide member search in direct chat details
+M	vector/src/main/java/im/vector/fragments/VectorRoomDetailsMembersFragment.java
+
+Awesome-Technologies/riot-android;1e2a90263;Update localization in chat details
+M	vector/src/caritas/res/values-de/strings.xml
+M	vector/src/caritas/res/values/strings.xml
+
+Awesome-Technologies/riot-android;e44cf7fbd;Remove KeyBackupBanner
+M	vector/src/main/java/im/vector/activity/VectorHomeActivity.java
+M	vector/src/main/res/layout/activity_home.xml
+
+Awesome-Technologies/riot-android;6ade43ea5;Remove direct chat toggle in 3-point menu of a chat
+M	vector/src/main/java/im/vector/util/RoomUtils.java
+M	vector/src/main/res/menu/vector_home_room_settings.xml
+
+Awesome-Technologies/riot-android;fd02b20c6;Adjust options in user detail activity
+M	vector/src/main/java/im/vector/activity/VectorMemberDetailsActivity.java
+
+Awesome-Technologies/riot-android;1c2e6c219;Filter out public rooms the user is already a member in
+M	vector/src/main/java/im/vector/fragments/RoomsFragment.java
+
+Awesome-Technologies/riot-android;fbd74c887;Remove public room count estimation
+M	vector/src/main/java/im/vector/adapters/PublicRoomsAdapterSection.java
+M	vector/src/main/java/im/vector/adapters/RoomAdapter.java
+M	vector/src/main/java/im/vector/fragments/RoomsFragment.java
+
+Awesome-Technologies/riot-android;6a5ea8765;Remove public room directory selection in group tab
+M	vector/src/main/java/im/vector/fragments/RoomsFragment.java
+M	vector/src/main/res/layout/adapter_public_room_sticky_header_subview.xml
+
+Awesome-Technologies/riot-android;40fee966a;Adjust localization in group tab
+M	vector/src/caritas/res/values-de/strings.xml
+M	vector/src/caritas/res/values/strings.xml
+
+Awesome-Technologies/riot-android;c976ecb16;Remove click on E2E encryption icon
+M	vector/src/main/java/im/vector/adapters/VectorMessagesAdapter.java
+M	vector/src/main/java/im/vector/fragments/VectorMessageListFragment.java
+M	vector/src/main/java/im/vector/listeners/IMessagesAdapterActionsListener.java
+
+Awesome-Technologies/riot-android;bc4124bfa;Remove options in 3-point menu of events in chat
+M	vector/src/main/java/im/vector/adapters/VectorMessagesAdapter.java
+M	vector/src/main/java/im/vector/fragments/VectorMessageListFragment.java
+M	vector/src/main/res/menu/vector_room_message_settings.xml
+
+Awesome-Technologies/riot-android;ef1983b3d;Hide 'leave conversation' for direct chats from 3-point menu in chats
+M	vector/src/main/java/im/vector/activity/VectorRoomActivity.java
+
+Awesome-Technologies/riot-android;74b73dd26;Remove 'add matrix apps' from 3-point menu in chats
+M	vector/src/main/java/im/vector/activity/VectorRoomActivity.java
+M	vector/src/main/res/menu/vector_room.xml
+
+Awesome-Technologies/riot-android;3d9e276ec;Allow changing group name in header only in group chats
+M	vector/src/main/java/im/vector/activity/VectorRoomActivity.java
+
+Awesome-Technologies/riot-android;88f543208;Remove leave conversation in 3-point menu for direct chats
+M	vector/src/main/java/im/vector/util/RoomUtils.java
+
+Awesome-Technologies/riot-android;82321f53e;Show soft-keyboard when inviting members activity is started
+M	vector/src/main/java/im/vector/activity/VectorRoomInviteMembersActivity.java
+
+Awesome-Technologies/riot-android;51ede134d;Change placeholder for user invite search
+M	vector/src/caritas/res/values-de/strings.xml
+M	vector/src/caritas/res/values/strings.xml
+
+Awesome-Technologies/riot-android;0b795f22f;Remove search by id text/button when inviting people
+A	vector/src/caritas/res/layout/activity_vector_invite_members.xml
+M	vector/src/caritas/res/values-de/strings.xml
+M	vector/src/caritas/res/values/strings.xml
+M	vector/src/main/java/im/vector/activity/VectorRoomInviteMembersActivity.java
+
+Awesome-Technologies/riot-android;8f77e5472;Remove ability to send files or stickers
+M	vector/src/main/java/im/vector/activity/VectorRoomActivity.java
+
+Awesome-Technologies/riot-android;158b44325;Remove 'start call' icon in chat toolbar
+M	vector/src/main/java/im/vector/activity/VectorRoomActivity.java
+
+Awesome-Technologies/riot-android;c49e8c1c1;Enable encryption by default for new direct chats
+M	vector/src/main/java/im/vector/activity/VectorRoomCreationActivity.java
+
+Awesome-Technologies/riot-android;c78c62523;Make plus button in person tab start new chat directly
+M	vector/src/main/java/im/vector/activity/VectorHomeActivity.java
+M	vector/src/main/res/layout/activity_home.xml
+
+Awesome-Technologies/riot-android;36fa4e2dd;Hide floating action menu in groups tab
+M	vector/src/main/java/im/vector/activity/VectorHomeActivity.java
+
+Awesome-Technologies/riot-android;dd82cb6a8;Merge tag 'v0.8.22' into caritas
+Awesome-Technologies/riot-android;dc3850276;Update version to 2019.01.0
+M	build.gradle
+
+Awesome-Technologies/riot-android;fc1ccf490;Add Global Search and Historical buttons to drawer menu
+A	vector/src/caritas/res/menu/vector_home.xml
+M	vector/src/caritas/res/values-de/strings.xml
+M	vector/src/caritas/res/values/strings.xml
+M	vector/src/main/java/im/vector/activity/VectorHomeActivity.java
+M	vector/src/main/res/menu/vector_home_sliding_menu.xml
+
+Awesome-Technologies/riot-android;ab76b4ff6;Remove local contact support
+M	vector/src/main/AndroidManifest.xml
+M	vector/src/main/java/im/vector/VectorApp.java
+M	vector/src/main/java/im/vector/activity/CommonActivityUtils.java
+M	vector/src/main/java/im/vector/activity/VectorRoomDetailsActivity.java
+M	vector/src/main/java/im/vector/activity/VectorRoomInviteMembersActivity.java
+M	vector/src/main/java/im/vector/activity/VectorUnifiedSearchActivity.java
+M	vector/src/main/java/im/vector/adapters/PeopleAdapter.java
+M	vector/src/main/java/im/vector/adapters/VectorParticipantsAdapter.java
+M	vector/src/main/java/im/vector/adapters/VectorUnifiedSearchFragmentPagerAdapter.java
+D	vector/src/main/java/im/vector/contacts/ContactsManager.java
+M	vector/src/main/java/im/vector/fragments/PeopleFragment.java
+M	vector/src/main/java/im/vector/fragments/VectorSearchPeopleListFragment.java
+M	vector/src/main/java/im/vector/fragments/VectorSettingsPreferencesFragment.kt
+M	vector/src/main/java/im/vector/util/PermissionsTools.kt
+
+Awesome-Technologies/riot-android;e88ee7e65;Cleanup settings activity
+A	vector/src/caritas/res/xml/vector_settings_preferences.xml
+M	vector/src/main/java/im/vector/Matrix.java
+M	vector/src/main/java/im/vector/VectorApp.java
+M	vector/src/main/java/im/vector/fragments/VectorSettingsPreferencesFragment.kt
+M	vector/src/main/java/im/vector/util/PreferencesManager.java
+
+Awesome-Technologies/riot-android;e0efd8a0c;Merge 'v0.8.21' into caritas
+Awesome-Technologies/riot-android;f9a9010fe;Replace the term "room" by "group"
+M	vector/src/caritas/res/values-de/strings.xml
+M	vector/src/caritas/res/values/strings.xml
+
+Awesome-Technologies/riot-android;1cd95d77e;Hide encryption warnings
+A	vector/src/caritas/res/drawable-xxhdpi/e2e_warning.png
+M	vector/src/main/java/im/vector/activity/VectorRoomActivity.java
+M	vector/src/main/java/im/vector/fragments/VectorRoomSettingsFragment.java
+
+Awesome-Technologies/riot-android;b711c733d;Update version to 2019.01.0
+M	build.gradle
+
+Awesome-Technologies/riot-android;c60644700;Set URL and APP_ID in PushManager
+M	vector/src/main/java/im/vector/push/PushManager.java
+
+Awesome-Technologies/riot-android;61f7cafa6;Update version to 2018.12.1
+M	build.gradle
+
+Awesome-Technologies/riot-android;26fea4e50;Change bottom navigation tabs
+M	vector/src/caritas/res/values-de/strings.xml
+M	vector/src/caritas/res/values/strings.xml
+M	vector/src/main/java/im/vector/activity/VectorHomeActivity.java
+M	vector/src/main/res/menu/bottom_navigation_main.xml
+
+Awesome-Technologies/riot-android;02d7e7ce9;Use animated caritas splash icon
+A	vector/src/caritas/res/drawable-xxhdpi/riot_splash.gif
+
+Awesome-Technologies/riot-android;08382406b;Hide invalid options for login activity
+A	vector/src/caritas/res/layout/activity_vector_login.xml
+A	vector/src/caritas/res/values-de/strings.xml
+A	vector/src/caritas/res/values/strings.xml
+M	vector/src/main/java/im/vector/activity/LoginActivity.java
+
+Awesome-Technologies/riot-android;a66a46650;Add caritas theme
+M	vector/src/caritas/AndroidManifest.xml
+A	vector/src/caritas/res/drawable-hdpi/logo_transparent.png
+A	vector/src/caritas/res/drawable-mdpi/logo_transparent.png
+A	vector/src/caritas/res/drawable-xhdpi/logo_transparent.png
+A	vector/src/caritas/res/drawable-xxhdpi/logo_login.png
+A	vector/src/caritas/res/drawable-xxhdpi/logo_transparent.png
+A	vector/src/caritas/res/drawable-xxxhdpi/logo_transparent.png
+A	vector/src/caritas/res/values/colors.xml
+A	vector/src/caritas/res/values/theme_light.xml
+
+Awesome-Technologies/riot-android;96cf9042c;Add caritas flavor
+M	vector/build.gradle
+A	vector/src/caritas/AndroidManifest.xml
+A	vector/src/caritas/google-services.json
+A	vector/src/caritas/ic_caritas-web.png
+A	vector/src/caritas/java/im/vector/push/fcm/FcmHelper.java
+A	vector/src/caritas/java/im/vector/push/fcm/VectorFirebaseMessagingService.java
+A	vector/src/caritas/res/mipmap-anydpi-v26/ic_caritas.xml
+A	vector/src/caritas/res/mipmap-anydpi-v26/ic_caritas_round.xml
+A	vector/src/caritas/res/mipmap-hdpi/ic_caritas.png
+A	vector/src/caritas/res/mipmap-hdpi/ic_caritas_foreground.png
+A	vector/src/caritas/res/mipmap-hdpi/ic_caritas_round.png
+A	vector/src/caritas/res/mipmap-mdpi/ic_caritas.png
+A	vector/src/caritas/res/mipmap-mdpi/ic_caritas_foreground.png
+A	vector/src/caritas/res/mipmap-mdpi/ic_caritas_round.png
+A	vector/src/caritas/res/mipmap-xhdpi/ic_caritas.png
+A	vector/src/caritas/res/mipmap-xhdpi/ic_caritas_foreground.png
+A	vector/src/caritas/res/mipmap-xhdpi/ic_caritas_round.png
+A	vector/src/caritas/res/mipmap-xxhdpi/ic_caritas.png
+A	vector/src/caritas/res/mipmap-xxhdpi/ic_caritas_foreground.png
+A	vector/src/caritas/res/mipmap-xxhdpi/ic_caritas_round.png
+A	vector/src/caritas/res/mipmap-xxxhdpi/ic_caritas.png
+A	vector/src/caritas/res/mipmap-xxxhdpi/ic_caritas_foreground.png
+A	vector/src/caritas/res/mipmap-xxxhdpi/ic_caritas_round.png
+A	vector/src/caritas/res/values/donottranslate.xml
+A	vector/src/caritas/res/values/ic_caritas_background.xml

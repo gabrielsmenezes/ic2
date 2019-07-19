@@ -1,0 +1,14 @@
+dejanb/hono;7d10644f2;#688 - add support for more flexible password encoding
+M	bom/pom.xml
+M	core/pom.xml
+A	core/src/main/java/org/eclipse/hono/util/BasePassword.java
+A	core/src/main/java/org/eclipse/hono/util/ClearTextPassword.java
+M	core/src/main/java/org/eclipse/hono/util/CredentialsObject.java
+A	core/src/main/java/org/eclipse/hono/util/EncodedPassword.java
+A	core/src/main/java/org/eclipse/hono/util/MessageDigestPasswordEncoder.java
+A	core/src/main/java/org/eclipse/hono/util/PasswordEncoderFactory.java
+M	service-base/pom.xml
+M	service-base/src/main/java/org/eclipse/hono/service/auth/device/UsernamePasswordCredentials.java
+M	service-base/src/test/java/org/eclipse/hono/service/auth/device/UsernamePasswordCredentialsTest.java
+M	site/content/api/Credentials-API.md
+M	tests/src/test/java/org/eclipse/hono/tests/registry/CredentialsAmqpIT.java

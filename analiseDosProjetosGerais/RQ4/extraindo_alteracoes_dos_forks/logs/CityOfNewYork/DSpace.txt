@@ -1,0 +1,2455 @@
+CityOfNewYork/DSpace;bc13cda47;Updates to agency and report type
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;f08c8143e;Update intro text on homepage
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+
+CityOfNewYork/DSpace;9cbba70a6;Change agency name in form dropdown
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;8fd9738ea;Changes to intro text
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+
+CityOfNewYork/DSpace;7105b65fa;Merge pull request #53 from CityOfNewYork/develop
+CityOfNewYork/DSpace;6de1f8f78;Fix XSS on edit-item language column fields
+M	dspace-jspui/src/main/webapp/tools/edit-item-form.jsp
+
+CityOfNewYork/DSpace;7e01c8ceb;Merge pull request #52 from CityOfNewYork/hotfix/GPP-249
+CityOfNewYork/DSpace;00e798712;Merge pull request #51 from CityOfNewYork/feature/GPP-249
+CityOfNewYork/DSpace;1aab06f84;Add agencies
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;a16517d88;Add agencies
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;e1c05ed90;Merge pull request #50 from CityOfNewYork/feature/GPP-197
+CityOfNewYork/DSpace;f1f63fedd;Remove commented code
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemTag.java
+
+CityOfNewYork/DSpace;a0f8bb075;Updates to item display page
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemTag.java
+M	dspace-jspui/src/main/webapp/display-item.jsp
+M	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+
+CityOfNewYork/DSpace;b452379ee;Merge pull request #49 from CityOfNewYork/feature/GPP-240
+CityOfNewYork/DSpace;5b7f4ca4c;UI changes to search page and sidebar facets
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/discovery/static-sidebar-facet.jsp
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+
+CityOfNewYork/DSpace;b3127d654;Merge pull request #48 from CityOfNewYork/feature/GPP-238
+CityOfNewYork/DSpace;7a5452723;Remove browse links; UI changes
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/BrowseListTag.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemListTag.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemTag.java
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+D	dspace-jspui/src/main/webapp/static/img/doris-banner.jpg
+A	dspace-jspui/src/main/webapp/static/img/doris-logo.png
+
+CityOfNewYork/DSpace;792240290;Merge pull request #47 from CityOfNewYork/feature/GPP-199
+CityOfNewYork/DSpace;bfef409a0;Merge pull request #44 from CityOfNewYork/feature/GPP-235
+CityOfNewYork/DSpace;795c281b0;Remove browse functionality
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+CityOfNewYork/DSpace;9779e195b;Update sort features on search page
+M	build_scripts/dspace_install/dspace.cfg
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+M	dspace/config/spring/api/discovery.xml
+
+CityOfNewYork/DSpace;23ee95dcc;Remove community from breadcrumbs and change filter names
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/LayoutTag.java
+
+CityOfNewYork/DSpace;9c5e8ba33;Temporary fix to Single Logout
+A	dspace-api/src/main/java/org/dspace/saml/NYCSingleLogoutImpl.java
+D	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLLogoutServlet.java
+M	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+
+CityOfNewYork/DSpace;0af900b65;Refactor authentication methods to implement NYC.ID v2.0
+M	dspace-api/src/main/java/org/dspace/authenticate/SAMLAuthentication.java
+M	dspace-api/src/main/java/org/dspace/eperson/EPerson.java
+M	dspace-api/src/main/java/org/dspace/eperson/EPersonServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/EPersonDAO.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/EPersonDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/service/EPersonService.java
+A	dspace-api/src/main/java/org/dspace/saml/configuration/SAMLConfigurationBean.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+M	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+
+CityOfNewYork/DSpace;eb5ece4be;Reinstate SAML authentication
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/layout/header-submission.jsp
+
+CityOfNewYork/DSpace;0c899c0ee;Merge pull request #43 from CityOfNewYork/v2.1
+CityOfNewYork/DSpace;b274b9206;Fix to handle null csrfToken in session
+M	dspace-api/src/main/java/org/dspace/app/util/Util.java
+
+CityOfNewYork/DSpace;c573c552c;Comment out SAML auth and reinstate LDAP auth
+D	dspace-jspui/src/main/webapp/WEB-INF/spring/securityContext.xml
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/layout/header-submission.jsp
+A	dspace-jspui/src/main/webapp/login/ldap-incorrect.jsp
+A	dspace-jspui/src/main/webapp/login/ldap.jsp
+A	dspace-jspui/src/main/webapp/login/logged-out.jsp
+A	dspace-jspui/src/main/webapp/login/password.jsp
+A	dspace-jspui/src/main/webapp/register/edit-profile.jsp
+A	dspace-jspui/src/main/webapp/register/profile-form.jsp
+A	dspace-jspui/src/main/webapp/register/profile-updated.jsp
+
+CityOfNewYork/DSpace;e9086a270;NYC.ID QA fixes and add MOIP
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLLogoutServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+M	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+M	dspace-jspui/src/main/webapp/static/css/nyc-gov.css
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;5259c96fd;Create new session on public user login
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+
+CityOfNewYork/DSpace;96eb28db2;Merge pull request #42 from CityOfNewYork/feature/GPP-198
+CityOfNewYork/DSpace;5f86f5184;Merge with develop
+CityOfNewYork/DSpace;6a8123bf1;Update README.md
+M	README.md
+
+CityOfNewYork/DSpace;ca66897f8;Set default search to be Government Publications collection
+M	dspace-jspui/src/main/java/org/dspace/app/webui/discovery/DiscoverySearchRequestProcessor.java
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+CityOfNewYork/DSpace;4a5d97885;Add collection specific fields to search filters
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace/config/spring/api/discovery.xml
+
+CityOfNewYork/DSpace;944a605f7;Remove login and register forms; fix to nullpointerexception in nyc header
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+M	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+D	dspace-jspui/src/main/webapp/login/chooser.jsp
+D	dspace-jspui/src/main/webapp/login/incorrect.jsp
+D	dspace-jspui/src/main/webapp/login/ldap-incorrect.jsp
+D	dspace-jspui/src/main/webapp/login/ldap.jsp
+D	dspace-jspui/src/main/webapp/login/logged-out.jsp
+D	dspace-jspui/src/main/webapp/login/no-email.jsp
+D	dspace-jspui/src/main/webapp/login/no-single-sign-out.jsp
+D	dspace-jspui/src/main/webapp/login/no-valid-cert.jsp
+D	dspace-jspui/src/main/webapp/login/not-in-records.jsp
+D	dspace-jspui/src/main/webapp/login/password.jsp
+D	dspace-jspui/src/main/webapp/register/already-registered.jsp
+D	dspace-jspui/src/main/webapp/register/cannot-register.jsp
+D	dspace-jspui/src/main/webapp/register/edit-profile.jsp
+D	dspace-jspui/src/main/webapp/register/forgot-password.jsp
+D	dspace-jspui/src/main/webapp/register/inactive-account.jsp
+D	dspace-jspui/src/main/webapp/register/invalid-token.jsp
+D	dspace-jspui/src/main/webapp/register/new-ldap-user.jsp
+D	dspace-jspui/src/main/webapp/register/new-password.jsp
+D	dspace-jspui/src/main/webapp/register/new-user.jsp
+D	dspace-jspui/src/main/webapp/register/password-changed.jsp
+D	dspace-jspui/src/main/webapp/register/password-token-sent.jsp
+D	dspace-jspui/src/main/webapp/register/profile-form.jsp
+D	dspace-jspui/src/main/webapp/register/profile-updated.jsp
+D	dspace-jspui/src/main/webapp/register/registered.jsp
+D	dspace-jspui/src/main/webapp/register/registration-form.jsp
+D	dspace-jspui/src/main/webapp/register/registration-sent.jsp
+
+CityOfNewYork/DSpace;acec57c73;Fix to discovery.xml
+M	dspace/config/spring/api/discovery.xml
+
+CityOfNewYork/DSpace;40442a78d;Remove typo in discovery.xml
+M	dspace/config/spring/api/discovery.xml
+
+CityOfNewYork/DSpace;556cfe817;Merge with develop
+CityOfNewYork/DSpace;92282c847;Remove Has File(s) from Add filters dropdown
+M	dspace/config/spring/api/discovery.xml
+
+CityOfNewYork/DSpace;bf1b33166;Set default search to be Government Publications collection
+M	dspace-jspui/src/main/java/org/dspace/app/webui/discovery/DiscoverySearchRequestProcessor.java
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+CityOfNewYork/DSpace;ab80f178e;Add collection specific fields to search filters
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace/config/spring/api/discovery.xml
+
+CityOfNewYork/DSpace;2828934b0;Fix to integer overflow in file upload
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+M	dspace-jspui/src/main/webapp/static/js/resumable.js
+
+CityOfNewYork/DSpace;962e887c6;Update sidebar filters and implement toggling of advanced search
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+A	dspace-jspui/src/main/webapp/static/css/search.css
+M	dspace/config/spring/api/discovery.xml
+
+CityOfNewYork/DSpace;0c0e9f111;Update search filters and ui on home and search page
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+M	dspace/config/spring/api/discovery.xml
+
+CityOfNewYork/DSpace;edf062790;Set default search to be Government Publications collection
+M	dspace-jspui/src/main/java/org/dspace/app/webui/discovery/DiscoverySearchRequestProcessor.java
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+CityOfNewYork/DSpace;e53718d93;Add collection specific fields to search filters
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace/config/spring/api/discovery.xml
+
+CityOfNewYork/DSpace;6bcb81b26;Add additional agencies
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;504e21037;Disable auto reloading of configuration files
+M	dspace/config/config-definition.xml
+
+CityOfNewYork/DSpace;9ab94b1fd;Merge pull request #40 from CityOfNewYork/feature/GPP-190
+CityOfNewYork/DSpace;614ca7d01;Code cleanup
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/MyDashboardServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+
+CityOfNewYork/DSpace;c9e7b04f1;Use session to enforce navigation flow on submit and mydashboard
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/MyDashboardServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+
+CityOfNewYork/DSpace;e8e16833d;Merge pull request #38 from CityOfNewYork/feature/GPP-189
+CityOfNewYork/DSpace;3019b8b38;Merge pull request #39 from CityOfNewYork/feature/GPP-183
+CityOfNewYork/DSpace;63afb6258;Add additional use strict and fix jQuery conflict with prototype
+M	dspace-jspui/src/main/webapp/controlledvocabulary/controlledvocabulary.jsp
+M	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+
+CityOfNewYork/DSpace;f51f3cd11;Add use strict to script in jsp files
+M	dspace-jspui/src/main/webapp/components/login-form.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/batchimport.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/main.jsp
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+M	dspace-jspui/src/main/webapp/submit/creative-commons.jsp
+M	dspace-jspui/src/main/webapp/submit/start-lookup-submission.jsp
+M	dspace-jspui/src/main/webapp/tools/creative-commons-edit.jsp
+M	dspace-jspui/src/main/webapp/tools/eperson-list.jsp
+M	dspace-jspui/src/main/webapp/tools/group-select-list.jsp
+M	dspace-jspui/src/main/webapp/tools/lookup.jsp
+M	dspace-jspui/src/main/webapp/tools/version-history.jsp
+
+CityOfNewYork/DSpace;86a78c33d;Add use strict to javascript files
+M	dspace-jspui/src/main/webapp/dspace-admin/js/bitstream-ordering.js
+M	dspace-jspui/src/main/webapp/static/js/choice-support.js
+M	dspace-jspui/src/main/webapp/static/js/search-results.js
+M	dspace-jspui/src/main/webapp/static/js/submission-lookup.js
+M	dspace-jspui/src/main/webapp/submit/access-step.js
+M	dspace-jspui/src/main/webapp/utils.js
+
+CityOfNewYork/DSpace;3cdf403ab;Update log header to use user id
+M	dspace-api/src/main/java/org/dspace/core/LogManager.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+
+CityOfNewYork/DSpace;ecd897146;Merge pull request #37 from CityOfNewYork/feature/GPP-224
+CityOfNewYork/DSpace;f6967e809;Add condition to find and update user by email
+M	dspace-api/src/main/java/org/dspace/authenticate/SAMLAuthentication.java
+
+CityOfNewYork/DSpace;be409b5cf;Merge pull request #36 from CityOfNewYork/feature/GPP-185
+CityOfNewYork/DSpace;249ebf1c6;Implement previous logon notification
+M	dspace-api/src/main/java/org/dspace/authenticate/SAMLAuthentication.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/HandleServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+
+CityOfNewYork/DSpace;2db9441f6;Merge pull request #35 from CityOfNewYork/feature/GPP-186
+CityOfNewYork/DSpace;d245321ff;Update EPerson to implement HttpSessionBindingListener
+D	dspace-api/src/main/java/org/dspace/app/util/MySessionListener.java
+M	dspace-api/src/main/java/org/dspace/eperson/EPerson.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/util/Authenticate.java
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+
+CityOfNewYork/DSpace;65191ae86;Implement HttpSessionListener WIP
+A	dspace-api/src/main/java/org/dspace/app/util/MySessionListener.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/util/Authenticate.java
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+
+CityOfNewYork/DSpace;04ab038ab;Merge pull request #33 from CityOfNewYork/feature/GPP-217
+CityOfNewYork/DSpace;684251d18;Add doctsrings
+M	dspace-api/src/main/java/org/dspace/authenticate/SAMLAuthentication.java
+M	dspace-api/src/main/java/org/dspace/eperson/EPerson.java
+M	dspace-api/src/main/java/org/dspace/eperson/EPersonServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/EPersonDAOImpl.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+
+CityOfNewYork/DSpace;dd82ff02a;Merge pull request #34 from CityOfNewYork/feature/GPP-221
+CityOfNewYork/DSpace;77f22921d;Hide logout on dspace navbar when SAML Auth
+M	dspace-jspui/src/main/webapp/layout/navbar-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-minimal.jsp
+
+CityOfNewYork/DSpace;f51629be8;Add nyc header to header-submission and docstring
+M	dspace-api/src/main/java/org/dspace/eperson/service/EPersonService.java
+M	dspace-jspui/src/main/webapp/layout/header-submission.jsp
+
+CityOfNewYork/DSpace;b9a238c5d;Get enrollment before create enrollment
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+
+CityOfNewYork/DSpace;6ab935c07;Remove number of pages field
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;f7c934c72;Minor code cleanup
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+M	dspace/config/registries/eperson-types.xml
+
+CityOfNewYork/DSpace;4cb3f645f;Merge branch 'master' into feature/GPP-217
+CityOfNewYork/DSpace;60ad15fad;Merge pull request #31 from CityOfNewYork/feature/GPP-176
+CityOfNewYork/DSpace;90eec5281;Fix docstring
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+
+CityOfNewYork/DSpace;d2e573cfd;Changes to dspace navbar
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+M	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+CityOfNewYork/DSpace;fa48077e6;Complete SAMLAuthentication authentication method
+M	dspace-api/pom.xml
+A	dspace-api/src/main/java/org/dspace/authenticate/SAMLAuthentication.java
+M	dspace-api/src/main/java/org/dspace/eperson/EPersonServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/EPersonDAO.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/EPersonDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/service/EPersonService.java
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+M	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+M	dspace/config/modules/authentication.cfg
+M	dspace/config/registries/eperson-types.xml
+M	pom.xml
+
+CityOfNewYork/DSpace;70a89b711;Merge pull request #32 from CityOfNewYork/bugfix/GPP-220
+CityOfNewYork/DSpace;a24890e7b;Remove Brooklyn (City) subject
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;18ec10069;Remove duplicate subjects
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;52b06cd79;DSpace authenticate SAML user WIP
+M	dspace-api/src/main/java/org/dspace/eperson/EPerson.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+M	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+
+CityOfNewYork/DSpace;9427070c5;Update title field hint
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;6564735d0;Implement error handling in SAMLServlet
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/DSpaceServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+M	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+
+CityOfNewYork/DSpace;ebb9326cf;Merge pull request #30 from CityOfNewYork/feature/GPP-212
+CityOfNewYork/DSpace;119860550;Update description language and char count min length
+M	dspace-jspui/src/main/webapp/static/js/custom-form-validators.js
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;0d94b7f24;Add character counter and update description maxlength
+M	dspace-jspui/src/main/webapp/static/js/custom-form-validators.js
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+
+CityOfNewYork/DSpace;55a428908;Add docstrings
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+
+CityOfNewYork/DSpace;dd72751aa;SAML Implementation - NYC.ID Web Services
+M	dspace-jspui/pom.xml
+A	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLLogoutServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+A	dspace-jspui/src/main/webapp/WEB-INF/spring/securityContext.xml
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+A	dspace-jspui/src/main/webapp/layout/header-nyc.jsp
+M	dspace-jspui/src/main/webapp/static/css/bootstrap/dspace-theme.css
+A	dspace-jspui/src/main/webapp/static/css/nyc-gov.css
+A	dspace-jspui/src/main/webapp/static/img/nyc_white@x2.png
+A	dspace-jspui/src/main/webapp/static/img/upper-header-divider.gif
+M	dspace/config/log4j.properties
+A	dspace/modules/additions/src/main/resources/metadata/.gitignore
+A	dspace/modules/additions/src/main/resources/security/.gitignore
+M	pom.xml
+
+CityOfNewYork/DSpace;1aff2afc8;Placeholders for SAML
+A	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SAMLServlet.java
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+
+CityOfNewYork/DSpace;d50318a82;Merge pull request #29 from CityOfNewYork/feature/GPP-192
+CityOfNewYork/DSpace;46e70ac44;Updates to archive and reject email language
+M	dspace/config/emails/submit_archive
+M	dspace/config/emails/submit_reject
+
+CityOfNewYork/DSpace;df9ecd128;Update approval email subject
+M	dspace/config/emails/submit_archive
+M	dspace/config/emails/submit_reject
+
+CityOfNewYork/DSpace;2356d76cd;Changes to rejection email language
+M	dspace/config/emails/submit_reject
+
+CityOfNewYork/DSpace;017704948;Merge pull request #28 from CityOfNewYork/feature/GPP-191
+CityOfNewYork/DSpace;ce03f3bbe;Change permissions of /home/vagrant/ so nginx has access to static files
+M	build_scripts/web_setup/setup.sh
+
+CityOfNewYork/DSpace;9b19d3430;Changed Mb to MB
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+
+CityOfNewYork/DSpace;55325efa9;Add file size language and fix nginx configuration
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+M	build_scripts/web_setup/setup.sh
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+
+CityOfNewYork/DSpace;a3dd24d50;Changes for performance testing
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/layout/header-submission.jsp
+M	dspace-jspui/src/main/webapp/tools/eperson-list.jsp
+M	dspace-jspui/src/main/webapp/tools/group-select-list.jsp
+
+CityOfNewYork/DSpace;c3a125265;Update nginx configurations for SSA
+M	build_scripts/web_setup/nginx_conf/nginx.conf
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+M	dspace-jspui/src/main/webapp/mydashboard/main.jsp
+
+CityOfNewYork/DSpace;74a5a9d82;Merge pull request #27 from CityOfNewYork/bugfix/GPP-172
+CityOfNewYork/DSpace;0f9b5bc22;Additional XSS fixes
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+M	dspace-jspui/src/main/webapp/tools/curate-message.jsp
+
+CityOfNewYork/DSpace;68af47e86;Fixes to Cross Site Scripting
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemTag.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+M	dspace-jspui/src/main/webapp/discovery/static-sidebar-facet.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-community-edit.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/main.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/perform-task.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/preview-task.jsp
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+M	dspace-jspui/src/main/webapp/tools/edit-item-form.jsp
+M	dspace-jspui/src/main/webapp/tools/move-item.jsp
+
+CityOfNewYork/DSpace;dae5b0207;Add missing file and semicolon
+A	build_scripts/tomcat_setup/web.xml
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+
+CityOfNewYork/DSpace;433fa78eb;Fix to stored XSS vulnerabilities
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/CollectionListTag.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/CommunityListTag.java
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-advanced.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/batchimport.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/community-select.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/supervise-link.jsp
+
+CityOfNewYork/DSpace;107d7d393;Merge pull request #26 from CityOfNewYork/bugfix/GPP-171
+CityOfNewYork/DSpace;9cb97aa7d;Security Vulnerability Fixes
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/components/ldap-form.jsp
+M	dspace-jspui/src/main/webapp/components/login-form.jsp
+M	dspace-jspui/src/main/webapp/layout/footer-default.jsp
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/layout/legacy/footer-default.jsp
+M	dspace-jspui/src/main/webapp/layout/legacy/header-default.jsp
+M	dspace-jspui/src/main/webapp/sherpa/sherpa-policy.jsp
+M	dspace-jspui/src/main/webapp/submit/review-upload.jsp
+M	dspace-jspui/src/main/webapp/submit/show-uploaded-file.jsp
+M	dspace-jspui/src/main/webapp/submit/upload-file-list.jsp
+M	dspace-jspui/src/main/webapp/tools/edit-item-form.jsp
+M	dspace-xmlui-mirage2/src/main/webapp/scripts/person-lookup.js
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/page-structure.xsl
+M	dspace-xmlui/src/main/webapp/static/js/person-lookup.js
+M	dspace-xmlui/src/main/webapp/themes/Mirage/lib/xsl/core/page-structure.xsl
+
+CityOfNewYork/DSpace;a964d85b5;Merge pull request #25 from CityOfNewYork/bugfix/GPP-169
+CityOfNewYork/DSpace;1a2807a5e;Merge branch 'master' into bugfix/GPP-169
+CityOfNewYork/DSpace;0aa09f05b;Merge pull request #23 from CityOfNewYork/feature/GPP-142
+CityOfNewYork/DSpace;a4acab418;Fix to XSS and secure cookie vulnerabilities
+M	build_scripts/tomcat_setup/setup.sh
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-collection-edit.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-policy-edit.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/collection-select.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/upload-logo.jsp
+M	dspace-jspui/src/main/webapp/tools/group-edit.jsp
+M	dspace-jspui/src/main/webapp/tools/group-list.jsp
+M	dspace-jspui/src/main/webapp/tools/group-select-list.jsp
+
+CityOfNewYork/DSpace;1e372f063;Added CSRF token to remaining admin tools
+M	dspace-jspui/src/main/webapp/dspace-admin/batchmetadataimport.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/curate-collection.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/curate-community.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/curate-item.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/eperson-browse.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/eperson-confirm-delete.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/group-confirm-delete.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/group-eperson-select.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/group-group-select.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/metadataimport-showchanges.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/supervise-confirm-remove.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/wizard-default-item.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/workflow-abort-confirm.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/workflow-list.jsp
+
+CityOfNewYork/DSpace;c300f430c;Added CSRF tokens for general settings of admin tools
+M	dspace-jspui/src/main/webapp/dspace-admin/confirm-delete-format.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/confirm-delete-mdfield.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/confirm-delete-mdschema.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/license-edit.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/list-formats.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/list-metadata-fields.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/list-metadata-schemas.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/news-edit.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/news-main.jsp
+
+CityOfNewYork/DSpace;e7f7adec5;Added more CSRF tokens for content sections of admin tools
+M	dspace-jspui/src/main/webapp/dspace-admin/batchimport.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/curate-main.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/eperson-edit.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/metadataimport.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/supervise-link.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/supervise-list.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/supervise-main.jsp
+
+CityOfNewYork/DSpace;b66d039b8;Added CSRF token for authorization section of access control
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-advanced.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-collection-edit.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-community-edit.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/collection-select.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/community-select.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/item-select.jsp
+
+CityOfNewYork/DSpace;3cee19156;Escape characters for XSS
+M	dspace-jspui/src/main/webapp/tools/eperson-list.jsp
+M	dspace-jspui/src/main/webapp/tools/itemmap-browse.jsp
+M	dspace-jspui/src/main/webapp/tools/itemmap-main.jsp
+
+CityOfNewYork/DSpace;68277bcc7;Implement CSRF on feedback
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/FeedbackServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/LDAPServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+M	dspace-jspui/src/main/webapp/dspace-admin/upload-logo.jsp
+M	dspace-jspui/src/main/webapp/feedback/form.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-minimal.jsp
+M	dspace-jspui/src/main/webapp/static/js/resumable.js
+
+CityOfNewYork/DSpace;ee56008dc;Removed subscription email updates from admin navbar
+M	dspace-jspui/src/main/webapp/layout/navbar-admin.jsp
+
+CityOfNewYork/DSpace;89a0767d5;Fix to wrapping multipart form requests
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/BatchImportServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/DSpaceServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/admin/CollectionWizardServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/admin/EditCommunitiesServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/admin/EditItemServlet.java
+M	dspace-jspui/src/main/webapp/dspace-admin/wizard-permissions.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/main.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/remove-item.jsp
+
+CityOfNewYork/DSpace;cfe6155fe;Add missing CSRF token to forms
+M	dspace-jspui/src/main/webapp/community-home.jsp
+M	dspace-jspui/src/main/webapp/community-list.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/wizard-basicinfo.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/wizard-questions.jsp
+M	dspace-jspui/src/main/webapp/tools/confirm-delete-collection.jsp
+M	dspace-jspui/src/main/webapp/tools/edit-community.jsp
+
+CityOfNewYork/DSpace;6be646035;Merge pull request #24 from CityOfNewYork/feature/GPP-164
+CityOfNewYork/DSpace;3d5252706;Removed collection's settings box in edit collection page
+M	dspace-jspui/src/main/webapp/tools/edit-collection.jsp
+
+CityOfNewYork/DSpace;1608b2167;Merge pull request #22 from CityOfNewYork/feature/GPP-146
+CityOfNewYork/DSpace;5de9c8d84;Add missing configuration changes for Postgres
+M	build_scripts/db_setup/postgresql.conf
+
+CityOfNewYork/DSpace;3e081f4e7;Clean up code
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/EditProfileServlet.java
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+M	dspace-jspui/src/main/webapp/tools/edit-item-form.jsp
+M	dspace-jspui/src/main/webapp/tools/group-list.jsp
+
+CityOfNewYork/DSpace;9114461ea;Complete implementation of CSRF validation
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/DSpaceServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/EditProfileServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/display-item.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-item-edit.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-main.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/authorize-policy-edit.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/eperson-main.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/main.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/perform-task.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/preview-task.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/reject-reason.jsp
+M	dspace-jspui/src/main/webapp/submit/complete.jsp
+M	dspace-jspui/src/main/webapp/tools/confirm-delete-item.jsp
+M	dspace-jspui/src/main/webapp/tools/confirm-privating-item.jsp
+M	dspace-jspui/src/main/webapp/tools/confirm-withdraw-item.jsp
+M	dspace-jspui/src/main/webapp/tools/curate-item.jsp
+M	dspace-jspui/src/main/webapp/tools/edit-collection.jsp
+M	dspace-jspui/src/main/webapp/tools/edit-item-form.jsp
+M	dspace-jspui/src/main/webapp/tools/group-edit.jsp
+M	dspace-jspui/src/main/webapp/tools/group-list.jsp
+M	dspace-jspui/src/main/webapp/tools/itemmap-browse.jsp
+M	dspace-jspui/src/main/webapp/tools/itemmap-main.jsp
+M	dspace-jspui/src/main/webapp/tools/move-item.jsp
+M	dspace-jspui/src/main/webapp/tools/upload-bitstream.jsp
+M	dspace-jspui/src/main/webapp/workspace/ws-main.jsp
+
+CityOfNewYork/DSpace;9576f5908;Add SSL for Postgres
+M	build_scripts/db_setup/pg_hba.conf
+M	build_scripts/db_setup/postgresql.conf
+M	build_scripts/db_setup/setup.sh
+M	build_scripts/dspace_install/local.cfg
+
+CityOfNewYork/DSpace;95eceac47;CSRF Validation WIP
+M	Vagrantfile.example
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/DSpaceServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/LDAPServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+M	dspace-jspui/src/main/webapp/components/login-form.jsp
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+
+CityOfNewYork/DSpace;5796371a1;CSRF Submit button WIP
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/EditProfileServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/LogoutServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/main.jsp
+
+CityOfNewYork/DSpace;ab5dffaba;Implement CSRF token
+M	dspace-api/src/main/java/org/dspace/app/util/Util.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/EditProfileServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/util/Authenticate.java
+M	dspace-jspui/src/main/webapp/register/edit-profile.jsp
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+
+CityOfNewYork/DSpace;4fb658ffe;Fixed email typo
+M	build_scripts/python_setup/status_email.py
+
+CityOfNewYork/DSpace;5a852954e;Merge pull request #21 from CityOfNewYork/feature/GPP-158
+CityOfNewYork/DSpace;efe3d9fee;Removed password change from edit profile page
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/register/edit-profile.jsp
+
+CityOfNewYork/DSpace;092b60854;Merge pull request #18 from CityOfNewYork/feature/GPP-128
+CityOfNewYork/DSpace;a966d067e;Fixed typos and changed environment examples
+M	build_scripts/python_setup/status_email.py
+M	build_scripts/python_setup/submission_tracker.sh
+
+CityOfNewYork/DSpace;9bc01288c;Merge pull request #19 from CityOfNewYork/feature/GPP-157
+CityOfNewYork/DSpace;1c96876d0;Added missing quotes
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+
+CityOfNewYork/DSpace;2ee3d5591;Updates to Python Script; Add sh file for cronjob; Store files in new directory
+M	Vagrantfile.example
+M	build_scripts/python_setup/crontab
+R096	build_scripts/python_setup/python_setup.sh	build_scripts/python_setup/setup.sh
+R097	build_scripts/python_setup/publications_status_email.py	build_scripts/python_setup/status_email.py
+A	build_scripts/python_setup/submission_tracker.sh
+
+CityOfNewYork/DSpace;13c31efa3;Removed email from bcc
+M	build_scripts/python_setup/publications_status_email.py
+
+CityOfNewYork/DSpace;9aba4ab13;Update nginx configuration to check referer on POST
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+
+CityOfNewYork/DSpace;282914d77;Added python setup to Vagrantfile.example
+M	Vagrantfile.example
+
+CityOfNewYork/DSpace;49919598d;Full path to virtualenv python for crontab
+M	build_scripts/python_setup/crontab
+
+CityOfNewYork/DSpace;ae2bda9d1;Adding missing file contents... again
+M	build_scripts/python_setup/python_setup.sh
+
+CityOfNewYork/DSpace;892f63cf8;Adding missing file contents
+M	build_scripts/python_setup/publications_status_email.py
+
+CityOfNewYork/DSpace;ac9cfd8e4;Merge remote-tracking branch 'origin/master' into feature/GPP-128
+CityOfNewYork/DSpace;84432b1e4;Working cron job for sending notification emails
+A	build_scripts/python_setup/crontab
+A	build_scripts/python_setup/publications_status_email.py
+A	build_scripts/python_setup/python_setup.sh
+
+CityOfNewYork/DSpace;0c6226bc6;Fix to IE file upload
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+
+CityOfNewYork/DSpace;b3066678e;Merge pull request #15 from CityOfNewYork/bugfix/GPP-154
+CityOfNewYork/DSpace;2c2ceed84;Fixed invalid character check for file names
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+
+CityOfNewYork/DSpace;768b18ec8;Additional XSS fixes
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/community-list.jsp
+M	dspace-jspui/src/main/webapp/tools/edit-item-form.jsp
+
+CityOfNewYork/DSpace;35a471005;Limit special chars on filenames
+M	dspace-jspui/src/main/webapp/submit/change-file-description.jsp
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+
+CityOfNewYork/DSpace;7f0c5c455;Merge pull request #17 from CityOfNewYork/feature/GPP-150
+CityOfNewYork/DSpace;534583686;Fix typo
+M	dspace-jspui/src/main/webapp/submit/upload-file-list.jsp
+
+CityOfNewYork/DSpace;ad10880c4;Merge pull request #16 from CityOfNewYork/feature/GPP-122
+CityOfNewYork/DSpace;2e3ce74a1;Reduced table width for file uploads
+M	dspace-jspui/src/main/webapp/submit/upload-file-list.jsp
+
+CityOfNewYork/DSpace;393fc9d44;Changed header language
+M	dspace-api/src/main/resources/Messages.properties
+
+CityOfNewYork/DSpace;2d5cf6cce;UI changes to file uploaded sucessfully
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/submit/upload-file-list.jsp
+
+CityOfNewYork/DSpace;ad9a08faf;Changed description to section for files
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+
+CityOfNewYork/DSpace;87bf7cbd0;Fix to XSS on filename
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemTag.java
+M	dspace-jspui/src/main/webapp/browse/full.jsp
+M	dspace-jspui/src/main/webapp/display-item.jsp
+M	dspace-jspui/src/main/webapp/submit/upload-file-list.jsp
+
+CityOfNewYork/DSpace;decc07c4b;Fix to XSS on browse and item page
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemTag.java
+M	dspace-jspui/src/main/webapp/browse/full.jsp
+
+CityOfNewYork/DSpace;d0ac53d20;Adding table and trigger for tracking submissions
+A	build_scripts/db_setup/add_submission_tracker.sql
+M	build_scripts/db_setup/setup.sh
+M	build_scripts/dspace_install/install.sh
+
+CityOfNewYork/DSpace;2c0640b0f;Merge pull request #11 from CityOfNewYork/feature/GPP-144
+CityOfNewYork/DSpace;ae2b5187d; Fixed file description preview
+M	dspace-jspui/src/main/webapp/submit/upload-file-list.jsp
+
+CityOfNewYork/DSpace;c038494c8;Merge pull request #12 from CityOfNewYork/feature/GPP-134
+CityOfNewYork/DSpace;ec8c7bcf6;Merge pull request #14 from CityOfNewYork/feature/GPP-143
+CityOfNewYork/DSpace;c69c777a1;Merge pull request #13 from CityOfNewYork/feature/gpp-140
+CityOfNewYork/DSpace;163156cca;Added CORS to Nginx Config
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+
+CityOfNewYork/DSpace;f0908d482;Updated SSL Ciphers
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+
+CityOfNewYork/DSpace;8468d2447;Fix XSS on ItemDescription
+M	dspace-api/src/main/java/org/dspace/content/Bitstream.java
+M	dspace-jspui/src/main/webapp/display-item.jsp
+
+CityOfNewYork/DSpace;c1b7a9a3c;Removed even more tooltips
+M	dspace-jspui/src/main/webapp/submit/upload-file-list.jsp
+
+CityOfNewYork/DSpace;fae8e1656;Removed more tooltips
+M	dspace-jspui/src/main/webapp/submit/show-uploaded-file.jsp
+
+CityOfNewYork/DSpace;59dab32cf;Added charter link and removed extra tool tips (GPP-102 and GPP-123)
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+M	dspace-jspui/src/main/webapp/submit/show-uploaded-file.jsp
+
+CityOfNewYork/DSpace;a2ab8ab51;Updated dates covered language
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;f3f042db8;More agency list updates
+M	build_scripts/db_setup/add_constants.sql
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;f9866bbb4;Updated agency list
+M	build_scripts/db_setup/add_constants.sql
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;99065b649;Implement XSS
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/SelectCollectionTag.java
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/community-home.jsp
+M	dspace-jspui/src/main/webapp/community-list.jsp
+M	dspace-jspui/src/main/webapp/layout/location-bar.jsp
+M	dspace-jspui/src/main/webapp/mydashboard/main.jsp
+M	dspace-jspui/src/main/webapp/search/discovery.jsp
+M	dspace-jspui/src/main/webapp/submit/upload-file-list.jsp
+M	dspace-jspui/src/main/webapp/workspace/ws-main.jsp
+
+CityOfNewYork/DSpace;ef52923b5;Fixed interal server error when viewing stats
+M	dspace-jspui/src/main/webapp/display-statistics.jsp
+
+CityOfNewYork/DSpace;8b1b3b81b;Changed /feedback to /contact
+M	dspace-api/src/main/java/org/dspace/app/itemexport/ItemExportServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/app/itemimport/ItemImportServiceImpl.java
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+M	dspace-jspui/src/main/webapp/components/contact-info.jsp
+M	dspace-jspui/src/main/webapp/feedback/form.jsp
+M	dspace-jspui/src/main/webapp/layout/footer-default.jsp
+M	dspace-jspui/src/main/webapp/layout/legacy/footer-default.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+CityOfNewYork/DSpace;00815c3a2;Changed Help to Contact Us in navbar
+M	dspace-jspui/src/main/webapp/layout/navbar-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+CityOfNewYork/DSpace;a0923e731;Fixed DORIS banner redirect
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+
+CityOfNewYork/DSpace;1a534a343;Typo fix for GPP-123
+M	build_scripts/dspace_install/local.cfg
+M	dspace-api/src/main/resources/Messages.properties
+
+CityOfNewYork/DSpace;0b5758371;Changed site handle to gpp
+M	build_scripts/dspace_install/dspace.cfg
+M	build_scripts/dspace_install/local.cfg
+
+CityOfNewYork/DSpace;b83200bcf;Additional language and UI changes
+M	build_scripts/dspace_install/dspace.cfg
+M	build_scripts/dspace_install/local.cfg
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/components/ldap-form.jsp
+M	dspace-jspui/src/main/webapp/components/login-form.jsp
+M	dspace-jspui/src/main/webapp/feedback/form.jsp
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;f26be3762;Fix to reopen submission
+M	dspace-jspui/src/main/webapp/workspace/ws-main.jsp
+
+CityOfNewYork/DSpace;120c87d63;Merge pull request #9 from CityOfNewYork/feature/GPP-79
+CityOfNewYork/DSpace;901e75d98;Updated site name and added instructions for multi-selects
+M	build_scripts/dspace_install/local.cfg
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;115523f48;Merge branch 'master' into feature/GPP-79
+CityOfNewYork/DSpace;db3a1a38a;Merge pull request #10 from CityOfNewYork/feature/GPP-102
+CityOfNewYork/DSpace;171735196;Increased collection title column size
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+
+CityOfNewYork/DSpace;2021022ed;Removed intro language from original header location
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+
+CityOfNewYork/DSpace;ca3e63ff2;Intro text only on collections page
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+
+CityOfNewYork/DSpace;d65c6a90f;Fixed go to gpp home bug
+M	dspace-jspui/src/main/webapp/submit/select-collection.jsp
+M	dspace-jspui/src/main/webapp/submit/start-lookup-submission.jsp
+
+CityOfNewYork/DSpace;fad44daee;More typo fixes for message keys
+M	dspace-jspui/src/main/webapp/display-item.jsp
+
+CityOfNewYork/DSpace;abf53d1a8;Language change for no default community/collection
+M	dspace-jspui/src/main/webapp/home.jsp
+
+CityOfNewYork/DSpace;993152923;Fixed typo for message key
+M	dspace-jspui/src/main/webapp/community-home.jsp
+
+CityOfNewYork/DSpace;52889d263;Merged with master
+CityOfNewYork/DSpace;f336cc618;Merge pull request #8 from CityOfNewYork/feature/GPP-123
+CityOfNewYork/DSpace;75f53fdff;Merge pull request #7 from CityOfNewYork/feature/GPP-101
+CityOfNewYork/DSpace;40a66f1f8;Added homepage redirect to collection page
+M	dspace-jspui/src/main/webapp/home.jsp
+
+CityOfNewYork/DSpace;79a303a27;Remove superfluous mimetype from csv
+M	dspace/config/registries/bitstream-formats.xml
+
+CityOfNewYork/DSpace;e1300bac5;Error logs for upload step and language updates
+M	dspace-api/src/main/java/org/dspace/submit/step/UploadStep.java
+M	dspace-api/src/main/java/org/dspace/submit/util/VirusScanner.java
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+M	dspace/config/modules/submission-curation.cfg
+M	dspace/config/registries/bitstream-formats.xml
+
+CityOfNewYork/DSpace;fc1eaa310;Removed neighborhoods, updates agency list, updated intro language
+M	build_scripts/db_setup/add_constants.sql
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;7bcc8d924;Added intro paragraph, changed breadcrumb color, language changes
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/layout/location-bar.jsp
+
+CityOfNewYork/DSpace;fdb247625;Remove unused import
+M	dspace-api/src/main/java/org/dspace/submit/step/UploadStep.java
+
+CityOfNewYork/DSpace;eb2fdf642;ICAP implementation WIP
+M	build_scripts/dspace_install/local.cfg
+M	dspace-api/src/main/java/org/dspace/submit/step/UploadStep.java
+M	dspace-api/src/main/java/org/dspace/submit/step/UploadWithEmbargoStep.java
+A	dspace-api/src/main/java/org/dspace/submit/util/VirusScanCodes.java
+A	dspace-api/src/main/java/org/dspace/submit/util/VirusScanner.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+
+CityOfNewYork/DSpace;ed2000287;fixed subject multiselect typo
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+
+CityOfNewYork/DSpace;450e81a86;Fixed typos and removed tooltip
+M	build_scripts/db_setup/add_metadata_fields.sql
+M	dspace-jspui/src/main/webapp/static/js/custom-form-validators.js
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;074eef0dc;Left justified all fields
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+
+CityOfNewYork/DSpace;2fecbd708;Added indentation for date and place covered section
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+
+CityOfNewYork/DSpace;810f6f31e;Removed Verify and License steps
+M	dspace/config/item-submission.xml
+
+CityOfNewYork/DSpace;b01e3b7e9;Initial submission UI changes
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/help/index.html
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;0a9ac3a6e;Frontend UI for virus scan
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+
+CityOfNewYork/DSpace;a1d7883c2;Fixed typo
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+
+CityOfNewYork/DSpace;771453f69;Merge branch 'master' into feature/GPP-101
+CityOfNewYork/DSpace;03aa332c4;Changed mydspace to mydashboard
+M	dspace-api/src/main/java/org/dspace/workflowbasic/BasicWorkflowServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/xmlworkflow/XmlWorkflowServiceImpl.java
+R095	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/MyDSpaceServlet.java	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/MyDashboardServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/SubscribeServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/WorkspaceServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/admin/EPersonAdminServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/util/Authenticate.java
+M	dspace-jspui/src/main/webapp/WEB-INF/web.xml
+M	dspace-jspui/src/main/webapp/collection-home.jsp
+M	dspace-jspui/src/main/webapp/community-home.jsp
+M	dspace-jspui/src/main/webapp/display-item.jsp
+M	dspace-jspui/src/main/webapp/dspace-admin/batchimport.jsp
+M	dspace-jspui/src/main/webapp/layout/legacy/navbar-default.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-community-or-collection-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-minimal.jsp
+R089	dspace-jspui/src/main/webapp/mydspace/export-error.jsp	dspace-jspui/src/main/webapp/mydashboard/export-error.jsp
+R093	dspace-jspui/src/main/webapp/mydspace/in-archive.jsp	dspace-jspui/src/main/webapp/mydashboard/in-archive.jsp
+R096	dspace-jspui/src/main/webapp/mydspace/main.jsp	dspace-jspui/src/main/webapp/mydashboard/main.jsp
+R092	dspace-jspui/src/main/webapp/mydspace/own-submissions.jsp	dspace-jspui/src/main/webapp/mydashboard/own-submissions.jsp
+R095	dspace-jspui/src/main/webapp/mydspace/perform-task.jsp	dspace-jspui/src/main/webapp/mydashboard/perform-task.jsp
+R089	dspace-jspui/src/main/webapp/mydspace/preview-task.jsp	dspace-jspui/src/main/webapp/mydashboard/preview-task.jsp
+R088	dspace-jspui/src/main/webapp/mydspace/reject-reason.jsp	dspace-jspui/src/main/webapp/mydashboard/reject-reason.jsp
+R084	dspace-jspui/src/main/webapp/mydspace/remove-item.jsp	dspace-jspui/src/main/webapp/mydashboard/remove-item.jsp
+R097	dspace-jspui/src/main/webapp/mydspace/subscriptions.jsp	dspace-jspui/src/main/webapp/mydashboard/subscriptions.jsp
+R089	dspace-jspui/src/main/webapp/mydspace/task-complete.jsp	dspace-jspui/src/main/webapp/mydashboard/task-complete.jsp
+M	dspace-jspui/src/main/webapp/static/css/bootstrap/bootstrap.css
+M	dspace-jspui/src/main/webapp/submit/cancelled-removed.jsp
+M	dspace-jspui/src/main/webapp/submit/license-rejected.jsp
+M	dspace-jspui/src/main/webapp/submit/saved.jsp
+M	dspace-jspui/src/main/webapp/submit/select-collection.jsp
+M	dspace-jspui/src/main/webapp/submit/start-lookup-submission.jsp
+M	dspace-jspui/src/main/webapp/workspace/ws-main.jsp
+M	dspace-services/src/test/java/org/dspace/servicemanager/config/DSpaceConfigurationServiceTest.java
+M	dspace/config/dstat.map
+
+CityOfNewYork/DSpace;dc83567fd;More language changes and added breadcrumb trail back to dashboard
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/layout/header-submission.jsp
+D	dspace-jspui/src/main/webapp/static/img/nyc_purple.gif
+
+CityOfNewYork/DSpace;da6a010a8;Removed discover, language changes, and help tab in nav bar
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/home.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-community-or-collection-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+CityOfNewYork/DSpace;0695ef715;Removed DSpace logo from navbar
+M	dspace-jspui/src/main/webapp/layout/navbar-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-community-or-collection-admin.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+M	dspace-jspui/src/main/webapp/layout/navbar-minimal.jsp
+
+CityOfNewYork/DSpace;3279033dc;Removed communities section from homepage UI
+M	build_scripts/dspace_install/local.cfg
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/home.jsp
+
+CityOfNewYork/DSpace;1e76702d0;Doris banner style changes
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/static/css/bootstrap/dspace-theme.css
+
+CityOfNewYork/DSpace;add0b0b2e;Added new images
+M	dspace-jspui/src/main/webapp/favicon.ico
+A	dspace-jspui/src/main/webapp/static/img/nyc_purple.gif
+
+CityOfNewYork/DSpace;539c37afa;Changed search bar text
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/layout/navbar-default.jsp
+
+CityOfNewYork/DSpace;a5d561f19;Initial homepage UI changes
+M	dspace-jspui/src/main/webapp/home.jsp
+M	dspace-jspui/src/main/webapp/layout/header-default.jsp
+M	dspace-jspui/src/main/webapp/layout/header-submission.jsp
+A	dspace-jspui/src/main/webapp/static/img/doris-banner.jpg
+M	dspace/config/news-side.html
+
+CityOfNewYork/DSpace;c24cff9c1;Merge pull request #6 from CityOfNewYork/feature/GPP-106
+CityOfNewYork/DSpace;fcd280018;Added validator for submission year
+M	dspace-jspui/src/main/webapp/static/js/custom-form-validators.js
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;bd552b72d;Added scroll to error in validators
+M	dspace-jspui/src/main/webapp/static/js/custom-form-validators.js
+
+CityOfNewYork/DSpace;0b17dacb2;Update language and move form field
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;cebd6455b;Added options for neighborhoods
+M	build_scripts/db_setup/add_constants.sql
+M	build_scripts/dspace_install/install.sh
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;a803d2d32;Added validator for subject multiselect
+M	dspace-jspui/src/main/webapp/static/js/custom-form-validators.js
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+
+CityOfNewYork/DSpace;34e6bad59;Added validator for fiscal and calender year
+A	dspace-jspui/src/main/webapp/static/js/custom-form-validators.js
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;e38f032fa;Added validation for character limits and digit checks
+M	dspace-jspui/src/main/webapp/submit/edit-metadata.jsp
+
+CityOfNewYork/DSpace;d284cbdef;Added restart dspace script from master
+M	build_scripts/dspace_install/restart_dspace.sh
+
+CityOfNewYork/DSpace;c40f01e8a;Merged with master again
+CityOfNewYork/DSpace;f925b19be;Merged with master
+CityOfNewYork/DSpace;edb45bb31;Merge pull request #5 from CityOfNewYork/feature/GPP-103
+CityOfNewYork/DSpace;00bbd7d7a;Fixed typos
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;f10ea219b;update to local.cfg
+M	build_scripts/dspace_install/local.cfg
+
+CityOfNewYork/DSpace;d5354c3c5;Added constants for school districts and community board districts
+M	build_scripts/db_setup/add_constants.sql
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;096f78cdb;set placeholder in configuration
+M	build_scripts/dspace_install/local.cfg
+
+CityOfNewYork/DSpace;1d2f5edd8;Remove commented code
+M	build_scripts/dspace_install/local.cfg
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+M	dspace-jspui/src/main/webapp/submit/complete.jsp
+
+CityOfNewYork/DSpace;9a77025c9;Complete submissions form process
+R100	build_scripts/dspace_install/jspui.xml	build_scripts/dspace_install/ROOT.xml
+A	build_scripts/dspace_install/dspace.cfg
+M	build_scripts/dspace_install/install.sh
+M	build_scripts/dspace_install/local.cfg
+A	build_scripts/dspace_install/restart_dspace.sh
+D	build_scripts/dspace_install/xmlui.xml
+M	build_scripts/tomcat_setup/server.xml
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+M	dspace-api/src/main/resources/Messages.properties
+M	dspace-jspui/src/main/webapp/submit/choose-file.jsp
+M	dspace-jspui/src/main/webapp/submit/complete.jsp
+
+CityOfNewYork/DSpace;1e9ac209f;Added SQL scripts to add constants
+A	build_scripts/db_setup/add_constants.sql
+M	build_scripts/tomcat_setup/setup.sh
+
+CityOfNewYork/DSpace;e87db0cc3;Updated tomcat install link
+M	build_scripts/dspace_install/install.sh
+M	build_scripts/tomcat_setup/setup.sh
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;3b6b58299;Changed stored values for dropdown options
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;4d4c06358;Fixed overlapping metadata fields
+A	build_scripts/db_setup/add_metadata_fields.sql
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;99c8181e3;Added acronym for Design Commision
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;f75e6b8e4;Merge pull request #2 from CityOfNewYork/feature/GPP-77
+CityOfNewYork/DSpace;bd2014aca;merge with master
+CityOfNewYork/DSpace;bf273076f;symlink authentication-ldap.cfg
+M	build_scripts/dspace_install/install.sh
+
+CityOfNewYork/DSpace;d8951966a;Enable LDAP Auth in local.cfg
+D	build_scripts/dspace_install/authentication.cfg
+M	build_scripts/dspace_install/local.cfg
+
+CityOfNewYork/DSpace;40993d350;Include manual install of GeoLite db file
+M	build_scripts/dspace_install/install.sh
+
+CityOfNewYork/DSpace;1b28d1766;Merge pull request #4 from CityOfNewYork/feature/GPP-111
+CityOfNewYork/DSpace;9cb7c9967;Escape & characters
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;448a96d1d;Updated agency stored value
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;8fd490306;Reformatted code
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;3092b278f;Initial draft of submission form
+M	dspace/config/input-forms.xml
+
+CityOfNewYork/DSpace;3b1da37d1;Updated crontab
+M	build_scripts/db_setup/crontab
+
+CityOfNewYork/DSpace;60d636944;Exported variables to backup.sh
+M	build_scripts/db_setup/backup.sh
+
+CityOfNewYork/DSpace;79503cf31;Changed smtp parameters to env variables
+M	build_scripts/db_setup/backup.py
+
+CityOfNewYork/DSpace;beeff946b;Fixed email typo and changed backup log path
+M	build_scripts/db_setup/backup.py
+M	build_scripts/db_setup/backup.sh
+
+CityOfNewYork/DSpace;c6e49d3c3;Merge pull request #3 from CityOfNewYork/feature/GPP-114
+CityOfNewYork/DSpace;c10563d33;Updated path in crontab
+M	build_scripts/db_setup/crontab
+
+CityOfNewYork/DSpace;a0765b5a7;Moved backup scripts to db_setup
+D	backup.sh
+R100	backup.py	build_scripts/db_setup/backup.py
+A	build_scripts/db_setup/backup.sh
+R100	crontab	build_scripts/db_setup/crontab
+M	build_scripts/db_setup/setup.sh
+
+CityOfNewYork/DSpace;cb4f107c1;Update assetstore.dir config variable
+M	build_scripts/dspace_install/install.sh
+M	build_scripts/dspace_install/local.cfg
+
+CityOfNewYork/DSpace;e9b1e90bc;Added cron job for backup
+M	backup.sh
+A	crontab
+
+CityOfNewYork/DSpace;241a222d3;Added backup.sh
+M	backup.py
+A	backup.sh
+
+CityOfNewYork/DSpace;6136cd207;Changed backup directory
+M	backup.py
+
+CityOfNewYork/DSpace;c10d998cf;Added backup.py
+A	backup.py
+
+CityOfNewYork/DSpace;fcb1d4f5d;Updated link to maven binaries in build scripts
+M	build_scripts/maven_setup/setup.sh
+
+CityOfNewYork/DSpace;2468142ac;Add configuration file for authentication
+A	build_scripts/dspace_install/authentication.cfg
+
+CityOfNewYork/DSpace;e61e046ec;Working LDAP configuration
+A	build_scripts/dspace_install/authentication-ldap.cfg
+
+CityOfNewYork/DSpace;26d53bb92;Merge pull request #1 from CityOfNewYork/feature/GPP-82
+CityOfNewYork/DSpace;f9098f3d1;Update Vagrantfile.example
+M	Vagrantfile.example
+
+CityOfNewYork/DSpace;ad9106172;Pull request changes
+M	build_scripts/ant_setup/ant.sh
+M	build_scripts/ant_setup/setup.sh
+A	build_scripts/db_setup/config.sh
+M	build_scripts/db_setup/setup.sh
+M	build_scripts/dspace_install/install.sh
+M	build_scripts/dspace_install/jspui.xml
+M	build_scripts/dspace_install/local.cfg
+M	build_scripts/dspace_install/solr.xml
+M	build_scripts/dspace_install/xmlui.xml
+M	build_scripts/maven_setup/maven.sh
+M	build_scripts/maven_setup/setup.sh
+M	build_scripts/tomcat_setup/setup.sh
+M	build_scripts/web_setup/nginx_conf/nginx.conf
+M	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+M	build_scripts/web_setup/setup.sh
+
+CityOfNewYork/DSpace;1365216e3;Add nginx setup script to Vagrantfile.example
+M	Vagrantfile.example
+
+CityOfNewYork/DSpace;08bfbb33c;Create master branch off of dspace-6.2
+CityOfNewYork/DSpace;d527fb58a;Create build script for nginx
+M	Vagrantfile.example
+M	build_scripts/java_setup/java.sh
+M	build_scripts/tomcat_setup/setup.sh
+A	build_scripts/web_setup/nginx_conf/nginx.conf
+A	build_scripts/web_setup/nginx_conf/sites/dspace.conf
+A	build_scripts/web_setup/setup.sh
+
+CityOfNewYork/DSpace;71124eda9;Complete individual build scripts for DSpace
+R100	build_scripts/ant.sh	build_scripts/ant_setup/ant.sh
+A	build_scripts/ant_setup/setup.sh
+R100	build_scripts/pg_hba.conf	build_scripts/db_setup/pg_hba.conf
+R100	build_scripts/postgres.sh	build_scripts/db_setup/postgres.sh
+R100	build_scripts/postgresql.conf	build_scripts/db_setup/postgresql.conf
+R061	build_scripts/db_setup.sh	build_scripts/db_setup/setup.sh
+A	build_scripts/dspace_install/install.sh
+R100	build_scripts/jspui.xml	build_scripts/dspace_install/jspui.xml
+R099	build_scripts/local.cfg	build_scripts/dspace_install/local.cfg
+R100	build_scripts/solr.xml	build_scripts/dspace_install/solr.xml
+R100	build_scripts/xmlui.xml	build_scripts/dspace_install/xmlui.xml
+R100	build_scripts/java.sh	build_scripts/java_setup/java.sh
+A	build_scripts/java_setup/setup.sh
+R100	build_scripts/maven.sh	build_scripts/maven_setup/maven.sh
+R100	build_scripts/settings.xml	build_scripts/maven_setup/settings.xml
+A	build_scripts/maven_setup/setup.sh
+D	build_scripts/setup.sh
+R100	build_scripts/server.xml	build_scripts/tomcat_setup/server.xml
+A	build_scripts/tomcat_setup/setup.sh
+
+CityOfNewYork/DSpace;e2421f146;Separate build scripts WIP
+A	build_scripts/db_setup.sh
+M	build_scripts/setup.sh
+
+CityOfNewYork/DSpace;b02f6cd9f;Complete DSpace installation
+A	build_scripts/jspui.xml
+A	build_scripts/local.cfg
+A	build_scripts/settings.xml
+M	build_scripts/setup.sh
+A	build_scripts/solr.xml
+A	build_scripts/xmlui.xml
+
+CityOfNewYork/DSpace;2ca26be38;Create initial build setup script
+M	.gitignore
+M	Vagrantfile.example
+A	build_scripts/ant.sh
+A	build_scripts/java.sh
+A	build_scripts/maven.sh
+A	build_scripts/pg_hba.conf
+A	build_scripts/postgres.sh
+A	build_scripts/postgresql.conf
+A	build_scripts/server.xml
+A	build_scripts/setup.sh
+
+CityOfNewYork/DSpace;7a182a3d3;Initial setup of build scripts
+M	.gitignore
+A	Vagrantfile.example
+A	build_scripts/proxy.sh
+A	build_scripts/subscription_manager.sh
+A	setup.sh
+
+CityOfNewYork/DSpace;e5cb62997;[maven-release-plugin] prepare release dspace-6.2
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+CityOfNewYork/DSpace;ff7c7e3d6;Regenerate third-party license list
+M	LICENSES_THIRD_PARTY
+
+CityOfNewYork/DSpace;068047cb1;Update LICENSE copyright claim with current year.
+M	LICENSE
+
+CityOfNewYork/DSpace;0e7c7c088;Merge pull request #1836 from Generalelektrix/dspace-6_x
+CityOfNewYork/DSpace;662690156;DS-3687
+M	dspace-api/src/main/java/org/dspace/statistics/content/StatisticsDataVisits.java
+M	dspace-api/src/main/resources/Messages.properties
+
+CityOfNewYork/DSpace;6b8f072d3;DS-3687 Hard coded note not compatible with multi-lingual sites for legacy stats
+M	dspace-api/src/main/java/org/dspace/statistics/content/StatisticsDataVisits.java
+M	dspace-api/src/main/resources/Messages.properties
+
+CityOfNewYork/DSpace;fa587c52e;Merge pull request #1830 from tuub/DS-3680
+CityOfNewYork/DSpace;d753c09b2;DS-3680: Remove problematic unaching. Also see DS-3681 as follow-up.
+M	dspace-api/src/main/java/org/dspace/authority/indexer/DSpaceAuthorityIndexer.java
+
+CityOfNewYork/DSpace;fbb45ba75;DS-3680: clarify that we need to dispatch events before committing
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+
+CityOfNewYork/DSpace;014456e1e;Revert "Events must be dispatched after commit() to ensure they can retrieve latest data from DB"
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+
+CityOfNewYork/DSpace;258b4f00e;[DS-3602] Ensure Consistent Use of Legacy Id in Usage Queries (#1782)
+M	dspace-api/src/main/java/org/dspace/statistics/content/StatisticsDataSearches.java
+M	dspace-api/src/main/java/org/dspace/statistics/content/StatisticsDataVisits.java
+
+CityOfNewYork/DSpace;3798a1277;Merge pull request #1824 from tdonohue/DS-3656_and_DS-3648
+CityOfNewYork/DSpace;bc82adef5;[DS-3674] copied over input-forms.xml to the test config folder
+A	dspace-api/src/test/data/dspaceFolder/config/input-forms.xml
+
+CityOfNewYork/DSpace;d4d61eed6;Replace dispatchEvents() call with an actual commit() to ensure changes are saved
+M	dspace-api/src/main/java/org/dspace/submit/step/CompleteStep.java
+
+CityOfNewYork/DSpace;646936a3d;Events must be dispatched after commit() to ensure they can retrieve latest data from DB
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+
+CityOfNewYork/DSpace;9dd6bb0f0;DS-3648: Don't uncache submitter and related groups. Also DS-3656: Flush changes before evict()
+M	dspace-api/src/main/java/org/dspace/core/HibernateDBConnection.java
+
+CityOfNewYork/DSpace;0e2ed31de;Merge pull request #1821 from Georgetown-University-Libraries/ds3661r6x
+CityOfNewYork/DSpace;1492dfef9;Normalize space
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickThumbnailFilter.java
+
+CityOfNewYork/DSpace;8b6c1acab;Port PR1817, Only request image info if color space
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickThumbnailFilter.java
+
+CityOfNewYork/DSpace;e88924b7d;DS-3517 Allow improved handling of CMYK PDFs
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickThumbnailFilter.java
+M	dspace/config/dspace.cfg
+
+CityOfNewYork/DSpace;42608e028;Merge pull request #1816 from AlexanderS/fix-discovery-reindex
+CityOfNewYork/DSpace;7e68165de;DS-3660: Fix discovery reindex on metadata change
+M	dspace-api/src/main/java/org/dspace/discovery/IndexEventConsumer.java
+
+CityOfNewYork/DSpace;cfecf10e8;Merge pull request #1815 from tdonohue/DS-3659
+CityOfNewYork/DSpace;5d656ea92;XMLUI: Remove doubled translation key (#1818)
+M	dspace-xmlui/src/main/webapp/i18n/messages.xml
+
+CityOfNewYork/DSpace;62e2ac81f;Merge pull request #1814 from AlexanderS/fix/i18n-key-typo
+CityOfNewYork/DSpace;e9ace604a;DS-3659: Ensure readonly connections can never rollback
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+
+CityOfNewYork/DSpace;7f91528c1;XMLUI/SwordClient: Fix typo in i18n key
+M	dspace-xmlui/src/main/resources/aspects/SwordClient/i18n/messages.xml
+
+CityOfNewYork/DSpace;4881e9da2;[maven-release-plugin] prepare for next development iteration
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+CityOfNewYork/DSpace;eb4d56201;[maven-release-plugin] prepare release dspace-6.1
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+CityOfNewYork/DSpace;df9fb114b;Merge pull request #1807 from tdonohue/travis-fixes
+CityOfNewYork/DSpace;f3556278a;Pin versions of SASS and Compass that Travis uses
+M	.travis.yml
+
+CityOfNewYork/DSpace;f6af76c6d;Revert 6.1 release
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+CityOfNewYork/DSpace;151a5f8fe;[maven-release-plugin] prepare for next development iteration
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+CityOfNewYork/DSpace;57044f669;[maven-release-plugin] prepare release dspace-6.1
+M	dspace-api/pom.xml
+M	dspace-jspui/pom.xml
+M	dspace-oai/pom.xml
+M	dspace-rdf/pom.xml
+M	dspace-rest/pom.xml
+M	dspace-services/pom.xml
+M	dspace-solr/pom.xml
+M	dspace-sword/pom.xml
+M	dspace-swordv2/pom.xml
+M	dspace-xmlui-mirage2/pom.xml
+M	dspace-xmlui/pom.xml
+M	dspace/modules/additions/pom.xml
+M	dspace/modules/jspui/pom.xml
+M	dspace/modules/oai/pom.xml
+M	dspace/modules/pom.xml
+M	dspace/modules/rdf/pom.xml
+M	dspace/modules/rest/pom.xml
+M	dspace/modules/solr/pom.xml
+M	dspace/modules/sword/pom.xml
+M	dspace/modules/swordv2/pom.xml
+M	dspace/modules/xmlui-mirage2/pom.xml
+M	dspace/modules/xmlui/pom.xml
+M	dspace/pom.xml
+M	pom.xml
+
+CityOfNewYork/DSpace;4954f96f1;Merge pull request #1785 from atmire/DS-3127-DSpace-6_Whitelist-allowable-formats-Google-Scholar-citation_pdf_url
+CityOfNewYork/DSpace;972f76e77;Merge pull request #1790 from tomdesair/DS-3632_Correct-update-handle-prefix-script
+CityOfNewYork/DSpace;e30b0cdec;DS-3431 : Fix broken tests by removing nullifying of global eperson
+M	dspace-api/src/test/java/org/dspace/workflowbasic/BasicWorkflowAuthorizationIT.java
+
+CityOfNewYork/DSpace;a0f226b76;[DS-3431] Harden DSpace's BasicWorfklowService
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+M	dspace-api/src/main/java/org/dspace/content/CollectionServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/WorkspaceItemServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/service/CollectionService.java
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/GroupDAO.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/GroupDAOImpl.java
+A	dspace-api/src/main/java/org/dspace/storage/rdbms/migration/V5_7_2017_05_05__DS_3431_Add_Policies_for_BasicWorkflow.java
+A	dspace-api/src/main/java/org/dspace/storage/rdbms/migration/V6_1_2017_01_03__DS_3431_Add_Policies_for_BasicWorkflow.java
+M	dspace-api/src/main/java/org/dspace/workflow/WorkflowService.java
+M	dspace-api/src/main/java/org/dspace/workflowbasic/BasicWorkflowServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/xmlworkflow/XmlWorkflowServiceImpl.java
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/workflow/h2/basicWorkflow/V5.7_2017.05.05__DS-3431.sql
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/workflow/h2/basicWorkflow/V6.1_2017.01.03__DS-3431.sql
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/workflow/oracle/basicWorkflow/V5.7_2017.05.05__DS-3431.sql
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/workflow/oracle/basicWorkflow/V6.1_2017.01.03__DS-3431.sql
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/workflow/postgres/basicWorkflow/V5.7_2017.05.05__DS-3431.sql
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/workflow/postgres/basicWorkflow/V6.1_2017.01.03__DS-3431.sql
+M	dspace-api/src/test/java/org/dspace/content/CollectionTest.java
+M	dspace-api/src/test/java/org/dspace/content/packager/PackageUtilsTest.java
+M	dspace-api/src/test/java/org/dspace/identifier/EZIDIdentifierProviderTest.java
+A	dspace-api/src/test/java/org/dspace/workflowbasic/BasicWorkflowAuthorizationIT.java
+A	dspace-api/src/test/java/org/dspace/workflowbasic/BasicWorkflowAuthorizationRolesIT.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/admin/EditCommunitiesServlet.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/FlowContainerUtils.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/FlowGroupUtils.java
+
+CityOfNewYork/DSpace;bcf3110db;Merge pull request #1723 from atmire/DS-2359
+CityOfNewYork/DSpace;c34b277c8;DS-3628: Check READ resouce policies for items return by REST find-by-metadata-field endpoint
+M	dspace-rest/src/main/java/org/dspace/rest/ItemsResource.java
+
+CityOfNewYork/DSpace;6263444f7;DS-3619: AuthorizeService.getAuthorizedGroups(...) should check dates
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeServiceImpl.java
+
+CityOfNewYork/DSpace;9caff2caa;Merge pull request #1799 from tdonohue/DS-3397-6x
+CityOfNewYork/DSpace;6151f4f59;Merge pull request #1798 from atmire/DS-3563-DSpace-6_Missing-index-metadatavalue-resource-type-id
+CityOfNewYork/DSpace;f953848a6;[DS-3397] Add null checks to EPerson and Group
+M	dspace-rest/src/main/java/org/dspace/rest/common/ResourcePolicy.java
+
+CityOfNewYork/DSpace;ccc1b1b78;DS-3563: Fix Oracle Flyway migration error
+M	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/oracle/V5.7_2017.04.11__DS-3563_Index_metadatavalue_resource_type_id_column.sql
+
+CityOfNewYork/DSpace;1bb6369ad;DS-3127: Update test assert descriptions of GoogleBitstreamComparatorTest
+M	dspace-api/src/test/java/org/dspace/app/util/GoogleBitstreamComparatorTest.java
+
+CityOfNewYork/DSpace;e31daa023;DS-3632: Prevent the use of the locate function as this seems to give inconsistent results
+M	dspace-api/src/main/java/org/dspace/handle/dao/impl/HandleDAOImpl.java
+
+CityOfNewYork/DSpace;762197b45;DS-3632: Changed the update-handle-prefix script so that it does not change the handle suffix
+M	dspace-api/src/main/java/org/dspace/handle/UpdateHandlePrefix.java
+M	dspace-api/src/main/java/org/dspace/handle/dao/impl/HandleDAOImpl.java
+A	dspace-api/src/test/java/org/dspace/handle/dao/impl/HandleDAOImplTest.java
+
+CityOfNewYork/DSpace;ecd023094;Merge pull request #1780 from atmire/DS-3595-6x
+CityOfNewYork/DSpace;c9cad9083;Merge branch 'dspace-6_x' into DS-3595-6x
+CityOfNewYork/DSpace;b462e0ac6;Merge branch 'dspace-6_x' into DS-3127-DSpace-6_Whitelist-allowable-formats-Google-Scholar-citation_pdf_url
+CityOfNewYork/DSpace;65d638771;Merge pull request #1747 from AlexanderS/localization-input-forms-xmlui
+CityOfNewYork/DSpace;224df8208;Merge pull request #1752 from AlexanderS/fix/DS-3601-npe-feedback-page
+CityOfNewYork/DSpace;a6b3ce0d4;Merge pull request #1784 from rivaldi8/DS-3245-csv-linebreaks_ds6
+CityOfNewYork/DSpace;294427961;Merge pull request #1727 from tomdesair/DS-3579_Context-mode-and-cache-management-CLI-commands
+CityOfNewYork/DSpace;fe115125d;DS-3127: Prevent database updates when directly manipulating the bistream list of a bundle
+M	dspace-api/src/main/java/org/dspace/app/util/GoogleMetadata.java
+M	dspace-api/src/main/java/org/dspace/content/BitstreamServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/Bundle.java
+M	dspace-api/src/main/java/org/dspace/content/BundleServiceImpl.java
+
+CityOfNewYork/DSpace;6e9dec2c8;DS-3579: Make sure context.complete() can be called when in read-only
+M	dspace-api/src/main/java/org/dspace/app/bulkedit/MetadataExport.java
+M	dspace-api/src/main/java/org/dspace/app/itemexport/ItemExportCLITool.java
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+
+CityOfNewYork/DSpace;fd298ae46;Merge pull request #1772 from tomdesair/DS-3571_Log-Hibernate-validation-errors
+CityOfNewYork/DSpace;470c9b8f5;Merge pull request #1788 from mwoodiupui/DS-3568
+CityOfNewYork/DSpace;33d3df72d;Merge pull request #1732 from samuelcambien/DS-3584
+CityOfNewYork/DSpace;43cc3bd87;DS-3568. UTF-8 characters are now supported in configuration files
+M	dspace/config/config-definition.xml
+
+CityOfNewYork/DSpace;3dc490993;Fix IT tests
+M	dspace-api/src/main/java/org/dspace/content/BitstreamServiceImpl.java
+
+CityOfNewYork/DSpace;71791c720;DS-3127: Process review feedback and fix tests
+M	dspace-api/src/main/java/org/dspace/content/BitstreamServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/BundleServiceImpl.java
+M	dspace-api/src/test/java/org/dspace/app/util/GoogleBitstreamComparatorTest.java
+M	dspace-api/src/test/java/org/dspace/app/util/GoogleMetadataTest.java
+M	dspace/config/crosswalks/google-metadata.properties
+M	dspace/config/registries/bitstream-formats.xml
+
+CityOfNewYork/DSpace;70a512437;DS-3245: CSV linebreaks not supported by Bulkedit
+M	dspace-api/src/main/java/org/dspace/app/bulkedit/DSpaceCSV.java
+M	dspace-api/src/test/java/org/dspace/app/bulkedit/DSpaceCSVTest.java
+
+CityOfNewYork/DSpace;7879ecdf1;DS-3595
+M	dspace-xmlui-mirage2/src/main/webapp/sitemap.xmap
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/page-structure.xsl
+
+CityOfNewYork/DSpace;1db3261b5;Merge pull request #1696 from tomdesair/DS-2748_Improve-cocoon-page-not-found-page
+CityOfNewYork/DSpace;3732cafc4;Merge branch 'dspace-6_x' into DS-3579_Context-mode-and-cache-management-CLI-commands
+CityOfNewYork/DSpace;6f52d9700;Merge branch 'dspace-6_x' into DS-3579_Context-mode-and-cache-management-CLI-commands
+M	dspace-api/src/main/java/org/dspace/app/itemimport/ItemImportCLITool.java
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickPdfThumbnailFilter.java
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickThumbnailFilter.java
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/authorize/ResourcePolicyServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/authorize/dao/ResourcePolicyDAO.java
+M	dspace-api/src/main/java/org/dspace/authorize/dao/impl/ResourcePolicyDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/authorize/service/AuthorizeService.java
+M	dspace-api/src/main/java/org/dspace/authorize/service/ResourcePolicyService.java
+M	dspace-api/src/main/java/org/dspace/content/BundleServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+M	dspace-api/src/main/java/org/dspace/content/CollectionServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/Community.java
+M	dspace-api/src/main/java/org/dspace/content/CommunityServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/Item.java
+M	dspace-api/src/main/java/org/dspace/content/ItemServiceImpl.java
+A	dspace-api/src/main/java/org/dspace/content/comparator/NameAscendingComparator.java
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+M	dspace-api/src/main/java/org/dspace/core/ContextReadOnlyCache.java
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/Group2GroupCacheDAO.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/Group2GroupCacheDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/GroupDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/service/GroupService.java
+M	dspace-api/src/main/java/org/dspace/statistics/content/StatisticsDataVisits.java
+M	dspace-api/src/main/java/org/dspace/statistics/factory/StatisticsServiceFactory.java
+M	dspace-api/src/main/java/org/dspace/statistics/factory/StatisticsServiceFactoryImpl.java
+M	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+A	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetectorService.java
+A	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetectorServiceImpl.java
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/h2/V5.7_2017.04.11__DS-3563_Index_metadatavalue_resource_type_id_column.sql
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/oracle/V5.7_2017.04.11__DS-3563_Index_metadatavalue_resource_type_id_column.sql
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/postgres/V5.7_2017.04.11__DS-3563_Index_metadatavalue_resource_type_id_column.sql
+A	dspace-api/src/test/java/org/dspace/authorize/AuthorizeServiceTest.java
+M	dspace-api/src/test/java/org/dspace/checker/dao/impl/ChecksumHistoryDAOImplTest.java
+M	dspace-api/src/test/java/org/dspace/content/BundleTest.java
+M	dspace-api/src/test/java/org/dspace/content/CollectionTest.java
+M	dspace-api/src/test/java/org/dspace/content/CommunityTest.java
+M	dspace-api/src/test/java/org/dspace/content/InstallItemTest.java
+M	dspace-api/src/test/java/org/dspace/content/ItemTest.java
+A	dspace-api/src/test/java/org/dspace/content/comparator/NameAscendingComparatorTest.java
+M	dspace-api/src/test/java/org/dspace/content/packager/ITDSpaceAIP.java
+A	dspace-api/src/test/java/org/dspace/core/ContextReadOnlyCacheTest.java
+M	dspace-api/src/test/java/org/dspace/eperson/GroupTest.java
+A	dspace-api/src/test/java/org/dspace/statistics/util/SpiderDetectorServiceImplTest.java
+D	dspace-api/src/test/java/org/dspace/statistics/util/SpiderDetectorTest.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemTag.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/DSpaceServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/admin/EditItemServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/util/JSPManager.java
+M	dspace-jspui/src/main/webapp/dspace-admin/index.jsp
+M	dspace-jspui/src/main/webapp/help/formats.jsp
+M	dspace-jspui/src/main/webapp/index.jsp
+M	dspace-jspui/src/main/webapp/login/chooser.jsp
+M	dspace-rest/src/main/java/org/dspace/rest/CollectionsResource.java
+M	dspace-xmlui-mirage2/src/main/webapp/bower.json
+M	dspace-xmlui-mirage2/src/main/webapp/package.json
+M	dspace-xmlui-mirage2/src/main/webapp/scripts.xml
+M	dspace-xmlui-mirage2/src/main/webapp/scripts/search-controls.js
+M	dspace-xmlui-mirage2/src/main/webapp/styles/classic_mirage_color_scheme/_jquery_ui.scss
+M	dspace-xmlui-mirage2/src/main/webapp/templates/discovery_advanced_filters.hbs
+M	dspace-xmlui-mirage2/src/main/webapp/templates/discovery_simple_filters.hbs
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/aspect/general/choice-authority-control.xsl
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/FlowContainerUtils.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/eperson/UnAuthenticateAction.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/workflow/Submissions.java
+M	dspace-xmlui/src/main/resources/aspects/Versioning/versioning.js
+M	dspace/config/dspace.cfg
+M	dspace/config/hibernate-ehcache-config.xml
+M	dspace/config/local.cfg.EXAMPLE
+M	dspace/config/modules/usage-statistics.cfg
+M	dspace/config/spring/api/core-services.xml
+
+CityOfNewYork/DSpace;769d3b590;DS-3579: Fix bug in metadata-import script
+M	dspace-api/src/main/java/org/dspace/app/bulkedit/MetadataImport.java
+
+CityOfNewYork/DSpace;7d0401643;Merge branch 'DS-3579_Context-mode-and-cache-management-CLI-commands' of https://github.com/tomdesair/DSpace into DS-3579_Context-mode-and-cache-management-CLI-commands
+CityOfNewYork/DSpace;0084ae383;DS-2291 Autocomplete not working on Mirage2 (#1741)
+M	dspace-xmlui-mirage2/src/main/webapp/scripts.xml
+M	dspace-xmlui-mirage2/src/main/webapp/styles/classic_mirage_color_scheme/_jquery_ui.scss
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/aspect/general/choice-authority-control.xsl
+
+CityOfNewYork/DSpace;fc1b22e59;Merge pull request #1767 from tomdesair/PR-1715
+CityOfNewYork/DSpace;9af33bc24;DS-3571: Make sure that any Hibernate schema validation error is logged instead of just a NullPointerException
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+A	dspace-api/src/main/java/org/dspace/core/DatabaseSchemaValidator.java
+A	dspace-api/src/main/java/org/dspace/core/HibernateDatabaseSchemaValidator.java
+A	dspace-api/src/main/java/org/dspace/core/exception/DatabaseSchemaValidationException.java
+M	dspace-api/src/main/resources/spring/spring-dspace-core-services.xml
+M	dspace-api/src/test/java/org/dspace/core/ContextTest.java
+
+CityOfNewYork/DSpace;bd2d81d55;DS-3572: Renamed epersonInGroup to isEPersonInGroup
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+
+CityOfNewYork/DSpace;f6eb13cf5;DS-3572: Restored behaviour of GroupService.isMember and moved new behaviour to GroupService.isParentOf
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/service/GroupService.java
+M	dspace-api/src/test/java/org/dspace/eperson/GroupTest.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/group/EditGroupForm.java
+
+CityOfNewYork/DSpace;b4a24fff7;DS-3572: Fix bug where normal group membership is ignored if special groups are present + added tests
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+M	dspace-api/src/test/java/org/dspace/eperson/GroupTest.java
+
+CityOfNewYork/DSpace;8bb7eb0fe;Improve tests + make GroupService.isMember method more performant for special groups
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/Group2GroupCacheDAO.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/Group2GroupCacheDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/service/GroupService.java
+M	dspace-api/src/test/java/org/dspace/eperson/GroupTest.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/group/EditGroupForm.java
+
+CityOfNewYork/DSpace;f48178ed4;Fix DSpace AIP IT tests: Set correct membership for admin
+M	dspace-api/src/test/java/org/dspace/content/packager/ITDSpaceAIP.java
+
+CityOfNewYork/DSpace;1b70e64f7;Merge pull request #1751 from tomdesair/DS-3406_Sort-Communities-and-Collections-Hibernate-Sort-Annotation
+CityOfNewYork/DSpace;b56bb4de3;Attempt to fix contstraint violation
+M	dspace-api/src/test/java/org/dspace/authorize/AuthorizeServiceTest.java
+
+CityOfNewYork/DSpace;139f01fff;Restore GroupServiceImpl.isMember logic + fix tests
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/GroupDAOImpl.java
+M	dspace-api/src/test/java/org/dspace/authorize/AuthorizeServiceTest.java
+
+CityOfNewYork/DSpace;257d75ca0;DS-3406 unit tests for getCollection/getCommunity for different dspace objects
+M	dspace-api/src/test/java/org/dspace/content/CollectionTest.java
+M	dspace-api/src/test/java/org/dspace/content/CommunityTest.java
+M	dspace-api/src/test/java/org/dspace/content/ItemTest.java
+
+CityOfNewYork/DSpace;5422a63f0;DS-3579 removed FETCH keyword and fixed typo in help message of harvest
+M	dspace-api/src/main/java/org/dspace/app/harvest/Harvest.java
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/MetadataValueDAOImpl.java
+
+CityOfNewYork/DSpace;853e6baff;Merge pull request #1761 from tdonohue/DS-3604
+CityOfNewYork/DSpace;205d8b9f9;Refactor BundleServiceImpl.setOrder() to be more failsafe. Update Tests to prove out (previously these new tests failed)
+M	dspace-api/src/main/java/org/dspace/content/BundleServiceImpl.java
+M	dspace-api/src/test/java/org/dspace/content/BundleTest.java
+
+CityOfNewYork/DSpace;bb1e13a3b;DS-3572: Adding simple unit test for DS-3572.
+A	dspace-api/src/test/java/org/dspace/authorize/AuthorizeServiceTest.java
+
+CityOfNewYork/DSpace;d2311663d;DS-3572: Check authorization for a specified user instead of currentUser
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/authorize/service/AuthorizeService.java
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/Group2GroupCacheDAO.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/Group2GroupCacheDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/service/GroupService.java
+M	dspace-api/src/test/java/org/dspace/content/InstallItemTest.java
+
+CityOfNewYork/DSpace;7d1836bdd;Merge pull request #1762 from Georgetown-University-Libraries/ds3563-6x
+CityOfNewYork/DSpace;36002b582;DS-3563: Conditional create index for Oracle
+M	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/oracle/V5.7_2017.04.11__DS-3563_Index_metadatavalue_resource_type_id_column.sql
+
+CityOfNewYork/DSpace;6392e195b;DS-3563 Added missing index on metadatavalue.resource_type_id
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/h2/V5.7_2017.04.11__DS-3563_Index_metadatavalue_resource_type_id_column.sql
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/oracle/V5.7_2017.04.11__DS-3563_Index_metadatavalue_resource_type_id_column.sql
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/postgres/V5.7_2017.04.11__DS-3563_Index_metadatavalue_resource_type_id_column.sql
+
+CityOfNewYork/DSpace;d37d3a04a;Create a valid unit test for BundleServiceImpl.setOrder() method
+M	dspace-api/src/test/java/org/dspace/content/BundleTest.java
+
+CityOfNewYork/DSpace;ef3afe19e;DS-3604: Sync JSPUI bitstream reorder code with XMLUI code
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/admin/EditItemServlet.java
+
+CityOfNewYork/DSpace;81e171ec2;Merge pull request #1760 from tuub/DS-3582
+CityOfNewYork/DSpace;4086e73e0;DS-3582: Any jsp that call UIUtil.obtainContext must free DB resources
+M	dspace-jspui/src/main/webapp/dspace-admin/index.jsp
+M	dspace-jspui/src/main/webapp/help/formats.jsp
+M	dspace-jspui/src/main/webapp/index.jsp
+M	dspace-jspui/src/main/webapp/login/chooser.jsp
+
+CityOfNewYork/DSpace;5f827ecbe;Merge pull request #1759 from AlexanderS/rest-submissions-to-workflow
+CityOfNewYork/DSpace;30c4ca0fe;DS-3281: Start workflow for REST submissions
+M	dspace-rest/src/main/java/org/dspace/rest/CollectionsResource.java
+
+CityOfNewYork/DSpace;094f775b6;Merge pull request #1746 from Georgetown-University-Libraries/ds3594
+CityOfNewYork/DSpace;593cc085d;Add comment for null check during sort
+M	dspace-api/src/test/java/org/dspace/eperson/GroupTest.java
+
+CityOfNewYork/DSpace;f4cdfb4e6;Revert imports
+M	dspace-api/src/test/java/org/dspace/content/CollectionTest.java
+
+CityOfNewYork/DSpace;b4d843667;DS-3406: Remove unnecessary commit
+M	dspace-api/src/test/java/org/dspace/content/CollectionTest.java
+
+CityOfNewYork/DSpace;271b6913a;Fix integration tests. Remove Hibernate Sort annotations as a collection name can change and this breaks the Set semantics
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+M	dspace-api/src/main/java/org/dspace/content/Community.java
+M	dspace-api/src/main/java/org/dspace/content/Item.java
+
+CityOfNewYork/DSpace;137384c13;DS-3601: Fix NPE when accessing feedback page without "Referer" header
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/SendFeedbackAction.java
+
+CityOfNewYork/DSpace;72f8f9461;Fix bug so that comparator can be used for sets
+M	dspace-api/src/main/java/org/dspace/content/comparator/NameAscendingComparator.java
+M	dspace-api/src/test/java/org/dspace/content/ItemTest.java
+
+CityOfNewYork/DSpace;78effeac6;Fixing tests
+M	dspace-api/src/test/java/org/dspace/content/CollectionTest.java
+M	dspace-api/src/test/java/org/dspace/content/ItemTest.java
+
+CityOfNewYork/DSpace;62c804f1e;DS-3406: Ordering sub communities and collections
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+M	dspace-api/src/main/java/org/dspace/content/CollectionServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/Community.java
+M	dspace-api/src/main/java/org/dspace/content/CommunityServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/Item.java
+M	dspace-api/src/main/java/org/dspace/content/ItemServiceImpl.java
+
+CityOfNewYork/DSpace;40b05ec77;Fix minor compilation error in cherry-pick of PR#1662
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+
+CityOfNewYork/DSpace;a0e91cacd;[DS-3463] Fix IP authentication for anonymous users
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+
+CityOfNewYork/DSpace;90ca4deb3;Fix code style
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/submit/DescribeStep.java
+
+CityOfNewYork/DSpace;83002c317;DS-3598: Allow localization of input-forms.xml with XMLUI
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/submit/DescribeStep.java
+
+CityOfNewYork/DSpace;ebf256caa;Avoid NPE
+M	dspace-api/src/test/java/org/dspace/eperson/GroupTest.java
+
+CityOfNewYork/DSpace;1d655e97c;Make destroy more forgiving of test failures
+M	dspace-api/src/test/java/org/dspace/content/ItemTest.java
+
+CityOfNewYork/DSpace;d85a2d915;Avoid handle collision in persistent db
+M	dspace-api/src/test/java/org/dspace/content/InstallItemTest.java
+
+CityOfNewYork/DSpace;6f8a8b7f2;change parameter setting for db portability
+M	dspace-api/src/test/java/org/dspace/checker/dao/impl/ChecksumHistoryDAOImplTest.java
+
+CityOfNewYork/DSpace;3ea041d4d;DS-3164 Item statistic displays UUID of bitstreams instead of name (#1744)
+M	dspace-api/src/main/java/org/dspace/statistics/content/StatisticsDataVisits.java
+
+CityOfNewYork/DSpace;6333fb670;Ds 3552 read only context and hibernate improvements (#1694)
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/checker/ChecksumHistory.java
+M	dspace-api/src/main/java/org/dspace/checker/MostRecentChecksum.java
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+M	dspace-api/src/main/java/org/dspace/content/Community.java
+M	dspace-api/src/main/java/org/dspace/content/Site.java
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/CollectionDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/CommunityDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/SiteDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+A	dspace-api/src/main/java/org/dspace/core/ContextReadOnlyCache.java
+M	dspace-api/src/main/java/org/dspace/core/DBConnection.java
+M	dspace-api/src/main/java/org/dspace/core/HibernateDBConnection.java
+M	dspace-api/src/main/java/org/dspace/discovery/IndexClient.java
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceResourceRestrictionPlugin.java
+M	dspace-api/src/main/java/org/dspace/eperson/EPerson.java
+M	dspace-api/src/main/java/org/dspace/eperson/Group.java
+M	dspace-api/src/main/java/org/dspace/eperson/Group2GroupCache.java
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/EPersonDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/service/GroupService.java
+M	dspace-api/src/main/java/org/dspace/harvest/OAIHarvester.java
+M	dspace-api/src/main/java/org/dspace/rdf/RDFConsumer.java
+M	dspace-api/src/main/java/org/dspace/rdf/RDFizer.java
+M	dspace-api/src/main/java/org/dspace/xmlworkflow/storedcomponents/PoolTaskServiceImpl.java
+A	dspace-api/src/test/java/org/dspace/core/ContextReadOnlyCacheTest.java
+M	dspace-api/src/test/java/org/dspace/core/ContextTest.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/MyDSpaceServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/submit/step/JSPSelectCollectionStep.java
+M	dspace-oai/src/main/java/org/dspace/xoai/app/XOAI.java
+M	dspace-rdf/src/main/java/org/dspace/rdf/providing/DataProviderServlet.java
+M	dspace-rdf/src/main/java/org/dspace/rdf/providing/LocalURIRedirectionServlet.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/FlowContainerUtils.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/ItemExport.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/Navigation.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/eperson/EditEPersonForm.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/CommunityBrowser.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/ConfigurableBrowse.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/SidebarFacetsTransformer.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/SimpleSearch.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/eperson/EditProfile.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/eperson/Navigation.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/CollectionViewer.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/Submissions.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/submit/SelectCollectionStep.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/versioning/Navigation.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/Navigation.java
+A	dspace/config/ehcache.xsd
+A	dspace/config/hibernate-ehcache-config.xml
+M	dspace/config/hibernate.cfg.xml
+M	dspace/config/spring/api/core-hibernate.xml
+
+CityOfNewYork/DSpace;f62c32efe;Merge pull request #1739 from edusperoni/handlebars-4
+CityOfNewYork/DSpace;068be3326;Merge pull request #1707 from Frederic-Atmire/DS-3558
+CityOfNewYork/DSpace;3c25e04c0;upgrade grunt-contrib-handlebars to 1.0.0
+M	dspace-xmlui-mirage2/src/main/webapp/package.json
+
+CityOfNewYork/DSpace;a44b109f7;Merge pull request #1684 from tomdesair/DS-3406_Sort-Communities-and-Collections-with-comparator
+CityOfNewYork/DSpace;a24b0078c;Made service for SpringDetector and made SpringDetector delegate to it
+M	dspace-api/src/main/java/org/dspace/statistics/factory/StatisticsServiceFactory.java
+M	dspace-api/src/main/java/org/dspace/statistics/factory/StatisticsServiceFactoryImpl.java
+M	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+A	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetectorService.java
+A	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetectorServiceImpl.java
+R078	dspace-api/src/test/java/org/dspace/statistics/util/SpiderDetectorTest.java	dspace-api/src/test/java/org/dspace/statistics/util/SpiderDetectorServiceImplTest.java
+M	dspace/config/spring/api/core-services.xml
+
+CityOfNewYork/DSpace;e358cb84d;DS-3406: Resolve review feedback
+M	dspace-api/src/main/java/org/dspace/content/Item.java
+M	dspace-api/src/main/java/org/dspace/content/comparator/NameAscendingComparator.java
+M	dspace-api/src/test/java/org/dspace/content/comparator/NameAscendingComparatorTest.java
+
+CityOfNewYork/DSpace;0f51d5ad6;ported DS-3558 from dspace 5 to dspace6
+A	dspace-api/src/main/java/org/dspace/app/util/GoogleBitstreamComparator.java
+M	dspace-api/src/main/java/org/dspace/app/util/GoogleMetadata.java
+M	dspace-api/src/main/java/org/dspace/content/BitstreamFormat.java
+A	dspace-api/src/test/java/org/dspace/app/util/GoogleBitstreamComparatorTest.java
+A	dspace-api/src/test/java/org/dspace/app/util/GoogleMetadataTest.java
+M	dspace/config/crosswalks/google-metadata.properties
+M	pom.xml
+
+CityOfNewYork/DSpace;454b0c9d6;Few tests to test case-(in)sensitive matching
+M	dspace-api/src/test/java/org/dspace/statistics/util/SpiderDetectorTest.java
+
+CityOfNewYork/DSpace;6e1a5d1df;made the necessary changes to easily test this class
+M	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+
+CityOfNewYork/DSpace;b61c821e6;case-insensitive option commented out by default
+M	dspace/config/modules/usage-statistics.cfg
+
+CityOfNewYork/DSpace;fd76b587b;wrote tests for botmatching
+M	dspace-api/src/test/java/org/dspace/statistics/util/SpiderDetectorTest.java
+
+CityOfNewYork/DSpace;f12006fe2;Upgrade handlebars to v4.
+M	dspace-xmlui-mirage2/src/main/webapp/bower.json
+M	dspace-xmlui-mirage2/src/main/webapp/templates/discovery_advanced_filters.hbs
+
+CityOfNewYork/DSpace;3116c53d5;Merge pull request #1737 from cjuergen/DS-3585-6_x
+CityOfNewYork/DSpace;e2ffbaa3b;Fix for DS3585
+M	dspace-api/src/main/java/org/dspace/app/itemimport/ItemImportCLITool.java
+
+CityOfNewYork/DSpace;856e5ad38;DS-3584 when editing an eperson, trying to change its email address is ignored if another user already has that email address
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/FlowEPersonUtils.java
+
+CityOfNewYork/DSpace;d2577fa16;DS-3579: Fix tests
+M	dspace-api/src/main/java/org/dspace/handle/HandleServiceImpl.java
+M	dspace-api/src/test/java/org/dspace/content/VersioningTest.java
+
+CityOfNewYork/DSpace;d5f9d9b0d;DS-3579: Improve cache usage rdfizer, sub-daily, doi organiser
+M	dspace-api/src/main/java/org/dspace/eperson/SubscribeCLITool.java
+M	dspace-api/src/main/java/org/dspace/identifier/doi/DOIOrganiser.java
+M	dspace-api/src/main/java/org/dspace/rdf/RDFizer.java
+
+CityOfNewYork/DSpace;e4b26d64c;DS-3579: Improve cache usage harvest
+M	dspace-api/src/main/java/org/dspace/app/harvest/Harvest.java
+M	dspace-api/src/main/java/org/dspace/harvest/OAIHarvester.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/FlowContainerUtils.java
+
+CityOfNewYork/DSpace;2dde39abe;DS-3579: Improve cache usage bitstore-migrate, cleanup, curate, embargo-lifter
+M	dspace-api/src/main/java/org/dspace/curate/CurationCli.java
+M	dspace-api/src/main/java/org/dspace/curate/Curator.java
+M	dspace-api/src/main/java/org/dspace/embargo/EmbargoCLITool.java
+M	dspace-api/src/main/java/org/dspace/storage/bitstore/BitStoreMigrate.java
+M	dspace-api/src/main/java/org/dspace/storage/bitstore/BitstreamStorageServiceImpl.java
+
+CityOfNewYork/DSpace;a715ae4d1;DS-3579: Improve cache usage export, import, itemupdate, metadata-export, packager
+M	dspace-api/src/main/java/org/dspace/workflowbasic/BasicWorkflowItem.java
+
+CityOfNewYork/DSpace;e63b3f4c1;DS-3579: Improve cache usage export, import, itemupdate, metadata-export, packager
+M	dspace-api/src/main/java/org/dspace/app/bulkedit/MetadataExport.java
+M	dspace-api/src/main/java/org/dspace/app/bulkedit/MetadataImport.java
+M	dspace-api/src/main/java/org/dspace/app/itemexport/ItemExportCLITool.java
+M	dspace-api/src/main/java/org/dspace/app/itemexport/ItemExportServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/app/itemimport/ItemImportCLITool.java
+M	dspace-api/src/main/java/org/dspace/app/itemimport/ItemImportServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/app/itemupdate/ItemUpdate.java
+M	dspace-api/src/main/java/org/dspace/app/packager/Packager.java
+M	dspace-api/src/main/java/org/dspace/workflow/WorkflowItem.java
+
+CityOfNewYork/DSpace;acedcacdb;DS-3579: Improve cache usage update-handle-prefix
+M	dspace-api/src/main/java/org/dspace/content/MetadataValueServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/dao/MetadataValueDAO.java
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/MetadataValueDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/content/service/MetadataValueService.java
+M	dspace-api/src/main/java/org/dspace/handle/HandleServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/handle/UpdateHandlePrefix.java
+
+CityOfNewYork/DSpace;37219a986;DS-3579: checker, checker-emailer, filter-media, generate-sitemaps, index-authority
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/MediaFilterServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/app/sitemap/GenerateSitemaps.java
+M	dspace-api/src/main/java/org/dspace/authority/indexer/DSpaceAuthorityIndexer.java
+M	dspace-api/src/main/java/org/dspace/checker/CheckerCommand.java
+M	dspace-api/src/main/java/org/dspace/checker/DailyReportEmailer.java
+
+CityOfNewYork/DSpace;a3fc30ad9;DS-3579: Fix tests
+M	dspace-api/src/main/java/org/dspace/handle/HandleServiceImpl.java
+M	dspace-api/src/test/java/org/dspace/content/VersioningTest.java
+
+CityOfNewYork/DSpace;e2862b305;Merge pull request #1714 from tuub/DS-3575
+CityOfNewYork/DSpace;8442e6f39;Merge pull request #1717 from mwoodiupui/DS-3564
+CityOfNewYork/DSpace;7e1a0a1a0;DS-3552: Fix cache leakage in SolrServiceResourceRestrictionPlugin
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceResourceRestrictionPlugin.java
+
+CityOfNewYork/DSpace;a5d414c0b;DS-3552: Additional comment on caching handles
+M	dspace/config/hibernate-ehcache-config.xml
+
+CityOfNewYork/DSpace;cabb4fab6;DS-3579: Improve cache usage rdfizer, sub-daily, doi organiser
+M	dspace-api/src/main/java/org/dspace/eperson/SubscribeCLITool.java
+M	dspace-api/src/main/java/org/dspace/identifier/doi/DOIOrganiser.java
+M	dspace-api/src/main/java/org/dspace/rdf/RDFizer.java
+
+CityOfNewYork/DSpace;5c19bb52e;DS-3579: Improve cache usage harvest
+M	dspace-api/src/main/java/org/dspace/app/harvest/Harvest.java
+M	dspace-api/src/main/java/org/dspace/harvest/OAIHarvester.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/FlowContainerUtils.java
+
+CityOfNewYork/DSpace;1e62dfdbb;DS-3579: Improve cache usage bitstore-migrate, cleanup, curate, embargo-lifter
+M	dspace-api/src/main/java/org/dspace/curate/CurationCli.java
+M	dspace-api/src/main/java/org/dspace/curate/Curator.java
+M	dspace-api/src/main/java/org/dspace/embargo/EmbargoCLITool.java
+M	dspace-api/src/main/java/org/dspace/storage/bitstore/BitStoreMigrate.java
+M	dspace-api/src/main/java/org/dspace/storage/bitstore/BitstreamStorageServiceImpl.java
+
+CityOfNewYork/DSpace;867ab6c9b;DS-3579: Improve cache usage export, import, itemupdate, metadata-export, packager
+M	dspace-api/src/main/java/org/dspace/workflowbasic/BasicWorkflowItem.java
+
+CityOfNewYork/DSpace;392dd2653;DS-3579: Improve cache usage export, import, itemupdate, metadata-export, packager
+M	dspace-api/src/main/java/org/dspace/app/bulkedit/MetadataExport.java
+M	dspace-api/src/main/java/org/dspace/app/bulkedit/MetadataImport.java
+M	dspace-api/src/main/java/org/dspace/app/itemexport/ItemExportCLITool.java
+M	dspace-api/src/main/java/org/dspace/app/itemexport/ItemExportServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/app/itemimport/ItemImportCLITool.java
+M	dspace-api/src/main/java/org/dspace/app/itemimport/ItemImportServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/app/itemupdate/ItemUpdate.java
+M	dspace-api/src/main/java/org/dspace/app/packager/Packager.java
+M	dspace-api/src/main/java/org/dspace/workflow/WorkflowItem.java
+
+CityOfNewYork/DSpace;6f3546f84;DS-3579: Improve cache usage update-handle-prefix
+M	dspace-api/src/main/java/org/dspace/content/MetadataValueServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/content/dao/MetadataValueDAO.java
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/MetadataValueDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/content/service/MetadataValueService.java
+M	dspace-api/src/main/java/org/dspace/handle/HandleServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/handle/UpdateHandlePrefix.java
+
+CityOfNewYork/DSpace;9a0d293ab;Merge pull request #1720 from Georgetown-University-Libraries/ds3516-6x
+CityOfNewYork/DSpace;782a96391;DS-2359
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/FlowBatchImportUtils.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/FlowMetadataImportUtils.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/servlet/multipart/DSpaceMultipartParser.java
+A	dspace-xmlui/src/main/java/org/dspace/app/xmlui/cocoon/servlet/multipart/DSpacePartOnDisk.java
+
+CityOfNewYork/DSpace;0235ba391;DS-3579: checker, checker-emailer, filter-media, generate-sitemaps, index-authority
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/MediaFilterServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/app/sitemap/GenerateSitemaps.java
+M	dspace-api/src/main/java/org/dspace/authority/indexer/DSpaceAuthorityIndexer.java
+M	dspace-api/src/main/java/org/dspace/checker/CheckerCommand.java
+M	dspace-api/src/main/java/org/dspace/checker/DailyReportEmailer.java
+
+CityOfNewYork/DSpace;eae5a9617;port PR1709 to 6x
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickPdfThumbnailFilter.java
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/ImageMagickThumbnailFilter.java
+
+CityOfNewYork/DSpace;1ef117015;[DS-3564] Limit maximum idle database connections by default
+M	dspace/config/dspace.cfg
+M	dspace/config/local.cfg.EXAMPLE
+
+CityOfNewYork/DSpace;4f7410232;Merge pull request #1682 from tuub/DS-3535
+CityOfNewYork/DSpace;6c29cd61b;Merge pull request #1699 from enrique/patch-1
+CityOfNewYork/DSpace;f6a651d4d;Merge pull request #1703 from samuelcambien/DS-3553
+CityOfNewYork/DSpace;c57b44361;Merge pull request #1713 from atmire/DS-3573-Filtername-in-XMLUI-Discovery-filter-labels-dspace6
+CityOfNewYork/DSpace;a5bdff080;DS-3575: Rename misguiding find method in ResourcePolicyService
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/authorize/ResourcePolicyServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/authorize/dao/ResourcePolicyDAO.java
+M	dspace-api/src/main/java/org/dspace/authorize/dao/impl/ResourcePolicyDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/authorize/service/AuthorizeService.java
+M	dspace-api/src/main/java/org/dspace/authorize/service/ResourcePolicyService.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemTag.java
+
+CityOfNewYork/DSpace;e3f72b280;DS-3553: when creating a new version, do context complete before redirecting to the submission page
+M	dspace-xmlui/src/main/resources/aspects/Versioning/versioning.js
+
+CityOfNewYork/DSpace;63ed4cc1e;DS-3573: Filtername in XMLUI Discovery filter labels
+M	dspace-xmlui-mirage2/src/main/webapp/scripts/search-controls.js
+M	dspace-xmlui-mirage2/src/main/webapp/templates/discovery_simple_filters.hbs
+
+CityOfNewYork/DSpace;f0a5e7d38;DS-3552: Only uncache resource policies in AuthorizeService when in read-only
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+
+CityOfNewYork/DSpace;1e64850af;OAI indexing improvements part 2
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/core/HibernateDBConnection.java
+
+CityOfNewYork/DSpace;d9db5a66c;OAI indexing improvements part 1
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+M	dspace-api/src/main/java/org/dspace/core/HibernateDBConnection.java
+M	dspace-oai/src/main/java/org/dspace/xoai/app/XOAI.java
+
+CityOfNewYork/DSpace;5f77bd441;OAI improvements part 1
+M	dspace-api/src/main/java/org/dspace/checker/ChecksumHistory.java
+M	dspace-api/src/main/java/org/dspace/checker/MostRecentChecksum.java
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+M	dspace-api/src/main/java/org/dspace/discovery/IndexClient.java
+M	dspace-oai/src/main/java/org/dspace/xoai/app/XOAI.java
+
+CityOfNewYork/DSpace;4b87935cb;DS-3558 removed duplicate code and changed default option
+M	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+M	dspace/config/modules/usage-statistics.cfg
+
+CityOfNewYork/DSpace;3db74c7ba;Merge pull request #1671 from mwoodiupui/DS-3505
+CityOfNewYork/DSpace;f000b280c;DS-3558 added comments on code
+M	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+M	dspace/config/modules/usage-statistics.cfg
+
+CityOfNewYork/DSpace;cad79dc6c;DS-3558 made case insensitive botsearch configurable and optimized case insensitive pattern matching
+M	dspace-api/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+M	dspace/config/modules/usage-statistics.cfg
+
+CityOfNewYork/DSpace;794600b96;Fix for DS-3554
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/workflow/Submissions.java
+
+CityOfNewYork/DSpace;044ba1acd;DS-2748: Do not throw an exception in the PageNotFoundTransformer but do return a 404 error code
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/general/PageNotFoundTransformer.java
+
+CityOfNewYork/DSpace;f54fe5c12;Set Context to READ-ONLY for JSPUI submissions and 'select collection' step
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/MyDSpaceServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/submit/step/JSPSelectCollectionStep.java
+
+CityOfNewYork/DSpace;1e917ed84;Small refactorings + backwards compatibility
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+M	dspace-api/src/main/java/org/dspace/core/DBConnection.java
+M	dspace-api/src/main/java/org/dspace/core/HibernateDBConnection.java
+M	dspace-api/src/test/java/org/dspace/core/ContextTest.java
+
+CityOfNewYork/DSpace;7719848d4;Cache collection and community queries
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/CollectionDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/CommunityDAOImpl.java
+
+CityOfNewYork/DSpace;f0e9e04a3;Fix tests and license checks
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+M	dspace-api/src/main/java/org/dspace/core/ContextReadOnlyCache.java
+M	dspace-api/src/test/java/org/dspace/core/ContextTest.java
+
+CityOfNewYork/DSpace;5f194334f;Added 2nd level caching for Community and Collection
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+M	dspace-api/src/main/java/org/dspace/content/Community.java
+M	dspace/config/hibernate-ehcache-config.xml
+
+CityOfNewYork/DSpace;7371a7c71;Add 2nd level cache support for Site and EPerson DSpaceObjects
+M	dspace-api/src/main/java/org/dspace/content/Site.java
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/SiteDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/EPerson.java
+M	dspace-api/src/main/java/org/dspace/eperson/dao/impl/EPersonDAOImpl.java
+M	dspace/config/hibernate-ehcache-config.xml
+
+CityOfNewYork/DSpace;3963c95f6;Let ConfigurableBrowse use a READ-ONLY context
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/ConfigurableBrowse.java
+
+CityOfNewYork/DSpace;75497f510;Set default Context mode
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+
+CityOfNewYork/DSpace;852c4d3b6;Cache authorized actions and group membership when Context is in READ-ONLY mode
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+A	dspace-api/src/main/java/org/dspace/core/ContextReadOnlyCache.java
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceResourceRestrictionPlugin.java
+M	dspace-api/src/main/java/org/dspace/eperson/GroupServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/eperson/service/GroupService.java
+M	dspace-api/src/main/java/org/dspace/xmlworkflow/storedcomponents/PoolTaskServiceImpl.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/ItemExport.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/Navigation.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/eperson/EditEPersonForm.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/SidebarFacetsTransformer.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/SimpleSearch.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/eperson/EditProfile.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/eperson/Navigation.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/CollectionViewer.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/versioning/Navigation.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/Navigation.java
+
+CityOfNewYork/DSpace;d108464a3;Fix Hibernate EHCache configuration + fix some Hibernate warnings
+M	dspace-api/src/main/java/org/dspace/checker/MostRecentChecksum.java
+M	dspace-api/src/main/java/org/dspace/eperson/Group.java
+M	dspace-api/src/main/java/org/dspace/eperson/Group2GroupCache.java
+A	dspace/config/ehcache.xsd
+A	dspace/config/hibernate-ehcache-config.xml
+M	dspace/config/hibernate.cfg.xml
+M	dspace/config/spring/api/core-hibernate.xml
+
+CityOfNewYork/DSpace;dbfc8ce9a;Set Context in READ-ONLY mode when retrieving community lists
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+M	dspace-api/src/main/java/org/dspace/rdf/RDFConsumer.java
+M	dspace-api/src/main/java/org/dspace/rdf/RDFizer.java
+M	dspace-api/src/test/java/org/dspace/core/ContextTest.java
+M	dspace-rdf/src/main/java/org/dspace/rdf/providing/DataProviderServlet.java
+M	dspace-rdf/src/main/java/org/dspace/rdf/providing/LocalURIRedirectionServlet.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/CommunityBrowser.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/Submissions.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/submit/SelectCollectionStep.java
+
+CityOfNewYork/DSpace;eee492351;Refactor READ ONLY mode in Context and adjust hibernate settings accordingly
+M	dspace-api/src/main/java/org/dspace/authorize/AuthorizeServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/core/Context.java
+M	dspace-api/src/main/java/org/dspace/core/DBConnection.java
+M	dspace-api/src/main/java/org/dspace/core/HibernateDBConnection.java
+M	dspace-api/src/main/java/org/dspace/discovery/IndexClient.java
+M	dspace-api/src/main/java/org/dspace/harvest/OAIHarvester.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/FlowContainerUtils.java
+
+CityOfNewYork/DSpace;9ef505498;[DS-2947] DIM crosswalks repeats authority & confidence values in the metadata values
+M	dspace/config/crosswalks/oai/metadataFormats/dim.xsl
+
+CityOfNewYork/DSpace;3540fe5ec;DS-3406: Sort communities and collections in-memory using a comparator
+M	dspace-api/src/main/java/org/dspace/content/Collection.java
+M	dspace-api/src/main/java/org/dspace/content/Community.java
+M	dspace-api/src/main/java/org/dspace/content/Item.java
+A	dspace-api/src/main/java/org/dspace/content/comparator/NameAscendingComparator.java
+A	dspace-api/src/test/java/org/dspace/content/comparator/NameAscendingComparatorTest.java
+
+CityOfNewYork/DSpace;57f2a10da;Merge pull request #1663 from mwoodiupui/DS-1140
+CityOfNewYork/DSpace;1e33e27a8;[DS-3535] Reduced error logging by interrupted download
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/DSpaceServlet.java
+M	dspace-jspui/src/main/java/org/dspace/app/webui/util/JSPManager.java
+
+CityOfNewYork/DSpace;a54bf11b8;Merge pull request #1673 from tuub/DS-3523
+CityOfNewYork/DSpace;0601e9f06;[DS-3523] Bugfix for search with embargoed thumbnails
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/ItemListTag.java
+
+CityOfNewYork/DSpace;b578abd05;[DS-3505] On logout redirect to dspace.url, not context path.
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/eperson/UnAuthenticateAction.java
+
+CityOfNewYork/DSpace;bc8629b14;[DS-3348] Drop date check in EmbargoService (#1542)
+M	dspace-api/src/main/java/org/dspace/embargo/EmbargoServiceImpl.java
+
+CityOfNewYork/DSpace;26859b113;DS-3366 Fix handleresolver by removing out.close (#1560)
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/handle/HandleResolverReader.java
+
+CityOfNewYork/DSpace;97785d778;[DS-3336] Properly sort collections in move item drop-down
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/item/MoveItemForm.java
+
+CityOfNewYork/DSpace;f1c3a9d91;fix typo in comment
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/ItemDAOImpl.java
+
+CityOfNewYork/DSpace;6442c979a;First attempt to resort submitters
+M	dspace-api/src/main/java/org/dspace/content/dao/impl/ItemDAOImpl.java
+M	dspace-api/src/main/java/org/dspace/core/AbstractHibernateDSODAO.java
+
+CityOfNewYork/DSpace;a36f5b1f4;Merge pull request #1670 from tuub/DS-3521
+CityOfNewYork/DSpace;36a87c210;[DS-3521] Bugfix browsing embargoed thumbnail
+M	dspace-jspui/src/main/java/org/dspace/app/webui/jsptag/BrowseListTag.java
+
+CityOfNewYork/DSpace;43d7cd564;[DS-1140] Add configuration data
+M	dspace/config/dspace.cfg
+
+CityOfNewYork/DSpace;9d8738c93;[DS-1140] Add unit test.
+A	dspace-api/src/test/java/org/dspace/app/mediafilter/PoiWordFilterTest.java
+A	dspace-api/src/test/resources/org/dspace/app/mediafilter/wordtest.doc
+A	dspace-api/src/test/resources/org/dspace/app/mediafilter/wordtest.docx
+
+CityOfNewYork/DSpace;c09edc5a1;[DS-1140] No need to treat old and new Word formats differently
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/PoiWordFilter.java
+
+CityOfNewYork/DSpace;2d95c7a2a;Merge pull request #1652 from Georgetown-University-Libraries/ds3282-6x
+CityOfNewYork/DSpace;d2c43b8aa;Merge pull request #1654 from Georgetown-University-Libraries/ds2789-6_x
+CityOfNewYork/DSpace;5d9dd4d4e;Merge pull request #1660 from Georgetown-University-Libraries/ds3283-6x2
+CityOfNewYork/DSpace;24c1f5367;[DS-1140] New POI-based MS Word extractor and some comment cleanup
+M	dspace-api/src/main/java/org/dspace/app/mediafilter/FormatFilter.java
+A	dspace-api/src/main/java/org/dspace/app/mediafilter/PoiWordFilter.java
+
+CityOfNewYork/DSpace;fbaf95038;[DS-3475] adding more guidance to example local.cfg as per suggestion of Tim Donohue
+CityOfNewYork/DSpace;ddedfa2a1;[DS-3475] added back assetstore.dir configuration to dspace.cfg
+M	dspace/config/local.cfg.EXAMPLE
+
+CityOfNewYork/DSpace;2b96f9472;Add default lock icon for Mirage theme
+M	dspace-xmlui/src/main/webapp/themes/Mirage/lib/xsl/aspect/artifactbrowser/item-list.xsl
+M	dspace-xmlui/src/main/webapp/themes/Mirage/lib/xsl/aspect/artifactbrowser/item-view.xsl
+
+CityOfNewYork/DSpace;1af23f2d8;reapply pr from master
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/aspect/artifactbrowser/item-list.xsl
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/aspect/artifactbrowser/item-view.xsl
+
+CityOfNewYork/DSpace;a868a4bc9;Re-applying changes
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection/SetupCollectionHarvestingForm.java
+
+CityOfNewYork/DSpace;2734dca1c;Merge pull request #1659 from tdonohue/fix_travis_timeouts
+CityOfNewYork/DSpace;8c70f9bc8;Workaround for travis-ci/travis-ci#4629
+M	.travis.yml
+
+CityOfNewYork/DSpace;8d56e828a;DS-3367: Fix authorization error when non-admin users claim a configurable workflow task
+M	dspace-api/src/main/java/org/dspace/xmlworkflow/WorkflowRequirementsServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/xmlworkflow/XmlWorkflowServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/xmlworkflow/service/XmlWorkflowService.java
+
+CityOfNewYork/DSpace;0e8c95a19;Merge pull request #1651 from mwoodiupui/DS-3378
+CityOfNewYork/DSpace;cf190c78e;Fix js error for filters with dashes
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/aspect/discovery/discovery.xsl
+
+CityOfNewYork/DSpace;2d1c59ac4;[DS-3378] Patch to restore lost indices, from Adan Roman
+A	dspace-api/src/main/resources/org/dspace/storage/rdbms/sqlmigration/oracle/V6.0_2015_03_06_01__DS_3378_lost_oracle_indexes.sql
+
+CityOfNewYork/DSpace;3a03e7a9d;DS-2952: Added missing license
+M	dspace-api/src/test/java/org/dspace/discovery/FullTextContentStreamsTest.java
+
+CityOfNewYork/DSpace;757264c1f;DS-2952: Only prepend new line if we have an actual input stream
+M	dspace-api/src/main/java/org/dspace/discovery/FullTextContentStreams.java
+
+CityOfNewYork/DSpace;dfe6d79da;DS-2952: Small improvements to FullTextContentStreams and added a unit test for it
+M	dspace-api/pom.xml
+M	dspace-api/src/main/java/org/dspace/discovery/FullTextContentStreams.java
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceImpl.java
+A	dspace-api/src/test/java/org/dspace/discovery/FullTextContentStreamsTest.java
+M	dspace-oai/pom.xml
+M	pom.xml
+
+CityOfNewYork/DSpace;708fe215b;DS-2952: Use a SequenceInputStream to add the content of multiple full text bitstreams to SOLR
+M	dspace-api/src/main/java/org/dspace/core/Utils.java
+D	dspace-api/src/main/java/org/dspace/discovery/BitstreamContentStream.java
+A	dspace-api/src/main/java/org/dspace/discovery/FullTextContentStreams.java
+M	dspace-api/src/main/java/org/dspace/discovery/SolrServiceImpl.java
+
+CityOfNewYork/DSpace;a51ad3c6e;Merge pull request #1614 from jonas-atmire/DS-3448-MultiSelect-in-Submission
+CityOfNewYork/DSpace;c5aebee9c;Merge pull request #1649 from hardyoyo/DS-3501-fix-XML-validation-by-excluding-failing-node-packages
+CityOfNewYork/DSpace;8a06522fa;[DS-3501] adjust XML validation to skip contents of any folder that includes the text node/node_modules
+M	dspace-api/pom.xml
+
+CityOfNewYork/DSpace;267518eba;DS 3425 outputstream gets closed in JSONDiscoverySearcher
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/json/JSONDiscoverySearcher.java
+
+CityOfNewYork/DSpace;2685cd793;DS-3415 - administrative.js doEditCommunity wrong parameter name
+M	dspace-xmlui/src/main/resources/aspects/Administrative/administrative.js
+
+CityOfNewYork/DSpace;36c7fa9c1;Merge pull request #1588 from atmire/DS-3419-6_x
+CityOfNewYork/DSpace;54c5c2932;DS-2840 sidebar facet logging from INFO to DEBUG
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/discovery/SidebarFacetsTransformer.java
+
+CityOfNewYork/DSpace;7225f2597;DS-3356 add turnoff authz system
+M	dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseUtils.java
+
+CityOfNewYork/DSpace;59632413c;[DS-3469] virus scan during submission attempts to read uploaded bitstream as anonymous user, which fails (#1632)
+M	dspace-api/src/main/java/org/dspace/ctask/general/ClamScan.java
+M	dspace-api/src/main/java/org/dspace/curate/Curator.java
+M	dspace-api/src/main/java/org/dspace/submit/step/UploadStep.java
+
+CityOfNewYork/DSpace;7650af1e6;Merge pull request #1639 from rradillen/DS-3473
+CityOfNewYork/DSpace;e4659832a;Merge pull request #1641 from cjuergen/DS-3479-6_x
+CityOfNewYork/DSpace;ab982e4f0;Merge pull request #1613 from tomdesair/DS-3436-Sharding-corrupts-multivalued-fields
+CityOfNewYork/DSpace;8d76aa201;[DS-3456] 6x Fix Command Line Parameters for statistics import/export tools (#1624)
+M	dspace-api/src/main/java/org/dspace/statistics/SolrLoggerServiceImpl.java
+M	dspace-api/src/main/java/org/dspace/util/SolrImportExport.java
+M	dspace/config/launcher.xml
+
+CityOfNewYork/DSpace;9eb7c6734;Merge pull request #1633 from Georgetown-University-Libraries/ds3457b
+CityOfNewYork/DSpace;99c1af868;Fix for DS-3479 preventing the import of empty metadata
+M	dspace-api/src/main/java/org/dspace/app/itemimport/ItemImportServiceImpl.java
+
+CityOfNewYork/DSpace;866bfe8fd;add guard code in case no dot is present in bitsream name
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/objectmanager/ItemAdapter.java
+
+CityOfNewYork/DSpace;12de02c7f;Merge pull request #1637 from kshepherd/DS-3477
+CityOfNewYork/DSpace;0c0b280d0;[DS-3477] fix altmetrics config lookups in item-view.xsl
+M	dspace-xmlui/src/main/webapp/themes/Mirage/lib/xsl/aspect/artifactbrowser/item-view.xsl
+
+CityOfNewYork/DSpace;bf1979fd4;[DS-3475] adding more guidance to example local.cfg as per suggestion of Tim Donohue
+M	dspace/config/local.cfg.EXAMPLE
+
+CityOfNewYork/DSpace;e32b93bae;[DS-3475] added back assetstore.dir configuration to dspace.cfg
+M	dspace/config/dspace.cfg
+M	dspace/config/local.cfg.EXAMPLE
+M	dspace/config/spring/api/bitstore.xml
+
+CityOfNewYork/DSpace;f86fff906;Merge pull request #1611 from tomdesair/DS-3446-DSpace-6x_Non-admin-submitter-cannot-remove-bitstream
+CityOfNewYork/DSpace;f7cadf877;Initialize solr shards at first stats post
+M	dspace-api/src/main/java/org/dspace/statistics/SolrLoggerServiceImpl.java
+
+CityOfNewYork/DSpace;4f7520d53;Additional comments
+M	dspace-api/src/main/java/org/dspace/statistics/SolrLoggerServiceImpl.java
+
+CityOfNewYork/DSpace;9904fdb41;DS-3457 and DS-3458 fixes
+M	dspace-api/src/main/java/org/dspace/statistics/SolrLoggerServiceImpl.java
+
+CityOfNewYork/DSpace;e0e223e2b;[DS-3468] 6x Ignore bin directory built by Eclipse (#1627)
+M	.gitignore
+
+CityOfNewYork/DSpace;45762e993;Merge pull request #1617 from jonas-atmire/DS-3445-ChecksumChecker-no-enum-constant-error
+CityOfNewYork/DSpace;ce7201080;[DS-3460] Fix incorrect REST documentation
+M	dspace-rest/src/main/java/org/dspace/rest/RestIndex.java
+
+CityOfNewYork/DSpace;faa12bfd3;Merge pull request #1610 from tomdesair/DS-3108-DSpace-6x_Support-non-email-based-authentication-in-REST-API
+CityOfNewYork/DSpace;2805386f9;DS-3445 Only add "ResultCode" if not default
+M	dspace-api/src/main/java/org/dspace/checker/ResultsPruner.java
+
+CityOfNewYork/DSpace;a62eddeb5;DS-3448 Removal of unnecessary duplicate javascript file
+M	dspace-xmlui-mirage2/src/main/webapp/scripts.xml
+D	dspace-xmlui-mirage2/src/main/webapp/scripts/workflow-multiSelect.js
+
+CityOfNewYork/DSpace;c873e554d;DS-3448 Multi-select in submission for workflow and workspace items -> License headers in new files
+M	dspace-xmlui-mirage2/src/main/webapp/scripts/workflow-multiSelect.js
+M	dspace-xmlui/src/main/webapp/static/js/workflow-multiSelect.js
+
+CityOfNewYork/DSpace;01dee698c;DS-3448 Multi-select in submission for workflow and workspace items
+M	dspace-xmlui-mirage2/src/main/webapp/scripts.xml
+A	dspace-xmlui-mirage2/src/main/webapp/scripts/workflow-multiSelect.js
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/Submissions.java
+A	dspace-xmlui/src/main/webapp/static/js/workflow-multiSelect.js
+
+CityOfNewYork/DSpace;eb5dc5838;DS-3436: Tell SOLR to split values of multi-valued fields when sharding cores
+M	dspace-api/src/main/java/org/dspace/statistics/SolrLoggerServiceImpl.java
+
+CityOfNewYork/DSpace;958631c81;Merge pull request #1600 from samuelcambien/dspace-6_x-DS-3435
+CityOfNewYork/DSpace;89ded5594;DS-3108 DSpace 6 only: Revert rename REST API login paramter email to user
+M	dspace-rest/src/main/java/org/dspace/rest/RestIndex.java
+
+CityOfNewYork/DSpace;985502222;Revert "DS-3108: Rename REST API login paramter email to user"
+M	dspace-rest/src/main/java/org/dspace/rest/authentication/DSpaceAuthenticationProvider.java
+M	dspace-rest/src/main/webapp/WEB-INF/security-applicationContext.xml
+
+CityOfNewYork/DSpace;bfc68d335;DS-3446: Remove policies only after the bitstream has been updated (otherwise the current user has not WRITE rights)
+M	dspace-api/src/main/java/org/dspace/content/BitstreamServiceImpl.java
+
+CityOfNewYork/DSpace;38848e16d;DS-3108: Update REST API authentication documentation
+M	dspace-rest/src/main/java/org/dspace/rest/RestIndex.java
+
+CityOfNewYork/DSpace;0244a425a;DS-3108: Remove deprication since there is no alternative
+M	dspace-rest/src/main/java/org/dspace/rest/authentication/DSpaceAuthenticationProvider.java
+
+CityOfNewYork/DSpace;c3c528788;DS-3108: Remove unused imports
+M	dspace-rest/src/main/java/org/dspace/rest/RestIndex.java
+
+CityOfNewYork/DSpace;3321cba56;DS-3108: Remove unnecessary /login-shibboleth endpoint
+M	dspace-rest/src/main/java/org/dspace/rest/RestIndex.java
+
+CityOfNewYork/DSpace;684e87ed2;DS-3108: Return FORBIDDEN error code when authentication on the REST API failed
+M	dspace-rest/src/main/java/org/dspace/rest/RestIndex.java
+
+CityOfNewYork/DSpace;d2c4233d9;DS-3108: Rename REST API login paramter email to user
+M	dspace-rest/src/main/java/org/dspace/rest/authentication/DSpaceAuthenticationProvider.java
+M	dspace-rest/src/main/webapp/WEB-INF/security-applicationContext.xml
+
+CityOfNewYork/DSpace;ae9862395;DS-3108: Support authenticaton mechanisms where the e-mail attribute is not an e-mail address
+M	dspace-rest/src/main/java/org/dspace/rest/authentication/DSpaceAuthenticationProvider.java
+
+CityOfNewYork/DSpace;6256c673b;Merge pull request #1607 from bram-atmire/DS-3289
+CityOfNewYork/DSpace;2b0448fe6;DS-3289 Removing double slashes in image paths
+M	dspace-xmlui-mirage2/src/main/webapp/xsl/core/page-structure.xsl
+
+CityOfNewYork/DSpace;1e4ae0b5e;Cherry pick DS-3440 solution d95902b
+M	dspace-swordv2/src/main/java/org/dspace/sword2/SwordMETSContentIngester.java
+
+CityOfNewYork/DSpace;1f36899ab;Merge pull request #1605 from 4Science/DS-3441-6x
+CityOfNewYork/DSpace;a6aa9816d;DS-3441 READ permssion on the Collection object not respected by the JSPUI
+M	dspace-jspui/src/main/java/org/dspace/app/webui/servlet/HandleServlet.java
+
+CityOfNewYork/DSpace;242d1357c;Merge pull request #1601 from tomdesair/DS-3381_Workspace-item-not-saved-when-using-versioning
+CityOfNewYork/DSpace;4b927562b;DS-3381: Do an explicit commit so that the workspace item is written to the database before the redirect to the submission form (see versioning.js doCreateNewVersion)
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/versioning/VersionManager.java
+
+CityOfNewYork/DSpace;7b6ea8e80;DS-3435 possible nullpointerexception at AccessStepUtil$populateEmbargoDetail
+M	dspace-api/src/main/java/org/dspace/authorize/ResourcePolicy.java
+M	dspace-xmlui/src/main/java/org/dspace/app/xmlui/aspect/submission/submit/AccessStepUtil.java
+
+CityOfNewYork/DSpace;a3c6aa2ce;DS-3419
+M	dspace-xmlui-mirage2/src/main/webapp/package.json
+
+CityOfNewYork/DSpace;50eed239f;DS-3363 CSV import error says "row", means "column"
+M	dspace-api/src/main/java/org/dspace/app/bulkedit/MetadataImportInvalidHeadingException.java
+M	dspace-api/src/test/java/org/dspace/app/bulkedit/DSpaceCSVTest.java
+
+CityOfNewYork/DSpace;306538943;typo: xforwarderfor -> xforwardedfor
+M	dspace-rest/src/main/java/org/dspace/rest/FilteredCollectionsResource.java
+M	dspace-rest/src/main/java/org/dspace/rest/FilteredItemsResource.java
+M	dspace-rest/src/main/java/org/dspace/rest/FiltersResource.java
+M	dspace-rest/src/main/java/org/dspace/rest/HierarchyResource.java
+M	dspace-rest/src/main/java/org/dspace/rest/MetadataRegistryResource.java

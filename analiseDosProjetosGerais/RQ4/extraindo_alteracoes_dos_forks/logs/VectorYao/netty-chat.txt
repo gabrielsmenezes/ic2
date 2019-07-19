@@ -1,0 +1,33 @@
+VectorYao/netty-chat;cd8f23c;修正readme中图片显示错误
+M	README.md
+A	docs/nettychat1.jpg
+A	docs/nettychat2.jpg
+A	docs/nettychat3.jpg
+
+VectorYao/netty-chat;449cf0c;增加运行时的截图说明
+M	README.md
+
+VectorYao/netty-chat;ccdf3fd;增加客户端的消息处理handler，完善多客户端的测试方式
+M	README.md
+M	comet/src/main/java/wiki/tony/chat/comet/codec/TcpProtoCodec.java
+A	comet/src/main/java/wiki/tony/chat/comet/handler/ChatClientHandler.java
+M	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/AuthOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/MessageOperation.java
+R064	comet/src/test/java/wiki/tony/chat/comet/client/ChatClient.java	comet/src/test/java/wiki/tony/chat/comet/client/ChatClientOne.java
+A	comet/src/test/java/wiki/tony/chat/comet/client/ChatClientTwo.java
+M	logic/src/main/java/wiki/tony/chat/logic/config/CachingConfig.java
+M	logic/src/main/java/wiki/tony/chat/logic/service/MessageServiceImpl.java
+
+VectorYao/netty-chat;0315a12;为编解码操作和事件处理handler添加注释
+M	README.md
+M	comet/src/main/java/wiki/tony/chat/comet/ChatApplication.java
+M	comet/src/main/java/wiki/tony/chat/comet/bean/Proto.java
+M	comet/src/main/java/wiki/tony/chat/comet/codec/TcpProtoCodec.java
+M	comet/src/main/java/wiki/tony/chat/comet/codec/WebSocketProtoCodec.java
+M	comet/src/main/java/wiki/tony/chat/comet/handler/ChatServerHandler.java
+M	comet/src/main/java/wiki/tony/chat/comet/initializer/TcpServerInitializer.java
+M	comet/src/main/java/wiki/tony/chat/comet/initializer/WebSocketServerInitializer.java
+M	comet/src/main/java/wiki/tony/chat/comet/operation/AuthOperation.java
+M	comet/src/main/java/wiki/tony/chat/comet/server/TcpChatServer.java
+M	logic/src/main/java/wiki/tony/chat/logic/service/AuthServiceImpl.java

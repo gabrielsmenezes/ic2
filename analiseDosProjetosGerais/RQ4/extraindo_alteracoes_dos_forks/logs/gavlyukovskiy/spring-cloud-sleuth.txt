@@ -1,0 +1,22 @@
+gavlyukovskiy/spring-cloud-sleuth;4207081a;Reverted DEFAULT_SKIP_PATTERN in TraceFilter, pointed to SleuthWebProperties and deprecated
+M	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/web/TraceFilter.java
+
+gavlyukovskiy/spring-cloud-sleuth;1a538119;Enable metrics by default
+M	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/metric/SleuthMetricProperties.java
+
+gavlyukovskiy/spring-cloud-sleuth;566d0882;Created @ConfigurationProperties classes and updated additional metadata
+M	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/autoconfig/SleuthProperties.java
+M	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/rxjava/RxJavaAutoConfiguration.java
+A	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/rxjava/SleuthRxJavaSchedulersProperties.java
+A	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/scheduling/SleuthSchedulingProperties.java
+M	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/scheduling/TraceSchedulingAutoConfiguration.java
+A	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/web/SleuthWebProperties.java
+M	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/web/TraceFilter.java
+M	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/web/TraceWebAutoConfiguration.java
+M	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/log/SleuthLogAutoConfiguration.java
+A	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/log/SleuthSlf4jProperties.java
+M	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/metric/SleuthMetricProperties.java
+M	spring-cloud-sleuth-core/src/main/resources/META-INF/additional-spring-configuration-metadata.json
+M	spring-cloud-sleuth-core/src/test/java/org/springframework/cloud/sleuth/instrument/web/SkipPatternProviderConfigTest.java
+M	spring-cloud-sleuth-core/src/test/java/org/springframework/cloud/sleuth/instrument/web/TraceFilterMockChainIntegrationTests.java
+M	spring-cloud-sleuth-core/src/test/java/org/springframework/cloud/sleuth/instrument/web/TraceFilterTests.java

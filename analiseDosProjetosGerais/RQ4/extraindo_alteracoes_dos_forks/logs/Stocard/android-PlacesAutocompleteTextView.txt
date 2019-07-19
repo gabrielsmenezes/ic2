@@ -1,0 +1,109 @@
+Stocard/android-PlacesAutocompleteTextView;4b24f8c;Merge pull request #1 from awenger/master
+Stocard/android-PlacesAutocompleteTextView;79e446f;configured proguard to keep models
+M	library/build.gradle
+A	library/proguard.cfg
+
+Stocard/android-PlacesAutocompleteTextView;db0d12c;restructuring, dependency updates
+M	.gitignore
+D	.travis.yml
+M	CHANGELOG.md
+M	LICENSE.txt
+D	RELEASING.md
+M	build.gradle
+D	buildscripts/deploy_snapshot.sh
+D	demo-app/.gitignore
+D	demo-app/build.gradle
+D	demo-app/proguard-rules.pro
+D	gradle.properties
+M	gradle/wrapper/gradle-wrapper.properties
+A	library/build.gradle
+R100	placesautocomplete/src/main/AndroidManifest.xml	library/src/main/AndroidManifest.xml
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/Constants.java	library/src/main/java/com/seatgeek/placesautocomplete/Constants.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/DetailsCallback.java	library/src/main/java/com/seatgeek/placesautocomplete/DetailsCallback.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/OnPlaceSelectedListener.java	library/src/main/java/com/seatgeek/placesautocomplete/OnPlaceSelectedListener.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlaceDetailsLoadingFailure.java	library/src/main/java/com/seatgeek/placesautocomplete/PlaceDetailsLoadingFailure.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java	library/src/main/java/com/seatgeek/placesautocomplete/PlacesApi.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesApiBuilder.java	library/src/main/java/com/seatgeek/placesautocomplete/PlacesApiBuilder.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java	library/src/main/java/com/seatgeek/placesautocomplete/PlacesAutocompleteTextView.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/AbstractPlacesAutocompleteAdapter.java	library/src/main/java/com/seatgeek/placesautocomplete/adapter/AbstractPlacesAutocompleteAdapter.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/DefaultAutocompleteAdapter.java	library/src/main/java/com/seatgeek/placesautocomplete/adapter/DefaultAutocompleteAdapter.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/adapter/PlacesApiFilter.java	library/src/main/java/com/seatgeek/placesautocomplete/adapter/PlacesApiFilter.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/async/BackgroundExecutorService.java	library/src/main/java/com/seatgeek/placesautocomplete/async/BackgroundExecutorService.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/async/BackgroundJob.java	library/src/main/java/com/seatgeek/placesautocomplete/async/BackgroundJob.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/AutocompleteHistoryManager.java	library/src/main/java/com/seatgeek/placesautocomplete/history/AutocompleteHistoryManager.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/DefaultAutocompleteHistoryManager.java	library/src/main/java/com/seatgeek/placesautocomplete/history/DefaultAutocompleteHistoryManager.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/history/OnHistoryUpdatedListener.java	library/src/main/java/com/seatgeek/placesautocomplete/history/OnHistoryUpdatedListener.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/AndroidPlacesApiJsonParser.java	library/src/main/java/com/seatgeek/placesautocomplete/json/AndroidPlacesApiJsonParser.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/GsonPlacesApiJsonParser.java	library/src/main/java/com/seatgeek/placesautocomplete/json/GsonPlacesApiJsonParser.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/JsonParserResolver.java	library/src/main/java/com/seatgeek/placesautocomplete/json/JsonParserResolver.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/JsonParsingException.java	library/src/main/java/com/seatgeek/placesautocomplete/json/JsonParsingException.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/JsonWritingException.java	library/src/main/java/com/seatgeek/placesautocomplete/json/JsonWritingException.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/json/PlacesApiJsonParser.java	library/src/main/java/com/seatgeek/placesautocomplete/json/PlacesApiJsonParser.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponent.java	library/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponent.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponentType.java	library/src/main/java/com/seatgeek/placesautocomplete/model/AddressComponentType.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AlternativePlaceId.java	library/src/main/java/com/seatgeek/placesautocomplete/model/AlternativePlaceId.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/AutocompleteResultType.java	library/src/main/java/com/seatgeek/placesautocomplete/model/AutocompleteResultType.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/DateTimePair.java	library/src/main/java/com/seatgeek/placesautocomplete/model/DateTimePair.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/DescriptionTerm.java	library/src/main/java/com/seatgeek/placesautocomplete/model/DescriptionTerm.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/MatchedSubstring.java	library/src/main/java/com/seatgeek/placesautocomplete/model/MatchedSubstring.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/OpenHours.java	library/src/main/java/com/seatgeek/placesautocomplete/model/OpenHours.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/OpenPeriod.java	library/src/main/java/com/seatgeek/placesautocomplete/model/OpenPeriod.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/Place.java	library/src/main/java/com/seatgeek/placesautocomplete/model/Place.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceDetails.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlaceDetails.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceGeometry.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlaceGeometry.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceLocation.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlaceLocation.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacePhoto.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlacePhoto.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceReview.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlaceReview.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceScope.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlaceScope.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlaceType.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlaceType.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacesApiException.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlacesApiException.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacesApiResponse.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlacesApiResponse.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacesAutocompleteResponse.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlacesAutocompleteResponse.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/PlacesDetailsResponse.java	library/src/main/java/com/seatgeek/placesautocomplete/model/PlacesDetailsResponse.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/RatingAspect.java	library/src/main/java/com/seatgeek/placesautocomplete/model/RatingAspect.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/model/Status.java	library/src/main/java/com/seatgeek/placesautocomplete/model/Status.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/AbstractPlacesHttpClient.java	library/src/main/java/com/seatgeek/placesautocomplete/network/AbstractPlacesHttpClient.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/HttpUrlConnectionMapsHttpClient.java	library/src/main/java/com/seatgeek/placesautocomplete/network/HttpUrlConnectionMapsHttpClient.java
+R079	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/OkHttpPlacesHttpClient.java	library/src/main/java/com/seatgeek/placesautocomplete/network/OkHttpPlacesHttpClient.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/PlacesHttpClient.java	library/src/main/java/com/seatgeek/placesautocomplete/network/PlacesHttpClient.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/PlacesHttpClientResolver.java	library/src/main/java/com/seatgeek/placesautocomplete/network/PlacesHttpClientResolver.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/network/ResponseHandler.java	library/src/main/java/com/seatgeek/placesautocomplete/network/ResponseHandler.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/util/ArrayAdapterDelegate.java	library/src/main/java/com/seatgeek/placesautocomplete/util/ArrayAdapterDelegate.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/util/LocationUtils.java	library/src/main/java/com/seatgeek/placesautocomplete/util/LocationUtils.java
+R100	placesautocomplete/src/main/java/com/seatgeek/placesautocomplete/util/ResourceUtils.java	library/src/main/java/com/seatgeek/placesautocomplete/util/ResourceUtils.java
+R100	placesautocomplete/src/main/res/drawable-hdpi/pacv_powered_by_google_on_non_white.png	library/src/main/res/drawable-hdpi/pacv_powered_by_google_on_non_white.png
+R100	placesautocomplete/src/main/res/drawable-hdpi/pacv_powered_by_google_on_white.png	library/src/main/res/drawable-hdpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable-ldpi/pacv_powered_by_google_on_non_white.png	library/src/main/res/drawable-ldpi/pacv_powered_by_google_on_non_white.png
+R100	placesautocomplete/src/main/res/drawable-ldpi/pacv_powered_by_google_on_white.png	library/src/main/res/drawable-ldpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable-mdpi/pacv_powered_by_google_on_non_white.png	library/src/main/res/drawable-mdpi/pacv_powered_by_google_on_non_white.png
+R100	placesautocomplete/src/main/res/drawable-mdpi/pacv_powered_by_google_on_white.png	library/src/main/res/drawable-mdpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable-xhdpi/pacv_powered_by_google_on_non_white.png	library/src/main/res/drawable-xhdpi/pacv_powered_by_google_on_non_white.png
+R100	placesautocomplete/src/main/res/drawable-xhdpi/pacv_powered_by_google_on_white.png	library/src/main/res/drawable-xhdpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable-xxhdpi/pacv_powered_by_google_on_non_white.png	library/src/main/res/drawable-xxhdpi/pacv_powered_by_google_on_non_white.png
+R100	placesautocomplete/src/main/res/drawable-xxhdpi/pacv_powered_by_google_on_white.png	library/src/main/res/drawable-xxhdpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable-xxxhdpi/pacv_powered_by_google_on_non_white.png	library/src/main/res/drawable-xxxhdpi/pacv_powered_by_google_on_non_white.png
+R100	placesautocomplete/src/main/res/drawable-xxxhdpi/pacv_powered_by_google_on_white.png	library/src/main/res/drawable-xxxhdpi/pacv_powered_by_google_on_white.png
+R100	placesautocomplete/src/main/res/drawable/pacv_popup_background_white.xml	library/src/main/res/drawable/pacv_popup_background_white.xml
+R100	placesautocomplete/src/main/res/layout/pacv_maps_autocomplete_item.xml	library/src/main/res/layout/pacv_maps_autocomplete_item.xml
+R100	placesautocomplete/src/main/res/values/pacv_attrs.xml	library/src/main/res/values/pacv_attrs.xml
+R100	placesautocomplete/src/main/res/values/pacv_strings.xml	library/src/main/res/values/pacv_strings.xml
+R100	placesautocomplete/src/main/res/values/pacv_styles.xml	library/src/main/res/values/pacv_styles.xml
+R100	placesautocomplete/src/test/java/com/seatgeek/placesautocomplete/json/AndroidPlacesApiJsonParserTest.java	library/src/test/java/com/seatgeek/placesautocomplete/json/AndroidPlacesApiJsonParserTest.java
+R100	placesautocomplete/src/test/java/com/seatgeek/placesautocomplete/json/AndroidPlacesApiJsonWriterTest.java	library/src/test/java/com/seatgeek/placesautocomplete/json/AndroidPlacesApiJsonWriterTest.java
+D	placesautocomplete/build.gradle
+D	placesautocomplete/gradle.properties
+A	sample/build.gradle
+R100	demo-app/src/main/AndroidManifest.xml	sample/src/main/AndroidManifest.xml
+R100	demo-app/src/main/java/com/seatgeek/placesautocompletedemo/PlacesAutocompleteActivity.java	sample/src/main/java/com/seatgeek/placesautocompletedemo/PlacesAutocompleteActivity.java
+R100	demo-app/src/main/java/com/seatgeek/placesautocompletedemo/TestPlacesAutocompleteAdapter.java	sample/src/main/java/com/seatgeek/placesautocompletedemo/TestPlacesAutocompleteAdapter.java
+R100	demo-app/src/main/res/drawable/spacer_sixteen_dp.xml	sample/src/main/res/drawable/spacer_sixteen_dp.xml
+R100	demo-app/src/main/res/layout/activity_places_autocomplete.xml	sample/src/main/res/layout/activity_places_autocomplete.xml
+R100	demo-app/src/main/res/layout/places_autocomplete_item.xml	sample/src/main/res/layout/places_autocomplete_item.xml
+R100	demo-app/src/main/res/mipmap-hdpi/ic_launcher.png	sample/src/main/res/mipmap-hdpi/ic_launcher.png
+R100	demo-app/src/main/res/mipmap-mdpi/ic_launcher.png	sample/src/main/res/mipmap-mdpi/ic_launcher.png
+R100	demo-app/src/main/res/mipmap-xhdpi/ic_launcher.png	sample/src/main/res/mipmap-xhdpi/ic_launcher.png
+R100	demo-app/src/main/res/mipmap-xxhdpi/ic_launcher.png	sample/src/main/res/mipmap-xxhdpi/ic_launcher.png
+R100	demo-app/src/main/res/values-w820dp/dimens.xml	sample/src/main/res/values-w820dp/dimens.xml
+R100	demo-app/src/main/res/values/strings.xml	sample/src/main/res/values/strings.xml
+R100	demo-app/src/main/res/values/styles.xml	sample/src/main/res/values/styles.xml
+M	settings.gradle

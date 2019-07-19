@@ -1,0 +1,98 @@
+tlipski/Activiti;73e7b30d8;small fixes for liferay-activiti users and groups bridge, still needs work
+M	modules/activiti-explorer/src/main/resources/messages.properties
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayGroupQueryImpl.java
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayUserQueryImpl.java
+
+tlipski/Activiti;36607aff8;fixed out-of-sync error when the exception to be reported has no cause
+M	modules/activiti-explorer/src/main/java/org/activiti/explorer/ExplorerApp.java
+
+tlipski/Activiti;c512036c8;enabled demoGenerator (but w/o users generation)
+M	modules/activiti-portlets/pom.xml
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayGroupImpl.java
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayGroupQueryImpl.java
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayIdentityServiceImpl.java
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+
+tlipski/Activiti;5b5eb1ca7;fixed version
+M	modules/activiti-portlets/pom.xml
+
+tlipski/Activiti;dcc675533;Merge remote-tracking branch 'upstream/master'
+tlipski/Activiti;c37882b7f;code cleanup, prepare for new portlet
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/application/ActivitiAdminPortletApplication.java
+R081	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/application/ActivitiExplorerPortletApplication.java	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/application/ActivitiGenericPortletApplication.java
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/application/ActivitiTasksPortletApplication.java
+R094	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayGroupImpl.java	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayGroupImpl.java
+R097	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayGroupQueryImpl.java	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayGroupQueryImpl.java
+R098	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayIdentityServiceImpl.java	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayIdentityServiceImpl.java
+R084	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayUserCacheFactoryBean.java	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayUserCacheFactoryBean.java
+R095	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayUserImpl.java	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayUserImpl.java
+R093	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayUserQueryImpl.java	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/LiferayUserQueryImpl.java
+R079	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/SpringPortletProcessEngineConfigurationImpl.java	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/interop/liferay/SpringPortletProcessEngineConfigurationImpl.java
+R052	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/portlet/ExplorerApplicationPortlet.java	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/portlet/ActivitiApplicationPortlet.java
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/activiti-ui-context.xml
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/liferay-display.xml
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/liferay-portlet.xml
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/portlet.xml
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/web.xml
+
+tlipski/Activiti;c3afe9ba3;introduced Liferay-based identity provider
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/application/ActivitiExplorerPortletApplication.java
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/portlet/ExplorerApplicationPortlet.java
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayGroupImpl.java
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayGroupQueryImpl.java
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayIdentityServiceImpl.java
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayUserCacheFactoryBean.java
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayUserImpl.java
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/LiferayUserQueryImpl.java
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/spring/SpringPortletProcessEngineConfigurationImpl.java
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/activiti-ui-context.xml
+
+tlipski/Activiti;581839bde;reverted settings to default
+M	modules/activiti-webapp-explorer2/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+
+tlipski/Activiti;b5ad0e776;fixed view mode
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/portlet.xml
+
+tlipski/Activiti;cd166f04e;tasks pane seems to work
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/application/ActivitiExplorerPortletApplication.java
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/ui/PortletMainWindow.java
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/activiti-ui-context.xml
+
+tlipski/Activiti;2f19575a2;work in progress..
+M	modules/activiti-explorer/src/main/java/org/activiti/explorer/ui/mainlayout/MainLayout.java
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/application/ActivitiExplorerPortletApplication.java
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/portlet/ExplorerApplicationPortlet.java
+M	modules/activiti-webapp-explorer2/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+
+tlipski/Activiti;fc0bdd713;almost there?
+M	modules/activiti-explorer/src/main/java/org/activiti/explorer/navigation/NavigationFragmentChangeListener.java
+M	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/application/ActivitiExplorerPortletApplication.java
+D	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/portlet/SpringPortletRequestContextListener.java
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/portlet.xml
+
+tlipski/Activiti;20483715d;spring "session" scope seems to work as well
+M	modules/activiti-portlets/pom.xml
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/portlet/ExplorerApplicationPortlet.java
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/portlet/SpringPortletRequestContextListener.java
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/activiti-ui-context.xml
+D	modules/activiti-portlets/src/main/webapp/WEB-INF/db.properties
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/portlet.xml
+M	modules/activiti-portlets/src/main/webapp/WEB-INF/web.xml
+
+tlipski/Activiti;9082e4af6;wip
+A	modules/activiti-portlets/pom.xml
+A	modules/activiti-portlets/src/main/java/org/activiti/portlets/explorer/application/ActivitiExplorerPortletApplication.java
+A	modules/activiti-portlets/src/main/resources/db.properties
+A	modules/activiti-portlets/src/main/resources/ui.properties
+A	modules/activiti-portlets/src/main/webapp/WEB-INF/activiti-standalone-context.xml
+A	modules/activiti-portlets/src/main/webapp/WEB-INF/activiti-ui-context.xml
+A	modules/activiti-portlets/src/main/webapp/WEB-INF/applicationContext.xml
+A	modules/activiti-portlets/src/main/webapp/WEB-INF/db.properties
+A	modules/activiti-portlets/src/main/webapp/WEB-INF/liferay-display.xml
+A	modules/activiti-portlets/src/main/webapp/WEB-INF/liferay-plugin-package.properties
+A	modules/activiti-portlets/src/main/webapp/WEB-INF/liferay-portlet.xml
+A	modules/activiti-portlets/src/main/webapp/WEB-INF/portlet.xml
+A	modules/activiti-portlets/src/main/webapp/WEB-INF/web.xml
+M	pom.xml

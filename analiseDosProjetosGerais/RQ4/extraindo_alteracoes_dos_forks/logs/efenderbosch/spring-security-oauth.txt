@@ -1,0 +1,70 @@
+efenderbosch/spring-security-oauth;b447e7c0;sync w/ master
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/TokenStoreBaseTests.java
+
+efenderbosch/spring-security-oauth;feac09ac;removed sort-of-working-but-not-really jackson2 serialization strategy
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/Jackson2SerializationStrategy.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2AuthenticationDeserializer.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2JacksonModule.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RefreshTokenDeserializer.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RefreshTokenSerializer.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RequestDeserializer.java
+
+efenderbosch/spring-security-oauth;142786c3;sync w/ current version
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStore.java
+
+efenderbosch/spring-security-oauth;bf2501eb;working redis token store and tests working jdk serialization strategy working, but not fully tested jackson2 serialization strategy
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStore.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/Jackson2SerializationStrategy.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2AuthenticationDeserializer.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2JacksonModule.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RefreshTokenDeserializer.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RefreshTokenSerializer.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RequestDeserializer.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/TokenStoreBaseTests.java
+
+efenderbosch/spring-security-oauth;944536de;added @author per code conventions in readme
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStore.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStoreSerializationStrategy.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStoreTests.java
+
+efenderbosch/spring-security-oauth;d54decf3;fix removal of uname to access
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStore.java
+
+efenderbosch/spring-security-oauth;1078007e;sync w/ master
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/TokenStoreBaseTests.java
+
+efenderbosch/spring-security-oauth;687d1d59;removed sort-of-working-but-not-really jackson2 serialization strategy
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/Jackson2SerializationStrategy.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2AuthenticationDeserializer.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2JacksonModule.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RefreshTokenDeserializer.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RefreshTokenSerializer.java
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RequestDeserializer.java
+
+efenderbosch/spring-security-oauth;b4450484;changed testStoreRefreshToken to store non-expiring token
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/TokenStoreBaseTests.java
+
+efenderbosch/spring-security-oauth;45a1ed9f;go back to jedis 2.6.3, 2.7 has breaking changes
+M	spring-security-oauth2/pom.xml
+
+efenderbosch/spring-security-oauth;8dc271ef;sync w/ current version
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStore.java
+
+efenderbosch/spring-security-oauth;53ad089f;bump jedis and spring-data-redis versions
+M	spring-security-oauth2/pom.xml
+
+efenderbosch/spring-security-oauth;f72c9053;working redis token store and tests working jdk serialization strategy working, but not fully tested jackson2 serialization strategy
+M	spring-security-oauth2/pom.xml
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/BaseRedisTokenStoreSerializationStrategy.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/JdkSerializationStrategy.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStore.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStoreSerializationStrategy.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/StandardStringSerializationStrategy.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/Jackson2SerializationStrategy.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2AuthenticationDeserializer.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2JacksonModule.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RefreshTokenDeserializer.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RefreshTokenSerializer.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/store/redis/jackson2/OAuth2RequestDeserializer.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/TokenStoreBaseTests.java
+A	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/store/redis/RedisTokenStoreTests.java

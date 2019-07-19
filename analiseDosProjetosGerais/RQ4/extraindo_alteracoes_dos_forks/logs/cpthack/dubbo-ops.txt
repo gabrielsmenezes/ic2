@@ -1,0 +1,42 @@
+cpthack/dubbo-ops;42811a7;调整文档
+M	README.md
+
+cpthack/dubbo-ops;e80b83c;添加示例截图.
+A	README/dubbo-admin-pic01.png
+A	README/dubbo-admin-pic02.png
+
+cpthack/dubbo-ops;df36714;添加切换zk分组按钮的国际化支持.
+M	dubbo-admin/src/main/webapp/WEB-INF/common/resources.xml
+M	dubbo-admin/src/main/webapp/WEB-INF/i18n/message_en.properties
+M	dubbo-admin/src/main/webapp/WEB-INF/i18n/message_zh.properties
+M	dubbo-admin/src/main/webapp/WEB-INF/templates/home/control/menu.vm
+
+cpthack/dubbo-ops;192e055;添加文档说明.
+M	README.md
+
+cpthack/dubbo-ops;94b1977;添加zk分组切换功能.
+M	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/aop/RegistryServerAspect.java
+M	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/service/impl/AbstractService.java
+M	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/sync/RegistryServerSyncExt.java
+M	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/web/home/module/control/Menu.java
+M	dubbo-admin/src/main/resources/META-INF/spring/dubbo-admin.xml
+M	dubbo-admin/src/main/webapp/WEB-INF/dubbo.properties
+M	dubbo-admin/src/main/webapp/WEB-INF/templates/home/control/menu.vm
+M	dubbo-admin/src/main/webapp/js/dubbo.js
+
+cpthack/dubbo-ops;d9bc834;添加aop切面，动态设置RegistryService和RegistryServerSync对象.
+M	dubbo-admin/pom.xml
+A	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/aop/RegistryServerAspect.java
+M	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/service/impl/AbstractService.java
+M	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/sync/RegistryServerSyncExt.java
+M	dubbo-admin/src/main/resources/META-INF/spring/dubbo-admin.xml
+
+cpthack/dubbo-ops;ce1d5c0;调整dubbo-admin的RegistryService对象和RegistryServerSync对象的实例化过程.
+M	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/config/RegistryServerConfiguration.java
+M	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/service/impl/AbstractService.java
+M	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/sync/RegistryServerSync.java
+A	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/sync/RegistryServerSyncExt.java
+M	dubbo-admin/src/main/resources/META-INF/spring/dubbo-admin.xml
+
+cpthack/dubbo-ops;5de75b9;添加配置器.
+A	dubbo-admin/src/main/java/com/alibaba/dubbo/governance/config/RegistryServerConfiguration.java

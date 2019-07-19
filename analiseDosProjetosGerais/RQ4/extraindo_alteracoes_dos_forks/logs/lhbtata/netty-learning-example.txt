@@ -1,0 +1,34 @@
+lhbtata/netty-learning-example;1dcf041;心跳检测，发送遗嘱消息时，加入messageId判断，当为0时，订阅链接已断开，不必发送
+M	netty-iot/src/main/java/com/sanshengshui/iot/server/MqttTransportHandler.java
+
+lhbtata/netty-learning-example;74c6a3e;channel的读写最大时间改为固定180秒，超时及报错时关闭channel
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Publish.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/server/MqttTransportHandler.java
+
+lhbtata/netty-learning-example;05b0c3e;qos=1(心跳)不再保存为遗嘱消息
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Publish.java
+
+lhbtata/netty-learning-example;f5e919e;。。。
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Publish.java
+
+lhbtata/netty-learning-example;e18d0e2;去掉test代码
+M	netty-iot/src/main/resources/application.yml
+D	netty-iot/src/test/java/com/sanshengshui/iot/GrozaSerializerTests.java
+D	netty-iot/src/test/java/com/sanshengshui/iot/MqttTests.java
+D	netty-iot/src/test/java/com/sanshengshui/iot/NettyIotApplicationTests.java
+D	netty-iot/src/test/java/com/sanshengshui/iot/RedisTests.java
+D	netty-iot/src/test/java/com/sanshengshui/iot/User.java
+
+lhbtata/netty-learning-example;394356c;通了
+M	.gitignore
+M	netty-iot/src/main/docker/Dockerfile
+M	netty-iot/src/main/java/com/sanshengshui/iot/auth/service/AuthServiceImpl.java
+A	netty-iot/src/main/java/com/sanshengshui/iot/auth/util/ConvertCode.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Connect.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Publish.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/protocol/Subscribe.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/cache/GrozaDupPubRelMessageCache.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/cache/GrozaDupPublishMessageCache.java
+M	netty-iot/src/main/java/com/sanshengshui/iot/store/message/MessageIdServiceImpl.java
+M	netty-iot/src/main/resources/application.yml

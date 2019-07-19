@@ -1,0 +1,62 @@
+gotemkr/Activiti;eb0d5e652;Merge pull request #32 from ravitadela/signal-event-subprocess
+gotemkr/Activiti;3964e2cfe;adding testcases
+A	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/event/signal/SignalEventSubprocessTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/signal/SignalEventSubprocessTest.testInterruptingUnderProcessDefinition.bpmn20.xml
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/signal/SignalEventSubprocessTest.testSignalEventSubProcessCallActivity.bpmn20.xml
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/signal/SignalEventSubprocessTest.testSignalEventSubProcessCallActivityChild.bpmn20.xml
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/signal/SignalEventSubprocessTest.testTwoInterruptingUnderProcessDefinition.bpmn20.xml
+
+gotemkr/Activiti;421d2a0e2;Adding signal event support for event sub-process start events
+M	modules/activiti-engine/src/main/java/org/activiti/engine/delegate/event/ActivitiEventType.java
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/EventSubProcessSignalStartEventActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/factory/ActivityBehaviorFactory.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/factory/DefaultActivityBehaviorFactory.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/handler/StartEventParseHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/util/ProcessInstanceHelper.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/test/TestActivityBehaviorFactory.java
+M	modules/activiti-ui/activiti-app-logic/src/main/resources/stencilset_bpmn.json
+
+gotemkr/Activiti;ffd33d4c4;Merge pull request #30 from SudhaBalabhadra/dueDateFilterFix
+gotemkr/Activiti;71e9805a3;Indentation fix
+M	modules/activiti-rest/src/main/java/org/activiti/rest/service/api/runtime/task/TaskBaseResource.java
+
+gotemkr/Activiti;80f9ddf8d;Indentation fix
+M	modules/activiti-rest/src/main/java/org/activiti/rest/service/api/runtime/task/TaskBaseResource.java
+
+gotemkr/Activiti;a0555ae09;Indentation fix
+M	modules/activiti-rest/src/main/java/org/activiti/rest/service/api/runtime/task/TaskCollectionResource.java
+
+gotemkr/Activiti;bf5f257e5;Indentation fix
+M	modules/activiti-rest/src/main/java/org/activiti/rest/service/api/runtime/task/TaskCollectionResource.java
+
+gotemkr/Activiti;da767e2df;withoutDueDate Filter task Issue fix
+M	modules/activiti-rest/src/main/java/org/activiti/rest/service/api/runtime/task/TaskBaseResource.java
+M	modules/activiti-rest/src/main/java/org/activiti/rest/service/api/runtime/task/TaskCollectionResource.java
+
+gotemkr/Activiti;b93b9640e;withoutDueDate Filter Issue fix
+M	modules/activiti-rest/src/main/java/org/activiti/rest/service/api/runtime/task/TaskBaseResource.java
+M	modules/activiti-rest/src/main/java/org/activiti/rest/service/api/runtime/task/TaskCollectionResource.java
+
+gotemkr/Activiti;27ee9f3e7;Merge branch 'master' of https://github.com/Activiti/Activiti
+gotemkr/Activiti;26cef7922;withoutDueDateFilter Issue fix
+M	modules/activiti-rest/src/main/java/org/activiti/rest/service/api/runtime/task/TaskBaseResource.java
+M	modules/activiti-rest/src/main/java/org/activiti/rest/service/api/runtime/task/TaskCollectionResource.java
+
+gotemkr/Activiti;53aa2b81a;Merge pull request #27 from ravitadela/master-eventsbuprocess-fix
+gotemkr/Activiti;a773c79e1;Separating delete execution code by checking isProcessInstanceType attribute of ExecutionEntity
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/EventSubProcessMessageStartEventActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ExecutionEntityManagerImpl.java
+
+gotemkr/Activiti;a81d024ac;Fix for event sup-process issue
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/EventSubProcessMessageStartEventActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ExecutionEntityManagerImpl.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/event/message/MessageEventSubprocessTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/message/MessageEventSubprocessTest.testMessageEventSubProcessCallActivity.bpmn20.xml
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/message/MessageEventSubprocessTest.testMessageEventSubProcessCallActivityChild.bpmn20.xml
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/constants/StencilConstants.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/StartEventJsonConverter.java
+M	modules/activiti-ui/activiti-app-logic/src/main/java/org/activiti/app/service/editor/BpmnDisplayJsonConverter.java
+M	modules/activiti-ui/activiti-app-logic/src/main/resources/stencilset_bpmn.json
+
+gotemkr/Activiti;0af17a34c;Merge pull request #26 from purvendra-k/fixRelatedContentIssue-temp
+gotemkr/Activiti;6f3156c5e;Merge pull request #23 from purvendra-k/fixRelatedContentIssue-temp

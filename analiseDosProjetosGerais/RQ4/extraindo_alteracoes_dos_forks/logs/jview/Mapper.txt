@@ -1,0 +1,188 @@
+jview/Mapper;a50e277;update mapper 3.4.0
+jview/Mapper;68340b2;update mapper 3.4.0
+M	pom.xml
+A	readme.txt
+A	src/main/java/tk/mybatis/mapper/MapperException.java
+M	src/main/java/tk/mybatis/mapper/common/ExampleMapper.java
+A	src/main/java/tk/mybatis/mapper/common/IdsMapper.java
+M	src/main/java/tk/mybatis/mapper/common/MapperMy.java
+M	src/main/java/tk/mybatis/mapper/common/MySqlMapper.java
+M	src/main/java/tk/mybatis/mapper/common/base/BaseSelectMapper.java
+M	src/main/java/tk/mybatis/mapper/common/base/BaseUpdateMapper.java
+M	src/main/java/tk/mybatis/mapper/common/base/insert/InsertMapper.java
+A	src/main/java/tk/mybatis/mapper/common/base/select/ExistsWithPrimaryKeyMapper.java
+M	src/main/java/tk/mybatis/mapper/common/base/select/SelectCountMapper.java
+M	src/main/java/tk/mybatis/mapper/common/base/update/UpdateByPrimaryKeyMapper.java
+M	src/main/java/tk/mybatis/mapper/common/base/update/UpdateByPrimaryKeySelectiveMapper.java
+M	src/main/java/tk/mybatis/mapper/common/condition/UpdateByConditionMapper.java
+M	src/main/java/tk/mybatis/mapper/common/condition/UpdateByConditionSelectiveMapper.java
+M	src/main/java/tk/mybatis/mapper/common/example/UpdateByExampleMapper.java
+M	src/main/java/tk/mybatis/mapper/common/example/UpdateByExampleSelectiveMapper.java
+A	src/main/java/tk/mybatis/mapper/common/ids/DeleteByIdsMapper.java
+A	src/main/java/tk/mybatis/mapper/common/ids/SelectByIdsMapper.java
+M	src/main/java/tk/mybatis/mapper/common/special/InsertListMapper.java
+M	src/main/java/tk/mybatis/mapper/common/special/InsertUseGeneratedKeysMapper.java
+M	src/main/java/tk/mybatis/mapper/entity/Config.java
+M	src/main/java/tk/mybatis/mapper/entity/EntityTable.java
+M	src/main/java/tk/mybatis/mapper/entity/Example.java
+M	src/main/java/tk/mybatis/mapper/generator/MapperCommentGenerator.java
+M	src/main/java/tk/mybatis/mapper/generator/MapperPlugin.java
+A	src/main/java/tk/mybatis/mapper/generator/TkMyBatis3Impl.java
+A	src/main/java/tk/mybatis/mapper/generator/TkMyBatis3SimpleImpl.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/EntityHelper.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/FieldHelper.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/MapperHelper.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/MapperTemplate.java
+A	src/main/java/tk/mybatis/mapper/mapperhelper/SelectKeyGenerator.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java
+M	src/main/java/tk/mybatis/mapper/provider/ExampleProvider.java
+A	src/main/java/tk/mybatis/mapper/provider/IdsProvider.java
+M	src/main/java/tk/mybatis/mapper/provider/SpecialProvider.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseSelectProvider.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseUpdateProvider.java
+M	src/main/java/tk/mybatis/mapper/util/OGNL.java
+A	src/main/java/tk/mybatis/mapper/util/SimpleTypeUtil.java
+M	src/main/java/tk/mybatis/mapper/util/StringUtil.java
+M	src/main/java/tk/mybatis/spring/mapper/MapperScannerConfigurer.java
+A	src/test/java/tk/mybatis/mapper/helper/CamelCaseTest.java
+M	src/test/java/tk/mybatis/mapper/mapper/CountryMapper.java
+M	src/test/java/tk/mybatis/mapper/mapper/MybatisHelper.java
+M	src/test/java/tk/mybatis/mapper/model/Country.java
+M	src/test/java/tk/mybatis/mapper/model/Country2.java
+M	src/test/java/tk/mybatis/mapper/model/UserInfoAble.java
+A	src/test/java/tk/mybatis/mapper/model/UserParent.java
+A	src/test/java/tk/mybatis/mapper/test/country/TestExistsWithPrimaryKey.java
+M	src/test/java/tk/mybatis/mapper/test/country2/TestInsert.java
+M	src/test/java/tk/mybatis/mapper/test/country2/TestInsertSelective.java
+M	src/test/java/tk/mybatis/mapper/test/example/TestSelectByExample.java
+M	src/test/java/tk/mybatis/mapper/test/example/TestSelectCountByExample.java
+A	src/test/java/tk/mybatis/mapper/test/ids/TestIds.java
+M	src/test/java/tk/mybatis/mapper/test/mysql/TestMysql.java
+M	src/test/resources/generator/generatorConfig.xml
+
+jview/Mapper;0826ade;update
+M	src/main/java/tk/mybatis/mapper/common/base/BaseUpdateMapper.java
+M	src/main/java/tk/mybatis/mapper/common/base/insert/InsertMapper.java
+M	src/main/java/tk/mybatis/mapper/common/base/select/SelectCountMapper.java
+D	src/main/java/tk/mybatis/mapper/common/base/update/UpdateSeqIdMapper.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseSelectProvider.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseUpdateProvider.java
+
+jview/Mapper;e22e20e;updateSqlId
+M	src/main/java/tk/mybatis/mapper/common/base/update/UpdateSeqIdMapper.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseUpdateProvider.java
+
+jview/Mapper;954cac2;update
+M	src/main/java/tk/mybatis/mapper/common/base/update/UpdateSeqIdMapper.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseUpdateProvider.java
+
+jview/Mapper;10b0630;nextSqlId
+M	src/main/java/tk/mybatis/mapper/common/base/BaseUpdateMapper.java
+M	src/main/java/tk/mybatis/mapper/common/base/select/SelectCountMapper.java
+A	src/main/java/tk/mybatis/mapper/common/base/update/UpdateSeqIdMapper.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseSelectProvider.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseUpdateProvider.java
+
+jview/Mapper;30c994c;nextSeqId
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/common/base/select/SelectCountMapper.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseSelectProvider.java
+
+jview/Mapper;e1b9328;3.2.22
+M	pom.xml
+
+jview/Mapper;fdc362a;update
+M	src/main/java/tk/mybatis/mapper/common/example/SelectMaxModifyDateByExampleMapper.java
+M	src/main/java/tk/mybatis/mapper/common/special/InsertListMapper.java
+M	src/main/java/tk/mybatis/mapper/provider/SpecialProvider.java
+
+jview/Mapper;11af66b;getAllProperties
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java
+M	src/main/java/tk/mybatis/mapper/provider/SpecialProvider.java
+
+jview/Mapper;bf2447f;update
+M	src/main/java/tk/mybatis/mapper/provider/SpecialProvider.java
+
+jview/Mapper;b94baa9;insertList
+M	src/main/java/tk/mybatis/mapper/common/Mapper.java
+M	src/main/java/tk/mybatis/mapper/provider/SpecialProvider.java
+
+jview/Mapper;617cde3;MySqlMapper
+M	src/main/java/tk/mybatis/mapper/common/Mapper.java
+
+jview/Mapper;78af0f3;version
+M	pom.xml
+M	src/test/java/tk/mybatis/mapper/test/mysql/TestMysql.java
+
+jview/Mapper;f1d2dde;support batch update updateListById updateListByIdSelective
+A	src/main/java/tk/mybatis/mapper/common/MapperMy.java
+M	src/main/java/tk/mybatis/mapper/common/MySqlMapper.java
+A	src/main/java/tk/mybatis/mapper/common/special/UpdateListByIdMapper.java
+A	src/main/java/tk/mybatis/mapper/common/special/UpdateListByIdSelectiveMapper.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/MapperHelper.java
+M	src/main/java/tk/mybatis/mapper/provider/SpecialProvider.java
+
+jview/Mapper;d7bdbd9;Merge branch 'master' of https://github.com/jview/Mapper
+jview/Mapper;b45419c;support SelectMaxModifyDate
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/common/ExampleMapper.java
+A	src/main/java/tk/mybatis/mapper/common/example/SelectMaxModifyDateByExampleMapper.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java
+M	src/main/java/tk/mybatis/mapper/provider/ExampleProvider.java
+
+jview/Mapper;7a693b4;support SelectMaxModifyDate
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/common/ExampleMapper.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java
+M	src/main/java/tk/mybatis/mapper/provider/ExampleProvider.java
+
+jview/Mapper;7775528;Merge branch 'master' of https://github.com/jview/Mapper
+jview/Mapper;7aad59e;support selectSeqId
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/common/base/select/SelectCountMapper.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/MapperTemplate.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseSelectProvider.java
+
+jview/Mapper;67f7e8f;support selectSeqId
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/common/base/select/SelectCountMapper.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/MapperTemplate.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseSelectProvider.java
+
+jview/Mapper;afa56fc;selectMaxCid
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/common/base/select/SelectCountMapper.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseSelectProvider.java
+
+jview/Mapper;ba688a8;update
+M	pom.xml
+M	src/main/java/tk/mybatis/spring/mapper/MapperScannerConfigurer.java
+
+jview/Mapper;01dc5c8;getAllColumns
+M	src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java
+
+jview/Mapper;8bfd5dd;update log
+M	src/main/java/tk/mybatis/mapper/mapperhelper/EntityHelper.java
+
+jview/Mapper;11bc279;update version
+M	pom.xml
+
+jview/Mapper;750fcc8;getColumn filter log
+M	src/main/java/tk/mybatis/mapper/mapperhelper/EntityHelper.java
+
+jview/Mapper;425c956;support mysql sequence(select _nextval('_tf_config_cid_seq')) support ignore PO property for all table column(propertyIgnoreAll) support ignore PO property for some config table column (propertyIgnore)
+M	pom.xml
+M	src/main/java/tk/mybatis/mapper/mapperhelper/EntityHelper.java
+M	src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java
+M	src/main/java/tk/mybatis/mapper/provider/base/BaseInsertProvider.java
+
+jview/Mapper;8c1c275;update
+M	pom.xml
+
+jview/Mapper;9ccf77c;support ignoreColumnSet
+M	src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java
+M	src/main/java/tk/mybatis/spring/mapper/MapperScannerConfigurer.java

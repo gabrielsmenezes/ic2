@@ -1,0 +1,11 @@
+mirego/SilkySignature;eafecd6;- Added a setter for the scale factor - Added onSignatureLoaded to the interface. It's called when using setSignatureBitmap
+M	app/build.gradle
+M	app/src/main/java/com/williamww/silkysignaturedemo/MainActivity.java
+M	silky-signature/src/main/java/com/williamww/silkysignature/views/SignaturePad.java
+
+mirego/SilkySignature;bf8c214;Added a setter + attr for the scaleTofit type use in setSignatureBitmap. If you use Matrix.ScaleToFit.Fill, the signature will be scaled up when the orientation change from portrait to landscape. The signaturePad should(must) have a fix ratio.
+M	app/build.gradle
+M	build.gradle
+M	silky-signature/build.gradle
+M	silky-signature/src/main/java/com/williamww/silkysignature/views/SignaturePad.java
+M	silky-signature/src/main/res/values/attrs.xml

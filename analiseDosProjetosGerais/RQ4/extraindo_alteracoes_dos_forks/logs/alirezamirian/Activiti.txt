@@ -1,0 +1,19 @@
+alirezamirian/Activiti;6552b1095;chore(BpmnJsonConverter): don't use * import
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BaseBpmnJsonConverter.java
+
+alirezamirian/Activiti;fbf3d8c2f;fix(BpmnJsonConverter): don't apply readShapeDI logic on Associations
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BpmnJsonConverter.java
+
+alirezamirian/Activiti;c615eb4c7;feat(BpmnJsonConverter): serialize and deserialize isForCompensation property of activity
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/constants/StencilConstants.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BaseBpmnJsonConverter.java
+
+alirezamirian/Activiti;674ae2dfa;chore(BpmnJsonConverter): add STENCIL_EVENT_THROW_COMPENSATION to DI_CIRCLES
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BpmnJsonConverter.java
+
+alirezamirian/Activiti;70899997d;feat(BpmnJsonConverter): add support for intermediate compensation throw event
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/constants/StencilConstants.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/BaseBpmnJsonConverter.java
+M	modules/activiti-json-converter/src/main/java/org/activiti/editor/language/json/converter/ThrowEventJsonConverter.java
+A	modules/activiti-json-converter/src/test/java/org/activiti/editor/language/ThrowCompensationEventTest.java
+A	modules/activiti-json-converter/src/test/resources/test.throwevent.json

@@ -1,0 +1,639 @@
+cdeneux/Activiti;6a12687eb;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;4049b5bc9;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;642b82326;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;85727c1c7;ACT-4206: Webservice endpoint address should be customizable
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWebServiceClient.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/AbstratWebServiceTask.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceTaskTest.java
+A	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/WebServiceTaskTest.testWebServiceInvocationWithEndpointAddressConfigured.bpmn20.xml
+A	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/webservicemock.wsdl
+M	modules/activiti-engine/src/main/java/org/activiti/engine/ProcessEngineConfiguration.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/WebServiceActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/Operation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/OperationImplementation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/webservice/SyncWebServiceClient.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/webservice/WSOperation.java
+
+cdeneux/Activiti;b2e7b0979;ACT-4202
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWebServiceClient.java
+A	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/AbstratWebServiceTask.java
+A	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/MaxValueReachedFault.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WSDLImporterTest.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceImportTest.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceMock.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceMockImpl.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceTaskTest.java
+A	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/WebServiceTaskTest.testFaultManagement.bpmn20.xml
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counter.wsdl
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counterSchema.xsd
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counterWithImport.wsdl
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/subdir/counterWithImport.wsdl
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/WebServiceActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/Operation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/OperationImplementation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/webservice/WSOperation.java
+
+cdeneux/Activiti;fdae9773d;Merge branch 'master' of https://github.com/cdeneux/Activiti
+cdeneux/Activiti;18a9764fa;Revert "ACT-4202"
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWebServiceClient.java
+D	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/AbstratWebServiceTask.java
+D	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/MaxValueReachedFault.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WSDLImporterTest.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceImportTest.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceMock.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceMockImpl.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceTaskTest.java
+D	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/WebServiceTaskTest.testFaultManagement.bpmn20.xml
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counter.wsdl
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counterSchema.xsd
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counterWithImport.wsdl
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/subdir/counterWithImport.wsdl
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/WebServiceActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/Operation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/OperationImplementation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/webservice/WSOperation.java
+
+cdeneux/Activiti;01b117c2e;ACT-4202
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWebServiceClient.java
+A	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/AbstratWebServiceTask.java
+A	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/MaxValueReachedFault.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WSDLImporterTest.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceImportTest.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceMock.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceMockImpl.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceTaskTest.java
+A	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/WebServiceTaskTest.testFaultManagement.bpmn20.xml
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counter.wsdl
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counterSchema.xsd
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counterWithImport.wsdl
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/subdir/counterWithImport.wsdl
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/WebServiceActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/Operation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/OperationImplementation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/webservice/WSOperation.java
+
+cdeneux/Activiti;c49e7c691;Revert "Add capability to extend Activiti with our own "importer"."
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWSDLImporter.java
+D	modules/activiti-cxf/src/main/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParser.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/XMLImporter.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/BpmnParseTest.java
+D	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/implementation/CustomImporter.java
+D	modules/activiti-engine/src/test/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+D	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/parse/BpmnParseTest.testParseWithImport.bpmn20.xml
+
+cdeneux/Activiti;4629d5cd2;Fix previous merge
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+
+cdeneux/Activiti;3f1072f43;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+cdeneux/Activiti;9894fad73;[maven-release-plugin] prepare release 5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;9756d30d8;[maven-release-plugin] rollback the release of activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;dc0c1d71a;[maven-release-plugin] prepare release activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;da7573ea8;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+cdeneux/Activiti;ba05dcf87;[maven-release-plugin] prepare release activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;1be428154;[maven-release-plugin] prepare release 5.18.0-PETALS-0
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;b1304d999;[maven-release-plugin] Rollback
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;e41225cf7;Fix conflict resolution from previous merges
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;a6bdb12b1;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;996a1f864;Rework XML parsing of WSDLImporter using the J2SE standard way instead of using directly Xerces classes. Caution: this commit remove the dependency on Xerces, the DOM parser of the J2SE will be used. If Xerces is required, just re-add it as dependency in the POM.
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;74728f407;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;9b90268db;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;152a52885;ACT-2164: The converter BPMN to XML does not manage correctly /definitions/message/@itemRef
+M	modules/activiti-bpmn-converter/src/test/resources/message.bpmn
+
+cdeneux/Activiti;5210ab1ba;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+cdeneux/Activiti;bdfc80969;[maven-release-plugin] prepare release 5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;ef0c85bd5;[maven-release-plugin] rollback the release of activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;2c073cd66;[maven-release-plugin] prepare release activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;a056bfabe;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+cdeneux/Activiti;f902d13d4;[maven-release-plugin] prepare release activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;1de8f7127;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+cdeneux/Activiti;3136a9f56;[maven-release-plugin] prepare release 5.18.0-PETALS-0
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;317981579;Try using the lastest version of maven-release-plugin
+M	pom.xml
+
+cdeneux/Activiti;1bced27ad;Adjust SCM URL of the Git repo for release
+M	pom.xml
+
+cdeneux/Activiti;c48acae03;Adjust SCM URL of the Git repo
+M	pom.xml
+
+cdeneux/Activiti;047d73ec9;Adjust SCM URL of the Git repo
+M	pom.xml
+
+cdeneux/Activiti;13a15e666;[maven-release-plugin] Rollback
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;57461b746;[maven-release-plugin] prepare for next development iteration
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;bce88a716;Fix a unit test about event PROCESS_STARTED
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/event/ExecutionEventsTest.java
+
+cdeneux/Activiti;5b41b85e3;Add activiti-cxf to the Maven reactor to have one Jenkins job to build our Activiti
+M	pom.xml
+
+cdeneux/Activiti;372ed12ce;Create our own Activiti artifacts to be able to release the Petals SE Activiti without waiting an official release. The official release MUST be used when all our pull requests will be merged.
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;82ed4570c;ACT-3999: ClassCastException when importing a WSDL
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/basic-elements-in-types.wsdl
+
+cdeneux/Activiti;b99222346;Fix conflict resolution from previous merges
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;88d9e3286;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;6664832ae;Rework XML parsing of WSDLImporter using the J2SE standard way instead of using directly Xerces classes. Caution: this commit remove the dependency on Xerces, the DOM parser of the J2SE will be used. If Xerces is required, just re-add it as dependency in the POM.
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;ab52c2d1c;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;e05e18025;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWSDLImporter.java
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+A	modules/activiti-cxf/src/main/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParser.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/XMLImporter.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/BpmnParseTest.java
+A	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/implementation/CustomImporter.java
+A	modules/activiti-engine/src/test/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/parse/BpmnParseTest.testParseWithImport.bpmn20.xml
+
+cdeneux/Activiti;9ee9969a2;ACT-2164: The converter BPMN to XML does not manage correctly /definitions/message/@itemRef
+M	modules/activiti-bpmn-converter/src/test/java/org/activiti/editor/language/xml/MessageConverterTest.java
+M	modules/activiti-bpmn-converter/src/test/resources/message.bpmn
+
+cdeneux/Activiti;f62ea6f3d;Merge pull request #2 from cdeneux/revert-1-ACT-4202
+cdeneux/Activiti;f058004b4;Revert "ACT-4202"
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWebServiceClient.java
+D	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/AbstratWebServiceTask.java
+D	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/MaxValueReachedFault.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WSDLImporterTest.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceImportTest.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceMock.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceMockImpl.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceTaskTest.java
+D	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/WebServiceTaskTest.testFaultManagement.bpmn20.xml
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counter.wsdl
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counterSchema.xsd
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counterWithImport.wsdl
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/subdir/counterWithImport.wsdl
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/WebServiceActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/Operation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/OperationImplementation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/webservice/WSOperation.java
+
+cdeneux/Activiti;75c7f4636;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;dd2db301e;Merge pull request #1 from cdeneux/ACT-4202
+cdeneux/Activiti;b49877146;ACT-4202
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWebServiceClient.java
+A	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/AbstratWebServiceTask.java
+A	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/MaxValueReachedFault.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WSDLImporterTest.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceImportTest.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceMock.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceMockImpl.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceTaskTest.java
+A	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/WebServiceTaskTest.testFaultManagement.bpmn20.xml
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counter.wsdl
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counterSchema.xsd
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/counterWithImport.wsdl
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/subdir/counterWithImport.wsdl
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/WebServiceActivityBehavior.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/Operation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/webservice/OperationImplementation.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/webservice/WSOperation.java
+
+cdeneux/Activiti;953e1f1c8;Revert "Add capability to extend Activiti with our own "importer"."
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWSDLImporter.java
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+D	modules/activiti-cxf/src/main/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParser.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/XMLImporter.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/BpmnParseTest.java
+D	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/implementation/CustomImporter.java
+D	modules/activiti-engine/src/test/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+D	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/parse/BpmnParseTest.testParseWithImport.bpmn20.xml
+
+cdeneux/Activiti;0bf95a6bb;Fix previous merge
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WSDLImporterTest.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+
+cdeneux/Activiti;611d6ccd7;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;9204b8b69;Merge branch 'master' of https://github.com/cdeneux/Activiti
+cdeneux/Activiti;3b1d50429;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+cdeneux/Activiti;206c36113;[maven-release-plugin] prepare release 5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;19f179279;[maven-release-plugin] rollback the release of activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;dbbae77fc;[maven-release-plugin] prepare release activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;b4c042e2c;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+cdeneux/Activiti;2c45ba747;[maven-release-plugin] prepare release activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;80db699a0;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+cdeneux/Activiti;44014c7e4;[maven-release-plugin] prepare release 5.18.0-PETALS-0
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;2a192793b;Try using the lastest version of maven-release-plugin
+M	pom.xml
+
+cdeneux/Activiti;361547c15;Adjust SCM URL of the Git repo for release
+M	pom.xml
+
+cdeneux/Activiti;918a2def9;Adjust SCM URL of the Git repo
+M	pom.xml
+
+cdeneux/Activiti;8fc72e831;Adjust SCM URL of the Git repo
+M	pom.xml
+
+cdeneux/Activiti;859796783;[maven-release-plugin] Rollback
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;6efc7d1a0;[maven-release-plugin] prepare for next development iteration
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;6e8b1908a;Fix a unit test about event PROCESS_STARTED
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/event/ExecutionEventsTest.java
+
+cdeneux/Activiti;0b6602629;Add activiti-cxf to the Maven reactor to have one Jenkins job to build our Activiti
+M	pom.xml
+
+cdeneux/Activiti;995221792;Create our own Activiti artifacts to be able to release the Petals SE Activiti without waiting an official release. The official release MUST be used when all our pull requests will be merged.
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;a076ef818;ACT-3999: ClassCastException when importing a WSDL
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/basic-elements-in-types.wsdl
+
+cdeneux/Activiti;dbeb7332d;Fix conflict resolution from previous merges
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;b799a981f;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;b023a4d3d;Rework XML parsing of WSDLImporter using the J2SE standard way instead of using directly Xerces classes. Caution: this commit remove the dependency on Xerces, the DOM parser of the J2SE will be used. If Xerces is required, just re-add it as dependency in the POM.
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;bd23cbef2;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;240a9baf8;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWSDLImporter.java
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+A	modules/activiti-cxf/src/main/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParser.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/XMLImporter.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/BpmnParseTest.java
+A	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/implementation/CustomImporter.java
+A	modules/activiti-engine/src/test/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/parse/BpmnParseTest.testParseWithImport.bpmn20.xml
+
+cdeneux/Activiti;9cce5af02;ACT-2164: The converter BPMN to XML does not manage correctly /definitions/message/@itemRef
+M	modules/activiti-bpmn-converter/src/test/java/org/activiti/editor/language/xml/MessageConverterTest.java
+M	modules/activiti-bpmn-converter/src/test/resources/message.bpmn
+
+cdeneux/Activiti;262749afe;[maven-release-plugin] prepare for next development iteration
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;c5ba21ffd;[maven-release-plugin] prepare release 5.18.0-PETALS-1
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;7e7a7f039;[maven-release-plugin] rollback the release of activiti-root-5.18.0-PETALS-1
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;a8d67f32d;[maven-release-plugin] prepare release activiti-root-5.18.0-PETALS-1
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;5cfab86ec;[maven-release-plugin] rollback the release of activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;c60a46a83;[maven-release-plugin] prepare for next development iteration
+M	pom.xml
+
+cdeneux/Activiti;b50b35e36;[maven-release-plugin] prepare release activiti-root-5.18.0-PETALS-1
+M	pom.xml
+
+cdeneux/Activiti;d8f4d1666;Merge remote-tracking branch 'origin/ACT-4012'
+cdeneux/Activiti;14fd23fc6;[maven-release-plugin] prepare for next development iteration
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;573cd1343;[maven-release-plugin] prepare release 5.18.0-PETALS-0
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;fc85cc07a;Try using the lastest version of maven-release-plugin
+M	pom.xml
+
+cdeneux/Activiti;c44e268ca;Adjust SCM URL of the Git repo for release
+M	pom.xml
+
+cdeneux/Activiti;3e7d2f2b4;Adjust SCM URL of the Git repo
+M	pom.xml
+
+cdeneux/Activiti;37d5920af;Adjust SCM URL of the Git repo
+M	pom.xml
+
+cdeneux/Activiti;70b53d164;[maven-release-plugin] Rollback
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;ce5c25367;[maven-release-plugin] prepare for next development iteration
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;4e19cf50d;Fix a unit test about event PROCESS_STARTED
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/event/ExecutionEventsTest.java
+
+cdeneux/Activiti;b059f057d;Add activiti-cxf to the Maven reactor to have one Jenkins job to build our Activiti
+M	pom.xml
+
+cdeneux/Activiti;c4724249f;Create our own Activiti artifacts to be able to release the Petals SE Activiti without waiting an official release. The official release MUST be used when all our pull requests will be merged.
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	pom.xml
+
+cdeneux/Activiti;b051eeb63;Merge branch 'ACT-4012'
+cdeneux/Activiti;c76890d5b;Fix a unit not included in ACT-4012
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/subdir/counterWithImport.wsdl
+
+cdeneux/Activiti;a987943e8;Merge branch 'ACT-4012'
+cdeneux/Activiti;c0042e638;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;82c4d4674;Merge branch 'ACT-4001'
+cdeneux/Activiti;fdf62adc4;Merge branch 'ACT-3999'
+cdeneux/Activiti;4becf0938;Fix WSDL and add an assertion about the WSDL url
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WSDLImporterTest.java
+M	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/basic-elements-in-types.wsdl
+
+cdeneux/Activiti;7efdf93c0;Merge branch 'ACT-3999'
+cdeneux/Activiti;ef9b1499d;ACT-3999: ClassCastException when importing a WSDL
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWSDLImporter.java
+M	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WSDLImporterTest.java
+A	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/basic-elements-in-types.wsdl
+
+cdeneux/Activiti;cabccc112;Merge remote-tracking branch 'origin/ACT-2173'
+cdeneux/Activiti;82fd6842d;Merge branch 'ACT-2173'
+cdeneux/Activiti;a3b869088;Merge branch 'ACT-3994'
+cdeneux/Activiti;f411d0a22;ACT-2173: Add support of import relative to the BPMN description
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWSDLImporter.java
+A	modules/activiti-cxf/src/test/java/org/activiti/engine/impl/webservice/WebServiceImportTest.java
+A	modules/activiti-cxf/src/test/resources/org/activiti/engine/impl/webservice/WebServiceImportTest.testImport.bpmn20.xml
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/deployer/BpmnDeployer.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+
+cdeneux/Activiti;640c3268d;Fix conflict resolution from previous merges
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;544a4538c;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;d446e22ae;ACT-2164: The converter BPMN to XML does not manage correctly /definitions/message/@itemRef
+M	modules/activiti-bpmn-converter/src/test/java/org/activiti/editor/language/xml/MessageConverterTest.java
+
+cdeneux/Activiti;264ed2517;Merge branch 'master' of https://github.com/cdeneux/Activiti
+cdeneux/Activiti;053604545;Rework XML parsing of WSDLImporter using the J2SE standard way instead of using directly Xerces classes. Caution: this commit remove the dependency on Xerces, the DOM parser of the J2SE will be used. If Xerces is required, just re-add it as dependency in the POM.
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;e047ca495;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWSDLImporter.java
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+A	modules/activiti-cxf/src/main/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParser.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/XMLImporter.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/BpmnParseTest.java
+A	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/implementation/CustomImporter.java
+A	modules/activiti-engine/src/test/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/parse/BpmnParseTest.testParseWithImport.bpmn20.xml
+
+cdeneux/Activiti;55c740c27;ACT-2164: The converter BPMN to XML does not manage correctly /definitions/message/@itemRef
+M	modules/activiti-bpmn-converter/src/test/java/org/activiti/editor/language/xml/MessageConverterTest.java
+M	modules/activiti-bpmn-converter/src/test/resources/message.bpmn
+
+cdeneux/Activiti;384ff8045;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;a05885456;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;258d0aa3d;Merge branch 'ACT-2168'
+cdeneux/Activiti;d6533fa81;ACT-2168: Standard XML preamble is missing on SOAP request sent
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWebServiceClient.java
+
+cdeneux/Activiti;ebbe787c6;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;40f118e5d;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;ad06d9e09;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;e21d71721;Rework XML parsing of WSDLImporter using the J2SE standard way instead of using directly Xerces classes. Caution: this commit remove the dependency on Xerces, the DOM parser of the J2SE will be used. If Xerces is required, just re-add it as dependency in the POM.
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+
+cdeneux/Activiti;09616ea3d;Add capability to extend Activiti with our own "importer".
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/CxfWSDLImporter.java
+M	modules/activiti-cxf/src/main/java/org/activiti/engine/impl/webservice/WSDLImporter.java
+A	modules/activiti-cxf/src/main/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParser.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/XMLImporter.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/BpmnParseTest.java
+A	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/parse/implementation/CustomImporter.java
+A	modules/activiti-engine/src/test/resources/META-INF/services/org.activiti.engine.impl.bpmn.parser.XMLImporter
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/parse/BpmnParseTest.testParseWithImport.bpmn20.xml
+
+cdeneux/Activiti;0fcce8e5e;Merge remote-tracking branch 'upstream/master'
+cdeneux/Activiti;55d858ec5;ACT-2164: The converter BPMN to XML does not manage correctly /definitions/message/@itemRef
+M	modules/activiti-bpmn-converter/src/main/java/org/activiti/bpmn/converter/export/SignalAndMessageDefinitionExport.java
+A	modules/activiti-bpmn-converter/src/test/java/org/activiti/editor/language/xml/MessageConverterTest.java
+A	modules/activiti-bpmn-converter/src/test/resources/message.bpmn

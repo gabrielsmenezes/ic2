@@ -1,0 +1,557 @@
+GravitLauncher/sentry-java;61e5bc9b;Final fix for sentry.
+M	src/main/java/io/sentry/marshaller/json/JsonMarshaller.java
+
+GravitLauncher/sentry-java;433cdb0b;Big refactor.
+M	src/main/java/io/sentry/DefaultSentryClientFactory.java
+M	src/main/java/io/sentry/MultiThreadContext.java
+M	src/main/java/io/sentry/Sentry.java
+M	src/main/java/io/sentry/SentryClient.java
+M	src/main/java/io/sentry/SentryClientFactory.java
+M	src/main/java/io/sentry/SentryUncaughtExceptionHandler.java
+M	src/main/java/io/sentry/buffer/Buffer.java
+M	src/main/java/io/sentry/buffer/DiskBuffer.java
+M	src/main/java/io/sentry/config/JndiLookup.java
+M	src/main/java/io/sentry/config/Lookup.java
+M	src/main/java/io/sentry/connection/AbstractConnection.java
+M	src/main/java/io/sentry/connection/AsyncConnection.java
+M	src/main/java/io/sentry/connection/BufferedConnection.java
+M	src/main/java/io/sentry/connection/Connection.java
+M	src/main/java/io/sentry/connection/ConnectionException.java
+M	src/main/java/io/sentry/connection/EventSampler.java
+M	src/main/java/io/sentry/connection/EventSendCallback.java
+M	src/main/java/io/sentry/connection/HttpConnection.java
+M	src/main/java/io/sentry/connection/LockdownManager.java
+M	src/main/java/io/sentry/connection/NoopConnection.java
+M	src/main/java/io/sentry/connection/OutputStreamConnection.java
+M	src/main/java/io/sentry/connection/ProxyAuthenticator.java
+M	src/main/java/io/sentry/connection/RandomEventSampler.java
+M	src/main/java/io/sentry/connection/TooManyRequestsException.java
+M	src/main/java/io/sentry/context/Context.java
+M	src/main/java/io/sentry/context/ContextManager.java
+M	src/main/java/io/sentry/context/SingletonContextManager.java
+M	src/main/java/io/sentry/context/ThreadLocalContextManager.java
+M	src/main/java/io/sentry/dsn/Dsn.java
+M	src/main/java/io/sentry/dsn/InvalidDsnException.java
+M	src/main/java/io/sentry/environment/SentryEnvironment.java
+M	src/main/java/io/sentry/event/Breadcrumb.java
+M	src/main/java/io/sentry/event/BreadcrumbBuilder.java
+M	src/main/java/io/sentry/event/Event.java
+M	src/main/java/io/sentry/event/EventBuilder.java
+M	src/main/java/io/sentry/event/Sdk.java
+M	src/main/java/io/sentry/event/User.java
+M	src/main/java/io/sentry/event/UserBuilder.java
+M	src/main/java/io/sentry/event/helper/ContextBuilderHelper.java
+M	src/main/java/io/sentry/event/helper/EventBuilderHelper.java
+M	src/main/java/io/sentry/event/helper/ShouldSendEventCallback.java
+M	src/main/java/io/sentry/event/interfaces/DebugMetaInterface.java
+M	src/main/java/io/sentry/event/interfaces/ExceptionInterface.java
+M	src/main/java/io/sentry/event/interfaces/HttpInterface.java
+M	src/main/java/io/sentry/event/interfaces/MessageInterface.java
+M	src/main/java/io/sentry/event/interfaces/SentryException.java
+M	src/main/java/io/sentry/event/interfaces/SentryInterface.java
+M	src/main/java/io/sentry/event/interfaces/SentryStackTraceElement.java
+M	src/main/java/io/sentry/event/interfaces/StackTraceInterface.java
+M	src/main/java/io/sentry/event/interfaces/UserInterface.java
+M	src/main/java/io/sentry/jvmti/Frame.java
+M	src/main/java/io/sentry/jvmti/FrameCache.java
+M	src/main/java/io/sentry/marshaller/Marshaller.java
+M	src/main/java/io/sentry/marshaller/json/DebugMetaInterfaceBinding.java
+M	src/main/java/io/sentry/marshaller/json/ExceptionInterfaceBinding.java
+M	src/main/java/io/sentry/marshaller/json/HttpInterfaceBinding.java
+M	src/main/java/io/sentry/marshaller/json/InterfaceBinding.java
+M	src/main/java/io/sentry/marshaller/json/JsonMarshaller.java
+M	src/main/java/io/sentry/marshaller/json/MessageInterfaceBinding.java
+M	src/main/java/io/sentry/marshaller/json/SentryJsonGenerator.java
+M	src/main/java/io/sentry/marshaller/json/StackTraceInterfaceBinding.java
+M	src/main/java/io/sentry/marshaller/json/UserInterfaceBinding.java
+M	src/main/java/io/sentry/time/Clock.java
+M	src/main/java/io/sentry/time/FixedClock.java
+M	src/main/java/io/sentry/time/SystemClock.java
+M	src/main/java/io/sentry/util/CircularFifoQueue.java
+M	src/main/java/io/sentry/util/Util.java
+
+GravitLauncher/sentry-java;f1002de6;Final fixes.
+M	src/main/java/io/sentry/marshaller/json/SentryJsonGenerator.java
+M	src/main/java/io/sentry/marshaller/json/StackTraceInterfaceBinding.java
+
+GravitLauncher/sentry-java;04fabea2;Fully removed slf4j dep.
+M	build.gradle
+D	src/main/java-templates/io/sentry/environment/Version.java
+M	src/main/java/io/sentry/marshaller/json/JsonMarshaller.java
+M	src/main/java/io/sentry/marshaller/json/SentryJsonGenerator.java
+
+GravitLauncher/sentry-java;a298da94;Start moving to non-dep variant.
+M	src/main/java/io/sentry/DefaultSentryClientFactory.java
+A	src/main/java/io/sentry/MultiThreadContext.java
+M	src/main/java/io/sentry/Sentry.java
+M	src/main/java/io/sentry/SentryClient.java
+M	src/main/java/io/sentry/SentryClientFactory.java
+M	src/main/java/io/sentry/SentryUncaughtExceptionHandler.java
+M	src/main/java/io/sentry/buffer/DiskBuffer.java
+M	src/main/java/io/sentry/config/JndiLookup.java
+M	src/main/java/io/sentry/config/Lookup.java
+M	src/main/java/io/sentry/connection/AbstractConnection.java
+M	src/main/java/io/sentry/connection/AsyncConnection.java
+M	src/main/java/io/sentry/connection/BufferedConnection.java
+M	src/main/java/io/sentry/connection/ConnectionException.java
+M	src/main/java/io/sentry/connection/HttpConnection.java
+M	src/main/java/io/sentry/connection/LockedDownException.java
+M	src/main/java/io/sentry/connection/TooManyRequestsException.java
+M	src/main/java/io/sentry/context/Context.java
+M	src/main/java/io/sentry/dsn/Dsn.java
+M	src/main/java/io/sentry/dsn/InvalidDsnException.java
+M	src/main/java/io/sentry/environment/SentryEnvironment.java
+M	src/main/java/io/sentry/event/Breadcrumb.java
+M	src/main/java/io/sentry/event/Event.java
+M	src/main/java/io/sentry/event/EventBuilder.java
+M	src/main/java/io/sentry/event/Sdk.java
+M	src/main/java/io/sentry/event/User.java
+D	src/main/java/io/sentry/event/helper/BasicRemoteAddressResolver.java
+D	src/main/java/io/sentry/event/helper/ForwardedAddressResolver.java
+D	src/main/java/io/sentry/event/helper/HttpEventBuilderHelper.java
+D	src/main/java/io/sentry/event/helper/RemoteAddressResolver.java
+M	src/main/java/io/sentry/event/interfaces/DebugMetaInterface.java
+M	src/main/java/io/sentry/event/interfaces/ExceptionInterface.java
+M	src/main/java/io/sentry/event/interfaces/HttpInterface.java
+M	src/main/java/io/sentry/event/interfaces/MessageInterface.java
+M	src/main/java/io/sentry/event/interfaces/SentryException.java
+M	src/main/java/io/sentry/event/interfaces/SentryStackTraceElement.java
+M	src/main/java/io/sentry/event/interfaces/StackTraceInterface.java
+M	src/main/java/io/sentry/event/interfaces/UserInterface.java
+D	src/main/java/io/sentry/jul/SentryHandler.java
+D	src/main/java/io/sentry/servlet/SentryServletContainerInitializer.java
+D	src/main/java/io/sentry/servlet/SentryServletRequestListener.java
+D	src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer
+D	src/main/resources/META-INF/web-fragment.xml
+D	src/test/java/io/sentry/BaseIT.java
+D	src/test/java/io/sentry/BaseTest.java
+D	src/test/java/io/sentry/ContextTest.java
+D	src/test/java/io/sentry/DefaultSentryClientFactoryTest.java
+D	src/test/java/io/sentry/SentryClientFactoryTest.java
+D	src/test/java/io/sentry/SentryClientTest.java
+D	src/test/java/io/sentry/SentryIT.java
+D	src/test/java/io/sentry/SentryTest.java
+D	src/test/java/io/sentry/SentryUncaughtExceptionHandlerTest.java
+D	src/test/java/io/sentry/TestFactory.java
+D	src/test/java/io/sentry/buffer/DiskBufferTest.java
+D	src/test/java/io/sentry/connection/AbstractConnectionTest.java
+D	src/test/java/io/sentry/connection/AsyncConnectionTest.java
+D	src/test/java/io/sentry/connection/BufferedConnectionTest.java
+D	src/test/java/io/sentry/connection/HttpConnectionTest.java
+D	src/test/java/io/sentry/connection/OutputStreamConnectionTest.java
+D	src/test/java/io/sentry/connection/RandomEventSamplerTest.java
+D	src/test/java/io/sentry/dsn/DsnTest.java
+D	src/test/java/io/sentry/dsn/InitialContextFactory.java
+D	src/test/java/io/sentry/environment/SentryEnvironmentTest.java
+D	src/test/java/io/sentry/event/BreadcrumbTest.java
+D	src/test/java/io/sentry/event/EventBuilderHostnameCacheTest.java
+D	src/test/java/io/sentry/event/EventBuilderTest.java
+D	src/test/java/io/sentry/event/EventTest.java
+D	src/test/java/io/sentry/event/UserTest.java
+D	src/test/java/io/sentry/event/helper/ContextBuilderHelperTest.java
+D	src/test/java/io/sentry/event/helper/HttpEventBuilderHelperTest.java
+D	src/test/java/io/sentry/event/interfaces/DebugMetaInterfaceTest.java
+D	src/test/java/io/sentry/event/interfaces/HttpInterfaceTest.java
+D	src/test/java/io/sentry/event/interfaces/MessageInterfaceTest.java
+D	src/test/java/io/sentry/event/interfaces/SentryExceptionTest.java
+D	src/test/java/io/sentry/event/interfaces/SentryStackTraceElementTest.java
+D	src/test/java/io/sentry/event/interfaces/StackTraceInterfaceTest.java
+D	src/test/java/io/sentry/event/interfaces/UserInterfaceTest.java
+D	src/test/java/io/sentry/helper/RemoteAddressResolverTest.java
+D	src/test/java/io/sentry/jul/SentryHandlerEventBuildingTest.java
+D	src/test/java/io/sentry/jul/SentryHandlerIT.java
+D	src/test/java/io/sentry/jvmti/FrameCacheTest.java
+D	src/test/java/io/sentry/marshaller/UncloseableOutputStreamTest.java
+D	src/test/java/io/sentry/marshaller/json/DebugMetaInterfaceBindingTest.java
+D	src/test/java/io/sentry/marshaller/json/ExceptionInterfaceBindingTest.java
+D	src/test/java/io/sentry/marshaller/json/HttpInterfaceBindingTest.java
+D	src/test/java/io/sentry/marshaller/json/JsonComparisonUtil.java
+D	src/test/java/io/sentry/marshaller/json/JsonMarshallerTest.java
+D	src/test/java/io/sentry/marshaller/json/MessageInterfaceBindingTest.java
+D	src/test/java/io/sentry/marshaller/json/SentryJsonGeneratorTest.java
+D	src/test/java/io/sentry/marshaller/json/StackTraceInterfaceBindingTest.java
+D	src/test/java/io/sentry/marshaller/json/UserInterfaceBindingTest.java
+D	src/test/java/io/sentry/servlet/SentryServletContainerInitializerTest.java
+D	src/test/java/io/sentry/servlet/SentryServletRequestListenerTest.java
+D	src/test/java/io/sentry/time/ClockTest.java
+D	src/test/java/io/sentry/unmarshaller/JsonDecoder.java
+D	src/test/java/io/sentry/unmarshaller/JsonUnmarshaller.java
+D	src/test/java/io/sentry/unmarshaller/Unmarshaller.java
+D	src/test/java/io/sentry/unmarshaller/event/UnmarshalledEvent.java
+D	src/test/java/io/sentry/unmarshaller/event/interfaces/ExceptionInterface.java
+D	src/test/java/io/sentry/unmarshaller/event/interfaces/MessageInterface.java
+D	src/test/java/io/sentry/unmarshaller/event/interfaces/StackTraceInterface.java
+D	src/test/resources/io/sentry/marshaller/json/Exception1.json
+D	src/test/resources/io/sentry/marshaller/json/Exception2.json
+D	src/test/resources/io/sentry/marshaller/json/Exception3.json
+D	src/test/resources/io/sentry/marshaller/json/Http1.json
+D	src/test/resources/io/sentry/marshaller/json/Http2.json
+D	src/test/resources/io/sentry/marshaller/json/Message1.json
+D	src/test/resources/io/sentry/marshaller/json/Proguard.json
+D	src/test/resources/io/sentry/marshaller/json/SentryStackTrace.json
+D	src/test/resources/io/sentry/marshaller/json/StackTrace1.json
+D	src/test/resources/io/sentry/marshaller/json/StackTrace2.json
+D	src/test/resources/io/sentry/marshaller/json/StackTrace3.json
+D	src/test/resources/io/sentry/marshaller/json/StackTraceBlacklist.json
+D	src/test/resources/io/sentry/marshaller/json/User1.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testBreadcrumbs.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testChecksum.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testCompression.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testContexts.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testCulprit.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testDist.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testEnvironment.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testEventId.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraArray.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraBoolean.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraCustomValue.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraIterable.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraMap.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNull.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNullKeyMap.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNumber.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraObjectKeyMap.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraRecursiveArray.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraRecursiveMap.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraString.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testFingerprint.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testInterfaceBinding.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelDebug.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelError.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelFatal.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelInfo.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelWarning.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLogger.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testMessage.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testPlatform.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testRelease.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testSdk.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testServerName.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTags.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTimestamp.json
+D	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTransaction.json
+D	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testByte.json
+D	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testByteArray.json
+D	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testCycle.json
+D	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testIntArray.json
+D	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testIterable.json
+D	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testMap.json
+D	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testNull.json
+D	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testObjectArray.json
+D	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testPath.json
+D	src/test/resources/jndi.properties
+D	src/test/resources/logging-integration.properties
+D	src/test/resources/logging-test.properties
+D	src/test/resources/sentry-build.properties
+
+GravitLauncher/sentry-java;1300fe73;Fixed some gradle stuff.
+A	gradle.properties
+A	settings.gradle
+
+GravitLauncher/sentry-java;8d850b97;Gradlified build.
+A	build.gradle
+D	pom.xml
+
+GravitLauncher/sentry-java;f06c9065;Remove all unused modules.
+D	.ci/agent-build.sh
+D	.ci/agent-deploy.sh
+D	.ci/agent-install.sh
+D	.ci/agent-upload-release.py
+D	.gitmodules
+D	.travis.yml
+D	.travis/addServer.py
+D	Makefile
+R100	sentry/README.md	README_CORE.md
+D	agent/.gitignore
+D	agent/CMakeLists.txt
+D	agent/LICENSE
+D	agent/README.md
+D	agent/agent.cpp
+D	agent/example.png
+D	agent/lib.cpp
+D	agent/lib.h
+D	examples/README.md
+A	gradle/wrapper/gradle-wrapper.jar
+R080	sentry-android-gradle-plugin/gradle/wrapper/gradle-wrapper.properties	gradle/wrapper/gradle-wrapper.properties
+R099	sentry-android-gradle-plugin/gradlew	gradlew
+R095	sentry-android-gradle-plugin/gradlew.bat	gradlew.bat
+M	pom.xml
+D	sentry-android-gradle-plugin/.gitignore
+D	sentry-android-gradle-plugin/Makefile
+D	sentry-android-gradle-plugin/build.gradle
+D	sentry-android-gradle-plugin/download-sentry-cli.sh
+D	sentry-android-gradle-plugin/gradle.properties
+D	sentry-android-gradle-plugin/gradle/wrapper/gradle-wrapper.jar
+D	sentry-android-gradle-plugin/src/main/groovy/io/sentry/android/gradle/SentryPlugin.groovy
+D	sentry-android-gradle-plugin/src/main/groovy/io/sentry/android/gradle/SentryPluginExtension.groovy
+D	sentry-android-gradle-plugin/src/main/groovy/io/sentry/android/gradle/SentryProguardConfigTask.groovy
+D	sentry-android-gradle-plugin/src/main/resources/META-INF/gradle-plugins/io.sentry.android.gradle.properties
+D	sentry-android-gradle-plugin/src/main/resources/bin/.gitignore
+D	sentry-android/README.md
+D	sentry-android/bnd.bnd
+D	sentry-android/pom.xml
+D	sentry-android/src/main/java/io/sentry/android/AndroidSentryClientFactory.java
+D	sentry-android/src/main/java/io/sentry/android/event/helper/AndroidEventBuilderHelper.java
+D	sentry-android/src/test/java/io/sentry/android/AndroidTest.java
+D	sentry-android/src/test/java/io/sentry/android/SentryAndroidIT.java
+D	sentry-android/src/test/java/io/sentry/android/SentryITActivity.java
+D	sentry-appengine/README.md
+D	sentry-appengine/pom.xml
+D	sentry-appengine/src/main/java/io/sentry/appengine/AppEngineSentryClientFactory.java
+D	sentry-appengine/src/main/java/io/sentry/appengine/connection/AppEngineAsyncConnection.java
+D	sentry-appengine/src/main/java/io/sentry/appengine/event/helper/AppEngineEventBuilderHelper.java
+D	sentry-appengine/src/test/java/io/sentry/appengine/AppEngineSentryClientFactoryTest.java
+D	sentry-appengine/src/test/java/io/sentry/appengine/connection/AppEngineAsyncConnectionTest.java
+D	sentry-appengine/src/test/java/io/sentry/appengine/event/helper/AppEngineEventBuilderHelperTest.java
+D	sentry-appengine/src/test/resources/logback-test.xml
+D	sentry-log4j/README.md
+D	sentry-log4j/bnd.bnd
+D	sentry-log4j/pom.xml
+D	sentry-log4j/src/main/java/io/sentry/log4j/SentryAppender.java
+D	sentry-log4j/src/test/java/io/sentry/log4j/MockUpErrorHandler.java
+D	sentry-log4j/src/test/java/io/sentry/log4j/SentryAppenderCloseTest.java
+D	sentry-log4j/src/test/java/io/sentry/log4j/SentryAppenderEventBuildingTest.java
+D	sentry-log4j/src/test/java/io/sentry/log4j/SentryAppenderFailuresTest.java
+D	sentry-log4j/src/test/java/io/sentry/log4j/SentryAppenderIT.java
+D	sentry-log4j/src/test/resources/log4j-integration.properties
+D	sentry-log4j/src/test/resources/log4j-test.properties
+D	sentry-log4j2/README.md
+D	sentry-log4j2/bnd.bnd
+D	sentry-log4j2/pom.xml
+D	sentry-log4j2/src/main/java/io/sentry/log4j2/SentryAppender.java
+D	sentry-log4j2/src/test/java/io/sentry/log4j2/MockUpErrorHandler.java
+D	sentry-log4j2/src/test/java/io/sentry/log4j2/SentryAppenderCloseTest.java
+D	sentry-log4j2/src/test/java/io/sentry/log4j2/SentryAppenderEventBuildingTest.java
+D	sentry-log4j2/src/test/java/io/sentry/log4j2/SentryAppenderFailuresTest.java
+D	sentry-log4j2/src/test/java/io/sentry/log4j2/SentryAppenderIT.java
+D	sentry-log4j2/src/test/resources/log4j2-integration.xml
+D	sentry-log4j2/src/test/resources/log4j2-test.xml
+D	sentry-logback/README.md
+D	sentry-logback/bnd.bnd
+D	sentry-logback/pom.xml
+D	sentry-logback/src/main/java/io/sentry/logback/SentryAppender.java
+D	sentry-logback/src/test/java/io/sentry/logback/MockUpLoggingEvent.java
+D	sentry-logback/src/test/java/io/sentry/logback/MockUpStatusPrinter.java
+D	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderCloseTest.java
+D	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderEventBuildingTest.java
+D	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderEventLevelFilterTest.java
+D	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderFailuresTest.java
+D	sentry-logback/src/test/java/io/sentry/logback/SentryAppenderIT.java
+D	sentry-logback/src/test/resources/logback-integration.xml
+D	sentry-logback/src/test/resources/logback-test.xml
+D	sentry-spring-boot-starter/pom.xml
+D	sentry-spring-boot-starter/src/main/java/io/sentry/spring/autoconfigure/SentryAutoConfiguration.java
+D	sentry-spring-boot-starter/src/main/resources/META-INF/additional-spring-configuration-metadata.json
+D	sentry-spring-boot-starter/src/main/resources/META-INF/spring.factories
+D	sentry-spring-boot-starter/src/test/java/io/sentry/spring/autoconfigure/SentryAutoConfigurationTest.java
+D	sentry-spring/README.md
+D	sentry-spring/bnd.bnd
+D	sentry-spring/pom.xml
+D	sentry-spring/src/main/java/io/sentry/spring/SentryExceptionResolver.java
+D	sentry-spring/src/main/java/io/sentry/spring/SentryServletContextInitializer.java
+D	sentry/bnd.bnd
+D	sentry/pom.xml
+D	src/checkstyle/checkstyle.xml
+D	src/checkstyle/suppressions.xml
+R100	sentry/src/main/java-templates/io/sentry/environment/Version.java	src/main/java-templates/io/sentry/environment/Version.java
+R100	sentry/src/main/java/io/sentry/DefaultSentryClientFactory.java	src/main/java/io/sentry/DefaultSentryClientFactory.java
+R100	sentry/src/main/java/io/sentry/Sentry.java	src/main/java/io/sentry/Sentry.java
+R100	sentry/src/main/java/io/sentry/SentryClient.java	src/main/java/io/sentry/SentryClient.java
+R100	sentry/src/main/java/io/sentry/SentryClientFactory.java	src/main/java/io/sentry/SentryClientFactory.java
+R100	sentry/src/main/java/io/sentry/SentryUncaughtExceptionHandler.java	src/main/java/io/sentry/SentryUncaughtExceptionHandler.java
+R100	sentry/src/main/java/io/sentry/buffer/Buffer.java	src/main/java/io/sentry/buffer/Buffer.java
+R100	sentry/src/main/java/io/sentry/buffer/DiskBuffer.java	src/main/java/io/sentry/buffer/DiskBuffer.java
+R100	sentry/src/main/java/io/sentry/config/JndiLookup.java	src/main/java/io/sentry/config/JndiLookup.java
+R100	sentry/src/main/java/io/sentry/config/Lookup.java	src/main/java/io/sentry/config/Lookup.java
+R100	sentry/src/main/java/io/sentry/connection/AbstractConnection.java	src/main/java/io/sentry/connection/AbstractConnection.java
+R100	sentry/src/main/java/io/sentry/connection/AsyncConnection.java	src/main/java/io/sentry/connection/AsyncConnection.java
+R100	sentry/src/main/java/io/sentry/connection/BufferedConnection.java	src/main/java/io/sentry/connection/BufferedConnection.java
+R100	sentry/src/main/java/io/sentry/connection/Connection.java	src/main/java/io/sentry/connection/Connection.java
+R100	sentry/src/main/java/io/sentry/connection/ConnectionException.java	src/main/java/io/sentry/connection/ConnectionException.java
+R100	sentry/src/main/java/io/sentry/connection/EventSampler.java	src/main/java/io/sentry/connection/EventSampler.java
+R100	sentry/src/main/java/io/sentry/connection/EventSendCallback.java	src/main/java/io/sentry/connection/EventSendCallback.java
+R100	sentry/src/main/java/io/sentry/connection/HttpConnection.java	src/main/java/io/sentry/connection/HttpConnection.java
+R100	sentry/src/main/java/io/sentry/connection/LockdownManager.java	src/main/java/io/sentry/connection/LockdownManager.java
+R100	sentry/src/main/java/io/sentry/connection/LockedDownException.java	src/main/java/io/sentry/connection/LockedDownException.java
+R100	sentry/src/main/java/io/sentry/connection/NoopConnection.java	src/main/java/io/sentry/connection/NoopConnection.java
+R100	sentry/src/main/java/io/sentry/connection/OutputStreamConnection.java	src/main/java/io/sentry/connection/OutputStreamConnection.java
+R100	sentry/src/main/java/io/sentry/connection/ProxyAuthenticator.java	src/main/java/io/sentry/connection/ProxyAuthenticator.java
+R100	sentry/src/main/java/io/sentry/connection/RandomEventSampler.java	src/main/java/io/sentry/connection/RandomEventSampler.java
+R100	sentry/src/main/java/io/sentry/connection/TooManyRequestsException.java	src/main/java/io/sentry/connection/TooManyRequestsException.java
+R100	sentry/src/main/java/io/sentry/context/Context.java	src/main/java/io/sentry/context/Context.java
+R100	sentry/src/main/java/io/sentry/context/ContextManager.java	src/main/java/io/sentry/context/ContextManager.java
+R100	sentry/src/main/java/io/sentry/context/SingletonContextManager.java	src/main/java/io/sentry/context/SingletonContextManager.java
+R100	sentry/src/main/java/io/sentry/context/ThreadLocalContextManager.java	src/main/java/io/sentry/context/ThreadLocalContextManager.java
+R100	sentry/src/main/java/io/sentry/dsn/Dsn.java	src/main/java/io/sentry/dsn/Dsn.java
+R100	sentry/src/main/java/io/sentry/dsn/InvalidDsnException.java	src/main/java/io/sentry/dsn/InvalidDsnException.java
+R100	sentry/src/main/java/io/sentry/environment/SentryEnvironment.java	src/main/java/io/sentry/environment/SentryEnvironment.java
+R100	sentry/src/main/java/io/sentry/event/Breadcrumb.java	src/main/java/io/sentry/event/Breadcrumb.java
+R100	sentry/src/main/java/io/sentry/event/BreadcrumbBuilder.java	src/main/java/io/sentry/event/BreadcrumbBuilder.java
+R100	sentry/src/main/java/io/sentry/event/Event.java	src/main/java/io/sentry/event/Event.java
+R100	sentry/src/main/java/io/sentry/event/EventBuilder.java	src/main/java/io/sentry/event/EventBuilder.java
+R100	sentry/src/main/java/io/sentry/event/Sdk.java	src/main/java/io/sentry/event/Sdk.java
+R100	sentry/src/main/java/io/sentry/event/User.java	src/main/java/io/sentry/event/User.java
+R100	sentry/src/main/java/io/sentry/event/UserBuilder.java	src/main/java/io/sentry/event/UserBuilder.java
+R100	sentry/src/main/java/io/sentry/event/helper/BasicRemoteAddressResolver.java	src/main/java/io/sentry/event/helper/BasicRemoteAddressResolver.java
+R100	sentry/src/main/java/io/sentry/event/helper/ContextBuilderHelper.java	src/main/java/io/sentry/event/helper/ContextBuilderHelper.java
+R100	sentry/src/main/java/io/sentry/event/helper/EventBuilderHelper.java	src/main/java/io/sentry/event/helper/EventBuilderHelper.java
+R100	sentry/src/main/java/io/sentry/event/helper/ForwardedAddressResolver.java	src/main/java/io/sentry/event/helper/ForwardedAddressResolver.java
+R100	sentry/src/main/java/io/sentry/event/helper/HttpEventBuilderHelper.java	src/main/java/io/sentry/event/helper/HttpEventBuilderHelper.java
+R100	sentry/src/main/java/io/sentry/event/helper/RemoteAddressResolver.java	src/main/java/io/sentry/event/helper/RemoteAddressResolver.java
+R100	sentry/src/main/java/io/sentry/event/helper/ShouldSendEventCallback.java	src/main/java/io/sentry/event/helper/ShouldSendEventCallback.java
+R100	sentry/src/main/java/io/sentry/event/interfaces/DebugMetaInterface.java	src/main/java/io/sentry/event/interfaces/DebugMetaInterface.java
+R100	sentry/src/main/java/io/sentry/event/interfaces/ExceptionInterface.java	src/main/java/io/sentry/event/interfaces/ExceptionInterface.java
+R100	sentry/src/main/java/io/sentry/event/interfaces/HttpInterface.java	src/main/java/io/sentry/event/interfaces/HttpInterface.java
+R100	sentry/src/main/java/io/sentry/event/interfaces/MessageInterface.java	src/main/java/io/sentry/event/interfaces/MessageInterface.java
+R100	sentry/src/main/java/io/sentry/event/interfaces/SentryException.java	src/main/java/io/sentry/event/interfaces/SentryException.java
+R100	sentry/src/main/java/io/sentry/event/interfaces/SentryInterface.java	src/main/java/io/sentry/event/interfaces/SentryInterface.java
+R100	sentry/src/main/java/io/sentry/event/interfaces/SentryStackTraceElement.java	src/main/java/io/sentry/event/interfaces/SentryStackTraceElement.java
+R100	sentry/src/main/java/io/sentry/event/interfaces/StackTraceInterface.java	src/main/java/io/sentry/event/interfaces/StackTraceInterface.java
+R100	sentry/src/main/java/io/sentry/event/interfaces/UserInterface.java	src/main/java/io/sentry/event/interfaces/UserInterface.java
+R100	sentry/src/main/java/io/sentry/jul/SentryHandler.java	src/main/java/io/sentry/jul/SentryHandler.java
+R100	sentry/src/main/java/io/sentry/jvmti/Frame.java	src/main/java/io/sentry/jvmti/Frame.java
+R100	sentry/src/main/java/io/sentry/jvmti/FrameCache.java	src/main/java/io/sentry/jvmti/FrameCache.java
+R100	sentry/src/main/java/io/sentry/marshaller/Marshaller.java	src/main/java/io/sentry/marshaller/Marshaller.java
+R100	sentry/src/main/java/io/sentry/marshaller/json/DebugMetaInterfaceBinding.java	src/main/java/io/sentry/marshaller/json/DebugMetaInterfaceBinding.java
+R100	sentry/src/main/java/io/sentry/marshaller/json/ExceptionInterfaceBinding.java	src/main/java/io/sentry/marshaller/json/ExceptionInterfaceBinding.java
+R100	sentry/src/main/java/io/sentry/marshaller/json/HttpInterfaceBinding.java	src/main/java/io/sentry/marshaller/json/HttpInterfaceBinding.java
+R100	sentry/src/main/java/io/sentry/marshaller/json/InterfaceBinding.java	src/main/java/io/sentry/marshaller/json/InterfaceBinding.java
+R100	sentry/src/main/java/io/sentry/marshaller/json/JsonMarshaller.java	src/main/java/io/sentry/marshaller/json/JsonMarshaller.java
+R100	sentry/src/main/java/io/sentry/marshaller/json/MessageInterfaceBinding.java	src/main/java/io/sentry/marshaller/json/MessageInterfaceBinding.java
+R100	sentry/src/main/java/io/sentry/marshaller/json/SentryJsonGenerator.java	src/main/java/io/sentry/marshaller/json/SentryJsonGenerator.java
+R100	sentry/src/main/java/io/sentry/marshaller/json/StackTraceInterfaceBinding.java	src/main/java/io/sentry/marshaller/json/StackTraceInterfaceBinding.java
+R100	sentry/src/main/java/io/sentry/marshaller/json/UserInterfaceBinding.java	src/main/java/io/sentry/marshaller/json/UserInterfaceBinding.java
+R100	sentry/src/main/java/io/sentry/servlet/SentryServletContainerInitializer.java	src/main/java/io/sentry/servlet/SentryServletContainerInitializer.java
+R100	sentry/src/main/java/io/sentry/servlet/SentryServletRequestListener.java	src/main/java/io/sentry/servlet/SentryServletRequestListener.java
+R100	sentry/src/main/java/io/sentry/time/Clock.java	src/main/java/io/sentry/time/Clock.java
+R100	sentry/src/main/java/io/sentry/time/FixedClock.java	src/main/java/io/sentry/time/FixedClock.java
+R100	sentry/src/main/java/io/sentry/time/SystemClock.java	src/main/java/io/sentry/time/SystemClock.java
+R100	sentry/src/main/java/io/sentry/util/CircularFifoQueue.java	src/main/java/io/sentry/util/CircularFifoQueue.java
+R100	sentry/src/main/java/io/sentry/util/Util.java	src/main/java/io/sentry/util/Util.java
+R100	sentry/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer	src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer
+R100	sentry/src/main/resources/META-INF/web-fragment.xml	src/main/resources/META-INF/web-fragment.xml
+R100	sentry/src/main/resources/sentry-build.properties	src/main/resources/sentry-build.properties
+R100	sentry/src/test/java/io/sentry/BaseIT.java	src/test/java/io/sentry/BaseIT.java
+R100	sentry/src/test/java/io/sentry/BaseTest.java	src/test/java/io/sentry/BaseTest.java
+R100	sentry/src/test/java/io/sentry/ContextTest.java	src/test/java/io/sentry/ContextTest.java
+R100	sentry/src/test/java/io/sentry/DefaultSentryClientFactoryTest.java	src/test/java/io/sentry/DefaultSentryClientFactoryTest.java
+R100	sentry/src/test/java/io/sentry/SentryClientFactoryTest.java	src/test/java/io/sentry/SentryClientFactoryTest.java
+R100	sentry/src/test/java/io/sentry/SentryClientTest.java	src/test/java/io/sentry/SentryClientTest.java
+R100	sentry/src/test/java/io/sentry/SentryIT.java	src/test/java/io/sentry/SentryIT.java
+R100	sentry/src/test/java/io/sentry/SentryTest.java	src/test/java/io/sentry/SentryTest.java
+R100	sentry/src/test/java/io/sentry/SentryUncaughtExceptionHandlerTest.java	src/test/java/io/sentry/SentryUncaughtExceptionHandlerTest.java
+R100	sentry/src/test/java/io/sentry/TestFactory.java	src/test/java/io/sentry/TestFactory.java
+R100	sentry/src/test/java/io/sentry/buffer/DiskBufferTest.java	src/test/java/io/sentry/buffer/DiskBufferTest.java
+R100	sentry/src/test/java/io/sentry/connection/AbstractConnectionTest.java	src/test/java/io/sentry/connection/AbstractConnectionTest.java
+R100	sentry/src/test/java/io/sentry/connection/AsyncConnectionTest.java	src/test/java/io/sentry/connection/AsyncConnectionTest.java
+R100	sentry/src/test/java/io/sentry/connection/BufferedConnectionTest.java	src/test/java/io/sentry/connection/BufferedConnectionTest.java
+R100	sentry/src/test/java/io/sentry/connection/HttpConnectionTest.java	src/test/java/io/sentry/connection/HttpConnectionTest.java
+R100	sentry/src/test/java/io/sentry/connection/OutputStreamConnectionTest.java	src/test/java/io/sentry/connection/OutputStreamConnectionTest.java
+R100	sentry/src/test/java/io/sentry/connection/RandomEventSamplerTest.java	src/test/java/io/sentry/connection/RandomEventSamplerTest.java
+R100	sentry/src/test/java/io/sentry/dsn/DsnTest.java	src/test/java/io/sentry/dsn/DsnTest.java
+R100	sentry/src/test/java/io/sentry/dsn/InitialContextFactory.java	src/test/java/io/sentry/dsn/InitialContextFactory.java
+R100	sentry/src/test/java/io/sentry/environment/SentryEnvironmentTest.java	src/test/java/io/sentry/environment/SentryEnvironmentTest.java
+R100	sentry/src/test/java/io/sentry/event/BreadcrumbTest.java	src/test/java/io/sentry/event/BreadcrumbTest.java
+R100	sentry/src/test/java/io/sentry/event/EventBuilderHostnameCacheTest.java	src/test/java/io/sentry/event/EventBuilderHostnameCacheTest.java
+R100	sentry/src/test/java/io/sentry/event/EventBuilderTest.java	src/test/java/io/sentry/event/EventBuilderTest.java
+R100	sentry/src/test/java/io/sentry/event/EventTest.java	src/test/java/io/sentry/event/EventTest.java
+R100	sentry/src/test/java/io/sentry/event/UserTest.java	src/test/java/io/sentry/event/UserTest.java
+R100	sentry/src/test/java/io/sentry/event/helper/ContextBuilderHelperTest.java	src/test/java/io/sentry/event/helper/ContextBuilderHelperTest.java
+R100	sentry/src/test/java/io/sentry/event/helper/HttpEventBuilderHelperTest.java	src/test/java/io/sentry/event/helper/HttpEventBuilderHelperTest.java
+R100	sentry/src/test/java/io/sentry/event/interfaces/DebugMetaInterfaceTest.java	src/test/java/io/sentry/event/interfaces/DebugMetaInterfaceTest.java
+R100	sentry/src/test/java/io/sentry/event/interfaces/HttpInterfaceTest.java	src/test/java/io/sentry/event/interfaces/HttpInterfaceTest.java
+R100	sentry/src/test/java/io/sentry/event/interfaces/MessageInterfaceTest.java	src/test/java/io/sentry/event/interfaces/MessageInterfaceTest.java
+R100	sentry/src/test/java/io/sentry/event/interfaces/SentryExceptionTest.java	src/test/java/io/sentry/event/interfaces/SentryExceptionTest.java
+R100	sentry/src/test/java/io/sentry/event/interfaces/SentryStackTraceElementTest.java	src/test/java/io/sentry/event/interfaces/SentryStackTraceElementTest.java
+R100	sentry/src/test/java/io/sentry/event/interfaces/StackTraceInterfaceTest.java	src/test/java/io/sentry/event/interfaces/StackTraceInterfaceTest.java
+R100	sentry/src/test/java/io/sentry/event/interfaces/UserInterfaceTest.java	src/test/java/io/sentry/event/interfaces/UserInterfaceTest.java
+R100	sentry/src/test/java/io/sentry/helper/RemoteAddressResolverTest.java	src/test/java/io/sentry/helper/RemoteAddressResolverTest.java
+R100	sentry/src/test/java/io/sentry/jul/SentryHandlerEventBuildingTest.java	src/test/java/io/sentry/jul/SentryHandlerEventBuildingTest.java
+R100	sentry/src/test/java/io/sentry/jul/SentryHandlerIT.java	src/test/java/io/sentry/jul/SentryHandlerIT.java
+R100	sentry/src/test/java/io/sentry/jvmti/FrameCacheTest.java	src/test/java/io/sentry/jvmti/FrameCacheTest.java
+R100	sentry/src/test/java/io/sentry/marshaller/UncloseableOutputStreamTest.java	src/test/java/io/sentry/marshaller/UncloseableOutputStreamTest.java
+R100	sentry/src/test/java/io/sentry/marshaller/json/DebugMetaInterfaceBindingTest.java	src/test/java/io/sentry/marshaller/json/DebugMetaInterfaceBindingTest.java
+R100	sentry/src/test/java/io/sentry/marshaller/json/ExceptionInterfaceBindingTest.java	src/test/java/io/sentry/marshaller/json/ExceptionInterfaceBindingTest.java
+R100	sentry/src/test/java/io/sentry/marshaller/json/HttpInterfaceBindingTest.java	src/test/java/io/sentry/marshaller/json/HttpInterfaceBindingTest.java
+R100	sentry/src/test/java/io/sentry/marshaller/json/JsonComparisonUtil.java	src/test/java/io/sentry/marshaller/json/JsonComparisonUtil.java
+R100	sentry/src/test/java/io/sentry/marshaller/json/JsonMarshallerTest.java	src/test/java/io/sentry/marshaller/json/JsonMarshallerTest.java
+R100	sentry/src/test/java/io/sentry/marshaller/json/MessageInterfaceBindingTest.java	src/test/java/io/sentry/marshaller/json/MessageInterfaceBindingTest.java
+R100	sentry/src/test/java/io/sentry/marshaller/json/SentryJsonGeneratorTest.java	src/test/java/io/sentry/marshaller/json/SentryJsonGeneratorTest.java
+R100	sentry/src/test/java/io/sentry/marshaller/json/StackTraceInterfaceBindingTest.java	src/test/java/io/sentry/marshaller/json/StackTraceInterfaceBindingTest.java
+R100	sentry/src/test/java/io/sentry/marshaller/json/UserInterfaceBindingTest.java	src/test/java/io/sentry/marshaller/json/UserInterfaceBindingTest.java
+R100	sentry/src/test/java/io/sentry/servlet/SentryServletContainerInitializerTest.java	src/test/java/io/sentry/servlet/SentryServletContainerInitializerTest.java
+R100	sentry/src/test/java/io/sentry/servlet/SentryServletRequestListenerTest.java	src/test/java/io/sentry/servlet/SentryServletRequestListenerTest.java
+R100	sentry/src/test/java/io/sentry/time/ClockTest.java	src/test/java/io/sentry/time/ClockTest.java
+R100	sentry/src/test/java/io/sentry/unmarshaller/JsonDecoder.java	src/test/java/io/sentry/unmarshaller/JsonDecoder.java
+R100	sentry/src/test/java/io/sentry/unmarshaller/JsonUnmarshaller.java	src/test/java/io/sentry/unmarshaller/JsonUnmarshaller.java
+R100	sentry/src/test/java/io/sentry/unmarshaller/Unmarshaller.java	src/test/java/io/sentry/unmarshaller/Unmarshaller.java
+R100	sentry/src/test/java/io/sentry/unmarshaller/event/UnmarshalledEvent.java	src/test/java/io/sentry/unmarshaller/event/UnmarshalledEvent.java
+R100	sentry/src/test/java/io/sentry/unmarshaller/event/interfaces/ExceptionInterface.java	src/test/java/io/sentry/unmarshaller/event/interfaces/ExceptionInterface.java
+R100	sentry/src/test/java/io/sentry/unmarshaller/event/interfaces/MessageInterface.java	src/test/java/io/sentry/unmarshaller/event/interfaces/MessageInterface.java
+R100	sentry/src/test/java/io/sentry/unmarshaller/event/interfaces/StackTraceInterface.java	src/test/java/io/sentry/unmarshaller/event/interfaces/StackTraceInterface.java
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Exception1.json	src/test/resources/io/sentry/marshaller/json/Exception1.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Exception2.json	src/test/resources/io/sentry/marshaller/json/Exception2.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Exception3.json	src/test/resources/io/sentry/marshaller/json/Exception3.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Http1.json	src/test/resources/io/sentry/marshaller/json/Http1.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Http2.json	src/test/resources/io/sentry/marshaller/json/Http2.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Message1.json	src/test/resources/io/sentry/marshaller/json/Message1.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/Proguard.json	src/test/resources/io/sentry/marshaller/json/Proguard.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/SentryStackTrace.json	src/test/resources/io/sentry/marshaller/json/SentryStackTrace.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/StackTrace1.json	src/test/resources/io/sentry/marshaller/json/StackTrace1.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/StackTrace2.json	src/test/resources/io/sentry/marshaller/json/StackTrace2.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/StackTrace3.json	src/test/resources/io/sentry/marshaller/json/StackTrace3.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/StackTraceBlacklist.json	src/test/resources/io/sentry/marshaller/json/StackTraceBlacklist.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/User1.json	src/test/resources/io/sentry/marshaller/json/User1.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testBreadcrumbs.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testBreadcrumbs.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testChecksum.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testChecksum.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testCompression.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testCompression.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testContexts.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testContexts.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testCulprit.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testCulprit.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testDist.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testDist.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testEnvironment.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testEnvironment.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testEventId.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testEventId.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraArray.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraArray.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraBoolean.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraBoolean.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraCustomValue.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraCustomValue.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraIterable.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraIterable.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraMap.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraMap.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNull.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNull.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNullKeyMap.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNullKeyMap.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNumber.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraNumber.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraObjectKeyMap.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraObjectKeyMap.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraRecursiveArray.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraRecursiveArray.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraRecursiveMap.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraRecursiveMap.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraString.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testExtraString.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testFingerprint.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testFingerprint.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testInterfaceBinding.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testInterfaceBinding.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelDebug.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelDebug.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelError.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelError.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelFatal.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelFatal.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelInfo.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelInfo.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelWarning.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLevelWarning.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLogger.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testLogger.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testMessage.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testMessage.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testPlatform.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testPlatform.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testRelease.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testRelease.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testSdk.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testSdk.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testServerName.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testServerName.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTags.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTags.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTimestamp.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTimestamp.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTransaction.json	src/test/resources/io/sentry/marshaller/json/jsonmarshallertest/testTransaction.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testByte.json	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testByte.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testByteArray.json	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testByteArray.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testCycle.json	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testCycle.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testIntArray.json	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testIntArray.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testIterable.json	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testIterable.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testMap.json	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testMap.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testNull.json	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testNull.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testObjectArray.json	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testObjectArray.json
+R100	sentry/src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testPath.json	src/test/resources/io/sentry/marshaller/json/jsonobjectmarshallertest/testPath.json
+R100	sentry/src/test/resources/jndi.properties	src/test/resources/jndi.properties
+R100	sentry/src/test/resources/logging-integration.properties	src/test/resources/logging-integration.properties
+R100	sentry/src/test/resources/logging-test.properties	src/test/resources/logging-test.properties
+R100	sentry/src/test/resources/sentry-build.properties	src/test/resources/sentry-build.properties
+
+GravitLauncher/sentry-java;21ae6515;Update gitignore.
+M	.gitattributes
+M	.gitignore

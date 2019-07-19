@@ -1,0 +1,110 @@
+calvinkrishy/spring-security-oauth;fd13c84;Bump Minor version
+M	pom.xml
+M	spring-security-oauth2/pom.xml
+
+calvinkrishy/spring-security-oauth;b037990;Add extra check
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/inject/OAuth2ParametersInjectable.java
+
+calvinkrishy/spring-security-oauth;d33a3e8;Merge branch 'master' of https://github.com/calvinkrishy/spring-security-oauth
+calvinkrishy/spring-security-oauth;803e545;Merge branch 'master' of git://github.com/SpringSource/spring-security-oauth
+calvinkrishy/spring-security-oauth;5e3335b;Jersey
+M	spring-security-oauth2/pom.xml
+M	spring-security-oauth2/template.mf
+
+calvinkrishy/spring-security-oauth;5c122df;Remove JerseyAuthorizationEndpoint for now
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/JerseyAuthorizationEndPoint.java
+
+calvinkrishy/spring-security-oauth;c293166;Jersey
+M	pom.xml
+
+calvinkrishy/spring-security-oauth;63a2cbf;Always send WW-AUTHENTICATE header
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/error/JerseyExceptionMapper.java
+
+calvinkrishy/spring-security-oauth;3edee5b;OAuth2Parameters as @Context injectables
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/inject/AbstractInjectableProvider.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/inject/OAuth2ParametersInjectable.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/params/OAuth2Parameters.java
+
+calvinkrishy/spring-security-oauth;6988bd1;Use OAuth2Parameters
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/JerseyTokenEndPoint.java
+
+calvinkrishy/spring-security-oauth;f53c3c4;Expose charset
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/AbstractEndpoint.java
+
+calvinkrishy/spring-security-oauth;631cb94;Jersey ExceptionMapper
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/error/JerseyExceptionMapper.java
+
+calvinkrishy/spring-security-oauth;700fcc0;Add client side support for resource owner password (mainly useful for testing)
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/client/token/grant/password/ResourceOwnerPasswordAccessTokenProvider.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/client/token/grant/password/ResourceOwnerPasswordResourceDetails.java
+
+calvinkrishy/spring-security-oauth;aaa4887;Jersey ExceptionMapper
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/error/JerseyExceptionMapper.java
+
+calvinkrishy/spring-security-oauth;f4b4132;Rudimentary Jersey Support
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/JerseyAbstractEndPoint.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/JerseyAuthorizationEndPoint.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/JerseyTokenEndPoint.java
+
+calvinkrishy/spring-security-oauth;31a23ae;Minimal test case for AuthorizationBeanDefinitionParser
+A	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/TestAuthorizationServerBeanDefinitionParser.java
+A	spring-security-oauth2/src/test/resources/org/springframework/security/oauth2/config/TestAuthorizationServerBeanDefinitionParser-context.xml
+
+calvinkrishy/spring-security-oauth;89d9456;Only OAuth2
+M	pom.xml
+
+calvinkrishy/spring-security-oauth;d4425da;SECOAUTH-167: Token Service defaulting in authorization-server definition possibly incorrect
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/ProviderBeanDefinitionParser.java
+
+calvinkrishy/spring-security-oauth;9a3c597;SECOAUTH-167: Token Service defaulting in authorization-server definition possibly incorrect
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/ProviderBeanDefinitionParser.java
+
+calvinkrishy/spring-security-oauth;32b9c67;Jersey
+M	spring-security-oauth2/pom.xml
+M	spring-security-oauth2/template.mf
+
+calvinkrishy/spring-security-oauth;60aa0ba;Remove JerseyAuthorizationEndpoint for now
+D	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/JerseyAuthorizationEndPoint.java
+
+calvinkrishy/spring-security-oauth;561d0ee;Jersey
+M	pom.xml
+
+calvinkrishy/spring-security-oauth;bb0da38;Always send WW-AUTHENTICATE header
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/error/JerseyExceptionMapper.java
+
+calvinkrishy/spring-security-oauth;84b8e9b;OAuth2Parameters as @Context injectables
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/inject/AbstractInjectableProvider.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/inject/OAuth2ParametersInjectable.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/params/OAuth2Parameters.java
+
+calvinkrishy/spring-security-oauth;5423c14;Use OAuth2Parameters
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/JerseyTokenEndPoint.java
+
+calvinkrishy/spring-security-oauth;319280a;Expose charset
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/AbstractEndpoint.java
+
+calvinkrishy/spring-security-oauth;eb1cb82;Jersey ExceptionMapper
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/error/JerseyExceptionMapper.java
+
+calvinkrishy/spring-security-oauth;eb4aa37;Merge branch 'master' of git://github.com/SpringSource/spring-security-oauth
+calvinkrishy/spring-security-oauth;c523241;Jersey ExceptionMapper
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/error/JerseyExceptionMapper.java
+
+calvinkrishy/spring-security-oauth;9bfcb4a;Rudimentary Jersey Support
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/JerseyAbstractEndPoint.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/JerseyAuthorizationEndPoint.java
+A	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/JerseyTokenEndPoint.java
+
+calvinkrishy/spring-security-oauth;abf3541;Merge branch 'master' of git://github.com/SpringSource/spring-security-oauth
+calvinkrishy/spring-security-oauth;6b22158;Minimal test case for AuthorizationBeanDefinitionParser
+A	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/config/TestAuthorizationServerBeanDefinitionParser.java
+A	spring-security-oauth2/src/test/resources/org/springframework/security/oauth2/config/TestAuthorizationServerBeanDefinitionParser-context.xml
+
+calvinkrishy/spring-security-oauth;fe9ab57;Only OAuth2
+M	pom.xml
+
+calvinkrishy/spring-security-oauth;8db6952;SECOAUTH-167: Token Service defaulting in authorization-server definition possibly incorrect
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/ProviderBeanDefinitionParser.java
+
+calvinkrishy/spring-security-oauth;6544b3d;SECOAUTH-167: Token Service defaulting in authorization-server definition possibly incorrect
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/config/ProviderBeanDefinitionParser.java

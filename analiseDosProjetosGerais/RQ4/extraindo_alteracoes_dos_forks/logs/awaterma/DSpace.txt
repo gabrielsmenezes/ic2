@@ -1,0 +1,2 @@
+awaterma/DSpace;dbce3eb21;Sometimes DSpace looks up a schema by the long namespace, and not the short name. This patch fixes this issue. It also throws a RuntimeException (I didn't want to change the signature, so there could be a much better way to express this) when the schema is not available via either method. This alleviates the mystery of why DSpace cant' find a defined symbol when parsing the metadata for an Item, as an Item with a bad reference to internal metadata should be an error.
+M	dspace-api/src/main/java/org/dspace/content/Item.java

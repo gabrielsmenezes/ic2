@@ -1,0 +1,476 @@
+camunda/fox-engine;451a298e3; Prepare next Fox-Release: set developmentVersion to 1.34.0-SNAPSHOT
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+camunda/fox-engine;08b7e25e8; Prepare Fox-Release: set versions to 1.33.0
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+camunda/fox-engine;2489e519e; Prepare next Fox-Release: set developmentVersion to 1.33.0-SNAPSHOT
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+camunda/fox-engine;d81f9e99d; Prepare Fox-Release: set versions to 1.32.0
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+camunda/fox-engine;f07bf8982;HEMERA-3572: Deleted duplicate line to create unique index ACT_UNIQ_HI_BUS_KEY.
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mssql.create.history.sql
+
+camunda/fox-engine;e1ccb9761;Fix for ACT-1533: Undeployment of old process versions deletes jobs for TimerStartEvents
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/DeploymentManager.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/event/timer/StartTimerEventTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/timer/StartTimerEventTest.testTimerShouldNotBeRecreatedOnDeploymentCacheReboot.bpmn20.xml
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/timer/StartTimerEventTest.testTimerShouldNotBeRemovedWhenUndeployingOldVersion.bpmn20.xml
+M	userguide/src/en/chapters/ch07b-BPMN-Constructs.xml
+
+camunda/fox-engine;99a3009f9;Fix for ACT-1054
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ExecutionEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/VariableInstanceEntity.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/VariableInstance.xml
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/usertask/UserTaskTest.java
+A	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/usertask/UserTaskTestCreateTaskListener.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/usertask/UserTaskTest.testCompleteAfterParallelGateway.bpmn20.xml
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/usertask/UserTaskTest.testQuerySortingWithParameter.bpmn20.xml
+
+camunda/fox-engine;790da4870;SpringJobExecutor should reuse TaskExecutor after shutdown, lifecycle is controlled by spring, thus won't be recreated on "start()" call.
+M	modules/activiti-spring/src/main/java/org/activiti/spring/components/jobexecutor/SpringJobExecutor.java
+
+camunda/fox-engine;cf23e2ad9;Using try-catch around areJobsAvailable() call in test
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/test/AbstractActivitiTestCase.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/exclusive/ExclusiveTaskTest.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/exclusive/ExclusiveTimerEventTest.java
+
+camunda/fox-engine;dd8297028;Increasing wait-timeout to prevent job-table to be pounded during test
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/exclusive/ExclusiveTaskTest.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/exclusive/ExclusiveTimerEventTest.java
+
+camunda/fox-engine;94da05965;Not using milli-second precision on job duedates, MSSQL TIMEDATE is accurate for .000, .003 and .007 multiples only
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/mgmt/JobQueryTest.java
+
+camunda/fox-engine;d6ba63d23;Increasing "wait for jobs" timeout to prevent MSSQL QA Deadlock exception
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/callactivity/CallActivityAdvancedTest.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/exclusive/ExclusiveTaskTest.java
+
+camunda/fox-engine;7cedf0ca1;Increasing "wait for jobs" timeout to prevent MSSQL QA Deadlock exception
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/exclusive/ExclusiveTaskTest.java
+
+camunda/fox-engine;9ab3b40e9;Javadoc fix for DeploymentBuilder
+M	modules/activiti-engine/src/main/java/org/activiti/engine/repository/DeploymentBuilder.java
+
+camunda/fox-engine;5c6406a50;Fixed: ACT-1494
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/JuelFormEngine.java
+
+camunda/fox-engine;2dd1745b2;ACT-1031: renamed and deprecated older methods
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/JobQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/runtime/JobQuery.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Job.xml
+M	modules/activiti-webapp-rest2/src/main/java/org/activiti/rest/api/management/JobsResource.java
+
+camunda/fox-engine;627db46c5;ACT-1040: applied patch
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/TaskManager.java
+
+camunda/fox-engine;e8b80e97f;Proof that ACT-821 works
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/callactivity/CallActivityAdvancedTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/callactivity/CallActivity.testTwoSubProcesses.bpmn20.xml
+
+camunda/fox-engine;3a0e2437b;Removed typeLanguage warning who everybody hates anyway.
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+
+camunda/fox-engine;9095109c0;ACT-900: deletereason for task can be specified + check on deleting proccess-spawned tasks
+M	modules/activiti-engine/src/main/java/org/activiti/engine/TaskService.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/TaskServiceImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/DeleteTaskCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/TaskManager.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/task/TaskServiceTest.java
+
+camunda/fox-engine;014e904cb;ACT-1316: Now checking status STATUS_ROLLED_BACK on afterCompletion
+M	modules/activiti-spring/src/main/java/org/activiti/spring/SpringTransactionContext.java
+
+camunda/fox-engine;7127cb0b2;ACT-1023: Retain order of enum-formproperty values as defined in xml
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/FormTypes.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/form/FormServiceTest.java
+
+camunda/fox-engine;a6fe00f4a;Using search-string provided escape character for escaping "_"
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/TableDataManager.java
+
+camunda/fox-engine;fdaca1c3c;Oracle threats the "_" as wildcard in "ACT_%", matching non-act tables
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/TableDataManager.java
+
+camunda/fox-engine;13417d080;Fixed ACT-1015
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetFormKeyCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/DefaultFormHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/DefaultStartFormHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/DefaultTaskFormHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/JuelFormEngine.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/form/FormServiceTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/form/FormServiceTest.testGetTaskFormKeyWithExpression.bpmn20.xml
+
+camunda/fox-engine;17a8de24d;Fix for ACT-1435
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+
+camunda/fox-engine;c1420e7c1;ACT-1102: the 'beans' config-property now also used in non-spring env
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/el/ExpressionManager.java
+R098	modules/activiti-spring/src/main/java/org/activiti/spring/ReadOnlyMapELResolver.java	modules/activiti-engine/src/main/java/org/activiti/engine/impl/el/ReadOnlyMapELResolver.java
+A	modules/activiti-engine/src/test/java/org/activiti/standalone/el/ExpressionBeanAccessTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/standalone/el/ExpressionBeanAccessTest.testConfigurationBeanAccess.bpmn20.xml
+A	modules/activiti-engine/src/test/resources/org/activiti/standalone/el/activiti.cfg.xml
+M	modules/activiti-spring/src/main/java/org/activiti/spring/SpringExpressionManager.java
+
+camunda/fox-engine;1b1a4d531;User task due date can also be a ISO date String
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/UserTaskActivityBehavior.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/usertask/TaskDueDateExtensionsTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/usertask/TaskDueDateExtensionsTest.testDueDateStringExtension.bpmn20.xml
+
+camunda/fox-engine;c86e5e5b0;ACT-1291: Accepted patch for excluding subtasks in TaskQuery
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/TaskQueryImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/task/TaskQuery.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Task.xml
+A	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/task/SubTaskQueryTest.java
+
+camunda/fox-engine;94b5e4e70;Log message about the deployment being processed on fine instead of info.
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/deployer/BpmnDeployer.java
+
+camunda/fox-engine;1a8234bd9;fix act-1421
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/event/error/BoundaryErrorEventTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/error/BoundaryErrorEventTest.testCatchErrorThrownByJavaDelegateOnServiceTaskNotCancelActivity.bpmn20.xml
+
+camunda/fox-engine;f33265ec7;ACT-1444 Race condition in CallActivityBehavior Make member varibale local
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/CallActivityBehavior.java
+
+camunda/fox-engine;ac6b64cbb;- BpmnDeployer: log which deployment is being processed. - JuelExpression: exceptions now include the expression that caused the problem. - SerializableType: fix spelling error in exception message.
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/deployer/BpmnDeployer.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/el/JuelExpression.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/SerializableType.java
+
+camunda/fox-engine;61e7a3bf6;ACT-1067 make 2 bpmn deployer methods protected
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/deployer/BpmnDeployer.java
+
+camunda/fox-engine;47d34523c;Fix for ACT-1147: Posting a comment to a task causes an exception (Bad value for type long)
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/db/DbSqlSessionFactory.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Comment.xml
+
+camunda/fox-engine;0475ad01c;Fix for ACT-1431: Invalid warning with exception thrown when di information is missing
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/diagram/ProcessDiagramGenerator.java
+
+camunda/fox-engine;6abb6f618;Fix for ACT-1410: remove byte array from db for attachment
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/DeleteAttachmentCmd.java
+
+camunda/fox-engine;e64fdbbb8;HEMERA-3572 Activiti merge: prefixing dropping of index in mssql drop script. See 0d3b578067258fdea8a4f033b95cda3efd8d56e9
+M	modules/activiti-engine/src/main/resources/org/activiti/db/drop/activiti.mssql.drop.history.sql
+
+camunda/fox-engine;b73b5c440;Fix failing drop script on MySQL
+M	modules/activiti-engine/src/main/resources/org/activiti/db/drop/activiti.mysql.drop.history.sql
+
+camunda/fox-engine;b958f2ea3;fix for ACT-1427: Repeating timer in combination with cancelActivity should not repeat itself
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/jobexecutor/TimerDeclarationImpl.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/event/timer/BoundaryTimerEventTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/timer/BoundaryTimerEventTest.testRepeatingTimerWithCancelActivity.bpmn20.xml
+
+camunda/fox-engine;8f8b4a6ae;ACT-1424: Job timestamp defaults to current date when set to null (MySQL)
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.engine.sql
+
+camunda/fox-engine;5b5889158;Adding alter-table statement instead of inline-define of unique constraint inline to have consistent naming of indexes Conflicts:
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.db2.create.history.sql
+
+camunda/fox-engine;f7092b31d;Additional index on PROC_INST_ID_ and ACT_ID_ for historic activity
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.db2.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mssql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.oracle.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.postgres.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/drop/activiti.db2.drop.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/drop/activiti.h2.drop.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/drop/activiti.mssql.drop.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/drop/activiti.mysql.drop.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/drop/activiti.oracle.drop.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/drop/activiti.postgres.drop.history.sql
+
+camunda/fox-engine;31989a4e2;Fix for ACT-1259
+M	distro/src/setup/build.xml
+M	modules/activiti-engine/src/main/java/org/activiti/engine/ManagementService.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ManagementServiceImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/DeleteAttachmentCmd.java
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/DeleteJobCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/db/DbSqlSession.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/interceptor/CommandContext.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/AbstractManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/AttachmentManager.java
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ByteArrayManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/EventSubscriptionManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ExecutionEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/GroupManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/HistoricActivityInstanceManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/HistoricDetailEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/HistoricDetailVariableInstanceUpdateEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/HistoricProcessInstanceManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/HistoricTaskInstanceManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/HistoricVariableInstanceEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/IdentityInfoManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/IdentityLinkManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/JobEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ProcessDefinitionEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/TaskEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/TaskManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/UserEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/UserManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/VariableInstanceEntity.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Attachment.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/EventSubscription.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Execution.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Group.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricDetail.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricTaskInstance.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricVariableInstance.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/IdentityInfo.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Job.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Property.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Task.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/User.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/VariableInstance.xml
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/mgmt/ManagementServiceTest.java
+A	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/event/end/EndEventTest.java
+A	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/event/end/EndEventTestJavaDelegate.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/event/timer/IntermediateTimerEventTest.java
+M	modules/activiti-engine/src/test/resources/logging.properties
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/end/EndEventTest.testConcurrentEndOfSameProcess.bpmn20.xml
+
+camunda/fox-engine;793157d58;ACT-1415: Timer declarations on start-events can now contain expressions
+R089	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/StartFormVariableScope.java	modules/activiti-engine/src/main/java/org/activiti/engine/impl/el/StartProcessVariableScope.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/form/FormPropertyHandler.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/jobexecutor/TimerDeclarationImpl.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/event/timer/StartTimerEventTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/event/timer/StartTimerEventTest.testExpressionStartTimerEvent.bpmn20.xml
+
+camunda/fox-engine;da3a2ada5;Removing @deprecated annotation from account
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/identity/Account.java
+
+camunda/fox-engine;f4c7d19e0;Fix for ACT-1290: TaskService.saveTask(Task) does not enforce optimistic locking
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/SaveTaskCmd.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/db/DbSqlSession.java
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/db/HasRevision.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/identity/Account.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/jobexecutor/AcquireJobsRunnable.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/AttachmentEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ByteArrayEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/CommentEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/EventSubscriptionEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ExecutionEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/GroupEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/GroupManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/HistoricDetailVariableInstanceUpdateEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/HistoricVariableInstanceEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/IdentityInfoEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/JobEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/ProcessDefinitionEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/PropertyEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/TaskEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/UserEntity.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/UserManager.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/VariableInstanceEntity.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/identity/IdentityServiceTest.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/task/TaskServiceTest.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/usertask/UserTaskTest.java
+M	modules/activiti-engine/src/test/java/org/activiti/examples/task/StandaloneTaskTest.java
+
+camunda/fox-engine;ab4510415;Adding extra destroy to PluggableActivitiTestCase, just to be sure
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/test/PluggableActivitiTestCase.java
+
+camunda/fox-engine;55712b7ad;Trying to fix strange cache issue on QA Re-introducing caching now we found the culprit (overzealous caching in the ResourceActivitiTestCase, where it would add an in-memory H2 driven process engine, which would then be picked up by the PluggableActivitiTestCase). This makes running the tests again faster.
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/test/AbstractActivitiTestCase.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/test/PluggableActivitiTestCase.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/test/ResourceActivitiTestCase.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/repository/diagram/ProcessDiagramRetrievalTest.java
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testInvoiceProcessCamundaFoxDesigner.jpg.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testInvoiceProcessFromBusinessProcessIncubator.png.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testInvoiceProcessSignavio.png.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testProcessFromActivitiDesigner.png.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testProcessFromAdonis.png.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testProcessFromCamundaFoxDesigner.jpg.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testProcessFromCamundaFoxDesigner.png.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testProcessFromIboPrometheus.jpg.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testProcessFromIboPrometheus.png.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testProcessFromYaoqiang.png.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testProcessWithTask.png.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testSequenceFlowOutOfBounds.png.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testStartAndEndEventWithNegativeCoordinates.png.html
+M	modules/activiti-engine/src/test/resources/org/activiti/engine/test/api/repository/diagram/testStartEventWithNegativeCoordinates.png.html
+M	modules/activiti-spring/src/test/java/org/activiti/spring/test/servicetask/BoundaryErrorEventSpringTest.java
+
+camunda/fox-engine;e54dfa980;Disabled ProcessDiagramRetrievalTest, as it fails on JDK 7. Enabled tests which were excluded and whose jira issue was resolved.
+M	modules/activiti-engine/pom.xml
+
+camunda/fox-engine;87e4cc704;ACT-1334: standalone task has two owners (Explorer)
+M	modules/activiti-webapp-explorer2/src/main/java/org/activiti/explorer/ui/task/TaskInvolvedPeopleComponent.java
+
+camunda/fox-engine;c34f4e4dd;ACT-1318: added test case for bug report. Can't reproduce the bug from the issue, but still committing the tests nonetheless as they are useful
+M	modules/activiti-engine/src/test/java/org/activiti/examples/bpmn/scripttask/ScriptTaskTest.java
+A	modules/activiti-engine/src/test/java/org/activiti/examples/bpmn/scripttask/ScriptTaskTestPojo.java
+A	modules/activiti-engine/src/test/resources/org/activiti/examples/bpmn/scripttask/ScriptTaskTest.testExceptionThrownInScript.bpmn20.xml
+A	modules/activiti-engine/src/test/resources/org/activiti/examples/bpmn/scripttask/ScriptTaskTest.testFailingScript.bpmn20.xml
+
+camunda/fox-engine;687854509;ACT-1391: unexpected errors while parsing BPMN no longer ignored, but bubbled up
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/deployment/BpmnDeploymentTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/bpmn/deployment/BpmnDeploymentTest.testInvalidExpression.bpmn20.xml
+
+camunda/fox-engine;a9d3a83ea;Added Nullpointer-check in parseBPMNEdge
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/parser/BpmnParse.java
+
+camunda/fox-engine;ef082363e; Prepare next Fox-Release: set developmentVersion to 1.32.0-SNAPSHOT
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+camunda/fox-engine;63d3fe240; Prepare Fox-Release: set versions to 1.31.0
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+camunda/fox-engine;75111150e;HEMERA-3166: Fixed postgres engine and identity drop sql.
+M	modules/activiti-engine/src/main/resources/org/activiti/db/drop/activiti.postgres.drop.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/drop/activiti.postgres.drop.identity.sql
+
+camunda/fox-engine;b9813aa85;merged db4e7d2
+M	modules/activiti-engine/pom.xml
+M	pom.xml
+
+camunda/fox-engine;c19d5deac;HEMERA-3472 resetting postgres db version driver to 9.x
+M	pom.xml
+
+camunda/fox-engine;bff4a7f22;Fix for ACT-1528:  All variables are deleted after delete a history processinstance
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricVariableInstance.xml
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/history/HistoricVariableInstanceTest.java
+A	modules/activiti-engine/src/test/resources/org/activiti/engine/test/history/HistoricVariableInstanceTest.testHistoricProcessInstanceDeleteCascadesCorrectly.bpmn20.xml
+
+camunda/fox-engine;9860df5a6; Prepare next Fox-Release: set developmentVersion to 1.31.0-SNAPSHOT
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+camunda/fox-engine;c58a533ae; Prepare Fox-Release: set versions to 1.30.0
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+camunda/fox-engine;666c90344;ACT-1430: Added getStartFormKey and getTaskFromKey to FormService
+M	modules/activiti-engine/src/main/java/org/activiti/engine/FormService.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/FormServiceImpl.java
+A	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/GetFormKeyCmd.java
+M	modules/activiti-engine/src/test/java/org/activiti/engine/test/api/form/FormServiceTest.java
+
+camunda/fox-engine;69df11590;changed README
+M	README.md
+
+camunda/fox-engine;8256b9859;[#HEMERA-2926] setting datatype of database columns of type 'datetype' to 'datetyme2' in management service testcase
+M	modules/activiti-engine/src/test/java/org/activiti/examples/mgmt/ManagementServiceTest.java
+
+camunda/fox-engine;0783cae9c;[#HEMERA-2926] setting datatype of database columns of type 'datetype' to 'datetyme2' in management service testcase
+M	modules/activiti-engine/src/test/java/org/activiti/examples/mgmt/ManagementServiceTest.java
+
+camunda/fox-engine;d8fa796ec;[#HEMERA-2926] setting datatype of database columns of type 'datetype' to 'datetyme2' in mssql create script
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mssql.create.engine.sql
+
+camunda/fox-engine;470bcf729;[#HEMERA-2926] fixing sql query aliases in ExecutionQuery and ProcessInstanceQuery
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ExecutionQueryProperty.java
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessInstanceQueryProperty.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/Execution.xml
+
+camunda/fox-engine;6a64ab5c9;[#HEMERA-2859] setting version to 'fox'
+M	modules/activiti-engine/src/main/java/org/activiti/engine/ProcessEngine.java
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.db2.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mssql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.oracle.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.postgres.create.engine.sql
+
+camunda/fox-engine;7d5e8cede;[#HEMERA-2894] fix selectHistoricVariableInstanceCountByQueryCriteria query on Mssql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/mapping/entity/HistoricVariableInstance.xml
+
+camunda/fox-engine;1c9f37cdc;Upgrating oracle jdbc driver to ojdbc6
+M	modules/activiti-engine/pom.xml
+M	pom.xml
+
+camunda/fox-engine;b77db0512;[#HEMERA-2871] adjusting poms. Changing scm coordinates form bitbucket to github
+M	pom.xml
+
+camunda/fox-engine;338384239;[#HEMERA-2871] adjusting poms. Changing groupIds and artifactIds
+M	modules/activiti-cactus/pom.xml
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-upgrade/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml

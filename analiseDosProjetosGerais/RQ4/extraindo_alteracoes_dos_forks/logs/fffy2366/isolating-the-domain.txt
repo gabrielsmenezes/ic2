@@ -1,0 +1,145 @@
+fffy2366/isolating-the-domain;d0a1dbf;mybatis test
+M	README.md
+M	build.gradle
+A	src/main/java/com/fxt/dao/UserMapper.java
+A	src/main/java/com/fxt/mapping/UserMapper.xml
+A	src/main/java/com/fxt/pojo/User.java
+A	src/main/java/com/fxt/service/IUserService.java
+A	src/main/java/com/fxt/service/com/fxt/service/impl/UserServiceImpl.java
+M	src/main/resources/jdbc.properties
+M	src/main/resources/spring-mybatis.xml
+A	src/test/java/test/fxt/TestMyBatis.java
+
+fffy2366/isolating-the-domain;6900d8a;Add web module
+M	.gitignore
+M	README.md
+M	build.gradle
+M	src/main/java/example/Main.java
+A	src/main/java/example/datasource/hotel/HotelPriceMapper.java
+A	src/main/java/example/model/hotel/HotelPrice.java
+M	src/main/java/example/model/hotel/HotelPriceResponse.java
+A	src/main/java/example/service/HotelPriceService.java
+D	src/main/resources/Mysql.properties
+A	src/main/resources/jdbc.properties
+A	src/main/resources/log4j.properties
+A	src/main/resources/mappers/HotelPriceMapper.xml
+A	src/main/resources/rebel.xml
+A	src/main/resources/spring-mybatis.xml
+A	src/main/webapp/WEB-INF/web.xml
+A	src/main/webapp/index.jsp
+
+fffy2366/isolating-the-domain;6708cbd;prepare to get price
+M	README.md
+A	libs/mysql-connector-java-5.1.27.jar
+M	src/main/java/example/Main.java
+A	src/main/java/example/datasource/city/JltourCityMapper.java
+A	src/main/java/example/datasource/city/TwCityMapper.java
+M	src/main/java/example/datasource/hotel/HotelIdMapper.java
+A	src/main/java/example/model/city/JltourCity.java
+A	src/main/java/example/model/city/TwCity.java
+M	src/main/java/example/model/hotel/Hotel.java
+A	src/main/java/example/model/hotel/HotelPriceRequest.java
+A	src/main/java/example/model/hotel/HotelPriceResponse.java
+M	src/main/java/example/service/HotelIdService.java
+M	src/main/java/example/service/HotelService.java
+A	src/main/java/example/service/JltourCityService.java
+M	src/main/resources/mappers/HotelIdMapper.xml
+M	src/main/resources/mappers/HotelMapper.xml
+A	src/main/resources/mappers/JltourCityMapper.xml
+A	src/main/resources/mappers/TwCityMapper.xml
+M	src/main/resources/mybatis_liuwan_biz.xml
+
+fffy2366/isolating-the-domain;e2b132f;curl all hotel
+M	README.md
+D	libs/gson-2.5.jar
+D	libs/gson-2.51.jar
+D	libs/mysql-connector-java-5.1.27.jar
+M	src/main/java/example/Main.java
+M	src/main/java/example/datasource/hotel/HotelIdMapper.java
+A	src/main/java/example/datasource/hotel/HotelMapper.java
+A	src/main/java/example/datasource/hotel/HotelRoomMapper.java
+A	src/main/java/example/model/hotel/BedType.java
+M	src/main/java/example/model/hotel/Hotel.java
+M	src/main/java/example/model/hotel/HotelResult.java
+A	src/main/java/example/model/hotel/HotelRoom.java
+A	src/main/java/example/service/HotelIdService.java
+A	src/main/java/example/service/HotelRoomService.java
+A	src/main/java/example/service/HotelService.java
+M	src/main/resources/application.properties
+M	src/main/resources/mappers/HotelIdMapper.xml
+A	src/main/resources/mappers/HotelMapper.xml
+A	src/main/resources/mappers/HotelRoomMapper.xml
+M	src/main/resources/mybatis.xml
+M	src/main/resources/mybatis_liuwan_biz.xml
+M	src/test/groovy/example/service/user/UserServiceSpec.groovy
+
+fffy2366/isolating-the-domain;c3bad3b;reset bootRun
+M	build.gradle
+M	src/main/java/example/Application.java
+M	src/main/java/example/Main.java
+D	src/main/java/example/TestMyBatis.java
+R096	src/main/java/mpers/UserDatasource.java	src/main/java/example/datasource/user/UserDatasource.java
+R092	src/main/java/mpers/UserMapper.java	src/main/java/example/datasource/user/UserMapper.java
+D	src/main/resources/mappers/UserMapper.xml
+D	src/main/resources/mpers/UserMapper.xml
+M	src/main/resources/mybatis.xml
+D	src/main/resources/mybatis2.xml
+M	src/test/groovy/example/TestConfiguration.groovy
+R092	src/main/java/example/Test.java	src/test/java/test/mybatis/Test.java
+M	src/test/java/test/mybatis/TestMyBatis.java
+
+fffy2366/isolating-the-domain;5626dcc;hotel
+M	src/main/java/example/Main.java
+M	src/main/java/example/Test.java
+M	src/main/java/example/model/hotel/Hotel.java
+
+fffy2366/isolating-the-domain;e9c5d0e;jltour api
+M	README.md
+M	build.gradle
+A	libs/gson-2.5.jar
+A	libs/gson-2.51.jar
+A	libs/mysql-connector-java-5.1.27.jar
+A	src/main/java/example/Main.java
+M	src/main/java/example/MyBatisConfig.java
+A	src/main/java/example/MyBatisUtil.java
+M	src/main/java/example/Test.java
+A	src/main/java/example/TestMyBatis.java
+A	src/main/java/example/datasource/hotel/HotelIdMapper.java
+R095	src/main/java/example/datasource/infrastructure/mybatis/LocalDateHandler.java	src/main/java/example/datasource/user/infrastructure/mybatis/LocalDateHandler.java
+R096	src/main/java/example/datasource/infrastructure/mybatis/LocalDateTimeHandler.java	src/main/java/example/datasource/user/infrastructure/mybatis/LocalDateTimeHandler.java
+R060	src/main/java/example/datasource/package-info.java	src/main/java/example/datasource/user/package-info.java
+A	src/main/java/example/model/hotel/Hotel.java
+A	src/main/java/example/model/hotel/HotelId.java
+A	src/main/java/example/model/hotel/HotelIdResult.java
+A	src/main/java/example/model/hotel/HotelRequest.java
+A	src/main/java/example/model/hotel/HotelResult.java
+R096	src/main/java/example/datasource/user/UserDatasource.java	src/main/java/mpers/UserDatasource.java
+R093	src/main/java/example/datasource/user/UserMapper.java	src/main/java/mpers/UserMapper.java
+A	src/main/resources/mappers/HotelIdMapper.xml
+A	src/main/resources/mpers/UserMapper.xml
+A	src/main/resources/mybatis2.xml
+A	src/main/resources/mybatis_liuwan_biz.xml
+M	src/test/groovy/example/TestConfiguration.groovy
+M	src/test/groovy/example/service/user/UserServiceSpec.groovy
+
+fffy2366/isolating-the-domain;22c5f9a;mybatis test
+M	README.md
+M	build.gradle
+M	src/main/java/example/Application.java
+A	src/main/java/example/Test.java
+D	src/main/java/example/web/Test.java
+A	src/main/resources/Mysql.properties
+M	src/main/resources/data.sql
+A	src/main/resources/mappers/UserMapper.xml
+A	src/main/resources/messages_zh.properties
+M	src/main/resources/mybatis.xml
+M	src/main/resources/templates/top.html
+A	src/test/java/test/mybatis/MyBatisUtil.java
+A	src/test/java/test/mybatis/TestMyBatis.java
+A	src/test/java/test/mybatis/User.java
+A	src/test/java/test/mybatis/UserMapper.java
+A	src/test/resources/mappers/UserMapper.xml
+A	src/test/resources/mybatis-config.xml
+
+fffy2366/isolating-the-domain;576636d;test
+A	src/main/java/example/web/Test.java

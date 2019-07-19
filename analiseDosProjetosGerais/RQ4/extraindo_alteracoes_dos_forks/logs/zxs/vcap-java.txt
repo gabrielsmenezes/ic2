@@ -1,0 +1,13 @@
+zxs/vcap-java;7661ecc;Support WebHDFS as a Service
+M	auto-reconfiguration/pom.xml
+M	auto-reconfiguration/src/main/java/org/cloudfoundry/reconfiguration/CloudAutoStagingBeanFactoryPostProcessor.java
+A	auto-reconfiguration/src/main/java/org/cloudfoundry/reconfiguration/data/blob/WebHDFSConfigurer.java
+M	cloudfoundry-runtime/pom.xml
+M	cloudfoundry-runtime/src/main/java/org/cloudfoundry/runtime/env/CloudEnvironment.java
+A	cloudfoundry-runtime/src/main/java/org/cloudfoundry/runtime/env/WebHDFSServiceInfo.java
+A	cloudfoundry-runtime/src/main/java/org/cloudfoundry/runtime/service/bigdata/CloudWebHDFSConfiguration.java
+A	cloudfoundry-runtime/src/main/java/org/cloudfoundry/runtime/service/bigdata/CloudWebHDFSConnectionFactoryBean.java
+A	cloudfoundry-runtime/src/main/java/org/cloudfoundry/runtime/service/bigdata/WebHDFSServiceCreator.java
+M	cloudfoundry-runtime/src/main/java/org/cloudfoundry/runtime/service/config/xml/CloudNamespaceHandler.java
+A	cloudfoundry-runtime/src/main/java/org/cloudfoundry/runtime/service/config/xml/CloudWebHDFSConnectionFactoryParser.java
+M	cloudfoundry-runtime/src/main/resources/org/cloudfoundry/runtime/service/config/xml/cloudfoundry-spring.xsd

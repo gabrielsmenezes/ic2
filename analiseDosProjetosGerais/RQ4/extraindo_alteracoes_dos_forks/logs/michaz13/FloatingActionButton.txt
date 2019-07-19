@@ -1,0 +1,885 @@
+michaz13/FloatingActionButton;085cf1a;dim: sync option visibility fixed
+M	app/src/main/java/com/melnykov/fab/sample/ChartFragment.java
+M	app/src/main/java/com/melnykov/fab/sample/Debt.java
+M	app/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	app/src/main/java/com/melnykov/fab/sample/MainActivity.java
+
+michaz13/FloatingActionButton;9b574d6;mic: psl lib added
+R100	library/.gitignore	app/.gitignore
+R097	sample/build.gradle	app/build.gradle
+R100	sample/libs/gson-2.3.1.jar	app/libs/gson-2.3.1.jar
+R100	sample/libs/libphonenumber-7.0.9.jar	app/libs/libphonenumber-7.0.9.jar
+R100	sample/libs/sinch-android-rtc-3.6.2.jar	app/libs/sinch-android-rtc-3.6.2.jar
+R100	sample/libs/svg-android-1.1.jar	app/libs/svg-android-1.1.jar
+R100	sample/src/main/AndroidManifest.xml	app/src/main/AndroidManifest.xml
+R100	sample/src/main/java/com/melnykov/fab/sample/ChartFragment.java	app/src/main/java/com/melnykov/fab/sample/ChartFragment.java
+R100	sample/src/main/java/com/melnykov/fab/sample/Debt.java	app/src/main/java/com/melnykov/fab/sample/Debt.java
+R075	sample/src/main/java/com/melnykov/fab/sample/DebtListAdapter.java	app/src/main/java/com/melnykov/fab/sample/DebtListAdapter.java
+R100	sample/src/main/java/com/melnykov/fab/sample/DebtListApplication.java	app/src/main/java/com/melnykov/fab/sample/DebtListApplication.java
+R100	sample/src/main/java/com/melnykov/fab/sample/DueDateAlarm.java	app/src/main/java/com/melnykov/fab/sample/DueDateAlarm.java
+R098	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java	app/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+R100	sample/src/main/java/com/melnykov/fab/sample/ListUsersActivity.java	app/src/main/java/com/melnykov/fab/sample/ListUsersActivity.java
+R100	sample/src/main/java/com/melnykov/fab/sample/ListViewFragment.java	app/src/main/java/com/melnykov/fab/sample/ListViewFragment.java
+R100	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java	app/src/main/java/com/melnykov/fab/sample/MainActivity.java
+R100	sample/src/main/java/com/melnykov/fab/sample/MessageAdapter.java	app/src/main/java/com/melnykov/fab/sample/MessageAdapter.java
+R100	sample/src/main/java/com/melnykov/fab/sample/MessageService.java	app/src/main/java/com/melnykov/fab/sample/MessageService.java
+R100	sample/src/main/java/com/melnykov/fab/sample/MessagingActivity.java	app/src/main/java/com/melnykov/fab/sample/MessagingActivity.java
+R100	sample/src/main/java/com/melnykov/fab/sample/MyPushReceiver.java	app/src/main/java/com/melnykov/fab/sample/MyPushReceiver.java
+R100	sample/src/main/java/com/melnykov/fab/sample/SettingsActivity.java	app/src/main/java/com/melnykov/fab/sample/SettingsActivity.java
+R100	sample/src/main/java/com/melnykov/fab/sample/SettingsManager.java	app/src/main/java/com/melnykov/fab/sample/SettingsManager.java
+R100	sample/src/main/java/com/melnykov/fab/sample/SplashActivity.java	app/src/main/java/com/melnykov/fab/sample/SplashActivity.java
+R100	sample/src/main/jniLibs/armeabi-v7a/libsinch-android-rtc.so	app/src/main/jniLibs/armeabi-v7a/libsinch-android-rtc.so
+R100	sample/src/main/jniLibs/armeabi/libsinch-android-rtc.so	app/src/main/jniLibs/armeabi/libsinch-android-rtc.so
+R100	sample/src/main/jniLibs/x86/libsinch-android-rtc.so	app/src/main/jniLibs/x86/libsinch-android-rtc.so
+R100	sample/src/main/res/drawable-hdpi-v11/action_bar_icon_discard.png	app/src/main/res/drawable-hdpi-v11/action_bar_icon_discard.png
+R100	sample/src/main/res/drawable-hdpi/ic_add_white_24dp.png	app/src/main/res/drawable-hdpi/ic_add_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_add_white_36dp.png	app/src/main/res/drawable-hdpi/ic_add_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_alarm_add_white_24dp.png	app/src/main/res/drawable-hdpi/ic_alarm_add_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_alarm_white_36dp.png	app/src/main/res/drawable-hdpi/ic_alarm_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_autorenew_white_36dp.png	app/src/main/res/drawable-hdpi/ic_autorenew_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_call_black_24dp.png	app/src/main/res/drawable-hdpi/ic_call_black_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_call_black_36dp.png	app/src/main/res/drawable-hdpi/ic_call_black_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_call_white_36dp.png	app/src/main/res/drawable-hdpi/ic_call_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_cancel_white_24dp.png	app/src/main/res/drawable-hdpi/ic_cancel_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_cancel_white_36dp.png	app/src/main/res/drawable-hdpi/ic_cancel_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_close_white_24dp.png	app/src/main/res/drawable-hdpi/ic_close_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_close_white_36dp.png	app/src/main/res/drawable-hdpi/ic_close_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_cloud_upload_white_24dp.png	app/src/main/res/drawable-hdpi/ic_cloud_upload_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_cloud_upload_white_36dp.png	app/src/main/res/drawable-hdpi/ic_cloud_upload_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_dashboard_white_36dp.png	app/src/main/res/drawable-hdpi/ic_dashboard_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_data_usage_white_24dp.png	app/src/main/res/drawable-hdpi/ic_data_usage_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_delete_white_24dp.png	app/src/main/res/drawable-hdpi/ic_delete_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_delete_white_36dp.png	app/src/main/res/drawable-hdpi/ic_delete_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_done_white_24dp.png	app/src/main/res/drawable-hdpi/ic_done_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_done_white_36dp.png	app/src/main/res/drawable-hdpi/ic_done_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_insert_chart_white_24dp.png	app/src/main/res/drawable-hdpi/ic_insert_chart_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_keyboard_voice_white_24dp.png	app/src/main/res/drawable-hdpi/ic_keyboard_voice_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_keyboard_voice_white_36dp.png	app/src/main/res/drawable-hdpi/ic_keyboard_voice_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_launcher.png	app/src/main/res/drawable-hdpi/ic_launcher.png
+R100	sample/src/main/res/drawable-hdpi/ic_mode_edit_white_24dp.png	app/src/main/res/drawable-hdpi/ic_mode_edit_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_mode_edit_white_36dp.png	app/src/main/res/drawable-hdpi/ic_mode_edit_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_search_white_24dp.png	app/src/main/res/drawable-hdpi/ic_search_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_search_white_36dp.png	app/src/main/res/drawable-hdpi/ic_search_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_settings_white_36dp.png	app/src/main/res/drawable-hdpi/ic_settings_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_view_list_white_24dp.png	app/src/main/res/drawable-hdpi/ic_view_list_white_24dp.png
+R100	sample/src/main/res/drawable-hdpi/ic_view_list_white_36dp.png	app/src/main/res/drawable-hdpi/ic_view_list_white_36dp.png
+R100	sample/src/main/res/drawable-hdpi/send_button_normal.png	app/src/main/res/drawable-hdpi/send_button_normal.png
+R100	sample/src/main/res/drawable-hdpi/send_button_pressed.png	app/src/main/res/drawable-hdpi/send_button_pressed.png
+R100	sample/src/main/res/drawable-ldrtl-hdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png	app/src/main/res/drawable-ldrtl-hdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png
+R100	sample/src/main/res/drawable-ldrtl-mdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png	app/src/main/res/drawable-ldrtl-mdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png
+R100	sample/src/main/res/drawable-ldrtl-xhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png	app/src/main/res/drawable-ldrtl-xhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png
+R100	sample/src/main/res/drawable-ldrtl-xxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png	app/src/main/res/drawable-ldrtl-xxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png
+R100	sample/src/main/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png	app/src/main/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png
+R100	sample/src/main/res/drawable-mdpi-v11/action_bar_icon_discard.png	app/src/main/res/drawable-mdpi-v11/action_bar_icon_discard.png
+R100	sample/src/main/res/drawable-mdpi/action_bar_icon_discard.png	app/src/main/res/drawable-mdpi/action_bar_icon_discard.png
+R100	sample/src/main/res/drawable-mdpi/ic_add_white_24dp.png	app/src/main/res/drawable-mdpi/ic_add_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_add_white_36dp.png	app/src/main/res/drawable-mdpi/ic_add_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_alarm_add_white_24dp.png	app/src/main/res/drawable-mdpi/ic_alarm_add_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_alarm_white_36dp.png	app/src/main/res/drawable-mdpi/ic_alarm_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_autorenew_white_36dp.png	app/src/main/res/drawable-mdpi/ic_autorenew_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_call_black_24dp.png	app/src/main/res/drawable-mdpi/ic_call_black_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_call_black_36dp.png	app/src/main/res/drawable-mdpi/ic_call_black_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_call_white_36dp.png	app/src/main/res/drawable-mdpi/ic_call_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_cancel_white_24dp.png	app/src/main/res/drawable-mdpi/ic_cancel_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_cancel_white_36dp.png	app/src/main/res/drawable-mdpi/ic_cancel_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_close_white_24dp.png	app/src/main/res/drawable-mdpi/ic_close_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_close_white_36dp.png	app/src/main/res/drawable-mdpi/ic_close_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_cloud_upload_white_24dp.png	app/src/main/res/drawable-mdpi/ic_cloud_upload_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_cloud_upload_white_36dp.png	app/src/main/res/drawable-mdpi/ic_cloud_upload_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_dashboard_white_36dp.png	app/src/main/res/drawable-mdpi/ic_dashboard_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_data_usage_white_24dp.png	app/src/main/res/drawable-mdpi/ic_data_usage_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_delete_white_24dp.png	app/src/main/res/drawable-mdpi/ic_delete_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_delete_white_36dp.png	app/src/main/res/drawable-mdpi/ic_delete_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_done_white_24dp.png	app/src/main/res/drawable-mdpi/ic_done_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_done_white_36dp.png	app/src/main/res/drawable-mdpi/ic_done_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_insert_chart_white_24dp.png	app/src/main/res/drawable-mdpi/ic_insert_chart_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_keyboard_voice_white_24dp.png	app/src/main/res/drawable-mdpi/ic_keyboard_voice_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_keyboard_voice_white_36dp.png	app/src/main/res/drawable-mdpi/ic_keyboard_voice_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_launcher.png	app/src/main/res/drawable-mdpi/ic_launcher.png
+R100	sample/src/main/res/drawable-mdpi/ic_mode_edit_white_24dp.png	app/src/main/res/drawable-mdpi/ic_mode_edit_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_mode_edit_white_36dp.png	app/src/main/res/drawable-mdpi/ic_mode_edit_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_search_white_24dp.png	app/src/main/res/drawable-mdpi/ic_search_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_search_white_36dp.png	app/src/main/res/drawable-mdpi/ic_search_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_settings_white_36dp.png	app/src/main/res/drawable-mdpi/ic_settings_white_36dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_view_list_white_24dp.png	app/src/main/res/drawable-mdpi/ic_view_list_white_24dp.png
+R100	sample/src/main/res/drawable-mdpi/ic_view_list_white_36dp.png	app/src/main/res/drawable-mdpi/ic_view_list_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi-v11/action_bar_icon_discard.png	app/src/main/res/drawable-xhdpi-v11/action_bar_icon_discard.png
+R100	sample/src/main/res/drawable-xhdpi/action_bar_icon_discard.png	app/src/main/res/drawable-xhdpi/action_bar_icon_discard.png
+R100	sample/src/main/res/drawable-xhdpi/grey_bubble.9.png	app/src/main/res/drawable-xhdpi/grey_bubble.9.png
+R100	sample/src/main/res/drawable-xhdpi/ic_add_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_add_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_add_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_add_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_alarm_add_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_alarm_add_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_alarm_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_alarm_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_autorenew_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_autorenew_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_call_black_24dp.png	app/src/main/res/drawable-xhdpi/ic_call_black_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_call_black_36dp.png	app/src/main/res/drawable-xhdpi/ic_call_black_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_call_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_call_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_cancel_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_cancel_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_cancel_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_cancel_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_close_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_close_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_close_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_close_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_cloud_upload_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_cloud_upload_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_cloud_upload_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_cloud_upload_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_dashboard_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_dashboard_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_data_usage_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_data_usage_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_delete_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_delete_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_delete_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_delete_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_done_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_done_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_done_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_done_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_insert_chart_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_insert_chart_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_keyboard_voice_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_keyboard_voice_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_keyboard_voice_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_keyboard_voice_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_launcher.png	app/src/main/res/drawable-xhdpi/ic_launcher.png
+R100	sample/src/main/res/drawable-xhdpi/ic_mode_edit_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_mode_edit_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_mode_edit_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_mode_edit_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_search_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_search_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_search_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_search_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_settings_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_settings_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_view_list_white_24dp.png	app/src/main/res/drawable-xhdpi/ic_view_list_white_24dp.png
+R100	sample/src/main/res/drawable-xhdpi/ic_view_list_white_36dp.png	app/src/main/res/drawable-xhdpi/ic_view_list_white_36dp.png
+R100	sample/src/main/res/drawable-xhdpi/purple_bubble.9.png	app/src/main/res/drawable-xhdpi/purple_bubble.9.png
+R100	sample/src/main/res/drawable-xxhdpi/at.png	app/src/main/res/drawable-xxhdpi/at.png
+R100	sample/src/main/res/drawable-xxhdpi/au.png	app/src/main/res/drawable-xxhdpi/au.png
+R100	sample/src/main/res/drawable-xxhdpi/br.png	app/src/main/res/drawable-xxhdpi/br.png
+R100	sample/src/main/res/drawable-xxhdpi/ca.png	app/src/main/res/drawable-xxhdpi/ca.png
+R100	sample/src/main/res/drawable-xxhdpi/ch.png	app/src/main/res/drawable-xxhdpi/ch.png
+R100	sample/src/main/res/drawable-xxhdpi/cl.png	app/src/main/res/drawable-xxhdpi/cl.png
+R100	sample/src/main/res/drawable-xxhdpi/cn.png	app/src/main/res/drawable-xxhdpi/cn.png
+R100	sample/src/main/res/drawable-xxhdpi/cz.png	app/src/main/res/drawable-xxhdpi/cz.png
+R100	sample/src/main/res/drawable-xxhdpi/de.png	app/src/main/res/drawable-xxhdpi/de.png
+R100	sample/src/main/res/drawable-xxhdpi/dk.png	app/src/main/res/drawable-xxhdpi/dk.png
+R100	sample/src/main/res/drawable-xxhdpi/ee.png	app/src/main/res/drawable-xxhdpi/ee.png
+R100	sample/src/main/res/drawable-xxhdpi/fi.png	app/src/main/res/drawable-xxhdpi/fi.png
+R100	sample/src/main/res/drawable-xxhdpi/fr.png	app/src/main/res/drawable-xxhdpi/fr.png
+R100	sample/src/main/res/drawable-xxhdpi/gr.png	app/src/main/res/drawable-xxhdpi/gr.png
+R100	sample/src/main/res/drawable-xxhdpi/hr.png	app/src/main/res/drawable-xxhdpi/hr.png
+R100	sample/src/main/res/drawable-xxhdpi/hu.png	app/src/main/res/drawable-xxhdpi/hu.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_add_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_add_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_add_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_add_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_alarm_add_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_alarm_add_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_alarm_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_alarm_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_autorenew_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_autorenew_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_call_black_24dp.png	app/src/main/res/drawable-xxhdpi/ic_call_black_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_call_black_36dp.png	app/src/main/res/drawable-xxhdpi/ic_call_black_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_call_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_call_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_cancel_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_cancel_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_cancel_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_cancel_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_close_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_close_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_close_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_close_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_cloud_upload_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_cloud_upload_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_cloud_upload_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_cloud_upload_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_dashboard_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_dashboard_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_data_usage_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_data_usage_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_delete_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_delete_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_delete_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_delete_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_done_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_done_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_done_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_done_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_insert_chart_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_insert_chart_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_keyboard_voice_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_keyboard_voice_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_keyboard_voice_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_keyboard_voice_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_launcher.png	app/src/main/res/drawable-xxhdpi/ic_launcher.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_mode_edit_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_mode_edit_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_mode_edit_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_mode_edit_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_search_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_search_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_search_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_search_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_settings_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_settings_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_view_list_white_24dp.png	app/src/main/res/drawable-xxhdpi/ic_view_list_white_24dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ic_view_list_white_36dp.png	app/src/main/res/drawable-xxhdpi/ic_view_list_white_36dp.png
+R100	sample/src/main/res/drawable-xxhdpi/ie.png	app/src/main/res/drawable-xxhdpi/ie.png
+R100	sample/src/main/res/drawable-xxhdpi/in.png	app/src/main/res/drawable-xxhdpi/in.png
+R100	sample/src/main/res/drawable-xxhdpi/is.png	app/src/main/res/drawable-xxhdpi/is.png
+R100	sample/src/main/res/drawable-xxhdpi/it.png	app/src/main/res/drawable-xxhdpi/it.png
+R100	sample/src/main/res/drawable-xxhdpi/lt.png	app/src/main/res/drawable-xxhdpi/lt.png
+R100	sample/src/main/res/drawable-xxhdpi/lv.png	app/src/main/res/drawable-xxhdpi/lv.png
+R100	sample/src/main/res/drawable-xxhdpi/nl.png	app/src/main/res/drawable-xxhdpi/nl.png
+R100	sample/src/main/res/drawable-xxhdpi/no.png	app/src/main/res/drawable-xxhdpi/no.png
+R100	sample/src/main/res/drawable-xxhdpi/nz.png	app/src/main/res/drawable-xxhdpi/nz.png
+R100	sample/src/main/res/drawable-xxhdpi/se.png	app/src/main/res/drawable-xxhdpi/se.png
+R100	sample/src/main/res/drawable-xxhdpi/ua.png	app/src/main/res/drawable-xxhdpi/ua.png
+R100	sample/src/main/res/drawable-xxhdpi/us.png	app/src/main/res/drawable-xxhdpi/us.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_add_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_add_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_add_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_add_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_alarm_add_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_alarm_add_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_alarm_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_alarm_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_autorenew_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_autorenew_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_call_black_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_call_black_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_call_black_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_call_black_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_call_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_call_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_cancel_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_cancel_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_cancel_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_cancel_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_close_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_close_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_close_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_close_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_cloud_upload_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_cloud_upload_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_cloud_upload_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_cloud_upload_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_dashboard_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_dashboard_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_data_usage_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_data_usage_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_delete_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_delete_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_delete_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_delete_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_done_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_done_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_done_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_done_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_insert_chart_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_insert_chart_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_keyboard_voice_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_keyboard_voice_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_keyboard_voice_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_keyboard_voice_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_launcher.png	app/src/main/res/drawable-xxxhdpi/ic_launcher.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_mode_edit_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_mode_edit_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_mode_edit_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_mode_edit_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_search_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_search_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_search_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_search_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_settings_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_settings_white_36dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_view_list_white_24dp.png	app/src/main/res/drawable-xxxhdpi/ic_view_list_white_24dp.png
+R100	sample/src/main/res/drawable-xxxhdpi/ic_view_list_white_36dp.png	app/src/main/res/drawable-xxxhdpi/ic_view_list_white_36dp.png
+R100	sample/src/main/res/drawable/actions_go_next.png	app/src/main/res/drawable/actions_go_next.png
+R100	sample/src/main/res/drawable/app_logo_icon.png	app/src/main/res/drawable/app_logo_icon.png
+R100	sample/src/main/res/drawable/atm.png	app/src/main/res/drawable/atm.png
+R100	sample/src/main/res/drawable/box.png	app/src/main/res/drawable/box.png
+R100	sample/src/main/res/drawable/box2.png	app/src/main/res/drawable/box2.png
+R100	sample/src/main/res/drawable/box_black.png	app/src/main/res/drawable/box_black.png
+R100	sample/src/main/res/drawable/box_closed_icon.png	app/src/main/res/drawable/box_closed_icon.png
+R100	sample/src/main/res/drawable/box_shine.png	app/src/main/res/drawable/box_shine.png
+R100	sample/src/main/res/drawable/button_send.xml	app/src/main/res/drawable/button_send.xml
+R100	sample/src/main/res/drawable/choice_selected.xml	app/src/main/res/drawable/choice_selected.xml
+R100	sample/src/main/res/drawable/choice_unselected.xml	app/src/main/res/drawable/choice_unselected.xml
+R100	sample/src/main/res/drawable/divider.xml	app/src/main/res/drawable/divider.xml
+R100	sample/src/main/res/drawable/dollar.png	app/src/main/res/drawable/dollar.png
+R100	sample/src/main/res/drawable/generic_box.png	app/src/main/res/drawable/generic_box.png
+R100	sample/src/main/res/drawable/green_dollar.png	app/src/main/res/drawable/green_dollar.png
+R100	sample/src/main/res/drawable/ic_launcher.png	app/src/main/res/drawable/ic_launcher.png
+R100	sample/src/main/res/drawable/inputbox.xml	app/src/main/res/drawable/inputbox.xml
+R100	sample/src/main/res/drawable/misc_box.png	app/src/main/res/drawable/misc_box.png
+R100	sample/src/main/res/drawable/miscellaneous_icon.png	app/src/main/res/drawable/miscellaneous_icon.png
+R100	sample/src/main/res/drawable/open_box.png	app/src/main/res/drawable/open_box.png
+R100	sample/src/main/res/drawable/payment.png	app/src/main/res/drawable/payment.png
+R100	sample/src/main/res/drawable/real_dollar.png	app/src/main/res/drawable/real_dollar.png
+R100	sample/src/main/res/drawable/scribble_box.png	app/src/main/res/drawable/scribble_box.png
+R100	sample/src/main/res/drawable/speaker.png	app/src/main/res/drawable/speaker.png
+R100	sample/src/main/res/drawable/us_dollar.png	app/src/main/res/drawable/us_dollar.png
+R100	sample/src/main/res/layout/about_view.xml	app/src/main/res/layout/about_view.xml
+R100	sample/src/main/res/layout/activity_edit_debt.xml	app/src/main/res/layout/activity_edit_debt.xml
+R100	sample/src/main/res/layout/activity_list_users.xml	app/src/main/res/layout/activity_list_users.xml
+R100	sample/src/main/res/layout/com_parse_ui_parse_login_form.xml	app/src/main/res/layout/com_parse_ui_parse_login_form.xml
+R100	sample/src/main/res/layout/com_parse_ui_parse_signup_form.xml	app/src/main/res/layout/com_parse_ui_parse_signup_form.xml
+R100	sample/src/main/res/layout/fragment_chart.xml	app/src/main/res/layout/fragment_chart.xml
+R100	sample/src/main/res/layout/fragment_listview.xml	app/src/main/res/layout/fragment_listview.xml
+R100	sample/src/main/res/layout/list_item.xml	app/src/main/res/layout/list_item.xml
+R100	sample/src/main/res/layout/message_left.xml	app/src/main/res/layout/message_left.xml
+R100	sample/src/main/res/layout/message_right.xml	app/src/main/res/layout/message_right.xml
+R100	sample/src/main/res/layout/messaging.xml	app/src/main/res/layout/messaging.xml
+R100	sample/src/main/res/layout/settings_activity.xml	app/src/main/res/layout/settings_activity.xml
+R100	sample/src/main/res/layout/splash.xml	app/src/main/res/layout/splash.xml
+R100	sample/src/main/res/layout/user_list_item.xml	app/src/main/res/layout/user_list_item.xml
+R100	sample/src/main/res/menu/edit_debt.xml	app/src/main/res/menu/edit_debt.xml
+R100	sample/src/main/res/menu/main.xml	app/src/main/res/menu/main.xml
+R100	sample/src/main/res/menu/menu_choice_items.xml	app/src/main/res/menu/menu_choice_items.xml
+R100	sample/src/main/res/raw/app_logo.svg	app/src/main/res/raw/app_logo.svg
+R100	sample/src/main/res/raw/logo_image.svg	app/src/main/res/raw/logo_image.svg
+R100	sample/src/main/res/values-v21/styles.xml	app/src/main/res/values-v21/styles.xml
+R100	sample/src/main/res/values/arrays.xml	app/src/main/res/values/arrays.xml
+R100	sample/src/main/res/values/colors.xml	app/src/main/res/values/colors.xml
+R100	sample/src/main/res/values/dimens.xml	app/src/main/res/values/dimens.xml
+R099	sample/src/main/res/values/strings.xml	app/src/main/res/values/strings.xml
+R100	sample/src/main/res/values/styles.xml	app/src/main/res/values/styles.xml
+R100	sample/src/main/res/xml/searchable.xml	app/src/main/res/xml/searchable.xml
+R100	sample/.gitignore	fab/.gitignore
+R100	library/build.gradle	fab/build.gradle
+R100	library/gradle.properties	fab/gradle.properties
+R100	library/proguard-rules.txt	fab/proguard-rules.txt
+R100	library/src/main/AndroidManifest.xml	fab/src/main/AndroidManifest.xml
+R100	library/src/main/java/com/melnykov/fab/AbsListViewScrollDetector.java	fab/src/main/java/com/melnykov/fab/AbsListViewScrollDetector.java
+R100	library/src/main/java/com/melnykov/fab/FloatingActionButton.java	fab/src/main/java/com/melnykov/fab/FloatingActionButton.java
+R100	library/src/main/java/com/melnykov/fab/ObservableScrollView.java	fab/src/main/java/com/melnykov/fab/ObservableScrollView.java
+R100	library/src/main/java/com/melnykov/fab/RecyclerViewScrollDetector.java	fab/src/main/java/com/melnykov/fab/RecyclerViewScrollDetector.java
+R100	library/src/main/java/com/melnykov/fab/ScrollDirectionListener.java	fab/src/main/java/com/melnykov/fab/ScrollDirectionListener.java
+R100	library/src/main/java/com/melnykov/fab/ScrollViewScrollDetector.java	fab/src/main/java/com/melnykov/fab/ScrollViewScrollDetector.java
+R100	library/src/main/res/anim-v21/fab_press_elevation.xml	fab/src/main/res/anim-v21/fab_press_elevation.xml
+R100	library/src/main/res/drawable-hdpi/fab_shadow.png	fab/src/main/res/drawable-hdpi/fab_shadow.png
+R100	library/src/main/res/drawable-hdpi/fab_shadow_mini.png	fab/src/main/res/drawable-hdpi/fab_shadow_mini.png
+R100	library/src/main/res/drawable-mdpi/fab_shadow.png	fab/src/main/res/drawable-mdpi/fab_shadow.png
+R100	library/src/main/res/drawable-mdpi/fab_shadow_mini.png	fab/src/main/res/drawable-mdpi/fab_shadow_mini.png
+R100	library/src/main/res/drawable-xhdpi/fab_shadow.png	fab/src/main/res/drawable-xhdpi/fab_shadow.png
+R100	library/src/main/res/drawable-xhdpi/fab_shadow_mini.png	fab/src/main/res/drawable-xhdpi/fab_shadow_mini.png
+R100	library/src/main/res/drawable-xxhdpi/fab_shadow.png	fab/src/main/res/drawable-xxhdpi/fab_shadow.png
+R100	library/src/main/res/drawable-xxhdpi/fab_shadow_mini.png	fab/src/main/res/drawable-xxhdpi/fab_shadow_mini.png
+R100	library/src/main/res/drawable-xxxhdpi/fab_shadow.png	fab/src/main/res/drawable-xxxhdpi/fab_shadow.png
+R100	library/src/main/res/drawable-xxxhdpi/fab_shadow_mini.png	fab/src/main/res/drawable-xxxhdpi/fab_shadow_mini.png
+R100	library/src/main/res/values/attrs.xml	fab/src/main/res/values/attrs.xml
+R100	library/src/main/res/values/colors.xml	fab/src/main/res/values/colors.xml
+R100	library/src/main/res/values/dimens.xml	fab/src/main/res/values/dimens.xml
+R100	library/src/main/res/values/info_strings.xml	fab/src/main/res/values/info_strings.xml
+A	psl/.gitignore
+A	psl/AndroidManifest.xml
+A	psl/assets/.gitignore
+A	psl/build.gradle
+A	psl/proguard-project.txt
+A	psl/project.properties
+A	psl/res/.gitignore
+A	psl/src/com/hb/views/PinnedSectionListView.java
+M	settings.gradle
+
+michaz13/FloatingActionButton;0b18d23;dim: on save dialog fixed
+M	sample/src/main/java/com/melnykov/fab/sample/DebtListAdapter.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/res/values/strings.xml
+
+michaz13/FloatingActionButton;18f3e9b;mic: actions half done
+M	sample/src/main/java/com/melnykov/fab/sample/DebtListAdapter.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/res/layout/list_item.xml
+M	sample/src/main/res/values/strings.xml
+
+michaz13/FloatingActionButton;b1f405a;dim: menu sync should work
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+
+michaz13/FloatingActionButton;f9b9eec;mic: swipelist with settings
+A	sample/src/main/java/com/melnykov/fab/sample/SettingsActivity.java
+A	sample/src/main/java/com/melnykov/fab/sample/SettingsManager.java
+A	sample/src/main/res/drawable-hdpi/ic_add_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_alarm_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_call_black_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_call_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_cancel_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_close_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_dashboard_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_delete_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_done_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_keyboard_voice_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_mode_edit_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_settings_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_view_list_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_add_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_alarm_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_call_black_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_call_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_cancel_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_close_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_dashboard_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_delete_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_done_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_keyboard_voice_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_mode_edit_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_settings_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_view_list_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_add_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_alarm_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_call_black_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_call_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_cancel_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_close_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_dashboard_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_delete_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_done_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_keyboard_voice_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_mode_edit_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_settings_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_view_list_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_add_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_alarm_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_call_black_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_call_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_cancel_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_close_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_dashboard_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_delete_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_done_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_keyboard_voice_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_mode_edit_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_settings_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_view_list_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_add_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_alarm_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_call_black_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_call_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_cancel_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_close_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_dashboard_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_delete_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_done_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_keyboard_voice_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_mode_edit_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_settings_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_view_list_white_36dp.png
+A	sample/src/main/res/drawable/actions_go_next.png
+A	sample/src/main/res/drawable/atm.png
+A	sample/src/main/res/drawable/box.png
+A	sample/src/main/res/drawable/box2.png
+A	sample/src/main/res/drawable/box_black.png
+A	sample/src/main/res/drawable/box_closed_icon.png
+A	sample/src/main/res/drawable/box_shine.png
+A	sample/src/main/res/drawable/dollar.png
+A	sample/src/main/res/drawable/generic_box.png
+A	sample/src/main/res/drawable/green_dollar.png
+A	sample/src/main/res/drawable/misc_box.png
+A	sample/src/main/res/drawable/miscellaneous_icon.png
+A	sample/src/main/res/drawable/open_box.png
+A	sample/src/main/res/drawable/payment.png
+A	sample/src/main/res/drawable/real_dollar.png
+A	sample/src/main/res/drawable/scribble_box.png
+A	sample/src/main/res/drawable/speaker.png
+A	sample/src/main/res/drawable/us_dollar.png
+A	sample/src/main/res/layout/settings_activity.xml
+
+michaz13/FloatingActionButton;ca42912;mic: swipelist with listeners
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/DebtListAdapter.java
+M	sample/src/main/java/com/melnykov/fab/sample/DueDateAlarm.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/ListViewFragment.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MyPushReceiver.java
+M	sample/src/main/res/layout/fragment_listview.xml
+M	sample/src/main/res/layout/list_item.xml
+M	sample/src/main/res/menu/edit_debt.xml
+M	sample/src/main/res/menu/main.xml
+M	sample/src/main/res/values/strings.xml
+M	sample/src/main/res/values/styles.xml
+
+michaz13/FloatingActionButton;095f766;mic: swipelist no listeners no menu
+M	sample/build.gradle
+A	sample/libs/sinch-android-rtc-3.6.2.jar
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/DebtListAdapter.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+A	sample/src/main/java/com/melnykov/fab/sample/ListUsersActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/ListViewFragment.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+A	sample/src/main/java/com/melnykov/fab/sample/MessageAdapter.java
+A	sample/src/main/java/com/melnykov/fab/sample/MessageService.java
+A	sample/src/main/java/com/melnykov/fab/sample/MessagingActivity.java
+A	sample/src/main/jniLibs/armeabi-v7a/libsinch-android-rtc.so
+A	sample/src/main/jniLibs/armeabi/libsinch-android-rtc.so
+A	sample/src/main/jniLibs/x86/libsinch-android-rtc.so
+A	sample/src/main/res/drawable-hdpi-v11/action_bar_icon_discard.png
+A	sample/src/main/res/drawable-hdpi/ic_alarm_add_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_call_black_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_cancel_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_cloud_upload_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_data_usage_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_delete_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_done_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_insert_chart_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_mode_edit_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_view_list_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/send_button_normal.png
+A	sample/src/main/res/drawable-hdpi/send_button_pressed.png
+A	sample/src/main/res/drawable-mdpi-v11/action_bar_icon_discard.png
+A	sample/src/main/res/drawable-mdpi/action_bar_icon_discard.png
+A	sample/src/main/res/drawable-mdpi/ic_alarm_add_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_call_black_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_cancel_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_cloud_upload_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_data_usage_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_delete_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_done_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_insert_chart_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_mode_edit_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_view_list_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi-v11/action_bar_icon_discard.png
+A	sample/src/main/res/drawable-xhdpi/action_bar_icon_discard.png
+A	sample/src/main/res/drawable-xhdpi/grey_bubble.9.png
+A	sample/src/main/res/drawable-xhdpi/ic_alarm_add_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_call_black_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_cancel_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_cloud_upload_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_data_usage_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_delete_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_done_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_insert_chart_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_mode_edit_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_view_list_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/purple_bubble.9.png
+A	sample/src/main/res/drawable-xxhdpi/ic_alarm_add_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_call_black_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_cancel_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_cloud_upload_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_data_usage_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_delete_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_done_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_insert_chart_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_mode_edit_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_view_list_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_alarm_add_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_call_black_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_cancel_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_cloud_upload_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_data_usage_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_delete_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_done_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_insert_chart_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_mode_edit_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_view_list_white_24dp.png
+A	sample/src/main/res/drawable/button_send.xml
+A	sample/src/main/res/drawable/choice_selected.xml
+A	sample/src/main/res/drawable/choice_unselected.xml
+A	sample/src/main/res/drawable/inputbox.xml
+M	sample/src/main/res/layout/activity_edit_debt.xml
+A	sample/src/main/res/layout/activity_list_users.xml
+M	sample/src/main/res/layout/fragment_listview.xml
+M	sample/src/main/res/layout/list_item.xml
+A	sample/src/main/res/layout/message_left.xml
+A	sample/src/main/res/layout/message_right.xml
+A	sample/src/main/res/layout/messaging.xml
+A	sample/src/main/res/layout/user_list_item.xml
+M	sample/src/main/res/menu/edit_debt.xml
+A	sample/src/main/res/menu/menu_choice_items.xml
+M	sample/src/main/res/values/colors.xml
+A	sample/src/main/res/values/dimens.xml
+M	sample/src/main/res/values/strings.xml
+M	sample/src/main/res/values/styles.xml
+
+michaz13/FloatingActionButton;6d8b7ef;mic: added auto search close
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/ChartFragment.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_edit_debt.xml
+M	sample/src/main/res/menu/edit_debt.xml
+M	sample/src/main/res/menu/main.xml
+M	sample/src/main/res/values/strings.xml
+
+michaz13/FloatingActionButton;078ffe6;mic: chart mode, no edit on select
+M	sample/build.gradle
+A	sample/src/main/java/com/melnykov/fab/sample/ChartFragment.java
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/DueDateAlarm.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+R068	sample/src/main/java/com/melnykov/fab/sample/ListViewFragmentIOwe.java	sample/src/main/java/com/melnykov/fab/sample/ListViewFragment.java
+D	sample/src/main/java/com/melnykov/fab/sample/ListViewFragmentOweMe.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MyPushReceiver.java
+M	sample/src/main/res/layout/activity_edit_debt.xml
+A	sample/src/main/res/layout/fragment_chart.xml
+M	sample/src/main/res/menu/main.xml
+M	sample/src/main/res/values/strings.xml
+
+michaz13/FloatingActionButton;5f2f708;dim: tabTag bug fixed. strange
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/DueDateAlarm.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MyPushReceiver.java
+
+michaz13/FloatingActionButton;4a0c3d4;Delete README.md
+D	README.md
+
+michaz13/FloatingActionButton;984f213;mic: focus only on new
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/res/layout/activity_edit_debt.xml
+
+michaz13/FloatingActionButton;ffa4dad;dim: remove keyboard on old debt
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+
+michaz13/FloatingActionButton;b69dd4b;mic: synchronous debt prepare
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/res/values/strings.xml
+
+michaz13/FloatingActionButton;98a6f76;Merge remote-tracking branch 'origin/master'
+michaz13/FloatingActionButton;b879c80;dialog not showing on modified 2
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+
+michaz13/FloatingActionButton;7bcc365;dialog not showing on modified
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_edit_debt.xml
+M	sample/src/main/res/xml/searchable.xml
+
+michaz13/FloatingActionButton;3d3312b;amost no change
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+
+michaz13/FloatingActionButton;ebb3067;fields required2
+A	sample/src/main/res/drawable-hdpi/ic_close_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_keyboard_voice_white_24dp.png
+A	sample/src/main/res/drawable-hdpi/ic_search_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_close_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_keyboard_voice_white_24dp.png
+A	sample/src/main/res/drawable-mdpi/ic_search_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_close_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_keyboard_voice_white_24dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_search_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_close_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_keyboard_voice_white_24dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_search_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_close_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_keyboard_voice_white_24dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_search_white_24dp.png
+
+michaz13/FloatingActionButton;f6ff527;fields required
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/DebtListAdapter.java
+M	sample/src/main/java/com/melnykov/fab/sample/DebtListApplication.java
+D	sample/src/main/java/com/melnykov/fab/sample/DividerItemDecoration.java
+M	sample/src/main/java/com/melnykov/fab/sample/DueDateAlarm.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+D	sample/src/main/java/com/melnykov/fab/sample/ListViewAdapter.java
+M	sample/src/main/java/com/melnykov/fab/sample/ListViewFragmentIOwe.java
+M	sample/src/main/java/com/melnykov/fab/sample/ListViewFragmentOweMe.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MyPushReceiver.java
+D	sample/src/main/res/drawable-hdpi/ic_action_refresh.png
+A	sample/src/main/res/drawable-hdpi/ic_search_white_36dp.png
+D	sample/src/main/res/drawable-mdpi/ic_action_refresh.png
+A	sample/src/main/res/drawable-mdpi/ic_search_white_36dp.png
+D	sample/src/main/res/drawable-xhdpi/ic_action_refresh.png
+A	sample/src/main/res/drawable-xhdpi/ic_search_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_search_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_search_white_36dp.png
+M	sample/src/main/res/layout/activity_edit_debt.xml
+A	sample/src/main/res/menu/edit_debt.xml
+M	sample/src/main/res/values/strings.xml
+M	sample/src/main/res/values/styles.xml
+
+michaz13/FloatingActionButton;4803591;tabs working - separate classes
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/DebtListAdapter.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/ListViewFragmentIOwe.java
+M	sample/src/main/java/com/melnykov/fab/sample/ListViewFragmentOweMe.java
+M	sample/src/main/java/com/melnykov/fab/sample/MyPushReceiver.java
+D	sample/src/main/res/layout/fragment_listview2.xml
+D	sample/src/main/res/layout/fragment_recyclerview.xml
+D	sample/src/main/res/layout/fragment_scrollview.xml
+M	sample/src/main/res/values/strings.xml
+M	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/SlideDateTimePicker.java
+M	slideDateTimePicker/src/main/res/drawable-hdpi/selection_divider.9.png
+M	slideDateTimePicker/src/main/res/values/styles.xml
+
+michaz13/FloatingActionButton;9d39182;push working no feedback
+M	ParseLoginUI/build.gradle
+A	ParseLoginUI/libs/libphonenumber-7.0.9.jar
+M	ParseLoginUI/src/main/java/com/parse/ui/ParseSignupFragment.java
+M	sample/build.gradle
+A	sample/libs/libphonenumber-7.0.9.jar
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MyPushReceiver.java
+M	sample/src/main/res/layout/com_parse_ui_parse_signup_form.xml
+
+michaz13/FloatingActionButton;a9a3b64;small push notification fix
+M	sample/build.gradle
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MyPushReceiver.java
+
+michaz13/FloatingActionButton;d9693a1;tag reverse on push
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+R059	sample/src/main/java/com/melnykov/fab/sample/MyReceiver.java	sample/src/main/java/com/melnykov/fab/sample/MyPushReceiver.java
+M	sample/src/main/java/com/melnykov/fab/sample/SplashActivity.java
+A	sample/src/main/res/drawable/app_logo_icon.png
+A	sample/src/main/res/drawable/ic_launcher.png
+M	sample/src/main/res/layout/activity_edit_debt.xml
+M	sample/src/main/res/layout/splash.xml
+A	sample/src/main/res/raw/app_logo.svg
+A	sample/src/main/res/raw/logo_image.svg
+M	sample/src/main/res/values/strings.xml
+
+michaz13/FloatingActionButton;ed3110b;final
+M	sample/build.gradle
+A	sample/libs/svg-android-1.1.jar
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/DueDateAlarm.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/ListViewFragmentIOwe.java
+M	sample/src/main/java/com/melnykov/fab/sample/ListViewFragmentOweMe.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MyReceiver.java
+A	sample/src/main/java/com/melnykov/fab/sample/SplashActivity.java
+M	sample/src/main/res/drawable-hdpi/ic_launcher.png
+M	sample/src/main/res/drawable-mdpi/ic_launcher.png
+M	sample/src/main/res/drawable-xhdpi/ic_launcher.png
+M	sample/src/main/res/drawable-xxhdpi/ic_launcher.png
+M	sample/src/main/res/drawable-xxxhdpi/ic_launcher.png
+D	sample/src/main/res/drawable/app_logo.svg
+M	sample/src/main/res/layout/activity_edit_debt.xml
+M	sample/src/main/res/layout/fragment_listview.xml
+A	sample/src/main/res/layout/fragment_listview2.xml
+A	sample/src/main/res/layout/splash.xml
+M	sample/src/main/res/values/strings.xml
+
+michaz13/FloatingActionButton;6ed0496;push user small object
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MyReceiver.java
+A	sample/src/main/res/drawable/app_logo.svg
+M	sample/src/main/res/layout/activity_edit_debt.xml
+
+michaz13/FloatingActionButton;b2cc03e;push not checked, todo save phone
+A	sample/libs/gson-2.3.1.jar
+A	sample/src/main/java/com/melnykov/fab/sample/ListViewFragmentIOwe.java
+A	sample/src/main/java/com/melnykov/fab/sample/ListViewFragmentOweMe.java
+A	sample/src/main/java/com/melnykov/fab/sample/MyReceiver.java
+
+michaz13/FloatingActionButton;1329223;push not checked, todo save phone
+M	ParseLoginUI/src/main/java/com/parse/ui/ParseSignupFragment.java
+M	ParseLoginUI/src/main/res/layout/com_parse_ui_parse_signup_form.xml
+M	ParseLoginUI/src/main/res/values/strings.xml
+M	sample/build.gradle
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+D	sample/src/main/java/com/melnykov/fab/sample/ListViewFragment.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+D	sample/src/main/java/com/melnykov/fab/sample/RecyclerViewAdapter.java
+M	sample/src/main/res/layout/com_parse_ui_parse_signup_form.xml
+
+michaz13/FloatingActionButton;bc17ba3;push works, tabs almost done
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/DebtListAdapter.java
+M	sample/src/main/java/com/melnykov/fab/sample/DebtListApplication.java
+M	sample/src/main/java/com/melnykov/fab/sample/DueDateAlarm.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+
+michaz13/FloatingActionButton;aff1b38;contacts search, parse push start
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+M	sample/src/main/java/com/melnykov/fab/sample/DebtListApplication.java
+M	sample/src/main/java/com/melnykov/fab/sample/DueDateAlarm.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/ListViewFragment.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+A	sample/src/main/res/drawable-hdpi/ic_autorenew_white_36dp.png
+A	sample/src/main/res/drawable-hdpi/ic_cloud_upload_white_36dp.png
+A	sample/src/main/res/drawable-ldrtl-hdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png
+A	sample/src/main/res/drawable-ldrtl-mdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png
+A	sample/src/main/res/drawable-ldrtl-xhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png
+A	sample/src/main/res/drawable-ldrtl-xxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png
+A	sample/src/main/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png
+A	sample/src/main/res/drawable-mdpi/ic_autorenew_white_36dp.png
+A	sample/src/main/res/drawable-mdpi/ic_cloud_upload_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_autorenew_white_36dp.png
+A	sample/src/main/res/drawable-xhdpi/ic_cloud_upload_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_autorenew_white_36dp.png
+A	sample/src/main/res/drawable-xxhdpi/ic_cloud_upload_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_autorenew_white_36dp.png
+A	sample/src/main/res/drawable-xxxhdpi/ic_cloud_upload_white_36dp.png
+M	sample/src/main/res/layout/activity_edit_debt.xml
+M	sample/src/main/res/values/strings.xml
+A	sample/src/main/res/xml/searchable.xml
+A	slideDateTimePicker/src/main/AndroidManifest.xml
+A	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/CustomDatePicker.java
+A	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/CustomTimePicker.java
+A	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/CustomViewPager.java
+A	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/DateFragment.java
+A	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/SlideDateTimeDialogFragment.java
+A	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/SlideDateTimeListener.java
+A	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/SlideDateTimePicker.java
+A	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/SlidingTabLayout.java
+A	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/SlidingTabStrip.java
+A	slideDateTimePicker/src/main/java/com/github/jjobes/slidedatetimepicker/TimeFragment.java
+A	slideDateTimePicker/src/main/res/drawable-hdpi/selection_divider.9.png
+A	slideDateTimePicker/src/main/res/drawable-mdpi/selection_divider.9.png
+A	slideDateTimePicker/src/main/res/drawable-xhdpi/selection_divider.9.png
+A	slideDateTimePicker/src/main/res/layout/custom_tab.xml
+A	slideDateTimePicker/src/main/res/layout/fragment_date.xml
+A	slideDateTimePicker/src/main/res/layout/fragment_time.xml
+A	slideDateTimePicker/src/main/res/layout/slide_date_time_picker.xml
+A	slideDateTimePicker/src/main/res/values-v11/styles.xml
+A	slideDateTimePicker/src/main/res/values-v14/styles.xml
+A	slideDateTimePicker/src/main/res/values/colors.xml
+A	slideDateTimePicker/src/main/res/values/strings.xml
+A	slideDateTimePicker/src/main/res/values/styles.xml
+
+michaz13/FloatingActionButton;a8eeb60;alarms and columns
+M	sample/build.gradle
+M	sample/src/main/AndroidManifest.xml
+M	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+A	sample/src/main/java/com/melnykov/fab/sample/DueDateAlarm.java
+M	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/ListViewFragment.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/res/layout/activity_edit_debt.xml
+M	sample/src/main/res/layout/com_parse_ui_parse_login_form.xml
+M	sample/src/main/res/menu/main.xml
+M	sample/src/main/res/values/strings.xml
+M	settings.gradle
+A	slideDateTimePicker/build.gradle
+
+michaz13/FloatingActionButton;8bf2044;two tabs with same list
+M	sample/build.gradle
+M	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/com/melnykov/fab/sample/DebtListAdapter.java
+A	sample/src/main/java/com/melnykov/fab/sample/ListViewFragment.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+A	sample/src/main/res/drawable-hdpi/ic_action_refresh.png
+A	sample/src/main/res/drawable-mdpi/ic_action_refresh.png
+A	sample/src/main/res/drawable-xhdpi/ic_action_refresh.png
+M	sample/src/main/res/layout/about_view.xml
+M	sample/src/main/res/menu/main.xml
+M	sample/src/main/res/values/strings.xml
+
+michaz13/FloatingActionButton;29c591c;home sweet home
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+
+michaz13/FloatingActionButton;3dec75f;almost merged2
+A	ParseLoginUI/libs/ParseFacebookUtilsV4-1.10.1.jar
+A	ParseLoginUI/libs/ParseTwitterUtils-1.10.1.jar
+A	ParseLoginUI/src/androidTest/AndroidManifest.xml
+A	ParseLoginUI/src/androidTest/java/com/parse/BaseActivityInstrumentationTestCase2.java
+A	ParseLoginUI/src/androidTest/java/com/parse/ParseImageViewTest.java
+A	ParseLoginUI/src/androidTest/java/com/parse/ParseQueryAdapterTest.java
+A	ParseLoginUI/src/androidTest/java/com/parse/ui/TestActivity.java
+A	ParseLoginUI/src/androidTest/res/drawable/icon.png
+A	ParseLoginUI/src/androidTest/res/layout/view_item.xml
+A	ParseLoginUI/src/main/AndroidManifest.xml
+A	ParseLoginUI/src/main/java/com/parse/ParseImageView.java
+A	ParseLoginUI/src/main/java/com/parse/ParseQueryAdapter.java
+A	ParseLoginUI/src/main/java/com/parse/ui/ParseLoginActivity.java
+A	ParseLoginUI/src/main/java/com/parse/ui/ParseLoginBuilder.java
+A	ParseLoginUI/src/main/java/com/parse/ui/ParseLoginConfig.java
+A	ParseLoginUI/src/main/java/com/parse/ui/ParseLoginDispatchActivity.java
+A	ParseLoginUI/src/main/java/com/parse/ui/ParseLoginFragment.java
+A	ParseLoginUI/src/main/java/com/parse/ui/ParseLoginFragmentBase.java
+A	ParseLoginUI/src/main/java/com/parse/ui/ParseLoginHelpFragment.java
+A	ParseLoginUI/src/main/java/com/parse/ui/ParseOnLoadingListener.java
+A	ParseLoginUI/src/main/java/com/parse/ui/ParseOnLoginSuccessListener.java
+A	ParseLoginUI/src/main/java/com/parse/ui/ParseSignupFragment.java
+A	ParseLoginUI/src/main/res/color/com_parse_ui_parse_login_help_button_label_selector.xml
+A	ParseLoginUI/src/main/res/drawable-xxhdpi/com_parse_ui_app_logo.png
+A	ParseLoginUI/src/main/res/drawable-xxhdpi/com_parse_ui_facebook_login_logo.png
+A	ParseLoginUI/src/main/res/drawable-xxhdpi/com_parse_ui_twitter_login_logo.png
+A	ParseLoginUI/src/main/res/drawable/com_parse_ui_facebook_login_button_background_selector.xml
+A	ParseLoginUI/src/main/res/drawable/com_parse_ui_parse_login_button_background_selector.xml
+A	ParseLoginUI/src/main/res/drawable/com_parse_ui_twitter_login_button_background_selector.xml
+A	ParseLoginUI/src/main/res/layout-land/com_parse_ui_parse_login_fragment.xml
+A	ParseLoginUI/src/main/res/layout-land/com_parse_ui_parse_login_help_fragment.xml
+A	ParseLoginUI/src/main/res/layout-land/com_parse_ui_parse_signup_fragment.xml
+A	ParseLoginUI/src/main/res/layout/com_parse_ui_parse_login_app_logo.xml
+A	ParseLoginUI/src/main/res/layout/com_parse_ui_parse_login_form.xml
+A	ParseLoginUI/src/main/res/layout/com_parse_ui_parse_login_fragment.xml
+A	ParseLoginUI/src/main/res/layout/com_parse_ui_parse_login_help_form.xml
+A	ParseLoginUI/src/main/res/layout/com_parse_ui_parse_login_help_fragment.xml
+A	ParseLoginUI/src/main/res/layout/com_parse_ui_parse_login_third_party_section.xml
+A	ParseLoginUI/src/main/res/layout/com_parse_ui_parse_signup_form.xml
+A	ParseLoginUI/src/main/res/layout/com_parse_ui_parse_signup_fragment.xml
+A	ParseLoginUI/src/main/res/values-es/strings.xml
+A	ParseLoginUI/src/main/res/values/colors.xml
+A	ParseLoginUI/src/main/res/values/dimens.xml
+A	ParseLoginUI/src/main/res/values/strings.xml
+A	ParseLoginUI/src/main/res/values/styles.xml
+
+michaz13/FloatingActionButton;fa77831;almost merged
+A	ParseLoginUI/build.gradle
+M	sample/build.gradle
+M	sample/src/main/AndroidManifest.xml
+A	sample/src/main/java/com/melnykov/fab/sample/Debt.java
+A	sample/src/main/java/com/melnykov/fab/sample/DebtListApplication.java
+A	sample/src/main/java/com/melnykov/fab/sample/EditDebtActivity.java
+M	sample/src/main/java/com/melnykov/fab/sample/MainActivity.java
+M	sample/src/main/res/layout/about_view.xml
+A	sample/src/main/res/layout/activity_edit_debt.xml
+A	sample/src/main/res/layout/com_parse_ui_parse_login_form.xml
+A	sample/src/main/res/layout/com_parse_ui_parse_signup_form.xml
+M	sample/src/main/res/layout/fragment_listview.xml
+M	sample/src/main/res/layout/list_item.xml
+M	sample/src/main/res/values/strings.xml
+M	settings.gradle

@@ -1,0 +1,107 @@
+anders3408/android-gif-drawable;1709283;Readd license
+A	LICENSE
+
+anders3408/android-gif-drawable;0b1f078;Remove main folder and include jni folder, so libs can be compiled
+M	Android.mk
+A	src/Android.mk
+R100	src/main/AndroidManifest.xml	src/AndroidManifest.xml
+R100	src/main/java/pl/droidsonroids/gif/AnimationListener.java	src/java/pl/droidsonroids/gif/AnimationListener.java
+R100	src/main/java/pl/droidsonroids/gif/ConditionVariable.java	src/java/pl/droidsonroids/gif/ConditionVariable.java
+R100	src/main/java/pl/droidsonroids/gif/GifAnimationMetaData.java	src/java/pl/droidsonroids/gif/GifAnimationMetaData.java
+R100	src/main/java/pl/droidsonroids/gif/GifDecoder.java	src/java/pl/droidsonroids/gif/GifDecoder.java
+R100	src/main/java/pl/droidsonroids/gif/GifDrawable.java	src/java/pl/droidsonroids/gif/GifDrawable.java
+R100	src/main/java/pl/droidsonroids/gif/GifDrawableBuilder.java	src/java/pl/droidsonroids/gif/GifDrawableBuilder.java
+R100	src/main/java/pl/droidsonroids/gif/GifError.java	src/java/pl/droidsonroids/gif/GifError.java
+R100	src/main/java/pl/droidsonroids/gif/GifIOException.java	src/java/pl/droidsonroids/gif/GifIOException.java
+R100	src/main/java/pl/droidsonroids/gif/GifImageButton.java	src/java/pl/droidsonroids/gif/GifImageButton.java
+R100	src/main/java/pl/droidsonroids/gif/GifImageView.java	src/java/pl/droidsonroids/gif/GifImageView.java
+R100	src/main/java/pl/droidsonroids/gif/GifInfoHandle.java	src/java/pl/droidsonroids/gif/GifInfoHandle.java
+R100	src/main/java/pl/droidsonroids/gif/GifOptions.java	src/java/pl/droidsonroids/gif/GifOptions.java
+R100	src/main/java/pl/droidsonroids/gif/GifRenderingExecutor.java	src/java/pl/droidsonroids/gif/GifRenderingExecutor.java
+R100	src/main/java/pl/droidsonroids/gif/GifTexImage2D.java	src/java/pl/droidsonroids/gif/GifTexImage2D.java
+R100	src/main/java/pl/droidsonroids/gif/GifTextView.java	src/java/pl/droidsonroids/gif/GifTextView.java
+R100	src/main/java/pl/droidsonroids/gif/GifTextureView.java	src/java/pl/droidsonroids/gif/GifTextureView.java
+R100	src/main/java/pl/droidsonroids/gif/GifViewSavedState.java	src/java/pl/droidsonroids/gif/GifViewSavedState.java
+R100	src/main/java/pl/droidsonroids/gif/GifViewUtils.java	src/java/pl/droidsonroids/gif/GifViewUtils.java
+R100	src/main/java/pl/droidsonroids/gif/InputSource.java	src/java/pl/droidsonroids/gif/InputSource.java
+R100	src/main/java/pl/droidsonroids/gif/InvalidationHandler.java	src/java/pl/droidsonroids/gif/InvalidationHandler.java
+R100	src/main/java/pl/droidsonroids/gif/LibraryLoader.java	src/java/pl/droidsonroids/gif/LibraryLoader.java
+R100	src/main/java/pl/droidsonroids/gif/MultiCallback.java	src/java/pl/droidsonroids/gif/MultiCallback.java
+R100	src/main/java/pl/droidsonroids/gif/ReLinker.java	src/java/pl/droidsonroids/gif/ReLinker.java
+R100	src/main/java/pl/droidsonroids/gif/RenderTask.java	src/java/pl/droidsonroids/gif/RenderTask.java
+R100	src/main/java/pl/droidsonroids/gif/SafeRunnable.java	src/java/pl/droidsonroids/gif/SafeRunnable.java
+R100	src/main/java/pl/droidsonroids/gif/annotations/Beta.java	src/java/pl/droidsonroids/gif/annotations/Beta.java
+R100	src/main/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java	src/java/pl/droidsonroids/gif/transforms/CornerRadiusTransform.java
+R100	src/main/java/pl/droidsonroids/gif/transforms/Transform.java	src/java/pl/droidsonroids/gif/transforms/Transform.java
+R094	src/main/jni/Android.mk	src/jni/Android.mk
+R100	src/main/jni/bitmap.c	src/jni/bitmap.c
+R100	src/main/jni/control.c	src/jni/control.c
+R100	src/main/jni/decoding.c	src/jni/decoding.c
+R100	src/main/jni/drawing.c	src/jni/drawing.c
+R100	src/main/jni/exception.c	src/jni/exception.c
+R100	src/main/jni/gif.c	src/jni/gif.c
+R100	src/main/jni/gif.h	src/jni/gif.h
+R100	src/main/jni/giflib/dgif_lib.c	src/jni/giflib/dgif_lib.c
+R100	src/main/jni/giflib/gif_lib.h	src/jni/giflib/gif_lib.h
+R100	src/main/jni/giflib/gif_lib_private.h	src/jni/giflib/gif_lib_private.h
+R100	src/main/jni/giflib/gifalloc.c	src/jni/giflib/gifalloc.c
+R100	src/main/jni/giflib/openbsd-reallocarray.c	src/jni/giflib/openbsd-reallocarray.c
+R100	src/main/jni/memset.arm.S	src/jni/memset.arm.S
+R100	src/main/jni/memset32_neon.S	src/jni/memset32_neon.S
+R100	src/main/jni/metadata.c	src/jni/metadata.c
+R100	src/main/jni/open_close.c	src/jni/open_close.c
+R100	src/main/jni/opengl.c	src/jni/opengl.c
+R100	src/main/jni/surface.c	src/jni/surface.c
+R100	src/main/jni/time.c	src/jni/time.c
+D	src/main/jni/Application.mk
+R100	src/main/res/values/attrs.xml	src/res/values/attrs.xml
+
+anders3408/android-gif-drawable;f068c26;Remove uneeded files and create Android.mk to compile the jar and fix compiling (again) in aosp
+D	.gitignore
+D	.travis.yml
+A	Android.mk
+D	CHANGELOG.md
+D	Doxyfile
+D	LICENSE
+D	README.md
+D	build.gradle
+D	consumer-proguard-rules.pro
+D	gradle-mvn-push.gradle
+D	gradle.properties
+D	gradle/wrapper/gradle-wrapper.jar
+D	gradle/wrapper/gradle-wrapper.properties
+D	gradlew
+D	gradlew.bat
+D	ndk.gradle
+M	src/main/java/pl/droidsonroids/gif/ReLinker.java
+M	src/main/res/values/attrs.xml
+D	src/test/java/pl/droidsonroids/gif/CallbackWeakReferenceTest.java
+D	src/test/java/pl/droidsonroids/gif/ConditionVariableTest.java
+D	src/test/java/pl/droidsonroids/gif/GifViewUtilsDensityTest.java
+D	src/test/java/pl/droidsonroids/gif/GifViewUtilsTest.java
+D	src/test/java/pl/droidsonroids/gif/MultiCallbackTest.java
+
+anders3408/android-gif-drawable;c14ca2d;Call renamed libs
+M	src/main/java/pl/droidsonroids/gif/LibraryLoader.java
+
+anders3408/android-gif-drawable;b971eaf;Rename libs
+M	src/main/jni/Android.mk
+
+anders3408/android-gif-drawable;f62915b;Rewrite Android.mk and include libs correctly
+M	src/main/jni/Android.mk
+
+anders3408/android-gif-drawable;0472ee1;Fix cast from pointer to integer of different size
+M	src/main/jni/opengl.c
+
+anders3408/android-gif-drawable;c06b5f6;Fix compiler issue when build in aosp
+M	src/main/jni/Android.mk
+
+anders3408/android-gif-drawable;8494e4c;Fix cast from pointer to integer of different size when compiling in aosp
+M	src/main/jni/gif.c
+
+anders3408/android-gif-drawable;0a676bb;Move header
+M	src/main/jni/bitmap.c
+M	src/main/jni/gif.h
+
+anders3408/android-gif-drawable;0631b48;Add string.h needed by memcpy
+M	src/main/jni/giflib/gif_lib.h

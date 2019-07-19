@@ -1,0 +1,18 @@
+mpecan/raven-java;41b74533;Cleanup of documentation and fix for CheckStyle violations.
+M	raven-logback/src/main/java/com/getsentry/raven/logback/SentryAppender.java
+
+mpecan/raven-java;ef6b80ab;Do not create a copy of the mdcPropertiesMap but also do not manipulate it. Instead just skip adding the entry if it is one of the userMdcKey entries.
+M	raven-logback/src/main/java/com/getsentry/raven/logback/SentryAppender.java
+
+mpecan/raven-java;52da8404;Revert to the previous way of importing.
+M	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderEventBuildingTest.java
+
+mpecan/raven-java;50e9edd8;Add new test for checking null User MDC key in configuration.
+M	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderEventBuildingTest.java
+
+mpecan/raven-java;f998096d;Move back to previous import statements instead of replacing with * imports.
+M	raven-logback/src/main/java/com/getsentry/raven/logback/SentryAppender.java
+
+mpecan/raven-java;73734dba;Enable setting user information on the Logback appender via MDC entries that are configured on the appender.
+M	raven-logback/src/main/java/com/getsentry/raven/logback/SentryAppender.java
+M	raven-logback/src/test/java/com/getsentry/raven/logback/SentryAppenderEventBuildingTest.java

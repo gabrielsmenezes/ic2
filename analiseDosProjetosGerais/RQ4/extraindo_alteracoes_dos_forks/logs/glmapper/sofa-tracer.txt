@@ -1,0 +1,236 @@
+glmapper/sofa-tracer;f44d515;Merge branch 'master-alipay'
+glmapper/sofa-tracer;bfd0cdc;Merge pull request #10 from alipay/master
+glmapper/sofa-tracer;b0e6efb;Merge branch 'master-alipay'
+glmapper/sofa-tracer;e204673;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;510e1d3;Merge pull request #9 from glmapper/optimize-constants
+glmapper/sofa-tracer;7d46bf4;Merge branch 'master' into optimize-constants
+glmapper/sofa-tracer;3e395c9;Merge pull request #8 from alipay/master
+glmapper/sofa-tracer;ab7dedb;Merge branch 'master-alipay' into optimize-constants
+glmapper/sofa-tracer;ee95b73;use english commnet
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/TracerLogRootDaemonTest.java
+
+glmapper/sofa-tracer;455577e;Merge pull request #7 from glmapper/remove-chinese-annotation-and-standardize-the-code
+glmapper/sofa-tracer;126c208;optimize-constants
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java/com/alipay/sofa/tracer/plugins/datasource/tracer/DataSourceClientDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java/com/alipay/sofa/tracer/plugins/datasource/tracer/DataSourceClientStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java/com/alipay/sofa/tracer/plugins/datasource/tracer/DataSourceClientTracer.java
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java/com/alipay/sofa/tracer/plugins/datasource/tracer/StatementTracerInterceptor.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/DubboSofaTracerFilter.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/encoder/DubboClientDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/encoder/DubboServerDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/stat/DubboClientStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/stat/DubboServerStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/tracer/DubboConsumerSofaTracer.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/tracer/DubboProviderSofaTracer.java
+M	sofa-tracer-plugins/sofa-tracer-httpclient-plugin/src/main/java/com/alipay/sofa/tracer/plugins/httpclient/HttpClientDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-httpclient-plugin/src/main/java/com/alipay/sofa/tracer/plugins/httpclient/HttpClientStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-httpclient-plugin/src/main/java/com/alipay/sofa/tracer/plugins/httpclient/HttpClientTracer.java
+M	sofa-tracer-plugins/sofa-tracer-okhttp-plugin/src/main/java/com/alipay/sofa/tracer/plugins/okhttp/OkHttpDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-okhttp-plugin/src/main/java/com/alipay/sofa/tracer/plugins/okhttp/OkHttpStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-okhttp-plugin/src/main/java/com/alipay/sofa/tracer/plugins/okhttp/OkHttpTracer.java
+M	sofa-tracer-plugins/sofa-tracer-resttmplate-plugin/src/main/java/com/sofa/alipay/tracer/plugins/rest/RestTemplateDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-resttmplate-plugin/src/main/java/com/sofa/alipay/tracer/plugins/rest/RestTemplateStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-resttmplate-plugin/src/main/java/com/sofa/alipay/tracer/plugins/rest/RestTemplateTracer.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcJsonStatReporter.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcStatReporter.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcTracer.java
+D	tracer-core/src/main/java/com/alipay/common/tracer/core/constants/CommonEncodeConstants.java
+A	tracer-core/src/main/java/com/alipay/common/tracer/core/constants/ComponentNameConstants.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/constants/SofaTracerConstant.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/span/CommonSpanTags.java
+
+glmapper/sofa-tracer;5b5bfe9;Merge pull request #6 from alipay/master
+glmapper/sofa-tracer;c43f948;Merge branch 'master' into optimize-constants
+glmapper/sofa-tracer;f866abf;use english commnet
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java/com/alipay/sofa/tracer/plugins/datasource/ExtendedStatement.java
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java/com/alipay/sofa/tracer/plugins/datasource/SmartDataSource.java
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java/com/alipay/sofa/tracer/plugins/datasource/tracer/DataSourceClientStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java/com/alipay/sofa/tracer/plugins/datasource/utils/DataSourceUtils.java
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/test/java/com/sofa/tracer/plugins/datasource/DruidTest.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/DubboSofaTracerFilter.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/stat/DubboClientStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/stat/DubboServerStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java/com/alipay/sofa/tracer/plugins/dubbo/wrapper/DataSizeCodecWrapper.java
+M	sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/test/java/com/alipay/sofa/tracer/plugins/dubbo/DubboSofaTracerTest.java
+M	sofa-tracer-plugins/sofa-tracer-httpclient-plugin/src/main/java/com/alipay/sofa/tracer/plugins/httpclient/HttpClientStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-httpclient-plugin/src/main/java/com/alipay/sofa/tracer/plugins/httpclient/interceptor/AbstractHttpRequestInterceptor.java
+M	sofa-tracer-plugins/sofa-tracer-okhttp-plugin/src/main/java/com/alipay/sofa/tracer/plugins/okhttp/OkHttpStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-okhttp-plugin/src/main/java/com/alipay/sofa/tracer/plugins/okhttp/interceptor/SofaTracerOkHttpInterceptor.java
+M	sofa-tracer-plugins/sofa-tracer-resttmplate-plugin/src/main/java/com/sofa/alipay/tracer/plugins/rest/RestTemplateStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-resttmplate-plugin/src/main/java/com/sofa/alipay/tracer/plugins/rest/SofaTracerRestTemplateBuilder.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcHeadersCarrier.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcJsonStatReporter.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcLogEnum.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcSofaTracerFilter.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcStatReporter.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/test/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcSofaTracerFilterTest.java
+M	sofa-tracer-plugins/sofa-tracer-zipkin-plugin/src/main/java/com/alipay/sofa/tracer/plugins/zipkin/ZipkinSofaTracerSpanRemoteReporter.java
+M	sofa-tracer-plugins/sofa-tracer-zipkin-plugin/src/main/java/com/alipay/sofa/tracer/plugins/zipkin/adapter/ZipkinV2SpanAdapter.java
+M	sofa-tracer-plugins/sofa-tracer-zipkin-plugin/src/test/java/com/alipay/sofa/tracer/plugins/zipkin/ZipkinRestTemplateSenderTest.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/SofaTracer.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/TraceAppender.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/TracerLogRootDaemon.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/builder/JsonStringBuilder.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/builder/XStringBuilder.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/encoder/SpanEncoder.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/file/AbstractRollingFileAppender.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/file/CompositeTraceAppender.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/file/LoadTestAwareAppender.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/file/TimedRollingFileAppender.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/manager/AsyncCommonAppenderManager.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/manager/AsyncCommonDigestAppenderManager.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/manager/ConsumerExceptionHandler.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/manager/ConsumerThreadFactory.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/manager/SofaTracerSpanEventFactory.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/manager/StringConsumerExceptionHandler.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/manager/StringEvent.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/manager/StringEventFactory.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/self/SelfLog.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/self/SynchronizingSelfLog.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/appender/self/TracerDaemon.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/async/SofaTracerCallable.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/async/SofaTracerRunnable.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/async/TracerScheduleExecutorService.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/configuration/SofaTracerConfiguration.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/configuration/SofaTracerExternalConfiguration.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/constants/SofaTracerConstant.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/context/span/SofaTracerSpanContext.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/context/trace/SofaTraceContext.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/exception/EmptyTracerStateStringException.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/exception/SamplingStrategyErrorException.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/exception/SofaTracerRuntimeException.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/exception/UnsupportedFormatException.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/extensions/SpanExtension.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/extensions/SpanExtensionFactory.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/holder/SofaTraceContextHolder.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/listener/SpanReportListener.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/middleware/parent/AbstractDigestSpanEncoder.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/mock/MockSofaTracer.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/registry/AbstractTextB3Formatter.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/registry/AbstractTextFormatter.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/registry/BinaryFormater.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/registry/RegistryExtractorInjector.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/common/CommonSpanEncoder.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/common/CommonTracerManager.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/digest/AbstractDiskReporter.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/digest/DiskReporterImpl.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/digest/manager/SofaTracerDigestReporterAsyncManager.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/facade/AbstractReporter.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/facade/Reporter.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/stat/AbstractSofaTracerStatisticReporter.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/stat/SofaTracerStatisticReporter.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/stat/manager/SofaTracerStatisticReporterCycleTimesManager.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/stat/manager/SofaTracerStatisticReporterManager.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/stat/model/StatKey.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/stat/model/StatMapKey.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/stat/model/StatValues.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/reporter/type/TracerSystemLogEnum.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/samplers/Sampler.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/samplers/SamplingStatus.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/samplers/SofaTracerPercentageBasedSampler.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/span/CommonLogSpan.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/span/LogData.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/span/SofaTracerSpan.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/span/SofaTracerSpanReferenceRelationship.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/tags/SpanTags.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/tracer/AbstractTracer.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/utils/ByteArrayUtils.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/utils/CommonUtils.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/utils/ReflectionUtils.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/utils/StringUtils.java
+M	tracer-core/src/main/java/com/alipay/common/tracer/core/utils/TracerUtils.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/TestUtil.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/LogCleanupTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/TracerLogRootDaemonTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/builder/JsonStringBuilderTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/builder/XStringBuilderTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/file/TimedRollingFileAppenderTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/info/StaticInfoLogTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/manager/ConcurrentConsumerCorrectTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/manager/ConcurrentDiscardTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/manager/ManagerTestUtil.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/appender/self/SelfLogTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/async/SofaTracerCallableTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/async/SofaTracerRunnableTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/async/TracedExecutorServiceTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/async/TracerScheduleExecutorServiceTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/base/AbstractTestBase.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/benchmark/CountBenchmark.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/configuration/SofaTracerConfigurationTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/context/span/SofaTracerSpanContextTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/context/trace/SofaTracerThreadLocalTraceContextTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/holder/SofaTraceContextHolderTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/listener/SpanReportListenerHolderTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/mock/MockSofaTracerTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/registry/BinaryFormaterTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/registry/HttpHeadersB3FormatterTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/registry/HttpHeadersFormatterTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/registry/TextMapB3FormatterTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/registry/TextMapFormatterTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/registry/TracerFormatRegistryTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/reporter/SofaTracerStatisticReporterCycleTimesManagerTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/reporter/common/CommonSpanEncoderTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/reporter/common/CommonTracerManagerTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/reporter/composite/SofaTracerCompositeDigestReporterImplTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/reporter/digest/DiskReporterImplTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/reporter/stat/SofaTracerStatisticReporterImplTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/reporter/stat/model/StatMapKeyTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/span/SofaTracerSpanTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/tracertest/SofaTracerTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/tracertest/type/TracerTestLogEnum.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/utils/StringUtilsTest.java
+M	tracer-core/src/test/java/com/alipay/common/tracer/core/utils/TracerUtilsTest.java
+M	tracer-extensions/src/main/java/com/alipay/common/tracer/extensions/log/MDCSpanExtension.java
+M	tracer-extensions/src/main/java/com/alipay/common/tracer/extensions/log/constants/MDCKeyConstants.java
+M	tracer-sofa-boot-starter/src/main/java/com/alipay/sofa/tracer/boot/datasource/properties/SofaTracerDataSourceProperties.java
+M	tracer-sofa-boot-starter/src/main/java/com/alipay/sofa/tracer/boot/resttemplate/CustomRestTemplateCustomizer.java
+M	tracer-sofa-boot-starter/src/main/java/com/alipay/sofa/tracer/boot/resttemplate/configuration/RestTemplateAutoConfiguration.java
+M	tracer-sofa-boot-starter/src/test/java/com/alipay/sofa/tracer/boot/zipkin/ZipkinSofaTracerSpanRemoteReporterTest.java
+M	tracer-test/core-test/src/test/java/com/alipay/common/tracer/test/MDCMultiThreadTest.java
+M	tracer-test/core-test/src/test/java/com/alipay/common/tracer/test/MDCTest.java
+M	tracer-test/core-test/src/test/java/com/alipay/common/tracer/test/base/AbstractTestBase.java
+M	tracer-test/core-test/src/test/java/com/alipay/common/tracer/test/core/sofatracer/SofaTracerDemoTest.java
+M	tracer-test/core-test/src/test/java/com/alipay/common/tracer/test/core/sofatracer/SofaTracerStatisticsDemoTest.java
+M	tracer-test/core-test/src/test/java/com/alipay/common/tracer/test/core/sofatracer/type/TracerTestLogEnum.java
+M	tracer-test/log4j-test/src/test/java/com/alipay/common/tracer/LogTest.java
+M	tracer-test/log4j2-test/src/test/java/com/alipay/common/tracer/LogTest.java
+M	tracer-test/logback-test/src/test/java/com/alipay/commom/tracer/LogTest.java
+
+glmapper/sofa-tracer;c6e47d4;Merge branch 'master-alipay'
+glmapper/sofa-tracer;1590434;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;27245c0;optimize constants
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java/com/alipay/sofa/tracer/plugins/datasource/tracer/DataSourceClientDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java/com/alipay/sofa/tracer/plugins/datasource/tracer/DataSourceClientStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-httpclient-plugin/src/main/java/com/alipay/sofa/tracer/plugins/httpclient/HttpClientDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-httpclient-plugin/src/main/java/com/alipay/sofa/tracer/plugins/httpclient/HttpClientStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-okhttp-plugin/src/main/java/com/alipay/sofa/tracer/plugins/okhttp/OkHttpDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-okhttp-plugin/src/main/java/com/alipay/sofa/tracer/plugins/okhttp/OkHttpStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-resttmplate-plugin/src/main/java/com/sofa/alipay/tracer/plugins/rest/RestTemplateDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-resttmplate-plugin/src/main/java/com/sofa/alipay/tracer/plugins/rest/RestTemplateStatJsonReporter.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcDigestJsonEncoder.java
+M	sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java/com/alipay/sofa/tracer/plugins/springmvc/SpringMvcJsonStatReporter.java
+A	tracer-core/src/main/java/com/alipay/common/tracer/core/constants/CommonEncodeConstants.java
+
+glmapper/sofa-tracer;9160ad1;Merge branch 'master-alipay'
+glmapper/sofa-tracer;298a782;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;ad9793a;Merge remote-tracking branch 'upstream/master'
+glmapper/sofa-tracer;954d037;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;50d352c;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;824628f;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;ad04066;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;72b0467;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;2832112;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;7747345;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;3c09b2a;Merge branch 'master-alipay'
+glmapper/sofa-tracer;f74b0b3;Merge branch 'master-alipay'
+glmapper/sofa-tracer;518d87f;Merge branch 'master-alipay'
+glmapper/sofa-tracer;1c94b31;Merge branch 'master-alipay'
+glmapper/sofa-tracer;7758538;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;c4652c4;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;c6461b8;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;27923f4;Merge branch 'master' of https://github.com/alipay/sofa-tracer into master-alipay
+glmapper/sofa-tracer;d50a8a2;Merge branch 'master-alipay'
+glmapper/sofa-tracer;3a897b4;Merge branch 'master-alipay'
+glmapper/sofa-tracer;9aa096b;Merge pull request #4 from alipay/master

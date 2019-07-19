@@ -1,0 +1,362 @@
+dgit-hub/Activiti;5964ad6d7;Merge pull request #8 from dgit-hub/dgit-fix/fix-dependency
+dgit-hub/Activiti;d02d73ce9;Fix spring-boot-starter-security dependency
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-security/pom.xml
+
+dgit-hub/Activiti;0506f49a7;Merge pull request #7 from dgit-hub/dgit-fix/add-indexes-postgres-migration
+dgit-hub/Activiti;30ef32aad;Add missing indexes for PostgreSQL Migration
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-common-rest/pom.xml
+M	modules/activiti-crystalball/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-diagram-rest/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.db2.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.db2.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.hsql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.hsql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mssql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mssql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql55.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql55.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.oracle.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.oracle.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.postgres.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.postgres.create.history.sql
+M	modules/activiti-explorer/pom.xml
+M	modules/activiti-hazelcast-async-executor/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-jmx/pom.xml
+M	modules/activiti-json-converter/pom.xml
+M	modules/activiti-ldap/pom.xml
+M	modules/activiti-modeler/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	modules/activiti-rest/pom.xml
+M	modules/activiti-secure-javascript/pom.xml
+M	modules/activiti-simple-workflow-alfresco/pom.xml
+M	modules/activiti-simple-workflow/pom.xml
+M	modules/activiti-spring-boot/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-actuator/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-basic/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-custom-mybatis-mapper/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-integration/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-jpa/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-actuator/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-basic/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-integration/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-jpa/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-rest-api/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+dgit-hub/Activiti;db744b02b;Merge pull request #6 from dgit-hub/dgit-fix/add-execution-id-indexes
+dgit-hub/Activiti;37eab6bdf;TF-11948 : Add Index Execution_ID in Activiti table
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-common-rest/pom.xml
+M	modules/activiti-crystalball/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-diagram-rest/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.db2.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.hsql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mssql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql55.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.oracle.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.postgres.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.db2.upgradestep.52000.to.52001.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.h2.upgradestep.52000.to.52001.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.hsql.upgradestep.52000.to.52001.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.mssql.upgradestep.52000.to.52001.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.mysql.upgradestep.52000.to.52001.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.mysql55.upgradestep.52000.to.52001.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.oracle.upgradestep.52000.to.52001.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.postgres.upgradestep.52000.to.52001.engine.sql
+M	modules/activiti-explorer/pom.xml
+M	modules/activiti-hazelcast-async-executor/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-jmx/pom.xml
+M	modules/activiti-json-converter/pom.xml
+M	modules/activiti-ldap/pom.xml
+M	modules/activiti-modeler/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	modules/activiti-rest/pom.xml
+M	modules/activiti-secure-javascript/pom.xml
+M	modules/activiti-simple-workflow-alfresco/pom.xml
+M	modules/activiti-simple-workflow/pom.xml
+M	modules/activiti-spring-boot/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-actuator/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-basic/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-custom-mybatis-mapper/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-integration/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-jpa/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-actuator/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-basic/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-integration/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-jpa/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-rest-api/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+dgit-hub/Activiti;1351aa004;Merge pull request #5 from dgit-hub/dgit/process-521
+dgit-hub/Activiti;9d0723547;Merge pull request #4 from dgit-hub/feature/added-indexes-to-comment-table
+dgit-hub/Activiti;bf9daf3e1;Update Activiti version to '5.21.0.dgit-fix-8'.
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-common-rest/pom.xml
+M	modules/activiti-crystalball/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-diagram-rest/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-explorer/pom.xml
+M	modules/activiti-hazelcast-async-executor/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-jmx/pom.xml
+M	modules/activiti-json-converter/pom.xml
+M	modules/activiti-ldap/pom.xml
+M	modules/activiti-modeler/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	modules/activiti-rest/pom.xml
+M	modules/activiti-secure-javascript/pom.xml
+M	modules/activiti-simple-workflow-alfresco/pom.xml
+M	modules/activiti-simple-workflow/pom.xml
+M	modules/activiti-spring-boot/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-actuator/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-basic/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-custom-mybatis-mapper/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-integration/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-jpa/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-actuator/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-basic/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-integration/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-jpa/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-rest-api/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+dgit-hub/Activiti;0e1b1100e;Added indexes to ACT_HI_COMMENT table.
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.db2.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.hsql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mssql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql55.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.postgres.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.db2.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.h2.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.hsql.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.mssql.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.mysql.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.mysql55.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.postgres.upgradestep.52002.to.52100.engine.sql
+
+dgit-hub/Activiti;d1d47e84d; Update Activiti version to '5.21.0.dgit-fix-7'.
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-common-rest/pom.xml
+M	modules/activiti-crystalball/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-diagram-rest/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-explorer/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-jmx/pom.xml
+M	modules/activiti-json-converter/pom.xml
+M	modules/activiti-ldap/pom.xml
+M	modules/activiti-modeler/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	modules/activiti-rest/pom.xml
+M	modules/activiti-secure-javascript/pom.xml
+M	modules/activiti-simple-workflow/pom.xml
+M	modules/activiti-spring-boot/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-actuator/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-basic/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-custom-mybatis-mapper/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-integration/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-jpa/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-actuator/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-basic/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-integration/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-jpa/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-rest-api/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+dgit-hub/Activiti;3c1bf0b21;Merge pull request #3 from dgit-hub/dgit-fix/expose-configuration-to-osgi
+dgit-hub/Activiti;6936c18dd;Expose "isSetCreateDiagramOnDeploy" property of process configuration
+M	modules/activiti-osgi/src/main/java/org/activiti/osgi/blueprint/ConfigurationFactory.java
+
+dgit-hub/Activiti;451d23dba;Merge pull request #2 from dgit-hub/dgit-fix/add-activiti-indexes
+dgit-hub/Activiti;a98f6f4d7;Added indexes in historic table and for other database types
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.db2.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.db2.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.h2.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.hsql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.hsql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mssql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mssql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql55.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql55.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.oracle.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.postgres.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.postgres.create.history.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.db2.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.h2.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.hsql.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.mssql.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.mysql.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.mysql55.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.oracle.upgradestep.52002.to.52100.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/upgrade/activiti.postgres.upgradestep.52002.to.52100.engine.sql
+
+dgit-hub/Activiti;47ee7bb11;Update Activiti version to '5.21.0.dgit-fix-6'.
+M	modules/activiti-bpmn-converter/pom.xml
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-bpmn-model/pom.xml
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-cdi/pom.xml
+M	modules/activiti-common-rest/pom.xml
+M	modules/activiti-crystalball/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-diagram-rest/pom.xml
+M	modules/activiti-engine/pom.xml
+M	modules/activiti-explorer/pom.xml
+M	modules/activiti-image-generator/pom.xml
+M	modules/activiti-jmx/pom.xml
+M	modules/activiti-json-converter/pom.xml
+M	modules/activiti-ldap/pom.xml
+M	modules/activiti-modeler/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-osgi/pom.xml
+M	modules/activiti-process-validation/pom.xml
+M	modules/activiti-rest/pom.xml
+M	modules/activiti-secure-javascript/pom.xml
+M	modules/activiti-simple-workflow/pom.xml
+M	modules/activiti-spring-boot/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-actuator/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-basic/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-custom-mybatis-mapper/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-integration/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-jpa/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-rest-api/pom.xml
+M	modules/activiti-spring-boot/spring-boot-samples/spring-boot-sample-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-actuator/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-basic/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-integration/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-jpa/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-rest-api/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/activiti-spring-boot-starter-security/pom.xml
+M	modules/activiti-spring-boot/spring-boot-starters/pom.xml
+M	modules/activiti-spring/pom.xml
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+dgit-hub/Activiti;d5baf5ea3;Merge branches 'dgit-fix/add-indexes', 'dgit-fix/distribution-repo', 'dgit-fix/expose-configuration-to-osgi', 'dgit-fix/osgi-run-in-karaf', 'dgit-fix/set-task-claim-time' and 'dgit-fix/upgrade-spring-etc-versions-5-21' into dgit/process-521
+dgit-hub/Activiti;89c1f7061;Added Configurator property to blueprint ConfigurationFactory class
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/cfg/ProcessEngineConfigurationImpl.java
+M	modules/activiti-osgi/src/main/java/org/activiti/osgi/blueprint/ConfigurationFactory.java
+
+dgit-hub/Activiti;c0c8c6ee4;added distribution management repo
+M	pom.xml
+
+dgit-hub/Activiti;8f148073c;Added setting of Task Claim time upon assigning of task
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/TaskEntity.java
+
+dgit-hub/Activiti;966f0f4e1;fixes #258 - Handle comments and spaces in BundleScriptEngineResolver
+M	modules/activiti-osgi/src/main/java/org/activiti/osgi/Extender.java
+
+dgit-hub/Activiti;5379240f9;fixed #259 - change order of Blueprint ELResolvers
+M	modules/activiti-osgi/src/main/java/org/activiti/osgi/blueprint/ProcessEngineFactoryWithELResolver.java
+
+dgit-hub/Activiti;5eee7b447;Added indexes to: ACT_HI_VARINST(TASK_ID_); ACT_RU_VARIABLE(TYPE_); ACT_RU_VARIABLE(NAME_); ACT_RU_JOB(PROCESS_INSTANCE_ID_); To be created upon database creation
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.mysql.create.engine.sql
+M	modules/activiti-engine/src/main/resources/org/activiti/db/create/activiti.oracle.create.engine.sql
+
+dgit-hub/Activiti;b3628debc;Use single consistent version of :  * javax.servlet API (3.1.0)  * Spring (4.2.5 and related security and ldap versions)  * Camel (2.17.3).
+M	.gitignore
+M	modules/activiti-bpmn-layout/pom.xml
+M	modules/activiti-camel/pom.xml
+M	modules/activiti-common-rest/pom.xml
+M	modules/activiti-crystalball/pom.xml
+M	modules/activiti-cxf/pom.xml
+M	modules/activiti-diagram-rest/pom.xml
+M	modules/activiti-explorer/pom.xml
+M	modules/activiti-ldap/pom.xml
+M	modules/activiti-modeler/pom.xml
+M	modules/activiti-mule/pom.xml
+M	modules/activiti-rest/pom.xml
+M	modules/activiti-spring/src/test/java/org/activiti/spring/test/transaction/SpringTransactionIntegrationTest.java
+M	modules/activiti-webapp-explorer2/pom.xml
+M	modules/activiti-webapp-rest2/pom.xml
+M	pom.xml
+
+dgit-hub/Activiti;6ee6ee30e;Fix waitTimeInMillis setter type to long
+M	modules/activiti-engine/src/main/java/org/activiti/engine/impl/jobexecutor/JobExecutor.java
+
+dgit-hub/Activiti;91d269632;Let us identify that this build of Activiti includes DGIT modifications
+M	pom.xml
+
+dgit-hub/Activiti;6083d17d2;Disable XDoclint params
+M	pom.xml

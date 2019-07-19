@@ -1,0 +1,5 @@
+shivangshah/spring-cloud-sleuth;e38c166;Removing custom RxJavaPlugins reset impl. With RxJava 1.1.4, `RxJavaPlugins.reset()` method has been made public (though `experimental`). With this update, we no longer require to manually wrapp and expose the `reset()` method of RxJavaPlugins. This PR is in conjunction with [Spring-Cloud-Netflix PR] (https://github.com/spring-cloud/spring-cloud-netflix/pull/1007) since RxJava version is maintained as a part of that dependency. Merge this PR only after the Spring-Cloud-Netflix PR is merged to avoid compile errors.
+M	spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/rxjava/SleuthRxJavaSchedulersHook.java
+D	spring-cloud-sleuth-core/src/main/java/rx/plugins/SleuthRxJavaPlugins.java
+M	spring-cloud-sleuth-core/src/test/java/org/springframework/cloud/sleuth/instrument/rxjava/SleuthRxJavaSchedulersHookTests.java
+M	spring-cloud-sleuth-core/src/test/java/org/springframework/cloud/sleuth/instrument/rxjava/SleuthRxJavaTests.java

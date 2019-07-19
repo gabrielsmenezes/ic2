@@ -1,0 +1,5 @@
+shanman190/spring-security-oauth;8f76dd7b;Update OAuth2 exception deserializers to deserialize access denied exceptions into the OAuth2AccessDeniedException. By merging this change the OAuth server and OAuth client will agree on HTTP status code 403 when the OAuth client is denied access to perform the requested action.
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/common/exceptions/OAuth2ExceptionJackson1Deserializer.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/common/exceptions/OAuth2ExceptionJackson2Deserializer.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/common/exception/OAuth2ExceptionDeserializerTests.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/common/exception/OAuth2ExceptionJackson2DeserializerTests.java

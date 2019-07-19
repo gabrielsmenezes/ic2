@@ -1,0 +1,186 @@
+marciopd/easymock;2e22a95;Correcting dependencies scope.
+M	easymock-cdiextension/pom.xml
+
+marciopd/easymock;453959e;Merge branch 'master' of https://github.com/marciopd/easymock.git
+marciopd/easymock;de570af;Displaying build status.
+M	easymock-cdiextension/README.md
+M	easymock-cdiextension/pom.xml
+
+marciopd/easymock;09ba3b5;Using cloudbees CI.
+M	easymock-cdiextension/README.md
+M	easymock-cdiextension/pom.xml
+
+marciopd/easymock;387b786;Moving class to extension package.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/EasymockCdiExtension.java
+R090	easymock-cdiextension/src/main/java/org/easymock/cdi/model/OpenWebBeansInterceptorInjectionWrapper.java	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/OpenWebBeansInterceptorInjectionWrapper.java
+
+marciopd/easymock;44fced7;Providing support to interceptors mocking in OWB.
+M	easymock-cdiextension/README.md
+M	easymock-cdiextension/pom.xml
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/EasymockCdiExtension.java
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/model/OpenWebBeansInterceptorInjectionWrapper.java
+
+marciopd/easymock;011078a;Adding weld-1.1.3.SP1 profile.
+M	easymock-cdiextension/pom.xml
+
+marciopd/easymock;a77e1e1;Updating readme.
+M	easymock-cdiextension/README.md
+
+marciopd/easymock;494e5e9;Correcting mock injection in openwebbeans (OWB).
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/EasymockCdiExtension.java
+R084	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/TestSubjectInjectionTarget.java	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/TestSubjectCandidateInjectionTarget.java
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/model/EasyMockTestContext.java
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/model/ReflectionHelper.java
+
+marciopd/easymock;217cb7f;Using deltaspike project to bootstrap cdi container and added profiles to openwebbeans tests.
+M	easymock-cdiextension/pom.xml
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/junit/DeltaSpikeCdiBootstrapper.java
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/junit/EasyMockCdiRunner.java
+D	easymock-cdiextension/src/main/java/org/easymock/cdi/junit/WeldBootstrapper.java
+
+marciopd/easymock;0f87d7e;Updating readme.
+M	easymock-cdiextension/README.md
+
+marciopd/easymock;1db85d9;Updating features.
+M	easymock-cdiextension/README.md
+
+marciopd/easymock;7a845f4;Improving identation.
+M	easymock-cdiextension/pom.xml
+
+marciopd/easymock;c486ec7;Changing tab to spaces.
+M	easymock-cdiextension/pom.xml
+
+marciopd/easymock;4997978;- New EasyMock junit runner for CDI. - Removing Demoiselle junit dependency. - Created profiles to test the extension with different weld versions.
+M	easymock-cdiextension/pom.xml
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/junit/CdiBootstrapper.java
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/junit/EasyMockCdiRunner.java
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/junit/WeldBootstrapper.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/DefaultMockTest.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/EasyMockSupportTest.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/NiceMockTest.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/StrictMockTest.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorTest.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/producer/LoggerProducer.java
+
+marciopd/easymock;4c57dd1;Removing ProcessBean event param type, so the observer is called in newer versions of weld.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/EasymockCdiExtension.java
+
+marciopd/easymock;e50bfe5;Updating variable name.
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorTest.java
+
+marciopd/easymock;5676e95;Correcting test.
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorTest.java
+
+marciopd/easymock;a3cbd3f;Providing support to mock injection in multiple test subjects with different mock java types.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/model/ReflectionHelper.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorOne.java
+R067	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorFacade.java	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorOneFacade.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorTest.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorTwo.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorTwoFacade.java
+
+marciopd/easymock;7fae2ba;- Allowing more than one TestSubject per test class. - Adding validation to mock definitions. - Testing multiple TestSubject in the interceptor example.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/model/EasyMockTestContext.java
+D	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptorFacade.java
+R055	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptedBean.java	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptedBean.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorFacade.java
+R073	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptor.java	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorOne.java
+R087	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptorBinding.java	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorOneBinding.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorTest.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorTwo.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorTwoBinding.java
+M	easymock-cdiextension/src/test/resources/META-INF/beans.xml
+
+marciopd/easymock;fcc2d73;Using java.util.logging API.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/EasymockCdiExtension.java
+
+marciopd/easymock;f88b347;Cleaning created mocks when current test context changes.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/model/EasyMockTestContext.java
+
+marciopd/easymock;6848c27;Changing links to tests.
+M	easymock-cdiextension/README.md
+
+marciopd/easymock;61b8ea0;Improving test names.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/ContextInjectionTarget.java
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/EasymockCdiExtension.java
+R068	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldBusinessTest.java	easymock-cdiextension/src/test/java/org/easymock/cdi/DefaultMockTest.java
+R089	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldEasyMockSupportTest.java	easymock-cdiextension/src/test/java/org/easymock/cdi/EasyMockSupportTest.java
+R074	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldFacadeNiceMockTest.java	easymock-cdiextension/src/test/java/org/easymock/cdi/NiceMockTest.java
+R072	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldFacadeTest.java	easymock-cdiextension/src/test/java/org/easymock/cdi/StrictMockTest.java
+R092	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptorTest.java	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/InterceptorTest.java
+
+marciopd/easymock;824617b;Using a helper for reflection operations.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/ContextInjectionTarget.java
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/EasymockCdiExtension.java
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/TestSubjectInjectionTarget.java
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/model/ReflectionHelper.java
+
+marciopd/easymock;b45e344;Syncing easymock master.
+M	easymock-cdiextension/pom.xml
+
+marciopd/easymock;953ef3f;Merge branch 'master' of https://github.com/easymock/easymock
+marciopd/easymock;588a226;JIRA request reference.
+M	easymock-cdiextension/README.md
+
+marciopd/easymock;33a3402;Merge branch 'master' of https://github.com/easymock/easymock
+marciopd/easymock;f3a962c;Providing CDI producer do EasyMockSupport.
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldEasyMockSupportTest.java
+
+marciopd/easymock;cfb99c8;EasyMockSupport CDI producer.
+M	easymock-cdiextension/README.md
+
+marciopd/easymock;3eb0c2b;Providing CDI producer do EasyMockSupport.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/model/EasyMockTestContext.java
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/producer/EasyMockSupportProducer.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldEasyMockSupportTest.java
+
+marciopd/easymock;6b5a479;Supporting mocks in CDI interceptors.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/EasymockCdiExtension.java
+
+marciopd/easymock;14643f5;Support mock injection in CDI interceptors.
+M	easymock-cdiextension/README.md
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptor.java
+
+marciopd/easymock;91f1a8e;Support mock injection in CDI interceptors.
+M	easymock-cdiextension/pom.xml
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/EasymockCdiExtension.java
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/model/EasyMockTestContext.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldBusinessTest.java
+M	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldFacadeNiceMockTest.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptedBean.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptor.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptorBinding.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptorFacade.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/interceptor/HelloWorldInterceptorTest.java
+M	easymock-cdiextension/src/test/resources/META-INF/beans.xml
+
+marciopd/easymock;830151e;Merge branch 'master' of https://github.com/marciopd/easymock.git
+marciopd/easymock;edde935;Removing method.
+M	easymock-cdiextension/src/main/java/org/easymock/cdi/model/EasyMockTestContext.java
+
+marciopd/easymock;c21886e;Update README.md
+M	easymock-cdiextension/README.md
+
+marciopd/easymock;e456acc;Readme.
+A	easymock-cdiextension/README.md
+
+marciopd/easymock;0c753ec;Including easymock cdi extension module.
+A	easymock-cdiextension/findbugs-exclude.xml
+A	easymock-cdiextension/pom.xml
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/AbstractDelegateInjectionTarget.java
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/ContextInjectionTarget.java
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/EasymockCdiExtension.java
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/extension/TestSubjectInjectionTarget.java
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/model/EasyMockTestContext.java
+A	easymock-cdiextension/src/main/java/org/easymock/cdi/model/MockDefinition.java
+A	easymock-cdiextension/src/main/resources/META-INF/beans.xml
+A	easymock-cdiextension/src/main/resources/META-INF/services/javax.enterprise.inject.spi.Extension
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldBusiness.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldBusinessTest.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldDao.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldFacade.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldFacadeNiceMockTest.java
+A	easymock-cdiextension/src/test/java/org/easymock/cdi/HelloWorldFacadeTest.java
+A	easymock-cdiextension/src/test/resources/META-INF/beans.xml
+A	easymock-cdiextension/src/test/resources/log4j.properties
+M	pom.xml

@@ -1,0 +1,145 @@
+Yerath/frostwire;f4cb9141;Made a function smaller
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+Yerath/frostwire;a1ab3342;Broke the functino further apart.
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+Yerath/frostwire;f29035e4;Martin says: A function after try and catch, so i did that ;)
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+Yerath/frostwire;32a21efd;Started to break the migrateVuzeDownload function apart. Made a new function for setting priorities
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+Yerath/frostwire;537477a0;Removed some law of demetor violations
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+Yerath/frostwire;90bfa2b2;Merged master into my own fork, got some merge conflicts in files i didn't touch.
+Yerath/frostwire;9425eeed;Moved some listener functions the the listener class
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+Yerath/frostwire;f0664688;Moved a function to BTSettings, changed the return to empty array instead of 'null'
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+M	common/src/main/java/com/frostwire/bittorrent/BTFile.java
+M	common/src/main/java/com/frostwire/bittorrent/BTSettings.java
+
+Yerath/frostwire;b821480d;Moved all the file handling (creating dirs, making files etc) to the BTFile
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+A	common/src/main/java/com/frostwire/bittorrent/BTFile.java
+
+Yerath/frostwire;7483919d;Removed nested if statements and broke up a big function within
+M	common/src/main/java/com/frostwire/bittorrent/BTSettings.java
+
+Yerath/frostwire;7f547baf;Moved the settings functionality to a different class. This now handles the settings file and setting up the default parameters.
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+A	common/src/main/java/com/frostwire/bittorrent/BTSettings.java
+
+Yerath/frostwire;c9b9d9c8;Added a private constructor to the loader class
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+Yerath/frostwire;884434b9;Changed public static variable to a final one. This makes sure that other objects can't set it to zero
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+Yerath/frostwire;ffd00dc8;Merge pull request #7 from danielklomp/master
+Yerath/frostwire;a021155f;Merge pull request #6 from jessy100/master
+Yerath/frostwire;342bdc3e;Merge pull request #4 from sanderbou/master
+Yerath/frostwire;49e4a239;Small bug fix
+M	android/apollo/src/com/andrew/apollo/dragdrop/DragSortController.java
+
+Yerath/frostwire;fd33d0d8;fixed another codemsell
+M	android/androidTest/java/com/frostwire/android/gui/activities/DownloadTest.java
+
+Yerath/frostwire;af98aec9;fixed code smell
+M	android/androidTest/java/com/frostwire/android/gui/activities/DownloadTest.java
+
+Yerath/frostwire;9a6c3b7c;Issue "Close this "FileOutputStream"" gefixed
+M	android/apollo/src/com/andrew/apollo/cache/ImageFetcher.java
+
+Yerath/frostwire;23a6771f;Made and extra interface for the searchresults
+A	common/gradle/wrapper/gradle-wrapper.jar
+A	common/gradle/wrapper/gradle-wrapper.properties
+A	common/gradlew
+A	common/gradlew.bat
+M	common/src/main/java/com/frostwire/search/eztv/EztvSearchPerformer.java
+M	common/src/main/java/com/frostwire/search/eztv/EztvSearchResult.java
+A	common/src/main/java/com/frostwire/search/eztv/SearchResult.java
+A	gradle/wrapper/gradle-wrapper.jar
+A	gradle/wrapper/gradle-wrapper.properties
+A	gradlew
+A	gradlew.bat
+
+Yerath/frostwire;ef7e4d29;Moved Regex classes to Util package, it's better fitting
+M	common/src/main/java/com/frostwire/search/PerformersHelper.java
+M	common/src/main/java/com/frostwire/search/RegexSearchPerformer.java
+M	common/src/main/java/com/frostwire/search/SearchMatcher.java
+M	common/src/main/java/com/frostwire/search/bitsnoop/BitSnoopSearchPerformer.java
+M	common/src/main/java/com/frostwire/search/btjunkie/BtjunkieSearchPerformer.java
+M	common/src/main/java/com/frostwire/search/torrent/TorrentRegexSearchPerformer.java
+M	common/src/main/java/com/frostwire/search/tpb/TPBSearchPerformer.java
+M	common/src/main/java/com/frostwire/search/youtube/YouTubeSearchPerformer.java
+M	common/src/main/java/com/frostwire/search/youtube/YouTubeSig.java
+M	common/src/main/java/com/frostwire/search/youtube/jd/JsFunction.java
+R097	common/src/main/java/com/frostwire/regex/GroupInfo.java	common/src/main/java/com/frostwire/util/regex/GroupInfo.java
+R099	common/src/main/java/com/frostwire/regex/Matcher.java	common/src/main/java/com/frostwire/util/regex/Matcher.java
+R099	common/src/main/java/com/frostwire/regex/Pattern.java	common/src/main/java/com/frostwire/util/regex/Pattern.java
+
+Yerath/frostwire;2ed439b1;Changed intergation to deligation for FileSearch
+M	common/src/main/java/com/frostwire/search/AbstractFileSearchResult.java
+M	common/src/main/java/com/frostwire/search/CrawlPagedWebSearchPerformer.java
+M	common/src/main/java/com/frostwire/search/torrent/AbstractTorrentSearchResult.java
+
+Yerath/frostwire;d5a367d6;Changed the TorrenContainer to an builder class
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+A	common/src/main/java/com/frostwire/bittorrent/TorrentContainerBuilder.java
+
+Yerath/frostwire;0e476d7e;Replaced constructor with an factory method. This improves the reading a bit
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+M	common/src/main/java/com/frostwire/bittorrent/BTInfoAdditionalMetadataHolder.java
+M	common/src/main/java/com/frostwire/bittorrent/CopyrightLicenseBroker.java
+
+Yerath/frostwire;d20d3b6f;Replaced constructor with an factory method. This improves the reading a bit
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+Yerath/frostwire;6dde1daf;Made an function static.. for reusablity
+M	common/src/main/java/com/frostwire/bittorrent/ExtraData.java
+
+Yerath/frostwire;a62d7330;Changed class ExtraData into a different file. Preperation for make static
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java
+A	common/src/main/java/com/frostwire/bittorrent/ExtraData.java
+
+Yerath/frostwire;7e65f2f0;Removed an unneccesary step with the inline function
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+
+Yerath/frostwire;264af1dd;Extracted parameter object into a new class... Removing allot of parameters for one download function
+M	common/src/main/java/com/frostwire/bittorrent/BTEngine.java
+A	common/src/main/java/com/frostwire/bittorrent/TorrentContainer.java
+
+Yerath/frostwire;ea0d24be;Extracted an method object from my own getExtraData function.
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java
+
+Yerath/frostwire;1b854cbf;Extracted an method for reuseability and reducing the 'getIncompleteFiles' function size
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java
+
+Yerath/frostwire;cffc3f74;Refactored asMap to 'toMap'which is more descriptive. Used IntelliJ's 'Change Method Signature'
+M	common/src/main/java/com/frostwire/bittorrent/CopyrightLicenseBroker.java
+M	common/src/main/java/com/frostwire/bittorrent/Mappable.java
+M	common/src/main/java/com/frostwire/bittorrent/PaymentOptions.java
+
+Yerath/frostwire;1ddeee2b;Made an SolarQube config file and used an IDE Refactor method
+A	.sonar/.sonar_lock
+A	.sonar/report-task.txt
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java
+A	sonar-project.properties
+
+Yerath/frostwire;16cb1ded;Some little changes
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java
+
+Yerath/frostwire;cb177628;Made some changes to variable names
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java
+
+Yerath/frostwire;eb08095a;Changed functions into 3 seperate ones
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java
+
+Yerath/frostwire;7f2a10f1;Fixed some code smells about try catch and function names
+M	common/src/main/java/com/frostwire/bittorrent/BTDownload.java

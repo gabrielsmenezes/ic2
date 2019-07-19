@@ -1,0 +1,83 @@
+hauk3wu1ff/amazon-ecs-java-microservices;f37ca73;docker JDK image is gone, changing to frolvlad/alpine-scala
+M	1_ECS_Java_Spring_PetClinic/src/main/docker/Dockerfile
+
+hauk3wu1ff/amazon-ecs-java-microservices;d11f048;Updated to pull maven 3.6 . maven 3.5.3 is gone from this mirror
+M	config_development.sh
+
+hauk3wu1ff/amazon-ecs-java-microservices;0ca5048;Scripted docker login commands and updating bashrc
+M	config_development.sh
+M	local_vm_env.sh
+A	update-bashrc.sh
+
+hauk3wu1ff/amazon-ecs-java-microservices;4021d58;Correct shebang to make bash script portable. Added sudo to pip call
+M	config_development.sh
+
+hauk3wu1ff/amazon-ecs-java-microservices;4dcf3ee;Corrected wrong path and pushd command
+M	config_development.sh
+
+hauk3wu1ff/amazon-ecs-java-microservices;3a1afc2;Better sudo handling
+M	local_vm_env.sh
+
+hauk3wu1ff/amazon-ecs-java-microservices;ffd63df;updated machine setup scripts
+M	config_development.sh
+A	local_vm_env.sh
+
+hauk3wu1ff/amazon-ecs-java-microservices;9069376;Changed to broken maven download link
+M	config_development.sh
+
+hauk3wu1ff/amazon-ecs-java-microservices;6c3b83a;Added yum script to install java & maven
+M	config_development.sh
+A	yum-script
+
+hauk3wu1ff/amazon-ecs-java-microservices;ba6391f;Added notes for running microservices example step 2
+M	2_ECS_Java_Spring_PetClinic_Microservices/readme.md
+
+hauk3wu1ff/amazon-ecs-java-microservices;fbdd693;Initial script to automate dev-setup on cloud9 aws box.
+A	config_development.sh
+
+hauk3wu1ff/amazon-ecs-java-microservices;2b5161a;Use current AWS AMI for ECS. Initial project notes.
+M	2_ECS_Java_Spring_PetClinic_Microservices/readme.md
+M	2_ECS_Java_Spring_PetClinic_Microservices/setup.py
+M	2_ECS_Java_Spring_PetClinic_Microservices/spring-petclinic-rest-owner/mvnw
+M	2_ECS_Java_Spring_PetClinic_Microservices/spring-petclinic-rest-owner/mvnw.cmd
+
+hauk3wu1ff/amazon-ecs-java-microservices;2e43041;Added link to Ec2 instance types page
+M	1_ECS_Java_Spring_PetClinic/readme.md
+
+hauk3wu1ff/amazon-ecs-java-microservices;d9f6950;updated AMI to amzn-ami-2017.09.k-amazon-ecs-optimized
+M	1_ECS_Java_Spring_PetClinic/setup.py
+
+hauk3wu1ff/amazon-ecs-java-microservices;f2188a4;Running as admin works better than as devuser (missing rds permissions for db) and AMI used is no longer available.
+M	1_ECS_Java_Spring_PetClinic/readme.md
+
+hauk3wu1ff/amazon-ecs-java-microservices;db55efb;Added link to blog article
+hauk3wu1ff/amazon-ecs-java-microservices;fce3c0b;Added link to blog article
+M	1_ECS_Java_Spring_PetClinic/readme.md
+
+hauk3wu1ff/amazon-ecs-java-microservices;4990e0c;Pythonpath in cloud9
+M	1_ECS_Java_Spring_PetClinic/readme.md
+
+hauk3wu1ff/amazon-ecs-java-microservices;9111e7e;Added configuring permanent credentials for cloud9 EC2
+M	1_ECS_Java_Spring_PetClinic/readme.md
+
+hauk3wu1ff/amazon-ecs-java-microservices;7556226;Notes from trying to run with AWS Cloud9 Environment
+M	1_ECS_Java_Spring_PetClinic/.gitignore
+M	1_ECS_Java_Spring_PetClinic/readme.md
+
+hauk3wu1ff/amazon-ecs-java-microservices;69bd662;turn off echo in mvnw. correct mvnw ignore mistake in .gitinore
+M	1_ECS_Java_Spring_PetClinic/.gitignore
+M	1_ECS_Java_Spring_PetClinic/mvnw.cmd
+
+hauk3wu1ff/amazon-ecs-java-microservices;a563fef;initial project setup of mvnw and .gitignore
+M	1_ECS_Java_Spring_PetClinic/.gitignore
+M	1_ECS_Java_Spring_PetClinic/mvnw.cmd
+A	2_ECS_Java_Spring_PetClinic_Microservices/spring-petclinic-rest-owner/.gitignore
+A	2_ECS_Java_Spring_PetClinic_Microservices/spring-petclinic-rest-pet/.gitignore
+A	2_ECS_Java_Spring_PetClinic_Microservices/spring-petclinic-rest-system/.gitignore
+A	2_ECS_Java_Spring_PetClinic_Microservices/spring-petclinic-rest-vet/.gitignore
+A	2_ECS_Java_Spring_PetClinic_Microservices/spring-petclinic-rest-visit/.gitignore
+A	3_ECS_Java_Spring_PetClinic_CICD/spring-petclinic-rest-owner/.gitignore
+A	3_ECS_Java_Spring_PetClinic_CICD/spring-petclinic-rest-pet/.gitignore
+A	3_ECS_Java_Spring_PetClinic_CICD/spring-petclinic-rest-system/.gitignore
+A	3_ECS_Java_Spring_PetClinic_CICD/spring-petclinic-rest-vet/.gitignore
+A	3_ECS_Java_Spring_PetClinic_CICD/spring-petclinic-rest-visit/.gitignore

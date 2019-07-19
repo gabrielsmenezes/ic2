@@ -1,0 +1,6 @@
+ztyzbb/Mapper;0d11c8d;修复在UpdateByExample一个含乐观锁的实体时报的BindingException，同样的方法还有UpdateByExampleSelective、UpdateByDiffer、UpdateByPrimaryKeySelectiveForce 修正EntityColumn的注释错误 为SqlHelper#whereVersion增加带实体名称的重载 未能修复UpdateByExample的乐观锁失效问题，找不到合适的地方插入乐观锁查询条件，详见ExampleProvider
+M	base/src/main/java/tk/mybatis/mapper/provider/ExampleProvider.java
+M	core/src/main/java/tk/mybatis/mapper/entity/EntityColumn.java
+M	core/src/main/java/tk/mybatis/mapper/mapperhelper/SqlHelper.java
+M	extra/src/main/java/tk/mybatis/mapper/additional/update/differ/UpdateByDifferProvider.java
+M	extra/src/main/java/tk/mybatis/mapper/additional/update/force/UpdateByPrimaryKeySelectiveForceProvider.java

@@ -1,0 +1,32 @@
+ssmith5/spring-security-oauth;d446fca;Merge remote-tracking branch 'upstream/master'
+ssmith5/spring-security-oauth;5c05b38;CFID-203: Fix the tests
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/TestJdbcClientDetailsService.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/error/TestMediaTypeAwareAuthenticationEntryPoint.java
+M	spring-security-oauth2/src/test/resources/schema.sql
+
+ssmith5/spring-security-oauth;9763562;SECOAUTH-203: Fix bug in MediaTypeAwareAuthenticationEntryPoint.selectMediaType
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/error/MediaTypeAwareAuthenticationEntryPoint.java
+
+ssmith5/spring-security-oauth;23d09df;SECOAUTH-202: add password encoder to ClientDetailsUserDetailsService
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/client/ClientDetailsUserDetailsService.java
+
+ssmith5/spring-security-oauth;cc1a2ec;SECOAUTH-201: switch package name for XSD
+M	spring-security-oauth2/src/main/resources/META-INF/spring.schemas
+R100	spring-security-oauth2/src/main/resources/org/springframework/security/oauth/spring-security-oauth2-1.0.xsd	spring-security-oauth2/src/main/resources/org/springframework/security/oauth2/spring-security-oauth2-1.0.xsd
+
+ssmith5/spring-security-oauth;cb957a1;SECOAUTH-197: add AUthenticationScheme.none
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/client/resource/BaseOAuth2ProtectedResourceDetails.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/common/AuthenticationScheme.java
+M	spring-security-oauth2/src/main/resources/org/springframework/security/oauth/spring-security-oauth2-1.0.xsd
+
+ssmith5/spring-security-oauth;3296346;CFID-195: similar changes for Jdbc store
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/InMemoryTokenStore.java
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/token/JdbcTokenStore.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/TestInMemoryTokenStore.java
+M	spring-security-oauth2/src/test/java/org/springframework/security/oauth2/provider/token/TestTokenStoreBase.java
+
+ssmith5/spring-security-oauth;450ce31;Fix formatting
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/AuthorizationEndpoint.java
+
+ssmith5/spring-security-oauth;2363f81;SECOAUTH-194 redirect to registered redirect uri instead of invalid redirect uri
+M	spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/AuthorizationEndpoint.java

@@ -1,0 +1,7 @@
+hupuxiaojun/incubator-dubbo-ops;af7c7db;修复两处操作出现NoSuchMethodException: 1 指定服务的路由规则edit操作 2 指定服务的访问控制delete操作
+M	dubbo-admin/src/main/java/com/alibaba/dubboadmin/web/mvc/governance/AccessesController.java
+M	dubbo-admin/src/main/java/com/alibaba/dubboadmin/web/mvc/governance/RoutesController.java
+
+hupuxiaojun/incubator-dubbo-ops;bdc774e;Override 父类的set方法不会被调用，导致id没有值出现NPE异常
+M	dubbo-admin/src/main/java/com/alibaba/dubboadmin/web/mvc/RouterController.java
+M	dubbo-admin/src/main/resources/application.properties
