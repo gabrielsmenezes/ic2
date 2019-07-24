@@ -1,7 +1,7 @@
 library(ggplot2)
 library(scales)
 
-all=read.csv("/home/gabriel/Documentos/ic2/obtendoOsMetadadosDosRepositorios/listaDeMetadadosDosProjetos.csv", sep=",",header=T)
+all=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ1/obtendoOsMetadadosDosRepositorios/listaDeMetadadosDosProjetos.csv", sep=",",header=T)
 
 #stars
 
@@ -33,7 +33,7 @@ ggsave("projetos/metricasBasicas/commits.pdf", width = 4.5, height = 4.5)
 
 #Files
 
-all=read.csv("/home/gabriel/Documentos/ic2/quantidadeDeCadaArquivo/quantidadeDeCadaArquivo.csv", sep=",",header=T)
+all=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ1/quantidadeDeCadaArquivo/quantidadeDeCadaArquivo.csv", sep=",",header=T)
 
 p1 <- ggplot(all, aes(factor(all$framework,levels = c("Android", "Spring")), all$numberOfFiles)) + 
   scale_y_log10() +

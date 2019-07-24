@@ -8,7 +8,7 @@ all=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ1/extraind
 
 p1 <- ggplot(all, aes(factor(all$framework, levels = c("Android","Spring")), all$numberOfJavaFiles))
 p1 <- p1 + geom_violin(width=1, trim=TRUE,fill="#87CEFA") + scale_y_log10()
-p1 <- p1 + geom_boxplot(width=0.7,alpha=0.7) + ggtitle("Number of files") + xlab("General Projects") + ylab("Number of files (log scale)")
+p1 <- p1 + geom_boxplot(width=0.7,alpha=0.7) + ggtitle("Number of Java Files") + xlab("General Projects") + ylab("Number of files (log scale)")
 p1 <- p1 + annotate("text", x = 1, y = 25, label = "19", size = 6) + annotate("text", x = 2, y = 130, label = "96", size = 6) 
 p1 + theme(plot.title=element_text(size=20, face = "bold"), axis.title=element_text(size=18),axis.text=element_text(size=18))
 ggsave("projetos/RQ1/numberOfJavaFiles.pdf", width = 4.5, height = 4.5)
