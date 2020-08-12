@@ -1,20 +1,22 @@
 library(effsize)
-library(ggplot2)
-library(devtools)
-library(easyGgplot2)
-library(forcats)
+#library(ggplot2)
+#library(devtools)
+#library(easyGgplot2)
+#library(forcats)
 
-general_androidtop=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/general/android_top.csv", sep=",",header=T)
-general_androidbottom=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/general/android_bottom.csv", sep=",",header=T)
+setwd("C:\\Users\\Gabriel\\Documents\\gabrielsmenezes\\ic2\\analiseDosProjetosGerais\\RQ3")
 
-general_springtop=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/general/spring_top.csv", sep=",",header=T)
-general_springbottom=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/general/spring_bottom.csv", sep=",",header=T)
+general_androidtop=read.csv("general\\android_top.csv", sep=",",header=T)
+general_androidbottom=read.csv("general\\android_bottom.csv", sep=",",header=T)
 
-samples_androidtop=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/samples/Metrics-Android-TOP.csv", sep=",",header=T)
-samples_androidbottom=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/samples/Metrics-Android-BOTTOM.csv", sep=",",header=T)
+general_springtop=read.csv("general\\spring_top.csv", sep=",",header=T)
+general_springbottom=read.csv("general\\spring_bottom.csv", sep=",",header=T)
 
-samples_springtop=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/samples/Metrics-Spring-TOP.csv", sep=",",header=T)
-samples_springbottom=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/samples/Metrics-Spring-BOTTOM.csv", sep=",",header=T)
+samples_androidtop=read.csv("samples\\Metrics-Android-TOP.csv", sep=",",header=T)
+samples_androidbottom=read.csv("samples\\Metrics-Android-BOTTOM.csv", sep=",",header=T)
+
+samples_springtop=read.csv("samples\\Metrics-Spring-TOP.csv", sep=",",header=T)
+samples_springbottom=read.csv("samples\\Metrics-Spring-BOTTOM.csv", sep=",",header=T)
 
 ################ Java files
 

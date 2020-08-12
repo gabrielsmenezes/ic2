@@ -1,14 +1,13 @@
 library(effsize)
-library(ggplot2)
-library(devtools)
-library(easyGgplot2)
-library(forcats)
 
-androidtop=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/popularidade/android_top.csv", sep=",",header=T)
-androidbottom=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/popularidade/android_bottom.csv", sep=",",header=T)
 
-springtop=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/popularidade/spring_top.csv", sep=",",header=T)
-springbottom=read.csv("/home/gabriel/Documentos/ic2/analiseDosProjetosGerais/RQ3/popularidade/spring_bottom.csv", sep=",",header=T)
+setwd("C:\\Users\\Gabriel\\Documents\\gabrielsmenezes\\ic2\\analiseDosProjetosGerais\\RQ3\\general")
+
+androidtop=read.csv("android_top.csv", sep=",",header=T)
+androidbottom=read.csv("android_bottom.csv", sep=",",header=T)
+
+springtop=read.csv("spring_top.csv", sep=",",header=T)
+springbottom=read.csv("spring_bottom.csv", sep=",",header=T)
 
 ################ Java files
 box=boxplot(androidtop$numberOfJavaFiles,androidbottom$numberOfJavaFiles, springtop$numberOfJavaFiles, springbottom$numberOfJavaFiles, log="y", ylab="Number of Files (log scale)", outline=F, main="Number of Java Files", names=c("A-Top","A-Bottom","S-Top","S-Bottom"))
