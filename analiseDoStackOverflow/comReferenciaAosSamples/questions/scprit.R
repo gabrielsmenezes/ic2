@@ -36,9 +36,9 @@ ggsave("score.pdf", width = 4.5, height = 4.5)
 p1 <- ggplot(all, aes(factor(all$framework,levels = c("Android","Spring")), all$ViewCount)) + 
   geom_violin(width=1, trim=TRUE, fill="#87CEFA") + 
    scale_y_log10(labels = comma) +
-  geom_boxplot(width=0.7,alpha=0.7) + ggtitle("Views") + xlab("StackOverflow Questions") + ylab("Views (log scale)") + 
+  geom_boxplot(width=0.7,alpha=0.7) + ggtitle("Question Views") + xlab("Code Samples") + ylab("Views (log scale)") + 
   annotate("text", x = 1, y = 1500, label = "890", size = 6) + 
-  annotate("text", x = 2, y = 2000, label = "1579", size = 6) +
+  annotate("text", x = 2, y = 2000, label = "1,579", size = 6) +
   theme(plot.title=element_text(size=20,face="bold") ,axis.title=element_text(size=18),axis.text=element_text(size=18))
 
 p1
